@@ -14,43 +14,39 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.script;
+package org.l2jmobius.gameserver.model.holders;
 
 /**
- * @author -Nemesiss-
+ * A DTO for items; contains item ID, count and chance.<br>
+ * @author xban1x
  */
-public class ShortList
+public class ItemChanceHolder extends ItemHolder
 {
-	public static short[] parse(String range)
+	private final double _chance;
+	
+	public ItemChanceHolder(int id, double chance)
 	{
-		if (range.contains("-"))
-		{
-			return getShortList(range.split("-"));
-		}
-		else if (range.contains(","))
-		{
-			return getShortList(range.split(","));
-		}
-		
-		final short[] list =
-		{
-			getShort(range)
-		};
-		return list;
+		this(id, chance, 1);
 	}
 	
-	private static short getShort(String number)
+	public ItemChanceHolder(int id, double chance, int count)
 	{
-		return Short.parseShort(number);
+		super(id, count);
+		_chance = chance;
 	}
 	
-	private static short[] getShortList(String[] numbers)
+	/**
+	 * Gets the chance.
+	 * @return the drop chance of the item contained in this object
+	 */
+	public double getChance()
 	{
-		final short[] list = new short[numbers.length];
-		for (int i = 0; i < list.length; i++)
-		{
-			list[i] = getShort(numbers[i]);
-		}
-		return list;
+		return _chance;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "[" + getClass().getSimpleName() + "] ID: " + getId() + ", count: " + getCount() + ", chance: " + _chance;
 	}
 }
