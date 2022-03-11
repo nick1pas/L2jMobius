@@ -14,26 +14,33 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.serverpackets;
+package org.l2jmobius.gameserver.network.clientpackets.variation;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
 
 /**
- * @author KenM
+ * @author Index
  */
-public class ExShowVariationCancelWindow implements IClientOutgoingPacket
+public class ExVariationOpenUi implements IClientIncomingPacket
 {
-	public static final ExShowVariationCancelWindow STATIC_PACKET = new ExShowVariationCancelWindow();
-	
-	private ExShowVariationCancelWindow()
+	@Override
+	public boolean read(GameClient client, PacketReader packet)
 	{
+		packet.readC();
+		return true;
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void run(GameClient client)
 	{
-		OutgoingPackets.EX_SHOW_VARIATION_CANCEL_WINDOW.writeId(packet);
-		return true;
+		// final Player player = client.getPlayer();
+		// if (player == null)
+		// {
+		// return;
+		// }
+		
+		// player.sendPacket(ExShowVariationMakeWindow.STATIC_PACKET);
 	}
 }
