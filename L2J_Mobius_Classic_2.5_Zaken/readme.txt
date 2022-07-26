@@ -1,12 +1,12 @@
-L2J-Mobius Secret of Empire
+L2J-Mobius Classic Zaken
 
 JDK: https://www.mediafire.com/file/kb2nfx54wojys4f/bellsoft-jdk17.0.2%252B9-windows-amd64.msi
 XAMPP: https://www.mediafire.com/file/hkehxpyjn81ybsw/xampp-windows-x64-8.0.11-2-VS16-installer.exe
 Eclipse: https://www.mediafire.com/file/j208qw3s7zwx7c7/eclipse-java-2021-12-R-win32-x86_64.zip
-Geodata: http://www.mediafire.com/file/0lcde1bxjg7bayz/L2J_Mobius_Classic_2.4_SecretOfEmpire_Geodata.zip
+Geodata: http://www.mediafire.com/file/38yzztwmmdq0r07/L2J_Mobius_Classic_2.5_Zaken_Geodata.zip
 
-Client (password L2jMobius): https://drive.google.com/u/1/uc?id=1EW-r8oUNWuRXUXmQ_tPbY8zIBEATgvZV&export=download
-System: https://mega.nz/#!xolCkYjD!TpdBo8SwYpPYJN86H_r5AxZljTZAfyj-o2H9cfy2bNc
+Client (password L2jMobius): https://drive.google.com/u/1/uc?id=1LpjE7GPJSZHFN9V5dMP0vC5YUsuAtA21&export=download
+System: https://mega.nz/#!os8HRShC!5JbEmWEugMyssgE-lWgBxJj_zC63gXX-ogBh-A3arX8
 
 All provided download links are for personal use. Redistribution of these links is bannable.
 
@@ -70,36 +70,6 @@ Zaken: https://eu.4game.com/lineage2classic/play/zaken/
 -Giants Cave
 -Zaken boss AI
 -Newbie quest changes
-
-Antharas: https://eu.4game.com/lineage2classic/play/antharas/
--Parsed new system messages and npc strings from client.
--Parsed new skills from client
--Parsed new items from client
--Parsed new NPCs from L2Wiki and client
--Clan Arena
--New Agathion item support
-
-Seven Signs: https://eu.4gameforum.com/threads/658543/
--Parsed new system messages and npc strings from client
--Parsed new skills from client
--Parsed new items from client
--Parsed new NPCs from client
--Updated skiltrees and skills from L2Wiki
--Updated experience values from L2Wiki
--Elemental Spirits
--Elemental Spirit boss instances
--Land of Winds spawns
--Goddard territory spawns
--Goddard clanhalls
-
-Secret of Empire: https://eu.4game.com/patchnotes/lineage2classic/133/
--Parsed new system messages and npc strings from client
--Parsed new skills from client
--Parsed new items from client
--Parsed new recipes from client
--Imperial tomb area spawns
--Retail gatekeeper teleports
--Equipment upgrade system
 
 Customs:
 -Newbie Helper NPC location info
