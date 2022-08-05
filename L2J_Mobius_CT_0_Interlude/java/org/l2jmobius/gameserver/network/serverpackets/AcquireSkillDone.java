@@ -14,12 +14,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.enums;
+package org.l2jmobius.gameserver.network.serverpackets;
 
-public enum EnchantSkillType
+import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.network.OutgoingPackets;
+
+/**
+ * @author Mobius
+ */
+public class AcquireSkillDone implements IClientOutgoingPacket
 {
-	NORMAL,
-	SAFE,
-	UNTRAIN,
-	CHANGE_ROUTE,
+	public static final AcquireSkillDone STATIC_PACKET = new AcquireSkillDone();
+	
+	private AcquireSkillDone()
+	{
+	}
+	
+	@Override
+	public boolean write(PacketWriter packet)
+	{
+		OutgoingPackets.ACQUIRE_SKILL_DONE.writeId(packet);
+		return true;
+	}
 }
