@@ -22,14 +22,14 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * @author Mobius, Index, NasSeKa`, Serenitty
+ * @author NasSeKa
  */
-public class TimedHuntingZoneEnter implements IClientOutgoingPacket
+public class TimeRestrictFieldUserAlarm implements IClientOutgoingPacket
 {
 	private final Player _player;
 	private final int _zoneId;
 	
-	public TimedHuntingZoneEnter(Player player, int zoneId)
+	public TimeRestrictFieldUserAlarm(Player player, int zoneId)
 	{
 		_player = player;
 		_zoneId = zoneId;
@@ -38,11 +38,9 @@ public class TimedHuntingZoneEnter implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packet)
 	{
-		OutgoingPackets.EX_TIME_RESTRICT_FIELD_USER_ENTER.writeId(packet);
-		packet.writeC(1); // bEnterSuccess
+		OutgoingPackets.EX_TIME_RESTRICT_FIELD_USER_ALARM.writeId(packet);
 		packet.writeD(_zoneId);
-		packet.writeD((int) (System.currentTimeMillis() / 1000)); // nEnterTimeStamp
-		packet.writeD((_player.getTimedHuntingZoneRemainingTime(_zoneId) / 1000) + 59); // nRemainTime (zone left time)
+		packet.writeD(_player.getTimedHuntingZoneRemainingTime(_zoneId) / 1000); // RemainTime (zone left time)
 		return true;
 	}
 }
