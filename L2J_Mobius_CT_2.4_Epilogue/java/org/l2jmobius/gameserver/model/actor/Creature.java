@@ -2567,6 +2567,9 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 			getAI().stopAITask();
 		}
 		
+		// Enable AI.
+		_disabledAI = false;
+		
 		_onCreatureAttack = null;
 		_onCreatureAttacked = null;
 		_onCreatureDamageDealt = null;
@@ -2799,7 +2802,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	 */
 	public boolean isDisabled()
 	{
-		return _AIdisabled || isAlikeDead() || isPhysicalAttackMuted() || isStunned() || isSleeping() || isParalyzed();
+		return _disabledAI || isAlikeDead() || isPhysicalAttackMuted() || isStunned() || isSleeping() || isParalyzed();
 	}
 	
 	public Calculator[] getCalculators()
@@ -6035,7 +6038,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		_castInterruptTime = newSkillCastEndTick - 4;
 	}
 	
-	private boolean _AIdisabled = false;
+	private boolean _disabledAI = false;
 	
 	public void updatePvPFlag(int value)
 	{
@@ -6418,12 +6421,12 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	
 	public void disableCoreAI(boolean value)
 	{
-		_AIdisabled = value;
+		_disabledAI = value;
 	}
 	
 	public boolean isCoreAIDisabled()
 	{
-		return _AIdisabled;
+		return _disabledAI;
 	}
 	
 	/**
