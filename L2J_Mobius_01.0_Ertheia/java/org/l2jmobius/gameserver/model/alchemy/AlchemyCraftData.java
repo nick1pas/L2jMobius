@@ -32,6 +32,7 @@ public class AlchemyCraftData
 	private final int _level;
 	private final int _grade;
 	private final int _category;
+	private final float _chance;
 	private Set<ItemHolder> _ingredients;
 	private ItemHolder _productionSuccess;
 	private ItemHolder _productionFailure;
@@ -42,6 +43,7 @@ public class AlchemyCraftData
 		_level = set.getInt("level");
 		_grade = set.getInt("grade");
 		_category = set.getInt("category");
+		_chance = set.getFloat("chance", 0);
 	}
 	
 	public int getId()
@@ -57,6 +59,11 @@ public class AlchemyCraftData
 	public int getGrade()
 	{
 		return _grade;
+	}
+	
+	public float getChance()
+	{
+		return _chance;
 	}
 	
 	public int getCategory()

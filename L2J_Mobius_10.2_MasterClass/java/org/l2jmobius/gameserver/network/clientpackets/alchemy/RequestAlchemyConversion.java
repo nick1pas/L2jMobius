@@ -44,8 +44,8 @@ public class RequestAlchemyConversion implements IClientIncomingPacket
 	private int _craftTimes;
 	private int _skillId;
 	private int _skillLevel;
-	
 	// private final Set<ItemHolder> _ingredients = new HashSet<>();
+	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
@@ -110,27 +110,31 @@ public class RequestAlchemyConversion implements IClientIncomingPacket
 		// }
 		
 		// Chance based on grade.
-		final int baseChance;
+		final float baseChance;
+		
+		// Custom XML chance value.
+		final float customChance = data.getChance();
+		
 		switch (data.getGrade())
 		{
 			case 1: // Elementary
 			{
-				baseChance = 100;
+				baseChance = customChance > 0 ? customChance : 100;
 				break;
 			}
 			case 2: // Intermediate
 			{
-				baseChance = 80;
+				baseChance = customChance > 0 ? customChance : 80;
 				break;
 			}
 			case 3: // Advanced
 			{
-				baseChance = 60;
+				baseChance = customChance > 0 ? customChance : 60;
 				break;
 			}
 			default: // Master
 			{
-				baseChance = 50;
+				baseChance = customChance > 0 ? customChance : 50;
 				break;
 			}
 		}

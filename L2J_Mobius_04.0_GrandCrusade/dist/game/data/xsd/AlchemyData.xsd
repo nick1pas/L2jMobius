@@ -43,6 +43,7 @@
 						<xs:attribute type="xs:byte" name="level" use="required" />
 						<xs:attribute type="xs:byte" name="grade" use="required" />
 						<xs:attribute type="xs:byte" name="category" use="required" />
+						<xs:attribute type="xs:float" name="chance" use="optional" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>
