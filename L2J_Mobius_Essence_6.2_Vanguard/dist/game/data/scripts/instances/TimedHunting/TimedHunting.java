@@ -215,6 +215,7 @@ public class TimedHunting extends AbstractInstance
 		for (Entry<Integer, Integer> entry : SKILL_REPLACEMENTS.entrySet())
 		{
 			final int normalSkillId = entry.getKey().intValue();
+			player.addReplacedSkill(normalSkillId);
 			final Skill knownSkill = player.getKnownSkill(normalSkillId);
 			if (knownSkill == null)
 			{
@@ -264,6 +265,7 @@ public class TimedHunting extends AbstractInstance
 			}
 			
 			final int normalSkillId = entry.getKey().intValue();
+			player.removeReplacedSkill(normalSkillId);
 			player.addSkill(SkillData.getInstance().getSkill(normalSkillId, knownSkill.getLevel(), knownSkill.getSubLevel()), false);
 			for (Shortcut shortcut : player.getAllShortCuts())
 			{
