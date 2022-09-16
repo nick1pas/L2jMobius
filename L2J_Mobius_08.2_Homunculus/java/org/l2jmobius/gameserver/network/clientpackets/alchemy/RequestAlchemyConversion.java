@@ -32,7 +32,6 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.alchemy.ExAlchemyConversion;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 
@@ -182,29 +181,23 @@ public class RequestAlchemyConversion implements IClientIncomingPacket
 			return;
 		}
 		
-		final InventoryUpdate ui = new InventoryUpdate();
-		
 		// Destroy ingredients.
 		for (ItemHolder ingredient : data.getIngredients())
 		{
 			final Item item = player.getInventory().getItemByItemId(ingredient.getId());
-			ui.addItem(item);
 			player.getInventory().destroyItem("Alchemy", item, ingredient.getCount() * _craftTimes, player, null);
 		}
 		// Add success items.
 		if (successCount > 0)
 		{
-			final Item item = player.getInventory().addItem("Alchemy", data.getProductionSuccess().getId(), data.getProductionSuccess().getCount() * successCount, player, null);
-			ui.addItem(item);
+			player.getInventory().addItem("Alchemy", data.getProductionSuccess().getId(), data.getProductionSuccess().getCount() * successCount, player, null);
 		}
 		// Add failed items.
 		if (failureCount > 0)
 		{
-			final Item item = player.getInventory().addItem("Alchemy", data.getProductionFailure().getId(), data.getProductionFailure().getCount() * failureCount, player, null);
-			ui.addItem(item);
+			player.getInventory().addItem("Alchemy", data.getProductionFailure().getId(), data.getProductionFailure().getCount() * failureCount, player, null);
 		}
 		
 		player.sendPacket(new ExAlchemyConversion(successCount, failureCount));
-		player.sendInventoryUpdate(ui);
 	}
 }
