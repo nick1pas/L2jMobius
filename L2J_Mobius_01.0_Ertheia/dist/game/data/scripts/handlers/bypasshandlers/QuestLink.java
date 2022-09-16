@@ -112,6 +112,8 @@ public class QuestLink implements IBypassHandler
 			questList = orderedQuests.values();
 		}
 		
+		int startCount = 0;
+		String startQuest = null;
 		for (Quest quest : questList)
 		{
 			final QuestState qs = player.getQuestState(quest.getScriptName());
@@ -124,6 +126,9 @@ public class QuestLink implements IBypassHandler
 				}
 				else if (startingQuests.contains(quest) && quest.canStartQuest(player))
 				{
+					startCount++;
+					startQuest = quest.getName();
+					
 					sbCanStart.append("<font color=\"bbaa88\">");
 					sbCanStart.append("<button icon=\"quest\" align=\"left\" action=\"bypass -h npc_" + npc.getObjectId() + "_Quest " + quest.getName() + "\">");
 					String localisation = quest.isCustomQuest() ? quest.getPath() : "<fstring>" + quest.getNpcStringId() + "01</fstring>";
@@ -207,6 +212,12 @@ public class QuestLink implements IBypassHandler
 				sbCompleted.append(localisation);
 				sbCompleted.append("</button></font>");
 			}
+		}
+		
+		if (sbStarted.isEmpty() && (startCount == 1))
+		{
+			showQuestWindow(player, npc, startQuest);
+			return;
 		}
 		
 		String content;
