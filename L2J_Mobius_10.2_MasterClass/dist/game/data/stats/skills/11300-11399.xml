@@ -81,11 +81,27 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11302" toLevel="13" name="Servitor Major Heal">
+	<skill id="11302" toLevel="15" name="Servitor Major Heal">
 		<!-- Recovers servitor's HP with $s1 power. -->
 		<icon>icon.skill1127</icon>
 		<operateType>A1</operateType>
-		<mpConsume>70</mpConsume>
+		<mpConsume>
+			<value level="1">105</value>
+			<value level="2">105</value>
+			<value level="3">105</value>
+			<value level="4">105</value>
+			<value level="5">105</value>
+			<value level="6">105</value>
+			<value level="7">105</value>
+			<value level="8">105</value>
+			<value level="9">105</value>
+			<value level="10">105</value>
+			<value level="11">105</value>
+			<value level="12">115</value>
+			<value level="13">126</value>
+			<value level="14">137</value>
+			<value level="15">148</value>
+		</mpConsume>
 		<castRange>800</castRange>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>
@@ -107,6 +123,8 @@
 			<value level="11">105</value>
 			<value level="12">107</value>
 			<value level="13">109</value>
+			<value level="14">113</value>
+			<value level="15">118</value>
 		</magicLevel>
 		<isMagic>1</isMagic>
 		<targetType>TARGET</targetType>
@@ -132,7 +150,9 @@
 					<value level="11">1960</value>
 					<value level="12">1976</value>
 					<value level="13">1992</value>
-					<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+					<value level="14">2191</value>
+					<value level="15">2410</value>
+					<value fromLevel="7" toLevel="15" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 				</power>
 			</effect>
 		</effects>
@@ -2113,7 +2133,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11350" toLevel="9" name="Arcane Rage">
+	<skill id="11350" toLevel="11" name="Arcane Rage">
 		<!-- Use Arcana Wrath to inflict severe damage on a target with $s1 Power added to M. Atk. -->
 		<icon>icon.skill11350</icon>
 		<operateType>A1</operateType>
@@ -2129,7 +2149,22 @@
 			<value level="7">79</value>
 			<value level="8">82</value>
 			<value level="9">85</value>
+			<value level="10">88</value>
+			<value level="11">91</value>
 		</mpConsume>
+		<magicLevel>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+			<value level="10">111</value>
+			<value level="11">116</value>
+		</magicLevel>
 		<castRange>800</castRange>
 		<hitTime>2780</hitTime>
 		<coolTime>300</coolTime>
@@ -2144,11 +2179,13 @@
 			<value level="7">-715</value>
 			<value level="8">-715</value>
 			<value level="9">-715</value>
+			<value level="10">-715</value>
+			<value level="11">-715</value>
 		</effectPoint>
 		<isMagic>1</isMagic>
 		<magicCriticalRate>
-			<value fromLevel="1" toLevel="9">6</value>
-			<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+			<value fromLevel="1" toLevel="11">6</value>
+			<value fromLevel="3" toLevel="11" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</magicCriticalRate>
 		<effects>
 			<effect name="MagicalAttack">
@@ -2162,20 +2199,22 @@
 					<value level="7">330</value>
 					<value level="8">345</value>
 					<value level="9">361</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+					<value level="10">397</value>
+					<value level="11">437</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
 				</power>
 			</effect>
 		</effects>
@@ -2433,7 +2472,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11356" toLevel="9" name="Spectral Rage">
+	<skill id="11356" toLevel="11" name="Spectral Rage">
 		<!-- Use Spectral Wrath to inflict severe damage on a target with $s1 Power added to M. Atk. -->
 		<icon>icon.skill11356</icon>
 		<operateType>A1</operateType>
@@ -2449,7 +2488,22 @@
 			<value level="7">79</value>
 			<value level="8">82</value>
 			<value level="9">85</value>
+			<value level="10">88</value>
+			<value level="11">91</value>
 		</mpConsume>
+		<magicLevel>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">99</value>
+			<value level="5">101</value>
+			<value level="6">103</value>
+			<value level="7">105</value>
+			<value level="8">107</value>
+			<value level="9">109</value>
+			<value level="10">111</value>
+			<value level="11">116</value>
+		</magicLevel>
 		<castRange>800</castRange>
 		<hitTime>2780</hitTime>
 		<coolTime>300</coolTime>
@@ -2464,11 +2518,13 @@
 			<value level="7">-715</value>
 			<value level="8">-715</value>
 			<value level="9">-715</value>
+			<value level="10">-715</value>
+			<value level="11">-715</value>
 		</effectPoint>
 		<isMagic>1</isMagic>
 		<magicCriticalRate>
-			<value fromLevel="1" toLevel="9">6</value>
-			<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+			<value fromLevel="1" toLevel="11">6</value>
+			<value fromLevel="3" toLevel="11" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</magicCriticalRate>
 		<effects>
 			<effect name="MagicalAttack">
@@ -2482,20 +2538,22 @@
 					<value level="7">330</value>
 					<value level="8">345</value>
 					<value level="9">361</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
-					<value fromLevel="3" toLevel="9" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
+					<value level="10">397</value>
+					<value level="11">437</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1001" toSubLevel="1005">{base + (base / 100 * (1 + 0.4 * (subIndex - 1)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1006" toSubLevel="1006">{base + (base / 100 * (2 + 0.8 * (subIndex - 5)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1007" toSubLevel="1007">{base + (base / 100 * (3 + 0.3 * (subIndex - 6)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1008" toSubLevel="1008">{base + (base / 100 * (3 + 0.3 * (subIndex - 7)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1009" toSubLevel="1011">{base + (base / 100 * (4 + 0.4 * (subIndex - 8)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1012" toSubLevel="1012">{base + (base / 100 * (5 + 0.1 * (subIndex - 11)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1013" toSubLevel="1013">{base + (base / 100 * (5 + 0.5 * (subIndex - 12)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1014" toSubLevel="1014">{base + (base / 100 * (5 + 0.9 * (subIndex - 13)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1015" toSubLevel="1015">{base + (base / 100 * (6 + 0.2 * (subIndex - 14)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1016" toSubLevel="1016">{base + (base / 100 * (6 + 0.6 * (subIndex - 15)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1017" toSubLevel="1017">{base + (base / 100 * (7 + 0.2 * (subIndex - 16)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1018" toSubLevel="1018">{base + (base / 100 * (7 + 0.4 * (subIndex - 17)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1019" toSubLevel="1019">{base + (base / 100 * (7 + 0.7 * (subIndex - 18)))}</value>
+					<value fromLevel="3" toLevel="11" fromSubLevel="1020" toSubLevel="1020">{base + (base / 100 * (8 + 0.1 * (subIndex - 19)))}</value>
 				</power>
 			</effect>
 		</effects>
@@ -2791,7 +2849,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11365" toLevel="6" name="Summon Demonic Crucifix">
+	<skill id="11365" toLevel="8" name="Summon Demonic Crucifix">
 		<!-- Attacks the target and nearby enemies with $s1 power. Their Atk. Spd./ Casting Spd. -$s2, Speed -$s3. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill11365</icon>
 		<abnormalLevel>
@@ -2801,6 +2859,8 @@
 			<value level="4">4</value>
 			<value level="5">5</value>
 			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
 		</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>NONE</abnormalType>
@@ -2820,6 +2880,8 @@
 			<value level="4">394</value>
 			<value level="5">409</value>
 			<value level="6">424</value>
+			<value level="7">439</value>
+			<value level="8">454</value>
 		</mpConsume>
 		<magicLevel>
 			<value level="1">99</value>
@@ -2828,6 +2890,8 @@
 			<value level="4">105</value>
 			<value level="5">107</value>
 			<value level="6">109</value>
+			<value level="7">112</value>
+			<value level="8">117</value>
 		</magicLevel>
 		<castRange>600</castRange>
 		<hitTime>2500</hitTime>
@@ -2845,6 +2909,8 @@
 					<value level="4">558</value>
 					<value level="5">584</value>
 					<value level="6">610</value>
+					<value level="7">671</value>
+					<value level="8">738</value>
 				</power>
 			</effect>
 			<effect name="Speed">
@@ -3033,7 +3099,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11369" toLevel="11" name="Summon Commando Cat">
+	<skill id="11369" toLevel="13" name="Summon Commando Cat">
 		<!-- Summons Commando Cat. Consumes $s1 summon points. -->
 		<icon>icon.skill11369</icon>
 		<magicLevel>
@@ -3048,6 +3114,8 @@
 			<value level="9">108</value>
 			<value level="10">109</value>
 			<value level="11">110</value>
+			<value level="12">112</value>
+			<value level="13">117</value>
 		</magicLevel>
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
@@ -3064,6 +3132,8 @@
 			<value level="9">545</value>
 			<value level="10">555</value>
 			<value level="11">565</value>
+			<value level="12">575</value>
+			<value level="13">585</value>
 		</mpConsume>
 		<hitTime>3500</hitTime>
 		<coolTime>500</coolTime>
@@ -3088,13 +3158,15 @@
 					<value level="9">15222</value>
 					<value level="10">15223</value>
 					<value level="11">15224</value>
+					<value level="12">15225</value> <!-- Gussed -->
+					<value level="13">15226</value>
 				</npcId>
 				<summonPoints>2</summonPoints>
 				<lifeTime>-1</lifeTime>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11370" toLevel="11" name="Summon Witch Cat">
+	<skill id="11370" toLevel="13" name="Summon Witch Cat">
 		<!-- Summons Witch Cat. Consumes $s1 summon points. -->
 		<icon>icon.skill11370</icon>
 		<magicLevel>
@@ -3109,6 +3181,8 @@
 			<value level="9">108</value>
 			<value level="10">109</value>
 			<value level="11">110</value>
+			<value level="12">114</value>
+			<value level="13">119</value>
 		</magicLevel>
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
@@ -3125,6 +3199,8 @@
 			<value level="9">545</value>
 			<value level="10">555</value>
 			<value level="11">565</value>
+			<value level="12">575</value>
+			<value level="13">585</value>
 		</mpConsume>
 		<hitTime>3500</hitTime>
 		<coolTime>500</coolTime>
@@ -3149,13 +3225,15 @@
 					<value level="9">15227</value>
 					<value level="10">15228</value>
 					<value level="11">15229</value>
+					<value level="12">15230</value> <!-- Gussed -->
+					<value level="13">15231</value>
 				</npcId>
 				<summonPoints>2</summonPoints>
 				<lifeTime>-1</lifeTime>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11371" toLevel="11" name="Summon Unicorn Lancer">
+	<skill id="11371" toLevel="13" name="Summon Unicorn Lancer">
 		<!-- Summons Unicorn Lancer. Consumes $s1 summon points. -->
 		<icon>icon.skill11371</icon>
 		<magicLevel>
@@ -3170,6 +3248,8 @@
 			<value level="9">108</value>
 			<value level="10">109</value>
 			<value level="11">110</value>
+			<value level="12">112</value>
+			<value level="13">117</value>
 		</magicLevel>
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
@@ -3186,6 +3266,8 @@
 			<value level="9">545</value>
 			<value level="10">555</value>
 			<value level="11">565</value>
+			<value level="12">575</value>
+			<value level="13">585</value>
 		</mpConsume>
 		<hitTime>3500</hitTime>
 		<coolTime>500</coolTime>
@@ -3210,13 +3292,15 @@
 					<value level="9">15232</value>
 					<value level="10">15233</value>
 					<value level="11">15234</value>
+					<value level="12">15235</value> <!-- Gussed -->
+					<value level="13">15236</value>
 				</npcId>
 				<summonPoints>2</summonPoints>
 				<lifeTime>-1</lifeTime>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11372" toLevel="11" name="Summon Unicorn Cherub">
+	<skill id="11372" toLevel="13" name="Summon Unicorn Cherub">
 		<!-- Summons Unicorn Cherub. Consumes $s1 summon points. -->
 		<icon>icon.skill11372</icon>
 		<magicLevel>
@@ -3231,6 +3315,8 @@
 			<value level="9">108</value>
 			<value level="10">109</value>
 			<value level="11">110</value>
+			<value level="12">114</value>
+			<value level="13">119</value>
 		</magicLevel>
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
@@ -3247,6 +3333,8 @@
 			<value level="9">545</value>
 			<value level="10">555</value>
 			<value level="11">565</value>
+			<value level="12">575</value>
+			<value level="13">585</value>
 		</mpConsume>
 		<hitTime>3500</hitTime>
 		<coolTime>500</coolTime>
@@ -3271,13 +3359,15 @@
 					<value level="9">15237</value>
 					<value level="10">15238</value>
 					<value level="11">15239</value>
+					<value level="12">15240</value> <!-- Gussed -->
+					<value level="13">15241</value>
 				</npcId>
 				<summonPoints>2</summonPoints>
 				<lifeTime>-1</lifeTime>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11373" toLevel="11" name="Summon Soul Specter">
+	<skill id="11373" toLevel="13" name="Summon Soul Specter">
 		<!-- Summons Dark Crusader. Consumes $s1 summon points. -->
 		<icon>icon.skill11373</icon>
 		<magicLevel>
@@ -3292,6 +3382,8 @@
 			<value level="9">108</value>
 			<value level="10">109</value>
 			<value level="11">110</value>
+			<value level="12">112</value>
+			<value level="13">117</value>
 		</magicLevel>
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
@@ -3308,6 +3400,8 @@
 			<value level="9">545</value>
 			<value level="10">555</value>
 			<value level="11">565</value>
+			<value level="12">575</value>
+			<value level="13">585</value>
 		</mpConsume>
 		<hitTime>3500</hitTime>
 		<coolTime>500</coolTime>
@@ -3332,6 +3426,8 @@
 					<value level="9">15242</value>
 					<value level="10">15243</value>
 					<value level="11">15244</value>
+					<value level="12">15245</value> <!-- Gussed -->
+					<value level="13">15246</value>
 				</npcId>
 				<summonPoints>2</summonPoints>
 				<lifeTime>-1</lifeTime>
@@ -3353,6 +3449,8 @@
 			<value level="9">108</value>
 			<value level="10">109</value>
 			<value level="11">110</value>
+			<value level="12">114</value>
+			<value level="13">119</value>
 		</magicLevel>
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
@@ -3369,6 +3467,8 @@
 			<value level="9">545</value>
 			<value level="10">555</value>
 			<value level="11">565</value>
+			<value level="12">575</value>
+			<value level="13">585</value>
 		</mpConsume>
 		<hitTime>3500</hitTime>
 		<coolTime>500</coolTime>
@@ -3393,6 +3493,8 @@
 					<value level="9">15247</value>
 					<value level="10">15248</value>
 					<value level="11">15249</value>
+					<value level="12">15250</value> <!-- Gussed -->
+					<value level="13">15251</value>
 				</npcId>
 				<summonPoints>2</summonPoints>
 				<lifeTime>-1</lifeTime>
@@ -3968,7 +4070,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11387" toLevel="2" name="Arcana's Call">
+	<skill id="11387" toLevel="3" name="Arcana's Call">
 		<!-- For $s1, P./ M. Atk. and P./ M. Def. +$s2. Additionally, the servitor's P. Atk. +$s3, P. Accuracy +$s4, Confusion Atk. Rate +$s5. The servitor becomes immune to debuffs. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill11387</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -3981,7 +4083,11 @@
 		<targetType>SUMMON</targetType>
 		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>70</mpConsume>
+		<mpConsume>
+			<value level="1">70</value>
+			<value level="2">77</value>
+			<value level="3">84</value>
+		</mpConsume>
 		<castRange>800</castRange>
 		<hitTime>1000</hitTime>
 		<coolTime>200</coolTime>
@@ -4000,7 +4106,11 @@
 				<PULL>60</PULL>
 			</effect>
 			<effect name="PAtk">
-				<amount>20</amount>
+				<amount>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="Accuracy">
@@ -4042,11 +4152,12 @@
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
+					<value level="3">3</value>
 				</skillLevel>
 			</effect>
 		</selfEffects>
 	</skill>
-	<skill id="11388" toLevel="2" name="Lord of Arcana">
+	<skill id="11388" toLevel="3" name="Lord of Arcana">
 		<!-- For $s1, P./ M. Atk. and P./ M. Def. +$s2. -->
 		<icon>icon.skill11387</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -4069,6 +4180,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4076,6 +4188,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4083,6 +4196,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4090,12 +4204,13 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11389" toLevel="2" name="Elemental's Call">
+	<skill id="11389" toLevel="3" name="Elemental's Call">
 		<!-- For $s1, P./ M. Atk. and P./ M. Def. +$s2. Additionally, the servitor's P. Atk. +$s3, Atk. Spd. +$s4, Skill Cooldown -$s5. The servitor becomes immune to debuffs. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill11388</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -4108,7 +4223,11 @@
 		<targetType>SUMMON</targetType>
 		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>70</mpConsume>
+		<mpConsume>
+			<value level="1">70</value>
+			<value level="2">77</value>
+			<value level="3">84</value>
+		</mpConsume>
 		<castRange>800</castRange>
 		<hitTime>1000</hitTime>
 		<coolTime>200</coolTime>
@@ -4117,7 +4236,11 @@
 		<isMagic>1</isMagic>
 		<effects>
 			<effect name="PAtk">
-				<amount>20</amount>
+				<amount>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PhysicalAttackSpeed">
@@ -4174,11 +4297,12 @@
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
+					<value level="3">3</value>
 				</skillLevel>
 			</effect>
 		</selfEffects>
 	</skill>
-	<skill id="11390" toLevel="2" name="Lord of Elemental">
+	<skill id="11390" toLevel="3" name="Lord of Elemental">
 		<!-- For $s1, P./ M. Atk. and P./ M. Def. +$s2. -->
 		<icon>icon.skill11388</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -4201,6 +4325,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4208,6 +4333,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4215,6 +4341,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4222,12 +4349,13 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11391" toLevel="2" name="Spectral's Call">
+	<skill id="11391" toLevel="3" name="Spectral's Call">
 		<!-- For $s1, P./ M. Atk. and P./ M. Def. +$s2. Additionally, the servitor's P. Atk. +$s3, Critical Damage for standard attacks +$s4. The servitor becomes immune to debuffs. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill11389</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -4240,7 +4368,11 @@
 		<targetType>SUMMON</targetType>
 		<affectScope>SUMMON_EXCEPT_MASTER</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>70</mpConsume>
+		<mpConsume>
+			<value level="1">70</value>
+			<value level="2">77</value>
+			<value level="3">84</value>
+		</mpConsume>
 		<castRange>800</castRange>
 		<hitTime>1000</hitTime>
 		<coolTime>200</coolTime>
@@ -4249,7 +4381,11 @@
 		<isMagic>1</isMagic>
 		<effects>
 			<effect name="PAtk">
-				<amount>20</amount>
+				<amount>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="CriticalDamage">
@@ -4291,11 +4427,12 @@
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
+					<value level="3">3</value>
 				</skillLevel>
 			</effect>
 		</selfEffects>
 	</skill>
-	<skill id="11392" toLevel="2" name="Lord of Spectral">
+	<skill id="11392" toLevel="3" name="Lord of Spectral">
 		<!-- For $s1, P./ M. Atk. and P./ M. Def. +$s2. -->
 		<icon>icon.skill11389</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -4318,6 +4455,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4325,6 +4463,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4332,6 +4471,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -4339,12 +4479,13 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">35</value>
+					<value level="3">40</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11393" toLevel="6" name="Freezing Invoke">
+	<skill id="11393" toLevel="8" name="Freezing Invoke">
 		<!-- Deals magic damage to the target and nearby enemies with $s1 power. For $s2, enemies' P./ M. Def. -$s3. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill11393</icon>
 		<abnormalLevel>
@@ -4354,12 +4495,14 @@
 			<value level="4">4</value>
 			<value level="5">5</value>
 			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
 		</abnormalLevel>
 		<abnormalType>SYNERGY_WYNN</abnormalType>
 		<abnormalTime>20</abnormalTime>
 		<activateRate>
-		<value fromLevel="1" toLevel="6">80</value>
-		<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+		<value fromLevel="1" toLevel="8">80</value>
+		<value fromLevel="1" toLevel="8" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
 		<basicProperty>NONE</basicProperty>
 		<itemConsumeCount>2</itemConsumeCount>
@@ -4372,6 +4515,8 @@
 			<value level="4">105</value>
 			<value level="5">107</value>
 			<value level="6">109</value>
+			<value level="7">113</value>
+			<value level="8">118</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">286</value>
@@ -4380,6 +4525,8 @@
 			<value level="4">331</value>
 			<value level="5">346</value>
 			<value level="6">361</value>
+			<value level="7">376</value>
+			<value level="8">391</value>
 		</mpConsume>
 		<castRange>600</castRange>
 		<hitTime>2560</hitTime>
@@ -4404,7 +4551,9 @@
 					<value level="4">318</value>
 					<value level="5">334</value>
 					<value level="6">349</value>
-					<value fromLevel="1" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+					<value level="7">384</value>
+					<value level="8">422</value>
+					<value fromLevel="1" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 				</power>
 			</effect>
 			<effect name="PhysicalDefence">
@@ -4413,14 +4562,14 @@
 			</effect>
 			<effect name="MagicalDefence">
 				<amount>
-					<value fromLevel="1" toLevel="6">-30</value>
-					<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{base - (-0.6 - (0.4 * subIndex))}</value>
+					<value fromLevel="1" toLevel="8">-30</value>
+					<value fromLevel="1" toLevel="8" fromSubLevel="3001" toSubLevel="3020">{base - (-0.6 - (0.4 * subIndex))}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11394" toLevel="6" name="Surrender to the Elemental">
+	<skill id="11394" toLevel="8" name="Surrender to the Elemental">
 		<!-- Deals magic damage to the target with $s1 power. For $s2, enemy's Attribute Resistance -$s3. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill11394</icon>
 		<abnormalLevel>
@@ -4430,6 +4579,8 @@
 			<value level="4">4</value>
 			<value level="5">5</value>
 			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
 		</abnormalLevel>
 		<abnormalType>MD_DOWN_AWAKEN</abnormalType>
 		<abnormalTime>10</abnormalTime>
@@ -4448,6 +4599,8 @@
 			<value level="4">105</value>
 			<value level="5">107</value>
 			<value level="6">109</value>
+			<value level="7">113</value>
+			<value level="8">118</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">86</value>
@@ -4456,6 +4609,8 @@
 			<value level="4">92</value>
 			<value level="5">94</value>
 			<value level="6">96</value>
+			<value level="7">98</value>
+			<value level="8">100</value>
 		</mpConsume>
 		<castRange>800</castRange>
 		<hitTime>2780</hitTime>
@@ -4476,7 +4631,9 @@
 					<value level="4">353</value>
 					<value level="5">369</value>
 					<value level="6">384</value>
-					<value fromLevel="1" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+					<value level="7">422</value>
+					<value level="8">464</value>
+					<value fromLevel="1" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 				</power>
 			</effect>
 			<effect name="DefenceAttribute">
@@ -4511,7 +4668,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="11395" toLevel="6" name="Curse Exposure">
+	<skill id="11395" toLevel="8" name="Curse Exposure">
 		<!-- Deals magic damage to the target with $s1 power. For $s2, enemy's Vital Spot Resistance -$s3. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill11395</icon>
 		<abnormalLevel>
@@ -4521,12 +4678,14 @@
 			<value level="4">4</value>
 			<value level="5">5</value>
 			<value level="6">6</value>
+			<value level="7">7</value>
+			<value level="8">8</value>
 		</abnormalLevel>
 		<abnormalType>CURSE_EXPOSURE</abnormalType>
 		<abnormalTime>30</abnormalTime>
 		<activateRate>
-			<value fromLevel="1" toLevel="6">80</value> <!-- Guessed -->
-			<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
+			<value fromLevel="1" toLevel="8">80</value> <!-- Guessed -->
+			<value fromLevel="1" toLevel="8" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
 		<basicProperty>NONE</basicProperty>
 		<itemConsumeCount>1</itemConsumeCount>
@@ -4539,6 +4698,8 @@
 			<value level="4">105</value>
 			<value level="5">107</value>
 			<value level="6">109</value>
+			<value level="7">113</value>
+			<value level="8">118</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">86</value>
@@ -4547,6 +4708,8 @@
 			<value level="4">92</value>
 			<value level="5">94</value>
 			<value level="6">96</value>
+			<value level="7">98</value>
+			<value level="8">100</value>
 		</mpConsume>
 		<castRange>800</castRange>
 		<hitTime>2780</hitTime>
@@ -4567,15 +4730,17 @@
 					<value level="4">353</value>
 					<value level="5">369</value>
 					<value level="6">384</value>
-					<value fromLevel="1" toLevel="6" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
+					<value level="7">422</value>
+					<value level="8">464</value>
+					<value fromLevel="1" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 				</power>
 			</effect>
 			<effect name="InstantKillResist">
 				<amount>-30</amount>
 			</effect>
-			<effect name="PhysicalDefence" fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">
+			<effect name="PhysicalDefence" fromLevel="1" toLevel="8" fromSubLevel="3001" toSubLevel="3020">
 				<amount>
-					<value fromLevel="1" toLevel="6" fromSubLevel="3001" toSubLevel="3020">{-0.6 - (0.4 * subIndex)}</value>
+					<value fromLevel="1" toLevel="8" fromSubLevel="3001" toSubLevel="3020">{-0.6 - (0.4 * subIndex)}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
