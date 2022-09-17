@@ -19,6 +19,7 @@ package org.l2jmobius.gameserver.model.events;
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
 import org.l2jmobius.gameserver.model.events.impl.OnDayNightChange;
+import org.l2jmobius.gameserver.model.events.impl.OnServerStart;
 import org.l2jmobius.gameserver.model.events.impl.clan.OnClanWarFinish;
 import org.l2jmobius.gameserver.model.events.impl.clan.OnClanWarStart;
 import org.l2jmobius.gameserver.model.events.impl.creature.OnCreatureAttack;
@@ -280,7 +281,9 @@ public enum EventType
 	// Trap events
 	ON_TRAP_ACTION(OnTrapAction.class, void.class),
 	
-	ON_DAY_NIGHT_CHANGE(OnDayNightChange.class, void.class),
+	// Elemental spirit events
+	ON_ELEMENTAL_SPIRIT_UPGRADE(OnElementalSpiritUpgrade.class, void.class),
+	ON_ELEMENTAL_SPIRIT_LEARN(OnElementalSpiritLearn.class, void.class),
 	
 	// Instance events
 	ON_INSTANCE_CREATED(OnInstanceCreated.class, void.class),
@@ -289,8 +292,9 @@ public enum EventType
 	ON_INSTANCE_LEAVE(OnInstanceLeave.class, void.class),
 	ON_INSTANCE_STATUS_CHANGE(OnInstanceStatusChange.class, void.class),
 	
-	ON_ELEMENTAL_SPIRIT_UPGRADE(OnElementalSpiritUpgrade.class, void.class),
-	ON_ELEMENTAL_SPIRIT_LEARN(OnElementalSpiritLearn.class, void.class);
+	// Server events
+	ON_SERVER_START(OnServerStart.class, void.class),
+	ON_DAY_NIGHT_CHANGE(OnDayNightChange.class, void.class);
 	
 	private final Class<? extends IBaseEvent> _eventClass;
 	private final Class<?>[] _returnClass;
