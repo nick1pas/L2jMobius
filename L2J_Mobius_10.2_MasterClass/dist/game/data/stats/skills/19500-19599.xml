@@ -1173,7 +1173,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19552" toLevel="11" name="Burning Chain Lash">
+	<skill id="19552" toLevel="13" name="Burning Chain Lash">
 		<!-- Wields the burning chain to draw nearby enemies to you with $s1 power. Ignites them for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19556</icon>
 		<abnormalLevel>5</abnormalLevel>
@@ -1199,21 +1199,25 @@
 			<value level="9">101</value>
 			<value level="10">103</value>
 			<value level="11">105</value>
+			<value level="12">113</value>
+			<value level="13">118</value>
 		</magicLevel>
 		<operateType>A2</operateType>
 		<castRange>600</castRange>
 		<mpConsume>
-			<value level="1">159</value>
-			<value level="2">162</value>
-			<value level="3">167</value>
-			<value level="4">173</value>
-			<value level="5">179</value>
-			<value level="6">184</value>
-			<value level="7">190</value>
-			<value level="8">196</value>
-			<value level="9">202</value>
-			<value level="10">206</value>
-			<value level="11">210</value>
+			<value level="1">166</value>
+			<value level="2">173</value>
+			<value level="3">179</value>
+			<value level="4">185</value>
+			<value level="5">191</value>
+			<value level="6">197</value>
+			<value level="7">199</value>
+			<value level="8">201</value>
+			<value level="9">203</value>
+			<value level="10">205</value>
+			<value level="11">207</value>
+			<value level="12">209</value>
+			<value level="13">211</value>
 		</mpConsume>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>
@@ -1250,6 +1254,8 @@
 					<value level="9">22888</value>
 					<value level="10">23966</value>
 					<value level="11">25044</value>
+					<value level="12">27548</value>
+					<value level="13">30303</value>
 				</power>
 			</effect>
 			<effect name="CallSkill">
@@ -1259,7 +1265,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19553" toLevel="7" name="Revenging Thorn">
+	<skill id="19553" toLevel="9" name="Revenging Thorn">
 		<!-- Attacks nearby enemies with thorns with $s1 power pulling them to you. Recovers $s2 HP. If cast while Grand Fortress Lv. 5 is active, the skill has increased power and range. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19553</icon>
 		<affectLimit>5-12</affectLimit>
@@ -1280,6 +1286,8 @@
 			<value level="5">105</value>
 			<value level="6">107</value>
 			<value level="7">109</value>
+			<value level="8">114</value>
+			<value level="9">119</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">40</value>
@@ -1289,6 +1297,8 @@
 			<value level="5">53</value>
 			<value level="6">55</value>
 			<value level="7">57</value>
+			<value level="8">59</value>
+			<value level="9">61</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<coolTime>500</coolTime>
@@ -1318,6 +1328,8 @@
 					<value level="5">56404</value>
 					<value level="6">58921</value>
 					<value level="7">61439</value>
+					<value level="8">67583</value>
+					<value level="9">74341</value>
 				</power>
 				<overHit>true</overHit>
 			</effect>
@@ -1403,7 +1415,7 @@
 			</effect>
 		</selfEffects>
 	</skill>
-	<skill id="19555" toLevel="7" name="Maelstrom">
+	<skill id="19555" toLevel="9" name="Maelstrom">
 		<!-- Creates a cyclone that pulls nearby enemies to you with $s1 power. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19554</icon>
 		<affectLimit>5-12</affectLimit>
@@ -1424,6 +1436,8 @@
 			<value level="5">105</value>
 			<value level="6">107</value>
 			<value level="7">109</value>
+			<value level="8">114</value>
+			<value level="9">119</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">40</value>
@@ -1433,6 +1447,8 @@
 			<value level="5">53</value>
 			<value level="6">55</value>
 			<value level="7">57</value>
+			<value level="8">59</value>
+			<value level="9">61</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<coolTime>500</coolTime>
@@ -1462,6 +1478,8 @@
 					<value level="5">66795</value>
 					<value level="6">69941</value>
 					<value level="7">73087</value>
+					<value level="8">80396</value>
+					<value level="9">88436</value>
 				</power>
 				<overHit>true</overHit>
 			</effect>
@@ -1470,7 +1488,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19556" toLevel="7" name="Inhale Soul">
+	<skill id="19556" toLevel="9" name="Inhale Soul">
 		<!-- Creates a pit of darkness that pulls nearby enemies to you with $s1 power. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19555</icon>
 		<affectLimit>5-12</affectLimit>
@@ -1488,6 +1506,8 @@
 			<value level="5">105</value>
 			<value level="6">107</value>
 			<value level="7">109</value>
+			<value level="8">114</value>
+			<value level="9">119</value>
 		</magicLevel>
 		<operateType>A2</operateType>
 		<mpConsume>
@@ -1498,6 +1518,8 @@
 			<value level="5">53</value>
 			<value level="6">55</value>
 			<value level="7">57</value>
+			<value level="8">59</value>
+			<value level="9">61</value>
 		</mpConsume>
 		<hitTime>3000</hitTime>
 		<coolTime>500</coolTime>
@@ -1531,6 +1553,8 @@
 					<value level="5">66795</value>
 					<value level="6">69941</value>
 					<value level="7">73087</value>
+					<value level="8">80396</value>
+					<value level="9">88436</value>
 				</power>
 			</effect>
 		</effects>
@@ -1591,7 +1615,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19558" toLevel="7" name="Flame Feather">
+	<skill id="19558" toLevel="9" name="Flame Feather">
 		<!-- Fires the Flame of Phoenix to attack nearby enemies with $s1 power provoking them into attacking you for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill19552</icon>
 		<affectLimit>5-12</affectLimit>
@@ -1608,17 +1632,11 @@
 			<value level="5">105</value>
 			<value level="6">107</value>
 			<value level="7">109</value>
+			<value level="8">114</value>
+			<value level="9">119</value>
 		</magicLevel>
 		<operateType>A2</operateType>
-		<mpConsume>
-			<value level="1">40</value>
-			<value level="2">44</value>
-			<value level="3">48</value>
-			<value level="4">51</value>
-			<value level="5">53</value>
-			<value level="6">55</value>
-			<value level="7">57</value>
-		</mpConsume>
+		<mpConsume>185</mpConsume>
 		<hitTime>3000</hitTime>
 		<coolTime>500</coolTime>
 		<reuseDelay>60000</reuseDelay>
@@ -1648,6 +1666,8 @@
 					<value level="5">66795</value>
 					<value level="6">69941</value>
 					<value level="7">73087</value>
+					<value level="8">80396</value>
+					<value level="9">88436</value>
 				</power>
 				<overHit>true</overHit>
 			</effect>
@@ -1660,6 +1680,8 @@
 					<value level="5">2385550</value>
 					<value level="6">2497900</value>
 					<value level="7">2610250</value>
+					<value level="8">2722600</value> <!-- Gussed -->
+					<value level="9">2834950</value>
 				</power>
 			</effect>
 			<effect name="TargetMe" />
@@ -1692,19 +1714,23 @@
 			<value level="9">105</value>
 			<value level="10">107</value>
 			<value level="11">109</value>
+			<value level="12">113</value>
+			<value level="13">118</value>
 		</magicLevel>
 		<mpConsume>
-			<value level="1">40</value>
-			<value level="2">44</value>
-			<value level="3">48</value>
-			<value level="4">51</value>
-			<value level="5">53</value>
-			<value level="6">55</value>
-			<value level="7">57</value>
-			<value level="8">57</value>
-			<value level="9">57</value>
-			<value level="10">57</value>
-			<value level="11">57</value>
+			<value level="1">166</value>
+			<value level="2">173</value>
+			<value level="3">179</value>
+			<value level="4">185</value>
+			<value level="5">191</value>
+			<value level="6">197</value>
+			<value level="7">199</value>
+			<value level="8">201</value>
+			<value level="9">203</value>
+			<value level="10">205</value>
+			<value level="11">207</value>
+			<value level="12">209</value>
+			<value level="13">211</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<reuseDelay>45000</reuseDelay>
@@ -1745,6 +1771,8 @@
 					<value level="9">22888</value>
 					<value level="10">23966</value>
 					<value level="11">25044</value>
+					<value level="12">27548</value>
+					<value level="13">30303</value>
 				</power>
 				<overHit>true</overHit>
 				<chance>90</chance>
@@ -1852,7 +1880,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19561" toLevel="11" name="Chained Death Scythe">
+	<skill id="19561" toLevel="13" name="Chained Death Scythe">
 		<!-- Summons a scythe to attack the target and nearby enemies with $s1 power pulling them to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19559</icon>
 		<affectLimit>5-12</affectLimit>
@@ -1874,6 +1902,8 @@
 			<value level="9">105</value>
 			<value level="10">107</value>
 			<value level="11">109</value>
+			<value level="12">113</value>
+			<value level="13">118</value>
 		</magicLevel>
 		<operateType>A2</operateType>
 		<castRange>600</castRange>
@@ -1889,6 +1919,8 @@
 			<value level="9">203</value>
 			<value level="10">205</value>
 			<value level="11">207</value>
+			<value level="12">209</value>
+			<value level="13">211</value>
 		</mpConsume>
 		<hitTime>2500</hitTime>
 		<coolTime>500</coolTime>
@@ -1925,6 +1957,8 @@
 					<value level="9">22888</value>
 					<value level="10">23966</value>
 					<value level="11">25044</value>
+					<value level="12">27548</value>
+					<value level="13">30303</value>
 				</power>
 			</effect>
 		</effects>
@@ -2035,7 +2069,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19566" toLevel="4" name="Grand Shillien Shadow">
+	<skill id="19566" toLevel="5" name="Grand Shillien Shadow">
 		<!-- P. Atk. +$s1, Shield Def. +$s2, and Attribute Attack +$s3, and activates Shillien Shadow on the caster. $s4 chance to activate Shillien's Presence on allies. -->
 		<icon>icon.skill19560</icon>
 		<operateType>P</operateType>
@@ -2044,6 +2078,7 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 			<value level="4">99</value>
+			<value level="5">115</value>
 		</magicLevel>
 		<effects>
 			<effect name="TriggerSkillByDamage">
@@ -2059,6 +2094,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
+					<value level="5">5</value>
 				</skillLevel>
 			</effect>
 			<effect name="PAtk">
@@ -2067,6 +2103,7 @@
 					<value level="2">3</value>
 					<value level="3">4</value>
 					<value level="4">6</value>
+					<value level="5">7</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -2076,6 +2113,7 @@
 					<value level="2">9</value>
 					<value level="3">12</value>
 					<value level="4">15</value>
+					<value level="5">15</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -2085,6 +2123,7 @@
 					<value level="2">20</value>
 					<value level="3">25</value>
 					<value level="4">30</value>
+					<value level="5">50</value>
 				</amount>
 				<attribute>FIRE</attribute>
 			</effect>
@@ -2094,6 +2133,7 @@
 					<value level="2">20</value>
 					<value level="3">25</value>
 					<value level="4">30</value>
+					<value level="5">50</value>
 				</amount>
 				<attribute>WATER</attribute>
 			</effect>
@@ -2103,6 +2143,7 @@
 					<value level="2">20</value>
 					<value level="3">25</value>
 					<value level="4">30</value>
+					<value level="5">50</value>
 				</amount>
 				<attribute>WIND</attribute>
 			</effect>
@@ -2112,6 +2153,7 @@
 					<value level="2">20</value>
 					<value level="3">25</value>
 					<value level="4">30</value>
+					<value level="5">50</value>
 				</amount>
 				<attribute>EARTH</attribute>
 			</effect>
@@ -2121,6 +2163,7 @@
 					<value level="2">20</value>
 					<value level="3">25</value>
 					<value level="4">30</value>
+					<value level="5">50</value>
 				</amount>
 				<attribute>HOLY</attribute>
 			</effect>
@@ -2130,12 +2173,13 @@
 					<value level="2">20</value>
 					<value level="3">25</value>
 					<value level="4">30</value>
+					<value level="5">50</value>
 				</amount>
 				<attribute>DARK</attribute>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19567" toLevel="11" name="Gigantic Wave">
+	<skill id="19567" toLevel="13" name="Gigantic Wave">
 		<!-- Summons a huge wave that attacks the target and nearby enemies with $s1 power pulling them to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19558</icon>
 		<affectLimit>5-12</affectLimit>
@@ -2161,19 +2205,23 @@
 			<value level="9">105</value>
 			<value level="10">107</value>
 			<value level="11">109</value>
+			<value level="12">113</value>
+			<value level="13">118</value>
 		</magicLevel>
 		<mpConsume>
-			<value level="1">40</value>
-			<value level="2">44</value>
-			<value level="3">48</value>
-			<value level="4">51</value>
-			<value level="5">53</value>
-			<value level="6">55</value>
-			<value level="7">57</value>
-			<value level="8">57</value>
-			<value level="9">57</value>
-			<value level="10">57</value>
-			<value level="11">57</value>
+			<value level="1">166</value>
+			<value level="2">173</value>
+			<value level="3">179</value>
+			<value level="4">185</value>
+			<value level="5">191</value>
+			<value level="6">197</value>
+			<value level="7">199</value>
+			<value level="8">201</value>
+			<value level="9">203</value>
+			<value level="10">205</value>
+			<value level="11">207</value>
+			<value level="12">209</value>
+			<value level="13">211</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<reuseDelay>45000</reuseDelay>
@@ -2188,7 +2236,7 @@
 		<coolTime>500</coolTime>
 		<reuseDelay>45000</reuseDelay>
 		<isDebuff>true</isDebuff>
-		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
+		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
 		<attributeType>WATER</attributeType>
 		<attributeValue>20</attributeValue>
 		<lvlBonusRate>1</lvlBonusRate>
@@ -2214,6 +2262,8 @@
 					<value level="9">22888</value>
 					<value level="10">23966</value>
 					<value level="11">25044</value>
+					<value level="12">27548</value>
+					<value level="13">30303</value>
 				</power>
 				<overHit>true</overHit>
 			</effect>
@@ -2463,7 +2513,7 @@
 		<operateType>A1</operateType>
 		<effectPoint>2</effectPoint>
 	</skill>
-	<skill id="19575" toLevel="13" name="Vanishing Stun">
+	<skill id="19575" toLevel="15" name="Vanishing Stun">
 		<!-- Silenced by Vanishing Stun for $s1 Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill10010</icon>
 		<operateType>A2</operateType>
