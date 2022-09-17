@@ -18,7 +18,6 @@ package events.EveTheFortuneTeller;
 
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.LuckyGameType;
-import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
@@ -41,7 +40,6 @@ public class EveTheFortuneTeller extends LongTimeEvent
 	private static final int FORTUNE_READING_TICKET = 23767;
 	private static final int LUXURY_FORTUNE_READING_TICKET = 23768;
 	// Misc
-	private static final Location JAYCE_SPAWN = new Location(148090, 26644, -2209, 16383);
 	private static final NpcStringId[] JAYCE_TEXT =
 	{
 		NpcStringId.I_LOOK_WEST,
@@ -55,10 +53,6 @@ public class EveTheFortuneTeller extends LongTimeEvent
 		addFirstTalkId(EVE);
 		addTalkId(EVE);
 		addSpawnId(JAYCE);
-		if (isEventPeriod())
-		{
-			addSpawn(JAYCE, JAYCE_SPAWN, false, 0);
-		}
 	}
 	
 	@Override
