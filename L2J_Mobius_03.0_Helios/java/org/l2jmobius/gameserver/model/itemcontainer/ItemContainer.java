@@ -250,7 +250,7 @@ public abstract class ItemContainer
 				final ItemTemplate template = ItemTable.getInstance().getTemplate(itemId);
 				if (template == null)
 				{
-					LOGGER.log(Level.WARNING, (actor != null ? "[" + actor.getName() + "] " : "") + "Invalid ItemId requested: ", itemId);
+					LOGGER.warning("Invalid ItemId (" + itemId + ") requested by " + (actor != null ? actor : process));
 					return null;
 				}
 				
@@ -661,7 +661,7 @@ public abstract class ItemContainer
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.WARNING, "could not restore container:", e);
+			LOGGER.log(Level.WARNING, "Could not restore container:", e);
 		}
 	}
 	
