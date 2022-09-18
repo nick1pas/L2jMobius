@@ -59,8 +59,7 @@ public class DailyTaskManager
 	private static final Set<Integer> RESET_SKILLS = new HashSet<>();
 	static
 	{
-		RESET_SKILLS.add(2510); // Wondrous Cubic
-		RESET_SKILLS.add(22180); // Wondrous Cubic - 1 time use
+		// No known skills.
 	}
 	public static final Set<Integer> RESET_ITEMS = new HashSet<>();
 	static
