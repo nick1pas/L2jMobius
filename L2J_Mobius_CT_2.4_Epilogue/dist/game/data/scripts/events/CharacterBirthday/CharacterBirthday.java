@@ -34,10 +34,9 @@ import ai.AbstractNpcAI;
 /**
  * @author Gnacik
  */
-
 public class CharacterBirthday extends AbstractNpcAI
 {
-	// Npcs
+	// NPCs
 	private static final int ALEGRIA = 32600;
 	private static final int[] GATEKEEPERS =
 	{

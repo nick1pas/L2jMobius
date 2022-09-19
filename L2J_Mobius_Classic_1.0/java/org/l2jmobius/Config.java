@@ -602,9 +602,6 @@ public class Config
 	public static boolean CUSTOM_MULTISELL_LOAD;
 	public static boolean CUSTOM_BUYLIST_LOAD;
 	public static int BOOKMARK_CONSUME_ITEM_ID;
-	public static int ALT_BIRTHDAY_GIFT;
-	public static String ALT_BIRTHDAY_MAIL_SUBJECT;
-	public static String ALT_BIRTHDAY_MAIL_TEXT;
 	public static boolean ENABLE_BLOCK_CHECKER_EVENT;
 	public static int MIN_BLOCK_CHECKER_TEAM_MEMBERS;
 	public static boolean HBCE_FAIR_PLAY;
@@ -2035,9 +2032,6 @@ public class Config
 			CUSTOM_MULTISELL_LOAD = generalConfig.getBoolean("CustomMultisellLoad", false);
 			CUSTOM_BUYLIST_LOAD = generalConfig.getBoolean("CustomBuyListLoad", false);
 			BOOKMARK_CONSUME_ITEM_ID = generalConfig.getInt("BookmarkConsumeItemId", -1);
-			ALT_BIRTHDAY_GIFT = generalConfig.getInt("AltBirthdayGift", 22187);
-			ALT_BIRTHDAY_MAIL_SUBJECT = generalConfig.getString("AltBirthdayMailSubject", "Happy Birthday!");
-			ALT_BIRTHDAY_MAIL_TEXT = generalConfig.getString("AltBirthdayMailText", "Hello Adventurer!! Seeing as you're one year older now, I thought I would send you some birthday cheer :) Please find your birthday pack attached. May these gifts bring you joy and happiness on this very special day." + EOL + EOL + "Sincerely, Alegria");
 			ENABLE_BLOCK_CHECKER_EVENT = generalConfig.getBoolean("EnableBlockCheckerEvent", false);
 			MIN_BLOCK_CHECKER_TEAM_MEMBERS = generalConfig.getInt("BlockCheckerMinTeamMembers", 2);
 			if (MIN_BLOCK_CHECKER_TEAM_MEMBERS < 1)

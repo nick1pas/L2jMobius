@@ -36,7 +36,6 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
-import org.l2jmobius.gameserver.taskmanager.tasks.TaskBirthday;
 import org.l2jmobius.gameserver.taskmanager.tasks.TaskCleanUp;
 import org.l2jmobius.gameserver.taskmanager.tasks.TaskRecom;
 import org.l2jmobius.gameserver.taskmanager.tasks.TaskRestart;
@@ -165,7 +164,6 @@ public class TaskManager
 	
 	private void initializate()
 	{
-		registerTask(new TaskBirthday());
 		registerTask(new TaskCleanUp());
 		registerTask(new TaskRecom());
 		registerTask(new TaskRestart());
