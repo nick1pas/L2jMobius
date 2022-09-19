@@ -21,7 +21,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * @author UnAfraid
+ * @author Index
  */
 public class ExEnchantTwoOK implements IClientOutgoingPacket
 {
@@ -35,6 +35,7 @@ public class ExEnchantTwoOK implements IClientOutgoingPacket
 	public boolean write(PacketWriter packet)
 	{
 		OutgoingPackets.EX_ENCHANT_TWO_OK.writeId(packet);
+		packet.writeD(0); // success percent (if 0 - takes from dat, if 1 - will be 0.01)
 		return true;
 	}
 }
