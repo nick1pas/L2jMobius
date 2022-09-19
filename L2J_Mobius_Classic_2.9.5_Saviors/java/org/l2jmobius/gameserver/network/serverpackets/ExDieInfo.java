@@ -19,6 +19,7 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Collection;
 
 import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.holders.DamageTakenHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.OutgoingPackets;
@@ -48,14 +49,25 @@ public class ExDieInfo implements IClientOutgoingPacket
 			packet.writeD(item.getEnchantLevel());
 			packet.writeD((int) item.getCount());
 		}
-		packet.writeD(_lastDamageTaken.size());
+		packet.writeH(_lastDamageTaken.size());
 		for (DamageTakenHolder damageHolder : _lastDamageTaken)
 		{
-			packet.writeS(damageHolder.getCreature().getName());
-			packet.writeH(0);
+			if (damageHolder.getCreature().isNpc())
+			{
+				packet.writeH(1);
+				packet.writeD(damageHolder.getCreature().getId());
+				packet.writeS("");
+			}
+			else
+			{
+				final Clan clan = damageHolder.getCreature().getClan();
+				packet.writeH(0);
+				packet.writeS(damageHolder.getCreature().getName());
+				packet.writeS(clan == null ? "" : clan.getName());
+			}
 			packet.writeD(damageHolder.getSkillId());
 			packet.writeF(damageHolder.getDamage());
-			packet.writeD(0);
+			packet.writeH(0); // damage type
 		}
 		return true;
 	}
