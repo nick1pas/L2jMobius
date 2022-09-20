@@ -141,33 +141,30 @@ public class HomunculusList
 		// Remove from database.
 		if (HomunculusManager.getInstance().delete(_owner, homunculus))
 		{
-			// Sort.
+			// Remove all.
+			for (Homunculus homu : _homunculusList)
+			{
+				HomunculusManager.getInstance().delete(_owner, homu);
+			}
+			
+			// Order.
 			int slot = 0;
-			final List<Homunculus> newList = new ArrayList<>();
 			for (int i = 0; i < Config.MAX_HOMUNCULUS_COUNT; i++)
 			{
 				final Homunculus homu = get(i);
-				if (homu == null)
+				if (homu != null)
 				{
-					continue;
+					homu.setSlot(slot++);
+					HomunculusManager.getInstance().insert(_owner, homu);
 				}
-				
-				if (homu.getSlot() != slot)
-				{
-					homu.setSlot(slot);
-					update(homu);
-				}
-				slot++;
-				
-				newList.add(homu);
 			}
-			_homunculusList = newList;
 			
 			// Refresh stats.
 			if (refreshStats(true))
 			{
 				_owner.sendSkillList();
 			}
+			
 			return true;
 		}
 		
