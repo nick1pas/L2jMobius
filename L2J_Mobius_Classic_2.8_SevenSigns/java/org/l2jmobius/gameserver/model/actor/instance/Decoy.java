@@ -39,8 +39,6 @@ import org.l2jmobius.gameserver.taskmanager.DecayTaskManager;
 public class Decoy extends Creature
 {
 	private final Player _owner;
-	private int _totalLifeTime;
-	private int _timeRemaining;
 	private Future<?> _decoyLifeTask;
 	private Future<?> _hateSpam;
 	
@@ -56,9 +54,7 @@ public class Decoy extends Creature
 		_owner = owner;
 		setXYZInvisible(owner.getX(), owner.getY(), owner.getZ());
 		setInvul(false);
-		_totalLifeTime = totalLifeTime;
-		_timeRemaining = _totalLifeTime;
-		_decoyLifeTask = ThreadPool.scheduleAtFixedRate(new DecoyLifetime(this), 1000, 1000);
+		_decoyLifeTask = ThreadPool.schedule(this::unSummon, totalLifeTime);
 		if (aggressive)
 		{
 			final int hateSpamSkillId = 5272;
@@ -79,37 +75,9 @@ public class Decoy extends Creature
 			_hateSpam.cancel(true);
 			_hateSpam = null;
 		}
-		_totalLifeTime = 0;
+		unSummon();
 		DecayTaskManager.getInstance().add(this);
 		return true;
-	}
-	
-	static class DecoyLifetime implements Runnable
-	{
-		private final Decoy _decoy;
-		
-		DecoyLifetime(Decoy decoy)
-		{
-			_decoy = decoy;
-		}
-		
-		@Override
-		public void run()
-		{
-			try
-			{
-				_decoy.decTimeRemaining(1000);
-				final double newTimeRemaining = _decoy.getTimeRemaining();
-				if (newTimeRemaining < 0)
-				{
-					_decoy.unSummon();
-				}
-			}
-			catch (Exception e)
-			{
-				LOGGER.log(Level.SEVERE, "Decoy Error: ", e);
-			}
-		}
 	}
 	
 	private static class HateSpam implements Runnable
@@ -138,13 +106,8 @@ public class Decoy extends Creature
 		}
 	}
 	
-	public void unSummon()
+	public synchronized void unSummon()
 	{
-		if (_decoyLifeTask != null)
-		{
-			_decoyLifeTask.cancel(true);
-			_decoyLifeTask = null;
-		}
 		if (_hateSpam != null)
 		{
 			_hateSpam.cancel(true);
@@ -156,21 +119,12 @@ public class Decoy extends Creature
 			ZoneManager.getInstance().getRegion(this).removeFromZones(this);
 			decayMe();
 		}
-	}
-	
-	public void decTimeRemaining(int value)
-	{
-		_timeRemaining -= value;
-	}
-	
-	public int getTimeRemaining()
-	{
-		return _timeRemaining;
-	}
-	
-	public int getTotalLifeTime()
-	{
-		return _totalLifeTime;
+		
+		if (_decoyLifeTask != null)
+		{
+			_decoyLifeTask.cancel(false);
+			_decoyLifeTask = null;
+		}
 	}
 	
 	@Override
