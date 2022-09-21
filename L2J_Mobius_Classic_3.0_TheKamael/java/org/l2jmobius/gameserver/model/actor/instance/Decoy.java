@@ -46,6 +46,11 @@ public class Decoy extends Creature
 	
 	public Decoy(NpcTemplate template, Player owner, int totalLifeTime)
 	{
+		this(template, owner, totalLifeTime, true);
+	}
+	
+	public Decoy(NpcTemplate template, Player owner, int totalLifeTime, boolean aggressive)
+	{
 		super(template);
 		setInstanceType(InstanceType.Decoy);
 		_owner = owner;
@@ -53,10 +58,13 @@ public class Decoy extends Creature
 		setInvul(false);
 		_totalLifeTime = totalLifeTime;
 		_timeRemaining = _totalLifeTime;
-		final int hateSpamSkillId = 5272;
-		final int skilllevel = Math.min(getTemplate().getDisplayId() - 13070, SkillData.getInstance().getMaxLevel(hateSpamSkillId));
-		_decoyLifeTask = ThreadPool.scheduleAtFixedRate(new DecoyLifetime(_owner, this), 1000, 1000);
-		_hateSpam = ThreadPool.scheduleAtFixedRate(new HateSpam(this, SkillData.getInstance().getSkill(hateSpamSkillId, skilllevel)), 2000, 5000);
+		_decoyLifeTask = ThreadPool.scheduleAtFixedRate(new DecoyLifetime(this), 1000, 1000);
+		if (aggressive)
+		{
+			final int hateSpamSkillId = 5272;
+			final int skilllevel = Math.min(getTemplate().getDisplayId() - 13070, SkillData.getInstance().getMaxLevel(hateSpamSkillId));
+			_hateSpam = ThreadPool.scheduleAtFixedRate(new HateSpam(this, SkillData.getInstance().getSkill(hateSpamSkillId, skilllevel)), 2000, 5000);
+		}
 	}
 	
 	@Override
@@ -78,14 +86,11 @@ public class Decoy extends Creature
 	
 	static class DecoyLifetime implements Runnable
 	{
-		private final Player _player;
+		private final Decoy _decoy;
 		
-		private final Decoy _Decoy;
-		
-		DecoyLifetime(Player player, Decoy decoy)
+		DecoyLifetime(Decoy decoy)
 		{
-			_player = player;
-			_Decoy = decoy;
+			_decoy = decoy;
 		}
 		
 		@Override
@@ -93,11 +98,11 @@ public class Decoy extends Creature
 		{
 			try
 			{
-				_Decoy.decTimeRemaining(1000);
-				final double newTimeRemaining = _Decoy.getTimeRemaining();
+				_decoy.decTimeRemaining(1000);
+				final double newTimeRemaining = _decoy.getTimeRemaining();
 				if (newTimeRemaining < 0)
 				{
-					_Decoy.unSummon(_player);
+					_decoy.unSummon();
 				}
 			}
 			catch (Exception e)
@@ -133,7 +138,7 @@ public class Decoy extends Creature
 		}
 	}
 	
-	public void unSummon(Player owner)
+	public void unSummon()
 	{
 		if (_decoyLifeTask != null)
 		{
