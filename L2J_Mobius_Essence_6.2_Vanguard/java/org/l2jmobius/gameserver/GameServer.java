@@ -146,6 +146,7 @@ import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.instancemanager.ItemAuctionManager;
 import org.l2jmobius.gameserver.instancemanager.ItemCommissionManager;
 import org.l2jmobius.gameserver.instancemanager.ItemsOnGroundManager;
+import org.l2jmobius.gameserver.instancemanager.RankingPowerManager;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
 import org.l2jmobius.gameserver.instancemanager.MapRegionManager;
 import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
@@ -273,6 +274,7 @@ public class GameServer
 		DailyMissionHandler.getInstance().executeScript();
 		DailyMissionData.getInstance();
 		ElementalSpiritData.getInstance();
+		RankingPowerManager.getInstance();
 		SubjugationData.getInstance();
 		SubjugationGacha.getInstance();
 		PurgeRankingManager.getInstance();

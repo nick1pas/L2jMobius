@@ -26,6 +26,7 @@ import org.l2jmobius.gameserver.model.events.annotations.RegisterEvent;
 import org.l2jmobius.gameserver.model.events.annotations.RegisterType;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLogin;
 import org.l2jmobius.gameserver.model.skill.Skill;
+import org.l2jmobius.gameserver.network.serverpackets.ranking.ExRankingBuffZoneNpcInfo;
 
 import ai.AbstractNpcAI;
 
@@ -92,6 +93,7 @@ public class RankingSkillBonuses extends AbstractNpcAI
 		{
 			if (rank <= 1)
 			{
+				player.sendPacket(new ExRankingBuffZoneNpcInfo());
 				SERVER_LEVEL_RANKING_1ST_CLASS.applyEffects(player, player);
 				player.addSkill(SERVER_RANKING_BENEFIT_1, false);
 				player.addSkill(SERVER_RANKING_BENEFIT_2, false);

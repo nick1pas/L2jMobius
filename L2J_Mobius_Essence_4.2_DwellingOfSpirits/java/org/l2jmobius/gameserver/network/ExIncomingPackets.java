@@ -118,6 +118,8 @@ import org.l2jmobius.gameserver.network.clientpackets.randomcraft.ExRequestRando
 import org.l2jmobius.gameserver.network.clientpackets.randomcraft.ExRequestRandomCraftLockSlot;
 import org.l2jmobius.gameserver.network.clientpackets.randomcraft.ExRequestRandomCraftMake;
 import org.l2jmobius.gameserver.network.clientpackets.randomcraft.ExRequestRandomCraftRefresh;
+import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestExRankingCharBuffzoneNpcPosition;
+import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestExRankingCharSpawnBuffzoneNpc;
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestOlympiadHeroAndLegendInfo;
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestOlympiadMyRankingInfo;
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestOlympiadRankingInfo;
@@ -543,8 +545,8 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	EX_RANKING_CHAR_INFO(0x181, RequestRankingCharInfo::new, ConnectionState.IN_GAME),
 	EX_RANKING_CHAR_HISTORY(0x182, null, ConnectionState.IN_GAME),
 	EX_RANKING_CHAR_RANKERS(0x183, RequestRankingCharRankers::new, ConnectionState.IN_GAME),
-	EX_RANKING_CHAR_SPAWN_BUFFZONE_NPC(0x184, null, ConnectionState.IN_GAME),
-	EX_RANKING_CHAR_BUFFZONE_NPC_POSITION(0x185, null, ConnectionState.IN_GAME),
+	EX_RANKING_CHAR_SPAWN_BUFFZONE_NPC(0x184, RequestExRankingCharSpawnBuffzoneNpc::new, ConnectionState.IN_GAME),
+	EX_RANKING_CHAR_BUFFZONE_NPC_POSITION(0x185, RequestExRankingCharBuffzoneNpcPosition::new, ConnectionState.IN_GAME),
 	EX_PLEDGE_MERCENARY_RECRUIT_INFO_SET(0x186, null, ConnectionState.IN_GAME),
 	EX_MERCENARY_CASTLEWAR_CASTLE_INFO(0x187, null, ConnectionState.IN_GAME),
 	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_INFO(0x188, null, ConnectionState.IN_GAME),

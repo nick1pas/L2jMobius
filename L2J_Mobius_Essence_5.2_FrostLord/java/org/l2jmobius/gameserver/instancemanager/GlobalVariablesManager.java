@@ -44,6 +44,8 @@ public class GlobalVariablesManager extends AbstractVariables
 	// Public variable names
 	public static final String DAILY_TASK_RESET = "DAILY_TASK_RESET";
 	public static final String MONSTER_ARENA_VARIABLE = "MA_C";
+	public static final String RANKING_POWER_COOLDOWN = "RANKING_POWER_COOLDOWN";
+	public static final String RANKING_POWER_LOCATION = "RANKING_POWER_LOCATION";
 	public static final String PURGE_REWARD_TIME = "PURGE_REWARD_TIME";
 	
 	protected GlobalVariablesManager()
