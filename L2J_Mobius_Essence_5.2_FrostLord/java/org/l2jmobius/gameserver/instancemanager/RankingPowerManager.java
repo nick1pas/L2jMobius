@@ -66,7 +66,7 @@ public class RankingPowerManager
 		cloneTask();
 		final SystemMessage msg = new SystemMessage(SystemMessageId.A_RANKING_LEADER_C1_USED_LEADER_POWER_IN_S2);
 		msg.addString(player.getName());
-		msg.addZoneName(location.getX(), location.getY(), location.getZ()).toString();
+		msg.addZoneName(location.getX(), location.getY(), location.getZ());
 		Broadcast.toAllOnlinePlayers(msg);
 	}
 	
