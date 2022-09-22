@@ -82,7 +82,7 @@ public class AutoUseTaskManager implements Runnable
 				continue;
 			}
 			
-			if (player.hasBlockActions() || player.isControlBlocked() || player.isAlikeDead())
+			if (player.hasBlockActions() || player.isControlBlocked() || player.isAlikeDead() || player.isMounted() || (player.isTransformed() && player.getTransformation().get().isRiding()))
 			{
 				continue;
 			}
