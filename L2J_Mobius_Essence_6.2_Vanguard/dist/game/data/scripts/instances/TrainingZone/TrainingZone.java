@@ -383,13 +383,7 @@ public class TrainingZone extends AbstractInstance
 			}
 			case "SpawnBossClockList":
 			{
-				// Last 10 Min < 600000 Boss spawn
 				final Instance world = npc.getInstanceWorld();
-				if (world.getRemainingTime() > 600000)
-				{
-					break;
-				}
-				
 				final int areaTeleport = world.getParameters().getInt("TRAINIG_AREA_TELEPORT", 0);
 				if (areaTeleport == 1)
 				{
@@ -842,7 +836,7 @@ public class TrainingZone extends AbstractInstance
 	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon)
 	{
 		final Instance world = npc.getInstanceWorld();
-		if ((world != null) && !world.getParameters().getBoolean("spawnedBoss", false))
+		if ((world != null) && (world.getRemainingTime() < 600000) && !world.getParameters().getBoolean("spawnedBoss", false))
 		{
 			world.getParameters().set("spawnedBoss", true);
 			startQuestTimer("SpawnBossClockList", 1000, npc, attacker);
