@@ -430,13 +430,20 @@
 			<skill id="39171" level="3" /> <!--Lucky Gift Coupon (6-hour) -->
 		</skills>
 	</item>
-	<item id="48225" name="Festival Fairy's Five-colored Sweets" additionalName="Event" type="EtcItem">
-		<!-- For 30 min., Vitality bonus +30%. -->
+	<item id="48225" name="Multicolored Songpyeon" additionalName="Event" type="EtcItem">
+		<!-- A plate with five kinds of rice cakes of different colors, embodying the harmony of nature. Such a set is a mandatory dish during the celebration of Chuseok. When used, for 30 min., Attribute Attack/ Resistance +100, Power of basic attacks and P./ M. skills +10%, P./ M. Def. +20%.. -->
 		<set name="icon" val="icon.ev_ricecake_potion" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="etcitem_type" val="SCROLL" />
+		<skills>
+			<skill id="39207" level="2" /> <!-- Multicolored Songpyen -->
+		</skills>
 	</item>
 	<item id="48226" name="Lucky Bait" type="EtcItem">
 		<!-- A very lucky-looking bait. -->

@@ -999,9 +999,62 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="34288" toLevel="25" name="Full Moon's Festive Energy - Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Miraculous energy that fills your body. Once every 1 hour, when the buff goes to the next level, you can get a bag with gifts. Total 24 levels. Attention! You can't get a gift if your character is dead or you don't have enough free slots in your inventory. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>3600</abnormalTime>
+		<abnormalType>EVENT_BUFF</abnormalType>
+		<abnormalVisualEffect>S_EVENT_MOON_AVE</abnormalVisualEffect>
+		<hitTime>1000</hitTime>
+		<magicLevel>105</magicLevel>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>105</minLevel>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="Restoration" fromLevel="1" toLevel="24">
+				<itemId>82195</itemId>
+				<itemCount>1</itemCount>
+			</effect>
+		</effects>
+		<endEffects>
+		<effect name="CallSkill" fromLevel="1" toLevel="23">
+			<skillId>34288</skillId> <!-- Full Moon's Festive Energy -->
+			<skillLevel>
+				<value level="1">2</value>
+				<value level="2">3</value>
+				<value level="3">4</value>
+				<value level="4">5</value>
+				<value level="5">6</value>
+				<value level="6">7</value>
+				<value level="7">8</value>
+				<value level="8">9</value>
+				<value level="9">10</value>
+				<value level="10">11</value>
+				<value level="11">12</value>
+				<value level="12">13</value>
+				<value level="13">14</value>
+				<value level="14">15</value>
+				<value level="15">16</value>
+				<value level="16">17</value>
+				<value level="17">18</value>
+				<value level="18">19</value>
+				<value level="19">20</value>
+				<value level="20">21</value>
+				<value level="21">22</value>
+				<value level="22">23</value>
+				<value level="23">24</value>
+			</skillLevel>
+		</effect>
+		</endEffects>
 	</skill>
 	<skill id="34289" toLevel="2" name="Atelia's Weak Energy">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->

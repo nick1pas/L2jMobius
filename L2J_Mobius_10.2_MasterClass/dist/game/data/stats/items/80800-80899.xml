@@ -12,8 +12,17 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="15145" level="1" /> <!-- Ruler's Authority -->
+		</skills>
 		<stats>
 			<stat type="pDef">50</stat>
+			<stat type="fireRes">15</stat>
+			<stat type="waterRes">15</stat>
+			<stat type="windRes">15</stat>
+			<stat type="earthRes">15</stat>
+			<stat type="holyRes">15</stat>
+			<stat type="darkRes">15</stat>
 		</stats>
 	</item>
 	<item id="80801" name="Golden Pig's Lucky Coin" type="EtcItem">

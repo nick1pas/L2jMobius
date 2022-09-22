@@ -435,8 +435,15 @@
 		<set name="icon" val="icon.etc_charm_of_luck_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="etcitem_type" val="SCROLL" />
+		<skills>
+			<skill id="39207" level="2" /> <!-- Festival Fairy's Five-colored Sweets -->
+		</skills>
 	</item>
 	<item id="48226" name="Lucky Bait" type="EtcItem">
 		<!-- A very lucky-looking bait. -->

@@ -805,7 +805,7 @@
 			<skill id="18714" level="20" /> <!-- Blue Cat's Eye -->
 		</skills>
 	</item>
-	<item id="81873" name="Heavenly Talisman" additionalName="1-day" type="Armor">
+	<item id="81873" name="Heavenly Talisman" additionalName="Event" type="Armor">
 		<!-- Max HP/ MP/ CP +7%, P./ M. Accuracy +2, P./ M. Evasion +2, Vampiric Rage +5%, Atk./ Casting Spd. +70, P. Critical Rate +30, M. Critical Rate +10, P./ M. Atk. +3%, Skill Power +7%, Damage Reflection Resistance +40, Fixed Damage Resistance +15%, P./ M. Def. +750, all stats +3, MP Consumption -3%, Skill Cooldown -3%. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. -->
 		<set name="icon" val="icon.accessory_heaven_talisman" />
 		<set name="default_action" val="EQUIP" />
@@ -818,7 +818,7 @@
 		<set name="is_sellable" val="false" />
 		<skills>
 			<skill id="8864" level="8" /> <!-- Heavenly Talisman (Insanity lvl 8) -->
-			<skill id="35552" level="1" type="ON_EQUIP" /> <!-- Equip Talisman - Infinity -->
+			<skill id="35552" level="1" type="ON_EQUIP" /> <!-- Equip Heavenly Talisman -->
 			<skill id="35553" level="1" type="ON_UNEQUIP" /> <!-- Unequip Heavenly Talisman -->
 		</skills>
 	</item>

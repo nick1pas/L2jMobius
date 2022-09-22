@@ -21,11 +21,30 @@
 	<skill id="39602" toLevel="1" name="Potion of Appearance for PA Event - Lovely Hanbok">
 		<!-- Changes the armor appearance to that of Lovely Hanbok. -->
 		<icon>icon.armor_t2000_b_i00</icon>
-		<operateType>A1</operateType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>86400</abnormalTime>
+		<abnormalType>APPEARANCE_POTION</abnormalType>
+		<abnormalVisualEffect>AVE_RED_LIBRA_29</abnormalVisualEffect>
+		<operateType>A2</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<irreplacableBuff>true</irreplacableBuff>
 		<isMagic>4</isMagic>
 		<hitTime>1500</hitTime>
-		<reuseDelay>5000</reuseDelay>
-		<effectPoint>780</effectPoint>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayType>S</reuseDelayType>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>
+					<value level="1">APPEARANCE_POTION,1</value>
+				</dispel>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39603" toLevel="1" name="PA Event Potion of Appearance - Jester">
 		<!-- Changes the armor appearance to that of Jester Outfit. -->
@@ -81,10 +100,32 @@
 	</skill>
 	<skill id="39609" toLevel="1" name="Festival Fairy's Style Cancelling Oil">
 		<icon>icon.armor_t2000_b_i00</icon>
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
-		<operateType>A1</operateType>
-		<hitTime>1500</hitTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>5</abnormalTime>
+		<operateType>A2</operateType>
 		<reuseDelay>5000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<isMagic>4</isMagic>
+		<hitTime>1500</hitTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<reuseDelayType>S</reuseDelayType>
+		<conditions>
+			<condition name="OpAffectedBySkill">
+				<skillId>39602</skillId>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="DispelBySlot">
+				<dispel>
+					<value level="1">APPEARANCE_POTION,1</value>
+				</dispel>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39610" toLevel="1" name="Freya's Scroll of Storm">
 		<!-- For 10 min., Vitality Consumption +$s1 and Acquired XP/ SP +$s2 while hunting. Remains after death. Cooldown is 9 min. Only usable when 1 or more Vitality slot is full. -->
@@ -215,7 +256,21 @@
 	<skill id="39621" toLevel="1" name="Honey Rice Cakes">
 		<!-- Recovers 10,000 Vitality. -->
 		<icon>icon.skill0000</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>81367</itemConsumeId> <!-- Songpyeon (Event)-->
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value>10000</value>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39622" toLevel="1" name="Lovely Hanbok Appearance Stone">
 		<!-- An appearance stone that changes appearance to that of a Lovely Hanbok Suit. Can be used on upper and full-body costumes. -->

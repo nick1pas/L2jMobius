@@ -1154,8 +1154,8 @@
 		<!-- Skill add in option stat when enchant/upgrade -->
 		<set name="material" val="SILVER" />
 	</item>
-	<item id="82195" name="Lineage II Anniversary Gift" additionalName="Event" type="EtcItem">
-		<!-- A gift for the anniversary of Lineage 2. Double-click to obtain Master Yogi's Staff or +16 Master Yogi's Staff Pack, Scroll: Enchant Master Yogi's Weapon (20 pcs.) and up to 9 anniversary items. -->
+	<item id="82195" name="Harvest Festival's Gift Pouch" additionalName="Event" type="EtcItem">
+		<!-- Full Moon put a special gift inside this pouch to celebrate Harvest Festival. You can obtain 1 item. -->
 		<set name="icon" val="icon.christmas_card_box2" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1168,27 +1168,22 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="37560" min="4" max="4" chance="4.95" /> <!-- Emperor's Vitality Tonic -->
-			<item id="47428" min="12" max="12" chance="4.95" /> <!-- Freya's Scroll of Storm -->
-			<item id="47820" min="1" max="1" chance="4.95" /> <!-- Sayha's Talisman Pack Lv. 9 -->
-			<item id="47821" min="1" max="1" chance="4.95" /> <!-- Sayha's Talisman Pack Lv. 10 -->
-			<item id="48497" min="4" max="4" chance="4.95" /> <!-- Glowing Dragon's Attribute Potion XP -->
-			<item id="48642" min="4" max="4" chance="4.95" /> <!-- Shining Nevit's Gold Hourglass -->
-			<item id="48666" min="1" max="1" chance="0.5" /> <!-- Low-grade Dragon Weapon Pack -->
-			<item id="48667" min="1" max="1" chance="0.25" /> <!-- Mid-grade Dragon Weapon Pack -->
-			<item id="48830" min="4" max="4" chance="4.95" /> <!-- Freya's Ice Rose -->
-			<item id="48907" min="1" max="1" chance="4.95" /> <!-- Shillien's Soul Crystal Lv. 9 Weapon -->
-			<item id="48908" min="1" max="1" chance="4.95" /> <!-- Shillien's Soul Crystal Lv. 10 Weapon -->
-			<item id="80663" min="1" max="1" chance="0.25" /> <!-- High-grade Dragon Weapon Pack -->
-			<item id="80842" min="4" max="4" chance="4.95" /> <!-- Honey Dark Beer -->
-			<item id="80958" min="1" max="1" chance="4.95" /> <!-- Sealed Heavenly Talisman -->
-			<item id="80959" min="1" max="1" chance="4.95" /> <!-- Epic Talisman -->
-			<item id="19463" min="1" max="1" chance="4.95" /> <!-- Blessed Antharas' Earring -->
-			<item id="19464" min="1" max="1" chance="4.95" /> <!-- Blessed Valakas' Necklace -->
-			<item id="36946" min="1" max="1" chance="4.95" /> <!-- Lindvior's Earring -->
-			<item id="80333" min="1" max="1" chance="4.95" /> <!-- Dragon's Necklace -->
-			<item id="80334" min="1" max="1" chance="4.95" /> <!-- Dragon's Earring -->
-			<item id="80335" min="1" max="1" chance="4.95" /> <!-- Dragon's Ring -->
+			<!-- Chance 85% -->
+			<item id="81367" min="1" max="1" chance="42.5" /> <!-- Songpyeon Event -->
+			<item id="48225" min="1" max="1" chance="42.5" /> <!-- Multicolored Songpyeon Event -->
+			<!-- Chance 10% -->
+			<item id="30297" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex -->
+			<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
+			<item id="46150" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Chapter 1 -->
+			<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
+			<!-- Chance 5% -->
+			<item id="37717" min="1" max="1" chance="0.71" /> <!-- Talisman of Seven Signs -->
+			<item id="39573" min="1" max="1" chance="0.71" /> <!-- Sealed Talisman of Insanity -->
+			<item id="48204" min="1" max="1" chance="0.71" /> <!-- Radiant Warrior's Circlet -->
+			<item id="48207" min="1" max="1" chance="0.71" /> <!-- Radiant Wizard's Circlet -->
+			<item id="48210" min="1" max="1" chance="0.72" /> <!-- Radiant Knight's Circlet -->
+			<item id="29547" min="1" max="1" chance="0.72" /> <!-- Superior La Vie En Rose's Brooch -->
+			<item id="80837" min="1" max="1" chance="0.72" /> <!-- Superior Kaliel's Bracelet -->
 		</capsuled_items>
 	</item>
 	<item id="82196" name="Chuseok Wish Ticket" additionalName="Event" type="EtcItem">
