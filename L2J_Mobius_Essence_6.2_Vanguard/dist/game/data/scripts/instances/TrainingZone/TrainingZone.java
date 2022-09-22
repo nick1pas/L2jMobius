@@ -453,6 +453,7 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
+					despawnAllGroups(world);
 					world.spawnGroup("PlainsOfTheLizardmen");
 					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 1);
 					return npc.getId() + "-Selected.html";
@@ -472,6 +473,7 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
+					despawnAllGroups(world);
 					world.spawnGroup("SelMahumBase");
 					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 2);
 					return npc.getId() + "-Selected.html";
@@ -491,6 +493,7 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
+					despawnAllGroups(world);
 					world.spawnGroup("OrcBarracksKerrs");
 					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 3);
 					return npc.getId() + "-Selected.html";
@@ -510,6 +513,7 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
+					despawnAllGroups(world);
 					world.spawnGroup("OrcBarracksTureks");
 					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 4);
 					return npc.getId() + "-Selected.html";
@@ -529,8 +533,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 5);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence1");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 5);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -548,8 +553,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 6);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence2");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 6);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -567,8 +573,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 7);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence3");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 7);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -586,8 +593,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 8);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence4");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 8);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -605,8 +613,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 9);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence5");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 9);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -624,8 +633,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 10);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence6");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 10);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -643,8 +653,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 11);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence7");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 11);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -662,8 +673,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 12);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence8");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 12);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -681,8 +693,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 13);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence9");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 13);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -700,8 +713,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 14);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence10");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 14);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -720,8 +734,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 15);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence11");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 15);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -739,8 +754,9 @@ public class TrainingZone extends AbstractInstance
 				}
 				else if (areaTeleport == 0)
 				{
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 16);
+					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence12");
+					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 16);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -856,6 +872,26 @@ public class TrainingZone extends AbstractInstance
 	private void removeBuffs(Creature ch)
 	{
 		ch.getEffectList().stopEffects(info -> (info != null) && !info.getSkill().isStayAfterDeath() && (Arrays.binarySearch(NO_DELETE_BUFFS, info.getSkill().getId()) < 0), true, true);
+	}
+	
+	private void despawnAllGroups(Instance world)
+	{
+		world.despawnGroup("PlainsOfTheLizardmen");
+		world.despawnGroup("SelMahumBase");
+		world.despawnGroup("OrcBarracksKerrs");
+		world.despawnGroup("OrcBarracksTureks");
+		world.despawnGroup("TowerOfInsolence1");
+		world.despawnGroup("TowerOfInsolence2");
+		world.despawnGroup("TowerOfInsolence3");
+		world.despawnGroup("TowerOfInsolence4");
+		world.despawnGroup("TowerOfInsolence5");
+		world.despawnGroup("TowerOfInsolence6");
+		world.despawnGroup("TowerOfInsolence7");
+		world.despawnGroup("TowerOfInsolence8");
+		world.despawnGroup("TowerOfInsolence9");
+		world.despawnGroup("TowerOfInsolence10");
+		world.despawnGroup("TowerOfInsolence11");
+		world.despawnGroup("TowerOfInsolence12");
 	}
 	
 	public static void main(String[] args)
