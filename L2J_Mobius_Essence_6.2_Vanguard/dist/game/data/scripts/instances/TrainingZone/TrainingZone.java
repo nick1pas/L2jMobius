@@ -20,7 +20,6 @@ import java.util.Arrays;
 
 import org.l2jmobius.gameserver.data.xml.TimedHuntingZoneData;
 import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.WorldObject;
@@ -175,28 +174,7 @@ public class TrainingZone extends AbstractInstance
 				return null;
 			}
 			
-			if (huntingZone.isSoloInstance())
-			{
-				enterInstance(player, npc, huntingZone.getInstanceId());
-			}
-			else
-			{
-				Instance world = null;
-				for (Instance instance : InstanceManager.getInstance().getInstances())
-				{
-					if (instance.getTemplateId() == huntingZone.getInstanceId())
-					{
-						world = instance;
-						break;
-					}
-				}
-				if (world == null)
-				{
-					world = InstanceManager.getInstance().createInstance(huntingZone.getInstanceId(), player);
-				}
-				
-				player.teleToLocation(huntingZone.getEnterLocation(), world);
-			}
+			enterInstance(player, npc, huntingZone.getInstanceId());
 		}
 		switch (event)
 		{
@@ -822,8 +800,8 @@ public class TrainingZone extends AbstractInstance
 	@Override
 	public void onInstanceEnter(Player player, Instance instance)
 	{
-		startEvent(player);
-		player.getInstanceWorld().setDuration(60);
+		instance.setParameter("BATTLEZONE", false);
+		player.sendPacket(new ExSendUIEvent(player, false, false, (int) (instance.getRemainingTime() / 1000), 0, NpcStringId.TIME_LEFT));
 	}
 	
 	@Override
@@ -879,14 +857,6 @@ public class TrainingZone extends AbstractInstance
 		player.sendPacket(new TimedHuntingZoneExit(player.getVariables().getInt(PlayerVariables.LAST_HUNTING_ZONE_ID, 0)));
 		removeBuffs(player);
 		instance.getParameters().remove("TRAINIG_AREA_TELEPORT");
-		instance.finishInstance();
-	}
-	
-	private void startEvent(Player player)
-	{
-		final Instance instance = player.getInstanceWorld();
-		instance.setParameter("BATTLEZONE", false);
-		player.sendPacket(new ExSendUIEvent(player, false, false, Math.min(3600, (int) (instance.getRemainingTime() / 1000)), 0, NpcStringId.TIME_LEFT));
 	}
 	
 	private void removeBuffs(Creature ch)
