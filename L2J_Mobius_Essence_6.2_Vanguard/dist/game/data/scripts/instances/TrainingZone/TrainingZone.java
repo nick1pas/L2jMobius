@@ -148,6 +148,7 @@ public class TrainingZone extends AbstractInstance
 	private static final Location LOCAL_AREA = new Location(-56255, 13537, -3336);
 	private static final Location WAITING_AREA = new Location(-49550, 17189, -3016);
 	private static final Location INSOLENCE_TOWER = new Location(-52849, 5272, -240);
+	private static final String TRAINING_AREA_TELEPORT = "TRAINING_AREA_TELEPORT";
 	private static final int TEMPLATE_ID = 224;
 	
 	public TrainingZone()
@@ -384,7 +385,7 @@ public class TrainingZone extends AbstractInstance
 			case "SpawnBossClockList":
 			{
 				final Instance world = npc.getInstanceWorld();
-				final int areaTeleport = world.getParameters().getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = world.getParameters().getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport == 1)
 				{
 					addSpawn(BOOJUDU, -56776, 12532, -3384, 33897, false, 0, true, player.getInstanceId());
@@ -443,11 +444,11 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 					
 				}
@@ -455,7 +456,7 @@ public class TrainingZone extends AbstractInstance
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("PlainsOfTheLizardmen");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 1);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 1);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -464,18 +465,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("SelMahumBase");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 2);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 2);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -484,18 +485,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("OrcBarracksKerrs");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 3);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 3);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -504,18 +505,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("OrcBarracksTureks");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 4);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 4);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -524,18 +525,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence1");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 5);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 5);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -544,18 +545,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence2");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 6);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 6);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -564,18 +565,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence3");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 7);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 7);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -584,18 +585,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence4");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 8);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 8);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -604,18 +605,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence5");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 9);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 9);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -624,18 +625,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence6");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 10);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 10);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -644,18 +645,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence7");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 11);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 11);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -664,18 +665,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence8");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 12);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 12);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -684,18 +685,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence9");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 13);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 13);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -704,18 +705,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence10");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 14);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 14);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -724,11 +725,11 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 					
 				}
@@ -736,7 +737,7 @@ public class TrainingZone extends AbstractInstance
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence11");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 15);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 15);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -745,18 +746,18 @@ public class TrainingZone extends AbstractInstance
 			{
 				final Instance world = npc.getInstanceWorld();
 				final StatSet worldParameters = world.getParameters();
-				final int areaTeleport = worldParameters.getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = worldParameters.getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					world.getNpcs().stream().filter(WorldObject::isAttackable).forEach(Npc::deleteMe);
-					worldParameters.remove("TRAINIG_AREA_TELEPORT");
+					worldParameters.remove(TRAINING_AREA_TELEPORT);
 					return npc.getId() + "-removeselect.html";
 				}
 				else if (areaTeleport == 0)
 				{
 					despawnAllGroups(world);
 					world.spawnGroup("TowerOfInsolence12");
-					worldParameters.set("TRAINIG_AREA_TELEPORT", areaTeleport + 16);
+					worldParameters.set(TRAINING_AREA_TELEPORT, areaTeleport + 16);
 					return npc.getId() + "-Selected.html";
 				}
 				break;
@@ -764,7 +765,7 @@ public class TrainingZone extends AbstractInstance
 			case "LOCAL_TELEPORT":
 			{
 				final Instance world = npc.getInstanceWorld();
-				final int areaTeleport = world.getParameters().getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = world.getParameters().getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport <= 4)
 				{
 					player.teleToLocation(LOCAL_AREA);
@@ -827,7 +828,7 @@ public class TrainingZone extends AbstractInstance
 					return npc.getId() + "-waitingzone.html";
 				}
 				
-				final int areaTeleport = world.getParameters().getInt("TRAINIG_AREA_TELEPORT", 0);
+				final int areaTeleport = world.getParameters().getInt(TRAINING_AREA_TELEPORT, 0);
 				if (areaTeleport >= 1)
 				{
 					return npc.getId() + "-teleport.html";
@@ -866,7 +867,7 @@ public class TrainingZone extends AbstractInstance
 		player.sendPacket(new ExSendUIEvent(player, true, false, 3600, 0, NpcStringId.TIME_LEFT));
 		player.sendPacket(new TimedHuntingZoneExit(player.getVariables().getInt(PlayerVariables.LAST_HUNTING_ZONE_ID, 0)));
 		removeBuffs(player);
-		instance.getParameters().remove("TRAINIG_AREA_TELEPORT");
+		instance.getParameters().remove(TRAINING_AREA_TELEPORT);
 	}
 	
 	private void removeBuffs(Creature ch)
