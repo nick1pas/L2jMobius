@@ -2281,8 +2281,8 @@ public class Config
 			RESUME_AUTO_PLAY = generalConfig.getBoolean("ResumeAutoPlay", false);
 			SUBJUGATION_TOPIC_BODY = generalConfig.getString("SubjugationTopicBody", "Reward for being in the top of the best players in clearing the lands of Aden");
 			SUBJUGATION_TOPIC_HEADER = generalConfig.getString("SubjugationTopicHeader", "Purge reward");
-			SHARING_LOCATION_COST = generalConfig.getInt("ShareLocationLcoinCost", 1);
-			TELEPORT_SHARE_LOCATION_COST = generalConfig.getInt("TeleportShareLocationLcoinCost", 1);
+			SHARING_LOCATION_COST = generalConfig.getInt("ShareLocationLcoinCost", 50);
+			TELEPORT_SHARE_LOCATION_COST = generalConfig.getInt("TeleportShareLocationLcoinCost", 400);
 			
 			// Load FloodProtector config file
 			final PropertiesParser floodProtectorConfig = new PropertiesParser(FLOOD_PROTECTOR_CONFIG_FILE);

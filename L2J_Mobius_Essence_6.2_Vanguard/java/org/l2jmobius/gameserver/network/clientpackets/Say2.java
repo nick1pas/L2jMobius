@@ -88,16 +88,18 @@ public class Say2 implements IClientIncomingPacket
 	private String _text;
 	private int _type;
 	private String _target;
+	private boolean _shareLocation;
 	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
 		_text = packet.readS();
 		_type = packet.readD();
+		_shareLocation = packet.readC() == 1;
 		if (_type == ChatType.WHISPER.getClientId())
 		{
-			packet.readC();
 			_target = packet.readS();
+			_shareLocation = false;
 		}
 		return true;
 	}
@@ -215,7 +217,7 @@ public class Say2 implements IClientIncomingPacket
 		final IChatHandler handler = ChatHandler.getInstance().getHandler(chatType);
 		if (handler != null)
 		{
-			handler.handleChat(chatType, player, _target, _text);
+			handler.handleChat(chatType, player, _target, _text, _shareLocation);
 		}
 		else
 		{

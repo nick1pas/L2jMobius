@@ -17,24 +17,33 @@
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
 import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.model.holders.SharedTeleportHolder;
 import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * @author Gustavo Fonseca
+ * @author NasSeKa
  */
 public class ExShowSharedLocationTeleportUi implements IClientOutgoingPacket
 {
-	public static final ExShowSharedLocationTeleportUi STATIC_PACKET = new ExShowSharedLocationTeleportUi();
+	private final SharedTeleportHolder _teleport;
 	
-	public ExShowSharedLocationTeleportUi()
+	public ExShowSharedLocationTeleportUi(SharedTeleportHolder teleport)
 	{
+		_teleport = teleport;
 	}
 	
 	@Override
 	public boolean write(PacketWriter packet)
 	{
 		OutgoingPackets.EX_SHARED_POSITION_TELEPORT_UI.writeId(packet);
+		packet.writeString(_teleport.getName());
+		packet.writeD(_teleport.getId());
+		packet.writeD(_teleport.getCount());
+		packet.writeH(150);
+		packet.writeD(_teleport.getLocation().getX());
+		packet.writeD(_teleport.getLocation().getY());
+		packet.writeD(_teleport.getLocation().getZ());
 		return true;
 	}
 }

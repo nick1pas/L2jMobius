@@ -17,19 +17,24 @@
 package org.l2jmobius.gameserver.network.clientpackets.teleports;
 
 import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.gameserver.instancemanager.SharedTeleportManager;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.holders.SharedTeleportHolder;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.teleports.ExShowSharedLocationTeleportUi;
 
 /**
- * @author GustavoFonseca
+ * @author NasSeKa
  */
 public class ExRequestSharedLocationTeleportUi implements IClientIncomingPacket
 {
+	private int _id;
+	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
+		_id = (packet.readD() - 1) / 256;
 		return true;
 	}
 	
@@ -42,6 +47,12 @@ public class ExRequestSharedLocationTeleportUi implements IClientIncomingPacket
 			return;
 		}
 		
-		client.sendPacket(new ExShowSharedLocationTeleportUi());
+		final SharedTeleportHolder teleport = SharedTeleportManager.getInstance().getTeleport(_id);
+		if (teleport == null)
+		{
+			return;
+		}
+		
+		player.sendPacket(new ExShowSharedLocationTeleportUi(teleport));
 	}
 }

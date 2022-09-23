@@ -14,30 +14,50 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.handler;
+package org.l2jmobius.gameserver.model.holders;
 
-import org.l2jmobius.gameserver.enums.ChatType;
-import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.Location;
 
 /**
- * Interface for chat handlers
- * @author durgus
+ * @author NasSeKa
  */
-public interface IChatHandler
+public class SharedTeleportHolder
 {
-	/**
-	 * Handles a specific type of chat messages
-	 * @param type
-	 * @param player
-	 * @param target
-	 * @param text
-	 * @param shareLocation
-	 */
-	void handleChat(ChatType type, Player player, String target, String text, boolean shareLocation);
+	private final int _id;
+	private final String _name;
+	private int _count;
+	private final Location _location;
 	
-	/**
-	 * Returns a list of all chat types registered to this handler
-	 * @return
-	 */
-	ChatType[] getChatTypeList();
+	public SharedTeleportHolder(int id, String name, int count, int x, int y, int z)
+	{
+		_id = id;
+		_name = name;
+		_count = count;
+		_location = new Location(x, y, z);
+	}
+	
+	public int getId()
+	{
+		return _id;
+	}
+	
+	public String getName()
+	{
+		return _name;
+	}
+	
+	public int getCount()
+	{
+		return Math.max(0, _count);
+	}
+	
+	public void decrementCount()
+	{
+		_count -= 1;
+	}
+	
+	public Location getLocation()
+	{
+		return _location;
+	}
 }

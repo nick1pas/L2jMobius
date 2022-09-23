@@ -23,6 +23,7 @@ import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
+import org.l2jmobius.gameserver.instancemanager.SharedTeleportManager;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
@@ -40,6 +41,7 @@ public class CreatureSay implements IClientOutgoingPacket
 	private int _messageId = -1;
 	private int _mask;
 	private List<String> _parameters;
+	private boolean _shareLocation;
 	
 	/**
 	 * @param sender
@@ -50,10 +52,24 @@ public class CreatureSay implements IClientOutgoingPacket
 	 */
 	public CreatureSay(Player sender, Player receiver, String name, ChatType chatType, String text)
 	{
+		this(sender, receiver, name, chatType, text, false);
+	}
+	
+	/**
+	 * @param sender
+	 * @param receiver
+	 * @param name
+	 * @param chatType
+	 * @param text
+	 * @param shareLocation
+	 */
+	public CreatureSay(Player sender, Player receiver, String name, ChatType chatType, String text, boolean shareLocation)
+	{
 		_sender = sender;
 		_senderName = name;
 		_chatType = chatType;
 		_text = text;
+		_shareLocation = shareLocation;
 		if (receiver != null)
 		{
 			if (receiver.getFriendList().contains(sender.getObjectId()))
@@ -82,10 +98,16 @@ public class CreatureSay implements IClientOutgoingPacket
 	
 	public CreatureSay(Creature sender, ChatType chatType, String senderName, String text)
 	{
+		this(sender, chatType, senderName, text, false);
+	}
+	
+	public CreatureSay(Creature sender, ChatType chatType, String senderName, String text, boolean shareLocation)
+	{
 		_sender = sender;
 		_chatType = chatType;
 		_senderName = senderName;
 		_text = text;
+		_shareLocation = shareLocation;
 	}
 	
 	public CreatureSay(Creature sender, ChatType chatType, NpcStringId npcStringId)
@@ -162,6 +184,7 @@ public class CreatureSay implements IClientOutgoingPacket
 			{
 				packet.writeC(0); // unknown clan byte
 			}
+			
 			final int rank = RankManager.getInstance().getPlayerGlobalRank(_sender.getActingPlayer());
 			if ((rank == 0) || (rank > 100))
 			{
@@ -186,6 +209,12 @@ public class CreatureSay implements IClientOutgoingPacket
 			else
 			{
 				packet.writeC(0);
+			}
+			
+			if (_shareLocation)
+			{
+				packet.writeC(1);
+				packet.writeH(SharedTeleportManager.getInstance().nextId(_sender));
 			}
 		}
 		else

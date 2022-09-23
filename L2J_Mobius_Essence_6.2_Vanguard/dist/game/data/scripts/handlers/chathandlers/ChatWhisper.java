@@ -41,7 +41,7 @@ public class ChatWhisper implements IChatHandler
 	};
 	
 	@Override
-	public void handleChat(ChatType type, Player activeChar, String target, String text)
+	public void handleChat(ChatType type, Player activeChar, String target, String text, boolean shareLocation)
 	{
 		if (activeChar.isChatBanned() && Config.BAN_CHAT_CHANNELS.contains(type))
 		{
