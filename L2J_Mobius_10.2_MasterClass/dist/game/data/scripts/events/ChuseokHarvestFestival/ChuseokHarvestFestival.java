@@ -28,6 +28,8 @@ import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.SkillHolder;
 import org.l2jmobius.gameserver.model.quest.LongTimeEvent;
+import org.l2jmobius.gameserver.model.skill.SkillCaster;
+import org.l2jmobius.gameserver.network.SystemMessageId;
 
 /**
  * @URL https://l2central.info/main/events_and_promos/1459.html
@@ -60,45 +62,58 @@ public class ChuseokHarvestFestival extends LongTimeEvent
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
-		String htmltext = event;
+		String htmltext = null;
 		switch (event)
 		{
 			case "getTicket":
 			{
+				if (npc.getId() != FULL_MOON)
+				{
+					break;
+				}
 				if (player.getLevel() < PLAYER_LEVEL)
 				{
 					htmltext = "no-level.htm";
 					break;
 				}
-				else if (player.getVariables().getBoolean(CHUSEOK_HARVEST_FESTIVAL_VAR, false))
+				if (player.getVariables().getBoolean(CHUSEOK_HARVEST_FESTIVAL_VAR, false))
 				{
-					player.sendMessage("This character has already received a ticket. An account can receive a ticket once a day.");
-					return null;
-				}
-				else
-				{
-					giveItems(player, WISH_TICKET, 1);
-					player.getVariables().set(CHUSEOK_HARVEST_FESTIVAL_VAR, true);
-					player.getVariables().storeMe();
-					// htmltext = "34065-successful.htm"; // TODO: Addd retail html if any.
+					player.sendPacket(SystemMessageId.YOU_HAVE_ALREADY_BEEN_REWARDED_FOR_ENTERING_A_WISH_YOU_CAN_ONLY_MAKE_1_WISH_PER_CHARACTER);
 					break;
 				}
+				
+				player.getVariables().set(CHUSEOK_HARVEST_FESTIVAL_VAR, true);
+				player.getVariables().storeMe();
+				giveItems(player, WISH_TICKET, 1);
+				break;
 			}
 			case "getBuff":
 			{
+				if (npc.getId() != FULL_MOON)
+				{
+					break;
+				}
 				if (player.getLevel() < PLAYER_LEVEL)
 				{
 					htmltext = "no-level.htm";
 					break;
 				}
-				npc.setTarget(player);
-				npc.doCast(ENERGY_BUFF.getSkill());
-				return null;
+				if (player.isAffectedBySkill(ENERGY_BUFF))
+				{
+					player.sendPacket(SystemMessageId.YOU_CANNOT_CHANGE_YOUR_WISH_ONCE_ENTERED_PROCEED);
+					break;
+				}
+				
+				SkillCaster.triggerCast(npc, player, ENERGY_BUFF.getSkill());
+				break;
 			}
 			case "moveToTheMoon":
 			{
-				player.teleToLocation(FULL_MOON_LOC, true);
-				return "";
+				if (npc.getId() == MOON_RABBIT)
+				{
+					player.teleToLocation(FULL_MOON_LOC, true);
+				}
+				break;
 			}
 			case "schedule":
 			{
