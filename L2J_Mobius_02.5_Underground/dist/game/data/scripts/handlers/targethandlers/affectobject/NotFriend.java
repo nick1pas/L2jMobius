@@ -85,6 +85,12 @@ public class NotFriend implements IAffectObjectHandler
 				return false;
 			}
 			
+			// Olympiad observer.
+			if (targetPlayer.inObserverMode())
+			{
+				return false;
+			}
+			
 			// Siege.
 			if (target.isInsideZone(ZoneId.SIEGE))
 			{
