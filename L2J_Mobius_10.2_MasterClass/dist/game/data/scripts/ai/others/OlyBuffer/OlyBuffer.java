@@ -16,6 +16,7 @@
  */
 package ai.others.OlyBuffer;
 
+import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
@@ -40,9 +41,12 @@ public class OlyBuffer extends AbstractNpcAI
 	
 	private OlyBuffer()
 	{
-		addStartNpc(OLYMPIAD_BUFFER);
-		addFirstTalkId(OLYMPIAD_BUFFER);
-		addTalkId(OLYMPIAD_BUFFER);
+		if (Config.OLYMPIAD_ENABLED)
+		{
+			addStartNpc(OLYMPIAD_BUFFER);
+			addFirstTalkId(OLYMPIAD_BUFFER);
+			addTalkId(OLYMPIAD_BUFFER);
+		}
 	}
 	
 	@Override

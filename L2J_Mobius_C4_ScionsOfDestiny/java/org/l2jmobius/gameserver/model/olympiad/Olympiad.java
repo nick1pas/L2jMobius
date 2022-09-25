@@ -57,8 +57,8 @@ public class Olympiad
 {
 	protected static final Logger LOGGER = Logger.getLogger(Olympiad.class.getName());
 	
-	private static Map<Integer, StatSet> NOBLES;
-	private static Map<Integer, StatSet> NOBLES_RANK;
+	private static Map<Integer, StatSet> NOBLES = new ConcurrentHashMap<>();
+	private static Map<Integer, StatSet> NOBLES_RANK = new HashMap<>();
 	protected static List<StatSet> HEROS_TO_BE;
 	private static List<Player> _nonClassBasedRegisters;
 	private static Map<Integer, List<Player>> _classBasedRegisters;
@@ -162,11 +162,18 @@ public class Olympiad
 	
 	public Olympiad()
 	{
-		load();
-		
-		if (_period == 0)
+		if (Config.OLYMPIAD_ENABLED)
 		{
-			init();
+			load();
+			
+			if (_period == 0)
+			{
+				init();
+			}
+		}
+		else
+		{
+			LOGGER.log(Level.INFO, "Disabled.");
 		}
 	}
 	
@@ -177,8 +184,8 @@ public class Olympiad
 	
 	private void load()
 	{
-		NOBLES = new ConcurrentHashMap<>();
-		NOBLES_RANK = new HashMap<>();
+		NOBLES.clear();
+		NOBLES_RANK.clear();
 		
 		boolean loaded = false;
 		try (Connection con = DatabaseFactory.getConnection();

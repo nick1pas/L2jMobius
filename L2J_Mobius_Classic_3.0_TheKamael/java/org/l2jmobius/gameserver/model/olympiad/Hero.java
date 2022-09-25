@@ -96,7 +96,10 @@ public class Hero
 	
 	protected Hero()
 	{
-		init();
+		if (Config.OLYMPIAD_ENABLED)
+		{
+			init();
+		}
 	}
 	
 	private void init()

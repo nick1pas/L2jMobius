@@ -731,6 +731,7 @@ public class Config
 	public static boolean ANTI_FARM_IP_ENABLED;
 	public static boolean ANTI_FARM_SUMMON;
 	
+	public static boolean OLYMPIAD_ENABLED;
 	public static int ALT_OLY_NUMBER_HEROS_EACH_CLASS;
 	public static boolean ALT_OLY_LOG_FIGHTS;
 	public static boolean ALT_OLY_SHOW_MONTHLY_WINNERS;
@@ -2002,6 +2003,7 @@ public class Config
 	public static void loadOlympConfig()
 	{
 		final PropertiesParser olympiadConfig = new PropertiesParser(OLYMP_CONFIG_FILE);
+		OLYMPIAD_ENABLED = olympiadConfig.getBoolean("OlympiadEnabled", true);
 		ALT_OLY_START_TIME = olympiadConfig.getInt("AltOlyStartTime", 18);
 		ALT_OLY_MIN = olympiadConfig.getInt("AltOlyMin", 0);
 		ALT_OLY_CPERIOD = olympiadConfig.getLong("AltOlyCPeriod", 21600000);
