@@ -229,15 +229,6 @@ public class CharacterCreate implements IClientIncomingPacket
 					}
 					break;
 				}
-				case ERTHEIA:
-				{
-					if (!Config.ALLOW_ERTHEIA)
-					{
-						client.sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
-						return;
-					}
-					break;
-				}
 			}
 			newChar = Player.create(template, client.getAccountName(), _name, new PlayerAppearance(_face, _hairColor, _hairStyle, _sex != 0));
 		}
