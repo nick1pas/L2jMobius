@@ -53,6 +53,7 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.ExPutIntensiveResultForVariationMake;
 import org.l2jmobius.gameserver.network.serverpackets.ExUseSharedGroupItem;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.ensoul.ExShowEnsoulWindow;
@@ -337,6 +338,7 @@ public class UseItem implements IClientIncomingPacket
 				if (etcItem.isMineral())
 				{
 					player.sendPacket(ExShowVariationMakeWindow.STATIC_PACKET);
+					player.sendPacket(new ExPutIntensiveResultForVariationMake(item.getObjectId()));
 				}
 				else if (etcItem.isEnsoulStone())
 				{

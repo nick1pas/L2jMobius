@@ -25,7 +25,14 @@ public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPack
 	private final int _lifestoneItemId;
 	private final int _insertResult;
 	
-	public ExPutIntensiveResultForVariationMake(int refinerItemObjId, int lifeStoneId, int insertResult)
+	public ExPutIntensiveResultForVariationMake(int lifeStoneId)
+	{
+		_lifestoneItemId = lifeStoneId;
+		_refinerItemObjId = 0;
+		_insertResult = 0;
+	}
+	
+	public ExPutIntensiveResultForVariationMake(int lifeStoneId, int refinerItemObjId, int insertResult)
 	{
 		_refinerItemObjId = refinerItemObjId;
 		_lifestoneItemId = lifeStoneId;
@@ -36,8 +43,8 @@ public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPack
 	public boolean write(PacketWriter packet)
 	{
 		OutgoingPackets.EX_PUT_INTENSIVE_RESULT_FOR_VARIATION_MAKE.writeId(packet);
-		packet.writeD(_refinerItemObjId);
 		packet.writeD(_lifestoneItemId);
+		packet.writeD(_refinerItemObjId);
 		packet.writeC(_insertResult);
 		return true;
 	}
