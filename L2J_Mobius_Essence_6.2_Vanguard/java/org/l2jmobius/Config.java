@@ -1245,6 +1245,7 @@ public class Config
 	public static boolean ALLOW_KAMAEL;
 	public static boolean ALLOW_DEATH_KNIGHT;
 	public static boolean ALLOW_SYLPH;
+	public static boolean ALLOW_VANGUARD;
 	public static boolean AUTO_POTIONS_ENABLED;
 	public static boolean AUTO_POTIONS_IN_OLYMPIAD;
 	public static int AUTO_POTION_MIN_LEVEL;
@@ -2725,6 +2726,7 @@ public class Config
 			ALLOW_KAMAEL = allowedPlayerRacesConfig.getBoolean("AllowKamael", true);
 			ALLOW_DEATH_KNIGHT = allowedPlayerRacesConfig.getBoolean("AllowDeathKnight", true);
 			ALLOW_SYLPH = allowedPlayerRacesConfig.getBoolean("AllowSylph", true);
+			ALLOW_VANGUARD = allowedPlayerRacesConfig.getBoolean("AllowVanguard", true);
 			
 			// Load AutoPotions config file (if exists)
 			final PropertiesParser autoPotionsConfig = new PropertiesParser(CUSTOM_AUTO_POTIONS_CONFIG_FILE);
