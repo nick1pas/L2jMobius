@@ -1222,7 +1222,7 @@ public class Config
 	public static boolean ALLOW_ORC;
 	public static boolean ALLOW_DWARF;
 	public static boolean ALLOW_KAMAEL;
-	public static boolean ALLOW_ERTHEIA;
+	public static boolean ALLOW_DEATH_KNIGHT;
 	public static boolean ALLOW_SYLPH;
 	public static boolean AUTO_POTIONS_ENABLED;
 	public static boolean AUTO_POTIONS_IN_OLYMPIAD;
@@ -2681,7 +2681,7 @@ public class Config
 			ALLOW_ORC = allowedPlayerRacesConfig.getBoolean("AllowOrc", true);
 			ALLOW_DWARF = allowedPlayerRacesConfig.getBoolean("AllowDwarf", true);
 			ALLOW_KAMAEL = allowedPlayerRacesConfig.getBoolean("AllowKamael", true);
-			ALLOW_ERTHEIA = allowedPlayerRacesConfig.getBoolean("AllowErtheia", true);
+			ALLOW_DEATH_KNIGHT = allowedPlayerRacesConfig.getBoolean("AllowDeathKnight", true);
 			ALLOW_SYLPH = allowedPlayerRacesConfig.getBoolean("AllowSylph", true);
 			
 			// Load AutoPotions config file (if exists)

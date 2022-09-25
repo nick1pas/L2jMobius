@@ -22,12 +22,14 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
+import org.l2jmobius.gameserver.data.xml.CategoryData;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.data.xml.InitialEquipmentData;
 import org.l2jmobius.gameserver.data.xml.InitialShortcutData;
 import org.l2jmobius.gameserver.data.xml.PlayerTemplateData;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
+import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.SkillLearn;
@@ -229,15 +231,6 @@ public class CharacterCreate implements IClientIncomingPacket
 					}
 					break;
 				}
-				case ERTHEIA:
-				{
-					if (!Config.ALLOW_ERTHEIA)
-					{
-						client.sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
-						return;
-					}
-					break;
-				}
 				case SYLPH:
 				{
 					if (!Config.ALLOW_SYLPH)
@@ -248,6 +241,13 @@ public class CharacterCreate implements IClientIncomingPacket
 					break;
 				}
 			}
+			
+			if (!Config.ALLOW_DEATH_KNIGHT && CategoryData.getInstance().isInCategory(CategoryType.DEATH_KNIGHT_ALL_CLASS, _classId))
+			{
+				client.sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
+				return;
+			}
+			
 			newChar = Player.create(template, client.getAccountName(), _name, new PlayerAppearance(_face, _hairColor, _hairStyle, _sex != 0));
 		}
 		
