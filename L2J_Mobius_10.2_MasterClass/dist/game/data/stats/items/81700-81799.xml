@@ -1075,20 +1075,36 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
 	</item>
 	<item id="81777" name="Appearance Stone: Alluring Swimsuit" type="EtcItem">
 		<!-- Changes the appearance of the entire armor to that of Alluring Swimsuit. Modified armor can be restored to its original appearance with Restoration Stone. -->
 		<set name="icon" val="BranchSys3.lcon.g_scrl_change_co_swimsuit_01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
 	</item>
 	<item id="81778" name="Appearance Stone: Seductive Swimsuit" type="EtcItem">
 		<!-- Changes the appearance of the entire armor to that of Seductive Swimsuit. Modified armor can be restored to its original appearance with Restoration Stone. -->
 		<set name="icon" val="BranchSys3.lcon.g_scrl_change_co_swimsuit_01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
 	</item>
 	<item id="81779" name="Bag of Shining Gold" type="EtcItem">
 		<!-- A bag full of valuable presents. Double-click to obtain one rare item with a certain chance. -->
@@ -1120,6 +1136,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="handler" val="Appearance" />
 	</item>
 	<item id="81782" name="Watermelon Seed" additionalName="Event" type="EtcItem">
 		<!-- You get a fresh Watermelon. If the Watermelon is crashed, there is a certain chance to obtain a buff and Ice Box. The effect duration and a number of Ice Boxes depend on the Watermelon size. -->
@@ -1127,16 +1147,74 @@
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39714" level="1" /> <!-- Fresh Watermelon Energy -->
+		</skills>
 	</item>
 	<item id="81783" name="Ice Box" additionalName="Event" type="EtcItem">
 		<!-- It can help to survive the hot summer time. Double-click to obtain supplies and equipment. -->
 		<set name="icon" val="icon.ev_2020_summer_box" />
-		<set name="default_action" val="PEEL" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<!-- Reward 1 Potions chance="40" -->
+			<item id="80612" min="1" max="1" chance="8" /> <!-- Freya's Ice Rose Event -->
+			<item id="80797" min="1" max="1" chance="8" /> <!-- Shining Nevit's Gold Hourglass Event -->
+			<item id="80832" min="1" max="1" chance="8" /> <!-- Emperor's Special Cocktail Event -->
+			<item id="81460" min="1" max="1" chance="8" /> <!-- Honey Dark Beer Event -->
+			<item id="48755" min="1" max="1" chance="8" /> <!-- Glowing Dragon's Attribute Potion (XP) Event -->
+			<!-- Reward 2 Resources chance="25" -->
+			<item id="29469" min="1" max="1" chance="8.33" /> <!-- Enhanced Jewel Energy -->
+			<item id="48831" min="1" max="1" chance="8.33" /> <!-- Jewel Energy -->
+			<item id="48907" min="1" max="1" chance="8.34" /> <!-- Shillien's Soul Crystal Lv. 9 Weapon -->
+			<!-- Reward 3 Bundle Items chance="15" -->
+			<item id="47820" min="1" max="1" chance="7.5" /> <!-- Sayha's Talisman Pack Lv. 9 -->
+			<item id="48861" min="1" max="1" chance="7.5" /> <!-- +9 Fallen Angel's Ring Pack -->
+			<!-- Reward 4 R110 Weapons chance="10" -->
+			<item id="80090" min="1" max="1" chance="0.71" /> <!-- Krishna Shaper -->
+			<item id="80091" min="1" max="1" chance="0.71" /> <!-- Krishna Cutter -->
+			<item id="80092" min="1" max="1" chance="0.71" /> <!-- Krishna Slasher -->
+			<item id="80093" min="1" max="1" chance="0.71" /> <!-- Krishna Avenger -->
+			<item id="80094" min="1" max="1" chance="0.71" /> <!-- Krishna Fighter -->
+			<item id="80095" min="1" max="1" chance="0.71" /> <!-- Krishna Stormer -->
+			<item id="80096" min="1" max="1" chance="0.71" /> <!-- Krishna Thrower -->
+			<item id="80097" min="1" max="1" chance="0.71" /> <!-- Krishna Shooter -->
+			<item id="80098" min="1" max="1" chance="0.72" /> <!-- Krishna Buster -->
+			<item id="80099" min="1" max="1" chance="0.72" /> <!-- Krishna Caster -->
+			<item id="80100" min="1" max="1" chance="0.72" /> <!-- Krishna Retributer -->
+			<item id="80101" min="1" max="1" chance="0.72" /> <!-- Krishna Dual Swords -->
+			<item id="80102" min="1" max="1" chance="0.72" /> <!-- Krishna Dual Daggers -->
+			<item id="80103" min="1" max="1" chance="0.72" /> <!-- Krishna Dual Blunt Weapons -->
+			<!-- Reward 5 R110 Armors chance="10" -->
+			<item id="80104" min="1" max="1" chance="0.58" /> <!-- Leviathan Helmet - Heavy armor -->
+			<item id="80105" min="1" max="1" chance="0.58" /> <!-- Leviathan Breastplate - Heavy armor -->
+			<item id="80106" min="1" max="1" chance="0.58" /> <!-- Leviathan Gaiters - Heavy armor -->
+			<item id="80107" min="1" max="1" chance="0.59" /> <!-- Leviathan Gauntlets - Heavy armor -->
+			<item id="80108" min="1" max="1" chance="0.59" /> <!-- Leviathan Boots - Heavy armor -->
+			<item id="80109" min="1" max="1" chance="0.59" /> <!-- Leviathan Shield -->
+			<item id="80110" min="1" max="1" chance="0.59" /> <!-- Leviathan Leather Helmet - Light armor -->
+			<item id="80111" min="1" max="1" chance="0.59" /> <!-- Leviathan Leather Armor - Light armor -->
+			<item id="80112" min="1" max="1" chance="0.59" /> <!-- Leviathan Leather Leggings - Light armor -->
+			<item id="80113" min="1" max="1" chance="0.59" /> <!-- Leviathan Leather Gloves - Light armor -->
+			<item id="80114" min="1" max="1" chance="0.59" /> <!-- Leviathan Leather Boots - Light armor -->
+			<item id="80115" min="1" max="1" chance="0.59" /> <!-- Leviathan Circlet - Robe -->
+			<item id="80116" min="1" max="1" chance="0.59" /> <!-- Leviathan Tunic - Robe -->
+			<item id="80117" min="1" max="1" chance="0.59" /> <!-- Leviathan Stockings - Robe -->
+			<item id="80118" min="1" max="1" chance="0.59" /> <!-- Leviathan Gloves - Robe -->
+			<item id="80119" min="1" max="1" chance="0.59" /> <!-- Leviathan Shoes - Robe -->
+			<item id="80120" min="1" max="1" chance="0.59" /> <!-- Leviathan Sigil -->
+		</capsuled_items>
 	</item>
 	<item id="81784" name="Blessed Angel's Necklace" type="Armor">
 		<!-- When enchanted, the effect of common Angel's Accessories is applied, but the enchant value is treated as +1. When enchanted, increases CHA/ LUC, Infection Resistance/ Atk. Rate, Confusion Resistance/ Atk. Rate, Speed, Damage Reflection, Damage Reflection, P. Atk./ M. Atk./ P. Def./ M. Def. and Skill Power, also decreases Skill Cooldowns. The item can be changed. <Enchanting> Use Scroll: Enchant Angel Accessory. Can be augmented. -->

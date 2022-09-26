@@ -67,7 +67,68 @@
 	<skill id="33928" toLevel="3" name="Dizzy Lv. 1">
 		<!-- The body feels pleasant coolness, the head starts spinning. For $s1, damage +$s2, received damage -$s2. Note! 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<abnormalTime>
+			<value level="1">3600</value>
+			<value level="2">7200</value>
+			<value level="3">14400</value>
+		</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>EVENT_BUFF</abnormalType>
+		<abnormalVisualEffect>V_EVENT_2020_SUMMER_AVE</abnormalVisualEffect>
+		<affectRange>1800</affectRange>
+		<hitTime>1500</hitTime>
+		<castRange>900</castRange>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>105</magicLevel>
+		<operateType>A2</operateType>
+		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>PARTY</affectScope>
+		<affectObject>FRIEND</affectObject>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<canBeDispelled>true</canBeDispelled>
+		<conditions>
+			<condition name="OpNotInEvent" />
+		</conditions>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-10</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="33929" toLevel="2" name="Dizzy Lv. 1">
 		<!-- The body feels pleasant coolness, the head starts spinning. For $s1, damage +$s2, received damage -$s2. Note! 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
