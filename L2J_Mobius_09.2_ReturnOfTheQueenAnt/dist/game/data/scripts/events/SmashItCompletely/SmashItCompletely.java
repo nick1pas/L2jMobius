@@ -224,7 +224,7 @@ public class SmashItCompletely extends LongTimeEvent
 	@Override
 	public String onSpawn(Npc npc)
 	{
-		SkillCaster.triggerCast(npc, npc, BUFFS[3].getSkill()); // TODO: FIX death skill.
+		SkillCaster.triggerCast(npc, npc, BUFFS[2].getSkill()); // TODO: FIX death skill.
 		return super.onSpawn(npc);
 	}
 	

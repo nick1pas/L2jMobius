@@ -249,7 +249,7 @@ public class SmashItCompletely extends LongTimeEvent
 			case PRIME_WATERMELON:
 			case LARGE_PRIME_WATERMELON:
 			{
-				SkillCaster.triggerCast(npc, npc, BUFFS[3].getSkill()); // TODO: FIX death skill.
+				SkillCaster.triggerCast(npc, npc, BUFFS[2].getSkill()); // TODO: FIX death skill.
 				break;
 			}
 		}
