@@ -122,9 +122,9 @@ public class SmashItCompletely extends LongTimeEvent
 					break;
 				}
 				
-				giveItems(player, WATERMELON_SEED, 1);
 				player.getAccountVariables().set(SMASH_IT_COMPLETELY_VAR, true);
 				player.getAccountVariables().storeMe();
+				giveItems(player, WATERMELON_SEED, 1);
 				htmltext = "34575-successful.htm";
 				break;
 			}
