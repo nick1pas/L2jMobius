@@ -923,12 +923,6 @@ public abstract class Summon extends Playable
 	}
 	
 	@Override
-	public String toString()
-	{
-		return super.toString() + "(" + getId() + ") Owner: " + _owner;
-	}
-	
-	@Override
 	public boolean isUndead()
 	{
 		return getTemplate().getRace() == Race.UNDEAD;
@@ -1159,5 +1153,17 @@ public abstract class Summon extends Playable
 	public boolean isOnEvent()
 	{
 		return (_owner != null) && _owner.isOnEvent();
+	}
+	
+	@Override
+	public String toString()
+	{
+		final StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("(");
+		sb.append(getId());
+		sb.append(") Owner: ");
+		sb.append(_owner);
+		return sb.toString();
 	}
 }

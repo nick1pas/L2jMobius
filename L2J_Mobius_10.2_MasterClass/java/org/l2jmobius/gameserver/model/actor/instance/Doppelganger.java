@@ -211,6 +211,12 @@ public class Doppelganger extends Npc
 	@Override
 	public String toString()
 	{
-		return super.toString() + "(" + getId() + ") Summoner: " + getSummoner();
+		final StringBuilder sb = new StringBuilder();
+		sb.append(super.toString());
+		sb.append("(");
+		sb.append(getId());
+		sb.append(") Summoner: ");
+		sb.append(getSummoner());
+		return sb.toString();
 	}
 }

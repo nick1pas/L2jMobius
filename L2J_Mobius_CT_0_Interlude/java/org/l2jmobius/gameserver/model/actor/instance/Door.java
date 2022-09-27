@@ -487,12 +487,6 @@ public class Door extends Creature
 		}
 	}
 	
-	@Override
-	public String toString()
-	{
-		return getClass().getSimpleName() + "[" + getTemplate().getId() + "](" + getObjectId() + ")";
-	}
-	
 	public String getDoorName()
 	{
 		return getTemplate().getName();
@@ -718,5 +712,18 @@ public class Door extends Creature
 	public boolean isDoor()
 	{
 		return true;
+	}
+	
+	@Override
+	public String toString()
+	{
+		final StringBuilder sb = new StringBuilder();
+		sb.append(getClass().getSimpleName());
+		sb.append("[");
+		sb.append(getTemplate().getId());
+		sb.append("](");
+		sb.append(getObjectId());
+		sb.append(")");
+		return sb.toString();
 	}
 }

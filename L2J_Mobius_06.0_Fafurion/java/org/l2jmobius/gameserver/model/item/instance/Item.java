@@ -1813,16 +1813,6 @@ public class Item extends WorldObject
 		}
 	}
 	
-	/**
-	 * Returns the item in String format
-	 * @return String
-	 */
-	@Override
-	public String toString()
-	{
-		return _itemTemplate + "[" + getObjectId() + "]";
-	}
-	
 	public void resetOwnerTimer()
 	{
 		if (_itemLootShedule != null)
@@ -2626,5 +2616,20 @@ public class Item extends WorldObject
 				player.sendPacket(new SystemMessage(SystemMessageId.S1_HAS_BEEN_RESTORED_TO_ITS_PREVIOUS_APPEARANCE_AS_ITS_TEMPORARY_MODIFICATION_HAS_EXPIRED).addItemName(this));
 			}
 		}
+	}
+	
+	/**
+	 * Returns the item in String format
+	 * @return String
+	 */
+	@Override
+	public String toString()
+	{
+		final StringBuilder sb = new StringBuilder();
+		sb.append(_itemTemplate);
+		sb.append("[");
+		sb.append(getObjectId());
+		sb.append("]");
+		return sb.toString();
 	}
 }

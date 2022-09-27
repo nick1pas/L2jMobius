@@ -1238,12 +1238,6 @@ public class Npc extends Creature
 		return _spawn;
 	}
 	
-	@Override
-	public String toString()
-	{
-		return getClass().getSimpleName() + ":" + getName() + "(" + getId() + ")[" + getObjectId() + "]";
-	}
-	
 	public boolean isDecayed()
 	{
 		return _isDecayed;
@@ -1961,5 +1955,20 @@ public class Npc extends Creature
 			}
 			_timerHolders.clear();
 		}
+	}
+	
+	@Override
+	public String toString()
+	{
+		final StringBuilder sb = new StringBuilder();
+		sb.append(getClass().getSimpleName());
+		sb.append(":");
+		sb.append(getName());
+		sb.append("(");
+		sb.append(getId());
+		sb.append(")[");
+		sb.append(getObjectId());
+		sb.append("]");
+		return sb.toString();
 	}
 }
