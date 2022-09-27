@@ -321,7 +321,7 @@ public class ItemTable
 			{
 				final StringBuilder sb = new StringBuilder();
 				sb.append("CREATE:");
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append(", item ");
 				sb.append(item.getObjectId());
 				sb.append(":+");
@@ -331,16 +331,16 @@ public class ItemTable
 				sb.append("(");
 				sb.append(item.getCount());
 				sb.append("), ");
-				sb.append(String.valueOf(actor)); // in case of null
+				sb.append(actor);
 				sb.append(", ");
-				sb.append(String.valueOf(reference)); // in case of null
+				sb.append(reference);
 				LOGGER_ITEMS.info(sb.toString());
 			}
 			else
 			{
 				final StringBuilder sb = new StringBuilder();
 				sb.append("CREATE:");
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append(", item ");
 				sb.append(item.getObjectId());
 				sb.append(":");
@@ -348,9 +348,9 @@ public class ItemTable
 				sb.append("(");
 				sb.append(item.getCount());
 				sb.append("), ");
-				sb.append(String.valueOf(actor)); // in case of null
+				sb.append(actor);
 				sb.append(", ");
-				sb.append(String.valueOf(reference)); // in case of null
+				sb.append(reference);
 				LOGGER_ITEMS.info(sb.toString());
 			}
 		}
@@ -370,7 +370,7 @@ public class ItemTable
 			if (Config.GMAUDIT)
 			{
 				final StringBuilder sb = new StringBuilder();
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append("(id: ");
 				sb.append(itemId);
 				sb.append(" count: ");
@@ -431,7 +431,7 @@ public class ItemTable
 				{
 					final StringBuilder sb = new StringBuilder();
 					sb.append("DELETE:");
-					sb.append(String.valueOf(process)); // in case of null
+					sb.append(process);
 					sb.append(", item ");
 					sb.append(item.getObjectId());
 					sb.append(":+");
@@ -443,16 +443,16 @@ public class ItemTable
 					sb.append("), PrevCount(");
 					sb.append(old);
 					sb.append("), ");
-					sb.append(String.valueOf(actor)); // in case of null
+					sb.append(actor);
 					sb.append(", ");
-					sb.append(String.valueOf(reference)); // in case of null
+					sb.append(reference);
 					LOGGER_ITEMS.info(sb.toString());
 				}
 				else
 				{
 					final StringBuilder sb = new StringBuilder();
 					sb.append("DELETE:");
-					sb.append(String.valueOf(process)); // in case of null
+					sb.append(process);
 					sb.append(", item ");
 					sb.append(item.getObjectId());
 					sb.append(":");
@@ -462,9 +462,9 @@ public class ItemTable
 					sb.append("), PrevCount(");
 					sb.append(old);
 					sb.append("), ");
-					sb.append(String.valueOf(actor)); // in case of null
+					sb.append(actor);
 					sb.append(", ");
-					sb.append(String.valueOf(reference)); // in case of null
+					sb.append(reference);
 					LOGGER_ITEMS.info(sb.toString());
 				}
 			}
@@ -484,7 +484,7 @@ public class ItemTable
 				if (Config.GMAUDIT)
 				{
 					final StringBuilder sb = new StringBuilder();
-					sb.append(String.valueOf(process)); // in case of null
+					sb.append(process);
 					sb.append("(id: ");
 					sb.append(item.getId());
 					sb.append(" count: ");

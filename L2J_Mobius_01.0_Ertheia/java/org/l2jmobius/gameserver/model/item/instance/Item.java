@@ -319,7 +319,7 @@ public class Item extends WorldObject
 			{
 				final StringBuilder sb = new StringBuilder();
 				sb.append("SETOWNER:");
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append(", item ");
 				sb.append(getObjectId());
 				sb.append(":+");
@@ -329,16 +329,16 @@ public class Item extends WorldObject
 				sb.append("(");
 				sb.append(_count);
 				sb.append("), ");
-				sb.append(String.valueOf(creator)); // in case of null
+				sb.append(creator);
 				sb.append(", ");
-				sb.append(String.valueOf(reference)); // in case of null
+				sb.append(reference);
 				LOG_ITEMS.info(sb.toString());
 			}
 			else
 			{
 				final StringBuilder sb = new StringBuilder();
 				sb.append("SETOWNER:");
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append(", item ");
 				sb.append(getObjectId());
 				sb.append(":");
@@ -346,9 +346,9 @@ public class Item extends WorldObject
 				sb.append("(");
 				sb.append(_count);
 				sb.append("), ");
-				sb.append(String.valueOf(creator)); // in case of null
+				sb.append(creator);
 				sb.append(", ");
-				sb.append(String.valueOf(reference)); // in case of null
+				sb.append(reference);
 				LOG_ITEMS.info(sb.toString());
 			}
 		}
@@ -512,7 +512,7 @@ public class Item extends WorldObject
 			{
 				final StringBuilder sb = new StringBuilder();
 				sb.append("CHANGE:");
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append(", item ");
 				sb.append(getObjectId());
 				sb.append(":+");
@@ -522,18 +522,18 @@ public class Item extends WorldObject
 				sb.append("(");
 				sb.append(_count);
 				sb.append("), PrevCount(");
-				sb.append(String.valueOf(old)); // in case of null
+				sb.append(old);
 				sb.append("), ");
-				sb.append(String.valueOf(creator)); // in case of null
+				sb.append(creator);
 				sb.append(", ");
-				sb.append(String.valueOf(reference)); // in case of null
+				sb.append(reference);
 				LOG_ITEMS.info(sb.toString());
 			}
 			else
 			{
 				final StringBuilder sb = new StringBuilder();
 				sb.append("CHANGE:");
-				sb.append(String.valueOf(process)); // in case of null
+				sb.append(process);
 				sb.append(", item ");
 				sb.append(getObjectId());
 				sb.append(":");
@@ -541,11 +541,11 @@ public class Item extends WorldObject
 				sb.append("(");
 				sb.append(_count);
 				sb.append("), PrevCount(");
-				sb.append(String.valueOf(old)); // in case of null
+				sb.append(old);
 				sb.append("), ");
-				sb.append(String.valueOf(creator)); // in case of null
+				sb.append(creator);
 				sb.append(", ");
-				sb.append(String.valueOf(reference)); // in case of null
+				sb.append(reference);
 				LOG_ITEMS.info(sb.toString());
 			}
 		}
