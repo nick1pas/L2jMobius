@@ -82,7 +82,7 @@ public class GameTimeTaskManager extends Thread
 			}
 			catch (InterruptedException e)
 			{
-				// Ingore.
+				// Ignore.
 			}
 		}
 	}
