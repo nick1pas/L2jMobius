@@ -16,6 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
+import java.util.logging.Logger;
+
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.commons.util.Rnd;
@@ -45,6 +47,8 @@ import org.l2jmobius.gameserver.util.Util;
  */
 public class RequestExEnchantSkill implements IClientIncomingPacket
 {
+	private static final Logger LOGGER_ENCHANT = Logger.getLogger("enchant.skills");
+	
 	private int _skillId;
 	private int _skillLevel;
 	
@@ -125,6 +129,7 @@ public class RequestExEnchantSkill implements IClientIncomingPacket
 			return;
 		}
 		
+		Item spb = null;
 		if (player.getSp() >= requiredSp)
 		{
 			// Like L2OFF you can't delevel during skill enchant
@@ -133,7 +138,7 @@ public class RequestExEnchantSkill implements IClientIncomingPacket
 			{
 				if (Config.ES_SP_BOOK_NEEDED && ((_skillLevel == 101) || (_skillLevel == 141))) // only first level requires book
 				{
-					final Item spb = player.getInventory().getItemByItemId(6622);
+					spb = player.getInventory().getItemByItemId(6622);
 					if (spb == null) // Does not have spellbook.
 					{
 						player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ALL_OF_THE_ITEMS_NEEDED_TO_ENCHANT_THAT_SKILL);
@@ -154,8 +159,15 @@ public class RequestExEnchantSkill implements IClientIncomingPacket
 			player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_SP_TO_ENCHANT_THAT_SKILL);
 			return;
 		}
+		
 		if (Rnd.get(100) < rate)
 		{
+			if (Config.LOG_SKILL_ENCHANTS)
+			{
+				final StringBuilder sb = new StringBuilder();
+				LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", Skill:").append(skill).append(", SPB:").append(spb).append(", Rate:").append(rate).toString());
+			}
+			
 			player.addSkill(skill, true);
 			player.getStat().removeExpAndSp(requiredExp, requiredSp);
 			
@@ -186,6 +198,12 @@ public class RequestExEnchantSkill implements IClientIncomingPacket
 			final SystemMessage sm = new SystemMessage(SystemMessageId.SKILL_ENCHANT_FAILED_THE_SKILL_WILL_BE_INITIALIZED);
 			sm.addSkillName(_skillId);
 			player.sendPacket(sm);
+			
+			if (Config.LOG_SKILL_ENCHANTS)
+			{
+				final StringBuilder sb = new StringBuilder();
+				LOGGER_ENCHANT.info(sb.append("Failed, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", Skill:").append(skill).append(", SPB:").append(spb).append(", Rate:").append(rate).toString());
+			}
 		}
 		((Folk) trainer).showEnchantSkillList(player);
 		player.sendPacket(new UserInfo(player));
