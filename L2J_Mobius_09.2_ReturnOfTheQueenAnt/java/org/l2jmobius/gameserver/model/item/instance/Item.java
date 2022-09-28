@@ -365,8 +365,18 @@ public class Item extends WorldObject
 			}
 		}
 		
-		if ((creator != null) && creator.isGM())
+		if ((creator != null) && creator.isGM() && Config.GMAUDIT)
 		{
+			final StringBuilder sb = new StringBuilder();
+			sb.append(process);
+			sb.append("(id: ");
+			sb.append(_itemId);
+			sb.append(" name: ");
+			sb.append(getName());
+			sb.append(")");
+			
+			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
+			
 			String referenceName = "no-reference";
 			if (reference instanceof WorldObject)
 			{
@@ -376,18 +386,8 @@ public class Item extends WorldObject
 			{
 				referenceName = (String) reference;
 			}
-			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
-			if (Config.GMAUDIT)
-			{
-				final StringBuilder sb = new StringBuilder();
-				sb.append(process);
-				sb.append("(id: ");
-				sb.append(_itemId);
-				sb.append(" name: ");
-				sb.append(getName());
-				sb.append(")");
-				GMAudit.auditGMAction(creator.toString(), sb.toString(), targetName, StringUtil.concat("Object referencing this action is: ", referenceName));
-			}
+			
+			GMAudit.auditGMAction(creator.toString(), sb.toString(), targetName, StringUtil.concat("Object referencing this action is: ", referenceName));
 		}
 	}
 	
@@ -562,8 +562,22 @@ public class Item extends WorldObject
 			}
 		}
 		
-		if ((creator != null) && creator.isGM())
+		if ((creator != null) && creator.isGM() && Config.GMAUDIT)
 		{
+			final StringBuilder sb = new StringBuilder();
+			sb.append(process);
+			sb.append("(id: ");
+			sb.append(_itemId);
+			sb.append(" objId: ");
+			sb.append(getObjectId());
+			sb.append(" name: ");
+			sb.append(getName());
+			sb.append(" count: ");
+			sb.append(count);
+			sb.append(")");
+			
+			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
+			
 			String referenceName = "no-reference";
 			if (reference instanceof WorldObject)
 			{
@@ -573,22 +587,8 @@ public class Item extends WorldObject
 			{
 				referenceName = (String) reference;
 			}
-			final String targetName = (creator.getTarget() != null ? creator.getTarget().getName() : "no-target");
-			if (Config.GMAUDIT)
-			{
-				final StringBuilder sb = new StringBuilder();
-				sb.append(process);
-				sb.append("(id: ");
-				sb.append(_itemId);
-				sb.append(" objId: ");
-				sb.append(getObjectId());
-				sb.append(" name: ");
-				sb.append(getName());
-				sb.append(" count: ");
-				sb.append(count);
-				sb.append(")");
-				GMAudit.auditGMAction(creator.toString(), sb.toString(), targetName, StringUtil.concat("Object referencing this action is: ", referenceName));
-			}
+			
+			GMAudit.auditGMAction(creator.toString(), sb.toString(), targetName, StringUtil.concat("Object referencing this action is: ", referenceName));
 		}
 	}
 	
