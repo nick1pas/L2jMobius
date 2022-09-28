@@ -2491,7 +2491,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="30858" toLevel="1" name="Solid Resistance">
+	<skill id="30858" toLevel="2" name="Solid Resistance">
 		<!-- For $s1, the targeted party member's P. Atk. +$s2, M. Atk. +$s3, Attribute Resistance +$s4, Resistance to All Weapons +$s5. Consumes $s6 Spirit Ore. <The character is targeted automatically> -->
 		<icon>icon.skill30858</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -2520,51 +2520,114 @@
 		</conditions>
 		<effects>
 			<effect name="DefenceAttribute">
-				<amount>50</amount>
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+				</amount>
 				<attribute>FIRE</attribute>
 			</effect>
 			<effect name="DefenceAttribute">
-				<amount>50</amount>
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+				</amount>
 				<attribute>WATER</attribute>
 			</effect>
 			<effect name="DefenceAttribute">
-				<amount>50</amount>
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+				</amount>
 				<attribute>WIND</attribute>
 			</effect>
 			<effect name="DefenceAttribute">
-				<amount>50</amount>
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+				</amount>
 				<attribute>EARTH</attribute>
 			</effect>
 			<effect name="DefenceAttribute">
-				<amount>50</amount>
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+				</amount>
 				<attribute>HOLY</attribute>
 			</effect>
 			<effect name="DefenceAttribute">
-				<amount>50</amount>
+				<amount>
+					<value level="1">50</value>
+					<value level="2">70</value>
+				</amount>
 				<attribute>DARK</attribute>
 			</effect>
 			<effect name="PAtk">
-				<amount>10</amount>
+				<amount>
+					<value level="1">10</value>
+					<value level="2">15</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MAtk">
-				<amount>15</amount>
+				<amount>
+					<value level="1">15</value>
+					<value level="2">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="DefenceTrait">
-				<SWORD>5</SWORD>
-				<BLUNT>5</BLUNT>
-				<DUAL>5</DUAL>
-				<DUALBLUNT>5</DUALBLUNT>
-				<DAGGER>5</DAGGER>
-				<DUALDAGGER>5</DUALDAGGER>
-				<DUALFIST>5</DUALFIST>
-				<POLE>5</POLE>
-				<BOW>5</BOW>
-				<CROSSBOW>5</CROSSBOW>
-				<TWOHANDCROSSBOW>5</TWOHANDCROSSBOW>
-				<ANCIENTSWORD>5</ANCIENTSWORD>
-				<RAPIER>5</RAPIER>
+				<SWORD>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</SWORD>
+				<BLUNT>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</BLUNT>
+				<DUAL>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</DUAL>
+				<DUALBLUNT>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</DUALBLUNT>
+				<DAGGER>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</DAGGER>
+				<DUALDAGGER>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</DUALDAGGER>
+				<DUALFIST>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</DUALFIST>
+				<POLE>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</POLE>
+				<BOW>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</BOW>
+				<CROSSBOW>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</CROSSBOW>
+				<TWOHANDCROSSBOW>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</TWOHANDCROSSBOW>
+				<ANCIENTSWORD>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</ANCIENTSWORD>
+				<RAPIER>
+					<value level="1">5</value>
+					<value level="2">10</value>
+				</RAPIER>
 			</effect>
 		</effects>
 	</skill>
