@@ -378,7 +378,7 @@ public class ItemTable
 		return item;
 	}
 	
-	public Item createItem(String process, int itemId, int count, Player actor)
+	public Item createItem(String process, int itemId, long count, Player actor)
 	{
 		return createItem(process, itemId, count, actor, null);
 	}
