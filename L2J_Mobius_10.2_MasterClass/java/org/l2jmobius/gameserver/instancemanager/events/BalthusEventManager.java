@@ -29,6 +29,7 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.Rnd;
+import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.enums.MailType;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
 import org.l2jmobius.gameserver.model.Message;
@@ -36,7 +37,6 @@ import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.SystemMessageId;
@@ -239,7 +239,7 @@ public class BalthusEventManager
 			}
 			if (_winner != null)
 			{
-				LOGGER.info(getClass().getSimpleName() + ": New winner for " + _currState + " of Balthus Event is " + _winner.getName() + " - " + _winner.getObjectId() + ". Player win " + new Item(_rewardItem.getId()).getItemName() + " - " + _rewardItem.getId() + " count: " + _rewardItem.getCount() + ".");
+				LOGGER.info(getClass().getSimpleName() + ": New winner for " + _currState + " of Balthus Event is " + _winner.getName() + " - " + _winner.getObjectId() + ". Player win " + ItemTable.getInstance().getTemplate(_rewardItem.getId()).getName() + " - " + _rewardItem.getId() + " count: " + _rewardItem.getCount() + ".");
 				Broadcast.toAllOnlinePlayers(new ExBalthusEventJackpotUser());
 				Broadcast.toAllOnlinePlayers(new SystemMessage(SystemMessageId.S1_HAS_OBTAINED_S2_FROM_THE_FESTIVAL_FAIRY).addPcName(_winner).addItemName(_rewardItem.getId()));
 				_isRunning = true;
@@ -323,7 +323,7 @@ public class BalthusEventManager
 							if (chance >= random)
 							{
 								_rewardItem = entry.getKey();
-								LOGGER.info(getClass().getSimpleName() + ": Reward for " + _currState + " stage set. Next reward item is " + new Item(_rewardItem.getId()).getItemName() + " - " + _rewardItem.getId() + " count: " + _rewardItem.getCount() + ".");
+								LOGGER.info(getClass().getSimpleName() + ": Reward for " + _currState + " stage set. Next reward item is " + ItemTable.getInstance().getTemplate(_rewardItem.getId()).getName() + " - " + _rewardItem.getId() + " count: " + _rewardItem.getCount() + ".");
 								break;
 							}
 						}
