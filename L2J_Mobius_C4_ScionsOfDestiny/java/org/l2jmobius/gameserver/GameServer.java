@@ -174,11 +174,6 @@ public class GameServer
 		
 		printSection("IdManager");
 		IdManager.getInstance();
-		if (!IdManager.hasInitialized())
-		{
-			LOGGER.severe("IdFactory: Could not read object IDs from database. Please check your configuration.");
-			throw new Exception("Could not initialize the ID factory!");
-		}
 		
 		new File(Config.DATAPACK_ROOT, "data/geodata").mkdirs();
 		
@@ -388,7 +383,7 @@ public class GameServer
 		
 		printSection("Game Server");
 		
-		LOGGER.info("IdFactory: Free ObjectID's remaining: " + IdManager.size());
+		LOGGER.info("IdFactory: Free ObjectID's remaining: " + IdManager.getInstance().size());
 		
 		if (Config.ALLOW_WEDDING)
 		{
