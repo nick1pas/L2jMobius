@@ -407,6 +407,7 @@ public class EffectMasterHandler
 		EffectHandler.getInstance().registerHandler("TriggerSkillBySkill", TriggerSkillBySkill::new);
 		EffectHandler.getInstance().registerHandler("TriggerSkillBySkillAttack", TriggerSkillBySkillAttack::new);
 		EffectHandler.getInstance().registerHandler("TwoHandedBluntBonus", TwoHandedBluntBonus::new);
+		EffectHandler.getInstance().registerHandler("TwoHandedStance", TwoHandedStance::new);
 		EffectHandler.getInstance().registerHandler("TwoHandedSwordBonus", TwoHandedSwordBonus::new);
 		EffectHandler.getInstance().registerHandler("Unsummon", Unsummon::new);
 		EffectHandler.getInstance().registerHandler("UnsummonAgathion", UnsummonAgathion::new);
