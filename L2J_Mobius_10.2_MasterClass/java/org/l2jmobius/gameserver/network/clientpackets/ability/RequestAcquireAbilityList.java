@@ -24,6 +24,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.SkillLearn;
@@ -185,6 +186,11 @@ public class RequestAcquireAbilityList implements IClientIncomingPacket
 			player.setAbilityPointsUsed(player.getAbilityPointsUsed() + points);
 		}
 		player.sendPacket(new ExAcquireAPSkillList(player));
-		player.broadcastUserInfo();
+		
+		ThreadPool.schedule(() ->
+		{
+			player.getStat().recalculateStats(false);
+			player.broadcastInfo();
+		}, 100);
 	}
 }
