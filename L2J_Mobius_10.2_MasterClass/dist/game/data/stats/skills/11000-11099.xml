@@ -4661,14 +4661,6 @@
 				<SLEEP>100</SLEEP>
 				<AIRBIND>100</AIRBIND>
 			</effect>
-			<effect name="PhysicalDefence" fromLevel="3" toLevel="7" fromSubLevel="2001" toSubLevel="2020">
-				<amount></amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MagicalDefence" fromLevel="3" toLevel="7" fromSubLevel="3001" toSubLevel="3020">
-				<amount></amount>
-				<mode>PER</mode>
-			</effect>
 		</effects>
 	</skill>
 	<skill id="11055" toLevel="14" name="Death Fear">
@@ -6098,11 +6090,11 @@
 		<operateType>A2</operateType>
 		<magicLevel>
 			<value level="1">97</value>
-			<value level="2">115</value>	
+			<value level="2">115</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">73</value>
-			<value level="2">84</value>		
+			<value level="2">84</value>
 		</mpConsume>
 		<hitTime>500</hitTime>
 		<coolTime>200</coolTime>

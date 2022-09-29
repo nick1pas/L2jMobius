@@ -1,63 +1,63 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="10244" toLevel="3" name="Two-Hand Stance">
-        <!-- Holds a weapon with both hands. When using a sword or a blunt weapon, Critical Damage/ Rate for standard attacks +$s1, P. Skill Critical Rate/ Damage +$s1, P. Atk. +$s2 of Shield Defense. You can't cast shield skills or defend with the shield. Using the skill again cancels the effect. Requires a shield. -->
-        <icon>icon.skill10244</icon>
-        <magicCriticalRate>5</magicCriticalRate>
-        <magicLevel>
-            <value level="1">85</value>
-            <value level="2">90</value>
-            <value level="3">95</value>
-        </magicLevel>
-        <operateType>A2</operateType>
-        <abnormalLevel>
-            <value level="1">1</value>
-            <value level="2">2</value>
-            <value level="3">3</value>
-        </abnormalLevel>
-        <abnormalType>TRUE_VANGUARD</abnormalType>
-        <abnormalVisualEffect>TRUE_VANGUARD</abnormalVisualEffect>
-        <hitTime>1500</hitTime>
-        <isMagic>2</isMagic>
-        <abnormalTime>-1</abnormalTime>
-        <coolTime>1000</coolTime>
-        <reuseDelay>10000</reuseDelay>
-        <staticReuse>true</staticReuse>
-        <effectPoint>2</effectPoint>
-        <mpConsume>20</mpConsume>
-        <targetType>SELF</targetType>
-        <affectScope>SINGLE</affectScope>
-        <conditions>
-            <condition name="EquipShield" />
-        </conditions>
-        <effects>
-            <effect name="CriticalDamage">
-                <amount>15</amount>
-                <mode>PER</mode>
-            </effect>
-            <effect name="CriticalRate">
-                <amount>15</amount>
-                <mode>PER</mode>
-            </effect>
-            <effect name="TwoHandedStance">
-                <amount>
-                    <value level="1">100</value>
-                    <value level="2">130</value>
-                    <value level="3">150</value>
-                </amount>
-            </effect>
-            <effect name="TriggerSkillBySkill">
-                <castSkillId>10010</castSkillId> <!-- Vanishing Stun -->
-                <skillId>19576</skillId> <!-- Two-Hand Smash -->
-                <skillLevel>1</skillLevel>
-                <chance>100</chance>
-                <targetType>TARGET</targetType>
-            </effect>
-            <effect name="DispelBySlot">
-                <dispel>TRUE_VANGUARD,-1</dispel>
-            </effect>
-        </effects>
-    </skill>
+		<!-- Holds a weapon with both hands. When using a sword or a blunt weapon, Critical Damage/ Rate for standard attacks +$s1, P. Skill Critical Rate/ Damage +$s1, P. Atk. +$s2 of Shield Defense. You can't cast shield skills or defend with the shield. Using the skill again cancels the effect. Requires a shield. -->
+		<icon>icon.skill10244</icon>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+		</magicLevel>
+		<operateType>A2</operateType>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalType>TRUE_VANGUARD</abnormalType>
+		<abnormalVisualEffect>TRUE_VANGUARD</abnormalVisualEffect>
+		<hitTime>1500</hitTime>
+		<isMagic>2</isMagic>
+		<abnormalTime>-1</abnormalTime>
+		<coolTime>1000</coolTime>
+		<reuseDelay>10000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<effectPoint>2</effectPoint>
+		<mpConsume>20</mpConsume>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EquipShield" />
+		</conditions>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalRate">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="TwoHandedStance">
+				<amount>
+					<value level="1">100</value>
+					<value level="2">130</value>
+					<value level="3">150</value>
+				</amount>
+			</effect>
+			<effect name="TriggerSkillBySkill">
+				<castSkillId>10010</castSkillId> <!-- Vanishing Stun -->
+				<skillId>19576</skillId> <!-- Two-Hand Smash -->
+				<skillLevel>1</skillLevel>
+				<chance>100</chance>
+				<targetType>TARGET</targetType>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>TRUE_VANGUARD,-1</dispel>
+			</effect>
+		</effects>
+	</skill>
 	<skill id="10245" toLevel="1" name="Wizard - Individual Passive">
 		<icon>icon.skill0217</icon>
 		<magicCriticalRate>5</magicCriticalRate>

@@ -1529,83 +1529,83 @@
 		</effects>
 	</skill>
 	<skill id="39486" toLevel="4" name="Elite Monster Reward Box">
-			<!-- This Skill has no description -->
-			<isMagic>2</isMagic> <!-- Static Skill -->
-			<magicLevel>1</magicLevel>
-			<operateType>A1</operateType>
+		<!-- This Skill has no description -->
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 		<reuseDelay>500</reuseDelay>
-			<magicCriticalRate>5</magicCriticalRate>
-			<hitCancelTime>0</hitCancelTime>
-			<targetType>SELF</targetType>
-			<affectScope>SINGLE</affectScope>
-			<conditions>
-				<condition name="OpEncumbered">
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
 				<weightPercent>10</weightPercent>
 				<slotsPercent>10</slotsPercent>
-				</condition>
-			</conditions>
-			<effects>
-				<effect name="RestorationRandom">
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
 				<items>
 					<item chance="5.5555555555556">
-					<item id="57" count="300000" /> <!-- Adena -->
+						<item id="57" count="300000" /> <!-- Adena -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="35569" count="1" /> <!-- Bloody Armor Enhancement Stone -->
+						<item id="35569" count="1" /> <!-- Bloody Armor Enhancement Stone -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="35567" count="1" /> <!-- Dark Armor Enhancement Stone -->
+						<item id="35567" count="1" /> <!-- Dark Armor Enhancement Stone -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17434" count="1" /> <!-- Eternal Boots - Heavy armor -->
+						<item id="17434" count="1" /> <!-- Eternal Boots - Heavy armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17431" count="1" /> <!-- Eternal Breastplate - Heavy armor -->
+						<item id="17431" count="1" /> <!-- Eternal Breastplate - Heavy armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17441" count="1" /> <!-- Eternal Circlet - Robe -->
+						<item id="17441" count="1" /> <!-- Eternal Circlet - Robe -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17432" count="1" /> <!-- Eternal Gaiters - Heavy armor -->
+						<item id="17432" count="1" /> <!-- Eternal Gaiters - Heavy armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17433" count="1" /> <!-- Eternal Gauntlets - Heavy armor -->
+						<item id="17433" count="1" /> <!-- Eternal Gauntlets - Heavy armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17444" count="1" /> <!-- Eternal Gloves - Robe -->
+						<item id="17444" count="1" /> <!-- Eternal Gloves - Robe -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17430" count="1" /> <!-- Eternal Helmet - Heavy armor -->
+						<item id="17430" count="1" /> <!-- Eternal Helmet - Heavy armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17437" count="1" /> <!-- Eternal Leather Armor - Light armor -->
+						<item id="17437" count="1" /> <!-- Eternal Leather Armor - Light armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17440" count="1" /> <!-- Eternal Leather Boots - Light armor -->
+						<item id="17440" count="1" /> <!-- Eternal Leather Boots - Light armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17439" count="1" /> <!-- Eternal Leather Gloves - Light armor -->
+						<item id="17439" count="1" /> <!-- Eternal Leather Gloves - Light armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17436" count="1" /> <!-- Eternal Leather Helmet - Light armor -->
+						<item id="17436" count="1" /> <!-- Eternal Leather Helmet - Light armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17438" count="1" /> <!-- Eternal Leather Leggings - Light armor -->
+						<item id="17438" count="1" /> <!-- Eternal Leather Leggings - Light armor -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17445" count="1" /> <!-- Eternal Shoes - Robe -->
+						<item id="17445" count="1" /> <!-- Eternal Shoes - Robe -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17443" count="1" /> <!-- Eternal Stockings - Robe -->
+						<item id="17443" count="1" /> <!-- Eternal Stockings - Robe -->
 					</item>
 					<item chance="5.5555555555556">
-					<item id="17442" count="1" /> <!-- Eternal Tunic - Robe -->
+						<item id="17442" count="1" /> <!-- Eternal Tunic - Robe -->
 					</item>
 				</items>
-				</effect>
-			</effects>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39487" toLevel="1" name="PA Event Box">
 		<operateType>A1</operateType>

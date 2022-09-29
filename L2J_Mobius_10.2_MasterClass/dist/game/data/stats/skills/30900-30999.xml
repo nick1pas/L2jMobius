@@ -21,9 +21,9 @@
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<effects>
-		<effect name="BlockActions">
+			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>
-		</effect>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="30901" toLevel="1" name="Sonic Star - Knock Down">
@@ -79,9 +79,9 @@
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<effects>
-		<effect name="BlockActions">
+			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>
-		</effect>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="30903" toLevel="1" name="Thunder Storm - Stun">
@@ -105,9 +105,9 @@
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<effects>
-		<effect name="BlockActions">
+			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>
-		</effect>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="30904" toLevel="1" name="Power Hammer Crush - Stun">
@@ -132,7 +132,7 @@
 		<effects>
 			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>
-		</effect>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="30905" toLevel="1" name="Rush Impact - Stun">
@@ -160,7 +160,7 @@
 		<effects>
 			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>
-		</effect>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="30906" toLevel="1" name="Bow Strike - Knock Down">
@@ -766,7 +766,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-					<skillId>30946</skillId>
+				<skillId>30946</skillId>
 			</condition>
 		</conditions>
 		<effects>
@@ -812,7 +812,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-					<skillId>30948</skillId>
+				<skillId>30948</skillId>
 			</condition>
 		</conditions>
 		<effects>
@@ -1849,7 +1849,7 @@
 					<value level="11">0.93</value>
 				</pDefMod>
 			</effect>
-			</effects>
+		</effects>
 	</skill>
 	<skill id="30964" toLevel="11" name="Hellfire (Restraint)">
 		<!-- Deals attribute damage to the target with $s1 power, decreasing their Attribute Resistance. Over-hit. -->
