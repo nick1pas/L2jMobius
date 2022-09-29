@@ -3153,10 +3153,11 @@
 		<!-- Holds the target. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill4047</icon>
 		<abnormalLevel>1</abnormalLevel>
-		<abnormalTime>30</abnormalTime>
+		<abnormalTime>10</abnormalTime>
 		<abnormalType>ROOT_MAGICALLY</abnormalType>
 		<abnormalVisualEffect>ROOT</abnormalVisualEffect>
 		<basicProperty>MAGIC</basicProperty>
+		<activateRate>15</activateRate>
 		<effectPoint>-100</effectPoint>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<lvlBonusRate>2</lvlBonusRate>
@@ -3171,6 +3172,12 @@
 		<trait>HOLD</trait>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Root" />
+			<effect name="DefenceTrait">
+				<HOLD>100</HOLD>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="6678" toLevel="1" name="Cancel Hold">
 		<effectPoint>-100</effectPoint>

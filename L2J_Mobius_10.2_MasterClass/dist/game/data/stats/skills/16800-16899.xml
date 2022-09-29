@@ -435,7 +435,7 @@
 	<skill id="16842" toLevel="1" name="Gravity Shock">
 		<!-- Attacks nearby enemies dealing damage and pulling them toward the character. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill30505</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>80</activateRate> <!-- Guessed -->
@@ -507,20 +507,6 @@
 		<effects>
 			<effect name="SphericBarrier">
 				<amount>150</amount>
-			</effect>
-			<effect name="DebuffBlock" /> <!-- TODO: SphericBarrier should block debuffs -->
-			<effect name="DefenceTrait">
-				<HOLD>100</HOLD>
-				<SLEEP>100</SLEEP>
-				<DERANGEMENT>100</DERANGEMENT>
-				<CHANGEBODY>100</CHANGEBODY>
-				<PARALYZE>100</PARALYZE>
-				<SHOCK>100</SHOCK>
-				<CHANGEBODY>100</CHANGEBODY>
-				<KNOCKBACK>100</KNOCKBACK>
-				<KNOCKDOWN>100</KNOCKDOWN>
-				<AIRBIND>100</AIRBIND>
-				<TURN_STONE>100</TURN_STONE>
 			</effect>
 			<effect name="PhysicalDefence">
 				<amount>50</amount>
@@ -763,7 +749,7 @@
 		<icon>icon.skill0003</icon>
 		<castRange>100</castRange>
 		<effectRange>400</effectRange>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<magicLevel>104</magicLevel>
 		<fanRange>0;0;300;100</fanRange>
 		<hitTime>1500</hitTime>
@@ -784,7 +770,7 @@
 		<icon>icon.skill10340</icon>
 		<castRange>100</castRange>
 		<effectRange>400</effectRange>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>BLEEDING</abnormalType>
 		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
@@ -818,7 +804,7 @@
 		<abnormalTime>1</abnormalTime>
 		<abnormalType>KNOCKDOWN</abnormalType>
 		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange>
 		<activateRate>120</activateRate>
 		<lvlBonusRate>1</lvlBonusRate>

@@ -263,7 +263,7 @@
 		<icon>icon.skill10102</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange>
 		<activateRate>
 			<value fromLevel="1" toLevel="10">50</value>
@@ -349,7 +349,7 @@
 			<value fromLevel="1" toLevel="10">60</value>
 			<value fromLevel="3" toLevel="10" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>10-20</affectLimit>
 		<fanRange>0;0;600;180</fanRange>
 		<affectRange>200</affectRange>
 		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
@@ -441,7 +441,10 @@
 			<effect name="CallSkillOnActionTime">
 				<!-- Paladin's Aura -->
 				<skillId>10108</skillId> <!-- Paladin's Aura -->
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+				</skillLevel>
 				<skillSubLevel>
 					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
 					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
@@ -465,7 +468,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>15</amount>
+				<amount>-15</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="Reuse">
@@ -519,7 +522,10 @@
 			<effect name="CallSkillOnActionTime">
 				<!-- Avenger's Aura -->
 				<skillId>10109</skillId> <!-- Avenger's Aura -->
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+				</skillLevel>
 				<skillSubLevel>
 					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
 					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
@@ -579,8 +585,8 @@
 			</effect>
 			<effect name="DamageShield">
 				<amount>
-					<value fromLevel="1" toLevel="1">5</value>
-					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{base + subIndex}</value>
+					<value fromLevel="1" toLevel="2">5</value>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{base + subIndex}</value>
 				</amount>
 			</effect>
 		</effects>
@@ -601,7 +607,10 @@
 			<effect name="CallSkillOnActionTime">
 				<!-- Sentinel's Aura -->
 				<skillId>10110</skillId> <!-- Guardian Aura -->
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+				</skillLevel>
 				<skillSubLevel>
 					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
 					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
@@ -628,8 +637,8 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">25</value>
-					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
-					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
+					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -716,7 +725,10 @@
 			<effect name="CallSkillOnActionTime">
 				<!-- Templar's Aura -->
 				<skillId>10111</skillId> <!-- Templar's Aura -->
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+				</skillLevel>
 				<skillSubLevel>
 					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{1000 + subIndex}</value>
 					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2000 + subIndex}</value>
@@ -830,7 +842,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>15</amount>
+				<amount>-15</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="Reuse">
@@ -951,7 +963,10 @@
 	<skill id="10110" toLevel="2" name="Guardian Aura">
 		<!-- P./ M. Def. +$s1, Speed +$s2, Attribute Resistance +$s3, received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5, Skill MP Consumption -$s6. Only one aura can be active at a time. -->
 		<icon>icon.skill10106</icon>
-		<abnormalLevel>1</abnormalLevel>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLevel>
 		<abnormalTime>11</abnormalTime>
 		<abnormalType>AURA</abnormalType>
 		<abnormalVisualEffect>EVAS_AURA</abnormalVisualEffect>
@@ -971,7 +986,6 @@
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>
-					
 					<value level="1">20</value>
 					<value level="2">25</value>
 					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
@@ -980,7 +994,6 @@
 			</effect>
 			<effect name="MagicalDefence">
 				<amount>
-					
 					<value level="1">20</value>
 					<value level="2">25</value>
 					<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1020">{base + subIndex}</value>
@@ -1058,7 +1071,10 @@
 	<skill id="10111" toLevel="2" name="Templar's Aura">
 		<!-- P./ M. Atk. +$s1, P./ M. Def. +$s2, Speed +$s3, Received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one Knight's Aura can be active at any time. -->
 		<icon>icon.skill10107</icon>
-		<abnormalLevel>1</abnormalLevel>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLevel>
 		<abnormalTime>11</abnormalTime>
 		<abnormalType>AURA</abnormalType>
 		<abnormalVisualEffect>TEMPLAR_AURA</abnormalVisualEffect>

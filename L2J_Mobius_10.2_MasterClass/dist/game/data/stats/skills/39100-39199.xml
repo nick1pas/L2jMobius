@@ -324,6 +324,85 @@
 		<!-- When equipped, Max HP/ MP/ CP +$s1, weight +$s2, damage dealt +$s3, Received Damage -$s4, Inventory Slots +$s5. -->
 		<icon>icon.event_energy_belt_i00</icon>
 		<operateType>P</operateType>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<magicLevel>1</magicLevel>
+		<effects>
+			<effect name="MaxHp">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxMp">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxCp">
+				<amount>500</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="WeightLimit">
+				<amount>12800</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="EnlargeSlot">
+				<amount>18</amount>
+			</effect>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">6</value>
+					<value level="2">7</value>
+				</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39190" toLevel="1" name="GM Lassana's Present Box">
 		<operateType>A1</operateType>

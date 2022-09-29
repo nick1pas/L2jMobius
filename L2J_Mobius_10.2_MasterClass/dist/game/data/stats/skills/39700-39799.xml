@@ -16,6 +16,7 @@
 		<!-- When in inventory, maintains the Vitality level. -->
 		<icon>icon.ev_charge_run</icon>
 		<operateType>P</operateType>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
 			<effect name="VitalityPointsRate">
 				<amount>-100</amount>
@@ -50,7 +51,7 @@
 		<reuseDelay>300000</reuseDelay>
 		<coolTime>500</coolTime>
 		<abnormalType>HONEY_BEER</abnormalType>
-		<abnormalLevel>1</abnormalLevel>
+		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
 		<stayAfterDeath>true</stayAfterDeath>
 		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
@@ -221,7 +222,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>107</minLevel>
-				<maxLevel>130</maxLevel>
+				<maxLevel>120</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -258,7 +259,46 @@
 	<skill id="39724" toLevel="1" name="Mentor's Encouragement">
 		<!-- With your mentor's help, your P. Atk./ M. Atk./ P. Def./ M. Def. +5%, Acquired XP/ SP +100%, Vitality bonus +100%. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<abnormalTime>-1</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<isMagic>3</isMagic>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>VP_MENTOR_RUNE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLevel>-2</magicLevel>
+		<abnormalLevel>0</abnormalLevel>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMentoring>true</isMentoring>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>100</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>100</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39725" toLevel="1" name="Party Appearance Stone">
 		<icon>icon.skill0000</icon>
@@ -386,7 +426,13 @@
 	<skill id="39740" toLevel="1" name="Conquest Expedition Rune - Lv. 1-100">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<stayAfterDeath>true</stayAfterDeath>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>-100</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39741" toLevel="1" name="Conquest Expedition Rune - Conquest Zone">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
@@ -396,13 +442,11 @@
 	<skill id="39742" toLevel="1" name="Blessed Scroll: Enchant Exalted Weapon">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
-		<isMagic>2</isMagic> <!-- Static Skill -->
-		<itemConsumeCount>1</itemConsumeCount>
-		<itemConsumeId>82074</itemConsumeId> <!-- Scroll: Enchant Blessed Exalted Weapon -->
-		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
 		<targetType>ITEM</targetType>
 		<affectScope>SINGLE</affectScope>
 	</skill>
@@ -607,25 +651,23 @@
 	</skill>
 	<skill id="39766" toLevel="3" name="Musician's Melody - Emperor's Special Cocktail">
 		<icon>icon.skill0000</icon>
-		<abnormalLevel>8</abnormalLevel>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_ATTACK</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>
 			<value level="1">3600</value>
 			<value level="2">14400</value>
 			<value level="3">28800</value>
 		</abnormalTime>
-		<abnormalType>BUFF_SPECIAL_ATTACK</abnormalType>
-		<operateType>A2</operateType>
-		<mpConsume>0</mpConsume>
-		<coolTime>300</coolTime>
-		<isMagic>22</isMagic>
-		<magicLevel>105</magicLevel>
-		<reuseDelay>2000</reuseDelay>
-		<effectPoint>1</effectPoint>
-		<basicProperty>NONE</basicProperty>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
 		<stayAfterDeath>true</stayAfterDeath>
+		<irreplacableBuff>true</irreplacableBuff>
 		<blockedInOlympiad>true</blockedInOlympiad>
-		<canDoubleCast>false</canDoubleCast>
-		<canBeDispelled>false</canBeDispelled>
+		<canBeDispelled>true</canBeDispelled>
 		<effects>
 			<effect name="DispelBySlotProbability">
 				<dispel>MULTI_BUFF;IMPROVE_PA_PD_UP;PA_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL;PD_UP;HIT_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
@@ -743,146 +785,119 @@
 	</skill>
 	<skill id="39771" toLevel="3" name="Drum Concert - Emperor's Special Cocktail">
 		<icon>icon.skill0000</icon>
-		<abnormalLevel>5</abnormalLevel>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>BUFF_SPECIAL_AURA</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>
 			<value level="1">3600</value>
 			<value level="2">14400</value>
 			<value level="3">28800</value>
 		</abnormalTime>
-		<abnormalType>BUFF_SPECIAL_AURA</abnormalType>
-		<operateType>A2</operateType>
-		<mpConsume>0</mpConsume>
-		<coolTime>300</coolTime>
-		<isMagic>22</isMagic>
-		<magicLevel>105</magicLevel>
-		<reuseDelay>2000</reuseDelay>
-		<effectPoint>1</effectPoint>
-		<basicProperty>NONE</basicProperty>
-		<stayAfterDeath>true</stayAfterDeath>
-		<blockedInOlympiad>true</blockedInOlympiad>
-		<canDoubleCast>false</canDoubleCast>
-		<canBeDispelled>false</canBeDispelled>
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<irreplacableBuff>true</irreplacableBuff>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<canBeDispelled>true</canBeDispelled>
 		<effects>
 			<effect name="DispelBySlotProbability">
-				<dispel>MULTI_BUFF;IMPROVE_PA_PD_UP;PA_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL;PD_UP;HIT_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</dispel>
+				<dispel>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</dispel>
 				<rate>100</rate>
 			</effect>
 			<effect name="BlockAbnormalSlot">
-				<slot>MULTI_BUFF;IMPROVE_PA_PD_UP;PA_UP;IMPROVE_MA_MD_UP;MD_UP;MA_UP;KAMAEL_SPECIAL;PD_UP;HIT_UP;IMPROVE_HIT_DEFENCE_CRT_RATE_UP;IMPROVE_CRT_RATE_DMG_UP;T_CRT_DMG_DOWN;CRITICAL_DMG_UP;CRITICAL_PROB_UP;IMPROVE_SPEED_AVOID_UP;SPEED_UP;MAX_BREATH_UP;HOLY_ATTACK;AVOID_UP;DECREASE_WEIGHT_PENALTY;RESIST_HOLY_UNHOLY</slot>
+				<slot>DANCE_OF_BLADESTORM;SONG_OF_CHAMPION;SONG_OF_EARTH;SONG_OF_HUNTER;SONG_OF_LIFE;SONG_OF_MEDITATION;SONG_OF_RENEWAL;SONG_OF_VENGEANCE;SONG_OF_VITALITY;SONG_OF_WARDING;SONG_OF_WATER;SONG_OF_WIND;DANCE_OF_BERSERKER;DANCE_OF_CONCENTRATION;DANCE_OF_FIRE;DANCE_OF_FURY;DANCE_OF_INSPIRATION;DANCE_OF_MYSTIC;DANCE_OF_SIREN;DANCE_OF_VAMPIRE;DANCE_OF_WARRIOR;SONG_OF_PURIFICATION;WISPERING_OF_BATTLE;SONG_OF_WINDSTORM;MOTION_OF_DEFENCE;BUFF_UNICORN_SERAPHIM;BUFF_QUEEN_OF_CAT;KNIGHT_AURA;DMG_SHIELD;AVOID_UP</slot>
 			</effect>
 			<effect name="MaxHp">
-				<amount>43</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MaxMp">
-				<amount>68</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MaxCp">
-				<amount>43</amount>
+				<amount>30</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PAtk">
-				<amount>28</amount>
+				<amount>30</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MAtk">
-				<amount>97</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PhysicalDefence">
-				<amount>35</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MagicalDefence">
-				<amount>40</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="CriticalRate">
-				<amount>36</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="CriticalDamage">
 				<amount>33</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="MagicCriticalRate">
-				<amount>40</amount>
-				<mode>DIFF</mode>
-			</effect>
 			<effect name="PhysicalAttackSpeed">
-				<amount>63</amount>
+				<amount>40</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MagicalAttackSpeed">
-				<amount>61</amount>
+				<amount>30</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="DefenceCriticalDamage">
-				<amount>-50</amount>
+			<effect name="PhysicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalEvasion">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+			<effect name="HpRegen">
+				<amount>75</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="MagicMpCost">
+			<effect name="MpRegen">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReduceCancel">
+				<amount>-40</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Reuse">
 				<amount>-10</amount>
 				<mode>PER</mode>
 				<magicType>0</magicType>
 			</effect>
-			<effect name="MagicMpCost">
+			<effect name="Reuse">
 				<amount>-10</amount>
 				<mode>PER</mode>
 				<magicType>1</magicType>
 			</effect>
 			<effect name="MagicMpCost">
-				<amount>-10</amount>
+				<amount>-22</amount>
 				<mode>PER</mode>
-				<magicType>2</magicType>
+				<magicType>1</magicType>
 			</effect>
 			<effect name="MagicMpCost">
-				<amount>-10</amount>
+				<amount>-22</amount>
 				<mode>PER</mode>
-				<magicType>3</magicType>
+				<magicType>0</magicType>
 			</effect>
 			<effect name="VampiricAttack">
-				<amount>9</amount>
+				<amount>8</amount>
 				<chance>30</chance>
-			</effect>
-			<effect name="TriggerSkillByDamage">
-				<!-- Critical Damage Increase -->
-				<attackerType>Creature</attackerType>
-				<chance>60</chance>
-				<targetType>SELF</targetType>
-				<minDamage>300</minDamage>
-				<skillId>11569</skillId> <!-- Critical Strike -->
-				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="39772" toLevel="3" name="United Resistance - Emperor's Special Cocktail">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
-		<abnormalLevel>4</abnormalLevel>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>ARMOR_ELEMENT_ALL</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>
 			<value level="1">3600</value>
 			<value level="2">14400</value>
 			<value level="3">28800</value>
 		</abnormalTime>
-		<abnormalType>ARMOR_ELEMENT_ALL</abnormalType>
-		<operateType>A2</operateType>
-		<mpConsume>0</mpConsume>
-		<coolTime>300</coolTime>
-		<isMagic>22</isMagic>
-		<magicLevel>105</magicLevel>
-		<reuseDelay>2000</reuseDelay>
-		<effectPoint>1</effectPoint>
-		<basicProperty>NONE</basicProperty>
-		<stayAfterDeath>true</stayAfterDeath>
-		<blockedInOlympiad>true</blockedInOlympiad>
-		<canDoubleCast>false</canDoubleCast>
-		<canBeDispelled>false</canBeDispelled>
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
+		<irreplacableBuff>true</irreplacableBuff>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<canBeDispelled>true</canBeDispelled>
 		<effects>
 			<effect name="DispelBySlotProbability">
 				<dispel>ARMOR_FIRE;ARMOR_WATER;ARMOR_WIND;ARMOR_EARTH;MD_UP_ATTR;DANCE_OF_AQUA_GUARD;DANCE_OF_EARTH_GUARD;SONG_OF_ELEMENTAL;SONG_OF_FLAME_GUARD;SONG_OF_STORM_GUARD;SONG_OF_WIND</dispel>

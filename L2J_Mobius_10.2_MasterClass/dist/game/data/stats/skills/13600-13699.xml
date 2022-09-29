@@ -1496,7 +1496,7 @@
 		<operateType>A2</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>90000</reuseDelay>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>2000</affectRange>
 		<staticReuse>true</staticReuse>
 		<effectPoint>-711</effectPoint>
@@ -1532,10 +1532,6 @@
 			<effect name="DispelBySlotProbability">
 				<dispel>INVINCIBILITY_SPECIAL;INVINCIBILITY;ABNORMAL_INVINCIBILITY</dispel>
 				<rate>100</rate>
-			</effect>
-			<effect name="ResistAbnormalByCategory">
-				<amount>0</amount>
-				<slot>DEBUFF</slot>
 			</effect>
 		</effects>
 	</skill>

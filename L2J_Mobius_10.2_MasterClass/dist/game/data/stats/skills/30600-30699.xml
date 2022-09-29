@@ -261,7 +261,7 @@
 		<reuseDelay>10000</reuseDelay>
 		<effectPoint>-5000</effectPoint>
 		<mpConsume>12</mpConsume>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>HEAL_EFFECT_DOWN</abnormalType>
@@ -311,7 +311,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<activateRate>80</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -747,7 +747,7 @@
 		<hitCancelTime>3</hitCancelTime>
 		<effectRange>1100</effectRange>
 		<affectRange>200</affectRange>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
@@ -1540,7 +1540,7 @@
 		<effectPoint>-689</effectPoint>
 		<mpConsume>12</mpConsume>
 		<magicLevel>40</magicLevel>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>900</affectRange>
 		<fanRange>0,0,900,90</fanRange>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1628,7 +1628,7 @@
 		<coolTime>580</coolTime>
 		<reuseDelay>30000</reuseDelay>
 		<effectPoint>-687</effectPoint>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<mpConsume>20</mpConsume>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
@@ -2496,7 +2496,7 @@
 		<affectScope>SQUARE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<fanRange>0;0;1100;50</fanRange> <!-- Guessed -->
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<reuseDelayGroup>11023</reuseDelayGroup>
 		<magicLevel>40</magicLevel>
 		<effectRange>1400</effectRange>
@@ -3459,7 +3459,7 @@
 		<abnormalType>BODY_DESTRUCTION</abnormalType>
 		<attributeType>WIND</attributeType>
 		<attributeValue>20</attributeValue>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -3859,7 +3859,7 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>60</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>600</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<isDebuff>true</isDebuff>

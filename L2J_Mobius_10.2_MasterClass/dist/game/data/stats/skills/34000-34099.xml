@@ -114,29 +114,13 @@
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
-			<effect name="PvpPhysicalAttackDamageBonus">
+		<effect name="DamageByAttack">
 				<amount>
-					<value level="1">8</value>
-					<value level="2">9</value>
-					<value level="3">10</value>
+					<value level="1">-8</value>
+					<value level="2">-9</value>
+					<value level="3">-10</value>
 				</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpMagicalSkillDamageBonus">
-				<amount>
-					<value level="1">8</value>
-					<value level="2">9</value>
-					<value level="3">10</value>
-				</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpPhysicalSkillDamageBonus">
-				<amount>
-					<value level="1">8</value>
-					<value level="2">9</value>
-					<value level="3">10</value>
-				</amount>
-				<mode>PER</mode>
+				<type>PK</type>
 			</effect>
 		</effects>
 	</skill>
@@ -160,15 +144,7 @@
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
-			<effect name="PAtk">
-				<amount>
-					<value level="1">5</value>
-					<value level="2">6</value>
-					<value level="3">7</value>
-				</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MAtk">
+			<effect name="CriticalDamage">
 				<amount>
 					<value level="1">5</value>
 					<value level="2">6</value>
@@ -252,6 +228,22 @@
 					<value level="3">3</value>
 				</amount>
 				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+				</amount>
+				<type>PK</type>
 			</effect>
 		</effects>
 	</skill>
@@ -380,8 +372,6 @@
 		<abnormalTime>15</abnormalTime>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
-		<reuseDelay>120000</reuseDelay>
-		<staticReuse>true</staticReuse>
 		<hitCancelTime>0</hitCancelTime>
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<targetType>SELF</targetType>
@@ -901,7 +891,7 @@
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
-	<skill id="34065" toLevel="7" name="Energy of Insolence">
+	<skill id="34065" toLevel="8" name="Energy of Insolence">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>

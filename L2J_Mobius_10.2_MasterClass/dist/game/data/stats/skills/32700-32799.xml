@@ -997,7 +997,7 @@
 		<attributeType>WATER</attributeType>
 		<attributeValue>250</attributeValue>
 		<activateRate>100</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectHeight>-100;200</affectHeight>
 		<affectRange>450</affectRange>
 		<trait>PULL</trait>
@@ -1217,7 +1217,9 @@
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 		<abnormalLevel>1</abnormalLevel>
-		<abnormalTime>10</abnormalTime>
+		<abnormalTime>15</abnormalTime>
+		<staticReuse>true</staticReuse>
+		<isMagic>2</isMagic>
 		<abnormalType>INVINCIBILITY</abnormalType>
 		<abnormalVisualEffect>INVINCIBILITY</abnormalVisualEffect>
 		<targetType>SELF</targetType>

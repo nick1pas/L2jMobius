@@ -563,7 +563,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory" fromLevel="3" toLevel="6">
-				<amount>5</amount>
+				<amount>-5</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="ImmobileDamageResist" fromLevel="4" toLevel="6">
@@ -681,9 +681,9 @@
 			</effect>
 			<effect name="ResistAbnormalByCategory" fromLevel="3" toLevel="5">
 				<amount>
-					<value level="3">1</value>
-					<value level="4">3</value>
-					<value level="5">5</value>
+					<value level="3">-1</value>
+					<value level="4">-3</value>
+					<value level="5">-5</value>
 				</amount>
 				<slot>DEBUFF</slot>
 			</effect>
@@ -2217,8 +2217,7 @@
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
 		<abnormalLevel>1</abnormalLevel>
-		<hitCancelTime>0</hitCancelTime>
-		<isMagic>22</isMagic>
+		<isMagic>2</isMagic>
 		<abnormalTime>
 			<value fromLevel="1" toLevel="12">5</value>
 			<value fromLevel="13" toLevel="17">6</value>
@@ -2297,10 +2296,10 @@
 					<value level="16">35</value>
 					<value level="17">35</value>
 					<value level="18">50</value>
-					<value level="19">50</value>
-					<value level="20">50</value>
-					<value level="21">50</value>
-					<value level="22">50</value>
+					<value level="19">52</value>
+					<value level="20">53</value>
+					<value level="21">54</value>
+					<value level="22">55</value>
 				</damage>
 				<mode>PER</mode>
 			</effect>
@@ -2399,6 +2398,7 @@
 					<value level="22">55</value>
 				</power>
 			</effect>
+			<effect name="TargetCancel" />
 			<effect name="Untargetable" />
 			<effect name="DispelByCategory">
 				<slot>DEBUFF</slot>

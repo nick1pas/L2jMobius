@@ -77,7 +77,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10608" toLevel="4" name="Superior Haste">
+	<skill id="10608" toLevel="5" name="Superior Haste">
 		<!-- P. Skill Cooldown -$s1, Infection Atk. Rate +$s2. Also doubles the duration of Shadow Dash. -->
 		<icon>icon.skill10608</icon>
 		<magicLevel>
@@ -85,6 +85,7 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 			<value level="4">99</value>
+			<value level="5">115</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<effects>
@@ -94,6 +95,7 @@
 					<value level="2">11</value>
 					<value level="3">13</value>
 					<value level="4">15</value>
+					<value level="5">15</value>
 				</BLEED>
 			</effect>
 			<effect name="Reuse">
@@ -102,6 +104,7 @@
 					<value level="2">-6</value>
 					<value level="3">-7</value>
 					<value level="4">-10</value>
+					<value level="5">-10</value>
 				</amount>
 				<mode>PER</mode>
 				<magicType>0</magicType>
@@ -112,20 +115,26 @@
 					<value level="2">-6</value>
 					<value level="3">-7</value>
 					<value level="4">-10</value>
+					<value level="5">-10</value>
 				</amount>
 				<mode>PER</mode>
 				<magicType>22</magicType>
 			</effect>
+			<effect name="PhysicalSkillCriticalDamage">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
 		</effects>
 	</skill>
-	<skill id="10609" toLevel="1" name="Chance of Wind">
+	
+	<skill id="10609" toLevel="2" name="Chance of Wind">
 		<!-- For $s1, P. Skill Power +$s2, Vital Point Attack Rate +$s3, Critical Damage/ Rate for standard attacks from the flanks +$s4, Critical Damage/ Rate for standard attacks after backstab +$s5, Critical Damage for standard attacks at the front -$s6. Requires a dagger or dual daggers. -->
 		<icon>icon.skill10878</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="1">300</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+			<value fromLevel="1" toLevel="2">300</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
 		</abnormalTime>
 		<abnormalType>FOCUS_DAGGER</abnormalType>
 		<operateType>A2</operateType>
@@ -180,16 +189,19 @@
 				</weaponType>
 			</effect>
 			<effect name="PhysicalSkillPower">
-				<amount>2</amount>
+				<amount>
+					<value level="1">2</value>
+					<value level="2">7</value>
+				</amount>
 				<mode>PER</mode>
 				<weaponType>
 					<item>DAGGER</item>
 					<item>DUALDAGGER</item>
 				</weaponType>
 			</effect>
-			<effect name="Speed" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+			<effect name="Speed" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
-					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -304,7 +316,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10655" toLevel="4" name="Brutal Stab Expert">
+	<skill id="10655" toLevel="5" name="Brutal Stab Expert">
 		<!-- P. Atk. +$s1, Critical Damage for standard attacks +$s2. -->
 		<icon>icon.skill10655</icon>
 		<magicLevel>
@@ -312,6 +324,7 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 			<value level="4">99</value>
+			<value level="5">115</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<effects>
@@ -321,6 +334,7 @@
 					<value level="2">6</value>
 					<value level="3">7</value>
 					<value level="4">10</value>
+					<value level="5">11</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -330,19 +344,20 @@
 					<value level="2">6</value>
 					<value level="3">7</value>
 					<value level="4">10</value>
+					<value level="5">11</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10656" toLevel="1" name="Shadow Hunter">
+	<skill id="10656" toLevel="2" name="Shadow Hunter">
 		<!-- For $s1, P. Skill Power +$s2, Vital Point Attack Rate +$s3, Critical Damage/ Rate for standard attacks from the flanks +$s4, Critical Damage/ Rate for standard attacks after backstab +$s5, Critical Damage for standard attacks +$s6, Critical Damage for standard attacks at the front -$s7. Requires a dagger or dual daggers. -->
 		<icon>icon.skill10656</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="1">300</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+			<value fromLevel="1" toLevel="2">300</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
 		</abnormalTime>
 		<abnormalType>FOCUS_DAGGER</abnormalType>
 		<operateType>A2</operateType>
@@ -396,17 +411,20 @@
 					<item>DUALDAGGER</item>
 				</weaponType>
 			</effect>
-			<effect name="CriticalDamage">
-				<amount>608</amount>
-				<mode>DIFF</mode>
+			<effect name="PhysicalSkillPower">
+				<amount>
+					<value level="1">2</value>
+					<value level="2">7</value>
+				</amount>
+				<mode>PER</mode>
 				<weaponType>
 					<item>DAGGER</item>
 					<item>DUALDAGGER</item>
 				</weaponType>
 			</effect>
-			<effect name="Speed" fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">
+			<effect name="Speed" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
-					<value fromLevel="1" toLevel="1" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
+					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>

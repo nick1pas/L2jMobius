@@ -12,6 +12,27 @@
 			</effect>
 			<effect name="DefenceAttribute">
 				<amount>30</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>WIND</attribute>
 			</effect>
 		</effects>
 	</skill>
@@ -22,11 +43,7 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PAtk">
-				<amount>2</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MAtk">
+			<effect name="CriticalDamage">
 				<amount>2</amount>
 				<mode>PER</mode>
 			</effect>
@@ -52,6 +69,10 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="DefenceMagicCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>-5</amount>
 				<mode>PER</mode>
 			</effect>
@@ -133,6 +154,27 @@
 			</effect>
 			<effect name="DefenceAttribute">
 				<amount>50</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>50</amount>
+				<attribute>WIND</attribute>
 			</effect>
 		</effects>
 	</skill>
@@ -142,6 +184,14 @@
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
 		<effects>
 			<effect name="ImmobileDamageResist">
 				<amount>-1.3</amount>
@@ -182,7 +232,7 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="DefenceCriticalDamage">
+			<effect name="DefenceCriticalRate">
 				<amount>-1.3</amount>
 				<mode>PER</mode>
 			</effect>
@@ -246,12 +296,40 @@
 	<skill id="35917" toLevel="1" name="Warehouse for Talismans">
 		<!-- Target damage when immobilized +1.3%. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>TARGET</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="ImmobileDamageBonus">
+				<amount>1.3</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="35918" toLevel="1" name="Prime Energy of Talisman">
 		<!-- Target damage when immobilized +1%. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>TARGET</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="ImmobileDamageBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="35919" toLevel="1" name="Warehouse for Shining Treasures II">
 		<!-- Received damage when immobilized -0.7%. -->
@@ -259,6 +337,14 @@
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="OpCheckAbnormal">
+				<type>STUN</type>
+				<level>1</level>
+				<hasAbnormal>true</hasAbnormal>
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
 		<effects>
 			<effect name="ImmobileDamageResist">
 				<amount>-0.7</amount>
@@ -324,6 +410,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 		<effects>
 			<effect name="DefenceTrait">
+				<DUAL>1.3</DUAL>
 				<SWORD>1.3</SWORD>
 			</effect>
 		</effects>
@@ -336,6 +423,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 		<effects>
 			<effect name="DefenceTrait">
+				<DUAL>1</DUAL>
 				<SWORD>1</SWORD>
 			</effect>
 		</effects>
@@ -401,8 +489,8 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<effects>
-			<effect name="DefenceCriticalRate">
-				<amount>-1.3</amount>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+   			<amount>-1.3</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -414,8 +502,8 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<effects>
-			<effect name="DefenceCriticalRate">
-				<amount>-1</amount>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+   				<amount>-1</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -427,8 +515,8 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<effects>
-			<effect name="DefenceMagicCriticalRate">
-				<amount>-1.3</amount>
+			<effect name="DefenceMagicCriticalDamage">
+   				<amount>-1.3</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -440,8 +528,8 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<effects>
-			<effect name="DefenceMagicCriticalRate">
-				<amount>-1</amount>
+			<effect name="DefenceMagicCriticalDamage">
+   				<amount>-1</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -479,8 +567,8 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="AbsorbDamage">
-				<damage>1</damage>
+			<effect name="RealDamageResist">
+   				<amount>1</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -492,8 +580,8 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="AbsorbDamage">
-				<damage>1.3</damage>
+			<effect name="RealDamageResist">
+   				<amount>1.3</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -505,11 +593,7 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PAtk">
-				<amount>0.5</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MAtk">
+			<effect name="CriticalDamage">
 				<amount>0.5</amount>
 				<mode>PER</mode>
 			</effect>
@@ -586,7 +670,11 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="MagicalDefence">
+			<effect name="PveMagicalSkillDefenceBonus">
+				<amount>1.3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
 				<amount>1.3</amount>
 				<mode>PER</mode>
 			</effect>
@@ -599,7 +687,11 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="MagicalDefence">
+			<effect name="PveMagicalSkillDefenceBonus">
+				<amount>1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
 				<amount>1</amount>
 				<mode>PER</mode>
 			</effect>
@@ -612,9 +704,13 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PhysicalDefence">
-				<amount>5</amount>
-				<mode>PER</mode>
+		<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>ENEMY_ALL</type>
 			</effect>
 		</effects>
 	</skill>
@@ -663,6 +759,27 @@
 			</effect>
 			<effect name="DefenceAttribute">
 				<amount>10</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>10</amount>
+				<attribute>WIND</attribute>
 			</effect>
 		</effects>
 	</skill>
@@ -673,7 +790,7 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PAtk">
+			<effect name="WeaponBonusPAtk">
 				<amount>10</amount>
 				<mode>DIFF</mode>
 				<weaponType>
@@ -693,7 +810,7 @@
 					<item>DUALBLUNT</item>
 				</weaponType>
 			</effect>
-			<effect name="MAtk">
+			<effect name="WeaponBonusMAtk">
 				<amount>10</amount>
 				<mode>DIFF</mode>
 				<weaponType>
@@ -722,7 +839,7 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PAtk">
+			<effect name="WeaponBonusPAtk">
 				<amount>10</amount>
 				<mode>DIFF</mode>
 				<weaponType>
@@ -742,7 +859,7 @@
 					<item>DUALBLUNT</item>
 				</weaponType>
 			</effect>
-			<effect name="MAtk">
+			<effect name="WeaponBonusMAtk">
 				<amount>10</amount>
 				<mode>DIFF</mode>
 				<weaponType>
@@ -785,6 +902,10 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
 			<effect name="CriticalDamage">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalDamage">
 				<amount>5</amount>
 				<mode>PER</mode>
 			</effect>
@@ -867,9 +988,13 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PhysicalDefence">
-				<amount>2.2</amount>
-				<mode>PER</mode>
+		<effect name="DamageByAttack">
+				<amount>-2.2</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-2.2</amount>
+				<type>ENEMY_ALL</type>
 			</effect>
 		</effects>
 	</skill>
@@ -880,9 +1005,13 @@
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
-			<effect name="PhysicalDefence">
-				<amount>2.2</amount>
-				<mode>PER</mode>
+		<effect name="DamageByAttack">
+				<amount>-2.2</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-2.2</amount>
+				<type>ENEMY_ALL</type>
 			</effect>
 		</effects>
 	</skill>
@@ -964,7 +1093,118 @@
 	<skill id="35957" toLevel="5" name="Enchant Effect: +6 Blessed Exalted Heavy Armor">
 		<!-- Increases set effects. P. Def. +$s1, MP Recovery Rate +$s2 while standing/ sitting. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>1</magicLevel>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>65</amount>
+				<mode>DIFF</mode>
+				<armorType>
+					<item>HEAVY</item>
+				</armorType>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_MP_RATE</stat>
+				<type>SITTING</type>
+				<value>22</value>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_MP_RATE</stat>
+				<type>STANDING</type>
+				<value>22</value>
+			</effect>
+			<effect name="MagicMpCost" fromLevel="2" toLevel="5">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-4</value>
+					<value level="3">-4</value>
+					<value level="4">-4</value>
+					<value level="5">-4</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="StatByMoveType">
+				<stat>REGENERATE_MP_RATE</stat>
+				<type>RUNNING</type>
+				<value>
+					<value level="1">0</value>
+					<value level="2">22</value>
+					<value level="3">22</value>
+					<value level="4">22</value>
+					<value level="5">22</value>
+				</value>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">7</value>
+					<value level="4">7</value>
+					<value level="5">14</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ReflectSkill">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+				</amount>
+			</effect>
+			<effect name="ReflectSkill">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+				</amount>
+				<type>MAGIC</type>
+			</effect>
+			<effect name="RealDamageResist">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">7</value>
+					<value level="5">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageShieldResist">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">7</value>
+					<value level="5">7</value>
+				</amount>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">1</value>
+				</amount>
+				<stat>CHA</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">1</value>
+				</amount>
+				<stat>LUC</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="35958" toLevel="5" name="Enchant Effect: +6 Blessed Exalted Light Armor">
 		<!-- Increases set effects. M. Def. +$s1, P. Evasion +$s2, MP Recovery Rate +$s3 while standing/ sitting, Debuff Resistance +$s4. -->
@@ -983,16 +1223,19 @@
 				</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="PhysicalDefence">
-				<amount>42</amount>
+			<effect name="MagicalDefence">
+				<amount>38</amount>
 				<mode>DIFF</mode>
 				<armorType>
-					<item>MAGIC</item>
+					<item>LIGHT</item>
 				</armorType>
 			</effect>
-			<effect name="WeightLimit">
-				<amount>20</amount>
-				<mode>PER</mode>
+			<effect name="PhysicalEvasion">
+				<amount>1</amount>
+				<mode>DIFF</mode>
+				<armorType>
+					<item>LIGHT</item>
+				</armorType>
 			</effect>
 			<effect name="StatByMoveType">
 				<stat>REGENERATE_MP_RATE</stat>
@@ -1004,71 +1247,81 @@
 				<type>STANDING</type>
 				<value>5</value>
 			</effect>
-			<effect name="MaxHp">
+			<effect name="ResistAbnormalByCategory">
+				<amount>-7</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+			<effect name="PhysicalSkillCriticalRate">
 				<amount>
 					<value level="1">0</value>
-					<value level="2">3423</value>
-					<value level="3">3423</value>
-					<value level="4">3423</value>
-					<value level="5">3423</value>
+					<value level="2">10</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VampiricAttack">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">3</value>
+					<value level="3">3</value>
+					<value level="4">3</value>
+					<value level="5">3</value>
+				</amount>
+				<chance>30</chance>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+					<value level="5">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+					<value level="5">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">-5</value>
+					<value level="4">-5</value>
+					<value level="5">-5</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>22</magicType>
+			</effect>
+			<effect name="Speed">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">4</value>
+					<value level="4">4</value>
+					<value level="5">4</value>
 				</amount>
 				<mode>DIFF</mode>
 			</effect>
-			<effect name="ResistAbnormalByCategory">
-				<amount>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">-7</value>
-					<value level="4">-7</value>
-					<value level="5">-7</value>
-				</amount>
-				<slot>DEBUFF</slot>
-			</effect>
-			<effect name="DefenceTrait">
-				<BOW>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">7</value>
-					<value level="4">7</value>
-					<value level="5">7</value>
-				</BOW>
-				<CROSSBOW>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">7</value>
-					<value level="4">7</value>
-					<value level="5">7</value>
-				</CROSSBOW>
-				<TWOHANDCROSSBOW>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">7</value>
-					<value level="4">7</value>
-					<value level="5">7</value>
-				</TWOHANDCROSSBOW>
-				<DAGGER>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">7</value>
-					<value level="4">7</value>
-					<value level="5">7</value>
-				</DAGGER>
-				<DUALDAGGER>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">7</value>
-					<value level="4">7</value>
-					<value level="5">7</value>
-				</DUALDAGGER>
-			</effect>
 			<effect name="RealDamageResist">
-				<damage>
+				<amount>
 					<value level="1">0</value>
 					<value level="2">0</value>
 					<value level="3">0</value>
 					<value level="4">7</value>
 					<value level="5">7</value>
-				</damage>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="DamageShieldResist">
@@ -1198,13 +1451,13 @@
 				</DUALDAGGER>
 			</effect>
 			<effect name="RealDamageResist">
-				<damage>
+				<amount>
 					<value level="1">0</value>
 					<value level="2">0</value>
 					<value level="3">0</value>
 					<value level="4">7</value>
 					<value level="5">7</value>
-				</damage>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="DamageShieldResist">
@@ -2045,8 +2298,8 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="DefenceMagicCriticalDamage">
-			<amount>-3.5</amount>
-			<mode>PER</mode>
+				<amount>-3.5</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="DefenceMagicCriticalRate">
 				<amount>-3.5</amount>
@@ -2184,7 +2437,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="RealDamageResist">
-				<damage>3</damage>>
+				<amount>3</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>

@@ -232,7 +232,7 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit> <!-- Guessed -->
+		<affectLimit>20-30</affectLimit> <!-- Guessed -->
 		<affectRange>300</affectRange>
 		<effects>
 			<effect name="PhysicalAttack">
@@ -295,7 +295,7 @@
 		<affectScope>FAN</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<fanRange>0;0;900;90</fanRange>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>900</affectRange> <!-- Guessed -->
 		<conditions>
 			<condition name="EquipWeapon">
@@ -433,7 +433,7 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange> <!-- Guessed -->
 		<effects>
 			<effect name="PhysicalAttack">
@@ -588,7 +588,7 @@
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<affectRange>150</affectRange> <!-- Guessed -->
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<effects>
 			<effect name="AirBind" />
 			<effect name="BlockActions">
@@ -806,7 +806,7 @@
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<effects>
 			<effect name="KnockBack">
@@ -1167,7 +1167,7 @@
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<effects>
 			<effect name="BlockActions">
@@ -2037,7 +2037,7 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<effects>
 			<effect name="MagicalAttack">
@@ -2099,7 +2099,7 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>100</affectRange>
 		<effects>
 			<effect name="MagicalAttack">

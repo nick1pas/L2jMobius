@@ -123,7 +123,7 @@
 				<slot>BUFF</slot>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>20</amount>
+				<amount>-20</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 		</effects>
@@ -575,7 +575,7 @@
 			<value level="9">85</value>
 		</magicLevel>
 		<affectRange>200</affectRange>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<isMagic>1</isMagic>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -741,7 +741,7 @@
 			<value level="9">85</value>
 		</magicLevel>
 		<affectRange>200</affectRange>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<isMagic>1</isMagic>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -1891,7 +1891,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>80</amount>
+				<amount>-80</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="CriticalRate">
@@ -1965,7 +1965,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>80</amount>
+				<amount>-80</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="CriticalRate">
@@ -2039,7 +2039,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>80</amount>
+				<amount>-80</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="CriticalRate">

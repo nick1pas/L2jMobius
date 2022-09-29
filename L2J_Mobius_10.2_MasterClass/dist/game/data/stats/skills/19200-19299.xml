@@ -90,7 +90,7 @@
 		<abnormalLevel>8</abnormalLevel>
 		<abnormalTime>7</abnormalTime>
 		<abnormalType>REAL_TARGET</abnormalType>
-		<abnormalVisualEffect>REAL_TARGET</abnormalVisualEffect>
+		<abnormalVisualEffect>V_ARCHER_SHAPE_SHOOTER_AVE</abnormalVisualEffect>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
 		<operateType>A2</operateType>
@@ -122,7 +122,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19204" toLevel="1" name="Prophecy of Might">
+	<skill id="19204" toLevel="3" name="Prophecy of Might">
 		<!-- For $s1, the targeted party member's P. Critical Rate, P./ M. Skill Critical Rate, P. Critical Damage, and P./ M. Skill Critical Damage +$s2. Additionally, activates the Spirit of Iss effect. P./ M. Atk. and P./ M. Def. +$s3. Cannot be used with Chant of Bison/ Victories of Pa'agrio. Consumes $s4 Spirit Ore. <The character is targeted automatically> -->
 		<icon>icon.skill19204</icon>
 		<abnormalType>SONG_WEAPON</abnormalType>
@@ -130,24 +130,36 @@
 		<itemConsumeCount>10</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<operateType>A2</operateType>
-		<abnormalLevel>1</abnormalLevel>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>		
+		</abnormalLevel>
 		<targetType>MY_PARTY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>332</mpConsume>
+		<mpConsume>
+			<value level="1">270</value>
+			<value level="2">313</value>
+			<value level="3">270</value>		
+		</mpConsume>
 		<hitTime>5000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>712</effectPoint>
 		<reuseDelay>300000</reuseDelay>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="1">300</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+			<value fromLevel="1" toLevel="3">300</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
 		</abnormalTime>
 		<effects>
 			<effect name="TriggerSkill">
 				<skillId>30848</skillId>
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">2</value>
+				</skillLevel>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="CriticalRate">
@@ -172,6 +184,51 @@
 			</effect>
 			<effect name="PhysicalSkillCriticalDamage">
 				<amount>25</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>
+					<value fromLevel="1" toLevel="2">0</value>
+					<value level="3">5</value>
+				</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>
+					<value fromLevel="1" toLevel="2">0</value>
+					<value level="3">5</value>
+				</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>
+					<value fromLevel="1" toLevel="2">0</value>
+					<value level="3">5</value>
+				</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value fromLevel="1" toLevel="2">0</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value fromLevel="1" toLevel="2">0</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value fromLevel="1" toLevel="2">0</value>
+					<value level="3">5</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -236,14 +293,19 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19207" toLevel="1" name="Chant of Bison">
+	<skill id="19207" toLevel="3" name="Chant of Bison">
 		<!-- For $s1, all party members' Critical Rate for standard attacks, P./ M. Skill Critical Rate +$s2, P./ M. Skill Power +$s2. Additionally, activates the Spirit of Iss effect: P./ M. Atk. and P./ M. Def. +$s3. Cannot be used with Prophecy of Might/ Victories of Pa'agrio. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill19207</icon>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="1">300</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+			<value fromLevel="1" toLevel="3">300</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
 		</abnormalTime>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
 		<abnormalType>SONG_WEAPON</abnormalType>
 		<affectRange>1000</affectRange>
 		<itemConsumeCount>10</itemConsumeCount>
@@ -252,75 +314,61 @@
 		<targetType>SELF</targetType>
 		<affectScope>PARTY</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>332</mpConsume>
+		<mpConsume>
+			<value level="1">332</value>
+			<value level="2">385</value>
+			<value level="3">332</value>
+		</mpConsume>
 		<hitTime>8000</hitTime>
 		<coolTime>300</coolTime>
 		<effectPoint>712</effectPoint>
 		<reuseDelay>600000</reuseDelay>
 		<effects>
 			<effect name="CriticalRate">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PhysicalSkillCriticalRate">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="CriticalDamage">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MagicCriticalRate">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MagicCriticalDamage">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PhysicalSkillPower">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MagicalSkillPower">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
+			</effect>
+			<effect name="TriggerSkill">
+				<skillId>30848</skillId>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">2</value>
+				</skillLevel>
+				<targetType>SELF</targetType>
 			</effect>
 		</effects>
-		<selfEffects>
-			<effect name="CallSkill">
-				<skillId>30848</skillId> <!-- Spirit of Iss -->
-				<skillLevel>1</skillLevel>
-			</effect>
-			<effect name="CriticalRate">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PhysicalSkillCriticalRate">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="CriticalDamage">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MagicCriticalRate">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MagicCriticalDamage">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PhysicalSkillPower">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="MagicalSkillPower">
-				<amount>15</amount>
-				<mode>PER</mode>
-			</effect>
-		</selfEffects>
 	</skill>
 	<skill id="19208" toLevel="9" name="Seal of Suspension">
 		<!-- For $s1, P./ M. Skill Cooldown +$s2 for the target and nearby enemies. Consumes 5 Spirit Ore. -->
@@ -1073,23 +1121,32 @@
 		<abnormalTime>15</abnormalTime>
 		<isMagic>1</isMagic>
 	</skill>
-	<skill id="19231" toLevel="1" name="Song of Assault">
+	<skill id="19231" toLevel="3" name="Song of Assault">
 		<!-- For $s1, all party members P./ M. Atk. and P./ M. Def. +$s2. Additionally, activates the Spirit of Iss effect. P./ M. Atk. and P./ M. Def. +$s3. Cannot be used with Crippling Dance. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill19231</icon>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="1">300</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+			<value fromLevel="1" toLevel="3">300</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
 		</abnormalTime>
 		<abnormalType>SONG_OF_WISDOM</abnormalType>
 		<affectRange>1000</affectRange>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
 		<itemConsumeCount>10</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
 		<operateType>A3</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>PARTY</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>140</mpConsume>
+		<mpConsume>
+			<value level="1">140</value>
+			<value level="2">162</value>
+			<value level="3">140</value>
+		</mpConsume>
 		<hitTime>5000</hitTime>
 		<coolTime>300</coolTime>
 		<effectPoint>687</effectPoint>
@@ -1097,45 +1154,69 @@
 		<effects>
 			<effect name="TriggerSkill">
 				<skillId>30848</skillId>
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">2</value>
+				</skillLevel>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="PAtk">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MAtk">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MagicalDefence">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PhysicalDefence">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19232" toLevel="1" name="Crippling Dance">
+	<skill id="19232" toLevel="3" name="Crippling Dance">
 		<!-- For $s1, all party members P./ M. Atk. and P./ M. Def. +$s2. Additionally, activates the Spirit of Iss effect. P./ M. Atk. and P./ M. Def. +$s3. Cannot be used with Song of Assault. Consumes $s4 Spirit Ore. -->
 		<icon>icon.skill19232</icon>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="1">300</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="1" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
+			<value fromLevel="1" toLevel="3">300</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + 0.5 * subIndex}</value>
 		</abnormalTime>
 		<abnormalType>SONG_OF_WISDOM</abnormalType>
 		<affectRange>1000</affectRange>
-		<abnormalLevel>1</abnormalLevel>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
 		<itemConsumeCount>10</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ores -->
 		<operateType>A3</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>PARTY</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<mpConsume>140</mpConsume>
+		<mpConsume>
+			<value level="1">140</value>
+			<value level="2">162</value>
+			<value level="3">140</value>
+		</mpConsume>
 		<hitTime>5000</hitTime>
 		<coolTime>300</coolTime>
 		<effectPoint>687</effectPoint>
@@ -1143,23 +1224,39 @@
 		<effects>
 			<effect name="TriggerSkill">
 				<skillId>30848</skillId>
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">2</value>
+				</skillLevel>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="PAtk">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MAtk">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="MagicalDefence">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PhysicalDefence">
-				<amount>15</amount>
+				<amount>
+					<value fromLevel="1" toLevel="2">15</value>
+					<value level="3">20</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
@@ -2463,7 +2560,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="19296" toLevel="10" name="Counter Flip">
+	<skill id="19296" toLevel="12" name="Counter Flip">
 		<!-- Knocks down the attacking opponent for $s1 and teleports you behind their back. After that the Counter Flip effect is cancelled. Requires a dagger or a dual dagger. -->
 		<icon>icon.skill19296</icon>
 		<abnormalLevel>
@@ -2477,6 +2574,8 @@
 			<value level="8">8</value>
 			<value level="9">9</value>
 			<value level="10">10</value>
+			<value level="11">11</value>
+			<value level="12">12</value>
 		</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>COUNTER_FLIP</abnormalType>
@@ -2495,6 +2594,8 @@
 			<value level="8">105</value>
 			<value level="9">107</value>
 			<value level="10">109</value>
+			<value level="11">113</value>
+			<value level="12">118</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">42</value>
@@ -2507,6 +2608,8 @@
 			<value level="8">56</value>
 			<value level="9">58</value>
 			<value level="10">60</value>
+			<value level="11">62</value>
+			<value level="12">64</value>
 		</mpConsume>
 		<hitTime>100</hitTime>
 		<coolTime>100</coolTime>
@@ -2536,6 +2639,8 @@
 					<value level="8">8</value>
 					<value level="9">9</value>
 					<value level="10">10</value>
+					<value level="11">11</value>
+					<value level="12">12</value>
 				</skillLevel>
 			</effect>
 		</effects>
@@ -2554,6 +2659,8 @@
 			<value level="8">8</value>
 			<value level="9">9</value>
 			<value level="10">10</value>
+			<value level="11">11</value>
+			<value level="12">12</value>
 		</abnormalLevel>
 		<abnormalTime>2</abnormalTime>
 		<abnormalType>KNOCKDOWN</abnormalType>
@@ -2572,6 +2679,8 @@
 			<value level="8">105</value>
 			<value level="9">107</value>
 			<value level="10">109</value>
+			<value level="11">113</value>
+			<value level="12">118</value>
 		</magicLevel>
 		<castRange>100</castRange>
 		<hitTime>1500</hitTime>
@@ -2602,7 +2711,7 @@
 			</effect>
 		</selfEffects>
 	</skill>
-	<skill id="19298" toLevel="10" name="Flash Dagger">
+	<skill id="19298" toLevel="12" name="Flash Dagger">
 		<!-- Blinds enemies in front of you making them unable to choose a target for $s1 Requires a dagger or a dual dagger. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill19298</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -2629,6 +2738,8 @@
 			<value level="8">105</value>
 			<value level="9">107</value>
 			<value level="10">109</value>
+			<value level="11">114</value>
+			<value level="12">119</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">74</value>
@@ -2641,6 +2752,8 @@
 			<value level="8">95</value>
 			<value level="9">98</value>
 			<value level="10">101</value>
+			<value level="11">104</value>
+			<value level="12">107</value>
 		</mpConsume>
 		<hitTime>1200</hitTime>
 		<coolTime>300</coolTime>
@@ -2670,7 +2783,7 @@
 			</effect>
 		</selfEffects>
 	</skill>
-	<skill id="19299" toLevel="9" name="Reverse Mana">
+	<skill id="19299" toLevel="11" name="Reverse Mana">
 		<!-- Attempts Deadly Attack with $s1 power added to P. Atk. and recovers your MP by $s2. Half-kill is possible. Requires dagger/ dual daggers. -->
 		<icon>icon.skill19299</icon>
 		<operateType>A1</operateType>
@@ -2687,6 +2800,8 @@
 			<value level="7">105</value>
 			<value level="8">107</value>
 			<value level="9">109</value>
+			<value level="10">112</value>
+			<value level="11">117</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">90</value>
@@ -2698,6 +2813,8 @@
 			<value level="7">130</value>
 			<value level="8">136</value>
 			<value level="9">142</value>
+			<value level="10">148</value>
+			<value level="11">154</value>
 		</mpConsume>
 		<hitTime>2030</hitTime>
 		<coolTime>500</coolTime>
@@ -2713,6 +2830,8 @@
 			<value level="7">-715</value>
 			<value level="8">-715</value>
 			<value level="9">-715</value>
+			<value level="10">-715</value>
+			<value level="11">-715</value>
 		</effectPoint>
 		<conditions>
 			<condition name="EquipWeapon">
@@ -2740,6 +2859,8 @@
 					<value level="7">63290</value>
 					<value level="8">66540</value>
 					<value level="9">69790</value>
+					<value level="10">76769</value>
+					<value level="11">84446</value>
 				</power>
 				<criticalChance>15</criticalChance>
 				<chanceBoost>300</chanceBoost>

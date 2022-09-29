@@ -747,7 +747,7 @@
 		<hitCancelTime>0</hitCancelTime>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
-		<reuseDelay>15000</reuseDelay>
+		<reuseDelay>30000</reuseDelay>
 		<staticReuse>true</staticReuse>
 		<effects>
 			<effect name="TargetCancel" />
@@ -756,8 +756,7 @@
 	<skill id="18721" toLevel="2" name="Greater Garnet - Cancel Stun/ Silence">
 		<!-- Cancels Stun/ Silence. -->
 		<icon>icon.bm_jewel_garnet_high_lv1_lavianrose</icon>
-		<operateType>A2</operateType>
-		<abnormalTime>1</abnormalTime>
+		<operateType>A1</operateType>
 		<chance>100</chance>
 		<reuseDelay>15000</reuseDelay>
 		<staticReuse>true</staticReuse>

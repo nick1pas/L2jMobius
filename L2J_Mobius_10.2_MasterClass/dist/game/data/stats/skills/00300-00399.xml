@@ -899,7 +899,7 @@
 	<skill id="320" toLevel="19" name="Rampage">
 		<!-- Swings a spear to decrease nearby enemies' CP by $s1. Requires a polearm to be equipped. -->
 		<icon>icon.skill0320</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>80</affectRange>
 		<castRange>40</castRange>
 		<coolTime>720</coolTime>
@@ -1664,7 +1664,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>30</amount>
+				<amount>-30</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="Cp">
@@ -2533,7 +2533,7 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>40</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>500</castRange>

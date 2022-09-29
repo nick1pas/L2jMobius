@@ -2694,11 +2694,31 @@
 			<value level="1">icon.etc_bm_jewel_garnet</value>
 			<value level="2">icon.bm_jewel_garnet_high_lv1_lavianrose</value>
 		</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
+		<abnormalType>
+			<value level="1">SKILL_IGNORE</value>
+			<value level="2">ABNORMAL_INVINCIBILITY</value>
+		</abnormalType>
+		<abnormalLevel>
+			<value level="1">2</value>
+			<value level="2">3</value>
+		</abnormalLevel>
+		<abnormalTime>7</abnormalTime>
 		<hitTime>1000</hitTime>
 		<coolTime>500</coolTime>
-		<reuseDelay>180000</reuseDelay>
-	</skill>
+		<reuseDelay>30000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="DispelByCategory" fromLevel="1" toLevel="3">
+				<slot>DEBUFF</slot>
+				<rate>100</rate>
+				<max>10</max>
+			</effect>
+			<effect name="DebuffBlock" fromLevel="2" toLevel="3" />
+		</effects>
+	</skill>	
 	<skill id="27549" toLevel="10" name="Tanzanite - Barrier">
 		<!-- Creates a barrier that absorbs $s2 damage for $s1 -->
 		<icon>

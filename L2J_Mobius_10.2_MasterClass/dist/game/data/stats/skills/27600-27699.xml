@@ -340,7 +340,7 @@
 		<itemConsumeId>27594</itemConsumeId>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
-		<abnormalType>EXP_SPECIAL</abnormalType>
+		<abnormalType>FREYA_SCROLL_VIT</abnormalType>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -504,12 +504,14 @@
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
-		<itemConsumeId>27673</itemConsumeId>
+		<abnormalType>FREYA_SCROLL_VIT</abnormalType>
+		<itemConsumeId>47428</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<reuseDelay>540</reuseDelay>
 		<isMagic>4</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
 			<effect name="VitalityPointsRate">
 				<amount>150</amount>
@@ -520,9 +522,12 @@
 			<effect name="SpModify">
 				<amount>150</amount>
 			</effect>
+			<effect name="DispelBySlot">
+				<dispel>EXP_SPECIAL,-1;DANDY_CHALLENGE,-1;SANTIAGO_SCROLL,-1</dispel>
+			</effect>
 		</effects>
 	</skill>
-	<skill id="27630" toLevel="1" name="Freya's Magic Wand">
+	<skill id="27630" toLevel="1" name="Freya's Wish Stick">
 		<!-- Double-click to get 1 Freya's Frozen Scroll and 1 Freya's Art of Seduction. Has a chance of obtaining one of the following items: Freya's Wish Box, Sirra's Wish Box, or a Snowman's Wish Box. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>

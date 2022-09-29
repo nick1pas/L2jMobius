@@ -92,7 +92,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10904" toLevel="4" name="Superior Skill Mastery">
+	<skill id="10904" toLevel="5" name="Superior Skill Mastery">
 		<!-- P. Skill Power +$s1. -->
 		<icon>icon.skill11874</icon>
 		<magicLevel>
@@ -100,6 +100,7 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 			<value level="4">99</value>
+			<value level="5">115</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<effects>
@@ -109,6 +110,7 @@
 					<value level="2">6</value>
 					<value level="3">7</value>
 					<value level="4">10</value>
+					<value level="5">12</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -270,7 +272,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10951" toLevel="4" name="Superior Instinct Mastery">
+	<skill id="10951" toLevel="5" name="Superior Instinct Mastery">
 		<!-- PvP damage +$s1. P. Atk. +$s2 when using a crossbow. -->
 		<icon>icon.skill10951</icon>
 		<magicLevel>
@@ -278,6 +280,7 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 			<value level="4">99</value>
+			<value level="5">115</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<effects>
@@ -287,6 +290,7 @@
 					<value level="2">7</value>
 					<value level="3">10</value>
 					<value level="4">15</value>
+					<value level="5">16</value>
 				</amount>
 				<mode>PER</mode>
 				<weaponType>
@@ -300,6 +304,7 @@
 					<value level="2">7</value>
 					<value level="3">10</value>
 					<value level="4">15</value>
+					<value level="5">17</value>
 				</amount>
 				<mode>PER</mode>
 				<weaponType>
@@ -313,6 +318,7 @@
 					<value level="2">7</value>
 					<value level="3">10</value>
 					<value level="4">15</value>
+					<value level="5">17</value>
 				</amount>
 				<mode>PER</mode>
 				<weaponType>
@@ -326,6 +332,7 @@
 					<value level="2">7</value>
 					<value level="3">10</value>
 					<value level="4">15</value>
+					<value level="5">17</value>
 				</amount>
 				<mode>PER</mode>
 				<weaponType>
@@ -335,16 +342,17 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10952" toLevel="2" name="Survival Instinct">
+	<skill id="10952" toLevel="3" name="Survival Instinct">
 		<!-- For $s1, P. Atk. +$s2, P. Skill Power +$s3, Atk. Spd. +$s4, P. Def. +$s5, M. Def. +$s6. Consumes $s7 Soulstone(s). -->
 		<icon>icon.skill10952</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="2">60</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+			<value fromLevel="1" toLevel="3">60</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
 		</abnormalTime>
 		<abnormalType>POSSESSION</abnormalType>
+		<abnormalVisualEffect>H_Y_SAGITTARIUSA_AVE</abnormalVisualEffect>
 		<itemConsumeCount>5</itemConsumeCount>
 		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
 		<operateType>A2</operateType>
@@ -360,6 +368,7 @@
 				<amount>
 					<value level="1">20</value>
 					<value level="2">25</value>
+					<value level="3">25</value>
 					</amount>
 				<mode>PER</mode>
 			</effect>
@@ -367,6 +376,7 @@
 				<amount>
 					<value level="1">15</value>
 					<value level="2">20</value>
+					<value level="3">25</value>
 					</amount>
 				<mode>PER</mode>
 			</effect>
@@ -382,24 +392,25 @@
 				<amount>20</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="Speed" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+			<effect name="Speed" fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
-					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10953" toLevel="2" name="Hunting Instinct">
+	<skill id="10953" toLevel="3" name="Hunting Instinct">
 		<!-- For $s1, P. Atk. +$s2, P. Skill Power +$s3, P. Skill Critical Rate +$s4, P. Skill Critical Damage +$s5. Consumes $s6 Soulstones. -->
 		<icon>icon.skill10953</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="2">60</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+			<value fromLevel="1" toLevel="3">60</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
 		</abnormalTime>
 		<abnormalType>POSSESSION</abnormalType>
+		<abnormalVisualEffect>H_B_MOONLIGHTA_AVE</abnormalVisualEffect>
 		<itemConsumeCount>5</itemConsumeCount>
 		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
 		<operateType>A2</operateType>
@@ -415,6 +426,7 @@
 				<amount>
 					<value level="1">10</value>
 					<value level="2">15</value>
+					<value level="3">15</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -422,6 +434,7 @@
 				<amount>
 					<value level="1">15</value>
 					<value level="2">20</value>
+					<value level="3">25</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -433,24 +446,25 @@
 				<amount>15</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="Speed" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+			<effect name="Speed" fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
-					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10954" toLevel="2" name="Counter Instinct">
+	<skill id="10954" toLevel="3" name="Counter Instinct">
 		<!-- For $s1, P. Atk. +$s2, P. Skill Power +$s3, P. Skill Critical Damage +$s4. Consumes $s5 Soulstones. -->
 		<icon>icon.skill10954</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="2">60</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+			<value fromLevel="1" toLevel="3">60</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
 		</abnormalTime>
 		<abnormalType>POSSESSION</abnormalType>
+		<abnormalVisualEffect>H_P_GHOSTA_AVE</abnormalVisualEffect>
 		<itemConsumeCount>5</itemConsumeCount>
 		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
 		<operateType>A2</operateType>
@@ -466,6 +480,7 @@
 				<amount>
 					<value level="1">10</value>
 					<value level="2">15</value>
+					<value level="3">15</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -473,8 +488,8 @@
 				<amount>
 					<value level="1">15</value>
 					<value level="2">20</value>
+					<value level="3">25</value>
 				</amount>
-				<mode>PER</mode>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PhysicalSkillCriticalDamage">
@@ -482,24 +497,25 @@
 				<mode>PER</mode>
 				<magicType>0</magicType>
 			</effect>
-			<effect name="Speed" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+			<effect name="Speed" fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
-					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10955" toLevel="2" name="Bloody Instinct">
+	<skill id="10955" toLevel="3" name="Bloody Instinct">
 		<!-- For $s1, PvP Damage +$s2, P. Atk. +$s3, P. Skill Power +$s4. Consumes $s5 Soulstones. -->
 		<icon>icon.skill10955</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
-			<value fromLevel="1" toLevel="2">60</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
-			<value fromLevel="1" toLevel="2" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
+			<value fromLevel="1" toLevel="3">60</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1001" toSubLevel="1010">{base + subIndex}</value>
+			<value fromLevel="1" toLevel="3" fromSubLevel="1011" toSubLevel="1020">{base + 10 + (subIndex - 10 * 0.5)}</value>
 		</abnormalTime>
 		<abnormalType>POSSESSION</abnormalType>
+		<abnormalVisualEffect>H_R_TRICKSTERA_AVE</abnormalVisualEffect>
 		<itemConsumeCount>5</itemConsumeCount>
 		<itemConsumeId>1785</itemConsumeId> <!-- Soulstones -->
 		<operateType>A2</operateType>
@@ -515,6 +531,7 @@
 				<amount>
 					<value level="1">10</value>
 					<value level="2">15</value>
+					<value level="3">15</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -522,6 +539,7 @@
 				<amount>
 					<value level="1">15</value>
 					<value level="2">20</value>
+					<value level="3">25</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -537,9 +555,9 @@
 				<amount>15</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="Speed" fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">
+			<effect name="Speed" fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
-					<value fromLevel="1" toLevel="2" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
+					<value fromLevel="1" toLevel="3" fromSubLevel="2001" toSubLevel="2020">{2 * subIndex}</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>

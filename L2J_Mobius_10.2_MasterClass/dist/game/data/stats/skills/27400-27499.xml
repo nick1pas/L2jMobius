@@ -634,21 +634,7 @@
 				<rate>100</rate>
 			</effect>
 			<effect name="BlockAbnormalSlot">
-				<slot>INVINCIBILITY_SPECIAL</slot>
-			</effect>
-			<effect name="BlockAbnormalSlot">
-				<slot>INVINCIBILITY</slot>
-			</effect>
-			<effect name="BlockAbnormalSlot">
-				<slot>ABNORMAL_INVINCIBILITY</slot>
-			</effect>
-			<effect name="DispelBySlotProbability">
-				<dispel>INVINCIBILITY_SPECIAL;INVINCIBILITY;ABNORMAL_INVINCIBILITY</dispel>
-				<rate>100</rate>
-			</effect>
-			<effect name="ResistAbnormalByCategory">
-				<amount>0</amount>
-				<slot>DEBUFF</slot>
+				<slot>INVINCIBILITY;ABNORMAL_INVINCIBILITY;INVINCIBILITY_SPECIAL</slot>
 			</effect>
 		</effects>
 	</skill>

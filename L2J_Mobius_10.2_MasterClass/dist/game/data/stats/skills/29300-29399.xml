@@ -159,6 +159,38 @@
 			<effect name="SpModify">
 				<amount>40</amount>
 			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>LUC</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>2</amount>
+				<stat>CHA</stat>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="29375" toLevel="1" name="Glittering Freya's Scroll of Storm">
@@ -348,7 +380,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>1</amount>
+				<amount>-1</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -390,7 +422,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>2</amount>
+				<amount>-2</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -423,6 +455,18 @@
 			<effect name="DefenceAttribute">
 				<amount>15</amount>
 				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>-1</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -464,7 +508,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>3</amount>
+				<amount>-3</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -497,6 +541,18 @@
 			<effect name="DefenceAttribute">
 				<amount>20</amount>
 				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>-3</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="StatUp">
 				<amount>2</amount>
@@ -573,7 +629,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>5</amount>
+				<amount>-5</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -606,6 +662,18 @@
 			<effect name="DefenceAttribute">
 				<amount>30</amount>
 				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="StatUp">
 				<amount>3</amount>
@@ -682,7 +750,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>1</amount>
+				<amount>-1</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -724,7 +792,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>2</amount>
+				<amount>-2</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -757,6 +825,18 @@
 			<effect name="DefenceAttribute">
 				<amount>15</amount>
 				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-1</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>-1</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -798,7 +878,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>3</amount>
+				<amount>-3</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -831,6 +911,18 @@
 			<effect name="DefenceAttribute">
 				<amount>20</amount>
 				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-3</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>-3</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="StatUp">
 				<amount>2</amount>
@@ -907,7 +999,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="ResistAbnormalByCategory">
-				<amount>5</amount>
+				<amount>-5</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 			<effect name="MaxHp">
@@ -940,6 +1032,18 @@
 			<effect name="DefenceAttribute">
 				<amount>30</amount>
 				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>-5</amount>
+				<mode>PER</mode>
 			</effect>
 			<effect name="StatUp">
 				<amount>3</amount>
@@ -1014,7 +1118,7 @@
 		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvE Damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
-		<abnormalType>HEIR_PVE</abnormalType>
+		<abnormalType>HEIR_PVP_PVE</abnormalType>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
 			<value level="1">21600</value>
@@ -1036,7 +1140,13 @@
 		<canBeDispelled>false</canBeDispelled>
 		<itemConsumeCount>1000</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<isMagic>2</isMagic>
 		<effects>
+			<effect name="DisableSkill">
+				<disable>29391;29429;29430;29431;29432;29433;29434;29466;29467;29468</disable>
+			</effect>
 			<effect name="PAtk">
 				<amount>
 					<value level="1">100</value>
@@ -1107,15 +1217,19 @@
 				</amount>
 				<mode>PER</mode>
 			</effect>
+			<effect name="VitalityPointUp">
+				<value>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">35000</value>
+				</value>
+			</effect>
 			<effect name="BlockAbnormalSlot">
-				<slot>HEIR_PVP</slot>
+				<slot>HEIR_PVP_PVE</slot>
 			</effect>
 		</effects>
-		<selfEffects>
-			<effect name="DispelBySlot">
-				<dispel>HEIR_PVE,1</dispel>
-			</effect>
-		</selfEffects>
 		<endEffects>
 			<effect name="CallSkill">
 				<skillId>29390</skillId> <!-- Heir's Radiance - PvE Lv. 1 -->
@@ -1137,7 +1251,7 @@
 		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvP Damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
-		<abnormalType>HEIR_PVP</abnormalType>
+		<abnormalType>HEIR_PVP_PVE</abnormalType>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
 			<value level="1">21600</value>
@@ -1158,7 +1272,13 @@
 		<affectScope>SINGLE</affectScope>
 		<itemConsumeCount>1000</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
+		<isMagic>2</isMagic>
 		<effects>
+			<effect name="DisableSkill">
+				<disable>29390;29429;29430;29431;29432;29433;29434;29466;29467;29468</disable>
+			</effect>
 			<effect name="PAtk">
 				<amount>
 					<value level="1">100</value>
@@ -1260,14 +1380,9 @@
 				<mode>DIFF</mode>
 			</effect>
 			<effect name="BlockAbnormalSlot">
-				<slot>HEIR_PVE</slot>
+				<slot>HEIR_PVP_PVE</slot>
 			</effect>
 		</effects>
-		<selfEffects>
-			<effect name="DispelBySlot">
-				<dispel>HEIR_PVP,1</dispel>
-			</effect>
-		</selfEffects>
 		<endEffects>
 			<effect name="CallSkill">
 				<skillId>29391</skillId> <!-- Heir's Radiance - PvP Lv. 1 -->

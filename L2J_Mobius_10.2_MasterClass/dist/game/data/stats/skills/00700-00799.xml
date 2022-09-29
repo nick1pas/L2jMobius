@@ -1652,7 +1652,7 @@
 	<skill id="743" toLevel="3" name="Veil Master Dark Explosion">
 		<!-- Detonates the soul to attack surrounding enemies. Power $s1 -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>500</castRange>
 		<effectPoint>
@@ -1699,7 +1699,7 @@
 	<skill id="744" toLevel="3" name="Veil Master: Dark Flare">
 		<!-- Attacks a large number of enemies by creating huge explosion. Power $s1 -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange>
 		<effectPoint>-275</effectPoint>
 		<attributeType>DARK</attributeType>
@@ -1973,7 +1973,7 @@
 	<skill id="751" toLevel="3" name="Oel Mahum: Arm Flourish">
 		<!-- Flourishes weapons to attack surrounding enemies. Power $s1 Over-hit. -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>80</affectRange>
 		<castRange>40</castRange>
 		<coolTime>720</coolTime>
@@ -2366,7 +2366,7 @@
 		<abnormalTime>60</abnormalTime>
 		<abnormalType>TOUCH_OF_DEATH</abnormalType>
 		<activateRate>90</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<coolTime>700</coolTime>
@@ -2418,7 +2418,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="ResistAbnormalByCategory">
-				<amount>30</amount>
+				<amount>-30</amount>
 				<slot>DEBUFF</slot>
 			</effect>
 		</effects>
@@ -2686,7 +2686,7 @@
 	<skill id="771" toLevel="1" name="Flame Hawk">
 		<!-- Shoots an arrow filled with the energy of the phoenix to attack the enemies with 8049 power. For 10 sec., makes the target lose 300 HP per sec. Requires a bow. Critical. Over-hit. -->
 		<icon>icon.skill0771</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>900</affectRange>
 		<castRange>900</castRange>
 		<coolTime>1000</coolTime>
@@ -2724,7 +2724,7 @@
 	<skill id="772" toLevel="1" name="Arrow Rain">
 		<!-- Causes arrows to rain down from the sky with 7043 power. For 10 sec., deals Wind damage to the enemies making them lose 300 HP per sec. Requires a bow. Critical. Over-hit. -->
 		<icon>icon.skill0772</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>600</castRange>
 		<coolTime>1000</coolTime>
@@ -2761,7 +2761,7 @@
 	<skill id="773" toLevel="1" name="Ghost Piercing">
 		<!-- Shoots ghost arrows with 8452 power. For 10 sec., deals Dark damage to the enemies making them lose 300 HP per sec. Requires a bow. Critical. Over-hit. -->
 		<icon>icon.skill0773</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>900</affectRange>
 		<castRange>900</castRange>
 		<coolTime>1000</coolTime>
@@ -3412,7 +3412,7 @@
 	<skill id="790" toLevel="1" name="Wild Shot">
 		<!-- Shoots fire bolts with 7475 power. Consumes up to 5 souls to increase power. Requires a crossbow. Critical. Over-hit. -->
 		<icon>icon.skill0790</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>900</affectRange>
 		<castRange>900</castRange>
 		<coolTime>1000</coolTime>
@@ -3593,7 +3593,7 @@
 			<value fromLevel="1" toLevel="10">60</value>
 			<value fromLevel="4" toLevel="10" fromSubLevel="1001" toSubLevel="1020">{base + base / 100 * subIndex}</value>
 		</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>600</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>600</castRange>
@@ -3721,7 +3721,7 @@
 	<skill id="795" toLevel="1" name="Divine Knight: Brandish">
 		<!-- Attacks the enemies in the front with 2322 power. Over-hit. -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>40</castRange>
 		<coolTime>660</coolTime>
@@ -3747,7 +3747,7 @@
 	<skill id="796" toLevel="1" name="Divine Knight: Blow Attack">
 		<!-- Detonates the floor by striking it hard. Power 1900. -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<coolTime>660</coolTime>
 		<effectPoint>-100</effectPoint>
@@ -3769,7 +3769,7 @@
 	<skill id="797" toLevel="1" name="Divine Rogue: Piercing Attack">
 		<!-- Attacks all surrounding enemies with 2111 power. Over-hit. -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>250</affectRange>
 		<castRange>40</castRange>
 		<coolTime>660</coolTime>

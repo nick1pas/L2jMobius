@@ -173,16 +173,36 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32819" toLevel="1" name="Purifying Prayer">
-		<operateType>A1</operateType>
-		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<castRange>1000</castRange>
 		<hitTime>2500</hitTime>
+		<isMagic>1</isMagic>
+		<operateType>A1</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>1000</castRange>
+		<effectRange>1400</effectRange>
+		<effects>
+			<effect name="MagicalAttackRange">
+				<power>
+					<value level="1">100</value>
+				</power>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="32820" toLevel="1" name="Purifying Hand">
-		<operateType>A1</operateType>
-		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<castRange>1000</castRange>
 		<hitTime>2500</hitTime>
+		<isMagic>1</isMagic>
+		<operateType>A1</operateType>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<castRange>1000</castRange>
+		<effectRange>1400</effectRange>
+		<effects>
+			<effect name="MagicalAttackRange">
+				<power>
+					<value level="1">100</value>
+				</power>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="32821" toLevel="1" name="Storm Armor">
 		<!-- Due to Storm Isle, Maximum Damage is $s1. -->
@@ -344,7 +364,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -380,10 +400,30 @@
 	<skill id="32832" toLevel="1" name="Petrified">
 		<!-- The petrification is applied and removed from the Treasure Chest and the Priest of Purification according to the status of the Cursed Weapon's owner. The petrification is removed in the following cases: 1. The Cursed Weapon's owner is in a peaceful zone for more than 10 min. 2. The Cursed Weapon's owner is offline for more than 30 min. 3. Monday-Thursday 11:30-11:59 p.m. -->
 		<icon>icon.skill4111</icon>
-		<operateType>A1</operateType>
-		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<irreplacableBuff>true</irreplacableBuff>
 		<isDebuff>true</isDebuff>
+		<isMagic>1</isMagic>
+		<operateType>A2</operateType>
+		<targetType>SELF</targetType>
+		<abnormalTime>-1</abnormalTime>
+		<abnormalVisualEffect>FLESH_STONE</abnormalVisualEffect>
+		<affectScope>SINGLE</affectScope>
+		<canBeDispelled>false</canBeDispelled>
 		<effectPoint>-100</effectPoint>
+		<effects>
+			<effect name="BlockActions" />
+			<effect name="DamageBlock">
+				<type>BLOCK_HP</type>
+			</effect>
+			<effect name="DamageBlock">
+				<type>BLOCK_MP</type>
+			</effect>
+			<effect name="DebuffBlock" />
+			<effect name="BuffBlock" />
+			<effect name="BlockAbnormalSlot">
+				<slot>INVINCIBILITY_SPECIAL</slot>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="32833" toLevel="1" name="Received Heal Reduction">
 		<!-- HP recovery effect does not apply. -->
@@ -643,7 +683,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -697,7 +737,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -894,7 +934,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -990,7 +1030,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -1042,7 +1082,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -1345,7 +1385,10 @@
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="MaxHp">
+			<effect name="EnchantRate">
+				<amount>1</amount>
+			</effect>
+		 	<effect name="MaxHp">
 				<amount>2</amount>
 				<mode>PER</mode>
 			</effect>
@@ -1377,19 +1420,15 @@
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="PvePhysicalAttackDamageBonus">
-				<amount>2</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvePhysicalSkillDamageBonus">
-				<amount>2</amount>
-				<mode>PER</mode>
-			</effect>
 			<effect name="PvpPhysicalAttackDamageBonus">
 				<amount>2</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>2</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
 				<amount>2</amount>
 				<mode>PER</mode>
 			</effect>

@@ -1575,7 +1575,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="TriggerSkillByAttack">
-				<chance>30</chance>
+				<chance>5</chance>
 				<allowSkillAttack>true</allowSkillAttack>
 				<allowNormalAttack>false</allowNormalAttack>
 				<skillId>27889</skillId> <!-- Wrath of Aden -->
@@ -1601,12 +1601,6 @@
 					<value level="19">13</value>
 					<value level="20">14</value>
 				</skillLevel>
-			</effect>
-			<effect name="TriggerSkillByAttack"> <!-- Guess -->
-				<chance>30</chance> <!-- Guess -->
-				<allowSkillAttack>true</allowSkillAttack>
-				<allowNormalAttack>false</allowNormalAttack>
-				<skillId>27883</skillId> <!-- Spirit of Aden -->
 			</effect>
 		</effects>
 	</skill>
@@ -1708,7 +1702,7 @@
 					<value level="20">20</value>
 				</amount>
 			</effect>
-			<effect name="CriticalDamage">
+			<effect name="PhysicalSkillCriticalDamage">
 				<amount>
 					<value fromLevel="1" toLevel="10">0</value>
 					<value level="11">3</value>
@@ -1751,12 +1745,6 @@
 					<value level="19">13</value>
 					<value level="20">14</value>
 				</skillLevel>
-			</effect>
-			<effect name="TriggerSkillByAttack"> <!-- Guess -->
-				<chance>30</chance> <!-- Guess -->
-				<allowSkillAttack>false</allowSkillAttack>
-				<allowNormalAttack>true</allowNormalAttack>
-				<skillId>27884</skillId> <!-- Spirit of Elmore -->
 			</effect>
 		</effects>
 	</skill>
@@ -2029,10 +2017,17 @@
 	<skill id="27879" toLevel="1" name="Ignore Damage">
 		<!-- Makes you invincible to fixed damage for $s1 -->
 		<icon>BranchIcon.icon.g_bm_elmoreden_cloak_normal</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
 		<hitTime>500</hitTime>
 		<reuseDelay>600000</reuseDelay>
 		<effectPoint>867</effectPoint>
+		<abnormalTime>10</abnormalTime>
+		<effects>
+			<effect name="RealDamageResist">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="27880" toLevel="1" name="Blessing of Elmoreden">
 		<!-- Makes you invincible for $s1 and increases Speed by 100. -->
@@ -2158,7 +2153,7 @@
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<pveEffects>
-			<effect name="PvpMagicalSkillDamageBonus">
+			<effect name="PveMagicalSkillDamageBonus">
 				<amount>100</amount>
 				<mode>PER</mode>
 			</effect>

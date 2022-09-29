@@ -103,15 +103,7 @@
 				<amount>-50</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="DefenceMagicCriticalRate">
-				<amount>-50</amount>
-				<mode>PER</mode>
-			</effect>
 			<effect name="DefenceCriticalDamage">
-				<amount>-50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="DefenceMagicCriticalDamage">
 				<amount>-50</amount>
 				<mode>PER</mode>
 			</effect>
@@ -211,7 +203,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -283,7 +275,7 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<activateRate>80</activateRate>
 		<effectRange>400</effectRange>
@@ -725,7 +717,12 @@
 	<skill id="32968" toLevel="1" name="Shield of Limit">
 		<!-- Decreases received damage. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="GetDamageLimit">
+				<amount>5000000</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="32969" toLevel="1" name="Tune of Aggression">
 		<!-- Body becomes stronger with Requiem of Hatred. Received P. Damage and received P. Critical Damage are decreased. -->

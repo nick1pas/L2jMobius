@@ -47,17 +47,13 @@
 			<value level="8">106</value>
 			<value level="9">108</value>
 			<value level="10">110</value>
+			<value level="11">115</value>
+			<value level="12">120</value>
 		</magicLevel>
 		<effects>
 			<effect name="PvePhysicalAttackDamageBonus">
 				<amount>
-					<value level="1">30</value>
-					<value level="2">30</value>
-					<value level="3">30</value>
-					<value level="4">30</value>
-					<value level="5">30</value>
-					<value level="6">30</value>
-					<value level="7">30</value>
+					<value fromLevel="1" toLevel="7">30</value>
 					<value level="8">32</value>
 					<value level="9">34</value>
 					<value level="10">36</value>
@@ -72,13 +68,7 @@
 			</effect>
 			<effect name="PvePhysicalSkillDamageBonus">
 				<amount>
-					<value level="1">30</value>
-					<value level="2">30</value>
-					<value level="3">30</value>
-					<value level="4">30</value>
-					<value level="5">30</value>
-					<value level="6">30</value>
-					<value level="7">30</value>
+					<value fromLevel="1" toLevel="7">30</value>
 					<value level="8">32</value>
 					<value level="9">34</value>
 					<value level="10">36</value>
@@ -135,18 +125,9 @@
 				<amount>2</amount>
 				<stat>STR</stat>
 			</effect>
-			<effect name="AttackTrait">
-				<DERANGEMENT>75</DERANGEMENT>
-			</effect>
 			<effect name="PhysicalSkillPower">
 				<amount>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">0</value>
-					<value level="4">0</value>
-					<value level="5">0</value>
-					<value level="6">0</value>
-					<value level="7">0</value>
+					<value fromLevel="1" toLevel="7">0</value>
 					<value level="8">2</value>
 					<value level="9">3</value>
 					<value level="10">5</value>
@@ -173,8 +154,8 @@
 			<value level="8">106</value>
 			<value level="9">108</value>
 			<value level="10">110</value>
-			<value level="11">112</value>
-			<value level="12">114</value>
+			<value level="11">115</value>
+			<value level="12">120</value>
 		</magicLevel>
 		<effects>
 			<effect name="CubicMastery">
@@ -242,13 +223,7 @@
 			</effect>
 			<effect name="PhysicalDefence">
 				<amount>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">0</value>
-					<value level="4">0</value>
-					<value level="5">0</value>
-					<value level="6">0</value>
-					<value level="7">0</value>
+					<value fromLevel="1" toLevel="7">0</value>
 					<value level="8">2</value>
 					<value level="9">3</value>
 					<value level="10">5</value>
@@ -277,8 +252,8 @@
 			<value level="8">106</value>
 			<value level="9">108</value>
 			<value level="10">110</value>
-			<value level="11">112</value>
-			<value level="12">114</value>
+			<value level="11">115</value>
+			<value level="12">120</value>
 		</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
 		<passiveConditions>
@@ -316,6 +291,32 @@
 				<amount>2</amount>
 				<stat>STR</stat>
 			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value fromLevel="1" toLevel="4">1</value>
+					<value fromLevel="5" toLevel="9">2</value>
+					<value fromLevel="10" toLevel="12">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="9">0</value>
+					<value level="10">1</value>
+					<value level="11">2</value>
+					<value level="12">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="9">0</value>
+					<value level="10">1</value>
+					<value level="11">2</value>
+					<value level="12">3</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="10004" toLevel="12" name="Superior Magic Resistance">
@@ -333,8 +334,8 @@
 			<value level="8">106</value>
 			<value level="9">108</value>
 			<value level="10">110</value>
-			<value level="11">112</value>
-			<value level="12">114</value>
+			<value level="11">115</value>
+			<value level="12">120</value>
 		</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
@@ -365,13 +366,7 @@
 			</effect>
 			<effect name="MagicalDefence">
 				<amount>
-					<value level="1">0</value>
-					<value level="2">0</value>
-					<value level="3">0</value>
-					<value level="4">0</value>
-					<value level="5">0</value>
-					<value level="6">0</value>
-					<value level="7">0</value>
+					<value fromLevel="1" toLevel="7">0</value>
 					<value level="8">2</value>
 					<value level="9">3</value>
 					<value level="10">5</value>
@@ -398,8 +393,8 @@
 			<value level="8">106</value>
 			<value level="9">108</value>
 			<value level="10">110</value>
-			<value level="11">112</value>
-			<value level="12">114</value>
+			<value level="11">115</value>
+			<value level="12">120</value>
 		</magicLevel>
 		<effects>
 			<effect name="DefenceTrait">
@@ -528,7 +523,7 @@
 			<effect name="TriggerSkillByDamage">
 				<attackerType>Creature</attackerType>
 				<minDamage>1</minDamage>
-				<chance>30</chance>
+				<chance>15</chance>
 				<targetType>SELF</targetType>
 				<affectScope>SINGLE</affectScope>
 				<skillId>10007</skillId> <!-- Grand Fortress -->
@@ -560,7 +555,6 @@
 			<value level="4">95</value> <!-- FIXME: AUTO GENERATED LEVEL -->
 			<value level="5">95</value> <!-- FIXME: AUTO GENERATED LEVEL -->
 		</magicLevel>
-		<isTriggeredSkill>true</isTriggeredSkill>
 		<magicCriticalRate>5</magicCriticalRate>
 		<reuseDelay>3000</reuseDelay>
 		<basicProperty>NONE</basicProperty>
@@ -579,18 +573,19 @@
 				</amount>
 				<mode>PER</mode>
 			</effect>
+			
+			<effect name="ReuseSkillById">
+				<skillId>10020</skillId> <!-- Focus Shield -->
+				<amount>5000</amount>
+			</effect>
+			<effect name="ReuseSkillById">
+				<skillId>10021</skillId> <!-- Raise Shield -->
+				<amount>5000</amount>
+			</effect>
 			<effect name="CallSkill">
 				<skillId>10007</skillId> <!-- Grand Fortress -->
 				<skillLevel>1</skillLevel>
 				<skillLevelScaleTo>5</skillLevelScaleTo>
-			</effect>
-			<effect name="ReuseSkillById">
-				<skillId>10020</skillId> <!-- Focus Shield -->
-				<amount>2500</amount>
-			</effect>
-			<effect name="ReuseSkillById">
-				<skillId>10021</skillId> <!-- Raise Shield -->
-				<amount>2500</amount>
 			</effect>
 		</effects>
 	</skill>
@@ -637,7 +632,7 @@
 			<value level="12">73</value>
 			<value level="13">75</value>
 			<value level="14">77</value>
-			<value level="15">78</value>
+			<value level="15">79</value>
 		</mpConsume>
 		<magicCriticalRate>5</magicCriticalRate>
 		<nextAction>ATTACK</nextAction>
@@ -674,12 +669,8 @@
 				<skillId>10244</skillId> <!-- Two-Hand Stance -->
 			</condition>
 			<condition name="EquipShield" />
-			<condition name="OpCheckCastRange">
-				<distance>300</distance>
-			</condition>
 		</conditions>
 		<effects>
-			<effect name="AirBind" />
 			<effect name="PhysicalAttack">
 				<power>
 					<value level="1">19087</value>
@@ -786,7 +777,7 @@
 			</condition>
 		</conditions>
 		<effects>
-			<effect name="TriggerSkillByAttack" fromLevel="1" toLevel="13">
+			<effect name="TriggerSkillByAttack" fromLevel="1" toLevel="15">
 				<attackerType>Playable</attackerType>
 				<minDamage>1</minDamage>
 				<chance>100</chance>
@@ -964,7 +955,7 @@
 		<!-- Attacks enemies at the front with $s1 power and knocks them down. There is a chance to cancel enemies' targets. Requires a shield. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill10012</icon>
 		<operateType>A1</operateType>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<fanRange>0;0;350;180</fanRange>
 		<activateRate>
 			<value fromLevel="1" toLevel="12">15</value>
@@ -1049,14 +1040,14 @@
 				<knockDown>false</knockDown>
 			</effect>
 			<effect name="TargetCancel">
-				<chance>80</chance>
+				<chance>30</chance>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="10012" toLevel="14" name="Shield Wave">
 		<!-- Attacks nearby enemies with $s1 power and inflicts stun on them for $s2 Activates the Wave Barrier effect for $s3, reflecting some of the received damage back to the enemy. Requires a shield. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill3584</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1098,8 +1089,8 @@
 			<value level="7">71</value>
 			<value level="8">73</value>
 			<value level="9">75</value>
-			<value level="10">77</value>
-			<value level="11">79</value>
+			<value level="10">75</value>
+			<value level="11">77</value>
 			<value level="12">81</value>
 			<value level="13">83</value>
 			<value level="14">85</value>
@@ -1160,7 +1151,7 @@
 	<skill id="10013" toLevel="15" name="Rising Smash">
 		<!-- Attacks nearby targets with $s1 power. Received Healing -$s3 for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. -->
 		<icon>icon.skill10013</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>HEAL_EFFECT_DOWN</abnormalType>
@@ -1245,7 +1236,7 @@
 					<value level="12">29409</value>
 					<value level="13">30846</value>
 					<value level="14">33931</value>
-					<value level="15">37324</value>
+					<value level="15">37324</value>	
 					<value fromLevel="7" toLevel="15" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 				</power>
 				<overHit>true</overHit>
@@ -1271,7 +1262,7 @@
 			<value fromLevel="1" toLevel="15">15</value>
 			<value fromLevel="7" toLevel="15" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1432,13 +1423,10 @@
 			</condition>
 		</conditions>
 		<effects>
-			<effect name="AirBind" />
-			<effect name="Bluff">
-				<chance>100</chance>
-			</effect>
 			<effect name="PullBack">
 				<speed>600</speed>
 				<delay>600</delay>
+				<type>THROW_HORIZONTAL</type>
 			</effect>
 			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>
@@ -1511,9 +1499,6 @@
 		<nextAction>ATTACK</nextAction>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="AirBind" />
@@ -1618,23 +1603,6 @@
 				</amount>
 				<mode>DIFF</mode>
 			</effect>
-			<effect name="DamageShield">
-				<amount>
-					<value level="1">40</value>
-					<value level="2">60</value>
-					<value level="3">80</value>
-					<value level="4">100</value>
-					<value level="5">100</value>
-					<value level="6">100</value>
-					<value level="7">100</value>
-					<value level="8">100</value>
-					<value level="9">100</value>
-				</amount>
-			</effect>
-			<effect name="ResistDispelByCategory">
-				<amount>-80</amount>
-				<slot>BUFF</slot>
-			</effect>
 			<effect name="GetDamageLimit">
 				<amount>
 					<value level="1">1000</value>
@@ -1647,6 +1615,10 @@
 					<value level="8">450</value>
 					<value level="9">400</value>
 				</amount>
+			</effect>
+			<effect name="ResistDispelByCategory">
+				<amount>-80</amount>
+				<slot>BUFF</slot>
 			</effect>
 			<effect name="PAtk" fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">
 				<amount>
@@ -2030,7 +2002,7 @@
 	<skill id="10023" toLevel="5" name="King of Beasts">
 		<!-- Summons the King of Beasts to attack nearby and frontal targets with $s1 Power added to P. Atk. Requires a shield. Over-hit. -->
 		<icon>icon.skill10023</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<nextAction>ATTACK</nextAction>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -2069,9 +2041,6 @@
 		<affectObject>NOT_FRIEND</affectObject>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack">
@@ -2356,7 +2325,7 @@
 					<value level="9">999050</value>
 					<value level="10">1050350</value>
 					<value level="11">1101650</value>
-					<value level="12">1152950</value> <!-- Gussed -->
+					<value level="12">1152950</value>
 					<value level="13">1204250</value>
 				</power>
 			</effect>
@@ -2412,20 +2381,13 @@
 			<value fromLevel="1" toLevel="12">80</value>
 			<value fromLevel="4" toLevel="12" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>10-30</affectLimit>
 		<affectRange>
 			<value level="1">300</value>
 			<value level="2">350</value>
 			<value level="3">400</value>
 			<value level="4">450</value>
-			<value level="5">500</value>
-			<value level="6">500</value>
-			<value level="7">500</value>
-			<value level="8">500</value>
-			<value level="9">500</value>
-			<value level="10">500</value>
-			<value level="11">500</value>
-			<value level="12">500</value>
+			<value fromLevel="5" toLevel="12">500</value>
 		</affectRange>
 		<magicLevel>
 			<value level="1">85</value>
@@ -2471,7 +2433,7 @@
 					<value level="8">950650</value>
 					<value level="9">999050</value>
 					<value level="10">1050350</value>
-					<value level="11">1101650</value> <!-- Gussed -->
+					<value level="11">1101650</value>
 					<value level="12">1152950</value>
 				</power>
 			</effect>
@@ -2545,7 +2507,7 @@
 		<hitTime>500</hitTime>
 		<effectPoint>-20000</effectPoint>
 		<basicProperty>NONE</basicProperty>
-		<reuseDelay>4000</reuseDelay>
+		<reuseDelay>1000</reuseDelay>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
@@ -3147,8 +3109,8 @@
 			<value level="8">106</value>
 			<value level="9">108</value>
 			<value level="10">110</value>
-			<value level="11">112</value>
-			<value level="12">114</value>
+			<value level="11">115</value>
+			<value level="12">120</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<effects>
@@ -3297,9 +3259,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -3373,9 +3332,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -3449,9 +3405,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -3525,9 +3478,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -3601,9 +3551,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -3677,9 +3624,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -3773,7 +3717,7 @@
 	<skill id="10052" toLevel="6" name="Lion Claw">
 		<!-- Flourishes claws to attack enemies at the front. -->
 		<icon>icon.skill0217</icon>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>20-30</affectLimit>
 		<fanRange>0;0;80;150</fanRange>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -4100,9 +4044,6 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack" fromLevel="1" toLevel="1">
@@ -4378,9 +4319,6 @@
 		<reuseDelay>5000</reuseDelay>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="Heal">
@@ -4453,7 +4391,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<chance>100</chance>
 				<targetType>MY_PARTY</targetType>
@@ -4466,7 +4404,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<chance>100</chance>
 				<targetType>MY_PARTY</targetType>
@@ -4479,7 +4417,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<chance>100</chance>
 				<targetType>MY_PARTY</targetType>
@@ -4741,7 +4679,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<allowWeapons>ALL</allowWeapons>
 				<minDamage>1</minDamage>
@@ -4757,7 +4695,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<allowWeapons>ALL</allowWeapons>
 				<minDamage>1</minDamage>
@@ -4767,7 +4705,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="10070" toLevel="5" name="Avenging Will">
+	<skill id="10070" toLevel="4" name="Avenging Will">
 		<!-- For $s2, recovers $s1 HP, Critical Damage for standard attacks +$s3, and makes immune to debuff. -->
 		<icon>icon.skill10069</icon>
 		<operateType>A2</operateType>
@@ -4776,7 +4714,6 @@
 			<value level="2">2</value>
 			<value level="3">3</value>
 			<value level="4">4</value>
-			<value level="5">5</value>
 		</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<targetType>SELF</targetType>
@@ -4787,7 +4724,6 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 			<value level="4">99</value>
-			<value level="5">115</value>
 		</magicLevel>
 		<mpConsume>1</mpConsume>
 		<effectPoint>100</effectPoint>
@@ -4799,7 +4735,6 @@
 					<value level="2">1500</value>
 					<value level="3">2400</value>
 					<value level="4">3000</value>
-					<value level="5">3000</value> <!-- Gussed -->
 				</power>
 			</effect>
 			<effect name="CriticalDamage">
@@ -5233,7 +5168,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<chance>100</chance>
 				<targetType>MY_PARTY</targetType>
@@ -5246,7 +5181,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<chance>100</chance>
 				<targetType>MY_PARTY</targetType>
@@ -5259,7 +5194,7 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
-					<value level="5">5</value>
+					<value level="5">4</value>
 				</skillLevel>
 				<chance>100</chance>
 				<targetType>MY_PARTY</targetType>
@@ -5553,9 +5488,6 @@
 		<trait>PARALYZE</trait>
 		<conditions>
 			<condition name="EquipShield" />
-			<condition name="OpNotAffectedBySkill">
-			<skillId>10244</skillId>
-			</condition>
 		</conditions>
 		<effects>
 			<effect name="PhysicalAttack">
@@ -5798,15 +5730,15 @@
 			</effect>
 			<effect name="ResistAbnormalByCategory">
 				<amount>
-					<value level="1">6</value>
-					<value level="2">16</value>
-					<value level="3">26</value>
-					<value level="4">36</value>
-					<value level="5">46</value>
-					<value level="6">56</value>
-					<value level="7">66</value>
-					<value level="8">68</value>
-					<value level="9">70</value>
+					<value level="1">-6</value>
+					<value level="2">-16</value>
+					<value level="3">-26</value>
+					<value level="4">-36</value>
+					<value level="5">-46</value>
+					<value level="6">-56</value>
+					<value level="7">-66</value>
+					<value level="8">-68</value>
+					<value level="9">-70</value>
 				</amount>
 				<slot>DEBUFF</slot>
 			</effect>
@@ -6311,7 +6243,7 @@
 			<value fromLevel="1" toLevel="11">15</value>
 			<value fromLevel="3" toLevel="11" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>10-20</affectLimit>
 		<affectRange>600</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<itemConsumeId>1785</itemConsumeId>
@@ -6559,7 +6491,7 @@
 					<value level="6">1089950</value>
 					<value level="7">1141250</value>
 					<value level="8">1192550</value>
-					<value level="9">1243850</value> <!-- gussed -->
+					<value level="9">1243850</value>
 					<value level="10">1295150</value>
 				</power>
 			</effect>
@@ -6624,7 +6556,10 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="MagicalDefence">
-				<amount>100</amount>
+				<amount>
+					<value fromLevel="1" toLevel="5">100</value>
+					<value level="6">110</value>
+				</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="CriticalRate">

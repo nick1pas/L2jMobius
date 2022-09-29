@@ -808,6 +808,12 @@
 		<reuseDelay>2000</reuseDelay>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="9541" toLevel="1" name="Mysterious Herb of Magic">
 		<!-- For Ceremony of Chaos participants. For 5 min., M. Atk. toward monsters +400%. Doesn't apply to boss monsters. -->
@@ -826,6 +832,12 @@
 		<reuseDelay>2000</reuseDelay>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="MAtk">
+				<amount>400</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="9542" toLevel="1" name="Mysterious Vitality Recovery">
 		<!-- For Ceremony of Chaos participants. For 5 min., Vitality is replenished when XP is gained through hunting. -->

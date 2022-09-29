@@ -517,9 +517,64 @@
 			<value level="1">BranchIcon.etc_sign_agathion_feed_red_i00</value>
 			<value level="2">BranchIcon.etc_sign_agathion_feed_purple_i00</value>
 		</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
-		<reuseDelay>5000</reuseDelay>
+		<reuseDelay>300000</reuseDelay>
+		<coolTime>500</coolTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>1800</abnormalTime>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconf irmed -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">50</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">50</value>
+				</amount>
+			</effect>
+			<effect name="VitalityExpRate">
+				<amount>
+					<value level="1">30</value>
+					<value level="2">50</value>
+				</amount>
+			</effect>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28283" toLevel="1" name="Peeves' Yellow Potion">
 		<icon>BranchIcon.etc_sign_agathion_feed_yellow_i00</icon>
@@ -732,53 +787,53 @@
 		<effects>
 			<effect name="RestorationRandom">
 				<items>
-					<item chance="7.75">
+					<item chance="6.25">
 						<item id="26506" count="1" /> <!-- Amethyst Lv. 5 -->
 					</item>
-					<item chance="4.99">
+					<item chance="6.25">
 						<item id="38889" count="1" /> <!-- Aquamarine Lv. 5 -->
 					</item>
-					<item chance="7.5">
+					<item chance="6.25">
 						<item id="47686" count="1" /> <!-- Blue Cat's Eye Lv. 5 -->
 					</item>
-					<item chance="7.72">
+					<item chance="6.25">
 						<item id="26501" count="1" /> <!-- Cat's Eye Lv. 5 -->
 					</item>
-					<item chance="8.02">
+					<item chance="6.25">
 						<item id="38894" count="1" /> <!-- Diamond Lv. 5 -->
 					</item>
-					<item chance="7.39">
+					<item chance="6.25">
 						<item id="38884" count="1" /> <!-- Emerald Lv. 5 -->
 					</item>
-					<item chance="6.64">
-						<item id="27473" count="1" /> <!-- Garnet Lv. 5 - Not available -->
+					<item chance="6.25">
+						<item id="46679" count="1" /> <!-- Garnet Lv. 5 -->
 					</item>
-					<item chance="5.64">
+					<item chance="6.25">
 						<item id="38874" count="1" /> <!-- Obsidian Lv. 5 -->
 					</item>
-					<item chance="6.66">
+					<item chance="6.25">
 						<item id="38879" count="1" /> <!-- Opal Lv. 5 -->
 					</item>
-					<item chance="5.78">
+					<item chance="6.25">
 						<item id="38899" count="1" /> <!-- Pearl Lv. 5 -->
 					</item>
-					<item chance="5.44">
+					<item chance="6.25">
 						<item id="47681" count="1" /> <!-- Red Cat's Eye Lv. 5 -->
 					</item>
-					<item chance="5.50">
+					<item chance="6.25">
 						<item id="38859" count="1" /> <!-- Ruby Lv. 5 -->
 					</item>
-					<item chance="5.14">
+					<item chance="6.25">
 						<item id="38931" count="1" /> <!-- Sapphire Lv. 5 -->
 					</item>
-					<item chance="5.16">
-						<item id="27478" count="1" /> <!-- Tanzanite Lv. 5 - Not available -->
+					<item chance="6.25">
+						<item id="46684" count="1" /> <!-- Tanzanite Lv. 5 -->
 					</item>
-					<item chance="5.44">
+					<item chance="6.25">
 						<item id="38854" count="1" /> <!-- Topaz Lv. 5 -->
 					</item>
-					<item chance="5.23">
-						<item id="27472" count="1" /> <!-- Vital Stone Lv. 5 - Not available -->
+					<item chance="6.25">
+						<item id="46674" count="1" /> <!-- Vital Stone Lv. 5 -->
 					</item>
 				</items>
 			</effect>

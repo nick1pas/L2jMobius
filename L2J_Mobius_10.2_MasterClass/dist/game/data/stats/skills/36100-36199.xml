@@ -352,7 +352,6 @@
 		<!-- Attribute Resistance +10 -> +50 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>
@@ -436,49 +435,53 @@
 		<!-- When using Talisman of Longing / Talisman of Insanity / Heavenly Talisman, P./ M. Atk. +1% -> +10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
+		<passiveConditions>
+			<condition name="OpEquipItem">
+				<itemId>80957</itemId> <!-- Heavenly talisman -->
+				<affectType>CASTER</affectType>
+			</condition>
+		</passiveConditions>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36163" toLevel="1" name="Kaliel's Bracelet Augmentation: Talisman of Longing/ Talisman of Insanity/ Heavenly Talisman">
 		<!-- When using Talisman of Longing/ Talisman of Insanity/ Heavenly Talisman, P./M. Atk. +10%; when using a Heavenly Talisman, additionally damage +3% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36164" toLevel="10" name="Kaliel's Bracelet Augmentation: Sayha's Talisman/ Enhanced Sayha's Talisman">
 		<!-- When using Sayha's Talisman Lv. 4+/ Enhanced Sayha's Talisman, P./ M. Skill Power +1% -> +10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36165" toLevel="1" name="Kaliel's Bracelet Augmentation: Sayha's Talisman/ Enhanced Sayha's Talisman">
 		<!-- When using Sayha's Talisman Lv. 4+/ Enhanced Sayha's Talisman, P./ M. Skill Power +10%, When using Enhanced Sayha's Talisman, additionally damage +3% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36166" toLevel="10" name="Kaliel's Bracelet Augmentation: Talisman of Protection/ Enhanced Talisman of Protection">
 		<!-- When using Talisman of Protection Lv. 5+/ Enhanced Talisman of Protection, Resistance to All Weapons +1% -> +10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36167" toLevel="1" name="Kaliel's Bracelet Augmentation: Talisman of Protection/ Enhanced Talisman of Protection">
 		<!-- When using Talisman of Protection Lv. 5+/ Enhanced Talisman of Protection, Resistance to All Weapons +10%; when using Enhanced Talisman of Protection, received damage -3% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36168" toLevel="10" name="Kaliel's Bracelet Augmentation: Venir's Talisman/ Soul Talisman">
 		<!-- When using Venir's Talisman Lv. 10+/ Soul Talisman, Attribute Attack/ Resistance +10 -> +100 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36169" toLevel="1" name="Kaliel's Bracelet Augmentation: Venir's Talisman/ Soul Talisman">
 		<!-- When using Venir's Talisman Lv. 10+/ Soul Talisman, Attribute Attack/ Resistance +100; when using Soul Talisman, additionally Skill Cooldown -3% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="36170" toLevel="10" name="Kaliel's Bracelet Augmentation: P./ M. Atk.">
 		<!-- When using Talisman of Longing / Talisman of Insanity / Heavenly Talisman, P./ M. Atk. +1% -> +10% -->

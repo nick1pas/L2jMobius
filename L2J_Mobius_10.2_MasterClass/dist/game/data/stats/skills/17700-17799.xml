@@ -139,22 +139,13 @@
 				<attackerType>Playable</attackerType>
 				<targetType>ENEMY</targetType>
 				<skillId>18720</skillId> <!-- Greater Obsidian - Cancel Target -->
-			</effect>
-			<effect name="TriggerSkillByAttack" fromLevel="6" toLevel="10">
-				<attackerType>Playable</attackerType>
-				<targetType>ENEMY</targetType>
-				<skillId>18720</skillId> <!-- Greater Obsidian - Cancel Target -->
+				<chance>10</chance>
 			</effect>
 			<effect name="TriggerSkillByDamage" fromLevel="11" toLevel="20">
 				<attackerType>Playable</attackerType>
 				<targetType>ENEMY</targetType>
 				<skillId>18720</skillId> <!-- Greater Obsidian - Cancel Target -->
-				<skillLevel>2</skillLevel>
-			</effect>
-			<effect name="TriggerSkillByAttack" fromLevel="11" toLevel="20">
-				<attackerType>Playable</attackerType>
-				<targetType>ENEMY</targetType>
-				<skillId>18720</skillId> <!-- Greater Obsidian - Cancel Target -->
+				<chance>10</chance>
 				<skillLevel>2</skillLevel>
 			</effect>
 			<effect name="DamageByAttack">
