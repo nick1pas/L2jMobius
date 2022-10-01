@@ -207,9 +207,12 @@ public class CharSummonTable
 					if (player.hasServitors())
 					{
 						final Servitor summon = player.getServitors().values().stream().map(s -> ((Servitor) s)).filter(s -> s.getReferenceSkill() == skillId).findAny().orElse(null);
-						summon.setCurrentHp(curHp);
-						summon.setCurrentMp(curMp);
-						summon.setLifeTimeRemaining(time);
+						if (summon != null)
+						{
+							summon.setCurrentHp(curHp);
+							summon.setCurrentMp(curMp);
+							summon.setLifeTimeRemaining(time);
+						}
 					}
 				}
 			}
