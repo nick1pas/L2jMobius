@@ -115,7 +115,7 @@ public class ChatWorld implements IChatHandler
 				{
 					for (Player player : World.getInstance().getAllGoodPlayers())
 					{
-						if (player.isNotBlocked(activeChar))
+						if (activeChar.isNotBlocked(player))
 						{
 							player.sendPacket(cs);
 						}
@@ -125,7 +125,7 @@ public class ChatWorld implements IChatHandler
 				{
 					for (Player player : World.getInstance().getAllEvilPlayers())
 					{
-						if (player.isNotBlocked(activeChar))
+						if (activeChar.isNotBlocked(player))
 						{
 							player.sendPacket(cs);
 						}
@@ -136,7 +136,7 @@ public class ChatWorld implements IChatHandler
 			{
 				for (Player player : World.getInstance().getPlayers())
 				{
-					if (player.isNotBlocked(activeChar))
+					if (activeChar.isNotBlocked(player))
 					{
 						player.sendPacket(cs);
 					}
