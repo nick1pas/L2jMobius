@@ -134,27 +134,28 @@ public class Attackable extends Npc
 		}
 		else if (isDead())
 		{
-			final Attackable attackable = this;
-			synchronized (attackable)
+			synchronized (this)
 			{
 				if (!_killedAlready)
 				{
 					_killedAlready = true;
 					stopRandomWalking();
 					stopTargetScan();
-					calculateRewards(attacker);
-					
-					final Player killer = attacker.getActingPlayer();
-					if ((killer != null) && (killer.getKarma() > 0))
+					calculateRewards();
+					if (attacker != null)
 					{
-						killer.decreaseKarma();
+						final Player killer = attacker.getActingPlayer();
+						if ((killer != null) && (killer.getKarma() > 0))
+						{
+							killer.decreaseKarma();
+						}
 					}
 				}
 			}
 		}
 	}
 	
-	private void calculateRewards(Creature lastAttacker)
+	private void calculateRewards()
 	{
 		// TODO: Figure iterator logic and replace with for, if possible.
 		Iterator<WorldObject> it = _aggroList.keySet().iterator();
