@@ -84,6 +84,11 @@ public class ResurrectionSpecial extends AbstractEffect
 			return;
 		}
 		
+		if (effected.getActingPlayer().isInOlympiadMode())
+		{
+			return;
+		}
+		
 		final Player caster = effector.getActingPlayer();
 		final Instance instance = caster.getInstanceWorld();
 		if (!_instanceId.isEmpty() && ((instance == null) || !_instanceId.contains(instance.getTemplateId())))
