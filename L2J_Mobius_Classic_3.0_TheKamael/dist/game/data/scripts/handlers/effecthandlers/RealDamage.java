@@ -92,7 +92,7 @@ public class RealDamage extends AbstractEffect
 			effected.setCurrentHp(Math.max(effected.getCurrentHp() - damage, effected.isUndying() ? 1 : 0));
 			
 			// Die.
-			if (effected.getCurrentHp() < 0.5)
+			if ((effected.getCurrentHp() < 0.5) && (!effected.isPlayer() || !effected.getActingPlayer().isInOlympiadMode()))
 			{
 				effected.doDie(effector);
 			}
