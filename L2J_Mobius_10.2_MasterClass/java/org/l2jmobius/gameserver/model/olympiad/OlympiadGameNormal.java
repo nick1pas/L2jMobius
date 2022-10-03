@@ -84,6 +84,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 		{
 			return null;
 		}
+		
 		int playerOneObjectId = 0;
 		int playerTwoObjectId = 0;
 		Player playerOne = null;
@@ -134,6 +135,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 			
 			return result;
 		}
+		
 		return null;
 	}
 	
@@ -796,8 +798,8 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 		final List<OlympiadInfo> list1 = new ArrayList<>(1);
 		final List<OlympiadInfo> list2 = new ArrayList<>(1);
 		
-		final boolean _pOneCrash = ((_playerOne.getPlayer() == null) || _playerOne.isDisconnected());
-		final boolean _pTwoCrash = ((_playerTwo.getPlayer() == null) || _playerTwo.isDisconnected());
+		final boolean pOneCrash = ((_playerOne.getPlayer() == null) || _playerOne.isDisconnected());
+		final boolean pTwoCrash = ((_playerTwo.getPlayer() == null) || _playerTwo.isDisconnected());
 		
 		final int playerOnePoints = _playerOne.getStats().getInt(POINTS);
 		final int playerTwoPoints = _playerTwo.getStats().getInt(POINTS);
@@ -885,11 +887,11 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 		}
 		
 		// Create results for players if a player crashed
-		if (_pOneCrash || _pTwoCrash)
+		if (pOneCrash || pTwoCrash)
 		{
 			try
 			{
-				if (_pTwoCrash && !_pOneCrash)
+				if (pTwoCrash && !pOneCrash)
 				{
 					sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_YOU_WIN_THE_MATCH);
 					sm.addString(_playerOne.getName());
@@ -918,7 +920,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 						EventDispatcher.getInstance().notifyEventAsync(new OnOlympiadMatchResult(_playerOne, _playerTwo, getType()), Olympiad.getInstance());
 					}
 				}
-				else if (_pOneCrash && !_pTwoCrash)
+				else if (pOneCrash && !pTwoCrash)
 				{
 					sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_YOU_WIN_THE_MATCH);
 					sm.addString(_playerTwo.getName());
@@ -947,7 +949,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 						EventDispatcher.getInstance().notifyEventAsync(new OnOlympiadMatchResult(_playerTwo, _playerOne, getType()), Olympiad.getInstance());
 					}
 				}
-				else if (_pOneCrash && _pTwoCrash)
+				else if (pOneCrash && pTwoCrash)
 				{
 					stadium.broadcastPacket(new SystemMessage(SystemMessageId.THE_DUEL_HAS_ENDED_IN_A_TIE));
 					
@@ -1002,7 +1004,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 			String winner = "draw";
 			
 			// Calculate Fight time
-			final long _fightTime = (System.currentTimeMillis() - _startTime);
+			final long fightTime = (System.currentTimeMillis() - _startTime);
 			
 			double playerOneHp = 0;
 			if ((_playerOne.getPlayer() != null) && !_playerOne.getPlayer().isDead())
@@ -1054,7 +1056,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 				winside = 1;
 				
 				// Save Fight Result
-				saveResults(_playerOne, _playerTwo, 1, _startTime, _fightTime, getType());
+				saveResults(_playerOne, _playerTwo, 1, _startTime, fightTime, getType());
 				
 				rewardParticipant(_playerOne.getPlayer(), Config.OLYMPIAD_WINNER_REWARD); // Winner
 				rewardParticipant(_playerTwo.getPlayer(), Config.OLYMPIAD_LOSER_REWARD); // Loser
@@ -1084,7 +1086,67 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 				winside = 2;
 				
 				// Save Fight Result
-				saveResults(_playerOne, _playerTwo, 2, _startTime, _fightTime, getType());
+				saveResults(_playerOne, _playerTwo, 2, _startTime, fightTime, getType());
+				
+				rewardParticipant(_playerTwo.getPlayer(), Config.OLYMPIAD_WINNER_REWARD); // Winner
+				rewardParticipant(_playerOne.getPlayer(), Config.OLYMPIAD_LOSER_REWARD); // Loser
+				
+				// Notify to scripts
+				if (EventDispatcher.getInstance().hasListener(EventType.ON_OLYMPIAD_MATCH_RESULT, Olympiad.getInstance()))
+				{
+					EventDispatcher.getInstance().notifyEventAsync(new OnOlympiadMatchResult(_playerTwo, _playerOne, getType()), Olympiad.getInstance());
+				}
+			}
+			else if ((_player1Wins == 1) && (_player2Wins == 0)) // One player 1 win, two draws.
+			{
+				sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_YOU_WIN_THE_MATCH);
+				sm.addString(_playerOne.getName());
+				stadium.broadcastPacket(sm);
+				
+				_playerOne.updateStat(COMP_WON, 1);
+				_playerTwo.updateStat(COMP_LOST, 1);
+				
+				addPointsToParticipant(_playerOne, pointDiff);
+				list1.add(new OlympiadInfo(_playerOne.getName(), _playerOne.getClanName(), _playerOne.getClanId(), _playerOne.getBaseClass(), _damageP1Final, playerOnePoints + pointDiff, pointDiff));
+				
+				removePointsFromParticipant(_playerTwo, pointDiff);
+				list2.add(new OlympiadInfo(_playerTwo.getName(), _playerTwo.getClanName(), _playerTwo.getClanId(), _playerTwo.getBaseClass(), _damageP2Final, playerTwoPoints - pointDiff, -pointDiff));
+				winner = _playerOne.getName() + " won";
+				
+				winside = 1;
+				
+				// Save Fight Result
+				saveResults(_playerOne, _playerTwo, 1, _startTime, fightTime, getType());
+				
+				rewardParticipant(_playerOne.getPlayer(), Config.OLYMPIAD_WINNER_REWARD); // Winner
+				rewardParticipant(_playerTwo.getPlayer(), Config.OLYMPIAD_LOSER_REWARD); // Loser
+				
+				// Notify to scripts
+				if (EventDispatcher.getInstance().hasListener(EventType.ON_OLYMPIAD_MATCH_RESULT, Olympiad.getInstance()))
+				{
+					EventDispatcher.getInstance().notifyEventAsync(new OnOlympiadMatchResult(_playerOne, _playerTwo, getType()), Olympiad.getInstance());
+				}
+			}
+			else if ((_player2Wins == 1) && (_player1Wins == 0)) // One player 2 win, two draws.
+			{
+				sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_YOU_WIN_THE_MATCH);
+				sm.addString(_playerTwo.getName());
+				stadium.broadcastPacket(sm);
+				
+				_playerTwo.updateStat(COMP_WON, 1);
+				_playerOne.updateStat(COMP_LOST, 1);
+				
+				addPointsToParticipant(_playerTwo, pointDiff);
+				list2.add(new OlympiadInfo(_playerTwo.getName(), _playerTwo.getClanName(), _playerTwo.getClanId(), _playerTwo.getBaseClass(), _damageP2Final, playerTwoPoints + pointDiff, pointDiff));
+				
+				removePointsFromParticipant(_playerOne, pointDiff);
+				list1.add(new OlympiadInfo(_playerOne.getName(), _playerOne.getClanName(), _playerOne.getClanId(), _playerOne.getBaseClass(), _damageP1Final, playerOnePoints - pointDiff, -pointDiff));
+				
+				winner = _playerTwo.getName() + " won";
+				winside = 2;
+				
+				// Save Fight Result
+				saveResults(_playerOne, _playerTwo, 2, _startTime, fightTime, getType());
 				
 				rewardParticipant(_playerTwo.getPlayer(), Config.OLYMPIAD_WINNER_REWARD); // Winner
 				rewardParticipant(_playerOne.getPlayer(), Config.OLYMPIAD_LOSER_REWARD); // Loser
@@ -1098,7 +1160,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 			else
 			{
 				// Save Fight Result
-				saveResults(_playerOne, _playerTwo, 0, _startTime, _fightTime, getType());
+				saveResults(_playerOne, _playerTwo, 0, _startTime, fightTime, getType());
 				
 				sm = new SystemMessage(SystemMessageId.THE_DUEL_HAS_ENDED_IN_A_TIE);
 				stadium.broadcastPacket(sm);
