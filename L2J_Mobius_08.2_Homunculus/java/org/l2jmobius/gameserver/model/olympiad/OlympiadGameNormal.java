@@ -1051,8 +1051,8 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 				
 				removePointsFromParticipant(_playerTwo, pointDiff);
 				list2.add(new OlympiadInfo(_playerTwo.getName(), _playerTwo.getClanName(), _playerTwo.getClanId(), _playerTwo.getBaseClass(), _damageP2Final, playerTwoPoints - pointDiff, -pointDiff));
-				winner = _playerOne.getName() + " won";
 				
+				winner = _playerOne.getName() + " won";
 				winside = 1;
 				
 				// Save Fight Result
@@ -1111,8 +1111,8 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 				
 				removePointsFromParticipant(_playerTwo, pointDiff);
 				list2.add(new OlympiadInfo(_playerTwo.getName(), _playerTwo.getClanName(), _playerTwo.getClanId(), _playerTwo.getBaseClass(), _damageP2Final, playerTwoPoints - pointDiff, -pointDiff));
-				winner = _playerOne.getName() + " won";
 				
+				winner = _playerOne.getName() + " won";
 				winside = 1;
 				
 				// Save Fight Result
