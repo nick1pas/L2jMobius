@@ -11388,6 +11388,11 @@ public class Player extends Playable
 	 */
 	public void increaseSouls(int count, SoulType type)
 	{
+		if (isTransformed() || hasAbnormalType(AbnormalType.KAMAEL_TRANSFORM))
+		{
+			return;
+		}
+		
 		final int newCount = getChargedSouls(type) + count;
 		_souls.put(type, newCount);
 		final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_SOUL_COUNT_HAS_INCREASED_BY_S1_IT_IS_NOW_AT_S2);
@@ -11397,7 +11402,7 @@ public class Player extends Playable
 		restartSoulTask();
 		sendPacket(new EtcStatusUpdate(this));
 		
-		if ((getRace() == Race.KAMAEL) && (newCount >= 100) && !isTransformed())
+		if ((getRace() == Race.KAMAEL) && (newCount >= 100))
 		{
 			if (type == SoulType.LIGHT)
 			{
