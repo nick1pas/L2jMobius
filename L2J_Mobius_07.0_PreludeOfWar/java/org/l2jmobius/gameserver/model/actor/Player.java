@@ -824,7 +824,7 @@ public class Player extends Playable
 	
 	/** Map containing all custom skills of this player. */
 	private Map<Integer, Skill> _customSkills = null;
-	public final Set<Integer> _replacedSkills = ConcurrentHashMap.newKeySet(1);
+	private final Set<Integer> _replacedSkills = ConcurrentHashMap.newKeySet(1);
 	
 	private volatile int _actionMask;
 	
