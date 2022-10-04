@@ -1141,7 +1141,7 @@
 			<param name="LongRangeGuardRate" value="10" />
 			<skill name="DDMagic" id="4039" level="3" />
 			<minions name="Privates">
-				<npc id="20934" count="3" respawnTime="0" weightPoint="1"/>
+				<npc id="20934" count="3" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>BUG</race>
@@ -1215,9 +1215,9 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="Buff" id="4103" level="2" />
 			<minions name="Privates">
-				<npc id="20937" count="1" respawnTime="0" weightPoint="1"/>
-				<npc id="20938" count="1" respawnTime="0" weightPoint="1"/>
-				<npc id="20939" count="1" respawnTime="0" weightPoint="1"/>
+				<npc id="20937" count="1" respawnTime="0" weightPoint="1" />
+				<npc id="20938" count="1" respawnTime="0" weightPoint="1" />
+				<npc id="20939" count="1" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>HUMANOID</race>
@@ -4223,8 +4223,8 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="PhysicalSpecial" id="4073" level="6" /> <!-- Stun -->
 			<minions name="Privates">
-				<npc id="20981" count="2" respawnTime="0" weightPoint="1"/>
-				<npc id="20982" count="2" respawnTime="0" weightPoint="1"/>
+				<npc id="20981" count="2" respawnTime="0" weightPoint="1" />
+				<npc id="20982" count="2" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>DEMONIC</race>
@@ -4505,8 +4505,8 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="PhysicalSpecial" id="4073" level="7" /> <!-- Stun -->
 			<minions name="Privates">
-				<npc id="20985" count="2" respawnTime="0" weightPoint="1"/>
-				<npc id="21074" count="1" respawnTime="0" weightPoint="1"/>
+				<npc id="20985" count="2" respawnTime="0" weightPoint="1" />
+				<npc id="21074" count="1" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>DIVINE</race>
@@ -5140,7 +5140,7 @@
 		<equipment rhand="5127" /> <!-- Dailaon Knife -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
 			<attack physical="493.7975486" magical="151.75505" random="10" critical="8" accuracy="0" attackSpeed="227" reuseDelay="1500" type="BOW" range="500" distance="10" width="0" />
-			<vitals hp="1201.9668" mp="584" hpRegen="5.5" mpRegen="2.1"/>
+			<vitals hp="1201.9668" mp="584" hpRegen="5.5" mpRegen="2.1" />
 			<defence physical="173.43552" magical="126.91259" />
 			<speed>
 				<walk ground="18" />

@@ -1104,14 +1104,14 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-        <conditions>
-            <condition name="OpNotAffectedBySkill">
-                <skillId>105</skillId> <!-- Freezing Weapon -->
-            </condition>
-            <condition name="OpNotAffectedBySkill">
-                <skillId>47288</skillId> <!-- Freezing Weapon -->
-            </condition>
-        </conditions>
+		<conditions>
+			<condition name="OpNotAffectedBySkill">
+				<skillId>105</skillId> <!-- Freezing Weapon -->
+			</condition>
+			<condition name="OpNotAffectedBySkill">
+				<skillId>47288</skillId> <!-- Freezing Weapon -->
+			</condition>
+		</conditions>
 		<effects>
 			<effect name="TriggerSkillByAttack">
 				<attackerType>Creature</attackerType>
@@ -5092,7 +5092,7 @@
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>45405</skillId> 
+				<skillId>45405</skillId>
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -5212,7 +5212,7 @@
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>45407</skillId> 
+				<skillId>45407</skillId>
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -5303,7 +5303,7 @@
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>45406</skillId> 
+				<skillId>45406</skillId>
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -6112,14 +6112,14 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-        <conditions>
-            <condition name="OpNotAffectedBySkill">
-                <skillId>109</skillId> <!-- Ogre Spirit Totem -->
-            </condition>
-            <condition name="OpNotAffectedBySkill">
-                <skillId>298</skillId> <!-- Rabbit Spirit Totem -->
-            </condition>
-        </conditions>
+		<conditions>
+			<condition name="OpNotAffectedBySkill">
+				<skillId>109</skillId> <!-- Ogre Spirit Totem -->
+			</condition>
+			<condition name="OpNotAffectedBySkill">
+				<skillId>298</skillId> <!-- Rabbit Spirit Totem -->
+			</condition>
+		</conditions>
 		<effects>
 			<effect name="PhysicalSkillPower">
 				<amount>
@@ -7692,14 +7692,14 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-        <conditions>
-            <condition name="OpNotAffectedBySkill">
-                <skillId>109</skillId> <!-- Ogre Spirit Totem -->
-            </condition>
-            <condition name="OpNotAffectedBySkill">
-                <skillId>282</skillId> <!-- Puma Spirit Totem -->
-            </condition>
-        </conditions>
+		<conditions>
+			<condition name="OpNotAffectedBySkill">
+				<skillId>109</skillId> <!-- Ogre Spirit Totem -->
+			</condition>
+			<condition name="OpNotAffectedBySkill">
+				<skillId>282</skillId> <!-- Puma Spirit Totem -->
+			</condition>
+		</conditions>
 		<effects>
 			<effect name="PhysicalAttackSpeed">
 				<amount>

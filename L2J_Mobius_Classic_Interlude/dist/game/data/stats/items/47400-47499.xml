@@ -282,7 +282,7 @@
 			<item id="47385" min="1" max="1" chance="5" /> <!-- Balthus Knight Mark -->
 			<item id="19440" min="1" max="1" chance="5" /> <!-- Gemstone (R-grade) -->
 			<item id="23762" min="1" max="1" chance="4" /> <!-- High-grade Elixir Pack - Event -->
-	</capsuled_items>
+		</capsuled_items>
 	</item>
 	<item id="47417" name="Dandy's Elemental Shirt" additionalName="2-hour" type="Armor">
 		<!-- A shiny magic shirt laden with Einhasad's Energy. <Item Skill>. M. Def. +17. Speed +7. Max HP +547. Max MP +547. Skill MP Consumption -3%. Damage Reflection Resistance +5. Vampiric Rage +5%. Skill Cooldown -3%. Damage Received -3%. Water/Fire/Wind/Earth/Divine/Dark Attribute Resistance +36. STR +4, DEX +4, CON +4, INT +4, WIT +4, MEN +4.. <Active Skill>. Einhasad's Wrath/Einhasad's Protection/Einhasad's Silence/Einhasad's Salvation. Will be deleted when the event ends. Enchantment not possible. -->
@@ -887,7 +887,7 @@
 		<set name="time" val="43200" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
-			<capsuled_items>
+		<capsuled_items>
 			<item id="37494" min="1" max="1" chance="100" /> <!-- Chaos Essence (Dual Class) -->
 		</capsuled_items>
 	</item>
@@ -1284,7 +1284,7 @@
 		<set name="weight" val="150" />
 		<set name="price" val="3700000" />
 		<set name="enchant_enabled" val="true" />
-			<skills>
+		<skills>
 			<skill id="13313" level="1" /> <!-- Blessed Antharas' Earring -->
 			<skill id="13314" level="1" /> <!-- Blessed Antharas' Earring -->
 		</skills>

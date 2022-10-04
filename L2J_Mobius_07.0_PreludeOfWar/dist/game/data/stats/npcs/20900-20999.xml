@@ -1124,7 +1124,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="88" /> 
+		<equipment rhand="88" />
 		<acquire exp="1161546846" sp="1045294" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="419688" hpRegen="9.5" mp="32077.0478507705" mpRegen="3.3" />
@@ -1212,7 +1212,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="5" /> 
+		<equipment rhand="5" />
 		<acquire exp="1161546846" sp="1045294" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="419688" hpRegen="9.5" mp="32077.0478507705" mpRegen="3.3" />
@@ -1257,7 +1257,7 @@
 	<npc id="20939" level="108" type="Monster" name="Tanor Silenos Warrior">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="160" /> 
+		<equipment rhand="160" />
 		<acquire exp="1199922336" sp="1079854" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="419688" hpRegen="9.5" mp="32077.0478507705" mpRegen="3.3" />
@@ -1297,7 +1297,7 @@
 	<npc id="20940" level="107" type="Monster" name="Tanor Silenos Shaman">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="9" /> 
+		<equipment rhand="9" />
 		<acquire exp="1138774785" sp="1024800" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="419688" hpRegen="9.5" mp="39551" mpRegen="3.3" />
@@ -1339,23 +1339,23 @@
 	</npc>
 	<npc id="20941" level="108" type="Monster" name="Tanor Silenos Chieftain" title="Lord of Tanor Canyon">
 		<parameters>
-		<param name="MoveAroundSocial" value="80" />
-		<param name="MoveAroundSocial1" value="80" />
-		<param name="MoveAroundSocial2" value="80" />
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
 			<minions name="Privates">
 				<npc id="20940" count="3" respawnTime="360" weightPoint="1" />
-			<npc id="20939" count="6" respawnTime="0" weightPoint="1" />
-		</minions>
-		<param name="SoulShot" value="100" />
-		<param name="SoulShotRate" value="10" />
-		<param name="SpiritShot" value="100" />
-		<param name="SpiritShotRate" value="5" />
-		<param name="LongRangeGuardRate" value="5" />
-		<skill name="PhysicalSpecial" id="4073" level="6" />
+				<npc id="20939" count="6" respawnTime="0" weightPoint="1" />
+			</minions>
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4073" level="6" />
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="75" /> 
+		<equipment rhand="75" />
 		<acquire exp="8399456352" sp="7559439" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="2098440" hpRegen="9.5" mp="32077.0478507705" mpRegen="3.3" />
@@ -1479,20 +1479,20 @@
 	</npc>
 	<npc id="20944" level="108" type="Monster" name="Nightmare Lord" title="Watcher of Tanor Canyon">
 		<parameters>
-		<param name="MoveAroundSocial" value="80" />
-		<param name="MoveAroundSocial1" value="80" />
-		<param name="MoveAroundSocial2" value="80" />
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
 			<minions name="Privates">
 				<npc id="20942" count="1" respawnTime="360" weightPoint="1" />
 				<npc id="20943" count="2" respawnTime="360" weightPoint="1" />
-			<npc id="20943" count="6" respawnTime="0" weightPoint="1" />
-		</minions>
-		<param name="SoulShot" value="100" />
-		<param name="SoulShotRate" value="10" />
-		<param name="SpiritShot" value="100" />
-		<param name="SpiritShotRate" value="5" />
-		<param name="LongRangeGuardRate" value="5" />
-		<skill name="PhysicalSpecial" id="4073" level="6" />
+				<npc id="20943" count="6" respawnTime="0" weightPoint="1" />
+			</minions>
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4073" level="6" />
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>

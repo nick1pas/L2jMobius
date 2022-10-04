@@ -137,9 +137,9 @@
 			</territory>
 		</territories>
 		<npc id="29095" x="147408" y="-43552" z="-2328" dbSave="true" dbName="gordon" respawnTime="24hour" respawnRandom="12hour"> <!-- Gordon - Knight of Destruction -->
-		<parameters>
-			<param name="SuperPointName" value="gordon" />
-		</parameters>
+			<parameters>
+				<param name="SuperPointName" value="gordon" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="schuttgart17_akata_m1" ai="DEFAULT_USE_DB_MAKER">
@@ -173,29 +173,29 @@
 			</territory>
 		</territories>
 		<npc id="29062" x="-16387" y="-51955" z="-10600" heading="16384" dbSave="true" dbName="triolls_priest_andreas" respawnTime="72hour" respawnRandom="12hour"> <!-- Andreas Van Halter - Seer of Pagan -->
-		<parameters>
-			<param name="MidSpawnMakerName11" value="altar_combat1_01" />
-			<param name="MidSpawnMakerName12" value="altar_combat1_02" />
-			<param name="SeekRange" value="2000" />
-			<param name="BroadcastRange" value="1500" />
-			<param name="AttackPartyPointRate" value="70" />
-			<param name="private1_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
-			<param name="private1_ai_type" value="andreas_s_acolyte_a" />
-			<param name="private1_pos_x" value="-91" />
-			<param name="private1_pos_y" value="-95" />
-			<param name="private2_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
-			<param name="private2_ai_type" value="andreas_s_acolyte_a" />
-			<param name="private2_pos_x" value="-48" />
-			<param name="private2_pos_y" value="-130" />
-			<param name="private3_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
-			<param name="private3_ai_type" value="andreas_s_acolyte_a" />
-			<param name="private3_pos_x" value="-91" />
-			<param name="private3_pos_y" value="-95" />
-			<param name="private4_silhouette" value="29064" /> <!-- Andreas' Acolyte -->
-			<param name="private4_ai_type" value="andreas_s_acolyte_b" />
-			<param name="private4_pos_x" value="-48" />
-			<param name="private4_pos_y" value="130" />
-		</parameters>
+			<parameters>
+				<param name="MidSpawnMakerName11" value="altar_combat1_01" />
+				<param name="MidSpawnMakerName12" value="altar_combat1_02" />
+				<param name="SeekRange" value="2000" />
+				<param name="BroadcastRange" value="1500" />
+				<param name="AttackPartyPointRate" value="70" />
+				<param name="private1_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
+				<param name="private1_ai_type" value="andreas_s_acolyte_a" />
+				<param name="private1_pos_x" value="-91" />
+				<param name="private1_pos_y" value="-95" />
+				<param name="private2_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
+				<param name="private2_ai_type" value="andreas_s_acolyte_a" />
+				<param name="private2_pos_x" value="-48" />
+				<param name="private2_pos_y" value="-130" />
+				<param name="private3_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
+				<param name="private3_ai_type" value="andreas_s_acolyte_a" />
+				<param name="private3_pos_x" value="-91" />
+				<param name="private3_pos_y" value="-95" />
+				<param name="private4_silhouette" value="29064" /> <!-- Andreas' Acolyte -->
+				<param name="private4_ai_type" value="andreas_s_acolyte_b" />
+				<param name="private4_pos_x" value="-48" />
+				<param name="private4_pos_y" value="130" />
+			</parameters>
 			<minions>
 				<minion id="29063" respawnTime="6min" /> <!-- Andreas' Acolyte -->
 				<minion id="29063" respawnTime="6min" /> <!-- Andreas' Acolyte -->
@@ -231,9 +231,9 @@
 			</territory>
 		</territories>
 		<npc id="25677" dbSave="true" dbName="water_spirit_lian2" respawnTime="24hour" respawnRandom="12hour"> <!-- Water Spirit Lian - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2224_03m1" ai="DEFAULT_USE_DB_MAKER">
@@ -246,9 +246,9 @@
 			</territory>
 		</territories>
 		<npc id="25674" dbSave="true" dbName="gwindorr2" respawnTime="24hour" respawnRandom="12hour"> <!-- Gwindorr - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril01_mb2324_01m1" ai="DEFAULT_USE_DB_MAKER">
@@ -262,9 +262,9 @@
 			</territory>
 		</territories>
 		<npc id="25214" dbSave="true" dbName="fafurions_pagehood_sika" respawnTime="24hour" respawnRandom="12hour"> <!-- Fafurion's Servant Sika - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_02m1" ai="DEFAULT_USE_DB_MAKER">
@@ -277,9 +277,9 @@
 			</territory>
 		</territories>
 		<npc id="25394" dbSave="true" dbName="premo_prime_the_creature" respawnTime="24hour" respawnRandom="12hour"> <!-- Premo Prime - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_03m1" ai="DEFAULT_USE_DB_MAKER">
@@ -292,9 +292,9 @@
 			</territory>
 		</territories>
 		<npc id="25211" dbSave="true" dbName="sebek" respawnTime="24hour" respawnRandom="12hour"> <!-- Sebek - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_04m1" ai="DEFAULT_USE_DB_MAKER">
@@ -307,9 +307,9 @@
 			</territory>
 		</territories>
 		<npc id="25188" dbSave="true" dbName="apepi" respawnTime="24hour" respawnRandom="12hour"> <!-- Apepi - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_05m1" ai="DEFAULT_USE_DB_MAKER">
@@ -322,9 +322,9 @@
 			</territory>
 		</territories>
 		<npc id="25185" dbSave="true" dbName="tasaba_patriarch_hellena" respawnTime="24hour" respawnRandom="12hour"> <!-- Tasaba Patriarch Hellena - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_06m1" ai="DEFAULT_USE_DB_MAKER">
@@ -337,9 +337,9 @@
 			</territory>
 		</territories>
 		<npc id="25208" dbSave="true" dbName="water_couatl_ateka" respawnTime="24hour" respawnRandom="12hour"> <!-- Water Couatl Ateka - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_07m1" ai="DEFAULT_USE_DB_MAKER">
@@ -352,9 +352,9 @@
 			</territory>
 		</territories>
 		<npc id="25189" dbSave="true" dbName="cronoss_summons_mumu" respawnTime="24hour" respawnRandom="12hour"> <!-- Cronos' Servitor Mumu - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2324_08m1" ai="DEFAULT_USE_DB_MAKER">
@@ -367,9 +367,9 @@
 			</territory>
 		</territories>
 		<npc id="25115" dbSave="true" dbName="icarus_sample_21" respawnTime="24hour" respawnRandom="12hour"> <!-- Icarus Sample 1 - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="aden22_mb2519_01m1" ai="DEFAULT_USE_DB_MAKER">
@@ -382,9 +382,9 @@
 			</territory>
 		</territories>
 		<npc id="25179" dbSave="true" dbName="hatos" respawnTime="24hour" respawnRandom="12hour"> <!-- Giant Statue Guardian Karum - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="giran04_mb2421_01m1" ai="DEFAULT_USE_DB_MAKER">

@@ -1516,9 +1516,9 @@
 		</effects>
 	</skill>
 	<skill id="39486" toLevel="4" name="Elite Monster Reward Box">
-			<!-- This Skill has no description -->
-			<isMagic>2</isMagic> <!-- Static Skill -->
-			<magicLevel>1</magicLevel>
+		<!-- This Skill has no description -->
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -1529,8 +1529,8 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpEncumbered">
-			<weightPercent>10</weightPercent>
-			<slotsPercent>10</slotsPercent>
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
 			</condition>
 		</conditions>
 		<effects>
@@ -1539,9 +1539,9 @@
 					<item chance="5.5555555555556">
 						<item id="57" count="300000" /> <!-- Adena -->
 					</item>
-						<item chance="5.5555555555556">
-					<item id="35569" count="1" /> <!-- Bloody Armor Enhancement Stone -->
-						</item>
+					<item chance="5.5555555555556">
+						<item id="35569" count="1" /> <!-- Bloody Armor Enhancement Stone -->
+					</item>
 					<item chance="5.5555555555556">
 						<item id="35567" count="1" /> <!-- Dark Armor Enhancement Stone -->
 					</item>

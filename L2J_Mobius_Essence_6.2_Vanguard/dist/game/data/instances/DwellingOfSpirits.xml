@@ -13,7 +13,7 @@
 		<condition type="CommandChannel" />
 		<condition type="CommandChannelLeader" />
 		<condition type="GroupMin">
-			<param name="limit" value="1" /> 
+			<param name="limit" value="1" />
 		</condition>
 		<condition type="GroupMax">
 			<param name="limit" value="100" />
@@ -34,7 +34,7 @@
 		<reset day="SATURDAY" hour="6" minute="30" />
 		<reset day="SUNDAY" hour="6" minute="30" />
 	</reenter>
-		<spawnlist>
+	<spawnlist>
 		<group name="ExitPortal" spawnByDefault="false">
 			<npc id="15970" x="-114343" y="-77747" z="-11442" heading="46786" /> <!-- Exit Portal -->
 			<npc id="15971" x="-114343" y="-77747" z="-11442" heading="46786" /> <!-- Exit Portal -->
@@ -59,7 +59,7 @@
 			<npc id="22271" x="-114711" y="-76987" z="-11443" heading="61107" /> <!-- Corrupted Fairy -->
 			<npc id="22271" x="-114699" y="-77113" z="-11443" heading="16383" /> <!-- Corrupted Fairy -->
 			<npc id="22271" x="-114723" y="-77045" z="-11443" heading="57831" /> <!-- Corrupted Fairy -->
-			<npc id="22271" x="-114852" y="-78363" z="-11443" heading="657"	/> <!-- Corrupted Fairy -->
+			<npc id="22271" x="-114852" y="-78363" z="-11443" heading="657" /> <!-- Corrupted Fairy -->
 			<npc id="22271" x="-114984" y="-78475" z="-11443" heading="1141" /> <!-- Corrupted Fairy -->
 			<npc id="22271" x="-114916" y="-78442" z="-11443" heading="65129" /> <!-- Corrupted Fairy -->
 			<npc id="22271" x="-114841" y="-78428" z="-11443" heading="63813" /> <!-- Corrupted Fairy -->
@@ -85,7 +85,7 @@
 			<npc id="22272" x="-113845" y="-78477" z="-11443" heading="62467" /> <!-- Corrupted Fairy -->
 			<npc id="22271" x="-114676" y="-78345" z="-11439" heading="30937" /> <!-- Corrupted Fairy -->
 		</group>
-			<group name="ruipwave_1" spawnByDefault="false">
+		<group name="ruipwave_1" spawnByDefault="false">
 			<npc id="22273" x="-113945" y="-76923" z="-11443" heading="30858" /> <!-- Ruip portal container-->
 			<npc id="22273" x="-114840" y="-78561" z="-11443" heading="32322" /> <!-- Ruip portal container -->
 			<npc id="22273" x="-114852" y="-77864" z="-11443" heading="13028" /> <!-- Ruip portal container-->
@@ -97,7 +97,7 @@
 			<npc id="22273" x="-113589" y="-78333" z="-11443" heading="30535" /> <!-- Ruip portal container -->
 			<npc id="22273" x="-113818" y="-78174" z="-11443" heading="55979" /> <!-- Ruip portal container -->
 		</group>
-			<group name="ruipwave_2" spawnByDefault="false">
+		<group name="ruipwave_2" spawnByDefault="false">
 			<npc id="22273" x="-113622" y="-78398" z="-11443" heading="28616" /> <!-- Ruip portal container-->
 			<npc id="22273" x="-113622" y="-78398" z="-11443" heading="28616" /> <!-- Ruip portal container -->
 			<npc id="22273" x="-114323" y="-78914" z="-11443" heading="13828" /> <!-- Ruip portal container -->
@@ -110,16 +110,16 @@
 			<npc id="22273" x="-114840" y="-78561" z="-11443" heading="32322" /> <!-- Ruip portal container -->
 		</group>
 		<group name="portalearth" spawnByDefault="false">
-			<npc id="15971" x="-113516" y="-77521" z="-11419" heading="8750" /> 
+			<npc id="15971" x="-113516" y="-77521" z="-11419" heading="8750" />
 		</group>
-			<group name="portalwind" spawnByDefault="false">
-			<npc id="15969" x="-114554" y="-78998" z="-11443" heading="8750" /> 
+		<group name="portalwind" spawnByDefault="false">
+			<npc id="15969" x="-114554" y="-78998" z="-11443" heading="8750" />
 		</group>
-			<group name="portalfire" spawnByDefault="false">
-			<npc id="15970" x="-114554" y="-78998" z="-11443" heading="8750" /> 
+		<group name="portalfire" spawnByDefault="false">
+			<npc id="15970" x="-114554" y="-78998" z="-11443" heading="8750" />
 		</group>
-			<group name="portalwater" spawnByDefault="false">
-			<npc id="15972" x="-114554" y="-78998" z="-11443" heading="8750" /> 
+		<group name="portalwater" spawnByDefault="false">
+			<npc id="15972" x="-114554" y="-78998" z="-11443" heading="8750" />
 		</group>
 	</spawnlist>
 </instance>

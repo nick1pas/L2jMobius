@@ -460,30 +460,30 @@
 		</effects>
 	</skill>
 	<skill id="103" toLevel="5" name="Slaughter">
-        <!-- <Infection Skill> Causes a poison cloud to pour out from a corpse. Inflicts poison on enemies near the corpse. -->
-        <icon>icon.skill0103</icon>
-        <operateType>P</operateType>
-        <magicLevel>
-            <value level="1">46</value>
-            <value level="2">58</value>
-            <value level="3">62</value>
-            <value level="4">70</value>
-            <value level="5">78</value>
-        </magicLevel>
-        <effects>
-            <effect name="TriggerSkillByKill">
-                <chance>100</chance>
-                <skillId>47291</skillId> <!-- Slaughter -->
-                <skillLevel>
-                    <value level="1">1</value>
-                    <value level="2">2</value>
-                    <value level="3">3</value>
-                    <value level="4">4</value>
-                    <value level="5">5</value>
-                </skillLevel>
-            </effect>
-        </effects>
-    </skill>
+		<!-- <Infection Skill> Causes a poison cloud to pour out from a corpse. Inflicts poison on enemies near the corpse. -->
+		<icon>icon.skill0103</icon>
+		<operateType>P</operateType>
+		<magicLevel>
+			<value level="1">46</value>
+			<value level="2">58</value>
+			<value level="3">62</value>
+			<value level="4">70</value>
+			<value level="5">78</value>
+		</magicLevel>
+		<effects>
+			<effect name="TriggerSkillByKill">
+				<chance>100</chance>
+				<skillId>47291</skillId> <!-- Slaughter -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</skillLevel>
+			</effect>
+		</effects>
+	</skill>
 	<skill id="104" toLevel="1" name="Acumen">
 		<!-- Removes debuffs that decrease P. Accuracy and P. Evasion. -->
 		<icon>icon.skill0104</icon>
@@ -561,11 +561,11 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-                <skillId>223</skillId> <!-- Blood Attack -->
-            </condition>
+				<skillId>223</skillId> <!-- Blood Attack -->
+			</condition>
 			<condition name="OpNotAffectedBySkill">
-                <skillId>47285</skillId> <!-- Blood Attack -->
-            </condition>
+				<skillId>47285</skillId> <!-- Blood Attack -->
+			</condition>
 		</conditions>
 		<effects>
 			<effect name="TriggerSkillByAttack">
@@ -1310,7 +1310,7 @@
 				<armorType>
 					<item>MAGIC</item>
 				</armorType>
-			</effect>	
+			</effect>
 		</effects>
 	</skill>
 	<skill id="120" toLevel="15" name="Stunning Fist">

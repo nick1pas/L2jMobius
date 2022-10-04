@@ -331,7 +331,7 @@
 		<sex>MALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
 			<attack physical="109.141846" magical="67.7543" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<vitals hp="1310.8316" mp="372" hpRegen="1" mpRegen="1.8"/>
+			<vitals hp="1310.8316" mp="372" hpRegen="1" mpRegen="1.8" />
 			<defence physical="110.8983545" magical="89.26566" />
 			<speed>
 				<walk ground="40" />
@@ -1055,13 +1055,13 @@
 		</collision>
 		<dropLists>
 			<drop>
-					<item id="57" min="333" max="651" chance="70" /> <!-- Adena -->
-					<item id="274" min="1" max="1" chance="0.03" /> <!-- Reinforced Bow -->
-					<item id="1873" min="1" max="1" chance="1.75" /> <!-- Silver Nugget -->
-					<item id="1868" min="1" max="1" chance="17.5" /> <!-- Thread -->
-					<item id="1876" min="1" max="1" chance="1.75" /> <!-- Mithril Ore -->
-					<item id="2152" min="1" max="1" chance="1.539" /> <!-- Recipe: Magic Necklace -->
-					<item id="6035" min="1" max="1" chance="0.729" /> <!-- Magic Haste Potion -->
+				<item id="57" min="333" max="651" chance="70" /> <!-- Adena -->
+				<item id="274" min="1" max="1" chance="0.03" /> <!-- Reinforced Bow -->
+				<item id="1873" min="1" max="1" chance="1.75" /> <!-- Silver Nugget -->
+				<item id="1868" min="1" max="1" chance="17.5" /> <!-- Thread -->
+				<item id="1876" min="1" max="1" chance="1.75" /> <!-- Mithril Ore -->
+				<item id="2152" min="1" max="1" chance="1.539" /> <!-- Recipe: Magic Necklace -->
+				<item id="6035" min="1" max="1" chance="0.729" /> <!-- Magic Haste Potion -->
 			</drop>
 			<spoil>
 				<item id="1932" min="1" max="1" chance="12.3147" /> <!-- Bone Helmet Design -->
@@ -1087,7 +1087,7 @@
 		<equipment rhand="3" /> <!-- Broadsword -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
 			<attack physical="82.490331" magical="51.20928" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<vitals hp="670.9062" mp="343" hpRegen="3.5" mpRegen="1.5"/>
+			<vitals hp="670.9062" mp="343" hpRegen="3.5" mpRegen="1.5" />
 			<defence physical="98.44333636" magical="79.24022" />
 			<speed>
 				<walk ground="50" />
@@ -1124,8 +1124,8 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="PhysicalSpecial" id="4032" level="4" /> <!-- NPC Strike -->
 			<minions name="Privates">
-				<npc id="20759" count="1" respawnTime="0" weightPoint="1"/>
-				<npc id="20760" count="1" respawnTime="0" weightPoint="1"/>
+				<npc id="20759" count="1" respawnTime="0" weightPoint="1" />
+				<npc id="20760" count="1" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>UNDEAD</race>
@@ -1336,7 +1336,7 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="DDMagic" id="4002" level="6" /> <!-- NPC HP Drain -->
 			<minions name="Privates">
-				<npc id="20762" count="3" respawnTime="0" weightPoint="1"/>
+				<npc id="20762" count="3" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>DEMONIC</race>
@@ -1471,8 +1471,8 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="PhysicalSpecial" id="4032" level="4" /> <!-- NPC Strike -->
 			<minions name="Privates">
-				<npc id="20764" count="1" respawnTime="0" weightPoint="1"/>
-				<npc id="20765" count="1" respawnTime="0" weightPoint="1"/>
+				<npc id="20764" count="1" respawnTime="0" weightPoint="1" />
+				<npc id="20765" count="1" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>HUMANOID</race>
@@ -2026,7 +2026,7 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="DDMagic" id="4066" level="6" /> <!-- NPC Twister -->
 			<minions name="Privates">
-				<npc id="20772" count="3" respawnTime="0" weightPoint="1"/>
+				<npc id="20772" count="3" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>GIANT</race>
@@ -2167,7 +2167,7 @@
 			<param name="LongRangeGuardRate" value="5" />
 			<skill name="DeBuff" id="4038" level="5" /> <!-- Decrease Atk. Spd. -->
 			<minions name="Privates">
-				<npc id="20774" count="3" respawnTime="0" weightPoint="1"/>
+				<npc id="20774" count="3" respawnTime="0" weightPoint="1" />
 			</minions>
 		</parameters>
 		<race>ANIMAL</race>

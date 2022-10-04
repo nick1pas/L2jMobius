@@ -1337,7 +1337,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="88" /> 
+		<equipment rhand="88" />
 		<acquire exp="1199922336" sp="1079854" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -1538,7 +1538,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="5" /> 
+		<equipment rhand="5" />
 		<acquire exp="1199922336" sp="1079854" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -1637,7 +1637,7 @@
 	<npc id="20939" level="108" type="Monster" name="Tanor Silenos Warrior">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="160" /> 
+		<equipment rhand="160" />
 		<acquire exp="1199922336" sp="1079854" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -1752,22 +1752,22 @@
 	</npc>
 	<npc id="20941" level="108" type="Monster" name="Tanor Silenos Chieftain" title="Lord of Tanor Canyon">
 		<parameters>
-		<param name="MoveAroundSocial" value="80" />
-		<param name="MoveAroundSocial1" value="80" />
-		<param name="MoveAroundSocial2" value="80" />
+			<param name="MoveAroundSocial" value="80" />
+			<param name="MoveAroundSocial1" value="80" />
+			<param name="MoveAroundSocial2" value="80" />
 			<minions name="Privates">
-			<npc id="20939" count="6" respawnTime="0" weightPoint="1" />
-		</minions>
-		<param name="SoulShot" value="100" />
-		<param name="SoulShotRate" value="10" />
-		<param name="SpiritShot" value="100" />
-		<param name="SpiritShotRate" value="5" />
-		<param name="LongRangeGuardRate" value="5" />
-		<skill name="PhysicalSpecial" id="4073" level="6" />
+				<npc id="20939" count="6" respawnTime="0" weightPoint="1" />
+			</minions>
+			<param name="SoulShot" value="100" />
+			<param name="SoulShotRate" value="10" />
+			<param name="SpiritShot" value="100" />
+			<param name="SpiritShotRate" value="5" />
+			<param name="LongRangeGuardRate" value="5" />
+			<skill name="PhysicalSpecial" id="4073" level="6" />
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="75" /> 
+		<equipment rhand="75" />
 		<acquire exp="8399456352" sp="7559439" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">

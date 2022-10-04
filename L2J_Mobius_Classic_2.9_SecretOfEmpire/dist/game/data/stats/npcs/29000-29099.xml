@@ -2106,8 +2106,8 @@
 			<attack physical="1556.78628597682" magical="1073.71405840992" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="642.236873936287" magical="428.157916018841" evasion="1" />
 			<attribute>
-			<attack type="DARK" value="280" />
-			<defence fire="200" water="200" wind="200" earth="200" holy="150" dark="200" default="220" />
+				<attack type="DARK" value="280" />
+				<defence fire="200" water="200" wind="200" earth="200" holy="150" dark="200" default="220" />
 			</attribute>
 			<speed>
 				<walk ground="30" />
@@ -2162,7 +2162,7 @@
 		</stats>
 		<status undying="false" />
 		<skillList>
-		<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
+			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->

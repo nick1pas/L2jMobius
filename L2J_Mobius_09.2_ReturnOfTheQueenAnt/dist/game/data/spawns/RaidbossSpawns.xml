@@ -9,9 +9,9 @@
 			</territory>
 		</territories>
 		<npc id="29095" x="147408" y="-43552" z="-2328" dbSave="true" dbName="gordon" respawnTime="24hour" respawnRandom="12hour"> <!-- Gordon - Knight of Destruction -->
-		<parameters>
-			<param name="SuperPointName" value="gordon" />
-		</parameters>
+			<parameters>
+				<param name="SuperPointName" value="gordon" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="rune14_andreas_m1" ai="PARENT_SPAWN_ALL">
@@ -31,29 +31,29 @@
 			</territory>
 		</territories>
 		<npc id="29062" x="-16387" y="-51955" z="-10600" heading="16384" dbSave="true" dbName="triolls_priest_andreas" respawnTime="72hour" respawnRandom="12hour"> <!-- Andreas Van Halter - High Priestess -->
-		<parameters>
-			<param name="MidSpawnMakerName11" value="altar_combat1_01" />
-			<param name="MidSpawnMakerName12" value="altar_combat1_02" />
-			<param name="SeekRange" value="2000" />
-			<param name="BroadcastRange" value="1500" />
-			<param name="AttackPartyPointRate" value="70" />
-			<param name="private1_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
-			<param name="private1_ai_type" value="andreas_s_acolyte_a" />
-			<param name="private1_pos_x" value="-91" />
-			<param name="private1_pos_y" value="-95" />
-			<param name="private2_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
-			<param name="private2_ai_type" value="andreas_s_acolyte_a" />
-			<param name="private2_pos_x" value="-48" />
-			<param name="private2_pos_y" value="-130" />
-			<param name="private3_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
-			<param name="private3_ai_type" value="andreas_s_acolyte_a" />
-			<param name="private3_pos_x" value="-91" />
-			<param name="private3_pos_y" value="-95" />
-			<param name="private4_silhouette" value="29064" /> <!-- Andreas' Acolyte -->
-			<param name="private4_ai_type" value="andreas_s_acolyte_b" />
-			<param name="private4_pos_x" value="-48" />
-			<param name="private4_pos_y" value="130" />
-		</parameters>
+			<parameters>
+				<param name="MidSpawnMakerName11" value="altar_combat1_01" />
+				<param name="MidSpawnMakerName12" value="altar_combat1_02" />
+				<param name="SeekRange" value="2000" />
+				<param name="BroadcastRange" value="1500" />
+				<param name="AttackPartyPointRate" value="70" />
+				<param name="private1_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
+				<param name="private1_ai_type" value="andreas_s_acolyte_a" />
+				<param name="private1_pos_x" value="-91" />
+				<param name="private1_pos_y" value="-95" />
+				<param name="private2_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
+				<param name="private2_ai_type" value="andreas_s_acolyte_a" />
+				<param name="private2_pos_x" value="-48" />
+				<param name="private2_pos_y" value="-130" />
+				<param name="private3_silhouette" value="29063" /> <!-- Andreas' Acolyte -->
+				<param name="private3_ai_type" value="andreas_s_acolyte_a" />
+				<param name="private3_pos_x" value="-91" />
+				<param name="private3_pos_y" value="-95" />
+				<param name="private4_silhouette" value="29064" /> <!-- Andreas' Acolyte -->
+				<param name="private4_ai_type" value="andreas_s_acolyte_b" />
+				<param name="private4_pos_x" value="-48" />
+				<param name="private4_pos_y" value="130" />
+			</parameters>
 			<minions>
 				<minion id="29063" respawnTime="6min" /> <!-- Andreas' Acolyte -->
 				<minion id="29063" respawnTime="6min" /> <!-- Andreas' Acolyte -->
@@ -72,9 +72,9 @@
 			</territory>
 		</territories>
 		<npc id="25677" dbSave="true" dbName="water_spirit_lian2" respawnTime="24hour" respawnRandom="12hour"> <!-- Water Spirit Lian - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="innadril04_mb2224_03m1" ai="DEFAULT_USE_DB_MAKER">
@@ -87,9 +87,9 @@
 			</territory>
 		</territories>
 		<npc id="25674" dbSave="true" dbName="gwindorr2" respawnTime="24hour" respawnRandom="12hour"> <!-- Gwindorr - Raid Boss -->
-		<parameters>
-			<param name="DBPosCheck" value="1" />
-		</parameters>
+			<parameters>
+				<param name="DBPosCheck" value="1" />
+			</parameters>
 		</npc>
 	</spawn>
 	<spawn name="giran04_mb2421_01m1" ai="DEFAULT_USE_DB_MAKER">

@@ -1224,16 +1224,16 @@
 		<isMagic>2</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-			<effects>
-				<effect name="Speed">
+		<effects>
+			<effect name="Speed">
 				<amount>20</amount>
 				<mode>DIFF</mode>
 			</effect>
-				<effect name="PvePhysicalAttackDefenceBonus">
+			<effect name="PvePhysicalAttackDefenceBonus">
 				<amount>-1</amount>
 				<mode>PER</mode>
 			</effect>
-				<effect name="PvePhysicalSkillDefenceBonus">
+			<effect name="PvePhysicalSkillDefenceBonus">
 				<amount>-1</amount>
 				<mode>PER</mode>
 			</effect>
@@ -1249,7 +1249,7 @@
 				<amount>-1</amount>
 				<mode>PER</mode>
 			</effect>
-			</effects>
+		</effects>
 	</skill>
 	<skill id="32879" toLevel="1" name="Dark Elf Level Ranking 1st Class">
 		<!-- Benefits for ranks 1-10 amongst Dark Elves. CHA +1, STR/DEX/CON/INT/WIT/MEN +2 at night -->
