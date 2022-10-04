@@ -33,11 +33,13 @@
 		<!-- Double-click to obtain Elven Long Sword (D-grade) enchanted from +8 to +16.\n\nRequires 1 Weapon Ticket from the L-coin Shop.\nCan be used only once a day.\nInfluences the cooldown of Reinforced Falchion's Power II. -->
 		<icon>icon.weapon_falchion_i00</icon>
 		<operateType>A1</operateType>
+		<reuseDelayGroup>51405</reuseDelayGroup>
 	</skill>
 	<skill id="51406" toLevel="1" name="Reinforced Falchion's Power II">
 		<!-- Double-click to obtain Bastard Sword*Crimson Sword (D-grade) enchanted from +8 to +16.\n\nRequires 1 Weapon Ticket from the L-coin Shop.\nCan be used only once a day.\nInfluences the cooldown of Reinforced Falchion's Power I. -->
 		<icon>icon.weapon_falchion_i00</icon>
 		<operateType>A1</operateType>
+		<reuseDelayGroup>51405</reuseDelayGroup>
 	</skill>
 	<skill id="51407" toLevel="1" name="Reinforced Iron Hammer's Power">
 		<!-- Double-click to obtain Bonebreaker (D-grade) enchanted from +8 to +16.\n\nRequires 1 Weapon Ticket from the L-coin Shop.\nCan be used only once a day. -->
@@ -203,6 +205,7 @@
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
+		<reuseDelayGroup>51398</reuseDelayGroup>
 	</skill>
 	<skill id="51437" toLevel="1" name="Sayha's Storm Lv. 3">
 		<!-- For 20 min., Momentum Consumption +100%, Acquired XP/ SP +200%. Cooldown: 1 min. The effect remains after death. -->
@@ -210,6 +213,7 @@
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
+		<reuseDelayGroup>51398</reuseDelayGroup>
 	</skill>
 	<skill id="51438" toLevel="1" name="Sayha's Summoning Stick">
 		<!-- Use it to summon various monsters. -->
@@ -309,6 +313,7 @@
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
+		<reuseDelayGroup>51455</reuseDelayGroup>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="51456" toLevel="1" name="Master Fisherman's Chest">

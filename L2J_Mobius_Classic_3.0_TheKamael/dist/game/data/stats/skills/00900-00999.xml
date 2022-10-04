@@ -1010,14 +1010,15 @@
 	<skill id="917" toLevel="1" name="Final Secret">
 		<!-- For 30 sec., you call upon your hidden reserves to get your P. Skill Power +10% and standard attack damage +8% during PvP. -->
 		<icon>icon.skill0917</icon>
-		<abnormalLevel>1</abnormalLevel>
+		<operateType>A2</operateType>
+		<magicLevel>76</magicLevel>
+		<isMagic>0</isMagic>
+		<mpConsume>41</mpConsume>
+		<hitTime>1500</hitTime>
 		<abnormalTime>30</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
 		<abnormalType>FINAL_SECRET</abnormalType>
 		<effectPoint>597</effectPoint>
-		<hitTime>1500</hitTime>
-		<magicLevel>79</magicLevel>
-		<mpConsume>41</mpConsume>
-		<operateType>A2</operateType>
 		<reuseDelay>150000</reuseDelay>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -4974,23 +4975,36 @@
 	<skill id="994" toLevel="3" name="Rush">
 		<!-- Charges into the enemy. Can be used if distance between the enemy and the character is more than 150. -->
 		<icon>icon.skill0484</icon>
-		<castRange>
-			<value level="1">400</value>
-			<value level="2">500</value>
-			<value level="3">600</value>
-		</castRange>
-		<coolTime>200</coolTime>
-		<effectPoint>-379</effectPoint>
-		<effectRange>600</effectRange>
-		<hitTime>800</hitTime>
-		<magicLevel>78</magicLevel>
+		<operateType>DA1</operateType>
+		<magicLevel>
+			<value level="1">40</value>
+			<value level="2">60</value>
+			<value level="3">76</value>
+		</magicLevel>
+		<isMagic>0</isMagic>
 		<mpConsume>
 			<value level="1">35</value>
 			<value level="2">40</value>
 			<value level="3">45</value>
 		</mpConsume>
+		<castRange>
+			<value level="1">400</value>
+			<value level="2">500</value>
+			<value level="3">600</value>
+		</castRange>
+		<effectRange>
+			<value level="1">600</value>
+			<value level="2">700</value>
+			<value level="3">800</value>
+		</effectRange>
+		<effectPoint>
+			<value level="1">-300</value>
+			<value level="2">-400</value>
+			<value level="3">-500</value>
+		</effectPoint>
+		<hitTime>800</hitTime>
+		<coolTime>200</coolTime>
 		<nextAction>ATTACK</nextAction>
-		<operateType>DA1</operateType>
 		<reuseDelay>3000</reuseDelay>
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>

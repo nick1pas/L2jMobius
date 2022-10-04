@@ -2141,11 +2141,11 @@
 			<value level="6">83</value>
 			<value level="7">84</value>
 			<value level="8">85</value>
-			<value level="9">85</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-			<value level="10">85</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-			<value level="11">85</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-			<value level="12">85</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-			<value level="13">85</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+			<value level="9">86</value>
+			<value level="10">87</value>
+			<value level="11">88</value>
+			<value level="12">89</value>
+			<value level="13">90</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2160,11 +2160,11 @@
 					<value level="6">102</value>
 					<value level="7">105</value>
 					<value level="8">108</value>
-					<value level="9">108</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-					<value level="10">108</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-					<value level="11">108</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-					<value level="12">108</value> <!-- FIXME: AUTO GENERATED LEVEL -->
-					<value level="13">108</value> <!-- FIXME: AUTO GENERATED LEVEL -->
+					<value level="9">112</value>
+					<value level="10">116</value>
+					<value level="11">120</value>
+					<value level="12">125</value>
+					<value level="13">130</value>
 				</amount>
 				<mode>DIFF</mode>
 				<armorType>
@@ -3435,7 +3435,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="472" toLevel="9" name="Ancient Sword Mastery">
+	<skill id="472" toLevel="10" name="Ancient Sword Mastery">
 		<!-- P. Atk. +$s1 when using an ancient sword. -->
 		<icon>icon.skill0472</icon>
 		<magicLevel>
@@ -3448,6 +3448,7 @@
 			<value level="7">75</value>
 			<value level="8">80</value>
 			<value level="9">85</value>
+			<value level="9">90</value>
 		</magicLevel>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -3463,6 +3464,7 @@
 					<value level="7">150</value>
 					<value level="8">180</value>
 					<value level="9">215</value>
+					<value level="10">250</value>
 				</amount>
 				<mode>DIFF</mode>
 				<weaponType>
@@ -3804,6 +3806,19 @@
 				</power>
 				<overHit>true</overHit>
 				<ignoreShieldDefence>true</ignoreShieldDefence>
+				<criticalChance>
+					<value level="1">10</value>
+					<value level="2">10</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">15</value>
+					<value level="7">20</value>
+					<value level="8">20</value>
+					<value level="9">20</value>
+					<value level="10">20</value>
+				</criticalChance>
+				<pDefMod>0.9</pDefMod>
 			</effect>
 		</effects>
 	</skill>
@@ -4125,25 +4140,7 @@
 	<skill id="485" toLevel="5" name="Disarm">
 		<!-- Disarms the target for 3 sec. -->
 		<icon>icon.skill0485</icon>
-		<abnormalLevel>1</abnormalLevel>
-		<abnormalTime>3</abnormalTime>
-		<abnormalType>DISARM</abnormalType>
-		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
-		<activateRate>70</activateRate>
-		<basicProperty>PHYSICAL</basicProperty>
-		<castRange>150</castRange>
-		<coolTime>500</coolTime>
-		<effectPoint>
-			<value level="1">-341</value>
-			<value level="2">-408</value>
-			<value level="3">-467</value>
-			<value level="4">-523</value>
-			<value level="5">-582</value>
-		</effectPoint>
-		<effectRange>200</effectRange>
-		<hitTime>1000</hitTime>
-		<isDebuff>true</isDebuff>
-		<lvlBonusRate>20</lvlBonusRate>
+		<operateType>A2</operateType>
 		<magicLevel>
 			<value level="1">76</value>
 			<value level="2">78</value>
@@ -4151,6 +4148,25 @@
 			<value level="4">82</value>
 			<value level="5">84</value>
 		</magicLevel>
+		<castRange>150</castRange>
+		<effectRange>600</effectRange>
+		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
+		<activateRate>80</activateRate>
+		<lvlBonusRate>30</lvlBonusRate>
+		<basicProperty>PHYSICAL</basicProperty>
+		<abnormalTime>3</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>DISARM</abnormalType>
+		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
+		<effectPoint>
+			<value level="1">-460</value>
+			<value level="2">-470</value>
+			<value level="3">-480</value>
+			<value level="4">-490</value>
+			<value level="5">-500</value>
+		</effectPoint>
+		<isDebuff>true</isDebuff>
 		<mpConsume>
 			<value level="1">100</value>
 			<value level="2">110</value>
@@ -4158,18 +4174,16 @@
 			<value level="4">130</value>
 			<value level="5">140</value>
 		</mpConsume>
-		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
 		<magicCriticalRate>5</magicCriticalRate>
 		<trait>DISARM</trait>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpTargetPc" />
+		</conditions>
 		<effects>
 			<effect name="Disarm">
-			</effect>
-			<effect name="PAtk">
-				<amount>-40</amount>
-				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>
@@ -5468,30 +5482,31 @@
 	<skill id="499" toLevel="3" name="Courage">
 		<!-- Mental Attack Resistance +$s2 for $s1. -->
 		<icon>icon.skill0499</icon>
+		<operateType>A2</operateType>
+		<magicLevel>
+			<value level="1">35</value>
+			<value level="2">50</value>
+			<value level="3">65</value>
+		</magicLevel>
+		<isMagic>0</isMagic>
+		<mpConsume>
+			<value level="1">20</value>
+			<value level="2">40</value>
+			<value level="3">60</value>
+		</mpConsume>
+		<hitTime>2000</hitTime>
+		<abnormalTime>60</abnormalTime>
 		<abnormalLevel>
 			<value level="1">1</value>
 			<value level="2">2</value>
 			<value level="3">3</value>
 		</abnormalLevel>
-		<abnormalTime>60</abnormalTime>
 		<abnormalType>RESIST_SPIRITLESS</abnormalType>
 		<effectPoint>
 			<value level="1">341</value>
 			<value level="2">467</value>
 			<value level="3">582</value>
 		</effectPoint>
-		<hitTime>2000</hitTime>
-		<magicLevel>
-			<value level="1">35</value>
-			<value level="2">50</value>
-			<value level="3">65</value>
-		</magicLevel>
-		<mpConsume>
-			<value level="1">20</value>
-			<value level="2">40</value>
-			<value level="3">60</value>
-		</mpConsume>
-		<operateType>A2</operateType>
 		<reuseDelay>150000</reuseDelay>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>

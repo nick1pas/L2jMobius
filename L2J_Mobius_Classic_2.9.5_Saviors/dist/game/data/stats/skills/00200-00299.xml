@@ -715,7 +715,7 @@
 				<!-- Slow -->
 				<attackerType>Creature</attackerType>
 				<minDamage>1</minDamage>
-				<chance>10</chance>
+				<chance>15</chance>
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>DUALFIST</allowWeapons>
@@ -726,7 +726,7 @@
 				<!-- Slow -->
 				<attackerType>Creature</attackerType>
 				<minDamage>1</minDamage>
-				<chance>20</chance>
+				<chance>15</chance>
 				<targetType>TARGET</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>DUALFIST</allowWeapons>
@@ -1119,7 +1119,67 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<effects>
 			<effect name="HateAttack">
-				<amount>20</amount>
+				<amount>
+					<value level="1">20</value>
+					<value level="2">20</value>
+					<value level="3">20</value>
+					<value level="4">20</value>
+					<value level="5">20</value>
+					<value level="6">20</value>
+					<value level="7">20</value>
+					<value level="8">20</value>
+					<value level="9">40</value>
+					<value level="10">40</value>
+					<value level="11">40</value>
+					<value level="12">40</value>
+					<value level="13">40</value>
+					<value level="14">40</value>
+					<value level="15">40</value>
+					<value level="16">40</value>
+					<value level="17">40</value>
+					<value level="18">40</value>
+					<value level="19">40</value>
+					<value level="20">40</value>
+					<value level="21">40</value>
+					<value level="22">40</value>
+					<value level="23">40</value>
+					<value level="24">40</value>
+					<value level="25">40</value>
+					<value level="26">40</value>
+					<value level="27">40</value>
+					<value level="28">40</value>
+					<value level="29">40</value>
+					<value level="30">60</value>
+					<value level="31">60</value>
+					<value level="32">60</value>
+					<value level="33">60</value>
+					<value level="34">60</value>
+					<value level="35">60</value>
+					<value level="36">60</value>
+					<value level="37">60</value>
+					<value level="38">60</value>
+					<value level="39">60</value>
+					<value level="40">60</value>
+					<value level="41">60</value>
+					<value level="42">60</value>
+					<value level="43">60</value>
+					<value level="44">60</value>
+					<value level="45">60</value>
+					<value level="46">60</value>
+					<value level="47">60</value>
+					<value level="48">60</value>
+					<value level="49">60</value>
+					<value level="50">60</value>
+					<value level="51">60</value>
+					<value level="52">60</value>
+					<value level="53">60</value>
+					<value level="54">60</value>
+					<value level="55">60</value>
+					<value level="56">60</value>
+					<value level="57">60</value>
+					<value level="58">60</value>
+					<value level="59">60</value>
+				</amount>
 				<mode>PER</mode>
 				<weaponType>
 					<item>SWORD</item>

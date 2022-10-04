@@ -422,7 +422,7 @@
 				</power>
 				<ignoreShieldDefence>true</ignoreShieldDefence>
 				<overHit>true</overHit>
-				<pDefMod>0.8</pDefMod>
+				<pDefMod>0.7</pDefMod>
 			</effect>
 		</effects>
 	</skill>
@@ -724,20 +724,22 @@
 	<skill id="1612" toLevel="1" name="Slowing Power">
 		<!-- Speed -20% for 15 sec. -->
 		<icon>icon.skill0210</icon>
-		<abnormalLevel>1</abnormalLevel>
-		<abnormalTime>15</abnormalTime>
-		<activateRate>80</activateRate>
-		<basicProperty>PHYSICAL</basicProperty>
+		<operateType>A2</operateType>
+		<magicLevel>80</magicLevel>
+		<isMagic>0</isMagic>
 		<castRange>400</castRange>
-		<effectPoint>-204</effectPoint>
 		<effectRange>900</effectRange>
+		<activateRate>80</activateRate>
+		<abnormalTime>15</abnormalTime>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<trait>BOSS</trait>
+		<effectPoint>-204</effectPoint>
 		<hitTime>200</hitTime>
 		<isDebuff>true</isDebuff>
-		<isMagic>0</isMagic>
-		<lvlBonusRate>20</lvlBonusRate>
-		<magicLevel>-1</magicLevel>
-		<operateType>A2</operateType>
-		<reuseDelay>1000</reuseDelay>
+		<lvlBonusRate>0</lvlBonusRate>
+		<reuseDelay>500</reuseDelay>
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY_ONLY</targetType>
@@ -1679,14 +1681,26 @@
 		<icon>icon.skill10518</icon>
 		<operateType>A1</operateType>
 		<coolTime>500</coolTime>
-		<effectPoint>669</effectPoint>
+		<effectPoint>
+			<value level="1">669</value>
+			<value level="2">675</value>
+		</effectPoint>
 		<magicCriticalRate>5</magicCriticalRate>
-		<magicLevel>77</magicLevel>
-		<mpConsume>80</mpConsume>
+		<magicLevel>
+			<value level="1">77</value>
+			<value level="2">81</value>
+		</magicLevel>
+		<mpConsume>
+			<value level="1">80</value>
+			<value level="2">104</value>
+		</mpConsume>
 		<hitTime>1000</hitTime>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-		<reuseDelay>600000</reuseDelay>
+		<reuseDelay>
+			<value level="1">600000</value>
+			<value level="2">420000</value>
+		</reuseDelay>
 		<isMagic>0</isMagic>
 		<conditions>
 			<condition name="EquipWeapon">

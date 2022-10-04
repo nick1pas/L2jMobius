@@ -647,11 +647,32 @@
 	<skill id="1612" toLevel="1" name="Slowing Power">
 		<!-- For 15 seconds decreases Speed by 20%. -->
 		<icon>icon.skill0210</icon>
-		<operateType>A1</operateType>
-		<isDebuff>true</isDebuff>
+		<operateType>A2</operateType>
+		<magicLevel>80</magicLevel>
+		<isMagic>0</isMagic>
 		<castRange>400</castRange>
-		<hitTime>1000</hitTime>
+		<effectRange>900</effectRange>
+		<activateRate>80</activateRate>
+		<abnormalTime>15</abnormalTime>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<trait>BOSS</trait>
 		<effectPoint>-204</effectPoint>
+		<hitTime>200</hitTime>
+		<isDebuff>true</isDebuff>
+		<lvlBonusRate>0</lvlBonusRate>
+		<reuseDelay>500</reuseDelay>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>ENEMY_ONLY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="Speed">
+				<amount>-20</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="1613" toLevel="10" name="Body Impale">
 		<!-- Attacks the enemy with $s1 Power added to P. Atk., inflicts Stun for $s2 and dispels $s3 buff(s) from a stunned target. Requires a blunt weapon. Ignores Shield Defense. Over-hit. -->

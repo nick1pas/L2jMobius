@@ -597,27 +597,24 @@
 	<skill id="1514" toLevel="2" name="Soul Barrier">
 		<!-- Spreads the soul's defensive barrier to get your Bow Resistance +$s2, Crossbow Resistance +$s3, and M. Def. +$s4 for $s1. -->
 		<icon>icon.skill1514</icon>
-		<abnormalLevel>
-			<value level="1">1</value>
-			<value level="2">2</value>
-		</abnormalLevel>
-		<abnormalTime>30</abnormalTime>
-		<abnormalType>PD_UP_BOW</abnormalType>
-		<effectPoint>
-			<value level="1">138</value>
-			<value level="2">140</value>
-		</effectPoint>
-		<hitTime>1000</hitTime>
-		<isMagic>0</isMagic>
+		<operateType>A2</operateType>
 		<magicLevel>
 			<value level="1">58</value>
 			<value level="2">80</value>
 		</magicLevel>
+		<isMagic>0</isMagic>
 		<mpConsume>
 			<value level="1">50</value>
 			<value level="2">60</value>
 		</mpConsume>
-		<operateType>A2</operateType>
+		<abnormalTime>30</abnormalTime>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+		</abnormalLevel>
+		<abnormalType>PD_UP_BOW</abnormalType>
+		<effectPoint>0</effectPoint>
+		<hitTime>1000</hitTime>
 		<reuseDelay>60000</reuseDelay>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -642,7 +639,13 @@
 	<skill id="1515" toLevel="5" name="Lightning Barrier">
 		<!-- Spreads lightning's defensive barrier for 30 seconds. Has a chance to Paralyze the target that attacked you for 3 seconds.\n\n<Auto Use Skill> -->
 		<icon>icon.skill1515</icon>
-		<abnormalLevel>1</abnormalLevel>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
 		<abnormalType>ELEMENTAL_ARMOR</abnormalType>
 		<effectPoint>138</effectPoint>
@@ -655,8 +658,20 @@
 			<value level="4">82</value>
 			<value level="5">84</value>
 		</magicLevel>
-		<mpConsume>29</mpConsume>
-		<mpInitialConsume>8</mpInitialConsume>
+		<mpConsume>
+			<value level="1">20</value>
+			<value level="2">23</value>
+			<value level="3">25</value>
+			<value level="4">28</value>
+			<value level="5">30</value>
+		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">10</value>
+			<value level="2">12</value>
+			<value level="3">15</value>
+			<value level="4">17</value>
+			<value level="5">20</value>
+		</mpInitialConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>300000</reuseDelay>
 		<basicProperty>NONE</basicProperty>
@@ -667,11 +682,17 @@
 			<effect name="TriggerSkillByDamage">
 				<!-- Lightning Barrier -->
 				<attackerType>Creature</attackerType>
-				<chance>20</chance>
+				<chance>70</chance>
 				<targetType>TARGET</targetType>
 				<minDamage>1</minDamage>
 				<skillId>5592</skillId> <!-- Lightning Barrier -->
-				<skillLevel>1</skillLevel>
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</skillLevel>
 			</effect>
 		</effects>
 	</skill>
@@ -679,23 +700,98 @@
 		<!-- When equipping a Rapier, has a chance to inflict additional M. Atk. when attacking the enemy. The type of M. Atk. that occurs for Soul Strike depends on the attack style.
 			<Physical Attack>Sword Energy\n<Magci Attack>Lightning -->
 		<icon>icon.skill1516</icon>
-		<castRange>750</castRange>
-		<effectPoint>-662</effectPoint>
-		<effectRange>1250</effectRange>
-		<hitTime>2000</hitTime>
-		<isMagic>1</isMagic> <!-- Magic Skill -->
-		<magicLevel>76</magicLevel>
-		<mpConsume>27</mpConsume>
-		<mpInitialConsume>7</mpInitialConsume>
-		<operateType>A1</operateType>
-		<reuseDelay>15000</reuseDelay>
-		<soulMaxConsumeCount>5</soulMaxConsumeCount>
+		<magicLevel>
+			<value level="1">20</value>
+			<value level="2">30</value>
+			<value level="3">40</value>
+			<value level="4">50</value>
+			<value level="5">60</value>
+			<value level="6">70</value>
+			<value level="7">75</value>
+			<value level="8">80</value>
+			<value level="9">85</value>
+			<value level="10">90</value>
+		</magicLevel>
+		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
-		<targetType>ENEMY</targetType>
-		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="MagicalSoulAttack">
-				<power>166</power>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<chance>20</chance>
+				<targetType>ENEMY</targetType>
+				<minDamage>1</minDamage>
+				<isCritical>false</isCritical>
+				<allowWeapons>RAPIER</allowWeapons>
+				<skillId>45165</skillId> <!-- Soul Strike -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<chance>20</chance>
+				<targetType>ENEMY_ONLY</targetType>
+				<minDamage>1</minDamage>
+				<isCritical>true</isCritical>
+				<allowWeapons>RAPIER</allowWeapons>
+				<skillId>45165</skillId> <!-- Soul Strike -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByMagicType">
+				<magicTypes>0</magicTypes>
+				<skillId>45166</skillId> <!-- Soul Strike -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+				<chance>30</chance>
+				<targetType>ENEMY_ONLY</targetType>
+			</effect>
+			<effect name="TriggerSkillByMagicType">
+				<magicTypes>1</magicTypes>
+				<skillId>45167</skillId> <!-- Soul Strike -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+				<chance>40</chance>
+				<targetType>ENEMY_ONLY</targetType>
 			</effect>
 		</effects>
 	</skill>
@@ -3369,8 +3465,16 @@
 	<skill id="1556" toLevel="5" name="Arcane Shield">
 		<!-- For $s1, damage received -$s2 and turns the remaining damage into MP Consumption. When MP becomes 0, the skill's effect disappears. -->
 		<icon>icon.skill1556</icon>
-		<abnormalLevel>1</abnormalLevel>
+		<operateType>A2</operateType>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+			<value level="4">4</value>
+			<value level="5">5</value>
+		</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
+		<abnormalType>MP_SHIELD</abnormalType>
 		<abnormalVisualEffect>MP_SHIELD</abnormalVisualEffect>
 		<effectPoint>
 			<value level="1">138</value>
@@ -3388,14 +3492,18 @@
 			<value level="4">83</value>
 			<value level="5">84</value>
 		</magicLevel>
-		<mpConsume>98</mpConsume>
+		<mpConsume>
+			<value level="1">85</value>
+			<value level="2">90</value>
+			<value level="3">95</value>
+			<value level="4">100</value>
+			<value level="5">105</value>
+		</mpConsume>
 		<mpInitialConsume>25</mpInitialConsume>
-		<operateType>A2</operateType>
 		<reuseDelay>300000</reuseDelay>
-		<abnormalType>MP_SHIELD</abnormalType>
+		<staticReuse>true</staticReuse>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
-		<staticReuse>true</staticReuse>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>

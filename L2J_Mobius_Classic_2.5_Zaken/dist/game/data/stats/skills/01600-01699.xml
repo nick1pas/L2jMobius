@@ -652,20 +652,22 @@
 	<skill id="1612" toLevel="1" name="Slowing Power">
 		<!-- For 15 seconds decreases Speed by 20%. -->
 		<icon>icon.skill0210</icon>
-		<abnormalLevel>1</abnormalLevel>
-		<abnormalTime>15</abnormalTime>
-		<activateRate>80</activateRate>
-		<basicProperty>PHYSICAL</basicProperty>
+		<operateType>A2</operateType>
+		<magicLevel>80</magicLevel>
+		<isMagic>0</isMagic>
 		<castRange>400</castRange>
-		<effectPoint>-204</effectPoint>
 		<effectRange>900</effectRange>
+		<activateRate>80</activateRate>
+		<abnormalTime>15</abnormalTime>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalType>SPEED_DOWN</abnormalType>
+		<basicProperty>PHYSICAL</basicProperty>
+		<trait>BOSS</trait>
+		<effectPoint>-204</effectPoint>
 		<hitTime>200</hitTime>
 		<isDebuff>true</isDebuff>
-		<isMagic>0</isMagic>
-		<lvlBonusRate>20</lvlBonusRate>
-		<magicLevel>-1</magicLevel>
-		<operateType>A2</operateType>
-		<reuseDelay>1000</reuseDelay>
+		<lvlBonusRate>0</lvlBonusRate>
+		<reuseDelay>500</reuseDelay>
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY_ONLY</targetType>
