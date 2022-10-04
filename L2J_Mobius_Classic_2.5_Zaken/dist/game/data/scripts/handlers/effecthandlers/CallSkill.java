@@ -16,6 +16,7 @@
  */
 package handlers.effecthandlers;
 
+import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
@@ -34,11 +35,13 @@ public class CallSkill extends AbstractEffect
 {
 	private final SkillHolder _skill;
 	private final int _skillLevelScaleTo;
+	private final int _chance;
 	
 	public CallSkill(StatSet params)
 	{
 		_skill = new SkillHolder(params.getInt("skillId"), params.getInt("skillLevel", 1), params.getInt("skillSubLevel", 0));
 		_skillLevelScaleTo = params.getInt("skillLevelScaleTo", 0);
+		_chance = params.getInt("chance", 100);
 	}
 	
 	@Override
@@ -50,6 +53,11 @@ public class CallSkill extends AbstractEffect
 	@Override
 	public void instant(Creature effector, Creature effected, Skill skill, Item item)
 	{
+		if ((_chance < 100) && (Rnd.get(100) > _chance))
+		{
+			return;
+		}
+		
 		Skill triggerSkill = null;
 		if (_skillLevelScaleTo <= 0)
 		{
