@@ -83,6 +83,7 @@ import org.l2jmobius.gameserver.network.clientpackets.crystalization.RequestCrys
 import org.l2jmobius.gameserver.network.clientpackets.crystalization.RequestCrystallizeItemCancel;
 import org.l2jmobius.gameserver.network.clientpackets.enchant.RequestExAddEnchantScrollItem;
 import org.l2jmobius.gameserver.network.clientpackets.enchant.RequestExCancelEnchantItem;
+import org.l2jmobius.gameserver.network.clientpackets.enchant.RequestExRemoveEnchantSupportItem;
 import org.l2jmobius.gameserver.network.clientpackets.enchant.RequestExTryToPutEnchantSupportItem;
 import org.l2jmobius.gameserver.network.clientpackets.enchant.RequestExTryToPutEnchantTargetItem;
 import org.l2jmobius.gameserver.network.clientpackets.enchant.multi.ExRequestFinishMultiEnchantScroll;
@@ -178,9 +179,8 @@ import org.l2jmobius.gameserver.network.clientpackets.training.NotifyTrainingRoo
 import org.l2jmobius.gameserver.network.clientpackets.variation.ExApplyVariationOption;
 import org.l2jmobius.gameserver.network.clientpackets.variation.ExVariationCloseUi;
 import org.l2jmobius.gameserver.network.clientpackets.variation.ExVariationOpenUi;
+import org.l2jmobius.gameserver.network.clientpackets.variation.RequestConfirmGemStone;
 import org.l2jmobius.gameserver.network.clientpackets.variation.RequestRefine;
-import org.l2jmobius.gameserver.network.serverpackets.enchant.RequestExRemoveEnchantSupportItem;
-import org.l2jmobius.gameserver.network.serverpackets.variation.RequestConfirmGemStone;
 
 /**
  * @author Sdw
