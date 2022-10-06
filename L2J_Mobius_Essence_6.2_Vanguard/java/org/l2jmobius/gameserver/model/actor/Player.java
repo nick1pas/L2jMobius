@@ -8299,15 +8299,16 @@ public class Player extends Playable
 	{
 		for (int i = 1; i <= _hennaPoten.length; i++)
 		{
-			final HennaPoten hennaPoten = _hennaPoten[i - 1];
 			for (int skillId : HennaPatternPotentialData.getInstance().getSkillIdsBySlotId(i))
 			{
 				removeSkill(skillId);
 			}
-			if ((hennaPoten.getPotenId() > 0) && hennaPoten.isPotentialAvailable() && (hennaPoten.getActiveStep() > 0))
+			
+			final HennaPoten hennaPoten = _hennaPoten[i - 1];
+			if ((hennaPoten != null) && (hennaPoten.getPotenId() > 0) && hennaPoten.isPotentialAvailable() && (hennaPoten.getActiveStep() > 0))
 			{
 				final Skill hennaSkill = HennaPatternPotentialData.getInstance().getPotentialSkill(hennaPoten.getPotenId(), i, hennaPoten.getActiveStep());
-				if (hennaSkill.getLevel() > getSkillLevel(hennaSkill.getId()))
+				if (hennaSkill != null && (hennaSkill.getLevel() > getSkillLevel(hennaSkill.getId())))
 				{
 					addSkill(hennaSkill, false);
 				}
