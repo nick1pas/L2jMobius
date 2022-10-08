@@ -131,6 +131,12 @@ public class ExRequestMultiEnchantItemList implements IClientIncomingPacket
 			}
 			
 			final Item enchantItem = player.getInventory().getItemByObjectId(request.getMultiEnchantingItemsBySlot(i));
+			if (enchantItem == null)
+			{
+				player.removeRequest(request.getClass());
+				return;
+			}
+			
 			if (scrollTemplate.getMaxEnchantLevel() < enchantItem.getEnchantLevel())
 			{
 				Logger.getLogger("MultiEnchant - player " + player.getObjectId() + " " + player.getName() + " trying over-enchant item " + enchantItem.getItemName() + " " + enchantItem.getObjectId());
