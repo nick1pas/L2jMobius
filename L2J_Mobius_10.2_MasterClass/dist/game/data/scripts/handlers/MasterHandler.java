@@ -239,6 +239,7 @@ import handlers.playeractions.TacticalSignUse;
 import handlers.playeractions.TeleportBookmark;
 import handlers.playeractions.UnsummonPet;
 import handlers.playeractions.UnsummonServitor;
+import handlers.playeractions.WaitingAction;
 import handlers.punishmenthandlers.BanHandler;
 import handlers.punishmenthandlers.ChatBanHandler;
 import handlers.punishmenthandlers.JailHandler;
@@ -687,7 +688,8 @@ public class MasterHandler
 			TacticalSignUse.class,
 			TeleportBookmark.class,
 			UnsummonPet.class,
-			UnsummonServitor.class
+			UnsummonServitor.class,
+			WaitingAction.class
 		}
 	};
 	
