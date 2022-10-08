@@ -21,7 +21,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * Written by Berezkin Nikolay, on 13.04.2021
+ * @author Berezkin Nikolay
  */
 public class ExCollectionComplete implements IClientOutgoingPacket
 {
@@ -37,6 +37,7 @@ public class ExCollectionComplete implements IClientOutgoingPacket
 	{
 		OutgoingPackets.EX_COLLECTION_COMPLETE.writeId(packet);
 		packet.writeH(_collectionId);
+		packet.writeD(0);
 		return true;
 	}
 }

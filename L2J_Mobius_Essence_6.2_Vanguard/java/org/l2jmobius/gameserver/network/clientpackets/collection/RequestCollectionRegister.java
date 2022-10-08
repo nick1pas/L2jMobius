@@ -26,7 +26,10 @@ import org.l2jmobius.gameserver.model.holders.PlayerCollectionData;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.options.Options;
 import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ConfirmDlg;
+import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionComplete;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionRegister;
 
@@ -86,15 +89,27 @@ public class RequestCollectionRegister implements IClientIncomingPacket
 			return;
 		}
 		
+		PlayerCollectionData currentColl = player.getCollections().stream().filter(it -> it.getCollectionId() == _collectionId).findAny().orElse(null);
+		if ((currentColl != null) && (currentColl.getIndex() == _index))
+		{
+			player.sendPacket(new ExCollectionRegister(false, _collectionId, _index, new ItemEnchantHolder(item.getId(), count, item.getEnchantLevel())));
+			player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_ADDED_TO_YOUR_COLLECTION);
+			player.sendPacket(new ConfirmDlg("Collection already registered;"));
+			return;
+		}
+		
 		player.destroyItem("Collection", item, count, player, true);
 		
-		player.sendPacket(new ExCollectionRegister(_collectionId, _index, item));
+		player.sendPacket(new ExCollectionRegister(true, _collectionId, _index, new ItemEnchantHolder(item.getId(), count, item.getEnchantLevel())));
 		
 		player.getCollections().add(new PlayerCollectionData(_collectionId, item.getId(), _index));
 		
 		if (player.getCollections().stream().filter(it -> it.getCollectionId() == _collectionId).count() == collection.getCompleteCount())
 		{
 			player.sendPacket(new ExCollectionComplete(_collectionId));
+			
+			// TODO: CollectionData.getInstance().getCollection(_collectionId).getName()
+			player.sendPacket(new SystemMessage(SystemMessageId.S1_COLLECTION_IS_COMPLETED).addString(""));
 			
 			// Apply collection option if all requirements are met.
 			final Options options = OptionData.getInstance().getOptions(collection.getOptionId());

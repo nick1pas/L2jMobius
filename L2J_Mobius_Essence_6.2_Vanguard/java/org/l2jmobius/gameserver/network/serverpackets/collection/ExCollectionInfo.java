@@ -28,7 +28,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * Written by Berezkin Nikolay, on 12.04.2021
+ * @author Berezkin Nikolay
  */
 public class ExCollectionInfo implements IClientOutgoingPacket
 {
@@ -60,7 +60,8 @@ public class ExCollectionInfo implements IClientOutgoingPacket
 			{
 				packet.writeC(current.getIndex());
 				packet.writeD(current.getItemId());
-				packet.writeH(CollectionData.getInstance().getCollection(collection).getItems().get(current.getIndex()).getEnchantLevel()); // enchant level
+				packet.writeC(CollectionData.getInstance().getCollection(collection).getItems().get(current.getIndex()).getEnchantLevel()); // enchant level
+				packet.writeC(0); // unk flag for item
 				packet.writeC(0); // unk flag for item
 				packet.writeD(1); // count
 			}
