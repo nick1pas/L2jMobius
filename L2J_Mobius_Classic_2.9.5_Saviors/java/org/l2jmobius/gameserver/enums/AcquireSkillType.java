@@ -29,7 +29,7 @@ public enum AcquireSkillType
 	TRANSFORM(4),
 	TRANSFER(5),
 	SUBCLASS(6),
-	COLLECT(7),
+	CERTIFICATION(7),
 	DUMMY2(8),
 	DUMMY3(9),
 	FISHING(10),

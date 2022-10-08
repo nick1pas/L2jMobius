@@ -89,7 +89,7 @@ public class RequestAcquireSkillInfo implements IClientIncomingPacket
 			case TRANSFORM:
 			case FISHING:
 			case SUBCLASS:
-			case COLLECT:
+			case CERTIFICATION:
 			case TRANSFER:
 			case DUALCLASS:
 			{

@@ -61,7 +61,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
  * <ul>
  * <li>Class skill trees: player skill trees for each class.</li>
  * <li>Transfer skill trees: player skill trees for each healer class.</li>
- * <li>Collect skill tree: player skill tree for Gracia related skills.</li>
+ * <li>Certification skill tree: player skill tree for certification-related skills.</li>
  * <li>Fishing skill tree: player skill tree for fishing related skills.</li>
  * <li>Transform skill tree: player skill tree for transformation related skills.</li>
  * <li>Sub-Class skill tree: player skill tree for sub-class related skills.</li>
@@ -87,7 +87,7 @@ public class SkillTreeData implements IXmlReader
 	private static final Map<SubclassType, Map<Long, SkillLearn>> _revelationSkillTree = new ConcurrentHashMap<>();
 	private static final Map<ClassId, Set<Integer>> _awakeningSaveSkillTree = new ConcurrentHashMap<>();
 	// Skill Hash Code, SkillLearn
-	private static final Map<Long, SkillLearn> _collectSkillTree = new ConcurrentHashMap<>();
+	private static final Map<Long, SkillLearn> _certificationSkillTree = new ConcurrentHashMap<>();
 	private static final Map<Long, SkillLearn> _fishingSkillTree = new ConcurrentHashMap<>();
 	private static final Map<Long, SkillLearn> _pledgeSkillTree = new ConcurrentHashMap<>();
 	private static final Map<Long, SkillLearn> _subClassSkillTree = new ConcurrentHashMap<>();
@@ -128,7 +128,7 @@ public class SkillTreeData implements IXmlReader
 	{
 		_loading = true;
 		_classSkillTrees.clear();
-		_collectSkillTree.clear();
+		_certificationSkillTree.clear();
 		_fishingSkillTree.clear();
 		_pledgeSkillTree.clear();
 		_subClassSkillTree.clear();
@@ -298,9 +298,9 @@ public class SkillTreeData implements IXmlReader
 										transferSkillTree.put(skillHashCode, skillLearn);
 										break;
 									}
-									case "collectSkillTree":
+									case "certificationSkillTree":
 									{
-										_collectSkillTree.put(skillHashCode, skillLearn);
+										_certificationSkillTree.put(skillHashCode, skillLearn);
 										break;
 									}
 									case "raceSkillTree":
@@ -484,12 +484,12 @@ public class SkillTreeData implements IXmlReader
 	}
 	
 	/**
-	 * Gets the collect skill tree.
-	 * @return the complete Collect Skill Tree
+	 * Gets the Certification skill tree.
+	 * @return the complete Certification Skill Tree
 	 */
-	public Map<Long, SkillLearn> getCollectSkillTree()
+	public Map<Long, SkillLearn> getCertificationSkillTree()
 	{
-		return _collectSkillTree;
+		return _certificationSkillTree;
 	}
 	
 	/**
@@ -959,14 +959,14 @@ public class SkillTreeData implements IXmlReader
 	}
 	
 	/**
-	 * Used in Gracia continent.
-	 * @param player the collecting skill learning player
-	 * @return all the available Collecting skills for a given {@code player}
+	 * Implemented in Secret of Empire
+	 * @param player the certification skill learning player
+	 * @return all the available Certification skills for a given {@code player}
 	 */
-	public List<SkillLearn> getAvailableCollectSkills(Player player)
+	public List<SkillLearn> getAvailableCertificationSkills(Player player)
 	{
 		final List<SkillLearn> result = new ArrayList<>();
-		for (SkillLearn skill : _collectSkillTree.values())
+		for (SkillLearn skill : _certificationSkillTree.values())
 		{
 			final Skill oldSkill = player.getSkills().get(skill.getSkillId());
 			if (oldSkill != null)
@@ -1229,9 +1229,9 @@ public class SkillTreeData implements IXmlReader
 				sl = getSubClassSkill(id, lvl);
 				break;
 			}
-			case COLLECT:
+			case CERTIFICATION:
 			{
-				sl = getCollectSkill(id, lvl);
+				sl = getCertificationSkill(id, lvl);
 				break;
 			}
 			case REVELATION:
@@ -1405,14 +1405,14 @@ public class SkillTreeData implements IXmlReader
 	}
 	
 	/**
-	 * Gets the collect skill.
-	 * @param id the collect skill Id
-	 * @param lvl the collect skill level
-	 * @return the collect skill from the Collect Skill Tree for a given {@code id} and {@code lvl}
+	 * Gets the certification skill.
+	 * @param id the certification skill Id
+	 * @param lvl the certification skill level
+	 * @return the certification skill from the Certification Skill Tree for a given {@code id} and {@code lvl}
 	 */
-	public SkillLearn getCollectSkill(int id, int lvl)
+	public SkillLearn getCertificationSkill(int id, int lvl)
 	{
-		return _collectSkillTree.get(SkillData.getSkillHashCode(id, lvl));
+		return _certificationSkillTree.get(SkillData.getSkillHashCode(id, lvl));
 	}
 	
 	/**
@@ -1712,7 +1712,7 @@ public class SkillTreeData implements IXmlReader
 			}
 		}
 		
-		for (SkillLearn s : _collectSkillTree.values())
+		for (SkillLearn s : _certificationSkillTree.values())
 		{
 			list.add(SkillData.getSkillHashCode(s.getSkillId(), s.getSkillLevel()));
 		}
@@ -1847,7 +1847,7 @@ public class SkillTreeData implements IXmlReader
 		LOGGER.info(className + ": Loaded " + transferSkillTreeCount + " transfer skills for " + _transferSkillTrees.size() + " transfer skill trees.");
 		LOGGER.info(className + ": Loaded " + raceSkillTreeCount + " race skills for " + _raceSkillTree.size() + " race skill trees.");
 		LOGGER.info(className + ": Loaded " + _fishingSkillTree.size() + " fishing skills, " + dwarvenOnlyFishingSkillCount + " Dwarven only fishing skills.");
-		LOGGER.info(className + ": Loaded " + _collectSkillTree.size() + " collect skills.");
+		LOGGER.info(className + ": Loaded " + _certificationSkillTree.size() + " certification skills.");
 		LOGGER.info(className + ": Loaded " + _pledgeSkillTree.size() + " clan skills, " + (_pledgeSkillTree.size() - resSkillCount) + " for clan and " + resSkillCount + " residential.");
 		LOGGER.info(className + ": Loaded " + _subPledgeSkillTree.size() + " sub-pledge skills.");
 		LOGGER.info(className + ": Loaded " + _transformSkillTree.size() + " transform skills.");

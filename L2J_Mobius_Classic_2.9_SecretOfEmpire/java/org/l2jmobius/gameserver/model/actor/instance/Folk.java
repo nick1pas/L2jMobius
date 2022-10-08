@@ -63,12 +63,12 @@ public class Folk extends Npc
 	public static void showSkillList(Player player, Npc npc, ClassId classId)
 	{
 		final int npcId = npc.getTemplate().getId();
-		if (npcId == 32611) // Tolonis (Officer)
+		if (npcId == 30840) // Lorenzo
 		{
-			final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableCollectSkills(player);
+			final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableCertificationSkills(player);
 			if (skills.isEmpty()) // No more skills to learn, come back when you level.
 			{
-				final int minLevel = SkillTreeData.getInstance().getMinLevelForNewSkill(player, SkillTreeData.getInstance().getCollectSkillTree());
+				final int minLevel = SkillTreeData.getInstance().getMinLevelForNewSkill(player, SkillTreeData.getInstance().getCertificationSkillTree());
 				if (minLevel > 0)
 				{
 					final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_DO_NOT_HAVE_ANY_FURTHER_SKILLS_TO_LEARN_COME_BACK_WHEN_YOU_HAVE_REACHED_LEVEL_S1);
@@ -82,7 +82,7 @@ public class Folk extends Npc
 			}
 			else
 			{
-				player.sendPacket(new ExAcquirableSkillListByClass(skills, AcquireSkillType.COLLECT));
+				player.sendPacket(new ExAcquirableSkillListByClass(skills, AcquireSkillType.CERTIFICATION));
 			}
 			return;
 		}

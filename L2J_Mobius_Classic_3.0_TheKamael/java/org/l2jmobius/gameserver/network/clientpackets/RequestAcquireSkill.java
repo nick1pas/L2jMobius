@@ -356,7 +356,7 @@ public class RequestAcquireSkill implements IClientIncomingPacket
 				}
 				break;
 			}
-			case COLLECT:
+			case CERTIFICATION:
 			{
 				if (checkPlayerSkill(player, trainer, s))
 				{

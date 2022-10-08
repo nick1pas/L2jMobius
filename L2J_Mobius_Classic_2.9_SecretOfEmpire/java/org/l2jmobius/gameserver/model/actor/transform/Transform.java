@@ -276,8 +276,8 @@ public class Transform implements IIdentifiable
 						}
 					}
 					
-					// Add collection skills.
-					for (SkillLearn s : SkillTreeData.getInstance().getCollectSkillTree().values())
+					// Add certification skills.
+					for (SkillLearn s : SkillTreeData.getInstance().getCertificationSkillTree().values())
 					{
 						final Skill skill = player.getKnownSkill(s.getSkillId());
 						if (skill != null)
