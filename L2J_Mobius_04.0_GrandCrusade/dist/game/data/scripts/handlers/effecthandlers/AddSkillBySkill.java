@@ -16,7 +16,6 @@
  */
 package handlers.effecthandlers;
 
-import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
@@ -57,7 +56,6 @@ public class AddSkillBySkill extends AbstractEffect
 	@Override
 	public void onExit(Creature effector, Creature effected, Skill skill)
 	{
-		effected.removeSkill(_addedSkill.getSkill(), true);
-		ThreadPool.schedule(() -> effected.getStat().recalculateStats(false), 1000);
+		effected.removeSkill(_addedSkill.getSkill(), false);
 	}
 }
