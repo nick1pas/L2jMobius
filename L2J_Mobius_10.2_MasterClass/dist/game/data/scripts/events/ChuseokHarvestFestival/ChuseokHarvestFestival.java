@@ -65,6 +65,15 @@ public class ChuseokHarvestFestival extends LongTimeEvent
 		String htmltext = null;
 		switch (event)
 		{
+			case "34604.htm":
+			case "34604-1.htm":
+			case "34605.htm":
+			case "34605-1.htm":
+			case "34605-2.htm":
+			{
+				htmltext = event;
+				break;
+			}
 			case "getTicket":
 			{
 				if (npc.getId() != FULL_MOON)
@@ -104,7 +113,7 @@ public class ChuseokHarvestFestival extends LongTimeEvent
 					break;
 				}
 				
-				SkillCaster.triggerCast(npc, player, ENERGY_BUFF.getSkill());
+				SkillCaster.triggerCast(player, player, ENERGY_BUFF.getSkill());
 				break;
 			}
 			case "moveToTheMoon":
