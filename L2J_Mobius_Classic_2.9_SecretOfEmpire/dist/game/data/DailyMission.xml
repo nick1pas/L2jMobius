@@ -1931,14 +1931,14 @@
 			<item id="49591" count="1" />
 		</items>
 	</reward>
-	<reward id="224" reward_id="100" name="Login Once During the Weekend" requiredCompletion="1">
+	<reward id="224" reward_id="100" name="Login Once During the Weekend" requiredCompletion="1" isOneTime="false" duration="WEEKEND">
 		<!-- Receive it when you login once during the weekend. -->
 		<handler name="loginweekend" />
 		<items>
 			<item id="49499" count="1" />
 		</items>
 	</reward>
-	<reward id="225" reward_id="200" name="Login Once During the Month" requiredCompletion="1">
+	<reward id="225" reward_id="200" name="Login Once During the Month" requiredCompletion="1" isOneTime="false" duration="MONTH">
 		<!-- Receive it when you login once during the month. -->
 		<handler name="loginmonth" />
 		<items>
@@ -1959,15 +1959,13 @@
 			<item id="49508" count="360" />
 		</items>
 	</reward>
-	<!-- TODO: joinclan handler
 	<reward id="232" reward_id="300" name="Join the Clan!" requiredCompletion="1">
-		Receive it when you join a clan.
+		<!-- Receive it when you join a clan. -->
 		<handler name="joinclan" />
 		<items>
 			<item id="29978" count="1" />
 		</items>
 	</reward>
-	-->
 	<reward id="233" reward_id="3" name="Participate in 1 Olympiad Match!" requiredCompletion="1">
 		<!-- Receive it when you participate in 1 Olympiad match, regardless of the result. -->
 		<handler name="olympiad" />
@@ -2102,79 +2100,84 @@
 			<item id="70767" count="1" />
 		</items>
 	</reward>
-	<!-- TODO: Weekly monster handler
-	<reward id="261" reward_id="103" name="Weekly Hunting (Lv. 20 or lower)" requiredCompletion="100">
-		Receive it when you kill any 100 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="261" reward_id="103" name="Weekly Hunting (Lv. 20 or lower)" requiredCompletion="100" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 100 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">1</param>
 			<param name="maxLevel">20</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
 			<item id="29648" count="1" />
 		</items>
 	</reward>
-	<reward id="262" reward_id="104" name="Weekly Hunting (Lv. 21-40)" requiredCompletion="150">
-		Receive it when you kill any 150 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="262" reward_id="104" name="Weekly Hunting (Lv. 21-40)" requiredCompletion="150" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 150 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">21</param>
 			<param name="maxLevel">40</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
 			<item id="29648" count="1" />
 		</items>
 	</reward>
-	<reward id="263" reward_id="105" name="Weekly Hunting (Lv. 41-50)" requiredCompletion="200">
-		Receive it when you kill any 200 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="263" reward_id="105" name="Weekly Hunting (Lv. 41-50)" requiredCompletion="200" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 200 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">41</param>
 			<param name="maxLevel">50</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
-			<item id="29648" count="1" />
+			<item id="29648" count="2" />
 		</items>
 	</reward>
-	<reward id="264" reward_id="106" name="Weekly Hunting (Lv. 51-60)" requiredCompletion="250">
-		Receive it when you kill any 250 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="264" reward_id="106" name="Weekly Hunting (Lv. 51-60)" requiredCompletion="250" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 250 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">51</param>
 			<param name="maxLevel">60</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
-			<item id="29649" count="1" />
+			<item id="29648" count="3" />
 		</items>
 	</reward>
-	<reward id="265" reward_id="107" name="Weekly Hunting (Lv. 61-70)" requiredCompletion="300">
-		Receive it when you kill any 300 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="265" reward_id="107" name="Weekly Hunting (Lv. 61-70)" requiredCompletion="300" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 300 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">61</param>
 			<param name="maxLevel">70</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
-			<item id="29649" count="1" />
+			<item id="29649" count="2" />
 		</items>
 	</reward>
-	<reward id="266" reward_id="108" name="Weekly Hunting (Lv. 71-75)" requiredCompletion="400">
-		Receive it when you kill any 400 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="266" reward_id="108" name="Weekly Hunting (Lv. 71-75)" requiredCompletion="400" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 400 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">71</param>
 			<param name="maxLevel">75</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
-			<item id="29649" count="1" />
+			<item id="29650" count="2" />
 		</items>
 	</reward>
-	<reward id="267" reward_id="109" name="Weekly Hunting (Lv. 76 or higher)" requiredCompletion="500">
-		Receive it when you kill any 500 monsters. Monsters that are level 6 or lower than the character are not counted.
+	<reward id="267" reward_id="109" name="Weekly Hunting (Lv. 76 or higher)" requiredCompletion="500" duration="WEEK" isOneTime="false">
+		<!-- Receive it when you kill any 500 monsters. Monsters that are level 6 or lower than the character are not counted. -->
 		<handler name="monster">
 			<param name="minLevel">76</param>
 			<param name="maxLevel">99</param>
+			<param name="duration">WEEK</param>
 		</handler>
 		<items>
-			<item id="29649" count="1" />
+			<item id="29650" count="3" />
 		</items>
 	</reward>
-	-->
-	<reward id="1095" reward_id="110" name="Clan Raid Attack" requiredCompletion="1">
+	<reward id="1095" reward_id="110" name="Clan Raid Attack" requiredCompletion="1" duration="WEEK" isOneTime="false">
 		<!-- Receive it when you defeat 1 enemy on Clan Arena. The quest for this reward available only once per week. For characters that reached Lv. 40 or higher. -->
 		<handler name="monster">
 			<param name="ids">25794,25795,25796,25797,25798,25799,25800,25801,25802,25803,25804,25805,25806,25807,25808,25809,25810,25811,25812,25813</param>
@@ -2205,18 +2208,17 @@
 			<item id="29650" count="1" />
 		</items>
 	</reward>
-	<!-- FIXME: Add ids.
-	<reward id="1102" reward_id="806" name="Special Daily Hunting (Lv. 35-50)" requiredCompletion="100">
-		Receive it when you kill 100 Noses on Alligator Island.
+	<reward id="1102" reward_id="806" name="Special Daily Hunting (Lv. 35-50)" requiredCompletion="100" isOneTime="false">
+		<!-- Receive it when you kill 100 Noses on Alligator Island. -->
 		<handler name="monster">
 			<param name="minLevel">35</param>
 			<param name="maxLevel">50</param>
+			<param name="ids">20793</param>
 		</handler>
 		<items>
 			<item id="49781" count="3" />
 		</items>
 	</reward>
-	-->
 	<reward id="1103" reward_id="807" name="Special Daily Hunting (Lv. 45-60)" requiredCompletion="30">
 		<!-- Receive it when you kill 30 Earth Guardians Harits in Forest of Mirrors. -->
 		<handler name="monster">
@@ -2261,101 +2263,102 @@
 			<item id="90917" count="3" />
 		</items>
 	</reward>
-	<!-- TODO: talkwithnpc handler
 	<reward id="1107" reward_id="502" name="Attribute control">
-		Attribute Spirits appeared in Aden. Ask Attribute Master Svein in Aden about hem. (Only available to characters who have completed their 3rd job advancement.)
-		<handler name="talkwithnpc">
-			<param name="minLevel">76</param>
-			<param name="maxLevel">99</param>
+		<!-- Attribute Spirits appeared in Aden. Ask Attribute Master Svein in Aden about hem. (Only available to characters who have completed their 3rd job advancement.) -->
+		<handler name="spirit">
+			<param name="kind">LEARN</param>
 		</handler>
 		<items>
 			<item id="91030" count="1" />
 		</items>
 	</reward>
-	-->
-	<!-- FIXME: Add ids.
-	<reward id="1108" reward_id="504" name="Wind Hunting Guide" requiredCompletion="700">
-		Go to the Wind Attribute Hinting Ground and attack monsters with Fire Attribute to deal them more damage. (Wind Attribute Hinting Ground: Land of Winds) After completion, the Hunting Guide will continue.
+	<reward id="1108" reward_id="504" name="Wind Hunting Guide" requiredCompletion="700" dailyReset="false" isOneTime="true">
+		<!-- Go to the Wind Attribute Hinting Ground and attack monsters with Fire Attribute to deal them more damage. (Wind Attribute Hinting Ground: Land of Winds) After completion, the Hunting Guide will continue. -->
 		<handler name="monster">
 			<param name="minLevel">76</param>
 			<param name="maxLevel">99</param>
+			<param name="element">WIND</param>
 		</handler>
 		<items>
 			<item id="91033" count="1" />
 		</items>
 	</reward>
-	<reward id="1109" reward_id="505" name="Earth Hunting Guide" requiredCompletion="700">
-		Go to the Earth Attribute Hinting Ground and attack monsters with Wind Attribute to deal them more damage. (Earth Attribute Hinting Ground: Wall of Argos) After completion, the Hunting Guide will continue.
+	<reward id="1109" reward_id="505" name="Earth Hunting Guide" requiredCompletion="700" dailyReset="false" isOneTime="true">
+		<!-- Go to the Earth Attribute Hinting Ground and attack monsters with Wind Attribute to deal them more damage. (Earth Attribute Hinting Ground: Wall of Argos) After completion, the Hunting Guide will continue. -->
 		<handler name="monster">
 			<param name="minLevel">76</param>
 			<param name="maxLevel">99</param>
+			<param name="element">EARTH</param>
 		</handler>
 		<items>
 			<item id="91034" count="1" />
 		</items>
 	</reward>
-	<reward id="1110" reward_id="506" name="Water Hunting Guide" requiredCompletion="700">
-		Go to the Water Attribute Hinting Ground and attack monsters with Earth Attribute to deal them more damage. (Water Attribute Hinting Ground: Garden of Eva) After completion, the Hunting Guide will continue.
+	<reward id="1110" reward_id="506" name="Water Hunting Guide" requiredCompletion="700" dailyReset="false" isOneTime="true">
+		<!-- Go to the Water Attribute Hinting Ground and attack monsters with Earth Attribute to deal them more damage. (Water Attribute Hinting Ground: Garden of Eva) After completion, the Hunting Guide will continue. -->
 		<handler name="monster">
 			<param name="minLevel">76</param>
 			<param name="maxLevel">99</param>
+			<param name="element">WATER</param>
 		</handler>
 		<items>
 			<item id="91031" count="1" />
 		</items>
 	</reward>
-	<reward id="1111" reward_id="507" name="Fire Hunting Guide" requiredCompletion="700">
-		Go to the Fire Attribute Hinting Ground and attack monsters with water Attribute to deal them more damage. (Fire Attribute Hinting Ground: Forge of Gods) After completion, the Hunting Guide will continue.
+	<reward id="1111" reward_id="507" name="Fire Hunting Guide" requiredCompletion="700" dailyReset="false" isOneTime="true">
+		<!-- Go to the Fire Attribute Hinting Ground and attack monsters with water Attribute to deal them more damage. (Fire Attribute Hinting Ground: Forge of Gods) After completion, the Hunting Guide will continue. -->
 		<handler name="monster">
 			<param name="minLevel">76</param>
 			<param name="maxLevel">99</param>
+			<param name="element">FIRE</param>
 		</handler>
 		<items>
 			<item id="91032" count="1" />
 		</items>
 	</reward>
-	-->
-	<!-- TODO: spiritevolve handler
+
 	<reward id="1112" reward_id="508" name="Flame Spirit Lv. 3" requiredCompletion="3">
-		You can get a reward for evolving Flame Spirit. Evolve Flame Spirit up to Lv. 3. You can get a reward only once.
-		<handler name="spiritevolve">
+		<!-- You can get a reward for evolving Flame Spirit. Evolve Flame Spirit up to Lv. 3. You can get a reward only once. -->
+		<handler name="spirit">
 			<param name="element">FIRE</param>
+			<param name="kind">EVOLVE</param>
 		</handler>
 		<items>
 			<item id="91056" count="1" />
 		</items>
 	</reward>
 	<reward id="1113" reward_id="509" name="Water Spirit Lv. 3" requiredCompletion="3">
-		You can get a reward for evolving Water Spirit. Evolve Water Spirit up to Lv. 3. You can get a reward only once.
-		<handler name="spiritevolve">
+		<!-- You can get a reward for evolving Water Spirit. Evolve Water Spirit up to Lv. 3. You can get a reward only once. -->
+		<handler name="spirit">
 			<param name="element">WATER</param>
+			<param name="kind">EVOLVE</param>
 		</handler>
 		<items>
 			<item id="91055" count="1" />
 		</items>
 	</reward>
 	<reward id="1114" reward_id="510" name="Wind Spirit Lv. 3" requiredCompletion="3">
-		You can get a reward for evolving Wind Spirit. Evolve Wind Spirit up to Lv. 3. You can get a reward only once.
-		<handler name="spiritevolve">
+		<!-- You can get a reward for evolving Wind Spirit. Evolve Wind Spirit up to Lv. 3. You can get a reward only once. -->
+		<handler name="spirit">
 			<param name="element">WIND</param>
+			<param name="kind">EVOLVE</param>
 		</handler>
 		<items>
 			<item id="91057" count="1" />
 		</items>
 	</reward>
 	<reward id="1115" reward_id="511" name="Earth Spirit Lv. 3" requiredCompletion="3">
-		You can get a reward for evolving Earth Spirit. Evolve Earth Spirit up to Lv. 3. You can get a reward only once.
-		<handler name="spiritevolve">
+		<!-- You can get a reward for evolving Earth Spirit. Evolve Earth Spirit up to Lv. 3. You can get a reward only once. -->
+		<handler name="spirit">
 			<param name="element">EARTH</param>
+			<param name="kind">EVOLVE</param>
 		</handler>
 		<items>
 			<item id="91058" count="1" />
 		</items>
 	</reward>
-	-->
-	<!-- TODO: Weekly monster handler
-	<reward id="1116" reward_id="118" name="Attribute monsters hunting" requiredCompletion="1800">
-		Receive it once a week for Attribute monster hunting.
+	<reward id="1116" reward_id="118" name="Attribute monsters hunting" requiredCompletion="1800" isOneTime="false" duration="WEEK">
+		<!-- Receive it once a week for Attribute monster hunting. -->
 		<handler name="monster">
 			<param name="ids">20792,20794,20795,20796,20797,20798,20799,20800,20801,20802,20803,20849,20995,21661,21662,21663,21664,21665,21666,21667,21668,21669,21670,21671,21672,21673,21674,21675,21676,21678,21685,21686,21761,21762,21763,21764,21765,21766,21767,21768,21769,21770,21771,21772,21773,21774,21775,21776,21777,21778,21779,21780,21781,21782,21783,21784,21785,21786,21787,21788,21789,21790,21791,21792,21793,21813,21814,21815,21816,21817,21818,21819,21820,21821,21822,21823,21824,21825,21826,21827,21828,21829,21830,21831,21832</param>
 			<param name="minLevel">76</param>
@@ -2365,8 +2368,7 @@
 			<item id="91030" count="5" />
 		</items>
 	</reward>
-	-->
-	<reward id="1117" reward_id="811" name="Exploration of Giant's Cave" requiredCompletion="200" isOneTime="false" dailyReset="false">
+	<reward id="1117" reward_id="811" name="Exploration of Giant's Cave" requiredCompletion="200" isOneTime="false">
 		<!-- Receive it when you kill 200 monsters at the top and lower levels of the Giant's Cave ex?ept the Giant's Cave entrance. (For characters that reached Lv. 76 or higher.) -->
 		<handler name="monster">
 			<param name="ids">20651,20652,20654,20656,20657,20658,24015,24016,24021,24022,20655,20771</param>
@@ -2493,69 +2495,66 @@
 			<item id="91406" count="1" />
 		</items>
 	</reward>
-	<!-- TODO: aquireitem handler
 	<reward id="3000" reward_id="819" name="Hero's way I" requiredCompletion="80">
-		When you reach Lv. 80, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<handler name="level">
 			<param name="level">80</param>
 		</handler>
 		<items>
-			<item id="91481" count="5" />
+			<item id="91481" count="5" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="3001" reward_id="820" name="Hero's way II" requiredCompletion="81">
-		When you reach Lv. 81, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<!-- When you reach Lv. 81, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
 			<param name="level">81</param>
 		</handler>
 		<items>
-			<item id="91481" count="10" />
+			<item id="91481" count="10" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="3002" reward_id="821" name="Hero's way III" requiredCompletion="82">
-		When you reach Lv. 82, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<!-- When you reach Lv. 82, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
 			<param name="level">82</param>
 		</handler>
 		<items>
-			<item id="91481" count="15" />
+			<item id="91481" count="15" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="3003" reward_id="822" name="Hero's way IV" requiredCompletion="83">
-		When you reach Lv. 83, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<!-- When you reach Lv. 83, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
 			<param name="level">83</param>
 		</handler>
 		<items>
-			<item id="91481" count="20" />
+			<item id="91481" count="20" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="3004" reward_id="823" name="Hero's way V" requiredCompletion="84">
-		When you reach Lv. 84, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<!-- When you reach Lv. 84, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
 			<param name="level">84</param>
 		</handler>
 		<items>
-			<item id="91481" count="40" />
+			<item id="91481" count="40" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="3005" reward_id="824" name="Hero's way VI" requiredCompletion="85">
-		When you reach Lv. 85, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<!-- When you reach Lv. 85, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
 			<param name="level">85</param>
 		</handler>
 		<items>
-			<item id="91481" count="60" />
+			<item id="91481" count="60" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="3006" reward_id="825" name="Hero's way VII" requiredCompletion="86">
-		When you reach Lv. 86, you will get 1 special token for learning certification skill.
-		<handler name="aquireitem">
+		<!-- When you reach Lv. 86, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
 			<param name="level">86</param>
 		</handler>
 		<items>
-			<item id="91481" count="160" />
+			<item id="91481" count="160" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
-	-->
 </list>

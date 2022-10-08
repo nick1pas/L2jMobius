@@ -91,7 +91,7 @@
 		</items>
 	</reward>
 	-->
-	<reward id="1017" reward_id="117" name="In-game Weekend" requiredCompletion="1" isOneTime="false">
+	<reward id="1017" reward_id="117" name="In-game Weekend" requiredCompletion="1" isOneTime="false" duration="WEEKEND">
 		<!-- Weekly quest. A reward is given for playing the game on Saturday or Sunday. -->
 		<handler name="loginweekend" />
 		<items>
@@ -108,18 +108,13 @@
 			<item id="70000" count="1" />
 		</items>
 	</reward>
-	<!-- TODO: Clan handler
 	<reward id="1023" reward_id="501" name="Joining a Clan" requiredCompletion="1">
-		One-time quest. A reward is given when joining a clan for the first time.
-		<handler name="siege">
-			<param name="minLevel">40</param>
-			<param name="maxLevel">99</param>
-		</handler>
+		<!-- One-time quest. A reward is given when joining a clan for the first time. -->
+		<handler name="joinclan" />
 		<items>
 			<item id="29978" count="1" />
 		</items>
 	</reward>
-	-->
 	<reward id="1095" reward_id="803" name="Clan Raid Attack" requiredCompletion="1" isOneTime="false">
 		<!-- Weekly quest. A reward is given for defeating 1 enemy in the Clan Arena. Required level: 40. -->
 		<handler name="monster">
@@ -836,6 +831,68 @@
 			<item id="49674" count="12" />
 			<item id="91781" count="6" />
 			<item id="90917" count="6" />
+		</items>
+	</reward>
+	<reward id="3000" reward_id="819" name="Hero's way I" requiredCompletion="80">
+		<handler name="level">
+			<param name="level">80</param>
+		</handler>
+		<items>
+			<item id="91481" count="5" /> <!-- Soul Crystal -->
+		</items>
+	</reward>
+	<reward id="3001" reward_id="820" name="Hero's way II" requiredCompletion="81">
+		<!-- When you reach Lv. 81, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
+			<param name="level">81</param>
+		</handler>
+		<items>
+			<item id="91481" count="10" /> <!-- Soul Crystal -->
+		</items>
+	</reward>
+	<reward id="3002" reward_id="821" name="Hero's way III" requiredCompletion="82">
+		<!-- When you reach Lv. 82, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
+			<param name="level">82</param>
+		</handler>
+		<items>
+			<item id="91481" count="15" /> <!-- Soul Crystal -->
+		</items>
+	</reward>
+	<reward id="3003" reward_id="822" name="Hero's way IV" requiredCompletion="83">
+		<!-- When you reach Lv. 83, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
+			<param name="level">83</param>
+		</handler>
+		<items>
+			<item id="91481" count="20" /> <!-- Soul Crystal -->
+		</items>
+	</reward>
+	<reward id="3004" reward_id="823" name="Hero's way V" requiredCompletion="84">
+		<!-- When you reach Lv. 84, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
+			<param name="level">84</param>
+		</handler>
+		<items>
+			<item id="91481" count="40" /> <!-- Soul Crystal -->
+		</items>
+	</reward>
+	<reward id="3005" reward_id="824" name="Hero's way VI" requiredCompletion="85">
+		<!-- When you reach Lv. 85, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
+			<param name="level">85</param>
+		</handler>
+		<items>
+			<item id="91481" count="60" /> <!-- Soul Crystal -->
+		</items>
+	</reward>
+	<reward id="3006" reward_id="825" name="Hero's way VII" requiredCompletion="86">
+		<!-- When you reach Lv. 86, you will get 1 special token for learning certification skill. -->
+		<handler name="level">
+			<param name="level">86</param>
+		</handler>
+		<items>
+			<item id="91481" count="160" /> <!-- Soul Crystal -->
 		</items>
 	</reward>
 	<reward id="4010" reward_id="1087" name="Reaching Level 71" requiredCompletion="71">

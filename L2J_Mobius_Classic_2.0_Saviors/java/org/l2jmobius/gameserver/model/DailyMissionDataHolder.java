@@ -16,11 +16,13 @@
  */
 package org.l2jmobius.gameserver.model;
 
+import java.util.Calendar;
 import java.util.List;
 import java.util.function.Function;
 
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.enums.DailyMissionStatus;
+import org.l2jmobius.gameserver.enums.MissionResetType;
 import org.l2jmobius.gameserver.handler.AbstractDailyMissionHandler;
 import org.l2jmobius.gameserver.handler.DailyMissionHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -39,6 +41,7 @@ public class DailyMissionDataHolder
 	private final boolean _dailyReset;
 	private final boolean _isOneTime;
 	private final AbstractDailyMissionHandler _handler;
+	private final MissionResetType _missionResetSlot;
 	
 	public DailyMissionDataHolder(StatSet set)
 	{
@@ -51,6 +54,7 @@ public class DailyMissionDataHolder
 		_dailyReset = set.getBoolean("dailyReset", true);
 		_isOneTime = set.getBoolean("isOneTime", true);
 		_handler = handler != null ? handler.apply(this) : null;
+		_missionResetSlot = set.getObject("duration", MissionResetType.class, MissionResetType.DAY);
 	}
 	
 	public int getId()
@@ -115,7 +119,22 @@ public class DailyMissionDataHolder
 	{
 		if (_handler != null)
 		{
-			_handler.reset();
+			if ((_missionResetSlot == MissionResetType.WEEK) && (Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.MONDAY))
+			{
+				_handler.reset();
+			}
+			else if ((_missionResetSlot == MissionResetType.MONTH) && (Calendar.getInstance().get(Calendar.DAY_OF_MONTH) == 1))
+			{
+				_handler.reset();
+			}
+			else if ((_missionResetSlot == MissionResetType.WEEKEND) && (Calendar.getInstance().get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY))
+			{
+				_handler.reset();
+			}
+			else if (_dailyReset)
+			{
+				_handler.reset();
+			}
 		}
 	}
 }

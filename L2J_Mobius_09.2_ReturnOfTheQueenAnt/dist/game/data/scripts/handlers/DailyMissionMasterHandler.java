@@ -23,6 +23,7 @@ import org.l2jmobius.gameserver.handler.DailyMissionHandler;
 import handlers.dailymissionhandlers.BossDailyMissionHandler;
 import handlers.dailymissionhandlers.CeremonyOfChaosDailyMissionHandler;
 import handlers.dailymissionhandlers.FishingDailyMissionHandler;
+import handlers.dailymissionhandlers.JoinClanDailyMissionHandler;
 import handlers.dailymissionhandlers.LevelDailyMissionHandler;
 import handlers.dailymissionhandlers.LoginMonthDailyMissionHandler;
 import handlers.dailymissionhandlers.LoginWeekendDailyMissionHandler;
@@ -50,6 +51,7 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("boss", BossDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("monster", MonsterDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("fishing", FishingDailyMissionHandler::new);
+		DailyMissionHandler.getInstance().registerHandler("joinclan", JoinClanDailyMissionHandler::new);
 		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ":  Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}
 }

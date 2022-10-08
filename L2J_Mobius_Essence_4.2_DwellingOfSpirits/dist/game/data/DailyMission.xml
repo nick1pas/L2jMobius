@@ -72,7 +72,7 @@
 			<item id="49674" count="1" /> <!-- XP Growth Scroll -->
 		</items>
 	</reward>
-	<reward id="1017" reward_id="117" name="In-game Weekend" requiredCompletion="1" isOneTime="false">
+	<reward id="1017" reward_id="117" name="In-game Weekend" requiredCompletion="1" isOneTime="false" duration="WEEKEND">
 		<!-- Weekly mission. A reward is given for playing the game on Saturday or Sunday. -->
 		<handler name="loginweekend" />
 		<items>
