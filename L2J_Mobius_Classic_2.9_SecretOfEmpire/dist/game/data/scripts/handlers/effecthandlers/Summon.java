@@ -82,6 +82,7 @@ public class Summon extends AbstractEffect
 		{
 			player.getServitors().values().forEach(s -> s.unSummon(player));
 		}
+		
 		final NpcTemplate template = NpcData.getInstance().getTemplate(_npcId);
 		final Servitor summon = new Servitor(template, player);
 		final int consumeItemInterval = (_consumeItemInterval > 0 ? _consumeItemInterval : (template.getRace() != Race.SIEGE_WEAPON ? 240 : 60)) * 1000;
@@ -108,7 +109,7 @@ public class Summon extends AbstractEffect
 		for (BuffInfo effect : player.getEffectList().getEffects())
 		{
 			final Skill sk = effect.getSkill();
-			if (!sk.isBad() && !sk.isTransformation())
+			if (!sk.isBad() && !sk.isTransformation() && skill.isSharedWithSummon())
 			{
 				sk.applyEffects(player, summon, false, effect.getTime());
 			}
