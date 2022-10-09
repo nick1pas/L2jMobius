@@ -119,68 +119,108 @@ public class Antharas extends AbstractInstance
 			case "SPAWN_ANTHARAS":
 			{
 				final Instance world = player.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = addSpawn(ANTHARAS, 185708, 114298, -8221, 0, false, 0, false, world.getId());
 				antharas.disableCoreAI(true);
 				antharas.setRandomWalking(false);
 				antharas.teleToLocation(181323, 114850, -7623, 32542);
 				broadcastPacket(world, null, new PlaySound("BS02_A"));
-				startQuestTimer("CAMERA_1", 23, null, player, false);
+				startQuestTimer("CAMERA_1", 23, antharas, null, false);
 				broadcastPacket(world, new NpcInfo(antharas), null);
 				world.setParameter("antharas", antharas);
 				break;
 			}
 			case "CAMERA_1":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				broadcastPacket(world, new SpecialCamera(antharas, 700, 13, -19, 0, 10000, 20000, 0, 0, 0, 0, 0), null);
-				startQuestTimer("CAMERA_2", 3000, npc, player, false);
+				startQuestTimer("CAMERA_2", 3000, npc, null, false);
 				break;
 			}
 			case "CAMERA_2":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				broadcastPacket(world, new SpecialCamera(antharas, 700, 13, 0, 6000, 10000, 20000, 0, 0, 0, 0, 0), null);
-				startQuestTimer("CAMERA_3", 10000, npc, player, false);
+				startQuestTimer("CAMERA_3", 10000, npc, null, false);
 				break;
 			}
 			case "CAMERA_3":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				broadcastPacket(world, new SpecialCamera(antharas, 3700, 0, -3, 0, 10000, 10000, 0, 0, 0, 0, 0), null);
 				broadcastPacket(world, new SocialAction(antharas.getObjectId(), 1), null);
-				startQuestTimer("CAMERA_4", 200, npc, player, false);
-				startQuestTimer("SOCIAL", 5200, npc, player, false);
+				startQuestTimer("CAMERA_4", 200, npc, null, false);
+				startQuestTimer("SOCIAL", 5200, npc, null, false);
 				break;
 			}
 			case "CAMERA_4":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				broadcastPacket(world, new SpecialCamera(antharas, 1100, 0, -3, 22000, 10000, 30000, 0, 0, 0, 0, 0), null);
-				startQuestTimer("CAMERA_5", 10800, npc, player, false);
+				startQuestTimer("CAMERA_5", 10800, npc, null, false);
 				break;
 			}
 			case "CAMERA_5":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				broadcastPacket(world, new SpecialCamera(antharas, 1100, 0, -3, 300, 10000, 7000, 0, 0, 0, 0, 0), null);
-				startQuestTimer("START_MOVE", 1900, npc, player, false);
+				startQuestTimer("START_MOVE", 1900, npc, null, false);
 				break;
 			}
 			case "SOCIAL":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				broadcastPacket(world, new SocialAction(antharas.getObjectId(), 2), null);
 				break;
 			}
 			case "START_MOVE":
 			{
-				final Instance world = player.getInstanceWorld();
+				final Instance world = npc.getInstanceWorld();
+				if (world == null)
+				{
+					return null;
+				}
+				
 				final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
 				antharas.disableCoreAI(false);
 				antharas.setRandomWalking(true);
@@ -195,7 +235,7 @@ public class Antharas extends AbstractInstance
 				}
 				
 				antharas.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, new Location(179011, 114871, -7704));
-				startQuestTimer("CHECK_ATTACK", 60000, antharas, player, false);
+				startQuestTimer("CHECK_ATTACK", 60000, antharas, null, false);
 				break;
 			}
 			case "SET_REGEN":
@@ -251,7 +291,7 @@ public class Antharas extends AbstractInstance
 						npc.getInstanceWorld().getParameters().set("attacker3hate", attacker3hate - getRandom(10));
 					}
 					manageSkills(npc);
-					startQuestTimer("CHECK_ATTACK", 60000, npc, player, false);
+					startQuestTimer("CHECK_ATTACK", 60000, npc, null, false);
 				}
 				break;
 			}
