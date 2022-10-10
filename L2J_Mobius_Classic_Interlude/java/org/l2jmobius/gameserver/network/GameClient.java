@@ -234,15 +234,6 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 				return;
 			}
 			
-			if (Config.DEBUG_OUTGOING_PACKETS)
-			{
-				final String name = packet.getClass().getSimpleName();
-				if (!Config.ALT_DEV_EXCLUDED_PACKETS.contains(name))
-				{
-					PacketLogger.info("[S] " + name);
-				}
-			}
-			
 			// TODO: Set as parameter to packets used?
 			if (Config.MULTILANG_ENABLE)
 			{
