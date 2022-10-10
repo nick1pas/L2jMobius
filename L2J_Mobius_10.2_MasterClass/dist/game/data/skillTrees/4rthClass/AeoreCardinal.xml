@@ -163,9 +163,6 @@
 			<removeSkill id="30759" /> <!-- Novice Celestial Protection -->
 		</skill>
 		<skill skillName="Basic Fantasia Harmony" skillId="30833" skillLevel="1" getLevel="85" levelUpSp="0" />
-		<skill skillName="Basic Andante Performance" skillId="31004" skillLevel="1" getLevel="85" levelUpSp="0" />
-		<skill skillName="Basic United Resistance" skillId="31006" skillLevel="1" getLevel="85" levelUpSp="0" />
-		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="1" getLevel="85" levelUpSp="0" />
 		<skill skillName="Rebirth" skillId="11768" skillLevel="1" getLevel="85" levelUpSp="0" />
 		<skill skillName="Summon Silver Saint" skillId="8607" skillLevel="1" getLevel="85" levelUpSp="0" />
 		<skill skillName="Purification Field" skillId="1425" skillLevel="1" getLevel="85" levelUpSp="0" />
@@ -249,7 +246,6 @@
 		<skill skillName="Giant's Favor" skillId="11772" skillLevel="2" getLevel="90" levelUpSp="370000" />
 		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="2" getLevel="90" levelUpSp="370000" />
 		<skill skillName="Blessed Resurrection" skillId="11784" skillLevel="2" getLevel="90" levelUpSp="370000" />
-		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="2" getLevel="90" levelUpSp="370000" />
 		<skill skillName="Summon Lumi" skillId="11776" skillLevel="2" getLevel="90" levelUpSp="370000" />
 		<skill skillName="Summon Tree of Life" skillId="11774" skillLevel="2" getLevel="90" levelUpSp="370000" />
 		<skill skillName="Panic Heal" skillId="11756" skillLevel="4" getLevel="90" levelUpSp="370000" />
@@ -312,7 +308,6 @@
 		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="5" getLevel="95" levelUpSp="1000000" />
 		<skill skillName="Blessed Resurrection" skillId="11784" skillLevel="3" getLevel="95" levelUpSp="1000000" />
 		<skill skillName="Frantic Healing" skillId="11782" skillLevel="1" getLevel="95" levelUpSp="1000000" />
-		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="3" getLevel="95" levelUpSp="1000000" />
 		<skill skillName="Summon Lumi" skillId="11776" skillLevel="3" getLevel="95" levelUpSp="1000000" />
 		<skill skillName="Summon Tree of Life" skillId="11774" skillLevel="3" getLevel="95" levelUpSp="1000000" />
 		<skill skillName="Divine Prayer" skillId="11851" skillLevel="3" getLevel="95" levelUpSp="1000000" />
@@ -363,11 +358,13 @@
 		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="4" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Blessed Resurrection" skillId="11784" skillLevel="4" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Frantic Healing" skillId="11782" skillLevel="2" getLevel="99" levelUpSp="5000000" />
-		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="4" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Summon Lumi" skillId="11776" skillLevel="4" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Summon Tree of Life" skillId="11774" skillLevel="4" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Divine Prayer" skillId="11851" skillLevel="4" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Sustain" skillId="11752" skillLevel="8" getLevel="99" levelUpSp="5000000" />
+		<skill skillName="Elemental Resistance" skillId="11861" skillLevel="1" getLevel="99" levelUpSp="5000000">
+			<item id="81887,39738" count="8" /> <!-- Rune Stone -->
+		</skill>
 		<skill skillName="Dark Backfire" skillId="11769" skillLevel="6" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Dark Rain" skillId="11817" skillLevel="8" getLevel="99" levelUpSp="5000000" />
 		<skill skillName="Dark Blast" skillId="11766" skillLevel="8" getLevel="99" levelUpSp="5000000" />
@@ -384,140 +381,140 @@
 			<item id="81887,39738" count="4" /> <!-- Rune Stone -->
 		</skill>
 		
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="6" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="7" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Giant's Favor" skillId="11772" skillLevel="5" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="6" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="5" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="7" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Divinity of Einhasad" skillId="19209" skillLevel="1" getLevel="101" levelUpSp="211440000">
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="6" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="7" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Giant's Favor" skillId="11772" skillLevel="5" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="6" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="5" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="7" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Divinity of Einhasad" skillId="19209" skillLevel="1" getLevel="101" levelUpSp="211439757">
 			<item id="81887,39738" count="8" /> <!-- Rune Stone -->
 		</skill>
-		<skill skillName="Sustain" skillId="11752" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="7" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Dark Force" skillId="11814" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="7" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="9" getLevel="101" levelUpSp="211440000" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="9" getLevel="101" levelUpSp="211440000" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="7" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="7" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="9" getLevel="101" levelUpSp="211439757" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="9" getLevel="101" levelUpSp="211439757" />
 		
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="6" getLevel="102" levelUpSp="507455418" />
-		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="6" getLevel="102" levelUpSp="507455418" />
-		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="6" getLevel="102" levelUpSp="507455418" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="6" getLevel="102" levelUpSp="507455418" />
-		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="6" getLevel="102" levelUpSp="507455418" />
-		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="6" getLevel="102" levelUpSp="507455418" />
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="6" getLevel="102" levelUpSp="253727708" />
+		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="6" getLevel="102" levelUpSp="253727708" />
+		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="6" getLevel="102" levelUpSp="253727708" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="6" getLevel="102" levelUpSp="253727708" />
+		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="6" getLevel="102" levelUpSp="253727708" />
+		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="6" getLevel="102" levelUpSp="253727708" />
 		
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="7" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="8" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Giant's Favor" skillId="11772" skillLevel="6" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="7" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="6" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="8" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Sustain" skillId="11752" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="8" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Dark Force" skillId="11814" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="8" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="10" getLevel="103" levelUpSp="608946501" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="10" getLevel="103" levelUpSp="608946501" />
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="7" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="8" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Giant's Favor" skillId="11772" skillLevel="6" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="7" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="6" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="8" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="8" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="8" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="10" getLevel="103" levelUpSp="304473250" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="10" getLevel="103" levelUpSp="304473250" />
 		
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="7" getLevel="104" levelUpSp="1461471604" />
-		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="7" getLevel="104" levelUpSp="1461471604" />
-		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="7" getLevel="104" levelUpSp="1461471604" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="7" getLevel="104" levelUpSp="1461471604" />
-		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="7" getLevel="104" levelUpSp="1461471604" />
-		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="7" getLevel="104" levelUpSp="1461471604" />
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="7" getLevel="104" levelUpSp="365367900" />
+		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="7" getLevel="104" levelUpSp="365367900" />
+		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="7" getLevel="104" levelUpSp="365367900" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="7" getLevel="104" levelUpSp="365367900" />
+		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="7" getLevel="104" levelUpSp="365367900" />
+		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="7" getLevel="104" levelUpSp="365367900" />
 		
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="8" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="9" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Giant's Favor" skillId="11772" skillLevel="7" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="8" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="7" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="9" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Sustain" skillId="11752" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="9" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Dark Force" skillId="11814" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="9" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="11" getLevel="105" levelUpSp="1753765925" />
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="8" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="9" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Giant's Favor" skillId="11772" skillLevel="7" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="8" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="7" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="9" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="9" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="9" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="11" getLevel="105" levelUpSp="876882959" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="11" getLevel="105" levelUpSp="876882959" />
 		
 		<!-- Fafurion Updates -->
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="8" getLevel="106" levelUpSp="2104519110" />
-		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="8" getLevel="106" levelUpSp="2104519110" />
-		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="8" getLevel="106" levelUpSp="2104519110" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="8" getLevel="106" levelUpSp="2104519110" />
-		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="8" getLevel="106" levelUpSp="2104519110" />
-		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="8" getLevel="106" levelUpSp="2104519110" />
-		<skill skillName="Divine Prayer" skillId="11851" skillLevel="5" getLevel="106" levelUpSp="2104519110" />
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="8" getLevel="106" levelUpSp="1052259551" />
+		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="8" getLevel="106" levelUpSp="1052259551" />
+		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="8" getLevel="106" levelUpSp="1052259551" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="8" getLevel="106" levelUpSp="1052259551" />
+		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="8" getLevel="106" levelUpSp="1052259551" />
+		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="8" getLevel="106" levelUpSp="1052259551" />
+		<skill skillName="Divine Prayer" skillId="11851" skillLevel="5" getLevel="106" levelUpSp="1052259551" />
 
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="9" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="10" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Giant's Favor" skillId="11772" skillLevel="8" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="9" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="8" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Sustain" skillId="11752" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="10" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Dark Force" skillId="11814" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="10" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="12" getLevel="107" levelUpSp="2525422932" />
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="9" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="10" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Giant's Favor" skillId="11772" skillLevel="8" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="9" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="8" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="10" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="10" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="12" getLevel="107" levelUpSp="1262711461" />
 
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="9" getLevel="108" levelUpSp="6061015038" />
-		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="9" getLevel="108" levelUpSp="6061015038" />
-		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="9" getLevel="108" levelUpSp="6061015038" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="9" getLevel="108" levelUpSp="6061015038" />
-		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="9" getLevel="108" levelUpSp="6061015038" />
-		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="9" getLevel="108" levelUpSp="6061015038" />
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="9" getLevel="108" levelUpSp="1515253754" />
+		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="9" getLevel="108" levelUpSp="1515253754" />
+		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="9" getLevel="108" levelUpSp="1515253754" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="9" getLevel="108" levelUpSp="1515253754" />
+		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="9" getLevel="108" levelUpSp="1515253754" />
+		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="9" getLevel="108" levelUpSp="1515253754" />
 
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="10" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="11" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Giant's Favor" skillId="11772" skillLevel="9" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="10" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="9" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Sustain" skillId="11752" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="11" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Dark Force" skillId="11814" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="11" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="13" getLevel="109" levelUpSp="7273218046" />
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="10" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="11" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Giant's Favor" skillId="11772" skillLevel="9" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="10" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="9" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="11" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="11" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="13" getLevel="109" levelUpSp="1818304505" />
 
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="10" getLevel="110" levelUpSp="17455723311" />
-		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="10" getLevel="110" levelUpSp="17455723311" />
-		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="10" getLevel="110" levelUpSp="17455723311" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="10" getLevel="110" levelUpSp="17455723311" />
-		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="10" getLevel="110" levelUpSp="17455723311" />
-		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="10" getLevel="110" levelUpSp="17455723311" />
-		<skill skillName="Divine Prayer" skillId="11851" skillLevel="6" getLevel="110" levelUpSp="17455723311" />
-
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="10" getLevel="110" levelUpSp="4363930811" />
+		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="10" getLevel="110" levelUpSp="4363930811" />
+		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="10" getLevel="110" levelUpSp="4363930811" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="10" getLevel="110" levelUpSp="4363930811" />
+		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="10" getLevel="110" levelUpSp="4363930811" />
+		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="10" getLevel="110" levelUpSp="4363930811" />
+		<skill skillName="Divine Prayer" skillId="11851" skillLevel="6" getLevel="110" levelUpSp="4363930811" />
+		
 		<!-- Dual Maximum HP -->
 		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="1" getLevel="85" getDualClassLevel="85" levelUpSp="0" />
 		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="2" getLevel="90" getDualClassLevel="90" levelUpSp="0" />
@@ -526,105 +523,121 @@
 		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="5" getLevel="101" getDualClassLevel="101" levelUpSp="0" />
 		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="6" getLevel="103" getDualClassLevel="103" levelUpSp="0" />
 		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="7" getLevel="105" getDualClassLevel="105" levelUpSp="0" />
-		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="8" getLevel="107" getDualClassLevel="107" levelUpSp="2525422932" />
-		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="9" getLevel="109" getDualClassLevel="109" levelUpSp="7273218046" />
-		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="10" getLevel="110" getDualClassLevel="110" levelUpSp="17455723311" />
-
+		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="8" getLevel="107" getDualClassLevel="107" levelUpSp="1262711461" />
+		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="9" getLevel="109" getDualClassLevel="109" levelUpSp="1818304505" />
+		<skill skillName="Dual Maximum HP" skillId="1986" skillLevel="10" getLevel="110" getDualClassLevel="110" levelUpSp="4363930811" />
+	
 		<!-- Homunculus -->
-		<skill skillName="Solid Resistance" skillId="30858" skillLevel="1" getLevel="110" levelUpSp="17455723311">
+		<skill skillName="Solid Resistance" skillId="30858" skillLevel="1" getLevel="110" levelUpSp="4363930811">
+			<removeSkill id="11861" onlyReplaceByLearn="true" />
 			<item id="81453" count="1" /> <!-- Improved Rune Stone -->
 		</skill>
 		<skill skillName="Aeore's Defense Mastery" skillId="11791" skillLevel="1" getLevel="85" autoGet="true">
 			<removeSkill id="30735" /> <!-- Intermediate Sigil Mastery -->
 		</skill>
 		<skill skillName="Aeore's Defense Mastery" skillId="11791" skillLevel="2" getLevel="100" levelUpSp="88099899" />
-		<skill skillName="Aeore's Defense Mastery" skillId="11791" skillLevel="3" getLevel="110" levelUpSp="17455723311" />
+		<skill skillName="Aeore's Defense Mastery" skillId="11791" skillLevel="3" getLevel="110" levelUpSp="4363930811" />
 		<skill skillName="Dual Class - Renewed Energy of Power" skillId="30820" skillLevel="1" getLevel="85" getDualClassLevel="85" levelUpSp="0" autoGet="false" />
 
-		<!-- Queen Ant -->
-		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="1" getLevel="115" levelUpSp="49225139737" autoGet="false">
+		<!-- Queen Ant Update -->
+		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="1" getLevel="115" levelUpSp="4363930811" autoGet="false">
 			<item id="81889" count="1" /> <!-- Eraton's Historical Book -->
 		</skill>
-		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="2" getLevel="116" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="2" getLevel="116" levelUpSp="4363930811" autoGet="false">
 			<item id="81889" count="1" /> <!-- Eraton's Historical Book -->
 		</skill>
-		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="3" getLevel="117" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="3" getLevel="117" levelUpSp="4363930811" autoGet="false">
 			<item id="81889" count="1" /> <!-- Eraton's Historical Book -->
 		</skill>
-		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="4" getLevel="118" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="4" getLevel="118" levelUpSp="4363930811" autoGet="false">
 			<item id="81889" count="1" /> <!-- Eraton's Historical Book -->
 		</skill>
-		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="5" getLevel="119" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Eraton's Spear" skillId="30930" skillLevel="5" getLevel="119" levelUpSp="4363930811" autoGet="false">
 			<item id="81889" count="1" /> <!-- Eraton's Historical Book -->
 		</skill>
-		<skill skillName="Masia's Shield" skillId="30931" skillLevel="1" getLevel="110" levelUpSp="17455723311" autoGet="false">
+		<skill skillName="Masia's Shield" skillId="30931" skillLevel="1" getLevel="110" levelUpSp="4363930811" autoGet="false">
 			<item id="81888" count="1" /> <!-- Masia's Historical Book -->
 		</skill>
-		<skill skillName="Masia's Shield" skillId="30931" skillLevel="2" getLevel="111" levelUpSp="20946867973" autoGet="false">
+		<skill skillName="Masia's Shield" skillId="30931" skillLevel="2" getLevel="111" levelUpSp="4363930811" autoGet="false">
 			<item id="81888" count="1" /> <!-- Masia's Historical Book -->
 		</skill>
-		<skill skillName="Masia's Shield" skillId="30931" skillLevel="3" getLevel="112" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Masia's Shield" skillId="30931" skillLevel="3" getLevel="112" levelUpSp="4363930811" autoGet="false">
 			<item id="81888" count="1" /> <!-- Masia's Historical Book -->
 		</skill>
-		<skill skillName="Masia's Shield" skillId="30931" skillLevel="4" getLevel="113" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Masia's Shield" skillId="30931" skillLevel="4" getLevel="113" levelUpSp="4363930811" autoGet="false">
 			<item id="81888" count="1" /> <!-- Masia's Historical Book -->
 		</skill>
-		<skill skillName="Masia's Shield" skillId="30931" skillLevel="5" getLevel="114" levelUpSp="49225139737" autoGet="false">
+		<skill skillName="Masia's Shield" skillId="30931" skillLevel="5" getLevel="114" levelUpSp="4363930811" autoGet="false">
 			<item id="81888" count="1" /> <!-- Masia's Historical Book -->
 		</skill>
-
-		<!-- Master Class Ch. 2 -->
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="14" getLevel="111" levelUpSp="4363930811" />
-		<skill skillName="Radiant Heal" skillId="11755" skillLevel="15" getLevel="116" levelUpSp="4363930811" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="12" getLevel="111" levelUpSp="4363930811" />
-		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="13" getLevel="116" levelUpSp="4363930811" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="14" getLevel="111" levelUpSp="4363930811" />
-		<skill skillName="Dark Rain" skillId="11817" skillLevel="15" getLevel="116" levelUpSp="4363930811" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
-		<skill skillName="Panic Heal" skillId="11756" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
-		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
-		<skill skillName="Dark Blast" skillId="11766" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="11" getLevel="112" levelUpSp="4363930811" />
-		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="12" getLevel="117" levelUpSp="4363930811" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
-		<skill skillName="Erase Impact" skillId="11831" skillLevel="15" getLevel="112" levelUpSp="4363930811" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="14" getLevel="113" levelUpSp="4363930811" />
-		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="15" getLevel="118" levelUpSp="4363930811" />
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="11" getLevel="113" levelUpSp="4363930811" />
-		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="12" getLevel="118" levelUpSp="4363930811" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="14" getLevel="113" levelUpSp="4363930811" />
-		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="15" getLevel="118" levelUpSp="4363930811" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="12" getLevel="113" levelUpSp="4363930811" />
-		<skill skillName="Dark Devour" skillId="11780" skillLevel="13" getLevel="118" levelUpSp="4363930811" />
-		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="10" getLevel="113" levelUpSp="4363930811" />
-		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="11" getLevel="118" levelUpSp="4363930811" />
-		<skill skillName="Sustain" skillId="11752" skillLevel="14" getLevel="114" levelUpSp="4363930811" />
-		<skill skillName="Sustain" skillId="11752" skillLevel="15" getLevel="119" levelUpSp="4363930811" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="10" getLevel="114" levelUpSp="4363930811" />
-		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="11" getLevel="119" levelUpSp="4363930811" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="12" getLevel="114" levelUpSp="4363930811" />
-		<skill skillName="Dark Backfire" skillId="11769" skillLevel="13" getLevel="114" levelUpSp="4363930811" />
+		
+		<!-- Master Class Chapter 2 -->
+		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="1" getLevel="85" levelUpSp="0" />
+		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="2" getLevel="90" levelUpSp="370000" />
+		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="3" getLevel="95" levelUpSp="1000000" />
+		<skill skillName="Basic Musician's Melody" skillId="30993" skillLevel="4" getLevel="99" levelUpSp="5000000" />
+		
+		<skill skillName="Basic Andante Performance" skillId="31004" skillLevel="1" getLevel="85" levelUpSp="0" />
+		
+		<skill skillName="Basic United Resistance" skillId="31006" skillLevel="1" getLevel="85" levelUpSp="0">
+			<removeSkill id="30751" /> <!-- Novice Elemental Resistance -->
+			<removeSkill id="30752" /> <!-- Novice Resistance Debuff -->
+			<removeSkill id="30753" /> <!-- Novice Mental Attack Resistance -->
+		</skill>
+		
 		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
 		<skill skillName="Superior Magic Weapon Mastery" skillId="11751" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
-		<skill skillName="Fairy of Life" skillId="11754" skillLevel="6" getLevel="120" levelUpSp="4363930811" />
-		<skill skillName="Brilliant Purge" skillId="11764" skillLevel="2" getLevel="115" levelUpSp="4363930811">
-			<item id="39738" count="32" /> <!-- Rune Stone -->
-		</skill>
 		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
 		<skill skillName="Superior Armor Mastery" skillId="11787" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
-		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="11" getLevel="120" levelUpSp="4363930811" />
-		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="12" getLevel="114" levelUpSp="4363930811" />
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
+		<skill skillName="Superior Anti Magic" skillId="11789" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
 		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
 		<skill skillName="Superior Elemental Resistance" skillId="11790" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
-		<skill skillName="Aeore's Defense Mastery" skillId="11791" skillLevel="4" getLevel="120" levelUpSp="17455723311" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
+		<skill skillName="Superior Casting Mastery" skillId="11788" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
 		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="11" getLevel="115" levelUpSp="4363930811" />
 		<skill skillName="Superior Mental Attack Resistance" skillId="11792" skillLevel="12" getLevel="120" levelUpSp="4363930811" />
+		<skill skillName="Aeore's Defense Mastery" skillId="11791" skillLevel="4" getLevel="120" levelUpSp="4363930811" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="14" getLevel="114" levelUpSp="4363930811" />
+		<skill skillName="Sustain" skillId="11752" skillLevel="15" getLevel="119" levelUpSp="4363930811" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
+		<skill skillName="Panic Heal" skillId="11756" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="14" getLevel="111" levelUpSp="4363930811" />
+		<skill skillName="Radiant Heal" skillId="11755" skillLevel="15" getLevel="116" levelUpSp="4363930811" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="14" getLevel="113" levelUpSp="4363930811" />
+		<skill skillName="Brilliant Heal" skillId="11757" skillLevel="15" getLevel="118" levelUpSp="4363930811" />
+		<skill skillName="Fairy of Life" skillId="11754" skillLevel="6" getLevel="120" levelUpSp="4363930811" />
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="11" getLevel="113" levelUpSp="4363930811" />
+		<skill skillName="Brilliant Recharge" skillId="11761" skillLevel="12" getLevel="118" levelUpSp="4363930811" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
+		<skill skillName="Radiant Recharge" skillId="11760" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
 		<skill skillName="Solid Resistance" skillId="30858" skillLevel="2" getLevel="115" levelUpSp="4363930811">
-			<item id="81453" count="1" /> <!-- Enhanced Rune Stone -->
+			<removeSkill id="11861" onlyReplaceByLearn="true" />
+			<item id="81453" count="1" /> <!-- Improved Rune Stone -->
 		</skill>
+		<skill skillName="Brilliant Purge" skillId="11764" skillLevel="2" getLevel="115" levelUpSp="4363930811" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="11" getLevel="112" levelUpSp="4363930811" />
+		<skill skillName="Mark of Lumi" skillId="11777" skillLevel="12" getLevel="117" levelUpSp="4363930811" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="12" getLevel="113" levelUpSp="4363930811" />
+		<skill skillName="Dark Devour" skillId="11780" skillLevel="13" getLevel="118" levelUpSp="4363930811" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="14" getLevel="111" levelUpSp="4363930811" />
+		<skill skillName="Dark Rain" skillId="11817" skillLevel="15" getLevel="116" levelUpSp="4363930811" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="12" getLevel="114" levelUpSp="4363930811" />
+		<skill skillName="Dark Backfire" skillId="11769" skillLevel="13" getLevel="119" levelUpSp="4363930811" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
+		<skill skillName="Dark Blast" skillId="11766" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="14" getLevel="113" levelUpSp="4363930811" />
+		<skill skillName="Mass Dark Veil" skillId="11767" skillLevel="15" getLevel="118" levelUpSp="4363930811" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
+		<skill skillName="Dark Force" skillId="11814" skillLevel="15" getLevel="115" levelUpSp="4363930811" />
+		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="10" getLevel="113" levelUpSp="4363930811" />
+		<skill skillName="Mass Fatal Sleep" skillId="11832" skillLevel="11" getLevel="118" levelUpSp="4363930811" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="12" getLevel="111" levelUpSp="4363930811" />
+		<skill skillName="Fatal Sleep" skillId="11778" skillLevel="13" getLevel="116" levelUpSp="4363930811" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="14" getLevel="112" levelUpSp="4363930811" />
+		<skill skillName="Erase Impact" skillId="11831" skillLevel="15" getLevel="117" levelUpSp="4363930811" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="10" getLevel="114" levelUpSp="4363930811" />
+		<skill skillName="Crystal Regeneration" skillId="11765" skillLevel="11" getLevel="119" levelUpSp="4363930811" />
+		
 	</skillTree>
 </list>
