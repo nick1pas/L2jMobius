@@ -858,7 +858,31 @@
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
-		<set name="is_sellable" val="false" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="true" />
+		<set name="is_stackable" val="false" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="28376" min="1" max="1" chance="6.25" /> <!-- Greater Cat's Eye -->
+			<item id="28377" min="1" max="1" chance="6.25" /> <!-- Amethyst -->
+			<item id="47687" min="1" max="1" chance="6.25" /> <!-- Topaz -->
+			<item id="47688" min="1" max="1" chance="6.25" /> <!-- Ruby -->
+			<item id="47689" min="1" max="1" chance="6.25" /> <!-- Sapphire -->
+			<item id="47690" min="1" max="1" chance="6.25" /> <!-- Obsidian -->
+			<item id="47691" min="1" max="1" chance="6.25" /> <!-- Opal -->
+			<item id="47692" min="1" max="1" chance="6.25" /> <!-- Emerald -->
+			<item id="47693" min="1" max="1" chance="6.25" /> <!-- Aquamarine -->
+			<item id="47694" min="1" max="1" chance="6.25" /> <!-- Diamond -->
+			<item id="47695" min="1" max="1" chance="6.25" /> <!-- Pearl -->
+			<item id="47696" min="1" max="1" chance="6.25" /> <!-- Vital Stone -->
+			<item id="47697" min="1" max="1" chance="6.25" /> <!-- Garnet -->
+			<item id="47698" min="1" max="1" chance="6.25" /> <!-- Tanzanite -->
+			<item id="47699" min="1" max="1" chance="6.25" /> <!-- Red Cats Eye -->
+			<item id="47700" min="1" max="1" chance="6.25" /> <!-- Blue Cats Eye -->
+		</capsuled_items>
 	</item>
 	<item id="29879" name="Heavenly Accessory Pack Lv. 3" type="EtcItem">
 		<!-- Double-click to obtain a Lv. 3 heavenly accessory. -->
