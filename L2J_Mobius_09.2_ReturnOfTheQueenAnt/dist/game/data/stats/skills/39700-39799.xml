@@ -16,6 +16,7 @@
 		<!-- When in inventory, maintains the Vitality level. -->
 		<icon>icon.ev_charge_run</icon>
 		<operateType>P</operateType>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
 			<effect name="VitalityPointsRate">
 				<amount>-100</amount>
@@ -258,7 +259,46 @@
 	<skill id="39724" toLevel="1" name="Mentor's Encouragement">
 		<!-- With your mentor's help, your P. Atk./ M. Atk./ P. Def./ M. Def. +5%, Acquired XP/ SP +100%, Vitality bonus +100%. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<abnormalTime>-1</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<isMagic>3</isMagic>
+		<operateType>A2</operateType>
+		<effectPoint>1</effectPoint>
+		<abnormalType>VP_MENTOR_RUNE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-2</specialLevel>
+		<magicLevel>-2</magicLevel>
+		<abnormalLevel>0</abnormalLevel>
+		<irreplacableBuff>true</irreplacableBuff>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<isMentoring>true</isMentoring>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>100</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>100</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39725" toLevel="1" name="Party Appearance Stone">
 		<icon>icon.skill0000</icon>

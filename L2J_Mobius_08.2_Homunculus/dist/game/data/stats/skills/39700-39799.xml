@@ -16,6 +16,7 @@
 		<!-- When in inventory, maintains the Vitality level. -->
 		<icon>icon.ev_charge_run</icon>
 		<operateType>P</operateType>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
 			<effect name="VitalityPointsRate">
 				<amount>-100</amount>
@@ -24,8 +25,13 @@
 	</skill>
 	<skill id="39704" toLevel="1" name="Scroll: Enchant Anhel's Protection">
 		<!-- A scroll to enchant Anhel's Protection. -->
-		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39705" toLevel="1" name="Faeron's Protector Scroll">
 		<!-- All stats +1, acquired XP/ SP +5%. The effect remains after death and main/ dual class changing. Deleted when entering the Olympiad or Ceremony of Chaos. -->
