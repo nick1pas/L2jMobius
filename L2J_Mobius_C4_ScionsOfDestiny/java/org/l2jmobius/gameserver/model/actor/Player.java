@@ -4640,6 +4640,12 @@ public class Player extends Playable
 	
 	public void broadcastCharInfo()
 	{
+		// Client is disconnected.
+		if (isOnlineInt() == 0)
+		{
+			return;
+		}
+		
 		final CharInfo charInfo = new CharInfo(this, false);
 		for (Player player : getKnownList().getKnownPlayers().values())
 		{
