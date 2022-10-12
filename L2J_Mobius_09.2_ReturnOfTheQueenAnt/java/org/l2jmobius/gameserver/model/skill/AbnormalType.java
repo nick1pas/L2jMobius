@@ -264,6 +264,7 @@ public enum AbnormalType
 	PK_DEBUFF1(-1),
 	PK_DEBUFF2(-1),
 	ERATON(-1),
+	EVENT_BUFF(-1),
 	SONGPYEN_BUFF(-1),
 	APPEARANCE_POTION(-1),
 	AB_HAWK_EYE(0),
