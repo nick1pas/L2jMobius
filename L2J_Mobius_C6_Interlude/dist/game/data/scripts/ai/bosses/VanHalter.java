@@ -1258,7 +1258,7 @@ public class VanHalter extends Quest
 		
 		final StatSet info = GrandBossManager.getInstance().getStatSet(29062);
 		final long temp = info.getLong("respawn_time") - System.currentTimeMillis();
-		_intervalTask = ThreadPool.schedule(new Interval(), temp);
+		_intervalTask = ThreadPool.schedule(new Interval(), Math.max(0, temp));
 	}
 	
 	protected class Interval implements Runnable

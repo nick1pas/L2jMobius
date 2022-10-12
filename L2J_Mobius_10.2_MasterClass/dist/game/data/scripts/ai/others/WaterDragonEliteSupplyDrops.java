@@ -74,12 +74,16 @@ public class WaterDragonEliteSupplyDrops extends AbstractNpcAI
 		
 		if (event.equals("schedule"))
 		{
+			final long currentTime = System.currentTimeMillis();
 			final Calendar calendar = Calendar.getInstance();
 			calendar.set(Calendar.HOUR_OF_DAY, 6);
 			calendar.set(Calendar.MINUTE, 30);
-			
+			if (calendar.getTimeInMillis() < currentTime)
+			{
+				calendar.add(Calendar.DAY_OF_YEAR, 1);
+			}
 			cancelQuestTimers("reset");
-			startQuestTimer("reset", calendar.getTimeInMillis() - System.currentTimeMillis(), null, null);
+			startQuestTimer("reset", calendar.getTimeInMillis() - currentTime, null, null);
 		}
 		else if (event.equals("reset"))
 		{
