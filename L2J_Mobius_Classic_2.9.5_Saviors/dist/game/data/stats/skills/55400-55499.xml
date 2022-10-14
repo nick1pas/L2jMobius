@@ -1113,7 +1113,6 @@
 	</skill>
 	<skill id="55475" toLevel="10" name="Diamond">
 		<!-- P. Def. +$s1. -->
-		<!-- TODO: on level 10 add chance of receiving P. critical attack -20% -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_diamond_i00</value>
 			<value level="2">icon.etc_bm_jewel_diamond_i00</value>
@@ -1146,13 +1145,13 @@
 			</effect>
 			<effect name="DefenceCriticalDamage">
 				<amount>
-					<value level="4">4</value>
-					<value level="5">10</value>
-					<value level="6">11</value>
-					<value level="7">12</value>
-					<value level="8">14</value>
-					<value level="9">16</value>
-					<value level="10">10</value>
+					<value level="4">-4</value>
+					<value level="5">-10</value>
+					<value level="6">-11</value>
+					<value level="7">-12</value>
+					<value level="8">-14</value>
+					<value level="9">-16</value>
+					<value level="10">-20</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -1160,7 +1159,6 @@
 	</skill>
 	<skill id="55476" toLevel="10" name="Pearl">
 		<!-- M. Def. +$s1. -->
-		<!-- TODO: on level 10 add Chance of receiving M. Critical Attack -20% -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_pearl_i00</value>
 			<value level="2">icon.etc_bm_jewel_pearl_i00</value>
@@ -1193,13 +1191,13 @@
 			</effect>
 			<effect name="DefenceMagicCriticalDamage">
 				<amount>
-					<value level="4">4</value>
-					<value level="5">10</value>
-					<value level="6">11</value>
-					<value level="7">12</value>
-					<value level="8">14</value>
-					<value level="9">16</value>
-					<value level="10">10</value>
+					<value level="4">-4</value>
+					<value level="5">-10</value>
+					<value level="6">-11</value>
+					<value level="7">-12</value>
+					<value level="8">-14</value>
+					<value level="9">-16</value>
+					<value level="10">-20</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
