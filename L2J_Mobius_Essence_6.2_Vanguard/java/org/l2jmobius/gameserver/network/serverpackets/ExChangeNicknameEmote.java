@@ -14,26 +14,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package handlers.itemhandlers;
+package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.gameserver.handler.IItemHandler;
-import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.ExChangeNicknameEmote;
+import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.network.OutgoingPackets;
 
-public class NicknameColor implements IItemHandler
+/**
+ * @author Serenitty
+ */
+public class ExChangeNicknameEmote implements IClientOutgoingPacket
 {
-	@Override
-	public boolean useItem(Playable playable, Item item, boolean forceUse)
+	private final int _itemId;
+	
+	public ExChangeNicknameEmote(int itemId)
 	{
-		if (!playable.isPlayer())
-		{
-			playable.sendPacket(SystemMessageId.YOUR_PET_CANNOT_CARRY_THIS_ITEM);
-			return false;
-		}
-		
-		playable.sendPacket(new ExChangeNicknameEmote(item.getId()));
+		_itemId = itemId;
+	}
+	
+	@Override
+	public boolean write(PacketWriter packet)
+	{
+		OutgoingPackets.EX_CHANGE_NICKNAME_COLOR_ICON.writeId(packet);
+		packet.writeD(_itemId);
 		return true;
 	}
 }

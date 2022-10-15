@@ -734,7 +734,7 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	EX_DETHRONE_CHANGE_NAME(0x204, null, ConnectionState.IN_GAME),
 	EX_DETHRONE_CONNECT_CASTLE(0x205, null, ConnectionState.IN_GAME),
 	EX_DETHRONE_DISCONNECT_CASTLE(0x206, null, ConnectionState.IN_GAME),
-	EX_CHANGE_NICKNAME_COLOR_ICON(0x207, null, ConnectionState.IN_GAME),
+	EX_CHANGE_NICKNAME_COLOR_ICON(0x207, RequestChangeNicknameEmote::new, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_MOVE_TO_HOST(0x208, null, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_RETURN_TO_ORIGIN_PEER(0x209, null, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_CASTLE_INFO(0x20A, null, ConnectionState.IN_GAME),
