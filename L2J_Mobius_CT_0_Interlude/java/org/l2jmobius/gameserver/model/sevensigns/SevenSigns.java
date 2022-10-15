@@ -597,7 +597,7 @@ public class SevenSigns
 		final long nextPeriodChange = getMilliToPeriodChange();
 		long nextQuestStart = 0;
 		long nextValidStart = 0;
-		long tillDate = date.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+		long tillDate = date.getTimeInMillis() - System.currentTimeMillis();
 		while (((2 * PERIOD_MAJOR_LENGTH) + (2 * PERIOD_MINOR_LENGTH)) < tillDate)
 		{
 			tillDate -= ((2 * PERIOD_MAJOR_LENGTH) + (2 * PERIOD_MINOR_LENGTH));

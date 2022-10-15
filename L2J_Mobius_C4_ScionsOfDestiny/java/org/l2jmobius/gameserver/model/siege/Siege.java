@@ -141,7 +141,7 @@ public class Siege
 			
 			try
 			{
-				final long timeRemaining = _siegeEndDate.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+				final long timeRemaining = _siegeEndDate.getTimeInMillis() - System.currentTimeMillis();
 				if (timeRemaining > 3600000)
 				{
 					// Prepare task for 1 hr left.
@@ -209,7 +209,7 @@ public class Siege
 			
 			try
 			{
-				final long timeRemaining = getSiegeDate().getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+				final long timeRemaining = getSiegeDate().getTimeInMillis() - System.currentTimeMillis();
 				if (timeRemaining > 86400000)
 				{
 					// Prepare task for 24 before siege start to end registration
@@ -1247,7 +1247,7 @@ public class Siege
 	private void correctSiegeDateTime()
 	{
 		boolean corrected = false;
-		if (getCastle().getSiegeDate().getTimeInMillis() < Calendar.getInstance().getTimeInMillis())
+		if (getCastle().getSiegeDate().getTimeInMillis() < System.currentTimeMillis())
 		{
 			// Since siege has past reschedule it to the next one (14 days)
 			// This is usually caused by server being down
@@ -1485,7 +1485,7 @@ public class Siege
 	/** Set the date for the next siege. */
 	private void setNextSiegeDate()
 	{
-		while (getCastle().getSiegeDate().getTimeInMillis() < Calendar.getInstance().getTimeInMillis())
+		while (getCastle().getSiegeDate().getTimeInMillis() < System.currentTimeMillis())
 		{
 			// Set next siege date if siege has passed
 			// Schedule to happen in 14 days

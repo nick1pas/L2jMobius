@@ -235,11 +235,12 @@ public class Olympiad
 			_nextWeeklyChange = Long.parseLong(olympiadProperties.getProperty("NextWeeklyChange", "0"));
 		}
 		
+		final long currentTime = System.currentTimeMillis();
 		switch (_period)
 		{
 			case 0:
 			{
-				if ((_olympiadEnd == 0) || (_olympiadEnd < Calendar.getInstance().getTimeInMillis()))
+				if ((_olympiadEnd == 0) || (_olympiadEnd < currentTime))
 				{
 					setNewOlympiadEnd();
 				}
@@ -251,7 +252,7 @@ public class Olympiad
 			}
 			case 1:
 			{
-				if (_validationEnd > Calendar.getInstance().getTimeInMillis())
+				if (_validationEnd > currentTime)
 				{
 					_scheduledValdationTask = ThreadPool.schedule(new ValidationEndTask(), getMillisToValidationEnd());
 				}
@@ -833,7 +834,7 @@ public class Olympiad
 	
 	private long getMillisToOlympiadEnd()
 	{
-		return (_olympiadEnd - Calendar.getInstance().getTimeInMillis());
+		return (_olympiadEnd - System.currentTimeMillis());
 	}
 	
 	public void manualSelectHeroes()
@@ -848,9 +849,10 @@ public class Olympiad
 	
 	protected long getMillisToValidationEnd()
 	{
-		if (_validationEnd > Calendar.getInstance().getTimeInMillis())
+		final long currentTime = System.currentTimeMillis();
+		if (_validationEnd > currentTime)
 		{
-			return (_validationEnd - Calendar.getInstance().getTimeInMillis());
+			return (_validationEnd - currentTime);
 		}
 		return 10;
 	}
@@ -894,14 +896,15 @@ public class Olympiad
 	
 	private long getMillisToCompBegin()
 	{
-		if ((_compStart.getTimeInMillis() < Calendar.getInstance().getTimeInMillis()) && (_compEnd > Calendar.getInstance().getTimeInMillis()))
+		final long currentTime = System.currentTimeMillis();
+		if ((_compStart.getTimeInMillis() < currentTime) && (_compEnd > currentTime))
 		{
 			return 10;
 		}
 		
-		if (_compStart.getTimeInMillis() > Calendar.getInstance().getTimeInMillis())
+		if (_compStart.getTimeInMillis() > currentTime)
 		{
-			return (_compStart.getTimeInMillis() - Calendar.getInstance().getTimeInMillis());
+			return (_compStart.getTimeInMillis() - currentTime);
 		}
 		
 		return setNewCompBegin();
@@ -960,19 +963,20 @@ public class Olympiad
 		_compEnd = _compStart.getTimeInMillis() + COMP_PERIOD;
 		
 		LOGGER.info("Olympiad System: New Schedule @ " + _compStart.getTime());
-		return (_compStart.getTimeInMillis() - Calendar.getInstance().getTimeInMillis());
+		return _compStart.getTimeInMillis() - System.currentTimeMillis();
 	}
 	
 	protected long getMillisToCompEnd()
 	{
-		return (_compEnd - Calendar.getInstance().getTimeInMillis());
+		return _compEnd - System.currentTimeMillis();
 	}
 	
 	private long getMillisToWeekChange()
 	{
-		if (_nextWeeklyChange > Calendar.getInstance().getTimeInMillis())
+		final long currentTime = System.currentTimeMillis();
+		if (_nextWeeklyChange > currentTime)
 		{
-			return (_nextWeeklyChange - Calendar.getInstance().getTimeInMillis());
+			return (_nextWeeklyChange - currentTime);
 		}
 		return 10;
 	}

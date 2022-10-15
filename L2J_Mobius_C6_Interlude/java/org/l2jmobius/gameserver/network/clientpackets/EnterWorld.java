@@ -18,7 +18,6 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -751,7 +750,7 @@ public class EnterWorld implements IClientIncomingPacket
 	
 	private void onEnterAio(Player player)
 	{
-		final long now = Calendar.getInstance().getTimeInMillis();
+		final long now = System.currentTimeMillis();
 		final long endDay = player.getAioEndTime();
 		if (now > endDay)
 		{

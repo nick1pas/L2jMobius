@@ -22,7 +22,6 @@ import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -526,10 +525,10 @@ public class MailBBSManager extends BaseBBSManager
 	public void sendLetter(String recipients, String subjectValue, String messageValue, Player activeChar)
 	{
 		// Current time.
-		final long currentDate = Calendar.getInstance().getTimeInMillis();
+		final long currentTime = System.currentTimeMillis();
 		
 		// Get the current time - 1 day under timestamp format.
-		final Timestamp ts = new Timestamp(currentDate - 86400000);
+		final Timestamp ts = new Timestamp(currentTime - 86400000);
 		
 		// Check sender mails based on previous timestamp. If more than 10 mails have been found for today, then cancel the use.
 		int count = 0;
@@ -567,7 +566,7 @@ public class MailBBSManager extends BaseBBSManager
 		try (Connection con = DatabaseFactory.getConnection())
 		{
 			// Get the current time under timestamp format.
-			final Timestamp time = new Timestamp(currentDate);
+			final Timestamp time = new Timestamp(currentTime);
 			PreparedStatement statement = null;
 			for (String recipientName : recipientNames)
 			{

@@ -21,7 +21,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.Calendar;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
@@ -189,7 +188,7 @@ public class RaidBossSpawnManager
 			final int RespawnMinDelay = boss.getSpawn().getRespawnMinDelay();
 			final int RespawnMaxDelay = boss.getSpawn().getRespawnMaxDelay();
 			final long respawnDelay = Rnd.get((int) (RespawnMinDelay * 1000 * Config.RAID_MIN_RESPAWN_MULTIPLIER), (int) (RespawnMaxDelay * 1000 * Config.RAID_MAX_RESPAWN_MULTIPLIER));
-			final long respawnTime = Calendar.getInstance().getTimeInMillis() + respawnDelay;
+			final long respawnTime = System.currentTimeMillis() + respawnDelay;
 			info.set("currentHP", boss.getMaxHp());
 			info.set("currentMP", boss.getMaxMp());
 			info.set("respawnTime", respawnTime);
@@ -229,9 +228,9 @@ public class RaidBossSpawnManager
 		
 		double hp = currentHP;
 		final int bossId = spawnDat.getNpcId();
-		final long time = Calendar.getInstance().getTimeInMillis();
+		final long currentTime = System.currentTimeMillis();
 		SpawnTable.getInstance().addNewSpawn(spawnDat, false);
-		if ((respawnTime == 0) || (time > respawnTime))
+		if ((respawnTime == 0) || (currentTime > respawnTime))
 		{
 			final RaidBoss raidboss = bossId == 25328 ? DayNightSpawnManager.getInstance().handleBoss(spawnDat) : (RaidBoss) spawnDat.doSpawn();
 			if (raidboss != null)
@@ -260,7 +259,7 @@ public class RaidBossSpawnManager
 		else
 		{
 			ScheduledFuture<?> futureSpawn;
-			final long spawnTime = respawnTime - Calendar.getInstance().getTimeInMillis();
+			final long spawnTime = respawnTime - currentTime;
 			futureSpawn = ThreadPool.schedule(new SpawnSchedule(bossId), spawnTime);
 			_schedules.put(bossId, futureSpawn);
 		}

@@ -110,7 +110,7 @@ public class RequestBRBuyProduct implements IClientIncomingPacket
 			}
 			if (item.isVipGift())
 			{
-				player.getAccountVariables().set(AccountVariables.VIP_ITEM_BOUGHT, Calendar.getInstance().getTimeInMillis());
+				player.getAccountVariables().set(AccountVariables.VIP_ITEM_BOUGHT, System.currentTimeMillis());
 			}
 			
 			// Update account variables.

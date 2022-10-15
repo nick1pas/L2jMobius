@@ -310,7 +310,7 @@ public class FourSepulchersManager extends GrandBossManager
 	protected void timeSelector()
 	{
 		timeCalculator();
-		final long currentTime = Calendar.getInstance().getTimeInMillis();
+		final long currentTime = System.currentTimeMillis();
 		// if current time >= time of entry beginning and if current time < time of entry beginning + time of entry end
 		if ((currentTime >= _coolDownTimeEnd) && (currentTime < _entryTimeEnd)) // entry time check
 		{
@@ -1695,7 +1695,7 @@ public class FourSepulchersManager extends GrandBossManager
 			if (_inAttackTime)
 			{
 				final Calendar tmp = Calendar.getInstance();
-				tmp.setTimeInMillis(Calendar.getInstance().getTimeInMillis() - _warmUpTimeEnd);
+				tmp.setTimeInMillis(System.currentTimeMillis() - _warmUpTimeEnd);
 				if ((tmp.get(Calendar.MINUTE) + 5) < Config.FS_TIME_ATTACK)
 				{
 					managerSay((byte) tmp.get(Calendar.MINUTE)); // byte because minute cannot be more than 59
@@ -1727,7 +1727,7 @@ public class FourSepulchersManager extends GrandBossManager
 			// if this is first launch - search time when entry time will be ended: counting difference between time when entry time ends and current time and then launching change time task
 			if (_firstTimeRun)
 			{
-				interval = _entryTimeEnd - Calendar.getInstance().getTimeInMillis();
+				interval = _entryTimeEnd - System.currentTimeMillis();
 			}
 			else
 			{
@@ -1758,7 +1758,7 @@ public class FourSepulchersManager extends GrandBossManager
 			// searching time when warmup time will be ended: counting difference between time when warmup time ends and current time and then launching change time task
 			if (_firstTimeRun)
 			{
-				interval = _warmUpTimeEnd - Calendar.getInstance().getTimeInMillis();
+				interval = _warmUpTimeEnd - System.currentTimeMillis();
 			}
 			else
 			{
@@ -1789,9 +1789,10 @@ public class FourSepulchersManager extends GrandBossManager
 			spawnMysteriousBox(31923);
 			spawnMysteriousBox(31924);
 			
+			final long currentTime = System.currentTimeMillis();
 			if (!_firstTimeRun)
 			{
-				_warmUpTimeEnd = Calendar.getInstance().getTimeInMillis();
+				_warmUpTimeEnd = currentTime;
 			}
 			
 			long interval = 0;
@@ -1805,7 +1806,7 @@ public class FourSepulchersManager extends GrandBossManager
 					{
 						final Calendar inter = Calendar.getInstance();
 						inter.set(Calendar.MINUTE, (int) min);
-						ThreadPool.schedule(new ManagerSay(), inter.getTimeInMillis() - Calendar.getInstance().getTimeInMillis());
+						ThreadPool.schedule(new ManagerSay(), inter.getTimeInMillis() - currentTime);
 						break;
 					}
 				}
@@ -1817,7 +1818,7 @@ public class FourSepulchersManager extends GrandBossManager
 			// searching time when attack time will be ended: counting difference between time when attack time ends and current time and then launching change time task
 			if (_firstTimeRun)
 			{
-				interval = _attackTimeEnd - Calendar.getInstance().getTimeInMillis();
+				interval = _attackTimeEnd - currentTime;
 			}
 			else
 			{
@@ -1855,7 +1856,7 @@ public class FourSepulchersManager extends GrandBossManager
 				_firstTimeRun = false; // cooldown phase ends event hour, so it will be not first run
 			}
 			
-			final long interval = time.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+			final long interval = time.getTimeInMillis() - System.currentTimeMillis();
 			_changeEntryTimeTask = ThreadPool.schedule(new ChangeEntryTime(), interval);
 			if (_changeCoolDownTimeTask != null)
 			{

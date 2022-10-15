@@ -16,8 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import java.util.Calendar;
-
 import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -101,7 +99,7 @@ public class SiegeInfo implements IClientOutgoingPacket
 			packet.writeD(0); // Ally ID
 			packet.writeS(""); // Ally Name
 		}
-		packet.writeD((int) (Calendar.getInstance().getTimeInMillis() / 1000));
+		packet.writeD((int) (System.currentTimeMillis() / 1000));
 		packet.writeD((int) _siegeDate);
 		packet.writeD(0); // number of choices?
 		return true;

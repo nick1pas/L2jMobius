@@ -102,7 +102,7 @@ public class Siege implements Siegable
 			
 			try
 			{
-				final long timeRemaining = _siegeEndDate.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+				final long timeRemaining = _siegeEndDate.getTimeInMillis() - System.currentTimeMillis();
 				if (timeRemaining > 3600000)
 				{
 					final SystemMessage sm = new SystemMessage(SystemMessageId.S1_HOUR_S_UNTIL_CASTLE_SIEGE_CONCLUSION);
@@ -170,9 +170,10 @@ public class Siege implements Siegable
 			
 			try
 			{
+				final long currentTime = System.currentTimeMillis();
 				if (!_castle.isTimeRegistrationOver())
 				{
-					final long regTimeRemaining = getTimeRegistrationOverDate().getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+					final long regTimeRemaining = getTimeRegistrationOverDate().getTimeInMillis() - currentTime;
 					if (regTimeRemaining > 0)
 					{
 						_scheduledStartSiegeTask = ThreadPool.schedule(new ScheduleStartSiegeTask(_castleInst), regTimeRemaining);
@@ -181,7 +182,7 @@ public class Siege implements Siegable
 					endTimeRegistration(true);
 				}
 				
-				final long timeRemaining = getSiegeDate().getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+				final long timeRemaining = getSiegeDate().getTimeInMillis() - currentTime;
 				if (timeRemaining > 86400000)
 				{
 					_scheduledStartSiegeTask = ThreadPool.schedule(new ScheduleStartSiegeTask(_castleInst), timeRemaining - 86400000); // Prepare task for 24 before siege start to end registration
@@ -1240,7 +1241,7 @@ public class Siege implements Siegable
 	public void correctSiegeDateTime()
 	{
 		boolean corrected = false;
-		if (getCastle().getSiegeDate().getTimeInMillis() < Calendar.getInstance().getTimeInMillis())
+		if (getCastle().getSiegeDate().getTimeInMillis() < System.currentTimeMillis())
 		{
 			// Since siege has past reschedule it to the next one
 			// This is usually caused by server being down
@@ -1351,7 +1352,7 @@ public class Siege implements Siegable
 	{
 		setNextSiegeDate(); // Set the next set date for 2 weeks from now
 		// Schedule Time registration end
-		getTimeRegistrationOverDate().setTimeInMillis(Calendar.getInstance().getTimeInMillis());
+		getTimeRegistrationOverDate().setTimeInMillis(System.currentTimeMillis());
 		_castle.getTimeRegistrationOverDate().add(Calendar.DAY_OF_MONTH, 1);
 		_castle.setTimeRegistrationOver(false);
 		

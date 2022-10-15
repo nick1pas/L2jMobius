@@ -82,7 +82,7 @@ public class FortSiege
 			
 			try
 			{
-				final long timeRemaining = _siegeEndDate.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+				final long timeRemaining = _siegeEndDate.getTimeInMillis() - System.currentTimeMillis();
 				if (timeRemaining > 3600000)
 				{
 					ThreadPool.schedule(new ScheduleEndSiegeTask(_fortInst), timeRemaining - 3600000); // Prepare task for 1 hr left.
@@ -147,7 +147,7 @@ public class FortSiege
 			
 			try
 			{
-				final long timeRemaining = getSiegeDate().getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
+				final long timeRemaining = getSiegeDate().getTimeInMillis() - System.currentTimeMillis();
 				if (timeRemaining > 86400000)
 				{
 					// Prepare task for 24 before siege start to end registration
@@ -920,7 +920,7 @@ public class FortSiege
 	 */
 	public void checkAutoTask()
 	{
-		if (getFort().getSiegeDate().getTimeInMillis() < Calendar.getInstance().getTimeInMillis())
+		if (getFort().getSiegeDate().getTimeInMillis() < System.currentTimeMillis())
 		{
 			clearSiegeDate();
 			saveSiegeDate();

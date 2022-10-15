@@ -259,6 +259,8 @@ public class CastleManorManager
 	
 	protected void init()
 	{
+		final long currentTime = System.currentTimeMillis();
+		
 		if (APPROVE == -1)
 		{
 			final Calendar manorRefresh = Calendar.getInstance();
@@ -272,7 +274,7 @@ public class CastleManorManager
 			periodApprove.set(Calendar.MINUTE, NEXT_PERIOD_APPROVE_MIN);
 			periodApprove.set(Calendar.SECOND, 0);
 			periodApprove.set(Calendar.MILLISECOND, 0);
-			final boolean isApproved = (periodApprove.getTimeInMillis() < Calendar.getInstance().getTimeInMillis()) && (manorRefresh.getTimeInMillis() > Calendar.getInstance().getTimeInMillis());
+			final boolean isApproved = (periodApprove.getTimeInMillis() < currentTime) && (manorRefresh.getTimeInMillis() > currentTime);
 			APPROVE = isApproved ? 1 : 0;
 		}
 		
@@ -280,7 +282,7 @@ public class CastleManorManager
 		firstDelay.set(Calendar.SECOND, 0);
 		firstDelay.set(Calendar.MILLISECOND, 0);
 		firstDelay.add(Calendar.MINUTE, 1);
-		ThreadPool.scheduleAtFixedRate(new ManorTask(), firstDelay.getTimeInMillis() - Calendar.getInstance().getTimeInMillis(), 60000);
+		ThreadPool.scheduleAtFixedRate(new ManorTask(), firstDelay.getTimeInMillis() - currentTime, 60000);
 	}
 	
 	public void setNextPeriod()
