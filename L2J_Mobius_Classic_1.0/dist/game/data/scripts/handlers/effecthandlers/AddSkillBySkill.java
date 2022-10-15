@@ -41,21 +41,19 @@ public class AddSkillBySkill extends AbstractEffect
 	@Override
 	public boolean canPump(Creature effector, Creature effected, Skill skill)
 	{
-		return effector.isPlayer() && (effector.getSkillLevel(_existingSkillId) == _existingSkillLevel);
+		return effected.isPlayer() && !effected.isTransformed() && (effected.getSkillLevel(_existingSkillId) == _existingSkillLevel);
 	}
 	
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		if (effected.isPlayer())
-		{
-			effected.getActingPlayer().addSkill(_addedSkill.getSkill(), false);
-		}
+		effected.getActingPlayer().addSkill(_addedSkill.getSkill(), false);
 	}
 	
 	@Override
 	public void onExit(Creature effector, Creature effected, Skill skill)
 	{
 		effected.removeSkill(_addedSkill.getSkill(), false);
+		effected.getActingPlayer().sendSkillList();
 	}
 }
