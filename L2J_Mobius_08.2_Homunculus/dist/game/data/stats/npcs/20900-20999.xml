@@ -1327,11 +1327,6 @@
 	</npc>
 	<npc id="20936" level="108" type="Monster" name="Tanor Silenos">
 		<parameters>
-			<minions name="Privates">
-				<npc id="20939" count="1" respawnTime="360" weightPoint="1" />
-				<npc id="20937" count="1" respawnTime="360" weightPoint="1" />
-				<npc id="20938" count="1" respawnTime="360" weightPoint="1" />
-			</minions>
 			<skill name="Skill01_ID" id="32827" level="1" />
 			<param name="Skill01_Probablity" value="2000" />
 		</parameters>
@@ -1755,9 +1750,6 @@
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
 			<param name="MoveAroundSocial2" value="80" />
-			<minions name="Privates">
-				<npc id="20939" count="6" respawnTime="0" weightPoint="1" />
-			</minions>
 			<param name="SoulShot" value="100" />
 			<param name="SoulShotRate" value="10" />
 			<param name="SpiritShot" value="100" />
@@ -1903,7 +1895,7 @@
 			<skill id="4414" level="2" /> <!-- Standard Type -->
 			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
 			<skill id="16512" level="6" /> <!-- Solo Mage Monster -->
-			<skill id="4099" level="2" /> <!-- Berserker Spirit -->
+			<!-- <skill id="4099" level="2" /> Berserker Spirit -->
 		</skillList>
 		<dropLists>
 			<drop>
@@ -2002,7 +1994,7 @@
 			<skill id="4414" level="2" /> <!-- Standard Type -->
 			<skill id="4415" level="5" /> <!-- One-handed Blunt Weapons -->
 			<skill id="16512" level="6" /> <!-- Solo Mage Monster -->
-			<skill id="4097" level="4" /> <!-- Chant of Life -->
+			<!-- <skill id="4097" level="4" /> Chant of Life -->
 			<skill id="4100" level="4" /> <!-- Prominence -->
 		</skillList>
 		<dropLists>
