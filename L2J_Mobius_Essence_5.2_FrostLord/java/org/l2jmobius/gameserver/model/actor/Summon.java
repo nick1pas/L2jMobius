@@ -29,8 +29,6 @@ import org.l2jmobius.gameserver.ai.SummonAI;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.sql.CharSummonTable;
 import org.l2jmobius.gameserver.data.xml.ExperienceData;
-import org.l2jmobius.gameserver.data.xml.PetAcquireList;
-import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.InstanceType;
 import org.l2jmobius.gameserver.enums.NpcInfoType;
 import org.l2jmobius.gameserver.enums.Race;
@@ -133,24 +131,22 @@ public abstract class Summon extends Playable
 		
 		setFollowStatus(true);
 		updateAndBroadcastStatus(0);
-		if (isPet())
-		{
-			final Pet pet = (Pet) this;
-			final int specialSkillId = PetAcquireList.getInstance().getSpecialSkillByType(pet.getPetData().getType());
-			addSkill(SkillData.getInstance().getSkill(specialSkillId, pet.getEvolveLevel() + 1));
-		}
 		
 		if (_owner != null)
 		{
-			sendPacket(new PetInfo(this, 1));
-			sendPacket(new ExPetSkillList(true, this));
-			if (getInventory() != null)
+			if (isPet())
 			{
-				sendPacket(new PetItemList(getInventory().getItems()));
+				sendPacket(new PetInfo(this, 1));
+				sendPacket(new ExPetSkillList(true, (Pet) this));
+				if (getInventory() != null)
+				{
+					sendPacket(new PetItemList(getInventory().getItems()));
+				}
 			}
 			sendPacket(new RelationChanged(this, _owner.getRelation(_owner), false));
+			World.getInstance().forEachVisibleObject(getOwner(), Player.class, player -> player.sendPacket(new RelationChanged(this, _owner.getRelation(player), isAutoAttackable(player))));
 		}
-		World.getInstance().forEachVisibleObject(getOwner(), Player.class, player -> player.sendPacket(new RelationChanged(this, _owner.getRelation(player), isAutoAttackable(player))));
+		
 		final Party party = _owner.getParty();
 		if (party != null)
 		{

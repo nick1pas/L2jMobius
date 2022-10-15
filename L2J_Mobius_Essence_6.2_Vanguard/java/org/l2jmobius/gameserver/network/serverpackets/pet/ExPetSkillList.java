@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.serverpackets.pet;
 
 import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.model.actor.Summon;
+import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
@@ -28,9 +28,9 @@ import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 public class ExPetSkillList implements IClientOutgoingPacket
 {
 	private final boolean _onEnter;
-	private final Summon _pet;
+	private final Pet _pet;
 	
-	public ExPetSkillList(boolean onEnter, Summon pet)
+	public ExPetSkillList(boolean onEnter, Pet pet)
 	{
 		_onEnter = onEnter;
 		_pet = pet;
