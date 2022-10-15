@@ -370,10 +370,10 @@ public class OctavisWarzone extends AbstractInstance
 			}
 			case "MINION_CALL":
 			{
-				final Player mostHated = ((Attackable) npc).getMostHated().getActingPlayer();
-				if ((mostHated != null) && (mostHated.calculateDistance3D(npc) < 5000))
+				final Creature mostHated = ((Attackable) npc).getMostHated();
+				if ((mostHated != null) && mostHated.isPlayer() && (npc.calculateDistance3D(npc) < 5000))
 				{
-					World.getInstance().getVisibleObjectsInRange(npc, Attackable.class, 4000, obj -> CommonUtil.contains(BEASTS_MINIONS, obj.getId()) || CommonUtil.contains(GLADIATORS, obj.getId())).forEach(minion -> addAttackPlayerDesire(minion, mostHated, 23));
+					World.getInstance().getVisibleObjectsInRange(npc, Attackable.class, 4000, obj -> CommonUtil.contains(BEASTS_MINIONS, obj.getId()) || CommonUtil.contains(GLADIATORS, obj.getId())).forEach(minion -> addAttackPlayerDesire(minion, (Player) mostHated, 23));
 				}
 				getTimers().addTimer("MINION_CALL", 5000 + (getRandom(5) * 1000), npc, null);
 				break;
