@@ -541,7 +541,7 @@ public class DailyTaskManager
 			// Update data for online players.
 			for (Player player : World.getInstance().getPlayers())
 			{
-				player.getVariables().remove(AccountVariables.PRIME_SHOP_PRODUCT_DAILY_COUNT + holder.getBrId());
+				player.getAccountVariables().remove(AccountVariables.PRIME_SHOP_PRODUCT_DAILY_COUNT + holder.getBrId());
 				player.getAccountVariables().storeMe();
 			}
 		}
