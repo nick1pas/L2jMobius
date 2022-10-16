@@ -10377,8 +10377,8 @@ public class Player extends Playable
 			
 			stopAllEffectsExceptThoseThatLastThroughDeath();
 			stopAllEffectsNotStayOnSubclassChange();
+			getEffectList().stopAllToggles();
 			stopCubics();
-			
 			restoreRecipeBook(false);
 			
 			// Restore any Death Penalty Buff

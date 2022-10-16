@@ -9958,6 +9958,9 @@ public class Player extends Playable
 			// stopAllEffects();
 			getEffectList().stopEffects(info -> !info.getSkill().isNecessaryToggle() && !info.getSkill().isIrreplacableBuff(), true, false);
 			
+			// In controversy with isNecessaryToggle above, new class rewarded skills should be rewarded bellow.
+			getEffectList().stopAllToggles();
+			
 			// Update abnormal visual effects.
 			sendPacket(new ExUserInfoAbnormalVisualEffect(this));
 			stopCubics();
