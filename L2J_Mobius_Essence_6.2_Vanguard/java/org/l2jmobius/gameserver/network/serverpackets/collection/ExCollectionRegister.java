@@ -45,8 +45,7 @@ public class ExCollectionRegister implements IClientOutgoingPacket
 		OutgoingPackets.EX_COLLECTION_REGISTER.writeId(packet);
 		packet.writeH(_collectionId);
 		packet.writeC(_success); // success
-		packet.writeC(0); // recursive reward
-		packet.writeH(249); // 256 - size so far
+		packet.writeH(250); // 256 - size so far
 		packet.writeC(_index); // slot index
 		packet.writeD(_collectionInfo.getId()); // item classId
 		packet.writeH(_collectionInfo.getEnchantLevel()); // enchant level
