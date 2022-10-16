@@ -70,9 +70,25 @@ public class ReplaceSkillBySkill extends AbstractEffect
 			{
 				final int slot = shortcut.getSlot();
 				final int page = shortcut.getPage();
-				final int characterType = shortcut.getCharacterType();
+				final Shortcut newShortcut = new Shortcut(slot, page, ShortcutType.SKILL, addedSkill.getId(), addedSkill.getLevel(), addedSkill.getSubLevel(), shortcut.getCharacterType());
+				if (shortcut.isAutoUse())
+				{
+					newShortcut.setAutoUse(true);
+					if (knownSkill.isBad())
+					{
+						if (player.getAutoUseSettings().getAutoSkills().contains(knownSkill.getId()))
+						{
+							player.getAutoUseSettings().getAutoSkills().add(addedSkill.getId());
+							player.getAutoUseSettings().getAutoSkills().remove(Integer.valueOf(knownSkill.getId()));
+						}
+					}
+					else if (player.getAutoUseSettings().getAutoBuffs().contains(knownSkill.getId()))
+					{
+						player.getAutoUseSettings().getAutoBuffs().add(addedSkill.getId());
+						player.getAutoUseSettings().getAutoBuffs().remove(knownSkill.getId());
+					}
+				}
 				player.deleteShortCut(slot, page);
-				final Shortcut newShortcut = new Shortcut(slot, page, ShortcutType.SKILL, addedSkill.getId(), addedSkill.getLevel(), addedSkill.getSubLevel(), characterType);
 				player.registerShortCut(newShortcut);
 				player.sendPacket(new ShortCutRegister(newShortcut));
 			}
@@ -80,7 +96,11 @@ public class ReplaceSkillBySkill extends AbstractEffect
 		
 		player.removeSkill(knownSkill, false);
 		player.sendSkillList();
-		ThreadPool.schedule(() -> player.sendPacket(new ShortCutInit(player)), 1100);
+		ThreadPool.schedule(() ->
+		{
+			player.sendPacket(new ShortCutInit(player));
+			player.restoreAutoShortcutVisual();
+		}, 1100);
 	}
 	
 	@Override
@@ -102,9 +122,25 @@ public class ReplaceSkillBySkill extends AbstractEffect
 			{
 				final int slot = shortcut.getSlot();
 				final int page = shortcut.getPage();
-				final int characterType = shortcut.getCharacterType();
+				final Shortcut newShortcut = new Shortcut(slot, page, ShortcutType.SKILL, addedSkill.getId(), addedSkill.getLevel(), addedSkill.getSubLevel(), shortcut.getCharacterType());
+				if (shortcut.isAutoUse())
+				{
+					newShortcut.setAutoUse(true);
+					if (knownSkill.isBad())
+					{
+						if (player.getAutoUseSettings().getAutoSkills().contains(knownSkill.getId()))
+						{
+							player.getAutoUseSettings().getAutoSkills().add(addedSkill.getId());
+							player.getAutoUseSettings().getAutoSkills().remove(Integer.valueOf(knownSkill.getId()));
+						}
+					}
+					else if (player.getAutoUseSettings().getAutoBuffs().contains(knownSkill.getId()))
+					{
+						player.getAutoUseSettings().getAutoBuffs().add(addedSkill.getId());
+						player.getAutoUseSettings().getAutoBuffs().remove(knownSkill.getId());
+					}
+				}
 				player.deleteShortCut(slot, page);
-				final Shortcut newShortcut = new Shortcut(slot, page, ShortcutType.SKILL, addedSkill.getId(), addedSkill.getLevel(), addedSkill.getSubLevel(), characterType);
 				player.registerShortCut(newShortcut);
 				player.sendPacket(new ShortCutRegister(newShortcut));
 			}
@@ -112,6 +148,10 @@ public class ReplaceSkillBySkill extends AbstractEffect
 		
 		player.removeSkill(knownSkill, false);
 		player.sendSkillList();
-		ThreadPool.schedule(() -> player.sendPacket(new ShortCutInit(player)), 1100);
+		ThreadPool.schedule(() ->
+		{
+			player.sendPacket(new ShortCutInit(player));
+			player.restoreAutoShortcutVisual();
+		}, 1100);
 	}
 }
