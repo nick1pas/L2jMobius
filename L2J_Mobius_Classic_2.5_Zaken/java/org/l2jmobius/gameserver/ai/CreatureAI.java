@@ -310,9 +310,11 @@ public class CreatureAI extends AbstractAI
 			return;
 		}
 		
-		if (_actor.isAttackingNow())
+		final long currentTime = System.nanoTime();
+		final long attackEndTime = _actor.getAttackEndTime();
+		if (attackEndTime > currentTime)
 		{
-			ThreadPool.schedule(new CastTask(_actor, skill, target, item, forceUse, dontMove), _actor.getAttackEndTime() - TimeUnit.MILLISECONDS.toNanos(System.currentTimeMillis()));
+			ThreadPool.schedule(new CastTask(_actor, skill, target, item, forceUse, dontMove), TimeUnit.NANOSECONDS.toMillis(attackEndTime - currentTime));
 		}
 		else
 		{
