@@ -63,11 +63,6 @@ public class OlympiadGameManager implements Runnable
 		LOGGER.info("Olympiad System: Loaded " + _tasks.size() + " stadiums.");
 	}
 	
-	public static OlympiadGameManager getInstance()
-	{
-		return SingletonHolder.INSTANCE;
-	}
-	
 	protected final boolean isBattleStarted()
 	{
 		return _battleStarted;
@@ -186,7 +181,7 @@ public class OlympiadGameManager implements Runnable
 			{
 				OlympiadManager.getInstance().clearRegistered();
 				_battleStarted = false;
-				LOGGER.info("Olympiad System: All current games finished.");
+				// LOGGER.info("Olympiad System: All current games finished.");
 			}
 		}
 	}
@@ -238,16 +233,18 @@ public class OlympiadGameManager implements Runnable
 		}
 	}
 	
-	private static class SingletonHolder
-	{
-		protected static final OlympiadGameManager INSTANCE = new OlympiadGameManager();
-	}
-	
-	/**
-	 * @return the _tasks
-	 */
 	public List<OlympiadStadium> getTasks()
 	{
 		return _tasks;
+	}
+	
+	public static OlympiadGameManager getInstance()
+	{
+		return SingletonHolder.INSTANCE;
+	}
+	
+	private static class SingletonHolder
+	{
+		protected static final OlympiadGameManager INSTANCE = new OlympiadGameManager();
 	}
 }
