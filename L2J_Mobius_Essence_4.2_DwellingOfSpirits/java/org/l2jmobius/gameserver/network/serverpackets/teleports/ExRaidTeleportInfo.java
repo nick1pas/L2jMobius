@@ -17,23 +17,27 @@
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
 import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * @author GustavoFonseca
+ * @author Serenitty
  */
 public class ExRaidTeleportInfo implements IClientOutgoingPacket
 {
-	public ExRaidTeleportInfo()
+	private final Player _player;
+	
+	public ExRaidTeleportInfo(Player player)
 	{
+		_player = player;
 	}
 	
 	@Override
 	public boolean write(PacketWriter packet)
 	{
 		OutgoingPackets.EX_RAID_TELEPORT_INFO.writeId(packet);
-		packet.writeD(1); // TODO: Character free teleport points from database or configuration.
+		packet.writeD((System.currentTimeMillis() - _player.getVariables().getLong("LastFreeRaidTeleportTime", 0)) < 86400000 ? 1 : 0);
 		return true;
 	}
 }

@@ -146,6 +146,6 @@ public class ExTeleportToRaidPosition implements IClientIncomingPacket
 		
 		player.setTeleportLocation(location);
 		player.doCast(CommonSkill.TELEPORT.getSkill());
-		player.sendPacket(new ExRaidTeleportInfo());
+		player.sendPacket(new ExRaidTeleportInfo(player));
 	}
 }

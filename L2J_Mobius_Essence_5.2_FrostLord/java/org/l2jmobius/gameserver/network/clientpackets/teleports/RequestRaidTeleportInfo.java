@@ -42,6 +42,6 @@ public class RequestRaidTeleportInfo implements IClientIncomingPacket
 			return;
 		}
 		
-		player.sendPacket(new ExRaidTeleportInfo());
+		player.sendPacket(new ExRaidTeleportInfo(player));
 	}
 }
