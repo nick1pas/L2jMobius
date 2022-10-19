@@ -91,7 +91,7 @@ import org.l2jmobius.gameserver.data.xml.OptionData;
 import org.l2jmobius.gameserver.data.xml.PetAcquireList;
 import org.l2jmobius.gameserver.data.xml.PetDataTable;
 import org.l2jmobius.gameserver.data.xml.PetSkillData;
-import org.l2jmobius.gameserver.data.xml.PetTypesListData;
+import org.l2jmobius.gameserver.data.xml.PetTypeData;
 import org.l2jmobius.gameserver.data.xml.PlayerTemplateData;
 import org.l2jmobius.gameserver.data.xml.PlayerXpPercentLostData;
 import org.l2jmobius.gameserver.data.xml.PrimeShopData;
@@ -366,7 +366,7 @@ public class GameServer
 		CrestTable.getInstance();
 		TeleportListData.getInstance();
 		SharedTeleportManager.getInstance();
-		PetTypesListData.getInstance();
+		PetTypeData.getInstance();
 		TeleporterData.getInstance();
 		TimedHuntingZoneData.getInstance();
 		MatchingRoomManager.getInstance();

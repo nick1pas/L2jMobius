@@ -17,6 +17,9 @@
 package org.l2jmobius.gameserver.data.xml;
 
 import java.io.File;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -29,16 +32,17 @@ import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 
+import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.util.IXmlReader;
 import org.l2jmobius.gameserver.enums.EvolveLevel;
 import org.l2jmobius.gameserver.enums.MountType;
 import org.l2jmobius.gameserver.model.PetData;
 import org.l2jmobius.gameserver.model.PetLevelData;
 import org.l2jmobius.gameserver.model.StatSet;
+import org.l2jmobius.gameserver.model.holders.SkillHolder;
 
 /**
  * This class parse and hold all pet parameters.<br>
- * TODO: load and use all pet parameters.
  * @author Zoey76 (rework)
  */
 public class PetDataTable implements IXmlReader
@@ -46,6 +50,7 @@ public class PetDataTable implements IXmlReader
 	private static final Logger LOGGER = Logger.getLogger(PetDataTable.class.getName());
 	
 	private final Map<Integer, PetData> _pets = new ConcurrentHashMap<>();
+	private final Map<Integer, String> _petNames = new ConcurrentHashMap<>();
 	
 	/**
 	 * Instantiates a new pet data table.
@@ -60,6 +65,26 @@ public class PetDataTable implements IXmlReader
 	{
 		_pets.clear();
 		parseDatapackDirectory("data/stats/pets", false);
+		
+		try (Connection conn = DatabaseFactory.getConnection();
+			PreparedStatement ps = conn.prepareStatement("SELECT * FROM pets"))
+		{
+			ResultSet rs = ps.executeQuery();
+			while (rs.next())
+			{
+				String name = rs.getString("name");
+				if (name == null)
+				{
+					name = "No name";
+				}
+				_petNames.put(rs.getInt("item_obj_id"), name);
+			}
+		}
+		catch (Exception e)
+		{
+			LOGGER.warning(getClass().getSimpleName() + ": Problem loading pet names! " + e);
+		}
+		
 		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _pets.size() + " pets.");
 	}
 	
@@ -275,6 +300,27 @@ public class PetDataTable implements IXmlReader
 	public List<PetData> getPetDatasByEvolve(int itemId, EvolveLevel evolveLevel)
 	{
 		return _pets.values().stream().filter(petData -> (petData.getItemId() == itemId) && (petData.getEvolveLevel() == evolveLevel)).collect(Collectors.toList());
+	}
+	
+	public void setPetName(int objectId, String name)
+	{
+		_petNames.put(objectId, name);
+	}
+	
+	public String getPetName(int objectId)
+	{
+		return _petNames.getOrDefault(objectId, "No name");
+	}
+	
+	public String getNameByItemObjectId(int objectId)
+	{
+		final String name = getPetName(objectId);
+		final SkillHolder type = PetTypeData.getInstance().getSkillByName(name);
+		if (type == null)
+		{
+			return "";
+		}
+		return type.getSkillId() + ";" + type.getSkillLevel() + ";" + PetTypeData.getInstance().getIdByName(name);
 	}
 	
 	/**
