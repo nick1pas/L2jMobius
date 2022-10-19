@@ -2,25 +2,24 @@ package org.l2jmobius.gameserver.network.clientpackets.pet;
 
 import java.util.List;
 import java.util.Map.Entry;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.NpcData;
 import org.l2jmobius.gameserver.data.xml.PetDataTable;
-import org.l2jmobius.gameserver.data.xml.PetTypesListData;
-import org.l2jmobius.gameserver.data.xml.SkillData;
+import org.l2jmobius.gameserver.data.xml.PetTypeData;
 import org.l2jmobius.gameserver.enums.EvolveLevel;
 import org.l2jmobius.gameserver.model.PetData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
+import org.l2jmobius.gameserver.model.holders.SkillHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
 
 /**
- * Written by Berezkin Nikolay, on 25.04.2021
+ * @author Berezkin Nikolay, Mobius
  */
 public class ExEvolvePet implements IClientIncomingPacket
 {
@@ -79,23 +78,26 @@ public class ExEvolvePet implements IClientIncomingPacket
 		
 		final NpcTemplate npcTemplate = NpcData.getInstance().getTemplate(evolveLevel == EvolveLevel.Second ? pet.getId() + 2 : petData.getNpcId());
 		final Pet evolved = Pet.spawnPet(npcTemplate, activeChar, controlItem);
-		
 		if (evolved == null)
 		{
 			return;
 		}
+		
+		if (evolveLevel == EvolveLevel.First)
+		{
+			final Entry<Integer, SkillHolder> skillType = PetTypeData.getInstance().getRandomSkill();
+			final String name = PetTypeData.getInstance().getNamePrefix(skillType.getKey()) + " " + PetTypeData.getInstance().getRandomName();
+			evolved.addSkill(skillType.getValue().getSkill());
+			evolved.setName(name);
+			PetDataTable.getInstance().setPetName(controlItem.getObjectId(), name);
+		}
+		
 		activeChar.setPet(evolved);
 		evolved.setShowSummonAnimation(true);
 		evolved.setEvolveLevel(evolveLevel);
 		evolved.setRunning();
 		evolved.storeEvolvedPets(evolveLevel.ordinal(), evolved.getPetData().getIndex(), controlItem.getObjectId());
 		controlItem.setEnchantLevel(evolved.getLevel());
-		if (evolveLevel == EvolveLevel.First)
-		{
-			final List<Entry<Integer, Entry<Integer, Integer>>> specialTypes = PetTypesListData.getInstance().getTypes().entrySet().stream().filter(it -> it.getValue().getKey() != 0).collect(Collectors.toList());
-			final int randomIndex = Rnd.get(specialTypes.size() - 1);
-			evolved.addSkill(SkillData.getInstance().getSkill(specialTypes.get(randomIndex).getValue().getKey(), specialTypes.get(randomIndex).getValue().getValue()));
-		}
 		evolved.spawnMe(pet.getX(), pet.getY(), pet.getZ());
 		evolved.startFeed();
 	}

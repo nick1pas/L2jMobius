@@ -1,7 +1,7 @@
 DROP TABLE IF EXISTS `pets`;
 CREATE TABLE IF NOT EXISTS `pets` (
   `item_obj_id` int(10) unsigned NOT NULL,
-  `name` varchar(16),
+  `name` varchar(36),
   `level` smallint(2) unsigned NOT NULL,
   `curHp` int(9) unsigned DEFAULT '0',
   `curMp` int(9) unsigned DEFAULT '0',

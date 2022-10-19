@@ -23,14 +23,14 @@ import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExPetRankingList;
 
 /**
- * Written by Berezkin Nikolay, on 10.05.2021
+ * @author Mobius
  */
 public class RequestPetRankingList implements IClientIncomingPacket
 {
 	private int _season;
 	private int _tabId;
 	private int _type;
-	private int _race;
+	private int _petItemObjectId;
 	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
@@ -38,7 +38,7 @@ public class RequestPetRankingList implements IClientIncomingPacket
 		_season = packet.readC();
 		_tabId = packet.readC();
 		_type = packet.readC();
-		_race = packet.readD();
+		_petItemObjectId = packet.readD();
 		return true;
 	}
 	
@@ -51,6 +51,6 @@ public class RequestPetRankingList implements IClientIncomingPacket
 			return;
 		}
 		
-		player.sendPacket(new ExPetRankingList(player, _season, _tabId, _type, _race));
+		player.sendPacket(new ExPetRankingList(player, _season, _tabId, _type, _petItemObjectId));
 	}
 }

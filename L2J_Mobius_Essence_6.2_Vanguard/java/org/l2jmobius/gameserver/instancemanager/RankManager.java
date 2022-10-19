@@ -29,6 +29,7 @@ import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.data.xml.PetDataTable;
+import org.l2jmobius.gameserver.model.PetData;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
@@ -47,7 +48,7 @@ public class RankManager
 	private static final String SELECT_CHARACTERS = "SELECT charId,char_name,level,race,base_class, clanid FROM characters WHERE (" + CURRENT_TIME + " - cast(lastAccess as signed) < " + TIME_LIMIT + ") AND accesslevel = 0 AND level > 39 ORDER BY exp DESC, onlinetime DESC LIMIT " + PLAYER_LIMIT;
 	private static final String SELECT_CHARACTERS_PVP = "SELECT charId,char_name,level,race,base_class, clanid, deaths, kills, pvpkills FROM characters WHERE (" + CURRENT_TIME + " - cast(lastAccess as signed) < " + TIME_LIMIT + ") AND accesslevel = 0 AND level > 39 ORDER BY kills DESC, onlinetime DESC LIMIT " + PLAYER_LIMIT;
 	private static final String SELECT_CHARACTERS_BY_RACE = "SELECT charId FROM characters WHERE (" + CURRENT_TIME + " - cast(lastAccess as signed) < " + TIME_LIMIT + ") AND accesslevel = 0 AND level > 39 AND race = ? ORDER BY exp DESC, onlinetime DESC LIMIT " + PLAYER_LIMIT;
-	private static final String SELECT_PETS = "SELECT characters.charId, pets.exp, characters.char_name, pets.level as petLevel, characters.level as charLevel, characters.clanId, pet_evolves.index, pets.item_obj_id FROM characters, pets, pet_evolves WHERE pets.ownerId = characters.charId AND pet_evolves.itemObjId = pets.item_obj_id AND (" + CURRENT_TIME + " - cast(characters.lastAccess as signed) < " + TIME_LIMIT + ") AND characters.accesslevel = 0 AND pets.level > 39 ORDER BY pets.exp DESC, characters.onlinetime DESC LIMIT " + PLAYER_LIMIT;
+	private static final String SELECT_PETS = "SELECT characters.charId, pets.exp, characters.char_name, pets.level as petLevel, characters.race as char_race, characters.level as char_level, characters.clanId, pet_evolves.index, pet_evolves.level as evolveLevel, pets.item_obj_id, item_id FROM characters, items, pets, pet_evolves WHERE pets.ownerId = characters.charId AND pet_evolves.itemObjId = items.object_id AND pet_evolves.itemObjId = pets.item_obj_id AND (" + CURRENT_TIME + " - cast(characters.lastAccess as signed) < " + TIME_LIMIT + ") AND characters.accesslevel = 0 AND pets.level > 39 ORDER BY pets.exp DESC, characters.onlinetime DESC LIMIT " + PLAYER_LIMIT;
 	private static final String SELECT_CLANS = "SELECT characters.level, characters.char_name, clan_data.clan_id, clan_data.clan_level, clan_data.clan_name, clan_data.reputation_score, clan_data.exp FROM characters, clan_data WHERE characters.charId = clan_data.leader_id AND characters.clanid = clan_data.clan_id AND dissolving_expiry_time = 0 ORDER BY exp DESC LIMIT " + PLAYER_LIMIT;
 	
 	private static final String GET_CURRENT_CYCLE_DATA = "SELECT characters.char_name, characters.level, characters.base_class, characters.clanid, olympiad_nobles.charId, olympiad_nobles.olympiad_points, olympiad_nobles.competitions_won, olympiad_nobles.competitions_lost FROM characters, olympiad_nobles WHERE characters.charId = olympiad_nobles.charId ORDER BY olympiad_nobles.olympiad_points DESC LIMIT " + PLAYER_LIMIT;
@@ -232,18 +233,22 @@ public class RankManager
 				int i = 1;
 				while (rset.next())
 				{
-					final StatSet player = new StatSet();
-					final int charId = rset.getInt("charId");
-					player.set("charId", charId);
-					player.set("name", rset.getString("char_name"));
-					player.set("level", rset.getInt("charLevel"));
-					player.set("petLevel", rset.getInt("petLevel"));
-					player.set("clanName", rset.getInt("clanid") > 0 ? ClanTable.getInstance().getClan(rset.getInt("clanid")).getName() : "");
-					player.set("petType", PetDataTable.getInstance().getTypeByIndex(rset.getInt("index")));
-					player.set("exp", rset.getLong("exp"));
-					player.set("controlledItemObjId", rset.getInt("item_obj_id"));
-					_mainPetList.put(i, player);
-					i++;
+					final StatSet pet = new StatSet();
+					final int controlledItemObjId = rset.getInt("item_obj_id");
+					pet.set("controlledItemObjId", controlledItemObjId);
+					pet.set("name", PetDataTable.getInstance().getNameByItemObjectId(controlledItemObjId));
+					pet.set("ownerId", rset.getInt("charId"));
+					pet.set("owner_name", rset.getString("char_name"));
+					pet.set("owner_race", rset.getString("char_race"));
+					pet.set("owner_level", rset.getInt("char_level"));
+					pet.set("level", rset.getInt("petLevel"));
+					pet.set("evolve_level", rset.getInt("evolveLevel"));
+					pet.set("exp", rset.getLong("exp"));
+					pet.set("clanName", rset.getInt("clanid") > 0 ? ClanTable.getInstance().getClan(rset.getInt("clanid")).getName() : "");
+					final PetData petData = PetDataTable.getInstance().getPetDataByItemId(rset.getInt("item_id"));
+					pet.set("petType", petData.getType());
+					pet.set("npcId", petData.getNpcId());
+					_mainPetList.put(i++, pet);
 				}
 			}
 		}

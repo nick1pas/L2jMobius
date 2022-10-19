@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
- * Written by Berezkin Nikolay, on 10.05.2021
+ * @author Mobius
  */
 public class ExPetRankingList implements IClientOutgoingPacket
 {
@@ -41,17 +41,17 @@ public class ExPetRankingList implements IClientOutgoingPacket
 	private final int _season;
 	private final int _tabId;
 	private final int _type;
-	private final int _race;
+	private final int _petItemObjectId;
 	private final Map<Integer, StatSet> _playerList;
 	private final Map<Integer, StatSet> _snapshotList;
 	
-	public ExPetRankingList(Player player, int season, int tabId, int type, int race)
+	public ExPetRankingList(Player player, int season, int tabId, int type, int petItemObjectId)
 	{
 		_player = player;
 		_season = season;
 		_tabId = tabId;
 		_type = type;
-		_race = race;
+		_petItemObjectId = petItemObjectId;
 		_playerList = RankManager.getInstance().getPetRankList();
 		_snapshotList = RankManager.getInstance().getSnapshotPetRankList();
 	}
@@ -62,13 +62,12 @@ public class ExPetRankingList implements IClientOutgoingPacket
 		OutgoingPackets.EX_PET_RANKING_LIST.writeId(packet);
 		packet.writeC(_season);
 		packet.writeC(_tabId);
-		packet.writeC(_type);
-		packet.writeD(_race);
-		packet.writeC(0);
-		if (!_playerList.isEmpty() && (_type != 255) && (_race != 255))
+		packet.writeH(_type);
+		packet.writeD(_petItemObjectId);
+		if (!_playerList.isEmpty())
 		{
-			final RankingCategory category = RankingCategory.values()[_season];
-			writeFilteredRankingData(packet, category, category.getScopeByGroup(_tabId));
+			final RankingCategory category = RankingCategory.values()[_tabId];
+			writeFilteredRankingData(packet, category, category.getScopeByGroup(_season));
 		}
 		else
 		{
@@ -141,22 +140,22 @@ public class ExPetRankingList implements IClientOutgoingPacket
 		for (Entry<Integer, StatSet> data : limited.stream().sorted(Entry.comparingByKey()).collect(Collectors.toList()))
 		{
 			int curRank = rank++;
-			final StatSet player = data.getValue();
-			packet.writeH(0);
-			packet.writeString(player.getString("name"));
-			packet.writeString(player.getString("clanName"));
-			packet.writeD(player.getInt("exp"));
-			packet.writeH(player.getInt("petType"));
-			packet.writeH(player.getInt("petLevel"));
-			packet.writeH(3);
-			packet.writeH(player.getInt("level"));
+			final StatSet pet = data.getValue();
+			packet.writeString(pet.getString("name"));
+			packet.writeString(pet.getString("owner_name"));
+			packet.writeString(pet.getString("clanName"));
+			packet.writeD(1000000 + pet.getInt("npcId"));
+			packet.writeH(pet.getInt("petType"));
+			packet.writeH(pet.getInt("level"));
+			packet.writeH(pet.getInt("owner_race"));
+			packet.writeH(pet.getInt("owner_level"));
 			packet.writeD(scope == RankingScope.SELF ? data.getKey() : curRank); // server rank
 			if (!snapshot.isEmpty())
 			{
 				for (Entry<Integer, StatSet> ssData : snapshot.stream().sorted(Entry.comparingByKey()).collect(Collectors.toList()))
 				{
 					final StatSet snapshotData = ssData.getValue();
-					if (player.getInt("controlledItemObjId") == snapshotData.getInt("controlledItemObjId"))
+					if (pet.getInt("controlledItemObjId") == snapshotData.getInt("controlledItemObjId"))
 					{
 						packet.writeD(scope == RankingScope.SELF ? ssData.getKey() : curRank); // server rank snapshot
 					}
