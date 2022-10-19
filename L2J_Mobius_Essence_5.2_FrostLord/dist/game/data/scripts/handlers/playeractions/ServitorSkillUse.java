@@ -22,6 +22,8 @@ import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
 import org.l2jmobius.gameserver.model.ActionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
+import org.l2jmobius.gameserver.model.skill.Skill;
+import org.l2jmobius.gameserver.model.skill.targets.TargetType;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 
 /**
@@ -51,8 +53,12 @@ public class ServitorSkillUse implements IPlayerActionHandler
 			final int skillLevel = PetSkillData.getInstance().getAvailableLevel(servitor, data.getOptionId());
 			if (skillLevel > 0)
 			{
-				servitor.setTarget(player.getTarget());
-				servitor.useMagic(SkillData.getInstance().getSkill(data.getOptionId(), skillLevel), null, ctrlPressed, shiftPressed);
+				final Skill skill = SkillData.getInstance().getSkill(data.getOptionId(), skillLevel);
+				if (skill != null)
+				{
+					servitor.setTarget(player.getTarget());
+					servitor.useMagic(skill, null, (skill.getTargetType() == TargetType.SELF) || ctrlPressed, shiftPressed);
+				}
 			}
 		});
 	}
