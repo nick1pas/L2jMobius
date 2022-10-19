@@ -86,12 +86,12 @@ public class Weapon extends ItemTemplate
 		if ((damageRange.length > 1) && Util.isDigit(damageRange[2]) && Util.isDigit(damageRange[3]))
 		{
 			_baseAttackRadius = Integer.parseInt(damageRange[2]);
-			_baseAttackAngle = 360 - Integer.parseInt(damageRange[3]);
+			_baseAttackAngle = Integer.parseInt(damageRange[3]);
 		}
 		else
 		{
 			_baseAttackRadius = 40;
-			_baseAttackAngle = 240; // 360 - 120
+			_baseAttackAngle = 0;
 		}
 		
 		final String[] reducedSoulshots = set.getString("reduced_soulshot", "").split(",");

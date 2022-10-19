@@ -106,6 +106,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 	private int _maxSkillChance;
 	private double _hitTimeFactor;
 	private double _hitTimeFactorSkill;
+	private int _baseAttackAngle;
 	private Map<Integer, Skill> _skills;
 	private Map<AISkillScope, List<Skill>> _aiSkillLists;
 	private Set<Integer> _clans;
@@ -200,6 +201,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 		_maxSkillChance = set.getInt("maxSkillChance", 15);
 		_hitTimeFactor = set.getInt("hitTime", 100) / 100d;
 		_hitTimeFactorSkill = set.getInt("hitTimeSkill", 100) / 100d;
+		_baseAttackAngle = set.getInt("width", 120);
 		_collisionRadiusGrown = set.getFloat("collisionRadiusGrown", 0);
 		_collisionHeightGrown = set.getFloat("collisionHeightGrown", 0);
 		_mpRewardValue = set.getInt("mpRewardValue", 0);
@@ -532,6 +534,11 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 	public double getHitTimeFactorSkill()
 	{
 		return _hitTimeFactorSkill;
+	}
+	
+	public int getBaseAttackAngle()
+	{
+		return _baseAttackAngle;
 	}
 	
 	@Override
