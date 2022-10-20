@@ -145,6 +145,7 @@ Battle Chronicle: https://eu.4game.com/patchnotes/lineage2essence/353/
 Vanguard: https://eu.4game.com/patchnotes/lineage2essence/387/
 -Vanguard creation support
 -New enchant system
+-Chest and box auto-use
 
 Customs:
 -Newbie Helper NPC location info

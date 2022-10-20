@@ -18,6 +18,7 @@ package handlers.itemhandlers;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -30,11 +31,14 @@ import org.l2jmobius.gameserver.instancemanager.DailyTaskManager;
 import org.l2jmobius.gameserver.model.ExtractableProduct;
 import org.l2jmobius.gameserver.model.actor.Playable;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
+import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.EtcItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
+import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExResultItemAutoPeel;
 
 /**
  * Extractable Items handler.
@@ -232,7 +236,19 @@ public class ExtractableItems implements IItemHandler
 		
 		for (Entry<Item, Long> entry : extractedItems.entrySet())
 		{
-			sendMessage(player, entry.getKey(), entry.getValue().longValue());
+			sendMessage(player, entry.getKey(), entry.getValue());
+		}
+		
+		final AutoPeelRequest request = player.getRequest(AutoPeelRequest.class);
+		if ((request != null) && request.isProcessing())
+		{
+			request.setProcessing(false);
+			final List<ItemHolder> rewards = new LinkedList<>();
+			for (Entry<Item, Long> entry : extractedItems.entrySet())
+			{
+				rewards.add(new ItemHolder(entry.getKey().getId(), entry.getValue()));
+			}
+			player.sendPacket(new ExResultItemAutoPeel(true, request.getTotalPeelCount(), request.getRemainingPeelCount() - 1, rewards));
 		}
 		
 		return true;

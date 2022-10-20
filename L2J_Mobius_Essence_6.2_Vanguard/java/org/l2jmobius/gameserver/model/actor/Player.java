@@ -182,6 +182,7 @@ import org.l2jmobius.gameserver.model.actor.instance.Shuttle;
 import org.l2jmobius.gameserver.model.actor.instance.TamedBeast;
 import org.l2jmobius.gameserver.model.actor.instance.Trap;
 import org.l2jmobius.gameserver.model.actor.request.AbstractRequest;
+import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
 import org.l2jmobius.gameserver.model.actor.request.SayuneRequest;
 import org.l2jmobius.gameserver.model.actor.stat.PlayerStat;
 import org.l2jmobius.gameserver.model.actor.status.PlayerStatus;
@@ -379,6 +380,8 @@ import org.l2jmobius.gameserver.network.serverpackets.TradeOtherDone;
 import org.l2jmobius.gameserver.network.serverpackets.TradeStart;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ValidateLocation;
+import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExReadyItemAutoPeel;
+import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExStopItemAutoPeel;
 import org.l2jmobius.gameserver.network.serverpackets.autoplay.ExActivateAutoShortcut;
 import org.l2jmobius.gameserver.network.serverpackets.autoplay.ExAutoPlaySettingSend;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionInfo;
@@ -5017,6 +5020,14 @@ public class Player extends Playable
 	@Override
 	public boolean doDie(Creature killer)
 	{
+		// Stop auto peel.
+		if (hasRequest(AutoPeelRequest.class))
+		{
+			sendPacket(new ExStopItemAutoPeel(true));
+			sendPacket(new ExReadyItemAutoPeel(false, 0));
+			removeRequest(AutoPeelRequest.class);
+		}
+		
 		Collection<Item> droppedItems = null;
 		
 		if (killer != null)
@@ -10878,6 +10889,14 @@ public class Player extends Playable
 	public void onTeleported()
 	{
 		super.onTeleported();
+		
+		// Stop auto peel.
+		if (hasRequest(AutoPeelRequest.class))
+		{
+			sendPacket(new ExStopItemAutoPeel(true));
+			sendPacket(new ExReadyItemAutoPeel(false, 0));
+			removeRequest(AutoPeelRequest.class);
+		}
 		
 		if (isInAirShip())
 		{

@@ -14,24 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network.clientpackets.collection;
+package org.l2jmobius.gameserver.network.clientpackets.autopeel;
 
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
+import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
-import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionOpenUI;
+import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExReadyItemAutoPeel;
 
 /**
- * Written by Berezkin Nikolay, on 12.04.2021
+ * @author Mobius
  */
-public class RequestExCollectionOpenUI implements IClientIncomingPacket
+public class ExRequestReadyItemAutoPeel implements IClientIncomingPacket
 {
+	private int _itemObjectId;
+	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
-		packet.readC(); // 1 = isClosed
+		_itemObjectId = packet.readD();
 		return true;
 	}
 	
@@ -44,12 +47,14 @@ public class RequestExCollectionOpenUI implements IClientIncomingPacket
 			return;
 		}
 		
-		if (player.hasRequest(AutoPeelRequest.class))
+		final Item item = player.getInventory().getItemByObjectId(_itemObjectId);
+		if ((item == null) || !item.isEtcItem() || (item.getEtcItem().getExtractableItems() == null) || item.getEtcItem().getExtractableItems().isEmpty())
 		{
+			player.sendPacket(new ExReadyItemAutoPeel(false, _itemObjectId));
 			return;
 		}
 		
-		player.setTarget(null);
-		player.sendPacket(new ExCollectionOpenUI());
+		player.addRequest(new AutoPeelRequest(player, item));
+		player.sendPacket(new ExReadyItemAutoPeel(true, _itemObjectId));
 	}
 }
