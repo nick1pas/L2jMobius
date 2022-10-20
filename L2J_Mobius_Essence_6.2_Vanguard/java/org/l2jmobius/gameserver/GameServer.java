@@ -159,6 +159,7 @@ import org.l2jmobius.gameserver.instancemanager.PurgeRankingManager;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.instancemanager.RankingPowerManager;
+import org.l2jmobius.gameserver.instancemanager.RevengeHistoryManager;
 import org.l2jmobius.gameserver.instancemanager.SellBuffsManager;
 import org.l2jmobius.gameserver.instancemanager.ServerRestartManager;
 import org.l2jmobius.gameserver.instancemanager.SharedTeleportManager;
@@ -322,6 +323,7 @@ public class GameServer
 		AttendanceRewardData.getInstance();
 		MagicLampData.getInstance();
 		RandomCraftData.getInstance();
+		RevengeHistoryManager.getInstance();
 		VipData.getInstance();
 		
 		printSection("Characters");

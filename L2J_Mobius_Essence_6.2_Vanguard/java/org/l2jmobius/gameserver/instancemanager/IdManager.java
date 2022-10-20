@@ -129,6 +129,7 @@ public class IdManager
 				cleanCount += statement.executeUpdate("DELETE FROM character_offline_trade_items WHERE character_offline_trade_items.charId NOT IN (SELECT charId FROM characters);");
 				cleanCount += statement.executeUpdate("DELETE FROM character_tpbookmark WHERE character_tpbookmark.charId NOT IN (SELECT charId FROM characters);");
 				cleanCount += statement.executeUpdate("DELETE FROM character_variables WHERE character_variables.charId NOT IN (SELECT charId FROM characters);");
+				cleanCount += statement.executeUpdate("DELETE FROM character_revenge_history WHERE character_revenge_history.charId NOT IN (SELECT charId FROM characters);");
 				cleanCount += statement.executeUpdate("DELETE FROM bot_reported_char_data WHERE bot_reported_char_data.botId NOT IN (SELECT charId FROM characters);");
 				
 				// Clan

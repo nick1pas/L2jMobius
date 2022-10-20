@@ -19,6 +19,9 @@ package org.l2jmobius.gameserver.instancemanager;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.ConcurrentHashMap;
@@ -31,6 +34,7 @@ import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.data.xml.PetDataTable;
 import org.l2jmobius.gameserver.model.PetData;
 import org.l2jmobius.gameserver.model.StatSet;
+import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
 
@@ -433,6 +437,28 @@ public class RankManager
 			return stats.getInt("classRank");
 		}
 		return 0;
+	}
+	
+	public Collection<Player> getTop50()
+	{
+		final List<Player> result = new LinkedList<>();
+		for (int i = 1; i <= 50; i++)
+		{
+			final StatSet rank = _mainList.get(i);
+			if (rank == null)
+			{
+				break;
+			}
+			
+			final Player player = World.getInstance().getPlayer(rank.getInt("charId"));
+			if ((player == null) || (player.isOnlineInt() != 1))
+			{
+				continue;
+			}
+			
+			result.add(player);
+		}
+		return result;
 	}
 	
 	public static RankManager getInstance()

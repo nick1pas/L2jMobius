@@ -137,6 +137,7 @@ Sylph: https://eu.4game.com/patchnotes/lineage2essence/281/
 Frost Lord: https://eu.4game.com/patchnotes/lineage2essence/329/
 -Resurrection with payment
 -Frost Lord castle
+-Revenge system
 
 Battle Chronicle: https://eu.4game.com/patchnotes/lineage2essence/353/
 -New henna pattern potential system

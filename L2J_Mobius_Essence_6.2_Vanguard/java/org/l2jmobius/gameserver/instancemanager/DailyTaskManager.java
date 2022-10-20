@@ -148,6 +148,8 @@ public class DailyTaskManager
 	{
 		GlobalVariablesManager.getInstance().storeMe();
 		
+		RevengeHistoryManager.getInstance().storeMe();
+		
 		if (Config.WORLD_EXCHANGE_LAZY_UPDATE)
 		{
 			WorldExchangeManager.getInstance().storeMe();

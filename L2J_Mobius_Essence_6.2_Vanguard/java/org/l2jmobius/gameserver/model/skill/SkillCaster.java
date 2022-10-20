@@ -833,13 +833,46 @@ public class SkillCaster implements Runnable
 		}
 		else
 		{
+			int addedTime = 0;
+			if (skill.hasEffectType(EffectType.TELEPORT) && creature.isPlayer())
+			{
+				switch (creature.getActingPlayer().getEinhasadOverseeingLevel())
+				{
+					case 6:
+					{
+						addedTime = 2000;
+						break;
+					}
+					case 7:
+					{
+						addedTime = 3000;
+						break;
+					}
+					case 8:
+					{
+						addedTime = 4000;
+						break;
+					}
+					case 9:
+					{
+						addedTime = 5000;
+						break;
+					}
+					case 10:
+					{
+						addedTime = 6000;
+						break;
+					}
+				}
+			}
+			
 			if (castTime > -1)
 			{
-				_hitTime = (int) Math.max((castTime / timeFactor) - cancelTime, 0);
+				_hitTime = (int) Math.max((castTime / timeFactor) - cancelTime, 0) + addedTime;
 			}
 			else
 			{
-				_hitTime = (int) Math.max((skill.getHitTime() / timeFactor) - cancelTime, 0);
+				_hitTime = (int) Math.max((skill.getHitTime() / timeFactor) - cancelTime, 0) + addedTime;
 			}
 			_cancelTime = (int) cancelTime;
 		}

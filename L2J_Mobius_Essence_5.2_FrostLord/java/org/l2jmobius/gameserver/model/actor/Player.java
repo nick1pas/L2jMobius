@@ -136,6 +136,7 @@ import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
 import org.l2jmobius.gameserver.instancemanager.RecipeManager;
+import org.l2jmobius.gameserver.instancemanager.RevengeHistoryManager;
 import org.l2jmobius.gameserver.instancemanager.SellBuffsManager;
 import org.l2jmobius.gameserver.instancemanager.SiegeManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
@@ -533,6 +534,8 @@ public class Player extends Playable
 	
 	/** The PvP Flag state of the Player (0=White, 1=Purple) */
 	private byte _pvpFlag;
+	
+	private int _einhasadOverseeingLevel = 0;
 	
 	private final List<DamageTakenHolder> _lastDamageTaken = new ArrayList<>(21);
 	
@@ -2173,6 +2176,67 @@ public class Player extends Playable
 		
 		sendPacket(new SystemMessage(SystemMessageId.YOUR_REPUTATION_HAS_BEEN_CHANGED_TO_S1).addInt(getReputation()));
 		broadcastReputation();
+		
+		applyKarmaPenalty();
+	}
+	
+	public void applyKarmaPenalty()
+	{
+		final int expectedLevel;
+		if (getReputation() < -33840)
+		{
+			expectedLevel = 5;
+		}
+		else if (getReputation() < -30240)
+		{
+			expectedLevel = 4;
+		}
+		else if (getReputation() < -27000)
+		{
+			expectedLevel = 3;
+		}
+		else if (getReputation() < -18000)
+		{
+			expectedLevel = 2;
+		}
+		else if (getReputation() < 0)
+		{
+			expectedLevel = 1;
+		}
+		else
+		{
+			expectedLevel = 0;
+		}
+		
+		if (expectedLevel > 0)
+		{
+			if (_einhasadOverseeingLevel != expectedLevel)
+			{
+				getEffectList().stopSkillEffects(SkillFinishType.REMOVED, CommonSkill.EINHASAD_OVERSEEING.getId());
+				SkillData.getInstance().getSkill(CommonSkill.EINHASAD_OVERSEEING.getId(), expectedLevel).applyEffects(this, this);
+			}
+		}
+		else
+		{
+			getEffectList().stopSkillEffects(SkillFinishType.REMOVED, CommonSkill.EINHASAD_OVERSEEING.getId());
+			getServitors().values().forEach(s -> s.getEffectList().stopSkillEffects(SkillFinishType.REMOVED, CommonSkill.EINHASAD_OVERSEEING.getId()));
+			if (getPet() != null)
+			{
+				getPet().getEffectList().stopSkillEffects(SkillFinishType.REMOVED, CommonSkill.EINHASAD_OVERSEEING.getId());
+			}
+		}
+		
+		_einhasadOverseeingLevel = expectedLevel;
+	}
+	
+	public int getEinhasadOverseeingLevel()
+	{
+		return _einhasadOverseeingLevel;
+	}
+	
+	public void setEinhasadOverseeingLevel(int level)
+	{
+		_einhasadOverseeingLevel = level;
 	}
 	
 	public int getWeightPenalty()
@@ -4896,6 +4960,11 @@ public class Player extends Playable
 					}
 					
 					setTotalDeaths(getTotalDeaths() + 1);
+					
+					if (pk != this)
+					{
+						RevengeHistoryManager.getInstance().addNewKill(this, pk);
+					}
 					
 					// pvp/pk item rewards
 					if (!(Config.DISABLE_REWARDS_IN_INSTANCES && (getInstanceId() != 0)) && //
@@ -10342,6 +10411,8 @@ public class Player extends Playable
 		{
 			DecayTaskManager.getInstance().cancel(this);
 		}
+		
+		applyKarmaPenalty();
 		
 		sendPacket(new EtcStatusUpdate(this));
 		_revivePet = false;

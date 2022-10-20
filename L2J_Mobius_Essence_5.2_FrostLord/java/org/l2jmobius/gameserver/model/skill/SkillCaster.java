@@ -1168,6 +1168,12 @@ public class SkillCaster implements Runnable
 				return false;
 			}
 			
+			// Einhasad Overseeing
+			if (skill.hasEffectType(EffectType.TELEPORT) && (player.getEinhasadOverseeingLevel() == 5))
+			{
+				return false;
+			}
+			
 			// Events.
 			if (player.isOnEvent())
 			{

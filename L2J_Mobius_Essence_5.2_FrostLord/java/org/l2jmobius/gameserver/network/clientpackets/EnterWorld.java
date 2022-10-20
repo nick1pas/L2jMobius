@@ -682,6 +682,8 @@ public class EnterWorld implements IClientIncomingPacket
 		
 		player.sendPacket(new ItemDeletionInfo());
 		
+		player.applyKarmaPenalty();
+		
 		// Activate first agathion when available.
 		final Item agathion = player.getInventory().unEquipItemInBodySlot(ItemTemplate.SLOT_AGATHION);
 		if (agathion != null)

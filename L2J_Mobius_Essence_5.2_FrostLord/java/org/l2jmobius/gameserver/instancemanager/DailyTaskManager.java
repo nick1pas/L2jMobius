@@ -147,6 +147,8 @@ public class DailyTaskManager
 	{
 		GlobalVariablesManager.getInstance().storeMe();
 		
+		RevengeHistoryManager.getInstance().storeMe();
+		
 		if (Olympiad.getInstance().inCompPeriod())
 		{
 			Olympiad.getInstance().saveOlympiadStatus();

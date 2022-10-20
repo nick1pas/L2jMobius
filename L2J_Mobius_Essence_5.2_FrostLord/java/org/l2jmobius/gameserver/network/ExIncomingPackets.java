@@ -141,6 +141,11 @@ import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestPvpRankingL
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestPvpRankingMyInfo;
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestRankingCharInfo;
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestRankingCharRankers;
+import org.l2jmobius.gameserver.network.clientpackets.revenge.RequestExPvpBookShareRevengeKillerLocation;
+import org.l2jmobius.gameserver.network.clientpackets.revenge.RequestExPvpBookShareRevengeList;
+import org.l2jmobius.gameserver.network.clientpackets.revenge.RequestExPvpBookShareRevengeReqShareRevengeInfo;
+import org.l2jmobius.gameserver.network.clientpackets.revenge.RequestExPvpBookShareRevengeSharedTeleportToKiller;
+import org.l2jmobius.gameserver.network.clientpackets.revenge.RequestExPvpBookShareRevengeTeleportToKiller;
 import org.l2jmobius.gameserver.network.clientpackets.sayune.RequestFlyMove;
 import org.l2jmobius.gameserver.network.clientpackets.sayune.RequestFlyMoveStart;
 import org.l2jmobius.gameserver.network.clientpackets.settings.ExInteractModify;
@@ -660,11 +665,11 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	EX_COLLECTION_SUMMARY(0x1DF, null, ConnectionState.IN_GAME),
 	EX_COLLECTION_REGISTER(0x1E0, RequestCollectionRegister::new, ConnectionState.IN_GAME),
 	EX_COLLECTION_RECEIVE_REWARD(0x1E1, RequestCollectionReceiveReward::new, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_LIST(0x1E2, null, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_REQ_SHARE_REVENGEINFO(0x1E3, null, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION(0x1E4, null, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_TELEPORT_TO_KILLER(0x1E5, null, ConnectionState.IN_GAME),
-	EX_PVPBOOK_SHARE_REVENGE_SHARED_TELEPORT_TO_KILLER(0x1E6, null, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_LIST(0x1E2, RequestExPvpBookShareRevengeList::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_REQ_SHARE_REVENGEINFO(0x1E3, RequestExPvpBookShareRevengeReqShareRevengeInfo::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION(0x1E4, RequestExPvpBookShareRevengeKillerLocation::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_TELEPORT_TO_KILLER(0x1E5, RequestExPvpBookShareRevengeTeleportToKiller::new, ConnectionState.IN_GAME),
+	EX_PVPBOOK_SHARE_REVENGE_SHARED_TELEPORT_TO_KILLER(0x1E6, RequestExPvpBookShareRevengeSharedTeleportToKiller::new, ConnectionState.IN_GAME),
 	EX_PENALTY_ITEM_LIST(0x1E7, null, ConnectionState.IN_GAME),
 	EX_PENALTY_ITEM_RESTORE(0x1E8, null, ConnectionState.IN_GAME),
 	EX_USER_WATCHER_TARGET_LIST(0x1E9, null, ConnectionState.IN_GAME),

@@ -27,6 +27,7 @@ import org.l2jmobius.gameserver.model.Party;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
+import org.l2jmobius.gameserver.model.effects.EffectType;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.EventType;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLevelChanged;
@@ -35,6 +36,7 @@ import org.l2jmobius.gameserver.model.holders.SubClassHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.item.type.WeaponType;
 import org.l2jmobius.gameserver.model.skill.AbnormalType;
+import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.stats.Formulas;
 import org.l2jmobius.gameserver.model.stats.Stat;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
@@ -723,6 +725,44 @@ public class PlayerStat extends PlayableStat
 	public double getElementalSpiritDefense(ElementalType type, double base)
 	{
 		return type == null ? 0 : getValue(type.getDefenseStat(), base);
+	}
+	
+	@Override
+	public int getReuseTime(Skill skill)
+	{
+		int addedReuse = 0;
+		if (skill.hasEffectType(EffectType.TELEPORT))
+		{
+			switch (getActiveChar().getActingPlayer().getEinhasadOverseeingLevel())
+			{
+				case 6:
+				{
+					addedReuse = 20000;
+					break;
+				}
+				case 7:
+				{
+					addedReuse = 30000;
+					break;
+				}
+				case 8:
+				{
+					addedReuse = 40000;
+					break;
+				}
+				case 9:
+				{
+					addedReuse = 50000;
+					break;
+				}
+				case 10:
+				{
+					addedReuse = 60000;
+					break;
+				}
+			}
+		}
+		return super.getReuseTime(skill) + addedReuse;
 	}
 	
 	@Override
