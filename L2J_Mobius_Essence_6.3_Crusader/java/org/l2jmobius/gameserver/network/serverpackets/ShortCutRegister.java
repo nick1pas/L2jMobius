@@ -50,7 +50,8 @@ public class ShortCutRegister implements IClientOutgoingPacket
 				packet.writeD(0); // unknown
 				packet.writeD(0); // unknown
 				packet.writeD(0); // item augment id
-				packet.writeD(0); // TODO: Find me, item visual id ?
+				packet.writeD(0); // item augment id
+				packet.writeD(0); // visual id
 				break;
 			}
 			case SKILL:
@@ -61,8 +62,8 @@ public class ShortCutRegister implements IClientOutgoingPacket
 				packet.writeD(_shortcut.getSharedReuseGroup());
 				packet.writeC(0); // C5
 				packet.writeD(_shortcut.getCharacterType());
-				packet.writeD(0); // TODO: Find me
-				packet.writeD(0); // TODO: Find me
+				packet.writeD(0); // if 1 - cant use
+				packet.writeD(0); // reuse delay ?
 				break;
 			}
 			case ACTION:

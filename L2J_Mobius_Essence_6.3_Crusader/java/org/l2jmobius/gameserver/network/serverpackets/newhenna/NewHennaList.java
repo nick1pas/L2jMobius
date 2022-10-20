@@ -59,6 +59,8 @@ public class NewHennaList implements IClientOutgoingPacket
 			packet.writeH(hennaPoten.getEnchantLevel());
 			packet.writeD(hennaPoten.getEnchantExp());
 			packet.writeH(hennaPoten.getActiveStep());
+			packet.writeH(_dailyStep);
+			packet.writeH(_dailyCount);
 		}
 		return true;
 	}

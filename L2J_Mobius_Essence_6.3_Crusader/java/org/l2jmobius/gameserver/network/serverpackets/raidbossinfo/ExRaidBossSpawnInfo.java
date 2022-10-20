@@ -41,12 +41,13 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 	public boolean write(PacketWriter packet)
 	{
 		OutgoingPackets.EX_RAID_BOSS_SPAWN_INFO.writeId(packet);
+		packet.writeD(0); // BossRespawnFactor
 		packet.writeD(_statuses.size()); // count
 		for (Entry<Integer, RaidBossStatus> entry : _statuses.entrySet())
 		{
 			packet.writeD(entry.getKey());
 			packet.writeD(entry.getValue().ordinal());
-			packet.writeD(0);
+			packet.writeD(0); // DeadDateTime
 		}
 		return true;
 	}

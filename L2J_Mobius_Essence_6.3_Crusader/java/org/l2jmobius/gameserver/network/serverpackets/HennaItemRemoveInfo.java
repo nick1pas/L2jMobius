@@ -62,7 +62,7 @@ public class HennaItemRemoveInfo implements IClientOutgoingPacket
 		packet.writeH(0); // equip LUC
 		packet.writeD(0); // current CHA
 		packet.writeH(0); // equip CHA
-		packet.writeD(0);
+		packet.writeD(_henna.getDuration() * 60000);
 		return true;
 	}
 }

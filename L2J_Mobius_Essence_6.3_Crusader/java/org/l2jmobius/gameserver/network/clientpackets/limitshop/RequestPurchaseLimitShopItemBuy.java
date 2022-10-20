@@ -81,6 +81,9 @@ public class RequestPurchaseLimitShopItemBuy implements IClientIncomingPacket
 			}
 		}
 		
+		packet.readD(); // SuccessionItemSID
+		packet.readD(); // MaterialItemSID
+		
 		return true;
 	}
 	

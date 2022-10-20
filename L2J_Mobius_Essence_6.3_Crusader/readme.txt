@@ -1,12 +1,12 @@
-L2J-Mobius Vanguard
+L2J-Mobius Crusader
 
 JDK: https://www.mediafire.com/file/kb2nfx54wojys4f/bellsoft-jdk17.0.2%252B9-windows-amd64.msi
 XAMPP: https://www.mediafire.com/file/hkehxpyjn81ybsw/xampp-windows-x64-8.0.11-2-VS16-installer.exe
 Eclipse: https://www.mediafire.com/file/j208qw3s7zwx7c7/eclipse-java-2021-12-R-win32-x86_64.zip
-Geodata: https://www.mediafire.com/file/p1mcjh74p8fn09p/L2J_Mobius_Essence_6.2_Vanguard_Geodata.zip
+Geodata: 
 
-Client (password L2jMobius): https://drive.google.com/u/0/uc?id=1-8CWkwP7ZZlcmiykFdL_B9WvdSYXaKvI&export=download
-System: https://mega.nz/file/oxl2mBQC#yt6P9XkfTbp7Sko7TG54-9vk6r5mAm732mwhbNhwO88
+Client (password L2jMobius): 
+System: 
 
 All provided download links are for personal use. Redistribution of these links is bannable.
 
@@ -146,6 +146,9 @@ Vanguard: https://eu.4game.com/patchnotes/lineage2essence/387/
 -Vanguard creation support
 -New enchant system
 -Chest and box auto-use
+
+Crusader: https://eu.4game.com/patchnotes/lineage2essence/416/
+-Login support
 
 Customs:
 -Newbie Helper NPC location info
