@@ -47,7 +47,13 @@ public class TimedHuntingZoneList implements IClientOutgoingPacket
 		packet.writeD(TimedHuntingZoneData.getInstance().getSize()); // zone count
 		for (TimedHuntingZoneHolder holder : TimedHuntingZoneData.getInstance().getAllHuntingZones())
 		{
-			packet.writeD(holder.getEntryFee() == 0 ? 0 : 1); // required item count
+			final boolean isFree = holder.getEntryFee() == 0;
+			packet.writeD(isFree ? 0 : 1); // size of array - required item count
+			if (!isFree) // is array
+			{
+				packet.writeD(holder.getEntryItemId());
+				packet.writeQ(holder.getEntryFee());
+			}
 			packet.writeD(holder.getEntryItemId());
 			packet.writeQ(holder.getEntryFee());
 			packet.writeD(holder.isWeekly() ? 0 : 1); // reset cycle
@@ -70,6 +76,8 @@ public class TimedHuntingZoneList implements IClientOutgoingPacket
 			packet.writeC(0); // bIsInZonePCCafeUserOnly
 			packet.writeC(0); // bIsPCCafeUser
 			packet.writeC(holder.useWorldPrefix() ? 1 : 0); // bWorldInZone
+			packet.writeC(0); // bCanUseEntranceTicket
+			packet.writeD(0); // nEntranceCount
 		}
 		return true;
 	}

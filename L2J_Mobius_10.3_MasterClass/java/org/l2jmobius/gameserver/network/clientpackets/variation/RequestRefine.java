@@ -30,22 +30,20 @@ import org.l2jmobius.gameserver.network.clientpackets.AbstractRefinePacket;
 import org.l2jmobius.gameserver.network.serverpackets.ExVariationResult;
 
 /**
- * Format:(ch) dddd
- * @author -Wooden-
+ * Format:(ch) ddc
+ * @author -Wooden-, Index
  */
 public class RequestRefine extends AbstractRefinePacket
 {
 	private int _targetItemObjId;
 	private int _mineralItemObjId;
-	private long _feeCount;
 	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
 		_targetItemObjId = packet.readD();
 		_mineralItemObjId = packet.readD();
-		packet.readD(); // _feeItemObjId
-		_feeCount = packet.readQ();
+		packet.readC(); // is event
 		return true;
 	}
 	
@@ -89,7 +87,7 @@ public class RequestRefine extends AbstractRefinePacket
 			return;
 		}
 		
-		if (_feeCount <= 0)
+		if (fee.getAdenaFee() <= 0)
 		{
 			player.sendPacket(ExVariationResult.FAIL);
 			player.sendPacket(SystemMessageId.AUGMENTATION_FAILED_DUE_TO_INAPPROPRIATE_CONDITIONS);
@@ -145,7 +143,7 @@ public class RequestRefine extends AbstractRefinePacket
 		// Consume the gemstones.
 		if (feeItem != null)
 		{
-			player.destroyItem("RequestRefine", feeItem, _feeCount, null, false);
+			player.destroyItem("RequestRefine", feeItem, fee.getAdenaFee(), null, false);
 		}
 		
 		// Consume Adena.

@@ -110,7 +110,7 @@ public class RequestJoinPledge implements IClientIncomingPacket
 		}
 		
 		final String pledgeName = player.getClan().getName();
-		target.sendPacket(new AskJoinPledge(player, _pledgeType, pledgeName));
+		target.sendPacket(new AskJoinPledge(player, pledgeName));
 	}
 	
 	public int getPledgeType()

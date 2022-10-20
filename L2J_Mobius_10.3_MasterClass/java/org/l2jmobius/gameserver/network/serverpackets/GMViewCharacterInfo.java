@@ -92,9 +92,15 @@ public class GMViewCharacterInfo implements IClientOutgoingPacket
 			packet.writeD(augment != null ? augment.getOption1Id() : 0); // Confirmed
 			packet.writeD(augment != null ? augment.getOption2Id() : 0); // Confirmed
 		}
+		for (int index = 0; index < 98; index++)
+		{
+			packet.writeD(0);	// unk
+		}
+		packet.writeC(0);	// unk
+		packet.writeC(0);	// unk
 		packet.writeC(_player.getInventory().getTalismanSlots()); // CT2.3
 		packet.writeC(_player.getInventory().canEquipCloak() ? 1 : 0); // CT2.3
-		packet.writeD(0);
+		packet.writeC(0);
 		packet.writeH(0);
 		packet.writeD(_player.getPAtk());
 		packet.writeD(_player.getPAtkSpd());

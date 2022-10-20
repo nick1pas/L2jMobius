@@ -110,6 +110,10 @@ public class Die implements IClientOutgoingPacket
 		packet.writeD(0);
 		packet.writeD(0);
 		packet.writeD(0);
+		packet.writeD(0);
+		packet.writeD(0);
+		packet.writeD(0);
+		packet.writeD(0);
 		return true;
 	}
 }

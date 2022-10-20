@@ -49,11 +49,13 @@ public class DropItem implements IClientOutgoingPacket
 		// only show item count if it is a stackable item
 		packet.writeC(_item.isStackable() ? 1 : 0);
 		packet.writeQ(_item.getCount());
-		packet.writeC(0);
-		// packet.writeD(1); if above C == true (1) then packet.readD()
+		packet.writeD(0);
+		packet.writeC(_item.getEnchantLevel() > 0 ? 1 : 0);
+		packet.writeD(0);
 		packet.writeC(_item.getEnchantLevel()); // Grand Crusade
 		packet.writeC(_item.getAugmentation() != null ? 1 : 0); // Grand Crusade
 		packet.writeC(_item.getSpecialAbilities().size()); // Grand Crusade
+		packet.writeC(0);
 		return true;
 	}
 }

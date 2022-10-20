@@ -49,8 +49,8 @@ public class HennaRemoveList implements IClientOutgoingPacket
 				packet.writeD(henna.getDyeItemId());
 				packet.writeQ(henna.getCancelCount());
 				packet.writeQ(henna.getCancelFee());
-				packet.writeD(0);
-				packet.writeD(0);
+				packet.writeD(henna.isAllowedClass(_player.getClassId()) ? 1 : 0);
+				packet.writeD(henna.getDuration() * 60000);
 			}
 		}
 		return true;

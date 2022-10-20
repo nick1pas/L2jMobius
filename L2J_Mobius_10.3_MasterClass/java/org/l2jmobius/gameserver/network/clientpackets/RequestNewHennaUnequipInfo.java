@@ -17,24 +17,25 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.model.World;
+import org.l2jmobius.gameserver.data.xml.HennaData;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.item.Henna;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.AskJoinPledge;
+import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.HennaItemRemoveInfo;
 
 /**
- * @author Mobius
+ * @author Index
  */
-public class RequestClanAskJoinByName implements IClientIncomingPacket
+public class RequestNewHennaUnequipInfo implements IClientIncomingPacket
 {
-	private String _playerName;
-	private int _pledgeType;
+	private int _hennaId;
 	
 	@Override
 	public boolean read(GameClient client, PacketReader packet)
 	{
-		_playerName = packet.readS();
-		_pledgeType = packet.readD();
+		_hennaId = packet.readD();
 		return true;
 	}
 	
@@ -42,26 +43,19 @@ public class RequestClanAskJoinByName implements IClientIncomingPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getPlayer();
-		if ((player == null) || (player.getClan() == null))
+		if ((player == null) || (_hennaId == 0))
 		{
 			return;
 		}
 		
-		final Player invitedPlayer = World.getInstance().getPlayer(_playerName);
-		if (!player.getClan().checkClanJoinCondition(player, invitedPlayer, _pledgeType))
+		final Henna henna = HennaData.getInstance().getHenna(_hennaId);
+		if (henna == null)
 		{
-			return;
-		}
-		if (!player.getRequest().setRequest(invitedPlayer, this))
-		{
+			PacketLogger.warning("Invalid Henna Id: " + _hennaId + " from " + player);
+			player.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
 		
-		invitedPlayer.sendPacket(new AskJoinPledge(player, player.getClan().getName()));
-	}
-	
-	public int getPledgeType()
-	{
-		return _pledgeType;
+		player.sendPacket(new HennaItemRemoveInfo(henna, player));
 	}
 }
