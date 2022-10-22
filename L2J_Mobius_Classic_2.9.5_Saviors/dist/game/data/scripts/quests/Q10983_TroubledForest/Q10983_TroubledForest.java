@@ -59,6 +59,7 @@ public class Q10983_TroubledForest extends Quest
 		addTalkId(NEWBIE_GUIDE, HERBIEL);
 		addKillId(GOBLIN_RAIDER, KABOO_ORC);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_HERBIEL.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_20_TROUBLEMAKER_OF_FOREST);
 	}
 	

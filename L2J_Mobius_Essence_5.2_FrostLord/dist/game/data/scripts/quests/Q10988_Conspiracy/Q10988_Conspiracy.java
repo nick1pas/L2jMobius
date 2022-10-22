@@ -69,6 +69,7 @@ public class Q10988_Conspiracy extends Quest
 		addTalkId(USKA, CAPTAIN_BATHIS);
 		addKillId(KASHA_SPIDER, KASHA_BLADE_SPIDER, MARAKU_WEREVOLF_CHIEFTAIN, EVIL_EYE_PATROL);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_CONSPIRACY);
 	}
 	

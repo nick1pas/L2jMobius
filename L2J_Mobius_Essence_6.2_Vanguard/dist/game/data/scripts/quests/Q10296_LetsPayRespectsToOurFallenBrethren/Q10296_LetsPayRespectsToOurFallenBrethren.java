@@ -72,6 +72,7 @@ public class Q10296_LetsPayRespectsToOurFallenBrethren extends Quest
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
 		addCondCompletedQuest(Q10295_RespectForGraves.class.getSimpleName(), "no_lvl.html");
+		registerQuestItems(SOE_FIELDS_OF_MASSACRE.getId(), SOE_HIGH_PRIEST_OVEN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_52_56_PAY_RESPECTS_TO_FALLEN_BRETHREN);
 	}
 	

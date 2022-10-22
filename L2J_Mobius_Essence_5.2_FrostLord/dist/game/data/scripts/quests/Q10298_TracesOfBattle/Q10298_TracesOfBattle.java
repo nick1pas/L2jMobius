@@ -68,6 +68,7 @@ public class Q10298_TracesOfBattle extends Quest
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
 		addCondCompletedQuest(Q10295_RespectForGraves.class.getSimpleName(), "no_lvl.html");
+		registerQuestItems(SOE_WAR_TORN_PLAINS.getId(), SOE_HIGH_PRIEST_OVEN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_64_70_TRACES_OF_BATTLE);
 	}
 	

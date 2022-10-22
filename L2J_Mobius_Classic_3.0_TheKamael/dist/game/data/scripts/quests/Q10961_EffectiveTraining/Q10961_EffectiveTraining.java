@@ -61,6 +61,7 @@ public class Q10961_EffectiveTraining extends Quest
 		addTalkId(NEWBIE_GUIDE, REAHEN);
 		addKillId(GREY_KELTIR, ELDER_GREY_KELTIR, BLACK_WOLF, ELDER_BLACK_WOLF);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_REAHEN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_20_EFFECTIVE_TRAINING);
 	}
 	

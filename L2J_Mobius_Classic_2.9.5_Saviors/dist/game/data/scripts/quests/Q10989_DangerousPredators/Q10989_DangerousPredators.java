@@ -60,6 +60,7 @@ public class Q10989_DangerousPredators extends Quest
 		addTalkId(NEWBIE_GUIDE, GERALD);
 		addKillId(LONGTAIL_KELTIR, ELDER_LONGTAIL_KELTIR, BLACK_WOLF);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_GERAILD.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_20_DISRUPTORS);
 	}
 	

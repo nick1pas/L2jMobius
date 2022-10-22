@@ -60,6 +60,7 @@ public class Q10985_CleaningUpTheGround extends Quest
 		addTalkId(NEWBIE_GUIDE, VOLODOS);
 		addKillId(ASHEN_WOLF, GOBLIN, IMP);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_VOLLODOS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_20_CLEANING_UP_THE_GROUNDS);
 	}
 	

@@ -69,6 +69,7 @@ public class Q10959_ChallengingYourDestiny extends Quest
 		addTalkId(MATHORN);
 		addKillId(SKELETON_SCOUT, SKELETON_HUNTER);
 		addCondCompletedQuest(Q10958_ExploringNewOpportunities.class.getSimpleName(), "34138-02.htm");
+		registerQuestItems(SOE_MATHORN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_CHALLENGING_YOUR_DESTINY);
 	}
 	

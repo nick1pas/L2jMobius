@@ -78,7 +78,7 @@ public class Q10589_WhereFatesIntersect extends Quest
 		addStartNpc(TARTI);
 		addTalkId(TARTI, HERPHAH, VOLLODOS, JOACHIM);
 		addKillId(MONSTERS);
-		registerQuestItems(MONSTER_DROP);
+		registerQuestItems(MONSTER_DROP, SOE_HERPHAH.getId());
 		addCondCompletedQuest(Q11027_PathOfDestinyOvercome.class.getSimpleName(), getNoQuestMsg(null));
 	}
 	

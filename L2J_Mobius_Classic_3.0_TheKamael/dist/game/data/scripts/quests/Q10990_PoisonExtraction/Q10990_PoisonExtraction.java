@@ -82,6 +82,7 @@ public class Q10990_PoisonExtraction extends Quest
 		addTalkId(GERALD, CAPTAIN_BATHIS);
 		addKillId(HUNTER_TARANTULA, PLUNDER_TARANTULA);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_POISON_EXTRACTION);
 	}
 	

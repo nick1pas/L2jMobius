@@ -65,6 +65,7 @@ public class Q10955_NewLifeLessons extends Quest
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
 		addCondRace(Race.SYLPH, "no_race.html");
+		registerQuestItems(SOE_KERKIR.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_15_NEW_LIFE_S_LESSONS);
 	}
 	

@@ -84,6 +84,7 @@ public class Q10986_SwampMonster extends Quest
 		addTalkId(VOLODOS, CAPTAIN_BATHIS);
 		addKillId(MARSH_ZOMBIE, MARSH_ZOMBIE_SCOUT, DARK_HORROR, LESSER_DARK_HORROR);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_TERRIBLE_SWAMP_MONSTERS);
 	}
 	

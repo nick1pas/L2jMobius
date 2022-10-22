@@ -90,7 +90,7 @@ public class Q10591_NobleMaterial extends Quest
 		addStartNpc(JOACHIM);
 		addTalkId(JOACHIM, HARP_ZU_HESTUI, EVAN_GRAHAM, HERPA, LIONEL_HUNTER);
 		addKillId(MONSTERS);
-		registerQuestItems(FLAME_ENERGY);
+		registerQuestItems(FLAME_ENERGY, SOE_JOACHIM.getId());
 		addCondMinLevel(99, "34513-16.html");
 		addCondCompletedQuest(Q10590_ReawakenedFate.class.getSimpleName(), "34513-16.html");
 	}

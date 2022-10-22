@@ -62,9 +62,10 @@ public class Q10292_SecretGarden extends Quest
 		addStartNpc(CAPTAIN_BATHIS);
 		addTalkId(CAPTAIN_BATHIS, RAYMOND);
 		addKillId(HARPY, MEDUSA, WYRM, TURAK_BUGBEAR, TURAK_BUGBEAR_WARRIOR);
-		setQuestNameNpcStringId(NpcStringId.LV_30_35_SECRET_GARDEN);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_GORGON_FLOWER_GARDEN.getId(), SOE_HIGH_PRIEST_RAYMOND.getId());
+		setQuestNameNpcStringId(NpcStringId.LV_30_35_SECRET_GARDEN);
 	}
 	
 	@Override

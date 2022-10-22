@@ -79,6 +79,7 @@ public class Q10984_CollectSpiderweb extends Quest
 		addKillId(HOOK_SPIDER, CRIMSON_SPIDER, PINCER_SPIDER);
 		registerQuestItems(GIANT_COBWEB);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_COLLECT_SPIDERWEB);
 	}
 	

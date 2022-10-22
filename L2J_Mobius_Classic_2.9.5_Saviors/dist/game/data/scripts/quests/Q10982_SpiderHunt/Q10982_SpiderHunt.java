@@ -83,6 +83,7 @@ public class Q10982_SpiderHunt extends Quest
 		addTalkId(JACKSON, CAPTAIN_BATHIS);
 		addKillId(GIANT_SPIDER, GIANT_FANG_SPIDER, GIANT_BLADE_SPIDER);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_SPIDER_HUNTER);
 	}
 	

@@ -61,6 +61,7 @@ public class Q10958_ExploringNewOpportunities extends Quest
 		addTalkId(KILREMANGE, MATHORN);
 		addKillId(SKELETON_ARCHER, SKELETON_WARRIOR);
 		addCondCompletedQuest(Q10957_TheLifeOfADeathKnight.class.getSimpleName(), "34138-02.htm");
+		registerQuestItems(SOE_MATHORN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_15_EXPLORING_NEW_OPPORTUNITIES);
 	}
 	

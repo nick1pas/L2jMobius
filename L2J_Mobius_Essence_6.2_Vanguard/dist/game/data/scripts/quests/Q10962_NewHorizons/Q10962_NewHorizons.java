@@ -69,6 +69,7 @@ public class Q10962_NewHorizons extends Quest
 		addTalkId(LEAHEN, CAPTAIN_BATHIS);
 		addKillId(MOUNTAIN_WEREWORLF, MOUNTAIN_FUNGUES, MUERTOS_WARRIOR, MUERTOS_CAPTAIN);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_NEW_HORIZONS);
 	}
 	

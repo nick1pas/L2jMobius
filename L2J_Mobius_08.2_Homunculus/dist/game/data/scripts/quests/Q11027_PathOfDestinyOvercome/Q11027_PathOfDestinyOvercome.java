@@ -126,7 +126,7 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 		addStartNpc(TARTI);
 		addTalkId(TARTI, RECLOUS, RAYMOND, GERETH);
 		addKillId(TUREK_WAR_HOUND, TUREK_ORC_FOOTMAN, TUREK_ORC_ARCHER, TUREK_ORC_SKIRMISHER, TUREK_ORC_PREFECT, TUREK_ORC_PRIEST, KETRA_ORC_WARRIOR, KETRA_ORC_RAIDER, KETRA_ORC_SCOUT, KETRA_ORC_PRIEST, KETRA_ORC_OFFICER, KETRA_ORC_CAPTAIN);
-		registerQuestItems(PROPHECY_MACHINE, ATELIA, ORC_EMPOWERING_POTION, KETRA_ORDER);
+		registerQuestItems(PROPHECY_MACHINE, ATELIA, ORC_EMPOWERING_POTION, KETRA_ORDER, SOE_RECLOUS, SOE_TARTI);
 		addCondMinLevel(LEVEL_76, "34505-14.html"); // Not retail, I do the same as on older quest but updated.
 		addCondCompletedQuest(Q11026_PathOfDestinyConviction.class.getSimpleName(), "34505-15.html");
 		setQuestNameNpcStringId(NpcStringId.LV_76_PATH_OF_DESTINY_OVERCOME);

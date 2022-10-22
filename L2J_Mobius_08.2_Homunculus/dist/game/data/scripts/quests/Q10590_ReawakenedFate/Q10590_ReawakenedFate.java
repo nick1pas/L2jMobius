@@ -74,7 +74,7 @@ public class Q10590_ReawakenedFate extends Quest
 		addStartNpc(JOACHIM);
 		addTalkId(JOACHIM, LAPATHIA, HERPHAH, ORVEN);
 		addKillId(MONSTERS);
-		registerQuestItems(VAMPIRE_ICHOR);
+		registerQuestItems(VAMPIRE_ICHOR, SOE_JOACHIM.getId());
 		addCondMinLevel(MIN_LEVEL, "34513-16.html");
 		addCondCompletedQuest(Q10589_WhereFatesIntersect.class.getSimpleName(), "34513-16.html");
 	}

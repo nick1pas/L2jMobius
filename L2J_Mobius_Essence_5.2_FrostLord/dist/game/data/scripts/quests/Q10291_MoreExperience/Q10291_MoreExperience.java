@@ -61,9 +61,10 @@ public class Q10291_MoreExperience extends Quest
 		addStartNpc(CAPTAIN_BATHIS);
 		addTalkId(CAPTAIN_BATHIS);
 		addKillId(OL_MAHUM_SHOOTER, OL_MAHUM_SERGEANT, OL_MAHUM_OFFICER, OL_MAHUM_GENERAL, OL_MAHUM_COMMANDER);
-		setQuestNameNpcStringId(NpcStringId.LV_25_30_MORE_EXPERIENCE);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId(), SOE_ABANDNED_CAMP.getId());
+		setQuestNameNpcStringId(NpcStringId.LV_25_30_MORE_EXPERIENCE);
 	}
 	
 	@Override

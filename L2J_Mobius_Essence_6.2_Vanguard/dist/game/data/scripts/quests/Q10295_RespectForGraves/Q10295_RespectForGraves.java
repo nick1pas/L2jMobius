@@ -70,6 +70,7 @@ public class Q10295_RespectForGraves extends Quest
 		addKillId(TAIK_ORC_WATCHMAN, GRAVE_GUARD, TAIK_ORC_SUPPLY_OFFICER, TAIRIM, TORTURED_UNDEAD, SPITEFUL_GHOST_OF_RUINS, SOLDIER_OF_GRIEF, CRUEL_PUNISHER, ROVING_SOUL, SOUL_OF_RUNIS);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_CEMETERY.getId(), SOE_HIGH_PRIEST_OVEN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_45_52_RESPECT_FOR_GRAVES);
 	}
 	

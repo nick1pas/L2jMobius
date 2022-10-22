@@ -67,6 +67,7 @@ public class Q10297_MemoryOfTheGloriousPast extends Quest
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
 		addCondCompletedQuest(Q10295_RespectForGraves.class.getSimpleName(), "no_lvl.html");
+		registerQuestItems(SOE_PLAINS_OF_GLORY.getId(), SOE_HIGH_PRIEST_OVEN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_56_64_MEMORY_OF_THE_GLORIOUS_PAST);
 	}
 	

@@ -63,9 +63,10 @@ public class Q10293_DeathMysteries extends Quest
 		addStartNpc(RAYMOND);
 		addTalkId(RAYMOND, MAXIMILLIAN);
 		addKillId(WYRM, GUARDIAN_BASILISK, ROAD_SCAVENGER, FETTERED_SOUL, WINDUS, GRANDIS);
-		setQuestNameNpcStringId(NpcStringId.LV_35_40_DEATH_MYSTERIES);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_DEATH_PASS.getId(), SOE_HIGH_PRIEST_MAXIMILIAN.getId());
+		setQuestNameNpcStringId(NpcStringId.LV_35_40_DEATH_MYSTERIES);
 	}
 	
 	@Override

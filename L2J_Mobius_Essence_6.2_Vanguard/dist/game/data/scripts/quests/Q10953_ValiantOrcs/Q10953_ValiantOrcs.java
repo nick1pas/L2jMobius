@@ -72,6 +72,7 @@ public class Q10953_ValiantOrcs extends Quest
 		addKillId(KASHA_SPIDER, KASHA_BLADE_SPIDER, MARAKU_WEREVOLF_CHIEFTAIN, EVIL_EYE_PATROL);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.htm");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.htm");
+		registerQuestItems(SOE_TO_GANTAKI_ZU_URUTU.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_VALIANT_ORCS);
 	}
 	

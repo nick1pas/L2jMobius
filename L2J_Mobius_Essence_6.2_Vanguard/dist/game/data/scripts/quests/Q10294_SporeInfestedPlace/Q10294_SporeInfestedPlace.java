@@ -70,6 +70,7 @@ public class Q10294_SporeInfestedPlace extends Quest
 		addKillId(GIANT_FUNGUS, GIANT_MONSTER_EYE, DIRE_WYRM, ROTTING_TREE, ROTTING_GOLEM, SPIDER_TRISALIM, TRISALIM_TARANTULA, SPORE_ZOMBIE, EARTH_GUARDIAN_WYRM);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_SEA_OF_SPORES.getId(), SOE_HIGH_PRIEST_OVEN.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_40_45_SPORE_INFECTED_PLACE);
 	}
 	

@@ -59,6 +59,7 @@ public class Q10981_UnbearableWolvesHowling extends Quest
 		addTalkId(NEWBIE_GUIDE, JACKSON);
 		addKillId(BEARDED_KELTIR, WOLF);
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_JACKSON.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_20_UNBEARABLE_WOLVES_HOWLING);
 	}
 	

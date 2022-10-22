@@ -76,6 +76,7 @@ public class Q10956_WeSylphs extends Quest
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
 		addCondRace(Race.SYLPH, "no_race.html");
+		registerQuestItems(SOE_EVIA.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_15_20_WE_SYLPHS);
 	}
 	

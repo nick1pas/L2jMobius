@@ -74,6 +74,7 @@ public class Q10290_ATripBegins extends Quest
 		addKillId(ARACHNID_PREDATOR, SKELETON_BOWMAN, RUIN_SPARTOI, RAGING_SPARTOI, RAGING_SPARTOI, TUMRAN_BUGBEAR, TUMRAN_BUGBEAR_WARRIOR);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
+		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId(), SOE_TO_RUIN_OF_AGONY.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_20_25_A_TRIP_BEGINS);
 	}
 	

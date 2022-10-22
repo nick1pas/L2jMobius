@@ -62,6 +62,7 @@ public class Q10952_ProtectAtAllCosts extends Quest
 		addKillId(KASHA_WOLF, KASHA_TIMBER_WOLF, GOBLIN_TOMB_RAIDER, RAKECLAW_IMP_HUNTER);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.htm");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.htm");
+		registerQuestItems(SOE_TO_TANAI.getId());
 		setQuestNameNpcStringId(NpcStringId.LV_2_15_PROTECT_AT_ALL_COSTS);
 	}
 	

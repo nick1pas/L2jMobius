@@ -81,6 +81,7 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 		addStartNpc(TARTI);
 		addTalkId(TARTI, SILVAN);
 		addKillId(NASTY_EYE, NASTY_BUGGLE, NASTY_ZOMBIE, NASTY_ZOMBIE_LORD);
+		registerQuestItems(SOE_SILVAN, SOE_TARTI);
 		setQuestNameNpcStringId(NpcStringId.LV_1_PATH_OF_DESTINY_BEGINNING);
 	}
 	
