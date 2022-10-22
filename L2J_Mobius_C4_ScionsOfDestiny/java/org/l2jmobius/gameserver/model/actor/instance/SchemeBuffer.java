@@ -31,6 +31,7 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jmobius.gameserver.util.MathUtil;
 import org.l2jmobius.gameserver.util.Util;
 
 public class SchemeBuffer extends Folk
@@ -298,7 +299,7 @@ public class SchemeBuffer extends Folk
 		}
 		
 		// Calculate page number.
-		final int max = Util.countPagesNumber(skills.size(), PAGE_LIMIT);
+		final int max = MathUtil.countPagesNumber(skills.size(), PAGE_LIMIT);
 		int page = pageValue;
 		if (page > max)
 		{
