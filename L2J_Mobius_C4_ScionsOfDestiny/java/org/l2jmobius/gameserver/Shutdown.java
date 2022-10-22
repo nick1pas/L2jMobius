@@ -47,7 +47,6 @@ import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.network.serverpackets.ServerClose;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
-import org.l2jmobius.gameserver.taskmanager.MovementTaskManager;
 import org.l2jmobius.gameserver.util.Broadcast;
 
 /**
@@ -295,16 +294,6 @@ public class Shutdown extends Thread
 		
 		// saveData sends messages to exit players, so shutdown selector after it
 		saveData();
-		
-		try
-		{
-			MovementTaskManager.getInstance().interrupt();
-			LOGGER.info("Movement Task Manager thread has been shutdown.");
-		}
-		catch (Throwable t)
-		{
-			// ignore
-		}
 		
 		try
 		{
