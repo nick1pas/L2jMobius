@@ -1118,7 +1118,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not remove augmentation for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not remove augmentation for " + this + " from DB: ", e);
 		}
 		
 		// Notify to scripts.
@@ -1165,7 +1165,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not restore augmentation and elemental data for item " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not restore augmentation and elemental data for " + this + " from DB: ", e);
 		}
 	}
 	
@@ -1177,7 +1177,7 @@ public class Item extends WorldObject
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update atributes for item: " + toString() + " from DB:", e);
+			LOGGER.log(Level.SEVERE, "Item could not update atributes for " + this + " from DB:", e);
 		}
 	}
 	
@@ -1193,7 +1193,7 @@ public class Item extends WorldObject
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update atributes for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not update atributes for " + this + " from DB: ", e);
 		}
 	}
 	
@@ -1205,7 +1205,7 @@ public class Item extends WorldObject
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update elementals for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not update elementals for " + this + " from DB: ", e);
 		}
 	}
 	
@@ -1218,7 +1218,7 @@ public class Item extends WorldObject
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update elementals for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not update elementals for " + this + " from DB: ", e);
 		}
 		
 		if (_elementals == null)
@@ -1239,7 +1239,7 @@ public class Item extends WorldObject
 		}
 		catch (SQLException e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update elementals for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not update elementals for " + this + " from DB: ", e);
 		}
 	}
 	
@@ -1376,7 +1376,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not remove elemental enchant for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not remove elemental enchant for " + this + " from DB: ", e);
 		}
 	}
 	
@@ -1400,7 +1400,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not remove all elemental enchant for item: " + toString() + " from DB: ", e);
+			LOGGER.log(Level.SEVERE, "Item could not remove all elemental enchant for " + this + " from DB: ", e);
 		}
 	}
 	
@@ -1709,7 +1709,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not update item " + this + " in DB: Reason: " + e.getMessage(), e);
+			LOGGER.log(Level.SEVERE, "Item could not update " + this + " in DB: Reason: " + e.getMessage(), e);
 		}
 	}
 	
@@ -1756,7 +1756,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not insert item " + this + " into DB: Reason: " + e.getMessage(), e);
+			LOGGER.log(Level.SEVERE, "Item could not insert " + this + " into DB: Reason: " + e.getMessage(), e);
 		}
 	}
 	
@@ -1804,7 +1804,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.SEVERE, "Could not delete item " + this + " in DB ", e);
+			LOGGER.log(Level.SEVERE, "Item could not delete " + this + " in DB ", e);
 		}
 		finally
 		{
@@ -2342,7 +2342,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.WARNING, "Couldn't remove special ability for item: " + this, e);
+			LOGGER.log(Level.WARNING, "Item could not remove special ability for " + this, e);
 		}
 	}
 	
@@ -2405,7 +2405,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.WARNING, "Couldn't restore special abilities for item: " + this, e);
+			LOGGER.log(Level.WARNING, "Item could not restore special abilities for " + this, e);
 		}
 	}
 	
@@ -2417,7 +2417,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.WARNING, "Couldn't update item special abilities", e);
+			LOGGER.log(Level.WARNING, "Item could not update item special abilities", e);
 		}
 	}
 	
@@ -2462,7 +2462,7 @@ public class Item extends WorldObject
 		}
 		catch (Exception e)
 		{
-			LOGGER.log(Level.WARNING, "Couldn't update item special abilities", e);
+			LOGGER.log(Level.WARNING, "Item could not update item special abilities", e);
 		}
 	}
 	
@@ -2506,7 +2506,7 @@ public class Item extends WorldObject
 			}
 			else if (id != 0)
 			{
-				LOGGER.info("applyEnchantStats: Couldn't find option: " + id);
+				LOGGER.info("Item applyEnchantStats could not find option " + id + " " + this + " " + player);
 			}
 		}
 	}
