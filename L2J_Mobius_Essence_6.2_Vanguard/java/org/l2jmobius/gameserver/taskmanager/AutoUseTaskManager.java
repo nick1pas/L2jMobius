@@ -54,415 +54,434 @@ import org.l2jmobius.gameserver.network.serverpackets.ExBasicActionList;
 /**
  * @author Mobius
  */
-public class AutoUseTaskManager implements Runnable
+public class AutoUseTaskManager
 {
-	private static final Set<Player> PLAYERS = ConcurrentHashMap.newKeySet();
+	private static final Set<Set<Player>> POOLS = ConcurrentHashMap.newKeySet();
+	private static final int POOL_SIZE = 300;
+	private static final int TASK_DELAY = 300;
 	private static final int REUSE_MARGIN_TIME = 3;
-	private static boolean _working = false;
 	
 	protected AutoUseTaskManager()
 	{
-		ThreadPool.scheduleAtFixedRate(this, 500, 500);
 	}
 	
-	@Override
-	public void run()
+	private class AutoUse implements Runnable
 	{
-		if (_working)
-		{
-			return;
-		}
-		_working = true;
+		private final Set<Player> _players;
 		
-		for (Player player : PLAYERS)
+		public AutoUse(Set<Player> players)
 		{
-			if (!player.isOnline() || player.isInOfflineMode())
+			_players = players;
+		}
+		
+		@Override
+		public void run()
+		{
+			for (Player player : _players)
 			{
-				stopAutoUseTask(player);
-				continue;
-			}
-			
-			if (player.hasBlockActions() || player.isControlBlocked() || player.isAlikeDead() || player.isMounted() || (player.isTransformed() && player.getTransformation().get().isRiding()))
-			{
-				continue;
-			}
-			
-			final boolean isInPeaceZone = player.isInsideZone(ZoneId.PEACE) || player.isInsideZone(ZoneId.SAYUNE);
-			
-			if (Config.ENABLE_AUTO_ITEM && !isInPeaceZone)
-			{
-				ITEMS: for (Integer itemId : player.getAutoUseSettings().getAutoSupplyItems())
+				if (!player.isOnline() || player.isInOfflineMode())
 				{
-					if (player.isTeleporting())
-					{
-						break ITEMS;
-					}
-					
-					final Item item = player.getInventory().getItemByItemId(itemId.intValue());
-					if (item == null)
-					{
-						player.getAutoUseSettings().getAutoSupplyItems().remove(itemId);
-						continue ITEMS;
-					}
-					
-					final ItemTemplate it = item.getTemplate();
-					if (it != null)
-					{
-						if (!it.checkCondition(player, player, false))
-						{
-							continue ITEMS;
-						}
-						
-						final List<ItemSkillHolder> skills = it.getAllSkills();
-						if (skills != null)
-						{
-							for (ItemSkillHolder itemSkillHolder : skills)
-							{
-								final Skill skill = itemSkillHolder.getSkill();
-								if (player.isAffectedBySkill(skill.getId()) || player.hasSkillReuse(skill.getReuseHashCode()) || !skill.checkCondition(player, player, false))
-								{
-									continue ITEMS;
-								}
-							}
-						}
-					}
-					
-					final int reuseDelay = item.getReuseDelay();
-					if ((reuseDelay <= 0) || (player.getItemRemainingReuseTime(item.getObjectId()) <= 0))
-					{
-						final EtcItem etcItem = item.getEtcItem();
-						final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
-						if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
-						{
-							player.addTimeStampItem(item, reuseDelay);
-						}
-					}
-				}
-			}
-			
-			if (Config.ENABLE_AUTO_POTION && !isInPeaceZone && (player.getCurrentHpPercent() < player.getAutoPlaySettings().getAutoPotionPercent()))
-			{
-				POTIONS: for (Integer itemId : player.getAutoUseSettings().getAutoPotionItems())
-				{
-					final Item item = player.getInventory().getItemByItemId(itemId.intValue());
-					if (item == null)
-					{
-						player.getAutoUseSettings().getAutoPotionItems().remove(itemId);
-						continue POTIONS;
-					}
-					
-					final int reuseDelay = item.getReuseDelay();
-					if ((reuseDelay <= 0) || (player.getItemRemainingReuseTime(item.getObjectId()) <= 0))
-					{
-						final EtcItem etcItem = item.getEtcItem();
-						final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
-						if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
-						{
-							player.addTimeStampItem(item, reuseDelay);
-						}
-					}
-				}
-			}
-			
-			if (Config.ENABLE_AUTO_PET_POTION && !isInPeaceZone)
-			{
-				final Pet pet = player.getPet();
-				if ((pet != null) && !pet.isDead())
-				{
-					final int percent = pet.getCurrentHpPercent();
-					if ((percent < 100) && (percent <= player.getAutoPlaySettings().getAutoPetPotionPercent()))
-					{
-						POTIONS: for (Integer itemId : player.getAutoUseSettings().getAutoPetPotionItems())
-						{
-							final Item item = player.getInventory().getItemByItemId(itemId.intValue());
-							if (item == null)
-							{
-								player.getAutoUseSettings().getAutoPetPotionItems().remove(itemId);
-								continue POTIONS;
-							}
-							
-							final int reuseDelay = item.getReuseDelay();
-							if ((reuseDelay <= 0) || (player.getItemRemainingReuseTime(item.getObjectId()) <= 0))
-							{
-								final EtcItem etcItem = item.getEtcItem();
-								final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
-								if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
-								{
-									player.addTimeStampItem(item, reuseDelay);
-								}
-							}
-						}
-					}
-				}
-			}
-			
-			if (Config.ENABLE_AUTO_SKILL)
-			{
-				BUFFS: for (Integer skillId : player.getAutoUseSettings().getAutoBuffs())
-				{
-					// Fixes start area issue.
-					if (isInPeaceZone)
-					{
-						break BUFFS;
-					}
-					
-					// Already casting.
-					if (player.isCastingNow())
-					{
-						break BUFFS;
-					}
-					
-					// Player is teleporting.
-					if (player.isTeleporting())
-					{
-						break BUFFS;
-					}
-					
-					Playable pet = null;
-					Skill skill = player.getKnownSkill(skillId.intValue());
-					if (skill == null)
-					{
-						if (player.hasServitors())
-						{
-							SUMMON_SEARCH: for (Summon summon : player.getServitors().values())
-							{
-								skill = summon.getKnownSkill(skillId.intValue());
-								if (skill != null)
-								{
-									pet = summon;
-									break SUMMON_SEARCH;
-								}
-							}
-						}
-						if ((skill == null) && player.hasPet())
-						{
-							pet = player.getPet();
-							skill = pet.getKnownSkill(skillId.intValue());
-						}
-						if (skill == null)
-						{
-							player.getAutoUseSettings().getAutoBuffs().remove(skillId);
-							continue BUFFS;
-						}
-					}
-					
-					final WorldObject target = player.getTarget();
-					if (canCastBuff(player, target, skill))
-					{
-						ATTACH_SEARCH: for (AttachSkillHolder holder : skill.getAttachSkills())
-						{
-							if (player.isAffectedBySkill(holder.getRequiredSkillId()))
-							{
-								skill = holder.getSkill();
-								break ATTACH_SEARCH;
-							}
-						}
-						
-						// Playable target cast.
-						final Playable caster = pet != null ? pet : player;
-						if ((target != null) && target.isPlayable() && (target.getActingPlayer().getPvpFlag() == 0) && (target.getActingPlayer().getReputation() >= 0))
-						{
-							caster.doCast(skill);
-						}
-						else // Target self, cast and re-target.
-						{
-							final WorldObject savedTarget = target;
-							caster.setTarget(caster);
-							caster.doCast(skill);
-							caster.setTarget(savedTarget);
-						}
-					}
+					stopAutoUseTask(player);
+					continue;
 				}
 				
-				// Continue when auto play is not enabled.
-				if (!AutoPlayTaskManager.getInstance().isAutoPlay(player))
+				if (player.hasBlockActions() || player.isControlBlocked() || player.isAlikeDead() || player.isMounted() || (player.isTransformed() && player.getTransformation().get().isRiding()))
 				{
 					continue;
 				}
 				
-				SKILLS:
+				final boolean isInPeaceZone = player.isInsideZone(ZoneId.PEACE) || player.isInsideZone(ZoneId.SAYUNE);
+				
+				if (Config.ENABLE_AUTO_ITEM && !isInPeaceZone)
 				{
-					// Already casting.
-					if (player.isCastingNow())
+					ITEMS: for (Integer itemId : player.getAutoUseSettings().getAutoSupplyItems())
 					{
-						break SKILLS;
-					}
-					
-					// Player is teleporting.
-					if (player.isTeleporting())
-					{
-						break SKILLS;
-					}
-					
-					// Acquire next skill.
-					Playable pet = null;
-					final Integer skillId = player.getAutoUseSettings().getNextSkillId();
-					Skill skill = player.getKnownSkill(skillId.intValue());
-					if (skill == null)
-					{
-						if (player.hasServitors())
+						if (player.isTeleporting())
 						{
-							SUMMON_SEARCH: for (Summon summon : player.getServitors().values())
+							break ITEMS;
+						}
+						
+						final Item item = player.getInventory().getItemByItemId(itemId.intValue());
+						if (item == null)
+						{
+							player.getAutoUseSettings().getAutoSupplyItems().remove(itemId);
+							continue ITEMS;
+						}
+						
+						final ItemTemplate it = item.getTemplate();
+						if (it != null)
+						{
+							if (!it.checkCondition(player, player, false))
 							{
-								skill = summon.getKnownSkill(skillId.intValue());
-								if (skill != null)
+								continue ITEMS;
+							}
+							
+							final List<ItemSkillHolder> skills = it.getAllSkills();
+							if (skills != null)
+							{
+								for (ItemSkillHolder itemSkillHolder : skills)
 								{
-									pet = summon;
-									break SUMMON_SEARCH;
+									final Skill skill = itemSkillHolder.getSkill();
+									if (player.isAffectedBySkill(skill.getId()) || player.hasSkillReuse(skill.getReuseHashCode()) || !skill.checkCondition(player, player, false))
+									{
+										continue ITEMS;
+									}
 								}
 							}
 						}
-						if ((skill == null) && player.hasPet())
+						
+						final int reuseDelay = item.getReuseDelay();
+						if ((reuseDelay <= 0) || (player.getItemRemainingReuseTime(item.getObjectId()) <= 0))
 						{
-							pet = player.getPet();
-							skill = pet.getKnownSkill(skillId.intValue());
+							final EtcItem etcItem = item.getEtcItem();
+							final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
+							if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
+							{
+								player.addTimeStampItem(item, reuseDelay);
+							}
 						}
-						if (skill == null)
-						{
-							player.getAutoUseSettings().getAutoSkills().remove(skillId);
-							player.getAutoUseSettings().resetSkillOrder();
-							break SKILLS;
-						}
-					}
-					
-					// Casting on self stops movement.
-					final WorldObject target = player.getTarget();
-					if (target == player)
-					{
-						break SKILLS;
-					}
-					
-					// Check bad skill target.
-					if ((target == null) || !target.isAttackable() || ((Creature) target).isDead())
-					{
-						break SKILLS;
-					}
-					
-					// Do not attack guards.
-					if (target instanceof Guard)
-					{
-						break SKILLS;
-					}
-					
-					if (!canUseMagic(player, target, skill) || (pet != null ? pet : player).useMagic(skill, null, true, false))
-					{
-						player.getAutoUseSettings().incrementSkillOrder();
 					}
 				}
 				
-				ACTIONS: for (Integer actionId : player.getAutoUseSettings().getAutoActions())
+				if (Config.ENABLE_AUTO_POTION && !isInPeaceZone && (player.getCurrentHpPercent() < player.getAutoPlaySettings().getAutoPotionPercent()))
 				{
-					final BuffInfo info = player.getEffectList().getFirstBuffInfoByAbnormalType(AbnormalType.BOT_PENALTY);
-					if (info != null)
+					POTIONS: for (Integer itemId : player.getAutoUseSettings().getAutoPotionItems())
 					{
-						for (AbstractEffect effect : info.getEffects())
+						final Item item = player.getInventory().getItemByItemId(itemId.intValue());
+						if (item == null)
 						{
-							if (!effect.checkCondition(actionId))
+							player.getAutoUseSettings().getAutoPotionItems().remove(itemId);
+							continue POTIONS;
+						}
+						
+						final int reuseDelay = item.getReuseDelay();
+						if ((reuseDelay <= 0) || (player.getItemRemainingReuseTime(item.getObjectId()) <= 0))
+						{
+							final EtcItem etcItem = item.getEtcItem();
+							final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
+							if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
 							{
-								player.sendPacket(SystemMessageId.YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_SO_YOUR_ACTIONS_HAVE_BEEN_RESTRICTED);
-								break ACTIONS;
+								player.addTimeStampItem(item, reuseDelay);
+							}
+						}
+					}
+				}
+				
+				if (Config.ENABLE_AUTO_PET_POTION && !isInPeaceZone)
+				{
+					final Pet pet = player.getPet();
+					if ((pet != null) && !pet.isDead())
+					{
+						final int percent = pet.getCurrentHpPercent();
+						if ((percent < 100) && (percent <= player.getAutoPlaySettings().getAutoPetPotionPercent()))
+						{
+							POTIONS: for (Integer itemId : player.getAutoUseSettings().getAutoPetPotionItems())
+							{
+								final Item item = player.getInventory().getItemByItemId(itemId.intValue());
+								if (item == null)
+								{
+									player.getAutoUseSettings().getAutoPetPotionItems().remove(itemId);
+									continue POTIONS;
+								}
+								
+								final int reuseDelay = item.getReuseDelay();
+								if ((reuseDelay <= 0) || (player.getItemRemainingReuseTime(item.getObjectId()) <= 0))
+								{
+									final EtcItem etcItem = item.getEtcItem();
+									final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
+									if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
+									{
+										player.addTimeStampItem(item, reuseDelay);
+									}
+								}
+							}
+						}
+					}
+				}
+				
+				if (Config.ENABLE_AUTO_SKILL)
+				{
+					BUFFS: for (Integer skillId : player.getAutoUseSettings().getAutoBuffs())
+					{
+						// Fixes start area issue.
+						if (isInPeaceZone)
+						{
+							break BUFFS;
+						}
+						
+						// Already casting.
+						if (player.isCastingNow())
+						{
+							break BUFFS;
+						}
+						
+						// Player is teleporting.
+						if (player.isTeleporting())
+						{
+							break BUFFS;
+						}
+						
+						Playable pet = null;
+						Skill skill = player.getKnownSkill(skillId.intValue());
+						if (skill == null)
+						{
+							if (player.hasServitors())
+							{
+								SUMMON_SEARCH: for (Summon summon : player.getServitors().values())
+								{
+									skill = summon.getKnownSkill(skillId.intValue());
+									if (skill != null)
+									{
+										pet = summon;
+										break SUMMON_SEARCH;
+									}
+								}
+							}
+							if ((skill == null) && player.hasPet())
+							{
+								pet = player.getPet();
+								skill = pet.getKnownSkill(skillId.intValue());
+							}
+							if (skill == null)
+							{
+								player.getAutoUseSettings().getAutoBuffs().remove(skillId);
+								continue BUFFS;
+							}
+						}
+						
+						final WorldObject target = player.getTarget();
+						if (canCastBuff(player, target, skill))
+						{
+							ATTACH_SEARCH: for (AttachSkillHolder holder : skill.getAttachSkills())
+							{
+								if (player.isAffectedBySkill(holder.getRequiredSkillId()))
+								{
+									skill = holder.getSkill();
+									break ATTACH_SEARCH;
+								}
+							}
+							
+							// Playable target cast.
+							final Playable caster = pet != null ? pet : player;
+							if ((target != null) && target.isPlayable() && (target.getActingPlayer().getPvpFlag() == 0) && (target.getActingPlayer().getReputation() >= 0))
+							{
+								caster.doCast(skill);
+							}
+							else // Target self, cast and re-target.
+							{
+								final WorldObject savedTarget = target;
+								caster.setTarget(caster);
+								caster.doCast(skill);
+								caster.setTarget(savedTarget);
 							}
 						}
 					}
 					
-					// Do not allow to do some action if player is transformed.
-					if (player.isTransformed())
+					// Continue when auto play is not enabled.
+					if (!AutoPlayTaskManager.getInstance().isAutoPlay(player))
 					{
-						final int[] allowedActions = player.isTransformed() ? ExBasicActionList.ACTIONS_ON_TRANSFORM : ExBasicActionList.DEFAULT_ACTION_LIST;
-						if (Arrays.binarySearch(allowedActions, actionId) < 0)
+						continue;
+					}
+					
+					SKILLS:
+					{
+						// Already casting.
+						if (player.isCastingNow())
 						{
-							continue ACTIONS;
+							break SKILLS;
+						}
+						
+						// Player is teleporting.
+						if (player.isTeleporting())
+						{
+							break SKILLS;
+						}
+						
+						// Acquire next skill.
+						Playable pet = null;
+						final Integer skillId = player.getAutoUseSettings().getNextSkillId();
+						Skill skill = player.getKnownSkill(skillId.intValue());
+						if (skill == null)
+						{
+							if (player.hasServitors())
+							{
+								SUMMON_SEARCH: for (Summon summon : player.getServitors().values())
+								{
+									skill = summon.getKnownSkill(skillId.intValue());
+									if (skill != null)
+									{
+										pet = summon;
+										break SUMMON_SEARCH;
+									}
+								}
+							}
+							if ((skill == null) && player.hasPet())
+							{
+								pet = player.getPet();
+								skill = pet.getKnownSkill(skillId.intValue());
+							}
+							if (skill == null)
+							{
+								player.getAutoUseSettings().getAutoSkills().remove(skillId);
+								player.getAutoUseSettings().resetSkillOrder();
+								break SKILLS;
+							}
+						}
+						
+						// Casting on self stops movement.
+						final WorldObject target = player.getTarget();
+						if (target == player)
+						{
+							break SKILLS;
+						}
+						
+						// Check bad skill target.
+						if ((target == null) || !target.isAttackable() || ((Creature) target).isDead())
+						{
+							break SKILLS;
+						}
+						
+						// Do not attack guards.
+						if (target instanceof Guard)
+						{
+							break SKILLS;
+						}
+						
+						if (!canUseMagic(player, target, skill) || (pet != null ? pet : player).useMagic(skill, null, true, false))
+						{
+							player.getAutoUseSettings().incrementSkillOrder();
 						}
 					}
 					
-					final ActionDataHolder actionHolder = ActionData.getInstance().getActionData(actionId);
-					if (actionHolder != null)
+					ACTIONS: for (Integer actionId : player.getAutoUseSettings().getAutoActions())
 					{
-						final IPlayerActionHandler actionHandler = PlayerActionHandler.getInstance().getHandler(actionHolder.getHandler());
-						if (actionHandler != null)
+						final BuffInfo info = player.getEffectList().getFirstBuffInfoByAbnormalType(AbnormalType.BOT_PENALTY);
+						if (info != null)
 						{
-							actionHandler.useAction(player, actionHolder, false, false);
+							for (AbstractEffect effect : info.getEffects())
+							{
+								if (!effect.checkCondition(actionId))
+								{
+									player.sendPacket(SystemMessageId.YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_SO_YOUR_ACTIONS_HAVE_BEEN_RESTRICTED);
+									break ACTIONS;
+								}
+							}
+						}
+						
+						// Do not allow to do some action if player is transformed.
+						if (player.isTransformed())
+						{
+							final int[] allowedActions = player.isTransformed() ? ExBasicActionList.ACTIONS_ON_TRANSFORM : ExBasicActionList.DEFAULT_ACTION_LIST;
+							if (Arrays.binarySearch(allowedActions, actionId) < 0)
+							{
+								continue ACTIONS;
+							}
+						}
+						
+						final ActionDataHolder actionHolder = ActionData.getInstance().getActionData(actionId);
+						if (actionHolder != null)
+						{
+							final IPlayerActionHandler actionHandler = PlayerActionHandler.getInstance().getHandler(actionHolder.getHandler());
+							if (actionHandler != null)
+							{
+								actionHandler.useAction(player, actionHolder, false, false);
+							}
 						}
 					}
 				}
 			}
 		}
 		
-		_working = false;
-	}
-	
-	private boolean canCastBuff(Player player, WorldObject target, Skill skill)
-	{
-		// Summon check.
-		if ((skill.getAffectScope() == AffectScope.SUMMON_EXCEPT_MASTER) || (skill.getTargetType() == TargetType.SUMMON))
+		private boolean canCastBuff(Player player, WorldObject target, Skill skill)
 		{
-			if (!player.hasServitors())
+			// Summon check.
+			if ((skill.getAffectScope() == AffectScope.SUMMON_EXCEPT_MASTER) || (skill.getTargetType() == TargetType.SUMMON))
 			{
-				return false;
-			}
-			int occurrences = 0;
-			for (Summon servitor : player.getServitors().values())
-			{
-				if (servitor.isAffectedBySkill(skill.getId()))
+				if (!player.hasServitors())
 				{
-					occurrences++;
+					return false;
+				}
+				int occurrences = 0;
+				for (Summon servitor : player.getServitors().values())
+				{
+					if (servitor.isAffectedBySkill(skill.getId()))
+					{
+						occurrences++;
+					}
+				}
+				if (occurrences == player.getServitors().size())
+				{
+					return false;
 				}
 			}
-			if (occurrences == player.getServitors().size())
+			
+			if ((target != null) && target.isCreature() && ((Creature) target).isAlikeDead() && (skill.getTargetType() != TargetType.SELF) && (skill.getTargetType() != TargetType.NPC_BODY) && (skill.getTargetType() != TargetType.PC_BODY))
 			{
 				return false;
 			}
-		}
-		
-		if ((target != null) && target.isCreature() && ((Creature) target).isAlikeDead() && (skill.getTargetType() != TargetType.SELF) && (skill.getTargetType() != TargetType.NPC_BODY) && (skill.getTargetType() != TargetType.PC_BODY))
-		{
-			return false;
-		}
-		
-		final Playable playableTarget = (target == null) || !target.isPlayable() || (skill.getTargetType() == TargetType.SELF) ? player : (Playable) target;
-		if (!canUseMagic(player, playableTarget, skill))
-		{
-			return false;
-		}
-		
-		final BuffInfo buffInfo = playableTarget.getEffectList().getBuffInfoBySkillId(skill.getId());
-		final BuffInfo abnormalBuffInfo = playableTarget.getEffectList().getFirstBuffInfoByAbnormalType(skill.getAbnormalType());
-		if (abnormalBuffInfo != null)
-		{
-			if (buffInfo != null)
-			{
-				return (abnormalBuffInfo.getSkill().getId() == buffInfo.getSkill().getId()) && ((buffInfo.getTime() <= REUSE_MARGIN_TIME) || (buffInfo.getSkill().getLevel() < skill.getLevel()));
-			}
-			return (abnormalBuffInfo.getSkill().getAbnormalLevel() < skill.getAbnormalLevel()) || abnormalBuffInfo.isAbnormalType(AbnormalType.NONE);
-		}
-		return buffInfo == null;
-	}
-	
-	private boolean canUseMagic(Player player, WorldObject target, Skill skill)
-	{
-		if ((skill.getItemConsumeCount() > 0) && (player.getInventory().getInventoryItemCount(skill.getItemConsumeId(), -1) < skill.getItemConsumeCount()))
-		{
-			return false;
-		}
-		
-		for (AttachSkillHolder holder : skill.getAttachSkills())
-		{
-			if (player.isAffectedBySkill(holder.getRequiredSkillId()) //
-				&& (player.hasSkillReuse(holder.getSkill().getReuseHashCode()) || player.isAffectedBySkill(holder)))
+			
+			final Playable playableTarget = (target == null) || !target.isPlayable() || (skill.getTargetType() == TargetType.SELF) ? player : (Playable) target;
+			if (!canUseMagic(player, playableTarget, skill))
 			{
 				return false;
 			}
+			
+			final BuffInfo buffInfo = playableTarget.getEffectList().getBuffInfoBySkillId(skill.getId());
+			final BuffInfo abnormalBuffInfo = playableTarget.getEffectList().getFirstBuffInfoByAbnormalType(skill.getAbnormalType());
+			if (abnormalBuffInfo != null)
+			{
+				if (buffInfo != null)
+				{
+					return (abnormalBuffInfo.getSkill().getId() == buffInfo.getSkill().getId()) && ((buffInfo.getTime() <= REUSE_MARGIN_TIME) || (buffInfo.getSkill().getLevel() < skill.getLevel()));
+				}
+				return (abnormalBuffInfo.getSkill().getAbnormalLevel() < skill.getAbnormalLevel()) || abnormalBuffInfo.isAbnormalType(AbnormalType.NONE);
+			}
+			return buffInfo == null;
 		}
 		
-		return !player.isSkillDisabled(skill) && skill.checkCondition(player, target, false);
+		private boolean canUseMagic(Player player, WorldObject target, Skill skill)
+		{
+			if ((skill.getItemConsumeCount() > 0) && (player.getInventory().getInventoryItemCount(skill.getItemConsumeId(), -1) < skill.getItemConsumeCount()))
+			{
+				return false;
+			}
+			
+			for (AttachSkillHolder holder : skill.getAttachSkills())
+			{
+				if (player.isAffectedBySkill(holder.getRequiredSkillId()) //
+					&& (player.hasSkillReuse(holder.getSkill().getReuseHashCode()) || player.isAffectedBySkill(holder)))
+				{
+					return false;
+				}
+			}
+			
+			return !player.isSkillDisabled(skill) && skill.checkCondition(player, target, false);
+		}
 	}
 	
-	public void startAutoUseTask(Player player)
+	public synchronized void startAutoUseTask(Player player)
 	{
-		if (!PLAYERS.contains(player))
+		for (Set<Player> pool : POOLS)
 		{
-			PLAYERS.add(player);
+			if (pool.contains(player))
+			{
+				return;
+			}
 		}
+		
+		for (Set<Player> pool : POOLS)
+		{
+			if (pool.size() < POOL_SIZE)
+			{
+				pool.add(player);
+				return;
+			}
+		}
+		
+		final Set<Player> pool = ConcurrentHashMap.newKeySet(POOL_SIZE);
+		pool.add(player);
+		ThreadPool.scheduleAtFixedRate(new AutoUse(pool), TASK_DELAY, TASK_DELAY);
+		POOLS.add(pool);
 	}
 	
 	public void stopAutoUseTask(Player player)
@@ -470,7 +489,13 @@ public class AutoUseTaskManager implements Runnable
 		player.getAutoUseSettings().resetSkillOrder();
 		if (player.getAutoUseSettings().isEmpty() || !player.isOnline() || player.isInOfflineMode())
 		{
-			PLAYERS.remove(player);
+			for (Set<Player> pool : POOLS)
+			{
+				if (pool.remove(player))
+				{
+					return;
+				}
+			}
 		}
 	}
 	

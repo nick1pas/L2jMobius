@@ -38,212 +38,244 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author Mobius
  */
-public class AutoPlayTaskManager implements Runnable
+public class AutoPlayTaskManager
 {
-	private static final Set<Player> PLAYERS = ConcurrentHashMap.newKeySet();
-	private static boolean _working = false;
+	private static final Set<Set<Player>> POOLS = ConcurrentHashMap.newKeySet();
+	private static final int POOL_SIZE = 300;
+	private static final int TASK_DELAY = 300;
 	
 	protected AutoPlayTaskManager()
 	{
-		ThreadPool.scheduleAtFixedRate(this, 500, 500);
 	}
 	
-	@Override
-	public void run()
+	private class AutoPlay implements Runnable
 	{
-		if (_working)
-		{
-			return;
-		}
-		_working = true;
+		private final Set<Player> _players;
 		
-		PLAY: for (Player player : PLAYERS)
+		public AutoPlay(Set<Player> players)
 		{
-			if (!player.isOnline() || player.isInOfflineMode() || !Config.ENABLE_AUTO_PLAY)
+			_players = players;
+		}
+		
+		@Override
+		public void run()
+		{
+			PLAY: for (Player player : _players)
 			{
-				stopAutoPlay(player);
-				continue PLAY;
-			}
-			
-			if (player.isCastingNow() || (player.getQueuedSkill() != null))
-			{
-				continue PLAY;
-			}
-			
-			// Skip thinking.
-			final WorldObject target = player.getTarget();
-			if ((target != null) && target.isMonster())
-			{
-				final Monster monster = (Monster) target;
-				if (monster.isAlikeDead())
+				if (!player.isOnline() || player.isInOfflineMode() || !Config.ENABLE_AUTO_PLAY)
 				{
-					player.setTarget(null);
+					stopAutoPlay(player);
+					continue PLAY;
 				}
-				else if ((monster.getTarget() == player) || (monster.getTarget() == null))
+				
+				if (player.isCastingNow() || (player.getQueuedSkill() != null))
 				{
+					continue PLAY;
+				}
+				
+				// Skip thinking.
+				final WorldObject target = player.getTarget();
+				if ((target != null) && target.isMonster())
+				{
+					final Monster monster = (Monster) target;
+					if (monster.isAlikeDead())
+					{
+						player.setTarget(null);
+					}
+					else if ((monster.getTarget() == player) || (monster.getTarget() == null))
+					{
+						// We take granted that mage classes do not auto hit.
+						if (isMageCaster(player))
+						{
+							continue PLAY;
+						}
+						
+						// Check if actually attacking.
+						if (player.hasAI() && !player.isAttackingNow() && !player.isCastingNow() && !player.isMoving() && !player.isDisabled())
+						{
+							if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
+							{
+								player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, monster);
+							}
+							else if (monster.hasAI() && !monster.getAI().isAutoAttacking())
+							{
+								final Weapon weapon = player.getActiveWeaponItem();
+								if (weapon != null)
+								{
+									final boolean ranged = weapon.getItemType().isRanged();
+									final double angle = Util.calculateHeadingFrom(player, monster);
+									final double radian = Math.toRadians(angle);
+									final double course = Math.toRadians(180);
+									final double distance = (ranged ? player.getCollisionRadius() : player.getCollisionRadius() + monster.getCollisionRadius()) * 2;
+									final int x1 = (int) (Math.cos(Math.PI + radian + course) * distance);
+									final int y1 = (int) (Math.sin(Math.PI + radian + course) * distance);
+									final Location location;
+									if (ranged)
+									{
+										location = new Location(player.getX() + x1, player.getY() + y1, player.getZ());
+									}
+									else
+									{
+										location = new Location(monster.getX() + x1, monster.getY() + y1, player.getZ());
+									}
+									player.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, location);
+								}
+							}
+						}
+						continue PLAY;
+					}
+				}
+				
+				// Pickup.
+				if (player.getAutoPlaySettings().doPickup())
+				{
+					PICKUP: for (Item droppedItem : World.getInstance().getVisibleObjectsInRange(player, Item.class, 200))
+					{
+						// Check if item is reachable.
+						if ((droppedItem == null) //
+							|| (!droppedItem.isSpawned()) //
+							|| !GeoEngine.getInstance().canMoveToTarget(player.getX(), player.getY(), player.getZ(), droppedItem.getX(), droppedItem.getY(), droppedItem.getZ(), player.getInstanceWorld()))
+						{
+							continue PICKUP;
+						}
+						
+						// Move to item.
+						if (player.calculateDistance2D(droppedItem) > 70)
+						{
+							if (!player.isMoving())
+							{
+								player.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, droppedItem);
+							}
+							continue PLAY;
+						}
+						
+						// Try to pick it up.
+						if (!droppedItem.isProtected() || (droppedItem.getOwnerId() == player.getObjectId()))
+						{
+							player.doPickupItem(droppedItem);
+							continue PLAY; // Avoid pickup being skipped.
+						}
+					}
+				}
+				
+				// Find target.
+				Monster monster = null;
+				double closestDistance = Double.MAX_VALUE;
+				TARGET: for (Monster nearby : World.getInstance().getVisibleObjectsInRange(player, Monster.class, player.getAutoPlaySettings().isShortRange() ? 600 : 1400))
+				{
+					// Skip unavailable monsters.
+					if ((nearby == null) || nearby.isAlikeDead())
+					{
+						continue TARGET;
+					}
+					// Check monster target.
+					if (player.getAutoPlaySettings().isRespectfulHunting() && (nearby.getTarget() != null) && (nearby.getTarget() != player) && !player.getServitors().containsKey(nearby.getTarget().getObjectId()))
+					{
+						continue TARGET;
+					}
+					// Check if monster is reachable.
+					if (nearby.isAutoAttackable(player) //
+						&& GeoEngine.getInstance().canSeeTarget(player, nearby)//
+						&& GeoEngine.getInstance().canMoveToTarget(player.getX(), player.getY(), player.getZ(), nearby.getX(), nearby.getY(), nearby.getZ(), player.getInstanceWorld()))
+					{
+						final double monsterDistance = player.calculateDistance2D(nearby);
+						if (monsterDistance < closestDistance)
+						{
+							monster = nearby;
+							closestDistance = monsterDistance;
+						}
+					}
+				}
+				
+				// New target was assigned.
+				if (monster != null)
+				{
+					player.setTarget(monster);
+					
 					// We take granted that mage classes do not auto hit.
 					if (isMageCaster(player))
 					{
 						continue PLAY;
 					}
 					
-					// Check if actually attacking.
-					if (player.hasAI() && !player.isAttackingNow() && !player.isCastingNow() && !player.isMoving() && !player.isDisabled())
-					{
-						if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
-						{
-							player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, monster);
-						}
-						else if (monster.hasAI() && !monster.getAI().isAutoAttacking())
-						{
-							final Weapon weapon = player.getActiveWeaponItem();
-							if (weapon != null)
-							{
-								final boolean ranged = weapon.getItemType().isRanged();
-								final double angle = Util.calculateHeadingFrom(player, monster);
-								final double radian = Math.toRadians(angle);
-								final double course = Math.toRadians(180);
-								final double distance = (ranged ? player.getCollisionRadius() : player.getCollisionRadius() + monster.getCollisionRadius()) * 2;
-								final int x1 = (int) (Math.cos(Math.PI + radian + course) * distance);
-								final int y1 = (int) (Math.sin(Math.PI + radian + course) * distance);
-								final Location location;
-								if (ranged)
-								{
-									location = new Location(player.getX() + x1, player.getY() + y1, player.getZ());
-								}
-								else
-								{
-									location = new Location(monster.getX() + x1, monster.getY() + y1, player.getZ());
-								}
-								player.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, location);
-							}
-						}
-					}
-					continue PLAY;
+					player.sendPacket(ExAutoPlayDoMacro.STATIC_PACKET);
 				}
-			}
-			
-			// Pickup.
-			if (player.getAutoPlaySettings().doPickup())
-			{
-				PICKUP: for (Item droppedItem : World.getInstance().getVisibleObjectsInRange(player, Item.class, 200))
-				{
-					// Check if item is reachable.
-					if ((droppedItem == null) //
-						|| (!droppedItem.isSpawned()) //
-						|| !GeoEngine.getInstance().canMoveToTarget(player.getX(), player.getY(), player.getZ(), droppedItem.getX(), droppedItem.getY(), droppedItem.getZ(), player.getInstanceWorld()))
-					{
-						continue PICKUP;
-					}
-					
-					// Move to item.
-					if (player.calculateDistance2D(droppedItem) > 70)
-					{
-						if (!player.isMoving())
-						{
-							player.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, droppedItem);
-						}
-						continue PLAY;
-					}
-					
-					// Try to pick it up.
-					if (!droppedItem.isProtected() || (droppedItem.getOwnerId() == player.getObjectId()))
-					{
-						player.doPickupItem(droppedItem);
-						continue PLAY; // Avoid pickup being skipped.
-					}
-				}
-			}
-			
-			// Find target.
-			Monster monster = null;
-			double closestDistance = Double.MAX_VALUE;
-			TARGET: for (Monster nearby : World.getInstance().getVisibleObjectsInRange(player, Monster.class, player.getAutoPlaySettings().isShortRange() ? 600 : 1400))
-			{
-				// Skip unavailable monsters.
-				if ((nearby == null) || nearby.isAlikeDead())
-				{
-					continue TARGET;
-				}
-				// Check monster target.
-				if (player.getAutoPlaySettings().isRespectfulHunting() && (nearby.getTarget() != null) && (nearby.getTarget() != player) && !player.getServitors().containsKey(nearby.getTarget().getObjectId()))
-				{
-					continue TARGET;
-				}
-				// Check if monster is reachable.
-				if (nearby.isAutoAttackable(player) //
-					&& GeoEngine.getInstance().canSeeTarget(player, nearby)//
-					&& GeoEngine.getInstance().canMoveToTarget(player.getX(), player.getY(), player.getZ(), nearby.getX(), nearby.getY(), nearby.getZ(), player.getInstanceWorld()))
-				{
-					final double monsterDistance = player.calculateDistance2D(nearby);
-					if (monsterDistance < closestDistance)
-					{
-						monster = nearby;
-						closestDistance = monsterDistance;
-					}
-				}
-			}
-			
-			// New target was assigned.
-			if (monster != null)
-			{
-				player.setTarget(monster);
-				
-				// We take granted that mage classes do not auto hit.
-				if (isMageCaster(player))
-				{
-					continue PLAY;
-				}
-				
-				player.sendPacket(ExAutoPlayDoMacro.STATIC_PACKET);
 			}
 		}
 		
-		_working = false;
+		private boolean isMageCaster(Player player)
+		{
+			// Iss classes considered fighters.
+			final int classId = player.getActiveClass();
+			if ((classId > 170) && (classId < 176))
+			{
+				return false;
+			}
+			
+			return player.isMageClass() && (player.getRace() != Race.ORC);
+		}
 	}
 	
-	public void doAutoPlay(Player player)
+	public synchronized void doAutoPlay(Player player)
 	{
-		if (!PLAYERS.contains(player))
+		for (Set<Player> pool : POOLS)
 		{
-			player.onActionRequest();
-			PLAYERS.add(player);
+			if (pool.contains(player))
+			{
+				return;
+			}
 		}
+		
+		for (Set<Player> pool : POOLS)
+		{
+			if (pool.size() < POOL_SIZE)
+			{
+				player.onActionRequest();
+				pool.add(player);
+				return;
+			}
+		}
+		
+		final Set<Player> pool = ConcurrentHashMap.newKeySet(POOL_SIZE);
+		player.onActionRequest();
+		pool.add(player);
+		ThreadPool.scheduleAtFixedRate(new AutoPlay(pool), TASK_DELAY, TASK_DELAY);
+		POOLS.add(pool);
 	}
 	
 	public void stopAutoPlay(Player player)
 	{
-		PLAYERS.remove(player);
-		
-		// Pets must follow their owner.
-		if (player.hasServitors())
+		for (Set<Player> pool : POOLS)
 		{
-			for (Summon summon : player.getServitors().values())
+			if (pool.remove(player))
 			{
-				summon.followOwner();
+				// Pets must follow their owner.
+				if (player.hasServitors())
+				{
+					for (Summon summon : player.getServitors().values())
+					{
+						summon.followOwner();
+					}
+				}
+				if (player.hasPet())
+				{
+					player.getPet().followOwner();
+				}
+				return;
 			}
-		}
-		if (player.hasPet())
-		{
-			player.getPet().followOwner();
 		}
 	}
 	
 	public boolean isAutoPlay(Player player)
 	{
-		return PLAYERS.contains(player);
-	}
-	
-	private boolean isMageCaster(Player player)
-	{
-		// Iss classes considered fighters.
-		final int classId = player.getActiveClass();
-		if ((classId > 170) && (classId < 176))
+		for (Set<Player> pool : POOLS)
 		{
-			return false;
+			if (pool.contains(player))
+			{
+				return true;
+			}
 		}
-		
-		return player.isMageClass() && (player.getRace() != Race.ORC);
+		return false;
 	}
 	
 	public static AutoPlayTaskManager getInstance()
