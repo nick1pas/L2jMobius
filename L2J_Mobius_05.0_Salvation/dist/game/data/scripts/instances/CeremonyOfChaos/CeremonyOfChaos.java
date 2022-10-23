@@ -22,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
@@ -599,7 +600,13 @@ public class CeremonyOfChaos extends AbstractNpcAI
 				{
 					while (time == -1)
 					{
-						final Player random = PARTICIPANT_PLAYERS.stream().findAny().get();
+						final Optional<Player> optional = PARTICIPANT_PLAYERS.stream().findAny();
+						if (!optional.isPresent())
+						{
+							return;
+						}
+						
+						final Player random = optional.get();
 						if ((random != null) && random.isInInstance())
 						{
 							time = (int) (random.getInstanceWorld().getRemainingTime() / 1000);
@@ -814,7 +821,13 @@ public class CeremonyOfChaos extends AbstractNpcAI
 		{
 			while (time == -1)
 			{
-				final Player random = PARTICIPANT_PLAYERS.stream().findAny().get();
+				final Optional<Player> optional = PARTICIPANT_PLAYERS.stream().findAny();
+				if (!optional.isPresent())
+				{
+					return;
+				}
+				
+				final Player random = optional.get();
 				if ((random != null) && random.isInInstance())
 				{
 					time = (int) (random.getInstanceWorld().getRemainingTime() / 1000);
