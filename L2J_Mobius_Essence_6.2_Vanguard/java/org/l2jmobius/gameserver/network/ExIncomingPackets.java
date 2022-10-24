@@ -129,6 +129,7 @@ import org.l2jmobius.gameserver.network.clientpackets.newhenna.RequestNewHennaLi
 import org.l2jmobius.gameserver.network.clientpackets.newhenna.RequestNewHennaPotenEnchant;
 import org.l2jmobius.gameserver.network.clientpackets.newhenna.RequestNewHennaPotenSelect;
 import org.l2jmobius.gameserver.network.clientpackets.newhenna.RequestNewHennaUnequip;
+import org.l2jmobius.gameserver.network.clientpackets.newhenna.RequestNewHennaUnequipInfo;
 import org.l2jmobius.gameserver.network.clientpackets.pet.ExEvolvePet;
 import org.l2jmobius.gameserver.network.clientpackets.pet.ExPetEquipItem;
 import org.l2jmobius.gameserver.network.clientpackets.pet.ExPetUnequipItem;
@@ -809,7 +810,15 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	EX_VARIATION_CLOSE_UI(0x246, ExVariationCloseUi::new, ConnectionState.IN_GAME),
 	EX_APPLY_VARIATION_OPTION(0x247, ExApplyVariationOption::new, ConnectionState.IN_GAME),
 	EX_BR_VERSION(0x248, RequestBRVersion::new, ConnectionState.AUTHENTICATED, ConnectionState.CONNECTED),
-	EX_MAX(0x249, null, ConnectionState.IN_GAME);
+	EX_WRANKING_FESTIVAL_INFO(0x249, null, ConnectionState.IN_GAME),
+	EX_WRANKING_FESTIVAL_OPEN(0x24A, null, ConnectionState.IN_GAME),
+	EX_WRANKING_FESTIVAL_BUY(0x24B, null, ConnectionState.IN_GAME),
+	EX_WRANKING_FESTIVAL_BONUS(0x24C, null, ConnectionState.IN_GAME),
+	EX_WRANKING_FESTIVAL_RANKING(0x24D, null, ConnectionState.IN_GAME),
+	EX_WRANKING_FESTIVAL_MY_RECEIVED_BONUS(0x24E, null, ConnectionState.IN_GAME),
+	EX_WRANKING_FESTIVAL_REWARD(0x24F, null, ConnectionState.IN_GAME),
+	EX_HENNA_UNEQUIP_INFO(0x250, RequestNewHennaUnequipInfo::new, ConnectionState.IN_GAME),
+	EX_MAX(0x251, null, ConnectionState.IN_GAME);
 	
 	public static final ExIncomingPackets[] PACKET_ARRAY;
 	
