@@ -5,8 +5,8 @@ XAMPP: https://www.mediafire.com/file/hkehxpyjn81ybsw/xampp-windows-x64-8.0.11-2
 Eclipse: https://www.mediafire.com/file/j208qw3s7zwx7c7/eclipse-java-2021-12-R-win32-x86_64.zip
 Geodata: https://www.mediafire.com/file/p1mcjh74p8fn09p/L2J_Mobius_Essence_6.2_Vanguard_Geodata.zip
 
-Client (password L2jMobius): https://drive.google.com/u/0/uc?id=1-8CWkwP7ZZlcmiykFdL_B9WvdSYXaKvI&export=download
-System: https://mega.nz/file/oxl2mBQC#yt6P9XkfTbp7Sko7TG54-9vk6r5mAm732mwhbNhwO88
+Client (password L2jMobius): https://drive.google.com/u/0/uc?id=18S2tGxRPm0OZoQC6mlBInZfQZmASKqkP&export=download
+System: https://mega.nz/file/otVlHazb#AGTP8got_d6Fufhwcm16YbDMyxDCkEeQzyuikvRjGZI
 
 All provided download links are for personal use. Redistribution of these links is bannable.
 
