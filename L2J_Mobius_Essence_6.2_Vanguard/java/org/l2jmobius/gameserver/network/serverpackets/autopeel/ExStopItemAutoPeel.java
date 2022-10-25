@@ -35,7 +35,7 @@ public class ExStopItemAutoPeel implements IClientOutgoingPacket
 	@Override
 	public boolean write(PacketWriter packet)
 	{
-		OutgoingPackets.EX_RESULT_ITEM_AUTO_PEEL.writeId(packet);
+		OutgoingPackets.EX_STOP_ITEM_AUTO_PEEL.writeId(packet);
 		packet.writeC(_result ? 1 : 0);
 		return true;
 	}

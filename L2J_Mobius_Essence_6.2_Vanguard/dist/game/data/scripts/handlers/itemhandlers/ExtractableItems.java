@@ -39,6 +39,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExResultItemAutoPeel;
+import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExStopItemAutoPeel;
 
 /**
  * Extractable Items handler.
@@ -240,15 +241,22 @@ public class ExtractableItems implements IItemHandler
 		}
 		
 		final AutoPeelRequest request = player.getRequest(AutoPeelRequest.class);
-		if ((request != null) && request.isProcessing())
+		if (request != null)
 		{
-			request.setProcessing(false);
-			final List<ItemHolder> rewards = new LinkedList<>();
-			for (Entry<Item, Long> entry : extractedItems.entrySet())
+			if (request.isProcessing())
 			{
-				rewards.add(new ItemHolder(entry.getKey().getId(), entry.getValue()));
+				request.setProcessing(false);
+				final List<ItemHolder> rewards = new LinkedList<>();
+				for (Entry<Item, Long> entry : extractedItems.entrySet())
+				{
+					rewards.add(new ItemHolder(entry.getKey().getId(), entry.getValue()));
+				}
+				player.sendPacket(new ExResultItemAutoPeel(true, request.getTotalPeelCount(), request.getRemainingPeelCount() - 1, rewards));
 			}
-			player.sendPacket(new ExResultItemAutoPeel(true, request.getTotalPeelCount(), request.getRemainingPeelCount() - 1, rewards));
+			else
+			{
+				player.sendPacket(new ExStopItemAutoPeel(false));
+			}
 		}
 		
 		return true;
