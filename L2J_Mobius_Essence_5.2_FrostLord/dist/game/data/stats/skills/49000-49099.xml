@@ -824,10 +824,10 @@
 			<value level="5">40</value>
 		</mpConsume>
 		<castRange>700</castRange>
-		<hitTime>1</hitTime>
+		<effectRange>1500</effectRange>
+		<hitTime>800</hitTime>
 		<coolTime>500</coolTime>
-		<reuseDelay>3</reuseDelay>
-		<nextAction>ATTACK</nextAction>
+		<reuseDelay>3000</reuseDelay>
 		<effectPoint>
 			<value level="1">-400</value>
 			<value level="2">-600</value>
@@ -837,11 +837,7 @@
 		</effectPoint>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
-		<conditions>
-			<condition name="OpCheckCastRange">
-				<distance>250</distance>
-			</condition>
-		</conditions>
+		<nextAction>ATTACK</nextAction>
 		<effects>
 			<effect name="PhysicalAttack">
 				<power>
