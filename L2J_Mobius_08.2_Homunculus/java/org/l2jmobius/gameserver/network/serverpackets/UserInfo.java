@@ -224,8 +224,8 @@ public class UserInfo extends AbstractMaskPacket<UserInfoType>
 			packet.writeD(_player.getMDef());
 			packet.writeD(_player.getMagicAccuracy());
 			packet.writeD(_player.getMCriticalHit());
-			packet.writeD(0); // 270
-			packet.writeD(0); // 270
+			packet.writeD(_player.getStat().getWeaponBonusPAtk()); // 270
+			packet.writeD(_player.getStat().getWeaponBonusMAtk()); // 270
 		}
 		if (containsMask(UserInfoType.ELEMENTALS))
 		{
