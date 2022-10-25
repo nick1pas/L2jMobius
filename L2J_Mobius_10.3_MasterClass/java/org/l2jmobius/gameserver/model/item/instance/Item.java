@@ -61,6 +61,7 @@ import org.l2jmobius.gameserver.model.WorldRegion;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
+import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
 import org.l2jmobius.gameserver.model.conditions.Condition;
 import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
@@ -1853,8 +1854,8 @@ public class Item extends WorldObject
 			return true;
 		}
 		
-		final Creature owner = getActingPlayer();
-		if (owner != null)
+		final Player player = getActingPlayer();
+		if (player != null)
 		{
 			for (Condition condition : _itemTemplate.getConditions())
 			{
@@ -1863,7 +1864,16 @@ public class Item extends WorldObject
 					continue;
 				}
 				
-				if (!condition.testImpl(owner, owner, null, _itemTemplate))
+				if (!condition.testImpl(player, player, null, _itemTemplate))
+				{
+					return false;
+				}
+			}
+			
+			if (player.hasRequest(AutoPeelRequest.class))
+			{
+				final EtcItem etcItem = getEtcItem();
+				if ((etcItem != null) && (etcItem.getExtractableItems() != null))
 				{
 					return false;
 				}

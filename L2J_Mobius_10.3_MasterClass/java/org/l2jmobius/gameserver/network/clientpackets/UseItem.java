@@ -34,6 +34,7 @@ import org.l2jmobius.gameserver.instancemanager.FortSiegeManager;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
 import org.l2jmobius.gameserver.model.effects.EffectType;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.EventType;
@@ -284,6 +285,11 @@ public class UseItem implements IClientIncomingPacket
 		else
 		{
 			final EtcItem etcItem = item.getEtcItem();
+			if ((etcItem != null) && (etcItem.getExtractableItems() != null) && (player.hasRequest(AutoPeelRequest.class)))
+			{
+				return;
+			}
+			
 			final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
 			if (handler == null)
 			{

@@ -10888,8 +10888,6 @@ public class Player extends Playable
 	@Override
 	public void onTeleported()
 	{
-		super.onTeleported();
-		
 		// Stop auto peel.
 		if (hasRequest(AutoPeelRequest.class))
 		{
@@ -10897,6 +10895,8 @@ public class Player extends Playable
 			sendPacket(new ExReadyItemAutoPeel(false, 0));
 			removeRequest(AutoPeelRequest.class);
 		}
+		
+		super.onTeleported();
 		
 		if (isInAirShip())
 		{

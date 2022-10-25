@@ -46,6 +46,9 @@ import org.l2jmobius.gameserver.network.clientpackets.attendance.RequestVipAtten
 import org.l2jmobius.gameserver.network.clientpackets.attributechange.RequestChangeAttributeCancel;
 import org.l2jmobius.gameserver.network.clientpackets.attributechange.RequestChangeAttributeItem;
 import org.l2jmobius.gameserver.network.clientpackets.attributechange.SendChangeAttributeTargetItem;
+import org.l2jmobius.gameserver.network.clientpackets.autopeel.ExRequestItemAutoPeel;
+import org.l2jmobius.gameserver.network.clientpackets.autopeel.ExRequestReadyItemAutoPeel;
+import org.l2jmobius.gameserver.network.clientpackets.autopeel.ExRequestStopItemAutoPeel;
 import org.l2jmobius.gameserver.network.clientpackets.autoplay.ExAutoPlaySetting;
 import org.l2jmobius.gameserver.network.clientpackets.autoplay.ExRequestActivateAutoShortcut;
 import org.l2jmobius.gameserver.network.clientpackets.awakening.RequestCallToChangeClass;
@@ -771,9 +774,9 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	EX_WORLD_EXCHANGE_BUY_ITEM(0x240, null, ConnectionState.IN_GAME),
 	EX_WORLD_EXCHANGE_SETTLE_LIST(0x241, null, ConnectionState.IN_GAME),
 	EX_WORLD_EXCHANGE_SETTLE_RECV_RESULT(0x242, null, ConnectionState.IN_GAME),
-	EX_READY_ITEM_AUTO_PEEL(0x243, null, ConnectionState.IN_GAME),
-	EX_REQUEST_ITEM_AUTO_PEEL(0x244, null, ConnectionState.IN_GAME),
-	EX_STOP_ITEM_AUTO_PEEL(0x245, null, ConnectionState.IN_GAME),
+	EX_READY_ITEM_AUTO_PEEL(0x243, ExRequestReadyItemAutoPeel::new, ConnectionState.IN_GAME),
+	EX_REQUEST_ITEM_AUTO_PEEL(0x244, ExRequestItemAutoPeel::new, ConnectionState.IN_GAME),
+	EX_STOP_ITEM_AUTO_PEEL(0x245, ExRequestStopItemAutoPeel::new, ConnectionState.IN_GAME),
 	EX_VARIATION_OPEN_UI(0x246, ExVariationOpenUi::new, ConnectionState.IN_GAME),
 	EX_VARIATION_CLOSE_UI(0x247, ExVariationCloseUi::new, ConnectionState.IN_GAME),
 	EX_APPLY_VARIATION_OPTION(0x248, ExApplyVariationOption::new, ConnectionState.IN_GAME),
