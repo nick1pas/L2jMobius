@@ -5,8 +5,8 @@ XAMPP: https://www.mediafire.com/file/hkehxpyjn81ybsw/xampp-windows-x64-8.0.11-2
 Eclipse: https://www.mediafire.com/file/j208qw3s7zwx7c7/eclipse-java-2021-12-R-win32-x86_64.zip
 Geodata: 
 
-Client (password L2jMobius): 
-System: 
+Client (password L2jMobius): https://drive.google.com/u/0/uc?id=19c8jtkqB1kzF4AZoQ4DSWID6XTHnCe_2&export=download
+System: https://mega.nz/file/A11hzCqK#hgpmUi63P7DSNGO_2FT_5XBrwfiovxzcPPQlAZvz3yg
 
 All provided download links are for personal use. Redistribution of these links is bannable.
 
