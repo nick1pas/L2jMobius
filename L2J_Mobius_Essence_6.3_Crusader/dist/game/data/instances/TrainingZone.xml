@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <instance id="224" maxWorlds="80" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/instance.xsd">
-	<time duration="60" empty="5" />
+	<time duration="60" empty="600" />
 	<locations>
 		<enter type="FIXED">
 			<location x="-49550" y="17189" z="-3016" />
@@ -15,12 +15,12 @@
 			<param name="limit" value="1" />
 		</condition>
 		<condition type="Level">
-			<param name="min" value="80" />
+			<param name="min" value="76" />
 			<param name="max" value="99" />
 		</condition>
 		<condition type="Reenter" />
 	</conditions>
-	<reenter apply="NONE">
+	<reenter apply="ON_FINISH">
 		<reset day="MONDAY" hour="6" minute="30" />
 		<reset day="TUESDAY" hour="6" minute="30" />
 		<reset day="WEDNESDAY" hour="6" minute="30" />
@@ -244,21 +244,21 @@
 			<npc id="22003" x="-51588" y="5945" z="-246" heading="46147" respawnTime="60sec" />
 		</group>
 		<group name="TowerOfInsolence4" spawnByDefault="false">
-			<npc id="22025" x="-51984" y="5902" z="-249" heading="4492" respawnTime="60sec" />
-			<npc id="22025" x="-51245" y="6107" z="-249" heading="63802" respawnTime="60sec" />
-			<npc id="22025" x="-51383" y="5837" z="-247" heading="40365" respawnTime="60sec" />
-			<npc id="22025" x="-51816" y="6196" z="-245" heading="16267" respawnTime="60sec" />
-			<npc id="22025" x="-51512" y="6163" z="-245" heading="61965" respawnTime="60sec" />
-			<npc id="22026" x="-51657" y="6404" z="-244" heading="29727" respawnTime="60sec" />
-			<npc id="22026" x="-51923" y="6245" z="-245" heading="39617" respawnTime="60sec" />
-			<npc id="22026" x="-51038" y="6503" z="-249" heading="36559" respawnTime="60sec" />
-			<npc id="22026" x="-51236" y="6496" z="-249" heading="25455" respawnTime="60sec" />
-			<npc id="22027" x="-51030" y="6671" z="-248" heading="5721" respawnTime="60sec" />
-			<npc id="22027" x="-50697" y="6620" z="-248" heading="58050" respawnTime="60sec" />
-			<npc id="22027" x="-51221" y="6151" z="-249" heading="35064" respawnTime="60sec" />
-			<npc id="22025" x="-51572" y="5999" z="-246" heading="46147" respawnTime="60sec" />
-			<npc id="22025" x="-51588" y="5945" z="-246" heading="46147" respawnTime="60sec" />
-			<npc id="22025" x="-51588" y="5945" z="-246" heading="46147" respawnTime="60sec" />
+			<npc id="22005" x="-51984" y="5902" z="-249" heading="4492" respawnTime="10sec" />
+			<npc id="22005" x="-51245" y="6107" z="-249" heading="63802" respawnTime="10sec" />
+			<npc id="22005" x="-51383" y="5837" z="-247" heading="40365" respawnTime="10sec" />
+			<npc id="22005" x="-51816" y="6196" z="-245" heading="16267" respawnTime="10sec" />
+			<npc id="22005" x="-51512" y="6163" z="-245" heading="61965" respawnTime="10sec" />
+			<npc id="22007" x="-51657" y="6404" z="-244" heading="29727" respawnTime="10sec" />
+			<npc id="22007" x="-51923" y="6245" z="-245" heading="39617" respawnTime="10sec" />
+			<npc id="22007" x="-51038" y="6503" z="-249" heading="36559" respawnTime="10sec" />
+			<npc id="22007" x="-51236" y="6496" z="-249" heading="25455" respawnTime="10sec" />
+			<npc id="22008" x="-51030" y="6671" z="-248" heading="5721" respawnTime="10sec" />
+			<npc id="22008" x="-50697" y="6620" z="-248" heading="58050" respawnTime="10sec" />
+			<npc id="22008" x="-51221" y="6151" z="-249" heading="35064" respawnTime="10sec" />
+			<npc id="22009" x="-51572" y="5999" z="-246" heading="46147" respawnTime="10sec" />
+			<npc id="22009" x="-51588" y="5945" z="-246" heading="46147" respawnTime="10sec" />
+			<npc id="22009" x="-51588" y="5945" z="-246" heading="46147" respawnTime="10sec" />
 		</group>
 		<group name="TowerOfInsolence5" spawnByDefault="false">
 			<npc id="22010" x="-51984" y="5902" z="-249" heading="4492" respawnTime="60sec" />

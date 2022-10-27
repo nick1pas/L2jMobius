@@ -812,7 +812,7 @@ public class TrainingZone extends AbstractInstance
 	public void onInstanceEnter(Player player, Instance instance)
 	{
 		instance.setParameter("BATTLEZONE", false);
-		player.sendPacket(new ExSendUIEvent(player, false, false, (int) (instance.getRemainingTime() / 1000), 0, NpcStringId.TIME_LEFT));
+		player.sendPacket(new ExSendUIEvent(player, false, false, Math.min(3600, (int) (instance.getRemainingTime() / 1000)), 0, NpcStringId.TIME_LEFT));
 	}
 	
 	@Override
