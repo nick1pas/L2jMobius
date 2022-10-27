@@ -111,7 +111,7 @@ public class Q10888_SaviorsPathDefeatTheEmbryo extends Quest
 				{
 					if ((player.getLevel() >= MIN_LEVEL))
 					{
-						addExpAndSp(player, 108766499040L, 108766440);
+						addExpAndSp(player, 10876649, 9789);
 						giveAdena(player, 12309205, true);
 						playMovie(player, Movie.EP5_ASTATINE_QST_END);
 						qs.exitQuest(false, true);

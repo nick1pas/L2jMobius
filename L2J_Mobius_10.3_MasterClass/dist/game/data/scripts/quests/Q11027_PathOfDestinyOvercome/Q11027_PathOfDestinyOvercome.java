@@ -188,7 +188,7 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR1, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR1, true);
-						addExpAndSp(player, 392513005, 353261);
+						addExpAndSp(player, 38568, 35);
 					}
 				}
 				break;
@@ -212,7 +212,7 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR2, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR2, true);
-						addExpAndSp(player, 581704958, 523534);
+						addExpAndSp(player, 47616, 43);
 					}
 				}
 				break;
@@ -237,7 +237,7 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR3, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR3, true);
-						addExpAndSp(player, 750392145, 675352);
+						addExpAndSp(player, 58784, 53);
 					}
 				}
 				break;
@@ -261,7 +261,7 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR4, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR4, true);
-						addExpAndSp(player, 452984693, 407686);
+						addExpAndSp(player, 34377, 31);
 					}
 				}
 				break;
@@ -286,7 +286,7 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR5, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR5, true);
-						addExpAndSp(player, 514892511, 463403);
+						addExpAndSp(player, 38197, 34);
 					}
 				}
 				break;
@@ -312,11 +312,11 @@ public class Q11027_PathOfDestinyOvercome extends Quest
 						player.getVariables().set(REWARD_CHECK_VAR6, true);
 						if (INSTANT_LEVEL_85 && (player.getLevel() < LEVEL_85))
 						{
-							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_85) + 100) - player.getExp(), 527586);
+							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_85) + 1) - player.getExp(), 38);
 						}
 						else
 						{
-							addExpAndSp(player, 1176372111, 527586);
+							addExpAndSp(player, 42441, 38);
 						}
 						giveAdena(player, 420000, true);
 					}

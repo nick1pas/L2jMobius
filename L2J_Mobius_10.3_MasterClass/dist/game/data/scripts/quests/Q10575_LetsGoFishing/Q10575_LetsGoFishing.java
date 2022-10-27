@@ -56,8 +56,8 @@ public class Q10575_LetsGoFishing extends Quest
 	private static final String COUNT_VAR = "FishWinCount";
 	private static final int NPCSTRING_ID = NpcStringId.CATCH_PRACTICE_FISH.getId();
 	// Rewards
-	private static final int XP = 597699960;
-	private static final int SP = 597690;
+	private static final int XP = 59769;
+	private static final int SP = 54;
 	private static final int CERTIFICATE_FROM_SANTIAGO = 48173;
 	private static final int FISHING_SHOT = 38154;
 	private static final int REWARD_FISHING_ROD_PACK = 46739;

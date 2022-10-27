@@ -44,8 +44,8 @@ public class Q10576_GlitteringWeapons extends Quest
 	private static final int ENHANCEMENT_PRACTICE_LONG_SWORD = 48170;
 	private static final int PRACTICE_WEAPON_ENCHANT_SCROLL = 48171;
 	// Rewards
-	private static final long XP = 597699960;
-	private static final int SP = 597690;
+	private static final long XP = 59769;
+	private static final int SP = 54;
 	private static final int CERTIFICATE_FROM_RUPIO = 48174;
 	// Misc
 	private static final int MIN_LEVEL = 95;

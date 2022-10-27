@@ -178,7 +178,7 @@ public class Q11025_PathOfDestinyProving extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR1, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR1, true);
-						addExpAndSp(player, 1640083, 1476);
+						addExpAndSp(player, 492, 1);
 					}
 					htmltext = event;
 				}
@@ -203,7 +203,7 @@ public class Q11025_PathOfDestinyProving extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR2, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR2, true);
-						addExpAndSp(player, 913551, 822);
+						addExpAndSp(player, 831, 1);
 					}
 					htmltext = event;
 				}
@@ -231,11 +231,11 @@ public class Q11025_PathOfDestinyProving extends Quest
 						player.getVariables().set(REWARD_CHECK_VAR3, true);
 						if (INSTANT_LEVEL_40 && (player.getLevel() < LEVEL_40))
 						{
-							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_40) + 100) - player.getExp(), 4457);
+							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_40) +1) - player.getExp(), 0);
 						}
 						else
 						{
-							addExpAndSp(player, 4952686, 4457);
+							addExpAndSp(player, 1932, 2);
 						}
 						giveAdena(player, 165000, true);
 					}

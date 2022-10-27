@@ -88,7 +88,7 @@ public class Q00933_TombRaiders extends Quest
 			{
 				if (qs.isCond(2))
 				{
-					addExpAndSp(player, 20700253956096L, 1450359376);
+					addExpAndSp(player, 1035012697, 931511);
 					giveItems(player, BENUSTA_REWARD_BOX, 1);
 					qs.exitQuest(QuestType.DAILY, true);
 					htmltext = event;

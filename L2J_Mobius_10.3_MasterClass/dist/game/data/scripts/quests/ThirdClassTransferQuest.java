@@ -247,7 +247,7 @@ public abstract class ThirdClassTransferQuest extends Quest
 					giveItems(player, SPIRITSHOTS, 8000);
 					giveItems(player, BLESSED_SCROLL_OF_RESURRECTION, 3);
 					giveItems(player, PAULINAS_EQUIPMENT_SET, 1);
-					addExpAndSp(player, 42000000, 0);
+					addExpAndSp(player, 4200, 0);
 					qs.exitQuest(true, true);
 					htmltext = npc.getId() + "-09.html";
 				}

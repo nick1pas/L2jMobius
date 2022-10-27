@@ -86,7 +86,7 @@ public class Q10803_TheDimensionalWarpPart3 extends Quest
 				{
 					if (player.getLevel() >= MIN_LEVEL)
 					{
-						addExpAndSp(player, 54383249571L, 0);
+						addExpAndSp(player, 5438324, 1);
 						giveItems(player, BLOODY_ETERNAL_ENHANCEMENT_STONE, 1);
 						giveItems(player, WARP_CRYSTAL, 300);
 						qs.exitQuest(false, true);

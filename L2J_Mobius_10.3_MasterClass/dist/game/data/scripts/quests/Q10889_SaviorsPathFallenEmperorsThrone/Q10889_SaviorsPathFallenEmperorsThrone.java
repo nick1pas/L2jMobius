@@ -89,7 +89,7 @@ public class Q10889_SaviorsPathFallenEmperorsThrone extends Quest
 				{
 					if ((player.getLevel() >= MIN_LEVEL))
 					{
-						addExpAndSp(player, 271916247600L, 271916100);
+						addExpAndSp(player, 27191624, 24472);
 						giveAdena(player, 30773010, true);
 						qs.exitQuest(false, true);
 						htmltext = event;

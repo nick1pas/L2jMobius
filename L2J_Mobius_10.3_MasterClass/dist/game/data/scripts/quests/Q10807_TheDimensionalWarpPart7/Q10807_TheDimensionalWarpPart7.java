@@ -85,7 +85,7 @@ public class Q10807_TheDimensionalWarpPart7 extends Quest
 				{
 					if (player.getLevel() >= MIN_LEVEL)
 					{
-						addExpAndSp(player, 90422325000L, 0);
+						addExpAndSp(player, 9042232, 1);
 						giveItems(player, WARP_CRYSTAL, 300);
 						qs.exitQuest(false, true);
 						htmltext = event;

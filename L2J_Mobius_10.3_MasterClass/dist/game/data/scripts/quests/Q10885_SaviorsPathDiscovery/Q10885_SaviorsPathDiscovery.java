@@ -83,7 +83,7 @@ public class Q10885_SaviorsPathDiscovery extends Quest
 				{
 					if ((player.getLevel() >= MIN_LEVEL))
 					{
-						addExpAndSp(player, 906387492, 906387);
+						addExpAndSp(player, 90638, 82);
 						qs.exitQuest(false, true);
 						htmltext = event;
 					}

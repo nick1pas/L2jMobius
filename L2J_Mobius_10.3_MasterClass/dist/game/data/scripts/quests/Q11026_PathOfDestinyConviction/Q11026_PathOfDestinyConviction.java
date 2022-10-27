@@ -153,7 +153,7 @@ public class Q11026_PathOfDestinyConviction extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR1, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR1, true);
-						addExpAndSp(player, 14281098, 12852);
+						addExpAndSp(player, 4041, 4);
 					}
 				}
 				break;
@@ -176,7 +176,7 @@ public class Q11026_PathOfDestinyConviction extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR2, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR2, true);
-						addExpAndSp(player, 30949789, 27854);
+						addExpAndSp(player, 8447, 8);
 					}
 				}
 				htmltext = event;
@@ -202,7 +202,7 @@ public class Q11026_PathOfDestinyConviction extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR3, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR3, true);
-						addExpAndSp(player, 76142825, 68528);
+						addExpAndSp(player, 17661, 16);
 					}
 				}
 				break;
@@ -227,7 +227,7 @@ public class Q11026_PathOfDestinyConviction extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR4, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR4, true);
-						addExpAndSp(player, 174520303, 157068);
+						addExpAndSp(player, 36927, 33);
 					}
 				}
 				break;
@@ -252,11 +252,11 @@ public class Q11026_PathOfDestinyConviction extends Quest
 						player.getVariables().set(REWARD_CHECK_VAR5, true);
 						if (INSTANT_LEVEL_76 && (player.getLevel() < LEVEL_76))
 						{
-							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_76) + 100) - player.getExp(), 595042);
+							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_76) + 1) - player.getExp(), 84);
 						}
 						else
 						{
-							addExpAndSp(player, 834929477, 595042);
+							addExpAndSp(player, 93645, 84);
 						}
 						giveAdena(player, 240000, true);
 					}

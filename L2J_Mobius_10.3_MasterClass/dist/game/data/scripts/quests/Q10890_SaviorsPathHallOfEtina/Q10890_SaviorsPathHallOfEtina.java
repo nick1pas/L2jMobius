@@ -113,7 +113,7 @@ public class Q10890_SaviorsPathHallOfEtina extends Quest
 				{
 					if ((player.getLevel() >= MIN_LEVEL))
 					{
-						addExpAndSp(player, 376172418240L, 345208219);
+						addExpAndSp(player, 37617241, 33856);
 						giveItems(player, SAVIORS_MASK, 1);
 						giveItems(player, SAVIORS_ENCHANT_SCROLL, 1);
 						qs.exitQuest(false, true);

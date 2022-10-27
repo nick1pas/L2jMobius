@@ -49,8 +49,8 @@ public class Q10579_ContainingTheAttributePower extends Quest
 	private static final int ATTRIBUTE_PRACTICE_HOLY_STONE = 48169; // FIXME: Does not exist.
 	private static final int ATTRIBUTE_PRACTICE_DARK_STONE = 48169; // FIXME: Does not exist.
 	// Rewards
-	private static final int XP = 597699960;
-	private static final int SP = 597690;
+	private static final int XP = 59769;
+	private static final int SP = 54;
 	private static final int CERTIFICATE_FROM_FERRIS = 48177;
 	// Misc
 	private static final int MIN_LEVEL = 95;

@@ -45,8 +45,8 @@ public class Q10578_TheSoulOfASword extends Quest
 	private static final int PRACTICE_SOUL_CRYSTAL_STAGE1 = 46526;
 	private static final int SOUL_CRYSTAL_PRACTICE_GEMSTONE = 36722;
 	// Rewards
-	private static final long XP = 597699960;
-	private static final int SP = 597690;
+	private static final long XP = 59769;
+	private static final int SP = 54;
 	private static final int CERTIFICATE_FROM_VINCENZ = 48176;
 	// Misc
 	private static final int MIN_LEVEL = 95;

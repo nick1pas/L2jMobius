@@ -90,7 +90,7 @@ public class Q00833_DevilsTreasureTauti extends Quest
 				{
 					giveItems(player, SOE_MISTYC_TAVERN, 1);
 				}
-				addExpAndSp(player, 6_362_541_900L, 15_270_101);
+				addExpAndSp(player, 636254, 573);
 				qs.exitQuest(QuestType.REPEATABLE, true);
 				htmltext = event;
 				break;

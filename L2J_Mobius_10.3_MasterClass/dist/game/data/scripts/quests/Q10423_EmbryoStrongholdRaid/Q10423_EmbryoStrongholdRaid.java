@@ -117,7 +117,7 @@ public class Q10423_EmbryoStrongholdRaid extends Quest
 				if (qs.isCond(2))
 				{
 					giveItems(player, SUPERIOR_GIANTS_CODEX, 1);
-					addExpAndSp(player, 29682570651L, 71108570);
+					addExpAndSp(player, 2968257, 2671);
 					qs.exitQuest(false, true);
 					htmltext = event;
 				}

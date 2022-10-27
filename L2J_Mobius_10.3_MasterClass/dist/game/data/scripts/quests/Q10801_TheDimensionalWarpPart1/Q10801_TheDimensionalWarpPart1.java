@@ -84,7 +84,7 @@ public class Q10801_TheDimensionalWarpPart1 extends Quest
 				{
 					if (player.getLevel() >= MIN_LEVEL)
 					{
-						addExpAndSp(player, 44442855977L, 0);
+						addExpAndSp(player, 4444285, 1);
 						giveItems(player, DIMENSIONAL_BRACELET_STAGE_1, 1);
 						giveItems(player, WARP_CRYSTAL, 300);
 						qs.exitQuest(false, true);

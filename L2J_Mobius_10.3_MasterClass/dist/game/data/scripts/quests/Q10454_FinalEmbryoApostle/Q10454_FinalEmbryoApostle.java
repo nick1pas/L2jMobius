@@ -79,7 +79,7 @@ public class Q10454_FinalEmbryoApostle extends Quest
 				{
 					giveItems(player, SCROLL_ENCHANT_R_GRADE_WEAPON, 1);
 					giveItems(player, SCROLL_ENCHANT_R_GRADE_ARMOR, 1);
-					addExpAndSp(player, 36255499714L, 87013199);
+					addExpAndSp(player, 3625549, 3263);
 					qs.exitQuest(false, true);
 					htmltext = event;
 				}

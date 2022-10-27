@@ -139,11 +139,11 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 						player.getVariables().set(REWARD_CHECK_VAR2, true);
 						if (INSTANT_LEVEL_20 && (player.getLevel() < 20))
 						{
-							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(20) + 100) - player.getExp(), 708);
+							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(20) + 1) - player.getExp(), 0);
 						}
 						else
 						{
-							addExpAndSp(player, 787633, 708);
+							addExpAndSp(player, 158, 1);
 						}
 					}
 					htmltext = event;
@@ -186,7 +186,7 @@ public class Q11024_PathOfDestinyBeginning extends Quest
 					if (!player.getVariables().getBoolean(REWARD_CHECK_VAR1, false))
 					{
 						player.getVariables().set(REWARD_CHECK_VAR1, true);
-						addExpAndSp(player, 48229, 43);
+						addExpAndSp(player, 292, 1);
 					}
 					htmltext = event;
 				}

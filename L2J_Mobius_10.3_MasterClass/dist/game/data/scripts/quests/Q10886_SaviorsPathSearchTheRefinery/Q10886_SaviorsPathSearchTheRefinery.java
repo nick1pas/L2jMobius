@@ -100,7 +100,7 @@ public class Q10886_SaviorsPathSearchTheRefinery extends Quest
 				{
 					if ((player.getLevel() >= MIN_LEVEL))
 					{
-						addExpAndSp(player, 27191624760L, 27191610);
+						addExpAndSp(player, 2719162, 2447);
 						giveAdena(player, 3077301, true);
 						qs.exitQuest(false, true);
 						htmltext = event;

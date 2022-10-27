@@ -45,8 +45,8 @@ public class Q10577_TemperARustingBlade extends Quest
 	private static final int AUGMENTATION_PRACTICE_SPIRIT_STONE = 36718;
 	private static final int AUGMENTATION_PRACTICE_GEMSTONE = 36719;
 	// Rewards
-	private static final long XP = 597699960;
-	private static final int SP = 597690;
+	private static final long XP = 59769;
+	private static final int SP = 59;
 	private static final int CERTIFICATE_FROM_FLUTTER = 48175;
 	// Misc
 	private static final int MIN_LEVEL = 95;
