@@ -159,8 +159,8 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 		}
 		
 		_weaponEnchant = set.getInt("weaponEnchant", 0);
-		_exp = set.getDouble("exp", 0);
-		_sp = set.getDouble("sp", 0);
+		_exp = set.getDouble("exp", 0) / 10000; // TODO: Tempfix until XMLs are updated.
+		_sp = set.getDouble("sp", 0) / 10000; // TODO: Tempfix until XMLs are updated.
 		_raidPoints = set.getDouble("raidPoints", 0);
 		_unique = set.getBoolean("unique", false);
 		_attackable = set.getBoolean("attackable", true);
