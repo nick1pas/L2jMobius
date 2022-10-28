@@ -93,6 +93,7 @@ public class TimedHuntingZoneData implements IXmlReader
 							boolean soloInstance = true;
 							boolean weekly = false;
 							boolean useWorldPrefix = false;
+							boolean zonePremiumUserOnly = false;
 							Location enterLocation = null;
 							Location exitLocation = null;
 							for (Node zoneNode = listNode.getFirstChild(); zoneNode != null; zoneNode = zoneNode.getNextSibling())
@@ -186,9 +187,14 @@ public class TimedHuntingZoneData implements IXmlReader
 										useWorldPrefix = Boolean.parseBoolean(zoneNode.getTextContent());
 										break;
 									}
+									case "zonePremiumUserOnly":
+									{
+										zonePremiumUserOnly = Boolean.parseBoolean(zoneNode.getTextContent());
+										break;
+									}
 								}
 							}
-							_timedHuntingZoneData.put(id, new TimedHuntingZoneHolder(id, name, initialTime, maxAddedTime, resetDelay, entryItemId, entryFee, minLevel, maxLevel, remainRefillTime, refillTimeMax, pvpZone, noPvpZone, instanceId, soloInstance, weekly, useWorldPrefix, enterLocation, exitLocation));
+							_timedHuntingZoneData.put(id, new TimedHuntingZoneHolder(id, name, initialTime, maxAddedTime, resetDelay, entryItemId, entryFee, minLevel, maxLevel, remainRefillTime, refillTimeMax, pvpZone, noPvpZone, instanceId, soloInstance, weekly, useWorldPrefix, zonePremiumUserOnly, enterLocation, exitLocation));
 						}
 					}
 				}

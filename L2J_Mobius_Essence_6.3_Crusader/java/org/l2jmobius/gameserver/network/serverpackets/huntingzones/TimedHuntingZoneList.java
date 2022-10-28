@@ -67,8 +67,8 @@ public class TimedHuntingZoneList implements IClientOutgoingPacket
 			packet.writeC(_isInTimedHuntingZone ? 0 : 1); // field activated (272 C to D)
 			packet.writeC(0); // bUserBound
 			packet.writeC(0); // bCanReEnter
-			packet.writeC(0); // bIsInZonePCCafeUserOnly
-			packet.writeC(0); // bIsPCCafeUser
+			packet.writeC(holder.zonePremiumUserOnly() ? 1 : 0); // bIsInZonePCCafeUserOnly
+			packet.writeC(_player.hasPremiumStatus() ? 1 : 0); // bIsPCCafeUser
 			packet.writeC(holder.useWorldPrefix() ? 1 : 0); // bWorldInZone
 			packet.writeC(0); // bCanUseEntranceTicket
 			packet.writeD(0); // nEntranceCount
