@@ -47,13 +47,7 @@ public class TimedHuntingZoneList implements IClientOutgoingPacket
 		packet.writeD(TimedHuntingZoneData.getInstance().getSize()); // zone count
 		for (TimedHuntingZoneHolder holder : TimedHuntingZoneData.getInstance().getAllHuntingZones())
 		{
-			final boolean isFree = holder.getEntryFee() == 0;
-			packet.writeD(isFree ? 0 : 1); // size of array - required item count
-			if (!isFree) // is array
-			{
-				packet.writeD(holder.getEntryItemId());
-				packet.writeQ(holder.getEntryFee());
-			}
+			packet.writeD(holder.getEntryFee() != 0 ? 1 : 0); // is free
 			packet.writeD(holder.getEntryItemId());
 			packet.writeQ(holder.getEntryFee());
 			packet.writeD(holder.isWeekly() ? 0 : 1); // reset cycle
