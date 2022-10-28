@@ -14,42 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.enums;
+package org.l2jmobius.gameserver.network.clientpackets;
+
+import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jmobius.gameserver.network.serverpackets.ExBRVersion;
 
 /**
  * @author Index
  */
-public enum WorldExchangeSortType
+public class RequestBRVersion implements IClientIncomingPacket
 {
-	NONE(0),
-	ITEM_NAME_ASCE(2),
-	ITEM_NAME_DESC(3),
-	// ENCHANT_ASCE(2),
-	// ENCHANT_DESC(3),
-	PRICE_ASCE(4),
-	PRICE_DESC(5);
 	
-	private final int _id;
-	
-	private WorldExchangeSortType(int id)
+	@Override
+	public boolean read(GameClient client, PacketReader packet)
 	{
-		_id = id;
+		return true;
 	}
 	
-	public int getId()
+	@Override
+	public void run(GameClient client)
 	{
-		return _id;
-	}
-	
-	public static WorldExchangeSortType getWorldExchangeSortType(int id)
-	{
-		for (WorldExchangeSortType type : values())
-		{
-			if (type.getId() == id)
-			{
-				return type;
-			}
-		}
-		return NONE;
+		client.sendPacket(new ExBRVersion());
 	}
 }

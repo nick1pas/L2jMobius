@@ -120,11 +120,6 @@ public class WorldExchangeManager implements IXmlReader
 		final ConcurrentHashMap<Integer, String> local = new ConcurrentHashMap<>();
 		forEach(doc, "list", listNode ->
 		{
-			forEach(listNode, "blessed", itemNode ->
-			{
-				StatSet itemSet = new StatSet(parseAttributes(itemNode));
-				local.put(-1, itemSet.getString("name"));
-			});
 			forEach(listNode, "item", itemNode ->
 			{
 				StatSet itemSet = new StatSet(parseAttributes(itemNode));
@@ -323,7 +318,7 @@ public class WorldExchangeManager implements IXmlReader
 		
 		if (player.getInventory().getItemByObjectId(itemObjectId) == null)
 		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeRegisterItem.FAIL);
 			return;
 		}
@@ -333,7 +328,7 @@ public class WorldExchangeManager implements IXmlReader
 		final Item itemInstance = player.getInventory().detachItem("World Exchange Registration", item, amount, ItemLocation.EXCHANGE, player, null);
 		if (itemInstance == null)
 		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeRegisterItem.FAIL);
 			return;
 		}
@@ -383,7 +378,7 @@ public class WorldExchangeManager implements IXmlReader
 		final WorldExchangeHolder worldExchangeItem = _itemBids.get(worldExchangeIndex);
 		if (worldExchangeItem == null)
 		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -424,7 +419,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (worldExchangeItem.getStoreType() == WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE)
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -432,7 +427,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (!_itemBids.containsKey(worldExchangeItem.getWorldExchangeId()))
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -440,7 +435,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (_itemBids.get(worldExchangeItem.getWorldExchangeId()) != worldExchangeItem)
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -486,7 +481,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (worldExchangeItem.getStoreType() == WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE)
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -494,7 +489,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (!_itemBids.containsKey(worldExchangeItem.getWorldExchangeId()))
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -502,14 +497,14 @@ public class WorldExchangeManager implements IXmlReader
 		if (_itemBids.get(worldExchangeItem.getWorldExchangeId()) != worldExchangeItem)
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
 		
 		if (player.getObjectId() != worldExchangeItem.getOldOwnerId())
 		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -536,7 +531,7 @@ public class WorldExchangeManager implements IXmlReader
 		{
 			returnPrice = Config.WORLD_EXCHANGE_MAX_LCOIN_TAX;
 		}
-		player.getInventory().addItem("World Exchange Took Money", Inventory.LCOIN_ID, (returnPrice), player, null);
+		player.getInventory().addItem("World Exchange Took Money", Inventory.EINHASAD_COIN_ID, (returnPrice), player, null);
 		worldExchangeItem.setStoreType(WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE);
 		Item item = worldExchangeItem.getItemInstance();
 		item.setItemLocation(ItemLocation.VOID);
@@ -564,7 +559,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (worldExchangeItem.getStoreType() == WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE)
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -572,7 +567,7 @@ public class WorldExchangeManager implements IXmlReader
 		if (!_itemBids.containsKey(worldExchangeItem.getWorldExchangeId()))
 		{
 			player.sendPacket(new WorldExchangeSettleList(player));
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeSettleRecvResult.FAIL);
 			return;
 		}
@@ -633,7 +628,7 @@ public class WorldExchangeManager implements IXmlReader
 		
 		if (!_itemBids.containsKey(worldExchangeId))
 		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeBuyItem.FAIL);
 			return;
 		}
@@ -641,7 +636,7 @@ public class WorldExchangeManager implements IXmlReader
 		final WorldExchangeHolder worldExchangeItem = _itemBids.get(worldExchangeId);
 		if (worldExchangeItem.getStoreType() == WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE)
 		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_THAT_YOU_SEARCHED_DOES_NOT_EXIST));
 			player.sendPacket(WorldExchangeBuyItem.FAIL);
 			return;
 		}
@@ -653,7 +648,7 @@ public class WorldExchangeManager implements IXmlReader
 			return;
 		}
 		
-		final Item lcoin = player.getInventory().getItemByItemId(Inventory.LCOIN_ID);
+		final Item lcoin = player.getInventory().getItemByItemId(Inventory.EINHASAD_COIN_ID);
 		if ((lcoin == null) || (lcoin.getCount() < worldExchangeItem.getPrice()))
 		{
 			player.sendPacket(new SystemMessage(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_L2_COINS_ADD_MORE_L2_COINS_AND_TRY_AGAIN));
@@ -720,8 +715,7 @@ public class WorldExchangeManager implements IXmlReader
 		newItem.setEnchantLevel(oldItem.getEnchantLevel() < 1 ? 0 : oldItem.getEnchantLevel());
 		newItem.setItemLocation(ItemLocation.EXCHANGE);
 		newItem.setCount(oldItem.getCount());
-		newItem.setVisualId(oldItem.getVisualId(), false);
-		newItem.setBlessed(oldItem.isBlessed());
+		newItem.setVisualId(oldItem.getVisualId());
 		newItem.setOwnerId(oldItem.getOwnerId());
 		newItem.updateDatabase(true); // in any case it will be store in database
 		final VariationInstance vi = oldItem.getAugmentation();
@@ -827,11 +821,11 @@ public class WorldExchangeManager implements IXmlReader
 			{
 				if ((lang == null) || (!lang.equals("en") && _localItemNames.containsKey(lang)))
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId(), o.getItemInstance().isBlessed()))).collect(Collectors.toList());
+					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId()))).collect(Collectors.toList());
 				}
 				else
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> ((o.getItemInstance().isBlessed() ? "Blessed " : "") + o.getItemInstance().getItemName()))).collect(Collectors.toList());
+					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> o.getItemInstance().getItemName())).collect(Collectors.toList());
 				}
 				break;
 			}
@@ -839,11 +833,11 @@ public class WorldExchangeManager implements IXmlReader
 			{
 				if ((lang == null) || (!lang.equals("en") && _localItemNames.containsKey(lang)))
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId(), o.getItemInstance().isBlessed()))).collect(Collectors.toList());
+					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId()))).collect(Collectors.toList());
 				}
 				else
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> ((o.getItemInstance().isBlessed() ? "Blessed " : "") + o.getItemInstance().getItemName()))).collect(Collectors.toList());
+					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> o.getItemInstance().getItemName())).collect(Collectors.toList());
 				}
 				Collections.reverse(sortedList);
 				break;
@@ -858,7 +852,7 @@ public class WorldExchangeManager implements IXmlReader
 		return sortedList;
 	}
 	
-	private String getItemName(String lang, int id, boolean isBlessed)
+	private String getItemName(String lang, int id)
 	{
 		if (!_localItemNames.containsKey(lang))
 		{
@@ -870,11 +864,6 @@ public class WorldExchangeManager implements IXmlReader
 		if (name == null)
 		{
 			return "";
-		}
-		
-		if (isBlessed)
-		{
-			return names.get(-1) + " " + name;
 		}
 		
 		return name;

@@ -14,42 +14,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.enums;
+package org.l2jmobius.gameserver.network.serverpackets.worldexchange;
+
+import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
 /**
  * @author Index
  */
-public enum WorldExchangeSortType
+public class WorldExchangeSellCompleteAlarm implements IClientOutgoingPacket
 {
-	NONE(0),
-	ITEM_NAME_ASCE(2),
-	ITEM_NAME_DESC(3),
-	// ENCHANT_ASCE(2),
-	// ENCHANT_DESC(3),
-	PRICE_ASCE(4),
-	PRICE_DESC(5);
+	private final int _itemId;
+	private final long _amount;
 	
-	private final int _id;
-	
-	private WorldExchangeSortType(int id)
+	public WorldExchangeSellCompleteAlarm(int itemId, long amount)
 	{
-		_id = id;
+		_itemId = itemId;
+		_amount = amount;
 	}
 	
-	public int getId()
+	@Override
+	public boolean write(PacketWriter packet)
 	{
-		return _id;
-	}
-	
-	public static WorldExchangeSortType getWorldExchangeSortType(int id)
-	{
-		for (WorldExchangeSortType type : values())
-		{
-			if (type.getId() == id)
-			{
-				return type;
-			}
-		}
-		return NONE;
+		OutgoingPackets.EX_WORLD_EXCHANGE_SELL_COMPLETE_ALARM.writeId(packet);
+		packet.writeD(_itemId);
+		packet.writeQ(_amount);
+		return true;
 	}
 }

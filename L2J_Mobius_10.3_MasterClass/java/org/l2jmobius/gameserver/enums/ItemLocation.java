@@ -29,5 +29,6 @@ public enum ItemLocation
 	REFUND,
 	MAIL,
 	FREIGHT,
-	COMMISSION
+	COMMISSION,
+	EXCHANGE
 }

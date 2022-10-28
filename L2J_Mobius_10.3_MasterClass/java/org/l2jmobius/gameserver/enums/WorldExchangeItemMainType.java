@@ -19,19 +19,18 @@ package org.l2jmobius.gameserver.enums;
 /**
  * @author Index
  */
-public enum WorldExchangeSortType
+public enum WorldExchangeItemMainType
 {
-	NONE(0),
-	ITEM_NAME_ASCE(2),
-	ITEM_NAME_DESC(3),
-	// ENCHANT_ASCE(2),
-	// ENCHANT_DESC(3),
-	PRICE_ASCE(4),
-	PRICE_DESC(5);
+	EQUIPMENT(0),
+	ARTIFACT(1),
+	ENCHANT(8),
+	CONSUMABLE(20),
+	ETC(4),
+	COLLECTION(5);
 	
 	private final int _id;
 	
-	private WorldExchangeSortType(int id)
+	private WorldExchangeItemMainType(int id)
 	{
 		_id = id;
 	}
@@ -41,15 +40,15 @@ public enum WorldExchangeSortType
 		return _id;
 	}
 	
-	public static WorldExchangeSortType getWorldExchangeSortType(int id)
+	public static WorldExchangeItemMainType getWorldExchangeItemMainType(int id)
 	{
-		for (WorldExchangeSortType type : values())
+		for (WorldExchangeItemMainType type : values())
 		{
 			if (type.getId() == id)
 			{
 				return type;
 			}
 		}
-		return NONE;
+		return null;
 	}
 }
