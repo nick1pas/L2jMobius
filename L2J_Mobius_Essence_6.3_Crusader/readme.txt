@@ -6,7 +6,7 @@ Eclipse: https://www.mediafire.com/file/j208qw3s7zwx7c7/eclipse-java-2021-12-R-w
 Geodata: https://www.mediafire.com/file/qb3nipqnl2pbxul/L2J_Mobius_Essence_6.3_Crusader_Geodata.zip
 
 Client (password L2jMobius): https://drive.google.com/u/0/uc?id=19c8jtkqB1kzF4AZoQ4DSWID6XTHnCe_2&export=download
-System: https://mega.nz/file/soc2QRZZ#FIE3bawkid-vMpRDaX9CoKaPuNPdmQOx-DihTR5t-Gs
+System: https://mega.nz/file/N4FQjD6K#fMs0AbXuqAbD1Lb97KDdMKlY9_7d7WztQzdGYEnZ3e4
 
 All provided download links are for personal use. Redistribution of these links is bannable.
 
