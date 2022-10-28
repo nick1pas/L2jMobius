@@ -2147,6 +2147,8 @@
 															</xs:complexType>
 														</xs:element>
 														<xs:element minOccurs="0" name="slot" type="xs:string" />
+														<xs:element minOccurs="0" name="angle" type="xs:unsignedByte" />
+														<xs:element minOccurs="0" name="range" type="xs:unsignedShort" />
 														<xs:element minOccurs="0" name="mode" type="xs:string" />
 														<xs:element minOccurs="0" name="skillId" type="xs:unsignedShort" />
 														<xs:element minOccurs="0" name="skillLevel">
