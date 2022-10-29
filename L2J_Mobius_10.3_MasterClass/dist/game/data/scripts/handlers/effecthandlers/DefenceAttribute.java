@@ -16,6 +16,9 @@
  */
 package handlers.effecthandlers;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
@@ -28,48 +31,59 @@ import org.l2jmobius.gameserver.model.stats.Stat;
  */
 public class DefenceAttribute extends AbstractEffect
 {
-	private final AttributeType _attribute;
+	private final Set<AttributeType> _attributes = new HashSet<>();
 	private final double _amount;
 	
 	public DefenceAttribute(StatSet params)
 	{
 		_amount = params.getDouble("amount", 0);
-		_attribute = params.getEnum("attribute", AttributeType.class, AttributeType.FIRE);
+		final String attributes = params.getString("attribute", "FIRE");
+		if (attributes.contains(","))
+		{
+			for (String attribute : attributes.split(","))
+			{
+				_attributes.add(AttributeType.findByName(attribute.trim()));
+			}
+		}
+		else
+		{
+			_attributes.add(AttributeType.findByName(attributes));
+		}
 	}
 	
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		Stat stat = Stat.FIRE_RES;
-		
-		switch (_attribute)
+		for (AttributeType attribute : _attributes)
 		{
-			case WATER:
+			switch (attribute)
 			{
-				stat = Stat.WATER_RES;
-				break;
-			}
-			case WIND:
-			{
-				stat = Stat.WIND_RES;
-				break;
-			}
-			case EARTH:
-			{
-				stat = Stat.EARTH_RES;
-				break;
-			}
-			case HOLY:
-			{
-				stat = Stat.HOLY_RES;
-				break;
-			}
-			case DARK:
-			{
-				stat = Stat.DARK_RES;
-				break;
+				case WATER:
+				{
+					effected.getStat().mergeAdd(Stat.WATER_RES, _amount);
+					break;
+				}
+				case WIND:
+				{
+					effected.getStat().mergeAdd(Stat.WIND_RES, _amount);
+					break;
+				}
+				case EARTH:
+				{
+					effected.getStat().mergeAdd(Stat.EARTH_RES, _amount);
+					break;
+				}
+				case HOLY:
+				{
+					effected.getStat().mergeAdd(Stat.HOLY_RES, _amount);
+					break;
+				}
+				case DARK:
+				{
+					effected.getStat().mergeAdd(Stat.DARK_RES, _amount);
+					break;
+				}
 			}
 		}
-		effected.getStat().mergeAdd(stat, _amount);
 	}
 }
