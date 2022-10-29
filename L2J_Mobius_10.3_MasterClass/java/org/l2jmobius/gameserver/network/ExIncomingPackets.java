@@ -102,6 +102,8 @@ import org.l2jmobius.gameserver.network.clientpackets.equipmentupgrade.RequestUp
 import org.l2jmobius.gameserver.network.clientpackets.equipmentupgradenormal.ExUpgradeSystemNormalRequest;
 import org.l2jmobius.gameserver.network.clientpackets.faction.RequestUserFactionInfo;
 import org.l2jmobius.gameserver.network.clientpackets.friend.RequestFriendDetailInfo;
+import org.l2jmobius.gameserver.network.clientpackets.herobook.RequestHeroBookCharge;
+import org.l2jmobius.gameserver.network.clientpackets.herobook.RequestHeroBookEnchant;
 import org.l2jmobius.gameserver.network.clientpackets.homunculus.ExHomunculusEvolve;
 import org.l2jmobius.gameserver.network.clientpackets.homunculus.ExRequestHomunculusProbabilityList;
 import org.l2jmobius.gameserver.network.clientpackets.homunculus.RequestExActivateHomunculus;
@@ -796,8 +798,8 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	EX_WRANKING_FESTIVAL_MY_RECEIVED_BONUS(0x250, null, ConnectionState.IN_GAME),
 	EX_WRANKING_FESTIVAL_REWARD(0x251, null, ConnectionState.IN_GAME),
 	EX_HENNA_UNEQUIP_INFO(0x252, RequestNewHennaUnequipInfo::new, ConnectionState.IN_GAME),
-	EX_HERO_BOOK_CHARGE(0x253, null, ConnectionState.IN_GAME),
-	EX_HERO_BOOK_ENCHANT(0x254, null, ConnectionState.IN_GAME),
+	EX_HERO_BOOK_CHARGE(0x253, RequestHeroBookCharge::new, ConnectionState.IN_GAME),
+	EX_HERO_BOOK_ENCHANT(0x254, RequestHeroBookEnchant::new, ConnectionState.IN_GAME),
 	EX_TELEPORT_UI(0x255, null, ConnectionState.IN_GAME),
 	EX_GOODS_GIFT_LIST_INFO(0x256, null, ConnectionState.IN_GAME),
 	EX_GOODS_GIFT_ACCEPT(0x257, null, ConnectionState.IN_GAME),

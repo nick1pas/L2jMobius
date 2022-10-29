@@ -118,6 +118,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ability.ExAcquireAPSkillLi
 import org.l2jmobius.gameserver.network.serverpackets.attendance.ExVipAttendanceItemList;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionInfo;
 import org.l2jmobius.gameserver.network.serverpackets.friend.L2FriendList;
+import org.l2jmobius.gameserver.network.serverpackets.herobook.ExHeroBookInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusReady;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusBirthInfo;
@@ -711,6 +712,9 @@ public class EnterWorld implements IClientIncomingPacket
 		
 		// World Trade.
 		WorldExchangeManager.getInstance().checkPlayerSellAlarm(player);
+		
+		// Tome of Hero.
+		player.sendPacket(new ExHeroBookInfo(player.getHeroBookProgress()));
 		
 		if (Config.ENABLE_ATTENDANCE_REWARDS)
 		{

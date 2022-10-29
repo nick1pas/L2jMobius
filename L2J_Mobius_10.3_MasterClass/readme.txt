@@ -132,7 +132,7 @@ Master Class Chapter 2: https://eu.4game.com/patchnotes/lineage2/374/
 -New enchant system
 
 Master Class Chapter 3: https://eu.4game.com/patchnotes/lineage2/417/
--Login support.
+-Tales of Hero system
 
 Events:
 -Birth of Draco

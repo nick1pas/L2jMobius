@@ -222,6 +222,8 @@ import org.l2jmobius.gameserver.model.events.listeners.FunctionEventListener;
 import org.l2jmobius.gameserver.model.events.returns.TerminateReturn;
 import org.l2jmobius.gameserver.model.events.timers.TimerHolder;
 import org.l2jmobius.gameserver.model.fishing.Fishing;
+import org.l2jmobius.gameserver.model.herobook.HeroBookInfoHolder;
+import org.l2jmobius.gameserver.model.herobook.HeroBookManager;
 import org.l2jmobius.gameserver.model.holders.AttendanceInfoHolder;
 import org.l2jmobius.gameserver.model.holders.AutoPlaySettingsHolder;
 import org.l2jmobius.gameserver.model.holders.AutoUseSettingsHolder;
@@ -924,6 +926,8 @@ public class Player extends Playable
 	
 	private final List<PlayerCollectionData> _collections = new ArrayList<>();
 	private final List<Integer> _collectionFavorites = new ArrayList<>();
+	
+	private HeroBookInfoHolder _heroBookInfo = null;
 	
 	private final List<QuestTimer> _questTimers = new ArrayList<>();
 	private final List<TimerHolder<?>> _timerHolders = new ArrayList<>();
@@ -15121,5 +15125,21 @@ public class Player extends Playable
 		{
 			LOGGER.log(Level.SEVERE, "Could not restore collection favorite list data for playerId: " + getObjectId(), e);
 		}
+	}
+	
+	public HeroBookInfoHolder getHeroBookProgress()
+	{
+		if (_heroBookInfo == null)
+		{
+			final HeroBookManager manager = new HeroBookManager();
+			_heroBookInfo = manager.getCurrentPlayerProgress(this);
+			manager.applyLevelEffects(this);
+		}
+		return _heroBookInfo;
+	}
+	
+	public void updateHeroBookProgress(HeroBookInfoHolder holder)
+	{
+		_heroBookInfo = holder;
 	}
 }
