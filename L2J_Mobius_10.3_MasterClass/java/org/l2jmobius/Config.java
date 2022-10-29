@@ -101,6 +101,7 @@ public class Config
 	private static final String GENERAL_CONFIG_FILE = "./config/General.ini";
 	private static final String GRACIASEEDS_CONFIG_FILE = "./config/GraciaSeeds.ini";
 	private static final String GRANDBOSS_CONFIG_FILE = "./config/GrandBoss.ini";
+	private static final String HUNT_PASS_CONFIG_FILE = "./config/HuntPass.ini";
 	private static final String LOGIN_CONFIG_FILE = "./config/LoginServer.ini";
 	private static final String NPC_CONFIG_FILE = "./config/NPC.ini";
 	private static final String PVP_CONFIG_FILE = "./config/PVP.ini";
@@ -905,6 +906,12 @@ public class Config
 	public static int WORLD_EXCHANGE_ITEM_SELL_PERIOD;
 	public static int WORLD_EXCHANGE_ITEM_BACK_PERIOD;
 	public static int WORLD_EXCHANGE_PAYMENT_TAKE_PERIOD;
+	
+	// HuntPass
+	public static boolean ENABLE_HUNT_PASS;
+	public static int HUNT_PASS_PERIOD;
+	public static int HUNT_PASS_PREMIUM_COST;
+	public static int HUNT_PASS_POINTS_FOR_STEP;
 	
 	// GrandBoss Settings
 	
@@ -2636,6 +2643,13 @@ public class Config
 			FAFURION_MIN_PLAYERS = grandBossConfig.getInt("FafurionMinPlayers", 49);
 			FAFURION_MAX_PLAYERS = grandBossConfig.getInt("FafurionMaxPlayers", 200);
 			FAFURION_MIN_PLAYER_LEVEL = grandBossConfig.getInt("FafurionMinPlayerLvl", 105);
+			
+			// Load HuntPass (if exists)
+			final PropertiesParser huntPassConfig = new PropertiesParser(HUNT_PASS_CONFIG_FILE);
+			ENABLE_HUNT_PASS = huntPassConfig.getBoolean("EnabledHuntPass", true);
+			HUNT_PASS_PREMIUM_COST = huntPassConfig.getInt("PremiumCost", 3600);
+			HUNT_PASS_POINTS_FOR_STEP = huntPassConfig.getInt("PointsForstep", 2400);
+			HUNT_PASS_PERIOD = huntPassConfig.getInt("DayOfMonth", 1);
 			
 			// Gracia Seeds
 			final PropertiesParser graciaSeedsConfig = new PropertiesParser(GRACIASEEDS_CONFIG_FILE);

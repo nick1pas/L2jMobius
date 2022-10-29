@@ -143,6 +143,7 @@ import org.l2jmobius.gameserver.model.ClientSettings;
 import org.l2jmobius.gameserver.model.CommandChannel;
 import org.l2jmobius.gameserver.model.ContactList;
 import org.l2jmobius.gameserver.model.Duel;
+import org.l2jmobius.gameserver.model.HuntPass;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.Macro;
 import org.l2jmobius.gameserver.model.MacroList;
@@ -929,6 +930,8 @@ public class Player extends Playable
 	
 	private HeroBookInfoHolder _heroBookInfo = null;
 	
+	private final HuntPass _huntPass;
+	
 	private final List<QuestTimer> _questTimers = new ArrayList<>();
 	private final List<TimerHolder<?>> _timerHolders = new ArrayList<>();
 	
@@ -1220,6 +1223,8 @@ public class Player extends Playable
 		app.setOwner(this);
 		_appearance = app;
 		
+		_huntPass = Config.ENABLE_HUNT_PASS ? new HuntPass(this) : null;
+		
 		// Create an AI
 		getAI();
 		
@@ -1303,6 +1308,11 @@ public class Player extends Playable
 	public void resetOriginalClass()
 	{
 		getVariables().remove(ORIGINAL_CLASS_VAR);
+	}
+	
+	public HuntPass getHuntPass()
+	{
+		return _huntPass;
 	}
 	
 	/**
@@ -7350,6 +7360,11 @@ public class Player extends Playable
 		getInventory().updateDatabase();
 		getWarehouse().updateDatabase();
 		getFreight().updateDatabase();
+		
+		if (_huntPass != null)
+		{
+			_huntPass.store();
+		}
 	}
 	
 	@Override
@@ -12145,6 +12160,11 @@ public class Player extends Playable
 	
 	public void updateVitalityPoints(int points, boolean useRates, boolean quiet)
 	{
+		if ((_huntPass != null) && _huntPass.toggleSayha())
+		{
+			return;
+		}
+		
 		getStat().updateVitalityPoints(points, useRates, quiet);
 	}
 	

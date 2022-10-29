@@ -47,6 +47,7 @@ import org.l2jmobius.gameserver.instancemanager.events.EventDropManager;
 import org.l2jmobius.gameserver.model.AggroInfo;
 import org.l2jmobius.gameserver.model.CommandChannel;
 import org.l2jmobius.gameserver.model.DamageDoneInfo;
+import org.l2jmobius.gameserver.model.HuntPass;
 import org.l2jmobius.gameserver.model.Party;
 import org.l2jmobius.gameserver.model.Seed;
 import org.l2jmobius.gameserver.model.WorldObject;
@@ -590,6 +591,11 @@ public class Attackable extends Npc
 										{
 											attacker.removeSymbolSealSkills();
 										}
+									}
+									final HuntPass huntPass = attacker.getHuntPass();
+									if (huntPass != null)
+									{
+										attacker.getHuntPass().addPassPoint(exp);
 									}
 								}
 							}

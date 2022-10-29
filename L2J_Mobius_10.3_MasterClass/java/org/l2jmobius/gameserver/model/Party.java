@@ -882,6 +882,12 @@ public class Party extends AbstractPlayerGroup
 							member.removeSymbolSealSkills();
 						}
 					}
+					
+					final HuntPass huntpass = member.getHuntPass();
+					if (huntpass != null)
+					{
+						huntpass.addPassPoint(exp);
+					}
 				}
 			}
 			else

@@ -15847,6 +15847,27 @@ public class SystemMessageId
 	@ClientString(id = 6208, message = "The Festival has ended. Please participate in the next round.")
 	public static SystemMessageId THE_FESTIVAL_HAS_ENDED_PLEASE_PARTICIPATE_IN_THE_NEXT_ROUND;
 	
+	@ClientString(id = 6212, message = "Sayha's Grace sustention effect of the Season Pass is activated. Available Sayha's Grace sustention time is running.")
+	public static SystemMessageId SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_IS_ACTIVATED_AVAILABLE_SAYHA_S_GRACE_SUSTENTION_TIME_IS_RUNNING;
+	
+	@ClientString(id = 6213, message = "Unable to activate. You can use Sayha's Grace sustention effect of the Season Pass only if you have at least 35,000 Sayha's Grace points.")
+	public static SystemMessageId UNABLE_TO_ACTIVATE_YOU_CAN_USE_SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_ONLY_IF_YOU_HAVE_AT_LEAST_35_000_SAYHA_S_GRACE_POINTS;
+	
+	@ClientString(id = 6214, message = "Sayha's Grace sustention effect of the Season Pass has been deactivated. The sustention time you have does not decrease.")
+	public static SystemMessageId SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_HAS_BEEN_DEACTIVATED_THE_SUSTENTION_TIME_YOU_HAVE_DOES_NOT_DECREASE;
+	
+	@ClientString(id = 6215, message = "Sayha's Grace sustention time has expired. The sustention effect of the Season Pass is deactivated.")
+	public static SystemMessageId SAYHA_S_GRACE_SUSTENTION_TIME_HAS_EXPIRED_THE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_IS_DEACTIVATED;
+	
+	@ClientString(id = 6216, message = "Your inventory's weight/limit has been exceeded so you can't receive the reward. Please free up some space and try again.")
+	public static SystemMessageId YOUR_INVENTORY_S_WEIGHT_LIMIT_HAS_BEEN_EXCEEDED_SO_YOU_CAN_T_RECEIVE_THE_REWARD_PLEASE_FREE_UP_SOME_SPACE_AND_TRY_AGAIN;
+	
+	@ClientString(id = 6219, message = "You received $s1 Sayha's Grace sustention points.")
+	public static SystemMessageId YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS;
+	
+	@ClientString(id = 6220, message = "Currently unavailable for purchase. You can buy the Season Pass' additional rewards only until 6:30 a.m. of the season's last day.")
+	public static SystemMessageId CURRENTLY_UNAVAILABLE_FOR_PURCHASE_YOU_CAN_BUY_THE_SEASON_PASS_ADDITIONAL_REWARDS_ONLY_UNTIL_6_30_A_M_OF_THE_SEASON_S_LAST_DAY;
+	
 	@ClientString(id = 6221, message = "Creation is possible if there is 1 main material. Please, check your inventory and try again.")
 	public static SystemMessageId CREATION_IS_POSSIBLE_IF_THERE_IS_1_MAIN_MATERIAL_PLEASE_CHECK_YOUR_INVENTORY_AND_TRY_AGAIN;
 	

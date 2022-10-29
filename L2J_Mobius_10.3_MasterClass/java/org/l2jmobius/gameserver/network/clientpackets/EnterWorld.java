@@ -122,6 +122,7 @@ import org.l2jmobius.gameserver.network.serverpackets.herobook.ExHeroBookInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusReady;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusBirthInfo;
+import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInfo;
 import org.l2jmobius.gameserver.network.serverpackets.limitshop.ExBloodyCoinCount;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadInfo;
 import org.l2jmobius.gameserver.network.serverpackets.settings.ExItemAnnounceSetting;
@@ -687,6 +688,11 @@ public class EnterWorld implements IClientIncomingPacket
 		if (!player.getEffectList().getCurrentAbnormalVisualEffects().isEmpty())
 		{
 			player.updateAbnormalVisualEffects();
+		}
+		
+		if (Config.ENABLE_HUNT_PASS)
+		{
+			player.sendPacket(new HuntPassSimpleInfo(player));
 		}
 		
 		for (int category = 1; category <= 7; category++)
