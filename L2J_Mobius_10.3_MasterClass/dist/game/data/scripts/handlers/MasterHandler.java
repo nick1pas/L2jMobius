@@ -200,6 +200,7 @@ import handlers.itemhandlers.ExtractableItems;
 import handlers.itemhandlers.FatedSupportBox;
 import handlers.itemhandlers.FishShots;
 import handlers.itemhandlers.Harvester;
+import handlers.itemhandlers.HeroBook;
 import handlers.itemhandlers.ItemSkills;
 import handlers.itemhandlers.ItemSkillsTemplate;
 import handlers.itemhandlers.Maps;
@@ -550,6 +551,7 @@ public class MasterHandler
 			FatedSupportBox.class,
 			FishShots.class,
 			Harvester.class,
+			HeroBook.class,
 			ItemSkills.class,
 			ItemSkillsTemplate.class,
 			Maps.class,
