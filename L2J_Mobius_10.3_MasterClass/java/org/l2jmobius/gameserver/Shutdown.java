@@ -35,6 +35,7 @@ import org.l2jmobius.gameserver.instancemanager.ItemAuctionManager;
 import org.l2jmobius.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2jmobius.gameserver.instancemanager.PrecautionaryRestartManager;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
+import org.l2jmobius.gameserver.instancemanager.WorldExchangeManager;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
@@ -479,6 +480,13 @@ public class Shutdown extends Thread
 		// Save all global variables data
 		GlobalVariablesManager.getInstance().storeMe();
 		LOGGER.info("Global Variables Manager: Variables saved(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
+		
+		// Save World Exchange.
+		if (Config.ENABLE_WORLD_EXCHANGE)
+		{
+			WorldExchangeManager.getInstance().storeMe();
+			LOGGER.info("World Exchange Manager: Data saved(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
+		}
 		
 		// Save items on ground before closing
 		if (Config.SAVE_DROPPED_ITEM)
