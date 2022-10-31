@@ -189,8 +189,9 @@ public class Lottery
 				_enddate = finishtime.getTimeInMillis();
 			}
 			
-			ThreadPool.schedule(new stopSellingTickets(), _enddate - System.currentTimeMillis() - (10 * MINUTE));
-			ThreadPool.schedule(new finishLottery(), _enddate - System.currentTimeMillis());
+			final long endDate = _enddate - System.currentTimeMillis();
+			ThreadPool.schedule(new stopSellingTickets(), Math.max(endDate - (10 * MINUTE), 0));
+			ThreadPool.schedule(new finishLottery(), Math.max(endDate, 0));
 			
 			try (Connection con = DatabaseFactory.getConnection())
 			{
