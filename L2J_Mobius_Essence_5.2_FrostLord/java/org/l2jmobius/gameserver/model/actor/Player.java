@@ -15344,7 +15344,11 @@ public class Player extends Playable
 			{
 				while (rset.next())
 				{
-					_collections.add(new PlayerCollectionData(rset.getInt("collectionId"), rset.getInt("itemId"), rset.getInt("index")));
+					final int collectionId = rset.getInt("collectionId");
+					if (CollectionData.getInstance().getCollection(collectionId) != null)
+					{
+						_collections.add(new PlayerCollectionData(collectionId, rset.getInt("itemId"), rset.getInt("index")));
+					}
 				}
 			}
 		}
