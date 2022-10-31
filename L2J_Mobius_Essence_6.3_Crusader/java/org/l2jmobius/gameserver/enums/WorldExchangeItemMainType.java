@@ -21,11 +21,10 @@ package org.l2jmobius.gameserver.enums;
  */
 public enum WorldExchangeItemMainType
 {
+	ADENA(24),
 	EQUIPMENT(0),
-	ARTIFACT(1),
 	ENCHANT(8),
 	CONSUMABLE(20),
-	ETC(4),
 	COLLECTION(5);
 	
 	private final int _id;

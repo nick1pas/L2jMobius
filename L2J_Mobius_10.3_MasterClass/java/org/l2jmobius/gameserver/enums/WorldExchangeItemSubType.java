@@ -45,7 +45,8 @@ public enum WorldExchangeItemSubType
 	TICKET(21),
 	CRAFT(22),
 	INC_ENCHANT_PROP(23),
-	ETC_SUB_TYPE(24);
+	ADENA(24),
+	ETC_SUB_TYPE(25);
 	
 	private final int _id;
 	

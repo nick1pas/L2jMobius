@@ -27,7 +27,11 @@ public enum WorldExchangeSortType
 	// ENCHANT_ASCE(2),
 	// ENCHANT_DESC(3),
 	PRICE_ASCE(4),
-	PRICE_DESC(5);
+	PRICE_DESC(5),
+	AMOUNT_ASCE(6),
+	AMOUNT_DESC(7),
+	PRICE_PER_PIECE_ASCE(8),
+	PRICE_PER_PIECE_DESC(9);
 	
 	private final int _id;
 	
@@ -50,6 +54,6 @@ public enum WorldExchangeSortType
 				return type;
 			}
 		}
-		return NONE;
+		return null;
 	}
 }
