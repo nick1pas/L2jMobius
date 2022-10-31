@@ -21,6 +21,7 @@ import java.util.Calendar;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
@@ -57,7 +58,7 @@ public class RequestHuntPassBuyPremium implements IClientIncomingPacket
 			return;
 		}
 		
-		if (!player.destroyItemByItemId("L-Coin", 91663, Config.HUNT_PASS_PREMIUM_COST, player, true))
+		if (!player.destroyItemByItemId("RequestHuntPassBuyPremium", Inventory.LCOIN_ID, Config.HUNT_PASS_PREMIUM_COST, player, true))
 		{
 			player.sendPacket(SystemMessageId.NOT_ENOUGH_MONEY_TO_USE_THE_FUNCTION);
 			return;
