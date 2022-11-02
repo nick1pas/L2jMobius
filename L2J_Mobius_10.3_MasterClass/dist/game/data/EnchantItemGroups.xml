@@ -110,6 +110,15 @@
 		<current enchant="20-127" chance="0" />
 	</enchantRateGroup>
 
+	<enchantRateGroup name="HEAVEN_CLOAK_GROUP">
+		<current enchant="0" chance="60" />
+		<current enchant="1" chance="50" />
+		<current enchant="2" chance="40" />
+		<current enchant="3" chance="30" />
+		<current enchant="4" chance="20" />
+		<current enchant="5-127" chance="0" />
+	</enchantRateGroup>
+
 	<!-- Power Shirts Group -->
 	<enchantRateGroup name="POWER_SHIRT_GROUP">
 		<current enchant="0-2" chance="100" />
@@ -539,6 +548,9 @@
 			<item itemId="28590" /> <!-- Legendary Aden Cloak -->
 			<item itemId="28591" /> <!-- Legendary Elmore Cloak -->
 			<item itemId="28592" /> <!-- Legendary Ferios Cloak -->
+		</enchantRate>
+		<enchantRate group="HEAVEN_CLOAK_GROUP">
+			<item itemId="82338" /> <!-- Cloak of Dragon Light -->
 		</enchantRate>
 		<!-- Special Shirts (Pa'agrio, Sayha, Eva, Maphr, Elemental, Reflect) -->
 		<enchantRate group="SPECIAL_SHIRT_GROUP">

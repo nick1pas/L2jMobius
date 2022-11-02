@@ -21,6 +21,34 @@
 			<skill id="39796" level="1" /> <!-- Beora's Ancient Energy -->
 		</skills>
 	</item>
+	<item id="82338" name="Dragon Light Cloak" type="Armor">
+		<set name="icon" val="icon.nobless_cloak_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
+		<cond msgId="2453">
+			<player cloakStatus="true" />
+		</cond>
+		<stats>
+			<stat type="pDef">200</stat>
+			<stat type="mDef">160</stat>
+		</stats>
+		<skills>
+			<skill id="36364" level="1" />
+			<skill id="36365" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Dragon Light Cloak Enchant Effect -->
+			<skill id="36365" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Dragon Light Cloak Enchant Effect -->
+			<skill id="36365" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Dragon Light Cloak Enchant Effect -->
+			<skill id="36365" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Dragon Light Cloak Enchant Effect -->
+			<skill id="36365" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Dragon Light Cloak Enchant Effect -->
+			<skill id="36367" level="1" type="ON_EQUIP" />
+		</skills>
+	</item>
 	<item id="82343" name="Artifact Book Augmenting Stone" type="EtcItem">
 		<set name="icon" val="icon.icon" />
 		<set name="default_action" val="NONE" />

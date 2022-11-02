@@ -1575,4 +1575,257 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="36364" toLevel="8" name="Cloak the Dragon Light - Base Effect">
+		<icon>icon.nobless_cloak_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>85</magicLevel>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="HpLimit">
+				<amount>20000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MaxHp">
+				<amount>20000</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>STR</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>INT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>CON</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>WIT</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>MEN</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>CHA</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>5</amount>
+				<stat>LUC</stat>
+			</effect>
+			<effect name="DamageShield">
+				<amount>10</amount>
+			</effect>
+			<effect name="RealDamageResist">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VitalityExpRate">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-15</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-15</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+			<effect name="TriggerSkillByDamage">
+				<chance>10</chance>
+				<skillId>36366</skillId> <!-- Trigger Cloak of Dragon Light -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="36365" toLevel="5" name="Cloak the Dragon Light - Enchant Effect">
+		<icon>icon.nobless_cloak_i00</icon>
+		<operateType>P</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>85</magicLevel>
+		<isMagic>3</isMagic>
+		<effects>
+			<effect name="DefenceTrait">
+				<ZONE>5</ZONE>
+			</effect>
+			<effect name="RealDamageResist">
+				<amount>
+					<value level="1">0</value>
+					<value fromLevel="2" toLevel="5">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceTrait">
+				<SWORD>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</SWORD>
+				<BLUNT>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</BLUNT>
+				<DAGGER>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</DAGGER>
+				<POLE>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</POLE>
+				<DUALFIST>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</DUALFIST>
+				<BOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</BOW>
+				<DUAL>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</DUAL>
+				<CROSSBOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</CROSSBOW>
+				<DUALDAGGER>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</DUALDAGGER>
+				<TWOHANDCROSSBOW>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</TWOHANDCROSSBOW>
+				<DUALBLUNT>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">5</value>
+					<value level="5">5</value>
+				</DUALBLUNT>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="3">0</value>
+					<value fromLevel="4" toLevel="5">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="3">0</value>
+					<value fromLevel="4" toLevel="5">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>
+					<value fromLevel="1" toLevel="3">0</value>
+					<value fromLevel="4" toLevel="5">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="WeaponBonusPAtk">
+				<amount>
+					<value fromLevel="1" toLevel="4">0</value>
+					<value level="5">500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="WeaponBonusMAtk">
+				<amount>
+					<value fromLevel="1" toLevel="4">0</value>
+					<value level="5">500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="36366" toLevel="1" name="Trigger Cloak of Dragon Light">
+		<!-- For $s1, P./ M. Atk. +$s2. -->
+		<icon>icon.nobless_cloak_i00</icon>
+		<operateType>A2</operateType>
+		<isMagic>4</isMagic>
+		<hitTime>300</hitTime>
+		<effectPoint>687</effectPoint>
+		<basicProperty>NONE</basicProperty>
+		<abnormalVisualEffect>HEAVEN_CLOTH_TRIGGER_AVE</abnormalVisualEffect>
+		<magicCriticalRate>5</magicCriticalRate>
+		<magicLevel>110</magicLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>10</abnormalTime>
+		<coolTime>300</coolTime>
+		<reuseDelay>30</reuseDelay>
+		<affectRange>1000</affectRange>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+	</skill>
+	<skill id="36367" toLevel="1" name="Cloak the Dragon Light">
+		<icon>icon.nobless_cloak_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalType>HEAVEN_CLOTH</abnormalType>
+		<abnormalVisualEffect>HEAVEN_CLOTH_EQUIP_AVE</abnormalVisualEffect>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>110</magicLevel>
+		<abnormalLevel>99</abnormalLevel>
+		<abnormalTime>2</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
+		<blockActionUseSkill>true</blockActionUseSkill>
+		<isMagic>4</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+	</skill>
 </list>
