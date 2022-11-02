@@ -342,6 +342,17 @@
 		<current enchant="5-9" chance="10" />
 		<current enchant="10-127" chance="0" />
 	</enchantRateGroup>
+	
+	<!-- Talisman enchant group -->
+	<enchantRateGroup name="TALISMAN_GROUP">
+		<current enchant="0" chance="70" />
+		<current enchant="1" chance="65" />
+		<current enchant="2" chance="60" />
+		<current enchant="3" chance="55" />
+		<current enchant="4" chance="50" />
+		<current enchant="5-9" chance="40" />
+		<current enchant="10-127" chance="0" />
+	</enchantRateGroup>
 
 	<!-- Default scrolls enchanting route line. -->
 	<enchantScrollGroup id="0">
@@ -601,6 +612,11 @@
 		<enchantRate group="DRAGON_SHIRT_GROUP">
 			<item itemId="48491" /> <!-- Dragon Skin Shirt -->
 		</enchantRate>
+		<!-- Talisman -->
+		<enchantRate group="TALISMAN_GROUP">
+			<item itemId="80957" /> <!-- Heavenly Talisman -->
+			<item itemId="80959" /> <!-- Epic Talisman -->
+		</enchantRate>	
 	</enchantScrollGroup>
 	<enchantScrollGroup id="3">
 		<!-- Dragon Leather Shirt -->
