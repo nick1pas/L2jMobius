@@ -112,18 +112,6 @@ public class World
 	}
 	
 	/**
-	 * Removes the objects.
-	 * @param list the list
-	 */
-	public void removeObjects(List<WorldObject> list)
-	{
-		for (int i = 0; i < list.size(); i++)
-		{
-			_allObjects.remove(list.get(i).getObjectId());
-		}
-	}
-	
-	/**
 	 * Return the WorldObject object that belongs to an ID or null if no object found.<br>
 	 * <br>
 	 * <b><u>Example of use</u>:</b><br>

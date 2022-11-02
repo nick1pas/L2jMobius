@@ -20,9 +20,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
@@ -557,19 +555,20 @@ public abstract class ItemContainer
 	 */
 	public void deleteMe()
 	{
-		try
+		if ((this instanceof PlayerInventory) || (this instanceof PlayerWarehouse) || (getOwner() != null))
 		{
-			updateDatabase();
-		}
-		catch (Throwable t)
-		{
-			LOGGER.warning("deletedMe() " + t);
+			for (Item item : _items)
+			{
+				item.updateDatabase();
+			}
 		}
 		
-		final List<WorldObject> items = new ArrayList<>(_items);
+		for (Item item : _items)
+		{
+			World.getInstance().removeObject(item);
+		}
+		
 		_items.clear();
-		
-		World.getInstance().removeObjects(items);
 	}
 	
 	/**
@@ -577,7 +576,7 @@ public abstract class ItemContainer
 	 */
 	public void updateDatabase()
 	{
-		if ((getOwner() != null) && (_items != null))
+		if (getOwner() != null)
 		{
 			for (Item item : _items)
 			{
