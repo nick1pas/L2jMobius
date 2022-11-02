@@ -19,14 +19,13 @@ package ai.others.MonumentOfHeroes;
 import java.util.List;
 
 import org.l2jmobius.Config;
+import org.l2jmobius.gameserver.data.xml.ClassListData;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
 import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ExHeroList;
-import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
 
 import ai.AbstractNpcAI;
@@ -263,7 +262,7 @@ public class MonumentOfHeroes extends AbstractNpcAI
 						if (player.getLevel() >= 85)
 						{
 							Hero.getInstance().claimHero(player);
-							showOnScreenMsg(player, (NpcStringId.getNpcStringId(13357 + player.getClassId().getId())), ExShowScreenMessage.TOP_CENTER, 5000);
+							showOnScreenMsg(player, "Congratulations, " + player.getName() + "! You have become the Hero of " + ClassListData.getInstance().getClass(player.getClassId()).getClassName(), 10000);
 							player.broadcastPacket(new PlaySound(1, "ns01_f", 0, 0, 0, 0, 0));
 							htmltext = "MonumentOfHeroes-heroCertificationsDone.html";
 						}
