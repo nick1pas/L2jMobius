@@ -878,7 +878,15 @@
 		<production id="82270" chance="100" count="2" /> <!-- Tersi's Soul Crystal Lv. 6 -->
 	</product>
 	<product id="1297" category="4">
-		<ingredient id="81835" count="4" /> <!-- High Priest's Holy Water -->
-		<production id="82305" chance="100" /> <!-- Beora's Ancient Energy -->
+		<ingredient id="81835" count="6" /> <!-- High Priest's Holy Water -->
+		<production id="82305" chance="100" count="2" accountDailyLimit="50" /> <!-- Beora's Ancient Energy -->
+	</product>
+	<product id="1341" category="4">
+		<ingredient id="81217" count="264" /> <!-- Oriharukon Ore -->
+		<ingredient id="81218" count="264" /> <!-- Dragon Scale -->
+		<ingredient id="81219" count="264" /> <!-- Angel's Feather -->
+		<ingredient id="81215" count="120" /> <!-- Destructive Energy -->
+		<ingredient id="35563" count="264" /> <!-- Giant's Energy -->
+		<production id="82344" chance="100" count="1" /> <!-- Сказание Измерений -->
 	</product>
 </list>

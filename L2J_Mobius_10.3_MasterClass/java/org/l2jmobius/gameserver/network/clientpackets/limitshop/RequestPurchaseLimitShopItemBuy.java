@@ -36,6 +36,7 @@ import org.l2jmobius.gameserver.model.variables.AccountVariables;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ExPCCafePointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.limitshop.ExPurchaseLimitShopItemResult;
 import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRBuyProduct;
 
@@ -166,6 +167,15 @@ public class RequestPurchaseLimitShopItemBuy implements IClientIncomingPacket
 					return;
 				}
 			}
+			else if (_product.getIngredientIds()[i] == SpecialItemType.PC_CAFE_POINTS.getClientId())
+			{
+				if (player.getPcCafePoints() < (_product.getIngredientQuantities()[i] * _amount))
+				{
+					player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
+					player.removeRequest(PrimeShopRequest.class);
+					return;
+				}
+			}
 			else if (player.getInventory().getInventoryItemCount(_product.getIngredientIds()[i], _product.getIngredientEnchants()[i] == 0 ? -1 : _product.getIngredientEnchants()[i], true) < (_product.getIngredientQuantities()[i] * _amount))
 			{
 				player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
@@ -188,6 +198,12 @@ public class RequestPurchaseLimitShopItemBuy implements IClientIncomingPacket
 			else if (_product.getIngredientIds()[i] == SpecialItemType.HONOR_COINS.getClientId())
 			{
 				player.setHonorCoins(player.getHonorCoins() - (_product.getIngredientQuantities()[i] * _amount));
+			}
+			else if (_product.getIngredientIds()[i] == SpecialItemType.PC_CAFE_POINTS.getClientId())
+			{
+				final int newPoints = (int) (player.getPcCafePoints() - (_product.getIngredientQuantities()[i] * _amount));
+				player.setPcCafePoints(newPoints);
+				player.sendPacket(new ExPCCafePointInfo(player.getPcCafePoints(), (int) (-(_product.getIngredientQuantities()[i] * _amount)), 1));
 			}
 			else
 			{
