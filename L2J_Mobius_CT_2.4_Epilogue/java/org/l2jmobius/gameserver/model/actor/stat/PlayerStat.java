@@ -182,7 +182,7 @@ public class PlayerStat extends PlayableStat
 			sm = new SystemMessage(SystemMessageId.YOU_HAVE_EARNED_S1_EXPERIENCE);
 			sm.addLong(finalExp);
 		}
-		else
+		else if ((finalExp > 0) || (finalSp > 0))
 		{
 			sm = new SystemMessage(SystemMessageId.YOU_HAVE_EARNED_S1_EXPERIENCE_AND_S2_SP);
 			sm.addLong((long) addToExp);
