@@ -76,9 +76,9 @@ public class PetData
 		{
 			_minLevel = level;
 		}
-		if (_maxLevel < (level - 1))
+		if (_maxLevel < level)
 		{
-			_maxLevel = level - 1;
+			_maxLevel = level;
 		}
 		_levelStats.put(level, data);
 	}
@@ -185,7 +185,6 @@ public class PetData
 	}
 	
 	/**
-	 * TODO: Simplify this.
 	 * @param skillId the skill Id.
 	 * @param petLvl the pet level.
 	 * @return the level of the skill for the given skill Id and pet level.

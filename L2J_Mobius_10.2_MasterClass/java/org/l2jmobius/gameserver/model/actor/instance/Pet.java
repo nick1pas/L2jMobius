@@ -854,7 +854,7 @@ public class Pet extends Summon
 					return new Pet(template, owner, control);
 				}
 				
-				pet = new Pet(template, owner, control, rset.getByte("level"));
+				pet = new Pet(template, owner, control, rset.getInt("level"));
 				pet._respawned = true;
 				pet.setName(rset.getString("name"));
 				

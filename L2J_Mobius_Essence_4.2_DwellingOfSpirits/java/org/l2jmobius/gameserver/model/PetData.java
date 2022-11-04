@@ -100,9 +100,9 @@ public class PetData
 		{
 			_minLevel = level;
 		}
-		if (_maxLevel < (level - 1))
+		if (_maxLevel < level)
 		{
-			_maxLevel = level - 1;
+			_maxLevel = level;
 		}
 		_levelStats.put(level, data);
 	}
