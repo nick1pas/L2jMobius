@@ -23,7 +23,6 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.ISkillCondition;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * @author Sdw
@@ -68,9 +67,6 @@ public class CanSummonMultiSkillCondition implements ISkillCondition
 		}
 		else if ((player.getSummonPoints() + _summonPoints) > player.getMaxSummonPoints())
 		{
-			final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_CANNOT_USE_THE_S1_SKILL_DUE_TO_INSUFFICIENT_SUMMON_POINTS);
-			sm.addSkillName(skill);
-			player.sendPacket(sm);
 			canSummon = false;
 		}
 		
