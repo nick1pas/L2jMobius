@@ -23,6 +23,7 @@ import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
+import org.l2jmobius.gameserver.model.item.type.CrystalType;
 import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 
@@ -47,8 +48,8 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 		{
 			return false;
 		}
-		final EnchantItemRequest request = _player.getRequest(EnchantItemRequest.class);
 		
+		final EnchantItemRequest request = _player.getRequest(EnchantItemRequest.class);
 		if ((!_isMulti && (request.getEnchantingItem() == null)) || request.isProcessing() || (request.getEnchantingScroll() == null))
 		{
 			return false;
@@ -60,24 +61,35 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 			count = request.getMultiEnchantingItemsCount();
 		}
 		
-		final double supportRate = getSupportRate(request);
-		final double passiveRate = getPassiveRate();
-		
 		OutgoingPackets.EX_CHANGED_ENCHANT_TARGET_ITEM_PROB_LIST.writeId(packet);
 		packet.writeD(count);
 		for (int i = 1; i <= count; i++)
 		{
 			// 100,00 % = 10000, because last 2 numbers going after float comma.
 			double baseRate;
+			double passiveRate;
 			if (!_isMulti || (request.getMultiEnchantingItemsBySlot(i) != 0))
 			{
 				baseRate = getBaseRate(request, i);
+				passiveRate = getPassiveRate(request, i);
 			}
 			else
 			{
 				baseRate = 0;
+				passiveRate = 0;
 			}
-			double totalRate = baseRate + supportRate + passiveRate;
+			double supportBaseRate = 0;
+			double passiveBaseRate = 0;
+			final double supportRate = getSupportRate(request);
+			if (supportRate != 0)
+			{
+				supportBaseRate = (baseRate * supportRate) / 10000;
+			}
+			if (passiveRate != 0)
+			{
+				passiveBaseRate = (baseRate * passiveRate) / 10000;
+			}
+			double totalRate = baseRate + supportBaseRate + passiveBaseRate;
 			if (totalRate >= 10000)
 			{
 				totalRate = 10000;
@@ -92,8 +104,8 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 			}
 			packet.writeD((int) totalRate); // Total success.
 			packet.writeD((int) baseRate); // Base success.
-			packet.writeD((int) supportRate); // Support success.
-			packet.writeD((int) passiveRate); // Passive success (items, skills).
+			packet.writeD((int) supportBaseRate); // Support success.
+			packet.writeD((int) passiveBaseRate); // Passive success (items, skills).
 		}
 		return true;
 	}
@@ -115,13 +127,37 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 		return (int) supportRate;
 	}
 	
-	private int getPassiveRate()
+	private int getPassiveRate(EnchantItemRequest request, int iteration)
 	{
 		double passiveRate = 0;
 		if (_player.getStat().getValue(ENCHANT_RATE) != 0)
 		{
-			passiveRate = _player.getStat().getValue(ENCHANT_RATE);
-			passiveRate = passiveRate * 100;
+			if (!_isMulti)
+			{
+				final int crystalLevel = request.getEnchantingItem().getTemplate().getCrystalType().getLevel();
+				if ((crystalLevel == CrystalType.NONE.getLevel()) || (crystalLevel == CrystalType.EVENT.getLevel()))
+				{
+					passiveRate = 0;
+				}
+				else
+				{
+					passiveRate = _player.getStat().getValue(ENCHANT_RATE);
+					passiveRate = passiveRate * 100;
+				}
+			}
+			else
+			{
+				final int crystalLevel = _player.getInventory().getItemByObjectId(request.getMultiEnchantingItemsBySlot(iteration)).getTemplate().getCrystalType().getLevel();
+				if ((crystalLevel == CrystalType.NONE.getLevel()) || (crystalLevel == CrystalType.EVENT.getLevel()))
+				{
+					passiveRate = 0;
+				}
+				else
+				{
+					passiveRate = _player.getStat().getValue(ENCHANT_RATE);
+					passiveRate = passiveRate * 100;
+				}
+			}
 		}
 		return (int) passiveRate;
 	}
