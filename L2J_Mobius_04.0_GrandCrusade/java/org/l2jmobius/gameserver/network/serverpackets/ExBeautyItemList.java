@@ -22,17 +22,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.BeautyShopData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.beautyshop.BeautyData;
 import org.l2jmobius.gameserver.model.beautyshop.BeautyItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExBeautyItemList implements IClientOutgoingPacket
+public class ExBeautyItemList extends ServerPacket
 {
 	private static final int HAIR_TYPE = 0;
 	private static final int FACE_TYPE = 1;
@@ -58,45 +57,44 @@ public class ExBeautyItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BEAUTY_ITEM_LIST.writeId(packet);
-		packet.writeD(HAIR_TYPE);
-		packet.writeD(_beautyData.getHairList().size());
+		ServerPackets.EX_BEAUTY_ITEM_LIST.writeId(this);
+		writeInt(HAIR_TYPE);
+		writeInt(_beautyData.getHairList().size());
 		for (BeautyItem hair : _beautyData.getHairList().values())
 		{
-			packet.writeD(0); // ?
-			packet.writeD(hair.getId());
-			packet.writeD(hair.getAdena());
-			packet.writeD(hair.getResetAdena());
-			packet.writeD(hair.getBeautyShopTicket());
-			packet.writeD(1); // Limit
+			writeInt(0); // ?
+			writeInt(hair.getId());
+			writeInt(hair.getAdena());
+			writeInt(hair.getResetAdena());
+			writeInt(hair.getBeautyShopTicket());
+			writeInt(1); // Limit
 		}
-		packet.writeD(FACE_TYPE);
-		packet.writeD(_beautyData.getFaceList().size());
+		writeInt(FACE_TYPE);
+		writeInt(_beautyData.getFaceList().size());
 		for (BeautyItem face : _beautyData.getFaceList().values())
 		{
-			packet.writeD(0); // ?
-			packet.writeD(face.getId());
-			packet.writeD(face.getAdena());
-			packet.writeD(face.getResetAdena());
-			packet.writeD(face.getBeautyShopTicket());
-			packet.writeD(1); // Limit
+			writeInt(0); // ?
+			writeInt(face.getId());
+			writeInt(face.getAdena());
+			writeInt(face.getResetAdena());
+			writeInt(face.getBeautyShopTicket());
+			writeInt(1); // Limit
 		}
-		packet.writeD(COLOR_TYPE);
-		packet.writeD(_colorCount);
+		writeInt(COLOR_TYPE);
+		writeInt(_colorCount);
 		for (Entry<Integer, List<BeautyItem>> entry : _colorData.entrySet())
 		{
 			for (BeautyItem color : entry.getValue())
 			{
-				packet.writeD(entry.getKey());
-				packet.writeD(color.getId());
-				packet.writeD(color.getAdena());
-				packet.writeD(color.getResetAdena());
-				packet.writeD(color.getBeautyShopTicket());
-				packet.writeD(1);
+				writeInt(entry.getKey());
+				writeInt(color.getId());
+				writeInt(color.getAdena());
+				writeInt(color.getResetAdena());
+				writeInt(color.getBeautyShopTicket());
+				writeInt(1);
 			}
 		}
-		return true;
 	}
 }

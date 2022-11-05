@@ -18,11 +18,10 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.EnchantSkillGroupsData;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExEnchantSkillInfo implements IClientOutgoingPacket
+public class ExEnchantSkillInfo extends ServerPacket
 {
 	private final Set<Integer> _routes;
 	private final int _skillId;
@@ -40,23 +39,22 @@ public class ExEnchantSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_SKILL_INFO.writeId(packet);
-		packet.writeD(_skillId);
-		packet.writeH(_skillLevel);
-		packet.writeH(_skillSubLevel);
-		packet.writeD((_skillSubLevel % 1000) == EnchantSkillGroupsData.MAX_ENCHANT_LEVEL ? 0 : 1);
-		packet.writeD(_skillSubLevel > 1000 ? 1 : 0);
-		packet.writeD(_routes.size());
+		ServerPackets.EX_ENCHANT_SKILL_INFO.writeId(this);
+		writeInt(_skillId);
+		writeShort(_skillLevel);
+		writeShort(_skillSubLevel);
+		writeInt((_skillSubLevel % 1000) != EnchantSkillGroupsData.MAX_ENCHANT_LEVEL);
+		writeInt(_skillSubLevel > 1000);
+		writeInt(_routes.size());
 		_routes.forEach(route ->
 		{
 			final int routeId = route / 1000;
 			final int currentRouteId = _skillSubLevel / 1000;
 			final int subLevel = _currentSubLevel > 0 ? (route + (_currentSubLevel % 1000)) - 1 : route;
-			packet.writeH(_skillLevel);
-			packet.writeH(currentRouteId != routeId ? subLevel : Math.min(subLevel + 1, route + (EnchantSkillGroupsData.MAX_ENCHANT_LEVEL - 1)));
+			writeShort(_skillLevel);
+			writeShort(currentRouteId != routeId ? subLevel : Math.min(subLevel + 1, route + (EnchantSkillGroupsData.MAX_ENCHANT_LEVEL - 1)));
 		});
-		return true;
 	}
 }

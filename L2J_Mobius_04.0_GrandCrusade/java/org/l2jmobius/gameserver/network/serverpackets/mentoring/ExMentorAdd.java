@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.mentoring;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class ExMentorAdd implements IClientOutgoingPacket
+public class ExMentorAdd extends ServerPacket
 {
 	final Player _mentor;
 	
@@ -34,12 +33,11 @@ public class ExMentorAdd implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MENTOR_ADD.writeId(packet);
-		packet.writeS(_mentor.getName());
-		packet.writeD(_mentor.getActiveClass());
-		packet.writeD(_mentor.getLevel());
-		return true;
+		ServerPackets.EX_MENTOR_ADD.writeId(this);
+		writeString(_mentor.getName());
+		writeInt(_mentor.getActiveClass());
+		writeInt(_mentor.getLevel());
 	}
 }

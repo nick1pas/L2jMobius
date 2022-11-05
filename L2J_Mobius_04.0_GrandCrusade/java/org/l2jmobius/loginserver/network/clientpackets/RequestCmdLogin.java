@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.loginserver.network.clientpackets;
 
-import java.net.InetAddress;
 import java.security.GeneralSecurityException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -24,8 +23,7 @@ import java.util.logging.Logger;
 import javax.crypto.Cipher;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.loginserver.GameServerTable.GameServerInfo;
 import org.l2jmobius.loginserver.LoginController;
 import org.l2jmobius.loginserver.enums.AccountKickedReason;
@@ -37,22 +35,20 @@ import org.l2jmobius.loginserver.network.serverpackets.AccountKicked;
 import org.l2jmobius.loginserver.network.serverpackets.LoginOk;
 import org.l2jmobius.loginserver.network.serverpackets.ServerList;
 
-public class RequestCmdLogin implements IIncomingPacket<LoginClient>
+public class RequestCmdLogin implements LoginClientPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(RequestCmdLogin.class.getName());
 	
 	private final byte[] _raw = new byte[128];
 	
 	@Override
-	public boolean read(LoginClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		if (packet.getReadableBytes() >= 128)
+		if (packet.getRemainingLength() >= 128)
 		{
-			packet.readD();
-			packet.readB(_raw, 0, _raw.length);
-			return true;
+			packet.readInt();
+			packet.readBytes(_raw);
 		}
-		return false;
 	}
 	
 	@Override
@@ -89,7 +85,7 @@ public class RequestCmdLogin implements IIncomingPacket<LoginClient>
 			return;
 		}
 		
-		final InetAddress clientAddr = client.getConnectionAddress();
+		final String clientAddr = client.getIp();
 		final LoginController lc = LoginController.getInstance();
 		final AccountInfo info = lc.retriveAccountInfo(clientAddr, user, password);
 		if (info == null)

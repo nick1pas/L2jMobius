@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.CharacterDeleteFailType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class CharDeleteFail implements IClientOutgoingPacket
+public class CharDeleteFail extends ServerPacket
 {
 	private final int _error;
 	
@@ -30,10 +29,9 @@ public class CharDeleteFail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHARACTER_DELETE_FAIL.writeId(packet);
-		packet.writeD(_error);
-		return true;
+		ServerPackets.CHARACTER_DELETE_FAIL.writeId(this);
+		writeInt(_error);
 	}
 }

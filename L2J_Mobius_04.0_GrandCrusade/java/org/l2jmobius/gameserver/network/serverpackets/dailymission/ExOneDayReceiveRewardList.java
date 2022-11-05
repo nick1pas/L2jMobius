@@ -20,18 +20,17 @@ import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Collections;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.commons.time.SchedulingPattern;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
+public class ExOneDayReceiveRewardList extends ServerPacket
 {
 	private static final SchedulingPattern DAILY_REUSE_PATTERN = new SchedulingPattern("30 6 * * *");
 	private static final SchedulingPattern WEEKLY_REUSE_PATTERN = new SchedulingPattern("30 6 * * 1");
@@ -53,29 +52,28 @@ public class ExOneDayReceiveRewardList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (!DailyMissionData.getInstance().isAvailable())
 		{
-			return true;
+			return;
 		}
 		
-		OutgoingPackets.EX_ONE_DAY_RECEIVE_REWARD_LIST.writeId(packet);
-		packet.writeD(_dayRemainTime);
-		packet.writeD(_weekRemainTime);
-		packet.writeD(_monthRemainTime);
-		packet.writeC(0x17);
-		packet.writeD(_player.getClassId().getId());
-		packet.writeD(LocalDate.now().getDayOfWeek().ordinal()); // Day of week
-		packet.writeD(_rewards.size());
+		ServerPackets.EX_ONE_DAY_RECEIVE_REWARD_LIST.writeId(this);
+		writeInt(_dayRemainTime);
+		writeInt(_weekRemainTime);
+		writeInt(_monthRemainTime);
+		writeByte(0x17);
+		writeInt(_player.getClassId().getId());
+		writeInt(LocalDate.now().getDayOfWeek().ordinal()); // Day of week
+		writeInt(_rewards.size());
 		for (DailyMissionDataHolder reward : _rewards)
 		{
-			packet.writeH(reward.getId());
-			packet.writeC(reward.getStatus(_player));
-			packet.writeC(reward.getRequiredCompletions() > 1 ? 1 : 0);
-			packet.writeD(Math.min(reward.getProgress(_player), _player.getLevel()));
-			packet.writeD(reward.getRequiredCompletions());
+			writeShort(reward.getId());
+			writeByte(reward.getStatus(_player));
+			writeByte(reward.getRequiredCompletions() > 1);
+			writeInt(Math.min(reward.getProgress(_player), _player.getLevel()));
+			writeInt(reward.getRequiredCompletions());
 		}
-		return true;
 	}
 }

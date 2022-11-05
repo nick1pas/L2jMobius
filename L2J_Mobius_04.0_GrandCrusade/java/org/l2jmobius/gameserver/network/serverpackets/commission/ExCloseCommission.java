@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.commission;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NosBit
  */
-public class ExCloseCommission implements IClientOutgoingPacket
+public class ExCloseCommission extends ServerPacket
 {
 	public static final ExCloseCommission STATIC_PACKET = new ExCloseCommission();
 	
@@ -32,9 +31,8 @@ public class ExCloseCommission implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CLOSE_COMMISSION.writeId(packet);
-		return true;
+		ServerPackets.EX_CLOSE_COMMISSION.writeId(this);
 	}
 }

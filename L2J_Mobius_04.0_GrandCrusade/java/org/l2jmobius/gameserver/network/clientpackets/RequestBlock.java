@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.model.BlockList;
@@ -26,7 +26,7 @@ import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-public class RequestBlock implements IClientIncomingPacket
+public class RequestBlock implements ClientPacket
 {
 	private static final int BLOCK = 0;
 	private static final int UNBLOCK = 1;
@@ -38,14 +38,13 @@ public class RequestBlock implements IClientIncomingPacket
 	private Integer _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readD(); // 0x00 - block, 0x01 - unblock, 0x03 - allblock, 0x04 - allunblock
+		_type = packet.readInt(); // 0x00 - block, 0x01 - unblock, 0x03 - allblock, 0x04 - allunblock
 		if ((_type == BLOCK) || (_type == UNBLOCK))
 		{
-			_name = packet.readS();
+			_name = packet.readString();
 		}
-		return true;
 	}
 	
 	@Override

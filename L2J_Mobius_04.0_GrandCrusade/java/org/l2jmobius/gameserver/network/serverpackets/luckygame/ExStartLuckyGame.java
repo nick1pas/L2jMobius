@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.luckygame;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.LuckyGameType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExStartLuckyGame implements IClientOutgoingPacket
+public class ExStartLuckyGame extends ServerPacket
 {
 	private final LuckyGameType _type;
 	private final int _ticketCount;
@@ -36,11 +35,10 @@ public class ExStartLuckyGame implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_START_LUCKY_GAME.writeId(packet);
-		packet.writeD(_type.ordinal());
-		packet.writeD(_ticketCount);
-		return true;
+		ServerPackets.EX_START_LUCKY_GAME.writeId(this);
+		writeInt(_type.ordinal());
+		writeInt(_ticketCount);
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.RecipeHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class RecipeItemMakeInfo implements IClientOutgoingPacket
+public class RecipeItemMakeInfo extends ServerPacket
 {
 	private final int _id;
 	private final Player _player;
@@ -63,22 +62,22 @@ public class RecipeItemMakeInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		final RecipeHolder recipe = RecipeData.getInstance().getRecipe(_id);
-		if (recipe != null)
+		if (recipe == null)
 		{
-			OutgoingPackets.RECIPE_ITEM_MAKE_INFO.writeId(packet);
-			packet.writeD(_id);
-			packet.writeD(recipe.isDwarvenRecipe() ? 0 : 1); // 0 = Dwarven - 1 = Common
-			packet.writeD((int) _player.getCurrentMp());
-			packet.writeD(_player.getMaxMp());
-			packet.writeD(_success == null ? -1 : (_success ? 1 : 0)); // item creation none/success/failed
-			packet.writeC(_offeringMaximumAdena > 0 ? 1 : 0); // Show offering window.
-			packet.writeQ(_offeringMaximumAdena); // Adena worth of items for maximum offering.
-			return true;
+			PacketLogger.info("Character: " + _player + ": Requested unexisting recipe with id = " + _id);
+			return;
 		}
-		PacketLogger.info("Character: " + _player + ": Requested unexisting recipe with id = " + _id);
-		return false;
+		
+		ServerPackets.RECIPE_ITEM_MAKE_INFO.writeId(this);
+		writeInt(_id);
+		writeInt(!recipe.isDwarvenRecipe()); // 0 = Dwarven - 1 = Common
+		writeInt((int) _player.getCurrentMp());
+		writeInt(_player.getMaxMp());
+		writeInt(_success == null ? -1 : (_success ? 1 : 0)); // item creation none/success/failed
+		writeByte(_offeringMaximumAdena > 0); // Show offering window.
+		writeLong(_offeringMaximumAdena); // Adena worth of items for maximum offering.
 	}
 }

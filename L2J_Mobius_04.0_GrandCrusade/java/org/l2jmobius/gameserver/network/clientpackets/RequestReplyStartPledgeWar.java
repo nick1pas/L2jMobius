@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.enums.ClanWarState;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -28,16 +28,15 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 /**
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:30 $
  */
-public class RequestReplyStartPledgeWar implements IClientIncomingPacket
+public class RequestReplyStartPledgeWar implements ClientPacket
 {
 	private int _answer;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readS();
-		_answer = packet.readD();
-		return true;
+		packet.readString();
+		_answer = packet.readInt();
 	}
 	
 	@Override

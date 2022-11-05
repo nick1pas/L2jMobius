@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets.mentoring;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ListMenteeWaiting implements IClientOutgoingPacket
+public class ListMenteeWaiting extends ServerPacket
 {
 	private static final int PLAYERS_PER_PAGE = 64;
 	
@@ -49,27 +48,27 @@ public class ListMenteeWaiting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.LIST_MENTEE_WAITING.writeId(packet);
-		packet.writeD(1); // always 1 in retail
+		ServerPackets.LIST_MENTEE_WAITING.writeId(this);
+		writeInt(1); // always 1 in retail
 		if (_possibleCandiates.isEmpty())
 		{
-			packet.writeD(0);
-			packet.writeD(0);
-			return true;
+			writeInt(0);
+			writeInt(0);
+			return;
 		}
-		packet.writeD(_possibleCandiates.size());
-		packet.writeD(_possibleCandiates.size() % PLAYERS_PER_PAGE);
+		
+		writeInt(_possibleCandiates.size());
+		writeInt(_possibleCandiates.size() % PLAYERS_PER_PAGE);
 		for (Player player : _possibleCandiates)
 		{
 			if ((1 <= (PLAYERS_PER_PAGE * _page)) && (1 > (PLAYERS_PER_PAGE * (_page - 1))))
 			{
-				packet.writeS(player.getName());
-				packet.writeD(player.getActiveClass());
-				packet.writeD(player.getLevel());
+				writeString(player.getName());
+				writeInt(player.getActiveClass());
+				writeInt(player.getLevel());
 			}
 		}
-		return true;
 	}
 }

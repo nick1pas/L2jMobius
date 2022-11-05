@@ -16,31 +16,30 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.shuttle;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Shuttle;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author UnAfraid
  */
-public class RequestShuttleGetOn implements IClientIncomingPacket
+public class RequestShuttleGetOn implements ClientPacket
 {
 	private int _x;
 	private int _y;
 	private int _z;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readD(); // charId
-		_x = packet.readD();
-		_y = packet.readD();
-		_z = packet.readD();
-		return true;
+		packet.readInt(); // charId
+		_x = packet.readInt();
+		_y = packet.readInt();
+		_z = packet.readInt();
 	}
 	
 	@Override

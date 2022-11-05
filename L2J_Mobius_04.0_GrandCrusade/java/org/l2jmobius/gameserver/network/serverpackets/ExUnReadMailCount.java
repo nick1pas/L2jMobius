@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExUnReadMailCount implements IClientOutgoingPacket
+public class ExUnReadMailCount extends ServerPacket
 {
 	private final int _mailUnreadCount;
 	
@@ -34,10 +33,9 @@ public class ExUnReadMailCount implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_UN_READ_MAIL_COUNT.writeId(packet);
-		packet.writeD(_mailUnreadCount);
-		return true;
+		ServerPackets.EX_UN_READ_MAIL_COUNT.writeId(this);
+		writeInt(_mailUnreadCount);
 	}
 }

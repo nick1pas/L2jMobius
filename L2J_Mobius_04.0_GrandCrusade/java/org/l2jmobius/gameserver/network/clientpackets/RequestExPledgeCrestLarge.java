@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.CrestTable;
 import org.l2jmobius.gameserver.model.Crest;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -26,17 +26,16 @@ import org.l2jmobius.gameserver.network.serverpackets.ExPledgeEmblem;
 /**
  * @author -Wooden-, Sdw
  */
-public class RequestExPledgeCrestLarge implements IClientIncomingPacket
+public class RequestExPledgeCrestLarge implements ClientPacket
 {
 	private int _crestId;
 	private int _clanId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_crestId = packet.readD();
-		_clanId = packet.readD();
-		return true;
+		_crestId = packet.readInt();
+		_clanId = packet.readInt();
 	}
 	
 	@Override

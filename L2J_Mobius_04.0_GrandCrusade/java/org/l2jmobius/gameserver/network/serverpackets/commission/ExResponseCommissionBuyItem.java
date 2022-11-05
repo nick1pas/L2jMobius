@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.commission;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ItemInfo;
 import org.l2jmobius.gameserver.model.commission.CommissionItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NosBit
  */
-public class ExResponseCommissionBuyItem implements IClientOutgoingPacket
+public class ExResponseCommissionBuyItem extends ServerPacket
 {
 	public static final ExResponseCommissionBuyItem FAILED = new ExResponseCommissionBuyItem(null);
 	
@@ -37,17 +36,16 @@ public class ExResponseCommissionBuyItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESPONSE_COMMISSION_BUY_ITEM.writeId(packet);
-		packet.writeD(_commissionItem != null ? 1 : 0);
+		ServerPackets.EX_RESPONSE_COMMISSION_BUY_ITEM.writeId(this);
+		writeInt(_commissionItem != null);
 		if (_commissionItem != null)
 		{
 			final ItemInfo itemInfo = _commissionItem.getItemInfo();
-			packet.writeD(itemInfo.getEnchantLevel());
-			packet.writeD(itemInfo.getItem().getId());
-			packet.writeQ(itemInfo.getCount());
+			writeInt(itemInfo.getEnchantLevel());
+			writeInt(itemInfo.getItem().getId());
+			writeLong(itemInfo.getCount());
 		}
-		return true;
 	}
 }
