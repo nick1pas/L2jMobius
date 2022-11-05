@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoom;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoomList;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class ListPartyWating implements IClientOutgoingPacket
+public class ListPartyWating extends ServerPacket
 {
 	private final Player _player;
 	private final int _loc;
@@ -44,7 +43,7 @@ public class ListPartyWating implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		for (PartyMatchRoom room : PartyMatchRoomList.getInstance().getRooms())
 		{
@@ -64,27 +63,26 @@ public class ListPartyWating implements IClientOutgoingPacket
 			_rooms.add(room);
 		}
 		final int size = _rooms.size();
-		OutgoingPackets.LIST_PARTY_WAITING.writeId(packet);
+		ServerPackets.LIST_PARTY_WAITING.writeId(this);
 		if (size > 0)
 		{
-			packet.writeD(1);
+			writeInt(1);
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		packet.writeD(_rooms.size());
+		writeInt(_rooms.size());
 		for (PartyMatchRoom room : _rooms)
 		{
-			packet.writeD(room.getId());
-			packet.writeS(room.getTitle());
-			packet.writeD(room.getLocation());
-			packet.writeD(room.getMinLevel());
-			packet.writeD(room.getMaxLevel());
-			packet.writeD(room.getMaxMembers());
-			packet.writeD(room.getMembers());
-			packet.writeS(room.getOwner().getName());
+			writeInt(room.getId());
+			writeString(room.getTitle());
+			writeInt(room.getLocation());
+			writeInt(room.getMinLevel());
+			writeInt(room.getMaxLevel());
+			writeInt(room.getMaxMembers());
+			writeInt(room.getMembers());
+			writeString(room.getOwner().getName());
 		}
-		return true;
 	}
 }

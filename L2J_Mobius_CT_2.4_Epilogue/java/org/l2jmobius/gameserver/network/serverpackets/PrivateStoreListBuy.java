@@ -18,12 +18,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.TradeItem;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PrivateStoreListBuy implements IClientOutgoingPacket
+public class PrivateStoreListBuy extends ServerPacket
 {
 	private final int _objId;
 	private final long _playerAdena;
@@ -38,36 +37,35 @@ public class PrivateStoreListBuy implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PRIVATE_STORE_BUY_LIST.writeId(packet);
-		packet.writeD(_objId);
-		packet.writeQ(_playerAdena);
-		packet.writeD(_items.size());
+		ServerPackets.PRIVATE_STORE_BUY_LIST.writeId(this);
+		writeInt(_objId);
+		writeLong(_playerAdena);
+		writeInt(_items.size());
 		for (TradeItem item : _items)
 		{
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItem().getId());
-			packet.writeH(item.getEnchant());
-			packet.writeQ(item.getCount()); // give max possible sell amount
-			packet.writeQ(item.getItem().getReferencePrice());
-			packet.writeH(0);
-			packet.writeD(item.getItem().getBodyPart());
-			packet.writeH(item.getItem().getType2());
-			packet.writeQ(item.getPrice()); // buyers price
-			packet.writeQ(item.getStoreCount()); // maximum possible tradecount
+			writeInt(item.getObjectId());
+			writeInt(item.getItem().getId());
+			writeShort(item.getEnchant());
+			writeLong(item.getCount()); // give max possible sell amount
+			writeLong(item.getItem().getReferencePrice());
+			writeShort(0);
+			writeInt(item.getItem().getBodyPart());
+			writeShort(item.getItem().getType2());
+			writeLong(item.getPrice()); // buyers price
+			writeLong(item.getStoreCount()); // maximum possible tradecount
 			// T1
-			packet.writeH(item.getAttackElementType());
-			packet.writeH(item.getAttackElementPower());
+			writeShort(item.getAttackElementType());
+			writeShort(item.getAttackElementPower());
 			for (byte i = 0; i < 6; i++)
 			{
-				packet.writeH(item.getElementDefAttr(i));
+				writeShort(item.getElementDefAttr(i));
 			}
 			for (int op : item.getEnchantOptions())
 			{
-				packet.writeH(op);
+				writeShort(op);
 			}
 		}
-		return true;
 	}
 }

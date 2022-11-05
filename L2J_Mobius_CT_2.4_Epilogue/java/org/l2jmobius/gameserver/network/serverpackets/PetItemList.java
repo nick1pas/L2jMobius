@@ -18,11 +18,10 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PetItemList implements IClientOutgoingPacket
+public class PetItemList extends ServerPacket
 {
 	private final Collection<Item> _items;
 	
@@ -32,33 +31,32 @@ public class PetItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PET_ITEM_LIST.writeId(packet);
-		packet.writeH(_items.size());
+		ServerPackets.PET_ITEM_LIST.writeId(this);
+		writeShort(_items.size());
 		for (Item item : _items)
 		{
-			packet.writeH(item.getTemplate().getType1()); // item type1
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getId());
-			packet.writeQ(item.getCount());
-			packet.writeH(item.getTemplate().getType2()); // item type2
-			packet.writeH(0); // ?
-			packet.writeH(item.isEquipped() ? 1 : 0);
-			packet.writeD(item.getTemplate().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
-			packet.writeH(item.getEnchantLevel()); // enchant level
-			packet.writeH(0); // ?
-			packet.writeH(item.getAttackElementType());
-			packet.writeH(item.getAttackElementPower());
+			writeShort(item.getTemplate().getType1()); // item type1
+			writeInt(item.getObjectId());
+			writeInt(item.getId());
+			writeLong(item.getCount());
+			writeShort(item.getTemplate().getType2()); // item type2
+			writeShort(0); // ?
+			writeShort(item.isEquipped());
+			writeInt(item.getTemplate().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
+			writeShort(item.getEnchantLevel()); // enchant level
+			writeShort(0); // ?
+			writeShort(item.getAttackElementType());
+			writeShort(item.getAttackElementPower());
 			for (byte i = 0; i < 6; i++)
 			{
-				packet.writeH(item.getElementDefAttr(i));
+				writeShort(item.getElementDefAttr(i));
 			}
 			for (int op : item.getEnchantOptions())
 			{
-				packet.writeH(op);
+				writeShort(op);
 			}
 		}
-		return true;
 	}
 }

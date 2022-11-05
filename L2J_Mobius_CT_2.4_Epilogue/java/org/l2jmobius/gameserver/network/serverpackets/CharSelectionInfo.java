@@ -26,7 +26,6 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
 import org.l2jmobius.gameserver.model.World;
@@ -35,9 +34,9 @@ import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.Disconnection;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class CharSelectionInfo implements IClientOutgoingPacket
+public class CharSelectionInfo extends ServerPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(CharSelectionInfo.class.getName());
 	
@@ -73,13 +72,13 @@ public class CharSelectionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHARACTER_SELECTION_INFO.writeId(packet);
+		ServerPackets.CHARACTER_SELECTION_INFO.writeId(this);
 		final int size = _characterPackages.size();
-		packet.writeD(size); // Created character count
-		packet.writeD(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Can prevent players from creating new characters (if 0); (if 1, the client will ask if chars may be created (0x13) Response: (0x0D) )
-		packet.writeC(0);
+		writeInt(size); // Created character count
+		writeInt(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Can prevent players from creating new characters (if 0); (if 1, the client will ask if chars may be created (0x13) Response: (0x0D) )
+		writeByte(0);
 		long lastAccess = 0;
 		if (_activeId == -1)
 		{
@@ -95,52 +94,51 @@ public class CharSelectionInfo implements IClientOutgoingPacket
 		for (int i = 0; i < size; i++)
 		{
 			final CharSelectInfoPackage charInfoPackage = _characterPackages.get(i);
-			packet.writeS(charInfoPackage.getName()); // Character name
-			packet.writeD(charInfoPackage.getObjectId()); // Character ID
-			packet.writeS(_loginName); // Account name
-			packet.writeD(_sessionId); // Account ID
-			packet.writeD(charInfoPackage.getClanId()); // Clan ID
-			packet.writeD(0); // Builder level
-			packet.writeD(charInfoPackage.getSex()); // Sex
-			packet.writeD(charInfoPackage.getRace()); // Race
-			packet.writeD(charInfoPackage.getBaseClassId());
-			packet.writeD(1); // GameServerName
-			packet.writeD(charInfoPackage.getX());
-			packet.writeD(charInfoPackage.getY());
-			packet.writeD(charInfoPackage.getZ());
-			packet.writeF(charInfoPackage.getCurrentHp());
-			packet.writeF(charInfoPackage.getCurrentMp());
-			packet.writeD((int) charInfoPackage.getSp());
-			packet.writeQ(charInfoPackage.getExp());
-			packet.writeD(charInfoPackage.getLevel());
-			packet.writeD(charInfoPackage.getKarma());
-			packet.writeD(charInfoPackage.getPkKills());
-			packet.writeD(charInfoPackage.getPvPKills());
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
+			writeString(charInfoPackage.getName()); // Character name
+			writeInt(charInfoPackage.getObjectId()); // Character ID
+			writeString(_loginName); // Account name
+			writeInt(_sessionId); // Account ID
+			writeInt(charInfoPackage.getClanId()); // Clan ID
+			writeInt(0); // Builder level
+			writeInt(charInfoPackage.getSex()); // Sex
+			writeInt(charInfoPackage.getRace()); // Race
+			writeInt(charInfoPackage.getBaseClassId());
+			writeInt(1); // GameServerName
+			writeInt(charInfoPackage.getX());
+			writeInt(charInfoPackage.getY());
+			writeInt(charInfoPackage.getZ());
+			writeDouble(charInfoPackage.getCurrentHp());
+			writeDouble(charInfoPackage.getCurrentMp());
+			writeInt((int) charInfoPackage.getSp());
+			writeLong(charInfoPackage.getExp());
+			writeInt(charInfoPackage.getLevel());
+			writeInt(charInfoPackage.getKarma());
+			writeInt(charInfoPackage.getPkKills());
+			writeInt(charInfoPackage.getPvPKills());
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
 			for (int slot : getPaperdollOrder())
 			{
-				packet.writeD(charInfoPackage.getPaperdollItemId(slot));
+				writeInt(charInfoPackage.getPaperdollItemId(slot));
 			}
-			packet.writeD(charInfoPackage.getHairStyle());
-			packet.writeD(charInfoPackage.getHairColor());
-			packet.writeD(charInfoPackage.getFace());
-			packet.writeF(charInfoPackage.getMaxHp()); // Maximum HP
-			packet.writeF(charInfoPackage.getMaxMp()); // Maximum MP
-			packet.writeD(charInfoPackage.getDeleteTimer() > 0 ? (int) ((charInfoPackage.getDeleteTimer() - System.currentTimeMillis()) / 1000) : 0);
-			packet.writeD(charInfoPackage.getClassId());
-			packet.writeD(i == _activeId ? 1 : 0);
-			packet.writeC(Math.min(charInfoPackage.getEnchantEffect(), 127));
-			packet.writeD(charInfoPackage.getAugmentationId());
-			// packet.writeD(charInfoPackage.getTransformId()); // Used to display Transformations
-			packet.writeD(0); // Currently on retail when you are on character select you don't see your transformation.
+			writeInt(charInfoPackage.getHairStyle());
+			writeInt(charInfoPackage.getHairColor());
+			writeInt(charInfoPackage.getFace());
+			writeDouble(charInfoPackage.getMaxHp()); // Maximum HP
+			writeDouble(charInfoPackage.getMaxMp()); // Maximum MP
+			writeInt(charInfoPackage.getDeleteTimer() > 0 ? (int) ((charInfoPackage.getDeleteTimer() - System.currentTimeMillis()) / 1000) : 0);
+			writeInt(charInfoPackage.getClassId());
+			writeInt(i == _activeId);
+			writeByte(Math.min(charInfoPackage.getEnchantEffect(), 127));
+			writeInt(charInfoPackage.getAugmentationId());
+			// writeInt(charInfoPackage.getTransformId()); // Used to display Transformations
+			writeInt(0); // Currently on retail when you are on character select you don't see your transformation.
 		}
-		return true;
 	}
 	
 	private static List<CharSelectInfoPackage> loadCharacterSelectInfo(String loginName)

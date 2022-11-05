@@ -18,18 +18,17 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Message;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.ItemContainer;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * ExReplySentPost packet implementation.
  * @author Migi, DS
  */
-public class ExReplySentPost implements IClientOutgoingPacket
+public class ExReplySentPost extends ServerPacket
 {
 	private final Message _msg;
 	private Collection<Item> _items = null;
@@ -52,48 +51,47 @@ public class ExReplySentPost implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_REPLY_SENT_POST.writeId(packet);
-		packet.writeD(_msg.getId());
-		packet.writeD(_msg.isLocked() ? 1 : 0);
-		packet.writeS(_msg.getReceiverName());
-		packet.writeS(_msg.getSubject());
-		packet.writeS(_msg.getContent());
+		ServerPackets.EX_REPLY_SENT_POST.writeId(this);
+		writeInt(_msg.getId());
+		writeInt(_msg.isLocked());
+		writeString(_msg.getReceiverName());
+		writeString(_msg.getSubject());
+		writeString(_msg.getContent());
 		if ((_items != null) && !_items.isEmpty())
 		{
-			packet.writeD(_items.size());
+			writeInt(_items.size());
 			for (Item item : _items)
 			{
-				packet.writeH(item.getTemplate().getType2());
-				packet.writeD(0); // unknown
-				packet.writeD(item.getId());
-				packet.writeQ(item.getCount());
-				packet.writeD(item.getEnchantLevel());
-				packet.writeH(item.getCustomType2());
-				packet.writeH(0); // unknown
-				packet.writeD(0); // unknown
-				packet.writeD(item.isAugmented() ? item.getAugmentation().getAugmentationId() : 0x00);
-				packet.writeD(0); // unknown
-				packet.writeH(item.getAttackElementType());
-				packet.writeH(item.getAttackElementPower());
+				writeShort(item.getTemplate().getType2());
+				writeInt(0); // unknown
+				writeInt(item.getId());
+				writeLong(item.getCount());
+				writeInt(item.getEnchantLevel());
+				writeShort(item.getCustomType2());
+				writeShort(0); // unknown
+				writeInt(0); // unknown
+				writeInt(item.isAugmented() ? item.getAugmentation().getAugmentationId() : 0x00);
+				writeInt(0); // unknown
+				writeShort(item.getAttackElementType());
+				writeShort(item.getAttackElementPower());
 				for (byte i = 0; i < 6; i++)
 				{
-					packet.writeH(item.getElementDefAttr(i));
+					writeShort(item.getElementDefAttr(i));
 				}
 				for (int op : item.getEnchantOptions())
 				{
-					packet.writeH(op);
+					writeShort(op);
 				}
 			}
-			packet.writeQ(_msg.getReqAdena());
-			packet.writeD(_msg.getSendBySystem());
+			writeLong(_msg.getReqAdena());
+			writeInt(_msg.getSendBySystem());
 		}
 		else
 		{
-			packet.writeD(0);
-			packet.writeQ(_msg.getReqAdena());
+			writeInt(0);
+			writeLong(_msg.getReqAdena());
 		}
-		return true;
 	}
 }

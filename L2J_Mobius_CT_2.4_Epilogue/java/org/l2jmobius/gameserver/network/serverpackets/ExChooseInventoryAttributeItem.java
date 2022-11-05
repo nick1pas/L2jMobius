@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Kerberos
  */
-public class ExChooseInventoryAttributeItem implements IClientOutgoingPacket
+public class ExChooseInventoryAttributeItem extends ServerPacket
 {
 	private final int _itemId;
 	
@@ -33,10 +32,9 @@ public class ExChooseInventoryAttributeItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHOOSE_INVENTORY_ATTRIBUTE_ITEM.writeId(packet);
-		packet.writeD(_itemId);
-		return true;
+		ServerPackets.EX_CHOOSE_INVENTORY_ATTRIBUTE_ITEM.writeId(this);
+		writeInt(_itemId);
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author KenM
  */
-public class ExRpItemLink implements IClientOutgoingPacket
+public class ExRpItemLink extends ServerPacket
 {
 	private final Item _item;
 	
@@ -33,37 +32,36 @@ public class ExRpItemLink implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RP_ITEM_LINK.writeId(packet);
-		packet.writeD(_item.getObjectId());
-		packet.writeD(_item.getDisplayId());
-		packet.writeQ(_item.getCount());
-		packet.writeH(_item.getTemplate().getType2());
-		packet.writeD(_item.getTemplate().getBodyPart());
-		packet.writeH(_item.getEnchantLevel());
-		packet.writeH(_item.getCustomType2());
-		packet.writeH(0); // ??
+		ServerPackets.EX_RP_ITEM_LINK.writeId(this);
+		writeInt(_item.getObjectId());
+		writeInt(_item.getDisplayId());
+		writeLong(_item.getCount());
+		writeShort(_item.getTemplate().getType2());
+		writeInt(_item.getTemplate().getBodyPart());
+		writeShort(_item.getEnchantLevel());
+		writeShort(_item.getCustomType2());
+		writeShort(0); // ??
 		if (_item.isAugmented())
 		{
-			packet.writeD(_item.getAugmentation().getAugmentationId());
+			writeInt(_item.getAugmentation().getAugmentationId());
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		packet.writeD(_item.getMana());
-		packet.writeH(_item.getAttackElementType());
-		packet.writeH(_item.getAttackElementPower());
+		writeInt(_item.getMana());
+		writeShort(_item.getAttackElementType());
+		writeShort(_item.getAttackElementPower());
 		for (byte i = 0; i < 6; i++)
 		{
-			packet.writeH(_item.getElementDefAttr(i));
+			writeShort(_item.getElementDefAttr(i));
 		}
 		// Enchant Effects
 		for (int op : _item.getEnchantOptions())
 		{
-			packet.writeH(op);
+			writeShort(op);
 		}
-		return true;
 	}
 }

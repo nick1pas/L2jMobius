@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.SellBuffsManager;
 import org.l2jmobius.gameserver.model.TradeItem;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PrivateStoreListSell implements IClientOutgoingPacket
+public class PrivateStoreListSell extends ServerPacket
 {
 	private final Player _player;
 	private final Player _seller;
@@ -34,7 +33,7 @@ public class PrivateStoreListSell implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_seller.isSellingBuffs())
 		{
@@ -42,36 +41,35 @@ public class PrivateStoreListSell implements IClientOutgoingPacket
 		}
 		else
 		{
-			OutgoingPackets.PRIVATE_STORE_SELL_LIST.writeId(packet);
-			packet.writeD(_seller.getObjectId());
-			packet.writeD(_seller.getSellList().isPackaged() ? 1 : 0);
-			packet.writeQ(_player.getAdena());
-			packet.writeD(_seller.getSellList().getItems().size());
+			ServerPackets.PRIVATE_STORE_SELL_LIST.writeId(this);
+			writeInt(_seller.getObjectId());
+			writeInt(_seller.getSellList().isPackaged());
+			writeLong(_player.getAdena());
+			writeInt(_seller.getSellList().getItems().size());
 			for (TradeItem item : _seller.getSellList().getItems())
 			{
-				packet.writeD(item.getItem().getType2());
-				packet.writeD(item.getObjectId());
-				packet.writeD(item.getItem().getId());
-				packet.writeQ(item.getCount());
-				packet.writeH(0);
-				packet.writeH(item.getEnchant());
-				packet.writeH(item.getCustomType2());
-				packet.writeD(item.getItem().getBodyPart());
-				packet.writeQ(item.getPrice()); // your price
-				packet.writeQ(item.getItem().getReferencePrice()); // store price
+				writeInt(item.getItem().getType2());
+				writeInt(item.getObjectId());
+				writeInt(item.getItem().getId());
+				writeLong(item.getCount());
+				writeShort(0);
+				writeShort(item.getEnchant());
+				writeShort(item.getCustomType2());
+				writeInt(item.getItem().getBodyPart());
+				writeLong(item.getPrice()); // your price
+				writeLong(item.getItem().getReferencePrice()); // store price
 				// T1
-				packet.writeH(item.getAttackElementType());
-				packet.writeH(item.getAttackElementPower());
+				writeShort(item.getAttackElementType());
+				writeShort(item.getAttackElementPower());
 				for (byte i = 0; i < 6; i++)
 				{
-					packet.writeH(item.getElementDefAttr(i));
+					writeShort(item.getElementDefAttr(i));
 				}
 				for (int op : item.getEnchantOptions())
 				{
-					packet.writeH(op);
+					writeShort(op);
 				}
 			}
 		}
-		return true;
 	}
 }
