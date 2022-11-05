@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
@@ -30,7 +30,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
  * Fromat(ch) dd
  * @author -Wooden-
  */
-public class RequestConfirmRefinerItem implements IClientIncomingPacket
+public class RequestConfirmRefinerItem implements ClientPacket
 {
 	private static final int GEMSTONE_D = 2130;
 	private static final int GEMSTONE_C = 2131;
@@ -39,11 +39,10 @@ public class RequestConfirmRefinerItem implements IClientIncomingPacket
 	private int _refinerItemObjId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetItemObjId = packet.readD();
-		_refinerItemObjId = packet.readD();
-		return true;
+		_targetItemObjId = packet.readInt();
+		_refinerItemObjId = packet.readInt();
 	}
 	
 	@Override

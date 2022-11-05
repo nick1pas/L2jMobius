@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -35,7 +35,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
-public class RequestDropItem implements IClientIncomingPacket
+public class RequestDropItem implements ClientPacket
 {
 	private int _objectId;
 	private int _count;
@@ -44,14 +44,13 @@ public class RequestDropItem implements IClientIncomingPacket
 	private int _z;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_count = packet.readD();
-		_x = packet.readD();
-		_y = packet.readD();
-		_z = packet.readD();
-		return true;
+		_objectId = packet.readInt();
+		_count = packet.readInt();
+		_x = packet.readInt();
+		_y = packet.readInt();
+		_z = packet.readInt();
 	}
 	
 	@Override

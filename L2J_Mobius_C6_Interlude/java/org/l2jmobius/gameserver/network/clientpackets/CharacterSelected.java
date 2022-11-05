@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.ConnectionState;
@@ -28,7 +28,7 @@ import org.l2jmobius.gameserver.network.serverpackets.CharSelected;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 
 @SuppressWarnings("unused")
-public class CharacterSelected implements IClientIncomingPacket
+public class CharacterSelected implements ClientPacket
 {
 	private int _charSlot;
 	private int _unk1; // new in C4
@@ -37,14 +37,13 @@ public class CharacterSelected implements IClientIncomingPacket
 	private int _unk4;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_charSlot = packet.readD();
-		_unk1 = packet.readH();
-		_unk2 = packet.readD();
-		_unk3 = packet.readD();
-		_unk4 = packet.readD();
-		return true;
+		_charSlot = packet.readInt();
+		_unk1 = packet.readShort();
+		_unk2 = packet.readInt();
+		_unk3 = packet.readInt();
+		_unk4 = packet.readInt();
 	}
 	
 	@Override

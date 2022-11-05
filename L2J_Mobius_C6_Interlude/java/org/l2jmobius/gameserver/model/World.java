@@ -29,6 +29,7 @@ import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
+import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 
 public class World
 {
@@ -333,8 +334,8 @@ public class World
 			{
 				// This can happen when offline system is enabled.
 				// LOGGER.warning("Teleporting: Duplicate character!? Closing both characters (" + player.getName() + ")");
-				player.closeNetConnection();
-				tmp.closeNetConnection();
+				player.getClient().close(LeaveWorld.STATIC_PACKET);
+				tmp.getClient().close(LeaveWorld.STATIC_PACKET);
 				return;
 			}
 			

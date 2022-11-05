@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoom;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoomList;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchWaitingList;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
+public class ExListPartyMatchingWaitingRoom extends ServerPacket
 {
 	private final Player _player;
 	@SuppressWarnings("unused")
@@ -50,9 +49,9 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_LIST_PARTY_MATCHING_WAITING_ROOM.writeId(packet);
+		ServerPackets.EX_LIST_PARTY_MATCHING_WAITING_ROOM.writeId(this);
 		// If the mode is 0 and the activeChar isn't the PartyRoom leader, return an empty list.
 		if (_mode == 0)
 		{
@@ -60,11 +59,12 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 			final PartyMatchRoom room = PartyMatchRoomList.getInstance().getRoom(_player.getPartyRoom());
 			if ((room != null) && (room.getOwner() != null) && !room.getOwner().equals(_player))
 			{
-				packet.writeD(0);
-				packet.writeD(0);
-				return true;
+				writeInt(0);
+				writeInt(0);
+				return;
 			}
 		}
+		
 		for (Player cha : PartyMatchWaitingList.getInstance().getPlayers())
 		{
 			// Don't add yourself in the list
@@ -85,15 +85,14 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 		}
 		int count = 0;
 		final int size = _members.size();
-		packet.writeD(1);
-		packet.writeD(size);
+		writeInt(1);
+		writeInt(size);
 		while (size > count)
 		{
-			packet.writeS(_members.get(count).getName());
-			packet.writeD(_members.get(count).getActiveClass());
-			packet.writeD(_members.get(count).getLevel());
+			writeString(_members.get(count).getName());
+			writeInt(_members.get(count).getActiveClass());
+			writeInt(_members.get(count).getLevel());
 			count++;
 		}
-		return true;
 	}
 }

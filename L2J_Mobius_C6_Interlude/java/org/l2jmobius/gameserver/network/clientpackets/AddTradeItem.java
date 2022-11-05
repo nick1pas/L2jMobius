@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.TradeList;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -28,19 +28,18 @@ import org.l2jmobius.gameserver.network.serverpackets.TradeOtherAdd;
 import org.l2jmobius.gameserver.network.serverpackets.TradeOwnAdd;
 import org.l2jmobius.gameserver.network.serverpackets.TradeUpdate;
 
-public class AddTradeItem implements IClientIncomingPacket
+public class AddTradeItem implements ClientPacket
 {
 	private int _tradeId;
 	private int _objectId;
 	private int _count;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_tradeId = packet.readD();
-		_objectId = packet.readD();
-		_count = packet.readD();
-		return true;
+		_tradeId = packet.readInt();
+		_objectId = packet.readInt();
+		_count = packet.readInt();
 	}
 	
 	@Override

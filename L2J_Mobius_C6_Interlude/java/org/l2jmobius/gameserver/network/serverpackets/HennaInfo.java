@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class HennaInfo implements IClientOutgoingPacket
+public class HennaInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Henna[] _hennas = new Henna[3];
@@ -42,35 +41,34 @@ public class HennaInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.HENNA_INFO.writeId(packet);
-		packet.writeC(_player.getHennaStatINT()); // equip INT
-		packet.writeC(_player.getHennaStatSTR()); // equip STR
-		packet.writeC(_player.getHennaStatCON()); // equip CON
-		packet.writeC(_player.getHennaStatMEN()); // equip MEM
-		packet.writeC(_player.getHennaStatDEX()); // equip DEX
-		packet.writeC(_player.getHennaStatWIT()); // equip WIT
+		ServerPackets.HENNA_INFO.writeId(this);
+		writeByte(_player.getHennaStatINT()); // equip INT
+		writeByte(_player.getHennaStatSTR()); // equip STR
+		writeByte(_player.getHennaStatCON()); // equip CON
+		writeByte(_player.getHennaStatMEN()); // equip MEM
+		writeByte(_player.getHennaStatDEX()); // equip DEX
+		writeByte(_player.getHennaStatWIT()); // equip WIT
 		// Henna slots
 		int classId = _player.getClassId().level();
 		if (classId == 1)
 		{
-			packet.writeD(2);
+			writeInt(2);
 		}
 		else if (classId > 1)
 		{
-			packet.writeD(3);
+			writeInt(3);
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		packet.writeD(_count); // size
+		writeInt(_count); // size
 		for (int i = 0; i < _count; i++)
 		{
-			packet.writeD(_hennas[i].getSymbolId());
-			packet.writeD(_hennas[i].canBeUsedBy(_player) ? _hennas[i].getSymbolId() : 0);
+			writeInt(_hennas[i].getSymbolId());
+			writeInt(_hennas[i].canBeUsedBy(_player) ? _hennas[i].getSymbolId() : 0);
 		}
-		return true;
 	}
 }

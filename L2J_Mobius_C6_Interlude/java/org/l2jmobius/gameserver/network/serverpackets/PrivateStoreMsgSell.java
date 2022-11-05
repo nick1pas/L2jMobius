@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.2.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class PrivateStoreMsgSell implements IClientOutgoingPacket
+public class PrivateStoreMsgSell extends ServerPacket
 {
 	private final Player _player;
 	private String _storeMsg;
@@ -38,11 +37,10 @@ public class PrivateStoreMsgSell implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PRIVATE_STORE_MSG_SELL.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeS(_storeMsg);
-		return true;
+		ServerPackets.PRIVATE_STORE_MSG_SELL.writeId(this);
+		writeInt(_player.getObjectId());
+		writeString(_storeMsg);
 	}
 }

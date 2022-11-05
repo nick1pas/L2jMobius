@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.instancemanager.PetitionManager;
@@ -31,14 +31,13 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
  * Format: (c) d
  * @author -Wooden-, TempyIncursion
  */
-public class RequestPetitionCancel implements IClientIncomingPacket
+public class RequestPetitionCancel implements ClientPacket
 {
 	// private int _unknown;
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		// _unknown = packet.readD(); This is pretty much a trigger packet.
-		return true;
+		// _unknown = packet.readInt(); This is pretty much a trigger packet.
 	}
 	
 	@Override

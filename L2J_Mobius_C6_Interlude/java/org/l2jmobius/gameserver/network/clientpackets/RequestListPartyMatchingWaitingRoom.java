@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ExListPartyMatchingWaitingRoom;
@@ -24,21 +24,20 @@ import org.l2jmobius.gameserver.network.serverpackets.ExListPartyMatchingWaiting
 /**
  * @author Gnacik
  */
-public class RequestListPartyMatchingWaitingRoom implements IClientIncomingPacket
+public class RequestListPartyMatchingWaitingRoom implements ClientPacket
 {
-	private static int _page;
-	private static int _minLevel;
-	private static int _maxLevel;
-	private static int _mode; // 1 - waitlist 0 - room waitlist
+	private int _page;
+	private int _minLevel;
+	private int _maxLevel;
+	private int _mode; // 1 - waitlist 0 - room waitlist
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_page = packet.readD();
-		_minLevel = packet.readD();
-		_maxLevel = packet.readD();
-		_mode = packet.readD();
-		return true;
+		_page = packet.readInt();
+		_minLevel = packet.readInt();
+		_maxLevel = packet.readInt();
+		_mode = packet.readInt();
 	}
 	
 	@Override

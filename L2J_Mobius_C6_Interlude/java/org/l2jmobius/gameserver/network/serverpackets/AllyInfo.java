@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 
-public class AllyInfo implements IClientOutgoingPacket
+public class AllyInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -32,13 +31,14 @@ public class AllyInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getAllyId() == 0)
 		{
 			_player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_ALLIED_WITH_ANY_CLANS);
-			return false;
+			return;
 		}
+		
 		// ======<AllyInfo>======
 		SystemMessage sm = new SystemMessage(SystemMessageId.ALLIANCE_INFORMATION);
 		_player.sendPacket(sm);
@@ -99,6 +99,5 @@ public class AllyInfo implements IClientOutgoingPacket
 		// =========================
 		sm = new SystemMessage(SystemMessageId.EMPTY_5);
 		_player.sendPacket(sm);
-		return true;
 	}
 }

@@ -16,12 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.LoginServerThread;
 import org.l2jmobius.gameserver.LoginServerThread.SessionKey;
 import org.l2jmobius.gameserver.network.GameClient;
 
-public class AuthLogin implements IClientIncomingPacket
+public class AuthLogin implements ClientPacket
 {
 	// loginName + keys must match what the loginserver used.
 	private String _loginName;
@@ -31,14 +31,13 @@ public class AuthLogin implements IClientIncomingPacket
 	private int _loginKey2;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_loginName = packet.readS().toLowerCase();
-		_playKey2 = packet.readD();
-		_playKey1 = packet.readD();
-		_loginKey1 = packet.readD();
-		_loginKey2 = packet.readD();
-		return true;
+		_loginName = packet.readString().toLowerCase();
+		_playKey2 = packet.readInt();
+		_playKey1 = packet.readInt();
+		_loginKey1 = packet.readInt();
+		_loginKey2 = packet.readInt();
 	}
 	
 	@Override
@@ -46,11 +45,10 @@ public class AuthLogin implements IClientIncomingPacket
 	{
 		final SessionKey key = new SessionKey(_loginKey1, _loginKey2, _playKey1, _playKey2);
 		
-		// avoid potential exploits
+		// Avoid potential exploits.
 		if (client.getAccountName() == null)
 		{
-			// Preventing duplicate login in case client login server socket was
-			// disconnected or this packet was not sent yet
+			// Preventing duplicate login in case client login server socket was disconnected or this packet was not sent yet.
 			if (LoginServerThread.getInstance().addGameServerLogin(_loginName, client))
 			{
 				client.setAccountName(_loginName);

@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  * @author godson
  */
-public class ExOlympiadMode implements IClientOutgoingPacket
+public class ExOlympiadMode extends ServerPacket
 {
 	private static int _mode;
 	private final Player _player;
@@ -40,18 +39,19 @@ public class ExOlympiadMode implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player == null)
 		{
-			return false;
+			return;
 		}
+		
 		if (_mode == 3)
 		{
 			_player.setObserverMode(true);
 		}
-		OutgoingPackets.EX_OLYMPIAD_MODE.writeId(packet);
-		packet.writeC(_mode);
-		return true;
+		
+		ServerPackets.EX_OLYMPIAD_MODE.writeId(this);
+		writeByte(_mode);
 	}
 }

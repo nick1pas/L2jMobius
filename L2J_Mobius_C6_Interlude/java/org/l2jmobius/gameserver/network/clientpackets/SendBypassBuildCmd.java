@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.handler.AdminCommandHandler;
 import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.util.GMAudit;
 /**
  * This class handles all GM commands triggered by //command
  */
-public class SendBypassBuildCmd implements IClientIncomingPacket
+public class SendBypassBuildCmd implements ClientPacket
 {
 	public static final int GM_MESSAGE = 9;
 	public static final int ANNOUNCEMENT = 10;
@@ -37,10 +37,9 @@ public class SendBypassBuildCmd implements IClientIncomingPacket
 	private String _command;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_command = "admin_" + packet.readS().trim();
-		return true;
+		_command = "admin_" + packet.readString().trim();
 	}
 	
 	@Override

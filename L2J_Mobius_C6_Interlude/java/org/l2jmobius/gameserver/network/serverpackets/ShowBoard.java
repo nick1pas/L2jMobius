@@ -18,11 +18,10 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.commons.util.StringUtil;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ShowBoard implements IClientOutgoingPacket
+public class ShowBoard extends ServerPacket
 {
 	public static final ShowBoard STATIC_SHOWBOARD_102 = new ShowBoard(null, "102");
 	public static final ShowBoard STATIC_SHOWBOARD_103 = new ShowBoard(null, "103");
@@ -53,19 +52,18 @@ public class ShowBoard implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SHOW_BOARD.writeId(packet);
-		packet.writeC(1); // 1 to show, 0 to hide
-		packet.writeS(TOP);
-		packet.writeS(FAV);
-		packet.writeS(REGION);
-		packet.writeS(CLAN);
-		packet.writeS(MEMO);
-		packet.writeS(MAIL);
-		packet.writeS(FRIENDS);
-		packet.writeS(ADDFAV);
-		packet.writeS(_htmlCode.toString());
-		return true;
+		ServerPackets.SHOW_BOARD.writeId(this);
+		writeByte(1); // 1 to show, 0 to hide
+		writeString(TOP);
+		writeString(FAV);
+		writeString(REGION);
+		writeString(CLAN);
+		writeString(MEMO);
+		writeString(MAIL);
+		writeString(FRIENDS);
+		writeString(ADDFAV);
+		writeString(_htmlCode.toString());
 	}
 }

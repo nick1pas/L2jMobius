@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.gameserver.model.Duel;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.effects.Effect;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 public class DuelManager
 {
@@ -189,7 +189,7 @@ public class DuelManager
 	 * @param player
 	 * @param packet
 	 */
-	public void broadcastToOppositTeam(Player player, IClientOutgoingPacket packet)
+	public void broadcastToOppositTeam(Player player, ServerPacket packet)
 	{
 		if ((player == null) || !player.isInDuel())
 		{

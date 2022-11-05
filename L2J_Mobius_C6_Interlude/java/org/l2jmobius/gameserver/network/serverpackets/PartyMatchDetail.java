@@ -16,36 +16,31 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoom;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class PartyMatchDetail implements IClientOutgoingPacket
+public class PartyMatchDetail extends ServerPacket
 {
 	private final PartyMatchRoom _room;
 	
-	/**
-	 * @param room
-	 */
 	public PartyMatchDetail(PartyMatchRoom room)
 	{
 		_room = room;
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PARTY_MATCH_DETAIL.writeId(packet);
-		packet.writeD(_room.getId()); // Room ID
-		packet.writeD(_room.getMaxMembers()); // Max Members
-		packet.writeD(_room.getMinLevel()); // Level Min
-		packet.writeD(_room.getMaxLevel()); // Level Max
-		packet.writeD(_room.getLootType()); // Loot Type
-		packet.writeD(_room.getLocation()); // Room Location
-		packet.writeS(_room.getTitle()); // Room title
-		return true;
+		ServerPackets.PARTY_MATCH_DETAIL.writeId(this);
+		writeInt(_room.getId()); // Room ID
+		writeInt(_room.getMaxMembers()); // Max Members
+		writeInt(_room.getMinLevel()); // Level Min
+		writeInt(_room.getMaxLevel()); // Level Max
+		writeInt(_room.getLootType()); // Loot Type
+		writeInt(_room.getLocation()); // Room Location
+		writeString(_room.getTitle()); // Room title
 	}
 }

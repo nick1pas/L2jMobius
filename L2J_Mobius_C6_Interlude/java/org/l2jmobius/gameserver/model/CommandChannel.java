@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.ExCloseMPCC;
 import org.l2jmobius.gameserver.network.serverpackets.ExOpenMPCC;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
@@ -145,9 +145,9 @@ public class CommandChannel
 	
 	/**
 	 * Broadcast packet to every channel member
-	 * @param gsp
+	 * @param packet
 	 */
-	public void broadcastToChannelMembers(IClientOutgoingPacket gsp)
+	public void broadcastToChannelMembers(ServerPacket packet)
 	{
 		if ((_parties != null) && !_parties.isEmpty())
 		{
@@ -155,7 +155,7 @@ public class CommandChannel
 			{
 				if (party != null)
 				{
-					party.broadcastToPartyMembers(gsp);
+					party.broadcastToPartyMembers(packet);
 				}
 			}
 		}

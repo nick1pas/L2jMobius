@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -39,31 +39,29 @@ import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 /**
  * @author -Wooden-
  */
-public class RequestPackageSend implements IClientIncomingPacket
+public class RequestPackageSend implements ClientPacket
 {
 	private final List<ItemHolder> _items = new ArrayList<>();
 	private int _objectID;
 	private int _count;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectID = packet.readD();
-		_count = packet.readD();
+		_objectID = packet.readInt();
+		_count = packet.readInt();
 		if ((_count < 0) || (_count > 500))
 		{
 			_count = -1;
-			return false;
+			return;
 		}
 		
 		for (int i = 0; i < _count; i++)
 		{
-			final int id = packet.readD(); // this is some id sent in PackageSendableList
-			final int count = packet.readD();
+			final int id = packet.readInt(); // this is some id sent in PackageSendableList
+			final int count = packet.readInt();
 			_items.add(new ItemHolder(id, count));
 		}
-		
-		return true;
 	}
 	
 	@Override

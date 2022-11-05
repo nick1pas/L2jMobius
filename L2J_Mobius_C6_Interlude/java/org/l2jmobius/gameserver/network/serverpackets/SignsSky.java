@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.sevensigns.SevenSigns;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Changes the sky color depending on the outcome of the Seven Signs competition. packet type id 0xf8 format: c h
  * @author Tempy
  */
-public class SignsSky implements IClientOutgoingPacket
+public class SignsSky extends ServerPacket
 {
 	private int _state = 0;
 	
@@ -50,19 +49,18 @@ public class SignsSky implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SIGNS_SKY.writeId(packet);
+		ServerPackets.SIGNS_SKY.writeId(this);
 		if (_state == 2)
 		{
-			packet.writeH(258);
+			writeShort(258);
 		}
 		else if (_state == 1)
 		{
-			packet.writeH(257);
+			writeShort(257);
 			// else
-			// writeH(256);
+			// writeShort(256);
 		}
-		return true;
 	}
 }

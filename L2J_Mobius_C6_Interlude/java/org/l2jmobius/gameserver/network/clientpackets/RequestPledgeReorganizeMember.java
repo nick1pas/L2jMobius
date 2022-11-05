@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate
  * Format: (ch) dSdS
  * @author -Wooden-
  */
-public class RequestPledgeReorganizeMember implements IClientIncomingPacket
+public class RequestPledgeReorganizeMember implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _unk1;
@@ -38,13 +38,12 @@ public class RequestPledgeReorganizeMember implements IClientIncomingPacket
 	private String _unk2;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_unk1 = packet.readD();
-		_memberName = packet.readS();
-		_newPledgeType = packet.readD();
-		_unk2 = packet.readS();
-		return true;
+		_unk1 = packet.readInt();
+		_memberName = packet.readString();
+		_newPledgeType = packet.readInt();
+		_unk2 = packet.readString();
 	}
 	
 	@Override

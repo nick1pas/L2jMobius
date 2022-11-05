@@ -19,9 +19,8 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * 01 // Packet Identifier<br>
@@ -34,7 +33,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * format d d(dd)
  * @version $Revision: 1.3.2.1.2.5 $ $Date: 2005/03/27 15:29:39 $
  */
-public class StatusUpdate implements IClientOutgoingPacket
+public class StatusUpdate extends ServerPacket
 {
 	public static final int LEVEL = 0x01;
 	public static final int EXP = 0x02;
@@ -99,81 +98,80 @@ public class StatusUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.STATUS_UPDATE.writeId(packet);
+		ServerPackets.STATUS_UPDATE.writeId(this);
 		if (_actor != null)
 		{
-			packet.writeD(_actor.getObjectId());
-			packet.writeD(28); // all the attributes
-			packet.writeD(LEVEL);
-			packet.writeD(_actor.getLevel());
-			packet.writeD(EXP);
-			packet.writeD((int) _actor.getExp());
-			packet.writeD(STR);
-			packet.writeD(_actor.getSTR());
-			packet.writeD(DEX);
-			packet.writeD(_actor.getDEX());
-			packet.writeD(CON);
-			packet.writeD(_actor.getCON());
-			packet.writeD(INT);
-			packet.writeD(_actor.getINT());
-			packet.writeD(WIT);
-			packet.writeD(_actor.getWIT());
-			packet.writeD(MEN);
-			packet.writeD(_actor.getMEN());
-			packet.writeD(CUR_HP);
-			packet.writeD((int) _actor.getCurrentHp());
-			packet.writeD(MAX_HP);
-			packet.writeD(_actor.getMaxHp());
-			packet.writeD(CUR_MP);
-			packet.writeD((int) _actor.getCurrentMp());
-			packet.writeD(MAX_MP);
-			packet.writeD(_actor.getMaxMp());
-			packet.writeD(SP);
-			packet.writeD(_actor.getSp());
-			packet.writeD(CUR_LOAD);
-			packet.writeD(_actor.getCurrentLoad());
-			packet.writeD(MAX_LOAD);
-			packet.writeD(_actor.getMaxLoad());
-			packet.writeD(P_ATK);
-			packet.writeD(_actor.getPAtk(null));
-			packet.writeD(ATK_SPD);
-			packet.writeD(_actor.getPAtkSpd());
-			packet.writeD(P_DEF);
-			packet.writeD(_actor.getPDef(null));
-			packet.writeD(EVASION);
-			packet.writeD(_actor.getEvasionRate(null));
-			packet.writeD(ACCURACY);
-			packet.writeD(_actor.getAccuracy());
-			packet.writeD(CRITICAL);
-			packet.writeD(_actor.getCriticalHit(null, null));
-			packet.writeD(M_ATK);
-			packet.writeD(_actor.getMAtk(null, null));
-			packet.writeD(CAST_SPD);
-			packet.writeD(_actor.getMAtkSpd());
-			packet.writeD(M_DEF);
-			packet.writeD(_actor.getMDef(null, null));
-			packet.writeD(PVP_FLAG);
-			packet.writeD(_actor.getPvpFlag());
-			packet.writeD(KARMA);
-			packet.writeD(_actor.getKarma());
-			packet.writeD(CUR_CP);
-			packet.writeD((int) _actor.getCurrentCp());
-			packet.writeD(MAX_CP);
-			packet.writeD(_actor.getMaxCp());
+			writeInt(_actor.getObjectId());
+			writeInt(28); // all the attributes
+			writeInt(LEVEL);
+			writeInt(_actor.getLevel());
+			writeInt(EXP);
+			writeInt((int) _actor.getExp());
+			writeInt(STR);
+			writeInt(_actor.getSTR());
+			writeInt(DEX);
+			writeInt(_actor.getDEX());
+			writeInt(CON);
+			writeInt(_actor.getCON());
+			writeInt(INT);
+			writeInt(_actor.getINT());
+			writeInt(WIT);
+			writeInt(_actor.getWIT());
+			writeInt(MEN);
+			writeInt(_actor.getMEN());
+			writeInt(CUR_HP);
+			writeInt((int) _actor.getCurrentHp());
+			writeInt(MAX_HP);
+			writeInt(_actor.getMaxHp());
+			writeInt(CUR_MP);
+			writeInt((int) _actor.getCurrentMp());
+			writeInt(MAX_MP);
+			writeInt(_actor.getMaxMp());
+			writeInt(SP);
+			writeInt(_actor.getSp());
+			writeInt(CUR_LOAD);
+			writeInt(_actor.getCurrentLoad());
+			writeInt(MAX_LOAD);
+			writeInt(_actor.getMaxLoad());
+			writeInt(P_ATK);
+			writeInt(_actor.getPAtk(null));
+			writeInt(ATK_SPD);
+			writeInt(_actor.getPAtkSpd());
+			writeInt(P_DEF);
+			writeInt(_actor.getPDef(null));
+			writeInt(EVASION);
+			writeInt(_actor.getEvasionRate(null));
+			writeInt(ACCURACY);
+			writeInt(_actor.getAccuracy());
+			writeInt(CRITICAL);
+			writeInt(_actor.getCriticalHit(null, null));
+			writeInt(M_ATK);
+			writeInt(_actor.getMAtk(null, null));
+			writeInt(CAST_SPD);
+			writeInt(_actor.getMAtkSpd());
+			writeInt(M_DEF);
+			writeInt(_actor.getMDef(null, null));
+			writeInt(PVP_FLAG);
+			writeInt(_actor.getPvpFlag());
+			writeInt(KARMA);
+			writeInt(_actor.getKarma());
+			writeInt(CUR_CP);
+			writeInt((int) _actor.getCurrentCp());
+			writeInt(MAX_CP);
+			writeInt(_actor.getMaxCp());
 		}
 		else
 		{
-			packet.writeD(_objectId);
-			packet.writeD(_attributes.size());
+			writeInt(_objectId);
+			writeInt(_attributes.size());
 			for (int i = 0; i < _attributes.size(); i++)
 			{
 				final Attribute temp = _attributes.get(i);
-				packet.writeD(temp.id);
-				packet.writeD(temp.value);
+				writeInt(temp.id);
+				writeInt(temp.value);
 			}
 		}
-		return true;
 	}
 }

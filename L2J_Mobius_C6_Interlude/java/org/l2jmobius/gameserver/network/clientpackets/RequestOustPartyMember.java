@@ -16,19 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 
-public class RequestOustPartyMember implements IClientIncomingPacket
+public class RequestOustPartyMember implements ClientPacket
 {
 	private String _name;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_name = packet.readS();
-		return true;
+		_name = packet.readString();
 	}
 	
 	@Override

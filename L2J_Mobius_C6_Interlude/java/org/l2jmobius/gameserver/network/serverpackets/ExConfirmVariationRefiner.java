@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: (ch)ddddd
  */
-public class ExConfirmVariationRefiner implements IClientOutgoingPacket
+public class ExConfirmVariationRefiner extends ServerPacket
 {
 	private final int _refinerItemObjId;
 	private final int _lifestoneItemId;
@@ -40,14 +39,13 @@ public class ExConfirmVariationRefiner implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CONFIRM_VARIATION_REFINER.writeId(packet);
-		packet.writeD(_refinerItemObjId);
-		packet.writeD(_lifestoneItemId);
-		packet.writeD(_gemstoneItemId);
-		packet.writeD(_gemstoneCount);
-		packet.writeD(_unk2);
-		return true;
+		ServerPackets.EX_CONFIRM_VARIATION_REFINER.writeId(this);
+		writeInt(_refinerItemObjId);
+		writeInt(_lifestoneItemId);
+		writeInt(_gemstoneItemId);
+		writeInt(_gemstoneCount);
+		writeInt(_unk2);
 	}
 }

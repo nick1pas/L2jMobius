@@ -17,11 +17,10 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.util.BuilderUtil;
 
 /**
@@ -125,7 +124,7 @@ import org.l2jmobius.gameserver.util.BuilderUtil;
  * .
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class NpcHtmlMessage implements IClientOutgoingPacket
+public class NpcHtmlMessage extends ServerPacket
 {
 	/** The _npc obj id. */
 	private final int _npcObjId;
@@ -143,6 +142,8 @@ public class NpcHtmlMessage implements IClientOutgoingPacket
 	 */
 	public NpcHtmlMessage(int npcObjId, String text)
 	{
+		super(1024);
+		
 		_npcObjId = npcObjId;
 		setHtml(text);
 	}
@@ -153,11 +154,13 @@ public class NpcHtmlMessage implements IClientOutgoingPacket
 	 */
 	public NpcHtmlMessage(int npcObjId)
 	{
+		super(1024);
+		
 		_npcObjId = npcObjId;
 	}
 	
 	@Override
-	public void runImpl(Player player)
+	public void run(Player player)
 	{
 		if (Config.BYPASS_VALIDATION && _validate)
 		{
@@ -301,13 +304,12 @@ public class NpcHtmlMessage implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.NPC_HTML_MESSAGE.writeId(packet);
-		packet.writeD(_npcObjId);
-		packet.writeS(_html);
-		packet.writeD(0);
-		return true;
+		ServerPackets.NPC_HTML_MESSAGE.writeId(this);
+		writeInt(_npcObjId);
+		writeString(_html);
+		writeInt(0);
 	}
 	
 	/**

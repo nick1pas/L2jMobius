@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format : (ch) dSd
  * @author -Wooden-
  */
-public class PledgeReceivePowerInfo implements IClientOutgoingPacket
+public class PledgeReceivePowerInfo extends ServerPacket
 {
 	private final ClanMember _member;
 	
@@ -34,12 +33,11 @@ public class PledgeReceivePowerInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_RECEIVE_POWER_INFO.writeId(packet);
-		packet.writeD(_member.getPowerGrade()); // power grade
-		packet.writeS(_member.getName());
-		packet.writeD(_member.getClan().getRankPrivs(_member.getPowerGrade())); // privileges
-		return true;
+		ServerPackets.PLEDGE_RECEIVE_POWER_INFO.writeId(this);
+		writeInt(_member.getPowerGrade()); // power grade
+		writeString(_member.getName());
+		writeInt(_member.getClan().getRankPrivs(_member.getPowerGrade())); // privileges
 	}
 }

@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan.RankPrivs;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 0000: 9c c10c0000 48 00 61 00 6d 00 62 00 75 00 72 .....H.a.m.b.u.r 0010: 00 67 00 00 00 00000000 00000000 00000000 00000000 00000000 00000000 00 00 00000000 ... format dd ??
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class PledgePowerGradeList implements IClientOutgoingPacket
+public class PledgePowerGradeList extends ServerPacket
 {
 	private final Collection<RankPrivs> _privs;
 	
@@ -36,15 +35,14 @@ public class PledgePowerGradeList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_POWER_GRADE_LIST.writeId(packet);
-		packet.writeD(_privs.size());
+		ServerPackets.PLEDGE_POWER_GRADE_LIST.writeId(this);
+		writeInt(_privs.size());
 		for (RankPrivs priv : _privs)
 		{
-			packet.writeD(priv.getRank());
-			packet.writeD(priv.getParty());
+			writeInt(priv.getRank());
+			writeInt(priv.getParty());
 		}
-		return true;
 	}
 }

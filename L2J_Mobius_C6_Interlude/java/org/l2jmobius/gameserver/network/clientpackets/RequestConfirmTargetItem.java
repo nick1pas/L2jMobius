@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
@@ -29,15 +29,14 @@ import org.l2jmobius.gameserver.network.serverpackets.ExConfirmVariationItem;
  * Format:(ch) d
  * @author -Wooden-
  */
-public class RequestConfirmTargetItem implements IClientIncomingPacket
+public class RequestConfirmTargetItem implements ClientPacket
 {
 	private int _itemObjId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjId = packet.readD();
-		return true;
+		_itemObjId = packet.readInt();
 	}
 	
 	@Override

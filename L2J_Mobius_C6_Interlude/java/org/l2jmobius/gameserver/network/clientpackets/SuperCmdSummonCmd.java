@@ -16,23 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.network.GameClient;
 
 /**
  * Format chS c: (id) 0x39 h: (subid) 0x01 S: the summon name (or maybe cmd string ?)
  * @author -Wooden-
  */
-public class SuperCmdSummonCmd implements IClientIncomingPacket
+public class SuperCmdSummonCmd implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private String _summonName;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_summonName = packet.readS();
-		return true;
+		_summonName = packet.readString();
 	}
 	
 	@Override

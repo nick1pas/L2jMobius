@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * CDSDDSS -> (0xd5)(objId)(name)(0)(type)(speaker)(name)
  */
-public class Snoop implements IClientOutgoingPacket
+public class Snoop extends ServerPacket
 {
 	private final Player _snooped;
 	private final ChatType _type;
@@ -40,15 +39,14 @@ public class Snoop implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SNOOP.writeId(packet);
-		packet.writeD(_snooped.getObjectId());
-		packet.writeS(_snooped.getName());
-		packet.writeD(0); // ??
-		packet.writeD(_type.getClientId());
-		packet.writeS(_speaker);
-		packet.writeS(_msg);
-		return true;
+		ServerPackets.SNOOP.writeId(this);
+		writeInt(_snooped.getObjectId());
+		writeString(_snooped.getName());
+		writeInt(0); // ??
+		writeInt(_type.getClientId());
+		writeString(_speaker);
+		writeString(_msg);
 	}
 }

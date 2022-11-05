@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample
@@ -27,7 +26,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * format cd.
  * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class JoinParty implements IClientOutgoingPacket
+public class JoinParty extends ServerPacket
 {
 	/** The _response. */
 	private final int _response;
@@ -42,10 +41,9 @@ public class JoinParty implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.JOIN_PARTY.writeId(packet);
-		packet.writeD(_response);
-		return true;
+		ServerPackets.JOIN_PARTY.writeId(this);
+		writeInt(_response);
 	}
 }

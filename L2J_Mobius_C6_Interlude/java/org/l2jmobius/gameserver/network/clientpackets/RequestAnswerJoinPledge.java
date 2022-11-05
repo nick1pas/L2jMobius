@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -27,15 +27,14 @@ import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListAdd;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListAll;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-public class RequestAnswerJoinPledge implements IClientIncomingPacket
+public class RequestAnswerJoinPledge implements ClientPacket
 {
 	private int _answer;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_answer = packet.readD();
-		return true;
+		_answer = packet.readInt();
 	}
 	
 	@Override

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.ManorSeedData;
 import org.l2jmobius.gameserver.instancemanager.CastleManorManager;
@@ -38,7 +38,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.Util;
 
 @SuppressWarnings("unused")
-public class RequestBuyProcure implements IClientIncomingPacket
+public class RequestBuyProcure implements ClientPacket
 {
 	private int _listId;
 	private int _count;
@@ -46,39 +46,37 @@ public class RequestBuyProcure implements IClientIncomingPacket
 	private List<CropProcure> _procureList = new ArrayList<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_listId = packet.readD();
-		_count = packet.readD();
+		_listId = packet.readInt();
+		_count = packet.readInt();
 		if (_count > 500) // protect server
 		{
-			_count = 0;
-			return false;
+			_count = -1;
+			return;
 		}
 		
 		if (_count < 0) // protect server
 		{
-			_count = 0;
-			return false;
+			_count = -1;
+			return;
 		}
 		
 		_items = new int[_count * 2];
 		for (int i = 0; i < _count; i++)
 		{
-			final long servise = packet.readD();
-			final int itemId = packet.readD();
+			final long servise = packet.readInt();
+			final int itemId = packet.readInt();
 			_items[(i * 2) + 0] = itemId;
-			final long cnt = packet.readD();
+			final long cnt = packet.readInt();
 			if ((cnt > Integer.MAX_VALUE) || (cnt < 1))
 			{
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			
 			_items[(i * 2) + 1] = (int) cnt;
 		}
-		
-		return true;
 	}
 	
 	@Override

@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ManufactureItem;
 import org.l2jmobius.gameserver.model.ManufactureList;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class RecipeShopSellList implements IClientOutgoingPacket
+public class RecipeShopSellList extends ServerPacket
 {
 	private final Player _buyer;
 	private final Player _player;
@@ -34,24 +33,23 @@ public class RecipeShopSellList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		final ManufactureList createList = _player.getCreateList();
 		if (createList != null)
 		{
-			OutgoingPackets.RECIPE_SHOP_SELL_LIST.writeId(packet);
-			packet.writeD(_player.getObjectId());
-			packet.writeD((int) _player.getCurrentMp()); // Creator's MP
-			packet.writeD(_player.getMaxMp()); // Creator's MP
-			packet.writeD(_buyer.getAdena()); // Buyer Adena
-			packet.writeD(createList.size());
+			ServerPackets.RECIPE_SHOP_SELL_LIST.writeId(this);
+			writeInt(_player.getObjectId());
+			writeInt((int) _player.getCurrentMp()); // Creator's MP
+			writeInt(_player.getMaxMp()); // Creator's MP
+			writeInt(_buyer.getAdena()); // Buyer Adena
+			writeInt(createList.size());
 			for (ManufactureItem item : createList.getList())
 			{
-				packet.writeD(item.getRecipeId());
-				packet.writeD(0); // unknown
-				packet.writeD(item.getCost());
+				writeInt(item.getRecipeId());
+				writeInt(0); // unknown
+				writeInt(item.getCost());
 			}
 		}
-		return true;
 	}
 }

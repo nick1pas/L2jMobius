@@ -150,7 +150,7 @@ public class AdminServerInfo implements IAdminCommandHandler
 				{
 					if ((onlinePlayer != null) && (onlinePlayer.getClient() != null) && !onlinePlayer.getClient().isDetached())
 					{
-						realPlayers.add(onlinePlayer.getClient().getIpAddress());
+						realPlayers.add(onlinePlayer.getClient().getIp());
 					}
 				}
 				return realPlayers.size();

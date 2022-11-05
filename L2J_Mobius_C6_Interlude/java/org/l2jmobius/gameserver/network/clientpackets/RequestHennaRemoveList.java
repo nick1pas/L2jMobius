@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.HennaRemoveList;
@@ -24,16 +24,15 @@ import org.l2jmobius.gameserver.network.serverpackets.HennaRemoveList;
 /**
  * @author Tempy
  */
-public final class RequestHennaRemoveList implements IClientIncomingPacket
+public final class RequestHennaRemoveList implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _unknown;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_unknown = packet.readD(); // ??
-		return true;
+		_unknown = packet.readInt(); // ??
 	}
 	
 	@Override

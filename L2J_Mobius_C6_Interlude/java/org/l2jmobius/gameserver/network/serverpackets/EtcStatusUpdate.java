@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.effects.EffectType;
 import org.l2jmobius.gameserver.model.skill.effects.EffectCharge;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Luca Baldi
  */
-public class EtcStatusUpdate implements IClientOutgoingPacket
+public class EtcStatusUpdate extends ServerPacket
 {
 	private final Player _player;
 	private final EffectCharge _effect;
@@ -38,25 +37,24 @@ public class EtcStatusUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.ETC_STATUS_UPDATE.writeId(packet);
+		ServerPackets.ETC_STATUS_UPDATE.writeId(this);
 		// several icons to a separate line (0 = disabled)
 		if (_effect != null)
 		{
-			packet.writeD(_effect.getLevel()); // 1-7 increase force, level
+			writeInt(_effect.getLevel()); // 1-7 increase force, level
 		}
 		else
 		{
-			packet.writeD(0); // 1-7 increase force, level
+			writeInt(0); // 1-7 increase force, level
 		}
-		packet.writeD(_player.getWeightPenalty()); // 1-4 weight penalty, level (1=50%, 2=66.6%, 3=80%, 4=100%)
-		packet.writeD(_player.isInRefusalMode() || _player.isChatBanned() ? 1 : 0); // 1 = block all chat
+		writeInt(_player.getWeightPenalty()); // 1-4 weight penalty, level (1=50%, 2=66.6%, 3=80%, 4=100%)
+		writeInt(_player.isInRefusalMode() || _player.isChatBanned()); // 1 = block all chat
 		// writeD(0); // 1 = danger area
-		packet.writeD(_player.isInsideZone(ZoneId.DANGER_AREA)/* || _player.isInDangerArea() */ ? 1 : 0); // 1 = danger area
-		packet.writeD(Math.min(_player.getExpertisePenalty() + _player.getMasteryPenalty() + _player.getMasteryWeapPenalty(), 1)); // 1 = grade penalty
-		packet.writeD(_player.getCharmOfCourage() ? 1 : 0); // 1 = charm of courage (no xp loss in siege..)
-		packet.writeD(_player.getDeathPenaltyBuffLevel()); // 1-15 death penalty, level (combat ability decreased due to death)
-		return true;
+		writeInt(_player.isInsideZone(ZoneId.DANGER_AREA)/* || _player.isInDangerArea() */); // 1 = danger area
+		writeInt(Math.min(_player.getExpertisePenalty() + _player.getMasteryPenalty() + _player.getMasteryWeapPenalty(), 1)); // 1 = grade penalty
+		writeInt(_player.getCharmOfCourage()); // 1 = charm of courage (no xp loss in siege..)
+		writeInt(_player.getDeathPenaltyBuffLevel()); // 1-15 death penalty, level (combat ability decreased due to death)
 	}
 }

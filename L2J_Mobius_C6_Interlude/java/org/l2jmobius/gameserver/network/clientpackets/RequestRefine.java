@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.AugmentationData;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -34,7 +34,7 @@ import org.l2jmobius.gameserver.util.Util;
  * Format:(ch) dddd
  * @author -Wooden-
  */
-public class RequestRefine implements IClientIncomingPacket
+public class RequestRefine implements ClientPacket
 {
 	private int _targetItemObjId;
 	private int _refinerItemObjId;
@@ -42,13 +42,12 @@ public class RequestRefine implements IClientIncomingPacket
 	private int _gemstoneCount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetItemObjId = packet.readD();
-		_refinerItemObjId = packet.readD();
-		_gemstoneItemObjId = packet.readD();
-		_gemstoneCount = packet.readD();
-		return true;
+		_targetItemObjId = packet.readInt();
+		_refinerItemObjId = packet.readInt();
+		_gemstoneItemObjId = packet.readInt();
+		_gemstoneCount = packet.readInt();
 	}
 	
 	@Override

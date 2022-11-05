@@ -24,7 +24,6 @@ import java.util.regex.Pattern;
 import java.util.regex.PatternSyntaxException;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.communitybbs.Manager.MailBBSManager;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.data.sql.AnnouncementsTable;
@@ -76,6 +75,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ExStorageMaxCount;
 import org.l2jmobius.gameserver.network.serverpackets.FriendList;
 import org.l2jmobius.gameserver.network.serverpackets.HennaInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
+import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
@@ -95,16 +95,10 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * Enter World Packet Handler
  */
-public class EnterWorld implements IClientIncomingPacket
+public class EnterWorld implements ClientPacket
 {
 	private final SimpleDateFormat fmt = new SimpleDateFormat("H:mm.");
 	SimpleDateFormat df = new SimpleDateFormat("dd MM yyyy");
-	
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
 	
 	@Override
 	public void run(GameClient client)
@@ -113,7 +107,7 @@ public class EnterWorld implements IClientIncomingPacket
 		if (player == null)
 		{
 			PacketLogger.warning("EnterWorld failed! player is null...");
-			client.closeNow();
+			client.close(LeaveWorld.STATIC_PACKET);
 			return;
 		}
 		
@@ -127,7 +121,7 @@ public class EnterWorld implements IClientIncomingPacket
 		if (!player.isGM() && !player.isDonator() && Config.CHECK_NAME_ON_LOGIN && ((player.getName().length() < 3) || (player.getName().length() > 16) || !Util.isAlphaNumeric(player.getName()) || !isValidName(player.getName())))
 		{
 			PacketLogger.warning("Charname: " + player.getName() + " is invalid. EnterWorld failed.");
-			client.closeNow();
+			client.close(LeaveWorld.STATIC_PACKET);
 			return;
 		}
 		

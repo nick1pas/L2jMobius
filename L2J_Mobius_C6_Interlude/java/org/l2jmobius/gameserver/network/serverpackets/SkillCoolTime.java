@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Timestamp;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Skill Cool Time server packet implementation.
  * @author KenM, Zoey76, Mobius
  */
-public class SkillCoolTime implements IClientOutgoingPacket
+public class SkillCoolTime extends ServerPacket
 {
 	private final long _currentTime;
 	public Collection<Timestamp> _reuseTimestamps;
@@ -39,17 +38,16 @@ public class SkillCoolTime implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SKILL_COOL_TIME.writeId(packet);
-		packet.writeD(_reuseTimestamps.size());
+		ServerPackets.SKILL_COOL_TIME.writeId(this);
+		writeInt(_reuseTimestamps.size());
 		for (Timestamp ts : _reuseTimestamps)
 		{
-			packet.writeD(ts.getSkillId());
-			packet.writeD(ts.getSkillLevel());
-			packet.writeD((int) ts.getReuse() / 1000);
-			packet.writeD((int) Math.max(ts.getStamp() - _currentTime, 0) / 1000);
+			writeInt(ts.getSkillId());
+			writeInt(ts.getSkillLevel());
+			writeInt((int) ts.getReuse() / 1000);
+			writeInt((int) Math.max(ts.getStamp() - _currentTime, 0) / 1000);
 		}
-		return true;
 	}
 }

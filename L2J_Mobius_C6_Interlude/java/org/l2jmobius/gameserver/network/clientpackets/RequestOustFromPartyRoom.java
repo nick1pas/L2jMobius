@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.MapRegionData;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -32,15 +32,14 @@ import org.l2jmobius.gameserver.network.serverpackets.PartyMatchList;
  * format (ch) d
  * @author -Wooden-
  */
-public class RequestOustFromPartyRoom implements IClientIncomingPacket
+public class RequestOustFromPartyRoom implements ClientPacket
 {
 	private int _charid;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_charid = packet.readD();
-		return true;
+		_charid = packet.readInt();
 	}
 	
 	@Override

@@ -16,20 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.PrivateStoreMsgBuy;
 
-public class SetPrivateStoreMsgBuy implements IClientIncomingPacket
+public class SetPrivateStoreMsgBuy implements ClientPacket
 {
 	private String _storeMsg;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_storeMsg = packet.readS();
-		return true;
+		_storeMsg = packet.readString();
 	}
 	
 	@Override

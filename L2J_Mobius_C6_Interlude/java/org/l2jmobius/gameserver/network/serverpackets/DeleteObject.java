@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 0000: 1e 9b da 12 40 ....@ format d
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class DeleteObject implements IClientOutgoingPacket
+public class DeleteObject extends ServerPacket
 {
 	private final int _objectId;
 	
@@ -39,11 +38,10 @@ public class DeleteObject implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.DELETE_OBJECT.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(0); // c2
-		return true;
+		ServerPackets.DELETE_OBJECT.writeId(this);
+		writeInt(_objectId);
+		writeInt(0); // c2
 	}
 }

@@ -18,14 +18,13 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-
  */
-public class PackageSendableList implements IClientOutgoingPacket
+public class PackageSendableList extends ServerPacket
 {
 	private final List<Item> _items;
 	private final int _playerObjId;
@@ -39,26 +38,25 @@ public class PackageSendableList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PACKAGE_SENDABLE_LIST.writeId(packet);
-		packet.writeD(_playerObjId);
-		packet.writeD(_adena);
-		packet.writeD(_items.size());
+		ServerPackets.PACKAGE_SENDABLE_LIST.writeId(this);
+		writeInt(_playerObjId);
+		writeInt(_adena);
+		writeInt(_items.size());
 		for (Item item : _items) // format inside the for taken from SellList part use should be about the same
 		{
-			packet.writeH(item.getTemplate().getType1());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItemId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getTemplate().getType2());
-			packet.writeH(0);
-			packet.writeD(item.getTemplate().getBodyPart());
-			packet.writeH(item.getEnchantLevel());
-			packet.writeH(0);
-			packet.writeH(0);
-			packet.writeD(item.getObjectId()); // some item identifier later used by client to answer (see RequestPackageSend) not item id nor object id maybe some freight system id??
+			writeShort(item.getTemplate().getType1());
+			writeInt(item.getObjectId());
+			writeInt(item.getItemId());
+			writeInt(item.getCount());
+			writeShort(item.getTemplate().getType2());
+			writeShort(0);
+			writeInt(item.getTemplate().getBodyPart());
+			writeShort(item.getEnchantLevel());
+			writeShort(0);
+			writeShort(0);
+			writeInt(item.getObjectId()); // some item identifier later used by client to answer (see RequestPackageSend) not item id nor object id maybe some freight system id??
 		}
-		return true;
 	}
 }

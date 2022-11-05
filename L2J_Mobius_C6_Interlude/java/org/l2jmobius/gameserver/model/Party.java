@@ -42,12 +42,12 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.ExCloseMPCC;
 import org.l2jmobius.gameserver.network.serverpackets.ExOpenMPCC;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.PartyMemberPosition;
 import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowAdd;
 import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowAll;
 import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowDelete;
 import org.l2jmobius.gameserver.network.serverpackets.PartySmallWindowDeleteAll;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 import org.l2jmobius.gameserver.util.Util;
@@ -281,15 +281,15 @@ public class Party
 	
 	/**
 	 * Broadcasts packet to every party member
-	 * @param msg
+	 * @param packet
 	 */
-	public void broadcastToPartyMembers(IClientOutgoingPacket msg)
+	public void broadcastToPartyMembers(ServerPacket packet)
 	{
 		for (Player member : _members)
 		{
 			if (member != null)
 			{
-				member.sendPacket(msg);
+				member.sendPacket(packet);
 			}
 		}
 	}
@@ -327,15 +327,15 @@ public class Party
 	/**
 	 * Send a Server->Client packet to all other Player of the Party.
 	 * @param player
-	 * @param msg
+	 * @param packet
 	 */
-	public void broadcastToPartyMembers(Player player, IClientOutgoingPacket msg)
+	public void broadcastToPartyMembers(Player player, ServerPacket packet)
 	{
 		for (Player member : _members)
 		{
 			if ((member != null) && !member.equals(player))
 			{
-				member.sendPacket(msg);
+				member.sendPacket(packet);
 			}
 		}
 	}

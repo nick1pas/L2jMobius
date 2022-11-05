@@ -17,7 +17,6 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.model.Party;
 import org.l2jmobius.gameserver.model.actor.Creature;
@@ -28,17 +27,12 @@ import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 
-public class Logout implements IClientIncomingPacket
+public class Logout implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{
@@ -127,24 +121,22 @@ public class Logout implements IClientIncomingPacket
 				}
 				
 				player.store();
-				player.closeNetConnection();
-				
 				if (player.getOfflineStartTime() == 0)
 				{
 					player.setOfflineStartTime(System.currentTimeMillis());
 				}
+				client.close(LeaveWorld.STATIC_PACKET);
 				return;
 			}
 		}
 		else if (player.isStored())
 		{
 			player.store();
-			player.closeNetConnection();
-			
 			if (player.getOfflineStartTime() == 0)
 			{
 				player.setOfflineStartTime(System.currentTimeMillis());
 			}
+			client.close(LeaveWorld.STATIC_PACKET);
 			return;
 		}
 		

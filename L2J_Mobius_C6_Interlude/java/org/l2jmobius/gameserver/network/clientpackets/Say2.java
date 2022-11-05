@@ -21,7 +21,7 @@ import java.util.StringTokenizer;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.MapRegionData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.PunishmentType;
@@ -39,7 +39,7 @@ import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.Util;
 
-public class Say2 implements IClientIncomingPacket
+public class Say2 implements ClientPacket
 {
 	private static final Logger LOGGER_CHAT = Logger.getLogger("chat");
 	
@@ -88,12 +88,11 @@ public class Say2 implements IClientIncomingPacket
 	private String _target;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_text = packet.readS();
-		_type = packet.readD();
-		_target = _type == ChatType.WHISPER.getClientId() ? packet.readS() : null;
-		return true;
+		_text = packet.readString();
+		_type = packet.readInt();
+		_target = _type == ChatType.WHISPER.getClientId() ? packet.readString() : null;
 	}
 	
 	@Override

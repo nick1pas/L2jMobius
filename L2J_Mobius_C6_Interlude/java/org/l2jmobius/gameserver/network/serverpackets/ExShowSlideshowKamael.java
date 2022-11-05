@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: ch
  * @author devScarlet & mrTJO
  */
-public class ExShowSlideshowKamael implements IClientOutgoingPacket
+public class ExShowSlideshowKamael extends ServerPacket
 {
 	public static final ExShowSlideshowKamael STATIC_PACKET = new ExShowSlideshowKamael();
 	
@@ -32,9 +31,8 @@ public class ExShowSlideshowKamael implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_SLIDESHOW_KAMAEL.writeId(packet);
-		return true;
+		ServerPackets.EX_SHOW_SLIDESHOW_KAMAEL.writeId(this);
 	}
 }

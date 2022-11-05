@@ -19,8 +19,7 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * <code>
@@ -33,7 +32,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * </code> format ddd d (dddd)
  * @version $Revision: 1.3.2.1.2.4 $ $Date: 2005/03/27 15:29:39 $
  */
-public class AquireSkillInfo implements IClientOutgoingPacket
+public class AquireSkillInfo extends ServerPacket
 {
 	private final List<Req> _reqs;
 	private final int _id;
@@ -72,21 +71,20 @@ public class AquireSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.AQUIRE_SKILL_INFO.writeId(packet);
-		packet.writeD(_id);
-		packet.writeD(_level);
-		packet.writeD(_spCost);
-		packet.writeD(_mode); // c4
-		packet.writeD(_reqs.size());
+		ServerPackets.AQUIRE_SKILL_INFO.writeId(this);
+		writeInt(_id);
+		writeInt(_level);
+		writeInt(_spCost);
+		writeInt(_mode); // c4
+		writeInt(_reqs.size());
 		for (Req temp : _reqs)
 		{
-			packet.writeD(temp.type);
-			packet.writeD(temp.itemId);
-			packet.writeD(temp.count);
-			packet.writeD(temp.unk);
+			writeInt(temp.type);
+			writeInt(temp.itemId);
+			writeInt(temp.count);
+			writeInt(temp.unk);
 		}
-		return true;
 	}
 }

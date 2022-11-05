@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 0000: 6d 0c 00 00 00 00 00 00 00 03 00 00 00 f3 03 00 m............... 0010: 00 00 00 00 00 01 00 00 00 f4 03 00 00 00 00 00 ................ 0020: 00 01 00 00 00 10 04 00 00 00 00 00 00 01 00 00 ................ 0030: 00 2c 04 00 00 00 00 00 00 03 00 00 00 99 04 00 .,.............. 0040:
@@ -25,7 +24,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * 00 d6 00 00 00 01 00 00 00 01 00 00 ................ 0090: 00 f4 00 00 00 format d (ddd)
  * @version $Revision: 1.3.2.1.2.5 $ $Date: 2005/03/27 15:29:39 $
  */
-public class SkillList implements IClientOutgoingPacket
+public class SkillList extends ServerPacket
 {
 	private Skill[] _skills;
 	
@@ -45,6 +44,8 @@ public class SkillList implements IClientOutgoingPacket
 	
 	public SkillList()
 	{
+		super(1024);
+		
 		_skills = new Skill[] {};
 	}
 	
@@ -88,17 +89,16 @@ public class SkillList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SKILL_LIST.writeId(packet);
-		packet.writeD(_skills.length);
+		ServerPackets.SKILL_LIST.writeId(this);
+		writeInt(_skills.length);
 		for (Skill temp : _skills)
 		{
-			packet.writeD(temp.passive ? 1 : 0);
-			packet.writeD(temp.level);
-			packet.writeD(temp.id);
-			packet.writeC(0); // c5
+			writeInt(temp.passive);
+			writeInt(temp.level);
+			writeInt(temp.id);
+			writeByte(0); // c5
 		}
-		return true;
 	}
 }

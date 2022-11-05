@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 0000: 17 1a 95 20 48 9b da 12 40 44 17 02 00 03 f0 fc ff 98 f1 ff ff ..... format ddddd
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class GetItem implements IClientOutgoingPacket
+public class GetItem extends ServerPacket
 {
 	private final Item _item;
 	private final int _playerId;
@@ -36,14 +35,13 @@ public class GetItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GET_ITEM.writeId(packet);
-		packet.writeD(_playerId);
-		packet.writeD(_item.getObjectId());
-		packet.writeD(_item.getX());
-		packet.writeD(_item.getY());
-		packet.writeD(_item.getZ());
-		return true;
+		ServerPackets.GET_ITEM.writeId(this);
+		writeInt(_playerId);
+		writeInt(_item.getObjectId());
+		writeInt(_item.getX());
+		writeInt(_item.getY());
+		writeInt(_item.getZ());
 	}
 }

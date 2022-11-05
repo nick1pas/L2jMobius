@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: ch dddd.
  * @author KenM
  */
-public class ExUseSharedGroupItem implements IClientOutgoingPacket
+public class ExUseSharedGroupItem extends ServerPacket
 {
 	/** The _unk4. */
 	private final int _unk1;
@@ -56,13 +55,12 @@ public class ExUseSharedGroupItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_USE_SHARED_GROUP_ITEM.writeId(packet);
-		packet.writeD(_unk1);
-		packet.writeD(_unk2);
-		packet.writeD(_unk3);
-		packet.writeD(_unk4);
-		return true;
+		ServerPackets.EX_USE_SHARED_GROUP_ITEM.writeId(this);
+		writeInt(_unk1);
+		writeInt(_unk2);
+		writeInt(_unk3);
+		writeInt(_unk4);
 	}
 }

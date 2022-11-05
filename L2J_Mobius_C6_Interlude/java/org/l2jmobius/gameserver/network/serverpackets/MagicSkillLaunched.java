@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 0000: 8e d8 a8 10 48 10 04 00 00 01 00 00 00 01 00 00 ....H........... 0010: 00 d8 a8 10 48 ....H format ddddd d
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class MagicSkillLaunched implements IClientOutgoingPacket
+public class MagicSkillLaunched extends ServerPacket
 {
 	private final int _objectId;
 	private final int _skillId;
@@ -66,16 +65,16 @@ public class MagicSkillLaunched implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.MAGIC_SKILL_LAUNCHED.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_skillId);
-		packet.writeD(_skillLevel);
-		packet.writeD(_numberOfTargets); // also failed or not?
+		ServerPackets.MAGIC_SKILL_LAUNCHED.writeId(this);
+		writeInt(_objectId);
+		writeInt(_skillId);
+		writeInt(_skillLevel);
+		writeInt(_numberOfTargets); // also failed or not?
 		if ((_singleTargetId != 0) || (_numberOfTargets == 0))
 		{
-			packet.writeD(_singleTargetId);
+			writeInt(_singleTargetId);
 		}
 		else
 		{
@@ -83,14 +82,13 @@ public class MagicSkillLaunched implements IClientOutgoingPacket
 			{
 				try
 				{
-					packet.writeD(target.getObjectId());
+					writeInt(target.getObjectId());
 				}
 				catch (NullPointerException e)
 				{
-					packet.writeD(0); // untested
+					writeInt(0); // untested
 				}
 			}
 		}
-		return true;
 	}
 }

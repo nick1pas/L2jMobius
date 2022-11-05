@@ -16,14 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.Macro;
 import org.l2jmobius.gameserver.model.Macro.MacroCmd;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 
-public class RequestMakeMacro implements IClientIncomingPacket
+public class RequestMakeMacro implements ClientPacket
 {
 	private Macro _macro;
 	private int _commandsLength = 0;
@@ -33,18 +33,19 @@ public class RequestMakeMacro implements IClientIncomingPacket
 	 * packet type id 0xc1 sample c1 d // id S // macro name S // unknown desc S // unknown acronym c // icon c // count c // entry c // type d // skill id c // shortcut id S // command name format: cdSSScc (ccdcS)
 	 */
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int id = packet.readD();
-		final String name = packet.readS();
-		final String desc = packet.readS();
-		final String acronym = packet.readS();
-		final int icon = packet.readC();
-		int count = packet.readC();
+		final int id = packet.readInt();
+		final String name = packet.readString();
+		final String desc = packet.readString();
+		final String acronym = packet.readString();
+		final int icon = packet.readByte();
+		int count = packet.readByte();
 		if (count < 0)
 		{
-			return false;
+			return;
 		}
+		
 		if (count > MAX_MACRO_LENGTH)
 		{
 			count = MAX_MACRO_LENGTH;
@@ -53,17 +54,15 @@ public class RequestMakeMacro implements IClientIncomingPacket
 		final MacroCmd[] commands = new MacroCmd[count];
 		for (int i = 0; i < count; i++)
 		{
-			final int entry = packet.readC();
-			final int type = packet.readC(); // 1 = skill, 3 = action, 4 = shortcut
-			final int d1 = packet.readD(); // skill or page number for shortcuts
-			final int d2 = packet.readC();
-			final String command = packet.readS();
+			final int entry = packet.readByte();
+			final int type = packet.readByte(); // 1 = skill, 3 = action, 4 = shortcut
+			final int d1 = packet.readInt(); // skill or page number for shortcuts
+			final int d2 = packet.readByte();
+			final String command = packet.readString();
 			_commandsLength += command.length() + 1;
 			commands[i] = new MacroCmd(entry, type, d1, d2, command);
 		}
 		_macro = new Macro(id, icon, name, desc, acronym, commands);
-		
-		return true;
 	}
 	
 	@Override

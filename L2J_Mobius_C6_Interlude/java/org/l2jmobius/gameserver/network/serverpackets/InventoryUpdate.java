@@ -19,10 +19,9 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ItemInfo;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * 37 // Packet Identifier<br>
@@ -46,7 +45,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * <br>
  * @version $Revision: 1.3.2.2.2.4 $ $Date: 2005/03/27 15:29:39 $ Rebuild 23.2.2006 by Advi
  */
-public class InventoryUpdate implements IClientOutgoingPacket
+public class InventoryUpdate extends ServerPacket
 {
 	private final List<ItemInfo> _items;
 	
@@ -107,40 +106,39 @@ public class InventoryUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.INVENTORY_UPDATE.writeId(packet);
-		packet.writeH(_items.size());
+		ServerPackets.INVENTORY_UPDATE.writeId(this);
+		writeShort(_items.size());
 		for (ItemInfo item : _items)
 		{
-			packet.writeH(item.getChange()); // Update type : 01-add, 02-modify,
+			writeShort(item.getChange()); // Update type : 01-add, 02-modify,
 			// 03-remove
-			packet.writeH(item.getItem().getType1()); // Item Type 1 :
+			writeShort(item.getItem().getType1()); // Item Type 1 :
 			// 00-weapon/ring/earring/necklace,
 			// 01-armor/shield,
 			// 04-item/questitem/adena
-			packet.writeD(item.getObjectId()); // ObjectId
-			packet.writeD(item.getItem().getItemId()); // ItemId
-			packet.writeD(item.getCount()); // Quantity
-			packet.writeH(item.getItem().getType2()); // Item Type 2 : 00-weapon,
+			writeInt(item.getObjectId()); // ObjectId
+			writeInt(item.getItem().getItemId()); // ItemId
+			writeInt(item.getCount()); // Quantity
+			writeShort(item.getItem().getType2()); // Item Type 2 : 00-weapon,
 			// 01-shield/armor,
 			// 02-ring/earring/necklace,
 			// 03-questitem, 04-adena,
 			// 05-item
-			packet.writeH(item.getCustomType1()); // Filler (always 0)
-			packet.writeH(item.getEquipped()); // Equipped : 00-No, 01-yes
-			packet.writeD(item.getItem().getBodyPart()); // Slot : 0006-lr.ear,
+			writeShort(item.getCustomType1()); // Filler (always 0)
+			writeShort(item.getEquipped()); // Equipped : 00-No, 01-yes
+			writeInt(item.getItem().getBodyPart()); // Slot : 0006-lr.ear,
 			// 0008-neck,
 			// 0030-lr.finger,
 			// 0040-head, 0100-l.hand,
 			// 0200-gloves, 0400-chest,
 			// 0800-pants, 1000-feet,
 			// 4000-r.hand, 8000-r.hand
-			packet.writeH(item.getEnchant()); // Enchant level (pet level shown in control item)
-			packet.writeH(item.getCustomType2()); // Pet name exists or not shown in control item
-			packet.writeD(item.getAugemtationBonus());
-			packet.writeD(item.getMana());
+			writeShort(item.getEnchant()); // Enchant level (pet level shown in control item)
+			writeShort(item.getCustomType2()); // Pet name exists or not shown in control item
+			writeInt(item.getAugemtationBonus());
+			writeInt(item.getMana());
 		}
-		return true;
 	}
 }

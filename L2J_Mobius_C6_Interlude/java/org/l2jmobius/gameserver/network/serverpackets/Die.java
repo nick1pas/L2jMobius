@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
 import org.l2jmobius.gameserver.model.actor.Attackable;
@@ -26,9 +25,9 @@ import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Fort;
 import org.l2jmobius.gameserver.model.siege.SiegeClan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class Die implements IClientOutgoingPacket
+public class Die extends ServerPacket
 {
 	private final int _objectId;
 	private final boolean _fake;
@@ -57,14 +56,15 @@ public class Die implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_fake)
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.DIE.writeId(packet);
-		packet.writeD(_objectId);
+		
+		ServerPackets.DIE.writeId(this);
+		writeInt(_objectId);
 		// NOTE:
 		// 6d 00 00 00 00 - to nearest village
 		// 6d 01 00 00 00 - to hide away
@@ -72,7 +72,7 @@ public class Die implements IClientOutgoingPacket
 		// 6d 03 00 00 00 - to siege HQ
 		// sweepable
 		// 6d 04 00 00 00 - FIXED
-		packet.writeD(_canTeleport ? 1 : 0); // 6d 00 00 00 00 - to nearest village
+		writeInt(_canTeleport); // 6d 00 00 00 00 - to nearest village
 		if (_canTeleport && (_clan != null))
 		{
 			SiegeClan siegeClan = null;
@@ -97,18 +97,17 @@ public class Die implements IClientOutgoingPacket
 					isInDefense = true;
 				}
 			}
-			packet.writeD(_clan.getHideoutId() > 0 ? 1 : 0); // 6d 01 00 00 00 - to hide away
-			packet.writeD((_clan.getCastleId() > 0) || (_clan.getFortId() > 0) || isInDefense ? 1 : 0); // 6d 02 00 00 00 - to castle
-			packet.writeD((siegeClan != null) && !isInDefense && !siegeClan.getFlag().isEmpty() ? 1 : 0); // 6d 03 00 00 00 - to siege HQ
+			writeInt(_clan.getHideoutId() > 0); // 6d 01 00 00 00 - to hide away
+			writeInt((_clan.getCastleId() > 0) || (_clan.getFortId() > 0) || isInDefense); // 6d 02 00 00 00 - to castle
+			writeInt((siegeClan != null) && !isInDefense && !siegeClan.getFlag().isEmpty()); // 6d 03 00 00 00 - to siege HQ
 		}
 		else
 		{
-			packet.writeD(0); // 6d 01 00 00 00 - to hide away
-			packet.writeD(0); // 6d 02 00 00 00 - to castle
-			packet.writeD(0); // 6d 03 00 00 00 - to siege HQ
+			writeInt(0); // 6d 01 00 00 00 - to hide away
+			writeInt(0); // 6d 02 00 00 00 - to castle
+			writeInt(0); // 6d 03 00 00 00 - to siege HQ
 		}
-		packet.writeD(_sweepable ? 1 : 0); // sweepable (blue glow)
-		packet.writeD(_allowFixedRes ? 1 : 0); // 6d 04 00 00 00 - to FIXED
-		return true;
+		writeInt(_sweepable); // sweepable (blue glow)
+		writeInt(_allowFixedRes); // 6d 04 00 00 00 - to FIXED
 	}
 }

@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.ManorSeedData;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
@@ -41,38 +41,38 @@ import org.l2jmobius.gameserver.util.Util;
  * Format: (ch) d [dddd] d: size [ d obj id d item id d manor id d count ]
  * @author l3x
  */
-public class RequestProcureCropList implements IClientIncomingPacket
+public class RequestProcureCropList implements ClientPacket
 {
 	private int _size;
 	
 	private int[] _items; // count*4
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_size = packet.readD();
-		if (((_size * 16) > packet.getReadableBytes()) || (_size > 500) || (_size < 1))
+		_size = packet.readInt();
+		if (((_size * 16) > packet.getRemainingLength()) || (_size > 500) || (_size < 1))
 		{
 			_size = 0;
-			return false;
+			return;
 		}
+		
 		_items = new int[_size * 4];
 		for (int i = 0; i < _size; i++)
 		{
-			final int objId = packet.readD();
+			final int objId = packet.readInt();
 			_items[(i * 4) + 0] = objId;
-			final int itemId = packet.readD();
+			final int itemId = packet.readInt();
 			_items[(i * 4) + 1] = itemId;
-			final int manorId = packet.readD();
+			final int manorId = packet.readInt();
 			_items[(i * 4) + 2] = manorId;
-			long count = packet.readD();
+			long count = packet.readInt();
 			if (count > Integer.MAX_VALUE)
 			{
 				count = Integer.MAX_VALUE;
 			}
 			_items[(i * 4) + 3] = (int) count;
 		}
-		return true;
 	}
 	
 	@Override

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.GetOffVehicle;
@@ -24,7 +24,7 @@ import org.l2jmobius.gameserver.network.serverpackets.GetOffVehicle;
 /**
  * @author Maktakien
  */
-public class RequestGetOffVehicle implements IClientIncomingPacket
+public class RequestGetOffVehicle implements ClientPacket
 {
 	private int _boatId;
 	private int _x;
@@ -32,13 +32,12 @@ public class RequestGetOffVehicle implements IClientIncomingPacket
 	private int _z;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_boatId = packet.readD();
-		_x = packet.readD();
-		_y = packet.readD();
-		_z = packet.readD();
-		return true;
+		_boatId = packet.readInt();
+		_x = packet.readInt();
+		_y = packet.readInt();
+		_z = packet.readInt();
 	}
 	
 	@Override

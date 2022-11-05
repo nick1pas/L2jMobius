@@ -19,13 +19,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoom;
 import org.l2jmobius.gameserver.model.partymatching.PartyMatchRoomList;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PartyMatchList implements IClientOutgoingPacket
+public class PartyMatchList extends ServerPacket
 {
 	private final Player _player;
 	private final int _loc;
@@ -41,7 +40,7 @@ public class PartyMatchList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		for (PartyMatchRoom room : PartyMatchRoomList.getInstance().getRooms())
 		{
@@ -62,28 +61,28 @@ public class PartyMatchList implements IClientOutgoingPacket
 		}
 		int count = 0;
 		final int size = _rooms.size();
-		OutgoingPackets.PARTY_MATCH_LIST.writeId(packet);
+		
+		ServerPackets.PARTY_MATCH_LIST.writeId(this);
 		if (size > 0)
 		{
-			packet.writeD(1);
+			writeInt(1);
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		packet.writeD(_rooms.size());
+		writeInt(_rooms.size());
 		while (size > count)
 		{
-			packet.writeD(_rooms.get(count).getId());
-			packet.writeS(_rooms.get(count).getTitle());
-			packet.writeD(_rooms.get(count).getLocation());
-			packet.writeD(_rooms.get(count).getMinLevel());
-			packet.writeD(_rooms.get(count).getMaxLevel());
-			packet.writeD(_rooms.get(count).getMembers());
-			packet.writeD(_rooms.get(count).getMaxMembers());
-			packet.writeS(_rooms.get(count).getOwner().getName());
+			writeInt(_rooms.get(count).getId());
+			writeString(_rooms.get(count).getTitle());
+			writeInt(_rooms.get(count).getLocation());
+			writeInt(_rooms.get(count).getMinLevel());
+			writeInt(_rooms.get(count).getMaxLevel());
+			writeInt(_rooms.get(count).getMembers());
+			writeInt(_rooms.get(count).getMaxMembers());
+			writeString(_rooms.get(count).getOwner().getName());
 			count++;
 		}
-		return true;
 	}
 }

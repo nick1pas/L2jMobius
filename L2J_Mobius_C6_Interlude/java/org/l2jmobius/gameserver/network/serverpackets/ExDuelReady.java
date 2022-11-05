@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: ch d.
  * @author KenM
  */
-public class ExDuelReady implements IClientOutgoingPacket
+public class ExDuelReady extends ServerPacket
 {
 	/** The _unk1. */
 	private final int _unk1;
@@ -38,10 +37,9 @@ public class ExDuelReady implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DUEL_READY.writeId(packet);
-		packet.writeD(_unk1);
-		return true;
+		ServerPackets.EX_DUEL_READY.writeId(this);
+		writeInt(_unk1);
 	}
 }

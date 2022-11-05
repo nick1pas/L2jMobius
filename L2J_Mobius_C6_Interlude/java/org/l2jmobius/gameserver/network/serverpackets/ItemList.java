@@ -18,10 +18,9 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 27 00 00 01 00 // item count 04 00 // itemType1 0-weapon/ring/earring/necklace 1-armor/shield 4-item/questitem/adena c6 37 50 40 // objectId cd 09 00 00 // itemId 05 00 00 00 // count 05 00 // itemType2 0-weapon 1-shield/armor 2-ring/earring/necklace 3-questitem 4-adena 5-item 00 00 //
@@ -29,7 +28,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * revision 415
  * @version $Revision: 1.4.2.1.2.4 $ $Date: 2005/03/27 15:29:57 $
  */
-public class ItemList implements IClientOutgoingPacket
+public class ItemList extends ServerPacket
 {
 	private final Collection<Item> _items;
 	private final boolean _showWindow;
@@ -47,31 +46,30 @@ public class ItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.ITEM_LIST.writeId(packet);
-		packet.writeH(_showWindow ? 1 : 0);
-		packet.writeH(_items.size());
+		ServerPackets.ITEM_LIST.writeId(this);
+		writeShort(_showWindow);
+		writeShort(_items.size());
 		for (Item temp : _items)
 		{
 			if ((temp == null) || (temp.getTemplate() == null))
 			{
 				continue;
 			}
-			packet.writeH(temp.getTemplate().getType1());
-			packet.writeD(temp.getObjectId());
-			packet.writeD(temp.getItemId());
-			packet.writeD(temp.getCount());
-			packet.writeH(temp.getTemplate().getType2());
-			packet.writeH(temp.getCustomType1());
-			packet.writeH(temp.isEquipped() ? 1 : 0);
-			packet.writeD(temp.getTemplate().getBodyPart());
-			packet.writeH(temp.getEnchantLevel());
+			writeShort(temp.getTemplate().getType1());
+			writeInt(temp.getObjectId());
+			writeInt(temp.getItemId());
+			writeInt(temp.getCount());
+			writeShort(temp.getTemplate().getType2());
+			writeShort(temp.getCustomType1());
+			writeShort(temp.isEquipped());
+			writeInt(temp.getTemplate().getBodyPart());
+			writeShort(temp.getEnchantLevel());
 			// race tickets
-			packet.writeH(temp.getCustomType2());
-			packet.writeD((temp.isAugmented()) ? temp.getAugmentation().getAugmentationId() : 0x00);
-			packet.writeD(temp.getMana());
+			writeShort(temp.getCustomType2());
+			writeInt((temp.isAugmented()) ? temp.getAugmentation().getAugmentationId() : 0);
+			writeInt(temp.getMana());
 		}
-		return true;
 	}
 }

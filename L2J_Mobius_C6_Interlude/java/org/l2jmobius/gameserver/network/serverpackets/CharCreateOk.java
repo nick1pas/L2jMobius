@@ -16,19 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class CharCreateOk implements IClientOutgoingPacket
+public class CharCreateOk extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_CREATE_OK.writeId(packet);
-		packet.writeD(1);
-		return true;
+		ServerPackets.CHAR_CREATE_OK.writeId(this);
+		writeInt(1);
 	}
 }

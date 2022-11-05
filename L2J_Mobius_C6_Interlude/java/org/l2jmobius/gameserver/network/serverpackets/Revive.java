@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 0000: 0c 9b da 12 40 ....@ format d
  * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:40 $
  */
-public class Revive implements IClientOutgoingPacket
+public class Revive extends ServerPacket
 {
 	private final int _objectId;
 	
@@ -34,10 +33,9 @@ public class Revive implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.REVIVE.writeId(packet);
-		packet.writeD(_objectId);
-		return true;
+		ServerPackets.REVIVE.writeId(this);
+		writeInt(_objectId);
 	}
 }

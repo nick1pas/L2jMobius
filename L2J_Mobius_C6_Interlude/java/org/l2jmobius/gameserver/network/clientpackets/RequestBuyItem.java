@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.instancemanager.TradeManager;
@@ -45,19 +45,19 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @version $Revision: 1.12.4.4 $ $Date: 2005/03/27 15:29:30 $
  */
-public class RequestBuyItem implements IClientIncomingPacket
+public class RequestBuyItem implements ClientPacket
 {
 	private int _listId;
 	private int _count;
 	private int[] _items; // count*2
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_listId = packet.readD();
-		_count = packet.readD();
+		_listId = packet.readInt();
+		_count = packet.readInt();
 		// count*8 is the size of a for iteration of each item
-		if (((_count * 2) < 0) || (_count > Config.MAX_ITEM_IN_PACKET) || ((_count * 8) > packet.getReadableBytes()))
+		if (((_count * 2) < 0) || (_count > Config.MAX_ITEM_IN_PACKET) || ((_count * 8) > packet.getRemainingLength()))
 		{
 			_count = 0;
 		}
@@ -65,33 +65,30 @@ public class RequestBuyItem implements IClientIncomingPacket
 		_items = new int[_count * 2];
 		for (int i = 0; i < _count; i++)
 		{
-			final int itemId = packet.readD();
+			final int itemId = packet.readInt();
 			if (itemId < 1)
 			{
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			
 			_items[(i * 2) + 0] = itemId;
 			
-			final int count = packet.readD();
+			final int count = packet.readInt();
 			if ((count > Integer.MAX_VALUE) || (count < 1))
 			{
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			
 			if (count > 10000) // Count check.
 			{
-				client.getPlayer().sendMessage("You cannot buy more than 10.000 items.");
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			
 			_items[(i * 2) + 1] = count;
 		}
-		
-		return true;
 	}
 	
 	@Override
@@ -100,6 +97,12 @@ public class RequestBuyItem implements IClientIncomingPacket
 		final Player player = client.getPlayer();
 		if (player == null)
 		{
+			return;
+		}
+		
+		if (_count == -1)
+		{
+			player.sendMessage("You cannot buy more than 10.000 items.");
 			return;
 		}
 		

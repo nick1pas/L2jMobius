@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.ItemRequest;
 import org.l2jmobius.gameserver.model.TradeList;
 import org.l2jmobius.gameserver.model.World;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.Util;
 
-public class RequestPrivateStoreSell implements IClientIncomingPacket
+public class RequestPrivateStoreSell implements ClientPacket
 {
 	private int _storePlayerId;
 	private int _count;
@@ -37,12 +37,12 @@ public class RequestPrivateStoreSell implements IClientIncomingPacket
 	private ItemRequest[] _items;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_storePlayerId = packet.readD();
-		_count = packet.readD();
+		_storePlayerId = packet.readInt();
+		_count = packet.readInt();
 		// count*20 is the size of a for iteration of each item
-		if ((_count < 0) || ((_count * 20) > packet.getReadableBytes()) || (_count > Config.MAX_ITEM_IN_PACKET))
+		if ((_count < 0) || ((_count * 20) > packet.getRemainingLength()) || (_count > Config.MAX_ITEM_IN_PACKET))
 		{
 			_count = 0;
 		}
@@ -50,18 +50,16 @@ public class RequestPrivateStoreSell implements IClientIncomingPacket
 		long priceTotal = 0;
 		for (int i = 0; i < _count; i++)
 		{
-			final int objectId = packet.readD();
-			final int itemId = packet.readD();
-			final int enchant = packet.readH();
-			packet.readH(); // TODO analyse this
-			final long count = packet.readD();
-			final int price = packet.readD();
+			final int objectId = packet.readInt();
+			final int itemId = packet.readInt();
+			final int enchant = packet.readShort();
+			packet.readShort(); // TODO analyze this
+			final long count = packet.readInt();
+			final int price = packet.readInt();
 			if ((count > Integer.MAX_VALUE) || (count < 0))
 			{
-				final String msgErr = "[RequestPrivateStoreSell] player " + client.getPlayer().getName() + " tried an overflow exploit, ban this player!";
-				Util.handleIllegalPlayerAction(client.getPlayer(), msgErr, Config.DEFAULT_PUNISH);
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			
 			_items[i] = new ItemRequest(objectId, itemId, enchant, (int) count, price);
@@ -70,14 +68,11 @@ public class RequestPrivateStoreSell implements IClientIncomingPacket
 		
 		if ((priceTotal < 0) || (priceTotal > Integer.MAX_VALUE))
 		{
-			final String msgErr = "[RequestPrivateStoreSell] player " + client.getPlayer().getName() + " tried an overflow exploit, ban this player!";
-			Util.handleIllegalPlayerAction(client.getPlayer(), msgErr, Config.DEFAULT_PUNISH);
-			_count = 0;
-			return false;
+			_count = -1;
+			return;
 		}
 		
 		_price = (int) priceTotal;
-		return true;
 	}
 	
 	@Override
@@ -86,6 +81,14 @@ public class RequestPrivateStoreSell implements IClientIncomingPacket
 		final Player player = client.getPlayer();
 		if (player == null)
 		{
+			return;
+		}
+		
+		if (_count == -1)
+		{
+			final String msgErr = "[RequestPrivateStoreSell] player " + player.getName() + " tried an overflow exploit, ban this player!";
+			Util.handleIllegalPlayerAction(player, msgErr, Config.DEFAULT_PUNISH);
+			_count = -1;
 			return;
 		}
 		

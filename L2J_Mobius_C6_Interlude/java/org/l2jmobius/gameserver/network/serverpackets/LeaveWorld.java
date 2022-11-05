@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.3.3 $ $Date: 2009/05/12 19:06:39 $
  */
-public class LeaveWorld implements IClientOutgoingPacket
+public class LeaveWorld extends ServerPacket
 {
 	public static final LeaveWorld STATIC_PACKET = new LeaveWorld();
 	
@@ -31,9 +30,8 @@ public class LeaveWorld implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.LEAVE_WORLD.writeId(packet);
-		return true;
+		ServerPackets.LEAVE_WORLD.writeId(this);
 	}
 }

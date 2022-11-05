@@ -53,7 +53,7 @@ public class AdminOnline implements IAdminCommandHandler
 			{
 				if (player.getClient() != null)
 				{
-					final String ip = player.getClient().getIpAddress();
+					final String ip = player.getClient().getIp();
 					if ((ip != null) && !ips.contains(ip))
 					{
 						ips.add(ip);

@@ -19,7 +19,6 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ExSendManorList;
@@ -28,14 +27,8 @@ import org.l2jmobius.gameserver.network.serverpackets.ExSendManorList;
  * Format: ch c (id) 0xD0 h (subid) 0x08
  * @author l3x
  */
-public class RequestManorList implements IClientIncomingPacket
+public class RequestManorList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ManorSeedData;
 import org.l2jmobius.gameserver.instancemanager.CastleManorManager.SeedProduction;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * format(packet 0xFE) ch ddd [dddddcdcd] c - id h - sub id d - manor id d d - size [ d - seed id d - left to buy d - started amount d - sell price d - seed level c d - reward 1 id c d - reward 2 id ]
  * @author l3x
  */
-public class ExShowSeedInfo implements IClientOutgoingPacket
+public class ExShowSeedInfo extends ServerPacket
 {
 	private List<SeedProduction> _seeds;
 	private final int _manorId;
@@ -44,25 +43,24 @@ public class ExShowSeedInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_SEED_INFO.writeId(packet);
-		packet.writeC(0);
-		packet.writeD(_manorId); // Manor ID
-		packet.writeD(0);
-		packet.writeD(_seeds.size());
+		ServerPackets.EX_SHOW_SEED_INFO.writeId(this);
+		writeByte(0);
+		writeInt(_manorId); // Manor ID
+		writeInt(0);
+		writeInt(_seeds.size());
 		for (SeedProduction seed : _seeds)
 		{
-			packet.writeD(seed.getId()); // Seed id
-			packet.writeD(seed.getCanProduce()); // Left to buy
-			packet.writeD(seed.getStartProduce()); // Started amount
-			packet.writeD(seed.getPrice()); // Sell Price
-			packet.writeD(ManorSeedData.getInstance().getSeedLevel(seed.getId())); // Seed Level
-			packet.writeC(1); // reward 1 Type
-			packet.writeD(ManorSeedData.getInstance().getRewardItemBySeed(seed.getId(), 1)); // Reward 1 Type Item Id
-			packet.writeC(1); // reward 2 Type
-			packet.writeD(ManorSeedData.getInstance().getRewardItemBySeed(seed.getId(), 2)); // Reward 2 Type Item Id
+			writeInt(seed.getId()); // Seed id
+			writeInt(seed.getCanProduce()); // Left to buy
+			writeInt(seed.getStartProduce()); // Started amount
+			writeInt(seed.getPrice()); // Sell Price
+			writeInt(ManorSeedData.getInstance().getSeedLevel(seed.getId())); // Seed Level
+			writeByte(1); // reward 1 Type
+			writeInt(ManorSeedData.getInstance().getRewardItemBySeed(seed.getId(), 1)); // Reward 1 Type Item Id
+			writeByte(1); // reward 2 Type
+			writeInt(ManorSeedData.getInstance().getRewardItemBySeed(seed.getId(), 2)); // Reward 2 Type Item Id
 		}
-		return true;
 	}
 }

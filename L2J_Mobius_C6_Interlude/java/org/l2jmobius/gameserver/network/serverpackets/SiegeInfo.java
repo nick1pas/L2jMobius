@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Shows the Siege Info<br>
@@ -44,7 +43,7 @@ import org.l2jmobius.gameserver.network.PacketLogger;
  * d = (UNKNOW) Siege Time Select Related?
  * @author KenM
  */
-public class SiegeInfo implements IClientOutgoingPacket
+public class SiegeInfo extends ServerPacket
 {
 	private final Player _player;
 	private final int _residenceId;
@@ -71,21 +70,21 @@ public class SiegeInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SIEGE_INFO.writeId(packet);
-		packet.writeD(_residenceId);
-		packet.writeD((_ownerId == _player.getClanId()) && _player.isClanLeader() ? 1 : 0);
-		packet.writeD(_ownerId);
+		ServerPackets.SIEGE_INFO.writeId(this);
+		writeInt(_residenceId);
+		writeInt((_ownerId == _player.getClanId()) && _player.isClanLeader());
+		writeInt(_ownerId);
 		if (_ownerId > 0)
 		{
 			final Clan owner = ClanTable.getInstance().getClan(_ownerId);
 			if (owner != null)
 			{
-				packet.writeS(owner.getName()); // Clan Name
-				packet.writeS(owner.getLeaderName()); // Clan Leader Name
-				packet.writeD(owner.getAllyId()); // Ally ID
-				packet.writeS(owner.getAllyName()); // Ally Name
+				writeString(owner.getName()); // Clan Name
+				writeString(owner.getLeaderName()); // Clan Leader Name
+				writeInt(owner.getAllyId()); // Ally ID
+				writeString(owner.getAllyName()); // Ally Name
 			}
 			else
 			{
@@ -94,14 +93,13 @@ public class SiegeInfo implements IClientOutgoingPacket
 		}
 		else
 		{
-			packet.writeS("NPC"); // Clan Name
-			packet.writeS(""); // Clan Leader Name
-			packet.writeD(0); // Ally ID
-			packet.writeS(""); // Ally Name
+			writeString("NPC"); // Clan Name
+			writeString(""); // Clan Leader Name
+			writeInt(0); // Ally ID
+			writeString(""); // Ally Name
 		}
-		packet.writeD((int) (System.currentTimeMillis() / 1000));
-		packet.writeD((int) _siegeDate);
-		packet.writeD(0); // number of choices?
-		return true;
+		writeInt((int) (System.currentTimeMillis() / 1000));
+		writeInt((int) _siegeDate);
+		writeInt(0); // number of choices?
 	}
 }

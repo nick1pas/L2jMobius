@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.Clan.SubPledge;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PledgeShowMemberListAll implements IClientOutgoingPacket
+public class PledgeShowMemberListAll extends ServerPacket
 {
 	private final Clan _clan;
 	private final Player _player;
@@ -41,10 +40,10 @@ public class PledgeShowMemberListAll implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		_pledgeType = 0;
-		writePledge(packet, 0);
+		writePledge(0);
 		for (SubPledge element : _clan.getAllSubPledges())
 		{
 			_player.sendPacket(new PledgeReceiveSubPledgeCreated(element));
@@ -59,31 +58,30 @@ public class PledgeShowMemberListAll implements IClientOutgoingPacket
 		}
 		// unless this is sent sometimes, the client doesn't recognize the player as the leader
 		_player.sendPacket(new UserInfo(_player));
-		return true;
 	}
 	
-	void writePledge(PacketWriter packet, int mainOrSubpledge)
+	void writePledge(int mainOrSubpledge)
 	{
-		OutgoingPackets.PLEDGE_SHOW_MEMBER_LIST_ALL.writeId(packet);
-		packet.writeD(mainOrSubpledge); // c5 main clan 0 or any subpledge 1?
-		packet.writeD(_clan.getClanId());
-		packet.writeD(_pledgeType); // c5 - possibly pledge type?
-		packet.writeS(_clan.getName());
-		packet.writeS(_clan.getLeaderName());
-		packet.writeD(_clan.getCrestId()); // crest id .. is used again
-		packet.writeD(_clan.getLevel());
-		packet.writeD(_clan.getCastleId());
-		packet.writeD(_clan.getHideoutId());
-		packet.writeD(ClanTable.getInstance().getTopRate(_clan.getClanId()));
-		packet.writeD(_clan.getReputationScore()); // was activechar level
-		packet.writeD(0); // 0
-		packet.writeD(0); // 0
-		packet.writeD(_clan.getAllyId());
-		packet.writeS(_clan.getAllyName());
-		packet.writeD(_clan.getAllyCrestId());
-		packet.writeD(_clan.isAtWar());
-		packet.writeD(_clan.getSubPledgeMembersCount(_pledgeType));
-		int yellow;
+		ServerPackets.PLEDGE_SHOW_MEMBER_LIST_ALL.writeId(this);
+		writeInt(mainOrSubpledge); // c5 main clan 0 or any subpledge 1?
+		writeInt(_clan.getClanId());
+		writeInt(_pledgeType); // c5 - possibly pledge type?
+		writeString(_clan.getName());
+		writeString(_clan.getLeaderName());
+		writeInt(_clan.getCrestId()); // crest id .. is used again
+		writeInt(_clan.getLevel());
+		writeInt(_clan.getCastleId());
+		writeInt(_clan.getHideoutId());
+		writeInt(ClanTable.getInstance().getTopRate(_clan.getClanId()));
+		writeInt(_clan.getReputationScore()); // was activechar level
+		writeInt(0); // 0
+		writeInt(0); // 0
+		writeInt(_clan.getAllyId());
+		writeString(_clan.getAllyName());
+		writeInt(_clan.getAllyCrestId());
+		writeInt(_clan.isAtWar());
+		writeInt(_clan.getSubPledgeMembersCount(_pledgeType));
+		boolean yellow;
 		for (ClanMember m : _members)
 		{
 			if (m.getPledgeType() != _pledgeType)
@@ -92,23 +90,23 @@ public class PledgeShowMemberListAll implements IClientOutgoingPacket
 			}
 			if (m.getPledgeType() == -1)
 			{
-				yellow = m.getSponsor() != 0 ? 1 : 0;
+				yellow = m.getSponsor() != 0;
 			}
 			else if (m.getPlayer() != null)
 			{
-				yellow = m.getPlayer().isClanLeader() ? 1 : 0;
+				yellow = m.getPlayer().isClanLeader();
 			}
 			else
 			{
-				yellow = 0;
+				yellow = false;
 			}
-			packet.writeS(m.getName());
-			packet.writeD(m.getLevel());
-			packet.writeD(m.getClassId());
-			packet.writeD(0);
-			packet.writeD(1);
-			packet.writeD(m.isOnline() || (_player.getObjectId() == m.getObjectId()) ? m.getObjectId() : 0);
-			packet.writeD(yellow);
+			writeString(m.getName());
+			writeInt(m.getLevel());
+			writeInt(m.getClassId());
+			writeInt(0);
+			writeInt(1);
+			writeInt(m.isOnline() || (_player.getObjectId() == m.getObjectId()) ? m.getObjectId() : 0);
+			writeInt(yellow);
 		}
 	}
 }

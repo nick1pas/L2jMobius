@@ -93,7 +93,6 @@ public class Config
 	private static final String SERVER_CONFIG_FILE = "./config/Server.ini";
 	private static final String SEVENSIGNS_CONFIG_FILE = "./config/SevenSigns.ini";
 	public static final String SIEGE_CONFIG_FILE = "./config/Siege.ini";
-	public static final String TELNET_CONFIG_FILE = "./config/Telnet.ini";
 	// custom
 	private static final String BANK_CONFIG_FILE = "./config/custom/Bank.ini";
 	private static final String BOSS_ANNOUNCEMENTS_CONFIG_FILE = "./config/custom/BossAnnouncements.ini";
@@ -226,8 +225,6 @@ public class Config
 	public static String BACKUP_PATH;
 	public static int BACKUP_DAYS;
 	public static boolean RESERVE_HOST_ON_LOGIN = false;
-	
-	public static boolean IS_TELNET_ENABLED;
 	
 	public static boolean JAIL_IS_PVP;
 	public static boolean JAIL_DISABLE_CHAT;
@@ -1088,6 +1085,15 @@ public class Config
 	public static String GAME_SERVER_LOGIN_HOST;
 	public static List<String> GAME_SERVER_SUBNETS;
 	public static List<String> GAME_SERVER_HOSTS;
+	public static int CLIENT_READ_POOL_SIZE;
+	public static int CLIENT_EXECUTE_POOL_SIZE;
+	public static int PACKET_QUEUE_LIMIT;
+	public static boolean PACKET_FLOOD_DISCONNECT;
+	public static boolean PACKET_FLOOD_DROP;
+	public static boolean PACKET_FLOOD_LOGGED;
+	public static boolean TCP_NO_DELAY;
+	public static int CONNECTION_TIMEOUT;
+	public static boolean PACKET_ENCRYPTION;
 	public static int REQUEST_ID;
 	public static boolean ACCEPT_ALTERNATE_ID;
 	public static File DATAPACK_ROOT;
@@ -1101,7 +1107,7 @@ public class Config
 	public static int THREADS_PER_SCHEDULED_THREAD_POOL;
 	public static int INSTANT_THREAD_POOL_COUNT;
 	public static int THREADS_PER_INSTANT_THREAD_POOL;
-	public static int IO_PACKET_THREAD_CORE_SIZE;
+	public static boolean THREADS_FOR_CLIENT_PACKETS;
 	public static boolean DEADLOCK_DETECTOR;
 	public static int DEADLOCK_CHECK_INTERVAL;
 	public static boolean RESTART_ON_DEADLOCK;
@@ -1158,7 +1164,15 @@ public class Config
 		PORT_GAME = serverConfig.getInt("GameserverPort", 7777);
 		GAME_SERVER_LOGIN_PORT = serverConfig.getInt("LoginPort", 9014);
 		GAME_SERVER_LOGIN_HOST = serverConfig.getString("LoginHost", "127.0.0.1");
-		
+		CLIENT_READ_POOL_SIZE = serverConfig.getInt("ClientReadPoolSize", 100);
+		CLIENT_EXECUTE_POOL_SIZE = serverConfig.getInt("ClientExecutePoolSize", 50);
+		PACKET_QUEUE_LIMIT = serverConfig.getInt("PacketQueueLimit", 80);
+		PACKET_FLOOD_DISCONNECT = serverConfig.getBoolean("PacketFloodDisconnect", false);
+		PACKET_FLOOD_DROP = serverConfig.getBoolean("PacketFloodDrop", false);
+		PACKET_FLOOD_LOGGED = serverConfig.getBoolean("PacketFloodLogged", true);
+		TCP_NO_DELAY = serverConfig.getBoolean("TcpNoDelay", true);
+		CONNECTION_TIMEOUT = serverConfig.getInt("ConnectionTimeout", 800);
+		PACKET_ENCRYPTION = serverConfig.getBoolean("PacketEncryption", false);
 		DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
 		DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/");
 		DATABASE_LOGIN = serverConfig.getString("Login", "root");
@@ -1200,11 +1214,7 @@ public class Config
 			INSTANT_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
 		}
 		THREADS_PER_INSTANT_THREAD_POOL = serverConfig.getInt("ThreadsPerInstantThreadPool", 2);
-		IO_PACKET_THREAD_CORE_SIZE = serverConfig.getInt("UrgentPacketThreadCoreSize", -1);
-		if (IO_PACKET_THREAD_CORE_SIZE == -1)
-		{
-			IO_PACKET_THREAD_CORE_SIZE = Runtime.getRuntime().availableProcessors();
-		}
+		THREADS_FOR_CLIENT_PACKETS = serverConfig.getBoolean("ThreadsForClientPackets", true);
 		DEADLOCK_DETECTOR = serverConfig.getBoolean("DeadLockDetector", true);
 		DEADLOCK_CHECK_INTERVAL = serverConfig.getInt("DeadLockCheckInterval", 20);
 		RESTART_ON_DEADLOCK = serverConfig.getBoolean("RestartOnDeadlock", false);
@@ -1230,12 +1240,6 @@ public class Config
 		PRECAUTIONARY_RESTART_CHECKS = serverConfig.getBoolean("PrecautionaryRestartChecks", true);
 		PRECAUTIONARY_RESTART_PERCENTAGE = serverConfig.getInt("PrecautionaryRestartPercentage", 95);
 		PRECAUTIONARY_RESTART_DELAY = serverConfig.getInt("PrecautionaryRestartDelay", 60) * 1000;
-	}
-	
-	public static void loadTelnetConfig()
-	{
-		final PropertiesParser telnetConfig = new PropertiesParser(TELNET_CONFIG_FILE);
-		IS_TELNET_ENABLED = telnetConfig.getBoolean("EnableTelnet", false);
 	}
 	
 	public static void loadRatesConfig()
@@ -3025,14 +3029,10 @@ public class Config
 			final IPConfigData ipcd = new IPConfigData();
 			GAME_SERVER_SUBNETS = ipcd.getSubnets();
 			GAME_SERVER_HOSTS = ipcd.getHosts();
-			
-			loadTelnetConfig();
 		}
 		else if (SERVER_MODE == ServerMode.LOGIN)
 		{
 			loadLoginStartConfig();
-			
-			loadTelnetConfig();
 		}
 		else
 		{

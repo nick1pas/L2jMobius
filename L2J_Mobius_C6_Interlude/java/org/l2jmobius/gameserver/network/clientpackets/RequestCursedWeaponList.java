@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -26,14 +25,8 @@ import org.l2jmobius.gameserver.network.serverpackets.ExCursedWeaponList;
  * Format: (ch)
  * @author -Wooden-
  */
-public class RequestCursedWeaponList implements IClientIncomingPacket
+public class RequestCursedWeaponList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

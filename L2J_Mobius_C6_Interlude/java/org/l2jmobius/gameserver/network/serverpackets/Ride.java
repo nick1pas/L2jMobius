@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class Ride implements IClientOutgoingPacket
+public class Ride extends ServerPacket
 {
 	public static final int ACTION_MOUNT = 1;
 	public static final int ACTION_DISMOUNT = 0;
@@ -52,13 +51,12 @@ public class Ride implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.RIDE.writeId(packet);
-		packet.writeD(_id);
-		packet.writeD(_bRide);
-		packet.writeD(_rideType);
-		packet.writeD(_rideClassID);
-		return true;
+		ServerPackets.RIDE.writeId(this);
+		writeInt(_id);
+		writeInt(_bRide);
+		writeInt(_rideType);
+		writeInt(_rideClassID);
 	}
 }

@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Skill;
 import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: (ch) d [dd].
  * @author -Wooden-
  */
-public class PledgeSkillList implements IClientOutgoingPacket
+public class PledgeSkillList extends ServerPacket
 {
 	private final Collection<Skill> _skills;
 	
@@ -37,15 +36,14 @@ public class PledgeSkillList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_SKILL_LIST.writeId(packet);
-		packet.writeD(_skills.size());
+		ServerPackets.PLEDGE_SKILL_LIST.writeId(this);
+		writeInt(_skills.size());
 		for (Skill skill : _skills)
 		{
-			packet.writeD(skill.getId());
-			packet.writeD(skill.getLevel());
+			writeInt(skill.getId());
+			writeInt(skill.getLevel());
 		}
-		return true;
 	}
 }

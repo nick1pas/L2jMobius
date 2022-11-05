@@ -17,14 +17,13 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class UserInfo implements IClientOutgoingPacket
+public class UserInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Inventory _inventory;
@@ -56,212 +55,211 @@ public class UserInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.USER_INFO.writeId(packet);
-		packet.writeD(_player.getX());
-		packet.writeD(_player.getY());
-		packet.writeD(_player.getZ());
-		packet.writeD(_player.getBoat() != null ? _player.getBoat().getObjectId() : 0);
-		packet.writeD(_player.getObjectId());
-		packet.writeS(_player.getName());
-		packet.writeD(_player.getRace().ordinal());
-		packet.writeD(_player.getAppearance().isFemale() ? 1 : 0);
+		ServerPackets.USER_INFO.writeId(this);
+		writeInt(_player.getX());
+		writeInt(_player.getY());
+		writeInt(_player.getZ());
+		writeInt(_player.getBoat() != null ? _player.getBoat().getObjectId() : 0);
+		writeInt(_player.getObjectId());
+		writeString(_player.getName());
+		writeInt(_player.getRace().ordinal());
+		writeInt(_player.getAppearance().isFemale());
 		if (_player.getClassIndex() == 0)
 		{
-			packet.writeD(_player.getClassId().getId());
+			writeInt(_player.getClassId().getId());
 		}
 		else
 		{
-			packet.writeD(_player.getBaseClass());
+			writeInt(_player.getBaseClass());
 		}
-		packet.writeD(_player.getLevel());
-		packet.writeQ(_player.getExp());
-		packet.writeD(_player.getSTR());
-		packet.writeD(_player.getDEX());
-		packet.writeD(_player.getCON());
-		packet.writeD(_player.getINT());
-		packet.writeD(_player.getWIT());
-		packet.writeD(_player.getMEN());
-		packet.writeD(_player.getMaxHp());
-		packet.writeD((int) _player.getCurrentHp());
-		packet.writeD(_player.getMaxMp());
-		packet.writeD((int) _player.getCurrentMp());
-		packet.writeD(_player.getSp());
-		packet.writeD(_player.getCurrentLoad());
-		packet.writeD(_player.getMaxLoad());
-		packet.writeD(_player.getActiveWeaponItem() != null ? 40 : 20); // 20 no weapon, 40 weapon equipped
+		writeInt(_player.getLevel());
+		writeLong(_player.getExp());
+		writeInt(_player.getSTR());
+		writeInt(_player.getDEX());
+		writeInt(_player.getCON());
+		writeInt(_player.getINT());
+		writeInt(_player.getWIT());
+		writeInt(_player.getMEN());
+		writeInt(_player.getMaxHp());
+		writeInt((int) _player.getCurrentHp());
+		writeInt(_player.getMaxMp());
+		writeInt((int) _player.getCurrentMp());
+		writeInt(_player.getSp());
+		writeInt(_player.getCurrentLoad());
+		writeInt(_player.getMaxLoad());
+		writeInt(_player.getActiveWeaponItem() != null ? 40 : 20); // 20 no weapon, 40 weapon equipped
 		
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_DHAIR));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_REAR));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LEAR));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_NECK));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_RFINGER));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LFINGER));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_HEAD));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LHAND));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_GLOVES));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_CHEST));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LEGS));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_FEET));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_BACK));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LRHAND));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
-		packet.writeD(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_FACE));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_DHAIR));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_REAR));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LEAR));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_NECK));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_RFINGER));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LFINGER));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_HEAD));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LHAND));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_GLOVES));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_CHEST));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LEGS));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_FEET));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_BACK));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_LRHAND));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
+		writeInt(_inventory.getPaperdollObjectId(Inventory.PAPERDOLL_FACE));
 		
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_DHAIR));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_BACK));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
-		packet.writeD(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_FACE));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_DHAIR));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_BACK));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
+		writeInt(_inventory.getPaperdollItemId(Inventory.PAPERDOLL_FACE));
 		
 		// c6 new h's
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeD(_inventory.getPaperdollAugmentationId(Inventory.PAPERDOLL_RHAND));
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeD(_inventory.getPaperdollAugmentationId(Inventory.PAPERDOLL_LRHAND));
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
-		packet.writeH(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeInt(_inventory.getPaperdollAugmentationId(Inventory.PAPERDOLL_RHAND));
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeInt(_inventory.getPaperdollAugmentationId(Inventory.PAPERDOLL_LRHAND));
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
+		writeShort(0);
 		// end of c6 new h's
 		
-		packet.writeD(_player.getPAtk(null));
-		packet.writeD(_player.getPAtkSpd());
-		packet.writeD(_player.getPDef(null));
-		packet.writeD(_player.getEvasionRate(null));
-		packet.writeD(_player.getAccuracy());
-		packet.writeD(_player.getCriticalHit(null, null));
-		packet.writeD(_player.getMAtk(null, null));
-		packet.writeD(_player.getMAtkSpd());
-		packet.writeD(_player.getPAtkSpd());
-		packet.writeD(_player.getMDef(null, null));
-		packet.writeD(_player.getPvpFlag()); // 0-non-pvp 1-pvp = violett name
-		packet.writeD(_player.getKarma());
-		packet.writeD(_runSpd); // base run speed
-		packet.writeD(_walkSpd); // base walk speed
-		packet.writeD(_runSpd); // swim run speed (calculated by getter)
-		packet.writeD(_walkSpd); // swim walk speed (calculated by getter)
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(_flyRunSpd);
-		packet.writeD(_flyWalkSpd);
-		packet.writeF(_player.getMovementSpeedMultiplier()); // run speed multiplier
-		packet.writeF(_player.getAttackSpeedMultiplier()); // attack speed multiplier
-		packet.writeF(_player.getCollisionRadius());
-		packet.writeF(_player.getCollisionHeight());
-		packet.writeD(_player.getAppearance().getHairStyle());
-		packet.writeD(_player.getAppearance().getHairColor());
-		packet.writeD(_player.getAppearance().getFace());
-		packet.writeD(_player.isGM() ? 1 : 0); // builder level
+		writeInt(_player.getPAtk(null));
+		writeInt(_player.getPAtkSpd());
+		writeInt(_player.getPDef(null));
+		writeInt(_player.getEvasionRate(null));
+		writeInt(_player.getAccuracy());
+		writeInt(_player.getCriticalHit(null, null));
+		writeInt(_player.getMAtk(null, null));
+		writeInt(_player.getMAtkSpd());
+		writeInt(_player.getPAtkSpd());
+		writeInt(_player.getMDef(null, null));
+		writeInt(_player.getPvpFlag()); // 0-non-pvp 1-pvp = violett name
+		writeInt(_player.getKarma());
+		writeInt(_runSpd); // base run speed
+		writeInt(_walkSpd); // base walk speed
+		writeInt(_runSpd); // swim run speed (calculated by getter)
+		writeInt(_walkSpd); // swim walk speed (calculated by getter)
+		writeInt(0);
+		writeInt(0);
+		writeInt(_flyRunSpd);
+		writeInt(_flyWalkSpd);
+		writeDouble(_player.getMovementSpeedMultiplier()); // run speed multiplier
+		writeDouble(_player.getAttackSpeedMultiplier()); // attack speed multiplier
+		writeDouble(_player.getCollisionRadius());
+		writeDouble(_player.getCollisionHeight());
+		writeInt(_player.getAppearance().getHairStyle());
+		writeInt(_player.getAppearance().getHairColor());
+		writeInt(_player.getAppearance().getFace());
+		writeInt(_player.isGM()); // builder level
 		
 		String title = _player.getTitle();
 		if (_player.getAppearance().isInvisible() && _player.isGM())
 		{
 			title = "[Invisible]";
 		}
-		packet.writeS(title);
+		writeString(title);
 		
-		packet.writeD(_player.getClanId());
-		packet.writeD(_player.getClanCrestId());
-		packet.writeD(_player.getAllyId());
-		packet.writeD(_player.getAllyCrestId()); // ally crest id
+		writeInt(_player.getClanId());
+		writeInt(_player.getClanCrestId());
+		writeInt(_player.getAllyId());
+		writeInt(_player.getAllyCrestId()); // ally crest id
 		// 0x40 leader rights
 		// siege flags: attacker - 0x180 sword over name, defender - 0x80 shield, 0xC0 crown (|leader), 0x1C0 flag (|leader)
-		packet.writeD(_relation);
-		packet.writeC(_player.getMountType()); // mount type
-		packet.writeC(_player.getPrivateStoreType());
-		packet.writeC(_player.hasDwarvenCraft() ? 1 : 0);
-		packet.writeD(_player.getPkKills());
-		packet.writeD(_player.getPvpKills());
+		writeInt(_relation);
+		writeByte(_player.getMountType()); // mount type
+		writeByte(_player.getPrivateStoreType());
+		writeByte(_player.hasDwarvenCraft());
+		writeInt(_player.getPkKills());
+		writeInt(_player.getPvpKills());
 		
-		packet.writeH(_player.getCubics().size());
+		writeShort(_player.getCubics().size());
 		for (int cubicId : _player.getCubics().keySet())
 		{
-			packet.writeH(cubicId);
+			writeShort(cubicId);
 		}
 		
-		packet.writeC(_player.isInPartyMatchRoom() ? 1 : 0);
+		writeByte(_player.isInPartyMatchRoom());
 		if (_player.getAppearance().isInvisible())
 		{
-			packet.writeD((_player.getAbnormalEffect() | Creature.ABNORMAL_EFFECT_STEALTH));
+			writeInt((_player.getAbnormalEffect() | Creature.ABNORMAL_EFFECT_STEALTH));
 		}
 		else
 		{
-			packet.writeD(_player.getAbnormalEffect()); // C2
+			writeInt(_player.getAbnormalEffect()); // C2
 		}
-		packet.writeC(0);
-		packet.writeD(_player.getClanPrivileges());
-		packet.writeH(_player.getRecomLeft()); // c2 recommendations remaining
-		packet.writeH(_player.getRecomHave()); // c2 recommendations received
-		packet.writeD(0); // _player.getMountNpcId() > 0 ? _player.getMountNpcId() + 1000000 : 0
-		packet.writeH(_player.getInventoryLimit());
-		packet.writeD(_player.getClassId().getId());
-		packet.writeD(0); // special effects? circles around player...
-		packet.writeD(_player.getMaxCp());
-		packet.writeD((int) _player.getCurrentCp());
-		packet.writeC(_player.isMounted() ? 0 : _player.getEnchantEffect());
-		packet.writeC(_player.getTeam()); // team circle around feet 1= Blue, 2 = red
-		packet.writeD(_player.getClanCrestLargeId());
-		packet.writeC(_player.isNoble() ? 1 : 0); // 1: symbol on char menu ctrl+I
-		packet.writeC((_player.isHero() || (_player.isGM() && Config.GM_HERO_AURA) || _player.isPVPHero()) ? 1 : 0); // 1: Hero Aura
+		writeByte(0);
+		writeInt(_player.getClanPrivileges());
+		writeShort(_player.getRecomLeft()); // c2 recommendations remaining
+		writeShort(_player.getRecomHave()); // c2 recommendations received
+		writeInt(0); // _player.getMountNpcId() > 0 ? _player.getMountNpcId() + 1000000 : 0
+		writeShort(_player.getInventoryLimit());
+		writeInt(_player.getClassId().getId());
+		writeInt(0); // special effects? circles around player...
+		writeInt(_player.getMaxCp());
+		writeInt((int) _player.getCurrentCp());
+		writeByte(_player.isMounted() ? 0 : _player.getEnchantEffect());
+		writeByte(_player.getTeam()); // team circle around feet 1= Blue, 2 = red
+		writeInt(_player.getClanCrestLargeId());
+		writeByte(_player.isNoble()); // 1: symbol on char menu ctrl+I
+		writeByte(_player.isHero() || (_player.isGM() && Config.GM_HERO_AURA) || _player.isPVPHero()); // 1: Hero Aura
 		
-		packet.writeC(_player.isFishing() ? 1 : 0); // Fishing Mode
-		packet.writeD(_player.getFishX()); // fishing x
-		packet.writeD(_player.getFishY()); // fishing y
-		packet.writeD(_player.getFishZ()); // fishing z
+		writeByte(_player.isFishing()); // Fishing Mode
+		writeInt(_player.getFishX()); // fishing x
+		writeInt(_player.getFishY()); // fishing y
+		writeInt(_player.getFishZ()); // fishing z
 		
-		packet.writeD(_player.getAppearance().getNameColor());
+		writeInt(_player.getAppearance().getNameColor());
 		// new c5
-		packet.writeC(_player.isRunning() ? 1 : 0); // changes the Speed display on Status Window
-		packet.writeD(_player.getPledgeClass()); // changes the text above CP on Status Window
-		packet.writeD(_player.getPledgeType());
-		packet.writeD(_player.getAppearance().getTitleColor());
+		writeByte(_player.isRunning()); // changes the Speed display on Status Window
+		writeInt(_player.getPledgeClass()); // changes the text above CP on Status Window
+		writeInt(_player.getPledgeType());
+		writeInt(_player.getAppearance().getTitleColor());
 		if (_player.isCursedWeaponEquiped())
 		{
-			packet.writeD(CursedWeaponsManager.getInstance().getLevel(_player.getCursedWeaponEquipedId()));
+			writeInt(CursedWeaponsManager.getInstance().getLevel(_player.getCursedWeaponEquipedId()));
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

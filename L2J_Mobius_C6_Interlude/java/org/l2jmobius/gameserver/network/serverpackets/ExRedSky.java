@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: ch d.
  * @author KenM
  */
-public class ExRedSky implements IClientOutgoingPacket
+public class ExRedSky extends ServerPacket
 {
 	/** The _duration. */
 	private final int _duration;
@@ -38,10 +37,9 @@ public class ExRedSky implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RED_SKY.writeId(packet);
-		packet.writeD(_duration);
-		return true;
+		ServerPackets.EX_RED_SKY.writeId(this);
+		writeInt(_duration);
 	}
 }

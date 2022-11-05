@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Maktakien
  */
-public class GetOffVehicle implements IClientOutgoingPacket
+public class GetOffVehicle extends ServerPacket
 {
 	private final Player _player;
 	private final int _boatId;
@@ -42,14 +41,13 @@ public class GetOffVehicle implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GET_OFF_VEHICLE.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeD(_boatId);
-		packet.writeD(_x);
-		packet.writeD(_y);
-		packet.writeD(_z);
-		return true;
+		ServerPackets.GET_OFF_VEHICLE.writeId(this);
+		writeInt(_player.getObjectId());
+		writeInt(_boatId);
+		writeInt(_x);
+		writeInt(_y);
+		writeInt(_z);
 	}
 }
