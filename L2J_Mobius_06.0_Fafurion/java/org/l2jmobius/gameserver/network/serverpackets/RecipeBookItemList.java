@@ -18,12 +18,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.RecipeHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class RecipeBookItemList implements IClientOutgoingPacket
+public class RecipeBookItemList extends ServerPacket
 {
 	private final Collection<RecipeHolder> _recipes;
 	private final boolean _isDwarvenCraft;
@@ -37,25 +36,24 @@ public class RecipeBookItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.RECIPE_BOOK_ITEM_LIST.writeId(packet);
-		packet.writeD(_isDwarvenCraft ? 0 : 1); // 0 = Dwarven - 1 = Common
-		packet.writeD(_maxMp);
+		ServerPackets.RECIPE_BOOK_ITEM_LIST.writeId(this);
+		writeInt(!_isDwarvenCraft); // 0 = Dwarven - 1 = Common
+		writeInt(_maxMp);
 		if (_recipes == null)
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		else
 		{
-			packet.writeD(_recipes.size()); // number of items in recipe book
-			int i = 1;
+			writeInt(_recipes.size()); // number of items in recipe book
+			int count = 1;
 			for (RecipeHolder recipe : _recipes)
 			{
-				packet.writeD(recipe.getId());
-				packet.writeD(i++);
+				writeInt(recipe.getId());
+				writeInt(count++);
 			}
 		}
-		return true;
 	}
 }

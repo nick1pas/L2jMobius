@@ -17,15 +17,14 @@
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeContributionInfo implements IClientOutgoingPacket
+public class ExPledgeContributionInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -35,19 +34,19 @@ public class ExPledgeContributionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getClan() == null)
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.EX_PLEDGE_CONTRIBUTION_INFO.writeId(packet);
-		packet.writeD(_player.getClanContribution());
-		packet.writeD(_player.getClanContribution());
-		packet.writeD(Config.CLAN_CONTRIBUTION_REQUIRED);
-		packet.writeD(-1);
-		packet.writeD(0);
-		packet.writeD(Config.CLAN_CONTRIBUTION_FAME_REWARD);
-		return true;
+		
+		ServerPackets.EX_PLEDGE_CONTRIBUTION_INFO.writeId(this);
+		writeInt(_player.getClanContribution());
+		writeInt(_player.getClanContribution());
+		writeInt(Config.CLAN_CONTRIBUTION_REQUIRED);
+		writeInt(-1);
+		writeInt(0);
+		writeInt(Config.CLAN_CONTRIBUTION_FAME_REWARD);
 	}
 }

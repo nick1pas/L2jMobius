@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.shuttle;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExStopMoveInShuttle implements IClientOutgoingPacket
+public class ExStopMoveInShuttle extends ServerPacket
 {
 	private final int _objectId;
 	private final int _boatId;
@@ -41,15 +40,14 @@ public class ExStopMoveInShuttle implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_STOP_MOVE_IN_SHUTTLE.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_boatId);
-		packet.writeD(_pos.getX());
-		packet.writeD(_pos.getY());
-		packet.writeD(_pos.getZ());
-		packet.writeD(_heading);
-		return true;
+		ServerPackets.EX_STOP_MOVE_IN_SHUTTLE.writeId(this);
+		writeInt(_objectId);
+		writeInt(_boatId);
+		writeInt(_pos.getX());
+		writeInt(_pos.getY());
+		writeInt(_pos.getZ());
+		writeInt(_heading);
 	}
 }

@@ -18,10 +18,9 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.TradeItem;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.7.2.2.2.3 $ $Date: 2005/03/27 15:29:39 $
@@ -41,23 +40,22 @@ public class PrivateStoreListBuy extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PRIVATE_STORE_BUY_LIST.writeId(packet);
-		packet.writeD(_objId);
-		packet.writeQ(_playerAdena);
-		packet.writeD(0); // Viewer's item count?
-		packet.writeD(_items.size());
+		ServerPackets.PRIVATE_STORE_BUY_LIST.writeId(this);
+		writeInt(_objId);
+		writeLong(_playerAdena);
+		writeInt(0); // Viewer's item count?
+		writeInt(_items.size());
 		int slotNumber = 0;
 		for (TradeItem item : _items)
 		{
 			slotNumber++;
-			writeItem(packet, item);
-			packet.writeD(slotNumber); // Slot in shop
-			packet.writeQ(item.getPrice());
-			packet.writeQ(item.getItem().getReferencePrice() * 2);
-			packet.writeQ(item.getStoreCount());
+			writeItem(item);
+			writeInt(slotNumber); // Slot in shop
+			writeLong(item.getPrice());
+			writeLong(item.getItem().getReferencePrice() * 2);
+			writeLong(item.getStoreCount());
 		}
-		return true;
 	}
 }

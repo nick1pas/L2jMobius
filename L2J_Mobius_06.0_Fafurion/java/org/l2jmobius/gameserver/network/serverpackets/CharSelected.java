@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 
-public class CharSelected implements IClientOutgoingPacket
+public class CharSelected extends ServerPacket
 {
 	private final Player _player;
 	private final int _sessionId;
@@ -37,44 +36,43 @@ public class CharSelected implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHARACTER_SELECTED.writeId(packet);
-		packet.writeS(_player.getName());
-		packet.writeD(_player.getObjectId());
-		packet.writeS(_player.getTitle());
-		packet.writeD(_sessionId);
-		packet.writeD(_player.getClanId());
-		packet.writeD(0); // ??
-		packet.writeD(_player.getAppearance().isFemale() ? 1 : 0);
-		packet.writeD(_player.getRace().ordinal());
-		packet.writeD(_player.getClassId().getId());
-		packet.writeD(1); // active ??
-		packet.writeD(_player.getX());
-		packet.writeD(_player.getY());
-		packet.writeD(_player.getZ());
-		packet.writeF(_player.getCurrentHp());
-		packet.writeF(_player.getCurrentMp());
-		packet.writeQ(_player.getSp());
-		packet.writeQ(_player.getExp());
-		packet.writeD(_player.getLevel());
-		packet.writeD(_player.getReputation());
-		packet.writeD(_player.getPkKills());
-		packet.writeD(GameTimeTaskManager.getInstance().getGameTime() % (24 * 60)); // "reset" on 24th hour
-		packet.writeD(0);
-		packet.writeD(_player.getClassId().getId());
-		packet.writeB(new byte[16]);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeB(new byte[28]);
-		packet.writeD(0);
-		return true;
+		ServerPackets.CHARACTER_SELECTED.writeId(this);
+		writeString(_player.getName());
+		writeInt(_player.getObjectId());
+		writeString(_player.getTitle());
+		writeInt(_sessionId);
+		writeInt(_player.getClanId());
+		writeInt(0); // ??
+		writeInt(_player.getAppearance().isFemale());
+		writeInt(_player.getRace().ordinal());
+		writeInt(_player.getClassId().getId());
+		writeInt(1); // active ??
+		writeInt(_player.getX());
+		writeInt(_player.getY());
+		writeInt(_player.getZ());
+		writeDouble(_player.getCurrentHp());
+		writeDouble(_player.getCurrentMp());
+		writeLong(_player.getSp());
+		writeLong(_player.getExp());
+		writeInt(_player.getLevel());
+		writeInt(_player.getReputation());
+		writeInt(_player.getPkKills());
+		writeInt(GameTimeTaskManager.getInstance().getGameTime() % (24 * 60)); // "reset" on 24th hour
+		writeInt(0);
+		writeInt(_player.getClassId().getId());
+		writeBytes(new byte[16]);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeBytes(new byte[28]);
+		writeInt(0);
 	}
 }

@@ -17,23 +17,16 @@
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Mobius
  */
-public class RequestExPledgeContributionReward implements IClientIncomingPacket
+public class RequestExPledgeContributionReward implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

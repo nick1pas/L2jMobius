@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeSkillActivate implements IClientOutgoingPacket
+public class ExPledgeSkillActivate extends ServerPacket
 {
 	private final int _specialtyId;
 	
@@ -33,10 +32,9 @@ public class ExPledgeSkillActivate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_SKILL_ACTIVATE.writeId(packet);
-		packet.writeC(_specialtyId);
-		return true;
+		ServerPackets.EX_PLEDGE_SKILL_ACTIVATE.writeId(this);
+		writeByte(_specialtyId);
 	}
 }

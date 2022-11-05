@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.faction;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.Faction;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mathael, Mobius
  */
-public class ExFactionInfo implements IClientOutgoingPacket
+public class ExFactionInfo extends ServerPacket
 {
 	private final Player _player;
 	private final boolean _openDialog;
@@ -37,18 +36,17 @@ public class ExFactionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_FACTION_INFO.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeC(_openDialog ? 1 : 0);
-		packet.writeD(Faction.values().length);
+		ServerPackets.EX_FACTION_INFO.writeId(this);
+		writeInt(_player.getObjectId());
+		writeByte(_openDialog);
+		writeInt(Faction.values().length);
 		for (Faction faction : Faction.values())
 		{
-			packet.writeC(faction.getId());
-			packet.writeH(_player.getFactionLevel(faction));
-			packet.writeE(_player.getFactionProgress(faction));
+			writeByte(faction.getId());
+			writeShort(_player.getFactionLevel(faction));
+			writeFloat(_player.getFactionProgress(faction));
 		}
-		return true;
 	}
 }

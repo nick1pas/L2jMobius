@@ -18,17 +18,16 @@ package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeMissionInfo implements IClientOutgoingPacket
+public class ExPledgeMissionInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Collection<DailyMissionDataHolder> _rewards;
@@ -40,14 +39,15 @@ public class ExPledgeMissionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (!DailyMissionData.getInstance().isAvailable() || (_player.getClan() == null))
 		{
-			return true;
+			return;
 		}
-		OutgoingPackets.EX_PLEDGE_MISSION_INFO.writeId(packet);
-		packet.writeD(_rewards.size());
+		
+		ServerPackets.EX_PLEDGE_MISSION_INFO.writeId(this);
+		writeInt(_rewards.size());
 		for (DailyMissionDataHolder reward : _rewards)
 		{
 			int progress = reward.getProgress(_player);
@@ -73,10 +73,9 @@ public class ExPledgeMissionInfo implements IClientOutgoingPacket
 			{
 				status = 2;
 			}
-			packet.writeD(reward.getId());
-			packet.writeD(progress);
-			packet.writeC(status);
+			writeInt(reward.getId());
+			writeInt(progress);
+			writeByte(status);
 		}
-		return true;
 	}
 }

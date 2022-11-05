@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.VariationData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
@@ -33,10 +33,9 @@ public class RequestConfirmTargetItem extends AbstractRefinePacket
 	private int _itemObjId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjId = packet.readD();
-		return true;
+		_itemObjId = packet.readInt();
 	}
 	
 	@Override

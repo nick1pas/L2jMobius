@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class JoinParty implements IClientOutgoingPacket
+public class JoinParty extends ServerPacket
 {
 	private final int _response;
 	private final int _type;
@@ -32,16 +31,15 @@ public class JoinParty implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.JOIN_PARTY.writeId(packet);
-		packet.writeD(_response);
-		packet.writeD(_type);
+		ServerPackets.JOIN_PARTY.writeId(this);
+		writeInt(_response);
+		writeInt(_type);
 		if (_type != 0)
 		{
-			packet.writeD(0); // TODO: Find me!
-			packet.writeD(0); // TODO: Find me!
+			writeInt(0); // TODO: Find me!
+			writeInt(0); // TODO: Find me!
 		}
-		return true;
 	}
 }

@@ -19,12 +19,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
+public class ExShowBaseAttributeCancelWindow extends ServerPacket
 {
 	private final List<Item> _items = new ArrayList<>();
 	private long _price;
@@ -41,16 +40,15 @@ public class ExShowBaseAttributeCancelWindow implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_BASE_ATTRIBUTE_CANCEL_WINDOW.writeId(packet);
-		packet.writeD(_items.size());
+		ServerPackets.EX_SHOW_BASE_ATTRIBUTE_CANCEL_WINDOW.writeId(this);
+		writeInt(_items.size());
 		for (Item item : _items)
 		{
-			packet.writeD(item.getObjectId());
-			packet.writeQ(getPrice(item));
+			writeInt(item.getObjectId());
+			writeLong(getPrice(item));
 		}
-		return true;
 	}
 	
 	/**

@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import static org.l2jmobius.gameserver.model.actor.Npc.INTERACTION_DISTANCE;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.OfflineTraderTable;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.ItemRequest;
@@ -30,50 +30,50 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 
-public class RequestPrivateStoreSell implements IClientIncomingPacket
+public class RequestPrivateStoreSell implements ClientPacket
 {
 	private int _storePlayerId;
 	private ItemRequest[] _items = null;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_storePlayerId = packet.readD();
-		final int itemsCount = packet.readD();
+		_storePlayerId = packet.readInt();
+		final int itemsCount = packet.readInt();
 		if ((itemsCount <= 0) || (itemsCount > Config.MAX_ITEM_IN_PACKET))
 		{
-			return false;
+			return;
 		}
+		
 		_items = new ItemRequest[itemsCount];
 		for (int i = 0; i < itemsCount; i++)
 		{
-			final int slot = packet.readD();
-			final int itemId = packet.readD();
-			packet.readH(); // TODO analyse this
-			packet.readH(); // TODO analyse this
-			final long count = packet.readQ();
-			final long price = packet.readQ();
-			packet.readD(); // visual id
-			packet.readD(); // option 1
-			packet.readD(); // option 2
-			final int soulCrystals = packet.readC();
+			final int slot = packet.readInt();
+			final int itemId = packet.readInt();
+			packet.readShort(); // TODO analyse this
+			packet.readShort(); // TODO analyse this
+			final long count = packet.readLong();
+			final long price = packet.readLong();
+			packet.readInt(); // visual id
+			packet.readInt(); // option 1
+			packet.readInt(); // option 2
+			final int soulCrystals = packet.readByte();
 			for (int s = 0; s < soulCrystals; s++)
 			{
-				packet.readD(); // soul crystal option
+				packet.readInt(); // soul crystal option
 			}
-			final int soulCrystals2 = packet.readC();
+			final int soulCrystals2 = packet.readByte();
 			for (int s = 0; s < soulCrystals2; s++)
 			{
-				packet.readD(); // sa effect
+				packet.readInt(); // sa effect
 			}
 			if (/* (slot < 1) || */ (itemId < 1) || (count < 1) || (price < 0))
 			{
 				_items = null;
-				return false;
+				return;
 			}
 			_items[i] = new ItemRequest(slot, itemId, count, price);
 		}
-		return true;
 	}
 	
 	@Override

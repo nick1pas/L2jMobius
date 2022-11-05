@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.enums.ClanEntryStatus;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -26,14 +25,8 @@ import org.l2jmobius.gameserver.network.serverpackets.ExPledgeRecruitApplyInfo;
 /**
  * @author Sdw
  */
-public class RequestPledgeRecruitApplyInfo implements IClientIncomingPacket
+public class RequestPledgeRecruitApplyInfo implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

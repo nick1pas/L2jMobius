@@ -20,7 +20,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.LoginServerThread;
 import org.l2jmobius.gameserver.cache.HtmCache;
@@ -121,29 +121,28 @@ import org.l2jmobius.gameserver.util.BuilderUtil;
  * packet format rev87 bddddbdcccccccccccccccccccc
  * <p>
  */
-public class EnterWorld implements IClientIncomingPacket
+public class EnterWorld implements ClientPacket
 {
 	private static final Map<String, ClientHardwareInfoHolder> TRACE_HWINFO = new ConcurrentHashMap<>();
 	
 	private final int[][] _tracert = new int[5][4];
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
 		for (int i = 0; i < 5; i++)
 		{
 			for (int o = 0; o < 4; o++)
 			{
-				_tracert[i][o] = packet.readC();
+				_tracert[i][o] = packet.readByte();
 			}
 		}
-		packet.readD(); // Unknown Value
-		packet.readD(); // Unknown Value
-		packet.readD(); // Unknown Value
-		packet.readD(); // Unknown Value
-		packet.readB(64); // Unknown Byte Array
-		packet.readD(); // Unknown Value
-		return true;
+		packet.readInt(); // Unknown Value
+		packet.readInt(); // Unknown Value
+		packet.readInt(); // Unknown Value
+		packet.readInt(); // Unknown Value
+		packet.readBytes(64); // Unknown Byte Array
+		packet.readInt(); // Unknown Value
 	}
 	
 	@Override

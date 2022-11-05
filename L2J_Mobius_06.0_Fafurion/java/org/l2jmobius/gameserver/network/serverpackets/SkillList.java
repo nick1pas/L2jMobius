@@ -20,14 +20,47 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.SkillData;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class SkillList implements IClientOutgoingPacket
+public class SkillList extends ServerPacket
 {
 	private final List<Skill> _skills = new ArrayList<>();
 	private int _lastLearnedSkillId = 0;
+	
+	public SkillList()
+	{
+		super(1024);
+	}
+	
+	@Override
+	public void write()
+	{
+		ServerPackets.SKILL_LIST.writeId(this);
+		_skills.sort(Comparator.comparing(s -> SkillData.getInstance().getSkill(s.id, s.level, s.subLevel).isToggle()));
+		writeInt(_skills.size());
+		for (Skill temp : _skills)
+		{
+			writeInt(temp.passive);
+			writeShort(temp.level);
+			writeShort(temp.subLevel);
+			writeInt(temp.id);
+			writeInt(temp.reuseDelayGroup); // GOD ReuseDelayShareGroupID
+			writeByte(temp.disabled); // iSkillDisabled
+			writeByte(temp.enchanted); // CanEnchant
+		}
+		writeInt(_lastLearnedSkillId);
+	}
+	
+	public void addSkill(int id, int reuseDelayGroup, int level, int subLevel, boolean passive, boolean disabled, boolean enchanted)
+	{
+		_skills.add(new Skill(id, reuseDelayGroup, level, subLevel, passive, disabled, enchanted));
+	}
+	
+	public void setLastLearnedSkillId(int lastLearnedSkillId)
+	{
+		_lastLearnedSkillId = lastLearnedSkillId;
+	}
 	
 	static class Skill
 	{
@@ -49,35 +82,5 @@ public class SkillList implements IClientOutgoingPacket
 			disabled = pDisabled;
 			enchanted = pEnchanted;
 		}
-	}
-	
-	public void addSkill(int id, int reuseDelayGroup, int level, int subLevel, boolean passive, boolean disabled, boolean enchanted)
-	{
-		_skills.add(new Skill(id, reuseDelayGroup, level, subLevel, passive, disabled, enchanted));
-	}
-	
-	public void setLastLearnedSkillId(int lastLearnedSkillId)
-	{
-		_lastLearnedSkillId = lastLearnedSkillId;
-	}
-	
-	@Override
-	public boolean write(PacketWriter packet)
-	{
-		OutgoingPackets.SKILL_LIST.writeId(packet);
-		_skills.sort(Comparator.comparing(s -> SkillData.getInstance().getSkill(s.id, s.level, s.subLevel).isToggle() ? 1 : 0));
-		packet.writeD(_skills.size());
-		for (Skill temp : _skills)
-		{
-			packet.writeD(temp.passive ? 1 : 0);
-			packet.writeH(temp.level);
-			packet.writeH(temp.subLevel);
-			packet.writeD(temp.id);
-			packet.writeD(temp.reuseDelayGroup); // GOD ReuseDelayShareGroupID
-			packet.writeC(temp.disabled ? 1 : 0); // iSkillDisabled
-			packet.writeC(temp.enchanted ? 1 : 0); // CanEnchant
-		}
-		packet.writeD(_lastLearnedSkillId);
-		return true;
 	}
 }
