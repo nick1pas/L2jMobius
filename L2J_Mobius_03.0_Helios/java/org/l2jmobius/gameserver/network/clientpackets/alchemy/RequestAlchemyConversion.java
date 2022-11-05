@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.alchemy;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.AlchemyData;
@@ -31,14 +31,14 @@ import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.alchemy.ExAlchemyConversion;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 
 /**
  * @author Sdw
  */
-public class RequestAlchemyConversion implements IClientIncomingPacket
+public class RequestAlchemyConversion implements ClientPacket
 {
 	private int _craftTimes;
 	private int _skillId;
@@ -46,18 +46,17 @@ public class RequestAlchemyConversion implements IClientIncomingPacket
 	// private final Set<ItemHolder> _ingredients = new HashSet<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_craftTimes = packet.readD();
-		packet.readH();
-		_skillId = packet.readD();
-		_skillLevel = packet.readD();
-		// final int ingredientsSize = packet.readD();
+		_craftTimes = packet.readInt();
+		packet.readShort();
+		_skillId = packet.readInt();
+		_skillLevel = packet.readInt();
+		// final int ingredientsSize = packet.readInt();
 		// for (int i = 0; i < ingredientsSize; i++)
 		// {
-		// _ingredients.add(new ItemHolder(packet.readD(), packet.readQ()));
+		// _ingredients.add(new ItemHolder(packet.readInt(), packet.readLong()));
 		// }
-		return true;
 	}
 	
 	@Override

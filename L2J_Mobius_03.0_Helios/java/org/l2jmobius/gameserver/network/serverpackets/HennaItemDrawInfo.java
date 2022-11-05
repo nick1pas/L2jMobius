@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
 import org.l2jmobius.gameserver.model.stats.BaseStat;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Zoey76
  */
-public class HennaItemDrawInfo implements IClientOutgoingPacket
+public class HennaItemDrawInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Henna _henna;
@@ -37,32 +36,31 @@ public class HennaItemDrawInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.HENNA_ITEM_INFO.writeId(packet);
-		packet.writeD(_henna.getDyeId()); // symbol Id
-		packet.writeD(_henna.getDyeItemId()); // item id of dye
-		packet.writeQ(_henna.getWearCount()); // total amount of dye require
-		packet.writeQ(_henna.getWearFee()); // total amount of Adena require to draw symbol
-		packet.writeD(_henna.isAllowedClass(_player.getClassId()) ? 1 : 0); // able to draw or not 0 is false and 1 is true
-		packet.writeQ(_player.getAdena());
-		packet.writeD(_player.getINT()); // current INT
-		packet.writeH(_player.getINT() + _player.getHennaValue(BaseStat.INT)); // equip INT
-		packet.writeD(_player.getSTR()); // current STR
-		packet.writeH(_player.getSTR() + _player.getHennaValue(BaseStat.STR)); // equip STR
-		packet.writeD(_player.getCON()); // current CON
-		packet.writeH(_player.getCON() + _player.getHennaValue(BaseStat.CON)); // equip CON
-		packet.writeD(_player.getMEN()); // current MEN
-		packet.writeH(_player.getMEN() + _player.getHennaValue(BaseStat.MEN)); // equip MEN
-		packet.writeD(_player.getDEX()); // current DEX
-		packet.writeH(_player.getDEX() + _player.getHennaValue(BaseStat.DEX)); // equip DEX
-		packet.writeD(_player.getWIT()); // current WIT
-		packet.writeH(_player.getWIT() + _player.getHennaValue(BaseStat.WIT)); // equip WIT
-		packet.writeD(_player.getLUC()); // current LUC
-		packet.writeH(_player.getLUC() + _player.getHennaValue(BaseStat.LUC)); // equip LUC
-		packet.writeD(_player.getCHA()); // current CHA
-		packet.writeH(_player.getCHA() + _player.getHennaValue(BaseStat.CHA)); // equip CHA
-		packet.writeD(0); // TODO: Find me!
-		return true;
+		ServerPackets.HENNA_ITEM_INFO.writeId(this);
+		writeInt(_henna.getDyeId()); // symbol Id
+		writeInt(_henna.getDyeItemId()); // item id of dye
+		writeLong(_henna.getWearCount()); // total amount of dye require
+		writeLong(_henna.getWearFee()); // total amount of Adena require to draw symbol
+		writeInt(_henna.isAllowedClass(_player.getClassId())); // able to draw or not 0 is false and 1 is true
+		writeLong(_player.getAdena());
+		writeInt(_player.getINT()); // current INT
+		writeShort(_player.getINT() + _player.getHennaValue(BaseStat.INT)); // equip INT
+		writeInt(_player.getSTR()); // current STR
+		writeShort(_player.getSTR() + _player.getHennaValue(BaseStat.STR)); // equip STR
+		writeInt(_player.getCON()); // current CON
+		writeShort(_player.getCON() + _player.getHennaValue(BaseStat.CON)); // equip CON
+		writeInt(_player.getMEN()); // current MEN
+		writeShort(_player.getMEN() + _player.getHennaValue(BaseStat.MEN)); // equip MEN
+		writeInt(_player.getDEX()); // current DEX
+		writeShort(_player.getDEX() + _player.getHennaValue(BaseStat.DEX)); // equip DEX
+		writeInt(_player.getWIT()); // current WIT
+		writeShort(_player.getWIT() + _player.getHennaValue(BaseStat.WIT)); // equip WIT
+		writeInt(_player.getLUC()); // current LUC
+		writeShort(_player.getLUC() + _player.getHennaValue(BaseStat.LUC)); // equip LUC
+		writeInt(_player.getCHA()); // current CHA
+		writeShort(_player.getCHA() + _player.getHennaValue(BaseStat.CHA)); // equip CHA
+		writeInt(0); // TODO: Find me!
 	}
 }

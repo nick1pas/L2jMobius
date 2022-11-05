@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ExPledgeRecruitBoardSearch
 /**
  * @author Sdw
  */
-public class RequestPledgeRecruitBoardSearch implements IClientIncomingPacket
+public class RequestPledgeRecruitBoardSearch implements ClientPacket
 {
 	private int _clanLevel;
 	private int _karma;
@@ -38,17 +38,16 @@ public class RequestPledgeRecruitBoardSearch implements IClientIncomingPacket
 	private int _applicationType;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_clanLevel = packet.readD();
-		_karma = packet.readD();
-		_type = packet.readD();
-		_query = packet.readS();
-		_sort = packet.readD();
-		_descending = packet.readD() == 2;
-		_page = packet.readD();
-		_applicationType = packet.readD(); // Helios
-		return true;
+		_clanLevel = packet.readInt();
+		_karma = packet.readInt();
+		_type = packet.readInt();
+		_query = packet.readString();
+		_sort = packet.readInt();
+		_descending = packet.readInt() == 2;
+		_page = packet.readInt();
+		_applicationType = packet.readInt(); // Helios
 	}
 	
 	@Override

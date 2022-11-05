@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ceremonyofchaos;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExCuriousHouseRemainTime implements IClientOutgoingPacket
+public class ExCuriousHouseRemainTime extends ServerPacket
 {
 	private final int _time;
 	
@@ -33,10 +32,9 @@ public class ExCuriousHouseRemainTime implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CURIOUS_HOUSE_REMAIN_TIME.writeId(packet);
-		packet.writeD(_time);
-		return true;
+		ServerPackets.EX_CURIOUS_HOUSE_REMAIN_TIME.writeId(this);
+		writeInt(_time);
 	}
 }

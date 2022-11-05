@@ -19,24 +19,23 @@ package org.l2jmobius.gameserver.network.serverpackets.pledgebonus;
 import java.util.Comparator;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ClanRewardData;
 import org.l2jmobius.gameserver.enums.ClanRewardType;
 import org.l2jmobius.gameserver.model.clan.ClanRewardBonus;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExPledgeBonusList implements IClientOutgoingPacket
+public class ExPledgeBonusList extends ServerPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(ExPledgeBonusList.class.getName());
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_BONUS_LIST.writeId(packet);
+		ServerPackets.EX_PLEDGE_BONUS_LIST.writeId(this);
 		for (ClanRewardType type : ClanRewardType.values())
 		{
 			ClanRewardData.getInstance().getClanRewardBonuses(type).stream().sorted(Comparator.comparingInt(ClanRewardBonus::getLevel)).forEach(bonus ->
@@ -48,10 +47,10 @@ public class ExPledgeBonusList implements IClientOutgoingPacket
 						if (bonus.getSkillReward() == null)
 						{
 							LOGGER.warning("Missing clan reward skill for reward level: " + bonus.getLevel());
-							packet.writeD(0);
+							writeInt(0);
 							return;
 						}
-						packet.writeD(bonus.getSkillReward().getSkillId());
+						writeInt(bonus.getSkillReward().getSkillId());
 						break;
 					}
 					case HUNTING_MONSTERS:
@@ -59,15 +58,14 @@ public class ExPledgeBonusList implements IClientOutgoingPacket
 						if (bonus.getItemReward() == null)
 						{
 							LOGGER.warning("Missing clan reward skill for reward level: " + bonus.getLevel());
-							packet.writeD(0);
+							writeInt(0);
 							return;
 						}
-						packet.writeD(bonus.getItemReward().getId());
+						writeInt(bonus.getItemReward().getId());
 						break;
 					}
 				}
 			});
 		}
-		return true;
 	}
 }

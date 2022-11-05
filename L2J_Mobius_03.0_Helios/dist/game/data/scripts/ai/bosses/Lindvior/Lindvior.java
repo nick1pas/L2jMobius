@@ -52,8 +52,8 @@ import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
 import org.l2jmobius.gameserver.network.serverpackets.ExSendUIEvent;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.OnEventTrigger;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
 import org.l2jmobius.gameserver.network.serverpackets.SpecialCamera;
 import org.l2jmobius.gameserver.util.Broadcast;
@@ -910,12 +910,12 @@ public class Lindvior extends AbstractNpcAI
 	
 	private void sendEventTrigger(boolean status, int... triggers)
 	{
-		IClientOutgoingPacket[] pakets = new IClientOutgoingPacket[triggers.length];
+		final ServerPacket[] packets = new ServerPacket[triggers.length];
 		for (int i = 0; i < triggers.length; i++)
 		{
-			pakets[i] = new OnEventTrigger(triggers[i], status);
+			packets[i] = new OnEventTrigger(triggers[i], status);
 		}
-		for (IClientOutgoingPacket packet : pakets)
+		for (ServerPacket packet : packets)
 		{
 			_zoneLair.broadcastPacket(packet);
 		}

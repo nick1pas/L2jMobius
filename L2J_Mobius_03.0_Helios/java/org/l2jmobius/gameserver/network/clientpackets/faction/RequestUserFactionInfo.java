@@ -16,25 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.faction;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.faction.ExFactionInfo;
 
 /**
  * @author Mathael
  */
-public class RequestUserFactionInfo implements IClientIncomingPacket
+public class RequestUserFactionInfo implements ClientPacket
 {
 	private boolean _openDialog;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readD();
-		_openDialog = packet.readC() != 0;
-		return true;
+		packet.readInt();
+		_openDialog = packet.readByte() != 0;
 	}
 	
 	@Override

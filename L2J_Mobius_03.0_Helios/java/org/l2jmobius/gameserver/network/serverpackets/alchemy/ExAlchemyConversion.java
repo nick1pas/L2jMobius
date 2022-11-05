@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.alchemy;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExAlchemyConversion implements IClientOutgoingPacket
+public class ExAlchemyConversion extends ServerPacket
 {
 	private final int _successCount;
 	private final int _failureCount;
@@ -35,12 +34,11 @@ public class ExAlchemyConversion implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ALCHEMY_CONVERSION.writeId(packet);
-		packet.writeC((_successCount == 0) && (_failureCount == 0) ? 1 : 0);
-		packet.writeD(_successCount);
-		packet.writeD(_failureCount);
-		return true;
+		ServerPackets.EX_ALCHEMY_CONVERSION.writeId(this);
+		writeByte((_successCount == 0) && (_failureCount == 0));
+		writeInt(_successCount);
+		writeInt(_failureCount);
 	}
 }

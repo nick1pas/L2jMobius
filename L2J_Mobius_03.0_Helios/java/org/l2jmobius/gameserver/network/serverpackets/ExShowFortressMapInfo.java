@@ -18,18 +18,17 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.FortSiegeManager;
 import org.l2jmobius.gameserver.model.FortSiegeSpawn;
 import org.l2jmobius.gameserver.model.Spawn;
 import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * TODO: Rewrite!!!!!!
  * @author KenM
  */
-public class ExShowFortressMapInfo implements IClientOutgoingPacket
+public class ExShowFortressMapInfo extends ServerPacket
 {
 	private final Fort _fortress;
 	
@@ -39,12 +38,12 @@ public class ExShowFortressMapInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_FORTRESS_MAP_INFO.writeId(packet);
-		packet.writeD(_fortress.getResidenceId());
-		packet.writeD(_fortress.getSiege().isInProgress() ? 1 : 0); // fortress siege status
-		packet.writeD(_fortress.getFortSize()); // barracks count
+		ServerPackets.EX_SHOW_FORTRESS_MAP_INFO.writeId(this);
+		writeInt(_fortress.getResidenceId());
+		writeInt(_fortress.getSiege().isInProgress()); // fortress siege status
+		writeInt(_fortress.getFortSize()); // barracks count
 		final List<FortSiegeSpawn> commanders = FortSiegeManager.getInstance().getCommanderSpawnList(_fortress.getResidenceId());
 		if ((commanders != null) && !commanders.isEmpty() && _fortress.getSiege().isInProgress())
 		{
@@ -56,11 +55,11 @@ public class ExShowFortressMapInfo implements IClientOutgoingPacket
 					{
 						if (isSpawned(spawn.getId()))
 						{
-							packet.writeD(0);
+							writeInt(0);
 						}
 						else
 						{
-							packet.writeD(1);
+							writeInt(1);
 						}
 					}
 					break;
@@ -73,15 +72,15 @@ public class ExShowFortressMapInfo implements IClientOutgoingPacket
 						count++;
 						if (count == 4)
 						{
-							packet.writeD(1); // TODO: control room emulated
+							writeInt(1); // TODO: control room emulated
 						}
 						if (isSpawned(spawn.getId()))
 						{
-							packet.writeD(0);
+							writeInt(0);
 						}
 						else
 						{
-							packet.writeD(1);
+							writeInt(1);
 						}
 					}
 					break;
@@ -92,10 +91,9 @@ public class ExShowFortressMapInfo implements IClientOutgoingPacket
 		{
 			for (int i = 0; i < _fortress.getFortSize(); i++)
 			{
-				packet.writeD(0);
+				writeInt(0);
 			}
 		}
-		return true;
 	}
 	
 	/**

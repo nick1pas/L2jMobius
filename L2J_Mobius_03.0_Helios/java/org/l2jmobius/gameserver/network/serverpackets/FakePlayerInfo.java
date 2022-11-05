@@ -18,7 +18,6 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.enums.Sex;
@@ -27,12 +26,12 @@ import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.holders.FakePlayerHolder;
 import org.l2jmobius.gameserver.model.skill.AbnormalVisualEffect;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class FakePlayerInfo implements IClientOutgoingPacket
+public class FakePlayerInfo extends ServerPacket
 {
 	private final Npc _npc;
 	private final int _objId;
@@ -55,6 +54,8 @@ public class FakePlayerInfo implements IClientOutgoingPacket
 	
 	public FakePlayerInfo(Npc npc)
 	{
+		super(256);
+		
 		_npc = npc;
 		_objId = npc.getObjectId();
 		_x = npc.getX();
@@ -76,129 +77,128 @@ public class FakePlayerInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_INFO.writeId(packet);
-		packet.writeD(_x);
-		packet.writeD(_y);
-		packet.writeD(_z);
-		packet.writeD(0); // vehicleId
-		packet.writeD(_objId);
-		packet.writeS(_npc.getName());
-		packet.writeH(_npc.getRace().ordinal());
-		packet.writeC(_npc.getTemplate().getSex() == Sex.FEMALE ? 1 : 0);
-		packet.writeD(_fpcHolder.getClassId());
-		packet.writeD(0); // Inventory.PAPERDOLL_UNDER
-		packet.writeD(_fpcHolder.getEquipHead());
-		packet.writeD(_fpcHolder.getEquipRHand());
-		packet.writeD(_fpcHolder.getEquipLHand());
-		packet.writeD(_fpcHolder.getEquipGloves());
-		packet.writeD(_fpcHolder.getEquipChest());
-		packet.writeD(_fpcHolder.getEquipLegs());
-		packet.writeD(_fpcHolder.getEquipFeet());
-		packet.writeD(_fpcHolder.getEquipCloak());
-		packet.writeD(_fpcHolder.getEquipRHand()); // dual hand
-		packet.writeD(_fpcHolder.getEquipHair());
-		packet.writeD(_fpcHolder.getEquipHair2());
+		ServerPackets.CHAR_INFO.writeId(this);
+		writeInt(_x);
+		writeInt(_y);
+		writeInt(_z);
+		writeInt(0); // vehicleId
+		writeInt(_objId);
+		writeString(_npc.getName());
+		writeShort(_npc.getRace().ordinal());
+		writeByte(_npc.getTemplate().getSex() == Sex.FEMALE);
+		writeInt(_fpcHolder.getClassId());
+		writeInt(0); // Inventory.PAPERDOLL_UNDER
+		writeInt(_fpcHolder.getEquipHead());
+		writeInt(_fpcHolder.getEquipRHand());
+		writeInt(_fpcHolder.getEquipLHand());
+		writeInt(_fpcHolder.getEquipGloves());
+		writeInt(_fpcHolder.getEquipChest());
+		writeInt(_fpcHolder.getEquipLegs());
+		writeInt(_fpcHolder.getEquipFeet());
+		writeInt(_fpcHolder.getEquipCloak());
+		writeInt(_fpcHolder.getEquipRHand()); // dual hand
+		writeInt(_fpcHolder.getEquipHair());
+		writeInt(_fpcHolder.getEquipHair2());
 		for (@SuppressWarnings("unused")
 		final int slot : getPaperdollOrderAugument())
 		{
-			packet.writeD(0);
-			packet.writeD(0);
+			writeInt(0);
+			writeInt(0);
 		}
-		packet.writeC(_fpcHolder.getArmorEnchantLevel());
+		writeByte(_fpcHolder.getArmorEnchantLevel());
 		for (@SuppressWarnings("unused")
 		final int slot : getPaperdollOrderVisualId())
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		packet.writeC(_npc.getScriptValue()); // getPvpFlag()
-		packet.writeD(_npc.getReputation());
-		packet.writeD(_mAtkSpd);
-		packet.writeD(_pAtkSpd);
-		packet.writeH(_runSpd);
-		packet.writeH(_walkSpd);
-		packet.writeH(_swimRunSpd);
-		packet.writeH(_swimWalkSpd);
-		packet.writeH(_flyRunSpd);
-		packet.writeH(_flyWalkSpd);
-		packet.writeH(_flyRunSpd);
-		packet.writeH(_flyWalkSpd);
-		packet.writeF(_moveMultiplier);
-		packet.writeF(_attackSpeedMultiplier);
-		packet.writeF(_npc.getCollisionRadius());
-		packet.writeF(_npc.getCollisionHeight());
-		packet.writeD(_fpcHolder.getHair());
-		packet.writeD(_fpcHolder.getHairColor());
-		packet.writeD(_fpcHolder.getFace());
-		packet.writeS(_npc.getTemplate().getTitle());
+		writeByte(_npc.getScriptValue()); // getPvpFlag()
+		writeInt(_npc.getReputation());
+		writeInt(_mAtkSpd);
+		writeInt(_pAtkSpd);
+		writeShort(_runSpd);
+		writeShort(_walkSpd);
+		writeShort(_swimRunSpd);
+		writeShort(_swimWalkSpd);
+		writeShort(_flyRunSpd);
+		writeShort(_flyWalkSpd);
+		writeShort(_flyRunSpd);
+		writeShort(_flyWalkSpd);
+		writeDouble(_moveMultiplier);
+		writeDouble(_attackSpeedMultiplier);
+		writeDouble(_npc.getCollisionRadius());
+		writeDouble(_npc.getCollisionHeight());
+		writeInt(_fpcHolder.getHair());
+		writeInt(_fpcHolder.getHairColor());
+		writeInt(_fpcHolder.getFace());
+		writeString(_npc.getTemplate().getTitle());
 		if (_clan != null)
 		{
-			packet.writeD(_clan.getId());
-			packet.writeD(_clan.getCrestId());
-			packet.writeD(_clan.getAllyId());
-			packet.writeD(_clan.getAllyCrestId());
+			writeInt(_clan.getId());
+			writeInt(_clan.getCrestId());
+			writeInt(_clan.getAllyId());
+			writeInt(_clan.getAllyCrestId());
 		}
 		else
 		{
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
 		}
-		packet.writeC(1); // isSitting() ? 0 : 1 (at some initial tests it worked)
-		packet.writeC(_npc.isRunning() ? 1 : 0);
-		packet.writeC(_npc.isInCombat() ? 1 : 0);
-		packet.writeC(_npc.isAlikeDead() ? 1 : 0);
-		packet.writeC(_npc.isInvisible() ? 1 : 0);
-		packet.writeC(0); // 1-on Strider, 2-on Wyvern, 3-on Great Wolf, 0-no mount
-		packet.writeC(0); // getPrivateStoreType().getId()
-		packet.writeH(0); // getCubics().size()
+		writeByte(1); // isSitting() ? 0 : 1 (at some initial tests it worked)
+		writeByte(_npc.isRunning());
+		writeByte(_npc.isInCombat());
+		writeByte(_npc.isAlikeDead());
+		writeByte(_npc.isInvisible());
+		writeByte(0); // 1-on Strider, 2-on Wyvern, 3-on Great Wolf, 0-no mount
+		writeByte(0); // getPrivateStoreType().getId()
+		writeShort(0); // getCubics().size()
 		// getCubics().keySet().forEach(packet::writeH);
-		packet.writeC(0);
-		packet.writeC(_npc.isInsideZone(ZoneId.WATER) ? 1 : 0);
-		packet.writeH(_fpcHolder.getRecommends());
-		packet.writeD(0); // getMountNpcId() == 0 ? 0 : getMountNpcId() + 1000000
-		packet.writeD(_fpcHolder.getClassId());
-		packet.writeD(0);
-		packet.writeC(_fpcHolder.getWeaponEnchantLevel()); // isMounted() ? 0 : _enchantLevel
-		packet.writeC(_npc.getTeam().getId());
-		packet.writeD(_clan != null ? _clan.getCrestLargeId() : 0);
-		packet.writeC(_fpcHolder.getNobleLevel());
-		packet.writeC(_fpcHolder.isHero() ? 1 : 0);
-		packet.writeC(_fpcHolder.isFishing() ? 1 : 0);
-		packet.writeD(_fpcHolder.getBaitLocationX());
-		packet.writeD(_fpcHolder.getBaitLocationY());
-		packet.writeD(_fpcHolder.getBaitLocationZ());
-		packet.writeD(_fpcHolder.getNameColor());
-		packet.writeD(_heading);
-		packet.writeC(_fpcHolder.getPledgeStatus());
-		packet.writeH(0); // getPledgeType()
-		packet.writeD(_fpcHolder.getTitleColor());
-		packet.writeC(0); // isCursedWeaponEquipped
-		packet.writeD(0); // getAppearance().getVisibleClanId() > 0 ? getClan().getReputationScore() : 0
-		packet.writeD(0); // getTransformationDisplayId()
-		packet.writeD(_fpcHolder.getAgathionId());
-		packet.writeC(0);
-		packet.writeD(0); // getCurrentCp()
-		packet.writeD(_npc.getMaxHp());
-		packet.writeD((int) Math.round(_npc.getCurrentHp()));
-		packet.writeD(_npc.getMaxMp());
-		packet.writeD((int) Math.round(_npc.getCurrentMp()));
-		packet.writeC(0);
+		writeByte(0);
+		writeByte(_npc.isInsideZone(ZoneId.WATER));
+		writeShort(_fpcHolder.getRecommends());
+		writeInt(0); // getMountNpcId() == 0 ? 0 : getMountNpcId() + 1000000
+		writeInt(_fpcHolder.getClassId());
+		writeInt(0);
+		writeByte(_fpcHolder.getWeaponEnchantLevel()); // isMounted() ? 0 : _enchantLevel
+		writeByte(_npc.getTeam().getId());
+		writeInt(_clan != null ? _clan.getCrestLargeId() : 0);
+		writeByte(_fpcHolder.getNobleLevel());
+		writeByte(_fpcHolder.isHero());
+		writeByte(_fpcHolder.isFishing());
+		writeInt(_fpcHolder.getBaitLocationX());
+		writeInt(_fpcHolder.getBaitLocationY());
+		writeInt(_fpcHolder.getBaitLocationZ());
+		writeInt(_fpcHolder.getNameColor());
+		writeInt(_heading);
+		writeByte(_fpcHolder.getPledgeStatus());
+		writeShort(0); // getPledgeType()
+		writeInt(_fpcHolder.getTitleColor());
+		writeByte(0); // isCursedWeaponEquipped
+		writeInt(0); // getAppearance().getVisibleClanId() > 0 ? getClan().getReputationScore() : 0
+		writeInt(0); // getTransformationDisplayId()
+		writeInt(_fpcHolder.getAgathionId());
+		writeByte(0);
+		writeInt(0); // getCurrentCp()
+		writeInt(_npc.getMaxHp());
+		writeInt((int) Math.round(_npc.getCurrentHp()));
+		writeInt(_npc.getMaxMp());
+		writeInt((int) Math.round(_npc.getCurrentMp()));
+		writeByte(0);
 		final Set<AbnormalVisualEffect> abnormalVisualEffects = _npc.getEffectList().getCurrentAbnormalVisualEffects();
-		packet.writeD(abnormalVisualEffects.size() + (_npc.isInvisible() ? 1 : 0));
+		writeInt(abnormalVisualEffects.size() + (_npc.isInvisible() ? 1 : 0));
 		for (AbnormalVisualEffect abnormalVisualEffect : abnormalVisualEffects)
 		{
-			packet.writeH(abnormalVisualEffect.getClientId());
+			writeShort(abnormalVisualEffect.getClientId());
 		}
 		if (_npc.isInvisible())
 		{
-			packet.writeH(AbnormalVisualEffect.STEALTH.getClientId());
+			writeShort(AbnormalVisualEffect.STEALTH.getClientId());
 		}
-		packet.writeC(0); // cocPlayer.getPosition()
-		packet.writeC((_fpcHolder.getHair() > 0) || (_fpcHolder.getEquipHair2() > 0) ? 1 : 0);
-		packet.writeC(0); // Used Ability Points
-		return true;
+		writeByte(0); // cocPlayer.getPosition()
+		writeByte((_fpcHolder.getHair() > 0) || (_fpcHolder.getEquipHair2() > 0));
+		writeByte(0); // Used Ability Points
 	}
 }

@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
 import org.l2jmobius.gameserver.model.SiegeClan;
@@ -28,12 +27,12 @@ import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid, Nos
  */
-public class Die implements IClientOutgoingPacket
+public class Die extends ServerPacket
 {
 	private final int _objectId;
 	private boolean _toVillage;
@@ -110,23 +109,22 @@ public class Die implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.DIE.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_toVillage ? 1 : 0);
-		packet.writeD(_toClanHall ? 1 : 0);
-		packet.writeD(_toCastle ? 1 : 0);
-		packet.writeD(_toOutpost ? 1 : 0);
-		packet.writeD(_isSweepable ? 1 : 0);
-		packet.writeD(_useFeather ? 1 : 0);
-		packet.writeD(_toFortress ? 1 : 0);
-		packet.writeD(0); // Disables use Feather button for X seconds
-		packet.writeD(0); // Adventure's Song
-		packet.writeC(_hideAnimation ? 1 : 0);
-		packet.writeD(_itemsEnabled ? 1 : 0);
-		packet.writeD(getItems().size());
-		getItems().forEach(packet::writeD);
-		return true;
+		ServerPackets.DIE.writeId(this);
+		writeInt(_objectId);
+		writeInt(_toVillage);
+		writeInt(_toClanHall);
+		writeInt(_toCastle);
+		writeInt(_toOutpost);
+		writeInt(_isSweepable);
+		writeInt(_useFeather);
+		writeInt(_toFortress);
+		writeInt(0); // Disables use Feather button for X seconds
+		writeInt(0); // Adventure's Song
+		writeByte(_hideAnimation);
+		writeInt(_itemsEnabled);
+		writeInt(getItems().size());
+		getItems().forEach(this::writeInt);
 	}
 }
