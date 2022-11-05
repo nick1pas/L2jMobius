@@ -18,12 +18,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class GMViewSkillInfo implements IClientOutgoingPacket
+public class GMViewSkillInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Collection<Skill> _skills;
@@ -35,21 +34,20 @@ public class GMViewSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GM_VIEW_SKILL_INFO.writeId(packet);
-		packet.writeS(_player.getName());
-		packet.writeD(_skills.size());
+		ServerPackets.GM_VIEW_SKILL_INFO.writeId(this);
+		writeString(_player.getName());
+		writeInt(_skills.size());
 		final boolean isDisabled = (_player.getClan() != null) && (_player.getClan().getReputationScore() < 0);
 		for (Skill skill : _skills)
 		{
-			packet.writeD(skill.isPassive() ? 1 : 0);
-			packet.writeD(skill.getDisplayLevel());
-			packet.writeD(skill.getDisplayId());
-			packet.writeD(0);
-			packet.writeC(isDisabled && skill.isClanSkill() ? 1 : 0);
-			packet.writeC(skill.isEnchantable() ? 1 : 0);
+			writeInt(skill.isPassive());
+			writeInt(skill.getDisplayLevel());
+			writeInt(skill.getDisplayId());
+			writeInt(0);
+			writeByte(isDisabled && skill.isClanSkill());
+			writeByte(skill.isEnchantable());
 		}
-		return true;
 	}
 }

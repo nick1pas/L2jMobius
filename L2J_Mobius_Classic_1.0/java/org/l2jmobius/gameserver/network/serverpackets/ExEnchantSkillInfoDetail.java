@@ -18,19 +18,18 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.EnchantSkillGroupsData;
 import org.l2jmobius.gameserver.enums.SkillEnchantType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.EnchantSkillHolder;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.util.SkillEnchantConverter;
 
 /**
  * @author KenM, Mobius
  */
-public class ExEnchantSkillInfoDetail implements IClientOutgoingPacket
+public class ExEnchantSkillInfoDetail extends ServerPacket
 {
 	private final SkillEnchantType _type;
 	private final int _skillId;
@@ -46,24 +45,28 @@ public class ExEnchantSkillInfoDetail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_SKILL_INFO_DETAIL.writeId(packet);
-		packet.writeD(_type.ordinal());
-		packet.writeD(_skillId);
-		packet.writeD(_skillLevel);
-		if ((_enchantSkillHolder != null) && (_type != SkillEnchantType.UNTRAIN))
+		if (_enchantSkillHolder == null)
 		{
-			packet.writeQ(_enchantSkillHolder.getSp(_type));
-			packet.writeD(_enchantSkillHolder.getChance(_type));
+			return;
+		}
+		
+		ServerPackets.EX_ENCHANT_SKILL_INFO_DETAIL.writeId(this);
+		writeInt(_type.ordinal());
+		writeInt(_skillId);
+		writeInt(_skillLevel);
+		if (_type != SkillEnchantType.UNTRAIN)
+		{
+			writeLong(_enchantSkillHolder.getSp(_type));
+			writeInt(_enchantSkillHolder.getChance(_type));
 			final Set<ItemHolder> holders = _enchantSkillHolder.getRequiredItems(_type);
-			packet.writeD(holders.size());
+			writeInt(holders.size());
 			holders.forEach(holder ->
 			{
-				packet.writeD(holder.getId());
-				packet.writeD((int) holder.getCount());
+				writeInt(holder.getId());
+				writeInt((int) holder.getCount());
 			});
 		}
-		return _enchantSkillHolder != null;
 	}
 }

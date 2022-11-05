@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.SkillEnchantType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -26,46 +26,47 @@ import org.l2jmobius.gameserver.util.SkillEnchantConverter;
 /**
  * @author -Wooden-
  */
-public class RequestExEnchantSkillInfoDetail implements IClientIncomingPacket
+public class RequestExEnchantSkillInfoDetail implements ClientPacket
 {
 	private SkillEnchantType _type;
 	private int _skillId;
 	private int _skillLevel;
-	private int _skillSubLevel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = SkillEnchantType.values()[packet.readD()];
-		_skillId = packet.readD();
-		final int level = packet.readD();
-		if (level < 100)
-		{
-			_skillLevel = level;
-			_skillSubLevel = 0;
-		}
-		else
-		{
-			_skillLevel = client.getPlayer().getKnownSkill(_skillId).getLevel();
-			_skillSubLevel = SkillEnchantConverter.levelToUnderground(level);
-		}
-		return true;
+		_type = SkillEnchantType.values()[packet.readInt()];
+		_skillId = packet.readInt();
+		_skillLevel = packet.readInt();
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
-		if ((_skillId <= 0) || (_skillLevel <= 0) || (_skillSubLevel < 0))
-		{
-			return;
-		}
-		
 		final Player player = client.getPlayer();
 		if (player == null)
 		{
 			return;
 		}
 		
-		player.sendPacket(new ExEnchantSkillInfoDetail(_type, _skillId, _skillLevel, _skillSubLevel, player));
+		final int skillLevel;
+		final int skillSubLevel;
+		if (_skillLevel < 100)
+		{
+			skillLevel = _skillLevel;
+			skillSubLevel = 0;
+		}
+		else
+		{
+			skillLevel = player.getKnownSkill(_skillId).getLevel();
+			skillSubLevel = SkillEnchantConverter.levelToUnderground(_skillLevel);
+		}
+		
+		if ((_skillId <= 0) || (skillLevel <= 0) || (skillSubLevel < 0))
+		{
+			return;
+		}
+		
+		player.sendPacket(new ExEnchantSkillInfoDetail(_type, _skillId, skillLevel, skillSubLevel, player));
 	}
 }

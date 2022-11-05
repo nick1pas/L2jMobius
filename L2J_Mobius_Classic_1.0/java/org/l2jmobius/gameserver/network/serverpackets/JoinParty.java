@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class JoinParty implements IClientOutgoingPacket
+public class JoinParty extends ServerPacket
 {
 	private final int _response;
 	
@@ -29,11 +28,10 @@ public class JoinParty implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.JOIN_PARTY.writeId(packet);
-		packet.writeD(_response);
-		packet.writeD(0); // TODO: Find me!
-		return true;
+		ServerPackets.JOIN_PARTY.writeId(this);
+		writeInt(_response);
+		writeInt(0); // TODO: Find me!
 	}
 }
