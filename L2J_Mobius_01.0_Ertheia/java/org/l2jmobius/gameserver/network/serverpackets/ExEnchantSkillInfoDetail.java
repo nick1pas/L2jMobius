@@ -16,18 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.EnchantSkillGroupsData;
 import org.l2jmobius.gameserver.enums.SkillEnchantType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.EnchantSkillHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.util.SkillEnchantConverter;
 
 /**
  * @author KenM, Mobius
  */
-public class ExEnchantSkillInfoDetail implements IClientOutgoingPacket
+public class ExEnchantSkillInfoDetail extends ServerPacket
 {
 	private final SkillEnchantType _type;
 	private final int _skillId;
@@ -43,22 +42,26 @@ public class ExEnchantSkillInfoDetail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_SKILL_INFO_DETAIL.writeId(packet);
-		packet.writeD(_type.ordinal());
-		packet.writeD(_skillId);
-		packet.writeD(_skillLevel);
-		if ((_enchantSkillHolder != null) && (_type != SkillEnchantType.UNTRAIN))
+		if (_enchantSkillHolder == null)
 		{
-			packet.writeQ(_enchantSkillHolder.getSp(_type));
-			packet.writeD(_enchantSkillHolder.getChance(_type));
-			packet.writeD(2); // item count
-			packet.writeD(_enchantSkillHolder.getRequiredAdena(_type).getId());
-			packet.writeD((int) _enchantSkillHolder.getRequiredAdena(_type).getCount());
-			packet.writeD(_enchantSkillHolder.getRequiredBook(_type).getId());
-			packet.writeD((int) _enchantSkillHolder.getRequiredBook(_type).getCount());
+			return;
 		}
-		return _enchantSkillHolder != null;
+		
+		ServerPackets.EX_ENCHANT_SKILL_INFO_DETAIL.writeId(this);
+		writeInt(_type.ordinal());
+		writeInt(_skillId);
+		writeInt(_skillLevel);
+		if (_type != SkillEnchantType.UNTRAIN)
+		{
+			writeLong(_enchantSkillHolder.getSp(_type));
+			writeInt(_enchantSkillHolder.getChance(_type));
+			writeInt(2); // item count
+			writeInt(_enchantSkillHolder.getRequiredAdena(_type).getId());
+			writeInt((int) _enchantSkillHolder.getRequiredAdena(_type).getCount());
+			writeInt(_enchantSkillHolder.getRequiredBook(_type).getId());
+			writeInt((int) _enchantSkillHolder.getRequiredBook(_type).getCount());
+		}
 	}
 }

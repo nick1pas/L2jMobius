@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.MatchingRoomType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.CommandChannelMatchingRoom;
@@ -28,7 +28,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ExMPCCRoomInfo;
 /**
  * @author Sdw
  */
-public class RequestExManageMpccRoom implements IClientIncomingPacket
+public class RequestExManageMpccRoom implements ClientPacket
 {
 	private int _roomId;
 	private int _maxMembers;
@@ -37,15 +37,14 @@ public class RequestExManageMpccRoom implements IClientIncomingPacket
 	private String _title;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_roomId = packet.readD();
-		_maxMembers = packet.readD();
-		_minLevel = packet.readD();
-		_maxLevel = packet.readD();
-		packet.readD(); // Party Distrubtion Type
-		_title = packet.readS();
-		return true;
+		_roomId = packet.readInt();
+		_maxMembers = packet.readInt();
+		_minLevel = packet.readInt();
+		_maxLevel = packet.readInt();
+		packet.readInt(); // Party Distrubtion Type
+		_title = packet.readString();
 	}
 	
 	@Override

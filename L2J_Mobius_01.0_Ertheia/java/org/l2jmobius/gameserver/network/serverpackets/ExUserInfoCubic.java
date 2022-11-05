@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExUserInfoCubic implements IClientOutgoingPacket
+public class ExUserInfoCubic extends ServerPacket
 {
 	private final Player _player;
 	
@@ -33,13 +32,12 @@ public class ExUserInfoCubic implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_USER_INFO_CUBIC.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeH(_player.getCubics().size());
-		_player.getCubics().keySet().forEach(packet::writeH);
-		packet.writeD(_player.getAgathionId());
-		return true;
+		ServerPackets.EX_USER_INFO_CUBIC.writeId(this);
+		writeInt(_player.getObjectId());
+		writeShort(_player.getCubics().size());
+		_player.getCubics().keySet().forEach(this::writeShort);
+		writeInt(_player.getAgathionId());
 	}
 }

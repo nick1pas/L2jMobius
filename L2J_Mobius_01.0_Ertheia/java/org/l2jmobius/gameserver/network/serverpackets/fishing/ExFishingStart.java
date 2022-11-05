@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.fishing;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author -Wooden-
  */
-public class ExFishingStart implements IClientOutgoingPacket
+public class ExFishingStart extends ServerPacket
 {
 	private final Player _player;
 	private final int _fishType;
@@ -44,15 +43,14 @@ public class ExFishingStart implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_FISHING_START.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeC(_fishType);
-		packet.writeD(_baitLocation.getX());
-		packet.writeD(_baitLocation.getY());
-		packet.writeD(_baitLocation.getZ());
-		packet.writeC(1); // 0 = newbie, 1 = normal, 2 = night
-		return true;
+		ServerPackets.EX_FISHING_START.writeId(this);
+		writeInt(_player.getObjectId());
+		writeByte(_fishType);
+		writeInt(_baitLocation.getX());
+		writeInt(_baitLocation.getY());
+		writeInt(_baitLocation.getZ());
+		writeByte(1); // 0 = newbie, 1 = normal, 2 = night
 	}
 }

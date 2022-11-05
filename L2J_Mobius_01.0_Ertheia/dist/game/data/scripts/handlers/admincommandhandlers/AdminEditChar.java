@@ -1127,7 +1127,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		}
 		else
 		{
-			ip = client.getConnectionAddress().getHostAddress();
+			ip = client.getIp();
 		}
 		
 		final NpcHtmlMessage adminReply = new NpcHtmlMessage(0, 1);
@@ -1336,7 +1336,7 @@ public class AdminEditChar implements IAdminCommandHandler
 					continue;
 				}
 				
-				ip = client.getConnectionAddress().getHostAddress();
+				ip = client.getIp();
 				if (!ip.equals(ipAdress))
 				{
 					continue;
@@ -1430,7 +1430,7 @@ public class AdminEditChar implements IAdminCommandHandler
 				continue;
 			}
 			
-			ip = client.getConnectionAddress().getHostAddress();
+			ip = client.getIp();
 			if (ipMap.get(ip) == null)
 			{
 				ipMap.put(ip, new ArrayList<>());
@@ -1483,7 +1483,7 @@ public class AdminEditChar implements IAdminCommandHandler
 				continue;
 			}
 			
-			final IpPack pack = new IpPack(client.getConnectionAddress().getHostAddress(), client.getTrace());
+			final IpPack pack = new IpPack(client.getIp(), client.getTrace());
 			if (ipMap.get(pack) == null)
 			{
 				ipMap.put(pack, new ArrayList<>());

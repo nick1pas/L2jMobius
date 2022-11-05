@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class LoginFail implements IClientOutgoingPacket
+public class LoginFail extends ServerPacket
 {
 	// TODO: Enum
 	public static final int NO_TEXT = 0;
@@ -45,10 +44,9 @@ public class LoginFail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.LOGIN_FAIL.writeId(packet);
-		packet.writeD(_reason);
-		return true;
+		ServerPackets.LOGIN_FAIL.writeId(this);
+		writeInt(_reason);
 	}
 }

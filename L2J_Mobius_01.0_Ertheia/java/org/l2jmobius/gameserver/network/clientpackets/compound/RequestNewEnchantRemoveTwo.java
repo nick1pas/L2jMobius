@@ -16,13 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.compound;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.CompoundRequest;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantOneFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantTwoRemoveFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantTwoRemoveOK;
@@ -30,15 +30,14 @@ import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantTwoRemov
 /**
  * @author UnAfraid
  */
-public class RequestNewEnchantRemoveTwo implements IClientIncomingPacket
+public class RequestNewEnchantRemoveTwo implements ClientPacket
 {
 	private int _objectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		return true;
+		_objectId = packet.readInt();
 	}
 	
 	@Override

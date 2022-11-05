@@ -16,32 +16,30 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: (ch)ddd
  */
-public class ExVariationResult implements IClientOutgoingPacket
+public class ExVariationResult extends ServerPacket
 {
 	private final int _option1;
 	private final int _option2;
-	private final int _success;
+	private final boolean _success;
 	
 	public ExVariationResult(int option1, int option2, boolean success)
 	{
 		_option1 = option1;
 		_option2 = option2;
-		_success = success ? 1 : 0;
+		_success = success;
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_VARIATION_RESULT.writeId(packet);
-		packet.writeD(_option1);
-		packet.writeD(_option2);
-		packet.writeD(_success);
-		return true;
+		ServerPackets.EX_VARIATION_RESULT.writeId(this);
+		writeInt(_option1);
+		writeInt(_option2);
+		writeInt(_success);
 	}
 }

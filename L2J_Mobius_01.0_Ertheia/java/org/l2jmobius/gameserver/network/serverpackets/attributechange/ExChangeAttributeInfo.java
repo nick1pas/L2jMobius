@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets.attributechange;
 import java.util.EnumMap;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExChangeAttributeInfo implements IClientOutgoingPacket
+public class ExChangeAttributeInfo extends ServerPacket
 {
 	private static final Map<AttributeType, Byte> ATTRIBUTE_MASKS = new EnumMap<>(AttributeType.class);
 	static
@@ -59,12 +58,11 @@ public class ExChangeAttributeInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHANGE_ATTRIBUTE_INFO.writeId(packet);
-		packet.writeD(_crystalItemId);
-		packet.writeD(_attributes);
-		packet.writeD(_itemObjId);
-		return true;
+		ServerPackets.EX_CHANGE_ATTRIBUTE_INFO.writeId(this);
+		writeInt(_crystalItemId);
+		writeInt(_attributes);
+		writeInt(_itemObjId);
 	}
 }

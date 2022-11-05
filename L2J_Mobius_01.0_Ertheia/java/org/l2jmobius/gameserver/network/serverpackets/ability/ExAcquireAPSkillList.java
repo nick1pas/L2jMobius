@@ -20,19 +20,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.AbilityPointsData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.SkillLearn;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExAcquireAPSkillList implements IClientOutgoingPacket
+public class ExAcquireAPSkillList extends ServerPacket
 {
 	private final int _abilityPoints, _usedAbilityPoints;
 	private final long _price;
@@ -59,21 +58,20 @@ public class ExAcquireAPSkillList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ACQUIRE_AP_SKILL_LIST.writeId(packet);
-		packet.writeD(_enable ? 1 : 0);
-		packet.writeQ(Config.ABILITY_POINTS_RESET_ADENA);
-		packet.writeQ(_price);
-		packet.writeD(Config.ABILITY_MAX_POINTS);
-		packet.writeD(_abilityPoints);
-		packet.writeD(_usedAbilityPoints);
-		packet.writeD(_skills.size());
+		ServerPackets.EX_ACQUIRE_AP_SKILL_LIST.writeId(this);
+		writeInt(_enable);
+		writeLong(Config.ABILITY_POINTS_RESET_ADENA);
+		writeLong(_price);
+		writeInt(Config.ABILITY_MAX_POINTS);
+		writeInt(_abilityPoints);
+		writeInt(_usedAbilityPoints);
+		writeInt(_skills.size());
 		for (Skill skill : _skills)
 		{
-			packet.writeD(skill.getId());
-			packet.writeD(skill.getLevel());
+			writeInt(skill.getId());
+			writeInt(skill.getLevel());
 		}
-		return true;
 	}
 }

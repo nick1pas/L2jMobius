@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.Quest;
@@ -25,15 +25,14 @@ import org.l2jmobius.gameserver.network.GameClient;
 /**
  * @author Sdw
  */
-public class RequestAddExpandQuestAlarm implements IClientIncomingPacket
+public class RequestAddExpandQuestAlarm implements ClientPacket
 {
 	private int _questId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_questId = packet.readD();
-		return true;
+		_questId = packet.readInt();
 	}
 	
 	@Override
