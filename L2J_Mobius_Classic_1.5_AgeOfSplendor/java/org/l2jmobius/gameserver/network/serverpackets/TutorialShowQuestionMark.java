@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class TutorialShowQuestionMark implements IClientOutgoingPacket
+public class TutorialShowQuestionMark extends ServerPacket
 {
 	private final int _markId;
 	
@@ -29,10 +28,9 @@ public class TutorialShowQuestionMark implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.TUTORIAL_SHOW_QUESTION_MARK.writeId(packet);
-		packet.writeD(_markId);
-		return true;
+		ServerPackets.TUTORIAL_SHOW_QUESTION_MARK.writeId(this);
+		writeInt(_markId);
 	}
 }

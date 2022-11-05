@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
 import org.l2jmobius.gameserver.model.stats.BaseStat;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * This server packet sends the player's henna information using the Game Master's UI.
  * @author KenM, Zoey76
  */
-public class GMHennaInfo implements IClientOutgoingPacket
+public class GMHennaInfo extends ServerPacket
 {
 	private final Player _player;
 	private final List<Henna> _hennas = new ArrayList<>();
@@ -47,27 +46,26 @@ public class GMHennaInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GMHENNA_INFO.writeId(packet);
-		packet.writeD(_player.getHennaValue(BaseStat.INT)); // equip INT
-		packet.writeD(_player.getHennaValue(BaseStat.STR)); // equip STR
-		packet.writeD(_player.getHennaValue(BaseStat.CON)); // equip CON
-		packet.writeD(_player.getHennaValue(BaseStat.MEN)); // equip MEN
-		packet.writeD(_player.getHennaValue(BaseStat.DEX)); // equip DEX
-		packet.writeD(_player.getHennaValue(BaseStat.WIT)); // equip WIT
-		packet.writeD(0); // equip LUC
-		packet.writeD(0); // equip CHA
-		packet.writeD(3); // Slots
-		packet.writeD(_hennas.size()); // Size
+		ServerPackets.GMHENNA_INFO.writeId(this);
+		writeInt(_player.getHennaValue(BaseStat.INT)); // equip INT
+		writeInt(_player.getHennaValue(BaseStat.STR)); // equip STR
+		writeInt(_player.getHennaValue(BaseStat.CON)); // equip CON
+		writeInt(_player.getHennaValue(BaseStat.MEN)); // equip MEN
+		writeInt(_player.getHennaValue(BaseStat.DEX)); // equip DEX
+		writeInt(_player.getHennaValue(BaseStat.WIT)); // equip WIT
+		writeInt(0); // equip LUC
+		writeInt(0); // equip CHA
+		writeInt(3); // Slots
+		writeInt(_hennas.size()); // Size
 		for (Henna henna : _hennas)
 		{
-			packet.writeD(henna.getDyeId());
-			packet.writeD(1);
+			writeInt(henna.getDyeId());
+			writeInt(1);
 		}
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		return true;
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
 	}
 }

@@ -17,15 +17,14 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-, KenM
  */
-public class ExStorageMaxCount implements IClientOutgoingPacket
+public class ExStorageMaxCount extends ServerPacket
 {
 	private Player _player;
 	private int _inventory;
@@ -58,26 +57,25 @@ public class ExStorageMaxCount implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player == null)
 		{
-			return false;
+			return;
 		}
 		
-		OutgoingPackets.EX_STORAGE_MAX_COUNT.writeId(packet);
-		packet.writeD(_inventory);
-		packet.writeD(_warehouse);
-		packet.writeD(_freight);
-		packet.writeD(_clan);
-		packet.writeD(_privateSell);
-		packet.writeD(_privateBuy);
-		packet.writeD(_receipeD);
-		packet.writeD(_recipe);
-		packet.writeD(_inventoryExtraSlots); // Belt inventory slots increase count
-		packet.writeD(_inventoryQuestItems);
-		packet.writeD(40); // TODO: Find me!
-		packet.writeD(40); // TODO: Find me!
-		return true;
+		ServerPackets.EX_STORAGE_MAX_COUNT.writeId(this);
+		writeInt(_inventory);
+		writeInt(_warehouse);
+		writeInt(_freight);
+		writeInt(_clan);
+		writeInt(_privateSell);
+		writeInt(_privateBuy);
+		writeInt(_receipeD);
+		writeInt(_recipe);
+		writeInt(_inventoryExtraSlots); // Belt inventory slots increase count
+		writeInt(_inventoryQuestItems);
+		writeInt(40); // TODO: Find me!
+		writeInt(40); // TODO: Find me!
 	}
 }

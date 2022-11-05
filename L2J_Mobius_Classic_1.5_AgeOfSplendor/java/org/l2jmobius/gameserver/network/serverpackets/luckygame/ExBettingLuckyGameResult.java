@@ -21,18 +21,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.LuckyGameItemType;
 import org.l2jmobius.gameserver.enums.LuckyGameResultType;
 import org.l2jmobius.gameserver.enums.LuckyGameType;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExBettingLuckyGameResult implements IClientOutgoingPacket
+public class ExBettingLuckyGameResult extends ServerPacket
 {
 	public static final ExBettingLuckyGameResult NORMAL_INVALID_ITEM_COUNT = new ExBettingLuckyGameResult(LuckyGameResultType.INVALID_ITEM_COUNT, LuckyGameType.NORMAL);
 	public static final ExBettingLuckyGameResult LUXURY_INVALID_ITEM_COUNT = new ExBettingLuckyGameResult(LuckyGameResultType.INVALID_ITEM_COUNT, LuckyGameType.LUXURY);
@@ -64,22 +63,21 @@ public class ExBettingLuckyGameResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BETTING_LUCKY_GAME_RESULT.writeId(packet);
-		packet.writeD(_result.getClientId());
-		packet.writeD(_type.ordinal());
-		packet.writeD(_ticketCount);
-		packet.writeD(_size);
+		ServerPackets.EX_BETTING_LUCKY_GAME_RESULT.writeId(this);
+		writeInt(_result.getClientId());
+		writeInt(_type.ordinal());
+		writeInt(_ticketCount);
+		writeInt(_size);
 		for (Entry<LuckyGameItemType, List<ItemHolder>> reward : _rewards.entrySet())
 		{
 			for (ItemHolder item : reward.getValue())
 			{
-				packet.writeD(reward.getKey().getClientId());
-				packet.writeD(item.getId());
-				packet.writeD((int) item.getCount());
+				writeInt(reward.getKey().getClientId());
+				writeInt(item.getId());
+				writeInt((int) item.getCount());
 			}
 		}
-		return true;
 	}
 }

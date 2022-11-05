@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets.crystalization;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExGetCrystalizingEstimation implements IClientOutgoingPacket
+public class ExGetCrystalizingEstimation extends ServerPacket
 {
 	private final List<ItemChanceHolder> _items;
 	
@@ -36,16 +35,15 @@ public class ExGetCrystalizingEstimation implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_GET_CRYSTALIZING_ESTIMATION.writeId(packet);
-		packet.writeD(_items.size());
+		ServerPackets.EX_GET_CRYSTALIZING_ESTIMATION.writeId(this);
+		writeInt(_items.size());
 		for (ItemChanceHolder holder : _items)
 		{
-			packet.writeD(holder.getId());
-			packet.writeQ(holder.getCount());
-			packet.writeF(holder.getChance());
+			writeInt(holder.getId());
+			writeLong(holder.getCount());
+			writeDouble(holder.getChance());
 		}
-		return true;
 	}
 }

@@ -18,18 +18,17 @@ package org.l2jmobius.gameserver.network.serverpackets.primeshop;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.primeshop.PrimeShopGroup;
 import org.l2jmobius.gameserver.model.primeshop.PrimeShopItem;
 import org.l2jmobius.gameserver.model.variables.AccountVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExBRProductList implements IClientOutgoingPacket
+public class ExBRProductList extends ServerPacket
 {
 	private final Player _player;
 	private final int _type;
@@ -43,80 +42,79 @@ public class ExBRProductList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BR_PRODUCT_LIST.writeId(packet);
-		packet.writeQ(_player.getAdena()); // Adena
-		packet.writeQ(0); // Hero coins
-		packet.writeC(_type); // Type 0 - Home, 1 - History, 2 - Favorites
-		packet.writeD(_primeList.size());
+		ServerPackets.EX_BR_PRODUCT_LIST.writeId(this);
+		writeLong(_player.getAdena()); // Adena
+		writeLong(0); // Hero coins
+		writeByte(_type); // Type 0 - Home, 1 - History, 2 - Favorites
+		writeInt(_primeList.size());
 		for (PrimeShopGroup brItem : _primeList)
 		{
-			packet.writeD(brItem.getBrId());
-			packet.writeC(brItem.getCat());
-			packet.writeC(brItem.getPaymentType()); // Payment Type: 0 - Prime Points, 1 - Adena, 2 - Hero Coins
-			packet.writeD(brItem.getPrice());
-			packet.writeC(brItem.getPanelType()); // Item Panel Type: 0 - None, 1 - Event, 2 - Sale, 3 - New, 4 - Best
-			packet.writeD(brItem.getRecommended()); // Recommended: (bit flags) 1 - Top, 2 - Left, 4 - Right
-			packet.writeD(brItem.getStartSale());
-			packet.writeD(brItem.getEndSale());
-			packet.writeC(brItem.getDaysOfWeek());
-			packet.writeC(brItem.getStartHour());
-			packet.writeC(brItem.getStartMinute());
-			packet.writeC(brItem.getStopHour());
-			packet.writeC(brItem.getStopMinute());
+			writeInt(brItem.getBrId());
+			writeByte(brItem.getCat());
+			writeByte(brItem.getPaymentType()); // Payment Type: 0 - Prime Points, 1 - Adena, 2 - Hero Coins
+			writeInt(brItem.getPrice());
+			writeByte(brItem.getPanelType()); // Item Panel Type: 0 - None, 1 - Event, 2 - Sale, 3 - New, 4 - Best
+			writeInt(brItem.getRecommended()); // Recommended: (bit flags) 1 - Top, 2 - Left, 4 - Right
+			writeInt(brItem.getStartSale());
+			writeInt(brItem.getEndSale());
+			writeByte(brItem.getDaysOfWeek());
+			writeByte(brItem.getStartHour());
+			writeByte(brItem.getStartMinute());
+			writeByte(brItem.getStopHour());
+			writeByte(brItem.getStopMinute());
 			
 			// Daily account limit.
 			if ((brItem.getAccountDailyLimit() > 0) && (_player.getAccountVariables().getInt(AccountVariables.PRIME_SHOP_PRODUCT_DAILY_COUNT + brItem.getBrId(), 0) >= brItem.getAccountDailyLimit()))
 			{
-				packet.writeD(brItem.getAccountDailyLimit());
-				packet.writeD(brItem.getAccountDailyLimit());
+				writeInt(brItem.getAccountDailyLimit());
+				writeInt(brItem.getAccountDailyLimit());
 			}
 			// General account limit.
 			else if ((brItem.getAccountBuyLimit() > 0) && (_player.getAccountVariables().getInt(AccountVariables.PRIME_SHOP_PRODUCT_COUNT + brItem.getBrId(), 0) >= brItem.getAccountBuyLimit()))
 			{
-				packet.writeD(brItem.getAccountBuyLimit());
-				packet.writeD(brItem.getAccountBuyLimit());
+				writeInt(brItem.getAccountBuyLimit());
+				writeInt(brItem.getAccountBuyLimit());
 			}
 			else
 			{
-				packet.writeD(brItem.getStock());
-				packet.writeD(brItem.getTotal());
+				writeInt(brItem.getStock());
+				writeInt(brItem.getTotal());
 			}
 			
-			packet.writeC(brItem.getSalePercent());
-			packet.writeC(brItem.getMinLevel());
-			packet.writeC(brItem.getMaxLevel());
-			packet.writeD(brItem.getMinBirthday());
-			packet.writeD(brItem.getMaxBirthday());
+			writeByte(brItem.getSalePercent());
+			writeByte(brItem.getMinLevel());
+			writeByte(brItem.getMaxLevel());
+			writeInt(brItem.getMinBirthday());
+			writeInt(brItem.getMaxBirthday());
 			
 			// Daily account limit.
 			if (brItem.getAccountDailyLimit() > 0)
 			{
-				packet.writeD(1); // Days
-				packet.writeD(brItem.getAccountDailyLimit()); // Amount
+				writeInt(1); // Days
+				writeInt(brItem.getAccountDailyLimit()); // Amount
 			}
 			// General account limit.
 			else if (brItem.getAccountBuyLimit() > 0)
 			{
-				packet.writeD(-1); // Days
-				packet.writeD(brItem.getAccountBuyLimit()); // Amount
+				writeInt(-1); // Days
+				writeInt(brItem.getAccountBuyLimit()); // Amount
 			}
 			else
 			{
-				packet.writeD(0); // Days
-				packet.writeD(0); // Amount
+				writeInt(0); // Days
+				writeInt(0); // Amount
 			}
 			
-			packet.writeC(brItem.getItems().size());
+			writeByte(brItem.getItems().size());
 			for (PrimeShopItem item : brItem.getItems())
 			{
-				packet.writeD(item.getId());
-				packet.writeD((int) item.getCount());
-				packet.writeD(item.getWeight());
-				packet.writeD(item.isTradable());
+				writeInt(item.getId());
+				writeInt((int) item.getCount());
+				writeInt(item.getWeight());
+				writeInt(item.isTradable());
 			}
 		}
-		return true;
 	}
 }

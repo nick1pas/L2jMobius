@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.GraciaSeedsManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExShowSeedMapInfo implements IClientOutgoingPacket
+public class ExShowSeedMapInfo extends ServerPacket
 {
 	public static final ExShowSeedMapInfo STATIC_PACKET = new ExShowSeedMapInfo();
 	
@@ -29,21 +28,20 @@ public class ExShowSeedMapInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_SEED_MAP_INFO.writeId(packet);
-		packet.writeD(2); // seed count
+		ServerPackets.EX_SHOW_SEED_MAP_INFO.writeId(this);
+		writeInt(2); // seed count
 		// Seed of Destruction
-		packet.writeD(-246857); // x coord
-		packet.writeD(251960); // y coord
-		packet.writeD(4331); // z coord
-		packet.writeD(2770 + GraciaSeedsManager.getInstance().getSoDState()); // sys msg id
+		writeInt(-246857); // x coord
+		writeInt(251960); // y coord
+		writeInt(4331); // z coord
+		writeInt(2770 + GraciaSeedsManager.getInstance().getSoDState()); // sys msg id
 		// Seed of Infinity
-		packet.writeD(-213770); // x coord
-		packet.writeD(210760); // y coord
-		packet.writeD(4400); // z coord
+		writeInt(-213770); // x coord
+		writeInt(210760); // y coord
+		writeInt(4400); // z coord
 		// Manager not implemented yet
-		packet.writeD(2766); // sys msg id
-		return true;
+		writeInt(2766); // sys msg id
 	}
 }

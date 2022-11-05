@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import static org.l2jmobius.gameserver.model.actor.Npc.INTERACTION_DISTANCE;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.OfflineTraderTable;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.ItemRequest;
@@ -30,7 +30,7 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 
-public class RequestPrivateStoreSell implements IClientIncomingPacket
+public class RequestPrivateStoreSell implements ClientPacket
 {
 	private static final int BATCH_LENGTH = 32; // length of the one item
 	
@@ -38,31 +38,30 @@ public class RequestPrivateStoreSell implements IClientIncomingPacket
 	private ItemRequest[] _items = null;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_storePlayerId = packet.readD();
-		final int count = packet.readD();
-		if ((count <= 0) || (count > Config.MAX_ITEM_IN_PACKET) || ((count * BATCH_LENGTH) != packet.getReadableBytes()))
+		_storePlayerId = packet.readInt();
+		final int count = packet.readInt();
+		if ((count <= 0) || (count > Config.MAX_ITEM_IN_PACKET) || ((count * BATCH_LENGTH) != packet.getRemainingLength()))
 		{
-			return false;
+			return;
 		}
 		_items = new ItemRequest[count];
 		for (int i = 0; i < count; i++)
 		{
-			final int objectId = packet.readD();
-			final int itemId = packet.readD();
-			packet.readH(); // TODO analyse this
-			packet.readH(); // TODO analyse this
-			final long cnt = packet.readQ();
-			final long price = packet.readQ();
+			final int objectId = packet.readInt();
+			final int itemId = packet.readInt();
+			packet.readShort(); // TODO analyse this
+			packet.readShort(); // TODO analyse this
+			final long cnt = packet.readLong();
+			final long price = packet.readLong();
 			if ((objectId < 1) || (itemId < 1) || (cnt < 1) || (price < 0))
 			{
 				_items = null;
-				return false;
+				return;
 			}
 			_items[i] = new ItemRequest(objectId, itemId, cnt, price);
 		}
-		return true;
 	}
 	
 	@Override

@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.skill.AbnormalVisualEffect;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class NpcInfoAbnormalVisualEffect implements IClientOutgoingPacket
+public class NpcInfoAbnormalVisualEffect extends ServerPacket
 {
 	private final Npc _npc;
 	
@@ -36,17 +35,16 @@ public class NpcInfoAbnormalVisualEffect implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.NPC_INFO_ABNORMAL_VISUAL_EFFECT.writeId(packet);
-		packet.writeD(_npc.getObjectId());
-		packet.writeD(_npc.getTransformationDisplayId());
+		ServerPackets.NPC_INFO_ABNORMAL_VISUAL_EFFECT.writeId(this);
+		writeInt(_npc.getObjectId());
+		writeInt(_npc.getTransformationDisplayId());
 		final Set<AbnormalVisualEffect> abnormalVisualEffects = _npc.getEffectList().getCurrentAbnormalVisualEffects();
-		packet.writeD(abnormalVisualEffects.size());
+		writeInt(abnormalVisualEffects.size());
 		for (AbnormalVisualEffect abnormalVisualEffect : abnormalVisualEffects)
 		{
-			packet.writeH(abnormalVisualEffect.getClientId());
+			writeShort(abnormalVisualEffect.getClientId());
 		}
-		return true;
 	}
 }
