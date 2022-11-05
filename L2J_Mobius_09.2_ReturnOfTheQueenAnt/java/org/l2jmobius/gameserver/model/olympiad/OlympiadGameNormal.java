@@ -41,7 +41,7 @@ import org.l2jmobius.gameserver.model.instancezone.Instance;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadMatchInfo;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadMatchResult;
@@ -160,7 +160,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void broadcastPacket(IClientOutgoingPacket packet)
+	protected final void broadcastPacket(ServerPacket packet)
 	{
 		if (_playerOne.updatePlayer())
 		{

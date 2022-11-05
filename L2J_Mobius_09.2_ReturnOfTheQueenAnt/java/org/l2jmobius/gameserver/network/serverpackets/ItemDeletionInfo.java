@@ -19,36 +19,33 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.events.ItemDeletionInfoManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Index, Mobius
  */
-public class ItemDeletionInfo implements IClientOutgoingPacket
+public class ItemDeletionInfo extends ServerPacket
 {
 	public ItemDeletionInfo()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ITEM_DELETION_INFO.writeId(packet);
+		ServerPackets.EX_ITEM_DELETION_INFO.writeId(this);
 		
 		// Items.
 		final Map<Integer, Integer> itemDates = ItemDeletionInfoManager.getInstance().getItemDates();
-		packet.writeD(itemDates.size());
+		writeInt(itemDates.size());
 		for (Entry<Integer, Integer> info : itemDates.entrySet())
 		{
-			packet.writeD(info.getKey()); // item
-			packet.writeD(info.getValue()); // date
+			writeInt(info.getKey()); // item
+			writeInt(info.getValue()); // date
 		}
 		
 		// Skills.
-		packet.writeD(0);
-		
-		return true;
+		writeInt(0);
 	}
 }

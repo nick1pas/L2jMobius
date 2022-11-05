@@ -27,21 +27,20 @@ import java.util.GregorianCalendar;
 import java.util.List;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
 import org.l2jmobius.gameserver.model.olympiad.Olympiad;
 import org.l2jmobius.gameserver.model.olympiad.OlympiadFight;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NviX, dontknowdontcare
  */
-public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
+public class ExOlympiadMyRankingInfo extends ServerPacket
 {
 	// TODO: Move query and store data at RankManager.
 	private static final String GET_CURRENT_CYCLE_DATA = "SELECT charId, olympiad_points, competitions_won, competitions_lost FROM olympiad_nobles WHERE class_id = ? ORDER BY olympiad_points DESC, competitions_won DESC LIMIT " + RankManager.PLAYER_LIMIT;
@@ -55,9 +54,9 @@ public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_MY_RANKING_INFO.writeId(packet);
+		ServerPackets.EX_OLYMPIAD_MY_RANKING_INFO.writeId(this);
 		final Date date = new Date();
 		final Calendar calendar = new GregorianCalendar();
 		calendar.setTime(date);
@@ -129,19 +128,19 @@ public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
 			heroCount = hero.getInt("count", 0);
 			legendCount = hero.getInt("legend_count", 0);
 		}
-		packet.writeD(year); // Year
-		packet.writeD(month); // Month
-		packet.writeD(Math.min(Olympiad.getInstance().getCurrentCycle() - 1, 0)); // cycle ?
-		packet.writeD(currentPlace); // Place on current cycle ?
-		packet.writeD(currentWins); // Wins
-		packet.writeD(currentLoses); // Loses
-		packet.writeD(currentPoints); // Points
-		packet.writeD(previousPlace); // Place on previous cycle
-		packet.writeD(previousWins); // win count & lose count previous cycle? lol
-		packet.writeD(previousLoses); // ??
-		packet.writeD(previousPoints); // Points on previous cycle
-		packet.writeD(heroCount); // Hero counts
-		packet.writeD(legendCount); // Legend counts
+		writeInt(year); // Year
+		writeInt(month); // Month
+		writeInt(Math.min(Olympiad.getInstance().getCurrentCycle() - 1, 0)); // cycle ?
+		writeInt(currentPlace); // Place on current cycle ?
+		writeInt(currentWins); // Wins
+		writeInt(currentLoses); // Loses
+		writeInt(currentPoints); // Points
+		writeInt(previousPlace); // Place on previous cycle
+		writeInt(previousWins); // win count & lose count previous cycle? lol
+		writeInt(previousLoses); // ??
+		writeInt(previousPoints); // Points on previous cycle
+		writeInt(heroCount); // Hero counts
+		writeInt(legendCount); // Legend counts
 		
 		List<OlympiadFight> fightList = _player.getOlympiadFightHistory().getFights();
 		if (fightList == null)
@@ -149,7 +148,7 @@ public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
 			fightList = new ArrayList<>();
 		}
 		
-		packet.writeD(fightList.size());
+		writeInt(fightList.size());
 		int count = 1;
 		for (OlympiadFight fight : fightList)
 		{
@@ -158,15 +157,13 @@ public class ExOlympiadMyRankingInfo implements IClientOutgoingPacket
 				break;
 			}
 			
-			packet.writeH(fight.getOpponentName().length() + 1);
-			packet.writeS(fight.getOpponentName());
-			packet.writeC(fight.getWinner());
-			packet.writeD(fight.getOpponentLevel());
-			packet.writeD(fight.getOpponentClassId());
+			writeShort(fight.getOpponentName().length() + 1);
+			writeString(fight.getOpponentName());
+			writeByte(fight.getWinner());
+			writeInt(fight.getOpponentLevel());
+			writeInt(fight.getOpponentClassId());
 			
 			count++;
 		}
-		
-		return true;
 	}
 }

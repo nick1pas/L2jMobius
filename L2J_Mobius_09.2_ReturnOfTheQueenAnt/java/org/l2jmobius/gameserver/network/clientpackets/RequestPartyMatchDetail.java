@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.MatchingRoom;
@@ -25,19 +25,18 @@ import org.l2jmobius.gameserver.network.GameClient;
 /**
  * @author Gnacik
  */
-public class RequestPartyMatchDetail implements IClientIncomingPacket
+public class RequestPartyMatchDetail implements ClientPacket
 {
 	private int _roomId;
 	private int _location;
 	private int _level;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_roomId = packet.readD();
-		_location = packet.readD();
-		_level = packet.readD();
-		return true;
+		_roomId = packet.readInt();
+		_location = packet.readInt();
+		_level = packet.readInt();
 	}
 	
 	@Override

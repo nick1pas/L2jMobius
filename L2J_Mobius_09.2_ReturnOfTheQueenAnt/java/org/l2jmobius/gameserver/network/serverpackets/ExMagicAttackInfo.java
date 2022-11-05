@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExMagicAttackInfo implements IClientOutgoingPacket
+public class ExMagicAttackInfo extends ServerPacket
 {
 	// TODO: Enum
 	public static final int CRITICAL = 1;
@@ -46,12 +45,11 @@ public class ExMagicAttackInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MAGIC_ATTACK_INFO.writeId(packet);
-		packet.writeD(_caster);
-		packet.writeD(_target);
-		packet.writeD(_type);
-		return true;
+		ServerPackets.EX_MAGIC_ATTACK_INFO.writeId(this);
+		writeInt(_caster);
+		writeInt(_target);
+		writeInt(_type);
 	}
 }

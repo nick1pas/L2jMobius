@@ -16,28 +16,27 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.ClanMasteryData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.holders.ClanMasteryHolder;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMasteryInfo;
 
 /**
  * @author Mobius
  */
-public class RequestExPledgeMasterySet implements IClientIncomingPacket
+public class RequestExPledgeMasterySet implements ClientPacket
 {
 	private int _masteryId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_masteryId = packet.readD();
-		return true;
+		_masteryId = packet.readInt();
 	}
 	
 	@Override

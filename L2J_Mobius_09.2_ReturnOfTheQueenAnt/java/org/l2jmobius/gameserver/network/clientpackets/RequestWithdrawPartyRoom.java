@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.MatchingRoomType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.MatchingRoom;
@@ -25,15 +25,14 @@ import org.l2jmobius.gameserver.network.GameClient;
 /**
  * @author Gnacik
  */
-public class RequestWithdrawPartyRoom implements IClientIncomingPacket
+public class RequestWithdrawPartyRoom implements ClientPacket
 {
 	private int _roomId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_roomId = packet.readD();
-		return true;
+		_roomId = packet.readInt();
 	}
 	
 	@Override

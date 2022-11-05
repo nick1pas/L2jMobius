@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.handler.ChatHandler;
 import org.l2jmobius.gameserver.handler.IChatHandler;
@@ -42,7 +42,7 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @version $Revision: 1.16.2.12.2.7 $ $Date: 2005/04/11 10:06:11 $
  */
-public class Say2 implements IClientIncomingPacket
+public class Say2 implements ClientPacket
 {
 	private static Logger LOGGER_CHAT = Logger.getLogger("chat");
 	
@@ -90,16 +90,15 @@ public class Say2 implements IClientIncomingPacket
 	private String _target;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_text = packet.readS();
-		_type = packet.readD();
+		_text = packet.readString();
+		_type = packet.readInt();
 		if (_type == ChatType.WHISPER.getClientId())
 		{
-			packet.readC();
-			_target = packet.readS();
+			packet.readByte();
+			_target = packet.readString();
 		}
-		return true;
 	}
 	
 	@Override

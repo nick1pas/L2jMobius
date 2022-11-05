@@ -21,13 +21,12 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.RecipeHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class RecipeShopManageList implements IClientOutgoingPacket
+public class RecipeShopManageList extends ServerPacket
 {
 	private final Player _seller;
 	private final boolean _isDwarven;
@@ -54,40 +53,39 @@ public class RecipeShopManageList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.RECIPE_SHOP_MANAGE_LIST.writeId(packet);
-		packet.writeD(_seller.getObjectId());
-		packet.writeD((int) _seller.getAdena());
-		packet.writeD(_isDwarven ? 0 : 1);
+		ServerPackets.RECIPE_SHOP_MANAGE_LIST.writeId(this);
+		writeInt(_seller.getObjectId());
+		writeInt((int) _seller.getAdena());
+		writeInt(!_isDwarven);
 		if ((_recipes == null) || _recipes.isEmpty())
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		else
 		{
-			packet.writeD(_recipes.size()); // number of items in recipe book
-			int i = 1;
+			writeInt(_recipes.size()); // number of items in recipe book
+			int count = 1;
 			for (RecipeHolder recipe : _recipes)
 			{
-				packet.writeD(recipe.getId());
-				packet.writeD(i++);
+				writeInt(recipe.getId());
+				writeInt(count++);
 			}
 		}
 		if ((_manufacture == null) || _manufacture.isEmpty())
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		else
 		{
-			packet.writeD(_manufacture.size());
+			writeInt(_manufacture.size());
 			for (Entry<Integer, Long> item : _manufacture)
 			{
-				packet.writeD(item.getKey());
-				packet.writeD(0); // CanCraft?
-				packet.writeQ(item.getValue());
+				writeInt(item.getKey());
+				writeInt(0); // CanCraft?
+				writeLong(item.getValue());
 			}
 		}
-		return true;
 	}
 }

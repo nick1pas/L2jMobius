@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.BonusExpType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class ExUserBoostStat implements IClientOutgoingPacket
+public class ExUserBoostStat extends ServerPacket
 {
 	private final Player _player;
 	private final BonusExpType _type;
@@ -37,9 +36,9 @@ public class ExUserBoostStat implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_USER_BOOST_STAT.writeId(packet);
+		ServerPackets.EX_USER_BOOST_STAT.writeId(this);
 		int count = 0;
 		int bonus = 0;
 		switch (_type)
@@ -87,9 +86,8 @@ public class ExUserBoostStat implements IClientOutgoingPacket
 				break;
 			}
 		}
-		packet.writeC(_type.getId());
-		packet.writeC(count);
-		packet.writeH(bonus);
-		return true;
+		writeByte(_type.getId());
+		writeByte(count);
+		writeShort(bonus);
 	}
 }

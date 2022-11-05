@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * Written by Berezkin Nikolay, on 12.04.2021
  */
-public class ExCollectionRegister implements IClientOutgoingPacket
+public class ExCollectionRegister extends ServerPacket
 {
 	private final int _collectionId;
 	private final int _index;
@@ -38,18 +37,17 @@ public class ExCollectionRegister implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_COLLECTION_REGISTER.writeId(packet);
-		packet.writeH(_collectionId);
-		packet.writeC(1);
-		packet.writeC(0x0E);
-		packet.writeC(0);
-		packet.writeC(_index);
-		packet.writeD(_item.getId());
-		packet.writeH(0);
-		packet.writeC(0);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_COLLECTION_REGISTER.writeId(this);
+		writeShort(_collectionId);
+		writeByte(1);
+		writeByte(0x0E);
+		writeByte(0);
+		writeByte(_index);
+		writeInt(_item.getId());
+		writeShort(0);
+		writeByte(0);
+		writeInt(0);
 	}
 }

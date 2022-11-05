@@ -20,13 +20,11 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-
 /**
  * This class is made to create packets with any format
  * @author Maktakien
  */
-public class AdminForgePacket implements IClientOutgoingPacket
+public class AdminForgePacket extends ServerPacket
 {
 	private final List<Part> _parts = new ArrayList<>();
 	
@@ -43,56 +41,54 @@ public class AdminForgePacket implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		for (Part p : _parts)
 		{
-			generate(packet, p.b, p.str);
+			generate(p.b, p.str);
 		}
-		return true;
 	}
 	
 	/**
-	 * @param packet
 	 * @param type
 	 * @param value
 	 * @return
 	 */
-	public boolean generate(PacketWriter packet, byte type, String value)
+	public boolean generate(byte type, String value)
 	{
 		if ((type == 'C') || (type == 'c'))
 		{
-			packet.writeC(Integer.decode(value));
+			writeByte(Integer.decode(value));
 			return true;
 		}
 		else if ((type == 'D') || (type == 'd'))
 		{
-			packet.writeD(Integer.decode(value));
+			writeInt(Integer.decode(value));
 			return true;
 		}
 		else if ((type == 'H') || (type == 'h'))
 		{
-			packet.writeH(Integer.decode(value));
+			writeShort(Integer.decode(value));
 			return true;
 		}
 		else if ((type == 'F') || (type == 'f'))
 		{
-			packet.writeF(Double.parseDouble(value));
+			writeDouble(Double.parseDouble(value));
 			return true;
 		}
 		else if ((type == 'S') || (type == 's'))
 		{
-			packet.writeS(value);
+			writeString(value);
 			return true;
 		}
 		else if ((type == 'B') || (type == 'b') || (type == 'X') || (type == 'x'))
 		{
-			packet.writeB(new BigInteger(value).toByteArray());
+			writeBytes(new BigInteger(value).toByteArray());
 			return true;
 		}
 		else if ((type == 'Q') || (type == 'q'))
 		{
-			packet.writeQ(Long.decode(value));
+			writeLong(Long.decode(value));
 			return true;
 		}
 		return false;

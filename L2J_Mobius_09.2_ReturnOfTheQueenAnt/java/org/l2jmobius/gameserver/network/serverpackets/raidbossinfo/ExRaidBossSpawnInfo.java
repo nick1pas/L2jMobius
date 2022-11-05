@@ -19,15 +19,14 @@ package org.l2jmobius.gameserver.network.serverpackets.raidbossinfo;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.RaidBossStatus;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
+public class ExRaidBossSpawnInfo extends ServerPacket
 {
 	
 	private final Map<Integer, RaidBossStatus> _statuses;
@@ -38,16 +37,15 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RAID_BOSS_SPAWN_INFO.writeId(packet);
-		packet.writeD(_statuses.size()); // count
+		ServerPackets.EX_RAID_BOSS_SPAWN_INFO.writeId(this);
+		writeInt(_statuses.size()); // count
 		for (Entry<Integer, RaidBossStatus> entry : _statuses.entrySet())
 		{
-			packet.writeD(entry.getKey());
-			packet.writeD(entry.getValue().ordinal());
-			packet.writeD(0);
+			writeInt(entry.getKey());
+			writeInt(entry.getValue().ordinal());
+			writeInt(0);
 		}
-		return true;
 	}
 }

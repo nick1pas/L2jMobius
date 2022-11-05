@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.collection;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionUpdateFavorite;
 
 /**
- * Written by Berezkin Nikolay, on 12.04.2021
+ * @author Berezkin Nikolay
  */
-public class RequestCollectionUpdateFavorite implements IClientIncomingPacket
+public class RequestCollectionUpdateFavorite implements ClientPacket
 {
 	private int _isAdd;
 	private int _collectionId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_isAdd = packet.readC();
-		_collectionId = packet.readH();
-		return true;
+		_isAdd = packet.readByte();
+		_collectionId = packet.readShort();
 	}
 	
 	@Override
@@ -46,6 +45,7 @@ public class RequestCollectionUpdateFavorite implements IClientIncomingPacket
 		{
 			return;
 		}
+		
 		if (_isAdd == 1)
 		{
 			player.addCollectionFavorite(_collectionId);

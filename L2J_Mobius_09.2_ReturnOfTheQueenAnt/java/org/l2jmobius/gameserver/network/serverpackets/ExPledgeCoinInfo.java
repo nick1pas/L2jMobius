@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class ExPledgeCoinInfo implements IClientOutgoingPacket
+public class ExPledgeCoinInfo extends ServerPacket
 {
 	private final long _count;
 	
@@ -33,10 +32,9 @@ public class ExPledgeCoinInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_COIN_INFO.writeId(packet);
-		packet.writeQ(_count);
-		return true;
+		ServerPackets.EX_PLEDGE_COIN_INFO.writeId(this);
+		writeLong(_count);
 	}
 }

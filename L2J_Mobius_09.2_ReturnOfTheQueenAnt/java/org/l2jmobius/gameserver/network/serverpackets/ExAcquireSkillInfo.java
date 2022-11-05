@@ -20,17 +20,16 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.SkillLearn;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExAcquireSkillInfo implements IClientOutgoingPacket
+public class ExAcquireSkillInfo extends ServerPacket
 {
 	private final int _id;
 	private final int _level;
@@ -58,26 +57,25 @@ public class ExAcquireSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ACQUIRE_SKILL_INFO.writeId(packet);
-		packet.writeD(_id);
-		packet.writeD(_level);
-		packet.writeQ(_spCost);
-		packet.writeH(_minLevel);
-		packet.writeH(_dualClassLevel);
-		packet.writeD(_itemReq.size());
+		ServerPackets.EX_ACQUIRE_SKILL_INFO.writeId(this);
+		writeInt(_id);
+		writeInt(_level);
+		writeLong(_spCost);
+		writeShort(_minLevel);
+		writeShort(_dualClassLevel);
+		writeInt(_itemReq.size());
 		for (List<ItemHolder> holder : _itemReq)
 		{
-			packet.writeD(holder.get(0).getId());
-			packet.writeQ(holder.get(0).getCount());
+			writeInt(holder.get(0).getId());
+			writeLong(holder.get(0).getCount());
 		}
-		packet.writeD(_skillRem.size());
+		writeInt(_skillRem.size());
 		for (Skill skill : _skillRem)
 		{
-			packet.writeD(skill.getId());
-			packet.writeD(skill.getLevel());
+			writeInt(skill.getId());
+			writeInt(skill.getLevel());
 		}
-		return true;
 	}
 }

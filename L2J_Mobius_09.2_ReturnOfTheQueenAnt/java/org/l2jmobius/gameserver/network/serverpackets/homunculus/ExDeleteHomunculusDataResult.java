@@ -16,26 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author nexvill
  */
-public class ExDeleteHomunculusDataResult implements IClientOutgoingPacket
+public class ExDeleteHomunculusDataResult extends ServerPacket
 {
 	public ExDeleteHomunculusDataResult()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DELETE_HOMUNCULUS_DATA_RESULT.writeId(packet);
-		packet.writeD(1); // 1 - success
-		packet.writeD(SystemMessageId.THE_HOMUNCULUS_IS_DESTROYED.getId());
-		return true;
+		ServerPackets.EX_DELETE_HOMUNCULUS_DATA_RESULT.writeId(this);
+		writeInt(1); // 1 - success
+		writeInt(SystemMessageId.THE_HOMUNCULUS_IS_DESTROYED.getId());
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * Written by Berezkin Nikolay, on 13.04.2021
  */
-public class ExCollectionComplete implements IClientOutgoingPacket
+public class ExCollectionComplete extends ServerPacket
 {
 	private final int _collectionId;
 	
@@ -33,10 +32,9 @@ public class ExCollectionComplete implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_COLLECTION_COMPLETE.writeId(packet);
-		packet.writeH(_collectionId);
-		return true;
+		ServerPackets.EX_COLLECTION_COMPLETE.writeId(this);
+		writeShort(_collectionId);
 	}
 }

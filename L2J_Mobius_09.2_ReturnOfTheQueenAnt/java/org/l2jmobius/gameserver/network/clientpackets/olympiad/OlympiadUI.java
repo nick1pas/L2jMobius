@@ -16,23 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.olympiad;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadRecord;
 
-public class OlympiadUI implements IClientIncomingPacket
+public class OlympiadUI implements ClientPacket
 {
 	private byte _gameRuleType;
 	private int _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_gameRuleType = (byte) packet.readC();
-		_type = packet.readD();
-		return true;
+		_gameRuleType = (byte) packet.readByte();
+		_type = packet.readInt();
 	}
 	
 	@Override

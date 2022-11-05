@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ceremonyofchaos;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExCuriousHouseObserveMode implements IClientOutgoingPacket
+public class ExCuriousHouseObserveMode extends ServerPacket
 {
 	public static final ExCuriousHouseObserveMode STATIC_ENABLED = new ExCuriousHouseObserveMode(0);
 	public static final ExCuriousHouseObserveMode STATIC_DISABLED = new ExCuriousHouseObserveMode(1);
@@ -36,10 +35,9 @@ public class ExCuriousHouseObserveMode implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CURIOUS_HOUSE_OBSERVE_MODE.writeId(packet);
-		packet.writeC(_spectating);
-		return true;
+		ServerPackets.EX_CURIOUS_HOUSE_OBSERVE_MODE.writeId(this);
+		writeByte(_spectating);
 	}
 }

@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.primeshop;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ExBrProductReplyType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class ExBRBuyProduct implements IClientOutgoingPacket
+public class ExBRBuyProduct extends ServerPacket
 {
 	private final int _reply;
 	
@@ -34,10 +33,9 @@ public class ExBRBuyProduct implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BR_BUY_PRODUCT.writeId(packet);
-		packet.writeD(_reply);
-		return true;
+		ServerPackets.EX_BR_BUY_PRODUCT.writeId(this);
+		writeInt(_reply);
 	}
 }

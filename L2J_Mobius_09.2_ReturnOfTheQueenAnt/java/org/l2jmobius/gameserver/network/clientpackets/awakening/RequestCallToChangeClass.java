@@ -16,27 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.awakening;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.EventType;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerCallToChangeClass;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Sdw
  */
-public class RequestCallToChangeClass implements IClientIncomingPacket
+public class RequestCallToChangeClass implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		// Nothing to read
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

@@ -16,26 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.balthusevent;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.instancemanager.events.BalthusEventManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.balthusevent.ExBalthusEvent;
 
 /**
  * @author Index
  */
-public class RequestEventBalthusToken implements IClientIncomingPacket
+public class RequestEventBalthusToken implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

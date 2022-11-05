@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NasSeKa
  */
-public class TimedHuntingZoneChargeResult implements IClientOutgoingPacket
+public class TimedHuntingZoneChargeResult extends ServerPacket
 {
 	private final int _zoneId;
 	private final int _remainTime;
@@ -39,13 +38,12 @@ public class TimedHuntingZoneChargeResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TIME_RESTRICT_FIELD_USER_CHARGE_RESULT.writeId(packet);
-		packet.writeD(_zoneId);
-		packet.writeD(_remainTime);
-		packet.writeD(_refillTime);
-		packet.writeD(_chargeTime);
-		return true;
+		ServerPackets.EX_TIME_RESTRICT_FIELD_USER_CHARGE_RESULT.writeId(this);
+		writeInt(_zoneId);
+		writeInt(_remainTime);
+		writeInt(_refillTime);
+		writeInt(_chargeTime);
 	}
 }
