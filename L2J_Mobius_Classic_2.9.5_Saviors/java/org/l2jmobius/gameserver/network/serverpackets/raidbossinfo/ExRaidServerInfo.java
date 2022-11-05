@@ -16,19 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.raidbossinfo;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExRaidServerInfo implements IClientOutgoingPacket
+public class ExRaidServerInfo extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RAID_SERVER_INFO.writeId(packet);
-		return true;
+		ServerPackets.EX_RAID_SERVER_INFO.writeId(this);
 	}
 }

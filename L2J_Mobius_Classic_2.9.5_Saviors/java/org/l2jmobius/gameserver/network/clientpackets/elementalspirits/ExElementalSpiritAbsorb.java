@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.enums.UserInfoType;
@@ -25,27 +25,26 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ElementalSpiritAbsorbItemHolder;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 import org.l2jmobius.gameserver.network.serverpackets.elementalspirits.ElementalSpiritAbsorb;
 
 /**
  * @author JoeAlisson
  */
-public class ExElementalSpiritAbsorb implements IClientIncomingPacket
+public class ExElementalSpiritAbsorb implements ClientPacket
 {
 	private byte _type;
 	private int _itemId;
 	private int _amount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = (byte) packet.readC();
-		packet.readD(); // items for now is always 1
-		_itemId = packet.readD();
-		_amount = packet.readD();
-		return true;
+		_type = (byte) packet.readByte();
+		packet.readInt(); // items for now is always 1
+		_itemId = packet.readInt();
+		_amount = packet.readInt();
 	}
 	
 	@Override

@@ -16,7 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.equipmentupgrade;
 
-import org.l2jmobius.commons.network.PacketReader;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EquipmentUpgradeData;
 import org.l2jmobius.gameserver.enums.UpgradeType;
@@ -27,28 +30,24 @@ import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.equipmentupgrade.ExUpgradeSystemNormalResult;
 import org.l2jmobius.gameserver.network.serverpackets.equipmentupgrade.ExUpgradeSystemResult;
 
-import io.netty.util.collection.IntObjectHashMap;
-import io.netty.util.collection.IntObjectMap;
-
-public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
+public class ExUpgradeSystemNormalRequest implements ClientPacket
 {
 	private int _objectId;
 	private UpgradeType _type;
 	private int _upgradeId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_type = UpgradeType.ofId(packet.readD());
-		_upgradeId = packet.readD();
-		return true;
+		_objectId = packet.readInt();
+		_type = UpgradeType.ofId(packet.readInt());
+		_upgradeId = packet.readInt();
 	}
 	
 	@Override
@@ -113,7 +112,7 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 		
 		final double random = (Rnd.nextDouble() * 100);
 		final boolean success = random <= upgradeHolder.getChance();
-		IntObjectMap<Item> items = new IntObjectHashMap<>();
+		final Map<Integer, Item> items = new HashMap<>();
 		
 		if (success)
 		{

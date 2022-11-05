@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.shuttle;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExMoveToLocationInShuttle implements IClientOutgoingPacket
+public class ExMoveToLocationInShuttle extends ServerPacket
 {
 	private final int _objectId;
 	private final int _airShipId;
@@ -48,17 +47,16 @@ public class ExMoveToLocationInShuttle implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MOVE_TO_LOCATION_IN_SUTTLE.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_airShipId);
-		packet.writeD(_targetX);
-		packet.writeD(_targetY);
-		packet.writeD(_targetZ);
-		packet.writeD(_fromX);
-		packet.writeD(_fromY);
-		packet.writeD(_fromZ);
-		return true;
+		ServerPackets.EX_MOVE_TO_LOCATION_IN_SUTTLE.writeId(this);
+		writeInt(_objectId);
+		writeInt(_airShipId);
+		writeInt(_targetX);
+		writeInt(_targetY);
+		writeInt(_targetZ);
+		writeInt(_fromX);
+		writeInt(_fromY);
+		writeInt(_fromZ);
 	}
 }

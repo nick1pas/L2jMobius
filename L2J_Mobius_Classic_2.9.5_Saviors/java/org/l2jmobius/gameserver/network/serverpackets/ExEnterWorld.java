@@ -21,13 +21,12 @@ import java.time.ZoneId;
 import java.time.zone.ZoneRules;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class ExEnterWorld implements IClientOutgoingPacket
+public class ExEnterWorld extends ServerPacket
 {
 	private final int _zoneIdOffsetSeconds;
 	private final int _epochInSeconds;
@@ -43,13 +42,12 @@ public class ExEnterWorld implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENTER_WORLD.writeId(packet);
-		packet.writeD(_epochInSeconds);
-		packet.writeD(-_zoneIdOffsetSeconds);
-		packet.writeD(_daylight);
-		packet.writeD(Config.MAX_FREE_TELEPORT_LEVEL);
-		return true;
+		ServerPackets.EX_ENTER_WORLD.writeId(this);
+		writeInt(_epochInSeconds);
+		writeInt(-_zoneIdOffsetSeconds);
+		writeInt(_daylight);
+		writeInt(Config.MAX_FREE_TELEPORT_LEVEL);
 	}
 }

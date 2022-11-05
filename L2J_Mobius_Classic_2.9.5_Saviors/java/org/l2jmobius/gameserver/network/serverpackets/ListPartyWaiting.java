@@ -19,18 +19,17 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.PartyMatchingRoomLevelType;
 import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.MatchingRoom;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class ListPartyWaiting implements IClientOutgoingPacket
+public class ListPartyWaiting extends ServerPacket
 {
 	private static final int NUM_PER_PAGE = 64;
 	
@@ -54,29 +53,28 @@ public class ListPartyWaiting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.LIST_PARTY_WATING.writeId(packet);
-		packet.writeD(_size);
-		packet.writeD(_rooms.size());
+		ServerPackets.LIST_PARTY_WATING.writeId(this);
+		writeInt(_size);
+		writeInt(_rooms.size());
 		for (MatchingRoom room : _rooms)
 		{
-			packet.writeD(room.getId());
-			packet.writeS(room.getTitle());
-			packet.writeD(room.getLocation());
-			packet.writeD(room.getMinLevel());
-			packet.writeD(room.getMaxLevel());
-			packet.writeD(room.getMaxMembers());
-			packet.writeS(room.getLeader().getName());
-			packet.writeD(room.getMembersCount());
+			writeInt(room.getId());
+			writeString(room.getTitle());
+			writeInt(room.getLocation());
+			writeInt(room.getMinLevel());
+			writeInt(room.getMaxLevel());
+			writeInt(room.getMaxMembers());
+			writeString(room.getLeader().getName());
+			writeInt(room.getMembersCount());
 			for (Player member : room.getMembers())
 			{
-				packet.writeD(member.getClassId().getId());
-				packet.writeS(member.getName());
+				writeInt(member.getClassId().getId());
+				writeString(member.getName());
 			}
 		}
-		packet.writeD(World.getInstance().getPartyCount()); // Helios
-		packet.writeD(World.getInstance().getPartyMemberCount()); // Helios
-		return true;
+		writeInt(World.getInstance().getPartyCount()); // Helios
+		writeInt(World.getInstance().getPartyMemberCount()); // Helios
 	}
 }

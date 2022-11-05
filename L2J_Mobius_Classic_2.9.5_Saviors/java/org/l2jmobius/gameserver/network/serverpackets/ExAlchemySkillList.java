@@ -19,18 +19,17 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExAlchemySkillList implements IClientOutgoingPacket
+public class ExAlchemySkillList extends ServerPacket
 {
 	private final List<Skill> _skills = new ArrayList<>();
 	
@@ -47,17 +46,16 @@ public class ExAlchemySkillList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ALCHEMY_SKILL_LIST.writeId(packet);
-		packet.writeD(_skills.size());
+		ServerPackets.EX_ALCHEMY_SKILL_LIST.writeId(this);
+		writeInt(_skills.size());
 		for (Skill skill : _skills)
 		{
-			packet.writeD(skill.getId());
-			packet.writeD(skill.getLevel());
-			packet.writeQ(0); // Always 0 on Naia, SP i guess?
-			packet.writeC(skill.getId() == CommonSkill.ALCHEMY_CUBE.getId() ? 0 : 1); // This is type in flash, visible or not
+			writeInt(skill.getId());
+			writeInt(skill.getLevel());
+			writeLong(0); // Always 0 on Naia, SP I guess?
+			writeByte(skill.getId() != CommonSkill.ALCHEMY_CUBE.getId()); // This is type in flash, visible or not
 		}
-		return true;
 	}
 }

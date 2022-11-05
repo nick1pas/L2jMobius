@@ -17,13 +17,12 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-, Sdw
  */
-public class ExPledgeEmblem implements IClientOutgoingPacket
+public class ExPledgeEmblem extends ServerPacket
 {
 	private static final int TOTAL_SIZE = 65664;
 	
@@ -41,23 +40,22 @@ public class ExPledgeEmblem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_EMBLEM.writeId(packet);
-		packet.writeD(Config.SERVER_ID);
-		packet.writeD(_clanId);
-		packet.writeD(_crestId);
-		packet.writeD(_chunkId);
-		packet.writeD(TOTAL_SIZE);
+		ServerPackets.EX_PLEDGE_EMBLEM.writeId(this);
+		writeInt(Config.SERVER_ID);
+		writeInt(_clanId);
+		writeInt(_crestId);
+		writeInt(_chunkId);
+		writeInt(TOTAL_SIZE);
 		if (_data != null)
 		{
-			packet.writeD(_data.length);
-			packet.writeB(_data);
+			writeInt(_data.length);
+			writeBytes(_data);
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

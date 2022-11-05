@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.primeshop;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.primeshop.PrimeShopGroup;
 import org.l2jmobius.gameserver.model.primeshop.PrimeShopItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gnacik
  */
-public class ExBRProductInfo implements IClientOutgoingPacket
+public class ExBRProductInfo extends ServerPacket
 {
 	private final PrimeShopGroup _item;
 	private final int _charPoints;
@@ -42,22 +41,21 @@ public class ExBRProductInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BR_PRODUCT_INFO.writeId(packet);
-		packet.writeD(_item.getBrId());
-		packet.writeD(_item.getPrice());
-		packet.writeD(_item.getItems().size());
+		ServerPackets.EX_BR_PRODUCT_INFO.writeId(this);
+		writeInt(_item.getBrId());
+		writeInt(_item.getPrice());
+		writeInt(_item.getItems().size());
 		for (PrimeShopItem item : _item.getItems())
 		{
-			packet.writeD(item.getId());
-			packet.writeD((int) item.getCount());
-			packet.writeD(item.getWeight());
-			packet.writeD(item.isTradable());
+			writeInt(item.getId());
+			writeInt((int) item.getCount());
+			writeInt(item.getWeight());
+			writeInt(item.isTradable());
 		}
-		packet.writeQ(_charAdena);
-		packet.writeQ(_charPoints);
-		packet.writeQ(_charCoins); // Hero coins
-		return true;
+		writeLong(_charAdena);
+		writeLong(_charPoints);
+		writeLong(_charCoins); // Hero coins
 	}
 }

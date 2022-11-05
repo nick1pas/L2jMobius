@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.MovieHolder;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -24,14 +23,8 @@ import org.l2jmobius.gameserver.network.GameClient;
 /**
  * @author St3eT
  */
-public class RequestExEscapeScene implements IClientIncomingPacket
+public class RequestExEscapeScene implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{
@@ -46,6 +39,7 @@ public class RequestExEscapeScene implements IClientIncomingPacket
 		{
 			return;
 		}
+		
 		holder.playerEscapeVote(player);
 	}
 }

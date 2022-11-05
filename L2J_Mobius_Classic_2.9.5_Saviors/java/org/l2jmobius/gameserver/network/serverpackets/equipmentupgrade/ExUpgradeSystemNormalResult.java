@@ -16,46 +16,44 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.equipmentupgrade;
 
-import org.l2jmobius.commons.network.PacketWriter;
+import java.util.Map;
+
 import org.l2jmobius.gameserver.model.holders.EquipmentUpgradeHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
-import io.netty.util.collection.IntObjectMap;
-
-public class ExUpgradeSystemNormalResult implements IClientOutgoingPacket
+public class ExUpgradeSystemNormalResult extends ServerPacket
 {
-	private final int _success;
+	private final boolean _success;
 	private final EquipmentUpgradeHolder _upgrade;
-	private final IntObjectMap<Item> _items;
+	private final Map<Integer, Item> _items;
 	
-	public ExUpgradeSystemNormalResult(EquipmentUpgradeHolder upgrade, boolean success, IntObjectMap<Item> items)
+	public ExUpgradeSystemNormalResult(EquipmentUpgradeHolder upgrade, boolean success, Map<Integer, Item> items)
 	{
 		_upgrade = upgrade;
-		_success = success ? 1 : 0;
+		_success = success;
 		_items = items;
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_UPGRADE_SYSTEM_NORMAL_RESULT.writeId(packet);
-		packet.writeH(1);
-		packet.writeD(_upgrade.getId());
-		packet.writeC(_success);
+		ServerPackets.EX_UPGRADE_SYSTEM_NORMAL_RESULT.writeId(this);
+		writeShort(1);
+		writeInt(_upgrade.getId());
+		writeByte(_success);
 		
-		packet.writeD(_items.size());
+		writeInt(_items.size());
 		_items.forEach((objectId, item) ->
 		{
-			packet.writeD(objectId);
-			packet.writeD(item.getId());
-			packet.writeD(item.getEnchantLevel());
-			packet.writeD((int) item.getCount());
+			writeInt(objectId);
+			writeInt(item.getId());
+			writeInt(item.getEnchantLevel());
+			writeInt((int) item.getCount());
 		});
 		
-		packet.writeH(0);
-		packet.writeD(0);
-		return true;
+		writeShort(0);
+		writeInt(0);
 	}
 }

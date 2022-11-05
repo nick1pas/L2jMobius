@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.friend;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
-public class FriendAddRequest implements IClientOutgoingPacket
+public class FriendAddRequest extends ServerPacket
 {
 	private final String _requestorName;
 	
@@ -30,11 +29,10 @@ public class FriendAddRequest implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.FRIEND_ADD_REQUEST.writeId(packet);
-		packet.writeC(0);
-		packet.writeS(_requestorName);
-		return true;
+		ServerPackets.FRIEND_ADD_REQUEST.writeId(this);
+		writeByte(0);
+		writeString(_requestorName);
 	}
 }
