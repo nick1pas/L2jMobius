@@ -22,7 +22,7 @@ import static org.l2jmobius.gameserver.enums.RankingScope.TOP_100;
 import static org.l2jmobius.gameserver.enums.RankingScope.TOP_150;
 
 /**
- * Written by Berezkin Nikolay, on 10.05.2021
+ * @author Berezkin Nikolay
  */
 public enum RankingCategory
 {

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.data.xml.InitialEquipmentData;
@@ -51,7 +51,7 @@ import org.l2jmobius.gameserver.network.serverpackets.CharSelectionInfo;
 import org.l2jmobius.gameserver.util.Util;
 
 @SuppressWarnings("unused")
-public class CharacterCreate implements IClientIncomingPacket
+public class CharacterCreate implements ClientPacket
 {
 	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
 	
@@ -71,22 +71,21 @@ public class CharacterCreate implements IClientIncomingPacket
 	private byte _face;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_name = packet.readS();
-		_race = packet.readD();
-		_sex = (byte) packet.readD();
-		_classId = packet.readD();
-		_int = packet.readD();
-		_str = packet.readD();
-		_con = packet.readD();
-		_men = packet.readD();
-		_dex = packet.readD();
-		_wit = packet.readD();
-		_hairStyle = (byte) packet.readD();
-		_hairColor = (byte) packet.readD();
-		_face = (byte) packet.readD();
-		return true;
+		_name = packet.readString();
+		_race = packet.readInt();
+		_sex = (byte) packet.readInt();
+		_classId = packet.readInt();
+		_int = packet.readInt();
+		_str = packet.readInt();
+		_con = packet.readInt();
+		_men = packet.readInt();
+		_dex = packet.readInt();
+		_wit = packet.readInt();
+		_hairStyle = (byte) packet.readInt();
+		_hairColor = (byte) packet.readInt();
+		_face = (byte) packet.readInt();
 	}
 	
 	@Override

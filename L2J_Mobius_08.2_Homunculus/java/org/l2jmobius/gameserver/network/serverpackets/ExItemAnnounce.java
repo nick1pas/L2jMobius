@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author NviX, Mobius
  */
-public class ExItemAnnounce implements IClientOutgoingPacket
+public class ExItemAnnounce extends ServerPacket
 {
 	public static final int ENCHANT = 0;
 	public static final int RANDOM_CRAFT = 2;
@@ -60,9 +59,9 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ITEM_ANNOUNCE.writeId(packet);
+		ServerPackets.EX_ITEM_ANNOUNCE.writeId(this);
 		// _type
 		// 0 - enchant
 		// 1 - item get from container
@@ -73,11 +72,10 @@ public class ExItemAnnounce implements IClientOutgoingPacket
 		// 6 - item get from "limited random creation"
 		// 7 - fire and item get from container
 		// 8 and others - null item name by item_id and icon from chest.
-		packet.writeC(_type); // announce type
-		packet.writeString(_announceName); // name of player
-		packet.writeD(_item.getId()); // item id
-		packet.writeC(_item.getEnchantLevel()); // enchant level
-		packet.writeD(0); // chest item id
-		return true;
+		writeByte(_type); // announce type
+		writeSizedString(_announceName); // name of player
+		writeInt(_item.getId()); // item id
+		writeByte(_item.getEnchantLevel()); // enchant level
+		writeInt(0); // chest item id
 	}
 }

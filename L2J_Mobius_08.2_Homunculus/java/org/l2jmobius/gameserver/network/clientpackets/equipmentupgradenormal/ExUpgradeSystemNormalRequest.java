@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EquipmentUpgradeNormalData;
 import org.l2jmobius.gameserver.enums.UpgradeDataType;
@@ -34,13 +34,13 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.equipmentupgradenormal.ExUpgradeSystemNormalResult;
 
 /**
  * @author Index
  */
-public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
+public class ExUpgradeSystemNormalRequest implements ClientPacket
 {
 	private int _objectId;
 	private int _typeId;
@@ -52,12 +52,11 @@ public class ExUpgradeSystemNormalRequest implements IClientIncomingPacket
 	private boolean isNeedToSendUpdate = false;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_typeId = packet.readD();
-		_upgradeId = packet.readD();
-		return true;
+		_objectId = packet.readInt();
+		_typeId = packet.readInt();
+		_upgradeId = packet.readInt();
 	}
 	
 	@Override

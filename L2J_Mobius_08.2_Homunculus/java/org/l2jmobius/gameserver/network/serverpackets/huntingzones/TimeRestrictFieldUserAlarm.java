@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NasSeKa
  */
-public class TimeRestrictFieldUserAlarm implements IClientOutgoingPacket
+public class TimeRestrictFieldUserAlarm extends ServerPacket
 {
 	private final Player _player;
 	private final int _zoneId;
@@ -36,11 +35,10 @@ public class TimeRestrictFieldUserAlarm implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TIME_RESTRICT_FIELD_USER_ALARM.writeId(packet);
-		packet.writeD(_zoneId);
-		packet.writeD((_player.getTimedHuntingZoneRemainingTime(_zoneId) / 1000) + 59); // RemainTime (zone left time)
-		return true;
+		ServerPackets.EX_TIME_RESTRICT_FIELD_USER_ALARM.writeId(this);
+		writeInt(_zoneId);
+		writeInt((_player.getTimedHuntingZoneRemainingTime(_zoneId) / 1000) + 59); // RemainTime (zone left time)
 	}
 }

@@ -21,7 +21,7 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.ItemTable;
@@ -37,14 +37,14 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.luckygame.ExBettingLuckyGameResult;
 
 /**
  * @author Sdw
  */
-public class RequestLuckyGamePlay implements IClientIncomingPacket
+public class RequestLuckyGamePlay implements ClientPacket
 {
 	private static final int FORTUNE_READING_TICKET = 23767;
 	private static final int LUXURY_FORTUNE_READING_TICKET = 23768;
@@ -52,12 +52,11 @@ public class RequestLuckyGamePlay implements IClientIncomingPacket
 	private int _reading;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int type = CommonUtil.constrain(packet.readD(), 0, LuckyGameType.values().length);
+		final int type = CommonUtil.constrain(packet.readInt(), 0, LuckyGameType.values().length);
 		_type = LuckyGameType.values()[type];
-		_reading = CommonUtil.constrain(packet.readD(), 0, 50); // max play is 50
-		return true;
+		_reading = CommonUtil.constrain(packet.readInt(), 0, 50); // max play is 50
 	}
 	
 	@Override

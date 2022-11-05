@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExActivateHomunculusResult implements IClientOutgoingPacket
+public class ExActivateHomunculusResult extends ServerPacket
 {
 	private final boolean _activate;
 	
@@ -34,20 +33,19 @@ public class ExActivateHomunculusResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ACTIVATE_HOMUNCULUS_RESULT.writeId(packet);
-		packet.writeD(1); // success
+		ServerPackets.EX_ACTIVATE_HOMUNCULUS_RESULT.writeId(this);
+		writeInt(1); // success
 		if (_activate)
 		{
-			packet.writeC(1); // activate
-			packet.writeD(SystemMessageId.THE_RELATIONS_ARE_BEING_ESTABLISHED.getId());
+			writeByte(1); // activate
+			writeInt(SystemMessageId.THE_RELATIONS_ARE_BEING_ESTABLISHED.getId());
 		}
 		else
 		{
-			packet.writeC(0); // activate
-			packet.writeD(SystemMessageId.THE_RELATIONS_ARE_BROKEN.getId());
+			writeByte(0); // activate
+			writeInt(SystemMessageId.THE_RELATIONS_ARE_BROKEN.getId());
 		}
-		return true;
 	}
 }

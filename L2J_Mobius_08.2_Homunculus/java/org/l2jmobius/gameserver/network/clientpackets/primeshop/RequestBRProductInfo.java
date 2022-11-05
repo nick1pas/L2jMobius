@@ -16,24 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.primeshop;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.PrimeShopData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class RequestBRProductInfo implements IClientIncomingPacket
+public class RequestBRProductInfo implements ClientPacket
 {
 	private int _brId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_brId = packet.readD();
-		return true;
+		_brId = packet.readInt();
 	}
 	
 	@Override

@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.ShortcutType;
 import org.l2jmobius.gameserver.model.ShortCuts;
 import org.l2jmobius.gameserver.model.Shortcut;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ShortCutRegister;
 import org.l2jmobius.gameserver.network.serverpackets.autoplay.ExActivateAutoShortcut;
 import org.l2jmobius.gameserver.taskmanager.AutoUseTaskManager;
 
-public class RequestShortCutReg implements IClientIncomingPacket
+public class RequestShortCutReg implements ClientPacket
 {
 	private ShortcutType _type;
 	private int _id;
@@ -41,19 +41,18 @@ public class RequestShortCutReg implements IClientIncomingPacket
 	private boolean _active;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int typeId = packet.readD();
+		final int typeId = packet.readInt();
 		_type = ShortcutType.values()[(typeId < 1) || (typeId > 6) ? 0 : typeId];
-		final int position = packet.readD();
+		final int position = packet.readInt();
 		_slot = position % ShortCuts.MAX_SHORTCUTS_PER_BAR;
 		_page = position / ShortCuts.MAX_SHORTCUTS_PER_BAR;
-		_active = packet.readC() == 1; // 228
-		_id = packet.readD();
-		_level = packet.readH();
-		_subLevel = packet.readH(); // Sublevel
-		_characterType = packet.readD();
-		return true;
+		_active = packet.readByte() == 1; // 228
+		_id = packet.readInt();
+		_level = packet.readShort();
+		_subLevel = packet.readShort(); // Sublevel
+		_characterType = packet.readInt();
 	}
 	
 	@Override

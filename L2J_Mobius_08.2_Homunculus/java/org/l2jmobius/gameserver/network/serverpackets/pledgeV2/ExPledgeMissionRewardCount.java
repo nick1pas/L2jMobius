@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Bonux (bonuxq@gmail.com), NasSeKa
  * @date 29.09.2019
  **/
-public class ExPledgeMissionRewardCount implements IClientOutgoingPacket
+public class ExPledgeMissionRewardCount extends ServerPacket
 {
 	private final int _doneMissionsCount;
 	private final int _availableMissionsCount;
@@ -38,11 +37,10 @@ public class ExPledgeMissionRewardCount implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_MISSION_REWARD_COUNT.writeId(packet);
-		packet.writeD(Math.min(_availableMissionsCount, _doneMissionsCount)); // Received missions rewards.
-		packet.writeD(_availableMissionsCount); // Available missions rewards. 18 - for noble, 20 - for honnorable noble.
-		return true;
+		ServerPackets.EX_PLEDGE_MISSION_REWARD_COUNT.writeId(this);
+		writeInt(Math.min(_availableMissionsCount, _doneMissionsCount)); // Received missions rewards.
+		writeInt(_availableMissionsCount); // Available missions rewards. 18 - for noble, 20 - for honnorable noble.
 	}
 }

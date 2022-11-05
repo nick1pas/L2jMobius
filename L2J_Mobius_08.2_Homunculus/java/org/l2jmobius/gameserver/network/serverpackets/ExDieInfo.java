@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.holders.DamageTakenHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class ExDieInfo implements IClientOutgoingPacket
+public class ExDieInfo extends ServerPacket
 {
 	private final Collection<Item> _droppedItems;
 	private final Collection<DamageTakenHolder> _lastDamageTaken;
@@ -39,36 +38,35 @@ public class ExDieInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DIE_INFO.writeId(packet);
-		packet.writeH(_droppedItems.size());
+		ServerPackets.EX_DIE_INFO.writeId(this);
+		writeShort(_droppedItems.size());
 		for (Item item : _droppedItems)
 		{
-			packet.writeD(item.getId());
-			packet.writeD(item.getEnchantLevel());
-			packet.writeD((int) item.getCount());
+			writeInt(item.getId());
+			writeInt(item.getEnchantLevel());
+			writeInt((int) item.getCount());
 		}
-		packet.writeH(_lastDamageTaken.size());
+		writeShort(_lastDamageTaken.size());
 		for (DamageTakenHolder damageHolder : _lastDamageTaken)
 		{
 			if (damageHolder.getCreature().isNpc())
 			{
-				packet.writeH(1);
-				packet.writeD(damageHolder.getCreature().getId());
-				packet.writeS("");
+				writeShort(1);
+				writeInt(damageHolder.getCreature().getId());
+				writeString("");
 			}
 			else
 			{
 				final Clan clan = damageHolder.getCreature().getClan();
-				packet.writeH(0);
-				packet.writeS(damageHolder.getCreature().getName());
-				packet.writeS(clan == null ? "" : clan.getName());
+				writeShort(0);
+				writeString(damageHolder.getCreature().getName());
+				writeString(clan == null ? "" : clan.getName());
 			}
-			packet.writeD(damageHolder.getSkillId());
-			packet.writeF(damageHolder.getDamage());
-			packet.writeH(0); // damage type
+			writeInt(damageHolder.getSkillId());
+			writeDouble(damageHolder.getDamage());
+			writeShort(0); // damage type
 		}
-		return true;
 	}
 }

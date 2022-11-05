@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExDissmissMPCCRoom implements IClientOutgoingPacket
+public class ExDissmissMPCCRoom extends ServerPacket
 {
 	public static final ExDissmissMPCCRoom STATIC_PACKET = new ExDissmissMPCCRoom();
 	
@@ -31,9 +30,8 @@ public class ExDissmissMPCCRoom implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DISSMISS_MPCC_ROOM.writeId(packet);
-		return true;
+		ServerPackets.EX_DISSMISS_MPCC_ROOM.writeId(this);
 	}
 }

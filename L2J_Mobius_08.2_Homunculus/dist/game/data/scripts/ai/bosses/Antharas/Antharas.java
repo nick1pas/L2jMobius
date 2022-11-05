@@ -36,9 +36,9 @@ import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.model.zone.type.NoRestartZone;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
 import org.l2jmobius.gameserver.network.serverpackets.SpecialCamera;
 
@@ -528,7 +528,7 @@ public class Antharas extends AbstractInstance
 		return null;
 	}
 	
-	void broadcastPacket(Instance world, IClientOutgoingPacket packet, PlaySound playSound)
+	void broadcastPacket(Instance world, ServerPacket packet, PlaySound playSound)
 	{
 		for (Player player : world.getPlayers())
 		{

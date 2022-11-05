@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author nexvill
  */
-public class ExHomunculusEnchantEXPResult implements IClientOutgoingPacket
+public class ExHomunculusEnchantEXPResult extends ServerPacket
 {
 	private final boolean _success;
 	private final boolean _newLevel;
@@ -36,24 +35,23 @@ public class ExHomunculusEnchantEXPResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_ENCHANT_EXP_RESULT.writeId(packet);
+		ServerPackets.EX_HOMUNCULUS_ENCHANT_EXP_RESULT.writeId(this);
 		if (!_success)
 		{
-			packet.writeD(0);
-			packet.writeD(SystemMessageId.NOT_ENOUGH_UPGRADE_POINTS.getId());
+			writeInt(0);
+			writeInt(SystemMessageId.NOT_ENOUGH_UPGRADE_POINTS.getId());
 		}
 		else if (!_newLevel)
 		{
-			packet.writeD(1); // success
-			packet.writeD(0); // SystemMessageId
+			writeInt(1); // success
+			writeInt(0); // SystemMessageId
 		}
 		else
 		{
-			packet.writeD(1);
-			packet.writeD(SystemMessageId.THE_HOMUNCULUS_LEVEL_IS_INCREASED.getId());
+			writeInt(1);
+			writeInt(SystemMessageId.THE_HOMUNCULUS_LEVEL_IS_INCREASED.getId());
 		}
-		return true;
 	}
 }

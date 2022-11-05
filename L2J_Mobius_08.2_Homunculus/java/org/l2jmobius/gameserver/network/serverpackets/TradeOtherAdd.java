@@ -16,9 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.TradeItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Yme
@@ -35,16 +34,15 @@ public class TradeOtherAdd extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.TRADE_OTHER_ADD.writeId(packet);
-		packet.writeC(_sendType);
+		ServerPackets.TRADE_OTHER_ADD.writeId(this);
+		writeByte(_sendType);
 		if (_sendType == 2)
 		{
-			packet.writeD(1);
+			writeInt(1);
 		}
-		packet.writeD(1);
-		writeItem(packet, _item);
-		return true;
+		writeInt(1);
+		writeItem(_item);
 	}
 }

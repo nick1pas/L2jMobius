@@ -19,9 +19,8 @@ package org.l2jmobius.gameserver.network.serverpackets.equipmentupgradenormal;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.UniqueItemEnchantHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -47,29 +46,28 @@ public class ExUpgradeSystemNormalResult extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_UPGRADE_SYSTEM_NORMAL_RESULT.writeId(packet);
-		packet.writeH(_result); // Result ID
-		packet.writeD(_upgradeId); // Upgrade ID
-		packet.writeC(_success ? 1 : 0); // Success
-		packet.writeD(_resultItems.size()); // Array of result items (success/failure) start.
+		ServerPackets.EX_UPGRADE_SYSTEM_NORMAL_RESULT.writeId(this);
+		writeShort(_result); // Result ID
+		writeInt(_upgradeId); // Upgrade ID
+		writeByte(_success); // Success
+		writeInt(_resultItems.size()); // Array of result items (success/failure) start.
 		for (UniqueItemEnchantHolder item : _resultItems)
 		{
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getId());
-			packet.writeD(item.getEnchantLevel());
-			packet.writeD(Math.toIntExact(item.getCount()));
+			writeInt(item.getObjectId());
+			writeInt(item.getId());
+			writeInt(item.getEnchantLevel());
+			writeInt(Math.toIntExact(item.getCount()));
 		}
-		packet.writeC(0); // Is bonus? Do not see any effect.
-		packet.writeD(_bonusItems.size()); // Array of bonus items start.
+		writeByte(0); // Is bonus? Do not see any effect.
+		writeInt(_bonusItems.size()); // Array of bonus items start.
 		for (UniqueItemEnchantHolder bonus : _bonusItems)
 		{
-			packet.writeD(bonus.getObjectId());
-			packet.writeD(bonus.getId());
-			packet.writeD(bonus.getEnchantLevel());
-			packet.writeD(Math.toIntExact(bonus.getCount()));
+			writeInt(bonus.getObjectId());
+			writeInt(bonus.getId());
+			writeInt(bonus.getEnchantLevel());
+			writeInt(Math.toIntExact(bonus.getCount()));
 		}
-		return true;
 	}
 }
