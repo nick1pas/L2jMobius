@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-
  */
-public class PledgeShowMemberListUpdate implements IClientOutgoingPacket
+public class PledgeShowMemberListUpdate extends ServerPacket
 {
 	private final int _pledgeType;
-	private int _hasSponsor;
+	private boolean _hasSponsor;
 	private final String _name;
 	private final int _level;
 	private final int _classId;
 	private final int _objectId;
 	private final int _onlineStatus;
 	private final int _race;
-	private final int _sex;
+	private final boolean _sex;
 	
 	public PledgeShowMemberListUpdate(Player player)
 	{
@@ -50,40 +49,39 @@ public class PledgeShowMemberListUpdate implements IClientOutgoingPacket
 		_objectId = member.getObjectId();
 		_pledgeType = member.getPledgeType();
 		_race = member.getRaceOrdinal();
-		_sex = member.getSex() ? 1 : 0;
+		_sex = member.getSex();
 		_onlineStatus = member.getOnlineStatus();
 		if (_pledgeType == Clan.SUBUNIT_ACADEMY)
 		{
-			_hasSponsor = member.getSponsor() != 0 ? 1 : 0;
+			_hasSponsor = member.getSponsor() != 0;
 		}
 		else
 		{
-			_hasSponsor = 0;
+			_hasSponsor = false;
 		}
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_SHOW_MEMBER_LIST_UPDATE.writeId(packet);
-		packet.writeS(_name);
-		packet.writeD(_level);
-		packet.writeD(_classId);
-		packet.writeD(_sex);
-		packet.writeD(_race);
+		ServerPackets.PLEDGE_SHOW_MEMBER_LIST_UPDATE.writeId(this);
+		writeString(_name);
+		writeInt(_level);
+		writeInt(_classId);
+		writeInt(_sex);
+		writeInt(_race);
 		if (_onlineStatus > 0)
 		{
-			packet.writeD(_objectId);
-			packet.writeD(_pledgeType);
+			writeInt(_objectId);
+			writeInt(_pledgeType);
 		}
 		else
 		{
 			// when going offline send as 0
-			packet.writeD(0);
-			packet.writeD(0);
+			writeInt(0);
+			writeInt(0);
 		}
-		packet.writeD(_hasSponsor);
-		packet.writeC(_onlineStatus);
-		return true;
+		writeInt(_hasSponsor);
+		writeByte(_onlineStatus);
 	}
 }

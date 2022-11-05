@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanWar;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-
  */
-public class PledgeReceiveWarList implements IClientOutgoingPacket
+public class PledgeReceiveWarList extends ServerPacket
 {
 	private final Clan _clan;
 	private final int _tab;
@@ -40,11 +39,11 @@ public class PledgeReceiveWarList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_RECEIVE_WAR_LIST.writeId(packet);
-		packet.writeD(_tab); // page
-		packet.writeD(_clanList.size());
+		ServerPackets.PLEDGE_RECEIVE_WAR_LIST.writeId(this);
+		writeInt(_tab); // page
+		writeInt(_clanList.size());
 		for (ClanWar clanWar : _clanList)
 		{
 			final Clan clan = clanWar.getOpposingClan(_clan);
@@ -52,13 +51,12 @@ public class PledgeReceiveWarList implements IClientOutgoingPacket
 			{
 				continue;
 			}
-			packet.writeS(clan.getName());
-			packet.writeD(clanWar.getState().ordinal()); // type: 0 = Declaration, 1 = Blood Declaration, 2 = In War, 3 = Victory, 4 = Defeat, 5 = Tie, 6 = Error
-			packet.writeD(clanWar.getRemainingTime()); // Time if friends to start remaining
-			packet.writeD(clanWar.getKillDifference(_clan)); // Score
-			packet.writeD(0); // @TODO: Recent change in points
-			packet.writeD(clanWar.getKillToStart()); // Friends to start war left
+			writeString(clan.getName());
+			writeInt(clanWar.getState().ordinal()); // type: 0 = Declaration, 1 = Blood Declaration, 2 = In War, 3 = Victory, 4 = Defeat, 5 = Tie, 6 = Error
+			writeInt(clanWar.getRemainingTime()); // Time if friends to start remaining
+			writeInt(clanWar.getKillDifference(_clan)); // Score
+			writeInt(0); // @TODO: Recent change in points
+			writeInt(clanWar.getKillToStart()); // Friends to start war left
 		}
-		return true;
 	}
 }

@@ -33,10 +33,10 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
 import org.l2jmobius.gameserver.network.serverpackets.SpecialCamera;
 
@@ -875,7 +875,7 @@ public class LastImperialTomb extends AbstractInstance
 		}
 	}
 	
-	void broadcastPacket(Instance world, IClientOutgoingPacket packet)
+	void broadcastPacket(Instance world, ServerPacket packet)
 	{
 		for (Player player : world.getPlayers())
 		{
@@ -886,7 +886,7 @@ public class LastImperialTomb extends AbstractInstance
 		}
 	}
 	
-	private void sendPacketX(Instance world, IClientOutgoingPacket packet1, IClientOutgoingPacket packet2, int x)
+	private void sendPacketX(Instance world, ServerPacket packet1, ServerPacket packet2, int x)
 	{
 		for (Player player : world.getPlayers())
 		{

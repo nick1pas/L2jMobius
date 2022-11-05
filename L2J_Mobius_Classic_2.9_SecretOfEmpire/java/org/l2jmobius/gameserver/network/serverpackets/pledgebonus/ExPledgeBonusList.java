@@ -18,32 +18,30 @@ package org.l2jmobius.gameserver.network.serverpackets.pledgebonus;
 
 import java.util.Comparator;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ClanRewardData;
 import org.l2jmobius.gameserver.enums.ClanRewardType;
 import org.l2jmobius.gameserver.model.clan.ClanRewardBonus;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeBonusList implements IClientOutgoingPacket
+public class ExPledgeBonusList extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_BONUS_LIST.writeId(packet);
-		packet.writeC(0); // 140
+		ServerPackets.EX_PLEDGE_BONUS_LIST.writeId(this);
+		writeByte(0); // 140
 		ClanRewardData.getInstance().getClanRewardBonuses(ClanRewardType.MEMBERS_ONLINE).stream().sorted(Comparator.comparingInt(ClanRewardBonus::getLevel)).forEach(bonus ->
 		{
-			packet.writeD(bonus.getSkillReward().getSkillId());
+			writeInt(bonus.getSkillReward().getSkillId());
 		});
-		packet.writeC(1); // 140
+		writeByte(1); // 140
 		ClanRewardData.getInstance().getClanRewardBonuses(ClanRewardType.HUNTING_MONSTERS).stream().sorted(Comparator.comparingInt(ClanRewardBonus::getLevel)).forEach(bonus ->
 		{
-			packet.writeD(bonus.getItemReward().getId());
+			writeInt(bonus.getItemReward().getId());
 		});
-		return true;
 	}
 }

@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets.ensoul;
 
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.EnsoulData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.AbnormalType;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ensoul.ExEnsoulResult;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
@@ -37,34 +37,32 @@ import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 /**
  * @author UnAfraid
  */
-public class RequestItemEnsoul implements IClientIncomingPacket
+public class RequestItemEnsoul implements ClientPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(RequestItemEnsoul.class.getName());
 	private int _itemObjectId;
 	private EnsoulItemOption[] _options;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjectId = packet.readD();
-		final int options = packet.readC();
+		_itemObjectId = packet.readInt();
+		final int options = packet.readByte();
 		if ((options > 0) && (options <= 3))
 		{
 			_options = new EnsoulItemOption[options];
 			for (int i = 0; i < options; i++)
 			{
-				final int type = packet.readC(); // 1 = normal ; 2 = mystic
-				final int position = packet.readC();
-				final int soulCrystalObjectId = packet.readD();
-				final int soulCrystalOption = packet.readD();
+				final int type = packet.readByte(); // 1 = normal ; 2 = mystic
+				final int position = packet.readByte();
+				final int soulCrystalObjectId = packet.readInt();
+				final int soulCrystalOption = packet.readInt();
 				if ((position > 0) && (position < 3) && ((type == 1) || (type == 2)))
 				{
 					_options[i] = new EnsoulItemOption(type, position, soulCrystalObjectId, soulCrystalOption);
 				}
 			}
-			return true;
 		}
-		return false;
 	}
 	
 	@Override

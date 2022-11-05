@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets.ensoul;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.EnsoulData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
@@ -26,26 +26,25 @@ import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ensoul.ExEnSoulExtractionResult;
 
 /**
  * @author Mobius
  */
-public class RequestTryEnSoulExtraction implements IClientIncomingPacket
+public class RequestTryEnSoulExtraction implements ClientPacket
 {
 	private int _itemObjectId;
 	private int _type;
 	private int _position;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjectId = packet.readD();
-		_type = packet.readC();
-		_position = packet.readC() - 1;
-		return true;
+		_itemObjectId = packet.readInt();
+		_type = packet.readByte();
+		_position = packet.readByte() - 1;
 	}
 	
 	@Override

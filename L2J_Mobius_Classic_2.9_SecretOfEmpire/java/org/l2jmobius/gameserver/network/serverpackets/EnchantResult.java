@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class EnchantResult implements IClientOutgoingPacket
+public class EnchantResult extends ServerPacket
 {
 	public static final int SUCCESS = 0;
 	public static final int FAIL = 1;
@@ -56,23 +55,22 @@ public class EnchantResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.ENCHANT_RESULT.writeId(packet);
-		packet.writeD(_result);
-		packet.writeD(_crystal);
-		packet.writeQ(_count);
+		ServerPackets.ENCHANT_RESULT.writeId(this);
+		writeInt(_result);
+		writeInt(_crystal);
+		writeLong(_count);
 		// Guessing.
 		// With 166 options became 3x write integers instead of shorts and enchant level moved bellow.
 		// Commenting until actually knowing.
 		// for (int option : _enchantOptions)
 		// {
-		// packet.writeD(option);
+		// writeInt(option);
 		// }
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(_enchantLevel); // Confirmed.
-		return true;
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(_enchantLevel); // Confirmed.
 	}
 }

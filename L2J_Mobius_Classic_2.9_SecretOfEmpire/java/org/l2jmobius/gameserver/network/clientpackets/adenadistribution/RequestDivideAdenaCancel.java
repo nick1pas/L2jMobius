@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.adenadistribution;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.AdenaDistributionRequest;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.adenadistribution.ExDivideAdenaCancel;
 
 /**
  * @author Sdw
  */
-public class RequestDivideAdenaCancel implements IClientIncomingPacket
+public class RequestDivideAdenaCancel implements ClientPacket
 {
 	private boolean _cancel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_cancel = packet.readC() == 0;
-		return true;
+		_cancel = packet.readByte() == 0;
 	}
 	
 	@Override

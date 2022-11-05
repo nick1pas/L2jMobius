@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.adenadistribution;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExDivideAdenaStart implements IClientOutgoingPacket
+public class ExDivideAdenaStart extends ServerPacket
 {
 	public static final ExDivideAdenaStart STATIC_PACKET = new ExDivideAdenaStart();
 	
@@ -32,9 +31,8 @@ public class ExDivideAdenaStart implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DIVIDE_ADENA_START.writeId(packet);
-		return true;
+		ServerPackets.EX_DIVIDE_ADENA_START.writeId(this);
 	}
 }
