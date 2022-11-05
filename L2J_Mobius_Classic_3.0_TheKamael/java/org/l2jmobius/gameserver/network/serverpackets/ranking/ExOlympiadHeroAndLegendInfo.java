@@ -23,18 +23,17 @@ import java.sql.SQLException;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NviX
  */
-public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
+public class ExOlympiadHeroAndLegendInfo extends ServerPacket
 {
 	// TODO: Move query and store data at RankManager.
 	private static final String GET_HEROES = "SELECT characters.charId, characters.char_name, characters.race, characters.sex, characters.base_class, characters.level, characters.clanid, olympiad_nobles_eom.competitions_won, olympiad_nobles_eom.competitions_lost, olympiad_nobles_eom.olympiad_points, heroes.legend_count, heroes.count FROM heroes, characters, olympiad_nobles_eom WHERE characters.charId = heroes.charId AND characters.charId = olympiad_nobles_eom.charId AND heroes.played = 1 ORDER BY olympiad_nobles_eom.olympiad_points DESC, characters.base_class ASC LIMIT " + RankManager.PLAYER_LIMIT;
@@ -44,9 +43,9 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_HERO_AND_LEGEND_INFO.writeId(packet);
+		ServerPackets.EX_OLYMPIAD_HERO_AND_LEGEND_INFO.writeId(this);
 		if (!Hero.getInstance().getHeroes().isEmpty())
 		{
 			try (Connection con = DatabaseFactory.getConnection();
@@ -60,43 +59,43 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 					{
 						if (i == 1)
 						{
-							packet.writeC(1); // ?? shows 78 on JP
-							packet.writeC(1); // ?? shows 0 on JP
-							packet.writeString(rset.getString("char_name"));
+							writeByte(1); // ?? shows 78 on JP
+							writeByte(1); // ?? shows 0 on JP
+							writeSizedString(rset.getString("char_name"));
 							final int clanId = rset.getInt("clanid");
 							if (clanId > 0)
 							{
-								packet.writeString(ClanTable.getInstance().getClan(clanId).getName());
+								writeSizedString(ClanTable.getInstance().getClan(clanId).getName());
 							}
 							else
 							{
-								packet.writeString("");
+								writeSizedString("");
 							}
-							packet.writeD(Config.SERVER_ID);
-							packet.writeD(rset.getInt("race"));
+							writeInt(Config.SERVER_ID);
+							writeInt(rset.getInt("race"));
 							// a stupid, client uses 0 for female and 1 for male, while server no.
 							final int sex = rset.getInt("sex");
 							if (sex == 1)
 							{
-								packet.writeD(0);
+								writeInt(0);
 							}
 							else
 							{
-								packet.writeD(1);
+								writeInt(1);
 							}
-							packet.writeD(rset.getInt("base_class"));
-							packet.writeD(rset.getInt("level"));
-							packet.writeD(rset.getInt("legend_count"));
-							packet.writeD(rset.getInt("competitions_won"));
-							packet.writeD(rset.getInt("competitions_lost"));
-							packet.writeD(rset.getInt("olympiad_points"));
+							writeInt(rset.getInt("base_class"));
+							writeInt(rset.getInt("level"));
+							writeInt(rset.getInt("legend_count"));
+							writeInt(rset.getInt("competitions_won"));
+							writeInt(rset.getInt("competitions_lost"));
+							writeInt(rset.getInt("olympiad_points"));
 							if (clanId > 0)
 							{
-								packet.writeD(ClanTable.getInstance().getClan(clanId).getLevel());
+								writeInt(ClanTable.getInstance().getClan(clanId).getLevel());
 							}
 							else
 							{
-								packet.writeD(0);
+								writeInt(0);
 							}
 							i++;
 						}
@@ -104,46 +103,46 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 						{
 							if (!wroteCount)
 							{
-								packet.writeD(Hero.getInstance().getHeroes().size() - 1);
+								writeInt(Hero.getInstance().getHeroes().size() - 1);
 								wroteCount = true;
 							}
 							if (Hero.getInstance().getHeroes().size() > 1)
 							{
-								packet.writeString(rset.getString("char_name"));
+								writeSizedString(rset.getString("char_name"));
 								final int clanId = rset.getInt("clanid");
 								if (clanId > 0)
 								{
-									packet.writeString(ClanTable.getInstance().getClan(clanId).getName());
+									writeSizedString(ClanTable.getInstance().getClan(clanId).getName());
 								}
 								else
 								{
-									packet.writeString("");
+									writeSizedString("");
 								}
-								packet.writeD(Config.SERVER_ID);
-								packet.writeD(rset.getInt("race"));
+								writeInt(Config.SERVER_ID);
+								writeInt(rset.getInt("race"));
 								// a stupid, client uses 0 for female and 1 for male, while server no.
 								final int sex = rset.getInt("sex");
 								if (sex == 1)
 								{
-									packet.writeD(0);
+									writeInt(0);
 								}
 								else
 								{
-									packet.writeD(1);
+									writeInt(1);
 								}
-								packet.writeD(rset.getInt("base_class"));
-								packet.writeD(rset.getInt("level"));
-								packet.writeD(rset.getInt("count"));
-								packet.writeD(rset.getInt("competitions_won"));
-								packet.writeD(rset.getInt("competitions_lost"));
-								packet.writeD(rset.getInt("olympiad_points"));
+								writeInt(rset.getInt("base_class"));
+								writeInt(rset.getInt("level"));
+								writeInt(rset.getInt("count"));
+								writeInt(rset.getInt("competitions_won"));
+								writeInt(rset.getInt("competitions_lost"));
+								writeInt(rset.getInt("olympiad_points"));
 								if (clanId > 0)
 								{
-									packet.writeD(ClanTable.getInstance().getClan(clanId).getLevel());
+									writeInt(ClanTable.getInstance().getClan(clanId).getLevel());
 								}
 								else
 								{
-									packet.writeD(0);
+									writeInt(0);
 								}
 							}
 						}
@@ -155,6 +154,5 @@ public class ExOlympiadHeroAndLegendInfo implements IClientOutgoingPacket
 				PacketLogger.warning("Hero and Legend Info: Couldnt load data: " + e.getMessage());
 			}
 		}
-		return true;
 	}
 }

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.entry.PledgeApplicantInfo;
@@ -27,17 +27,16 @@ import org.l2jmobius.gameserver.network.serverpackets.ExPledgeWaitingUser;
 /**
  * @author Sdw
  */
-public class RequestPledgeWaitingUser implements IClientIncomingPacket
+public class RequestPledgeWaitingUser implements ClientPacket
 {
 	private int _clanId;
 	private int _playerId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_clanId = packet.readD();
-		_playerId = packet.readD();
-		return true;
+		_clanId = packet.readInt();
+		_playerId = packet.readInt();
 	}
 	
 	@Override

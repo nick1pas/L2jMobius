@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.StringTokenizer;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.handler.AdminCommandHandler;
@@ -51,7 +51,7 @@ import org.l2jmobius.gameserver.util.Util;
  * RequestBypassToServer client packet implementation.
  * @author HorridoJoho
  */
-public class RequestBypassToServer implements IClientIncomingPacket
+public class RequestBypassToServer implements ClientPacket
 {
 	// FIXME: This is for compatibility, will be changed when bypass functionality got an overhaul by NosBit
 	private static final String[] _possibleNonHtmlCommands =
@@ -72,10 +72,9 @@ public class RequestBypassToServer implements IClientIncomingPacket
 	private String _command;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_command = packet.readS();
-		return true;
+		_command = packet.readString();
 	}
 	
 	@Override

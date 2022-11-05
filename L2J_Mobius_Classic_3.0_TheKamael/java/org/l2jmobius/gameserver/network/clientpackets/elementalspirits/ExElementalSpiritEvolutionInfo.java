@@ -16,24 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.elementalspirits.ElementalSpiritEvolutionInfo;
 
 /**
  * @author JoeAlisson
  */
-public class ExElementalSpiritEvolutionInfo implements IClientIncomingPacket
+public class ExElementalSpiritEvolutionInfo implements ClientPacket
 {
 	private byte _id;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = (byte) packet.readC();
-		return true;
+		_id = (byte) packet.readByte();
 	}
 	
 	@Override

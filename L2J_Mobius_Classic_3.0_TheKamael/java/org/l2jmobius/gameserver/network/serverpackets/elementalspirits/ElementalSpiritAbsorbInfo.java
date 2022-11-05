@@ -18,19 +18,18 @@ package org.l2jmobius.gameserver.network.serverpackets.elementalspirits;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.model.ElementalSpirit;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ElementalSpiritAbsorbItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author JoeAlisson
  */
-public class ElementalSpiritAbsorbInfo implements IClientOutgoingPacket
+public class ElementalSpiritAbsorbInfo extends ServerPacket
 {
 	private final Player _player;
 	private final byte _type;
@@ -42,32 +41,31 @@ public class ElementalSpiritAbsorbInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ELEMENTAL_SPIRIT_ABSORB_INFO.writeId(packet);
+		ServerPackets.EX_ELEMENTAL_SPIRIT_ABSORB_INFO.writeId(this);
 		final ElementalSpirit spirit = _player.getElementalSpirit(ElementalType.of(_type));
 		if (spirit == null)
 		{
-			packet.writeC(0);
-			packet.writeC(0);
-			return true;
+			writeByte(0);
+			writeByte(0);
+			return;
 		}
-		packet.writeC(1);
-		packet.writeC(_type);
-		packet.writeC(spirit.getStage());
-		packet.writeQ(spirit.getExperience());
-		packet.writeQ(spirit.getExperienceToNextLevel()); // NextExp
-		packet.writeQ(spirit.getExperienceToNextLevel()); // MaxExp
-		packet.writeD(spirit.getLevel());
-		packet.writeD(spirit.getMaxLevel());
+		writeByte(1);
+		writeByte(_type);
+		writeByte(spirit.getStage());
+		writeLong(spirit.getExperience());
+		writeLong(spirit.getExperienceToNextLevel()); // NextExp
+		writeLong(spirit.getExperienceToNextLevel()); // MaxExp
+		writeInt(spirit.getLevel());
+		writeInt(spirit.getMaxLevel());
 		final List<ElementalSpiritAbsorbItemHolder> absorbItems = spirit.getAbsorbItems();
-		packet.writeD(absorbItems.size()); // AbsorbCount
+		writeInt(absorbItems.size()); // AbsorbCount
 		for (ElementalSpiritAbsorbItemHolder absorbItem : absorbItems)
 		{
-			packet.writeD(absorbItem.getId());
-			packet.writeD(CommonUtil.zeroIfNullOrElse(_player.getInventory().getItemByItemId(absorbItem.getId()), item -> (int) item.getCount()));
-			packet.writeD(absorbItem.getExperience());
+			writeInt(absorbItem.getId());
+			writeInt(CommonUtil.zeroIfNullOrElse(_player.getInventory().getItemByItemId(absorbItem.getId()), item -> (int) item.getCount()));
+			writeInt(absorbItem.getExperience());
 		}
-		return true;
 	}
 }

@@ -152,11 +152,11 @@ import org.l2jmobius.gameserver.network.serverpackets.ChangeMoveType;
 import org.l2jmobius.gameserver.network.serverpackets.ChangeWaitType;
 import org.l2jmobius.gameserver.network.serverpackets.ExTeleportToLocationActivate;
 import org.l2jmobius.gameserver.network.serverpackets.FakePlayerInfo;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.MoveToLocation;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.Revive;
 import org.l2jmobius.gameserver.network.serverpackets.ServerObjectInfo;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SetupGauge;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
@@ -668,12 +668,12 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	 * In order to inform other players of state modification on the Creature, server just need to go through _knownPlayers to send Server->Client Packet
 	 * @param mov
 	 */
-	public void broadcastPacket(IClientOutgoingPacket mov)
+	public void broadcastPacket(ServerPacket mov)
 	{
 		broadcastPacket(mov, true);
 	}
 	
-	public void broadcastPacket(IClientOutgoingPacket mov, boolean includeSelf)
+	public void broadcastPacket(ServerPacket mov, boolean includeSelf)
 	{
 		World.getInstance().forEachVisibleObject(this, Player.class, player ->
 		{
@@ -694,7 +694,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	 * @param mov
 	 * @param radiusInKnownlist
 	 */
-	public void broadcastPacket(IClientOutgoingPacket mov, int radiusInKnownlist)
+	public void broadcastPacket(ServerPacket mov, int radiusInKnownlist)
 	{
 		World.getInstance().forEachVisibleObjectInRange(this, Player.class, radiusInKnownlist, player ->
 		{

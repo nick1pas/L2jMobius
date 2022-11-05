@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.PartyMatchingRoomLevelType;
 import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
 import org.l2jmobius.gameserver.model.CommandChannel;
@@ -27,19 +27,18 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ListPartyWaiting;
 
-public class RequestPartyMatchConfig implements IClientIncomingPacket
+public class RequestPartyMatchConfig implements ClientPacket
 {
 	private int _page;
 	private int _location;
 	private PartyMatchingRoomLevelType _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_page = packet.readD();
-		_location = packet.readD();
-		_type = packet.readD() == 0 ? PartyMatchingRoomLevelType.MY_LEVEL_RANGE : PartyMatchingRoomLevelType.ALL;
-		return true;
+		_page = packet.readInt();
+		_location = packet.readInt();
+		_type = packet.readInt() == 0 ? PartyMatchingRoomLevelType.MY_LEVEL_RANGE : PartyMatchingRoomLevelType.ALL;
 	}
 	
 	@Override

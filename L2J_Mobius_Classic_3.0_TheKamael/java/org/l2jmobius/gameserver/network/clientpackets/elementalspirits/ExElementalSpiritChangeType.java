@@ -16,30 +16,29 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.model.ElementalSpirit;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.elementalspirits.ElementalSpiritInfo;
 
 /**
  * @author JoeAlisson
  */
-public class ExElementalSpiritChangeType implements IClientIncomingPacket
+public class ExElementalSpiritChangeType implements ClientPacket
 {
 	private byte _type;
 	private byte _element;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = (byte) packet.readC();
-		_element = (byte) packet.readC(); // 1 - Fire, 2 - Water, 3 - Wind, 4 Earth
-		return true;
+		_type = (byte) packet.readByte();
+		_element = (byte) packet.readByte(); // 1 - Fire, 2 - Water, 3 - Wind, 4 Earth
 	}
 	
 	@Override

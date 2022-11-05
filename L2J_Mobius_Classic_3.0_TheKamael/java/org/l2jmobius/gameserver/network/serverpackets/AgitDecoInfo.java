@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ClanHallGrade;
 import org.l2jmobius.gameserver.model.residences.AbstractResidence;
 import org.l2jmobius.gameserver.model.residences.ResidenceFunction;
 import org.l2jmobius.gameserver.model.residences.ResidenceFunctionType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Steuf
  */
-public class AgitDecoInfo implements IClientOutgoingPacket
+public class AgitDecoInfo extends ServerPacket
 {
 	private final AbstractResidence _residense;
 	
@@ -36,155 +35,154 @@ public class AgitDecoInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.AGIT_DECO_INFO.writeId(packet);
-		packet.writeD(_residense.getResidenceId());
+		ServerPackets.AGIT_DECO_INFO.writeId(this);
+		writeInt(_residense.getResidenceId());
 		// Fireplace
 		ResidenceFunction function = _residense.getFunction(ResidenceFunctionType.HP_REGEN);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (((_residense.getGrade() == ClanHallGrade.GRADE_NONE) && (function.getLevel() < 2)) || ((_residense.getGrade() == ClanHallGrade.GRADE_D) && (function.getLevel() < 3)) || ((_residense.getGrade() == ClanHallGrade.GRADE_C) && (function.getLevel() < 4)) || ((_residense.getGrade() == ClanHallGrade.GRADE_B) && (function.getLevel() < 5)))
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Carpet - Statue
 		function = _residense.getFunction(ResidenceFunctionType.MP_REGEN);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
-			packet.writeC(0);
+			writeByte(0);
+			writeByte(0);
 		}
 		else if ((((_residense.getGrade() == ClanHallGrade.GRADE_NONE) || (_residense.getGrade() == ClanHallGrade.GRADE_D)) && (function.getLevel() < 2)) || ((_residense.getGrade() == ClanHallGrade.GRADE_C) && (function.getLevel() < 3)) || ((_residense.getGrade() == ClanHallGrade.GRADE_B) && (function.getLevel() < 4)))
 		{
-			packet.writeC(1);
-			packet.writeC(1);
+			writeByte(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
-			packet.writeC(2);
+			writeByte(2);
+			writeByte(2);
 		}
 		// Chandelier
 		function = _residense.getFunction(ResidenceFunctionType.EXP_RESTORE);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (function.getLevel() < 2)
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Mirror
 		function = _residense.getFunction(ResidenceFunctionType.TELEPORT);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (function.getLevel() < 2)
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Crystal
-		packet.writeC(0);
+		writeByte(0);
 		// Curtain
 		function = _residense.getFunction(ResidenceFunctionType.CURTAIN);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (function.getLevel() < 2)
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Magic Curtain
 		function = _residense.getFunction(ResidenceFunctionType.ITEM);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (((_residense.getGrade() == ClanHallGrade.GRADE_NONE) && (function.getLevel() < 2)) || (function.getLevel() < 3))
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Support
 		function = _residense.getFunction(ResidenceFunctionType.BUFF);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (((_residense.getGrade() == ClanHallGrade.GRADE_NONE) && (function.getLevel() < 2)) || ((_residense.getGrade() == ClanHallGrade.GRADE_D) && (function.getLevel() < 4)) || ((_residense.getGrade() == ClanHallGrade.GRADE_C) && (function.getLevel() < 5)) || ((_residense.getGrade() == ClanHallGrade.GRADE_B) && (function.getLevel() < 8)))
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Flag
 		function = _residense.getFunction(ResidenceFunctionType.OUTERFLAG);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (function.getLevel() < 2)
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Front platform
 		function = _residense.getFunction(ResidenceFunctionType.PLATFORM);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (function.getLevel() < 2)
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
 		// Item create?
 		function = _residense.getFunction(ResidenceFunctionType.ITEM);
 		if ((function == null) || (function.getLevel() == 0))
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
 		else if (((_residense.getGrade() == ClanHallGrade.GRADE_NONE) && (function.getLevel() < 2)) || (function.getLevel() < 3))
 		{
-			packet.writeC(1);
+			writeByte(1);
 		}
 		else
 		{
-			packet.writeC(2);
+			writeByte(2);
 		}
-		return true;
 	}
 }

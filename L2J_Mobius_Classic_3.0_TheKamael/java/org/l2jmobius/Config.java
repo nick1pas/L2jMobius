@@ -106,7 +106,6 @@ public class Config
 	private static final String PVP_CONFIG_FILE = "./config/PVP.ini";
 	private static final String RATES_CONFIG_FILE = "./config/Rates.ini";
 	private static final String SERVER_CONFIG_FILE = "./config/Server.ini";
-	private static final String TELNET_CONFIG_FILE = "./config/Telnet.ini";
 	private static final String TRAINING_CAMP_CONFIG_FILE = "./config/TrainingCamp.ini";
 	private static final String CHAT_FILTER_FILE = "./config/chatfilter.txt";
 	private static final String HEXID_FILE = "./config/hexid.txt";
@@ -483,7 +482,7 @@ public class Config
 	public static int THREADS_PER_SCHEDULED_THREAD_POOL;
 	public static int INSTANT_THREAD_POOL_COUNT;
 	public static int THREADS_PER_INSTANT_THREAD_POOL;
-	public static int IO_PACKET_THREAD_CORE_SIZE;
+	public static boolean THREADS_FOR_CLIENT_PACKETS;
 	public static boolean THREADS_FOR_LOADING;
 	public static boolean DEADLOCK_DETECTOR;
 	public static int DEADLOCK_CHECK_INTERVAL;
@@ -789,6 +788,15 @@ public class Config
 	public static int LOGIN_TRY_BEFORE_BAN;
 	public static int LOGIN_BLOCK_AFTER_BAN;
 	public static String GAMESERVER_HOSTNAME;
+	public static int CLIENT_READ_POOL_SIZE;
+	public static int CLIENT_EXECUTE_POOL_SIZE;
+	public static int PACKET_QUEUE_LIMIT;
+	public static boolean PACKET_FLOOD_DISCONNECT;
+	public static boolean PACKET_FLOOD_DROP;
+	public static boolean PACKET_FLOOD_LOGGED;
+	public static boolean TCP_NO_DELAY;
+	public static int CONNECTION_TIMEOUT;
+	public static boolean PACKET_ENCRYPTION;
 	public static String DATABASE_DRIVER;
 	public static String DATABASE_URL;
 	public static String DATABASE_LOGIN;
@@ -867,11 +875,6 @@ public class Config
 	public static double HP_REGEN_MULTIPLIER;
 	public static double MP_REGEN_MULTIPLIER;
 	public static double CP_REGEN_MULTIPLIER;
-	public static boolean TELNET_ENABLED;
-	public static String TELNET_PASSWORD;
-	public static String TELNET_HOSTNAME;
-	public static List<String> TELNET_HOSTS;
-	public static int TELNET_PORT;
 	public static boolean TRAINING_CAMP_ENABLE;
 	public static boolean TRAINING_CAMP_PREMIUM_ONLY;
 	public static int TRAINING_CAMP_MAX_DURATION;
@@ -1335,10 +1338,19 @@ public class Config
 			PORT_GAME = serverConfig.getInt("GameserverPort", 7777);
 			GAME_SERVER_LOGIN_PORT = serverConfig.getInt("LoginPort", 9014);
 			GAME_SERVER_LOGIN_HOST = serverConfig.getString("LoginHost", "127.0.0.1");
+			CLIENT_READ_POOL_SIZE = serverConfig.getInt("ClientReadPoolSize", 100);
+			CLIENT_EXECUTE_POOL_SIZE = serverConfig.getInt("ClientExecutePoolSize", 50);
+			PACKET_QUEUE_LIMIT = serverConfig.getInt("PacketQueueLimit", 80);
+			PACKET_FLOOD_DISCONNECT = serverConfig.getBoolean("PacketFloodDisconnect", false);
+			PACKET_FLOOD_DROP = serverConfig.getBoolean("PacketFloodDrop", false);
+			PACKET_FLOOD_LOGGED = serverConfig.getBoolean("PacketFloodLogged", true);
+			TCP_NO_DELAY = serverConfig.getBoolean("TcpNoDelay", true);
+			CONNECTION_TIMEOUT = serverConfig.getInt("ConnectionTimeout", 800);
+			PACKET_ENCRYPTION = serverConfig.getBoolean("PacketEncryption", false);
 			REQUEST_ID = serverConfig.getInt("RequestServerID", 0);
 			ACCEPT_ALTERNATE_ID = serverConfig.getBoolean("AcceptAlternateID", true);
 			DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
-			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2jgs");
+			DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/l2jmobius");
 			DATABASE_LOGIN = serverConfig.getString("Login", "root");
 			DATABASE_PASSWORD = serverConfig.getString("Password", "");
 			DATABASE_MAX_CONNECTIONS = serverConfig.getInt("MaximumDbConnections", 10);
@@ -1414,11 +1426,7 @@ public class Config
 				INSTANT_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
 			}
 			THREADS_PER_INSTANT_THREAD_POOL = serverConfig.getInt("ThreadsPerInstantThreadPool", 2);
-			IO_PACKET_THREAD_CORE_SIZE = serverConfig.getInt("UrgentPacketThreadCoreSize", -1);
-			if (IO_PACKET_THREAD_CORE_SIZE == -1)
-			{
-				IO_PACKET_THREAD_CORE_SIZE = Runtime.getRuntime().availableProcessors();
-			}
+			THREADS_FOR_CLIENT_PACKETS = serverConfig.getBoolean("ThreadsForClientPackets", true);
 			THREADS_FOR_LOADING = serverConfig.getBoolean("ThreadsForLoading", false);
 			DEADLOCK_DETECTOR = serverConfig.getBoolean("DeadLockDetector", true);
 			DEADLOCK_CHECK_INTERVAL = serverConfig.getInt("DeadLockCheckInterval", 20);
@@ -1913,14 +1921,6 @@ public class Config
 			PLAYER_MOVEMENT_BLOCK_TIME = characterConfig.getInt("NpcTalkBlockingTime", 0) * 1000;
 			ABILITY_MAX_POINTS = characterConfig.getInt("AbilityMaxPoints", 16);
 			ABILITY_POINTS_RESET_ADENA = characterConfig.getLong("AbilityPointsResetAdena", 10_000_000);
-			
-			// Load Telnet config file (if exists)
-			final PropertiesParser telnetConfig = new PropertiesParser(TELNET_CONFIG_FILE);
-			TELNET_ENABLED = telnetConfig.getBoolean("EnableTelnet", false);
-			TELNET_PORT = telnetConfig.getInt("Port", 12345);
-			TELNET_HOSTNAME = telnetConfig.getString("BindAddress", "127.0.0.1");
-			TELNET_PASSWORD = telnetConfig.getString("Password", "");
-			TELNET_HOSTS = Arrays.asList(telnetConfig.getString("ListOfHosts", "127.0.0.1,::1").split(","));
 			
 			// Load Training Camp config file (if exists)
 			final PropertiesParser trainingCampConfig = new PropertiesParser(TRAINING_CAMP_CONFIG_FILE);
@@ -3537,7 +3537,7 @@ public class Config
 			LOGIN_SERVER_SCHEDULE_RESTART = loginConfig.getBoolean("LoginRestartSchedule", false);
 			LOGIN_SERVER_SCHEDULE_RESTART_TIME = loginConfig.getLong("LoginRestartTime", 24);
 			DATABASE_DRIVER = loginConfig.getString("Driver", "org.mariadb.jdbc.Driver");
-			DATABASE_URL = loginConfig.getString("URL", "jdbc:mariadb://localhost/l2jls");
+			DATABASE_URL = loginConfig.getString("URL", "jdbc:mariadb://localhost/l2jmobius");
 			DATABASE_LOGIN = loginConfig.getString("Login", "root");
 			DATABASE_PASSWORD = loginConfig.getString("Password", "");
 			DATABASE_MAX_CONNECTIONS = loginConfig.getInt("MaximumDbConnections", 10);

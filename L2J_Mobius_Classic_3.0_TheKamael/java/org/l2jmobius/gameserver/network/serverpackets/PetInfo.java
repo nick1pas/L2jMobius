@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.actor.instance.Servitor;
 import org.l2jmobius.gameserver.model.skill.AbnormalVisualEffect;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 
-public class PetInfo implements IClientOutgoingPacket
+public class PetInfo extends ServerPacket
 {
 	private final Summon _summon;
 	private final int _value;
@@ -90,95 +89,94 @@ public class PetInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PET_INFO.writeId(packet);
-		packet.writeC(_summon.getSummonType());
-		packet.writeD(_summon.getObjectId());
-		packet.writeD(_summon.getTemplate().getDisplayId() + 1000000);
-		packet.writeD(_summon.getX());
-		packet.writeD(_summon.getY());
-		packet.writeD(_summon.getZ());
-		packet.writeD(_summon.getHeading());
-		packet.writeD(_summon.getStat().getMAtkSpd());
-		packet.writeD(_summon.getStat().getPAtkSpd());
-		packet.writeH(_runSpd);
-		packet.writeH(_walkSpd);
-		packet.writeH(_swimRunSpd);
-		packet.writeH(_swimWalkSpd);
-		packet.writeH(_flRunSpd);
-		packet.writeH(_flWalkSpd);
-		packet.writeH(_flyRunSpd);
-		packet.writeH(_flyWalkSpd);
-		packet.writeF(_moveMultiplier);
-		packet.writeF(_summon.getAttackSpeedMultiplier()); // attack speed multiplier
-		packet.writeF(_summon.getTemplate().getFCollisionRadius());
-		packet.writeF(_summon.getTemplate().getFCollisionHeight());
-		packet.writeD(_summon.getWeapon()); // right hand weapon
-		packet.writeD(_summon.getArmor()); // body armor
-		packet.writeD(0); // left hand weapon
-		packet.writeC(_summon.isShowSummonAnimation() ? 2 : _value); // 0=teleported 1=default 2=summoned
-		packet.writeD(-1); // High Five NPCString ID
+		ServerPackets.PET_INFO.writeId(this);
+		writeByte(_summon.getSummonType());
+		writeInt(_summon.getObjectId());
+		writeInt(_summon.getTemplate().getDisplayId() + 1000000);
+		writeInt(_summon.getX());
+		writeInt(_summon.getY());
+		writeInt(_summon.getZ());
+		writeInt(_summon.getHeading());
+		writeInt(_summon.getStat().getMAtkSpd());
+		writeInt(_summon.getStat().getPAtkSpd());
+		writeShort(_runSpd);
+		writeShort(_walkSpd);
+		writeShort(_swimRunSpd);
+		writeShort(_swimWalkSpd);
+		writeShort(_flRunSpd);
+		writeShort(_flWalkSpd);
+		writeShort(_flyRunSpd);
+		writeShort(_flyWalkSpd);
+		writeDouble(_moveMultiplier);
+		writeDouble(_summon.getAttackSpeedMultiplier()); // attack speed multiplier
+		writeDouble(_summon.getTemplate().getFCollisionRadius());
+		writeDouble(_summon.getTemplate().getFCollisionHeight());
+		writeInt(_summon.getWeapon()); // right hand weapon
+		writeInt(_summon.getArmor()); // body armor
+		writeInt(0); // left hand weapon
+		writeByte(_summon.isShowSummonAnimation() ? 2 : _value); // 0=teleported 1=default 2=summoned
+		writeInt(-1); // High Five NPCString ID
 		if (_summon.isPet())
 		{
-			packet.writeS(_summon.getName()); // Pet name.
+			writeString(_summon.getName()); // Pet name.
 		}
 		else
 		{
-			packet.writeS(_summon.getTemplate().isUsingServerSideName() ? _summon.getName() : ""); // Summon name.
+			writeString(_summon.getTemplate().isUsingServerSideName() ? _summon.getName() : ""); // Summon name.
 		}
-		packet.writeD(-1); // High Five NPCString ID
-		packet.writeS(_summon.getTitle()); // owner name
-		packet.writeC(_summon.getPvpFlag()); // confirmed
-		packet.writeD(_summon.getReputation()); // confirmed
-		packet.writeD(_curFed); // how fed it is
-		packet.writeD(_maxFed); // max fed it can be
-		packet.writeD((int) _summon.getCurrentHp()); // current hp
-		packet.writeD(_summon.getMaxHp()); // max hp
-		packet.writeD((int) _summon.getCurrentMp()); // current mp
-		packet.writeD(_summon.getMaxMp()); // max mp
-		packet.writeQ(_summon.getStat().getSp()); // sp
-		packet.writeC(_summon.getLevel()); // level
-		packet.writeQ(_summon.getStat().getExp());
+		writeInt(-1); // High Five NPCString ID
+		writeString(_summon.getTitle()); // owner name
+		writeByte(_summon.getPvpFlag()); // confirmed
+		writeInt(_summon.getReputation()); // confirmed
+		writeInt(_curFed); // how fed it is
+		writeInt(_maxFed); // max fed it can be
+		writeInt((int) _summon.getCurrentHp()); // current hp
+		writeInt(_summon.getMaxHp()); // max hp
+		writeInt((int) _summon.getCurrentMp()); // current mp
+		writeInt(_summon.getMaxMp()); // max mp
+		writeLong(_summon.getStat().getSp()); // sp
+		writeByte(_summon.getLevel()); // level
+		writeLong(_summon.getStat().getExp());
 		if (_summon.getExpForThisLevel() > _summon.getStat().getExp())
 		{
-			packet.writeQ(_summon.getStat().getExp()); // 0% absolute value
+			writeLong(_summon.getStat().getExp()); // 0% absolute value
 		}
 		else
 		{
-			packet.writeQ(_summon.getExpForThisLevel()); // 0% absolute value
+			writeLong(_summon.getExpForThisLevel()); // 0% absolute value
 		}
-		packet.writeQ(_summon.getExpForNextLevel()); // 100% absoulte value
-		packet.writeD(_summon.isPet() ? _summon.getInventory().getTotalWeight() : 0); // weight
-		packet.writeD(_summon.getMaxLoad()); // max weight it can carry
-		packet.writeD(_summon.getPAtk()); // patk
-		packet.writeD(_summon.getPDef()); // pdef
-		packet.writeD(_summon.getAccuracy()); // accuracy
-		packet.writeD(_summon.getEvasionRate()); // evasion
-		packet.writeD(_summon.getCriticalHit()); // critical
-		packet.writeD(_summon.getMAtk()); // matk
-		packet.writeD(_summon.getMDef()); // mdef
-		packet.writeD(_summon.getMagicAccuracy()); // magic accuracy
-		packet.writeD(_summon.getMagicEvasionRate()); // magic evasion
-		packet.writeD(_summon.getMCriticalHit()); // mcritical
-		packet.writeD((int) _summon.getStat().getMoveSpeed()); // speed
-		packet.writeD(_summon.getPAtkSpd()); // atkspeed
-		packet.writeD(_summon.getMAtkSpd()); // casting speed
-		packet.writeC(0); // TODO: Check me, might be ride status
-		packet.writeC(_summon.getTeam().getId()); // Confirmed
-		packet.writeC(_summon.getSoulShotsPerHit()); // How many soulshots this servitor uses per hit - Confirmed
-		packet.writeC(_summon.getSpiritShotsPerHit()); // How many spiritshots this servitor uses per hit - - Confirmed
-		packet.writeD(0); // TODO: Find me
-		packet.writeD(0); // "Transformation ID - Confirmed" - Used to bug Fenrir after 64 level.
-		packet.writeC(_summon.getOwner().getSummonPoints()); // Used Summon Points
-		packet.writeC(_summon.getOwner().getMaxSummonPoints()); // Maximum Summon Points
+		writeLong(_summon.getExpForNextLevel()); // 100% absoulte value
+		writeInt(_summon.isPet() ? _summon.getInventory().getTotalWeight() : 0); // weight
+		writeInt(_summon.getMaxLoad()); // max weight it can carry
+		writeInt(_summon.getPAtk()); // patk
+		writeInt(_summon.getPDef()); // pdef
+		writeInt(_summon.getAccuracy()); // accuracy
+		writeInt(_summon.getEvasionRate()); // evasion
+		writeInt(_summon.getCriticalHit()); // critical
+		writeInt(_summon.getMAtk()); // matk
+		writeInt(_summon.getMDef()); // mdef
+		writeInt(_summon.getMagicAccuracy()); // magic accuracy
+		writeInt(_summon.getMagicEvasionRate()); // magic evasion
+		writeInt(_summon.getMCriticalHit()); // mcritical
+		writeInt((int) _summon.getStat().getMoveSpeed()); // speed
+		writeInt(_summon.getPAtkSpd()); // atkspeed
+		writeInt(_summon.getMAtkSpd()); // casting speed
+		writeByte(0); // TODO: Check me, might be ride status
+		writeByte(_summon.getTeam().getId()); // Confirmed
+		writeByte(_summon.getSoulShotsPerHit()); // How many soulshots this servitor uses per hit - Confirmed
+		writeByte(_summon.getSpiritShotsPerHit()); // How many spiritshots this servitor uses per hit - - Confirmed
+		writeInt(0); // TODO: Find me
+		writeInt(0); // "Transformation ID - Confirmed" - Used to bug Fenrir after 64 level.
+		writeByte(_summon.getOwner().getSummonPoints()); // Used Summon Points
+		writeByte(_summon.getOwner().getMaxSummonPoints()); // Maximum Summon Points
 		final Set<AbnormalVisualEffect> aves = _summon.getEffectList().getCurrentAbnormalVisualEffects();
-		packet.writeH(aves.size()); // Confirmed
+		writeShort(aves.size()); // Confirmed
 		for (AbnormalVisualEffect ave : aves)
 		{
-			packet.writeH(ave.getClientId()); // Confirmed
+			writeShort(ave.getClientId()); // Confirmed
 		}
-		packet.writeC(_statusMask);
-		return true;
+		writeByte(_statusMask);
 	}
 }

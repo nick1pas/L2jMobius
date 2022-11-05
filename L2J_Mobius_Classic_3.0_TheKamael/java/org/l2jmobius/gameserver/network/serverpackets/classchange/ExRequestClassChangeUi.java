@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.classchange;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExRequestClassChangeUi implements IClientOutgoingPacket
+public class ExRequestClassChangeUi extends ServerPacket
 {
 	public static final ExRequestClassChangeUi STATIC_PACKET = new ExRequestClassChangeUi();
 	
@@ -32,9 +31,8 @@ public class ExRequestClassChangeUi implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_REQUEST_CLASS_CHANGE.writeId(packet);
-		return true;
+		ServerPackets.EX_REQUEST_CLASS_CHANGE.writeId(this);
 	}
 }

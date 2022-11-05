@@ -20,17 +20,16 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NviX
  */
-public class ExOlympiadRankingInfo implements IClientOutgoingPacket
+public class ExOlympiadRankingInfo extends ServerPacket
 {
 	private final Player _player;
 	private final int _tabId;
@@ -54,15 +53,15 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_RANKING_INFO.writeId(packet);
-		packet.writeC(_tabId); // Tab id
-		packet.writeC(_rankingType); // ranking type
-		packet.writeC(_unk); // unk, shows 1 all time
-		packet.writeD(_classId); // class id (default 148) or caller class id for personal rank
-		packet.writeD(_serverId); // 0 - all servers, server id - for caller server
-		packet.writeD(933); // unk, 933 all time
+		ServerPackets.EX_OLYMPIAD_RANKING_INFO.writeId(this);
+		writeByte(_tabId); // Tab id
+		writeByte(_rankingType); // ranking type
+		writeByte(_unk); // unk, shows 1 all time
+		writeInt(_classId); // class id (default 148) or caller class id for personal rank
+		writeInt(_serverId); // 0 - all servers, server id - for caller server
+		writeInt(933); // unk, 933 all time
 		if (!_playerList.isEmpty())
 		{
 			switch (_tabId)
@@ -71,13 +70,13 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 				{
 					if (_rankingType == 0)
 					{
-						packet.writeD(_playerList.size() > 100 ? 100 : _playerList.size());
+						writeInt(_playerList.size() > 100 ? 100 : _playerList.size());
 						for (Integer id : _playerList.keySet())
 						{
 							final StatSet player = _playerList.get(id);
-							packet.writeString(player.getString("name")); // name
-							packet.writeString(player.getString("clanName")); // clan name
-							packet.writeD(id); // rank
+							writeSizedString(player.getString("name")); // name
+							writeSizedString(player.getString("clanName")); // clan name
+							writeInt(id); // rank
 							if (!_snapshotList.isEmpty())
 							{
 								for (Integer id2 : _snapshotList.keySet())
@@ -85,23 +84,23 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 									final StatSet snapshot = _snapshotList.get(id2);
 									if (player.getInt("charId") == snapshot.getInt("charId"))
 									{
-										packet.writeD(id2); // previous rank
+										writeInt(id2); // previous rank
 									}
 								}
 							}
 							else
 							{
-								packet.writeD(id);
+								writeInt(id);
 							}
-							packet.writeD(Config.SERVER_ID); // server id
-							packet.writeD(player.getInt("level")); // level
-							packet.writeD(player.getInt("classId")); // class id
-							packet.writeD(player.getInt("clanLevel")); // clan level
-							packet.writeD(player.getInt("competitions_won")); // win count
-							packet.writeD(player.getInt("competitions_lost")); // lose count
-							packet.writeD(player.getInt("olympiad_points")); // points
-							packet.writeD(player.getInt("count")); // hero counts
-							packet.writeD(player.getInt("legend_count")); // legend counts
+							writeInt(Config.SERVER_ID); // server id
+							writeInt(player.getInt("level")); // level
+							writeInt(player.getInt("classId")); // class id
+							writeInt(player.getInt("clanLevel")); // clan level
+							writeInt(player.getInt("competitions_won")); // win count
+							writeInt(player.getInt("competitions_lost")); // lose count
+							writeInt(player.getInt("olympiad_points")); // points
+							writeInt(player.getInt("count")); // hero counts
+							writeInt(player.getInt("legend_count")); // legend counts
 						}
 					}
 					else
@@ -117,18 +116,18 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 								final int last = _playerList.size() >= (id + 10) ? id + 10 : id + (_playerList.size() - id);
 								if (first == 1)
 								{
-									packet.writeD(last - (first - 1));
+									writeInt(last - (first - 1));
 								}
 								else
 								{
-									packet.writeD(last - first);
+									writeInt(last - first);
 								}
 								for (int id2 = first; id2 <= last; id2++)
 								{
 									final StatSet plr = _playerList.get(id2);
-									packet.writeString(plr.getString("name"));
-									packet.writeString(plr.getString("clanName"));
-									packet.writeD(id2);
+									writeSizedString(plr.getString("name"));
+									writeSizedString(plr.getString("clanName"));
+									writeInt(id2);
 									if (!_snapshotList.isEmpty())
 									{
 										for (Integer id3 : _snapshotList.keySet())
@@ -136,29 +135,29 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 											final StatSet snapshot = _snapshotList.get(id3);
 											if (player.getInt("charId") == snapshot.getInt("charId"))
 											{
-												packet.writeD(id3); // class rank snapshot
+												writeInt(id3); // class rank snapshot
 											}
 										}
 									}
 									else
 									{
-										packet.writeD(id2);
+										writeInt(id2);
 									}
-									packet.writeD(Config.SERVER_ID);
-									packet.writeD(plr.getInt("level"));
-									packet.writeD(plr.getInt("classId"));
-									packet.writeD(plr.getInt("clanLevel")); // clan level
-									packet.writeD(plr.getInt("competitions_won")); // win count
-									packet.writeD(plr.getInt("competitions_lost")); // lose count
-									packet.writeD(plr.getInt("olympiad_points")); // points
-									packet.writeD(plr.getInt("count")); // hero counts
-									packet.writeD(plr.getInt("legend_count")); // legend counts
+									writeInt(Config.SERVER_ID);
+									writeInt(plr.getInt("level"));
+									writeInt(plr.getInt("classId"));
+									writeInt(plr.getInt("clanLevel")); // clan level
+									writeInt(plr.getInt("competitions_won")); // win count
+									writeInt(plr.getInt("competitions_lost")); // lose count
+									writeInt(plr.getInt("olympiad_points")); // points
+									writeInt(plr.getInt("count")); // hero counts
+									writeInt(plr.getInt("legend_count")); // legend counts
 								}
 							}
 						}
 						if (!found)
 						{
-							packet.writeD(0);
+							writeInt(0);
 						}
 					}
 					break;
@@ -176,16 +175,16 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 								count++;
 							}
 						}
-						packet.writeD(count > 50 ? 50 : count);
+						writeInt(count > 50 ? 50 : count);
 						int i = 1;
 						for (Integer id : _playerList.keySet())
 						{
 							final StatSet player = _playerList.get(id);
 							if (_classId == player.getInt("classId"))
 							{
-								packet.writeString(player.getString("name"));
-								packet.writeString(player.getString("clanName"));
-								packet.writeD(i); // class rank
+								writeSizedString(player.getString("name"));
+								writeSizedString(player.getString("clanName"));
+								writeInt(i); // class rank
 								if (!_snapshotList.isEmpty())
 								{
 									final Map<Integer, StatSet> snapshotRaceList = new ConcurrentHashMap<>();
@@ -204,23 +203,23 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 										final StatSet snapshot = snapshotRaceList.get(id2);
 										if (player.getInt("charId") == snapshot.getInt("charId"))
 										{
-											packet.writeD(id2); // class rank snapshot
+											writeInt(id2); // class rank snapshot
 										}
 									}
 								}
 								else
 								{
-									packet.writeD(i);
+									writeInt(i);
 								}
-								packet.writeD(Config.SERVER_ID);
-								packet.writeD(player.getInt("level"));
-								packet.writeD(player.getInt("classId"));
-								packet.writeD(player.getInt("clanLevel")); // clan level
-								packet.writeD(player.getInt("competitions_won")); // win count
-								packet.writeD(player.getInt("competitions_lost")); // lose count
-								packet.writeD(player.getInt("olympiad_points")); // points
-								packet.writeD(player.getInt("count")); // hero counts
-								packet.writeD(player.getInt("legend_count")); // legend counts
+								writeInt(Config.SERVER_ID);
+								writeInt(player.getInt("level"));
+								writeInt(player.getInt("classId"));
+								writeInt(player.getInt("clanLevel")); // clan level
+								writeInt(player.getInt("competitions_won")); // win count
+								writeInt(player.getInt("competitions_lost")); // lose count
+								writeInt(player.getInt("olympiad_points")); // points
+								writeInt(player.getInt("count")); // hero counts
+								writeInt(player.getInt("legend_count")); // legend counts
 								i++;
 							}
 						}
@@ -249,40 +248,39 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 								final int last = classList.size() >= (id + 10) ? id + 10 : id + (classList.size() - id);
 								if (first == 1)
 								{
-									packet.writeD(last - (first - 1));
+									writeInt(last - (first - 1));
 								}
 								else
 								{
-									packet.writeD(last - first);
+									writeInt(last - first);
 								}
 								for (int id2 = first; id2 <= last; id2++)
 								{
 									final StatSet plr = classList.get(id2);
-									packet.writeString(plr.getString("name"));
-									packet.writeString(plr.getString("clanName"));
-									packet.writeD(id2); // class rank
-									packet.writeD(id2);
-									packet.writeD(Config.SERVER_ID);
-									packet.writeD(player.getInt("level"));
-									packet.writeD(player.getInt("classId"));
-									packet.writeD(player.getInt("clanLevel")); // clan level
-									packet.writeD(player.getInt("competitions_won")); // win count
-									packet.writeD(player.getInt("competitions_lost")); // lose count
-									packet.writeD(player.getInt("olympiad_points")); // points
-									packet.writeD(player.getInt("count")); // hero counts
-									packet.writeD(player.getInt("legend_count")); // legend counts
+									writeSizedString(plr.getString("name"));
+									writeSizedString(plr.getString("clanName"));
+									writeInt(id2); // class rank
+									writeInt(id2);
+									writeInt(Config.SERVER_ID);
+									writeInt(player.getInt("level"));
+									writeInt(player.getInt("classId"));
+									writeInt(player.getInt("clanLevel")); // clan level
+									writeInt(player.getInt("competitions_won")); // win count
+									writeInt(player.getInt("competitions_lost")); // lose count
+									writeInt(player.getInt("olympiad_points")); // points
+									writeInt(player.getInt("count")); // hero counts
+									writeInt(player.getInt("legend_count")); // legend counts
 								}
 							}
 						}
 						if (!found)
 						{
-							packet.writeD(0);
+							writeInt(0);
 						}
 					}
 					break;
 				}
 			}
 		}
-		return true;
 	}
 }

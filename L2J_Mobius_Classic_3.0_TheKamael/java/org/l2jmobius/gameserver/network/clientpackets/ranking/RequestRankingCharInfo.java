@@ -16,28 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.ranking;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExRankingCharInfo;
 
 /**
  * @author JoeAlisson
  */
-public class RequestRankingCharInfo implements IClientIncomingPacket
+public class RequestRankingCharInfo implements ClientPacket
 {
-	private short _unk;
-	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_unk = packet.readC();
-		return true;
+		packet.readByte(); // Unknown.
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
-		client.sendPacket(new ExRankingCharInfo(client.getPlayer(), _unk));
+		client.sendPacket(new ExRankingCharInfo(client.getPlayer()));
 	}
 }

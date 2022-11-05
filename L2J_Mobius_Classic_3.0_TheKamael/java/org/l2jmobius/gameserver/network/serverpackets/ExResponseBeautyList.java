@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.BeautyShopData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.beautyshop.BeautyItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExResponseBeautyList implements IClientOutgoingPacket
+public class ExResponseBeautyList extends ServerPacket
 {
 	public static final int SHOW_FACESHAPE = 1;
 	public static final int SHOW_HAIRSTYLE = 0;
@@ -51,19 +50,18 @@ public class ExResponseBeautyList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESPONSE_BEAUTY_LIST.writeId(packet);
-		packet.writeQ(_player.getAdena());
-		packet.writeQ(_player.getBeautyTickets());
-		packet.writeD(_type);
-		packet.writeD(_beautyItem.size());
+		ServerPackets.EX_RESPONSE_BEAUTY_LIST.writeId(this);
+		writeLong(_player.getAdena());
+		writeLong(_player.getBeautyTickets());
+		writeInt(_type);
+		writeInt(_beautyItem.size());
 		for (BeautyItem item : _beautyItem.values())
 		{
-			packet.writeD(item.getId());
-			packet.writeD(1); // Limit
+			writeInt(item.getId());
+			writeInt(1); // Limit
 		}
-		packet.writeD(0);
-		return true;
+		writeInt(0);
 	}
 }

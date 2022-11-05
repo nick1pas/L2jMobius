@@ -40,14 +40,11 @@ import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
 import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.network.ClientNetworkManager;
 import org.l2jmobius.gameserver.network.Disconnection;
-import org.l2jmobius.gameserver.network.EventLoopGroupManager;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.loginserverpackets.game.ServerStatus;
 import org.l2jmobius.gameserver.network.serverpackets.ServerClose;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.network.telnet.TelnetServer;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 import org.l2jmobius.gameserver.util.Broadcast;
 
@@ -177,31 +174,9 @@ public class Shutdown extends Thread
 				// ignore
 			}
 			
-			try
-			{
-				TelnetServer.getInstance().shutdown();
-				LOGGER.info("Telnet Server Thread: Thread interruped(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
-			}
-			catch (Throwable t)
-			{
-				// ignore
-			}
-			
 			// last byebye, save all data and quit this server
 			saveData();
 			tc.restartCounter();
-			
-			// saveData sends messages to exit players, so shutdown selector after it
-			try
-			{
-				ClientNetworkManager.getInstance().stop();
-				EventLoopGroupManager.getInstance().shutdown();
-				LOGGER.info("Game Server: Selector thread has been shut down(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
-			}
-			catch (Throwable t)
-			{
-				// ignore
-			}
 			
 			// commit data, last chance
 			try

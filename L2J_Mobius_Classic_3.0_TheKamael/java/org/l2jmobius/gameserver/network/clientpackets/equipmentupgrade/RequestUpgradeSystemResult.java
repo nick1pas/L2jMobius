@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.equipmentupgrade;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.EquipmentUpgradeData;
 import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.model.ItemInfo;
@@ -28,23 +28,22 @@ import org.l2jmobius.gameserver.model.item.enchant.attribute.AttributeHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.variables.ItemVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.equipmentupgrade.ExUpgradeSystemResult;
 
 /**
  * @author Mobius
  */
-public class RequestUpgradeSystemResult implements IClientIncomingPacket
+public class RequestUpgradeSystemResult implements ClientPacket
 {
 	private int _objectId;
 	private int _upgradeId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_upgradeId = packet.readD();
-		return true;
+		_objectId = packet.readInt();
+		_upgradeId = packet.readInt();
 	}
 	
 	@Override

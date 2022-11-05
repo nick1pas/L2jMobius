@@ -22,18 +22,17 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
+public class ExListPartyMatchingWaitingRoom extends ServerPacket
 {
 	private static final int NUM_PER_PAGE = 64;
 	
@@ -57,27 +56,26 @@ public class ExListPartyMatchingWaitingRoom implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_LIST_PARTY_MATCHING_WAITING_ROOM.writeId(packet);
-		packet.writeD(_size);
-		packet.writeD(_players.size());
+		ServerPackets.EX_LIST_PARTY_MATCHING_WAITING_ROOM.writeId(this);
+		writeInt(_size);
+		writeInt(_players.size());
 		for (Player player : _players)
 		{
-			packet.writeS(player.getName());
-			packet.writeD(player.getClassId().getId());
-			packet.writeD(player.getLevel());
+			writeString(player.getName());
+			writeInt(player.getClassId().getId());
+			writeInt(player.getLevel());
 			final Instance instance = InstanceManager.getInstance().getPlayerInstance(player, false);
-			packet.writeD((instance != null) && (instance.getTemplateId() >= 0) ? instance.getTemplateId() : -1);
+			writeInt((instance != null) && (instance.getTemplateId() >= 0) ? instance.getTemplateId() : -1);
 			final Map<Integer, Long> instanceTimes = InstanceManager.getInstance().getAllInstanceTimes(player);
-			packet.writeD(instanceTimes.size());
+			writeInt(instanceTimes.size());
 			for (Entry<Integer, Long> entry : instanceTimes.entrySet())
 			{
 				final long instanceTime = TimeUnit.MILLISECONDS.toSeconds(entry.getValue() - System.currentTimeMillis());
-				packet.writeD(entry.getKey());
-				packet.writeD((int) instanceTime);
+				writeInt(entry.getKey());
+				writeInt((int) instanceTime);
 			}
 		}
-		return true;
 	}
 }

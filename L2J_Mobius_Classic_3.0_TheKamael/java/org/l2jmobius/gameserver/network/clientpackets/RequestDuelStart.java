@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.model.Party;
@@ -33,17 +33,16 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
  * Format:(ch) Sd
  * @author -Wooden-
  */
-public class RequestDuelStart implements IClientIncomingPacket
+public class RequestDuelStart implements ClientPacket
 {
 	private String _player;
 	private int _partyDuel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_player = packet.readS();
-		_partyDuel = packet.readD();
-		return true;
+		_player = packet.readString();
+		_partyDuel = packet.readInt();
 	}
 	
 	private void scheduleDeny(Player player, String name)

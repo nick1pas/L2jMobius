@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ClanEntryStatus;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExPledgeRecruitApplyInfo implements IClientOutgoingPacket
+public class ExPledgeRecruitApplyInfo extends ServerPacket
 {
 	private final ClanEntryStatus _status;
 	
@@ -33,10 +32,9 @@ public class ExPledgeRecruitApplyInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_RECRUIT_APPLY_INFO.writeId(packet);
-		packet.writeD(_status.ordinal());
-		return true;
+		ServerPackets.EX_PLEDGE_RECRUIT_APPLY_INFO.writeId(this);
+		writeInt(_status.ordinal());
 	}
 }
