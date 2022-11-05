@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.autoplay;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExAutoPlayDoMacro implements IClientOutgoingPacket
+public class ExAutoPlayDoMacro extends ServerPacket
 {
 	public static final ExAutoPlayDoMacro STATIC_PACKET = new ExAutoPlayDoMacro();
 	
@@ -32,10 +31,9 @@ public class ExAutoPlayDoMacro implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_AUTOPLAY_DO_MACRO.writeId(packet);
-		packet.writeD(0x114);
-		return true;
+		ServerPackets.EX_AUTOPLAY_DO_MACRO.writeId(this);
+		writeInt(276);
 	}
 }

@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets.pledgeV3;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ClanWarState;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanWar;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
-public class ExPledgeEnemyInfoList implements IClientOutgoingPacket
+public class ExPledgeEnemyInfoList extends ServerPacket
 {
 	private final Clan _playerClan;
 	private final List<ClanWar> _warList;
@@ -41,18 +40,17 @@ public class ExPledgeEnemyInfoList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_ENEMY_INFO_LIST.writeId(packet);
-		packet.writeD(_warList.size());
+		ServerPackets.EX_PLEDGE_ENEMY_INFO_LIST.writeId(this);
+		writeInt(_warList.size());
 		for (ClanWar war : _warList)
 		{
 			final Clan clan = war.getOpposingClan(_playerClan);
-			packet.writeD(clan.getRank());
-			packet.writeD(clan.getId());
-			packet.writeString(clan.getName());
-			packet.writeString(clan.getLeaderName());
+			writeInt(clan.getRank());
+			writeInt(clan.getId());
+			writeSizedString(clan.getName());
+			writeSizedString(clan.getLeaderName());
 		}
-		return true;
 	}
 }

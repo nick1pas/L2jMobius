@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.sayune;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExNotifyFlyMoveStart implements IClientOutgoingPacket
+public class ExNotifyFlyMoveStart extends ServerPacket
 {
 	public static final ExNotifyFlyMoveStart STATIC_PACKET = new ExNotifyFlyMoveStart();
 	
@@ -32,9 +31,8 @@ public class ExNotifyFlyMoveStart implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_NOTIFY_FLY_MOVE_START.writeId(packet);
-		return true;
+		ServerPackets.EX_NOTIFY_FLY_MOVE_START.writeId(this);
 	}
 }

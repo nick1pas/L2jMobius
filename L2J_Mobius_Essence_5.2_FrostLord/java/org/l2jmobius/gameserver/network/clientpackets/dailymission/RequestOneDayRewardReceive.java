@@ -18,27 +18,26 @@ package org.l2jmobius.gameserver.network.clientpackets.dailymission;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.dailymission.ExConnectedTimeAndGettableReward;
 import org.l2jmobius.gameserver.network.serverpackets.dailymission.ExOneDayReceiveRewardList;
 
 /**
  * @author Sdw
  */
-public class RequestOneDayRewardReceive implements IClientIncomingPacket
+public class RequestOneDayRewardReceive implements ClientPacket
 {
 	private int _id;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = packet.readH();
-		return true;
+		_id = packet.readShort();
 	}
 	
 	@Override

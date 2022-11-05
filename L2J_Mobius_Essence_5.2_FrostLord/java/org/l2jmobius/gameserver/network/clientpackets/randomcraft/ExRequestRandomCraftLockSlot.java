@@ -17,20 +17,20 @@
 package org.l2jmobius.gameserver.network.clientpackets.randomcraft;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.model.itemcontainer.PlayerRandomCraft;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.randomcraft.ExCraftRandomInfo;
 import org.l2jmobius.gameserver.network.serverpackets.randomcraft.ExCraftRandomLockSlot;
 
 /**
  * @author Mode
  */
-public class ExRequestRandomCraftLockSlot implements IClientIncomingPacket
+public class ExRequestRandomCraftLockSlot implements ClientPacket
 {
 	private static final int[] LOCK_PRICE =
 	{
@@ -42,10 +42,9 @@ public class ExRequestRandomCraftLockSlot implements IClientIncomingPacket
 	private int _id;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = packet.readD();
-		return true;
+		_id = packet.readInt();
 	}
 	
 	@Override

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ExResponseBeautyList;
@@ -24,15 +24,14 @@ import org.l2jmobius.gameserver.network.serverpackets.ExResponseBeautyList;
 /**
  * @author Sdw
  */
-public class RequestShowBeautyList implements IClientIncomingPacket
+public class RequestShowBeautyList implements ClientPacket
 {
 	private int _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readD();
-		return true;
+		_type = packet.readInt();
 	}
 	
 	@Override

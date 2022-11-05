@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.friend;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * Support for "Chat with Friends" dialog. <br />
  * Inform player about friend online status change
  * @author JIV
  */
-public class FriendStatus implements IClientOutgoingPacket
+public class FriendStatus extends ServerPacket
 {
 	public static final int MODE_OFFLINE = 0;
 	public static final int MODE_ONLINE = 1;
@@ -49,29 +48,28 @@ public class FriendStatus implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.FRIEND_STATUS.writeId(packet);
-		packet.writeD(_type);
-		packet.writeS(_name);
+		ServerPackets.FRIEND_STATUS.writeId(this);
+		writeInt(_type);
+		writeString(_name);
 		switch (_type)
 		{
 			case MODE_OFFLINE:
 			{
-				packet.writeD(_objectId);
+				writeInt(_objectId);
 				break;
 			}
 			case MODE_LEVEL:
 			{
-				packet.writeD(_level);
+				writeInt(_level);
 				break;
 			}
 			case MODE_CLASS:
 			{
-				packet.writeD(_classId);
+				writeInt(_classId);
 				break;
 			}
 		}
-		return true;
 	}
 }

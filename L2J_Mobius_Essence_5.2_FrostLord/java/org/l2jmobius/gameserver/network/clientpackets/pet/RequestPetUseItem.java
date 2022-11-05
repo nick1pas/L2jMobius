@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pet;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.handler.IItemHandler;
 import org.l2jmobius.gameserver.handler.ItemHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -25,22 +25,21 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.pet.PetItemList;
 
-public class RequestPetUseItem implements IClientIncomingPacket
+public class RequestPetUseItem implements ClientPacket
 {
 	private int _objectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
+		_objectId = packet.readInt();
 		// TODO: implement me properly
-		// packet.readQ();
-		// packet.readD();
-		return true;
+		// packet.readLong();
+		// packet.readInt();
 	}
 	
 	@Override

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.AttributeType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExAttributeEnchantResult implements IClientOutgoingPacket
+public class ExAttributeEnchantResult extends ServerPacket
 {
 	private final int _result;
-	private final int _isWeapon;
+	private final boolean _isWeapon;
 	private final int _type;
 	private final int _before;
 	private final int _after;
@@ -33,7 +32,7 @@ public class ExAttributeEnchantResult implements IClientOutgoingPacket
 	public ExAttributeEnchantResult(int result, boolean isWeapon, AttributeType type, int before, int after, int successCount, int failedCount)
 	{
 		_result = result;
-		_isWeapon = isWeapon ? 1 : 0;
+		_isWeapon = isWeapon;
 		_type = type.getClientId();
 		_before = before;
 		_after = after;
@@ -42,16 +41,15 @@ public class ExAttributeEnchantResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ATTRIBUTE_ENCHANT_RESULT.writeId(packet);
-		packet.writeD(_result);
-		packet.writeC(_isWeapon);
-		packet.writeH(_type);
-		packet.writeH(_before);
-		packet.writeH(_after);
-		packet.writeH(_successCount);
-		packet.writeH(_failedCount);
-		return true;
+		ServerPackets.EX_ATTRIBUTE_ENCHANT_RESULT.writeId(this);
+		writeInt(_result);
+		writeByte(_isWeapon);
+		writeShort(_type);
+		writeShort(_before);
+		writeShort(_after);
+		writeShort(_successCount);
+		writeShort(_failedCount);
 	}
 }

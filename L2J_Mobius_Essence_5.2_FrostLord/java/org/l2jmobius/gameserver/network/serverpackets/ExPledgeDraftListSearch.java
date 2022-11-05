@@ -18,14 +18,13 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.entry.PledgeWaitingInfo;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExPledgeDraftListSearch implements IClientOutgoingPacket
+public class ExPledgeDraftListSearch extends ServerPacket
 {
 	final List<PledgeWaitingInfo> _pledgeRecruitList;
 	
@@ -35,18 +34,17 @@ public class ExPledgeDraftListSearch implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_DRAFT_LIST_SEARCH.writeId(packet);
-		packet.writeD(_pledgeRecruitList.size());
+		ServerPackets.EX_PLEDGE_DRAFT_LIST_SEARCH.writeId(this);
+		writeInt(_pledgeRecruitList.size());
 		for (PledgeWaitingInfo prl : _pledgeRecruitList)
 		{
-			packet.writeD(prl.getPlayerId());
-			packet.writeS(prl.getPlayerName());
-			packet.writeD(prl.getKarma());
-			packet.writeD(prl.getPlayerClassId());
-			packet.writeD(prl.getPlayerLvl());
+			writeInt(prl.getPlayerId());
+			writeString(prl.getPlayerName());
+			writeInt(prl.getKarma());
+			writeInt(prl.getPlayerClassId());
+			writeInt(prl.getPlayerLvl());
 		}
-		return true;
 	}
 }

@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.shuttle;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.instance.Shuttle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExShuttleMove implements IClientOutgoingPacket
+public class ExShuttleMove extends ServerPacket
 {
 	private final Shuttle _shuttle;
 	private final int _x;
@@ -40,15 +39,14 @@ public class ExShuttleMove implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUTTLE_MOVE.writeId(packet);
-		packet.writeD(_shuttle.getObjectId());
-		packet.writeD((int) _shuttle.getStat().getMoveSpeed());
-		packet.writeD((int) _shuttle.getStat().getRotationSpeed());
-		packet.writeD(_x);
-		packet.writeD(_y);
-		packet.writeD(_z);
-		return true;
+		ServerPackets.EX_SUTTLE_MOVE.writeId(this);
+		writeInt(_shuttle.getObjectId());
+		writeInt((int) _shuttle.getStat().getMoveSpeed());
+		writeInt((int) _shuttle.getStat().getRotationSpeed());
+		writeInt(_x);
+		writeInt(_y);
+		writeInt(_z);
 	}
 }

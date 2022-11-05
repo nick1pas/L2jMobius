@@ -16,17 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.stats;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 
 /**
  * @author Mobius
  */
-public class ExSetStatusBonus implements IClientIncomingPacket
+public class ExSetStatusBonus implements ClientPacket
 {
 	private int _str;
 	private int _dex;
@@ -36,17 +36,16 @@ public class ExSetStatusBonus implements IClientIncomingPacket
 	private int _men;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readH(); // unk
-		packet.readH(); // totalBonus
-		_str = packet.readH();
-		_dex = packet.readH();
-		_con = packet.readH();
-		_int = packet.readH();
-		_wit = packet.readH();
-		_men = packet.readH();
-		return true;
+		packet.readShort(); // unk
+		packet.readShort(); // totalBonus
+		_str = packet.readShort();
+		_dex = packet.readShort();
+		_con = packet.readShort();
+		_int = packet.readShort();
+		_wit = packet.readShort();
+		_men = packet.readShort();
 	}
 	
 	@Override

@@ -17,14 +17,13 @@
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gustavo Fonseca
  */
-public class ExShowSharingLocationUi implements IClientOutgoingPacket
+public class ExShowSharingLocationUi extends ServerPacket
 {
 	public static final ExShowSharingLocationUi STATIC_PACKET = new ExShowSharingLocationUi();
 	
@@ -33,10 +32,9 @@ public class ExShowSharingLocationUi implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHARED_POSITION_SHARING_UI.writeId(packet);
-		packet.writeQ(Config.SHARING_LOCATION_COST);
-		return true;
+		ServerPackets.EX_SHARED_POSITION_SHARING_UI.writeId(this);
+		writeLong(Config.SHARING_LOCATION_COST);
 	}
 }

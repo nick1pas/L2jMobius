@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgedonation;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.enums.MailType;
 import org.l2jmobius.gameserver.instancemanager.MailManager;
@@ -27,23 +27,22 @@ import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.limitshop.ExBloodyCoinCount;
 import org.l2jmobius.gameserver.network.serverpackets.pledgedonation.ExPledgeDonationInfo;
 import org.l2jmobius.gameserver.network.serverpackets.pledgedonation.ExPledgeDonationRequest;
 
 /**
- * Written by Berezkin Nikolay, on 08.05.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExPledgeDonationRequest implements IClientIncomingPacket
+public class RequestExPledgeDonationRequest implements ClientPacket
 {
 	private int _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readC();
-		return true;
+		_type = packet.readByte();
 	}
 	
 	@Override

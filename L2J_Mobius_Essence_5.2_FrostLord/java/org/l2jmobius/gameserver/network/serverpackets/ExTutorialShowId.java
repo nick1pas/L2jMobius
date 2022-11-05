@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class ExTutorialShowId implements IClientOutgoingPacket
+public class ExTutorialShowId extends ServerPacket
 {
 	private final int _id;
 	
@@ -32,10 +31,9 @@ public class ExTutorialShowId implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TUTORIAL_SHOW_ID.writeId(packet);
-		packet.writeD(_id);
-		return true;
+		ServerPackets.EX_TUTORIAL_SHOW_ID.writeId(this);
+		writeInt(_id);
 	}
 }

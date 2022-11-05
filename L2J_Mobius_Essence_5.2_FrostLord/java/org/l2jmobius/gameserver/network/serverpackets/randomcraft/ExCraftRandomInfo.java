@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets.randomcraft;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.RandomCraftRewardItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mode
  */
-public class ExCraftRandomInfo implements IClientOutgoingPacket
+public class ExCraftRandomInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -37,39 +36,38 @@ public class ExCraftRandomInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CRAFT_RANDOM_INFO.writeId(packet);
+		ServerPackets.EX_CRAFT_RANDOM_INFO.writeId(this);
 		final List<RandomCraftRewardItemHolder> rewards = _player.getRandomCraft().getRewards();
 		int size = 5;
-		packet.writeD(size); // size
+		writeInt(size); // size
 		for (int i = 0; i < rewards.size(); i++)
 		{
 			final RandomCraftRewardItemHolder holder = rewards.get(i);
 			if ((holder != null) && (holder.getItemId() != 0))
 			{
-				packet.writeC(holder.isLocked() ? 1 : 0); // Locked
-				packet.writeD(holder.getLockLeft()); // Rolls it will stay locked
-				packet.writeD(holder.getItemId()); // Item id
-				packet.writeQ(holder.getItemCount()); // Item count
+				writeByte(holder.isLocked()); // Locked
+				writeInt(holder.getLockLeft()); // Rolls it will stay locked
+				writeInt(holder.getItemId()); // Item id
+				writeLong(holder.getItemCount()); // Item count
 			}
 			else
 			{
-				packet.writeC(0);
-				packet.writeD(0);
-				packet.writeD(0);
-				packet.writeQ(0);
+				writeByte(0);
+				writeInt(0);
+				writeInt(0);
+				writeLong(0);
 			}
 			size--;
 		}
 		// Write missing
 		for (int i = size; i > 0; i--)
 		{
-			packet.writeC(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeQ(0);
+			writeByte(0);
+			writeInt(0);
+			writeInt(0);
+			writeLong(0);
 		}
-		return true;
 	}
 }

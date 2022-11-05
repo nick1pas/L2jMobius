@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class NormalCamera implements IClientOutgoingPacket
+public class NormalCamera extends ServerPacket
 {
 	public static final NormalCamera STATIC_PACKET = new NormalCamera();
 	
@@ -28,9 +27,8 @@ public class NormalCamera implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.NORMAL_CAMERA.writeId(packet);
-		return true;
+		ServerPackets.NORMAL_CAMERA.writeId(this);
 	}
 }

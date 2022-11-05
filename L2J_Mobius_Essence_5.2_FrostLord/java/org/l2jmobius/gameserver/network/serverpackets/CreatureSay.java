@@ -19,7 +19,6 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
@@ -28,10 +27,10 @@ import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 
-public class CreatureSay implements IClientOutgoingPacket
+public class CreatureSay extends ServerPacket
 {
 	private final Creature _sender;
 	private final ChatType _chatType;
@@ -65,6 +64,8 @@ public class CreatureSay implements IClientOutgoingPacket
 	 */
 	public CreatureSay(Player sender, Player receiver, String name, ChatType chatType, String text, boolean shareLocation)
 	{
+		super(128);
+		
 		_sender = sender;
 		_senderName = name;
 		_chatType = chatType;
@@ -103,6 +104,8 @@ public class CreatureSay implements IClientOutgoingPacket
 	
 	public CreatureSay(Creature sender, ChatType chatType, String senderName, String text, boolean shareLocation)
 	{
+		super(128);
+		
 		_sender = sender;
 		_chatType = chatType;
 		_senderName = senderName;
@@ -112,6 +115,8 @@ public class CreatureSay implements IClientOutgoingPacket
 	
 	public CreatureSay(Creature sender, ChatType chatType, NpcStringId npcStringId)
 	{
+		super(128);
+		
 		_sender = sender;
 		_chatType = chatType;
 		_messageId = npcStringId.getId();
@@ -123,6 +128,8 @@ public class CreatureSay implements IClientOutgoingPacket
 	
 	public CreatureSay(ChatType chatType, int charId, SystemMessageId systemMessageId)
 	{
+		super(128);
+		
 		_sender = null;
 		_chatType = chatType;
 		_charId = charId;
@@ -143,29 +150,29 @@ public class CreatureSay implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SAY2.writeId(packet);
-		packet.writeD(_sender == null ? 0 : _sender.getObjectId());
-		packet.writeD(_chatType.getClientId());
+		ServerPackets.SAY2.writeId(this);
+		writeInt(_sender == null ? 0 : _sender.getObjectId());
+		writeInt(_chatType.getClientId());
 		if (_senderName != null)
 		{
-			packet.writeS(_senderName);
+			writeString(_senderName);
 		}
 		else
 		{
-			packet.writeD(_charId);
+			writeInt(_charId);
 		}
-		packet.writeD(_messageId); // High Five NPCString ID
+		writeInt(_messageId); // High Five NPCString ID
 		if (_text != null)
 		{
-			packet.writeS(_text);
+			writeString(_text);
 			if ((_sender != null) && (_sender.isPlayer() || _sender.isFakePlayer()) && (_chatType == ChatType.WHISPER))
 			{
-				packet.writeC(_mask);
+				writeByte(_mask);
 				if ((_mask & 0x10) == 0)
 				{
-					packet.writeC(_sender.getLevel());
+					writeByte(_sender.getLevel());
 				}
 			}
 		}
@@ -173,7 +180,7 @@ public class CreatureSay implements IClientOutgoingPacket
 		{
 			for (String s : _parameters)
 			{
-				packet.writeS(s);
+				writeString(s);
 			}
 		}
 		// Rank
@@ -182,50 +189,49 @@ public class CreatureSay implements IClientOutgoingPacket
 			final Clan clan = _sender.getClan();
 			if ((clan != null) && ((_chatType == ChatType.CLAN) || (_chatType == ChatType.ALLIANCE)))
 			{
-				packet.writeC(0); // unknown clan byte
+				writeByte(0); // unknown clan byte
 			}
 			
 			final int rank = RankManager.getInstance().getPlayerGlobalRank(_sender.getActingPlayer());
 			if ((rank == 0) || (rank > 100))
 			{
-				packet.writeC(0);
+				writeByte(0);
 			}
 			else if (rank <= 10)
 			{
-				packet.writeC(1);
+				writeByte(1);
 			}
 			else if (rank <= 50)
 			{
-				packet.writeC(2);
+				writeByte(2);
 			}
 			else if (rank <= 100)
 			{
-				packet.writeC(3);
+				writeByte(3);
 			}
 			if (clan != null)
 			{
-				packet.writeC(clan.getCastleId());
+				writeByte(clan.getCastleId());
 			}
 			else
 			{
-				packet.writeC(0);
+				writeByte(0);
 			}
 			
 			if (_shareLocation)
 			{
-				packet.writeC(1);
-				packet.writeH(SharedTeleportManager.getInstance().nextId(_sender));
+				writeByte(1);
+				writeShort(SharedTeleportManager.getInstance().nextId(_sender));
 			}
 		}
 		else
 		{
-			packet.writeC(0);
+			writeByte(0);
 		}
-		return true;
 	}
 	
 	@Override
-	public void runImpl(Player player)
+	public void run(Player player)
 	{
 		if (player != null)
 		{

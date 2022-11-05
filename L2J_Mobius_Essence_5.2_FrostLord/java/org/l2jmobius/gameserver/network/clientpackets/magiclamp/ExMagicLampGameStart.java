@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.MagicLampData;
 import org.l2jmobius.gameserver.enums.LampMode;
@@ -31,7 +31,7 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.MagicLampDataHolder;
 import org.l2jmobius.gameserver.model.holders.MagicLampHolder;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.magiclamp.ExMagicLampExpInfoUI;
 import org.l2jmobius.gameserver.network.serverpackets.magiclamp.ExMagicLampGameInfoUI;
 import org.l2jmobius.gameserver.network.serverpackets.magiclamp.ExMagicLampGameResult;
@@ -39,17 +39,16 @@ import org.l2jmobius.gameserver.network.serverpackets.magiclamp.ExMagicLampGameR
 /**
  * @author L2CCCP
  */
-public class ExMagicLampGameStart implements IClientIncomingPacket
+public class ExMagicLampGameStart implements ClientPacket
 {
 	private int _count;
 	private byte _mode;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_count = packet.readD(); // MagicLampGameCCount
-		_mode = (byte) packet.readC(); // GameMode
-		return true;
+		_count = packet.readInt(); // MagicLampGameCCount
+		_mode = (byte) packet.readByte(); // GameMode
 	}
 	
 	@Override

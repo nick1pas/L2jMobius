@@ -18,22 +18,20 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-
  */
-public class ExCursedWeaponList implements IClientOutgoingPacket
+public class ExCursedWeaponList extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CURSED_WEAPON_LIST.writeId(packet);
+		ServerPackets.EX_CURSED_WEAPON_LIST.writeId(this);
 		final Set<Integer> ids = CursedWeaponsManager.getInstance().getCursedWeaponsIds();
-		packet.writeD(ids.size());
-		ids.forEach(packet::writeD);
-		return true;
+		writeInt(ids.size());
+		ids.forEach(this::writeInt);
 	}
 }

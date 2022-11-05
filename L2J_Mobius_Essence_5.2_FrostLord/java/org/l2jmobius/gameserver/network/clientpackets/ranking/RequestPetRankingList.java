@@ -16,16 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.ranking;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExPetRankingList;
 
 /**
  * @author Mobius
  */
-public class RequestPetRankingList implements IClientIncomingPacket
+public class RequestPetRankingList implements ClientPacket
 {
 	private int _season;
 	private int _tabId;
@@ -33,13 +33,12 @@ public class RequestPetRankingList implements IClientIncomingPacket
 	private int _petItemObjectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_season = packet.readC();
-		_tabId = packet.readC();
-		_type = packet.readC();
-		_petItemObjectId = packet.readD();
-		return true;
+		_season = packet.readByte();
+		_tabId = packet.readByte();
+		_type = packet.readByte();
+		_petItemObjectId = packet.readInt();
 	}
 	
 	@Override

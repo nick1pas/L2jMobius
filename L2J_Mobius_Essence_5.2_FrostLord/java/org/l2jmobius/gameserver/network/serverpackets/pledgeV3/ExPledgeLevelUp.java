@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV3;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 08.05.2021
+ * @author Berezkin Nikolay
  */
-public class ExPledgeLevelUp implements IClientOutgoingPacket
+public class ExPledgeLevelUp extends ServerPacket
 {
 	private final int _level;
 	
@@ -33,10 +32,9 @@ public class ExPledgeLevelUp implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_LEVEL_UP.writeId(packet);
-		packet.writeD(_level);
-		return true;
+		ServerPackets.EX_PLEDGE_LEVEL_UP.writeId(this);
+		writeInt(_level);
 	}
 }

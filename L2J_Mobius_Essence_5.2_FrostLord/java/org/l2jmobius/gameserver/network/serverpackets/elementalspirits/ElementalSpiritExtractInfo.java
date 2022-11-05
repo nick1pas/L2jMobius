@@ -16,18 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ElementalSpiritData;
 import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.model.ElementalSpirit;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author JoeAlisson
  */
-public class ElementalSpiritExtractInfo implements IClientOutgoingPacket
+public class ElementalSpiritExtractInfo extends ServerPacket
 {
 	private final Player _player;
 	private final byte _type;
@@ -39,24 +38,23 @@ public class ElementalSpiritExtractInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ELEMENTAL_SPIRIT_EXTRACT_INFO.writeId(packet);
+		ServerPackets.EX_ELEMENTAL_SPIRIT_EXTRACT_INFO.writeId(this);
 		final ElementalSpirit spirit = _player.getElementalSpirit(ElementalType.of(_type));
 		if (spirit == null)
 		{
-			packet.writeC(0);
-			packet.writeC(0);
-			return true;
+			writeByte(0);
+			writeByte(0);
+			return;
 		}
-		packet.writeC(_type); // active elemental spirit
-		packet.writeC(1); // is extract ?
-		packet.writeC(1); // cost count
+		writeByte(_type); // active elemental spirit
+		writeByte(1); // is extract ?
+		writeByte(1); // cost count
 		// for each cost count
-		packet.writeD(57); // item id
-		packet.writeD(ElementalSpiritData.EXTRACT_FEES[spirit.getStage() - 1]); // item count
-		packet.writeD(spirit.getExtractItem());
-		packet.writeD(spirit.getExtractAmount());
-		return true;
+		writeInt(57); // item id
+		writeInt(ElementalSpiritData.EXTRACT_FEES[spirit.getStage() - 1]); // item count
+		writeInt(spirit.getExtractItem());
+		writeInt(spirit.getExtractAmount());
 	}
 }

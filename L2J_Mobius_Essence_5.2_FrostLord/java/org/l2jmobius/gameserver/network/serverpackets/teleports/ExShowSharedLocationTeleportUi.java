@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.SharedTeleportHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NasSeKa
  */
-public class ExShowSharedLocationTeleportUi implements IClientOutgoingPacket
+public class ExShowSharedLocationTeleportUi extends ServerPacket
 {
 	private final SharedTeleportHolder _teleport;
 	
@@ -34,16 +33,15 @@ public class ExShowSharedLocationTeleportUi implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHARED_POSITION_TELEPORT_UI.writeId(packet);
-		packet.writeString(_teleport.getName());
-		packet.writeD(_teleport.getId());
-		packet.writeD(_teleport.getCount());
-		packet.writeH(150);
-		packet.writeD(_teleport.getLocation().getX());
-		packet.writeD(_teleport.getLocation().getY());
-		packet.writeD(_teleport.getLocation().getZ());
-		return true;
+		ServerPackets.EX_SHARED_POSITION_TELEPORT_UI.writeId(this);
+		writeSizedString(_teleport.getName());
+		writeInt(_teleport.getId());
+		writeInt(_teleport.getCount());
+		writeShort(150);
+		writeInt(_teleport.getLocation().getX());
+		writeInt(_teleport.getLocation().getY());
+		writeInt(_teleport.getLocation().getZ());
 	}
 }

@@ -16,20 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 12.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExCollectionFavoriteList implements IClientOutgoingPacket
+public class ExCollectionFavoriteList extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_COLLECTION_FAVORITE_LIST.writeId(packet);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_COLLECTION_FAVORITE_LIST.writeId(this);
+		writeInt(0);
 	}
 }

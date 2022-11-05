@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgedonation;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 08.05.2021 00 01 00 00 00 00 00 03 00 00 00 0E 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00
+ * @author Berezkin Nikolay
  */
-public class ExPledgeDonationInfo implements IClientOutgoingPacket
+public class ExPledgeDonationInfo extends ServerPacket
 {
 	private final int _curPoints;
 	private final boolean _accepted;
@@ -35,11 +34,10 @@ public class ExPledgeDonationInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_DONATION_INFO.writeId(packet);
-		packet.writeD(_curPoints);
-		packet.writeC(_accepted ? 0 : 1);
-		return true;
+		ServerPackets.EX_PLEDGE_DONATION_INFO.writeId(this);
+		writeInt(_curPoints);
+		writeByte(!_accepted);
 	}
 }

@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.model.holders;
 
 /**
- * Written by Berezkin Nikolay, Serenitty
+ * @author Berezkin Nikolay, Serenitty
  */
 public class PurgePlayerHolder
 {

@@ -21,34 +21,33 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.RandomCraftData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.RandomCraftRequest;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.randomcraft.ExCraftExtract;
 import org.l2jmobius.gameserver.network.serverpackets.randomcraft.ExCraftInfo;
 
 /**
  * @author Mode
  */
-public class ExRequestRandomCraftExtract implements IClientIncomingPacket
+public class ExRequestRandomCraftExtract implements ClientPacket
 {
 	private final Map<Integer, Long> _items = new HashMap<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int size = packet.readD();
+		final int size = packet.readInt();
 		for (int i = 0; i < size; i++)
 		{
-			final int objId = packet.readD();
-			final long count = packet.readQ();
+			final int objId = packet.readInt();
+			final long count = packet.readLong();
 			_items.put(objId, count);
 		}
-		return true;
 	}
 	
 	@Override

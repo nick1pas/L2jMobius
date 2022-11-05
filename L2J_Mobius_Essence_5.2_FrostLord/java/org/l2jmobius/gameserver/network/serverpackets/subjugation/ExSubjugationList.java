@@ -21,15 +21,14 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.PurgePlayerHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, 40 keys max according to retail.
+ * @author Berezkin Nikolay
  */
-public class ExSubjugationList implements IClientOutgoingPacket
+public class ExSubjugationList extends ServerPacket
 {
 	private final List<Entry<Integer, PurgePlayerHolder>> _playerHolder;
 	
@@ -39,17 +38,16 @@ public class ExSubjugationList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUBJUGATION_LIST.writeId(packet);
-		packet.writeD(_playerHolder.size());
+		ServerPackets.EX_SUBJUGATION_LIST.writeId(this);
+		writeInt(_playerHolder.size());
 		for (Entry<Integer, PurgePlayerHolder> integerPurgePlayerHolderEntry : _playerHolder)
 		{
-			packet.writeD(integerPurgePlayerHolderEntry.getKey());
-			packet.writeD(integerPurgePlayerHolderEntry.getValue() != null ? integerPurgePlayerHolderEntry.getValue().getPoints() : 0);
-			packet.writeD(integerPurgePlayerHolderEntry.getValue() != null ? integerPurgePlayerHolderEntry.getValue().getKeys() : 0);
-			packet.writeD(integerPurgePlayerHolderEntry.getValue() != null ? integerPurgePlayerHolderEntry.getValue().getRemainingKeys() : 40);
+			writeInt(integerPurgePlayerHolderEntry.getKey());
+			writeInt(integerPurgePlayerHolderEntry.getValue() != null ? integerPurgePlayerHolderEntry.getValue().getPoints() : 0);
+			writeInt(integerPurgePlayerHolderEntry.getValue() != null ? integerPurgePlayerHolderEntry.getValue().getKeys() : 0);
+			writeInt(integerPurgePlayerHolderEntry.getValue() != null ? integerPurgePlayerHolderEntry.getValue().getRemainingKeys() : 40);
 		}
-		return true;
 	}
 }

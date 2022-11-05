@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class ExRaidTeleportInfo implements IClientOutgoingPacket
+public class ExRaidTeleportInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -34,10 +33,9 @@ public class ExRaidTeleportInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RAID_TELEPORT_INFO.writeId(packet);
-		packet.writeD((System.currentTimeMillis() - _player.getVariables().getLong("LastFreeRaidTeleportTime", 0)) < 86400000 ? 1 : 0);
-		return true;
+		ServerPackets.EX_RAID_TELEPORT_INFO.writeId(this);
+		writeInt((System.currentTimeMillis() - _player.getVariables().getLong("LastFreeRaidTeleportTime", 0)) < 86400000);
 	}
 }

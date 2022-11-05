@@ -19,20 +19,19 @@ package org.l2jmobius.gameserver.network.serverpackets.limitshop;
 import java.util.Collection;
 import java.util.Collections;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.LimitShopClanData;
 import org.l2jmobius.gameserver.data.xml.LimitShopCraftData;
 import org.l2jmobius.gameserver.data.xml.LimitShopData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.LimitShopProductHolder;
 import org.l2jmobius.gameserver.model.variables.AccountVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
+public class ExPurchaseLimitShopItemListNew extends ServerPacket
 {
 	private final int _shopType; // 3 Lcoin Store, 4 Special Craft, 100 Clan Shop
 	private final Player _player;
@@ -67,63 +66,62 @@ public class ExPurchaseLimitShopItemListNew implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PURCHASE_LIMIT_SHOP_ITEM_LIST_NEW.writeId(packet);
-		packet.writeC(_shopType);
-		packet.writeC(1); // Page. (311)
-		packet.writeC(1); // MaxPage. (311)
-		packet.writeD(_products.size());
+		ServerPackets.EX_PURCHASE_LIMIT_SHOP_ITEM_LIST_NEW.writeId(this);
+		writeByte(_shopType);
+		writeByte(1); // Page. (311)
+		writeByte(1); // MaxPage. (311)
+		writeInt(_products.size());
 		for (LimitShopProductHolder product : _products)
 		{
-			packet.writeD(product.getId());
-			packet.writeD(product.getProductionId());
-			packet.writeD(product.getIngredientIds()[0]);
-			packet.writeD(product.getIngredientIds()[1]);
-			packet.writeD(product.getIngredientIds()[2]);
-			packet.writeD(product.getIngredientIds()[3]); // 306
-			packet.writeD(product.getIngredientIds()[4]); // 306
-			packet.writeQ(product.getIngredientQuantities()[0]);
-			packet.writeQ(product.getIngredientQuantities()[1]);
-			packet.writeQ(product.getIngredientQuantities()[2]);
-			packet.writeQ(product.getIngredientQuantities()[3]); // 306
-			packet.writeQ(product.getIngredientQuantities()[4]); // 306
-			packet.writeH(product.getIngredientEnchants()[0]);
-			packet.writeH(product.getIngredientEnchants()[1]);
-			packet.writeH(product.getIngredientEnchants()[2]);
-			packet.writeH(product.getIngredientEnchants()[3]); // 306
-			packet.writeH(product.getIngredientEnchants()[4]); // 306
+			writeInt(product.getId());
+			writeInt(product.getProductionId());
+			writeInt(product.getIngredientIds()[0]);
+			writeInt(product.getIngredientIds()[1]);
+			writeInt(product.getIngredientIds()[2]);
+			writeInt(product.getIngredientIds()[3]); // 306
+			writeInt(product.getIngredientIds()[4]); // 306
+			writeLong(product.getIngredientQuantities()[0]);
+			writeLong(product.getIngredientQuantities()[1]);
+			writeLong(product.getIngredientQuantities()[2]);
+			writeLong(product.getIngredientQuantities()[3]); // 306
+			writeLong(product.getIngredientQuantities()[4]); // 306
+			writeShort(product.getIngredientEnchants()[0]);
+			writeShort(product.getIngredientEnchants()[1]);
+			writeShort(product.getIngredientEnchants()[2]);
+			writeShort(product.getIngredientEnchants()[3]); // 306
+			writeShort(product.getIngredientEnchants()[4]); // 306
 			// Check limits.
 			if (product.getAccountDailyLimit() > 0) // Sale period.
 			{
 				if (_player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_DAILY_COUNT + product.getProductionId(), 0) >= product.getAccountDailyLimit())
 				{
-					packet.writeD(0);
+					writeInt(0);
 				}
 				else
 				{
-					packet.writeD(product.getAccountDailyLimit() - _player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_DAILY_COUNT + product.getProductionId(), 0));
+					writeInt(product.getAccountDailyLimit() - _player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_DAILY_COUNT + product.getProductionId(), 0));
 				}
 			}
 			else if (product.getAccountBuyLimit() > 0) // Count limit.
 			{
 				if (_player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_COUNT + product.getProductionId(), 0) >= product.getAccountBuyLimit())
 				{
-					packet.writeD(0);
+					writeInt(0);
 				}
 				else
 				{
-					packet.writeD(product.getAccountBuyLimit() - _player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_COUNT + product.getProductionId(), 0));
+					writeInt(product.getAccountBuyLimit() - _player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_COUNT + product.getProductionId(), 0));
 				}
 			}
 			else // No account limits.
 			{
-				packet.writeD(1);
+				writeInt(1);
 			}
-			packet.writeD(0); // nRemainSec
-			packet.writeD(0); // nRemainServerItemAmount
-			packet.writeH(0); // sCircleNum (311)
+			writeInt(0); // nRemainSec
+			writeInt(0); // nRemainServerItemAmount
+			writeShort(0); // sCircleNum (311)
 		}
-		return true;
 	}
 }

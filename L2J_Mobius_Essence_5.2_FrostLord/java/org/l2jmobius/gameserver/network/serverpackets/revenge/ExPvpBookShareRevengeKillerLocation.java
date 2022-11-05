@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.revenge;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPvpBookShareRevengeKillerLocation implements IClientOutgoingPacket
+public class ExPvpBookShareRevengeKillerLocation extends ServerPacket
 {
 	private final Player _player;
 	
@@ -34,13 +33,12 @@ public class ExPvpBookShareRevengeKillerLocation implements IClientOutgoingPacke
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION.writeId(packet);
-		packet.writeString(_player.getName());
-		packet.writeD(_player.getX());
-		packet.writeD(_player.getY());
-		packet.writeD(_player.getZ());
-		return true;
+		ServerPackets.EX_PVPBOOK_SHARE_REVENGE_KILLER_LOCATION.writeId(this);
+		writeSizedString(_player.getName());
+		writeInt(_player.getX());
+		writeInt(_player.getY());
+		writeInt(_player.getZ());
 	}
 }

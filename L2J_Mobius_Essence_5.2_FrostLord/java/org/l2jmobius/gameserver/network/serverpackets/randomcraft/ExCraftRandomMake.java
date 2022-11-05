@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.randomcraft;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mode
  */
-public class ExCraftRandomMake implements IClientOutgoingPacket
+public class ExCraftRandomMake extends ServerPacket
 {
 	private final int _itemId;
 	private final long _itemCount;
@@ -35,14 +34,13 @@ public class ExCraftRandomMake implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CRAFT_RANDOM_MAKE.writeId(packet);
-		packet.writeC(0); // Close window
-		packet.writeH(0x0F); // Unknown
-		packet.writeD(_itemId);
-		packet.writeQ(_itemCount);
-		packet.writeC(0); // Enchantment level
-		return true;
+		ServerPackets.EX_CRAFT_RANDOM_MAKE.writeId(this);
+		writeByte(0); // Close window
+		writeShort(0x0F); // Unknown
+		writeInt(_itemId);
+		writeLong(_itemCount);
+		writeByte(0); // Enchantment level
 	}
 }

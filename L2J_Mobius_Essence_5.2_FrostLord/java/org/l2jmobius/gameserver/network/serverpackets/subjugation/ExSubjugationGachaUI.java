@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.subjugation;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 15.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExSubjugationGachaUI implements IClientOutgoingPacket
+public class ExSubjugationGachaUI extends ServerPacket
 {
 	private final int _keys;
 	
@@ -33,10 +32,9 @@ public class ExSubjugationGachaUI implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUBJUGATION_GACHA_UI.writeId(packet);
-		packet.writeD(_keys);
-		return true;
+		ServerPackets.EX_SUBJUGATION_GACHA_UI.writeId(this);
+		writeInt(_keys);
 	}
 }

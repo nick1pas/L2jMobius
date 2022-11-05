@@ -16,21 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.PvpBookList;
 
 /**
  * @author JoeAlisson
  */
-public class ExPvpBookList implements IClientIncomingPacket
+public class ExPvpBookList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

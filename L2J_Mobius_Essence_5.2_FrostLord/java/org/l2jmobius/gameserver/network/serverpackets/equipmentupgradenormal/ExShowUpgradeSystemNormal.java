@@ -19,10 +19,9 @@ package org.l2jmobius.gameserver.network.serverpackets.equipmentupgradenormal;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.EquipmentUpgradeNormalData;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -49,22 +48,21 @@ public class ExShowUpgradeSystemNormal extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_UPGRADE_SYSTEM_NORMAL.writeId(packet);
-		packet.writeH(_mode);
-		packet.writeH(_type);
-		packet.writeH(_commission); // default - 100
-		packet.writeD(_materials.size()); // array of materials with discount
+		ServerPackets.EX_SHOW_UPGRADE_SYSTEM_NORMAL.writeId(this);
+		writeShort(_mode);
+		writeShort(_type);
+		writeShort(_commission); // default - 100
+		writeInt(_materials.size()); // array of materials with discount
 		for (int id : _materials)
 		{
-			packet.writeD(id);
+			writeInt(id);
 		}
-		packet.writeD(_discountRatio.size()); // array of discount count
+		writeInt(_discountRatio.size()); // array of discount count
 		for (int discount : _discountRatio)
 		{
-			packet.writeD(discount);
+			writeInt(discount);
 		}
-		return true;
 	}
 }

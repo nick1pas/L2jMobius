@@ -18,18 +18,17 @@ package org.l2jmobius.gameserver.network.serverpackets.revenge;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.RevengeHistoryManager;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.RevengeHistoryHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
+public class ExPvpBookShareRevengeList extends ServerPacket
 {
 	private final Collection<RevengeHistoryHolder> _history;
 	
@@ -39,45 +38,44 @@ public class ExPvpBookShareRevengeList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PVPBOOK_SHARE_REVENGE_LIST.writeId(packet);
+		ServerPackets.EX_PVPBOOK_SHARE_REVENGE_LIST.writeId(this);
 		if (_history == null)
 		{
-			packet.writeC(1); // CurrentPage
-			packet.writeC(1); // MaxPage
-			packet.writeD(0);
+			writeByte(1); // CurrentPage
+			writeByte(1); // MaxPage
+			writeInt(0);
 		}
 		else
 		{
-			packet.writeC(1); // CurrentPage
-			packet.writeC(1); // MaxPage
-			packet.writeD(_history.size());
+			writeByte(1); // CurrentPage
+			writeByte(1); // MaxPage
+			writeInt(_history.size());
 			for (RevengeHistoryHolder holder : _history)
 			{
-				packet.writeD(holder.getType().ordinal()); // ShareType (2 - help request, 1 - revenge, 0 - both)
-				packet.writeD((int) (holder.getKillTime() / 1000)); // KilledTime
-				packet.writeD(holder.getShowLocationRemaining()); // ShowKillerCount
-				packet.writeD(holder.getTeleportRemaining()); // TeleportKillerCount
-				packet.writeD(holder.getSharedTeleportRemaining()); // SharedTeleportKillerCount
-				packet.writeD(0); // KilledUserDBID
-				packet.writeString(holder.getVictimName()); // KilledUserName
-				packet.writeString(holder.getVictimClanName()); // KilledUserPledgeName
-				packet.writeD(holder.getVictimLevel()); // KilledUserLevel
-				packet.writeD(holder.getVictimRaceId()); // KilledUserRace
-				packet.writeD(holder.getVictimClassId()); // KilledUserClass
-				packet.writeD(0); // KillUserDBID
-				packet.writeString(holder.getKillerName()); // KillUserName
-				packet.writeString(holder.getKillerClanName()); // KillUserPledgeName
-				packet.writeD(holder.getKillerLevel()); // KillUserLevel
-				packet.writeD(holder.getKillerRaceId()); // KillUserRace
-				packet.writeD(holder.getKillerClassId()); // KillUserClass
+				writeInt(holder.getType().ordinal()); // ShareType (2 - help request, 1 - revenge, 0 - both)
+				writeInt((int) (holder.getKillTime() / 1000)); // KilledTime
+				writeInt(holder.getShowLocationRemaining()); // ShowKillerCount
+				writeInt(holder.getTeleportRemaining()); // TeleportKillerCount
+				writeInt(holder.getSharedTeleportRemaining()); // SharedTeleportKillerCount
+				writeInt(0); // KilledUserDBID
+				writeSizedString(holder.getVictimName()); // KilledUserName
+				writeSizedString(holder.getVictimClanName()); // KilledUserPledgeName
+				writeInt(holder.getVictimLevel()); // KilledUserLevel
+				writeInt(holder.getVictimRaceId()); // KilledUserRace
+				writeInt(holder.getVictimClassId()); // KilledUserClass
+				writeInt(0); // KillUserDBID
+				writeSizedString(holder.getKillerName()); // KillUserName
+				writeSizedString(holder.getKillerClanName()); // KillUserPledgeName
+				writeInt(holder.getKillerLevel()); // KillUserLevel
+				writeInt(holder.getKillerRaceId()); // KillUserRace
+				writeInt(holder.getKillerClassId()); // KillUserClass
 				Player killer = World.getInstance().getPlayer(holder.getKillerName());
-				packet.writeD((killer != null) && killer.isOnline() ? 2 : 0); // KillUserOnline (2 - online, 0 - offline)
-				packet.writeD(0); // KillUserKarma
-				packet.writeD((int) (holder.getShareTime() / 1000)); // nSharedTime
+				writeInt((killer != null) && killer.isOnline() ? 2 : 0); // KillUserOnline (2 - online, 0 - offline)
+				writeInt(0); // KillUserKarma
+				writeInt((int) (holder.getShareTime() / 1000)); // nSharedTime
 			}
 		}
-		return true;
 	}
 }
