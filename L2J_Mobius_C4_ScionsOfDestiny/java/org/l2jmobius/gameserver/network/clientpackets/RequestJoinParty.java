@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.BlockList;
 import org.l2jmobius.gameserver.model.Party;
 import org.l2jmobius.gameserver.model.World;
@@ -26,17 +26,16 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.AskJoinParty;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-public class RequestJoinParty implements IClientIncomingPacket
+public class RequestJoinParty implements ClientPacket
 {
 	private String _name;
 	private int _itemDistribution;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_name = packet.readS();
-		_itemDistribution = packet.readD();
-		return true;
+		_name = packet.readString();
+		_itemDistribution = packet.readInt();
 	}
 	
 	@Override

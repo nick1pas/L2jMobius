@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class PartySmallWindowDelete implements IClientOutgoingPacket
+public class PartySmallWindowDelete extends ServerPacket
 {
 	private final Player _member;
 	
@@ -33,11 +32,10 @@ public class PartySmallWindowDelete implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PARTY_SMALL_WINDOW_DELETE.writeId(packet);
-		packet.writeD(_member.getObjectId());
-		packet.writeS(_member.getName());
-		return true;
+		ServerPackets.PARTY_SMALL_WINDOW_DELETE.writeId(this);
+		writeInt(_member.getObjectId());
+		writeString(_member.getName());
 	}
 }

@@ -16,24 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.network.GameClient;
 
 /**
  * @author zabbix Lets drink to code! Unknown Packet: ca 0000: 45 00 01 00 1e 37 a2 f5 00 00 00 00 00 00 00 00 E....7..........
  */
-public class GameGuardReply implements IClientIncomingPacket
+public class GameGuardReply implements ClientPacket
 {
 	private final int[] _reply = new int[4];
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_reply[0] = packet.readD();
-		_reply[1] = packet.readD();
-		_reply[2] = packet.readD();
-		_reply[3] = packet.readD();
-		return true;
+		_reply[0] = packet.readInt();
+		_reply[1] = packet.readInt();
+		_reply[2] = packet.readInt();
+		_reply[3] = packet.readInt();
 	}
 	
 	@Override

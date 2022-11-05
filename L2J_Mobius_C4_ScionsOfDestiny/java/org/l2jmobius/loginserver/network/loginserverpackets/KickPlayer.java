@@ -25,8 +25,8 @@ public class KickPlayer extends AbstractServerPacket
 {
 	public KickPlayer(String account)
 	{
-		writeC(0x04);
-		writeS(account);
+		writeByte(0x04);
+		writeString(account);
 	}
 	
 	@Override

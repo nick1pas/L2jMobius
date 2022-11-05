@@ -26,15 +26,15 @@ public class LoginOk extends AbstractServerPacket
 {
 	public LoginOk(SessionKey sessionKey)
 	{
-		writeC(0x03);
-		writeD(sessionKey.loginOkID1);
-		writeD(sessionKey.loginOkID2);
-		writeD(0x00);
-		writeD(0x00);
-		writeD(0x000003ea);
-		writeD(0x00);
-		writeD(0x00);
-		writeD(0x02);
+		writeByte(0x03);
+		writeInt(sessionKey.loginOkID1);
+		writeInt(sessionKey.loginOkID2);
+		writeInt(0x00);
+		writeInt(0x00);
+		writeInt(0x000003ea);
+		writeInt(0x00);
+		writeInt(0x00);
+		writeInt(0x02);
 	}
 	
 	@Override

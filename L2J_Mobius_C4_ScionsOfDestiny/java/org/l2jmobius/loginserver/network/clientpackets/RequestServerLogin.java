@@ -66,10 +66,10 @@ public class RequestServerLogin extends AbstractClientPacket
 	public RequestServerLogin(byte[] rawPacket, LoginClient client)
 	{
 		super(rawPacket, client);
-		_key1 = readD();
-		_key2 = readD();
+		_key1 = readInt();
+		_key2 = readInt();
 		
-		_server_id = readC(); // = rawPacket[9] &0xff;
+		_server_id = readByte(); // = rawPacket[9] &0xff;
 	}
 	
 	@Override

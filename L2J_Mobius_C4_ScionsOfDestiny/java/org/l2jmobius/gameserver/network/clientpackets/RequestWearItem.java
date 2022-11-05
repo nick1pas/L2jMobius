@@ -17,10 +17,9 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import java.util.List;
-import java.util.concurrent.Future;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.instancemanager.TradeManager;
@@ -40,10 +39,8 @@ import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 import org.l2jmobius.gameserver.util.Util;
 
-public class RequestWearItem implements IClientIncomingPacket
+public class RequestWearItem implements ClientPacket
 {
-	protected Future<?> _removeWearItemsTask;
-	
 	@SuppressWarnings("unused")
 	private int _unknow;
 	
@@ -56,36 +53,16 @@ public class RequestWearItem implements IClientIncomingPacket
 	/** Table of ItemId containing all Item to Wear */
 	private int[] _items;
 	
-	/** Player that request a Try on */
-	protected Player _player;
-	
-	class RemoveWearItemsTask implements Runnable
-	{
-		@Override
-		public void run()
-		{
-			try
-			{
-				_player.destroyWearedItems("Wear", null, true);
-			}
-			catch (Throwable e)
-			{
-				PacketLogger.warning(getClass().getSimpleName() + ": " + e.getMessage());
-			}
-		}
-	}
-	
 	/**
 	 * Decrypt the RequestWearItem Client->Server Packet and Create _items table containing all ItemID to Wear.
 	 */
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
 		// Read and Decrypt the RequestWearItem Client->Server Packet
-		_player = client.getPlayer();
-		_unknow = packet.readD();
-		_listId = packet.readD(); // List of ItemID to Wear
-		_count = packet.readD(); // Number of Item to Wear
+		_unknow = packet.readInt();
+		_listId = packet.readInt(); // List of ItemID to Wear
+		_count = packet.readInt(); // Number of Item to Wear
 		if (_count < 0)
 		{
 			_count = 0;
@@ -102,11 +79,9 @@ public class RequestWearItem implements IClientIncomingPacket
 		// Fill _items table with all ItemID to Wear
 		for (int i = 0; i < _count; i++)
 		{
-			final int itemId = packet.readD();
+			final int itemId = packet.readInt();
 			_items[i] = itemId;
 		}
-		
-		return true;
 	}
 	
 	/**
@@ -266,9 +241,6 @@ public class RequestWearItem implements IClientIncomingPacket
 		player.broadcastUserInfo();
 		
 		// All weared items should be removed in ALLOW_WEAR_DELAY sec.
-		if (_removeWearItemsTask == null)
-		{
-			_removeWearItemsTask = ThreadPool.schedule(new RemoveWearItemsTask(), Config.WEAR_DELAY * 1000);
-		}
+		ThreadPool.schedule(() -> player.destroyWearedItems("Wear", null, true), Config.WEAR_DELAY * 1000);
 	}
 }

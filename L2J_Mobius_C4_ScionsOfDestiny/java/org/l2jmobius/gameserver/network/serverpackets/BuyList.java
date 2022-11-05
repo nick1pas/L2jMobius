@@ -19,18 +19,17 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.StoreTradeList;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample 1d 1e 00 00 00 // ?? 5c 4a a0 7c // buy list id 02 00 // item count 04 00 // itemType1 0-weapon/ring/earring/necklace 1-armor/shield 4-item/questitem/adena 00 00 00 00 // objectid 32 04 00 00 // itemid 00 00 00 00 // count 05 00 // itemType2 0-weapon 1-shield/armor 2-ring/earring/necklace
  * 3-questitem 4-adena 5-item 00 00 60 09 00 00 // price 00 00 00 00 00 00 b6 00 00 00 00 00 00 00 00 00 00 00 80 00 // body slot these 4 values are only used if itemtype1 = 0 or 1 00 00 // 00 00 // 00 00 // 50 c6 0c 00 format dd h (h dddhh hhhh d) revision 377 format dd h (h dddhh dhhh d)
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class BuyList implements IClientOutgoingPacket
+public class BuyList extends ServerPacket
 {
 	private final int _listId;
 	private final List<Item> _list;
@@ -60,53 +59,52 @@ public class BuyList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.BUY_LIST.writeId(packet);
-		packet.writeD(_money); // current money
-		packet.writeD(_listId);
-		packet.writeH(_list.size());
+		ServerPackets.BUY_LIST.writeId(this);
+		writeInt(_money); // current money
+		writeInt(_listId);
+		writeShort(_list.size());
 		for (Item item : _list)
 		{
 			if ((item.getCount() > 0) || (item.getCount() == -1))
 			{
-				packet.writeH(item.getTemplate().getType1()); // item type1
-				packet.writeD(item.getObjectId());
-				packet.writeD(item.getItemId());
+				writeShort(item.getTemplate().getType1()); // item type1
+				writeInt(item.getObjectId());
+				writeInt(item.getItemId());
 				if (item.getCount() < 0)
 				{
-					packet.writeD(0); // max amount of items that a player can buy at a time (with this itemid)
+					writeInt(0); // max amount of items that a player can buy at a time (with this itemid)
 				}
 				else
 				{
-					packet.writeD(item.getCount());
+					writeInt(item.getCount());
 				}
-				packet.writeH(item.getTemplate().getType2()); // item type2
-				packet.writeH(0); // ?
+				writeShort(item.getTemplate().getType2()); // item type2
+				writeShort(0); // ?
 				if (item.getTemplate().getType1() != ItemTemplate.TYPE1_ITEM_QUESTITEM_ADENA)
 				{
-					packet.writeD(item.getTemplate().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
-					packet.writeH(item.getEnchantLevel()); // enchant level
-					packet.writeH(0); // ?
-					packet.writeH(0);
+					writeInt(item.getTemplate().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
+					writeShort(item.getEnchantLevel()); // enchant level
+					writeShort(0); // ?
+					writeShort(0);
 				}
 				else
 				{
-					packet.writeD(0); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
-					packet.writeH(0); // enchant level
-					packet.writeH(0); // ?
-					packet.writeH(0);
+					writeInt(0); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
+					writeShort(0); // enchant level
+					writeShort(0); // ?
+					writeShort(0);
 				}
 				if ((item.getItemId() >= 3960) && (item.getItemId() <= 4026))
 				{
-					packet.writeD((int) (item.getPriceToSell() * Config.RATE_SIEGE_GUARDS_PRICE * (1 + _taxRate)));
+					writeInt((int) (item.getPriceToSell() * Config.RATE_SIEGE_GUARDS_PRICE * (1 + _taxRate)));
 				}
 				else
 				{
-					packet.writeD((int) (item.getPriceToSell() * (1 + _taxRate)));
+					writeInt((int) (item.getPriceToSell() * (1 + _taxRate)));
 				}
 			}
 		}
-		return true;
 	}
 }

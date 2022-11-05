@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.data.sql.SkillTreeTable;
 import org.l2jmobius.gameserver.model.EnchantSkillLearn;
@@ -32,17 +32,16 @@ import org.l2jmobius.gameserver.network.serverpackets.ExEnchantSkillInfo;
  * Format chdd c: (id) 0xD0 h: (subid) 0x06 d: skill id d: skill level
  * @author -Wooden-
  */
-public class RequestExEnchantSkillInfo implements IClientIncomingPacket
+public class RequestExEnchantSkillInfo implements ClientPacket
 {
 	private int _skillId;
 	private int _skillLevel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_skillId = packet.readD();
-		_skillLevel = packet.readD();
-		return true;
+		_skillId = packet.readInt();
+		_skillLevel = packet.readInt();
 	}
 	
 	@Override

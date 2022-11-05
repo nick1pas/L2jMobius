@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Door;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * 61 d6 6d c0 4b door id 8f 14 00 00 x b7 f1 00 00 y 60 f2 ff ff z 00 00 00 00 ?? format dddd rev 377 ID:%d X:%d Y:%d Z:%d ddddd rev 419
  * @version $Revision: 1.3.2.2.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class DoorStatusUpdate implements IClientOutgoingPacket
+public class DoorStatusUpdate extends ServerPacket
 {
 	private final Door _door;
 	private final Player _player;
@@ -37,16 +36,15 @@ public class DoorStatusUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.DOOR_STATUS_UPDATE.writeId(packet);
-		packet.writeD(_door.getObjectId());
-		packet.writeD(_door.isOpen() ? 0 : 1);
-		packet.writeD(_door.getDamage());
-		packet.writeD(_door.isEnemyOf(_player) ? 1 : 0);
-		packet.writeD(_door.getDoorId());
-		packet.writeD(_door.getMaxHp());
-		packet.writeD((int) _door.getCurrentHp());
-		return true;
+		ServerPackets.DOOR_STATUS_UPDATE.writeId(this);
+		writeInt(_door.getObjectId());
+		writeInt(!_door.isOpen());
+		writeInt(_door.getDamage());
+		writeInt(_door.isEnemyOf(_player));
+		writeInt(_door.getDoorId());
+		writeInt(_door.getMaxHp());
+		writeInt((int) _door.getCurrentHp());
 	}
 }

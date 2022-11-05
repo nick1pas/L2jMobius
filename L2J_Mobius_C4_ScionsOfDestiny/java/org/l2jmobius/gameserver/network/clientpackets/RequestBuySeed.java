@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.CastleManorManager;
@@ -40,39 +40,37 @@ import org.l2jmobius.gameserver.util.Util;
  * Format: cdd[dd] c // id (0xC4) d // manor id d // seeds to buy [ d // seed id d // count ]
  * @author l3x
  */
-public class RequestBuySeed implements IClientIncomingPacket
+public class RequestBuySeed implements ClientPacket
 {
 	private int _count;
 	private int _manorId;
 	private int[] _items; // size _count * 2
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_manorId = packet.readD();
-		_count = packet.readD();
-		if ((_count > 500) || ((_count * 8) < packet.getReadableBytes()) || (_count < 1)) // check values
+		_manorId = packet.readInt();
+		_count = packet.readInt();
+		if ((_count > 500) || ((_count * 8) < packet.getRemainingLength()) || (_count < 1)) // check values
 		{
-			_count = 0;
-			return false;
+			_count = -1;
+			return;
 		}
 		
 		_items = new int[_count * 2];
 		for (int i = 0; i < _count; i++)
 		{
-			final int itemId = packet.readD();
+			final int itemId = packet.readInt();
 			_items[(i * 2) + 0] = itemId;
-			final long cnt = packet.readD();
+			final long cnt = packet.readInt();
 			if ((cnt > Integer.MAX_VALUE) || (cnt < 1))
 			{
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			
 			_items[(i * 2) + 1] = (int) cnt;
 		}
-		
-		return true;
 	}
 	
 	@Override

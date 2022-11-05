@@ -42,7 +42,6 @@ import org.l2jmobius.commons.util.PropertiesParser;
 import org.l2jmobius.loginserver.network.AbstractClientPacket;
 import org.l2jmobius.loginserver.network.LoginClient;
 import org.l2jmobius.loginserver.ui.Gui;
-import org.l2jmobius.telnet.TelnetStatusThread;
 
 /**
  * This class ...
@@ -57,7 +56,6 @@ public class LoginServer extends FloodProtectedListener
 	private Thread _restartLoginServer;
 	private static GameServerListener _gameServerListener;
 	private final ThreadPoolExecutor _generalPacketsExecutor;
-	private TelnetStatusThread _statusServer;
 	private ServerSocket _serverSocket;
 	
 	public static void main(String[] args)
@@ -142,23 +140,6 @@ public class LoginServer extends FloodProtectedListener
 		{
 			LOGGER.log(Level.SEVERE, "FATAL: Failed to start the Game Server Listener. Reason: " + e.getMessage(), e);
 			System.exit(1);
-		}
-		
-		if (Config.IS_TELNET_ENABLED)
-		{
-			try
-			{
-				_statusServer = new TelnetStatusThread();
-				_statusServer.start();
-			}
-			catch (IOException e)
-			{
-				LOGGER.severe("Failed to start the Telnet Server. Reason: " + e.getMessage());
-			}
-		}
-		else
-		{
-			// System.out.println("Telnet server is currently disabled.");
 		}
 	}
 	
@@ -249,11 +230,6 @@ public class LoginServer extends FloodProtectedListener
 			_restartLoginServer.setDaemon(true);
 			_restartLoginServer.start();
 		}
-	}
-	
-	public TelnetStatusThread getStatusServer()
-	{
-		return _statusServer;
 	}
 	
 	public static GameServerListener getGameServerListener()

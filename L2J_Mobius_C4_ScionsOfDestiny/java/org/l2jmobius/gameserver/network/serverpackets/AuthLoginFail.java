@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * format d
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class AuthLoginFail implements IClientOutgoingPacket
+public class AuthLoginFail extends ServerPacket
 {
 	public static final int NO_TEXT = 0;
 	public static final int SYSTEM_ERROR_LOGIN_LATER = 1;
@@ -48,10 +47,9 @@ public class AuthLoginFail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.AUTH_LOGIN_FAIL.writeId(packet);
-		packet.writeD(_reason);
-		return true;
+		ServerPackets.AUTH_LOGIN_FAIL.writeId(this);
+		writeInt(_reason);
 	}
 }

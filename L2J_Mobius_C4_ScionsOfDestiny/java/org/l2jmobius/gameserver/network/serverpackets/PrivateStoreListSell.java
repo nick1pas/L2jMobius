@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.TradeList;
 import org.l2jmobius.gameserver.model.TradeList.TradeItem;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.2.2.3.2.6 $ $Date: 2005/03/27 15:29:57 $
  */
-public class PrivateStoreListSell implements IClientOutgoingPacket
+public class PrivateStoreListSell extends ServerPacket
 {
 	private final Player _storePlayer;
 	private final Player _player;
@@ -57,26 +56,25 @@ public class PrivateStoreListSell implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PRIVATE_STORE_LIST_SELL.writeId(packet);
-		packet.writeD(_storePlayer.getObjectId());
-		packet.writeD(_packageSale ? 1 : 0);
-		packet.writeD(_playerAdena);
-		packet.writeD(_items.size());
+		ServerPackets.PRIVATE_STORE_LIST_SELL.writeId(this);
+		writeInt(_storePlayer.getObjectId());
+		writeInt(_packageSale);
+		writeInt(_playerAdena);
+		writeInt(_items.size());
 		for (TradeList.TradeItem item : _items)
 		{
-			packet.writeD(item.getItem().getType2());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItem().getItemId());
-			packet.writeD(item.getCount());
-			packet.writeH(0);
-			packet.writeH(item.getEnchant());
-			packet.writeH(0);
-			packet.writeD(item.getItem().getBodyPart());
-			packet.writeD(item.getPrice()); // your price
-			packet.writeD(item.getItem().getReferencePrice()); // store price
+			writeInt(item.getItem().getType2());
+			writeInt(item.getObjectId());
+			writeInt(item.getItem().getItemId());
+			writeInt(item.getCount());
+			writeShort(0);
+			writeShort(item.getEnchant());
+			writeShort(0);
+			writeInt(item.getItem().getBodyPart());
+			writeInt(item.getPrice()); // your price
+			writeInt(item.getItem().getReferencePrice()); // store price
 		}
-		return true;
 	}
 }

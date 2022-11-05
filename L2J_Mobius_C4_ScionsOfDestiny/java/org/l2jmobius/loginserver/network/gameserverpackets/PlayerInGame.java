@@ -37,10 +37,10 @@ public class PlayerInGame extends AbstractGameServerPacket
 		
 		_accounts = new ArrayList<>();
 		
-		final int size = readH();
+		final int size = readShort();
 		for (int i = 0; i < size; i++)
 		{
-			_accounts.add(readS());
+			_accounts.add(readString());
 		}
 	}
 	

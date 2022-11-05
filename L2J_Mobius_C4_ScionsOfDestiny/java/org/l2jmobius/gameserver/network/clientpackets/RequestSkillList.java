@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 
-public class RequestSkillList implements IClientIncomingPacket
+public class RequestSkillList implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _unk1;
@@ -30,12 +29,6 @@ public class RequestSkillList implements IClientIncomingPacket
 	
 	@SuppressWarnings("unused")
 	private int _unk3;
-	
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
 	
 	@Override
 	public void run(GameClient client)

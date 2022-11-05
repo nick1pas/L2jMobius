@@ -18,19 +18,18 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.Weapon;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Sdh(h dddhh [dhhh] d) Sdh ddddd ddddd ddddd ddddd
  * @version $Revision: 1.1.2.1.2.5 $ $Date: 2007/11/26 16:10:05 $
  */
-public class GMViewWarehouseWithdrawList implements IClientOutgoingPacket
+public class GMViewWarehouseWithdrawList extends ServerPacket
 {
 	private final Collection<Item> _items;
 	private final String _playerName;
@@ -51,28 +50,28 @@ public class GMViewWarehouseWithdrawList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GM_VIEW_WAREHOUSE_WITHDRAW_LIST.writeId(packet);
-		packet.writeS(_playerName);
-		packet.writeD(_money);
-		packet.writeH(_items.size());
+		ServerPackets.GM_VIEW_WAREHOUSE_WITHDRAW_LIST.writeId(this);
+		writeString(_playerName);
+		writeInt(_money);
+		writeShort(_items.size());
 		for (Item item : _items)
 		{
-			packet.writeH(item.getTemplate().getType1());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItemId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getTemplate().getType2());
-			packet.writeH(item.getCustomType1());
+			writeShort(item.getTemplate().getType1());
+			writeInt(item.getObjectId());
+			writeInt(item.getItemId());
+			writeInt(item.getCount());
+			writeShort(item.getTemplate().getType2());
+			writeShort(item.getCustomType1());
 			switch (item.getTemplate().getType2())
 			{
 				case ItemTemplate.TYPE2_WEAPON:
 				{
-					packet.writeD(item.getTemplate().getBodyPart());
-					packet.writeH(item.getEnchantLevel());
-					packet.writeH(((Weapon) item.getTemplate()).getSoulShotCount());
-					packet.writeH(((Weapon) item.getTemplate()).getSpiritShotCount());
+					writeInt(item.getTemplate().getBodyPart());
+					writeShort(item.getEnchantLevel());
+					writeShort(((Weapon) item.getTemplate()).getSoulShotCount());
+					writeShort(((Weapon) item.getTemplate()).getSpiritShotCount());
 					break;
 				}
 				case ItemTemplate.TYPE2_SHIELD_ARMOR:
@@ -82,15 +81,14 @@ public class GMViewWarehouseWithdrawList implements IClientOutgoingPacket
 				case ItemTemplate.TYPE2_PET_STRIDER:
 				case ItemTemplate.TYPE2_PET_BABY:
 				{
-					packet.writeD(item.getTemplate().getBodyPart());
-					packet.writeH(item.getEnchantLevel());
-					packet.writeH(0);
-					packet.writeH(0);
+					writeInt(item.getTemplate().getBodyPart());
+					writeShort(item.getEnchantLevel());
+					writeShort(0);
+					writeShort(0);
 					break;
 				}
 			}
-			packet.writeD(item.getObjectId());
+			writeInt(item.getObjectId());
 		}
-		return true;
 	}
 }

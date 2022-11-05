@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PledgeShowMemberListAll implements IClientOutgoingPacket
+public class PledgeShowMemberListAll extends ServerPacket
 {
 	private final Clan _clan;
 	private final Player _player;
@@ -34,25 +33,25 @@ public class PledgeShowMemberListAll implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_SHOW_MEMBER_LIST_ALL.writeId(packet);
-		packet.writeD(_clan.getClanId());
-		packet.writeS(_clan.getName());
-		packet.writeS(_clan.getLeaderName());
-		packet.writeD(_clan.getCrestId()); // crest id .. is used again
-		packet.writeD(_clan.getLevel());
-		packet.writeD(_clan.getCastleId());
-		packet.writeD(_clan.getHideoutId());
-		packet.writeD(0);
-		packet.writeD(_player.getLevel()); // ??
-		packet.writeD(_clan.getDissolvingExpiryTime() > System.currentTimeMillis() ? 3 : 0);
-		packet.writeD(0);
-		packet.writeD(_clan.getAllyId());
-		packet.writeS(_clan.getAllyName());
-		packet.writeD(_clan.getAllyCrestId());
-		packet.writeD(_clan.isAtWar()); // new c3
-		packet.writeD(_clan.getMembers().size() - 1);
+		ServerPackets.PLEDGE_SHOW_MEMBER_LIST_ALL.writeId(this);
+		writeInt(_clan.getClanId());
+		writeString(_clan.getName());
+		writeString(_clan.getLeaderName());
+		writeInt(_clan.getCrestId()); // crest id .. is used again
+		writeInt(_clan.getLevel());
+		writeInt(_clan.getCastleId());
+		writeInt(_clan.getHideoutId());
+		writeInt(0);
+		writeInt(_player.getLevel()); // ??
+		writeInt(_clan.getDissolvingExpiryTime() > System.currentTimeMillis() ? 3 : 0);
+		writeInt(0);
+		writeInt(_clan.getAllyId());
+		writeString(_clan.getAllyName());
+		writeInt(_clan.getAllyCrestId());
+		writeInt(_clan.isAtWar()); // new c3
+		writeInt(_clan.getMembers().size() - 1);
 		for (ClanMember m : _clan.getMembers())
 		{
 			// On C4 player is not shown.
@@ -60,13 +59,12 @@ public class PledgeShowMemberListAll implements IClientOutgoingPacket
 			{
 				continue;
 			}
-			packet.writeS(m.getName());
-			packet.writeD(m.getLevel());
-			packet.writeD(m.getClassId());
-			packet.writeD(0);
-			packet.writeD(1);
-			packet.writeD(m.isOnline() ? m.getObjectId() : 0); // 1=online 0=offline
+			writeString(m.getName());
+			writeInt(m.getLevel());
+			writeInt(m.getClassId());
+			writeInt(0);
+			writeInt(1);
+			writeInt(m.isOnline() ? m.getObjectId() : 0); // 1=online 0=offline
 		}
-		return true;
 	}
 }

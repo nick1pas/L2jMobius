@@ -26,17 +26,17 @@ public final class Init extends AbstractServerPacket
 {
 	public Init(LoginClient client)
 	{
-		writeC(0x00);
-		writeD(client.getSessionId());
-		writeD(0x0000c621); // protocol revision
+		writeByte(0x00);
+		writeInt(client.getSessionId());
+		writeInt(0x0000c621); // protocol revision
 		
-		writeB(client.getScrambledModulus());
+		writeBytes(client.getScrambledModulus());
 		
 		// unk GG related?
-		writeD(0x29DD954E);
-		writeD(0x77C39CFC);
-		writeD(0x97ADB620);
-		writeD(0x07BDE0F7);
+		writeInt(0x29DD954E);
+		writeInt(0x77C39CFC);
+		writeInt(0x97ADB620);
+		writeInt(0x07BDE0F7);
 	}
 	
 	@Override

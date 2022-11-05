@@ -17,14 +17,13 @@
 package org.l2jmobius.gameserver.network;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public enum OutgoingPackets
+public enum ServerPackets
 {
-	// Packets
 	KEY_PACKET(0x00),
 	CHAR_MOVE_TO_LOCATION(0x01),
 	CHAR_INFO(0x03),
@@ -288,28 +287,18 @@ public enum OutgoingPackets
 	private final int _id1;
 	private final int _id2;
 	
-	OutgoingPackets(int id1)
+	ServerPackets(int id1)
 	{
 		this(id1, -1);
 	}
 	
-	OutgoingPackets(int id1, int id2)
+	ServerPackets(int id1, int id2)
 	{
 		_id1 = id1;
 		_id2 = id2;
 	}
 	
-	public int getId1()
-	{
-		return _id1;
-	}
-	
-	public int getId2()
-	{
-		return _id2;
-	}
-	
-	public void writeId(PacketWriter packet)
+	public void writeId(ServerPacket packet)
 	{
 		if (Config.DEBUG_OUTGOING_PACKETS)
 		{
@@ -320,22 +309,10 @@ public enum OutgoingPackets
 			}
 		}
 		
-		packet.writeC(_id1);
+		packet.writeByte(_id1);
 		if (_id2 > 0)
 		{
-			packet.writeH(_id2);
+			packet.writeShort(_id2);
 		}
-	}
-	
-	public static OutgoingPackets getPacket(int id1, int id2)
-	{
-		for (OutgoingPackets packet : values())
-		{
-			if ((packet.getId1() == id1) && (packet.getId2() == id2))
-			{
-				return packet;
-			}
-		}
-		return null;
 	}
 }

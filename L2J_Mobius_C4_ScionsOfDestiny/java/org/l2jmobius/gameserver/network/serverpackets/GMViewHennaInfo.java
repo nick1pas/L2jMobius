@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class GMViewHennaInfo implements IClientOutgoingPacket
+public class GMViewHennaInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Henna[] _hennas = new Henna[3];
@@ -42,22 +41,21 @@ public class GMViewHennaInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GM_VIEW_HENNA_INFO.writeId(packet);
-		packet.writeC(_player.getHennaStatINT());
-		packet.writeC(_player.getHennaStatSTR());
-		packet.writeC(_player.getHennaStatCON());
-		packet.writeC(_player.getHennaStatMEN());
-		packet.writeC(_player.getHennaStatDEX());
-		packet.writeC(_player.getHennaStatWIT());
-		packet.writeD(3); // slots?
-		packet.writeD(_count); // size
+		ServerPackets.GM_VIEW_HENNA_INFO.writeId(this);
+		writeByte(_player.getHennaStatINT());
+		writeByte(_player.getHennaStatSTR());
+		writeByte(_player.getHennaStatCON());
+		writeByte(_player.getHennaStatMEN());
+		writeByte(_player.getHennaStatDEX());
+		writeByte(_player.getHennaStatWIT());
+		writeInt(3); // slots?
+		writeInt(_count); // size
 		for (int i = 0; i < _count; i++)
 		{
-			packet.writeD(_hennas[i].getSymbolId());
-			packet.writeD(_hennas[i].canBeUsedBy(_player) ? _hennas[i].getSymbolId() : 0);
+			writeInt(_hennas[i].getSymbolId());
+			writeInt(_hennas[i].canBeUsedBy(_player) ? _hennas[i].getSymbolId() : 0);
 		}
-		return true;
 	}
 }

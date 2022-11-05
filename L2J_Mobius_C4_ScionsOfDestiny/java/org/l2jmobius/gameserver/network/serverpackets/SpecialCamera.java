@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class SpecialCamera implements IClientOutgoingPacket
+public class SpecialCamera extends ServerPacket
 {
 	private final int _id;
 	private final int _dist;
@@ -61,19 +60,18 @@ public class SpecialCamera implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SPECIAL_CAMERA.writeId(packet);
-		packet.writeD(_id);
-		packet.writeD(_dist);
-		packet.writeD(_yaw);
-		packet.writeD(_pitch);
-		packet.writeD(_time);
-		packet.writeD(_duration);
-		packet.writeD(_turn);
-		packet.writeD(_rise);
-		packet.writeD(_widescreen);
-		packet.writeD(_unknown);
-		return true;
+		ServerPackets.SPECIAL_CAMERA.writeId(this);
+		writeInt(_id);
+		writeInt(_dist);
+		writeInt(_yaw);
+		writeInt(_pitch);
+		writeInt(_time);
+		writeInt(_duration);
+		writeInt(_turn);
+		writeInt(_rise);
+		writeInt(_widescreen);
+		writeInt(_unknown);
 	}
 }

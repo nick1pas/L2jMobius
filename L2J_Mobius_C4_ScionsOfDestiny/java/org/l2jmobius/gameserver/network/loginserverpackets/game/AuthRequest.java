@@ -16,9 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.loginserverpackets.game;
 
-import org.l2jmobius.commons.network.BaseSendablePacket;
+import org.l2jmobius.commons.network.WritablePacket;
 
-public class AuthRequest extends BaseSendablePacket
+public class AuthRequest extends WritablePacket
 {
 	/**
 	 * Format: cccSddb c desired ID c accept alternative ID c reserve Host s ExternalHostName s InetranlHostName d max players d hexid size b hexid
@@ -33,21 +33,15 @@ public class AuthRequest extends BaseSendablePacket
 	 */
 	public AuthRequest(int id, boolean acceptAlternate, byte[] hexid, String externalHost, String internalHost, int port, boolean reserveHost, int maxplayer)
 	{
-		writeC(0x01);
-		writeC(id);
-		writeC(acceptAlternate ? 0x01 : 0x00);
-		writeC(reserveHost ? 0x01 : 0x00);
-		writeS(externalHost);
-		writeS(internalHost);
-		writeH(port);
-		writeD(maxplayer);
-		writeD(hexid.length);
-		writeB(hexid);
-	}
-	
-	@Override
-	public byte[] getContent()
-	{
-		return getBytes();
+		writeByte(0x01);
+		writeByte(id);
+		writeByte(acceptAlternate ? 0x01 : 0x00);
+		writeByte(reserveHost ? 0x01 : 0x00);
+		writeString(externalHost);
+		writeString(internalHost);
+		writeShort(port);
+		writeInt(maxplayer);
+		writeInt(hexid.length);
+		writeBytes(hexid);
 	}
 }

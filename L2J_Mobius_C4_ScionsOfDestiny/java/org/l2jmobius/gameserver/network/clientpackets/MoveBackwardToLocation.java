@@ -16,23 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import java.nio.BufferUnderflowException;
-
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.data.xml.DoorData;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.EnchantResult;
 import org.l2jmobius.gameserver.network.serverpackets.StopMove;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
-import org.l2jmobius.gameserver.util.Util;
 
-public class MoveBackwardToLocation implements IClientIncomingPacket
+public class MoveBackwardToLocation implements ClientPacket
 {
 	private int _targetX;
 	private int _targetY;
@@ -43,31 +38,15 @@ public class MoveBackwardToLocation implements IClientIncomingPacket
 	private int _movementMode;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetX = packet.readD();
-		_targetY = packet.readD();
-		_targetZ = packet.readD();
-		_originX = packet.readD();
-		_originY = packet.readD();
-		_originZ = packet.readD();
-		
-		try
-		{
-			_movementMode = packet.readD(); // is 0 if cursor keys are used 1 if mouse is used
-		}
-		catch (BufferUnderflowException e)
-		{
-			// Ignore for now
-			if (Config.L2WALKER_PROTECTION)
-			{
-				final Player player = client.getPlayer();
-				player.sendPacket(SystemMessageId.A_HACKING_TOOL_HAS_BEEN_DISCOVERED_PLEASE_TRY_PLAYING_AGAIN_AFTER_CLOSING_UNNECESSARY_PROGRAMS);
-				Util.handleIllegalPlayerAction(player, player + " trying to use L2Walker!", IllegalPlayerAction.PUNISH_KICK);
-			}
-		}
-		
-		return true;
+		_targetX = packet.readInt();
+		_targetY = packet.readInt();
+		_targetZ = packet.readInt();
+		_originX = packet.readInt();
+		_originY = packet.readInt();
+		_originZ = packet.readInt();
+		_movementMode = packet.readInt(); // is 0 if cursor keys are used 1 if mouse is used
 	}
 	
 	@Override

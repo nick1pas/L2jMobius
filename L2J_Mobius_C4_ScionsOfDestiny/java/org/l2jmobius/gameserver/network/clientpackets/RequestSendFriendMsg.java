@@ -20,7 +20,7 @@ import java.util.logging.Level;
 import java.util.logging.LogRecord;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -30,7 +30,7 @@ import org.l2jmobius.gameserver.network.serverpackets.FriendRecvMsg;
 /**
  * Recieve Private (Friend) Message - 0xCC Format: c SS S: Message S: Receiving Player
  */
-public class RequestSendFriendMsg implements IClientIncomingPacket
+public class RequestSendFriendMsg implements ClientPacket
 {
 	private static java.util.logging.Logger _logChat = java.util.logging.Logger.getLogger("chat");
 	
@@ -38,11 +38,10 @@ public class RequestSendFriendMsg implements IClientIncomingPacket
 	private String _reciever;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_message = packet.readS();
-		_reciever = packet.readS();
-		return true;
+		_message = packet.readString();
+		_reciever = packet.readString();
 	}
 	
 	@Override

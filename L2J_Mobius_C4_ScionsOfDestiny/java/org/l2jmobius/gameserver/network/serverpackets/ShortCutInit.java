@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ShortCut;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * ShortCutInit format d *(1dddd)/(2ddddd)/(3dddd)
  * @version $Revision: 1.3.2.1.2.4 $ $Date: 2005/03/27 15:29:39 $
  */
-public class ShortCutInit implements IClientOutgoingPacket
+public class ShortCutInit extends ServerPacket
 {
 	private Collection<ShortCut> _shortCuts;
 	private Player _player;
@@ -43,21 +42,20 @@ public class ShortCutInit implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SHORT_CUT_INIT.writeId(packet);
-		packet.writeD(_shortCuts.size());
+		ServerPackets.SHORT_CUT_INIT.writeId(this);
+		writeInt(_shortCuts.size());
 		for (ShortCut sc : _shortCuts)
 		{
-			packet.writeD(sc.getType());
-			packet.writeD(sc.getSlot() + (sc.getPage() * 12));
-			packet.writeD(sc.getId());
+			writeInt(sc.getType());
+			writeInt(sc.getSlot() + (sc.getPage() * 12));
+			writeInt(sc.getId());
 			if (sc.getLevel() > -1)
 			{
-				packet.writeD(_player.getSkillLevel(sc.getId()));
+				writeInt(_player.getSkillLevel(sc.getId()));
 			}
-			packet.writeD(1);
+			writeInt(1);
 		}
-		return true;
 	}
 }

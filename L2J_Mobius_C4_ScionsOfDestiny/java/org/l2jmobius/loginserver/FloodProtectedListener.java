@@ -43,7 +43,7 @@ public abstract class FloodProtectedListener extends Thread
 		_port = port;
 		_listenIp = listenIp;
 		
-		if (_listenIp.equals("*"))
+		if (_listenIp.equals("0.0.0.0"))
 		{
 			_serverSocket = new ServerSocket(_port);
 		}

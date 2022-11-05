@@ -34,9 +34,9 @@ public class PlayOk extends AbstractServerPacket
 {
 	public PlayOk(SessionKey sessionKey)
 	{
-		writeC(0x07);
-		writeD(sessionKey.playOkID1);
-		writeD(sessionKey.playOkID2);
+		writeByte(0x07);
+		writeInt(sessionKey.playOkID1);
+		writeInt(sessionKey.playOkID2);
 	}
 	
 	@Override

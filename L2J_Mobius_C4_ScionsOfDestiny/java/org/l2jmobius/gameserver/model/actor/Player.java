@@ -185,7 +185,6 @@ import org.l2jmobius.gameserver.network.serverpackets.ExOlympiadUserInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ExPCCafePointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.FriendList;
 import org.l2jmobius.gameserver.network.serverpackets.HennaInfo;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
 import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
@@ -207,6 +206,7 @@ import org.l2jmobius.gameserver.network.serverpackets.RecipeShopSellList;
 import org.l2jmobius.gameserver.network.serverpackets.RelationChanged;
 import org.l2jmobius.gameserver.network.serverpackets.Ride;
 import org.l2jmobius.gameserver.network.serverpackets.SendTradeDone;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SetupGauge;
 import org.l2jmobius.gameserver.network.serverpackets.ShortCutInit;
 import org.l2jmobius.gameserver.network.serverpackets.ShortCutRegister;
@@ -1127,7 +1127,7 @@ public class Player extends Playable
 	public void logout(boolean kicked)
 	{
 		_kicked = kicked;
-		closeNetConnection();
+		_client.close(LeaveWorld.STATIC_PACKET);
 	}
 	
 	/**
@@ -4161,18 +4161,6 @@ public class Player extends Playable
 	}
 	
 	/**
-	 * Close the active connection with the client.
-	 */
-	public void closeNetConnection()
-	{
-		if (_client != null)
-		{
-			_client.close(new LeaveWorld());
-			setClient(null);
-		}
-	}
-	
-	/**
 	 * Manage actions when a player click on this Player.<br>
 	 * <br>
 	 * <b><u>Actions on first click on the Player (Select it)</u>:</b><br>
@@ -4682,12 +4670,12 @@ public class Player extends Playable
 	}
 	
 	@Override
-	public void broadcastPacket(IClientOutgoingPacket mov)
+	public void broadcastPacket(ServerPacket packet)
 	{
-		final boolean isCharInfo = mov instanceof CharInfo;
+		final boolean isCharInfo = packet instanceof CharInfo;
 		if (!isCharInfo)
 		{
-			sendPacket(mov);
+			sendPacket(packet);
 		}
 		
 		for (Player player : getKnownList().getKnownPlayers().values())
@@ -4697,7 +4685,7 @@ public class Player extends Playable
 				continue;
 			}
 			
-			player.sendPacket(mov);
+			player.sendPacket(packet);
 			
 			if (isCharInfo)
 			{
@@ -4711,12 +4699,12 @@ public class Player extends Playable
 	}
 	
 	@Override
-	public void broadcastPacket(IClientOutgoingPacket mov, int radius)
+	public void broadcastPacket(ServerPacket packet, int radius)
 	{
-		final boolean isCharInfo = mov instanceof CharInfo;
+		final boolean isCharInfo = packet instanceof CharInfo;
 		if (!isCharInfo)
 		{
-			sendPacket(mov);
+			sendPacket(packet);
 		}
 		
 		for (Player player : getKnownList().getKnownPlayers().values())
@@ -4731,7 +4719,7 @@ public class Player extends Playable
 				continue;
 			}
 			
-			player.sendPacket(mov);
+			player.sendPacket(packet);
 			
 			if (isCharInfo)
 			{
@@ -5852,8 +5840,8 @@ public class Player extends Playable
 			// Anti FARM same IP
 			if (Config.ANTI_FARM_IP_ENABLED && (_client != null) && (targetPlayer.getClient() != null))
 			{
-				final String ip1 = _client.getConnectionAddress().getHostAddress();
-				final String ip2 = targetPlayer.getClient().getConnectionAddress().getHostAddress();
+				final String ip1 = _client.getIp();
+				final String ip2 = targetPlayer.getClient().getIp();
 				if (ip1.equals(ip2))
 				{
 					sendMessage("Farm is punishable with Ban! GM informed.");
@@ -5873,9 +5861,9 @@ public class Player extends Playable
 	private void addItemReward(Player targetPlayer)
 	{
 		// IP check
-		if ((targetPlayer.getClient() != null) && (targetPlayer.getClient().getConnectionAddress() != null))
+		if ((targetPlayer.getClient() != null) && (targetPlayer.getClient().getIp() != null))
 		{
-			if (targetPlayer.getClient().getConnectionAddress() != _client.getConnectionAddress())
+			if (targetPlayer.getClient().getIp() != _client.getIp())
 			{
 				if ((targetPlayer.getKarma() > 0) || (targetPlayer.getPvpFlag() > 0)) // killing target pk or in pvp
 				{
@@ -10635,7 +10623,7 @@ public class Player extends Playable
 	 * Send a Server->Client packet StatusUpdate to the Player.
 	 */
 	@Override
-	public void sendPacket(IClientOutgoingPacket packet)
+	public void sendPacket(ServerPacket packet)
 	{
 		if (_client != null)
 		{
@@ -13048,7 +13036,10 @@ public class Player extends Playable
 		}
 		
 		// Close the connection with the client
-		closeNetConnection();
+		if (_client != null)
+		{
+			_client.close(LeaveWorld.STATIC_PACKET);
+		}
 		
 		if (getClanId() > 0)
 		{
@@ -14301,12 +14292,12 @@ public class Player extends Playable
 		boolean canMultiBox = true;
 		int boxCount = 1;
 		final List<String> activeBoxes = new ArrayList<>();
-		if ((_client != null) && (_client.getConnectionAddress() != null) && !_client.isDetached() && (_client.getConnectionAddress() != null))
+		if ((_client != null) && (_client.getIp() != null) && !_client.isDetached() && (_client.getIp() != null))
 		{
-			final String playerIP = _client.getConnectionAddress().getHostAddress();
+			final String playerIP = _client.getIp();
 			for (Player player : World.getInstance().getAllPlayers())
 			{
-				if ((player != null) && (player != this) && player.isOnline() && (player.getClient() != null) && (player.getClient().getConnectionAddress() != null) && !player.getClient().isDetached() && (player.getClient().getConnectionAddress() != null) && playerIP.equals(player.getClient().getConnectionAddress().getHostAddress()))
+				if ((player != null) && (player != this) && player.isOnline() && (player.getClient() != null) && (player.getClient().getIp() != null) && !player.getClient().isDetached() && playerIP.equals(player.getClient().getIp()))
 				{
 					boxCount++;
 					activeBoxes.add(player.getName());
@@ -14338,12 +14329,12 @@ public class Player extends Playable
 	 */
 	public void refreshOtherBoxes()
 	{
-		if ((_client != null) && (_client.getConnectionAddress() != null) && !_client.isDetached() && (_client.getConnectionAddress() != null))
+		if ((_client != null) && (_client.getIp() != null) && !_client.isDetached())
 		{
-			final String playerIP = _client.getConnectionAddress().getHostAddress();
+			final String playerIP = _client.getIp();
 			for (Player player : World.getInstance().getAllPlayers())
 			{
-				if ((player != null) && (player != this) && player.isOnline() && (player.getClient() != null) && (player.getClient().getConnectionAddress() != null) && !player.getClient().isDetached() && !player.getName().equals(getName()) && playerIP.equals(player.getClient().getConnectionAddress().getHostAddress()))
+				if ((player != null) && (player != this) && player.isOnline() && (player.getClient() != null) && (player.getClient().getIp() != null) && !player.getClient().isDetached() && !player.getName().equals(getName()) && playerIP.equals(player.getClient().getIp()))
 				{
 					player._activeBoxes = _activeBoxes;
 					player._activeBoxCharacters = _activeBoxCharacters;

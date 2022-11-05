@@ -24,6 +24,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.gameserver.enums.PunishmentType;
 import org.l2jmobius.gameserver.network.ConnectionState;
 import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 
 /**
@@ -138,7 +139,7 @@ public class FloodProtectorAction
 		}
 		else
 		{
-			_client.closeNow();
+			_client.close(LeaveWorld.STATIC_PACKET);
 		}
 		
 		if (LOGGER.isLoggable(Level.WARNING))
@@ -191,7 +192,7 @@ public class FloodProtectorAction
 		{
 			if (!_client.isDetached())
 			{
-				address = _client.getConnectionAddress().getHostAddress();
+				address = _client.getIp();
 			}
 		}
 		catch (Exception e)
@@ -199,7 +200,7 @@ public class FloodProtectorAction
 			// Ignore.
 		}
 		
-		final ConnectionState state = (ConnectionState) _client.getConnectionState();
+		final ConnectionState state = _client.getConnectionState();
 		switch (state)
 		{
 			case ENTERING:
@@ -233,7 +234,7 @@ public class FloodProtectorAction
 			}
 			default:
 			{
-				throw new IllegalStateException("Missing state on switch");
+				throw new IllegalStateException("Missing state on switch.");
 			}
 		}
 		

@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class TutorialCloseHtml implements IClientOutgoingPacket
+public class TutorialCloseHtml extends ServerPacket
 {
 	public static final TutorialCloseHtml STATIC_PACKET = new TutorialCloseHtml();
 	
@@ -28,9 +27,8 @@ public class TutorialCloseHtml implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.TUTORIAL_CLOSE_HTML.writeId(packet);
-		return true;
+		ServerPackets.TUTORIAL_CLOSE_HTML.writeId(this);
 	}
 }

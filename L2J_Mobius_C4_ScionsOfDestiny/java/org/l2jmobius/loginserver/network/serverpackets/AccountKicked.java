@@ -25,8 +25,8 @@ public class AccountKicked extends AbstractServerPacket
 	
 	public AccountKicked(int reason)
 	{
-		writeC(0x02);
-		writeD(reason);
+		writeByte(0x02);
+		writeInt(reason);
 	}
 	
 	@Override

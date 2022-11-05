@@ -29,6 +29,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.enums.ServerMode;
+import org.l2jmobius.commons.network.NetServer;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.commons.util.DeadLockDetector;
 import org.l2jmobius.commons.util.PropertiesParser;
@@ -115,19 +116,18 @@ import org.l2jmobius.gameserver.model.siege.clanhalls.BanditStrongholdSiege;
 import org.l2jmobius.gameserver.model.siege.clanhalls.DevastatedCastle;
 import org.l2jmobius.gameserver.model.siege.clanhalls.FortressOfResistance;
 import org.l2jmobius.gameserver.model.spawn.AutoSpawnHandler;
-import org.l2jmobius.gameserver.network.ClientNetworkManager;
+import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jmobius.gameserver.network.PacketHandler;
 import org.l2jmobius.gameserver.scripting.ScriptEngineManager;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 import org.l2jmobius.gameserver.taskmanager.ItemsAutoDestroyTaskManager;
 import org.l2jmobius.gameserver.taskmanager.TaskManager;
 import org.l2jmobius.gameserver.ui.Gui;
-import org.l2jmobius.telnet.TelnetStatusThread;
 
 public class GameServer
 {
 	private static final Logger LOGGER = Logger.getLogger(GameServer.class.getName());
 	
-	private static TelnetStatusThread _statusServer;
 	private static GameServer INSTANCE;
 	public static final Calendar dateTimeServerStarted = Calendar.getInstance();
 	
@@ -451,20 +451,23 @@ public class GameServer
 		}
 		
 		printSection("Status");
-		
-		if (Config.IS_TELNET_ENABLED)
-		{
-			_statusServer = new TelnetStatusThread();
-			_statusServer.start();
-		}
-		
 		System.gc();
 		final long totalMem = Runtime.getRuntime().maxMemory() / 1048576;
 		LOGGER.info(getClass().getSimpleName() + ": Started, using " + getUsedMemoryMB() + " of " + totalMem + " MB total memory.");
 		LOGGER.info(getClass().getSimpleName() + ": Maximum number of connected players is " + Config.MAXIMUM_ONLINE_USERS + ".");
 		LOGGER.info(getClass().getSimpleName() + ": Server loaded in " + ((System.currentTimeMillis() - serverLoadStart) / 1000) + " seconds.");
 		
-		ClientNetworkManager.getInstance().start();
+		final NetServer<GameClient> server = new NetServer<>(Config.GAMESERVER_HOSTNAME, Config.PORT_GAME, new PacketHandler(), GameClient::new);
+		server.setName(getClass().getSimpleName());
+		server.getNetConfig().setReadPoolSize(Config.CLIENT_READ_POOL_SIZE);
+		server.getNetConfig().setExecutePoolSize(Config.CLIENT_EXECUTE_POOL_SIZE);
+		server.getNetConfig().setPacketQueueLimit(Config.PACKET_QUEUE_LIMIT);
+		server.getNetConfig().setPacketFloodDisconnect(Config.PACKET_FLOOD_DISCONNECT);
+		server.getNetConfig().setPacketFloodDrop(Config.PACKET_FLOOD_DROP);
+		server.getNetConfig().setPacketFloodLogged(Config.PACKET_FLOOD_LOGGED);
+		server.getNetConfig().setTcpNoDelay(Config.TCP_NO_DELAY);
+		server.getNetConfig().setConnectionTimeout(Config.CONNECTION_TIMEOUT);
+		server.start();
 		
 		LoginServerThread.getInstance().start();
 		

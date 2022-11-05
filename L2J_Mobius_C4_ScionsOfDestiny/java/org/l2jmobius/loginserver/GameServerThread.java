@@ -31,7 +31,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.util.crypt.NewCrypt;
+import org.l2jmobius.commons.crypt.NewCrypt;
 import org.l2jmobius.loginserver.network.AbstractServerPacket;
 import org.l2jmobius.loginserver.network.gameserverpackets.BlowFishKey;
 import org.l2jmobius.loginserver.network.gameserverpackets.ChangeAccessLevel;
@@ -165,7 +165,6 @@ public class GameServerThread extends Thread
 						{
 							final AuthResponse ar = new AuthResponse(_server_id);
 							sendPacket(ar);
-							broadcastToTelnet("GameServer [" + _server_id + "] " + GameServerTable.getInstance()._serverNames.get(_server_id) + " is connected.");
 						}
 						else
 						{
@@ -187,7 +186,6 @@ public class GameServerThread extends Thread
 						for (String account : pig.getAccounts())
 						{
 							_accountsInGame.add(account);
-							broadcastToTelnet("Account " + account + " logged in GameServer " + _server_id);
 						}
 						break;
 					}
@@ -202,7 +200,6 @@ public class GameServerThread extends Thread
 						}
 						final PlayerLogout plo = new PlayerLogout(data);
 						_accountsInGame.remove(plo.getAccount());
-						broadcastToTelnet("Player " + plo.getAccount() + " disconnected from GameServer " + _server_id);
 						break;
 					}
 					case 04:
@@ -264,7 +261,6 @@ public class GameServerThread extends Thread
 			final String serverName = (_server_id != -1 ? "[" + _server_id + "] " + GameServerTable.getInstance()._serverNames.get(_server_id) : "(" + connectionIpAddress + ")");
 			final String msg = "GameServer " + serverName + ": Connection lost: " + e.getMessage();
 			LOGGER.info(msg);
-			broadcastToTelnet(msg);
 		}
 		finally
 		{
@@ -413,14 +409,6 @@ public class GameServerThread extends Thread
 			_out.write((len >> 8) & 0xff);
 			_out.write(data);
 			_out.flush();
-		}
-	}
-	
-	private void broadcastToTelnet(String msg)
-	{
-		if (LoginServer.getInstance().getStatusServer() != null)
-		{
-			LoginServer.getInstance().getStatusServer().sendMessageToTelnets(msg);
 		}
 	}
 	

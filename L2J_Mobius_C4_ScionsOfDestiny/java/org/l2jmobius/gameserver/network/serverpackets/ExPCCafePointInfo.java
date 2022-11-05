@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author KenM
  */
-public class ExPCCafePointInfo implements IClientOutgoingPacket
+public class ExPCCafePointInfo extends ServerPacket
 {
 	private final Player _player;
 	private final int _addPoint;
@@ -62,14 +61,13 @@ public class ExPCCafePointInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PC_CAFE_POINT_INFO.writeId(packet);
-		packet.writeD(_player.getPcBangScore());
-		packet.writeD(_addPoint);
-		packet.writeC(_periodType);
-		packet.writeD(_remainTime);
-		packet.writeC(_pointType);
-		return true;
+		ServerPackets.EX_PC_CAFE_POINT_INFO.writeId(this);
+		writeInt(_player.getPcBangScore());
+		writeInt(_addPoint);
+		writeByte(_periodType);
+		writeInt(_remainTime);
+		writeByte(_pointType);
 	}
 }

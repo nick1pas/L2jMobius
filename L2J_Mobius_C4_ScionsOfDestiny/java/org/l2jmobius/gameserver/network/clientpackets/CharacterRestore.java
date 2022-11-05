@@ -16,19 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.CharSelectInfo;
 
-public class CharacterRestore implements IClientIncomingPacket
+public class CharacterRestore implements ClientPacket
 {
 	private int _charSlot;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_charSlot = packet.readD();
-		return true;
+		_charSlot = packet.readInt();
 	}
 	
 	@Override

@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * sample
@@ -27,7 +26,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * format cdd
  * @version $Revision: 1.1.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class AskJoinParty implements IClientOutgoingPacket
+public class AskJoinParty extends ServerPacket
 {
 	private final String _requestorName;
 	private final int _itemDistribution;
@@ -43,11 +42,10 @@ public class AskJoinParty implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.ASK_JOIN_PARTY.writeId(packet);
-		packet.writeS(_requestorName);
-		packet.writeD(_itemDistribution);
-		return true;
+		ServerPackets.ASK_JOIN_PARTY.writeId(this);
+		writeString(_requestorName);
+		writeInt(_itemDistribution);
 	}
 }

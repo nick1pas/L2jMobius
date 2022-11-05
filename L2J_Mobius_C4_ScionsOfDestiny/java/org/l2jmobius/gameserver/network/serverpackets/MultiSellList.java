@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.model.multisell.MultiSellEntry;
 import org.l2jmobius.gameserver.model.multisell.MultiSellIngredient;
 import org.l2jmobius.gameserver.model.multisell.MultiSellListContainer;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
  */
-public class MultiSellList implements IClientOutgoingPacket
+public class MultiSellList extends ServerPacket
 {
 	protected int _listId;
 	protected int _page;
@@ -42,30 +41,30 @@ public class MultiSellList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		// [ddddd] [dchh] [hdhdh] [hhdh]
-		OutgoingPackets.MULTI_SELL_LIST.writeId(packet);
-		packet.writeD(_listId); // list id
-		packet.writeD(_page); // page
-		packet.writeD(_finished); // finished
-		packet.writeD(0x28); // size of pages
-		packet.writeD(_list == null ? 0 : _list.getEntries().size()); // list length
+		ServerPackets.MULTI_SELL_LIST.writeId(this);
+		writeInt(_listId); // list id
+		writeInt(_page); // page
+		writeInt(_finished); // finished
+		writeInt(0x28); // size of pages
+		writeInt(_list == null ? 0 : _list.getEntries().size()); // list length
 		if (_list != null)
 		{
 			for (MultiSellEntry ent : _list.getEntries())
 			{
-				packet.writeD(ent.getEntryId());
-				packet.writeC(1);
-				packet.writeH(ent.getProducts().size());
-				packet.writeH(ent.getIngredients().size());
+				writeInt(ent.getEntryId());
+				writeByte(1);
+				writeShort(ent.getProducts().size());
+				writeShort(ent.getIngredients().size());
 				for (MultiSellIngredient i : ent.getProducts())
 				{
-					packet.writeH(i.getItemId());
-					packet.writeD(ItemTable.getInstance().getTemplate(i.getItemId()).getBodyPart());
-					packet.writeH(ItemTable.getInstance().getTemplate(i.getItemId()).getType2());
-					packet.writeD(i.getItemCount());
-					packet.writeH(i.getEnchantmentLevel()); // enchtant level
+					writeShort(i.getItemId());
+					writeInt(ItemTable.getInstance().getTemplate(i.getItemId()).getBodyPart());
+					writeShort(ItemTable.getInstance().getTemplate(i.getItemId()).getType2());
+					writeInt(i.getItemCount());
+					writeShort(i.getEnchantmentLevel()); // enchtant level
 				}
 				for (MultiSellIngredient i : ent.getIngredients())
 				{
@@ -75,13 +74,12 @@ public class MultiSellList implements IClientOutgoingPacket
 					{
 						typeE = ItemTable.getInstance().getTemplate(i.getItemId()).getType2();
 					}
-					packet.writeH(items); // ID
-					packet.writeH(typeE);
-					packet.writeD(i.getItemCount()); // Count
-					packet.writeH(i.getEnchantmentLevel()); // Enchant Level
+					writeShort(items); // ID
+					writeShort(typeE);
+					writeInt(i.getItemCount()); // Count
+					writeShort(i.getEnchantmentLevel()); // Enchant Level
 				}
 			}
 		}
-		return true;
 	}
 }

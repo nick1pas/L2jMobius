@@ -43,16 +43,16 @@ public class GameServerAuth extends AbstractGameServerPacket
 	{
 		super(decrypt);
 		
-		_desiredId = readC();
-		_acceptAlternativeId = readC() != 0;
-		_hostReserved = readC() != 0;
-		_externalHost = readS();
-		_internalHost = readS();
-		_port = readH();
-		_maxPlayers = readD();
+		_desiredId = readByte();
+		_acceptAlternativeId = readByte() != 0;
+		_hostReserved = readByte() != 0;
+		_externalHost = readString();
+		_internalHost = readString();
+		_port = readShort();
+		_maxPlayers = readInt();
 		
-		final int size = readD();
-		_hexId = readB(size);
+		final int size = readInt();
+		_hexId = readBytes(size);
 	}
 	
 	/**

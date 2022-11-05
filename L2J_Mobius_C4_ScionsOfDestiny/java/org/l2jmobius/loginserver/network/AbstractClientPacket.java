@@ -45,42 +45,7 @@ public abstract class AbstractClientPacket implements Runnable
 		return _decrypt;
 	}
 	
-	public int readD()
-	{
-		int result = _decrypt[_off++] & 0xff;
-		result |= (_decrypt[_off++] << 8) & 0xff00;
-		result |= (_decrypt[_off++] << 0x10) & 0xff0000;
-		result |= (_decrypt[_off++] << 0x18) & 0xff000000;
-		return result;
-	}
-	
-	public int readC()
-	{
-		final int result = _decrypt[_off++] & 0xff;
-		return result;
-	}
-	
-	public int readH()
-	{
-		int result = _decrypt[_off++] & 0xff;
-		result |= (_decrypt[_off++] << 8) & 0xff00;
-		return result;
-	}
-	
-	public double readF()
-	{
-		long result = _decrypt[_off++] & 0xff;
-		result |= (_decrypt[_off++] << 8) & 0xff00;
-		result |= (_decrypt[_off++] << 0x10) & 0xff0000;
-		result |= (_decrypt[_off++] << 0x18) & 0xff000000;
-		result |= (_decrypt[_off++] << 0x20) & 0xff00000000L;
-		result |= (_decrypt[_off++] << 0x28) & 0xff0000000000L;
-		result |= (_decrypt[_off++] << 0x30) & 0xff000000000000L;
-		result |= (_decrypt[_off++] << 0x38) & 0xff00000000000000L;
-		return Double.longBitsToDouble(result);
-	}
-	
-	public String readS()
+	public String readString()
 	{
 		String result = null;
 		try
@@ -96,7 +61,7 @@ public abstract class AbstractClientPacket implements Runnable
 		return result;
 	}
 	
-	public byte[] readB(int length)
+	public byte[] readBytes(int length)
 	{
 		final byte[] result = new byte[length];
 		for (int i = 0; i < length; i++)
@@ -105,5 +70,40 @@ public abstract class AbstractClientPacket implements Runnable
 		}
 		_off += length;
 		return result;
+	}
+	
+	public int readByte()
+	{
+		final int result = _decrypt[_off++] & 0xff;
+		return result;
+	}
+	
+	public int readShort()
+	{
+		int result = _decrypt[_off++] & 0xff;
+		result |= (_decrypt[_off++] << 8) & 0xff00;
+		return result;
+	}
+	
+	public int readInt()
+	{
+		int result = _decrypt[_off++] & 0xff;
+		result |= (_decrypt[_off++] << 8) & 0xff00;
+		result |= (_decrypt[_off++] << 0x10) & 0xff0000;
+		result |= (_decrypt[_off++] << 0x18) & 0xff000000;
+		return result;
+	}
+	
+	public double readDouble()
+	{
+		long result = _decrypt[_off++] & 0xff;
+		result |= (_decrypt[_off++] << 8) & 0xff00;
+		result |= (_decrypt[_off++] << 0x10) & 0xff0000;
+		result |= (_decrypt[_off++] << 0x18) & 0xff000000;
+		result |= (_decrypt[_off++] << 0x20) & 0xff00000000L;
+		result |= (_decrypt[_off++] << 0x28) & 0xff0000000000L;
+		result |= (_decrypt[_off++] << 0x30) & 0xff000000000000L;
+		result |= (_decrypt[_off++] << 0x38) & 0xff00000000000000L;
+		return Double.longBitsToDouble(result);
 	}
 }

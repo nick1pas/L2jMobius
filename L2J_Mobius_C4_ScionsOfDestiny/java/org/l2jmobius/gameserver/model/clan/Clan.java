@@ -47,13 +47,13 @@ import org.l2jmobius.gameserver.model.itemcontainer.ItemContainer;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeReceiveSubPledgeCreated;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeShowInfoUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListAll;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListDeleteAll;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeShowMemberListUpdate;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
@@ -1122,7 +1122,7 @@ public class Clan
 		}
 	}
 	
-	public void broadcastToOnlineAllyMembers(IClientOutgoingPacket packet)
+	public void broadcastToOnlineAllyMembers(ServerPacket packet)
 	{
 		if (_allyId == 0)
 		{
@@ -1138,7 +1138,7 @@ public class Clan
 		}
 	}
 	
-	public void broadcastToOnlineMembers(IClientOutgoingPacket packet)
+	public void broadcastToOnlineMembers(ServerPacket packet)
 	{
 		for (ClanMember member : _members.values())
 		{
@@ -1156,7 +1156,7 @@ public class Clan
 		}
 	}
 	
-	public void broadcastToOtherOnlineMembers(IClientOutgoingPacket packet, Player player)
+	public void broadcastToOtherOnlineMembers(ServerPacket packet, Player player)
 	{
 		for (ClanMember member : _members.values())
 		{

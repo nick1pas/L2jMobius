@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PlaySound implements IClientOutgoingPacket
+public class PlaySound extends ServerPacket
 {
 	private static final Location DUMMY_LOC = new Location(0, 0, 0);
 	
@@ -97,17 +96,16 @@ public class PlaySound implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLAY_SOUND.writeId(packet);
-		packet.writeD(_unknown);
-		packet.writeS(_soundFile);
-		packet.writeD(_isObject ? 1 : 0);
-		packet.writeD(_objectId);
-		packet.writeD(_loc.getX());
-		packet.writeD(_loc.getY());
-		packet.writeD(_loc.getZ());
-		packet.writeD(_duration);
-		return true;
+		ServerPackets.PLAY_SOUND.writeId(this);
+		writeInt(_unknown);
+		writeString(_soundFile);
+		writeInt(_isObject);
+		writeInt(_objectId);
+		writeInt(_loc.getX());
+		writeInt(_loc.getY());
+		writeInt(_loc.getZ());
+		writeInt(_duration);
 	}
 }

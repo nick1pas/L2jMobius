@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.AccessLevel;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
@@ -302,7 +302,7 @@ public class AdminData implements IXmlReader
 		}
 	}
 	
-	public static void broadcastToGMs(IClientOutgoingPacket packet)
+	public static void broadcastToGMs(ServerPacket packet)
 	{
 		for (Player gm : getInstance().getAllGms(true))
 		{

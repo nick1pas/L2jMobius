@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.model;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
@@ -34,7 +34,7 @@ public class Request
 	protected Player _partner;
 	protected boolean _isRequestor;
 	protected boolean _isAnswerer;
-	protected IClientIncomingPacket _requestPacket;
+	protected ClientPacket _requestPacket;
 	
 	public Request(Player player)
 	{
@@ -70,7 +70,7 @@ public class Request
 	 * Set the packet incomed from requester.
 	 * @param packet
 	 */
-	private synchronized void setRequestPacket(IClientIncomingPacket packet)
+	private synchronized void setRequestPacket(ClientPacket packet)
 	{
 		_requestPacket = packet;
 	}
@@ -78,7 +78,7 @@ public class Request
 	/**
 	 * @return the packet originally incomed from requester.
 	 */
-	public IClientIncomingPacket getRequestPacket()
+	public ClientPacket getRequestPacket()
 	{
 		return _requestPacket;
 	}
@@ -89,7 +89,7 @@ public class Request
 	 * @param packet
 	 * @return
 	 */
-	public synchronized boolean setRequest(Player partner, IClientIncomingPacket packet)
+	public synchronized boolean setRequest(Player partner, ClientPacket packet)
 	{
 		if (partner == null)
 		{

@@ -19,14 +19,13 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.templates.PlayerTemplate;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.3.2.1.2.7 $ $Date: 2005/03/27 15:29:39 $
  */
-public class CharTemplates implements IClientOutgoingPacket
+public class CharTemplates extends ServerPacket
 {
 	private final List<PlayerTemplate> _chars = new ArrayList<>();
 	
@@ -36,33 +35,32 @@ public class CharTemplates implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_TEMPLATES.writeId(packet);
-		packet.writeD(_chars.size());
+		ServerPackets.CHAR_TEMPLATES.writeId(this);
+		writeInt(_chars.size());
 		for (PlayerTemplate temp : _chars)
 		{
-			packet.writeD(temp.getRace().ordinal());
-			packet.writeD(temp.getClassId().getId());
-			packet.writeD(0x46);
-			packet.writeD(temp.getBaseSTR());
-			packet.writeD(0x0a);
-			packet.writeD(0x46);
-			packet.writeD(temp.getBaseDEX());
-			packet.writeD(0x0a);
-			packet.writeD(0x46);
-			packet.writeD(temp.getBaseCON());
-			packet.writeD(0x0a);
-			packet.writeD(0x46);
-			packet.writeD(temp.getBaseINT());
-			packet.writeD(0x0a);
-			packet.writeD(0x46);
-			packet.writeD(temp.getBaseWIT());
-			packet.writeD(0x0a);
-			packet.writeD(0x46);
-			packet.writeD(temp.getBaseMEN());
-			packet.writeD(0x0a);
+			writeInt(temp.getRace().ordinal());
+			writeInt(temp.getClassId().getId());
+			writeInt(0x46);
+			writeInt(temp.getBaseSTR());
+			writeInt(0x0a);
+			writeInt(0x46);
+			writeInt(temp.getBaseDEX());
+			writeInt(0x0a);
+			writeInt(0x46);
+			writeInt(temp.getBaseCON());
+			writeInt(0x0a);
+			writeInt(0x46);
+			writeInt(temp.getBaseINT());
+			writeInt(0x0a);
+			writeInt(0x46);
+			writeInt(temp.getBaseWIT());
+			writeInt(0x0a);
+			writeInt(0x46);
+			writeInt(temp.getBaseMEN());
+			writeInt(0x0a);
 		}
-		return true;
 	}
 }

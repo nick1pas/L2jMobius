@@ -16,20 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-
  */
-public class PledgeShowMemberListUpdate implements IClientOutgoingPacket
+public class PledgeShowMemberListUpdate extends ServerPacket
 {
 	private final Player _player;
 	private final int _pledgeType;
-	private int _hasSponsor;
+	private boolean _hasSponsor;
 	private final String _name;
 	private final int _level;
 	private final int _classId;
@@ -41,15 +40,15 @@ public class PledgeShowMemberListUpdate implements IClientOutgoingPacket
 		_pledgeType = _player.getPledgeType();
 		if (_pledgeType == Clan.SUBUNIT_ACADEMY)
 		{
-			_hasSponsor = _player.getSponsor() != 0 ? 1 : 0;
+			_hasSponsor = _player.getSponsor() != 0;
 		}
 		else if (_player.isOnline())
 		{
-			_hasSponsor = _player.isClanLeader() ? 1 : 0;
+			_hasSponsor = _player.isClanLeader();
 		}
 		else
 		{
-			_hasSponsor = 0;
+			_hasSponsor = false;
 		}
 		_name = _player.getName();
 		_level = _player.getLevel();
@@ -67,30 +66,29 @@ public class PledgeShowMemberListUpdate implements IClientOutgoingPacket
 		_pledgeType = member.getPledgeType();
 		if (_pledgeType == Clan.SUBUNIT_ACADEMY)
 		{
-			_hasSponsor = _player.getSponsor() != 0 ? 1 : 0;
+			_hasSponsor = _player.getSponsor() != 0;
 		}
 		else if (member.isOnline())
 		{
-			_hasSponsor = _player.isClanLeader() ? 1 : 0;
+			_hasSponsor = _player.isClanLeader();
 		}
 		else
 		{
-			_hasSponsor = 0;
+			_hasSponsor = false;
 		}
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_SHOW_MEMBER_LIST_UPDATE.writeId(packet);
-		packet.writeS(_name);
-		packet.writeD(_level);
-		packet.writeD(_classId);
-		packet.writeD(0);
-		packet.writeD(1);
-		packet.writeD(_isOnline);
-		packet.writeD(_pledgeType);
-		packet.writeD(_hasSponsor);
-		return true;
+		ServerPackets.PLEDGE_SHOW_MEMBER_LIST_UPDATE.writeId(this);
+		writeString(_name);
+		writeInt(_level);
+		writeInt(_classId);
+		writeInt(0);
+		writeInt(1);
+		writeInt(_isOnline);
+		writeInt(_pledgeType);
+		writeInt(_hasSponsor);
 	}
 }

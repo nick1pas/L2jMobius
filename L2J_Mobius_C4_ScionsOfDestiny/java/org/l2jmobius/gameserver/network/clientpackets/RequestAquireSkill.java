@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.data.sql.SkillSpellbookTable;
 import org.l2jmobius.gameserver.data.sql.SkillTreeTable;
@@ -42,19 +42,18 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
-public class RequestAquireSkill implements IClientIncomingPacket
+public class RequestAquireSkill implements ClientPacket
 {
 	private int _id;
 	private int _level;
 	private int _skillType;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = packet.readD();
-		_level = packet.readD();
-		_skillType = packet.readD();
-		return true;
+		_id = packet.readInt();
+		_level = packet.readInt();
+		_skillType = packet.readInt();
 	}
 	
 	@Override

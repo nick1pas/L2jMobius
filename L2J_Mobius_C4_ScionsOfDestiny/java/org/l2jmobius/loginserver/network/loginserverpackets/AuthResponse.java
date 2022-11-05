@@ -29,9 +29,9 @@ public class AuthResponse extends AbstractServerPacket
 	 */
 	public AuthResponse(int serverId)
 	{
-		writeC(0x02);
-		writeC(serverId);
-		writeS(GameServerTable.getInstance()._serverNames.get(serverId));
+		writeByte(0x02);
+		writeByte(serverId);
+		writeString(GameServerTable.getInstance()._serverNames.get(serverId));
 	}
 	
 	@Override

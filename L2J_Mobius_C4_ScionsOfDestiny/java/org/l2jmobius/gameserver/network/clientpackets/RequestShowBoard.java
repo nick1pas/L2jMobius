@@ -17,11 +17,11 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.communitybbs.CommunityBoard;
 import org.l2jmobius.gameserver.network.GameClient;
 
-public class RequestShowBoard implements IClientIncomingPacket
+public class RequestShowBoard implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _unknown;
@@ -30,10 +30,9 @@ public class RequestShowBoard implements IClientIncomingPacket
 	 * packet type id 0x57 sample 57 01 00 00 00 // unknown (always 1?) format: cd
 	 */
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_unknown = packet.readD();
-		return true;
+		_unknown = packet.readInt();
 	}
 	
 	@Override

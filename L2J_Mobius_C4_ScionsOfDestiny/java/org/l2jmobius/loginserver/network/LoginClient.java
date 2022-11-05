@@ -27,8 +27,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
+import org.l2jmobius.commons.crypt.NewCrypt;
 import org.l2jmobius.commons.util.Rnd;
-import org.l2jmobius.commons.util.crypt.NewCrypt;
 import org.l2jmobius.loginserver.LoginController;
 import org.l2jmobius.loginserver.LoginController.ScrambledKeyPair;
 import org.l2jmobius.loginserver.LoginServer;
@@ -41,7 +41,7 @@ import org.l2jmobius.loginserver.network.serverpackets.Init;
  */
 public class LoginClient extends Thread
 {
-	private final static Logger LOGGER = Logger.getLogger(LoginClient.class.getName());
+	private static final Logger LOGGER = Logger.getLogger(LoginClient.class.getName());
 	
 	public static enum LoginClientState
 	{
@@ -55,7 +55,7 @@ public class LoginClient extends Thread
 	private InputStream _in = null;
 	private OutputStream _out = null;
 	private final NewCrypt _crypt;
-	private final Socket _csocket;
+	private final Socket _socket;
 	
 	private final ScrambledKeyPair _scrambledPair;
 	private SessionKey _sessionKey;
@@ -67,13 +67,13 @@ public class LoginClient extends Thread
 	private int _accessLevel;
 	private int _lastServer;
 	
-	public LoginClient(Socket client)
+	public LoginClient(Socket socket)
 	{
-		super("Login Client " + client.getInetAddress());
+		super("Login Client " + socket.getInetAddress());
 		setDaemon(true);
 		
 		_state = LoginClientState.CONNECTED;
-		_csocket = client;
+		_socket = socket;
 		
 		_scrambledPair = LoginController.getInstance().getScrambledRSAKeyPair();
 		_sessionId = Rnd.nextInt();
@@ -84,8 +84,8 @@ public class LoginClient extends Thread
 		
 		try
 		{
-			_in = client.getInputStream();
-			_out = new BufferedOutputStream(client.getOutputStream());
+			_in = socket.getInputStream();
+			_out = new BufferedOutputStream(socket.getOutputStream());
 			
 			// ensure that no errors occured and start thread
 			start();
@@ -94,7 +94,7 @@ public class LoginClient extends Thread
 		{
 			try
 			{
-				client.close();
+				socket.close();
 			}
 			catch (IOException e1)
 			{
@@ -175,11 +175,11 @@ public class LoginClient extends Thread
 		}
 		finally
 		{
-			LoginServer.getInstance().removeFloodProtection(_csocket.getInetAddress().getHostAddress());
+			LoginServer.getInstance().removeFloodProtection(_socket.getInetAddress().getHostAddress());
 			
 			try
 			{
-				_csocket.close();
+				_socket.close();
 			}
 			catch (Exception e1)
 			{
@@ -194,9 +194,6 @@ public class LoginClient extends Thread
 		}
 	}
 	
-	/**
-	 * @param sl
-	 */
 	public void sendPacket(AbstractServerPacket sl)
 	{
 		try
@@ -232,7 +229,7 @@ public class LoginClient extends Thread
 	
 	public Socket getSocket()
 	{
-		return _csocket;
+		return _socket;
 	}
 	
 	public void setHasAgreed(boolean ag)
@@ -298,5 +295,30 @@ public class LoginClient extends Thread
 	public RSAPrivateKey getPrivateKey()
 	{
 		return (RSAPrivateKey) _scrambledPair._pair.getPrivate();
+	}
+	
+	@Override
+	public String toString()
+	{
+		final String ip = _socket.getInetAddress().getHostAddress();
+		final StringBuilder sb = new StringBuilder();
+		sb.append(getClass().getSimpleName());
+		sb.append(" [");
+		if (_account != null)
+		{
+			sb.append("Account: ");
+			sb.append(_account);
+		}
+		if (ip != null)
+		{
+			if (_account != null)
+			{
+				sb.append(" - ");
+			}
+			sb.append("IP: ");
+			sb.append(ip);
+		}
+		sb.append("]");
+		return sb.toString();
 	}
 }

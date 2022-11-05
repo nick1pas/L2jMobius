@@ -27,8 +27,8 @@ public class GGAuth extends AbstractServerPacket
 	
 	public GGAuth(int response)
 	{
-		writeC(0x0b);
-		writeD(response);
+		writeByte(0x0b);
+		writeInt(response);
 	}
 	
 	@Override

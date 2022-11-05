@@ -39,8 +39,8 @@ public class BlowFishKey extends AbstractGameServerPacket
 	public BlowFishKey(byte[] decrypt, RSAPrivateKey privateKey)
 	{
 		super(decrypt);
-		final int size = readD();
-		final byte[] tempKey = readB(size);
+		final int size = readInt();
+		final byte[] tempKey = readBytes(size);
 		
 		try
 		{

@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class HennaItemInfo implements IClientOutgoingPacket
+public class HennaItemInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Henna _henna;
@@ -33,27 +32,26 @@ public class HennaItemInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.HENNA_ITEM_INFO.writeId(packet);
-		packet.writeD(_henna.getSymbolId()); // symbol Id
-		packet.writeD(_henna.getDyeId()); // item id of dye
-		packet.writeD(Henna.getRequiredDyeAmount()); // total amount of dye required
-		packet.writeD(_henna.getPrice()); // total amount of adenas required to draw symbol
-		packet.writeD(1); // able to draw or not 0 is false and 1 is true
-		packet.writeD(_player.getAdena());
-		packet.writeD(_player.getINT()); // current INT
-		packet.writeC(_player.getINT() + _henna.getINT()); // equip INT
-		packet.writeD(_player.getSTR()); // current STR
-		packet.writeC(_player.getSTR() + _henna.getSTR()); // equip STR
-		packet.writeD(_player.getCON()); // current CON
-		packet.writeC(_player.getCON() + _henna.getCON()); // equip CON
-		packet.writeD(_player.getMEN()); // current MEM
-		packet.writeC(_player.getMEN() + _henna.getMEN()); // equip MEM
-		packet.writeD(_player.getDEX()); // current DEX
-		packet.writeC(_player.getDEX() + _henna.getDEX()); // equip DEX
-		packet.writeD(_player.getWIT()); // current WIT
-		packet.writeC(_player.getWIT() + _henna.getWIT()); // equip WIT
-		return true;
+		ServerPackets.HENNA_ITEM_INFO.writeId(this);
+		writeInt(_henna.getSymbolId()); // symbol Id
+		writeInt(_henna.getDyeId()); // item id of dye
+		writeInt(Henna.getRequiredDyeAmount()); // total amount of dye required
+		writeInt(_henna.getPrice()); // total amount of adenas required to draw symbol
+		writeInt(1); // able to draw or not 0 is false and 1 is true
+		writeInt(_player.getAdena());
+		writeInt(_player.getINT()); // current INT
+		writeByte(_player.getINT() + _henna.getINT()); // equip INT
+		writeInt(_player.getSTR()); // current STR
+		writeByte(_player.getSTR() + _henna.getSTR()); // equip STR
+		writeInt(_player.getCON()); // current CON
+		writeByte(_player.getCON() + _henna.getCON()); // equip CON
+		writeInt(_player.getMEN()); // current MEM
+		writeByte(_player.getMEN() + _henna.getMEN()); // equip MEM
+		writeInt(_player.getDEX()); // current DEX
+		writeByte(_player.getDEX() + _henna.getDEX()); // equip DEX
+		writeInt(_player.getWIT()); // current WIT
+		writeByte(_player.getWIT() + _henna.getWIT()); // equip WIT
 	}
 }

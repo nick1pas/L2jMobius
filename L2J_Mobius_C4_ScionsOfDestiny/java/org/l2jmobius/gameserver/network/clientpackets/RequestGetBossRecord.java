@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.RaidBossPointsManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -27,16 +27,15 @@ import org.l2jmobius.gameserver.network.serverpackets.ExGetBossRecord;
  * Format: (ch) d
  * @author -Wooden-
  */
-public class RequestGetBossRecord implements IClientIncomingPacket
+public class RequestGetBossRecord implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _bossId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_bossId = packet.readD();
-		return true;
+		_bossId = packet.readInt();
 	}
 	
 	@Override

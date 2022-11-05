@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * <p>
@@ -43,7 +42,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * usually the color equals the level difference to the selected target.
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class MyTargetSelected implements IClientOutgoingPacket
+public class MyTargetSelected extends ServerPacket
 {
 	/** The _object id. */
 	private final int _objectId;
@@ -62,11 +61,10 @@ public class MyTargetSelected implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.MY_TARGET_SELECTED.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeH(_color);
-		return true;
+		ServerPackets.MY_TARGET_SELECTED.writeId(this);
+		writeInt(_objectId);
+		writeShort(_color);
 	}
 }

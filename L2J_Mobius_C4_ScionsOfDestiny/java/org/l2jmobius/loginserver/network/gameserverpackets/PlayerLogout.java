@@ -31,7 +31,7 @@ public class PlayerLogout extends AbstractGameServerPacket
 	public PlayerLogout(byte[] decrypt)
 	{
 		super(decrypt);
-		_account = readS();
+		_account = readString();
 	}
 	
 	/**

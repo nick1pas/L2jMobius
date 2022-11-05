@@ -57,9 +57,9 @@ public class RequestServerList extends AbstractClientPacket
 	public RequestServerList(byte[] rawPacket, LoginClient client)
 	{
 		super(rawPacket, client);
-		_key1 = readD(); // loginOk 1
-		_key2 = readD(); // loginOk 2
-		_data3 = readC(); // ?
+		_key1 = readInt(); // loginOk 1
+		_key2 = readInt(); // loginOk 2
+		_data3 = readByte(); // ?
 	}
 	
 	@Override

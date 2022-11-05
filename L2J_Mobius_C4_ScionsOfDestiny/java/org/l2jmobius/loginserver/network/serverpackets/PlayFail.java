@@ -31,8 +31,8 @@ public class PlayFail extends AbstractServerPacket
 	
 	public PlayFail(int reason)
 	{
-		writeC(0x06);
-		writeC(reason);
+		writeByte(0x06);
+		writeByte(reason);
 	}
 	
 	@Override

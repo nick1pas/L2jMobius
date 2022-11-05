@@ -18,12 +18,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Skill;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class GMViewSkillInfo implements IClientOutgoingPacket
+public class GMViewSkillInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Collection<Skill> _skills;
@@ -35,18 +34,17 @@ public class GMViewSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GM_VIEW_SKILL_INFO.writeId(packet);
-		packet.writeS(_player.getName());
-		packet.writeD(_skills.size());
+		ServerPackets.GM_VIEW_SKILL_INFO.writeId(this);
+		writeString(_player.getName());
+		writeInt(_skills.size());
 		for (Skill skill : _skills)
 		{
-			packet.writeD(skill.isPassive() ? 1 : 0);
-			packet.writeD(skill.getLevel());
-			packet.writeD(skill.getId());
-			// packet.writeC(0); // c5
+			writeInt(skill.isPassive());
+			writeInt(skill.getLevel());
+			writeInt(skill.getId());
+			// writeByte(0); // c5
 		}
-		return true;
 	}
 }

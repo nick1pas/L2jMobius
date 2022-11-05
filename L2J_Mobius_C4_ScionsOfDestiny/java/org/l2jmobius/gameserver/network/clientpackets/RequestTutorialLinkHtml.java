@@ -16,20 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.QuestState;
 import org.l2jmobius.gameserver.network.GameClient;
 
-public class RequestTutorialLinkHtml implements IClientIncomingPacket
+public class RequestTutorialLinkHtml implements ClientPacket
 {
 	private String _bypass;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_bypass = packet.readS();
-		return true;
+		_bypass = packet.readString();
 	}
 	
 	@Override

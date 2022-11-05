@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.TradeList;
 import org.l2jmobius.gameserver.model.TradeList.TradeItem;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.7.2.2.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class PrivateStoreListBuy implements IClientOutgoingPacket
+public class PrivateStoreListBuy extends ServerPacket
 {
 	private final Player _storePlayer;
 	private final Player _player;
@@ -55,26 +54,25 @@ public class PrivateStoreListBuy implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PRIVATE_STORE_LIST_BUY.writeId(packet);
-		packet.writeD(_storePlayer.getObjectId());
-		packet.writeD(_playerAdena);
-		packet.writeD(_items.size());
+		ServerPackets.PRIVATE_STORE_LIST_BUY.writeId(this);
+		writeInt(_storePlayer.getObjectId());
+		writeInt(_playerAdena);
+		writeInt(_items.size());
 		for (TradeList.TradeItem item : _items)
 		{
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItem().getItemId());
-			packet.writeH(item.getEnchant());
+			writeInt(item.getObjectId());
+			writeInt(item.getItem().getItemId());
+			writeShort(item.getEnchant());
 			// writeD(item.getCount()); //give max possible sell amount
-			packet.writeD(item.getCurCount());
-			packet.writeD(item.getItem().getReferencePrice());
-			packet.writeH(0);
-			packet.writeD(item.getItem().getBodyPart());
-			packet.writeH(item.getItem().getType2());
-			packet.writeD(item.getPrice()); // buyers price
-			packet.writeD(item.getCount()); // maximum possible tradecount
+			writeInt(item.getCurCount());
+			writeInt(item.getItem().getReferencePrice());
+			writeShort(0);
+			writeInt(item.getItem().getBodyPart());
+			writeShort(item.getItem().getType2());
+			writeInt(item.getPrice()); // buyers price
+			writeInt(item.getCount()); // maximum possible tradecount
 		}
-		return true;
 	}
 }

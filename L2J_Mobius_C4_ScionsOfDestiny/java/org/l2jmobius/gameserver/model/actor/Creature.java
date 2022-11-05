@@ -104,7 +104,6 @@ import org.l2jmobius.gameserver.network.serverpackets.Attack;
 import org.l2jmobius.gameserver.network.serverpackets.ChangeMoveType;
 import org.l2jmobius.gameserver.network.serverpackets.ChangeWaitType;
 import org.l2jmobius.gameserver.network.serverpackets.ExOlympiadSpelledInfo;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.MagicEffectIcons;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillLaunched;
@@ -115,6 +114,7 @@ import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.PartySpelled;
 import org.l2jmobius.gameserver.network.serverpackets.PetInfo;
 import org.l2jmobius.gameserver.network.serverpackets.Revive;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SetupGauge;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
@@ -385,15 +385,15 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 		getAttackByList().add(creature);
 	}
 	
-	public void broadcastPacket(IClientOutgoingPacket mov)
+	public void broadcastPacket(ServerPacket packet)
 	{
 		for (Player player : getKnownList().getKnownPlayers().values())
 		{
-			player.sendPacket(mov);
+			player.sendPacket(packet);
 		}
 	}
 	
-	public void broadcastPacket(IClientOutgoingPacket mov, int radius)
+	public void broadcastPacket(ServerPacket packet, int radius)
 	{
 		for (Player player : getKnownList().getKnownPlayers().values())
 		{
@@ -402,7 +402,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 				continue;
 			}
 			
-			player.sendPacket(mov);
+			player.sendPacket(packet);
 		}
 	}
 	
@@ -524,9 +524,9 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 	 * <br>
 	 * <b><u>Overridden in</u>:</b><br>
 	 * <li>Player</li><br>
-	 * @param mov the mov
+	 * @param packet the packet
 	 */
-	public void sendPacket(IClientOutgoingPacket mov)
+	public void sendPacket(ServerPacket packet)
 	{
 		// default implementation
 	}

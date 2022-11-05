@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  * @author godson
  */
-public class ExOlympiadUserInfo implements IClientOutgoingPacket
+public class ExOlympiadUserInfo extends ServerPacket
 {
 	private final int _side;
 	private final Player _player;
@@ -40,21 +39,21 @@ public class ExOlympiadUserInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player == null)
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.EX_OLYMPIAD_USER_INFO.writeId(packet);
-		packet.writeC(_side);
-		packet.writeD(_player.getObjectId());
-		packet.writeS(_player.getName());
-		packet.writeD(_player.getClassId().getId());
-		packet.writeD((int) _player.getCurrentHp());
-		packet.writeD(_player.getMaxHp());
-		packet.writeD((int) _player.getCurrentCp());
-		packet.writeD(_player.getMaxCp());
-		return true;
+		
+		ServerPackets.EX_OLYMPIAD_USER_INFO.writeId(this);
+		writeByte(_side);
+		writeInt(_player.getObjectId());
+		writeString(_player.getName());
+		writeInt(_player.getClassId().getId());
+		writeInt((int) _player.getCurrentHp());
+		writeInt(_player.getMaxHp());
+		writeInt((int) _player.getCurrentCp());
+		writeInt(_player.getMaxCp());
 	}
 }

@@ -32,10 +32,10 @@ public class InitLS extends AbstractServerPacket
 	
 	public InitLS(byte[] publickey)
 	{
-		writeC(0x00);
-		writeD(LoginServer.PROTOCOL_REV);
-		writeD(publickey.length);
-		writeB(publickey);
+		writeByte(0x00);
+		writeInt(LoginServer.PROTOCOL_REV);
+		writeInt(publickey.length);
+		writeBytes(publickey);
 	}
 	
 	@Override

@@ -16,14 +16,12 @@
  */
 package org.l2jmobius.gameserver.network;
 
-import org.l2jmobius.commons.network.ICrypt;
-
-import io.netty.buffer.ByteBuf;
+import org.l2jmobius.commons.network.EncryptionInterface;
 
 /**
  * @author KenM
  */
-public class Crypt implements ICrypt
+public class Encryption implements EncryptionInterface
 {
 	private final byte[] _inKey = new byte[8];
 	private final byte[] _outKey = new byte[8];
@@ -36,35 +34,7 @@ public class Crypt implements ICrypt
 	}
 	
 	@Override
-	public void decrypt(ByteBuf buf)
-	{
-		if (!_isEnabled)
-		{
-			return;
-		}
-		
-		int a = 0;
-		while (buf.isReadable())
-		{
-			final int b = buf.readByte() & 0xff;
-			buf.setByte(buf.readerIndex() - 1, b ^ _inKey[(buf.readerIndex() - 1) & 7] ^ a);
-			a = b;
-		}
-		
-		// Shift key.
-		int old = _inKey[0] & 0xff;
-		old |= (_inKey[1] << 8) & 0xff00;
-		old |= (_inKey[2] << 16) & 0xff0000;
-		old |= (_inKey[3] << 24) & 0xff000000;
-		old += buf.writerIndex();
-		_inKey[0] = (byte) (old & 0xff);
-		_inKey[1] = (byte) ((old >> 8) & 0xff);
-		_inKey[2] = (byte) ((old >> 16) & 0xff);
-		_inKey[3] = (byte) ((old >> 24) & 0xff);
-	}
-	
-	@Override
-	public void encrypt(ByteBuf buf)
+	public void encrypt(byte[] data, int offset, int size)
 	{
 		if (!_isEnabled)
 		{
@@ -73,11 +43,11 @@ public class Crypt implements ICrypt
 		}
 		
 		int a = 0;
-		while (buf.isReadable())
+		for (int i = 0; i < size; i++)
 		{
-			final int b = buf.readByte() & 0xff;
-			a = b ^ _outKey[(buf.readerIndex() - 1) & 7] ^ a;
-			buf.setByte(buf.readerIndex() - 1, a);
+			final int b = data[offset + i] & 0xff;
+			a = b ^ _outKey[i & 7] ^ a;
+			data[offset + i] = (byte) a;
 		}
 		
 		// Shift key.
@@ -85,10 +55,38 @@ public class Crypt implements ICrypt
 		old |= (_outKey[1] << 8) & 0xff00;
 		old |= (_outKey[2] << 16) & 0xff0000;
 		old |= (_outKey[3] << 24) & 0xff000000;
-		old += buf.writerIndex();
+		old += size;
 		_outKey[0] = (byte) (old & 0xff);
 		_outKey[1] = (byte) ((old >> 8) & 0xff);
 		_outKey[2] = (byte) ((old >> 16) & 0xff);
 		_outKey[3] = (byte) ((old >> 24) & 0xff);
+	}
+	
+	@Override
+	public void decrypt(byte[] data, int offset, int size)
+	{
+		if (!_isEnabled)
+		{
+			return;
+		}
+		
+		int a = 0;
+		for (int i = 0; i < size; i++)
+		{
+			final int b = data[offset + i] & 0xff;
+			data[offset + i] = (byte) (b ^ _inKey[i & 7] ^ a);
+			a = b;
+		}
+		
+		// Shift key.
+		int old = _inKey[0] & 0xff;
+		old |= (_inKey[1] << 8) & 0xff00;
+		old |= (_inKey[2] << 16) & 0xff0000;
+		old |= (_inKey[3] << 24) & 0xff000000;
+		old += size;
+		_inKey[0] = (byte) (old & 0xff);
+		_inKey[1] = (byte) ((old >> 8) & 0xff);
+		_inKey[2] = (byte) ((old >> 16) & 0xff);
+		_inKey[3] = (byte) ((old >> 24) & 0xff);
 	}
 }

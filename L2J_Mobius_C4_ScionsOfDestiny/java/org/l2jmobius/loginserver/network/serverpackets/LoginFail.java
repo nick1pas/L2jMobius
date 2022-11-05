@@ -31,8 +31,8 @@ public class LoginFail extends AbstractServerPacket
 	
 	public LoginFail(int reason)
 	{
-		writeC(0x01);
-		writeD(reason);
+		writeByte(0x01);
+		writeInt(reason);
 	}
 	
 	@Override

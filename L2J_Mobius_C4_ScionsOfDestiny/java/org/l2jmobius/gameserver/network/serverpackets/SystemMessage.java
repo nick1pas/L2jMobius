@@ -19,12 +19,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 
-public class SystemMessage implements IClientOutgoingPacket
+public class SystemMessage extends ServerPacket
 {
 	// Packets d d (d S/d d/d dd) -> 0 - String 1-number 2-textref npcname (1000000-1002655) 3-textref itemname 4-textref skills 5-??
 	private static final int TYPE_ZONE_NAME = 7;
@@ -120,20 +119,20 @@ public class SystemMessage implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SYSTEM_MESSAGE.writeId(packet);
-		packet.writeD(_messageId);
-		packet.writeD(_types.size());
+		ServerPackets.SYSTEM_MESSAGE.writeId(this);
+		writeInt(_messageId);
+		writeInt(_types.size());
 		for (int i = 0; i < _types.size(); i++)
 		{
 			final int t = _types.get(i).intValue();
-			packet.writeD(t);
+			writeInt(t);
 			switch (t)
 			{
 				case TYPE_TEXT:
 				{
-					packet.writeS((String) _values.get(i));
+					writeString((String) _values.get(i));
 					break;
 				}
 				case TYPE_NUMBER:
@@ -141,14 +140,14 @@ public class SystemMessage implements IClientOutgoingPacket
 				case TYPE_ITEM_NAME:
 				{
 					final int t1 = ((Integer) _values.get(i)).intValue();
-					packet.writeD(t1);
+					writeInt(t1);
 					break;
 				}
 				case TYPE_SKILL_NAME:
 				{
 					final int t1 = ((Integer) _values.get(i)).intValue();
-					packet.writeD(t1); // Skill Id
-					packet.writeD(_skillLevel); // Skill lvl
+					writeInt(t1); // Skill Id
+					writeInt(_skillLevel); // Skill lvl
 					break;
 				}
 				case TYPE_ZONE_NAME:
@@ -156,14 +155,13 @@ public class SystemMessage implements IClientOutgoingPacket
 					final int t1 = ((int[]) _values.get(i))[0];
 					final int t2 = ((int[]) _values.get(i))[1];
 					final int t3 = ((int[]) _values.get(i))[2];
-					packet.writeD(t1);
-					packet.writeD(t2);
-					packet.writeD(t3);
+					writeInt(t1);
+					writeInt(t2);
+					writeInt(t3);
 					break;
 				}
 			}
 		}
-		return true;
 	}
 	
 	public int getMessageID()

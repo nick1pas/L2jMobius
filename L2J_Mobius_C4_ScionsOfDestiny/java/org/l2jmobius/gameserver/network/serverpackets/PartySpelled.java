@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.actor.instance.Servitor;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.3.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class PartySpelled implements IClientOutgoingPacket
+public class PartySpelled extends ServerPacket
 {
 	private final List<Effect> _effects;
 	private final Creature _creature;
@@ -54,27 +53,28 @@ public class PartySpelled implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_creature == null)
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.PARTY_SPELLED.writeId(packet);
-		packet.writeD(_creature instanceof Servitor ? 2 : _creature instanceof Pet ? 1 : 0);
-		packet.writeD(_creature.getObjectId());
+		
+		ServerPackets.PARTY_SPELLED.writeId(this);
+		writeInt(_creature instanceof Servitor ? 2 : _creature instanceof Pet ? 1 : 0);
+		writeInt(_creature.getObjectId());
 		// C4 does not support more than 20 effects in party window, so limiting them makes no difference.
 		// This check ignores first effects, so there is space for last effects to be viewable by party members.
 		// It may also help healers be aware of cursed members.
 		int size = 0;
 		if (_effects.size() > 20)
 		{
-			packet.writeD(20);
+			writeInt(20);
 			size = _effects.size() - 20;
 		}
 		else
 		{
-			packet.writeD(_effects.size());
+			writeInt(_effects.size());
 		}
 		for (; size < _effects.size(); size++)
 		{
@@ -83,11 +83,10 @@ public class PartySpelled implements IClientOutgoingPacket
 			{
 				continue;
 			}
-			packet.writeD(temp._skillId);
-			packet.writeH(temp._dat);
-			packet.writeD(temp._duration / 1000);
+			writeInt(temp._skillId);
+			writeShort(temp._dat);
+			writeInt(temp._duration / 1000);
 		}
-		return true;
 	}
 	
 	public void addPartySpelledEffect(int skillId, int dat, int duration)

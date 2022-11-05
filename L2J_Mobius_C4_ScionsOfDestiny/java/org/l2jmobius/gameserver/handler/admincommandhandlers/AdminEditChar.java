@@ -967,7 +967,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		if (player.getClient() != null)
 		{
 			account = player.getClient().getAccountName();
-			ip = player.getClient().getIpAddress();
+			ip = player.getClient().getIp();
 		}
 		
 		final NpcHtmlMessage adminReply = new NpcHtmlMessage(5);
@@ -1195,12 +1195,12 @@ public class AdminEditChar implements IAdminCommandHandler
 		final Map<String, Integer> dualboxIPs = new HashMap<>();
 		for (Player player : players)
 		{
-			if ((player.getClient() == null) || (player.getClient().getConnectionAddress() == null) || (player.getClient().getConnectionAddress() == null) || (player.getClient().getConnectionAddress().getHostAddress() == null))
+			if ((player.getClient() == null) || (player.getClient().getIp() == null))
 			{
 				continue;
 			}
 			
-			ip = player.getClient().getConnectionAddress().getHostAddress();
+			ip = player.getClient().getIp();
 			if (ipMap.get(ip) == null)
 			{
 				ipMap.put(ip, new ArrayList<Player>());
@@ -1260,12 +1260,12 @@ public class AdminEditChar implements IAdminCommandHandler
 		
 		for (Player player : players)
 		{
-			if ((player.getClient() == null) || (player.getClient().getConnectionAddress() == null) || (player.getClient().getConnectionAddress() == null) || (player.getClient().getConnectionAddress().getHostAddress() == null))
+			if ((player.getClient() == null) || (player.getClient().getIp() == null))
 			{
 				continue;
 			}
 			
-			ip = player.getClient().getConnectionAddress().getHostAddress();
+			ip = player.getClient().getIp();
 			if (ip.equals(ipAdress))
 			{
 				name = player.getName();

@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author -Wooden-
  */
-public class PledgeReceiveMemberInfo implements IClientOutgoingPacket
+public class PledgeReceiveMemberInfo extends ServerPacket
 {
 	private final ClanMember _member;
 	private final Player _player;
@@ -36,25 +35,25 @@ public class PledgeReceiveMemberInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_RECEIVE_MEMBER_INFO.writeId(packet);
-		packet.writeD(_member.getClan().getClanId());
-		packet.writeS(_member.getClan().getName());
-		packet.writeS(_member.getClan().getLeaderName());
-		packet.writeD(_member.getClan().getCrestId()); // crest id .. is used again
-		packet.writeD(_member.getClan().getLevel());
-		packet.writeD(_member.getClan().getCastleId());
-		packet.writeD(_member.getClan().getHideoutId());
-		packet.writeD(0);
-		packet.writeD(_player.getLevel()); // ??
-		packet.writeD(_member.getClan().getDissolvingExpiryTime() > System.currentTimeMillis() ? 3 : 0);
-		packet.writeD(0);
-		packet.writeD(_member.getClan().getAllyId());
-		packet.writeS(_member.getClan().getAllyName());
-		packet.writeD(_member.getClan().getAllyCrestId());
-		packet.writeD(_member.getClan().isAtWar()); // new c3
-		packet.writeD(_member.getClan().getMembers().size() - 1);
+		ServerPackets.PLEDGE_RECEIVE_MEMBER_INFO.writeId(this);
+		writeInt(_member.getClan().getClanId());
+		writeString(_member.getClan().getName());
+		writeString(_member.getClan().getLeaderName());
+		writeInt(_member.getClan().getCrestId()); // crest id .. is used again
+		writeInt(_member.getClan().getLevel());
+		writeInt(_member.getClan().getCastleId());
+		writeInt(_member.getClan().getHideoutId());
+		writeInt(0);
+		writeInt(_player.getLevel()); // ??
+		writeInt(_member.getClan().getDissolvingExpiryTime() > System.currentTimeMillis() ? 3 : 0);
+		writeInt(0);
+		writeInt(_member.getClan().getAllyId());
+		writeString(_member.getClan().getAllyName());
+		writeInt(_member.getClan().getAllyCrestId());
+		writeInt(_member.getClan().isAtWar()); // new c3
+		writeInt(_member.getClan().getMembers().size() - 1);
 		for (ClanMember m : _member.getClan().getMembers())
 		{
 			// TODO is this c4?
@@ -62,13 +61,12 @@ public class PledgeReceiveMemberInfo implements IClientOutgoingPacket
 			{
 				continue;
 			}
-			packet.writeS(m.getName());
-			packet.writeD(m.getLevel());
-			packet.writeD(m.getClassId());
-			packet.writeD(0);
-			packet.writeD(1);
-			packet.writeD(m.isOnline() ? m.getObjectId() : 0); // 1=online 0=offline
+			writeString(m.getName());
+			writeInt(m.getLevel());
+			writeInt(m.getClassId());
+			writeInt(0);
+			writeInt(1);
+			writeInt(m.isOnline() ? m.getObjectId() : 0); // 1=online 0=offline
 		}
-		return true;
 	}
 }

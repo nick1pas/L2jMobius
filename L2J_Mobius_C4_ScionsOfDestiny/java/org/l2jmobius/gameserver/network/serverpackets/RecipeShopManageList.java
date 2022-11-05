@@ -18,17 +18,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ManufactureItem;
 import org.l2jmobius.gameserver.model.ManufactureList;
 import org.l2jmobius.gameserver.model.RecipeList;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * dd d(dd) d(ddd)
  */
-public class RecipeShopManageList implements IClientOutgoingPacket
+public class RecipeShopManageList extends ServerPacket
 {
 	private final Player _seller;
 	private final boolean _isDwarven;
@@ -61,42 +60,41 @@ public class RecipeShopManageList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.RECIPE_SHOP_MANAGE_LIST.writeId(packet);
-		packet.writeD(_seller.getObjectId());
-		packet.writeD(_seller.getAdena());
-		packet.writeD(_isDwarven ? 0 : 1);
+		ServerPackets.RECIPE_SHOP_MANAGE_LIST.writeId(this);
+		writeInt(_seller.getObjectId());
+		writeInt(_seller.getAdena());
+		writeInt(!_isDwarven);
 		if (_recipes == null)
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		else
 		{
-			packet.writeD(_recipes.size()); // number of items in recipe book
+			writeInt(_recipes.size()); // number of items in recipe book
 			int count = 0;
 			for (RecipeList recipe : _recipes)
 			{
 				count++;
-				packet.writeD(recipe.getId());
-				packet.writeD(count);
+				writeInt(recipe.getId());
+				writeInt(count);
 			}
 		}
 		if (_seller.getCreateList() == null)
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		else
 		{
 			final ManufactureList list = _seller.getCreateList();
-			packet.writeD(list.size());
+			writeInt(list.size());
 			for (ManufactureItem item : list.getList())
 			{
-				packet.writeD(item.getRecipeId());
-				packet.writeD(0);
-				packet.writeD(item.getCost());
+				writeInt(item.getRecipeId());
+				writeInt(0);
+				writeInt(item.getCost());
 			}
 		}
-		return true;
 	}
 }

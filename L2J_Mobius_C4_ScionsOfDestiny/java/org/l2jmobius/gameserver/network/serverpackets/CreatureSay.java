@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class CreatureSay implements IClientOutgoingPacket
+public class CreatureSay extends ServerPacket
 {
 	private final int _objectId;
 	private final ChatType _chatType;
@@ -39,6 +38,8 @@ public class CreatureSay implements IClientOutgoingPacket
 	 */
 	public CreatureSay(int objectId, ChatType chatType, String charName, String text)
 	{
+		super(128);
+		
 		_objectId = objectId;
 		_chatType = chatType;
 		_charName = charName;
@@ -46,18 +47,17 @@ public class CreatureSay implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CREATURE_SAY.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_chatType.getClientId());
-		packet.writeS(_charName);
-		packet.writeS(_text);
-		return true;
+		ServerPackets.CREATURE_SAY.writeId(this);
+		writeInt(_objectId);
+		writeInt(_chatType.getClientId());
+		writeString(_charName);
+		writeString(_text);
 	}
 	
 	@Override
-	public void runImpl(Player player)
+	public void run(Player player)
 	{
 		if (player != null)
 		{

@@ -16,16 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.model.RecipeList;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * format dddd
  */
-public class RecipeItemMakeInfo implements IClientOutgoingPacket
+public class RecipeItemMakeInfo extends ServerPacket
 {
 	private final int _id;
 	private final Player _player;
@@ -46,18 +46,20 @@ public class RecipeItemMakeInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		final RecipeList recipe = RecipeData.getInstance().getRecipe(_id);
-		if (recipe != null)
+		if (recipe == null)
 		{
-			OutgoingPackets.RECIPE_ITEM_MAKE_INFO.writeId(packet);
-			packet.writeD(_id);
-			packet.writeD(recipe.isDwarvenRecipe() ? 0 : 1); // 0 = Dwarven - 1 = Common
-			packet.writeD((int) _player.getCurrentMp());
-			packet.writeD(_player.getMaxMp());
-			packet.writeD(_success ? 1 : 0); // item creation success/failed
+			PacketLogger.info("Character: " + _player + ": Requested unexisting recipe with id = " + _id);
+			return;
 		}
-		return true;
+		
+		ServerPackets.RECIPE_ITEM_MAKE_INFO.writeId(this);
+		writeInt(_id);
+		writeInt(!recipe.isDwarvenRecipe()); // 0 = Dwarven - 1 = Common
+		writeInt((int) _player.getCurrentMp());
+		writeInt(_player.getMaxMp());
+		writeInt(_success); // item creation success/failed
 	}
 }

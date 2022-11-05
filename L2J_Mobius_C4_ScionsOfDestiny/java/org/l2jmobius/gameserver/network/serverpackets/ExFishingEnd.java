@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Format: (ch) dc d: character object id c: 1 if won 0 if failed
  * @author -Wooden-
  */
-public class ExFishingEnd implements IClientOutgoingPacket
+public class ExFishingEnd extends ServerPacket
 {
 	private final boolean _win;
 	Creature _creature;
@@ -37,11 +36,10 @@ public class ExFishingEnd implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_FISHING_END.writeId(packet);
-		packet.writeD(_creature.getObjectId());
-		packet.writeC(_win ? 1 : 0);
-		return true;
+		ServerPackets.EX_FISHING_END.writeId(this);
+		writeInt(_creature.getObjectId());
+		writeByte(_win);
 	}
 }

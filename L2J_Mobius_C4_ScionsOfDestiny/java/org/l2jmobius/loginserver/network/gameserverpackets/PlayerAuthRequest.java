@@ -34,12 +34,12 @@ public class PlayerAuthRequest extends AbstractGameServerPacket
 	{
 		super(decrypt);
 		
-		_account = readS();
+		_account = readString();
 		
-		final int playKey1 = readD();
-		final int playKey2 = readD();
-		final int loginKey1 = readD();
-		final int loginKey2 = readD();
+		final int playKey1 = readInt();
+		final int playKey2 = readInt();
+		final int loginKey1 = readInt();
+		final int loginKey2 = readInt();
 		_sessionKey = new SessionKey(loginKey1, loginKey2, playKey1, playKey2);
 	}
 	

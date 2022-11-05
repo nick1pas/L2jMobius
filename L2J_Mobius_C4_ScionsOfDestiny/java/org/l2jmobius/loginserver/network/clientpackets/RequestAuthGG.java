@@ -58,11 +58,11 @@ public class RequestAuthGG extends AbstractClientPacket
 	public RequestAuthGG(byte[] rawPacket, LoginClient client)
 	{
 		super(rawPacket, client);
-		_sessionId = readD();
-		_data1 = readD();
-		_data2 = readD();
-		_data3 = readD();
-		_data4 = readD();
+		_sessionId = readInt();
+		_data1 = readInt();
+		_data2 = readInt();
+		_data3 = readInt();
+		_data4 = readInt();
 	}
 	
 	@Override

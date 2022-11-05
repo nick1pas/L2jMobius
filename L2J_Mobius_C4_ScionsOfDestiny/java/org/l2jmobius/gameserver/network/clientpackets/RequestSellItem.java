@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.model.WorldObject;
@@ -33,40 +33,38 @@ import org.l2jmobius.gameserver.network.serverpackets.ItemList;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 
-public class RequestSellItem implements IClientIncomingPacket
+public class RequestSellItem implements ClientPacket
 {
 	private int _listId;
 	private int _count;
 	private int[] _items; // count*3
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_listId = packet.readD();
-		_count = packet.readD();
-		if ((_count <= 0) || ((_count * 12) > packet.getReadableBytes()) || (_count > Config.MAX_ITEM_IN_PACKET))
+		_listId = packet.readInt();
+		_count = packet.readInt();
+		if ((_count <= 0) || ((_count * 12) > packet.getRemainingLength()) || (_count > Config.MAX_ITEM_IN_PACKET))
 		{
-			_count = 0;
-			return false;
+			_count = -1;
+			return;
 		}
 		
 		_items = new int[_count * 3];
 		for (int i = 0; i < _count; i++)
 		{
-			final int objectId = packet.readD();
+			final int objectId = packet.readInt();
 			_items[(i * 3) + 0] = objectId;
-			final int itemId = packet.readD();
+			final int itemId = packet.readInt();
 			_items[(i * 3) + 1] = itemId;
-			final long cnt = packet.readD();
+			final long cnt = packet.readInt();
 			if ((cnt > Integer.MAX_VALUE) || (cnt <= 0))
 			{
-				_count = 0;
-				return false;
+				_count = -1;
+				return;
 			}
 			_items[(i * 3) + 2] = (int) cnt;
 		}
-		
-		return true;
 	}
 	
 	@Override
@@ -74,6 +72,11 @@ public class RequestSellItem implements IClientIncomingPacket
 	{
 		final Player player = client.getPlayer();
 		if (player == null)
+		{
+			return;
+		}
+		
+		if (_count == -1)
 		{
 			return;
 		}

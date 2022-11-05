@@ -19,10 +19,9 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExEnchantSkillInfo implements IClientOutgoingPacket
+public class ExEnchantSkillInfo extends ServerPacket
 {
 	private final List<Req> _reqs;
 	private final int _id;
@@ -63,22 +62,21 @@ public class ExEnchantSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_SKILL_INFO.writeId(packet);
-		packet.writeD(_id);
-		packet.writeD(_level);
-		packet.writeD(_spCost);
-		packet.writeD(_xpCost);
-		packet.writeD(_rate);
-		packet.writeD(_reqs.size());
+		ServerPackets.EX_ENCHANT_SKILL_INFO.writeId(this);
+		writeInt(_id);
+		writeInt(_level);
+		writeInt(_spCost);
+		writeInt(_xpCost);
+		writeInt(_rate);
+		writeInt(_reqs.size());
 		for (Req temp : _reqs)
 		{
-			packet.writeD(temp.type);
-			packet.writeD(temp.id);
-			packet.writeD(temp.count);
-			packet.writeD(temp.unk);
+			writeInt(temp.type);
+			writeInt(temp.id);
+			writeInt(temp.count);
+			writeInt(temp.unk);
 		}
-		return true;
 	}
 }

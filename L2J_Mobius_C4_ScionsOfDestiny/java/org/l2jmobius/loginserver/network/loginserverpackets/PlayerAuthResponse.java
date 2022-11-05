@@ -25,9 +25,9 @@ public class PlayerAuthResponse extends AbstractServerPacket
 {
 	public PlayerAuthResponse(String account, boolean response)
 	{
-		writeC(0x03);
-		writeS(account);
-		writeC(response ? 1 : 0);
+		writeByte(0x03);
+		writeString(account);
+		writeByte(response ? 1 : 0);
 	}
 	
 	@Override

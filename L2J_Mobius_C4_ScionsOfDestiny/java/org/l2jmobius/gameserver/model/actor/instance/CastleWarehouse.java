@@ -21,6 +21,7 @@ import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.WareHouseDepositList;
 import org.l2jmobius.gameserver.network.serverpackets.WareHouseWithdrawalList;
@@ -133,7 +134,7 @@ public class CastleWarehouse extends Folk
 		if ((player.getActiveEnchantItem() != null) || (player.getActiveTradeList() != null))
 		{
 			LOGGER.info(player + " trying to use enchant exploit, ban this player!");
-			player.closeNetConnection();
+			player.getClient().close(LeaveWorld.STATIC_PACKET);
 			return;
 		}
 		

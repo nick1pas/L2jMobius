@@ -20,16 +20,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.4.2.3.2.4 $ $Date: 2005/03/27 15:29:39 $
  */
-public class SellList implements IClientOutgoingPacket
+public class SellList extends ServerPacket
 {
 	private final Player _player;
 	private final int _money;
@@ -54,26 +53,25 @@ public class SellList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SELL_LIST.writeId(packet);
-		packet.writeD(_money);
-		packet.writeD(0);
-		packet.writeH(_selllist.size());
+		ServerPackets.SELL_LIST.writeId(this);
+		writeInt(_money);
+		writeInt(0);
+		writeShort(_selllist.size());
 		for (Item item : _selllist)
 		{
-			packet.writeH(item.getTemplate().getType1());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItemId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getTemplate().getType2());
-			packet.writeH(0);
-			packet.writeD(item.getTemplate().getBodyPart());
-			packet.writeH(item.getEnchantLevel());
-			packet.writeH(0);
-			packet.writeH(0);
-			packet.writeD(Config.MERCHANT_ZERO_SELL_PRICE ? 0 : item.getTemplate().getReferencePrice() / 2);
+			writeShort(item.getTemplate().getType1());
+			writeInt(item.getObjectId());
+			writeInt(item.getItemId());
+			writeInt(item.getCount());
+			writeShort(item.getTemplate().getType2());
+			writeShort(0);
+			writeInt(item.getTemplate().getBodyPart());
+			writeShort(item.getEnchantLevel());
+			writeShort(0);
+			writeShort(0);
+			writeInt(Config.MERCHANT_ZERO_SELL_PRICE ? 0 : item.getTemplate().getReferencePrice() / 2);
 		}
-		return true;
 	}
 }

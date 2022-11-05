@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.ItemRequest;
 import org.l2jmobius.gameserver.model.TradeList;
 import org.l2jmobius.gameserver.model.TradeList.TradeItem;
@@ -32,20 +32,20 @@ import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.Util;
 
-public class RequestPrivateStoreBuy implements IClientIncomingPacket
+public class RequestPrivateStoreBuy implements ClientPacket
 {
 	private int _storePlayerId;
 	private int _count;
 	private ItemRequest[] _items;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_storePlayerId = packet.readD();
-		_count = packet.readD();
+		_storePlayerId = packet.readInt();
+		_count = packet.readInt();
 		
 		// count*12 is the size of a for iteration of each item
-		if ((_count < 0) || ((_count * 12) > packet.getReadableBytes()) || (_count > Config.MAX_ITEM_IN_PACKET))
+		if ((_count < 0) || ((_count * 12) > packet.getRemainingLength()) || (_count > Config.MAX_ITEM_IN_PACKET))
 		{
 			_count = 0;
 		}
@@ -53,17 +53,15 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 		_items = new ItemRequest[_count];
 		for (int i = 0; i < _count; i++)
 		{
-			final int objectId = packet.readD();
-			long count = packet.readD();
+			final int objectId = packet.readInt();
+			long count = packet.readInt();
 			if (count > Integer.MAX_VALUE)
 			{
 				count = Integer.MAX_VALUE;
 			}
-			final int price = packet.readD();
+			final int price = packet.readInt();
 			_items[i] = new ItemRequest(objectId, (int) count, price);
 		}
-		
-		return true;
 	}
 	
 	@Override

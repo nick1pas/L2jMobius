@@ -16,22 +16,21 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.HennaData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.HennaEquipList;
 
-public class RequestHennaList implements IClientIncomingPacket
+public class RequestHennaList implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _unknown;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_unknown = packet.readD(); // ??
-		return true;
+		_unknown = packet.readInt(); // ??
 	}
 	
 	@Override

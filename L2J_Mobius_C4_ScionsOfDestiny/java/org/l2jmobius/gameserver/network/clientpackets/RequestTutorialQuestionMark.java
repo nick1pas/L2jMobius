@@ -16,20 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.QuestState;
 import org.l2jmobius.gameserver.network.GameClient;
 
-public class RequestTutorialQuestionMark implements IClientIncomingPacket
+public class RequestTutorialQuestionMark implements ClientPacket
 {
 	int _number = 0;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_number = packet.readD();
-		return true;
+		_number = packet.readInt();
 	}
 	
 	@Override

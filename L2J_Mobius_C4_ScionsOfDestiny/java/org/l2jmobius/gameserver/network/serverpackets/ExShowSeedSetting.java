@@ -18,19 +18,18 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ManorSeedData;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.CastleManorManager;
 import org.l2jmobius.gameserver.instancemanager.CastleManorManager.SeedProduction;
 import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * format(packet 0xFE) ch dd [ddcdcdddddddd] c - id h - sub id d - manor id d - size [ d - seed id d - level c d - reward 1 id c d - reward 2 id d - next sale limit d - price for castle to produce 1 d - min seed price d - max seed price d - today sales d - today price d - next sales d - next price ]
  * @author l3x
  */
-public class ExShowSeedSetting implements IClientOutgoingPacket
+public class ExShowSeedSetting extends ServerPacket
 {
 	private final int _manorId;
 	private final int _count;
@@ -81,28 +80,27 @@ public class ExShowSeedSetting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_SEED_SETTING.writeId(packet);
-		packet.writeD(_manorId); // manor id
-		packet.writeD(_count); // size
+		ServerPackets.EX_SHOW_SEED_SETTING.writeId(this);
+		writeInt(_manorId); // manor id
+		writeInt(_count); // size
 		for (int i = 0; i < _count; i++)
 		{
-			packet.writeD(_seedData[(i * 12) + 0]); // seed id
-			packet.writeD(_seedData[(i * 12) + 1]); // level
-			packet.writeC(1);
-			packet.writeD(_seedData[(i * 12) + 2]); // reward 1 id
-			packet.writeC(1);
-			packet.writeD(_seedData[(i * 12) + 3]); // reward 2 id
-			packet.writeD(_seedData[(i * 12) + 4]); // next sale limit
-			packet.writeD(_seedData[(i * 12) + 5]); // price for castle to produce 1
-			packet.writeD(_seedData[(i * 12) + 6]); // min seed price
-			packet.writeD(_seedData[(i * 12) + 7]); // max seed price
-			packet.writeD(_seedData[(i * 12) + 8]); // today sales
-			packet.writeD(_seedData[(i * 12) + 9]); // today price
-			packet.writeD(_seedData[(i * 12) + 10]); // next sales
-			packet.writeD(_seedData[(i * 12) + 11]); // next price
+			writeInt(_seedData[(i * 12) + 0]); // seed id
+			writeInt(_seedData[(i * 12) + 1]); // level
+			writeByte(1);
+			writeInt(_seedData[(i * 12) + 2]); // reward 1 id
+			writeByte(1);
+			writeInt(_seedData[(i * 12) + 3]); // reward 2 id
+			writeInt(_seedData[(i * 12) + 4]); // next sale limit
+			writeInt(_seedData[(i * 12) + 5]); // price for castle to produce 1
+			writeInt(_seedData[(i * 12) + 6]); // min seed price
+			writeInt(_seedData[(i * 12) + 7]); // max seed price
+			writeInt(_seedData[(i * 12) + 8]); // today sales
+			writeInt(_seedData[(i * 12) + 9]); // today price
+			writeInt(_seedData[(i * 12) + 10]); // next sales
+			writeInt(_seedData[(i * 12) + 11]); // next price
 		}
-		return true;
 	}
 }

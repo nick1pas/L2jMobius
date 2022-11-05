@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ExAutoSoulShot;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-public class RequestAutoSoulShot implements IClientIncomingPacket
+public class RequestAutoSoulShot implements ClientPacket
 {
 	// format cd
 	private int _itemId;
@@ -59,11 +59,10 @@ public class RequestAutoSoulShot implements IClientIncomingPacket
 	}
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemId = packet.readD();
-		_type = packet.readD();
-		return true;
+		_itemId = packet.readInt();
+		_type = packet.readInt();
 	}
 	
 	@Override

@@ -23,19 +23,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.8.2.4.2.6 $ $Date: 2005/04/06 16:13:46 $
  */
-public class CharSelectInfo implements IClientOutgoingPacket
+public class CharSelectInfo extends ServerPacket
 {
 	private final String _loginName;
 	private final int _sessionId;
@@ -68,11 +67,11 @@ public class CharSelectInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_SELECT_INFO.writeId(packet);
+		ServerPackets.CHAR_SELECT_INFO.writeId(this);
 		final int size = _characterPackages.size();
-		packet.writeD(size);
+		writeInt(size);
 		long lastAccess = 0;
 		if (_activeId == -1)
 		{
@@ -88,71 +87,71 @@ public class CharSelectInfo implements IClientOutgoingPacket
 		for (int i = 0; i < size; i++)
 		{
 			final CharSelectInfoPackage charInfoPackage = _characterPackages.get(i);
-			packet.writeS(charInfoPackage.getName());
-			packet.writeD(charInfoPackage.getCharId());
-			packet.writeS(_loginName);
-			packet.writeD(_sessionId);
-			packet.writeD(charInfoPackage.getClanId());
-			packet.writeD(0); // ??
-			packet.writeD(charInfoPackage.getSex());
-			packet.writeD(charInfoPackage.getRace());
-			packet.writeD(charInfoPackage.getBaseClassId());
-			packet.writeD(1); // active ??
-			packet.writeD(0); // x
-			packet.writeD(0); // y
-			packet.writeD(0); // z
-			packet.writeF(charInfoPackage.getCurrentHp()); // hp cur
-			packet.writeF(charInfoPackage.getCurrentMp()); // mp cur
-			packet.writeD(charInfoPackage.getSp());
-			packet.writeD((int) charInfoPackage.getExp());
-			packet.writeD(charInfoPackage.getLevel());
-			packet.writeD(charInfoPackage.getKarma()); // karma
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_UNDER));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_REAR));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEAR));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_NECK));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RFINGER));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LFINGER));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HEAD));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LHAND));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_GLOVES));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_CHEST));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEGS));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_FEET));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_BACK));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LRHAND));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_UNDER));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_BACK));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
-			packet.writeD(charInfoPackage.getHairStyle());
-			packet.writeD(charInfoPackage.getHairColor());
-			packet.writeD(charInfoPackage.getFace());
-			packet.writeF(charInfoPackage.getMaxHp()); // hp max
-			packet.writeF(charInfoPackage.getMaxMp()); // mp max
+			writeString(charInfoPackage.getName());
+			writeInt(charInfoPackage.getCharId());
+			writeString(_loginName);
+			writeInt(_sessionId);
+			writeInt(charInfoPackage.getClanId());
+			writeInt(0); // ??
+			writeInt(charInfoPackage.getSex());
+			writeInt(charInfoPackage.getRace());
+			writeInt(charInfoPackage.getBaseClassId());
+			writeInt(1); // active ??
+			writeInt(0); // x
+			writeInt(0); // y
+			writeInt(0); // z
+			writeDouble(charInfoPackage.getCurrentHp()); // hp cur
+			writeDouble(charInfoPackage.getCurrentMp()); // mp cur
+			writeInt(charInfoPackage.getSp());
+			writeInt((int) charInfoPackage.getExp());
+			writeInt(charInfoPackage.getLevel());
+			writeInt(charInfoPackage.getKarma()); // karma
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_UNDER));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_REAR));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEAR));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_NECK));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RFINGER));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LFINGER));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HEAD));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LHAND));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_GLOVES));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_CHEST));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEGS));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_FEET));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_BACK));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LRHAND));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_UNDER));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_BACK));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LRHAND));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
+			writeInt(charInfoPackage.getHairStyle());
+			writeInt(charInfoPackage.getHairColor());
+			writeInt(charInfoPackage.getFace());
+			writeDouble(charInfoPackage.getMaxHp()); // hp max
+			writeDouble(charInfoPackage.getMaxMp()); // mp max
 			final long deleteTime = charInfoPackage.getDeleteTimer();
 			final int accesslevels = charInfoPackage.getAccessLevel();
 			int deletedays = 0;
@@ -164,21 +163,20 @@ public class CharSelectInfo implements IClientOutgoingPacket
 			{
 				deletedays = -1; // like L2OFF player looks dead if he is banned.
 			}
-			packet.writeD(deletedays); // days left before
+			writeInt(deletedays); // days left before
 			// delete .. if != 0
 			// then char is inactive
-			packet.writeD(charInfoPackage.getClassId());
+			writeInt(charInfoPackage.getClassId());
 			if (i == _activeId)
 			{
-				packet.writeD(1);
+				writeInt(1);
 			}
 			else
 			{
-				packet.writeD(0); // c3 auto-select char
+				writeInt(0); // c3 auto-select char
 			}
-			packet.writeC(charInfoPackage.getEnchantEffect() > 127 ? 127 : charInfoPackage.getEnchantEffect());
+			writeByte(charInfoPackage.getEnchantEffect() > 127 ? 127 : charInfoPackage.getEnchantEffect());
 		}
-		return true;
 	}
 	
 	private List<CharSelectInfoPackage> loadCharacterSelectInfo()

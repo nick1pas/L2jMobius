@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.data.xml.BoatData;
 import org.l2jmobius.gameserver.model.Location;
@@ -26,19 +26,18 @@ import org.l2jmobius.gameserver.model.item.type.WeaponType;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 
-public class RequestMoveToLocationInVehicle implements IClientIncomingPacket
+public class RequestMoveToLocationInVehicle implements ClientPacket
 {
 	private int _boatId;
 	private Location _targetPos;
 	private Location _originPos;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_boatId = packet.readD(); // objectId of boat
-		_targetPos = new Location(packet.readD(), packet.readD(), packet.readD());
-		_originPos = new Location(packet.readD(), packet.readD(), packet.readD());
-		return true;
+		_boatId = packet.readInt(); // objectId of boat
+		_targetPos = new Location(packet.readInt(), packet.readInt(), packet.readInt());
+		_originPos = new Location(packet.readInt(), packet.readInt(), packet.readInt());
 	}
 	
 	@Override

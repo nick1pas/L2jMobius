@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.util.crypt;
+package org.l2jmobius.commons.crypt;
 
 /**
  * Class to use a blowfish cipher with ECB processing.<br>
@@ -153,7 +153,7 @@ public class NewCrypt
 	 * @param size Length of the data to be encrypted
 	 * @param key The 4 bytes (int) XOR key
 	 */
-	static void encXORPass(byte[] raw, int offset, int size, int key)
+	public static void encXORPass(byte[] raw, int offset, int size, int key)
 	{
 		final int stop = size - 8;
 		int pos = 4 + offset;

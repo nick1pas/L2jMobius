@@ -14,16 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.commons.network;
+package org.l2jmobius.gameserver.network.clientpackets;
+
+import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.gameserver.network.GameClient;
 
 /**
- * @author Nos
+ * @author Mobius
  */
-public interface IOutgoingPacket
+public abstract interface ClientPacket
 {
-	/**
-	 * @param packet the packet writer
-	 * @return {@code true} if packet was writen successfully, {@code false} otherwise.
-	 */
-	boolean write(PacketWriter packet);
+	default void read(ReadablePacket packet)
+	{
+	}
+	
+	default void run(GameClient client)
+	{
+	}
 }

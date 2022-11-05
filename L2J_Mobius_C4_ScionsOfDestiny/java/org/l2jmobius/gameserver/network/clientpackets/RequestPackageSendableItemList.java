@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.PackageSendableList;
@@ -25,15 +25,14 @@ import org.l2jmobius.gameserver.network.serverpackets.PackageSendableList;
  * Format: (c)d d: char object id (?)
  * @author -Wooden-
  */
-public class RequestPackageSendableItemList implements IClientIncomingPacket
+public class RequestPackageSendableItemList implements ClientPacket
 {
-	private int _objectID;
+	private int _objectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectID = packet.readD();
-		return true;
+		_objectId = packet.readInt();
 	}
 	
 	@Override
@@ -45,7 +44,7 @@ public class RequestPackageSendableItemList implements IClientIncomingPacket
 			return;
 		}
 		
-		if (player.getObjectId() == _objectID)
+		if (player.getObjectId() == _objectId)
 		{
 			return;
 		}
@@ -56,6 +55,6 @@ public class RequestPackageSendableItemList implements IClientIncomingPacket
 			return;
 		}
 		
-		player.sendPacket(new PackageSendableList(player.getInventory().getAvailableItems(true), _objectID, player.getAdena()));
+		player.sendPacket(new PackageSendableList(player.getInventory().getAvailableItems(true), _objectId, player.getAdena()));
 	}
 }

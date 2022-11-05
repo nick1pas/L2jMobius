@@ -14,28 +14,38 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.network;
+package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.NetworkManager;
+import org.l2jmobius.commons.network.WritablePacket;
+import org.l2jmobius.gameserver.model.actor.Player;
 
 /**
- * @author Nos
+ * @author Mobius
  */
-public class ClientNetworkManager extends NetworkManager
+public abstract class ServerPacket extends WritablePacket
 {
-	protected ClientNetworkManager()
+	/**
+	 * Construct a ServerPacket with an initial data size of 32 bytes.
+	 */
+	protected ServerPacket()
 	{
-		super(EventLoopGroupManager.getInstance().getBossGroup(), EventLoopGroupManager.getInstance().getWorkerGroup(), new ClientInitializer(), Config.GAMESERVER_HOSTNAME, Config.PORT_GAME);
+		super(32);
 	}
 	
-	public static ClientNetworkManager getInstance()
+	/**
+	 * Construct a ServerPacket with a given initial data size.
+	 * @param initialSize
+	 */
+	protected ServerPacket(int initialSize)
 	{
-		return SingletonHolder.INSTANCE;
+		super(initialSize);
 	}
 	
-	private static class SingletonHolder
+	/**
+	 * Method that runs after packet is sent.
+	 * @param player
+	 */
+	public void run(Player player)
 	{
-		protected static final ClientNetworkManager INSTANCE = new ClientNetworkManager();
 	}
 }

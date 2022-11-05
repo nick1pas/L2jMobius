@@ -16,17 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.PlayerTemplateData;
 import org.l2jmobius.gameserver.model.actor.Npc;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class FakePlayerInfo implements IClientOutgoingPacket
+public class FakePlayerInfo extends ServerPacket
 {
 	private final Npc _activeChar;
 	
 	public FakePlayerInfo(Npc cha)
 	{
+		super(256);
+		
 		_activeChar = cha;
 		_activeChar.setClientX(_activeChar.getX());
 		_activeChar.setClientY(_activeChar.getY());
@@ -34,81 +35,80 @@ public class FakePlayerInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_INFO.writeId(packet);
-		packet.writeD(_activeChar.getX());
-		packet.writeD(_activeChar.getY());
-		packet.writeD(_activeChar.getZ());
-		packet.writeD(_activeChar.getHeading());
-		packet.writeD(_activeChar.getObjectId());
-		packet.writeS(_activeChar.getFakePlayer().getName());
-		packet.writeD(_activeChar.getFakePlayer().getRace());
-		packet.writeD(_activeChar.getFakePlayer().isFemaleSex() ? 1 : 0);
-		packet.writeD(_activeChar.getFakePlayer().getClassId());
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_RHAND());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_LHAND());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_GLOVES());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_CHEST());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_LEGS());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_FEET());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_HAIR());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_RHAND());
-		packet.writeD(_activeChar.getFakePlayer().PAPERDOLL_HAIR());
-		packet.writeD(_activeChar.getFakePlayer().getPvpFlag() ? 1 : 0);
-		packet.writeD(_activeChar.getFakePlayer().getKarma());
-		packet.writeD(_activeChar.getMAtkSpd());
-		packet.writeD(_activeChar.getPAtkSpd());
-		packet.writeD(_activeChar.getFakePlayer().getPvpFlag() ? 1 : 0);
-		packet.writeD(_activeChar.getFakePlayer().getKarma());
-		packet.writeD(_activeChar.getRunSpeed());
-		packet.writeD(_activeChar.getRunSpeed() / 2);
-		packet.writeD(_activeChar.getRunSpeed() / 3);
-		packet.writeD(_activeChar.getRunSpeed() / 3);
-		packet.writeD(_activeChar.getRunSpeed());
-		packet.writeD(_activeChar.getRunSpeed());
-		packet.writeD(_activeChar.getRunSpeed());
-		packet.writeD(_activeChar.getRunSpeed());
-		packet.writeF(_activeChar.getStat().getMovementSpeedMultiplier());
-		packet.writeF(_activeChar.getStat().getAttackSpeedMultiplier());
-		packet.writeF(PlayerTemplateData.getInstance().getTemplate(_activeChar.getFakePlayer().getClassId()).getCollisionRadius());
-		packet.writeF(PlayerTemplateData.getInstance().getTemplate(_activeChar.getFakePlayer().getClassId()).getCollisionHeight());
-		packet.writeD(_activeChar.getFakePlayer().getHairStyle());
-		packet.writeD(_activeChar.getFakePlayer().getHairColor());
-		packet.writeD(_activeChar.getFakePlayer().getFace());
-		packet.writeS(_activeChar.getFakePlayer().getTitle());
-		packet.writeD(_activeChar.getFakePlayer().getClanId());
-		packet.writeD(_activeChar.getFakePlayer().getClanCrestId());
-		packet.writeD(_activeChar.getFakePlayer().getAllyId());
-		packet.writeD(_activeChar.getFakePlayer().getAllyCrestId());
-		packet.writeD(0);
-		packet.writeC(1);
-		packet.writeC(_activeChar.isRunning() ? 1 : 0);
-		packet.writeC(_activeChar.isInCombat() ? 1 : 0);
-		packet.writeC(_activeChar.isAlikeDead() ? 1 : 0);
-		packet.writeC(0);
-		packet.writeC(0);
-		packet.writeC(0);
-		packet.writeH(0);
-		packet.writeC(0);
-		packet.writeD(_activeChar.getAbnormalEffect());
-		packet.writeC(0);
-		packet.writeH(0);
-		packet.writeD(_activeChar.getFakePlayer().getClassId());
-		packet.writeD(_activeChar.getMaxCp());
-		packet.writeD((int) _activeChar.getStatus().getCurrentCp());
-		packet.writeC(_activeChar.getFakePlayer().getEnchantWeapon());
-		packet.writeC(0);
-		packet.writeD(0); // clan crest
-		packet.writeC(_activeChar.getFakePlayer().isNoble() ? 1 : 0);
-		packet.writeC(_activeChar.getFakePlayer().isHero() ? 1 : 0);
-		packet.writeC(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(_activeChar.getFakePlayer().nameColor());
-		return true;
+		ServerPackets.CHAR_INFO.writeId(this);
+		writeInt(_activeChar.getX());
+		writeInt(_activeChar.getY());
+		writeInt(_activeChar.getZ());
+		writeInt(_activeChar.getHeading());
+		writeInt(_activeChar.getObjectId());
+		writeString(_activeChar.getFakePlayer().getName());
+		writeInt(_activeChar.getFakePlayer().getRace());
+		writeInt(_activeChar.getFakePlayer().isFemaleSex());
+		writeInt(_activeChar.getFakePlayer().getClassId());
+		writeInt(0);
+		writeInt(0);
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_RHAND());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_LHAND());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_GLOVES());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_CHEST());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_LEGS());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_FEET());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_HAIR());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_RHAND());
+		writeInt(_activeChar.getFakePlayer().PAPERDOLL_HAIR());
+		writeInt(_activeChar.getFakePlayer().getPvpFlag());
+		writeInt(_activeChar.getFakePlayer().getKarma());
+		writeInt(_activeChar.getMAtkSpd());
+		writeInt(_activeChar.getPAtkSpd());
+		writeInt(_activeChar.getFakePlayer().getPvpFlag());
+		writeInt(_activeChar.getFakePlayer().getKarma());
+		writeInt(_activeChar.getRunSpeed());
+		writeInt(_activeChar.getRunSpeed() / 2);
+		writeInt(_activeChar.getRunSpeed() / 3);
+		writeInt(_activeChar.getRunSpeed() / 3);
+		writeInt(_activeChar.getRunSpeed());
+		writeInt(_activeChar.getRunSpeed());
+		writeInt(_activeChar.getRunSpeed());
+		writeInt(_activeChar.getRunSpeed());
+		writeDouble(_activeChar.getStat().getMovementSpeedMultiplier());
+		writeDouble(_activeChar.getStat().getAttackSpeedMultiplier());
+		writeDouble(PlayerTemplateData.getInstance().getTemplate(_activeChar.getFakePlayer().getClassId()).getCollisionRadius());
+		writeDouble(PlayerTemplateData.getInstance().getTemplate(_activeChar.getFakePlayer().getClassId()).getCollisionHeight());
+		writeInt(_activeChar.getFakePlayer().getHairStyle());
+		writeInt(_activeChar.getFakePlayer().getHairColor());
+		writeInt(_activeChar.getFakePlayer().getFace());
+		writeString(_activeChar.getFakePlayer().getTitle());
+		writeInt(_activeChar.getFakePlayer().getClanId());
+		writeInt(_activeChar.getFakePlayer().getClanCrestId());
+		writeInt(_activeChar.getFakePlayer().getAllyId());
+		writeInt(_activeChar.getFakePlayer().getAllyCrestId());
+		writeInt(0);
+		writeByte(1);
+		writeByte(_activeChar.isRunning());
+		writeByte(_activeChar.isInCombat());
+		writeByte(_activeChar.isAlikeDead());
+		writeByte(0);
+		writeByte(0);
+		writeByte(0);
+		writeShort(0);
+		writeByte(0);
+		writeInt(_activeChar.getAbnormalEffect());
+		writeByte(0);
+		writeShort(0);
+		writeInt(_activeChar.getFakePlayer().getClassId());
+		writeInt(_activeChar.getMaxCp());
+		writeInt((int) _activeChar.getStatus().getCurrentCp());
+		writeByte(_activeChar.getFakePlayer().getEnchantWeapon());
+		writeByte(0);
+		writeInt(0); // clan crest
+		writeByte(_activeChar.getFakePlayer().isNoble());
+		writeByte(_activeChar.getFakePlayer().isHero());
+		writeByte(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
+		writeInt(_activeChar.getFakePlayer().nameColor());
 	}
 }

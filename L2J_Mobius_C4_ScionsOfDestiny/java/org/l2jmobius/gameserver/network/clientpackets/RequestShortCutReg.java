@@ -16,13 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.ShortCut;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ShortCutRegister;
 
-public class RequestShortCutReg implements IClientIncomingPacket
+public class RequestShortCutReg implements ClientPacket
 {
 	private int _type;
 	private int _id;
@@ -32,15 +32,14 @@ public class RequestShortCutReg implements IClientIncomingPacket
 	private int _unk;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readD();
-		final int slot = packet.readD();
-		_id = packet.readD();
-		_unk = packet.readD();
+		_type = packet.readInt();
+		final int slot = packet.readInt();
+		_id = packet.readInt();
+		_unk = packet.readInt();
 		_slot = slot % 12;
 		_page = slot / 12;
-		return true;
 	}
 	
 	@Override

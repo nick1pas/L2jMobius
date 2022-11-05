@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
@@ -47,7 +47,7 @@ import org.l2jmobius.gameserver.network.serverpackets.RecipeShopManageList;
 import org.l2jmobius.gameserver.network.serverpackets.Ride;
 import org.l2jmobius.gameserver.taskmanager.GameTimeTaskManager;
 
-public class RequestActionUse implements IClientIncomingPacket
+public class RequestActionUse implements ClientPacket
 {
 	private int _actionId;
 	private boolean _ctrlPressed;
@@ -69,12 +69,11 @@ public class RequestActionUse implements IClientIncomingPacket
 	}
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_actionId = packet.readD();
-		_ctrlPressed = packet.readD() == 1;
-		_shiftPressed = packet.readC() == 1;
-		return true;
+		_actionId = packet.readInt();
+		_ctrlPressed = packet.readInt() == 1;
+		_shiftPressed = packet.readByte() == 1;
 	}
 	
 	@Override

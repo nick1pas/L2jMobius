@@ -18,17 +18,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * 0x42 WarehouseWithdrawalList dh (h dddhh dhhh d)
  * @version $Revision: 1.3.2.1.2.5 $ $Date: 2005/03/29 23:15:10 $
  */
-public class WareHouseWithdrawalList implements IClientOutgoingPacket
+public class WareHouseWithdrawalList extends ServerPacket
 {
 	public static final int PRIVATE = 1;
 	public static final int CLAN = 2;
@@ -55,29 +54,28 @@ public class WareHouseWithdrawalList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.WARE_HOUSE_WITHDRAWAL_LIST.writeId(packet);
+		ServerPackets.WARE_HOUSE_WITHDRAWAL_LIST.writeId(this);
 		/*
 		 * 0x01-Private Warehouse 0x02-Clan Warehouse 0x03-Castle Warehouse 0x04-Warehouse
 		 */
-		packet.writeH(_whType);
-		packet.writeD(_playerAdena);
-		packet.writeH(_items.size());
+		writeShort(_whType);
+		writeInt(_playerAdena);
+		writeShort(_items.size());
 		for (Item item : _items)
 		{
-			packet.writeH(item.getTemplate().getType1()); // item type1 //unconfirmed, works
-			packet.writeD(0); // unconfirmed, works
-			packet.writeD(item.getItemId()); // unconfirmed, works
-			packet.writeD(item.getCount()); // unconfirmed, works
-			packet.writeH(item.getTemplate().getType2()); // item type2 //unconfirmed, works
-			packet.writeH(0); // ?
-			packet.writeD(item.getTemplate().getBodyPart()); // ?
-			packet.writeH(item.getEnchantLevel()); // enchant level -confirmed
-			packet.writeH(0); // ?
-			packet.writeH(0); // ?
-			packet.writeD(item.getObjectId()); // item id - confimed
+			writeShort(item.getTemplate().getType1()); // item type1 //unconfirmed, works
+			writeInt(0); // unconfirmed, works
+			writeInt(item.getItemId()); // unconfirmed, works
+			writeInt(item.getCount()); // unconfirmed, works
+			writeShort(item.getTemplate().getType2()); // item type2 //unconfirmed, works
+			writeShort(0); // ?
+			writeInt(item.getTemplate().getBodyPart()); // ?
+			writeShort(item.getEnchantLevel()); // enchant level -confirmed
+			writeShort(0); // ?
+			writeShort(0); // ?
+			writeInt(item.getObjectId()); // item id - confimed
 		}
-		return true;
 	}
 }

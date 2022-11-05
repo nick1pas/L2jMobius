@@ -32,8 +32,8 @@ public class ChangeAccessLevel extends AbstractGameServerPacket
 	public ChangeAccessLevel(byte[] decrypt)
 	{
 		super(decrypt);
-		_level = readD();
-		_account = readS();
+		_level = readInt();
+		_account = readString();
 	}
 	
 	/**

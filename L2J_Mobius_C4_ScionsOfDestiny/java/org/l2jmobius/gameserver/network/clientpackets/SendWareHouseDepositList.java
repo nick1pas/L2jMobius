@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Folk;
@@ -34,23 +34,23 @@ import org.l2jmobius.gameserver.network.serverpackets.EnchantResult;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 
-public class SendWareHouseDepositList implements IClientIncomingPacket
+public class SendWareHouseDepositList implements ClientPacket
 {
 	private int _count;
 	private int[] _items;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
 		if (!Config.ALLOW_WAREHOUSE)
 		{
-			return false;
+			return;
 		}
 		
-		_count = packet.readD();
+		_count = packet.readInt();
 		
 		// check packet list size
-		if ((_count < 0) || ((_count * 8) > packet.getReadableBytes()) || (_count > Config.MAX_ITEM_IN_PACKET))
+		if ((_count < 0) || ((_count * 8) > packet.getRemainingLength()) || (_count > Config.MAX_ITEM_IN_PACKET))
 		{
 			_count = 0;
 		}
@@ -58,25 +58,28 @@ public class SendWareHouseDepositList implements IClientIncomingPacket
 		_items = new int[_count * 2];
 		for (int i = 0; i < _count; i++)
 		{
-			final int objectId = packet.readD();
+			final int objectId = packet.readInt();
 			_items[(i * 2) + 0] = objectId;
-			final long cnt = packet.readD();
+			final long cnt = packet.readInt();
 			if ((cnt > Integer.MAX_VALUE) || (cnt < 0))
 			{
 				_count = 0;
-				return false;
+				return;
 			}
 			
 			_items[(i * 2) + 1] = (int) cnt;
 		}
-		
-		return true;
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
 		if (_items == null)
+		{
+			return;
+		}
+		
+		if (_count < 1)
 		{
 			return;
 		}

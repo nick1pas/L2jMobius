@@ -39,8 +39,6 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Olympiad;
 import org.l2jmobius.gameserver.model.sevensigns.SevenSigns;
 import org.l2jmobius.gameserver.model.sevensigns.SevenSignsFestival;
-import org.l2jmobius.gameserver.network.ClientNetworkManager;
-import org.l2jmobius.gameserver.network.EventLoopGroupManager;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.loginserverpackets.game.ServerStatus;
 import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
@@ -299,18 +297,6 @@ public class Shutdown extends Thread
 		{
 			GameTimeTaskManager.getInstance().interrupt();
 			LOGGER.info("Game Time Task Manager thread has been shutdown.");
-		}
-		catch (Throwable t)
-		{
-			// ignore
-		}
-		
-		// saveData sends messages to exit players, so shutdown selector after it
-		try
-		{
-			ClientNetworkManager.getInstance().stop();
-			EventLoopGroupManager.getInstance().shutdown();
-			LOGGER.info("Game Server: Selector thread has been shutdown.");
 		}
 		catch (Throwable t)
 		{

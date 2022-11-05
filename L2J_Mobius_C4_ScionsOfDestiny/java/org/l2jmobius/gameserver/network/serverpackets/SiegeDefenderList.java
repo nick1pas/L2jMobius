@@ -18,13 +18,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Fort;
 import org.l2jmobius.gameserver.model.siege.SiegeClan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Populates the Siege Defender List in the SiegeInfo Window<br>
@@ -52,7 +51,7 @@ import org.l2jmobius.gameserver.network.OutgoingPackets;
  * d = AllyCrestID<br>
  * @author KenM
  */
-public class SiegeDefenderList implements IClientOutgoingPacket
+public class SiegeDefenderList extends ServerPacket
 {
 	private final int _residenceId;
 	private final Collection<SiegeClan> _defenders;
@@ -73,19 +72,19 @@ public class SiegeDefenderList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SIEGE_DEFENDER_LIST.writeId(packet);
-		packet.writeD(_residenceId);
-		packet.writeD(0); // 0
-		packet.writeD(1); // 1
-		packet.writeD(0); // 0
+		ServerPackets.SIEGE_DEFENDER_LIST.writeId(this);
+		writeInt(_residenceId);
+		writeInt(0); // 0
+		writeInt(1); // 1
+		writeInt(0); // 0
 		final int size = _defenders.size() + _waiting.size();
 		if (size > 0)
 		{
 			Clan clan;
-			packet.writeD(size);
-			packet.writeD(size);
+			writeInt(size);
+			writeInt(size);
 			// Listing the Lord and the approved clans
 			for (SiegeClan siegeclan : _defenders)
 			{
@@ -94,59 +93,58 @@ public class SiegeDefenderList implements IClientOutgoingPacket
 				{
 					continue;
 				}
-				packet.writeD(clan.getClanId());
-				packet.writeS(clan.getName());
-				packet.writeS(clan.getLeaderName());
-				packet.writeD(clan.getCrestId());
-				packet.writeD(0); // signed time (seconds) (not storated by L2J)
+				writeInt(clan.getClanId());
+				writeString(clan.getName());
+				writeString(clan.getLeaderName());
+				writeInt(clan.getCrestId());
+				writeInt(0); // signed time (seconds) (not storated by L2J)
 				switch (siegeclan.getType())
 				{
 					case OWNER:
 					{
-						packet.writeD(1); // owner
+						writeInt(1); // owner
 						break;
 					}
 					case DEFENDER_PENDING:
 					{
-						packet.writeD(2); // approved
+						writeInt(2); // approved
 						break;
 					}
 					case DEFENDER:
 					{
-						packet.writeD(3); // waiting approved
+						writeInt(3); // waiting approved
 						break;
 					}
 					default:
 					{
-						packet.writeD(0);
+						writeInt(0);
 						break;
 					}
 				}
-				packet.writeD(clan.getAllyId());
-				packet.writeS(clan.getAllyName());
-				packet.writeS(""); // AllyLeaderName
-				packet.writeD(clan.getAllyCrestId());
+				writeInt(clan.getAllyId());
+				writeString(clan.getAllyName());
+				writeString(""); // AllyLeaderName
+				writeInt(clan.getAllyCrestId());
 			}
 			for (SiegeClan siegeclan : _waiting)
 			{
 				clan = ClanTable.getInstance().getClan(siegeclan.getClanId());
-				packet.writeD(clan.getClanId());
-				packet.writeS(clan.getName());
-				packet.writeS(clan.getLeaderName());
-				packet.writeD(clan.getCrestId());
-				packet.writeD(0); // signed time (seconds) (not storated by L2J)
-				packet.writeD(2); // waiting approval
-				packet.writeD(clan.getAllyId());
-				packet.writeS(clan.getAllyName());
-				packet.writeS(""); // AllyLeaderName
-				packet.writeD(clan.getAllyCrestId());
+				writeInt(clan.getClanId());
+				writeString(clan.getName());
+				writeString(clan.getLeaderName());
+				writeInt(clan.getCrestId());
+				writeInt(0); // signed time (seconds) (not storated by L2J)
+				writeInt(2); // waiting approval
+				writeInt(clan.getAllyId());
+				writeString(clan.getAllyName());
+				writeString(""); // AllyLeaderName
+				writeInt(clan.getAllyCrestId());
 			}
 		}
 		else
 		{
-			packet.writeD(0);
-			packet.writeD(0);
+			writeInt(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

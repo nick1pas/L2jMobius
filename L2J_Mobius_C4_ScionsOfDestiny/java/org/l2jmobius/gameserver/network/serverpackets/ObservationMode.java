@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:57 $
  */
-public class ObservationMode implements IClientOutgoingPacket
+public class ObservationMode extends ServerPacket
 {
 	private final int _x;
 	private final int _y;
@@ -41,15 +40,14 @@ public class ObservationMode implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.OBSERVATION_MODE.writeId(packet);
-		packet.writeD(_x);
-		packet.writeD(_y);
-		packet.writeD(_z);
-		packet.writeC(0);
-		packet.writeC(0xc0);
-		packet.writeC(0);
-		return true;
+		ServerPackets.OBSERVATION_MODE.writeId(this);
+		writeInt(_x);
+		writeInt(_y);
+		writeInt(_z);
+		writeByte(0);
+		writeByte(0xc0);
+		writeByte(0);
 	}
 }

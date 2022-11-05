@@ -33,39 +33,7 @@ public abstract class AbstractServerPacket
 		_bao = new ByteArrayOutputStream();
 	}
 	
-	protected void writeD(int value)
-	{
-		_bao.write(value & 0xff);
-		_bao.write((value >> 8) & 0xff);
-		_bao.write((value >> 16) & 0xff);
-		_bao.write((value >> 24) & 0xff);
-	}
-	
-	protected void writeH(int value)
-	{
-		_bao.write(value & 0xff);
-		_bao.write((value >> 8) & 0xff);
-	}
-	
-	protected void writeC(int value)
-	{
-		_bao.write(value & 0xff);
-	}
-	
-	protected void writeF(double org)
-	{
-		final long value = Double.doubleToRawLongBits(org);
-		_bao.write((int) (value & 0xff));
-		_bao.write((int) ((value >> 8) & 0xff));
-		_bao.write((int) ((value >> 16) & 0xff));
-		_bao.write((int) ((value >> 24) & 0xff));
-		_bao.write((int) ((value >> 32) & 0xff));
-		_bao.write((int) ((value >> 40) & 0xff));
-		_bao.write((int) ((value >> 48) & 0xff));
-		_bao.write((int) ((value >> 56) & 0xff));
-	}
-	
-	protected void writeS(String text)
+	protected void writeString(String text)
 	{
 		try
 		{
@@ -83,7 +51,7 @@ public abstract class AbstractServerPacket
 		_bao.write(0);
 	}
 	
-	protected void writeB(byte[] array)
+	protected void writeBytes(byte[] array)
 	{
 		try
 		{
@@ -95,6 +63,38 @@ public abstract class AbstractServerPacket
 		}
 	}
 	
+	protected void writeByte(int value)
+	{
+		_bao.write(value & 0xff);
+	}
+	
+	protected void writeShort(int value)
+	{
+		_bao.write(value & 0xff);
+		_bao.write((value >> 8) & 0xff);
+	}
+	
+	protected void writeInt(int value)
+	{
+		_bao.write(value & 0xff);
+		_bao.write((value >> 8) & 0xff);
+		_bao.write((value >> 16) & 0xff);
+		_bao.write((value >> 24) & 0xff);
+	}
+	
+	protected void writeDouble(double org)
+	{
+		final long value = Double.doubleToRawLongBits(org);
+		_bao.write((int) (value & 0xff));
+		_bao.write((int) ((value >> 8) & 0xff));
+		_bao.write((int) ((value >> 16) & 0xff));
+		_bao.write((int) ((value >> 24) & 0xff));
+		_bao.write((int) ((value >> 32) & 0xff));
+		_bao.write((int) ((value >> 40) & 0xff));
+		_bao.write((int) ((value >> 48) & 0xff));
+		_bao.write((int) ((value >> 56) & 0xff));
+	}
+	
 	public int getLength()
 	{
 		return _bao.size() + 2;
@@ -102,14 +102,14 @@ public abstract class AbstractServerPacket
 	
 	public byte[] getBytes()
 	{
-		writeD(0x00); // reserve for checksum
+		writeInt(0x00); // reserve for checksum
 		
 		final int padding = _bao.size() % 8;
 		if (padding != 0)
 		{
 			for (int i = padding; i < 8; i++)
 			{
-				writeC(0x00);
+				writeByte(0x00);
 			}
 		}
 		

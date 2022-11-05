@@ -61,11 +61,11 @@ public class ServerStatus extends AbstractGameServerPacket
 	public ServerStatus(byte[] decrypt, int serverId)
 	{
 		super(decrypt);
-		final int size = readD();
+		final int size = readInt();
 		for (int i = 0; i < size; i++)
 		{
-			final int type = readD();
-			final int value = readD();
+			final int type = readInt();
+			final int value = readInt();
 			switch (type)
 			{
 				case SERVER_LIST_STATUS:

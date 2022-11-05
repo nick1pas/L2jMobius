@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PledgeShowInfoUpdate implements IClientOutgoingPacket
+public class PledgeShowInfoUpdate extends ServerPacket
 {
 	private final Clan _clan;
 	
@@ -31,24 +30,23 @@ public class PledgeShowInfoUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		// ddddddddddSdd
-		OutgoingPackets.PLEDGE_SHOW_INFO_UPDATE.writeId(packet);
+		ServerPackets.PLEDGE_SHOW_INFO_UPDATE.writeId(this);
 		// sending empty data so client will ask all the info in response ;)
-		packet.writeD(_clan.getClanId());
-		packet.writeD(_clan.getCrestId());
-		packet.writeD(_clan.getLevel()); // clan level
-		packet.writeD(_clan.getFortId() != 0 ? _clan.getFortId() : _clan.getCastleId());
-		packet.writeD(_clan.getHideoutId());
-		packet.writeD(ClanTable.getInstance().getTopRate(_clan.getClanId()));
-		packet.writeD(_clan.getReputationScore()); // clan reputation score
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(_clan.getAllyId());
-		packet.writeS(_clan.getAllyName());
-		packet.writeD(_clan.getAllyCrestId());
-		packet.writeD(_clan.isAtWar());
-		return true;
+		writeInt(_clan.getClanId());
+		writeInt(_clan.getCrestId());
+		writeInt(_clan.getLevel()); // clan level
+		writeInt(_clan.getFortId() != 0 ? _clan.getFortId() : _clan.getCastleId());
+		writeInt(_clan.getHideoutId());
+		writeInt(ClanTable.getInstance().getTopRate(_clan.getClanId()));
+		writeInt(_clan.getReputationScore()); // clan reputation score
+		writeInt(0);
+		writeInt(0);
+		writeInt(_clan.getAllyId());
+		writeString(_clan.getAllyName());
+		writeInt(_clan.getAllyCrestId());
+		writeInt(_clan.isAtWar());
 	}
 }

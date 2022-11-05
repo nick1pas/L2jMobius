@@ -22,10 +22,8 @@ import java.util.Set;
 import java.util.function.Supplier;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.IConnectionState;
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.IIncomingPackets;
 import org.l2jmobius.gameserver.network.clientpackets.AnswerJoinPartyRoom;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.clientpackets.RequestAskJoinPartyRoom;
 import org.l2jmobius.gameserver.network.clientpackets.RequestAutoSoulShot;
 import org.l2jmobius.gameserver.network.clientpackets.RequestChangePartyLeader;
@@ -63,7 +61,7 @@ import org.l2jmobius.gameserver.network.clientpackets.RequestWriteHeroWords;
 /**
  * @author Mobius
  */
-public enum ExIncomingPackets implements IIncomingPackets<GameClient>
+public enum ExClientPackets
 {
 	REQUEST_OUST_FROM_PARTY_ROOM(0x01, RequestOustFromPartyRoom::new, ConnectionState.IN_GAME),
 	REQUEST_DISMISS_PARTY_ROOM(0x02, RequestDismissPartyRoom::new, ConnectionState.IN_GAME),
@@ -100,43 +98,42 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 	REQUEST_EX_MPCC_SHOW_PARTY_MEMBERS_INFO(0x25, RequestExMPCCShowPartyMembersInfo::new, ConnectionState.IN_GAME),
 	REQUEST_EX_MAGIC_SKILL_USE_GROUND(0x2F, RequestExMagicSkillUseGround::new, ConnectionState.IN_GAME);
 	
-	public static final ExIncomingPackets[] PACKET_ARRAY;
+	public static final ExClientPackets[] PACKET_ARRAY;
 	static
 	{
-		final short maxPacketId = (short) Arrays.stream(values()).mapToInt(IIncomingPackets::getPacketId).max().orElse(0);
-		PACKET_ARRAY = new ExIncomingPackets[maxPacketId + 1];
-		for (ExIncomingPackets incomingPacket : values())
+		final int maxPacketId = Arrays.stream(values()).mapToInt(ExClientPackets::getPacketId).max().orElse(0);
+		PACKET_ARRAY = new ExClientPackets[maxPacketId + 1];
+		for (ExClientPackets packet : values())
 		{
-			PACKET_ARRAY[incomingPacket.getPacketId()] = incomingPacket;
+			PACKET_ARRAY[packet.getPacketId()] = packet;
 		}
 	}
 	
 	private int _packetId;
-	private Supplier<IIncomingPacket<GameClient>> _incomingPacketFactory;
-	private Set<IConnectionState> _connectionStates;
+	private Supplier<ClientPacket> _packetSupplier;
+	private Set<ConnectionState> _connectionStates;
 	
-	ExIncomingPackets(int packetId, Supplier<IIncomingPacket<GameClient>> incomingPacketFactory, IConnectionState... connectionStates)
+	ExClientPackets(int packetId, Supplier<ClientPacket> packetSupplier, ConnectionState... connectionStates)
 	{
-		// packetId is an unsigned short
+		// Packet id is an unsigned short.
 		if (packetId > 0xFFFF)
 		{
-			throw new IllegalArgumentException("packetId must not be bigger than 0xFFFF");
+			throw new IllegalArgumentException("Packet id must not be bigger than 0xFFFF");
 		}
+		
 		_packetId = packetId;
-		_incomingPacketFactory = incomingPacketFactory != null ? incomingPacketFactory : () -> null;
+		_packetSupplier = packetSupplier != null ? packetSupplier : () -> null;
 		_connectionStates = new HashSet<>(Arrays.asList(connectionStates));
 	}
 	
-	@Override
 	public int getPacketId()
 	{
 		return _packetId;
 	}
 	
-	@Override
-	public IIncomingPacket<GameClient> newIncomingPacket()
+	public ClientPacket newPacket()
 	{
-		final IIncomingPacket<GameClient> packet = _incomingPacketFactory.get();
+		final ClientPacket packet = _packetSupplier.get();
 		if (Config.DEBUG_EX_INCOMING_PACKETS)
 		{
 			if (packet != null)
@@ -155,8 +152,7 @@ public enum ExIncomingPackets implements IIncomingPackets<GameClient>
 		return packet;
 	}
 	
-	@Override
-	public Set<IConnectionState> getConnectionStates()
+	public Set<ConnectionState> getConnectionStates()
 	{
 		return _connectionStates;
 	}

@@ -36,8 +36,8 @@ public class LoginServerFail extends AbstractServerPacket
 	 */
 	public LoginServerFail(int reason)
 	{
-		writeC(0x01);
-		writeC(reason);
+		writeByte(0x01);
+		writeByte(reason);
 	}
 	
 	@Override

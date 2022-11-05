@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @version $Revision: 1.4.2.1.2.3 $ $Date: 2005/03/27 15:29:39 $
  */
-public class CharCreateFail implements IClientOutgoingPacket
+public class CharCreateFail extends ServerPacket
 {
 	public static final int REASON_CREATION_FAILED = 0;
 	public static final int REASON_TOO_MANY_CHARACTERS = 1;
@@ -38,10 +37,9 @@ public class CharCreateFail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_CREATE_FAIL.writeId(packet);
-		packet.writeD(_error);
-		return true;
+		ServerPackets.CHAR_CREATE_FAIL.writeId(this);
+		writeInt(_error);
 	}
 }

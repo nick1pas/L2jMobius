@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.model.Skill;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -29,19 +29,18 @@ import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 /**
  * @version $Revision: 1.7.2.1.2.3 $ $Date: 2005/03/27 15:29:30 $
  */
-public class RequestMagicSkillUse implements IClientIncomingPacket
+public class RequestMagicSkillUse implements ClientPacket
 {
 	private int _magicId;
 	private boolean _ctrlPressed;
 	private boolean _shiftPressed;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_magicId = packet.readD(); // Identifier of the used skill
-		_ctrlPressed = packet.readD() != 0; // True if it's a ForceAttack : Ctrl pressed
-		_shiftPressed = packet.readC() != 0; // True if Shift pressed
-		return true;
+		_magicId = packet.readInt(); // Identifier of the used skill
+		_ctrlPressed = packet.readInt() != 0; // True if it's a ForceAttack : Ctrl pressed
+		_shiftPressed = packet.readByte() != 0; // True if Shift pressed
 	}
 	
 	@Override

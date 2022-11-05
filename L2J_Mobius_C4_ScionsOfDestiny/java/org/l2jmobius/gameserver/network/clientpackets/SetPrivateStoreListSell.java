@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.TradeList;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
@@ -28,46 +28,49 @@ import org.l2jmobius.gameserver.network.serverpackets.PrivateStoreManageListSell
 import org.l2jmobius.gameserver.network.serverpackets.PrivateStoreMsgSell;
 import org.l2jmobius.gameserver.util.Util;
 
-public class SetPrivateStoreListSell implements IClientIncomingPacket
+public class SetPrivateStoreListSell implements ClientPacket
 {
 	private int _count;
 	private boolean _packageSale;
 	private int[] _items; // count * 3
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_packageSale = packet.readD() == 1;
-		_count = packet.readD();
-		if ((_count <= 0) || ((_count * 12) > packet.getReadableBytes()) || (_count > Config.MAX_ITEM_IN_PACKET))
+		_packageSale = packet.readInt() == 1;
+		_count = packet.readInt();
+		if ((_count <= 0) || ((_count * 12) > packet.getRemainingLength()) || (_count > Config.MAX_ITEM_IN_PACKET))
 		{
 			_count = 0;
-			return false;
+			return;
 		}
 		
 		_items = new int[_count * 3];
 		for (int x = 0; x < _count; x++)
 		{
-			final int objectId = packet.readD();
+			final int objectId = packet.readInt();
 			_items[(x * 3) + 0] = objectId;
-			final long cnt = packet.readD();
+			final long cnt = packet.readInt();
 			if ((cnt > Integer.MAX_VALUE) || (cnt < 0))
 			{
 				_count = 0;
-				return false;
+				return;
 			}
 			
 			_items[(x * 3) + 1] = (int) cnt;
-			final int price = packet.readD();
+			final int price = packet.readInt();
 			_items[(x * 3) + 2] = price;
 		}
-		
-		return true;
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
+		if (_count < 1)
+		{
+			return;
+		}
+		
 		final Player player = client.getPlayer();
 		if (player == null)
 		{

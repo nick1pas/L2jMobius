@@ -22,15 +22,12 @@ import java.util.Set;
 import java.util.function.Supplier;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.IConnectionState;
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.IIncomingPackets;
 import org.l2jmobius.gameserver.network.clientpackets.*;
 
 /**
  * @author Mobius
  */
-public enum IncomingPackets implements IIncomingPackets<GameClient>
+public enum ClientPackets
 {
 	PROTOCOL_VERSION(0x00, ProtocolVersion::new, ConnectionState.CONNECTED),
 	AUTH_LOGIN(0x08, AuthLogin::new, ConnectionState.CONNECTED),
@@ -192,44 +189,42 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 	REQUEST_RECORD_INFO(0xCF, RequestRecordInfo::new, ConnectionState.IN_GAME),
 	EX_PACKET(0xD0, ExPacket::new, ConnectionState.values()); // This packet has its own connection state checking so we allow all of them
 	
-	public static final IncomingPackets[] PACKET_ARRAY;
+	public static final ClientPackets[] PACKET_ARRAY;
 	static
 	{
-		final short maxPacketId = (short) Arrays.stream(values()).mapToInt(IIncomingPackets::getPacketId).max().orElse(0);
-		PACKET_ARRAY = new IncomingPackets[maxPacketId + 1];
-		for (IncomingPackets incomingPacket : values())
+		final int maxPacketId = Arrays.stream(values()).mapToInt(ClientPackets::getPacketId).max().orElse(0);
+		PACKET_ARRAY = new ClientPackets[maxPacketId + 1];
+		for (ClientPackets packet : values())
 		{
-			PACKET_ARRAY[incomingPacket.getPacketId()] = incomingPacket;
+			PACKET_ARRAY[packet.getPacketId()] = packet;
 		}
 	}
 	
-	private short _packetId;
-	private Supplier<IIncomingPacket<GameClient>> _incomingPacketFactory;
-	private Set<IConnectionState> _connectionStates;
+	private int _packetId;
+	private Supplier<ClientPacket> _packetSupplier;
+	private Set<ConnectionState> _connectionStates;
 	
-	IncomingPackets(int packetId, Supplier<IIncomingPacket<GameClient>> incomingPacketFactory, IConnectionState... connectionStates)
+	ClientPackets(int packetId, Supplier<ClientPacket> packetSupplier, ConnectionState... connectionStates)
 	{
-		// packetId is an unsigned byte
+		// Packet id is an unsigned byte.
 		if (packetId > 0xFF)
 		{
-			throw new IllegalArgumentException("packetId must not be bigger than 0xFF");
+			throw new IllegalArgumentException("Packet id must not be bigger than 0xFF");
 		}
 		
-		_packetId = (short) packetId;
-		_incomingPacketFactory = incomingPacketFactory != null ? incomingPacketFactory : () -> null;
+		_packetId = packetId;
+		_packetSupplier = packetSupplier != null ? packetSupplier : () -> null;
 		_connectionStates = new HashSet<>(Arrays.asList(connectionStates));
 	}
 	
-	@Override
 	public int getPacketId()
 	{
 		return _packetId;
 	}
 	
-	@Override
-	public IIncomingPacket<GameClient> newIncomingPacket()
+	public ClientPacket newPacket()
 	{
-		final IIncomingPacket<GameClient> packet = _incomingPacketFactory.get();
+		final ClientPacket packet = _packetSupplier.get();
 		if (Config.DEBUG_INCOMING_PACKETS)
 		{
 			if (packet != null)
@@ -248,8 +243,7 @@ public enum IncomingPackets implements IIncomingPackets<GameClient>
 		return packet;
 	}
 	
-	@Override
-	public Set<IConnectionState> getConnectionStates()
+	public Set<ConnectionState> getConnectionStates()
 	{
 		return _connectionStates;
 	}
