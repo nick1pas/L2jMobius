@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets.monsterbook;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.MonsterBookData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.MonsterBookCardHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExMonsterBook implements IClientOutgoingPacket
+public class ExMonsterBook extends ServerPacket
 {
 	final Player _player;
 	final List<Integer> _cardIds = new ArrayList<>();
@@ -47,16 +46,15 @@ public class ExMonsterBook implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MONSTER_BOOK.writeId(packet);
-		packet.writeH(_cardIds.size()); // loop count
+		ServerPackets.EX_MONSTER_BOOK.writeId(this);
+		writeShort(_cardIds.size()); // loop count
 		for (int cardId : _cardIds)
 		{
-			packet.writeH(cardId); // card id
-			packet.writeC(_player.getMonsterBookRewardLevel(cardId)); // player reward level
-			packet.writeD(_player.getMonsterBookKillCount(cardId)); // player kills
+			writeShort(cardId); // card id
+			writeByte(_player.getMonsterBookRewardLevel(cardId)); // player reward level
+			writeInt(_player.getMonsterBookKillCount(cardId)); // player kills
 		}
-		return true;
 	}
 }

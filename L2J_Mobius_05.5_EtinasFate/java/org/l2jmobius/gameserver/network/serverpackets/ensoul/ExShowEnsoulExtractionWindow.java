@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ensoul;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExShowEnsoulExtractionWindow implements IClientOutgoingPacket
+public class ExShowEnsoulExtractionWindow extends ServerPacket
 {
 	public static final ExShowEnsoulExtractionWindow STATIC_PACKET = new ExShowEnsoulExtractionWindow();
 	
@@ -32,9 +31,8 @@ public class ExShowEnsoulExtractionWindow implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENSOUL_EXTRACTION_SHOW.writeId(packet);
-		return true;
+		ServerPackets.EX_ENSOUL_EXTRACTION_SHOW.writeId(this);
 	}
 }

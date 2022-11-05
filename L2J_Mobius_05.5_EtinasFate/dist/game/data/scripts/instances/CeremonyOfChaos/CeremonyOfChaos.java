@@ -61,8 +61,8 @@ import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.DeleteObject;
 import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoAbnormalVisualEffect;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SkillCoolTime;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.appearance.ExCuriousHouseMemberUpdate;
@@ -1124,7 +1124,7 @@ public class CeremonyOfChaos extends AbstractNpcAI
 		return canRegister;
 	}
 	
-	private void broadcastPacket(IClientOutgoingPacket packet)
+	private void broadcastPacket(ServerPacket packet)
 	{
 		for (Player player : PARTICIPANT_PLAYERS)
 		{

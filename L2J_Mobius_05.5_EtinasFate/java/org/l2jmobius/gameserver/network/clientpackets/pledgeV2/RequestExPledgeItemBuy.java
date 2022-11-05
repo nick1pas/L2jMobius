@@ -16,28 +16,27 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.ClanShopData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ClanShopProductHolder;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeItemBuy;
 
 /**
  * @author Mobius
  */
-public class RequestExPledgeItemBuy implements IClientIncomingPacket
+public class RequestExPledgeItemBuy implements ClientPacket
 {
 	private int _itemId;
 	private int _count;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemId = packet.readD();
-		_count = packet.readD();
-		return true;
+		_itemId = packet.readInt();
+		_count = packet.readInt();
 	}
 	
 	@Override

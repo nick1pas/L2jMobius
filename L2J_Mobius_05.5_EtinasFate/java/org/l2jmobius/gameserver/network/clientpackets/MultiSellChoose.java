@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.OptionalLong;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.EnsoulData;
@@ -52,7 +52,7 @@ import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 /**
  * The Class MultiSellChoose.
  */
-public class MultiSellChoose implements IClientIncomingPacket
+public class MultiSellChoose implements ClientPacket
 {
 	private int _listId;
 	private int _entryId;
@@ -72,35 +72,34 @@ public class MultiSellChoose implements IClientIncomingPacket
 	private EnsoulOption[] _soulCrystalSpecialOptions;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_listId = packet.readD();
-		_entryId = packet.readD();
-		_amount = packet.readQ();
-		_enchantLevel = packet.readH();
-		_augmentOption1 = packet.readD();
-		_augmentOption2 = packet.readD();
-		_attackAttribute = (short) packet.readH();
-		_attributePower = (short) packet.readH();
-		_fireDefence = (short) packet.readH();
-		_waterDefence = (short) packet.readH();
-		_windDefence = (short) packet.readH();
-		_earthDefence = (short) packet.readH();
-		_holyDefence = (short) packet.readH();
-		_darkDefence = (short) packet.readH();
-		_soulCrystalOptions = new EnsoulOption[packet.readC()]; // Ensoul size
+		_listId = packet.readInt();
+		_entryId = packet.readInt();
+		_amount = packet.readLong();
+		_enchantLevel = packet.readShort();
+		_augmentOption1 = packet.readInt();
+		_augmentOption2 = packet.readInt();
+		_attackAttribute = (short) packet.readShort();
+		_attributePower = (short) packet.readShort();
+		_fireDefence = (short) packet.readShort();
+		_waterDefence = (short) packet.readShort();
+		_windDefence = (short) packet.readShort();
+		_earthDefence = (short) packet.readShort();
+		_holyDefence = (short) packet.readShort();
+		_darkDefence = (short) packet.readShort();
+		_soulCrystalOptions = new EnsoulOption[packet.readByte()]; // Ensoul size
 		for (int i = 0; i < _soulCrystalOptions.length; i++)
 		{
-			final int ensoulId = packet.readD(); // Ensoul option id
+			final int ensoulId = packet.readInt(); // Ensoul option id
 			_soulCrystalOptions[i] = EnsoulData.getInstance().getOption(ensoulId);
 		}
-		_soulCrystalSpecialOptions = new EnsoulOption[packet.readC()]; // Special ensoul size
+		_soulCrystalSpecialOptions = new EnsoulOption[packet.readByte()]; // Special ensoul size
 		for (int i = 0; i < _soulCrystalSpecialOptions.length; i++)
 		{
-			final int ensoulId = packet.readD(); // Special ensoul option id.
+			final int ensoulId = packet.readInt(); // Special ensoul option id.
 			_soulCrystalSpecialOptions[i] = EnsoulData.getInstance().getOption(ensoulId);
 		}
-		return true;
 	}
 	
 	@Override

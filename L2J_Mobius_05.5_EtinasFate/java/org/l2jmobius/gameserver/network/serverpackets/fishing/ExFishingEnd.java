@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.fishing;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.FishingEndReason;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author -Wooden-
  */
-public class ExFishingEnd implements IClientOutgoingPacket
+public class ExFishingEnd extends ServerPacket
 {
 	private final Player _player;
 	private final FishingEndReason _reason;
@@ -37,11 +36,10 @@ public class ExFishingEnd implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_FISHING_END.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeC(_reason.getReason());
-		return true;
+		ServerPackets.EX_FISHING_END.writeId(this);
+		writeInt(_player.getObjectId());
+		writeByte(_reason.getReason());
 	}
 }

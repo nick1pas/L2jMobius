@@ -19,13 +19,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Collection;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PledgeShowMemberListAll implements IClientOutgoingPacket
+public class PledgeShowMemberListAll extends ServerPacket
 {
 	private final Clan _clan;
 	private final String _name;
@@ -54,42 +53,41 @@ public class PledgeShowMemberListAll implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_SHOW_MEMBER_LIST_ALL.writeId(packet);
-		packet.writeD(0); // _isSubPledge
-		packet.writeD(_clan.getId());
-		packet.writeD(Config.SERVER_ID);
-		packet.writeD(0);
-		packet.writeS(_name);
-		packet.writeS(_leaderName);
-		packet.writeD(_clan.getCrestId()); // crest id .. is used again
-		packet.writeD(_clan.getLevel());
-		packet.writeD(_clan.getCastleId());
-		packet.writeD(0);
-		packet.writeD(_clan.getHideoutId());
-		packet.writeD(_clan.getFortId());
-		packet.writeD(_clan.getRank());
-		packet.writeD(_clan.getReputationScore());
-		packet.writeD(0); // 0
-		packet.writeD(0); // 0
-		packet.writeD(_clan.getAllyId());
-		packet.writeS(_clan.getAllyName());
-		packet.writeD(_clan.getAllyCrestId());
-		packet.writeD(_clan.isAtWar() ? 1 : 0); // new c3
-		packet.writeD(0); // Territory castle ID
-		packet.writeD(_members.size());
+		ServerPackets.PLEDGE_SHOW_MEMBER_LIST_ALL.writeId(this);
+		writeInt(0); // _isSubPledge
+		writeInt(_clan.getId());
+		writeInt(Config.SERVER_ID);
+		writeInt(0);
+		writeString(_name);
+		writeString(_leaderName);
+		writeInt(_clan.getCrestId()); // crest id .. is used again
+		writeInt(_clan.getLevel());
+		writeInt(_clan.getCastleId());
+		writeInt(0);
+		writeInt(_clan.getHideoutId());
+		writeInt(_clan.getFortId());
+		writeInt(_clan.getRank());
+		writeInt(_clan.getReputationScore());
+		writeInt(0); // 0
+		writeInt(0); // 0
+		writeInt(_clan.getAllyId());
+		writeString(_clan.getAllyName());
+		writeInt(_clan.getAllyCrestId());
+		writeInt(_clan.isAtWar()); // new c3
+		writeInt(0); // Territory castle ID
+		writeInt(_members.size());
 		for (ClanMember m : _members)
 		{
-			packet.writeS(m.getName());
-			packet.writeD(m.getLevel());
-			packet.writeD(m.getClassId());
-			packet.writeD(0); // sex
-			packet.writeD(0); // race
-			packet.writeD(m.isOnline() ? m.getObjectId() : 0); // objectId = online 0 = offline
-			packet.writeD(0);
-			packet.writeC(0);
+			writeString(m.getName());
+			writeInt(m.getLevel());
+			writeInt(m.getClassId());
+			writeInt(0); // sex
+			writeInt(0); // race
+			writeInt(m.isOnline() ? m.getObjectId() : 0); // objectId = online 0 = offline
+			writeInt(0);
+			writeByte(0);
 		}
-		return true;
 	}
 }

@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExPutEnchantScrollItemResult implements IClientOutgoingPacket
+public class ExPutEnchantScrollItemResult extends ServerPacket
 {
 	private final int _result;
 	
@@ -32,10 +31,9 @@ public class ExPutEnchantScrollItemResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PUT_ENCHANT_SCROLL_ITEM_RESULT.writeId(packet);
-		packet.writeD(_result);
-		return true;
+		ServerPackets.EX_PUT_ENCHANT_SCROLL_ITEM_RESULT.writeId(this);
+		writeInt(_result);
 	}
 }

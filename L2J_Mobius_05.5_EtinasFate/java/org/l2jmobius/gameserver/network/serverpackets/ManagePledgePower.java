@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ManagePledgePower implements IClientOutgoingPacket
+public class ManagePledgePower extends ServerPacket
 {
 	private final int _action;
 	private final Clan _clan;
@@ -34,12 +33,11 @@ public class ManagePledgePower implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.MANAGE_PLEDGE_POWER.writeId(packet);
-		packet.writeD(_rank);
-		packet.writeD(_action);
-		packet.writeD(_clan.getRankPrivs(_rank).getBitmask());
-		return true;
+		ServerPackets.MANAGE_PLEDGE_POWER.writeId(this);
+		writeInt(_rank);
+		writeInt(_action);
+		writeInt(_clan.getRankPrivs(_rank).getBitmask());
 	}
 }

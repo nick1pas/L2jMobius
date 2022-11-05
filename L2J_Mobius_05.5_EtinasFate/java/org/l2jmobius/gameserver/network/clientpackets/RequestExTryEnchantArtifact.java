@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
@@ -34,7 +34,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
  * @author Bonux (bonuxq@gmail.com)
  * @date 09.09.2019
  **/
-public class RequestExTryEnchantArtifact implements IClientIncomingPacket
+public class RequestExTryEnchantArtifact implements ClientPacket
 {
 	private static final int[] ENCHANT_CHANCES =
 	{
@@ -55,20 +55,24 @@ public class RequestExTryEnchantArtifact implements IClientIncomingPacket
 	private final Set<Integer> _ingridients = new HashSet<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetObjectId = packet.readD();
-		_count = packet.readD();
+		_targetObjectId = packet.readInt();
+		_count = packet.readInt();
 		for (int i = 0; i < _count; i++)
 		{
-			_ingridients.add(packet.readD());
+			_ingridients.add(packet.readInt());
 		}
-		return !_ingridients.contains(_targetObjectId);
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
+		if (!_ingridients.contains(_targetObjectId))
+		{
+			return;
+		}
+		
 		final Player player = client.getPlayer();
 		if (player == null)
 		{

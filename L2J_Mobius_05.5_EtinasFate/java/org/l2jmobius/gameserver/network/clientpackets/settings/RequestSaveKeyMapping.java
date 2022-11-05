@@ -17,32 +17,31 @@
 package org.l2jmobius.gameserver.network.clientpackets.settings;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.ConnectionState;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * Request Save Key Mapping client packet.
  * @author Mobius
  */
-public class RequestSaveKeyMapping implements IClientIncomingPacket
+public class RequestSaveKeyMapping implements ClientPacket
 {
 	public static final String SPLIT_VAR = "	";
 	
 	private byte[] _uiKeyMapping;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int dataSize = packet.readD();
+		final int dataSize = packet.readInt();
 		if (dataSize > 0)
 		{
-			_uiKeyMapping = packet.readB(dataSize);
+			_uiKeyMapping = packet.readBytes(dataSize);
 		}
-		return true;
 	}
 	
 	@Override

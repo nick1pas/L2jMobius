@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeSkillInfo implements IClientOutgoingPacket
+public class ExPledgeSkillInfo extends ServerPacket
 {
 	private final int _skillId;
 	private final int _skillLevel;
@@ -39,13 +38,12 @@ public class ExPledgeSkillInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_SKILL_INFO.writeId(packet);
-		packet.writeD(_skillId);
-		packet.writeD(_skillLevel);
-		packet.writeD(_timeLeft);
-		packet.writeC(_availability);
-		return true;
+		ServerPackets.EX_PLEDGE_SKILL_INFO.writeId(this);
+		writeInt(_skillId);
+		writeInt(_skillLevel);
+		writeInt(_timeLeft);
+		writeByte(_availability);
 	}
 }
