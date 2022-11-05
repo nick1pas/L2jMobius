@@ -16,22 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.crystalization;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author UnAfraid
  */
-public class RequestCrystallizeItemCancel implements IClientIncomingPacket
+public class RequestCrystallizeItemCancel implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

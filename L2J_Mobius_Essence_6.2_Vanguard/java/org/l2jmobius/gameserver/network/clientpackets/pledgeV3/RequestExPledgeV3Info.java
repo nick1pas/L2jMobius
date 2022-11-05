@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV3;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.PledgeReceiveWarList;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV3.ExPledgeClassicRaidInfo;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV3.ExPledgeV3Info;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExPledgeV3Info implements IClientIncomingPacket
+public class RequestExPledgeV3Info implements ClientPacket
 {
 	private int _page;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_page = packet.readC();
-		return true;
+		_page = packet.readByte();
 	}
 	
 	@Override

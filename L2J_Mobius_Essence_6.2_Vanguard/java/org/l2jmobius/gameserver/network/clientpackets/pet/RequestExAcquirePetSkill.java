@@ -2,7 +2,7 @@ package org.l2jmobius.gameserver.network.clientpackets.pet;
 
 import java.util.Optional;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.PetAcquireList;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -10,22 +10,21 @@ import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.holders.PetSkillAcquireHolder;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pet.ExPetSkillList;
 
 /**
- * Written by Berezkin Nikolay, on 26.04.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExAcquirePetSkill implements IClientIncomingPacket
+public class RequestExAcquirePetSkill implements ClientPacket
 {
 	private int skillId, skillLevel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		skillId = packet.readD();
-		skillLevel = packet.readD();
-		return true;
+		skillId = packet.readInt();
+		skillLevel = packet.readInt();
 	}
 	
 	@Override

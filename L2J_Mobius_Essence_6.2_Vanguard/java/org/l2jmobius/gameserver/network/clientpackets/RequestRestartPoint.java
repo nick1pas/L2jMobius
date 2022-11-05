@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.ClanHallData;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
@@ -53,7 +53,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 /**
  * @version $Revision: 1.7.2.3.2.6 $ $Date: 2005/03/27 15:29:30 $
  */
-public class RequestRestartPoint implements IClientIncomingPacket
+public class RequestRestartPoint implements ClientPacket
 {
 	protected int _requestedPointType;
 	protected boolean _continuation;
@@ -61,15 +61,14 @@ public class RequestRestartPoint implements IClientIncomingPacket
 	protected int _resCount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_requestedPointType = packet.readD();
-		if (packet.getReadableBytes() != 0)
+		_requestedPointType = packet.readInt();
+		if (packet.getRemainingLength() != 0)
 		{
-			_resItemID = packet.readD();
-			_resCount = packet.readD();
+			_resItemID = packet.readInt();
+			_resCount = packet.readInt();
 		}
-		return true;
 	}
 	
 	class DeathTask implements Runnable

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.worldexchange;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class WorldExchangeSellCompleteAlarm implements IClientOutgoingPacket
+public class WorldExchangeSellCompleteAlarm extends ServerPacket
 {
 	private final int _itemId;
 	private final long _amount;
@@ -35,11 +34,10 @@ public class WorldExchangeSellCompleteAlarm implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_WORLD_EXCHANGE_SELL_COMPLETE_ALARM.writeId(packet);
-		packet.writeD(_itemId);
-		packet.writeQ(_amount);
-		return true;
+		ServerPackets.EX_WORLD_EXCHANGE_SELL_COMPLETE_ALARM.writeId(this);
+		writeInt(_itemId);
+		writeLong(_amount);
 	}
 }

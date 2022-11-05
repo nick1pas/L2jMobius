@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.ItemEnchantHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Berezkin Nikolay, Index
  */
-public class ExCollectionRegister implements IClientOutgoingPacket
+public class ExCollectionRegister extends ServerPacket
 {
 	private final int _success;
 	private final int _collectionId;
@@ -40,19 +39,18 @@ public class ExCollectionRegister implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_COLLECTION_REGISTER.writeId(packet);
-		packet.writeH(_collectionId);
-		packet.writeC(_success); // success
-		packet.writeC(0); // recursive reward
-		packet.writeH(249); // 256 - size so far
-		packet.writeC(_index); // slot index
-		packet.writeD(_collectionInfo.getId()); // item classId
-		packet.writeH(_collectionInfo.getEnchantLevel()); // enchant level
-		packet.writeC(0); // is blessed
-		packet.writeC(0); // blessed conditions
-		packet.writeD((int) _collectionInfo.getCount()); // amount
-		return true;
+		ServerPackets.EX_COLLECTION_REGISTER.writeId(this);
+		writeShort(_collectionId);
+		writeByte(_success); // success
+		writeByte(0); // recursive reward
+		writeShort(249); // 256 - size so far
+		writeByte(_index); // slot index
+		writeInt(_collectionInfo.getId()); // item classId
+		writeShort(_collectionInfo.getEnchantLevel()); // enchant level
+		writeByte(0); // is blessed
+		writeByte(0); // blessed conditions
+		writeInt((int) _collectionInfo.getCount()); // amount
 	}
 }

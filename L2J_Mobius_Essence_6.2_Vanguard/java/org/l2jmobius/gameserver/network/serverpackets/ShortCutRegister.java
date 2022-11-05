@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Shortcut;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ShortCutRegister implements IClientOutgoingPacket
+public class ShortCutRegister extends ServerPacket
 {
 	private final Shortcut _shortcut;
 	
@@ -34,35 +33,35 @@ public class ShortCutRegister implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SHORT_CUT_REGISTER.writeId(packet);
-		packet.writeD(_shortcut.getType().ordinal());
-		packet.writeD(_shortcut.getSlot() + (_shortcut.getPage() * 12)); // C4 Client
-		packet.writeC(0); // 228
+		ServerPackets.SHORT_CUT_REGISTER.writeId(this);
+		writeInt(_shortcut.getType().ordinal());
+		writeInt(_shortcut.getSlot() + (_shortcut.getPage() * 12)); // C4 Client
+		writeByte(0); // 228
 		switch (_shortcut.getType())
 		{
 			case ITEM:
 			{
-				packet.writeD(_shortcut.getId());
-				packet.writeD(_shortcut.getCharacterType());
-				packet.writeD(_shortcut.getSharedReuseGroup());
-				packet.writeD(0); // unknown
-				packet.writeD(0); // unknown
-				packet.writeD(0); // item augment id
-				packet.writeD(0); // TODO: Find me, item visual id ?
+				writeInt(_shortcut.getId());
+				writeInt(_shortcut.getCharacterType());
+				writeInt(_shortcut.getSharedReuseGroup());
+				writeInt(0); // unknown
+				writeInt(0); // unknown
+				writeInt(0); // item augment id
+				writeInt(0); // TODO: Find me, item visual id ?
 				break;
 			}
 			case SKILL:
 			{
-				packet.writeD(_shortcut.getId());
-				packet.writeH(_shortcut.getLevel());
-				packet.writeH(_shortcut.getSubLevel());
-				packet.writeD(_shortcut.getSharedReuseGroup());
-				packet.writeC(0); // C5
-				packet.writeD(_shortcut.getCharacterType());
-				packet.writeD(0); // TODO: Find me
-				packet.writeD(0); // TODO: Find me
+				writeInt(_shortcut.getId());
+				writeShort(_shortcut.getLevel());
+				writeShort(_shortcut.getSubLevel());
+				writeInt(_shortcut.getSharedReuseGroup());
+				writeByte(0); // C5
+				writeInt(_shortcut.getCharacterType());
+				writeInt(0); // TODO: Find me
+				writeInt(0); // TODO: Find me
 				break;
 			}
 			case ACTION:
@@ -70,11 +69,10 @@ public class ShortCutRegister implements IClientOutgoingPacket
 			case RECIPE:
 			case BOOKMARK:
 			{
-				packet.writeD(_shortcut.getId());
-				packet.writeD(_shortcut.getCharacterType());
+				writeInt(_shortcut.getId());
+				writeInt(_shortcut.getCharacterType());
 				break;
 			}
 		}
-		return true;
 	}
 }

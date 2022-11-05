@@ -27,7 +27,7 @@ import org.l2jmobius.commons.util.IXmlReader;
 import org.l2jmobius.gameserver.model.StatSet;
 
 /**
- * Written by Berezkin Nikolay, on 13.04.2021
+ * @author Berezkin Nikolay
  */
 public class SubjugationGacha implements IXmlReader
 {

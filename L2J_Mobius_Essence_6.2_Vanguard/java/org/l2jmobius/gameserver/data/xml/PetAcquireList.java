@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.holders.PetSkillAcquireHolder;
 
 /**
- * Written by Berezkin Nikolay, on 11.04.2021
+ * @author Berezkin Nikolay
  */
 public class PetAcquireList implements IXmlReader
 {

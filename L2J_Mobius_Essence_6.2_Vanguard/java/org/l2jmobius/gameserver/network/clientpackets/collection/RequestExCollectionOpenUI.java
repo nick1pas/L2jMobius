@@ -16,23 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.collection;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionOpenUI;
 
 /**
- * Written by Berezkin Nikolay, on 12.04.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExCollectionOpenUI implements IClientIncomingPacket
+public class RequestExCollectionOpenUI implements ClientPacket
 {
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readC(); // 1 = isClosed
-		return true;
+		packet.readByte(); // 1 = isClosed
 	}
 	
 	@Override

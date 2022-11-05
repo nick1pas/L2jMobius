@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.autopeel;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExReadyItemAutoPeel implements IClientOutgoingPacket
+public class ExReadyItemAutoPeel extends ServerPacket
 {
 	private final boolean _result;
 	private final int _itemObjectId;
@@ -35,11 +34,10 @@ public class ExReadyItemAutoPeel implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_READY_ITEM_AUTO_PEEL.writeId(packet);
-		packet.writeC(_result ? 1 : 0);
-		packet.writeD(_itemObjectId);
-		return true;
+		ServerPackets.EX_READY_ITEM_AUTO_PEEL.writeId(this);
+		writeByte(_result);
+		writeInt(_itemObjectId);
 	}
 }

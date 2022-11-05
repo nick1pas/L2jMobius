@@ -18,12 +18,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.MailType;
 import org.l2jmobius.gameserver.model.Message;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.ItemContainer;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 
@@ -53,48 +52,47 @@ public class ExReplyReceivedPost extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_REPLY_RECEIVED_POST.writeId(packet);
-		packet.writeD(_msg.getMailType().ordinal()); // GOD
+		ServerPackets.EX_REPLY_RECEIVED_POST.writeId(this);
+		writeInt(_msg.getMailType().ordinal()); // GOD
 		if (_msg.getMailType() == MailType.COMMISSION_ITEM_RETURNED)
 		{
-			packet.writeD(SystemMessageId.THE_REGISTRATION_PERIOD_FOR_THE_ITEM_YOU_REGISTERED_HAS_EXPIRED.getId());
-			packet.writeD(SystemMessageId.THE_AUCTION_HOUSE_REGISTRATION_PERIOD_HAS_EXPIRED_AND_THE_CORRESPONDING_ITEM_IS_BEING_FORWARDED.getId());
+			writeInt(SystemMessageId.THE_REGISTRATION_PERIOD_FOR_THE_ITEM_YOU_REGISTERED_HAS_EXPIRED.getId());
+			writeInt(SystemMessageId.THE_AUCTION_HOUSE_REGISTRATION_PERIOD_HAS_EXPIRED_AND_THE_CORRESPONDING_ITEM_IS_BEING_FORWARDED.getId());
 		}
 		else if (_msg.getMailType() == MailType.COMMISSION_ITEM_SOLD)
 		{
-			packet.writeD(_msg.getItemId());
-			packet.writeD(_msg.getEnchantLvl());
+			writeInt(_msg.getItemId());
+			writeInt(_msg.getEnchantLvl());
 			for (int i = 0; i < 6; i++)
 			{
-				packet.writeD(_msg.getElementals()[i]);
+				writeInt(_msg.getElementals()[i]);
 			}
-			packet.writeD(SystemMessageId.THE_ITEM_YOU_REGISTERED_HAS_BEEN_SOLD.getId());
-			packet.writeD(SystemMessageId.S1_SOLD.getId());
+			writeInt(SystemMessageId.THE_ITEM_YOU_REGISTERED_HAS_BEEN_SOLD.getId());
+			writeInt(SystemMessageId.S1_SOLD.getId());
 		}
-		packet.writeD(_msg.getId());
-		packet.writeD(_msg.isLocked() ? 1 : 0);
-		packet.writeD(0); // Unknown
-		packet.writeS(_msg.getSenderName());
-		packet.writeS(_msg.getSubject());
-		packet.writeS(_msg.getContent());
+		writeInt(_msg.getId());
+		writeInt(_msg.isLocked());
+		writeInt(0); // Unknown
+		writeString(_msg.getSenderName());
+		writeString(_msg.getSubject());
+		writeString(_msg.getContent());
 		if ((_items != null) && !_items.isEmpty())
 		{
-			packet.writeD(_items.size());
+			writeInt(_items.size());
 			for (Item item : _items)
 			{
-				writeItem(packet, item);
-				packet.writeD(item.getObjectId());
+				writeItem(item);
+				writeInt(item.getObjectId());
 			}
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		packet.writeQ(_msg.getReqAdena());
-		packet.writeD(_msg.hasAttachments() ? 1 : 0);
-		packet.writeD(_msg.isReturned() ? 1 : 0);
-		return true;
+		writeLong(_msg.getReqAdena());
+		writeInt(_msg.hasAttachments());
+		writeInt(_msg.isReturned());
 	}
 }

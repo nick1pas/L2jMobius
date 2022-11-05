@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.limitshop;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExBloodyCoinCount implements IClientOutgoingPacket
+public class ExBloodyCoinCount extends ServerPacket
 {
 	private final long _count;
 	
@@ -35,10 +34,9 @@ public class ExBloodyCoinCount implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BLOODY_COIN_COUNT.writeId(packet);
-		packet.writeQ(_count);
-		return true;
+		ServerPackets.EX_BLOODY_COIN_COUNT.writeId(this);
+		writeLong(_count);
 	}
 }

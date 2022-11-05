@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.subjugation;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.PurgePlayerHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, Serenitty
+ * @author Berezkin Nikolay, Serenitty
  */
-public class ExSubjugationSidebar implements IClientOutgoingPacket
+public class ExSubjugationSidebar extends ServerPacket
 {
 	private final Player _player;
 	private final PurgePlayerHolder _purgeData;
@@ -37,13 +36,12 @@ public class ExSubjugationSidebar implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUBJUGATION_SIDEBAR.writeId(packet);
-		packet.writeD(_player == null ? 0 : _player.getPurgeLastCategory());
-		packet.writeD(_purgeData == null ? 0 : _purgeData.getPoints()); // 1000000 = 100 percent
-		packet.writeD(_purgeData == null ? 0 : _purgeData.getKeys());
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_SUBJUGATION_SIDEBAR.writeId(this);
+		writeInt(_player == null ? 0 : _player.getPurgeLastCategory());
+		writeInt(_purgeData == null ? 0 : _purgeData.getPoints()); // 1000000 = 100 percent
+		writeInt(_purgeData == null ? 0 : _purgeData.getKeys());
+		writeInt(0);
 	}
 }

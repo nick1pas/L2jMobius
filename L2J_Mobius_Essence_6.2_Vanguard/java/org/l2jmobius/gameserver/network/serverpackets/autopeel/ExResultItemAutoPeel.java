@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets.autopeel;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExResultItemAutoPeel implements IClientOutgoingPacket
+public class ExResultItemAutoPeel extends ServerPacket
 {
 	private final boolean _result;
 	private final long _totalPeelCount;
@@ -42,19 +41,18 @@ public class ExResultItemAutoPeel implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESULT_ITEM_AUTO_PEEL.writeId(packet);
-		packet.writeC(_result ? 1 : 0);
-		packet.writeQ(_totalPeelCount);
-		packet.writeQ(_remainingPeelCount);
-		packet.writeD(_itemList.size());
+		ServerPackets.EX_RESULT_ITEM_AUTO_PEEL.writeId(this);
+		writeByte(_result);
+		writeLong(_totalPeelCount);
+		writeLong(_remainingPeelCount);
+		writeInt(_itemList.size());
 		for (ItemHolder holder : _itemList)
 		{
-			packet.writeD(holder.getId());
-			packet.writeQ(holder.getCount());
-			packet.writeD(0); // TODO: Announce level.
+			writeInt(holder.getId());
+			writeLong(holder.getCount());
+			writeInt(0); // TODO: Announce level.
 		}
-		return true;
 	}
 }

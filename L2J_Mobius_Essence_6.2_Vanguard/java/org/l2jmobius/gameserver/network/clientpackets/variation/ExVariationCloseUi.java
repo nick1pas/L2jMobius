@@ -16,22 +16,21 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.variation;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.VariationRequest;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Index
  */
-public class ExVariationCloseUi implements IClientIncomingPacket
+public class ExVariationCloseUi implements ClientPacket
 {
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readC();
-		return true;
+		packet.readByte();
 	}
 	
 	@Override

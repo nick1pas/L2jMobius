@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.appearance;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.AppearanceItemData;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -26,21 +26,20 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.appearance.ExPutShapeShiftingTargetItemResult;
 
 /**
  * @author UnAfraid
  */
-public class RequestExTryToPutShapeShiftingTargetItem implements IClientIncomingPacket
+public class RequestExTryToPutShapeShiftingTargetItem implements ClientPacket
 {
 	private int _targetItemObjId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetItemObjId = packet.readD();
-		return true;
+		_targetItemObjId = packet.readInt();
 	}
 	
 	@Override

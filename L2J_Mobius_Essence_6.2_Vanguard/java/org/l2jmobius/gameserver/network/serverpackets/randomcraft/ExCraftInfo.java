@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.randomcraft;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.itemcontainer.PlayerRandomCraft;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mode
  */
-public class ExCraftInfo implements IClientOutgoingPacket
+public class ExCraftInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -35,13 +34,12 @@ public class ExCraftInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CRAFT_INFO.writeId(packet);
+		ServerPackets.EX_CRAFT_INFO.writeId(this);
 		final PlayerRandomCraft rc = _player.getRandomCraft();
-		packet.writeD(rc.getFullCraftPoints()); // Full points owned
-		packet.writeD(rc.getCraftPoints()); // Craft Points (10k = 1%)
-		packet.writeC(rc.isSayhaRoll() ? 1 : 0); // Will get sayha?
-		return true;
+		writeInt(rc.getFullCraftPoints()); // Full points owned
+		writeInt(rc.getCraftPoints()); // Craft Points (10k = 1%)
+		writeByte(rc.isSayhaRoll()); // Will get sayha?
 	}
 }

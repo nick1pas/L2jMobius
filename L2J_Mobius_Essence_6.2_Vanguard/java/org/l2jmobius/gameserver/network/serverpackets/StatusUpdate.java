@@ -20,12 +20,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.StatusUpdateType;
 import org.l2jmobius.gameserver.model.WorldObject;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class StatusUpdate implements IClientOutgoingPacket
+public class StatusUpdate extends ServerPacket
 {
 	private final int _objectId;
 	private int _casterObjectId = 0;
@@ -73,18 +72,17 @@ public class StatusUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.STATUS_UPDATE.writeId(packet);
-		packet.writeD(_objectId); // casterId
-		packet.writeD(_isVisible ? _casterObjectId : 0);
-		packet.writeC(_isVisible ? 1 : 0);
-		packet.writeC(_updates.size());
+		ServerPackets.STATUS_UPDATE.writeId(this);
+		writeInt(_objectId); // casterId
+		writeInt(_isVisible ? _casterObjectId : 0);
+		writeByte(_isVisible);
+		writeByte(_updates.size());
 		for (Entry<StatusUpdateType, Integer> entry : _updates.entrySet())
 		{
-			packet.writeC(entry.getKey().getClientId());
-			packet.writeD(entry.getValue());
+			writeByte(entry.getKey().getClientId());
+			writeInt(entry.getValue());
 		}
-		return true;
 	}
 }

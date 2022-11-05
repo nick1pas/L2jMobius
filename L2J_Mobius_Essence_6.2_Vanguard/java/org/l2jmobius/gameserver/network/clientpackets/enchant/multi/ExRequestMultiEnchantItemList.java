@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.World;
@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.EnchantResult;
@@ -45,7 +45,7 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author Index
  */
-public class ExRequestMultiEnchantItemList implements IClientIncomingPacket
+public class ExRequestMultiEnchantItemList implements ClientPacket
 {
 	private int _useLateAnnounce;
 	private int _slotId;
@@ -62,15 +62,14 @@ public class ExRequestMultiEnchantItemList implements IClientIncomingPacket
 	protected static final Logger LOGGER_ENCHANT = Logger.getLogger("enchant.items");
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_useLateAnnounce = packet.readC();
-		_slotId = packet.readD();
-		for (int i = 1; packet.getReadableBytes() != 0; i++)
+		_useLateAnnounce = packet.readByte();
+		_slotId = packet.readInt();
+		for (int i = 1; packet.getRemainingLength() != 0; i++)
 		{
-			_itemObjectId.put(i, packet.readD());
+			_itemObjectId.put(i, packet.readInt());
 		}
-		return true;
 	}
 	
 	@Override

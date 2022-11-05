@@ -18,39 +18,37 @@ package org.l2jmobius.gameserver.network.serverpackets.ranking;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.GlobalVariablesManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class ExRankingBuffZoneNpcPosition implements IClientOutgoingPacket
+public class ExRankingBuffZoneNpcPosition extends ServerPacket
 {
 	public ExRankingBuffZoneNpcPosition()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RANKING_CHAR_BUFFZONE_NPC_POSITION.writeId(packet);
+		ServerPackets.EX_RANKING_CHAR_BUFFZONE_NPC_POSITION.writeId(this);
 		if (GlobalVariablesManager.getInstance().getLong(GlobalVariablesManager.RANKING_POWER_COOLDOWN, 0) > System.currentTimeMillis())
 		{
 			final List<Integer> location = GlobalVariablesManager.getInstance().getIntegerList(GlobalVariablesManager.RANKING_POWER_LOCATION);
-			packet.writeC(1);
-			packet.writeD(location.get(0));
-			packet.writeD(location.get(1));
-			packet.writeD(location.get(2));
+			writeByte(1);
+			writeInt(location.get(0));
+			writeInt(location.get(1));
+			writeInt(location.get(2));
 		}
 		else
 		{
-			packet.writeC(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
+			writeByte(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

@@ -16,9 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.commission;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.commission.CommissionItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -36,17 +35,16 @@ public class ExResponseCommissionBuyInfo extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESPONSE_COMMISSION_BUY_INFO.writeId(packet);
-		packet.writeD(_commissionItem != null ? 1 : 0);
+		ServerPackets.EX_RESPONSE_COMMISSION_BUY_INFO.writeId(this);
+		writeInt(_commissionItem != null);
 		if (_commissionItem != null)
 		{
-			packet.writeQ(_commissionItem.getPricePerUnit());
-			packet.writeQ(_commissionItem.getCommissionId());
-			packet.writeD(0); // CommissionItemType seems client does not really need it.
-			writeItem(packet, _commissionItem.getItemInfo());
+			writeLong(_commissionItem.getPricePerUnit());
+			writeLong(_commissionItem.getCommissionId());
+			writeInt(0); // CommissionItemType seems client does not really need it.
+			writeItem(_commissionItem.getItemInfo());
 		}
-		return true;
 	}
 }

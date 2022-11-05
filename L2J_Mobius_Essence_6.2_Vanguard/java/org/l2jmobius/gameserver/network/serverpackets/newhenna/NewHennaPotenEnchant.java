@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.newhenna;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index, Serenitty
  */
-public class NewHennaPotenEnchant implements IClientOutgoingPacket
+public class NewHennaPotenEnchant extends ServerPacket
 {
 	private final int _slotId;
 	private final int _enchantStep;
@@ -45,16 +44,15 @@ public class NewHennaPotenEnchant implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_NEW_HENNA_POTEN_ENCHANT.writeId(packet);
-		packet.writeC(_slotId);
-		packet.writeH(_enchantStep);
-		packet.writeD(_enchantExp);
-		packet.writeH(_dailyStep);
-		packet.writeH(_dailyCount);
-		packet.writeH(_activeStep);
-		packet.writeC(_success ? 1 : 0);
-		return true;
+		ServerPackets.EX_NEW_HENNA_POTEN_ENCHANT.writeId(this);
+		writeByte(_slotId);
+		writeShort(_enchantStep);
+		writeInt(_enchantExp);
+		writeShort(_dailyStep);
+		writeShort(_dailyCount);
+		writeShort(_activeStep);
+		writeByte(_success);
 	}
 }

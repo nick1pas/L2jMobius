@@ -20,18 +20,17 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Optional;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.PetDataTable;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 11.05.2021 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+ * @author Berezkin Nikolay
  */
-public class ExPetRankingMyInfo implements IClientOutgoingPacket
+public class ExPetRankingMyInfo extends ServerPacket
 {
 	private final int _petId;
 	private final Player _player;
@@ -51,15 +50,15 @@ public class ExPetRankingMyInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PET_RANKING_MY_INFO.writeId(packet);
-		packet.writeD(_petId);
-		packet.writeH(1);
-		packet.writeD(-1);
-		packet.writeD(0);
-		packet.writeD(_ranking.isPresent() ? _ranking.get().getKey() : 0); // server rank
-		packet.writeD(_snapshotRanking.isPresent() ? _snapshotRanking.get().getKey() : 0); // snapshot server rank
+		ServerPackets.EX_PET_RANKING_MY_INFO.writeId(this);
+		writeInt(_petId);
+		writeShort(1);
+		writeInt(-1);
+		writeInt(0);
+		writeInt(_ranking.isPresent() ? _ranking.get().getKey() : 0); // server rank
+		writeInt(_snapshotRanking.isPresent() ? _snapshotRanking.get().getKey() : 0); // snapshot server rank
 		if (_petId > 0)
 		{
 			int typeRank = 1;
@@ -71,7 +70,7 @@ public class ExPetRankingMyInfo implements IClientOutgoingPacket
 					if (ss.getInt("controlledItemObjId", -1) == _petId)
 					{
 						found = true;
-						packet.writeD(typeRank);
+						writeInt(typeRank);
 						break;
 					}
 					typeRank++;
@@ -79,7 +78,7 @@ public class ExPetRankingMyInfo implements IClientOutgoingPacket
 			}
 			if (!found)
 			{
-				packet.writeD(0);
+				writeInt(0);
 			}
 			int snapshotTypeRank = 1;
 			boolean snapshotFound = false;
@@ -90,7 +89,7 @@ public class ExPetRankingMyInfo implements IClientOutgoingPacket
 					if (ss.getInt("controlledItemObjId", -1) == _petId)
 					{
 						snapshotFound = true;
-						packet.writeD(snapshotTypeRank);
+						writeInt(snapshotTypeRank);
 						break;
 					}
 					snapshotTypeRank++;
@@ -98,14 +97,13 @@ public class ExPetRankingMyInfo implements IClientOutgoingPacket
 			}
 			if (!snapshotFound)
 			{
-				packet.writeD(0);
+				writeInt(0);
 			}
 		}
 		else
 		{
-			packet.writeD(0);
-			packet.writeD(0);
+			writeInt(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

@@ -32,7 +32,7 @@ import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.holders.SubjugationHolder;
 
 /**
- * Written by Berezkin Nikolay, on 13.04.2021
+ * @author Berezkin Nikolay
  */
 public class SubjugationData implements IXmlReader
 {

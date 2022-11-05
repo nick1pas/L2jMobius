@@ -16,24 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.castlewar;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.castlewar.ExMercenaryCastleWarCastleInfo;
 
 /**
  * @author Serenitty
  */
-public class ExMCWCastleInfo implements IClientIncomingPacket
+public class ExMCWCastleInfo implements ClientPacket
 {
 	private int _castleId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_castleId = packet.readD();
-		return true;
+		_castleId = packet.readInt();
 	}
 	
 	@Override

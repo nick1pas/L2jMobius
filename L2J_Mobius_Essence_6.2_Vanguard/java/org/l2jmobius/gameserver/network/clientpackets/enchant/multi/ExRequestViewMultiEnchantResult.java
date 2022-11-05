@@ -16,23 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant.multi;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.multi.ExResultMultiEnchantItemList;
 
 /**
  * @author Index
  */
-public class ExRequestViewMultiEnchantResult implements IClientIncomingPacket
+public class ExRequestViewMultiEnchantResult implements ClientPacket
 {
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readC();
-		return true;
+		packet.readByte();
 	}
 	
 	@Override

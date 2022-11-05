@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
@@ -38,16 +38,15 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * @author Mobius
  */
-public class RequestPledgeSignInForOpenJoiningMethod implements IClientIncomingPacket
+public class RequestPledgeSignInForOpenJoiningMethod implements ClientPacket
 {
 	private int _clanId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_clanId = packet.readD();
-		packet.readD();
-		return true;
+		_clanId = packet.readInt();
+		packet.readInt();
 	}
 	
 	@Override

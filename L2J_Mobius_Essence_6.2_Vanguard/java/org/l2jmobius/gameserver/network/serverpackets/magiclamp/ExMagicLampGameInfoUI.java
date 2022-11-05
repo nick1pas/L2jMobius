@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets.magiclamp;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.MagicLampData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.GreaterMagicLampHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author L2CCCP
  */
-public class ExMagicLampGameInfoUI implements IClientOutgoingPacket
+public class ExMagicLampGameInfoUI extends ServerPacket
 {
 	private final Player _player;
 	private final byte _mode;
@@ -43,22 +42,21 @@ public class ExMagicLampGameInfoUI implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MAGICLAMP_GAME_INFO.writeId(packet);
-		packet.writeD(_player.getMaxLampCount()); // MagicLampGameMaxCCount
-		packet.writeD(_count); // MagicLampGameCCount
-		packet.writeD(_mode == 0 ? Config.MAGIC_LAMP_CONSUME_COUNT : Config.MAGIC_LAMP_GREATER_CONSUME_COUNT); // MagicLampCountPerGame
-		packet.writeD(_player.getLampCount()); // MagicLampCount
-		packet.writeC(_mode); // GameMode
+		ServerPackets.EX_MAGICLAMP_GAME_INFO.writeId(this);
+		writeInt(_player.getMaxLampCount()); // MagicLampGameMaxCCount
+		writeInt(_count); // MagicLampGameCCount
+		writeInt(_mode == 0 ? Config.MAGIC_LAMP_CONSUME_COUNT : Config.MAGIC_LAMP_GREATER_CONSUME_COUNT); // MagicLampCountPerGame
+		writeInt(_player.getLampCount()); // MagicLampCount
+		writeByte(_mode); // GameMode
 		final List<GreaterMagicLampHolder> greater = MagicLampData.getInstance().getGreaterLamps();
-		packet.writeD(greater.size()); // costItemList
+		writeInt(greater.size()); // costItemList
 		for (GreaterMagicLampHolder lamp : greater)
 		{
-			packet.writeD(lamp.getItemId()); // ItemClassID
-			packet.writeQ(lamp.getCount()); // ItemAmountPerGame
-			packet.writeQ(_player.getInventory().getInventoryItemCount(lamp.getItemId(), -1)); // ItemAmount
+			writeInt(lamp.getItemId()); // ItemClassID
+			writeLong(lamp.getCount()); // ItemAmountPerGame
+			writeLong(_player.getInventory().getInventoryItemCount(lamp.getItemId(), -1)); // ItemAmount
 		}
-		return true;
 	}
 }

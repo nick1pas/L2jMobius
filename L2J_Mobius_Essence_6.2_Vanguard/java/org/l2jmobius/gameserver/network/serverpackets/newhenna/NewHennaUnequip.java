@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.newhenna;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index, Serenitty
  */
-public class NewHennaUnequip implements IClientOutgoingPacket
+public class NewHennaUnequip extends ServerPacket
 {
 	private final int _slotId;
 	private final int _success;
@@ -35,11 +34,10 @@ public class NewHennaUnequip implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_NEW_HENNA_UNEQUIP.writeId(packet);
-		packet.writeC(_slotId);
-		packet.writeC(_success);
-		return true;
+		ServerPackets.EX_NEW_HENNA_UNEQUIP.writeId(this);
+		writeByte(_slotId);
+		writeByte(_success);
 	}
 }

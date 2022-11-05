@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets.autopeel;
 
 import java.util.Collections;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.handler.IItemHandler;
 import org.l2jmobius.gameserver.handler.ItemHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -26,25 +26,24 @@ import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
 import org.l2jmobius.gameserver.model.item.EtcItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExResultItemAutoPeel;
 
 /**
  * @author Mobius
  */
-public class ExRequestItemAutoPeel implements IClientIncomingPacket
+public class ExRequestItemAutoPeel implements ClientPacket
 {
 	private int _itemObjectId;
 	private long _totalPeelCount;
 	private long _remainingPeelCount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjectId = packet.readD();
-		_totalPeelCount = packet.readQ();
-		_remainingPeelCount = packet.readQ();
-		return true;
+		_itemObjectId = packet.readInt();
+		_totalPeelCount = packet.readLong();
+		_remainingPeelCount = packet.readLong();
 	}
 	
 	@Override

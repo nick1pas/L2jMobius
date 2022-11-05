@@ -38,11 +38,11 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
 import org.l2jmobius.gameserver.network.serverpackets.ExRedSky;
 import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoAbnormalVisualEffect;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.OnEventTrigger;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
 import org.l2jmobius.gameserver.network.serverpackets.SunRise;
 import org.l2jmobius.gameserver.network.serverpackets.SunSet;
@@ -717,7 +717,7 @@ public class AdminEffects implements IAdminCommandHandler
 	 */
 	private void adminAtmosphere(String type, String state, int duration, Player activeChar)
 	{
-		IClientOutgoingPacket packet = null;
+		ServerPacket packet = null;
 		if (type.equals("sky"))
 		{
 			if (state.equals("night"))

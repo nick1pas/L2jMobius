@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.model.holders;
 import org.l2jmobius.gameserver.enums.EvolveLevel;
 
 /**
- * Written by Berezkin Nikolay, on 16.05.2021
+ * @author Berezkin Nikolay
  */
 public class PetEvolveHolder
 {

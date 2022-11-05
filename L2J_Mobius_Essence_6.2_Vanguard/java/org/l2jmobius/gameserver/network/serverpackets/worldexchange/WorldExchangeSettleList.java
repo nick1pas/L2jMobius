@@ -19,7 +19,6 @@ package org.l2jmobius.gameserver.network.serverpackets.worldexchange;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.enums.WorldExchangeItemStatusType;
 import org.l2jmobius.gameserver.instancemanager.WorldExchangeManager;
@@ -28,13 +27,13 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
 import org.l2jmobius.gameserver.model.holders.WorldExchangeHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class WorldExchangeSettleList implements IClientOutgoingPacket
+public class WorldExchangeSettleList extends ServerPacket
 {
 	private final Player _player;
 	
@@ -44,91 +43,90 @@ public class WorldExchangeSettleList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_WORLD_EXCHANGE_SETTLE_LIST.writeId(packet);
+		ServerPackets.EX_WORLD_EXCHANGE_SETTLE_LIST.writeId(this);
 		
 		final Map<WorldExchangeItemStatusType, List<WorldExchangeHolder>> holders = WorldExchangeManager.getInstance().getPlayerBids(_player.getObjectId());
 		if (holders.isEmpty())
 		{
-			packet.writeD(0); // RegiItemDataList
-			packet.writeD(0); // RecvItemDataList
-			packet.writeD(0); // TimeOutItemDataList
-			return false;
+			writeInt(0); // RegiItemDataList
+			writeInt(0); // RecvItemDataList
+			writeInt(0); // TimeOutItemDataList
+			return;
 		}
 		
-		packet.writeD(holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED).size());
+		writeInt(holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED).size());
 		for (WorldExchangeHolder holder : holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED))
 		{
-			getItemInfo(packet, holder);
+			getItemInfo(holder);
 		}
 		
-		packet.writeD(holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD).size());
+		writeInt(holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD).size());
 		for (WorldExchangeHolder holder : holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_SOLD))
 		{
-			getItemInfo(packet, holder);
+			getItemInfo(holder);
 		}
 		
-		packet.writeD(holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_OUT_TIME).size());
+		writeInt(holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_OUT_TIME).size());
 		for (WorldExchangeHolder holder : holders.get(WorldExchangeItemStatusType.WORLD_EXCHANGE_OUT_TIME))
 		{
-			getItemInfo(packet, holder);
+			getItemInfo(holder);
 		}
-		return true;
 	}
 	
-	private void getItemInfo(PacketWriter packet, WorldExchangeHolder holder)
+	private void getItemInfo(WorldExchangeHolder holder)
 	{
-		packet.writeQ(holder.getWorldExchangeId());
-		packet.writeQ(holder.getPrice());
-		packet.writeD((int) (holder.getEndTime() / 1000L));
+		writeLong(holder.getWorldExchangeId());
+		writeLong(holder.getPrice());
+		writeInt((int) (holder.getEndTime() / 1000L));
 		Item item = holder.getItemInstance();
-		packet.writeD(item.getId());
-		packet.writeQ(item.getCount());
-		packet.writeD(item.getEnchantLevel() < 1 ? 0 : item.getEnchantLevel());
+		writeInt(item.getId());
+		writeLong(item.getCount());
+		writeInt(item.getEnchantLevel() < 1 ? 0 : item.getEnchantLevel());
 		VariationInstance iv = item.getAugmentation();
-		packet.writeD(iv != null ? iv.getOption1Id() : 0);
-		packet.writeD(iv != null ? iv.getOption2Id() : 0);
-		packet.writeD(-1); // IntensiveItemClassID
-		packet.writeH(item.getAttackAttribute() != null ? item.getAttackAttribute().getType().getClientId() : 0);
-		packet.writeH(item.getAttackAttribute() != null ? item.getAttackAttribute().getValue() : 0);
-		packet.writeH(item.getDefenceAttribute(AttributeType.FIRE));
-		packet.writeH(item.getDefenceAttribute(AttributeType.WATER));
-		packet.writeH(item.getDefenceAttribute(AttributeType.WIND));
-		packet.writeH(item.getDefenceAttribute(AttributeType.EARTH));
-		packet.writeH(item.getDefenceAttribute(AttributeType.HOLY));
-		packet.writeH(item.getDefenceAttribute(AttributeType.DARK));
-		packet.writeD(item.getVisualId());
+		writeInt(iv != null ? iv.getOption1Id() : 0);
+		writeInt(iv != null ? iv.getOption2Id() : 0);
+		writeInt(-1); // IntensiveItemClassID
+		writeShort(item.getAttackAttribute() != null ? item.getAttackAttribute().getType().getClientId() : 0);
+		writeShort(item.getAttackAttribute() != null ? item.getAttackAttribute().getValue() : 0);
+		writeShort(item.getDefenceAttribute(AttributeType.FIRE));
+		writeShort(item.getDefenceAttribute(AttributeType.WATER));
+		writeShort(item.getDefenceAttribute(AttributeType.WIND));
+		writeShort(item.getDefenceAttribute(AttributeType.EARTH));
+		writeShort(item.getDefenceAttribute(AttributeType.HOLY));
+		writeShort(item.getDefenceAttribute(AttributeType.DARK));
+		writeInt(item.getVisualId());
 		
 		final List<EnsoulOption> soul = (List<EnsoulOption>) holder.getItemInfo().getSoulCrystalOptions();
 		try
 		{
-			packet.writeD(soul.get(0).getId());
+			writeInt(soul.get(0).getId());
 		}
 		catch (IndexOutOfBoundsException ignored)
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		
 		try
 		{
-			packet.writeD(soul.get(1).getId());
+			writeInt(soul.get(1).getId());
 		}
 		catch (IndexOutOfBoundsException ignored)
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		
 		final List<EnsoulOption> specialSoul = (List<EnsoulOption>) holder.getItemInfo().getSoulCrystalSpecialOptions();
 		try
 		{
-			packet.writeD(specialSoul.get(0).getId());
+			writeInt(specialSoul.get(0).getId());
 		}
 		catch (IndexOutOfBoundsException ignored)
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		
-		packet.writeH(item.isBlessed() ? 1 : 0);
+		writeShort(item.isBlessed());
 	}
 }

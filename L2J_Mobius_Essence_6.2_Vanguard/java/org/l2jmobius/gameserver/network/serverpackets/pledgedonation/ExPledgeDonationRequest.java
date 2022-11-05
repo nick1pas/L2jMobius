@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgedonation;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 08.05.2021 00 01 00 00 00 00 00 03 00 00 00 0E 00 00 00 00 00 00 00 00 00 00 00 00 00 02 00 00 00 00 01 00 00 00 00 00 03 00 00 00 0E 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00
+ * @author Berezkin Nikolay
  */
-public class ExPledgeDonationRequest implements IClientOutgoingPacket
+public class ExPledgeDonationRequest extends ServerPacket
 {
 	private final boolean _success;
 	private final int _type;
@@ -37,17 +36,16 @@ public class ExPledgeDonationRequest implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_DONATION_REQUEST.writeId(packet);
-		packet.writeC(_type);
-		packet.writeD(_success ? 1 : 0);
-		packet.writeH(0);
-		packet.writeD(3);
-		packet.writeD(14);
-		packet.writeQ(0);
-		packet.writeH(0);
-		packet.writeD(_curPoints);
-		return true;
+		ServerPackets.EX_PLEDGE_DONATION_REQUEST.writeId(this);
+		writeByte(_type);
+		writeInt(_success);
+		writeShort(0);
+		writeInt(3);
+		writeInt(14);
+		writeLong(0);
+		writeShort(0);
+		writeInt(_curPoints);
 	}
 }

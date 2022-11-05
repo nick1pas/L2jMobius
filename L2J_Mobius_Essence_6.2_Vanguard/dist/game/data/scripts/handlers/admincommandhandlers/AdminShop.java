@@ -114,7 +114,7 @@ public class AdminShop implements IAdminCommandHandler
 		{
 			activeChar.sendPacket(new ExBuySellList(buyList, activeChar, 0));
 			activeChar.sendPacket(new ExBuySellList(activeChar, false));
-			activeChar.sendPacket(new ExBuySellList(false));
+			activeChar.sendPacket(new ExBuySellList());
 		}
 		else
 		{

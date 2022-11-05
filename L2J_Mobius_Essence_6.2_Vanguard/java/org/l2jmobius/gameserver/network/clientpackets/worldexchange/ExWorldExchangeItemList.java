@@ -20,38 +20,37 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.WorldExchangeItemSubType;
 import org.l2jmobius.gameserver.enums.WorldExchangeSortType;
 import org.l2jmobius.gameserver.instancemanager.WorldExchangeManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.WorldExchangeHolder;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.worldexchange.WorldExchangeItemList;
 
 /**
  * @author Index
  */
 
-public class ExWorldExchangeItemList implements IClientIncomingPacket
+public class ExWorldExchangeItemList implements ClientPacket
 {
 	private int _category;
 	private int _sortType;
 	private final List<Integer> _itemIdList = new ArrayList<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_category = packet.readH();
-		_sortType = packet.readC();
-		packet.readD(); // page
-		int size = packet.readD();
+		_category = packet.readShort();
+		_sortType = packet.readByte();
+		packet.readInt(); // page
+		int size = packet.readInt();
 		for (int i = 0; i < size; i++)
 		{
-			_itemIdList.add(packet.readD());
+			_itemIdList.add(packet.readInt());
 		}
-		return true;
 	}
 	
 	@Override

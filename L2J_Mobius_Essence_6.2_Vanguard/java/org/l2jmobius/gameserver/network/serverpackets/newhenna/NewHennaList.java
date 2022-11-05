@@ -17,17 +17,16 @@
 
 package org.l2jmobius.gameserver.network.serverpackets.newhenna;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.henna.Henna;
 import org.l2jmobius.gameserver.model.item.henna.HennaPoten;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index, Serenitty
  */
-public class NewHennaList implements IClientOutgoingPacket
+public class NewHennaList extends ServerPacket
 {
 	private final HennaPoten[] _hennaId;
 	private final int _dailyStep;
@@ -43,23 +42,22 @@ public class NewHennaList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_NEW_HENNA_LIST.writeId(packet);
-		packet.writeH(_dailyStep);
-		packet.writeH(_dailyCount);
-		packet.writeD(_hennaId.length);
+		ServerPackets.EX_NEW_HENNA_LIST.writeId(this);
+		writeShort(_dailyStep);
+		writeShort(_dailyCount);
+		writeInt(_hennaId.length);
 		for (int i = 1; i <= _hennaId.length; i++)
 		{
 			final HennaPoten hennaPoten = _hennaId[i - 1];
 			final Henna henna = _hennaId[i - 1].getHenna();
-			packet.writeD(henna != null ? henna.getDyeId() : 0);
-			packet.writeD(hennaPoten.getPotenId());
-			packet.writeC(i == _availableSlots ? 0 : 1);
-			packet.writeH(hennaPoten.getEnchantLevel());
-			packet.writeD(hennaPoten.getEnchantExp());
-			packet.writeH(hennaPoten.getActiveStep());
+			writeInt(henna != null ? henna.getDyeId() : 0);
+			writeInt(hennaPoten.getPotenId());
+			writeByte(i != _availableSlots);
+			writeShort(hennaPoten.getEnchantLevel());
+			writeInt(hennaPoten.getEnchantExp());
+			writeShort(hennaPoten.getActiveStep());
 		}
-		return true;
 	}
 }

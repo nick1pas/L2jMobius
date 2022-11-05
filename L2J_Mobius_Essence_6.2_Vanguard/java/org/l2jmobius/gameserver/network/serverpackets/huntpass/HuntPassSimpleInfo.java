@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntpass;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.HuntPass;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class HuntPassSimpleInfo implements IClientOutgoingPacket
+public class HuntPassSimpleInfo extends ServerPacket
 {
 	private final HuntPass _huntPassInfo;
 	
@@ -35,16 +34,15 @@ public class HuntPassSimpleInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_L2PASS_SIMPLE_INFO.writeId(packet);
+		ServerPackets.EX_L2PASS_SIMPLE_INFO.writeId(this);
 		
-		packet.writeD(1); // passInfos
-		packet.writeC(0);
-		packet.writeC(1); // isOn
+		writeInt(1); // passInfos
+		writeByte(0);
+		writeByte(1); // isOn
 		
-		packet.writeC(_huntPassInfo.rewardAlert() ? 1 : 0);
-		packet.writeD(0);
-		return true;
+		writeByte(_huntPassInfo.rewardAlert());
+		writeInt(0);
 	}
 }

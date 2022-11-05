@@ -17,28 +17,26 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Index
  */
-public class ExBRVersion implements IClientOutgoingPacket
+public class ExBRVersion extends ServerPacket
 {
 	public ExBRVersion()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (!Config.ENABLE_WORLD_EXCHANGE)
 		{
-			return false;
+			return;
 		}
 		
-		OutgoingPackets.EX_BR_VERSION.writeId(packet);
-		packet.writeC(1);
-		return true;
+		ServerPackets.EX_BR_VERSION.writeId(this);
+		writeByte(1);
 	}
 }

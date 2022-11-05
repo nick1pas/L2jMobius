@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import java.util.Arrays;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.ActionData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.handler.IPlayerActionHandler;
@@ -39,19 +39,18 @@ import org.l2jmobius.gameserver.network.serverpackets.RecipeShopManageList;
  * This class manages the action use request packet.
  * @author Zoey76
  */
-public class RequestActionUse implements IClientIncomingPacket
+public class RequestActionUse implements ClientPacket
 {
 	private int _actionId;
 	private boolean _ctrlPressed;
 	private boolean _shiftPressed;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_actionId = packet.readD();
-		_ctrlPressed = (packet.readD() == 1);
-		_shiftPressed = (packet.readC() == 1);
-		return true;
+		_actionId = packet.readInt();
+		_ctrlPressed = (packet.readInt() == 1);
+		_shiftPressed = (packet.readByte() == 1);
 	}
 	
 	@Override

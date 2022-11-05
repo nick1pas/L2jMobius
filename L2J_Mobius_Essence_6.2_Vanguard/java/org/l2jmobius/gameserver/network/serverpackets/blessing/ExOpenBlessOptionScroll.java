@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.blessing;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Horus, on 17.04.2021
+ * @author Horus
  */
-public class ExOpenBlessOptionScroll implements IClientOutgoingPacket
+public class ExOpenBlessOptionScroll extends ServerPacket
 {
 	private final int _itemId;
 	
@@ -33,10 +32,9 @@ public class ExOpenBlessOptionScroll implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OPEN_BLESS_OPTION_SCROLL.writeId(packet);
-		packet.writeD(_itemId);
-		return true;
+		ServerPackets.EX_OPEN_BLESS_OPTION_SCROLL.writeId(this);
+		writeInt(_itemId);
 	}
 }

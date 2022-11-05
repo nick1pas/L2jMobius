@@ -19,15 +19,14 @@ package org.l2jmobius.gameserver.network.serverpackets.subjugation;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.PurgeRankingManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 13.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExSubjugationRanking implements IClientOutgoingPacket
+public class ExSubjugationRanking extends ServerPacket
 {
 	private final Map<String, Integer> _ranking;
 	private final int _category;
@@ -41,20 +40,19 @@ public class ExSubjugationRanking implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUBJUGATION_RANKING.writeId(packet);
-		packet.writeD(_ranking.entrySet().size());
+		ServerPackets.EX_SUBJUGATION_RANKING.writeId(this);
+		writeInt(_ranking.entrySet().size());
 		int counter = 1;
 		for (Entry<String, Integer> data : _ranking.entrySet())
 		{
-			packet.writeString(data.getKey());
-			packet.writeD(data.getValue());
-			packet.writeD(counter++);
+			writeSizedString(data.getKey());
+			writeInt(data.getValue());
+			writeInt(counter++);
 		}
-		packet.writeD(_category);
-		packet.writeD(PurgeRankingManager.getInstance().getPlayerRating(_category, _objectId).getValue());
-		packet.writeD(PurgeRankingManager.getInstance().getPlayerRating(_category, _objectId).getKey());
-		return true;
+		writeInt(_category);
+		writeInt(PurgeRankingManager.getInstance().getPlayerRating(_category, _objectId).getValue());
+		writeInt(PurgeRankingManager.getInstance().getPlayerRating(_category, _objectId).getKey());
 	}
 }

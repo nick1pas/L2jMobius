@@ -17,17 +17,16 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.events.LetterCollectorManager;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Index
  */
-public class ExLetterCollectorUI implements IClientOutgoingPacket
+public class ExLetterCollectorUI extends ServerPacket
 {
-	final int _minimumLevel;
+	private final int _minimumLevel;
 	
 	public ExLetterCollectorUI(Player player)
 	{
@@ -35,11 +34,10 @@ public class ExLetterCollectorUI implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_LETTER_COLLECTOR_UI_LAUNCHER.writeId(packet);
-		packet.writeC(1); // enabled (0x00 - no, 0x01 -yes)
-		packet.writeD(_minimumLevel); // Minimum Level
-		return true;
+		ServerPackets.EX_LETTER_COLLECTOR_UI_LAUNCHER.writeId(this);
+		writeByte(1); // enabled (0x00 - no, 0x01 -yes)
+		writeInt(_minimumLevel); // Minimum Level
 	}
 }

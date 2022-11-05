@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.AllyCrest;
@@ -24,19 +24,18 @@ import org.l2jmobius.gameserver.network.serverpackets.AllyCrest;
 /**
  * @version $Revision: 1.3.4.4 $ $Date: 2005/03/27 15:29:30 $
  */
-public class RequestAllyCrest implements IClientIncomingPacket
+public class RequestAllyCrest implements ClientPacket
 {
 	private int _crestId;
 	private int _clanId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readD(); // Server ID
-		_crestId = packet.readD();
-		packet.readD(); // Ally ID
-		_clanId = packet.readD();
-		return true;
+		packet.readInt(); // Server ID
+		_crestId = packet.readInt();
+		packet.readInt(); // Ally ID
+		_clanId = packet.readInt();
 	}
 	
 	@Override

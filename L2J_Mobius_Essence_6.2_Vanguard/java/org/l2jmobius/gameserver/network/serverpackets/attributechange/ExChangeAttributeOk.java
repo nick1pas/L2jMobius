@@ -16,21 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.attributechange;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExChangeAttributeOk implements IClientOutgoingPacket
+public class ExChangeAttributeOk extends ServerPacket
 {
-	public static final IClientOutgoingPacket STATIC = new ExChangeAttributeOk();
+	public static final ExChangeAttributeOk STATIC = new ExChangeAttributeOk();
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHANGE_ATTRIBUTE_OK.writeId(packet);
-		return true;
+		ServerPackets.EX_CHANGE_ATTRIBUTE_OK.writeId(this);
 	}
 }

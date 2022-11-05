@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets.teleports;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.NpcData;
 import org.l2jmobius.gameserver.data.xml.RaidTeleportListData;
 import org.l2jmobius.gameserver.enums.RaidBossStatus;
@@ -36,21 +36,20 @@ import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.teleports.ExRaidTeleportInfo;
 
 /**
  * @author Gustavo Fonseca
  */
-public class ExTeleportToRaidPosition implements IClientIncomingPacket
+public class ExTeleportToRaidPosition implements ClientPacket
 {
 	private int _raidId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_raidId = packet.readD();
-		return true;
+		_raidId = packet.readInt();
 	}
 	
 	@Override

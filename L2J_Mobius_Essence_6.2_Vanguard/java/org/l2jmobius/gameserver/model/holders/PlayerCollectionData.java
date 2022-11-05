@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.model.holders;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
 public class PlayerCollectionData
 {

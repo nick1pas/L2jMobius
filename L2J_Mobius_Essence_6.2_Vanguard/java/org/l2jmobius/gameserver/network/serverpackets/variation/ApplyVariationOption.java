@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.variation;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ApplyVariationOption implements IClientOutgoingPacket
+public class ApplyVariationOption extends ServerPacket
 {
 	private final int _result;
 	private final int _enchantedObjectId;
@@ -39,13 +38,12 @@ public class ApplyVariationOption implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_APPLY_VARIATION_OPTION.writeId(packet);
-		packet.writeC(_result);
-		packet.writeD(_enchantedObjectId);
-		packet.writeD(_option1);
-		packet.writeD(_option2);
-		return true;
+		ServerPackets.EX_APPLY_VARIATION_OPTION.writeId(this);
+		writeByte(_result);
+		writeInt(_enchantedObjectId);
+		writeInt(_option1);
+		writeInt(_option2);
 	}
 }

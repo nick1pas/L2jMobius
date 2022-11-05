@@ -20,7 +20,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
 import org.l2jmobius.gameserver.model.SiegeClan;
@@ -33,12 +32,12 @@ import org.l2jmobius.gameserver.model.siege.Fort;
 import org.l2jmobius.gameserver.model.skill.BuffInfo;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class Die implements IClientOutgoingPacket
+public class Die extends ServerPacket
 {
 	private final int _objectId;
 	private final boolean _isSweepable;
@@ -108,53 +107,52 @@ public class Die implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.DIE.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeQ(_flags);
-		packet.writeD(_isSweepable ? 1 : 0);
-		packet.writeD(_delayFeather); // Feather item time.
-		packet.writeC(0); // Hide die animation.
-		packet.writeD(0);
+		ServerPackets.DIE.writeId(this);
+		writeInt(_objectId);
+		writeLong(_flags);
+		writeInt(_isSweepable);
+		writeInt(_delayFeather); // Feather item time.
+		writeByte(0); // Hide die animation.
+		writeInt(0);
 		if ((_player != null) && Config.RESURRECT_BY_PAYMENT_ENABLED)
 		{
 			int resurrectTimes = _player.getVariables().getInt(PlayerVariables.RESURRECT_BY_PAYMENT_COUNT, 0) + 1;
 			int originalValue = resurrectTimes - 1;
 			if (originalValue < Config.RESURRECT_BY_PAYMENT_MAX_FREE_TIMES)
 			{
-				packet.writeD(Config.RESURRECT_BY_PAYMENT_MAX_FREE_TIMES - originalValue); // free round resurrection
-				packet.writeD(0); // Adena resurrection
-				packet.writeD(0); // Adena count%
-				packet.writeD(0); // L-Coin resurrection
-				packet.writeD(0); // L-Coin count%
+				writeInt(Config.RESURRECT_BY_PAYMENT_MAX_FREE_TIMES - originalValue); // free round resurrection
+				writeInt(0); // Adena resurrection
+				writeInt(0); // Adena count%
+				writeInt(0); // L-Coin resurrection
+				writeInt(0); // L-Coin count%
 			}
 			else
 			{
-				packet.writeD(0);
-				getValues(_player, packet, originalValue);
+				writeInt(0);
+				getValues(_player, originalValue);
 			}
 		}
 		else
 		{
-			packet.writeD(1); // free round resurrection
-			packet.writeD(0); // Adena resurrection
-			packet.writeD(-1); // Adena count%
-			packet.writeD(0); // L-Coin resurrection
-			packet.writeD(-1); // L-Coin count%
+			writeInt(1); // free round resurrection
+			writeInt(0); // Adena resurrection
+			writeInt(-1); // Adena count%
+			writeInt(0); // L-Coin resurrection
+			writeInt(-1); // L-Coin count%
 		}
-		packet.writeD(0);
-		return true;
+		writeInt(0);
 	}
 	
-	private void getValues(Player player, PacketWriter packet, int originalValue)
+	private void getValues(Player player, int originalValue)
 	{
 		if ((Config.RESURRECT_BY_PAYMENT_FIRST_RESURRECT_VALUES == null) || (Config.RESURRECT_BY_PAYMENT_SECOND_RESURRECT_VALUES == null))
 		{
-			packet.writeD(0); // Adena resurrection
-			packet.writeD(-1); // Adena count%
-			packet.writeD(0); // L-Coin resurrection
-			packet.writeD(-1); // L-Coin count%
+			writeInt(0); // Adena resurrection
+			writeInt(-1); // Adena count%
+			writeInt(0); // L-Coin resurrection
+			writeInt(-1); // L-Coin count%
 			return;
 		}
 		
@@ -164,8 +162,8 @@ public class Die implements IClientOutgoingPacket
 		{
 			if (Config.RESURRECT_BY_PAYMENT_SECOND_RESURRECT_VALUES.isEmpty())
 			{
-				packet.writeD(0); // Adena resurrection
-				packet.writeD(-1); // Adena count%
+				writeInt(0); // Adena resurrection
+				writeInt(-1); // Adena count%
 				break;
 			}
 			
@@ -181,15 +179,15 @@ public class Die implements IClientOutgoingPacket
 			}
 			catch (Exception e)
 			{
-				packet.writeD(0); // Adena resurrection
-				packet.writeD(-1); // Adena count%
+				writeInt(0); // Adena resurrection
+				writeInt(-1); // Adena count%
 				return;
 			}
 			
 			int getValue = maxResTime <= originalValue ? maxResTime : originalValue + 1;
 			ResurrectByPaymentHolder rbph = Config.RESURRECT_BY_PAYMENT_SECOND_RESURRECT_VALUES.get(level).get(getValue);
-			packet.writeD(rbph.getAmount()); // Adena resurrection
-			packet.writeD(Math.toIntExact(Math.round(rbph.getResurrectPercent()))); // Adena count%
+			writeInt(rbph.getAmount()); // Adena resurrection
+			writeInt(Math.toIntExact(Math.round(rbph.getResurrectPercent()))); // Adena count%
 			break;
 		}
 		
@@ -197,8 +195,8 @@ public class Die implements IClientOutgoingPacket
 		{
 			if (Config.RESURRECT_BY_PAYMENT_FIRST_RESURRECT_VALUES.isEmpty())
 			{
-				packet.writeD(0); // L-Coin resurrection
-				packet.writeD(-1); // L-Coin count%
+				writeInt(0); // L-Coin resurrection
+				writeInt(-1); // L-Coin count%
 				break;
 			}
 			
@@ -214,15 +212,15 @@ public class Die implements IClientOutgoingPacket
 			}
 			catch (Exception e)
 			{
-				packet.writeD(0); // L-Coin resurrection
-				packet.writeD(-1); // L-Coin count%
+				writeInt(0); // L-Coin resurrection
+				writeInt(-1); // L-Coin count%
 				return;
 			}
 			
 			final int getValue = maxResTime <= originalValue ? maxResTime : originalValue + 1;
 			ResurrectByPaymentHolder rbph = Config.RESURRECT_BY_PAYMENT_FIRST_RESURRECT_VALUES.get(level).get(getValue);
-			packet.writeD(rbph.getAmount()); // L-Coin resurrection
-			packet.writeD(Math.toIntExact(Math.round(rbph.getResurrectPercent()))); // L-Coin count%
+			writeInt(rbph.getAmount()); // L-Coin resurrection
+			writeInt(Math.toIntExact(Math.round(rbph.getResurrectPercent()))); // L-Coin count%
 			break;
 		}
 	}

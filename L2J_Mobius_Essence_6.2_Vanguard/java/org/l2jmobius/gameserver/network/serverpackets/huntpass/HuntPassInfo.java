@@ -16,21 +16,20 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntpass;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.HuntPass;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class HuntPassInfo implements IClientOutgoingPacket
+public class HuntPassInfo extends ServerPacket
 {
 	private final int _interfaceType;
 	private final HuntPass _huntPass;
 	private final int _timeEnd;
-	private final int _isPremium;
+	private final boolean _isPremium;
 	private final int _points;
 	private final int _step;
 	private final int _rewardStep;
@@ -38,29 +37,26 @@ public class HuntPassInfo implements IClientOutgoingPacket
 	
 	public HuntPassInfo(Player player, int interfaceType)
 	{
-		
 		_interfaceType = interfaceType;
 		_huntPass = player.getHuntPass();
 		_timeEnd = _huntPass.getHuntPassDayEnd();
-		_isPremium = _huntPass.isPremium() ? 1 : 0;
+		_isPremium = _huntPass.isPremium();
 		_points = _huntPass.getPoints();
 		_step = _huntPass.getCurrentStep();
 		_rewardStep = _huntPass.getRewardStep();
 		_premiumRewardStep = _huntPass.getPremiumRewardStep();
-		
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_L2PASS_INFO.writeId(packet);
-		packet.writeC(_interfaceType);
-		packet.writeD(_timeEnd); // LeftTime
-		packet.writeC(_isPremium); // Premium
-		packet.writeD(_points); // Points
-		packet.writeD(_step); // CurrentStep
-		packet.writeD(_rewardStep); // Reward
-		packet.writeD(_premiumRewardStep); // PremiumReward
-		return true;
+		ServerPackets.EX_L2PASS_INFO.writeId(this);
+		writeByte(_interfaceType);
+		writeInt(_timeEnd); // LeftTime
+		writeByte(_isPremium); // Premium
+		writeInt(_points); // Points
+		writeInt(_step); // CurrentStep
+		writeInt(_rewardStep); // Reward
+		writeInt(_premiumRewardStep); // PremiumReward
 	}
 }

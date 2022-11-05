@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.teleports;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.SharedTeleportManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.SharedTeleportHolder;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.teleports.ExShowSharedLocationTeleportUi;
 
 /**
  * @author NasSeKa
  */
-public class ExRequestSharedLocationTeleportUi implements IClientIncomingPacket
+public class ExRequestSharedLocationTeleportUi implements ClientPacket
 {
 	private int _id;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = (packet.readD() - 1) / 256;
-		return true;
+		_id = (packet.readInt() - 1) / 256;
 	}
 	
 	@Override

@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage.SMParam;
 
@@ -25,7 +24,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage.SMParam;
  * ConfirmDlg server packet implementation.
  * @author kombat
  */
-public class ConfirmDlg implements IClientOutgoingPacket
+public class ConfirmDlg extends ServerPacket
 {
 	private int _time;
 	private int _requesterId;
@@ -65,15 +64,15 @@ public class ConfirmDlg implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CONFIRM_DLG.writeId(packet);
+		ServerPackets.CONFIRM_DLG.writeId(this);
 		final SMParam[] params = _systemMessage.getParams();
-		packet.writeD(_systemMessage.getId());
-		packet.writeD(params.length);
+		writeInt(_systemMessage.getId());
+		writeInt(params.length);
 		for (SMParam param : params)
 		{
-			packet.writeD(param.getType());
+			writeInt(param.getType());
 			switch (param.getType())
 			{
 				case SystemMessage.TYPE_ELEMENT_NAME:
@@ -81,7 +80,7 @@ public class ConfirmDlg implements IClientOutgoingPacket
 				case SystemMessage.TYPE_FACTION_NAME:
 				case SystemMessage.TYPE_ELEMENTAL_SPIRIT:
 				{
-					packet.writeC(param.getIntValue());
+					writeByte(param.getIntValue());
 					break;
 				}
 				case SystemMessage.TYPE_CASTLE_NAME:
@@ -89,7 +88,7 @@ public class ConfirmDlg implements IClientOutgoingPacket
 				case SystemMessage.TYPE_INSTANCE_NAME:
 				case SystemMessage.TYPE_CLASS_ID:
 				{
-					packet.writeH(param.getIntValue());
+					writeShort(param.getIntValue());
 					break;
 				}
 				case SystemMessage.TYPE_ITEM_NAME:
@@ -97,41 +96,40 @@ public class ConfirmDlg implements IClientOutgoingPacket
 				case SystemMessage.TYPE_NPC_NAME:
 				case SystemMessage.TYPE_DOOR_NAME:
 				{
-					packet.writeD(param.getIntValue());
+					writeInt(param.getIntValue());
 					break;
 				}
 				case SystemMessage.TYPE_LONG_NUMBER:
 				{
-					packet.writeQ(param.getLongValue());
+					writeLong(param.getLongValue());
 					break;
 				}
 				case SystemMessage.TYPE_TEXT:
 				case SystemMessage.TYPE_PLAYER_NAME:
 				{
-					packet.writeS(param.getStringValue());
+					writeString(param.getStringValue());
 					break;
 				}
 				case SystemMessage.TYPE_SKILL_NAME:
 				{
 					final int[] array = param.getIntArrayValue();
-					packet.writeD(array[0]); // skill id
-					packet.writeH(array[1]); // skill level
-					packet.writeH(array[2]); // skill sub level
+					writeInt(array[0]); // skill id
+					writeShort(array[1]); // skill level
+					writeShort(array[2]); // skill sub level
 					break;
 				}
 				case SystemMessage.TYPE_POPUP_ID:
 				case SystemMessage.TYPE_ZONE_NAME:
 				{
 					final int[] array = param.getIntArrayValue();
-					packet.writeD(array[0]); // x
-					packet.writeD(array[1]); // y
-					packet.writeD(array[2]); // z
+					writeInt(array[0]); // x
+					writeInt(array[1]); // y
+					writeInt(array[2]); // z
 					break;
 				}
 			}
 		}
-		packet.writeD(_time);
-		packet.writeD(_requesterId);
-		return true;
+		writeInt(_time);
+		writeInt(_requesterId);
 	}
 }

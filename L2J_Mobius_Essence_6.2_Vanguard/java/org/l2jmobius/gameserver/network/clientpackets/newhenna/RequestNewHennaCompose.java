@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.newhenna;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.HennaCombinationData;
 import org.l2jmobius.gameserver.data.xml.HennaData;
@@ -29,26 +29,25 @@ import org.l2jmobius.gameserver.model.item.henna.Henna;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.newhenna.NewHennaPotenCompose;
 
 /**
  * @author Index, Serenitty
  */
-public class RequestNewHennaCompose implements IClientIncomingPacket
+public class RequestNewHennaCompose implements ClientPacket
 {
 	private int _slotOneIndex;
 	private int _slotOneItemId;
 	private int _slotTwoItemId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_slotOneIndex = packet.readD();
-		_slotOneItemId = packet.readD();
-		_slotTwoItemId = packet.readD();
-		return true;
+		_slotOneIndex = packet.readInt();
+		_slotOneItemId = packet.readInt();
+		_slotTwoItemId = packet.readInt();
 	}
 	
 	@Override

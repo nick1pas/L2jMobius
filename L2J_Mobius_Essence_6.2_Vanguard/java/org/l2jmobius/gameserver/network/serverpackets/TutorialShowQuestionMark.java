@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class TutorialShowQuestionMark implements IClientOutgoingPacket
+public class TutorialShowQuestionMark extends ServerPacket
 {
 	private final int _markId;
 	private final int _markType;
@@ -34,11 +33,10 @@ public class TutorialShowQuestionMark implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.TUTORIAL_SHOW_QUESTION_MARK.writeId(packet);
-		packet.writeC(_markType);
-		packet.writeD(_markId);
-		return true;
+		ServerPackets.TUTORIAL_SHOW_QUESTION_MARK.writeId(this);
+		writeByte(_markType);
+		writeInt(_markId);
 	}
 }

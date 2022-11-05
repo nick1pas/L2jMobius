@@ -16,24 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.randomcraft;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mode
  */
-public class ExCraftExtract implements IClientOutgoingPacket
+public class ExCraftExtract extends ServerPacket
 {
 	public ExCraftExtract()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CRAFT_EXTRACT.writeId(packet);
-		packet.writeC(0);
-		return true;
+		ServerPackets.EX_CRAFT_EXTRACT.writeId(this);
+		writeByte(0);
 	}
 }

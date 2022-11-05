@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 /**
  * @author Serenitty
  */
-public class RequestChangeNicknameEmote implements IClientIncomingPacket
+public class RequestChangeNicknameEmote implements ClientPacket
 {
 	private static final int ESPECIAL_COLOR_TITLE_EMOTE = 95892;
 	private static final int ESPECIAL_COLOR_TITLE_SEALED = 94764;
@@ -56,12 +56,11 @@ public class RequestChangeNicknameEmote implements IClientIncomingPacket
 	private String _title;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemId = packet.readD();
-		_colorNum = packet.readD();
-		_title = packet.readString();
-		return true;
+		_itemId = packet.readInt();
+		_colorNum = packet.readInt();
+		_title = packet.readSizedString();
 	}
 	
 	@Override

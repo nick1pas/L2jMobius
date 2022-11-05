@@ -24,20 +24,19 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.enums.RankingOlympiadCategory;
 import org.l2jmobius.gameserver.enums.RankingOlympiadScope;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Berezkin Nikolay
  */
-public class ExOlympiadRankingInfo implements IClientOutgoingPacket
+public class ExOlympiadRankingInfo extends ServerPacket
 {
 	private final Player _player;
 	private final int _tabId;
@@ -61,41 +60,40 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_RANKING_INFO.writeId(packet);
-		packet.writeC(_tabId); // Tab id
-		packet.writeC(_rankingType); // ranking type
-		packet.writeC(_unk); // unk, shows 1 all time
-		packet.writeD(_classId); // class id (default 148) or caller class id for personal rank
-		packet.writeD(_serverId); // 0 - all servers, server id - for caller server
-		packet.writeD(933); // unk, 933 all time
+		ServerPackets.EX_OLYMPIAD_RANKING_INFO.writeId(this);
+		writeByte(_tabId); // Tab id
+		writeByte(_rankingType); // ranking type
+		writeByte(_unk); // unk, shows 1 all time
+		writeInt(_classId); // class id (default 148) or caller class id for personal rank
+		writeInt(_serverId); // 0 - all servers, server id - for caller server
+		writeInt(933); // unk, 933 all time
 		if (!_playerList.isEmpty())
 		{
 			final RankingOlympiadCategory category = RankingOlympiadCategory.values()[_tabId];
-			writeFilteredRankingData(packet, category, category.getScopeByGroup(_rankingType), ClassId.getClassId(_classId));
+			writeFilteredRankingData(category, category.getScopeByGroup(_rankingType), ClassId.getClassId(_classId));
 		}
-		return true;
 	}
 	
-	private void writeFilteredRankingData(PacketWriter packet, RankingOlympiadCategory category, RankingOlympiadScope scope, ClassId classId)
+	private void writeFilteredRankingData(RankingOlympiadCategory category, RankingOlympiadScope scope, ClassId classId)
 	{
 		switch (category)
 		{
 			case SERVER:
 			{
-				writeScopeData(packet, scope, new ArrayList<>(_playerList.entrySet()), new ArrayList<>(_snapshotList.entrySet()));
+				writeScopeData(scope, new ArrayList<>(_playerList.entrySet()), new ArrayList<>(_snapshotList.entrySet()));
 				break;
 			}
 			case CLASS:
 			{
-				writeScopeData(packet, scope, _playerList.entrySet().stream().filter(it -> it.getValue().getInt("classId") == classId.getId()).collect(Collectors.toList()), _snapshotList.entrySet().stream().filter(it -> it.getValue().getInt("classId") == classId.getId()).collect(Collectors.toList()));
+				writeScopeData(scope, _playerList.entrySet().stream().filter(it -> it.getValue().getInt("classId") == classId.getId()).collect(Collectors.toList()), _snapshotList.entrySet().stream().filter(it -> it.getValue().getInt("classId") == classId.getId()).collect(Collectors.toList()));
 				break;
 			}
 		}
 	}
 	
-	private void writeScopeData(PacketWriter packet, RankingOlympiadScope scope, List<Entry<Integer, StatSet>> list, List<Entry<Integer, StatSet>> snapshot)
+	private void writeScopeData(RankingOlympiadScope scope, List<Entry<Integer, StatSet>> list, List<Entry<Integer, StatSet>> snapshot)
 	{
 		Entry<Integer, StatSet> playerData = list.stream().filter(it -> it.getValue().getInt("charId", 0) == _player.getObjectId()).findFirst().orElse(null);
 		final int indexOf = list.indexOf(playerData);
@@ -127,15 +125,15 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 				limited = Collections.emptyList();
 			}
 		}
-		packet.writeD(limited.size());
+		writeInt(limited.size());
 		int rank = 1;
 		for (Entry<Integer, StatSet> data : limited.stream().sorted(Entry.comparingByKey()).collect(Collectors.toList()))
 		{
 			int curRank = rank++;
 			final StatSet player = data.getValue();
-			packet.writeString(player.getString("name")); // name
-			packet.writeString(player.getString("clanName")); // clan name
-			packet.writeD(scope == RankingOlympiadScope.SELF ? data.getKey() : curRank); // rank
+			writeSizedString(player.getString("name")); // name
+			writeSizedString(player.getString("clanName")); // clan name
+			writeInt(scope == RankingOlympiadScope.SELF ? data.getKey() : curRank); // rank
 			if (!snapshot.isEmpty())
 			{
 				int snapshotRank = 1;
@@ -144,23 +142,23 @@ public class ExOlympiadRankingInfo implements IClientOutgoingPacket
 					final StatSet snapshotData = ssData.getValue();
 					if (player.getInt("charId") == snapshotData.getInt("charId"))
 					{
-						packet.writeD(scope == RankingOlympiadScope.SELF ? ssData.getKey() : snapshotRank++); // previous rank
+						writeInt(scope == RankingOlympiadScope.SELF ? ssData.getKey() : snapshotRank++); // previous rank
 					}
 				}
 			}
 			else
 			{
-				packet.writeD(scope == RankingOlympiadScope.SELF ? data.getKey() : curRank);
+				writeInt(scope == RankingOlympiadScope.SELF ? data.getKey() : curRank);
 			}
-			packet.writeD(Config.SERVER_ID); // server id
-			packet.writeD(player.getInt("level")); // level
-			packet.writeD(player.getInt("classId")); // class id
-			packet.writeD(player.getInt("clanLevel")); // clan level
-			packet.writeD(player.getInt("competitions_won")); // win count
-			packet.writeD(player.getInt("competitions_lost")); // lose count
-			packet.writeD(player.getInt("olympiad_points")); // points
-			packet.writeD(player.getInt("legend_count")); // legend count
-			packet.writeD(player.getInt("count")); // hero count
+			writeInt(Config.SERVER_ID); // server id
+			writeInt(player.getInt("level")); // level
+			writeInt(player.getInt("classId")); // class id
+			writeInt(player.getInt("clanLevel")); // clan level
+			writeInt(player.getInt("competitions_won")); // win count
+			writeInt(player.getInt("competitions_lost")); // lose count
+			writeInt(player.getInt("olympiad_points")); // points
+			writeInt(player.getInt("legend_count")); // legend count
+			writeInt(player.getInt("count")); // hero count
 		}
 	}
 }

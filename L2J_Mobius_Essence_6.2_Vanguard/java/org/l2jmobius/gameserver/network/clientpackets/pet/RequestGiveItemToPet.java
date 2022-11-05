@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets.pet;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
@@ -25,24 +25,23 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pet.PetItemList;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
  * @version $Revision: 1.3.2.1.2.5 $ $Date: 2005/03/29 23:15:33 $
  */
-public class RequestGiveItemToPet implements IClientIncomingPacket
+public class RequestGiveItemToPet implements ClientPacket
 {
 	private int _objectId;
 	private long _amount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_amount = packet.readQ();
-		return true;
+		_objectId = packet.readInt();
+		_amount = packet.readLong();
 	}
 	
 	@Override

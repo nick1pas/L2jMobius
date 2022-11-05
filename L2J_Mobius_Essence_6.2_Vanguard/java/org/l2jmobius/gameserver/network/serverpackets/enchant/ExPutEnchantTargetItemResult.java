@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.enchant;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author nBd
  */
-public class ExPutEnchantTargetItemResult implements IClientOutgoingPacket
+public class ExPutEnchantTargetItemResult extends ServerPacket
 {
 	private final int _result;
 	
@@ -33,10 +32,9 @@ public class ExPutEnchantTargetItemResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PUT_ENCHANT_TARGET_ITEM_RESULT.writeId(packet);
-		packet.writeD(_result);
-		return true;
+		ServerPackets.EX_PUT_ENCHANT_TARGET_ITEM_RESULT.writeId(this);
+		writeInt(_result);
 	}
 }

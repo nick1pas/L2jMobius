@@ -18,19 +18,18 @@ package org.l2jmobius.gameserver.network.serverpackets.enchant.single;
 
 import static org.l2jmobius.gameserver.model.stats.Stat.ENCHANT_RATE;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
 import org.l2jmobius.gameserver.model.item.type.CrystalType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingPacket
+public class ChangedEnchantTargetItemProbabilityList extends ServerPacket
 {
 	private final Player _player;
 	private final boolean _isMulti;
@@ -42,17 +41,17 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getRequest(EnchantItemRequest.class) == null)
 		{
-			return false;
+			return;
 		}
 		
 		final EnchantItemRequest request = _player.getRequest(EnchantItemRequest.class);
 		if ((!_isMulti && (request.getEnchantingItem() == null)) || request.isProcessing() || (request.getEnchantingScroll() == null))
 		{
-			return false;
+			return;
 		}
 		
 		int count = 1;
@@ -61,8 +60,8 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 			count = request.getMultiEnchantingItemsCount();
 		}
 		
-		OutgoingPackets.EX_CHANGED_ENCHANT_TARGET_ITEM_PROB_LIST.writeId(packet);
-		packet.writeD(count);
+		ServerPackets.EX_CHANGED_ENCHANT_TARGET_ITEM_PROB_LIST.writeId(this);
+		writeInt(count);
 		for (int i = 1; i <= count; i++)
 		{
 			// 100,00 % = 10000, because last 2 numbers going after float comma.
@@ -96,18 +95,17 @@ public class ChangedEnchantTargetItemProbabilityList implements IClientOutgoingP
 			}
 			if (!_isMulti)
 			{
-				packet.writeD(request.getEnchantingItem().getObjectId());
+				writeInt(request.getEnchantingItem().getObjectId());
 			}
 			else
 			{
-				packet.writeD(request.getMultiEnchantingItemsBySlot(i));
+				writeInt(request.getMultiEnchantingItemsBySlot(i));
 			}
-			packet.writeD((int) totalRate); // Total success.
-			packet.writeD((int) baseRate); // Base success.
-			packet.writeD((int) supportBaseRate); // Support success.
-			packet.writeD((int) passiveBaseRate); // Passive success (items, skills).
+			writeInt((int) totalRate); // Total success.
+			writeInt((int) baseRate); // Base success.
+			writeInt((int) supportBaseRate); // Support success.
+			writeInt((int) passiveBaseRate); // Passive success (items, skills).
 		}
-		return true;
 	}
 	
 	private int getBaseRate(EnchantItemRequest request, int iteration)
