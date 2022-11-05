@@ -88,6 +88,6 @@ public class Merchant extends Folk
 		
 		player.sendPacket(new ExBuySellList(buyList, player, (applyCastleTax) ? getCastleTaxRate(TaxType.BUY) : 0));
 		player.sendPacket(new ExBuySellList(player, false));
-		player.sendPacket(new ExBuySellList(applyCastleTax));
+		player.sendPacket(new ExBuySellList());
 	}
 }

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -26,7 +26,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ExPledgeDraftListSearch;
 /**
  * @author Sdw
  */
-public class RequestPledgeDraftListSearch implements IClientIncomingPacket
+public class RequestPledgeDraftListSearch implements ClientPacket
 {
 	private int _levelMin;
 	private int _levelMax;
@@ -36,15 +36,14 @@ public class RequestPledgeDraftListSearch implements IClientIncomingPacket
 	private boolean _descending;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_levelMin = CommonUtil.constrain(packet.readD(), 0, 107);
-		_levelMax = CommonUtil.constrain(packet.readD(), 0, 107);
-		_classId = packet.readD();
-		_query = packet.readS();
-		_sortBy = packet.readD();
-		_descending = packet.readD() == 2;
-		return true;
+		_levelMin = CommonUtil.constrain(packet.readInt(), 0, 107);
+		_levelMax = CommonUtil.constrain(packet.readInt(), 0, 107);
+		_classId = packet.readInt();
+		_query = packet.readString();
+		_sortBy = packet.readInt();
+		_descending = packet.readInt() == 2;
 	}
 	
 	@Override

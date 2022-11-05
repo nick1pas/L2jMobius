@@ -16,14 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.enums.UserInfoType;
 import org.l2jmobius.gameserver.model.ElementalSpirit;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 import org.l2jmobius.gameserver.network.serverpackets.elementalspirits.ElementalSpiritSetTalent;
@@ -31,7 +31,7 @@ import org.l2jmobius.gameserver.network.serverpackets.elementalspirits.Elemental
 /**
  * @author JoeAlisson
  */
-public class ExElementalSpiritSetTalent implements IClientIncomingPacket
+public class ExElementalSpiritSetTalent implements ClientPacket
 {
 	private byte _type;
 	private byte _attackPoints;
@@ -40,20 +40,19 @@ public class ExElementalSpiritSetTalent implements IClientIncomingPacket
 	private byte _critDamage;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = (byte) packet.readC();
-		packet.readC(); // Characteristics for now always 4
+		_type = (byte) packet.readByte();
+		packet.readByte(); // Characteristics for now always 4
 		
-		packet.readC(); // attack id
-		_attackPoints = (byte) packet.readC();
-		packet.readC(); // defense id
-		_defensePoints = (byte) packet.readC();
-		packet.readC(); // crit rate id
-		_critRate = (byte) packet.readC();
-		packet.readC(); // crit damage id
-		_critDamage = (byte) packet.readC();
-		return true;
+		packet.readByte(); // attack id
+		_attackPoints = (byte) packet.readByte();
+		packet.readByte(); // defense id
+		_defensePoints = (byte) packet.readByte();
+		packet.readByte(); // crit rate id
+		_critRate = (byte) packet.readByte();
+		packet.readByte(); // crit damage id
+		_critDamage = (byte) packet.readByte();
 	}
 	
 	@Override

@@ -16,25 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.huntpass;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassInfo;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSayhasSupportInfo;
 
 /**
  * @author Serenitty
  */
-public class RequestHuntPassInfo implements IClientIncomingPacket
+public class RequestHuntPassInfo implements ClientPacket
 {
 	private int _passType;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_passType = packet.readC();
-		return true;
+		_passType = packet.readByte();
 	}
 	
 	@Override

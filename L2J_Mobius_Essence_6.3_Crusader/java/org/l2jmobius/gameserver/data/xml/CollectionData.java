@@ -36,7 +36,7 @@ import org.l2jmobius.gameserver.model.holders.ItemEnchantHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
 public class CollectionData implements IXmlReader
 {

@@ -16,21 +16,19 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV3;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 22.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExPledgeDonationInfo implements IClientOutgoingPacket
+public class ExPledgeDonationInfo extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_DONATION_INFO.writeId(packet);
-		packet.writeD(0);
-		packet.writeC(1);
-		return true;
+		ServerPackets.EX_PLEDGE_DONATION_INFO.writeId(this);
+		writeInt(0);
+		writeByte(1);
 	}
 }

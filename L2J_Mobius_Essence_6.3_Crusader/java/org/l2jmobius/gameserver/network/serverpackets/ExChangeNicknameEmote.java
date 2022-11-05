@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Serenitty
  */
-public class ExChangeNicknameEmote implements IClientOutgoingPacket
+public class ExChangeNicknameEmote extends ServerPacket
 {
 	private final int _itemId;
 	
@@ -32,10 +31,9 @@ public class ExChangeNicknameEmote implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHANGE_NICKNAME_COLOR_ICON.writeId(packet);
-		packet.writeD(_itemId);
-		return true;
+		ServerPackets.EX_CHANGE_NICKNAME_COLOR_ICON.writeId(this);
+		writeInt(_itemId);
 	}
 }

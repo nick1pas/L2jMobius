@@ -20,15 +20,14 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.BroochJewel;
 import org.l2jmobius.gameserver.model.Hit;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class Attack implements IClientOutgoingPacket
+public class Attack extends ServerPacket
 {
 	private final int _attackerObjId;
 	private final Location _attackerLoc;
@@ -93,40 +92,38 @@ public class Attack implements IClientOutgoingPacket
 	
 	/**
 	 * Writes current hit
-	 * @param packet
 	 * @param hit
 	 */
-	private void writeHit(PacketWriter packet, Hit hit)
+	private void writeHit(Hit hit)
 	{
-		packet.writeD(hit.getTargetId());
-		packet.writeD(hit.getDamage());
-		packet.writeD(hit.getFlags());
-		packet.writeD(hit.getGrade()); // GOD
+		writeInt(hit.getTargetId());
+		writeInt(hit.getDamage());
+		writeInt(hit.getFlags());
+		writeInt(hit.getGrade()); // GOD
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		final Iterator<Hit> it = _hits.iterator();
 		final Hit firstHit = it.next();
-		OutgoingPackets.ATTACK.writeId(packet);
-		packet.writeD(_attackerObjId);
-		packet.writeD(firstHit.getTargetId());
-		packet.writeD(_soulshotVisualSubstitute); // Ertheia
-		packet.writeD(firstHit.getDamage());
-		packet.writeD(firstHit.getFlags());
-		packet.writeD(firstHit.getGrade()); // GOD
-		packet.writeD(_attackerLoc.getX());
-		packet.writeD(_attackerLoc.getY());
-		packet.writeD(_attackerLoc.getZ());
-		packet.writeH(_hits.size() - 1);
+		ServerPackets.ATTACK.writeId(this);
+		writeInt(_attackerObjId);
+		writeInt(firstHit.getTargetId());
+		writeInt(_soulshotVisualSubstitute); // Ertheia
+		writeInt(firstHit.getDamage());
+		writeInt(firstHit.getFlags());
+		writeInt(firstHit.getGrade()); // GOD
+		writeInt(_attackerLoc.getX());
+		writeInt(_attackerLoc.getY());
+		writeInt(_attackerLoc.getZ());
+		writeShort(_hits.size() - 1);
 		while (it.hasNext())
 		{
-			writeHit(packet, it.next());
+			writeHit(it.next());
 		}
-		packet.writeD(_targetLoc.getX());
-		packet.writeD(_targetLoc.getY());
-		packet.writeD(_targetLoc.getZ());
-		return true;
+		writeInt(_targetLoc.getX());
+		writeInt(_targetLoc.getY());
+		writeInt(_targetLoc.getZ());
 	}
 }

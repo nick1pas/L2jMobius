@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.variation;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.VariationData;
 import org.l2jmobius.gameserver.model.VariationInstance;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -39,12 +39,11 @@ public class RequestRefine extends AbstractRefinePacket
 	private int _mineralItemObjId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetItemObjId = packet.readD();
-		_mineralItemObjId = packet.readD();
-		packet.readC(); // is event
-		return true;
+		_targetItemObjId = packet.readInt();
+		_mineralItemObjId = packet.readInt();
+		packet.readByte(); // is event
 	}
 	
 	@Override

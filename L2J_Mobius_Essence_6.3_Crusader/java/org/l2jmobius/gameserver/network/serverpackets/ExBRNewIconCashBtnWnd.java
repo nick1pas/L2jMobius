@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gabriel Costa Souza
  */
-public class ExBRNewIconCashBtnWnd implements IClientOutgoingPacket
+public class ExBRNewIconCashBtnWnd extends ServerPacket
 {
 	private final short _active;
 	
@@ -32,10 +31,9 @@ public class ExBRNewIconCashBtnWnd implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BR_NEW_ICON_CASH_BTN_WND.writeId(packet);
-		packet.writeH(_active);
-		return true;
+		ServerPackets.EX_BR_NEW_ICON_CASH_BTN_WND.writeId(this);
+		writeShort(_active);
 	}
 }

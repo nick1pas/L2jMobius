@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.subjugation.ExSubjugationS
 import ai.AbstractNpcAI;
 
 /**
- * Written by Berezkin Nikolay, Serenitty
+ * @author Berezkin Nikolay, Serenitty
  */
 public class OrcBarracksPurge extends AbstractNpcAI
 {

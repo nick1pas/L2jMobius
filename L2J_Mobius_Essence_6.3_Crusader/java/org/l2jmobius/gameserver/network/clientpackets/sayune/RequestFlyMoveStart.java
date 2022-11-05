@@ -17,7 +17,6 @@
 package org.l2jmobius.gameserver.network.clientpackets.sayune;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.data.xml.SayuneData;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.SayuneEntry;
@@ -28,19 +27,13 @@ import org.l2jmobius.gameserver.model.zone.type.SayuneZone;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author UnAfraid
  */
-public class RequestFlyMoveStart implements IClientIncomingPacket
+public class RequestFlyMoveStart implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

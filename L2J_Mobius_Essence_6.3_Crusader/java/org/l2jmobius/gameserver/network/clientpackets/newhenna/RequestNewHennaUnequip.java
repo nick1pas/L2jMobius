@@ -16,28 +16,27 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.newhenna;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.henna.Henna;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.newhenna.NewHennaUnequip;
 
 /**
  * @author Index, Serenitty
  */
-public class RequestNewHennaUnequip implements IClientIncomingPacket
+public class RequestNewHennaUnequip implements ClientPacket
 {
 	private int _slotId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_slotId = packet.readC();
-		return true;
+		_slotId = packet.readByte();
 	}
 	
 	@Override

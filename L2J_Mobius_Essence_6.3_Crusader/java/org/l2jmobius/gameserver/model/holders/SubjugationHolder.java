@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
 public class SubjugationHolder
 {

@@ -17,28 +17,27 @@
 package org.l2jmobius.gameserver.network.clientpackets.worldexchange;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.WorldExchangeManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Index
  */
-public class ExWorldExchangeRegisterItem implements IClientIncomingPacket
+public class ExWorldExchangeRegisterItem implements ClientPacket
 {
 	private long _price;
 	private int _itemId;
 	private long _amount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_price = packet.readQ();
-		_itemId = packet.readD();
-		_amount = packet.readQ();
-		return true;
+		_price = packet.readLong();
+		_itemId = packet.readInt();
+		_amount = packet.readLong();
 	}
 	
 	@Override

@@ -16,25 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.classchange;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExClassChangeSetAlarm implements IClientOutgoingPacket
+public class ExClassChangeSetAlarm extends ServerPacket
 {
-	public static final IClientOutgoingPacket STATIC_PACKET = new ExClassChangeSetAlarm();
+	public static final ExClassChangeSetAlarm STATIC_PACKET = new ExClassChangeSetAlarm();
 	
 	public ExClassChangeSetAlarm()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CLASS_CHANGE_SET_ALARM.writeId(packet);
-		return true;
+		ServerPackets.EX_CLASS_CHANGE_SET_ALARM.writeId(this);
 	}
 }

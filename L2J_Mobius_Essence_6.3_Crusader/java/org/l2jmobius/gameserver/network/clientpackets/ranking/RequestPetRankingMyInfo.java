@@ -16,24 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.ranking;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExPetRankingMyInfo;
 
 /**
- * Written by Berezkin Nikolay, on 10.05.2021
+ * @author Berezkin Nikolay
  */
-public class RequestPetRankingMyInfo implements IClientIncomingPacket
+public class RequestPetRankingMyInfo implements ClientPacket
 {
 	private int _petId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_petId = packet.readD();
-		return true;
+		_petId = packet.readInt();
 	}
 	
 	@Override

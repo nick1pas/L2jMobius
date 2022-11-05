@@ -19,32 +19,32 @@ package org.l2jmobius.gameserver.network.clientpackets.raidbossinfo;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.RaidBossStatus;
 import org.l2jmobius.gameserver.instancemanager.DBSpawnManager;
 import org.l2jmobius.gameserver.instancemanager.GrandBossManager;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.instance.GrandBoss;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.raidbossinfo.ExRaidBossSpawnInfo;
 
 /**
  * @author Mobius
  */
-public class RequestRaidBossSpawnInfo implements IClientIncomingPacket
+public class RequestRaidBossSpawnInfo implements ClientPacket
 {
 	private static final int BAIUM = 29020;
 	
 	private final Map<Integer, RaidBossStatus> _statuses = new HashMap<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int count = packet.readD();
+		final int count = packet.readInt();
 		for (int i = 0; i < count; i++)
 		{
-			final int bossId = packet.readD();
+			final int bossId = packet.readInt();
 			final GrandBoss boss = GrandBossManager.getInstance().getBoss(bossId);
 			if (boss == null)
 			{
@@ -90,7 +90,6 @@ public class RequestRaidBossSpawnInfo implements IClientIncomingPacket
 				}
 			}
 		}
-		return true;
 	}
 	
 	@Override

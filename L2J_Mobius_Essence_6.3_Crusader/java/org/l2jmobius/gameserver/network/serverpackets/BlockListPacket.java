@@ -18,14 +18,13 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class BlockListPacket implements IClientOutgoingPacket
+public class BlockListPacket extends ServerPacket
 {
 	private final Set<Integer> _playerIds;
 	
@@ -35,15 +34,14 @@ public class BlockListPacket implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.BLOCK_LIST.writeId(packet);
-		packet.writeD(_playerIds.size());
+		ServerPackets.BLOCK_LIST.writeId(this);
+		writeInt(_playerIds.size());
 		for (int playerId : _playerIds)
 		{
-			packet.writeS(CharNameTable.getInstance().getNameById(playerId));
-			packet.writeS(""); // memo ?
+			writeString(CharNameTable.getInstance().getNameById(playerId));
+			writeString(""); // memo ?
 		}
-		return true;
 	}
 }

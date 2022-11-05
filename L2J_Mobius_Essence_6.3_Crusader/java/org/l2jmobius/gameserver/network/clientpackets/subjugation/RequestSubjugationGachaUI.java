@@ -16,25 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.subjugation;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.PurgePlayerHolder;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.subjugation.ExSubjugationGachaUI;
 
 /**
- * Written by Berezkin Nikolay, on 15.04.2021
+ * @author Berezkin Nikolay
  */
-public class RequestSubjugationGachaUI implements IClientIncomingPacket
+public class RequestSubjugationGachaUI implements ClientPacket
 {
 	private int _category;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_category = packet.readC();
-		return true;
+		_category = packet.readByte();
 	}
 	
 	@Override

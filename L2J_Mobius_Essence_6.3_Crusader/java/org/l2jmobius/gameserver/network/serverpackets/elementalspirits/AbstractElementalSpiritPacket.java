@@ -16,38 +16,37 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ElementalSpirit;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author JoeAlisson
  */
-abstract class AbstractElementalSpiritPacket implements IClientOutgoingPacket
+abstract class AbstractElementalSpiritPacket extends ServerPacket
 {
-	void writeSpiritInfo(PacketWriter packet, ElementalSpirit spirit)
+	void writeSpiritInfo(ElementalSpirit spirit)
 	{
-		packet.writeC(spirit.getStage());
-		packet.writeD(spirit.getNpcId());
-		packet.writeQ(spirit.getExperience());
-		packet.writeQ(spirit.getExperienceToNextLevel());
-		packet.writeQ(spirit.getExperienceToNextLevel());
-		packet.writeD(spirit.getLevel());
-		packet.writeD(spirit.getMaxLevel());
-		packet.writeD(spirit.getAvailableCharacteristicsPoints());
-		packet.writeD(spirit.getAttackPoints());
-		packet.writeD(spirit.getDefensePoints());
-		packet.writeD(spirit.getCriticalRatePoints());
-		packet.writeD(spirit.getCriticalDamagePoints());
-		packet.writeD(spirit.getMaxCharacteristics());
-		packet.writeD(spirit.getMaxCharacteristics());
-		packet.writeD(spirit.getMaxCharacteristics());
-		packet.writeD(spirit.getMaxCharacteristics());
-		packet.writeC(1); // unk
+		writeByte(spirit.getStage());
+		writeInt(spirit.getNpcId());
+		writeLong(spirit.getExperience());
+		writeLong(spirit.getExperienceToNextLevel());
+		writeLong(spirit.getExperienceToNextLevel());
+		writeInt(spirit.getLevel());
+		writeInt(spirit.getMaxLevel());
+		writeInt(spirit.getAvailableCharacteristicsPoints());
+		writeInt(spirit.getAttackPoints());
+		writeInt(spirit.getDefensePoints());
+		writeInt(spirit.getCriticalRatePoints());
+		writeInt(spirit.getCriticalDamagePoints());
+		writeInt(spirit.getMaxCharacteristics());
+		writeInt(spirit.getMaxCharacteristics());
+		writeInt(spirit.getMaxCharacteristics());
+		writeInt(spirit.getMaxCharacteristics());
+		writeByte(1); // unk
 		for (int j = 0; j < 1; j++)
 		{
-			packet.writeH(2);
-			packet.writeQ(100);
+			writeShort(2);
+			writeLong(100);
 		}
 	}
 }

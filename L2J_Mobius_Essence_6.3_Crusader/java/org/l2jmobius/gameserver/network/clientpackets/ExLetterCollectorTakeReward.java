@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.instancemanager.events.LetterCollectorManager;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -31,15 +31,14 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 /**
  * @author Index, Mobius
  */
-public class ExLetterCollectorTakeReward implements IClientIncomingPacket
+public class ExLetterCollectorTakeReward implements ClientPacket
 {
 	private int _wordId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_wordId = packet.readD();
-		return true;
+		_wordId = packet.readInt();
 	}
 	
 	@Override

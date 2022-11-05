@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPacket
+public class ExPutIntensiveResultForVariationMake extends ServerPacket
 {
 	private final int _refinerItemObjId;
 	private final int _lifestoneItemId;
@@ -40,12 +39,11 @@ public class ExPutIntensiveResultForVariationMake implements IClientOutgoingPack
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PUT_INTENSIVE_RESULT_FOR_VARIATION_MAKE.writeId(packet);
-		packet.writeD(_lifestoneItemId);
-		packet.writeD(_refinerItemObjId);
-		packet.writeC(_insertResult);
-		return true;
+		ServerPackets.EX_PUT_INTENSIVE_RESULT_FOR_VARIATION_MAKE.writeId(this);
+		writeInt(_lifestoneItemId);
+		writeInt(_refinerItemObjId);
+		writeByte(_insertResult);
 	}
 }

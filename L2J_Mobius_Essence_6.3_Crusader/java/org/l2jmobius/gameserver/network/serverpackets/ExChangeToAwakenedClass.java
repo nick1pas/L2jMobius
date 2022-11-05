@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExChangeToAwakenedClass implements IClientOutgoingPacket
+public class ExChangeToAwakenedClass extends ServerPacket
 {
 	private final int _classId;
 	
@@ -32,10 +31,9 @@ public class ExChangeToAwakenedClass implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHANGE_TO_AWAKENED_CLASS.writeId(packet);
-		packet.writeD(_classId);
-		return true;
+		ServerPackets.EX_CHANGE_TO_AWAKENED_CLASS.writeId(this);
+		writeInt(_classId);
 	}
 }

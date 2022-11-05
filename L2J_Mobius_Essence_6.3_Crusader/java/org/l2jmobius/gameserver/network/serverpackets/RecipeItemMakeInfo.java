@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.model.RecipeList;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.stats.Stat;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class RecipeItemMakeInfo implements IClientOutgoingPacket
+public class RecipeItemMakeInfo extends ServerPacket
 {
 	private final int _id;
 	private final Player _player;
@@ -51,26 +50,26 @@ public class RecipeItemMakeInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		final RecipeList recipe = RecipeData.getInstance().getRecipeList(_id);
-		if (recipe != null)
+		if (recipe == null)
 		{
-			OutgoingPackets.RECIPE_ITEM_MAKE_INFO.writeId(packet);
-			packet.writeD(_id);
-			packet.writeD(recipe.isDwarvenRecipe() ? 0 : 1); // 0 = Dwarven - 1 = Common
-			packet.writeD((int) _player.getCurrentMp());
-			packet.writeD(_player.getMaxMp());
-			packet.writeD(_success ? 1 : 0); // item creation none/success/failed
-			packet.writeC(0); // Show offering window.
-			packet.writeQ(0); // Adena worth of items for maximum offering.
-			packet.writeF(Math.min(_craftRate, 100.0));
-			packet.writeC(_craftCritical > 0 ? 1 : 0);
-			packet.writeF(Math.min(_craftCritical, 100.0));
-			packet.writeC(0); // find me
-			return true;
+			PacketLogger.info("Character: " + _player + ": Requested unexisting recipe with id = " + _id);
+			return;
 		}
-		PacketLogger.info("Character: " + _player + ": Requested unexisting recipe with id = " + _id);
-		return false;
+		
+		ServerPackets.RECIPE_ITEM_MAKE_INFO.writeId(this);
+		writeInt(_id);
+		writeInt(!recipe.isDwarvenRecipe()); // 0 = Dwarven - 1 = Common
+		writeInt((int) _player.getCurrentMp());
+		writeInt(_player.getMaxMp());
+		writeInt(_success); // item creation none/success/failed
+		writeByte(0); // Show offering window.
+		writeLong(0); // Adena worth of items for maximum offering.
+		writeDouble(Math.min(_craftRate, 100.0));
+		writeByte(_craftCritical > 0);
+		writeDouble(Math.min(_craftCritical, 100.0));
+		writeByte(0); // find me
 	}
 }

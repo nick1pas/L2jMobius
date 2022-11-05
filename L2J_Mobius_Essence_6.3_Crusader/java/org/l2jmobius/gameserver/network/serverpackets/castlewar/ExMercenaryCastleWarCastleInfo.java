@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets.castlewar;
 
 import java.util.Calendar;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.TaxType;
 import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class ExMercenaryCastleWarCastleInfo implements IClientOutgoingPacket
+public class ExMercenaryCastleWarCastleInfo extends ServerPacket
 {
 	private final Castle _castle;
 	
@@ -37,31 +36,30 @@ public class ExMercenaryCastleWarCastleInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MERCENARY_CASTLEWAR_CASTLE_INFO.writeId(packet);
-		packet.writeD(_castle.getResidenceId());
+		ServerPackets.EX_MERCENARY_CASTLEWAR_CASTLE_INFO.writeId(this);
+		writeInt(_castle.getResidenceId());
 		final var clan = _castle.getOwner();
 		if (clan != null)
 		{
-			packet.writeD(clan.getId());
-			packet.writeD(clan.getCrestId());
-			packet.writeString(clan.getName());
-			packet.writeString(clan.getLeaderName());
+			writeInt(clan.getId());
+			writeInt(clan.getCrestId());
+			writeSizedString(clan.getName());
+			writeSizedString(clan.getLeaderName());
 		}
 		else
 		{
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeString("");
-			packet.writeString("");
+			writeInt(0);
+			writeInt(0);
+			writeSizedString("");
+			writeSizedString("");
 		}
-		packet.writeD(_castle.getTaxPercent(TaxType.BUY));
-		packet.writeQ((long) (_castle.getTreasury() * _castle.getTaxRate(TaxType.BUY)));
-		packet.writeQ((long) (_castle.getTreasury() + (_castle.getTreasury() * _castle.getTaxRate(TaxType.BUY))));
+		writeInt(_castle.getTaxPercent(TaxType.BUY));
+		writeLong((long) (_castle.getTreasury() * _castle.getTaxRate(TaxType.BUY)));
+		writeLong((long) (_castle.getTreasury() + (_castle.getTreasury() * _castle.getTaxRate(TaxType.BUY))));
 		final Calendar cal = Calendar.getInstance();
 		cal.setTimeInMillis(_castle.getSiegeDate().getTimeInMillis());
-		packet.writeD((int) (cal.getTimeInMillis() / 1000));
-		return true;
+		writeInt((int) (cal.getTimeInMillis() / 1000));
 	}
 }

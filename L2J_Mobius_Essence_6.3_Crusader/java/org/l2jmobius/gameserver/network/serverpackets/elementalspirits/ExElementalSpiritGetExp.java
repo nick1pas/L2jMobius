@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author JoeAlisson
  */
-public class ExElementalSpiritGetExp implements IClientOutgoingPacket
+public class ExElementalSpiritGetExp extends ServerPacket
 {
 	private final long _experience;
 	private final byte _type;
@@ -35,11 +34,10 @@ public class ExElementalSpiritGetExp implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ELEMENTAL_SPIRIT_GET_EXP.writeId(packet);
-		packet.writeC(_type);
-		packet.writeQ(_experience);
-		return true;
+		ServerPackets.EX_ELEMENTAL_SPIRIT_GET_EXP.writeId(this);
+		writeByte(_type);
+		writeLong(_experience);
 	}
 }

@@ -23,19 +23,18 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.RankingCategory;
 import org.l2jmobius.gameserver.enums.RankingScope;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPetRankingList implements IClientOutgoingPacket
+public class ExPetRankingList extends ServerPacket
 {
 	private final Player _player;
 	private final int _season;
@@ -57,53 +56,53 @@ public class ExPetRankingList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PET_RANKING_LIST.writeId(packet);
-		packet.writeC(_season);
-		packet.writeC(_tabId);
-		packet.writeH(_type);
-		packet.writeD(_petItemObjectId);
+		ServerPackets.EX_PET_RANKING_LIST.writeId(this);
+		writeByte(_season);
+		writeByte(_tabId);
+		writeShort(_type);
+		writeInt(_petItemObjectId);
 		if (!_playerList.isEmpty())
 		{
 			final RankingCategory category = RankingCategory.values()[_tabId];
-			writeFilteredRankingData(packet, category, category.getScopeByGroup(_season));
+			writeFilteredRankingData(category, category.getScopeByGroup(_season));
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		return true;
+		return;
 	}
 	
-	private void writeFilteredRankingData(PacketWriter packet, RankingCategory category, RankingScope scope)
+	private void writeFilteredRankingData(RankingCategory category, RankingScope scope)
 	{
 		switch (category)
 		{
 			case SERVER:
 			{
-				writeScopeData(packet, scope, new ArrayList<>(_playerList.entrySet()), new ArrayList<>(_snapshotList.entrySet()));
+				writeScopeData(scope, new ArrayList<>(_playerList.entrySet()), new ArrayList<>(_snapshotList.entrySet()));
 				break;
 			}
 			case RACE:
 			{
-				writeScopeData(packet, scope, _playerList.entrySet().stream().filter(it -> it.getValue().getInt("petType") == _type).collect(Collectors.toList()), _snapshotList.entrySet().stream().filter(it -> it.getValue().getInt("petType") == _type).collect(Collectors.toList()));
+				writeScopeData(scope, _playerList.entrySet().stream().filter(it -> it.getValue().getInt("petType") == _type).collect(Collectors.toList()), _snapshotList.entrySet().stream().filter(it -> it.getValue().getInt("petType") == _type).collect(Collectors.toList()));
 				break;
 			}
 			case CLAN:
 			{
-				writeScopeData(packet, scope, _player.getClan() == null ? Collections.emptyList() : _playerList.entrySet().stream().filter(it -> it.getValue().getString("clanName").equals(_player.getClan().getName())).collect(Collectors.toList()), _player.getClan() == null ? Collections.emptyList() : _snapshotList.entrySet().stream().filter(it -> it.getValue().getString("clanName").equals(_player.getClan().getName())).collect(Collectors.toList()));
+				writeScopeData(scope, _player.getClan() == null ? Collections.emptyList() : _playerList.entrySet().stream().filter(it -> it.getValue().getString("clanName").equals(_player.getClan().getName())).collect(Collectors.toList()), _player.getClan() == null ? Collections.emptyList() : _snapshotList.entrySet().stream().filter(it -> it.getValue().getString("clanName").equals(_player.getClan().getName())).collect(Collectors.toList()));
 				break;
 			}
 			case FRIEND:
 			{
-				writeScopeData(packet, scope, _playerList.entrySet().stream().filter(it -> _player.getFriendList().contains(it.getValue().getInt("charId"))).collect(Collectors.toList()), _snapshotList.entrySet().stream().filter(it -> _player.getFriendList().contains(it.getValue().getInt("charId"))).collect(Collectors.toList()));
+				writeScopeData(scope, _playerList.entrySet().stream().filter(it -> _player.getFriendList().contains(it.getValue().getInt("charId"))).collect(Collectors.toList()), _snapshotList.entrySet().stream().filter(it -> _player.getFriendList().contains(it.getValue().getInt("charId"))).collect(Collectors.toList()));
 				break;
 			}
 		}
 	}
 	
-	private void writeScopeData(PacketWriter packet, RankingScope scope, List<Entry<Integer, StatSet>> list, List<Entry<Integer, StatSet>> snapshot)
+	private void writeScopeData(RankingScope scope, List<Entry<Integer, StatSet>> list, List<Entry<Integer, StatSet>> snapshot)
 	{
 		Entry<Integer, StatSet> playerData = list.stream().filter(it -> it.getValue().getInt("charId", 0) == _player.getObjectId()).findFirst().orElse(null);
 		final int indexOf = list.indexOf(playerData);
@@ -135,21 +134,21 @@ public class ExPetRankingList implements IClientOutgoingPacket
 				limited = Collections.emptyList();
 			}
 		}
-		packet.writeD(limited.size());
+		writeInt(limited.size());
 		int rank = 1;
 		for (Entry<Integer, StatSet> data : limited.stream().sorted(Entry.comparingByKey()).collect(Collectors.toList()))
 		{
 			int curRank = rank++;
 			final StatSet pet = data.getValue();
-			packet.writeString(pet.getString("name"));
-			packet.writeString(pet.getString("owner_name"));
-			packet.writeString(pet.getString("clanName"));
-			packet.writeD(1000000 + pet.getInt("npcId"));
-			packet.writeH(pet.getInt("petType"));
-			packet.writeH(pet.getInt("level"));
-			packet.writeH(pet.getInt("owner_race"));
-			packet.writeH(pet.getInt("owner_level"));
-			packet.writeD(scope == RankingScope.SELF ? data.getKey() : curRank); // server rank
+			writeSizedString(pet.getString("name"));
+			writeSizedString(pet.getString("owner_name"));
+			writeSizedString(pet.getString("clanName"));
+			writeInt(1000000 + pet.getInt("npcId"));
+			writeShort(pet.getInt("petType"));
+			writeShort(pet.getInt("level"));
+			writeShort(pet.getInt("owner_race"));
+			writeShort(pet.getInt("owner_level"));
+			writeInt(scope == RankingScope.SELF ? data.getKey() : curRank); // server rank
 			if (!snapshot.isEmpty())
 			{
 				for (Entry<Integer, StatSet> ssData : snapshot.stream().sorted(Entry.comparingByKey()).collect(Collectors.toList()))
@@ -157,13 +156,13 @@ public class ExPetRankingList implements IClientOutgoingPacket
 					final StatSet snapshotData = ssData.getValue();
 					if (pet.getInt("controlledItemObjId") == snapshotData.getInt("controlledItemObjId"))
 					{
-						packet.writeD(scope == RankingScope.SELF ? ssData.getKey() : curRank); // server rank snapshot
+						writeInt(scope == RankingScope.SELF ? ssData.getKey() : curRank); // server rank snapshot
 					}
 				}
 			}
 			else
 			{
-				packet.writeD(scope == RankingScope.SELF ? data.getKey() : curRank); // server rank
+				writeInt(scope == RankingScope.SELF ? data.getKey() : curRank); // server rank
 			}
 		}
 	}

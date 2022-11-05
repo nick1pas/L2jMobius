@@ -19,31 +19,30 @@ package org.l2jmobius.gameserver.network.clientpackets.enchant.multi;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.multi.ExResultSetMultiEnchantItemList;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.single.ChangedEnchantTargetItemProbabilityList;
 
 /**
  * @author Index
  */
-public class ExRequestSetMultiEnchantItemList implements IClientIncomingPacket
+public class ExRequestSetMultiEnchantItemList implements ClientPacket
 {
 	private int _slotId;
 	private final Map<Integer, Integer> _itemObjectId = new HashMap<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_slotId = packet.readD();
-		for (int i = 1; packet.getReadableBytes() != 0; i++)
+		_slotId = packet.readInt();
+		for (int i = 1; packet.getRemainingLength() != 0; i++)
 		{
-			_itemObjectId.put(i, packet.readD());
+			_itemObjectId.put(i, packet.readInt());
 		}
-		return true;
 	}
 	
 	@Override

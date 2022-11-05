@@ -16,24 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.randomcraft;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mode
  */
-public class ExCraftRandomLockSlot implements IClientOutgoingPacket
+public class ExCraftRandomLockSlot extends ServerPacket
 {
 	public ExCraftRandomLockSlot()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CRAFT_RANDOM_LOCK_SLOT.writeId(packet);
-		packet.writeC(0);
-		return true;
+		ServerPackets.EX_CRAFT_RANDOM_LOCK_SLOT.writeId(this);
+		writeByte(0);
 	}
 }

@@ -16,23 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.subjugation;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.subjugation.ExSubjugationList;
 
 /**
- * Written by Berezkin Nikolay, on 13.04.2021
+ * @author Berezkin Nikolay
  */
-public class RequestSubjugationList implements IClientIncomingPacket
+public class RequestSubjugationList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius, Index, NasSeKa`, Serenitty
  */
-public class TimedHuntingZoneEnter implements IClientOutgoingPacket
+public class TimedHuntingZoneEnter extends ServerPacket
 {
 	private final Player _player;
 	private final int _zoneId;
@@ -36,13 +35,12 @@ public class TimedHuntingZoneEnter implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TIME_RESTRICT_FIELD_USER_ENTER.writeId(packet);
-		packet.writeC(1); // bEnterSuccess
-		packet.writeD(_zoneId);
-		packet.writeD((int) (System.currentTimeMillis() / 1000)); // nEnterTimeStamp
-		packet.writeD((_player.getTimedHuntingZoneRemainingTime(_zoneId) / 1000) + 59); // nRemainTime (zone left time)
-		return true;
+		ServerPackets.EX_TIME_RESTRICT_FIELD_USER_ENTER.writeId(this);
+		writeByte(1); // bEnterSuccess
+		writeInt(_zoneId);
+		writeInt((int) (System.currentTimeMillis() / 1000)); // nEnterTimeStamp
+		writeInt((_player.getTimedHuntingZoneRemainingTime(_zoneId) / 1000) + 59); // nRemainTime (zone left time)
 	}
 }

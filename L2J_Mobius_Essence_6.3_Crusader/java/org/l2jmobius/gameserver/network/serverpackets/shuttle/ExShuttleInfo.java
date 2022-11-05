@@ -18,17 +18,16 @@ package org.l2jmobius.gameserver.network.serverpackets.shuttle;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.instance.Shuttle;
 import org.l2jmobius.gameserver.model.shuttle.ShuttleStop;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExShuttleInfo implements IClientOutgoingPacket
+public class ExShuttleInfo extends ServerPacket
 {
 	private final Shuttle _shuttle;
 	private final List<ShuttleStop> _stops;
@@ -40,28 +39,27 @@ public class ExShuttleInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHUTTLE_INFO.writeId(packet);
-		packet.writeD(_shuttle.getObjectId());
-		packet.writeD(_shuttle.getX());
-		packet.writeD(_shuttle.getY());
-		packet.writeD(_shuttle.getZ());
-		packet.writeD(_shuttle.getHeading());
-		packet.writeD(_shuttle.getId());
-		packet.writeD(_stops.size());
+		ServerPackets.EX_SHUTTLE_INFO.writeId(this);
+		writeInt(_shuttle.getObjectId());
+		writeInt(_shuttle.getX());
+		writeInt(_shuttle.getY());
+		writeInt(_shuttle.getZ());
+		writeInt(_shuttle.getHeading());
+		writeInt(_shuttle.getId());
+		writeInt(_stops.size());
 		for (ShuttleStop stop : _stops)
 		{
-			packet.writeD(stop.getId());
+			writeInt(stop.getId());
 			for (Location loc : stop.getDimensions())
 			{
-				packet.writeD(loc.getX());
-				packet.writeD(loc.getY());
-				packet.writeD(loc.getZ());
+				writeInt(loc.getX());
+				writeInt(loc.getY());
+				writeInt(loc.getZ());
 			}
-			packet.writeD(stop.isDoorOpen() ? 1 : 0);
-			packet.writeD(stop.hasDoorChanged() ? 1 : 0);
+			writeInt(stop.isDoorOpen());
+			writeInt(stop.hasDoorChanged());
 		}
-		return true;
 	}
 }

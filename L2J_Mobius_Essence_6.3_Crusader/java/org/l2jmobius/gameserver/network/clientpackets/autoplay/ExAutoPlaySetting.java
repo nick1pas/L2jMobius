@@ -20,18 +20,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.autoplay.ExAutoPlaySettingSend;
 import org.l2jmobius.gameserver.taskmanager.AutoPlayTaskManager;
 
 /**
  * @author Mobius
  */
-public class ExAutoPlaySetting implements IClientIncomingPacket
+public class ExAutoPlaySetting implements ClientPacket
 {
 	private int _options;
 	private boolean _active;
@@ -43,17 +43,16 @@ public class ExAutoPlaySetting implements IClientIncomingPacket
 	private boolean _respectfulHunting;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_options = packet.readH();
-		_active = packet.readC() == 1;
-		_pickUp = packet.readC() == 1;
-		_nextTargetMode = packet.readH();
-		_shortRange = packet.readC() == 1;
-		_potionPercent = packet.readD();
-		_petPotionPercent = packet.readD(); // 272
-		_respectfulHunting = packet.readC() == 1;
-		return true;
+		_options = packet.readShort();
+		_active = packet.readByte() == 1;
+		_pickUp = packet.readByte() == 1;
+		_nextTargetMode = packet.readShort();
+		_shortRange = packet.readByte() == 1;
+		_potionPercent = packet.readInt();
+		_petPotionPercent = packet.readInt(); // 272
+		_respectfulHunting = packet.readByte() == 1;
 	}
 	
 	@Override

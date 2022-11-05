@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.revenge;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.RevengeType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPvpBookShareRevengeNewRevengeInfo implements IClientOutgoingPacket
+public class ExPvpBookShareRevengeNewRevengeInfo extends ServerPacket
 {
 	private final String _victimName;
 	private final String _killerName;
@@ -38,12 +37,11 @@ public class ExPvpBookShareRevengeNewRevengeInfo implements IClientOutgoingPacke
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PVPBOOK_SHARE_REVENGE_NEW_REVENGEINFO.writeId(packet);
-		packet.writeD(_type.ordinal());
-		packet.writeString(_victimName);
-		packet.writeString(_killerName);
-		return true;
+		ServerPackets.EX_PVPBOOK_SHARE_REVENGE_NEW_REVENGEINFO.writeId(this);
+		writeInt(_type.ordinal());
+		writeSizedString(_victimName);
+		writeSizedString(_killerName);
 	}
 }

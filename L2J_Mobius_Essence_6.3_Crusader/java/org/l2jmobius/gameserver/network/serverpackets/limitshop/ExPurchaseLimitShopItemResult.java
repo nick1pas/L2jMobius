@@ -18,19 +18,18 @@ package org.l2jmobius.gameserver.network.serverpackets.limitshop;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.LimitShopClanData;
 import org.l2jmobius.gameserver.data.xml.LimitShopCraftData;
 import org.l2jmobius.gameserver.data.xml.LimitShopData;
 import org.l2jmobius.gameserver.model.holders.LimitShopProductHolder;
 import org.l2jmobius.gameserver.model.holders.LimitShopRandomCraftReward;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gustavo Fonseca
  */
-public class ExPurchaseLimitShopItemResult implements IClientOutgoingPacket
+public class ExPurchaseLimitShopItemResult extends ServerPacket
 {
 	private final int _category, _productId;
 	private final boolean _isSuccess;
@@ -68,25 +67,25 @@ public class ExPurchaseLimitShopItemResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PURCHASE_LIMIT_SHOP_ITEM_BUY.writeId(packet);
+		ServerPackets.EX_PURCHASE_LIMIT_SHOP_ITEM_BUY.writeId(this);
 		if ((_product == null) || !_isSuccess)
 		{
-			packet.writeC(1);
-			packet.writeC(_category);
-			packet.writeD(_productId);
-			packet.writeD(1);
-			packet.writeC(1);
-			packet.writeD(0);
-			packet.writeQ(0);
+			writeByte(1);
+			writeByte(_category);
+			writeInt(_productId);
+			writeInt(1);
+			writeByte(1);
+			writeInt(0);
+			writeLong(0);
 		}
 		else
 		{
-			packet.writeC(0); // success
-			packet.writeC(_category);
-			packet.writeD(_productId);
-			packet.writeD(_rewards.size());
+			writeByte(0); // success
+			writeByte(_category);
+			writeInt(_productId);
+			writeInt(_rewards.size());
 			int counter = 0;
 			for (LimitShopRandomCraftReward entry : _rewards)
 			{
@@ -94,12 +93,11 @@ public class ExPurchaseLimitShopItemResult implements IClientOutgoingPacket
 				{
 					break;
 				}
-				packet.writeC(entry.getRewardIndex());
-				packet.writeD(0);
-				packet.writeD(entry.getCount());
+				writeByte(entry.getRewardIndex());
+				writeInt(0);
+				writeInt(entry.getCount());
 				counter++;
 			}
 		}
-		return true;
 	}
 }

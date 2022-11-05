@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * update 27.8.10
  * @author kerberos JIV
  */
-public class ExValidateLocationInAirShip implements IClientOutgoingPacket
+public class ExValidateLocationInAirShip extends ServerPacket
 {
 	private final Player _player;
 	private final int _shipId;
@@ -41,15 +40,14 @@ public class ExValidateLocationInAirShip implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_VALIDATE_LOCATION_IN_AIR_SHIP.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeD(_shipId);
-		packet.writeD(_loc.getX());
-		packet.writeD(_loc.getY());
-		packet.writeD(_loc.getZ());
-		packet.writeD(_heading);
-		return true;
+		ServerPackets.EX_VALIDATE_LOCATION_IN_AIR_SHIP.writeId(this);
+		writeInt(_player.getObjectId());
+		writeInt(_shipId);
+		writeInt(_loc.getX());
+		writeInt(_loc.getY());
+		writeInt(_loc.getZ());
+		writeInt(_heading);
 	}
 }

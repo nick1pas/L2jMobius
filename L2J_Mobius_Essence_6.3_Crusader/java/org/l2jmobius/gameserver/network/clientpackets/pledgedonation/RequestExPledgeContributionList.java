@@ -16,24 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgedonation;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgedonation.ExPledgeContributionList;
 
 /**
- * Written by Berezkin Nikolay, on 09.05.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExPledgeContributionList implements IClientIncomingPacket
+public class RequestExPledgeContributionList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

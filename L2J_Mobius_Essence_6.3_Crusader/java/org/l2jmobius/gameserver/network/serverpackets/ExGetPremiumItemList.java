@@ -19,15 +19,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.PremiumItem;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class ExGetPremiumItemList implements IClientOutgoingPacket
+public class ExGetPremiumItemList extends ServerPacket
 {
 	private final Player _player;
 	private final Map<Integer, PremiumItem> _map;
@@ -39,19 +38,18 @@ public class ExGetPremiumItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_GET_PREMIUM_ITEM_LIST.writeId(packet);
-		packet.writeD(_map.size());
+		ServerPackets.EX_GET_PREMIUM_ITEM_LIST.writeId(this);
+		writeInt(_map.size());
 		for (Entry<Integer, PremiumItem> entry : _map.entrySet())
 		{
 			final PremiumItem item = entry.getValue();
-			packet.writeQ(entry.getKey());
-			packet.writeD(item.getItemId());
-			packet.writeQ(item.getCount());
-			packet.writeD(0); // ?
-			packet.writeS(item.getSender());
+			writeLong(entry.getKey());
+			writeInt(item.getItemId());
+			writeLong(item.getCount());
+			writeInt(0); // ?
+			writeString(item.getSender());
 		}
-		return true;
 	}
 }

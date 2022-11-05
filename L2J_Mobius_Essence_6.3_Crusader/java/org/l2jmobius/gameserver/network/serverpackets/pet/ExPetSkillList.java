@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pet;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 26.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExPetSkillList implements IClientOutgoingPacket
+public class ExPetSkillList extends ServerPacket
 {
 	private final boolean _onEnter;
 	private final Pet _pet;
@@ -37,19 +36,18 @@ public class ExPetSkillList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PET_SKILL_LIST.writeId(packet);
-		packet.writeC(_onEnter ? 1 : 0);
-		packet.writeD(_pet.getAllSkills().size());
+		ServerPackets.EX_PET_SKILL_LIST.writeId(this);
+		writeByte(_onEnter);
+		writeInt(_pet.getAllSkills().size());
 		for (Skill sk : _pet.getAllSkills())
 		{
-			packet.writeD(sk.getDisplayId());
-			packet.writeD(sk.getDisplayLevel());
-			packet.writeD(sk.getReuseDelayGroup());
-			packet.writeC(0);
-			packet.writeC(0);
+			writeInt(sk.getDisplayId());
+			writeInt(sk.getDisplayLevel());
+			writeInt(sk.getReuseDelayGroup());
+			writeByte(0);
+			writeByte(0);
 		}
-		return true;
 	}
 }

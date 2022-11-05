@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.collection;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.CollectionData;
 import org.l2jmobius.gameserver.data.xml.OptionData;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.options.Options;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ConfirmDlg;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionComplete;
@@ -36,19 +36,18 @@ import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionReg
 /**
  * @author Berezkin Nikolay, Mobius
  */
-public class RequestCollectionRegister implements IClientIncomingPacket
+public class RequestCollectionRegister implements ClientPacket
 {
 	private int _collectionId;
 	private int _index;
 	private int _itemObjId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_collectionId = packet.readH();
-		_index = packet.readD();
-		_itemObjId = packet.readD();
-		return true;
+		_collectionId = packet.readShort();
+		_index = packet.readInt();
+		_itemObjId = packet.readInt();
 	}
 	
 	@Override

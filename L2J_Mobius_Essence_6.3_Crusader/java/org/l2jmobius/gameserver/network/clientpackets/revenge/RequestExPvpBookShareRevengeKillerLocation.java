@@ -16,25 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.revenge;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.RevengeHistoryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Mobius
  */
-public class RequestExPvpBookShareRevengeKillerLocation implements IClientIncomingPacket
+public class RequestExPvpBookShareRevengeKillerLocation implements ClientPacket
 {
 	private String _killerName;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readString(); // Victim name.
-		_killerName = packet.readString();
-		return true;
+		packet.readSizedString(); // Victim name.
+		_killerName = packet.readSizedString();
 	}
 	
 	@Override

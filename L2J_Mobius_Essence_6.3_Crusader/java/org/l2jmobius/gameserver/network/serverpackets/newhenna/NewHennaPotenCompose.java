@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.newhenna;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index, Serenitty
  */
-public class NewHennaPotenCompose implements IClientOutgoingPacket
+public class NewHennaPotenCompose extends ServerPacket
 {
 	private final int _resultHennaId;
 	private final int _resultItemId;
@@ -37,12 +36,11 @@ public class NewHennaPotenCompose implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_NEW_HENNA_COMPOSE.writeId(packet);
-		packet.writeD(_resultHennaId);
-		packet.writeD(_resultItemId);
-		packet.writeC(_success ? 1 : 0);
-		return true;
+		ServerPackets.EX_NEW_HENNA_COMPOSE.writeId(this);
+		writeInt(_resultHennaId);
+		writeInt(_resultItemId);
+		writeByte(_success);
 	}
 }

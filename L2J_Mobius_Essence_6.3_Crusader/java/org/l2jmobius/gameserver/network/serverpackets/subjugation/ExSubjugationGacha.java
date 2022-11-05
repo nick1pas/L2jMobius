@@ -19,14 +19,13 @@ package org.l2jmobius.gameserver.network.serverpackets.subjugation;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 15.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExSubjugationGacha implements IClientOutgoingPacket
+public class ExSubjugationGacha extends ServerPacket
 {
 	private final Map<Integer, Integer> _rewards;
 	
@@ -36,15 +35,14 @@ public class ExSubjugationGacha implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUBJUGATION_GACHA.writeId(packet);
-		packet.writeD(_rewards.size());
+		ServerPackets.EX_SUBJUGATION_GACHA.writeId(this);
+		writeInt(_rewards.size());
 		for (Entry<Integer, Integer> entry : _rewards.entrySet())
 		{
-			packet.writeD(entry.getKey());
-			packet.writeD(entry.getValue());
+			writeInt(entry.getKey());
+			writeInt(entry.getValue());
 		}
-		return true;
 	}
 }

@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets.pledgedonation;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 09.05.2021
+ * @author Berezkin Nikolay
  */
-public class ExPledgeContributionList implements IClientOutgoingPacket
+public class ExPledgeContributionList extends ServerPacket
 {
 	private final Collection<ClanMember> _contributors;
 	
@@ -36,16 +35,15 @@ public class ExPledgeContributionList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_CONTRIBUTION_LIST.writeId(packet);
-		packet.writeD(_contributors.size());
+		ServerPackets.EX_PLEDGE_CONTRIBUTION_LIST.writeId(this);
+		writeInt(_contributors.size());
 		for (ClanMember contributor : _contributors)
 		{
-			packet.writeString(contributor.getName());
-			packet.writeD(contributor.getClan().getClanContributionWeekly(contributor.getObjectId()));
-			packet.writeD(contributor.getClan().getClanContribution(contributor.getObjectId()));
+			writeSizedString(contributor.getName());
+			writeInt(contributor.getClan().getClanContributionWeekly(contributor.getObjectId()));
+			writeInt(contributor.getClan().getClanContribution(contributor.getObjectId()));
 		}
-		return true;
 	}
 }

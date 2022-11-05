@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets.mentoring;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
 import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.model.Mentee;
@@ -28,23 +28,22 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentee
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeRemove;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * @author UnAfraid
  */
-public class RequestMentorCancel implements IClientIncomingPacket
+public class RequestMentorCancel implements ClientPacket
 {
 	private int _confirmed;
 	private String _name;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_confirmed = packet.readD();
-		_name = packet.readS();
-		return true;
+		_confirmed = packet.readInt();
+		_name = packet.readString();
 	}
 	
 	@Override

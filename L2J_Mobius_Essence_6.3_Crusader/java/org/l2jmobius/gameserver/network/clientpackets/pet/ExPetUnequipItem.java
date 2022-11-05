@@ -1,6 +1,6 @@
 package org.l2jmobius.gameserver.network.clientpackets.pet;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.ai.CtrlEvent;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.ai.NextAction;
@@ -12,25 +12,24 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.pet.ExPetSkillList;
 import org.l2jmobius.gameserver.network.serverpackets.pet.PetInfo;
 
 /**
- * Written by Berezkin Nikolay, on 25.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExPetUnequipItem implements IClientIncomingPacket
+public class ExPetUnequipItem implements ClientPacket
 {
 	private int _objectId;
 	private int _itemId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		return true;
+		_objectId = packet.readInt();
 	}
 	
 	@Override

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.enums.ClanEntryStatus;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
@@ -33,19 +33,18 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * @author Sdw
  */
-public class RequestPledgeWaitingApply implements IClientIncomingPacket
+public class RequestPledgeWaitingApply implements ClientPacket
 {
 	private int _karma;
 	private int _clanId;
 	private String _message;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_karma = packet.readD();
-		_clanId = packet.readD();
-		_message = packet.readS();
-		return true;
+		_karma = packet.readInt();
+		_clanId = packet.readInt();
+		_message = packet.readString();
 	}
 	
 	@Override
