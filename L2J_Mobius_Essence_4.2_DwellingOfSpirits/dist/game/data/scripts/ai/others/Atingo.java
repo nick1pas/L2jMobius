@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.skill.AbnormalVisualEffect;
 import ai.AbstractNpcAI;
 
 /**
- * Written by Berezkin Nikolay, on 15.05.2021 Hawk 25923, dragon 25922, kukabarra 25921, wolf 25918, tiger 25920, buffalo 25919
+ * @author Berezkin Nikolay
  */
 public class Atingo extends AbstractNpcAI
 {

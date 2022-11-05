@@ -21,7 +21,7 @@ import static org.l2jmobius.gameserver.enums.RankingOlympiadScope.TOP_100;
 import static org.l2jmobius.gameserver.enums.RankingOlympiadScope.TOP_50;
 
 /**
- * Written by Berezkin Nikolay, on 10.05.2021
+ * @author Berezkin Nikolay
  */
 public enum RankingOlympiadCategory
 {

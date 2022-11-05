@@ -18,35 +18,33 @@ package org.l2jmobius.gameserver.network.serverpackets.ranking;
 
 import java.util.concurrent.TimeUnit;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.GlobalVariablesManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class ExRankingBuffZoneNpcInfo implements IClientOutgoingPacket
+public class ExRankingBuffZoneNpcInfo extends ServerPacket
 {
 	public ExRankingBuffZoneNpcInfo()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RANKING_CHAR_BUFFZONE_NPC_INFO.writeId(packet);
+		ServerPackets.EX_RANKING_CHAR_BUFFZONE_NPC_INFO.writeId(this);
 		final long cooldown = GlobalVariablesManager.getInstance().getLong(GlobalVariablesManager.RANKING_POWER_COOLDOWN, 0);
 		final long currentTime = System.currentTimeMillis();
 		if (cooldown > currentTime)
 		{
 			final long reuseTime = TimeUnit.MILLISECONDS.toSeconds(cooldown - currentTime);
-			packet.writeD((int) reuseTime);
+			writeInt((int) reuseTime);
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

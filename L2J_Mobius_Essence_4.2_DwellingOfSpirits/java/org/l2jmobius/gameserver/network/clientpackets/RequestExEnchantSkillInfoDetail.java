@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.SkillEnchantType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ExEnchantSkillInfoDetail;
 /**
  * @author -Wooden-
  */
-public class RequestExEnchantSkillInfoDetail implements IClientIncomingPacket
+public class RequestExEnchantSkillInfoDetail implements ClientPacket
 {
 	private SkillEnchantType _type;
 	private int _skillId;
@@ -33,13 +33,12 @@ public class RequestExEnchantSkillInfoDetail implements IClientIncomingPacket
 	private int _skillSubLevel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = SkillEnchantType.values()[packet.readD()];
-		_skillId = packet.readD();
-		_skillLevel = packet.readH();
-		_skillSubLevel = packet.readH();
-		return true;
+		_type = SkillEnchantType.values()[packet.readInt()];
+		_skillId = packet.readInt();
+		_skillLevel = packet.readShort();
+		_skillSubLevel = packet.readShort();
 	}
 	
 	@Override

@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets.magiclamp;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.MagicLampHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExMagicLampGameResult implements IClientOutgoingPacket
+public class ExMagicLampGameResult extends ServerPacket
 {
 	private final Collection<MagicLampHolder> _rewards;
 	
@@ -36,17 +35,16 @@ public class ExMagicLampGameResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MAGICLAMP_GAME_RESULT.writeId(packet);
-		packet.writeD(_rewards.size());
+		ServerPackets.EX_MAGICLAMP_GAME_RESULT.writeId(this);
+		writeInt(_rewards.size());
 		for (MagicLampHolder lamp : _rewards)
 		{
-			packet.writeC(lamp.getType().getGrade());
-			packet.writeD(lamp.getCount());
-			packet.writeQ(lamp.getExp());
-			packet.writeQ(lamp.getSp());
+			writeByte(lamp.getType().getGrade());
+			writeInt(lamp.getCount());
+			writeLong(lamp.getExp());
+			writeLong(lamp.getSp());
 		}
-		return true;
 	}
 }

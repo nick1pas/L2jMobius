@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.enums;
 
 /**
- * Written by Berezkin Nikolay, on 06.05.2021
+ * @author Berezkin Nikolay
  */
 public enum EvolveLevel
 {

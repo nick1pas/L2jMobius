@@ -18,10 +18,9 @@ package org.l2jmobius.gameserver.network.serverpackets.pet;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ItemInfo;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractInventoryUpdate;
 
 /**
@@ -44,10 +43,9 @@ public class PetInventoryUpdate extends AbstractInventoryUpdate
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PET_INVENTORY_UPDATE.writeId(packet);
-		writeItems(packet);
-		return true;
+		ServerPackets.PET_INVENTORY_UPDATE.writeId(this);
+		writeItems();
 	}
 }

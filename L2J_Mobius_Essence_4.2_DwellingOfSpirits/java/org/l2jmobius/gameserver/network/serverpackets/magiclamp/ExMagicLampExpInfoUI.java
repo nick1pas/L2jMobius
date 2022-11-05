@@ -17,15 +17,14 @@
 package org.l2jmobius.gameserver.network.serverpackets.magiclamp;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author L2CCCP
  */
-public class ExMagicLampExpInfoUI implements IClientOutgoingPacket
+public class ExMagicLampExpInfoUI extends ServerPacket
 {
 	private final Player _player;
 	
@@ -35,13 +34,12 @@ public class ExMagicLampExpInfoUI implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MAGICLAMP_EXP_INFO.writeId(packet);
-		packet.writeD(Config.ENABLE_MAGIC_LAMP ? 1 : 0); // IsOpen
-		packet.writeD(Config.MAGIC_LAMP_MAX_LEVEL_EXP); // MaxMagicLampExp
-		packet.writeD(_player.getLampExp()); // MagicLampExp
-		packet.writeD(_player.getLampCount()); // MagicLampCount
-		return true;
+		ServerPackets.EX_MAGICLAMP_EXP_INFO.writeId(this);
+		writeInt(Config.ENABLE_MAGIC_LAMP); // IsOpen
+		writeInt(Config.MAGIC_LAMP_MAX_LEVEL_EXP); // MaxMagicLampExp
+		writeInt(_player.getLampExp()); // MagicLampExp
+		writeInt(_player.getLampCount()); // MagicLampCount
 	}
 }

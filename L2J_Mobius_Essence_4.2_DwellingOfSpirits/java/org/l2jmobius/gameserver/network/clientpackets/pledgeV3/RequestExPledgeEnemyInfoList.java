@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV3;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV3.ExPledgeEnemyInfoList;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExPledgeEnemyInfoList implements IClientIncomingPacket
+public class RequestExPledgeEnemyInfoList implements ClientPacket
 {
 	private int _playerClan;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_playerClan = packet.readD();
-		return true;
+		_playerClan = packet.readInt();
 	}
 	
 	@Override

@@ -16,24 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.raidbossinfo;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Mobius
  */
-public class RequestRaidServerInfo implements IClientIncomingPacket
+public class RequestRaidServerInfo implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		// System.out.println("RequestRaidServerInfo");
-		return true;
-	}
-	
-	@Override
-	public void run(GameClient client)
-	{
-	}
 }

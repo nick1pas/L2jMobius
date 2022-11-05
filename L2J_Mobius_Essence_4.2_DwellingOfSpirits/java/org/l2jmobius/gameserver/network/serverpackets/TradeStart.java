@@ -19,12 +19,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Collection;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.PlayerCondOverride;
 import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 public class TradeStart extends AbstractItemPacket
 {
@@ -67,33 +66,32 @@ public class TradeStart extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if ((_player.getActiveTradeList() == null) || (_partner == null))
 		{
-			return false;
+			return;
 		}
 		
-		OutgoingPackets.TRADE_START.writeId(packet);
-		packet.writeC(_sendType);
+		ServerPackets.TRADE_START.writeId(this);
+		writeByte(_sendType);
 		if (_sendType == 2)
 		{
-			packet.writeD(_itemList.size());
-			packet.writeD(_itemList.size());
+			writeInt(_itemList.size());
+			writeInt(_itemList.size());
 			for (Item item : _itemList)
 			{
-				writeItem(packet, item);
+				writeItem(item);
 			}
 		}
 		else
 		{
-			packet.writeD(_partner.getObjectId());
-			packet.writeC(_mask); // some kind of mask
+			writeInt(_partner.getObjectId());
+			writeByte(_mask); // some kind of mask
 			if ((_mask & 0x10) == 0)
 			{
-				packet.writeC(_partner.getLevel());
+				writeByte(_partner.getLevel());
 			}
 		}
-		return true;
 	}
 }

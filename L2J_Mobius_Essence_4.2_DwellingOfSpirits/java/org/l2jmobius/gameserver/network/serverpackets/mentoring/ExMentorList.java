@@ -20,17 +20,16 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.model.Mentee;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExMentorList implements IClientOutgoingPacket
+public class ExMentorList extends ServerPacket
 {
 	private final int _type;
 	private final Collection<Mentee> _mentees;
@@ -50,7 +49,7 @@ public class ExMentorList implements IClientOutgoingPacket
 		// else if (player.isInCategory(CategoryType.SIXTH_CLASS_GROUP)) // Not a mentor, Not a mentee, so can be a mentor
 		// {
 		// _mentees = Collections.emptyList();
-		// _type = 0x01;
+		// _type = 1;
 		// }
 		else
 		{
@@ -60,20 +59,19 @@ public class ExMentorList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MENTOR_LIST.writeId(packet);
-		packet.writeD(_type);
-		packet.writeD(0);
-		packet.writeD(_mentees.size());
+		ServerPackets.EX_MENTOR_LIST.writeId(this);
+		writeInt(_type);
+		writeInt(0);
+		writeInt(_mentees.size());
 		for (Mentee mentee : _mentees)
 		{
-			packet.writeD(mentee.getObjectId());
-			packet.writeS(mentee.getName());
-			packet.writeD(mentee.getClassId());
-			packet.writeD(mentee.getLevel());
-			packet.writeD(mentee.isOnlineInt());
+			writeInt(mentee.getObjectId());
+			writeString(mentee.getName());
+			writeInt(mentee.getClassId());
+			writeInt(mentee.getLevel());
+			writeInt(mentee.isOnlineInt());
 		}
-		return true;
 	}
 }

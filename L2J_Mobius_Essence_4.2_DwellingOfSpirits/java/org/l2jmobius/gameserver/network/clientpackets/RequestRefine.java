@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.VariationData;
 import org.l2jmobius.gameserver.model.VariationInstance;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -39,13 +39,12 @@ public class RequestRefine extends AbstractRefinePacket
 	private long _feeCount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetItemObjId = packet.readD();
-		_mineralItemObjId = packet.readD();
-		packet.readD(); // _feeItemObjId
-		_feeCount = packet.readQ();
-		return true;
+		_targetItemObjId = packet.readInt();
+		_mineralItemObjId = packet.readInt();
+		packet.readInt(); // _feeItemObjId
+		_feeCount = packet.readLong();
 	}
 	
 	@Override

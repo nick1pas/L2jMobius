@@ -20,7 +20,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.MentorManager;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -30,14 +30,14 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentee
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.mentoring.ExMentorList;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class ConfirmMenteeAdd implements IClientIncomingPacket
+public class ConfirmMenteeAdd implements ClientPacket
 {
 	// public static int MENTEE_CERT = 33800;
 	
@@ -45,11 +45,10 @@ public class ConfirmMenteeAdd implements IClientIncomingPacket
 	private String _mentor;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_confirmed = packet.readD();
-		_mentor = packet.readS();
-		return true;
+		_confirmed = packet.readInt();
+		_mentor = packet.readString();
 	}
 	
 	@Override

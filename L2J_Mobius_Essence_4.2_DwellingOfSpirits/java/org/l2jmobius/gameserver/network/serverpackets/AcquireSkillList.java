@@ -21,24 +21,25 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.SkillLearn;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw, Mobius
  */
-public class AcquireSkillList implements IClientOutgoingPacket
+public class AcquireSkillList extends ServerPacket
 {
 	private Player _player;
 	private Collection<SkillLearn> _learnable;
 	
 	public AcquireSkillList(Player player)
 	{
+		super(512);
+		
 		if (!player.isSubclassLocked()) // Changing class.
 		{
 			_player = player;
@@ -48,39 +49,38 @@ public class AcquireSkillList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player == null)
 		{
-			return false;
+			return;
 		}
 		
-		OutgoingPackets.ACQUIRE_SKILL_LIST.writeId(packet);
-		packet.writeH(_learnable.size());
+		ServerPackets.ACQUIRE_SKILL_LIST.writeId(this);
+		writeShort(_learnable.size());
 		for (SkillLearn skill : _learnable)
 		{
-			packet.writeD(skill.getSkillId());
-			packet.writeH(skill.getSkillLevel()); // Main writeD, Essence writeH.
-			packet.writeQ(skill.getLevelUpSp());
-			packet.writeC(skill.getGetLevel());
-			packet.writeC(0); // Skill dual class level.
-			packet.writeC(_player.getKnownSkill(skill.getSkillId()) != null ? 0 : 1);
+			writeInt(skill.getSkillId());
+			writeShort(skill.getSkillLevel()); // Main writeD, Essence writeH.
+			writeLong(skill.getLevelUpSp());
+			writeByte(skill.getGetLevel());
+			writeByte(0); // Skill dual class level.
+			writeByte(_player.getKnownSkill(skill.getSkillId()) == null);
 			
-			packet.writeC(skill.getRequiredItems().size());
+			writeByte(skill.getRequiredItems().size());
 			for (List<ItemHolder> item : skill.getRequiredItems())
 			{
-				packet.writeD(item.get(0).getId());
-				packet.writeQ(item.get(0).getCount());
+				writeInt(item.get(0).getId());
+				writeLong(item.get(0).getCount());
 			}
 			
 			final Collection<Skill> removeSkills = skill.getRemoveSkills().stream().map(_player::getKnownSkill).filter(Objects::nonNull).collect(Collectors.toList());
-			packet.writeC(removeSkills.size());
+			writeByte(removeSkills.size());
 			for (Skill removed : removeSkills)
 			{
-				packet.writeD(removed.getId());
-				packet.writeH(removed.getLevel()); // Main writeD, Essence writeH.
+				writeInt(removed.getId());
+				writeShort(removed.getLevel()); // Main writeD, Essence writeH.
 			}
 		}
-		return true;
 	}
 }

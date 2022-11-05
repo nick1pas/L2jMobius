@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV3;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021 22 C0 00 00 00 00 00 00 00 00 00
+ * @author Berezkin Nikolay
  */
-public class ExPledgeV3Info implements IClientOutgoingPacket
+public class ExPledgeV3Info extends ServerPacket
 {
 	private final int _points;
 	private final int _rank;
@@ -39,13 +38,12 @@ public class ExPledgeV3Info implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_V3_INFO.writeId(packet);
-		packet.writeD(_points);
-		packet.writeD(_rank);
-		packet.writeString(_announce);
-		packet.writeC(_isShowOnEnter ? 1 : 0);
-		return true;
+		ServerPackets.EX_PLEDGE_V3_INFO.writeId(this);
+		writeInt(_points);
+		writeInt(_rank);
+		writeSizedString(_announce);
+		writeByte(_isShowOnEnter);
 	}
 }

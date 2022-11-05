@@ -20,16 +20,15 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExInzoneWaiting implements IClientOutgoingPacket
+public class ExInzoneWaiting extends ServerPacket
 {
 	private final int _currentTemplateId;
 	private final Map<Integer, Long> _instanceTimes;
@@ -44,18 +43,17 @@ public class ExInzoneWaiting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_INZONE_WAITING_INFO.writeId(packet);
-		packet.writeC(_hide ? 0 : 1); // Grand Crusade
-		packet.writeD(_currentTemplateId);
-		packet.writeD(_instanceTimes.size());
+		ServerPackets.EX_INZONE_WAITING_INFO.writeId(this);
+		writeByte(!_hide); // Grand Crusade
+		writeInt(_currentTemplateId);
+		writeInt(_instanceTimes.size());
 		for (Entry<Integer, Long> entry : _instanceTimes.entrySet())
 		{
 			final long instanceTime = TimeUnit.MILLISECONDS.toSeconds(entry.getValue() - System.currentTimeMillis());
-			packet.writeD(entry.getKey());
-			packet.writeD((int) instanceTime);
+			writeInt(entry.getKey());
+			writeInt((int) instanceTime);
 		}
-		return true;
 	}
 }

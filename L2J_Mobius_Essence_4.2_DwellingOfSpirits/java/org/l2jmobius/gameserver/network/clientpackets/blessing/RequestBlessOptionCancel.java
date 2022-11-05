@@ -16,24 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.blessing;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.BlessingItemRequest;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.blessing.ExBlessOptionCancel;
 
 /**
- * Written by Horus, on 17.04.2021
+ * @author Horus
  */
-public class RequestBlessOptionCancel implements IClientIncomingPacket
+public class RequestBlessOptionCancel implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

@@ -16,27 +16,26 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV3;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV3.ExPledgeV3Info;
 
 /**
- * Written by Berezkin Nikolay, on 04.05.2021
+ * @author Berezkin Nikolay
  */
-public class RequestExPledgeV3SetAnnounce implements IClientIncomingPacket
+public class RequestExPledgeV3SetAnnounce implements ClientPacket
 {
 	private String _announce;
 	private boolean _enterWorldShow;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_announce = packet.readString();
-		_enterWorldShow = packet.readC() == 1;
-		return true;
+		_announce = packet.readSizedString();
+		_enterWorldShow = packet.readByte() == 1;
 	}
 	
 	@Override

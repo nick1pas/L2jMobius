@@ -19,12 +19,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.skill.BuffInfo;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExAbnormalStatusUpdateFromTarget implements IClientOutgoingPacket
+public class ExAbnormalStatusUpdateFromTarget extends ServerPacket
 {
 	private final Creature _creature;
 	private final List<BuffInfo> _effects = new ArrayList<>();
@@ -42,20 +41,19 @@ public class ExAbnormalStatusUpdateFromTarget implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ABNORMAL_STATUS_UPDATE_FROM_TARGET.writeId(packet);
-		packet.writeD(_creature.getObjectId());
-		packet.writeH(_effects.size());
+		ServerPackets.EX_ABNORMAL_STATUS_UPDATE_FROM_TARGET.writeId(this);
+		writeInt(_creature.getObjectId());
+		writeShort(_effects.size());
 		for (BuffInfo info : _effects)
 		{
-			packet.writeD(info.getSkill().getDisplayId());
-			packet.writeH(info.getSkill().getDisplayLevel());
-			// packet.writeH(info.getSkill().getSubLevel());
-			packet.writeH(info.getSkill().getAbnormalType().getClientId());
-			writeOptionalD(packet, info.getSkill().isAura() ? -1 : info.getTime());
-			packet.writeD(info.getEffectorObjectId());
+			writeInt(info.getSkill().getDisplayId());
+			writeShort(info.getSkill().getDisplayLevel());
+			// writeShort(info.getSkill().getSubLevel());
+			writeShort(info.getSkill().getAbnormalType().getClientId());
+			writeOptionalInt(info.getSkill().isAura() ? -1 : info.getTime());
+			writeInt(info.getEffectorObjectId());
 		}
-		return true;
 	}
 }

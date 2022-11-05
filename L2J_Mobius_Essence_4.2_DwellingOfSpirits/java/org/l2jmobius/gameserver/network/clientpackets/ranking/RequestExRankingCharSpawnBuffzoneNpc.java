@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.ranking;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.instancemanager.GlobalVariablesManager;
 import org.l2jmobius.gameserver.instancemanager.RankingPowerManager;
 import org.l2jmobius.gameserver.model.World;
@@ -25,22 +24,16 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExRankingBuffZoneNpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExRankingBuffZoneNpcPosition;
 
 /**
  * @author Serenitty
  */
-public class RequestExRankingCharSpawnBuffzoneNpc implements IClientIncomingPacket
+public class RequestExRankingCharSpawnBuffzoneNpc implements ClientPacket
 {
 	private static final int COST = 20000000;
-	
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
 	
 	@Override
 	public void run(GameClient client)

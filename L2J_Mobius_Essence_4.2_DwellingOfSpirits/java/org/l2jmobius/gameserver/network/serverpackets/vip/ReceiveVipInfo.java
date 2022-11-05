@@ -20,13 +20,12 @@ import java.time.Instant;
 import java.time.temporal.ChronoUnit;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.vip.VipManager;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
-public class ReceiveVipInfo implements IClientOutgoingPacket
+public class ReceiveVipInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -36,25 +35,24 @@ public class ReceiveVipInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (!Config.VIP_SYSTEM_ENABLED)
 		{
-			return false;
+			return;
 		}
 		
 		final VipManager vipManager = VipManager.getInstance();
 		final byte vipTier = _player.getVipTier();
 		final int vipDuration = (int) ChronoUnit.SECONDS.between(Instant.now(), Instant.ofEpochMilli(_player.getVipTierExpiration()));
 		
-		OutgoingPackets.RECIVE_VIP_INFO.writeId(packet);
-		packet.writeC(vipTier);
-		packet.writeQ(_player.getVipPoints());
-		packet.writeD(vipDuration);
-		packet.writeQ(vipManager.getPointsToLevel((byte) (vipTier + 1)));
-		packet.writeQ(vipManager.getPointsDepreciatedOnLevel(vipTier));
-		packet.writeC(vipTier);
-		packet.writeQ(vipManager.getPointsToLevel(vipTier));
-		return true;
+		ServerPackets.RECIVE_VIP_INFO.writeId(this);
+		writeByte(vipTier);
+		writeLong(_player.getVipPoints());
+		writeInt(vipDuration);
+		writeLong(vipManager.getPointsToLevel((byte) (vipTier + 1)));
+		writeLong(vipManager.getPointsDepreciatedOnLevel(vipTier));
+		writeByte(vipTier);
+		writeLong(vipManager.getPointsToLevel(vipTier));
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.blessing;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Horus, on 17.04.2021
+ * @author Horus
  */
-public class ExBlessOptionPutItem implements IClientOutgoingPacket
+public class ExBlessOptionPutItem extends ServerPacket
 {
 	private final int _result;
 	
@@ -33,10 +32,9 @@ public class ExBlessOptionPutItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BLESS_OPTION_PUT_ITEM.writeId(packet);
-		packet.writeC(_result);
-		return true;
+		ServerPackets.EX_BLESS_OPTION_PUT_ITEM.writeId(this);
+		writeByte(_result);
 	}
 }
