@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExPledgeCount implements IClientOutgoingPacket
+public class ExPledgeCount extends ServerPacket
 {
 	private final int _count;
 	
@@ -33,10 +32,9 @@ public class ExPledgeCount implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_COUNT.writeId(packet);
-		packet.writeD(_count);
-		return true;
+		ServerPackets.EX_PLEDGE_COUNT.writeId(this);
+		writeInt(_count);
 	}
 }

@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets.primeshop;
 import java.util.Calendar;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
 import org.l2jmobius.gameserver.data.xml.PrimeShopData;
 import org.l2jmobius.gameserver.enums.ExBrProductReplyType;
@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.model.primeshop.PrimeShopGroup;
 import org.l2jmobius.gameserver.model.primeshop.PrimeShopItem;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRBuyProduct;
 import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRGamePoint;
 import org.l2jmobius.gameserver.util.Util;
@@ -41,7 +41,7 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author Gnacik, UnAfraid
  */
-public class RequestBRPresentBuyProduct implements IClientIncomingPacket
+public class RequestBRPresentBuyProduct implements ClientPacket
 {
 	private static final int HERO_COINS = 23805;
 	
@@ -52,14 +52,13 @@ public class RequestBRPresentBuyProduct implements IClientIncomingPacket
 	private String _mailBody;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_brId = packet.readD();
-		_count = packet.readD();
-		_charName = packet.readS();
-		_mailTitle = packet.readS();
-		_mailBody = packet.readS();
-		return true;
+		_brId = packet.readInt();
+		_count = packet.readInt();
+		_charName = packet.readString();
+		_mailTitle = packet.readString();
+		_mailBody = packet.readString();
 	}
 	
 	@Override

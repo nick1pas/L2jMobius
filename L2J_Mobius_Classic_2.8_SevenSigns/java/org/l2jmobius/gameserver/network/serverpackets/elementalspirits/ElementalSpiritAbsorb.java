@@ -16,9 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.elementalspirits;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author JoeAlisson
@@ -31,10 +30,9 @@ public class ElementalSpiritAbsorb extends UpdateElementalSpiritPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ELEMENTAL_SPIRIT_ABSORB.writeId(packet);
-		writeUpdate(packet);
-		return true;
+		ServerPackets.EX_ELEMENTAL_SPIRIT_ABSORB.writeId(this);
+		writeUpdate();
 	}
 }

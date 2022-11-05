@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ExAutoSoulShot implements IClientOutgoingPacket
+public class ExAutoSoulShot extends ServerPacket
 {
 	private final int _itemId;
 	private final boolean _enable;
@@ -38,12 +37,11 @@ public class ExAutoSoulShot implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_AUTO_SOUL_SHOT.writeId(packet);
-		packet.writeD(_itemId);
-		packet.writeD(_enable ? 1 : 0);
-		packet.writeD(_type);
-		return true;
+		ServerPackets.EX_AUTO_SOUL_SHOT.writeId(this);
+		writeInt(_itemId);
+		writeInt(_enable);
+		writeInt(_type);
 	}
 }

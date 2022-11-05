@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * @author Sdw
  */
-public class RequestPledgeRecruitBoardAccess implements IClientIncomingPacket
+public class RequestPledgeRecruitBoardAccess implements ClientPacket
 {
 	private int _applyType;
 	private int _karma;
@@ -39,15 +39,14 @@ public class RequestPledgeRecruitBoardAccess implements IClientIncomingPacket
 	private int _recruitingType;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_applyType = packet.readD();
-		_karma = packet.readD();
-		_information = packet.readS();
-		_datailedInformation = packet.readS();
-		_applicationType = packet.readD(); // 0 - Allow, 1 - Public
-		_recruitingType = packet.readD(); // 0 - Main clan
-		return true;
+		_applyType = packet.readInt();
+		_karma = packet.readInt();
+		_information = packet.readString();
+		_datailedInformation = packet.readString();
+		_applicationType = packet.readInt(); // 0 - Allow, 1 - Public
+		_recruitingType = packet.readInt(); // 0 - Main clan
 	}
 	
 	@Override

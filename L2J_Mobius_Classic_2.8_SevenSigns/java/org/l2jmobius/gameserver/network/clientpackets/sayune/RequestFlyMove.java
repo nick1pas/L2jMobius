@@ -16,24 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.sayune;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.SayuneRequest;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author UnAfraid
  */
-public class RequestFlyMove implements IClientIncomingPacket
+public class RequestFlyMove implements ClientPacket
 {
 	private int _locationId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_locationId = packet.readD();
-		return true;
+		_locationId = packet.readInt();
 	}
 	
 	@Override

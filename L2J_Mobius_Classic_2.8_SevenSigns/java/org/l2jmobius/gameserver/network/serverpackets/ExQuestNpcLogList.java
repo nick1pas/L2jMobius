@@ -19,15 +19,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.holders.NpcLogListHolder;
 import org.l2jmobius.gameserver.network.NpcStringId;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExQuestNpcLogList implements IClientOutgoingPacket
+public class ExQuestNpcLogList extends ServerPacket
 {
 	private final int _questId;
 	private final List<NpcLogListHolder> _npcLogList = new ArrayList<>();
@@ -53,17 +52,16 @@ public class ExQuestNpcLogList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_QUEST_NPC_LOG_LIST.writeId(packet);
-		packet.writeD(_questId);
-		packet.writeC(_npcLogList.size());
+		ServerPackets.EX_QUEST_NPC_LOG_LIST.writeId(this);
+		writeInt(_questId);
+		writeByte(_npcLogList.size());
 		for (NpcLogListHolder holder : _npcLogList)
 		{
-			packet.writeD(holder.isNpcString() ? holder.getId() : holder.getId() + 1000000);
-			packet.writeC(holder.isNpcString() ? 1 : 0);
-			packet.writeD(holder.getCount());
+			writeInt(holder.isNpcString() ? holder.getId() : holder.getId() + 1000000);
+			writeByte(holder.isNpcString());
+			writeInt(holder.getCount());
 		}
-		return true;
 	}
 }

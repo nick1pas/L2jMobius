@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExAlterSkillRequest implements IClientOutgoingPacket
+public class ExAlterSkillRequest extends ServerPacket
 {
 	private final int _currentSkillId;
 	private final int _nextSkillId;
@@ -36,12 +35,11 @@ public class ExAlterSkillRequest implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ALTER_SKILL_REQUEST.writeId(packet);
-		packet.writeD(_nextSkillId);
-		packet.writeD(_currentSkillId);
-		packet.writeD(_alterTime);
-		return true;
+		ServerPackets.EX_ALTER_SKILL_REQUEST.writeId(this);
+		writeInt(_nextSkillId);
+		writeInt(_currentSkillId);
+		writeInt(_alterTime);
 	}
 }

@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author mrTJO
  */
-public class Ex2ndPasswordAck implements IClientOutgoingPacket
+public class Ex2ndPasswordAck extends ServerPacket
 {
 	// TODO: Enum
 	public static final int SUCCESS = 0;
@@ -38,12 +37,11 @@ public class Ex2ndPasswordAck implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_2ND_PASSWORD_ACK.writeId(packet);
-		packet.writeC(_status);
-		packet.writeD(_response == WRONG_PATTERN ? 1 : 0);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_2ND_PASSWORD_ACK.writeId(this);
+		writeByte(_status);
+		writeInt(_response == WRONG_PATTERN);
+		writeInt(0);
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.appearance;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExPutShapeShiftingTargetItemResult implements IClientOutgoingPacket
+public class ExPutShapeShiftingTargetItemResult extends ServerPacket
 {
 	public static final int RESULT_FAILED = 0;
 	public static final int RESULT_SUCCESS = 1;
@@ -40,11 +39,10 @@ public class ExPutShapeShiftingTargetItemResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PUT_SHAPE_SHIFTING_TARGET_ITEM_RESULT.writeId(packet);
-		packet.writeD(_resultId);
-		packet.writeQ(_price);
-		return true;
+		ServerPackets.EX_PUT_SHAPE_SHIFTING_TARGET_ITEM_RESULT.writeId(this);
+		writeInt(_resultId);
+		writeLong(_price);
 	}
 }

@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.BuffInfo;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author godson
  */
-public class ExOlympiadSpelledInfo implements IClientOutgoingPacket
+public class ExOlympiadSpelledInfo extends ServerPacket
 {
 	private final int _playerId;
 	private final List<BuffInfo> _effects = new ArrayList<>();
@@ -50,33 +49,32 @@ public class ExOlympiadSpelledInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_SPELLED_INFO.writeId(packet);
-		packet.writeD(_playerId);
-		packet.writeD(_effects.size() + _effects2.size());
+		ServerPackets.EX_OLYMPIAD_SPELLED_INFO.writeId(this);
+		writeInt(_playerId);
+		writeInt(_effects.size() + _effects2.size());
 		for (BuffInfo info : _effects)
 		{
 			if ((info != null) && info.isInUse())
 			{
-				packet.writeD(info.getSkill().getDisplayId());
-				packet.writeH(info.getSkill().getDisplayLevel());
-				packet.writeH(0); // Sub level
-				packet.writeD(info.getSkill().getAbnormalType().getClientId());
-				writeOptionalD(packet, info.getSkill().isAura() ? -1 : info.getTime());
+				writeInt(info.getSkill().getDisplayId());
+				writeShort(info.getSkill().getDisplayLevel());
+				writeShort(0); // Sub level
+				writeInt(info.getSkill().getAbnormalType().getClientId());
+				writeOptionalInt(info.getSkill().isAura() ? -1 : info.getTime());
 			}
 		}
 		for (Skill skill : _effects2)
 		{
 			if (skill != null)
 			{
-				packet.writeD(skill.getDisplayId());
-				packet.writeH(skill.getDisplayLevel());
-				packet.writeH(0); // Sub level
-				packet.writeD(skill.getAbnormalType().getClientId());
-				packet.writeH(-1);
+				writeInt(skill.getDisplayId());
+				writeShort(skill.getDisplayLevel());
+				writeShort(0); // Sub level
+				writeInt(skill.getAbnormalType().getClientId());
+				writeShort(-1);
 			}
 		}
-		return true;
 	}
 }

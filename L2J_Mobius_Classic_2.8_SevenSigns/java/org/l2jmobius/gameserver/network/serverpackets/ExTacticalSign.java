@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExTacticalSign implements IClientOutgoingPacket
+public class ExTacticalSign extends ServerPacket
 {
 	private final Creature _target;
 	private final int _tokenId;
@@ -35,11 +34,10 @@ public class ExTacticalSign implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TACTICAL_SIGN.writeId(packet);
-		packet.writeD(_target.getObjectId());
-		packet.writeD(_tokenId);
-		return true;
+		ServerPackets.EX_TACTICAL_SIGN.writeId(this);
+		writeInt(_target.getObjectId());
+		writeInt(_tokenId);
 	}
 }

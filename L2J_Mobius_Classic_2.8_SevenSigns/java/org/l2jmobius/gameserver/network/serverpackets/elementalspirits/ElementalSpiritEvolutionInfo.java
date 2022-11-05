@@ -18,18 +18,17 @@ package org.l2jmobius.gameserver.network.serverpackets.elementalspirits;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.model.ElementalSpirit;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author JoeAlisson
  */
-public class ElementalSpiritEvolutionInfo implements IClientOutgoingPacket
+public class ElementalSpiritEvolutionInfo extends ServerPacket
 {
 	private final Player _player;
 	private final byte _type;
@@ -41,28 +40,27 @@ public class ElementalSpiritEvolutionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ELEMENTAL_SPIRIT_EVOLUTION_INFO.writeId(packet);
+		ServerPackets.EX_ELEMENTAL_SPIRIT_EVOLUTION_INFO.writeId(this);
 		final ElementalSpirit spirit = _player.getElementalSpirit(ElementalType.of(_type));
 		if (spirit == null)
 		{
-			packet.writeC(0);
-			packet.writeD(0);
-			return true;
+			writeByte(0);
+			writeInt(0);
+			return;
 		}
-		packet.writeC(_type);
-		packet.writeD(spirit.getNpcId());
-		packet.writeD(1); // unk
-		packet.writeD(spirit.getStage());
-		packet.writeF(100); // chance ??
+		writeByte(_type);
+		writeInt(spirit.getNpcId());
+		writeInt(1); // unk
+		writeInt(spirit.getStage());
+		writeDouble(100); // chance ??
 		final List<ItemHolder> items = spirit.getItemsToEvolve();
-		packet.writeD(items.size());
+		writeInt(items.size());
 		for (ItemHolder item : items)
 		{
-			packet.writeD(item.getId());
-			packet.writeQ(item.getCount());
+			writeInt(item.getId());
+			writeLong(item.getCount());
 		}
-		return true;
 	}
 }

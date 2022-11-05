@@ -18,18 +18,17 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.enums.TaxType;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
 
 /**
  * @author KenM
  */
-public class ExShowCastleInfo implements IClientOutgoingPacket
+public class ExShowCastleInfo extends ServerPacket
 {
 	public static final ExShowCastleInfo STATIC_PACKET = new ExShowCastleInfo();
 	
@@ -38,35 +37,34 @@ public class ExShowCastleInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_CASTLE_INFO.writeId(packet);
+		ServerPackets.EX_SHOW_CASTLE_INFO.writeId(this);
 		final Collection<Castle> castles = CastleManager.getInstance().getCastles();
-		packet.writeD(castles.size());
+		writeInt(castles.size());
 		for (Castle castle : castles)
 		{
-			packet.writeD(castle.getResidenceId());
+			writeInt(castle.getResidenceId());
 			if (castle.getOwnerId() > 0)
 			{
 				if (ClanTable.getInstance().getClan(castle.getOwnerId()) != null)
 				{
-					packet.writeS(ClanTable.getInstance().getClan(castle.getOwnerId()).getName());
+					writeString(ClanTable.getInstance().getClan(castle.getOwnerId()).getName());
 				}
 				else
 				{
 					PacketLogger.warning("Castle owner with no name! Castle: " + castle.getName() + " has an OwnerId = " + castle.getOwnerId() + " who does not have a  name!");
-					packet.writeS("");
+					writeString("");
 				}
 			}
 			else
 			{
-				packet.writeS("");
+				writeString("");
 			}
-			packet.writeD(castle.getTaxPercent(TaxType.BUY));
-			packet.writeD((int) (castle.getSiege().getSiegeDate().getTimeInMillis() / 1000));
-			packet.writeC(castle.getSiege().isInProgress() ? 1 : 0); // Grand Crusade
-			packet.writeC(castle.getSide().ordinal()); // Grand Crusade
+			writeInt(castle.getTaxPercent(TaxType.BUY));
+			writeInt((int) (castle.getSiege().getSiegeDate().getTimeInMillis() / 1000));
+			writeByte(castle.getSiege().isInProgress()); // Grand Crusade
+			writeByte(castle.getSide().ordinal()); // Grand Crusade
 		}
-		return true;
 	}
 }
