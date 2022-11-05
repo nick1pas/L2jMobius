@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.InventorySlot;
 import org.l2jmobius.gameserver.model.VariationInstance;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
@@ -59,26 +58,25 @@ public class ExUserInfoEquipSlot extends AbstractMaskPacket<InventorySlot>
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_USER_INFO_EQUIP_SLOT.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeH(InventorySlot.values().length);
-		packet.writeB(_masks);
+		ServerPackets.EX_USER_INFO_EQUIP_SLOT.writeId(this);
+		writeInt(_player.getObjectId());
+		writeShort(InventorySlot.values().length);
+		writeBytes(_masks);
 		final PlayerInventory inventory = _player.getInventory();
 		for (InventorySlot slot : InventorySlot.values())
 		{
 			if (containsMask(slot))
 			{
 				final VariationInstance augment = inventory.getPaperdollAugmentation(slot.getSlot());
-				packet.writeH(22); // 10 + 4 * 3
-				packet.writeD(inventory.getPaperdollObjectId(slot.getSlot()));
-				packet.writeD(inventory.getPaperdollItemId(slot.getSlot()));
-				packet.writeD(augment != null ? augment.getOption1Id() : 0);
-				packet.writeD(augment != null ? augment.getOption2Id() : 0);
-				packet.writeD(inventory.getPaperdollItemVisualId(slot.getSlot()));
+				writeShort(22); // 10 + 4 * 3
+				writeInt(inventory.getPaperdollObjectId(slot.getSlot()));
+				writeInt(inventory.getPaperdollItemId(slot.getSlot()));
+				writeInt(augment != null ? augment.getOption1Id() : 0);
+				writeInt(augment != null ? augment.getOption2Id() : 0);
+				writeInt(inventory.getPaperdollItemVisualId(slot.getSlot()));
 			}
 		}
-		return true;
 	}
 }

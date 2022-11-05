@@ -19,15 +19,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.MatchingRoomManager;
 import org.l2jmobius.gameserver.model.matching.MatchingRoom;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExListMpccWaiting implements IClientOutgoingPacket
+public class ExListMpccWaiting extends ServerPacket
 {
 	private static final int NUM_PER_PAGE = 64;
 	
@@ -51,22 +50,21 @@ public class ExListMpccWaiting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_LIST_MPCC_WAITING.writeId(packet);
-		packet.writeD(_size);
-		packet.writeD(_rooms.size());
+		ServerPackets.EX_LIST_MPCC_WAITING.writeId(this);
+		writeInt(_size);
+		writeInt(_rooms.size());
 		for (MatchingRoom room : _rooms)
 		{
-			packet.writeD(room.getId());
-			packet.writeS(room.getTitle());
-			packet.writeD(room.getMembersCount());
-			packet.writeD(room.getMinLevel());
-			packet.writeD(room.getMaxLevel());
-			packet.writeD(room.getLocation());
-			packet.writeD(room.getMaxMembers());
-			packet.writeS(room.getLeader().getName());
+			writeInt(room.getId());
+			writeString(room.getTitle());
+			writeInt(room.getMembersCount());
+			writeInt(room.getMinLevel());
+			writeInt(room.getMaxLevel());
+			writeInt(room.getLocation());
+			writeInt(room.getMaxMembers());
+			writeString(room.getLeader().getName());
 		}
-		return true;
 	}
 }

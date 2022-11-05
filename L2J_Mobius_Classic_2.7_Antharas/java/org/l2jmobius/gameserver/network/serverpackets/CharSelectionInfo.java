@@ -26,7 +26,6 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.data.xml.ExperienceData;
 import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
@@ -38,9 +37,9 @@ import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.model.olympiad.Hero;
 import org.l2jmobius.gameserver.network.Disconnection;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class CharSelectionInfo implements IClientOutgoingPacket
+public class CharSelectionInfo extends ServerPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(CharSelectionInfo.class.getName());
 	
@@ -125,16 +124,16 @@ public class CharSelectionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHARACTER_SELECTION_INFO.writeId(packet);
+		ServerPackets.CHARACTER_SELECTION_INFO.writeId(this);
 		final int size = _characterPackages.size();
-		packet.writeD(size); // Created character count
-		packet.writeD(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Can prevent players from creating new characters (if 0); (if 1, the client will ask if chars may be created (0x13) Response: (0x0D) )
-		packet.writeC(size == Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT ? 1 : 0); // if 1 can't create new char
-		packet.writeC(1); // 0=can't play, 1=can play free until level 85, 2=100% free play
-		packet.writeD(2); // if 1, Korean client
-		packet.writeH(0); // Balthus Knights, if 1 suggests premium account
+		writeInt(size); // Created character count
+		writeInt(Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // Can prevent players from creating new characters (if 0); (if 1, the client will ask if chars may be created (0x13) Response: (0x0D) )
+		writeByte(size == Config.MAX_CHARACTERS_NUMBER_PER_ACCOUNT); // if 1 can't create new char
+		writeByte(1); // 0=can't play, 1=can play free until level 85, 2=100% free play
+		writeInt(2); // if 1, Korean client
+		writeShort(0); // Balthus Knights, if 1 suggests premium account
 		long lastAccess = 0;
 		if (_activeId == -1)
 		{
@@ -150,84 +149,83 @@ public class CharSelectionInfo implements IClientOutgoingPacket
 		for (int i = 0; i < size; i++)
 		{
 			final CharSelectInfoPackage charInfoPackage = _characterPackages.get(i);
-			packet.writeS(charInfoPackage.getName()); // Character name
-			packet.writeD(charInfoPackage.getObjectId()); // Character ID
-			packet.writeS(_loginName); // Account name
-			packet.writeD(_sessionId); // Account ID
-			packet.writeD(0); // Clan ID
-			packet.writeD(0); // Builder level
-			packet.writeD(charInfoPackage.getSex()); // Sex
-			packet.writeD(charInfoPackage.getRace()); // Race
-			packet.writeD(charInfoPackage.getBaseClassId());
-			packet.writeD(1); // GameServerName
-			packet.writeD(charInfoPackage.getX());
-			packet.writeD(charInfoPackage.getY());
-			packet.writeD(charInfoPackage.getZ());
-			packet.writeF(charInfoPackage.getCurrentHp());
-			packet.writeF(charInfoPackage.getCurrentMp());
-			packet.writeQ(charInfoPackage.getSp());
-			packet.writeQ(charInfoPackage.getExp());
-			packet.writeF((float) (charInfoPackage.getExp() - ExperienceData.getInstance().getExpForLevel(charInfoPackage.getLevel())) / (ExperienceData.getInstance().getExpForLevel(charInfoPackage.getLevel() + 1) - ExperienceData.getInstance().getExpForLevel(charInfoPackage.getLevel()))); // High
+			writeString(charInfoPackage.getName()); // Character name
+			writeInt(charInfoPackage.getObjectId()); // Character ID
+			writeString(_loginName); // Account name
+			writeInt(_sessionId); // Account ID
+			writeInt(0); // Clan ID
+			writeInt(0); // Builder level
+			writeInt(charInfoPackage.getSex()); // Sex
+			writeInt(charInfoPackage.getRace()); // Race
+			writeInt(charInfoPackage.getBaseClassId());
+			writeInt(1); // GameServerName
+			writeInt(charInfoPackage.getX());
+			writeInt(charInfoPackage.getY());
+			writeInt(charInfoPackage.getZ());
+			writeDouble(charInfoPackage.getCurrentHp());
+			writeDouble(charInfoPackage.getCurrentMp());
+			writeLong(charInfoPackage.getSp());
+			writeLong(charInfoPackage.getExp());
+			writeDouble((float) (charInfoPackage.getExp() - ExperienceData.getInstance().getExpForLevel(charInfoPackage.getLevel())) / (ExperienceData.getInstance().getExpForLevel(charInfoPackage.getLevel() + 1) - ExperienceData.getInstance().getExpForLevel(charInfoPackage.getLevel()))); // High
 																																																																									// Five
-			packet.writeD(charInfoPackage.getLevel());
-			packet.writeD(charInfoPackage.getReputation());
-			packet.writeD(charInfoPackage.getPkKills());
-			packet.writeD(charInfoPackage.getPvPKills());
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0); // Ertheia
-			packet.writeD(0); // Ertheia
+			writeInt(charInfoPackage.getLevel());
+			writeInt(charInfoPackage.getReputation());
+			writeInt(charInfoPackage.getPkKills());
+			writeInt(charInfoPackage.getPvPKills());
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0); // Ertheia
+			writeInt(0); // Ertheia
 			for (int slot : getPaperdollOrder())
 			{
-				packet.writeD(charInfoPackage.getPaperdollItemId(slot));
+				writeInt(charInfoPackage.getPaperdollItemId(slot));
 			}
-			packet.writeD(0); // Salvation
-			packet.writeD(0); // Salvation
-			packet.writeD(0); // Salvation
-			packet.writeD(0); // Salvation
-			packet.writeD(0); // Salvation
+			writeInt(0); // Salvation
+			writeInt(0); // Salvation
+			writeInt(0); // Salvation
+			writeInt(0); // Salvation
+			writeInt(0); // Salvation
 			for (int slot : getPaperdollOrderVisualId())
 			{
-				packet.writeD(charInfoPackage.getPaperdollItemVisualId(slot));
+				writeInt(charInfoPackage.getPaperdollItemVisualId(slot));
 			}
-			packet.writeH(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_CHEST)); // Upper Body enchant level
-			packet.writeH(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_LEGS)); // Lower Body enchant level
-			packet.writeH(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_HEAD)); // Headgear enchant level
-			packet.writeH(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_GLOVES)); // Gloves enchant level
-			packet.writeH(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_FEET)); // Boots enchant level
-			packet.writeD(charInfoPackage.getHairStyle());
-			packet.writeD(charInfoPackage.getHairColor());
-			packet.writeD(charInfoPackage.getFace());
-			packet.writeF(charInfoPackage.getMaxHp()); // Maximum HP
-			packet.writeF(charInfoPackage.getMaxMp()); // Maximum MP
-			packet.writeD(charInfoPackage.getDeleteTimer() > 0 ? (int) ((charInfoPackage.getDeleteTimer() - System.currentTimeMillis()) / 1000) : 0);
-			packet.writeD(charInfoPackage.getClassId());
-			packet.writeD(i == _activeId ? 1 : 0);
-			packet.writeC(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_RHAND) > 127 ? 127 : charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getAugmentation() != null ? charInfoPackage.getAugmentation().getOption1Id() : 0);
-			packet.writeD(charInfoPackage.getAugmentation() != null ? charInfoPackage.getAugmentation().getOption2Id() : 0);
-			// packet.writeD(charInfoPackage.getTransformId()); // Used to display Transformations
-			packet.writeD(0); // Currently on retail when you are on character select you don't see your transformation.
-			packet.writeD(0); // Pet NpcId
-			packet.writeD(0); // Pet level
-			packet.writeD(0); // Pet Food
-			packet.writeD(0); // Pet Food Level
-			packet.writeF(0); // Current pet HP
-			packet.writeF(0); // Current pet MP
-			packet.writeD(charInfoPackage.getVitalityPoints()); // Vitality
-			packet.writeD((int) Config.RATE_VITALITY_EXP_MULTIPLIER * 100); // Vitality Percent
-			packet.writeD(charInfoPackage.getVitalityItemsUsed()); // Remaining vitality item uses
-			packet.writeD(charInfoPackage.getAccessLevel() == -100 ? 0 : 1); // Char is active or not
-			packet.writeC(charInfoPackage.isNoble() ? 1 : 0);
-			packet.writeC(Hero.getInstance().isHero(charInfoPackage.getObjectId()) ? 1 : 0); // Hero glow
-			packet.writeC(charInfoPackage.isHairAccessoryEnabled() ? 1 : 0); // Show hair accessory if enabled
+			writeShort(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_CHEST)); // Upper Body enchant level
+			writeShort(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_LEGS)); // Lower Body enchant level
+			writeShort(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_HEAD)); // Headgear enchant level
+			writeShort(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_GLOVES)); // Gloves enchant level
+			writeShort(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_FEET)); // Boots enchant level
+			writeInt(charInfoPackage.getHairStyle());
+			writeInt(charInfoPackage.getHairColor());
+			writeInt(charInfoPackage.getFace());
+			writeDouble(charInfoPackage.getMaxHp()); // Maximum HP
+			writeDouble(charInfoPackage.getMaxMp()); // Maximum MP
+			writeInt(charInfoPackage.getDeleteTimer() > 0 ? (int) ((charInfoPackage.getDeleteTimer() - System.currentTimeMillis()) / 1000) : 0);
+			writeInt(charInfoPackage.getClassId());
+			writeInt(i == _activeId);
+			writeByte(charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_RHAND) > 127 ? 127 : charInfoPackage.getEnchantEffect(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getAugmentation() != null ? charInfoPackage.getAugmentation().getOption1Id() : 0);
+			writeInt(charInfoPackage.getAugmentation() != null ? charInfoPackage.getAugmentation().getOption2Id() : 0);
+			// writeInt(charInfoPackage.getTransformId()); // Used to display Transformations
+			writeInt(0); // Currently on retail when you are on character select you don't see your transformation.
+			writeInt(0); // Pet NpcId
+			writeInt(0); // Pet level
+			writeInt(0); // Pet Food
+			writeInt(0); // Pet Food Level
+			writeDouble(0); // Current pet HP
+			writeDouble(0); // Current pet MP
+			writeInt(charInfoPackage.getVitalityPoints()); // Vitality
+			writeInt((int) Config.RATE_VITALITY_EXP_MULTIPLIER * 100); // Vitality Percent
+			writeInt(charInfoPackage.getVitalityItemsUsed()); // Remaining vitality item uses
+			writeInt(charInfoPackage.getAccessLevel() != -100); // Char is active or not
+			writeByte(charInfoPackage.isNoble());
+			writeByte(Hero.getInstance().isHero(charInfoPackage.getObjectId())); // Hero glow
+			writeByte(charInfoPackage.isHairAccessoryEnabled()); // Show hair accessory if enabled
 		}
-		return true;
 	}
 	
 	private static List<CharSelectInfoPackage> loadCharacterSelectInfo(String loginName)

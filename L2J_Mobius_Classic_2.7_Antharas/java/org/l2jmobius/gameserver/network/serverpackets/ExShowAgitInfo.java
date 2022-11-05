@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.data.xml.ClanHallData;
 import org.l2jmobius.gameserver.model.residences.ClanHall;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author KenM
  */
-public class ExShowAgitInfo implements IClientOutgoingPacket
+public class ExShowAgitInfo extends ServerPacket
 {
 	public static final ExShowAgitInfo STATIC_PACKET = new ExShowAgitInfo();
 	
@@ -36,18 +35,17 @@ public class ExShowAgitInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_AGIT_INFO.writeId(packet);
+		ServerPackets.EX_SHOW_AGIT_INFO.writeId(this);
 		final Collection<ClanHall> clanHalls = ClanHallData.getInstance().getClanHalls();
-		packet.writeD(clanHalls.size());
+		writeInt(clanHalls.size());
 		clanHalls.forEach(clanHall ->
 		{
-			packet.writeD(clanHall.getResidenceId());
-			packet.writeS(clanHall.getOwnerId() <= 0 ? "" : ClanTable.getInstance().getClan(clanHall.getOwnerId()).getName()); // owner clan name
-			packet.writeS(clanHall.getOwnerId() <= 0 ? "" : ClanTable.getInstance().getClan(clanHall.getOwnerId()).getLeaderName()); // leader name
-			packet.writeD(clanHall.getType().getClientVal()); // Clan hall type
+			writeInt(clanHall.getResidenceId());
+			writeString(clanHall.getOwnerId() <= 0 ? "" : ClanTable.getInstance().getClan(clanHall.getOwnerId()).getName()); // owner clan name
+			writeString(clanHall.getOwnerId() <= 0 ? "" : ClanTable.getInstance().getClan(clanHall.getOwnerId()).getLeaderName()); // leader name
+			writeInt(clanHall.getType().getClientVal()); // Clan hall type
 		});
-		return true;
 	}
 }

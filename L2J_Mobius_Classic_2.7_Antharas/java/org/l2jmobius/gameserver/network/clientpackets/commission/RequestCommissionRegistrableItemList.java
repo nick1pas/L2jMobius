@@ -16,25 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.commission;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.instancemanager.ItemCommissionManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExCloseCommission;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExResponseCommissionItemList;
 
 /**
  * @author NosBit
  */
-public class RequestCommissionRegistrableItemList implements IClientIncomingPacket
+public class RequestCommissionRegistrableItemList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

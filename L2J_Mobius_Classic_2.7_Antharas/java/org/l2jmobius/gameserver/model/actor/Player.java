@@ -307,7 +307,6 @@ import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoCubic;
 import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoInvenWeight;
 import org.l2jmobius.gameserver.network.serverpackets.GetOnVehicle;
 import org.l2jmobius.gameserver.network.serverpackets.HennaInfo;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
@@ -327,6 +326,7 @@ import org.l2jmobius.gameserver.network.serverpackets.RecipeShopMsg;
 import org.l2jmobius.gameserver.network.serverpackets.RecipeShopSellList;
 import org.l2jmobius.gameserver.network.serverpackets.RelationChanged;
 import org.l2jmobius.gameserver.network.serverpackets.Ride;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SetupGauge;
 import org.l2jmobius.gameserver.network.serverpackets.ShortCutInit;
 import org.l2jmobius.gameserver.network.serverpackets.SkillCoolTime;
@@ -3911,9 +3911,9 @@ public class Player extends Playable
 	public void setClient(GameClient client)
 	{
 		_client = client;
-		if ((_client != null) && (_client.getConnectionAddress() != null))
+		if ((_client != null) && (_client.getIp() != null))
 		{
-			_ip = _client.getConnectionAddress().getHostAddress();
+			_ip = _client.getIp();
 		}
 	}
 	
@@ -4160,16 +4160,16 @@ public class Player extends Playable
 	}
 	
 	@Override
-	public void broadcastPacket(IClientOutgoingPacket mov, boolean includeSelf)
+	public void broadcastPacket(ServerPacket packet, boolean includeSelf)
 	{
-		if (mov instanceof CharInfo)
+		if (packet instanceof CharInfo)
 		{
 			new IllegalArgumentException("CharInfo is being send via broadcastPacket. Do NOT do that! Use broadcastCharInfo() instead.");
 		}
 		
 		if (includeSelf)
 		{
-			sendPacket(mov);
+			sendPacket(packet);
 		}
 		
 		World.getInstance().forEachVisibleObject(this, Player.class, player ->
@@ -4179,19 +4179,19 @@ public class Player extends Playable
 				return;
 			}
 			
-			player.sendPacket(mov);
+			player.sendPacket(packet);
 		});
 	}
 	
 	@Override
-	public void broadcastPacket(IClientOutgoingPacket mov, int radiusInKnownlist)
+	public void broadcastPacket(ServerPacket packet, int radiusInKnownlist)
 	{
-		if (mov instanceof CharInfo)
+		if (packet instanceof CharInfo)
 		{
 			new IllegalArgumentException("CharInfo is being send via broadcastPacket. Do NOT do that! Use broadcastCharInfo() instead.");
 		}
 		
-		sendPacket(mov);
+		sendPacket(packet);
 		
 		World.getInstance().forEachVisibleObject(this, Player.class, player ->
 		{
@@ -4199,7 +4199,7 @@ public class Player extends Playable
 			{
 				return;
 			}
-			player.sendPacket(mov);
+			player.sendPacket(packet);
 		});
 	}
 	
@@ -4218,7 +4218,7 @@ public class Player extends Playable
 	}
 	
 	@Override
-	public void sendPacket(IClientOutgoingPacket packet)
+	public void sendPacket(ServerPacket packet)
 	{
 		if (_client != null)
 		{

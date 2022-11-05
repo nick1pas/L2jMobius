@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
@@ -37,18 +37,17 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * @author Sdw
  */
-public class RequestPledgeWaitingUserAccept implements IClientIncomingPacket
+public class RequestPledgeWaitingUserAccept implements ClientPacket
 {
 	private boolean _acceptRequest;
 	private int _playerId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_acceptRequest = packet.readD() == 1;
-		_playerId = packet.readD();
-		packet.readD(); // Clan Id.
-		return true;
+		_acceptRequest = packet.readInt() == 1;
+		_playerId = packet.readInt();
+		packet.readInt(); // Clan Id.
 	}
 	
 	@Override

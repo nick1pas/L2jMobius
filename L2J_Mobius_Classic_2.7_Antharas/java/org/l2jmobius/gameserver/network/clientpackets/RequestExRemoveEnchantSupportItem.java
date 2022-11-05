@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.item.instance.Item;
@@ -26,14 +25,8 @@ import org.l2jmobius.gameserver.network.serverpackets.ExRemoveEnchantSupportItem
 /**
  * @author Sdw
  */
-public class RequestExRemoveEnchantSupportItem implements IClientIncomingPacket
+public class RequestExRemoveEnchantSupportItem implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

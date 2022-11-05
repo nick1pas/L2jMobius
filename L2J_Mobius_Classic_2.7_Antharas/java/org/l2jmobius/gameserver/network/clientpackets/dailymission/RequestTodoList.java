@@ -16,27 +16,26 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.dailymission;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.dailymission.ExOneDayReceiveRewardList;
 
 /**
  * @author UnAfraid
  */
-public class RequestTodoList implements IClientIncomingPacket
+public class RequestTodoList implements ClientPacket
 {
 	private int _tab;
 	@SuppressWarnings("unused")
 	private boolean _showAllLevels;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_tab = packet.readC(); // Daily Reward = 9, Event = 1, Instance Zone = 2
-		_showAllLevels = packet.readC() == 1; // Disabled = 0, Enabled = 1
-		return true;
+		_tab = packet.readByte(); // Daily Reward = 9, Event = 1, Instance Zone = 2
+		_showAllLevels = packet.readByte() == 1; // Disabled = 0, Enabled = 1
 	}
 	
 	@Override
