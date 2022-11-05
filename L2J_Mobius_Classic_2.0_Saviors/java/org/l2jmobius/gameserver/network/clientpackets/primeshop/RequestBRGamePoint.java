@@ -16,23 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.primeshop;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRGamePoint;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class RequestBRGamePoint implements IClientIncomingPacket
+public class RequestBRGamePoint implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

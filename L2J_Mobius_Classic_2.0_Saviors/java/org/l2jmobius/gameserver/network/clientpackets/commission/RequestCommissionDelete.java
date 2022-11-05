@@ -16,27 +16,26 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.commission;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ItemCommissionManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExCloseCommission;
 
 /**
  * @author NosBit
  */
-public class RequestCommissionDelete implements IClientIncomingPacket
+public class RequestCommissionDelete implements ClientPacket
 {
 	private long _commissionId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_commissionId = packet.readQ();
-		// packet.readD(); // CommissionItemType
-		// packet.readD(); // CommissionDurationType
-		return true;
+		_commissionId = packet.readLong();
+		// packet.readInt(); // CommissionItemType
+		// packet.readInt(); // CommissionDurationType
 	}
 	
 	@Override

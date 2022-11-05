@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.Quest;
 import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Tempy
  */
-public class GmViewQuestInfo implements IClientOutgoingPacket
+public class GmViewQuestInfo extends ServerPacket
 {
 	private final Player _player;
 	private final List<Quest> _questList;
@@ -39,19 +38,18 @@ public class GmViewQuestInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GM_VIEW_QUEST_INFO.writeId(packet);
-		packet.writeS(_player.getName());
-		packet.writeH(_questList.size()); // quest count
+		ServerPackets.GM_VIEW_QUEST_INFO.writeId(this);
+		writeString(_player.getName());
+		writeShort(_questList.size()); // quest count
 		for (Quest quest : _questList)
 		{
 			final QuestState qs = _player.getQuestState(quest.getName());
-			packet.writeD(quest.getId());
-			packet.writeD(qs == null ? 0 : qs.getCond());
+			writeInt(quest.getId());
+			writeInt(qs == null ? 0 : qs.getCond());
 		}
-		packet.writeH(0); // some size
+		writeShort(0); // some size
 		// for size; ddQQ
-		return true;
 	}
 }

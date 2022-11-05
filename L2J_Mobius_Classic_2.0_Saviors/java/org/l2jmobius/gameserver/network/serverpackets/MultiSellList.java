@@ -18,7 +18,6 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import static org.l2jmobius.gameserver.data.xml.MultisellData.PAGE_SIZE;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.model.ItemInfo;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -27,7 +26,7 @@ import org.l2jmobius.gameserver.model.holders.MultisellEntryHolder;
 import org.l2jmobius.gameserver.model.holders.PreparedMultisellListHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 public class MultiSellList extends AbstractItemPacket
 {
@@ -55,18 +54,18 @@ public class MultiSellList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.MULTI_SELL_LIST.writeId(packet);
-		packet.writeC(0); // Helios
-		packet.writeD(_list.getId()); // list id
-		packet.writeC(0); // GOD Unknown
-		packet.writeD(1 + (_index / PAGE_SIZE)); // page started from 1
-		packet.writeD(_finished ? 1 : 0); // finished
-		packet.writeD(PAGE_SIZE); // size of pages
-		packet.writeD(_size); // list length
-		packet.writeC(_list.isChanceMultisell() ? 1 : 0); // new multisell window
-		packet.writeD(32); // Helios - Always 32
+		ServerPackets.MULTI_SELL_LIST.writeId(this);
+		writeByte(0); // Helios
+		writeInt(_list.getId()); // list id
+		writeByte(0); // GOD Unknown
+		writeInt(1 + (_index / PAGE_SIZE)); // page started from 1
+		writeInt(_finished); // finished
+		writeInt(PAGE_SIZE); // size of pages
+		writeInt(_size); // list length
+		writeByte(_list.isChanceMultisell()); // new multisell window
+		writeInt(32); // Helios - Always 32
 		while (_size-- > 0)
 		{
 			ItemInfo itemEnchantment = _list.getItemEnchantment(_index);
@@ -83,37 +82,37 @@ public class MultiSellList extends AbstractItemPacket
 					}
 				}
 			}
-			packet.writeD(_index); // Entry ID. Start from 1.
-			packet.writeC(entry.isStackable() ? 1 : 0);
+			writeInt(_index); // Entry ID. Start from 1.
+			writeByte(entry.isStackable());
 			// Those values will be passed down to MultiSellChoose packet.
-			packet.writeH(itemEnchantment != null ? itemEnchantment.getEnchantLevel() : 0); // enchant level
-			writeItemAugment(packet, itemEnchantment);
-			writeItemElemental(packet, itemEnchantment);
-			writeItemEnsoulOptions(packet, itemEnchantment);
-			packet.writeH(entry.getProducts().size());
-			packet.writeH(entry.getIngredients().size());
+			writeShort(itemEnchantment != null ? itemEnchantment.getEnchantLevel() : 0); // enchant level
+			writeItemAugment(itemEnchantment);
+			writeItemElemental(itemEnchantment);
+			writeItemEnsoulOptions(itemEnchantment);
+			writeShort(entry.getProducts().size());
+			writeShort(entry.getIngredients().size());
 			for (ItemChanceHolder product : entry.getProducts())
 			{
 				final ItemTemplate template = ItemTable.getInstance().getTemplate(product.getId());
 				final ItemInfo displayItemEnchantment = _list.isMaintainEnchantment() && (itemEnchantment != null) && (template != null) && template.getClass().equals(itemEnchantment.getItem().getClass()) ? itemEnchantment : null;
 				if (template != null)
 				{
-					packet.writeD(template.getDisplayId());
-					packet.writeQ(template.getBodyPart());
-					packet.writeH(template.getType2());
+					writeInt(template.getDisplayId());
+					writeLong(template.getBodyPart());
+					writeShort(template.getType2());
 				}
 				else
 				{
-					packet.writeD(product.getId());
-					packet.writeQ(0);
-					packet.writeH(65535);
+					writeInt(product.getId());
+					writeLong(0);
+					writeShort(65535);
 				}
-				packet.writeQ(_list.getProductCount(product));
-				packet.writeH(product.getEnchantmentLevel() > 0 ? product.getEnchantmentLevel() : displayItemEnchantment != null ? displayItemEnchantment.getEnchantLevel() : 0); // enchant level
-				packet.writeD((int) Math.ceil(product.getChance())); // chance
-				writeItemAugment(packet, displayItemEnchantment);
-				writeItemElemental(packet, displayItemEnchantment);
-				writeItemEnsoulOptions(packet, displayItemEnchantment);
+				writeLong(_list.getProductCount(product));
+				writeShort(product.getEnchantmentLevel() > 0 ? product.getEnchantmentLevel() : displayItemEnchantment != null ? displayItemEnchantment.getEnchantLevel() : 0); // enchant level
+				writeInt((int) Math.ceil(product.getChance())); // chance
+				writeItemAugment(displayItemEnchantment);
+				writeItemElemental(displayItemEnchantment);
+				writeItemEnsoulOptions(displayItemEnchantment);
 			}
 			for (ItemChanceHolder ingredient : entry.getIngredients())
 			{
@@ -121,21 +120,20 @@ public class MultiSellList extends AbstractItemPacket
 				final ItemInfo displayItemEnchantment = (itemEnchantment != null) && (template != null) && template.getClass().equals(itemEnchantment.getItem().getClass()) ? itemEnchantment : null;
 				if (template != null)
 				{
-					packet.writeD(template.getDisplayId());
-					packet.writeH(template.getType2());
+					writeInt(template.getDisplayId());
+					writeShort(template.getType2());
 				}
 				else
 				{
-					packet.writeD(ingredient.getId());
-					packet.writeH(65535);
+					writeInt(ingredient.getId());
+					writeShort(65535);
 				}
-				packet.writeQ(_list.getIngredientCount(ingredient));
-				packet.writeH(ingredient.getEnchantmentLevel() > 0 ? ingredient.getEnchantmentLevel() : displayItemEnchantment != null ? displayItemEnchantment.getEnchantLevel() : 0); // enchant level
-				writeItemAugment(packet, displayItemEnchantment);
-				writeItemElemental(packet, displayItemEnchantment);
-				writeItemEnsoulOptions(packet, displayItemEnchantment);
+				writeLong(_list.getIngredientCount(ingredient));
+				writeShort(ingredient.getEnchantmentLevel() > 0 ? ingredient.getEnchantmentLevel() : displayItemEnchantment != null ? displayItemEnchantment.getEnchantLevel() : 0); // enchant level
+				writeItemAugment(displayItemEnchantment);
+				writeItemElemental(displayItemEnchantment);
+				writeItemEnsoulOptions(displayItemEnchantment);
 			}
 		}
-		return true;
 	}
 }

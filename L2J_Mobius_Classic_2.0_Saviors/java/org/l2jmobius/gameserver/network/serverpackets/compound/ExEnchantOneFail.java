@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.compound;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExEnchantOneFail implements IClientOutgoingPacket
+public class ExEnchantOneFail extends ServerPacket
 {
 	public static final ExEnchantOneFail STATIC_PACKET = new ExEnchantOneFail();
 	
@@ -32,9 +31,8 @@ public class ExEnchantOneFail implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_ONE_FAIL.writeId(packet);
-		return true;
+		ServerPackets.EX_ENCHANT_ONE_FAIL.writeId(this);
 	}
 }

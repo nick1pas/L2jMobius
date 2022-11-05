@@ -16,9 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
@@ -37,12 +36,11 @@ public class ExShowChannelingEffect extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_CHANNELING_EFFECT.writeId(packet);
-		packet.writeD(_caster.getObjectId());
-		packet.writeD(_target.getObjectId());
-		packet.writeD(_state);
-		return true;
+		ServerPackets.EX_SHOW_CHANNELING_EFFECT.writeId(this);
+		writeInt(_caster.getObjectId());
+		writeInt(_target.getObjectId());
+		writeInt(_state);
 	}
 }

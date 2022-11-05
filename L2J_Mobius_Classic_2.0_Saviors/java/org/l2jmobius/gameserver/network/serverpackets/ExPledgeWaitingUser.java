@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.entry.PledgeApplicantInfo;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExPledgeWaitingUser implements IClientOutgoingPacket
+public class ExPledgeWaitingUser extends ServerPacket
 {
 	private final PledgeApplicantInfo _pledgeRecruitInfo;
 	
@@ -33,11 +32,10 @@ public class ExPledgeWaitingUser implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_WAITING_USER.writeId(packet);
-		packet.writeD(_pledgeRecruitInfo.getPlayerId());
-		packet.writeS(_pledgeRecruitInfo.getMessage());
-		return true;
+		ServerPackets.EX_PLEDGE_WAITING_USER.writeId(this);
+		writeInt(_pledgeRecruitInfo.getPlayerId());
+		writeString(_pledgeRecruitInfo.getMessage());
 	}
 }

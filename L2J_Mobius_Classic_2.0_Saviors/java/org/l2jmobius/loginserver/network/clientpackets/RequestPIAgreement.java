@@ -16,25 +16,23 @@
  */
 package org.l2jmobius.loginserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.IIncomingPacket;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.loginserver.network.LoginClient;
 import org.l2jmobius.loginserver.network.serverpackets.PIAgreementAck;
 
 /**
  * @author UnAfraid
  */
-public class RequestPIAgreement implements IIncomingPacket<LoginClient>
+public class RequestPIAgreement implements LoginClientPacket
 {
 	private int _accountId;
 	private int _status;
 	
 	@Override
-	public boolean read(LoginClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_accountId = packet.readD();
-		_status = packet.readC();
-		return true;
+		_accountId = packet.readInt();
+		_status = packet.readByte();
 	}
 	
 	@Override

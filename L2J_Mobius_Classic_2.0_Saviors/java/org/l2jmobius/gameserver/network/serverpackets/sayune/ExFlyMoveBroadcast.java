@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.sayune;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.SayuneType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.interfaces.ILocational;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExFlyMoveBroadcast implements IClientOutgoingPacket
+public class ExFlyMoveBroadcast extends ServerPacket
 {
 	private final int _objectId;
 	private final int _mapId;
@@ -44,19 +43,18 @@ public class ExFlyMoveBroadcast implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_FLY_MOVE_BROADCAST.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_type.ordinal());
-		packet.writeD(_mapId);
-		packet.writeD(_targetLoc.getX());
-		packet.writeD(_targetLoc.getY());
-		packet.writeD(_targetLoc.getZ());
-		packet.writeD(0); // ?
-		packet.writeD(_currentLoc.getX());
-		packet.writeD(_currentLoc.getY());
-		packet.writeD(_currentLoc.getZ());
-		return true;
+		ServerPackets.EX_FLY_MOVE_BROADCAST.writeId(this);
+		writeInt(_objectId);
+		writeInt(_type.ordinal());
+		writeInt(_mapId);
+		writeInt(_targetLoc.getX());
+		writeInt(_targetLoc.getY());
+		writeInt(_targetLoc.getZ());
+		writeInt(0); // ?
+		writeInt(_currentLoc.getX());
+		writeInt(_currentLoc.getY());
+		writeInt(_currentLoc.getZ());
 	}
 }

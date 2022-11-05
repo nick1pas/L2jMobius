@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExAdenaInvenCount implements IClientOutgoingPacket
+public class ExAdenaInvenCount extends ServerPacket
 {
 	private final Player _player;
 	
@@ -33,11 +32,10 @@ public class ExAdenaInvenCount implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ADENA_INVEN_COUNT.writeId(packet);
-		packet.writeQ(_player.getAdena());
-		packet.writeH(_player.getInventory().getSize());
-		return true;
+		ServerPackets.EX_ADENA_INVEN_COUNT.writeId(this);
+		writeLong(_player.getAdena());
+		writeShort(_player.getInventory().getSize());
 	}
 }
