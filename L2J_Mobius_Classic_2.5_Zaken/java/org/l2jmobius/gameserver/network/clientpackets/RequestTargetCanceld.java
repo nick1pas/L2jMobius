@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
@@ -25,15 +25,14 @@ import org.l2jmobius.gameserver.network.serverpackets.TargetUnselected;
 /**
  * @author Mobius
  */
-public class RequestTargetCanceld implements IClientIncomingPacket
+public class RequestTargetCanceld implements ClientPacket
 {
 	private boolean _targetLost;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_targetLost = packet.readH() != 0;
-		return true;
+		_targetLost = packet.readShort() != 0;
 	}
 	
 	@Override

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExResponseResetList implements IClientOutgoingPacket
+public class ExResponseResetList extends ServerPacket
 {
 	private final Player _player;
 	
@@ -33,14 +32,13 @@ public class ExResponseResetList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESPONSE_RESET_LIST.writeId(packet);
-		packet.writeQ(_player.getAdena());
-		packet.writeQ(_player.getBeautyTickets());
-		packet.writeD(_player.getAppearance().getHairStyle());
-		packet.writeD(_player.getAppearance().getHairColor());
-		packet.writeD(_player.getAppearance().getFace());
-		return true;
+		ServerPackets.EX_RESPONSE_RESET_LIST.writeId(this);
+		writeLong(_player.getAdena());
+		writeLong(_player.getBeautyTickets());
+		writeInt(_player.getAppearance().getHairStyle());
+		writeInt(_player.getAppearance().getHairColor());
+		writeInt(_player.getAppearance().getFace());
 	}
 }

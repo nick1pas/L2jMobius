@@ -22,7 +22,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.OfflineTraderTable;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.ItemRequest;
@@ -38,7 +38,7 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @version $Revision: 1.2.2.1.2.5 $ $Date: 2005/03/27 15:29:30 $
  */
-public class RequestPrivateStoreBuy implements IClientIncomingPacket
+public class RequestPrivateStoreBuy implements ClientPacket
 {
 	private static final int BATCH_LENGTH = 20; // length of the one item
 	
@@ -46,29 +46,28 @@ public class RequestPrivateStoreBuy implements IClientIncomingPacket
 	private Set<ItemRequest> _items = null;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_storePlayerId = packet.readD();
-		final int count = packet.readD();
-		if ((count <= 0) || (count > Config.MAX_ITEM_IN_PACKET) || ((count * BATCH_LENGTH) != packet.getReadableBytes()))
+		_storePlayerId = packet.readInt();
+		final int count = packet.readInt();
+		if ((count <= 0) || (count > Config.MAX_ITEM_IN_PACKET) || ((count * BATCH_LENGTH) != packet.getRemainingLength()))
 		{
-			return false;
+			return;
 		}
 		_items = new HashSet<>();
 		for (int i = 0; i < count; i++)
 		{
-			final int objectId = packet.readD();
-			final long cnt = packet.readQ();
-			final long price = packet.readQ();
+			final int objectId = packet.readInt();
+			final long cnt = packet.readLong();
+			final long price = packet.readLong();
 			if ((objectId < 1) || (cnt < 1) || (price < 0))
 			{
 				_items = null;
-				return false;
+				return;
 			}
 			
 			_items.add(new ItemRequest(objectId, cnt, price));
 		}
-		return true;
 	}
 	
 	@Override

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.adenadistribution;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExDivideAdenaDone implements IClientOutgoingPacket
+public class ExDivideAdenaDone extends ServerPacket
 {
 	private final boolean _isPartyLeader;
 	private final boolean _isCCLeader;
@@ -43,15 +42,14 @@ public class ExDivideAdenaDone implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DIVIDE_ADENA_DONE.writeId(packet);
-		packet.writeC(_isPartyLeader ? 1 : 0);
-		packet.writeC(_isCCLeader ? 1 : 0);
-		packet.writeD(_memberCount);
-		packet.writeQ(_distributedAdenaCount);
-		packet.writeQ(_adenaCount);
-		packet.writeS(_distributorName);
-		return true;
+		ServerPackets.EX_DIVIDE_ADENA_DONE.writeId(this);
+		writeByte(_isPartyLeader);
+		writeByte(_isCCLeader);
+		writeInt(_memberCount);
+		writeLong(_distributedAdenaCount);
+		writeLong(_adenaCount);
+		writeString(_distributorName);
 	}
 }

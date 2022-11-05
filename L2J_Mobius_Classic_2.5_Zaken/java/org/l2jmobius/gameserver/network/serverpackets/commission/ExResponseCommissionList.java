@@ -20,9 +20,8 @@ import java.time.Instant;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.commission.CommissionItem;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -61,38 +60,37 @@ public class ExResponseCommissionList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESPONSE_COMMISSION_LIST.writeId(packet);
-		packet.writeD(_replyType.getClientId());
+		ServerPackets.EX_RESPONSE_COMMISSION_LIST.writeId(this);
+		writeInt(_replyType.getClientId());
 		switch (_replyType)
 		{
 			case PLAYER_AUCTIONS:
 			case AUCTIONS:
 			{
-				packet.writeD((int) Instant.now().getEpochSecond());
-				packet.writeD(_chunkId);
+				writeInt((int) Instant.now().getEpochSecond());
+				writeInt(_chunkId);
 				int chunkSize = _items.size() - _listIndexStart;
 				if (chunkSize > MAX_CHUNK_SIZE)
 				{
 					chunkSize = MAX_CHUNK_SIZE;
 				}
-				packet.writeD(chunkSize);
+				writeInt(chunkSize);
 				for (int i = _listIndexStart; i < (_listIndexStart + chunkSize); i++)
 				{
 					final CommissionItem commissionItem = _items.get(i);
-					packet.writeQ(commissionItem.getCommissionId());
-					packet.writeQ(commissionItem.getPricePerUnit());
-					packet.writeD(0); // CommissionItemType seems client does not really need it.
-					packet.writeD((commissionItem.getDurationInDays() - 1) / 2);
-					packet.writeD((int) commissionItem.getEndTime().getEpochSecond());
-					packet.writeS(null); // Seller Name its not displayed somewhere so i am not sending it to decrease traffic.
-					writeItem(packet, commissionItem.getItemInfo());
+					writeLong(commissionItem.getCommissionId());
+					writeLong(commissionItem.getPricePerUnit());
+					writeInt(0); // CommissionItemType seems client does not really need it.
+					writeInt((commissionItem.getDurationInDays() - 1) / 2);
+					writeInt((int) commissionItem.getEndTime().getEpochSecond());
+					writeString(null); // Seller Name its not displayed somewhere so i am not sending it to decrease traffic.
+					writeItem(commissionItem.getItemInfo());
 				}
 				break;
 			}
 		}
-		return true;
 	}
 	
 	public enum CommissionListReplyType

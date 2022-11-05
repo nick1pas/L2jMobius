@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets.attributechange;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.enchant.attribute.AttributeHolder;
@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.attributechange.ExChangeAttributeFail;
@@ -35,19 +35,18 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author Mobius
  */
-public class RequestChangeAttributeItem implements IClientIncomingPacket
+public class RequestChangeAttributeItem implements ClientPacket
 {
 	private int _consumeItemId;
 	private int _itemObjId;
 	private int _newElementId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_consumeItemId = packet.readD();
-		_itemObjId = packet.readD();
-		_newElementId = packet.readD();
-		return true;
+		_consumeItemId = packet.readInt();
+		_itemObjId = packet.readInt();
+		_newElementId = packet.readInt();
 	}
 	
 	@Override

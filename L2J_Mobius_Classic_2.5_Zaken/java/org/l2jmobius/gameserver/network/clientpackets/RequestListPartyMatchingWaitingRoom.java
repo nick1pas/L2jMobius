@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -28,7 +28,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ExListPartyMatchingWaiting
 /**
  * @author Gnacik
  */
-public class RequestListPartyMatchingWaitingRoom implements IClientIncomingPacket
+public class RequestListPartyMatchingWaitingRoom implements ClientPacket
 {
 	private int _page;
 	private int _minLevel;
@@ -37,25 +37,24 @@ public class RequestListPartyMatchingWaitingRoom implements IClientIncomingPacke
 	private String _query;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_page = packet.readD();
-		_minLevel = packet.readD();
-		_maxLevel = packet.readD();
-		final int size = packet.readD();
+		_page = packet.readInt();
+		_minLevel = packet.readInt();
+		_maxLevel = packet.readInt();
+		final int size = packet.readInt();
 		if ((size > 0) && (size < 128))
 		{
 			_classId = new LinkedList<>();
 			for (int i = 0; i < size; i++)
 			{
-				_classId.add(ClassId.getClassId(packet.readD()));
+				_classId.add(ClassId.getClassId(packet.readInt()));
 			}
 		}
-		if (packet.getReadableBytes() > 0)
+		if (packet.getRemainingLength() > 0)
 		{
-			_query = packet.readS();
+			_query = packet.readString();
 		}
-		return true;
 	}
 	
 	@Override

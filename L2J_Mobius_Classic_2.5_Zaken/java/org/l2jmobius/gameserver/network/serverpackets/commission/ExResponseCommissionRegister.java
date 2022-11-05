@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.commission;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NosBit
  */
-public class ExResponseCommissionRegister implements IClientOutgoingPacket
+public class ExResponseCommissionRegister extends ServerPacket
 {
 	public static final ExResponseCommissionRegister SUCCEED = new ExResponseCommissionRegister(1);
 	public static final ExResponseCommissionRegister FAILED = new ExResponseCommissionRegister(0);
@@ -36,10 +35,9 @@ public class ExResponseCommissionRegister implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RESPONSE_COMMISSION_REGISTER.writeId(packet);
-		packet.writeD(_result);
-		return true;
+		ServerPackets.EX_RESPONSE_COMMISSION_REGISTER.writeId(this);
+		writeInt(_result);
 	}
 }

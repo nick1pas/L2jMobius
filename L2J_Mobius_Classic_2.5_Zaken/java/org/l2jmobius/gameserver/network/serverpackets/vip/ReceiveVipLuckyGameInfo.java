@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.vip;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gabriel Costa Souza
  */
-public class ReceiveVipLuckyGameInfo implements IClientOutgoingPacket
+public class ReceiveVipLuckyGameInfo extends ServerPacket
 {
 	private final Player _player;
 	private final static int LCOIN_ID = 91663; // FIXME: Does not exist in client.
@@ -36,13 +35,12 @@ public class ReceiveVipLuckyGameInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.RECIVE_VIP_LUCKY_GAME_INFO.writeId(packet);
-		packet.writeC(1); // enabled
-		packet.writeH((int) _player.getAdena());
+		ServerPackets.RECIVE_VIP_LUCKY_GAME_INFO.writeId(this);
+		writeByte(1); // enabled
+		writeShort((int) _player.getAdena());
 		Item item = _player.getInventory().getItemByItemId(LCOIN_ID);
-		packet.writeH(item == null ? 0 : (int) item.getCount()); // L Coin count
-		return true;
+		writeShort(item == null ? 0 : (int) item.getCount()); // L Coin count
 	}
 }

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.events.EventDispatcher;
 import org.l2jmobius.gameserver.model.events.EventType;
@@ -27,15 +27,14 @@ import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 /**
  * @author Sdw
  */
-public class RequestChangeToAwakenedClass implements IClientIncomingPacket
+public class RequestChangeToAwakenedClass implements ClientPacket
 {
 	private boolean _change;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_change = packet.readD() == 1;
-		return true;
+		_change = packet.readInt() == 1;
 	}
 	
 	@Override

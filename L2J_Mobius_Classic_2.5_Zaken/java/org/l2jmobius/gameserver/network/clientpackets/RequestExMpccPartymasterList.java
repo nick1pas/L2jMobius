@@ -20,7 +20,6 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.enums.MatchingRoomType;
 import org.l2jmobius.gameserver.model.Party;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -31,14 +30,8 @@ import org.l2jmobius.gameserver.network.serverpackets.ExMPCCPartymasterList;
 /**
  * @author Sdw
  */
-public class RequestExMpccPartymasterList implements IClientIncomingPacket
+public class RequestExMpccPartymasterList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

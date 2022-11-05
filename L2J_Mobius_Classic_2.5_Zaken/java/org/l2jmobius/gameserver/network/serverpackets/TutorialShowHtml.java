@@ -16,9 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.HtmlActionScope;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * TutorialShowHtml server packet implementation.
@@ -45,12 +44,11 @@ public class TutorialShowHtml extends AbstractHtmlPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.TUTORIAL_SHOW_HTML.writeId(packet);
-		packet.writeD(_type);
-		packet.writeS(getHtml());
-		return true;
+		ServerPackets.TUTORIAL_SHOW_HTML.writeId(this);
+		writeInt(_type);
+		writeString(getHtml());
 	}
 	
 	@Override
