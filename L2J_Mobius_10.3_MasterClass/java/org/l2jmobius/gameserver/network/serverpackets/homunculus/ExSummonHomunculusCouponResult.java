@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author `NasSeKa`
  */
-public class ExSummonHomunculusCouponResult implements IClientOutgoingPacket
+public class ExSummonHomunculusCouponResult extends ServerPacket
 {
 	private final int _slot;
 	private final int _success;
@@ -35,12 +34,11 @@ public class ExSummonHomunculusCouponResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SUMMON_HOMUNCULUS_COUPON_RESULT.writeId(packet);
-		packet.writeD(_success);
-		packet.writeD(_slot); // homunculus slot
-		packet.writeD(0); // keep or delete
-		return true;
+		ServerPackets.EX_SUMMON_HOMUNCULUS_COUPON_RESULT.writeId(this);
+		writeInt(_success);
+		writeInt(_slot); // homunculus slot
+		writeInt(0); // keep or delete
 	}
 }

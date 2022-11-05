@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 import java.util.List;
 import java.util.logging.Logger;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.HomunculusSlotData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.model.homunculus.HomunculusSlotTemplate;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExActivateHomunculusResult;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusList;
@@ -35,16 +35,15 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculu
 /**
  * @author Manax
  */
-public class RequestExHomunculusActivateSlot implements IClientIncomingPacket
+public class RequestExHomunculusActivateSlot implements ClientPacket
 {
 	private int _slot;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_slot = packet.readD();
-		// _activate = packet.readC() == 1; // enabled?
-		return true;
+		_slot = packet.readInt();
+		// _activate = packet.readByte() == 1; // enabled?
 	}
 	
 	@Override

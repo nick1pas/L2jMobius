@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExShowTeleportUi implements IClientOutgoingPacket
+public class ExShowTeleportUi extends ServerPacket
 {
 	public static final ExShowTeleportUi STATIC_PACKET = new ExShowTeleportUi();
 	
@@ -32,9 +31,8 @@ public class ExShowTeleportUi implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_TELEPORT_UI.writeId(packet);
-		return true;
+		ServerPackets.EX_SHOW_TELEPORT_UI.writeId(this);
 	}
 }

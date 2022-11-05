@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * Show Confirm Dialog for 10 seconds
  * @author mrTJO
  */
-public class ExCubeGameRequestReady implements IClientOutgoingPacket
+public class ExCubeGameRequestReady extends ServerPacket
 {
 	public static final ExCubeGameRequestReady STATIC_PACKET = new ExCubeGameRequestReady();
 	
@@ -32,10 +31,9 @@ public class ExCubeGameRequestReady implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BLOCK_UP_SET_LIST.writeId(packet);
-		packet.writeD(4);
-		return true;
+		ServerPackets.EX_BLOCK_UP_SET_LIST.writeId(this);
+		writeInt(4);
 	}
 }

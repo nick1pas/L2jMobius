@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.worldexchange;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class WorldExchangeBuyItem implements IClientOutgoingPacket
+public class WorldExchangeBuyItem extends ServerPacket
 {
 	public static final WorldExchangeBuyItem FAIL = new WorldExchangeBuyItem(-1, -1L, (byte) 0);
 	
@@ -39,12 +38,11 @@ public class WorldExchangeBuyItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_WORLD_EXCHANGE_BUY_ITEM.writeId(packet);
-		packet.writeD(_itemObjectId);
-		packet.writeQ(_itemAmount);
-		packet.writeC(_type);
-		return true;
+		ServerPackets.EX_WORLD_EXCHANGE_BUY_ITEM.writeId(this);
+		writeInt(_itemObjectId);
+		writeLong(_itemAmount);
+		writeByte(_type);
 	}
 }

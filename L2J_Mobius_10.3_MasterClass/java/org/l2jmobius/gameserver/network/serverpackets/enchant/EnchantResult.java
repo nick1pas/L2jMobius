@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.enchant;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
-public class EnchantResult implements IClientOutgoingPacket
+public class EnchantResult extends ServerPacket
 {
 	public static final int SUCCESS = 0; /* 11, 12 */
 	public static final int FAIL = 1; /* 6, 9 */
@@ -57,16 +56,15 @@ public class EnchantResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.ENCHANT_RESULT.writeId(packet);
-		packet.writeD(_result);
-		packet.writeD(_crystal);
-		packet.writeQ(_count);
-		packet.writeD(0); // option
-		packet.writeD(0); // option
-		packet.writeD(0); // option
-		packet.writeD(_enchantLevel); // Confirmed.
-		return true;
+		ServerPackets.ENCHANT_RESULT.writeId(this);
+		writeInt(_result);
+		writeInt(_crystal);
+		writeLong(_count);
+		writeInt(0); // option
+		writeInt(0); // option
+		writeInt(0); // option
+		writeInt(_enchantLevel); // Confirmed.
 	}
 }

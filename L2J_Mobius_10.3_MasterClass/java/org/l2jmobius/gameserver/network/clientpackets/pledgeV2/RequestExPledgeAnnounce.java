@@ -16,24 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeShowInfoUpdate;
 
 /**
  * @author Mobius
  */
-public class RequestExPledgeAnnounce implements IClientIncomingPacket
+public class RequestExPledgeAnnounce implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{
@@ -42,6 +35,7 @@ public class RequestExPledgeAnnounce implements IClientIncomingPacket
 		{
 			return;
 		}
+		
 		final Clan clan = player.getClan();
 		if (clan == null)
 		{

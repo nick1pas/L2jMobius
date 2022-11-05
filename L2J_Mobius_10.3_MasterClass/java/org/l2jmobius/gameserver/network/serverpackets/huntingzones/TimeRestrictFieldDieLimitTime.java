@@ -16,24 +16,22 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NasSeKa
  */
-public class TimeRestrictFieldDieLimitTime implements IClientOutgoingPacket
+public class TimeRestrictFieldDieLimitTime extends ServerPacket
 {
 	public TimeRestrictFieldDieLimitTime()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TIME_RESTRICT_FIELD_DIE_LIMT_TIME.writeId(packet);
-		packet.writeD(600); // RemainTime (zone left time)
-		return true;
+		ServerPackets.EX_TIME_RESTRICT_FIELD_DIE_LIMT_TIME.writeId(this);
+		writeInt(600); // RemainTime (zone left time)
 	}
 }

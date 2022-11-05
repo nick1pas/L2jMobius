@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeContributionRank implements IClientOutgoingPacket
+public class ExPledgeContributionRank extends ServerPacket
 {
 	private final Clan _clan;
 	private final int _cycle;
@@ -38,36 +37,36 @@ public class ExPledgeContributionRank implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_clan == null)
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.EX_PLEDGE_CONTRIBUTION_RANK.writeId(packet);
-		packet.writeC(_cycle);
-		packet.writeD(_clan.getMembersCount());
+		
+		ServerPackets.EX_PLEDGE_CONTRIBUTION_RANK.writeId(this);
+		writeByte(_cycle);
+		writeInt(_clan.getMembersCount());
 		int order = 1;
 		for (ClanMember member : _clan.getMembers())
 		{
 			if (member.isOnline())
 			{
 				final Player player = member.getPlayer();
-				packet.writeD(order++); // Order?
-				packet.writeS(String.format("%1$-" + 24 + "s", player.getName()));
-				packet.writeD(player.getPledgeType());
-				packet.writeD(player.getClanContribution());
-				packet.writeD(player.getClanContributionTotal());
+				writeInt(order++); // Order?
+				writeString(String.format("%1$-" + 24 + "s", player.getName()));
+				writeInt(player.getPledgeType());
+				writeInt(player.getClanContribution());
+				writeInt(player.getClanContributionTotal());
 			}
 			else
 			{
-				packet.writeD(order++); // Order?
-				packet.writeS(String.format("%1$-" + 24 + "s", member.getName()));
-				packet.writeD(member.getPledgeType());
-				packet.writeD(member.getClanContribution());
-				packet.writeD(member.getClanContributionTotal());
+				writeInt(order++); // Order?
+				writeString(String.format("%1$-" + 24 + "s", member.getName()));
+				writeInt(member.getPledgeType());
+				writeInt(member.getClanContribution());
+				writeInt(member.getClanContributionTotal());
 			}
 		}
-		return true;
 	}
 }

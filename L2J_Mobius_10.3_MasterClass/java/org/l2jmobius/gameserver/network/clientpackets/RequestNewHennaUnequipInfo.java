@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.HennaData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
@@ -28,15 +28,14 @@ import org.l2jmobius.gameserver.network.serverpackets.HennaItemRemoveInfo;
 /**
  * @author Index
  */
-public class RequestNewHennaUnequipInfo implements IClientIncomingPacket
+public class RequestNewHennaUnequipInfo implements ClientPacket
 {
 	private int _hennaId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_hennaId = packet.readD();
-		return true;
+		_hennaId = packet.readInt();
 	}
 	
 	@Override

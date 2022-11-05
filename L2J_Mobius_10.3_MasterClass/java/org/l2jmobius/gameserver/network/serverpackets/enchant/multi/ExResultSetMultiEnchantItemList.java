@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.enchant.multi;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExResultSetMultiEnchantItemList implements IClientOutgoingPacket
+public class ExResultSetMultiEnchantItemList extends ServerPacket
 {
 	private final Player _player;
 	private final int _resultType;
@@ -37,16 +36,15 @@ public class ExResultSetMultiEnchantItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getRequest(EnchantItemRequest.class) == null)
 		{
-			return false;
+			return;
 		}
 		_player.getRequest(EnchantItemRequest.class);
 		
-		OutgoingPackets.EX_RES_SET_MULTI_ENCHANT_ITEM_LIST.writeId(packet);
-		packet.writeD(_resultType);
-		return true;
+		ServerPackets.EX_RES_SET_MULTI_ENCHANT_ITEM_LIST.writeId(this);
+		writeInt(_resultType);
 	}
 }

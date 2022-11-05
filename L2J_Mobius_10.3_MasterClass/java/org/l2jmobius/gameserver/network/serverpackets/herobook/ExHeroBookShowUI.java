@@ -16,19 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.herobook;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExHeroBookShowUI implements IClientOutgoingPacket
+public class ExHeroBookShowUI extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HERO_BOOK_UI.writeId(packet);
-		return true;
+		ServerPackets.EX_HERO_BOOK_UI.writeId(this);
 	}
 }

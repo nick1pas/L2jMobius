@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 12.04.2021
+ * @author Berezkin Nikolay
  */
-public class ExCollectionUpdateFavorite implements IClientOutgoingPacket
+public class ExCollectionUpdateFavorite extends ServerPacket
 {
 	private final int _isAdd;
 	private final int _collectionId;
@@ -35,11 +34,10 @@ public class ExCollectionUpdateFavorite implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_COLLECTION_UPDATE_FAVORITE.writeId(packet);
-		packet.writeC(_isAdd);
-		packet.writeH(_collectionId);
-		return true;
+		ServerPackets.EX_COLLECTION_UPDATE_FAVORITE.writeId(this);
+		writeByte(_isAdd);
+		writeShort(_collectionId);
 	}
 }

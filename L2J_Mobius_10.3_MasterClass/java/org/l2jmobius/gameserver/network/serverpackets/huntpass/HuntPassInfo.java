@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntpass;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.HuntPass;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Serenitty
  */
-public class HuntPassInfo implements IClientOutgoingPacket
+public class HuntPassInfo extends ServerPacket
 {
 	private final int _interfaceType;
 	private final HuntPass _huntPass;
@@ -51,16 +50,15 @@ public class HuntPassInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_L2PASS_INFO.writeId(packet);
-		packet.writeC(_interfaceType);
-		packet.writeD(_timeEnd); // LeftTime
-		packet.writeC(_isPremium); // Premium
-		packet.writeD(_points); // Points
-		packet.writeD(_step); // CurrentStep
-		packet.writeD(_rewardStep); // Reward
-		packet.writeD(_premiumRewardStep); // PremiumReward
-		return true;
+		ServerPackets.EX_L2PASS_INFO.writeId(this);
+		writeByte(_interfaceType);
+		writeInt(_timeEnd); // LeftTime
+		writeByte(_isPremium); // Premium
+		writeInt(_points); // Points
+		writeInt(_step); // CurrentStep
+		writeInt(_rewardStep); // Reward
+		writeInt(_premiumRewardStep); // PremiumReward
 	}
 }

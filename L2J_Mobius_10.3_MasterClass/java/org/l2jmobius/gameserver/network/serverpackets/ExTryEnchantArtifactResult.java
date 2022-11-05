@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Bonux (bonuxq@gmail.com)
  * @date 09.09.2019
  **/
-public class ExTryEnchantArtifactResult implements IClientOutgoingPacket
+public class ExTryEnchantArtifactResult extends ServerPacket
 {
 	public static final int SUCCESS = 0;
 	public static final int FAIL = 1;
@@ -41,14 +40,13 @@ public class ExTryEnchantArtifactResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TRY_ENCHANT_ARTIFACT_RESULT.writeId(packet);
-		packet.writeD(_state);
-		packet.writeD(_enchant);
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_TRY_ENCHANT_ARTIFACT_RESULT.writeId(this);
+		writeInt(_state);
+		writeInt(_enchant);
+		writeInt(0);
+		writeInt(0);
+		writeInt(0);
 	}
 }

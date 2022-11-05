@@ -23,7 +23,7 @@ import java.util.Map;
 import java.util.Map.Entry;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
@@ -41,34 +41,33 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * RequestRecipeShopListSet client packet class.
  */
-public class RequestRecipeShopListSet implements IClientIncomingPacket
+public class RequestRecipeShopListSet implements ClientPacket
 {
 	private static final int BATCH_LENGTH = 12;
 	
 	private Map<Integer, Long> _manufactureRecipes = null;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int count = packet.readD();
-		if ((count <= 0) || (count > Config.MAX_ITEM_IN_PACKET) || ((count * BATCH_LENGTH) != packet.getReadableBytes()))
+		final int count = packet.readInt();
+		if ((count <= 0) || (count > Config.MAX_ITEM_IN_PACKET) || ((count * BATCH_LENGTH) != packet.getRemainingLength()))
 		{
-			return false;
+			return;
 		}
 		
 		_manufactureRecipes = new HashMap<>(count);
 		for (int i = 0; i < count; i++)
 		{
-			final int id = packet.readD();
-			final long cost = packet.readQ();
+			final int id = packet.readInt();
+			final long cost = packet.readLong();
 			if (cost < 0)
 			{
 				_manufactureRecipes = null;
-				return false;
+				return;
 			}
 			_manufactureRecipes.put(id, cost);
 		}
-		return true;
 	}
 	
 	@Override

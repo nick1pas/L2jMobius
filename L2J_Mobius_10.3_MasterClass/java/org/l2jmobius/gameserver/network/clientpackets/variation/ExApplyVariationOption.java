@@ -16,32 +16,31 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.variation;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.VariationInstance;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.VariationRequest;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.variation.ApplyVariationOption;
 
 /**
  * @author Index
  */
-public class ExApplyVariationOption implements IClientIncomingPacket
+public class ExApplyVariationOption implements ClientPacket
 {
 	private int _enchantedObjectId;
 	private int _option1;
 	private int _option2;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_enchantedObjectId = packet.readD();
-		_option1 = packet.readD();
-		_option2 = packet.readD();
-		return true;
+		_enchantedObjectId = packet.readInt();
+		_option1 = packet.readInt();
+		_option2 = packet.readInt();
 	}
 	
 	@Override

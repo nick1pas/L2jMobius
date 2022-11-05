@@ -69,7 +69,7 @@ import org.l2jmobius.gameserver.model.spawns.SpawnGroup;
 import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
@@ -878,11 +878,11 @@ public class Instance implements IIdentifiable, INamable
 	 * Send packet to each player from instance world.
 	 * @param packets packets to be send
 	 */
-	public void broadcastPacket(IClientOutgoingPacket... packets)
+	public void broadcastPacket(ServerPacket... packets)
 	{
 		for (Player player : _players)
 		{
-			for (IClientOutgoingPacket packet : packets)
+			for (ServerPacket packet : packets)
 			{
 				player.sendPacket(packet);
 			}

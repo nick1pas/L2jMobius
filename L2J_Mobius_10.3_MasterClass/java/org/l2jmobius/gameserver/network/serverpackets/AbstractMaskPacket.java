@@ -22,7 +22,7 @@ import org.l2jmobius.gameserver.model.interfaces.IUpdateTypeComponent;
  * @author UnAfraid
  * @param <T>
  */
-public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent> implements IClientOutgoingPacket
+public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent>extends ServerPacket
 {
 	protected static final byte[] DEFAULT_FLAG_ARRAY =
 	{
@@ -35,6 +35,11 @@ public abstract class AbstractMaskPacket<T extends IUpdateTypeComponent> impleme
 		0x02,
 		0x01
 	};
+	
+	protected AbstractMaskPacket()
+	{
+		super(256);
+	}
 	
 	protected abstract byte[] getMasks();
 	

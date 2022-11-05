@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.settings;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExItemAnnounceSetting implements IClientOutgoingPacket
+public class ExItemAnnounceSetting extends ServerPacket
 {
 	private final boolean _announceEnabled;
 	
@@ -33,10 +32,9 @@ public class ExItemAnnounceSetting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ITEM_ANNOUNCE_SETTING.writeId(packet);
-		packet.writeC(_announceEnabled ? 1 : 0);
-		return true;
+		ServerPackets.EX_ITEM_ANNOUNCE_SETTING.writeId(this);
+		writeByte(_announceEnabled);
 	}
 }

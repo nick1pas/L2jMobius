@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
@@ -24,22 +24,21 @@ import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.ExPutEnchantScrollItemResult;
 
 /**
  * @author Sdw
  */
-public class RequestExAddEnchantScrollItem implements IClientIncomingPacket
+public class RequestExAddEnchantScrollItem implements ClientPacket
 {
 	private int _scrollObjectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_scrollObjectId = packet.readD();
-		packet.readD(); // enchantObjectId?
-		return true;
+		_scrollObjectId = packet.readInt();
+		packet.readInt(); // enchantObjectId?
 	}
 	
 	@Override

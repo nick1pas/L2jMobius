@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.herobook;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExHeroBookEnchant implements IClientOutgoingPacket
+public class ExHeroBookEnchant extends ServerPacket
 {
 	private final int _result;
 	
@@ -33,10 +32,9 @@ public class ExHeroBookEnchant implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HERO_BOOK_ENCHANT.writeId(packet);
-		packet.writeC(_result);
-		return true;
+		ServerPackets.EX_HERO_BOOK_ENCHANT.writeId(this);
+		writeByte(_result);
 	}
 }

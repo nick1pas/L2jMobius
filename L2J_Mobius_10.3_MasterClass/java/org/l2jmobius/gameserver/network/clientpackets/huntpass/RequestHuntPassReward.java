@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.huntpass;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.HuntPassData;
 import org.l2jmobius.gameserver.model.HuntPass;
@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassInfo;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSayhasSupportInfo;
@@ -34,16 +34,15 @@ import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInf
 /**
  * @author Serenitty
  */
-public class RequestHuntPassReward implements IClientIncomingPacket
+public class RequestHuntPassReward implements ClientPacket
 {
 	private int _huntPassType;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_huntPassType = packet.readC();
-		packet.readC(); // is Premium?
-		return true;
+		_huntPassType = packet.readByte();
+		packet.readByte(); // is Premium?
 	}
 	
 	@Override

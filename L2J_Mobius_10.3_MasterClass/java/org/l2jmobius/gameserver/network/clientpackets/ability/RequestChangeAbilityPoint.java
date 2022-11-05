@@ -16,21 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.ability;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
-public class RequestChangeAbilityPoint implements IClientIncomingPacket
+public class RequestChangeAbilityPoint implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
-	@Override
-	public void run(GameClient client)
-	{
-		// removed
-	}
 }

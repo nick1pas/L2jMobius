@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExHomunculusReady implements IClientOutgoingPacket
+public class ExHomunculusReady extends ServerPacket
 {
 	private final boolean _enabled;
 	
@@ -33,10 +32,9 @@ public class ExHomunculusReady implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_READY.writeId(packet);
-		packet.writeC(_enabled ? 1 : 0);
-		return true;
+		ServerPackets.EX_HOMUNCULUS_READY.writeId(this);
+		writeByte(_enabled);
 	}
 }

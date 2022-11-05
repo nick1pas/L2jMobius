@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.compound;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExEnchantRetryToPutItemOk implements IClientOutgoingPacket
+public class ExEnchantRetryToPutItemOk extends ServerPacket
 {
 	public static final ExEnchantRetryToPutItemOk STATIC_PACKET = new ExEnchantRetryToPutItemOk();
 	
@@ -32,9 +31,8 @@ public class ExEnchantRetryToPutItemOk implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_RETRY_TO_PUT_ITEM_OK.writeId(packet);
-		return true;
+		ServerPackets.EX_ENCHANT_RETRY_TO_PUT_ITEM_OK.writeId(this);
 	}
 }

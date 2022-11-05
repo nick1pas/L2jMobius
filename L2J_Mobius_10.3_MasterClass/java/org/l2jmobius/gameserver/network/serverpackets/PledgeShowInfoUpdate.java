@@ -17,11 +17,10 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PledgeShowInfoUpdate implements IClientOutgoingPacket
+public class PledgeShowInfoUpdate extends ServerPacket
 {
 	private final Clan _clan;
 	
@@ -31,28 +30,27 @@ public class PledgeShowInfoUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PLEDGE_SHOW_INFO_UPDATE.writeId(packet);
+		ServerPackets.PLEDGE_SHOW_INFO_UPDATE.writeId(this);
 		// sending empty data so client will ask all the info in response ;)
-		packet.writeD(_clan.getId());
-		packet.writeD(Config.SERVER_ID);
-		packet.writeD(_clan.getCrestId());
-		packet.writeD(_clan.getLevel()); // clan level
-		packet.writeD(_clan.getCastleId());
-		packet.writeD(0); // castle state ?
-		packet.writeD(_clan.getHideoutId());
-		packet.writeD(_clan.getFortId());
-		packet.writeD(_clan.getRank());
-		packet.writeD(_clan.getReputationScore()); // clan reputation score
-		packet.writeD(0); // ?
-		packet.writeD(0); // ?
-		packet.writeD(_clan.getAllyId());
-		packet.writeS(_clan.getAllyName()); // c5
-		packet.writeD(_clan.getAllyCrestId()); // c5
-		packet.writeD(_clan.isAtWar() ? 1 : 0); // c5
-		packet.writeD(0); // TODO: Find me!
-		packet.writeD(0); // TODO: Find me!
-		return true;
+		writeInt(_clan.getId());
+		writeInt(Config.SERVER_ID);
+		writeInt(_clan.getCrestId());
+		writeInt(_clan.getLevel()); // clan level
+		writeInt(_clan.getCastleId());
+		writeInt(0); // castle state ?
+		writeInt(_clan.getHideoutId());
+		writeInt(_clan.getFortId());
+		writeInt(_clan.getRank());
+		writeInt(_clan.getReputationScore()); // clan reputation score
+		writeInt(0); // ?
+		writeInt(0); // ?
+		writeInt(_clan.getAllyId());
+		writeString(_clan.getAllyName()); // c5
+		writeInt(_clan.getAllyCrestId()); // c5
+		writeInt(_clan.isAtWar()); // c5
+		writeInt(0); // TODO: Find me!
+		writeInt(0); // TODO: Find me!
 	}
 }

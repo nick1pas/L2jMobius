@@ -16,23 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.herobook;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.herobook.HeroBookManager;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Index
  */
-public class RequestHeroBookEnchant implements IClientIncomingPacket
+public class RequestHeroBookEnchant implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{
@@ -41,6 +34,7 @@ public class RequestHeroBookEnchant implements IClientIncomingPacket
 		{
 			return;
 		}
+		
 		new HeroBookManager().tryIncreaseLevel(player);
 	}
 }

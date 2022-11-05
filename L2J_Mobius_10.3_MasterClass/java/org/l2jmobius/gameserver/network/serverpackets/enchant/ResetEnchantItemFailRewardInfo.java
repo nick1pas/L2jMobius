@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.enchant;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
@@ -24,13 +23,13 @@ import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantSupportItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
+public class ResetEnchantItemFailRewardInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -40,17 +39,17 @@ public class ResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getRequest(EnchantItemRequest.class) == null)
 		{
-			return false;
+			return;
 		}
 		
 		final EnchantItemRequest request = _player.getRequest(EnchantItemRequest.class);
 		if ((request.getEnchantingItem() == null) || request.isProcessing() || (request.getEnchantingScroll() == null))
 		{
-			return false;
+			return;
 		}
 		
 		final EnchantScroll enchantScroll = EnchantItemData.getInstance().getEnchantScroll(request.getEnchantingScroll());
@@ -85,27 +84,26 @@ public class ResetEnchantItemFailRewardInfo implements IClientOutgoingPacket
 			}
 		}
 		
-		OutgoingPackets.EX_RES_ENCHANT_ITEM_FAIL_REWARD_INFO.writeId(packet);
-		packet.writeD(enchantItem.getObjectId());
-		packet.writeD(0);
-		packet.writeD(0);
+		ServerPackets.EX_RES_ENCHANT_ITEM_FAIL_REWARD_INFO.writeId(this);
+		writeInt(enchantItem.getObjectId());
+		writeInt(0);
+		writeInt(0);
 		
 		if (result != null)
 		{
-			packet.writeD(1); // Loop count.
-			packet.writeD(result.getId());
-			packet.writeD((int) result.getCount());
+			writeInt(1); // Loop count.
+			writeInt(result.getId());
+			writeInt((int) result.getCount());
 		}
 		else if (addedItem != null)
 		{
-			packet.writeD(1); // Loop count.
-			packet.writeD(enchantItem.getId());
-			packet.writeD(1);
+			writeInt(1); // Loop count.
+			writeInt(enchantItem.getId());
+			writeInt(1);
 		}
 		else
 		{
-			packet.writeD(0); // Loop count.
+			writeInt(0); // Loop count.
 		}
-		return true;
 	}
 }

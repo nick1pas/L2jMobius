@@ -16,28 +16,27 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant.multi;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.multi.ExResetSelectMultiEnchantScroll;
 
 /**
  * @author Index
  */
-public class ExRequestStartMultiEnchantScroll implements IClientIncomingPacket
+public class ExRequestStartMultiEnchantScroll implements ClientPacket
 {
 	private int _scrollObjectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_scrollObjectId = packet.readD();
-		return true;
+		_scrollObjectId = packet.readInt();
 	}
 	
 	@Override

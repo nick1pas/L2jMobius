@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.awakening;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExCallToChangeClass implements IClientOutgoingPacket
+public class ExCallToChangeClass extends ServerPacket
 {
 	private final int _classId;
 	private final boolean _showMessage;
@@ -35,12 +34,11 @@ public class ExCallToChangeClass implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CALL_TO_CHANGE_CLASS.writeId(packet);
-		packet.writeD(_classId);
-		packet.writeD(_showMessage ? 1 : 0);
-		packet.writeD(1); // Force - 0 you have to do it; 1 it's optional
-		return true;
+		ServerPackets.EX_CALL_TO_CHANGE_CLASS.writeId(this);
+		writeInt(_classId);
+		writeInt(_showMessage ? 1 : 0);
+		writeInt(1); // Force - 0 you have to do it; 1 it's optional
 	}
 }

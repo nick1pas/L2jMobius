@@ -20,16 +20,15 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.CastleManorManager;
 import org.l2jmobius.gameserver.model.Seed;
 import org.l2jmobius.gameserver.model.SeedProduction;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author l3x
  */
-public class ExShowSeedSetting implements IClientOutgoingPacket
+public class ExShowSeedSetting extends ServerPacket
 {
 	private final int _manorId;
 	private final Set<Seed> _seeds;
@@ -59,50 +58,49 @@ public class ExShowSeedSetting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_SEED_SETTING.writeId(packet);
-		packet.writeD(_manorId); // manor id
-		packet.writeD(_seeds.size()); // size
+		ServerPackets.EX_SHOW_SEED_SETTING.writeId(this);
+		writeInt(_manorId); // manor id
+		writeInt(_seeds.size()); // size
 		for (Seed s : _seeds)
 		{
-			packet.writeD(s.getSeedId()); // seed id
-			packet.writeD(s.getLevel()); // level
-			packet.writeC(1);
-			packet.writeD(s.getReward(1)); // reward 1 id
-			packet.writeC(1);
-			packet.writeD(s.getReward(2)); // reward 2 id
-			packet.writeD(s.getSeedLimit()); // next sale limit
-			packet.writeD((int) s.getSeedReferencePrice()); // price for castle to produce 1
-			packet.writeD((int) s.getSeedMinPrice()); // min seed price
-			packet.writeD((int) s.getSeedMaxPrice()); // max seed price
+			writeInt(s.getSeedId()); // seed id
+			writeInt(s.getLevel()); // level
+			writeByte(1);
+			writeInt(s.getReward(1)); // reward 1 id
+			writeByte(1);
+			writeInt(s.getReward(2)); // reward 2 id
+			writeInt(s.getSeedLimit()); // next sale limit
+			writeInt((int) s.getSeedReferencePrice()); // price for castle to produce 1
+			writeInt((int) s.getSeedMinPrice()); // min seed price
+			writeInt((int) s.getSeedMaxPrice()); // max seed price
 			// Current period
 			if (_current.containsKey(s.getSeedId()))
 			{
 				final SeedProduction sp = _current.get(s.getSeedId());
-				packet.writeQ(sp.getStartAmount()); // sales
-				packet.writeQ(sp.getPrice()); // price
+				writeLong(sp.getStartAmount()); // sales
+				writeLong(sp.getPrice()); // price
 			}
 			else
 			{
-				packet.writeQ(0);
-				packet.writeQ(0);
+				writeLong(0);
+				writeLong(0);
 			}
 			// Next period
 			if (_next.containsKey(s.getSeedId()))
 			{
 				final SeedProduction sp = _next.get(s.getSeedId());
-				packet.writeQ(sp.getStartAmount()); // sales
-				packet.writeQ(sp.getPrice()); // price
+				writeLong(sp.getStartAmount()); // sales
+				writeLong(sp.getPrice()); // price
 			}
 			else
 			{
-				packet.writeQ(0);
-				packet.writeQ(0);
+				writeLong(0);
+				writeLong(0);
 			}
 		}
 		_current.clear();
 		_next.clear();
-		return true;
 	}
 }

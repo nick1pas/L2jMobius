@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.worldexchange;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class WorldExchangeSettleRecvResult implements IClientOutgoingPacket
+public class WorldExchangeSettleRecvResult extends ServerPacket
 {
 	public static final WorldExchangeSettleRecvResult FAIL = new WorldExchangeSettleRecvResult(-1, -1L, (byte) 0);
 	
@@ -39,12 +38,11 @@ public class WorldExchangeSettleRecvResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_WORLD_EXCHANGE_SETTLE_RECV_RESULT.writeId(packet);
-		packet.writeD(_itemObjectId);
-		packet.writeQ(_itemAmount);
-		packet.writeC(_type);
-		return true;
+		ServerPackets.EX_WORLD_EXCHANGE_SETTLE_RECV_RESULT.writeId(this);
+		writeInt(_itemObjectId);
+		writeLong(_itemAmount);
+		writeByte(_type);
 	}
 }

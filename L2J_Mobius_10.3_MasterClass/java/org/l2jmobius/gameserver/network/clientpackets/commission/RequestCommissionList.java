@@ -18,7 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets.commission;
 
 import java.util.function.Predicate;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ItemCommissionManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.commission.CommissionItemType;
@@ -26,13 +26,13 @@ import org.l2jmobius.gameserver.model.commission.CommissionTreeType;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.type.CrystalType;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExCloseCommission;
 
 /**
  * @author NosBit
  */
-public class RequestCommissionList implements IClientIncomingPacket
+public class RequestCommissionList implements ClientPacket
 {
 	private int _treeViewDepth;
 	private int _itemType;
@@ -41,14 +41,13 @@ public class RequestCommissionList implements IClientIncomingPacket
 	private String _query;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_treeViewDepth = packet.readD();
-		_itemType = packet.readD();
-		_type = packet.readD();
-		_grade = packet.readD();
-		_query = packet.readS();
-		return true;
+		_treeViewDepth = packet.readInt();
+		_itemType = packet.readInt();
+		_type = packet.readInt();
+		_grade = packet.readInt();
+		_query = packet.readString();
 	}
 	
 	@Override

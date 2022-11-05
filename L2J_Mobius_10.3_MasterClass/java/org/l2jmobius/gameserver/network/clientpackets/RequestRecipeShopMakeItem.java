@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
@@ -38,7 +38,7 @@ import org.l2jmobius.gameserver.util.Util;
  * from your own recipe list crafting are skipped. With the exception of trading, if you request trade, it is cancelled, if you are already trading, you get message.
  * @author Nik
  */
-public class RequestRecipeShopMakeItem implements IClientIncomingPacket
+public class RequestRecipeShopMakeItem implements ClientPacket
 {
 	private int _objectId;
 	private int _recipeId;
@@ -46,24 +46,23 @@ public class RequestRecipeShopMakeItem implements IClientIncomingPacket
 	private ItemHolder[] _offeredItems;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_recipeId = packet.readD();
-		_manufacturePrice = packet.readQ();
+		_objectId = packet.readInt();
+		_recipeId = packet.readInt();
+		_manufacturePrice = packet.readLong();
 		
-		final int offeringsCount = packet.readD();
+		final int offeringsCount = packet.readInt();
 		if (offeringsCount > 0)
 		{
 			_offeredItems = new ItemHolder[offeringsCount];
 			for (int i = 0; i < offeringsCount; i++)
 			{
-				final int objectId = packet.readD();
-				final long count = packet.readQ();
+				final int objectId = packet.readInt();
+				final long count = packet.readLong();
 				_offeredItems[i] = new ItemHolder(objectId, count);
 			}
 		}
-		return true;
 	}
 	
 	@Override

@@ -20,20 +20,19 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.interfaces.IPositionable;
 import org.l2jmobius.gameserver.model.skill.SkillCastingType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * MagicSkillUse server packet implementation.
  * @author UnAfraid, NosBit
  */
-public class MagicSkillUse implements IClientOutgoingPacket
+public class MagicSkillUse extends ServerPacket
 {
 	private final int _skillId;
 	private final int _skillLevel;
@@ -49,6 +48,7 @@ public class MagicSkillUse implements IClientOutgoingPacket
 	
 	public MagicSkillUse(Creature creature, WorldObject target, int skillId, int skillLevel, int hitTime, int reuseDelay, int reuseGroup, int actionId, SkillCastingType castingType)
 	{
+		super(75);
 		_creature = creature;
 		_target = target;
 		_skillId = skillId;
@@ -81,38 +81,37 @@ public class MagicSkillUse implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.MAGIC_SKILL_USE.writeId(packet);
-		packet.writeD(_castingType.getClientBarId()); // Casting bar type: 0 - default, 1 - default up, 2 - blue, 3 - green, 4 - red.
-		packet.writeD(_creature.getObjectId());
-		packet.writeD(_target.getObjectId());
-		packet.writeD(_skillId);
-		packet.writeD(_skillLevel);
-		packet.writeD(_hitTime);
-		packet.writeD(_reuseGroup);
-		packet.writeD(_reuseDelay);
-		packet.writeD(_creature.getX());
-		packet.writeD(_creature.getY());
-		packet.writeD(_creature.getZ());
-		packet.writeH(_unknown.size()); // TODO: Implement me!
+		ServerPackets.MAGIC_SKILL_USE.writeId(this);
+		writeInt(_castingType.getClientBarId()); // Casting bar type: 0 - default, 1 - default up, 2 - blue, 3 - green, 4 - red.
+		writeInt(_creature.getObjectId());
+		writeInt(_target.getObjectId());
+		writeInt(_skillId);
+		writeInt(_skillLevel);
+		writeInt(_hitTime);
+		writeInt(_reuseGroup);
+		writeInt(_reuseDelay);
+		writeInt(_creature.getX());
+		writeInt(_creature.getY());
+		writeInt(_creature.getZ());
+		writeShort(_unknown.size()); // TODO: Implement me!
 		for (int unknown : _unknown)
 		{
-			packet.writeH(unknown);
+			writeShort(unknown);
 		}
-		packet.writeH(_groundLocations.size());
+		writeShort(_groundLocations.size());
 		for (IPositionable target : _groundLocations)
 		{
-			packet.writeD(target.getX());
-			packet.writeD(target.getY());
-			packet.writeD(target.getZ());
+			writeInt(target.getX());
+			writeInt(target.getY());
+			writeInt(target.getZ());
 		}
-		packet.writeD(_target.getX());
-		packet.writeD(_target.getY());
-		packet.writeD(_target.getZ());
-		packet.writeD(_actionId >= 0 ? 1 : 0); // 1 when ID from RequestActionUse is used
-		packet.writeD(_actionId >= 0 ? _actionId : 0); // ID from RequestActionUse. Used to set cooldown on summon skills.
-		packet.writeD(-1); // 306
-		return true;
+		writeInt(_target.getX());
+		writeInt(_target.getY());
+		writeInt(_target.getZ());
+		writeInt(_actionId >= 0); // 1 when ID from RequestActionUse is used
+		writeInt(_actionId >= 0 ? _actionId : 0); // ID from RequestActionUse. Used to set cooldown on summon skills.
+		writeInt(-1); // 306
 	}
 }

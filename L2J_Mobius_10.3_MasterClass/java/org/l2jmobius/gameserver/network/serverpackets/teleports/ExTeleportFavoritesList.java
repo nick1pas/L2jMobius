@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExTeleportFavoritesList implements IClientOutgoingPacket
+public class ExTeleportFavoritesList extends ServerPacket
 {
 	private final List<Integer> _teleports;
 	private final boolean _enable;
@@ -39,15 +38,14 @@ public class ExTeleportFavoritesList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TELEPORT_FAVORITES_LIST.writeId(packet);
-		packet.writeC(_enable ? 1 : 0);
-		packet.writeD(_teleports.size());
+		ServerPackets.EX_TELEPORT_FAVORITES_LIST.writeId(this);
+		writeByte(_enable);
+		writeInt(_teleports.size());
 		for (int id : _teleports)
 		{
-			packet.writeD(id);
+			writeInt(id);
 		}
-		return true;
 	}
 }

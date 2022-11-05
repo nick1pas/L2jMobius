@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.olympiad;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExOlympiadMatchInfo implements IClientOutgoingPacket
+public class ExOlympiadMatchInfo extends ServerPacket
 {
 	private final String _name1;
 	private final String _name2;
@@ -43,15 +42,14 @@ public class ExOlympiadMatchInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_MATCH_INFO.writeId(packet);
-		packet.writeS(String.format("%1$-" + 23 + "s", _name2));
-		packet.writeD(_wins2);
-		packet.writeS(String.format("%1$-" + 23 + "s", _name1));
-		packet.writeD(_wins1);
-		packet.writeD(_round);
-		packet.writeD(_time); // Seconds
-		return true;
+		ServerPackets.EX_OLYMPIAD_MATCH_INFO.writeId(this);
+		writeString(String.format("%1$-" + 23 + "s", _name2));
+		writeInt(_wins2);
+		writeString(String.format("%1$-" + 23 + "s", _name1));
+		writeInt(_wins1);
+		writeInt(_round);
+		writeInt(_time); // Seconds
 	}
 }

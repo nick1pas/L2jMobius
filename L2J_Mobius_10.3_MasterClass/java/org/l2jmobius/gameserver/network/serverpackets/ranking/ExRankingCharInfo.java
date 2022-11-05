@@ -18,36 +18,32 @@ package org.l2jmobius.gameserver.network.serverpackets.ranking;
 
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author NviX
  */
-public class ExRankingCharInfo implements IClientOutgoingPacket
+public class ExRankingCharInfo extends ServerPacket
 {
-	@SuppressWarnings("unused")
-	private final short _unk;
 	private final Player _player;
 	private final Map<Integer, StatSet> _playerList;
 	private final Map<Integer, StatSet> _snapshotList;
 	
-	public ExRankingCharInfo(Player player, short unk)
+	public ExRankingCharInfo(Player player)
 	{
-		_unk = unk;
 		_player = player;
 		_playerList = RankManager.getInstance().getRankList();
 		_snapshotList = RankManager.getInstance().getSnapshotList();
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RANKING_CHAR_INFO.writeId(packet);
+		ServerPackets.EX_RANKING_CHAR_INFO.writeId(this);
 		if (!_playerList.isEmpty())
 		{
 			for (Integer id : _playerList.keySet())
@@ -55,41 +51,41 @@ public class ExRankingCharInfo implements IClientOutgoingPacket
 				final StatSet player = _playerList.get(id);
 				if (player.getInt("charId") == _player.getObjectId())
 				{
-					packet.writeD(id); // server rank
-					packet.writeD(player.getInt("raceRank")); // race rank
-					packet.writeD(player.getInt("classRank")); // class rank
+					writeInt(id); // server rank
+					writeInt(player.getInt("raceRank")); // race rank
+					writeInt(player.getInt("classRank")); // class rank
 					for (Integer id2 : _snapshotList.keySet())
 					{
 						final StatSet snapshot = _snapshotList.get(id2);
 						if (player.getInt("charId") == snapshot.getInt("charId"))
 						{
-							packet.writeD(id2); // server rank snapshot
-							packet.writeD(snapshot.getInt("classRank")); // class rank snapshot
-							packet.writeD(player.getInt("classRank")); // class rank snapshot
-							packet.writeD(0);
-							packet.writeD(0);
-							packet.writeD(0);
-							return true;
+							writeInt(id2); // server rank snapshot
+							writeInt(snapshot.getInt("classRank")); // class rank snapshot
+							writeInt(player.getInt("classRank")); // class rank snapshot
+							writeInt(0);
+							writeInt(0);
+							writeInt(0);
+							return;
 						}
 					}
 				}
 			}
-			packet.writeD(0); // server rank
-			packet.writeD(0); // race rank
-			packet.writeD(0); // server rank snapshot
-			packet.writeD(0); // race rank snapshot
-			packet.writeD(0); // nClassRank
-			packet.writeD(0); // nClassRank_Snapshot snapshot
+			
+			writeInt(0); // server rank
+			writeInt(0); // race rank
+			writeInt(0); // server rank snapshot
+			writeInt(0); // race rank snapshot
+			writeInt(0); // nClassRank
+			writeInt(0); // nClassRank_Snapshot snapshot
 		}
 		else
 		{
-			packet.writeD(0); // server rank
-			packet.writeD(0); // race rank
-			packet.writeD(0); // server rank snapshot
-			packet.writeD(0); // race rank snapshot
-			packet.writeD(0); // nClassRank
-			packet.writeD(0); // nClassRank_Snapshot snapshot
+			writeInt(0); // server rank
+			writeInt(0); // race rank
+			writeInt(0); // server rank snapshot
+			writeInt(0); // race rank snapshot
+			writeInt(0); // nClassRank
+			writeInt(0); // nClassRank_Snapshot snapshot
 		}
-		return true;
 	}
 }

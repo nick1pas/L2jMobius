@@ -16,20 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Manax
  */
-public class ExShowHomunculusCouponUi implements IClientOutgoingPacket
+public class ExShowHomunculusCouponUi extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_HOMUNCULUS_COUPON_UI.writeId(packet);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_SHOW_HOMUNCULUS_COUPON_UI.writeId(this);
+		writeInt(0);
 	}
 }

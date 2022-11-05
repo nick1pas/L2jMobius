@@ -19,28 +19,27 @@ package org.l2jmobius.gameserver.network.clientpackets.teleports;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.TeleportListData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Mobius
  */
-public class ExRequestTeleportFavoritesAddDel implements IClientIncomingPacket
+public class ExRequestTeleportFavoritesAddDel implements ClientPacket
 {
 	private boolean _enable;
 	private int _teleportId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_enable = packet.readC() == 1;
-		_teleportId = packet.readD();
-		return true;
+		_enable = packet.readByte() == 1;
+		_teleportId = packet.readInt();
 	}
 	
 	@Override

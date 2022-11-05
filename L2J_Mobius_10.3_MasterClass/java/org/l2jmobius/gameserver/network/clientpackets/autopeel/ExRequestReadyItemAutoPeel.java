@@ -16,26 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.autopeel;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.AutoPeelRequest;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.autopeel.ExReadyItemAutoPeel;
 
 /**
  * @author Mobius
  */
-public class ExRequestReadyItemAutoPeel implements IClientIncomingPacket
+public class ExRequestReadyItemAutoPeel implements ClientPacket
 {
 	private int _itemObjectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjectId = packet.readD();
-		return true;
+		_itemObjectId = packet.readInt();
 	}
 	
 	@Override

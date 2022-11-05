@@ -19,33 +19,31 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class PvpBookList implements IClientOutgoingPacket
+public class PvpBookList extends ServerPacket
 {
 	public PvpBookList()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PVPBOOK_LIST.writeId(packet);
+		ServerPackets.EX_PVPBOOK_LIST.writeId(this);
 		final int size = 1;
-		packet.writeD(4); // show killer's location count
-		packet.writeD(5); // teleport count
-		packet.writeD(size); // killer count
+		writeInt(4); // show killer's location count
+		writeInt(5); // teleport count
+		writeInt(size); // killer count
 		for (int i = 0; i < size; i++)
 		{
-			packet.writeString("killer" + i); // killer name
-			packet.writeString("clanKiller" + i); // killer clan name
-			packet.writeD(15); // killer level
-			packet.writeD(2); // killer race
-			packet.writeD(10); // killer class
-			packet.writeD((int) LocalDateTime.now().atZone(ZoneId.systemDefault()).toEpochSecond()); // kill time
-			packet.writeC(1); // is online
+			writeSizedString("killer" + i); // killer name
+			writeSizedString("clanKiller" + i); // killer clan name
+			writeInt(15); // killer level
+			writeInt(2); // killer race
+			writeInt(10); // killer class
+			writeInt((int) LocalDateTime.now().atZone(ZoneId.systemDefault()).toEpochSecond()); // kill time
+			writeByte(1); // is online
 		}
-		return true;
 	}
 }

@@ -16,10 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.huntpass;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassInfo;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSayhasSupportInfo;
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInfo;
@@ -27,15 +27,14 @@ import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInf
 /**
  * @author Serenitty
  */
-public class RequestHuntPassRewardAll implements IClientIncomingPacket
+public class RequestHuntPassRewardAll implements ClientPacket
 {
 	private int _huntPassType;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_huntPassType = packet.readC();
-		return true;
+		_huntPassType = packet.readByte();
 	}
 	
 	@Override

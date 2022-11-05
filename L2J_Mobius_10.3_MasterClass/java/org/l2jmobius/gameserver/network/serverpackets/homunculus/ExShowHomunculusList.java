@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.homunculus.Homunculus;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExShowHomunculusList implements IClientOutgoingPacket
+public class ExShowHomunculusList extends ServerPacket
 {
 	private final Player _player;
 	
@@ -35,66 +34,64 @@ public class ExShowHomunculusList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_HOMUNCULUS_LIST.writeId(packet);
+		ServerPackets.EX_SHOW_HOMUNCULUS_LIST.writeId(this);
 		int counter = 0;
 		final int slotCount = _player.getAvailableHomunculusSlotCount();
-		packet.writeD(slotCount);
+		writeInt(slotCount);
 		for (int i = 0; i <= slotCount; i++)
 		{
 			if (_player.getHomunculusList().get(i) != null)
 			{
 				final Homunculus homunculus = _player.getHomunculusList().get(i);
-				packet.writeD(counter); // slot
-				packet.writeD(homunculus.getId()); // homunculus id
-				packet.writeD(homunculus.getType());
-				packet.writeC(homunculus.isActive() ? 1 : 0);
-				packet.writeD(homunculus.getTemplate().getBasicSkillId());
-				packet.writeD(homunculus.getSkillLevel1() > 0 ? homunculus.getTemplate().getSkillId1() : 0);
-				packet.writeD(homunculus.getSkillLevel2() > 0 ? homunculus.getTemplate().getSkillId2() : 0);
-				packet.writeD(homunculus.getSkillLevel3() > 0 ? homunculus.getTemplate().getSkillId3() : 0);
-				packet.writeD(homunculus.getSkillLevel4() > 0 ? homunculus.getTemplate().getSkillId4() : 0);
-				packet.writeD(homunculus.getSkillLevel5() > 0 ? homunculus.getTemplate().getSkillId5() : 0);
-				packet.writeD(homunculus.getTemplate().getBasicSkillLevel());
-				packet.writeD(homunculus.getSkillLevel1());
-				packet.writeD(homunculus.getSkillLevel2());
-				packet.writeD(homunculus.getSkillLevel3());
-				packet.writeD(homunculus.getSkillLevel4());
-				packet.writeD(homunculus.getSkillLevel5());
-				packet.writeD(homunculus.getLevel());
-				packet.writeD(homunculus.getExp());
-				packet.writeD(homunculus.getHp());
-				packet.writeD(homunculus.getAtk());
-				packet.writeD(homunculus.getDef());
-				packet.writeD(homunculus.getCritRate());
+				writeInt(counter); // slot
+				writeInt(homunculus.getId()); // homunculus id
+				writeInt(homunculus.getType());
+				writeByte(homunculus.isActive());
+				writeInt(homunculus.getTemplate().getBasicSkillId());
+				writeInt(homunculus.getSkillLevel1() > 0 ? homunculus.getTemplate().getSkillId1() : 0);
+				writeInt(homunculus.getSkillLevel2() > 0 ? homunculus.getTemplate().getSkillId2() : 0);
+				writeInt(homunculus.getSkillLevel3() > 0 ? homunculus.getTemplate().getSkillId3() : 0);
+				writeInt(homunculus.getSkillLevel4() > 0 ? homunculus.getTemplate().getSkillId4() : 0);
+				writeInt(homunculus.getSkillLevel5() > 0 ? homunculus.getTemplate().getSkillId5() : 0);
+				writeInt(homunculus.getTemplate().getBasicSkillLevel());
+				writeInt(homunculus.getSkillLevel1());
+				writeInt(homunculus.getSkillLevel2());
+				writeInt(homunculus.getSkillLevel3());
+				writeInt(homunculus.getSkillLevel4());
+				writeInt(homunculus.getSkillLevel5());
+				writeInt(homunculus.getLevel());
+				writeInt(homunculus.getExp());
+				writeInt(homunculus.getHp());
+				writeInt(homunculus.getAtk());
+				writeInt(homunculus.getDef());
+				writeInt(homunculus.getCritRate());
 			}
 			else
 			{
-				packet.writeD(counter); // slot
-				packet.writeD(0); // homunculus id
-				packet.writeD(0);
-				packet.writeC(0);
-				packet.writeD(0);
+				writeInt(counter); // slot
+				writeInt(0); // homunculus id
+				writeInt(0);
+				writeByte(0);
+				writeInt(0);
 				for (int j = 1; j <= 5; j++)
 				{
-					packet.writeD(0);
+					writeInt(0);
 				}
-				packet.writeD(0);
+				writeInt(0);
 				for (int j = 1; j <= 5; j++)
 				{
-					packet.writeD(0);
+					writeInt(0);
 				}
-				packet.writeD(0); // Level
-				packet.writeD(0); // HP
-				packet.writeD(0); // HP
-				packet.writeD(0); // Attack
-				packet.writeD(0); // Defence
-				packet.writeD(0); // Critical
+				writeInt(0); // Level
+				writeInt(0); // HP
+				writeInt(0); // HP
+				writeInt(0); // Attack
+				writeInt(0); // Defence
+				writeInt(0); // Critical
 			}
 			counter++;
 		}
-		
-		return true;
 	}
 }

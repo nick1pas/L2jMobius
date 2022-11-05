@@ -19,30 +19,29 @@ package org.l2jmobius.gameserver.network.clientpackets.herobook;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.herobook.HeroBookManager;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.herobook.ExHeroBookCharge;
 import org.l2jmobius.gameserver.network.serverpackets.herobook.ExHeroBookInfo;
 
 /**
  * @author Index
  */
-public class RequestHeroBookCharge implements IClientIncomingPacket
+public class RequestHeroBookCharge implements ClientPacket
 {
 	private final Map<Integer, Long> _items = new HashMap<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int size = packet.readD();
+		final int size = packet.readInt();
 		for (int curr = 0; curr < size; curr++)
 		{
-			_items.put(packet.readD(), packet.readQ());
+			_items.put(packet.readInt(), packet.readLong());
 		}
-		return true;
 	}
 	
 	@Override
@@ -53,6 +52,7 @@ public class RequestHeroBookCharge implements IClientIncomingPacket
 		{
 			return;
 		}
+		
 		final boolean isSuccess = new HeroBookManager().tryEnchant(player, _items);
 		player.sendPacket(new ExHeroBookCharge(isSuccess));
 		player.sendPacket(new ExHeroBookInfo(player.getHeroBookProgress()));

@@ -17,15 +17,14 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid, Mobius
  */
-public class ExAlterSkillRequest implements IClientOutgoingPacket
+public class ExAlterSkillRequest extends ServerPacket
 {
 	private final int _currentSkillId;
 	private final int _nextSkillId;
@@ -41,16 +40,16 @@ public class ExAlterSkillRequest implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (!Config.ENABLE_ALTER_SKILLS)
 		{
-			return true;
+			return;
 		}
-		OutgoingPackets.EX_ALTER_SKILL_REQUEST.writeId(packet);
-		packet.writeD(_nextSkillId);
-		packet.writeD(_currentSkillId);
-		packet.writeD(_alterTime);
+		ServerPackets.EX_ALTER_SKILL_REQUEST.writeId(this);
+		writeInt(_nextSkillId);
+		writeInt(_currentSkillId);
+		writeInt(_alterTime);
 		if (_alterTime > 0)
 		{
 			_player.setAlterSkillActive(true);
@@ -60,6 +59,5 @@ public class ExAlterSkillRequest implements IClientOutgoingPacket
 				_player.setAlterSkillActive(false);
 			}, _alterTime * 1000);
 		}
-		return true;
 	}
 }

@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExHomunculusHPSPVP implements IClientOutgoingPacket
+public class ExHomunculusHPSPVP extends ServerPacket
 {
 	private final int _hp;
 	private final long _sp;
@@ -38,12 +37,11 @@ public class ExHomunculusHPSPVP implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_HPSPVP.writeId(packet);
-		packet.writeD(_hp);
-		packet.writeQ(_sp);
-		packet.writeD(_vp);
-		return true;
+		ServerPackets.EX_HOMUNCULUS_HPSPVP.writeId(this);
+		writeInt(_hp);
+		writeLong(_sp);
+		writeInt(_vp);
 	}
 }

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.HomunculusCreationData;
 import org.l2jmobius.gameserver.data.xml.HomunculusData;
@@ -28,7 +28,7 @@ import org.l2jmobius.gameserver.model.homunculus.HomunculusTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusBirthInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusList;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExSummonHomunculusCouponResult;
@@ -36,15 +36,14 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExSummonHomuncu
 /**
  * @author NasSeKa, Manax
  */
-public class RequestExSummonHomunculusCouponResult implements IClientIncomingPacket
+public class RequestExSummonHomunculusCouponResult implements ClientPacket
 {
 	private int _itemId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemId = packet.readD();
-		return true;
+		_itemId = packet.readInt();
 	}
 	
 	@Override
