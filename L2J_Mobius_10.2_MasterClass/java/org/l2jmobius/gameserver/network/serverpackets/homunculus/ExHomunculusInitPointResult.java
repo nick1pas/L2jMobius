@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author nexvill
  */
-public class ExHomunculusInitPointResult implements IClientOutgoingPacket
+public class ExHomunculusInitPointResult extends ServerPacket
 {
 	private final boolean _success;
 	private final int _type;
@@ -36,21 +35,20 @@ public class ExHomunculusInitPointResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_INIT_POINT_RESULT.writeId(packet);
+		ServerPackets.EX_HOMUNCULUS_INIT_POINT_RESULT.writeId(this);
 		if (_success)
 		{
-			packet.writeD(1); // success
-			packet.writeD(_type); // init type
-			packet.writeD(SystemMessageId.THE_RECEIVED_UPGRADE_POINTS_ARE_RESET.getId());
+			writeInt(1); // success
+			writeInt(_type); // init type
+			writeInt(SystemMessageId.THE_RECEIVED_UPGRADE_POINTS_ARE_RESET.getId());
 		}
 		else
 		{
-			packet.writeD(0);
-			packet.writeD(_type);
-			packet.writeD(SystemMessageId.NOT_ENOUGH_ITEMS_FOR_RESETTING.getId());
+			writeInt(0);
+			writeInt(_type);
+			writeInt(SystemMessageId.NOT_ENOUGH_ITEMS_FOR_RESETTING.getId());
 		}
-		return true;
 	}
 }

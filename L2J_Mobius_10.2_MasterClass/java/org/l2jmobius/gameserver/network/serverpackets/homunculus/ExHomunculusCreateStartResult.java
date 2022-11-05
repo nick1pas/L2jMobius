@@ -16,27 +16,25 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExHomunculusCreateStartResult implements IClientOutgoingPacket
+public class ExHomunculusCreateStartResult extends ServerPacket
 {
 	public ExHomunculusCreateStartResult(Player player)
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_CREATE_START_RESULT.writeId(packet);
-		packet.writeD(1); // 1 - success
-		packet.writeD(SystemMessageId.YOU_VE_SEALED_A_HOMUNCULUS_HEART_IN_ORDER_TO_CREATE_IT_YOUR_BLOOD_SPIRIT_AND_TEARS_ARE_REQUIRED.getId());
-		return true;
+		ServerPackets.EX_HOMUNCULUS_CREATE_START_RESULT.writeId(this);
+		writeInt(1); // 1 - success
+		writeInt(SystemMessageId.YOU_VE_SEALED_A_HOMUNCULUS_HEART_IN_ORDER_TO_CREATE_IT_YOUR_BLOOD_SPIRIT_AND_TEARS_ARE_REQUIRED.getId());
 	}
 }

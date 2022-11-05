@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.TimedHuntingZoneData;
 import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
@@ -28,21 +28,20 @@ import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.huntingzones.TimedHuntingZoneEnter;
 
 /**
  * @author Mobius
  */
-public class ExTimedHuntingZoneEnter implements IClientIncomingPacket
+public class ExTimedHuntingZoneEnter implements ClientPacket
 {
 	private int _zoneId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_zoneId = packet.readD();
-		return true;
+		_zoneId = packet.readInt();
 	}
 	
 	@Override

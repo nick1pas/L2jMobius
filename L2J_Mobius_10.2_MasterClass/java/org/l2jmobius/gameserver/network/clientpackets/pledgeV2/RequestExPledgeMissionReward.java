@@ -18,27 +18,26 @@ package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionInfo;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
 
 /**
  * @author Mobius
  */
-public class RequestExPledgeMissionReward implements IClientIncomingPacket
+public class RequestExPledgeMissionReward implements ClientPacket
 {
 	private int _id;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = packet.readD();
-		return true;
+		_id = packet.readInt();
 	}
 	
 	@Override

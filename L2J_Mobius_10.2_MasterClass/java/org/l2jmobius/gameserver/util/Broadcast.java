@@ -30,8 +30,8 @@ import org.l2jmobius.gameserver.model.zone.ZoneType;
 import org.l2jmobius.gameserver.network.serverpackets.CharInfo;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.RelationChanged;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @version $Revision: 1.2 $ $Date: 2004/06/27 08:12:59 $
@@ -49,15 +49,15 @@ public class Broadcast
 	 * In order to inform other players of state modification on the Creature, server just need to go through _knownPlayers to send Server->Client Packet<br>
 	 * <font color=#FF0000><b><u>Caution</u>: This method DOESN'T SEND Server->Client packet to this Creature (to do this use method toSelfAndKnownPlayers)</b></font>
 	 * @param creature
-	 * @param mov
+	 * @param packet
 	 */
-	public static void toPlayersTargettingMyself(Creature creature, IClientOutgoingPacket mov)
+	public static void toPlayersTargettingMyself(Creature creature, ServerPacket packet)
 	{
 		World.getInstance().forEachVisibleObject(creature, Player.class, player ->
 		{
 			if (player.getTarget() == creature)
 			{
-				player.sendPacket(mov);
+				player.sendPacket(packet);
 			}
 		});
 	}
@@ -71,16 +71,16 @@ public class Broadcast
 	 * In order to inform other players of state modification on the Creature, server just need to go through _knownPlayers to send Server->Client Packet<br>
 	 * <font color=#FF0000><b><u>Caution</u>: This method DOESN'T SEND Server->Client packet to this Creature (to do this use method toSelfAndKnownPlayers)</b></font>
 	 * @param creature
-	 * @param mov
+	 * @param packet
 	 */
-	public static void toKnownPlayers(Creature creature, IClientOutgoingPacket mov)
+	public static void toKnownPlayers(Creature creature, ServerPacket packet)
 	{
 		World.getInstance().forEachVisibleObject(creature, Player.class, player ->
 		{
 			try
 			{
-				player.sendPacket(mov);
-				if ((mov instanceof CharInfo) && (creature.isPlayer()))
+				player.sendPacket(packet);
+				if ((packet instanceof CharInfo) && (creature.isPlayer()))
 				{
 					final long relation = ((Player) creature).getRelation(player);
 					final boolean isAutoAttackable = creature.isAutoAttackable(player);
@@ -125,7 +125,7 @@ public class Broadcast
 	 * @param packet
 	 * @param radiusValue
 	 */
-	public static void toKnownPlayersInRadius(Creature creature, IClientOutgoingPacket packet, int radiusValue)
+	public static void toKnownPlayersInRadius(Creature creature, ServerPacket packet, int radiusValue)
 	{
 		int radius = radiusValue;
 		if (radius < 0)
@@ -144,20 +144,20 @@ public class Broadcast
 	 * Player in the detection area of the Creature are identified in <b>_knownPlayers</b>.<br>
 	 * In order to inform other players of state modification on the Creature, server just need to go through _knownPlayers to send Server->Client Packet
 	 * @param creature
-	 * @param mov
+	 * @param packet
 	 */
-	public static void toSelfAndKnownPlayers(Creature creature, IClientOutgoingPacket mov)
+	public static void toSelfAndKnownPlayers(Creature creature, ServerPacket packet)
 	{
 		if (creature.isPlayer())
 		{
-			creature.sendPacket(mov);
+			creature.sendPacket(packet);
 		}
 		
-		toKnownPlayers(creature, mov);
+		toKnownPlayers(creature, packet);
 	}
 	
 	// To improve performance we are comparing values of radius^2 instead of calculating sqrt all the time
-	public static void toSelfAndKnownPlayersInRadius(Creature creature, IClientOutgoingPacket packet, int radiusValue)
+	public static void toSelfAndKnownPlayersInRadius(Creature creature, ServerPacket packet, int radiusValue)
 	{
 		int radius = radiusValue;
 		if (radius < 0)
@@ -182,7 +182,7 @@ public class Broadcast
 	 * <font color=#FF0000><b><u>Caution</u>: This method DOESN'T SEND Server->Client packet to this Creature (to do this use method toSelfAndKnownPlayers)</b></font>
 	 * @param packet
 	 */
-	public static void toAllOnlinePlayers(IClientOutgoingPacket packet)
+	public static void toAllOnlinePlayers(ServerPacket packet)
 	{
 		for (Player player : World.getInstance().getPlayers())
 		{
@@ -214,7 +214,7 @@ public class Broadcast
 	 * @param zoneType : The zone type to send packets.
 	 * @param packets : The packets to send.
 	 */
-	public static <T extends ZoneType> void toAllPlayersInZoneType(Class<T> zoneType, IClientOutgoingPacket... packets)
+	public static <T extends ZoneType> void toAllPlayersInZoneType(Class<T> zoneType, ServerPacket... packets)
 	{
 		for (ZoneType zone : ZoneManager.getInstance().getAllZones(zoneType))
 		{
@@ -225,7 +225,7 @@ public class Broadcast
 					continue;
 				}
 				
-				for (IClientOutgoingPacket packet : packets)
+				for (ServerPacket packet : packets)
 				{
 					creature.sendPacket(packet);
 				}

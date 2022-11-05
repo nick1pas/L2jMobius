@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
@@ -34,28 +34,27 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author Nik
  */
-public class RequestRecipeItemMakeSelf implements IClientIncomingPacket
+public class RequestRecipeItemMakeSelf implements ClientPacket
 {
 	private int _id;
 	private ItemHolder[] _offeredItems;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_id = packet.readD();
+		_id = packet.readInt();
 		
-		final int offeringsCount = packet.readD();
+		final int offeringsCount = packet.readInt();
 		if (offeringsCount > 0)
 		{
 			_offeredItems = new ItemHolder[offeringsCount];
 			for (int i = 0; i < offeringsCount; i++)
 			{
-				final int objectId = packet.readD();
-				final long count = packet.readQ();
+				final int objectId = packet.readInt();
+				final long count = packet.readLong();
 				_offeredItems[i] = new ItemHolder(objectId, count);
 			}
 		}
-		return true;
 	}
 	
 	@Override

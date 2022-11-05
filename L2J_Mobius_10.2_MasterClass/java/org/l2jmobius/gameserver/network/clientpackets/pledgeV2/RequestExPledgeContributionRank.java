@@ -16,25 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeContributionRank;
 
 /**
  * @author Mobius
  */
-public class RequestExPledgeContributionRank implements IClientIncomingPacket
+public class RequestExPledgeContributionRank implements ClientPacket
 {
 	private int _cycle;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_cycle = packet.readC();
-		return true;
+		_cycle = packet.readByte();
 	}
 	
 	@Override

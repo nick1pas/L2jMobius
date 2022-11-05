@@ -16,10 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusBirthInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusList;
@@ -27,15 +27,14 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculu
 /**
  * @author Mobius
  */
-public class RequestExShowHomunculusInfo implements IClientIncomingPacket
+public class RequestExShowHomunculusInfo implements ClientPacket
 {
 	private int _type; // 0 - create tab, 1 - manage tab, 2 - get upgrade points menu
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readD();
-		return true;
+		_type = packet.readInt();
 	}
 	
 	@Override

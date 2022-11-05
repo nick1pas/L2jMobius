@@ -41,8 +41,8 @@ import org.l2jmobius.gameserver.model.olympiad.OlympiadGameManager;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.taskmanager.DecayTaskManager;
 
@@ -90,25 +90,25 @@ public class Trap extends Npc
 	}
 	
 	@Override
-	public void broadcastPacket(IClientOutgoingPacket mov, boolean includeSelf)
+	public void broadcastPacket(ServerPacket packet, boolean includeSelf)
 	{
 		World.getInstance().forEachVisibleObject(this, Player.class, player ->
 		{
 			if (_isTriggered || canBeSeen(player))
 			{
-				player.sendPacket(mov);
+				player.sendPacket(packet);
 			}
 		});
 	}
 	
 	@Override
-	public void broadcastPacket(IClientOutgoingPacket mov, int radiusInKnownlist)
+	public void broadcastPacket(ServerPacket packet, int radiusInKnownlist)
 	{
 		World.getInstance().forEachVisibleObjectInRange(this, Player.class, radiusInKnownlist, player ->
 		{
 			if (_isTriggered || canBeSeen(player))
 			{
-				player.sendPacket(mov);
+				player.sendPacket(packet);
 			}
 		});
 	}

@@ -18,35 +18,33 @@ package org.l2jmobius.gameserver.network.serverpackets.pk;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPkPenaltyListOnlyLoc implements IClientOutgoingPacket
+public class ExPkPenaltyListOnlyLoc extends ServerPacket
 {
 	public ExPkPenaltyListOnlyLoc()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PK_PENALTY_LIST_ONLY_LOC.writeId(packet);
+		ServerPackets.EX_PK_PENALTY_LIST_ONLY_LOC.writeId(this);
 		final Set<Player> players = World.getInstance().getPkPlayers();
-		packet.writeD(World.getInstance().getLastPkTime());
-		packet.writeD(players.size());
+		writeInt(World.getInstance().getLastPkTime());
+		writeInt(players.size());
 		for (Player player : players)
 		{
-			packet.writeD(player.getObjectId());
-			packet.writeD(player.getX());
-			packet.writeD(player.getY());
-			packet.writeD(player.getZ());
+			writeInt(player.getObjectId());
+			writeInt(player.getX());
+			writeInt(player.getY());
+			writeInt(player.getZ());
 		}
-		return true;
 	}
 }

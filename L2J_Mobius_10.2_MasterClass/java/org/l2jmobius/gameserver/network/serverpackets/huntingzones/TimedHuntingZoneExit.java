@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.huntingzones;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author dontknowdontcare
  */
-public class TimedHuntingZoneExit implements IClientOutgoingPacket
+public class TimedHuntingZoneExit extends ServerPacket
 {
 	private final int _zoneId;
 	
@@ -33,10 +32,9 @@ public class TimedHuntingZoneExit implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TIME_RESTRICT_FIELD_USER_EXIT.writeId(packet);
-		packet.writeD(_zoneId);
-		return true;
+		ServerPackets.EX_TIME_RESTRICT_FIELD_USER_EXIT.writeId(this);
+		writeInt(_zoneId);
 	}
 }

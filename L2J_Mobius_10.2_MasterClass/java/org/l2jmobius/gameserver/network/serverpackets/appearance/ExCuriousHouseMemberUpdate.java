@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.appearance;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExCuriousHouseMemberUpdate implements IClientOutgoingPacket
+public class ExCuriousHouseMemberUpdate extends ServerPacket
 {
 	public int _objId;
 	public int _maxHp;
@@ -42,14 +41,13 @@ public class ExCuriousHouseMemberUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CURIOUS_HOUSE_MEMBER_UPDATE.writeId(packet);
-		packet.writeD(_objId);
-		packet.writeD(_maxHp);
-		packet.writeD(_maxCp);
-		packet.writeD(_currentHp);
-		packet.writeD(_currentCp);
-		return true;
+		ServerPackets.EX_CURIOUS_HOUSE_MEMBER_UPDATE.writeId(this);
+		writeInt(_objId);
+		writeInt(_maxHp);
+		writeInt(_maxCp);
+		writeInt(_currentHp);
+		writeInt(_currentCp);
 	}
 }

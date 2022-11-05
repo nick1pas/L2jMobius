@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets.alchemy;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.enums.PlayerCondOverride;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
@@ -36,7 +36,7 @@ import org.l2jmobius.gameserver.network.Disconnection;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.ServerClose;
@@ -46,48 +46,56 @@ import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 /**
  * @author Sdw
  */
-public class RequestAlchemyTryMixCube implements IClientIncomingPacket
+public class RequestAlchemyTryMixCube implements ClientPacket
 {
 	// TODO: Figure out how much stones are given
 	private static final int TEMPEST_STONE_AMOUNT = 1;
 	
-	private final List<ItemHolder> _items = new LinkedList<>();
+	private List<ItemHolder> _items = new LinkedList<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int itemsCount = packet.readD();
+		final int itemsCount = packet.readInt();
 		if ((itemsCount <= 0) || (itemsCount > 4))
 		{
-			return false;
+			return;
 		}
 		
 		int id;
 		long count;
 		for (int i = 0; i < itemsCount; i++)
 		{
-			id = packet.readD();
-			count = packet.readQ();
+			id = packet.readInt();
+			count = packet.readLong();
 			if ((count > 0) && (count < Long.MAX_VALUE))
 			{
 				_items.add(new ItemHolder(id, count));
 			}
 			else // Player used packet injection tool.
 			{
-				final Player player = client.getPlayer();
-				PacketLogger.warning("Kicked " + player + " for using packet injection tool with " + getClass().getSimpleName());
-				Disconnection.of(player).defaultSequence(ServerClose.STATIC_PACKET);
-				return false;
+				_items = null;
 			}
 		}
-		return true;
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
 		final Player player = client.getPlayer();
-		if ((player == null) || (player.getRace() != Race.ERTHEIA))
+		if (player == null)
+		{
+			return;
+		}
+		
+		if (_items == null)
+		{
+			PacketLogger.warning("Kicked " + player + " for using packet injection tool with " + getClass().getSimpleName());
+			Disconnection.of(player).defaultSequence(ServerClose.STATIC_PACKET);
+			return;
+		}
+		
+		if (player.getRace() != Race.ERTHEIA)
 		{
 			return;
 		}

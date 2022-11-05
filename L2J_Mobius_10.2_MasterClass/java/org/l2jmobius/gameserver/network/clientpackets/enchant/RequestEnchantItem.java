@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets.enchant;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.enums.ItemSkillType;
@@ -35,7 +35,7 @@ import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ExItemAnnounce;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
@@ -44,18 +44,17 @@ import org.l2jmobius.gameserver.network.serverpackets.enchant.EnchantResult;
 import org.l2jmobius.gameserver.util.Broadcast;
 import org.l2jmobius.gameserver.util.Util;
 
-public class RequestEnchantItem implements IClientIncomingPacket
+public class RequestEnchantItem implements ClientPacket
 {
 	protected static final Logger LOGGER_ENCHANT = Logger.getLogger("enchant.items");
 	
 	private int _objectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		packet.readC(); // Unknown.
-		return true;
+		_objectId = packet.readInt();
+		packet.readByte(); // Unknown.
 	}
 	
 	@Override

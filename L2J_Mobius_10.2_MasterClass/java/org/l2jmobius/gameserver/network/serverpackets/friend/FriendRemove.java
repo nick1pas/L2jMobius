@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.friend;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class FriendRemove implements IClientOutgoingPacket
+public class FriendRemove extends ServerPacket
 {
 	private final int _responce;
 	private final String _charName;
@@ -35,11 +34,10 @@ public class FriendRemove implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.FRIEND_REMOVE.writeId(packet);
-		packet.writeD(_responce);
-		packet.writeS(_charName);
-		return true;
+		ServerPackets.FRIEND_REMOVE.writeId(this);
+		writeInt(_responce);
+		writeString(_charName);
 	}
 }

@@ -16,25 +16,23 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.variation;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author KenM
  */
-public class ExShowVariationCancelWindow implements IClientOutgoingPacket
+public class ExShowVariationCancelWindow extends ServerPacket
 {
 	public static final ExShowVariationCancelWindow STATIC_PACKET = new ExShowVariationCancelWindow();
-
+	
 	public ExShowVariationCancelWindow()
 	{
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_VARIATION_CANCEL_WINDOW.writeId(packet);
-		return true;
+		ServerPackets.EX_SHOW_VARIATION_CANCEL_WINDOW.writeId(this);
 	}
 }

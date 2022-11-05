@@ -31,7 +31,7 @@ import org.l2jmobius.gameserver.model.actor.instance.Door;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.model.zone.type.OlympiadStadiumZone;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadMatchEnd;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadUserInfo;
 
@@ -109,12 +109,12 @@ public class OlympiadStadium
 		}
 	}
 	
-	public void broadcastPacket(IClientOutgoingPacket packet)
+	public void broadcastPacket(ServerPacket packet)
 	{
 		_instance.broadcastPacket(packet);
 	}
 	
-	public void broadcastPacketToObservers(IClientOutgoingPacket packet)
+	public void broadcastPacketToObservers(ServerPacket packet)
 	{
 		for (Player target : _instance.getPlayers())
 		{

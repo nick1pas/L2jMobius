@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets.ranking;
 import java.util.Map;
 import java.util.Optional;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * Written by Berezkin Nikolay, on 10.05.2021
+ * @author Berezkin Nikolay
  */
-public class ExPvpRankingMyInfo implements IClientOutgoingPacket
+public class ExPvpRankingMyInfo extends ServerPacket
 {
 	private final Player _player;
 	private final Map<Integer, StatSet> _playerList;
@@ -43,9 +42,9 @@ public class ExPvpRankingMyInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PVP_RANKING_MY_INFO.writeId(packet);
+		ServerPackets.EX_PVP_RANKING_MY_INFO.writeId(this);
 		if (!_playerList.isEmpty())
 		{
 			boolean found = false;
@@ -56,30 +55,29 @@ public class ExPvpRankingMyInfo implements IClientOutgoingPacket
 				{
 					final Optional<Map.Entry<Integer, StatSet>> snapshotValue = _snapshotList.entrySet().stream().filter(it -> it.getValue().getInt("charId") == _player.getObjectId()).findFirst();
 					found = true;
-					packet.writeQ(ss.getInt("points")); // pvp points
-					packet.writeD(id); // current rank
-					packet.writeD(snapshotValue.isPresent() ? snapshotValue.get().getKey() : id); // ingame shown change in rank as this value - current rank value.
-					packet.writeD(ss.getInt("kills")); // kills
-					packet.writeD(ss.getInt("deaths")); // deaths
+					writeLong(ss.getInt("points")); // pvp points
+					writeInt(id); // current rank
+					writeInt(snapshotValue.isPresent() ? snapshotValue.get().getKey() : id); // ingame shown change in rank as this value - current rank value.
+					writeInt(ss.getInt("kills")); // kills
+					writeInt(ss.getInt("deaths")); // deaths
 				}
 			}
 			if (!found)
 			{
-				packet.writeQ(0); // pvp points
-				packet.writeD(0); // current rank
-				packet.writeD(0); // ingame shown change in rank as this value - current rank value.
-				packet.writeD(0); // kills
-				packet.writeD(0); // deaths
+				writeLong(0); // pvp points
+				writeInt(0); // current rank
+				writeInt(0); // ingame shown change in rank as this value - current rank value.
+				writeInt(0); // kills
+				writeInt(0); // deaths
 			}
 		}
 		else
 		{
-			packet.writeQ(0); // pvp points
-			packet.writeD(0); // current rank
-			packet.writeD(0); // ingame shown change in rank as this value - current rank value.
-			packet.writeD(0); // kills
-			packet.writeD(0); // deaths
+			writeLong(0); // pvp points
+			writeInt(0); // current rank
+			writeInt(0); // ingame shown change in rank as this value - current rank value.
+			writeInt(0); // kills
+			writeInt(0); // deaths
 		}
-		return true;
 	}
 }

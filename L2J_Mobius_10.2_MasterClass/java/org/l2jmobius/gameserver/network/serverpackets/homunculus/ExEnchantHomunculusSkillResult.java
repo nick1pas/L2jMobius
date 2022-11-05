@@ -16,17 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.homunculus.Homunculus;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author nexvill
  */
-public class ExEnchantHomunculusSkillResult implements IClientOutgoingPacket
+public class ExEnchantHomunculusSkillResult extends ServerPacket
 {
 	private final Player _player;
 	private final int _slot;
@@ -40,9 +39,9 @@ public class ExEnchantHomunculusSkillResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENCHANT_HOMUNCULUS_SKILL_RESULT.writeId(packet);
+		ServerPackets.EX_ENCHANT_HOMUNCULUS_SKILL_RESULT.writeId(this);
 		final int playerNumber = Rnd.get(1, 6);
 		final int homunculusNumber = Rnd.get(1, 6);
 		final int systemNumber = Rnd.get(1, 6);
@@ -86,13 +85,12 @@ public class ExEnchantHomunculusSkillResult implements IClientOutgoingPacket
 		}
 		_player.getHomunculusList().update(homunculus);
 		_player.getHomunculusList().refreshStats(true);
-		packet.writeD(boundLevel); // skill bound level result
-		packet.writeD(homunculus.getId()); // homunculus id? random value on JP
-		packet.writeD(_slot); // slot
-		packet.writeD(_skillNumber); // skill number
-		packet.writeD(playerNumber); // player number
-		packet.writeD(homunculusNumber); // homunculus number
-		packet.writeD(systemNumber); // system number
-		return true;
+		writeInt(boundLevel); // skill bound level result
+		writeInt(homunculus.getId()); // homunculus id? random value on JP
+		writeInt(_slot); // slot
+		writeInt(_skillNumber); // skill number
+		writeInt(playerNumber); // player number
+		writeInt(homunculusNumber); // homunculus number
+		writeInt(systemNumber); // system number
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExPledgeItemBuy implements IClientOutgoingPacket
+public class ExPledgeItemBuy extends ServerPacket
 {
 	final int _result;
 	
@@ -33,10 +32,9 @@ public class ExPledgeItemBuy implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_ITEM_BUY.writeId(packet);
-		packet.writeD(_result); // 0 success, 2 not authorized, 3 trade requirements not met
-		return true;
+		ServerPackets.EX_PLEDGE_ITEM_BUY.writeId(this);
+		writeInt(_result); // 0 success, 2 not authorized, 3 trade requirements not met
 	}
 }

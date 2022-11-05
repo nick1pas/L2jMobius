@@ -18,11 +18,10 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.buylist.Product;
 import org.l2jmobius.gameserver.model.buylist.ProductList;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 public class BuyList extends AbstractItemPacket
 {
@@ -42,22 +41,21 @@ public class BuyList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BUY_SELL_LIST.writeId(packet);
-		packet.writeD(0); // Type BUY
-		packet.writeQ(_money); // current money
-		packet.writeD(_listId);
-		packet.writeD(_inventorySlots);
-		packet.writeH(_list.size());
+		ServerPackets.EX_BUY_SELL_LIST.writeId(this);
+		writeInt(0); // Type BUY
+		writeLong(_money); // current money
+		writeInt(_listId);
+		writeInt(_inventorySlots);
+		writeShort(_list.size());
 		for (Product product : _list)
 		{
 			if ((product.getCount() > 0) || !product.hasLimitedStock())
 			{
-				writeItem(packet, product);
-				packet.writeQ((long) (product.getPrice() * (1.0 + _castleTaxRate + product.getBaseTaxRate())));
+				writeItem(product);
+				writeLong((long) (product.getPrice() * (1.0 + _castleTaxRate + product.getBaseTaxRate())));
 			}
 		}
-		return true;
 	}
 }

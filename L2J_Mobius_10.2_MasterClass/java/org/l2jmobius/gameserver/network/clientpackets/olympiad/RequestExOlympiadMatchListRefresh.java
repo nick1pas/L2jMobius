@@ -16,24 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.olympiad;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.olympiad.ExOlympiadMatchList;
 
 /**
  * Format: (ch)d d: unknown (always 0?)
  * @author mrTJO
  */
-public class RequestExOlympiadMatchListRefresh implements IClientIncomingPacket
+public class RequestExOlympiadMatchListRefresh implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

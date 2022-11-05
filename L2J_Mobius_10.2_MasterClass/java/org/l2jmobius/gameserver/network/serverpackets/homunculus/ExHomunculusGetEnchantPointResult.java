@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author nexvill
  */
-public class ExHomunculusGetEnchantPointResult implements IClientOutgoingPacket
+public class ExHomunculusGetEnchantPointResult extends ServerPacket
 {
 	private final int _enchantType;
 	
@@ -34,21 +33,20 @@ public class ExHomunculusGetEnchantPointResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_GET_ENCHANT_POINT_RESULT.writeId(packet);
+		ServerPackets.EX_HOMUNCULUS_GET_ENCHANT_POINT_RESULT.writeId(this);
 		if (_enchantType != 2)
 		{
-			packet.writeD(1); // success
-			packet.writeD(_enchantType);
-			packet.writeD(SystemMessageId.YOU_VE_OBTAINED_UPGRADE_POINTS.getId());
+			writeInt(1); // success
+			writeInt(_enchantType);
+			writeInt(SystemMessageId.YOU_VE_OBTAINED_UPGRADE_POINTS.getId());
 		}
 		else
 		{
-			packet.writeD(1);
-			packet.writeD(_enchantType);
-			packet.writeD(SystemMessageId.VP_ADDED.getId());
+			writeInt(1);
+			writeInt(_enchantType);
+			writeInt(SystemMessageId.VP_ADDED.getId());
 		}
-		return true;
 	}
 }

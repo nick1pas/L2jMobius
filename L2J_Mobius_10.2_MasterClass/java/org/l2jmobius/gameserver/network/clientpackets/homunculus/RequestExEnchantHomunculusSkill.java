@@ -16,11 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExEnchantHomunculusSkillResult;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusHPSPVP;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculu
 /**
  * @author Mobius
  */
-public class RequestExEnchantHomunculusSkill implements IClientIncomingPacket
+public class RequestExEnchantHomunculusSkill implements ClientPacket
 {
 	private static final int SP_COST = 1000000000;
 	
@@ -37,12 +37,11 @@ public class RequestExEnchantHomunculusSkill implements IClientIncomingPacket
 	private int _skillNumber;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readD();
-		_slot = packet.readD();
-		_skillNumber = packet.readD();
-		return true;
+		packet.readInt();
+		_slot = packet.readInt();
+		_skillNumber = packet.readInt();
 	}
 	
 	@Override

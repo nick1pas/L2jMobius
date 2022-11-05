@@ -17,14 +17,13 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExWorldChatCnt implements IClientOutgoingPacket
+public class ExWorldChatCnt extends ServerPacket
 {
 	private final int _points;
 	
@@ -34,10 +33,9 @@ public class ExWorldChatCnt implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_WORLD_CHAT_CNT.writeId(packet);
-		packet.writeD(_points);
-		return true;
+		ServerPackets.EX_WORLD_CHAT_CNT.writeId(this);
+		writeInt(_points);
 	}
 }

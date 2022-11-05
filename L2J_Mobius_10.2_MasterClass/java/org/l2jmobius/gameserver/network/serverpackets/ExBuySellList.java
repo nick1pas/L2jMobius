@@ -21,15 +21,14 @@ import java.util.Collection;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.buylist.Product;
 import org.l2jmobius.gameserver.model.buylist.ProductList;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author ShanSoft, Index
@@ -110,102 +109,102 @@ public class ExBuySellList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BUY_SELL_LIST.writeId(packet);
-		packet.writeD(_type);
+		ServerPackets.EX_BUY_SELL_LIST.writeId(this);
+		writeInt(_type);
 		switch (_type)
 		{
 			case BUY_SELL_LIST_BUY:
 			{
-				return sendBuyList(packet);
+				sendBuyList();
+				break;
 			}
 			case BUY_SELL_LIST_SELL:
 			{
-				return sendSellList(packet);
+				sendSellList();
+				break;
 			}
 			case BUY_SELL_LIST_UNK:
 			{
-				return sendUnk(packet);
+				sendUnk();
+				break;
 			}
 			case BUY_SELL_LIST_TAX:
 			{
-				return sendCurrentTax(packet);
+				sendCurrentTax();
+				break;
 			}
 			default:
 			{
 				PacketLogger.warning(getClass().getSimpleName() + ": unknown type " + _type);
-				return false;
+				break;
 			}
 		}
 	}
 	
-	private boolean sendBuyList(PacketWriter packet)
+	private void sendBuyList()
 	{
-		packet.writeQ(_money); // current money
-		packet.writeD(_listId);
-		packet.writeD(_inventorySlots);
-		packet.writeH(_list.size());
+		writeLong(_money); // current money
+		writeInt(_listId);
+		writeInt(_inventorySlots);
+		writeShort(_list.size());
 		for (Product product : _list)
 		{
 			if ((product.getCount() > 0) || !product.hasLimitedStock())
 			{
-				writeItem(packet, product);
-				packet.writeQ((long) (product.getPrice() * (1.0 + _castleTaxRate + product.getBaseTaxRate())));
+				writeItem(product);
+				writeLong((long) (product.getPrice() * (1.0 + _castleTaxRate + product.getBaseTaxRate())));
 			}
 		}
-		return true;
 	}
 	
-	private boolean sendSellList(PacketWriter packet)
+	private void sendSellList()
 	{
-		packet.writeD(_inventorySlots);
+		writeInt(_inventorySlots);
 		if (!_sellList.isEmpty())
 		{
-			packet.writeH(_sellList.size());
+			writeShort(_sellList.size());
 			for (Item item : _sellList)
 			{
-				writeItem(packet, item);
-				packet.writeQ(Config.MERCHANT_ZERO_SELL_PRICE ? 0 : item.getTemplate().getReferencePrice() / 2);
+				writeItem(item);
+				writeLong(Config.MERCHANT_ZERO_SELL_PRICE ? 0 : item.getTemplate().getReferencePrice() / 2);
 			}
 		}
 		else
 		{
-			packet.writeH(0);
+			writeShort(0);
 		}
 		if (!_refundList.isEmpty())
 		{
-			packet.writeH(_refundList.size());
+			writeShort(_refundList.size());
 			int i = 0;
 			for (Item item : _refundList)
 			{
-				writeItem(packet, item);
-				packet.writeD(i++);
-				packet.writeQ(Config.MERCHANT_ZERO_SELL_PRICE ? 0 : (item.getTemplate().getReferencePrice() / 2) * item.getCount());
+				writeItem(item);
+				writeInt(i++);
+				writeLong(Config.MERCHANT_ZERO_SELL_PRICE ? 0 : (item.getTemplate().getReferencePrice() / 2) * item.getCount());
 			}
 		}
 		else
 		{
-			packet.writeH(0);
+			writeShort(0);
 		}
-		packet.writeC(_done ? 1 : 0);
-		return true;
+		writeByte(_done ? 1 : 0);
 	}
 	
-	private boolean sendUnk(PacketWriter packet)
+	private void sendUnk()
 	{
-		packet.writeC(_unkType);
-		return true;
+		writeByte(_unkType);
 	}
 	
-	private boolean sendCurrentTax(PacketWriter packet)
+	private void sendCurrentTax()
 	{
-		packet.writeD(_nearestCastle);
+		writeInt(_nearestCastle);
 		if (_nearestCastle != 0)
 		{
-			packet.writeD(_nearestCastle);
-			packet.writeD(_applyTax ? (int) _castleTaxRate : 0);
+			writeInt(_nearestCastle);
+			writeInt(_applyTax ? (int) _castleTaxRate : 0);
 		}
-		return true;
 	}
 }

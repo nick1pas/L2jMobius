@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExHomunculusInsertResult implements IClientOutgoingPacket
+public class ExHomunculusInsertResult extends ServerPacket
 {
 	private final int _type;
 	
@@ -34,22 +33,21 @@ public class ExHomunculusInsertResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_INSERT_RESULT.writeId(packet);
-		packet.writeD(1); // 1 - success
+		ServerPackets.EX_HOMUNCULUS_INSERT_RESULT.writeId(this);
+		writeInt(1); // 1 - success
 		if (_type == 0)
 		{
-			packet.writeD(SystemMessageId.THE_HOMUNCULUS_TAKES_YOUR_BLOOD_HP.getId());
+			writeInt(SystemMessageId.THE_HOMUNCULUS_TAKES_YOUR_BLOOD_HP.getId());
 		}
 		else if (_type == 1)
 		{
-			packet.writeD(SystemMessageId.THE_HOMUNCULUS_TAKES_YOUR_SPIRIT_SP.getId());
+			writeInt(SystemMessageId.THE_HOMUNCULUS_TAKES_YOUR_SPIRIT_SP.getId());
 		}
 		else
 		{
-			packet.writeD(SystemMessageId.THE_HOMUNCULUS_TAKES_YOUR_TEARS_VP.getId());
+			writeInt(SystemMessageId.THE_HOMUNCULUS_TAKES_YOUR_TEARS_VP.getId());
 		}
-		return true;
 	}
 }

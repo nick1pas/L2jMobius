@@ -17,28 +17,27 @@
 package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.homunculus.Homunculus;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExActivateHomunculusResult;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusList;
 
 /**
  * @author Mobius
  */
-public class RequestExActivateHomunculus implements IClientIncomingPacket
+public class RequestExActivateHomunculus implements ClientPacket
 {
 	private int _slot;
 	private boolean _activate;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_slot = packet.readD();
-		_activate = packet.readC() == 1; // enabled?
-		return true;
+		_slot = packet.readInt();
+		_activate = packet.readByte() == 1; // enabled?
 	}
 	
 	@Override

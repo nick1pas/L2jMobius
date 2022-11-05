@@ -16,25 +16,24 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant.single;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.ResetEnchantItemFailRewardInfo;
 
 /**
  * @author Index
  */
-public class ExRequestEnchantFailRewardInfo implements IClientIncomingPacket
+public class ExRequestEnchantFailRewardInfo implements ClientPacket
 {
 	private int _itemobjectid;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemobjectid = packet.readD();
-		return true;
+		_itemobjectid = packet.readInt();
 	}
 	
 	@Override

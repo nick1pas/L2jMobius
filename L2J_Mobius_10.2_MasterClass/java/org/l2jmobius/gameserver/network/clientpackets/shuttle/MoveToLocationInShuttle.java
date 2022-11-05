@@ -16,12 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.shuttle;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.type.WeaponType;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.shuttle.ExMoveToLocationInShuttle;
 import org.l2jmobius.gameserver.network.serverpackets.shuttle.ExStopMoveInShuttle;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.shuttle.ExStopMoveInShuttl
 /**
  * @author UnAfraid
  */
-public class MoveToLocationInShuttle implements IClientIncomingPacket
+public class MoveToLocationInShuttle implements ClientPacket
 {
 	private int _boatId;
 	private int _targetX;
@@ -40,16 +40,15 @@ public class MoveToLocationInShuttle implements IClientIncomingPacket
 	private int _originZ;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_boatId = packet.readD(); // objectId of boat
-		_targetX = packet.readD();
-		_targetY = packet.readD();
-		_targetZ = packet.readD();
-		_originX = packet.readD();
-		_originY = packet.readD();
-		_originZ = packet.readD();
-		return true;
+		_boatId = packet.readInt(); // objectId of boat
+		_targetX = packet.readInt();
+		_targetY = packet.readInt();
+		_targetZ = packet.readInt();
+		_originX = packet.readInt();
+		_originY = packet.readInt();
+		_originZ = packet.readInt();
 	}
 	
 	@Override

@@ -16,18 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.HomunculusCreationData;
 import org.l2jmobius.gameserver.data.xml.HomunculusData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.homunculus.HomunculusCreationTemplate;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExHomunculusCouponProbabilityList implements IClientOutgoingPacket
+public class ExHomunculusCouponProbabilityList extends ServerPacket
 {
 	private final Player _player;
 	private final int _couponId;
@@ -39,33 +38,32 @@ public class ExHomunculusCouponProbabilityList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player == null)
 		{
-			return false;
+			return;
 		}
 		
 		final HomunculusCreationTemplate creationTemplate = HomunculusCreationData.getInstance().getTemplateByItemId(_couponId);
 		if (creationTemplate == null)
 		{
-			return false;
+			return;
 		}
 		
-		OutgoingPackets.EX_HOMUNCULUS_COUPON_PROB_LIST.writeId(packet);
-		packet.writeD(_couponId);
-		packet.writeD(creationTemplate.getCreationChance().size());
+		ServerPackets.EX_HOMUNCULUS_COUPON_PROB_LIST.writeId(this);
+		writeInt(_couponId);
+		writeInt(creationTemplate.getCreationChance().size());
 		for (int type = 0; type < 3; type++)
 		{
 			for (Double[] homunculusChance : creationTemplate.getCreationChance())
 			{
 				if (HomunculusData.getInstance().getTemplate(homunculusChance[0].intValue()).getType() == type)
 				{
-					packet.writeD(homunculusChance[0].intValue());
-					packet.writeD((int) (homunculusChance[1] * 1000000));
+					writeInt(homunculusChance[0].intValue());
+					writeInt((int) (homunculusChance[1] * 1000000));
 				}
 			}
 		}
-		return true;
 	}
 }

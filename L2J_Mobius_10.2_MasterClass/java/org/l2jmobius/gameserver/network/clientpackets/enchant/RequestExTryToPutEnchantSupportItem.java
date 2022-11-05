@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
@@ -25,24 +25,23 @@ import org.l2jmobius.gameserver.model.item.enchant.EnchantSupportItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.ExPutEnchantSupportItemResult;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.single.ChangedEnchantTargetItemProbabilityList;
 
 /**
  * @author KenM
  */
-public class RequestExTryToPutEnchantSupportItem implements IClientIncomingPacket
+public class RequestExTryToPutEnchantSupportItem implements ClientPacket
 {
 	private int _supportObjectId;
 	private int _enchantObjectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_supportObjectId = packet.readD();
-		_enchantObjectId = packet.readD();
-		return true;
+		_supportObjectId = packet.readInt();
+		_enchantObjectId = packet.readInt();
 	}
 	
 	@Override

@@ -16,12 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.stat.PlayerStat;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusGetEnchantPointResult;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusHPSPVP;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
@@ -29,15 +29,14 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPoi
 /**
  * @author Mobius
  */
-public class RequestExHomunculusGetEnchantPoint implements IClientIncomingPacket
+public class RequestExHomunculusGetEnchantPoint implements ClientPacket
 {
 	private int _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readD();
-		return true;
+		_type = packet.readInt();
 	}
 	
 	@Override

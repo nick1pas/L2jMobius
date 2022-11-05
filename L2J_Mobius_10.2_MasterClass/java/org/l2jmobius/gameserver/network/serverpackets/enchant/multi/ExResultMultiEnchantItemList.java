@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets.enchant.multi;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
+public class ExResultMultiEnchantItemList extends ServerPacket
 {
 	public static final int SUCCESS = 0;
 	public static final int FAIL = 1;
@@ -69,67 +68,68 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getRequest(EnchantItemRequest.class) == null)
 		{
-			return false;
+			return;
 		}
 		final EnchantItemRequest request = _player.getRequest(EnchantItemRequest.class);
 		
-		OutgoingPackets.EX_RES_MULTI_ENCHANT_ITEM_LIST.writeId(packet);
+		ServerPackets.EX_RES_MULTI_ENCHANT_ITEM_LIST.writeId(this);
 		
 		if (_error)
 		{
-			packet.writeC(0);
-			return true;
+			writeByte(0);
+			return;
 		}
-		packet.writeC(1);
+		
+		writeByte(1);
 		
 		/* EnchantSuccessItem */
 		if (_failureReward.size() == 0)
 		{
-			packet.writeD(_successEnchant.size());
+			writeInt(_successEnchant.size());
 			if (_successEnchant.size() != 0)
 			{
 				for (int i : _successEnchant.keySet())
 				{
 					int[] intArray = _successEnchant.get(i);
-					packet.writeD(intArray[0]);
-					packet.writeD(intArray[1]);
+					writeInt(intArray[0]);
+					writeInt(intArray[1]);
 				}
 			}
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		
 		/* EnchantFailItem */
-		packet.writeD(_failureEnchant.size());
+		writeInt(_failureEnchant.size());
 		if (_failureEnchant.size() != 0)
 		{
 			for (int i : _failureEnchant.keySet())
 			{
-				packet.writeD(_failureEnchant.get(i));
-				packet.writeD(0);
+				writeInt(_failureEnchant.get(i));
+				writeInt(0);
 			}
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		
 		/* EnchantFailRewardItem */
 		if (((_successEnchant.size() == 0) && (request.getMultiFailItemsCount() != 0)) || (_isResult && (request.getMultiFailItemsCount() != 0)))
 		{
-			packet.writeD(request.getMultiFailItemsCount());
+			writeInt(request.getMultiFailItemsCount());
 			_failureReward = request.getMultiEnchantFailItems();
 			for (int i : _failureReward.keySet())
 			{
 				ItemHolder itemHolder = _failureReward.get(i);
-				packet.writeD(itemHolder.getId());
-				packet.writeD((int) itemHolder.getCount());
+				writeInt(itemHolder.getId());
+				writeInt((int) itemHolder.getCount());
 			}
 			if (_isResult)
 			{
@@ -140,14 +140,12 @@ public class ExResultMultiEnchantItemList implements IClientOutgoingPacket
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
 		
 		/* EnchantFailChallengePointInfo */
-		packet.writeD(1);
-		packet.writeD(0);
-		packet.writeD(0);
-		
-		return true;
+		writeInt(1);
+		writeInt(0);
+		writeInt(0);
 	}
 }

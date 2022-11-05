@@ -16,12 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.homunculus.Homunculus;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusEnchantEXPResult;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExHomunculusPointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculusList;
@@ -29,17 +29,16 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculu
 /**
  * @author Mobius
  */
-public class RequestExHomunculusEnchantExp implements IClientIncomingPacket
+public class RequestExHomunculusEnchantExp implements ClientPacket
 {
 	private static final int EXP_PER_POINT = 675;
 	
 	private int _slot;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_slot = packet.readD();
-		return true;
+		_slot = packet.readInt();
 	}
 	
 	@Override

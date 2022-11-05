@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.enchant.multi;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Index
  */
-public class ExResetSelectMultiEnchantScroll implements IClientOutgoingPacket
+public class ExResetSelectMultiEnchantScroll extends ServerPacket
 {
 	private final Player _player;
 	private final int _scrollObjectId;
@@ -39,11 +38,11 @@ public class ExResetSelectMultiEnchantScroll implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (_player.getRequest(EnchantItemRequest.class) == null)
 		{
-			return false;
+			return;
 		}
 		
 		final EnchantItemRequest request = _player.getRequest(EnchantItemRequest.class);
@@ -52,11 +51,8 @@ public class ExResetSelectMultiEnchantScroll implements IClientOutgoingPacket
 			request.setEnchantingScroll(_scrollObjectId);
 		}
 		
-		OutgoingPackets.EX_RES_SELECT_MULTI_ENCHANT_SCROLL.writeId(packet);
-		
-		packet.writeD(_scrollObjectId);
-		packet.writeD(_resultType);
-		
-		return true;
+		ServerPackets.EX_RES_SELECT_MULTI_ENCHANT_SCROLL.writeId(this);
+		writeInt(_scrollObjectId);
+		writeInt(_resultType);
 	}
 }

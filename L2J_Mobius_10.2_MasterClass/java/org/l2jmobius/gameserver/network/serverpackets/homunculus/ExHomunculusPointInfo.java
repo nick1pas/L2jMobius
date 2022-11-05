@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.homunculus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExHomunculusPointInfo implements IClientOutgoingPacket
+public class ExHomunculusPointInfo extends ServerPacket
 {
 	private final Player _player;
 	
@@ -35,17 +34,16 @@ public class ExHomunculusPointInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_HOMUNCULUS_POINT_INFO.writeId(packet);
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_UPGRADE_POINTS, 0)); // points
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_KILLED_MOBS, 0)); // killed mobs
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_KILL_CONVERT, 0)); // consumed basic kill points
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_RESET_KILLS, 0)); // consumed reset kill points?
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_VP_POINTS, 0)); // vp points
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_VP_CONVERT, 0)); // consumed basic vp points
-		packet.writeD(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_RESET_VP, 0)); // consumed reset vp points
-		packet.writeD(_player.getAvailableHomunculusSlotCount()); // 306
-		return true;
+		ServerPackets.EX_HOMUNCULUS_POINT_INFO.writeId(this);
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_UPGRADE_POINTS, 0)); // points
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_KILLED_MOBS, 0)); // killed mobs
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_KILL_CONVERT, 0)); // consumed basic kill points
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_RESET_KILLS, 0)); // consumed reset kill points?
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_VP_POINTS, 0)); // vp points
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_VP_CONVERT, 0)); // consumed basic vp points
+		writeInt(_player.getVariables().getInt(PlayerVariables.HOMUNCULUS_USED_RESET_VP, 0)); // consumed reset vp points
+		writeInt(_player.getAvailableHomunculusSlotCount()); // 306
 	}
 }

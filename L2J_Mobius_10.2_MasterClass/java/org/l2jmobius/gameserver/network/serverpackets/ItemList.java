@@ -19,10 +19,9 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 public class ItemList extends AbstractItemPacket
 {
@@ -44,26 +43,25 @@ public class ItemList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.ITEM_LIST.writeId(packet);
+		ServerPackets.ITEM_LIST.writeId(this);
 		if (_sendType == 2)
 		{
-			packet.writeC(_sendType);
-			packet.writeD(_items.size());
-			packet.writeD(_items.size());
+			writeByte(_sendType);
+			writeInt(_items.size());
+			writeInt(_items.size());
 			for (Item item : _items)
 			{
-				writeItem(packet, item);
+				writeItem(item);
 			}
 		}
 		else
 		{
-			packet.writeC(1); // _showWindow ? 1 : 0
-			packet.writeD(0);
-			packet.writeD(_items.size());
+			writeByte(1); // _showWindow
+			writeInt(0);
+			writeInt(_items.size());
 		}
-		writeInventoryBlock(packet, _player.getInventory());
-		return true;
+		writeInventoryBlock(_player.getInventory());
 	}
 }

@@ -16,16 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.ranking;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ranking.ExOlympiadRankingInfo;
 
 /**
  * @author NviX
  */
-public class RequestOlympiadRankingInfo implements IClientIncomingPacket
+public class RequestOlympiadRankingInfo implements ClientPacket
 {
 	private int _tabId;
 	private int _rankingType;
@@ -34,14 +34,13 @@ public class RequestOlympiadRankingInfo implements IClientIncomingPacket
 	private int _serverId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_tabId = packet.readC();
-		_rankingType = packet.readC();
-		_unk = packet.readC();
-		_classId = packet.readD();
-		_serverId = packet.readD();
-		return true;
+		_tabId = packet.readByte();
+		_rankingType = packet.readByte();
+		_unk = packet.readByte();
+		_classId = packet.readInt();
+		_serverId = packet.readInt();
 	}
 	
 	@Override

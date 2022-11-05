@@ -19,12 +19,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.LinkedList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.QuestState;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class QuestList implements IClientOutgoingPacket
+public class QuestList extends ServerPacket
 {
 	private final List<QuestState> _activeQuests;
 	private final byte[] _oneTimeQuestMask;
@@ -51,16 +50,15 @@ public class QuestList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.QUEST_LIST.writeId(packet);
-		packet.writeH(_activeQuests.size());
+		ServerPackets.QUEST_LIST.writeId(this);
+		writeShort(_activeQuests.size());
 		for (QuestState qs : _activeQuests)
 		{
-			packet.writeD(qs.getQuest().getId());
-			packet.writeD(qs.getCondBitSet());
+			writeInt(qs.getQuest().getId());
+			writeInt(qs.getCondBitSet());
 		}
-		packet.writeB(_oneTimeQuestMask);
-		return true;
+		writeBytes(_oneTimeQuestMask);
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ability;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExShowAPListWnd implements IClientOutgoingPacket
+public class ExShowAPListWnd extends ServerPacket
 {
 	public static final ExShowAPListWnd STATIC_PACKET = new ExShowAPListWnd();
 	
@@ -32,9 +31,8 @@ public class ExShowAPListWnd implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_AP_LIST_WND.writeId(packet);
-		return true;
+		ServerPackets.EX_SHOW_AP_LIST_WND.writeId(this);
 	}
 }

@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -28,15 +28,14 @@ import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 /**
  * @author Mobius
  */
-public class ExOpenHtml implements IClientIncomingPacket
+public class ExOpenHtml implements ClientPacket
 {
 	private int _type;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_type = packet.readC();
-		return true;
+		_type = packet.readByte();
 	}
 	
 	@Override

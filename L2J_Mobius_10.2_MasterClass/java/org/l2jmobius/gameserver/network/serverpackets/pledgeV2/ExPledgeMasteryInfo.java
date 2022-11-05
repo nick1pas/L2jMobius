@@ -16,12 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ClanMasteryData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.holders.ClanMasteryHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -37,24 +36,25 @@ public class ExPledgeMasteryInfo extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		final Clan clan = _player.getClan();
 		if (clan == null)
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.EX_PLEDGE_MASTERY_INFO.writeId(packet);
-		packet.writeD(clan.getUsedDevelopmentPoints()); // Consumed development points
-		packet.writeD(clan.getTotalDevelopmentPoints()); // Total development points
-		packet.writeD(16); // Mastery count
+		
+		ServerPackets.EX_PLEDGE_MASTERY_INFO.writeId(this);
+		writeInt(clan.getUsedDevelopmentPoints()); // Consumed development points
+		writeInt(clan.getTotalDevelopmentPoints()); // Total development points
+		writeInt(16); // Mastery count
 		for (ClanMasteryHolder mastery : ClanMasteryData.getInstance().getMasteries())
 		{
 			if (mastery.getId() < 17)
 			{
 				final int id = mastery.getId();
-				packet.writeD(id); // Mastery
-				packet.writeD(0); // ?
+				writeInt(id); // Mastery
+				writeInt(0); // ?
 				boolean available = true;
 				if (clan.getLevel() < mastery.getClanLevel())
 				{
@@ -73,9 +73,8 @@ public class ExPledgeMasteryInfo extends AbstractItemPacket
 						available = clan.hasMastery(previous);
 					}
 				}
-				packet.writeC(clan.hasMastery(id) ? 2 : available ? 1 : 0); // Availability.
+				writeByte(clan.hasMastery(id) ? 2 : available ? 1 : 0); // Availability.
 			}
 		}
-		return true;
 	}
 }

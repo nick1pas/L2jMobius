@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExShowUsm implements IClientOutgoingPacket
+public class ExShowUsm extends ServerPacket
 {
 	public static final ExShowUsm GOD_INTRO = new ExShowUsm(2);
 	public static final ExShowUsm SECOND_TRANSFER_QUEST = new ExShowUsm(4);
@@ -43,10 +42,9 @@ public class ExShowUsm implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_USM.writeId(packet);
-		packet.writeD(_videoId);
-		return true;
+		ServerPackets.EX_SHOW_USM.writeId(this);
+		writeInt(_videoId);
 	}
 }

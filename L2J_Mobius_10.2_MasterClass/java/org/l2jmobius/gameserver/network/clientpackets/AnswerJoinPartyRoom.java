@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.MatchingRoom;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -26,15 +26,14 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
  * Format: (ch) d
  * @author -Wooden-, Tryskell
  */
-public class AnswerJoinPartyRoom implements IClientIncomingPacket
+public class AnswerJoinPartyRoom implements ClientPacket
 {
 	private boolean _answer;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_answer = packet.readD() == 1;
-		return true;
+		_answer = packet.readInt() == 1;
 	}
 	
 	@Override

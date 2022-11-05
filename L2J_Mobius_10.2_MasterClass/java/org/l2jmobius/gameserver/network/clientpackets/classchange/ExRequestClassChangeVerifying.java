@@ -17,26 +17,25 @@
 package org.l2jmobius.gameserver.network.clientpackets.classchange;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.QuestState;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.classchange.ExClassChangeSetAlarm;
 
 /**
  * @author Mobius
  */
-public class ExRequestClassChangeVerifying implements IClientIncomingPacket
+public class ExRequestClassChangeVerifying implements ClientPacket
 {
 	private int _classId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_classId = packet.readD();
-		return true;
+		_classId = packet.readInt();
 	}
 	
 	@Override

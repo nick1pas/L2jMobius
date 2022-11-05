@@ -23,15 +23,14 @@ import java.sql.SQLException;
 import java.util.Calendar;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
-public class ExOlympiadRecord implements IClientOutgoingPacket
+public class ExOlympiadRecord extends ServerPacket
 {
 	private static final String GET_PREVIOUS_CYCLE_DATA = "SELECT charId, class_id, olympiad_points, competitions_won, competitions_lost FROM olympiad_nobles_eom WHERE class_id = ? ORDER BY olympiad_points DESC LIMIT " + RankManager.PLAYER_LIMIT;
 	
@@ -47,13 +46,13 @@ public class ExOlympiadRecord implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_OLYMPIAD_RECORD.writeId(packet);
-		packet.writeD(Olympiad.getInstance().getNoblePoints(_player)); // nPoint
-		packet.writeD(Olympiad.getInstance().getCompetitionWon(_player.getObjectId())); // nWinCount
-		packet.writeD(Olympiad.getInstance().getCompetitionLost(_player.getObjectId())); // nLoseCount
-		packet.writeD(Olympiad.getInstance().getRemainingWeeklyMatches(_player.getObjectId())); // nMatchCount
+		ServerPackets.EX_OLYMPIAD_RECORD.writeId(this);
+		writeInt(Olympiad.getInstance().getNoblePoints(_player)); // nPoint
+		writeInt(Olympiad.getInstance().getCompetitionWon(_player.getObjectId())); // nWinCount
+		writeInt(Olympiad.getInstance().getCompetitionLost(_player.getObjectId())); // nLoseCount
+		writeInt(Olympiad.getInstance().getRemainingWeeklyMatches(_player.getObjectId())); // nMatchCount
 		// Previous Cycle
 		int previousPlace = 0;
 		int previousWins = 0;
@@ -87,23 +86,22 @@ public class ExOlympiadRecord implements IClientOutgoingPacket
 			PacketLogger.warning("Olympiad my ranking: Couldnt load data: " + e.getMessage());
 		}
 		
-		packet.writeD(previousClass); // nPrevClassType
-		packet.writeD(1); // nPrevRank in all servers
-		packet.writeD(2); // nPrevRankCount number of participants with 25+ matches
-		packet.writeD(previousPlace); // nPrevClassRank in all servers
-		packet.writeD(4); // nPrevClassRankCount number of participants with 25+ matches
-		packet.writeD(5); // nPrevClassRankByServer in current server
-		packet.writeD(6); // nPrevClassRankByServerCount number of participants with 25+ matches
-		packet.writeD(previousPoints); // nPrevPoint
-		packet.writeD(previousWins); // nPrevWinCount
-		packet.writeD(previousLoses); // nPrevLoseCount
-		packet.writeD(previousPlace); // nPrevGrade
-		packet.writeD(Calendar.getInstance().get(Calendar.YEAR)); // nSeasonYear
-		packet.writeD(Calendar.getInstance().get(Calendar.MONTH) + 1); // nSeasonMonth
-		packet.writeC(Olympiad.getInstance().inCompPeriod() ? 1 : 0); // bMatchOpen
-		packet.writeD(Olympiad.getInstance().getCurrentCycle()); // nSeason
-		packet.writeC(_type); // bRegistered
-		packet.writeD(_gameRuleType); // cGameRuleType
-		return true;
+		writeInt(previousClass); // nPrevClassType
+		writeInt(1); // nPrevRank in all servers
+		writeInt(2); // nPrevRankCount number of participants with 25+ matches
+		writeInt(previousPlace); // nPrevClassRank in all servers
+		writeInt(4); // nPrevClassRankCount number of participants with 25+ matches
+		writeInt(5); // nPrevClassRankByServer in current server
+		writeInt(6); // nPrevClassRankByServerCount number of participants with 25+ matches
+		writeInt(previousPoints); // nPrevPoint
+		writeInt(previousWins); // nPrevWinCount
+		writeInt(previousLoses); // nPrevLoseCount
+		writeInt(previousPlace); // nPrevGrade
+		writeInt(Calendar.getInstance().get(Calendar.YEAR)); // nSeasonYear
+		writeInt(Calendar.getInstance().get(Calendar.MONTH) + 1); // nSeasonMonth
+		writeByte(Olympiad.getInstance().inCompPeriod()); // bMatchOpen
+		writeInt(Olympiad.getInstance().getCurrentCycle()); // nSeason
+		writeByte(_type); // bRegistered
+		writeInt(_gameRuleType); // cGameRuleType
 	}
 }

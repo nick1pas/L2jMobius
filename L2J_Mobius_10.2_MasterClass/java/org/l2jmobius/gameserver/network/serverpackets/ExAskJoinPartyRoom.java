@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author KenM
  */
-public class ExAskJoinPartyRoom implements IClientOutgoingPacket
+public class ExAskJoinPartyRoom extends ServerPacket
 {
 	private final String _charName;
 	private final String _roomName;
@@ -35,11 +34,10 @@ public class ExAskJoinPartyRoom implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ASK_JOIN_PARTY_ROOM.writeId(packet);
-		packet.writeS(_charName);
-		packet.writeS(_roomName);
-		return true;
+		ServerPackets.EX_ASK_JOIN_PARTY_ROOM.writeId(this);
+		writeString(_charName);
+		writeString(_roomName);
 	}
 }
