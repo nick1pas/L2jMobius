@@ -19,13 +19,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Collection;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.buylist.BuyListHolder;
 import org.l2jmobius.gameserver.model.buylist.Product;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class BuyList implements IClientOutgoingPacket
+public class BuyList extends ServerPacket
 {
 	private final int _listId;
 	private final Collection<Product> _list;
@@ -41,46 +40,45 @@ public class BuyList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.BUY_LIST.writeId(packet); // writeC(7) ?
-		packet.writeD((int) _money); // current money
-		packet.writeD(_listId);
-		packet.writeH(_list.size());
+		ServerPackets.BUY_LIST.writeId(this); // writeC(7) ?
+		writeInt((int) _money); // current money
+		writeInt(_listId);
+		writeShort(_list.size());
 		for (Product product : _list)
 		{
 			if ((product.getCount() > 0) || !product.hasLimitedStock())
 			{
-				packet.writeH(product.getItem().getType1()); // item type1
-				packet.writeD(0); // objectId
-				packet.writeD(product.getItemId());
-				packet.writeD(product.getCount() < 0 ? 0 : product.getCount());
-				packet.writeH(product.getItem().getType2());
-				packet.writeH(0); // isEquipped
+				writeShort(product.getItem().getType1()); // item type1
+				writeInt(0); // objectId
+				writeInt(product.getItemId());
+				writeInt(product.getCount() < 0 ? 0 : product.getCount());
+				writeShort(product.getItem().getType2());
+				writeShort(0); // isEquipped
 				if (product.getItem().getType1() != ItemTemplate.TYPE1_ITEM_QUESTITEM_ADENA)
 				{
-					packet.writeD(product.getItem().getBodyPart());
-					packet.writeH(0); // item enchant level
-					packet.writeH(0); // ?
-					packet.writeH(0);
+					writeInt(product.getItem().getBodyPart());
+					writeShort(0); // item enchant level
+					writeShort(0); // ?
+					writeShort(0);
 				}
 				else
 				{
-					packet.writeD(0);
-					packet.writeH(0);
-					packet.writeH(0);
-					packet.writeH(0);
+					writeInt(0);
+					writeShort(0);
+					writeShort(0);
+					writeShort(0);
 				}
 				if ((product.getItemId() >= 3960) && (product.getItemId() <= 4026))
 				{
-					packet.writeD((int) (product.getPrice() * Config.RATE_SIEGE_GUARDS_PRICE * (1 + _taxRate)));
+					writeInt((int) (product.getPrice() * Config.RATE_SIEGE_GUARDS_PRICE * (1 + _taxRate)));
 				}
 				else
 				{
-					packet.writeD((int) (product.getPrice() * (1 + _taxRate)));
+					writeInt((int) (product.getPrice() * (1 + _taxRate)));
 				}
 			}
 		}
-		return true;
 	}
 }

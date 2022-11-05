@@ -22,7 +22,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.enums.WarehouseListType;
 import org.l2jmobius.gameserver.model.RecipeList;
@@ -33,10 +32,10 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.item.type.CrystalType;
 import org.l2jmobius.gameserver.model.item.type.EtcItemType;
 import org.l2jmobius.gameserver.model.item.type.MaterialType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class SortedWareHouseWithdrawalList implements IClientOutgoingPacket
+public class SortedWareHouseWithdrawalList extends ServerPacket
 {
 	public static final int PRIVATE = 1;
 	public static final int CLAN = 2;
@@ -684,38 +683,37 @@ public class SortedWareHouseWithdrawalList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.WAREHOUSE_WITHDRAW_LIST.writeId(packet);
+		ServerPackets.WAREHOUSE_WITHDRAW_LIST.writeId(this);
 		/*
 		 * 0x01-Private Warehouse 0x02-Clan Warehouse 0x03-Castle Warehouse 0x04-Warehouse
 		 */
-		packet.writeH(_whType);
-		packet.writeD((int) _playerAdena);
-		packet.writeH(_objects.size());
+		writeShort(_whType);
+		writeInt((int) _playerAdena);
+		writeShort(_objects.size());
 		for (WarehouseItem item : _objects)
 		{
-			packet.writeH(item.getItem().getType1());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItemId());
-			packet.writeD((int) item.getCount());
-			packet.writeH(item.getItem().getType2());
-			packet.writeH(item.getCustomType1());
-			packet.writeD(item.getItem().getBodyPart());
-			packet.writeH(item.getEnchantLevel());
-			packet.writeH(0);
-			packet.writeH(item.getCustomType2());
-			packet.writeD(item.getObjectId());
+			writeShort(item.getItem().getType1());
+			writeInt(item.getObjectId());
+			writeInt(item.getItemId());
+			writeInt((int) item.getCount());
+			writeShort(item.getItem().getType2());
+			writeShort(item.getCustomType1());
+			writeInt(item.getItem().getBodyPart());
+			writeShort(item.getEnchantLevel());
+			writeShort(0);
+			writeShort(item.getCustomType2());
+			writeInt(item.getObjectId());
 			if (item.isAugmented())
 			{
-				packet.writeD(0x0000FFFF & item.getAugmentationId());
-				packet.writeD(item.getAugmentationId() >> 16);
+				writeInt(0x0000FFFF & item.getAugmentationId());
+				writeInt(item.getAugmentationId() >> 16);
 			}
 			else
 			{
-				packet.writeQ(0);
+				writeLong(0);
 			}
 		}
-		return true;
 	}
 }

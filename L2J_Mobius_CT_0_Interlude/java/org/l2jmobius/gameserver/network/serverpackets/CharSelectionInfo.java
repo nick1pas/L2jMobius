@@ -26,7 +26,6 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.CharSelectInfoPackage;
 import org.l2jmobius.gameserver.model.World;
@@ -35,9 +34,9 @@ import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.Disconnection;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class CharSelectionInfo implements IClientOutgoingPacket
+public class CharSelectionInfo extends ServerPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(CharSelectionInfo.class.getName());
 	
@@ -73,11 +72,11 @@ public class CharSelectionInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.CHAR_SELECT_INFO.writeId(packet);
+		ServerPackets.CHAR_SELECT_INFO.writeId(this);
 		final int size = _characterPackages.size();
-		packet.writeD(size); // Created character count
+		writeInt(size); // Created character count
 		long lastAccess = 0;
 		if (_activeId == -1)
 		{
@@ -93,80 +92,79 @@ public class CharSelectionInfo implements IClientOutgoingPacket
 		for (int i = 0; i < size; i++)
 		{
 			final CharSelectInfoPackage charInfoPackage = _characterPackages.get(i);
-			packet.writeS(charInfoPackage.getName()); // Character name
-			packet.writeD(charInfoPackage.getObjectId()); // Character ID
-			packet.writeS(_loginName); // Account name
-			packet.writeD(_sessionId); // Account ID
-			packet.writeD(charInfoPackage.getClanId()); // Clan ID
-			packet.writeD(0); // Builder level
-			packet.writeD(charInfoPackage.getSex()); // Sex
-			packet.writeD(charInfoPackage.getRace()); // Race
-			packet.writeD(charInfoPackage.getBaseClassId());
-			packet.writeD(1); // GameServerName
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeF(charInfoPackage.getCurrentHp());
-			packet.writeF(charInfoPackage.getCurrentMp());
-			packet.writeD((int) charInfoPackage.getSp());
-			packet.writeQ(charInfoPackage.getExp());
-			packet.writeD(charInfoPackage.getLevel());
-			packet.writeD(charInfoPackage.getKarma());
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(0);
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_UNDER));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_REAR));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEAR));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_NECK));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RFINGER));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LFINGER));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HEAD));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LHAND));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_GLOVES));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_CHEST));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEGS));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_FEET));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_CLOAK));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
-			packet.writeD(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR2));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_UNDER));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CLOAK));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
-			packet.writeD(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR2));
-			packet.writeD(charInfoPackage.getHairStyle());
-			packet.writeD(charInfoPackage.getHairColor());
-			packet.writeD(charInfoPackage.getFace());
-			packet.writeF(charInfoPackage.getMaxHp()); // Maximum HP
-			packet.writeF(charInfoPackage.getMaxMp()); // Maximum MP
-			packet.writeD(charInfoPackage.getDeleteTimer() > 0 ? (int) ((charInfoPackage.getDeleteTimer() - System.currentTimeMillis()) / 1000) : 0);
-			packet.writeD(charInfoPackage.getClassId());
-			packet.writeD(i == _activeId ? 1 : 0);
-			packet.writeC(Math.min(charInfoPackage.getEnchantEffect(), 127));
-			packet.writeD(charInfoPackage.getAugmentationId());
+			writeString(charInfoPackage.getName()); // Character name
+			writeInt(charInfoPackage.getObjectId()); // Character ID
+			writeString(_loginName); // Account name
+			writeInt(_sessionId); // Account ID
+			writeInt(charInfoPackage.getClanId()); // Clan ID
+			writeInt(0); // Builder level
+			writeInt(charInfoPackage.getSex()); // Sex
+			writeInt(charInfoPackage.getRace()); // Race
+			writeInt(charInfoPackage.getBaseClassId());
+			writeInt(1); // GameServerName
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeDouble(charInfoPackage.getCurrentHp());
+			writeDouble(charInfoPackage.getCurrentMp());
+			writeInt((int) charInfoPackage.getSp());
+			writeLong(charInfoPackage.getExp());
+			writeInt(charInfoPackage.getLevel());
+			writeInt(charInfoPackage.getKarma());
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(0);
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_UNDER));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_REAR));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEAR));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_NECK));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RFINGER));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LFINGER));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HEAD));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LHAND));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_GLOVES));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_CHEST));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_LEGS));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_FEET));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_CLOAK));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR));
+			writeInt(charInfoPackage.getPaperdollObjectId(Inventory.PAPERDOLL_HAIR2));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_UNDER));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_REAR));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEAR));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_NECK));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RFINGER));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LFINGER));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HEAD));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LHAND));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_GLOVES));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CHEST));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_LEGS));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_FEET));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_CLOAK));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_RHAND));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR));
+			writeInt(charInfoPackage.getPaperdollItemId(Inventory.PAPERDOLL_HAIR2));
+			writeInt(charInfoPackage.getHairStyle());
+			writeInt(charInfoPackage.getHairColor());
+			writeInt(charInfoPackage.getFace());
+			writeDouble(charInfoPackage.getMaxHp()); // Maximum HP
+			writeDouble(charInfoPackage.getMaxMp()); // Maximum MP
+			writeInt(charInfoPackage.getDeleteTimer() > 0 ? (int) ((charInfoPackage.getDeleteTimer() - System.currentTimeMillis()) / 1000) : 0);
+			writeInt(charInfoPackage.getClassId());
+			writeInt(i == _activeId);
+			writeByte(Math.min(charInfoPackage.getEnchantEffect(), 127));
+			writeInt(charInfoPackage.getAugmentationId());
 		}
-		return true;
 	}
 	
 	private static List<CharSelectInfoPackage> loadCharacterSelectInfo(String loginName)

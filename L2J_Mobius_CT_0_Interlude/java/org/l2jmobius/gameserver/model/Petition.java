@@ -26,7 +26,7 @@ import org.l2jmobius.gameserver.instancemanager.PetitionManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
@@ -135,7 +135,7 @@ public class Petition
 		return _type.toString().replace("_", " ");
 	}
 	
-	public void sendPetitionerPacket(IClientOutgoingPacket responsePacket)
+	public void sendPetitionerPacket(ServerPacket responsePacket)
 	{
 		if ((_petitioner == null) || !_petitioner.isOnline())
 		{
@@ -149,7 +149,7 @@ public class Petition
 		_petitioner.sendPacket(responsePacket);
 	}
 	
-	public void sendResponderPacket(IClientOutgoingPacket responsePacket)
+	public void sendResponderPacket(ServerPacket responsePacket)
 	{
 		if ((_responder == null) || !_responder.isOnline())
 		{

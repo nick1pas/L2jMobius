@@ -19,12 +19,35 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class SkillList implements IClientOutgoingPacket
+public class SkillList extends ServerPacket
 {
 	private final List<Skill> _skills = new ArrayList<>();
+	
+	public SkillList()
+	{
+		super(1024);
+	}
+	
+	public void addSkill(int id, int level, boolean passive, boolean disabled)
+	{
+		_skills.add(new Skill(id, level, passive, disabled));
+	}
+	
+	@Override
+	public void write()
+	{
+		ServerPackets.SKILL_LIST.writeId(this);
+		writeInt(_skills.size());
+		for (Skill temp : _skills)
+		{
+			writeInt(temp.passive);
+			writeInt(temp.level);
+			writeInt(temp.id);
+			writeByte(temp.disabled);
+		}
+	}
 	
 	static class Skill
 	{
@@ -40,25 +63,5 @@ public class SkillList implements IClientOutgoingPacket
 			passive = pPassive;
 			disabled = pDisabled;
 		}
-	}
-	
-	public void addSkill(int id, int level, boolean passive, boolean disabled)
-	{
-		_skills.add(new Skill(id, level, passive, disabled));
-	}
-	
-	@Override
-	public boolean write(PacketWriter packet)
-	{
-		OutgoingPackets.SKILL_LIST.writeId(packet);
-		packet.writeD(_skills.size());
-		for (Skill temp : _skills)
-		{
-			packet.writeD(temp.passive ? 1 : 0);
-			packet.writeD(temp.level);
-			packet.writeD(temp.id);
-			packet.writeC(temp.disabled ? 1 : 0);
-		}
-		return true;
 	}
 }

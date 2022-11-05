@@ -19,15 +19,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Mobius
  */
-public class SellList implements IClientOutgoingPacket
+public class SellList extends ServerPacket
 {
 	private final int _money;
 	private final List<Item> _items = new ArrayList<>();
@@ -45,26 +44,25 @@ public class SellList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SELL_LIST.writeId(packet);
-		packet.writeD(_money);
-		packet.writeD(0);
-		packet.writeH(_items.size());
+		ServerPackets.SELL_LIST.writeId(this);
+		writeInt(_money);
+		writeInt(0);
+		writeShort(_items.size());
 		for (Item item : _items)
 		{
-			packet.writeH(item.getTemplate().getType1());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getTemplate().getType2());
-			packet.writeH(item.getCustomType1());
-			packet.writeD(item.getTemplate().getBodyPart());
-			packet.writeH(item.getEnchantLevel());
-			packet.writeH(item.getCustomType2());
-			packet.writeH(0);
-			packet.writeD(item.getTemplate().getReferencePrice() / 2);
+			writeShort(item.getTemplate().getType1());
+			writeInt(item.getObjectId());
+			writeInt(item.getId());
+			writeInt(item.getCount());
+			writeShort(item.getTemplate().getType2());
+			writeShort(item.getCustomType1());
+			writeInt(item.getTemplate().getBodyPart());
+			writeShort(item.getEnchantLevel());
+			writeShort(item.getCustomType2());
+			writeShort(0);
+			writeInt(item.getTemplate().getReferencePrice() / 2);
 		}
-		return true;
 	}
 }

@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.instancemanager.CHSiegeManager;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
@@ -28,9 +27,9 @@ import org.l2jmobius.gameserver.model.olympiad.Olympiad;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.SiegeClan;
 import org.l2jmobius.gameserver.model.siege.clanhalls.SiegableHall;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class Die implements IClientOutgoingPacket
+public class Die extends ServerPacket
 {
 	private final int _objectId;
 	private final boolean _canTeleport;
@@ -57,11 +56,11 @@ public class Die implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.DIE.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_canTeleport ? 1 : 0);
+		ServerPackets.DIE.writeId(this);
+		writeInt(_objectId);
+		writeInt(_canTeleport);
 		if (_creature.isPlayer())
 		{
 			if (!Olympiad.getInstance().isRegistered(_creature.getActingPlayer()) && !_creature.getActingPlayer().isOnEvent())
@@ -90,19 +89,17 @@ public class Die implements IClientOutgoingPacket
 				}
 			}
 			
-			packet.writeD(_clan.getHideoutId() > 0 ? 1 : 0); // to hide away
-			packet.writeD((_clan.getCastleId() > 0) || isInCastleDefense ? 1 : 0); // to castle
-			packet.writeD(((siegeClan != null) && !isInCastleDefense && !siegeClan.getFlag().isEmpty()) || ((hall != null) && (hall.getSiege() != null) && hall.getSiege().checkIsAttacker(_clan)) ? 1 : 0); // hq
+			writeInt(_clan.getHideoutId() > 0); // to hide away
+			writeInt((_clan.getCastleId() > 0) || isInCastleDefense); // to castle
+			writeInt(((siegeClan != null) && !isInCastleDefense && !siegeClan.getFlag().isEmpty()) || ((hall != null) && (hall.getSiege() != null) && hall.getSiege().checkIsAttacker(_clan))); // hq
 		}
 		else
 		{
-			packet.writeD(0); // 6d 01 00 00 00 - to hide away
-			packet.writeD(0); // 6d 02 00 00 00 - to castle
-			packet.writeD(0); // 6d 05 00 00 00 - to siege HQ
+			writeInt(0); // 6d 01 00 00 00 - to hide away
+			writeInt(0); // 6d 02 00 00 00 - to castle
+			writeInt(0); // 6d 05 00 00 00 - to siege HQ
 		}
-		packet.writeD(_sweepable ? 1 : 0); // sweepable (blue glow)
-		packet.writeD(_allowFixedRes ? 1 : 0); // fixed
-		
-		return true;
+		writeInt(_sweepable); // sweepable (blue glow)
+		writeInt(_allowFixedRes); // fixed
 	}
 }

@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
@@ -27,13 +27,12 @@ import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 /**
  * @author Mobius
  */
-public class RequestEvaluate implements IClientIncomingPacket
+public class RequestEvaluate implements ClientPacket
 {
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readD(); // target Id
-		return true;
+		packet.readInt(); // target Id
 	}
 	
 	@Override

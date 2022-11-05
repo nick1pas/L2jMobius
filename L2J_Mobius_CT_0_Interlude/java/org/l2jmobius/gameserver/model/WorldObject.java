@@ -44,7 +44,7 @@ import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.DeleteObject;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
@@ -249,7 +249,7 @@ public abstract class WorldObject extends ListenersContainer implements IIdentif
 	
 	public abstract void sendInfo(Player player);
 	
-	public void sendPacket(IClientOutgoingPacket packet)
+	public void sendPacket(ServerPacket packet)
 	{
 	}
 	

@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.model.Augmentation;
 import org.l2jmobius.gameserver.model.actor.Npc;
@@ -40,19 +40,18 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * The Class MultiSellChoose.
  */
-public class MultiSellChoose implements IClientIncomingPacket
+public class MultiSellChoose implements ClientPacket
 {
 	private int _listId;
 	private int _entryId;
 	private int _amount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_listId = packet.readD();
-		_entryId = packet.readD();
-		_amount = packet.readD();
-		return true;
+		_listId = packet.readInt();
+		_entryId = packet.readInt();
+		_amount = packet.readInt();
 	}
 	
 	@Override

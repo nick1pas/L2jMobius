@@ -19,13 +19,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.Collection;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.PlayerCondOverride;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class TradeStart implements IClientOutgoingPacket
+public class TradeStart extends ServerPacket
 {
 	private final Player _player;
 	private final Collection<Item> _itemList;
@@ -37,28 +36,28 @@ public class TradeStart implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if ((_player.getActiveTradeList() == null) || (_player.getActiveTradeList().getPartner() == null))
 		{
-			return false;
+			return;
 		}
-		OutgoingPackets.TRADE_START.writeId(packet);
-		packet.writeD(_player.getActiveTradeList().getPartner().getObjectId());
-		packet.writeH(_itemList.size());
+		
+		ServerPackets.TRADE_START.writeId(this);
+		writeInt(_player.getActiveTradeList().getPartner().getObjectId());
+		writeShort(_itemList.size());
 		for (Item item : _itemList)
 		{
-			packet.writeH(item.getTemplate().getType1()); // item type1
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getTemplate().getType2()); // item type2
-			packet.writeH(0); // ?
-			packet.writeD(item.getTemplate().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
-			packet.writeH(item.getEnchantLevel()); // enchant level
-			packet.writeH(0);
-			packet.writeH(item.getCustomType2());
+			writeShort(item.getTemplate().getType1()); // item type1
+			writeInt(item.getObjectId());
+			writeInt(item.getId());
+			writeInt(item.getCount());
+			writeShort(item.getTemplate().getType2()); // item type2
+			writeShort(0); // ?
+			writeInt(item.getTemplate().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
+			writeShort(item.getEnchantLevel()); // enchant level
+			writeShort(0);
+			writeShort(item.getCustomType2());
 		}
-		return true;
 	}
 }

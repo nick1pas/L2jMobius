@@ -20,17 +20,16 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.NpcStringId.NSLocalisation;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Kerberos
  */
-public class NpcSay implements IClientOutgoingPacket
+public class NpcSay extends ServerPacket
 {
 	private final int _objectId;
 	private final ChatType _textType;
@@ -102,12 +101,12 @@ public class NpcSay implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.NPC_SAY.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_textType.getClientId());
-		packet.writeD(_npcId);
+		ServerPackets.NPC_SAY.writeId(this);
+		writeInt(_objectId);
+		writeInt(_textType.getClientId());
+		writeInt(_npcId);
 		if (_parameters != null)
 		{
 			for (int i = 0; i < _parameters.size(); i++)
@@ -128,7 +127,6 @@ public class NpcSay implements IClientOutgoingPacket
 				}
 			}
 		}
-		packet.writeS(_text);
-		return true;
+		writeString(_text);
 	}
 }

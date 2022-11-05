@@ -18,10 +18,9 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ItemInfo;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Yme, Advi, UnAfraid
@@ -43,24 +42,23 @@ public class PetInventoryUpdate extends AbstractInventoryUpdate
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PET_INVENTORY_UPDATE.writeId(packet);
-		packet.writeH(getItems().size());
+		ServerPackets.PET_INVENTORY_UPDATE.writeId(this);
+		writeShort(getItems().size());
 		for (ItemInfo item : getItems())
 		{
-			packet.writeH(item.getChange());
-			packet.writeH(item.getItem().getType1()); // item type1
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getItem().getId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getItem().getType2()); // item type2
-			packet.writeH(0); // ?
-			packet.writeH(item.getEquipped());
-			packet.writeD(item.getItem().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
-			packet.writeH(item.getEnchant()); // enchant level
-			packet.writeH(0); // ?
+			writeShort(item.getChange());
+			writeShort(item.getItem().getType1()); // item type1
+			writeInt(item.getObjectId());
+			writeInt(item.getItem().getId());
+			writeInt(item.getCount());
+			writeShort(item.getItem().getType2()); // item type2
+			writeShort(0); // ?
+			writeShort(item.getEquipped());
+			writeInt(item.getItem().getBodyPart()); // rev 415 slot 0006-lr.ear 0008-neck 0030-lr.finger 0040-head 0080-?? 0100-l.hand 0200-gloves 0400-chest 0800-pants 1000-feet 2000-?? 4000-r.hand 8000-r.hand
+			writeShort(item.getEnchant()); // enchant level
+			writeShort(0); // ?
 		}
-		return true;
 	}
 }

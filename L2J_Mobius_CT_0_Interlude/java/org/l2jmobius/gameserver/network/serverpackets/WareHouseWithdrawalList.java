@@ -18,13 +18,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class WareHouseWithdrawalList implements IClientOutgoingPacket
+public class WareHouseWithdrawalList extends ServerPacket
 {
 	public static final int PRIVATE = 1;
 	public static final int CLAN = 4;
@@ -56,35 +55,34 @@ public class WareHouseWithdrawalList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.WAREHOUSE_WITHDRAW_LIST.writeId(packet);
-		packet.writeH(_whType);
-		packet.writeD((int) _playerAdena);
-		packet.writeH(_items.size());
+		ServerPackets.WAREHOUSE_WITHDRAW_LIST.writeId(this);
+		writeShort(_whType);
+		writeInt((int) _playerAdena);
+		writeShort(_items.size());
 		for (Item item : _items)
 		{
-			packet.writeH(item.getTemplate().getType1());
-			packet.writeD(item.getObjectId());
-			packet.writeD(item.getId());
-			packet.writeD(item.getCount());
-			packet.writeH(item.getTemplate().getType2());
-			packet.writeH(item.getCustomType1());
-			packet.writeD(item.getTemplate().getBodyPart());
-			packet.writeH(item.getEnchantLevel());
-			packet.writeH(0);
-			packet.writeH(item.getCustomType2());
-			packet.writeD(item.getObjectId());
+			writeShort(item.getTemplate().getType1());
+			writeInt(item.getObjectId());
+			writeInt(item.getId());
+			writeInt(item.getCount());
+			writeShort(item.getTemplate().getType2());
+			writeShort(item.getCustomType1());
+			writeInt(item.getTemplate().getBodyPart());
+			writeShort(item.getEnchantLevel());
+			writeShort(0);
+			writeShort(item.getCustomType2());
+			writeInt(item.getObjectId());
 			if (item.isAugmented())
 			{
-				packet.writeD(0x0000FFFF & item.getAugmentation().getAugmentationId());
-				packet.writeD(item.getAugmentation().getAugmentationId() >> 16);
+				writeInt(0x0000FFFF & item.getAugmentation().getAugmentationId());
+				writeInt(item.getAugmentation().getAugmentationId() >> 16);
 			}
 			else
 			{
-				packet.writeQ(0);
+				writeLong(0);
 			}
 		}
-		return true;
 	}
 }

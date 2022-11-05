@@ -16,11 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.Shortcut;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class ShortCutRegister implements IClientOutgoingPacket
+public class ShortCutRegister extends ServerPacket
 {
 	private final Shortcut _shortcut;
 	
@@ -34,33 +33,32 @@ public class ShortCutRegister implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.SHORT_CUT_REGISTER.writeId(packet);
-		packet.writeD(_shortcut.getType().ordinal());
-		packet.writeD(_shortcut.getSlot() + (_shortcut.getPage() * 12)); // C4 Client
+		ServerPackets.SHORT_CUT_REGISTER.writeId(this);
+		writeInt(_shortcut.getType().ordinal());
+		writeInt(_shortcut.getSlot() + (_shortcut.getPage() * 12)); // C4 Client
 		switch (_shortcut.getType())
 		{
 			case ITEM:
 			{
-				packet.writeD(_shortcut.getId());
+				writeInt(_shortcut.getId());
 				break;
 			}
 			case SKILL:
 			{
-				packet.writeD(_shortcut.getId());
-				packet.writeD(_shortcut.getLevel());
-				packet.writeC(0); // C5
+				writeInt(_shortcut.getId());
+				writeInt(_shortcut.getLevel());
+				writeByte(0); // C5
 				break;
 			}
 			case ACTION:
 			case MACRO:
 			case RECIPE:
 			{
-				packet.writeD(_shortcut.getId());
+				writeInt(_shortcut.getId());
 			}
 		}
-		packet.writeD(1); // ??
-		return true;
+		writeInt(1); // ??
 	}
 }

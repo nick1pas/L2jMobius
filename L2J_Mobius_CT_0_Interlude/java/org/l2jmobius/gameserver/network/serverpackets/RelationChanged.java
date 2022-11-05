@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Playable;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Luca Baldi
  */
-public class RelationChanged implements IClientOutgoingPacket
+public class RelationChanged extends ServerPacket
 {
 	public static final int RELATION_PVP_FLAG = 0x00002; // pvp ???
 	public static final int RELATION_HAS_KARMA = 0x00004; // karma ???
@@ -37,7 +36,7 @@ public class RelationChanged implements IClientOutgoingPacket
 	
 	private final int _objectId;
 	private final int _relation;
-	private final int _autoAttackable;
+	private final boolean _autoAttackable;
 	private final int _karma;
 	private final int _pvpFlag;
 	
@@ -45,20 +44,19 @@ public class RelationChanged implements IClientOutgoingPacket
 	{
 		_objectId = activeChar.getObjectId();
 		_relation = relation;
-		_autoAttackable = autoattackable ? 1 : 0;
+		_autoAttackable = autoattackable;
 		_karma = activeChar.getKarma();
 		_pvpFlag = activeChar.getPvpFlag();
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.RELATION_CHANGED.writeId(packet);
-		packet.writeD(_objectId);
-		packet.writeD(_relation);
-		packet.writeD(_autoAttackable);
-		packet.writeD(_karma);
-		packet.writeD(_pvpFlag);
-		return true;
+		ServerPackets.RELATION_CHANGED.writeId(this);
+		writeInt(_objectId);
+		writeInt(_relation);
+		writeInt(_autoAttackable);
+		writeInt(_karma);
+		writeInt(_pvpFlag);
 	}
 }

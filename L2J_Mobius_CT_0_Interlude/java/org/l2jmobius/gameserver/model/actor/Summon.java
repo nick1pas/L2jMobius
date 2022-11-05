@@ -61,12 +61,12 @@ import org.l2jmobius.gameserver.model.zone.ZoneRegion;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractNpcInfo.SummonInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.PetDelete;
 import org.l2jmobius.gameserver.network.serverpackets.PetInfo;
 import org.l2jmobius.gameserver.network.serverpackets.PetItemList;
 import org.l2jmobius.gameserver.network.serverpackets.PetStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.RelationChanged;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.TeleportToLocation;
 import org.l2jmobius.gameserver.taskmanager.DecayTaskManager;
@@ -1049,7 +1049,7 @@ public abstract class Summon extends Playable
 	}
 	
 	@Override
-	public void sendPacket(IClientOutgoingPacket packet)
+	public void sendPacket(ServerPacket packet)
 	{
 		if (_owner != null)
 		{
