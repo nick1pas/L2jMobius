@@ -18,14 +18,13 @@ package org.l2jmobius.gameserver.network.serverpackets.raidbossinfo;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
+public class ExRaidBossSpawnInfo extends ServerPacket
 {
 	private final List<Integer> _bossIds;
 	
@@ -35,14 +34,13 @@ public class ExRaidBossSpawnInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_RAID_BOSS_SPAWN_INFO.writeId(packet);
-		packet.writeD(_bossIds.size()); // alive count
+		ServerPackets.EX_RAID_BOSS_SPAWN_INFO.writeId(this);
+		writeInt(_bossIds.size()); // alive count
 		for (int id : _bossIds) // alive ids
 		{
-			packet.writeD(id);
+			writeInt(id);
 		}
-		return true;
 	}
 }

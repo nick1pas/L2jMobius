@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.adenadistribution;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExDivideAdenaCancel implements IClientOutgoingPacket
+public class ExDivideAdenaCancel extends ServerPacket
 {
 	public static final ExDivideAdenaCancel STATIC_PACKET = new ExDivideAdenaCancel();
 	
@@ -32,10 +31,9 @@ public class ExDivideAdenaCancel implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_DIVIDE_ADENA_CANCEL.writeId(packet);
-		packet.writeC(0); // TODO: Find me
-		return true;
+		ServerPackets.EX_DIVIDE_ADENA_CANCEL.writeId(this);
+		writeByte(0); // TODO: Find me
 	}
 }

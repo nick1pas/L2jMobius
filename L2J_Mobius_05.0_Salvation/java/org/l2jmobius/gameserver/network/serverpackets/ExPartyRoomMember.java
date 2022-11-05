@@ -20,18 +20,17 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.MatchingMemberType;
 import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.instancemanager.MapRegionManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.PartyMatchingRoom;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Gnacik
  */
-public class ExPartyRoomMember implements IClientOutgoingPacket
+public class ExPartyRoomMember extends ServerPacket
 {
 	private final PartyMatchingRoom _room;
 	private final MatchingMemberType _type;
@@ -43,28 +42,27 @@ public class ExPartyRoomMember implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PARTY_ROOM_MEMBER.writeId(packet);
-		packet.writeD(_type.ordinal());
-		packet.writeD(_room.getMembersCount());
+		ServerPackets.EX_PARTY_ROOM_MEMBER.writeId(this);
+		writeInt(_type.ordinal());
+		writeInt(_room.getMembersCount());
 		for (Player member : _room.getMembers())
 		{
-			packet.writeD(member.getObjectId());
-			packet.writeS(member.getName());
-			packet.writeD(member.getActiveClass());
-			packet.writeD(member.getLevel());
-			packet.writeD(MapRegionManager.getInstance().getBBs(member.getLocation()));
-			packet.writeD(_room.getMemberType(member).ordinal());
+			writeInt(member.getObjectId());
+			writeString(member.getName());
+			writeInt(member.getActiveClass());
+			writeInt(member.getLevel());
+			writeInt(MapRegionManager.getInstance().getBBs(member.getLocation()));
+			writeInt(_room.getMemberType(member).ordinal());
 			final Map<Integer, Long> instanceTimes = InstanceManager.getInstance().getAllInstanceTimes(member);
-			packet.writeD(instanceTimes.size());
+			writeInt(instanceTimes.size());
 			for (Entry<Integer, Long> entry : instanceTimes.entrySet())
 			{
 				final long instanceTime = TimeUnit.MILLISECONDS.toSeconds(entry.getValue() - System.currentTimeMillis());
-				packet.writeD(entry.getKey());
-				packet.writeD((int) instanceTime);
+				writeInt(entry.getKey());
+				writeInt((int) instanceTime);
 			}
 		}
-		return true;
 	}
 }

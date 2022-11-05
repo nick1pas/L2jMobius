@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.loginserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.IOutgoingPacket;
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.loginserver.network.OutgoingPackets;
+import org.l2jmobius.commons.network.WritablePacket;
+import org.l2jmobius.loginserver.network.LoginServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class PIAgreementCheck implements IOutgoingPacket
+public class PIAgreementCheck extends WritablePacket
 {
 	private final int _accountId;
 	private final int _status;
@@ -35,11 +34,10 @@ public class PIAgreementCheck implements IOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PI_AGREEMENT_CHECK.writeId(packet);
-		packet.writeD(_accountId);
-		packet.writeC(_status);
-		return true;
+		LoginServerPackets.PI_AGREEMENT_CHECK.writeId(this);
+		writeInt(_accountId);
+		writeByte(_status);
 	}
 }

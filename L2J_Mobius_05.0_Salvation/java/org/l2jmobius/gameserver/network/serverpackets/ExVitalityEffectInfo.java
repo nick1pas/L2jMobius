@@ -17,14 +17,13 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExVitalityEffectInfo implements IClientOutgoingPacket
+public class ExVitalityEffectInfo extends ServerPacket
 {
 	private final int _vitalityBonus;
 	private final int _vitalityItemsRemaining;
@@ -38,14 +37,13 @@ public class ExVitalityEffectInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_VITALITY_EFFECT_INFO.writeId(packet);
-		packet.writeD(_points);
-		packet.writeD(_vitalityBonus); // Vitality Bonus
-		packet.writeH(0); // Vitality additional bonus in %
-		packet.writeH(_vitalityItemsRemaining); // How much vitality items remaining for use
-		packet.writeH(Config.VITALITY_MAX_ITEMS_ALLOWED); // Max number of items for use
-		return true;
+		ServerPackets.EX_VITALITY_EFFECT_INFO.writeId(this);
+		writeInt(_points);
+		writeInt(_vitalityBonus); // Vitality Bonus
+		writeShort(0); // Vitality additional bonus in %
+		writeShort(_vitalityItemsRemaining); // How much vitality items remaining for use
+		writeShort(Config.VITALITY_MAX_ITEMS_ALLOWED); // Max number of items for use
 	}
 }

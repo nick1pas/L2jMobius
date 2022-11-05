@@ -16,23 +16,16 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.monsterbook;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.monsterbook.ExMonsterBook;
 import org.l2jmobius.gameserver.network.serverpackets.monsterbook.ExMonsterBookOpenResult;
 
 /**
  * @author Mobius
  */
-public class RequestMonsterBookOpen implements IClientIncomingPacket
+public class RequestMonsterBookOpen implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

@@ -19,19 +19,19 @@ package org.l2jmobius.gameserver.network.clientpackets.friend;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.L2FriendSay;
 
 /**
  * Recieve Private (Friend) Message - 0xCC Format: c SS S: Message S: Receiving Player
  * @author Tempy
  */
-public class RequestSendFriendMsg implements IClientIncomingPacket
+public class RequestSendFriendMsg implements ClientPacket
 {
 	private static Logger LOGGER_CHAT = Logger.getLogger("chat");
 	
@@ -39,11 +39,10 @@ public class RequestSendFriendMsg implements IClientIncomingPacket
 	private String _reciever;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_message = packet.readS();
-		_reciever = packet.readS();
-		return true;
+		_message = packet.readString();
+		_reciever = packet.readString();
 	}
 	
 	@Override

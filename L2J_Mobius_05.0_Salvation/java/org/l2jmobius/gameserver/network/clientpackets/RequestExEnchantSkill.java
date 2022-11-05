@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EnchantSkillGroupsData;
 import org.l2jmobius.gameserver.data.xml.SkillData;
@@ -31,6 +31,7 @@ import org.l2jmobius.gameserver.model.holders.EnchantSkillHolder;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.GameClient;
+import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ExEnchantSkillInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ExEnchantSkillInfoDetail;
@@ -40,7 +41,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * @author -Wooden-
  */
-public class RequestExEnchantSkill implements IClientIncomingPacket
+public class RequestExEnchantSkill implements ClientPacket
 {
 	private static final Logger LOGGER = Logger.getLogger(RequestExEnchantSkill.class.getName());
 	private static final Logger LOGGER_ENCHANT = Logger.getLogger("enchant.skills");
@@ -51,20 +52,19 @@ public class RequestExEnchantSkill implements IClientIncomingPacket
 	private int _skillSubLevel;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int type = packet.readD();
+		final int type = packet.readInt();
 		if ((type < 0) || (type >= SkillEnchantType.values().length))
 		{
-			LOGGER.warning("Client: " + client + " send incorrect type " + type + " on packet: " + getClass().getSimpleName());
-			return false;
+			PacketLogger.warning("Client send incorrect type " + type + " on packet: " + getClass().getSimpleName());
+			return;
 		}
 		
 		_type = SkillEnchantType.values()[type];
-		_skillId = packet.readD();
-		_skillLevel = packet.readH();
-		_skillSubLevel = packet.readH();
-		return true;
+		_skillId = packet.readInt();
+		_skillLevel = packet.readShort();
+		_skillSubLevel = packet.readShort();
 	}
 	
 	@Override
@@ -75,14 +75,15 @@ public class RequestExEnchantSkill implements IClientIncomingPacket
 			return;
 		}
 		
-		if ((_skillId <= 0) || (_skillLevel <= 0) || (_skillSubLevel < 0))
+		final Player player = client.getPlayer();
+		if (player == null)
 		{
 			return;
 		}
 		
-		final Player player = client.getPlayer();
-		if (player == null)
+		if ((_skillId <= 0) || (_skillLevel <= 0) || (_skillSubLevel < 0))
 		{
+			PacketLogger.warning(player + " tried to exploit RequestExEnchantSkill!");
 			return;
 		}
 		

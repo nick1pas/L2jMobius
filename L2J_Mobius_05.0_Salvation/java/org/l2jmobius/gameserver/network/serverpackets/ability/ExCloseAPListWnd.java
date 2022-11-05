@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ability;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExCloseAPListWnd implements IClientOutgoingPacket
+public class ExCloseAPListWnd extends ServerPacket
 {
 	public static final ExCloseAPListWnd STATIC_PACKET = new ExCloseAPListWnd();
 	
@@ -32,9 +31,8 @@ public class ExCloseAPListWnd implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CLOSE_AP_LIST_WND.writeId(packet);
-		return true;
+		ServerPackets.EX_CLOSE_AP_LIST_WND.writeId(this);
 	}
 }

@@ -17,7 +17,7 @@
 package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
 import org.l2jmobius.gameserver.data.xml.FakePlayerData;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author UnAfraid
  */
-public class RequestCharacterNameCreatable implements IClientIncomingPacket
+public class RequestCharacterNameCreatable implements ClientPacket
 {
 	private String _name;
 	
@@ -38,10 +38,9 @@ public class RequestCharacterNameCreatable implements IClientIncomingPacket
 	public static final int CANNOT_CREATE_SERVER = 5;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_name = packet.readS();
-		return true;
+		_name = packet.readString();
 	}
 	
 	@Override

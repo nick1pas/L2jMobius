@@ -16,13 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author nBd
  */
-public class RequestEnchant implements IClientOutgoingPacket
+public class RequestEnchant extends ServerPacket
 {
 	private final int _result;
 	
@@ -32,10 +31,9 @@ public class RequestEnchant implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PRIVATE_STORE_WHOLE_MSG.writeId(packet);
-		packet.writeD(_result);
-		return true;
+		ServerPackets.EX_PRIVATE_STORE_WHOLE_MSG.writeId(this);
+		writeInt(_result);
 	}
 }

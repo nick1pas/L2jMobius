@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.Henna;
 import org.l2jmobius.gameserver.model.stats.BaseStat;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * This server packet sends the player's henna information using the Game Master's UI.
  * @author KenM, Zoey76
  */
-public class GMHennaInfo implements IClientOutgoingPacket
+public class GMHennaInfo extends ServerPacket
 {
 	private final Player _player;
 	private final List<Henna> _hennas = new ArrayList<>();
@@ -47,36 +46,35 @@ public class GMHennaInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.GMHENNA_INFO.writeId(packet);
-		packet.writeH(_player.getHennaValue(BaseStat.INT)); // equip INT
-		packet.writeH(_player.getHennaValue(BaseStat.STR)); // equip STR
-		packet.writeH(_player.getHennaValue(BaseStat.CON)); // equip CON
-		packet.writeH(_player.getHennaValue(BaseStat.MEN)); // equip MEN
-		packet.writeH(_player.getHennaValue(BaseStat.DEX)); // equip DEX
-		packet.writeH(_player.getHennaValue(BaseStat.WIT)); // equip WIT
-		packet.writeH(_player.getHennaValue(BaseStat.LUC)); // equip LUC
-		packet.writeH(_player.getHennaValue(BaseStat.CHA)); // equip CHA
-		packet.writeD(3); // Slots
-		packet.writeD(_hennas.size()); // Size
+		ServerPackets.GMHENNA_INFO.writeId(this);
+		writeShort(_player.getHennaValue(BaseStat.INT)); // equip INT
+		writeShort(_player.getHennaValue(BaseStat.STR)); // equip STR
+		writeShort(_player.getHennaValue(BaseStat.CON)); // equip CON
+		writeShort(_player.getHennaValue(BaseStat.MEN)); // equip MEN
+		writeShort(_player.getHennaValue(BaseStat.DEX)); // equip DEX
+		writeShort(_player.getHennaValue(BaseStat.WIT)); // equip WIT
+		writeShort(_player.getHennaValue(BaseStat.LUC)); // equip LUC
+		writeShort(_player.getHennaValue(BaseStat.CHA)); // equip CHA
+		writeInt(3); // Slots
+		writeInt(_hennas.size()); // Size
 		for (Henna henna : _hennas)
 		{
-			packet.writeD(henna.getDyeId());
-			packet.writeD(1);
+			writeInt(henna.getDyeId());
+			writeInt(1);
 		}
 		if (_player.getHenna(4) != null)
 		{
-			packet.writeD(_player.getHenna(4).getDyeId());
-			packet.writeD(0); // Premium Slot Dye Time Left
-			packet.writeD(_player.getHenna(4).isAllowedClass(_player.getClassId()) ? 1 : 0);
+			writeInt(_player.getHenna(4).getDyeId());
+			writeInt(0); // Premium Slot Dye Time Left
+			writeInt(_player.getHenna(4).isAllowedClass(_player.getClassId()));
 		}
 		else
 		{
-			packet.writeD(0); // Premium Slot Dye ID
-			packet.writeD(0); // Premium Slot Dye Time Left
-			packet.writeD(0); // Premium Slot Dye ID isValid
+			writeInt(0); // Premium Slot Dye ID
+			writeInt(0); // Premium Slot Dye Time Left
+			writeInt(0); // Premium Slot Dye ID isValid
 		}
-		return true;
 	}
 }

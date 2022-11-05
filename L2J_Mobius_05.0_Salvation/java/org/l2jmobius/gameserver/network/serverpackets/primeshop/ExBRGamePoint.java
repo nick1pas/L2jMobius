@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.primeshop;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class ExBRGamePoint implements IClientOutgoingPacket
+public class ExBRGamePoint extends ServerPacket
 {
 	private final int _charId;
 	private final int _charPoints;
@@ -36,12 +35,11 @@ public class ExBRGamePoint implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_BR_GAME_POINT.writeId(packet);
-		packet.writeD(_charId);
-		packet.writeQ(_charPoints);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_BR_GAME_POINT.writeId(this);
+		writeInt(_charId);
+		writeLong(_charPoints);
+		writeInt(0);
 	}
 }
