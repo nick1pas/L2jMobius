@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.compound;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.CombinationItemsData;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -27,7 +26,7 @@ import org.l2jmobius.gameserver.model.item.combination.CombinationItemType;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantOneFail;
@@ -36,14 +35,8 @@ import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantSucess;
 /**
  * @author UnAfraid
  */
-public class RequestNewEnchantTry implements IClientIncomingPacket
+public class RequestNewEnchantTry implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

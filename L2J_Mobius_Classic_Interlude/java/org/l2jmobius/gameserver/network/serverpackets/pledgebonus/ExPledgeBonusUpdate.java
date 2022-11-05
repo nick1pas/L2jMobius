@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.pledgebonus;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.ClanRewardType;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExPledgeBonusUpdate implements IClientOutgoingPacket
+public class ExPledgeBonusUpdate extends ServerPacket
 {
 	private final ClanRewardType _type;
 	private final int _value;
@@ -36,11 +35,10 @@ public class ExPledgeBonusUpdate implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_BONUS_UPDATE.writeId(packet);
-		packet.writeC(_type.getClientId());
-		packet.writeD(_value);
-		return true;
+		ServerPackets.EX_PLEDGE_BONUS_UPDATE.writeId(this);
+		writeByte(_type.getClientId());
+		writeInt(_value);
 	}
 }

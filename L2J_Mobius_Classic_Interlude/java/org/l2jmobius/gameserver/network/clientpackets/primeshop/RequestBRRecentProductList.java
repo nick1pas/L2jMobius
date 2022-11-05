@@ -16,25 +16,11 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.primeshop;
 
-import org.l2jmobius.commons.network.PacketReader;
-import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 
 /**
  * @author Gnacik, UnAfraid
  */
-public class RequestBRRecentProductList implements IClientIncomingPacket
+public class RequestBRRecentProductList implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
-	@Override
-	public void run(GameClient client)
-	{
-		// Player player = client.getPlayer();
-		// TODO: Implement it.
-	}
 }

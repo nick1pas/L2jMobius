@@ -21,7 +21,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.OptionalLong;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.enums.AttributeType;
@@ -49,7 +49,7 @@ import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 /**
  * The Class MultiSellChoose.
  */
-public class MultiSellChoose implements IClientIncomingPacket
+public class MultiSellChoose implements ClientPacket
 {
 	private int _listId;
 	private int _entryId;
@@ -67,23 +67,22 @@ public class MultiSellChoose implements IClientIncomingPacket
 	private short _darkDefence;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_listId = packet.readD();
-		_entryId = packet.readD();
-		_amount = packet.readQ();
-		_enchantLevel = packet.readH();
-		_augmentOption1 = packet.readD();
-		_augmentOption2 = packet.readD();
-		_attackAttribute = (short) packet.readH();
-		_attributePower = (short) packet.readH();
-		_fireDefence = (short) packet.readH();
-		_waterDefence = (short) packet.readH();
-		_windDefence = (short) packet.readH();
-		_earthDefence = (short) packet.readH();
-		_holyDefence = (short) packet.readH();
-		_darkDefence = (short) packet.readH();
-		return true;
+		_listId = packet.readInt();
+		_entryId = packet.readInt();
+		_amount = packet.readLong();
+		_enchantLevel = packet.readShort();
+		_augmentOption1 = packet.readInt();
+		_augmentOption2 = packet.readInt();
+		_attackAttribute = (short) packet.readShort();
+		_attributePower = (short) packet.readShort();
+		_fireDefence = (short) packet.readShort();
+		_waterDefence = (short) packet.readShort();
+		_windDefence = (short) packet.readShort();
+		_earthDefence = (short) packet.readShort();
+		_holyDefence = (short) packet.readShort();
+		_darkDefence = (short) packet.readShort();
 	}
 	
 	@Override

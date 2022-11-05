@@ -16,18 +16,18 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.commission;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ItemCommissionManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.commission.ExCloseCommission;
 
 /**
  * @author NosBit, Ren
  */
-public class RequestCommissionRegister implements IClientIncomingPacket
+public class RequestCommissionRegister implements ClientPacket
 {
 	private int _itemObjectId;
 	private long _pricePerUnit;
@@ -36,18 +36,17 @@ public class RequestCommissionRegister implements IClientIncomingPacket
 	private int _feeDiscountType; // 0 = none, 1 = 30% discount, 2 = 100% discount;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_itemObjectId = packet.readD();
-		packet.readS(); // Item Name they use it for search we will use server side available names.
-		_pricePerUnit = packet.readQ();
-		_itemCount = packet.readQ();
-		_durationType = packet.readD();
-		_feeDiscountType = packet.readH();
-		// packet.readH(); // Unknown IDS;
-		// packet.readD(); // Unknown
-		// packet.readD(); // Unknown
-		return true;
+		_itemObjectId = packet.readInt();
+		packet.readString(); // Item Name they use it for search we will use server side available names.
+		_pricePerUnit = packet.readLong();
+		_itemCount = packet.readLong();
+		_durationType = packet.readInt();
+		_feeDiscountType = packet.readShort();
+		// packet.readShort(); // Unknown IDS;
+		// packet.readInt(); // Unknown
+		// packet.readInt(); // Unknown
 	}
 	
 	@Override

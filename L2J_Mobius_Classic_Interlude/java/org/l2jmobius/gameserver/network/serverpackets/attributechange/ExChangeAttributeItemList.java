@@ -18,9 +18,8 @@ package org.l2jmobius.gameserver.network.serverpackets.attributechange;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ItemInfo;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -38,15 +37,14 @@ public class ExChangeAttributeItemList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHANGE_ATTRIBUTE_ITEM_LIST.writeId(packet);
-		packet.writeD(_itemId);
-		packet.writeD(_itemsList.size());
+		ServerPackets.EX_CHANGE_ATTRIBUTE_ITEM_LIST.writeId(this);
+		writeInt(_itemId);
+		writeInt(_itemsList.size());
 		for (ItemInfo item : _itemsList)
 		{
-			writeItem(packet, item);
+			writeItem(item);
 		}
-		return true;
 	}
 }

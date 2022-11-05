@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.BeautyShopData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.beautyshop.BeautyData;
@@ -27,19 +27,18 @@ import org.l2jmobius.gameserver.network.serverpackets.ExResponseBeautyRegistRese
 /**
  * @author Sdw
  */
-public class RequestShowResetShopList implements IClientIncomingPacket
+public class RequestShowResetShopList implements ClientPacket
 {
 	private int _hairId;
 	private int _faceId;
 	private int _colorId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_hairId = packet.readD();
-		_faceId = packet.readD();
-		_colorId = packet.readD();
-		return true;
+		_hairId = packet.readInt();
+		_faceId = packet.readInt();
+		_colorId = packet.readInt();
 	}
 	
 	@Override

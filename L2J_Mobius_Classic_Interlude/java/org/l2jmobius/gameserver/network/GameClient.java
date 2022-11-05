@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network;
 
-import java.net.InetAddress;
-import java.net.InetSocketAddress;
+import java.nio.ByteBuffer;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
@@ -28,9 +27,8 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
-import org.l2jmobius.commons.network.ChannelInboundHandler;
-import org.l2jmobius.commons.network.ICrypt;
-import org.l2jmobius.commons.network.IIncomingPacket;
+import org.l2jmobius.commons.network.EncryptionInterface;
+import org.l2jmobius.commons.network.NetClient;
 import org.l2jmobius.gameserver.LoginServerThread;
 import org.l2jmobius.gameserver.LoginServerThread.SessionKey;
 import org.l2jmobius.gameserver.data.sql.CharNameTable;
@@ -50,34 +48,29 @@ import org.l2jmobius.gameserver.network.serverpackets.AcquireSkillList;
 import org.l2jmobius.gameserver.network.serverpackets.ExAbnormalStatusUpdateFromTarget;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
 import org.l2jmobius.gameserver.network.serverpackets.ExUserInfoAbnormalVisualEffect;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
 import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.NpcSay;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SkillList;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.security.SecondaryPasswordAuth;
 import org.l2jmobius.gameserver.util.FloodProtectors;
 
-import io.netty.channel.Channel;
-import io.netty.channel.ChannelHandlerContext;
-
 /**
- * Represents a client connected on Game Server.
+ * Represents a client connected on GameServer.
  * @author KenM
  */
-public class GameClient extends ChannelInboundHandler<GameClient>
+public class GameClient extends NetClient
 {
-	protected static final Logger LOGGER = Logger.getLogger(GameClient.class.getName());
 	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
 	
 	private final FloodProtectors _floodProtectors = new FloodProtectors(this);
 	private final ReentrantLock _playerLock = new ReentrantLock();
-	private final Crypt _crypt = new Crypt();
-	private InetAddress _addr;
-	private Channel _channel;
+	private ConnectionState _connectionState = ConnectionState.CONNECTED;
+	private Encryption _encryption = null;
 	private String _accountName;
-	private SessionKey _sessionId;
+	private SessionKey _sessionKey;
 	private Player _player;
 	private SecondaryPasswordAuth _secondaryAuth;
 	private ClientHardwareInfoHolder _hardwareInfo;
@@ -89,80 +82,43 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 	private int[][] _trace;
 	
 	@Override
-	public void channelActive(ChannelHandlerContext ctx)
+	public void onConnection()
 	{
-		super.channelActive(ctx);
-		
-		setConnectionState(ConnectionState.CONNECTED);
-		final InetSocketAddress address = (InetSocketAddress) ctx.channel().remoteAddress();
-		_addr = address.getAddress();
-		_channel = ctx.channel();
-		LOGGER_ACCOUNTING.finer("Client Connected: " + ctx.channel());
+		LOGGER_ACCOUNTING.finer("Client connected: " + getIp());
 	}
 	
 	@Override
-	public void channelInactive(ChannelHandlerContext ctx)
+	public void onDisconnection()
 	{
-		LOGGER_ACCOUNTING.finer("Client Disconnected: " + ctx.channel());
-		LoginServerThread.getInstance().sendLogout(getAccountName());
-		
+		LOGGER_ACCOUNTING.finer("Client disconnected: " + this);
+		LoginServerThread.getInstance().sendLogout(_accountName);
 		if ((_player == null) || !_player.isInOfflineMode())
 		{
 			Disconnection.of(this).onDisconnection();
 		}
-	}
-	
-	@Override
-	protected void channelRead0(ChannelHandlerContext ctx, IIncomingPacket<GameClient> packet)
-	{
-		try
-		{
-			packet.run(this);
-		}
-		catch (Exception e)
-		{
-			LOGGER.log(Level.WARNING, "Exception for: " + toString() + " on packet.run: " + packet.getClass().getSimpleName(), e);
-		}
-	}
-	
-	@Override
-	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
-	{
+		_connectionState = ConnectionState.DISCONNECTED;
 	}
 	
 	public void closeNow()
 	{
-		if (_channel != null)
-		{
-			_channel.close();
-		}
+		disconnect();
 	}
 	
-	public void close(IClientOutgoingPacket packet)
+	public void close(ServerPacket packet)
 	{
 		sendPacket(packet);
 		closeNow();
 	}
 	
-	public Channel getChannel()
-	{
-		return _channel;
-	}
-	
 	public byte[] enableCrypt()
 	{
 		final byte[] key = BlowFishKeygen.getRandomKey();
-		_crypt.setKey(key);
+		if (Config.PACKET_ENCRYPTION)
+		{
+			_encryption = new Encryption();
+			_encryption.setKey(key);
+		}
 		return key;
-	}
-	
-	/**
-	 * For loaded offline traders returns localhost address.
-	 * @return cached connection IP address, for checking detached clients.
-	 */
-	public InetAddress getConnectionAddress()
-	{
-		return _addr;
 	}
 	
 	public Player getPlayer()
@@ -195,9 +151,9 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 		return _isAuthedGG;
 	}
 	
-	public void setAccountName(String activeChar)
+	public void setAccountName(String accountName)
 	{
-		_accountName = activeChar;
+		_accountName = accountName;
 		if (SecondaryAuthData.getInstance().isEnabled())
 		{
 			_secondaryAuth = new SecondaryPasswordAuth(this);
@@ -209,17 +165,17 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 		return _accountName;
 	}
 	
-	public void setSessionId(SessionKey sk)
+	public void setSessionId(SessionKey sessionKey)
 	{
-		_sessionId = sk;
+		_sessionKey = sessionKey;
 	}
 	
 	public SessionKey getSessionId()
 	{
-		return _sessionId;
+		return _sessionKey;
 	}
 	
-	public void sendPacket(IClientOutgoingPacket packet)
+	public void sendPacket(ServerPacket packet)
 	{
 		if (_isDetached || (packet == null))
 		{
@@ -260,19 +216,29 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 			}
 		}
 		
-		// Write into the channel.
-		_channel.writeAndFlush(packet);
-		
-		// Run packet implementation.
-		packet.runImpl(_player);
+		try
+		{
+			if ((getChannel() != null) && getChannel().isConnected())
+			{
+				final ByteBuffer byteBuffer = packet.getSendableByteBuffer(_encryption);
+				if (byteBuffer != null)
+				{
+					// Send the packet data.
+					getChannel().write(byteBuffer);
+					
+					// Run packet implementation.
+					packet.run(_player);
+				}
+			}
+		}
+		catch (Exception ignored)
+		{
+		}
 	}
 	
-	/**
-	 * @param smId
-	 */
-	public void sendPacket(SystemMessageId smId)
+	public void sendPacket(SystemMessageId systemMessageId)
 	{
-		sendPacket(new SystemMessage(smId));
+		sendPacket(new SystemMessage(systemMessageId));
 	}
 	
 	public boolean isDetached()
@@ -598,41 +564,14 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 		return info.getObjectId();
 	}
 	
-	/**
-	 * Produces the best possible string representation of this client.
-	 */
-	@Override
-	public String toString()
+	public void setConnectionState(ConnectionState connectionState)
 	{
-		try
-		{
-			final InetAddress address = _addr;
-			final ConnectionState state = (ConnectionState) getConnectionState();
-			switch (state)
-			{
-				case CONNECTED:
-				{
-					return "[IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
-				}
-				case AUTHENTICATED:
-				{
-					return "[Account: " + _accountName + " - IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
-				}
-				case ENTERING:
-				case IN_GAME:
-				{
-					return "[Character: " + (_player == null ? "disconnected" : _player.getName() + "[" + _player.getObjectId() + "]") + " - Account: " + _accountName + " - IP: " + (address == null ? "disconnected" : address.getHostAddress()) + "]";
-				}
-				default:
-				{
-					throw new IllegalStateException("Missing state on switch");
-				}
-			}
-		}
-		catch (NullPointerException e)
-		{
-			return "[Character read failed due to disconnect]";
-		}
+		_connectionState = connectionState;
+	}
+	
+	public ConnectionState getConnectionState()
+	{
+		return _connectionState;
 	}
 	
 	public void setProtocolVersion(int version)
@@ -665,9 +604,10 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 		return _trace;
 	}
 	
-	public ICrypt getCrypt()
+	@Override
+	public EncryptionInterface getEncryption()
 	{
-		return _crypt;
+		return _encryption;
 	}
 	
 	/**
@@ -684,5 +624,50 @@ public class GameClient extends ChannelInboundHandler<GameClient>
 	public void setHardwareInfo(ClientHardwareInfoHolder hardwareInfo)
 	{
 		_hardwareInfo = hardwareInfo;
+	}
+	
+	/**
+	 * Produces the best possible string representation of this client.
+	 */
+	@Override
+	public String toString()
+	{
+		try
+		{
+			final String ip = getIp();
+			final ConnectionState state = getConnectionState();
+			switch (state)
+			{
+				case DISCONNECTED:
+				{
+					if (_accountName != null)
+					{
+						return "[Account: " + _accountName + " - IP: " + (ip == null ? "disconnected" : ip) + "]";
+					}
+					return "[IP: " + (ip == null ? "disconnected" : ip) + "]";
+				}
+				case CONNECTED:
+				{
+					return "[IP: " + (ip == null ? "disconnected" : ip) + "]";
+				}
+				case AUTHENTICATED:
+				{
+					return "[Account: " + _accountName + " - IP: " + (ip == null ? "disconnected" : ip) + "]";
+				}
+				case ENTERING:
+				case IN_GAME:
+				{
+					return "[Character: " + (_player == null ? "disconnected" : _player.getName() + "[" + _player.getObjectId() + "]") + " - Account: " + _accountName + " - IP: " + (ip == null ? "disconnected" : ip) + "]";
+				}
+				default:
+				{
+					throw new IllegalStateException("Missing state on switch.");
+				}
+			}
+		}
+		catch (NullPointerException e)
+		{
+			return "[Character read failed due to disconnect]";
+		}
 	}
 }

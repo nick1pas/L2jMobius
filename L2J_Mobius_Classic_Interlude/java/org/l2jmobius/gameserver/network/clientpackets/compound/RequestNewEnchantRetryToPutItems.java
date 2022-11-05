@@ -18,7 +18,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.compound;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.CombinationItemsData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.CompoundRequest;
@@ -26,24 +26,23 @@ import org.l2jmobius.gameserver.model.item.combination.CombinationItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ExEnchantRetryToPutItemFail;
 import org.l2jmobius.gameserver.network.serverpackets.ExEnchantRetryToPutItemOk;
 
 /**
  * @author Sdw
  */
-public class RequestNewEnchantRetryToPutItems implements IClientIncomingPacket
+public class RequestNewEnchantRetryToPutItems implements ClientPacket
 {
 	private int _firstItemObjectId;
 	private int _secondItemObjectId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_firstItemObjectId = packet.readD();
-		_secondItemObjectId = packet.readD();
-		return true;
+		_firstItemObjectId = packet.readInt();
+		_secondItemObjectId = packet.readInt();
 	}
 	
 	@Override

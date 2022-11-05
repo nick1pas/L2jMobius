@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.Movie;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author St3eT
  */
-public class ExStopScenePlayer implements IClientOutgoingPacket
+public class ExStopScenePlayer extends ServerPacket
 {
 	private final Movie _movie;
 	
@@ -33,10 +32,9 @@ public class ExStopScenePlayer implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_STOP_SCENE_PLAYER.writeId(packet);
-		packet.writeD(_movie.getClientId());
-		return true;
+		ServerPackets.EX_STOP_SCENE_PLAYER.writeId(this);
+		writeInt(_movie.getClientId());
 	}
 }
