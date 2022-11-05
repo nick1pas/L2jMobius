@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.instancemanager.ClanEntryManager;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.entry.PledgeRecruitInfo;
@@ -26,15 +26,14 @@ import org.l2jmobius.gameserver.network.serverpackets.ExPledgeRecruitBoardDetail
 /**
  * @author Sdw
  */
-public class RequestPledgeRecruitBoardDetail implements IClientIncomingPacket
+public class RequestPledgeRecruitBoardDetail implements ClientPacket
 {
 	private int _clanId;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_clanId = packet.readD();
-		return true;
+		_clanId = packet.readInt();
 	}
 	
 	@Override

@@ -18,13 +18,12 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExMPCCPartymasterList implements IClientOutgoingPacket
+public class ExMPCCPartymasterList extends ServerPacket
 {
 	private final Set<String> _leadersName;
 	
@@ -34,11 +33,10 @@ public class ExMPCCPartymasterList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MPCC_PARTYMASTER_LIST.writeId(packet);
-		packet.writeD(_leadersName.size());
-		_leadersName.forEach(packet::writeS);
-		return true;
+		ServerPackets.EX_MPCC_PARTYMASTER_LIST.writeId(this);
+		writeInt(_leadersName.size());
+		_leadersName.forEach(this::writeString);
 	}
 }

@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ExInzoneWaiting;
@@ -24,15 +24,14 @@ import org.l2jmobius.gameserver.network.serverpackets.ExInzoneWaiting;
 /**
  * @author Mobius
  */
-public class RequestInzoneWaitingTime implements IClientIncomingPacket
+public class RequestInzoneWaitingTime implements ClientPacket
 {
 	private boolean _hide;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_hide = packet.readC() == 0;
-		return true;
+		_hide = packet.readByte() == 0;
 	}
 	
 	@Override

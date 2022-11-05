@@ -19,7 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets.crystalization;
 import java.util.List;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.ItemCrystallizationData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -30,7 +30,7 @@ import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.crystalization.ExGetCrystalizingEstimation;
 import org.l2jmobius.gameserver.util.Util;
@@ -38,17 +38,16 @@ import org.l2jmobius.gameserver.util.Util;
 /**
  * @author UnAfraid
  */
-public class RequestCrystallizeEstimate implements IClientIncomingPacket
+public class RequestCrystallizeEstimate implements ClientPacket
 {
 	private int _objectId;
 	private long _count;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_count = packet.readQ();
-		return true;
+		_objectId = packet.readInt();
+		_count = packet.readLong();
 	}
 	
 	@Override

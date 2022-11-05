@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.monsterbook;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExMonsterBookOpenResult implements IClientOutgoingPacket
+public class ExMonsterBookOpenResult extends ServerPacket
 {
 	private final boolean _isOpen;
 	
@@ -33,10 +32,9 @@ public class ExMonsterBookOpenResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MONSTER_BOOK_OPEN_RESULT.writeId(packet);
-		packet.writeC(_isOpen ? 1 : 0);
-		return true;
+		ServerPackets.EX_MONSTER_BOOK_OPEN_RESULT.writeId(this);
+		writeByte(_isOpen);
 	}
 }

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.attendance;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExConfirmVipAttendanceCheck implements IClientOutgoingPacket
+public class ExConfirmVipAttendanceCheck extends ServerPacket
 {
 	boolean _available;
 	int _index;
@@ -35,13 +34,12 @@ public class ExConfirmVipAttendanceCheck implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CONFIRM_VIP_ATTENDANCE_CHECK.writeId(packet);
-		packet.writeC(_available ? 1 : 0); // can receive reward today? 1 else 0
-		packet.writeC(_index); // active reward index
-		packet.writeD(0);
-		packet.writeD(0);
-		return true;
+		ServerPackets.EX_CONFIRM_VIP_ATTENDANCE_CHECK.writeId(this);
+		writeByte(_available); // can receive reward today? 1 else 0
+		writeByte(_index); // active reward index
+		writeInt(0);
+		writeInt(0);
 	}
 }

@@ -16,19 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.monsterbook;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExMonsterBookCloseForce implements IClientOutgoingPacket
+public class ExMonsterBookCloseForce extends ServerPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_MONSTER_BOOK_CLOSE_FORCE.writeId(packet);
-		return true;
+		ServerPackets.EX_MONSTER_BOOK_CLOSE_FORCE.writeId(this);
 	}
 }

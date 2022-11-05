@@ -23,7 +23,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.SkillLearn;
@@ -33,41 +33,43 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.ability.ExAcquireAPSkillList;
 
 /**
  * @author UnAfraid
  */
-public class RequestAcquireAbilityList implements IClientIncomingPacket
+public class RequestAcquireAbilityList implements ClientPacket
 {
 	private static final int TREE_SIZE = 3;
-	private final Map<Integer, SkillHolder> _skills = new LinkedHashMap<>();
+	
+	private Map<Integer, SkillHolder> _skills = new LinkedHashMap<>();
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		packet.readD(); // Total size
+		packet.readInt(); // Total size
 		for (int i = 0; i < TREE_SIZE; i++)
 		{
-			final int size = packet.readD();
+			final int size = packet.readInt();
 			for (int j = 0; j < size; j++)
 			{
-				final SkillHolder holder = new SkillHolder(packet.readD(), packet.readD());
+				final SkillHolder holder = new SkillHolder(packet.readInt(), packet.readInt());
 				if (holder.getSkillLevel() < 1)
 				{
-					PacketLogger.warning("Player " + client + " is trying to learn skill " + holder + " by sending packet with level 0!");
-					return false;
+					_skills = null;
+					PacketLogger.warning("Player is trying to learn skill " + holder + " by sending packet with level 0!");
+					return;
 				}
 				if (_skills.putIfAbsent(holder.getSkillId(), holder) != null)
 				{
-					PacketLogger.warning("Player " + client + " is trying to send two times one skill " + holder + " to learn!");
-					return false;
+					_skills = null;
+					PacketLogger.warning("Player is trying to send two times one skill " + holder + " to learn!");
+					return;
 				}
 			}
 		}
-		return true;
 	}
 	
 	@Override
@@ -76,6 +78,12 @@ public class RequestAcquireAbilityList implements IClientIncomingPacket
 		final Player player = client.getPlayer();
 		if (player == null)
 		{
+			return;
+		}
+		
+		if (_skills == null)
+		{
+			PacketLogger.warning("Player " + player + " tried to exploit RequestAcquireAbilityList!");
 			return;
 		}
 		

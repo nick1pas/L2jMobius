@@ -18,11 +18,10 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.TradeItem;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 public class PrivateStoreManageListBuy extends AbstractItemPacket
 {
@@ -42,39 +41,38 @@ public class PrivateStoreManageListBuy extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.PRIVATE_STORE_BUY_MANAGE_LIST.writeId(packet);
-		packet.writeC(_sendType);
+		ServerPackets.PRIVATE_STORE_BUY_MANAGE_LIST.writeId(this);
+		writeByte(_sendType);
 		if (_sendType == 2)
 		{
-			packet.writeD(_itemList.size());
-			packet.writeD(_itemList.size());
+			writeInt(_itemList.size());
+			writeInt(_itemList.size());
 			for (Item item : _itemList)
 			{
-				writeItem(packet, item);
-				packet.writeQ(item.getTemplate().getReferencePrice() * 2);
+				writeItem(item);
+				writeLong(item.getTemplate().getReferencePrice() * 2);
 			}
 		}
 		else
 		{
-			packet.writeD(_objId);
-			packet.writeQ(_playerAdena);
-			packet.writeD(0);
+			writeInt(_objId);
+			writeLong(_playerAdena);
+			writeInt(0);
 			for (Item item : _itemList)
 			{
-				writeItem(packet, item);
-				packet.writeQ(item.getTemplate().getReferencePrice() * 2);
+				writeItem(item);
+				writeLong(item.getTemplate().getReferencePrice() * 2);
 			}
-			packet.writeD(0);
+			writeInt(0);
 			for (TradeItem item2 : _buyList)
 			{
-				writeItem(packet, item2);
-				packet.writeQ(item2.getPrice());
-				packet.writeQ(item2.getItem().getReferencePrice() * 2);
-				packet.writeQ(item2.getCount());
+				writeItem(item2);
+				writeLong(item2.getPrice());
+				writeLong(item2.getItem().getReferencePrice() * 2);
+				writeLong(item2.getCount());
 			}
 		}
-		return true;
 	}
 }

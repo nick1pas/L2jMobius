@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.enums.MatchingRoomType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.matching.MatchingRoom;
@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.network.serverpackets.PartyRoomInfo;
 /**
  * author: Gnacik
  */
-public class RequestPartyMatchList implements IClientIncomingPacket
+public class RequestPartyMatchList implements ClientPacket
 {
 	private int _roomId;
 	private int _maxMembers;
@@ -37,15 +37,14 @@ public class RequestPartyMatchList implements IClientIncomingPacket
 	private String _roomTitle;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_roomId = packet.readD();
-		_maxMembers = packet.readD();
-		_minLevel = packet.readD();
-		_maxLevel = packet.readD();
-		_lootType = packet.readD();
-		_roomTitle = packet.readS();
-		return true;
+		_roomId = packet.readInt();
+		_maxMembers = packet.readInt();
+		_minLevel = packet.readInt();
+		_maxLevel = packet.readInt();
+		_lootType = packet.readInt();
+		_roomTitle = packet.readString();
 	}
 	
 	@Override

@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.fishing;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author bit
  */
-public class ExAutoFishAvailable implements IClientOutgoingPacket
+public class ExAutoFishAvailable extends ServerPacket
 {
 	public static final ExAutoFishAvailable YES = new ExAutoFishAvailable(true);
 	public static final ExAutoFishAvailable NO = new ExAutoFishAvailable(false);
@@ -36,10 +35,9 @@ public class ExAutoFishAvailable implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_AUTO_FISH_AVAILABLE.writeId(packet);
-		packet.writeC(_available ? 1 : 0);
-		return true;
+		ServerPackets.EX_AUTO_FISH_AVAILABLE.writeId(this);
+		writeByte(_available);
 	}
 }

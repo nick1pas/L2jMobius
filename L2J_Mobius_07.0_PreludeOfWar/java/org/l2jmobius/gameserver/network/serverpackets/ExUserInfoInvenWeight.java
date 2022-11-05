@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExUserInfoInvenWeight implements IClientOutgoingPacket
+public class ExUserInfoInvenWeight extends ServerPacket
 {
 	private final Player _player;
 	
@@ -33,12 +32,11 @@ public class ExUserInfoInvenWeight implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_USER_INFO_INVEN_WEIGHT.writeId(packet);
-		packet.writeD(_player.getObjectId());
-		packet.writeD(_player.getCurrentLoad());
-		packet.writeD(_player.getMaxLoad());
-		return true;
+		ServerPackets.EX_USER_INFO_INVEN_WEIGHT.writeId(this);
+		writeInt(_player.getObjectId());
+		writeInt(_player.getCurrentLoad());
+		writeInt(_player.getMaxLoad());
 	}
 }

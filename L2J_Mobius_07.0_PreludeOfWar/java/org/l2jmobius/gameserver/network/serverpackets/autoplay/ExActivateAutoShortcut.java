@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.autoplay;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ShortCuts;
 import org.l2jmobius.gameserver.model.Shortcut;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExActivateAutoShortcut implements IClientOutgoingPacket
+public class ExActivateAutoShortcut extends ServerPacket
 {
 	private final int _position;
 	private final boolean _active;
@@ -37,11 +36,10 @@ public class ExActivateAutoShortcut implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ACTIVATE_AUTO_SHORTCUT.writeId(packet);
-		packet.writeH(_position);
-		packet.writeC(_active ? 1 : 0);
-		return true;
+		ServerPackets.EX_ACTIVATE_AUTO_SHORTCUT.writeId(this);
+		writeShort(_position);
+		writeByte(_active);
 	}
 }

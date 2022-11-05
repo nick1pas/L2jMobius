@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ensoul;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author UnAfraid
  */
-public class ExEnsoulResult implements IClientOutgoingPacket
+public class ExEnsoulResult extends ServerPacket
 {
 	private final int _success;
 	private final Item _item;
@@ -37,20 +36,19 @@ public class ExEnsoulResult implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_ENSOUL_RESULT.writeId(packet);
-		packet.writeC(_success); // success / failure
-		packet.writeC(_item.getSpecialAbilities().size());
+		ServerPackets.EX_ENSOUL_RESULT.writeId(this);
+		writeByte(_success); // success / failure
+		writeByte(_item.getSpecialAbilities().size());
 		for (EnsoulOption option : _item.getSpecialAbilities())
 		{
-			packet.writeD(option.getId());
+			writeInt(option.getId());
 		}
-		packet.writeC(_item.getAdditionalSpecialAbilities().size());
+		writeByte(_item.getAdditionalSpecialAbilities().size());
 		for (EnsoulOption option : _item.getAdditionalSpecialAbilities())
 		{
-			packet.writeD(option.getId());
+			writeInt(option.getId());
 		}
-		return true;
 	}
 }

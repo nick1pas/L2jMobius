@@ -20,10 +20,9 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
 
 public class WareHouseWithdrawalList extends AbstractItemPacket
@@ -72,30 +71,29 @@ public class WareHouseWithdrawalList extends AbstractItemPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.WAREHOUSE_WITHDRAW_LIST.writeId(packet);
-		packet.writeC(_sendType);
+		ServerPackets.WAREHOUSE_WITHDRAW_LIST.writeId(this);
+		writeByte(_sendType);
 		if (_sendType == 2)
 		{
-			packet.writeH(0);
-			packet.writeD(_invSize);
-			packet.writeD(_items.size());
+			writeShort(0);
+			writeInt(_invSize);
+			writeInt(_items.size());
 			for (Item item : _items)
 			{
-				writeItem(packet, item);
-				packet.writeD(item.getObjectId());
-				packet.writeD(0);
-				packet.writeD(0);
+				writeItem(item);
+				writeInt(item.getObjectId());
+				writeInt(0);
+				writeInt(0);
 			}
 		}
 		else
 		{
-			packet.writeH(_whType);
-			packet.writeQ(_playerAdena);
-			packet.writeD(_invSize);
-			packet.writeD(_items.size());
+			writeShort(_whType);
+			writeLong(_playerAdena);
+			writeInt(_invSize);
+			writeInt(_items.size());
 		}
-		return true;
 	}
 }

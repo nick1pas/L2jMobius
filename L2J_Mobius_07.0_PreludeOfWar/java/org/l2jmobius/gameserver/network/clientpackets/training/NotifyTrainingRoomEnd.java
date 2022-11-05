@@ -16,25 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.training;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.TrainingHolder;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.clientpackets.IClientIncomingPacket;
+import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.training.ExTrainingZone_Leaving;
 
 /**
  * @author Sdw
  */
-public class NotifyTrainingRoomEnd implements IClientIncomingPacket
+public class NotifyTrainingRoomEnd implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		// Nothing to read
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

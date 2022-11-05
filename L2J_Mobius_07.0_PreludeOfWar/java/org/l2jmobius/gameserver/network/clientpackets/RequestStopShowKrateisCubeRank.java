@@ -16,20 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.network.GameClient;
 
 /**
  * @author Mobius
  */
-public class RequestStopShowKrateisCubeRank implements IClientIncomingPacket
+public class RequestStopShowKrateisCubeRank implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return false;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

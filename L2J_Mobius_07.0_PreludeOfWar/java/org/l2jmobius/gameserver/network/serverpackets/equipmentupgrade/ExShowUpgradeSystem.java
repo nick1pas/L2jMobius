@@ -16,8 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.equipmentupgrade;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 
 /**
@@ -26,13 +25,12 @@ import org.l2jmobius.gameserver.network.serverpackets.AbstractItemPacket;
 public class ExShowUpgradeSystem extends AbstractItemPacket
 {
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_SHOW_UPGRADE_SYSTEM.writeId(packet);
-		packet.writeH(1); // Flag
-		packet.writeH(100); // CommissionRatio
-		packet.writeD(0); // MaterialItemId (array)
-		packet.writeD(0); // MaterialRatio (array)
-		return true;
+		ServerPackets.EX_SHOW_UPGRADE_SYSTEM.writeId(this);
+		writeShort(1); // Flag
+		writeShort(100); // CommissionRatio
+		writeInt(0); // MaterialItemId (array)
+		writeInt(0); // MaterialRatio (array)
 	}
 }

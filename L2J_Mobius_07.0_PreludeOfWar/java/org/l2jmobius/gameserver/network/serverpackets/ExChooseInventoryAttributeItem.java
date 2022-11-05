@@ -19,17 +19,16 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import java.util.HashSet;
 import java.util.Set;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.ElementalAttributeData;
 import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.instance.Item;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Kerberos
  */
-public class ExChooseInventoryAttributeItem implements IClientOutgoingPacket
+public class ExChooseInventoryAttributeItem extends ServerPacket
 {
 	private final int _itemId;
 	private final long _count;
@@ -58,20 +57,19 @@ public class ExChooseInventoryAttributeItem implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CHOOSE_INVENTORY_ATTRIBUTE_ITEM.writeId(packet);
-		packet.writeD(_itemId);
-		packet.writeQ(_count);
-		packet.writeD(_atribute == AttributeType.FIRE ? 1 : 0); // Fire
-		packet.writeD(_atribute == AttributeType.WATER ? 1 : 0); // Water
-		packet.writeD(_atribute == AttributeType.WIND ? 1 : 0); // Wind
-		packet.writeD(_atribute == AttributeType.EARTH ? 1 : 0); // Earth
-		packet.writeD(_atribute == AttributeType.HOLY ? 1 : 0); // Holy
-		packet.writeD(_atribute == AttributeType.DARK ? 1 : 0); // Unholy
-		packet.writeD(_level); // Item max attribute level
-		packet.writeD(_items.size());
-		_items.forEach(packet::writeD);
-		return true;
+		ServerPackets.EX_CHOOSE_INVENTORY_ATTRIBUTE_ITEM.writeId(this);
+		writeInt(_itemId);
+		writeLong(_count);
+		writeInt(_atribute == AttributeType.FIRE); // Fire
+		writeInt(_atribute == AttributeType.WATER); // Water
+		writeInt(_atribute == AttributeType.WIND); // Wind
+		writeInt(_atribute == AttributeType.EARTH); // Earth
+		writeInt(_atribute == AttributeType.HOLY); // Holy
+		writeInt(_atribute == AttributeType.DARK); // Unholy
+		writeInt(_level); // Item max attribute level
+		writeInt(_items.size());
+		_items.forEach(this::writeInt);
 	}
 }
