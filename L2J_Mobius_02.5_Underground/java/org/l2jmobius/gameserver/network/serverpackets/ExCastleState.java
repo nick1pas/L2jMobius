@@ -16,15 +16,14 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.CastleSide;
 import org.l2jmobius.gameserver.model.siege.Castle;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author UnAfraid
  */
-public class ExCastleState implements IClientOutgoingPacket
+public class ExCastleState extends ServerPacket
 {
 	private final int _castleId;
 	private final CastleSide _castleSide;
@@ -36,11 +35,10 @@ public class ExCastleState implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CASTLE_STATE.writeId(packet);
-		packet.writeD(_castleId);
-		packet.writeD(_castleSide.ordinal());
-		return true;
+		ServerPackets.EX_CASTLE_STATE.writeId(this);
+		writeInt(_castleId);
+		writeInt(_castleSide.ordinal());
 	}
 }

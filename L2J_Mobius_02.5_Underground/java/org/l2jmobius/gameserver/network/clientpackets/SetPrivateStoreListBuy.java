@@ -21,7 +21,7 @@ import static org.l2jmobius.gameserver.model.itemcontainer.Inventory.MAX_ADENA;
 import java.util.Arrays;
 
 import org.l2jmobius.Config;
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.EnsoulData;
 import org.l2jmobius.gameserver.enums.AttributeType;
@@ -40,59 +40,59 @@ import org.l2jmobius.gameserver.network.serverpackets.PrivateStoreMsgBuy;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 import org.l2jmobius.gameserver.util.Util;
 
-public class SetPrivateStoreListBuy implements IClientIncomingPacket
+public class SetPrivateStoreListBuy implements ClientPacket
 {
 	private TradeItem[] _items = null;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		final int count = packet.readD();
+		final int count = packet.readInt();
 		if ((count < 1) || (count > Config.MAX_ITEM_IN_PACKET))
 		{
-			return false;
+			return;
 		}
 		
 		_items = new TradeItem[count];
 		for (int i = 0; i < count; i++)
 		{
-			final int itemId = packet.readD();
+			final int itemId = packet.readInt();
 			final ItemTemplate template = ItemTable.getInstance().getTemplate(itemId);
 			if (template == null)
 			{
 				_items = null;
-				return false;
+				return;
 			}
 			
-			final int enchantLevel = packet.readH();
-			packet.readH(); // TODO analyse this
+			final int enchantLevel = packet.readShort();
+			packet.readShort(); // TODO analyse this
 			
-			final long cnt = packet.readQ();
-			final long price = packet.readQ();
+			final long cnt = packet.readLong();
+			final long price = packet.readLong();
 			if ((itemId < 1) || (cnt < 1) || (price < 0))
 			{
 				_items = null;
-				return false;
+				return;
 			}
 			
-			final short attackAttributeId = (short) packet.readH();
-			final int attackAttributeValue = packet.readH();
-			final int defenceFire = packet.readH();
-			final int defenceWater = packet.readH();
-			final int defenceWind = packet.readH();
-			final int defenceEarth = packet.readH();
-			final int defenceHoly = packet.readH();
-			final int defenceDark = packet.readH();
-			final int visualId = packet.readD();
-			final EnsoulOption[] soulCrystalOptions = new EnsoulOption[packet.readC()];
+			final short attackAttributeId = (short) packet.readShort();
+			final int attackAttributeValue = packet.readShort();
+			final int defenceFire = packet.readShort();
+			final int defenceWater = packet.readShort();
+			final int defenceWind = packet.readShort();
+			final int defenceEarth = packet.readShort();
+			final int defenceHoly = packet.readShort();
+			final int defenceDark = packet.readShort();
+			final int visualId = packet.readInt();
+			final EnsoulOption[] soulCrystalOptions = new EnsoulOption[packet.readByte()];
 			for (int k = 0; k < soulCrystalOptions.length; k++)
 			{
-				soulCrystalOptions[k] = EnsoulData.getInstance().getOption(packet.readD());
+				soulCrystalOptions[k] = EnsoulData.getInstance().getOption(packet.readInt());
 			}
-			final EnsoulOption[] soulCrystalSpecialOptions = new EnsoulOption[packet.readC()];
+			final EnsoulOption[] soulCrystalSpecialOptions = new EnsoulOption[packet.readByte()];
 			for (int k = 0; k < soulCrystalSpecialOptions.length; k++)
 			{
-				soulCrystalSpecialOptions[k] = EnsoulData.getInstance().getOption(packet.readD());
+				soulCrystalSpecialOptions[k] = EnsoulData.getInstance().getOption(packet.readInt());
 			}
 			
 			final TradeItem item = new TradeItem(template, cnt, price);
@@ -110,7 +110,6 @@ public class SetPrivateStoreListBuy implements IClientIncomingPacket
 			item.setSoulCrystalSpecialOptions(Arrays.asList(soulCrystalSpecialOptions));
 			_items[i] = item;
 		}
-		return true;
 	}
 	
 	@Override

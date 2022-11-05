@@ -16,14 +16,13 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.ceremonyofchaos;
 
-import org.l2jmobius.commons.network.PacketWriter;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExCuriousHouseState implements IClientOutgoingPacket
+public class ExCuriousHouseState extends ServerPacket
 {
 	public static final ExCuriousHouseState IDLE_PACKET = new ExCuriousHouseState(0);
 	public static final ExCuriousHouseState REGISTRATION_PACKET = new ExCuriousHouseState(1);
@@ -38,10 +37,9 @@ public class ExCuriousHouseState implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_CURIOUS_HOUSE_STATE.writeId(packet);
-		packet.writeD(_state);
-		return true;
+		ServerPackets.EX_CURIOUS_HOUSE_STATE.writeId(this);
+		writeInt(_state);
 	}
 }

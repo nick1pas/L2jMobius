@@ -16,31 +16,29 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.dailymission;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExConnectedTimeAndGettableReward implements IClientOutgoingPacket
+public class ExConnectedTimeAndGettableReward extends ServerPacket
 {
 	public static final ExConnectedTimeAndGettableReward STATIC_PACKET = new ExConnectedTimeAndGettableReward();
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
 		if (!DailyMissionData.getInstance().isAvailable())
 		{
-			return true;
+			return;
 		}
 		
-		OutgoingPackets.EX_CONNECTED_TIME_AND_GETTABLE_REWARD.writeId(packet);
+		ServerPackets.EX_CONNECTED_TIME_AND_GETTABLE_REWARD.writeId(this);
 		for (int i = 0; i < 16; i++) // TODO : Find what the hell it is
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

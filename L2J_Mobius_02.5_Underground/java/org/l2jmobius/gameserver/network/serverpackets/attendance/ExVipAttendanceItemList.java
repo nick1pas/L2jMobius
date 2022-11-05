@@ -16,18 +16,17 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.attendance;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.xml.AttendanceRewardData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.AttendanceInfoHolder;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExVipAttendanceItemList implements IClientOutgoingPacket
+public class ExVipAttendanceItemList extends ServerPacket
 {
 	boolean _available;
 	int _index;
@@ -40,28 +39,27 @@ public class ExVipAttendanceItemList implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_VIP_ATTENDANCE_ITEM_LIST.writeId(packet);
-		packet.writeC(_available ? _index + 1 : _index); // index to receive?
-		packet.writeC(_index); // last received index?
-		packet.writeD(0);
-		packet.writeD(0);
-		packet.writeC(1);
-		packet.writeC(_available ? 1 : 0); // player can receive reward today?
-		packet.writeC(250);
-		packet.writeC(AttendanceRewardData.getInstance().getRewardsCount()); // reward size
+		ServerPackets.EX_VIP_ATTENDANCE_ITEM_LIST.writeId(this);
+		writeByte(_available ? _index + 1 : _index); // index to receive?
+		writeByte(_index); // last received index?
+		writeInt(0);
+		writeInt(0);
+		writeByte(1);
+		writeByte(_available); // player can receive reward today?
+		writeByte(250);
+		writeByte(AttendanceRewardData.getInstance().getRewardsCount()); // reward size
 		int rewardCounter = 0;
 		for (ItemHolder reward : AttendanceRewardData.getInstance().getRewards())
 		{
 			rewardCounter++;
-			packet.writeD(reward.getId());
-			packet.writeQ(reward.getCount());
-			packet.writeC(1); // is unknown?
-			packet.writeC((rewardCounter % 7) == 0 ? 1 : 0); // is last in row?
+			writeInt(reward.getId());
+			writeLong(reward.getCount());
+			writeByte(1); // is unknown?
+			writeByte((rewardCounter % 7) == 0); // is last in row?
 		}
-		packet.writeC(0);
-		packet.writeD(0);
-		return true;
+		writeByte(0);
+		writeInt(0);
 	}
 }

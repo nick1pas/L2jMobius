@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
@@ -24,7 +24,7 @@ import org.l2jmobius.gameserver.network.PacketLogger;
 /**
  * @author UnAfraid
  */
-public class RequestMagicSkillList implements IClientIncomingPacket
+public class RequestMagicSkillList implements ClientPacket
 {
 	private int _objectId;
 	@SuppressWarnings("unused")
@@ -33,12 +33,11 @@ public class RequestMagicSkillList implements IClientIncomingPacket
 	private int _unk;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_objectId = packet.readD();
-		_charId = packet.readD();
-		_unk = packet.readD();
-		return true;
+		_objectId = packet.readInt();
+		_charId = packet.readInt();
+		_unk = packet.readInt();
 	}
 	
 	@Override

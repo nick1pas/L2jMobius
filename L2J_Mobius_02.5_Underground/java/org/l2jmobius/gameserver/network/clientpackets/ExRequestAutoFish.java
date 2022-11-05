@@ -16,22 +16,21 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
+import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.GameClient;
 
 /**
  * @author St3eT
  */
-public class ExRequestAutoFish implements IClientIncomingPacket
+public class ExRequestAutoFish implements ClientPacket
 {
 	private boolean _start;
 	
 	@Override
-	public boolean read(GameClient client, PacketReader packet)
+	public void read(ReadablePacket packet)
 	{
-		_start = packet.readC() != 0;
-		return true;
+		_start = packet.readByte() != 0;
 	}
 	
 	@Override

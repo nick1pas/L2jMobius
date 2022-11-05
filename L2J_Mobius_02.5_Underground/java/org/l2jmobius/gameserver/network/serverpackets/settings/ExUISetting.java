@@ -16,16 +16,15 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.settings;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Mobius
  */
-public class ExUISetting implements IClientOutgoingPacket
+public class ExUISetting extends ServerPacket
 {
 	public static final String SPLIT_VAR = "	";
 	
@@ -44,18 +43,17 @@ public class ExUISetting implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_UI_SETTING.writeId(packet);
+		ServerPackets.EX_UI_SETTING.writeId(this);
 		if (_uiKeyMapping != null)
 		{
-			packet.writeD(_uiKeyMapping.length);
-			packet.writeB(_uiKeyMapping);
+			writeInt(_uiKeyMapping.length);
+			writeBytes(_uiKeyMapping);
 		}
 		else
 		{
-			packet.writeD(0);
+			writeInt(0);
 		}
-		return true;
 	}
 }

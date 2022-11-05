@@ -18,16 +18,15 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.data.sql.ClanTable;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.Clan.SubPledge;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExPledgeRecruitInfo implements IClientOutgoingPacket
+public class ExPledgeRecruitInfo extends ServerPacket
 {
 	private final Clan _clan;
 	
@@ -37,20 +36,19 @@ public class ExPledgeRecruitInfo implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_RECRUIT_INFO.writeId(packet);
+		ServerPackets.EX_PLEDGE_RECRUIT_INFO.writeId(this);
 		final Collection<SubPledge> subPledges = _clan.getAllSubPledges();
-		packet.writeS(_clan.getName());
-		packet.writeS(_clan.getLeaderName());
-		packet.writeD(_clan.getLevel());
-		packet.writeD(_clan.getMembersCount());
-		packet.writeD(subPledges.size());
+		writeString(_clan.getName());
+		writeString(_clan.getLeaderName());
+		writeInt(_clan.getLevel());
+		writeInt(_clan.getMembersCount());
+		writeInt(subPledges.size());
 		for (SubPledge subPledge : subPledges)
 		{
-			packet.writeD(subPledge.getId());
-			packet.writeS(subPledge.getName());
+			writeInt(subPledge.getId());
+			writeString(subPledge.getName());
 		}
-		return true;
 	}
 }

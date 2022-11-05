@@ -18,15 +18,14 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.entry.PledgeRecruitInfo;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
+import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * @author Sdw
  */
-public class ExPledgeRecruitBoardSearch implements IClientOutgoingPacket
+public class ExPledgeRecruitBoardSearch extends ServerPacket
 {
 	final List<PledgeRecruitInfo> _clanList;
 	private final int _currentPage;
@@ -47,31 +46,30 @@ public class ExPledgeRecruitBoardSearch implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_PLEDGE_RECRUIT_BOARD_SEARCH.writeId(packet);
-		packet.writeD(_currentPage);
-		packet.writeD(_totalNumberOfPage);
-		packet.writeD(_clanOnCurrentPage);
+		ServerPackets.EX_PLEDGE_RECRUIT_BOARD_SEARCH.writeId(this);
+		writeInt(_currentPage);
+		writeInt(_totalNumberOfPage);
+		writeInt(_clanOnCurrentPage);
 		for (int i = _startIndex; i < _endIndex; i++)
 		{
-			packet.writeD(_clanList.get(i).getClanId());
-			packet.writeD(_clanList.get(i).getClan().getAllyId());
+			writeInt(_clanList.get(i).getClanId());
+			writeInt(_clanList.get(i).getClan().getAllyId());
 		}
 		for (int i = _startIndex; i < _endIndex; i++)
 		{
 			final Clan clan = _clanList.get(i).getClan();
-			packet.writeD(clan.getCrestId());
-			packet.writeD(clan.getAllyCrestId());
-			packet.writeS(clan.getName());
-			packet.writeS(clan.getLeaderName());
-			packet.writeD(clan.getLevel());
-			packet.writeD(clan.getMembersCount());
-			packet.writeD(_clanList.get(i).getKarma());
-			packet.writeS(_clanList.get(i).getInformation());
-			packet.writeD(_clanList.get(i).getApplicationType());
-			packet.writeD(_clanList.get(i).getRecruitType());
+			writeInt(clan.getCrestId());
+			writeInt(clan.getAllyCrestId());
+			writeString(clan.getName());
+			writeString(clan.getLeaderName());
+			writeInt(clan.getLevel());
+			writeInt(clan.getMembersCount());
+			writeInt(_clanList.get(i).getKarma());
+			writeString(_clanList.get(i).getInformation());
+			writeInt(_clanList.get(i).getApplicationType());
+			writeInt(_clanList.get(i).getRecruitType());
 		}
-		return true;
 	}
 }

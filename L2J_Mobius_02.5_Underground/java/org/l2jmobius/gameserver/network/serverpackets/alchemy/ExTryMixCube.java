@@ -19,16 +19,15 @@ package org.l2jmobius.gameserver.network.serverpackets.alchemy;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.l2jmobius.commons.network.PacketWriter;
 import org.l2jmobius.gameserver.enums.TryMixCubeType;
 import org.l2jmobius.gameserver.model.holders.AlchemyResult;
-import org.l2jmobius.gameserver.network.OutgoingPackets;
-import org.l2jmobius.gameserver.network.serverpackets.IClientOutgoingPacket;
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
  * @author Sdw
  */
-public class ExTryMixCube implements IClientOutgoingPacket
+public class ExTryMixCube extends ServerPacket
 {
 	private final TryMixCubeType _type;
 	private final List<AlchemyResult> _items = new ArrayList<>();
@@ -44,17 +43,16 @@ public class ExTryMixCube implements IClientOutgoingPacket
 	}
 	
 	@Override
-	public boolean write(PacketWriter packet)
+	public void write()
 	{
-		OutgoingPackets.EX_TRY_MIX_CUBE.writeId(packet);
-		packet.writeC(_type.ordinal());
-		packet.writeD(_items.size());
+		ServerPackets.EX_TRY_MIX_CUBE.writeId(this);
+		writeByte(_type.ordinal());
+		writeInt(_items.size());
 		for (AlchemyResult holder : _items)
 		{
-			packet.writeC(holder.getType().ordinal());
-			packet.writeD(holder.getId());
-			packet.writeQ(holder.getCount());
+			writeByte(holder.getType().ordinal());
+			writeInt(holder.getId());
+			writeLong(holder.getCount());
 		}
-		return true;
 	}
 }

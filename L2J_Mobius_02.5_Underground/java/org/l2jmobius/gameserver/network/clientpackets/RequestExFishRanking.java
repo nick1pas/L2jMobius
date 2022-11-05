@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets;
 
-import org.l2jmobius.commons.network.PacketReader;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 
@@ -24,14 +23,8 @@ import org.l2jmobius.gameserver.network.PacketLogger;
  * Format: (ch) just a trigger
  * @author -Wooden-
  */
-public class RequestExFishRanking implements IClientIncomingPacket
+public class RequestExFishRanking implements ClientPacket
 {
-	@Override
-	public boolean read(GameClient client, PacketReader packet)
-	{
-		return true;
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{
