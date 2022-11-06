@@ -77,18 +77,13 @@ public class ChangedEnchantTargetItemProbabilityList extends ServerPacket
 				baseRate = 0;
 				passiveRate = 0;
 			}
-			double supportBaseRate = 0;
 			double passiveBaseRate = 0;
 			final double supportRate = getSupportRate(request);
-			if (supportRate != 0)
-			{
-				supportBaseRate = (baseRate * supportRate) / 10000;
-			}
 			if (passiveRate != 0)
 			{
 				passiveBaseRate = (baseRate * passiveRate) / 10000;
 			}
-			double totalRate = baseRate + supportBaseRate + passiveBaseRate;
+			double totalRate = baseRate + supportRate + passiveBaseRate;
 			if (totalRate >= 10000)
 			{
 				totalRate = 10000;
@@ -103,7 +98,7 @@ public class ChangedEnchantTargetItemProbabilityList extends ServerPacket
 			}
 			writeInt((int) totalRate); // Total success.
 			writeInt((int) baseRate); // Base success.
-			writeInt((int) supportBaseRate); // Support success.
+			writeInt((int) supportRate); // Support success.
 			writeInt((int) passiveBaseRate); // Passive success (items, skills).
 		}
 	}
