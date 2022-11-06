@@ -17,6 +17,7 @@
 package org.l2jmobius.gameserver.model.events.impl.item;
 
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.ensoul.EnsoulStone;
 import org.l2jmobius.gameserver.model.events.EventType;
 import org.l2jmobius.gameserver.model.events.impl.IBaseEvent;
 import org.l2jmobius.gameserver.model.item.instance.Item;
@@ -28,11 +29,13 @@ public class OnItemSoulCrystalAdd implements IBaseEvent
 {
 	private final Player _player;
 	private final Item _item;
+	private final EnsoulStone _stone;
 	
-	public OnItemSoulCrystalAdd(Player player, Item item)
+	public OnItemSoulCrystalAdd(Player player, Item item, EnsoulStone stone)
 	{
 		_player = player;
 		_item = item;
+		_stone = stone;
 	}
 	
 	public Player getPlayer()
@@ -43,6 +46,11 @@ public class OnItemSoulCrystalAdd implements IBaseEvent
 	public Item getItem()
 	{
 		return _item;
+	}
+	
+	public EnsoulStone getEnsoulStone()
+	{
+		return _stone;
 	}
 	
 	@Override

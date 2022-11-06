@@ -36,6 +36,7 @@ public class DailyMissionDataHolder
 	private final int _id;
 	private final List<ItemHolder> _rewardsItems;
 	private final List<ClassId> _classRestriction;
+	private final int _requiredMissionCompleteId;
 	private final int _requiredCompletions;
 	private final StatSet _params;
 	private final boolean _dailyReset;
@@ -50,6 +51,7 @@ public class DailyMissionDataHolder
 	{
 		final Function<DailyMissionDataHolder, AbstractDailyMissionHandler> handler = DailyMissionHandler.getInstance().getHandler(set.getString("handler"));
 		_id = set.getInt("id");
+		_requiredMissionCompleteId = set.getInt("requiredMissionCompleteId", 0);
 		_requiredCompletions = set.getInt("requiredCompletion", 0);
 		_rewardsItems = set.getList("items", ItemHolder.class);
 		_classRestriction = set.getList("classRestriction", ClassId.class);
@@ -76,6 +78,11 @@ public class DailyMissionDataHolder
 	public List<ItemHolder> getRewards()
 	{
 		return _rewardsItems;
+	}
+	
+	public int getRequiredMissionCompleteId()
+	{
+		return _requiredMissionCompleteId;
 	}
 	
 	public int getRequiredCompletions()

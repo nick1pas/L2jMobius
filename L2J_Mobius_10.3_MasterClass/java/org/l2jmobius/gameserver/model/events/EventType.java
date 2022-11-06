@@ -59,7 +59,10 @@ import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcTeleport;
 import org.l2jmobius.gameserver.model.events.impl.creature.npc.OnNpcTeleportRequest;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayableExpChanged;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerAbilityPointsChanged;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerAuctionWin;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerAugment;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBecomeExalted;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBecomeNoblesse;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBypass;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerCallToChangeClass;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerChangeToAwakenedClass;
@@ -94,6 +97,7 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentee
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeLeft;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeRemove;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeStatus;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMenteeTrainingComplete;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMentorStatus;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerMoveRequest;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerPKChanged;
@@ -124,6 +128,8 @@ import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceLeave;
 import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceStatusChange;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemAttributeAdd;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemBypassEvent;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemCombination;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemCompound;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemCreate;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemEnchantAdd;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemSoulCrystalAdd;
@@ -189,6 +195,8 @@ public enum EventType
 	ON_ITEM_ATTRIBUTE_ADD(OnItemAttributeAdd.class, void.class),
 	ON_ITEM_SOUL_CRYSTAL_ADD(OnItemSoulCrystalAdd.class, void.class),
 	ON_ITEM_ENCHANT_ADD(OnItemEnchantAdd.class, void.class),
+	ON_ITEM_COMBINATION(OnItemCombination.class, void.class),
+	ON_ITEM_COMPOUND(OnItemCompound.class, void.class),
 	
 	// NPC events
 	ON_NPC_CAN_BE_SEEN(OnNpcCanBeSeen.class, void.class, TerminateReturn.class),
@@ -219,9 +227,12 @@ public enum EventType
 	ON_PLAYABLE_EXP_CHANGED(OnPlayableExpChanged.class, void.class, TerminateReturn.class),
 	
 	// Player events
+	ON_PLAYER_AUCTION_WIN(OnPlayerAuctionWin.class, void.class),
 	ON_PLAYER_AUGMENT(OnPlayerAugment.class, void.class),
 	ON_PLAYER_BYPASS(OnPlayerBypass.class, void.class, TerminateReturn.class),
 	ON_PLAYER_CALL_TO_CHANGE_CLASS(OnPlayerCallToChangeClass.class, void.class),
+	ON_PLAYER_BECOME_NOBLESSE(OnPlayerBecomeNoblesse.class, void.class),
+	ON_PLAYER_BECOME_EXALTED(OnPlayerBecomeExalted.class, void.class),
 	ON_PLAYER_CHAT(OnPlayerChat.class, void.class, ChatFilterReturn.class),
 	ON_PLAYER_ABILITY_POINTS_CHANGED(OnPlayerAbilityPointsChanged.class, void.class),
 	// Clan events
@@ -256,6 +267,7 @@ public enum EventType
 	ON_PLAYER_MENTEE_LEFT(OnPlayerMenteeLeft.class, void.class),
 	ON_PLAYER_MENTEE_REMOVE(OnPlayerMenteeRemove.class, void.class),
 	ON_PLAYER_MENTEE_STATUS(OnPlayerMenteeStatus.class, void.class),
+	ON_PLAYER_MENTEE_TRAINING_COMPLETE(OnPlayerMenteeTrainingComplete.class, void.class),
 	ON_PLAYER_MENTOR_STATUS(OnPlayerMentorStatus.class, void.class),
 	// Other player events
 	ON_PLAYER_REPUTATION_CHANGED(OnPlayerReputationChanged.class, void.class),

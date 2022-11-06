@@ -25,6 +25,9 @@ import org.l2jmobius.gameserver.data.xml.ItemCrystallizationData;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.enums.Race;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemCombination;
 import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.item.type.CrystalType;
@@ -249,7 +252,11 @@ public class RequestCrystallizeItem implements ClientPacket
 		sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_CRYSTALLIZED);
 		sm.addItemName(removedItem);
 		player.sendPacket(sm);
-		
+		// Notify to scripts.
+		if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_COMBINATION))
+		{
+			EventDispatcher.getInstance().notifyEventAsync(new OnItemCombination(player, removedItem));
+		}
 		player.broadcastUserInfo();
 		
 		player.setInCrystallize(false);

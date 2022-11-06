@@ -33,10 +33,12 @@ public class OlympiadDailyMissionHandler extends AbstractDailyMissionHandler
 {
 	private final int _amount;
 	private final boolean _winOnly;
+	private final int _requiredMissionCompleteId;
 	
 	public OlympiadDailyMissionHandler(DailyMissionDataHolder holder)
 	{
 		super(holder);
+		_requiredMissionCompleteId = holder.getRequiredMissionCompleteId();
 		_amount = holder.getRequiredCompletions();
 		_winOnly = holder.getParams().getBoolean("winOnly", false);
 	}
@@ -78,27 +80,44 @@ public class OlympiadDailyMissionHandler extends AbstractDailyMissionHandler
 		if (event.getWinner() != null)
 		{
 			final DailyMissionPlayerEntry winnerEntry = getPlayerEntry(event.getWinner().getObjectId(), true);
-			if (winnerEntry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
+			if (((_requiredMissionCompleteId != 0) && checkRequiredMission(event.getWinner().getPlayer())) || (_requiredMissionCompleteId == 0))
 			{
-				if (winnerEntry.increaseProgress() >= _amount)
+				if (winnerEntry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
 				{
-					winnerEntry.setStatus(DailyMissionStatus.AVAILABLE);
+					if (winnerEntry.increaseProgress() >= _amount)
+					{
+						winnerEntry.setStatus(DailyMissionStatus.AVAILABLE);
+					}
+					storePlayerEntry(winnerEntry);
 				}
-				storePlayerEntry(winnerEntry);
 			}
 		}
 		
 		if (!_winOnly && (event.getLoser() != null))
 		{
 			final DailyMissionPlayerEntry loseEntry = getPlayerEntry(event.getLoser().getObjectId(), true);
-			if (loseEntry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
+			if (((_requiredMissionCompleteId != 0) && checkRequiredMission(event.getLoser().getPlayer())) || (_requiredMissionCompleteId == 0))
 			{
-				if (loseEntry.increaseProgress() >= _amount)
+				if (loseEntry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
 				{
-					loseEntry.setStatus(DailyMissionStatus.AVAILABLE);
+					if (loseEntry.increaseProgress() >= _amount)
+					{
+						loseEntry.setStatus(DailyMissionStatus.AVAILABLE);
+					}
+					storePlayerEntry(loseEntry);
 				}
-				storePlayerEntry(loseEntry);
 			}
 		}
+	}
+	
+	private boolean checkRequiredMission(Player player)
+	{
+		final int missionId = getPlayerEntry(player.getObjectId(), false).getRewardId();
+		final int missionStatus = getStatus(player);
+		if ((missionId != 0) && (_requiredMissionCompleteId != 0) && (missionId == _requiredMissionCompleteId) && (missionStatus == DailyMissionStatus.COMPLETED.getClientId()))
+		{
+			return true;
+		}
+		return false;
 	}
 }

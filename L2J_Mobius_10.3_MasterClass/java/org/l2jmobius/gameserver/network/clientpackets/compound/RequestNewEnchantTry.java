@@ -20,6 +20,9 @@ import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.CombinationItemsData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.CompoundRequest;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemCompound;
 import org.l2jmobius.gameserver.model.item.combination.CombinationItem;
 import org.l2jmobius.gameserver.model.item.combination.CombinationItemReward;
 import org.l2jmobius.gameserver.model.item.combination.CombinationItemType;
@@ -117,6 +120,11 @@ public class RequestNewEnchantTry implements ClientPacket
 			else
 			{
 				player.sendPacket(new ExEnchantFail(itemOne.getId(), itemTwo.getId()));
+			}
+			// Notify to scripts.
+			if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_COMPOUND))
+			{
+				EventDispatcher.getInstance().notifyEventAsync(new OnItemCompound(player, success ? item : itemOne));
 			}
 		}
 		

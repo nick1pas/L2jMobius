@@ -2086,6 +2086,7 @@
 																</xs:complexType>
 															</xs:element>
 															<xs:element name="damageModifier" type="xs:decimal" />
+															<xs:element name="abnormalPower" type="xs:unsignedShort" />
 															<xs:element name="animationSpeed" type="xs:unsignedShort" />
 															<xs:element name="pAtkMod">
 																<xs:complexType mixed="true">
@@ -2094,7 +2095,9 @@
 																			<xs:complexType>
 																				<xs:simpleContent>
 																					<xs:extension base="xs:decimal">
-																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																						<xs:attribute name="level" type="xs:unsignedByte" use="optional" />
+																						<xs:attribute name="fromLevel" type="xs:unsignedByte" use="optional" />
+																						<xs:attribute name="toLevel" type="xs:unsignedByte" use="optional" />
 																					</xs:extension>
 																				</xs:simpleContent>
 																			</xs:complexType>
@@ -2842,6 +2845,8 @@
 																</xs:complexType>
 															</xs:element>
 															<xs:element name="slot" type="xs:string" />
+															<xs:element name="rate" type="xs:unsignedByte" />
+															<xs:element name="dispel" type="xs:string" />
 															<xs:element name="attribute" type="xs:string" />
 															<xs:element name="mode" type="xs:string" />
 															<xs:element name="model" type="xs:string" />

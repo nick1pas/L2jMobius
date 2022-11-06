@@ -71,7 +71,6 @@ import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerItemPi
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemAttributeAdd;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemBypassEvent;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemEnchantAdd;
-import org.l2jmobius.gameserver.model.events.impl.item.OnItemSoulCrystalAdd;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemTalk;
 import org.l2jmobius.gameserver.model.holders.AgathionSkillHolder;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
@@ -2249,12 +2248,6 @@ public class Item extends WorldObject
 		if (updateInDB)
 		{
 			updateSpecialAbilities();
-		}
-		
-		// Notify to Scripts
-		if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_SOUL_CRYSTAL_ADD))
-		{
-			EventDispatcher.getInstance().notifyEventAsync(new OnItemSoulCrystalAdd(getActingPlayer(), this));
 		}
 	}
 	

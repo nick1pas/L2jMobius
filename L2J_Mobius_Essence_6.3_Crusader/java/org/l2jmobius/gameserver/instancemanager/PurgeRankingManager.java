@@ -37,7 +37,11 @@ import org.l2jmobius.gameserver.model.Message;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemPurgeReward;
 import org.l2jmobius.gameserver.model.holders.PurgePlayerHolder;
+import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.Mail;
 import org.l2jmobius.gameserver.network.serverpackets.subjugation.ExSubjugationSidebar;
 
@@ -137,6 +141,17 @@ public class PurgeRankingManager
 						}
 						attachment.addItem("Purge reward", reward, 5 - counter, null, null);
 						MailManager.getInstance().sendMessage(msg);
+						
+						// Notify to scripts.
+						final Player player = World.getInstance().getPlayer(charId);
+						final Item item = attachment.getItemByItemId(reward);
+						if (player != null)
+						{
+							if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_PURGE_REWARD))
+							{
+								EventDispatcher.getInstance().notifyEventAsync(new OnItemPurgeReward(player, item));
+							}
+						}
 						
 						try (Connection con = DatabaseFactory.getConnection())
 						{

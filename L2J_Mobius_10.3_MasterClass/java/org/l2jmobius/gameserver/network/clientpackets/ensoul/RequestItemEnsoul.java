@@ -22,6 +22,9 @@ import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.ensoul.EnsoulOption;
 import org.l2jmobius.gameserver.model.ensoul.EnsoulStone;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemSoulCrystalAdd;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.AbnormalType;
@@ -60,7 +63,6 @@ public class RequestItemEnsoul implements ClientPacket
 					_options[i] = new EnsoulItemOption(type, position, soulCrystalObjectId, soulCrystalOption);
 				}
 			}
-			return;
 		}
 	}
 	
@@ -217,6 +219,12 @@ public class RequestItemEnsoul implements ClientPacket
 			{
 				item.addSpecialAbility(option, position, stone.getSlotType(), true);
 				success = 1;
+				
+				// Notify to Scripts
+				if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_SOUL_CRYSTAL_ADD))
+				{
+					EventDispatcher.getInstance().notifyEventAsync(new OnItemSoulCrystalAdd(player, item, stone));
+				}
 			}
 			
 			if (soulCrystal.isStackable() && (soulCrystal.getCount() > 0))

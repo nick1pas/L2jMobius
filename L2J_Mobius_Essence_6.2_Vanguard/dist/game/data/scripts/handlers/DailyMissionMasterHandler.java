@@ -28,9 +28,11 @@ import handlers.dailymissionhandlers.LoginMonthDailyMissionHandler;
 import handlers.dailymissionhandlers.LoginWeekendDailyMissionHandler;
 import handlers.dailymissionhandlers.MonsterDailyMissionHandler;
 import handlers.dailymissionhandlers.OlympiadDailyMissionHandler;
+import handlers.dailymissionhandlers.PurgeRewardDailyMissionHandler;
 import handlers.dailymissionhandlers.QuestDailyMissionHandler;
 import handlers.dailymissionhandlers.SiegeDailyMissionHandler;
 import handlers.dailymissionhandlers.SpiritDailyMissionHandler;
+import handlers.dailymissionhandlers.UseItemDailyMissionHandler;
 
 /**
  * @author UnAfraid
@@ -52,6 +54,8 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("fishing", FishingDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("spirit", SpiritDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("joinclan", JoinClanDailyMissionHandler::new);
+		DailyMissionHandler.getInstance().registerHandler("purge", PurgeRewardDailyMissionHandler::new);
+		DailyMissionHandler.getInstance().registerHandler("useitem", UseItemDailyMissionHandler::new);
 		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ":  Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}
 }

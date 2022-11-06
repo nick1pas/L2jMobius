@@ -24,6 +24,9 @@ import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.enums.Race;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.alchemy.AlchemyCraftData;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemCombination;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
@@ -195,6 +198,16 @@ public class RequestAlchemyConversion implements ClientPacket
 		if (failureCount > 0)
 		{
 			player.getInventory().addItem("Alchemy", data.getProductionFailure().getId(), data.getProductionFailure().getCount() * failureCount, player, null);
+		}
+		
+		// Notify to scripts.
+		if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_COMBINATION))
+		{
+			for (ItemHolder ingredient : data.getIngredients())
+			{
+				final Item item = player.getInventory().getItemByItemId(ingredient.getId());
+				EventDispatcher.getInstance().notifyEventAsync(new OnItemCombination(player, item));
+			}
 		}
 		
 		player.sendPacket(new ExAlchemyConversion(successCount, failureCount));

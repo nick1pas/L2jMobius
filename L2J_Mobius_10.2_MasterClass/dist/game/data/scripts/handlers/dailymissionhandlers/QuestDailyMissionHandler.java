@@ -17,7 +17,6 @@
 package handlers.dailymissionhandlers;
 
 import org.l2jmobius.gameserver.enums.DailyMissionStatus;
-import org.l2jmobius.gameserver.enums.QuestType;
 import org.l2jmobius.gameserver.handler.AbstractDailyMissionHandler;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.DailyMissionPlayerEntry;
@@ -33,11 +32,13 @@ import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
 public class QuestDailyMissionHandler extends AbstractDailyMissionHandler
 {
 	private final int _amount;
+	private final int _questId;
 	
 	public QuestDailyMissionHandler(DailyMissionDataHolder holder)
 	{
 		super(holder);
 		_amount = holder.getRequiredCompletions();
+		_questId = holder.getParams().getInt("questId", 0);
 	}
 	
 	@Override
@@ -75,17 +76,23 @@ public class QuestDailyMissionHandler extends AbstractDailyMissionHandler
 	private void onQuestComplete(OnPlayerQuestComplete event)
 	{
 		final Player player = event.getPlayer();
-		if (event.getQuestType() == QuestType.DAILY)
+		// Check if player has active quest the quest id specified
+		if ((_questId == event.getQuestId()) && player.getQuestState(event.getQuestName()).isCompleted())
 		{
-			final DailyMissionPlayerEntry entry = getPlayerEntry(player.getObjectId(), true);
-			if (entry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
+			processPlayerProgress(player);
+		}
+	}
+	
+	private void processPlayerProgress(Player player)
+	{
+		final DailyMissionPlayerEntry entry = getPlayerEntry(player.getObjectId(), true);
+		if (entry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
+		{
+			if (entry.increaseProgress() >= _amount)
 			{
-				if (entry.increaseProgress() >= _amount)
-				{
-					entry.setStatus(DailyMissionStatus.AVAILABLE);
-				}
-				storePlayerEntry(entry);
+				entry.setStatus(DailyMissionStatus.AVAILABLE);
 			}
+			storePlayerEntry(entry);
 		}
 	}
 }

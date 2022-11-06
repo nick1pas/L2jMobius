@@ -729,7 +729,7 @@ public class QuestState
 		// Notify to scripts
 		if (EventDispatcher.getInstance().hasListener(EventType.ON_PLAYER_QUEST_COMPLETE, _player))
 		{
-			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerQuestComplete(_player, getQuest().getId(), type), _player);
+			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerQuestComplete(_player, getQuest().getId(), getQuestName(), type), _player);
 		}
 	}
 	
@@ -819,7 +819,7 @@ public class QuestState
 		// Notify to scripts
 		if (EventDispatcher.getInstance().hasListener(EventType.ON_PLAYER_QUEST_COMPLETE, _player))
 		{
-			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerQuestComplete(_player, getQuest().getId(), repeatable ? QuestType.REPEATABLE : QuestType.ONE_TIME), _player);
+			EventDispatcher.getInstance().notifyEventAsync(new OnPlayerQuestComplete(_player, getQuest().getId(), getQuestName(), repeatable ? QuestType.REPEATABLE : QuestType.ONE_TIME), _player);
 		}
 	}
 	

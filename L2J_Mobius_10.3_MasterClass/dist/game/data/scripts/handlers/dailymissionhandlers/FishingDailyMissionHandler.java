@@ -47,7 +47,7 @@ public class FishingDailyMissionHandler extends AbstractDailyMissionHandler
 	@Override
 	public void init()
 	{
-		Containers.Players().addListener(new ConsumerEventListener(this, EventType.ON_PLAYER_FISHING, (OnPlayerFishing event) -> onPlayerFishing(event), this));
+		Containers.Global().addListener(new ConsumerEventListener(Containers.Global(), EventType.ON_PLAYER_FISHING, (OnPlayerFishing event) -> onPlayerFishing(event), this));
 	}
 	
 	@Override

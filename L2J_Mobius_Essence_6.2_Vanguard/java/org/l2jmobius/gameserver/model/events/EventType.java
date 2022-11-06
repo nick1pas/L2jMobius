@@ -126,6 +126,7 @@ import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceLeave;
 import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceStatusChange;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemBypassEvent;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemCreate;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemPurgeReward;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemTalk;
 import org.l2jmobius.gameserver.model.events.impl.item.OnItemUse;
 import org.l2jmobius.gameserver.model.events.impl.olympiad.OnOlympiadMatchResult;
@@ -185,6 +186,7 @@ public enum EventType
 	ON_ITEM_CREATE(OnItemCreate.class, void.class),
 	ON_ITEM_USE(OnItemUse.class, void.class),
 	ON_ITEM_TALK(OnItemTalk.class, void.class),
+	ON_ITEM_PURGE_REWARD(OnItemPurgeReward.class, void.class),
 	
 	// NPC events
 	ON_NPC_CAN_BE_SEEN(OnNpcCanBeSeen.class, void.class, TerminateReturn.class),

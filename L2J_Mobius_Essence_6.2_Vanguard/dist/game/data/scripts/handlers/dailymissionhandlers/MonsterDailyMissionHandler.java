@@ -16,13 +16,15 @@
  */
 package handlers.dailymissionhandlers;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.enums.DailyMissionStatus;
-import org.l2jmobius.gameserver.enums.ElementalType;
 import org.l2jmobius.gameserver.handler.AbstractDailyMissionHandler;
 import org.l2jmobius.gameserver.model.CommandChannel;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
@@ -44,7 +46,8 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 	private final int _minLevel;
 	private final int _maxLevel;
 	private final Set<Integer> _ids = new HashSet<>();
-	private final ElementalType _element;
+	private final String _startHour;
+	private final String _endHour;
 	
 	public MonsterDailyMissionHandler(DailyMissionDataHolder holder)
 	{
@@ -52,7 +55,6 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 		_amount = holder.getRequiredCompletions();
 		_minLevel = holder.getParams().getInt("minLevel", 0);
 		_maxLevel = holder.getParams().getInt("maxLevel", Integer.MAX_VALUE);
-		_element = holder.getParams().getEnum("element", ElementalType.class, ElementalType.NONE);
 		final String ids = holder.getParams().getString("ids", "");
 		if (!ids.isEmpty())
 		{
@@ -65,6 +67,8 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 				}
 			}
 		}
+		_startHour = holder.getParams().getString("startHour", "");
+		_endHour = holder.getParams().getString("endHour", "");
 	}
 	
 	@Override
@@ -113,28 +117,25 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 		{
 			return;
 		}
-		
-		if ((_element != ElementalType.NONE) && (monster.getElementalSpiritType() != _element))
+		if (checkTimeInterval() || ((_startHour == "") && (_endHour == "")))
 		{
-			return;
-		}
-		
-		final Party party = player.getParty();
-		if (party != null)
-		{
-			final CommandChannel channel = party.getCommandChannel();
-			final List<Player> members = channel != null ? channel.getMembers() : party.getMembers();
-			for (Player member : members)
+			final Party party = player.getParty();
+			if (party != null)
 			{
-				if ((member.getLevel() >= (monsterLevel - 5)) && (member.calculateDistance3D(monster) <= Config.ALT_PARTY_RANGE))
+				final CommandChannel channel = party.getCommandChannel();
+				final List<Player> members = channel != null ? channel.getMembers() : party.getMembers();
+				for (Player member : members)
 				{
-					processPlayerProgress(member);
+					if ((member.getLevel() >= (monsterLevel - 5)) && (member.calculateDistance3D(monster) <= Config.ALT_PARTY_RANGE))
+					{
+						processPlayerProgress(member);
+					}
 				}
 			}
-		}
-		else
-		{
-			processPlayerProgress(player);
+			else
+			{
+				processPlayerProgress(player);
+			}
 		}
 	}
 	
@@ -149,5 +150,29 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 			}
 			storePlayerEntry(entry);
 		}
+	}
+	
+	private boolean checkTimeInterval()
+	{
+		if ((_startHour != "") && (_endHour != ""))
+		{
+			Date date = new Date();
+			SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
+			dateFormat.format(date);
+			
+			try
+			{
+				// Check param hours
+				if (dateFormat.parse(dateFormat.format(date)).after(dateFormat.parse(_startHour)) && dateFormat.parse(dateFormat.format(date)).before(dateFormat.parse(_endHour)))
+				{
+					return true;
+				}
+			}
+			catch (ParseException e)
+			{
+				e.printStackTrace();
+			}
+		}
+		return false;
 	}
 }

@@ -28,12 +28,14 @@ public class OnPlayerQuestComplete implements IBaseEvent
 {
 	private final Player _player;
 	private final int _questId;
+	private final String _questName;
 	private final QuestType _questType;
 	
-	public OnPlayerQuestComplete(Player player, int questId, QuestType questType)
+	public OnPlayerQuestComplete(Player player, int questId, String questName, QuestType questType)
 	{
 		_player = player;
 		_questId = questId;
+		_questName = questName;
 		_questType = questType;
 	}
 	
@@ -45,6 +47,11 @@ public class OnPlayerQuestComplete implements IBaseEvent
 	public int getQuestId()
 	{
 		return _questId;
+	}
+	
+	public String getQuestName()
+	{
+		return _questName;
 	}
 	
 	public QuestType getQuestType()

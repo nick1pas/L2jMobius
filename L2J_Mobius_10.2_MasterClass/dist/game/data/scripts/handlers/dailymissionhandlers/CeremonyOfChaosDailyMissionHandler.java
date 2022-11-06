@@ -32,17 +32,19 @@ import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
 public class CeremonyOfChaosDailyMissionHandler extends AbstractDailyMissionHandler
 {
 	private final int _amount;
+	private final int _requiredMissionCompleteId;
 	
 	public CeremonyOfChaosDailyMissionHandler(DailyMissionDataHolder holder)
 	{
 		super(holder);
+		_requiredMissionCompleteId = holder.getRequiredMissionCompleteId();
 		_amount = holder.getRequiredCompletions();
 	}
 	
 	@Override
 	public void init()
 	{
-		Containers.Global().addListener(new ConsumerEventListener(this, EventType.ON_CEREMONY_OF_CHAOS_MATCH_RESULT, (OnCeremonyOfChaosMatchResult event) -> onCeremonyOfChaosMatchResult(event), this));
+		Containers.Players().addListener(new ConsumerEventListener(this, EventType.ON_CEREMONY_OF_CHAOS_MATCH_RESULT, (OnCeremonyOfChaosMatchResult event) -> onCeremonyOfChaosMatchResult(event), this));
 	}
 	
 	@Override
@@ -75,15 +77,34 @@ public class CeremonyOfChaosDailyMissionHandler extends AbstractDailyMissionHand
 	{
 		event.getMembers().forEach(member ->
 		{
-			final DailyMissionPlayerEntry entry = getPlayerEntry(member.getObjectId(), true);
-			if (entry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
+			if (((_requiredMissionCompleteId != 0) && checkRequiredMission(member)) || (_requiredMissionCompleteId == 0))
 			{
-				if (entry.increaseProgress() >= _amount)
-				{
-					entry.setStatus(DailyMissionStatus.AVAILABLE);
-				}
-				storePlayerEntry(entry);
+				processPlayerProgress(member);
 			}
 		});
+	}
+	
+	private void processPlayerProgress(Player player)
+	{
+		final DailyMissionPlayerEntry entry = getPlayerEntry(player.getObjectId(), true);
+		if (entry.getStatus() == DailyMissionStatus.NOT_AVAILABLE)
+		{
+			if (entry.increaseProgress() >= _amount)
+			{
+				entry.setStatus(DailyMissionStatus.AVAILABLE);
+			}
+			storePlayerEntry(entry);
+		}
+	}
+	
+	private boolean checkRequiredMission(Player player)
+	{
+		final int missionId = getPlayerEntry(player.getObjectId(), false).getRewardId();
+		final int missionStatus = getStatus(player);
+		if ((missionId != 0) && (_requiredMissionCompleteId != 0) && (missionId == _requiredMissionCompleteId) && (missionStatus == DailyMissionStatus.COMPLETED.getClientId()))
+		{
+			return true;
+		}
+		return false;
 	}
 }
