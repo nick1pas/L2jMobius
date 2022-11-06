@@ -770,7 +770,7 @@
 			<value fromLevel="1" toLevel="15">60</value>
 			<value fromLevel="7" toLevel="15" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>
@@ -1188,7 +1188,7 @@
 			<value fromLevel="1" toLevel="13">99</value>
 			<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>100</castRange>
 		<coolTime>500</coolTime>
@@ -1486,7 +1486,6 @@
 		</effectPoint>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
-		<affectLimit>50-50</affectLimit>
 		<targetType>SELF</targetType>
 		<affectScope>PARTY</affectScope>
 		<affectObject>FRIEND</affectObject>
@@ -3923,7 +3922,7 @@
 		<abnormalType>HP_REGEN_DOWN</abnormalType>
 		<activateRate>60</activateRate>
 		<affectRange>200</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>10-10</affectLimit>
 		<effectPoint>-379</effectPoint>
 		<operateType>A2</operateType>
 		<castRange>800</castRange>
@@ -4866,7 +4865,7 @@
 		<abnormalType>SILENCE_ALL</abnormalType>
 		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
 		<activateRate>60</activateRate> <!-- Custom -->
-		<affectLimit>10-10</affectLimit> <!-- Custom -->
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange> <!-- Custom -->
 		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
 		<operateType>A2</operateType>
@@ -4988,7 +4987,7 @@
 		<abnormalType>TURN_STONE</abnormalType>
 		<abnormalVisualEffect>FLESH_STONE</abnormalVisualEffect>
 		<activateRate>80</activateRate> <!-- Custom -->
-		<affectLimit>10-10</affectLimit> <!-- Custom -->
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange> <!-- Custom -->
 		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
 		<effectPoint>-666</effectPoint>
@@ -5057,7 +5056,7 @@
 		<!-- For $s1, restores and increases clan members' Max CP +$s2. -->
 		<icon>icon.skill11843</icon>
 		<abnormalTime>30</abnormalTime>
-		<affectLimit>50-100</affectLimit> <!-- Custom -->
+		<affectLimit>50-100</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5230,7 +5229,7 @@
 		<abnormalType>BUFF_SPECIAL_ATTACK</abnormalType>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5327,7 +5326,7 @@
 		</abnormalTime>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5434,7 +5433,7 @@
 		</abnormalTime>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5541,7 +5540,7 @@
 		</abnormalTime>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-100</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5643,7 +5642,7 @@
 		</abnormalTime>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5738,7 +5737,7 @@
 		</abnormalTime>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -5811,7 +5810,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>PARTY_PLEDGE</affectScope>
 		<affectObject>FRIEND_PC</affectObject>
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<mpConsume>140</mpConsume>
 		<mpInitialConsume>28</mpInitialConsume>
@@ -5868,7 +5866,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>PARTY_PLEDGE</affectScope>
 		<affectObject>FRIEND_PC</affectObject>
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<mpConsume>140</mpConsume>
 		<mpInitialConsume>28</mpInitialConsume>
@@ -5929,7 +5926,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>PARTY_PLEDGE</affectScope>
 		<affectObject>FRIEND_PC</affectObject>
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<mpConsume>140</mpConsume>
 		<mpInitialConsume>28</mpInitialConsume>

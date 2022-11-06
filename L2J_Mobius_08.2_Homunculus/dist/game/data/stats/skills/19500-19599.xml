@@ -136,7 +136,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>PARTY_PLEDGE</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange>
 		<reuseDelay>7000</reuseDelay>
 		<effects>
@@ -166,7 +165,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -217,7 +216,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -264,7 +263,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -1267,7 +1266,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<affectRange>400</affectRange>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>-5000</effectPoint>
 		<effectRange>400</effectRange>
@@ -1339,7 +1338,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<affectRange>400</affectRange>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>-5000</effectPoint>
 		<effectRange>400</effectRange>
@@ -1411,7 +1410,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<affectRange>400</affectRange>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectPoint>-5000</effectPoint>
 		<effectRange>400</effectRange>
@@ -1669,13 +1668,11 @@
 	<skill id="19559" toLevel="11" name="Black Thorn Chain Strike">
 		<!-- Swings the black thorn chain to attack the target and nearby enemies with $s1 power pulling them to you. Restores $s2 HP. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19557</icon>
-		<affectLimit>5-12</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<nextAction>ATTACK</nextAction>
 		<affectRange>600</affectRange>
-		<affectLimit>10-10</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>-5000</effectPoint>
 		<effectRange>600</effectRange>
@@ -1776,7 +1773,6 @@
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>ALL_SPEED_DOWN</abnormalType>
 		<activateRate>80</activateRate>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<effectPoint>-5000</effectPoint>
@@ -1855,7 +1851,6 @@
 	<skill id="19561" toLevel="11" name="Chained Death Scythe">
 		<!-- Summons a scythe to attack the target and nearby enemies with $s1 power pulling them to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19559</icon>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<abnormalTime>1</abnormalTime>
@@ -2138,13 +2133,11 @@
 	<skill id="19567" toLevel="11" name="Gigantic Wave">
 		<!-- Summons a huge wave that attacks the target and nearby enemies with $s1 power pulling them to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19558</icon>
-		<affectLimit>5-12</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<nextAction>ATTACK</nextAction>
 		<affectRange>600</affectRange>
-		<affectLimit>10-10</affectLimit>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectPoint>-5000</effectPoint>
 		<effectRange>600</effectRange>
@@ -2279,7 +2272,6 @@
 			<value fromLevel="1" toLevel="8">80</value>
 			<value fromLevel="4" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + base / 100 * subIndex}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
 		<affectRange>
 			<value level="1">300</value>
 			<value level="2">350</value>

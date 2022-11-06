@@ -136,7 +136,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>PARTY_PLEDGE</affectScope>
 		<affectObject>FRIEND</affectObject>
-		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange>
 		<reuseDelay>7000</reuseDelay>
 		<effects>
@@ -166,7 +165,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -222,7 +221,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -274,7 +273,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -1195,7 +1194,7 @@
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<activateRate>60</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>600</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1283,7 +1282,7 @@
 	<skill id="19553" toLevel="9" name="Revenging Thorn">
 		<!-- Attacks nearby enemies with thorns with $s1 power pulling them to you. Recovers $s2 HP. If cast while Grand Fortress Lv. 5 is active, the skill has increased power and range. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19553</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
@@ -1360,12 +1359,12 @@
 	<skill id="19554" toLevel="7" name="Revenging Black Thorn">
 		<!-- Attacks nearby enemies with thorns with $s1 power pulling them to you. Recovers $s2 HP. If cast while Grand Fortress Lv. 5 is active, the skill has increased power and range. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19553</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<affectRange>400</affectRange>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>-5000</effectPoint>
 		<effectRange>400</effectRange>
@@ -1432,7 +1431,7 @@
 	<skill id="19555" toLevel="9" name="Maelstrom">
 		<!-- Creates a cyclone that pulls nearby enemies to you with $s1 power. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19554</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
@@ -1504,7 +1503,7 @@
 	<skill id="19556" toLevel="9" name="Inhale Soul">
 		<!-- Creates a pit of darkness that pulls nearby enemies to you with $s1 power. Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Pull. -->
 		<icon>icon.skill19555</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1575,7 +1574,7 @@
 	<skill id="19557" toLevel="5" name="Inhale Soul">
 		<!-- Creates a pit of darkness that pulls nearby enemies to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19555</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1631,7 +1630,7 @@
 	<skill id="19558" toLevel="9" name="Flame Feather">
 		<!-- Fires the Flame of Phoenix to attack nearby enemies with $s1 power provoking them into attacking you for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill19552</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1714,7 +1713,6 @@
 	<skill id="19559" toLevel="11" name="Black Thorn Chain Strike">
 		<!-- Swings the black thorn chain to attack the target and nearby enemies with $s1 power pulling them to you. Restores $s2 HP. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19557</icon>
-		<affectLimit>20-30</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
@@ -1826,7 +1824,6 @@
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>ALL_SPEED_DOWN</abnormalType>
 		<activateRate>80</activateRate>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<effectPoint>-5000</effectPoint>
@@ -1905,7 +1902,6 @@
 	<skill id="19561" toLevel="13" name="Chained Death Scythe">
 		<!-- Summons a scythe to attack the target and nearby enemies with $s1 power pulling them to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19559</icon>
-		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<abnormalTime>1</abnormalTime>
@@ -2142,7 +2138,6 @@
 	<skill id="19567" toLevel="13" name="Gigantic Wave">
 		<!-- Summons a huge wave that attacks the target and nearby enemies with $s1 power pulling them to you. Requires a sword or a blunt weapon. Inflicted status: Pull. -->
 		<icon>icon.skill19558</icon>
-		<affectLimit>20-30</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
@@ -2288,7 +2283,6 @@
 			<value fromLevel="1" toLevel="8">80</value>
 			<value fromLevel="4" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + base / 100 * subIndex}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
 		<affectRange>
 			<value level="1">300</value>
 			<value level="2">350</value>

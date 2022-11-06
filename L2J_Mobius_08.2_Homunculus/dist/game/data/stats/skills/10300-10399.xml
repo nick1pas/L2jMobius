@@ -545,7 +545,7 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>60</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>9-10</affectLimit>
 		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
 		<effectRange>800</effectRange>
 		<fanRange>0;0;600;60</fanRange>
@@ -933,7 +933,7 @@
 			<value fromLevel="1" toLevel="9">50</value>
 			<value fromLevel="3" toLevel="9" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>6-12</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
 		<lvlBonusRate>1</lvlBonusRate>
@@ -1117,7 +1117,7 @@
 	<skill id="10325" toLevel="8" name="Dreadful Roar">
 		<!-- Waves of screams wrap the enemies around making their P./ M. Atk. equal to $s1. The skill cooldown is fixed. Consumes $s2 Soulstones. -->
 		<icon>icon.skill10325</icon>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<activateRate>50</activateRate>
 		<affectRange>180</affectRange>
 		<magicLevel>
@@ -1822,7 +1822,7 @@
 			<value level="4">107</value>
 			<value level="5">109</value>
 		</magicLevel>
-		<affectLimit>6-12</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<operateType>A1</operateType>

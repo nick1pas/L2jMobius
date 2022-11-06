@@ -976,7 +976,7 @@
 	<skill id="10512" toLevel="11" name="Dagger Explosion">
 		<!-- Detonates a blade to attack nearby enemies with $s1 Power added to P. Atk. Requires a dagger/ dual dagger. Over-hit. Critical. -->
 		<icon>icon.skill10512</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1075,7 +1075,7 @@
 			<value fromLevel="1" toLevel="14">90</value>
 			<value fromLevel="6" toLevel="14" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A2</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1736,7 +1736,7 @@
 		<abnormalType>POISON</abnormalType>
 		<abnormalVisualEffect>DOT_POISON</abnormalVisualEffect>
 		<activateRate>100</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A2</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2109,7 +2109,7 @@
 			<value fromLevel="1" toLevel="8" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
 		<affectRange>80</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<operateType>A2</operateType>
 		<trait>DERANGEMENT</trait>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -3591,7 +3591,6 @@
 	<skill id="10553" toLevel="1" name="Chance of Wind">
 		<!-- Resets cooldown of certain skills. -->
 		<icon>icon.skill10878</icon>
-		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>

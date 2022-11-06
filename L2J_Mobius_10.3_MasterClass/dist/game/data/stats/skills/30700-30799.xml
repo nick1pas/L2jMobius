@@ -1789,7 +1789,7 @@
 		<coolTime>500</coolTime>
 		<reuseDelay>5000</reuseDelay>
 		<targetType>SELF</targetType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
@@ -1835,7 +1835,7 @@
 		<reuseDelay>10000</reuseDelay>
 		<effectPoint>-709</effectPoint>
 		<mpConsume>16</mpConsume>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<magicCriticalRate>5</magicCriticalRate>
 		<nextAction>ATTACK</nextAction>
@@ -1925,7 +1925,7 @@
 		<mpConsume>4</mpConsume>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;150;180</fanRange>
 		<lvlBonusRate>5</lvlBonusRate> <!-- Guessing -->
 		<basicProperty>PHYSICAL</basicProperty>
@@ -2176,7 +2176,7 @@
 		<effectPoint>-689</effectPoint>
 		<mpConsume>12</mpConsume>
 		<magicLevel>76</magicLevel>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<magicCriticalRate>5</magicCriticalRate>
 		<nextAction>ATTACK</nextAction>
@@ -2291,7 +2291,7 @@
 		<effectPoint>-687</effectPoint>
 		<mpConsume>26</mpConsume>
 		<magicLevel>76</magicLevel>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<effectRange>1100</effectRange>
 		<attributeType>HOLY</attributeType>
@@ -2959,7 +2959,7 @@
 		<effectPoint>-709</effectPoint>
 		<effectRange>1000</effectRange>
 		<magicCriticalRate>5</magicCriticalRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -3051,7 +3051,7 @@
 			<value level="14">234</value>
 			<value level="15">240</value>
 		</mpConsume>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<effectRange>1000</effectRange>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -3640,7 +3640,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
 		<abnormalType>REAL_TARGET</abnormalType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>9-10</affectLimit>
 		<affectRange>1200</affectRange>
 		<magicLevel>
 			<value level="1">85</value>
@@ -3706,7 +3706,7 @@
 			<value level="10">160</value>
 			<value level="11">170</value>
 		</mpConsume>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>80</affectRange>
 		<effectRange>400</effectRange>
 		<fanRange>0;0;80;150</fanRange>
@@ -4026,7 +4026,7 @@
 			<value fromLevel="1" toLevel="11">30</value>
 			<value fromLevel="7" toLevel="11" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<attributeType>EARTH</attributeType>
@@ -4287,7 +4287,7 @@
 			<value fromLevel="1" toLevel="11">80</value>
 			<value fromLevel="1" toLevel="11" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<lvlBonusRate>20</lvlBonusRate>
@@ -4686,7 +4686,7 @@
 			<value fromLevel="1" toLevel="11">40</value>
 			<value fromLevel="4" toLevel="11" fromSubLevel="1001" toSubLevel="1020">{base + base / 100 * subIndex}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>600</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectRange>800</effectRange>

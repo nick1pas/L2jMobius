@@ -39,13 +39,11 @@
 		<coolTime>500</coolTime>
 		<reuseDelay>1000</reuseDelay>
 		<effectPoint>-100</effectPoint>
-		<affectLimit>20-30</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>60</activateRate>
 		<nextAction>ATTACK</nextAction>
 		<affectRange>600</affectRange>
-		<affectLimit>10-10</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>-100</effectPoint>
 		<effectRange>600</effectRange>
@@ -376,7 +374,6 @@
 		<effectPoint>-100</effectPoint>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
-		<affectLimit>20-30</affectLimit>
 		<abnormalType>KNOCKDOWN</abnormalType>
 		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
 		<activateRate>200</activateRate>
@@ -459,7 +456,6 @@
 		</effects>
 	</skill>
 	<skill id="32537" toLevel="1" name="Lilith Magic Blast">
-		<affectLimit>12-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -492,7 +488,6 @@
 		<abnormalType>SILENCE_ALL</abnormalType>
 		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
 		<activateRate>500</activateRate>
-		<affectLimit>40-40</affectLimit>
 		<affectRange>300</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<lvlBonusRate>20</lvlBonusRate>
@@ -516,7 +511,7 @@
 		<hitTime>2000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-700</effectPoint>
-		<affectLimit>6-12</affectLimit>
+		<affectLimit>35-35</affectLimit>
 		<affectRange>200</affectRange>
 		<magicLevel>-1</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -588,7 +583,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<magicLevel>-1</magicLevel>
 		<effects>
@@ -605,7 +599,6 @@
 		<hitTime>2000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-700</effectPoint>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -677,7 +670,6 @@
 		<hitTime>2000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-700</effectPoint>
-		<affectLimit>12-12</affectLimit>
 		<affectRange>300</affectRange>
 		<magicLevel>-1</magicLevel>
 		<targetType>ENEMY</targetType>
@@ -695,7 +687,6 @@
 		<hitTime>2000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-700</effectPoint>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<magicLevel>-1</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -717,7 +708,6 @@
 		<hitTime>2000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-700</effectPoint>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -900,7 +890,6 @@
 		<coolTime>500</coolTime>
 		<effectPoint>-100</effectPoint>
 		<effectRange>900</effectRange>
-		<affectLimit>40-40</affectLimit>
 		<affectRange>900</affectRange>
 		<fanRange>0;0;900;90</fanRange>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -928,7 +917,6 @@
 		<abnormalType>PARALYZE</abnormalType>
 		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
 		<activateRate>500</activateRate>
-		<affectLimit>40-40</affectLimit>
 		<affectRange>300</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<lvlBonusRate>20</lvlBonusRate>
@@ -956,7 +944,7 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>6-12</affectLimit>
+		<affectLimit>35-35</affectLimit>
 		<affectRange>150</affectRange>
 		<magicLevel>-1</magicLevel>
 		<effects>
@@ -1050,7 +1038,6 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>TARGET_LOCK</abnormalType>
 		<activateRate>100</activateRate>
-		<affectLimit>40-40</affectLimit>
 		<affectRange>500</affectRange>
 		<magicLevel>-1</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1103,7 +1090,6 @@
 		<abnormalType>PARALYZE</abnormalType>
 		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
 		<activateRate>500</activateRate>
-		<affectLimit>40-40</affectLimit>
 		<affectRange>300</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<lvlBonusRate>20</lvlBonusRate>
@@ -1148,7 +1134,6 @@
 		<effectPoint>-100</effectPoint>
 		<isMagic>1</isMagic>
 		<magicLevel>-1</magicLevel>
-		<affectLimit>40-40</affectLimit>
 		<affectRange>500</affectRange>
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>

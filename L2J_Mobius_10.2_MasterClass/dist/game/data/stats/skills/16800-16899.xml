@@ -435,12 +435,12 @@
 	<skill id="16842" toLevel="1" name="Gravity Shock">
 		<!-- Attacks nearby enemies dealing damage and pulling them toward the character. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill30505</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<abnormalTime>1</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
 		<activateRate>80</activateRate> <!-- Guessed -->
 		<affectRange>400</affectRange>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<effectPoint>-687</effectPoint>
 		<effectRange>400</effectRange>
@@ -749,7 +749,6 @@
 		<icon>icon.skill0003</icon>
 		<castRange>100</castRange>
 		<effectRange>400</effectRange>
-		<affectLimit>20-30</affectLimit>
 		<magicLevel>104</magicLevel>
 		<fanRange>0;0;300;100</fanRange>
 		<hitTime>1500</hitTime>
@@ -770,7 +769,7 @@
 		<icon>icon.skill10340</icon>
 		<castRange>100</castRange>
 		<effectRange>400</effectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>BLEEDING</abnormalType>
 		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
@@ -804,7 +803,6 @@
 		<abnormalTime>1</abnormalTime>
 		<abnormalType>KNOCKDOWN</abnormalType>
 		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
-		<affectLimit>20-30</affectLimit>
 		<affectRange>150</affectRange>
 		<activateRate>120</activateRate>
 		<lvlBonusRate>1</lvlBonusRate>

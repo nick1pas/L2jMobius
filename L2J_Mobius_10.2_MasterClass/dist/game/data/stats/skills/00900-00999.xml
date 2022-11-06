@@ -3000,7 +3000,7 @@
 	<skill id="951" toLevel="7" name="Wing Assault">
 		<!-- Charges with outspread wings. Strikes around the attacking target. Power $s1 -->
 		<icon>icon.skill0540</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<castRange>600</castRange>
 		<coolTime>200</coolTime>
@@ -4845,7 +4845,7 @@
 	<skill id="987" toLevel="1" name="Multishot">
 		<!-- Attacks multiple enemies with 11,030 power. Requires a bow or a crossbow. Critical. Over-hit. The skill cooldown is fixed. -->
 		<icon>icon.skill0987</icon>
-		<affectLimit>8-0-1</affectLimit>
+		<affectLimit>8-0</affectLimit>
 		<affectRange>900</affectRange>
 		<affectHeight>-200;200</affectHeight>
 		<castRange>900</castRange>
@@ -5234,7 +5234,7 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>60</activateRate>
-		<affectLimit>5-12-1</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>600</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>600</castRange>

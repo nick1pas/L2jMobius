@@ -398,7 +398,7 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>30</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectPoint>-975</effectPoint>
 		<fanRange>0;0;1500;60</fanRange>
@@ -961,7 +961,7 @@
 	</skill>
 	<skill id="5732" toLevel="6" name="Flame Strike">
 		<icon>icon.skill1181</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>500</affectRange>
 		<castRange>500</castRange>
 		<effectPoint>
@@ -1729,7 +1729,7 @@
 	<skill id="5748" toLevel="12" name="Meteor Shower">
 		<!-- Drops meteors to attack surrounding enemies. Power $s1 -->
 		<icon>icon.skill1467</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<coolTime>720</coolTime>
 		<effectPoint>
 			<value level="1">-138</value>
@@ -1966,7 +1966,7 @@
 	</skill>
 	<skill id="5751" toLevel="12" name="Lightning Wave">
 		<!-- Inflicts the power of thunder upon surrounding enemies. Power $s1 -->
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<effectPoint>
 			<value level="1">-138</value>
@@ -2901,7 +2901,7 @@
 		<abnormalTime>60</abnormalTime>
 		<abnormalType>SPEED_DOWN</abnormalType>
 		<activateRate>80</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>MAGIC</basicProperty>
 		<effectPoint>-684</effectPoint>
 		<fanRange>0;0;900;5</fanRange>
@@ -2953,7 +2953,7 @@
 		<abnormalTime>60</abnormalTime>
 		<abnormalType>SPEED_DOWN</abnormalType>
 		<activateRate>80</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>MAGIC</basicProperty>
 		<effectPoint>-684</effectPoint>
 		<fanRange>0;0;900;30</fanRange>
@@ -2975,7 +2975,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5797" toLevel="1" name="Bursting Flame">
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<effectPoint>-676</effectPoint>
 		<fanRange>0;0;600;60</fanRange>
 		<hitTime>3500</hitTime>

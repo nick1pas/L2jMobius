@@ -162,7 +162,7 @@
 	<skill id="503" toLevel="3" name="Scorn">
 		<!-- Provokes the enemies to the front with $s1 Power. -->
 		<icon>icon.skill0503</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>80</affectRange>
 		<castRange>40</castRange>
 		<coolTime>720</coolTime>
@@ -769,7 +769,7 @@
 	<skill id="508" toLevel="31" name="Rising Shot">
 		<!-- Fires a soaring bolt at the target and nearby enemies with $s1 power. Consumes up to $s2 souls to increase power. Requires a crossbow. Over-hit. -->
 		<icon>icon.skill0508</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<castRange>500</castRange>
 		<coolTime>800</coolTime>
@@ -2016,7 +2016,7 @@
 	<skill id="526" toLevel="1" name="Enuma Elish">
 		<!-- Attacks enemies in the front using the Sword of Creation with $s1 power. Consumes up to $s2 souls to increase damage. Over-hit. -->
 		<icon>icon.skill0526</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<castRange>40</castRange>
 		<coolTime>720</coolTime>
@@ -2500,7 +2500,7 @@
 	<skill id="540" toLevel="2" name="Wing Assault">
 		<!-- Charges with outspread wings. Strikes around the attacking target. Power $s1 -->
 		<icon>icon.skill0540</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<castRange>600</castRange>
 		<coolTime>200</coolTime>
@@ -3366,7 +3366,7 @@
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>SPEED_DOWN</abnormalType>
 		<activateRate>60</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<effectPoint>
@@ -3553,7 +3553,7 @@
 	<skill id="569" toLevel="4" name="Attack Storm">
 		<!-- Unleash a magical attack on distant enemies. Requires level $s1 Momentum charge. Power $s2 -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<castRange>500</castRange>
 		<effectPoint>
@@ -3656,7 +3656,7 @@
 		<abnormalType>POISON</abnormalType>
 		<abnormalVisualEffect>DOT_POISON</abnormalVisualEffect>
 		<activateRate>70</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectPoint>
@@ -3751,7 +3751,7 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>50</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectPoint>
@@ -3918,7 +3918,7 @@
 	<skill id="577" toLevel="4" name="Fire Breath">
 		<!-- Spouts out a fire attack that strikes enemies at the front. Power $s1 Over-hit. -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>250</affectRange>
 		<castRange>100</castRange>
 		<coolTime>720</coolTime>
@@ -3975,7 +3975,7 @@
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>DOT_ATTR</abnormalType>
 		<activateRate>60</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<coolTime>720</coolTime>
@@ -4148,7 +4148,7 @@
 		<abnormalTime>60</abnormalTime>
 		<abnormalType>HIT_DOWN</abnormalType>
 		<activateRate>60</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<effectPoint>-100</effectPoint>
@@ -4199,7 +4199,7 @@
 		<subordinationAbnormalType>BLEEDING</subordinationAbnormalType>
 		<abnormalType>BLEEDING</abnormalType>
 		<activateRate>50</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>240</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>40</castRange>
@@ -4365,7 +4365,7 @@
 	<skill id="586" toLevel="2" name="Rolling Attack">
 		<!-- Quickly swings the polearm around, attacking nearby enemies. Power $s1 Over-hit. -->
 		<icon>icon.skill_transform_s_attack</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<effectPoint>-100</effectPoint>
 		<hitTime>2500</hitTime>

@@ -1431,7 +1431,6 @@
 		<affectScope>SQUARE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<fanRange>0;0;1100;50</fanRange>
-		<affectLimit>20-30</affectLimit>
 		<conditions>
 			<condition name="EquipWeapon">
 				<weaponType>
@@ -2052,7 +2051,7 @@
 		<!-- Attacks frontal enemies with $s1 Power added to P. Atk. Requires a bow or crossbow to be equipped. Over-hit. Critical. -->
 		<icon>icon.skill10771</icon>
 		<operateType>A1</operateType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>1100</affectRange>
 		<fanRange>0;0;1100;90</fanRange>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2160,7 +2159,7 @@
 		<!-- Showers the enemy and nearby enemies with a rain of arrows, to inflict damage with $s1 damage added to P. Atk. Requires a bow or crossbow to be equipped. Over-hit. Critical. -->
 		<icon>icon.skill10772</icon>
 		<operateType>A1</operateType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -2275,7 +2274,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<effectRange>1400</effectRange>
 		<magicLevel>98</magicLevel>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;900;100</fanRange>
 		<reuseDelay>15000</reuseDelay>
 		<targetType>ENEMY</targetType>
@@ -2751,7 +2750,7 @@
 	<skill id="10781" toLevel="8" name="Phoenix Arrow">
 		<!-- Shoots a magical arrow to obliterate an area. Attacks targets within the skill's range with $s1 power. Bow/ Crossbow required. -->
 		<icon>icon.skill10781</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2812,7 +2811,7 @@
 	<skill id="10782" toLevel="1" name="Deadly Move 2">
 		<!-- Death blow! Please do not use. -->
 		<icon>icon.skill10782</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2974,7 +2973,6 @@
 			<value level="9">3</value>
 		</abnormalTime>
 		<!-- TODO set name="abnormalType" val="" / -->
-		<affectLimit>20-30</affectLimit>
 		<affectRange>500</affectRange>
 		<operateType>A2</operateType>
 		<magicCriticalRate>5</magicCriticalRate>

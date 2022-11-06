@@ -2612,7 +2612,7 @@
 			<value fromLevel="1" toLevel="12">60</value>
 			<value fromLevel="6" toLevel="12" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<coolTime>500</coolTime>
@@ -5652,7 +5652,7 @@
 	<skill id="492" toLevel="25" name="Spread Wing">
 		<!-- Spreads the wings to attack nearby enemies with $s1 power. Consumes up to $s2 souls to increase damage. Over-hit. -->
 		<icon>icon.skill0492</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<coolTime>720</coolTime>
 		<effectPoint>
@@ -5782,7 +5782,7 @@
 	<skill id="493" toLevel="28" name="Storm Assault">
 		<!-- Makes a hurricane-like assault on the target and nearby enemies with $s1 power. Consumes up to $s2 souls to increase power. Requires an ancient sword, a two-handed sword, a blunt weapon, a spear, a fist weapon, dual blunt weapons, or dual swords. Over-hit. -->
 		<icon>icon.skill0493</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<castRange>
 			<value level="1">400</value>

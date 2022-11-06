@@ -263,7 +263,7 @@
 		<icon>icon.skill10102</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<activateRate>
 			<value fromLevel="1" toLevel="10">50</value>
@@ -349,7 +349,7 @@
 			<value fromLevel="1" toLevel="10">60</value>
 			<value fromLevel="3" toLevel="10" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-20</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;600;180</fanRange>
 		<affectRange>200</affectRange>
 		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->

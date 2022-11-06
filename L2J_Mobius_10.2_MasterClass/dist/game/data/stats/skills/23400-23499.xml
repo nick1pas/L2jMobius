@@ -13,7 +13,7 @@
 		</magicLevel>
 		<trait>POISON</trait>
 		<affectRange>65</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<staticReuse>true</staticReuse>
 		<isMagic>1</isMagic>
 		<targetType>SELF</targetType>
@@ -333,7 +333,7 @@
 		</magicLevel>
 		<reuseDelayGroup>11040</reuseDelayGroup>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<attachToggleGroupId>1</attachToggleGroupId>
 		<isMagic>1</isMagic>
 		<targetType>ENEMY</targetType>
@@ -370,7 +370,7 @@
 		<attributeType>FIRE</attributeType>
 		<attributeValue>10</attributeValue>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -406,7 +406,7 @@
 		<attributeType>WATER</attributeType>
 		<attributeValue>10</attributeValue>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -442,7 +442,7 @@
 		<attributeType>WIND</attributeType>
 		<attributeValue>10</attributeValue>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -478,7 +478,7 @@
 		<attributeType>EARTH</attributeType>
 		<attributeValue>10</attributeValue>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -515,7 +515,7 @@
 		<attributeValue>20</attributeValue>
 		<canDoubleCast>true</canDoubleCast>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -1270,7 +1270,7 @@
 			<value level="2">90</value>
 			<value level="3">95</value>
 		</magicLevel>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;150;120</fanRange>
 		<reuseDelay>7000</reuseDelay>
 		<nextAction>ATTACK</nextAction>
@@ -1311,7 +1311,7 @@
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
@@ -1584,7 +1584,7 @@
 			<value level="3">95</value>
 		</magicLevel>
 		<affectRange>300</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isMagic>4</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
@@ -1602,7 +1602,7 @@
 		<effectRange>1000</effectRange>
 		<magicLevel>85</magicLevel>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<reuseDelay>10000</reuseDelay>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -1715,7 +1715,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 		<effectRange>1500</effectRange>
 		<magicLevel>95</magicLevel>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;900;50</fanRange>
 		<reuseDelay>7000</reuseDelay>
 		<targetType>ENEMY</targetType>
@@ -1759,7 +1759,7 @@
 		<effectRange>1500</effectRange>
 		<magicLevel>95</magicLevel>
 		<affectRange>200</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<reuseDelay>15000</reuseDelay>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -1823,7 +1823,7 @@
 			<value level="2">95</value>
 		</magicLevel>
 		<affectRange>300</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<reuseDelay>10000</reuseDelay>
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>

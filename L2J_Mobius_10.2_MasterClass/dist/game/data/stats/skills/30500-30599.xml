@@ -592,7 +592,7 @@
 		</activateRate>
 		<affectRange>200</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
-		<affectLimit>10-10</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<coolTime>500</coolTime>
 		<effectPoint>-687</effectPoint>
 		<hitTime>2000</hitTime>
@@ -1414,7 +1414,7 @@
 			<value fromLevel="7" toLevel="15">15</value> <!-- Guessed -->
 			<value fromLevel="7" toLevel="15" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>1-4</affectLimit>
 		<basicProperty>PHYSICAL</basicProperty> <!-- Guessed -->
 		<affectRange>300</affectRange> <!-- Unconfirmed -->
 		<effectPoint>-687</effectPoint>

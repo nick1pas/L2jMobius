@@ -40,7 +40,6 @@
 		<abnormalType>POISON</abnormalType>
 		<abnormalVisualEffect>DOT_POISON</abnormalVisualEffect>
 		<activateRate>130</activateRate>
-		<affectLimit>20-30</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A2</operateType>
 		<coolTime>500</coolTime>
@@ -121,7 +120,7 @@
 		<abnormalType>POISON</abnormalType>
 		<abnormalVisualEffect>DOT_POISON</abnormalVisualEffect>
 		<activateRate>130</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A2</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -626,7 +625,7 @@
 		<affectScope>FAN</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<fanRange>0;0;200;150</fanRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>40</castRange>
 		<magicLevel>
@@ -930,7 +929,7 @@
 	<skill id="19316" toLevel="8" name="Final Elemental Storm (Dark)">
 		<!-- Deals M. Atk. of $s1 power added with attribute damage on the target and the enemies near it. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>DARK</attributeType>
 		<attributeValue>100</attributeValue>

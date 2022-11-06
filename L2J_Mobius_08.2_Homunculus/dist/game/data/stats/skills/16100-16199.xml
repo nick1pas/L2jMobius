@@ -31,7 +31,6 @@
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<abnormalLevel>1</abnormalLevel>
 		<castRange>900</castRange>
-		<affectLimit>40-80</affectLimit>
 		<affectRange>300</affectRange>
 		<hitTime>2500</hitTime>
 		<coolTime>500</coolTime>
@@ -436,7 +435,6 @@
 		<abnormalType>SLEEP</abnormalType>
 		<abnormalVisualEffect>SLEEP</abnormalVisualEffect>
 		<activateRate>40</activateRate>
-		<affectLimit>9-10</affectLimit>
 		<affectRange>200</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<removedOnDamage>true</removedOnDamage>
@@ -1035,7 +1033,6 @@
 		<abnormalTime>30</abnormalTime>
 		<abnormalType>ATTACK_TIME_UP</abnormalType>
 		<activateRate>80</activateRate>
-		<affectLimit>10-10</affectLimit>
 		<affectRange>200</affectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<icon>icon.skill1206</icon>
@@ -1132,7 +1129,6 @@
 		<reuseDelay>10000</reuseDelay>
 		<effectPoint>-1500</effectPoint>
 		<isMagic>1</isMagic>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>DARK</attributeType>
 		<attributeValue>450</attributeValue>
@@ -1198,7 +1194,6 @@
 		<isDebuff>true</isDebuff>
 		<lvlBonusRate>30</lvlBonusRate>
 		<trait>BLEED</trait>
-		<affectLimit>10-10</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>600</castRange>
 		<effectPoint>-679</effectPoint>
@@ -1537,7 +1532,6 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>10-10</affectLimit>
 		<effects>
 			<effect name="MagicalAttack">
 				<power>1500</power>
@@ -1584,7 +1578,6 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>10-10</affectLimit>
 		<operateType>A2</operateType>
 		<mpConsume>1</mpConsume>
 		<castRange>300</castRange>
@@ -1613,7 +1606,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<effects>
 			<effect name="PhysicalAttack">
@@ -1631,7 +1623,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<effects>
 			<effect name="PhysicalAttack">

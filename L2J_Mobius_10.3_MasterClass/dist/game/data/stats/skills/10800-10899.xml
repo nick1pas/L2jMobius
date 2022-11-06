@@ -257,7 +257,6 @@
 			<value fromLevel="1" toLevel="8">100</value>
 			<value fromLevel="1" toLevel="8" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
 		<affectRange>400</affectRange>
 		<operateType>A2</operateType>
 		<magicLevel>
@@ -453,7 +452,7 @@
 		<abnormalTime>15</abnormalTime>
 		<affectRange>300</affectRange>
 		<effectRange>300</effectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<isMagic>2</isMagic>
 		<targetType>SELF</targetType>
@@ -519,7 +518,7 @@
 		<abnormalTime>15</abnormalTime>
 		<trait>HOLD</trait>
 		<affectRange>300</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<isMagic>2</isMagic>
 		<targetType>SELF</targetType>
@@ -548,7 +547,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<affectRange>300</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>

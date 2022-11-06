@@ -190,7 +190,7 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<isMagic>1</isMagic>
 		<isDebuff>true</isDebuff>
@@ -440,7 +440,6 @@
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<trait>KNOCKBACK</trait>
 		<isMagic>1</isMagic>
@@ -476,7 +475,6 @@
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<trait>HOLD</trait>
 		<isMagic>1</isMagic>
@@ -509,7 +507,6 @@
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<isMagic>1</isMagic>
 		<isDebuff>true</isDebuff>
@@ -543,7 +540,6 @@
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>40</affectRange>
 		<trait>DERANGEMENT</trait>
 		<isMagic>1</isMagic>
@@ -1600,7 +1596,7 @@
 			<value fromLevel="1" toLevel="13">99</value>
 			<value fromLevel="7" toLevel="13" fromSubLevel="1001" toSubLevel="1020">{base + base / 100 * subIndex}</value>
 		</activateRate>
-		<affectLimit>5-12</affectLimit>
+		<affectLimit>9-10</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>

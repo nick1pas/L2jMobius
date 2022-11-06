@@ -955,7 +955,7 @@
 		<!-- Attacks enemies at the front with $s1 power and knocks them down. There is a chance to cancel enemies' targets. Requires a shield. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill10012</icon>
 		<operateType>A1</operateType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;350;180</fanRange>
 		<activateRate>
 			<value fromLevel="1" toLevel="12">15</value>
@@ -1047,7 +1047,7 @@
 	<skill id="10012" toLevel="14" name="Shield Wave">
 		<!-- Attacks nearby enemies with $s1 power and inflicts stun on them for $s2 Activates the Wave Barrier effect for $s3, reflecting some of the received damage back to the enemy. Requires a shield. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill3584</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1151,7 +1151,7 @@
 	<skill id="10013" toLevel="15" name="Rising Smash">
 		<!-- Attacks nearby targets with $s1 power. Received Healing -$s3 for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. -->
 		<icon>icon.skill10013</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>HEAL_EFFECT_DOWN</abnormalType>
@@ -1262,7 +1262,7 @@
 			<value fromLevel="1" toLevel="15">15</value>
 			<value fromLevel="7" toLevel="15" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<lvlBonusRate>2</lvlBonusRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -2002,7 +2002,7 @@
 	<skill id="10023" toLevel="5" name="King of Beasts">
 		<!-- Summons the King of Beasts to attack nearby and frontal targets with $s1 Power added to P. Atk. Requires a shield. Over-hit. -->
 		<icon>icon.skill10023</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<nextAction>ATTACK</nextAction>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>
@@ -2381,7 +2381,7 @@
 			<value fromLevel="1" toLevel="12">80</value>
 			<value fromLevel="4" toLevel="12" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-30</affectLimit>
+		<affectLimit>10-10</affectLimit>
 		<affectRange>
 			<value level="1">300</value>
 			<value level="2">350</value>
@@ -3717,7 +3717,7 @@
 	<skill id="10052" toLevel="6" name="Lion Claw">
 		<!-- Flourishes claws to attack enemies at the front. -->
 		<icon>icon.skill0217</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<fanRange>0;0;80;150</fanRange>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -6243,7 +6243,7 @@
 			<value fromLevel="1" toLevel="11">15</value>
 			<value fromLevel="3" toLevel="11" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-20</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>600</affectRange>
 		<basicProperty>PHYSICAL</basicProperty>
 		<itemConsumeId>1785</itemConsumeId>

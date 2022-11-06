@@ -31,7 +31,6 @@
 		</effects>
 	</skill>
 	<skill id="32301" toLevel="1" name="Abyss Buster">
-		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<hitTime>2000</hitTime>
 		<coolTime>800</coolTime>
@@ -75,7 +74,6 @@
 		<!-- Deals powerful magic damage to targets within range. P./ M. Atk. -30%. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>900</castRange>
 		<effectRange>1400</effectRange>
@@ -110,7 +108,6 @@
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>PARALYZE</abnormalType>
 		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<activateRate>90</activateRate>
 		<basicProperty>MAGIC</basicProperty>
@@ -192,7 +189,6 @@
 	<skill id="32307" toLevel="1" name="Shield Throwing">
 		<!-- Deals powerful physical damage to targets within range. -->
 		<icon>icon.skill0092</icon>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>900</affectRange>
 		<fanRange>0;0;900;90</fanRange>
 		<castRange>40</castRange>
@@ -588,7 +584,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<magicLevel>105</magicLevel>
 		<effects>
@@ -688,7 +683,6 @@
 		<effectRange>1400</effectRange>
 		<isMagic>1</isMagic>
 		<magicLevel>105</magicLevel>
-		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<attributeType>DARK</attributeType>
 		<attributeValue>450</attributeValue>

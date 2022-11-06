@@ -28,7 +28,6 @@
 		<abnormalType>PARALYZE</abnormalType>
 		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
 		<activateRate>90</activateRate> <!-- Guessed -->
-		<affectLimit>20-30</affectLimit> <!-- Guessed -->
 		<affectRange>150</affectRange> <!-- Guessed -->
 		<basicProperty>MAGIC</basicProperty> <!-- Guessed -->
 		<operateType>A2</operateType>
@@ -202,7 +201,7 @@
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>1</abnormalTime>
 		<abnormalType>COMBINATION</abnormalType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A2</operateType>
 		<effectPoint>-709</effectPoint>
@@ -232,7 +231,7 @@
 		<abnormalTime>3</abnormalTime>
 		<abnormalType>SPEED_DOWN</abnormalType>
 		<affectRange>300</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<operateType>A4</operateType>
 		<isMagic>1</isMagic>
 		<effectPoint>-696</effectPoint>
@@ -1451,7 +1450,7 @@
 		</magicCriticalRate>
 		<hitCancelTime>3</hitCancelTime>
 		<effectRange>1100</effectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isMagic>1</isMagic>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>

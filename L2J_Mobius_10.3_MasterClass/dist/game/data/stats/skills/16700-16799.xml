@@ -371,7 +371,6 @@
 	<skill id="16726" toLevel="3" name="Powered Giant Storm">
 		<!-- Attack skill that deals magic damage to the target and nearby enemies -->
 		<operateType>A1</operateType>
-		<affectLimit>20-25</affectLimit>
 		<castRange>900</castRange>
 		<effectRange>900</effectRange>
 		<affectRange>600</affectRange>
@@ -442,7 +441,6 @@
 		<abnormalTime>10</abnormalTime>
 		<abnormalVisualEffect>KNOCKDOWN</abnormalVisualEffect>
 		<activateRate>200</activateRate>
-		<affectLimit>20-25</affectLimit>
 		<mpConsume>1</mpConsume>
 		<castRange>400</castRange>
 		<hitTime>5000</hitTime>
@@ -1229,7 +1227,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>12-12</affectLimit>
 		<affectRange>150</affectRange>
 		<magicLevel>-1</magicLevel>
 		<effects>
@@ -1283,7 +1280,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
 		<magicLevel>-1</magicLevel>
 		<effects>
@@ -1321,7 +1317,6 @@
 		</effects>
 	</skill>
 	<skill id="16769" toLevel="1" name="Energy Burst">
-		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<icon>icon.skill16212</icon>
 		<operateType>A1</operateType>
@@ -1346,7 +1341,6 @@
 		</effects>
 	</skill>
 	<skill id="16770" toLevel="1" name="Energy Charge">
-		<affectLimit>20-30</affectLimit>
 		<affectRange>100</affectRange>
 		<attributeType>HOLY</attributeType>
 		<attributeValue>600</attributeValue>

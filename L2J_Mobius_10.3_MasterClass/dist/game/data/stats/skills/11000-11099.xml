@@ -1957,7 +1957,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 		<affectRange>800</affectRange>
 		<fanRange>0;0;800;250</fanRange> <!-- Guessed -->
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<reuseDelayGroup>11023</reuseDelayGroup>
 		<magicLevel>
 			<value level="1">85</value>
@@ -2234,7 +2234,7 @@
 		<attributeValue>100</attributeValue>
 		<activateRate>60</activateRate> <!-- Custom -->
 		<operateType>A2</operateType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -2681,7 +2681,6 @@
 			<value level="3">84</value>
 			<value level="4">88</value>
 		</mpConsume>
-		<affectLimit>20-30</affectLimit>
 		<affectRange>200</affectRange>
 		<castRange>800</castRange>
 		<effectRange>1100</effectRange>
@@ -2727,7 +2726,7 @@
 			<value fromLevel="1" toLevel="11">150</value>
 			<value fromLevel="3" toLevel="11" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
 		<basicProperty>NONE</basicProperty>
 		<operateType>A2</operateType>
@@ -2827,7 +2826,7 @@
 			<value level="3">5</value>
 		</abnormalTime>
 		<abnormalType>SPEED_DOWN</abnormalType>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
 		<operateType>A4</operateType>
 		<isMagic>1</isMagic>
@@ -2859,7 +2858,7 @@
 	<skill id="11034" toLevel="8" name="Elemental Blast">
 		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
 		<icon>icon.skill11034</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<attachToggleGroupId>1</attachToggleGroupId>
 		<operateType>A1</operateType>
@@ -2959,7 +2958,7 @@
 	<skill id="11035" toLevel="8" name="Elemental Blast (Fire)">
 		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
 		<icon>icon.skill11034</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<attributeType>FIRE</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3042,7 +3041,7 @@
 	<skill id="11036" toLevel="8" name="Elemental Blast (Water)">
 		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
 		<icon>icon.skill11034</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<attributeType>WATER</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3125,7 +3124,7 @@
 	<skill id="11037" toLevel="8" name="Elemental Blast (Wind)">
 		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
 		<icon>icon.skill11034</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<attributeType>WIND</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3208,7 +3207,7 @@
 	<skill id="11038" toLevel="8" name="Elemental Blast (Earth)">
 		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
 		<icon>icon.skill11034</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<attributeType>EARTH</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3291,7 +3290,7 @@
 	<skill id="11039" toLevel="8" name="Elemental Blast (4 Elements)">
 		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
 		<icon>icon.skill11034</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
 		<operateType>A1</operateType>
 		<reuseDelayGroup>11034</reuseDelayGroup>
@@ -3374,7 +3373,7 @@
 	<skill id="11040" toLevel="8" name="Final Elemental Storm">
 		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attachToggleGroupId>1</attachToggleGroupId>
 		<operateType>A1</operateType>
@@ -3482,7 +3481,7 @@
 	<skill id="11041" toLevel="8" name="Final Elemental Storm (Fire)">
 		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>FIRE</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3564,7 +3563,7 @@
 	<skill id="11042" toLevel="8" name="Final Elemental Storm (Water)">
 		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>WATER</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3646,7 +3645,7 @@
 	<skill id="11043" toLevel="8" name="Final Elemental Storm (Wind)">
 		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>WIND</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3728,7 +3727,7 @@
 	<skill id="11044" toLevel="8" name="Final Elemental Storm (Earth)">
 		<!-- Deals M. Atk. of $s1 power added with attribute damage on the target and the enemies near it. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>EARTH</attributeType>
 		<attributeValue>100</attributeValue>
@@ -3810,7 +3809,7 @@
 	<skill id="11045" toLevel="8" name="Final Elemental Storm (Holy)">
 		<!-- Deals M. Atk. of $s1 power added with attribute damage on the target and the enemies near it. -->
 		<icon>icon.skill11040</icon>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<attributeType>HOLY</attributeType>
 		<attributeValue>100</attributeValue>
@@ -4174,7 +4173,7 @@
 			<value level="12">-709</value>
 			<value level="13">-709</value>
 		</effectPoint>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>10</magicCriticalRate>
 		<isDebuff>true</isDebuff>
@@ -4517,7 +4516,7 @@
 		</magicLevel>
 		<reuseDelayGroup>11052</reuseDelayGroup>
 		<affectRange>800</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<isMagic>1</isMagic>
 		<staticReuse>true</staticReuse>
@@ -4593,7 +4592,7 @@
 		</magicLevel>
 		<reuseDelayGroup>11052</reuseDelayGroup>
 		<affectRange>150</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<isDebuff>true</isDebuff>
 		<isMagic>2</isMagic>
 		<staticReuse>true</staticReuse>
@@ -4780,7 +4779,7 @@
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>TURN_FLEE</abnormalType>
 		<abnormalVisualEffect>TURN_FLEE</abnormalVisualEffect>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>10-10</affectLimit>
 		<affectRange>150</affectRange>
 		<activateRate>
 			<value fromLevel="1" toLevel="15">15</value>
@@ -4897,7 +4896,7 @@
 		<abnormalTime>1</abnormalTime>
 		<abnormalType>STUN</abnormalType>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>6-12</affectLimit>
 		<affectRange>400</affectRange>
 		<activateRate>
 			<value fromLevel="1" toLevel="13">60</value>
@@ -5064,7 +5063,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalType>DERANGEMENT</abnormalType>
 		<activateRate>50</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
 		<operateType>A2</operateType>
 		<trait>PULL</trait>
@@ -5368,7 +5367,7 @@
 		<affectScope>SQUARE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
 		<fanRange>75;0;1400;75</fanRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<effects>
 			<effect name="MagicalAttack">
 				<power>
@@ -5419,7 +5418,7 @@
 			<value fromLevel="1" toLevel="8">60</value>
 			<value fromLevel="1" toLevel="8" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<basicProperty>NONE</basicProperty>
 		<operateType>A2</operateType>
@@ -6051,7 +6050,7 @@
 		</abnormalTime>
 		<abnormalType>SPEED_DOWN</abnormalType>
 		<affectRange>300</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<operateType>A4</operateType>
 		<isMagic>1</isMagic>
 		<effectPoint>-711</effectPoint>
@@ -6225,7 +6224,7 @@
 			<value fromLevel="5" toLevel="13" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
 		<affectRange>400</affectRange>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>6-12</affectLimit>
 		<basicProperty>NONE</basicProperty>
 		<operateType>A2</operateType>
 		<trait>SHOCK</trait>

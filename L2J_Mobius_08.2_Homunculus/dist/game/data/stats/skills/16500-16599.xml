@@ -995,7 +995,6 @@
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
 		<effectPoint>-100</effectPoint>
-		<affectLimit>10-10</affectLimit>
 		<isDebuff>true</isDebuff>
 		<fanRange>0;0;80;300</fanRange>
 		<targetType>SELF</targetType>
@@ -1228,7 +1227,6 @@
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
-		<affectLimit>10-10</affectLimit>
 		<mpConsume>10</mpConsume>
 		<affectRange>300</affectRange>
 		<castRange>900</castRange>
@@ -1251,7 +1249,6 @@
 		<abnormalType>STUN</abnormalType>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
-		<affectLimit>10-25</affectLimit>
 		<abnormalVisualEffect>STUN</abnormalVisualEffect>
 		<activateRate>90</activateRate>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1362,7 +1359,6 @@
 	<skill id="16597" toLevel="1" name="Plasma Wave">
 		<!-- A powerful ancient wave of current is shot toward the target and nearby enemies, causing magic damage. -->
 		<operateType>A1</operateType>
-		<affectLimit>10-10</affectLimit>
 		<castRange>600</castRange>
 		<affectRange>200</affectRange>
 		<hitTime>3000</hitTime>
@@ -1415,7 +1411,6 @@
 		<operateType>A1</operateType>
 		<reuseDelay>10000</reuseDelay>
 		<castRange>900</castRange>
-		<affectLimit>10-25</affectLimit>
 		<hitTime>2500</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-709</effectPoint>

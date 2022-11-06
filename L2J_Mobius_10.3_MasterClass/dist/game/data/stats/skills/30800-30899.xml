@@ -179,7 +179,7 @@
 		<mpConsume>163</mpConsume>
 		<effectRange>1000</effectRange>
 		<magicCriticalRate>5</magicCriticalRate>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<targetType>ENEMY</targetType>
 		<affectScope>RANGE</affectScope>
@@ -214,7 +214,7 @@
 		<reuseDelay>10000</reuseDelay>
 		<effectPoint>-709</effectPoint>
 		<mpConsume>163</mpConsume>
-		<affectLimit>20-30</affectLimit>
+		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
 		<effectRange>1000</effectRange>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -463,7 +463,6 @@
 		<castRange>900</castRange>
 		<effectRange>1100</effectRange>
 		<affectRange>1000</affectRange>
-		<affectLimit>50-50</affectLimit>
 		<targetType>SELF</targetType>
 		<affectScope>PARTY</affectScope>
 		<affectObject>FRIEND</affectObject>
@@ -694,7 +693,7 @@
 		<abnormalType>DITTY</abnormalType>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PLEDGE</affectScope>
@@ -782,7 +781,7 @@
 		<castRange>-1</castRange>
 		<itemConsumeCount>50</itemConsumeCount>
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
-		<affectLimit>50-50</affectLimit> <!-- Custom -->
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange> <!-- Custom -->
 		<targetType>SELF</targetType>
 		<affectScope>PARTY_PLEDGE</affectScope>
@@ -1035,7 +1034,7 @@
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
 		<abnormalType>SONG_WEAPON</abnormalType>
-		<affectLimit>50-200</affectLimit>
+		<affectLimit>50-50</affectLimit>
 		<affectRange>1000</affectRange>
 		<effectPoint>669</effectPoint>
 		<hitTime>2500</hitTime>

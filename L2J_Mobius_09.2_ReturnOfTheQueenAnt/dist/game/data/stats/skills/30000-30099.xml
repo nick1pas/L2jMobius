@@ -524,7 +524,7 @@
 			<value fromLevel="1" toLevel="13">70</value>
 			<value fromLevel="7" toLevel="13" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>5-10</affectLimit> <!-- Unconfirmed -->
+		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange> <!-- Unconfirmed -->
 		<basicProperty>PHYSICAL</basicProperty>
 		<operateType>A2</operateType>
@@ -1881,7 +1881,7 @@
 			<value fromLevel="1" toLevel="6">90</value>
 			<value fromLevel="1" toLevel="6" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 		</activateRate>
-		<affectLimit>10-10</affectLimit> <!-- Unconfirmed -->
+		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange> <!-- Unconfirmed -->
 		<effectRange>400</effectRange>
 		<effectPoint>-707</effectPoint>
