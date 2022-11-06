@@ -63,7 +63,7 @@ public class AdminRide implements IAdminCommandHandler
 			int petRideId;
 			if (command.startsWith("admin_ride_wyvern"))
 			{
-				petRideId = 12621;
+				petRideId = 15955;
 			}
 			else if (command.startsWith("admin_ride_strider"))
 			{

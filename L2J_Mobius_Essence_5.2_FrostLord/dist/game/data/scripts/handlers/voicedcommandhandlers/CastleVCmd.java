@@ -123,7 +123,7 @@ public class CastleVCmd implements IVoicedCommandHandler
 			{
 				if (activeChar.isClanLeader() && (activeChar.getClan().getCastleId() > 0))
 				{
-					activeChar.mount(12621, 0, true);
+					activeChar.mount(15955, 0, true);
 				}
 				break;
 			}

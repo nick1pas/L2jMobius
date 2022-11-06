@@ -42,7 +42,7 @@ public class WyvernManager extends AbstractNpcAI
 	
 	// Misc
 	private static final int CRYSTAL_B_GRADE = 1460;
-	private static final int WYVERN = 12621;
+	private static final int WYVERN = 15955;
 	private static final int WYVERN_FEE = 25;
 	private static final int STRIDER_LEVEL = 55;
 	private static final int[] STRIDERS =
