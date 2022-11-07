@@ -168,6 +168,7 @@ public class Q00572_SpecialMissionProofOfCourageFieldRaid extends Quest
 			else
 			{
 				playSound(killer, QuestSound.ITEMSOUND_QUEST_ITEMGET);
+				sendNpcLogList(killer);
 			}
 		}
 		return super.onKill(npc, killer, isSummon);
