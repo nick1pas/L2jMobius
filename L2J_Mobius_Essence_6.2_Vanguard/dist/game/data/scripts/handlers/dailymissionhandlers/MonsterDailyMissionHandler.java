@@ -117,7 +117,8 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 		{
 			return;
 		}
-		if (checkTimeInterval() || ((_startHour == "") && (_endHour == "")))
+		
+		if (checkTimeInterval() || (_startHour.equals("") && _endHour.equals("")))
 		{
 			final Party party = player.getParty();
 			if (party != null)
@@ -154,15 +155,14 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 	
 	private boolean checkTimeInterval()
 	{
-		if ((_startHour != "") && (_endHour != ""))
+		if (_startHour.equals("") && _endHour.equals(""))
 		{
-			Date date = new Date();
-			SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
+			final Date date = new Date();
+			final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
 			dateFormat.format(date);
-			
 			try
 			{
-				// Check param hours
+				// Check hour parameters.
 				if (dateFormat.parse(dateFormat.format(date)).after(dateFormat.parse(_startHour)) && dateFormat.parse(dateFormat.format(date)).before(dateFormat.parse(_endHour)))
 				{
 					return true;

@@ -119,27 +119,26 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 		{
 			return;
 		}
-		if (((_requiredMissionCompleteId != 0) && checkRequiredMission(player)) || (_requiredMissionCompleteId == 0))
+		
+		if ((((_requiredMissionCompleteId != 0) && checkRequiredMission(player)) || (_requiredMissionCompleteId == 0)) //
+			&& (checkTimeInterval() || (_startHour.equals("") && _endHour.equals(""))))
 		{
-			if (checkTimeInterval() || ((_startHour == "") && (_endHour == "")))
+			final Party party = player.getParty();
+			if (party != null)
 			{
-				final Party party = player.getParty();
-				if (party != null)
+				final CommandChannel channel = party.getCommandChannel();
+				final List<Player> members = channel != null ? channel.getMembers() : party.getMembers();
+				for (Player member : members)
 				{
-					final CommandChannel channel = party.getCommandChannel();
-					final List<Player> members = channel != null ? channel.getMembers() : party.getMembers();
-					for (Player member : members)
+					if ((member.getLevel() >= (monsterLevel - 5)) && (member.calculateDistance3D(monster) <= Config.ALT_PARTY_RANGE))
 					{
-						if ((member.getLevel() >= (monsterLevel - 5)) && (member.calculateDistance3D(monster) <= Config.ALT_PARTY_RANGE))
-						{
-							processPlayerProgress(member);
-						}
+						processPlayerProgress(member);
 					}
 				}
-				else
-				{
-					processPlayerProgress(player);
-				}
+			}
+			else
+			{
+				processPlayerProgress(player);
 			}
 		}
 	}
@@ -159,15 +158,14 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 	
 	private boolean checkTimeInterval()
 	{
-		if ((_startHour != "") && (_endHour != ""))
+		if (_startHour.equals("") && _endHour.equals(""))
 		{
-			Date date = new Date();
-			SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
+			final Date date = new Date();
+			final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
 			dateFormat.format(date);
-			
 			try
 			{
-				// Check param hours
+				// Check hour parameters.
 				if (dateFormat.parse(dateFormat.format(date)).after(dateFormat.parse(_startHour)) && dateFormat.parse(dateFormat.format(date)).before(dateFormat.parse(_endHour)))
 				{
 					return true;
@@ -183,12 +181,8 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 	
 	private boolean checkRequiredMission(Player player)
 	{
-		final int missionId = getPlayerEntry(player.getObjectId(), false).getRewardId();
-		final int missionStatus = getStatus(player);
-		if ((missionId != 0) && (_requiredMissionCompleteId != 0) && (missionId == _requiredMissionCompleteId) && (missionStatus == DailyMissionStatus.COMPLETED.getClientId()))
-		{
-			return true;
-		}
-		return false;
+		final DailyMissionPlayerEntry missionEntry = getPlayerEntry(player.getObjectId(), false);
+		final int missionId = missionEntry != null ? missionEntry.getRewardId() : 0;
+		return (missionId != 0) && (_requiredMissionCompleteId != 0) && (missionId == _requiredMissionCompleteId) && (getStatus(player) == DailyMissionStatus.COMPLETED.getClientId());
 	}
 }
