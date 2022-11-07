@@ -2897,6 +2897,19 @@ public class Config
 		MYSQL_BIN_PATH = serverSettings.getString("MySqlBinLocation", "C:/xampp/mysql/bin/");
 		BACKUP_PATH = serverSettings.getString("BackupPath", "../backup/");
 		BACKUP_DAYS = serverSettings.getInt("BackupDays", 30);
+		SCHEDULED_THREAD_POOL_COUNT = serverSettings.getInt("ScheduledThreadPoolCount", 2);
+		if (SCHEDULED_THREAD_POOL_COUNT == -1)
+		{
+			SCHEDULED_THREAD_POOL_COUNT = Math.max(2, Runtime.getRuntime().availableProcessors() / 2);
+		}
+		THREADS_PER_SCHEDULED_THREAD_POOL = serverSettings.getInt("ThreadsPerScheduledThreadPool", 2);
+		INSTANT_THREAD_POOL_COUNT = serverSettings.getInt("InstantThreadPoolCount", 2);
+		if (INSTANT_THREAD_POOL_COUNT == -1)
+		{
+			INSTANT_THREAD_POOL_COUNT = Math.max(2, Runtime.getRuntime().availableProcessors() / 2);
+		}
+		THREADS_PER_INSTANT_THREAD_POOL = serverSettings.getInt("ThreadsPerInstantThreadPool", 4);
+		THREADS_FOR_CLIENT_PACKETS = serverSettings.getBoolean("ThreadsForClientPackets", true);
 		SHOW_LICENCE = serverSettings.getBoolean("ShowLicence", false);
 		AUTO_CREATE_ACCOUNTS = serverSettings.getBoolean("AutoCreateAccounts", true);
 		FLOOD_PROTECTION = serverSettings.getBoolean("EnableFloodProtection", true);
