@@ -158,7 +158,7 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 	
 	private boolean checkTimeInterval()
 	{
-		if (_startHour.equals("") && _endHour.equals(""))
+		if (!_startHour.equals("") && !_endHour.equals(""))
 		{
 			final Date date = new Date();
 			final SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm");
