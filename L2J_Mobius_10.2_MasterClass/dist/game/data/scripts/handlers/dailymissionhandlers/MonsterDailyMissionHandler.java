@@ -182,7 +182,6 @@ public class MonsterDailyMissionHandler extends AbstractDailyMissionHandler
 	private boolean checkRequiredMission(Player player)
 	{
 		final DailyMissionPlayerEntry missionEntry = getPlayerEntry(player.getObjectId(), false);
-		final int missionId = missionEntry != null ? missionEntry.getRewardId() : 0;
-		return (missionId != 0) && (_requiredMissionCompleteId != 0) && (missionId == _requiredMissionCompleteId) && (getStatus(player) == DailyMissionStatus.COMPLETED.getClientId());
+		return (missionEntry != null) && (_requiredMissionCompleteId != 0) && (missionEntry.getRewardId() == _requiredMissionCompleteId) && (getStatus(player) == DailyMissionStatus.COMPLETED.getClientId());
 	}
 }

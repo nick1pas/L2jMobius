@@ -82,13 +82,11 @@ public class NoblesseDailyMissionHandler extends AbstractDailyMissionHandler
 		{
 			return;
 		}
-		// Check if player is belonging to a clan and is noble
-		if ((player.getClan() != null) && (player.getNobleLevel() > 0))
+		
+		// Check if player is belonging to a clan and is noble.
+		if ((player.getClan() != null) && (player.getNobleLevel() > 0) && (player.getNobleLevel() == 1))
 		{
-			if (player.getNobleLevel() == 1)
-			{
-				processPlayerProgress(player);
-			}
+			processPlayerProgress(player);
 		}
 	}
 	
