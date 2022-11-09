@@ -84,7 +84,7 @@ public class ServerList extends WritablePacket
 		{
 			try
 			{
-				_ip = InetAddress.getByName(client.getIp()).getAddress();
+				_ip = InetAddress.getByName(gsi.getServerAddress(InetAddress.getByName(client.getIp()))).getAddress();
 			}
 			catch (UnknownHostException e)
 			{
