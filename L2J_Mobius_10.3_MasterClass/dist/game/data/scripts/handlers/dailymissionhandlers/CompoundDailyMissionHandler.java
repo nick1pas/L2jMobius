@@ -141,12 +141,7 @@ public class CompoundDailyMissionHandler extends AbstractDailyMissionHandler
 	
 	private boolean checkRequiredMission(Player player)
 	{
-		final int missionId = getPlayerEntry(player.getObjectId(), false).getRewardId();
-		final int missionStatus = getStatus(player);
-		if ((missionId != 0) && (_requiredMissionCompleteId != 0) && (missionId == _requiredMissionCompleteId) && (missionStatus == DailyMissionStatus.COMPLETED.getClientId()))
-		{
-			return true;
-		}
-		return false;
+		final DailyMissionPlayerEntry missionEntry = getPlayerEntry(player.getObjectId(), false);
+		return (missionEntry != null) && (_requiredMissionCompleteId != 0) && (missionEntry.getRewardId() == _requiredMissionCompleteId) && (getStatus(player) == DailyMissionStatus.COMPLETED.getClientId());
 	}
 }
