@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="22800" level="84" type="Monster" name="Divine Magus">
 		<parameters>
@@ -838,7 +838,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22844" level="85" type="Monster" name="Dragon Knight">
+	<npc id="22844" level="85" type="Monster" name="Dragon Pytan">
 		<parameters>
 			<minions name="Privates">
 				<npc id="22847" count="2" respawnTime="360" weightPoint="1" />
@@ -898,7 +898,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22845" level="85" type="Monster" name="Dragon Knight">
+	<npc id="22845" level="85" type="Monster" name="Dragon Pytan">
 		<parameters>
 			<minions name="Privates">
 				<npc id="22847" count="4" respawnTime="360" weightPoint="1" />
@@ -958,7 +958,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22846" level="85" type="Monster" name="Elite Dragon Knight">
+	<npc id="22846" level="85" type="Monster" name="Elite Dragon Pytan">
 		<parameters>
 			<minions name="Privates">
 				<npc id="22847" count="8" respawnTime="360" weightPoint="1" />
@@ -1018,7 +1018,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22847" level="85" type="Monster" name="Dragon Knight Warrior">
+	<npc id="22847" level="85" type="Monster" name="Dragon Knight Pytan">
 		<parameters>
 			<skill name="Skill01_ID" id="6760" level="1" />
 			<skill name="Skill02_ID" id="6762" level="1" />
@@ -1074,7 +1074,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22848" level="85" type="Monster" name="Drake Leader">
+	<npc id="22848" level="85" type="Monster" name="Drake Chief">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="6763" level="1" />
@@ -1131,7 +1131,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22849" level="85" type="Monster" name="Drake Warrior">
+	<npc id="22849" level="85" type="Monster" name="Drake Commander">
 		<parameters>
 			<skill name="Skill01_ID" id="6760" level="1" />
 		</parameters>
@@ -1631,8 +1631,8 @@
 		<exCrtEffect>true</exCrtEffect>
 		<ai type="BALANCED" aggroRange="450" clanHelpRange="300" isAggressive="true" />
 		<collision>
-			<radius normal="12" />
-			<height normal="27" />
+			<radius normal="20" />
+			<height normal="42" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -1986,7 +1986,7 @@
 			<attack physical="4606.89031824671" magical="821.122892374432" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="448.680184461517" magical="250.138334234944" />
 			<speed>
-				<walk ground="45" />
+				<walk ground="40" />
 				<run ground="180" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2018,8 +2018,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="12" />
-			<height normal="27" />
+			<radius normal="15" />
+			<height normal="42" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -2636,7 +2636,7 @@
 			<attack physical="4606.89031824671" magical="821.122892374432" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="448.680184461517" magical="250.138334234944" />
 			<speed>
-				<walk ground="45" />
+				<walk ground="40" />
 				<run ground="180" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2668,8 +2668,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="12" />
-			<height normal="27" />
+			<radius normal="15" />
+			<height normal="42" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -3277,7 +3277,7 @@
 			<attack physical="4606.89031824671" magical="821.122892374432" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="448.680184461517" magical="250.138334234944" />
 			<speed>
-				<walk ground="45" />
+				<walk ground="40" />
 				<run ground="180" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3308,8 +3308,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="12" />
-			<height normal="27" />
+			<radius normal="15" />
+			<height normal="42" />
 		</collision>
 		<dropLists>
 			<drop>

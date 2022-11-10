@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="19400" level="90" type="Monster" name="Cocoon Destroyer">
 		<parameters>
@@ -53,7 +53,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="19401" level="93" type="Monster" name="Soldier">
+	<npc id="19401" level="93" type="Monster" name="Warrior">
 		<parameters>
 			<param name="Attack_BoostValue" value="140" />
 		</parameters>
@@ -96,7 +96,7 @@
 			<height normal="19" />
 		</collision>
 	</npc>
-	<npc id="19402" level="93" type="Monster" name="Soldier">
+	<npc id="19402" level="93" type="Monster" name="Warrior">
 		<parameters>
 			<param name="Attack_BoostValue" value="140" />
 		</parameters>
@@ -678,7 +678,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="19415" level="95" type="Monster" name="Soldier">
+	<npc id="19415" level="95" type="Monster" name="Warrior">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>HUMAN</race>
 		<sex>MALE</sex>
@@ -1024,7 +1024,7 @@
 			<attack physical="47220" magical="8305" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="11040" magical="5333" />
 			<speed>
-				<walk ground="100" />
+				<walk ground="270" />
 				<run ground="270" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3110,7 +3110,7 @@
 			<attack physical="1949.95411856464" magical="1331.56588332443" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="405.66735" magical="296.84976" />
 			<speed>
-				<walk ground="36.48" />
+				<walk ground="36" />
 				<run ground="1" />
 			</speed>
 			<hitTime>600</hitTime>

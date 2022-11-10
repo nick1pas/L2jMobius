@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="25512" level="52" type="RaidBoss" name="Gigantic Chaos Golem" title="Raid Boss">
 		<parameters>
@@ -155,7 +155,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25532" level="82" type="RaidBoss" name="Kechi" title="Flaming">
+	<npc id="25532" level="82" type="RaidBoss" name="Kechi" title="Flame Knight">
 		<parameters>
 			<param name="InzoneRestriction" value="1" />
 			<skill name="selfbuff1" id="5418" level="1" />
@@ -234,7 +234,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25533" level="82" type="Monster" name="Kechi's Subordinate">
+	<npc id="25533" level="82" type="Monster" name="Kechi's Minion">
 		<parameters>
 			<param name="IsAggressive" value="0" />
 			<param name="AttackRange" value="0" />
@@ -455,7 +455,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25537" level="81" type="Monster" name="Enmity" title="Raid Fighter">
+	<npc id="25537" level="81" type="Monster" name="Enmity" title="Raid Minion">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -494,7 +494,7 @@
 			<height normal="43.5" />
 		</collision>
 	</npc>
-	<npc id="25538" level="81" type="Monster" name="Revenge" title="Raid Fighter">
+	<npc id="25538" level="81" type="Monster" name="Revenge" title="Raid Minion">
 		<parameters>
 			<skill name="HealMagic_a" id="4780" level="8" />
 			<skill name="SelfRangeBuff_a" id="4199" level="9" />
@@ -700,7 +700,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25541" level="83" type="Monster" name="Fiend" title="Raid Fighter">
+	<npc id="25541" level="83" type="Monster" name="Demon" title="Raid Minion">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -820,7 +820,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25543" level="83" type="Monster" name="Eidolon" title="Raid Fighter">
+	<npc id="25543" level="83" type="Monster" name="Eidolon" title="Raid Minion">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="Aggressive_Time" value="5" />
@@ -941,7 +941,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25545" level="83" type="Monster" name="Tully's Banshee" title="Raid Fighter">
+	<npc id="25545" level="83" type="Monster" name="Tully's Banshee" title="Raid Minion">
 		<parameters>
 			<skill name="PhysicalSpecial1" id="5230" level="1" />
 			<skill name="PhysicalSpecial2" id="5231" level="1" />
@@ -2025,7 +2025,7 @@
 			<height normal="40" />
 		</collision>
 	</npc>
-	<npc id="25565" level="105" type="Monster" name="Atrielle's Subordinate">
+	<npc id="25565" level="105" type="Monster" name="Atrielle's Minion">
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" />
 			<skill name="different_level_9_see_spelled" id="5456" level="1" />
@@ -3800,7 +3800,7 @@
 			<height normal="22" grown="27" />
 		</collision>
 	</npc>
-	<npc id="25595" level="105" type="Monster" name="Gerg's Subordinate">
+	<npc id="25595" level="105" type="Monster" name="Gerg's Minion">
 		<parameters>
 			<skill name="different_level_9_attacked" id="5456" level="1" />
 			<skill name="different_level_9_see_spelled" id="5456" level="1" />

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="25600" level="82" type="Monster" name="Temenir" title="Darion's Challenger">
 		<parameters>
@@ -989,7 +989,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="25614" level="82" type="Monster" name="Floating Ghost">
+	<npc id="25614" level="82" type="Monster" name="Wandering Ghost">
 		<parameters>
 			<skill name="cursed_magic" id="5593" level="1" />
 		</parameters>
@@ -1028,7 +1028,7 @@
 			<height normal="26" />
 		</collision>
 	</npc>
-	<npc id="25615" level="82" type="Monster" name="Floating Ghost">
+	<npc id="25615" level="82" type="Monster" name="Wandering Ghost">
 		<parameters>
 			<skill name="cursed_magic" id="5593" level="1" />
 		</parameters>
@@ -1484,7 +1484,7 @@
 			<height normal="90" />
 		</collision>
 	</npc>
-	<npc id="25624" level="80" type="RaidBoss" name="Rok" title="King of Birds">
+	<npc id="25624" level="80" type="RaidBoss" name="Rok" title="Bird King">
 		<parameters>
 			<param name="Skill01_AttackSplash" value="1" />
 			<param name="Skill03_AttackSplash" value="1" />
@@ -2143,7 +2143,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25635" level="81" type="Monster" name="Argekunte" title="Vacuous Soul">
+	<npc id="25635" level="81" type="Monster" name="Argekunte" title="Soulless One">
 		<parameters>
 			<param name="raise" value="5" />
 			<skill name="Skill01_ID" id="5881" level="2" />
@@ -2575,7 +2575,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25641" level="81" type="Monster" name="Yehan Cravenizad" title="Bloodsucker">
+	<npc id="25641" level="81" type="Monster" name="Yehan Cravenizad" title="Vampire">
 		<parameters>
 			<param name="raise" value="5" />
 			<skill name="Skill01_ID" id="5884" level="2" />
@@ -2727,7 +2727,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25643" level="81" type="RaidBoss" name="Awakened Ancient Sentry" title="Raid Boss">
+	<npc id="25643" level="81" type="RaidBoss" name="Ancient Defender" title="Raid Boss">
 		<parameters>
 			<skill name="Skill01_ID" id="5878" level="1" />
 			<skill name="Skill02_ID" id="5879" level="1" />
@@ -3801,7 +3801,7 @@
 			<height normal="23.4" />
 		</collision>
 	</npc>
-	<npc id="25659" level="104" type="RaidBoss" name="Kanadis Evangelist" title="Invading Forces">
+	<npc id="25659" level="104" type="RaidBoss" name="Kanadis' Prophet" title="Invading Forces">
 		<parameters>
 			<param name="String_Num1" value="1300145" />
 			<param name="String_Num2" value="1300147" />
@@ -3865,7 +3865,7 @@
 			<height normal="33" />
 		</collision>
 	</npc>
-	<npc id="25660" level="105" type="RaidBoss" name="Kanadis Guide" title="Invading Forces">
+	<npc id="25660" level="105" type="RaidBoss" name="Kanadis' Prophet" title="Invading Forces">
 		<parameters>
 			<param name="String_Num1" value="1300145" />
 			<param name="String_Num2" value="1300147" />
@@ -4146,7 +4146,7 @@
 			<height normal="23.4" />
 		</collision>
 	</npc>
-	<npc id="25664" level="105" type="Monster" name="Kanadis Fighter">
+	<npc id="25664" level="105" type="Monster" name="Kanadis' Fighter">
 		<parameters>
 			<param name="String_Num1" value="1300149" />
 			<skill name="different_level_9_attacked" id="5456" level="1" />
@@ -4531,7 +4531,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25672" level="84" type="Monster" name="Spiked Stakato" title="Raid Fighter">
+	<npc id="25672" level="84" type="Monster" name="Spiked Stakato" title="Raid Minion">
 		<parameters>
 			<skill name="DDMagic_a" id="4195" level="9" />
 			<skill name="Debuff_a" id="4198" level="9" />
@@ -4577,7 +4577,7 @@
 			<height normal="21" />
 		</collision>
 	</npc>
-	<npc id="25673" level="84" type="Monster" name="Spiked Stakato" title="Raid Fighter">
+	<npc id="25673" level="84" type="Monster" name="Spiked Stakato" title="Raid Minion">
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4726" level="9" />
 		</parameters>
@@ -4709,7 +4709,7 @@
 			<height normal="46" />
 		</collision>
 	</npc>
-	<npc id="25675" level="82" type="Monster" name="Gwindorr's Escort" title="Raid Fighter">
+	<npc id="25675" level="82" type="Monster" name="Gwindorr's Escort" title="Raid Minion">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2507" /> <!-- Lizardspear -->
@@ -4750,7 +4750,7 @@
 			<height normal="22" grown="27" />
 		</collision>
 	</npc>
-	<npc id="25676" level="82" type="Monster" name="Gwindorr's Follower" title="Raid Fighter">
+	<npc id="25676" level="82" type="Monster" name="Gwindorr's Follower" title="Raid Minion">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2" /> <!-- Long Sword -->
@@ -4883,7 +4883,7 @@
 			<height normal="54" />
 		</collision>
 	</npc>
-	<npc id="25678" level="83" type="Monster" name="Gildor's Spirit" title="Raid Fighter">
+	<npc id="25678" level="83" type="Monster" name="Gildor's Spirit" title="Raid Minion">
 		<parameters>
 			<skill name="DDMagic_a" id="4196" level="9" />
 			<skill name="Debuff_a" id="4200" level="9" />
@@ -4928,7 +4928,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="25679" level="83" type="Monster" name="Gildor's Guardian" title="Raid Fighter">
+	<npc id="25679" level="83" type="Monster" name="Gildor's Guardian" title="Raid Minion">
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4743" level="9" />
 		</parameters>
@@ -5692,7 +5692,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25699" level="85" type="RaidBoss" name="Glakias" title="Ice Knight Captain">
+	<npc id="25699" level="85" type="RaidBoss" name="Glakias" title="Frozen Labyrinth' Knight Captain">
 		<parameters>
 			<skill name="Skill01_ID" id="6293" level="1" />
 			<skill name="Skill02_ID" id="6295" level="1" />

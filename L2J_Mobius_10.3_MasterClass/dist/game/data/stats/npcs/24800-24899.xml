@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="24800" level="116" type="Monster" name="Knight Agar" title="Ashen Shadow Elite Warrior">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
@@ -838,8 +838,8 @@
 			<attack physical="5248704" magical="2332044" random="10" critical="4" accuracy="5" attackSpeed="633" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1154601" magical="609683" />
 			<speed>
-				<walk ground="60" />
-				<run ground="200" />
+				<walk ground="50" />
+				<run ground="160" />
 			</speed>
 			<hitTime>600</hitTime>
 			<attribute>
@@ -850,8 +850,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="11.25" />
-			<height normal="35.7" />
+			<radius normal="13" />
+			<height normal="27" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="6" /> <!-- Humanoids -->
@@ -880,8 +880,8 @@
 			<attack physical="5248704" magical="2332044" random="20" critical="1" accuracy="9" attackSpeed="633" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="1406160" magical="546368" />
 			<speed>
-				<walk ground="60" />
-				<run ground="150" />
+				<walk ground="50" />
+				<run ground="160" />
 			</speed>
 			<hitTime>600</hitTime>
 			<attribute>
@@ -892,8 +892,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="11.25" />
-			<height normal="37.5" />
+			<radius normal="13" />
+			<height normal="27" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="6" /> <!-- Humanoids -->
@@ -1868,7 +1868,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24847" level="118" type="Monster" name="Elite Wizard ">
+	<npc id="24847" level="118" type="Monster" name="Elite Wizard">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -1909,7 +1909,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24848" level="118" type="Monster" name="Chief Magician ">
+	<npc id="24848" level="118" type="Monster" name="Chief Magician">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
@@ -2582,7 +2582,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24863" level="112" type="Monster" name="Guardian of the Insolence Seal" title="Elite Monster">
+	<npc id="24863" level="112" type="Monster" name="Insolence Seal Guardian" title="Elite Monster">
 		<race>ETC</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="97" /> <!-- Lance -->
@@ -2852,7 +2852,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24869" level="116" type="Monster" name="Guardian of the Insolence Seal" title="Elite Monster">
+	<npc id="24869" level="116" type="Monster" name="Insolence Seal Guardian" title="Elite Monster">
 		<race>ETC</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="97" /> <!-- Lance -->
@@ -3126,7 +3126,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24875" level="120" type="Monster" name="Guardian of the Insolence Seal" title="Elite Monster">
+	<npc id="24875" level="120" type="Monster" name="Insolence Seal Guardian" title="Elite Monster">
 		<race>ETC</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="97" /> <!-- Lance -->

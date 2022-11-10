@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="18600" level="86" type="Monster" name="Kratei's Steward">
 		<parameters>
@@ -2004,7 +2004,7 @@
 			<attack physical="624.93199" magical="426.74754" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="281.55251" magical="206.02791" />
 			<speed>
-				<walk ground="25.5" />
+				<walk ground="25" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2998,8 +2998,8 @@
 			</drop>
 		</dropLists>
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="18" />
+			<height normal="34" />
 		</collision>
 	</npc>
 	<npc id="18648" level="73" type="Monster" name="Varka Silenos Chief Priest">
@@ -3076,7 +3076,7 @@
 			<height normal="39.5" />
 		</collision>
 	</npc>
-	<npc id="18649" level="73" type="Monster" name="Varka Silenos Great Magus">
+	<npc id="18649" level="73" type="Monster" name="Varka Silenos' Great Magus">
 		<parameters>
 			<param name="MoveAroundSocial" value="85" />
 			<param name="MoveAroundSocial1" value="85" />
@@ -3287,8 +3287,8 @@
 			</drop>
 		</dropLists>
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="17" />
+			<height normal="34" />
 		</collision>
 	</npc>
 	<npc id="18652" level="74" type="Monster" name="Varka Silenos Grand Priest">
@@ -4388,11 +4388,11 @@
 			<height normal="46.5" />
 		</collision>
 	</npc>
-	<npc id="18678" level="1" type="Folk" name="Energy Seed - Water">
+	<npc id="18678" level="1" type="Folk" name="Seed Energy - Water">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4422,11 +4422,11 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18679" level="1" type="Folk" name="Energy Seed - Fire">
+	<npc id="18679" level="1" type="Folk" name="Seed Energy - Fire">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4456,11 +4456,11 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18680" level="1" type="Folk" name="Energy Seed - Wind">
+	<npc id="18680" level="1" type="Folk" name="Seed Energy - Wind">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4490,11 +4490,11 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18681" level="1" type="Folk" name="Energy Seed - Earth">
+	<npc id="18681" level="1" type="Folk" name="Seed Energy - Earth">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4524,11 +4524,11 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18682" level="1" type="Folk" name="Energy Seed - Holy">
+	<npc id="18682" level="1" type="Folk" name="Seed Energy - Holy">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4558,11 +4558,11 @@
 			<height normal="10" />
 		</collision>
 	</npc>
-	<npc id="18683" level="1" type="Folk" name="Energy Seed - Dark">
+	<npc id="18683" level="1" type="Folk" name="Seed Energy - Dark">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4596,7 +4596,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4629,7 +4629,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4662,7 +4662,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="39.74519" hpRegen="2" mp="40" mpRegen="0.9" />
+			<vitals hp="39" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="44.44444" magical="32.52252" />
 			<speed>
@@ -4695,7 +4695,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="48.09168" hpRegen="2" mp="47.28" mpRegen="0.9" />
+			<vitals hp="48" hpRegen="2" mp="47" mpRegen="0.9" />
 			<attack physical="9.32203" magical="6.36574" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="46.15385" magical="33.77338" />
 			<speed>
@@ -4728,7 +4728,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="48.09168" hpRegen="2" mp="47.28" mpRegen="0.9" />
+			<vitals hp="48" hpRegen="2" mp="47" mpRegen="0.9" />
 			<attack physical="9.32203" magical="6.36574" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="46.15385" magical="33.77338" />
 			<speed>
@@ -4761,7 +4761,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="48.09168" hpRegen="2" mp="47.28" mpRegen="0.9" />
+			<vitals hp="48" hpRegen="2" mp="47" mpRegen="0.9" />
 			<attack physical="9.32203" magical="6.36574" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="46.15385" magical="33.77338" />
 			<speed>
@@ -4794,7 +4794,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="57.54874" hpRegen="2" mp="54.64" mpRegen="0.9" />
+			<vitals hp="57" hpRegen="2" mp="54" mpRegen="0.9" />
 			<attack physical="10.24492" magical="6.99595" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="47.91652" magical="35.06323" />
 			<speed>
@@ -4827,7 +4827,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="57.54874" hpRegen="2" mp="54.64" mpRegen="0.9" />
+			<vitals hp="57" hpRegen="2" mp="54" mpRegen="0.9" />
 			<attack physical="10.24492" magical="6.99595" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="47.91652" magical="35.06323" />
 			<speed>
@@ -4860,7 +4860,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="57.54874" hpRegen="2" mp="54.64" mpRegen="0.9" />
+			<vitals hp="57" hpRegen="2" mp="54" mpRegen="0.9" />
 			<attack physical="10.24492" magical="6.99595" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="47.91652" magical="35.06323" />
 			<speed>
@@ -4889,7 +4889,7 @@
 			<height normal="30.5" />
 		</collision>
 	</npc>
-	<npc id="18693" level="76" type="Monster" name="Treasure Chest of Ancient Times">
+	<npc id="18693" level="76" type="Monster" name="Ancient Treasure Chest">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">

@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="18300" level="33" type="Monster" name="Offering of the Branded, Evoked Spirit">
+	<npc id="18300" level="33" type="Monster" name="Evoked Spirit Offering of the Branded">
 		<parameters>
 			<param name="RoomIndex" value="1" />
 			<param name="SSQPart" value="TWILIGHT" />
@@ -87,7 +87,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18302" level="44" type="Monster" name="Apostate's Offering, Evoked Spirit">
+	<npc id="18302" level="44" type="Monster" name="Apostate's Evoked Spirit Offering">
 		<parameters>
 			<param name="RoomIndex" value="2" />
 			<param name="SSQPart" value="TWILIGHT" />
@@ -174,7 +174,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18304" level="55" type="Monster" name="Witch's Offering, Evoked Spirit">
+	<npc id="18304" level="55" type="Monster" name="Witch's Evoked Spirit Offering">
 		<parameters>
 			<param name="RoomIndex" value="3" />
 			<param name="SSQPart" value="TWILIGHT" />
@@ -261,7 +261,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18306" level="66" type="Monster" name="Offering of Dark Omen, Evoked Spirit">
+	<npc id="18306" level="66" type="Monster" name="Evoked Spirit Offering of Dark Omen">
 		<parameters>
 			<param name="RoomIndex" value="4" />
 			<param name="SSQPart" value="TWILIGHT" />
@@ -348,7 +348,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18308" level="77" type="Monster" name="Offering of Forbidden Path, Evoked Spirit">
+	<npc id="18308" level="77" type="Monster" name="Evoked Spirit Offering of Forbidden Path">
 		<parameters>
 			<param name="RoomIndex" value="5" />
 			<param name="SSQPart" value="TWILIGHT" />
@@ -435,7 +435,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18310" level="33" type="Monster" name="Offering of the Branded, Evoked Spirit">
+	<npc id="18310" level="33" type="Monster" name="Evoked Spirit Offering of the Branded">
 		<parameters>
 			<param name="RoomIndex" value="1" />
 			<param name="SSQPart" value="DAWN" />
@@ -522,7 +522,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18312" level="44" type="Monster" name="Apostate's Offering, Evoked Spirit">
+	<npc id="18312" level="44" type="Monster" name="Apostate's Evoked Spirit Offering">
 		<parameters>
 			<param name="RoomIndex" value="2" />
 			<param name="SSQPart" value="DAWN" />
@@ -609,7 +609,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18314" level="55" type="Monster" name="Witch's Offering, Evoked Spirit">
+	<npc id="18314" level="55" type="Monster" name="Witch's Evoked Spirit Offering">
 		<parameters>
 			<param name="RoomIndex" value="3" />
 			<param name="SSQPart" value="DAWN" />
@@ -696,7 +696,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18316" level="66" type="Monster" name="Offering of Dark Omen, Evoked Spirit">
+	<npc id="18316" level="66" type="Monster" name="Evoked Spirit Offering of Dark Omen">
 		<parameters>
 			<param name="RoomIndex" value="4" />
 			<param name="SSQPart" value="DAWN" />
@@ -783,7 +783,7 @@
 			<height normal="13" />
 		</collision>
 	</npc>
-	<npc id="18318" level="77" type="Monster" name="Offering of Forbidden Path, Evoked Spirit">
+	<npc id="18318" level="77" type="Monster" name="Evoked Spirit Offering of Forbidden Path">
 		<parameters>
 			<param name="RoomIndex" value="5" />
 			<param name="SSQPart" value="DAWN" />
@@ -842,7 +842,7 @@
 			<attack physical="19.33758" magical="13.20506" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="52.5514795" magical="37.4524577768779" />
 			<speed>
-				<walk ground="37" />
+				<walk ground="50" />
 				<run ground="110" />
 			</speed>
 			<hitTime>350</hitTime>
@@ -1275,7 +1275,7 @@
 			<height normal="21" />
 		</collision>
 	</npc>
-	<npc id="18329" level="83" type="Monster" name="Hall Keeper Captain">
+	<npc id="18329" level="83" type="Monster" name="Hall Guard Captain">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
@@ -2516,7 +2516,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="18353" level="22" type="Monster" name="Guardian of Records">
+	<npc id="18353" level="22" type="Monster" name="Archivist">
 		<parameters>
 			<param name="MoveAroundSocial" value="150" />
 			<param name="MoveAroundSocial1" value="150" />
@@ -3777,7 +3777,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -3820,7 +3820,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -3864,7 +3864,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -3908,7 +3908,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -3952,7 +3952,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -3996,7 +3996,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4040,7 +4040,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4084,7 +4084,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4128,7 +4128,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4173,7 +4173,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4219,7 +4219,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4265,7 +4265,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4311,7 +4311,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4357,7 +4357,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4403,7 +4403,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4449,7 +4449,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4495,7 +4495,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4541,7 +4541,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4587,7 +4587,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4633,7 +4633,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4679,7 +4679,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -4725,7 +4725,7 @@
 		<race>CONSTRUCT</race>
 		<sex>ETC</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2802.89989" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="2802" hpRegen="8.5" mp="1607" mpRegen="3" />
 			<attack physical="855.81387" magical="584.40994" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>

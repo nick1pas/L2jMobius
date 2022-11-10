@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="20919" level="20" type="Monster" name="Maille Lizardman">
 		<parameters>
@@ -645,8 +645,8 @@
 			<attack physical="74.99121" magical="51.20928" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="108.28767" magical="79.24022" />
 			<speed>
-				<walk ground="72" />
-				<run ground="130" />
+				<walk ground="90" />
+				<run ground="120" />
 			</speed>
 			<hitTime>260</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -674,8 +674,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="39" />
-			<height normal="38" />
+			<radius normal="8" />
+			<height normal="24.5" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -2322,7 +2322,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="20958" level="68" type="Monster" name="Death Agent">
+	<npc id="20958" level="68" type="Monster" name="Hand of Death">
 		<parameters>
 			<param name="MoveAroundSocial" value="80" />
 			<param name="MoveAroundSocial1" value="80" />
@@ -2383,7 +2383,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="20959" level="70" type="Monster" name="Dark Guard">
+	<npc id="20959" level="70" type="Monster" name="Dark Guardian">
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />

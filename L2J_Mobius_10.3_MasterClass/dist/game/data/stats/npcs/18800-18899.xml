@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="18800" level="77" type="Monster" name="Fledgling Lavasaurus">
 		<parameters>
@@ -60,7 +60,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="18801" level="77" type="Monster" name="Adult Lavasaurus">
+	<npc id="18801" level="77" type="Monster" name="Elder Lavasaurus">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="Aggressive_Time" value="5" />
@@ -482,7 +482,7 @@
 			<height normal="20.8" />
 		</collision>
 	</npc>
-	<npc id="18811" level="82" type="Monster" name="Guardian of the Altar">
+	<npc id="18811" level="82" type="Monster" name="Altar Guardian">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
@@ -626,7 +626,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="18815" level="83" type="Monster" name="Graveyard Guard" title="Death-calling">
+	<npc id="18815" level="83" type="Monster" name="Cemetery Guardian" title="Death-calling">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="MovingAttack" value="0" />
@@ -672,7 +672,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="18816" level="81" type="Monster" name="Chieftain's Treasure Chest">
+	<npc id="18816" level="81" type="Monster" name="Chieftain's Chest">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
@@ -711,7 +711,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="18817" level="81" type="Monster" name="Invader Martyr of Nightmare">
+	<npc id="18817" level="81" type="Monster" name="Nightmare Army's Martyr">
 		<parameters>
 			<skill name="SelfRangeDDMagic" id="5376" level="4" />
 		</parameters>
@@ -1468,7 +1468,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18838" level="84" type="Monster" name="Treasure Chest of Invader Soldier of Nightmare">
+	<npc id="18838" level="84" type="Monster" name="Nightmare Army's Treasure Chest">
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
@@ -1666,7 +1666,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="18843" level="85" type="Monster" name="Kokracon's Ward">
+	<npc id="18843" level="85" type="Monster" name="Kokracon's Banner">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
@@ -1699,7 +1699,7 @@
 			<height normal="54" />
 		</collision>
 	</npc>
-	<npc id="18844" level="85" type="Monster" name="Reptilikon's Ward">
+	<npc id="18844" level="85" type="Monster" name="Reptilikon's Banner">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
@@ -2118,7 +2118,7 @@
 			<height normal="50" />
 		</collision>
 	</npc>
-	<npc id="18855" level="85" type="Monster" name="Ice Knight">
+	<npc id="18855" level="85" type="Monster" name="Frozen Labyrinth' Knight">
 		<parameters>
 			<skill name="Skill01_ID" id="6290" level="1" />
 			<skill name="SelfRangeDD" id="6291" level="1" />
@@ -2173,7 +2173,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="18856" level="88" type="Monster" name="Ice Knight">
+	<npc id="18856" level="88" type="Monster" name="Frozen Labyrinth' Knight">
 		<parameters>
 			<skill name="Skill01_ID" id="6290" level="1" />
 			<skill name="SelfRangeDD" id="6291" level="1" />
@@ -2448,7 +2448,7 @@
 			<height normal="35" grown="42.2" />
 		</collision>
 	</npc>
-	<npc id="18863" level="84" type="Monster" name="Priest Ugoros" title="Tanta Lizardman">
+	<npc id="18863" level="84" type="Monster" name="Seer Ugoros" title="Tanta Lizardman">
 		<parameters>
 			<skill name="Skill01_ID" id="6426" level="1" />
 		</parameters>

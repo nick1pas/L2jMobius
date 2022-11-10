@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="22602" level="73" type="Monster" name="Mutant Bird">
 		<parameters>
@@ -1105,8 +1105,8 @@
 			<attack physical="1012.32268463427" magical="691.285164307598" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="345.61127" magical="252.90333" />
 			<speed>
-				<walk ground="45" />
-				<run ground="180" />
+				<walk ground="80" />
+				<run ground="140" />
 			</speed>
 			<hitTime>600</hitTime>
 			<attribute>
@@ -1140,8 +1140,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="14" />
-			<height normal="42" />
+			<radius normal="10" />
+			<height normal="25" />
 		</collision>
 	</npc>
 	<npc id="22617" level="82" type="Monster" name="Spiked Stakato">
@@ -2677,7 +2677,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22642" level="78" type="Monster" name="Lavastone Golem">
+	<npc id="22642" level="78" type="Monster" name="Lava Golem">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="4591" level="9" />
@@ -3139,7 +3139,7 @@
 			<defence physical="345.61127" magical="252.90333" />
 			<speed>
 				<walk ground="80" />
-				<run ground="120" />
+				<run ground="140" />
 			</speed>
 			<hitTime>610</hitTime>
 			<attribute>
@@ -3176,8 +3176,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="14" />
-			<height normal="27.5" />
+			<radius normal="10" />
+			<height normal="25" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -3309,7 +3309,7 @@
 			<defence physical="345.61127" magical="252.90333" />
 			<speed>
 				<walk ground="80" />
-				<run ground="120" />
+				<run ground="140" />
 			</speed>
 			<hitTime>610</hitTime>
 			<attribute>
@@ -3340,8 +3340,8 @@
 			<skill primaryId="6145" shortRangeId="5082" shortRangeChance="15" />
 		</ai>
 		<collision>
-			<radius normal="14" />
-			<height normal="27.5" />
+			<radius normal="10" />
+			<height normal="25" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -3538,7 +3538,7 @@
 			<attack physical="1012.32268463427" magical="691.285164307598" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="345.61127" magical="252.90333" />
 			<speed>
-				<walk ground="48" />
+				<walk ground="80" />
 				<run ground="140" />
 			</speed>
 			<hitTime>610</hitTime>
@@ -3570,8 +3570,8 @@
 			<skill shortRangeId="4643" />
 		</ai>
 		<collision>
-			<radius normal="7" />
-			<height normal="33" />
+			<radius normal="10" />
+			<height normal="25" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -4636,7 +4636,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22697" level="82" type="Monster" name="Ragna Orc Priest" title="Spirit Infested">
+	<npc id="22697" level="82" type="Monster" name="Ragna Orc Seer" title="Spirit Infested">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="DeBuffProb" value="2000" />

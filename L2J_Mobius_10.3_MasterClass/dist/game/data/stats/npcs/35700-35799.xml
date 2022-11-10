@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="35700" level="75" type="FortDoorman" name="Gatekeeper">
 		<parameters>
@@ -95,7 +95,7 @@
 			<height normal="24" />
 		</collision>
 	</npc>
-	<npc id="35702" level="105" type="Defender" name="Rebel Commander" title="Gludio Southern Fortress">
+	<npc id="35702" level="105" type="Defender" name="Rebel Commander" title="Southern Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="120" />
@@ -122,7 +122,7 @@
 			<attack physical="1562127" magical="177994" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="9997" magical="5263" />
 			<speed>
-				<walk ground="29.8" />
+				<walk ground="29" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -160,7 +160,7 @@
 			<height normal="26.985" />
 		</collision>
 	</npc>
-	<npc id="35703" level="103" type="Defender" name="Rebel Elite Soldier" title="Gludio Southern Fortress">
+	<npc id="35703" level="103" type="Defender" name="Rebel Elite Soldier" title="Southern Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
@@ -182,7 +182,7 @@
 			<attack physical="1136964" magical="135778" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="80" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>540</hitTime>
@@ -215,11 +215,11 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="15" />
-			<height normal="45" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
-	<npc id="35704" level="103" type="Defender" name="Rebel Private" title="Gludio Southern Fortress">
+	<npc id="35704" level="103" type="Defender" name="Rebel Private" title="Southern Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="92" />
@@ -238,7 +238,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -270,11 +270,11 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="8" />
-			<height normal="23.5" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
-	<npc id="35705" level="102" type="Defender" name="Royal Guard" title="Gludio Southern Fortress">
+	<npc id="35705" level="102" type="Defender" name="Royal Guard" title="Southern Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -332,7 +332,7 @@
 			<height normal="24" />
 		</collision>
 	</npc>
-	<npc id="35706" level="102" type="Defender" name="Escort" title="Gludio Southern Fortress">
+	<npc id="35706" level="102" type="Defender" name="Escort" title="Southern Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="79" />
@@ -403,7 +403,7 @@
 		<sex>ETC</sex>
 		<acquire exp="2811" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -449,7 +449,7 @@
 		<sex>ETC</sex>
 		<acquire exp="2811" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -499,7 +499,7 @@
 		<sex>MALE</sex>
 		<acquire exp="2811" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -541,7 +541,7 @@
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -657,7 +657,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="30" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>720</hitTime>
@@ -689,8 +689,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="5" />
-			<height normal="19" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35713" level="105" type="FortCommander" name="Guard Captain" title="Guard">
@@ -768,7 +768,7 @@
 			<height normal="23.75" />
 		</collision>
 	</npc>
-	<npc id="35714" level="103" type="Defender" name="Guard" title="Guard">
+	<npc id="35714" level="103" type="Defender" name="Lookout" title="Guard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -791,7 +791,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -825,11 +825,11 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="7" />
-			<height normal="24" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
-	<npc id="35715" level="103" type="Defender" name="Guard" title="Guard">
+	<npc id="35715" level="103" type="Defender" name="Lookout" title="Guard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -850,7 +850,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -884,8 +884,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="7" />
-			<height normal="24" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35716" level="105" type="FortCommander" name="Support Unit Captain" title="Support Unit">
@@ -1095,7 +1095,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="35719" level="105" type="FortCommander" name="Archer Captain" title="Archer">
+	<npc id="35719" level="105" type="FortCommander" name="Archer Captain" title="Archer Unit">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="105" />
@@ -1160,7 +1160,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35720" level="103" type="Defender" name="Archer" title="Archer">
+	<npc id="35720" level="103" type="Defender" name="Archer" title="Archer Unit">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="79" />
@@ -1220,7 +1220,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35721" level="105" type="FortCommander" name="General" title="Officer's Barracks">
+	<npc id="35721" level="105" type="FortCommander" name="General" title="Officers' Barracks">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="140" />
@@ -1285,7 +1285,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="35722" level="105" type="Defender" name="Minister" title="Officer's Barracks">
+	<npc id="35722" level="105" type="Defender" name="Minister" title="Officers' Barracks">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="140" />
@@ -1348,7 +1348,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="35723" level="80" type="Monster" name="Ballista" title="Gludio Southern Fortress">
+	<npc id="35723" level="80" type="Monster" name="Ballista" title="Southern Fortress">
 		<parameters>
 			<param name="FameValue" value="30" />
 			<param name="Armor" value="60" />
@@ -1448,7 +1448,7 @@
 			<attack physical="1562127" magical="177994" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="9997" magical="5263" />
 			<speed>
-				<walk ground="36.48" />
+				<walk ground="36" />
 				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -1498,7 +1498,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="35" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -1528,15 +1528,15 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="8" />
-			<height normal="27" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35726" level="20" type="Folk" name="Flagpole">
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="342.5127" hpRegen="2.5" mp="192" mpRegen="1.2" />
+			<vitals hp="342" hpRegen="2.5" mp="192" mpRegen="1.2" />
 			<attack physical="44.32863" magical="30.2707" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="86.87049" magical="63.56806" />
 			<speed>
@@ -1630,7 +1630,7 @@
 		<race>ORC</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -1679,7 +1679,7 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="80" lhand="641" /> <!-- Tallum Blade / Dark Crystal Shield -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -1720,7 +1720,7 @@
 		<race>ELF</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -1761,7 +1761,7 @@
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -1794,7 +1794,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35732" level="75" type="Folk" name="Engineering Manager" title="Hive Fortress">
+	<npc id="35732" level="75" type="Folk" name="Chief Engineer" title="Hive Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="144" />
@@ -1802,7 +1802,7 @@
 		<race>DWARF</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -1835,7 +1835,7 @@
 			<height normal="19" />
 		</collision>
 	</npc>
-	<npc id="35733" level="75" type="FortLogistics" name="Logistics Officer" title="Hive Fortress">
+	<npc id="35733" level="75" type="FortLogistics" name="Quartermaster" title="Hive Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="88" />
@@ -1896,7 +1896,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="35734" level="100" type="Monster" name="Supply Box">
+	<npc id="35734" level="100" type="Monster" name="Supplies">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -1949,7 +1949,7 @@
 		<race>HUMAN</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -2150,7 +2150,7 @@
 			<attack physical="1562127" magical="177994" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="9997" magical="5263" />
 			<speed>
-				<walk ground="29.8" />
+				<walk ground="29" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2210,7 +2210,7 @@
 			<attack physical="1136964" magical="135778" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="80" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>540</hitTime>
@@ -2243,8 +2243,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="15" />
-			<height normal="45" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35741" level="103" type="Defender" name="Rebel Private" title="Hive Fortress">
@@ -2266,7 +2266,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2298,8 +2298,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="8" />
-			<height normal="23.5" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35742" level="102" type="Defender" name="Royal Guard" title="Hive Fortress">
@@ -2422,7 +2422,7 @@
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -2595,7 +2595,7 @@
 			<height normal="23.75" />
 		</collision>
 	</npc>
-	<npc id="35747" level="103" type="Defender" name="Guard" title="Guard">
+	<npc id="35747" level="103" type="Defender" name="Lookout" title="Guard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -2618,7 +2618,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2652,11 +2652,11 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="7" />
-			<height normal="24" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
-	<npc id="35748" level="103" type="Defender" name="Guard" title="Guard">
+	<npc id="35748" level="103" type="Defender" name="Lookout" title="Guard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -2677,7 +2677,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2711,8 +2711,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="7" />
-			<height normal="24" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35749" level="105" type="FortCommander" name="Support Unit Captain" title="Support Unit">
@@ -2922,7 +2922,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="35752" level="105" type="FortCommander" name="Archer Captain" title="Archer">
+	<npc id="35752" level="105" type="FortCommander" name="Archer Captain" title="Archer Unit">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="105" />
@@ -2987,7 +2987,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35753" level="103" type="Defender" name="Archer" title="Archer">
+	<npc id="35753" level="103" type="Defender" name="Archer" title="Archer Unit">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="79" />
@@ -3147,7 +3147,7 @@
 			<attack physical="1562127" magical="177994" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="9997" magical="5263" />
 			<speed>
-				<walk ground="36.48" />
+				<walk ground="36" />
 				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3197,7 +3197,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="35" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3227,15 +3227,15 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="8" />
-			<height normal="27" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35757" level="20" type="Folk" name="Flagpole">
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="342.5127" hpRegen="2.5" mp="192" mpRegen="1.2" />
+			<vitals hp="342" hpRegen="2.5" mp="192" mpRegen="1.2" />
 			<attack physical="44.32863" magical="30.2707" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="86.87049" magical="63.56806" />
 			<speed>
@@ -3329,7 +3329,7 @@
 		<race>ORC</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3378,7 +3378,7 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="80" lhand="641" /> <!-- Tallum Blade / Dark Crystal Shield -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3419,7 +3419,7 @@
 		<race>ELF</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3461,7 +3461,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="9813" lhand="9813" /> <!-- Orc Officer / Orc Officer -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="DUAL" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3502,7 +3502,7 @@
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3535,7 +3535,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35764" level="75" type="Folk" name="Engineering Manager" title="Valley Fortress">
+	<npc id="35764" level="75" type="Folk" name="Chief Engineer" title="Valley Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="144" />
@@ -3543,7 +3543,7 @@
 		<race>DWARF</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3576,7 +3576,7 @@
 			<height normal="19" />
 		</collision>
 	</npc>
-	<npc id="35765" level="75" type="FortLogistics" name="Logistics Officer" title="Valley Fortress">
+	<npc id="35765" level="75" type="FortLogistics" name="Quartermaster" title="Valley Fortress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="88" />
@@ -3637,7 +3637,7 @@
 			<height normal="17" />
 		</collision>
 	</npc>
-	<npc id="35766" level="100" type="Monster" name="Supply Box">
+	<npc id="35766" level="100" type="Monster" name="Supplies">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -3690,7 +3690,7 @@
 		<race>HUMAN</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -3891,7 +3891,7 @@
 			<attack physical="1562127" magical="177994" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="9997" magical="5263" />
 			<speed>
-				<walk ground="29.8" />
+				<walk ground="29" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3951,7 +3951,7 @@
 			<attack physical="1136964" magical="135778" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="80" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>540</hitTime>
@@ -3984,8 +3984,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="15" />
-			<height normal="45" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35773" level="103" type="Defender" name="Rebel Private" title="Valley Fortress">
@@ -4007,7 +4007,7 @@
 			<attack physical="1136964" magical="135778" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="7277" magical="3832" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="1" />
 				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -4039,8 +4039,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="8" />
-			<height normal="23.5" />
+			<radius normal="39" />
+			<height normal="42.5" />
 		</collision>
 	</npc>
 	<npc id="35774" level="102" type="Defender" name="Royal Guard" title="Valley Fortress">
@@ -4172,7 +4172,7 @@
 		<sex>ETC</sex>
 		<acquire exp="2811" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -4218,7 +4218,7 @@
 		<sex>ETC</sex>
 		<acquire exp="2811" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -4268,7 +4268,7 @@
 		<sex>MALE</sex>
 		<acquire exp="2811" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -4310,7 +4310,7 @@
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -4537,7 +4537,7 @@
 			<height normal="23.75" />
 		</collision>
 	</npc>
-	<npc id="35783" level="103" type="Defender" name="Guard" title="Guard">
+	<npc id="35783" level="103" type="Defender" name="Lookout" title="Guard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -4598,7 +4598,7 @@
 			<height normal="24" />
 		</collision>
 	</npc>
-	<npc id="35784" level="103" type="Defender" name="Guard" title="Guard">
+	<npc id="35784" level="103" type="Defender" name="Lookout" title="Guard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="90" />
@@ -4864,7 +4864,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="35788" level="105" type="FortCommander" name="Archer Captain" title="Archer">
+	<npc id="35788" level="105" type="FortCommander" name="Archer Captain" title="Archer Unit">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="105" />
@@ -4929,7 +4929,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35789" level="103" type="Defender" name="Archer" title="Archer">
+	<npc id="35789" level="103" type="Defender" name="Archer" title="Archer Unit">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="79" />
@@ -4989,7 +4989,7 @@
 			<height normal="23.5" />
 		</collision>
 	</npc>
-	<npc id="35790" level="105" type="FortCommander" name="General" title="Officer's Barracks">
+	<npc id="35790" level="105" type="FortCommander" name="General" title="Officers' Barracks">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="140" />
@@ -5054,7 +5054,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="35791" level="105" type="Defender" name="Minister" title="Officer's Barracks">
+	<npc id="35791" level="105" type="Defender" name="Minister" title="Officers' Barracks">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="140" />
@@ -5217,7 +5217,7 @@
 			<attack physical="1562127" magical="177994" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="9997" magical="5263" />
 			<speed>
-				<walk ground="36.48" />
+				<walk ground="36" />
 				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -5305,7 +5305,7 @@
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="342.5127" hpRegen="2.5" mp="192" mpRegen="1.2" />
+			<vitals hp="342" hpRegen="2.5" mp="192" mpRegen="1.2" />
 			<attack physical="44.32863" magical="30.2707" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="86.87049" magical="63.56806" />
 			<speed>
@@ -5399,7 +5399,7 @@
 		<race>ORC</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -5448,7 +5448,7 @@
 		<sex>FEMALE</sex>
 		<equipment rhand="80" lhand="641" /> <!-- Tallum Blade / Dark Crystal Shield -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>
@@ -5489,7 +5489,7 @@
 		<race>ELF</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
+			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="319.24623" magical="233.61053" />
 			<speed>

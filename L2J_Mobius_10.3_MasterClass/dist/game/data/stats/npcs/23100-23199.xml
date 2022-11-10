@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="23101" level="61" type="Monster" name="Bathin">
 		<parameters>
@@ -926,7 +926,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="23119" level="18" type="Monster" name="Handyman" title="Embryo">
+	<npc id="23119" level="18" type="Monster" name="Master" title="Embryo">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="100" />
@@ -991,7 +991,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="23120" level="18" type="Monster" name="Operative" title="Embryo">
+	<npc id="23120" level="18" type="Monster" name="Mechanic" title="Embryo">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="100" />
@@ -1322,7 +1322,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="23126" level="104" type="Monster" name="Embryo Elite Escort">
+	<npc id="23126" level="104" type="Monster" name="Embryo Elite Praetorian">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="1683" level="1" />
@@ -1606,7 +1606,7 @@
 			<attack physical="757976" magical="90519" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5660" magical="2291" />
 			<speed>
-				<walk ground="36.48" />
+				<walk ground="36" />
 				<run ground="160" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -1754,7 +1754,7 @@
 		</skillList>
 		<ai aggroRange="300" isAggressive="true" clanHelpRange="300" />
 	</npc>
-	<npc id="23134" level="104" type="Monster" name="Etina Protectors">
+	<npc id="23134" level="104" type="Monster" name="Etina's Guardian">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="5483" level="1" />
@@ -2048,7 +2048,7 @@
 			<attack physical="647205" magical="79194" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3452" magical="1398" />
 			<speed>
-				<walk ground="29.8" />
+				<walk ground="29" />
 				<run ground="160" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -2799,7 +2799,7 @@
 			<attack physical="5845.53506617802" magical="1033.01266087889" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
 			<defence physical="396.303342752157" magical="254.707709140976" />
 			<speed>
-				<walk ground="42.5" />
+				<walk ground="42" />
 				<run ground="180" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3405,7 +3405,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23160" level="93" type="Monster" name="Garden Chief Priest">
+	<npc id="23160" level="93" type="Monster" name="Garden Seer">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="MoveArounding" value="1" />

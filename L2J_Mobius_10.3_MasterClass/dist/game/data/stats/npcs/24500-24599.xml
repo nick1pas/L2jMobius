@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="24500" level="118" type="Monster" name="Sand Golem">
 		<race>CONSTRUCT</race>
@@ -4747,7 +4747,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="24587" level="121" type="Monster" name="Tanor Silenos">
+	<npc id="24587" level="121" type="Monster" name="Test Monster">
 		<parameters>
 			<skill name="Skill01_ID" id="32823" level="1" />
 			<skill name="Skill02_ID" id="32824" level="1" />
@@ -4764,7 +4764,7 @@
 			<attack physical="104141" magical="9492" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="5554" magical="5020" />
 			<speed>
-				<walk ground="34" />
+				<walk ground="31" />
 				<run ground="174" />
 			</speed>
 			<hitTime>460</hitTime>
@@ -4776,8 +4776,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="19.5" />
-			<height normal="45" />
+			<radius normal="15" />
+			<height normal="24" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="6" /> <!-- Humanoids -->
@@ -5269,8 +5269,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="63" />
-			<height normal="75" />
+			<radius normal="21" />
+			<height normal="40.4" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="10" /> <!-- Dragons -->
@@ -5309,8 +5309,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="28" />
-			<height normal="72.5" />
+			<radius normal="19.6" />
+			<height normal="49.85" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="10" /> <!-- Dragons -->

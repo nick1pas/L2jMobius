@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="24600" level="114" type="Monster" name="Water Dragon's Elite Wyrm">
 		<race>DRAGON</race>
@@ -27,8 +27,8 @@
 			</clanList>
 		</ai>
 		<collision>
-			<radius normal="63" />
-			<height normal="75" />
+			<radius normal="31.5" />
+			<height normal="36" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="10" /> <!-- Dragons -->
@@ -160,8 +160,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="25" />
-			<height normal="62" />
+			<radius normal="17.5" />
+			<height normal="42.5" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="10" /> <!-- Dragons -->
@@ -200,8 +200,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="25" />
-			<height normal="62" />
+			<radius normal="17.5" />
+			<height normal="42.5" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="10" /> <!-- Dragons -->
@@ -240,8 +240,8 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="30" />
-			<height normal="20" />
+			<radius normal="24" />
+			<height normal="15.4" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="3" /> <!-- Beasts -->
@@ -989,7 +989,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24619" level="124" type="Monster" name="Behemoth Dragon" title="Daymare">
+	<npc id="24619" level="124" type="Monster" name="Dragon Beast" title="Daymare">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="107783376720" sp="97005031" />
@@ -2870,8 +2870,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="23" />
+				<run ground="119" />
 			</speed>
 		</stats>
 		<skillList>
@@ -2922,8 +2922,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="23" />
+				<run ground="119" />
 			</speed>
 		</stats>
 		<skillList>
@@ -2974,8 +2974,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="60" />
+				<run ground="178" />
 			</speed>
 		</stats>
 		<skillList>
@@ -3025,8 +3025,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="60" />
+				<run ground="178" />
 			</speed>
 		</stats>
 		<skillList>
@@ -3076,8 +3076,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="80" />
+				<run ground="80" />
 			</speed>
 		</stats>
 		<skillList>
@@ -3128,8 +3128,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="20" />
+				<run ground="80" />
 			</speed>
 		</stats>
 		<skillList>
@@ -3180,8 +3180,8 @@
 				<defence fire="1980" water="1980" wind="1980" earth="1980" holy="1980" dark="1980" />
 			</attribute>
 			<speed>
-				<walk ground="36" />
-				<run ground="155" />
+				<walk ground="40" />
+				<run ground="120" />
 			</speed>
 		</stats>
 		<skillList>

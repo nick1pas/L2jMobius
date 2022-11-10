@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="25800" level="99" type="RaidBoss" name="Michaela" title="Grand Judge">
 		<!-- TODO: Must be confirmed -->
@@ -151,7 +151,7 @@
 			<height normal="73" />
 		</collision>
 	</npc>
-	<npc id="25803" level="87" type="Monster" name="Escort Captain" title="Successor Subordinate">
+	<npc id="25803" level="87" type="Monster" name="Prefect" title="Successor Subordinate">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<skill name="Skill01_ID" id="14099" level="3" />
@@ -199,7 +199,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="25804" level="87" type="Monster" name="Escort Captain" title="Successor Subordinate">
+	<npc id="25804" level="87" type="Monster" name="Prefect" title="Successor Subordinate">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -346,7 +346,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="25807" level="89" type="Monster" name="Escort Captain" title="Queen's Subordinate">
+	<npc id="25807" level="89" type="Monster" name="Prefect" title="Queen's Subordinate">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -395,7 +395,7 @@
 			<height normal="20" />
 		</collision>
 	</npc>
-	<npc id="25808" level="89" type="Monster" name="Escort Captain" title="Queen's Subordinate">
+	<npc id="25808" level="89" type="Monster" name="Prefect" title="Queen's Subordinate">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -1501,7 +1501,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25826" level="95" type="Monster" name="Nameless Subject" title="Raid Fighter">
+	<npc id="25826" level="95" type="Monster" name="Nameless Subject" title="Raid Minion">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -2462,7 +2462,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25842" level="95" type="Monster" name="Black Beast" title="Raid Fighter">
+	<npc id="25842" level="95" type="Monster" name="Black Beast" title="Raid Minion">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -2875,7 +2875,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25855" level="105" type="RaidBoss" name="Maliss" title="Grand Priest of Blood">
+	<npc id="25855" level="105" type="RaidBoss" name="Maliss" title="Bloody High Priestess">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="14515" level="1" />
@@ -2940,7 +2940,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="25856" level="105" type="RaidBoss" name="Isadora" title="Great Magus of Greed">
+	<npc id="25856" level="105" type="RaidBoss" name="Isadora" title="Great Sorceress">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="23707" level="4" />
@@ -3006,7 +3006,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="25857" level="104" type="Monster" name="Corrupted Captain" title="Guardian of the Altar">
+	<npc id="25857" level="104" type="Monster" name="Corrupted Captain" title="Altar Guardian">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="16982" level="1" /> <!-- Devil Horns of Shield -->
@@ -3054,7 +3054,7 @@
 		</skillList>
 		<ai clanHelpRange="300" aggroRange="300" />
 	</npc>
-	<npc id="25858" level="104" type="Monster" name="Corrupted High Priest" title="Guardian of the Altar">
+	<npc id="25858" level="104" type="Monster" name="Corrupted High Priest" title="Altar Guardian">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="16983" level="1" /> <!-- Embryo's Blessing -->
@@ -3433,7 +3433,7 @@
 			<height normal="81" />
 		</collision>
 	</npc>
-	<npc id="25872" level="97" type="Monster" name="Spezion's Subordinate">
+	<npc id="25872" level="97" type="Monster" name="Spezion's Minion">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -3478,7 +3478,7 @@
 			<height normal="55" />
 		</collision>
 	</npc>
-	<npc id="25873" level="97" type="Monster" name="Spezion's Subordinate">
+	<npc id="25873" level="97" type="Monster" name="Spezion's Minion">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -3522,7 +3522,7 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="25874" level="97" type="Monster" name="Spezion's Subordinate">
+	<npc id="25874" level="97" type="Monster" name="Spezion's Minion">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -3664,7 +3664,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25876" level="105" type="RaidBoss" name="Maliss" title="Grand Priest of Blood">
+	<npc id="25876" level="105" type="RaidBoss" name="Maliss" title="Bloody High Priestess">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill01_ID" id="14515" level="1" />
@@ -3819,7 +3819,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25877" level="105" type="RaidBoss" name="Isadora" title="Great Magus of Greed">
+	<npc id="25877" level="105" type="RaidBoss" name="Isadora" title="Great Sorceress">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<skill name="Skill02_ID" id="14519" level="1" />
@@ -3975,7 +3975,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="25878" level="85" type="Monster" name="Arbitor of Darkness" title="Raid Fighter">
+	<npc id="25878" level="85" type="Monster" name="Arbitor of Darkness" title="Raid Minion">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<param name="IsAggressive" value="1" />
@@ -5063,7 +5063,7 @@
 		</skillList>
 		<ai clanHelpRange="300" aggroRange="300" />
 	</npc>
-	<npc id="25889" level="97" type="Monster" name="Revenant of Sir Calibus" title="Raid Fighter">
+	<npc id="25889" level="97" type="Monster" name="Revenant of Sir Calibus" title="Raid Minion">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="Skill01_Probablity" value="0" />
@@ -5123,7 +5123,7 @@
 			<height normal="29" />
 		</collision>
 	</npc>
-	<npc id="25890" level="97" type="Monster" name="Soul Collector Acheron" title="Raid Fighter">
+	<npc id="25890" level="97" type="Monster" name="Soul Collector Acheron" title="Raid Minion">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="Skill01_Probablity" value="0" />
@@ -5182,7 +5182,7 @@
 			<height normal="63" />
 		</collision>
 	</npc>
-	<npc id="25891" level="97" type="Monster" name="Evil Spirit Tempest" title="Raid Fighter">
+	<npc id="25891" level="97" type="Monster" name="Evil Spirit Tempest" title="Raid Minion">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 			<param name="Skill01_Probablity" value="0" />

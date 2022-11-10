@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="23500" level="99" type="Monster" name="Flame Crow">
 		<parameters>
@@ -618,7 +618,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23510" level="102" type="Monster" name="Atelia Flame Master">
+	<npc id="23510" level="102" type="Monster" name="Fortress Flame Master">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<parameters>
 			<skill name="Skill01_ID" id="23645" level="1" />
@@ -970,7 +970,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23535" level="102" type="Monster" name="Atelia Archon" title="Kelbim's Call">
+	<npc id="23535" level="102" type="Monster" name="Fortress Archon" title="Kelbim's Call">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -1243,7 +1243,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23539" level="104" type="Monster" name="Atelia Trial Guardian Captain" title="Trial Guardian">
+	<npc id="23539" level="104" type="Monster" name="Atelia Trial Guardian Captain" title="Gate Guard">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<parameters>
 			<skill name="Skill01_ID" id="23654" level="1" />
@@ -1838,7 +1838,7 @@
 			<height normal="28" />
 		</collision>
 	</npc>
-	<npc id="23550" level="102" type="Monster" name="Kerberos Liger" title="Spirit of the Night">
+	<npc id="23550" level="102" type="Monster" name="Kerberos Liger" title="Night Spirit">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>ELEMENTAL</race>
 		<acquire exp="605356740" sp="605409" />
@@ -1902,7 +1902,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23551" level="103" type="Monster" name="Kerberos Fort" title="Spirit of the Night">
+	<npc id="23551" level="103" type="Monster" name="Kerberos Fort" title="Night Spirit">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>ELEMENTAL</race>
 		<acquire exp="740762816" sp="740827" />
@@ -1966,7 +1966,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23552" level="102" type="Monster" name="Kerberos Nero" title="Spirit of the Night">
+	<npc id="23552" level="102" type="Monster" name="Kerberos Nero" title="Night Spirit">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>ELEMENTAL</race>
 		<acquire exp="605356740" sp="605409" />
@@ -2032,7 +2032,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23553" level="103" type="Monster" name="Fury Sylph Barrena" title="Spirit of the Night">
+	<npc id="23553" level="103" type="Monster" name="Fury Sylph Barrena" title="Night Spirit">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>ELEMENTAL</race>
 		<acquire exp="740762816" sp="740827" />
@@ -2151,7 +2151,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23555" level="103" type="Monster" name="Fury Sylph Temptress" title="Spirit of the Night">
+	<npc id="23555" level="103" type="Monster" name="Fury Sylph Temptress" title="Night Spirit">
 		<!-- FIX ME NO INFO ABOUT THIS NPC -->
 		<race>ELEMENTAL</race>
 		<acquire exp="740762816" sp="740827" />
@@ -2216,7 +2216,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23556" level="103" type="Monster" name="Fury Sylph Purka" title="Spirit of the Night">
+	<npc id="23556" level="103" type="Monster" name="Fury Sylph Purka" title="Night Spirit">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<parameters>
 			<skill name="Skill01_ID" id="23667" level="1" />
@@ -2545,7 +2545,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23562" level="103" type="Monster" name="Harpe" title="Spirit of the Night">
+	<npc id="23562" level="103" type="Monster" name="Harpe" title="Night Spirit">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>ELEMENTAL</race>
 		<acquire exp="3703824689" sp="3703921" />
@@ -3439,7 +3439,7 @@
 			<height normal="28.25" />
 		</collision>
 	</npc>
-	<npc id="23588" level="102" type="Monster" name="Hummel" title="Quartermaster">
+	<npc id="23588" level="102" type="Monster" name="Hummel" title="Embryo Quartermaster">
 		<!-- Source: www.l2wiki.com (2015-04-08) -->
 		<race>HUMANOID</race>
 		<acquire exp="5738066517" sp="5738119" />
@@ -3538,7 +3538,7 @@
 			<attack physical="947471" magical="90519" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4043" magical="1637" />
 			<speed>
-				<walk ground="36.48" />
+				<walk ground="36" />
 				<run ground="190" />
 			</speed>
 			<hitTime>600</hitTime>

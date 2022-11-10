@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="3401" level="23" type="RaidBoss" name="Greyclaw Kutus" title="Lord of Destruction">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
@@ -269,7 +269,7 @@
 			<height normal="23" />
 		</collision>
 	</npc>
-	<npc id="3406" level="22" type="Monster" name="Sharuk's Marksman" title="Follower of Destruction">
+	<npc id="3406" level="22" type="Monster" name="Sharuk's Sniper" title="Follower of Destruction">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2507" /> <!-- Lizardspear -->
@@ -533,7 +533,7 @@
 			<attack physical="253.592373602383" magical="59.1834627128382" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="148.063785" magical="144.46" />
 			<speed>
-				<walk ground="80" />
+				<walk ground="27" />
 				<run ground="170" />
 			</speed>
 			<hitTime>540</hitTime>
@@ -559,8 +559,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="8" />
-			<height normal="23" />
+			<radius normal="12" />
+			<height normal="31" />
 		</collision>
 	</npc>
 	<npc id="3412" level="24" type="Monster" name="Ikuntai's Pawn" title="Follower of Destruction">
@@ -572,7 +572,7 @@
 			<attack physical="253.592373602383" magical="59.1834627128382" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="148.063785" magical="144.46" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="27" />
 				<run ground="170" />
 			</speed>
 			<hitTime>210</hitTime>
@@ -797,8 +797,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="35" />
-			<height normal="74" />
+			<radius normal="12" />
+			<height normal="27.5" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -900,8 +900,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="35" />
-			<height normal="74" />
+			<radius normal="13" />
+			<height normal="21" />
 		</collision>
 	</npc>
 	<npc id="3419" level="35" type="Monster" name="Execution Grounds Watchman Guillotine" title="Lord of Destruction">
@@ -1293,8 +1293,8 @@
 			<attack physical="2995.10104234817" magical="1962.16762114757" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="364.223895" magical="355.36" />
 			<speed>
-				<walk ground="80" />
-				<run ground="190" />
+				<walk ground="70" />
+				<run ground="140" />
 			</speed>
 			<hitTime>520</hitTime>
 			<attribute>
@@ -1321,8 +1321,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="11" />
-			<height normal="28.5" />
+			<radius normal="22.5" />
+			<height normal="37.5" />
 		</collision>
 	</npc>
 	<npc id="3428" level="59" type="Monster" name="Ishka's Elite Soldier" title="Follower of Destruction">
@@ -1337,8 +1337,8 @@
 			<attack physical="2995.10104234817" magical="1962.16762114757" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="364.223895" magical="355.36" />
 			<speed>
-				<walk ground="40" />
-				<run ground="190" />
+				<walk ground="70" />
+				<run ground="140" />
 			</speed>
 			<hitTime>170</hitTime>
 			<attribute>
@@ -1365,8 +1365,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="12" />
-			<height normal="30.5" />
+			<radius normal="22.5" />
+			<height normal="37.5" />
 		</collision>
 	</npc>
 	<npc id="3429" level="59" type="RaidBoss" name="Demon Kuri" title="Lord of Destruction">
@@ -1588,8 +1588,8 @@
 			<attack physical="458.480434603136" magical="56.5276785347001" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="600.71532" magical="293.06" />
 			<speed>
-				<walk ground="70" />
-				<run ground="170" />
+				<walk ground="34" />
+				<run ground="200" />
 			</speed>
 			<hitTime>480</hitTime>
 			<attribute>
@@ -1614,8 +1614,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="30" />
-			<height normal="57" />
+			<radius normal="35" />
+			<height normal="74" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -1718,7 +1718,7 @@
 			<height normal="27" grown="32" />
 		</collision>
 	</npc>
-	<npc id="3436" level="49" type="RaidBoss" name="Ketra's Commander Atis" title="Lord of Destruction">
+	<npc id="3436" level="49" type="RaidBoss" name="Katu Vanguard Commander Atis" title="Lord of Destruction">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<minions name="Privates">
@@ -1787,7 +1787,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="3437" level="48" type="Monster" name="Ketra Marksman" title="Follower of Destruction">
+	<npc id="3437" level="48" type="Monster" name="Katu Vanguard Sniper" title="Follower of Destruction">
 		<parameters>
 			<skill name="LongRangePhysicalSpecial_a" id="4761" level="4" />
 		</parameters>
@@ -1828,7 +1828,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="3438" level="48" type="Monster" name="Ketra Raider" title="Follower of Destruction">
+	<npc id="3438" level="48" type="Monster" name="Katu Vanguard Raider" title="Follower of Destruction">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="128" /> <!-- Knight's Sword -->
@@ -1909,8 +1909,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="10" />
-			<height normal="33.5" />
+			<radius normal="12" />
+			<height normal="50" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -2009,7 +2009,7 @@
 		<ai clanHelpRange="300" />
 		<collision>
 			<radius normal="10" />
-			<height normal="33.5" />
+			<height normal="25" />
 		</collision>
 	</npc>
 	<npc id="3442" level="43" type="RaidBoss" name="Earth Protector Panathen" title="Lord of Destruction">
@@ -2796,8 +2796,8 @@
 			<attack physical="5697.64406230895" magical="4423.65426034769" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="505.60512" magical="493.3" />
 			<speed>
-				<walk ground="34" />
-				<run ground="190" />
+				<walk ground="40" />
+				<run ground="300" />
 			</speed>
 			<hitTime>480</hitTime>
 			<attribute>
@@ -2821,8 +2821,8 @@
 		</skillList>
 		<ai clanHelpRange="300" />
 		<collision>
-			<radius normal="16" />
-			<height normal="41" />
+			<radius normal="22.5" />
+			<height normal="37.5" />
 		</collision>
 	</npc>
 	<npc id="3458" level="79" type="Monster" name="Shadith' Sentinel" title="Follower of Destruction">
@@ -2952,8 +2952,8 @@
 			<attack physical="2451.2234804188" magical="868.876026814078" random="5" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="957.73869" magical="467.22" />
 			<speed>
-				<walk ground="37" />
-				<run ground="170" />
+				<walk ground="30" />
+				<run ground="300" />
 			</speed>
 			<hitTime>450</hitTime>
 			<attribute>
@@ -3682,7 +3682,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="3474" level="95" type="Monster" name="Super Kat the Cat">
+	<npc id="3474" level="95" type="Monster" name="Mighty Kat the Cat">
 		<parameters>
 			<param name="Party_Type" value="1" />
 			<skill name="Skill01_ID" id="23545" level="2" />
@@ -3733,7 +3733,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="3475" level="95" type="Monster" name="Super Feline Queen">
+	<npc id="3475" level="95" type="Monster" name="Mighty Feline Queen">
 		<parameters>
 			<param name="Party_Type" value="1" />
 		</parameters>
@@ -3778,7 +3778,7 @@
 			<height normal="37.5" />
 		</collision>
 	</npc>
-	<npc id="3476" level="95" type="Monster" name="Super Mew the Cat">
+	<npc id="3476" level="95" type="Monster" name="Mighty Mew the Cat">
 		<parameters>
 			<param name="Party_Type" value="1" />
 			<skill name="Skill01_ID" id="23555" level="2" />

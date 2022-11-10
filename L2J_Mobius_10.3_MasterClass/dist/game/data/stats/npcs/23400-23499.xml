@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="23403" level="97" type="Monster" name="Suffering Fanatic">
 		<race>HUMANOID</race>
@@ -604,7 +604,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23417" level="26" type="Monster" name="Wind Vortex" title="Cyclone">
+	<npc id="23417" level="26" type="Monster" name="Wind Vortex" title="Hurricane">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
@@ -2218,7 +2218,7 @@
 			<attack physical="1403.52992786604" magical="720.623302603812" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="349.77477" magical="255.95" />
 			<speed>
-				<walk ground="42.5" />
+				<walk ground="42" />
 				<run ground="170" />
 			</speed>
 			<hitTime>600</hitTime>
@@ -3493,7 +3493,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23469" level="102" type="Monster" name="Dimensional Archon" title="Slaughterer">
+	<npc id="23469" level="102" type="Monster" name="Dimensional Archon" title="Slayer">
 		<parameters>
 			<param name="IsAggressive" value="1" />
 		</parameters>
@@ -3819,7 +3819,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23475" level="103" type="Monster" name="Unworldly Archon" title="Slaughterer">
+	<npc id="23475" level="103" type="Monster" name="Unworldly Archon" title="Slayer">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="1028775948" sp="1028861" />
@@ -4194,7 +4194,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23482" level="104" type="Monster" name="Abyssal Archon" title="Slaughterer">
+	<npc id="23482" level="104" type="Monster" name="Abyssal Archon" title="Slayer">
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
 		<acquire exp="1048849152" sp="1048936" />
@@ -4690,7 +4690,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="23492" level="99" type="Monster" name="Lava Stone Golem">
+	<npc id="23492" level="99" type="Monster" name="Lava Golem">
 		<parameters>
 			<skill name="Skill01_ID" id="18217" level="1" />
 			<skill name="Skill02_ID" id="32865" level="1" />

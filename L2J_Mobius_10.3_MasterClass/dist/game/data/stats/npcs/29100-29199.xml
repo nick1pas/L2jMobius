@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="29100" level="83" type="Monster" name="Crystal Prison Guard">
 		<parameters>
@@ -248,7 +248,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2985.1835" hpRegen="8.5" mp="1777.4" mpRegen="3" />
+			<vitals hp="2985" hpRegen="8.5" mp="1777" mpRegen="3" />
 			<attack physical="949.52401" magical="648.40181" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="353.86144" magical="258.94045" />
 			<speed>
@@ -832,8 +832,8 @@
 			<attack physical="970.537548504614" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="84" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -865,8 +865,8 @@
 			<attack physical="970.537548504614" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="84" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -898,8 +898,8 @@
 			<attack physical="970.537548504614" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="84" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -931,8 +931,8 @@
 			<attack physical="970.537548504614" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="84" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -964,8 +964,8 @@
 			<attack physical="970.537548504614" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="84" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -997,8 +997,8 @@
 			<attack physical="970.537548504614" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
-				<walk ground="60" />
-				<run ground="150" />
+				<walk ground="84" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -2603,7 +2603,7 @@
 			<height normal="0.1" />
 		</collision>
 	</npc>
-	<npc id="29161" level="73" type="Monster" name="Pre-Awakened Ekimus">
+	<npc id="29161" level="73" type="Monster" name="Ekimus">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -2694,7 +2694,7 @@
 			<height normal="51" />
 		</collision>
 	</npc>
-	<npc id="29163" level="96" type="GrandBoss" name="Tiat" title="Witch of the Dragon of Darkness">
+	<npc id="29163" level="96" type="GrandBoss" name="Tiat" title="Maiden of Darkness">
 		<race>DRAGON</race>
 		<sex>FEMALE</sex>
 		<acquire exp="10771181568" sp="2585084" raidPoints="21" />
@@ -3204,7 +3204,7 @@
 			<height normal="25" />
 		</collision>
 	</npc>
-	<npc id="29175" level="82" type="GrandBoss" name="Tiat" title="Witch of the Dragon of Darkness">
+	<npc id="29175" level="82" type="GrandBoss" name="Tiat" title="Maiden of Darkness">
 		<race>DRAGON</race>
 		<sex>FEMALE</sex>
 		<acquire exp="11480334" sp="2755" />
@@ -3700,7 +3700,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29182" level="81" type="Monster" name="Doll Blader">
+	<npc id="29182" level="81" type="Monster" name="Doll">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<equipment rhand="5129" /> <!-- Doll Knife -->
@@ -3798,7 +3798,7 @@
 			<attack physical="1099.42361669366" magical="750.763809564873" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="353.86144" magical="258.94045" />
 			<speed>
-				<walk ground="25.5" />
+				<walk ground="25" />
 				<run ground="140" />
 			</speed>
 			<hitTime>600</hitTime>

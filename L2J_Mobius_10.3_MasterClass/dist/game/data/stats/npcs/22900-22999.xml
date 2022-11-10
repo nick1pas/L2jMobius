@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="22900" level="92" type="Monster" name="Satyr Summoner" title="Brutal">
 		<parameters>
@@ -1883,8 +1883,8 @@
 		</skillList>
 		<ai aggroRange="300" isAggressive="true" clanHelpRange="300" />
 		<collision>
-			<radius normal="35" />
-			<height normal="35" />
+			<radius normal="30" />
+			<height normal="36.5" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -4841,7 +4841,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22980" level="94" type="Monster" name="Novice Escort Wizard">
+	<npc id="22980" level="94" type="Monster" name="Novice Praetorian Wizard">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="100" />
@@ -5434,7 +5434,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22997" level="18" type="Monster" name="Handyman" title="Embryo">
+	<npc id="22997" level="18" type="Monster" name="Master" title="Embryo">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="100" />
@@ -5499,7 +5499,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="22998" level="18" type="Monster" name="Operative" title="Embryo">
+	<npc id="22998" level="18" type="Monster" name="Mechanic" title="Embryo">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="100" />

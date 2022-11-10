@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="27500" level="80" type="Monster" name="Ketra's Commander Tayr" title="Quest Monster">
 		<race>HUMANOID</race>
@@ -557,7 +557,7 @@
 			<height normal="22" />
 		</collision>
 	</npc>
-	<npc id="27517" level="65" type="Monster" name="Armed Assault" title="Embryo">
+	<npc id="27517" level="65" type="Monster" name="Armed Assaulter" title="Embryo">
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="20" type="PER" ticks="10" affects="PARTY" />
@@ -847,7 +847,7 @@
 			<attack physical="481.34551" magical="328.69659" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="247.65008" magical="181.21958" />
 			<speed>
-				<walk ground="29.8" />
+				<walk ground="29" />
 				<run ground="128" />
 			</speed>
 			<hitTime>600</hitTime>

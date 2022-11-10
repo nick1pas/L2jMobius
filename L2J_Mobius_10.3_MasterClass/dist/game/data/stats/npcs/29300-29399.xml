@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="29300" level="110" type="RaidBoss" name="Varkaron" title="Dimensional Invader">
 		<race>UNDEAD</race>
@@ -44,7 +44,7 @@
 			<height normal="100" />
 		</collision>
 	</npc>
-	<npc id="29301" level="110" type="Monster" name="Minion Monisac">
+	<npc id="29301" level="110" type="Monster" name="Henchman Monisac">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -80,7 +80,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="29302" level="110" type="Monster" name="Minion Monishe">
+	<npc id="29302" level="110" type="Monster" name="Henchman Monishe">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="15302" />
@@ -1213,7 +1213,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29320" level="109" type="GrandBoss" name="Kain van Halter" title="Disciple of Void">
+	<npc id="29320" level="109" type="GrandBoss" name="Kain van Halter" title="Void Apostle">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="10730098508044" sp="9657078777" raidPoints="1000" />
@@ -1375,7 +1375,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29321" level="108" type="Monster" name="Martyr of Greed">
+	<npc id="29321" level="108" type="Monster" name="Martyr of Avarice">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="15747706368" sp="14171760" />
@@ -1575,7 +1575,7 @@
 			<skill id="32309" level="1" /> <!-- Curse of Blaze -->
 		</skillList>
 	</npc>
-	<npc id="29325" level="125" type="GrandBoss" name="Orfen" title="Master of the Sea of Spores">
+	<npc id="29325" level="125" type="GrandBoss" name="Orfen" title="Sea of Spores' Mistress">
 		<!-- NEW UPDATE: PRELUDE OF WAR -->
 		<parameters>
 			<minions name="Privates">
@@ -2221,7 +2221,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29337" level="125" type="Monster" name="Lilith Elite Fighter">
+	<npc id="29337" level="125" type="Monster" name="Lilith' Elite Fighter">
 		<parameters>
 			<skill name="HealMagic_a" id="4209" level="8" />
 			<skill name="SelfRangeBuff_a" id="4212" level="8" />
@@ -2272,7 +2272,7 @@
 			<height normal="45" />
 		</collision>
 	</npc>
-	<npc id="29338" level="125" type="Monster" name="Lilith Elite Warrior">
+	<npc id="29338" level="125" type="Monster" name="Lilith' Elite Warrior">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -2317,7 +2317,7 @@
 			<height normal="43" grown="51.6" />
 		</collision>
 	</npc>
-	<npc id="29339" level="125" type="Monster" name="Lilith Elite Shaman">
+	<npc id="29339" level="125" type="Monster" name="Lilith' Elite Wizard">
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -2365,7 +2365,7 @@
 			<height normal="53" />
 		</collision>
 	</npc>
-	<npc id="29340" level="125" type="Monster" name="Lillim High Fighter">
+	<npc id="29340" level="125" type="Monster" name="Lillim's High Fighter">
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
 			<param name="MoveAroundSocial1" value="70" />
@@ -2437,7 +2437,7 @@
 			<height normal="39" grown="46.8" />
 		</collision>
 	</npc>
-	<npc id="29341" level="125" type="Monster" name="Lillim Legionary">
+	<npc id="29341" level="125" type="Monster" name="Lillim's Legionary">
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
 			<param name="MoveAroundSocial1" value="71" />
@@ -2504,7 +2504,7 @@
 			<height normal="55.8" />
 		</collision>
 	</npc>
-	<npc id="29342" level="125" type="Monster" name="Lillim Scout">
+	<npc id="29342" level="125" type="Monster" name="Lillim's Scout">
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
 			<param name="MoveAroundSocial1" value="71" />
@@ -2572,7 +2572,7 @@
 			<height normal="46" />
 		</collision>
 	</npc>
-	<npc id="29343" level="125" type="Monster" name="Lilim Priest">
+	<npc id="29343" level="125" type="Monster" name="Lilim's Seeress">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
@@ -2647,7 +2647,7 @@
 			<height normal="44" grown="56" />
 		</collision>
 	</npc>
-	<npc id="29344" level="125" type="Monster" name="Lillim Lady">
+	<npc id="29344" level="125" type="Monster" name="Lillim's Ranger">
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
 			<param name="MoveAroundSocial1" value="71" />
@@ -2714,7 +2714,7 @@
 			<height normal="34.05" />
 		</collision>
 	</npc>
-	<npc id="29345" level="125" type="Monster" name="Lilim Knight Captain">
+	<npc id="29345" level="125" type="Monster" name="Lilim's Knight Captain">
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
 			<param name="MoveAroundSocial1" value="71" />
@@ -2782,7 +2782,7 @@
 			<height normal="27.1" />
 		</collision>
 	</npc>
-	<npc id="29346" level="125" type="Monster" name="Lillim High Priest" title="Lilith's eye">
+	<npc id="29346" level="125" type="Monster" name="Lillim's High Priestess" title="Lilith' Eye">
 		<parameters>
 			<param name="MoveAroundSocial" value="71" />
 			<param name="MoveAroundSocial1" value="71" />
@@ -2850,7 +2850,7 @@
 			<height normal="49" />
 		</collision>
 	</npc>
-	<npc id="29347" level="125" type="Monster" name="Lillim Commander" title="Catacomb Guardian">
+	<npc id="29347" level="125" type="Monster" name="Lillim's Commander" title="Catacomb Guardian">
 		<parameters>
 			<param name="MoveAroundSocial" value="70" />
 			<param name="MoveAroundSocial1" value="70" />
@@ -3064,7 +3064,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29349" level="125" type="Monster" name="Anakim Elite Captain">
+	<npc id="29349" level="125" type="Monster" name="Anakim's Elite Commander">
 		<parameters>
 			<skill name="HealMagic_a" id="4209" level="8" />
 			<skill name="SelfRangeBuff_a" id="4212" level="8" />
@@ -3113,7 +3113,7 @@
 			<height normal="36.6" />
 		</collision>
 	</npc>
-	<npc id="29350" level="125" type="Monster" name="Anakim Elite Warrior">
+	<npc id="29350" level="125" type="Monster" name="Anakim's Elite Warrior">
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -3158,7 +3158,7 @@
 			<height normal="43" grown="51.6" />
 		</collision>
 	</npc>
-	<npc id="29351" level="125" type="Monster" name="Anakim Elite Priest">
+	<npc id="29351" level="125" type="Monster" name="Anakim's Elite Priest">
 		<race>DIVINE</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -6240,6 +6240,179 @@
 		<collision>
 			<radius normal="60" />
 			<height normal="100.5" />
+		</collision>
+	</npc>
+	<npc id="29391" level="85" type="Folk" name="Baium" title="Elmoreden's Emperor">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="748529434" hpRegen="10.5" mp="68076" mpRegen="3.6" />
+			<speed>
+				<walk ground="80" />
+				<run ground="170" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="65" />
+			<height normal="174" />
+		</collision>
+	</npc>
+	<npc id="29392" level="85" type="Folk" name="Baium" title="Elmoreden's Emperor">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="748529434" hpRegen="10.5" mp="68076" mpRegen="3.6" />
+			<speed>
+				<walk ground="50" />
+				<run ground="100" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="65" />
+			<height normal="82" />
+		</collision>
+	</npc>
+	<npc id="29393" level="85" type="Folk" name="Galaxia" title="Earth Angel">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<equipment rhand="82299" /> <!-- Baium's Stormer -->
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="748529434" hpRegen="10.5" mp="68076" mpRegen="3.6" />
+			<speed>
+				<walk ground="50" />
+				<run ground="170" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="30" />
+			<height normal="120.615" />
+		</collision>
+	</npc>
+	<npc id="29394" level="85" type="Folk" name="Dark Angel">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="1451454" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<speed>
+				<walk ground="65" />
+				<run ground="180" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="39.6" />
+			<height normal="114" />
+		</collision>
+	</npc>
+	<npc id="29395" level="85" type="Folk" name="Angel Pikeman">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="1451454" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="30" />
+			<height normal="76" />
+		</collision>
+	</npc>
+	<npc id="29396" level="85" type="Folk" name="Archangel" title="Sealed Enchanter">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="1451454" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="22" />
+			<height normal="48" />
+		</collision>
+	</npc>
+	<npc id="29397" level="85" type="Folk" name="Angel Archer">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<equipment rhand="15302" /> <!-- Transparent Bow (NPC) -->
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="1451454" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="18" />
+			<height normal="48" />
+		</collision>
+	</npc>
+	<npc id="29398" level="85" type="Folk" name="Eigis' Shadow" title="Lady of Despair">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="450000" hpRegen="10.5" mp="300" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="180" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="36" />
+			<height normal="123" />
+		</collision>
+	</npc>
+	<npc id="29399" level="85" type="Folk" name="Magic Device" title="Owned by Eigis">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="250" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<speed>
+				<walk ground="50" />
+				<run ground="1" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="56" />
+			<height normal="143" />
 		</collision>
 	</npc>
 </list>

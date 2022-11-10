@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="29200" level="99" type="Monster" name="Earth Wyrm Tail">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
@@ -158,6 +158,7 @@
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
+		<equipment rhand="15302" /> <!-- Transparent Bow (NPC) -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="443936" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="75762.9315245988" magical="21379.1984705962" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -1553,7 +1554,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29224" level="112" type="Monster" name="Behemoth Dragon">
+	<npc id="29224" level="112" type="Monster" name="Dragon Beast">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<skill name="PhysicalSpecial" id="14391" level="1" />
@@ -3585,7 +3586,7 @@
 			<height normal="62.4" />
 		</collision>
 	</npc>
-	<npc id="29257" level="99" type="Monster" name="Yehan Klodekus' Ghost">
+	<npc id="29257" level="99" type="Monster" name="Yehan Klanikus' Ghost">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="13983" />
@@ -4984,7 +4985,7 @@
 			<height normal="54.5" />
 		</collision>
 	</npc>
-	<npc id="29294" level="110" type="Monster" name="Tebird" title="Dimensional Invader">
+	<npc id="29294" level="110" type="Monster" name="Tebot" title="Dimensional Invader">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">

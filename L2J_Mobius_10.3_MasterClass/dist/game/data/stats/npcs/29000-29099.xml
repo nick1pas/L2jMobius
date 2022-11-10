@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="29001" level="40" type="GrandBoss" name="Queen Ant">
 		<parameters>
@@ -1158,7 +1158,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29023" level="58" type="Monster" name="Maiden Doll">
+	<npc id="29023" level="58" type="Monster" name="Doll">
 		<parameters>
 			<param name="MoveAroundSocial" value="50" />
 			<param name="MoveAroundSocial1" value="50" />
@@ -2863,8 +2863,8 @@
 		<exCrtEffect>true</exCrtEffect>
 		<ai aggroRange="1000" />
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="20" />
+			<height normal="56" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -2997,7 +2997,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29057" level="59" type="Monster" name="Sirra's Servant" title="Raid Fighter">
+	<npc id="29057" level="59" type="Monster" name="Sirra's Servant" title="Raid Minion">
 		<parameters>
 			<skill name="HealMagic_a" id="4780" level="5" />
 			<skill name="SelfRangeBuff_a" id="4213" level="5" />
@@ -3048,7 +3048,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29058" level="59" type="Monster" name="Sirra's Beholder" title="Raid Fighter">
+	<npc id="29058" level="59" type="Monster" name="Sirra's Beholder" title="Raid Minion">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
@@ -3196,7 +3196,7 @@
 		<race>ETC</race>
 		<sex>ETC</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2444.46819" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
+			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.91597" magical="216.53847" />
 			<speed>
@@ -3226,7 +3226,7 @@
 			<height normal="80" />
 		</collision>
 	</npc>
-	<npc id="29062" level="99" type="RaidBoss" name="Andreas Van Halter" title="High Priestess">
+	<npc id="29062" level="99" type="RaidBoss" name="Andreas van Halter" title="High Priestess">
 		<parameters>
 			<minions name="Privates">
 				<npc id="29063" count="3" respawnTime="360" weightPoint="1" />
@@ -3381,7 +3381,7 @@
 			<height normal="21.3" />
 		</collision>
 	</npc>
-	<npc id="29063" level="99" type="Monster" name="Andreas' Acolyte" title="Raid Fighter">
+	<npc id="29063" level="99" type="Monster" name="Andreas' Acolyte" title="Raid Minion">
 		<parameters>
 			<skill name="DDMagic_a" id="4193" level="10" />
 			<skill name="Debuff_a" id="4206" level="10" />
@@ -3433,7 +3433,7 @@
 			<height normal="28.4" />
 		</collision>
 	</npc>
-	<npc id="29064" level="99" type="Monster" name="Andreas' Acolyte" title="Raid Fighter">
+	<npc id="29064" level="99" type="Monster" name="Andreas' Acolyte" title="Raid Minion">
 		<parameters>
 			<skill name="HealMagic_a" id="4210" level="10" />
 			<skill name="SelfRangeBuff_a" id="4214" level="10" />
@@ -4201,7 +4201,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29069" level="118" type="Monster" name="Behemoth Dragon">
+	<npc id="29069" level="118" type="Monster" name="Dragon Beast">
 		<parameters>
 			<param name="RootingManage" value="0" />
 			<skill name="PhysicalSpecial" id="5095" level="1" />
@@ -5691,7 +5691,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29097" level="80" type="Monster" name="Disciple of Splendor" title="Raid Fighter">
+	<npc id="29097" level="80" type="Monster" name="Disciple of Splendor" title="Raid Minion">
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="8221" /> <!-- Monster Only (Grail Apostle Spear) -->
@@ -5735,7 +5735,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="29098" level="80" type="Monster" name="Worshiper of Splendor" title="Raid Fighter">
+	<npc id="29098" level="80" type="Monster" name="Worshiper of Splendor" title="Raid Minion">
 		<parameters>
 			<skill name="LongRangePhysicalSpecial_a" id="4208" level="10" />
 		</parameters>
