@@ -83,7 +83,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9504" toLevel="1" name="Low-grade Scroll: PK">
+	<skill id="9504" toLevel="1" name="Scroll: PK (Low-grade)">
 		<itemConsumeId>35741</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -107,7 +107,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9505" toLevel="1" name="Mid-grade Scroll: PK">
+	<skill id="9505" toLevel="1" name="Scroll: PK (Mid-grade)">
 		<itemConsumeId>35752</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -131,7 +131,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9506" toLevel="1" name="High-grade Scroll: PK">
+	<skill id="9506" toLevel="1" name="Scroll: PK (High-grade)">
 		<itemConsumeId>35753</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -155,7 +155,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9507" toLevel="1" name="Top-grade Scroll: PK">
+	<skill id="9507" toLevel="1" name="Scroll: PK (Top-grade)">
 		<itemConsumeId>35754</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -179,7 +179,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9508" toLevel="1" name="Low-grade Scroll: Reputation">
+	<skill id="9508" toLevel="1" name="Scroll: Reputation (Low-grade)">
 		<itemConsumeId>35742</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -205,7 +205,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9509" toLevel="1" name="Mid-grade Scroll: Reputation">
+	<skill id="9509" toLevel="1" name="Scroll: Reputation (Mid-grade)">
 		<itemConsumeId>35755</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -257,7 +257,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9511" toLevel="1" name="Top-grade Scroll: Reputation">
+	<skill id="9511" toLevel="1" name="Scroll: Reputation (Top-grade)">
 		<itemConsumeId>35757</itemConsumeId>
 		<itemConsumeCount>1</itemConsumeCount>
 		<operateType>A1</operateType>
@@ -703,7 +703,7 @@
 			<condition name="OpCanEscape" />
 		</conditions>
 	</skill>
-	<skill id="9532" toLevel="1" name="Jang Hyuk Agathion's Effect">
+	<skill id="9532" toLevel="1" name="Agathion's Effect: Hyuk Jang">
 		<!-- CON +3, MEN +3, Weight Limit +10,000, Max HP/ MP/ CP +300, P. Atk. +5%. -->
 		<icon>icon.skill_agathion_cute</icon>
 		<operateType>P</operateType>
@@ -725,14 +725,14 @@
 			<condition name="OpCanEscape" />
 		</conditions>
 	</skill>
-	<skill id="9534" toLevel="1" name="Kim Sooro Agathion's Effect">
+	<skill id="9534" toLevel="1" name="Agathion's Effect: Soo-ro Kim">
 		<!-- CON +3, MEN +3, Weight Limit +10,000, Max HP/ MP/ CP +300, P. Def. +5%, Max HP 5%. -->
 		<icon>icon.skill_agathion_cute</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<specialLevel>-1</specialLevel>
 	</skill>
-	<skill id="9535" toLevel="1" name="Kim Sooro Agathion's Blessed Escape">
+	<skill id="9535" toLevel="1" name="Agathion's Blessed Effect: Soo-ro Kim">
 		<!-- Can use Blessed Escape. Cooldown is 1 h. -->
 		<operateType>A1</operateType>
 		<hitTime>200</hitTime>
@@ -769,14 +769,14 @@
 			<condition name="OpCanEscape" />
 		</conditions>
 	</skill>
-	<skill id="9538" toLevel="1" name="Kim Shinyoung Agathion's Effect">
+	<skill id="9538" toLevel="1" name="Agathion's Effect: Shin-young Kim">
 		<!-- CON +3, MEN +3, Weight Limit +10,000, and Max HP/ MP/ CP +300. Skill Cooldown -3%, and Skill MP Consumption -3%. -->
 		<icon>icon.skill_agathion_cute</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<specialLevel>-1</specialLevel>
 	</skill>
-	<skill id="9539" toLevel="1" name="Kim Shinyoung Agathion's Blessed Escape">
+	<skill id="9539" toLevel="1" name="Agathion's Blessed Effect: Shin-young Kim">
 		<!-- Can use Blessed Escape. Cooldown is 1 h. -->
 		<operateType>A1</operateType>
 		<hitTime>200</hitTime>
@@ -1405,7 +1405,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9554" toLevel="1" name="Hair Accessory: STR">
+	<skill id="9554" toLevel="1" name="Head Accessory: STR">
 		<!-- STR +3. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<magicLevel>1</magicLevel>
@@ -1418,7 +1418,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9555" toLevel="1" name="Hair Accessory: DEX">
+	<skill id="9555" toLevel="1" name="Head Accessory: DEX">
 		<!-- DEX +3. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<magicLevel>1</magicLevel>
@@ -1431,7 +1431,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9556" toLevel="1" name="Hair Accessory: CON">
+	<skill id="9556" toLevel="1" name="Head Accessory: CON">
 		<!-- CON +3. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<magicLevel>1</magicLevel>
@@ -1444,7 +1444,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9557" toLevel="1" name="Hair Accessory: MEN">
+	<skill id="9557" toLevel="1" name="Head Accessory: MEN">
 		<!-- MEN +3. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<magicLevel>1</magicLevel>
@@ -1457,7 +1457,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9558" toLevel="1" name="Hair Accessory: INT">
+	<skill id="9558" toLevel="1" name="Head Accessory: INT">
 		<!-- INT +3. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<magicLevel>1</magicLevel>
@@ -1470,7 +1470,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9559" toLevel="1" name="Hair Accessory: WIT">
+	<skill id="9559" toLevel="1" name="Head Accessory: WIT">
 		<!-- WIT +3. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<magicLevel>1</magicLevel>
@@ -1483,7 +1483,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9560" toLevel="1" name="Hair Accessory: Critical Rate">
+	<skill id="9560" toLevel="1" name="Head Accessory: P. Critical Rate">
 		<!-- Critical Rate for standard attacks +50. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1496,7 +1496,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9561" toLevel="1" name="Hair Accessory: Critical Damage">
+	<skill id="9561" toLevel="1" name="Head Accessory: Critical Damage">
 		<!-- Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1513,7 +1513,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9562" toLevel="1" name="Hair Accessory: P. Def.">
+	<skill id="9562" toLevel="1" name="Head Accessory: P. Def.">
 		<!-- P. Def. +5%. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1526,7 +1526,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9563" toLevel="1" name="Hair Accessory: M. Def.">
+	<skill id="9563" toLevel="1" name="Head Accessory: M. Def.">
 		<!-- M. Def. +5%. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1539,7 +1539,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9564" toLevel="1" name="Hair Accessory: P. Evasion">
+	<skill id="9564" toLevel="1" name="Head Accessory: P. Evasion">
 		<!-- P. Evasion +5. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1552,7 +1552,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9565" toLevel="1" name="Hair Accessory: P. Atk.">
+	<skill id="9565" toLevel="1" name="Head Accessory: P. Atk.">
 		<!-- P. Atk. +5%. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1565,7 +1565,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9566" toLevel="1" name="Hair Accessory: M. Atk.">
+	<skill id="9566" toLevel="1" name="Head Accessory: M. Atk.">
 		<!-- M. Atk. +10%. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
@@ -1578,7 +1578,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="9567" toLevel="1" name="Hair Accessory: P. Accuracy">
+	<skill id="9567" toLevel="1" name="Head Accessory: P. Accuracy">
 		<!-- P. Accuracy +5. -->
 		<icon>icon.etc_hairacc_pandent_i00</icon>
 		<operateType>P</operateType>
