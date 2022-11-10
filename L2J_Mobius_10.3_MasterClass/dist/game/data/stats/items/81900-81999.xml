@@ -63,6 +63,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
+		<set name="weight" val="10" />
 		<capsuled_items>
 			<item id="81696" min="1" max="1" chance="2" /> <!-- Unique Artifact Book Lv. 3 -->
 			<item id="80090" min="1" max="1" chance="2" /> <!-- Krishna Shaper -->
@@ -330,8 +331,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81923" name="Ultimate Death Knight B - Not Available" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -344,8 +343,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81924" name="Ultimate Death Knight C - Not Available" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -358,8 +355,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81925" name="Ultimate Death Knight D - Not Available" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -372,8 +367,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81926" name="Ultimate Death Knight E - Not Available" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -386,8 +379,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81927" name="New Year Gift" additionalName="Event" type="EtcItem">
 		<!-- A gift box for the New Year. Double-click to obtain various items (excluding Snowman's Icy Candy). -->
@@ -528,7 +519,6 @@
 		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
-		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="EnchantScrolls" />
 		<skills>

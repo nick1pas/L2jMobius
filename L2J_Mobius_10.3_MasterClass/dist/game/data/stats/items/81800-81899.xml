@@ -420,6 +420,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ItemSkills" />
 		<set name="immediate_effect" val="true" />
+		<set name="weight" val="30" />
 		<skills>
 			<skill id="39719" level="1" /> <!-- Otherworldly Atelia Refinery's Time Stone(Event) -->
 		</skills>
@@ -461,7 +462,7 @@
 	</item>
 	<item id="81833" name="TJ Coupon" additionalName="V1" type="EtcItem">
 		<!-- A Grace's gift to all warriors of the continent. Required to restore Angel Accessories and obtain Lulu's Gratitude Box. -->
-		<set name="icon" val="icon.ev_black_ticket" />
+		<set name="icon" val="icon.weapon_apprentices_spellbook_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
@@ -974,8 +975,6 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81886" name="Party Appearance Stone" additionalName="Event" type="EtcItem">
 		<!-- Changes the appearance of the entire armor to that of Party Costume. Modified armor can be restored to its original appearance with Restoration Stone. -->

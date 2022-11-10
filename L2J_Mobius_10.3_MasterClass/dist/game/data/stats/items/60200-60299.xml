@@ -1233,4 +1233,85 @@
 		<set name="is_tradeable" val="false" />
 		<set name="is_dropable" val="false" />
 	</item>
+	<item id="60291" name="Festival's Gift Box" additionalName="Event" type="EtcItem">
+		<!-- Double-click to obtain various items. There is a chance to obtain an additional reward for the Festival rankings. -->
+		<set name="icon" val="icon.special_cube_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60292" name="Swift Defense Cookie Pack" type="EtcItem">
+		<!-- Double-click to obtain Swift Defense Cookie (50 pcs.).\n\nNote!\nReceived cookies cannot be traded. -->
+		<set name="icon" val="icon.event_six_party_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60293" name="Lucky Craft Coupon" type="EtcItem">
+		<!-- Required for crafting various items during the Lucky Game. -->
+		<set name="icon" val="icon.bm_jewel_ticket" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60294" name="Collection - Kaliel's Blessing" type="EtcItem">
+		<!-- An item for the Kaliel's Blessing collection. -->
+		<set name="icon" val="icon.etc_paper_white_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60295" name="Cherry Petal" additionalName="Event" type="EtcItem">
+		<!-- Can be added to a collection to get additional bonuses or exchanged for various supplies via Lilly who can be found in any town. -->
+		<set name="icon" val="BranchIcon.icon.g_ev_sakura_piece_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60296" name="Kaliel's Blessed Treasure Chest" type="EtcItem">
+		<!-- Double-click to obtain various items (excluding Augmenting Stone: Kaliel's Bracelet). -->
+		<set name="icon" val="icon.sayha2017_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60297" name="Festival Coin" type="EtcItem">
+		<!-- A coin for participating in the Ranking Festival. Can be exchanged for various items through the Game Assistant. -->
+		<set name="icon" val="BranchIcon.Icon.g_bm_premium_coin_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60298" name="Earth Dragon's Treasures" type="EtcItem">
+		<!-- Double-click to obtain various items. -->
+		<set name="icon" val="icon.bm_dragon_present_3" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="60299" name="Earth Dragon's Small Treasure Chest" type="EtcItem">
+		<!-- Double-click to obtain Earth Dragon's Treasures (50 pcs.), Swift Attack Cookie (25 pcs.), Swift Defense Cookie (25 pcs.). -->
+		<set name="icon" val="icon.bm_ensoulbox_soul_of_undead" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
 </list>
