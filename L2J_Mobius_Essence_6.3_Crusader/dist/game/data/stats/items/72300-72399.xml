@@ -431,4 +431,254 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 	</item>
+	<item id="72372" name="Giant's Relic Pouch (Time-limited)" type="EtcItem">
+		<!-- Double-click to obtain one of the following items. -->
+		<set name="icon" val="icon.etc_pouch_red_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72373" name="Giant's Shining Relic Pouch (Time-limited)" type="EtcItem">
+		<!-- Double-click to obtain one of the following items. -->
+		<set name="icon" val="icon.etc_lucky_pocket_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72374" name="Lesser Giant's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to obtain one of the following items. There is a 50% chance to obtain Giran Seal. -->
+		<set name="icon" val="icon.bm_gold_relic_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72375" name="Kit: Lesser Giant's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to obtain the following. -->
+		<set name="icon" val="icon.present_of_destination_event" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72376" name="Einhasad's Blessing Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to obtain a random item from the list or one of various items. -->
+		<set name="icon" val="icon.bm_sayha_blessed_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72377" name="Package: Aden Scroll (1000 pcs.) (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_challenger_scroll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72378" name="Blessing of Growth" additionalName="Sealed" type="EtcItem">
+		<!-- Grants various effects and rewards when added to the time-limited event collection. -->
+		<set name="icon" val="BranchSys.icon.br_flag_of_bookmark_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72379" name="Alligator Island's Blessing Pack" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_treasure_box_i06" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72380" name="Anniversary Kit (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_pirate_battle_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72381" name="Festival's Gift Box (Time-limited)" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="BranchSys.br_gold_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72382" name="Boss Expedition Mark" additionalName="Sealed" type="EtcItem">
+		<!-- Given to those who defeated a field boss. <How to use> Special Craft -->
+		<set name="icon" val="icon.etc_ev_kalie_token" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72383" name="Companion Help Cube" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to obtain a reward for each stage. -->
+		<set name="icon" val="icon.etc_11th_event_group" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72384" name="Package: Companion Help Cube" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to obtain the following. -->
+		<set name="icon" val="icon.etc_golden_spice_blessed_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72385" name="Kit: Giran Seals and Relic of Protection (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.freya_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72386" name="Elmoreden Tower's Shining Supplies (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to obtain one of the following items. -->
+		<set name="icon" val="icon.etc_treasure_box_i08" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72387" name="Beach Swimsuit" additionalName="Sealed" type="Armor">
+		<!-- Beach Swimsuit -->
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_01" />
+		<set name="default_action" val="EQUIP" />
+		<set name="armor_type" val="HEAVY" />
+		<set name="bodypart" val="alldress" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72388" name="Transformation Scroll: Alluring Swimsuit (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Changes the armor appearance to that of Alluring Swimsuit. <Transformation effect> P. Atk. +100 M. Atk. +100 Atk. Spd. +10 Casting Spd. +10 P. Critical Rate +5 Skill Critical Rate +5% Acquired XP/ SP +20% Sayha's Grace Consumption -3% XP recovery fee -20% Duration: 60 min. Cooldown: 10 sec. The effect remains after death. -->
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72389" name="Transformation Scroll: Seductive Swimsuit (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Changes the armor appearance to that of Seductive Swimsuit. <Transformation effect> P. Atk. +100 M. Atk. +100 Atk. Spd. +10 Casting Spd. +10 P. Critical Rate +5 Skill Critical Rate +5% Acquired XP/ SP +20% Sayha's Grace Consumption -3% XP recovery fee -20% Duration: 60 min. Cooldown: 10 sec. The effect remains after death. -->
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_03" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72390" name="Transformation Scroll: Beach Swimsuit (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Changes the armor appearance to that of Beach Swimsuit. <Transformation effect> P. Atk. +100 M. Atk. +100 Atk. Spd. +10 Casting Spd. +10 P. Critical Rate +5 Skill Critical Rate +5% Acquired XP/ SP +20% Sayha's Grace Consumption -3% XP recovery fee -20% Duration: 60 min. Cooldown: 10 sec. The effect remains after death. -->
+		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72391" name="Cool Summer Slushie (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Applies a buff when used. <Buff effect> Acquired XP/ SP +10% P. Atk./ M. Atk./ P. Def./ M. Def. +100 - Duration: 20 min. - Cooldown: 1 min. - The effect remains after death. -->
+		<set name="icon" val="BranchSys3.icon1.g_ev_sweet_icewater" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72392" name="NCOIN" type="EtcItem">
+		<set name="icon" val="BranchIcon.icon.g_pass_advance_premium_00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72393" name="NCOIN" type="EtcItem">
+		<set name="icon" val="BranchIcon.icon.g_pass_hunting_premium_00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CRYSTAL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72394" name="Premier Doll Pack Lv. 1 (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_pi_gift_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72395" name="Premier Coin (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Can be exchanged for various items through the Game Assistant. -->
+		<set name="icon" val="BranchIcon.icon.g_ev_l2coin_ncw_00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="72396" name="Season Pass Bonus (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Applies a buff when used. <Buff effect> All stats +1 P. Atk./ M. Atk./ P. Def./ M. Def. +50 Max HP/ MP/ CP +100 Acquired XP/ SP +5% Duration: 30 min. Cooldown: 1 min. The effect remains after death. -->
+		<set name="icon" val="icon.super_elixir_potion" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
 </list>

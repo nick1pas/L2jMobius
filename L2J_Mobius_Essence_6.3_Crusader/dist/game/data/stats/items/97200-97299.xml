@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="97200" name="Glorious Warrior's Ability Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -344,6 +344,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ItemSkills" />
+		<set name="weight" val="30" />
 		<cond addName="1" msgId="113">
 			<player flyMounted="false" />
 		</cond>
@@ -364,6 +365,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ItemSkills" />
+		<set name="weight" val="30" />
 		<cond addName="1" msgId="113">
 			<player flyMounted="false" />
 		</cond>
@@ -891,6 +893,36 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
+	<item id="97270" name="Giran Seal Pack - 56 pcs. (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.freya_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97271" name="Giran Seal Pack - 111 pcs. (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.freya_box_i01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97272" name="Giran Seal Pack - 294 pcs. (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.freya_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
 	<item id="97273" name="+2 ~ +5 Circlet of Hero Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_readybox_gold" />
@@ -901,5 +933,292 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+	</item>
+	<item id="97274" name="Scroll: Enchant Ancient Weapon (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Enchant scroll exclusively for Ancient Weapon. The maximum enchantment level is +25. -->
+		<set name="icon" val="icon.yogi_scroll_of_enchant_weapon_grade_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97275" name="Ancient Weapon (Time-limited)" additionalName="Sealed" type="Weapon">
+		<!-- Enchanted to +10 and higher, can be exchanged for special items in the special craft menu. To enchant it, use Scroll: Enchant Ancient Weapon. The special craft exchange is available when enchant value is +10 or higher. -->
+		<set name="icon" val="icon.weapon_pasis_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="SWORD" />
+		<set name="bodypart" val="lhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="100" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<stats>
+			<stat type="pAtk">10</stat>
+			<stat type="mAtk">10</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">40</stat>
+		</stats>
+	</item>
+	<item id="97276" name="Rare Accessory Challenge Points +20 (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Use to gain 20 challenge points to enchant rare accessories. -->
+		<set name="icon" val="icon.ench_challnege_point_rare_acc_ticket" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97277" name="Talisman Challenge Points +20 (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Not used. -->
+		<set name="icon" val="icon.ench_challnege_point_tallisman_ticket" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97278" name="Special Equipment Challenge Points +20 (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Not used. -->
+		<set name="icon" val="icon.ench_challnege_point_bm_ticket" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97279" name="Ancient Relic Fragment (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Not used. -->
+		<set name="icon" val="icon.festival_key_piece" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97280" name="Pack of Seals (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_main_i01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97281" name="Kit: Pack of Seals (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.present_of_destination_event" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97282" name="Spellbook Fragment (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Required for creating sealed Spellbook: Expanded Potential of Dyes. <How to use> Special craft - Giran Seals -->
+		<set name="icon" val="icon.letter_piece" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97283" name="Jewelry Box Lv. 2 (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97284" name="Doll Pack Lv. 1" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_sayha_gold_present" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97285" name="Boss' Weapon Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.zariche_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97286" name="+5 Frost Lord's Weapon Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_dragon_present_5" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97287" name="+5 Armor of Protection Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_hero_treasure_box_silver" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97288" name="+9 ~ +10 Dragon Belt Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_readybox_bronze" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97289" name="+9 ~ +10 Talisman of Eva Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_pirate_treasure_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97290" name="+9 ~ +10 Talisman of Authority Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_silver_lure_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97291" name="Ancient Weapon Enchantment Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_hero_treasure_box_blue" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97292" name="+2 Rare Accessory Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.npoint_earthworm_30day_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97293" name="For monsters_Antharas' Lair_Devil Spearshooter - Not Available" type="Weapon">
+		<set name="icon" val="icon.weapon_monster_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="weapon_type" val="BLUNT" />
+		<set name="bodypart" val="lrhand" />
+		<set name="immediate_effect" val="true" />
+		<set name="crystal_type" val="D" />
+		<set name="material" val="FINE_STEEL" />
+		<set name="weight" val="1280" />
+		<set name="soulshots" val="1" />
+		<set name="spiritshots" val="1" />
+		<set name="is_magic_weapon" val="true" />
+		<stats>
+			<stat type="pAtk">41</stat>
+			<stat type="mAtk">43</stat>
+			<stat type="pAtkSpd">379</stat>
+			<stat type="randomDamage">10</stat>
+			<stat type="pAtkRange">80</stat>
+		</stats>
+	</item>
+	<item id="97294" name="Gold Trophy - Collections (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Given to the character who has completed the most collections in 2021. P. Atk. +50 M. Atk. +50 P. Def. +50 M. Def. +50 Acquired XP/ SP +10% HP Recovery Potions' Effect +5 Winner's Gift buff can be applied on nearby characters. <Effect> Sayha's Grace Sustain Acquired XP/ SP +10% Magic Lamp Charge +1% Enchant success rate +1% MP Consumption -1% HP Recovery Potions' Effect +5 <font color=ff6666>Note!</font> If there is an enemy within the area of effect, <font color=ff6666>their name becomes purple</font>. <font color=ff6666>Only for Heroes.</font> -->
+		<set name="icon" val="icon.ev_211215_gold_trophy" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97295" name="Gold Trophy - Missions (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Given to the character who has completed the most missions in 2021. P. Atk. +50 M. Atk. +50 P. Def. +50 M. Def. +50 Acquired XP/ SP +10% HP Recovery Potions' Effect +5 Winner's Gift buff can be applied on nearby characters. <Effect> Sayha's Grace Sustain Acquired XP/ SP +10% Magic Lamp Charge +1% Enchant success rate +1% MP Consumption -1% HP Recovery Potions' Effect +5 <font color=ff6666>Note!</font> If there is an enemy within the area of effect, <font color=ff6666>their name becomes purple</font>. <font color=ff6666>Only for Heroes.</font> -->
+		<set name="icon" val="icon.ev_211215_gold_trophy" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97296" name="Gold Trophy - Transcendent Instance Zones (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Given to the character who has become the best fighter of transcendent instance zones in 2021. P. Atk. +50 M. Atk. +50 P. Def. +50 M. Def. +50 Acquired XP/ SP +10% HP Recovery Potions' Effect +5 Winner's Gift buff can be applied on nearby characters. <Effect> Sayha's Grace Sustain Acquired XP/ SP +10% Magic Lamp Charge +1% Enchant success rate +1% MP Consumption -1% HP Recovery Potions' Effect +5 <font color=ff6666>Note!</font> If there is an enemy within the area of effect, <font color=ff6666>their name becomes purple</font>. <font color=ff6666>Only for Heroes.</font> -->
+		<set name="icon" val="icon.ev_211215_gold_trophy" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97297" name="Gold Trophy - Magic Lamp (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Given to the character who has obtained the most Red Lanterns of the Magic Lamp in 2021. P. Atk. +50 M. Atk. +50 P. Def. +50 M. Def. +50 Acquired XP/ SP +10% HP Recovery Potions' Effect +5 Winner's Gift buff can be applied on nearby characters. <Effect> Sayha's Grace Sustain Acquired XP/ SP +10% Magic Lamp Charge +1% Enchant success rate +1% MP Consumption -1% HP Recovery Potions' Effect +5 <font color=ff6666>Note!</font> If there is an enemy within the area of effect, <font color=ff6666>their name becomes purple</font>. <font color=ff6666>Only for Heroes.</font> -->
+		<set name="icon" val="icon.ev_211215_gold_trophy" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97298" name="Gold Trophy - Hero (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Given to the character who has obtained the most 'Olympiad Hero' titles in 2021. P. Atk. +50 M. Atk. +50 P. Def. +50 M. Def. +50 Acquired XP/ SP +10% HP Recovery Potions' Effect +5 Winner's Gift buff can be applied on nearby characters. <Effect> Sayha's Grace Sustain Acquired XP/ SP +10% Magic Lamp Charge +1% Enchant success rate +1% MP Consumption -1% HP Recovery Potions' Effect +5 <font color=ff6666>Note!</font> If there is an enemy within the area of effect, <font color=ff6666>their name becomes purple</font>. <font color=ff6666>Only for Heroes.</font> -->
+		<set name="icon" val="icon.ev_211215_gold_trophy" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_destroyable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97299" name="Lineage 2 Reward - Trophy (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- A reward for participating in various events of 2021. <How to use> You can obtain <font color=EEAA22>Lineage 2 Reward Pack (3 pcs.)</font> after completing the event collection. Once the collection is finished, you can use the remaining items in the special craft section. -->
+		<set name="icon" val="icon.ev_211215_silver_trophy" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
 	</item>
 </list>

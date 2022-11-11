@@ -112,7 +112,7 @@
 	</item>
 	<item id="94208" name="Scroll of Blessing" additionalName="Sealed" type="EtcItem">
 		<!-- When used, blesses your weapon. -->
-		<set name="icon" val="icon.bless_scroll" />
+		<set name="icon" val="icon.bless_scroll_wp" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="BLESS_ENCHT_WP" />
 		<set name="immediate_effect" val="true" />
@@ -142,7 +142,7 @@
 	</item>
 	<item id="94210" name="Life Stone Lv. 2 - Weapon" additionalName="Sealed" type="EtcItem">
 		<!-- Augments weapons. Adena required. -->
-		<set name="icon" val="icon.renewal_mineral_r" />
+		<set name="icon" val="icon.variation_mineral_wp" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -164,7 +164,7 @@
 	</item>
 	<item id="94212" name="Life Stone Lv. 2 - Armor" additionalName="Sealed" type="EtcItem">
 		<!-- Augments armor. Adena required. -->
-		<set name="icon" val="icon.renewal_mineral_r95" />
+		<set name="icon" val="icon.variation_mineral_am" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -695,7 +695,7 @@
 	</item>
 	<item id="94258" name="Package: Einhasad's Pendant Lv. 1" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to obtain the following items. -->
-		<set name="icon" val="BranchIcon.Icon.bm_pendant_pve_white" />
+		<set name="icon" val="Icon.bm_pendant_pve_white_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
@@ -710,7 +710,7 @@
 	</item>
 	<item id="94259" name="Package: Einhasad's Pendant Lv. 2" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to obtain the following items. -->
-		<set name="icon" val="BranchIcon.Icon.bm_pendant_pve_white" />
+		<set name="icon" val="Icon.bm_pendant_pve_white_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
@@ -725,7 +725,7 @@
 	</item>
 	<item id="94260" name="Package: Einhasad's Pendant Lv. 3" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to obtain the following items. -->
-		<set name="icon" val="BranchIcon.Icon.bm_pendant_pve_white" />
+		<set name="icon" val="Icon.bm_pendant_pve_white_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
@@ -740,7 +740,7 @@
 	</item>
 	<item id="94261" name="Package: Einhasad's Pendant Lv. 4" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to obtain the following items. -->
-		<set name="icon" val="BranchIcon.Icon.bm_pendant_pve_white" />
+		<set name="icon" val="Icon.bm_pendant_pve_white_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
@@ -755,7 +755,7 @@
 	</item>
 	<item id="94262" name="Package: Einhasad's Pendant Lv. 5" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to obtain the following items. -->
-		<set name="icon" val="BranchIcon.Icon.bm_pendant_pve_white" />
+		<set name="icon" val="Icon.bm_pendant_pve_white_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />

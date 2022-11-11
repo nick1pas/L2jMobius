@@ -1,0 +1,997 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
+	<item id="97400" name="Holiday Dumpling Soup (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- This kind of soup is used to lure tigers out. Use it to summon a Baby Tiger. -->
+		<set name="icon" val="icon.ricecake_soup_01" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97401" name="Baby Tiger's Token (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- It's a proof of Baby Tiger rescue from the Black Tiger's Fortress. Bring it to Black Tiger in the village to get the Thankful Tiger buff. -->
+		<set name="icon" val="icon.tiger_foot_stamp_01" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97402" name="Magpie Buff Pouch" additionalName="Sealed" type="EtcItem">
+		<!-- It's a reward for defeating monsters who inhabit Aden. <How to use> Add to a collection to get various buffs. -->
+		<set name="icon" val="icon.christmas_card_box2" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97403" name="Tiger Doll (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- It's a cute doll imbued with Black Tiger's power. <How to use> Add to a collection to get various buffs. -->
+		<set name="icon" val="icon.ev_tiger_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97404" name="Baium's Energy (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Required for creating various items through the Special Craft. -->
+		<set name="icon" val="icon.bm_highest_soul_of_undead" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97405" name="Baium's Energy Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_july_seven_park_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97406" name="Kit: Baium's Energy Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97407" name="Einhasad's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_special_jewelbox_lv4" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97408" name="Kit: Einhasad's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.present_of_destination_event" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97409" name="Package: Scroll of Blessing: Armor (Sealed) 10 pcs." additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bless_scroll_am" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97410" name="Doll Pack Lv. 2" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_sayha_gold_present" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97411" name="Package: +1 Talisman of Baium (Sealed)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.baium_talisman_new" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97412" name="Package: +2 Talisman of Baium (Sealed)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.baium_talisman_new" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97413" name="Package: +3 Talisman of Baium (Sealed)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.baium_talisman_new" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97414" name="+2 ~ +5 Talisman of Speed Pack" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_pirate_king_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="STEEL" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97415" name="Red Lantern (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- When used, XP +100,000,000, SP +2,700,000. Note! The item will be deleted after the scheduled maintenance. -->
+		<set name="icon" val="icon.r99_soul_stone_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97416" name="Purple Lantern (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- When used, XP +30,000,000, SP +810,000. Note! The item will be deleted after the scheduled maintenance. -->
+		<set name="icon" val="icon.r99_soul_stone_i05" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97417" name="Blue Lantern (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- When used, XP +10,000,000, SP +270,000. Note! The item will be deleted after the scheduled maintenance. -->
+		<set name="icon" val="icon.r99_soul_stone_i02" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97418" name="Green Lantern (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- When used, XP +5,000,000, SP +135,000. Note! The item will be deleted after the scheduled maintenance. -->
+		<set name="icon" val="icon.r99_soul_stone_i04" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97419" name="Rare Accessory Pack" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_gold_lure_special_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97420" name="Golden Tiger's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.sayha2017_box_i03" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97421" name="Black Tiger's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.sayha2017_box_i01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97422" name="Lucky Gift Pouch (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.christmas_card_box1" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97423" name="Christmas Card (Time-limited)" type="EtcItem">
+		<!-- With best wishes for 2022! <How to use> It shows a holiday decorated message full of warm wishes above the character's head. -->
+		<set name="icon" val="icon.ev_2018_xmas_letter" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97424" name="Elmoreden Tower's Time Stone (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Prolongs your session zone's raid for 60 min. <Hunting zone> Elmoreden Tower - World Hunting Zone -->
+		<set name="icon" val="icon.timezone_refill_oman_a_60" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97425" name="Extra Pass: Transcendent Instance Zone (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get an extra pass to a transcendent instance zone. Note! Can be used once a day outside of instance zones. Can only be used when the transcendent instance zone is on cooldown. -->
+		<set name="icon" val="icon.etc_ticket_red_i00" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97426" name="Hero's Trophy Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_mahum_coinbox" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97427" name="Kit: Hero's Trophy Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_orc_coinbox" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97428" name="Protection Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_hero_treasure_box_blue" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97429" name="Silver Protection Treasure Chest (Time-limited)" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_hero_treasure_box_silver" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97430" name="Golden Protection Treasure Chest (Time-limited)" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.event_hero_treasure_box_gold" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97431" name="Kit: Protection Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.present_of_destination_event" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97432" name="Scroll: Boost Pet's Attack" additionalName="Sealed" type="EtcItem">
+		<!-- Applies a buff to the pet when used. <Buff effect> Pet's P. Atk. +200 Pet's M. Atk. +200 Pet's Skill Power +2% Pet's satiety recovery +50% Duration: 20 min. Cooldown: 1 min. The effect disappears when a pet dies or is unsummoned. -->
+		<set name="icon" val="icon.pet_atk_scrl" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97433" name="Scroll: Boost Pet's Defense" additionalName="Sealed" type="EtcItem">
+		<!-- Applies a buff to the pet when used. <Buff effect> Pet's P. Def. +400 Pet's M. Def. +400 Pet's HP +500 Pet's HP Recovery Potions' Effect +50% Duration: 20 min. Cooldown: 1 min. The effect disappears when a pet dies or is unsummoned. -->
+		<set name="icon" val="icon.pet_def_scrl" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="price" val="30000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97434" name="Pet's Special HP Recovery Potion" additionalName="Sealed" type="EtcItem">
+		<!-- Momentarily recovers 240 HP of your pet. -->
+		<set name="icon" val="icon.pet_high_hp_potion" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="1" />
+		<set name="price" val="4000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97435" name="Package: Gorde's Flame Spear" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.weapon_r110_spear_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97436" name="Package: Gorde's Flame Spear (Sealed)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.weapon_r110_spear_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97437" name="Harnak Underground Labyrinth's Time Stone (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Prolongs your session zone's raid for 60 min. <Hunting zone> Harnak Underground Labyrinth -->
+		<set name="icon" val="icon.ev_220216_refill_60_harnak_limit" />
+		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97438" name="Einhasad's Protection (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Applies a buff when used. <Buff effect> Acquired XP +100% Acquired SP +100% Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>Note!</font> The Einhasad's Protection effect is triggered when using the item along with the following buffs: - Einhasad's Blessing Scroll - Dandy's Home Run Ball - Dandy's Golden Ball - Giran Seal -->
+		<set name="icon" val="icon.etc_dragons_blood_i03" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97439" name="Blessed Augmenting Stone: Weapon" type="EtcItem">
+		<!-- A blessed stone. Augments weapons. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_wp" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="45000000" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97440" name="Blessed Augmenting Stone: Armor" type="EtcItem">
+		<!-- A blessed stone. Augments armor/ shield/ sigil. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_am" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="13500000" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97441" name="Blessed Augmenting Stone: Circlet" type="EtcItem">
+		<!-- A blessed stone. Augments Circlet of Hero and some other head accessories. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_circlet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="15000000" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97442" name="Blessed Augmenting Stone: Accessory" type="EtcItem">
+		<!-- A blessed stone. Required for augmenting accessories of A-grade or higher, and Boss'/ Spirit/ Insolence/ Dragon Valley/ Hellbound accessories. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_acc" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="15000000" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97443" name="Blessed Augmenting Stone: Shield/ Sigil" type="EtcItem">
+		<set name="icon" val="Icon.variation_mineral_high_sigil" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="15000000" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97444" name="Blessed Augmenting Stone: Weapon" additionalName="Sealed" type="EtcItem">
+		<!-- A blessed stone. Augments weapons. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_wp" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="45000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97445" name="Blessed Augmenting Stone: Armor" additionalName="Sealed" type="EtcItem">
+		<!-- A blessed stone. Augments armor/ shield/ sigil. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_am" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="13500000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97446" name="Blessed Augmenting Stone: Circlet" additionalName="Sealed" type="EtcItem">
+		<!-- A blessed stone. Augments Circlet of Hero and some other head accessories. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_circlet" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="15000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97447" name="Blessed Augmenting Stone: Accessory" additionalName="Sealed" type="EtcItem">
+		<!-- A blessed stone. Required for augmenting accessories of A-grade or higher, and Boss'/ Spirit/ Insolence/ Dragon Valley/ Hellbound accessories. Adena required. -->
+		<set name="icon" val="icon.variation_mineral_high_acc" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="15000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97448" name="Blessed Augmenting Stone: Shield/ Sigil" additionalName="Sealed" type="EtcItem">
+		<set name="icon" val="Icon.variation_mineral_high_sigil" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LIQUID" />
+		<set name="weight" val="2" />
+		<set name="price" val="15000000" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97449" name="Scroll: Enchant Talisman of Baium" additionalName="Sealed" type="EtcItem">
+		<!-- Required to enchant Talisman of Baium. The maximum enchant value is +5. In case of failure the item disappears. -->
+		<set name="icon" val="icon.baium_talisman_new_scroll" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97450" name="Shining Seal Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.freya_box_i01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97451" name="Kit: Shining Seal Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.freya_box_i02" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97452" name="Heavenly Cloak" additionalName="Sealed" type="Armor">
+		<!-- Can be enchanted with Scroll: Enchant Cloak. Depending on enchant value, special effects are enabled. -->
+		<set name="icon" val="icon.nobless_cloak_i00" />
+		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="back" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="CLOTH" />
+		<set name="weight" val="220" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+		<stats>
+			<stat type="pDef">30</stat>
+		</stats>
+	</item>
+	<item id="97453" name="Spellbook: Overwhelming Power" type="EtcItem">
+		<!-- A spellbook for learning the Overwhelming Power skill. <Classes> Doombringer <Skill effect> Increases P. Atk/ P. Skill Critical Rate/ P. Skill Critical Damage/ P. Skill Power/ Max HP. Applies the Overwhelming Force effect for 10 sec. upon skill use. While Overwhelming Force is active, there is a 100% chance to trigger ultimate skills, also an additional attack is delivered upon Enuma Elish use. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97454" name="Spellbook: Overwhelming Power" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Overwhelming Power skill. <Classes> Doombringer <Skill effect> Increases P. Atk/ P. Skill Critical Rate/ P. Skill Critical Damage/ P. Skill Power/ Max HP. Applies the Overwhelming Force effect for 10 sec. upon skill use. While Overwhelming Force is active, there is a 100% chance to trigger ultimate skills, also an additional attack is delivered upon Enuma Elish use. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97455" name="Spellbook: Soul Mark" type="EtcItem">
+		<!-- A spellbook for learning the Soul Mark skill. <Classes> Doombringer <Skill effect> Attacks the target with the sword, and applies a Kamael's Mark on it. Once the marked target is attacked, interrupts MP Drain and decreases M. Skill Power. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97456" name="Spellbook: Soul Mark" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Soul Mark skill. <Classes> Doombringer <Skill effect> Attacks the target with the sword, and applies a Kamael's Mark on it. Once the marked target is attacked, interrupts MP Drain and decreases M. Skill Power. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97457" name="Spellbook: Powerful Disarm" type="EtcItem">
+		<!-- A spellbook for learning the Powerful Disarm skill. <Class> Doombringer <Skill effect> Enhances Disarm turning it into Efficient Disarm, increases basic attack rate and decreases cooldown. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97458" name="Spellbook: Powerful Disarm" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Powerful Disarm skill. <Class> Doombringer <Skill effect> Enhances Disarm turning it into Efficient Disarm, increases basic attack rate and decreases cooldown. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97459" name="Spellbook: Soul Guard Lv. 3" type="EtcItem">
+		<!-- A spellbook for learning the Soul Guard Lv. 3 skill. <Classes> Doombringer <Skill effect> Significantly increases Ranged Weapon Resistance and P./ M. Def. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97460" name="Spellbook: Soul Guard Lv. 3" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Soul Guard Lv. 3 skill. <Classes> Doombringer <Skill effect> Significantly increases Ranged Weapon Resistance and P./ M. Def. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97461" name="Spellbook: Shock Impact" type="EtcItem">
+		<!-- A spellbook for learning the Shock Impact skill. <Classes> Doombringer <Skill effect> Stuns and increases Stun Atk. Rate upon Soul Impulse skill use. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97462" name="Spellbook: Shock Impact" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Shock Impact skill. <Classes> Doombringer <Skill effect> Stuns and increases Stun Atk. Rate upon Soul Impulse skill use. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97463" name="Spellbook: Death Pain" type="EtcItem">
+		<!-- A spellbook for learning the Death Pain skill. <Class> Doombringer <Skill effect> With a certain chance, increases All Critical Damage against the target after an attack. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97464" name="Spellbook: Death Pain" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Death Pain skill. <Class> Doombringer <Skill effect> With a certain chance, increases All Critical Damage against the target after an attack. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97465" name="Spellbook: Leopold" type="EtcItem">
+		<!-- A spellbook for learning the Leopold skill. <Class> Soul Hound <Skill effect> Summons the ancient weapon called Leopold, and attacks the target. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97466" name="Spellbook: Leopold" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Leopold skill. <Class> Soul Hound <Skill effect> Summons the ancient weapon called Leopold, and attacks the target. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97467" name="Spellbook: Resonance" type="EtcItem">
+		<!-- A spellbook for learning the Resonance skill. <Class> Soul Hound <Skill effect> Soul Steal turns into Soul Snatch. Each time Soul Snatch is used, Soul Resonance stacks (up to 5 times). -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97468" name="Spellbook: Resonance" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Resonance skill. <Class> Soul Hound <Skill effect> Soul Steal turns into Soul Snatch. Each time Soul Snatch is used, Soul Resonance stacks (up to 5 times). -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97469" name="Spellbook: Fragarach" type="EtcItem">
+		<!-- A spellbook for learning the Fragarach skill. <Class> Soul Hound <Skill effect> Summons a sword of light that protects the character, attacks and paralyzes the enemy. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97470" name="Spellbook: Fragarach" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Fragarach skill. <Class> Soul Hound <Skill effect> Summons a sword of light that protects the character, attacks and paralyzes the enemy. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97471" name="Spellbook: Lightning Tornado" type="EtcItem">
+		<!-- A spellbook for learning the Lightning Tornado skill. <Class> Soul Hound <Skill effect> Once the Soul Spark skill is used, summons a lightning bolt that delivers an additional attack. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97472" name="Spellbook: Lightning Tornado" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Lightning Tornado skill. <Class> Soul Hound <Skill effect> Once the Soul Spark skill is used, summons a lightning bolt that delivers an additional attack. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97473" name="Spellbook: Lightning Mastery" type="EtcItem">
+		<!-- A spellbook for learning the Lightning Mastery skill. <Class> Soul Hound <Skill effect> The Lightning skill turns into Lightning Squall. Once the skill is used, it deals additional damage and increases Paralysis Atk. Rate. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97474" name="Spellbook: Lightning Mastery" additionalName="Sealed" type="EtcItem">
+		<!-- A spellbook for learning the Lightning Mastery skill. <Class> Soul Hound <Skill effect> The Lightning skill turns into Lightning Squall. Once the skill is used, it deals additional damage and increases Paralysis Atk. Rate. -->
+		<set name="icon" val="icon.etc_magic_book_black_i00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97475" name="Jewel Box Lv. 3" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97476" name="Battle Box Lv. 4" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_treasure_box_i04" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97477" name="Piglet-Bank Lv. 2" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_piggy_bank" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97478" name="Piglet-Bank Lv. 3" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.etc_piggy_bank" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97479" name="Behemoth Doll Lv. 1" additionalName="Sealed" type="EtcItem">
+		<!-- <Behemoth Doll's Sorcery Lv. 1> Damage Decrease Ignore +100 Skill Critical Damage +3% Hold Resistance +5% Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_behemoth_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97480" name="Behemoth Doll Lv. 2" type="EtcItem">
+		<!-- <Behemoth Doll's Sorcery Lv. 2> Damage Decrease Ignore +200 Skill Critical Damage +5% Hold Resistance +10% Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_behemoth_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97481" name="Behemoth Doll Lv. 3" type="EtcItem">
+		<!-- <Behemoth Doll's Sorcery Lv. 3> Damage Decrease Ignore +300 Skill Critical Damage +10% Hold Resistance +20% Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_behemoth_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97482" name="Behemoth Doll Lv. 4" type="EtcItem">
+		<!-- <Behemoth Doll's Sorcery Lv. 4> Damage Decrease Ignore +400 Skill Critical Damage +15% Hold Resistance +20% Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_behemoth_doll_00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97483" name="Behemoth Doll Lv. 5" type="EtcItem">
+		<!-- <Behemoth Doll's Sorcery Lv. 5> Damage Decrease Ignore +500 Skill Critical Damage +20% Hold Resistance +20% Boosts stats when in inventory. -->
+		<set name="icon" val="icon.bm_behemoth_doll_01" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97484" name="Glakias Doll Lv. 1" additionalName="Sealed" type="EtcItem">
+		<!-- <Glakias Doll's Sorcery Lv. 1> All weapon P. Atk. +5 All weapon M. Atk. +5 Soulshot damage +2% Spiritshot damage +2% Recovers 50 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_glacies_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97485" name="Glakias Doll Lv. 2" type="EtcItem">
+		<!-- <Glakias Doll's Sorcery Lv. 2> All weapon P. Atk. +10 All weapon M. Atk. +10 Soulshot damage +5% Spiritshot damage +5% Recovers 100 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_glacies_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97486" name="Glakias Doll Lv. 3" type="EtcItem">
+		<!-- <Glakias Doll's Sorcery Lv. 3> All weapon P. Atk. +15 All weapon M. Atk. +15 Soulshot damage +8% Spiritshot damage +8% Recovers 150 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_glacies_doll" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97487" name="Glakias Doll Lv. 4" type="EtcItem">
+		<!-- <Glakias Doll's Sorcery Lv. 4> All weapon P. Atk. +20 All weapon M. Atk. +20 Soulshot damage +10% Spiritshot damage +10% Recovers 200 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_glacies_doll_00" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97488" name="Glakias Doll Lv. 5" type="EtcItem">
+		<!-- <Glakias Doll's Sorcery Lv. 5> All weapon P. Atk. +35 All weapon M. Atk. +35 Soulshot damage +15% Spiritshot damage +15% Recovers 300 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory.Can be upgraded through compounding. -->
+		<set name="icon" val="icon.bm_glacies_doll_01" />
+		<set name="default_action" val="NONE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="PAPER" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_freightable" val="true" />
+	</item>
+	<item id="97489" name="Package: Behemoth Doll Lv. 1" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_behemoth_doll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97490" name="Package: Behemoth Doll Lv. 2" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_behemoth_doll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97491" name="Package: Behemoth Doll Lv. 3" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_behemoth_doll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97492" name="Package: Behemoth Doll Lv. 4" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_behemoth_doll_00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97493" name="Package: Behemoth Doll Lv. 5" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_behemoth_doll_01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97494" name="Package: Glakias Doll Lv. 1" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_glacies_doll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97495" name="Package: Glakias Doll Lv. 2" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_glacies_doll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97496" name="Package: Glakias Doll Lv. 3" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_glacies_doll" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97497" name="Package: Glakias Doll Lv. 4" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_glacies_doll_00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97498" name="Package: Glakias Doll Lv. 5" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_glacies_doll_01" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+	<item id="97499" name="Hero's Relic (Time-limited)" additionalName="Sealed" type="EtcItem">
+		<!-- Double-click to get more information about the contents. -->
+		<set name="icon" val="icon.bm_pirate_battle_box" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_sellable" val="false" />
+	</item>
+</list>

@@ -1196,7 +1196,7 @@
 	</item>
 	<item id="94852" name="TJ Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Can be used for recovering items destroyed after a failed enchant attempt (they will be recovered as <font color=EEAA22>sealed</font> items) or for exchanging for <font color=EEAA22>Stable Enchant Scrolls</font>. <font color=bbaa88><Items to recover></font> - Weapons/ armor of B-grade and higher - Boss' accessories - Agathion Spirits and Agathion Joy - Talisman of Aden/ Speed/ Eva/ Authority - Circlet of Hero - Cloak of Protection - Blessed/ common Dragon Belt <font color=bbaa88><Items to buy></font> - Double-click to see the list of available items.</font> -->
-		<set name="icon" val="icon.ev_black_ticket" />
+		<set name="icon" val="icon.ev_prestige_ticket" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="is_tradable" val="false" />
@@ -1602,7 +1602,6 @@
 		<set name="icon" val="icon.etc_aidcharm_cancel_valbreath_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
