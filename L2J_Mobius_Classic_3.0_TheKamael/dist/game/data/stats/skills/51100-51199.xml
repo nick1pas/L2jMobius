@@ -431,7 +431,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="51152" toLevel="2" name="Santa Girl's Gift">
-		<!-- Santa Girl's Gift. You can receive a Santa Girl's Gift Pouch once the buff expires. Songs/ dances skills' MP Consumption -15%. Acquired XP/ SP +20%.\n<Warning> If your character dies at the time the item is given, you cannot receive the gift. You also cannot receive the gift if there is no empty slot in your inventory. -->
+		<!-- Santa Girl's Gift. You can receive a Santa Girl's Gift Pouch once the buff expires. Songs/ dances skills' MP Consumption -15%. Acquired XP/ SP +20%. <Warning> If your character dies at the time the item is given, you cannot receive the gift. You also cannot receive the gift if there is no empty slot in your inventory. -->
 		<icon>BranchSys.Icon.Br_santa_gift_click_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -677,7 +677,7 @@
 		<mpConsume>73</mpConsume>
 	</skill>
 	<skill id="51183" toLevel="1" name="Dragon Berserker">
-		<!-- Transforms into Dragon Berserker. For 20 min., Acquired XP +30%, P. Atk. +15%, M. Atk. +15%,P./ M. Critical Damage +10%. Cooldown: 2 h. Transformation effect remais after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance P. Atk. +50%, M. Atk. +50%, Atk. Spd. +50%, Casting Spd. +50%, Damage Reflection +15%. -->
+		<!-- Transforms into Dragon Berserker. For 20 min., Acquired XP +30%, P. Atk. +15%, M. Atk. +15%,P./ M. Critical Damage +10%. Cooldown: 2 h. Transformation effect remais after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance P. Atk. +50%, M. Atk. +50%, Atk. Spd. +50%, Casting Spd. +50%, Damage Reflection +15%. -->
 		<icon>icon.bm2018_dragon_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -685,7 +685,7 @@
 		<reuseDelayGroup>51183</reuseDelayGroup>
 	</skill>
 	<skill id="51184" toLevel="1" name="Ninja Assassin">
-		<!-- Transforms into Ninja Assassin. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death.\n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance cancels the target of an random enemy with 100% chance. -->
+		<!-- Transforms into Ninja Assassin. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance cancels the target of an random enemy with 100% chance. -->
 		<icon>icon.bm2018_ninja_i01</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -722,14 +722,14 @@
 		</effects>
 	</skill>
 	<skill id="51185" toLevel="1" name="Blue Musketeer">
-		<!-- Transforms into Blue Musketeer. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance stuns for 5 sec. -->
+		<!-- Transforms into Blue Musketeer. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance stuns for 5 sec. -->
 		<icon>icon.bm2018_bluemusketeer_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>10800000</reuseDelay>
 	</skill>
 	<skill id="51186" toLevel="1" name="Valkyrie">
-		<!-- Transforms into Valkyrie. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance paralyses for 5 sec. -->
+		<!-- Transforms into Valkyrie. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance paralyses for 5 sec. -->
 		<icon>icon.bm2018_valkyrie_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -737,14 +737,14 @@
 		<reuseDelayGroup>51183</reuseDelayGroup>
 	</skill>
 	<skill id="51187" toLevel="1" name="Wild Wolf">
-		<!-- Transforms into Wild Wolf. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance decreases enemy's P. Def. by 23%. -->
+		<!-- Transforms into Wild Wolf. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance decreases enemy's P. Def. by 23%. -->
 		<icon>icon.bm2018_barbarian_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>10800000</reuseDelay>
 	</skill>
 	<skill id="51188" toLevel="1" name="Pirate">
-		<!-- Transforms into Pirate. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance P./ M. Atk. +10%. -->
+		<!-- Transforms into Pirate. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance P./ M. Atk. +10%. -->
 		<icon>icon.bm2018_pirate_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -752,7 +752,7 @@
 		<reuseDelayGroup>51183</reuseDelayGroup>
 	</skill>
 	<skill id="51189" toLevel="1" name="Purple Cowboy">
-		<!-- Transforms into Purple Cowboy. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance strikes the target with 3939 Power added to P. Atk. -->
+		<!-- Transforms into Purple Cowboy. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance strikes the target with 3939 Power added to P. Atk. -->
 		<icon>icon.bm2018_cowboy_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -760,7 +760,7 @@
 		<reuseDelayGroup>51183</reuseDelayGroup>
 	</skill>
 	<skill id="51190" toLevel="1" name="High Priest">
-		<!-- Transforms into High Priest. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance restores 1000 HP and 200 MP of party members. -->
+		<!-- Transforms into High Priest. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance restores 1000 HP and 200 MP of party members. -->
 		<icon>icon.bm2018_healer_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -768,14 +768,14 @@
 		<reuseDelayGroup>51183</reuseDelayGroup>
 	</skill>
 	<skill id="51191" toLevel="1" name="Blood Noblesse">
-		<!-- Transforms into Blood Noblesse. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance strikes the target with 145 Power added to M. Atk. -->
+		<!-- Transforms into Blood Noblesse. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance strikes the target with 145 Power added to M. Atk. -->
 		<icon>icon.bm2018_rednoblesse_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>10800000</reuseDelay>
 	</skill>
 	<skill id="51192" toLevel="1" name="White Noblesse">
-		<!-- Transforms into White Noblesse. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance decreases enemy's M. Def. by 23%. -->
+		<!-- Transforms into White Noblesse. For 20 min., Acquired XP +20%, P. Atk. +10%, M. Atk. +10%, P./ M. Critical Damage +5%. Cooldown: 3 h. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance decreases enemy's M. Def. by 23%. -->
 		<icon>icon.bm2018_whitenoblesse_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -783,49 +783,49 @@
 		<reuseDelayGroup>51183</reuseDelayGroup>
 	</skill>
 	<skill id="51193" toLevel="1" name="Dragon Berserker Energy">
-		<!-- Grants the power of Dragon Berserker. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance P. Atk. +50%, M. Atk. +50%, Atk. Spd. +50%, Casting Spd. +50%, Damage Reflection +15%. -->
+		<!-- Grants the power of Dragon Berserker. For 20 min. Acquired XP +20%, P. Atk. +10%, M. Atk. +10%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance P. Atk. +50%, M. Atk. +50%, Atk. Spd. +50%, Casting Spd. +50%, Damage Reflection +15%. -->
 		<icon>icon.bm2018_dragon_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="51194" toLevel="1" name="Ninja Assassin Energy">
-		<!-- Grants the power of Ninja Assassin. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance cancels the target of an random enemy with 100% chance. -->
+		<!-- Grants the power of Ninja Assassin. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance cancels the target of an random enemy with 100% chance. -->
 		<icon>icon.bm2018_ninja_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="51195" toLevel="1" name="Blue Musketeer Energy">
-		<!-- Grants the power of Blue Musketeer. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance stuns for 5 sec. -->
+		<!-- Grants the power of Blue Musketeer. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance stuns for 5 sec. -->
 		<icon>icon.bm2018_bluemusketeer_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="51196" toLevel="1" name="Valkyrie Energy">
-		<!-- Grants the power of Valkyrie. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance paralyses for 5 sec. -->
+		<!-- Grants the power of Valkyrie. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance paralyses for 5 sec. -->
 		<icon>icon.bm2018_valkyrie_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="51197" toLevel="1" name="Wild Wolf Energy">
-		<!-- Grants the power of Wild Wolf. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance decreases enemy's P. Def. by 23%. -->
+		<!-- Grants the power of Wild Wolf. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance decreases enemy's P. Def. by 23%. -->
 		<icon>icon.bm2018_barbarian_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="51198" toLevel="1" name="Pirate Energy">
-		<!-- Grants the power of Pirate. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance P./ M. Atk. +10%. -->
+		<!-- Grants the power of Pirate. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance P./ M. Atk. +10%. -->
 		<icon>icon.bm2018_pirate_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="51199" toLevel="1" name="Purple Cowboy Energy">
-		<!-- Grants the power of Purple Cowboy. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. \n\n<Special ability>\nDuring transformation in case of successful attack or skill use with a certain chance strikes the target with 3939 Power added to P. Atk. -->
+		<!-- Grants the power of Purple Cowboy. For 20 min. Acquired XP +10%, P. Atk. +7%, M. Atk. +7%. Cooldown: 1 min. Transformation effect remains after death. <Special ability> During transformation in case of successful attack or skill use with a certain chance strikes the target with 3939 Power added to P. Atk. -->
 		<icon>icon.bm2018_cowboy_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>

@@ -416,7 +416,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60345" name="Dream Spell Potion" additionalName="Event" type="EtcItem">
-		<!-- When used, acquired XP/ SP +10%, CHA +2, P./ M. Def. +15% for 30 min.\n\nThe effect is removed upon entering the Olympiad or the Ceremony of Chaos. -->
+		<!-- When used, acquired XP/ SP +10%, CHA +2, P./ M. Def. +15% for 30 min. The effect is removed upon entering the Olympiad or the Ceremony of Chaos. -->
 		<set name="icon" val="icon.elixir" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -434,7 +434,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60347" name="Novice Companion Charm (30-day)" type="Armor">
-		<!-- Summons Agathion Novice Companion for 30 d. Cannot be used in the Olympiad.\n<Item skill>\nCompanion's Magic: For 30 min., Max HP/ MP/ CP +30%, P. Atk./ M. Atk./ P. Def./ M. Def. +30%, Atk. Spd./ Casting Spd. +10%, Speed +20, Attribute Attack/ Resistance +100, damage +10%, P./ M. Skill Power +10%, acquired XP/ SP +30%, received damage -10%, Skill MP Consumption -15%.\nThe effect remains after death. Does not stack with Art of Seduction and Pa'agrio's Blessing. -->
+		<!-- Summons Agathion Novice Companion for 30 d. Cannot be used in the Olympiad. <Item skill> Companion's Magic: For 30 min., Max HP/ MP/ CP +30%, P. Atk./ M. Atk./ P. Def./ M. Def. +30%, Atk. Spd./ Casting Spd. +10%, Speed +20, Attribute Attack/ Resistance +100, damage +10%, P./ M. Skill Power +10%, acquired XP/ SP +30%, received damage -10%, Skill MP Consumption -15%. The effect remains after death. Does not stack with Art of Seduction and Pa'agrio's Blessing. -->
 		<set name="icon" val="icon.bm_agathion_base" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -446,7 +446,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60348" name="Companion Help Cube" type="EtcItem">
-		<!-- Double-click to obtain Emperor's Special Cocktail (3 pcs.). every day, except as listed below.\n1 d. - Novice Companion Charm (30-day)\n10 d. - Honey Dark Beer (50 pcs.)\n20 d. - Glowing Dragon's Attribute Potion (50 pcs.)\n30 d. - Shining Nevit's Gold Hourglass (50 pcs.)\n(Can be used only once a day.) -->
+		<!-- Double-click to obtain Emperor's Special Cocktail (3 pcs.). every day, except as listed below. 1 d. - Novice Companion Charm (30-day) 10 d. - Honey Dark Beer (50 pcs.) 20 d. - Glowing Dragon's Attribute Potion (50 pcs.) 30 d. - Shining Nevit's Gold Hourglass (50 pcs.) (Can be used only once a day.) -->
 		<set name="icon" val="icon.etc_11th_event_group" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -663,7 +663,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60368" name="Season Pass Bonus" type="EtcItem">
-		<!-- For 30 min., acquired XP/ SP +5%, P. Atk./ M. Atk./ P. Def./ M. Def. +5%, Vitality bonus +5%, all stats +1, Attribute Attack/ Resistance +30.\n\nThe effect is removed when entering the Olympiad or the Ceremony of Chaos. -->
+		<!-- For 30 min., acquired XP/ SP +5%, P. Atk./ M. Atk./ P. Def./ M. Def. +5%, Vitality bonus +5%, all stats +1, Attribute Attack/ Resistance +30. The effect is removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<set name="icon" val="icon.super_elixir_potion" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -767,7 +767,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60380" name="Anakim's Blessing Rune" additionalName="30-day" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Anakim's Blessing.\nWhen in inventory, PvE damage +10%. -->
+		<!-- Can only be crafted on servers bound by Anakim's Blessing. When in inventory, PvE damage +10%. -->
 		<set name="icon" val="icon.bm_freya_bloody_rune" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -778,7 +778,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="60381" name="Soulshot Supplies" additionalName="Event" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Anakim's Blessing.\nDouble-click to obtain 30,000 R-grade Soulshots. -->
+		<!-- Can only be crafted on servers bound by Anakim's Blessing. Double-click to obtain 30,000 R-grade Soulshots. -->
 		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -788,7 +788,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60382" name="Spiritshot Supplies" additionalName="Event" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Anakim's Blessing.\nDouble-click to obtain 30,000 Blessed R-grade Spiritshots. -->
+		<!-- Can only be crafted on servers bound by Anakim's Blessing. Double-click to obtain 30,000 Blessed R-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -798,7 +798,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60383" name="Anakim's Growth Support Box" additionalName="Event" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Anakim's Blessing.\nDouble-click to obtain Emperor's Special Cocktail (12 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Honey Dark Beer (24 pcs.). -->
+		<!-- Can only be crafted on servers bound by Anakim's Blessing. Double-click to obtain Emperor's Special Cocktail (12 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Honey Dark Beer (24 pcs.). -->
 		<set name="icon" val="icon.new_user_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -808,7 +808,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60384" name="Cool Summer Slushie" additionalName="Event" type="EtcItem">
-		<!-- When used, acquired XP/ SP +10%, P./ M. Atk. +10% for 30 min.\n\nThe effect is removed upon entering the Olympiad or the Ceremony of Chaos. -->
+		<!-- When used, acquired XP/ SP +10%, P./ M. Atk. +10% for 30 min. The effect is removed upon entering the Olympiad or the Ceremony of Chaos. -->
 		<set name="icon" val="BranchSys3.icon1.g_ev_sweet_icewater" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />

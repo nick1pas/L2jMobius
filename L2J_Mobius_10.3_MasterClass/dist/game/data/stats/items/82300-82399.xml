@@ -78,7 +78,7 @@
 		</skills>
 	</item>
 	<item id="82307" name="Gran Kain's Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- For R-grade weapons\nP. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears\nP. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows\nP. Atk. +12 for bows\nM. Atk. +5 for all weapons\nStarting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons).\nThrough Gran Kain's power, in case of failure the item is not crystallized, and its enchant value remains the same.\nCannot be used with weapons enchanted to +20 or higher. -->
+		<!-- For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Through Gran Kain's power, in case of failure the item is not crystallized, and its enchant value remains the same. Cannot be used with weapons enchanted to +20 or higher. -->
 		<set name="icon" val="icon.ev_shilen_scroll_of_enchant_wp" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -86,7 +86,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82308" name="Gran Kain's Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- For R-grade armor and accessories\nP. Def. +2\nWhen enchanted to +4, P. Def. bonus is greatly increased and HP is increased with each enchant value. The enchanting is safe up to +3.\nThrough Gran Kain's power, in case of failure, the item is not crystallized, and its enchant value remains the same.\nCannot be used with equipment enchanted to +12 or higher. -->
+		<!-- For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. bonus is greatly increased and HP is increased with each enchant value. The enchanting is safe up to +3. Through Gran Kain's power, in case of failure, the item is not crystallized, and its enchant value remains the same. Cannot be used with equipment enchanted to +12 or higher. -->
 		<set name="icon" val="icon.ev_shilen_scroll_of_enchant_am" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -94,7 +94,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82309" name="Augmenting Stone of Superior Seed Bracelet" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for Superior Seed Bracelet augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for Superior Seed Bracelet augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_lbracelet_charm" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -590,7 +590,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82362" name="Blue Earth Chest Lv. 1" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (1 pc.).\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (1 pc.). <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -600,7 +600,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82363" name="Blue Earth Chest Lv. 2" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (1 pc.), Honey Dark Beer (1 pc.).\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (1 pc.), Honey Dark Beer (1 pc.). <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -610,7 +610,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82364" name="Blue Earth Chest Lv. 3" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (2 pcs.), Honey Dark Beer (2 pcs.), Emperor's Special Cocktail (1 pc.), Glowing Dragon's Attribute Potion (XP) (2 pcs.).\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (2 pcs.), Honey Dark Beer (2 pcs.), Emperor's Special Cocktail (1 pc.), Glowing Dragon's Attribute Potion (XP) (2 pcs.). <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -620,7 +620,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82365" name="Blue Earth Chest Lv. 4" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (6 pcs.), Honey Dark Beer (6 pcs.), Emperor's Special Cocktail (3 pcs.), Glowing Dragon's Attribute Potion (XP) (6 pcs.).\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (6 pcs.), Honey Dark Beer (6 pcs.), Emperor's Special Cocktail (3 pcs.), Glowing Dragon's Attribute Potion (XP) (6 pcs.). <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -630,7 +630,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82366" name="Blue Earth Chest Lv. 5" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (10 pcs.), Honey Dark Beer (10 pcs.), Emperor's Special Cocktail (5 pcs.), Glowing Dragon's Attribute Potion (XP) (10 pcs.), and an additional reward.\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (10 pcs.), Honey Dark Beer (10 pcs.), Emperor's Special Cocktail (5 pcs.), Glowing Dragon's Attribute Potion (XP) (10 pcs.), and an additional reward. <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -640,7 +640,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82367" name="Blue Earth Chest Lv. 6" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (24 pcs.), Honey Dark Beer (24 pcs.), Emperor's Special Cocktail (12 pcs.), Glowing Dragon's Attribute Potion (XP) (24 pcs.), and an additional reward.\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (24 pcs.), Honey Dark Beer (24 pcs.), Emperor's Special Cocktail (12 pcs.), Glowing Dragon's Attribute Potion (XP) (24 pcs.), and an additional reward. <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -650,7 +650,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82368" name="Blue Earth Chest Lv. 7" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (48 pcs.), Honey Dark Beer (48 pcs.), Emperor's Special Cocktail (24 pcs.), Glowing Dragon's Attribute Potion (XP) (48 pcs.), and an additional reward.\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (48 pcs.), Honey Dark Beer (48 pcs.), Emperor's Special Cocktail (24 pcs.), Glowing Dragon's Attribute Potion (XP) (48 pcs.), and an additional reward. <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -660,7 +660,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82369" name="Blue Earth Chest Lv. 8" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (96 pcs.), Honey Dark Beer (96 pcs.), Emperor's Special Cocktail (48 pcs.), Glowing Dragon's Attribute Potion (XP) (96 pcs.), and an additional reward.\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (96 pcs.), Honey Dark Beer (96 pcs.), Emperor's Special Cocktail (48 pcs.), Glowing Dragon's Attribute Potion (XP) (96 pcs.), and an additional reward. <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_03" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -670,7 +670,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82370" name="Blue Earth Chest Lv. 9" additionalName="Event" type="EtcItem">
-		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (192 pcs.), Honey Dark Beer (192 pcs.), Emperor's Special Cocktail (96 pcs.), Glowing Dragon's Attribute Potion (XP) (192 pcs.), and an additional reward.\n\n<Enchanting>\nCompounding with Spring Energy. -->
+		<!-- A pack full of restoring energy of earth. Double-click to obtain Freya's Ice Rose (192 pcs.), Honey Dark Beer (192 pcs.), Emperor's Special Cocktail (96 pcs.), Glowing Dragon's Attribute Potion (XP) (192 pcs.), and an additional reward. <Enchanting> Compounding with Spring Energy. -->
 		<set name="icon" val="icon.ev_green_box_03" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -763,7 +763,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82380" name="Erica's Blessing Rune" additionalName="30-day" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Erica's Blessing.\nWhen in inventory, PvE damage +10%. -->
+		<!-- Can only be crafted on servers bound by Erica's Blessing. When in inventory, PvE damage +10%. -->
 		<set name="icon" val="icon.bm_freya_bloody_rune" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -774,7 +774,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="82381" name="Soulshot Supplies" additionalName="Event" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Erica's Blessing.\nDouble-click to obtain 30,000 R-grade Soulshots. -->
+		<!-- Can only be crafted on servers bound by Erica's Blessing. Double-click to obtain 30,000 R-grade Soulshots. -->
 		<set name="icon" val="icon.etc_box_of_adventure_2_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -784,7 +784,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82382" name="Spiritshot Supplies" additionalName="Event" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Erica's Blessing.\nDouble-click to obtain 30,000 Blessed R-grade Spiritshots. -->
+		<!-- Can only be crafted on servers bound by Erica's Blessing. Double-click to obtain 30,000 Blessed R-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -794,7 +794,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82383" name="Erica's Growth Support Box" additionalName="Event" type="EtcItem">
-		<!-- Can only be crafted on servers bound by Erica's Blessing.\nDouble-click to obtain Emperor's Special Cocktail (12 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Honey Dark Beer (24 pcs.). -->
+		<!-- Can only be crafted on servers bound by Erica's Blessing. Double-click to obtain Emperor's Special Cocktail (12 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Honey Dark Beer (24 pcs.). -->
 		<set name="icon" val="icon.new_user_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -871,7 +871,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82391" name="Mask Augmenting Stone" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for Expert's Mask and Navari's Mask augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for Expert's Mask and Navari's Mask augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_mask" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -899,7 +899,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82394" name="Augmenting Stone: Accessory" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for accessory augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for accessory augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.renewal_mineral_accessory_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -909,7 +909,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82395" name="Augmenting Stone: Dragon Leather Shirt" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for Dragon Rind Leather Shirt's augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for Dragon Rind Leather Shirt's augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.renewal_mineral_dragon_rind_leather_shirt" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -919,7 +919,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82396" name="Augmenting Stone: Kaliel's Bracelet" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for augmenting Kaliel's Greater Bracelet and Kaliel's Bracelet. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for augmenting Kaliel's Greater Bracelet and Kaliel's Bracelet. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_kalie_rbracelet" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -929,7 +929,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82397" name="Augmenting Stone of Superior Seed Bracelet" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for Superior Seed Bracelet augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for Superior Seed Bracelet augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_lbracelet_charm" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -939,7 +939,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82398" name="Augmenting Stone: Artifact Book" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for augmenting Improved and Unique Artifact Book. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for augmenting Improved and Unique Artifact Book. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_artifact_book" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -949,7 +949,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82399" name="Mask Augmenting Stone" type="EtcItem">
-		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies.\nKey material for Expert's Mask and Navari's Mask augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for Expert's Mask and Navari's Mask augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_mask" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
