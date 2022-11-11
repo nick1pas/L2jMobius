@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
-	<skill id="49001" toLevel="5" name="Pet's Specific Skill: Kookaburra Chick">
+	<skill id="49001" toLevel="5" name="Kookaburra Chick">
 		<!-- Attacks with magic. <Required weapons> Rapier: M. Atk. +$s1 Blunt weapon: M. Atk. +$s1 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
@@ -298,7 +298,27 @@
 			<effect name="BlinkSwap" />
 		</effects>
 	</skill>
-	<skill id="49011" toLevel="5" name="Pet's Specific Skill: Tiger Cub">
+	<skill id="49007" toLevel="1" name="Magic Flare">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49008" toLevel="3" name="Magic Flare Lv. 1">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49009" toLevel="1" name="Cancel Magic Flare">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49010" toLevel="1" name="Magic Flare">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49011" toLevel="5" name="Tiger Cub">
 		<!-- Aims at the enemy's vital spots. <Required weapon> Dagger: P. Atk. +$s1, Vital Point Attack Rate +$s2 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
@@ -529,7 +549,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="49015" toLevel="5" name="Hide">
+	<skill id="49015" toLevel="5" name="Sharp Senses">
 		<!-- Grants invisibility for $s1 The effect is cancelled upon any action except movement. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
@@ -602,7 +622,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="49017" toLevel="15" name="Improved Strong Bite">
+	<skill id="49017" toLevel="15" name="Strong Bite">
 		<!-- Bites the target. Power: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
@@ -652,7 +672,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="49021" toLevel="5" name="Pet's Specific Skill: Wolf Cub">
+	<skill id="49018" toLevel="20" name="Breaking Blaster">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49021" toLevel="5" name="Wolf Cub">
 		<!-- Applies damage-increasing buffs when using the Dire Claw and Last Dire Claw skills. <Required weapons> Dual swords: P. Atk. +$s1, Atk. Spd. +$s2 Fist weapon: P. Atk. +$s1, P. Critical Rate +$s3 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
@@ -958,7 +983,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="49031" toLevel="5" name="Pet's Specific Skill: Buffalo Calf">
+	<skill id="49027" toLevel="1" name="Sound Body">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49031" toLevel="5" name="Buffalo Calf">
 		<!-- Takes hits well and defends allies. HP Recovery Potions' Effect +20 <Required weapons> Blunt weapon: P. Atk. +$s1, Atk. Spd. +$s2 Spear: P. Atk. +$s1 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
@@ -1252,7 +1282,22 @@
 			<effect name="BlockActions" />
 		</effects>
 	</skill>
-	<skill id="49041" toLevel="5" name="Pet's Specific Skill: Hawk Hatchling">
+	<skill id="49037" toLevel="5" name="Pulling Body">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49038" toLevel="1" name="Pulling Defense">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49039" toLevel="1" name="Pulling Defense">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49041" toLevel="5" name="Hawk Hatchling">
 		<!-- Specializes on long range attacks. <Required weapon> Bow: P. Atk. +$s1, P. Accuracy +$s2 If no proper weapon is equipped, Atk. Spd/ Casting Spd. -10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
@@ -1647,7 +1692,17 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="49051" toLevel="5" name="Pet's Specific Skill: Dragon Hatchling">
+	<skill id="49049" toLevel="1" name="Swift Feather">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49050" toLevel="1" name="Quick Movements">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="49051" toLevel="5" name="Dragon Hatchling">
 		<!-- Has inherited strong body, high speed and fast attacks from ancestors. There is a certain chance after Crippling Bite that Double Crippling Bite will be triggered allowing the pet to attack twice. <Proper Weapon> Sword: P. Atk. +$s1, Atk. Spd. +$s2 Ancient Sword: P. Atk. +$s1, P. Critical Rate +$s3 If there is no proper weapon, Atk. Spd./ Casting Spd. -10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
@@ -2034,5 +2089,10 @@
 				<chance>100</chance>
 			</effect>
 		</effects>
+	</skill>
+	<skill id="49058" toLevel="1" name="Perfect Bite">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
 	</skill>
 </list>

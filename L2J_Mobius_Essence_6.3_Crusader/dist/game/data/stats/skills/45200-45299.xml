@@ -314,7 +314,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45203" toLevel="50" name="Transcendent Double Sonic Slash">
+	<skill id="45203" toLevel="50" name="Master of Aggression">
 		<!-- Strikes with the sword three times. Attacks the target with $s1 power. Increases power upon consuming Momentum. Ignores $s2 of the target's defense. Critical. The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill0005</icon>
 		<operateType>A1</operateType>
@@ -4459,7 +4459,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45226" toLevel="10" name="Transcendent Soul Smash - Not used">
+	<skill id="45226" toLevel="10" name="Master of Aggression">
 		<!-- Attacks the target with $s1 power. Requires an ancient sword or a two-handed sword. Ignores Shield Defense. Ignores $s2 of the target's defense. Over-hit. The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill0495</icon>
 		<operateType>A1</operateType>
@@ -4949,7 +4949,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45232" toLevel="45" name="Transcendent Vampiric Claw">
+	<skill id="45232" toLevel="45" name="Power of Aggression">
 		<!-- <Drain skill> Inflicts magic damage on the target with $s1 power. Absorbs $s2 of the inflicted damage as HP. Can be used only in the transcendent instance zones. -->
 		<icon>icon.skill1234</icon>
 		<castRange>700</castRange>
@@ -5208,7 +5208,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45233" toLevel="15" name="Transcendent Bleed">
+	<skill id="45233" toLevel="15" name="Power of Aggression">
 		<!-- Throws a dagger to hit the enemy with $s1 power. For $s2, Speed -$s3, inflicts Bleed. Requires a dagger. The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill19309</icon>
 		<affectLimit>5-12</affectLimit>
@@ -5935,6 +5935,11 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="45244" toLevel="57" name="Deadly Aggression">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
 	<skill id="45245" toLevel="1" name="Machine Assistance">
 		<!-- The effect lasts for $s1 An attack has a certain chance to summon a Mechanic Golem who attacks the enemy. -->
 		<abnormalLevel>1</abnormalLevel>
@@ -6405,7 +6410,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45251" toLevel="1" name="Enhanced Assault">
+	<skill id="45251" toLevel="1" name="Powerful Rush">
 		<!-- When the Rush skill is used, the stun effect is added (Cooldown: 20 sec.) Increases a chance to stun the enemy after using the Rush Impact skill (Cooldown: 20 sec.) -->
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -6417,7 +6422,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45252" toLevel="3" name="Rush">
+	<skill id="45252" toLevel="3" name="Effective Rush">
 		<!-- <Shock skill> Charges into the target. With a certain chance, stuns them. Can be used if the distance between the target and the character is more than $s1. -->
 		<icon>icon.skill0493</icon>
 		<operateType>DA2</operateType>
@@ -6471,7 +6476,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45253" toLevel="3" name="Rush Impact">
+	<skill id="45253" toLevel="3" name="Effective Rush Impact">
 		<!-- <Shock skill> Rushes forward to attack enemies at the front with $s1 power. Stuns them for $s2 Can be used if the distance to the target is more than $s3. -->
 		<icon>icon.skill0793</icon>
 		<castRange>
@@ -6548,7 +6553,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45254" toLevel="1" name="Rush">
+	<skill id="45254" toLevel="1" name="Effective Rush Impact">
 		<!-- Stuns making unable to move. -->
 		<operateType>DA1</operateType>
 	</skill>
@@ -7043,6 +7048,11 @@
 		<!-- Removes Courage/ Frenzy effect. -->
 		<operateType>A1</operateType>
 	</skill>
+	<skill id="45260" toLevel="57" name="Force Aggression">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
 	<skill id="45261" toLevel="10" name="Transcendent Divine Strike">
 		<!-- Summons holy light. Inflicts magic damage with $s1 power. Deals additional damage to demons and undead. The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill1031</icon>
@@ -7233,7 +7243,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45263" toLevel="10" name="Transcendent Vampiric Touch">
+	<skill id="45263" toLevel="10" name="Knight's Power Lv. 8">
 		<!-- <Drain skill> Inflicts magic damage on the target with $s1 power. Absorbs $s2 of the inflicted damage as HP. Can be used only in the transcendent instance zones. -->
 		<castRange>600</castRange>
 		<effectPoint>-100</effectPoint>
@@ -7291,7 +7301,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="45264" toLevel="35" name="Transcendent Frost Bolt">
+	<skill id="45264" toLevel="35" name="Knight's Power Lv. 9">
 		<!-- Freezes the air around the enemy. Inflicts damage on the enemy with $s1 power. For 30 sec., the target's Speed -20%. The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill1236</icon>
 		<abnormalLevel>2</abnormalLevel>
@@ -7927,5 +7937,15 @@
 				<amount>1</amount>
 			</effect>
 		</effects>
+	</skill>
+	<skill id="45270" toLevel="2" name="Knight's Power Lv. 10">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
+	</skill>
+	<skill id="45271" toLevel="5" name="Extended Life">
+		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<icon>icon.skill0000</icon>
+		<operateType>A1</operateType>
 	</skill>
 </list>
