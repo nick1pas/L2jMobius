@@ -59,7 +59,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1576</npcId> <!-- Ball Trapping Gnosian -->
+				<npcId>1576</npcId> <!-- Ball-trapping Gnosian -->
 			</effect>
 		</effects>
 	</skill>
@@ -76,7 +76,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1577</npcId> <!-- Ball Trapping Orodriel -->
+				<npcId>1577</npcId> <!-- Ball-trapping Orodriel -->
 			</effect>
 		</effects>
 	</skill>
@@ -110,7 +110,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1579</npcId> <!-- Ball Trapping Gnosian -->
+				<npcId>1579</npcId> <!-- Ball-trapping Gnosian -->
 			</effect>
 		</effects>
 	</skill>
@@ -127,7 +127,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1580</npcId> <!-- Ball Trapping Orodriel -->
+				<npcId>1580</npcId> <!-- Ball-trapping Orodriel -->
 			</effect>
 		</effects>
 	</skill>
@@ -161,7 +161,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1582</npcId> <!-- Ball Trapping Gnosian -->
+				<npcId>1582</npcId> <!-- Ball-trapping Gnosian -->
 			</effect>
 		</effects>
 	</skill>
@@ -178,7 +178,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1583</npcId> <!-- Ball Trapping Orodriel -->
+				<npcId>1583</npcId> <!-- Ball-trapping Orodriel -->
 			</effect>
 		</effects>
 	</skill>
@@ -236,7 +236,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1586</npcId> <!-- Flower Fairy Spirit -->
+				<npcId>1586</npcId> <!-- Flower Fairy -->
 			</effect>
 		</effects>
 	</skill>
@@ -416,7 +416,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21224" toLevel="1" name="Great Adventurer's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases Debuff Resistance by 10%. Cooldown is 1 h. -->
+		<!-- For 5 min., Max HP +20%, Max MP +20%, Speed +20%, HP Recovery Rate +20%, Debuff Resistance +10%. Cooldown: 1 h. -->
 		<icon>BranchSys2.icon.br_stagbeetle_cap_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MULTI_BUFF</abnormalType>
@@ -435,7 +435,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21225" toLevel="1" name="Brave Warrior's Soul Power">
-		<!-- For 5 min., receives the soul's help to increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Cooldown is 1 h. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%. Absorbs 5% of the inflicted melee physical damage as HP. Cooldown: 1 h. -->
 		<icon>BranchSys2.icon.br_hornbeetle_cap_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MULTI_BUFF</abnormalType>
@@ -473,7 +473,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21227" toLevel="1" name="Great Adventurer's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Max HP by 20%, Max MP by 20%, and Speed by 20%. Increases HP Recovery Bonus by 20% and MP Recovery Bonus by 20%. Cooldown is 1 h. -->
+		<!-- For 5 min., Max HP +20%, Max MP +20%, Speed +20%, HP Recovery Rate +20%, MP Recovery Rate +20%. Cooldown: 1 h. -->
 		<icon>BranchSys2.icon.br_mantis_cap_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MULTI_BUFF</abnormalType>
@@ -492,7 +492,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21228" toLevel="1" name="Brave Warrior's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Increases P. Critical Damage and P. Critical Rate by 20%. Cooldown is 1 h. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%, Critical Damage +20%, Critical Rate +20%. Cooldown: 1 h. -->
 		<icon>BranchSys2.icon.br_locust_cap_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MULTI_BUFF</abnormalType>
@@ -511,7 +511,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21229" toLevel="1" name="Blood Awakening">
-		<!-- Combines general attack damage absorption and Atk. Spd. increase for a more advanced blood awakening effect. For 1 h., increases Atk. Spd. by 33% and bestows the ability to recover as HP 9% of the physical damage inflicted on the enemy with a certain probability. Cooldown is 4 h. -->
+		<!-- Combines damage absorption and Atk. Spd. increase to have more combat efficiency. For 1 h., Atk. Spd. +33%, with a certain chance, absorbs 9% of the inflicted damage as HP. Cooldown: 4 h. -->
 		<icon>BranchSys2.icon.br_close_helmet_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>IMPROVE_VAMPIRIC_HASTE</abnormalType>
@@ -549,7 +549,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21231" toLevel="1" name="Improve Critical Attack">
-		<!-- Combines Critical Rate Increase and Critical Damage Increase to have more advanced critical increase effect. For 1 h., increases Critical Rate by 30% and Critical Damage by 35%. Cooldown is 4 h. -->
+		<!-- Combines Critical Rate increase and Critical Damage increase to have more combat efficiency. For 1 h., Critical Rate +30%, Critical Damage +35%. Cooldown: 1 h. -->
 		<icon>BranchSys2.icon.br_gold_eyeglass_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>IMPROVE_CRT_RATE_DMG_UP</abnormalType>
@@ -613,7 +613,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1594</npcId> <!-- Agathion Singer and Dancer -->
+				<npcId>1594</npcId> <!-- Agathion Singer & Dancer -->
 			</effect>
 		</effects>
 	</skill>
@@ -648,7 +648,7 @@
 		</effects>
 	</skill>
 	<skill id="21236" toLevel="1" name="Power Shirt: Blessed Escape">
-		<!-- Allows the use of Blessed Escape every 20 h. -->
+		<!-- Enables the Blessed Escape skill. Cooldown: 20 h. -->
 		<icon>Icon.skill1050</icon>
 		<hitTime>200</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -874,7 +874,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1598</npcId> <!-- Rudolph Agathion -->
+				<npcId>1598</npcId> <!-- Agathion Rudolph -->
 			</effect>
 		</effects>
 	</skill>
@@ -946,7 +946,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1599</npcId> <!-- Zinyanzi Agathion -->
+				<npcId>1599</npcId> <!-- Agathion Zinyanzi -->
 			</effect>
 		</effects>
 	</skill>
@@ -1034,7 +1034,7 @@
 		</effects>
 	</skill>
 	<skill id="21251" toLevel="1" name="Shiny Party Hat - Greater Body">
-		<!-- Increases Max HP by 35% for 20 min. -->
+		<!-- For 20 min., Max HP +35%. -->
 		<icon>BranchSys.icon.br_party_hat_gold_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1140,7 +1140,7 @@
 		</effects>
 	</skill>
 	<skill id="21258" toLevel="1" name="Ride Rocking Horse">
-		<!-- Ride a rocking horse. -->
+		<!-- Allows to mount Rocking Horse. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
@@ -1185,7 +1185,7 @@
 		</effects>
 	</skill>
 	<skill id="21260" toLevel="1" name="Notifier">
-		<!-- You can use to learn the number of received gifts and the number of remaining gifts. The gift provision time is reset every morning at 6:30. -->
+		<!-- Displays the number of received and remaining gifts. The gift delivery time is reset every day at 6:30 a.m. (server time). -->
 		<icon>icon.skill5239</icon>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1286,7 +1286,7 @@
 		</effects>
 	</skill>
 	<skill id="21267" toLevel="1" name="Notifier">
-		<!-- When used, it informs of the number of currently received gifts and number of remaining gifts. The gift delivery time will reset every day at 6:30 AM. -->
+		<!-- Displays the number of received and remaining gifts. The gift delivery time is reset every day at 6:30 a.m. (server time). -->
 		<icon>icon.skill5239</icon>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1337,7 +1337,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21270" toLevel="1" name="Mount Princess Ant">
-		<!-- Allows to mount Princess Ant. -->
+		<!-- Allows to mount Queen Ant. -->
 		<icon>icon.skilltransform3</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1621,7 +1621,7 @@
 		<magicLevel>95</magicLevel>
 	</skill>
 	<skill id="21285" toLevel="1" name="Scroll of Escape: Uthanka's Tomb">
-		<!-- Return to Pirate Captain Uthanka's Tomb. -->
+		<!-- Teleports to Pirate Captain Uthanka's Tombstone. -->
 		<icon>BranchSys3.lcon.g_ring_of_uthanka</icon>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1639,7 +1639,7 @@
 		</conditions>
 	</skill>
 	<skill id="21286" toLevel="1" name="Ride Unicorn">
-		<!-- Allows to mount a unicorn. -->
+		<!-- Allows to mount Unicorn. -->
 		<icon>icon.skilltransform3</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1666,7 +1666,7 @@
 		</effects>
 	</skill>
 	<skill id="21287" toLevel="1" name="Emergency Ballista Repair">
-		<!-- Can repair a Broken Ballista near Aden Castle during a siege. -->
+		<!-- Repairs a broken Ballista near Aden Castle during its siege. -->
 		<icon>icon.skill0818</icon>
 		<operateType>A1</operateType>
 		<castRange>250</castRange>
@@ -1687,7 +1687,7 @@
 		</conditions>
 	</skill>
 	<skill id="21288" toLevel="1" name="Emergency Ballista Repair">
-		<!-- Can repair a Broken Ballista near Rune Castle during a siege. -->
+		<!-- Repairs a broken Ballista near Rune Castle during its siege. -->
 		<icon>icon.skill0818</icon>
 		<operateType>A1</operateType>
 		<castRange>250</castRange>

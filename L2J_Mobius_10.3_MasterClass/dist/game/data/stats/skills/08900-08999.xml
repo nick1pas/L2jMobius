@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="8900" toLevel="1" name="Dragon Fighter">
-		<!-- PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, Critical Rate for standard attacks +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%, damage to dragons +100%. -->
+		<!-- PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, Critical Rate for basic attacks +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%, damage to dragons +100%. -->
 		<icon>icon.skill5860</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -51,7 +51,7 @@
 		</effects>
 	</skill>
 	<skill id="8901" toLevel="1" name="Dragon Knight">
-		<!-- PvP Damage +50%, Max HP/ MP/ CP +100%, Atk. Spd. +100%, Critical Rate for standard attacks +500, P. Skill Critical Rate +50%, P. Skill Critical Damage +50%, damage to dragons +300%. -->
+		<!-- PvP damage +50%, Max HP/ MP/ CP +100%, Atk. Spd. +100%, Critical Rate for basic attacks +500, P. Skill Critical Rate +50%, P. Skill Critical Damage +50%, damage to dragons +300%. -->
 		<icon>icon.skill5861</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -101,7 +101,7 @@
 		</effects>
 	</skill>
 	<skill id="8902" toLevel="1" name="Dragon Mage">
-		<!-- PvP Damage +30%, Max HP/ MP/ CP +30%, Casting Spd. +30%, Critical Rate for standard attacks +100, M. Skill Critical Rate +100, M. Skill Critical Damage +30%, damage to dragons +100%. -->
+		<!-- PvP damage +30%, Max HP/ MP/ CP +30%, Casting Spd. +30%, Critical Rate for basic attacks +100, M. Skill Critical Rate +100, M. Skill Critical Damage +30%, damage to dragons +100%. -->
 		<icon>icon.skill5860</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -146,7 +146,7 @@
 		</effects>
 	</skill>
 	<skill id="8903" toLevel="1" name="Dragon Wizard">
-		<!-- PvP Damage +50%, Max HP/ MP/ CP +100%, Casting Spd. +100%, Critical Rate for standard attacks +500, M. Skill Critical Rate +50%, M. Skill Critical Damage +50%, damage to dragons +300%. -->
+		<!-- PvP damage +50%, Max HP/ MP/ CP +100%, Casting Spd. +100%, Critical Rate for basic attacks +500, M. Skill Critical Rate +500, M. Skill Critical Damage +50%, damage to dragons +300%. -->
 		<icon>icon.skill5861</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -191,7 +191,7 @@
 		</effects>
 	</skill>
 	<skill id="8904" toLevel="1" name="Summon Eviscerator Fox">
-		<!-- Mount the Eviscerator's pet fox. -->
+		<!-- Allows to mount the Eviscerator's pet fox. -->
 		<icon>icon.skill8904</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -214,7 +214,7 @@
 		</effects>
 	</skill>
 	<skill id="8905" toLevel="1" name="Summon Sayha's Seer Fox">
-		<!-- Mount the Sayha's Seer's pet fox. -->
+		<!-- Allows to mount the Sayha's Seer's pet fox. -->
 		<icon>icon.skill8905</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -237,7 +237,7 @@
 		</effects>
 	</skill>
 	<skill id="8906" toLevel="1" name="Riding the Hell Hound">
-		<!-- The Hell Hound can be mounted. -->
+		<!-- Allows to mount Hell Hound. -->
 		<icon>icon.hellound_vehicle</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -273,7 +273,7 @@
 		</effects>
 	</skill>
 	<skill id="8907" toLevel="1" name="Mount Pegasus">
-		<!-- The Pegasus can be mounted. -->
+		<!-- Allows to mount Pegasus. -->
 		<icon>icon.pegasus_vehicle</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -310,7 +310,7 @@
 		</effects>
 	</skill>
 	<skill id="8908" toLevel="1" name="Riding the Wing Hound">
-		<!-- The Wing Hound can be mounted. -->
+		<!-- Allows to mount Wing Hound. -->
 		<icon>icon.winghound_vehicle</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -348,7 +348,7 @@
 		</effects>
 	</skill>
 	<skill id="8909" toLevel="1" name="Riding the War Horse">
-		<!-- The War Horse can be mounted. -->
+		<!-- Allows to mount War Horse. -->
 		<icon>icon.warhorse_vehicle</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -424,7 +424,7 @@
 		</effects>
 	</skill>
 	<skill id="8911" toLevel="1" name="Mount Night Mare">
-		<!-- Lets Sigel Death Knight mount Night Mare. -->
+		<!-- Allows Sigel Death Knights to mount Night Mare. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>

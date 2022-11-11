@@ -29,12 +29,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29405" toLevel="1" name="Freya's Ice Rose">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P. Atk./ M. Atk./ P. Def./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29406" toLevel="1" name="Emperor's Special Cocktail">
-		<!-- For 60 min., grants Horn Melody, Guitar Melody, Pipe Organ Melody, Drum Melody Lv. 5, Fantasia Harmony Lv. 2, War Drum, Marching Drum, Soothing Drum, Fantasia Melody, Attribute Resistance, Debuff Resistance, and Mental Resistance. The effect can be cancelled by pressing Alt + Mouse Left Click. -->
+		<!-- For 60 min., applies the following effects: Musician's Melody Lv. 5, Fantasia Harmony Lv. 2, Drum Concert, Fantasia Melody, United Resistance. To remove the effect, press Alt + Mouse Left Click. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -259,12 +259,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29419" toLevel="1" name="Roa's Support">
-		<!-- For $s1, P. Atk. +$s2 when using a melee weapon. Grants a certain chance to increase Critical Rate for standard attacks and P. Skill Power. The effect remains after death. Cannot be used in the Olympiad and the Ceremony of Chaos. -->
+		<!-- When using a melee weapon, P. Atk. +$s2 for $s1 With a certain chance, increases Critical Rate for basic attacks and P. Skill Power. The effect remains after death. Cannot be used in the Olympiad and the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29420" toLevel="1" name="Roa's Appreciation">
-		<!-- Critical Rate for standard attacks and P. Skill Power +$s1. -->
+		<!-- Critical Rate for basic attacks and P. Skill Power +$s1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -279,7 +279,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29423" toLevel="1" name="Heir's Radiance Lv. 5">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 2 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvE Lv. 2 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -400,7 +400,7 @@
 		</effects>
 	</skill>
 	<skill id="29424" toLevel="1" name="Heir's Radiance Lv. 6">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 3 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvE Lv. 3 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -521,7 +521,7 @@
 		</effects>
 	</skill>
 	<skill id="29425" toLevel="1" name="Heir's Radiance Lv. 7">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 4 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvE Lv. 4 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -642,7 +642,7 @@
 		</effects>
 	</skill>
 	<skill id="29426" toLevel="1" name="Heir's Radiance Lv. 5">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvP damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvP Lv. 2 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP Lv. 2 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -763,7 +763,7 @@
 		</effects>
 	</skill>
 	<skill id="29427" toLevel="1" name="Heir's Radiance Lv. 6">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvP damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvP Lv. 3 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP Lv. 3 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -884,7 +884,7 @@
 		</effects>
 	</skill>
 	<skill id="29428" toLevel="1" name="Heir's Radiance Lv. 7">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvP damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvP Lv. 4 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP Lv. 4 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1005,7 +1005,7 @@
 		</effects>
 	</skill>
 	<skill id="29429" toLevel="5" name="Heir's Radiance - PvE Lv. 2">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvE Damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvE damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -1132,7 +1132,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29430" toLevel="5" name="Heir's Radiance - PvP Lv. 2">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvP Damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP</abnormalType>
@@ -1275,7 +1275,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29431" toLevel="5" name="Heir's Radiance - PvE Lv. 3">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvE Damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvE damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -1402,7 +1402,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29432" toLevel="5" name="Heir's Radiance - PvP Lv. 3">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvP Damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP</abnormalType>
@@ -1542,7 +1542,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29433" toLevel="5" name="Heir's Radiance - PvE Lv. 4">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvE Damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvE damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -1657,7 +1657,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29434" toLevel="5" name="Heir's Radiance - PvP Lv. 4">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvP Damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -1821,46 +1821,46 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="7.14">
-						<item id="80175" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Shaper -->
+						<item id="80175" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Shaper -->
 					</item>
 					<item chance="7.14">
-						<item id="80176" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Cutter -->
+						<item id="80176" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Cutter -->
 					</item>
 					<item chance="7.14">
-						<item id="80177" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Slasher -->
+						<item id="80177" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Slasher -->
 					</item>
 					<item chance="7.14">
-						<item id="80178" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Avenger -->
+						<item id="80178" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Avenger -->
 					</item>
 					<item chance="7.14">
-						<item id="80179" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Fighter -->
+						<item id="80179" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Fighter -->
 					</item>
 					<item chance="7.14">
-						<item id="80180" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Stormer -->
+						<item id="80180" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Stormer -->
 					</item>
 					<item chance="7.14">
-						<item id="80181" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Thrower -->
+						<item id="80181" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Thrower -->
 					</item>
 					<item chance="7.14">
-						<item id="80182" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Guardian -->
+						<item id="80182" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Guardian -->
 					</item>
 					<item chance="7.14">
-						<item id="80183" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Buster -->
+						<item id="80183" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Buster -->
 					</item>
 					<item chance="7.14">
-						<item id="80184" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Caster -->
+						<item id="80184" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Caster -->
 					</item>
 					<item chance="7.14">
-						<item id="80185" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Retributer -->
+						<item id="80185" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Retributer -->
 					</item>
 					<item chance="7.14">
-						<item id="80186" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Dual Swords -->
+						<item id="80186" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Dual Swords -->
 					</item>
 					<item chance="7.14">
-						<item id="80187" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Dual Daggers -->
+						<item id="80187" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Dual Daggers -->
 					</item>
 					<item chance="7.14">
-						<item id="80188" count="1" minEnchant="18" maxEnchant="18" /> <!-- +18 Supreme Krishna Dual Blunt Weapons -->
+						<item id="80188" count="1" minEnchant="18" maxEnchant="18" /> <!-- Supreme Krishna Dual Blunt Weapons -->
 					</item>
 				</items>
 			</effect>
@@ -1889,46 +1889,46 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="7.14">
-						<item id="80175" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Shaper -->
+						<item id="80175" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Shaper -->
 					</item>
 					<item chance="7.14">
-						<item id="80176" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Cutter -->
+						<item id="80176" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Cutter -->
 					</item>
 					<item chance="7.14">
-						<item id="80177" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Slasher -->
+						<item id="80177" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Slasher -->
 					</item>
 					<item chance="7.14">
-						<item id="80178" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Avenger -->
+						<item id="80178" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Avenger -->
 					</item>
 					<item chance="7.14">
-						<item id="80179" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Fighter -->
+						<item id="80179" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Fighter -->
 					</item>
 					<item chance="7.14">
-						<item id="80180" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Stormer -->
+						<item id="80180" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Stormer -->
 					</item>
 					<item chance="7.14">
-						<item id="80181" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Thrower -->
+						<item id="80181" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Thrower -->
 					</item>
 					<item chance="7.14">
-						<item id="80182" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Guardian -->
+						<item id="80182" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Guardian -->
 					</item>
 					<item chance="7.14">
-						<item id="80183" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Buster -->
+						<item id="80183" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Buster -->
 					</item>
 					<item chance="7.14">
-						<item id="80184" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Caster -->
+						<item id="80184" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Caster -->
 					</item>
 					<item chance="7.14">
-						<item id="80185" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Retributer -->
+						<item id="80185" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Retributer -->
 					</item>
 					<item chance="7.14">
-						<item id="80186" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Dual Swords -->
+						<item id="80186" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Dual Swords -->
 					</item>
 					<item chance="7.14">
-						<item id="80187" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Dual Daggers -->
+						<item id="80187" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Dual Daggers -->
 					</item>
 					<item chance="7.14">
-						<item id="80188" count="1" minEnchant="20" maxEnchant="20" /> <!-- +20 Supreme Krishna Dual Blunt Weapons -->
+						<item id="80188" count="1" minEnchant="20" maxEnchant="20" /> <!-- Supreme Krishna Dual Blunt Weapons -->
 					</item>
 				</items>
 			</effect>
@@ -2016,12 +2016,12 @@
 		</effects>
 	</skill>
 	<skill id="29440" toLevel="1" name="Freya's Ice Rose - Event">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, Damage +$s7, P./ M. Skill Power +$s8, Acquired XP/ SP +$s9, Received Damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29441" toLevel="1" name="Lucky Gift Coupon (1-hour)">
-		<!-- For $s1, PvE damage +10%, Attribute Resistance +20, acquired XP +10%. Allows to take part in the raffle. -->
+		<!-- For $s1, PvE damage +10%, Attribute Resistance +20, acquired XP/ SP +10%. Allows to take part in the raffle. -->
 		<icon>icon.skill0000</icon>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>60009</itemConsumeId>
@@ -2108,14 +2108,14 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpSkill">
-				<skillId>29445</skillId> <!-- Spellbook: Create Mysterious Soulshots -->
+				<skillId>29445</skillId> <!-- Create Mysterious R-grade Soulshots -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>29445</skillId> <!-- Spellbook: Create Mysterious Soulshots -->
+				<skillId>29445</skillId> <!-- Create Mysterious R-grade Soulshots -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -2132,14 +2132,14 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpSkill">
-				<skillId>29446</skillId> <!-- Spellbook: Create Mysterious Spiritshots -->
+				<skillId>29446</skillId> <!-- Create Mysterious R-grade Spiritshots -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>29446</skillId> <!-- Spellbook: Create Mysterious Spiritshots -->
+				<skillId>29446</skillId> <!-- Create Mysterious R-grade Spiritshots -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -2169,7 +2169,7 @@
 		</effects>
 	</skill>
 	<skill id="29446" toLevel="1" name="Create Mysterious R-grade Spiritshots">
-		<!-- Creates 10,000 Mysterious R-grade Soulshots. Can be used only if there are no R-grade Spiritshots in your inventory. Requires 150 R-grade Crystals. -->
+		<!-- Creates 10,000 Mysterious Blessed R-grade Spiritshots. Can be used only if there are no Blessed R-grade Spiritshots in your inventory. Requires 270 R-grade Crystals. -->
 		<icon>icon.skill29446</icon>
 		<operateType>A1</operateType>
 		<excludedFromCheck>true</excludedFromCheck>
@@ -2193,87 +2193,78 @@
 		</effects>
 	</skill>
 	<skill id="29447" toLevel="1" name="Appearance Stone: Zaken Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29448" toLevel="1" name="Appearance Stone: Lilith Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29449" toLevel="1" name="Appearance Stone: Admiral Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29450" toLevel="1" name="Appearance Stone: Skeleton Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29451" toLevel="1" name="Appearance Stone: Demon Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29452" toLevel="1" name="Appearance Stone: Nymph Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29453" toLevel="1" name="Appearance Stone: Jester Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29454" toLevel="1" name="Appearance Stone: Dragon Berserker Outfit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29455" toLevel="1" name="Red Libra Specialty - Vitality Tonic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29456" toLevel="1" name="Returning Hero's Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- STR/ DEX/ CON/ INT/ WIT/ MEN/ LUC/ CHA +3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29457" toLevel="1" name="Growth Cookie">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., Vitality bonus +50%, acquired XP/ SP +300%. Required level: 1-117. Cannot be used in the Olympiad. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29458" toLevel="1" name="Freya's Super Freezing Spell">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- PvE damage +15% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29459" toLevel="1" name="Freya's Summer Cooling Spell">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Vitality bonus +15% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29460" toLevel="1" name="Freya's Cooling Spell">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- STR/ DEX/ CON/ INT/ WIT/ MEN/ LUC/ CHA +1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29461" toLevel="1" name="Freya's Glowing Potion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, acquired XP/ SP +$s2, Vitality bonus +$s3, P. Atk./ P. Def./ M. Atk./ M. Def. +$s4. Cooldown: $s5 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29462" toLevel="1" name="Critical Defense">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Very strong immunity to P. Critical Damage and P./ M. Skill Damage. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29463" toLevel="1" name="Heir's Radiance Lv. 8">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 4 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP/ PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP/ PvE Lv. 1 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2406,7 +2397,7 @@
 		</effects>
 	</skill>
 	<skill id="29464" toLevel="1" name="Heir's Radiance Lv. 9">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 4 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP/ PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP/ PvE Lv. 2 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2539,7 +2530,7 @@
 		</effects>
 	</skill>
 	<skill id="29465" toLevel="1" name="Heir's Radiance Lv. 10">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 4 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP/ PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP/ PvE Lv. 3 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2672,6 +2663,7 @@
 		</effects>
 	</skill>
 	<skill id="29466" toLevel="5" name="Heir's Radiance - PvP/ PvE Lv. 1">
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP/ PvE damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP/ PvE effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -2832,7 +2824,7 @@
 		</effects>
 		<endEffects>
 			<effect name="CallSkill" fromLevel="1" toLevel="4">
-				<skillId>29466</skillId> <!-- Heir's Radiance - PvP/PvE Lv. 1 -->
+				<skillId>29466</skillId> <!-- Heir's Radiance - PvP/ PvE Lv. 1 -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2844,6 +2836,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29467" toLevel="5" name="Heir's Radiance - PvP/ PvE Lv. 2">
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP/ PvE damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP/ PvE effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -3006,7 +2999,7 @@
 		</effects>
 		<endEffects>
 			<effect name="CallSkill" fromLevel="1" toLevel="4">
-				<skillId>29467</skillId> <!-- Heir's Radiance - PvP/PvE Lv. 1 -->
+				<skillId>29467</skillId> <!-- Heir's Radiance - PvP/ PvE Lv. 2 -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -3018,6 +3011,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29468" toLevel="5" name="Heir's Radiance - PvP/ PvE Lv. 3">
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP/ PvE damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP/ PvE effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -3178,7 +3172,7 @@
 		</effects>
 		<endEffects>
 			<effect name="CallSkill" fromLevel="1" toLevel="4">
-				<skillId>29468</skillId> <!-- Heir's Radiance - PvP/PvE Lv. 1 -->
+				<skillId>29468</skillId> <!-- Heir's Radiance - PvP/ PvE Lv. 3 -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -3190,157 +3184,145 @@
 		</endEffects>
 	</skill>
 	<skill id="29469" toLevel="1" name="Heir's Intimidation">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Disarms nearby enemies for $s1 forcing them to flee for $s1. Consumes 1000 Spirit Ore. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29470" toLevel="1" name="Expedition Supplies">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29471" toLevel="1" name="Anniversary Firecracker NCJ 20">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29472" toLevel="1" name="Red Firecracker">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29473" toLevel="1" name="Blue Firecracker">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29474" toLevel="1" name="Green Firecracker">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29475" toLevel="1" name="Expedition Supplies - Physical">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29476" toLevel="1" name="Expedition Supplies - Magic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29477" toLevel="1" name="NCJ 20 Anniversary Gift">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A gift for the NCJ 20 Anniversary. For 30 min., acquired XP/ SP while hunting +10%, P. Critical Damage and P./ M. Skill Critical Damage +5%. The effect is removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29478" toLevel="6" name="L2M Blessing - Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A buff for commemorating the L2M launch. A reward is given once per hour. For 1 h., Atk. Spd./ Casting Spd. $s1, Speed $s2, all stats +1. Note!. You cannot get a reward if your character is dead. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29479" toLevel="1" name="L2M Blessing Reward">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29480" toLevel="1" name="Royal Honey Dark Beer">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, all basic stats $s2, Vitality bonus +$s3, P./ M. Def. +$s4. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29481" toLevel="1" name="Glittering Freya's Scroll of Storm">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 10 min. while hunting, Vitality Consumption +$s1, acquired XP/ SP +$s2. The effect remains after death. Cooldown: 9 min. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29482" toLevel="1" name="Freya's Glittering Ice Rose">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11, all basic stats +2. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29483" toLevel="2" name="Glowing Dragon's Attribute Potion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Attribute Attack +$s2, Attribute Resistance +$s3, acquired XP/ SP +$s4. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29484" toLevel="2" name="Shining Nevit's Gold Hourglass">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, acquired XP/ SP while hunting +$s2. Does not stack with Nevit's Gold Hourglass, Fall of the Dragon, or Dandy's Home Run Ball. Cooldown: 5 min. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29485" toLevel="1" name="Gran Kain's Scroll: Enchant Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29486" toLevel="1" name="Gran Kain's Scroll: Enchant Armor">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29487" toLevel="1" name="Warrior Figurine I">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +2% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29488" toLevel="1" name="Warrior Figurine II">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +3%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29489" toLevel="1" name="Mysterious and Special Weapon Enchant Scroll">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A Mysterious Weapon Enchant Scroll. If enchantment to the Blessed Enchant Scroll fails, its enchant value will be reset. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29490" toLevel="1" name="Sweet Dalgona">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +15%, Attribute Attack/ Resistance +100, acquired XP/ SP +5%.The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29491" toLevel="1" name="Dragon Berserker's Splendor">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +5%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29492" toLevel="1" name="Attendance Gift Rune: P./ M. Atk.">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P./ M. Atk. +10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29493" toLevel="1" name="Attendance Gift Rune: Acquired XP">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Acquired XP/ SP +30%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29494" toLevel="1" name="Attendance Gift Rune: Vitality Bonus">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Vitality bonus +50%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29495" toLevel="1" name="Attendance Gift Rune: PvE">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- PvE damage +15%, acquired XP/ SP +30%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29496" toLevel="1" name="Attendance Gift Rune: P./ M. Def.">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P./ M. Def. +10%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29497" toLevel="1" name="Attendance Gift Rune: All Stats">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- STR/ DEX/ CON/ INT/ WIT/ MEN/ CHA/ LUC +1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29498" toLevel="1" name="Anakim's Scroll: Enchant R-grade Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="29499" toLevel="1" name="Anakim's Scroll: Enchant R-grade Armor">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

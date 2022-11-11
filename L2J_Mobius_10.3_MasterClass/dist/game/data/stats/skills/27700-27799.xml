@@ -158,7 +158,7 @@
 		<reuseDelay>7200000</reuseDelay>
 	</skill>
 	<skill id="27705" toLevel="6" name="Shillien's Necklace">
-		<!-- M. Def. +$s1, Dark Resistance +$s2, STR/ INT +$s3, Obstruction/ Confusion/ Stupor/ Petrification Atk. Rate +$s4. When two rings are equipped the effect of the highest level ring is active. -->
+		<!-- M. Def. +$s1, Dark Resistance +$s2, STR/ INT +$s3, Obstruction/ Confusion/ Stupor/ Petrification Atk. Rate +$s4. Effects of two identical rings do not stack, the higher-level ring takes precedence. -->
 		<icon>BranchIcon.Icon.necklace_of_shilen_i00</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -230,7 +230,7 @@
 		</effects>
 	</skill>
 	<skill id="27706" toLevel="1" name="Shillien's Strength">
-		<!-- When being attacked, there's a chance that the amount of PvP damage received will be reduced. -->
+		<!-- With a certain chance, decreases received PvP damage. -->
 		<icon>BranchIcon.Icon.necklace_of_shilen_i00</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -244,7 +244,7 @@
 		<effectPoint>-999</effectPoint>
 	</skill>
 	<skill id="27708" toLevel="6" name="Shillien's Earring">
-		<!-- M. Def. +$s1, Dark Resistance +$s2, STR/ INT +$s3, Obstruction/ Confusion/ Stupor/ Petrification Atk. Rate +$s4, Speed +$s5. When two rings are equipped the effect of the highest level ring is active. -->
+		<!-- M. Def. +$s1, Dark Resistance +$s2, STR/ INT +$s3, Obstruction/ Confusion/ Stupor/ Petrification Resistance +$s4, Speed +$s5. Effects of two identical rings do not stack, the higher-level ring takes precedence. -->
 		<icon>BranchIcon.Icon.earring_of_shilen_i00</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -365,7 +365,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27714" toLevel="1" name="Shillien's Strength">
-		<!-- When being attacked, there's a chance that the amount of PvP damage received will be reduced. -->
+		<!-- With a certain chance, decreases received PvP damage. -->
 		<icon>icon.skill3080</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -476,7 +476,7 @@
 		</effects>
 	</skill>
 	<skill id="27719" toLevel="1" name="La Vie En Rose's Elegant Brooch">
-		<!-- Increases the inventory's size. -->
+		<!-- Expands your inventory. -->
 		<icon>BranchIcon.icon.etc_g_bm_brooch_lavianrose</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -665,52 +665,52 @@
 						<item id="28489" count="1" /> <!-- La Vie En Rose's Magnificent Brooch Jewel -->
 					</item>
 					<item chance="7.75">
-						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Box -->
+						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Pack -->
 					</item>
 					<item chance="2.3">
-						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Box -->
+						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Pack -->
 					</item>
 					<item chance="7.5">
-						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Box -->
+						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Pack -->
 					</item>
 					<item chance="7.72">
-						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Box -->
+						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Pack - Not Available -->
 					</item>
 					<item chance="8.02">
-						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Box -->
+						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Pack -->
 					</item>
 					<item chance="7.39">
-						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Box -->
+						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Pack -->
 					</item>
 					<item chance="7.64">
-						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Box -->
+						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Pack - Not Available -->
 					</item>
 					<item chance="7.69">
-						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Box -->
+						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Pack -->
 					</item>
 					<item chance="2.29">
-						<item id="47701" count="1" /> <!-- La Vie En Rose's Red Cat's Eye Box -->
+						<item id="47701" count="1" /> <!-- La Vie En Rose's Red Cat's Eye Pack -->
 					</item>
 					<item chance="7.66">
-						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Box -->
+						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Pack -->
 					</item>
 					<item chance="7.78">
-						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Box -->
+						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Pack -->
 					</item>
 					<item chance="7.88">
-						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Box -->
+						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Pack -->
 					</item>
 					<item chance="7.73">
-						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Box -->
+						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Pack -->
 					</item>
 					<item chance="3.14">
-						<item id="47702" count="1" /> <!-- La Vie En Rose's Blue Cat's Eye Box -->
+						<item id="47702" count="1" /> <!-- La Vie En Rose's Blue Cat's Eye Pack -->
 					</item>
 					<item chance="7.16">
-						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Box -->
+						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Pack - Not Available -->
 					</item>
 					<item chance="7.16">
-						<item id="38934" count="1" /> <!-- La Vie En Rose's Topaz Box -->
+						<item id="38934" count="1" /> <!-- La Vie En Rose's Topaz Pack -->
 					</item>
 				</items>
 			</effect>
@@ -720,115 +720,115 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27727" toLevel="1" name="Equip Goddess' Accessory - Lv. 1 Necklace">
-		<!-- The necklace imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27728" toLevel="1" name="Unequip Goddess' Accessory - Lv. 1 Necklace">
-		<!-- The light of the necklace imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27729" toLevel="1" name="Equip Goddess' Accessory - Lv. 1 Earring">
-		<!-- The earring imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27730" toLevel="1" name="Unequip Goddess' Accessory - Lv. 1 Earring">
-		<!-- The light of the earring imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27731" toLevel="1" name="Equip Goddess' Accessory - Lv. 1 Ring">
-		<!-- The ring imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27732" toLevel="1" name="Unequip Goddess' Accessory - Lv. 1 Ring">
-		<!-- The light of the ring imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27733" toLevel="1" name="Equip Goddess' Accessory - Lv. 2 Necklace">
-		<!-- The necklace imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27734" toLevel="1" name="Unequip Goddess' Accessory - Lv. 2 Necklace">
-		<!-- The light of the necklace imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27735" toLevel="1" name="Equip Goddess' Accessory - Lv. 2 Earring">
-		<!-- The earring imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27736" toLevel="1" name="Unequip Goddess' Accessory - Lv. 2 Earring">
-		<!-- The light of the earring imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27737" toLevel="1" name="Equip Goddess' Accessory - Lv. 2 Ring">
-		<!-- The ring imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27738" toLevel="1" name="Unequip Goddess' Accessory - Lv. 2 Ring">
-		<!-- The light of the ring imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27739" toLevel="1" name="Equip Goddess' Accessory - Lv. 3 Necklace">
-		<!-- The necklace imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27740" toLevel="1" name="Unequip Goddess' Accessory - Lv. 3 Necklace">
-		<!-- The light of the necklace imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27741" toLevel="1" name="Equip Goddess' Accessory - Lv. 3 Earring">
-		<!-- The earring imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27742" toLevel="1" name="Unequip Goddess' Accessory - Lv. 3 Earring">
-		<!-- The light of the earring imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27743" toLevel="1" name="Equip Goddess' Accessory - Lv. 3 Ring">
-		<!-- The ring imbued with the goddess' power is shining. -->
+		<!-- Imbued with the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 	</skill>
 	<skill id="27744" toLevel="1" name="Unequip Goddess' Accessory - Lv. 3 Ring">
-		<!-- The light of the ring imbued with the goddess' power fades away. -->
+		<!-- Devoid of the divine power and holiness. -->
 		<icon>icon.accessory_punishment_talisman_i01</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="27745" toLevel="1" name="Chef Monkey's Belt">
-		<!-- Max HP/ MP/ CP +300, Weight +12800, Damage +7%, Received Damage -5%, Inventory Slots +18, Attribute Resistance +5. -->
+		<!-- Max HP/ MP/ CP +300, weight limit +12,800, damage +7%, received damage -5%, inventory slots +18, Attribute Resistance +5. -->
 		<icon>BranchIcon.icon.g_monkey_belt</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -969,7 +969,7 @@
 		</effects>
 	</skill>
 	<skill id="27751" toLevel="6" name="Pa'agrio's Earring">
-		<!-- $s1 chance with standard attacks and $s2 chance when casting a skill to inflict $s3 fixed damage. -->
+		<!-- Additional damage +$s3 with a $s1 chance after a physical attack and with a $s2 chance after a magic attack. -->
 		<icon>BranchIcon.Icon.earring_of_paagrio_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1004,7 +1004,7 @@
 		</effects>
 	</skill>
 	<skill id="27752" toLevel="6" name="Eva's Earring">
-		<!-- P./ M. Def. become $s1 for 40 sec. -->
+		<!-- For 40 sec., P./ M. Def. -$s1. -->
 		<icon>BranchIcon.Icon.earring_of_eva_i00</icon>
 		<abnormalTime>40</abnormalTime>
 		<abnormalLevel>
@@ -1132,7 +1132,7 @@
 		</effects>
 	</skill>
 	<skill id="27753" toLevel="6" name="Sayha's Ring">
-		<!-- $s1 chance with standard attacks and $s2 chance when casting a skill to Restrain Physical and Magic skills. -->
+		<!-- Blocks P./ M. skills with a $s1 chance after a physical attack and with a $s2 chance after a magic attack. -->
 		<icon>BranchIcon.Icon.ring_of_sayhas_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1167,7 +1167,7 @@
 		</effects>
 	</skill>
 	<skill id="27754" toLevel="6" name="Maphr's Ring">
-		<!-- $s1 chance with standard attacks and $s2 chance when casting a skill to bind target. -->
+		<!-- Binds the target with a $s1 chance after a physical attack and with a $s2 chance after a magic attack. -->
 		<icon>BranchIcon.Icon.ring_of_maphr_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1214,7 +1214,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="27757" toLevel="1" name="Shillien's Ring">
-		<!-- Resets skill cooldowns. -->
+		<!-- Resets skills' cooldown. -->
 		<icon>BranchIcon.Icon.ring_of_shilen_i00</icon>
 		<operateType>A1</operateType>
 		<reuseDelay>7200000</reuseDelay>
@@ -1223,7 +1223,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27759" toLevel="1" name="Eva's Rune">
-		<!-- Through the power of Eva, increases Max HP by 10% and decreases Cooldown by 20%. Reflects a portion of damage received back onto the enemy. -->
+		<!-- Max HP +10%, Skill Cooldown -20%, Damage Reflection +5%. -->
 		<icon>BranchSys.icon.br_rune_of_eva_i00</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -1310,15 +1310,15 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27773" toLevel="1" name="Royal R-grade Purple Save Ticket">
-		<!-- When using an R-grade Weapon Enchantment Standard Weapon Enchant Scroll, increases the chance by 20%. Can only be used with a 12 or higher Enchantment Item. On success, Enchantment count increases by 1. In case of Enchantment failure, the item is not Crystallized, but the base Enchantment count decreases by 1. -->
+		<!-- When using a common Scroll: Enchant R-grade Weapon, enchant success rate +20%. Can only be used with items enchanted higher than +12. In case of success, increases enchant value by 1. In case of failure, the item is not crystallized, and its enchant value decreases by 1. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27774" toLevel="1" name="Royal R95-grade Purple Save Ticket">
-		<!-- A ticket that enhances probability by 20% when using a Normal Weapon Enchant Scroll to enchant R95-grade Armor. Can only be used on 12+enchanted items. When Enchant succeeds, it increases by 1. When Enchant fails, the item does not crystallize, but the existing enchant value decreases by 1. -->
+		<!-- When using a common Scroll: Enchant R95-grade Weapon, enchant success rate +20%. Can only be used with items enchanted higher than +12. In case of success, increases enchant value by 1. In case of failure, the item is not crystallized, and its enchant value decreases by 1. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27775" toLevel="1" name="Royal R99-grade Purple Save Ticket">
-		<!-- A ticket that enhances probability by 20% when using a Normal Weapon Enchant Scroll to enchant R99-grade Armor. Can only be used on 12+enchanted items. When Enchant succeeds, it increases by 1. When Enchant fails, the item does not crystallize, but the existing enchant value decreases by 1. -->
+		<!-- When using a common Scroll: Enchant R99-grade Weapon, enchant success rate +20%. Can only be used with items enchanted higher than +12. In case of success, increases enchant value by 1. In case of failure, the item is not crystallized, and its enchant value decreases by 1. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27776" toLevel="1" name="Extra Pass: Embryo Command Post">
@@ -1415,7 +1415,7 @@
 		</effects>
 	</skill>
 	<skill id="27783" toLevel="1" name="Agathion's Blessing: Meditation">
-		<!-- For 30sec., P. Def. -90% and restores MP by 134 per second. Effect removed when hit. Cooldown is 30 min. -->
+		<!-- For 30 sec., P. Def. -90%, recovers 134 MP per sec. The effect is removed when hit. -->
 		<icon>icon.skill1430</icon>
 		<operateType>A2</operateType>
 		<hitTime>2000</hitTime>
@@ -1441,7 +1441,7 @@
 		</effects>
 	</skill>
 	<skill id="27784" toLevel="1" name="Agathion's Blessing: Decrease Weight">
-		<!-- Weight Limit +9000, and Inventory Slots +9. -->
+		<!-- Weight limit +9000, inventory slots +9. -->
 		<icon>icon.skill0332</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1463,7 +1463,7 @@
 		<hitTime>1000</hitTime>
 	</skill>
 	<skill id="27786" toLevel="1" name="Ride Elk">
-		<!-- Mounts the Elk. -->
+		<!-- Allows to mount Elk. -->
 		<icon>icon.skilltransform3</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1490,7 +1490,7 @@
 		</effects>
 	</skill>
 	<skill id="27787" toLevel="20" name="Sayha's Talisman">
-		<!-- P. Def. +$s1, M. Def. +$s2, Acquired XP/ SP +$s3. -->
+		<!-- P. Def. +$s1, M. Def. +$s2, acquired XP/ SP +$s3. -->
 		<icon>icon.bm_sayhas_talisman</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -1700,7 +1700,7 @@
 		</effects>
 	</skill>
 	<skill id="27789" toLevel="8" name="Sayha's Grace">
-		<!-- For $s1, Received Damage -$s2. Cannot be stacked with active skills of other talismans. <The character is targeted automatically> -->
+		<!-- For $s1, received damage -$s2. The effect doesn't stack with active skills of other talismans. <You are targeted automatically> -->
 		<icon>
 			<value level="1">icon.sayhas_talisman_g_Lv1</value>
 			<value level="2">icon.sayhas_talisman_g_Lv2</value>
@@ -1791,7 +1791,7 @@
 		</effects>
 	</skill>
 	<skill id="27790" toLevel="4" name="Sayha's Encouragement">
-		<!-- For $s1, PvE Damage +$s2. Cannot be stacked with active skills of other talismans. <The character is targeted automatically> -->
+		<!-- For $s1, PvE damage +$s2. The effect doesn't stack with active skills of other talismans. <You are targeted automatically> -->
 		<icon>
 			<value level="1">icon.sayhas_talisman_pve_Lv1</value>
 			<value level="2">icon.sayhas_talisman_pve_Lv2</value>
@@ -1856,7 +1856,7 @@
 		</effects>
 	</skill>
 	<skill id="27791" toLevel="8" name="Sayha's Anger">
-		<!-- For $s1, PvP Damage +$s2. Cannot be stacked with active skills of other talismans. <The character is targeted automatically> -->
+		<!-- For $s1, PvP damage +$s2. The effect doesn't stack with active skills of other talismans. <You are targeted automatically> -->
 		<icon>
 			<value level="1">icon.sayhas_talisman_pvp_Lv1</value>
 			<value level="2">icon.sayhas_talisman_pvp_Lv2</value>
@@ -1920,7 +1920,7 @@
 		</effects>
 	</skill>
 	<skill id="27792" toLevel="3" name="Sayha's Support">
-		<!-- Recovers HP by $s1, MP by $s2, and CP by $s3. -->
+		<!-- Momentarily recovers $s1 HP, $s2 MP, $s3 CP. -->
 		<icon>icon.bm_sayhas_talisman</icon>
 		<operateType>A1</operateType>
 		<isMagic>2</isMagic>
@@ -1971,7 +1971,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="27795" toLevel="1" name="Head Accessory Fortune Box">
-		<!-- Double-click to get 1 random Hair Accessory Box. -->
+		<!-- Double-click to obtain a head accessory pack. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -2010,52 +2010,52 @@
 						<item id="28489" count="1" /> <!-- La Vie En Rose's Magnificent Brooch Jewel -->
 					</item>
 					<item chance="7.75">
-						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Box -->
+						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Pack -->
 					</item>
 					<item chance="2.3">
-						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Box -->
+						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Pack -->
 					</item>
 					<item chance="7.5">
-						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Box -->
+						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Pack -->
 					</item>
 					<item chance="7.72">
-						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Box -->
+						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Pack - Not Available -->
 					</item>
 					<item chance="8.02">
-						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Box -->
+						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Pack -->
 					</item>
 					<item chance="7.39">
-						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Box -->
+						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Pack -->
 					</item>
 					<item chance="7.64">
-						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Box -->
+						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Pack - Not Available -->
 					</item>
 					<item chance="7.69">
-						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Box -->
+						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Pack -->
 					</item>
 					<item chance="2.29">
-						<item id="47701" count="1" /> <!-- La Vie En Rose's Red Cat's Eye Box -->
+						<item id="47701" count="1" /> <!-- La Vie En Rose's Red Cat's Eye Pack -->
 					</item>
 					<item chance="7.66">
-						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Box -->
+						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Pack -->
 					</item>
 					<item chance="7.78">
-						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Box -->
+						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Pack -->
 					</item>
 					<item chance="7.88">
-						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Box -->
+						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Pack -->
 					</item>
 					<item chance="7.73">
-						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Box -->
+						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Pack -->
 					</item>
 					<item chance="3.14">
-						<item id="47702" count="1" /> <!-- La Vie En Rose's Blue Cat's Eye Box -->
+						<item id="47702" count="1" /> <!-- La Vie En Rose's Blue Cat's Eye Pack -->
 					</item>
 					<item chance="7.16">
-						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Box -->
+						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Pack - Not Available -->
 					</item>
 					<item chance="7.16">
-						<item id="38934" count="1" /> <!-- La Vie En Rose's Topaz Box -->
+						<item id="38934" count="1" /> <!-- La Vie En Rose's Topaz Pack -->
 					</item>
 				</items>
 			</effect>

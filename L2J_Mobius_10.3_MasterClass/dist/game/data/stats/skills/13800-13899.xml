@@ -337,7 +337,7 @@
 		</effects>
 	</skill>
 	<skill id="13816" toLevel="2" name="Kelbim's Dagger">
-		<!-- PvP Damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, and Critical Damage for standard attacks +$s5. Reflects $s6 of the received damage. -->
+		<!-- PvP damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, Critical Damage for basic attacks +$s5. Reflects $s6 of the received damage. -->
 		<icon>
 			<value level="1">icon.weapon_kelbim_cutter_i01</value>
 			<value level="2">icon.kelbim_weapon_cutter_high</value>
@@ -387,7 +387,7 @@
 		</effects>
 	</skill>
 	<skill id="13817" toLevel="2" name="Kelbim's Dual Daggers">
-		<!-- PvP Damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, and Critical Damage for standard attacks +$s5. Reflects $s6 of the received damage. -->
+		<!-- PvP damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, Critical Damage for basic attacks +$s5. Reflects $s6 of the received damage. -->
 		<icon>
 			<value level="1">icon.weapon_kelbim_dual_dagger_i01</value>
 			<value level="2">icon.kelbim_weapon_dual_dagger_high</value>
@@ -437,7 +437,7 @@
 		</effects>
 	</skill>
 	<skill id="13818" toLevel="2" name="Kelbim's Bow">
-		<!-- PvP Damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, and Critical Damage for standard attacks +$s5. Reflects $s6 of the received damage. -->
+		<!-- PvP damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, Critical Damage for basic attacks +$s5. Reflects $s6 of the received damage. -->
 		<icon>
 			<value level="1">icon.weapon_kelbim_bow_i01</value>
 			<value level="2">icon.kelbim_weapon_bow_high</value>
@@ -487,7 +487,7 @@
 		</effects>
 	</skill>
 	<skill id="13819" toLevel="2" name="Kelbim's Crossbow">
-		<!-- PvP Damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, and Critical Damage for standard attacks +$s5. Reflects $s6 of the received damage. -->
+		<!-- PvP damage +$s1, Max HP +$s2, P. Atk. +$s3, Atk. Spd. +$s4, Critical Damage for basic attacks +$s5. Reflects $s6 of the received damage. -->
 		<icon>
 			<value level="1">icon.weapon_kelbim_crossbow_i01</value>
 			<value level="2">icon.kelbim_weapon_crossbow_high</value>
@@ -693,7 +693,7 @@
 		</effects>
 	</skill>
 	<skill id="13830" toLevel="1" name="Christmas Talisman - Ultimate Defense">
-		<!-- P./ M. Def. +5000 for 15 sec. with the power of Talisman. -->
+		<!-- When used, P. Def. +5000, M. Def. +5000 for 15 sec. -->
 		<icon>icon.etc_talisman_i01</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -819,7 +819,7 @@
 		</effects>
 	</skill>
 	<skill id="13837" toLevel="13" name="Shadow Cutter">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_onehand_sword</value>
 			<value level="2">icon.weapon_shadow_onehand_sword</value>
@@ -891,7 +891,7 @@
 		</effects>
 	</skill>
 	<skill id="13838" toLevel="13" name="Shadow Slasher">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_twohand_sword</value>
 			<value level="2">icon.weapon_shadow_twohand_sword</value>
@@ -963,7 +963,7 @@
 		</effects>
 	</skill>
 	<skill id="13839" toLevel="13" name="Shadow Fighter">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_fist</value>
 			<value level="2">icon.weapon_shadow_fist</value>
@@ -1035,7 +1035,7 @@
 		</effects>
 	</skill>
 	<skill id="13840" toLevel="13" name="Shadow Stormer">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_spear</value>
 			<value level="2">icon.weapon_shadow_spear</value>
@@ -1114,7 +1114,7 @@
 		</effects>
 	</skill>
 	<skill id="13841" toLevel="13" name="Shadow Dual Swords">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_dual_sword</value>
 			<value level="2">icon.weapon_shadow_dual_sword</value>
@@ -1186,7 +1186,7 @@
 		</effects>
 	</skill>
 	<skill id="13842" toLevel="13" name="Shadow Shaper">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_dagger</value>
 			<value level="2">icon.weapon_shadow_dagger</value>
@@ -1258,7 +1258,7 @@
 		</effects>
 	</skill>
 	<skill id="13843" toLevel="13" name="Shadow Thrower">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_bow</value>
 			<value level="2">icon.weapon_shadow_bow</value>
@@ -1330,7 +1330,7 @@
 		</effects>
 	</skill>
 	<skill id="13844" toLevel="13" name="Shadow Guardian">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_crossbow</value>
 			<value level="2">icon.weapon_shadow_crossbow</value>
@@ -1402,7 +1402,7 @@
 		</effects>
 	</skill>
 	<skill id="13845" toLevel="13" name="Shadow Buster">
-		<!-- Casting Spd. +$s1. -->
+		<!-- Casting Spd. +$s1 -->
 		<icon>
 			<value level="1">icon.weapon_shadow_magic_sword</value>
 			<value level="2">icon.weapon_shadow_magic_sword</value>
@@ -1739,7 +1739,7 @@
 		</effects>
 	</skill>
 	<skill id="13857" toLevel="15" name="Fury: Kain's Soul Crystal - Lv. 1">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>icon.ensoul_big_p</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1764,7 +1764,7 @@
 		</effects>
 	</skill>
 	<skill id="13858" toLevel="15" name="Focus: Kain's Soul Crystal - Lv. 1">
-		<!-- Critical Rate for standard attacks +$s1. -->
+		<!-- Critical Rate for basic attacks +$s1 -->
 		<icon>icon.ensoul_big_p</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1789,7 +1789,7 @@
 		</effects>
 	</skill>
 	<skill id="13859" toLevel="15" name="Death: Kain's Soul Crystal - Lv. 1">
-		<!-- Critical Damage for standard attacks +$s1. -->
+		<!-- Critical Damage for basic attacks +$s1 -->
 		<icon>icon.ensoul_big_p</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1814,7 +1814,7 @@
 		</effects>
 	</skill>
 	<skill id="13860" toLevel="15" name="Hunter: Kain's Soul Crystal - Lv. 1">
-		<!-- P. Skill Critical Rate +$s1. -->
+		<!-- P. Skill Critical Rate +$s1 -->
 		<icon>icon.ensoul_big_p</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1864,7 +1864,7 @@
 		</effects>
 	</skill>
 	<skill id="13862" toLevel="15" name="Body: Kain's Soul Crystal - Lv. 1">
-		<!-- Max HP +$s1. -->
+		<!-- Max HP +$s1 -->
 		<icon>icon.ensoul_big_p</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1914,7 +1914,7 @@
 		</effects>
 	</skill>
 	<skill id="13864" toLevel="15" name="Acumen: Mermoden's Soul Crystal - Lv. 1">
-		<!-- Casting Spd. +$s1. -->
+		<!-- Casting Spd. +$s1 -->
 		<icon>icon.ensoul_big_m</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1939,7 +1939,7 @@
 		</effects>
 	</skill>
 	<skill id="13865" toLevel="15" name="Wild: Mermoden's Soul Crystal - Lv. 1">
-		<!-- M. Skill Critical Rate +$s1. -->
+		<!-- M. Skill Critical Rate +$s1 -->
 		<icon>icon.ensoul_big_m</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1964,7 +1964,7 @@
 		</effects>
 	</skill>
 	<skill id="13866" toLevel="15" name="Mystic: Mermoden's Soul Crystal - Lv. 1">
-		<!-- M. Skill Critical Damage +$s1. -->
+		<!-- M. Skill Critical Damage +$s1 -->
 		<icon>icon.ensoul_big_m</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1989,7 +1989,7 @@
 		</effects>
 	</skill>
 	<skill id="13867" toLevel="15" name="Soul: Mermoden's Soul Crystal - Lv. 1">
-		<!-- Max MP +$s1. -->
+		<!-- Max MP +$s1 -->
 		<icon>icon.ensoul_big_m</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2014,7 +2014,7 @@
 		</effects>
 	</skill>
 	<skill id="13868" toLevel="15" name="Speed Focus: Leona's Soul Crystal - Lv. 1">
-		<!-- Atk. Spd. +$s1, Critical Rate for standard attacks +$s2. -->
+		<!-- Atk. Spd. +$s1, Critical Rate for basic attacks +$s2. -->
 		<icon>icon.ensoul_big_pp</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2052,7 +2052,7 @@
 		</effects>
 	</skill>
 	<skill id="13869" toLevel="15" name="Speed Death: Leona's Soul Crystal - Lv. 1">
-		<!-- Atk. Spd. +$s1, Critical Damage for standard attacks +$s2. -->
+		<!-- Atk. Spd. +$s1, Critical Damage for basic attacks +$s2. -->
 		<icon>icon.ensoul_big_pp</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2232,7 +2232,7 @@
 		</effects>
 	</skill>
 	<skill id="13873" toLevel="15" name="Critical Death: Leona's Soul Crystal - Lv. 1">
-		<!-- Critical Rate for standard attacks +$s1, Critical Damage for standard attacks +$s2. -->
+		<!-- Critical Rate for basic attacks +$s1, Critical Damage for basic attacks +$s2. -->
 		<icon>icon.ensoul_big_pp</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2270,7 +2270,7 @@
 		</effects>
 	</skill>
 	<skill id="13874" toLevel="15" name="Critical Hunter: Leona's Soul Crystal - Lv. 1">
-		<!-- Critical Rate for standard attacks +$s1, P. Skill Critical Rate +$s2. -->
+		<!-- Critical Rate for basic attacks +$s1, P. Skill Critical Rate +$s2. -->
 		<icon>icon.ensoul_big_pp</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2308,7 +2308,7 @@
 		</effects>
 	</skill>
 	<skill id="13875" toLevel="15" name="Critical Fire: Leona's Soul Crystal - Lv. 1">
-		<!-- Critical Rate for standard attacks +$s1, P. Skill Critical Damage +$s2. -->
+		<!-- Critical Rate for basic attacks +$s1, P. Skill Critical Damage +$s2. -->
 		<icon>icon.ensoul_big_pp</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2346,7 +2346,7 @@
 		</effects>
 	</skill>
 	<skill id="13876" toLevel="15" name="Critical Body: Leona's Soul Crystal - Lv. 1">
-		<!-- Critical Rate for standard attacks +$s1, Max HP +$s2. -->
+		<!-- Critical Rate for basic attacks +$s1, Max HP +$s2. -->
 		<icon>icon.ensoul_big_pp</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2834,7 +2834,7 @@
 		</effects>
 	</skill>
 	<skill id="13887" toLevel="15" name="MP Focus: Lionel's Soul Crystal - Lv. 1">
-		<!-- Max MP +$s1, Critical Rate for standard attacks +$s2. -->
+		<!-- Max MP +$s1, Critical Rate for basic attacks +$s2. -->
 		<icon>icon.ensoul_big_pm</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2886,7 +2886,7 @@
 		</effects>
 	</skill>
 	<skill id="13888" toLevel="15" name="MP Death: Lionel's Soul Crystal - Lv. 1">
-		<!-- Max MP +$s1, Critical Damage for standard attacks +$s2. -->
+		<!-- Max MP +$s1, Critical Damage for basic attacks +$s2. -->
 		<icon>icon.ensoul_big_pm</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3036,22 +3036,22 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="13894" toLevel="2" name="Magic Focus">
-		<!-- Focus with a certain rate when magic skill is used -->
+		<!-- With a certain chance, enables Focus after using a magic skill. -->
 		<icon>icon.ensoul_big_old</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="13895" toLevel="1" name="Magic Blessed Body">
-		<!-- Blessed Body with a certain rate when magic skill is used -->
+		<!-- With a certain chance, enables Blessed Body after using a magic skill. -->
 		<icon>icon.ensoul_big_old</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="13896" toLevel="1" name="Magic Regeneration">
-		<!-- Regeneration with a certain rate when magic skill is used -->
+		<!-- With a certain chance, enables Regeneration after using a magic skill. -->
 		<icon>icon.ensoul_big_old</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="13897" toLevel="2" name="Magic Mental Shield">
-		<!-- Mental Shield with a certain rate when magic skill is used -->
+		<!-- With a certain chance, enables Mental Shield after using a magic skill. -->
 		<icon>icon.ensoul_big_old</icon>
 		<operateType>P</operateType>
 	</skill>

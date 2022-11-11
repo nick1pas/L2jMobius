@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="39101" toLevel="1" name="Chase Down">
-		<!-- Speed +66 for 15 sec. -->
+		<!-- For 15 sec., Speed +66. -->
 		<icon>icon.skill0998</icon>
 		<abnormalTime>15</abnormalTime>
 		<operateType>A2</operateType>
@@ -118,7 +118,7 @@
 		</effects>
 	</skill>
 	<skill id="39173" toLevel="1" name="Stealth Detector">
-		<!-- Fires a Flare to reveal nearby hiding enemies or traps. -->
+		<!-- Fires a flash grenade that shows hidden opponents around you and deals them damage. -->
 		<icon>icon.etc_fairy_fire_i00</icon>
 		<affectRange>300</affectRange>
 		<effectPoint>-1</effectPoint>
@@ -222,7 +222,7 @@
 		</effects>
 	</skill>
 	<skill id="39178" toLevel="1" name="Resolute Attack Scroll">
-		<!-- For $s1, clan members' P. Atk./ M. Atk. +$s2, P. Skill Power/ M. Skill Power +$s3, acquired XP/ SP +$s4. -->
+		<!-- For $s1, clan members' P./ M. Atk. +$s2, P./ M. Skill Power +$s3, acquired XP/ SP +$s4. -->
 		<icon>icon.skill19015</icon>
 		<operateType>A1</operateType>
 		<hitTime>2500</hitTime>
@@ -253,7 +253,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="39182" toLevel="1" name="Festival Fairy's Scroll: Summon Friend">
-		<!-- Summons a selected target. Only available while you're in a party. Cooldown 30 min. -->
+		<!-- Summons a selected character. Available only in a party. Cooldown: 30 min. -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1000</effectPoint>
@@ -279,7 +279,7 @@
 		</effects>
 	</skill>
 	<skill id="39183" toLevel="1" name="Vitality Beer">
-		<!-- Double-click it to recover a certain amount of Vitality. -->
+		<!-- Double click to recover a certain amount of Vitality. -->
 		<icon>icon.bm_honey_beer</icon>
 		<operateType>A1</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -321,7 +321,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="39189" toLevel="2" name="Clan Hall Belt Lv. 1">
-		<!-- When equipped, Max HP/ MP/ CP +$s1, weight +$s2, damage dealt +$s3, Received Damage -$s4, Inventory Slots +$s5. -->
+		<!-- When equipped, Max HP/ MP/ CP +$s1, weight limit +$s2, damage +$s3, received damage -$s4, inventory slots +$s5. -->
 		<icon>icon.event_energy_belt_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>

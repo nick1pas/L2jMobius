@@ -682,7 +682,7 @@
 		</effects>
 	</skill>
 	<skill id="16224" toLevel="8" name="Mass Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<operateType>A2</operateType>
 		<mpConsume>1</mpConsume>
@@ -764,7 +764,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16228" toLevel="5" name="AoE Stun">
-		<!-- Attacks nearby enemies and stuns them for $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Attacks nearby enemies and stuns them for $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>STUN</abnormalType>
@@ -875,7 +875,7 @@
 		</effects>
 	</skill>
 	<skill id="16231" toLevel="5" name="Mass Aerial Yoke">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>AIRBIND</abnormalType>
@@ -966,7 +966,7 @@
 		</effects>
 	</skill>
 	<skill id="16233" toLevel="5" name="Mass Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>TURN_FLEE</abnormalType>
@@ -1181,7 +1181,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16268" toLevel="1" name="Raid Boss (Lv. 94)">
-		<!-- An enhanced monster created by Disciple Lavidos using Enhanced Mahum, Radium was sent to the Garden of Beasts with 4 Tayga bosses to take a part in the monster magic circle. -->
+		<!-- An enhanced beast created by Apostle Lavidos from captives. Enhanced Mahum Radium was sent to the Garden of Beasts with four Tayga warriors to take a part in the monster magic circle. -->
 		<icon>icon.skillraid</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -1206,7 +1206,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16273" toLevel="1" name="Raid Boss (Lv. 94)">
-		<!-- An enhanced monster created by Disciple Lavidos using Enhanced Mahum, Supercium was sent to the Garden of Beasts with 4 Tayga bosses to take a part in the monster magic circle. -->
+		<!-- An enhanced beast created by Apostle Lavidos from captives. Enhanced Mahum Supercium was sent to the Garden of Beasts with four Tayga warriors to take a part in the monster magic circle. -->
 		<icon>icon.skillraid</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -1241,7 +1241,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16280" toLevel="1" name="Raid Boss (Lv. 107)">
-		<!-- Having found the hidden Lachik Dwelling, Disciple Lavidos gained hold of the minds of some of the Lachikios, and turned them into Magikus. The Magikus now stand with the Centaur created by Lavidos at the reed fields, playing a part in the magic circle made of monsters. -->
+		<!-- In his search for the Lachik's hiding place in Aden, Apostle Lavidos tried to enslave Lachikios' mind and partly succeeded at that. He created Magikus from the corrupted part of Lachikios' mind. Now this Magicus, along with the centaurs created by Lavidos, defines one of the magic circle's megaliths. -->
 		<icon>icon.skillraid</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -1266,7 +1266,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16285" toLevel="1" name="Raid Boss (Lv. 107)">
-		<!-- Having found the hidden Lachik Dwelling, Disciple Lavidos gained hold of the minds of some of the Lachikios, and turned them into Kinigos. The Kinigos now stand with the Centaur created by Lavidos at the reed fields, playing a part in the magic circle made of monsters. -->
+		<!-- In his search for the Lachik's hiding place in Aden, Apostle Lavidos tried to enslave Lachikios' mind and partly succeeded at that. He created Kinigos from the corrupted part of Lachikios' mind. Now this Kinigos, along with the centaurs created by Lavidos, defines one of the magic circle's megaliths. -->
 		<icon>icon.skillraid</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -1301,7 +1301,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16292" toLevel="1" name="Raid Boss (Lv. 98)">
-		<!-- Having fallen prey to Disciple Lamia's whispers, Tiera the angel became a fallen angel, and proceeded to descend upon the Valley of Saints with other fallen angels. It is said that upon this descent, bodies of angels that had been guarding the heavens above rained down from the sky. -->
+		<!-- Having fallen prey to Apostle Ramiya's whispers, Tier fell from grace and descended into the Valley of Saints with other fallen angels. It is said that upon this descent, bodies of angels that had been guarding the heavens above rained down from the sky. -->
 		<icon>icon.skillraid</icon>
 		<operateType>P</operateType>
 	</skill>

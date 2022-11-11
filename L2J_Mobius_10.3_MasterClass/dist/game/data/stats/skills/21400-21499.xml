@@ -31,7 +31,7 @@
 		</effects>
 	</skill>
 	<skill id="21402" toLevel="1" name="Wondrous Human Dye - Unbind">
-		<!-- Removes all debuffs and becomes invincible to debuffs for 10 sec. -->
+		<!-- Removes all debuffs and makes you immune to debuffs for 10 sec. -->
 		<icon>icon.skill1904</icon>
 		<operateType>A2</operateType>
 		<hitTime>200</hitTime>
@@ -92,7 +92,7 @@
 		</effects>
 	</skill>
 	<skill id="21404" toLevel="1" name="Wondrous Dark Elf Dye - Disparition">
-		<!-- Cancels all debuffs and renders you immune to targeting for 5 sec. -->
+		<!-- Removes all debuffs and prevents enemies from targeting you for 5 sec. -->
 		<icon>icon.skill1912</icon>
 		<operateType>A2</operateType>
 		<hitTime>200</hitTime>
@@ -395,7 +395,7 @@
 		</effects>
 	</skill>
 	<skill id="21419" toLevel="1" name="Visual Enchant Stone: Damage Reflection Resistance">
-		<!-- Damage Reflection Resistance +5. -->
+		<!-- Damage Reflection Resistance +5%. -->
 		<icon>icon.skill_agathion_special</icon>
 		<operateType>P</operateType>
 		<magicLevel>1</magicLevel>
@@ -406,7 +406,7 @@
 		</effects>
 	</skill>
 	<skill id="21420" toLevel="1" name="Visual Enchant Stone: Damage Reflection Resistance">
-		<!-- Damage Reflection Resistance +7. -->
+		<!-- Damage Reflection Resistance +7%. -->
 		<icon>icon.skill_agathion_special</icon>
 		<operateType>P</operateType>
 		<magicLevel>1</magicLevel>
@@ -479,7 +479,7 @@
 		</effects>
 	</skill>
 	<skill id="21426" toLevel="1" name="Visual Enchant Stone: P. Def.">
-		<!-- Visual Def. +5%. -->
+		<!-- P. Def. +5%. -->
 		<icon>icon.skill_agathion_special</icon>
 		<operateType>P</operateType>
 		<magicLevel>1</magicLevel>
@@ -1155,7 +1155,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="21484" toLevel="1" name="Fancy Fishing Rod">
-		<!-- Acquired XP/ SP +$s1. -->
+		<!-- Acquired XP/ SP +$s1 -->
 		<icon>BranchIcon.icon.weapon_g_fishing_rod</icon>
 		<magicCriticalRate>5</magicCriticalRate>
 		<operateType>P</operateType>

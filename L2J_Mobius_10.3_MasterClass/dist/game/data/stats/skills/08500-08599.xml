@@ -343,7 +343,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1576</npcId> <!-- Ball Trapping Gnosian -->
+				<npcId>1576</npcId> <!-- Ball-trapping Gnosian -->
 			</effect>
 		</effects>
 	</skill>
@@ -361,7 +361,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1577</npcId> <!-- Ball Trapping Orodriel -->
+				<npcId>1577</npcId> <!-- Ball-trapping Orodriel -->
 			</effect>
 		</effects>
 	</skill>
@@ -563,7 +563,7 @@
 		</effects>
 	</skill>
 	<skill id="8530" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%. -->
+		<!-- Max MP +15, Infection Atk. Rate and Resistance +10%. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -582,7 +582,7 @@
 		</effects>
 	</skill>
 	<skill id="8531" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%, Obstruction Resistance +10%. -->
+		<!-- Max MP +15, Infection Atk. Rate and Resistance +10%, Obstruction Resistance +10%. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -602,7 +602,7 @@
 		</effects>
 	</skill>
 	<skill id="8532" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%, Obstruction Resistance/ Atk. Rate +10%. -->
+		<!-- Max MP +15, Infection/ Obstruction Atk. Rate and Resistance +10%. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -623,7 +623,7 @@
 		</effects>
 	</skill>
 	<skill id="8533" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%, Obstruction Resistance/ Atk. Rate +10%. Increases P. Accuracy. -->
+		<!-- Max MP +15, Infection/ Obstruction Atk. Rate and Resistance +10%. Increases P. Accuracy. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -648,7 +648,7 @@
 		</effects>
 	</skill>
 	<skill id="8534" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%, Obstruction Resistance/ Atk. Rate +10%. Increases P. Accuracy and Atk. Spd. -->
+		<!-- Max MP +15, Infection/ Obstruction Atk. Rate and Resistance +10%. Increases P. Accuracy and Atk. Spd. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -677,7 +677,7 @@
 		</effects>
 	</skill>
 	<skill id="8535" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%, Obstruction Resistance/ Atk. Rate +10%. Increases P. Accuracy and Atk./ Casting Spd. -->
+		<!-- Max MP +15, Infection/ Obstruction Atk. Rate and Resistance +10%. Increases P. Accuracy and Atk. Spd./ Casting Spd. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -710,7 +710,7 @@
 		</effects>
 	</skill>
 	<skill id="8536" toLevel="1" name="Ring of Insolence">
-		<!-- Max MP +15, Infection Resistance/ Atk. Rate +10%, Obstruction Resistance/ Atk. Rate +10%. Increases P. Accuracy, Atk./ Casting Spd. and Critical Damage for standard attacks. -->
+		<!-- Max MP +15, Infection/ Obstruction Atk. Rate and Resistance +10%. Increases P. Accuracy, Atk. Spd./ Casting Spd. and Critical Damage for basic attacks. -->
 		<icon>icon.ring_of_oman</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -941,7 +941,7 @@
 		</effects>
 	</skill>
 	<skill id="8543" toLevel="1" name="Pain of Shillien">
-		<!-- Shillien's pain becomes your own. Shillien's suffering wracks your body, having a chance to increase when you're being attacked. Additional effects appear with each increase. When Lv. 3 is achieved, you can then use the Spirit of Shillien. -->
+		<!-- Shillien's pain becomes your own. Shillien's suffering wracks your body, increasing when being hit. Additional effects appear with each increase. -->
 		<icon>icon.skill0788</icon>
 		<operateType>A2</operateType>
 		<mpConsume>37</mpConsume>
@@ -973,7 +973,7 @@
 		</effects>
 	</skill>
 	<skill id="8544" toLevel="1" name="Prophecy of Fire">
-		<!-- For 5 min., party member's Max MP +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. Consumes 10 Spirit Ore. -->
+		<!-- For 5 min., a party member's Max MP +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill1356</icon>
 		<operateType>A2</operateType>
 		<mpConsume>72</mpConsume>
@@ -1178,7 +1178,7 @@
 		</effects>
 	</skill>
 	<skill id="8548" toLevel="1" name="Song of Purification">
-		<!-- Provides an 80% chance of removing a party member's debuffs. And for the next 2 min., increases Debuff Resistance by 30% and increases the power of received HP recovery magic by 30%. -->
+		<!-- With an 80% chance, removes debuffs from a party member. For 2 min., Debuff Resistance +30%, Healing Power +30%. -->
 		<icon>icon.skill0914</icon>
 		<operateType>A2</operateType>
 		<mpConsume>60</mpConsume>
@@ -1343,7 +1343,7 @@
 		</effects>
 	</skill>
 	<skill id="8551" toLevel="1" name="Chant of Victory">
-		<!-- All party members' HP +20%. For 5 min., Max HP +20%, M. Skill Critical Rate +20, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, and P. Accuracy +4, Speed -20%. Consumes 40 Spirit Ore. -->
+		<!-- With the help of the Great Spirit, recovers 20% HP to all party members. For 5 min., M. Skill Critical Rate +20, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, P. Accuracy +4, Speed -20%. Consumes 40 Spirit Ore. -->
 		<icon>icon.skill1363</icon>
 		<operateType>A2</operateType>
 		<mpConsume>284</mpConsume>
@@ -1978,7 +1978,7 @@
 		</effects>
 	</skill>
 	<skill id="8567" toLevel="1" name="Maximum Force Focus">
-		<!-- Immediately increases Momentum to its maximum level. -->
+		<!-- Momentarily increases Momentum to its maximum level. -->
 		<icon>icon.skill0918</icon>
 		<operateType>A1</operateType>
 		<hpConsume>80</hpConsume>
@@ -2005,7 +2005,7 @@
 		</effects>
 	</skill>
 	<skill id="8568" toLevel="1" name="Maximum Sonic Focus">
-		<!-- Immediately increases Momentum to its maximum level. -->
+		<!-- Momentarily increases Momentum to its maximum level. -->
 		<icon>icon.skill0919</icon>
 		<operateType>A1</operateType>
 		<hpConsume>80</hpConsume>
@@ -2192,7 +2192,7 @@
 		</effects>
 	</skill>
 	<skill id="8573" toLevel="1" name="Soul Rage">
-		<!-- Gathers souls and attacks the enemy by hurling projectiles. Possible up to Lv. 40. Critical hit and over-hit are possible. -->
+		<!-- Deals damage to opponents collecting Souls in the process. Available up to Lv. 40. Critical. Over-hit. -->
 		<icon>icon.skill0939</icon>
 		<operateType>A1</operateType>
 		<hpConsume>25</hpConsume>
@@ -2245,7 +2245,7 @@
 		</effects>
 	</skill>
 	<skill id="8575" toLevel="1" name="Soul Vortex">
-		<!-- Stirs up a vortex that inflicts non-attribute magic damage with 112 power. For 30 sec., enemy s Speed -20%, Atk. Spd. -30%, Casting Spd. -30%. Consumes 12 MP per sec. Over-hit. -->
+		<!-- Stirs up a vortex that inflicts non-attribute magic damage with 112 power. For 30 sec., enemy's Speed -20%, Atk. Spd. -30%, Casting Spd. -30%. Consumes 12 MP per sec. Over-hit. -->
 		<icon>icon.skill1512</icon>
 		<operateType>A2</operateType>
 		<mpConsume>105</mpConsume>
@@ -2811,7 +2811,7 @@
 		</effects>
 	</skill>
 	<skill id="8590" toLevel="1" name="Final Servitor">
-		<!-- Makes the servitor possessed with an ancient hero's spirit. For 5 min., HP +20%, Max HP +20%, P. Accuracy +4, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, Critical Rate for standard attacks +20%, Critical Damage for standard attacks +20%, M. Def. +20%, M. Atk. +20%, Casting Spd. +20%, and Debuff Resistance +20. Speed -20%. Consumes 20 Spirit Ore. -->
+		<!-- Makes the servitor possessed with an ancient hero's spirit. For 5 min., HP +20%, Max HP +20%, P. Accuracy +4, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, Critical Rate for basic attacks +20%, Critical Damage for basic attacks +20%, M. Def. +20%, M. Atk. +20%, Casting Spd. +20%, Debuff Resistance +20, Speed -20%. Consumes 20 Spirit Ore. -->
 		<icon>icon.skill1349</icon>
 		<operateType>A2</operateType>
 		<mpConsume>72</mpConsume>
@@ -2902,7 +2902,7 @@
 		</conditions>
 		<effects>
 			<effect name="Summon">
-				<npcId>14837</npcId> <!-- Magnus the Unicorn -->
+				<npcId>14837</npcId> <!-- Magnus -->
 				<lifeTime>3600</lifeTime>
 				<consumeItemId>3031</consumeItemId> <!-- Spirit Ore -->
 				<consumeItemCount>11</consumeItemCount>
@@ -3015,7 +3015,7 @@
 		</effects>
 	</skill>
 	<skill id="8595" toLevel="1" name="Prophecy of Water">
-		<!-- For 5 min., a powerful spirit acts to increase the damage caused by the targeted party member's magic damage by 2, MP Recovery Bonus by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20% and MP Consumption for skill use by 5%. Consumes 10 Spirit Ore. -->
+		<!-- For 5 min., receives help from the Great Spirit: a party member's M. Critical Rate +20, MP Recovery Rate +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill1355</icon>
 		<operateType>A2</operateType>
 		<mpConsume>72</mpConsume>
@@ -3106,7 +3106,7 @@
 		</effects>
 	</skill>
 	<skill id="8596" toLevel="1" name="Prophecy of Wind">
-		<!-- For 5 min., a party member's Max HP +20%, P. Critical Rate for standard attacks +20%, M. Skill Critical Damage +20%, P. Atk. +10%, P./ M. Def. +20%, Atk. Spd./ Casting Spd. +20%, M. Atk. +20%, Debuff Resistance +10%, Speed -20%. With a certain chance, absorbs 5% of the inflicted damage as HP. Consumes 10 Spirit Ore. -->
+		<!-- For 5 min., a party member's Max HP +20%, Critical Rate for basic attacks +20%, M. Skill Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. With a certain chance, absorbs 5% of the inflicted damage as HP. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill1357</icon>
 		<operateType>A2</operateType>
 		<mpConsume>72</mpConsume>
@@ -3190,7 +3190,7 @@
 		</effects>
 	</skill>
 	<skill id="8597" toLevel="1" name="Dance of Siren">
-		<!-- For 2 min., all party members' M. Skill Critical Rate +100%. Additionally increases MP Consumption for songs and dances while the previous song/ dance effects are active. Requires dual swords. -->
+		<!-- For 2 min., party members' M. Skill Critical Rate +100%. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill0365</icon>
 		<operateType>A2</operateType>
 		<mpConsume>60</mpConsume>
@@ -3224,7 +3224,7 @@
 		</effects>
 	</skill>
 	<skill id="8598" toLevel="1" name="Song of Silence">
-		<!-- For 2 min., blocks enemy's P./ M. skills for Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- For 2 min., blocks enemy's P./ M. skills for. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill0437</icon>
 		<operateType>A2</operateType>
 		<mpConsume>54</mpConsume>

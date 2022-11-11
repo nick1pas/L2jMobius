@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="55000" toLevel="4" name="Acquired XP/ SP">
-		<!-- For $s1, Acquired XP/ SP +$s2. The effect remains after death. -->
+		<!-- For $s1, acquired XP/ SP while hunting +$s2. The effect remains after death. -->
 		<icon>icon.etc_recall_exp_scroll</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -51,7 +51,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="55003" toLevel="1" name="1st Class Buff Scroll">
-		<!-- For 20 min., grants the following buffs: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
+		<!-- For 20 min., activates the following effects: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>4000</hitTime>
@@ -89,7 +89,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
@@ -99,7 +99,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="55004" toLevel="2" name="2nd Class Buff Scroll">
-		<!-- For 20 min., grants the following buffs: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
+		<!-- For 20 min., activates the following effects: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i01</icon>
 		<operateType>A1</operateType>
 		<hitTime>4000</hitTime>
@@ -138,7 +138,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>1240</skillId> <!-- Guidance -->
+				<skillId>1240</skillId> <!-- Physical Hit -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
@@ -150,11 +150,11 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>1045</skillId> <!-- Blessed Body -->
+				<skillId>1045</skillId> <!-- Health Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>1048</skillId> <!-- Blessed Soul -->
+				<skillId>1048</skillId> <!-- Mana Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
@@ -162,7 +162,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>2</skillLevel>
 			</effect>
 			<effect name="CallSkill">
@@ -815,7 +815,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="55035" toLevel="1" name="1st Class Buff Scroll">
-		<!-- For 20 min., grants the following buffs: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
+		<!-- For 20 min., activates the following effects: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>4000</hitTime>
@@ -859,7 +859,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Agility -->
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Empower -->
@@ -869,7 +869,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="55036" toLevel="2" name="2nd Class Buff Scroll">
-		<!-- For 20 min., grants the following buffs: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
+		<!-- For 20 min., activates the following effects: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i01</icon>
 		<operateType>A2</operateType>
 		<hitTime>4000</hitTime>
@@ -913,7 +913,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Guidance -->
-				<skillId>1240</skillId> <!-- Guidance -->
+				<skillId>1240</skillId> <!-- Physical Hit -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Death Whisper -->
@@ -925,11 +925,11 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Blessed Body -->
-				<skillId>1045</skillId> <!-- Blessed Body -->
+				<skillId>1045</skillId> <!-- Health Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Blessed Soul -->
-				<skillId>1048</skillId> <!-- Blessed Soul -->
+				<skillId>1048</skillId> <!-- Mana Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Haste -->
@@ -937,7 +937,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Agility -->
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>2</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Empower -->
@@ -985,12 +985,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="55040" toLevel="1" name="Greater Scion Ring">
-		<!-- Max HP +10%, HP Recovery Bonus +10%. Atk. Spd., Casting Spd., P./ M. Accuracy +1, Weight Limit +5000. -->
+		<!-- Max HP +10%, HP Recovery Rate +10%. Atk. Spd., Casting Spd., P. Accuracy +1, M. Accuracy +1, weight limit +5000. -->
 		<icon>icon.event_classic_ring</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="55041" toLevel="1" name="Acquired XP/ SP">
-		<!-- For 60 min., acquired XP/ SP +20%. The effect remains after death. -->
+		<!-- For 60 min., acquired XP/ SP while hunting +20%. The effect remains after death. -->
 		<icon>icon.etc_recall_exp_scroll</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1014,7 +1014,7 @@
 		</effects>
 	</skill>
 	<skill id="55042" toLevel="1" name="Attendance XP Rune">
-		<!-- Acquired XP/ SP +10%. -->
+		<!-- Acquired XP/ SP while hunting +10%. -->
 		<icon>br_cashtex.item.br_cash_rune_of_exp_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1049,13 +1049,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100.0">
-						<item id="29575" count="1" /> <!-- Queen Ant's Ring Lv. 1 - Not Available - Not available -->
+						<item id="29575" count="1" /> <!-- Queen Ant's Ring Lv. 1 - Not Available - Not Available -->
 					</item>
 					<item chance="100.0">
-						<item id="29576" count="1" /> <!-- Orfen's Earring Lv. 1 - Not Available - Not available -->
+						<item id="29576" count="1" /> <!-- Orfen's Earring Lv. 1 - Not Available - Not Available -->
 					</item>
 					<item chance="100.0">
-						<item id="29577" count="1" /> <!-- Ring of Core Lv. 1 - Not Available - Not available -->
+						<item id="29577" count="1" /> <!-- Ring of Core Lv. 1 - Not Available - Not Available -->
 					</item>
 				</items>
 			</effect>
@@ -1106,38 +1106,38 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="49541" count="1" /> <!-- Spellbook Chest -->
+						<item id="49541" count="1" /> <!-- Spellbook Chest - Not Available - Not Available -->
 					</item>
 					<!-- Enchant Scroll -->
 					<item chance="2.083333333333333">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="730" count="1" /> <!-- Scroll: Enchant A-grade Armor (Exchangeable) -->
+						<item id="730" count="1" /> <!-- Scroll: Enchant A-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6569" count="1" /> <!-- Protecting Scroll: Enchant A-grade Weapon (Exchangeable) -->
+						<item id="6569" count="1" /> <!-- Protecting Scroll: Enchant A-grade Weapon -->
 					</item>
 					<!-- Mics -->
 					<item chance="2.083333333333333">
@@ -1147,10 +1147,10 @@
 						<item id="1538" count="1" /> <!-- Improved Scroll of Escape -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit (Exchangeable) -->
+						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="49081" count="1" /> <!-- XP Growth Scroll (Exchangeable) -->
+						<item id="49081" count="1" /> <!-- XP Growth Scroll -->
 					</item>
 					<item chance="2.083333333333333">
 						<item id="49518" count="1" /> <!-- Special Pirate Fruit -->
@@ -1168,23 +1168,23 @@
 						<item id="70235" count="1" /> <!-- Cherry Juice -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not available -->
+						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not Available -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not available -->
+						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not Available -->
 					</item>
 					<item chance="2.083333333333333">
 						<item id="90020" count="1" /> <!-- Best Dye Pack - 3rd Class -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not available -->
+						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not Available -->
 					</item>
 					<!-- Material -->
 					<item chance="2.083333333333333">
 						<item id="1891" count="1" /> <!-- Artisan's Frame -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="1892" count="1" /> <!-- Blacksmith's Frame -->
+						<item id="1892" count="1" /> <!-- Blacksmith' Frame -->
 					</item>
 					<item chance="2.083333333333333">
 						<item id="1893" count="1" /> <!-- Oriharukon -->
@@ -1271,32 +1271,32 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="49541" count="1" /> <!-- Spellbook Chest -->
+						<item id="49541" count="1" /> <!-- Spellbook Chest - Not Available - Not Available -->
 					</item>
 					<!-- Enchant Scroll -->
 					<item chance="2.777777777777778">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor -->
 					</item>
 					<!-- Mics -->
 					<item chance="2.777777777777778">
@@ -1306,10 +1306,10 @@
 						<item id="1538" count="1" /> <!-- Improved Scroll of Escape -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit (Exchangeable) -->
+						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="49081" count="1" /> <!-- XP Growth Scroll (Exchangeable) -->
+						<item id="49081" count="1" /> <!-- XP Growth Scroll -->
 					</item>
 					<item chance="2.777777777777778">
 						<item id="49518" count="1" /> <!-- Special Pirate Fruit -->
@@ -1327,16 +1327,16 @@
 						<item id="70235" count="1" /> <!-- Cherry Juice -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not available -->
+						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not Available -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not available -->
+						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not Available -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not available -->
+						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not Available -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not available -->
+						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not Available -->
 					</item>
 					<!-- Material -->
 					<item chance="2.777777777777778">
@@ -1397,29 +1397,29 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="1.0">
-						<item id="49541" count="1" /> <!-- Spellbook Chest -->
+						<item id="49541" count="1" /> <!-- Spellbook Chest - Not Available - Not Available -->
 					</item>
 					<item chance="1.0">
-						<item id="49491" count="1" /> <!-- D-grade Weapon Pack -->
+						<item id="49491" count="1" /> <!-- D-grade Weapon Pack - Sealed -->
 					</item>
 					<!-- Enchant Scroll -->
 					<item chance="4.0">
-						<item id="955" count="1" /> <!-- Scroll: Enchant D-grade Weapon (Exchangeable) -->
+						<item id="955" count="1" /> <!-- Scroll: Enchant D-grade Weapon -->
 					</item>
 					<item chance="4.0">
-						<item id="956" count="1" /> <!-- Scroll: Enchant D-grade Armor (Exchangeable) -->
+						<item id="956" count="1" /> <!-- Scroll: Enchant D-grade Armor -->
 					</item>
 					<item chance="3.5">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="3.5">
-						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="1.5">
-						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="1.5">
-						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor -->
 					</item>
 					<!-- Mics -->
 					<item chance="6.299666666666667">
@@ -1429,13 +1429,13 @@
 						<item id="1538" count="1" /> <!-- Improved Scroll of Escape -->
 					</item>
 					<item chance="6.299666666666667">
-						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit (Exchangeable) -->
+						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit -->
 					</item>
 					<item chance="0.001">
-						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not available -->
+						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not Available -->
 					</item>
 					<item chance="0.1">
-						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not available -->
+						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not Available -->
 					</item>
 					<!-- Buff Scroll -->
 					<item chance="3.0">
@@ -1448,16 +1448,16 @@
 						<item id="3930" count="1" /> <!-- Scroll: Haste -->
 					</item>
 					<item chance="3.0">
-						<item id="29686" count="1" /> <!-- Scroll: Concentration - Not Available - Not available -->
+						<item id="29686" count="1" /> <!-- Scroll: Concentration - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="29689" count="1" /> <!-- Scroll: Magic Barrier - Not Available - Not available -->
+						<item id="29689" count="1" /> <!-- Scroll: Magic Barrier - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="29690" count="1" /> <!-- Scroll: Blessed Body - Not Available - Not available -->
+						<item id="29690" count="1" /> <!-- Scroll: Blessed Body - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="29691" count="1" /> <!-- Scroll: Blessed Soul - Not Available - Not available -->
+						<item id="29691" count="1" /> <!-- Scroll: Blessed Soul - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
 						<item id="3928" count="1" /> <!-- Scroll: Focus -->
@@ -1469,16 +1469,16 @@
 						<item id="3932" count="1" /> <!-- Scroll: Empower -->
 					</item>
 					<item chance="3.0">
-						<item id="3935" count="1" /> <!-- Scroll: Shield - Not Available - Not available -->
+						<item id="3935" count="1" /> <!-- Scroll: Shield - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="3933" count="1" /> <!-- Scroll: Might - Not Available - Not available -->
+						<item id="3933" count="1" /> <!-- Scroll: Might - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not available -->
+						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not available -->
+						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
 						<item id="4218" count="1" /> <!-- Scroll: Mana Regeneration -->
@@ -1513,7 +1513,7 @@
 		</effects>
 	</skill>
 	<skill id="55047" toLevel="1" name="Romantic Chapeau - Blessed Body">
-		<!-- Max HP +10% for 20 min. -->
+		<!-- For 20 min., Max HP +10%. -->
 		<icon>icon.accessory_archer_hat2_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalType>MAX_HP_UP</abnormalType>
@@ -1565,7 +1565,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="55051" toLevel="4" name="Acquired XP/ SP">
-		<!-- For $s1, Acquired XP/ SP +$s2. The effect remains after death. -->
+		<!-- For $s1, acquired XP/ SP while hunting +$s2. The effect remains after death. -->
 		<icon>icon.etc_recall_exp_scroll</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1613,7 +1613,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="55055" toLevel="1" name="1st Class Buff Scroll">
-		<!-- For 20 min., grants the following buffs: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
+		<!-- For 20 min., activates the following effects: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>4000</hitTime>
@@ -1657,7 +1657,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Agility -->
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Empower -->
@@ -1667,7 +1667,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="55056" toLevel="2" name="2nd Class Buff Scroll">
-		<!-- For 20 min., grants the following buffs: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
+		<!-- For 20 min., activates the following effects: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i01</icon>
 		<operateType>A2</operateType>
 		<hitTime>4000</hitTime>
@@ -1711,7 +1711,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Guidance -->
-				<skillId>1240</skillId> <!-- Guidance -->
+				<skillId>1240</skillId> <!-- Physical Hit -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Death Whisper -->
@@ -1723,11 +1723,11 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Blessed Body -->
-				<skillId>1045</skillId> <!-- Blessed Body -->
+				<skillId>1045</skillId> <!-- Health Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Blessed Soul -->
-				<skillId>1048</skillId> <!-- Blessed Soul -->
+				<skillId>1048</skillId> <!-- Mana Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Haste -->
@@ -1735,7 +1735,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Agility -->
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>2</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Empower -->
@@ -1803,7 +1803,7 @@
 		</effects>
 	</skill>
 	<skill id="55061" toLevel="2" name="Castle XP/ SP Scroll - Normal">
-		<!-- For 20 min., Acquired XP/ SP +35%. Effect remains after death. -->
+		<!-- For 20 min., acquired XP/ SP while hunting +35%. The effect remains after death. -->
 		<icon>icon.etc_recall_exp_scroll</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1836,7 +1836,7 @@
 		</effects>
 	</skill>
 	<skill id="55062" toLevel="2" name="Castle XP/ SP Scroll - Medium">
-		<!-- For 20 min., Acquired XP/ SP +45%. Effect remains after death. -->
+		<!-- For 20 min., acquired XP/ SP while hunting +45%. The effect remains after death. -->
 		<icon>icon.etc_recall_exp_scroll</icon>
 		<abnormalLevel>
 			<value level="1">3</value>
@@ -2124,38 +2124,38 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="49541" count="1" /> <!-- Spellbook Chest -->
+						<item id="49541" count="1" /> <!-- Spellbook Chest - Not Available - Not Available -->
 					</item>
 					<!-- Enchant Scroll -->
 					<item chance="2.083333333333333">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="730" count="1" /> <!-- Scroll: Enchant A-grade Armor (Exchangeable) -->
+						<item id="730" count="1" /> <!-- Scroll: Enchant A-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="6569" count="1" /> <!-- Protecting Scroll: Enchant A-grade Weapon (Exchangeable) -->
+						<item id="6569" count="1" /> <!-- Protecting Scroll: Enchant A-grade Weapon -->
 					</item>
 					<!-- Mics -->
 					<item chance="2.083333333333333">
@@ -2165,10 +2165,10 @@
 						<item id="1538" count="1" /> <!-- Improved Scroll of Escape -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit (Exchangeable) -->
+						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="49081" count="1" /> <!-- XP Growth Scroll (Exchangeable) -->
+						<item id="49081" count="1" /> <!-- XP Growth Scroll -->
 					</item>
 					<item chance="2.083333333333333">
 						<item id="49518" count="1" /> <!-- Special Pirate Fruit -->
@@ -2186,23 +2186,23 @@
 						<item id="70235" count="1" /> <!-- Cherry Juice -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not available -->
+						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not Available -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not available -->
+						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not Available -->
 					</item>
 					<item chance="2.083333333333333">
 						<item id="90020" count="1" /> <!-- Best Dye Pack - 3rd Class -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not available -->
+						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not Available -->
 					</item>
 					<!-- Material -->
 					<item chance="2.083333333333333">
 						<item id="1891" count="1" /> <!-- Artisan's Frame -->
 					</item>
 					<item chance="2.083333333333333">
-						<item id="1892" count="1" /> <!-- Blacksmith's Frame -->
+						<item id="1892" count="1" /> <!-- Blacksmith' Frame -->
 					</item>
 					<item chance="2.083333333333333">
 						<item id="1893" count="1" /> <!-- Oriharukon -->
@@ -2289,32 +2289,32 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="49541" count="1" /> <!-- Spellbook Chest -->
+						<item id="49541" count="1" /> <!-- Spellbook Chest - Not Available - Not Available -->
 					</item>
 					<!-- Enchant Scroll -->
 					<item chance="2.777777777777778">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="6571" count="1" /> <!-- Protecting Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="6572" count="1" /> <!-- Protecting Scroll: Enchant B-grade Armor -->
 					</item>
 					<!-- Mics -->
 					<item chance="2.777777777777778">
@@ -2324,10 +2324,10 @@
 						<item id="1538" count="1" /> <!-- Improved Scroll of Escape -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit (Exchangeable) -->
+						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="49081" count="1" /> <!-- XP Growth Scroll (Exchangeable) -->
+						<item id="49081" count="1" /> <!-- XP Growth Scroll -->
 					</item>
 					<item chance="2.777777777777778">
 						<item id="49518" count="1" /> <!-- Special Pirate Fruit -->
@@ -2345,16 +2345,16 @@
 						<item id="70235" count="1" /> <!-- Cherry Juice -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not available -->
+						<item id="29698" count="1" /> <!-- 2nd Class Buff Scroll - Not Available - Not Available -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not available -->
+						<item id="29695" count="1" /> <!-- Quick Healing Potion - Not Available - Not Available -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not available -->
+						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not Available -->
 					</item>
 					<item chance="2.777777777777778">
-						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not available -->
+						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not Available -->
 					</item>
 					<!-- Material -->
 					<item chance="2.777777777777778">
@@ -2415,29 +2415,29 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="1.0">
-						<item id="49541" count="1" /> <!-- Spellbook Chest -->
+						<item id="49541" count="1" /> <!-- Spellbook Chest - Not Available - Not Available -->
 					</item>
 					<item chance="1.0">
-						<item id="49491" count="1" /> <!-- D-grade Weapon Pack -->
+						<item id="49491" count="1" /> <!-- D-grade Weapon Pack - Sealed -->
 					</item>
 					<!-- Enchant Scroll -->
 					<item chance="4.0">
-						<item id="955" count="1" /> <!-- Scroll: Enchant D-grade Weapon (Exchangeable) -->
+						<item id="955" count="1" /> <!-- Scroll: Enchant D-grade Weapon -->
 					</item>
 					<item chance="4.0">
-						<item id="956" count="1" /> <!-- Scroll: Enchant D-grade Armor (Exchangeable) -->
+						<item id="956" count="1" /> <!-- Scroll: Enchant D-grade Armor -->
 					</item>
 					<item chance="3.5">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="3.5">
-						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="952" count="1" /> <!-- Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="1.5">
-						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="6573" count="1" /> <!-- Protecting Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="1.5">
-						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor (Exchangeable) -->
+						<item id="6574" count="1" /> <!-- Protecting Scroll: Enchant C-grade Armor -->
 					</item>
 					<!-- Mics -->
 					<item chance="6.299666666666667">
@@ -2447,13 +2447,13 @@
 						<item id="1538" count="1" /> <!-- Improved Scroll of Escape -->
 					</item>
 					<item chance="6.299666666666667">
-						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit (Exchangeable) -->
+						<item id="49080" count="1" /> <!-- Rice Cake of Fighting Spirit -->
 					</item>
 					<item chance="0.001">
-						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not available -->
+						<item id="70005" count="1" /> <!-- Sealed Rune Lv. 6 - Not Available - Not Available -->
 					</item>
 					<item chance="0.1">
-						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not available -->
+						<item id="70000" count="1" /> <!-- Sealed Rune Lv. 1 - Not Available - Not Available -->
 					</item>
 					<!-- Buff Scroll -->
 					<item chance="3.0">
@@ -2466,16 +2466,16 @@
 						<item id="3930" count="1" /> <!-- Scroll: Haste -->
 					</item>
 					<item chance="3.0">
-						<item id="29686" count="1" /> <!-- Scroll: Concentration - Not Available - Not available -->
+						<item id="29686" count="1" /> <!-- Scroll: Concentration - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="29689" count="1" /> <!-- Scroll: Magic Barrier - Not Available - Not available -->
+						<item id="29689" count="1" /> <!-- Scroll: Magic Barrier - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="29690" count="1" /> <!-- Scroll: Blessed Body - Not Available - Not available -->
+						<item id="29690" count="1" /> <!-- Scroll: Blessed Body - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="29691" count="1" /> <!-- Scroll: Blessed Soul - Not Available - Not available -->
+						<item id="29691" count="1" /> <!-- Scroll: Blessed Soul - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
 						<item id="3928" count="1" /> <!-- Scroll: Focus -->
@@ -2487,16 +2487,16 @@
 						<item id="3932" count="1" /> <!-- Scroll: Empower -->
 					</item>
 					<item chance="3.0">
-						<item id="3935" count="1" /> <!-- Scroll: Shield - Not Available - Not available -->
+						<item id="3935" count="1" /> <!-- Scroll: Shield - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="3933" count="1" /> <!-- Scroll: Might - Not Available - Not available -->
+						<item id="3933" count="1" /> <!-- Scroll: Might - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not available -->
+						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
-						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not available -->
+						<item id="3931" count="1" /> <!-- Scroll: Agility - Not Available - Not Available -->
 					</item>
 					<item chance="3.0">
 						<item id="4218" count="1" /> <!-- Scroll: Mana Regeneration -->
@@ -2575,7 +2575,7 @@
 		<mpConsume>23</mpConsume>
 	</skill>
 	<skill id="55079" toLevel="4" name="Regeneration">
-		<!-- HP Recovery Rate +10% for 20 min. -->
+		<!-- For 20 min., HP Recovery Rate +10%. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -2597,7 +2597,7 @@
 		<mpConsume>39</mpConsume>
 	</skill>
 	<skill id="55081" toLevel="7" name="Blessed Body">
-		<!-- Max HP +10% for 20 min. -->
+		<!-- For 20 min., Max HP +10%. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -2653,7 +2653,7 @@
 		</effects>
 	</skill>
 	<skill id="55085" toLevel="1" name="1st Class Buff Scroll">
-		<!-- For 10 min., grants the following buffs: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
+		<!-- For 10 min., activates the following effects: Shield Lv. 2, Might Lv. 2, Concentration Lv. 2, Acumen Lv. 1, Wind Walk Lv. 1, Focus Lv. 1, Agility Lv. 1, Empower Lv. 1. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>4000</hitTime>
@@ -2697,7 +2697,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Agility -->
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Empower -->
@@ -2707,7 +2707,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="55086" toLevel="2" name="2nd Class Buff Scroll">
-		<!-- For 10 min., grants the following buffs: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
+		<!-- For 10 min., activates the following effects: Shield Lv. 3, Acumen Lv. 2, Wind Walk Lv. 2, Focus Lv. 2, Regeneration Lv. 1, Guidance Lv. 1, Death Whisper Lv. 1, Magic Barrier Lv. 1, Blessed Body Lv. 1, Blessed Soul Lv. 1, Haste Lv. 1, Agility Lv. 2. -->
 		<icon>BranchIcon.Icon.etc_g_bm_buff_scroll_i01</icon>
 		<operateType>A2</operateType>
 		<hitTime>4000</hitTime>
@@ -2751,7 +2751,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Guidance -->
-				<skillId>1240</skillId> <!-- Guidance -->
+				<skillId>1240</skillId> <!-- Physical Hit -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Death Whisper -->
@@ -2763,11 +2763,11 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Blessed Body -->
-				<skillId>1045</skillId> <!-- Blessed Body -->
+				<skillId>1045</skillId> <!-- Health Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Blessed Soul -->
-				<skillId>1048</skillId> <!-- Blessed Soul -->
+				<skillId>1048</skillId> <!-- Mana Increase -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Haste -->
@@ -2775,7 +2775,7 @@
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Agility -->
-				<skillId>1087</skillId> <!-- Agility -->
+				<skillId>1087</skillId> <!-- Physical Evasion -->
 				<skillLevel>2</skillLevel>
 			</effect>
 			<effect name="CallSkill"> <!-- Empower -->

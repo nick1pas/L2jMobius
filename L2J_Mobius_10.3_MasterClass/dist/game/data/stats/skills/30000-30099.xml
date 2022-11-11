@@ -274,7 +274,7 @@
 		</conditions>
 		<effects>
 			<effect name="TriggerSkillBySkillAttack">
-				<skillId>30005</skillId> <!-- Storm Sign 4 -->
+				<skillId>30005</skillId> <!-- Storm Sign -->
 				<skillLevel>1</skillLevel>
 				<attackSkillId>30003</attackSkillId> <!-- Hydro Flare -->
 				<chance>30</chance>
@@ -329,7 +329,7 @@
 		</effects>
 	</skill>
 	<skill id="30004" toLevel="29" name="Hydro Strike">
-		<!-- Summons the storm that deals magic damage to the target with $s1 power making them faint for $s2 Has a chance to debuff the target once again. Requires a sword or a blunt weapon. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Summons the storm that deals magic damage to the target with $s1 power making them faint for $s2 With a certain chance, applies the enhanced debuff. Requires a sword or a blunt weapon. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill30004</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalType>STUN</abnormalType>
@@ -741,7 +741,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="30008" toLevel="5" name="Wind Blend">
-		<!-- The character blends with the wind for $s1, becoming completely invisible. After that the Traces of Wind effect is granted. Requires a sword or a blunt weapon. -->
+		<!-- The character blends with the wind for $s1, becoming completely invisible. After that the Traces of Wind effect is granted. Requires a sword or a blunt weapon. You can't cancel the effect by yourself. -->
 		<icon>icon.skill30008</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>
@@ -823,7 +823,7 @@
 		</endEffects>
 	</skill>
 	<skill id="30009" toLevel="10" name="Deceptive Blink">
-		<!-- The character teleports back and vanishes for $s1, becoming one with the wind. Speed +$s2. After that the Traces of Wind effect is granted. Requires a sword or a blunt weapon Consumes 10 Spirit Ore. -->
+		<!-- Teleports back and vanishes for $s1, becoming one with the wind. Speed +$s2. After the effect is cancelled, the Traces of Wind effect is applied. Requires a sword or a blunt weapon. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill30009</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1005,7 +1005,7 @@
 		</endEffects>
 	</skill>
 	<skill id="30011" toLevel="19" name="Threatening Wind">
-		<!-- Sends a slashing wind to brand target with Storm Sign Lv. $s1. For $s2, inflicts Faint on the target. There is a chance to debuff the target once again. Requires a sword or blunt weapon. Consumes 1 Spirit Ore. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Sends a slashing wind to brand the target with Storm Sign Lv. $s1. For $s2, inflicts Faint on the target. With a certain chance, applies the enhanced debuff. Requires a sword or a blunt weapon. Consumes 1 Spirit Ore. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill30011</icon>
 		<effectRange>1200</effectRange>
 		<operateType>A1</operateType>
@@ -1438,7 +1438,7 @@
 		</effects>
 	</skill>
 	<skill id="30017" toLevel="6" name="Ultimate Squall">
-		<!-- For $s1, Received P./ M. Critical Damage -$s2. -->
+		<!-- For $s1, received P./ M. Critical Damage -$s2. -->
 		<icon>icon.skill30017</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>
@@ -1568,7 +1568,7 @@
 		</effects>
 	</skill>
 	<skill id="30019" toLevel="15" name="Sayha's Word">
-		<!-- Attacks target with $s1 power dealing magic damage. For $s2, target s Atk./Casting Spd. -$s3, Speed -$s4. Instantly brands target with Storm Sign Lv. $s5. Has a certain chance to brand Sign of Storn Lv. 4. Inflicts $s6 more damage if target is debuffed. Requires a sword or blunt weapon. Consumes 1 Spirit Ore. -->
+		<!-- Attacks target with $s1 power dealing magic damage. For $s2, target's Atk./Casting Spd. -$s3, Speed -$s4. Instantly brands target with Storm Sign Lv. $s5. Has a certain chance to brand Sign of Storn Lv. 4. Inflicts $s6 more damage if target is debuffed. Requires a sword or blunt weapon. Consumes 1 Spirit Ore. -->
 		<icon>icon.skill30019</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1702,7 +1702,7 @@
 		</effects>
 	</skill>
 	<skill id="30020" toLevel="2" name="Sayha's Fury">
-		<!-- For $s1, M. Skill Critical Damage +$s2, Received P./M. Critical Damage -$s3, and Speed + $s4. Requires a sword or a blunt weapon. -->
+		<!-- For $s1, M. Skill Critical Damage +$s2, received P./ M. Critical Damage -$s3, Speed +$s4. Requires a sword or a blunt weapon. -->
 		<icon>icon.skill30020</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>
@@ -2353,7 +2353,7 @@
 		</effects>
 	</skill>
 	<skill id="30043" toLevel="13" name="Eminent Attribute Resistance">
-		<!-- Attribute Attack Bonus +$s1, Fire/ Water/ Wind/ Earth/ Holy Resistance +$s2. -->
+		<!-- Attribute Attack +$s1, Fire/ Water/ Wind/ Earth/ Holy Resistance +$s2. -->
 		<icon>icon.skill11006</icon>
 		<operateType>P</operateType>
 		<magicLevel>
@@ -2505,7 +2505,7 @@
 		</effects>
 	</skill>
 	<skill id="30045" toLevel="3" name="Eminent Ability">
-		<!-- INT +2. -->
+		<!-- INT +$s1. -->
 		<icon>icon.skill11253</icon>
 		<operateType>P</operateType>
 		<magicLevel>

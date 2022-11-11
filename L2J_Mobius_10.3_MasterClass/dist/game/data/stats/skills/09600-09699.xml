@@ -204,7 +204,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="9610" toLevel="1" name="Clan Association - Drum Melody">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. The effect remains after death. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. The effect remains after death. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>
@@ -258,7 +258,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="9613" toLevel="1" name="Clan Association - Harp Melody">
-		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, and Speed +34. Received Critical Damage from standard attacks -30%. The effect remains after death. -->
+		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage from basic attacks -30%. The effect remains after death. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>
@@ -324,7 +324,7 @@
 		</conditions>
 	</skill>
 	<skill id="9617" toLevel="1" name="Scroll of Escape: Isle of Souls' Harbor">
-		<!-- Return to Isle of Souls: Dystopia. -->
+		<!-- Return to Isle of Souls' Harbor -->
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>1</magicLevel>
@@ -341,7 +341,7 @@
 		</conditions>
 	</skill>
 	<skill id="9618" toLevel="1" name="Yum Yum Candy">
-		<!-- Acquired XP/ SP +25%. The effect stacks with that of Nom Nom Candy. Effects of two identical candies do not stack. -->
+		<!-- Acquired XP/ SP +25%. Can be stacked once with Nom Nom Candy. -->
 		<icon>etc_whiteday_candy_i05</icon>
 		<operateType>P</operateType>
 		<hitTime>500</hitTime>
@@ -356,7 +356,7 @@
 		</effects>
 	</skill>
 	<skill id="9619" toLevel="1" name="Nom Nom Candy">
-		<!-- Acquired XP/ SP +25%. The effect stacks with that of Nom Nom Candy. Effects of two identical candies do not stack. -->
+		<!-- Acquired XP/ SP +25%. Can be stacked once with Nom Nom Candy. -->
 		<icon>etc_whiteday_candy_i06</icon>
 		<operateType>P</operateType>
 		<hitTime>500</hitTime>
@@ -442,7 +442,7 @@
 		</conditions>
 	</skill>
 	<skill id="9624" toLevel="1" name="Innocent Heejin's Teleport: Magmeld">
-		<!-- Return to Ancient City Arcan of Magmeld. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -601,7 +601,7 @@
 		</effects>
 	</skill>
 	<skill id="9631" toLevel="1" name="Vitality Maintaining Star Candy">
-		<!-- For 10 min., Vitality is maintained. -->
+		<!-- Sustains Vitality for 60 min. -->
 		<icon>BranchSys.br_rudolf_food_blue_i00</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -740,7 +740,7 @@
 		</conditions>
 	</skill>
 	<skill id="9637" toLevel="1" name="Dandy Hyuk's Teleport: Magmeld">
-		<!-- Return to Ancient City Arcan of Magmeld. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -852,7 +852,7 @@
 		</conditions>
 	</skill>
 	<skill id="9643" toLevel="1" name="Powerful Sooro Teleport: Magmeld">
-		<!-- Return to Ancient City Arcan of Magmeld. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -964,7 +964,7 @@
 		</conditions>
 	</skill>
 	<skill id="9649" toLevel="1" name="Chic Jaebum Teleport: Magmeld">
-		<!-- Return to Ancient City Arcan of Magmeld. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1076,7 +1076,7 @@
 		</conditions>
 	</skill>
 	<skill id="9655" toLevel="1" name="Cute Shinyoung Teleport: Magmeld">
-		<!-- Return to Ancient City Arcan of Magmeld. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1179,7 +1179,7 @@
 		</conditions>
 	</skill>
 	<skill id="9660" toLevel="1" name="Heavenly P. Atk. Cookie (Event)">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. -->
 		<icon>icon.etc_bm_attack_cookie</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1216,7 +1216,7 @@
 		</effects>
 	</skill>
 	<skill id="9661" toLevel="1" name="Heavenly P. Def. Cookie (Event)">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense Rate +$s6, and Shield Defense +$s7. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense Rate +$s6, Shield Defense +$s7. -->
 		<icon>icon.etc_bm_defence_cookie</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1961,7 +1961,7 @@
 						<item id="36151" count="1" /> <!-- Kaliel's Training Scroll -->
 					</item>
 					<item chance="0.035">
-						<item id="36152" count="1" /> <!-- Kaliel's Energy Box -->
+						<item id="36152" count="1" /> <!-- Kaliel's Energy Pack -->
 					</item>
 					<item chance="0.612">
 						<item id="35562" count="1" /> <!-- Destructive Energy -->
@@ -1999,13 +1999,13 @@
 						<item id="32814" count="1" /> <!-- Recipe: R-grade Soulshot (100%) -->
 					</item>
 					<item chance="0.945">
-						<item id="32816" count="1" /> <!-- Recipe: R-grade Blessed Spiritshot (100%) -->
+						<item id="32816" count="1" /> <!-- Recipe: Blessed R-grade Spiritshot (100%) -->
 					</item>
 					<item chance="2.836">
-						<item id="36157" count="1" /> <!-- Scroll: Enchant Hair Accessory Pack -->
+						<item id="36157" count="1" /> <!-- Scroll: Enchant Head Accessory Pack -->
 					</item>
 					<item chance="1.89">
-						<item id="36158" count="1" /> <!-- Hair Accessory Spirit Stone Pack -->
+						<item id="36158" count="1" /> <!-- Head Accessory Spirit Stone Pack -->
 					</item>
 					<item chance="3.867">
 						<item id="35563" count="1" /> <!-- Giant's Energy -->

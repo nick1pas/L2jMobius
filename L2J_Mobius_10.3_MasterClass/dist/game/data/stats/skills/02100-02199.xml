@@ -722,7 +722,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>13006</npcId> <!-- Holiday Tree -->
+				<npcId>13006</npcId> <!-- Christmas Tree -->
 				<npcCount>1</npcCount>
 				<despawnDelay>1200000</despawnDelay>
 			</effect>
@@ -741,14 +741,14 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>13007</npcId> <!-- Special Holiday Tree -->
+				<npcId>13007</npcId> <!-- Special Christmas Tree -->
 				<npcCount>1</npcCount>
 				<despawnDelay>1200000</despawnDelay>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="2139" toLevel="1" name="Special Tree Recovery Bonus">
-		<!-- Holiday tree effect. Increases HP Recovery Rate and MP Recovery Bonus. -->
+		<!-- A special holiday tree effect. Increases HP/ MP Recovery Rate. -->
 		<icon>icon.skill1044</icon>
 		<abnormalLevel>99</abnormalLevel>
 		<abnormalTime>45</abnormalTime>

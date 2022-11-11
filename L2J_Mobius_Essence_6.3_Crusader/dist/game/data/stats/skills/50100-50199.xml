@@ -82,7 +82,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="50110" toLevel="1" name="Pirate's Aqua Splash">
-		<!-- Inflicts damage on the target and nearby enemies with 1876 power. -->
+		<!-- Inflicts damage on the target and enemies around them with 1876 power. -->
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
 		<coolTime>500</coolTime>
@@ -129,7 +129,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="50115" toLevel="1" name="Pirate's Rage">
-		<!-- For $s1, M. Atk. +$s2, P./ M. Def. +$s3. -->
+		<!-- For $s1, P./ M. Atk. +$s2, P./ M. Def. +$s3. -->
 		<icon>icon.skill11832</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -197,7 +197,7 @@
 		</effects>	
 	</skill>
 	<skill id="50124" toLevel="1" name="Lord Ishka's Assassin">
-		<!-- Combat characteristics of the player who killed Lord Ishka are increased. -->
+		<!-- Combat stats of Lord Ishka's killer are increased. -->
 		<icon>icon.skill1042</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -261,14 +261,14 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="90499" count="1" /> <!-- Special Dragon Fruit Lv. 1 (can be exchanged) -->
+						<item id="90499" count="1" /> <!-- Special Dragon Fruit Lv. 1 -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="91856" count="1" /> <!-- Special Dragon Potion Lv. 1 (can be exchanged) -->
+						<item id="91856" count="1" /> <!-- Special Dragon's Miracle Potion Lv. 1 -->
 					</item>
 				</items>
 			</effect>
@@ -297,7 +297,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="91853" count="1" /> <!-- Old House Treasure Chest -->
+						<item id="91853" count="1" /> <!-- Old Home's Treasure Chest -->
 					</item>
 				</items>
 			</effect>
@@ -326,7 +326,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="91853" count="1" /> <!-- Old House Treasure Chest -->
+						<item id="91853" count="1" /> <!-- Old Home's Treasure Chest -->
 					</item>
 				</items>
 			</effect>
@@ -567,7 +567,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50140" toLevel="1" name="Red Lantern - 1st Place">
-		<!-- A magic lantern given as a reward for the 1st place. Prize: XP +100,000,000, SP +2,700,000. Cannot be exchanged, dropped or sold in a private store. Can be stored in a private warehouse. -->
+		<!-- A magic lantern given as a reward for the 1st place. Prize: XP +100,000,000, SP +2,700,000. Cannot be exchanged, dropped or sold in the private store. Can be stored in the private warehouse. -->
 		<icon>icon.etc_holy_grail_i00</icon>
 		<operateType>A1</operateType>
 		<itemConsumeCount>1</itemConsumeCount>
@@ -587,7 +587,7 @@
 		</effects>
 	</skill>
 	<skill id="50141" toLevel="1" name="Purple Lantern - 2nd Place">
-		<!-- A magic lantern given as a reward for the 2nd place. Prize: XP +30,000,000, SP +810,000. Cannot be exchanged, dropped or sold in a private store. Can be stored in a private warehouse. -->
+		<!-- A magic lantern given as a reward for the 2nd place. Prize: XP +30,000,000, SP +810,000. Cannot be exchanged, dropped or sold in the private store. Can be stored in the private warehouse. -->
 		<icon>icon.etc_holy_grail_i01</icon>
 		<operateType>A1</operateType>
 		<itemConsumeCount>1</itemConsumeCount>
@@ -607,7 +607,7 @@
 		</effects>
 	</skill>
 	<skill id="50142" toLevel="1" name="Blue Lantern - 3rd Place">
-		<!-- A magic lantern given as a reward for the 3rd place. Prize: XP +10,000,000, SP +270,000. Cannot be exchanged, dropped or sold in a private store. Can be stored in a private warehouse. -->
+		<!-- A magic lantern given as a reward for the 3rd place. Prize: XP +10,000,000, SP +270,000. Cannot be exchanged, dropped or sold in the private store. Can be stored in the private warehouse. -->
 		<icon>icon.etc_holy_grail_i02</icon>
 		<operateType>A1</operateType>
 		<itemConsumeCount>1</itemConsumeCount>
@@ -627,7 +627,7 @@
 		</effects>
 	</skill>
 	<skill id="50143" toLevel="1" name="Green Lantern - 4th Place">
-		<!-- A magic lantern given as a reward for the 4th place. Prize: XP +5,000,000, SP +135,000. Cannot be exchanged, dropped or sold in a private store. Can be stored in a private warehouse. -->
+		<!-- A magic lantern given as a reward for the 4th place. Prize: XP +5,000,000, SP +135,000. Cannot be exchanged, dropped or sold in the private store. Can be stored in the private warehouse. -->
 		<icon>icon.etc_holy_grail_i03</icon>
 		<operateType>A1</operateType>
 		<itemConsumeCount>1</itemConsumeCount>
@@ -697,21 +697,21 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="49851" count="1" /> <!-- Sayha's Storm Lv. 1 (can be exchanged) -->
+						<item id="49851" count="1" /> <!-- Sayha's Storm Lv. 1 -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="91207" count="1" /> <!-- Blessing of the Wind Chest -->
+						<item id="91207" count="1" /> <!-- Wind's Blessing Chest -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="50.0">
-						<item id="91218" count="1" /> <!-- Panda Transformation Scroll -->
+						<item id="91218" count="1" /> <!-- Transformation Scroll: Panda -->
 					</item>
 					<item chance="50.0">
 						<item id="91219" count="1" /> <!-- Transformation Scroll: Cat -->
@@ -1291,20 +1291,20 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100.0">
-						<item id="91641" count="3" /> <!-- Sayha's Blessing -->
+						<item id="91641" count="3" /> <!-- Sayha's Blessing - Sealed -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="2.04">
-						<item id="730" count="1" /> <!-- Scroll: Enchant A-grade Armor (Exchangeable) -->
+						<item id="730" count="1" /> <!-- Scroll: Enchant A-grade Armor -->
 					</item>
 					<item chance="2.04">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.04">
-						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor (Exchangeable) -->
+						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.04">
 						<item id="49471" count="1" /> <!-- Fire Dragon Pendant Pack -->
@@ -1319,13 +1319,13 @@
 						<item id="49665" count="1" /> <!-- B-grade Armor Pack -->
 					</item>
 					<item chance="2.08">
-						<item id="49674" count="2" /> <!-- XP Growth Scroll -->
+						<item id="49674" count="2" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="2.04">
 						<item id="49790" count="1" /> <!-- +16 C-grade Weapon Pack -->
 					</item>
 					<item chance="2.04">
-						<item id="90907" count="3" /> <!-- Soulshot Ticket -->
+						<item id="90907" count="3" /> <!-- Soulshot Ticket - Sealed -->
 					</item>
 					<item chance="2.04">
 						<item id="91031" count="1" /> <!-- Water Spirit Evolution Stone -->
@@ -1343,22 +1343,22 @@
 						<item id="91216" count="1" /> <!-- +16 B-grade Weapon Pack -->
 					</item>
 					<item chance="2.04">
-						<item id="91641" count="3" /> <!-- Sayha's Blessing -->
+						<item id="91641" count="3" /> <!-- Sayha's Blessing - Sealed -->
 					</item>
 					<item chance="2.04">
-						<item id="91712" count="2" /> <!-- Sayha's Storm Lv. 3 -->
+						<item id="91712" count="2" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
 					</item>
 					<item chance="2.04">
-						<item id="91767" count="1" /> <!-- Enchant Kit: Talisman of Aden -->
+						<item id="91767" count="1" /> <!-- Enchant Kit: Talisman of Aden - Sealed -->
 					</item>
 					<item chance="2.04">
-						<item id="91864" count="1" /> <!-- Dragon Belt Pack -->
+						<item id="91864" count="1" /> <!-- Dragon Belt Pack - Sealed -->
 					</item>
 					<item chance="2.04">
-						<item id="91944" count="1" /> <!-- Book of Light -->
+						<item id="91944" count="1" /> <!-- Spellbook: Light Master Lv. 2 -->
 					</item>
 					<item chance="2.04">
-						<item id="91945" count="1" /> <!-- Book of Shadows -->
+						<item id="91945" count="1" /> <!-- Spellbook: Shadow Master Lv. 2 -->
 					</item>
 					<item chance="2.04">
 						<item id="92034" count="1" /> <!-- Reinforced Jewelry Box -->
@@ -1455,7 +1455,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="50183" toLevel="1" name="Adventurer's Brooch">
-		<!-- Jewel Slots +4 -->
+		<!-- Jewel slots +4 -->
 		<icon>icon.etc_bm_brooch_lavianrose_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1486,7 +1486,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>16055</npcId> <!-- Agathion Griffin -->
+				<npcId>16055</npcId> <!-- Griffin -->
 			</effect>
 		</effects>
 	</skill>
@@ -1872,6 +1872,7 @@
 		</effects>
 	</skill>
 	<skill id="50192" toLevel="8" name="Talisman Bracelet Lv. 1">
+		<!-- Talisman slots $s1 -->
 		<icon>
 			<value level="1">icon.dimension_bracelet_i00</value>
 			<value level="2">icon.dimension_bracelet_i01</value>
@@ -2054,7 +2055,7 @@
 		</effects>
 	</skill>
 	<skill id="50194" toLevel="10" name="Amber">
-		<!-- Interrupts a skill used by the target. <PvP effect> Ignores CP and deals $s1 fixed damage. -->
+		<!-- Interrupts the target's skill casting. <PvP effect> Ignores CP and deals $s1 fixed damage. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<abnormalLevel>
@@ -2219,7 +2220,7 @@
 		</effects>
 	</skill>
 	<skill id="50196" toLevel="10" name="Special Ability: Opal">
-		<!-- For $s1, immunity to debuffs and anomaly states. -->
+		<!-- For $s1, grants immunity to debuffs and anomaly states. -->
 		<icon>icon.etc_bm_jewel_opal_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
@@ -2311,7 +2312,7 @@
 		</effects>
 	</skill>
 	<skill id="50198" toLevel="10" name="Onyx">
-		<!-- Soulshot Damage +$s1 -->
+		<!-- Soulshot damage +$s1 -->
 		<icon>icon.etc_bm_jewel_onyx_i00</icon>
 		<operateType>A2</operateType>
 		<magicCriticalRate>5</magicCriticalRate>

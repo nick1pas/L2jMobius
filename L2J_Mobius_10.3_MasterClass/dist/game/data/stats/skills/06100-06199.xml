@@ -54,7 +54,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6105" toLevel="1" name="Turkey's Mistake">
-		<!-- The stupid turkey's mistake. For 1 h., Max HP +10%, Max MP +10%, Max CP +10%, Speed +15%, P. Atk. +10%, M. Atk. +15%, Critical Rate for standard attacks +5, Critical Damage for standard attacks +15%, M. Skill Critical Rate +2. -->
+		<!-- The stupid turkey's mistake. For 1 h., Max HP +10%, Max MP +10%, Max CP +10%, Speed +15%, P. Atk. +10%, M. Atk. +15%, Critical Rate for basic attacks +5, Critical Damage for basic attacks +15%, M. Skill Critical Rate +2. -->
 		<icon>icon.turkey_buff_i00</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -297,7 +297,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6120" toLevel="1" name="Christmas Gift">
-		<!-- Happy New Year. For 1 h., Max HP +10%, Max MP +10%, Max CP +10%, Speed +15%, P. Atk. +10%, M. Atk. +15%, Critical Rate for standard attacks +5, Critical Damage for standard attacks +15%, M. Skill Critical Rate +2. -->
+		<!-- A Christmas gift. For 1 h., Max HP +10%, Max MP +10%, Max CP +10%, Speed +15%, P. Atk. +10%, M. Atk. +15%, Critical Rate for basic attacks +5, Critical Damage for basic attacks +15%, M. Skill Critical Rate +2. -->
 		<icon>icon.etc_pi_gift_box_i04</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -398,7 +398,7 @@
 		</effects>
 	</skill>
 	<skill id="6123" toLevel="1" name="Agathion's Christmas Gift">
-		<!-- Agathion's New Year's Wish - Vitality is maintained and not consumed. -->
+		<!-- Christmas Gift 3 - Agathion. Doesn't consume Vitality when used. -->
 		<icon>icon.etc_pi_gift_box_i03</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -557,7 +557,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="6131" toLevel="1" name="Decrease Speed">
-		<!-- Mutant Curse: Speed decreases momentarily. Effect 1. -->
+		<!-- Curse of mutated animals: Decreases Speed. Effect 1. -->
 		<icon>icon.skill1160</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -581,7 +581,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6132" toLevel="1" name="Decrease Atk. Spd.">
-		<!-- Mutant Curse: Atk. Spd. decreases momentarily. Effect 1. -->
+		<!-- Curse of mutated animals: Decreases Atk. Spd. Effect 1. -->
 		<icon>icon.skill4038</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -604,7 +604,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6133" toLevel="1" name="Mysterious Effect">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>icon.skill2513</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -689,7 +689,7 @@
 		</conditions>
 	</skill>
 	<skill id="6137" toLevel="1" name="Agathion Chuchu - Mysterious Effect">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>icon.skill2513</icon>
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1057,7 +1057,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6152" toLevel="4" name="Kasha's Yearning">
-		<!-- Kasha's Yearning. P. Atk. increases. -->
+		<!-- Kasha's yearning. Increases P. Atk. -->
 		<icon>
 			<value level="1">icon.skill6152_1</value>
 			<value level="2">icon.skill6152_2</value>
@@ -1115,7 +1115,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6154" toLevel="4" name="Kasha's Despair">
-		<!-- Increases Critical Rate for standard attacks. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Kasha's despair. Increases Critical Rate for basic attacks. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>
 			<value level="1">icon.skill6154_1</value>
 			<value level="2">icon.skill6154_2</value>
@@ -1152,7 +1152,7 @@
 		</effects>
 	</skill>
 	<skill id="6155" toLevel="4" name="Kasha's Despair">
-		<!-- Increases Critical Rate for standard attacks and decreases P. Def. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Increases Critical Rate for basic attacks and decreases P. Def. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>
 			<value level="1">icon.skill6154_1</value>
 			<value level="2">icon.skill6154_2</value>
@@ -1606,7 +1606,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6189" toLevel="1" name="Presentation - Lilith' Steward Battle2">
-		<!-- Inflicted status: Infection (Bleed, Poison). -->
+		<!-- . Inflicted status: Infection (Bleed, Poison). -->
 		<castRange>700</castRange>
 		<effectPoint>-100</effectPoint>
 		<effectRange>1200</effectRange>
@@ -1621,7 +1621,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6190" toLevel="1" name="Presentation - Lilith' Bodyguards Battle1">
-		<!-- Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- . Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<castRange>700</castRange>
 		<effectPoint>-100</effectPoint>
 		<effectRange>1200</effectRange>

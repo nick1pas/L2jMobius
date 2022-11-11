@@ -246,7 +246,7 @@
 		</effects>
 	</skill>
 	<skill id="32310" toLevel="1" name="Joust Lunge">
-		<!-- Thrusts with a spear to deal damage to enemies in front. -->
+		<!-- Thrusts with a spear to deal damage. -->
 		<icon>icon.skill0003</icon>
 		<operateType>A1</operateType>
 		<castRange>100</castRange>
@@ -308,7 +308,7 @@
 		<effectPoint>-1</effectPoint>
 	</skill>
 	<skill id="32317" toLevel="1" name="Call of Seven Signs">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<coolTime>500</coolTime>
@@ -326,7 +326,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32319" toLevel="1" name="Earth Demolition">
-		<!-- Deals powerful physical damage to the target enemy's surroundings. -->
+		<!-- Inflicts great physical damage on the target and nearby enemies. -->
 		<icon>icon.skill0100</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -380,7 +380,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32322" toLevel="1" name="Cyclone Blade">
-		<!-- Deals powerful physical damage to the target enemy's surroundings and decreases their P. Def./ M. Def. for $s1 -->
+		<!-- Deals physical damage to the target and nearby enemies decreasing their P./ M. Def. for $s1 -->
 		<icon>icon.skill10318new</icon>
 		<operateType>A1</operateType>
 		<castRange>650</castRange>
@@ -423,7 +423,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32327" toLevel="1" name="Soul Slash">
-		<!-- Deals powerful physical damage to the target enemy's surroundings. -->
+		<!-- Inflicts great physical damage on the target and nearby enemies. -->
 		<icon>icon.dual_t_atkup</icon>
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
@@ -478,7 +478,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="32333" toLevel="1" name="Stigma of Martyr">
-		<!-- Inflicts Bleed for $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Bleed for $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill32018</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -489,7 +489,7 @@
 		<effectPoint>-500</effectPoint>
 	</skill>
 	<skill id="32334" toLevel="2" name="Undead Creature">
-		<!-- Recovers HP over time for $s1 -->
+		<!-- For $s1, recovers HP over time. -->
 		<icon>icon.skill1310</icon>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -505,7 +505,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="32336" toLevel="1" name="Twisted Greed">
-		<!-- Significantly increases P. Atk./ M. Atk./ Atk. Spd./ Casting Spd. for $s1 -->
+		<!-- For $s1, increases P./ M. Atk., Atk. Spd., Casting Spd. -->
 		<icon>icon.skill32021</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -516,7 +516,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32337" toLevel="1" name="Etina's Gaze">
-		<!-- MP decreases over time and Casting Spd. is significantly reduced for $s1 -->
+		<!-- For $s1, greatly decreases MP and Casting Spd. -->
 		<icon>icon.skill32024</icon>
 		<operateType>A1</operateType>
 		<castRange>3000</castRange>
@@ -526,7 +526,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32338" toLevel="1" name="Blind Fury">
-		<!-- Grants an effect for $s1 that prevents death even when HP reaches 0. -->
+		<!-- Prevents death for $s1 even if HP drops to 0. -->
 		<icon>icon.skill10022</icon>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -554,7 +554,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32341" toLevel="1" name="Atelia's Vicious Strike">
-		<!-- Single Target Powerful Physical Attack -->
+		<!-- A physical attack on a single target. -->
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
 		<operateType>A1</operateType>
@@ -573,7 +573,7 @@
 		</effects>
 	</skill>
 	<skill id="32342" toLevel="1" name="Atelia's Fatal Slasher">
-		<!-- Powerful Physical Attack within Range -->
+		<!-- A ranged physical attack. -->
 		<castRange>40</castRange>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -593,7 +593,7 @@
 		</effects>
 	</skill>
 	<skill id="32343" toLevel="1" name="Atelia Fatal Shot">
-		<!-- Single Target Powerful Physical Attack (Arrow) -->
+		<!-- A physical attack on a single target (ranged). -->
 		<castRange>900</castRange>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -611,7 +611,7 @@
 		</effects>
 	</skill>
 	<skill id="32344" toLevel="1" name="Atelia Spike">
-		<!-- Single Target Normal Magic Attack -->
+		<!-- A basic magic attack on a single target. -->
 		<castRange>900</castRange>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -632,7 +632,7 @@
 		</effects>
 	</skill>
 	<skill id="32345" toLevel="1" name="Atelia Spear">
-		<!-- Single Target Normal Magic Attack (Melee) -->
+		<!-- A basic magic attack on a single target (melee). -->
 		<castRange>900</castRange>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -653,7 +653,7 @@
 		</effects>
 	</skill>
 	<skill id="32346" toLevel="1" name="Atelia Fatal Spike">
-		<!-- Single Target Powerful Magic Attack -->
+		<!-- A magic attack on a single target. -->
 		<castRange>100</castRange>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -674,7 +674,7 @@
 		</effects>
 	</skill>
 	<skill id="32347" toLevel="1" name="Atelia Blast">
-		<!-- Powerful Magic Attack within Range -->
+		<!-- A ranged magic attack. -->
 		<castRange>900</castRange>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -794,7 +794,7 @@
 		<effectPoint>-52</effectPoint>
 	</skill>
 	<skill id="32353" toLevel="1" name="Helios' Grand Plasma">
-		<!-- Creates a powerful electrical storm at and around the target to deal magic damage. -->
+		<!-- Creates a powerful electrical surge dealing magic damage to the target and nearby enemies. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>2500</castRange>
@@ -829,7 +829,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32356" toLevel="1" name="Audience with Emperor Helios">
-		<!-- Decreased Speed. -->
+		<!-- Decreases Speed. -->
 		<icon>icon.skill16612</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -853,7 +853,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32358" toLevel="1" name="Helios Plasma Wall">
-		<!-- Creates a rectangular-shaped wall of electricity at and around a distant target, dealing powerful magic damage and inflicting 25% Mana Burn. -->
+		<!-- Creates a rectangular-shaped wall of electricity dealing magic damage to enemies at a distance. Mana Burn effect +25%. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>2500</castRange>
@@ -888,7 +888,7 @@
 		<effectPoint>-52</effectPoint>
 	</skill>
 	<skill id="32361" toLevel="1" name="Enuma Elish - Blue Lightning">
-		<!-- Helios throws a spear of blue lightning to deal powerful damage to the target and surrounding enemies and drain their MP. -->
+		<!-- Helios' blue lightning deals a lot of damage to the target and nearby enemies, consuming their MP. -->
 		<icon>icon.skill16618</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -899,7 +899,7 @@
 		<effectPoint>-52</effectPoint>
 	</skill>
 	<skill id="32362" toLevel="1" name="Stigma of Deterioration">
-		<!-- Unable to resurrect after dying, and suffers damage over time. -->
+		<!-- You are unable to resurrect after dying and receive damage over time. -->
 		<icon>icon.skill1181</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -908,7 +908,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32363" toLevel="1" name="Stigma of Lightning">
-		<!-- Unable to resurrect after dying, and P./ M. Def. decreases. -->
+		<!-- You are unable to resurrect after dying, and your P./ M. Def. is decreased. -->
 		<icon>icon.skill0048</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -917,7 +917,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32364" toLevel="1" name="Helios's Holy Spike">
-		<!-- Deals powerful magic damage to the target. -->
+		<!-- Deals a lot of magic damage to the target. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>2500</castRange>
@@ -926,7 +926,7 @@
 		<effectPoint>-52</effectPoint>
 	</skill>
 	<skill id="32365" toLevel="1" name="Helios' Bionic Bomb">
-		<!-- Designates a long range target as a living bomb, that erupts in a explosive light around the target to deal powerful magic damage every tick for 5 sec. -->
+		<!-- The target becomes a living bomb. For 5 sec. with every step they make, explosive light deals a lot of magic damage to the target and nearby enemies. -->
 		<icon>icon.skill11030</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -950,7 +950,7 @@
 		<effectPoint>-438</effectPoint>
 	</skill>
 	<skill id="32367" toLevel="1" name="Shield of Light - Pranarach (100%)">
-		<!-- Summons the Shield of Light Pranarach, which prevents receiving more than 100 damage. -->
+		<!-- Summons the Shield of Light that prevents you from dealing more than 100 damage. -->
 		<icon>icon.skill16624</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -970,7 +970,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="32369" toLevel="1" name="Leopold Bomb">
-		<!-- Fires Leopold's cannon at the target to deal powerful magic damage. -->
+		<!-- Fires Leopold's cannon that deals a lot of magic damage to the target. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>3500</castRange>
@@ -993,7 +993,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32371" toLevel="1" name="Leopold Energy Bomb">
-		<!-- Deals powerful magic damage to the target's surroundings and inflicts 30% Mana Burn. -->
+		<!-- Deals a lot of magic damage to the target and nearby enemies. Mana Burn effect 30%. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>3500</castRange>
@@ -1004,7 +1004,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32372" toLevel="1" name="Leopold Mini Gun">
-		<!-- Deals powerful magic damage to the target. -->
+		<!-- Deals a lot of magic damage to the target. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>1200</castRange>
@@ -1040,7 +1040,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32375" toLevel="1" name="Enuma Elish Shot">
-		<!-- Throws a spear of lightning at the target to deal powerful physical damage. -->
+		<!-- Throws a spear of light at the target dealing a lot of physical damage. -->
 		<operateType>A1</operateType>
 		<castRange>1200</castRange>
 		<hitTime>1500</hitTime>
@@ -1061,7 +1061,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32377" toLevel="1" name="Origin Lightning Harpoon">
-		<!-- Throws a harpoon lightning at the target, dealing powerful physical damage and decreasing their P./ M. Def. -->
+		<!-- Deals a lot of physical damage with the light attack. Decreases P./ M. Def. -->
 		<icon>icon.skill0279</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -1073,7 +1073,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="32378" toLevel="1" name="Kentnis Pyle">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<icon>icon.skill1434</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -1083,14 +1083,14 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32379" toLevel="1" name="Force of Giant's Fury">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<operateType>A1</operateType>
 		<hitTime>7000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32380" toLevel="1" name="Fatal Strike">
-		<!-- Single Target Powerful Physical Attack -->
+		<!-- A physical attack on a single target. -->
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
 		<hitTime>1500</hitTime>
@@ -1263,7 +1263,7 @@
 		</effects>
 	</skill>
 	<skill id="32388" toLevel="1" name="Demonic Bleed">
-		<!-- Inflicts Bleed for $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Bleed for $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0096</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -1351,7 +1351,7 @@
 		</effects>
 	</skill>
 	<skill id="32391" toLevel="1" name="Demonic Savagery">
-		<!-- For $s1, increases P. Atk. by $s2, M. Atk. by $s3, Atk. Spd. by $s4, Casting Spd. by $s5. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, Atk. Spd. +$s4, Casting Spd. +$s5. -->
 		<icon>icon.skill1914</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>

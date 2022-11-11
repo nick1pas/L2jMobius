@@ -36,7 +36,7 @@
 		</effects>
 	</skill>
 	<skill id="11001" toLevel="12" name="Superior Weapon Mastery">
-		<!-- M. Atk. +$s1, additional M. Atk. +$s2, Casting Spd. +$s3. Depending on your INT, the Cooldown resets or the duration increases by $s4 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3. Depending on your INT, there is a chance to reset Skill Cooldown or extend skill duration by $s4 times. -->
 		<icon>icon.skill11251</icon>
 		<magicLevel>
 			<value level="1">85</value>
@@ -328,7 +328,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>11007</skillId>
+				<skillId>11007</skillId> <!-- Fire Stance -->
 			</condition>
 		</conditions>
 		<effects>
@@ -359,7 +359,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>11008</skillId>
+				<skillId>11008</skillId> <!-- Water Stance -->
 			</condition>
 		</conditions>
 		<effects>
@@ -396,7 +396,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>11009</skillId>
+				<skillId>11009</skillId> <!-- Wind Stance -->
 			</condition>
 		</conditions>
 		<effects>
@@ -427,7 +427,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>11010</skillId>
+				<skillId>11010</skillId> <!-- Earth Stance -->
 			</condition>
 		</conditions>
 		<effects>
@@ -1480,7 +1480,7 @@
 				</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>11188</skillId> <!-- Freezing Slow -->
+				<skillId>11188</skillId> <!-- Freeze - Slow -->
 				<skillLevel>1</skillLevel>
 				<skillLevelScaleTo>5</skillLevelScaleTo>
 			</effect>
@@ -1835,7 +1835,7 @@
 		</effects>
 	</skill>
 	<skill id="11023" toLevel="11" name="Elemental Destruction">
-		<!-- Inflicts a magic attack imbued with elemental properties on target with $s2 power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11023</icon>
 		<attachToggleGroupId>1</attachToggleGroupId>
 		<operateType>A1</operateType>
@@ -2602,7 +2602,7 @@
 		</effects>
 	</skill>
 	<skill id="11029" toLevel="5" name="Breath of Death">
-		<!-- For $s1, decreases target's HP by $s2 per second. -->
+		<!-- For $s1, HP -$s2 per sec. -->
 		<icon>icon.skill11029</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -2856,7 +2856,7 @@
 		</effects>
 	</skill>
 	<skill id="11034" toLevel="8" name="Elemental Blast">
-		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target and nearby enemies with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11034</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
@@ -2956,7 +2956,7 @@
 		</effects>
 	</skill>
 	<skill id="11035" toLevel="8" name="Elemental Blast (Fire)">
-		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target and nearby enemies with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11034</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
@@ -3039,7 +3039,7 @@
 		</effects>
 	</skill>
 	<skill id="11036" toLevel="8" name="Elemental Blast (Water)">
-		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target and nearby enemies with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11034</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
@@ -3122,7 +3122,7 @@
 		</effects>
 	</skill>
 	<skill id="11037" toLevel="8" name="Elemental Blast (Wind)">
-		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target and nearby enemies with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11034</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
@@ -3205,7 +3205,7 @@
 		</effects>
 	</skill>
 	<skill id="11038" toLevel="8" name="Elemental Blast (Earth)">
-		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target and nearby enemies with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11034</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
@@ -3288,7 +3288,7 @@
 		</effects>
 	</skill>
 	<skill id="11039" toLevel="8" name="Elemental Blast (4 Elements)">
-		<!-- Inflicts a magic attack imbued with elemental properties on target and surrounding enemies with $s2 Power added to attribute damage. Over-hit. -->
+		<!-- Attacks the target and nearby enemies with $s1 attributes. Power $s2. Over-hit. -->
 		<icon>icon.skill11034</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>100</affectRange>
@@ -3371,7 +3371,7 @@
 		</effects>
 	</skill>
 	<skill id="11040" toLevel="8" name="Final Elemental Storm">
-		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
+		<!-- Deals attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -3425,27 +3425,27 @@
 		<attachSkillList>
 			<item>
 				<requiredSkillId>11007</requiredSkillId> <!-- Fire Stance -->
-				<skillId>11041</skillId> <!-- Elemental Final Storm (Fire) -->
+				<skillId>11041</skillId> <!-- Final Elemental Storm (Fire) -->
 			</item>
 			<item>
 				<requiredSkillId>11008</requiredSkillId> <!-- Water Stance -->
-				<skillId>11042</skillId> <!-- Elemental Final Storm (Water) -->
+				<skillId>11042</skillId> <!-- Final Elemental Storm (Water) -->
 			</item>
 			<item>
 				<requiredSkillId>11009</requiredSkillId> <!-- Wind Stance -->
-				<skillId>11043</skillId> <!-- Elemental Final Storm (Wind) -->
+				<skillId>11043</skillId> <!-- Final Elemental Storm (Wind) -->
 			</item>
 			<item>
 				<requiredSkillId>11010</requiredSkillId> <!-- Earth Stance -->
-				<skillId>11044</skillId> <!-- Elemental Final Storm (Earth) -->
+				<skillId>11044</skillId> <!-- Final Elemental Storm (Earth) -->
 			</item>
 			<item>
 				<requiredSkillId>19312</requiredSkillId> <!-- Holy Stance -->
-				<skillId>11045</skillId> <!-- Elemental Final Storm (Holy) -->
+				<skillId>11045</skillId> <!-- Final Elemental Storm (Holy) -->
 			</item>
 			<item>
 				<requiredSkillId>19313</requiredSkillId> <!-- Dark Stance -->
-				<skillId>19316</skillId> <!-- Elemental Final Storm (Dark) -->
+				<skillId>19316</skillId> <!-- Final Elemental Storm (Dark) -->
 			</item>
 		</attachSkillList>
 		<effects>
@@ -3479,7 +3479,7 @@
 		</effects>
 	</skill>
 	<skill id="11041" toLevel="8" name="Final Elemental Storm (Fire)">
-		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
+		<!-- Deals attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -3561,7 +3561,7 @@
 		</effects>
 	</skill>
 	<skill id="11042" toLevel="8" name="Final Elemental Storm (Water)">
-		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
+		<!-- Deals attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -3643,7 +3643,7 @@
 		</effects>
 	</skill>
 	<skill id="11043" toLevel="8" name="Final Elemental Storm (Wind)">
-		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
+		<!-- Deals attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -4468,7 +4468,7 @@
 		</effects>
 	</skill>
 	<skill id="11052" toLevel="11" name="Mass Hell Binding">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill11052</icon>
 		<activateRate>
 			<value fromLevel="1" toLevel="11">50</value>
@@ -4552,7 +4552,7 @@
 		</effects>
 	</skill>
 	<skill id="11053" toLevel="7" name="Mass Hell Binding">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1042</icon>
 		<activateRate>
 			<value fromLevel="1" toLevel="7">70</value>
@@ -5011,7 +5011,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="11058" toLevel="10" name="Shadow Snare">
-		<!-- Creates a danger zone for $s1 that pulls nearby enemies to its center. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown, Pull). -->
+		<!-- Creates a danger zone for $s1 that pulls nearby enemies to its center. Inflicted status: Danger Zone. -->
 		<icon>icon.skill11058</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -5517,7 +5517,7 @@
 		</effects>
 	</skill>
 	<skill id="11068" toLevel="4" name="Burst Casting">
-		<!-- For $s1, decreases magic skill MP Consumption by $s2 and magic skill Cooldown by $s3. Eliminates magic cancel during magic use. M. Atk. and Casting Spd. increase with the level of Mana Burst. -->
+		<!-- For $s1, M. Skill MP Consumption -$s2, M. Skill Cooldown -$s3. Spellcasting cannot be interrupted with damage. Additionally activates the Mana Burst skill. <Mana Burst>. When activated, Arcane Comet Strike's cooldown -15 sec. The skill is renewed with time, increasing M. Atk. and Casting Spd. The max skill level: 4. The effect doesn't stack with that of Superior Burst Casting. -->
 		<icon>icon.skill11068</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -5986,7 +5986,7 @@
 		</effects>
 	</skill>
 	<skill id="11090" toLevel="3" name="Elemental Crash (Earth)">
-		<!-- Holds the target with a certain chance. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- With a certain chance, inflicts Hold on the target. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill11017</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>
@@ -6079,7 +6079,7 @@
 		</effects>
 	</skill>
 	<skill id="11093" toLevel="2" name="Crystal Form">
-		<!-- Cancels Poison/ Bleed/ Hold/ Stun effect. Becomes invincible for $s1 and rapidly recovers HP and MP. -->
+		<!-- Removes a Poison/ Bleed/ Hold/ Stun debuff. Makes you invincible for $s1 and rapidly recovers HP and MP. -->
 		<icon>icon.skill11093</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>10</abnormalTime>

@@ -283,7 +283,7 @@
 		</effects>
 	</skill>
 	<skill id="19304" toLevel="2" name="Easterly Wind">
-		<!-- Critical Damage/ Rate for standard attacks from the flanks +$s1, Critical Damage/ Rate for standard attacks after a backstab +$s2. Also resets Skill Cooldown of the Right Angle Reverse and Easterly Wind Strike skills. -->
+		<!-- Critical Rate/ Damage for basic attacks from the flanks +$s1, Critical Rate/ Damage for basic attacks from behind +$s2. Additionally resets cooldown of the Right Angle Reverse and Easterly Wind Strike skills. -->
 		<icon>icon.skill10705</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -677,7 +677,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>19312</skillId>
+				<skillId>19312</skillId> <!-- Holy Stance -->
 			</condition>
 		</conditions>
 		<effects>
@@ -739,7 +739,7 @@
 		<isMagic>2</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>19313</skillId>
+				<skillId>19313</skillId> <!-- Dark Stance -->
 			</condition>
 		</conditions>
 		<effects>
@@ -869,7 +869,7 @@
 		</effects>
 	</skill>
 	<skill id="19315" toLevel="4" name="Mana Burst">
-		<!-- Increases M. Atk. by $s2 for $s1 Able to cast Quadruple Elemental Blaster if reached level 4. -->
+		<!-- For $s1, M. Atk. +$s2. When the effect expires, the Mana Burst's next level is activated, Arcane Comet Strike's cooldown -15 sec. Maximum 4 levels. -->
 		<icon>icon.skill11046</icon>
 		<abnormalLevel>
 			<value level="1">1</value>

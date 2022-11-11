@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="4700" toLevel="13" name="Queen's Gift">
-		<!-- A buff used by Feline Queen. For $s1, P. Atk. +$s2, P. Accuracy +$s3. -->
+		<!-- A buff used by Feline Queen. For $s1, P. Atk. +$s2, P. Accuracy +$s3. The effect doesn't not stack with that of Emperor's Blessing. -->
 		<icon>icon.skill1331</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -178,7 +178,7 @@
 		</effects>
 	</skill>
 	<skill id="4702" toLevel="13" name="Seraphim's Blessing">
-		<!-- A buff used by Seraphim. For $s1, MP Recovery Rate +$s2, M. Skill Critical Rate +$s3. -->
+		<!-- A buff used by Seraphim. For $s1, MP Recovery Rate +$s2, M. Skill Critical Rate +$s3. The effect doesn't not stack with that of Guard's Blessing. -->
 		<icon>icon.skill1332</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -278,7 +278,7 @@
 		</effects>
 	</skill>
 	<skill id="4703" toLevel="13" name="Seraphim's Gift">
-		<!-- A buff used by Seraphim. For $s1, pM. Skill Cooldown -$s2, M. Atk. +$s3. -->
+		<!-- A buff used by Seraphim. For $s1, M. Skill Cooldown -$s2, M. Atk. +$s3. The effect doesn't not stack with that of Guard's Blessing. -->
 		<icon>icon.skill1332</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -836,7 +836,7 @@
 		</effects>
 	</skill>
 	<skill id="4708" toLevel="14" name="Cursed Strike">
-		<!-- Cursed Man inflicts damage and stun target simultaneously. Power $s1 -->
+		<!-- The Cursed Man stuns the enemy dealing them damage. Power $s1 -->
 		<icon>icon.skill0100</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>9</abnormalTime>
@@ -6096,7 +6096,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="4795" toLevel="1" name="Raid Boss (Lv. 60)">
-		<!-- A mechanical golem owned by the Lord of Innadril Castle. The lord's family has been protected by Eva for generations. This golem was created to protect the Garden of Eva, made by a dwarven master artisan. It is a guard to fend off the Water Dragon Fafurion's troops, or invaders threatening the garden. The dwarven master made two other golems, but this third version was the strongest and became the last one remaining. -->
+		<!-- A mechanical golem owned by the Lord of Innadril Castle. The lord's family has been protected by Eva for generations. This golem was created by a Dwarven artisan to protect the Garden of Eva. Its role is to fend off the Water Dragon Fafurion's troops or other invaders threatening the garden. The Dwarven master made two other golems, but this third version was the strongest. -->
 		<icon>icon.skillraid</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

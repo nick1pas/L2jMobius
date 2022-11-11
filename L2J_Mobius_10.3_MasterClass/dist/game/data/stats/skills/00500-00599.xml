@@ -1680,7 +1680,7 @@
 		</effects>
 	</skill>
 	<skill id="521" toLevel="8" name="Sharpshooting">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, P. Accuracy +$s4, range for crossbows +$s5. The character cannot move while the skill is being used. Requires a crossbow. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, P. Accuracy +$s4, range +$s5. You cannot move while the skill is active. Requires a crossbow. -->
 		<icon>icon.skill0521</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2105,7 +2105,7 @@
 		</effects>
 	</skill>
 	<skill id="529" toLevel="1" name="Elemental Song">
-		<!-- All party members' Fire/ Water/ Wind/ Earth Resistance +$s2 for $s1 Song/ dance MP Consumption is increased if other song/ dance effects are active. -->
+		<!-- For $s1, party members' Fire/ Water/ Wind/ Earth Resistance +$s2. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. -->
 		<icon>icon.skill0529</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2181,7 +2181,7 @@
 		</effects>
 	</skill>
 	<skill id="531" toLevel="9" name="Critical Wound">
-		<!-- For $s1, target's Received Critical Damage from standard attacks +$s2. Requires a dagger or dual daggers. -->
+		<!-- For $s1, the target's received Critical Damage from basic attacks +$s2. Requires a dagger or dual daggers. -->
 		<icon>icon.skill0531</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
@@ -2327,7 +2327,7 @@
 		</effects>
 	</skill>
 	<skill id="536" toLevel="1" name="Over the Body">
-		<!-- Releases combat spirit. For 60 sec., Max HP +35%, HP Recovery Rate +15%, P. Atk. +25%, P. Def. +30%, Atk. Spd. +10%, Speed +10%. Can be used when CP > 80%. -->
+		<!-- Releases combat spirit. For 60 sec., Max HP +35%, HP Recovery Rate +15%, P. Atk. +25%, P. Def. +30%, Atk. Spd. +10%, Speed +10%. Can be used only when CP > 80%. -->
 		<icon>icon.skill0536</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -3277,7 +3277,7 @@
 		</effects>
 	</skill>
 	<skill id="562" toLevel="4" name="Wind of Angel">
-		<!-- A divine Wind that increases P. Evasion of all party members. -->
+		<!-- A divine wind that increases P. Evasion of all party members. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -3643,7 +3643,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="571" toLevel="4" name="Poison Dust">
-		<!-- Sprays poisonous powder all over nearby enemies. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Sprays poisonous powder all over nearby enemies. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill_transform_debuff</icon>
 		<abnormalLevel>
 			<value level="1">6</value>
@@ -4511,7 +4511,7 @@
 		</effects>
 	</skill>
 	<skill id="591" toLevel="1" name="Residence Spirit">
-		<!-- The Max CP of clan members in residence increases by 444. -->
+		<!-- Clan members' Max CP +444 if your clan owns the clan hall. -->
 		<icon>icon.skill0371</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -4537,7 +4537,7 @@
 		</effects>
 	</skill>
 	<skill id="593" toLevel="1" name="Residence Health">
-		<!-- The HP Recovery Bonus of clan members in residence increases by 1.09. -->
+		<!-- Clan members' HP Recovery Rate +1.09, while your clan owns the clan hall. -->
 		<icon>icon.skill0373</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -4550,7 +4550,7 @@
 		</effects>
 	</skill>
 	<skill id="594" toLevel="1" name="Residence Moral">
-		<!-- CP recovery bonus of clan members in residence increases by 1.09. -->
+		<!-- Clan members' CP Recovery Rate +1.09, while your clan owns the clan hall. -->
 		<icon>icon.skill0374</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -4563,7 +4563,7 @@
 		</effects>
 	</skill>
 	<skill id="595" toLevel="1" name="Residence Clarity">
-		<!-- Clan members' MP Recovery Rate +0.47 when in the Clan Hall. -->
+		<!-- Clan members' MP Recovery Rate +0.47, while your clan owns the clan hall. -->
 		<icon>icon.skill0375</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -4602,7 +4602,7 @@
 		</effects>
 	</skill>
 	<skill id="598" toLevel="1" name="Residence Empower">
-		<!-- M. Atk. of clan members in residence increases by 40.4. -->
+		<!-- Clan members' M. Atk. +40.4, while your clan owns the clan hall. -->
 		<icon>icon.skill0378</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

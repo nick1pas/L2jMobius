@@ -603,7 +603,7 @@
 		</effects>
 	</skill>
 	<skill id="54008" toLevel="22" name="Agathion Gemini">
-		<!-- <Effect> When Sayha's Grace is used, acquired XP +$s1 When Sayha's Grace is used, acquired SP +$s1 -->
+		<!-- <Effect> With Sayha's Grace, acquired XP +$s1 With Sayha's Grace, acquired SP +$s1 -->
 		<icon>icon.agathion_gem_star_1</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -724,7 +724,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13557</npcId>
+				<npcId>13557</npcId> <!-- Agathion Taurus -->
 			</effect>
 		</effects>
 	</skill>
@@ -739,7 +739,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13558</npcId>
+				<npcId>13558</npcId> <!-- Agathion Leo -->
 			</effect>
 		</effects>
 	</skill>
@@ -754,7 +754,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13519</npcId>
+				<npcId>13519</npcId> <!-- Scorpio -->
 			</effect>
 		</effects>
 	</skill>
@@ -769,7 +769,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13601</npcId>
+				<npcId>13601</npcId> <!-- Earth Dragon's Agathion Libra -->
 			</effect>
 		</effects>
 	</skill>
@@ -784,7 +784,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13553</npcId>
+				<npcId>13553</npcId> <!-- Agathion Virgo -->
 			</effect>
 		</effects>
 	</skill>
@@ -799,7 +799,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13599</npcId>
+				<npcId>13599</npcId> <!-- Earth Dragon's Agathion Virgo -->
 			</effect>
 		</effects>
 	</skill>
@@ -814,7 +814,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13554</npcId>
+				<npcId>13554</npcId> <!-- Agathion Capricorn -->
 			</effect>
 		</effects>
 	</skill>
@@ -829,7 +829,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13555</npcId>
+				<npcId>13555</npcId> <!-- Agathion Libra -->
 			</effect>
 		</effects>
 	</skill>
@@ -844,7 +844,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13597</npcId>
+				<npcId>13597</npcId> <!-- Fire Dragon's Agathion Aquarius -->
 			</effect>
 		</effects>
 	</skill>
@@ -863,7 +863,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="54020" toLevel="1" name="Bracelet of Power">
-		<!-- HP/ MP Recovery Rate +15%, P. Accuracy +2, M. Accuracy +2, Weight Limit +10,000. -->
+		<!-- HP/ MP Recovery Rate +15%, P. Accuracy +2, M. Accuracy +2, weight limit +10,000. -->
 		<icon>icon.ertheia_bracelet_i01</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1015,7 +1015,7 @@
 		</effects>
 	</skill>
 	<skill id="54028" toLevel="1" name="Spirit's Blessing">
-		<!-- For 20 min., Acquired attribute XP +20%. -->
+		<!-- For 20 min., acquired attribute XP while huntiing +20%. -->
 		<icon>icon.elemental_bless_scrl_i00</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -1269,7 +1269,7 @@
 				<allowSkillAttack>true</allowSkillAttack>
 				<allowNormalAttack>true</allowNormalAttack>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>54036</skillId> <!-- Recover MP -->
+				<skillId>54036</skillId> <!-- Anakim Recovery -->
 				<skillLevel>
 					<value level="6">1</value>
 					<value level="7">2</value>
@@ -1286,7 +1286,7 @@
 			<effect name="TriggerSkillByMagicType" fromLevel="6" toLevel="15">
 				<!-- Recover MP -->
 				<magicTypes>0;1</magicTypes>
-				<skillId>54036</skillId> <!-- Anakim Recover MP -->
+				<skillId>54036</skillId> <!-- Anakim Recovery -->
 				<chance>10</chance>
 				<skillLevel>
 					<value level="6">1</value>
@@ -1378,7 +1378,7 @@
 				<allowSkillAttack>true</allowSkillAttack>
 				<allowNormalAttack>true</allowNormalAttack>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>54037</skillId> <!-- Recover HP -->
+				<skillId>54037</skillId> <!-- Lilith Recovery -->
 				<skillLevel>
 					<value level="6">1</value>
 					<value level="7">2</value>
@@ -1395,7 +1395,7 @@
 			<effect name="TriggerSkillByMagicType" fromLevel="6" toLevel="15">
 				<!-- Recover HP -->
 				<magicTypes>0;1</magicTypes>
-				<skillId>54037</skillId> <!-- Anakim Recover HP -->
+				<skillId>54037</skillId> <!-- Lilith Recovery -->
 				<chance>10</chance>
 				<skillLevel>
 					<value level="6">1</value>
@@ -1710,7 +1710,7 @@
 		<reuseDelay>300000</reuseDelay>
 	</skill>
 	<skill id="54044" toLevel="1" name="Special Sayha's Cloak">
-		<!-- Max HP/ MP +$s1, Acquired XP/ SP +$s2, P. Def. +$s3, M. Def. +$s4, P. Critical Damage/ M. Skill Critical Damage +$s5, Received P. Critical Damage/ Received M. Skill Critical Damage -$s6. -->
+		<!-- Max HP/ MP +$s1, acquired XP/ SP +$s2, P. Def. +$s3, M. Def. +$s4, P. Critical Damage/ M. Skill Critical Damage +$s5, received P. Critical Damage/ received M. Skill Critical Damage -$s6. -->
 		<icon>BranchSys2.br_wing_of_sylphide_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1759,7 +1759,7 @@
 		</effects>
 	</skill>
 	<skill id="54045" toLevel="10" name="+1 Special Sayha's Cloak">
-		<!-- Max HP/ MP +$s1, Acquired XP/ SP +$s2, P. Def. +$s3, M. Def. +$s4, P. Critical Damage +$s5, M. Skill Critical Damage +$s6, Received P. Critical Damage/ Received M. Skill Critical Damage -$s7. -->
+		<!-- Max HP/ MP +$s1, acquired XP/ SP +$s2, P. Def. +$s3, M. Def. +$s4, P. Critical Damage +$s5, M. Skill Critical Damage +$s6, received P. Critical Damage/ received M. Skill Critical Damage -$s7. -->
 		<icon>BranchSys2.br_wing_of_sylphide_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2153,7 +2153,7 @@
 		</effects>
 	</skill>
 	<skill id="54051" toLevel="1" name="Magic Lamp Charging Potion (1-hour)">
-		<!-- Magic Lamp charging rate +20%. -->
+		<!-- Magic Lamp charging rate +20% -->
 		<icon>icon.etc_recall_potion2</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MAGIC_LAMP_RATE</abnormalType>
@@ -2195,22 +2195,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="19.9994">
-						<item id="46254" count="1" /> <!-- Lucky Ball Dundee -->
+						<item id="46254" count="1" /> <!-- Dandy's Home Run Ball - Sealed -->
 					</item>
 					<item chance="19.9994">
-						<item id="49674" count="1" /> <!-- Exp Scroll -->
+						<item id="49674" count="1" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="0.001">
-						<item id="49683" count="1" /> <!-- Baium's Talisman -->
+						<item id="49683" count="1" /> <!-- Talisman of Baium -->
 					</item>
 					<item chance="19.9994">
-						<item id="90405" count="1" /> <!-- Free Teleport Scroll Event -->
+						<item id="90405" count="1" /> <!-- My Teleport Scroll - Sealed -->
 					</item>
 					<item chance="19.9994">
-						<item id="90508" count="1" /> <!-- Special Dragon Fruit Lv. 1 Event -->
+						<item id="90508" count="1" /> <!-- Old Special Dragon Fruit Lv. 1 - Sealed -->
 					</item>
 					<item chance="19.9994">
-						<item id="91763" count="1" /> <!-- PA Points Coin -->
+						<item id="91763" count="1" /> <!-- PA Coin - Sealed -->
 					</item>
 					<item chance="0.001">
 						<item id="90496" count="1" /> <!-- Earth Dragon Belt -->
@@ -2245,22 +2245,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="19.9992">
-						<item id="46254" count="1" /> <!-- Lucky Ball Dundee -->
+						<item id="46254" count="1" /> <!-- Dandy's Home Run Ball - Sealed -->
 					</item>
 					<item chance="19.9992">
-						<item id="49674" count="1" /> <!-- Exp Scroll -->
+						<item id="49674" count="1" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="0.001">
-						<item id="49683" count="1" /> <!-- Baium's Talisman -->
+						<item id="49683" count="1" /> <!-- Talisman of Baium -->
 					</item>
 					<item chance="19.9992">
-						<item id="90405" count="1" /> <!-- Free Teleport Scroll Event -->
+						<item id="90405" count="1" /> <!-- My Teleport Scroll - Sealed -->
 					</item>
 					<item chance="19.9992">
-						<item id="90508" count="1" /> <!-- Special Dragon Fruit Lv. 1 Event -->
+						<item id="90508" count="1" /> <!-- Old Special Dragon Fruit Lv. 1 - Sealed -->
 					</item>
 					<item chance="19.9992">
-						<item id="91763" count="1" /> <!-- PA Points Coin -->
+						<item id="91763" count="1" /> <!-- PA Coin - Sealed -->
 					</item>
 					<item chance="0.001">
 						<item id="90496" count="1" /> <!-- Earth Dragon Belt -->
@@ -2269,7 +2269,7 @@
 						<item id="90497" count="1" /> <!-- Fire Dragon Belt -->
 					</item>
 					<item chance="0.001">
-						<item id="91012" count="1" /> <!-- Top-grade A-grade Weapon Box -->
+						<item id="91012" count="1" /> <!-- Top-grade A-grade Weapon Pack -->
 					</item>
 				</items>
 			</effect>
@@ -2348,7 +2348,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="54067" toLevel="1" name="Sayha's Storm Lv. 3 - 1 h.">
-		<!-- For 1 h., Sayha's Grace Consumption +100%, acquired XP/ SP +200%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
+		<!-- For 1 h., Sayha's Grace Consumption +100%, acquired XP/ SP while hunting +200%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
 		<icon>icon.bm_sayha_storm</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -2377,7 +2377,7 @@
 		</effects>
 	</skill>
 	<skill id="54068" toLevel="1" name="Sayha's Gust - Event">
-		<!-- For 20 min., Sayha's Grace Consumption +100%, Acquired XP/ SP +300%. Cooldown: 1 min. The effect remains after death. -->
+		<!-- For 20 min. while hunting, Sayha's Grace Consumption +100%, acquired XP/ SP +300%. Cooldown: 1 min. The effect remains after death. -->
 		<icon>icon.ev_magic_flame_game_wind2</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -2406,7 +2406,7 @@
 		</effects>
 	</skill>
 	<skill id="54069" toLevel="1" name="Magic Fire (Event)">
-		<!-- Magic Lamp charging rate +100%. -->
+		<!-- Magic Lamp charging rate +100% -->
 		<icon>icon.bm_soul_of_shilen</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MAGIC_LAMP_RATE</abnormalType>
@@ -2605,28 +2605,28 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="19.9778">
-						<item id="46254" count="1" /> <!-- Lucky Ball Dundee -->
+						<item id="46254" count="1" /> <!-- Dandy's Home Run Ball - Sealed -->
 					</item>
 					<item chance="19.9778">
-						<item id="49674" count="1" /> <!-- Exp Scroll -->
+						<item id="49674" count="1" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="19.9778">
-						<item id="91763" count="1" /> <!-- PA Points Coin -->
+						<item id="91763" count="1" /> <!-- PA Coin - Sealed -->
 					</item>
 					<item chance="19.9778">
-						<item id="90508" count="1" /> <!-- Special Dragon Fruit Lv. 1 Event -->
+						<item id="90508" count="1" /> <!-- Old Special Dragon Fruit Lv. 1 - Sealed -->
 					</item>
 					<item chance="19.9778">
-						<item id="90405" count="1" /> <!-- Free Teleport Scroll Event -->
+						<item id="90405" count="1" /> <!-- My Teleport Scroll - Sealed -->
 					</item>
 					<item chance="0.1">
-						<item id="91626" count="1" /> <!-- S-grade Armor Box -->
+						<item id="91626" count="1" /> <!-- S-grade Armor Pack -->
 					</item>
 					<item chance="0.01">
 						<item id="91625" count="1" /> <!-- S-grade Weapon Pack -->
 					</item>
 					<item chance="0.001">
-						<item id="49683" count="1" /> <!-- Baium's Talisman -->
+						<item id="49683" count="1" /> <!-- Talisman of Baium -->
 					</item>
 				</items>
 			</effect>
@@ -3054,7 +3054,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100.0">
-						<item id="91794" count="1" /> <!-- Lakfi-Lakfi's Oin -->
+						<item id="91794" count="1" /> <!-- Lakfi-Lakfi's Oink - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -3127,7 +3127,7 @@
 		</effects>
 	</skill>
 	<skill id="54091" toLevel="5" name="Lakfi-Lakfi's Energy">
-		<!-- STR/ INT/ CON/ MEN/ DEX/ WIT +1. When the buff is cancelled, you obtain a gift from Lakfi-Lakfi. Note! The gift can't be obtained if your character is dead or if there is no free space in your inventory. You can't get the next level buff if your character is dead. -->
+		<!-- STR +1, INT +1, CON +1, MEN +1, DEX +1, WIT +1. When the buff is cancelled, you obtain a gift from Lakfi-Lakfi. Note! The gift can't be obtained if your character is dead or if there is no free space in your inventory. You can't get the next level buff if your character is dead. -->
 		<icon>icon.skill11540</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>

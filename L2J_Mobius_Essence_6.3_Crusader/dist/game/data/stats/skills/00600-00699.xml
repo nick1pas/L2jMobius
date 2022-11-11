@@ -353,7 +353,7 @@
 		</effects>
 	</skill>
 	<skill id="622" toLevel="3" name="Ultimate Escape">
-		<!-- For $s1 P. Evasion +$s2 M. Evasion +$s2 P. Skill Evasion +$s3 M. Skill Evasion +$s3 Speed +$s4 -->
+		<!-- Duration: $s1 P. Evasion +$s2 M. Evasion +$s2 P. Skill Evasion +$s3 M. Skill Evasion +$s3 Speed +$s4 -->
 		<icon>icon.skill0622</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -502,7 +502,7 @@
 		</effects>
 	</skill>
 	<skill id="627" toLevel="10" name="Mental Panic Shot">
-		<!-- <Fear Skill> The effect lasts for $s1 Frightens the enemy. -->
+		<!-- <Fear skill> Attacks the target with $s1 power. For $s2, inflicts Fear on the target. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
 		<abnormalType>TURN_FLEE</abnormalType>

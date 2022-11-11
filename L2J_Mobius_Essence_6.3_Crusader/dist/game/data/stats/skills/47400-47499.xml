@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="47400" toLevel="3" name="Thorn Shot">
+		<!-- <Suppression skill> Shoots the target in the leg. Power $s1. For 5 sec., the target's Speed $s2. Applies a debuff that prevents the target from using gap-closing skills. Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<castRange>700</castRange>
 		<effectPoint>
@@ -60,6 +61,7 @@
 		</effects>
 	</skill>
 	<skill id="47401" toLevel="1" name="Thorn Shot">
+		<!-- You cannot use gap-closing skills. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -77,6 +79,7 @@
 		</effects>
 	</skill>
 	<skill id="47402" toLevel="3" name="Chain Arrest">
+		<!-- <Suppression skill> Deals damage to the target and enemies around them. Power $s1. Holds them for $s2 The skill affects enemies one by one, starting from the nearest to the target. Ignores Shield Defense. Ignores $s3 the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<affectLimit>1-20</affectLimit>
 		<affectRange>200</affectRange>
@@ -134,6 +137,7 @@
 		</effects>
 	</skill>
 	<skill id="47403" toLevel="3" name="Chain Arrest">
+		<!-- The body is bound and unable to move. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -161,6 +165,7 @@
 		</effects>
 	</skill>
 	<skill id="47404" toLevel="2" name="Flame Arrow">
+		<!-- <Infection skill> Attacks enemies at the front with $s1 power. For $s2, constantly decreases HP. Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<castRange>900</castRange>
 		<effectPoint>
@@ -214,6 +219,7 @@
 		</effects>
 	</skill>
 	<skill id="47405" toLevel="2" name="Flame Arrow">
+		<!-- Constantly drains HP. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -249,6 +255,7 @@
 		</effects>
 	</skill>
 	<skill id="47406" toLevel="2" name="Arrow Shower">
+		<!-- <Suppression skill> Attacks the target and enemies around them with $s1 power. Duration: 10 sec. Atk. Spd. $s2 Casting Spd. $s2 Speed $s2 Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<castRange>900</castRange>
 		<effectPoint>
@@ -302,6 +309,7 @@
 		</effects>
 	</skill>
 	<skill id="47407" toLevel="2" name="Arrow Shower">
+		<!-- Atk. Spd. $s1 Casting Spd. $s1 Speed $s1 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -351,6 +359,7 @@
 		</effects>
 	</skill>
 	<skill id="47408" toLevel="2" name="Piercing Arrow">
+		<!-- Attacks enemies at the front with $s1 power. Duration: 10 sec. P. Atk. $s2 M. Atk. $s2 P. Def. $s2 M. Def. $s2 Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<castRange>900</castRange>
 		<effectPoint>
@@ -404,6 +413,7 @@
 		</effects>
 	</skill>
 	<skill id="47409" toLevel="2" name="Piercing Arrow">
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s1 M. Def. $s1 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -460,6 +470,7 @@
 		</effects>
 	</skill>
 	<skill id="47410" toLevel="2" name="Devious Shot">
+		<!-- Attacks the target and enemies around them with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<affectLimit>1-20</affectLimit>
 		<affectRange>200</affectRange>
@@ -505,6 +516,7 @@
 		</effects>
 	</skill>
 	<skill id="47411" toLevel="3" name="Steady Aim">
+		<!-- Accurate shooting increases the chance of lethal attacks. P. Accuracy $s1 P. Atk. $s2 P. Critical Rate $s3 P. Skill Critical Rate $s4 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -591,6 +603,7 @@
 		</effects>
 	</skill>
 	<skill id="47412" toLevel="3" name="Alacrity">
+		<!-- Swift movements let you attack more effectively. P. Atk. $s1 Atk. Spd. $s2 Speed $s3 P. Skill Cooldown $s4 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -668,6 +681,7 @@
 		</effects>
 	</skill>
 	<skill id="47413" toLevel="3" name="Eagle Eye">
+		<!-- Accurate shooting increases attack damage. P. Accuracy $s1 P. Atk. $s2 P. Critical Damage $s3 P. Skill Critical Damage $s4 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -746,6 +760,7 @@
 		</effects>
 	</skill>
 	<skill id="47414" toLevel="13" name="Archer's Weapon Mastery">
+		<!-- When using a bow: P. Atk. $s1 Atk. Spd. $s2 Attack range $s3 -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -817,6 +832,7 @@
 		</effects>
 	</skill>
 	<skill id="47415" toLevel="13" name="Archer's Armor Mastery">
+		<!-- When using light armor: P. Def. $s1 P. Evasion $s2 Received P. Critical Rate $s3 -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -902,37 +918,37 @@
 		</effects>
 	</skill>
 	<skill id="47416" toLevel="3" name="True Marksman">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Shock Atk. Rate $s1 Suppression Atk. Rate $s1 Hold Atk. Rate $s1 Fear Atk. Rate $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47417" toLevel="1" name="Dexterous Body">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Additional effects are affected by DEX. <DEX 65-74> - When using a bow, P. Atk. +5% <DEX 75-84> - When using a bow, P. Atk. +10% - When using the Stun Shot and Mental Panic Shot skills, with a 50% chance, increases attack rate and power. <DEX 85+> - When using a bow, P. Atk. +20% - Received P. Skill Critical Rate -5% - Received P. Skill Critical Damage -5% - When using the Stun Shot and Mental Panic Shot skills, with a certain chance, increases attack rate and power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47418" toLevel="1" name="Dexterous Body">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Additional effects are affected by DEX. <DEX 65-74> - When using a bow, P. Atk. +5% <DEX 75-84> - When using a bow, P. Atk. +10% - When using the Stun Shot and Mental Panic Shot skills, with a 50% chance, increases attack rate and power. <DEX 85+> - When using a bow, P. Atk. +20% - Received P. Skill Critical Rate -5% - Received P. Skill Critical Damage -5% - When using the Stun Shot and Mental Panic Shot skills, with a certain chance, increases attack rate and power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47419" toLevel="1" name="Dexterous Body Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <DEX 65-74> - When using a bow, P. Atk. +5% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47420" toLevel="1" name="Dexterous Body Lv. 2">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <DEX 75-84> - When using a bow, P. Atk. +10% - When using the Stun Shot and Mental Panic Shot skills, with a 50% chance, increases attack rate and power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47421" toLevel="1" name="Dexterous Body Lv. 3">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <DEX 85+> - When using a bow, P. Atk. +20% - Received P. Skill Critical Rate -5% - Received P. Skill Critical Damage -5% - When using the Stun Shot and Mental Panic Shot skills, with a certain chance, increases attack rate and power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47422" toLevel="12" name="Stun Shot">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Shock skill> A stunning shot that deals damage to the target with $s1 power. Stuns for $s2 -->
 		<icon>icon.skill0000</icon>
 		<castRange>700</castRange>
 		<coolTime>500</coolTime>
@@ -1067,6 +1083,7 @@
 		</effects>
 	</skill>
 	<skill id="47424" toLevel="3" name="Thorn Shot">
+		<!-- Speed $s1 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1098,76 +1115,73 @@
 		</effects>
 	</skill>
 	<skill id="47425" toLevel="10" name="Mental Panic Shot">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47427" toLevel="10" name="Ultimate Legendary Twin Shot">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Ultimate skill> Shoots 2 arrows in a row. Attacks the target twice with $s1 power. <font color="FF8000">With a certain chance, makes an additional shot when using skills.</font> Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47428" toLevel="10" name="Ultimate Legendary Twin Shot">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47429" toLevel="12" name="Stun Shot: Enhancement">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Shock skill> A stunning shot that deals damage to the target with $s1 power. Stuns for $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47430" toLevel="12" name="Stun Shot: Enhancement">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47431" toLevel="10" name="Mental Panic Shot: Enhancement">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Fear skill> Attacks the target with $s1 power. For $s2, inflicts Fear on the target. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47432" toLevel="10" name="Mental Panic Shot: Enhancement">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47433" toLevel="2" name="Ultimate Devious Shot">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Ultimate skill> Attacks the target and enemies around them with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47434" toLevel="8" name="Transcendent Knight's Assault">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Swings your weapon at the target. Attacks the target with $s1 power. Ignores Shield Defense. Ignores 10% of the target's defense. Critical. Can only be used in the transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47435" toLevel="15" name="Transcendent Ethereal Strike">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Creates a mysterious energy vortex that attacks the target. Deals magic damage with $s1 power. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47436" toLevel="15" name="Transcendent Flame Explosion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Makes a fire explosion. Deals magic damage with $s1 power. Enemies with a debuff/ anomaly applied take additional damage. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47437" toLevel="15" name="Transcendent Water Explosion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Makes a water explosion. Deals magic damage with $s1 power. Enemies with a debuff/ anomaly applied take additional damage. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47438" toLevel="15" name="Transcendent Thunder Explosion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Makes a wind explosion. Deals magic damage with $s1 power. Enemies with a debuff/ anomaly applied take additional damage. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47439" toLevel="15" name="Transcendent Void Explosion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Makes a dark explosion. Deals magic damage with $s1 power. Enemies with a debuff/ anomaly applied take additional damage. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47440" toLevel="1" name="Faery Shield">
+		<!-- Creates an enchanted barrier around the caster. Blocks $s1 of damage. For the remainder of inflicted damage MP is consumed instead of HP. The effect is cancelled when MP reaches 0. Recovers 30% of Max MP. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1205,6 +1219,7 @@
 		</effects>
 	</skill>
 	<skill id="47441" toLevel="1" name="Soul Guardian">
+		<!-- Temporarily maximizes the servitor's defense. Duration: $s1 Servitor's Max HP $s2 Servitor's P. Def. $s3 Servitor's M. Def. $s4 Servitor's received AoE Skill Damage $s5 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1245,6 +1260,7 @@
 		</effects>
 	</skill>
 	<skill id="47442" toLevel="3" name="Fire Spiral">
+		<!-- <Skill with fixed cooldown> Summons a fire spiral that attacks the target. Deals magic damage with $s1 power. For $s2, CON/ MEN $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -1288,6 +1304,7 @@
 		</effects>
 	</skill>
 	<skill id="47444" toLevel="3" name="Fire Spiral">
+		<!-- For $s1, CON/ MEN $s2 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1327,6 +1344,7 @@
 		</effects>
 	</skill>
 	<skill id="47445" toLevel="3" name="Dark Spiral">
+		<!-- <Skill with fixed cooldown> Summons a dark spiral that attacks the target. Deals magic damage with $s1 power. For $s2, STR/ MEN $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -1370,6 +1388,7 @@
 		</effects>
 	</skill>
 	<skill id="47447" toLevel="3" name="Dark Spiral">
+		<!-- For $s1, STR/ MEN $s2 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1409,6 +1428,7 @@
 		</effects>
 	</skill>
 	<skill id="47448" toLevel="3" name="Ice Spiral">
+		<!-- <Skill with fixed cooldown> Summons an ice spiral that attacks the target. Deals magic damage with $s1 power. For $s2, INT/ CON $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -1452,6 +1472,7 @@
 		</effects>
 	</skill>
 	<skill id="47450" toLevel="3" name="Ice Spiral">
+		<!-- For $s1, INT/ CON $s2 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1491,6 +1512,7 @@
 		</effects>
 	</skill>
 	<skill id="47451" toLevel="3" name="Wind Spiral">
+		<!-- <Skill with fixed cooldown> Summons a wind spiral that attacks the target. Deals magic damage with $s1 power. For $s2, DEX/ WIT $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -1534,6 +1556,7 @@
 		</effects>
 	</skill>
 	<skill id="47453" toLevel="3" name="Wind Spiral">
+		<!-- For $s1, DEX/ WIT $s2 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1573,31 +1596,30 @@
 		</effects>
 	</skill>
 	<skill id="47454" toLevel="2" name="Magic Circle">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When using magic skills (attack/ anomaly/ debuff): Forms a Magic Circle level by level. (Each level's cooldown: 3 sec.) When reaching Lv. 4, the following skills deal additional damage (power $s1): - Prominence - Death Spike - Hydro Blast - Hurricane - Explosion-type skills for different classes - Vortex-type skills for different classes -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47455" toLevel="4" name="Magic Circle Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Magic Circle Lv. 1 is complete. When using magic skills (attack/ anomaly/ debuff): Magic Circle's level will increase. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47456" toLevel="2" name="Magic Circle Cancel">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47457" toLevel="2" name="Magic Circle Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47458" toLevel="4" name="Magic Circle Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Magic Circle Lv. 1 is complete. When using magic skills (attack/ anomaly/ debuff): Magic Circle's level will increase. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47461" toLevel="6" name="Heavy Sleep">
+		<!-- <Sleep skill> The effect lasts for $s1 Inflicts Sleep on the target. For some time the target can't wake up even if hit. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1649,6 +1671,7 @@
 		</effects>
 	</skill>
 	<skill id="47462" toLevel="12" name="Sleep">
+		<!-- <Sleep skill> The effect lasts for $s1 Inflicts Sleep on the target. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1718,6 +1741,7 @@
 		</effects>
 	</skill>
 	<skill id="47463" toLevel="13" name="Wizard's Attack Mastery">
+		<!-- P. Atk. $s1 M. Atk. $s2 Casting Spd. $s3 When using a bow or a spear, Casting Spd. -30%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1802,6 +1826,7 @@
 		</effects>
 	</skill>
 	<skill id="47464" toLevel="13" name="Wizard's Armor Mastery">
+		<!-- M. Def. $s2 M. Damage Resistance $s3 When using robes: P. Def. $s1 Max HP $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1902,6 +1927,7 @@
 		</effects>
 	</skill>
 	<skill id="47465" toLevel="8" name="Wizard's Recovery Mastery">
+		<!-- HP Recovery Rate $s2 MP Recovery Rate $s1 M. Skill Cooldown $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1959,6 +1985,7 @@
 		</effects>
 	</skill>
 	<skill id="47466" toLevel="7" name="Higher Mana Gain">
+		<!-- M. Atk. $s2 Max MP $s1 Grants bonuses depending on your Max MP: <4000+> - M. Atk. +100 - M. Accuracy +5 - M. Skill Critical Rate +1% <6500+> - M. Atk. +150 - M. Accuracy +6 - M. Skill Critical Rate +3% <10,000+> - M. Atk. +200 - M. Accuracy +7 - M. Skill Critical Rate +5% <15,000+> - M. Atk. +300 - M. Accuracy +8 - M. Skill Critical Rate +7% <20,000+> - M. Atk. +400 - M. Accuracy +10 - M. Skill Critical Rate +10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2209,7 +2236,7 @@
 		</effects>
 	</skill>
 	<skill id="47470" toLevel="20" name="Transcendent Punishment">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Swings the sword at the enemy. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

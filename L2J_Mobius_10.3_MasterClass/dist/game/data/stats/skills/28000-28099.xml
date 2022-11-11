@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="28000" toLevel="3" name="Empire Legendary Cloak Augmentation">
-		<!-- SP when hunting +$s1 -->
+		<!-- Acquired SP while hunting +$s1 -->
 		<icon>BranchIcon.icon.g_bm_cloak_mineral_normal</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -114,7 +114,7 @@
 		</effects>
 	</skill>
 	<skill id="28007" toLevel="1" name="Empire Legendary Cloak Augmentation">
-		<!-- When using a single attack skill, there's a chance for Silence to be activated. -->
+		<!-- A chance to inflict Silence when using attack skills -->
 		<icon>BranchIcon.icon.g_bm_cloak_mineral_normal</icon>
 		<operateType>P</operateType>
 		<magicLevel>99</magicLevel>
@@ -180,7 +180,7 @@
 		</effects>
 	</skill>
 	<skill id="28010" toLevel="3" name="Empire Legendary Cloak Augmentation">
-		<!-- Activates a shield that has a chance to absorb $s1 damage when hit. -->
+		<!-- With a certain chance when hit, creates a barrier that absorbs $s1 damage. -->
 		<icon>BranchIcon.icon.g_bm_cloak_mineral_normal</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -198,7 +198,7 @@
 		</effects>
 	</skill>
 	<skill id="28011" toLevel="3" name="Legendary Cloak - Barrier">
-		<!-- Activates a shield that has a chance to absorb $s2 damage when hit for $s1 -->
+		<!-- Creates a shield that absorbs $s2 damage for $s1 -->
 		<icon>icon.skill1514</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -252,7 +252,7 @@
 		</effects>
 	</skill>
 	<skill id="28013" toLevel="1" name="Empire Legendary Cloak Augmentation">
-		<!-- Resurrects from death with full recovery. Buffs/ debuffs stay when dying. However, the Noblesse Blessing and Lucky Charms disappear. Can be used when the equipped cloak is +15 or higher. -->
+		<!-- Resurrects from death fully recovered. Buffs remain after death, except for Noblesse Blessing and Lucky Charm effects. Can be used when the equipped cloak is enchanted to +15 or higher. -->
 		<icon>icon.skill11826</icon>
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -296,7 +296,7 @@
 		</effects>
 	</skill>
 	<skill id="28015" toLevel="1" name="Legendary Cloak - Spallation">
-		<!-- Has a chance to create a circle around when hit that cancels any ranged attacks and debuffs for 30 sec. by twisting the space. When hit inside the circle, you will receive damage. -->
+		<!-- For $s1, creates a distorted area around you that protects you from attacks and debuffs of enemies standing outside. Deals damage to enemies that attack you from inside the area. -->
 		<icon>icon.skill30515</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -399,7 +399,7 @@
 		</effects>
 	</skill>
 	<skill id="28019" toLevel="1" name="Legendary Cloak - Spallation">
-		<!-- Has a chance to create a circle around when hit that cancels any ranged attacks and debuffs for 15 sec. by twisting the space, and Speed +100. When hit inside the circle, you will receive damage. -->
+		<!-- For $s1, creates a distorted area around you that protects you from attacks and debuffs of enemies standing outside. You receive damage when attacked from inside the area. Speed +100. -->
 		<icon>icon.skill30515</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -423,7 +423,7 @@
 		</effects>
 	</skill>
 	<skill id="28020" toLevel="3" name="Empire Legendary Cloak Augmentation">
-		<!-- Vitality bonus +$s1. -->
+		<!-- Vitality bonus +$s1 -->
 		<icon>BranchIcon.icon.g_bm_cloak_mineral_normal</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -482,19 +482,19 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="20">
-						<item id="28597" count="1" /> <!-- Cloak Augmenting Stone Ancient Kingdom -->
+						<item id="28597" count="1" /> <!-- Augmenting Stone: Cloak - Ancient Kingdom -->
 					</item>
 					<item chance="20">
-						<item id="28598" count="1" /> <!-- Cloak Augmenting Stone Elmoreden -->
+						<item id="28598" count="1" /> <!-- Augmenting Stone: Cloak - Elmoreden -->
 					</item>
 					<item chance="20">
-						<item id="28599" count="1" /> <!-- Cloak Augmenting Stone Aden -->
+						<item id="28599" count="1" /> <!-- Augmenting Stone: Cloak - Aden -->
 					</item>
 					<item chance="20">
-						<item id="28600" count="1" /> <!-- Cloak Augmenting Stone Elmore -->
+						<item id="28600" count="1" /> <!-- Augmenting Stone: Cloak - Elmore -->
 					</item>
 					<item chance="20">
-						<item id="28601" count="1" /> <!-- Cloak Augmenting Stone Ferios -->
+						<item id="28601" count="1" /> <!-- Augmenting Stone: Cloak - Ferios -->
 					</item>
 				</items>
 			</effect>
@@ -1471,7 +1471,7 @@
 		</effects>
 	</skill>
 	<skill id="28082" toLevel="12" name="Healing Light">
-		<!-- Restores all party members' HP/ MP/ CP and has a chance of dispelling their debuffs. -->
+		<!-- Recovers party members' HP/ MP/ CP. With a certain chance, also removes their debuffs. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_april_aug_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
@@ -1517,7 +1517,7 @@
 		</effects>
 	</skill>
 	<skill id="28083" toLevel="12" name="Skipping Kid">
-		<!-- Teleports 600 grids forward. -->
+		<!-- Momentarily moves you forward for $s1. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_dec_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>100</hitTime>
@@ -1777,7 +1777,7 @@
 		</effects>
 	</skill>
 	<skill id="28089" toLevel="12" name="Scorpion's Mass Exile">
-		<!-- Banishes enemies near target into another dimension. They become immobile and invincible against debuffs, skills, and standard attacks, and lose $s1 HP/ second. -->
+		<!-- Banishes enemies near the target into another dimension. The exiled enemies cannot move, attack and use skills, they also become immune to debuffs. The enemies' HP -$s1 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_oct_i00</icon>
 		<operateType>A2</operateType>
 		<trait>DEPORT</trait>
@@ -1850,7 +1850,7 @@
 		</effects>
 	</skill>
 	<skill id="28090" toLevel="12" name="Mass Binding Flood">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for 9 sec. Every sec. HP -100. -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 HP -$s2 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_jan_i00</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -1916,7 +1916,7 @@
 		</effects>
 	</skill>
 	<skill id="28091" toLevel="12" name="Slippery Scale">
-		<!-- For $s1, blocks $s2 debuff attack(s). -->
+		<!-- For $s1, blocks debuffs (up to $s2). -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_feb_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>200</hitTime>
@@ -2030,7 +2030,7 @@
 		</effects>
 	</skill>
 	<skill id="28094" toLevel="12" name="Healing Light">
-		<!-- Restores all party members' HP/ MP/ CP and has a chance of dispelling their debuffs. -->
+		<!-- Recovers party members' HP/ MP/ CP. With a certain chance, also removes their debuffs. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_april_aug_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
@@ -2076,7 +2076,7 @@
 		</effects>
 	</skill>
 	<skill id="28095" toLevel="12" name="Skipping Kid">
-		<!-- Teleports 600 grids forward. -->
+		<!-- Momentarily moves you forward for $s1. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_dec_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>100</hitTime>

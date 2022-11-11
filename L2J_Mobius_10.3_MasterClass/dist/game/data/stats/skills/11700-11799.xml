@@ -132,7 +132,7 @@
 		</effects>
 	</skill>
 	<skill id="11751" toLevel="12" name="Superior Magic Weapon Mastery">
-		<!-- M. Atk. +$s1, additional M. Atk. +$s2, M. Skill Critical Rate +$s3. INT +$s4. Depending on INT, has a chance to reset Skill Cooldown or extend the duration of the skill effect in $s5 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, M. Skill Critical Rate +$s3, INT +$s4. Depending on your INT, there is a chance to reset skill cooldown or extend skill duration by $s5 times. -->
 		<icon>icon.skill11251</icon>
 		<magicLevel>
 			<value level="1">85</value>
@@ -218,7 +218,7 @@
 		</effects>
 	</skill>
 	<skill id="11752" toLevel="15" name="Sustain">
-		<!-- For $s1, the targeted party member's HP +$s2 per sec. Received Healing +$s3, also increases Healing Power. <The character is targeted automatically> -->
+		<!-- For $s1, the targeted party member's HP +$s2 per sec. Received Healing +$s3. Additionally, increases Healing Power. <You are targeted automatically> -->
 		<icon>icon.skill11752</icon>
 		<abnormalTime>15</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
@@ -386,7 +386,7 @@
 		</effects>
 	</skill>
 	<skill id="11754" toLevel="6" name="Fairy of Life">
-		<!-- Summons a fairy that follows and periodically heals the selected party member for $s1 Has a chance of recovering HP when attacked. The skill cooldown is fixed. -->
+		<!-- Summons a fairy that follows and periodically heals the selected party member for $s1 There is a chance to recover HP when hit. The skill cooldown is fixed. -->
 		<icon>icon.skill11754</icon>
 		<abnormalTime>
 			<value fromLevel="1" toLevel="6">60</value>
@@ -485,7 +485,7 @@
 		</effects>
 	</skill>
 	<skill id="11755" toLevel="15" name="Radiant Heal">
-		<!-- Recovers target's HP with $s1 power. If HP is full, recovers CP. <The character is targeted automatically> -->
+		<!-- Recovers the target's HP with $s1 power. If HP is full, recovers CP. <You are targeted automatically> -->
 		<icon>icon.skill11755</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -594,7 +594,7 @@
 		</effects>
 	</skill>
 	<skill id="11756" toLevel="15" name="Panic Heal">
-		<!-- Recovers target's HP with $s1 power. If HP is full, recovers CP. <The character is targeted automatically> -->
+		<!-- Recovers the target's HP with $s1 power. If HP is full, recovers CP. <You are targeted automatically> -->
 		<icon>icon.skill11756</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -795,7 +795,7 @@
 		</effects>
 	</skill>
 	<skill id="11758" toLevel="1" name="Celestial Protection">
-		<!-- For $s1, grants invincibility to a party member. The identical effects do not stack. <The character is targeted automatically> -->
+		<!-- Grants invincibility to a party member for $s1 The identical effects do not stack. <You are targeted automatically> -->
 		<icon>icon.skill11758</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -892,12 +892,12 @@
 		<affectObject>FRIEND</affectObject>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>30872</skillId> <!-- Limit  of Iss -->
+				<skillId>30872</skillId> <!-- Limit of Aeore -->
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="CallSkill">
-				<skillId>30872</skillId>
+				<skillId>30872</skillId> <!-- Limit of Aeore -->
 			</effect>
 			<effect name="DamageBlock">
 				<type>BLOCK_HP</type>
@@ -1307,7 +1307,7 @@
 		</effects>
 	</skill>
 	<skill id="11764" toLevel="2" name="Brilliant Purge">
-		<!-- Cancels all party members' debuffs and makes them immune to debuffs for $s1 -->
+		<!-- Removes all party members' debuffs and makes them immune to debuffs for $s1 -->
 		<icon>icon.skill11764</icon>
 		<abnormalTime>7</abnormalTime>
 		<abnormalLevel>5</abnormalLevel>
@@ -2142,7 +2142,7 @@
 		</effects>
 	</skill>
 	<skill id="11774" toLevel="4" name="Summon Tree of Life">
-		<!-- Summons a Tree of Life. The summoned tree heals nearby party members for $s1 Can also cast a debuff canceling blessing. -->
+		<!-- Summons Tree of Life. The summoned tree heals nearby party members for $s1 and removes debuffs from them. -->
 		<icon>icon.skill11774</icon>
 		<operateType>A1</operateType>
 		<magicLevel>
@@ -2874,7 +2874,7 @@
 		</effects>
 	</skill>
 	<skill id="11787" toLevel="12" name="Superior Armor Mastery">
-		<!-- INT +$s6. When using light armor/ robes, Max HP +$s1, P. Def. +$s2, M. Def. +$s3, HP Recovery Rate +$s4, MP Recovery Rate +$s5. -->
+		<!-- When using light armor or robe, Max HP +$s1, P. Def. +$s2, M. Def. +$s3, HP Recovery Rate +$s4, MP Recovery Rate +$s5. Additionally, INT +$s6. -->
 		<icon>icon.skill11787</icon>
 		<operateType>P</operateType>
 		<magicLevel>
@@ -2994,7 +2994,7 @@
 		</effects>
 	</skill>
 	<skill id="11788" toLevel="12" name="Superior Casting Mastery">
-		<!-- Max MP +$s1, Casting Spd. +$s2, M. Skill Cooldown -$s3, M. Skill MP Consumption -$s4, and INT +$s5. -->
+		<!-- Max MP +$s1, Casting Spd. +$s2, M. Skill Cooldown -$s3, M. Skill MP Consumption -$s4. Additionally, INT +$s5. -->
 		<icon>icon.skill11788</icon>
 		<operateType>P</operateType>
 		<magicLevel>
@@ -3073,7 +3073,7 @@
 		</effects>
 	</skill>
 	<skill id="11789" toLevel="12" name="Superior Anti Magic">
-		<!-- M. Def. +$s1, Attack Magic Resistance +$s2. INT +$s3. -->
+		<!-- M. Def. +$s1, M. Damage Resistance +$s2, INT +$s3. -->
 		<icon>icon.skill10004</icon>
 		<operateType>P</operateType>
 		<magicLevel>

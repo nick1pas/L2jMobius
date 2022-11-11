@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="50500" toLevel="10" name="+1 Anakim's Divine Pistols">
-		<!-- A weapon empowered by Anakim's soul. Enables Anakim's power. <When triggered> Anakim's Holy Blast -->
+		<!-- A weapon imbued with Anakim's soul. Uses Anakim's power to deliver <font color="FFBB00">an additional attack</font>. Anakim's Holy Blast: a spirit attack according to M. Atk. -->
 		<icon>icon.skill1516</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -23,7 +23,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50501</skillId>
+				<skillId>50501</skillId> <!-- Anakim's Holy Blast -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -55,7 +55,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50501</skillId>
+				<skillId>50501</skillId> <!-- Anakim's Holy Blast -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -87,7 +87,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50502</skillId>
+				<skillId>50502</skillId> <!-- Anakim's Enhanced Holy Blast -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -119,7 +119,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50502</skillId>
+				<skillId>50502</skillId> <!-- Anakim's Enhanced Holy Blast -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -160,7 +160,7 @@
 		</effects>
 	</skill>
 	<skill id="50501" toLevel="22" name="Anakim's Holy Blast">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1516</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -199,7 +199,7 @@
 		</effects>
 	</skill>
 	<skill id="50502" toLevel="20" name="Anakim's Enhanced Holy Blast">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1516</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -338,7 +338,7 @@
 		</effects>
 	</skill>
 	<skill id="50505" toLevel="3" name="Clan Cloak Growth Support">
-		<!-- When used, for $s1 Pet XP $s2 Removed when your pet is dead or recalled. -->
+		<!-- When used, for $s1: Pet's XP $s2 Removed when your pet dies or is unsummoned. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>3600</abnormalTime>
@@ -469,14 +469,14 @@
 		</effects>
 	</skill>
 	<skill id="50508" toLevel="1" name="Shield of Protection">
-		<!-- <Defense Mode> With a $s1 chance for $s2, when hit: Max HP $s3, instantly recovers HP bonus. HP +$s4 per sec. (Cooldown: 15 sec.) -->
+		<!-- <Defense Mode> With a $s1 chance for $s2, when hit: Max HP $s3, instantly recovers HP bonus. HP $s4 per sec. (Cooldown: 15 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>1</magicLevel>
 		<effects>
 			<effect name="TriggerSkillByAttack">
-				<skillId>50510</skillId>
+				<skillId>50510</skillId> <!-- Defense Mode -->
 				<skillLevel>1</skillLevel>
 				<allowWeapons>ALL</allowWeapons>
 				<targetType>SELF</targetType>
@@ -490,7 +490,7 @@
 		</effects>
 	</skill>
 	<skill id="50509" toLevel="10" name="+1 Shield of Protection">
-		<!-- P. Def. $s5 M. Def. $s5 Shield Defense $s5 <Defense Mode> With a $s1 chance for $s2, when hit: Max HP $s3, instantly recovers HP bonus. HP +$s4 per sec. (Cooldown: 15 sec.) -->
+		<!-- P. Def. $s5 M. Def. $s5 Shield Defense $s5 <Defense Mode> With a $s1 chance for $s2, when hit: Max HP $s3, instantly recovers HP bonus. HP $s4 per sec. (Cooldown: 15 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -542,7 +542,7 @@
 				<mode>PER</mode>
 			</effect>
 			<effect name="TriggerSkillByAttack">
-				<skillId>50510</skillId>
+				<skillId>50510</skillId> <!-- Defense Mode -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -563,7 +563,7 @@
 		</effects>
 	</skill>
 	<skill id="50510" toLevel="11" name="Defense Mode">
-		<!-- Max HP $s1, instantly recovers HP bonus. Restores $s2 HP per sec. -->
+		<!-- Max HP $s1, instantly recovers HP bonus. HP $s2 per sec. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -641,7 +641,7 @@
 		<magicLevel>1</magicLevel>
 		<effects>
 			<effect name="TriggerSkillByAttack">
-				<skillId>50514</skillId>
+				<skillId>50514</skillId> <!-- Defense Curse -->
 				<skillLevel>1</skillLevel>
 				<allowWeapons>ALL</allowWeapons>
 				<targetType>SELF</targetType>
@@ -651,7 +651,7 @@
 		</effects>
 	</skill>
 	<skill id="50513" toLevel="10" name="+1 Sigil of Protection">
-		<!-- P. Def. $s4 M. Def. $s4 <Defense Curse> With a $s1 chance for $s2 after an attack: Enemy's P. Atk. $s3 Enemy's M. Atk. $s3 (Cooldown: 10 sec.) -->
+		<!-- P. Def. $s4 M. Def. $s4 <Defense Curse> With a $s1 chance for $s2, after an attack: Enemy's P. Atk. $s3 Enemy's M. Atk. $s3 (Cooldown: 10 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -686,7 +686,7 @@
 				</amount>
 			</effect>
 			<effect name="TriggerSkillByAttack">
-				<skillId>50514</skillId>
+				<skillId>50514</skillId> <!-- Defense Curse -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -767,7 +767,7 @@
 		</effects>
 	</skill>
 	<skill id="50517" toLevel="1" name="Aden's Dual Swords">
-		<!-- <Level Bonus Effect> P./ M. Atk. are increased depending on level. <Lv. 40-49> P. Atk. +21 M. Atk. +10 <Lv. 50-59> P. Atk. +41 M. Atk. +20 <Lv. 60-64> P. Atk. +62 M. Atk. +31 <Lv. 65-69> P. Atk. +83 M. Atk. +41 <Lv. 70-74> P. Atk. +103 M. Atk. +51 <Lv. 75+> P. Atk. +124 M. Atk. +61 -->
+		<!-- <Level bonus effect> P./ M. Atk. are increased depending on your level. <Lv. 40-49> P. Atk. +21 M. Atk. +10 <Lv. 50-59> P. Atk. +41 M. Atk. +20 <Lv. 60-64> P. Atk. +62 M. Atk. +31 <Lv. 65-69> P. Atk. +83 M. Atk. +41 <Lv. 70-74> P. Atk. +103 M. Atk. +51 <Lv. 75+> P. Atk. +124 M. Atk. +61 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -784,6 +784,7 @@
 		</effects>
 	</skill>
 	<skill id="50518" toLevel="22" name="Furious Frost">
+		<!-- <Special attack skill> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -906,6 +907,7 @@
 		</effects>
 	</skill>
 	<skill id="50519" toLevel="22" name="Absolute Zero">
+		<!-- <Special attack skill> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -991,26 +993,27 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="50520" toLevel="22" name="Stay Frozen">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Special attack skill> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50521" toLevel="22" name="Furious Frost">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Suppression skill> Freezing cold slows you down. P. Atk. $s1 M. Atk. $s1 Atk. Spd. $s2 Casting Spd. $s2 P. Skill Cooldown $s3 M. Skill Cooldown $s3 Delivers a powerful attack when the effect expires. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50522" toLevel="22" name="Absolute Zero">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Hold skill> Bitter cold hinders your movements. Resistance to All Weapons $s1 Delivers a powerful attack when the effect expires. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50523" toLevel="22" name="Beleth' Soul Eater">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A two-handed magic blunt weapon containing Beleth' soul. Allows to use Beleth' power. <Level bonus effect> P./ M. Atk. are increased depending on your level. <Lv. 60-69> P. Atk. +1 M. Atk. +4 <Lv. 70-79> P. Atk. +2 M. Atk. +10 <Lv. 80-89> P. Atk. +4 ~ +14 M. Atk. +20 ~ +49 <Lv. 90+> P. Atk. +16 and higher M. Atk. +57 and higher -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50524" toLevel="22" name="Stay Frozen">
+		<!-- <Hold skill> Bitter cold prevents you from returning to the nearest town. P. Def. $s1 M. Def. $s1 Delivers a powerful attack when the effect expires. -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>99</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1031,7 +1034,7 @@
 		</effects>
 	</skill>
 	<skill id="50525" toLevel="11" name="Frost Lord's Sword">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A one-handed sword imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 CON +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1053,7 +1056,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1087,7 +1090,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1137,7 +1140,7 @@
 		</effects>
 	</skill>
 	<skill id="50526" toLevel="11" name="Frost Lord's Axe">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- An axe imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 CON +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1159,7 +1162,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1193,7 +1196,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1243,7 +1246,7 @@
 		</effects>
 	</skill>
 	<skill id="50527" toLevel="11" name="Frost Lord's Dagger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A dagger imbued with the frost energy. Bitter cold slows the target down. <Stat bonus> STR + $s1 DEX +$s2 <Special effect - Furious Frost> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) Because of the strong chill, for 5 sec. P./ M. Atk. $s5 Atk. Spd./ Casting Spd. $s6 P. Skill Cooldown $s7 M. Skill Cooldown $s7 When the chill disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1265,7 +1268,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1299,7 +1302,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1349,6 +1352,7 @@
 		</effects>
 	</skill>
 	<skill id="50528" toLevel="11" name="Frost Lord's Rapier">
+		<!-- A rapier imbued with the frost energy. Bitter cold slows the target down. <Stat bonus> STR + $s1 MEN +$s2 <Special effect - Furious Frost> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) Because of the strong chill, for 5 sec. P./ M. Atk. $s5 Atk. Spd./ Casting Spd. $s6 P. Skill Cooldown $s7 M. Skill Cooldown $s7 When the chill disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1370,7 +1374,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1404,7 +1408,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1454,7 +1458,7 @@
 		</effects>
 	</skill>
 	<skill id="50529" toLevel="11" name="Frost Lord's Magic Blunt Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A one-handed magic blunt weapon imbued with the frost energy. Bitter cold prevents the target from teleportation. <Stat bonus> INT +$s1 WIT +$s2 <Special effect - Stay Frozen> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) Ice chains shackle the target's body for 5 sec. Unable to teleport. P./ M. Def. $s5 When the chains disappear, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1476,7 +1480,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1510,7 +1514,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1560,7 +1564,7 @@
 		</effects>
 	</skill>
 	<skill id="50530" toLevel="11" name="Frost Lord's Spear">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A spear imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 CON +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1582,7 +1586,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1616,7 +1620,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1666,7 +1670,7 @@
 		</effects>
 	</skill>
 	<skill id="50531" toLevel="11" name="Frost Lord's Ancient Sword">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- An ancient sword imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 DEX +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1688,7 +1692,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1722,7 +1726,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1772,7 +1776,7 @@
 		</effects>
 	</skill>
 	<skill id="50532" toLevel="11" name="Frost Lord's Two-handed Sword">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A two-handed sword imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 DEX +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1794,7 +1798,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1828,7 +1832,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50518</skillId>
+				<skillId>50518</skillId> <!-- Furious Frost -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1846,7 +1850,7 @@
 		</effects>
 	</skill>
 	<skill id="50533" toLevel="11" name="Frost Lord's Staff">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A two-handed magic blunt weapon imbued with the frost energy. Bitter cold prevents the target from teleportation. <Stat bonus> INT +$s1 MEN +$s2 <Special effect - Stay Frozen> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) Ice chains shackle the target's body for 5 sec. Unable to teleport. P./ M. Def. $s5 When the chains disappear, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1868,7 +1872,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1902,7 +1906,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1952,7 +1956,7 @@
 		</effects>
 	</skill>
 	<skill id="50534" toLevel="11" name="Frost Lord's Dual Swords">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Dual swords imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 DEX +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1974,7 +1978,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2008,7 +2012,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2058,7 +2062,7 @@
 		</effects>
 	</skill>
 	<skill id="50535" toLevel="11" name="Frost Lord's Blade Fists">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Fist weapons imbued with the frost energy. The biting frost hinders the target's movements. <Stat bonus> STR +$s1 DEX +$s2 <Special effect - Absolute Zero> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) The frost sword holds the target for 5 sec. All Weapon Resistance $s5 When the frost sword disappears, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2080,7 +2084,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2114,7 +2118,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50519</skillId>
+				<skillId>50519</skillId> <!-- Absolute Zero -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2164,7 +2168,7 @@
 		</effects>
 	</skill>
 	<skill id="50536" toLevel="11" name="Frost Lord's Bow">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A bow imbued with the frost energy. Bitter cold prevents the target from teleportation. <Stat bonus> STR +$s1 DEX +$s2 <Special effect - Stay Frozen> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) Ice chains shackle the target's body for 5 sec. Unable to teleport. P./ M. Def. $s5 When the chains disappear, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2186,7 +2190,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2220,7 +2224,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2270,7 +2274,7 @@
 		</effects>
 	</skill>
 	<skill id="50537" toLevel="11" name="Frost Lord's Pistols">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A fire arm imbued with the frost energy. Bitter cold prevents the target from teleportation. <Stat bonus> STR +$s1 DEX +$s2 <Special effect - Stay Frozen> There is a certain chance to deliver <font color="FFBB00">an additional blow</font> after an attack. (Basic attack: $s3/ Skill attack: $s4) Ice chains shackle the target's body for 5 sec. Unable to teleport. P./ M. Def. $s5 When the chains disappear, it triggers a powerful explosion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2292,7 +2296,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2326,7 +2330,7 @@
 				</chance>
 				<targetType>ENEMY</targetType>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50524</skillId>
+				<skillId>50524</skillId> <!-- Stay Frozen -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2376,16 +2380,17 @@
 		</effects>
 	</skill>
 	<skill id="50538" toLevel="1" name="Head Accessory of Willpower (V1)">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- STR +1, DEX +1, CON +1 INT +1, WIT +1, MEN +1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50539" toLevel="1" name="ALL FOR ONE">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Sayha's Grace Sustain -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50540" toLevel="1" name="Freya's Necklace">
+		<!-- Max MP $s1 P. Def. $s2 M. Def. $s2 Received Skill Damage $s3 All received Critical Rate $s3 CON $s4 MEN $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2453,7 +2458,7 @@
 		</effects>
 	</skill>
 	<skill id="50542" toLevel="2" name="Helmet of Protection">
-		<!-- TODO: Need repeat test but look fine -->
+		<!-- <Critical Rate Defense> With a $s1 chance for $s2, when hit: All received Critical Rate $s3 (Cooldown: 10 sec.) -->
 		<icon>icon.armor_t902_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2465,13 +2470,13 @@
 				</chance>
 				<targetType>SELF</targetType>
 				<minDamage>1</minDamage>
-				<skillId>50544</skillId> <!-- Critical Damage Defense -->
+				<skillId>50544</skillId> <!-- Critical Rate Defense -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50543" toLevel="10" name="+1 Helmet of Protection">
-		<!-- TODO: Need repeat test but look fine -->
+		<!-- Received Skill Critical Damage $s4 <Critical Rate Defense> With a $s1 chance for $s2, when hit: All received Critical Rate $s3 (Cooldown: 10 sec.) -->
 		<icon>icon.armor_t902_l_i00</icon>
 		<operateType>P</operateType> <!-- TODO: A1 -> P -->
 		<effects>
@@ -2613,7 +2618,7 @@
 		</effects>
 	</skill>
 	<skill id="50544" toLevel="7" name="Critical Rate Defense">
-		<!-- TODO: teris1994 -->
+		<!-- All received Critical Rate $s1 -->
 		<icon>icon.skill1095</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2675,51 +2680,52 @@
 		</effects>
 	</skill>
 	<skill id="50545" toLevel="1" name="Gauntlets of Protection">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- STR +1 INT +1 CON +1 Atk. Spd. +18% Casting Spd. +18% Max HP +250 Overweight limit +1000 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50546" toLevel="1" name="Gauntlets of Protection">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Power Defense> With a $s1 chance for $s2, when hit: Target's Skill Power $s3 when hit (Cooldown: 10 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50547" toLevel="10" name="+1 Gauntlets of Protection">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Power Defense> With a $s1 chance for $s2, when hit: Target's Skill Power $s3 when hit (Cooldown: 10 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50548" toLevel="7" name="Power Defense">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The target's Skill Power when hit $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50549" toLevel="1" name="Boots of Protection">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- STR +1 INT +1 CON +1 Max HP +250 Speed +9 Overweight limit +1000 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50550" toLevel="1" name="Boots of Protection">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Def. $s4 M. Def. $s4 <Debuff Defense> With a $s1 chance, removes debuffs and anomalies when hit. For $s2, Debuff/ Anomaly Resistance $s3. (Cooldown: 30 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50551" toLevel="10" name="+1 Boots of Protection">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Def. $s4 M. Def. $s4 <Debuff Defense> With a $s1 chance, removes debuffs and anomalies when hit. For $s2, Debuff/ Anomaly Resistance $s3. (Cooldown: 30 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50552" toLevel="1" name="Debuff Defense">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Removes debuffs and anomalies. Debuff/ Anomaly Resistance $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50553" toLevel="6" name="Aden Cloak">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A cloak for true heroes who fought for peace in Aden. Max HP $s1 Max MP $s1 Bow Resistance $s2 Firearms Resistance $s2 Acquired XP $s3 Acquired SP $s3 P. Atk. $s4 M. Atk. $s4 All Critical Rate $s5 All Critical Damage $s6 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50554" toLevel="5" name="Antharas Doll's Sorcery">
+		<!-- A doll imbued with Antharas' power. <Effect> CON $s1 MEN $s1 Received damage $s2 Knockback Resistance $s3 Shock Resistance $s3 Pull Resistance $s3 Soulshot Damage Resistance $s4 Spiritshot Damage Resistance $s4 -->
 		<icon>icon.bm_doll_antharas</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2787,6 +2793,7 @@
 		</effects>
 	</skill>
 	<skill id="50555" toLevel="6" name="Beleth' Ring">
+		<!-- A ring imbued with Beleth's power. Max MP $s1 HP Recovery Rate $s5 MP Recovery Rate $s5 Soulshot damage $s6 Spiritshot damage $s6 Sleep Atk. Rate $s2 Hold Atk. Rate $s3 Paralysis Atk. Rate $s4 Sleep Resistance $s2 Hold Resistance $s3 Paralysis Resistance $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2946,7 +2953,7 @@
 				<chance>50</chance>
 				<targetType>SELF</targetType>
 				<isCritical>false</isCritical>
-				<skillId>50556</skillId>
+				<skillId>50556</skillId> <!-- Beleth Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByDamage" fromLevel="6" toLevel="6">
@@ -2955,13 +2962,13 @@
 				<chance>50</chance>
 				<targetType>SELF</targetType>
 				<isCritical>true</isCritical>
-				<skillId>50556</skillId>
+				<skillId>50556</skillId> <!-- Beleth Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50556" toLevel="1" name="Beleth Power">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The target's Skill Power when hit $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -2986,26 +2993,27 @@
 		</effects>
 	</skill>
 	<skill id="50557" toLevel="1" name="Beleth' Soul Eater">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A weapon imbued with the power of Beleth's soul. Makes an <font color="FFBB00">additional strike</font> with Beleth's might. Beleth' Killing Thunder: a green lightning attack according to M. Atk. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50558" toLevel="10" name="+1 Beleth' Soul Eater">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A weapon imbued with the power of Beleth's soul. Makes an <font color="FFBB00">additional strike</font> with Beleth's might. Beleth' Killing Thunder: a green lightning attack according to M. Atk. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50559" toLevel="22" name="Beleth' Killing Thunder">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50560" toLevel="20" name="Beleth' Mighty Killing Thunder">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50561" toLevel="8" name="Beryl">
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s2 M. Def. $s2 -->
 		<icon>icon.etc_bm_jewel_beryl_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3064,7 +3072,7 @@
 			<effect name="TriggerSkillByAvoid">
 				<chance>77</chance>
 				<targetType>SELF</targetType>
-				<skillId>50562</skillId>
+				<skillId>50562</skillId> <!-- Beryl - Barrier -->
 				<skillLevel>
 					<value level="6">1</value>
 					<value level="7">2</value>
@@ -3074,6 +3082,7 @@
 		</effects>
 	</skill>
 	<skill id="50562" toLevel="3" name="Beryl - Barrier">
+		<!-- Absorbs $s1 of the damage. -->
 		<icon>icon.etc_bm_jewel_beryl_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>
@@ -3104,17 +3113,17 @@
 		</effects>
 	</skill>
 	<skill id="50563" toLevel="1" name="Growth Support Rune">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Soulshot damage $s1 Spiritshot damage $s1 Atk. Spd. $s2 Casting Spd. $s2 Speed $s3 Acquired XP/ SP $s4 Magic Lamp charging rate $s5 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50564" toLevel="11" name="Head Accessory: Enchant Effect +1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- M. Def. +14 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50565" toLevel="8" name="Agathion Bracelet Lv. 1">
-		<!-- Agathion slots +4 -->
+		<!-- Agathion slots $s1 -->
 		<icon>
 			<value level="1">icon.agathion_magmeld_teleport</value>
 			<value level="2">icon.bracelet_tersi_agathion</value>
@@ -3280,11 +3289,12 @@
 		</effects>
 	</skill>
 	<skill id="50567" toLevel="1" name="Orc's Ring">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 Atk. Spd. $s1 Casting Spd. $s1 Soulshot damage $s2 Spiritshot damage $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50568" toLevel="11" name="Piercing Mask">
+		<!-- Max HP $s1 Max MP $s1 P. Atk. $s2 M. Atk. $s2 -->
 		<icon>icon.accessory_black_half_face_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3396,157 +3406,149 @@
 		</effects>
 	</skill>
 	<skill id="50569" toLevel="1" name="Gorde's Flame Spear">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A weapon imbued with Gorde's soul power. Makes an additional strike. Gorde's Hellfire: makes a fire attack according to M. Atk. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50570" toLevel="10" name="+1 Gorde's Flame Spear">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A weapon imbued with Gorde's soul power. Makes an additional strike. Gorde's Hellfire: makes a fire attack according to M. Atk. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50571" toLevel="22" name="Gorde's Hellfire">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50572" toLevel="20" name="Gorde's Enhanced Hellfire">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50573" toLevel="10" name="Snowman Doll">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Acquired XP/ SP $s1 Sayha's Grace Consumption $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50574" toLevel="1" name="Santa's Growth Rune">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s1 M. Def. $s1 Atk. Spd. $s1 Casting Spd. $s1 Acquired XP/ SP $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50575" toLevel="5" name="Pet Pendant">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A pendant for your pet. P. Def. $s1 M. Def. $s1 P. Atk. s2 M. Atk. $s2 Received damage $s3 Acquired XP $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50576" toLevel="5" name="Einhasad's Pet Pendant">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50577" toLevel="4" name="Dragon Pet Pendant">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50578" toLevel="5" name="Behemoth Doll's Sorcery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A doll imbued with Behemoth' power. <Effect> Damage Decrease Ignore $s1 Skill Critical Damage $s2 Hold Resistance $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50579" toLevel="5" name="Glakias Doll's Sorcery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A doll imbued with Glakias' power. <Effect> All weapon P. Atk $s1 All weapon M. Atk. $s1 Soulshot damage $s2 Spiritshot damage $s2 Recovers $s3 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50580" toLevel="5" name="Glakias Doll's Sorcery - MP Recovery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Recovers $s1 MP. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50581" toLevel="1" name="Demons' Weapon - Degger/Rapier (placeholder) - physical">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50582" toLevel="1" name="Demons' Weapon - Degger/Rapier (placeholder) - magic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50583" toLevel="1" name="Demons' Weapon - P. melee (placeholder) - physical">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50584" toLevel="1" name="Demons' Weapon - P. melee (placeholder) - magic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50585" toLevel="1" name="Demons' Weapon - M. range (placeholder) - physical">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50586" toLevel="1" name="Demons' Weapon - M. range (placeholder) - magic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50587" toLevel="1" name="Demonic Sword">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A one-handed sword imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50588" toLevel="1" name="Demonic Blunt Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A blunt weapon imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50589" toLevel="1" name="Demonic Two-handed Sword">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A two-handed sword imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50590" toLevel="1" name="Demonic Two-handed Blunt Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A two-handed blunt weapon imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50591" toLevel="1" name="Demonic Ancient Sword">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- An ancient sword imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50592" toLevel="1" name="Demonic Dual Swords">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A dual swords imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50593" toLevel="1" name="Demonic Fists">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A fist weapon imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50594" toLevel="1" name="Demonic Spear">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A spear imbued with demonic power. P. Atk. in melee (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50595" toLevel="1" name="Demonic Dagger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A dagger imbued with demonic power. Dagger/ rapier P. Atk. (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50596" toLevel="1" name="Demonic Rapier">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A rapier imbued with demonic power. Dagger/ rapier P. Atk. (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50597" toLevel="1" name="Demonic Magic Blunt Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A magic blunt weapon imbued with demonic power. M. Atk. in range combat (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50598" toLevel="1" name="Demonic Staff">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A staff imbued with demonic power. M. Atk. in range combat (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50599" toLevel="1" name="Demonic Bow">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A bow imbued with demonic power. M. Atk. in range combat (100%). -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

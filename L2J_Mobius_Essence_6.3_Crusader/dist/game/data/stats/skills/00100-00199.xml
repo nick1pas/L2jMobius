@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="100" toLevel="15" name="Shock Mastery">
-		<!-- When using a sword/ blunt weapon/ spear/ dual swords Shock Atk. Rate +$s1 -->
+		<!-- When using a sword, a blunt weapon, a spear or dual swords: Shock Atk. Rate +$s1 -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>
 			<value fromLevel="1" toLevel="5">20</value>
@@ -460,7 +460,7 @@
 		</effects>
 	</skill>
 	<skill id="103" toLevel="5" name="Slaughter">
-		<!-- <Infection Skill> Causes a poison cloud to pour out from a corpse. Inflicts poison on enemies near the corpse. -->
+		<!-- The character becomes more powerful after killing their targets. When the target is killed For $s1 P. Atk. $s2 (Cooldown: 300 sec.) -->
 		<icon>icon.skill0103</icon>
 		<operateType>P</operateType>
 		<magicLevel>
@@ -507,7 +507,7 @@
 		</effects>
 	</skill>
 	<skill id="105" toLevel="35" name="Freezing Weapon">
-		<!-- Imbues a weapon with ice power. The effect lasts for $s1 Uses Freezing Strike after a physical attack. Cannot be used with Bloody Weapon. <Freezing Strike> Attacks the enemy with $s2 power. For $s3 Speed -$s4. -->
+		<!-- Imbues a weapon with ice power. The effect lasts for $s1 With a certain chance, uses Freezing Strike after a physical attack. (Cooldown: 10 sec.) Cannot be used with Bloody Weapon. <Freezing Strike> Attacks the enemy with $s2 power. For $s3 Speed -$s4. -->
 		<icon>icon.skill0105</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -561,10 +561,10 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>223</skillId> <!-- Blood Attack -->
+				<skillId>223</skillId> <!-- Bloody Weapon -->
 			</condition>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>47285</skillId> <!-- Blood Attack -->
+				<skillId>47285</skillId> <!-- Bloody Weapon -->
 			</condition>
 		</conditions>
 		<effects>
@@ -823,7 +823,7 @@
 		</effects>
 	</skill>
 	<skill id="110" toLevel="3" name="Ultimate Defense">
-		<!-- The effect lasts for $s1 P. Def. +$s2 M. Def. +$s3 Buff Cancel Resistance +$s4 The target is unable to move. -->
+		<!-- P. Def. $s1 M. Def. $s2 Buff Cancel Resistance $s3 The target is unable to move. -->
 		<icon>
 			<value fromLevel="1" toLevel="2">icon.skill0110</value>
 			<value level="3">icon.skill0110_a</value>
@@ -905,7 +905,7 @@
 		</effects>
 	</skill>
 	<skill id="111" toLevel="3" name="Ultimate Evasion">
-		<!-- The effect lasts for $s1 P. Evasion $s2 P. Skill Evasion $s3 Buff Cancel Resistance $s4 -->
+		<!-- Duration: $s1 P. Evasion $s2 P. Skill Evasion $s3 Buff Cancel Resistance $s4 -->
 		<icon>icon.skill0111</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -975,7 +975,7 @@
 		</effects>
 	</skill>
 	<skill id="112" toLevel="4" name="Deflect Arrow">
-		<!-- Bow Resistance $s1. -->
+		<!-- Bow Resistance $s1 -->
 		<icon>icon.skill0112</icon>
 		<magicLevel>
 			<value level="1">24</value>
@@ -1281,7 +1281,7 @@
 		</effects>
 	</skill>
 	<skill id="118" toLevel="1" name="Magician's Curiosity">
-		<!-- Increases Atk. Spd. when equipped with a robe jacket and robe pants. -->
+		<!-- <Robe effect> Increases Atk. Spd./ Casting Spd. MP Recovery Rate +20% -->
 		<icon>icon.skill0118</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1814,7 +1814,7 @@
 		</effects>
 	</skill>
 	<skill id="139" toLevel="7" name="Guts">
-		<!-- For $s4 P. Def. $s1 M. Def. $s1 Speed $s2 Debuff Resistance $s3 Anomaly Resistance $s3 Cannot be used with Frenzy. -->
+		<!-- <Skill with fixed cooldown> For $s4 P. Def. $s1 Speed $s2 Debuff Resistance $s3 Anomaly Resistance $s3 Recovers $s5 MP, when using the skill. Cannot be used with Frenzy. -->
 		<icon>icon.skill0139</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1953,7 +1953,7 @@
 		</effects>
 	</skill>
 	<skill id="142" toLevel="5" name="Armor Mastery">
-		<!-- Improves an ability to survive. P. Def. +$s1 M. Def. +$s2 MP Recovery Rate +$s3 -->
+		<!-- Improves survivability. P. Def. +$s1 M. Def. +$s2 MP Recovery Rate +$s3 -->
 		<icon>icon.skill0142</icon>
 		<magicLevel>
 			<value level="1">1</value>
@@ -1991,7 +1991,7 @@
 		</effects>
 	</skill>
 	<skill id="143" toLevel="2" name="Cubic Mastery">
-		<!-- Ability to summon $s1 Cubics at once. -->
+		<!-- Lets you summon up to $s1 Cubics at once. -->
 		<icon>icon.skill0143</icon>
 		<magicLevel>
 			<value level="1">44</value>
@@ -2008,7 +2008,7 @@
 		</effects>
 	</skill>
 	<skill id="144" toLevel="51" name="Dual Sword Mastery">
-		<!-- When using dual swords P. Atk. +$s1 -->
+		<!-- When using dual swords: P. Atk. +$s1 -->
 		<icon>icon.skill0144</icon>
 		<magicLevel>
 			<value level="1">38</value>
@@ -2467,7 +2467,7 @@
 		</effects>
 	</skill>
 	<skill id="150" toLevel="3" name="Weight Limit">
-		<!-- Double your weight limit. -->
+		<!-- Weight limit x$s1. -->
 		<icon>icon.skill0150</icon>
 		<magicLevel>
 			<value level="1">10</value>
@@ -2487,7 +2487,7 @@
 		</effects>
 	</skill>
 	<skill id="153" toLevel="6" name="Shield Mastery">
-		<!-- Shield Defense +$s1 Shield Defense Rate +$s2 P. Atk. +$s3 -->
+		<!-- Shield Defense Rate $s1 Shield Defense $s2 P. Atk. $s3 -->
 		<icon>icon.skill0153</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2571,7 +2571,7 @@
 		</effects>
 	</skill>
 	<skill id="164" toLevel="3" name="Quick Recovery">
-		<!-- Skill Cooldown -$s1. -->
+		<!-- Skill Cooldown -$s1 -->
 		<icon>icon.skill0164</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2592,7 +2592,7 @@
 		</effects>
 	</skill>
 	<skill id="168" toLevel="3" name="Attack Speed Boost">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>icon.skill0168</icon>
 		<magicLevel>
 			<value level="1">36</value>
@@ -2727,7 +2727,7 @@
 		</effects>
 	</skill>
 	<skill id="176" toLevel="7" name="Frenzy">
-		<!-- For $s9 P. Atk. $s1 Atk. Spd. $s2 P. Critical Rate $s3 P. Critical Damage $s4 P. Skill Critical Rate $s5 P. Skill Critical Damage $s5 Speed $s6 When using a two-handed sword/ blunt weapon or a spear P. Atk. $s7 P. Accuracy $s8 Cannot be used with Guts. -->
+		<!-- <Skill with fixed cooldown> Duration: $s9 P. Atk. $s1 Atk. Spd. $s2 P. Critical Rate $s3 P. Critical Damage $s4 P. Skill Critical Rate $s5 P. Skill Critical Damage $s5 Speed $s6 When using a two-handed sword/ blunt weapon or a spear: P. Atk. $s7 P. Accuracy $s8 Recovers $s10 MP after a skill. Cannot be used with Guts. -->
 		<icon>icon.skill0176</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2880,7 +2880,7 @@
 		</effects>
 	</skill>
 	<skill id="181" toLevel="2" name="Revival">
-		<!-- Recovers all HP. Can be used only if HP is $s1 or lower. -->
+		<!-- Recovers 100% of HP to the character. Can be used only if HP is $s1 or lower. -->
 		<icon>icon.skill0181</icon>
 		<effectPoint>
 			<value level="1">562</value>

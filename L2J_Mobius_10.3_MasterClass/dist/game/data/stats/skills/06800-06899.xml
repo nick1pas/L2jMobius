@@ -61,7 +61,7 @@
 		</effects>
 	</skill>
 	<skill id="6804" toLevel="1" name="Arena Wind Walk">
-		<!-- Speed +33 for 5 min. -->
+		<!-- For 5 min., Speed +33. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -211,7 +211,7 @@
 		</effects>
 	</skill>
 	<skill id="6810" toLevel="1" name="Arena Focus">
-		<!-- For 5 min., Critical Rate for standard attacks +30%. -->
+		<!-- For 5 min., Critical Rate for basic attacks +30%. -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -236,7 +236,7 @@
 		</effects>
 	</skill>
 	<skill id="6811" toLevel="1" name="Arena Death Whisper">
-		<!-- For 5 min., Critical Damage for standard attacks +35%. -->
+		<!-- For 5 min., Critical Damage for basic attacks +35%. -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -550,7 +550,7 @@
 		</effects>
 	</skill>
 	<skill id="6819" toLevel="1" name="Banshee's Curse">
-		<!-- For 15 sec., Atk. Spd. is decreased by 20%. -->
+		<!-- For 15 sec., Atk. Spd. -20%. -->
 		<icon>icon.skill4038</icon>
 		<operateType>A2</operateType>
 		<mpConsume>75</mpConsume>
@@ -1848,7 +1848,7 @@
 		</effects>
 	</skill>
 	<skill id="6883" toLevel="1" name="Vitality Recovery Effect">
-		<!-- For 5 min., energy is recovered. -->
+		<!-- For 5 min., recovers Vitality. -->
 		<icon>icon.skilltransform4</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1884,7 +1884,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6885" toLevel="3" name="Morale Boost">
-		<!-- The brave warriors who fight together in the Dragon Valley receive Infection/ Confusion Resistance +$s1, Critical Rate for standard attacks +$s2 Critical Damage for standard attacks+$s3. -->
+		<!-- Brave warriors who fight together in the Dragon Valley get the following buff: Confusion/ Infection Resistance +$s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3. -->
 		<icon>icon.skill6885</icon>
 		<abnormalTime>60</abnormalTime>
 		<blockedInOlympiad>false</blockedInOlympiad>

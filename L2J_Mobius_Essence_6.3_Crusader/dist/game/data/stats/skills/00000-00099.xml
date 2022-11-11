@@ -831,7 +831,7 @@
 		</effects>
 	</skill>
 	<skill id="6" toLevel="45" name="Sonic Blaster">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 Increases power upon consuming Momentum. -->
+		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 -->
 		<icon>icon.skill0006</icon>
 		<castRange>600</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -1098,7 +1098,7 @@
 		</effects>
 	</skill>
 	<skill id="7" toLevel="31" name="Sonic Storm">
-		<!-- Attacks the enemy and nearby enemies with $s1 power. Increases power upon consuming Momentum. Critical. -->
+		<!-- Attacks the target and nearby enemies with $s1 power. Critical. -->
 		<icon>icon.skill0007</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
@@ -1319,7 +1319,7 @@
 		</effects>
 	</skill>
 	<skill id="9" toLevel="37" name="Sonic Buster">
-		<!-- Attacks the enemies in front of you with $s1 power. Increases power upon consuming Momentum. Critical. -->
+		<!-- Attack enemies at the front with $s1 power. Critical. -->
 		<icon>icon.skill0009</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -1776,7 +1776,7 @@
 		</effects>
 	</skill>
 	<skill id="15" toLevel="65" name="Slowdown">
-		<!-- The effect lasts for $s1 P. Skill Cooldown +$s2 M. Skill Cooldown -$s2 -->
+		<!-- Duration: $s1 P. Skill Cooldown +$s2 M. Skill Cooldown +$s2 -->
 		<icon>icon.skill0015</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2681,7 +2681,7 @@
 		</effects>
 	</skill>
 	<skill id="21" toLevel="3" name="Recovery">
-		<!-- Elven healing magic. Removes infection from a character. -->
+		<!-- Elven healing magic. Recovers HP. Power $s1. Removes Infection debuffs. -->
 		<icon>icon.skill0021</icon>
 		<effectPoint>
 			<value level="1">204</value>
@@ -3075,7 +3075,7 @@
 		</effects>
 	</skill>
 	<skill id="27" toLevel="14" name="Open">
-		<!-- Has a $s1 chance to open the level $s2 door and a $s3 chance to open treasure chests. -->
+		<!-- With a $s1 chance, opens a Lv. $s2 door. Also, opens treasure chests with a $s3 chance. -->
 		<icon>icon.skill0027</icon>
 		<castRange>40</castRange>
 		<effectPoint>
@@ -4062,7 +4062,7 @@
 		</effects>
 	</skill>
 	<skill id="36" toLevel="55" name="Vortex">
-		<!-- Attacks the enemy with $s1 power. Ignores Shield Defense. Critical. -->
+		<!-- Attacks nearby enemies with $s1 power. Ignores Shield Defense. Critical. -->
 		<icon>icon.skill0036</icon>
 		<affectLimit>6-12</affectLimit>
 		<affectRange>150</affectRange>
@@ -4381,7 +4381,7 @@
 		</effects>
 	</skill>
 	<skill id="45" toLevel="15" name="Quick Heal">
-		<!-- Restores HP. Power $s1. -->
+		<!-- Recovers HP. Power $s1. -->
 		<icon>icon.skill0045</icon>
 		<effectPoint>
 			<value level="1">200</value>
@@ -4902,7 +4902,7 @@
 		</effects>
 	</skill>
 	<skill id="49" toLevel="30" name="Holy Strike">
-		<!-- <Skill with fixed cooldown> Attacks the target with $s1 power. Deals additional damage to demons and undead. -->
+		<!-- <Skill with fixed cooldown> Attacks the target with $s1 power. Deals heavy damage to demons and undead. -->
 		<icon>icon.skill0049</icon>
 		<castRange>400</castRange>
 		<effectPoint>
@@ -6342,7 +6342,7 @@
 		</effects>
 	</skill>
 	<skill id="75" toLevel="1" name="Detect Weakness">
-		<!-- The effect lasts for $s1 PvE damage $s2 -->
+		<!-- The effect lasts for $s1 PvE damage bonus $s2 -->
 		<icon>icon.skill0075</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -7165,7 +7165,7 @@
 		</effects>
 	</skill>
 	<skill id="94" toLevel="7" name="Rage">
-		<!-- Power of rage makes the character stronger. When using a sword/ blunt weapon/ spear/ fists/ dual swords P. Atk. $s1 When using a two-handed sword/ two-handed blunt weapon/ polearm Additionally P. Atk. $s2 When using a two-handed sword/ two-handed blunt weapon P. Accuracy $s3 -->
+		<!-- Power of rage makes the character stronger. Max HP $s4 Dagger Resistance $s5 When using a sword/ blunt weapon/ spear/ fists/ dual swords P. Atk. $s1 When using a two-handed sword/ two-handed blunt weapon/ polearm Additionally P. Atk. $s2 When using a two-handed sword/ two-handed blunt weapon P. Accuracy $s3 -->
 		<icon>icon.skill0094</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -7827,7 +7827,7 @@
 		</effects>
 	</skill>
 	<skill id="98" toLevel="8" name="Symphony">
-		<!-- <Silence Skill> Attacks the target with $s1 power. For $s2 blocks magical skill usage. Critical. -->
+		<!-- <Silence skill> Attacks the target with $s1 power. For $s2, prevents the target from using magic skills. Critical. -->
 		<icon>icon.skill0098</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>40</castRange>
@@ -7899,7 +7899,7 @@
 		</effects>
 	</skill>
 	<skill id="99" toLevel="2" name="Rapid Shot">
-		<!-- When using a bow Atk. Spd. +$s1 -->
+		<!-- When using a bow: Atk. Spd. $s1 -->
 		<icon>icon.skill0099</icon>
 		<magicLevel>
 			<value level="1">32</value>

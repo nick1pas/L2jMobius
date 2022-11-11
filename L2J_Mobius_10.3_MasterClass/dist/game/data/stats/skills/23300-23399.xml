@@ -481,7 +481,7 @@
 		</effects>
 	</skill>
 	<skill id="23321" toLevel="1" name="Draconic Evolver">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>BranchSys2.icon.br_wp_tiatenon_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -790,7 +790,7 @@
 		</conditions>
 	</skill>
 	<skill id="23335" toLevel="1" name="Agathion's Christmas Gift">
-		<!-- Energy is maintained and not consumed through the Juju Agathion's strength. -->
+		<!-- Agathion's Christmas Gift doesn't consume Vitality when used. -->
 		<icon>icon.etc_pi_gift_box_i03</icon>
 		<operateType>A2</operateType>
 		<abnormalType>VP_KEEP</abnormalType>
@@ -939,7 +939,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="23342" toLevel="2" name="Norhand's Trace">
-		<!-- Norhand is searching for Skooldie. A trace of its voice remains. -->
+		<!-- It has traces of Norhand's voice who is searching for Skuld. -->
 		<icon>BranchSys.icon.br_rotten_jack_ghost_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>300</castRange>
@@ -1029,7 +1029,7 @@
 		<targetType>NONE</targetType>
 	</skill>
 	<skill id="23348" toLevel="1" name="Elpy Transformation">
-		<!-- Transforms into a game Master. -->
+		<!-- Transforms into a GM. -->
 		<icon>icon.skilltransform1</icon>
 		<operateType>A2</operateType>
 		<hitTime>2500</hitTime>
@@ -1054,7 +1054,7 @@
 		</conditions>
 	</skill>
 	<skill id="23349" toLevel="1" name="Tree's Blessing Lv. 1">
-		<!-- For 10 min., increases P. Atk. by 1% and M. Atk. by 2% with the tree's blessing. -->
+		<!-- For 10 min., P. Atk. +1%, M. Atk. +2%. -->
 		<icon>icon.etc_x_mas_tree_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1504,7 +1504,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23377" toLevel="1" name="Tree's Blessing - Harp Melody">
-		<!-- For 25 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<!-- For 25 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage -30%. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1519,7 +1519,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23378" toLevel="1" name="Tree's Blessing - Harp Melody">
-		<!-- For 60 min., increases physical Accuracy by 5, physical and magic evasion by 5, and speed by 34. Decreases received critical damage by 30%. -->
+		<!-- For 60 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage -30%. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1534,7 +1534,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23379" toLevel="1" name="Elpy Master">
-		<!-- Transforms into a game Master. -->
+		<!-- Transforms into a GM. -->
 		<icon>icon.skilltransform1</icon>
 		<operateType>A2</operateType>
 		<hitTime>2500</hitTime>
@@ -1574,7 +1574,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23381" toLevel="3" name="Jermann - Flow of Destruction">
-		<!-- Magical damage on the enemy. -->
+		<!-- Deals magic damage to the target. -->
 		<icon>BranchSys3.Icon.g_skill23381</icon>
 		<operateType>A1</operateType>
 		<mpConsume>500</mpConsume>
@@ -1598,7 +1598,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23382" toLevel="1" name="Jermann - Flow of Destruction">
-		<!-- Teleport 300 grids forward. -->
+		<!-- Deals magic damage to the target. -->
 		<icon>BranchSys3.Icon.g_skill23382</icon>
 		<operateType>DA1</operateType>
 		<mpConsume>250</mpConsume>
@@ -1657,7 +1657,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23385" toLevel="3" name="Jermann - Devourer of Nature">
-		<!-- Increases HP Recovery Bonus. -->
+		<!-- Increases HP Recovery Rate. -->
 		<icon>BranchSys3.Icon.g_skill23385</icon>
 		<operateType>A2</operateType>
 		<mpConsume>250</mpConsume>

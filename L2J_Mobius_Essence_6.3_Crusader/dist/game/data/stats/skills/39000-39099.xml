@@ -9,12 +9,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39002" toLevel="1" name="HP Replenishing Potion">
-		<!-- Recovers HP for 15 sec. -->
+		<!-- For 15 sec., recovers HP. -->
 		<icon>icon.etc_lesser_potion_red_i00</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39003" toLevel="1" name="High-grade HP Replenishing Potion">
-		<!-- Magical potion that slowly restores HP. Lasts 15 sec. -->
+		<!-- For 15 sec., recovers HP. -->
 		<icon>icon.etc_potion_scarlet_i00</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -156,7 +156,7 @@
 		</effects>
 	</skill>
 	<skill id="39017" toLevel="1" name="Dance of Concentration">
-		<!-- Casting Spd. +5% for 20 min. -->
+		<!-- For 20 min., Casting Spd. +5%. -->
 		<icon>icon.bm_agathion_concentration</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -207,7 +207,7 @@
 		</effects>
 	</skill>
 	<skill id="39019" toLevel="1" name="Scion Ring">
-		<!-- HP Recovery Bonus +5%, P./ M. Accuracy +1, Weight Limit +5000. -->
+		<!-- HP Recovery Rate +5%, P. Accuracy +1, M. Accuracy +1, weight limit +5000. -->
 		<icon>icon.event_classic_ring</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -678,7 +678,7 @@
 		</effects>
 	</skill>
 	<skill id="39050" toLevel="3" name="Fish Stew - Vampiric Rage">
-		<!-- With a certain chance, absorbs $s2 of the inflicted damage as HP. Duration: $s1 -->
+		<!-- For $s1, with a certain chance, absorbs $s2 of the inflicted damage as HP. -->
 		<icon>icon.fish_stew_buff</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -755,58 +755,58 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="10">
-						<item id="10649" count="1" /> <!-- Blessed Feather (Tradable) -->
+						<item id="10649" count="1" /> <!-- Feather of Blessing -->
 					</item>
 					<item chance="10">
-						<item id="49081" count="1" /> <!-- Exp Scroll (Tradable) -->
+						<item id="49081" count="1" /> <!-- XP Growth Scroll -->
 					</item>
 					<item chance="10">
-						<item id="90182" count="60" /> <!-- Sparkling Golden Bait -->
+						<item id="90182" count="60" /> <!-- Shining Golden Bait -->
 					</item>
 					<item chance="10">
-						<item id="90499" count="2" /> <!-- Special Dragon Fruit Lv. 1 (can be exchanged) -->
+						<item id="90499" count="2" /> <!-- Special Dragon Fruit Lv. 1 -->
 					</item>
 					<item chance="10">
-						<item id="90519" count="1" /> <!-- Glittering Scroll of Melody of Mood (Tradable) -->
+						<item id="90519" count="1" /> <!-- Shining Scroll of Mood Melody -->
 					</item>
 					<item chance="10">
-						<item id="90520" count="1" /> <!-- Fire Dragon Blessing Scroll -->
+						<item id="90520" count="1" /> <!-- Fire Dragon's Blessing Scroll -->
 					</item>
 					<item chance="2.35">
-						<item id="49513" count="1" /> <!-- Box of Glittering Varnish for Hanging -->
+						<item id="49513" count="1" /> <!-- Shining Pendant Polish box -->
 					</item>
 					<item chance="2.35">
-						<item id="49682" count="1" /> <!-- Soul of Baium -->
+						<item id="49682" count="1" /> <!-- Baium's Soul -->
 					</item>
 					<item chance="2.35">
-						<item id="49702" count="1" /> <!-- Border Bracelet Shard -->
+						<item id="49702" count="1" /> <!-- Bracelet of Border Fragment -->
 					</item>
 					<item chance="2.35">
-						<item id="49704" count="1" /> <!-- Talisman Shard of Border -->
+						<item id="49704" count="1" /> <!-- Talisman of Border Fragment -->
 					</item>
 					<item chance="2.35">
 						<item id="49738" count="1" /> <!-- Sealed Blessed Talisman of Border -->
 					</item>
 					<item chance="2.35">
-						<item id="49756" count="1" /> <!-- Cloth Flap -->
+						<item id="49756" count="1" /> <!-- Cloth Piece -->
 					</item>
 					<item chance="2.35">
-						<item id="49760" count="1" /> <!-- Armor Chest (A-grade) -->
+						<item id="49760" count="1" /> <!-- A-grade Armor Pack -->
 					</item>
 					<item chance="2.35">
-						<item id="49761" count="1" /> <!-- Accessory Box (A-grade) -->
+						<item id="49761" count="1" /> <!-- A-grade Accessory Pack -->
 					</item>
 					<item chance="2.35">
 						<item id="49785" count="1" /> <!-- A-grade Weapon Pack -->
 					</item>
 					<item chance="2.35">
-						<item id="90137" count="1" /> <!-- Matte Hanging Varnish -->
+						<item id="90137" count="1" /> <!-- Matte Pendant Polish -->
 					</item>
 					<item chance="2.35">
-						<item id="90138" count="1" /> <!-- Glitter Charm Varnish -->
+						<item id="90138" count="1" /> <!-- Glittering Pendant Polish -->
 					</item>
 					<item chance="2.4">
-						<item id="90172" count="1" /> <!-- Gem of Border -->
+						<item id="90172" count="1" /> <!-- Gemstone of Border -->
 					</item>
 					<item chance="2.35">
 						<item id="90496" count="1" /> <!-- Earth Dragon Belt -->
@@ -815,13 +815,13 @@
 						<item id="90497" count="1" /> <!-- Fire Dragon Belt -->
 					</item>
 					<item chance="2.35">
-						<item id="90498" count="1" /> <!-- Mystical Casket -->
+						<item id="90498" count="1" /> <!-- Mysterious Jewelry Box -->
 					</item>
 					<item chance="2.35">
-						<item id="90524" count="1" /> <!-- Armor Enchant Stone Box (A-grade) -->
+						<item id="90524" count="1" /> <!-- A-grade Armor Enchant Stone Pack -->
 					</item>
 					<item chance="2.35">
-						<item id="90525" count="1" /> <!-- Enchant Stone Box (B-grade) -->
+						<item id="90525" count="1" /> <!-- B-grade Armor Enchant Stone Pack -->
 					</item>
 				</items>
 			</effect>
@@ -951,13 +951,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100.0">
-						<item id="29575" count="1" /> <!-- Queen Ant's Ring Lv. 1 - Not Available - Not available -->
+						<item id="29575" count="1" /> <!-- Queen Ant's Ring Lv. 1 - Not Available - Not Available -->
 					</item>
 					<item chance="100.0">
-						<item id="29576" count="1" /> <!-- Orfen's Earring Lv. 1 - Not Available - Not available -->
+						<item id="29576" count="1" /> <!-- Orfen's Earring Lv. 1 - Not Available - Not Available -->
 					</item>
 					<item chance="100.0">
-						<item id="29577" count="1" /> <!-- Ring of Core Lv. 1 - Not Available - Not available -->
+						<item id="29577" count="1" /> <!-- Ring of Core Lv. 1 - Not Available - Not Available -->
 					</item>
 				</items>
 			</effect>
@@ -983,121 +983,121 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="2.5">
-						<item id="3047" count="1" /> <!-- Spellbook: Iron Will -->
+						<item id="3047" count="1" /> <!-- Spellbook: Iron Will - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3046" count="1" /> <!-- Spellbook: Sacrifice -->
+						<item id="3046" count="1" /> <!-- Spellbook: Sacrifice - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3052" count="1" /> <!-- Spellbook: Hamstring -->
+						<item id="3052" count="1" /> <!-- Spellbook: Hamstring - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3044" count="1" /> <!-- Spellbook: Horror -->
+						<item id="3044" count="1" /> <!-- Spellbook: Horror - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3080" count="1" /> <!-- Spellbook: Sleeping Cloud -->
+						<item id="3080" count="1" /> <!-- Spellbook: Sleeping Cloud - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3079" count="1" /> <!-- Spellbook: Cancel -->
+						<item id="3079" count="1" /> <!-- Spellbook: Cancel - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="8891" count="1" /> <!-- Spellbook: Aura Flash -->
+						<item id="8891" count="1" /> <!-- Spellbook: Aura Flash - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3064" count="1" /> <!-- Spellbook: Silence -->
+						<item id="3064" count="1" /> <!-- Spellbook: Silence - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3063" count="1" /> <!-- Spellbook: Anchor -->
+						<item id="3063" count="1" /> <!-- Spellbook: Anchor - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3066" count="1" /> <!-- Spellbook: Curse Death Link -->
+						<item id="3066" count="1" /> <!-- Spellbook: Curse Death Link - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="5811" count="1" /> <!-- Spellbook: Mass Slow -->
+						<item id="5811" count="1" /> <!-- Spellbook: Mass Slow - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="4922" count="1" /> <!-- Spellbook: Summon Binding Cubic -->
+						<item id="4922" count="1" /> <!-- Spellbook: Summon Binding Cubic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3072" count="1" /> <!-- Spellbook: Purify -->
+						<item id="3072" count="1" /> <!-- Spellbook: Purify - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="6398" count="1" /> <!-- Spellbook: Body of Avatar -->
+						<item id="6398" count="1" /> <!-- Spellbook: Body of Avatar - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="4912" count="1" /> <!-- Spellbook: Benediction -->
+						<item id="4912" count="1" /> <!-- Spellbook: Benediction - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3101" count="1" /> <!-- Spellbook: Death Whisper -->
+						<item id="3101" count="1" /> <!-- Spellbook: Death Whisper - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3099" count="1" /> <!-- Spellbook: Haste -->
+						<item id="3099" count="1" /> <!-- Spellbook: Haste - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="8388" count="1" /> <!-- Spellbook: Attack Prowess -->
+						<item id="8388" count="1" /> <!-- Spellbook: Attack Prowess - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="8389" count="1" /> <!-- Spellbook: Defense Prowess -->
+						<item id="8389" count="1" /> <!-- Spellbook: Defense Prowess - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3051" count="1" /> <!-- Spellbook: Spirit Barrier -->
+						<item id="3051" count="1" /> <!-- Spellbook: Spirit Barrier - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3045" count="1" /> <!-- Spellbook: Summon Life Cubic -->
+						<item id="3045" count="1" /> <!-- Spellbook: Summon Life Cubic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="8890" count="1" /> <!-- Spellbook: Summon Attractive Cubic -->
+						<item id="8890" count="1" /> <!-- Spellbook: Summon Attractive Cubic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="4923" count="1" /> <!-- Spellbook: Summon Aqua Cubic -->
+						<item id="4923" count="1" /> <!-- Spellbook: Summon Aqua Cubic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3942" count="1" /> <!-- Spellbook: Party Return -->
+						<item id="3942" count="1" /> <!-- Spellbook: Party Return - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="8397" count="1" /> <!-- Spellbook: Clarity -->
+						<item id="8397" count="1" /> <!-- Spellbook: Clarity - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="5815" count="1" /> <!-- Spellbook: Wild Magic -->
+						<item id="5815" count="1" /> <!-- Spellbook: Wild Magic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3050" count="1" /> <!-- Spellbook: Hex -->
+						<item id="3050" count="1" /> <!-- Spellbook: Hex - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3041" count="1" /> <!-- Spellbook: Summon Phantom Cubic -->
+						<item id="3041" count="1" /> <!-- Spellbook: Summon Phantom Cubic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3055" count="1" /> <!-- Spellbook: Lightning Strike -->
+						<item id="3055" count="1" /> <!-- Spellbook: Lightning Strike - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3089" count="1" /> <!-- Spellbook: Tempest -->
+						<item id="3089" count="1" /> <!-- Spellbook: Tempest - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="4924" count="1" /> <!-- Spellbook: Summon Spark Cubic -->
+						<item id="4924" count="1" /> <!-- Spellbook: Summon Spark Cubic - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="4205" count="1" /> <!-- Amulet: Chant of Berserker Spirit -->
+						<item id="4205" count="1" /> <!-- Amulet: Chant of Berserker Spirit - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3109" count="1" /> <!-- Amulet: Seal of Silence -->
+						<item id="3109" count="1" /> <!-- Amulet: Seal of Silence - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3111" count="1" /> <!-- Amulet: Seal of Suspension -->
+						<item id="3111" count="1" /> <!-- Amulet: Seal of Suspension - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3118" count="1" /> <!-- Amulet: Chant of Death Whisper -->
+						<item id="3118" count="1" /> <!-- Amulet: Chant of Death Whisper - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="6397" count="1" /> <!-- Amulet: Chant of Vampire -->
+						<item id="6397" count="1" /> <!-- Amulet: Chant of Vampire - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3116" count="1" /> <!-- Amulet: Chant of Haste -->
+						<item id="3116" count="1" /> <!-- Amulet: Chant of Haste - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="3940" count="1" /> <!-- Blueprint: Summon Siege Golem -->
+						<item id="3940" count="1" /> <!-- Blueprint: Summon Siege Golem - Not Available - Not Available -->
 					</item>
 					<item chance="2.5">
-						<item id="4915" count="1" /> <!-- Blueprint: Summon Wild Hog Cannon -->
+						<item id="4915" count="1" /> <!-- Blueprint: Summon Wild Hog Cannon - Not Available - Not Available -->
 					</item>
 				</items>
 			</effect>
@@ -1140,7 +1140,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39069" toLevel="1" name="Major Hero Healing Potion">
-		<!-- Greatly increases HP Recovery Bonus. -->
+		<!-- Greatly increases HP Recovery Rate. -->
 		<icon>icon.etc_reagent_white_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -1267,7 +1267,7 @@
 						<item id="71" count="1" /> <!-- Flamberge -->
 					</item>
 					<item chance="8.3">
-						<item id="281" count="1" /> <!-- Crystallized Ice Bow -->
+						<item id="281" count="1" /> <!-- Frozen Bow -->
 					</item>
 					<item chance="8.3">
 						<item id="193" count="1" /> <!-- Stick of Faith -->
@@ -1295,7 +1295,7 @@
 		</effects>
 	</skill>
 	<skill id="39074" toLevel="1" name="Angel Cat's Energy">
-		<!-- For 30 min., Max HP/ MP +5%, acquired XP/ SP +20%. The effect remains after death. -->
+		<!-- For 30 min., Max HP/ MP +5%, acquired XP/ SP while hunting +20%. The effect remains after death. -->
 		<icon>icon.skilltransform4</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1347,7 +1347,7 @@
 		</effects>
 	</skill>
 	<skill id="39076" toLevel="2" name="Fish Stew - Guild's Gratitude">
-		<!-- For $s1, Acquired XP/ SP +$s2. -->
+		<!-- For $s1, acquired XP/ SP while hunting +$s2. -->
 		<icon>icon.ev_invasion_buff_box</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>3000</reuseDelay>
@@ -1363,7 +1363,7 @@
 		</effects>
 	</skill>
 	<skill id="39077" toLevel="1" name="Scroll of Escape: Gludin Harbor">
-		<!-- Teleports to Gludin Harbor. -->
+		<!-- Teleports to the Gludin Harbor. -->
 		<hitTime>3000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeId>49503</itemConsumeId>
@@ -1603,13 +1603,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="33.34">
-						<item id="49521" count="1" /> <!-- Refined Romantic Chapeau - Special Trait -->
+						<item id="49521" count="1" /> <!-- Refined Romantic Chapeau <STR+1 INT+1> -->
 					</item>
 					<item chance="33.33">
-						<item id="49522" count="1" /> <!-- Pirate King Hat - Special Trait -->
+						<item id="49522" count="1" /> <!-- Pirate King Hat <STR+1 INT+1> -->
 					</item>
 					<item chance="33.33">
-						<item id="49523" count="1" /> <!-- Circlet of Devil - Special Trait -->
+						<item id="49523" count="1" /> <!-- Demon's Circlet <STR+1 INT+1> -->
 					</item>
 				</items>
 			</effect>
@@ -1674,7 +1674,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="39095" toLevel="2" name="Blessed Agathion's Soul">
-		<!-- <Effect> Silence Resistance +$s1 Fear Resistance +$s1 Shock Resistance +$s1 Sleep Resistance +$s1 Paralysis Resistance +$s1 -->
+		<!-- <Effect> Paralysis Resistance $s1 Shock Resistance $s1 Sleep Resistance $s1 Silence Resistance $s1 Fear Resistance $s1 -->
 		<icon>icon.skill6366_2</icon>
 		<operateType>P</operateType>
 	</skill>

@@ -65,7 +65,7 @@
 		</effects>
 	</skill>
 	<skill id="804" toLevel="1" name="Knight Ability: Critical Damage Resistance">
-		<!-- Received Critical Damage from standard attacks is dereased. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<icon>icon.skill0232</icon>
 		<excludedFromCheck>true</excludedFromCheck>
 		<magicLevel>75</magicLevel>
@@ -1213,7 +1213,7 @@
 				<!-- Evasion Chance -->
 				<chance>10</chance>
 				<targetType>SELF</targetType>
-				<skillId>5674</skillId> <!-- Evasion Chance -->
+				<skillId>5674</skillId> <!-- Evasion Rate -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1407,7 +1407,7 @@
 		</effects>
 	</skill>
 	<skill id="825" toLevel="1" name="Sharpen Edge">
-		<!-- For 20 min., due to sarpening of bladed weapon P. Atk. +5% and Critical Rate for standard attacks +20%. -->
+		<!-- Sharpens a bladed weapon. For 20 min., P. Atk. +5%, Critical Rate for basic attacks +20%. -->
 		<icon>icon.skill0825</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1457,7 +1457,7 @@
 		</effects>
 	</skill>
 	<skill id="826" toLevel="1" name="Spike">
-		<!-- Adds spike to the blunt weapon. For 20 min., P. Atk. +5%, Confusion Atk. Rate +8%. -->
+		<!-- Adds a spike to a blunt weapon. For 20 min., P. Atk. +5%, Confusion Atk. Rate +8%. -->
 		<icon>icon.skill0826</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1594,7 +1594,7 @@
 		</effects>
 	</skill>
 	<skill id="830" toLevel="1" name="Embroider">
-		<!-- Embroiders a robe. For 20 min. P. Def. +5% and MP Recovery Bonus +2. -->
+		<!-- Decorates a robe with embroidery. For 20 min., P. Def. +5%, MP Recovery Rate +2. -->
 		<icon>icon.skill0830</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1703,7 +1703,7 @@
 		</effects>
 	</skill>
 	<skill id="834" toLevel="1" name="Blood Pact">
-		<!-- Through a blood contract, for 2 min. party members' Max HP +10% and HP Recovery Bonus +10. -->
+		<!-- Through Blood Contract, party members' Max HP +10%, HP Recovery Rate +10 for 2 min. -->
 		<icon>icon.skill0834</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -1888,7 +1888,7 @@
 		</effects>
 	</skill>
 	<skill id="839" toLevel="1" name="Dismount">
-		<!-- Dismounts from a ridable mount. -->
+		<!-- You are dismounting. -->
 		<icon>icon.skilltransform2</icon>
 		<effectPoint>10</effectPoint>
 		<hitTime>2500</hitTime>
@@ -2161,7 +2161,7 @@
 		</effects>
 	</skill>
 	<skill id="847" toLevel="1" name="Ward Transport">
-		<!-- With an opposing ward in hand, go back to your outpost and use this skill to move the ward back to your castle. -->
+		<!-- With an opposing banner in hand, go back to your outpost and use this skill to move the banner back to your castle. -->
 		<icon>icon.weapon_fort_flag_i00</icon>
 		<castRange>85</castRange>
 		<effectPoint>0</effectPoint>
@@ -2998,7 +2998,7 @@
 		</effects>
 	</skill>
 	<skill id="876" toLevel="8" name="Captain's Enuma Elish">
-		<!-- Attacks the enemy using the mighty Sword of Creation with $s1 Power added to P. Atk. -->
+		<!-- Unleashes the power of the Sword of Creation striking all enemies ahead of you and dealing additionally $s1 damage. -->
 		<icon>icon.skill0526</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
@@ -3052,7 +3052,7 @@
 		</effects>
 	</skill>
 	<skill id="877" toLevel="8" name="Centurion Disarm">
-		<!-- Disarms the enemy and prevents them from equipping a weapon for $s1 Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Disarms the enemy and prevents them from equipping a weapon for $s1. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill0485</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -3318,7 +3318,7 @@
 		</effects>
 	</skill>
 	<skill id="883" toLevel="7" name="Commander Seal of Binding">
-		<!-- Holds nearby enemies for $s1 Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Holds nearby enemies for $s1. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill1208</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -3438,7 +3438,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="886" toLevel="11" name="Air Shock Bomb">
-		<!-- Damages and stuns the target, momentarily preventing movement. Power $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Damages and stuns the target, momentarily preventing movement. Power $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill_transform_debuff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>9</abnormalTime>
@@ -4272,7 +4272,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="899" toLevel="6" name="Cat Roar">
-		<!-- Lets out a howl to decrease P./ M. Def., Speed and Atk. Spd./ Casting Spd. of nearby enemies. Power $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Lets out a howl to decrease P./ M. Def., Speed and Atk. Spd./ Casting Spd. of nearby enemies. Power $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill_transform_debuff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>

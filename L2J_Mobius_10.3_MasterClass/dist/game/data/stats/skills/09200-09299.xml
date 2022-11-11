@@ -137,7 +137,7 @@
 		</effects>
 	</skill>
 	<skill id="9203" toLevel="1" name="Harp Melody - Elixir">
-		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, and Speed +34. Received Critical Damage from standard attacks -30%. -->
+		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage from basic attacks -30%. -->
 		<icon>icon.skill11521</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -210,7 +210,7 @@
 		</effects>
 	</skill>
 	<skill id="9205" toLevel="1" name="Sturdy Kukuru">
-		<!-- Feels sturdy while riding a kukuru. -->
+		<!-- Feels sturdy while riding a Kukuru. -->
 		<icon>icon.skill0169</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -299,7 +299,7 @@
 		</effects>
 	</skill>
 	<skill id="9210" toLevel="1" name="Dismount">
-		<!-- Dismounts from a kukuru. -->
+		<!-- You are dismounting. -->
 		<icon>icon.skill9210</icon>
 		<operateType>A1</operateType>
 		<hitTime>2500</hitTime>
@@ -317,14 +317,14 @@
 		</effects>
 	</skill>
 	<skill id="9211" toLevel="1" name="Dismount">
-		<!-- Dismounts from a kukuru. -->
+		<!-- Dismount Kukuru -->
 		<icon>icon.skill0217</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>85</magicLevel>
 	</skill>
 	<skill id="9212" toLevel="1" name="Dismount Kukuru">
-		<!-- Dismounts from a kukuru. -->
+		<!-- Dismount Kukuru -->
 		<icon>icon.skilltransform2</icon>
 		<operateType>A1</operateType>
 		<effectPoint>10</effectPoint>
@@ -514,7 +514,7 @@
 		</effects>
 	</skill>
 	<skill id="9219" toLevel="1" name="Drum Melody - Elixir of Blessing">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill11522</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -704,7 +704,7 @@
 		</effects>
 	</skill>
 	<skill id="9223" toLevel="1" name="Harp Melody - Elixir of Blessing">
-		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, and Speed +34. Received Critical Damage from standard attacks -30%. -->
+		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage from basic attacks -30%. -->
 		<icon>icon.skill11521</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -773,6 +773,7 @@
 		</effects>
 	</skill>
 	<skill id="9225" toLevel="1" name="Specter of Light">
+		<!-- Summons Specter of Light. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -811,7 +812,7 @@
 		</conditions>
 	</skill>
 	<skill id="9227" toLevel="1" name="Horn Melody - Mentor">
-		<!-- With your mentor's help, your P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
+		<!-- With your mentor's help, P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill11517</icon>
 		<abnormalTime>-1</abnormalTime>
 		<canBeDispelled>false</canBeDispelled>
@@ -855,7 +856,7 @@
 		</effects>
 	</skill>
 	<skill id="9228" toLevel="1" name="Drum Melody - Mentor">
-		<!-- With your mentor's help, your Critical Rate for standard attacks +$s1, Critical Damage for standard attacks +$s2, M. Skill Critical Rate +$s3, and Received Critical Damage from standard attacks -$s4. Also has a certain chance to increase P. Critical Damage when the character is attacked. Buff is triggered only when your mentor is online. Buff persists for 5 min. after your mentor has gone offline. -->
+		<!-- With your mentor's help, Critical Rate for basic attacks +$s1, Critical Damage for basic attacks +$s2, M. Skill Critical Rate +$s3, received Critical Damage from basic attacks -$s4. With a certain chance, increases P. Critical Damage when hit. The effect is active only when your mentor is online and for 5 min. after they have logged out. -->
 		<icon>icon.skill11522</icon>
 		<abnormalTime>-1</abnormalTime>
 		<canBeDispelled>false</canBeDispelled>
@@ -948,7 +949,7 @@
 		</effects>
 	</skill>
 	<skill id="9230" toLevel="1" name="Pipe Organ Melody - Mentor">
-		<!-- With your mentor's help, your Max HP +$s1, Max MP +$s2, Max CP + $s3. With a certain chance, grants $s4 Vampiric Rage effect. Buff is triggered only when your mentor is online. Buff persists for 5 min. after your mentor has gone offline. -->
+		<!-- With your mentor's help, Max HP +$s1, Max MP +$s2, Max CP + $s3. With a certain chance, Vampiric Rage effect +$s4. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill11519</icon>
 		<abnormalTime>-1</abnormalTime>
 		<canBeDispelled>false</canBeDispelled>
@@ -996,7 +997,7 @@
 		</effects>
 	</skill>
 	<skill id="9231" toLevel="1" name="Guitar Melody - Mentor">
-		<!-- With your mentor's help, your Atk. Spd. +$s1, Casting Spd. +$s2, Skill MP Consumption -$s3. Buff is triggered only when your mentor is online. Buff persists for 5 min. after your mentor has gone offline. -->
+		<!-- With your mentor's help, Atk. Spd. +$s1, Casting Spd. +$s2, Skill MP Consumption -$s3. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill11520</icon>
 		<abnormalTime>-1</abnormalTime>
 		<canBeDispelled>false</canBeDispelled>
@@ -1061,7 +1062,7 @@
 		</effects>
 	</skill>
 	<skill id="9232" toLevel="1" name="Harp Melody - Mentor">
-		<!-- With your mentor's help, P. Accuracy +5, P./ M. Evasion +5, Speed +34, Received Critical Damage from standard attacks -30%. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
+		<!-- With your mentor's help, P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage from basic attacks -30%. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill11521</icon>
 		<abnormalTime>-1</abnormalTime>
 		<canBeDispelled>false</canBeDispelled>
@@ -1137,7 +1138,7 @@
 		</effects>
 	</skill>
 	<skill id="9234" toLevel="1" name="Scroll: Enchant Head Accessory">
-		<!-- Enchants Hair Accessory. -->
+		<!-- Required for enchanting head accessories. -->
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<hitCancelTime>0</hitCancelTime>
@@ -1257,7 +1258,7 @@
 		</effects>
 	</skill>
 	<skill id="9240" toLevel="2" name="Nevit's Rune">
-		<!-- Acquired XP/ SP +$s1. -->
+		<!-- Acquired XP/ SP +$s1 -->
 		<icon>
 			<value level="1">br_cashtex.skill.br_cash_rune_of_exp_buff_1</value>
 			<value level="2">br_cashtex.skill.br_cash_rune_of_exp_buff_2</value>
@@ -1343,10 +1344,10 @@
 						<item id="34077" count="1" /> <!-- Scroll: Enchant R-grade Armor - Event -->
 					</item>
 					<item chance="8.8">
-						<item id="33818" count="1" /> <!-- Scroll: Enchant Hair Accessory - Event -->
+						<item id="33818" count="1" /> <!-- Scroll: Enchant Head Accessory - Event -->
 					</item>
 					<item chance="4.875">
-						<item id="33819" count="1" /> <!-- Life Stone: Hair Accessory - Event -->
+						<item id="33819" count="1" /> <!-- Life Stone: Head Accessory - Event -->
 					</item>
 				</items>
 			</effect>
@@ -1390,40 +1391,40 @@
 						<item id="33827" count="1" /> <!-- R95-grade Unbind Scroll - Event -->
 					</item>
 					<item chance="0.89">
-						<item id="33850" count="1" /> <!-- Lucky Enchant Stone: D-grade Weapon - Event -->
+						<item id="33850" count="1" /> <!-- Stone: Enchant D-grade Weapon - Event -->
 					</item>
 					<item chance="0.6">
-						<item id="33851" count="1" /> <!-- Lucky Enchant Stone: C-grade Weapon - Event -->
+						<item id="33851" count="1" /> <!-- Stone: Enchant C-grade Weapon - Event -->
 					</item>
 					<item chance="0.32">
-						<item id="33852" count="1" /> <!-- Lucky Enchant Stone: B-grade Weapon - Event -->
+						<item id="33852" count="1" /> <!-- Stone: Enchant B-grade Weapon - Event -->
 					</item>
 					<item chance="0.14">
-						<item id="33853" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon - Event -->
+						<item id="33853" count="1" /> <!-- Stone: Enchant A-grade Weapon - Event -->
 					</item>
 					<item chance="0.1">
-						<item id="33854" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon - Event -->
+						<item id="33854" count="1" /> <!-- Stone: Enchant S-grade Weapon - Event -->
 					</item>
 					<item chance="1.5048">
-						<item id="33855" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon - Event -->
+						<item id="33855" count="1" /> <!-- Stone: Enchant R-grade Weapon - Event -->
 					</item>
 					<item chance="1.39">
-						<item id="33856" count="1" /> <!-- Lucky Enchant Stone: D-grade Armor - Event -->
+						<item id="33856" count="1" /> <!-- Stone: Enchant D-grade Armor - Event -->
 					</item>
 					<item chance="1.07">
-						<item id="33857" count="1" /> <!-- Lucky Enchant Stone: C-grade Armor - Event -->
+						<item id="33857" count="1" /> <!-- Stone: Enchant C-grade Armor - Event -->
 					</item>
 					<item chance="1">
-						<item id="33858" count="1" /> <!-- B-grade Lucky Enchant Stone: Armor - Event -->
+						<item id="33858" count="1" /> <!-- Stone: Enchant B-grade Armor - Event -->
 					</item>
 					<item chance="0.81">
-						<item id="33859" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor - Event -->
+						<item id="33859" count="1" /> <!-- Stone: Enchant A-grade Armor - Event -->
 					</item>
 					<item chance="0.43">
-						<item id="33860" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor - Event -->
+						<item id="33860" count="1" /> <!-- Stone: Enchant S-grade Armor - Event -->
 					</item>
 					<item chance="12.1125">
-						<item id="33861" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor - Event -->
+						<item id="33861" count="1" /> <!-- Stone: Enchant R-grade Armor - Event -->
 					</item>
 					<item chance="6.1407">
 						<item id="34076" count="1" /> <!-- Scroll: Enchant R-grade Weapon - Event -->
@@ -1467,19 +1468,19 @@
 						<item id="33832" count="1" /> <!-- Decayed R95-grade Soul Crystal Change Stone - Event -->
 					</item>
 					<item chance="3">
-						<item id="33833" count="1" /> <!-- S-grade Attribute Change Crystal - Event -->
+						<item id="33833" count="1" /> <!-- Attribute Change Crystal: S-grade - Event -->
 					</item>
 					<item chance="3">
-						<item id="33834" count="1" /> <!-- S80-grade Attribute Change Crystal - Event -->
+						<item id="33834" count="1" /> <!-- Attribute Change Crystal: S80-grade - Event -->
 					</item>
 					<item chance="3">
-						<item id="33835" count="1" /> <!-- R-grade Attribute Change Crystal - Event -->
+						<item id="33835" count="1" /> <!-- Attribute Change Crystal: R-grade - Event -->
 					</item>
 					<item chance="3">
-						<item id="33836" count="1" /> <!-- R95-grade Attribute Change Crystal - Event -->
+						<item id="33836" count="1" /> <!-- Attribute Change Crystal: R95-grade - Event -->
 					</item>
 					<item chance="3">
-						<item id="33837" count="1" /> <!-- R99-grade Attribute Change Crystal - Event -->
+						<item id="33837" count="1" /> <!-- Attribute Change Crystal: R99-grade - Event -->
 					</item>
 					<item chance="5.71">
 						<item id="34076" count="1" /> <!-- Scroll: Enchant R-grade Weapon - Event -->
@@ -1797,10 +1798,10 @@
 						<item id="34077" count="1" /> <!-- Scroll: Enchant R-grade Armor - Event -->
 					</item>
 					<item chance="4.36">
-						<item id="33818" count="1" /> <!-- Scroll: Enchant Hair Accessory - Event -->
+						<item id="33818" count="1" /> <!-- Scroll: Enchant Head Accessory - Event -->
 					</item>
 					<item chance="2.26">
-						<item id="33819" count="1" /> <!-- Life Stone: Hair Accessory - Event -->
+						<item id="33819" count="1" /> <!-- Life Stone: Head Accessory - Event -->
 					</item>
 				</items>
 			</effect>
@@ -1826,10 +1827,10 @@
 						<item id="33827" count="1" /> <!-- R95-grade Unbind Scroll - Event -->
 					</item>
 					<item chance="0.53">
-						<item id="33855" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon - Event -->
+						<item id="33855" count="1" /> <!-- Stone: Enchant R-grade Weapon - Event -->
 					</item>
 					<item chance="2.39">
-						<item id="33861" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor - Event -->
+						<item id="33861" count="1" /> <!-- Stone: Enchant R-grade Armor - Event -->
 					</item>
 					<item chance="6.95">
 						<item id="34076" count="1" /> <!-- Scroll: Enchant R-grade Weapon - Event -->
@@ -1864,13 +1865,13 @@
 						<item id="33832" count="1" /> <!-- Decayed R95-grade Soul Crystal Change Stone - Event -->
 					</item>
 					<item chance="3.29">
-						<item id="33835" count="1" /> <!-- R-grade Attribute Change Crystal - Event -->
+						<item id="33835" count="1" /> <!-- Attribute Change Crystal: R-grade - Event -->
 					</item>
 					<item chance="3.25">
-						<item id="33836" count="1" /> <!-- R95-grade Attribute Change Crystal - Event -->
+						<item id="33836" count="1" /> <!-- Attribute Change Crystal: R95-grade - Event -->
 					</item>
 					<item chance="3.25">
-						<item id="33837" count="1" /> <!-- R99-grade Attribute Change Crystal - Event -->
+						<item id="33837" count="1" /> <!-- Attribute Change Crystal: R99-grade - Event -->
 					</item>
 					<item chance="6.5">
 						<item id="34076" count="1" /> <!-- Scroll: Enchant R-grade Weapon - Event -->
@@ -1960,7 +1961,7 @@
 		</effects>
 	</skill>
 	<skill id="9274" toLevel="1" name="PA - Drum Melody">
-		<!-- For PA. For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. PA only. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -2166,7 +2167,7 @@
 		</effects>
 	</skill>
 	<skill id="9278" toLevel="1" name="PA - Harp Melody">
-		<!-- For PA. For 60 min., P. Accuracy +5, P./ M. Evasion +5, and Speed +34. Received Critical Damage from standard attacks -30%. -->
+		<!-- For 60 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage from basic attacks -30%. PA only. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -2215,7 +2216,7 @@
 		</effects>
 	</skill>
 	<skill id="9279" toLevel="1" name="PA Growth Support">
-		<!-- PA only. Acquired XP/ SP +$s1, all basic stats +$s2, P./ M. Def. +$s3. Not for pets or servitors. -->
+		<!-- Acquired XP/ SP +$s1, all stats +$s2, P. Atk./ M. Atk./ P. Def./ M. Def. +$s3, Dye Engraving Consumption -$s4%. Not for pets or servitors. PA only. -->
 		<icon>icon.etc_pccafe_exp_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -2233,7 +2234,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="9280" toLevel="4" name="Horn Melody - Heavenly Cocktail">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. Buff remains even after death and cannot be forcefully deleted. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -2295,7 +2296,7 @@
 		</effects>
 	</skill>
 	<skill id="9281" toLevel="4" name="Drum Melody - Heavenly Cocktail">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. The effect remains after death and cannot be forcibly removed. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2358,7 +2359,7 @@
 		</effects>
 	</skill>
 	<skill id="9282" toLevel="2" name="Lute Melody - Heavenly Cocktail">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3. Has a chance of applying 9% Vampiric Rage effect. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3. With a certain chance, Vampiric Rage effect +$s4. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2404,7 +2405,7 @@
 		</effects>
 	</skill>
 	<skill id="9283" toLevel="4" name="Pipe Organ Melody - Heavenly Cocktail">
-		<!-- For $s1, Max HP +$s2, Max MP +$s3, and Max CP +$s4. A chance to apply $s5 Vampiric Rage effect. Buff remains even after death and cannot be forcefully deleted. -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, Vampiric Rage effect +$s5. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2463,7 +2464,7 @@
 		</effects>
 	</skill>
 	<skill id="9284" toLevel="4" name="Guitar Melody - Heavenly Cocktail">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Skill MP Consumption -$s4. The effect remains after death and cannot be forcibly removed. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Skill MP Consumption -$s4. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2528,7 +2529,7 @@
 		</effects>
 	</skill>
 	<skill id="9285" toLevel="2" name="Harp Melody - Heavenly Cocktail">
-		<!-- For $s1, P. Accuracy +$s2, P. Evasion/ M. Evasion +$s3, Speed +$s4. Received Critical Damage from standard attacks -$s5. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For $s1, P. Accuracy +$s2, P./ M. Evasion +$s3, Speed +$s4, received Critical Damage from basic attacks -$s5. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>

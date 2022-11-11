@@ -142,7 +142,7 @@
 		</effects>
 	</skill>
 	<skill id="9012" toLevel="1" name="Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -184,7 +184,7 @@
 		</effects>
 	</skill>
 	<skill id="9014" toLevel="1" name="Focus">
-		<!-- For 60 min., Critical Rate for standard attacks +30%. -->
+		<!-- For 60 min., Critical Rate for basic attacks +30%. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -205,7 +205,7 @@
 		</effects>
 	</skill>
 	<skill id="9015" toLevel="1" name="Death Whisper">
-		<!-- For 60 min., Critical Damage for standard attacks +35%. -->
+		<!-- For 60 min., Critical Damage for basic attacks +35%. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -268,7 +268,7 @@
 		</effects>
 	</skill>
 	<skill id="9018" toLevel="1" name="Blessed Body">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -289,7 +289,7 @@
 		</effects>
 	</skill>
 	<skill id="9019" toLevel="1" name="Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -310,7 +310,7 @@
 		</effects>
 	</skill>
 	<skill id="9020" toLevel="1" name="Vampiric Rage">
-		<!-- Restores 9% of the physical damage inflicted on the enemy as HP with a certain probability for 60 min. -->
+		<!-- For 60 min., absorbs 9% of the inflicted melee damage as HP with a certain chance. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -401,7 +401,7 @@
 		</effects>
 	</skill>
 	<skill id="9023" toLevel="1" name="Blessed Soul">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.etc_hot_spring_nectar_i00</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -665,7 +665,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="9035" toLevel="1" name="Steamed Rice Cake">
-		<!-- Maintains Vitality for 10 min. Delicious steamed rice cake effect. -->
+		<!-- Sustains Vitality for 10 min. Delicious steamed rice cake effect. -->
 		<icon>icon.etc.event_steamed_rice_cake_i00</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -749,20 +749,20 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="65">
-						<item id="15380" count="5" /> <!-- Steamed Rice Cake (Event) -->
-						<item id="15389" count="1" /> <!-- Weaver's Colorful Dress (Event) - 30-day -->
+						<item id="15380" count="5" /> <!-- Steamed Rice Cake - Event -->
+						<item id="15389" count="1" /> <!-- Weaver's Colorful Dress - Event - 30-day -->
 					</item>
 					<item chance="24.99">
-						<item id="15380" count="5" /> <!-- Steamed Rice Cake (Event) -->
-						<item id="15390" count="1" /> <!-- Weaver's Colorful Dress (Event) - 60-day -->
+						<item id="15380" count="5" /> <!-- Steamed Rice Cake - Event -->
+						<item id="15390" count="1" /> <!-- Weaver's Colorful Dress - Event - 60-day -->
 					</item>
 					<item chance="10">
-						<item id="15380" count="5" /> <!-- Steamed Rice Cake (Event) -->
-						<item id="15391" count="1" /> <!-- Weaver's Colorful Dress (Event) - 90-day -->
+						<item id="15380" count="5" /> <!-- Steamed Rice Cake - Event -->
+						<item id="15391" count="1" /> <!-- Weaver's Colorful Dress - Event - 90-day -->
 					</item>
 					<item chance="0.01">
-						<item id="15380" count="5" /> <!-- Steamed Rice Cake (Event) -->
-						<item id="15392" count="1" /> <!-- Weaver's Colorful Dress (Event) - Permanent -->
+						<item id="15380" count="5" /> <!-- Steamed Rice Cake - Event -->
+						<item id="15392" count="1" /> <!-- Weaver's Colorful Dress - Event - Permanent -->
 					</item>
 				</items>
 			</effect>
@@ -1043,7 +1043,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -1121,16 +1121,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -1163,7 +1163,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -1436,7 +1436,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -1514,16 +1514,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -1556,7 +1556,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -1829,7 +1829,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -1907,16 +1907,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -1949,7 +1949,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -2222,7 +2222,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -2300,16 +2300,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -2342,7 +2342,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -2615,7 +2615,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -2693,16 +2693,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -2735,7 +2735,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -3008,7 +3008,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -3086,16 +3086,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -3128,7 +3128,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -3401,7 +3401,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.00009">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.00009">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -3479,16 +3479,16 @@
 						<item id="13073" count="1" /> <!-- Green Soul Crystal Lv. 16 -->
 					</item>
 					<item chance="0.1466">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.1466">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.1466">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.1466">
 						<item id="729" count="1" /> <!-- Scroll: Enchant A-grade Weapon -->
@@ -3521,7 +3521,7 @@
 						<item id="9572" count="1" /> <!-- Green Soul Crystal Lv. 14 -->
 					</item>
 					<item chance="0.1466">
-						<item id="13420" count="1" /> <!-- Multi-colored Honey Rice Cake -->
+						<item id="13420" count="1" /> <!-- Multi-Colored Honey Wheat Cake -->
 					</item>
 					<item chance="9.6773">
 						<item id="15427" count="1" /> <!-- Anniversary Party Cake - Event -->
@@ -3931,7 +3931,7 @@
 		</effects>
 	</skill>
 	<skill id="9059" toLevel="1" name="Light Fire">
-		<!-- Lights the Torch -->
+		<!-- Lights the bonfire. -->
 		<castRange>40</castRange>
 		<effectPoint>-10000</effectPoint>
 		<effectRange>400</effectRange>
@@ -4133,7 +4133,7 @@
 		</effects>
 	</skill>
 	<skill id="9067" toLevel="1" name="Vitality Maintaining Potion">
-		<!-- Maintains Vitality for 10 min. -->
+		<!-- Sustains Vitality for 60 min. -->
 		<icon>icon.etc_lesser_potion_blue_i00</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -4161,7 +4161,7 @@
 		</effects>
 	</skill>
 	<skill id="9068" toLevel="2" name="Vitality Maintaining Potion">
-		<!-- Maintains Vitality for 30 min. -->
+		<!-- Sustains Vitality for 30 min. -->
 		<icon>icon.etc_lesser_potion_scarlet_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -4291,10 +4291,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="1.5">
-						<item id="22509" count="1" /> <!-- Package: Lucky Enchant Stone: R-grade Weapon -->
+						<item id="22509" count="1" /> <!-- Package: Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="1.5">
-						<item id="22510" count="1" /> <!-- Package: Lucky Enchant Stone: R-grade Armor -->
+						<item id="22510" count="1" /> <!-- Package: Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="4">
 						<item id="15436" count="1" /> <!-- Halloween Transformation Stick - 7-day -->
@@ -4309,13 +4309,13 @@
 						<item id="15434" count="1" /> <!-- Halloween Toy Box -->
 					</item>
 					<item chance="26">
-						<item id="15439" count="1" /> <!-- Scroll: 1000 SP -->
+						<item id="15439" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="26">
 						<item id="15437" count="1" /> <!-- Transformation Scroll Pack -->
 					</item>
 					<item chance="4">
-						<item id="23207" count="1" /> <!-- Playful Hair Accessory Pack -->
+						<item id="23207" count="1" /> <!-- Playful Head Accessory Box -->
 					</item>
 				</items>
 			</effect>
@@ -4463,7 +4463,7 @@
 		</effects>
 	</skill>
 	<skill id="9079" toLevel="1" name="Scroll: Santa's Buff">
-		<!-- For 1 h., a buff from the Great Spirit is active. Max MP +20%, MP Recovery Rate +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
+		<!-- For 1 h., Max MP +20%, MP Recovery Rate +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
 		<icon>icon.mysterious_wedding_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -4572,9 +4572,9 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="82.9">
-						<item id="16408" count="1" /> <!-- Scroll: Santa's Buff - Event -->
+						<item id="16408" count="1" /> <!-- Santa's Buff Scroll - Event -->
 						<item id="14739" count="1" /> <!-- Fresh Milk - Event -->
-						<item id="5561" count="1" /> <!-- Special Holiday Tree -->
+						<item id="5561" count="1" /> <!-- Special Christmas Tree -->
 					</item>
 					<item chance="10">
 						<item id="14678" count="1" /> <!-- B-grade Neolithic Crystal -->
@@ -4586,7 +4586,7 @@
 						<item id="14680" count="1" /> <!-- S-grade Neolithic Crystal -->
 					</item>
 					<item chance="0.1">
-						<item id="14681" count="1" /> <!-- Neolithic Crystal (S80-grade) -->
+						<item id="14681" count="1" /> <!-- S80-grade Neolithic Crystal -->
 					</item>
 				</items>
 			</effect>
@@ -4776,7 +4776,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.0001162">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.0001162">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->
@@ -4995,13 +4995,13 @@
 						<item id="14699" count="1" /> <!-- Superior Elixir of CP -->
 					</item>
 					<item chance="1.5217011">
-						<item id="15439" count="1" /> <!-- Scroll: 1000 SP -->
+						<item id="15439" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="0.12009793">
 						<item id="14611" count="1" /> <!-- Rudolph's Nose -->
 					</item>
 					<item chance="1.5389435">
-						<item id="5560" count="1" /> <!-- Holiday Tree -->
+						<item id="5560" count="1" /> <!-- Christmas Tree -->
 					</item>
 					<item chance="0.2401959">
 						<item id="5562" count="1" /> <!-- Echo Crystal -1st Carol -->
@@ -5025,7 +5025,7 @@
 						<item id="14701" count="1" /> <!-- Superior Quick HP Replenishing Potion -->
 					</item>
 					<item chance="63.06608387">
-						<item id="17005" count="1" /> <!-- Santa - CP Potion - Event -->
+						<item id="17005" count="1" /> <!-- Santa Claus - CP Potion - Event -->
 					</item>
 				</items>
 			</effect>
@@ -5080,7 +5080,7 @@
 		</effects>
 	</skill>
 	<skill id="9088" toLevel="1" name="Cupid's Cure">
-		<!-- Shoots a heart-arrow. -->
+		<!-- Sends a heart filled with love to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<effectPoint>-1000</effectPoint>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -5112,7 +5112,7 @@
 		</conditions>
 	</skill>
 	<skill id="9089" toLevel="1" name="Cupid's Enhanced Cure">
-		<!-- Shoots a big heart-arrow. -->
+		<!-- Sends hearts to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<effectPoint>-1000</effectPoint>
 		<isMagic>2</isMagic> <!-- Static Skill -->

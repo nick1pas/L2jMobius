@@ -61,7 +61,7 @@
 		</effects>
 	</skill>
 	<skill id="11225" toLevel="9" name="Physical Soul Barrier">
-		<!-- For $s1, P. Def. +$s2, Bow/ Crossbow Resistance +$s3, Received Critical Damage from standard attacks -$s4. -->
+		<!-- For $s1, P. Def. +$s2, Bow/ Crossbow Resistance +$s3, received Critical Damage from basic attacks -$s4. -->
 		<icon>icon.skill11869</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
@@ -379,7 +379,7 @@
 		</effects>
 	</skill>
 	<skill id="11251" toLevel="12" name="Superior Weapon Mastery">
-		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3, M. Skill Critical Rate +$s4. When using a two-handed staff or a two-handed blunt weapon, P. Atk. +$s5 and additionally +$s6, P. Accuracy +$s7. INT +$s8. Depending on INT, with a certain chance, resets the skill cooldown or increases the skill duration by $s9 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3, M. Skill Critical Rate +$s4. When using a two-handed staff or a two-handed blunt weapon, P. Atk. +$s5 and additionally +$s6, P. Accuracy +$s7. INT +$s8. Depending on your INT, there is a chance to reset Skill Cooldown or extend skill duration by $s9 times. -->
 		<icon>icon.skill11251</icon>
 		<magicLevel>
 			<value level="1">85</value>
@@ -1543,7 +1543,7 @@
 		</effects>
 	</skill>
 	<skill id="11265" toLevel="1" name="Summon Team Mate">
-		<!-- Summons the selected party member to your location. -->
+		<!-- Summons the selected party member to the caster. -->
 		<icon>icon.skill11265</icon>
 		<effectRange>-2</effectRange>
 		<operateType>A1</operateType>
@@ -2192,7 +2192,7 @@
 		</effects>
 	</skill>
 	<skill id="11274" toLevel="4" name="Summon Barrier">
-		<!-- Cancels your debuffs and makes you invincible. Increases HP Recovery Rate while the skill is active. -->
+		<!-- Removes debuffs and makes you invincible. Increases HP Recovery Rate while the skill is active. -->
 		<icon>icon.skill11274</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2436,7 +2436,7 @@
 		</effects>
 	</skill>
 	<skill id="11277" toLevel="4" name="Sense of Loyalty">
-		<!-- Servitor's Fury. P. Atk. +$s1, M. Atk. +$s2, Critical Rate for standard attacks +$s3, and Critical Damage for standard attacks +$s4. -->
+		<!-- Servitor's fury. P. Atk. +$s1, M. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4. -->
 		<icon>icon.skill11277</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2858,7 +2858,7 @@
 		</effects>
 	</skill>
 	<skill id="11283" toLevel="9" name="Reaper Power">
-		<!-- Creates a death space near the enemy to inflict damage. -->
+		<!-- Creates an area around the enemy filled with darkness that inflicts damage. -->
 		<icon>icon.skill1171</icon>
 		<affectRange>150</affectRange>
 		<operateType>A1</operateType>
@@ -3118,7 +3118,7 @@
 		</effects>
 	</skill>
 	<skill id="11288" toLevel="5" name="Ultimate Servitor Share">
-		<!-- For $s1, shares the following with your servitor: $s2 of P. Atk., $s3 of P. Def., $s4 of M. Def., $s5 of Max HP/ MP, $s6 of Atk. Spd., $s7 of Critical Rate for standard attacks, $s8 of Critical Damage for standard attacks. -->
+		<!-- For $s1, shares some stats with your servitor: $s2 of P. Atk., $s3 of P. Def., $s4 of M. Def., $s5 of Max HP/ MP, $s6 of Atk. Spd., $s7 of Critical Rate for basic attacks, $s8 of Critical Damage for basic attacks. -->
 		<icon>icon.skill11288</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3572,7 +3572,7 @@
 		</effects>
 	</skill>
 	<skill id="11297" toLevel="4" name="Blessing of the Giants">
-		<!-- For $s1, servitor's Max MP +$s2, HP Recovery Rate +$s3, M. Skill Critical Rate +$s4, Critical Damage for standard attacks +$s5, P. Atk. +$s6, P. Def. +$s7, Atk. Spd. +$s8, M. Atk. +$s9, M. Def. +$s10, Casting Spd. +$s11, and Debuff Resistance +$s12. Received Critical Damage from standard attacks -$s13, Speed -$s14. -->
+		<!-- For $s1, a servitor's Max MP +$s2, HP Recovery Rate +$s3, M. Skill Critical Rate +$s4, Critical Damage for basic attacks +$s5, P. Atk. +$s6, P. Def. +$s7, Atk. Spd. +$s8, M. Atk. +$s9, M. Def. +$s10, Casting Spd. +$s11, Debuff Resistance +$s12, received Critical Damage from basic attacks -$s13, Speed -$s14. -->
 		<icon>icon.skill11297</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3765,7 +3765,7 @@
 		</effects>
 	</skill>
 	<skill id="11299" toLevel="2" name="Servitor Balance Life">
-		<!-- Balances you and your servitor's HP, and recovers $s1 HP for $s1 -->
+		<!-- Equalizes your HP and that of your servitor. For $s1, HP +$s2 per sec. -->
 		<icon>icon.skill11299</icon>
 		<affectRange>1000</affectRange>
 		<operateType>A2</operateType>

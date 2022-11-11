@@ -126,7 +126,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16325" toLevel="1" name="Aerial Yoke">
-		<!-- Thrown to the air and rendered immobile due to magic. -->
+		<!-- Enemies are bound in the air, unable to do anything. -->
 		<icon>icon.skill1072</icon>
 		<operateType>A2</operateType>
 		<castRange>500</castRange>
@@ -208,7 +208,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16335" toLevel="1" name="Fear">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>icon.skill1092</icon>
 		<operateType>A2</operateType>
 		<castRange>600</castRange>
@@ -238,7 +238,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16338" toLevel="2" name="Stiff Charge">
-		<!-- Petrified. -->
+		<!-- Petrified -->
 		<icon>icon.skill4111</icon>
 		<operateType>A2</operateType>
 		<mpConsume>15</mpConsume>
@@ -302,7 +302,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="16347" toLevel="3" name="Breeze Shell">
-		<!-- Atk. Spd., Casting Spd. Speed are decreased. -->
+		<!-- Decreases Atk. Spd., Casting Spd. and Speed. -->
 		<operateType>A2</operateType>
 		<mpConsume>5</mpConsume>
 		<castRange>600</castRange>
@@ -388,7 +388,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16359" toLevel="1" name="Dimensional Warp: Hold">
-		<!-- Resistance to Hold. -->
+		<!-- Cancels Hold. -->
 		<icon>icon.skill0387</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -518,7 +518,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16376" toLevel="1" name="Dimensional Bind">
-		<!-- Attacks target with 100% of P. Atk. power and inflicts Hold for 5 sec. -->
+		<!-- Attacks target with 100% power and inflicts Hold for 5 sec. -->
 		<icon>icon.skill4047</icon>
 		<operateType>A2</operateType>
 		<castRange>40</castRange>

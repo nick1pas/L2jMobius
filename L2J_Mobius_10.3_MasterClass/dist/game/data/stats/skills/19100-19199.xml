@@ -79,7 +79,7 @@
 		</effects>
 	</skill>
 	<skill id="19103" toLevel="1" name="Resident Power">
-		<!-- For clan members owning a residence, Max CP +700, and PvP Def. +3%. -->
+		<!-- Clan members' Max CP +700 if your clan owns the clan hall. P. Def. in PvP +3%. -->
 		<icon>icon.skill0050</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -104,7 +104,7 @@
 		</effects>
 	</skill>
 	<skill id="19104" toLevel="2" name="Resident Power">
-		<!-- For clan members owning a residence, Max CP +1000, and PvP Def. +5%. -->
+		<!-- Clan members' Max CP +1000 if your clan owns the clan hall. P. Def. in PvP +5%. -->
 		<icon>icon.skill0050</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -186,7 +186,7 @@
 		</effects>
 	</skill>
 	<skill id="19107" toLevel="1" name="Resident Guidance">
-		<!-- For clan members owning a residence, acquired XP +3%. -->
+		<!-- Clan members' acquired XP +3% if your clan owns the clan hall. -->
 		<icon>icon.skill0788_3</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -198,7 +198,7 @@
 		</effects>
 	</skill>
 	<skill id="19108" toLevel="2" name="Resident Guidance">
-		<!-- For clan members owning a residence, acquired XP +5%. -->
+		<!-- Clan members' acquired XP +5% if your clan owns the clan hall. -->
 		<icon>icon.skill0788_5</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -313,7 +313,7 @@
 		</effects>
 	</skill>
 	<skill id="19113" toLevel="1" name="Clan's Block">
-		<!-- Prevents the target from using the Scroll of Escape for 60 sec. Consumes 300 Spirit Ore. Available only to the clan leader and elite clan members. The skill cooldown is fixed. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Prevents the target from teleporting for 60 sec. Consumes 300 Spirit Ore. Available only to the clan leader and elite clan members. The skill cooldown is fixed. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill_recall</icon>
 		<operateType>A2</operateType>
 		<coolTime>500</coolTime>
@@ -408,7 +408,7 @@
 		</effects>
 	</skill>
 	<skill id="19116" toLevel="1" name="Summon Lyn Draco">
-		<!-- Allows to mount Lind Rider. -->
+		<!-- Allows to mount Lyn Draco. -->
 		<icon>icon.etc_lind_vehicle</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -486,7 +486,7 @@
 		</effects>
 	</skill>
 	<skill id="19120" toLevel="4" name="Noble Shield">
-		<!-- P. Def. +$s1. -->
+		<!-- P. Def. +$s1 -->
 		<icon>icon.skill19120</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -502,7 +502,7 @@
 		</effects>
 	</skill>
 	<skill id="19121" toLevel="4" name="Noble Magic Barrier">
-		<!-- M. Def. +$s1. -->
+		<!-- M. Def. +$s1 -->
 		<icon>icon.skill19121</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -534,7 +534,7 @@
 		</effects>
 	</skill>
 	<skill id="19123" toLevel="4" name="Noble Haste">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>icon.skill1086</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -550,7 +550,7 @@
 		</effects>
 	</skill>
 	<skill id="19124" toLevel="2" name="Noble Knight Buffs">
-		<!-- Confusion Resistance/ Atk. Rate +$s1. -->
+		<!-- Confusion Atk. Rate and Resistance +$s1. -->
 		<icon>icon.skill19124</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -577,7 +577,7 @@
 		</effects>
 	</skill>
 	<skill id="19125" toLevel="2" name="Noble Critical Focus">
-		<!-- P. Skill Critical Rate +$s1. -->
+		<!-- P. Skill Critical Rate +$s1 -->
 		<icon>icon.skill0193</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -632,7 +632,7 @@
 		</effects>
 	</skill>
 	<skill id="19128" toLevel="2" name="Noble Sting">
-		<!-- P. Skill Critical Damage +$s1. -->
+		<!-- P. Skill Critical Damage +$s1 -->
 		<icon>icon.skill10655</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -646,7 +646,7 @@
 		</effects>
 	</skill>
 	<skill id="19129" toLevel="2" name="Noble Defense Shield">
-		<!-- Received P. Critical Rate -$s1. -->
+		<!-- Received Critical Rate from basic attacks -$s1. -->
 		<icon>icon.skill19129</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -794,7 +794,7 @@
 		</effects>
 	</skill>
 	<skill id="19134" toLevel="4" name="Noble Heavy Armor Defense">
-		<!-- When equipped with Heavy Armor, P. Def. +$s1. -->
+		<!-- When using heavy armor, P. Def. +$s1. -->
 		<icon>icon.skill19134</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -832,7 +832,7 @@
 		</effects>
 	</skill>
 	<skill id="19136" toLevel="3" name="Noble Prayer">
-		<!-- Received Healing +$s1. -->
+		<!-- Received Healing +$s1 -->
 		<icon>icon.skill1273</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -873,7 +873,7 @@
 		</effects>
 	</skill>
 	<skill id="19139" toLevel="4" name="Noble Might">
-		<!-- P. Atk. +$s1. -->
+		<!-- P. Atk. +$s1 -->
 		<icon>icon.skill19139</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -904,7 +904,7 @@
 		</effects>
 	</skill>
 	<skill id="19141" toLevel="2" name="Noble Wind Walk">
-		<!-- Speed +$s1. -->
+		<!-- Speed +$s1 -->
 		<icon>icon.skill1204</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -918,7 +918,7 @@
 		</effects>
 	</skill>
 	<skill id="19142" toLevel="2" name="Noble Warrior Buffs">
-		<!-- Confusion Resistance/ Atk. Rate +$s1. -->
+		<!-- Confusion Atk. Rate and Resistance +$s1. -->
 		<icon>icon.skill19142</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -945,7 +945,7 @@
 		</effects>
 	</skill>
 	<skill id="19143" toLevel="2" name="Noble Focus">
-		<!-- Critical Rate for standard attacks +$s1. -->
+		<!-- Critical Rate for basic attacks +$s1 -->
 		<icon>icon.skill1077</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -959,7 +959,7 @@
 		</effects>
 	</skill>
 	<skill id="19144" toLevel="2" name="Noble Backfire">
-		<!-- Rear Damage +$s1. -->
+		<!-- Backstab damage +$s1. -->
 		<icon>icon.skill0030</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -974,7 +974,7 @@
 		</effects>
 	</skill>
 	<skill id="19145" toLevel="2" name="Noble Death Whisper">
-		<!-- Critical Damage for standard attacks +$s1. -->
+		<!-- Critical Damage for basic attacks +$s1 -->
 		<icon>icon.skill4278</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1094,7 +1094,7 @@
 		<!-- TODO: Handle this skill -->
 	</skill>
 	<skill id="19153" toLevel="1" name="Noble Critical Boost">
-		<!-- Critical Rate for standard attacks +50, M. Skill Critical Rate +20, Skill Mastery Rate +50%. -->
+		<!-- Critical Rate for basic attacks +50, M. Skill Critical Rate +20, Skill Mastery Rate +50%. -->
 		<icon>icon.skill19153</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1138,7 +1138,7 @@
 		</effects>
 	</skill>
 	<skill id="19155" toLevel="2" name="Noble Acumen">
-		<!-- Casting Spd. +$s1. -->
+		<!-- Casting Spd. +$s1 -->
 		<icon>icon.skill1085</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1152,7 +1152,7 @@
 		</effects>
 	</skill>
 	<skill id="19156" toLevel="2" name="Noble Wizard Buffs">
-		<!-- Confusion Resistance/ Atk. Rate +$s1. -->
+		<!-- Confusion Atk. Rate and Resistance +$s1. -->
 		<icon>icon.skill19156</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1179,7 +1179,7 @@
 		</effects>
 	</skill>
 	<skill id="19157" toLevel="2" name="Noble Wild Magic">
-		<!-- M. Skill Critical Rate +$s1. -->
+		<!-- M. Skill Critical Rate +$s1 -->
 		<icon>icon.skill1303</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1207,7 +1207,7 @@
 		</effects>
 	</skill>
 	<skill id="19159" toLevel="2" name="Noble Resistance">
-		<!-- Debuff Resistance +$s1. -->
+		<!-- Debuff Resistance +$s1 -->
 		<icon>icon.skill11567</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1242,7 +1242,7 @@
 		</effects>
 	</skill>
 	<skill id="19161" toLevel="2" name="Noble Protection Armor">
-		<!-- Received Critical Damage from standard attacks -$s1. -->
+		<!-- Received Critical Damage from basic attacks -$s1. -->
 		<icon>icon.skill19161</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1395,7 +1395,7 @@
 		</effects>
 	</skill>
 	<skill id="19170" toLevel="2" name="Noblesse Blessing">
-		<!-- P. Def. +$s1. -->
+		<!-- P. Def. +$s1 -->
 		<icon>icon.skill19120</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1501,7 +1501,7 @@
 		</effects>
 	</skill>
 	<skill id="19174" toLevel="4" name="Noble Earth">
-		<!-- P. Def. +$s1. -->
+		<!-- P. Def. +$s1 -->
 		<icon>icon.skill19121</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1658,12 +1658,12 @@
 		<reuseDelay>30000</reuseDelay>
 	</skill>
 	<skill id="19190" toLevel="1" name="Brilliant Magic">
-		<!-- Max MP +10%, MP Recovery Bonus +8 when running. Requires Abilities. -->
+		<!-- Max MP +10%, MP Recovery Rate +8 while running. Enabled only with active abilities. -->
 		<icon>icon.skill19190</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="19191" toLevel="1" name="Mist Armor">
-		<!-- Damage Received -10%. Requires Abilities. -->
+		<!-- Received damage -10%. Enabled only with active abilities. -->
 		<icon>icon.skill19191</icon>
 		<operateType>P</operateType>
 	</skill>

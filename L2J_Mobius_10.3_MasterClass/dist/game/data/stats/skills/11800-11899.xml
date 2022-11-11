@@ -206,7 +206,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>15211</npcId> <!-- Dominant Flag -->
+				<npcId>15211</npcId> <!-- Flag of Domination -->
 			</effect>
 		</effects>
 	</skill>
@@ -837,7 +837,7 @@
 		</effects>
 	</skill>
 	<skill id="11821" toLevel="1" name="Critical of Saha">
-		<!-- For $s1, party members' Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from standard attacks -$s5. Has a chance of increasing P. Critical Damage when hit. -->
+		<!-- For $s1, party members' Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. Has a chance of increasing P. Critical Damage when hit. -->
 		<icon>icon.skill11821</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -981,7 +981,7 @@
 		</effects>
 	</skill>
 	<skill id="11824" toLevel="1" name="Resistance of Saha">
-		<!-- For $s1, Attribute Resistance of party members +$s2. -->
+		<!-- For $s1, party members' Attribute Resistance +$s2. -->
 		<icon>icon.skill11567</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -1064,7 +1064,7 @@
 		</effects>
 	</skill>
 	<skill id="11826" toLevel="1" name="Emblem of Salvation">
-		<!-- Resurrects from death fully recovered. Buffs/ debuffs remain in death, but Noblesse Blessing and Lucky Charm disappear. The skill cooldown is fixed. -->
+		<!-- Resurrects from death fully recovered. Buffs remain after death, except for Noblesse Blessing and Lucky Charm effects. The skill cooldown is fixed. <You are targeted automatically> -->
 		<icon>icon.skill11826</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalType>RESURRECTION_SPECIAL</abnormalType>
@@ -1288,7 +1288,7 @@
 		</effects>
 	</skill>
 	<skill id="11832" toLevel="11" name="Mass Fatal Sleep">
-		<!-- Inflicts sleep on nearby enemies for $s1 Inflicted status: Stupor (Sleep, Mutation). -->
+		<!-- Inflicts sleep on nearby enemies for $s1. Inflicted status: Stupor (Sleep, Mutation). -->
 		<icon>icon.skill1072</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1537,7 +1537,7 @@
 		</effects>
 	</skill>
 	<skill id="11851" toLevel="6" name="Divine Prayer">
-		<!-- For $s1, party members' HP heal amount +$s2. -->
+		<!-- For $s1, party members' HP heal amount +$s2. Cannot be used simultaneously with Mana Gain (Aeore Eva's Saint/ Shillien Saint classes). -->
 		<icon>icon.skill11859</icon>
 		<abnormalLevel>
 			<value level="1">4</value>
@@ -1616,7 +1616,7 @@
 		</effects>
 	</skill>
 	<skill id="11852" toLevel="6" name="Mana Gain">
-		<!-- For $s1, party members' MP heal amount +$s2. -->
+		<!-- For $s1 party members' MP Recovery Rate +$s2. Cannot be used simultaneously with Divine Prayer (Aeore Cardinal class). -->
 		<icon>icon.skill11852new</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -1735,7 +1735,7 @@
 		</effects>
 	</skill>
 	<skill id="11854" toLevel="6" name="Mana Gain">
-		<!-- For $s1, party members' MP heal amount +$s2. -->
+		<!-- For $s1 party members' MP Recovery Rate +$s2. Cannot be used simultaneously with Divine Prayer (Aeore Cardinal class). -->
 		<icon>icon.skill11852new</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -1814,7 +1814,7 @@
 		</effects>
 	</skill>
 	<skill id="11855" toLevel="5" name="Superior Wizard Combat">
-		<!-- M. Atk. +$s1, Skill MP consumption -$s2. -->
+		<!-- M. Atk. +$s1, M. Skill MP Consumption -$s2. -->
 		<icon>icon.skill0945</icon>
 		<operateType>P</operateType>
 		<magicLevel>
@@ -1867,7 +1867,7 @@
 		</effects>
 	</skill>
 	<skill id="11857" toLevel="3" name="Flag of Life">
-		<!-- Summons a Flag of Life, which restores the HP of those that click on it. -->
+		<!-- Summons Flag of Life that recovers HP of those who click on it. -->
 		<icon>icon.skill11774</icon>
 		<operateType>A1</operateType>
 		<mpConsume>185</mpConsume>
@@ -1951,7 +1951,7 @@
 		</effects>
 	</skill>
 	<skill id="11861" toLevel="1" name="Attribute Resistance">
-		<!-- For $s1, the targeted party member's Fire/ Water/ Wind/ Earth Resistance +$s2. Consumes $s3 Spirit Ore. <The character is targeted automatically> -->
+		<!-- For $s1, the targeted party member's Fire/ Water/ Wind/ Earth Resistance +$s2. Consumes $s3 Spirit Ore. <You are targeted automatically> -->
 		<icon>icon.skill11861</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2015,7 +2015,7 @@
 		</effects>
 	</skill>
 	<skill id="11862" toLevel="1" name="Melee Weapon Resistance">
-		<!-- For $s1, the targeted party member's Melee Weapon Resistance +$s2. Consumes $s3 Spirit Ore. <The character is targeted automatically> -->
+		<!-- For $s1, the targeted party member's Melee Weapon Resistance +$s2. Consumes $s3 Spirit Ore. <You are targeted automatically> -->
 		<icon>icon.skill11862</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2072,7 +2072,7 @@
 		</effects>
 	</skill>
 	<skill id="11863" toLevel="1" name="Ranged Weapon Resistance">
-		<!-- For $s1, the targeted party member's Ranged Weapon Resistance +$s2. Consumes $s3 Spirit Ore. <The character is targeted automatically> -->
+		<!-- For $s1, the targeted party member's Ranged Weapon Resistance +$s2. Consumes $s3 Spirit Ore. <You are targeted automatically> -->
 		<icon>icon.skill11863</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>

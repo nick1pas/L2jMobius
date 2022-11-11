@@ -120,7 +120,7 @@
 		</effects>
 	</skill>
 	<skill id="17704" toLevel="20" name="Obsidian">
-		<!-- Received PvP Damage -$s1. -->
+		<!-- Received PvP damage -$s1. -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_obsidian_i00</value>
 			<value level="2">icon.etc_bm_jewel_obsidian_i00</value>
@@ -214,7 +214,7 @@
 		</effects>
 	</skill>
 	<skill id="17705" toLevel="20" name="Opal">
-		<!-- Attribute Attack +$s1. -->
+		<!-- Attribute Attack +$s1 -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_opal_i00</value>
 			<value level="2">icon.etc_bm_jewel_opal_i00</value>
@@ -442,7 +442,7 @@
 		</effects>
 	</skill>
 	<skill id="17708" toLevel="20" name="Diamond">
-		<!-- P. Def. +$s1, Received Critical Damage from standard attacks -$s2. -->
+		<!-- P. Def. +$s1, received Critical Damage from basic attacks -$s2. -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_diamond_i00</value>
 			<value level="2">icon.etc_bm_jewel_diamond_i00</value>
@@ -635,7 +635,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17711" toLevel="24" name="10th Anniversary Blessing - Lv. 1">
-		<!-- You can obtain an item in $s1 h. (maximum $s2 times). Note! If you're dead while the item is given, you cannot acquire the $s3th Anniversary Blessing buff or items. You also cannot obtain the cards if your inventory is full. -->
+		<!-- You can obtain an item in $s1 h. (maximum $s2 times). Note!. If you're dead while the item is given, you cannot acquire the $s3th Anniversary Blessing buff or items. You also cannot obtain the cards if your inventory is full. -->
 		<icon>icon.ev_10th</icon>
 		<operateType>A2</operateType>
 		<castRange>
@@ -673,7 +673,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17713" toLevel="24" name="10th Anniversary Special Blessing Lv. 1">
-		<!-- You can obtain an item in $s1 h. (maximum $s2 times). Note! If you're dead while the item is given, you cannot acquire the $s3th Anniversary Blessing buff or items. You also cannot obtain the cards if your inventory is full. -->
+		<!-- You can obtain an item in $s1 h. (maximum $s2 times). Note!. If you're dead while the item is given, you cannot acquire the $s3th Anniversary Blessing buff or items. You also cannot obtain the cards if your inventory is full. -->
 		<icon>icon.ev_10th</icon>
 		<operateType>A2</operateType>
 		<castRange>
@@ -741,7 +741,7 @@
 		<effectPoint>-1000</effectPoint>
 	</skill>
 	<skill id="17718" toLevel="1" name="Dandy's Breath">
-		<!-- Can obtain Antharas Shaper (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<!-- Take it to Dandy to obtain Antharas Shaper (1-hour). (Dandy's Scroll: Release Seal is required.) -->
 		<icon>icon.ev_10th_dandi1</icon>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
@@ -761,7 +761,7 @@
 		</effects>
 	</skill>
 	<skill id="17719" toLevel="1" name="Dandy's Breath">
-		<!-- Can obtain Sealed Antharas Slasher (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<!-- Take it to Dandy to obtain Antharas Slasher (1-hour). (Dandy's Scroll: Release Seal is required.) -->
 		<icon>icon.ev_10th_dandi1</icon>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
@@ -781,7 +781,7 @@
 		</effects>
 	</skill>
 	<skill id="17720" toLevel="1" name="Dandy's Breath">
-		<!-- Can obtain Sealed Antharas Thrower (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<!-- Take it to Dandy to obtain Antharas Thrower (1-hour). (Dandy's Scroll: Release Seal is required.) -->
 		<icon>icon.ev_10th_dandi1</icon>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
@@ -1082,7 +1082,7 @@
 		</effects>
 	</skill>
 	<skill id="17735" toLevel="1" name="Dandy's Breath">
-		<!-- Can obtain Lindvior Shaper (1-h.). (Need Dandy's Scroll: Release Seal) -->
+		<!-- Take it to Dandy to obtain Lindvior Shaper (1-hour). (Dandy's Scroll: Release Seal is required.) -->
 		<icon>icon.ev_10th_dandi1</icon>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>38847</itemConsumeId> <!-- Dandy's Scroll: Release Seal -->
@@ -2758,7 +2758,7 @@
 		</effects>
 	</skill>
 	<skill id="17790" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -2801,7 +2801,7 @@
 		</effects>
 	</skill>
 	<skill id="17791" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -2844,7 +2844,7 @@
 		</effects>
 	</skill>
 	<skill id="17792" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -2887,7 +2887,7 @@
 		</effects>
 	</skill>
 	<skill id="17793" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Casting Spd. +1999, M. Skill Critical Rate +500 and additional damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Casting Spd. +1999, M. Skill Critical Rate +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -2930,7 +2930,7 @@
 		</effects>
 	</skill>
 	<skill id="17794" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -2973,7 +2973,7 @@
 		</effects>
 	</skill>
 	<skill id="17795" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -3016,7 +3016,7 @@
 		</effects>
 	</skill>
 	<skill id="17796" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -3059,7 +3059,7 @@
 		</effects>
 	</skill>
 	<skill id="17797" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -3102,7 +3102,7 @@
 		</effects>
 	</skill>
 	<skill id="17798" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -3145,7 +3145,7 @@
 		</effects>
 	</skill>
 	<skill id="17799" toLevel="1" name="Great Assisting Strength">
-		<!-- PvP Damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for standard attacks +500, damage to dragons +300%. -->
+		<!-- PvP damage +30%, HP/ MP +100%, CP +200%, Atk. Spd. +1500, Critical Rate for basic attacks +500, damage to dragons +300%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>

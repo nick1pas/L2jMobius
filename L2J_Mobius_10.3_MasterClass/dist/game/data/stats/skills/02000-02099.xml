@@ -75,7 +75,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>12774</npcId> <!-- Young Squash -->
+				<npcId>12774</npcId> <!-- Young Pumpkin -->
 				<npcCount>1</npcCount>
 				<despawnDelay>180000</despawnDelay>
 			</effect>
@@ -98,7 +98,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>12777</npcId> <!-- Large Young Squash -->
+				<npcId>12777</npcId> <!-- Young Large Pumpkin -->
 				<npcCount>1</npcCount>
 				<despawnDelay>180000</despawnDelay>
 			</effect>
@@ -410,7 +410,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="2031" toLevel="1" name="HP Replenishing Potion">
-		<!-- Greatly increases HP recovery bonus. Effect 1. -->
+		<!-- Greatly increases HP Recovery Rate. Effect 1. -->
 		<icon>icon.etc_lesser_potion_red_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -432,7 +432,7 @@
 		</effects>
 	</skill>
 	<skill id="2032" toLevel="1" name="Greater HP Replenishing Potion">
-		<!-- Greatly increases HP recovery bonus. Effect 2. -->
+		<!-- Greatly increases HP Recovery Rate. Effect 2. -->
 		<icon>icon.etc_potion_scarlet_i00</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -528,7 +528,7 @@
 		</effects>
 	</skill>
 	<skill id="2037" toLevel="1" name="Major HP Replenishing Potion">
-		<!-- Greatly increases HP recovery bonus. Effect 3. -->
+		<!-- Greatly increases HP Recovery Rate. Effect 3. -->
 		<icon>icon.etc_reagent_white_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -772,7 +772,7 @@
 		</effects>
 	</skill>
 	<skill id="2051" toLevel="1" name="Scroll: Death Whisper">
-		<!-- Increases Critical Damage for standard attacks. Effect 3. -->
+		<!-- Increases Critical Damage for basic attacks. Effect 3. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -795,7 +795,7 @@
 		</effects>
 	</skill>
 	<skill id="2052" toLevel="1" name="Scroll: Focus">
-		<!-- Increases Critical Rate for standard attacks. Effect 3. -->
+		<!-- Increases Critical Rate for basic attacks. Effect 3. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>

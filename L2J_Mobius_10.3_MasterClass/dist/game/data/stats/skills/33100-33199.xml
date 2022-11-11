@@ -21,7 +21,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33104" toLevel="3" name="Party Bonus">
-		<!-- Grants extra XP for party hunting. -->
+		<!-- Acquired XP is increased for parties. Maximum bonus is given to parties of 5 and more characters. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -61,42 +61,42 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33112" toLevel="1" name="Night of Spores">
-		<!-- Combat abilities are enhanced at night time. -->
+		<!-- Increases P. Atk./ M. Atk./ P. Def./ M. Def. at night. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33113" toLevel="1" name="Gas of Respect">
-		<!-- You politely offer greetings to Frederick the Destroyer. -->
+		<!-- You offer greetings to Orc Mutant. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33114" toLevel="1" name="Gas of Respect">
-		<!-- You politely offer greetings to Frederick the Destroyer. -->
+		<!-- You offer greetings to Orc Mutant. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33115" toLevel="1" name="Concentrated Gas">
-		<!-- Concentrated gas makes unable to move. -->
+		<!-- Makes you unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33116" toLevel="1" name="Concentrated Gas">
-		<!-- Concentrated gas makes unable to move. -->
+		<!-- Makes you unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33117" toLevel="1" name="Unstable Gas">
-		<!-- Unstable gas makes unable to move. -->
+		<!-- Makes you unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33118" toLevel="1" name="Unstable Gas">
-		<!-- Unstable gas makes unable to move. -->
+		<!-- Makes you unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33119" toLevel="1" name="Laughing Gas">
-		<!-- Makes laughing. -->
+		<!-- Makes you laugh. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -116,7 +116,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33123" toLevel="1" name="Very Dark Night">
-		<!-- Combat abilities are greatly enhanced at night time with the power of Shillien. -->
+		<!-- Shillien's power increases P. Atk./ M. Atk./ P. Def./ M. Def. at night. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -131,7 +131,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33126" toLevel="1" name="Knight Level Rankings' 1st Place">
-		<!-- Bonus for the 1st-10th place in the server level rankings among Knights. Speed +3, Attribute Attack +30, Attribute Resistance +30. When the Nine Aegis skill is used, a character and party members' damage +1% (3 stages at max) for 15 sec. -->
+		<!-- Bonus for the 1st-10th place in the server level rankings among Knights. Speed +3, Attribute Attack +30, Attribute Resistance +30. When the Nine Aegis/ Mocking Resilience skill is used, your party members' damage +1% (3 stages at max) for 15 sec. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -149,19 +149,19 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33142</skillId>
+				<skillId>33142</skillId> <!-- Blessing of 1st Place in the List of Ranks for Level: Stage 1 - Knight -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>10024</castSkillId>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33142</skillId>
+				<skillId>33142</skillId> <!-- Blessing of 1st Place in the List of Ranks for Level: Stage 1 - Knight -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>30955</castSkillId>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33142</skillId>
+				<skillId>33142</skillId> <!-- Blessing of 1st Place in the List of Ranks for Level: Stage 1 - Knight -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>30956</castSkillId>
 				<targetType>SELF</targetType>
@@ -187,13 +187,13 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33137</skillId>
+				<skillId>33137</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Warrior -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>10274</castSkillId>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33137</skillId>
+				<skillId>33137</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Warrior -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>30520</castSkillId>
 				<targetType>SELF</targetType>
@@ -219,7 +219,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33138</skillId>
+				<skillId>33138</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Rogue -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>10520</castSkillId>
 				<targetType>SELF</targetType>
@@ -245,7 +245,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33139</skillId>
+				<skillId>33139</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Archer -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>10783</castSkillId>
 				<targetType>SELF</targetType>
@@ -271,7 +271,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33143</skillId>
+				<skillId>33143</skillId> <!-- Blessing of 1st Place in the List of Ranks for Level: Stage 1 - Enchanter -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>11621</castSkillId>
 				<targetType>SELF</targetType>
@@ -297,25 +297,25 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33140</skillId>
+				<skillId>33140</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Mage -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>11068</castSkillId>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33140</skillId>
+				<skillId>33140</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Mage -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>30855</castSkillId>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33140</skillId>
+				<skillId>33140</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Mage -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>30016</castSkillId>
 				<targetType>SELF</targetType>
 			</effect>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33140</skillId>
+				<skillId>33140</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Mage -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>30860</castSkillId>
 				<targetType>SELF</targetType>
@@ -341,7 +341,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33141</skillId>
+				<skillId>33141</skillId> <!-- Protection of 1st Place in the List of Ranks for Level - Summoner -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>11274</castSkillId>
 				<targetType>SELF</targetType>
@@ -366,7 +366,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>33144</skillId>
+				<skillId>33144</skillId> <!-- Blessing of 1st Place in the List of Ranks for Level: Stage 1 - Healer -->
 				<skillLevel>1</skillLevel>
 				<castSkillId>11759</castSkillId>
 				<targetType>SELF</targetType>
@@ -374,7 +374,7 @@
 		</effects>
 	</skill>
 	<skill id="33134" toLevel="1" name="Class Ranking Effect">
-		<!-- <Basic effect> Speed +3, Attribute Attack +30, Attribute Resistance +30. <Class effect> Knights: When the Nine Aegis skill is used, a character's and party members' damage +1% (3 stages at max) for 15 sec. Warriors: When the Berserker/ Steel Mind skill is used, damage +1% for 15 sec. Rogues: When the Final Ultimate Evasion skill is used, backstab damage +1% for 15 sec. Archers: When the Mind's Eye skill is used, P. Skill Power +1% for 15 sec. Enchanters: When the Blessing Barrier skill is used, a character's and party members' damage +1% (3 stages at max) for 15 sec. Mages: When the Burst Casting/ Superior Burst Casting/ Eye of the Storm/ Eye of the Windstorm skill is used, M. Skill Power +1% for 15 sec. Summoners: When the Summon Barrier skill is used, P./ M. Atk. +3% for 15 sec. Healers: When the Celestial Protection skill is used, a character's and party members' damage +1% (3 stages at max) for 15 sec. -->
+		<!-- <Basic effect>. Speed +3, Attribute Attack +30, Attribute Resistance +30. <Class effect>. Knights: When the Nine Aegis/ Mocking Resilience skill is used, a character's and party members' damage +1% (3 stages at max) for 15 sec. Warriors: When the Berserker/ Steel Mind skill is used, damage +1% for 15 sec. Rogues: When the Final Ultimate Evasion skill is used, backstab damage +1% for 15 sec. Archers: When the Mind's Eye skill is used, P. Skill Power +1% for 15 sec. Enchanters: When the Blessing Barrier skill is used, a character's and party members' damage +1% (3 stages at max) for 15 sec. Mages: When the Burst Casting/ Superior Burst Casting/ Eye of the Storm/ Eye of the Windstorm skill is used, M. Skill Power +1% for 15 sec. Summoners: When the Summon Barrier skill is used, P./ M. Atk. +3% for 15 sec. Healers: When the Celestial Protection skill is used, a character's and party members' damage +1% (3 stages at max) for 15 sec. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -773,7 +773,7 @@
 		</effects>
 	</skill>
 	<skill id="33145" toLevel="1" name="Energy Breath">
-		<!-- A standard attack of a monster that uses long-range magic attacks. -->
+		<!-- A basic attack of a monster that uses long-range magic attacks. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -858,7 +858,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33162" toLevel="2" name="Chaos Symphony">
-		<!-- Strikes the target and nearby enemies. For 20 sec., P./ M. Atk. and P./ M. Def. -40%, P. Critical Rate and P./ M. Skill Critical Rate -50%. Requires a sword, a blunt weapon, dual swords, or dual blunt weapons. Critical. Over-hit. -->
+		<!-- Strikes the target and nearby enemies. For 20 sec., P. Atk./ M. Atk./ P. Def./ M. Def. -40%, Critical Rate for basic attacks and P./ M. Skill Critical Rate -50%. Requires a sword, a blunt weapon, dual swords or dual blunt weapons. Critical. Over-hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -928,22 +928,18 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33176" toLevel="1" name="Phantom Sword Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33177" toLevel="1" name="Phantom Blow">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33178" toLevel="1" name="Phantom Spike">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33179" toLevel="1" name="Phantom Crash">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -953,32 +949,28 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33181" toLevel="1" name="Dark Bolt">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33182" toLevel="1" name="Darkness Energy Bomb">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33183" toLevel="1" name="Vicious Killing Strike">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33184" toLevel="1" name="Furious Slasher">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33185" toLevel="1" name="Night in the Barracks">
-		<!-- Combat abilities are enhanced at night time. -->
+		<!-- Increases P. Atk./ M. Atk./ P. Def./ M. Def. at night. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33186" toLevel="1" name="Night in the Outpost">
-		<!-- Combat abilities are enhanced at night time. -->
+		<!-- Increases P. Atk./ M. Atk./ P. Def./ M. Def. at night. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -1012,12 +1004,11 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33193" toLevel="1" name="Blessing of Unity (Reward)">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33194" toLevel="7" name="Blessing of Unity Lv. 1">
-		<!-- For $s1, Acquired XP/ SP +$s2, P./ M. Def. +$s3. After $s1, there is a certain chance to obtain Scroll: Enchant Anhel's Blessing. There are 6 levels in total. Note! 1. The effect remains after death, but is deleted after entering the Olympiad or the Ceremony of Chaos. 2. Dead characters cannot obtain neither an item nor the new effect. 3. There must be free slots in the inventory. -->
+		<!-- For $s1, Acquired XP/ SP +$s2, P./ M. Def. +$s3. After $s1, there is a certain chance to obtain Scroll: Enchant Anhel's Blessing. There are 6 levels in total. Note!. 1. The effect remains after death, but is deleted after entering the Olympiad or the Ceremony of Chaos. 2. Dead characters cannot obtain neither an item nor the new effect. 3. There must be free slots in the inventory. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

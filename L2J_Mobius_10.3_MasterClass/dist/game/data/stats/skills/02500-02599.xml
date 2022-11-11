@@ -214,7 +214,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>12774</npcId> <!-- Young Squash -->
+				<npcId>12774</npcId> <!-- Young Pumpkin -->
 				<npcCount>1</npcCount>
 				<despawnDelay>180000</despawnDelay>
 			</effect>
@@ -237,7 +237,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>12777</npcId> <!-- Large Young Squash -->
+				<npcId>12777</npcId> <!-- Young Large Pumpkin -->
 				<npcCount>1</npcCount>
 				<despawnDelay>180000</despawnDelay>
 			</effect>
@@ -367,7 +367,7 @@
 		</effects>
 	</skill>
 	<skill id="2513" toLevel="1" name="Mysterious Herb">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>icon.skill2513</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>
@@ -401,7 +401,7 @@
 		</effects>
 	</skill>
 	<skill id="2514" toLevel="1" name="Herb of Critical Attack - Damage">
-		<!-- Temporarily increases Critical Damage for standard attacks. Effect 3. -->
+		<!-- Temporarily increases Critical Damage for basic attacks. Effect 3. -->
 		<icon>BranchSys2.icon.etc_crt_force_herb_i01</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>3</abnormalLevel>
@@ -2133,7 +2133,7 @@
 						<item id="10221" count="1" /> <!-- Icarus Hand -->
 					</item>
 					<item chance="0.13">
-						<item id="10222" count="1" /> <!-- Icarus Hall -->
+						<item id="10222" count="1" /> <!-- Icarus Rod -->
 					</item>
 					<item chance="0.13">
 						<item id="10223" count="1" /> <!-- Icarus Spitter -->

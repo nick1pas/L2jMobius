@@ -390,7 +390,7 @@
 		</effects>
 	</skill>
 	<skill id="312" toLevel="20" name="Vicious Stance">
-		<!-- Critical Damage for standard attacks +$s1. Continuously consumes MP proportionately to your level. -->
+		<!-- Critical Damage for basic attacks +$s1. MP Consumption depends on your level. -->
 		<icon>icon.skill0312</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -472,7 +472,7 @@
 		</effects>
 	</skill>
 	<skill id="313" toLevel="8" name="Snipe">
-		<!-- For $s1, P. Accuracy +$s2, P. Atk. +$s3, Range +$s4, Critical Rate for standard attacks +$s5. Movement is impossible while skill is being used. Requires a bow. -->
+		<!-- For $s1, P. Accuracy +$s2, P. Atk. +$s3, range +$s4, Critical Rate for basic attacks +$s5. You cannot move while the skill is active. Requires a bow. -->
 		<icon>icon.skill0313</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -798,7 +798,7 @@
 		</effects>
 	</skill>
 	<skill id="317" toLevel="5" name="Focus Attack">
-		<!-- Attacks a single enemy when equipped with a spear. Additionally, P. Accuracy +$s1 and Critical Damage for standard attacks +$s2. Applies to standard attacks only. -->
+		<!-- Attacks a single enemy when using a spear. P. Accuracy +$s1, Critical Damage for basic attacks +$s2. Applies to basic attacks only. -->
 		<icon>icon.skill0317</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -1144,7 +1144,7 @@
 		</effects>
 	</skill>
 	<skill id="323" toLevel="1" name="A-grade Quiver of Arrow">
-		<!-- Summons between 700 and 2800 Mithril arrows. Consumes 1 A-grade Crystal. -->
+		<!-- Creates 700-2800 Mithril Arrows. Consumes 1 A-grade Crystal. -->
 		<icon>icon.skill0323</icon>
 		<hitTime>3000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -1180,7 +1180,7 @@
 		</effects>
 	</skill>
 	<skill id="324" toLevel="1" name="S-grade Quiver">
-		<!-- Summons between 900 and 3600 arrows of light. Consumes 1 S-grade Crystal. -->
+		<!-- Creates 900-3600 Arrows of Light. Consumes 1 S-grade Crystal. -->
 		<icon>icon.skill0324</icon>
 		<hitTime>3000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -1216,7 +1216,7 @@
 		</effects>
 	</skill>
 	<skill id="325" toLevel="1" name="Strider Siege Assault">
-		<!-- Uses 15005 Power to attack a castle's gate. Can be used while mounted on a Strider. Consumes 5 Spirit Ore. -->
+		<!-- Attacks a castle's gates and walls with 15,005 power. Can only be used while mounted on a Strider. Consumes 5 Spirit Ore. -->
 		<icon>icon.skill0325</icon>
 		<castRange>40</castRange>
 		<coolTime>720</coolTime>
@@ -1246,7 +1246,7 @@
 		</effects>
 	</skill>
 	<skill id="326" toLevel="1" name="Build Advanced Headquarters">
-		<!-- Constructs a high quality encampment that possesses double HP of a standard encampment and assist clan member recovery and battle additions during castle sieges. Consumes 600 B-grade Gemstones. -->
+		<!-- Builds an advanced encampment where clan members can recover and go back to the battle lines during castle sieges. The building's HP is doubled. Consumes 600 B-grade Gemstones. -->
 		<icon>icon.skill0326</icon>
 		<hitTime>4000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -1272,7 +1272,7 @@
 		</effects>
 	</skill>
 	<skill id="327" toLevel="1" name="Wyvern Aegis">
-		<!-- For 9 sec., P. Def. +7000, M. Def. +6000, Buff Cancel Resistance +100%. Can be used only while mounted on a Wyvern. Consumes 20 Spirit Ore. -->
+		<!-- For 9 sec., P. Def. +7000, M. Def. +6000, Buff Cancel Resistance +100%. Can only be used while mounted on a Wyvern. Consumes 20 Spirit Ore. -->
 		<icon>icon.skill0327</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>9</abnormalTime>
@@ -2071,7 +2071,7 @@
 		</effects>
 	</skill>
 	<skill id="349" toLevel="1" name="Song of Renewal">
-		<!-- For $s1, all party members' MP Consumption for physical/ magic/ song/ dance skill -$s2, P./ M. Skill Cooldown -$s3. Additionally increases MP Consumption if the skill is used while song/ dance is in effect. -->
+		<!-- For $s1, all party members' MP Consumption for physical/ magic/ song/ dance skills -$s2, P./ M. Skill Cooldown -$s3. Additionally increases MP Consumption if the skill is used while song/ dance is in effect. -->
 		<icon>icon.skill0349</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2302,7 +2302,7 @@
 		</effects>
 	</skill>
 	<skill id="355" toLevel="1" name="Focus Death">
-		<!-- For $s1, Critical Rate for standard attacks -$s2, Critical Damage for standard attacks at the front -$s3. Vital Point Attack Rate +$s4, Critical Damage for standard attacks after backstab +$s5. Requires a dagger. -->
+		<!-- For $s1, Critical Rate for basic attacks -$s2, Critical Damage for basic attacks at the front -$s3, Vital Point Attack Rate +$s4, Critical Damage for basic attacks from behind +$s5. Requires a dagger. -->
 		<icon>icon.skill0355</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2347,7 +2347,7 @@
 		</effects>
 	</skill>
 	<skill id="356" toLevel="1" name="Focus Chance">
-		<!-- For $s1, Critical Rate for standard attacks at the front -$s2, Critical Rate for standard attacks from the flanks +$s3, Critical Rate for standard attacks after backstab +$s4. Requires a dagger. -->
+		<!-- For $s1, Critical Rate for basic attacks at the front -$s2, Critical Rate for basic attacks from the flanks +$s3, Critical Rate for basic attacks from behind +$s4. Requires a dagger. -->
 		<icon>icon.skill0356</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2389,7 +2389,7 @@
 		</effects>
 	</skill>
 	<skill id="357" toLevel="1" name="Focus Power">
-		<!-- For $s1, Critical Damage for standard attacks at the front -$s2, Critical Damage for standard attacks from the flanks +$s3, Critical Damage for standard attacks after backstab +$s4. Requires a dagger. -->
+		<!-- For $s1, Critical Damage for basic attacks at the front -$s2, Critical Damage for basic attacks from the flanks +$s3, Critical Damage for basic attacks from behind +$s4. Requires a dagger. -->
 		<icon>icon.skill0357</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2637,7 +2637,7 @@
 		</effects>
 	</skill>
 	<skill id="363" toLevel="1" name="Song of Meditation">
-		<!-- For $s1, all party members' MP Recovery Bonus +$s2, and M. Skill MP Consumption -$s3. Additionally increases MP Consumption if the skill is used while song/ dance is in effect. -->
+		<!-- For $s1, all party members' MP Recovery Rate +$s2, M. Skill MP Consumption -$s3. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. -->
 		<icon>icon.skill0363</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2715,7 +2715,7 @@
 		</effects>
 	</skill>
 	<skill id="365" toLevel="1" name="Dance of Siren">
-		<!-- For $s1, all party members' M. Skill Critical Rate +$s2. Additionally, increases MP Consumption if the skill is used while song/ dance is in effect. Requires dual swords. -->
+		<!-- For $s1, party members' M. Skill Critical Rate +$s2. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill0365</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2818,7 +2818,7 @@
 		</effects>
 	</skill>
 	<skill id="367" toLevel="13" name="Dance of Medusa">
-		<!-- Dance that evokes the mirage of Medusa. Petrifies nearby enemies for $s1 Requires dual swords. Inflicted status: Petrification. -->
+		<!-- A dance that evokes the mirage of Medusa. Petrifies nearby enemies for $s1 Requires dual swords. Inflicted status: Petrification. -->
 		<icon>icon.skill0367</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2915,7 +2915,7 @@
 		</effects>
 	</skill>
 	<skill id="368" toLevel="1" name="Vengeance">
-		<!-- Increases nearby enemies' aggression with $s1 power. For $s1, P. Def. +$s2, M. Def. +$s3, Buff Cancel Resistance +$s4. Impossible to move while the skill is active. Requires a shield. -->
+		<!-- Increases nearby enemies' aggression with $s1 power. For $s2, P. Def. +$s3, M. Def. +$s4, Buff Cancel Resistance +$s5. Impossible to move while the skill is active. Requires a shield. -->
 		<icon>icon.skill0368</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -3437,7 +3437,7 @@
 		</effects>
 	</skill>
 	<skill id="391" toLevel="1" name="Clan's Imperium">
-		<!-- Grants Command Channel formation. -->
+		<!-- Allows you to create a command channel if you have the corresponding privilege. -->
 		<icon>icon.skill0391</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

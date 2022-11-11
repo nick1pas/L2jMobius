@@ -563,7 +563,7 @@
 		</effects>
 	</skill>
 	<skill id="32719" toLevel="1" name="Fafurion: Summon Water Orb">
-		<!-- Water Orb Summoning Presentation -->
+		<!-- Water Orb summoning presentation. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<hitTime>5000</hitTime>
@@ -686,7 +686,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32726" toLevel="1" name="Fafurion">
-		<!-- A water dragon, birthed by Shillien. It was long dormant, deep in the sea off the coast of Innadril. As one of the most rational dragons, it appointed one of the elves as a priestess, tasked with comforting its mind and controlling its anger. Fafurion was awakened when the Seven Seals were broken, and now uses its rage to build strength and find a way to revive Shillien in Aden. -->
+		<!-- The Water Dragon spawned by Shillien. He slumbered for a long time deep in the sea, his fury controlled by the Elven Witch. However, when the Seven Seals were damaged, he woke up. Now Fafurion, powered by his fury, seeks to resurrect Shillien. -->
 		<icon>icon.skillboss</icon>
 		<operateType>P</operateType>
 		<magicLevel>110</magicLevel>
@@ -695,7 +695,7 @@
 		</effects>
 	</skill>
 	<skill id="32727" toLevel="3" name="Fafurion's Arrogance Lv. 1">
-		<!-- Fafurion's arrogance grows as its challengers fail. -->
+		<!-- Fafurion is not very confident of his own powers. -->
 		<icon>icon.skillboss</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -714,7 +714,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32730" toLevel="1" name="Breath">
-		<!-- Makes the servant breathe on the enemies in front of it, inflicting damage. -->
+		<!-- Inflicts damage on enemies at the front. -->
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>500</castRange>
@@ -829,7 +829,7 @@
 		</effects>
 	</skill>
 	<skill id="32735" toLevel="2" name="Sword Earthquake">
-		<!-- Strikes downward, causing great damage and stunning. -->
+		<!-- Deals great damage and stuns. -->
 		<icon>
 			<value level="1">icon.skill0000</value>
 			<value level="2">icon.skill0003</value>
@@ -1195,7 +1195,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="32751" toLevel="1" name="Limit Barrier">
-		<!-- Barrier broken after 600 hits. If 600 hits are not made within $s1, all of the Raid Boss's HP recovers. -->
+		<!-- The barrier protects from 600 hits. If you don't deal 600 hits for $s1, the boss' HP will be fully restored. -->
 		<icon>icon.skill11621</icon>
 		<operateType>A2</operateType>
 		<hitTime>500</hitTime>
@@ -1268,14 +1268,14 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="32760" toLevel="1" name="Horn Melody - Anniversary">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. -->
 		<icon>icon.ev_15th_buff_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32761" toLevel="1" name="Drum Melody - Anniversary">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.ev_15th_buff_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
@@ -1310,21 +1310,21 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32766" toLevel="1" name="Mental Resistance - Anniversary">
-		<!-- For $s1, Buff Cancellation/Debuff Resistance +$s2. -->
+		<!-- For $s1, Buff Cancel Resistance/ Debuff Resistance +$s2. -->
 		<icon>icon.ev_15th_buff_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32767" toLevel="1" name="Prevailing Drum - Anniversary">
-		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, and Magic Cancellation Rate -$s5. Has a chance to apply $s6 Vampiric Rage effect. -->
+		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, Vampiric Rage effect +$s6. -->
 		<icon>icon.ev_15th_buff_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32768" toLevel="1" name="Daring Drum - Anniversary">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.ev_15th_buff_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
@@ -1338,14 +1338,14 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32770" toLevel="1" name="Knight's Harmony - Anniversary">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from standard attacks/ M. skills -$s7. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from basic attacks/ M. skills -$s7. -->
 		<icon>icon.ev_15th_buff_i03</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32771" toLevel="1" name="Warrior's Harmony - Anniversary">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. Also has a certain chance to inflict Spectral Slash on the target after standard attacks. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. With a certain chance, applies Spectral Slash on the target after a basic attack. -->
 		<icon>icon.ev_15th_buff_i01</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
@@ -1359,14 +1359,14 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32773" toLevel="5" name="Horn Melody">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. -->
 		<icon>icon.skill11517</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
 		<effectPoint>712</effectPoint>
 	</skill>
 	<skill id="32774" toLevel="5" name="Drum Melody">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1401,7 +1401,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32779" toLevel="1" name="Mental Resistance">
-		<!-- For $s1, Resistance to buff-canceling attacks/ debuff attacks +$s2. -->
+		<!-- For $s1, Buff Cancel Resistance/ Debuff Resistance +$s2. -->
 		<icon>icon.skill11824</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1415,7 +1415,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32781" toLevel="1" name="Daring Drum">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill19445</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1429,14 +1429,14 @@
 		<effectPoint>696</effectPoint>
 	</skill>
 	<skill id="32783" toLevel="2" name="Knight's Harmony">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from standard attacks/ M. skills -$s7. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from basic attacks/ M. skills -$s7. -->
 		<icon>icon.skill19500</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32784" toLevel="2" name="Warrior's Harmony">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. Also has a certain chance to inflict Spectral Slash on the target after standard attacks. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. With a certain chance, applies Spectral Slash on the target after a basic attack. -->
 		<icon>icon.skill19501</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1450,35 +1450,35 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32786" toLevel="1" name="Noblesse Blessing">
-		<!-- Maintains buffs and debuffs after death for $s1 However, the Noblesse Blessing and the Lucky Charm disappear. -->
+		<!-- Duration: $s1 Your buffs and debuffs remain even after death, except for Noblesse Blessing and Lucky Charms' effects. -->
 		<icon>icon.skill19224</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32787" toLevel="1" name="Noblesse Blessing">
-		<!-- Maintains buffs and debuffs after death for $s1 However, the Noblesse Blessing and the Lucky Charm disappear. -->
+		<!-- Duration: $s1 Your buffs and debuffs remain even after death, except for Noblesse Blessing and Lucky Charms' effects. -->
 		<icon>icon.skill19224</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32788" toLevel="1" name="Noblesse Blessing">
-		<!-- Maintains buffs and debuffs after death for $s1 However, the Noblesse Blessing and the Lucky Charm disappear. -->
+		<!-- Duration: $s1 Your buffs and debuffs remain even after death, except for Noblesse Blessing and Lucky Charms' effects. -->
 		<icon>icon.skill19224</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32789" toLevel="5" name="Horn Melody">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. -->
 		<icon>icon.skill11517</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
 		<effectPoint>712</effectPoint>
 	</skill>
 	<skill id="32790" toLevel="5" name="Drum Melody">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1513,7 +1513,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32795" toLevel="1" name="Mental Resistance">
-		<!-- For $s1, Resistance to buff-canceling attacks/ debuff attacks +$s2. -->
+		<!-- For $s1, Buff Cancel Resistance/ Debuff Resistance +$s2. -->
 		<icon>icon.skill11824</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1527,7 +1527,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="32797" toLevel="1" name="Daring Drum">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill19445</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1541,7 +1541,7 @@
 		<effectPoint>696</effectPoint>
 	</skill>
 	<skill id="32799" toLevel="2" name="Knight's Harmony">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from standard attacks/ M. skills -$s7. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from basic attacks/ M. skills -$s7. -->
 		<icon>icon.skill19500</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>

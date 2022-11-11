@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="45500" toLevel="4" name="Indestructible Sound">
-		<!-- Immobilized. Received damage -$s1. -->
+		<!-- Imprisons by Momentum power. -->
 		<icon>icon.skill1624</icon>
 		<castRange>600</castRange>
 		<abnormalLevel>
@@ -152,7 +152,7 @@
 		</effects>
 	</skill>
 	<skill id="45502" toLevel="8" name="Symphony">
-		<!-- Magic is blocked. -->
+		<!-- Unable to use magic. -->
 		<icon>icon.skill0098</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -183,7 +183,7 @@
 		</effects>
 	</skill>
 	<skill id="45503" toLevel="1" name="Death Sting">
-		<!-- Magic is blocked. -->
+		<!-- Unable to use magic. -->
 		<icon>icon.skill0990</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -778,7 +778,7 @@
 		</effects>
 	</skill>
 	<skill id="45519" toLevel="3" name="Dark Vortex">
-		<!-- Critical Rate -10% M. Critical Rate -10% Constantly consumes MP. -->
+		<!-- P. Critical Rate -10% M. Skill Critical Rate -10% Constantly consumes MP. -->
 		<icon>icon.skill1343</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -994,22 +994,20 @@
 		</effects>
 	</skill>
 	<skill id="45530" toLevel="1" name="Tranquility">
-		<!-- For party members for $s1: Max HP $s2 Recovers $s4 HP per $s3 -->
+		<!-- For party members For $s1 Max HP $s2 Recovers $s4 HP per $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45531" toLevel="1" name="Tranquility">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45532" toLevel="1" name="Tranquility">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45533" toLevel="1" name="Exclusion">
-		<!-- <Knockback/ Suppression skill> Knocks nearby enemies back. Deals magic damage with 130 power. For $s1 Greatly decreases Atk. Spd./ Casting Spd./ Speed. -->
+		<!-- <Knockback/ Suppression skill> Knocks back the target and enemies around them. Deals magic damage with 130 power. Duration: $s1 Greatly decreases Atk. Spd./ Casting Spd./ Speed. P. Skill Cooldown $s3 M. Skill Cooldown $s3 Duration: $s2 Speed buffs are disabled. Gap-closing skills cannot be used. -->
 		<icon>icon.expel</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<effectPoint>-500</effectPoint>
@@ -1031,22 +1029,22 @@
 				<power>130</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>45537</skillId> <!-- Exclusion - Knockback -->
+				<skillId>45537</skillId> <!-- Exclusion -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>45535</skillId> <!-- Exclusion - Debuff -->
+				<skillId>45535</skillId> <!-- Exclusion -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="45534" toLevel="1" name="Dark Disruption">
-		<!-- For the target and nearby enemies For $s1 HP Recovery Potions' Effect $s2 -->
+		<!-- Deals magic damage to the target and enemies around them. Power 130. Duration: $s1 HP Recovery Potions' Effect $s2 Removes the following buffs and blocks them for 10 sec.: - Special class transformation -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45535" toLevel="1" name="Exclusion">
-		<!-- Greatly decreases Atk. Spd./ Casting Spd./ Speed. -->
+		<!-- Greatly decreases Atk. Spd./ Casting Spd./ Speed. P. Skill Cooldown +5% M. Skill Cooldown +5% -->
 		<icon>icon.expel</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -1079,7 +1077,6 @@
 		</effects>
 	</skill>
 	<skill id="45536" toLevel="1" name="Tranquility">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -1110,7 +1107,7 @@
 		</effects>
 	</skill>
 	<skill id="45538" toLevel="1" name="Meteor">
-		<!-- <Skill with fixed cooldown> Decreases CP of the target and nearby enemies for $s1 and deals three magic strikes with $s2 power. For $s3: M. Def. $s4 -->
+		<!-- <Skill with fixed cooldown> Decreases CP of the target and nearby enemies for $s1 and deals three magic strikes with $s2 power. Enemies with a debuff/ anomaly applied take additional damage. Duration: $s3 M. Def. $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<abnormalTime>2</abnormalTime>
@@ -1145,7 +1142,7 @@
 		</effects>
 	</skill>
 	<skill id="45539" toLevel="1" name="Rolling Dice">
-		<!-- <Fixed cast time skill> For $s1 P. Atk. $s2 There is one of the following effects: - Atk. Spd. $s2 - Speed$s3 - Max HP $s2 -->
+		<!-- <Skill with fixed cast time> For $s1 P. Atk. $s2 P. Critical Rate $s3 P. Critical Damage $s4 P. Skill Critical Rate $s4 P. Skill Critical Damage $s4 Additionally one of the following effects: - Atk. Spd. $s6 - Speed $s5 - Max HP $s6 -->
 		<abnormalType>ROLLING_DICE</abnormalType>
 		<abnormalLevel>1</abnormalLevel>
 		<icon>icon.rolling_dice</icon>
@@ -1168,7 +1165,7 @@
 		</effects>
 	</skill>
 	<skill id="45540" toLevel="1" name="Rolling Dice - Haste">
-		<!-- P. Atk. $s1 Atk. Spd. $s1 -->
+		<!-- P. Atk. $s1 P. Critical Rate $s2 P. Critical Damage $s3 P. Skill Critical Rate $s3 P. Skill Critical Damage $s3 Atk. Spd. $s4 -->
 		<abnormalType>ROLLING_DICE</abnormalType>
 		<abnormalLevel>2</abnormalLevel>
 		<icon>icon.rolling_dice_buff1</icon>
@@ -1209,7 +1206,7 @@
 		</effects>
 	</skill>
 	<skill id="45541" toLevel="1" name="Rolling Dice - Wind Walk">
-		<!-- P. Atk. $s1 Speed $s2 -->
+		<!-- P. Atk. $s1 P. Critical Rate $s2 P. Critical Damage $s3 P. Skill Critical Rate $s3 P. Skill Critical Damage $s3 Speed $s4 -->
 		<icon>icon.rolling_dice_buff2</icon>
 		<abnormalType>ROLLING_DICE</abnormalType>
 		<abnormalLevel>2</abnormalLevel>
@@ -1251,7 +1248,7 @@
 		</effects>
 	</skill>
 	<skill id="45542" toLevel="1" name="Rolling Dice - Resilience">
-		<!-- P. Atk. $s1 Max HP $s1 -->
+		<!-- P. Atk. $s1 P. Critical Rate $s2 P. Critical Damage $s3 P. Skill Critical Rate $s3 P. Skill Critical Damage $s3 Max HP $s4 -->
 		<icon>icon.rolling_dice_buff3</icon>
 		<abnormalType>ROLLING_DICE</abnormalType>
 		<abnormalLevel>2</abnormalLevel>
@@ -1399,7 +1396,6 @@
 		</effects>
 	</skill>
 	<skill id="45545" toLevel="1" name="Meteor">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -1409,22 +1405,21 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45547" toLevel="15" name="Hellfire">
-		<!-- <Skill with fixed cooldown> Sticks the sword into the ground and summons a burning flame. The flame burns nearby enemies with $s1 power. The effect lasts for 10 sec. P. Def. -40% M. Def. -40% Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
+		<!-- P. Def. $s1 M. Def. $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45548" toLevel="1" name="Tranquility">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45549" toLevel="1" name="Shillien's Curse">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Sword/ Blunt Resistance -10% Skill Power -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45550" toLevel="1" name="Shillien's Curse">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- With a certain chance, removes up to 3 buffs. Max HP/ MP/ CP -20% Skill Power -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

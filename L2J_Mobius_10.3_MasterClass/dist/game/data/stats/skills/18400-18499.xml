@@ -314,10 +314,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="50.0">
-						<item id="46185" count="1" /> <!-- Agathion Anakim Holy Barrier -->
+						<item id="46185" count="1" /> <!-- Agathion Anakim's Holy Barrier -->
 					</item>
 					<item chance="50.0">
-						<item id="46186" count="1" /> <!-- Agathion Anakim Holy Barrier - 30-day -->
+						<item id="46186" count="1" /> <!-- Agathion Anakim's Holy Barrier - 30-day -->
 					</item>
 				</items>
 			</effect>
@@ -374,7 +374,7 @@
 		</effects>
 	</skill>
 	<skill id="18444" toLevel="6" name="Physical Reflect Shirt: Unique Enchant Effect">
-		<!-- P. Def. +$s1. -->
+		<!-- P. Def. +$s1 -->
 		<icon>icon.reflect_attack_shirt</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -412,7 +412,7 @@
 		</effects>
 	</skill>
 	<skill id="18445" toLevel="6" name="Magical Reflect Shirt: Unique Enchant Effect">
-		<!-- M. Def. +$s1. -->
+		<!-- M. Def. +$s1 -->
 		<icon>icon.reflect_magic_shirt</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -463,7 +463,7 @@
 		</effects>
 	</skill>
 	<skill id="18447" toLevel="10" name="Reflect Shirt: Basic Enchant Effect">
-		<!-- M. Def. +$s1. -->
+		<!-- M. Def. +$s1 -->
 		<icon>BranchSys2.icon.etc_scroll_of_enchant_shirt_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -692,7 +692,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="18451" toLevel="2" name="Anniversary Effect">
-		<!-- Acquired XP/ SP +$s1. A chance to obtain a $s2th Anniversary Coin when the buff is cancelled. Note! The coins can't be obtained if your character is dead or has no free space in the inventory. -->
+		<!-- Acquired XP/ SP while hunting +$s1. There is a chance to obtain $s2th Anniversary Coin once the buff expires. Note!. The coins can't be obtained if you are dead or have no free space in the inventory. -->
 		<icon>icon.ev_buff_11th</icon>
 		<abnormalTime>
 			<value level="1">3600</value>
@@ -762,7 +762,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="18458" toLevel="2" name="L2 Market +8 Helios Weapon Pack">
-		<!-- 1st place prize for the L2 Market giveaway. Get a +8 Helios weapon. -->
+		<!-- The 1st place prize on the L2 Market giveaway. Double-click to obtain a Helios weapon enchanted to +8. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="18459" toLevel="3" name="L2 Market Seed Talisman Pack">
@@ -844,7 +844,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="18477" toLevel="1" name="Freya's Art of Seduction">
-		<!-- Receives the following effects for 30 min.: increased Maximum HP/ MP/ CP by 30%, Attack by 10%, M. Atk. by 20%, P. Defense/ M. Defense by 30%, and Speed by 20 with decreased MP consumption by skills by 15%. Cannot be stacked with Art of Seduction or Mysterious Wind Scroll. Cannot be used in the Olympiad. Can be used in the Ceremony of Chaos. Cooldown is 5 min. This buff remains effective even when you are dead. -->
+		<!-- For 30 min., Max HP/ MP/ CP +30%, P. Atk. +10%, M. Atk. +20%, P./ M. Def. +30%, Speed +20, Skill MP Consumption -15%. The effect remains after death. -->
 		<icon>icon.bm_freya_rose_red_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>2</abnormalLevel>
@@ -911,13 +911,13 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="18479" toLevel="1" name="Freya's Wish-filled Gift">
-		<!-- Double-click to get 1 random rare item. -->
+		<!-- Double-click to obtain a rare and valuable item. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="18480" toLevel="1" name="Sirra's Wish-filled Gift">
-		<!-- Double-click to get one of the following: La Vie En Rose's Jewelry Box, various Enchant Stones and Dark/ Bloody Enhancement Stones. -->
+		<!-- Double-click to obtain one of the following items: La Vie En Rose's Jewelry Box, an enchant stone, Dark/ Bloody Enhancement Stone. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -932,7 +932,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="18483" toLevel="1" name="Freya's Kindness">
-		<!-- Double-click to obtain 1 random item out of the following: Dark Assassin Suit, Dark Knight Suit, Ninja Outfit, or Metal Suit. -->
+		<!-- Double-click to obtain one of the following appearance stones: Dark Assassin Suit, Dark Knight Suit, Ninja Outfit, Metal Suit. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="18484" toLevel="1" name="Wind Vitality Tonic">

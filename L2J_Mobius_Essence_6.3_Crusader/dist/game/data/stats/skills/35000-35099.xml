@@ -47,7 +47,7 @@
 		</effects>
 	</skill>
 	<skill id="35002" toLevel="1" name="Earth Dragon's Breath">
-		<!-- Decreases target's Atk. Spd. The effect lasts for 15 sec. Atk. Spd. -30% Casting Spd. -30% -->
+		<!-- Decreases the target's Atk. Spd. The effect lasts for 15 sec. Atk. Spd. -30% Casting Spd. -30% -->
 		<icon>icon.bm_dragon_breath</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -873,7 +873,7 @@
 		<reuseDelay>7200000</reuseDelay>
 	</skill>
 	<skill id="35024" toLevel="21" name="Talisman of Border">
-		<!-- Activates Dimensional Border Power. <Defence>: P./ M. Def. +12. -->
+		<!-- Activates Dimensional Border Power. <Defense>: P./ M. Def. +12. -->
 		<icon>
 			<value level="1">icon.bm_magic_square_talisman</value>
 			<value level="2">icon.bm_magic_square_talisman</value>
@@ -1434,7 +1434,7 @@
 		</effects>
 	</skill>
 	<skill id="35028" toLevel="1" name="Bracelet of Border">
-		<!-- HP/ MP Recovery Bonus +7%, P./ M. Accuracy +1, Weight Limit +7000. -->
+		<!-- HP/ MP Recovery Rate +7%, P. Accuracy +1, M. Accuracy +1, weight limit +7000. -->
 		<icon>icon.dimension_bracelet_i05</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -1485,7 +1485,7 @@
 		<mpConsume>48</mpConsume>
 	</skill>
 	<skill id="35035" toLevel="1" name="Item Skill: Cleanse">
-		<!-- Skill: Cancels a debuff. -->
+		<!-- Skill: Removes a debuff. -->
 		<icon>icon.skill3123</icon>
 		<operateType>A1</operateType>
 		<castRange>600</castRange>
@@ -1688,7 +1688,7 @@
 		</effects>
 	</skill>
 	<skill id="35041" toLevel="1" name="Cloth Belt">
-		<!-- When using the belt, Inventory slot +2, Weight Limit +2000. HP Recovery Bonus +1.24, MP Recovery Bonus +0.83, CP Recovery +1.66. You can enhance it to Leather Belt with magic. -->
+		<!-- When equipped, inventory slots +2, weight limit +2000, HP Recovery Rate +1.24, MP Recovery Rate +0.83, CP Recovery Rate +1.66. Can be upgraded to Leather Belt with magic. -->
 		<icon>icon.belt_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1714,7 +1714,7 @@
 		</effects>
 	</skill>
 	<skill id="35042" toLevel="1" name="Leather Belt">
-		<!-- When using the belt, Inventory Slots +3, Weight Limit +3000, HP Recovery Bonus +1.47, MP Recovery Bonus +0.98, CP Recovery Bonus +1.96, Max HP/ MP/ CP +100. You can enhance it to Iron Belt with magic. -->
+		<!-- When equipped, inventory slots +3, weight limit +3000, HP Recovery Rate +1.47, MP Recovery Rate +0.98, CP Recovery Rate +1.96, Max HP/ MP/ CP +100. Can be upgraded to Iron Belt with magic. -->
 		<icon>icon.belt_i02</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1752,7 +1752,7 @@
 		</effects>
 	</skill>
 	<skill id="35043" toLevel="1" name="Iron Belt">
-		<!-- When using the belt, Inventory Slots +4, Weight Limit +4000, HP Recovery Bonus +1.70, MP Recovery Bonus +1.13, CP Recovery Bonus +2.26, Max HP/ MP/ CP +150. You can enhance it to Mithril Belt with magic. -->
+		<!-- When equipped, inventory slots +4, weight limit +4000, HP Recovery Rate +1.70, MP Recovery Rate +1.13, CP Recovery Rate +2.26, Max HP/ MP/ CP +150. Can be upgraded to Mithril Belt with magic. -->
 		<icon>icon.belt_i03</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1790,7 +1790,7 @@
 		</effects>
 	</skill>
 	<skill id="35044" toLevel="1" name="Mithril Belt">
-		<!-- When using the belt, Inventory Slots +5, Weight Limit +5000, HP Recovery Bonus +1.92, MP Recovery Bonus +1.28, CP Recovery Bonus +2.56, Max HP/ MP/ CP +200. -->
+		<!-- When equipped, inventory slots +5, weight limit +5000, HP Recovery Rate +1.92, MP Recovery Rate +1.28, CP Recovery Rate +2.56, Max HP/ MP/ CP +200. -->
 		<icon>icon.belt_i04</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1849,7 +1849,7 @@
 		</effects>
 	</skill>
 	<skill id="35046" toLevel="1" name="Earth Dragon Belt">
-		<!-- Inventory Slots +6, Weight Limit +7000, CON +1, MEN +1, HP Recovery Bonus +2.31, MP Recovery Bonus +1.54, CP Recovery Bonus +3.07, Max HP/ MP/ CP +15%, HP Recovery Potions' Effect +100, Received Damage -6%. -->
+		<!-- When equipped, inventory slots +6, weight limit +7000, CON +1, MEN +1, HP Recovery Rate +2.31, MP Recovery Rate +1.54, CP Recovery Rate +3.07, Max HP/ MP/ CP +15%, HP Recovery Potions' Effect +100, received damage -6%. -->
 		<icon>icon.bm_antaras_belt</icon>
 		<operateType>P</operateType>
 		<effects>

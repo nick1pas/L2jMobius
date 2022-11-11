@@ -1109,7 +1109,7 @@
 		</effects>
 	</skill>
 	<skill id="23160" toLevel="1" name="Michelangeloph's Blessing">
-		<!-- For 1 h., increases Max HP, MP, and CP by 40%. Increases P./ M. Def. by 20%. Increases Speed by 20%. Increases the power of Prominent Damage through magic damage by 20%. Raises by 2 the occurrence rate of Prominent Damage through magic damage. -->
+		<!-- For 1 h., Max HP/ MP/ CP +40%, P./ M. Def. +20%, Speed +20%, M. Critical Damage +20%, M. Critical Rate +2. -->
 		<icon>BranchSys.icon.br_xmas_weapon_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1334,7 +1334,7 @@
 		</effects>
 	</skill>
 	<skill id="23167" toLevel="1" name="Rosy Seduction">
-		<!-- Increases Max HP by 20%, Max MP by 20%, and the Speed by 20 for 5 min. Increases the Debuff Resistance by 10%. Cooldown 10 min. Consumes 3 Rose Essence during skill use. -->
+		<!-- For 5 min., Max HP +20%, Max MP +20%, Speed +20, Debuff Resistance +10%. Cooldown: 10 min. Consumes 3 Rose Essences when used. -->
 		<icon>BranchSys2.icon.br_rosalia_rose_red_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -1450,7 +1450,7 @@
 		</effects>
 	</skill>
 	<skill id="23169" toLevel="1" name="Mesmerized">
-		<!-- Seduced to a state of mesmerization. You won't be cast with Art of Seduction for 40 min. -->
+		<!-- Charmed. Immunity to Art of Seduction for 40 min. -->
 		<icon>BranchSys2.icon.br_rosalia_rose_blue_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>2400</abnormalTime>
@@ -1472,7 +1472,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23170" toLevel="1" name="Mesmerized">
-		<!-- Seduced to a state of mesmerization. You won't be cast with Rosy Seduction for 10 min. -->
+		<!-- Charmed. Immunity to Rosy Seduction for 10 min. -->
 		<icon>BranchSys2.icon.br_rosalia_rose_white_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -1590,7 +1590,7 @@
 		</effects>
 	</skill>
 	<skill id="23174" toLevel="1" name="Life Hazard">
-		<!-- Resurrects and fully restores your Stats. Buff and Debuff effects remain after death. Cooldown - 12 h. -->
+		<!-- Resurrects from death fully recovered. Buffs remain after death, except for Noblesse Blessing and Lucky Charm effects. Cooldown: 12 h. -->
 		<icon>icon.skill_agathion_special</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>

@@ -30,7 +30,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16403" toLevel="1" name="Dimensional Judgment">
-		<!-- Sentence target to death. 150,000 damage. -->
+		<!-- Strikes a nearby target with Judgment of Death, dealing 150,000 damage. -->
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
 		<hitTime>2000</hitTime>
@@ -39,7 +39,7 @@
 		<isMagic>6</isMagic>
 	</skill>
 	<skill id="16404" toLevel="1" name="Dimensional Wide Judgment">
-		<!-- Sentence enemies to the front to death. 150,000 damage. -->
+		<!-- Strikes a target at the front with Judgment of Death, dealing 150,000 damage. -->
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
 		<hitTime>2000</hitTime>
@@ -48,7 +48,7 @@
 		<isMagic>6</isMagic>
 	</skill>
 	<skill id="16405" toLevel="1" name="Dimensional Mass Judgment">
-		<!-- Sentence all nearby enemies to death. 150,000 damage. -->
+		<!-- Strikes all nearby targets with Judgment of Death, dealing 150,000 damage. -->
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
 		<reuseDelay>3000</reuseDelay>
@@ -66,7 +66,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16407" toLevel="1" name="Dimensional Resurrection Block">
-		<!-- Stops target from resurrecting for 60 sec. -->
+		<!-- Stops the target from resurrecting for 60 sec. -->
 		<icon>icon.skill_resurrection</icon>
 		<operateType>A2</operateType>
 		<castRange>600</castRange>
@@ -148,12 +148,12 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16418" toLevel="10" name="Seduction Resistance">
-		<!-- Slightly resistant to Seduction. -->
+		<!-- Slightly increases Charm Resistance. -->
 		<icon>icon.skill5934</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16425" toLevel="1" name="Appearance Stone: Santa Suit">
-		<!-- For 1 h., changes the appearance of your armor into that of a Santa Suit. -->
+		<!-- Santa Outfit. Duration: 1 h. -->
 		<icon>BranchSys.icon.br_xmas_present_fun_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>

@@ -73,7 +73,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="1605" toLevel="5" name="Dual Weapon Defense">
-		<!-- For $s1 P. Skill Evasion $s2 -->
+		<!-- Duration: $s1 P. Skill Evasion $s2 -->
 		<icon>icon.skill1605</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -136,7 +136,7 @@
 		</effects>
 	</skill>
 	<skill id="1606" toLevel="13" name="Quick Spear">
-		<!-- <Shock skill> Attacks the target and nearby enemies with $s1 power. Stuns for $s2 Ignores Shield Defense. -->
+		<!-- <Shock skill> Attacks the target and enemies around them with $s1 power. Stuns for $s2 Ignores Shield Defense. -->
 		<icon>icon.skill1606</icon>
 		<castRange>700</castRange>
 		<coolTime>500</coolTime>
@@ -462,7 +462,7 @@
 		</effects>
 	</skill>
 	<skill id="1608" toLevel="2" name="Dynamic Recovery">
-		<!-- Restores $s1 HP. -->
+		<!-- Recovers $s1 HP to the character. -->
 		<icon>icon.skill1608</icon>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -703,7 +703,7 @@
 		</effects>
 	</skill>
 	<skill id="1611" toLevel="6" name="Power Supremacy">
-		<!-- When activated P. Atk. +$s1 Max HP +$s2 -->
+		<!-- When activated P. Atk. +$s1 Max HP -$s2 -->
 		<icon>icon.skill1611</icon>
 		<magicLevel>
 			<value level="1">48</value>
@@ -771,7 +771,7 @@
 		</effects>
 	</skill>
 	<skill id="1613" toLevel="12" name="Body Crush">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 With a certain chance, removes up to $s3 buff(s) from the target. Ignores Shield Defense. -->
+		<!-- <Shock/ fixed cooldown skill> Attacks the enemy with $s1 power. Stuns for $s2 With a certain chance, removes up to $s3 buff(s) from the target. Ignores Shield Defense. -->
 		<icon>icon.skill1613</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>40</castRange>
@@ -874,7 +874,7 @@
 		</effects>
 	</skill>
 	<skill id="1615" toLevel="6" name="Weapon Reinforcement">
-		<!-- The effect lasts for $s1 When using swords/ blunt weapon/ spears P. Atk. $s2 With a certain chance after an attack For $s3 Atk. Spd. $s4 Casting Spd. $s4 -->
+		<!-- Duration: $s1 When using a sword, a blunt weapon or a spear: P. Atk. $s2 With a certain chance after a basic attack: Duration: $s3 Atk. Spd. $s4 Casting Spd. $s4 (Cooldown: 15 sec.) -->
 		<icon>icon.skill1615</icon>
 		<reuseDelay>10000</reuseDelay>
 		<coolTime>500</coolTime>
@@ -992,7 +992,7 @@
 		</effects>
 	</skill>
 	<skill id="1617" toLevel="4" name="Tenacity">
-		<!-- Enhances the body. Shock Resistance $s1 With a certain chance, recovers HP when damage is taken. -->
+		<!-- Enhances the body. Shock Resistance $s1 With a certain chance, recovers HP when damage is taken. (Cooldown: 5 sec.) -->
 		<icon>icon.skill1617</icon>
 		<reuseDelay>10000</reuseDelay>
 		<coolTime>500</coolTime>
@@ -1067,7 +1067,7 @@
 		</effects>
 	</skill>
 	<skill id="1618" toLevel="4" name="Body Reconstruction">
-		<!-- Restores the target's HP with $s1 Power. -->
+		<!-- Recovers HP. Power $s1. -->
 		<icon>icon.skill0045</icon>
 		<reuseDelay>5000</reuseDelay>
 		<magicLevel>
@@ -1102,7 +1102,7 @@
 		<reuseDelay>10000</reuseDelay>
 	</skill>
 	<skill id="1621" toLevel="5" name="Shield of Sacrifice">
-		<!-- <Skill with fixed cooldown> The character sacrifices themselves enhancing party members for $s2. <Caster> Max HP -$s1 <Party Members> P. Def. +$s3 M. Def. +$s4 Received Healing +$s5 -->
+		<!-- <Skill with fixed cooldown> The character sacrifices themselves enhancing party members for $s2. <Caster> Max HP -$s1 <Party Members> P. Def. +$s3 M. Def. +$s4 Received Healing +$s5 For 5 min. after the effect disappears Shield of Sacrifice cannot be applied. -->
 		<icon>icon.skill1621</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1289,7 +1289,7 @@
 		</effects>
 	</skill>
 	<skill id="1624" toLevel="4" name="Indestructible Sound">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 Received damage $s3 Requires Momentum Lv. 5. -->
+		<!-- <Imprisonment skill> Attacks the enemy with $s1 power. For $s2 inflicts Imprisonment. Once the Imprisonment effect disappears, P. Def. $s3 for $s2 Critical. -->
 		<icon>icon.skill1624</icon>
 		<castRange>600</castRange>
 		<chargeConsume>5</chargeConsume>
@@ -1488,7 +1488,7 @@
 			<effect name="BlockControl" />
 			<effect name="Fear" />
 			<effect name="CallSkill">
-				<skillId>45501</skillId> <!-- Destroyer s Roar -->
+				<skillId>45501</skillId> <!-- Destroyer's Roar -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1545,7 +1545,7 @@
 		</effects>
 	</skill>
 	<skill id="1629" toLevel="1" name="Throw Dagger in Wrist">
-		<!-- Attacks the enemy with $s1 power. For the target affected by the skill: There is a certain chance to interrupt spell casting for $s2 because of a deep wound on the wrist. -->
+		<!-- Attacks the enemy with $s1 power. For the target affected by the skill: There is a certain chance to interrupt spellcasting for $s2 because of a deep wound on the wrist. -->
 		<icon>icon.skill1629</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1638,7 +1638,7 @@
 		</effects>
 	</skill>
 	<skill id="1631" toLevel="2" name="Clear Movements">
-		<!-- Hide/ Shadow Step Resets cooldowns. -->
+		<!-- Hide/ Seclusion/ Shadow Step Resets cooldowns. -->
 		<icon>icon.skill10518</icon>
 		<operateType>A1</operateType>
 		<coolTime>500</coolTime>

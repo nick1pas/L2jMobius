@@ -7,14 +7,14 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="29372" toLevel="1" name="Gold Bar Pouch">
-		<!-- Double-click to obtain various items. -->
+		<!-- Double-click to obtain an item. -->
 		<icon>icon.bm_strongbox</icon>
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="29373" toLevel="1" name="Treasure Chest of Ancient Kingdom">
-		<!-- Double-click to obtain various items. -->
+		<!-- Double-click to obtain an item. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -194,7 +194,7 @@
 		</effects>
 	</skill>
 	<skill id="29375" toLevel="1" name="Glittering Freya's Scroll of Storm">
-		<!-- For 10 min., Vitality Consumption +$s1 and Acquired XP/ SP +$s2 while hunting. Remains after death. Cooldown is 9 min. Only usable when 1 or more Vitality slot is full. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +$s1, acquired XP/ SP +$s2. The effect remains after death. Cooldown: 9 min. -->
 		<icon>icon.bm_freya_storm_scroll</icon>
 		<operateType>A2</operateType>
 		<abnormalType>FREYA_SCROLL_VIT</abnormalType>
@@ -222,7 +222,7 @@
 		</effects>
 	</skill>
 	<skill id="29376" toLevel="1" name="Ride Silver Strider">
-		<!-- Allows to ride Silver Strider. -->
+		<!-- Allows to mount Silver Dragon. -->
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -273,7 +273,7 @@
 		</effects>
 	</skill>
 	<skill id="29378" toLevel="1" name="Ride Black Strider">
-		<!-- Allows to ride Black Strider. -->
+		<!-- Allows to mount Black Dragon. -->
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -324,7 +324,7 @@
 		</effects>
 	</skill>
 	<skill id="29380" toLevel="1" name="Ride Iron Strider">
-		<!-- Allows to ride Iron Strider. -->
+		<!-- Allows to mount Iron Dragon. -->
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -417,7 +417,7 @@
 		</effects>
 	</skill>
 	<skill id="29383" toLevel="1" name="Heir's Radiance Lv. 2">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s6. Warrior's Circlet: P. Atk. +$s6. Wizard's Circlet: M. Atk. +$s6. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5. <When used with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s6. Warrior's Circlet: P. Atk. +$s6. Wizard's Circlet: M. Atk. +$s6. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -503,7 +503,7 @@
 		</effects>
 	</skill>
 	<skill id="29384" toLevel="1" name="Heir's Radiance Lv. 3">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvE damage +$s6, received damage from Dragon weapons -$s7. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -624,7 +624,7 @@
 		</effects>
 	</skill>
 	<skill id="29385" toLevel="1" name="Heir's Radiance Lv. 4">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvE damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvE Lv. 1 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvE damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvE Lv. 1 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -787,7 +787,7 @@
 		</effects>
 	</skill>
 	<skill id="29387" toLevel="1" name="Heir's Radiance Lv. 2">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s6. Warrior's Circlet: P. Atk. +$s6. Wizard's Circlet: M. Atk. +$s6. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5. <When used with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s6. Warrior's Circlet: P. Atk. +$s6. Wizard's Circlet: M. Atk. +$s6. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -873,7 +873,7 @@
 		</effects>
 	</skill>
 	<skill id="29388" toLevel="1" name="Heir's Radiance Lv. 3">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvP damage +$s6, received damage from Dragon's weapons -$s7. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP damage +$s6, received damage from Dragon weapons -$s7. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -994,7 +994,7 @@
 		</effects>
 	</skill>
 	<skill id="29389" toLevel="1" name="Heir's Radiance Lv. 4">
-		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received area damage and received Skill Critical Damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, all Critical Damage +$s9, PvP damage +$s6, received damage from Dragon's weapons -$s7. Enables the Heir's Radiance - PvP Lv. 1 skill. <When used with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
+		<!-- When equipped, Attribute Attack +$s1, Attribute Resistance +$s1, Debuff Resistance +$s2, Max HP +$s3, received AoE damage/ skill critical damage -$s4, all stats +$s5, P./ M. Skill Power +$s9, All Critical Damage +$s9, PvP damage +$s6, received damage from Dragon weapons -$s7. Enables the Heir's Radiance - PvP Lv. 1 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet>. Knight's Circlet: P./ M. Def. +$s8. Warrior's Circlet: P. Atk. +$s8. Wizard's Circlet: M. Atk. +$s8. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1115,7 +1115,7 @@
 		</effects>
 	</skill>
 	<skill id="29390" toLevel="5" name="Heir's Radiance - PvE Lv. 1">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvE Damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvE damage -$s5. When the effect expires, the enhanced Heir's Radiance - PvE effect activates recovering 35,000 Vitality points. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -1248,7 +1248,7 @@
 		</endEffects>
 	</skill>
 	<skill id="29391" toLevel="5" name="Heir's Radiance - PvP Lv. 1">
-		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, Received PvP Damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note! The effect disappears after logout and is not renewed after death. -->
+		<!-- For 1 h., P. Atk. +$s1, M. Atk. +$s2, P. Def. +$s3, M. Def. +$s4, received PvP damage -$s5, Recovery Potions' Effect +$s6. When the effect expires, the enhanced Heir's Radiance - PvP effect activates. Consumes 1000 Spirit Ore. Note!. The effect disappears after logout or when entering a world session zone and is not renewed after death. -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>A2</operateType>
 		<abnormalType>HEIR_PVP_PVE</abnormalType>
@@ -1406,7 +1406,7 @@
 		</effects>
 	</skill>
 	<skill id="29393" toLevel="8" name="Warrior's Heir">
-		<!-- P. Atk. +$s1. -->
+		<!-- P. Atk. +$s1 -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1426,7 +1426,7 @@
 		</effects>
 	</skill>
 	<skill id="29394" toLevel="8" name="Wizard's Heir">
-		<!-- M. Atk. +$s1. -->
+		<!-- M. Atk. +$s1 -->
 		<icon>BranchIcon.icon.g_bm_ring_of_light</icon>
 		<operateType>P</operateType>
 		<effects>

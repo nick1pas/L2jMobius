@@ -27,7 +27,7 @@
 		</effects>
 	</skill>
 	<skill id="22701" toLevel="1" name="Harp's Sealed Rune of Power_Trigger">
-		<!-- Has a 5% chance of Stunning all enemies within 400 grids for 3 sec. -->
+		<!-- With a 5% chance, stuns all enemies within 400 m for 3 sec. -->
 		<icon>icon.skill1551</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>4</abnormalLevel>
@@ -190,7 +190,7 @@
 		</effects>
 	</skill>
 	<skill id="22707" toLevel="2" name="Vitality Maintaining Potion">
-		<!-- Maintains Vitality for 30 min. -->
+		<!-- Sustains Vitality for 30 min. -->
 		<icon>icon.etc_lesser_potion_scarlet_i00</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>3600000</reuseDelay>
@@ -320,7 +320,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22713" toLevel="1" name="Letter Collector's Gift">
-		<!-- For 2 h., Atk./ Casting Spd. +15%, and Speed +20. -->
+		<!-- For 2 h., Atk. Spd. +15%, Casting Spd. +15%, Speed +20. -->
 		<icon>icon.shield_bread_i01</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>3600000</reuseDelay>
@@ -436,10 +436,10 @@
 						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
 					</item>
 					<item chance="10">
-						<item id="34941" count="1" /> <!-- Life Stone: Hair Accessory - Event -->
+						<item id="34941" count="1" /> <!-- Life Stone: Head Accessory - Event -->
 					</item>
 					<item chance="10">
-						<item id="34940" count="1" /> <!-- Scroll: Enchant Hair Accessory - Event -->
+						<item id="34940" count="1" /> <!-- Scroll: Enchant Head Accessory - Event -->
 					</item>
 					<item chance="6">
 						<item id="34681" count="1" /> <!-- Scroll: Seal R99-grade Armor -->
@@ -495,19 +495,19 @@
 						<item id="36185" count="1" /> <!-- Hellfire Energy -->
 					</item>
 					<item chance="2">
-						<item id="35749" count="1" /> <!-- R-grade Weapon Attribute Change Crystal - Event -->
+						<item id="35749" count="1" /> <!-- Attribute Change Crystal: R-grade Weapon - Event -->
 					</item>
 					<item chance="2">
 						<item id="36184" count="1" /> <!-- Annihilation Energy -->
 					</item>
 					<item chance="10">
-						<item id="23348" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="23348" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="15">
 						<item id="34628" count="1" /> <!-- Einhasad's Energy -->
 					</item>
 					<item chance="12">
-						<item id="23347" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="23347" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="15">
 						<item id="23346" count="1" /> <!-- Letter Collector's Gift -->
@@ -554,16 +554,16 @@
 						<item id="22515" count="1" /> <!-- Package: Superior Minion Coupon (1 pc.) -->
 					</item>
 					<item chance="1">
-						<item id="23372" count="1" /> <!-- Package: R-grade Weapon Appearance/Restoration Stone (1 pc.) -->
+						<item id="23372" count="1" /> <!-- Package: Appearance/ Restoration Stone: R-grade Weapon (1 pc.) -->
 					</item>
 					<item chance="2.45">
-						<item id="23376" count="1" /> <!-- Package: Hair Accessory Appearance/Restoration Stone -->
+						<item id="23376" count="1" /> <!-- Package: Appearance/ Restoration Stone: Head Accessory -->
 					</item>
 					<item chance="2.45">
-						<item id="23374" count="1" /> <!-- Package: R-grade Armor Appearance/Restoration Stone -->
+						<item id="23374" count="1" /> <!-- Package: Appearance/ Restoration Stone: R-grade Armor -->
 					</item>
 					<item chance="5">
-						<item id="23373" count="1" /> <!-- Package: S-grade Weapon Appearance/Restoration Stone (1 pc.) -->
+						<item id="23373" count="1" /> <!-- Package: Appearance/ Restoration Stone: S-grade Weapon (1 pc.) -->
 					</item>
 					<item chance="10">
 						<item id="23438" count="1" /> <!-- Package: Party Cake -->
@@ -640,22 +640,22 @@
 						<item id="22647" count="1" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
 					</item>
 					<item chance="0.9">
-						<item id="22629" count="1" /> <!-- High-grade R-grade Life Stone - Not available -->
+						<item id="22629" count="1" /> <!-- High-grade R-grade Life Stone - Not Available -->
 					</item>
 					<item chance="0.8">
-						<item id="22630" count="1" /> <!-- Top-grade R-grade Life Stone - Not available -->
+						<item id="22630" count="1" /> <!-- Top-grade R-grade Life Stone - Not Available -->
 					</item>
 					<item chance="0.7">
-						<item id="22631" count="1" /> <!-- High-grade R95-grade Life Stone - Not available -->
+						<item id="22631" count="1" /> <!-- High-grade R95-grade Life Stone - Not Available -->
 					</item>
 					<item chance="0.3">
-						<item id="22632" count="1" /> <!-- Top-grade R95-grade Life Stone - Not available -->
+						<item id="22632" count="1" /> <!-- Top-grade R95-grade Life Stone - Not Available -->
 					</item>
 					<item chance="0.2">
-						<item id="22633" count="1" /> <!-- High-grade R99-grade Life Stone - Not available -->
+						<item id="22633" count="1" /> <!-- High-grade R99-grade Life Stone - Not Available -->
 					</item>
 					<item chance="0.1">
-						<item id="22634" count="1" /> <!-- Top-grade R99-grade Life Stone - Not available -->
+						<item id="22634" count="1" /> <!-- Top-grade R99-grade Life Stone - Not Available -->
 					</item>
 					<item chance="0.2">
 						<item id="19508" count="1" /> <!-- Yellow R-grade Soul Crystal Fragment -->
@@ -1422,10 +1422,10 @@
 						<item id="23596" count="1" /> <!-- Blessed Scroll: Enchant R-grade Weapon - Event -->
 					</item>
 					<item chance="0.058">
-						<item id="35749" count="1" /> <!-- R-grade Weapon Attribute Change Crystal - Event -->
+						<item id="35749" count="1" /> <!-- Attribute Change Crystal: R-grade Weapon - Event -->
 					</item>
 					<item chance="0.0942">
-						<item id="23599" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon - Event -->
+						<item id="23599" count="1" /> <!-- Stone: Enchant R-grade Weapon - Event -->
 					</item>
 					<item chance="0.175">
 						<item id="23534" count="1" /> <!-- Monster Weapon Appearance Stone Pack - Event -->
@@ -1434,7 +1434,7 @@
 						<item id="36164" count="1" /> <!-- Giant's Scroll: Enchant R-grade Armor - Event -->
 					</item>
 					<item chance="0.425">
-						<item id="23600" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor - Event -->
+						<item id="23600" count="1" /> <!-- Stone: Enchant R-grade Armor - Event -->
 					</item>
 					<item chance="0.52">
 						<item id="23597" count="1" /> <!-- Blessed Scroll: Enchant R-grade Armor - Event -->
@@ -1455,16 +1455,16 @@
 						<item id="23589" count="1" /> <!-- Monster Weapon Appearance Stone Pack (7-day) - Event -->
 					</item>
 					<item chance="1.861">
-						<item id="23575" count="1" /> <!-- Package: Fantasy Top Appearance Stone (7-day) - Event -->
+						<item id="23575" count="1" /> <!-- Package: Appearance Stone: Fantasy Upper Armor (7-day) - Event -->
 					</item>
 					<item chance="1.861">
-						<item id="23576" count="1" /> <!-- Package: Fantasy Bottom Appearance Stone (7-day) - Event -->
+						<item id="23576" count="1" /> <!-- Package: Appearance Stone: Fantasy Lower Armor (7-day) - Event -->
 					</item>
 					<item chance="2.12">
-						<item id="23577" count="1" /> <!-- Package: Fantasy Gloves Appearance Stone (7-day) - Event -->
+						<item id="23577" count="1" /> <!-- Package: Appearance Stone: Fantasy Gloves (7-day) - Event -->
 					</item>
 					<item chance="2.12">
-						<item id="23578" count="1" /> <!-- Package: Fantasy Shoes Appearance Stone (7-day) - Event -->
+						<item id="23578" count="1" /> <!-- Package: Appearance Stone: Fantasy Shoes (7-day) - Event -->
 					</item>
 					<item chance="3.1">
 						<item id="19440" count="1" /> <!-- R-grade Gemstone -->
@@ -1520,7 +1520,7 @@
 		</effects>
 	</skill>
 	<skill id="22744" toLevel="1" name="Fantasy Cookie">
-		<!-- Speed +33 for 60 min. -->
+		<!-- For 60 min., Speed +33. -->
 		<icon>BranchSys3.Icon.ev_halloween_cookie</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1539,7 +1539,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22745" toLevel="1" name="Fantasy Homemade Cookie">
-		<!-- For 60 min., increases Max MP by 20%, HP Recovery Bonus by 20%, M. Critical Rate by 2, Standard Attack Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Debuff Resistance by 10%, and increases P. Def. when hit by a critical attack. Decreases Speed by 15%. Additionally increases Standard Attack Critical Damage for party members equipped with bow, crossbow or melee weapons when they receive more than a certain amount of damage. -->
+		<!-- For 60 min., Max MP +20%, HP Recovery Rate +20%, M. Critical Rate +20, Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%. Increases P. Def. when hit by a critical attack. Speed -15%. Additionally increases Critical Damage for party members equipped with a bow, a crossbow or a melee weapon when they receive a certain amount of damage. -->
 		<icon>BranchSys3.Icon.ev_halloween_cookie</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1994,7 +1994,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22765" toLevel="1" name="PA Vitality">
-		<!-- For 60 min., Vitality is replenished with XP gain through hunting. -->
+		<!-- For 60 min., recovers Vitality when acquiring XP while hunting. -->
 		<icon>icon.etc_pccafe_point_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>100</hitTime>
@@ -2018,7 +2018,7 @@
 		</conditions>
 	</skill>
 	<skill id="22766" toLevel="1" name="Vitality Maintaining Potion">
-		<!-- Maintains Vitality for 10 min. -->
+		<!-- Sustains Vitality for 60 min. -->
 		<icon>icon.etc_lesser_potion_blue_i00</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>1800000</reuseDelay>
@@ -2041,7 +2041,7 @@
 		</conditions>
 	</skill>
 	<skill id="22767" toLevel="2" name="Vitality Maintaining Potion">
-		<!-- Maintains Vitality for 30 min. -->
+		<!-- Sustains Vitality for 30 min. -->
 		<icon>icon.etc_lesser_potion_scarlet_i00</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>3600000</reuseDelay>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="4600" toLevel="12" name="Shock + P. Def. Decrease">
-		<!-- Instantly decreases P. Def. ans stuns. Effect $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Momentarily decreases P. Def. ans inflicts Stun. Effect $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill0100</icon>
 		<abnormalLevel>
 			<value level="1">11</value>
@@ -137,7 +137,7 @@
 		</effects>
 	</skill>
 	<skill id="4602" toLevel="12" name="Decrease P. Atk.">
-		<!-- P. Atk. decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases P. Atk. Effect $s1 -->
 		<icon>icon.skill4037</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -236,7 +236,7 @@
 		</effects>
 	</skill>
 	<skill id="4603" toLevel="12" name="Decrease P. Atk.">
-		<!-- P. Atk. decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases P. Atk. Effect $s1 -->
 		<icon>icon.skill4037</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -319,7 +319,7 @@
 		</effects>
 	</skill>
 	<skill id="4604" toLevel="12" name="Decrease P. Atk.">
-		<!-- P. Atk. decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases P. Atk. Effect $s1 -->
 		<icon>icon.skill4037</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -534,7 +534,7 @@
 		</effects>
 	</skill>
 	<skill id="4606" toLevel="12" name="Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -1481,7 +1481,7 @@
 		</effects>
 	</skill>
 	<skill id="4625" toLevel="12" name="Slow">
-		<!-- Speed decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases Speed. Effect $s1 -->
 		<icon>icon.skill1160</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2624,7 +2624,7 @@
 		</effects>
 	</skill>
 	<skill id="4643" toLevel="12" name="Decrease Speed">
-		<!-- Speed decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases Speed. Effect $s1 -->
 		<icon>icon.skill1160</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2880,7 +2880,7 @@
 		</effects>
 	</skill>
 	<skill id="4649" toLevel="12" name="Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4036</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -4699,7 +4699,7 @@
 		</effects>
 	</skill>
 	<skill id="4679" toLevel="1" name="Valakas">
-		<!-- Vulnerable to water, impervious to fire. -->
+		<!-- One of the six dragon children of Shillien. Valakas is the Fire Dragon who commands hot flames and summons fire storms. After taking severe wounds in the war against the gods, he has hidden away in the Forge of Gods. He is waiting for Shillien's call to end his long slumber. -->
 		<icon>icon.skillboss</icon>
 		<operateType>P</operateType>
 		<magicLevel>110</magicLevel>
@@ -4768,7 +4768,7 @@
 		</effects>
 	</skill>
 	<skill id="4683" toLevel="4" name="Valakas: Dragon Breath">
-		<!-- Deadly fire envelopes your entire body, causing your HP to drop rapidly. -->
+		<!-- You are engulfed in flames and rapidly lose HP. -->
 		<icon>icon.skill4683</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -4796,7 +4796,7 @@
 		</effects>
 	</skill>
 	<skill id="4684" toLevel="4" name="Valakas: Dragon Breath">
-		<!-- Deadly fire envelopes your entire body, causing your HP to drop rapidly. -->
+		<!-- You are engulfed in flames and rapidly lose HP. -->
 		<icon>icon.skill4683</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -4948,7 +4948,7 @@
 		</effects>
 	</skill>
 	<skill id="4689" toLevel="3" name="Valakas: Fear">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>icon.skill4689</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>9</abnormalTime>
@@ -5256,7 +5256,7 @@
 		</effects>
 	</skill>
 	<skill id="4699" toLevel="13" name="Queen's Blessing">
-		<!-- Temporarily increases party members' Critical Rate/ Damage for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases party members' Critical Rate/ Damage for basic attacks. Effect $s1 -->
 		<icon>icon.skill1331</icon>
 		<abnormalLevel>
 			<value level="1">1</value>

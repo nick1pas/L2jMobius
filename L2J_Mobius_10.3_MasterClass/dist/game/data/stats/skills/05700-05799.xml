@@ -317,7 +317,7 @@
 		</effects>
 	</skill>
 	<skill id="5713" toLevel="5" name="Energy Ditch">
-		<!-- Has been given minions' M. Atk. Recovery bonus increased. -->
+		<!-- Increases HP Recovery Rate from your servitor's magic powers. -->
 		<abnormalLevel>
 			<value level="1">1</value>
 			<value level="2">2</value>
@@ -1021,7 +1021,7 @@
 		</effects>
 	</skill>
 	<skill id="5733" toLevel="6" name="Fear of Steward">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -2274,7 +2274,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5761" toLevel="2" name="Power Strike">
-		<!-- Strong pounding attack. -->
+		<!-- A powerful attack. -->
 		<castRange>40</castRange>
 		<effectPoint>-574</effectPoint>
 		<effectRange>400</effectRange>
@@ -2589,14 +2589,14 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5776" toLevel="1" name="Raid Boss">
-		<!-- Lost Warden: Kamaloka - Leader of those who watch over the Labyrinth of the Abyss. He watches over those inside Kamaloka to make sure they properly perform their roles. -->
+		<!-- Lost Warden (Kamaloka) - The leader of those who watch over the Labyrinth of the Abyss. His job is to make sure they properly perform their roles in Kamaloka. -->
 		<icon>icon.skillraid</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="5777" toLevel="1" name="Raid Boss">
-		<!-- Lost Captain: Kamaloka - Leader of those who guard the Labyrinth of the Abyss. They protect Kamaloka from all enemies to try to infiltrate Kamaloka. -->
+		<!-- Lost Captain (Kamaloka) - The leader of those who guard the Labyrinth of the Abyss. They protect Kamaloka from enemies. -->
 		<icon>icon.skillraid</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

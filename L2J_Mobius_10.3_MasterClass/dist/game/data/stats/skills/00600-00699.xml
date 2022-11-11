@@ -123,7 +123,7 @@
 		</effects>
 	</skill>
 	<skill id="609" toLevel="1" name="Residence Movement">
-		<!-- The Speed of clan members in residence increases by 6. -->
+		<!-- Clan members' Speed +6 if your clan owns the clan hall. -->
 		<icon>icon.skill0389</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -395,7 +395,7 @@
 		</effects>
 	</skill>
 	<skill id="619" toLevel="1" name="Cancel Transformation">
-		<!-- Cancels transformation. -->
+		<!-- Cancel Transformation -->
 		<icon>icon.skilltransform2</icon>
 		<effectPoint>10</effectPoint>
 		<hitTime>2500</hitTime>
@@ -583,7 +583,7 @@
 		</effects>
 	</skill>
 	<skill id="626" toLevel="4" name="Critical Sense">
-		<!-- Critical Rate for standard attacks +$s1, Critical Damage for standard attacks +$s2. -->
+		<!-- Critical Rate for basic attacks +$s1, Critical Damage for basic attacks +$s2. -->
 		<icon>icon.skill0312</icon>
 		<magicLevel>
 			<value level="1">43</value>
@@ -1029,7 +1029,7 @@
 		</effects>
 	</skill>
 	<skill id="632" toLevel="6" name="Emergent Ability: Defense">
-		<!-- P. Def. is increased. -->
+		<!-- Increases P. Def. -->
 		<icon>icon.skill0142</icon>
 		<excludedFromCheck>true</excludedFromCheck>
 		<magicLevel>
@@ -1264,7 +1264,7 @@
 		</effects>
 	</skill>
 	<skill id="640" toLevel="1" name="Master Ability: Focus">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<excludedFromCheck>true</excludedFromCheck>
 		<magicLevel>75</magicLevel>
@@ -1369,7 +1369,7 @@
 		</effects>
 	</skill>
 	<skill id="647" toLevel="1" name="Enchanter Ability: Mana Recovery">
-		<!-- Increases MP regeneration. -->
+		<!-- Increases MP Recovery Rate. -->
 		<icon>icon.skill0229</icon>
 		<excludedFromCheck>true</excludedFromCheck>
 		<magicLevel>75</magicLevel>
@@ -1468,7 +1468,7 @@
 				<targetType>SELF</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5574</skillId> <!-- Rogue Ability: Critical Chance -->
+				<skillId>5574</skillId> <!-- Ability: Critical Rate -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -2840,7 +2840,7 @@
 		</effects>
 	</skill>
 	<skill id="697" toLevel="1" name="Sacrifice Wizard">
-		<!-- Sacrifices the character to increase party s M. Atk. Can be used only when MP<10%. The skill cooldown is fixed. -->
+		<!-- Sacrifices the character to increase party's M. Atk. Can be used only when MP<10%. The skill cooldown is fixed. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>

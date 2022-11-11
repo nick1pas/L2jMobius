@@ -106,7 +106,7 @@
 		</effects>
 	</skill>
 	<skill id="45201" toLevel="24" name="Transcendent Power Shot">
-		<!-- A powerful shot. Power $s1. The skill can be used only in the transcendent instance zones. -->
+		<!-- A powerful shot. Power $s1. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0056</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -210,7 +210,7 @@
 		</effects>
 	</skill>
 	<skill id="45202" toLevel="24" name="Transcendent Iron Punch">
-		<!-- Attacks the enemy with $s1 power. The skill can be used only in the transcendent instance zones. -->
+		<!-- Attacks the enemy with $s1 power. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0029</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -315,7 +315,7 @@
 		</effects>
 	</skill>
 	<skill id="45203" toLevel="50" name="Master of Aggression">
-		<!-- Strikes with the sword three times. Attacks the target with $s1 power. Increases power upon consuming Momentum. Ignores $s2 of the target's defense. Critical. The skill can be used only in the transcendent instance zones. -->
+		<!-- <Skill upgrade> Aggression ? Deadly Aggression <Upgrade effect> Aggression power is increased. When Deadly Aggression is used, the character hits themselves for 3 sec. Activates Power of Aggression. <When triggered: Power of Aggression> Received P. Skill Critical Rate $s1 Speed $s2 -->
 		<icon>icon.skill0005</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -501,7 +501,7 @@
 		</effects>
 	</skill>
 	<skill id="45204" toLevel="40" name="Transcendent Triple Sonic Slash">
-		<!-- Uses dual swords to attack the target with $s1 power. Increases power upon consuming Momentum. Ignores defense. Critical. The skill can be used only in the transcendent instance zones. -->
+		<!-- Attacks the target with dual swords. Power $s1. Ignores Shield Defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.skill0261</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -854,7 +854,7 @@
 		</effects>
 	</skill>
 	<skill id="45206" toLevel="55" name="Transcendent Fatal Strike">
-		<!-- A powerful strike. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- A powerful strike. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.skill0190</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -1058,7 +1058,7 @@
 		</effects>
 	</skill>
 	<skill id="45207" toLevel="55" name="Transcendent Deadly Blow">
-		<!-- Attacks the target's vital point. Deals P. damage with $s1 power. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- Attacks the target's vital point. Deals P. damage with $s1 power. Critical. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0263</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -1260,7 +1260,7 @@
 		</effects>
 	</skill>
 	<skill id="45208" toLevel="55" name="Transcendent Burning Fist">
-		<!-- A powerful blow of the flaming fist. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- A powerful blow of the flaming fist. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0280</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -1683,7 +1683,7 @@
 		</effects>
 	</skill>
 	<skill id="45210" toLevel="15" name="Transcendent Lethal Shot">
-		<!-- Shoots with a deadly arrow. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- Shoots a deadly arrow. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0343</icon>
 		<operateType>A1</operateType>
 		<affectLimit>5-12</affectLimit>
@@ -1866,7 +1866,7 @@
 		</effects>
 	</skill>
 	<skill id="45212" toLevel="30" name="Transcendent Tribunal">
-		<!-- Attacks the target with $s1 power. For $s2, the enemy's P. Critical Rate -$s3. Ignores Shield Defense. Ignores $s4 of the target's defense. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.skill0400</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
@@ -2103,7 +2103,7 @@
 		</effects>
 	</skill>
 	<skill id="45213" toLevel="30" name="Transcendent Judgment">
-		<!-- Attacks the target with $s1 power. For $s2, the enemy's P. Critical Damage -$s3. Ignores Shield Defense. Ignores $s4 of the target's defense. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.skill0401</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
@@ -2921,7 +2921,7 @@
 		</effects>
 	</skill>
 	<skill id="45219" toLevel="45" name="Transcendent Hydro Blast">
-		<!-- Strike the enemy with the rush of water. Inflicts magic damage on the enemy with $s1 power. The skill can be used only in the transcendent instance zones. -->
+		<!-- Strikes the enemy with water current. Deals magic damage with $s1 power. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill1235</icon>
 		<castRange>700</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -3180,7 +3180,7 @@
 		</effects>
 	</skill>
 	<skill id="45220" toLevel="45" name="Transcendent Hurricane">
-		<!-- Summons a devastating tornado. Inflicts magic damage on the enemy with $s1 power. The skill can be used only in the transcendent instance zones. -->
+		<!-- Summons a devastating tornado. Inflicts magic damage on the enemy with $s1 power. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill1239</icon>
 		<castRange>700</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -3861,7 +3861,7 @@
 		</effects>
 	</skill>
 	<skill id="45223" toLevel="40" name="Transcendent Twister">
-		<!-- Summons a wind blade. Inflicts magic damage on the enemy with $s1 power. The skill can be used only in the transcendent instance zones. -->
+		<!-- Summons a wind blade. Inflicts magic damage on the enemy with $s1 power. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill1178</icon>
 		<castRange>700</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -4093,7 +4093,7 @@
 		</effects>
 	</skill>
 	<skill id="45224" toLevel="35" name="Transcendent Might of Heaven">
-		<!-- Strikes with holy light. Inflicts magic damage with $s1 power. Deals additional damage to demons and undead. The skill can be used only in the transcendent instance zones. -->
+		<!-- Strikes with holy light. Inflicts magic damage with $s1 power. Deals heavy damage to demons and undead. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill1028</icon>
 		<castRange>600</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -4460,7 +4460,7 @@
 		</effects>
 	</skill>
 	<skill id="45226" toLevel="10" name="Master of Aggression">
-		<!-- Attacks the target with $s1 power. Requires an ancient sword or a two-handed sword. Ignores Shield Defense. Ignores $s2 of the target's defense. Over-hit. The skill can be used only in the transcendent instance zones. -->
+		<!-- <Skill upgrade> Aggression ? Force Aggression <Upgrade effect> Aggression power is increased. When Force Aggression is used, the character hits themselves for 3 sec. Activates Power of Aggression. <When triggered: Power of Aggression> Received P. Skill Critical Damage $s1 Speed $s2 -->
 		<icon>icon.skill0495</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -4537,7 +4537,7 @@
 		</effects>
 	</skill>
 	<skill id="45228" toLevel="8" name="Transcendent Soul Piercing">
-		<!-- <Ultimate skill> Attacks the enemy three times with $s1 power. There is a certain chance to deliver an extra attack. The effect lasts for 10 sec. Target's M. Def. -10% A chance to knock back monsters after an attack Critical. Ignores Shield Defense. Ignores $s2 of the target's defense. The skill can be used only in the transcendent instance zones. -->
+		<!-- <Ultimate skill> Attacks the enemy trice with $s1 power. An additional attack is triggered with a certain chance. For 10 sec. M. Def. -10% Additionally, if the target is a monster, the attacks inflicts Knockback. (Cooldown: 8 sec.) Ignores Shield Defense. Ignores $s2 of the target's defense. Critical The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill0504</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -4625,7 +4625,7 @@
 		</effects>
 	</skill>
 	<skill id="45229" toLevel="8" name="Transcendent Soul Spark">
-		<!-- Deals magic damage to the enemy with $s1 power. The skill can be used only in the transcendent instance zones. -->
+		<!-- Deals magic damage twice to the enemy with $s1 power. The skill can be used only in the transcendent instance zones. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>700</castRange>
@@ -4950,7 +4950,7 @@
 		</effects>
 	</skill>
 	<skill id="45232" toLevel="45" name="Power of Aggression">
-		<!-- <Drain skill> Inflicts magic damage on the target with $s1 power. Absorbs $s2 of the inflicted damage as HP. Can be used only in the transcendent instance zones. -->
+		<!-- Received P. Skill Critical Rate $s1 Speed $s2 -->
 		<icon>icon.skill1234</icon>
 		<castRange>700</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -5209,7 +5209,7 @@
 		</effects>
 	</skill>
 	<skill id="45233" toLevel="15" name="Power of Aggression">
-		<!-- Throws a dagger to hit the enemy with $s1 power. For $s2, Speed -$s3, inflicts Bleed. Requires a dagger. The skill can be used only in the transcendent instance zones. -->
+		<!-- Received P. Skill Critical Damage $s1 Speed $s2 -->
 		<icon>icon.skill19309</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>300</affectRange>
@@ -5381,7 +5381,7 @@
 		</effects>
 	</skill>
 	<skill id="45236" toLevel="2" name="Prophecy of Light">
-		<!-- Max HP $s1 Max MP $s2 P. Def. $s3 M. Def. $s3 Healing Power $s5 Debuff Resistance $s6 Anomaly Resistance $s6 PvE damage $s4 -->
+		<!-- Max HP $s1 Max MP $s2 P. Def. $s3 M. Def. $s3 PvE damage bonus $s4 Healing Power $s5 Debuff Resistance $s6 Anomaly Resistance PvE damage $s6 -->
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
 		<abnormalType>MULTI_BUFF</abnormalType>
@@ -5600,7 +5600,7 @@
 		</effects>
 	</skill>
 	<skill id="45241" toLevel="15" name="Divine Beam">
-		<!-- Purifies with holy light. Inflicts magic damage with $s1 power. When the held enemy is attacked Inflicts an additional attack if Hold is canceled. Deals additional damage to demons and undead. -->
+		<!-- Purifies with holy light. Inflicts magic damage with $s1 power. The skill's power +10% if the target is inflicted with Hold. Deals heavy damage to demons and undead. -->
 		<castRange>700</castRange>
 		<attributeType>HOLY</attributeType>
 		<attributeValue>20</attributeValue>
@@ -5936,12 +5936,12 @@
 		</effects>
 	</skill>
 	<skill id="45244" toLevel="57" name="Deadly Aggression">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Skill with fixed cooldown> Provokes the enemy into attacking you. Power $s1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45245" toLevel="1" name="Machine Assistance">
-		<!-- The effect lasts for $s1 An attack has a certain chance to summon a Mechanic Golem who attacks the enemy. -->
+		<!-- Duration: $s1 With a certain chance after an attack, summons Mechanic Golem to fight by your side. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
 		<abnormalType>MA_UP</abnormalType>
@@ -5984,7 +5984,6 @@
 		</effects>
 	</skill>
 	<skill id="45246" toLevel="1" name="Machine Assistance">
-		<!-- Attacks the enemy. -->
 		<icon>icon.skill0025</icon>
 		<castRange>600</castRange>
 		<effectRange>1000</effectRange>
@@ -6411,7 +6410,7 @@
 		</effects>
 	</skill>
 	<skill id="45251" toLevel="1" name="Powerful Rush">
-		<!-- When the Rush skill is used, the stun effect is added (Cooldown: 20 sec.) Increases a chance to stun the enemy after using the Rush Impact skill (Cooldown: 20 sec.) -->
+		<!-- Enhances distance decrease skills. <Skill upgrade> Rush ? Effective Rush Rush Impact ? Effective Rush Impact <Upgrade effect> Reduces requirements for minimal rush distance of Rush/ Rush Impact. Increases maximum rush distance of the Rush skill. Rush Impact deals critical damage upon attack. Increases a Stun chance upon Rush Impact use. -->
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>76</magicLevel>
@@ -6423,7 +6422,7 @@
 		</effects>
 	</skill>
 	<skill id="45252" toLevel="3" name="Effective Rush">
-		<!-- <Shock skill> Charges into the target. With a certain chance, stuns them. Can be used if the distance between the target and the character is more than $s1. -->
+		<!-- <<font color="FF8000">Rush skill</font>> Charges at the target. Can be used if the distance to the target is more than $s1. -->
 		<icon>icon.skill0493</icon>
 		<operateType>DA2</operateType>
 		<reuseDelay>3000</reuseDelay>
@@ -6477,7 +6476,7 @@
 		</effects>
 	</skill>
 	<skill id="45253" toLevel="3" name="Effective Rush Impact">
-		<!-- <Shock skill> Rushes forward to attack enemies at the front with $s1 power. Stuns them for $s2 Can be used if the distance to the target is more than $s3. -->
+		<!-- <<font color="FF8000">Rush/ shock skill</font>> Rushes forward to attack enemies at the front with $s1 power. Critical. Stuns for $s2 with a certain chance. Can be used if the distance to the target is more than $s3. Note! When used uninterrupted for 3 sec., inflicts the disability effect. When Rush Impact while the disability is active, the character's HP is decreased. Attack's HP Drain is unavailable. -->
 		<icon>icon.skill0793</icon>
 		<castRange>
 			<value level="1">500</value>
@@ -6558,7 +6557,6 @@
 		<operateType>DA1</operateType>
 	</skill>
 	<skill id="45255" toLevel="35" name="Freezing Strike">
-		<!-- Speed -$s1. -->
 		<icon>icon.skill0105</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -6661,7 +6659,6 @@
 		</effects>
 	</skill>
 	<skill id="45256" toLevel="65" name="Bloody Strike">
-		<!-- Constantly drains HP. -->
 		<icon>icon.skill0223</icon>
 		<abnormalLevel>
 			<value level="1">3</value>
@@ -7041,7 +7038,7 @@
 		</effects>
 	</skill>
 	<skill id="45258" toLevel="1" name="Rescuing Fanatic">
-		<!-- Removes Fanatic effect. -->
+		<!-- Removes the Fanatic effect. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45259" toLevel="1" name="Losing Courage/ Frenzy">
@@ -7049,12 +7046,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45260" toLevel="57" name="Force Aggression">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Skill with fixed cooldown> Provokes the enemy into attacking you. Power $s1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45261" toLevel="10" name="Transcendent Divine Strike">
-		<!-- Summons holy light. Inflicts magic damage with $s1 power. Deals additional damage to demons and undead. The skill can be used only in the transcendent instance zones. -->
+		<!-- Summons holy light. Inflicts magic damage with $s1 power. Deals heavy damage to demons and undead. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill1031</icon>
 		<castRange>600</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -7140,7 +7137,7 @@
 		</effects>
 	</skill>
 	<skill id="45262" toLevel="15" name="Transcendent Divine Beam">
-		<!-- Purifies with holy light. Inflicts magic damage with $s1 power. Inflicts an additional attack if Hold is canceled. Deals additional damage to demons and undead. The skill can be used only in the transcendent instance zones. -->
+		<!-- Purifies with holy light. Inflicts magic damage with $s1 power. When attacking enemies with the Hold debuff, the skill's power +10%. Deals heavy damage to demons and undead. The skill can be used only in transcendent instance zones. -->
 		<castRange>700</castRange>
 		<attributeType>HOLY</attributeType>
 		<attributeValue>20</attributeValue>
@@ -7244,7 +7241,7 @@
 		</effects>
 	</skill>
 	<skill id="45263" toLevel="10" name="Knight's Power Lv. 8">
-		<!-- <Drain skill> Inflicts magic damage on the target with $s1 power. Absorbs $s2 of the inflicted damage as HP. Can be used only in the transcendent instance zones. -->
+		<!-- The effect is determined by your P. Def. <P. Def. 19500 - 21999> P. Atk. $s1 -->
 		<castRange>600</castRange>
 		<effectPoint>-100</effectPoint>
 		<effectRange>1000</effectRange>
@@ -7302,7 +7299,7 @@
 		</effects>
 	</skill>
 	<skill id="45264" toLevel="35" name="Knight's Power Lv. 9">
-		<!-- Freezes the air around the enemy. Inflicts damage on the enemy with $s1 power. For 30 sec., the target's Speed -20%. The skill can be used only in the transcendent instance zones. -->
+		<!-- The effect is determined by your P. Def. <P. Def. 22,000-24,999> P. Atk. $s1 -->
 		<icon>icon.skill1236</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -7825,7 +7822,7 @@
 		</effects>
 	</skill>
 	<skill id="45268" toLevel="15" name="Transcendent Spoil Crush">
-		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. Can be used only in the transcendent instance zones. -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.skill0348</icon>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>
@@ -7928,6 +7925,7 @@
 		</effects>
 	</skill>
 	<skill id="45269" toLevel="1" name="Expanded Potential of Dyes">
+		<!-- Activates the 4th slot for patterns that can be applied with dyes. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>76</magicLevel>
 		<operateType>P</operateType>
@@ -7939,12 +7937,12 @@
 		</effects>
 	</skill>
 	<skill id="45270" toLevel="2" name="Knight's Power Lv. 10">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by your P. Def. <P. Def. 25,000+> P. Atk. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45271" toLevel="5" name="Extended Life">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Max HP +$s1 <Stats increase with level> Required level: 85 Stats change depending on level. Max HP +$s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

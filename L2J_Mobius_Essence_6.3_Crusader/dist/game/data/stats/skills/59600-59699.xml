@@ -262,7 +262,6 @@
 		<reuseDelay>3000</reuseDelay>
 	</skill>
 	<skill id="59639" toLevel="1" name="Aden Supply Box">
-		<!-- https://dev.l2central.info/classic/items/91779.html -->
 		<icon>icon.bm_pendant_pve_box</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
@@ -286,64 +285,64 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="2.5">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Tradable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="2.5">
-						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor (Tradable) -->
+						<item id="948" count="1" /> <!-- Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="2.5">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Tradable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="2.5">
-						<item id="6660" count="1" /> <!-- Queen Ant's Ring Lv. 1 -->
+						<item id="6660" count="1" /> <!-- Queen Ant's Ring -->
 					</item>
 					<item chance="2.5">
-						<item id="6661" count="1" /> <!-- rfen's Earring Lv. 1 -->
+						<item id="6661" count="1" /> <!-- Orfen's Earring -->
 					</item>
 					<item chance="2.5">
-						<item id="6662" count="1" /> <!-- Ring of the Core Lv. 1 -->
+						<item id="6662" count="1" /> <!-- Ring of Core -->
 					</item>
 					<item chance="2.5">
-						<item id="8618" count="1" /> <!-- Effects Cell Expansion Book Lv. 1 -->
+						<item id="8618" count="1" /> <!-- Buff Expansion Book Lv. 1 -->
 					</item>
 					<item chance="2.5">
-						<item id="8619" count="1" /> <!-- Effects Cell Expansion Book Lv. 2 -->
+						<item id="8619" count="1" /> <!-- Buff Expansion Book Lv. 2 -->
 					</item>
 					<item chance="2.5">
-						<item id="8620" count="1" /> <!-- Effects Cell Expansion Book Lv. 3 -->
+						<item id="8620" count="1" /> <!-- Buff Expansion Book Lv. 3 -->
 					</item>
 					<item chance="2.5">
-						<item id="8621" count="1" /> <!-- Effects Cell Expansion Book Lv. 4 -->
+						<item id="8621" count="1" /> <!-- Buff Expansion Book Lv. 4 -->
 					</item>
 					<item chance="2.5">
-						<item id="49471" count="1" /> <!-- Fire Dragon Pendant Chest -->
+						<item id="49471" count="1" /> <!-- Fire Dragon Pendant Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="49472" count="1" /> <!-- Earth Dragon Pendant Chest -->
+						<item id="49472" count="1" /> <!-- Earth Dragon Pendant Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="49580" count="1" /> <!-- Baium's Ring Lv. 1 -->
+						<item id="49580" count="1" /> <!-- Baium's Ring -->
 					</item>
 					<item chance="2.5">
-						<item id="49664" count="1" /> <!-- Weapon Chest - Grade B -->
+						<item id="49664" count="1" /> <!-- B-grade Weapon Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="49665" count="1" /> <!-- Armor Chest (B-grade) -->
+						<item id="49665" count="1" /> <!-- B-grade Armor Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="49667" count="1" /> <!-- Weapon Chest (C-grade) -->
+						<item id="49667" count="1" /> <!-- C-grade Weapon Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="49674" count="1" /> <!-- Exp Scroll -->
+						<item id="49674" count="1" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="2.5">
-						<item id="49683" count="1" /> <!-- Baium's Talisman -->
+						<item id="49683" count="1" /> <!-- Talisman of Baium -->
 					</item>
 					<item chance="2.5">
 						<item id="49790" count="1" /> <!-- +16 C-grade Weapon Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="90137" count="1" /> <!-- Matte Hanging Varnish -->
+						<item id="90137" count="1" /> <!-- Matte Pendant Polish -->
 					</item>
 					<item chance="2.5">
 						<item id="90496" count="1" /> <!-- Earth Dragon Belt -->
@@ -352,13 +351,13 @@
 						<item id="90497" count="1" /> <!-- Fire Dragon Belt -->
 					</item>
 					<item chance="2.5">
-						<item id="90703" count="1" /> <!-- Sealed Rune Lv. 10 -->
+						<item id="90703" count="1" /> <!-- Sealed Soul Crystal Lv. 10 -->
 					</item>
 					<item chance="2.5">
-						<item id="90763" count="1" /> <!-- Zaken's Earring Lv. 1 -->
+						<item id="90763" count="1" /> <!-- Zaken's Earring -->
 					</item>
 					<item chance="2.5">
-						<item id="90992" count="1" /> <!-- Antharas' Earring Lv. 1 -->
+						<item id="90992" count="1" /> <!-- Antharas' Earring -->
 					</item>
 					<item chance="2.5">
 						<item id="91031" count="1" /> <!-- Water Spirit Evolution Stone -->
@@ -373,37 +372,37 @@
 						<item id="91034" count="1" /> <!-- Earth Spirit Evolution Stone -->
 					</item>
 					<item chance="2.5">
-						<item id="91113" count="1" /> <!-- Old Inventory Expansion Coupon Lv. 1 -->
+						<item id="91113" count="1" /> <!-- Old Inventory Expansion Ticket Lv. 1 -->
 					</item>
 					<item chance="2.5">
-						<item id="91114" count="1" /> <!-- Old Inventory Expansion Coupon Lv. 2 -->
+						<item id="91114" count="1" /> <!-- Old Inventory Expansion Ticket Lv. 2 -->
 					</item>
 					<item chance="2.5">
-						<item id="91115" count="1" /> <!-- Old Inventory Expansion Coupon Lv. 3 -->
+						<item id="91115" count="1" /> <!-- Old Inventory Expansion Ticket Lv. 3 -->
 					</item>
 					<item chance="2.5">
-						<item id="91148" count="1" /> <!-- Gem Box Lv. 5 -->
+						<item id="91148" count="1" /> <!-- Jewel Box Lv. 5 -->
 					</item>
 					<item chance="2.5">
 						<item id="91216" count="1" /> <!-- +16 B-grade Weapon Pack -->
 					</item>
 					<item chance="2.5">
-						<item id="91296" count="1" /> <!-- Old Inventory Expansion Coupon Lv. 4 -->
+						<item id="91296" count="1" /> <!-- Old Inventory Expansion Ticket Lv. 4 -->
 					</item>
 					<item chance="2.5">
-						<item id="91297" count="1" /> <!-- Old Inventory Expansion Coupon Lv. 5 -->
+						<item id="91297" count="1" /> <!-- Old Inventory Expansion Ticket Lv. 5 -->
 					</item>
 					<item chance="2.5">
-						<item id="91741" count="1" /> <!-- Einhasad's Patronage - Event -->
+						<item id="91741" count="1" /> <!-- Einhasad's Protection - Sealed -->
 					</item>
 					<item chance="2.5">
-						<item id="91767" count="1" /> <!-- Enchant Set: Talisman of Aden -->
+						<item id="91767" count="1" /> <!-- Enchant Kit: Talisman of Aden - Sealed -->
 					</item>
 					<item chance="2.5">
-						<item id="91780" count="1" /> <!-- Scroll of Battle -->
+						<item id="91780" count="1" /> <!-- Old Battle Scroll - Sealed -->
 					</item>
 					<item chance="2.5">
-						<item id="91781" count="1" /> <!-- Sayha's Effects Scroll -->
+						<item id="91781" count="1" /> <!-- Old Sayha's Buff Scroll - Sealed -->
 					</item>
 				</items>
 			</effect>

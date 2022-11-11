@@ -294,7 +294,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="9320" toLevel="1" name="PA - Black Bear Bracelet">
-		<!-- Mount Black Bear. -->
+		<!-- Allows to mount Black Bear. -->
 		<icon>icon.skilltransform3</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -508,7 +508,7 @@
 		</effects>
 	</skill>
 	<skill id="9332" toLevel="1" name="Drum Melody - Enhanced Cocktail">
-		<!-- For PA. For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. PA only. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -716,7 +716,7 @@
 		</effects>
 	</skill>
 	<skill id="9336" toLevel="1" name="Harp Melody - Enhanced Cocktail">
-		<!-- For PA. For 60 min., P. Accuracy +5, P./ M. Evasion +5, and Speed +34. Received Critical Damage from standard attacks -30%. -->
+		<!-- For 60 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage from basic attacks -30%. PA only. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1005,22 +1005,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="35">
-						<item id="30381" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="30381" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="15">
-						<item id="30382" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="30382" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="21">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="9">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="14">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="6">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 				</items>
 			</effect>
@@ -1136,7 +1136,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="0.47">
-						<item id="34691" count="1" /> <!-- Hair Accessory Pack -->
+						<item id="34691" count="1" /> <!-- Head Accessory Pack -->
 					</item>
 					<item chance="0.01">
 						<item id="34692" count="1" /> <!-- Pendant Pack -->
@@ -1154,28 +1154,28 @@
 						<item id="32735" count="1" /> <!-- A-grade Enchant Scroll Box -->
 					</item>
 					<item chance="0.18">
-						<item id="32730" count="1" /> <!-- S-grade Enchant Scroll Pack -->
+						<item id="32730" count="1" /> <!-- S-grade Enchant Scroll Box -->
 					</item>
 					<item chance="0.08">
 						<item id="32731" count="1" /> <!-- R-grade Enchant Scroll Box -->
 					</item>
 					<item chance="35">
-						<item id="32738" count="1" /> <!-- D-grade Elixir Pack -->
+						<item id="32738" count="1" /> <!-- D-grade Elixir Box -->
 					</item>
 					<item chance="16.35">
-						<item id="32739" count="1" /> <!-- C-grade Elixir Pack -->
+						<item id="32739" count="1" /> <!-- C-grade Elixir Box -->
 					</item>
 					<item chance="12.07">
-						<item id="32740" count="1" /> <!-- B-grade Elixir Pack -->
+						<item id="32740" count="1" /> <!-- B-grade Elixir Box -->
 					</item>
 					<item chance="9.69">
-						<item id="32741" count="1" /> <!-- A-grade Elixir Pack -->
+						<item id="32741" count="1" /> <!-- A-grade Elixir Box -->
 					</item>
 					<item chance="8.17">
 						<item id="32736" count="1" /> <!-- S-grade Elixir Box -->
 					</item>
 					<item chance="4.77">
-						<item id="32737" count="1" /> <!-- R-grade Elixir Pack -->
+						<item id="32737" count="1" /> <!-- R-grade Elixir Box -->
 					</item>
 					<item chance="10.1">
 						<item id="34693" count="1" /> <!-- Attribute Stone Fragment Box -->
@@ -1198,10 +1198,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="4.16">
-						<item id="34694" count="1" /> <!-- Hero's Lucky Enchant Stone Pack -->
+						<item id="34694" count="1" /> <!-- Hero's Enchant Stone Pack -->
 					</item>
 					<item chance="1.56">
-						<item id="34695" count="1" /> <!-- Hero's Destruction Enchant Scroll Pack -->
+						<item id="34695" count="1" /> <!-- Hero's Pack: Destruction Scroll -->
 					</item>
 					<item chance="6.23">
 						<item id="34696" count="1" /> <!-- Hero's Blessed Enchant Scroll Pack -->
@@ -1233,7 +1233,7 @@
 		</conditions>
 	</skill>
 	<skill id="9348" toLevel="1" name="PA - Mount: Black Bear">
-		<!-- Mount Black Bear. -->
+		<!-- Allows to mount Black Bear. -->
 		<icon>icon.skilltransform3</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -1370,7 +1370,7 @@
 		</effects>
 	</skill>
 	<skill id="9357" toLevel="1" name="Party Hat - P. Critical Rate">
-		<!-- Critical Rate for standard attacks +50. -->
+		<!-- Critical Rate for basic attacks +50. -->
 		<icon>icon.accessory_party_hat_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1383,7 +1383,7 @@
 		</effects>
 	</skill>
 	<skill id="9358" toLevel="1" name="Party Hat - Critical Damage">
-		<!-- Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<icon>icon.accessory_party_hat_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1548,7 +1548,7 @@
 		</effects>
 	</skill>
 	<skill id="9369" toLevel="2" name="Power of Maphr">
-		<!-- Enchant success rate +$s1. Not for No-grade items. -->
+		<!-- Enchant success rate +$s1 from the current rate. Maximum value: 3%. Cannot be used for No-grade items. -->
 		<icon>icon.pi_shirt_of_wolf_2nd_earth</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1673,7 +1673,7 @@
 		</conditions>
 	</skill>
 	<skill id="9376" toLevel="1" name="Knight's Harmony - Mentor">
-		<!-- For 2 h., mentee's P. Atk. +12%, Critical Damage for standard attacks +35%, Critical Rate for standard attacks +100%, P. Def. +45%, Shield Defense Rate +30%, and Shield Defense +50%. Effect remains for 5 min. after the mentor goes offline. -->
+		<!-- For 2 h., a mentee's P. Atk. +12%, Critical Damage for basic attacks +35%, Critical Rate for basic attacks +100%, P. Def. +45%, Shield Defense Rate +30%, Shield Defense +50%. The effect is active for 5 min. after the mentor goes offline. -->
 		<icon>icon.skill11523</icon>
 		<operateType>A2</operateType>
 		<mpConsume>140</mpConsume>
@@ -1698,7 +1698,7 @@
 		</conditions>
 	</skill>
 	<skill id="9377" toLevel="1" name="Wizard's Harmony - Mentor">
-		<!-- For 2 h., the selected mentee's M. Atk. +40%, M. Skill Critical Rate +100%, Atk. Spd./ Casting Spd. +8%, P. Atk. +8%, M. Def. +14%, MP Recovery Rate +20%, M. Skill MP Consumption -15%, P. Skill MP Consumption -5%, Song/ Dance MP Consumption -5%, Skill Cooldown -20%. The effect is active for 5 min. after the mentor goes offline. -->
+		<!-- For 2 h., a mentee's M. Atk. +40%, M. Skill Critical Rate +100%, Casting Spd. +8%, P. Atk. +8%, Atk. Spd. +8%, M. Def. +14%, MP Recovery Rate +20%, M. Skill MP Consumption -15%, P. Skill MP Consumption -5%, Song/ Dance MP Consumption -5%, Skill Cooldown -20%. The effect is active for 5 min. after the mentor goes offline. -->
 		<icon>icon.skill11525</icon>
 		<operateType>A2</operateType>
 		<mpConsume>140</mpConsume>
@@ -1723,7 +1723,7 @@
 		</conditions>
 	</skill>
 	<skill id="9378" toLevel="1" name="Warrior's Harmony - Mentor">
-		<!-- For 2 h., mentee's P. Atk. +35%, Critical Damage for standard attacks +35%, Critical Rate for standard attacks +100%, Atk. Spd./ Casting Spd. +8%, M. Atk. +16%. The effect is active for 5 min. after the mentor goes offline. -->
+		<!-- For 2 h., a mentee's P. Atk. +35%, Critical Damage for basic attacks +35%, Critical Rate for basic attacks +100%, Atk. Spd. +8%, M. Atk. +16%, Casting Spd. +8%. The effect is active for 5 min. after the mentor goes offline. -->
 		<icon>icon.skill11524</icon>
 		<operateType>A2</operateType>
 		<mpConsume>140</mpConsume>

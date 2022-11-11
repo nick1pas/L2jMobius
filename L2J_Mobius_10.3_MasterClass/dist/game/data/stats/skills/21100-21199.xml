@@ -40,7 +40,7 @@
 		</effects>
 	</skill>
 	<skill id="21101" toLevel="1" name="Blessed Escape">
-		<!-- Allows the use of Blessed Escape. Cooldown is 12 h. -->
+		<!-- Enables the Blessed Escape skill. Cooldown: 12 h. -->
 		<icon>BranchSys.icon.br_babypanda_cap_i00</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>200</hitTime>
@@ -174,7 +174,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1530</npcId> <!-- Lucky Boy Agathion -->
+				<npcId>1530</npcId> <!-- Agathion Bang -->
 			</effect>
 		</effects>
 	</skill>
@@ -247,7 +247,7 @@
 		</effects>
 	</skill>
 	<skill id="21111" toLevel="1" name="Great Adventurer's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Max HP by 20%, Max MP by 20%, and Speed by 20%. receives the soul's help to increase Debuff Resistance by 10%. Cooldown is 1 h. -->
+		<!-- For 5 min., Max HP +20%, Max MP +20%, Speed +20%, HP Recovery Rate +20%, Debuff Resistance +10%. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_headphone_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -285,7 +285,7 @@
 		</effects>
 	</skill>
 	<skill id="21112" toLevel="1" name="Brave Warrior's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Cooldown is 1 h. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%. Absorbs 5% of the inflicted melee physical damage as HP. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_headphone_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -362,7 +362,7 @@
 		</effects>
 	</skill>
 	<skill id="21114" toLevel="1" name="Great Adventurer's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Max HP by 20%, Max MP by 20%, and Speed by 20%. receives the soul's help to increase Debuff Resistance by 10%. Cooldown is 1 h. -->
+		<!-- For 5 min., Max HP +20%, Max MP +20%, Speed +20%, HP Recovery Rate +20%, Debuff Resistance +10%. Cooldown: 1 h. -->
 		<icon>BranchSys.Icon.br_spirit_skill_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -400,7 +400,7 @@
 		</effects>
 	</skill>
 	<skill id="21115" toLevel="1" name="Brave Warrior's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. Cooldown is 1 h. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%. Absorbs 5% of the inflicted melee physical damage as HP. Cooldown: 1 h. -->
 		<icon>BranchSys.Icon.br_spirit_skill_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -477,7 +477,7 @@
 		</effects>
 	</skill>
 	<skill id="21117" toLevel="1" name="Great Adventurer's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Max HP by 20%, Max MP by 20%, and Speed by 20%. receives the soul's help to increase HP Recovery Bonus by 20% and MP Recovery Bonus by 20%. Cooldown is 1 h. -->
+		<!-- For 5 min., Max HP +20%, Max MP +20%, Speed +20%, HP Recovery Rate +20%, MP Recovery Rate +20%. Cooldown: 1 h. -->
 		<icon>BranchSys.Icon.br_spirit_skill_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -519,7 +519,7 @@
 		</effects>
 	</skill>
 	<skill id="21118" toLevel="1" name="Brave Warrior's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Increases P. Critical Damage and P. Critical Rate by 20%. Cooldown is 1 h. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%, Critical Damage +20%, Critical Rate +20%. Cooldown: 1 h. -->
 		<icon>BranchSys.Icon.br_spirit_skill_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -561,7 +561,7 @@
 		</effects>
 	</skill>
 	<skill id="21119" toLevel="1" name="Great Wizard's Soul Power">
-		<!-- For 5 min., receives the soul's help to increase Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. receives the soul's help to increase the power of Prominent Damage through magic damage by 20% and the chance of prominent damage occurring through magic damage by 2. Cooldown is 1 h. -->
+		<!-- For 5 min., Casting Spd. +20%, M. Atk. +20%, M. Def. +20%, M. Critical Damage +20%, M. Critical Rate +2. Cooldown: 1 h. -->
 		<icon>BranchSys.Icon.br_spirit_skill_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -603,7 +603,7 @@
 		</effects>
 	</skill>
 	<skill id="21120" toLevel="1" name="Jack O'Lantern Card">
-		<!-- Jack's game Skill -->
+		<!-- Jack's Game Skill -->
 		<icon>BranchSys.icon.br_jack_ghost_i00</icon>
 		<castRange>400</castRange>
 		<effectPoint>-1</effectPoint>
@@ -618,7 +618,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21121" toLevel="1" name="Rotten Jack O'Lantern Card">
-		<!-- Jack's game Skill -->
+		<!-- Jack's Game Skill -->
 		<icon>BranchSys.icon.br_rotten_jack_ghost_i00</icon>
 		<castRange>400</castRange>
 		<effectPoint>-1</effectPoint>
@@ -853,7 +853,7 @@
 		</effects>
 	</skill>
 	<skill id="21127" toLevel="1" name="Halloween Blessing">
-		<!-- For 1 h., increases Max HP by 40% and Max MP by 40%. Increases Atk. Spd. by 20% and P. Atk. by 10%. Increases Dark Resistance by 20. Cooldown is 2 h. -->
+		<!-- For 1 h., Max HP/ MP +40%, Atk. Spd. +20%, P. Atk. +10%, Dark Resistance +20. Cooldown: 2 h. -->
 		<icon>icon.skill1528</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1509,7 +1509,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1560</npcId> <!-- Blue Opera Agathion -->
+				<npcId>1560</npcId> <!-- Agathion Blue Opera -->
 			</effect>
 		</effects>
 	</skill>
@@ -1543,7 +1543,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1555</npcId> <!-- Opera Agathion -->
+				<npcId>1555</npcId> <!-- Agathion Beijing Opera -->
 			</effect>
 		</effects>
 	</skill>
@@ -1560,7 +1560,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1556</npcId> <!-- Agathion Miss Chipao -->
+				<npcId>1556</npcId> <!-- Agathion Miss Qipao -->
 			</effect>
 		</effects>
 	</skill>
@@ -1616,7 +1616,7 @@
 		</effects>
 	</skill>
 	<skill id="21152" toLevel="1" name="Large Firecracker">
-		<!-- Sets off firecrackers. Cooldown is 5 min. -->
+		<!-- Launches a firecracker. -->
 		<icon>BranchSys.icon.br_rocket_cap_i00</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>1</magicLevel>
@@ -1629,7 +1629,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21153" toLevel="1" name="Blessed Body">
-		<!-- Increases Max HP by 25% for 20 min. Cooldown is 1 h. -->
+		<!-- For 20 min., Max HP +25%. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_party_hat_gold_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1655,7 +1655,7 @@
 		</effects>
 	</skill>
 	<skill id="21154" toLevel="1" name="Blessed Soul">
-		<!-- Increases Max MP by 25% for 20 min. Cooldown is 1 h. -->
+		<!-- For 20 min., Max MP +25%. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_party_hat_mask_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1681,7 +1681,7 @@
 		</effects>
 	</skill>
 	<skill id="21155" toLevel="1" name="Scent of Flavorful Cheese">
-		<!-- For 5 min., receives the soul's help to increase Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Increases P. Critical Damage and P. Critical Rate by 20%. Cooldown is 1 h. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%, Critical Damage +20%, Critical Rate +20%. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_bigrat_cap_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -1723,7 +1723,7 @@
 		</effects>
 	</skill>
 	<skill id="21156" toLevel="1" name="Scent of Sweet Cheese">
-		<!-- For 5 min., receives the soul's help to increase Casting Spd. by 20%, M. Atk. by 20%, and M. Def. by 20%. Increases the power of Prominent Damage through magic damage by 20% and the chance of prominent damage occurring through magic damage by 2. Cooldown is 1 h. -->
+		<!-- For 5 min., Casting Spd. +20%, M. Atk. +20%, M. Def. +20%, M. Critical Damage +20%, M. Critical Rate +2. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_goldrat_cap_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -1994,7 +1994,7 @@
 		</effects>
 	</skill>
 	<skill id="21170" toLevel="1" name="Blessed Soul">
-		<!-- Increases Max MP by 25% for 20 min. Cooldown is 1 h. -->
+		<!-- For 20 min., Max MP +25%. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_party_mask_purple_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2050,7 +2050,7 @@
 		</effects>
 	</skill>
 	<skill id="21172" toLevel="1" name="Reinforced Authority - CON +1/ STR +1">
-		<!-- By enhance authority, CON +1/ STR +1 for 2 min. Consumes 240 energy. Cooldown 3 min. -->
+		<!-- For 2 min., CON +1, STR +1. Consumes 240 Vitality points. Cooldown: 3 min. -->
 		<icon>BranchSys2.icon.br_soulavatar_stat_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2077,7 +2077,7 @@
 		</conditions>
 	</skill>
 	<skill id="21173" toLevel="1" name="Reinforced Authority - WIT +1/ INT +1">
-		<!-- By enhance authority, WIT +1/ INT +1 for 2 min. Consumes 240 energy. Cooldown 3 min. -->
+		<!-- For 2 min., WIT +1, INT +1. Consumes 240 Vitality points. Cooldown: 3 min. -->
 		<icon>BranchSys2.icon.br_soulavatar_stat_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2104,7 +2104,7 @@
 		</conditions>
 	</skill>
 	<skill id="21174" toLevel="1" name="Reinforced Authority - WIT +1/ MEN +1">
-		<!-- By enhance authority, WIT +1/ MEN +1 for 2 min. Consumes 240 energy. Cooldown 3 min. -->
+		<!-- For 2 min., WIT +1, MEN +1. Consumes 240 Vitality points. Cooldown: 3 min. -->
 		<icon>BranchSys2.icon.br_soulavatar_stat_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2131,7 +2131,7 @@
 		</conditions>
 	</skill>
 	<skill id="21175" toLevel="1" name="Reinforced Authority - CON +1/ DEX +1">
-		<!-- By enhance authority, CON +1/ DEX +1 for 2 min. Consumes 240 energy. Cooldown 3 min. -->
+		<!-- For 2 min., CON +1, DEX +1. Consumes 240 Vitality points. Cooldown: 3 min. -->
 		<icon>BranchSys2.icon.br_soulavatar_stat_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>

@@ -193,7 +193,7 @@
 		</effects>
 	</skill>
 	<skill id="5203" toLevel="12" name="Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -269,7 +269,7 @@
 		</effects>
 	</skill>
 	<skill id="5206" toLevel="1" name="Decrease Speed">
-		<!-- Curse of mutated animals: Speed decreases momentarily. Effect 1. -->
+		<!-- Curse of mutated animals: Decreases Speed. Effect 1. -->
 		<icon>icon.skill1160</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -300,7 +300,7 @@
 		</effects>
 	</skill>
 	<skill id="5207" toLevel="1" name="Decrease Atk. Spd.">
-		<!-- Curse of mutated animals: Atk. Spd. decreases momentarily. Effect 1. -->
+		<!-- Curse of mutated animals: Decreases Atk. Spd. Effect 1. -->
 		<icon>icon.skill4038</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -402,7 +402,7 @@
 		</effects>
 	</skill>
 	<skill id="5211" toLevel="1" name="Vampiric Rage (Event)">
-		<!-- Uses damage inflicted upon the enemy to temporarily restore HP with a certain probability. Effect 4. -->
+		<!-- With a certain chance, absorbs some of the inflicted damage as HP. Effect 4. -->
 		<icon>icon.skill1268</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -426,7 +426,7 @@
 		</effects>
 	</skill>
 	<skill id="5212" toLevel="1" name="Regeneration (Event)">
-		<!-- HP recovery bonus is increased for a fixed time. Effect 3. -->
+		<!-- Temporarily increases HP Recovery Rate. Effect 3. -->
 		<icon>icon.skill1044</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -711,7 +711,7 @@
 		</effects>
 	</skill>
 	<skill id="5225" toLevel="1" name="Invincibility">
-		<!-- Invincible against general attack and skill, buff/ de-buff. -->
+		<!-- Makes you invincible to basic attacks, skills, buffs and debuffs. -->
 		<icon>icon.skill1427</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -772,7 +772,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5227" toLevel="2" name="Ground Strike">
-		<!-- Powerful attack on surrounding area. -->
+		<!-- A powerful attack on nearby targets. -->
 		<affectRange>300</affectRange>
 		<effectPoint>-100</effectPoint>
 		<hitTime>3000</hitTime>
@@ -801,7 +801,7 @@
 		</effects>
 	</skill>
 	<skill id="5228" toLevel="2" name="Jump Attack">
-		<!-- Powerful attack on surrounding area. -->
+		<!-- A powerful attack on nearby targets. -->
 		<affectRange>200</affectRange>
 		<effectPoint>-100</effectPoint>
 		<hitTime>3000</hitTime>
@@ -966,7 +966,7 @@
 		</effects>
 	</skill>
 	<skill id="5233" toLevel="1" name="Weight Spin Attack - Weak">
-		<!-- Powerful attack on surrounding area. -->
+		<!-- A powerful attack on nearby targets. -->
 		<affectRange>300</affectRange>
 		<effectPoint>-100</effectPoint>
 		<hitTime>5000</hitTime>
@@ -984,7 +984,7 @@
 		</effects>
 	</skill>
 	<skill id="5234" toLevel="1" name="Weight Spin Attack - Mid">
-		<!-- Powerful attack on surrounding area. -->
+		<!-- A powerful attack on nearby targets. -->
 		<affectRange>300</affectRange>
 		<effectPoint>-100</effectPoint>
 		<hitTime>3000</hitTime>
@@ -1002,7 +1002,7 @@
 		</effects>
 	</skill>
 	<skill id="5235" toLevel="1" name="Weight Spin Attack - Strong">
-		<!-- Powerful attack on surrounding area. -->
+		<!-- A powerful attack on nearby targets. -->
 		<affectRange>300</affectRange>
 		<effectPoint>-100</effectPoint>
 		<hitTime>2000</hitTime>
@@ -1602,7 +1602,7 @@
 		</effects>
 	</skill>
 	<skill id="5251" toLevel="12" name="Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -2109,7 +2109,7 @@
 		</effects>
 	</skill>
 	<skill id="5259" toLevel="12" name="Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -2178,7 +2178,7 @@
 		</effects>
 	</skill>
 	<skill id="5260" toLevel="12" name="Disarm">
-		<!-- Disarmed. -->
+		<!-- You are disarmed. -->
 		<icon>icon.skill0485</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>

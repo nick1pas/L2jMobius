@@ -227,7 +227,7 @@
 		</effects>
 	</skill>
 	<skill id="16610" toLevel="1" name="Helios' Grand Plasma">
-		<!-- Range attack skill -->
+		<!-- Creates a powerful electrical surge dealing magic damage to the target and nearby enemies. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>2500</castRange>
@@ -323,7 +323,7 @@
 		</effects>
 	</skill>
 	<skill id="16613" toLevel="1" name="Audience with Emperor Helios">
-		<!-- Reduced Speed. -->
+		<!-- Decreases Speed. -->
 		<icon>icon.skill16612</icon>
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -381,7 +381,7 @@
 		</effects>
 	</skill>
 	<skill id="16615" toLevel="1" name="Helios Plasma Wall">
-		<!-- A rectangular barrier or electricity is formed around a range target, dealing powerful magic damage and 25% Mana Burn. -->
+		<!-- Creates a rectangular-shaped wall of electricity dealing magic damage to enemies at a distance. Mana Burn effect +25%. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<reuseDelay>10000</reuseDelay>
@@ -477,7 +477,7 @@
 		</effects>
 	</skill>
 	<skill id="16618" toLevel="1" name="Enuma Elish - Blue Lightning">
-		<!-- Helios throws the Blue Lightning Spear, dealing great damage to the target and nearby enemies, and knocking them down. -->
+		<!-- Helios' blue lightning deals a lot of damage to the target and nearby enemies, consuming their MP. -->
 		<icon>icon.skill16618</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>5</abnormalLevel>
@@ -514,7 +514,7 @@
 		</effects>
 	</skill>
 	<skill id="16619" toLevel="1" name="Stigma of Deterioration">
-		<!-- Unable to receive Resurrection effects after death. Additional damage is received at regular intervals. -->
+		<!-- You are unable to resurrect after dying and receive damage over time. -->
 		<icon>icon.skill1181</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -524,7 +524,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16620" toLevel="1" name="Stigma of Lightning">
-		<!-- Unable to receive Resurrection effects after death. P./ M. Def. dropped. -->
+		<!-- You are unable to resurrect after dying, and your P./ M. Def. is decreased. -->
 		<icon>icon.skill0048</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -562,7 +562,7 @@
 		</effects>
 	</skill>
 	<skill id="16622" toLevel="1" name="Helios' Bionic Bomb">
-		<!-- A range target is targeted using a bionic bomb. For 5 sec., an explosion of light is caused around the target at each tick, dealing great magic damage. -->
+		<!-- The target becomes a living bomb. For 5 sec. with every step they make, explosive light deals a lot of magic damage to the target and nearby enemies. -->
 		<icon>icon.skill11030</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -625,7 +625,7 @@
 		</effects>
 	</skill>
 	<skill id="16624" toLevel="1" name="Shield of Light - Pranarach (100%)">
-		<!-- Pranarach Shield of Light is summoned -->
+		<!-- Summons the Shield of Light that prevents you from dealing more than 100 damage. -->
 		<icon>icon.skill16624</icon>
 		<operateType>A2</operateType>
 		<hitTime>5000</hitTime>
@@ -768,7 +768,7 @@
 		</effects>
 	</skill>
 	<skill id="16629" toLevel="1" name="Leopold Bomb">
-		<!-- Leopold's cannon is fired to the target, dealing strong magic damage. -->
+		<!-- Fires Leopold's cannon that deals a lot of magic damage to the target. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<castRange>3500</castRange>
@@ -816,7 +816,7 @@
 		</effects>
 	</skill>
 	<skill id="16631" toLevel="1" name="Leopold Energy Bomb">
-		<!-- Powerful magic damage is dealt to the target and enemies in range, with a 30% Mana Burn effect. -->
+		<!-- Deals a lot of magic damage to the target and nearby enemies. Mana Burn effect 30%. -->
 		<operateType>A1</operateType>
 		<castRange>3500</castRange>
 		<hitTime>7000</hitTime>
@@ -842,7 +842,7 @@
 		</effects>
 	</skill>
 	<skill id="16632" toLevel="1" name="Leopold Mini Gun">
-		<!-- Strong magic damage is dealt to the target. -->
+		<!-- Deals a lot of magic damage to the target. -->
 		<operateType>A1</operateType>
 		<castRange>1200</castRange>
 		<hitTime>1000</hitTime>
@@ -923,7 +923,7 @@
 		</effects>
 	</skill>
 	<skill id="16635" toLevel="1" name="Enuma Elish Shot">
-		<!-- A spear of light is thrown toward the target to deal great physical damage. -->
+		<!-- Throws a spear of light at the target dealing a lot of physical damage. -->
 		<operateType>A1</operateType>
 		<castRange>1200</castRange>
 		<hitTime>1500</hitTime>
@@ -972,7 +972,7 @@
 		</effects>
 	</skill>
 	<skill id="16637" toLevel="1" name="Origin Lightning Harpoon">
-		<!-- A harpoon of light is thrown at the target, dealing great physical damage and reducing P. Def. and Magic Resistance. -->
+		<!-- Deals a lot of physical damage with the light attack. Decreases P./ M. Def. -->
 		<icon>icon.skill0279</icon>
 		<operateType>A2</operateType>
 		<castRange>1200</castRange>

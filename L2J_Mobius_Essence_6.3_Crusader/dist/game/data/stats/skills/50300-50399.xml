@@ -104,7 +104,7 @@
 		</effects>
 	</skill>
 	<skill id="50306" toLevel="1" name="Gloves of Silence">
-		<!-- Gloves imbued with power of silence. Has a $s1 chance to silence the target making unable to use skills for $s2. -->
+		<!-- Gloves imbued with the energy of silence. <Force of Silence> With a $s1 chance, inflicts Silence on the target making them unable to use skills for $s2 -->
 		<icon>icon.armor_t94_g_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -151,7 +151,7 @@
 		</effects>
 	</skill>
 	<skill id="50307" toLevel="10" name="+1 Gloves of Silence">
-		<!-- Gloves imbued with power of silence. Has a $s1 chance to silence the target making unable to use skills for $s2. -->
+		<!-- Gloves imbued with the energy of silence. <Force of Silence> With a $s1 chance, inflicts Silence on the target making them unable to use skills for $s2 -->
 		<icon>icon.armor_t94_g_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -311,7 +311,7 @@
 		</effects>
 	</skill>
 	<skill id="50309" toLevel="6" name="Gloves of Silence: When triggered">
-		<!-- Has a certain chance to deal magic damage with $s1 power and decrease the target's MP. -->
+		<!-- With a certain chance, deals magic damage with $s1 power, decreasing the target's MP. -->
 		<icon>icon.armor_t94_g_i01</icon>
 		<castRange>900</castRange>
 		<effectPoint>-300</effectPoint>
@@ -354,7 +354,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50311" toLevel="10" name="Enchant Effect: A-grade Shield">
-		<!-- <Shield's enchant effect> Shield Defense +$s1 All received Critical Rate -$s2 Max HP +$s3 -->
+		<!-- <Enchanted shield effect> Shield Defense +$s1 Received P./ M. Critical Rate -$s2 Max HP +$s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -737,7 +737,6 @@
 		</effects>
 	</skill>
 	<skill id="50326" toLevel="1" name="Summon Agathion Ignis">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<hitTime>3000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -754,7 +753,6 @@
 		</effects>
 	</skill>
 	<skill id="50327" toLevel="1" name="Summon Agathion Nebula">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<hitTime>3000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -771,7 +769,6 @@
 		</effects>
 	</skill>
 	<skill id="50328" toLevel="1" name="Summon Agathion Procella">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<hitTime>3000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -788,7 +785,6 @@
 		</effects>
 	</skill>
 	<skill id="50329" toLevel="1" name="Summon Agathion Petram">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<hitTime>3000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -839,7 +835,7 @@
 		</effects>
 	</skill>
 	<skill id="50331" toLevel="1" name="Ice Crystal Breastplate">
-		<!-- A breastplate imbued with energy. <Frozen Blessing> When hit, there is a $s1 chance to reflect $s3 of the received damage back to the enemy for $s2 (Cooldown: 60 sec.) <Freezing Paralysis> When hit, there is a $s4 chance to freeze and paralyze the enemy for $s5 -->
+		<!-- A breastplate imbued with the freezing energy. <Frozen Blessing> With a $s1 chance when hit, reflects $s3 of the received damage back to the enemy for $s2 (Cooldown: 60 sec.) <Freezing Paralysis> With a $s4 chance when hit, freezes and paralyzes the enemy for $s5 -->
 		<icon>icon.armor_t94_u_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -886,7 +882,7 @@
 		</effects>
 	</skill>
 	<skill id="50332" toLevel="10" name="+1 Ice Crystal Breastplate">
-		<!-- A breastplate imbued with energy. <Frozen Blessing> When hit, there is a $s1 chance to reflect $s3 of the received damage back to the enemy for $s2 (Cooldown: 60 sec.) <Freezing Paralysis> When hit, there is a $s4 chance to freeze and paralyze the enemy for $s5 -->
+		<!-- A breastplate imbued with the freezing energy. <Frozen Blessing> With a $s1 chance when hit, reflects $s3 of the received damage back to the enemy for $s2 (Cooldown: 60 sec.) <Freezing Paralysis> With a $s4 chance when hit, freezes and paralyzes the enemy for $s5 -->
 		<icon>icon.armor_t94_u_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1077,7 +1073,7 @@
 		</effects>
 	</skill>
 	<skill id="50334" toLevel="1" name="Ice Crystal Gaiters">
-		<!-- Gaiters imbued with energy. <Freezing Affect> After an attack, with a $s1 chance, enemy's Speed $s3, Atk. Spd./ Casting Spd. $s4, P./ M. Def. $s5 for $s2. -->
+		<!-- Gaiters imbued with the freezing energy. <Freezing Affect> With a $s1 chance after an attack, for $s2: the enemy's Speed $s3, Atk. Spd./ Casting Spd. $s4, P./ M. Def. $s5 -->
 		<icon>icon.armor_t94_l_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1104,7 +1100,7 @@
 		</effects>
 	</skill>
 	<skill id="50335" toLevel="10" name="+1 Ice Crystal Gaiters">
-		<!-- Gaiters imbued with energy. <Freezing Affect> After an attack, with a $s1 chance, enemy's Speed $s3, Atk. Spd./ Casting Spd. $s4, P./ M. Def. $s5 for $s2. -->
+		<!-- Gaiters imbued with the freezing energy. <Freezing Affect> With a $s1 chance after an attack, for $s2: the enemy's Speed $s3, Atk. Spd./ Casting Spd. $s4, P./ M. Def. $s5 -->
 		<icon>icon.armor_t94_l_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1359,7 +1355,7 @@
 		</effects>
 	</skill>
 	<skill id="50339" toLevel="1" name="Cloak of Protection">
-		<!-- Max HP +3%, Max MP +3% Bow Resistance +1%. -->
+		<!-- A long-wearing cloak that protects the whole body. <Effect> Max HP +$s1 Max MP +$s1 Bow Resistance +$s2 -->
 		<icon>icon.bm_2018_sayha_cloak_back_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1377,16 +1373,7 @@
 		</effects>
 	</skill>
 	<skill id="50340" toLevel="10" name="+1 Cloak of Protection">
-		<!-- +1 Max HP +4%, Max MP +4% Bow Resistance +1%. -->
-		<!-- +2 Max HP +5%, Max MP +5% Bow Resistance +2%, Acquired XP +3%, Acquired SP +3%. -->
-		<!-- +3 Max HP +6%, Max MP +6% Bow Resistance +2%, Acquired XP +5%, Acquired SP +5%. -->
-		<!-- +4 Max HP +7%, Max MP +7% Bow Resistance +3%, Acquired XP +7%, Acquired SP +7%, P. Def. +2%, M. Def. +2%. -->
-		<!-- +5 Max HP +9%, Max MP +9% Bow Resistance +3%, Acquired XP +10%, Acquired SP +10%, P. Def. +4%, M. Def. +4%. -->
-		<!-- +6 Max HP +11%, Max MP +11% Bow Resistance +4%, Acquired XP +15%, Acquired SP +15%, P. Def. +6%, M. Def. +6%. -->
-		<!-- +7 Max HP +13%, Max MP +13% Bow Resistance +6%, Acquired XP +20%, Acquired SP +20%, P. Def. +8%, M. Def. +8%, All Critical Damage +5%. -->
-		<!-- +8 Max HP +15%, Max MP +15% Bow Resistance +9%, Acquired XP +25%, Acquired SP +25%, P. Def. +10%, M. Def. +10%, All Critical Damage +7%, All received Critical Rate -3%, All recived Critical Damage -3%. -->
-		<!-- +9 Max HP +18%, Max MP +18% Bow Resistance +12%, Acquired XP +30%, Acquired SP +30%, P. Def. +12%, M. Def. +12%, All Critical Damage +10%, All received Critical Rate -5%, All recived Critical Damage -5%. -->
-		<!-- +10 Max HP +20%, Max MP +20% Bow Resistance +15%, Acquired XP +30%, Acquired SP +30%, P. Def. +15%, M. Def. +15%, All Critical Damage +15%, All received Critical Rate -10%, All recived Critical Damage -10%. -->
+		<!-- A long-wearing cloak that protects the whole body. <Effect> Max HP +$s1 Max MP +$s1 Bow Resistance +$s2 -->
 		<icon>icon.bm_2018_sayha_cloak_back_i01</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1615,7 +1602,7 @@
 		</effects>
 	</skill>
 	<skill id="50342" toLevel="1" name="Invocation">
-		<!-- For $s1, HP Recovery Rate +$s2, MP Recovery Rate +$s3, Speed +$s4. -->
+		<!-- Recovers HP/ MP over time. Speed +33 -->
 		<icon>icon.skill1430</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -1658,7 +1645,7 @@
 		</effects>
 	</skill>
 	<skill id="50344" toLevel="1" name="Leather Armor of Lightning">
-		<!-- Leather armor imbued with energy. <Electric Defense> With a $s1 chance, P./ M. Def. +$s3 for $s2, when hit. (Cooldown: 600 sec.) <Electric Shock> A $s4 chance to strike the enemy with electricity and paralyze them for $s5, when hit. -->
+		<!-- Leather armor imbued with the energy of lightning. <Electric Defense> With a $s1 chance, P./ M. Def. $s3 for $s2, when hit. (Cooldown: 600 sec.) <Electric Shock> With a $s4 chance, strikes the enemy with electricity and paralyzes them for $s5, when hit. -->
 		<icon>icon.armor_t101_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1705,7 +1692,7 @@
 		</effects>
 	</skill>
 	<skill id="50345" toLevel="10" name="+1 Leather Armor of Lightning">
-		<!-- Leather armor imbued with energy. <Electric Defense> With a $s1 chance, P./ M. Def. +$s3 for $s2, when hit. (Cooldown: 600 sec.) <Electric Shock> A $s4 chance to strike the enemy with electricity and paralyze them for $s5, when hit. -->
+		<!-- Leather armor imbued with the energy of lightning. <Electric Defense> With a $s1 chance, P./ M. Def. $s3 for $s2, when hit. (Cooldown: 600 sec.) <Electric Shock> With a $s4 chance, strikes the enemy with electricity and paralyzes them for $s5, when hit. -->
 		<icon>icon.armor_t101_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1891,7 +1878,7 @@
 		</effects>
 	</skill>
 	<skill id="50347" toLevel="1" name="Leather Leggings of Lightning">
-		<!-- Leather leggings imbued with energy. <Electric Disorder> With a $s1 chance after an attack, the target's all received Critical Damage +$s3, all received Critical Rate +$s4 for $s2 -->
+		<!-- Leather leggings imbued with the energy of lightning. <Electric Disorder> With a $s1 chance after an attack for $s2: the target's all received Critical Damage $s3, all received Critical Rate +$s4. -->
 		<icon>icon.armor_t101_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1918,7 +1905,7 @@
 		</effects>
 	</skill>
 	<skill id="50348" toLevel="10" name="+1 Leather Leggings of Lightning">
-		<!-- Leather leggings imbued with energy. <Electric Disorder> With a $s1 chance after an attack, the target's all received Critical Damage +$s3, all received Critical Rate +$s4 for $s2 -->
+		<!-- Leather leggings imbued with the energy of lightning. <Electric Disorder> With a $s1 chance after an attack for $s2: the target's all received Critical Damage $s3, all received Critical Rate +$s4. -->
 		<icon>icon.armor_t101_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2028,7 +2015,7 @@
 		</effects>
 	</skill>
 	<skill id="50349" toLevel="7" name="Electric Disorder">
-		<!-- The target's all received Critical Damage $s1 All received Critical Rate $s2 -->
+		<!-- All received Critical Damage $s1 All received Critical Rate $s2 -->
 		<icon>icon.skill1482</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2652,7 +2639,7 @@
 		</effects>
 	</skill>
 	<skill id="50358" toLevel="1" name="Flaming Stockings">
-		<!-- Stockings imbued with energy of Fire Archer. <Flame Weakness> With a $s1 chance after an attack, enemy's P./ M. Atk. -$s3, P./ M. Accuracy -$s4 for $s2. -->
+		<!-- Stockings imbued with the flaming energy. <Flame Weakness> With a $s1 chance after an attack for $s2: the enemy's P./ M. Atk. -$s3, P./ M. Accuracy -$s4. -->
 		<icon>icon.armor_t96_l_i03</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2679,7 +2666,7 @@
 		</effects>
 	</skill>
 	<skill id="50359" toLevel="10" name="+1 Flaming Stockings">
-		<!-- Stockings imbued with energy of Fire Archer. <Flame Weakness> With a $s1 chance after an attack, enemy's P./ M. Atk. -$s3, P./ M. Accuracy -$s4 for $s2. -->
+		<!-- Stockings imbued with the flaming energy. <Flame Weakness> With a $s1 chance after an attack for $s2: the enemy's P./ M. Atk. -$s3, P./ M. Accuracy -$s4. -->
 		<icon>icon.armor_t96_l_i03</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2835,7 +2822,7 @@
 		</effects>
 	</skill>
 	<skill id="50362" toLevel="7" name="Flame Weakness">
-		<!-- P. Atk. $s1 M. Atk. $s1 P. Accuracy $s2M. Accuracy $s2 -->
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Accuracy $s2 M. Accuracy $s2 -->
 		<icon>icon.skilm_mystery_bloodl0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2911,12 +2898,12 @@
 		</effects>
 	</skill>
 	<skill id="50363" toLevel="1" name="Glorious Circlet">
-		<!-- A special circlet for Olympiad Heros. <Stat Boost> STR +3 DEX +3 CON +3 INT +3 WIT +3 MEN +3 -->
+		<!-- A special circlet given only to Olympiad Heros. <Stat bonus> STR +3 DEX +3 CON +3 INT +3 WIT +3 MEN +3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50364" toLevel="1" name="Death Knight's Flame Sword">
-		<!-- A death knight's sword imbued with cursed energy of Valakas and hidden power of flame. <Special effects> Death Absorption: has a certain chance to absorb enemy's HP after an attack. Stigma of Death: casts a flame sword symbol that extends time of debuffs by 2 times. Flame of Eternity: attacks the enemy with power of raging flame. Death Fire: attacks the enemy with power of flame imbued with death energy. <Stat Boost> CON +$s1 MEN +$s1 DEX +$s1 WIT +$s1 STR +$s1 INT +$s1 -->
+		<!-- A Death Knight's flame sword cursed by Valakas. <Stat bonus> STR +$s1 INT +$s1 DEX +$s1 WIT +$s1 CON +$s1 MEN +$s1 Uses devastating fire to deal <font color="FFBB00">an additional attack</font>. Death Fire: a fire attack according to M. Atk. Flame of Eternity: a powerful fire attack according to M. Atk. <Special effects> Death Absorption: drains enemy's HP. Stigma of Death: duration of debuffs from the fire sword mark +100%. -->
 		<icon>icon.fire_sword_aden</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2987,7 +2974,7 @@
 		</effects>
 	</skill>
 	<skill id="50365" toLevel="10" name="+1 Death Knight's Flame Sword">
-		<!-- A death knight's sword imbued with cursed energy of Valakas and hidden power of flame. <Special effects> Death Absorption: has a certain chance to absorb enemy's HP after an attack. Stigma of Death: casts a flame sword symbol that extends time of debuffs by 2 times. Flame of Eternity: attacks the enemy with power of raging flame. Death Fire: attacks the enemy with power of flame imbued with death energy. <Stat Boost> CON +$s1 MEN +$s1 DEX +$s1 WIT +$s1 STR +$s1 INT +$s1 -->
+		<!-- A Death Knight's flame sword cursed by Valakas. <Stat bonus> STR +$s1 INT +$s1 DEX +$s1 WIT +$s1 CON +$s1 MEN +$s1 Uses devastating fire to deal <font color="FFBB00">an additional attack</font>. Death Fire: a fire attack according to M. Atk. Flame of Eternity: a powerful fire attack according to M. Atk. <Special effects> Death Absorption: drains enemy's HP. Stigma of Death: duration of debuffs from the fire sword mark +100%. -->
 		<icon>icon.fire_sword_aden</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3190,12 +3177,12 @@
 		</effects>
 	</skill>
 	<skill id="50366" toLevel="22" name="Flame of Eternity">
-		<!-- Attacks the enemy with power of raging flame. Deals magical damage with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Attacks the enemy with power of raging flame. Deals magical damage with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50367" toLevel="22" name="Death Fire">
-		<!-- Attacks the enemy with power of flame imbued with death energy. Deals magical damage with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Attacks the enemy with power of flame imbued with death energy. Deals magical damage with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -3244,7 +3231,7 @@
 		</effects>
 	</skill>
 	<skill id="50372" toLevel="1" name="Aden's Bow">
-		<!-- <Level Bonus Effect> P./ M. Atk. are increased depending on level. <Lv. 40-49> P. Atk. +33 M. Atk. +10 <Lv. 50-59> P. Atk. +63 M. Atk. +19 <Lv. 60-64> P. Atk. +96 M. Atk. +29 <Lv. 65-69> P. Atk. +129 M. Atk. +38 <Lv. 70-74> P. Atk. +159 M. Atk. +47 <Lv. 75+> P. Atk. +192 M. Atk. +57 -->
+		<!-- <Level bonus effect> P./ M. Atk. are increased depending on your level. <Lv. 40-49> P. Atk. +33 M. Atk. +10 <Lv. 50-59> P. Atk. +63 M. Atk. +19 <Lv. 60-64> P. Atk. +96 M. Atk. +29 <Lv. 65-69> P. Atk. +129 M. Atk. +38 <Lv. 70-74> P. Atk. +159 M. Atk. +47 <Lv. 75+> P. Atk. +192 M. Atk. +57 -->
 		<icon>icon.weapon_gastraphetes_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3261,7 +3248,7 @@
 		</effects>
 	</skill>
 	<skill id="50373" toLevel="1" name="Aden's Club">
-		<!-- <Level Bonus Effect> P./ M. Atk. are increased depending on level. <Lv. 40-49> P. Atk. +17 M. Atk. +10 <Lv. 50-59> P. Atk. +33 M. Atk. +20 <Lv. 60-64> P. Atk. +51 M. Atk. +31 <Lv. 65-69> P. Atk. +68 M. Atk. +41 <Lv. 70-74> P. Atk. +84 M. Atk. +51 <Lv. 75+> P. Atk. +101 M. Atk. +61 -->
+		<!-- <Level bonus effect> P./ M. Atk. are increased depending on your level. <Lv. 40-49> P. Atk. +17 M. Atk. +10 <Lv. 50-59> P. Atk. +33 M. Atk. +20 <Lv. 60-64> P. Atk. +51 M. Atk. +31 <Lv. 65-69> P. Atk. +68 M. Atk. +41 <Lv. 70-74> P. Atk. +84 M. Atk. +51 <Lv. 75+> P. Atk. +101 M. Atk. +61 -->
 		<icon>icon.weapon_war_pick_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3278,7 +3265,7 @@
 		</effects>
 	</skill>
 	<skill id="50374" toLevel="1" name="Aden's Two-handed Sword">
-		<!-- <Level Bonus Effect> P./ M. Atk. are increased depending on level. <Lv. 40-49> P. Atk. +21 M. Atk. +10 <Lv. 50-59> P. Atk. +41 M. Atk. +20 <Lv. 60-64> P. Atk. +62 M. Atk. +31 <Lv. 65-69> P. Atk. +83 M. Atk. +41 <Lv. 70-74> P. Atk. +103 M. Atk. +51 <Lv. 75+> P. Atk. +124 M. Atk. +61 -->
+		<!-- <Level bonus effect> P./ M. Atk. are increased depending on your level. <Lv. 40-49> P. Atk. +21 M. Atk. +10 <Lv. 50-59> P. Atk. +41 M. Atk. +20 <Lv. 60-64> P. Atk. +62 M. Atk. +31 <Lv. 65-69> P. Atk. +83 M. Atk. +41 <Lv. 70-74> P. Atk. +103 M. Atk. +51 <Lv. 75+> P. Atk. +124 M. Atk. +61 -->
 		<icon>icon.weapon_flamberge_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3419,7 +3406,7 @@
 		</effects>
 	</skill>
 	<skill id="50381" toLevel="1" name="Helmet of Mana">
-		<!-- A helmet imbued with the energy of Mana. <Benefits of Wisdom> A $s1 chance to recover $s2 MP after an attack (Cooldown: 5 sec.) -->
+		<!-- A helmet imbued with the energy of Mana. <Benefits of Wisdom> With a $s1 chance, recovers $s2 MP after an attack. (Cooldown: 5 sec.) -->
 		<icon>icon.armor_leather_helmet_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3433,7 +3420,7 @@
 		</effects>
 	</skill>
 	<skill id="50382" toLevel="10" name="+1 Helmet of Mana">
-		<!-- A helmet imbued with the energy of Mana. <Benefits of Wisdom> A $s1 chance to recover $s2 MP after an attack (Cooldown: 5 sec.) -->
+		<!-- A helmet imbued with the energy of Mana. <Benefits of Wisdom> With a $s1 chance, recovers $s2 MP after an attack. (Cooldown: 5 sec.) -->
 		<icon>icon.armor_leather_helmet_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3548,7 +3535,7 @@
 		</effects>
 	</skill>
 	<skill id="50383" toLevel="1" name="Benefits of Wisdom">
-		<!-- When using a standard attack or skill, immediately recovers $s1 MP. -->
+		<!-- When using a basic attack or skill, immediately recovers $s1 MP. -->
 		<icon>icon.skill0000</icon>
 		<reuseDelay>5000</reuseDelay>
 		<operateType>A1</operateType>
@@ -3592,7 +3579,7 @@
 		</effects>
 	</skill>
 	<skill id="50385" toLevel="1" name="Boots of Evasion">
-		<!-- Boots imbued with energy of evasion. <Swift Evasion> When damage is taken, with a $s1 chance P./ M. Skill Evasion +70%, P./ M. Evasion +45 for $s2. The effect disappears after $s3 hit(s). (Cooldown: 60 sec.) -->
+		<!-- Boots imbued with the energy of evasion. <Swift Evasion> With a $s1 chance when hit, for $s2: Skill Evasion +70% P./ M. Evasion +45 Active for $s3 hits. (Cooldown: 60 sec.) -->
 		<icon>icon.armor_t100_b_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3618,7 +3605,7 @@
 		</effects>
 	</skill>
 	<skill id="50386" toLevel="10" name="+1 Boots of Evasion">
-		<!-- Boots imbued with energy of evasion. <Swift Evasion> When damage is taken, with a $s1 chance P./ M. Skill Evasion +70%, P./ M. Evasion +45 for $s2. The effect disappears after $s3 hit(s). (Cooldown: 60 sec.) -->
+		<!-- Boots imbued with the energy of evasion. <Swift Evasion> With a $s1 chance when hit, for $s2: Skill Evasion +70% P./ M. Evasion +45 Active for $s3 hits. (Cooldown: 60 sec.) -->
 		<icon>icon.armor_t100_b_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3670,7 +3657,7 @@
 		</effects>
 	</skill>
 	<skill id="50387" toLevel="1" name="Swift Evasion">
-		<!-- P./ M. Skill Evasion +$s1, P./ M. Evasion +$s2. The effect disappears after $s3 hit(s) on the character. -->
+		<!-- Skill Evasion $s1 P./ M. Evasion $s2 Disappears after the 5th hit. -->
 		<icon>icon.skill1087</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -3703,12 +3690,11 @@
 		</effects>
 	</skill>
 	<skill id="50388" toLevel="1" name="Pet Test Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50389" toLevel="1" name="Circlet of Hero">
-		<!-- Circlet of Hero effect Max HP +$s1 Max MP +$s1 Max CP +$s1 P. Def. +$s2 M. Def. +$s2 Received damage -$s2 -->
+		<!-- Max HP +$s1 Max MP +$s1 Max CP +$s1 P. Def. +$s2 M. Def. +$s2 Received damage -$s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3743,7 +3729,7 @@
 		</effects>
 	</skill>
 	<skill id="50390" toLevel="10" name="+1 Circlet of Hero">
-		<!-- Circlet of Hero enchant effect Max HP +$s1 Max MP +$s1 Max CP +$s1 P. Def. +$s2 M. Def. +$s2 Received damage -$s2 -->
+		<!-- Max HP +$s1 Max MP +$s1 Max CP +$s1 P. Def. +$s2 M. Def. +$s2 Received damage -$s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3931,7 +3917,7 @@
 		</effects>
 	</skill>
 	<skill id="50391" toLevel="7" name="Fatal Critical Strike">
-		<!-- P./ M. Skill Critical Damage +$s1. -->
+		<!-- Skill Critical Damage $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>8</abnormalTime>
@@ -4039,7 +4025,7 @@
 		</effects>
 	</skill>
 	<skill id="50397" toLevel="1" name="Weapon Blessing Effect">
-		<!-- Skill Critical Rate +1%. -->
+		<!-- Skill Critical Rate +1% -->
 		<icon>icon.bless_effect_base</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -4056,7 +4042,7 @@
 		</effects>
 	</skill>
 	<skill id="50398" toLevel="1" name="Weapon Blessing Effect">
-		<!-- Skill Critical Rate +1%. -->
+		<!-- Skill Critical Rate +1% -->
 		<icon>icon.bless_effect_base</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>

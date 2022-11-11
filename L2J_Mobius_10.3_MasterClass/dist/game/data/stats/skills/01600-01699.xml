@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="1600" toLevel="1" name="Soul Instinct">
-		<!-- For 15 sec., P./ M. Atk., Critical Rate for standard attacks, M. Skill Critical Rate +50%, Atk. Spd. and Casting Spd. +20%. The skill cooldown is fixed. -->
+		<!-- For 15 sec., P. Atk./ Critical Rate for basic attacks/ M. Atk./ M. Skill Critical Rate +50%, Atk. Spd./ Casting Spd. +20%. The skill cooldown is fixed. -->
 		<icon>icon.skill1600</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -133,7 +133,7 @@
 		</effects>
 	</skill>
 	<skill id="1630" toLevel="1" name="Focus">
-		<!-- Critical Rate/ Damage for standard attacks +100%. -->
+		<!-- Critical Rate/ Damage for basic attacks +100%. -->
 		<icon>icon.skill1077</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -159,7 +159,7 @@
 		</effects>
 	</skill>
 	<skill id="1631" toLevel="1" name="Absolute Defense">
-		<!-- Monster s absolute defense. P./ M. Def. +5000. -->
+		<!-- Monster's absolute defense. P./ M. Def. +5000. -->
 		<icon>icon.skill0110</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -703,7 +703,7 @@
 		</effects>
 	</skill>
 	<skill id="1651" toLevel="1" name="Melee Weapon Resistance">
-		<!-- Resistant to melee weapon attacks. -->
+		<!-- Increases resistance to melee attacks. -->
 		<icon>icon.skill4071</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -956,7 +956,7 @@
 		</effects>
 	</skill>
 	<skill id="1663" toLevel="1" name="Berserker">
-		<!-- Triples Atk. Spd. for 1 min. -->
+		<!-- For 1 min., increases Atk. Spd. by 3 times. -->
 		<icon>icon.skill1092</icon>
 		<operateType>A2</operateType>
 		<mpConsume>2</mpConsume>
@@ -1021,7 +1021,7 @@
 		</effects>
 	</skill>
 	<skill id="1666" toLevel="1" name="Cancel">
-		<!-- Cancels one or several of the target's buffs. -->
+		<!-- Removes one or several of the target's buffs. -->
 		<icon>icon.skill1056</icon>
 		<operateType>A1</operateType>
 		<mpConsume>2</mpConsume>
@@ -1230,7 +1230,7 @@
 		</effects>
 	</skill>
 	<skill id="1675" toLevel="1" name="Brutality">
-		<!-- P. Atk., Critical Rate/ Damage for standard attacks, Atk. Spd. +100%. -->
+		<!-- P. Atk., Critical Rate/ Damage for basic attacks, Atk. Spd. +100%. -->
 		<icon>icon.skill1068</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -1405,7 +1405,7 @@
 		</effects>
 	</skill>
 	<skill id="1682" toLevel="1" name="Aggression">
-		<!-- Hostile stare full of rage! Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Hostile stare full of rage!. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill0028</icon>
 		<operateType>A2</operateType>
 		<castRange>400</castRange>
@@ -1792,7 +1792,7 @@
 		</effects>
 	</skill>
 	<skill id="1699" toLevel="1" name="Blink">
-		<!-- Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- . Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1448</icon>
 		<operateType>A2</operateType>
 		<mpConsume>2</mpConsume>

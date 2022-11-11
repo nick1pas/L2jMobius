@@ -552,7 +552,7 @@
 		</effects>
 	</skill>
 	<skill id="2311" toLevel="1" name="Scroll: Death Whisper (Event)">
-		<!-- Increases Critical Damage for standard attacks. Effect 3. -->
+		<!-- Increases Critical Damage for basic attacks. Effect 3. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -575,7 +575,7 @@
 		</effects>
 	</skill>
 	<skill id="2312" toLevel="1" name="Scroll: Focus (Event)">
-		<!-- Increases Critical Rate for standard attacks. Effect 3. -->
+		<!-- Increases Critical Rate for basic attacks. Effect 3. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -851,7 +851,7 @@
 						<item id="9198" count="1" /> <!-- Shadow Item: Teddy Bear Hat - Firecracker -->
 					</item>
 					<item chance="6.6">
-						<item id="9153" count="3" /> <!-- Scroll: Might - Event -->
+						<item id="9153" count="3" /> <!-- Scroll: Might (Event) -->
 					</item>
 					<item chance="6.6">
 						<item id="9146" count="3" /> <!-- Scroll: Guidance (Event) -->
@@ -2210,7 +2210,7 @@
 		</effects>
 	</skill>
 	<skill id="2372" toLevel="1" name="Transformation Scroll: Doom Wraith">
-		<!-- Transforms into a Doom Wraith. -->
+		<!-- Transformed into Doom Wraith. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2239,7 +2239,7 @@
 		</effects>
 	</skill>
 	<skill id="2373" toLevel="1" name="Transformation Scroll: Grail Apostle">
-		<!-- Transforms into an Grail Apostle. -->
+		<!-- Transformed into Grail Apostle. -->
 		<icon>icon.skilltransform2</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2269,7 +2269,7 @@
 		</effects>
 	</skill>
 	<skill id="2374" toLevel="1" name="Transformation Scroll: Unicorn">
-		<!-- Transforms into a Unicorn. -->
+		<!-- Transformed into Unicorn. -->
 		<icon>icon.skilltransform2</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2299,7 +2299,7 @@
 		</effects>
 	</skill>
 	<skill id="2375" toLevel="1" name="Transformation Scroll: Lilim Knight">
-		<!-- Transforms into a Lilim Knight. -->
+		<!-- Transformed into Lilim Knight. -->
 		<icon>icon.skilltransform2</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2329,7 +2329,7 @@
 		</effects>
 	</skill>
 	<skill id="2376" toLevel="1" name="Transformation Scroll: Golem Guardian">
-		<!-- Transforms into a Golem Guardian. -->
+		<!-- Transformed into Golem Guardian. -->
 		<icon>icon.skilltransform2</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2359,7 +2359,7 @@
 		</effects>
 	</skill>
 	<skill id="2377" toLevel="1" name="Transformation Scroll: Inferno Drake">
-		<!-- Transforms into an Inferno Drake. -->
+		<!-- Transformed into Inferno Drake. -->
 		<icon>icon.skilltransform2</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2607,7 +2607,7 @@
 		</effects>
 	</skill>
 	<skill id="2388" toLevel="1" name="Focus">
-		<!-- Increases Critical Rate for standard attacks. Effect 1. -->
+		<!-- Increases Critical Rate for basic attacks. Effect 1. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2801,7 +2801,7 @@
 		</effects>
 	</skill>
 	<skill id="2395" toLevel="1" name="Combat HP Replenishing Potion">
-		<!-- Restores HP. -->
+		<!-- Recovers HP. -->
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>

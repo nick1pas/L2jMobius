@@ -852,7 +852,7 @@
 		</effects>
 	</skill>
 	<skill id="5530" toLevel="12" name="Blood Storm">
-		<!-- Deals damage and inflicts bleed on the target. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Deals damage and inflicts bleed on the target. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1005,7 +1005,7 @@
 		</conditions>
 	</skill>
 	<skill id="5538" toLevel="1" name="Agathion Little Angel's Special Skill: Firecrackers">
-		<!-- Set off firecrackers. -->
+		<!-- Launches a firecracker. -->
 		<icon>icon.skill_agathion_special</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>85</magicLevel>
@@ -1017,7 +1017,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5539" toLevel="1" name="Agathion Little Angel's Special Skill: Mysterious Power">
-		<!-- Mysterious power with no explanation. Be careful when using! -->
+		<!-- An unknown power. Use with caution! -->
 		<icon>icon.skill_agathion_special</icon>
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -1036,7 +1036,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5540" toLevel="1" name="Agathion Little Angel's Special Skill: Blessed Escape Power">
-		<!-- Blessed Escape is available. -->
+		<!-- Enables the Blessed Escape skill. -->
 		<icon>icon.skill_agathion_special</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>200</hitTime>
@@ -1058,7 +1058,7 @@
 		</effects>
 	</skill>
 	<skill id="5541" toLevel="1" name="Agathion Little Angel's Special Skill: Blessed Resurrection Power">
-		<!-- Blessed Resurrection is available. -->
+		<!-- Enables the Blessed Resurrection skill. -->
 		<icon>icon.skill_agathion_special</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<castRange>400</castRange>
@@ -1082,7 +1082,7 @@
 		</effects>
 	</skill>
 	<skill id="5542" toLevel="1" name="Little Devil Agathion Special Skill: Firecrackers">
-		<!-- Set off firecrackers. -->
+		<!-- Launches a firecracker. -->
 		<icon>icon.skill_agathion_special</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>85</magicLevel>
@@ -1094,7 +1094,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5543" toLevel="1" name="Little Devil Agathion Special Skill: Mysterious Power">
-		<!-- Mysterious power with no explanation. Be careful when using! -->
+		<!-- An unknown power. Use with caution! -->
 		<icon>icon.skill_agathion_special</icon>
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -1113,7 +1113,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5544" toLevel="1" name="Little Devil Agathion Special Skill: Blessed Escape">
-		<!-- Blessed Escape is available. -->
+		<!-- Enables the Blessed Escape skill. -->
 		<icon>icon.skill_agathion_special</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>200</hitTime>
@@ -1135,7 +1135,7 @@
 		</effects>
 	</skill>
 	<skill id="5545" toLevel="1" name="Little Devil Agathion Special Skill: Blessed Resurrection">
-		<!-- Blessed Resurrection is available. -->
+		<!-- Enables the Blessed Resurrection skill. -->
 		<icon>icon.skill_agathion_special</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<castRange>400</castRange>
@@ -1280,7 +1280,7 @@
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5551</skillId> <!-- Stun -->
+				<skillId>5551</skillId> <!-- Shock -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -1489,7 +1489,7 @@
 		</effects>
 	</skill>
 	<skill id="5556" toLevel="1" name="Protection Power">
-		<!-- M. Def. and Attribute Resistance are maximized. -->
+		<!-- Increases M. Def. and Attribute Resistance. -->
 		<icon>icon.skill0755</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -1537,7 +1537,7 @@
 		</effects>
 	</skill>
 	<skill id="5557" toLevel="1" name="Blessing of Resistance">
-		<!-- M. Def. and Attribute Resistance are maximized. -->
+		<!-- Increases M. Def. and Attribute Resistance. -->
 		<icon>icon.skill0755</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -1569,7 +1569,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5559" toLevel="1" name="Physical Pose">
-		<!-- Critical Rate for standard attacks and P. Skill Power are increased. -->
+		<!-- Critical Rate for basic attacks and P. Skill Power are increased. -->
 		<icon>icon.skill0758</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -1613,7 +1613,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5561" toLevel="3" name="Seed of Revenge">
-		<!-- The growing seed of revenge. P. Atk. increases. -->
+		<!-- The seed of revenge is growing. Increases P. Atk. -->
 		<icon>
 			<value level="1">icon.skill0761</value>
 			<value level="2">icon.skill0761_2</value>
@@ -1749,7 +1749,7 @@
 		</effects>
 	</skill>
 	<skill id="5563" toLevel="3" name="Eva's Will">
-		<!-- The growing will of Eva. Increases M. Def. -->
+		<!-- Eva's will is growing. Increases M. Def. -->
 		<icon>
 			<value level="1">icon.skill0786</value>
 			<value level="2">icon.skill0786_2</value>
@@ -1813,7 +1813,7 @@
 		</effects>
 	</skill>
 	<skill id="5564" toLevel="3" name="Pain of Shillien">
-		<!-- Shillien's Growing Pain. Increases Critical Damage for standard attacks. -->
+		<!-- Shillien's growing pain. Increases Critical Damage for basic attacks. -->
 		<icon>
 			<value level="1">icon.skill0788</value>
 			<value level="2">icon.skill0788_2</value>
@@ -1873,7 +1873,7 @@
 		</effects>
 	</skill>
 	<skill id="5565" toLevel="1" name="Expose Vulnerability">
-		<!-- Decreases Received P. Critical Rate when the talisman is equipped. -->
+		<!-- Decreases received Critical Rate from basic attacks, when the talisman is equipped. -->
 		<icon>icon.skill0767</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1988,7 +1988,7 @@
 		</effects>
 	</skill>
 	<skill id="5570" toLevel="1" name="Excessive Loyalty">
-		<!-- Summoner's Wrath. -->
+		<!-- Summoner's rage. -->
 		<icon>icon.skill1497</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
@@ -2095,7 +2095,7 @@
 		</effects>
 	</skill>
 	<skill id="5574" toLevel="1" name="Ability: Critical Rate">
-		<!-- Instantly increases Critical Rate for standard attacks. -->
+		<!-- Momentarily increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -2522,7 +2522,7 @@
 		</effects>
 	</skill>
 	<skill id="5588" toLevel="3" name="Pet Focus">
-		<!-- Temporarily increases Critical Rate for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases Critical Rate for basic attacks. Effect $s1 -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2573,7 +2573,7 @@
 		</effects>
 	</skill>
 	<skill id="5589" toLevel="3" name="Pet Death Whisper">
-		<!-- Temporarily increases Critical Damage for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases Critical Damage for basic attacks. Effect $s1 -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2624,7 +2624,7 @@
 		</effects>
 	</skill>
 	<skill id="5590" toLevel="12" name="Pet Battle Heal">
-		<!-- Quickly restores HP. Power $s1 -->
+		<!-- Quickly recovers HP. Power $s1 -->
 		<icon>icon.skill1218</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -2876,7 +2876,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5596" toLevel="2" name="Fire">
-		<!-- HP decreases from flame momentarily. Effect 11. -->
+		<!-- Burns the target temporarily decreasing their HP. Effect 11. -->
 		<icon>icon.skill1100</icon>
 		<abnormalLevel>10</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -2914,7 +2914,7 @@
 		</effects>
 	</skill>
 	<skill id="5598" toLevel="12" name="Petrification Resistance">
-		<!-- Slightly resistant to Petrifaction. -->
+		<!-- Makes you slightly resistant to Petrification. -->
 		<icon>icon.skill11359</icon>
 		<magicLevel>
 			<value level="1">10</value>

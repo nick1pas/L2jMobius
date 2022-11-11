@@ -189,7 +189,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="50020" toLevel="1" name="Berserk">
-		<!-- Increases Atk. Spd. And P. Atk. -->
+		<!-- Increases Atk. Spd. and P. Atk. -->
 		<icon>icon.skill1062</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -199,13 +199,13 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="50021" toLevel="3" name="Body Enlargement">
-		<!-- Increases the size of the body. -->
+		<!-- Increases your body's size. -->
 		<operateType>A1</operateType>
 		<effectPoint>100</effectPoint>
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="50022" toLevel="1" name="Head Enlargement">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<operateType>A1</operateType>
 		<mpConsume>10</mpConsume>
 	</skill>
@@ -226,7 +226,7 @@
 		<mpConsume>10</mpConsume>
 	</skill>
 	<skill id="50025" toLevel="1" name="Aggression">
-		<!-- Provokes target into attacking you by forcefully changing their target. -->
+		<!-- Provokes the enemy into attacking you by forcefully changing their target. -->
 		<icon>icon.skill10027</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -266,7 +266,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="50030" toLevel="1" name="Dandy's Precise Swing">
-		<!-- Throws the target back and inflicts heavy physical damage. -->
+		<!-- Throws back the target and inflicts heavy physical damage. -->
 		<icon>icon.skill0003</icon>
 		<operateType>A1</operateType>
 		<castRange>300</castRange>
@@ -301,7 +301,7 @@
 		<effectPoint>100</effectPoint>
 	</skill>
 	<skill id="50034" toLevel="2" name="Aqua Blow">
-		<!-- Attacks nearby enemies with 85 Power added to M. Atk. -->
+		<!-- Deals magic damage to nearby enemies. Power 85. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>
@@ -388,7 +388,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="50038" toLevel="2" name="Aqua Wave">
-		<!-- Attacks nearby enemies with 138 Power added to M. Atk. -->
+		<!-- Deals magic damage to nearby enemies. Power 138. -->
 		<operateType>A1</operateType>
 		<hitTime>4000</hitTime>
 		<coolTime>500</coolTime>
@@ -419,7 +419,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="50041" toLevel="2" name="Hurricane Cutter">
-		<!-- Attacks by a hurricane blade with 8000 power. Decreases HP. -->
+		<!-- A wind blade makes a powerful attack decreasing HP. Power 8000. -->
 		<icon>icon.skill0096</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -434,7 +434,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="50043" toLevel="2" name="Hurricane Bolt">
-		<!-- Bolt of lightning attacks with 138 Power added to M. Atk., paralyses for 5 sec. -->
+		<!-- A lightning bolt deals magic damage and paralyzes for 5 sec. Power 138. -->
 		<icon>icon.skill1170</icon>
 		<abnormalTime>5</abnormalTime>
 		<activateRate>80</activateRate>
@@ -466,7 +466,7 @@
 		</effects>
 	</skill>
 	<skill id="50044" toLevel="2" name="Hurricane Destruction">
-		<!-- Strong whirlwind attacks with 176 power dealing magical damage and knocks down nearby enemies. -->
+		<!-- A strong whirlwind deals magic damage to nearby enemies knocking them down. Power 176. -->
 		<icon>icon.skill10262</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -720,7 +720,7 @@
 		</effects>
 	</skill>
 	<skill id="50060" toLevel="1" name="Stone Destruction">
-		<!-- Paralysis for 1 min., P./ M. Def. -50%. -->
+		<!-- Paralyzes for 1 min., P./ M. Def. -50%. -->
 		<icon>icon.skill1062</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>

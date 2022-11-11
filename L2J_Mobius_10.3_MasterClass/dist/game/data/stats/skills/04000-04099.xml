@@ -805,7 +805,7 @@
 		</effects>
 	</skill>
 	<skill id="4034" toLevel="12" name="Ice Bolt">
-		<!-- Speed decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases Speed. Effect $s1 -->
 		<icon>icon.skill1184</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -879,7 +879,7 @@
 		</effects>
 	</skill>
 	<skill id="4035" toLevel="12" name="Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -964,7 +964,7 @@
 		</effects>
 	</skill>
 	<skill id="4036" toLevel="12" name="Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4036</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -1051,7 +1051,7 @@
 		</effects>
 	</skill>
 	<skill id="4037" toLevel="3" name="Weakness">
-		<!-- P. Atk. decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases P. Atk. Effect $s1 -->
 		<icon>icon.skill4037</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1845,7 +1845,7 @@
 		</effects>
 	</skill>
 	<skill id="4053" toLevel="16" name="Cubic Weakness">
-		<!-- P. Atk. decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases P. Atk. Effect $s1 -->
 		<icon>icon.skill1164</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2685,7 +2685,7 @@
 		</effects>
 	</skill>
 	<skill id="4074" toLevel="2" name="Haste">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2780,7 +2780,7 @@
 		</effects>
 	</skill>
 	<skill id="4076" toLevel="3" name="Slow">
-		<!-- Speed decreases momentarily. Effect $s1. -->
+		<!-- Momentarily decreases Speed. Effect $s1 -->
 		<icon>icon.skill1160</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2961,7 +2961,7 @@
 		</effects>
 	</skill>
 	<skill id="4079" toLevel="1" name="Siege Hammer">
-		<!-- Powerfully attacks castle gates, castle walls, etc. -->
+		<!-- Makes a powerful attack on castle gates and walls. -->
 		<castRange>600</castRange>
 		<effectPoint>-100</effectPoint>
 		<effectRange>1100</effectRange>
@@ -3087,7 +3087,7 @@
 		</effects>
 	</skill>
 	<skill id="4085" toLevel="1" name="Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill4085</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -3100,7 +3100,7 @@
 		</effects>
 	</skill>
 	<skill id="4086" toLevel="1" name="Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill4086</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -3491,7 +3491,7 @@
 		</effects>
 	</skill>
 	<skill id="4095" toLevel="1" name="Damage Shield">
-		<!-- Reflects a portion of the received damage. -->
+		<!-- Reflects a part of received damage. -->
 		<icon>icon.skill4095</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -3548,7 +3548,7 @@
 		</effects>
 	</skill>
 	<skill id="4097" toLevel="12" name="Chant of Life">
-		<!-- HP is restored. -->
+		<!-- Recovers HP. -->
 		<icon>icon.skill1229</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3627,7 +3627,7 @@
 		</effects>
 	</skill>
 	<skill id="4098" toLevel="12" name="Silence">
-		<!-- Temporarily blocks magic skills. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Temporarily blocks M. skills. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill1064</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>

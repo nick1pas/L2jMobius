@@ -1039,13 +1039,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="1.48">
-						<item id="32728" count="1" /> <!-- Hair Accessory Pack -->
+						<item id="32728" count="1" /> <!-- Head Accessory Pack -->
 					</item>
 					<item chance="0.04">
 						<item id="32729" count="1" /> <!-- Pendant Pack -->
 					</item>
 					<item chance="0.31">
-						<item id="32730" count="1" /> <!-- S-grade Enchant Scroll Pack -->
+						<item id="32730" count="1" /> <!-- S-grade Enchant Scroll Box -->
 					</item>
 					<item chance="0.09">
 						<item id="32731" count="1" /> <!-- R-grade Enchant Scroll Box -->
@@ -1066,19 +1066,19 @@
 						<item id="32736" count="1" /> <!-- S-grade Elixir Box -->
 					</item>
 					<item chance="4.31">
-						<item id="32737" count="1" /> <!-- R-grade Elixir Pack -->
+						<item id="32737" count="1" /> <!-- R-grade Elixir Box -->
 					</item>
 					<item chance="33.48">
-						<item id="32738" count="1" /> <!-- D-grade Elixir Pack -->
+						<item id="32738" count="1" /> <!-- D-grade Elixir Box -->
 					</item>
 					<item chance="14.65">
-						<item id="32739" count="1" /> <!-- C-grade Elixir Pack -->
+						<item id="32739" count="1" /> <!-- C-grade Elixir Box -->
 					</item>
 					<item chance="10.83">
-						<item id="32740" count="1" /> <!-- B-grade Elixir Pack -->
+						<item id="32740" count="1" /> <!-- B-grade Elixir Box -->
 					</item>
 					<item chance="8.61">
-						<item id="32741" count="1" /> <!-- A-grade Elixir Pack -->
+						<item id="32741" count="1" /> <!-- A-grade Elixir Box -->
 					</item>
 				</items>
 			</effect>
@@ -3017,7 +3017,7 @@
 		</effects>
 	</skill>
 	<skill id="12870" toLevel="1" name="Talking Island Homemade Cookie">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>BranchSys.icon.br_valentine_cookie_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -3049,22 +3049,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="0.11">
-						<item id="30381" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="30381" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="0.915">
-						<item id="30382" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="30382" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="0.549">
-						<item id="12366" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="12366" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="3.66">
-						<item id="12371" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="12371" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="1.098">
-						<item id="12365" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="12365" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="9.15">
-						<item id="12370" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="12370" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.082">
 						<item id="33478" count="1" /> <!-- Destruction Scroll: Enchant R-grade Weapon -->
@@ -3242,7 +3242,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="12882" toLevel="1" name="Talking Island Homemade Cookie">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>BranchSys.icon.br_valentine_cookie_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -3339,7 +3339,7 @@
 		</effects>
 	</skill>
 	<skill id="12889" toLevel="1" name="Romantic Chapeau - Critical Rate">
-		<!-- Critical Rate for standard attacks +50. -->
+		<!-- Critical Rate for basic attacks +50. -->
 		<icon>icon.accessory_romantic_chaperon_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -3352,7 +3352,7 @@
 		</effects>
 	</skill>
 	<skill id="12890" toLevel="1" name="Romantic Chapeau - Critical Damage">
-		<!-- Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<icon>icon.accessory_romantic_chaperon_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -3467,7 +3467,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="12898" toLevel="1" name="Noblesse Blessing">
-		<!-- Maintains buffs and debuffs upon death for 60 min. However, the Noblesse Blessing and the Amulet of Luck disappear. -->
+		<!-- Your buffs and debuffs remain after death, except for Noblesse Blessing and Lucky Charms' effects. -->
 		<icon>icon.skill1323</icon>
 		<operateType>A2</operateType>
 		<hitTime>100</hitTime>

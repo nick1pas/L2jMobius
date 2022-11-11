@@ -45,7 +45,7 @@
 		</effects>
 	</skill>
 	<skill id="3404" toLevel="1" name="Mysterious Effect">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
 		<abnormalType>BIG_HEAD</abnormalType>
@@ -184,7 +184,7 @@
 		</effects>
 	</skill>
 	<skill id="3411" toLevel="1" name="Special Ability: Focus">
-		<!-- Max HP +10%, PvP damage +$s1. Increases Critical Rate for standard attacks. -->
+		<!-- Max HP +10%, PvP damage +$s1. Increases Critical Rate for basic attacks. -->
 		<icon>icon.ensoul_big_old</icon>
 		<magicLevel>80</magicLevel>
 		<operateType>P</operateType>
@@ -288,7 +288,7 @@
 		</effects>
 	</skill>
 	<skill id="3415" toLevel="1" name="Dynasty Leather Armor">
-		<!-- Increases P. Atk., Max HP, Critical Rate/ Damage for standard attacks, and Dark Resistance. -->
+		<!-- Increases P. Atk., Max HP, Critical Rate for basic attacks, Critical Damage for basic attacks and Dark Resistance. -->
 		<icon>icon.armor_t92_ub_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -491,7 +491,7 @@
 		</effects>
 	</skill>
 	<skill id="3426" toLevel="1" name="Maximum Ability">
-		<!-- With a certain chance, increases all party members P./ M. Atk., Received Healing, and decreases MP Consumption after a critical attack. -->
+		<!-- With a certain chance, increases all party members' P./ M. Atk., Received Healing, and decreases MP Consumption after a critical attack. -->
 		<magicLevel>1</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
 		<operateType>P</operateType>
@@ -510,7 +510,7 @@
 		</effects>
 	</skill>
 	<skill id="3427" toLevel="1" name="Special Ability: Infinity Rapier">
-		<!-- Decreases enemy's P. Def. after a critical attack. Increases Max HP/ MP/ CP and PvP Damage. Reflects some of the received damage back to the enemy. In addition, when a critical hit occurs after a standard attack, there is a chance that the capacity of a party member's skills will be maximized. -->
+		<!-- Decreases the enemy's P. Def. after a critical attack. Increases Max HP, Max MP, Max CP and PvP damage. Reflects some of the received damage back to the enemy. Additionally, with a certain chance, maximizes the capacity of a party member's skills after a critical attack. -->
 		<icon>icon.weapon_infinity_rapier_i00</icon>
 		<magicLevel>80</magicLevel>
 		<operateType>P</operateType>
@@ -1709,7 +1709,7 @@
 		</effects>
 	</skill>
 	<skill id="3499" toLevel="1" name="Cancel Transformation">
-		<!-- Cancels transformation. -->
+		<!-- Cancel Transformation -->
 		<icon>icon.skilltransform2</icon>
 		<effectPoint>10</effectPoint>
 		<hitTime>2500</hitTime>

@@ -96,7 +96,7 @@
 						<item id="27593" count="50" /> <!-- Daily Coin -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="36152" count="1" /> <!-- Kaliel's Energy Box -->
+						<item id="36152" count="1" /> <!-- Kaliel's Energy Pack -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27594" count="1" /> <!-- Maphr's Wind Scroll -->
@@ -123,7 +123,7 @@
 						<item id="35649" count="1" /> <!-- Sealed Talisman of Longing -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not available -->
+						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not Available -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27595" count="1" /> <!-- Vitality Maintaining Potion -->
@@ -163,7 +163,7 @@
 						<item id="27593" count="50" /> <!-- Daily Coin -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="36152" count="1" /> <!-- Kaliel's Energy Box -->
+						<item id="36152" count="1" /> <!-- Kaliel's Energy Pack -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27594" count="1" /> <!-- Maphr's Wind Scroll -->
@@ -190,7 +190,7 @@
 						<item id="35649" count="1" /> <!-- Sealed Talisman of Longing -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not available -->
+						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not Available -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27595" count="1" /> <!-- Vitality Maintaining Potion -->
@@ -230,7 +230,7 @@
 						<item id="27593" count="50" /> <!-- Daily Coin -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="36152" count="1" /> <!-- Kaliel's Energy Box -->
+						<item id="36152" count="1" /> <!-- Kaliel's Energy Pack -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27594" count="1" /> <!-- Maphr's Wind Scroll -->
@@ -257,7 +257,7 @@
 						<item id="35649" count="1" /> <!-- Sealed Talisman of Longing -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not available -->
+						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not Available -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27595" count="1" /> <!-- Vitality Maintaining Potion -->
@@ -297,7 +297,7 @@
 						<item id="27593" count="50" /> <!-- Daily Coin -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="36152" count="1" /> <!-- Kaliel's Energy Box -->
+						<item id="36152" count="1" /> <!-- Kaliel's Energy Pack -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27594" count="1" /> <!-- Maphr's Wind Scroll -->
@@ -324,7 +324,7 @@
 						<item id="35649" count="1" /> <!-- Sealed Talisman of Longing -->
 					</item>
 					<item chance="7.142857142857143">
-						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not available -->
+						<item id="27584" count="1" /> <!-- Top-grade Spirit Stone - Not Available -->
 					</item>
 					<item chance="7.142857142857143">
 						<item id="27595" count="1" /> <!-- Vitality Maintaining Potion -->
@@ -334,7 +334,7 @@
 		</effects>
 	</skill>
 	<skill id="27615" toLevel="1" name="Maphr's Wind Scroll">
-		<!-- Vitality consumption +200% and Acquired XP/ SP +200% while hunting. Remains after death. Duration is 30 sec. Cooldown is 1 min. -->
+		<!-- For 30 sec. while hunting, Vitality Consumption +200%, acquired XP/ SP +200%. The effect remains after death. Cooldown: 1 min. -->
 		<icon>icon.freya_scroll</icon>
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>27594</itemConsumeId>
@@ -481,7 +481,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="27626" toLevel="1" name="Freya's Luxury Shopping Bag">
-		<!-- Double-click to obtain Freya's Frozen Scroll and Freya's Art of Seduction. Has a small chance of obtaining Freay/ Sirra/ Snow Man's Gift Box, Freya's Vital Rune (30 min) Box, or Freya's Recovery Potion. -->
+		<!-- Double-click to obtain one of the following items: Freya's Frozen Scroll/ Freya's Art of Seduction. There is also a chance to additionally obtain Freya's/ Sirra's/ Snowman's Gift Box, Freya's Vital Rune Pack (30-min.), Freya's Recovery Potion. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -493,13 +493,13 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="27628" toLevel="1" name="Black Freya's Kindness">
-		<!-- Double-click to obtain 1 random item out of the following: Dark/ White Assassin Suit, Red/ White Noblesse Outfit, Pirate Red/ Crew Outfit, Cowboy Purple Outfit Appearance Stone. -->
+		<!-- Double-click to obtain one of the following appearance stones: Dark/ White Assassin Suit, Red/ White Noblesse Garment, Pirate/ Pirate Captain Outfit, Purple Cowboy Outfit. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="27629" toLevel="1" name="Freya's Scroll of Storm">
-		<!-- For 10 min., Vitality consumption +$s1, Acquired XP/ SP +$s2. The effect remains after death. Cooldown: 10 min. Can be used only if 1 or more Vitality slot is filled. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +$s1, acquired XP/ SP +$s2. The effect remains after death. Cooldown: 10 min. -->
 		<icon>icon.bm_freya_storm_scroll</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -534,13 +534,13 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="27631" toLevel="1" name="Freya's Wish-filled Gift">
-		<!-- Double-click to get 1 random rare item. -->
+		<!-- Double-click to obtain a rare and valuable item. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="27632" toLevel="1" name="Sirra's Wish-filled Gift">
-		<!-- Double-click to get one of the following: La Vie En Rose's Jewelry Box, various Enchant Stones and Dark/ Bloody Enhancement Stones. -->
+		<!-- Double-click to obtain one of the following items: La Vie En Rose's Jewelry Box, an enchant stone, Dark/ Bloody Enhancement Stone. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -4855,7 +4855,7 @@
 		</effects>
 	</skill>
 	<skill id="27685" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -2%. -->
+		<!-- Received damage -2%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4871,7 +4871,7 @@
 		</effects>
 	</skill>
 	<skill id="27686" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -2%. -->
+		<!-- Received damage -2%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4887,7 +4887,7 @@
 		</effects>
 	</skill>
 	<skill id="27687" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -3%. -->
+		<!-- Received damage -3%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4919,7 +4919,7 @@
 		</effects>
 	</skill>
 	<skill id="27689" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -5%. -->
+		<!-- Received damage -5%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4935,7 +4935,7 @@
 		</effects>
 	</skill>
 	<skill id="27690" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -2%. -->
+		<!-- Received damage -2%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4951,7 +4951,7 @@
 		</effects>
 	</skill>
 	<skill id="27691" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -2%. -->
+		<!-- Received damage -2%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4967,7 +4967,7 @@
 		</effects>
 	</skill>
 	<skill id="27692" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -3%. -->
+		<!-- Received damage -3%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -4999,7 +4999,7 @@
 		</effects>
 	</skill>
 	<skill id="27694" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -5%. -->
+		<!-- Received damage -5%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -5015,7 +5015,7 @@
 		</effects>
 	</skill>
 	<skill id="27695" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -2%. -->
+		<!-- Received damage -2%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -5031,7 +5031,7 @@
 		</effects>
 	</skill>
 	<skill id="27696" toLevel="1" name="Inherent Abilities - Damage Reduction">
-		<!-- Damage Received -2%. -->
+		<!-- Received damage -2%. -->
 		<icon>icon.karma</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>

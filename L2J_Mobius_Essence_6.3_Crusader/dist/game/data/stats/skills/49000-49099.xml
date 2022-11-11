@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="49001" toLevel="5" name="Kookaburra Chick">
-		<!-- Attacks with magic. <Required weapons> Rapier: M. Atk. +$s1 Blunt weapon: M. Atk. +$s1 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
+		<!-- A pet able to cast spells. Fights using various magic spells. Can evolve to Kookaburra. <Basic stats> P. Def. $s1 M. Def. $s1 Max HP $s1 <Preferred weapons> Rapier: - M. Atk. $s2 Blunt weapon: - M. Atk. $s2 Note! If another weapon is equipped: Atk. Spd./ Casting Spd. -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -68,7 +68,7 @@
 		</effects>
 	</skill>
 	<skill id="49002" toLevel="20" name="Magic Missile">
-		<!-- Magical attack. Power: $s1 -->
+		<!-- <Attack skill> Attacks with magic missiles. Basic magic power: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<castRange>700</castRange>
@@ -148,7 +148,7 @@
 		</effects>
 	</skill>
 	<skill id="49003" toLevel="20" name="Energy Burst">
-		<!-- Magical attack. Power: $s1 -->
+		<!-- <Attack skill> Attacks with a powerful energy missile created with magic. Basic magic power: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<castRange>700</castRange>
@@ -228,7 +228,7 @@
 		</effects>
 	</skill>
 	<skill id="49004" toLevel="5" name="Entrenching">
-		<!-- <Buff Skill> The pet buries themselves becoming immobilized. Magic Missiles are enhanced. The pet cannot move for $s1. P. Def. +$s2 M. Def. +$s3 -->
+		<!-- <Buff skill> The pet buries itself to fire the target. The pet is immobilized. <Effect> P. Def. $s1 M. Def. $s2 <Skill upgrade> Magic Missile ? Energy Burst -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>30</abnormalTime>
@@ -259,7 +259,7 @@
 		</effects>
 	</skill>
 	<skill id="49005" toLevel="5" name="Chain Block">
-		<!-- Immobilizes the target and blocks attacking skills. -->
+		<!-- <Hold skill> Makes the enemy immobilized. <Effect> Decreases skill attack range. Unable to use magic skills. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>50</mpConsume>
@@ -284,14 +284,14 @@
 		</effects>
 	</skill>
 	<skill id="49006" toLevel="5" name="Blocked Target Change">
-		<!-- A character switches places with the target affected by Chain Block. -->
+		<!-- <Special skill> Kookaburra switches places with the target. Applied only on targets affected by Chain Block. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpAffectedBySkill">
-				<skillId>49005</skillId>
+				<skillId>49005</skillId> <!-- Chain Block -->
 			</condition>
 		</conditions>
 		<effects>
@@ -299,27 +299,25 @@
 		</effects>
 	</skill>
 	<skill id="49007" toLevel="1" name="Magic Flare">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Stacks 1 effect when Magic Missile is used. Applies the Magic Flare effect once 3 effects are stacked. Basic magic power: 200 PvE effect: suppresses with a certain chance. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49008" toLevel="3" name="Magic Flare Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Magic Flare Lv. 1 is active. Increases the effect level upon Magic Missile use. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49009" toLevel="1" name="Cancel Magic Flare">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49010" toLevel="1" name="Magic Flare">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49011" toLevel="5" name="Tiger Cub">
-		<!-- Aims at the enemy's vital spots. <Required weapon> Dagger: P. Atk. +$s1, Vital Point Attack Rate +$s2 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
+		<!-- A furious pet who fights like a wild beast. Moves swiftly and strikes enemies' vital points with its claws. Can evolve to Tiger. <Basic stats> P. Def. $s1 M. Def. $s1 Max HP $s1 <Preferred weapon> Dagger: - P. Atk. $s2 - Vital Point Attack Rate $s3 Note! If another weapon is equipped: Atk. Spd./ Casting Spd. -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -398,7 +396,7 @@
 		</effects>
 	</skill>
 	<skill id="49012" toLevel="20" name="Breaking Blaster">
-		<!-- Claw attacks tear the enemy to pieces. Vital point attacks. Power: $s1 -->
+		<!-- <Attack skill> Attacks with claws tearing the enemy to pieces. Attacks vital points. Additionally P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -478,7 +476,7 @@
 		</effects>
 	</skill>
 	<skill id="49013" toLevel="5" name="Blinking Attack">
-		<!-- Teleports behind the target's back and attacks. Power: $s1 -->
+		<!-- <Rush skill> Jumps to the target's back and attacks. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<hitTime>150</hitTime>
@@ -517,7 +515,7 @@
 		</effects>
 	</skill>
 	<skill id="49014" toLevel="5" name="Beast Within">
-		<!-- <Buff Skill> Unleashes the power of wild beast for $s1. P. Atk. +$s2 , Atk. Spd. +$s2 -->
+		<!-- <Buff skill> Unleashes the power of wild beast. <Effect> P. Atk. $s1 Atk. Spd. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>30</abnormalTime>
@@ -550,7 +548,7 @@
 		</effects>
 	</skill>
 	<skill id="49015" toLevel="5" name="Sharp Senses">
-		<!-- Grants invisibility for $s1 The effect is cancelled upon any action except movement. -->
+		<!-- Skill Evasion +20% <Skill upgrade> Breaking Blaster: there is a 50% chance to hit the target. Strong Bite: there is a 30% chance to hit the target. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>
@@ -573,7 +571,7 @@
 		</effects>
 	</skill>
 	<skill id="49016" toLevel="15" name="Strong Bite">
-		<!-- Bites the target. Power: $s1 -->
+		<!-- <Attack skill> Bites the target. Attacks to vital points. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>50</mpConsume>
@@ -623,7 +621,7 @@
 		</effects>
 	</skill>
 	<skill id="49017" toLevel="15" name="Strong Bite">
-		<!-- Bites the target. Power: $s1 -->
+		<!-- <Attack skill> Bites the target. Attacks to vital points. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>50</mpConsume>
@@ -673,12 +671,12 @@
 		</effects>
 	</skill>
 	<skill id="49018" toLevel="20" name="Breaking Blaster">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Attack skill> Attacks with claws tearing the enemy to pieces. Attacks vital points. Additionally P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49021" toLevel="5" name="Wolf Cub">
-		<!-- Applies damage-increasing buffs when using the Dire Claw and Last Dire Claw skills. <Required weapons> Dual swords: P. Atk. +$s1, Atk. Spd. +$s2 Fist weapon: P. Atk. +$s1, P. Critical Rate +$s3 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
+		<!-- A pet with iron will. When attacking constantly, gets a unique effect. Can evolve to Wolf. <Basic stats> P. Def. $s1 M. Def. $s1 Max HP $s1 <Preferred weapons> Dual swords: - P. Atk. $s2 - Atk. Spd. $s3 Fist weapon: - P. Atk. $s2 - P. Critical Rate $s4 Note! If another weapon is equipped: Atk. Spd./ Casting Spd. -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -757,7 +755,7 @@
 		</effects>
 	</skill>
 	<skill id="49022" toLevel="20" name="Dire Claw">
-		<!-- Attacks with sharp wolf claws. Power: $s1 -->
+		<!-- <Attack skill> Attacks with claws. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -838,7 +836,7 @@
 		</effects>
 	</skill>
 	<skill id="49023" toLevel="5" name="Leap Attack">
-		<!-- Rush toward the target. Power: $s1 -->
+		<!-- <Rush skill> Rushes to the target. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>DA1</operateType>
 		<mpConsume>
@@ -876,7 +874,7 @@
 		</effects>
 	</skill>
 	<skill id="49024" toLevel="15" name="Last Dire Claw">
-		<!-- Attacks the target and becomes enlarged. Power: $s1 Available when target's HP<30%. -->
+		<!-- <Attack skill> Attacks the target and temporarily becomes large. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>50</mpConsume>
@@ -933,13 +931,13 @@
 		</effects>
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>49025</skillId>
+				<skillId>49025</skillId> <!-- Giant Wolf -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</selfEffects>
 	</skill>
 	<skill id="49025" toLevel="1" name="Giant Wolf">
-		<!-- <Buff Skill> P. Atk. +20% Atk. Spd. +20% -->
+		<!-- <Buff skill> Becomes large. <Effect> P. Atk. +20% Atk. Spd. +20% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -964,7 +962,7 @@
 		</effects>
 	</skill>
 	<skill id="49026" toLevel="3" name="Ferocity">
-		<!-- P. Skill Power +$s1 -->
+		<!-- P. Skill Power $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<reuseDelay>4</reuseDelay>
@@ -984,12 +982,12 @@
 		</effects>
 	</skill>
 	<skill id="49027" toLevel="1" name="Sound Body">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Max HP +1000 P. Def. +15% M. Def. +15% P. Skill Critical Damage +10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49031" toLevel="5" name="Buffalo Calf">
-		<!-- Takes hits well and defends allies. HP Recovery Potions' Effect +20 <Required weapons> Blunt weapon: P. Atk. +$s1, Atk. Spd. +$s2 Spear: P. Atk. +$s1 If no proper weapon is equipped, Atk. Spd./ Casting Spd. -10%. -->
+		<!-- A very tough pet. Takes blows perfectly and helps allies. Can evolve to Buffalo. <Basic stats> P. Def. $s1 M. Def. $s1 Max HP $s1 <Preferred weapons> Blunt weapon: - P. Atk. $s2 - Atk. Spd. $s3 Spear: - P. Atk. $s2 Note! If another weapon is equipped: Atk. Spd./ Casting Spd. -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1074,7 +1072,7 @@
 		</effects>
 	</skill>
 	<skill id="49032" toLevel="20" name="Horn Thrust">
-		<!-- Attacks the target with its horns. Power: $s1 -->
+		<!-- <Attack skill> Attacks enemies with their horns. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -1155,7 +1153,7 @@
 		</effects>
 	</skill>
 	<skill id="49033" toLevel="5" name="Rump Stun">
-		<!-- Charges to the target and bumps it. Has a certain chance to stun the target. Power: $s1 -->
+		<!-- <Rush/ shock skill> Charges to the target and hit it. There is a certain chance to stun the target. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>DA1</operateType>
 		<abnormalTime>10</abnormalTime>
@@ -1193,7 +1191,7 @@
 		</effects>
 	</skill>
 	<skill id="49034" toLevel="5" name="Pulling Body">
-		<!-- <Buff skill> Makes nearby enemies move toward the pet. P. Def. +$s1 M. Def. +$s2 -->
+		<!-- <Buff skill> Makes nearby enemies move toward the pet. <Effect> P. Def. +$s1 M. Def. +$s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>10</abnormalTime>
@@ -1235,7 +1233,7 @@
 		</effects>
 	</skill>
 	<skill id="49035" toLevel="8" name="Breath of Hurricane">
-		<!-- Provokes the target. Power: $s1 -->
+		<!-- <Provoking skill> Provokes the target. Power $s1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<castRange>400</castRange>
@@ -1283,22 +1281,22 @@
 		</effects>
 	</skill>
 	<skill id="49037" toLevel="5" name="Pulling Body">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Buff skill> Makes nearby enemies move toward the pet. <Effect> P. Def. +$s1 M. Def. +$s2 Creates a barrier with 2000 HP for 10 sec. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49038" toLevel="1" name="Pulling Defense">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Absorbs $s1 of the damage. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49039" toLevel="1" name="Pulling Defense">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When Pulling Body is used: Creates a barrier with 2000 HP for 10 sec. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49041" toLevel="5" name="Hawk Hatchling">
-		<!-- Specializes on long range attacks. <Required weapon> Bow: P. Atk. +$s1, P. Accuracy +$s2 If no proper weapon is equipped, Atk. Spd/ Casting Spd. -10%. -->
+		<!-- A pet able to attack from distance. Keeps enemies at bay. Can evolve to Hawk. <Basic stats> P. Def. $s1 M. Def. $s1 Max HP $s1 <Preferred weapons> Bow: - P. Atk. $s2 - P. Accuracy $s3 Firearms: - P. Atk. $s2 Note! If another weapon is equipped: Atk. Spd./ Casting Spd. -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1379,7 +1377,7 @@
 		</effects>
 	</skill>
 	<skill id="49042" toLevel="20" name="Arrow Feather">
-		<!-- Explodes feathers limiting enemy's invisibility. Power: $s1 -->
+		<!-- <Attack skill> Shoots the target with a feather. Limits the target's invisibility. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -1465,7 +1463,7 @@
 		</effects>
 	</skill>
 	<skill id="49043" toLevel="5" name="Quick Jump">
-		<!-- Approaches to the target very fast. Power:$s1 -->
+		<!-- <Rush/ knockback skill> Rushes to the target. There is a certain chance to knockback the target. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<nextAction>ATTACK</nextAction>
@@ -1502,7 +1500,7 @@
 		</effects>
 	</skill>
 	<skill id="49044" toLevel="5" name="Scout's Strike">
-		<!-- Attacks the enemy and comes back. Has a certain chance to stun the enemy. Power: $s1. -->
+		<!-- <Anomaly skill> Attacks the target and returns. There is a certain chance to stun the target. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<castRange>400</castRange>
@@ -1538,7 +1536,7 @@
 		</effects>
 	</skill>
 	<skill id="49045" toLevel="15" name="Feather Storm">
-		<!-- Attacks with feathers. Decreases Speed. Power: $s1 -->
+		<!-- <Suppression skill> Attacks with several feathers. There is a certain chance to make the target's Speed -50% Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>50</mpConsume>
@@ -1595,7 +1593,7 @@
 		</effects>
 	</skill>
 	<skill id="49046" toLevel="5" name="Exploding Feather">
-		<!-- <Buff Skill> There is a certain chance to add an explosion attack for $s1 when Feather Storm is used. An explosion attack chance is $s2. -->
+		<!-- <Buff skill> Makes an explosion when Feather Storm is used. <Effect> When using Feather Storm, an explosion attack is triggered. P. Atk. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>120</abnormalTime>
@@ -1614,7 +1612,7 @@
 		<effects>
 			<effect name="TriggerSkillBySkill">
 				<castSkillId>49047</castSkillId>
-				<skillId>49045</skillId>
+				<skillId>49045</skillId> <!-- Feather Storm -->
 				<skillLevel>1</skillLevel>
 				<chance>
 					<value level="1">30</value>
@@ -1636,7 +1634,7 @@
 		<affectScope>FAN</affectScope>
 	</skill>
 	<skill id="49048" toLevel="15" name="Feather Storm - Explosion">
-		<!-- Attacks with feathers. Decreases Speed. Power: $s1 -->
+		<!-- <Suppression skill> Attacks with several feathers. There is a certain chance to make the target's Speed -50% Additionally, P. Atk.: $s1 Explosion attack: deals damage according to 150% of P. Atk. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>80</mpConsume>
@@ -1693,17 +1691,17 @@
 		</effects>
 	</skill>
 	<skill id="49049" toLevel="1" name="Swift Feather">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Applied Quick Movements when the Arrow Feather skill is used. <Quick Movements> Atk. Spd. +15% P. Skill Cooldown -15% (Cooldown: 60 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49050" toLevel="1" name="Quick Movements">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Buff skill> Makes you move faster. <Effect> Atk. Spd. $s1 P. Skill Cooldown $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="49051" toLevel="5" name="Dragon Hatchling">
-		<!-- Has inherited strong body, high speed and fast attacks from ancestors. There is a certain chance after Crippling Bite that Double Crippling Bite will be triggered allowing the pet to attack twice. <Proper Weapon> Sword: P. Atk. +$s1, Atk. Spd. +$s2 Ancient Sword: P. Atk. +$s1, P. Critical Rate +$s3 If there is no proper weapon, Atk. Spd./ Casting Spd. -10%. -->
+		<!-- A strong and dexterous pet. Can evolve to Dragon. <Basic stats> P. Def. $s1 M. Def. $s1 Max HP $s1 <Preferred weapons> Sword: - P. Atk. $s2 - Atk. Spd. $s3 Ancient sword: - P. Atk. $s2 - P. Critical Rate $s4 Note! If another weapon is equipped: Atk. Spd./ Casting Spd. -10% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1784,7 +1782,7 @@
 		</effects>
 	</skill>
 	<skill id="49052" toLevel="20" name="Crippling Bite">
-		<!-- Bites the target ferociously. Power: $s1 -->
+		<!-- <Pull attack skill> Bites the target ferociously. If the target is a character, pulls them with a certain chance. Additionally, P. Atk.: $s1 <Special effect> After an attack, there is a certain chance to turn the skill into Double Crippling Bite and attack the target twice. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -1863,7 +1861,7 @@
 			</effect>
 			<effect name="TriggerSkillBySkill">
 				<castSkillId>49056</castSkillId>
-				<skillId>49052</skillId>
+				<skillId>49052</skillId> <!-- Crippling Bite -->
 				<skillLevel>3</skillLevel>
 				<chance>
 					<value level="1">30</value>
@@ -1875,7 +1873,7 @@
 		</effects>
 	</skill>
 	<skill id="49053" toLevel="20" name="Double Crippling Bite">
-		<!-- Bites the target twice ferociously. Power: $s1 -->
+		<!-- <Pull attack skill> Bites the target ferociously twice. If the target is a character, pulls them with a certain chance. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -1954,7 +1952,7 @@
 			</effect>
 			<effect name="TriggerSkillBySkillAttack">
 				<attackSkillId>49052</attackSkillId>
-				<skillId>49053</skillId>
+				<skillId>49053</skillId> <!-- Double Crippling Bite -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -1983,7 +1981,7 @@
 		</effects>
 	</skill>
 	<skill id="49054" toLevel="5" name="Rushing Assault">
-		<!-- <Buff Skill> Hastens for $s1. Speed +$s2 Atk. Spd. +$s3 -->
+		<!-- <Buff skill> Hastens. <Effect> Speed $s1 Atk. Spd. $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>40</abnormalTime>
@@ -2023,7 +2021,7 @@
 		</effects>
 	</skill>
 	<skill id="49055" toLevel="5" name="Back Explosion">
-		<!-- Roars loudly to cast an explosion behind the target. There is a certain chance to pull the target. Power: $s1 -->
+		<!-- <Shock skill> Roars loudly to make an explosion behind the target. There is a certain chance to pull the target to the explosion area and stun them. Additionally, P. Atk.: $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<mpConsume>
@@ -2057,7 +2055,6 @@
 		</effects>
 	</skill>
 	<skill id="49056" toLevel="3" name="Double Attack">
-		<!-- After Crippling Bite there is $s1 chance to attack the enemy twice. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<isTriggeredSkill>true</isTriggeredSkill>
@@ -2065,7 +2062,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="CallSkill">
-				<skillId>49052</skillId>
+				<skillId>49052</skillId> <!-- Crippling Bite -->
 				<chance>
 					<value level="1">30</value>
 					<value level="2">60</value>
@@ -2075,7 +2072,7 @@
 		</effects>
 	</skill>
 	<skill id="49057" toLevel="5" name="Explosion Stun">
-		<!-- Pulls a selected target to you and attacks. -->
+		<!-- Unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<castRange>700</castRange>
@@ -2091,7 +2088,7 @@
 		</effects>
 	</skill>
 	<skill id="49058" toLevel="1" name="Perfect Bite">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Skill upgrade> Crippling Bite ? Double Crippling Bite -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

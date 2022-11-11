@@ -594,7 +594,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="23739" toLevel="1" name="Heart Breaker">
-		<!-- Attacks the target's vital points with 29,472 power. Speed +40, P. Evasion +5, Critical Damage for standard attacks after backstab +30%. Half-kill. Critical. Over-hit. -->
+		<!-- Deals physical damage to the target with 29,472 power. Speed +40, P. Evasion +5, Critical Damage for basic attacks after backstab +30%. Half-kill. Critical. Over-hit. -->
 		<icon>icon.skill10509</icon>
 		<operateType>A2</operateType>
 		<mpConsume>1</mpConsume>
@@ -975,7 +975,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="23768" toLevel="1" name="Disparition">
-		<!-- Removes all debuffs. For 5 sec., prevents enemies from targeting you. -->
+		<!-- Removes all debuffs and prevents enemies from targeting you for 5 sec. -->
 		<icon>icon.skill1912</icon>
 		<operateType>A2</operateType>
 		<hitTime>200</hitTime>

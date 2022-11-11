@@ -148,7 +148,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39405" toLevel="1" name="Challenger's Scroll of Growth">
-		<!-- For 10 min., Acquired XP/ SP +$s1. The effect remains after death. Cooldown: 9 min. -->
+		<!-- For 10 min., acquired XP/ SP while hunting +$s1. The effect remains after death. Cooldown: 9 min. -->
 		<icon>icon.bm_challenger_scroll</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -206,7 +206,7 @@
 		</effects>
 	</skill>
 	<skill id="39408" toLevel="3" name="Drum Melody - Emperor's Special Cocktail">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. The effect remains after death. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. The effect remains after death. -->
 		<icon>icon.cocktail_heaven_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -467,7 +467,7 @@
 		</effects>
 	</skill>
 	<skill id="39413" toLevel="3" name="Mental Resistance - Emperor's Special Cocktail">
-		<!-- For $s1, Buff Cancel/ Debuff Resistance +$s2. The effect remains after death. -->
+		<!-- For $s1, Buff Cancel Resistance/ Debuff Resistance +$s2. The effect remains after death. -->
 		<icon>icon.cocktail_heaven_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -512,7 +512,7 @@
 		</effects>
 	</skill>
 	<skill id="39414" toLevel="3" name="Prevailing Drum - Emperor's Special Cocktail">
-		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, grants $s6 Vampiric Rage Effect. The effect remains after death. -->
+		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, Vampiric Rage efect +$s6. The effect remains after death. -->
 		<icon>icon.cocktail_heaven_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -680,14 +680,14 @@
 		</effects>
 	</skill>
 	<skill id="39417" toLevel="3" name="Knight's Harmony - Emperor's Special Cocktail">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from standard attacks/ M. skills -$s7. The effect remains after death. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense/ Shield Defense Rate +$s6, received Critical Rate from basic attacks/ M. skills -$s7. The effect remains after death. -->
 		<icon>icon.bm_special_cocktail_of_king_d</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 		<blockedInOlympiad>true</blockedInOlympiad>
 	</skill>
 	<skill id="39418" toLevel="3" name="Warrior's Harmony - Emperor's Special Cocktail">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. Also has a certain chance to inflict Spectral Slash on the target after standard attacks. The effect remains after death. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. With a certain chance, applies Spectral Slash on the target after a basic attack. The effect remains after death. -->
 		<icon>icon.bm_special_cocktail_of_king_p</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
@@ -730,12 +730,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39426" toLevel="1" name="Cool Summer Hunting Herb Box">
-		<!-- Contains cool energy to beat the heat. Recovers Vitality. For $s1, P. Atk./ M. Atk./ P. Def./ M. Def./ Atk. Spd./ Casting Spd./ Normal Attack/ P. Skill/ M. Skill Critical Rate +$s2, Speed +$s3, Acquired XP/ SP +$s4. Changes the appearance to a swimsuit. -->
+		<!-- For $s1, P. Atk./ M. Atk./ P. Def./ M. Def., Atk. Spd./ Casting Spd., Critical Rate for basic attacks and P./ M. Skill Critical Rate +$s2, Speed +$s3, acquired XP/ SP +$s4. Changes the armor appearance to that of Beach Swimsuit. -->
 		<icon>icon.event_six_party_box_i00</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39427" toLevel="1" name="Cool Summer Hunting Herb Box">
-		<!-- Contains cool energy to beat the heat. Recovers Vitality. For $s1, P. Atk./ M. Atk./ P. Def./ M. Def./ Atk. Spd./ Casting Spd./ Normal Attack/ P. Skill/ M. Skill Critical Rate +$s2, Speed +$s3, Acquired XP/ SP +$s4. Changes the appearance to a swimsuit. -->
+		<!-- For $s1, P. Atk./ M. Atk./ P. Def./ M. Def., Atk. Spd./ Casting Spd., Critical Rate for basic attacks and P./ M. Skill Critical Rate +$s2, Speed +$s3, acquired XP/ SP +$s4. Changes the armor appearance to that of Beach Swimsuit. -->
 		<icon>icon.event_six_party_box_i00</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -783,16 +783,16 @@
 					</value>
 					<value level="2">
 						<item chance="25">
-							<item id="48962" count="1" /> <!-- Artifact - M. Def. - Protection -->
+							<item id="48962" count="1" /> <!-- Artifact - M. Def. - Defense -->
 						</item>
 						<item chance="25">
-							<item id="48963" count="1" /> <!-- Artifact - Max HP - Protection -->
+							<item id="48963" count="1" /> <!-- Artifact - Max HP - Defense -->
 						</item>
 						<item chance="25">
-							<item id="48964" count="1" /> <!-- Artifact - Max MP - Protection -->
+							<item id="48964" count="1" /> <!-- Artifact - Max MP - Defense -->
 						</item>
 						<item chance="25">
-							<item id="48961" count="1" /> <!-- Artifact - P. Def. - Protection -->
+							<item id="48961" count="1" /> <!-- Artifact - P. Def. - Defense -->
 						</item>
 					</value>
 					<value level="3">
@@ -829,7 +829,7 @@
 							<item id="48969" count="1" /> <!-- Artifact - P. Atk. - Balance -->
 						</item>
 						<item chance="10">
-							<item id="48973" count="1" /> <!-- Artifact - Standard Attack Critical Rate - Balance -->
+							<item id="48973" count="1" /> <!-- Artifact - Critical Rate for Basic Attacks - Balance -->
 						</item>
 						<item chance="10">
 							<item id="48974" count="1" /> <!-- Artifact - P. Skill Critical Rate - Balance -->
@@ -942,32 +942,32 @@
 			<effect name="RestorationRandom" level="1">
 				<items>
 					<item chance="25">
-						<item id="48962" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - M. Def. - Protection -->
+						<item id="48962" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - M. Def. - Defense -->
 					</item>
 					<item chance="25">
-						<item id="48963" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - Max HP - Protection -->
+						<item id="48963" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - Max HP - Defense -->
 					</item>
 					<item chance="25">
-						<item id="48964" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - Max MP - Protection -->
+						<item id="48964" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - Max MP - Defense -->
 					</item>
 					<item chance="25">
-						<item id="48961" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - P. Def. - Protection -->
+						<item id="48961" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - P. Def. - Defense -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom" level="2">
 				<items>
 					<item chance="25">
-						<item id="48962" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - M. Def. - Protection -->
+						<item id="48962" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - M. Def. - Defense -->
 					</item>
 					<item chance="25">
-						<item id="48963" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - Max HP - Protection -->
+						<item id="48963" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - Max HP - Defense -->
 					</item>
 					<item chance="25">
-						<item id="48964" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - Max MP - Protection -->
+						<item id="48964" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - Max MP - Defense -->
 					</item>
 					<item chance="25">
-						<item id="48961" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - P. Def. - Protection -->
+						<item id="48961" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - P. Def. - Defense -->
 					</item>
 				</items>
 			</effect>
@@ -1074,7 +1074,7 @@
 						<item id="48969" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - P. Atk. - Balance -->
 					</item>
 					<item chance="10">
-						<item id="48973" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - Standard Attack Critical Rate - Balance -->
+						<item id="48973" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - Critical Rate for Basic Attacks - Balance -->
 					</item>
 					<item chance="10">
 						<item id="48974" count="1" minEnchant="1" maxEnchant="1" /> <!-- Artifact - P. Skill Critical Rate - Balance -->
@@ -1108,7 +1108,7 @@
 						<item id="48969" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - P. Atk. - Balance -->
 					</item>
 					<item chance="10">
-						<item id="48973" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - Standard Attack Critical Rate - Balance -->
+						<item id="48973" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - Critical Rate for Basic Attacks - Balance -->
 					</item>
 					<item chance="10">
 						<item id="48974" count="1" minEnchant="3" maxEnchant="3" /> <!-- Artifact - P. Skill Critical Rate - Balance -->
@@ -1179,14 +1179,14 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39442" toLevel="1" name="Five-colored Sweets">
-		<!-- For $s1, Acquired XP/ SP +$s2, Vitality bonus +$s3, P./ M. Atk. and P./ M. Def. +$s4. Cooldown: $s5 -->
+		<!-- For $s1, acquired XP/ SP +$s2, Vitality bonus +$s3, P. Atk./ P. Def./ M. Atk./ M. Def. +$s4. Cooldown: $s5 -->
 		<icon>icon.ev_ricecake_potion</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>300000</reuseDelay>
 	</skill>
 	<skill id="39443" toLevel="1" name="Golden Orc Potion">
-		<!-- For $s1, Acquired XP/ SP +$s2, Vitality bonus +$s3, P./ M. Atk. and P./ M. Def. +$s4. Cooldown: $s5 -->
+		<!-- For $s1, acquired XP/ SP +$s2, Vitality bonus +$s3, P. Atk./ P. Def./ M. Atk./ M. Def. +$s4. Cooldown: $s5 -->
 		<icon>icon.etc_potion_gold_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1290,7 +1290,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="39465" toLevel="1" name="Anniversary Celebration Transformation">
-		<!-- Transforms you into a Snow Man, Scarecrow Jack, Tin Golem, Tow, Lure Tow, Heavy Tow, Warm Tow, White Dog, Pink Dog, or Golden Dog for $s1 <Alt + left click> to delete the buff. -->
+		<!-- For $s1, transforms into one of the following funny creatures: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue, White Dog, Pink Dog, Golden Dog. To remove the effect, use Alt + left mouse click. -->
 		<icon>icon.skill11540</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -1300,7 +1300,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="39466" toLevel="1" name="Anniversary Talisman">
-		<!-- Acquired XP/ SP +$s1. -->
+		<!-- Acquired XP/ SP +$s1 -->
 		<icon>icon.ev_L2_soul_ore</icon>
 		<operateType>P</operateType>
 		<isMagic>3</isMagic> <!-- Dance Skill -->
@@ -1324,7 +1324,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39470" toLevel="1" name="Freya's Ice Rose">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P. Atk./ M. Atk./ P. Def./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>icon.bm_freya_ice_rose</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1351,7 +1351,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39474" toLevel="5" name="Freya's Summoning Stick">
-		<!-- Summons an Ice Knight, Klacias, Icy Breath or Freya. -->
+		<!-- Summons Frozen Labyrinth' Knight, Klacias, Icy Breath or Freya. -->
 		<operateType>A1</operateType>
 		<isMagic>7</isMagic>
 		<hitTime>3000</hitTime>
@@ -1383,7 +1383,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39479" toLevel="1" name="Freya's Frozen Scroll">
-		<!-- For 10 min., Vitality Consumption +$s1 and Acquired XP/ SP +$s2 while hunting. Remains after death. Cooldown is 9 min. Only usable when 1 or more Vitality slot is full. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +$s1, acquired XP/ SP +$s2. The effect remains after death. Cooldown: 9 min. Does not stack with Freya's Scroll of Storm, Freya's Scroll of Blessing, Maphr's Scroll of Storm. -->
 		<icon>icon.freya_scroll</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1529,7 +1529,6 @@
 		</effects>
 	</skill>
 	<skill id="39486" toLevel="4" name="Elite Monster Reward Box">
-		<!-- This Skill has no description -->
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
@@ -1614,7 +1613,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39488" toLevel="1" name="PA Ice Rose">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P. Atk./ M. Atk./ P. Def./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>icon.bm_freya_ice_rose</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1623,7 +1622,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="39489" toLevel="1" name="PA Scroll of Storm">
-		<!-- For 10 min., Vitality Consumption +$s1 and Acquired XP/ SP +$s2 while hunting. Remains after death. Cooldown is 9 min. Only usable when 1 or more Vitality slot is full. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +$s1, acquired XP/ SP +$s2. The effect remains after death. Cooldown: 9 min. -->
 		<icon>icon.bm_freya_storm_scroll</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -1651,7 +1650,7 @@
 		</effects>
 	</skill>
 	<skill id="39490" toLevel="3" name="PA Vitality Beer">
-		<!-- CON/ MEN/ LUC/ CHA $s2 for $s1 If additional Honey Vitality Beer is used while the Buff is still in effect, the buff will stack up to Lv. 3. Can be used wth Fish Stew. -->
+		<!-- For $s1, CON/ MEN/ LUC/ CHA $s2. Using additional Honey Vitality Beer items while the buff is active enables up to Lv. 3 stacked effects. -->
 		<icon>
 			<value level="1">icon.bm_royal_honey_beer_lv1</value>
 			<value level="2">icon.bm_royal_honey_beer_lv2</value>
@@ -1714,7 +1713,7 @@
 		</effects>
 	</skill>
 	<skill id="39492" toLevel="1" name="PA Angler's Blessing (1-hour)">
-		<!-- For $s1, Acquired XP/ SP +$s2 when fishing succeeds. Effect remains after death and cannot be deleted. -->
+		<!-- For $s1, acquired XP/ SP while fishing +$s2. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.fishing_zone_ticket</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>

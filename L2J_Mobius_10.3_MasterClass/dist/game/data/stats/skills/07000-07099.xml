@@ -145,7 +145,7 @@
 		</conditions>
 	</skill>
 	<skill id="7007" toLevel="4" name="Greater Seal of Flame">
-		<!-- Sets the target's allies on fire. ?ontinuously decreases the enemies' HP. Effect 8. -->
+		<!-- A protective ring of fire that constantly decreases HP of surrounding enemies and members of their alliance. Effect 8. -->
 		<abnormalLevel>8</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>DOT_ATTR</abnormalType>
@@ -217,7 +217,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="7014" toLevel="1" name="Test - Critical Damage Up">
-		<!-- Increases Received Critical Damage from standard attacks. -->
+		<!-- Increases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>A2</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -237,49 +237,49 @@
 		</effects>
 	</skill>
 	<skill id="7015" toLevel="1" name="Test - Critical Damage Down">
-		<!-- Received Critical Damage from standard attacks is dereased. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="7016" toLevel="1" name="Test - Critical Damage Up">
-		<!-- Increases Received Critical Damage from standard attacks. -->
+		<!-- Increases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="7017" toLevel="1" name="Test - Critical Damage Down">
-		<!-- Received Critical Damage from standard attacks is dereased. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="7018" toLevel="1" name="Test - Critical Rate Up">
-		<!-- Increases Received Critical Damage from standard attacks. -->
+		<!-- Increases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="7019" toLevel="1" name="Test - Critical Rate Down">
-		<!-- Received Critical Damage from standard attacks is dereased. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="7020" toLevel="1" name="Test - Critical Rate Up">
-		<!-- Increases Received Critical Damage from standard attacks. -->
+		<!-- Increases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="7021" toLevel="1" name="Test - Critical Rate Down">
-		<!-- Received Critical Damage from standard attacks is dereased. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -553,7 +553,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="7041" toLevel="1" name="Master's Blessing - Focus">
-		<!-- The GM is always by your side. For 1 h., Critical Rate for standard attacks +30%. -->
+		<!-- The GM is always by your side. For 1 h., Critical Rate for basic attacks +30%. -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -579,7 +579,7 @@
 		</effects>
 	</skill>
 	<skill id="7042" toLevel="1" name="Master's Blessing - Death Whisper">
-		<!-- The GM is always by your side. For 1h., Critical Damage for standard attacks +35%. -->
+		<!-- The GM is always by your side. For 1 h., Critical Damage for basic attacks +35%. -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -786,7 +786,7 @@
 		</effects>
 	</skill>
 	<skill id="7050" toLevel="1" name="Master's Blessing - Might">
-		<!-- The GM is always by your side. Increases P. Atk. by 15% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Atk. +15%. -->
 		<icon>icon.skill1068</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -812,7 +812,7 @@
 		</effects>
 	</skill>
 	<skill id="7051" toLevel="1" name="Master's Blessing - Shield">
-		<!-- The GM is always by your side. Increases P. Def. by 15% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Def. +15%. -->
 		<icon>icon.skill1040</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -890,7 +890,7 @@
 		</effects>
 	</skill>
 	<skill id="7054" toLevel="1" name="Master's Blessing - Empower">
-		<!-- The GM is always by your side. Increases M. Atk. by 75% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., M. Atk. +75%. -->
 		<icon>icon.skill1059</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -916,7 +916,7 @@
 		</effects>
 	</skill>
 	<skill id="7055" toLevel="1" name="Master's Blessing - Wind Walk">
-		<!-- The GM is always by your side. Increases Speed by 33 for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Speed +33. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -996,7 +996,7 @@
 		</effects>
 	</skill>
 	<skill id="7057" toLevel="1" name="Master's Blessing - Greater Might">
-		<!-- The GM is always by your side. Increases P. Atk. by 10% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Atk. +10%. -->
 		<icon>icon.skill1388</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1022,7 +1022,7 @@
 		</effects>
 	</skill>
 	<skill id="7058" toLevel="1" name="Master's Blessing - Greater Shield">
-		<!-- The GM is always by your side. Increases P. Def. by 15% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Def. +15%. -->
 		<icon>icon.skill1389</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1048,7 +1048,7 @@
 		</effects>
 	</skill>
 	<skill id="7059" toLevel="1" name="Master's Blessing - Wild Magic">
-		<!-- The GM is always by your side. For 1 h., increases by 2 the occurrence rate of damage that is caused by magic damage. -->
+		<!-- The GM is always by your side. For 1 h., M. Critical Rate +2. -->
 		<icon>icon.skill1303</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1111,7 +1111,7 @@
 		</effects>
 	</skill>
 	<skill id="7061" toLevel="1" name="Master's Blessing - Prophecy of Water">
-		<!-- The GM is always by your side. For 1 h., M. Critical Rate +2, MP Recovery Rate +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, and Debuff Resistance +10%. Speed -20% and Skill MP consumption -5%. -->
+		<!-- The GM is always by your side. For 1 h., M. Critical Rate +2, MP Recovery Rate +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP consumption -5%. -->
 		<icon>icon.skill1355</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1196,7 +1196,7 @@
 		</effects>
 	</skill>
 	<skill id="7062" toLevel="1" name="Master's Blessing - Prophecy of Fire">
-		<!-- The GM is always by your side. For 1 h., receives help from a great spirit: Max MP +20%, HP Recovery Rate +20%, M. Skill Critical Damage +20, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, and Debuff Resistance +10%. Speed -20%. -->
+		<!-- The GM is always by your side. For 1 h., receives help from the Great Spirit: Max MP +20%, HP Recovery Rate +20%, M. Skill Critical Damage +20, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. -->
 		<icon>icon.skill1356</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1277,7 +1277,7 @@
 		</effects>
 	</skill>
 	<skill id="7063" toLevel="1" name="Master's Blessing - Prophecy of Wind">
-		<!-- The GM is always by your side. For 1 h., Max HP +20%, Critical Rate for standard attacks +20%, M. Skill Critical Damage +20%, P. Atk. +10%, P./ M. Def. +20%, Atk. Spd./ Casting Spd. +20%, M. Atk. +20%, Debuff Resistance +10%, Speed -20%. With a certain chance, absorbs 5% of the inflicted damage as HP. -->
+		<!-- The GM is always by your side. For 1 h., Max HP +20%, Critical Rate for basic attacks +20%, M. Skill Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. With a certain chance, absorbs 5% of the inflicted damage as HP. -->
 		<icon>icon.skill1357</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1354,7 +1354,7 @@
 		</effects>
 	</skill>
 	<skill id="7064" toLevel="1" name="Master's Blessing - Chant of Victory">
-		<!-- The GM is always by your side. HP +20%. For 1 h., Max HP +20%, M. Skill Critical Rate +20, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, and P. Accuracy +4. -->
+		<!-- The GM is always by your side. With the help of the Great Spirit, recovers 20% HP. For 1 h., Max HP +20%, M. Skill Critical Rate +20, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, P. Accuracy +4. -->
 		<icon>icon.skill1363</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1972,7 +1972,7 @@
 		</effects>
 	</skill>
 	<skill id="7091" toLevel="1" name="Master's Blessing - Improve Critical Attack">
-		<!-- The GM is always by your side. Combines Critical Rate Increase and Critical Damage Increase to have more advanced critical increase effect. For 1 h., Critical Rate for standard attacks +30%, Critical Damage for standard attacks +35%. -->
+		<!-- The GM is always by your side. Empowers your critical attacks. For 1 h., Critical Rate for basic attacks +30%, Critical Damage for basic attacks +35%. -->
 		<icon>icon.skill1502</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2083,7 +2083,7 @@
 		</effects>
 	</skill>
 	<skill id="7094" toLevel="1" name="Master's Blessing - Sharpen Edge">
-		<!-- The GM is always by your side. Sharpens a bladed weapon. P. Atk. +5% and Critical Rate for standard attacks +20% for 1 h. -->
+		<!-- The GM is always by your side. Sharpens a bladed weapon. For 1 h., P. Atk. +5%, Critical Rate for basic attacks +20%. -->
 		<icon>icon.skill0825</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2162,7 +2162,7 @@
 		</effects>
 	</skill>
 	<skill id="7096" toLevel="1" name="Noblesse Blessing - GM's Blessing">
-		<!-- The GM is always by your side. Your buff/ de-buff doesn't disappear at death, but the Noblesse Blessing and Lucky Charm items disappear. -->
+		<!-- The GM is always by your side. Your buffs and debuffs remain after death, except for Noblesse Blessing and Lucky Charms' effects. -->
 		<icon>icon.skill19224</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>

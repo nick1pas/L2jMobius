@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="51001" toLevel="1" name="Sayha's Storm Lv. 2 (Event)">
-		<!-- For 20 min., Sayha's Grace Consumption +100%, acquired XP/ SP +150%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
+		<!-- For 20 min. while hunting, Sayha's Grace Consumption +100%, acquired XP/ SP +150%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
 		<icon>icon.bm_sayha_storm</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -30,7 +30,7 @@
 		</effects>
 	</skill>
 	<skill id="51002" toLevel="1" name="Sayha's Storm Lv. 2">
-		<!-- For 20 min., Sayha's Grace Consumption +100%, acquired XP/ SP +150%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
+		<!-- For 20 min. while hunting, Sayha's Grace Consumption +100%, acquired XP/ SP +150%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
 		<icon>icon.bm_sayha_storm</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -82,10 +82,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="50.0">
-						<item id="49844" count="1" /> <!-- Sayha's Blessing Chest -->
+						<item id="49844" count="1" /> <!-- Sayha's Blessing Pack -->
 					</item>
 					<item chance="50.0">
-						<item id="49851" count="1" /> <!-- Sayha's Storm Lv. 1 (Exchangeable) -->
+						<item id="49851" count="1" /> <!-- Sayha's Storm Lv. 1 -->
 					</item>
 				</items>
 			</effect>
@@ -115,7 +115,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="90876" count="1" /> <!-- Sayha's Aegis Chest -->
+						<item id="90876" count="1" /> <!-- Sayha's Grace Box -->
 					</item>
 				</items>
 			</effect>
@@ -145,7 +145,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="90876" count="1" /> <!-- Sayha's Aegis Chest -->
+						<item id="90876" count="1" /> <!-- Sayha's Grace Box -->
 					</item>
 				</items>
 			</effect>
@@ -164,6 +164,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="51008" toLevel="1" name="Eva's Stable Scroll: Enchant Head Accessory (Low-grade)">
+		<!-- Required for enchanting head accessories. -->
 		<icon>icon.scroll_of_unidentify_am_s</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
@@ -787,7 +788,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="60.0">
-						<item id="49757" count="1" /> <!-- Sayha's Holy Water -->
+						<item id="49757" count="1" /> <!-- Sayha's Holy Water - Sealed -->
 					</item>
 					<item chance="40.0">
 						<item id="49758" count="1" /> <!-- Blood Crystal -->
@@ -818,10 +819,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="40.0">
-						<item id="94271" count="1" /> <!-- Scroll: Boost Defense -->
+						<item id="94271" count="1" /> <!-- Scroll: Boost Defense - Sealed -->
 					</item>
 					<item chance="25.0">
-						<item id="49757" count="2" /> <!-- Sayha's Holy Water -->
+						<item id="49757" count="2" /> <!-- Sayha's Holy Water - Sealed -->
 					</item>
 					<item chance="10.0">
 						<item id="49671" count="1" /> <!-- B-grade Armor/ Accessory Ingredient Pack -->
@@ -861,19 +862,19 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="37.0">
-						<item id="94271" count="2" /> <!-- Scroll: Boost Defense -->
+						<item id="94271" count="2" /> <!-- Scroll: Boost Defense - Sealed -->
 					</item>
 					<item chance="37.0">
 						<item id="49664" count="1" /> <!-- B-grade Weapon Pack -->
 					</item>
 					<item chance="20.0">
-						<item id="49663" count="1" /> <!-- A-grade Ornament Ingredient Pack -->
+						<item id="49663" count="1" /> <!-- Special HP Recovery Potion -->
 					</item>
 					<item chance="5.0">
-						<item id="49662" count="1" /> <!-- A-grade Armor Ingredient Pack -->
+						<item id="49662" count="1" /> <!-- Stylish Color Title - Sealed -->
 					</item>
 					<item chance="1.0">
-						<item id="90014" count="1" /> <!-- A-grade Weapon Ingredient Pack -->
+						<item id="90014" count="1" /> <!-- High-grade Life Stone - Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -901,10 +902,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="40.0">
-						<item id="94187" count="1" /> <!-- Life Stone Lv. 1 - Armor -->
+						<item id="94187" count="1" /> <!-- Dim Life Stone Lv. 1 - Armor -->
 					</item>
 					<item chance="40.0">
-						<item id="94185" count="1" /> <!-- Life Stone Lv. 1 - Weapon -->
+						<item id="94185" count="1" /> <!-- Dim Life Stone Lv. 1 - Weapon -->
 					</item>
 					<item chance="15.0">
 						<item id="49761" count="1" /> <!-- A-grade Accessory Pack -->
@@ -913,7 +914,7 @@
 						<item id="49760" count="1" /> <!-- A-grade Armor Pack -->
 					</item>
 					<item chance="1.0">
-						<item id="49765" count="1" /> <!-- A-grade Weapon Pack -->
+						<item id="49765" count="1" /> <!-- Life Control Tower's Scroll of Blessing -->
 					</item>
 				</items>
 			</effect>
@@ -1006,31 +1007,31 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="11.12">
-						<item id="48056" count="1" /> <!-- Agathion - Aquarius -->
+						<item id="48056" count="1" /> <!-- Agathion Aquarius -->
 					</item>
 					<item chance="11.11">
-						<item id="48050" count="1" /> <!-- Agathion - Libra -->
+						<item id="48050" count="1" /> <!-- Agathion Libra -->
 					</item>
 					<item chance="11.11">
-						<item id="48052" count="1" /> <!-- Agathion - Taurus -->
+						<item id="48052" count="1" /> <!-- Agathion Taurus -->
 					</item>
 					<item chance="11.11">
-						<item id="48054" count="1" /> <!-- Agathion - Gemini -->
+						<item id="48054" count="1" /> <!-- Agathion Gemini -->
 					</item>
 					<item chance="11.11">
-						<item id="48053" count="1" /> <!-- Agathion - Leo -->
+						<item id="48053" count="1" /> <!-- Agathion Leo -->
 					</item>
 					<item chance="11.11">
-						<item id="48048" count="1" /> <!-- Agathion - Virgo -->
+						<item id="48048" count="1" /> <!-- Agathion Virgo -->
 					</item>
 					<item chance="11.11">
-						<item id="48055" count="1" /> <!-- Agathion - Scorpio -->
+						<item id="48055" count="1" /> <!-- Agathion Scorpio -->
 					</item>
 					<item chance="11.11">
-						<item id="48058" count="1" /> <!-- Agathion - Sagittarius -->
+						<item id="48058" count="1" /> <!-- Agathion Sagittarius -->
 					</item>
 					<item chance="11.11">
-						<item id="48049" count="1" /> <!-- Agathion - Capricorn -->
+						<item id="48049" count="1" /> <!-- Agathion Capricorn -->
 					</item>
 				</items>
 			</effect>
@@ -1174,16 +1175,16 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="25.0">
-						<item id="46254" count="1" /> <!-- Dandy's Home Run Ball -->
+						<item id="46254" count="1" /> <!-- Dandy's Home Run Ball - Sealed -->
 					</item>
 					<item chance="25.0">
-						<item id="49674" count="3" /> <!-- XP Growth Scroll -->
+						<item id="49674" count="3" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="25.0">
-						<item id="90831" count="3" /> <!-- Transformation Scroll: White Assassin - Event -->
+						<item id="90831" count="3" /> <!-- Transformation Scroll: White Assassin - Sealed -->
 					</item>
 					<item chance="25.0">
-						<item id="90874" count="3" /> <!-- Sayha's Storm Lv. 2 - Event -->
+						<item id="90874" count="3" /> <!-- Sayha's Storm Lv. 2 - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -1298,7 +1299,7 @@
 						<item id="305" count="1" minEnchant="8" maxEnchant="8" /> <!-- Tallum Glaive -->
 					</item>
 					<item chance="4.5">
-						<item id="269" count="1" minEnchant="8" maxEnchant="8" /> <!-- Blood Tornado -->
+						<item id="269" count="1" minEnchant="8" maxEnchant="8" /> <!-- Bloody Tornado -->
 					</item>
 					<item chance="4.5">
 						<item id="270" count="1" minEnchant="8" maxEnchant="8" /> <!-- Dragon Grinder -->
@@ -1362,10 +1363,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="90.0">
-						<item id="90987" minEnchant="3" maxEnchant="3" count="1" /> <!-- Savior's Earring +3 -->
+						<item id="90987" minEnchant="3" maxEnchant="3" count="1" /> <!-- Savior's Earring - Sealed -->
 					</item>
 					<item chance="10.0">
-						<item id="90987" count="1" /> <!-- Savior's Earring -->
+						<item id="90987" count="1" /> <!-- Savior's Earring - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -1630,7 +1631,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="91008" count="1" /> <!-- Dragon Relic Chest -->
+						<item id="91008" count="1" /> <!-- Dragon's Relic Box -->
 					</item>
 				</items>
 			</effect>
@@ -1664,40 +1665,40 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="8.37">
-						<item id="49959" count="1" /> <!-- Best STR Dye - 3rd Class -->
+						<item id="49959" count="1" /> <!-- Faded Best STR Dye <STR +3 CON -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49960" count="1" /> <!-- Best STR Dye - 3rd Class -->
+						<item id="49960" count="1" /> <!-- Faded Best STR Dye <STR +3 DEX -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49961" count="1" /> <!-- Best CON Dye - 3rd Class -->
+						<item id="49961" count="1" /> <!-- Faded Best CON Dye <CON +3 STR -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49962" count="1" /> <!-- Best CON Dye - 3rd Class -->
+						<item id="49962" count="1" /> <!-- Faded Best CON Dye <CON +3 DEX -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49963" count="1" /> <!-- Best DEX Dye - 3rd Class -->
+						<item id="49963" count="1" /> <!-- Faded Best DEX Dye <DEX +3 STR -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49964" count="1" /> <!-- Best DEX Dye - 3rd Class -->
+						<item id="49964" count="1" /> <!-- Faded Best DEX Dye <DEX +3 CON -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49965" count="1" /> <!-- Best INT Dye - 3rd Class -->
+						<item id="49965" count="1" /> <!-- Faded Best INT Dye <INT +3 MEN -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49966" count="1" /> <!-- Best INT Dye - 3rd Class -->
+						<item id="49966" count="1" /> <!-- Faded Best INT Dye <INT +3 WIT -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49967" count="1" /> <!-- Best MEN Dye - 3rd Class -->
+						<item id="49967" count="1" /> <!-- Faded Best MEN Dye <MEN +3 INT -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49968" count="1" /> <!-- Best MEN Dye - 3rd Class -->
+						<item id="49968" count="1" /> <!-- Faded Best MEN Dye <MEN +3 WIT -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49969" count="1" /> <!-- Best WIT Dye - 3rd Class -->
+						<item id="49969" count="1" /> <!-- Faded Best WIT Dye <WIT +3 INT -1> - Lv. 0 -->
 					</item>
 					<item chance="8.33">
-						<item id="49970" count="1" /> <!-- Best WIT Dye - 3rd Class -->
+						<item id="49970" count="1" /> <!-- Faded Best WIT Dye <WIT +3 MEN -1> - Lv. 0 -->
 					</item>
 				</items>
 			</effect>
@@ -1855,16 +1856,16 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="50.0">
-						<item id="90139" count="200" /> <!-- Silver Bait -->
+						<item id="90139" count="200" /> <!-- Silver Bait - Sealed -->
 					</item>
 					<item chance="30.0">
-						<item id="46254" count="10" /> <!-- Dandy's Home Run Ball -->
+						<item id="46254" count="10" /> <!-- Dandy's Home Run Ball - Sealed -->
 					</item>
 					<item chance="9.9945">
-						<item id="90149" count="1" /> <!-- Savior Scroll: Enchant Weapon -->
+						<item id="90149" count="1" /> <!-- Savior Scroll: Enchant Weapon - Sealed -->
 					</item>
 					<item chance="9.9945">
-						<item id="90990" count="1" /> <!-- Savior Scroll: Enchant Earring -->
+						<item id="90990" count="1" /> <!-- Scroll: Enchant Savior's Earring - Sealed -->
 					</item>
 					<item chance="0.01">
 						<item id="90988" count="1" /> <!-- Shining Savior's Earring -->
@@ -1913,7 +1914,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="51088" toLevel="1" name="Amulet of Winds">
-		<!-- When equipped, Acquired XP/ SP +20%, Acquired XP/ SP while fishing +50%, STR +1, CON +1, DEX +1, INT +1, WIT +1, MEN +1. -->
+		<!-- When equipped, acquired XP/ SP while hunting +20%, acquired XP/ SP while fishing +50%, STR +1, CON +1, DEX +1, INT +1, WIT +1, MEN +1. -->
 		<icon>icon.bm_sayha_rune</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -2022,7 +2023,7 @@
 		</effects>
 	</skill>
 	<skill id="51093" toLevel="1" name="Fire Attack">
-		<!-- Fire Attribute Attack +100. -->
+		<!-- Fire Attack +100. -->
 		<icon>icon.agathion_fire_1</icon>
 		<operateType>P</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -2112,7 +2113,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="51098" toLevel="1" name="Blue Dynasty Transformation">
-		<!-- Blue Dynasty outfit. Max HP/ MP +20%, Acquired XP/ SP +20% while Sayha's Grace is active. The effect remains after death. -->
+		<!-- Blue Dynasty outfit. Max HP/ MP +20%, acquired XP/ SP while hunting +20%, while Sayha's Grace is active. The effect remains after death. -->
 		<icon>icon.armor_t91_u_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2156,7 +2157,7 @@
 		</effects>
 	</skill>
 	<skill id="51099" toLevel="1" name="Transform: Kat the Cat">
-		<!-- Kat the Cat transformation. Max HP/ MP +20%, Acquired XP/ SP +20% while Sayha's Grace is active. The effect remains after death. -->
+		<!-- Kat the Cat transformation. Max HP/ MP +20%, acquired XP/ SP while hunting +20%, while Sayha's Grace is active. The effect remains after death. -->
 		<icon>icon.cat_the_cat_change_0</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>

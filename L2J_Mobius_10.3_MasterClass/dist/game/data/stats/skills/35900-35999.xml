@@ -37,7 +37,7 @@
 		</effects>
 	</skill>
 	<skill id="35901" toLevel="1" name="Archangel's Earring">
-		<!-- Power of standard attacks and P./ M. skills +2%. -->
+		<!-- Power of basic attacks and P./ M. skills +2% -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -58,7 +58,7 @@
 		</effects>
 	</skill>
 	<skill id="35902" toLevel="1" name="Archangel's Ring">
-		<!-- Received Critical Damage from standard attacks and Received P. Critical Damage/ M. Skill Critical Damage -5%. -->
+		<!-- Received Critical Damage from basic attacks and received P. Critical Damage/ M. Skill Critical Damage -5%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -265,7 +265,7 @@
 		</effects>
 	</skill>
 	<skill id="35915" toLevel="1" name="Warehouse for Artifacts">
-		<!-- Received P. Critical Rate -1.3%. -->
+		<!-- Received Critical Rate from basic attacks -1.3%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -294,7 +294,7 @@
 		</effects>
 	</skill>
 	<skill id="35917" toLevel="1" name="Warehouse for Talismans">
-		<!-- Target damage when immobilized +1.3%. -->
+		<!-- Damage to immobilized targets +1.3%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -313,7 +313,7 @@
 		</effects>
 	</skill>
 	<skill id="35918" toLevel="1" name="Prime Talisman Energy">
-		<!-- Target damage when immobilized +1%. -->
+		<!-- Damage to immobilized targets +1%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -535,7 +535,7 @@
 		</effects>
 	</skill>
 	<skill id="35932" toLevel="1" name="Giran Castle Guardian's Choice">
-		<!-- Received Critical Damage from standard attacks -1.3%. -->
+		<!-- Received Critical Damage from basic attacks -1.3%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -548,7 +548,7 @@
 		</effects>
 	</skill>
 	<skill id="35933" toLevel="1" name="Aden Castle Guardian's Choice">
-		<!-- Received Critical Damage from standard attacks -1%. -->
+		<!-- Received Critical Damage from basic attacks -1%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -587,7 +587,7 @@
 		</effects>
 	</skill>
 	<skill id="35936" toLevel="1" name="High-grade Skillbook">
-		<!-- Standard Attack Power, Vitality bonus +0.5%. -->
+		<!-- Basic Attack Power, Vitality bonus +0.5%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -882,7 +882,7 @@
 		</effects>
 	</skill>
 	<skill id="35948" toLevel="1" name="Aden Basic Knowledge">
-		<!-- Vitality Bonus +5% -->
+		<!-- Vitality bonus +5% -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -895,7 +895,7 @@
 		</effects>
 	</skill>
 	<skill id="35949" toLevel="1" name="Purge">
-		<!-- Critical Damage for standard attacks and P./ M. Skill Critical Damage +5%. -->
+		<!-- Critical Damage for basic attacks and P./ M. Skill Critical Damage +5%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1016,7 +1016,7 @@
 		</effects>
 	</skill>
 	<skill id="35954" toLevel="1" name="Art of Patience">
-		<!-- P./ M. Atk. and P./ M. Def. +3%. -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +3%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1041,7 +1041,7 @@
 		</effects>
 	</skill>
 	<skill id="35955" toLevel="1" name="Art of Tenacity">
-		<!-- P./ M. Atk. and P./ M. Def. +3%. -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +3%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1066,7 +1066,7 @@
 		</effects>
 	</skill>
 	<skill id="35956" toLevel="1" name="17th Anniversary Congratulations">
-		<!-- P./ M. Atk. and P./ M. Def. +5%. -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +5%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1091,7 +1091,7 @@
 		</effects>
 	</skill>
 	<skill id="35957" toLevel="5" name="Enchant Effect: +6 Blessed Exalted Heavy Armor">
-		<!-- Increases set effects. P. Def. +$s1, MP Recovery Rate +$s2 while standing/ sitting. -->
+		<!-- Enhances set effects. P. Def. +$s1, MP Recovery Rate +$s2 while standing/ sitting. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1207,7 +1207,7 @@
 		</effects>
 	</skill>
 	<skill id="35958" toLevel="5" name="Enchant Effect: +6 Blessed Exalted Light Armor">
-		<!-- Increases set effects. M. Def. +$s1, P. Evasion +$s2, MP Recovery Rate +$s3 while standing/ sitting, Debuff Resistance +$s4. -->
+		<!-- Enhances set effects. M. Def. +$s1, P. Evasion +$s2, MP Recovery Rate +$s3 while standing/ sitting, Debuff Resistance +$s4. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1366,7 +1366,7 @@
 		</effects>
 	</skill>
 	<skill id="35959" toLevel="5" name="Enchant Effect: +6 Blessed Exalted Robe">
-		<!-- Increases set effects. P. Def. +$s1, MP Recovery Rate while standing/ sitting +$s2, Weight limit +$s3. -->
+		<!-- Enhances set effects. P. Def. +$s1, MP Recovery Rate +$s2 while standing/ sitting, weight limit +$s3. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1507,7 +1507,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="35961" toLevel="1" name="Aden Ruler">
-		<!-- Critical Damage for standard attacks +3%, M. Skill Power +2%. -->
+		<!-- Critical Damage for basic attacks +3%, M. Skill Power +2%. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1541,17 +1541,17 @@
 		</effects>
 	</skill>
 	<skill id="35963" toLevel="1" name="Dreamer of the Legend Title">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +5%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="35964" toLevel="1" name="Freya's Blessing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attribute Attack +70, Attribute Resistance +70, Critical Damage for basic attacks and P./ M. Skill Critical Damage +5%, received damage from basic attacks and P./ M. Skill Critical Damage -5%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="35965" toLevel="16" name="Dragon's Critical Damage">
-		<!-- For 10 min., Critical Damage for standard attacks +1%. Consumes 100 pcs. Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
+		<!-- For 10 min., Critical Damage for basic attacks +1%. Consumes 100 Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
 		<icon>icon.skill35965</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -1598,7 +1598,7 @@
 		</effects>
 	</skill>
 	<skill id="35966" toLevel="16" name="Dragon's P. Critical Damage">
-		<!-- For 10 min., P. Skill Critical Damage +1%. Consumes 100 pcs. Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
+		<!-- For 10 min., P. Skill Critical Damage +1%. Consumes 100 Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
 		<icon>icon.skill35966</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -1645,7 +1645,7 @@
 		</effects>
 	</skill>
 	<skill id="35967" toLevel="16" name="Dragon's M. Critical Damage">
-		<!-- For 10 min., M. Skill Critical Damage +1%. Consumes 100 pcs. Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
+		<!-- For 10 min., M. Skill Critical Damage +1%. Consumes 100 Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
 		<icon>icon.skill35967</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -1692,7 +1692,7 @@
 		</effects>
 	</skill>
 	<skill id="35968" toLevel="16" name="Dragon's Battle Roar">
-		<!-- For 10 min., HP/ CP +1%. Consumes 100 pcs. Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
+		<!-- For 10 min., HP/ CP +1%. Consumes 100 Spirit Ore. Does not stack with such effects as Giant's Critical Damage and Giant's Battle Roar. -->
 		<icon>icon.skill35968</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -1768,7 +1768,7 @@
 		</effects>
 	</skill>
 	<skill id="35969" toLevel="5" name="Dragon's Skills">
-		<!-- STR/ DEX/ CON/ INT/ WIT/ MEN +1/LUC +1/Cha +1 -->
+		<!-- CON/ MEN +1 -->
 		<icon>icon.skill35969</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1843,7 +1843,7 @@
 		</effects>
 	</skill>
 	<skill id="35970" toLevel="5" name="Dragon Skin Shirt Augmentation Effect: Attribute Attack">
-		<!-- Attribute Attack +25 -->
+		<!-- Attribute Attack +5 -->
 		<icon>icon.skill35970</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1859,7 +1859,7 @@
 		</effects>
 	</skill>
 	<skill id="35971" toLevel="5" name="Dragon Skin Shirt Augmentation Effect: Attribute Resistance">
-		<!-- Attribute Resistance +25 -->
+		<!-- Attribute Resistance +5 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1926,7 +1926,7 @@
 		</effects>
 	</skill>
 	<skill id="35972" toLevel="5" name="Dragon Skin Shirt Augmentation Effect: Atk. Spd.">
-		<!-- Atack Speed +50 -->
+		<!-- Atk. Spd. +10 -->
 		<icon>icon.skill35972</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1943,7 +1943,7 @@
 		</effects>
 	</skill>
 	<skill id="35973" toLevel="5" name="Dragon Skin Shirt Augmentation Effect: Casting Spd.">
-		<!-- M. Atack Speed +50 -->
+		<!-- Casting Spd. +10 -->
 		<icon>icon.skill35973</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2376,7 +2376,7 @@
 		</effects>
 	</skill>
 	<skill id="35993" toLevel="1" name="Collection_0526_Enhanced Krishna Caster">
-		<!-- Damage to immobilized targets +3.5%] -->
+		<!-- Damage to immobilized targets +3.5% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -2432,7 +2432,7 @@
 		</effects>
 	</skill>
 	<skill id="35997" toLevel="1" name="Collection_0526_Helios Fighter">
-		<!-- Fixed Damage Resistance +3% -->
+		<!-- Damage Resistance +3% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>

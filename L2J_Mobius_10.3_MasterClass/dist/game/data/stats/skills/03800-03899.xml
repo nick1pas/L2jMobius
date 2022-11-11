@@ -178,7 +178,7 @@
 		</effects>
 	</skill>
 	<skill id="3809" toLevel="1" name="Adamantite Ring">
-		<!-- Increases MP Recovery Bonus. -->
+		<!-- Increases MP Recovery Rate. -->
 		<icon>icon.accessary_adamantite_ring_i00</icon>
 		<magicLevel>58</magicLevel>
 		<operateType>P</operateType>
@@ -242,7 +242,7 @@
 		</effects>
 	</skill>
 	<skill id="3814" toLevel="1" name="Phoenix Ring">
-		<!-- Increases MP Recovery Bonus. -->
+		<!-- Increases MP Recovery Rate. -->
 		<icon>icon.accessary_phoenixs_ring_i00</icon>
 		<magicLevel>64</magicLevel>
 		<operateType>P</operateType>
@@ -255,7 +255,7 @@
 		</effects>
 	</skill>
 	<skill id="3815" toLevel="1" name="Phoenix Earring">
-		<!-- Increases Resistance to attack magic by $s1. -->
+		<!-- M. Damage Resistance +$s1. -->
 		<icon>icon.accessary_phoenixs_earing_i00</icon>
 		<magicLevel>64</magicLevel>
 		<operateType>P</operateType>
@@ -268,7 +268,7 @@
 		</effects>
 	</skill>
 	<skill id="3816" toLevel="1" name="Majestic Necklace">
-		<!-- Increases Resistance to attack magic by $s1. -->
+		<!-- M. Damage Resistance +$s1. -->
 		<icon>icon.accessary_inferno_necklace_i00</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -422,7 +422,7 @@
 		</effects>
 	</skill>
 	<skill id="3827" toLevel="1" name="Sword of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -435,7 +435,7 @@
 		</effects>
 	</skill>
 	<skill id="3828" toLevel="1" name="Sword of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -448,7 +448,7 @@
 		</effects>
 	</skill>
 	<skill id="3829" toLevel="1" name="Sword of Stun">
-		<!-- Inflicts Stun on the enemy at a certain probability after a standard attack. -->
+		<!-- Stuns the target after a basic attack. -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>70</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -462,7 +462,7 @@
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5665</skillId> <!-- Stun -->
+				<skillId>5665</skillId> <!-- Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -508,7 +508,7 @@
 		</effects>
 	</skill>
 	<skill id="3832" toLevel="1" name="Rapier of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -521,7 +521,7 @@
 		</effects>
 	</skill>
 	<skill id="3833" toLevel="1" name="Rapier of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -534,7 +534,7 @@
 		</effects>
 	</skill>
 	<skill id="3834" toLevel="1" name="Rapier of Stun">
-		<!-- Inflicts Stun on the enemy at a certain probability after a standard attack. -->
+		<!-- Stuns the target after a basic attack. -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>70</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -548,7 +548,7 @@
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5666</skillId> <!-- Stun -->
+				<skillId>5666</skillId> <!-- Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -594,7 +594,7 @@
 		</effects>
 	</skill>
 	<skill id="3837" toLevel="1" name="Dual-blade Weapon of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -607,7 +607,7 @@
 		</effects>
 	</skill>
 	<skill id="3838" toLevel="1" name="Dual Swords of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -620,7 +620,7 @@
 		</effects>
 	</skill>
 	<skill id="3839" toLevel="1" name="Dual-blade Weapon of Stun">
-		<!-- Inflicts Stun on the enemy at a certain probability after a standard attack. -->
+		<!-- Stuns the target after a basic attack. -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>70</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -634,7 +634,7 @@
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5667</skillId> <!-- Stun -->
+				<skillId>5667</skillId> <!-- Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -695,7 +695,7 @@
 		</effects>
 	</skill>
 	<skill id="3844" toLevel="1" name="Two-handed Sword of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -708,7 +708,7 @@
 		</effects>
 	</skill>
 	<skill id="3845" toLevel="2" name="Two-handed Sword of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>
 			<value level="1">58</value>
@@ -779,7 +779,7 @@
 		</effects>
 	</skill>
 	<skill id="3850" toLevel="1" name="Ancient Sword of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -792,7 +792,7 @@
 		</effects>
 	</skill>
 	<skill id="3851" toLevel="2" name="Ancient Sword of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>
 			<value level="1">58</value>
@@ -829,7 +829,7 @@
 		</effects>
 	</skill>
 	<skill id="3853" toLevel="2" name="Sword of Mana Regeneration">
-		<!-- Increases Max MP. -->
+		<!-- Increases MP Recovery Rate. -->
 		<icon>icon.skill1047</icon>
 		<magicLevel>
 			<value level="1">61</value>
@@ -933,7 +933,7 @@
 		</effects>
 	</skill>
 	<skill id="3860" toLevel="1" name="Dagger of Regeneration">
-		<!-- Increases HP Recovery Bonus. -->
+		<!-- Increases HP Recovery Rate. -->
 		<icon>icon.skill1044</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -946,7 +946,7 @@
 		</effects>
 	</skill>
 	<skill id="3861" toLevel="1" name="Dagger of Poison">
-		<!-- Has a chance to poison the enemy after a standard attack. -->
+		<!-- Poisons the target after a basic attack. -->
 		<icon>icon.skill0129</icon>
 		<magicLevel>70</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1140,7 +1140,7 @@
 		</effects>
 	</skill>
 	<skill id="3873" toLevel="2" name="Polearm of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>
 			<value level="1">58</value>
@@ -1159,7 +1159,7 @@
 		</effects>
 	</skill>
 	<skill id="3874" toLevel="1" name="Polearm of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>64</magicLevel>
 		<operateType>P</operateType>
@@ -1172,7 +1172,7 @@
 		</effects>
 	</skill>
 	<skill id="3875" toLevel="1" name="Polearm of Regeneration">
-		<!-- Increases HP Recovery Bonus. -->
+		<!-- Increases HP Recovery Rate. -->
 		<icon>icon.skill1044</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -1185,7 +1185,7 @@
 		</effects>
 	</skill>
 	<skill id="3876" toLevel="1" name="Polearm of Stun">
-		<!-- Inflicts Stun on the enemy at a certain probability after a standard attack. -->
+		<!-- Stuns the target after a basic attack. -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>70</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1199,7 +1199,7 @@
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5669</skillId> <!-- Stun -->
+				<skillId>5669</skillId> <!-- Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1287,7 +1287,7 @@
 		</effects>
 	</skill>
 	<skill id="3882" toLevel="1" name="Fist Weapon of Stun">
-		<!-- Inflicts Stun on the enemy at a certain probability after a standard attack. -->
+		<!-- Stuns the target after a basic attack. -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>70</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1301,13 +1301,13 @@
 				<targetType>TARGET</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>5670</skillId> <!-- Stun -->
+				<skillId>5670</skillId> <!-- Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="3883" toLevel="1" name="Fist Weapon of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -1341,7 +1341,7 @@
 		</effects>
 	</skill>
 	<skill id="3885" toLevel="2" name="Blunt Weapon of Stun">
-		<!-- Inflicts Stun on the enemy at a certain probability after a standard attack. -->
+		<!-- Stuns the target after a basic attack. -->
 		<icon>icon.skill0100</icon>
 		<magicLevel>61</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1380,7 +1380,7 @@
 		</effects>
 	</skill>
 	<skill id="3887" toLevel="1" name="Blunt Weapon of Regeneration">
-		<!-- Increases HP Recovery Bonus. -->
+		<!-- Increases HP Recovery Rate. -->
 		<icon>icon.skill1044</icon>
 		<magicLevel>70</magicLevel>
 		<operateType>P</operateType>
@@ -1473,7 +1473,7 @@
 		</effects>
 	</skill>
 	<skill id="3893" toLevel="1" name="Blunt Weapon of Mana Regeneration">
-		<!-- Increases MP Recovery Bonus. -->
+		<!-- Increases MP Recovery Rate. -->
 		<icon>icon.skill1047</icon>
 		<magicLevel>70</magicLevel>
 		<operateType>P</operateType>
@@ -1486,7 +1486,7 @@
 		</effects>
 	</skill>
 	<skill id="3894" toLevel="1" name="Two-handed Blunt Weapon of Critical Damage">
-		<!-- Increases Critical Damage for standard attacks. -->
+		<!-- Increases Critical Damage for basic attacks. -->
 		<icon>icon.skill0193</icon>
 		<magicLevel>67</magicLevel>
 		<operateType>P</operateType>
@@ -1499,7 +1499,7 @@
 		</effects>
 	</skill>
 	<skill id="3895" toLevel="3" name="Two-handed Blunt Weapon of Critical Rate">
-		<!-- Increases Critical Rate for standard attacks. -->
+		<!-- Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill1077</icon>
 		<magicLevel>
 			<value level="1">58</value>

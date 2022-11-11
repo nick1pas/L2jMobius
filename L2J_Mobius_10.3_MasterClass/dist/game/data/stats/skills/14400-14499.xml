@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="14400" toLevel="1" name="Valakas: Dragon Breath">
-		<!-- HP decreases rapidly from flame momentarily. -->
+		<!-- You are engulfed in flames and rapidly lose HP. -->
 		<icon>icon.skill4683</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -36,7 +36,7 @@
 		</effects>
 	</skill>
 	<skill id="14401" toLevel="1" name="Valakas: Dragon Breath">
-		<!-- HP decreases rapidly from flame momentarily. -->
+		<!-- You are engulfed in flames and rapidly lose HP. -->
 		<icon>icon.skill4683</icon>
 		<operateType>A2</operateType>
 		<castRange>600</castRange>
@@ -109,7 +109,7 @@
 		</effects>
 	</skill>
 	<skill id="14404" toLevel="1" name="Valakas: Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill4689</icon>
 		<operateType>A2</operateType>
 		<hitTime>3000</hitTime>
@@ -1401,7 +1401,7 @@
 		</endEffects>
 	</skill>
 	<skill id="14463" toLevel="1" name="Apherus Curse">
-		<!-- HP is decresed. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- HP is decreased. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill1170</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1581,7 +1581,7 @@
 		</effects>
 	</skill>
 	<skill id="14469" toLevel="1" name="Aerial Yoke">
-		<!-- The body floats up in the magic by magic. No action is possible. -->
+		<!-- Enemies are bound in the air, unable to do anything. -->
 		<icon>icon.skill1072</icon>
 		<operateType>A2</operateType>
 		<castRange>500</castRange>
@@ -1690,7 +1690,7 @@
 		</effects>
 	</skill>
 	<skill id="14474" toLevel="1" name="Octavis Connection">
-		<!-- Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- . Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<operateType>A2</operateType>
 		<castRange>1000</castRange>
 		<effectPoint>2</effectPoint>
@@ -1709,7 +1709,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="14475" toLevel="1" name="Octavis Connection">
-		<!-- Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- . Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<operateType>A2</operateType>
 		<castRange>1000</castRange>
 		<effectPoint>2</effectPoint>
@@ -2102,7 +2102,7 @@
 		</effects>
 	</skill>
 	<skill id="14492" toLevel="1" name="Enragement">
-		<!-- Frantic status. -->
+		<!-- Enraged. -->
 		<icon>icon.skill1062</icon>
 		<operateType>A2</operateType>
 		<hitTime>500</hitTime>

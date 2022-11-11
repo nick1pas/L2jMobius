@@ -959,7 +959,7 @@
 		</effects>
 	</skill>
 	<skill id="3537" toLevel="3" name="Set Effect - Majestic Heavy Armor, 2-piece">
-		<!-- P. Accuracy +3, HP Recovery Bonus +5.24%. -->
+		<!-- P. Accuracy +3, HP Recovery Rate +5.24%. -->
 		<icon>icon.armor_t83_ul_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1283,7 +1283,7 @@
 		</effects>
 	</skill>
 	<skill id="3553" toLevel="4" name="Set Effect - Imperial Crusader Armor, 2-piece">
-		<!-- HP Recovery Bonus +6%. -->
+		<!-- HP Recovery Rate +6%. -->
 		<icon>icon.armor_t88_u_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -2151,7 +2151,7 @@
 		</effects>
 	</skill>
 	<skill id="3584" toLevel="1" name="Infinity Power - Protection">
-		<!-- For $s1, blocks $s2 debuff attack(s). -->
+		<!-- For $s1, blocks debuffs (up to $s2). -->
 		<icon>icon.skill0100</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -2606,7 +2606,7 @@
 		</effects>
 	</skill>
 	<skill id="3599" toLevel="1" name="Polearm Multi-attack">
-		<!-- Increases the number of targets hit with a spear. -->
+		<!-- Allows to attack multiple opponents, when using a spear. <Low HP/ MP absorption, when using a spear> -->
 		<icon>icon.skill0216</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

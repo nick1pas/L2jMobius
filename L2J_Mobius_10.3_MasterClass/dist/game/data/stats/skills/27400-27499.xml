@@ -77,7 +77,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27422" toLevel="1" name="Nevit's Rune (Dragon's Ascension)">
-		<!-- Acquired XP/ SP +100%. -->
+		<!-- Acquired XP/ SP +100%. Required level: 1-99. -->
 		<icon>br_cashtex.item.br_cash_rune_of_feather_i00</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -359,7 +359,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100">
-						<item id="46326" count="1" minEnchant="1" maxEnchant="9" /> <!-- Shadow Dual Sword -->
+						<item id="46326" count="1" minEnchant="1" maxEnchant="9" /> <!-- Shadow Dual Swords -->
 					</item>
 				</items>
 			</effect>
@@ -375,7 +375,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27439" toLevel="6" name="Vital Stone - Vital Wind">
-		<!-- For $s1, Vitality Consumption +$s2 and Acquired XP/ SP +$s3 when hunting. -->
+		<!-- For $s1 while hunting, Vitality Consumption +$s2, acquired XP/ SP +$s3. Cooldown: 20 min. -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_vital</value>
 			<value level="2">icon.etc_bm_jewel_vital</value>
@@ -435,7 +435,7 @@
 		</effects>
 	</skill>
 	<skill id="27440" toLevel="10" name="Cat's Eye">
-		<!-- Damage Reflection Resistance +$s1. -->
+		<!-- Damage Reflection Resistance +$s1 -->
 		<icon>BranchIcon.Icon.etc_bm_jewel_catseye_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -538,7 +538,7 @@
 		</effects>
 	</skill>
 	<skill id="27442" toLevel="10" name="Amethyst">
-		<!-- PvP Damage +$s1. -->
+		<!-- PvP damage +$s1. -->
 		<icon>BranchIcon.Icon.etc_bm_jewel_amethyst_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -600,7 +600,7 @@
 		</effects>
 	</skill>
 	<skill id="27443" toLevel="11" name="Amethyst - Remove Invincibility/Immunity">
-		<!-- Removes invincibility or debuff immunity from the target. -->
+		<!-- Removes invincibility/ debuff immunity from the target. -->
 		<icon>BranchIcon.Icon.etc_bm_jewel_amethyst_i00</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>

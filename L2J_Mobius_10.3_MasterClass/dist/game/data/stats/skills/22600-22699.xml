@@ -430,7 +430,7 @@
 		</conditions>
 	</skill>
 	<skill id="22617" toLevel="1" name="Vitality Maintaining Potion">
-		<!-- Maintains Vitality for 60 min. -->
+		<!-- Sustains Vitality for 60 min. -->
 		<icon>BranchSys2.icon.br_essence_rose_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -866,7 +866,7 @@
 						<item id="33479" count="1" /> <!-- Destruction Scroll: Enchant R-grade Armor -->
 					</item>
 					<item chance="0.2941">
-						<item id="34954" count="1" /> <!-- Lv. 5 Legendary Dye Pack - Event -->
+						<item id="34954" count="1" /> <!-- Legendary Dye Box Lv. 5 - Event -->
 					</item>
 					<item chance="1.1765">
 						<item id="22279" count="1" /> <!-- PA Vitality (1-hour) - Event -->
@@ -875,7 +875,7 @@
 						<item id="22968" count="1" /> <!-- Package: Black Bear Bracelet (30-day) -->
 					</item>
 					<item chance="4.4118">
-						<item id="13383" count="1" /> <!-- Minion Coupon (5-hour) - Event -->
+						<item id="13383" count="1" /> <!-- Pet Necklace Coupon (5-hour) - Event -->
 					</item>
 					<item chance="5.8824">
 						<item id="21185" count="1" /> <!-- Transformation Scroll: Zaken - Event -->
@@ -966,16 +966,16 @@
 						<item id="23208" count="1" /> <!-- Red Potion of Regeneration -->
 					</item>
 					<item chance="28">
-						<item id="23209" count="1" /> <!-- Blue Potion of Recovery -->
+						<item id="23209" count="1" /> <!-- Blue Recovery Potion -->
 					</item>
 					<item chance="10">
 						<item id="22204" count="1" /> <!-- Attribute Stone Pack - Event -->
 					</item>
 					<item chance="4">
-						<item id="35742" count="1" /> <!-- Low-grade Scroll: Reputation -->
+						<item id="35742" count="1" /> <!-- Scroll: Reputation (Low-grade) -->
 					</item>
 					<item chance="0.6">
-						<item id="35755" count="1" /> <!-- Mid-grade Scroll: Reputation -->
+						<item id="35755" count="1" /> <!-- Scroll: Reputation (Mid-grade) -->
 					</item>
 					<item chance="4">
 						<item id="23147" count="1" /> <!-- Ghost Potion - Event -->
@@ -999,7 +999,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="21">
-						<item id="23207" count="1" /> <!-- Playful Hair Accessory Pack -->
+						<item id="23207" count="1" /> <!-- Playful Head Accessory Box -->
 					</item>
 					<item chance="0.003">
 						<item id="23201" count="1" /> <!-- Dark Accessory Pack - Event -->
@@ -1014,7 +1014,7 @@
 						<item id="19445" count="1" /> <!-- R95-grade Unbind Scroll -->
 					</item>
 					<item chance="0.07">
-						<item id="35749" count="1" /> <!-- R-grade Weapon Attribute Change Crystal - Event -->
+						<item id="35749" count="1" /> <!-- Attribute Change Crystal: R-grade Weapon - Event -->
 					</item>
 					<item chance="0.15">
 						<item id="23223" count="1" /> <!-- Monster Weapon Appearance Stone Pack A -->
@@ -1044,22 +1044,22 @@
 						<item id="23208" count="5" /> <!-- Red Potion of Regeneration -->
 					</item>
 					<item chance="22">
-						<item id="23209" count="5" /> <!-- Blue Potion of Recovery -->
+						<item id="23209" count="5" /> <!-- Blue Recovery Potion -->
 					</item>
 					<item chance="2.5">
-						<item id="35741" count="1" /> <!-- Low-grade Scroll: PK -->
+						<item id="35741" count="1" /> <!-- Scroll: PK (Low-grade) -->
 					</item>
 					<item chance="0.67">
-						<item id="35752" count="1" /> <!-- Mid-grade Scroll: PK -->
+						<item id="35752" count="1" /> <!-- Scroll: PK (Mid-grade) -->
 					</item>
 					<item chance="0.4">
 						<item id="30298" count="1" /> <!-- Superior Giant's Codex - Mastery -->
 					</item>
 					<item chance="2">
-						<item id="30381" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="30381" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="8">
-						<item id="30382" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="30382" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 				</items>
 			</effect>
@@ -1080,7 +1080,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="21">
-						<item id="23207" count="1" /> <!-- Playful Hair Accessory Pack -->
+						<item id="23207" count="1" /> <!-- Playful Head Accessory Box -->
 					</item>
 					<item chance="0.003">
 						<item id="23201" count="1" /> <!-- Dark Accessory Pack - Event -->
@@ -1095,7 +1095,7 @@
 						<item id="19445" count="1" /> <!-- R95-grade Unbind Scroll -->
 					</item>
 					<item chance="0.07">
-						<item id="35749" count="1" /> <!-- R-grade Weapon Attribute Change Crystal - Event -->
+						<item id="35749" count="1" /> <!-- Attribute Change Crystal: R-grade Weapon - Event -->
 					</item>
 					<item chance="0.15">
 						<item id="23224" count="1" /> <!-- Monster Weapon Appearance Stone Pack B -->
@@ -1125,29 +1125,29 @@
 						<item id="23208" count="5" /> <!-- Red Potion of Regeneration -->
 					</item>
 					<item chance="22">
-						<item id="23209" count="5" /> <!-- Blue Potion of Recovery -->
+						<item id="23209" count="5" /> <!-- Blue Recovery Potion -->
 					</item>
 					<item chance="2.5">
-						<item id="35741" count="1" /> <!-- Low-grade Scroll: PK -->
+						<item id="35741" count="1" /> <!-- Scroll: PK (Low-grade) -->
 					</item>
 					<item chance="0.67">
-						<item id="35752" count="1" /> <!-- Mid-grade Scroll: PK -->
+						<item id="35752" count="1" /> <!-- Scroll: PK (Mid-grade) -->
 					</item>
 					<item chance="0.4">
 						<item id="30298" count="1" /> <!-- Superior Giant's Codex - Mastery -->
 					</item>
 					<item chance="2">
-						<item id="30381" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="30381" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="8">
-						<item id="30382" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="30382" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 				</items>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="22630" toLevel="1" name="Ghost Potion">
-		<!-- For 2 h., P. Atk. +20%, M. Atk. +85%, and Speed +20. -->
+		<!-- For 2 h., P. Atk. +20%, M. Atk. +85%, Speed +20. -->
 		<icon>icon.etc_int_symbol_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1167,7 +1167,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22631" toLevel="2" name="Sweet Summer Slushie">
-		<!-- Change into the Beach Swimsuit. For $s1 h., Atk. Spd. +$s2, Casting Spd. +$s3, Speed +4, and Max HP/ MP +$s5. Cooldown is $s6 h. -->
+		<!-- Changes the armor appearance to that of Beach Swimsuit. For $s1 h., Atk. Spd. +$s2, Casting Spd. +$s3, Speed +$s4, Max HP/ MP +$s5. Cooldown: $s6 h. -->
 		<icon>BranchSys3.icon1.g_ev_sweet_icewater</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -1215,7 +1215,7 @@
 						<item id="23170" count="1" /> <!-- Fantastic Summer Slushie - Event -->
 					</item>
 					<item chance="18.5">
-						<item id="23172" count="1" /> <!-- Beach Swimsuit Appearance Stone - Event -->
+						<item id="23172" count="1" /> <!-- Appearance Stone: Beach Swimsuit - Event -->
 					</item>
 					<item chance="1.5">
 						<item id="23173" count="1" /> <!-- Alluring Swimsuit -->
@@ -1358,7 +1358,7 @@
 		</effects>
 	</skill>
 	<skill id="22646" toLevel="1" name="Reanimated Corpse Mask">
-		<!-- STR +1, CON +1, and DEX +1. -->
+		<!-- STR +1, CON +1, DEX +1 -->
 		<icon>icon.etc_ev_draco_hair_acc</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1379,7 +1379,7 @@
 		</effects>
 	</skill>
 	<skill id="22647" toLevel="1" name="Shriek Mask">
-		<!-- CON +1, DEX +1, and WIT +1. -->
+		<!-- CON +1, DEX +1, WIT +1. -->
 		<icon>icon.etc_ev_draco_hair_acc</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1400,7 +1400,7 @@
 		</effects>
 	</skill>
 	<skill id="22648" toLevel="1" name="Red Devil Mask">
-		<!-- INT +1, MEN +1, and WIT +1. -->
+		<!-- INT +1, MEN +1, WIT +1 -->
 		<icon>icon.etc_ev_draco_hair_acc</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1621,22 +1621,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="16">
-						<item id="23211" count="1" /> <!-- Drake Maul Appearance Stone -->
+						<item id="23211" count="1" /> <!-- Appearance Stone: Drake Maul -->
 					</item>
 					<item chance="14">
-						<item id="23213" count="1" /> <!-- Spezion's Claw Appearance Stone -->
+						<item id="23213" count="1" /> <!-- Appearance Stone: Spezion's Claw -->
 					</item>
 					<item chance="16">
-						<item id="23215" count="1" /> <!-- Steregos' Dagger Appearance Stone -->
+						<item id="23215" count="1" /> <!-- Appearance Stone: Steregos' Dagger -->
 					</item>
 					<item chance="16">
-						<item id="23221" count="1" /> <!-- Yehan Klanikus' Appearance Stone -->
+						<item id="23221" count="1" /> <!-- Appearance Stone: Yehan Klanikus' Tirbing -->
 					</item>
 					<item chance="16">
-						<item id="23217" count="1" /> <!-- Darion's Hellblade Appearance Stone -->
+						<item id="23217" count="1" /> <!-- Appearance Stone: Darion's Hellblade -->
 					</item>
 					<item chance="16">
-						<item id="23219" count="1" /> <!-- Tiat's Tiatenon Appearance Stone -->
+						<item id="23219" count="1" /> <!-- Appearance Stone: Tiat's Tiatenon -->
 					</item>
 				</items>
 			</effect>
@@ -1658,22 +1658,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="16">
-						<item id="23212" count="1" /> <!-- Freya's Staff Appearance Stone -->
+						<item id="23212" count="1" /> <!-- Appearance Stone: Freya's Staff -->
 					</item>
 					<item chance="14">
-						<item id="23222" count="1" /> <!-- Mardil's Wind Appearance Stone -->
+						<item id="23222" count="1" /> <!-- Appearance Stone: Mardil's Wind -->
 					</item>
 					<item chance="16">
-						<item id="23214" count="1" /> <!-- Maliss Stormer Appearance Stone -->
+						<item id="23214" count="1" /> <!-- Appearance Stone: Maliss Stormer -->
 					</item>
 					<item chance="16">
-						<item id="23216" count="1" /> <!-- Ron's Dual Blunt Weapon Appearance Stone -->
+						<item id="23216" count="1" /> <!-- Appearance Stone: Ron's Dual Blunt Weapons -->
 					</item>
 					<item chance="16">
-						<item id="23218" count="1" /> <!-- Doll's Butcher Blades Appearance Stone -->
+						<item id="23218" count="1" /> <!-- Appearance Stone: Butcher Blades -->
 					</item>
 					<item chance="16">
-						<item id="23220" count="1" /> <!-- Aenkinel's Astaroth Appearance Stone -->
+						<item id="23220" count="1" /> <!-- Appearance Stone: Aenkinel's Astaroth -->
 					</item>
 				</items>
 			</effect>
@@ -2817,7 +2817,7 @@
 		</effects>
 	</skill>
 	<skill id="22695" toLevel="1" name="Harp's Sealed Rune of Power">
-		<!-- STR +7 permanently, and has a 5% chance of Stunning all enemies within 400 grids for 3 sec. after a standard attack. -->
+		<!-- When in inventory, STR +7. With a 5% chance, stuns all enemies within 400 m for 3 sec. after a basic attack. -->
 		<icon>br_cashtex.skill.br_cash_rune_of_exp_buff_1</icon>
 		<operateType>P</operateType>
 		<passiveConditions>

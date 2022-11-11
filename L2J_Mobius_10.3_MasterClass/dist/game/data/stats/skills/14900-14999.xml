@@ -45,7 +45,7 @@
 		</effects>
 	</skill>
 	<skill id="14902" toLevel="1" name="Elise: Summon Tree of Life">
-		<!-- Summons a Tree of Life. The summoned tree heals nearby party members for 30 sec. Can also cast a debuff canceling blessing. -->
+		<!-- Summons Tree of Life. The summoned tree heals nearby party members for 30 sec. and removes debuffs from them. -->
 		<icon>icon.skill11774</icon>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -66,7 +66,7 @@
 		</effects>
 	</skill>
 	<skill id="14903" toLevel="1" name="Elise: Summon Tree of Life">
-		<!-- Summons a Tree of Life. The summoned tree heals nearby party members for 30 sec. Can also cast a debuff canceling blessing. -->
+		<!-- Summons Tree of Life. The summoned tree heals nearby party members for 30 sec. and removes debuffs from them. -->
 		<icon>icon.skill11774</icon>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -87,7 +87,7 @@
 		</effects>
 	</skill>
 	<skill id="14904" toLevel="1" name="Elise: Summon Tree of Life">
-		<!-- Summons a Tree of Life. The summoned tree heals nearby party members for 30 sec. Can also cast a debuff canceling blessing. -->
+		<!-- Summons Tree of Life. The summoned tree heals nearby party members for 30 sec. and removes debuffs from them. -->
 		<icon>icon.skill11774</icon>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -936,7 +936,7 @@
 		</effects>
 	</skill>
 	<skill id="14939" toLevel="1" name="Dimensional Shadow Dash">
-		<!-- For 15 sec., increases Speed by 40, P. Evasion by 10, and HP Recovery Bonus by 10. -->
+		<!-- For 15 sec., Speed +40, Evasion +10, HP Recovery Rate +10. -->
 		<icon>icon.skill10525</icon>
 		<operateType>A2</operateType>
 		<hitTime>500</hitTime>
@@ -1109,7 +1109,7 @@
 		</effects>
 	</skill>
 	<skill id="14946" toLevel="1" name="Kalios' Rage">
-		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd., and Critical Damage for standard attacks. When the target is killed, recovers HP by 20%. When HP<60%, P. Atk. +10% and Critical Rate for standard attacks +100. When HP<30%, P. Atk. +30% and Critical Rate for standard attacks +300. -->
+		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd. and Critical Damage for basic attacks. When the target is killed, recovers 20% HP. When HP<60%, P. Atk. +10%, Critical Rate for basic attacks +100. When HP<30%, P. Atk. +30%, Critical Rate for basic attacks +300. -->
 		<icon>icon.skill10274</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -1853,7 +1853,7 @@
 		</effects>
 	</skill>
 	<skill id="14976" toLevel="1" name="Mysterious Speed Buff">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill11530</icon>
 		<operateType>A2</operateType>
 		<castRange>2000</castRange>
@@ -2261,7 +2261,7 @@
 		</effects>
 	</skill>
 	<skill id="14989" toLevel="1" name="Dimension Poison">
-		<!-- Poisoned with a power that is unknown in this dimension. HP is continuously decreased. -->
+		<!-- You are continuously losing HP. -->
 		<icon>icon.skill4035</icon>
 		<operateType>A2</operateType>
 		<hitTime>100</hitTime>
@@ -2285,7 +2285,7 @@
 		</effects>
 	</skill>
 	<skill id="14990" toLevel="1" name="Dimension Poison">
-		<!-- Poisoned with a power that is unknown in this dimension. HP is continuously decreased. -->
+		<!-- You are continuously losing HP. -->
 		<icon>icon.skill4035</icon>
 		<operateType>A2</operateType>
 		<hitTime>100</hitTime>
@@ -2309,7 +2309,7 @@
 		</effects>
 	</skill>
 	<skill id="14991" toLevel="1" name="Dimension Poison">
-		<!-- Poisoned with a power that is unknown in this dimension. HP is continuously decreased. -->
+		<!-- You are continuously losing HP. -->
 		<icon>icon.skill4035</icon>
 		<operateType>A2</operateType>
 		<hitTime>100</hitTime>

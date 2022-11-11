@@ -75,7 +75,7 @@
 		</effects>
 	</skill>
 	<skill id="1502" toLevel="1" name="Improve Critical Attack">
-		<!-- Combines Critical Rate Increase and Critical Damage Increase to have more advanced critical increase effect. For 40 min., Critical Rate for standard attacks +30% and Critical Damage for standard attacks +35%. -->
+		<!-- Combines Critical Rate increase and Critical Damage increase to have more combat efficiency. For 40 min., Critical Rate for basic attacks +30%, Critical Damage for basic attacks +35%. -->
 		<icon>icon.skill1502</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>2400</abnormalTime>
@@ -250,7 +250,7 @@
 		</effects>
 	</skill>
 	<skill id="1506" toLevel="1" name="Eva's Blessing">
-		<!-- Casts Eva's blessing, recovering HP/ MP/ CP and removing debuffs with a certain chance. -->
+		<!-- Applies Eva's blessing, recovering HP/ MP/ CP and removing debuffs with a certain chance. -->
 		<icon>icon.skill1506</icon>
 		<castRange>400</castRange>
 		<effectPoint>668</effectPoint>
@@ -283,7 +283,7 @@
 		</effects>
 	</skill>
 	<skill id="1507" toLevel="1" name="Lord of Vampires">
-		<!-- For 30 sec., 80% of the standard melee damage inflicted on the enemy is recovered as HP with a certain probability. -->
+		<!-- For 30 sec., absorbs 80% of the inflicted P. damage as HP with a certain chance. -->
 		<icon>icon.skill1507</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -587,7 +587,7 @@
 		</effects>
 	</skill>
 	<skill id="1512" toLevel="1" name="Soul Vortex">
-		<!-- Stirs up a vortex that inflicts non-attribute magic damage with $s1 power. For $s2, enemy s Speed -$s3, Atk. Spd. -$s4, Casting Spd. -$s5. Consumes $s6 MP per sec. Over-hit. -->
+		<!-- Stirs up a vortex that inflicts non-attribute magic damage with $s1 power. For $s2, enemy's Speed -$s3, Atk. Spd. -$s4, Casting Spd. -$s5. Consumes $s6 MP per sec. Over-hit. -->
 		<icon>icon.skill1512</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -853,7 +853,7 @@
 		</effects>
 	</skill>
 	<skill id="1518" toLevel="1" name="Chant of Critical">
-		<!-- Combines Critical Rate Increase and Critical Damage Increase to have more advanced critical increase effect. For 40 min., all party members' Critical Rate for standard attacks +30% and Critical Damage for standard attacks +35%. -->
+		<!-- Combines Critical Rate increase and Critical Damage increase to have more combat efficiency. For 40 min., party members' Critical Rate for basic attacks +30%, Critical Damage for basic attacks +35%. -->
 		<icon>icon.skill1502</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>2400</abnormalTime>
@@ -890,7 +890,7 @@
 		</effects>
 	</skill>
 	<skill id="1519" toLevel="1" name="Chant of Blood Awakening">
-		<!-- Combines party members' standard attack damage absorption and Atk. Spd. increase to have a more advanced blood awakening effect. For 40 min. Atk. Spd. +33% and has a chance of recovering 9% of the damage inflicted on the enemy as HP. -->
+		<!-- Combines damage absorption and Atk. Spd. increase to have more combat efficiency. For 40 min., Atk. Spd. +33%, with a certain chance, absorbs 9% of the inflicted damage as HP. -->
 		<icon>icon.skill1519</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>2400</abnormalTime>
@@ -2610,7 +2610,7 @@
 		</effects>
 	</skill>
 	<skill id="1537" toLevel="1" name="Critical of Pa'agrio">
-		<!-- Combines Critical Rate Increase and Critical Damage Increase for party/ clan members to have more advanced critical increase effect. For 40 min., Critical Rate for standard attacks +30% and Critical Damage for standard attacks +35%. -->
+		<!-- Combines Critical Rate increase and Critical Damage increase to have more combat efficiency. For 40 min., party/ clan members' Critical Rate for basic attacks +30%, Critical Damage for basic attacks +35%. -->
 		<icon>icon.skill1537</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>2400</abnormalTime>
@@ -2877,7 +2877,7 @@
 		</effects>
 	</skill>
 	<skill id="1542" toLevel="1" name="Counter Critical">
-		<!-- For 20 min., Received Critical Damage from standard attacks -30%. When the target receives an attack above a certain amount of damage, increases melee Critical Damage for 8 sec. -->
+		<!-- For 20 min., received Critical Damage from basic attacks -30%. When receiving a certain amount of damage, increases melee Critical Damage for 8 sec. -->
 		<icon>icon.skill1542</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -3035,7 +3035,7 @@
 		</effects>
 	</skill>
 	<skill id="1547" toLevel="3" name="Spirit Sharing">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Skill Power +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, and Critical Rate for standard attacks +$s7. The master's abilities are extended to the servitor. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Skill Power +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, Critical Rate for basic attacks +$s7. The master's abilities are extended to the servitor. -->
 		<icon>icon.skill1497</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3378,7 +3378,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="1556" toLevel="1" name="Arcane Shield">
-		<!-- For $s1, received damage -$s2, blocks the rest of the damage by consuming MP. The effect is cancelled when MP drops to 0. The skill cooldown is fixed. -->
+		<!-- For $s1, received damage -$s2, blocks the rest by consuming MP. The effect is cancelled when MP drops to 0. The skill cooldown is fixed. -->
 		<icon>icon.skill1556</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -3596,7 +3596,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="1559" toLevel="3" name="Potential Ability">
-		<!-- Critical Rate for standard attacks +$s1, Critical Damage for standard attacks +$s2. Requires a dagger or dual daggers. Requires a light armor to be equipped. -->
+		<!-- When using light armor, Critical Rate for basic attacks +$s1, Critical Damage for basic attacks +$s2. Requires a dagger or dual daggers. -->
 		<icon>icon.skill1559</icon>
 		<magicLevel>
 			<value level="1">28</value>
@@ -3873,7 +3873,7 @@
 		</effects>
 	</skill>
 	<skill id="1564" toLevel="1" name="Penetrating Attack">
-		<!-- Chance to decrease the enemy's P. Def. by 23% under standard attacks. -->
+		<!-- With a certain chance, the enemy's P. Def. -23% after an attack. -->
 		<icon>icon.skill1564</icon>
 		<magicLevel>80</magicLevel>
 		<operateType>P</operateType>
@@ -3891,7 +3891,7 @@
 		</effects>
 	</skill>
 	<skill id="1565" toLevel="6" name="Mana Pump">
-		<!-- Max MP +$s1. -->
+		<!-- Max MP +$s1 -->
 		<icon>icon.skill0213</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -4221,7 +4221,7 @@
 		</effects>
 	</skill>
 	<skill id="1577" toLevel="3" name="Sub - Critical Damage Increase">
-		<!-- Critical Damage for standard attacks +$s1, M. Skill Critical Damage +$s2. -->
+		<!-- Critical Damage for basic attacks +$s1, M. Skill Critical Damage +$s2. -->
 		<icon>icon.skill0815</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -4390,7 +4390,7 @@
 		</effects>
 	</skill>
 	<skill id="1585" toLevel="1" name="Rhythm of Critical Dark">
-		<!-- For 2 min. party members' Critical Damage for standard attacks +35% and Critical Rate for standard attacks +100%. Additionally increases MP Consumption when the skill is used while sing/ dance effect is in place. Requires a dual sword to be equipped. -->
+		<!-- For 2 min., party members' Critical Damage for basic attacks +35%, Critical Rate for basic attacks +100%. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill1583</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -4434,7 +4434,7 @@
 		</effects>
 	</skill>
 	<skill id="1586" toLevel="1" name="Rhythm of Critical">
-		<!-- For 2 min. party members' Critical Damage for standard attacks +35% and Critical Rate for standard attacks +100%. Additionally increases MP Consumption when the skill is used while sing/ dance effect is in place. -->
+		<!-- For 2 min., party members' Critical Damage for basic attacks +35%, Critical Rate for basic attacks +100%. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. -->
 		<icon>icon.skill1583</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -4470,7 +4470,7 @@
 		</effects>
 	</skill>
 	<skill id="1587" toLevel="1" name="Rhythm of Magic Dark">
-		<!-- For 2 min., all party members' M. Atk. +20%, M. Def. +30%. Additionally increases MP Consumption for songs and dances while the previous song/ dance effects are active. Requires dual swords. -->
+		<!-- For 2 min., party members' M. Atk. +20%, M. Def. +30%. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill1588</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -4550,7 +4550,7 @@
 		</effects>
 	</skill>
 	<skill id="1589" toLevel="1" name="Rhythm of Combat Dark">
-		<!-- For 2 min., all party members' P. Atk. +12% and P. Def. +25%. Additionally increases MP Consumption for songs and dances while the previous song/ dance effects are active. Requires dual swords. -->
+		<!-- For 2 min., party members' P. Atk. +12%, P. Def. +25%. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill1584</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -4630,7 +4630,7 @@
 		</effects>
 	</skill>
 	<skill id="1591" toLevel="1" name="Rhythm of Fighter Dark">
-		<!-- For 2 min., all party members' Atk. Spd. +15% and Max HP +30%. Additionally increases MP Consumption for songs and dances while the previous song/ dance effects are active. Requires dual swords. -->
+		<!-- For 2 min., party members' Atk. Spd. +15%, Max HP +30%. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill1587</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>120</abnormalTime>

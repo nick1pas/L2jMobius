@@ -215,7 +215,7 @@
 		</conditions>
 	</skill>
 	<skill id="21316" toLevel="1" name="Intelligent Soul">
-		<!-- Skill Cooldown -3%, and MP Consumption -3%. 2 Energy consumed per sec. -->
+		<!-- Skill cooldown -3%, MP Consumption -3%, Vitality Consumption -2 per sec. -->
 		<icon>BranchSys2.icon.br_soulavatar_attr_i00</icon>
 		<operateType>T</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -282,7 +282,7 @@
 		<magicLevel>99</magicLevel>
 	</skill>
 	<skill id="21322" toLevel="1" name="Cancel Transformation">
-		<!-- Undo the transformation. -->
+		<!-- Cancel Transformation -->
 		<icon>icon.skilltransform2</icon>
 		<operateType>A1</operateType>
 		<castRange>600</castRange>
@@ -363,7 +363,7 @@
 		</effects>
 	</skill>
 	<skill id="21327" toLevel="10" name="Elemental Shirt: Enchant Effect">
-		<!-- M. Def. +$s1. -->
+		<!-- M. Def. +$s1 -->
 		<icon>BranchSys2.icon.etc_scroll_of_enchant_shirt_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -873,7 +873,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21353" toLevel="1" name="Vitality Recovery">
-		<!-- For 5 min., restores Vitality with XP gain. Cooldown is 1 h. -->
+		<!-- For 5 min., recovers Vitality when acquiring XP. Cooldown: 1 h. -->
 		<icon>BranchSys.icon.br_black_gem_mask_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>3000</hitTime>
@@ -899,7 +899,7 @@
 		</effects>
 	</skill>
 	<skill id="21354" toLevel="1" name="Vitality Recovery">
-		<!-- For 5 min., restores Vitality with XP gain. Cooldown is 1 h. -->
+		<!-- For 5 min., recovers Vitality when acquiring XP. Cooldown: 1 h. -->
 		<icon>icon.accessory_dwarf_goggle_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>3000</hitTime>
@@ -1149,7 +1149,7 @@
 		</effects>
 	</skill>
 	<skill id="21364" toLevel="12" name="Talisman of Abundance">
-		<!-- P. Atk. +$s1, M. Atk. +$s2, P./ M. Evasion +$s3. Note! Effects of two identical talismans do not stack. -->
+		<!-- P. Atk. +$s1, M. Atk. +$s2, P./ M. Evasion +$s3. Note!. Effects of two identical talismans do not stack. -->
 		<icon>
 			<value level="1">BranchSys2.icon.g_giant_gem</value> <!-- Talisman - Abundance War -->
 			<value level="2">BranchSys2.icon.g_giant_gem</value> <!-- Talisman - Abundance Tactics -->
@@ -1884,7 +1884,7 @@
 		<effects>
 			<effect name="TriggerSkillByKill">
 				<chance>100</chance>
-				<skillId>21368</skillId> <!-- Mysterious Slaughter Dye -->
+				<skillId>21368</skillId> <!-- Wondrous Slaughter Tattoo -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1926,7 +1926,7 @@
 					<value level="4">100</value>
 					<value level="5">100</value>
 				</chance>
-				<skillId>21368</skillId> <!-- Mysterious Slaughter Dye -->
+				<skillId>21368</skillId> <!-- Wondrous Slaughter Tattoo -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -1982,7 +1982,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="21370" toLevel="5" name="Talisman of Soultaker">
-		<!-- Boosts the effect of Talisman of Slaughterer. -->
+		<!-- Boosts the effect of Talisman of Soultaker. -->
 		<icon>BranchSys2.icon.g_twilight_gem</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2176,7 +2176,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21370</skillId> <!-- Talisman of Slaughterer -->
+				<skillId>21370</skillId> <!-- Talisman of Soultaker -->
 				<skillLevel>2</skillLevel>
 				<chance>50</chance>
 				<isCritical>false</isCritical>
@@ -2188,7 +2188,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21370</skillId> <!-- Talisman of Slaughterer -->
+				<skillId>21370</skillId> <!-- Talisman of Soultaker -->
 				<skillLevel>3</skillLevel>
 				<chance>30</chance>
 				<isCritical>false</isCritical>
@@ -2200,7 +2200,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21370</skillId> <!-- Talisman of Slaughterer -->
+				<skillId>21370</skillId> <!-- Talisman of Soultaker -->
 				<skillLevel>4</skillLevel>
 				<chance>10</chance>
 				<isCritical>false</isCritical>
@@ -2212,7 +2212,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21370</skillId> <!-- Talisman of Slaughterer -->
+				<skillId>21370</skillId> <!-- Talisman of Soultaker -->
 				<skillLevel>5</skillLevel>
 				<chance>5</chance>
 				<isCritical>false</isCritical>
@@ -2398,7 +2398,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21371</skillId> <!-- Talisman of Conquerer -->
+				<skillId>21371</skillId> <!-- Talisman of Conqueror -->
 				<skillLevel>2</skillLevel>
 				<chance>50</chance>
 				<isCritical>false</isCritical>
@@ -2410,7 +2410,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21371</skillId> <!-- Talisman of Conquerer -->
+				<skillId>21371</skillId> <!-- Talisman of Conqueror -->
 				<skillLevel>3</skillLevel>
 				<chance>30</chance>
 				<isCritical>false</isCritical>
@@ -2422,7 +2422,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21371</skillId> <!-- Talisman of Conquerer -->
+				<skillId>21371</skillId> <!-- Talisman of Conqueror -->
 				<skillLevel>4</skillLevel>
 				<chance>10</chance>
 				<isCritical>false</isCritical>
@@ -2434,7 +2434,7 @@
 			<effect name="TriggerSkillByAttack">
 				<!-- Talisman - Hunter -->
 				<minDamage>1</minDamage>
-				<skillId>21371</skillId> <!-- Talisman of Conquerer -->
+				<skillId>21371</skillId> <!-- Talisman of Conqueror -->
 				<skillLevel>5</skillLevel>
 				<chance>5</chance>
 				<isCritical>false</isCritical>
@@ -2716,7 +2716,7 @@
 		</effects>
 	</skill>
 	<skill id="21374" toLevel="1" name="Unequip Talisman of Soultaker">
-		<!-- The Talisman's power fades. -->
+		<!-- The effect of Talisman of Soultaker weakens. -->
 		<icon>BranchSys2.icon.g_twilight_gem</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
@@ -2984,7 +2984,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="21384" toLevel="1" name="Cancel Transformation">
-		<!-- Cancels transformation. -->
+		<!-- Cancel Transformation -->
 		<icon>icon.skilltransform2</icon>
 		<operateType>A1</operateType>
 		<effectPoint>10</effectPoint>
@@ -3117,7 +3117,7 @@
 		</effects>
 	</skill>
 	<skill id="21396" toLevel="1" name="Wondrous Invincibility Boost Tattoo">
-		<!-- Duration for Invincibility against normal hits and skills increases by 50%. -->
+		<!-- Basic attack/ skill invincibility duration +50%. -->
 		<icon>BranchSys3.icon1.g_premium_hena_etc_buff</icon>
 		<operateType>P</operateType>
 	</skill>

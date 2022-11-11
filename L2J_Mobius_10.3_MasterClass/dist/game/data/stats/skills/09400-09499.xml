@@ -1615,7 +1615,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="9452" toLevel="1" name="Item Skill: Dash">
-		<!-- For 10 sec., Speed +30, P. Evasion +7, and HP Recovery Bonus +7. Consumes 10 B-grade Gemstones. -->
+		<!-- For 10 sec., Speed +30, P. Evasion +7, HP Recovery Rate +7. Consumes 10 B-grade Gemstones. -->
 		<icon>icon.rogue_shadow_dash</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -1849,7 +1849,7 @@
 		</effects>
 	</skill>
 	<skill id="9460" toLevel="1" name="Frenzied Tauti's Rage">
-		<!-- Using Tauti's Wrath attacks nearby enemies with $s1 power and inflicts Knock Down. Consumes 4 Spirit Ore. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Tauti's Rage attacks nearby enemies with $s1 power, knocking them down. Consumes 4 Spirit Ore. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.tauti_weapon_one_hand_axe_high</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2217,16 +2217,16 @@
 						<item id="35462" count="1" /> <!-- Recipe: Eternal Helmet (60%) -->
 					</item>
 					<item chance="0.12">
-						<item id="35464" count="1" /> <!-- Recipe: Eternal Gaiters (60%) -->
+						<item id="35464" count="1" /> <!-- Recipe: 'Eternal Gaiters (60%) -->
 					</item>
 					<item chance="0.11">
-						<item id="35463" count="1" /> <!-- Recipe: Eternal Breastplate (60%) -->
+						<item id="35463" count="1" /> <!-- Recipe: 'Eternal Breastplate (60%) -->
 					</item>
 					<item chance="0.3">
-						<item id="35465" count="1" /> <!-- Recipe: Eternal Gauntlets (60%) -->
+						<item id="35465" count="1" /> <!-- Recipe: 'Eternal Gauntlets (60%) -->
 					</item>
 					<item chance="0.45">
-						<item id="35466" count="1" /> <!-- Recipe: Eternal Boots (60%) -->
+						<item id="35466" count="1" /> <!-- Recipe: 'Eternal Boots (60%) -->
 					</item>
 					<item chance="0.43">
 						<item id="35467" count="1" /> <!-- Recipe: Eternal Shield (60%) -->
@@ -2235,58 +2235,58 @@
 						<item id="35468" count="1" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
 					</item>
 					<item chance="0.11">
-						<item id="35469" count="1" /> <!-- Recipe: Eternal Leather Armor (60%) -->
+						<item id="35469" count="1" /> <!-- Recipe: 'Eternal Leather Armor (60%) -->
 					</item>
 					<item chance="0.12">
-						<item id="35470" count="1" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
+						<item id="35470" count="1" /> <!-- Recipe: 'Eternal Leather Leggings (60%) -->
 					</item>
 					<item chance="0.3">
-						<item id="35471" count="1" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+						<item id="35471" count="1" /> <!-- Recipe: 'Eternal Leather Gloves (60%) -->
 					</item>
 					<item chance="0.45">
-						<item id="35472" count="1" /> <!-- Recipe: Eternal Leather Boots (60%) -->
+						<item id="35472" count="1" /> <!-- Recipe: 'Eternal Leather Boots (60%) -->
 					</item>
 					<item chance="0.3">
-						<item id="35473" count="1" /> <!-- Recipe: Eternal Circlet (60%) -->
+						<item id="35473" count="1" /> <!-- Recipe: 'Eternal Circlet (60%) -->
 					</item>
 					<item chance="0.11">
-						<item id="35474" count="1" /> <!-- Recipe: Eternal Tunic (60%) -->
+						<item id="35474" count="1" /> <!-- Recipe: 'Eternal Tunic (60%) -->
 					</item>
 					<item chance="0.12">
-						<item id="35475" count="1" /> <!-- Recipe: Eternal Stockings (60%) -->
+						<item id="35475" count="1" /> <!-- Recipe: 'Eternal Stockings (60%) -->
 					</item>
 					<item chance="0.3">
-						<item id="35476" count="1" /> <!-- Recipe: Eternal Gloves (60%) -->
+						<item id="35476" count="1" /> <!-- Recipe: 'Eternal Gloves (60%) -->
 					</item>
 					<item chance="0.45">
-						<item id="35477" count="1" /> <!-- Recipe: Eternal Shoes (60%) -->
+						<item id="35477" count="1" /> <!-- Recipe: 'Eternal Shoes (60%) -->
 					</item>
 					<item chance="0.43">
-						<item id="35478" count="1" /> <!-- Recipe: Eternal Sigil (60%) -->
+						<item id="35478" count="1" /> <!-- Recipe: 'Eternal Sigil (60%) -->
 					</item>
 					<item chance="0.43">
-						<item id="35479" count="1" /> <!-- Recipe: Eternal Necklace (60%) -->
+						<item id="35479" count="1" /> <!-- Recipe: 'Eternal Necklace (60%) -->
 					</item>
 					<item chance="0.57">
-						<item id="35480" count="1" /> <!-- Recipe: Eternal Earring (60%) -->
+						<item id="35480" count="1" /> <!-- Recipe: 'Eternal Earring (60%) -->
 					</item>
 					<item chance="0.8">
-						<item id="35481" count="1" /> <!-- Recipe: Eternal Ring (60%) -->
+						<item id="35481" count="1" /> <!-- Recipe: 'Eternal Ring (60%) -->
 					</item>
 					<item chance="0.24">
 						<item id="35524" count="1" /> <!-- Recipe: Blessed Eternal Helmet (60%) -->
 					</item>
 					<item chance="0.09">
-						<item id="35525" count="1" /> <!-- Recipe: Blessed Eternal Breastplate (60%) -->
+						<item id="35525" count="1" /> <!-- Recipe: 'Blessed Eternal Breastplate (60%) -->
 					</item>
 					<item chance="0.1">
-						<item id="35526" count="1" /> <!-- Recipe: Blessed Eternal Gaiters (60%) -->
+						<item id="35526" count="1" /> <!-- Recipe: 'Blessed Eternal Gaiters (60%) -->
 					</item>
 					<item chance="0.24">
-						<item id="35527" count="1" /> <!-- Recipe: Blessed Eternal Gauntlets (60%) -->
+						<item id="35527" count="1" /> <!-- Recipe: 'Blessed Eternal Gauntlets (60%) -->
 					</item>
 					<item chance="0.36">
-						<item id="35528" count="1" /> <!-- Recipe: Blessed Eternal Boots (60%) -->
+						<item id="35528" count="1" /> <!-- Recipe: 'Blessed Eternal Boots (60%) -->
 					</item>
 					<item chance="0.34">
 						<item id="35529" count="1" /> <!-- Recipe: Blessed Eternal Shield (60%) -->
@@ -2295,43 +2295,43 @@
 						<item id="35530" count="1" /> <!-- Recipe: Blessed Eternal Leather Helmet (60%) -->
 					</item>
 					<item chance="0.09">
-						<item id="35531" count="1" /> <!-- Recipe: Blessed Eternal Leather Armor (60%) -->
+						<item id="35531" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Armor (60%) -->
 					</item>
 					<item chance="0.1">
-						<item id="35532" count="1" /> <!-- Recipe: Blessed Eternal Leather Leggings (60%) -->
+						<item id="35532" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Leggings (60%) -->
 					</item>
 					<item chance="0.24">
-						<item id="35533" count="1" /> <!-- Recipe: Blessed Eternal Leather Gloves (60%) -->
+						<item id="35533" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Gloves (60%) -->
 					</item>
 					<item chance="0.36">
-						<item id="35534" count="1" /> <!-- Recipe: Blessed Eternal Leather Boots (60%) -->
+						<item id="35534" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Boots (60%) -->
 					</item>
 					<item chance="0.24">
-						<item id="35535" count="1" /> <!-- Recipe: Blessed Eternal Circlet (60%) -->
+						<item id="35535" count="1" /> <!-- Recipe: 'Blessed Eternal Circlet (60%) -->
 					</item>
 					<item chance="0.09">
-						<item id="35536" count="1" /> <!-- Recipe: Blessed Eternal Tunic (60%) -->
+						<item id="35536" count="1" /> <!-- Recipe: 'Blessed Eternal Tunic (60%) -->
 					</item>
 					<item chance="0.1">
-						<item id="35537" count="1" /> <!-- Recipe: Blessed Eternal Stockings (60%) -->
+						<item id="35537" count="1" /> <!-- Recipe: 'Blessed Eternal Stockings (60%) -->
 					</item>
 					<item chance="0.24">
 						<item id="35538" count="1" /> <!-- Recipe: Blessed Eternal Gloves (60%) -->
 					</item>
 					<item chance="0.36">
-						<item id="35539" count="1" /> <!-- Recipe: Blessed Eternal Shoes (60%) -->
+						<item id="35539" count="1" /> <!-- Recipe: 'Blessed Eternal Shoes (60%) -->
 					</item>
 					<item chance="0.34">
-						<item id="35540" count="1" /> <!-- Recipe: Blessed Eternal Sigil (60%) -->
+						<item id="35540" count="1" /> <!-- Recipe: 'Blessed Eternal Sigil (60%) -->
 					</item>
 					<item chance="0.34">
-						<item id="35541" count="1" /> <!-- Recipe: Blessed Eternal Necklace (60%) -->
+						<item id="35541" count="1" /> <!-- Recipe: 'Blessed Eternal Necklace (60%) -->
 					</item>
 					<item chance="0.46">
-						<item id="35542" count="1" /> <!-- Recipe: Blessed Eternal Earring (60%) -->
+						<item id="35542" count="1" /> <!-- Recipe: 'Blessed Eternal Earring (60%) -->
 					</item>
 					<item chance="0.69">
-						<item id="35543" count="1" /> <!-- Recipe: Blessed Eternal Ring (60%) -->
+						<item id="35543" count="1" /> <!-- Recipe: 'Blessed Eternal Ring (60%) -->
 					</item>
 					<item chance="0.47">
 						<item id="17526" count="1" /> <!-- Scroll: Enchant R-grade Weapon -->
@@ -2524,10 +2524,10 @@
 						<item id="22204" count="1" /> <!-- Attribute Stone Pack - Event -->
 					</item>
 					<item chance="1.242">
-						<item id="35742" count="1" /> <!-- Low-grade Scroll: Reputation -->
+						<item id="35742" count="1" /> <!-- Scroll: Reputation (Low-grade) -->
 					</item>
 					<item chance="0.366">
-						<item id="35755" count="1" /> <!-- Mid-grade Scroll: Reputation -->
+						<item id="35755" count="1" /> <!-- Scroll: Reputation (Mid-grade) -->
 					</item>
 					<item chance="0.484">
 						<item id="30300" count="1" /> <!-- Superior Giant's Codex - Oblivion -->
@@ -2562,7 +2562,7 @@
 						<item id="19445" count="1" /> <!-- R95-grade Unbind Scroll -->
 					</item>
 					<item chance="0.334">
-						<item id="35749" count="1" /> <!-- R-grade Weapon Attribute Change Crystal - Event -->
+						<item id="35749" count="1" /> <!-- Attribute Change Crystal: R-grade Weapon - Event -->
 					</item>
 					<item chance="22.776">
 						<item id="3936" count="1" /> <!-- Blessed Scroll of Resurrection -->
@@ -2595,19 +2595,19 @@
 						<item id="35744" count="5" /> <!-- Draco's Mana Potion - Event -->
 					</item>
 					<item chance="0.56">
-						<item id="35741" count="1" /> <!-- Low-grade Scroll: PK -->
+						<item id="35741" count="1" /> <!-- Scroll: PK (Low-grade) -->
 					</item>
 					<item chance="0.19">
-						<item id="35752" count="1" /> <!-- Mid-grade Scroll: PK -->
+						<item id="35752" count="1" /> <!-- Scroll: PK (Mid-grade) -->
 					</item>
 					<item chance="0.121">
 						<item id="30298" count="1" /> <!-- Superior Giant's Codex - Mastery -->
 					</item>
 					<item chance="0.404">
-						<item id="30381" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="30381" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="2.019">
-						<item id="30382" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="30382" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 				</items>
 			</effect>
@@ -2741,7 +2741,7 @@
 						<item id="35296" count="5" /> <!-- Corroded Specter Shaper Fragment -->
 					</item>
 					<item chance="0.174">
-						<item id="35297" count="5" /> <!-- Corroded Cutter Fragment -->
+						<item id="35297" count="5" /> <!-- Corroded Specter Cutter Fragment -->
 					</item>
 					<item chance="0.174">
 						<item id="35298" count="5" /> <!-- Corroded Specter Slasher Fragment -->
@@ -2942,13 +2942,13 @@
 						<item id="35447" count="1" /> <!-- Recipe: Seraph Sigil (60%) -->
 					</item>
 					<item chance="0.638">
-						<item id="35448" count="1" /> <!-- Recipe: Seraph Necklace (60%) -->
+						<item id="35448" count="1" /> <!-- Recipe: 'Seraph Necklace (60%) -->
 					</item>
 					<item chance="0.85">
-						<item id="35449" count="1" /> <!-- Recipe: Seraph Earring (60%) -->
+						<item id="35449" count="1" /> <!-- Recipe: 'Seraph Earring (60%) -->
 					</item>
 					<item chance="1.275">
-						<item id="35450" count="1" /> <!-- Recipe: Seraph Ring (60%) -->
+						<item id="35450" count="1" /> <!-- Recipe: 'Seraph Ring (60%) -->
 					</item>
 					<item chance="0.354">
 						<item id="35493" count="1" /> <!-- Recipe: Blessed Seraph Helmet (60%) -->
@@ -2963,7 +2963,7 @@
 						<item id="35496" count="1" /> <!-- Recipe: Blessed Seraph Gauntlets (60%) -->
 					</item>
 					<item chance="0.531">
-						<item id="35497" count="1" /> <!-- Recipe: Blessed Seraph Boots (60%) -->
+						<item id="35497" count="1" /> <!-- Recipe: 'Blessed Seraph Boots (60%) -->
 					</item>
 					<item chance="0.506">
 						<item id="35498" count="1" /> <!-- Recipe: Blessed Seraph Shield (60%) -->
@@ -3002,13 +3002,13 @@
 						<item id="35509" count="1" /> <!-- Recipe: Blessed Seraph Sigil (60%) -->
 					</item>
 					<item chance="0.51">
-						<item id="35510" count="1" /> <!-- Recipe: Blessed Seraph Necklace (60%) -->
+						<item id="35510" count="1" /> <!-- Recipe: 'Blessed Seraph Necklace (60%) -->
 					</item>
 					<item chance="0.68">
-						<item id="35511" count="1" /> <!-- Recipe: Blessed Seraph Earring (60%) -->
+						<item id="35511" count="1" /> <!-- Recipe: 'Blessed Seraph Earring (60%) -->
 					</item>
 					<item chance="1.02">
-						<item id="35512" count="1" /> <!-- Recipe: Blessed Seraph Ring (60%) -->
+						<item id="35512" count="1" /> <!-- Recipe: 'Blessed Seraph Ring (60%) -->
 					</item>
 					<item chance="6.789">
 						<item id="34990" count="300" /> <!-- Corroded Weapon Fragment -->
@@ -3073,7 +3073,7 @@
 						<item id="35296" count="5" /> <!-- Corroded Specter Shaper Fragment -->
 					</item>
 					<item chance="0.081">
-						<item id="35297" count="5" /> <!-- Corroded Cutter Fragment -->
+						<item id="35297" count="5" /> <!-- Corroded Specter Cutter Fragment -->
 					</item>
 					<item chance="0.081">
 						<item id="35298" count="5" /> <!-- Corroded Specter Slasher Fragment -->
@@ -3214,13 +3214,13 @@
 						<item id="35447" count="1" /> <!-- Recipe: Seraph Sigil (60%) -->
 					</item>
 					<item chance="0.297">
-						<item id="35448" count="1" /> <!-- Recipe: Seraph Necklace (60%) -->
+						<item id="35448" count="1" /> <!-- Recipe: 'Seraph Necklace (60%) -->
 					</item>
 					<item chance="0.396">
-						<item id="35449" count="1" /> <!-- Recipe: Seraph Earring (60%) -->
+						<item id="35449" count="1" /> <!-- Recipe: 'Seraph Earring (60%) -->
 					</item>
 					<item chance="0.595">
-						<item id="35450" count="1" /> <!-- Recipe: Seraph Ring (60%) -->
+						<item id="35450" count="1" /> <!-- Recipe: 'Seraph Ring (60%) -->
 					</item>
 					<item chance="15.83">
 						<item id="34990" count="60" /> <!-- Corroded Weapon Fragment -->
@@ -3569,16 +3569,16 @@
 						<item id="35462" count="1" /> <!-- Recipe: Eternal Helmet (60%) -->
 					</item>
 					<item chance="0.0006">
-						<item id="35463" count="1" /> <!-- Recipe: Eternal Breastplate (60%) -->
+						<item id="35463" count="1" /> <!-- Recipe: 'Eternal Breastplate (60%) -->
 					</item>
 					<item chance="0.0007">
-						<item id="35464" count="1" /> <!-- Recipe: Eternal Gaiters (60%) -->
+						<item id="35464" count="1" /> <!-- Recipe: 'Eternal Gaiters (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35465" count="1" /> <!-- Recipe: Eternal Gauntlets (60%) -->
+						<item id="35465" count="1" /> <!-- Recipe: 'Eternal Gauntlets (60%) -->
 					</item>
 					<item chance="0.0024">
-						<item id="35466" count="1" /> <!-- Recipe: Eternal Boots (60%) -->
+						<item id="35466" count="1" /> <!-- Recipe: 'Eternal Boots (60%) -->
 					</item>
 					<item chance="0.0023">
 						<item id="35467" count="1" /> <!-- Recipe: Eternal Shield (60%) -->
@@ -3587,58 +3587,58 @@
 						<item id="35468" count="1" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
 					</item>
 					<item chance="0.0006">
-						<item id="35469" count="1" /> <!-- Recipe: Eternal Leather Armor (60%) -->
+						<item id="35469" count="1" /> <!-- Recipe: 'Eternal Leather Armor (60%) -->
 					</item>
 					<item chance="0.0007">
-						<item id="35470" count="1" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
+						<item id="35470" count="1" /> <!-- Recipe: 'Eternal Leather Leggings (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35471" count="1" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+						<item id="35471" count="1" /> <!-- Recipe: 'Eternal Leather Gloves (60%) -->
 					</item>
 					<item chance="0.0024">
-						<item id="35472" count="1" /> <!-- Recipe: Eternal Leather Boots (60%) -->
+						<item id="35472" count="1" /> <!-- Recipe: 'Eternal Leather Boots (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35473" count="1" /> <!-- Recipe: Eternal Circlet (60%) -->
+						<item id="35473" count="1" /> <!-- Recipe: 'Eternal Circlet (60%) -->
 					</item>
 					<item chance="0.0006">
-						<item id="35474" count="1" /> <!-- Recipe: Eternal Tunic (60%) -->
+						<item id="35474" count="1" /> <!-- Recipe: 'Eternal Tunic (60%) -->
 					</item>
 					<item chance="0.0007">
-						<item id="35475" count="1" /> <!-- Recipe: Eternal Stockings (60%) -->
+						<item id="35475" count="1" /> <!-- Recipe: 'Eternal Stockings (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35476" count="1" /> <!-- Recipe: Eternal Gloves (60%) -->
+						<item id="35476" count="1" /> <!-- Recipe: 'Eternal Gloves (60%) -->
 					</item>
 					<item chance="0.0024">
-						<item id="35477" count="1" /> <!-- Recipe: Eternal Shoes (60%) -->
+						<item id="35477" count="1" /> <!-- Recipe: 'Eternal Shoes (60%) -->
 					</item>
 					<item chance="0.0023">
-						<item id="35478" count="1" /> <!-- Recipe: Eternal Sigil (60%) -->
+						<item id="35478" count="1" /> <!-- Recipe: 'Eternal Sigil (60%) -->
 					</item>
 					<item chance="0.0023">
-						<item id="35479" count="1" /> <!-- Recipe: Eternal Necklace (60%) -->
+						<item id="35479" count="1" /> <!-- Recipe: 'Eternal Necklace (60%) -->
 					</item>
 					<item chance="0.0031">
-						<item id="35480" count="1" /> <!-- Recipe: Eternal Earring (60%) -->
+						<item id="35480" count="1" /> <!-- Recipe: 'Eternal Earring (60%) -->
 					</item>
 					<item chance="0.0047">
-						<item id="35481" count="1" /> <!-- Recipe: Eternal Ring (60%) -->
+						<item id="35481" count="1" /> <!-- Recipe: 'Eternal Ring (60%) -->
 					</item>
 					<item chance="0.0013">
 						<item id="35524" count="1" /> <!-- Recipe: Blessed Eternal Helmet (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35525" count="1" /> <!-- Recipe: Blessed Eternal Breastplate (60%) -->
+						<item id="35525" count="1" /> <!-- Recipe: 'Blessed Eternal Breastplate (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35526" count="1" /> <!-- Recipe: Blessed Eternal Gaiters (60%) -->
+						<item id="35526" count="1" /> <!-- Recipe: 'Blessed Eternal Gaiters (60%) -->
 					</item>
 					<item chance="0.0013">
-						<item id="35527" count="1" /> <!-- Recipe: Blessed Eternal Gauntlets (60%) -->
+						<item id="35527" count="1" /> <!-- Recipe: 'Blessed Eternal Gauntlets (60%) -->
 					</item>
 					<item chance="0.002">
-						<item id="35528" count="1" /> <!-- Recipe: Blessed Eternal Boots (60%) -->
+						<item id="35528" count="1" /> <!-- Recipe: 'Blessed Eternal Boots (60%) -->
 					</item>
 					<item chance="0.0019">
 						<item id="35529" count="1" /> <!-- Recipe: Blessed Eternal Shield (60%) -->
@@ -3647,43 +3647,43 @@
 						<item id="35530" count="1" /> <!-- Recipe: Blessed Eternal Leather Helmet (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35531" count="1" /> <!-- Recipe: Blessed Eternal Leather Armor (60%) -->
+						<item id="35531" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Armor (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35532" count="1" /> <!-- Recipe: Blessed Eternal Leather Leggings (60%) -->
+						<item id="35532" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Leggings (60%) -->
 					</item>
 					<item chance="0.0013">
-						<item id="35533" count="1" /> <!-- Recipe: Blessed Eternal Leather Gloves (60%) -->
+						<item id="35533" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Gloves (60%) -->
 					</item>
 					<item chance="0.002">
-						<item id="35534" count="1" /> <!-- Recipe: Blessed Eternal Leather Boots (60%) -->
+						<item id="35534" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Boots (60%) -->
 					</item>
 					<item chance="0.0013">
-						<item id="35535" count="1" /> <!-- Recipe: Blessed Eternal Circlet (60%) -->
+						<item id="35535" count="1" /> <!-- Recipe: 'Blessed Eternal Circlet (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35536" count="1" /> <!-- Recipe: Blessed Eternal Tunic (60%) -->
+						<item id="35536" count="1" /> <!-- Recipe: 'Blessed Eternal Tunic (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35537" count="1" /> <!-- Recipe: Blessed Eternal Stockings (60%) -->
+						<item id="35537" count="1" /> <!-- Recipe: 'Blessed Eternal Stockings (60%) -->
 					</item>
 					<item chance="0.0013">
 						<item id="35538" count="1" /> <!-- Recipe: Blessed Eternal Gloves (60%) -->
 					</item>
 					<item chance="0.002">
-						<item id="35539" count="1" /> <!-- Recipe: Blessed Eternal Shoes (60%) -->
+						<item id="35539" count="1" /> <!-- Recipe: 'Blessed Eternal Shoes (60%) -->
 					</item>
 					<item chance="0.0019">
-						<item id="35540" count="1" /> <!-- Recipe: Blessed Eternal Sigil (60%) -->
+						<item id="35540" count="1" /> <!-- Recipe: 'Blessed Eternal Sigil (60%) -->
 					</item>
 					<item chance="0.0019">
-						<item id="35541" count="1" /> <!-- Recipe: Blessed Eternal Necklace (60%) -->
+						<item id="35541" count="1" /> <!-- Recipe: 'Blessed Eternal Necklace (60%) -->
 					</item>
 					<item chance="0.0025">
-						<item id="35542" count="1" /> <!-- Recipe: Blessed Eternal Earring (60%) -->
+						<item id="35542" count="1" /> <!-- Recipe: 'Blessed Eternal Earring (60%) -->
 					</item>
 					<item chance="0.0038">
-						<item id="35543" count="1" /> <!-- Recipe: Blessed Eternal Ring (60%) -->
+						<item id="35543" count="1" /> <!-- Recipe: 'Blessed Eternal Ring (60%) -->
 					</item>
 					<item chance="16.537">
 						<item id="34990" count="1" /> <!-- Corroded Weapon Fragment -->
@@ -3967,16 +3967,16 @@
 						<item id="35462" count="1" /> <!-- Recipe: Eternal Helmet (60%) -->
 					</item>
 					<item chance="0.0006">
-						<item id="35463" count="1" /> <!-- Recipe: Eternal Breastplate (60%) -->
+						<item id="35463" count="1" /> <!-- Recipe: 'Eternal Breastplate (60%) -->
 					</item>
 					<item chance="0.0007">
-						<item id="35464" count="1" /> <!-- Recipe: Eternal Gaiters (60%) -->
+						<item id="35464" count="1" /> <!-- Recipe: 'Eternal Gaiters (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35465" count="1" /> <!-- Recipe: Eternal Gauntlets (60%) -->
+						<item id="35465" count="1" /> <!-- Recipe: 'Eternal Gauntlets (60%) -->
 					</item>
 					<item chance="0.0024">
-						<item id="35466" count="1" /> <!-- Recipe: Eternal Boots (60%) -->
+						<item id="35466" count="1" /> <!-- Recipe: 'Eternal Boots (60%) -->
 					</item>
 					<item chance="0.0023">
 						<item id="35467" count="1" /> <!-- Recipe: Eternal Shield (60%) -->
@@ -3985,58 +3985,58 @@
 						<item id="35468" count="1" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
 					</item>
 					<item chance="0.0006">
-						<item id="35469" count="1" /> <!-- Recipe: Eternal Leather Armor (60%) -->
+						<item id="35469" count="1" /> <!-- Recipe: 'Eternal Leather Armor (60%) -->
 					</item>
 					<item chance="0.0007">
-						<item id="35470" count="1" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
+						<item id="35470" count="1" /> <!-- Recipe: 'Eternal Leather Leggings (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35471" count="1" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+						<item id="35471" count="1" /> <!-- Recipe: 'Eternal Leather Gloves (60%) -->
 					</item>
 					<item chance="0.0024">
-						<item id="35472" count="1" /> <!-- Recipe: Eternal Leather Boots (60%) -->
+						<item id="35472" count="1" /> <!-- Recipe: 'Eternal Leather Boots (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35473" count="1" /> <!-- Recipe: Eternal Circlet (60%) -->
+						<item id="35473" count="1" /> <!-- Recipe: 'Eternal Circlet (60%) -->
 					</item>
 					<item chance="0.0006">
-						<item id="35474" count="1" /> <!-- Recipe: Eternal Tunic (60%) -->
+						<item id="35474" count="1" /> <!-- Recipe: 'Eternal Tunic (60%) -->
 					</item>
 					<item chance="0.0007">
-						<item id="35475" count="1" /> <!-- Recipe: Eternal Stockings (60%) -->
+						<item id="35475" count="1" /> <!-- Recipe: 'Eternal Stockings (60%) -->
 					</item>
 					<item chance="0.0016">
-						<item id="35476" count="1" /> <!-- Recipe: Eternal Gloves (60%) -->
+						<item id="35476" count="1" /> <!-- Recipe: 'Eternal Gloves (60%) -->
 					</item>
 					<item chance="0.0024">
-						<item id="35477" count="1" /> <!-- Recipe: Eternal Shoes (60%) -->
+						<item id="35477" count="1" /> <!-- Recipe: 'Eternal Shoes (60%) -->
 					</item>
 					<item chance="0.0023">
-						<item id="35478" count="1" /> <!-- Recipe: Eternal Sigil (60%) -->
+						<item id="35478" count="1" /> <!-- Recipe: 'Eternal Sigil (60%) -->
 					</item>
 					<item chance="0.0023">
-						<item id="35479" count="1" /> <!-- Recipe: Eternal Necklace (60%) -->
+						<item id="35479" count="1" /> <!-- Recipe: 'Eternal Necklace (60%) -->
 					</item>
 					<item chance="0.0031">
-						<item id="35480" count="1" /> <!-- Recipe: Eternal Earring (60%) -->
+						<item id="35480" count="1" /> <!-- Recipe: 'Eternal Earring (60%) -->
 					</item>
 					<item chance="0.0047">
-						<item id="35481" count="1" /> <!-- Recipe: Eternal Ring (60%) -->
+						<item id="35481" count="1" /> <!-- Recipe: 'Eternal Ring (60%) -->
 					</item>
 					<item chance="0.0013">
 						<item id="35524" count="1" /> <!-- Recipe: Blessed Eternal Helmet (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35525" count="1" /> <!-- Recipe: Blessed Eternal Breastplate (60%) -->
+						<item id="35525" count="1" /> <!-- Recipe: 'Blessed Eternal Breastplate (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35526" count="1" /> <!-- Recipe: Blessed Eternal Gaiters (60%) -->
+						<item id="35526" count="1" /> <!-- Recipe: 'Blessed Eternal Gaiters (60%) -->
 					</item>
 					<item chance="0.0013">
-						<item id="35527" count="1" /> <!-- Recipe: Blessed Eternal Gauntlets (60%) -->
+						<item id="35527" count="1" /> <!-- Recipe: 'Blessed Eternal Gauntlets (60%) -->
 					</item>
 					<item chance="0.002">
-						<item id="35528" count="1" /> <!-- Recipe: Blessed Eternal Boots (60%) -->
+						<item id="35528" count="1" /> <!-- Recipe: 'Blessed Eternal Boots (60%) -->
 					</item>
 					<item chance="0.0019">
 						<item id="35529" count="1" /> <!-- Recipe: Blessed Eternal Shield (60%) -->
@@ -4045,43 +4045,43 @@
 						<item id="35530" count="1" /> <!-- Recipe: Blessed Eternal Leather Helmet (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35531" count="1" /> <!-- Recipe: Blessed Eternal Leather Armor (60%) -->
+						<item id="35531" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Armor (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35532" count="1" /> <!-- Recipe: Blessed Eternal Leather Leggings (60%) -->
+						<item id="35532" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Leggings (60%) -->
 					</item>
 					<item chance="0.0013">
-						<item id="35533" count="1" /> <!-- Recipe: Blessed Eternal Leather Gloves (60%) -->
+						<item id="35533" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Gloves (60%) -->
 					</item>
 					<item chance="0.002">
-						<item id="35534" count="1" /> <!-- Recipe: Blessed Eternal Leather Boots (60%) -->
+						<item id="35534" count="1" /> <!-- Recipe: 'Blessed Eternal Leather Boots (60%) -->
 					</item>
 					<item chance="0.0013">
-						<item id="35535" count="1" /> <!-- Recipe: Blessed Eternal Circlet (60%) -->
+						<item id="35535" count="1" /> <!-- Recipe: 'Blessed Eternal Circlet (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35536" count="1" /> <!-- Recipe: Blessed Eternal Tunic (60%) -->
+						<item id="35536" count="1" /> <!-- Recipe: 'Blessed Eternal Tunic (60%) -->
 					</item>
 					<item chance="0.0005">
-						<item id="35537" count="1" /> <!-- Recipe: Blessed Eternal Stockings (60%) -->
+						<item id="35537" count="1" /> <!-- Recipe: 'Blessed Eternal Stockings (60%) -->
 					</item>
 					<item chance="0.0013">
 						<item id="35538" count="1" /> <!-- Recipe: Blessed Eternal Gloves (60%) -->
 					</item>
 					<item chance="0.002">
-						<item id="35539" count="1" /> <!-- Recipe: Blessed Eternal Shoes (60%) -->
+						<item id="35539" count="1" /> <!-- Recipe: 'Blessed Eternal Shoes (60%) -->
 					</item>
 					<item chance="0.0019">
-						<item id="35540" count="1" /> <!-- Recipe: Blessed Eternal Sigil (60%) -->
+						<item id="35540" count="1" /> <!-- Recipe: 'Blessed Eternal Sigil (60%) -->
 					</item>
 					<item chance="0.0019">
-						<item id="35541" count="1" /> <!-- Recipe: Blessed Eternal Necklace (60%) -->
+						<item id="35541" count="1" /> <!-- Recipe: 'Blessed Eternal Necklace (60%) -->
 					</item>
 					<item chance="0.0025">
-						<item id="35542" count="1" /> <!-- Recipe: Blessed Eternal Earring (60%) -->
+						<item id="35542" count="1" /> <!-- Recipe: 'Blessed Eternal Earring (60%) -->
 					</item>
 					<item chance="0.0038">
-						<item id="35543" count="1" /> <!-- Recipe: Blessed Eternal Ring (60%) -->
+						<item id="35543" count="1" /> <!-- Recipe: 'Blessed Eternal Ring (60%) -->
 					</item>
 					<item chance="16.537">
 						<item id="34990" count="1" /> <!-- Corroded Weapon Fragment -->
@@ -4202,14 +4202,14 @@
 		</effects>
 	</skill>
 	<skill id="9486" toLevel="1" name="Chat Prohibited">
-		<!-- When standard attack results in a Critical, has a 10% chance of blocking the target's chat for a certain time. -->
+		<!-- With a 10% chance, blocks chatting after a critical attack. -->
 		<icon>icon.shutup</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 		<magicLevel>1</magicLevel>
 	</skill>
 	<skill id="9487" toLevel="1" name="Angel Cat's Blessing">
-		<!-- For 60 min., P. Atk. +5%, M. Atk. +20%, P. Def. +5%, M. Def. +5%, Atk. Spd. +5%, Casting Spd. +5%, Max HP/ MP +5%, Acquired XP/ SP +30%. -->
+		<!-- For 60 min., P. Atk. +5%, M. Atk. +20%, P. Def. +5%, M. Def. +5%, Atk. Spd. +5%, Casting Spd. +5%, Max HP/ MP +5%, acquired XP/ SP +30%. -->
 		<icon>icon.skilltransform4</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>1800000</reuseDelay>

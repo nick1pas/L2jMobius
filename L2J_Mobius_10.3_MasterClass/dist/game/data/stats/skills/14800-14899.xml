@@ -87,7 +87,7 @@
 		</effects>
 	</skill>
 	<skill id="14802" toLevel="1" name="Mental Resistance - GM's Blessing">
-		<!-- The GM is always by your side. For $s1, this blessing increases Resistance to buff-canceling/ debuff attacks +$s2. -->
+		<!-- The GM is always by your side. For $s1, Buff Cancel Resistance/ Debuff Resistance +$s2. -->
 		<icon>icon.skill11824</icon>
 		<operateType>A2</operateType>
 		<mpConsume>1</mpConsume>
@@ -912,7 +912,7 @@
 		</effects>
 	</skill>
 	<skill id="14838" toLevel="1" name="Hide">
-		<!-- Becomes transparent. -->
+		<!-- Hide status. -->
 		<icon>icon.skill11541</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -944,7 +944,7 @@
 		</for>
 	</skill>
 	<skill id="14839" toLevel="1" name="Cancel Hide">
-		<!-- Cancels hide. -->
+		<!-- Cancels the Hide state. -->
 		<icon>icon.skill01703</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
@@ -1360,7 +1360,7 @@
 		</effects>
 	</skill>
 	<skill id="14852" toLevel="1" name="Adolph's Supreme Defense">
-		<!-- For 30 sec., P. Def. +4000, M. Def. +4000. Impossible to receive more than 300 damage at a time, and 40% of it is reflected back to the enemy. Buff Cancel Resistance +80%. -->
+		<!-- For 30 sec., P. Def. +4000, M. Def. +4000. Skills that deal more than 300 damage, deal only 300 damage, 40% of the damage is reflected back to the enemy. Buff Cancel Resistance +80%. -->
 		<icon>icon.skill10017</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -1400,7 +1400,7 @@
 		</effects>
 	</skill>
 	<skill id="14853" toLevel="1" name="Adolph's Supreme Defense">
-		<!-- For 30 sec., P. Def. +4000, M. Def. +4000. Impossible to receive more than 300 damage at a time, and 40% of it is reflected back to the enemy. Buff Cancel Resistance +80%. -->
+		<!-- For 30 sec., P. Def. +4000, M. Def. +4000. Skills that deal more than 300 damage, deal only 300 damage, 40% of the damage is reflected back to the enemy. Buff Cancel Resistance +80%. -->
 		<icon>icon.skill10017</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -1440,7 +1440,7 @@
 		</effects>
 	</skill>
 	<skill id="14854" toLevel="1" name="Adolph's Supreme Defense">
-		<!-- For 30 sec., P. Def. +4000, M. Def. +4000. Impossible to receive more than 300 damage at a time, and 40% of it is reflected back to the enemy. Buff Cancel Resistance +80%. -->
+		<!-- For 30 sec., P. Def. +4000, M. Def. +4000. Skills that deal more than 300 damage, deal only 300 damage, 40% of the damage is reflected back to the enemy. Buff Cancel Resistance +80%. -->
 		<icon>icon.skill10017</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -1831,7 +1831,7 @@
 		</effects>
 	</skill>
 	<skill id="14867" toLevel="1" name="Barton's Berserker Rage">
-		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd., and Critical Damage for standard attacks. When the target is killed, recovers HP by 20%. When HP<60%, P. Atk. +10% and Critical Rate for standard attacks +100. When HP<30%, P. Atk. +30% and Critical Rate for standard attacks +300. -->
+		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd. and Critical Damage for basic attacks. When the target is killed, recovers 20% HP. When HP<60%, P. Atk. +10%, Critical Rate for basic attacks +100. When HP<30%, P. Atk. +30%, Critical Rate for basic attacks +300. -->
 		<icon>icon.skill10274</icon>
 		<operateType>A2</operateType>
 		<hitTime>1500</hitTime>
@@ -1904,7 +1904,7 @@
 		</effects>
 	</skill>
 	<skill id="14868" toLevel="1" name="Barton's Berserker Rage">
-		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd., and Critical Damage for standard attacks. When the target is killed, recovers HP by 20%. When HP<60%, P. Atk. +10% and Critical Rate for standard attacks +100. When HP<30%, P. Atk. +30% and Critical Rate for standard attacks +300. -->
+		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd. and Critical Damage for basic attacks. When the target is killed, recovers 20% HP. When HP<60%, P. Atk. +10%, Critical Rate for basic attacks +100. When HP<30%, P. Atk. +30%, Critical Rate for basic attacks +300. -->
 		<icon>icon.skill10274</icon>
 		<operateType>A2</operateType>
 		<hitTime>1500</hitTime>
@@ -1978,7 +1978,7 @@
 		</effects>
 	</skill>
 	<skill id="14869" toLevel="1" name="Barton's Berserker Rage">
-		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd., and Critical Damage for standard attacks. When the target is killed, recovers HP by 20%. When HP<60%, P. Atk. +10% and Critical Rate for standard attacks +100. When HP<30%, P. Atk. +30% and Critical Rate for standard attacks +300. -->
+		<!-- You have reached your physical limit. Increases Debuff Resistance, Speed, P. Atk., Accuracy, P. Def., Atk. Spd. and Critical Damage for basic attacks. When the target is killed, recovers 20% HP. When HP<60%, P. Atk. +10%, Critical Rate for basic attacks +100. When HP<30%, P. Atk. +30%, Critical Rate for basic attacks +300. -->
 		<icon>icon.skill10274</icon>
 		<operateType>A2</operateType>
 		<hitTime>1500</hitTime>
@@ -2052,7 +2052,7 @@
 		</effects>
 	</skill>
 	<skill id="14870" toLevel="1" name="Hayuk: Multiple Arrows">
-		<!-- Attacks enemies at the front with a ranged attack. Attacks the target with 23391 power added to P. Atk. -->
+		<!-- Attacks the target and nearby enemies with 23,391 power. -->
 		<icon>icon.skill10771</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -2067,7 +2067,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="14871" toLevel="1" name="Hayuk: Multiple Arrows">
-		<!-- Attacks enemies at the front with a ranged attack. Attacks the target with 27459 power added to P. Atk. -->
+		<!-- Attacks the target and nearby enemies with 27,459 power. -->
 		<icon>icon.skill10771</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -2082,7 +2082,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="14872" toLevel="1" name="Hayuk: Multiple Arrows">
-		<!-- Attacks enemies at the front with a ranged attack. Attacks the target with 31527 power added to P. Atk. -->
+		<!-- Attacks the target and nearby enemies with 31,527 power. -->
 		<icon>icon.skill10771</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -2097,7 +2097,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="14873" toLevel="1" name="Hayuk: Heavy Arrow Rain">
-		<!-- Showers the enemy and nearby enemies with a rain of arrows with 22526 power added to P. Atk. -->
+		<!-- Rains down arrows on the target and nearby enemies with 22,526 power. -->
 		<icon>icon.skill10772</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -2112,7 +2112,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="14874" toLevel="1" name="Hayuk: Heavy Arrow Rain">
-		<!-- Showers the enemy and nearby enemies with a rain of arrows with 26448 power added to P. Atk. -->
+		<!-- Rains down arrows on the target and nearby enemies with 26,448 power. -->
 		<icon>icon.skill10772</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -2127,7 +2127,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="14875" toLevel="1" name="Hayuk: Heavy Arrow Rain">
-		<!-- Showers the enemy and nearby enemies with a rain of arrows with 30371 power added to P. Atk. -->
+		<!-- Rains down arrows on the target and nearby enemies with 30,371 power. -->
 		<icon>icon.skill10772</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -2466,7 +2466,7 @@
 		</effects>
 	</skill>
 	<skill id="14886" toLevel="1" name="Eliyah: Summon Death Gate">
-		<!-- Summons a Death Gate. The summoned Death Gate continuously inflicts damage and Hold on nearby enemies. -->
+		<!-- Summons Death Gate that holds enemies in place and deal them damage. -->
 		<icon>icon.skill11266</icon>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -2488,7 +2488,7 @@
 		</effects>
 	</skill>
 	<skill id="14887" toLevel="1" name="Eliyah: Summon Death Gate">
-		<!-- Summons a Death Gate. The summoned Death Gate continuously inflicts damage and Hold on nearby enemies. -->
+		<!-- Summons Death Gate that holds enemies in place and deal them damage. -->
 		<icon>icon.skill11266</icon>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -2510,7 +2510,7 @@
 		</effects>
 	</skill>
 	<skill id="14888" toLevel="1" name="Eliyah: Summon Death Gate">
-		<!-- Summons a Death Gate. The summoned Death Gate continuously inflicts damage and Hold on nearby enemies. -->
+		<!-- Summons Death Gate that holds enemies in place and deal them damage. -->
 		<icon>icon.skill11266</icon>
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
@@ -2667,7 +2667,7 @@
 		</effects>
 	</skill>
 	<skill id="14895" toLevel="1" name="Guardian Spirit's Rage">
-		<!-- Attacks nearby enemies with a Guardian Spirit's wrath. -->
+		<!-- Attacks nearby enemies. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>
@@ -2687,7 +2687,7 @@
 		</effects>
 	</skill>
 	<skill id="14896" toLevel="1" name="Guardian Spirit's Rage">
-		<!-- Attacks nearby enemies with a Guardian Spirit's wrath. -->
+		<!-- Attacks nearby enemies. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>
@@ -2707,7 +2707,7 @@
 		</effects>
 	</skill>
 	<skill id="14897" toLevel="1" name="Guardian Spirit's Rage">
-		<!-- Attacks nearby enemies with a Guardian Spirit's wrath. -->
+		<!-- Attacks nearby enemies. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>

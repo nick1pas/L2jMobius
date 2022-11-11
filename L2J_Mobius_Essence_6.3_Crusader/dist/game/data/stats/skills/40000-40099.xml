@@ -459,7 +459,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="40057" toLevel="1" name="Magic Fire (Event)">
-		<!-- Magic Lamp charging rate +100%. -->
+		<!-- Magic Lamp charging rate +100% -->
 		<icon>icon.bm_soul_of_shilen</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MAGIC_LAMP_RATE</abnormalType>
@@ -836,7 +836,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="40088" toLevel="1" name="Scroll: Enchant Aden's Weapon">
-		<!-- Used to enchant a moon weapon. -->
+		<!-- Required for enchanting Moon weapons. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -863,7 +863,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="40091" toLevel="1" name="Adventurer's Scroll: Enchant Head Accessory">
-		<!-- Used to enchant hair accessories. -->
+		<!-- Required for enchanting head accessories. -->
 		<icon>icon.skill0000</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>1</magicLevel>
@@ -925,7 +925,7 @@
 		</effects>
 	</skill>
 	<skill id="40095" toLevel="1" name="Spellbook: Mount Glorious Steed">
-		<!-- Double-click to learn how to ride Glory of Champion. -->
+		<!-- Double-click to learn how to ride Glorious Steed. -->
 		<hitTime>1500</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
@@ -935,14 +935,14 @@
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="OpSkill">
-				<skillId>54200</skillId> <!-- Mount Glory of Champion -->
+				<skillId>54200</skillId> <!-- Mount Glorious Steed -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>54200</skillId> <!-- Mount Glory of Champion -->
+				<skillId>54200</skillId> <!-- Mount Glorious Steed -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>

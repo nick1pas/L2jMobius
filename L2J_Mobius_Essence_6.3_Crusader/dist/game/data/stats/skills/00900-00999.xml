@@ -863,7 +863,7 @@
 		</effects>
 	</skill>
 	<skill id="914" toLevel="1" name="Eliminate Obstruction">
-		<!-- Elven blessing that protects against hostile magic. Grants immunity to $s1 debuff(s) and anomaly state(s). -->
+		<!-- <Constant effect> Debuff Resistance $s1 Anomaly Resistance $s1 <When triggered> If the character takes damage, there is a certain chance to remove a debuff from them. -->
 		<icon>icon.skill0914</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -927,7 +927,7 @@
 		</effects>
 	</skill>
 	<skill id="916" toLevel="4" name="Shield Deflect Magic">
-		<!-- For $s1, transfers magical damage back to the enemy caster. -->
+		<!-- For 10 sec. A $s1 chance to reflect M. damage. -->
 		<icon>icon.skill0916</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>8</abnormalTime>
@@ -969,7 +969,7 @@
 		</effects>
 	</skill>
 	<skill id="917" toLevel="1" name="Final Secret">
-		<!-- For $s4 P. Skill Power $s1 PvP damage from standard attacks $s2 Bow Resistance $s3 M. Damage Resistance $s3 -->
+		<!-- P. Skill Power $s2 Basic PvP Damage $s3 Bow Resistance $s4 M. Damage Resistance $s4 -->
 		<icon>icon.skill0917</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1006,7 +1006,7 @@
 		</effects>
 	</skill>
 	<skill id="918" toLevel="1" name="Maximum Force Focus">
-		<!-- Increases Momentum to its maximum level. Available if the charge is below 8th level. -->
+		<!-- Increases Momentum to its maximum level. Available if the charge is below Lv. 8. -->
 		<icon>icon.skill0918</icon>
 		<effectPoint>150</effectPoint>
 		<hitTime>900</hitTime>
@@ -1033,7 +1033,7 @@
 		</effects>
 	</skill>
 	<skill id="919" toLevel="1" name="Furious Sword Spirit">
-		<!-- Increases Momentum to its maximum level. Available if the charge is below 8th level. -->
+		<!-- Charges Sword Spirit to the full. Cannot be used while the Challenger effect is active. -->
 		<icon>icon.skill0919</icon>
 		<effectPoint>150</effectPoint>
 		<hitTime>900</hitTime>
@@ -1338,7 +1338,7 @@
 		</effects>
 	</skill>
 	<skill id="922" toLevel="4" name="Hide">
-		<!-- <Skill with fixed cooldown> For $s1 Grants invisibility. Upon any action except movement The effect is cancelled -->
+		<!-- <Skill with fixed cooldown/ invisibility effect> For $s1 Grants invisibility. The effect is cancelled upon any action except movement. -->
 		<icon>icon.skill0922</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalType>HIDE</abnormalType>
@@ -4808,7 +4808,7 @@
 		</effects>
 	</skill>
 	<skill id="990" toLevel="1" name="Death Sting">
-		<!-- <Silence Skill> Shoots an arrow of death at the enemy. Deals physical damage with 13006 power. For 3 sec., blocks magical skill usage. Critical. -->
+		<!-- <Silence skill> Shoots an arrow of death at the enemy. Power 13006. For 3 sec., prevents the target from using magic skills. Critical. -->
 		<icon>icon.skill0990</icon>
 		<castRange>700</castRange>
 		<coolTime>500</coolTime>
@@ -4883,7 +4883,7 @@
 		</effects>
 	</skill>
 	<skill id="992" toLevel="8" name="Sonic Mastery">
-		<!-- With a $s1 chance, absorbs the target's Momentum after a standard attack. After a physical critical attack, the chance to absorb Momentum is $s2. After using physical skills, the chance is $s3. Requires a sword, a blunt weapon or dual swords. Recover Momentum is available up to Lv. $s4. -->
+		<!-- With a $s1 chance, absorbs the target's Momentum after a basic attack. After a physical critical attack, the chance to absorb Momentum is $s2. After a physical skill, the chance is $s3. (Cooldown: 7 sec. Each of the triggers activates the cooldown.) Requires a sword, a blunt weapon or dual swords. Recover Momentum is available up to Lv. $s4. -->
 		<icon>icon.skill0992</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -4982,7 +4982,7 @@
 		</effects>
 	</skill>
 	<skill id="993" toLevel="8" name="Force Mastery">
-		<!-- With a $s1 chance, absorbs the target's Momentum after a standard attack. After a physical critical attack, the chance to absorb Momentum is $s2. After using physical skills, the chance is $s3. Requires a fist weapon. Recover Momentum is available up to Lv. $s4. -->
+		<!-- With a $s1 chance, absorbs the target's Momentum after a basic attack. After a physical critical attack, the chance to absorb Momentum is $s2. After a physical skill, the chance is $s3. (Cooldown: 7 sec. Each of the triggers activates the cooldown.) Requires a fist weapon. Recover Momentum is available up to Lv. $s4. -->
 		<icon>icon.skill0993</icon>
 		<magicLevel>
 			<value level="1">24</value>
@@ -5052,7 +5052,7 @@
 		</effects>
 	</skill>
 	<skill id="994" toLevel="3" name="Rush">
-		<!-- Charges into the target, if the distance between the target and the character is more than $s1. -->
+		<!-- <<font color="FF8000">Rush skill</font>> Charges at the target. Can be used if the distance to the target is more than $s1. -->
 		<icon>icon.skill0484</icon>
 		<castRange>
 			<value level="1">500</value>

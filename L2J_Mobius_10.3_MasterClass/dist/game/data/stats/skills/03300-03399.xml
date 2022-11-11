@@ -185,7 +185,7 @@
 		</effects>
 	</skill>
 	<skill id="3314" toLevel="1" name="Grey Talisman - Weight Limit">
-		<!-- Increases Weight Limit, when equipped. -->
+		<!-- Increases weight limit, when equipped. -->
 		<icon>icon.etc_talisman_i07</icon>
 		<magicLevel>55</magicLevel>
 		<operateType>P</operateType>
@@ -205,7 +205,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="3316" toLevel="1" name="Yellow Talisman - Critical Evasion">
-		<!-- Decreases Received P. Critical Rate when equipped. -->
+		<!-- When equipped, decreases received Critical Rate from basic attacks. -->
 		<icon>icon.etc_talisman_i02</icon>
 		<magicLevel>55</magicLevel>
 		<operateType>P</operateType>
@@ -218,7 +218,7 @@
 		</effects>
 	</skill>
 	<skill id="3317" toLevel="1" name="Yellow Talisman - Critical Resistance">
-		<!-- Decreases Received Critical Damage from standard attacks. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<icon>icon.etc_talisman_i02</icon>
 		<magicLevel>55</magicLevel>
 		<operateType>P</operateType>
@@ -231,7 +231,7 @@
 		</effects>
 	</skill>
 	<skill id="3318" toLevel="1" name="Flag Display">
-		<!-- In order to get recognition, display the combat flag on the fortress' flagpole. -->
+		<!-- Display a combat flag on the fortress' flagpole to win the battle. -->
 		<icon>icon.weapon_fort_flag_i00</icon>
 		<castRange>85</castRange>
 		<effectRange>400</effectRange>
@@ -280,7 +280,7 @@
 		</effects>
 	</skill>
 	<skill id="3321" toLevel="1" name="Blue Talisman - Evasion">
-		<!-- Increases P. Evasion and decreases Received P. Critical Rate, when the talisman is equipped. -->
+		<!-- Increases P. Evasion and decreases received Critical Rate from basic attacks, when the talisman is equipped. -->
 		<icon>icon.etc_talisman_i01</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -598,7 +598,7 @@
 		</effects>
 	</skill>
 	<skill id="3336" toLevel="1" name="Buffalo Transformation">
-		<!-- Transform into a Yeti. There is no effect from the Mysterious Potion while in Yeti form. -->
+		<!-- Transform into Buffalo. There is no effect from Mysterious Potion while in the Buffalo form. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -747,7 +747,7 @@
 		</effects>
 	</skill>
 	<skill id="3349" toLevel="1" name="Dynasty Breastplate">
-		<!-- Increases P. Atk., Max HP, Critical Rate/ Damage for standard attacks, and Dark Resistance. -->
+		<!-- Increases P. Atk., Max HP, Critical Rate for basic attacks, Dark Resistance and Critical Damage for basic attacks. -->
 		<icon>icon.armor_t91_uw_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

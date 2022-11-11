@@ -49,7 +49,7 @@
 		</effects>
 	</skill>
 	<skill id="28203" toLevel="1" name="Greater Garnet - Purge">
-		<!-- Cancels all debuffs on you and makes you immune to debuffs for $s1 -->
+		<!-- Removes all debuffs and makes you immune to debuffs for $s1 -->
 		<icon>icon.bm_jewel_garnet_high_lv1_lavianrose</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -130,7 +130,7 @@
 		<effectPoint>689</effectPoint>
 	</skill>
 	<skill id="28212" toLevel="1" name="Hut on Chicken Legs' Blessing - Meditation">
-		<!-- Decreases P. Def. by 90% and recovers 134 MP every second for 30 sec. The status is canceled when damage is incurred. Cooldown is 30 min. -->
+		<!-- For 30 sec., P. Def. -90%, recovers 134 MP per sec. The effect is removed when hit. -->
 		<icon>icon.skill1430</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -139,12 +139,12 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="28213" toLevel="1" name="Hut on Chicken Legs' Blessing - Decrease Weight">
-		<!-- Weight is increased by 9000, Inventory Slot is increased by 9. -->
+		<!-- Weight limit +9000, inventory slots +9. -->
 		<icon>icon.skill0332</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="28214" toLevel="1" name="Hut on Chicken Legs' Teleport: Aden">
-		<!-- Teleports you to the Town of Aden. -->
+		<!-- Teleports you to Aden. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>600000</reuseDelay>
@@ -162,7 +162,7 @@
 		<reuseDelay>600000</reuseDelay>
 	</skill>
 	<skill id="28217" toLevel="1" name="Minion Eye's Encouragement">
-		<!-- Increases CON +3, MEN +3, Weight Limit by 10,000, and Max HP/ MP/ CP by 300. Decreases skill Cooldown by 3%, and MP Consumption for skill use by 3%. -->
+		<!-- CON +3, MEN +3, weight limit +10,000, Max HP/ MP/ CP +300, Skill Cooldown -3%, MP Consumption -3%. -->
 		<icon>icon.skill_agathion_cute</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -176,7 +176,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="28219" toLevel="1" name="Matryoshka's Gift">
-		<!-- Receive Matryoshka's Gift's gift. -->
+		<!-- Grants a gift from Matryoshka. -->
 		<icon>icon.etc_pi_gift_box_i02</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -184,7 +184,7 @@
 		<reuseDelay>43200000</reuseDelay>
 	</skill>
 	<skill id="28220" toLevel="1" name="Matryoshka's Blessing">
-		<!-- Increases Acquired XP/ SP by 30% while hunting for 60 min. -->
+		<!-- For 60 min., acquired XP/ SP while hunting +30%. -->
 		<icon>icon.exp_bottle_scroll</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -193,19 +193,19 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="28221" toLevel="1" name="Matryoshka's Teleport - Talking Island Village">
-		<!-- Teleports you to the Talking Island Village. -->
+		<!-- Teleports you to Talking Island Village. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="28222" toLevel="1" name="Matryoshka's Teleport - Aden">
-		<!-- Teleports you to the Town of Aden. -->
+		<!-- Teleports you to Aden. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="28223" toLevel="1" name="Matryoshka's Teleport - Ancient City Arcan">
-		<!-- Teleports to Magmeld Ancient City Arcan. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
@@ -242,7 +242,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="28230" toLevel="1" name="Summon Agathion Gnosian">
-		<!-- Summons Gnosian agathion. -->
+		<!-- Summons Agathion Gnosian. -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
@@ -266,7 +266,7 @@
 		<hitTime>3000</hitTime>
 	</skill>
 	<skill id="28234" toLevel="1" name="Freya's Shopping Bag">
-		<!-- Double-click Freya's Deluxe Shopping Bag to obtain 1 Freya's Art of Seduction, 2 Freya's Recovery Potion, and 1 Freya's Frozen Scroll. There is also a chance to additionally obtain one Freya, Sirra, or Snowman Special Card. -->
+		<!-- Double-click to obtain Freya's Frozen Scroll. There is also a chance to additionally obtain one of the following items: Freya's/ Sirra's/ Snowman's Winter Card. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -480,7 +480,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="28275" toLevel="1" name="Merlin's Magic Bracelet">
-		<!-- Unlocks the agathion's main slot and $s1 side slot(s). -->
+		<!-- Activates the agathion's main slot and $s1 additional slots. -->
 		<icon>BranchIcon.icon.g_bm_7th_sins_lbracelet_30d_jp</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -502,7 +502,7 @@
 		<reuseDelay>3000</reuseDelay>
 	</skill>
 	<skill id="28280" toLevel="1" name="New User Sprout">
-		<!-- Recovers Vitality when in a peace zone. -->
+		<!-- For new adventurers in Aden. -->
 		<icon>icon.s_newbie_user_display</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -512,7 +512,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="28282" toLevel="2" name="Peeves' Red Potion">
-		<!-- For $s1, acquired XP/ SP +$s2, SP/ Vitality bonus +$s3, P. Atk./ P. Def./ M. Atk./ M. Def. +$s4. -->
+		<!-- For $s1, acquired XP/ SP +$s2, Vitality bonus +$s3, P. Atk./ P. Def./ M. Atk./ M. Def. +$s4. -->
 		<icon>
 			<value level="1">BranchIcon.etc_sign_agathion_feed_red_i00</value>
 			<value level="2">BranchIcon.etc_sign_agathion_feed_purple_i00</value>
@@ -590,7 +590,7 @@
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="28285" toLevel="1" name="Honey Rose Beer">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, Damage +$s7, P./ M. Skill Power +$s8, Acquired XP/ SP +$s9, Received Damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>BranchSys3.Icon1.g_beerfestival_bavarian_beer</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -599,7 +599,7 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="28286" toLevel="1" name="Honey Rose Beer">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, Damage +$s7, P./ M. Skill Power +$s8, Acquired XP/ SP +$s9, Received Damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>BranchSys3.Icon1.g_beerfestival_bavarian_beer</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -608,19 +608,19 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="28287" toLevel="1" name="Jewel Box Lv. 4">
-		<!-- Double click to obtain 1 Level 4 La Vie En Rose Gem. -->
+		<!-- Double-click to obtain one of Lv. 4 La Vie En Rose's jewels. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="28288" toLevel="1" name="Jewel Box Lv. 5">
-		<!-- Double click to obtain 1 Level 5 La Vie En Rose Gem. -->
+		<!-- Double-click to obtain one of Lv. 5 La Vie En Rose's jewels. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="28289" toLevel="1" name="Paulina's Magic Bracelet">
-		<!-- Unlocks the agathion's main slot and $s1 side slot(s). -->
+		<!-- Activates the agathion's main slot and $s1 additional slots. -->
 		<icon>BranchIcon.icon.g_bm_7th_sins_lbracelet_30d_jp</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -704,7 +704,7 @@
 						<item id="47627" count="1" /> <!-- Sapphire Jewelry Box Lv. 3 -->
 					</item>
 					<item chance="5.14">
-						<item id="47705" count="1" /> <!-- Blue Cat's Eye Lv. 3 Jewelry Box -->
+						<item id="47705" count="1" /> <!-- Blue Cat's Eye Jewelry Box Lv. 3 -->
 					</item>
 					<item chance="7.16">
 						<item id="47637" count="1" /> <!-- Tanzanite Jewelry Box Lv. 3 -->

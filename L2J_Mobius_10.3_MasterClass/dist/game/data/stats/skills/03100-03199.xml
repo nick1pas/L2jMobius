@@ -178,7 +178,7 @@
 		</effects>
 	</skill>
 	<skill id="3104" toLevel="15" name="Item Skill: Poison (Magic Active)">
-		<!-- When triggered: Momentarily poisons the target when using magic. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- When triggered: Momentarily poisons the target when using magic. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill3080</icon>
 		<abnormalLevel>
 			<value level="1">5</value>
@@ -257,7 +257,7 @@
 		</effects>
 	</skill>
 	<skill id="3105" toLevel="15" name="Item Skill: Bleed (Magic Active)">
-		<!-- When triggered: Momentarily inflicts Bleed on the target when using magic. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- When triggered: Momentarily inflicts Bleed on the target when using magic. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill3080</icon>
 		<abnormalLevel>
 			<value level="1">5</value>
@@ -888,7 +888,7 @@
 		</effects>
 	</skill>
 	<skill id="3119" toLevel="15" name="Item Skill: Poison (Critical)">
-		<!-- When triggered: Momentarily poisons the target after a critical attack. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- When triggered: Momentarily poisons the target after a critical attack. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill3080</icon>
 		<abnormalLevel>
 			<value level="1">5</value>
@@ -966,7 +966,7 @@
 		</effects>
 	</skill>
 	<skill id="3120" toLevel="15" name="Item Skill: Bleed (Critical)">
-		<!-- When triggered: Momentarily inflicts Bleed on the target after a critical attack. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- When triggered: Momentarily inflicts Bleed on the target after a critical attack. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill3080</icon>
 		<abnormalLevel>
 			<value level="1">5</value>
@@ -2705,7 +2705,7 @@
 		</effects>
 	</skill>
 	<skill id="3141" toLevel="10" name="Item Skill: Focus">
-		<!-- Active skill: Temporarily increases Critical Rate for standard attacks. -->
+		<!-- Active skill: Temporarily increases Critical Rate for basic attacks. -->
 		<icon>icon.skill3123</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -3153,7 +3153,7 @@
 		</effects>
 	</skill>
 	<skill id="3148" toLevel="10" name="Item Skill: Vampiric Rage">
-		<!-- Active skill: Temporarily increases the amount of HP restored while absorbing part of the inflicted damage as HP. -->
+		<!-- Active skill: Temporarily increases the amount of HP recovered while absorbing part of the inflicted damage as HP. -->
 		<icon>icon.skill3123</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -3810,7 +3810,7 @@
 		</effects>
 	</skill>
 	<skill id="3159" toLevel="3" name="Item Skill: Stealth">
-		<!-- Active skill: Temporarily blocks the enemy's preemptive attacks. Fighting abilities are significantly decreased, while the effect is active. -->
+		<!-- Active skill: Temporarily monsters don't attack first. Fighting abilities are significantly decreased, while the effect is active. -->
 		<icon>icon.skill3123</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -3878,7 +3878,7 @@
 		</effects>
 	</skill>
 	<skill id="3160" toLevel="9" name="Item Skill: Resurrection">
-		<!-- Active skill: Resurrects a corpse. -->
+		<!-- Active skill: Resurrects a dead character. -->
 		<icon>icon.skill3123</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<castRange>400</castRange>
@@ -5095,7 +5095,7 @@
 		</effects>
 	</skill>
 	<skill id="3177" toLevel="10" name="Item Skill: Solar Flare">
-		<!-- Active skill: Deals holy damage to the target and nearby enemies. Power $s1 -->
+		<!-- Active skill: Deals holy damage to the target and enemies around them. Power $s1 -->
 		<icon>icon.skill3123</icon>
 		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -6571,7 +6571,7 @@
 		</effects>
 	</skill>
 	<skill id="3195" toLevel="15" name="Item Skill: Poison (Active)">
-		<!-- Active skill: Temporarily poisons the target. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Active skill: Temporarily poisons the target. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill3123</icon>
 		<abnormalLevel>
 			<value level="1">5</value>
@@ -6701,7 +6701,7 @@
 		</effects>
 	</skill>
 	<skill id="3196" toLevel="15" name="Item Skill: Bleed (Active)">
-		<!-- Active skill: Temporarily inflicts Bleed on the target. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Active skill: Temporarily inflicts Bleed on the target. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill3123</icon>
 		<abnormalLevel>
 			<value level="1">5</value>

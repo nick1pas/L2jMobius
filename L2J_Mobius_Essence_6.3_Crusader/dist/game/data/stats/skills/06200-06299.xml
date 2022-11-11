@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="6200" toLevel="1" name="Dispel NPC Transformation">
-		<!-- Cancels transformation. -->
+		<!-- Cancel Transformation -->
 		<icon>icon.skilltransform2</icon>
 		<castRange>900</castRange>
 		<effectPoint>10</effectPoint>
@@ -505,7 +505,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="6230" toLevel="1" name="Raid Boss (Lv. 82)">
-		<!-- Because of the item that was made in the image of the giants by the Ivory Tower magicians, it believes it is a giant itself. It is controlled by Hekaton Prime, and it guards the cave that was once the fortress of the giants. -->
+		<!-- It believes that it is a Giant. Now it guards a cave that served as a Giants' fortress in the Hekaton Prime days. -->
 		<icon>icon.skillraid</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1219,7 +1219,7 @@
 		<affectScope>POINT_BLANK</affectScope>
 	</skill>
 	<skill id="6271" toLevel="5" name="Grima Power Up">
-		<!-- P. Atk. +$s1. -->
+		<!-- P. Atk. +$s1 -->
 		<icon>icon.skill1068</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1294,7 +1294,7 @@
 				<power>38976</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>6662</skillId> <!-- Freeze -->
+				<skillId>6662</skillId> <!-- Ice Crystal -->
 				<skillLevel>2</skillLevel>
 			</effect>
 		</effects>
@@ -1322,7 +1322,7 @@
 				<power>45256</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>6662</skillId> <!-- Freeze -->
+				<skillId>6662</skillId> <!-- Ice Crystal -->
 				<skillLevel>2</skillLevel>
 			</effect>
 		</effects>
@@ -1551,7 +1551,7 @@
 		</effects>
 	</skill>
 	<skill id="6286" toLevel="1" name="Divine Protection of Sword">
-		<!-- Increase HP Recovery Bonus by 15% and P. Def. by 10% for 20 min. -->
+		<!-- For 20 min., HP Recovery Rate +15%, P. Def. +10%. -->
 		<icon>icon.skill6286</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -1878,7 +1878,7 @@
 				<power>1547</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>6662</skillId> <!-- Freeze -->
+				<skillId>6662</skillId> <!-- Ice Crystal -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>

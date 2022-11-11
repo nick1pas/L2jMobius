@@ -149,7 +149,7 @@
 		</effects>
 	</skill>
 	<skill id="208" toLevel="66" name="Bow Mastery">
-		<!-- When using a bow P. Atk. +$s1 -->
+		<!-- When using a bow: P. Atk. +$s1 -->
 		<icon>icon.skill0208</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -298,7 +298,7 @@
 		</effects>
 	</skill>
 	<skill id="209" toLevel="59" name="Dagger Mastery">
-		<!-- When using a dagger P. Atk. +$s1 -->
+		<!-- When using a dagger: P. Atk. +$s1 -->
 		<icon>icon.skill0209</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -698,7 +698,7 @@
 		</effects>
 	</skill>
 	<skill id="216" toLevel="59" name="Polearm Mastery">
-		<!-- When using a spear P. Atk. +$s1 Basic number of targets +5 -->
+		<!-- When using a spear: P. Atk. +$s1 Basic number of targets +5 -->
 		<icon>icon.skill0216</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1023,7 +1023,7 @@
 		</effects>
 	</skill>
 	<skill id="223" toLevel="65" name="Bloody Weapon">
-		<!-- Sharpens a weapon. The effect lasts for $s1 Uses Bloody Strike after a physical attack. Cannot be used with Freezing Weapon. <Bloody Strike> Attacks the enemy with $s2 power. For $s3 deals additional damage. -->
+		<!-- Sharpens a weapon. The effect lasts for $s1 With a certain chance, uses Bloody Strike after an attack. (Cooldown: 10 sec.) Cannot be used with Freezing Weapon. <Bloody Strike> Attacks the enemy with $s2 power. For $s3 deals additional damage. -->
 		<icon>icon.skill0223</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1232,7 +1232,7 @@
 		</effects>
 	</skill>
 	<skill id="227" toLevel="64" name="Light Armor Mastery">
-		<!-- When using light armor P. Def. +$s1 P. Evasion +$s2 -->
+		<!-- When using light armor: P. Def. +$s1 P. Evasion +$s2 -->
 		<icon>icon.skill0227</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1467,7 +1467,7 @@
 		</effects>
 	</skill>
 	<skill id="231" toLevel="64" name="Heavy Armor Mastery">
-		<!-- When using heavy armor P. Def. +$s1 -->
+		<!-- When using heavy armor: P. Def. +$s1 -->
 		<icon>icon.skill0231</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1612,7 +1612,7 @@
 		</effects>
 	</skill>
 	<skill id="232" toLevel="66" name="Heavy Armor Mastery">
-		<!-- When using heavy armor P. Def. +$s1 Received P. Critical Damage -$s2 Power Stance is used when damage is taken. <Power Stance> P. Atk. is increased -->
+		<!-- When using heavy armor: P. Def. +$s1 Received P. Critical Damage -$s2 With a certain chance, triggers Power Stance when hit. (Cooldown: 10 sec.) <Power Stance> Increases P. Atk. -->
 		<icon>icon.skill0232</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1781,7 +1781,7 @@
 		</effects>
 	</skill>
 	<skill id="233" toLevel="61" name="Light Armor Mastery">
-		<!-- When using light armor P. Def. +$s1 P. Evasion +$s2 Received P. Critical Rate -$s3 -->
+		<!-- When using light armor: P. Def. +$s1 P. Evasion +$s2 Received P. Critical Rate -$s3 -->
 		<icon>icon.skill0233</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1947,7 +1947,7 @@
 		</effects>
 	</skill>
 	<skill id="234" toLevel="55" name="Robe Mastery">
-		<!-- When using robes P. Def. +$s1 Max HP +$s2 -->
+		<!-- When using robes: P. Def. +$s1 Max HP +$s2 -->
 		<icon>icon.skill0234</icon>
 		<operateType>P</operateType>
 		<magicLevel>
@@ -2264,7 +2264,7 @@
 		</effects>
 	</skill>
 	<skill id="236" toLevel="55" name="Light Armor Mastery">
-		<!-- When using light armor P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 MP Recovery Rate +$s4 -->
+		<!-- When using light armor: P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 MP Recovery Rate +$s4 -->
 		<icon>icon.skill0236</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2445,7 +2445,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="244" toLevel="3" name="Armor Mastery">
-		<!-- P. Def. +$s1. -->
+		<!-- P. Def. +$s1 -->
 		<icon>icon.skill0244</icon>
 		<magicLevel>
 			<value level="1">1</value>
@@ -2611,7 +2611,7 @@
 		</effects>
 	</skill>
 	<skill id="248" toLevel="6" name="Crystallize">
-		<!-- Makes D-grade Crystallization possible. -->
+		<!-- Allows you to crystallize D-grade equipment. -->
 		<icon>icon.skill0248</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2624,7 +2624,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="249" toLevel="56" name="Weapon Mastery">
-		<!-- P. Atk. +$s1 M. Atk. +$s2 When using a bow or a spear, Casting Spd. -30% -->
+		<!-- P. Atk. +$s1 M. Atk. +$s2 When using a bow or a spear, Casting Spd. -30%. -->
 		<icon>icon.skill0249</icon>
 		<magicLevel>
 			<value level="1">1</value>
@@ -2819,7 +2819,7 @@
 		</effects>
 	</skill>
 	<skill id="250" toLevel="56" name="Weapon Mastery">
-		<!-- P. Atk. +$s1 M. Atk. +$s2 When using a bow or a spear, Casting Spd. -30% -->
+		<!-- P. Atk. +$s1 M. Atk. +$s2 When using a bow or a spear, Casting Spd. -30%. -->
 		<icon>icon.skill0250</icon>
 		<magicLevel>
 			<value level="1">1</value>
@@ -3163,7 +3163,7 @@
 		</effects>
 	</skill>
 	<skill id="252" toLevel="59" name="Light Armor Mastery">
-		<!-- When using light armor P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 MP Recovery Rate +$s4 -->
+		<!-- When using light armor: P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 MP Recovery Rate +$s4 -->
 		<icon>icon.skill0252</icon>
 		<magicLevel>
 			<value level="1">4</value>
@@ -3326,7 +3326,7 @@
 		</effects>
 	</skill>
 	<skill id="253" toLevel="57" name="Heavy Armor Mastery">
-		<!-- When using heavy armor P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 -->
+		<!-- When using heavy armor: P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 -->
 		<icon>icon.skill0253</icon>
 		<magicLevel>
 			<value level="1">11</value>
@@ -3552,7 +3552,7 @@
 		</effects>
 	</skill>
 	<skill id="255" toLevel="15" name="Enhanced Weapon">
-		<!-- Increases the weapon's effectiveness. When using a sword, a blunt weapon, a spear, dual swords, a fist weapon, an ancient sword or a rapier Atk. Spd. $s1 -->
+		<!-- Increases the weapon's effectiveness. When using a sword, a blunt weapon, a spear, dual swords or a fist weapon: Atk. Spd. $s1 -->
 		<icon>icon.skill0255</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -3776,7 +3776,7 @@
 		</effects>
 	</skill>
 	<skill id="258" toLevel="47" name="Light Armor Mastery">
-		<!-- When using light armor P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 MP Recovery Rate +$s4 -->
+		<!-- When using light armor: P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 MP Recovery Rate +$s4 -->
 		<icon>icon.skill0258</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -3912,7 +3912,7 @@
 		</effects>
 	</skill>
 	<skill id="259" toLevel="47" name="Heavy Armor Mastery">
-		<!-- P. Critical Rate +$s5 When using heavy armor P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 P. Atk. +$s4 -->
+		<!-- P. Atk. +$s4 P. Critical Rate +$s5 When using heavy armor: P. Def. +$s1 Casting Spd. +$s2 Atk. Spd. +$s3 -->
 		<icon>icon.skill0259</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -4107,7 +4107,7 @@
 		</effects>
 	</skill>
 	<skill id="260" toLevel="45" name="Power Break">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 Ignores Shield Defense. -->
+		<!-- <Shock skill with fixed cooldown> Attacks the enemy with $s1 power. Stuns for $s2 Ignores Shield Defense. -->
 		<icon>icon.skill0260</icon>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>
@@ -4376,7 +4376,7 @@
 		</effects>
 	</skill>
 	<skill id="261" toLevel="40" name="Triple Sonic Slash">
-		<!-- Attacks the enemy with $s1 power. Increases power upon consuming Momentum. Ignores $s2 of the target's defense. Critical. -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0261</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<isMagic>0</isMagic>
@@ -5092,7 +5092,7 @@
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>45405</skillId>
+				<skillId>45405</skillId> <!-- Song of Hunter -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -5212,7 +5212,7 @@
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>45407</skillId>
+				<skillId>45407</skillId> <!-- Dance of Fire -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -5253,7 +5253,7 @@
 		</effects>
 	</skill>
 	<skill id="273" toLevel="1" name="Dark Elven Damage Decrease">
-		<!-- Received damage from monsters $s1 -->
+		<!-- Received PvE damage $s1 -->
 		<icon>icon.skill0273</icon>
 		<magicLevel>52</magicLevel>
 		<operateType>P</operateType>
@@ -5303,7 +5303,7 @@
 		<itemConsumeId>3031</itemConsumeId> <!-- Spirit Ore -->
 		<selfEffects>
 			<effect name="CallSkill">
-				<skillId>45406</skillId>
+				<skillId>45406</skillId> <!-- Dance of Warrior -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -5328,7 +5328,7 @@
 		</effects>
 	</skill>
 	<skill id="275" toLevel="1" name="Dance of the Mystic">
-		<!-- Dark Elven arcane-praising dance. A $s1 chance to reflect M. skills. -->
+		<!-- Dark Elven arcane-praising dance. A $s1 chance to reflect M. damage. -->
 		<icon>icon.skill0275</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -5476,7 +5476,7 @@
 		</effects>
 	</skill>
 	<skill id="279" toLevel="9" name="Lightning Strike">
-		<!-- <Paralyzing Skill> A powerful lightning strike. Attacks the target with $s1 power. Paralyzes for $s2 Critical. -->
+		<!-- <Paralyzing skill> A powerful lightning strike. Attacks the target with $s1 power. Paralyzes for $s2 Critical. -->
 		<icon>icon.skill0279</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<isMagic>0</isMagic>
@@ -7299,13 +7299,13 @@
 				<hpPercent>60</hpPercent>
 			</effect>
 			<effect name="TriggerSkillByHpPercent">
-				<skillId>45101</skillId>
+				<skillId>45101</skillId> <!-- Final Frenzy -->
 				<percentTo>60</percentTo>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="291" toLevel="26" name="Final Fortress">
-		<!-- When HP < $s1 P. Atk. +$s2 When damage is taken, Knight s Fortress is used. -->
+		<!-- When HP < $s1 P. Def. +$s2 When damage is taken, P. Atk. is increased because of active Knight's Fortress. (Cooldown: 10 sec.) -->
 		<icon>icon.skill0291</icon>
 		<magicLevel>
 			<value level="1">52</value>
@@ -7462,7 +7462,7 @@
 		</effects>
 	</skill>
 	<skill id="293" toLevel="34" name="Two-handed Weapon Mastery">
-		<!-- When using a two-handed sword or a two-handed blunt weapon P. Atk. +$s1 P. Accuracy +$s2 -->
+		<!-- When using a two-handed sword/ blunt weapon: P. Atk. +$s1 P. Accuracy +$s2 -->
 		<icon>icon.skill0293</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -7730,7 +7730,7 @@
 		</effects>
 	</skill>
 	<skill id="299" toLevel="1" name="Summon Wild Hog Cannon">
-		<!-- <Summoning skill> Summons Wild Hog Cannon. It s a siege weapon that can either move, or inflict ranged attacks. Switching modes takes 30 sec. Can be used only during a siege. -->
+		<!-- <Summoning skill> Summons Wild Hog Cannon. It's a siege weapon that can either move, or inflict ranged attacks. Switching modes takes 30 sec. Can be used only during a siege. -->
 		<icon>icon.skill0299</icon>
 		<hitTime>15000</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->

@@ -21,7 +21,7 @@
 				<power>3194</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>6662</skillId> <!-- Freeze -->
+				<skillId>6662</skillId> <!-- Ice Crystal -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -61,7 +61,7 @@
 		</effects>
 	</skill>
 	<skill id="6302" toLevel="1" name="Icy Air">
-		<!-- Increase P./ M. Def. by 15%. -->
+		<!-- P./ M. Def. +15%. -->
 		<icon>icon.skill6302</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
@@ -1318,7 +1318,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6371" toLevel="1" name="Invincibility">
-		<!-- Invincibility to regular hits and skills, as well as debuffs. -->
+		<!-- Invincible to basic attacks, skills and debuffs. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
 		<abnormalType>PD_UP_SPECIAL</abnormalType>
@@ -1366,7 +1366,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6373" toLevel="1" name="Thunderbolt">
-		<!-- Receive damage is amplified. -->
+		<!-- Received damage is increased. -->
 		<icon>icon.skill0122</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1415,7 +1415,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6376" toLevel="9" name="Sonic Flash">
-		<!-- For $s1, 10% of max HP, $s2 of max MP and $s3 HP per sec decrease from Dopagen's Sonic Strike. -->
+		<!-- For $s1, Max HP -$s2, Max MP -$s3, HP -$s4 from Dopagen's Sonic Strike. -->
 		<icon>icon.skill1417</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1445,7 +1445,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6377" toLevel="10" name="Speed Up">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>
 			<value level="1">1</value>

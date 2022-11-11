@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="16900" toLevel="2" name="Kain van Halter">
-		<!-- Kain van Halter is the child of King Elmore's concubine. He has been with the Aden heroes, looking for the Holy Grail to save his half-sister, Giselle, who turned into a vampire. Now that the Holy Grail's been identified, however, he couldn't resist Etis van Etina's offer to turn Giselle back to human. Alas, he decided to turn his back on his allies and became the Embryo Commander-in-chief. -->
+		<!-- Kain van Halter is the child of the Elmore's king's concubine. He has been with the Aden heroes, looking for the Holy Grail to save his half-sister, Giselle, who turned into a vampire. Now that the Holy Grail's been identified, however, he couldn't resist Etis van Etina's offer to turn Giselle back to human. Alas, he decided to turn his back on his allies and became the Embryo Commander-in-chief. -->
 		<icon>icon.skillraid</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -114,7 +114,7 @@
 		<effectPoint>-10330</effectPoint>
 	</skill>
 	<skill id="16913" toLevel="1" name="Mighty Fatal Strike">
-		<!-- Physical Single Target Attack -->
+		<!-- Inflicts physical damage on a single target. -->
 		<icon>icon.skill0190</icon>
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
@@ -132,7 +132,7 @@
 		<effectPoint>-114</effectPoint>
 	</skill>
 	<skill id="16915" toLevel="1" name="Keen Lethal Shot">
-		<!-- Physical Single Target Attack -->
+		<!-- Inflicts physical damage on a single target. -->
 		<icon>icon.skill0343</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -150,7 +150,7 @@
 		<effectPoint>-686</effectPoint>
 	</skill>
 	<skill id="16917" toLevel="1" name="Highest Aura Bolt">
-		<!-- General M. Atk. -->
+		<!-- A basic magic attack. -->
 		<icon>icon.skill1275</icon>
 		<operateType>A1</operateType>
 		<castRange>400</castRange>
@@ -188,7 +188,7 @@
 		</effects>
 	</skill>
 	<skill id="16920" toLevel="1" name="Robust Judgment">
-		<!-- Inflicts Dark Attack damage on the enemy. For 10 sec., Critical Damage for standard attacks -50%, melee weapon resistance -30. -->
+		<!-- Inflicts Dark damage on the enemy. For 10 sec., Critical Damage for basic attacks -50%, melee weapon resistance -30. -->
 		<icon>icon.skill0401</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -208,7 +208,7 @@
 		<effectPoint>-438</effectPoint>
 	</skill>
 	<skill id="16922" toLevel="1" name="Mighty Rush Impact">
-		<!-- Rushes to the enemies in front stunning them for 5 sec. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Rushes to the enemies at the front shocking them for 5 sec. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill0793</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -227,7 +227,7 @@
 		<effectPoint>-686</effectPoint>
 	</skill>
 	<skill id="16924" toLevel="1" name="Atelia Power Crush">
-		<!-- Physical Single Target Attack -->
+		<!-- Inflicts physical damage on a single target. -->
 		<icon>icon.skill0006</icon>
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
@@ -270,7 +270,7 @@
 		<effectPoint>-114</effectPoint>
 	</skill>
 	<skill id="16929" toLevel="1" name="Atelia Reverse">
-		<!-- Physical Single Target Attack -->
+		<!-- Inflicts physical damage on a single target. -->
 		<icon>icon.skill10511</icon>
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
@@ -290,7 +290,7 @@
 		<effectPoint>-114</effectPoint>
 	</skill>
 	<skill id="16931" toLevel="1" name="Atelia Lethal Shot">
-		<!-- Physical Single Target Attack -->
+		<!-- Inflicts physical damage on a single target. -->
 		<icon>icon.skill0343</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -307,7 +307,7 @@
 		<effectPoint>-686</effectPoint>
 	</skill>
 	<skill id="16933" toLevel="1" name="Atelia Aura Bolt">
-		<!-- General M. Atk. -->
+		<!-- A basic magic attack. -->
 		<icon>icon.skill1275</icon>
 		<operateType>A1</operateType>
 		<castRange>400</castRange>
@@ -407,20 +407,20 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="16945" toLevel="1" name="Curse of Life">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<hitTime>5000</hitTime>
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="16946" toLevel="1" name="Curse of Etis van Etina">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="16947" toLevel="1" name="Dark Energy">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<icon>icon.skill11030</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -429,7 +429,7 @@
 		<reuseDelay>20000</reuseDelay>
 	</skill>
 	<skill id="16948" toLevel="1" name="Dark Energy">
-		<!-- Etis van Etina tricked Kain van Halter into believing that Giselle can become human again, and made him a traitor. -->
+		<!-- Etis van Etina tricked Kain van Halter into believing that Giselle can become human again, and made him traitor. -->
 		<icon>icon.dark_kain</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -482,7 +482,7 @@
 		<effectPoint>2</effectPoint>
 	</skill>
 	<skill id="16952" toLevel="1" name="Berserker">
-		<!-- Triples attack speed for 1 min. -->
+		<!-- For 1 min., increases Atk. Spd. by 3 times. -->
 		<icon>icon.skill1092</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -667,7 +667,7 @@
 		<effectPoint>-1</effectPoint>
 	</skill>
 	<skill id="16974" toLevel="1" name="Healing Moonlight">
-		<!-- HP is filling up. -->
+		<!-- Recovers HP. -->
 		<icon>icon.skill1229</icon>
 		<operateType>A1</operateType>
 		<castRange>650</castRange>
@@ -695,7 +695,7 @@
 		<effectPoint>-2</effectPoint>
 	</skill>
 	<skill id="16977" toLevel="1" name="Soul Link">
-		<!-- HP is filling up. -->
+		<!-- Recovers HP. -->
 		<icon>icon.skill1335</icon>
 		<operateType>A1</operateType>
 		<castRange>700</castRange>
@@ -751,7 +751,7 @@
 		<effectPoint>-1</effectPoint>
 	</skill>
 	<skill id="16983" toLevel="1" name="Embryo's Blessing">
-		<!-- HP is filling up. -->
+		<!-- Recovers HP. -->
 		<icon>icon.skill1147</icon>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -794,12 +794,12 @@
 		<effectPoint>2</effectPoint>
 	</skill>
 	<skill id="16989" toLevel="1" name="Death">
-		<!-- Presentation Skill -->
+		<!-- Presentation Skill. -->
 		<operateType>A1</operateType>
 		<effectPoint>2</effectPoint>
 	</skill>
 	<skill id="16990" toLevel="1" name="Dark Roar">
-		<!-- Etis van Etina tricked Kain van Halter into believing that Giselle can become human again, and made him a traitor. -->
+		<!-- Etis van Etina tricked Kain van Halter into believing that Giselle can become human again, and made him traitor. -->
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
 		<hitTime>2000</hitTime>
@@ -823,7 +823,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="16993" toLevel="1" name="Orc's Dream">
-		<!-- You politely offer greetings to Frederick the Destroyer. -->
+		<!-- You offer greetings to Orc Mutant. -->
 		<icon>icon.ev_greeting1</icon>
 		<operateType>A1</operateType>
 		<isMagic>6</isMagic>

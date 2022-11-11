@@ -50,7 +50,7 @@
 		</effects>
 	</skill>
 	<skill id="6402" toLevel="5" name="Torumba Poison Strike">
-		<!-- Poisons the target, causing them to lose $s2 HP per sec. for $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Poisons the target, causing them to lose $s2 HP per sec. for $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0129</icon>
 		<abnormalLevel>
 			<value level="1">11</value>
@@ -833,7 +833,7 @@
 		</effects>
 	</skill>
 	<skill id="6432" toLevel="1" name="Feral Focus">
-		<!-- For 5 min., Critical Rate for standard attacks +35%. -->
+		<!-- For 5 min., Critical Rate for basic attacks +35%. -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>315</abnormalTime>
@@ -914,7 +914,7 @@
 		</effects>
 	</skill>
 	<skill id="6435" toLevel="3" name="Curse of Abyss">
-		<!-- When Bow/ Crossbow is used, Critical Rate for standard attacks +$s1, Critical Damage for standard attacks +$s2. -->
+		<!-- When using a bow or a crossbow, Critical Rate for basic attacks +$s1, Critical Damage for basic attacks +$s2. -->
 		<icon>icon.skill6435</icon>
 		<abnormalLevel>
 			<value level="1">7</value>
@@ -983,7 +983,7 @@
 		</effects>
 	</skill>
 	<skill id="6436" toLevel="1" name="Curse of the Dark Abyss">
-		<!-- HP decreases over time, Bow/Crossbow Critical Rate for standard attacks +90%, and Critical Damage for standard attacks +50%. -->
+		<!-- Decreases HP every second. When using a bow or a crossbow, Critical Rate for basic attacks +90%, Critical Damage for basic attacks +50%. -->
 		<icon>icon.skill6435</icon>
 		<abnormalLevel>10</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -1083,7 +1083,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6439" toLevel="1" name="Energy of Wisdom">
-		<!-- Inflicted status: Infection (Bleed, Poison). -->
+		<!-- . Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill6439</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -1118,7 +1118,7 @@
 		</effects>
 	</skill>
 	<skill id="6440" toLevel="1" name="Energy of Resolution">
-		<!-- Inflicted status: Infection (Bleed, Poison). -->
+		<!-- . Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill6440</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -1153,7 +1153,7 @@
 		</effects>
 	</skill>
 	<skill id="6441" toLevel="1" name="Energy of Agility">
-		<!-- Inflicted status: Infection (Bleed, Poison). -->
+		<!-- . Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill6441</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>

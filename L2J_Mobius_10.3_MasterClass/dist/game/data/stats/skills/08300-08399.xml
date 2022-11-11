@@ -127,7 +127,7 @@
 		</effects>
 	</skill>
 	<skill id="8303" toLevel="1" name="Vesper Light Armor Set - PvP">
-		<!-- Increases P. Atk. by 5.57%, Atk. Spd./ MP Recovery by 5% and Max MP by +347. Decreases received PvP damage and has a chance of canceling the enemy attacker's target. -->
+		<!-- P. Atk. +5.57%, Atk. Spd./ MP Recovery +5%, Max MP +347. Decreases received PvP damage. With a certain chance, cancels the opponent's target. -->
 		<icon>icon.armor_t95_u_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -173,7 +173,7 @@
 		</effects>
 	</skill>
 	<skill id="8304" toLevel="1" name="Vesper Noble Light Armor Set - PvP">
-		<!-- P. Atk. +5.57%, Atk. Spd./ MP Recovery +5%, Max MP +354, P. Evasion +3, Critical Damage for standard attacks +172, and Paralysis Resistance +50%. Decreases received PvP damage and has a chance to cancel the attacker's target. Activates the cloak slot. -->
+		<!-- P. Atk. +5.57%, Atk. Spd./ MP Recovery +5%, Max MP +354, P. Evasion +3, Critical Damage for basic attacks +172, Paralysis Resistance +50%. Decreases received PvP damage. With a certain chance, cancels the opponent's target. Unlocks the cloak slot. -->
 		<icon>icon.armor_t95_u_i01</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -228,7 +228,7 @@
 		</effects>
 	</skill>
 	<skill id="8305" toLevel="1" name="Vesper Robe Set - PvP">
-		<!-- M. Atk. +8.47%, Casting Spd. +15%, MP Recovery Rate +5%, Confusion Resistance +50%. Casting Interruption Rate -30. Decreases received PvP damage, also has a chance to decrease Received P. Critical Rate and Received Critical Damage from standard attacks. -->
+		<!-- M. Atk. +8.47%, Casting Spd. +15%, MP Recovery Rate +5%, Confusion Resistance +50%, Casting Interruption Rate -30. Decreases received PvP damage. With a certain chance, decreases received Critical Rate from basic attacks and received Critical Damage from basic attacks. -->
 		<icon>icon.armor_t96_u_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -281,7 +281,7 @@
 		</effects>
 	</skill>
 	<skill id="8306" toLevel="1" name="Vesper Noble Robe Set - PvP">
-		<!-- M. Atk. +8.47%, Casting Spd. +15%, MP Recovery Rate +5%, Confusion Resistance +50%, Speed +7. Casting Interruption Rate -30. M. Skill MP Consumption -3%. Decreases received PvP damage, also has a chance to decrease Received P. Critical Rate and Received Critical Damage from standard attacks. Activates the cloak slot. -->
+		<!-- M. Atk. +8.47%, Casting Spd. +15%, MP Recovery Rate +5%, Confusion Resistance +50%, Speed +7, Casting Interruption Rate -30, M. Skill MP Consumption -3%. Decreases received PvP damage. With a certain chance, decreases received Critical Rate from basic attacks and received Critical Damage from basic attacks. Unlocks the cloak slot. -->
 		<icon>icon.armor_t96_u_i01</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -340,7 +340,7 @@
 		</effects>
 	</skill>
 	<skill id="8307" toLevel="1" name="Boing Hammer's Mysterious Effect">
-		<!-- Has a chance to increase the size of the target's head after a standard attack. -->
+		<!-- With a certain chance, increases the size of the target's head after a basic attack. -->
 		<icon>icon.weapon_bbyong_hammer_a_i00</icon>
 		<magicLevel>1</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -765,7 +765,7 @@
 		</effects>
 	</skill>
 	<skill id="8325" toLevel="1" name="Wild Rose Pig Candy">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>icon.etc_pig_candy_i00</icon>
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -861,7 +861,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>16066</npcId> <!-- Light of Dawn -->
+				<npcId>16066</npcId> <!-- Agathion of Dawn -->
 			</effect>
 		</effects>
 	</skill>
@@ -1022,7 +1022,7 @@
 		</effects>
 	</skill>
 	<skill id="8336" toLevel="1" name="Ride Guardian's Strider">
-		<!-- Ride a Guardian's Strider. -->
+		<!-- Allows to mount Guardian's Strider. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1057,7 +1057,7 @@
 		</effects>
 	</skill>
 	<skill id="8338" toLevel="4" name="Low-grade Magic Rune Clip Iron Belt">
-		<!-- Increases HP regeneration when equipped. -->
+		<!-- Increases HP Recovery Rate when equipped. -->
 		<icon>icon.skill0332</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1085,7 +1085,7 @@
 		</effects>
 	</skill>
 	<skill id="8339" toLevel="4" name="Low-grade Magic Rune Clip Mithril Belt">
-		<!-- Increases HP regeneration when equipped. -->
+		<!-- Increases HP Recovery Rate when equipped. -->
 		<icon>icon.skill0332</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1113,7 +1113,7 @@
 		</effects>
 	</skill>
 	<skill id="8340" toLevel="4" name="Low-grade Magic Rune Clip Iron Belt">
-		<!-- Increases MP regeneration when equipped. -->
+		<!-- Increases MP Recovery Rate when equipped. -->
 		<icon>icon.skill0332</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1141,7 +1141,7 @@
 		</effects>
 	</skill>
 	<skill id="8341" toLevel="4" name="Low-grade Magic Rune Clip Mithril Belt">
-		<!-- Increases MP regeneration when equipped. -->
+		<!-- Increases MP Recovery Rate when equipped. -->
 		<icon>icon.skill0332</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1641,7 +1641,7 @@
 		</effects>
 	</skill>
 	<skill id="8361" toLevel="1" name="Anniversary Earring">
-		<!-- Confusion Resistance and Atk. Rate +20%. With a certain chance, absorbs 4% of the inflicted damage as HP. -->
+		<!-- Confusion Resistance +20%, Confusion Atk. Rate +20%. With a certain chance, absorbs 4% of the inflicted damage as HP. -->
 		<icon>icon.event_six_party_earing_i00</icon>
 		<magicLevel>75</magicLevel>
 		<operateType>P</operateType>
@@ -1718,7 +1718,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="8366" toLevel="1" name="Dynasty Jewel Leather Armor">
-		<!-- Increases P. Atk., Max HP, Critical Rate/ Damage for standard attacks, and Dark Resistance. -->
+		<!-- Increases P. Atk., Max HP, Critical Rate for basic attacks, Dark Resistance and Critical Damage for basic attacks. -->
 		<icon>icon.armor_t91_uw_i00</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1830,7 +1830,7 @@
 		</effects>
 	</skill>
 	<skill id="8373" toLevel="1" name="Shriek Mask">
-		<!-- Mask's effect. For 60 min., Max HP and Max MP +10%, Critical Rate for standard attacks +5%, and Wind Resistance +5. -->
+		<!-- The mask's effect. For 60 min., Max HP/ MP +10%, Critical Rate for basic attacks +5%, Wind Resistance +5. -->
 		<icon>icon.ev_scream_mask_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1871,7 +1871,7 @@
 		</effects>
 	</skill>
 	<skill id="8374" toLevel="1" name="Red Devil Mask">
-		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, Speed by 5%, and Fire Resistance by 5. -->
+		<!-- The mask's effect. For 60 min., Max HP/ MP +10%, Speed +5%, Fire Resistance +5. -->
 		<icon>icon.ev_doccabi_mask_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1908,7 +1908,7 @@
 		</effects>
 	</skill>
 	<skill id="8375" toLevel="1" name="Mummy Mask">
-		<!-- Mask's effect. For 60 min., Max HP and Max MP +10%, Skill MP consumption +5%, and Dark Resistance +5. -->
+		<!-- The mask's effect. For 60 min., Max HP/ MP +10%, Skill MP Consumption +5%, Dark Resistance +5. -->
 		<icon>icon.ev_mummy_mask_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1956,7 +1956,7 @@
 		</effects>
 	</skill>
 	<skill id="8376" toLevel="1" name="Planet X235 Alien Mask's Effect">
-		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 10%, magic damage's Prominent Damage occurrence by 2, and Water Resistance by 5. -->
+		<!-- The mask's effect. For 60 min., Max HP/ MP +10%, Critical Rate +2, Water Resistance +2. -->
 		<icon>icon.ev_alien_mask_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1997,7 +1997,7 @@
 		</effects>
 	</skill>
 	<skill id="8377" toLevel="1" name="Golden Jack O'Lantern Mask's Effect">
-		<!-- Mask's effect. For 60 min., increases Max HP and Max MP by 20%, Speed by 20, and Debuff Resistance by 10%. -->
+		<!-- The mask's effect. For 60 min., Max HP/ MP +10%, Speed +20, Debuff Resistance +10%. -->
 		<icon>icon.ev_golden_jack0_mask_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2390,7 +2390,7 @@
 		</effects>
 	</skill>
 	<skill id="8397" toLevel="1" name="Moirai Heavy Armor Set">
-		<!-- P. Atk. +4.26%, Atk. Spd. +4%, M. Damage Resistance +2%, Confusion Resistance +50% and Fire/ Water/ Wind/ Earth Resistance +3. Activates the cloak slot. STR +2, CON -2. -->
+		<!-- When equipped, P. Atk. +4.26%, Atk. Spd. +4%, M. Damage Resistance +2%, Confusion Resistance +50%, Fire/ Water/ Wind/ Earth Resistance +3, STR +2, CON -2. Unlocks the cloak slot. -->
 		<icon>icon.armor_t100_u_i00</icon>
 		<magicLevel>82</magicLevel>
 		<operateType>P</operateType>
@@ -2438,7 +2438,7 @@
 		</effects>
 	</skill>
 	<skill id="8398" toLevel="1" name="Moirai Light Armor Set">
-		<!-- P. Atk. +4.26%, Atk. Spd. +4%, Speed +3%, hold resistance +50%, fire/ water/ wind/ earth resistance +3. DEX +2, CON -2. Activates the cloak slot. -->
+		<!-- When equipped, P. Atk. +4.26%, Atk. Spd. +4%, Speed +3%, Hold Resistance +50%, Fire/ Water/ Wind/ Earth Resistance +3, DEX +2, CON -2. Unlocks the cloak slot. -->
 		<icon>icon.armor_t101_u_i00</icon>
 		<magicLevel>82</magicLevel>
 		<operateType>P</operateType>
@@ -2486,7 +2486,7 @@
 		</effects>
 	</skill>
 	<skill id="8399" toLevel="1" name="Moirai Robe Set">
-		<!-- M. Atk. +8.11%, Casting Spd. +15%, paralysis resistance +50%, fire/ water/ wind/ earth resistance +5. WIT +2, MEN -2. Activates the cloak slot. -->
+		<!-- When equipped, M. Atk. +8.11%, Casting Spd. +15%, Paralysis Resistance +50%, Fire/ Water/ Wind/ Earth Resistance +5, WIT +2, MEN -2. Unlocks the cloak slot. -->
 		<icon>icon.armor_t102_u_i00</icon>
 		<magicLevel>82</magicLevel>
 		<operateType>P</operateType>

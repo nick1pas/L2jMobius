@@ -126,7 +126,7 @@
 		</effects>
 	</skill>
 	<skill id="21006" toLevel="1" name="Large Firecracker">
-		<!-- Sets off firecrackers. -->
+		<!-- Launches a firecracker. -->
 		<icon>BranchSys.icon.br_Afro_hair_i00</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<magicLevel>1</magicLevel>
@@ -138,7 +138,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="21007" toLevel="1" name="Mysterious Ability">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>BranchSys.icon.br_Afro_hair_i00</icon>
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -189,7 +189,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1506</npcId> <!-- Bamboo Panda Agathion -->
+				<npcId>1506</npcId> <!-- Agathion Daddy Panda -->
 			</effect>
 		</effects>
 	</skill>
@@ -732,7 +732,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1510</npcId> <!-- White Maneki Neko Agathion -->
+				<npcId>1510</npcId> <!-- Agathion White Maneki Neko -->
 			</effect>
 		</effects>
 	</skill>
@@ -873,7 +873,7 @@
 		</effects>
 	</skill>
 	<skill id="21042" toLevel="1" name="Baguette's Blessing">
-		<!-- Blessing of Baguette. It fills 100% of HP and recovers 50% of MP. -->
+		<!-- Baguette's blessing. Recovers all HP and a half of MP. -->
 		<icon>icon.skill3123</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>3000</hitTime>
@@ -941,7 +941,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>1521</npcId> <!-- Great Sumo Match Agathion -->
+				<npcId>1521</npcId> <!-- Agathion Great Sumo Wrestler -->
 			</effect>
 		</effects>
 	</skill>
@@ -1059,7 +1059,7 @@
 		</effects>
 	</skill>
 	<skill id="21052" toLevel="1" name="Blessed Body">
-		<!-- Increases Max HP by 25% for 30 min. -->
+		<!-- For 30 min., Max HP +25%. -->
 		<icon>BranchSys.icon.br_people_cap_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -1085,7 +1085,7 @@
 		</effects>
 	</skill>
 	<skill id="21053" toLevel="1" name="Blessed Soul">
-		<!-- Increases Max MP by 25% for 30 min. -->
+		<!-- For 30 min., Max MP +25%. -->
 		<icon>BranchSys.icon.br_people_cap_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -1135,7 +1135,7 @@
 		</effects>
 	</skill>
 	<skill id="21055" toLevel="1" name="Wind Walk">
-		<!-- Increases Speed by 20 for 2 min. Cooldown is 18 min. -->
+		<!-- For 2 min., Speed +20. Skill Cooldown: 18 min. -->
 		<icon>BranchSys.icon.br_Bamboo_Hat_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -1357,7 +1357,7 @@
 		</effects>
 	</skill>
 	<skill id="21063" toLevel="1" name="Wind Walk">
-		<!-- Increases Speed by 20 for 2 min. Cooldown 18 min. -->
+		<!-- For 2 min., Speed +20. Skill Cooldown: 18 min. -->
 		<icon>BranchSys.icon.br_goggles_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -1469,7 +1469,7 @@
 		</effects>
 	</skill>
 	<skill id="21067" toLevel="1" name="Blessed Escape Power">
-		<!-- Allows the use of Blessed Escape. Cooldown is 12 h. -->
+		<!-- Enables the Blessed Escape skill. Cooldown: 12 h. -->
 		<icon>BranchSys.icon.br_plastic_hair_f_i00</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>200</hitTime>
@@ -1520,7 +1520,7 @@
 		</effects>
 	</skill>
 	<skill id="21069" toLevel="1" name="Wind Walk">
-		<!-- Increases Speed by 20 for 2 min. Cooldown 18 min. -->
+		<!-- For 2 min., Speed +20. Skill Cooldown: 18 min. -->
 		<icon>icon.accessory_forget_me_not_hairpin_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -1744,7 +1744,7 @@
 		</effects>
 	</skill>
 	<skill id="21077" toLevel="1" name="Wind Walk">
-		<!-- Increases Speed by 20 for 2 min. Cooldown 18 min. -->
+		<!-- For 2 min., Speed +20. Skill Cooldown: 18 min. -->
 		<icon>icon.accessory_cat_ear_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -1939,7 +1939,7 @@
 		</effects>
 	</skill>
 	<skill id="21084" toLevel="1" name="Vitality Recovery">
-		<!-- Recovers Vitality when acquiring XP for 5 min. Cooldown is 1 h. -->
+		<!-- For 5 min., recovers Vitality when acquiring XP. Cooldown: 1 h. -->
 		<icon>icon.accessory_dwarf_goggle_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -2140,7 +2140,7 @@
 		</effects>
 	</skill>
 	<skill id="21090" toLevel="1" name="Soul of Phoenix">
-		<!-- Receives the soul's help, and revives from death with completely recovered status. Buff/ de-buff doesn't disappear at death but is maintained. -->
+		<!-- Resurrects from death fully recovered. Buffs remain after death. -->
 		<icon>BranchSys.icon.br_comfortspirit_hat_a_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2229,7 +2229,7 @@
 		</effects>
 	</skill>
 	<skill id="21096" toLevel="1" name="Refreshing Watermelon's Ability">
-		<!-- For 30 min., increases Critical Rate by 30% and Critical Damage by 35%. -->
+		<!-- For 30 min., Critical Rate +30%, Critical Damage +35%. -->
 		<icon>BranchSys.icon.br_watermelon_cap_a_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -2328,7 +2328,7 @@
 		</effects>
 	</skill>
 	<skill id="21099" toLevel="1" name="Brave Warrior's Soul Power">
-		<!-- For 5 min., receives the soul's help to increases Atk. Spd. by 20%, P. Atk. by 10%, and P. Def. by 20%. Bestows the ability to recover as HP 5% of the physical damage inflicted on the enemy with a certain probability. -->
+		<!-- For 5 min., Atk. Spd. +20%, P. Atk. +10%, P. Def. +20%. Absorbs 5% of the inflicted basic damage as HP. -->
 		<icon>BranchSys.icon.br_tiger_cap_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>300</abnormalTime>

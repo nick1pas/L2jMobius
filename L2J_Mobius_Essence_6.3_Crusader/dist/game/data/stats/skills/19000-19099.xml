@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="19009" toLevel="10" name="Clan's Advent">
-		<!-- When a clan leader is online, the following effects are applied for clan members. P. Atk. +$s1 M. Atk. +$s2 -->
+		<!-- When the clan leader is online, the following effects are applied for clan members. P. Atk. +$s1 M. Atk. +$s2 -->
 		<icon>icon.skill19009</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -155,7 +155,7 @@
 		</effects>
 	</skill>
 	<skill id="19036" toLevel="1" name="Blessing of Light">
-		<!-- Acquires 3% additional XP and SP through the blessing of the Guardian of Light. -->
+		<!-- Acquired XP/ SP +3% through the blessing of the Guardian of Light. -->
 		<icon>icon.etc_pi_gift_box_i04</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>

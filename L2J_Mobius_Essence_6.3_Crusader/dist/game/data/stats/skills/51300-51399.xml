@@ -23,7 +23,6 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="51305" toLevel="1" name="Special Summer Box">
-		<!-- Double-click to randomly obtain 1 Anakim/Lilith Rune Stage 9, Earth Dragon Belt/Fire Dragon Belt - Venir's Blessing Lv. 4, or +10 Agathion Pack. -->
 		<icon>icon.etc_treasure_box_i04</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
@@ -44,19 +43,19 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="20">
-						<item id="91171" count="1" />
+						<item id="91171" count="1" /> <!-- Anakim's Soul Crystal Lv. 9 - Rare -->
 					</item>
 					<item chance="20">
-						<item id="91181" count="1" />
+						<item id="91181" count="1" /> <!-- Lilith' Soul Crystal Lv. 9 - Rare -->
 					</item>
 					<item chance="20">
-						<item id="90496" count="1" />
+						<item id="90496" count="1" /> <!-- Earth Dragon Belt -->
 					</item>
 					<item chance="20">
-						<item id="91147" count="1" />
+						<item id="91147" count="1" /> <!-- Fire Dragon Belt - Venir's Blessing Lv. 4 -->
 					</item>
 					<item chance="20">
-						<item id="91150" count="1" />
+						<item id="91150" count="1" /> <!-- +10 Agathion Pack -->
 					</item>
 					
 				</items>
@@ -101,34 +100,34 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="10.0">
-						<item id="49482" count="1" /> <!-- Stable Scroll: Enchant Weapon D -->
+						<item id="49482" count="1" /> <!-- Stable Scroll: Enchant D-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="49484" count="1" /> <!-- Stable Scroll: Enchant Weapon C -->
+						<item id="49484" count="1" /> <!-- Stable Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="49486" count="1" /> <!-- Stable Scroll: Enchant Weapon B -->
+						<item id="49486" count="1" /> <!-- Stable Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="22223" count="1" /> <!-- Stable Scroll: Enchant Weapon A -->
+						<item id="22223" count="1" /> <!-- Stable Scroll: Enchant A-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="22221" count="1" /> <!-- Stable Scroll: Enchant Weapon S -->
+						<item id="22221" count="1" /> <!-- Stable Scroll: Enchant S-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="49481" count="1" /> <!-- Stable Scroll: Enchant Armor D -->
+						<item id="49481" count="1" /> <!-- Stable Scroll: Enchant D-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="49483" count="1" /> <!-- Stable Scroll: Enchant Armor C -->
+						<item id="49483" count="1" /> <!-- Stable Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="49485" count="1" /> <!-- Stable Scroll: Enchant Armor B -->
+						<item id="49485" count="1" /> <!-- Stable Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="22224" count="1" /> <!-- Stable Scroll: Enchant Armor A -->
+						<item id="22224" count="1" /> <!-- Stable Scroll: Enchant A-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="22222" count="1" /> <!-- Stable Scroll: Enchant Armor S -->
+						<item id="22222" count="1" /> <!-- Stable Scroll: Enchant S-grade Armor -->
 					</item>
 				</items>
 			</effect>
@@ -158,34 +157,34 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="10.0">
-						<item id="33806" count="1" /> <!-- Improved Scroll: Enchant Weapon D -->
+						<item id="33806" count="1" /> <!-- Improved Scroll: Enchant D-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="33807" count="1" /> <!-- Improved Scroll: Enchant Weapon C -->
+						<item id="33807" count="1" /> <!-- Improved Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="33808" count="1" /> <!-- Improved Scroll: Enchant Weapon B -->
+						<item id="33808" count="1" /> <!-- Improved Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="33809" count="1" /> <!-- Improved Scroll: Enchant Weapon A -->
+						<item id="33809" count="1" /> <!-- Improved Scroll: Enchant A-grade Weapon -->
 					</item>
 					<item chance="10.">
-						<item id="33810" count="1" /> <!-- Improved Scroll: Enchant Weapon S -->
+						<item id="33810" count="1" /> <!-- Improved Scroll: Enchant S-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="33812" count="1" /> <!-- Improved Scroll: Enchant Armor D -->
+						<item id="33812" count="1" /> <!-- Improved Scroll: Enchant D-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="33813" count="1" /> <!-- Improved Scroll: Enchant Armor C -->
+						<item id="33813" count="1" /> <!-- Improved Scroll: Enchant C-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="33814" count="1" /> <!-- Improved Scroll: Enchant Armor B -->
+						<item id="33814" count="1" /> <!-- Improved Scroll: Enchant B-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="33815" count="1" /> <!-- Improved Scroll: Enchant Armor A -->
+						<item id="33815" count="1" /> <!-- Improved Scroll: Enchant A-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="33816" count="1" /> <!-- Improved Scroll: Enchant Armor S -->
+						<item id="33816" count="1" /> <!-- Improved Scroll: Enchant S-grade Armor -->
 					</item>
 				</items>
 			</effect>
@@ -215,28 +214,28 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="12.5">
-						<item id="91540" count="1" /> <!-- Accessory Varnish D -->
+						<item id="91540" count="1" /> <!-- D-grade Accessory Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91542" count="1" /> <!-- Accessory Varnish C -->
+						<item id="91542" count="1" /> <!-- C-grade Accessory Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91544" count="1" /> <!-- Accessory Varnish B -->
+						<item id="91544" count="1" /> <!-- B-grade Accessory Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91546" count="1" /> <!-- Accessory Varnish A -->
+						<item id="91546" count="1" /> <!-- A-grade Accessory Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91533" count="1" /> <!-- Armor Varnish D -->
+						<item id="91533" count="1" /> <!-- D-grade Armor Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91535" count="1" /> <!-- Armor Varnish C -->
+						<item id="91535" count="1" /> <!-- C-grade Armor Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91537" count="1" /> <!-- Armor Varnish B -->
+						<item id="91537" count="1" /> <!-- B-grade Armor Varnish -->
 					</item>
 					<item chance="12.5">
-						<item id="91539" count="1" /> <!-- Armor Varnish A -->
+						<item id="91539" count="1" /> <!-- A-grade Armor Varnish -->
 					</item>
 				</items>
 			</effect>
@@ -266,16 +265,16 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="25.0">
-						<item id="91526" count="1" /> <!-- Weapon Varnish D -->
+						<item id="91526" count="1" /> <!-- D-grade Weapon Varnish -->
 					</item>
 					<item chance="25.0">
-						<item id="91528" count="1" /> <!-- Weapon Varnish C -->
+						<item id="91528" count="1" /> <!-- C-grade Weapon Varnish -->
 					</item>
 					<item chance="25.0">
-						<item id="91530" count="1" /> <!-- Weapon Varnish B -->
+						<item id="91530" count="1" /> <!-- B-grade Weapon Varnish -->
 					</item>
 					<item chance="25.0">
-						<item id="91532" count="1" /> <!-- Weapon Varnish A -->
+						<item id="91532" count="1" /> <!-- A-grade Weapon Varnish -->
 					</item>
 				</items>
 			</effect>
@@ -305,22 +304,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="16.7">
-						<item id="91541" count="1" /> <!-- Elite Accessories Varnish D -->
+						<item id="91541" count="1" /> <!-- Elite D-grade Accessory Varnish -->
 					</item>
 					<item chance="16.66">
-						<item id="91543" count="1" /> <!-- Elite Accessories Varnish C -->
+						<item id="91543" count="1" /> <!-- Elite C-grade Accessory Varnish -->
 					</item>
 					<item chance="16.66">
-						<item id="91545" count="1" /> <!-- Elite Accessories Varnish B -->
+						<item id="91545" count="1" /> <!-- Elite B-grade Accessory Varnish -->
 					</item>
 					<item chance="16.66">
-						<item id="91534" count="1" /> <!-- Elite Armor Varnish D -->
+						<item id="91534" count="1" /> <!-- Elite D-grade Armor Varnish -->
 					</item>
 					<item chance="16.66">
-						<item id="91536" count="1" /> <!-- Elite Armor Varnish C -->
+						<item id="91536" count="1" /> <!-- Elite C-grade Armor Varnish -->
 					</item>
 					<item chance="16.66">
-						<item id="91538" count="1" /> <!-- Elite Armor Varnish B -->
+						<item id="91538" count="1" /> <!-- Elite B-grade Armor Varnish -->
 					</item>
 				</items>
 			</effect>
@@ -350,13 +349,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="33.34">
-						<item id="91527" count="1" /> <!-- Elite Weapon Varnish D -->
+						<item id="91527" count="1" /> <!-- Elite D-grade Weapon Varnish -->
 					</item>
 					<item chance="33.33">
-						<item id="91529" count="1" /> <!-- Elite Weapon Varnish C -->
+						<item id="91529" count="1" /> <!-- Elite C-grade Weapon Varnish -->
 					</item>
 					<item chance="33.33">
-						<item id="91531" count="1" /> <!-- Elite Weapon Varnish B -->
+						<item id="91531" count="1" /> <!-- Elite B-grade Weapon Varnish -->
 					</item>
 				</items>
 			</effect>
@@ -430,10 +429,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="50.0">
-						<item id="90143" count="1" /> <!-- Einhasad's Patronage (Tradable) -->
+						<item id="90143" count="1" /> <!-- Einhasad's Protection -->
 					</item>
 					<item chance="50.0">
-						<item id="91027" count="1" /> <!-- Dragon Potion -->
+						<item id="91027" count="1" /> <!-- Dragon's Miracle Potion -->
 					</item>
 				</items>
 			</effect>
@@ -564,7 +563,6 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="51339" toLevel="1" name="Star Agathion's Gift Box">
-		<!-- https://www.lineage2.com/news/zodiac-agathion-returns -->
 		<icon>icon.etc_treasure_box_i04</icon>
 		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
@@ -588,13 +586,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="33.34">
-						<item id="91159" count="1" /> <!-- Agathion Exchange Ticket x1 -->
+						<item id="91159" count="1" /> <!-- Agathion Exchange Coupon -->
 					</item>
 					<item chance="33.33">
-						<item id="91634" count="1" /> <!-- Agathion Soulstone x1 -->
+						<item id="91634" count="1" /> <!-- Agathion's Soulstone -->
 					</item>
 					<item chance="33.33">
-						<item id="91623" count="1" /> <!-- Stable Agathion Enchant Scroll x1 -->
+						<item id="91623" count="1" /> <!-- Stable Scroll: Enchant High-grade Agathion -->
 					</item>
 				</items>
 			</effect>
@@ -852,13 +850,13 @@
 						<item id="38154" count="100" /> <!-- Fishing Shot -->
 					</item>
 					<item chance="20.0">
-						<item id="49859" count="1" /> <!-- Weapon Exchange Coupon Event -->
+						<item id="49859" count="1" /> <!-- Old Weapon Coupon - Sealed -->
 					</item>
 					<item chance="20.0">
-						<item id="90181" count="1" /> <!-- Shining Coin -->
+						<item id="90181" count="1" /> <!-- Shiny Coin - Sealed -->
 					</item>
 					<item chance="20.0">
-						<item id="90907" count="1" /> <!-- Soulshots Coupon -->
+						<item id="90907" count="1" /> <!-- Soulshot Ticket - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -970,7 +968,7 @@
 		<reuseDelay>1200000</reuseDelay>
 	</skill>
 	<skill id="51376" toLevel="1" name="Mysterious Aura">
-		<!-- Temporarily increases your head size. Cooldown: 20 min. -->
+		<!-- Increases your head's size. Cooldown: 20 min. -->
 		<icon>icon.skill2513</icon>
 		<operateType>A1</operateType>
 		<reuseDelay>1200000</reuseDelay>
@@ -1015,10 +1013,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="20.0">
-						<item id="49086" count="1" /> <!-- Rice Cake of Fighting Spirit - Event -->
+						<item id="49086" count="1" /> <!-- Rice Cake of Fighting Spirit - Sealed -->
 					</item>
 					<item chance="20.0">
-						<item id="90831" count="1" /> <!-- Transformation Scroll: White Assassin - Event -->
+						<item id="90831" count="1" /> <!-- Transformation Scroll: White Assassin - Sealed -->
 					</item>
 					<item chance="20.0">
 						<item id="91011" count="1" /> <!-- Dragon Dye Box - 3rd Class -->
@@ -1056,22 +1054,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="16.7">
-						<item id="49674" count="1" /> <!-- XP Growth Scroll -->
+						<item id="49674" count="1" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="90793" count="1" /> <!-- Chef's Fish Stew Box -->
+						<item id="90793" count="1" /> <!-- Chef's Fish Stew Box - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="90794" count="2" /> <!-- Shining Scroll of Mood Melody -->
+						<item id="90794" count="2" /> <!-- Old Shining Scroll of Mood Melody - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="90831" count="1" /> <!-- Transformation Scroll: White Assassin -->
+						<item id="90831" count="1" /> <!-- Transformation Scroll: White Assassin - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="90835" count="1" /> <!-- Life Control Tower's Scroll of Blessing -->
+						<item id="90835" count="1" /> <!-- Life Control Tower's Scroll of Blessing - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="91639" count="1" /> <!-- Rare Accessory Pack Lv. 330-day -->
+						<item id="91639" count="1" /> <!-- Rare Accessory Pack Lv. 3 - 30-day -->
 					</item>
 				</items>
 			</effect>
@@ -1291,7 +1289,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="70.0">
-						<item id="90519" count="2" /> <!-- Shining Scroll of Mood Melody (Exchangeable) -->
+						<item id="90519" count="2" /> <!-- Shining Scroll of Mood Melody -->
 					</item>
 					<item chance="30.0">
 						<item id="91659" count="1" /> <!-- Yummy Chicken -->
@@ -1396,7 +1394,7 @@
 		</effects>
 	</skill>
 	<skill id="51398" toLevel="1" name="Sayha's Storm Lv. 1 (Event)">
-		<!-- For 20 min., Sayha's Grace Consumption +100%, acquired XP/ SP +100%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
+		<!-- For 20 min. while hunting, Sayha's Grace Consumption +100%, acquired XP/ SP +100%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
 		<icon>icon.bm_sayha_storm</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>

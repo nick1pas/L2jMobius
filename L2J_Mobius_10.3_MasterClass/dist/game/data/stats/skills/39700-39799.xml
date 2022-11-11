@@ -34,12 +34,11 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39705" toLevel="1" name="Faeron's Protector Scroll">
-		<!-- All stats +1, acquired XP/ SP +5%. The effect remains after death and main/ dual class changing. Deleted when entering the Olympiad or Ceremony of Chaos. -->
+		<!-- All stats +1, acquired XP/ SP while hunting +5%. The effect remains after death and switching between the main and dual class. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39706" toLevel="2" name="+1 Artifact Crystal Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -104,7 +103,6 @@
 		</effects>
 	</skill>
 	<skill id="39708" toLevel="1" name="First Time Lv. 120 Gift">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -134,7 +132,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39714" toLevel="4" name="Fresh Watermelon Energy">
-		<!-- Makes everything cooler. For $s1, damage +$s2, received damage -$s2. Note! 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
+		<!-- Makes everything cooler. For $s1, damage +$s2, received damage -$s2. Note!. 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
 		<icon>icon.skill0000</icon>
 		<hitTime>500</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -190,7 +188,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39717" toLevel="1" name="Elixir of Agility">
-		<!-- Grants a feeling of lightness. For 30 min., power of standard attacks and P./ M. skills +5%, P./ M. Def. +5%, acquired XP/ SP +5%. The effect remains after death and main/ dual class changing. Deleted when entering the Olympiad or Ceremony of Chaos. -->
+		<!-- Fills your body with a feeling of lightness. For 30 min., power of basic attacks and P./ M. skills +5%, P./ M. Def. +5%, acquired XP/ SP while hunting +5%. The effect remains after death and switching between the main and dual class. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -205,7 +203,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39719" toLevel="2" name="Atelia Refinery's Time Stone">
-		<!-- Adds 60 min. to the hunting time on the Otherworldly Atelia Refinery. Required level: 112+. -->
+		<!-- Only for the event. -->
 		<icon>icon.bm_timezone_refill_atre_a_60</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
@@ -252,12 +250,11 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39723" toLevel="1" name="Teleportation Cube">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39724" toLevel="1" name="Mentor's Encouragement">
-		<!-- With your mentor's help, your P. Atk./ M. Atk./ P. Def./ M. Def. +5%, Acquired XP/ SP +100%, Vitality bonus +100%. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
+		<!-- With your mentor's help, P. Atk./ M. Atk./ P. Def./ M. Def. +5%, acquired XP/ SP +100%, Vitality bonus +100%. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
 		<icon>icon.skill0000</icon>
 		<abnormalTime>-1</abnormalTime>
 		<canBeDispelled>false</canBeDispelled>
@@ -325,37 +322,37 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39728" toLevel="1" name="No Doubt">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Clears your mind of any doubts. When in inventory, maintains the Vitality level. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39729" toLevel="1" name="Snowman's Icy Candy">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +5%. Note!. Cannot be used in the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39730" toLevel="1" name="Light of Glory - Test">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For characters from the winning server: Dragon/ Zariche/ Tree appearance ave -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39731" toLevel="1" name="Shadow of Glory - Test">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For characters from the losing server: Dragon/ Zariche -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39732" toLevel="1" name="Power of Glory - Test">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Victory: for the Lord (grade 1) Dragon/ Zariche/ Footwear ave -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39733" toLevel="1" name="Passion of Glory - Test">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Defeat: for the Lord (grade 1) Dragon/ Zariche appearance -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39734" toLevel="3" name="Lucky Pouch of Growth">
-		<!-- Acquired XP/SP +5%. / Acquired adena +5%. / Vitality Bonus +7%. -->
+		<!-- Acquired XP/ SP +5% -->
 		<icon>
 			<value level="1">icon.ev_2021_newyear_rune2</value>
 			<value level="2">icon.ev_2021_newyear_rune3</value>
@@ -409,22 +406,20 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39737" toLevel="1" name="Expedition Supplies - Physical">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39738" toLevel="1" name="Expedition Supplies - Magic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39739" toLevel="1" name="Top-grade Growth Rune">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When in inventory, acquired XP/ SP +20%. Required level: 1-110. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39740" toLevel="1" name="Conquest Expedition Rune - Lv. 1-100">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Sustains Vitality when in inventory. Required level: 1-110. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<stayAfterDeath>true</stayAfterDeath>
@@ -435,12 +430,11 @@
 		</effects>
 	</skill>
 	<skill id="39741" toLevel="1" name="Conquest Expedition Rune - Conquest Zone">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When in inventory, sustains Vitality while in the Conquest world. Required level: 1-110. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39742" toLevel="1" name="Blessed Scroll: Enchant Exalted Weapon">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -451,72 +445,70 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39743" toLevel="1" name="+10 Artifact Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Double-click to obtain an artifact enchanted to +10. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39744" toLevel="1" name="+10 Agathion Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Double-click to obtain an agathion enchanted to +10. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39745" toLevel="1" name="Jewel Box">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Double-click to obtain a superior jewel of Lv. 10. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39746" toLevel="1" name="Vitality">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Recovers 1 bar of Vitality. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39747" toLevel="1" name="Emperor's Vitality Tonic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39748" toLevel="1" name="op_check_dethrone Test">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Test skill, P. Atk. +10,000. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39749" toLevel="1" name="Abandoned Coal Mines' Time Stone - Event">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39750" toLevel="1" name="Aden's Blessing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., damage +15%, Attribute Attack/ Resistance +100, acquired XP/ SP +50%, Vitality bonus +50%, received damage -15%. Cannot be used in the Olympiad. The effect does not stack with that of Freya's Charisma Potion, Einhasad's Charisma Potion and Freya's Luck Potion. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39751" toLevel="1" name="Adventurer's Fortune Scroll">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., Attribute Attack/ Resistance +100, Critical Rate for basic attacks, P./ M. Skill Critical Rate, Critical Damage for basic skills and P./ M. Skill Critical Damage +5%, CHA +3, Speed +6, acquired XP/ SP +10%, Vitality bonus +10%. The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39752" toLevel="2" name="+1 Attack Artifact Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Double-click to obtain a random attack artifact enchanted to +1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39753" toLevel="2" name="+1 Defense Artifact Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Double-click to obtain a random defense artifact enchanted to +1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39754" toLevel="2" name="+1 Support Artifact Pack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Double-click to obtain a random support artifact enchanted to +1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39755" toLevel="1" name="Mentor Guide's Inspiring Potion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., Attribute Attack/ Resistance +70, acquired XP/ SP +30%. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39756" toLevel="1" name="Swift Growth Cookie">
-		<!-- Vitality bonus +50% for 30 min. Additionally, acquired XP/ SP +300%, if your level is lower than 118. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad -->
+		<!-- For 30 min., Vitality bonus +50%, acquired XP/ SP +300%. Required level: 1-117. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>2</abnormalLevel>
@@ -553,7 +545,7 @@
 		</effects>
 	</skill>
 	<skill id="39757" toLevel="1" name="Swift Attack Cookie">
-		<!-- For 30 min., acquired XP/ SP +10%, Vitality bonus +20%, Attribute Attack +70, damage +10%. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
+		<!-- For 30 min., acquired XP/ SP +10%, Vitality bonus +20%, Attribute Attack +70, damage +10%. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>2</abnormalLevel>
@@ -610,26 +602,27 @@
 		</effects>
 	</skill>
 	<skill id="39758" toLevel="1" name="Musician's Melody - Elixir">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39759" toLevel="1" name="Musician's Melody - Elixir of Blessing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39760" toLevel="4" name="Musician's Melody - Heavenly Cocktail">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39761" toLevel="1" name="Musician's Melody - Enhanced Cocktail">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. PA only. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39762" toLevel="1" name="Musician's Melody - Ceremony of Chaos">
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill0000</icon>
 		<abnormalTime>420</abnormalTime>
 		<abnormalType>BUFF_SPECIAL_ATTACK</abnormalType>
@@ -746,21 +739,22 @@
 		</effects>
 	</skill>
 	<skill id="39763" toLevel="1" name="Musician's Melody - Battleground">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39764" toLevel="1" name="Musician's Melody - Letter Collector">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39765" toLevel="1" name="Musician's Melody - GM's Blessing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The GM is always by your side. For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39766" toLevel="3" name="Musician's Melody - Emperor's Special Cocktail">
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -875,26 +869,27 @@
 		</effects>
 	</skill>
 	<skill id="39767" toLevel="1" name="Sonata Performance - GM's Blessing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The GM is always by your side. For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, P./ M. Evasion +$s7, Damage Reflection +$s8, HP Recovery Rate +$s9, MP Recovery Rate +$s10, Casting Interruption Rate -$s11, Skill Cooldown -$s12, MP Consumption -$s13. With a certain chance, Vampiric Rage effect +$s14. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39768" toLevel="1" name="Sonata Performance - PA">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- . For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, P./ M. Evasion +$s7, Damage Reflection +$s8, HP Recovery Rate +$s9, MP Recovery Rate +$s10, Casting Interruption Rate -$s11, Skill Cooldown -$s12, MP Consumption -$s13. With a certain chance, Vampiric Rage effect +$s14. PA only. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39769" toLevel="1" name="Sonata Performance - Emperor's Cookie">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- . For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, P./ M. Evasion +$s7, Damage Reflection +$s8, HP Recovery Rate +$s9, MP Recovery Rate +$s10, Casting Interruption Rate -$s11, Skill Cooldown -$s12, MP Consumption -$s13. With a certain chance, Vampiric Rage effect +$s14. Cooldown: 1 h. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39770" toLevel="1" name="Sonata Performance - Enhanced Cocktail">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- . For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, P./ M. Evasion +$s7, Damage Reflection +$s8, HP Recovery Rate +$s9, MP Recovery Rate +$s10, Casting Interruption Rate -$s11, Skill Cooldown -$s12, MP Consumption -$s13. With a certain chance, Vampiric Rage effect +$s14. PA only. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39771" toLevel="3" name="Drum Concert - Emperor's Special Cocktail">
+		<!-- . For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Atk. Spd. +$s5, Casting Spd. +$s6, P./ M. Evasion +$s7, Damage Reflection +$s8, HP Recovery Rate +$s9, MP Recovery Rate +$s10, Casting Interruption Rate -$s11, Skill Cooldown -$s12, MP Consumption -$s13. With a certain chance, Vampiric Rage effect +$s14. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -991,6 +986,7 @@
 		</effects>
 	</skill>
 	<skill id="39772" toLevel="3" name="United Resistance - Emperor's Special Cocktail">
+		<!-- . For $s1, Infection/ Stupor/ Obstruction/ Confusion Resistance +$s2, Buff Cancel Resistance/ Debuff Resistance +$s3, Attribute Resistance +$s4. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1065,12 +1061,12 @@
 		</effects>
 	</skill>
 	<skill id="39773" toLevel="1" name="Festival Fairy's Hot Pasty">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +15%, Attribute Attack/ Resistance +100, acquired XP/ SP +5%.The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39774" toLevel="1" name="Swift Defense Cookie">
-		<!-- When used for 30 min., acquired XP/ SP +10%, Vitality bonus +20%, Attribute Resistance +70, received damage -10%. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
+		<!-- For 30 min., acquired XP/ SP +10%, Vitality bonus +20%, Attribute Resistance +70, received damage -10%. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>2</abnormalLevel>
@@ -1155,20 +1151,20 @@
 				<minLevel>115</minLevel>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>31009</skillId> <!-- Elements of the Exalted Lv. 1 -->
+				<skillId>31009</skillId> <!-- Elements of the Exalted -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>31009</skillId> <!-- Elements of the Exalted Lv. 1 -->
+				<skillId>31009</skillId> <!-- Elements of the Exalted -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="39777" toLevel="3" name="Craft Effect - Cooldown Decrease Lv. 1">
-		<!-- Skill Cooldown -1% / 2% / 5%-->
+		<!-- Skill Cooldown -1% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1300,12 +1296,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39794" toLevel="1" name="Freya's Scroll of Blessing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., sustains Vitality, acquired XP/ SP +150%, Vitality bonus +100%. Doesn't stack with effects from Freya's Frozen Scroll, Freya's Scroll of Storm, and Maphr's Scroll of Storm. Cooldown: 5 min. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39795" toLevel="1" name="Tavern Special Drink">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For 30 min., damage +15%, Attribute Attack/ Resistance +100, received damage -15%. Doesn't stack with effects from Freya's Charisma Potion, Einhasad's Charisma Potion, and Freya's Luck Potion. Cooldown: 5 min. The effect remains after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -1332,12 +1328,10 @@
 		</effects>
 	</skill>
 	<skill id="39797" toLevel="1" name="Gran Kain's Scroll: Enchant Weapon - 20">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39798" toLevel="1" name="Gran Kain's Scroll: Enchant Armor - 12">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

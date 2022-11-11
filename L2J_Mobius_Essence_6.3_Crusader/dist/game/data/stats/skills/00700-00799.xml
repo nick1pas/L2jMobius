@@ -2539,7 +2539,7 @@
 		</effects>
 	</skill>
 	<skill id="767" toLevel="10" name="Bow Mastery">
-		<!-- When using a bow P. Atk. +$s1 -->
+		<!-- When using a bow: P. Atk. $s1 Atk. Spd. $s2 Attack range $s3 -->
 		<icon>icon.skill0767</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2576,7 +2576,7 @@
 		</effects>
 	</skill>
 	<skill id="768" toLevel="1" name="Exciting Adventure">
-		<!-- The effect lasts for $s1 Speed $s2 P. Evasion $s3 Vital Point Attack Rate $s4 P. Skill Evasion $s5 Buff Cancel Resistance $s6 -->
+		<!-- The effect lasts for $s1 Speed $s2 P. Evasion $s3 Vital Point Attack Rate $s4 P. Skill Evasion $s5 Buff Cancel Resistance $s6 Does not stack with Ultimate Evasion Lv. 1. -->
 		<icon>icon.skill0768</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -2617,7 +2617,7 @@
 		</effects>
 	</skill>
 	<skill id="769" toLevel="1" name="Wind Riding">
-		<!-- The effect lasts for $s1 Speed $s2 P. Evasion $s3 Vital Point Attack Rate $s4 P. Skill Evasion $s5 Buff Cancel Resistance $s6 -->
+		<!-- The effect lasts for $s1 Speed $s2 P. Evasion $s3 Vital Point Attack Rate $s4 P. Skill Evasion $s5 Buff Cancel Resistance $s6 Does not stack with Ultimate Evasion Lv. 1. -->
 		<icon>icon.skill0769</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -2658,7 +2658,7 @@
 		</effects>
 	</skill>
 	<skill id="770" toLevel="1" name="Ghost Walking">
-		<!-- The effect lasts for $s1 Speed $s2 P. Evasion $s3 Vital Point Attack Rate $s4 P. Skill Evasion $s5 Buff Cancel Resistance $s6 -->
+		<!-- The effect lasts for $s1 Speed $s2 P. Evasion $s3 Vital Point Attack Rate $s4 P. Skill Evasion $s5 Buff Cancel Resistance $s6 Does not stack with Ultimate Evasion Lv. 1. -->
 		<icon>icon.skill0770</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -2699,7 +2699,7 @@
 		</effects>
 	</skill>
 	<skill id="771" toLevel="1" name="Flame Hawk">
-		<!-- <Infection Skill> Fires an arrow imbued with the phoenix energy. Attacks the target and enemies at the front with 8049 power. Inflicts additional damage for 10 sec. Ignores Shield Defense. Ignores 10% of the target's defense. Critical. -->
+		<!-- <Infection skill> Fires an arrow imbued with the phoenix energy. Attacks the target and enemies at the front with 8049 power. Inflicts additional damage for 10 sec. Ignores Shield Defense. Ignores 10% of the target's defense. Critical. -->
 		<icon>icon.skill0771</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>900</affectRange>
@@ -2739,7 +2739,7 @@
 		</effects>
 	</skill>
 	<skill id="772" toLevel="1" name="Arrow Rain">
-		<!-- <Infection Skill> Causes arrows to rain down from the sky. Attacks the target and nearby enemies with 7043 power. Inflicts additional damage for 10 sec. Ignores Shield Defense. Ignores 10% of the target's defense. Critical. -->
+		<!-- <Infection skill> Makes arrows rain down from the sky. Attacks the target and enemies around them with 7043 power. Inflicts additional damage for 10 sec. Ignores Shield Defense. Ignores 10% of the target's defense. Critical. -->
 		<icon>icon.skill0772</icon>
 		<affectLimit>1-20</affectLimit>
 		<affectRange>200</affectRange>
@@ -2778,7 +2778,7 @@
 		</effects>
 	</skill>
 	<skill id="773" toLevel="1" name="Ghost Piercing">
-		<!-- <Infection Skill> Shoots ghost arrows. Attacks the target and enemies at the front with 8452 power. Inflicts additional damage for 10 sec. Ignores Shield Defense. Ignores 5% of the target's defense. Critical. -->
+		<!-- <Infection skill> Shoots ghost arrows. Attacks the target and enemies at the front with 8452 power. Inflicts additional damage for 10 sec. Ignores Shield Defense. Ignores 5% of the target's defense. Critical. -->
 		<icon>icon.skill0773</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>900</affectRange>
@@ -3490,7 +3490,7 @@
 		</effects>
 	</skill>
 	<skill id="791" toLevel="5" name="Lightning">
-		<!-- <Paralyzing Skill> The effect lasts for $s1 Paralyzes the enemy. -->
+		<!-- <Paralyzing skill> The effect lasts for $s1 Inflicts Paralysis (lightning). -->
 		<icon>icon.skill0791</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>

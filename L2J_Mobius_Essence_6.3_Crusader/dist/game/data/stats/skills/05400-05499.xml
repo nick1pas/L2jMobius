@@ -200,14 +200,14 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5417" toLevel="1" name="Invincibility">
-		<!-- Makes you invincible to regular attacks, skills and debuffs. -->
+		<!-- Invincible to basic attacks, skills and debuffs. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>SELF</targetType>
 	</skill>
 	<skill id="5418" toLevel="1" name="Invincibility">
-		<!-- Makes you invincible to regular attacks, skills and debuffs. -->
+		<!-- Invincible to basic attacks, skills and debuffs. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -227,7 +227,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5420" toLevel="1" name="Invincibility">
-		<!-- Makes you invincible to regular attacks, skills and debuffs. -->
+		<!-- Invincible to basic attacks, skills and debuffs. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -677,7 +677,7 @@
 		</endEffects>
 	</skill>
 	<skill id="5436" toLevel="1" name="Increase Recovery Rate">
-		<!-- HP and MP recovery bonus are increased. -->
+		<!-- Increases the target's HP/ MP Recovery. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
 		<abnormalType>ALL_REGEN_UP</abnormalType>
@@ -1310,7 +1310,7 @@
 		</effects>
 	</skill>
 	<skill id="5454" toLevel="1" name="Shadow Bind">
-		<!-- Movement is blocked. -->
+		<!-- Unable to move. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>25</abnormalTime>
 		<abnormalType>ROOT_MAGICALLY</abnormalType>
@@ -1415,7 +1415,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5460" toLevel="1" name="Fear">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1734,7 +1734,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5486" toLevel="1" name="Extra Attack">
-		<!-- P. Atk. +100 -->
+		<!-- P. Atk. +100. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>PA_UP</abnormalType>

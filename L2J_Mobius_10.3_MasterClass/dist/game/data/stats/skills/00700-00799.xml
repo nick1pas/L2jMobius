@@ -114,7 +114,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="704" toLevel="1" name="Divine Enchanter: Water Spirit">
-		<!-- For 2 min., the targeted party member's M. Critical Rate +20, MP +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%. Speed -20%, Skill MP Consumption -5%. Consumes 10 Spirit Ore. -->
+		<!-- For 2 min., the targeted party member's M. Critical Rate +20, MP +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -188,7 +188,7 @@
 		</effects>
 	</skill>
 	<skill id="705" toLevel="1" name="Divine Enchanter: Fire Spirit">
-		<!-- For 2 min., a party member's Max MP +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. Consumes 10 Spirit Ore. -->
+		<!-- For 2 min., a party member's Max MP +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -269,7 +269,7 @@
 		</effects>
 	</skill>
 	<skill id="706" toLevel="1" name="Divine Enchanter: Wind Spirit">
-		<!-- For 2 min., a party member's Max HP +20%, P. Critical Rate for standard attacks +20%, M. Skill Critical Damage +20%, P. Atk. +10%, P./ M. Def. +20%, Atk. Spd./ Casting Spd. +20%, M. Atk. +20%, Debuff Resistance +10%, Speed -20%. With a certain chance, absorbs 5% of the inflicted damage as HP. Consumes 10 Spirit Ore. -->
+		<!-- For 2 min., a party member's Max HP +20%, Critical Rate for basic attacks +20%, M. Skill Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. With a certain chance, absorbs 5% of the inflicted damage as HP. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -346,7 +346,7 @@
 		</effects>
 	</skill>
 	<skill id="707" toLevel="1" name="Divine Enchanter: Hero Spirit">
-		<!-- For 2 min., a party member's Max HP +20%, M. Skill Critical Rate +2, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. Consumes 10 Spirit Ore. -->
+		<!-- For 2 min., a party member's Max HP +20%, M. Skill Critical Rate +2, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. Consumes 10 Spirit Ore. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -455,7 +455,7 @@
 		</effects>
 	</skill>
 	<skill id="709" toLevel="1" name="Sacrifice Enchanter">
-		<!-- Sacrifices the character to increase party s stats. Can be used only when MP<10%. The skill cooldown is fixed. -->
+		<!-- Sacrifices the character to increase party's stats. Can be used only when MP<10%. The skill cooldown is fixed. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -670,7 +670,7 @@
 		</effects>
 	</skill>
 	<skill id="714" toLevel="1" name="Sacrifice Summoner">
-		<!-- Sacrifices the character to increase party s P. Critical. Can be used only when MP<10%. The skill cooldown is fixed. -->
+		<!-- Sacrifices the character to increase party's P. Critical. Can be used only when MP<10%. The skill cooldown is fixed. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -1471,7 +1471,7 @@
 		</effects>
 	</skill>
 	<skill id="739" toLevel="3" name="Heretic Battle Heal">
-		<!-- Immediately restores the target's HP with $s1 Power. -->
+		<!-- Momentarily recovers HP. Power $s1 -->
 		<icon>icon.skill_transform_etc</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -1560,7 +1560,7 @@
 		</effects>
 	</skill>
 	<skill id="741" toLevel="3" name="Heretic: Heal Side Effect">
-		<!-- Cause side effects of the heal. Momentarily make the enemy addicted. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Cause side effects of the heal. Momentarily make the enemy addicted. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill_transform_debuff</icon>
 		<abnormalLevel>8</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -2105,7 +2105,7 @@
 		</effects>
 	</skill>
 	<skill id="754" toLevel="1" name="Doll Blader Clairvoyance">
-		<!-- Temporarily increases Critical Rate for standard attacks. Effect 3. -->
+		<!-- Temporarily increases Critical Rate for basic attacks. Effect 3. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2214,7 +2214,7 @@
 		</effects>
 	</skill>
 	<skill id="758" toLevel="1" name="Fighter's Will">
-		<!-- When using a melee weapon, P. Atk. +100, Atk. Spd. +10%. After an attack, has a chance to increase P. Skill Power and Critical Rate for standard attacks. -->
+		<!-- When using a melee weapon, P. Atk. +100, Atk. Spd. +10%. Increases P. Skill Power and Critical Rate for basic attacks after an attack. -->
 		<icon>icon.skill0758</icon>
 		<magicLevel>81</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2264,7 +2264,7 @@
 		</effects>
 	</skill>
 	<skill id="759" toLevel="1" name="Archer's Will">
-		<!-- When a bow/ crossbow is used, P. Accuracy +8 and Range +50. During attacks, P. Skill Power and Critical Rate for standard attacks are increased. -->
+		<!-- When using a bow or a crossbow, P. Accuracy +8, range +50. Increases P. Skill Power and Critical Rate for basic attacks after an attack. -->
 		<icon>icon.skill0759</icon>
 		<magicLevel>81</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2546,7 +2546,7 @@
 		</effects>
 	</skill>
 	<skill id="767" toLevel="1" name="Expose Vulnerability">
-		<!-- Gives flesh and takes a bone. Decreases the enemy's P. Def. by momentarily exposing his weakness when receiving the enemy's attack. Increases the critical hit rate of standard attacks. -->
+		<!-- Gives flesh and takes bones. Decreases the enemy's P. Def. by exposing their weakness when hit. Increases Critical Rate for basic attacks. -->
 		<icon>icon.skill0767</icon>
 		<magicLevel>81</magicLevel>
 		<operateType>P</operateType>
@@ -3151,7 +3151,7 @@
 		</effects>
 	</skill>
 	<skill id="785" toLevel="1" name="Flame Archon">
-		<!-- Receives the will of the phoenix to drastically increase the fighting ability of party members. For 1 min., Debuff Resistance +40%, P./ M. Def. +50%, Atk. Spd. +30%, P. Accuracy +6, Speed +30, Buff Cancel Resistance +40%, Healing Power -80%. When using a sword, Critical Rate for standard attacks +100. When using a blunt weapon, Critical Damage for standard attacks +100%. -->
+		<!-- Receives the will of the phoenix to drastically increase the fighting ability of party members. For 1 min., Debuff Resistance +40%, P./ M. Def. +50%, Atk. Spd. +30%, P. Accuracy +6, Speed +30, Buff Cancel Resistance +40%, Healing Power -80%. When using a sword, Critical Rate for basic attacks +100. When using a blunt weapon, Critical Damage for basic attacks +100%. -->
 		<icon>icon.skill0785</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -3310,7 +3310,7 @@
 		</effects>
 	</skill>
 	<skill id="788" toLevel="1" name="Pain of Shillien">
-		<!-- Shillien's pain becomes your own. Shillien's suffering wracks your body, having a chance to increase when you're being attacked. Additional effects appear with each increase. When level 3 is achieved, you can then use the Spirit of Shillien. -->
+		<!-- Shillien's pain becomes your own. Shillien's suffering wracks your body, increasing when being hit. Additional effects appear with each increase. -->
 		<icon>icon.skill0788</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -3344,7 +3344,7 @@
 		</effects>
 	</skill>
 	<skill id="789" toLevel="1" name="Spirit of Shillien">
-		<!-- Channels the power of Shillien to drastically increase fighting abilities of the party members. For 1 min., P. Atk. +30%, M. Atk. +30%, Speed +30, Atk. Spd. +30%. When using a sword, Critical Rate for standard attacks +100. When using a blunt weapon, Critical Damage for standard attacks +100%. With a certain chance, absorbs 40% of the inflicted damage as HP. Healing Power -80%. -->
+		<!-- Channels the power of Shillien to drastically increase fighting abilities of party members. For 1 min., P. Atk. +30%, M. Atk. +30%, Speed +30, Atk. Spd. +30%. When using a sword, Critical Rate for basic attacks +100. When using a blunt weapon, Critical Damage for basic attacks +100%. With a certain chance, absorbs 40% of the inflicted damage as HP. Healing Power -80%. -->
 		<icon>icon.skill0789</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -3686,7 +3686,7 @@
 		</effects>
 	</skill>
 	<skill id="794" toLevel="1" name="Mass Disarm">
-		<!-- Disarms nearby enemies for $s1 Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Disarms nearby enemies for $s1. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill0794</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -3829,7 +3829,7 @@
 		</effects>
 	</skill>
 	<skill id="799" toLevel="3" name="Master Ability: Defense">
-		<!-- P. Def. is increased. -->
+		<!-- Increases P. Def. -->
 		<icon>icon.skill0142</icon>
 		<excludedFromCheck>true</excludedFromCheck>
 		<magicLevel>75</magicLevel>

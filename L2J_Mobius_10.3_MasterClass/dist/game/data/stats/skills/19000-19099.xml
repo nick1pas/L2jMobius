@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="19001" toLevel="1" name="Test Bleed">
-		<!-- Race confirm. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Checking race. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0010509</icon>
 		<operateType>A2</operateType>
 		<castRange>40</castRange>
@@ -174,7 +174,7 @@
 		</effects>
 	</skill>
 	<skill id="19007" toLevel="1" name="Clan's Summon">
-		<!-- Summons a clan member. Consumes 100 Spirit Ore. The skill cooldown is fixed. -->
+		<!-- Summons a clan member to the caster. Consumes 100 Spirit Ore. The skill cooldown is fixed. -->
 		<icon>icon.skill19007</icon>
 		<operateType>A1</operateType>
 		<coolTime>500</coolTime>
@@ -202,7 +202,7 @@
 		</effects>
 	</skill>
 	<skill id="19008" toLevel="1" name="Clan's Salvation">
-		<!-- Uses the clan guardian's power to restore nearby clan members' HP/ MP/ CP. Consumes 1000 Spirit Ore. Only available for the clan leader. The skill cooldown is fixed. -->
+		<!-- Uses the clan guardian's power to restore nearby clan members' HP/ MP/ CP. Consumes 1000 Spirit Ore. Available only to the clan leader. The skill cooldown is fixed. -->
 		<icon>icon.skill19008</icon>
 		<operateType>A1</operateType>
 		<hitTime>1000</hitTime>
@@ -238,7 +238,7 @@
 		</effects>
 	</skill>
 	<skill id="19009" toLevel="15" name="Clan's Advent">
-		<!-- Clan members' XP/SP gain +$s1 and Vitality +$s2. The buff applies when the Clan Leader and/or marquis are online. The higher the clan level, the greater the Clan Advent buff. -->
+		<!-- Clan members' acquired XP/ SP +$s1, Vitality bonus +$s2. The buff is active while the clan leader or a marquis is online. The higher the clan level, the stronger the Clan's Advent effect. -->
 		<icon>
 			<value level="1">icon.skill19009_1</value>
 			<value level="2">icon.skill19009_2</value>
@@ -503,7 +503,7 @@
 		</effects>
 	</skill>
 	<skill id="19010" toLevel="1" name="Clan Copy">
-		<!-- Summons a copy of yourself to cause confusion among the enemies. Consumes 30 Spirit Ore. Requires 1500 Fame Points. Can be used by characters with the Marquis clan status or higher. -->
+		<!-- Summons a copy of yourself to cause confusion among enemies. Consumes 30 Spirit Ore. Requires 1500 Reputation Points. Can be used by characters with the Marquis clan status or higher. -->
 		<icon>icon.skill19010</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -668,7 +668,7 @@
 		</effects>
 	</skill>
 	<skill id="19015" toLevel="1" name="Clan Friendly">
-		<!-- Nearby clan members' Critical Rate for standard attacks +3%, M. Critical Rate +20. Consumes 50 Spirit Ore. Requires 3500 Fame Points. Can be used by characters with the Marquis clan status or higher. -->
+		<!-- Nearby clan members' Critical Rate for basic attacks +3%, M. Critical Rate +20. Consumes 50 Spirit Ore. Requires 3500 Reputation Points. Can be used by characters with the Marquis clan status or higher. -->
 		<icon>icon.skill19015</icon>
 		<operateType>A2</operateType>
 		<hitTime>2500</hitTime>
@@ -703,7 +703,7 @@
 		</effects>
 	</skill>
 	<skill id="19016" toLevel="1" name="Clan Boundary">
-		<!-- Nearby clan members' P. Atk. and P. Def. +3%. Consumes 50 Spirit Ore. Requires 3000 Fame Points. Can be used by characters with the Count clan status or higher. -->
+		<!-- Nearby clan members' P. Atk. and P. Def. +3%. Consumes 50 Spirit Ore. Requires 3000 Reputation Points. Can be used by characters with the Count clan status or higher. -->
 		<icon>icon.skill19016</icon>
 		<operateType>A2</operateType>
 		<hitTime>2500</hitTime>
@@ -1233,7 +1233,7 @@
 		</effects>
 	</skill>
 	<skill id="19036" toLevel="1" name="Blessing of Light">
-		<!-- Acquires 3% additional XP and SP through the blessing of the Guardian of Light. The skill cooldown is fixed. -->
+		<!-- Acquired XP/ SP +3% through the blessing of the Guardian of Light. The skill cooldown is fixed. -->
 		<icon>icon.etc_pi_gift_box_i04</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -1494,7 +1494,7 @@
 		</effects>
 	</skill>
 	<skill id="19074" toLevel="2" name="Academy Precept">
-		<!-- For $s1, Academy member's P. Atk. +$s2, M. Atk. +$s3, Critical Rate for standard attacks +$s4, M. Skill Critical Rate +$s5. -->
+		<!-- For $s1, the Academy members' P. Atk. +$s2, M. Atk. +$s3, Critical Rate for basic attacks +$s4, M. Skill Critical Rate +$s5. -->
 		<icon>icon.skill19008</icon>
 		<operateType>A2</operateType>
 		<mpConsume>100</mpConsume>
@@ -1965,7 +1965,7 @@
 		<targetType>NONE</targetType>
 	</skill>
 	<skill id="19094" toLevel="1" name="Increased Damage Quiver">
-		<!-- Increases Critical Damage, when shooting. -->
+		<!-- Increases Critical Damage while shooting. -->
 		<icon>icon.skill0256</icon>
 		<operateType>T</operateType>
 		<mpConsume>1</mpConsume>

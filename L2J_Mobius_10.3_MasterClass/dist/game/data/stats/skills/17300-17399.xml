@@ -13,13 +13,13 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17302" toLevel="1" name="Spirited Bounce">
-		<!-- For 2 h., Confusion Resistance/ Atk. Rate +50. Deleted when entering the Olympiad or Ceremony of Chaos. -->
+		<!-- For 2 h., Confusion Atk. Rate and Resistance +50. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill_sing</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17303" toLevel="1" name="Prevailing Sonata - Enhanced Cocktail">
-		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, absorbs $s6 of the inflicted damage as HP. PA only. -->
+		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, Vampiric Rage effect +$s6. PA only. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>687</effectPoint>
@@ -189,7 +189,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17307" toLevel="24" name="Real Tor's Blessing Lv. 1">
-		<!-- Allows to acquire a Territory Card $s1 times an hour. There are $s3 levels, so you can acquire up to $s2 cards. Return to the Real Tor for a new buff when it disappears. Note! The Real Tor's Blessing or cards can't be obtained if your character is dead or has no free slots in the inventory. -->
+		<!-- Allows to acquire a Territory Card $s1 times an hour. There are $s3 levels, so you can acquire up to $s2 cards. Return to the Real Tor for a new buff when it disappears. Note!. The Real Tor's Blessing or cards can't be obtained if your character is dead or has no free slots in the inventory. -->
 		<icon>icon.etc_cycle_point_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>
@@ -243,7 +243,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17311" toLevel="1" name="Chaotic Ambush">
-		<!-- For 30 min., attribute attack +30, attribute resistance +30. -->
+		<!-- For 30 min., Attribute Attack +30, Attribute Resistance +30. -->
 		<icon>icon.card_dragon_gold</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>10000</reuseDelay>
@@ -255,7 +255,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17313" toLevel="24" name="Real Tor's Blessing Lv. 1">
-		<!-- Allows to acquire a Territory Card $s1 times an hour. There are $s3 levels, so you can acquire up to $s2 cards. Return to the Real Tor for a new buff when it disappears. There is a chance to obtain a gift instead of a Territory Card. Note! The Real Tor's Blessing or cards can't be obtained if your character is dead or has no free slots in the inventory. -->
+		<!-- Allows to acquire a Territory Card $s1 times an hour. There are $s3 levels, so you can acquire up to $s2 cards. Return to the Real Tor for a new buff when it disappears. There is a chance to obtain a gift instead of a Territory Card. Note!. The Real Tor's Blessing or cards can't be obtained if your character is dead or has no free slots in the inventory. -->
 		<icon>icon.etc_cycle_point_i00</icon>
 		<operateType>A2</operateType>
 		<castRange>
@@ -817,7 +817,7 @@
 		</effects>
 	</skill>
 	<skill id="17399" toLevel="1" name="Lady's Hairpin: Critical Rate">
-		<!-- Critical Rate for standard attacks +50. -->
+		<!-- Critical Rate for basic attacks +50. -->
 		<icon>icon.accessory_hairpin_i00</icon>
 		<operateType>P</operateType>
 		<magicLevel>1</magicLevel>

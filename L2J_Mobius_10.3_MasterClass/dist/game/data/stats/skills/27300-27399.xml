@@ -830,7 +830,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27349" toLevel="12" name="Healing Light">
-		<!-- Recovers party members' HP/ MP/ CP and has a chance of dispelling their debuffs. -->
+		<!-- Recovers party members' HP/ MP/ CP. With a certain chance, also removes their debuffs. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_april_aug_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
@@ -876,7 +876,7 @@
 		</effects>
 	</skill>
 	<skill id="27350" toLevel="12" name="Skipping Kid">
-		<!-- Teleports 600 grids forward. -->
+		<!-- Momentarily moves you forward for 600. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_dec_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>100</hitTime>
@@ -1140,7 +1140,7 @@
 		</effects>
 	</skill>
 	<skill id="27356" toLevel="12" name="Scorpion's Mass Exile">
-		<!-- Banishes enemies near the target into another dimension. The exiled enemies become incapacitated and invincible against attacks, skills, and debuffs. The enemies' HP -282 per sec. -->
+		<!-- Banishes enemies around the target to another dimension. They become immobile and invincible against debuffs. Also, they cannot attack and use skills, and lose 282 HP per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_oct_i00</icon>
 		<operateType>A2</operateType>
 		<trait>DEPORT</trait>
@@ -1200,7 +1200,7 @@
 		</effects>
 	</skill>
 	<skill id="27357" toLevel="12" name="Mass Binding Flood">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for 9 sec. Every sec. HP -100. -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for 9 sec. HP -100 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_jan_i00</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -1377,31 +1377,31 @@
 		</effects>
 	</skill>
 	<skill id="27361" toLevel="1" name="Matryoshka's Teleport - Talking Island Village">
-		<!-- Return to Talking Island Village. -->
+		<!-- Teleports you to Talking Island Village. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="27362" toLevel="1" name="Matryoshka's Teleport - Aden">
-		<!-- Return to Town of Aden. -->
+		<!-- Teleports you to Aden. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="27363" toLevel="1" name="Matryoshka's Teleport - Ancient City Arcan">
-		<!-- Return to Ancient City Arcan of Megmeld. -->
+		<!-- Teleports you to Ancient City Arcan in Magmeld. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="27364" toLevel="1" name="Matryoshka's Teleport - Keucereus Alliance Base">
-		<!-- Return to Keucereus Alliance Base. -->
+		<!-- Teleports you to Keucereus Alliance Base. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="27365" toLevel="1" name="Matryoshka's Gift">
-		<!-- Receive Matryoshka's Gift. -->
+		<!-- Grants a gift from Matryoshka. -->
 		<icon>icon.etc_pi_gift_box_i02</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -1427,7 +1427,7 @@
 		<reuseDelay>3600000</reuseDelay>
 	</skill>
 	<skill id="27368" toLevel="1" name="Minion Eye's Encouragement">
-		<!-- CON +3, MEN +3, Weight Limit +10,000, Max HP/ MP/ CP +300. Skill Cooldown -3%, Skill MP Consumption -3%. -->
+		<!-- CON +3, MEN +3, weight limit +10,000, Max HP/ MP/ CP +300, Skill Cooldown -3%, MP Consumption -3%. -->
 		<icon>icon.skill_agathion_cute</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -1436,7 +1436,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27370" toLevel="1" name="Anniversary Gift">
-		<!-- Receive the gift from Agathion Nepal Snow. -->
+		<!-- A gift from Agathion Nepal Snow. -->
 		<icon>icon.etc_pi_gift_box_i02</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -1444,7 +1444,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="27371" toLevel="1" name="Transformation Skill">
-		<!-- For 60 min., you can transform into one of the following: Snow Man, Scarecrow Jack, Tin Golem, Makeshift Bat, Lady Tow, Angry Tow, and Sleepy Tow. -->
+		<!-- For 1 h., transforms you into one of the following funny creatures: Snowman, Scarecrow, Tinplate Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. -->
 		<icon>icon.skill11540</icon>
 		<operateType>A2</operateType>
 		<hitTime>1500</hitTime>
@@ -1454,7 +1454,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="27372" toLevel="1" name="Summon Friend">
-		<!-- You can summon a selected target. Only possible while in a party. Cooldown is 30 min. -->
+		<!-- Summons a selected character. Available only in a party. Cooldown: 30 min. -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>5000</hitTime>
@@ -1462,7 +1462,7 @@
 		<reuseDelay>1800000</reuseDelay>
 	</skill>
 	<skill id="27373" toLevel="1" name="Anniversary Gift">
-		<!-- Receive the gift from Agathion Nepal Snow. -->
+		<!-- A gift from Agathion Nepal Snow. -->
 		<icon>icon.etc_pi_gift_box_i02</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -1470,7 +1470,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="27374" toLevel="1" name="Transformation Skill">
-		<!-- For 60 min., you can transform into one of the following: Snow Man, Scarecrow Jack, Tin Golem, Makeshift Bat, Lady Tow, Angry Tow, and Sleepy Tow. -->
+		<!-- For 1 h., transforms you into one of the following funny creatures: Snowman, Scarecrow, Tinplate Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. -->
 		<icon>icon.skill11540</icon>
 		<operateType>A2</operateType>
 		<hitTime>1500</hitTime>
@@ -1480,7 +1480,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="27375" toLevel="1" name="Summon Friend">
-		<!-- You can summon a selected target. Only possible while in a party. Cooldown is 30 min. -->
+		<!-- Summons a selected character. Available only in a party. Cooldown: 30 min. -->
 		<icon>icon.etc_summon_aga_agit_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>5000</hitTime>

@@ -535,7 +535,7 @@
 		</effects>
 	</skill>
 	<skill id="213" toLevel="8" name="Mana Boost">
-		<!-- Max MP +$s1. -->
+		<!-- Max MP +$s1 -->
 		<icon>icon.skill0213</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -566,7 +566,7 @@
 		</effects>
 	</skill>
 	<skill id="214" toLevel="1" name="Mana Recovery">
-		<!-- Increases MP Recovery Bonus when equipped with a robe jacket and robe pants. -->
+		<!-- When using a robe, increases MP Recovery Rate. -->
 		<icon>icon.skill0214</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1275,7 +1275,7 @@
 		</effects>
 	</skill>
 	<skill id="226" toLevel="1" name="Relax">
-		<!-- Increases HP Recovery Bonus by 5. While sitting, 1 MP is consumed per second. -->
+		<!-- While sitting, HP Recovery Rate +5. Consumes 1 MP per sec. -->
 		<icon>icon.skill0226</icon>
 		<magicLevel>5</magicLevel>
 		<mpConsume>2</mpConsume>
@@ -1470,7 +1470,7 @@
 		</effects>
 	</skill>
 	<skill id="228" toLevel="3" name="Fast Spellcasting">
-		<!-- Casting Spd. +$s1. -->
+		<!-- Casting Spd. +$s1 -->
 		<icon>icon.skill0228</icon>
 		<magicLevel>
 			<value level="1">25</value>
@@ -1563,7 +1563,7 @@
 		</effects>
 	</skill>
 	<skill id="231" toLevel="50" name="Heavy Armor Mastery">
-		<!-- Increases P. Def. by $s1 when equipped with heavy armor. -->
+		<!-- When using heavy armor, P. Def. +$s1. -->
 		<icon>icon.skill0231</icon>
 		<magicLevel>
 			<value level="1">18</value>
@@ -1681,7 +1681,7 @@
 		</effects>
 	</skill>
 	<skill id="232" toLevel="52" name="Heavy Armor Mastery">
-		<!-- P. Def. +$s1, Received Critical Damage from standard attacks -$s2. -->
+		<!-- P. Def. +$s1, received Critical Damage from basic attacks -$s2. -->
 		<icon>icon.skill0232</icon>
 		<magicLevel>
 			<value level="1">18</value>
@@ -1863,7 +1863,7 @@
 		</effects>
 	</skill>
 	<skill id="233" toLevel="47" name="Light Armor Mastery">
-		<!-- P. Def. +$s1, P. Evasion +$s2, Received P. Critical Rate -$s3. -->
+		<!-- P. Def. +$s1, P. Evasion +$s2, received P. Critical Rate -$s3. -->
 		<icon>icon.skill0233</icon>
 		<magicLevel>
 			<value level="1">18</value>
@@ -2406,7 +2406,7 @@
 		</effects>
 	</skill>
 	<skill id="239" toLevel="11" name="Expertise D">
-		<!-- Increases expertise in using $s1 grade or lower equipment. -->
+		<!-- Lets you use equipment of $s1-grade. -->
 		<icon>
 			<value level="1">icon.skill0239</value>
 			<value level="2">icon.skill0240</value>
@@ -2437,7 +2437,7 @@
 		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="244" toLevel="3" name="Armor Mastery">
-		<!-- P. Def. +$s1. -->
+		<!-- P. Def. +$s1 -->
 		<icon>icon.skill0244</icon>
 		<magicLevel>
 			<value level="1">7</value>
@@ -2602,7 +2602,7 @@
 		</effects>
 	</skill>
 	<skill id="248" toLevel="6" name="Crystallize">
-		<!-- Makes D-grade Crystallization possible. -->
+		<!-- Allows you to crystallize D-grade equipment. -->
 		<icon>icon.skill0248</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -3208,7 +3208,7 @@
 		</effects>
 	</skill>
 	<skill id="253" toLevel="43" name="Heavy Armor Mastery">
-		<!-- When equipped with heavy armor, increases P. Def. by $s1, Casting Spd. by $s2, and Atk. Spd. by $s3. -->
+		<!-- When using heavy armor, P. Def. +$s1, Casting Spd. +$s2, Atk. Spd. +$s3. -->
 		<icon>icon.skill0253</icon>
 		<magicLevel>
 			<value level="1">11</value>
@@ -3605,7 +3605,7 @@
 		</effects>
 	</skill>
 	<skill id="258" toLevel="33" name="Light Armor Mastery">
-		<!-- P. Def. +$s1, Casting Spd. +$s2, Atk. Spd. +$s3, MP Recovery Rate +$s4 when using light armor. -->
+		<!-- When using light armor, P. Def. +$s1, Casting Spd. +$s2, Atk. Spd. +$s3, MP Recovery Rate +$s4. -->
 		<icon>icon.skill0258</icon>
 		<magicLevel>
 			<value level="1">38</value>
@@ -3710,7 +3710,7 @@
 		</effects>
 	</skill>
 	<skill id="259" toLevel="33" name="Heavy Armor Mastery">
-		<!-- P. Def. +$s1, Casting Spd. +$s2, Atk. Spd. +$s3 when using heavy armor. -->
+		<!-- When using heavy armor, P. Def. +$s1, Casting Spd. +$s2, Atk. Spd. +$s3. -->
 		<icon>icon.skill0259</icon>
 		<magicLevel>
 			<value level="1">38</value>
@@ -4685,7 +4685,7 @@
 		</effects>
 	</skill>
 	<skill id="269" toLevel="1" name="Song of Hunter">
-		<!-- All party members' Critical Rate for standard attacks +$s2 for $s1 Song/ dance MP Consumption is increased if other song/ dance effects are active. -->
+		<!-- For $s1, party members' Critical Rate for basic attacks +$s2. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. -->
 		<icon>icon.skill0269</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -4839,7 +4839,7 @@
 		</effects>
 	</skill>
 	<skill id="274" toLevel="1" name="Dance of Fire">
-		<!-- All party members' Critical Damage for standard attacks +$s2 for $s1 Song/ dance MP Consumption is increased if other song/ dance effects are active. Requires dual swords. -->
+		<!-- For $s1, party members' Critical Damage for basic attacks +$s2. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. Requires dual swords. -->
 		<icon>icon.skill0274</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -5040,7 +5040,7 @@
 		</effects>
 	</skill>
 	<skill id="279" toLevel="17" name="Lightning Strike">
-		<!-- Strikes the enemy with a lightning bolt that inflicts non-attribute damage with $s1 power. Paralyzes for $s2 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Strikes the enemy with a lightning bolt that inflicts non-attribute damage with $s1 power. Paralyzes for $s2. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill0279</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -6364,7 +6364,7 @@
 		</effects>
 	</skill>
 	<skill id="292" toLevel="1" name="Bison Spirit Totem">
-		<!-- Summons a Bison's spirit. For 1 min., P. Accuracy +6. When HP<60%, P. Atk. +10% and Critical Rate for standard attacks +100. When HP<30%, P. Atk. +30% and Critical Rate for standard attacks +300. Requires a fist weapon. -->
+		<!-- Summons a bison's spirit. For 1 min., P. Accuracy +6. When HP<60%, P. Atk. +10%, Critical Rate for basic attacks +100. When HP<30%, P. Atk. +30%, Critical Rate for basic attacks +300. Requires a fist weapon. -->
 		<icon>icon.skill0292</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -6417,7 +6417,7 @@
 		</effects>
 	</skill>
 	<skill id="293" toLevel="20" name="Two-handed Weapon Mastery">
-		<!-- P. Atk. +$s1 and P. Accuracy +$s2 when using a two-handed sword or a two-handed blunt weapon. -->
+		<!-- When using a two-handed sword/ blunt weapon, P. Atk. +$s1, P. Accuracy +$s2. -->
 		<icon>icon.skill0293</icon>
 		<magicLevel>
 			<value level="1">20</value>

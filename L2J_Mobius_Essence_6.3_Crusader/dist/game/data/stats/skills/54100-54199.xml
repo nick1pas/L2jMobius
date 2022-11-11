@@ -45,7 +45,7 @@
 		</effects>
 	</skill>
 	<skill id="54102" toLevel="1" name="White Guardian Transformation">
-		<!-- For 20 min. Max HP $s1 Max MP $s1 P. Atk. $s2 M. Atk. $s2 P. Def. $s2 M. Def. $s2 Atk. Spd. $s3 P. Accuracy $s4 M. Accuracy $s4 M. Skill Critical Rate $s5 P. Skill Critical Damage $s6 Speed $s7 -->
+		<!-- Duration: 20 min. Max HP $s1 Max MP $s1 P. Atk. $s2 M. Atk. $s2 P. Def. $s2 M. Def. $s2 Atk. Spd. $s3 P. Accuracy $s4 M. Accuracy $s4 M. Skill Critical Rate $s5 P. Skill Critical Damage $s6 Speed $s7 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -185,7 +185,7 @@
 		</effects>
 	</skill>
 	<skill id="54105" toLevel="1" name="Sayha's Wind Walk">
-		<!-- Speed +33 for 20 min. -->
+		<!-- For 20 min., Speed +33. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -251,7 +251,7 @@
 		</effects>
 	</skill>
 	<skill id="54109" toLevel="1" name="Sayha's Haste">
-		<!-- Atk. Spd. +33% for 20 min. -->
+		<!-- For 20 min., Atk. Spd. +33%. -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -361,7 +361,7 @@
 		</effects>
 	</skill>
 	<skill id="54114" toLevel="1" name="Sayha's Acumen">
-		<!-- Casting Spd. +30% for 20 min. -->
+		<!-- For 20 min., Casting Spd. +30%. -->
 		<icon>icon.skill1085</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -540,10 +540,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="95">
-						<item id="91825" count="3" /> <!-- Adventurer's Scroll: High Priest Transformation -->
+						<item id="91825" count="3" /> <!-- Adventurer's Scroll: High Priest Transformation - Sealed -->
 					</item>
 					<item chance="10">
-						<item id="91827" count="1" /> <!-- Adventurer's Scroll: Dragon Berserker Transformation -->
+						<item id="91827" count="1" /> <!-- Adventurer's Scroll: Dragon Berserker Transformation - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -572,10 +572,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="95">
-						<item id="91826" count="3" /> <!-- Adventurer's Scroll: Valkyrie Transformation -->
+						<item id="91826" count="3" /> <!-- Adventurer's Scroll: Valkyrie Transformation - Sealed -->
 					</item>
 					<item chance="10">
-						<item id="91827" count="1" /> <!-- Adventurer's Scroll: Dragon Berserker Transformation -->
+						<item id="91827" count="1" /> <!-- Adventurer's Scroll: Dragon Berserker Transformation - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -684,14 +684,14 @@
 			<effect name="RestorationRandom" fromLevel="1" toLevel="1">
 				<items>
 					<item chance="100.0">
-						<item id="91641" count="200" /> <!-- Sayha's Blessing -->
+						<item id="91641" count="200" /> <!-- Sayha's Blessing - Sealed -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom" fromLevel="1" toLevel="1">
 				<items>
 					<item chance="100.0">
-						<item id="91713" count="30" /> <!-- Sayha's Storm Lv. 3 (Exchangeable) -->
+						<item id="91713" count="30" /> <!-- Sayha's Storm Lv. 3 -->
 					</item>
 				</items>
 			</effect>
@@ -728,22 +728,22 @@
 						<item id="49669" count="1" /> <!-- C-grade Accessory Pack -->
 					</item>
 					<item chance="3.22">
-						<item id="49674" count="10" /> <!-- XP Growth Scroll -->
+						<item id="49674" count="10" /> <!-- XP Growth Scroll - Sealed -->
 					</item>
 					<item chance="3.22">
 						<item id="49790" count="1" /> <!-- +16 C-grade Weapon Pack -->
 					</item>
 					<item chance="3.22">
-						<item id="90822" count="1" /> <!-- Sealed Doll of Border - Baium 30-day -->
+						<item id="90822" count="1" /> <!-- Sealed Doll of Border - Baium - 30-day -->
 					</item>
 					<item chance="3.22">
-						<item id="90823" count="1" /> <!-- Sealed Doll of Border - Queen Ant 30-day -->
+						<item id="90823" count="1" /> <!-- Sealed Doll of Border - Queen Ant - 30-day -->
 					</item>
 					<item chance="3.22">
-						<item id="90824" count="1" /> <!-- Sealed Doll of Border - Orfen 30-day -->
+						<item id="90824" count="1" /> <!-- Sealed Doll of Border - Orfen - 30-day -->
 					</item>
 					<item chance="3.4">
-						<item id="90907" count="100" /> <!-- Soulshot Ticket -->
+						<item id="90907" count="100" /> <!-- Soulshot Ticket - Sealed -->
 					</item>
 					<item chance="3.22">
 						<item id="91031" count="1" /> <!-- Water Spirit Evolution Stone -->
@@ -779,37 +779,37 @@
 						<item id="91297" count="1" /> <!-- Old Inventory Expansion Ticket Lv. 5 -->
 					</item>
 					<item chance="3.22">
-						<item id="91741" count="10" /> <!-- Einhasad's Protection Event -->
+						<item id="91741" count="10" /> <!-- Einhasad's Protection - Sealed -->
 					</item>
 					<item chance="3.22">
-						<item id="91767" count="1" /> <!-- Enchant Kit: Talisman of Aden -->
+						<item id="91767" count="1" /> <!-- Enchant Kit: Talisman of Aden - Sealed -->
 					</item>
 					<item chance="3.22">
-						<item id="91780" count="10" /> <!-- Battle Scroll -->
+						<item id="91780" count="10" /> <!-- Old Battle Scroll - Sealed -->
 					</item>
 					<item chance="3.22">
-						<item id="91781" count="10" /> <!-- Sayha's Buff Scroll -->
+						<item id="91781" count="10" /> <!-- Old Sayha's Buff Scroll - Sealed -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom" fromLevel="3" toLevel="3">
 				<items>
 					<item chance="100.0">
-						<item id="91641" count="250" /> <!-- Sayha's Blessing -->
+						<item id="91641" count="250" /> <!-- Sayha's Blessing - Sealed -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom" fromLevel="3" toLevel="3">
 				<items>
 					<item chance="100.0">
-						<item id="91712" count="20" /> <!-- Sayha's Storm Lv. 3 -->
+						<item id="91712" count="20" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
 					</item>
 				</items>
 			</effect>
 			<effect name="RestorationRandom" fromLevel="3" toLevel="3">
 				<items>
 					<item chance="100.0">
-						<item id="91781" count="20" /> <!-- Sayha's Buff Scroll -->
+						<item id="91781" count="20" /> <!-- Old Sayha's Buff Scroll - Sealed -->
 					</item>
 				</items>
 			</effect>

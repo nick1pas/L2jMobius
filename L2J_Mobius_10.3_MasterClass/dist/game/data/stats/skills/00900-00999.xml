@@ -245,7 +245,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="904" toLevel="6" name="Corpse Burst">
-		<!-- Causes a nearby corpse to burst open, poisoning enemies. Power $s2 Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Causes a nearby corpse to burst open, poisoning enemies. Power $s2 Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill_transform_debuff</icon>
 		<abnormalLevel>8</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -682,7 +682,7 @@
 		</pvpEffects>
 	</skill>
 	<skill id="910" toLevel="6" name="Water Jet">
-		<!-- Strikes enemies with a mighty rush of water. Power $s2 Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Strikes enemies with a mighty rush of water. Power $s2 Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill_transform_s_attack</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -842,7 +842,7 @@
 		</conditions>
 		<effects>
 			<effect name="Summon">
-				<npcId>14918</npcId> <!-- Imperial Phoenix -->
+				<npcId>14918</npcId> <!-- Phoenix -->
 				<lifeTime>3600</lifeTime>
 				<consumeItemId>1461</consumeItemId> <!-- A-grade Crystal -->
 				<consumeItemCount>1</consumeItemCount>
@@ -873,7 +873,7 @@
 		</effects>
 	</skill>
 	<skill id="914" toLevel="1" name="Song of Purification">
-		<!-- Provides an 80% chance of removing a party member's debuffs. And for the next 2 min., Debuff Resistance +30% and Healing Power +30%. -->
+		<!-- With an 80% chance, removes debuffs from a party member. For 2 min., Debuff Resistance +30%, Healing Power +30%. -->
 		<icon>icon.skill0914</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -1307,7 +1307,7 @@
 		</effects>
 	</skill>
 	<skill id="922" toLevel="1" name="Hide">
-		<!-- Hides the user. Speed -30%, and the effect is canceled if any action other than movement is initiated. The skill cooldown is fixed. -->
+		<!-- Hides you from enemies. Speed -30%. The effect is cancelled if any action other than movement is initiated. The skill cooldown is fixed. -->
 		<icon>icon.skill0922</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1391,7 +1391,7 @@
 		</effects>
 	</skill>
 	<skill id="925" toLevel="1" name="Sigil Mastery">
-		<!-- When a Sigil is equipped, increases M. Atk. by 4% and MP Recovery Bonus by 17%. -->
+		<!-- When using a sigil, M. Atk. +4%, MP Recovery Rate +17%. -->
 		<icon>icon.skill0925</icon>
 		<magicLevel>76</magicLevel>
 		<operateType>P</operateType>
@@ -1803,7 +1803,7 @@
 		</effects>
 	</skill>
 	<skill id="934" toLevel="1" name="Sigil Mastery">
-		<!-- When a sigil is equipped, increases Max MP by 5% and MP Recovery Bonus by 17%. -->
+		<!-- When using a sigil, Max MP +5%, MP +17%. -->
 		<icon>icon.skill0925</icon>
 		<magicLevel>76</magicLevel>
 		<operateType>P</operateType>
@@ -1826,7 +1826,7 @@
 		</effects>
 	</skill>
 	<skill id="935" toLevel="1" name="Sigil Mastery">
-		<!-- When a sigil is equipped, increases Max MP by 5% and MP Recovery Bonus by 17%. -->
+		<!-- When using a sigil, Max MP +5%, MP +17%. -->
 		<icon>icon.skill0925</icon>
 		<magicLevel>76</magicLevel>
 		<operateType>P</operateType>
@@ -2723,7 +2723,7 @@
 		</effects>
 	</skill>
 	<skill id="939" toLevel="1" name="Soul Rage">
-		<!-- Gathers souls and attacks the enemy by hurling projectiles. Possible up to level 40. Critical hit and over-hit are possible. -->
+		<!-- Deals damage to opponents collecting Souls in the process. Available up to Lv. 40. Critical. Over-hit. -->
 		<icon>icon.skill0939</icon>
 		<castRange>600</castRange>
 		<effectPoint>-340</effectPoint>
@@ -3157,7 +3157,7 @@
 		</effects>
 	</skill>
 	<skill id="955" toLevel="1" name="Strider Dash">
-		<!-- For 15 sec. Speed +66. -->
+		<!-- For 15 sec., Speed +66. -->
 		<icon>icon.skill000955</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -3180,7 +3180,7 @@
 		</effects>
 	</skill>
 	<skill id="956" toLevel="3" name="Boost Morale">
-		<!-- For $s1 when using a sword/ blunt weapon/ dual swords, P. Accuracy +$s2, Critical Rate for standard attacks +$s3, and Critical Damage for standard attacks +$s4. -->
+		<!-- For $s1, P. Accuracy +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4. Requires a sword, a blunt weapon or dual swords. -->
 		<icon>icon.skill956</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -3706,7 +3706,7 @@
 		</effects>
 	</skill>
 	<skill id="963" toLevel="1" name="Guard's Ambush">
-		<!-- Hides the user. Speed -30%, and the effect is canceled if any action other than movement is initiated. The skill cooldown is fixed. -->
+		<!-- Hides you from enemies. Speed -30%. The effect is cancelled if any action other than movement is initiated. The skill cooldown is fixed. -->
 		<icon>icon.skill_transform_buff</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
@@ -3734,7 +3734,7 @@
 		</effects>
 	</skill>
 	<skill id="964" toLevel="1" name="Children of Shillien">
-		<!-- Increases Casting Spd. by 13 and MP Recovery Bonus by 2%. -->
+		<!-- Casting Spd. +15, MP Recovery Rate +2%. -->
 		<icon>icon.skill0294</icon>
 		<magicLevel>14</magicLevel>
 		<operateType>P</operateType>
@@ -3830,7 +3830,7 @@
 		</effects>
 	</skill>
 	<skill id="970" toLevel="1" name="Dash">
-		<!-- For 15 sec. Speed +66. -->
+		<!-- For 15 sec., Speed +66. -->
 		<icon>icon.skill0004</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -3855,7 +3855,7 @@
 		</effects>
 	</skill>
 	<skill id="971" toLevel="1" name="Acumen">
-		<!-- Casting Spd. +30% for 20 min. -->
+		<!-- For 20 min., Casting Spd. +30%. -->
 		<icon>icon.skill1085</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -3882,7 +3882,7 @@
 		</effects>
 	</skill>
 	<skill id="972" toLevel="1" name="Snipe">
-		<!-- For 2 min., P. Accuracy +6, P. Atk. +199, bow's range +200 and Critical Rate for standard attacks +20% when using a bow. The player cannot move while the effect lasts. -->
+		<!-- When using a bow, P. Accuracy +6, P. Atk. +199, range +200, Critical Rate for basic attacks +20% for 2 min. You cannot move while the effect is active. -->
 		<icon>icon.skill0313</icon>
 		<abnormalLevel>8</abnormalLevel>
 		<abnormalTime>120</abnormalTime>
@@ -4410,7 +4410,7 @@
 		</effects>
 	</skill>
 	<skill id="981" toLevel="6" name="Sleep">
-		<!-- Inflicts sleep for $s1 Inflicted status: Stupor (Sleep, Mutation). -->
+		<!-- Inflicts sleep for $s1. Inflicted status: Stupor (Sleep, Mutation). -->
 		<icon>icon.skill1069</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -4881,7 +4881,7 @@
 		</effects>
 	</skill>
 	<skill id="988" toLevel="3" name="Battle Whisper">
-		<!-- For $s1, P. Atk. +$s2, Critical Damage for standard attacks +$s3, Atk. Spd. +$s4. Additionally increases MP Consumption if the skill is used while song/ dance is in effect. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Damage for basic attacks +$s3, Atk. Spd. +$s4. Song/ Dance MP Consumption is increased if the skill is used when its effect is still active. -->
 		<icon>icon.skill0988</icon>
 		<abnormalTime>120</abnormalTime>
 		<effectPoint>

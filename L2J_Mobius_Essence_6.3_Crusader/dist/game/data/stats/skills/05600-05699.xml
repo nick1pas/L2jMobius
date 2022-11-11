@@ -30,7 +30,7 @@
 		</effects>
 	</skill>
 	<skill id="5601" toLevel="12" name="Melee Attack Resistance">
-		<!-- Resistant to melee attacks. -->
+		<!-- Resistant to physical melee attacks. -->
 		<icon>icon.skill5601</icon>
 		<magicLevel>
 			<value level="1">10</value>
@@ -291,7 +291,7 @@
 		</effects>
 	</skill>
 	<skill id="5607" toLevel="2" name="Power of Apella">
-		<!-- Power of Apella increases P. Evasion, but decreases Received P. Critical Damage. -->
+		<!-- The power of Apella, increases P. Evasion, decreases received P. Critical Damage. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>APELLA</abnormalType>
@@ -333,7 +333,7 @@
 		</effects>
 	</skill>
 	<skill id="5608" toLevel="2" name="Power of Apella">
-		<!-- Power of Apella. Increased P. Def., increased M. Atk., and decreased Speed. -->
+		<!-- The power of Apella, increased P. Def. and M. Atk., decreased Speed. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>APELLA</abnormalType>
@@ -714,7 +714,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="5627" toLevel="1" name="Adventurer's Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- For 60 min., Speed +33. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -737,7 +737,7 @@
 		</effects>
 	</skill>
 	<skill id="5628" toLevel="1" name="Adventurer's Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.skill1040</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -760,7 +760,7 @@
 		</effects>
 	</skill>
 	<skill id="5629" toLevel="1" name="Adventurer's Blessed Body">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.skill1045</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -783,7 +783,7 @@
 		</effects>
 	</skill>
 	<skill id="5630" toLevel="1" name="Adventurer's Vampiric Rage">
-		<!-- For 60 min., with a certain chance, absorbs 9% of the inflicted damage as HP. -->
+		<!-- For 60 min., absorbs 9% of the inflicted damage as HP with a certain chance. -->
 		<icon>icon.skill1268</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -806,7 +806,7 @@
 		</effects>
 	</skill>
 	<skill id="5631" toLevel="1" name="Adventurer's Regeneration">
-		<!-- HP Recovery Rate +20% for 60 min. -->
+		<!-- For 60 min., HP Recovery Rate +20%. -->
 		<icon>icon.skill1044</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -829,7 +829,7 @@
 		</effects>
 	</skill>
 	<skill id="5632" toLevel="1" name="Adventurer's Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -875,7 +875,7 @@
 		</effects>
 	</skill>
 	<skill id="5634" toLevel="1" name="Adventurer's Acumen">
-		<!-- Casting Spd. +30% for 60 min. -->
+		<!-- For 60 min., Casting Spd. +30%. -->
 		<icon>icon.skill1085</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -944,7 +944,7 @@
 		</effects>
 	</skill>
 	<skill id="5637" toLevel="1" name="Adventurer's Magic Barrier">
-		<!-- For 20 min., M. Def. +30%. -->
+		<!-- For 60 min., M. Def. +30%. -->
 		<icon>icon.skill1036</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2824,7 +2824,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5663" toLevel="5" name="Ancient Sword Resistance">
-		<!-- Resistance to ancient sword. -->
+		<!-- Resistant to ancient sword attacks. -->
 		<icon>icon.skill5663</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

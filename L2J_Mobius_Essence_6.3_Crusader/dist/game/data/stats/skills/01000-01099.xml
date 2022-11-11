@@ -574,7 +574,7 @@
 		</effects>
 	</skill>
 	<skill id="1012" toLevel="3" name="Cure">
-		<!-- Removes infection from the target. -->
+		<!-- Removes Infection debuffs from the target. -->
 		<icon>icon.skill1012</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -844,7 +844,7 @@
 		</effects>
 	</skill>
 	<skill id="1015" toLevel="15" name="Battle Heal">
-		<!-- Immediately restores the target's HP with $s1 Power. -->
+		<!-- Momentarily recovers HP. Power $s1. -->
 		<icon>icon.skill1015</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -1024,7 +1024,7 @@
 		</effects>
 	</skill>
 	<skill id="1018" toLevel="3" name="Purify">
-		<!-- Removes Paralysis/ Shock/ Sleep/ Fear/ Imprisonment from the target. -->
+		<!-- Removes Paralysis/ Shock/ Sleep/ Fear/ Imprisonment debuffs from the target. -->
 		<icon>icon.skill1018</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -1379,7 +1379,7 @@
 		</effects>
 	</skill>
 	<skill id="1028" toLevel="35" name="Might of Heaven">
-		<!-- Strikes with holy light. Inflicts magic damage with $s1 power. Deals additional damage to demons and undead. -->
+		<!-- Strikes with holy light. Inflicts magic damage with $s1 power. Deals heavy damage to demons and undead. -->
 		<icon>icon.skill1028</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -1587,7 +1587,7 @@
 		</effects>
 	</skill>
 	<skill id="1031" toLevel="10" name="Divine Strike">
-		<!-- Summons holy light. Inflicts magic damage with $s1 power. Deals additional damage to demons and undead. -->
+		<!-- Summons holy light. Inflicts magic damage with $s1 power. Deals heavy damage to demons and undead. -->
 		<icon>icon.skill1031</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -1690,7 +1690,7 @@
 		</effects>
 	</skill>
 	<skill id="1033" toLevel="3" name="Infection Mitigation">
-		<!-- Infection Resistance -->
+		<!-- Infection Resistance $s1 -->
 		<icon>icon.skill1033</icon>
 		<magicLevel>
 			<value level="1">60</value>
@@ -2035,7 +2035,7 @@
 		</effects>
 	</skill>
 	<skill id="1045" toLevel="12" name="Health Increase">
-		<!-- The effect lasts for $s1 Max HP +$s2 -->
+		<!-- Max HP +$s1 -->
 		<icon>icon.skill1045</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2250,7 +2250,7 @@
 		</effects>
 	</skill>
 	<skill id="1048" toLevel="12" name="Mana Increase">
-		<!-- The effect lasts for $s1 Max MP +$s2 -->
+		<!-- Max MP +$s1 -->
 		<icon>icon.skill1048</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2468,7 +2468,7 @@
 		</effects>
 	</skill>
 	<skill id="1050" toLevel="2" name="Return">
-		<!-- Teleports to the nearest village. Cannot be used in special places such as the GM Consultation Service. -->
+		<!-- <Fixed cast time skill> Teleports to the nearest village. Cannot be used in special places such as the GM Consultation Service. -->
 		<icon>Icon.skill1050</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>
@@ -2969,7 +2969,7 @@
 		</effects>
 	</skill>
 	<skill id="1069" toLevel="60" name="Sleep">
-		<!-- <Sleep Skill> The effect lasts for $s1 Inflicts Sleep on the target. -->
+		<!-- <Sleep skill> The effect lasts for $s1 Inflicts Sleep on the target. -->
 		<icon>icon.skill1069</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -3279,7 +3279,7 @@
 		</effects>
 	</skill>
 	<skill id="1072" toLevel="14" name="Sleeping Cloud">
-		<!-- <Sleep Skill> The effect lasts for $s1 Inflicts Sleep on the target and nearby enemies. -->
+		<!-- <Sleep skill> The effect lasts for $s1 Inflicts Sleep on the target and enemies around them. -->
 		<icon>icon.skill1072</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -3673,7 +3673,7 @@
 		</effects>
 	</skill>
 	<skill id="1078" toLevel="18" name="Concentration">
-		<!-- The effect lasts for $s1 Casting Interruption Rate -$s2 -->
+		<!-- Casting Interruption Rate -$s1 -->
 		<icon>icon.skill1078</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -4240,7 +4240,7 @@
 		</effects>
 	</skill>
 	<skill id="1087" toLevel="9" name="Physical Evasion">
-		<!-- The effect lasts for $s1 P. Evasion +$s2 -->
+		<!-- P. Evasion $s1 -->
 		<icon>icon.skill1087</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -4622,7 +4622,7 @@
 		</effects>
 	</skill>
 	<skill id="1096" toLevel="20" name="Seal of Chaos">
-		<!-- When attacking skills are used, there is a certain chance For $s1, target's P./ M. Accuracy $s2 (Probability: $s3. Cooldown: $s4) Seal of Winter and Seal of Slow share its cooldown. -->
+		<!-- With a certain chance when using attack skills: For $s1, the target's P./ M. Accuracy $s2 (Probability rate: $s3, cooldown: $s4) Has the same cooldown as Seal of Winter and Seal of Slow. -->
 		<icon>icon.skill1096</icon>
 		<activateRate>33</activateRate>
 		<reuseDelay>10000</reuseDelay>
@@ -4684,7 +4684,7 @@
 		</effects>
 	</skill>
 	<skill id="1097" toLevel="25" name="Dreaming Spirit">
-		<!-- <Sleep Skill> The effect lasts for $s1 Inflicts Sleep on the target. -->
+		<!-- <Sleep skill> The effect lasts for $s1 Inflicts Sleep on the target. -->
 		<icon>icon.skill1097</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -4820,7 +4820,7 @@
 		</effects>
 	</skill>
 	<skill id="1099" toLevel="23" name="Seal of Slow">
-		<!-- When attacking skills are used, there is a certain chance For $s1, target's Speed $s2 (Probability: $s3. Cooldown: $s4) Seal of Chaos and Seal of Winter share its cooldown. -->
+		<!-- With a certain chance when using attack skills: For $s1, the target's Speed $s2 (Probability rate: $s3, cooldown: $s4) Has the same cooldown as Seal of Chaos and Seal of Winter. -->
 		<icon>icon.skill1099</icon>
 		<abnormalLevel>
 			<value level="1">2</value>

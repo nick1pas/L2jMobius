@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="47101" toLevel="4" name="Elemental Spirit">
-		<!-- The spirit power runs through your body. An incarnated Spirit Lv. 1 can be used. -->
+		<!-- The spirit power runs through your body. An incarnated Spirit Lv. 1 can be used. Max HP +100 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<abnormalLevel>
@@ -20,7 +20,7 @@
 		<effects>
 			<effect name="TriggerSkillByDamage">
 				<attackerType>Creature</attackerType>
-				<skillId>47048</skillId> <!-- Elemental Guard -->
+				<skillId>47048</skillId> <!-- Elemental Guard Lv. 1 -->
 				<skillLevel>1</skillLevel>
 				<minDamage>100</minDamage>
 				<chance>10</chance>

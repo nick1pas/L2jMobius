@@ -112,7 +112,7 @@
 		<hitTime>10000</hitTime>
 	</skill>
 	<skill id="32005" toLevel="1" name="Cyclone Blade">
-		<!-- Inflicts great physical damage on the enemies near the target and decreases their P./ M. Def. for $s1 -->
+		<!-- Deals physical damage to the target and nearby enemies decreasing their P./ M. Def. for $s1 -->
 		<icon>icon.skill10318new</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>7</abnormalTime>
@@ -258,7 +258,7 @@
 		<hitTime>10000</hitTime>
 	</skill>
 	<skill id="32010" toLevel="1" name="Bane Blade">
-		<!-- Inflicts great physical damage on the enemies near the target and decreases their P./ M. Def. for $s1 -->
+		<!-- Deals physical damage to the target and nearby enemies decreasing their P./ M. Def. for $s1 -->
 		<icon>icon.skill11513</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -293,7 +293,7 @@
 		</effects>
 	</skill>
 	<skill id="32011" toLevel="1" name="Spinning Shadow">
-		<!-- Deals great physical damage to nearby enemies inflicting Bleed for $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Deals great physical damage to nearby enemies inflicting Bleed for $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill6816</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -463,7 +463,7 @@
 		</effects>
 	</skill>
 	<skill id="32018" toLevel="2" name="Stigma of Martyr">
-		<!-- Inflicts Bleed for $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Bleed for $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill32018</icon>
 		<effectPoint>-100</effectPoint>
 		<isDebuff>true</isDebuff>
@@ -493,7 +493,7 @@
 		<hitTime>5000</hitTime>
 	</skill>
 	<skill id="32020" toLevel="2" name="Undead Creature">
-		<!-- Recovers your HP repeatedly for $s1 -->
+		<!-- For $s1, recovers HP over time. -->
 		<icon>icon.skill1310</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -511,7 +511,7 @@
 		</effects>
 	</skill>
 	<skill id="32021" toLevel="2" name="Twisted Greed">
-		<!-- Increases P. Atk./ M. Atk./ Atk. Spd./ Casting Spd. significantly for $s1 -->
+		<!-- For $s1, increases P./ M. Atk., Atk. Spd., Casting Spd. -->
 		<icon>icon.skill32021</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -564,7 +564,7 @@
 		</effects>
 	</skill>
 	<skill id="32024" toLevel="2" name="Etina's Gaze">
-		<!-- Decreases MP over $s1 and significantly slows Casting Spd. -->
+		<!-- For $s1, greatly decreases MP and Casting Spd. -->
 		<icon>icon.skill32024</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -674,7 +674,7 @@
 		<hitTime>3000</hitTime>
 	</skill>
 	<skill id="32035" toLevel="1" name="Fade to Black">
-		<!-- Inflicts great magic damage on the enemies near the target. -->
+		<!-- Inflicts great magic damage to enemies near the target. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>40</castRange>
@@ -1426,7 +1426,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32082" toLevel="1" name="Vortex">
-		<!-- Attacks multiple enemies. -->
+		<!-- Attacks several opponents simultaneously. -->
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
 		<effectRange>900</effectRange>
@@ -1542,7 +1542,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32090" toLevel="1" name="Mass Slow">
-		<!-- Significantly decreases all nearby enemies' Atk. Spd. and Speed. -->
+		<!-- Significantly decreases P. Atk./ Speed of all nearby enemies. -->
 		<icon>icon.skill0516</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>

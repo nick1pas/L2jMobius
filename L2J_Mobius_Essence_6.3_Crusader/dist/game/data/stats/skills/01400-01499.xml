@@ -552,7 +552,7 @@
 		</effects>
 	</skill>
 	<skill id="1411" toLevel="3" name="Mystic Resilience">
-		<!-- For $s1, immunity to debuffs and anomaly states. -->
+		<!-- If the character takes damage while the effect is active, there is a certain chance to remove a debuff from them. Debuff Resistance $s1 Anomaly Resistance $s1 -->
 		<icon>icon.skill1411</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalType>ABNORMAL_INVINCIBILITY</abnormalType>
@@ -613,7 +613,7 @@
 		</effects>
 	</skill>
 	<skill id="1413" toLevel="3" name="Chant of Wild Magic">
-		<!-- M. Critical Rate $s1 -->
+		<!-- M. Skill Critical Rate $s1 -->
 		<icon>icon.skill1413</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -645,7 +645,7 @@
 		</effects>
 	</skill>
 	<skill id="1414" toLevel="2" name="Prophecy of Pa'agrio">
-		<!-- Max CP $s1 CP Recovery Rate $s2 P. Accuracy $s3 M. Accuracy $s3 P. Evasion $s3 M. Evasion $s3 PvE damage $s4 Atk. Spd. $s5 Casting Spd. $s5 P. Critical Rate $s4 M. Skill Critical Rate $s4 P. Critical Damage $s4 M. Skill Critical Damage $s4 -->
+		<!-- Max CP $s1 CP Recovery Rate $s2 P. Accuracy $s3 M. Accuracy $s3 P. Evasion $s3 M. Evasion $s3 PvE damage bonus $s4 Atk. Spd. $s5 Casting Spd. $s5 P. Critical Rate $s4 M. Skill Critical Rate $s4 P. Critical Damage $s4 M. Skill Critical Damage $s4 -->
 		<icon>icon.skill1414</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -789,7 +789,7 @@
 		</effects>
 	</skill>
 	<skill id="1416" toLevel="7" name="Pa'agrio's Fist">
-		<!-- Max CP +$s1 -->
+		<!-- Max CP $s1 -->
 		<icon>icon.skill1416</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1168,7 +1168,7 @@
 		</effects>
 	</skill>
 	<skill id="1426" toLevel="1" name="Miracle">
-		<!-- <Skill with fixed cooldown> Restores all HP to nearby party members. -->
+		<!-- <Skill with fixed cooldown> Restores 100% of HP to nearby clan members. -->
 		<icon>icon.skill1426</icon>
 		<affectRange>1000</affectRange>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -1433,7 +1433,7 @@
 		</effects>
 	</skill>
 	<skill id="1432" toLevel="5" name="Increase Power">
-		<!-- The effect lasts for $s1 P. Atk. +$s2 -->
+		<!-- Unravels potential and increases M. Atk. P. Atk. Shock Atk. Rate $s1 -->
 		<icon>icon.skill1432</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1620,7 +1620,7 @@
 		</effects>
 	</skill>
 	<skill id="1435" toLevel="5" name="Death Mark">
-		<!-- Inflicts a Death Mark Lv. $s1 on the target for 10 sec. when attacking. Enemies with the applied Death Mark receive more P. Critical Damage and M. Skill Critical Damage. -->
+		<!-- HP Recovery Rate $s1 With a certain chance, triggers Death Mark Lv. $s2 after an attack. (Cooldown: 10 sec.) <Death Mark> Received P. Critical Damage $s3 Received M. Skill Critical Damage $s3 -->
 		<icon>icon.skill1435</icon>
 		<excludedFromCheck>true</excludedFromCheck>
 		<magicLevel>15</magicLevel>
@@ -2166,7 +2166,7 @@
 		</effects>
 	</skill>
 	<skill id="1440" toLevel="3" name="Soul Steal">
-		<!-- With a certain chance, steals up to $s1 of the enemy's buffs. Can't be used on monsters. -->
+		<!-- <<font color="FF8000">Steal skill</font>> With a certain chance, steals up to $s1 of the enemy's buffs. Cannot be used on monsters. Stacks the Soul Harmony buff with each steal attempt. <Soul Harmony> For 5 min., increases P./ M. Atk. Lv. 1: P./ M. Atk. +100 Lv. 2: P./ M. Atk. +200 Lv. 3: P./ M. Atk. +300 -->
 		<icon>icon.skill1440</icon>
 		<castRange>600</castRange>
 		<coolTime>200</coolTime>
@@ -2206,7 +2206,7 @@
 		</effects>
 	</skill>
 	<skill id="1441" toLevel="3" name="Soul Roar">
-		<!-- When used, restores $s1 of Max HP. The effect lasts for $s2 Max HP +$s3 -->
+		<!-- Increases Max HP. When used, recovers $s1 HP. Max HP $s2 -->
 		<icon>icon.skill1441</icon>
 		<hitTime>1500</hitTime>
 		<mpConsume>
@@ -2750,7 +2750,7 @@
 		</effects>
 	</skill>
 	<skill id="1451" toLevel="2" name="Fire Vortex Buster">
-		<!-- Summons a fire hurricane to attack the target with $s1 power. -->
+		<!-- Attacks the target affected by Fire Vortex. Power $s1. -->
 		<icon>icon.skill1451</icon>
 		<castRange>700</castRange>
 		<effectPoint>
@@ -2830,7 +2830,7 @@
 		</effects>
 	</skill>
 	<skill id="1453" toLevel="2" name="Ice Vortex Crusher">
-		<!-- Summons an ice hurricane to attack the target with $s1 power. -->
+		<!-- Attacks the target affected by Ice Vortex. Power $s1. -->
 		<icon>icon.skill1453</icon>
 		<castRange>700</castRange>
 		<effectPoint>
@@ -2943,7 +2943,7 @@
 		</effects>
 	</skill>
 	<skill id="1456" toLevel="2" name="Wind Vortex Slug">
-		<!-- Summons a wind hurricane to attack the target with $s1 power. -->
+		<!-- Attacks the target affected by Wind Vortex. Power $s1. -->
 		<icon>icon.skill1456</icon>
 		<castRange>700</castRange>
 		<effectPoint>

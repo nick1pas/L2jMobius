@@ -242,7 +242,7 @@
 		</effects>
 	</skill>
 	<skill id="5908" toLevel="2" name="Ritual of Entombment">
-		<!-- Momentarily inflicts Hold on the enemy. Additional Hold is not available while effects last. -->
+		<!-- Temporarily inflicts Hold on the target. The target cannot be affected by any additional Hold attacks while the effect is active. -->
 		<icon>icon.skill1201</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -314,7 +314,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="5912" toLevel="1" name="Pestilence Cleanse">
-		<!-- P./ M. Atk., Atk. Spd., P. Accuracy, P. Critical Rate and P. Critical Damage are decreased, Skill Cooldown is increased. -->
+		<!-- Decreases P./ M. Atk., Atk. Spd., P. Accuracy, P. Critical Rate and P. Critical Damage. Increases Skill Cooldown. -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -530,7 +530,7 @@
 		</effects>
 	</skill>
 	<skill id="5921" toLevel="1" name="Inhale">
-		<!-- P./ M. Atk., Atk. Spd., P. Accuracy, P. Critical Rate and P. Critical Damage are decreased. -->
+		<!-- Decreases P. Atk., Atk. Spd., M. Atk., P. Accuracy, P. Critical Rate and P. Critical Damage. -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -974,7 +974,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5940" toLevel="12" name="Restorative Energy">
-		<!-- HP recovery bonus and MP recovery bonus are increased. -->
+		<!-- Increases HP/ MP Recovery. -->
 		<icon>icon.skill1044</icon>
 		<abnormalLevel>
 			<value level="1">3</value>
@@ -1034,7 +1034,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5942" toLevel="1" name="Energy of Pollution">
-		<!-- Temporarily Received Healing and MP Recovery Bonus are decreased. -->
+		<!-- Temporarily decreases Received Healing and MP Recovery Rate. -->
 		<icon>icon.skill0052</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -1051,7 +1051,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5943" toLevel="1" name="Energy of Contamination">
-		<!-- P. Def. is decreased and MP consumption for skills is increased. -->
+		<!-- Decreases P. Def. -->
 		<icon>icon.skill0103</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -1510,7 +1510,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5971" toLevel="1" name="Seduced Ranger's Help">
-		<!-- Seduced Ranger's help. HP recovery bonus increases. -->
+		<!-- Ranger's help. Increases HP Recovery. -->
 		<icon>icon.skill5970</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1552,7 +1552,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5973" toLevel="1" name="Seduced Warrior's Help">
-		<!-- Seduced Warrior's help. MP recovery bonus increases. -->
+		<!-- Warrior's help. Increases MP Recovery. -->
 		<icon>icon.skill5970</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1894,7 +1894,7 @@
 		</effects>
 	</skill>
 	<skill id="5988" toLevel="1" name="Armor Maintenance">
-		<!-- Maintains the armor to increase defense ability. -->
+		<!-- Maintains the armor in optimal condition to increase Def. -->
 		<icon>icon.skill0828</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -1951,7 +1951,7 @@
 		</effects>
 	</skill>
 	<skill id="5989" toLevel="1" name="Invincibility">
-		<!-- Makes you invincible to regular attacks, skills and debuffs. -->
+		<!-- Invincible to basic attacks, skills and debuffs. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
 		<abnormalType>INVINCIBILITY</abnormalType>
@@ -2090,7 +2090,7 @@
 		</effects>
 	</skill>
 	<skill id="5994" toLevel="1" name="Mysterious Effect">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>icon.skill2513</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>

@@ -771,7 +771,7 @@
 		</effects>
 	</skill>
 	<skill id="5836" toLevel="1" name="Greater Heal">
-		<!-- Recovers HP and momentarily increases HP Recovery Bonus for party members. -->
+		<!-- Increases party members' HP and HP Recovery Rate. -->
 		<icon>icon.skill1219</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -890,7 +890,7 @@
 		</effects>
 	</skill>
 	<skill id="5841" toLevel="1" name="Multi Defense">
-		<!-- P./ M. Def. are increased. -->
+		<!-- Increases P./ M. Def. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>INSTINCT</abnormalType>
@@ -943,7 +943,7 @@
 		</effects>
 	</skill>
 	<skill id="5843" toLevel="1" name="Fear">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -1418,7 +1418,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5866" toLevel="10" name="Soul Worm">
-		<!-- Mental blow is received. Current MP, Max MP, and MP Recovery Bonus decreases. HP decreases from poison momentarily. -->
+		<!-- The mental blow decreases your MP/ Max MP/ MP Recovery Rate. You are poisoned and continuously lose HP. -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1466,7 +1466,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5867" toLevel="10" name="Soul Worm">
-		<!-- Mental blow is received. Current MP, Max MP, and MP Recovery Bonus decreases. HP decreases from poison momentarily. -->
+		<!-- The mental blow decreases your MP/ Max MP/ MP Recovery Rate. You are poisoned and continuously lose HP. -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1517,7 +1517,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5868" toLevel="10" name="Soul Worm">
-		<!-- Mental blow is received. Current MP, Max MP, and MP Recovery Bonus decreases. HP decreases from poison momentarily. -->
+		<!-- The mental blow decreases your MP/ Max MP/ MP Recovery Rate. You are poisoned and continuously lose HP. -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1568,7 +1568,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5869" toLevel="10" name="Soul Worm">
-		<!-- Mental blow is received. Current MP, Max MP, and MP Recovery Bonus decreases. HP decreases from poison momentarily. -->
+		<!-- The mental blow decreases your MP/ Max MP/ MP Recovery Rate. You are poisoned and continuously lose HP. -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1617,7 +1617,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5870" toLevel="10" name="Flash Worm">
-		<!-- Physical blow is received. Max HP and HP Recovery Bonus decreases. HP decreases from bleeding momentarily. -->
+		<!-- The physical blow decreases your Max HP/ HP Recovery Rate. You are bleeding and continuously lose HP. -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1664,7 +1664,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5871" toLevel="10" name="Flash Worm">
-		<!-- Physical blow is received. Max HP and HP Recovery Bonus decreases. HP decreases from bleeding momentarily. -->
+		<!-- The physical blow decreases your Max HP/ HP Recovery Rate. You are bleeding and continuously lose HP. -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1714,7 +1714,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5872" toLevel="10" name="Flash Worm">
-		<!-- Physical blow is received. Max HP and HP Recovery Bonus decreases. HP decreases from bleeding momentarily. -->
+		<!-- The physical blow decreases your Max HP/ HP Recovery Rate. You are bleeding and continuously lose HP. -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -2169,7 +2169,7 @@
 		</effects>
 	</skill>
 	<skill id="5887" toLevel="1" name="Howl from Beyond">
-		<!-- P./ M. Atk., Atk. Spd., P. Accuracy, P. Critical Rate and P. Critical Damage are decreased. -->
+		<!-- Decreases P. Atk., M. Atk., Atk. Spd., P. Accuracy, P. Critical Rate and P. Critical Damage. -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2356,7 +2356,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5894" toLevel="1" name="Mark of Despair">
-		<!-- The target gets Mark of Despair that significantly decreases P./ M. Def., P. Evasion and Max HP, but P./ M. Atk., Atk. Spd., P. Accuracy, P. Critical Damage and P. Critical Rate are increased. -->
+		<!-- The target gets Mark of Despair that greatly decreases P. Def., M. Def., Max HP and P. Evasion. HP Recovery is limited, but P. Atk., M. Atk., Atk. Spd., P. Accuracy, P. Critical Damage and P. Critical Rate are increased. -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2425,7 +2425,7 @@
 		</effects>
 	</skill>
 	<skill id="5895" toLevel="1" name="Mark of Cowardice">
-		<!-- Significantly decreases Max HP, P./ M. Def. and P. Evasion. The use of attack and skills, HP Recovery Bonus are limited, but Speed is slightly increased. -->
+		<!-- The target gets Mark of Cowardice. Greatly decreases Max HP, P./ M. Def., P. Evasion. HP Recovery Rate is limited, as well as attack and skill usage. Increases Speed. -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2495,7 +2495,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5897" toLevel="1" name="Spike of Anchor">
-		<!-- P./ M. Def., P. Evasion and Speed are decreased. -->
+		<!-- Decreases P./ M. Def., P. Evasion and Speed. -->
 		<icon>icon.skill1164</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>

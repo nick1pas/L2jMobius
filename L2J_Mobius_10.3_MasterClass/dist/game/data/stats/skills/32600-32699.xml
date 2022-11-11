@@ -472,7 +472,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32639" toLevel="1" name="Devastating Krofin's Curse: Skills">
-		<!-- Because of Krofins' curse, character is weaken and unable to use skills. -->
+		<!-- Because of Krofin's curse, you are weakened and unable to use skills. -->
 		<icon>icon.skill0516</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -481,7 +481,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32640" toLevel="1" name="Devastating Krofin's Curse: Attacks">
-		<!-- Because of Krofins' curse, character is unable to use basic attacks. -->
+		<!-- Because of Krofin's curse, you can't use basic attacks. -->
 		<icon>icon.skill0122</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -490,7 +490,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32641" toLevel="1" name="Devastating Krofin's Curse: Speed">
-		<!-- Because of Krofins' curse, character is unable to control their body. Atk. Spd., Casting Spd. and Speed are decreased. -->
+		<!-- Because of Krofin's curse, you lose control over your body, and your Atk. Spd., Casting Spd. and Speed are decreased. -->
 		<icon>icon.skill0485</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -573,7 +573,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32650" toLevel="1" name="Krofin's Cursed Blue Water">
-		<!-- Decreases the target's MP by casting the Krofin's curse. -->
+		<!-- Krofin's curse decreases the target's MP. -->
 		<icon>icon.skill1102</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -655,7 +655,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="32661" toLevel="10" name="VICTORY Lv. 1">
-		<!-- Lineage II cheers for Korea. Vitality +$s1, acquired XP/ SP +$s2. You can receive a reward after 1 h. There are 9 levels. Note! The Victory buff and items can't be obtained if your character is dead or has no free slots in the inventory. -->
+		<!-- Lineage II cheers for Korea. Vitality +$s1, acquired XP/ SP +$s2. You can receive a reward after 1 h. There are 9 levels. Note!. The Victory buff and items can't be obtained if your character is dead or has no free slots in the inventory. -->
 		<icon>icon.skill32661</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -669,7 +669,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="32663" toLevel="10" name="KOREA Lv. 1">
-		<!-- Lineage II cheers for Korea. Vitality Bonus +$s1, acquired XP/ SP +$s2. You can receive a reward after 1 h. There are 9 levels. Note! The Korea buff and items can't be obtained if your character is dead or has no free slots in the inventory. -->
+		<!-- Lineage II cheers for Korea. Vitality Bonus +$s1, acquired XP/ SP +$s2. You can receive a reward after 1 h. There are 9 levels. Note!. The Korea buff and items can't be obtained if your character is dead or has no free slots in the inventory. -->
 		<icon>icon.skill32663</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -999,7 +999,7 @@
 		</effects>
 	</skill>
 	<skill id="32675" toLevel="1" name="Improved Immunity">
-		<!-- Becomes immune to all status effects. -->
+		<!-- Immunity to all debuffs. -->
 		<icon>icon.skill1411</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -1086,7 +1086,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="32683" toLevel="2" name="Curse Fear">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>icon.skill1169</icon>
 		<operateType>A1</operateType>
 		<castRange>600</castRange>
@@ -1098,7 +1098,7 @@
 		</effectPoint>
 	</skill>
 	<skill id="32684" toLevel="1" name="Aqua Stamp">
-		<!-- Strikes the ground with a fist to stir a splash of water, dealing damage to nearby enemies and blowing them away. -->
+		<!-- A water current deals damage to enemies knocking them down. -->
 		<icon>icon.skill19558</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>
@@ -1229,7 +1229,7 @@
 		</effects>
 	</skill>
 	<skill id="32688" toLevel="1" name="Arrow Rain">
-		<!-- Attacks the target and nearby enemies with a rain of arrows and decreases their Speed for 10 sec. -->
+		<!-- Attacks the target and enemies around them with a rain of arrows and decreases their Speed for 10 sec. -->
 		<icon>icon.skill10772</icon>
 		<operateType>A1</operateType>
 		<isDebuff>true</isDebuff>

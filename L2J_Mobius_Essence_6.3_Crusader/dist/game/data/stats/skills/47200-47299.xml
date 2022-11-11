@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="47201" toLevel="1" name="Fortune Time">
-		<!-- Max HP +20% P. Skill Power +5% -->
+		<!-- Max HP $s1 Max HP $s2 P. Skill Power $s3 With a certain chance after an attack on a raid boss: For $s3, the <font color="FF8000">Fortune Seeker's Mark</font> debuff is applied. (Cooldown: 10 sec.) <font color="FF8000">When Fortune Seeker's Mark is active: An additional reward is dropped after killing the boss.</font> Note! The additional reward can be obtained only from certain bosses. -->
 		<icon>icon.fortune_time</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -32,51 +32,50 @@
 		</effects>
 	</skill>
 	<skill id="47202" toLevel="1" name="Fortune Seeker's Mark">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.fortune_time</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47203" toLevel="1" name="Fortune Seeker's Mark">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.fortune_time</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47204" toLevel="5" name="Golden Stone">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Imprisonment/ Suppression skill> For $s1, inflicts Imprisonment on nearby enemies turning them into golden statues. When Imprisonment is over: Attacks the enemies with $s2 power. For $s1, P./ M. Def. and Speed $s3. -->
 		<icon>icon.gold_stone</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47205" toLevel="5" name="Stone Body">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Def. $s1 M. Def. $s1 Speed $s1 -->
 		<icon>icon.gold_stone_debuff</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47210" toLevel="1" name="Life Gain">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Max HP $s1 The effect determined by Max HP. <Max HP is less than 15,000> - P. Atk. $s12 <Max HP: 15,000 - 24,999> - P. Atk. $s2 <Max HP: 25,000 - 49,999> - P. Atk. $s3 - P. Skill Power $s4 <Max HP: 50,000 - 74,9999> - P. Atk. $s5 - P. Skill Power $s6 <Max HP: 75,000 - 99,999> - P. Atk. $s7 - P. Skill Power $s8 - Debuff Resistance $s9 - Anomaly Resistance $s9 <Max HP: 100,000 - 150,000> - P. Atk. $s10 - P. Skill Power $s9 - Debuff Resistance $s11 - Anomaly Resistance $s11 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47212" toLevel="1" name="Life Gain Lv. 2">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by Max HP. <Max HP: 15,000 - 24,999> - P. Atk. $s1 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47213" toLevel="1" name="Life Gain Lv. 3">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by Max HP. <Max HP: 25,000 - 49,999> - P. Atk. $s1 - P. Skill Power $s2 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47214" toLevel="1" name="Life Gain Lv. 4">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by Max HP. <Max HP: 50,000 - 74,999> - P. Atk. $s1 - P. Skill Power $s2 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47215" toLevel="1" name="Life Gain Lv. 5">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by Max HP. <Max HP: 75,000 - 99,999> - P. Atk. $s1 - P. Skill Power $s2 - Debuff Resistance $s3 - Anomaly Resistance $s3 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47216" toLevel="8" name="Crushing Leap">
+		<!-- Attacks the target with $s1 power. There is a certain chance to increase power after using skills. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.little_big_attack</icon>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>
@@ -147,16 +146,15 @@
 		</effects>
 	</skill>
 	<skill id="47217" toLevel="8" name="Crushing Leap">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.little_big_attack</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47218" toLevel="8" name="Crushing Leap">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.little_big_attack</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47219" toLevel="6" name="Adena Stun">
+		<!-- <Shock skill> Throws some adena at the target. Attacks the enemy with $s1 power. Stuns for $s2 With a certain chance, removes up to $s3 buff(s) from the target. Ignores Shield Defense. -->
 		<icon>icon.coin_stun</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>500</castRange>
@@ -235,36 +233,36 @@
 		</effects>
 	</skill>
 	<skill id="47221" toLevel="1" name="Mechanical Hero">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Skill with fixed cooldown> Allows to ride a battle mech <font color="FF8000"><Mechanical Hero></font> animated by a Dwarven spirit. <Mounting effect> Max HP $s1 P. Atk. $s2 Debuff/ Anomaly Resistance $s3 Object damage in the World Siege $s4 Your attack skills switch to the golem's skills. The maximum level buffs become available. Note! The mech disappears if it steps into the water. It also disappears after entering or leaving the Olympiad. -->
 		<icon>icon.mechanic_hero</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47222" toLevel="1" name="Hero's Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.hero_attack</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47223" toLevel="1" name="Hero's Swing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks nearby enemies with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.hero_swing</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47224" toLevel="1" name="Hero's Stomp">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Knockback skill> Attacks nearby characters with $s1 power, knocking them back. The knockback effect doesn't affect monsters. Ignores Shield Defense. Critical. -->
 		<icon>icon.hero_stump</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47225" toLevel="1" name="Hero's Stomp">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.hero_stump</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47226" toLevel="1" name="Increased Speed">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For $s1, Speed $s2 Constantly recovers HP. -->
 		<icon>icon.overdrive</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47227" toLevel="7" name="Blacksmith's Attack">
+		<!-- <Shock skill> Rushes forward to attack an enemy with $s1 power, stunning them for $s2 Can be used if the distance to the target is more than $s3. -->
 		<icon>icon.forge_attack</icon>
 		<castRange>500</castRange>
 		<coolTime>200</coolTime>
@@ -336,6 +334,7 @@
 		</effects>
 	</skill>
 	<skill id="47228" toLevel="1" name="Mechanical Masterpiece">
+		<!-- With a certain chance, delivers <font color="FFBB00">an additional blow</font> after an attack. Mechanical Golem appears. Mechanical Golem attacks the enemy and stuns them for 1 sec. -->
 		<icon>icon.mechanic_masterpiece</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -390,21 +389,22 @@
 		</effects>
 	</skill>
 	<skill id="47230" toLevel="1" name="Life Gain Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by Max HP. <Max HP is less than 15,000> - P. Atk. $s1 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47231" toLevel="1" name="Life Gain Lv. 6">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- The effect is determined by Max HP. <Max HP: 100,000 - 150,000> - P. Atk. $s1 - P. Skill Power $s2 - Debuff Resistance $s3 - Anomaly Resistance $s3 -->
 		<icon>icon.vital_gain</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47232" toLevel="7" name="Shield Throwing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Skill Critical Rate $s1 P. Skill Critical Damage $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47233" toLevel="7" name="Blacksmith's Attack">
+		<!-- Cannot move due to shock. -->
 		<icon>icon.forge_attack</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -441,6 +441,7 @@
 		</effects>
 	</skill>
 	<skill id="47234" toLevel="6" name="Adena Stun">
+		<!-- Cannot move due to shock. -->
 		<icon>icon.coin_stun</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -472,6 +473,7 @@
 		</effects>
 	</skill>
 	<skill id="47235" toLevel="15" name="Dwarven Weapon Mastery">
+		<!-- P. Atk. $s1 -->
 		<icon>icon.dwarf_weapon_mastery</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -526,6 +528,7 @@
 		</effects>
 	</skill>
 	<skill id="47236" toLevel="15" name="Dwarven Armor Mastery">
+		<!-- P. Def. $s1 -->
 		<icon>icon.dwarf_armor_mastery</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -639,6 +642,7 @@
 		</effects>
 	</skill>
 	<skill id="47237" toLevel="10" name="Dwarven Recovery Mastery">
+		<!-- HP Recovery Rate $s1 MP Recovery Rate $s2 -->
 		<icon>icon.skill1919</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -688,26 +692,27 @@
 		</effects>
 	</skill>
 	<skill id="47238" toLevel="1" name="Mechanical Masterpiece">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.mechanic_masterpiece</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47239" toLevel="1" name="Transcendent Hero's Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.hero_attack</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47240" toLevel="1" name="Glorious Warrior's Resurrection Cost Decrease">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- XP recovery fee $s1 -->
 		<icon>icon.lv_benefit_panel</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47240" toLevel="1" name="Glorious Warrior's Resurrection Cost Decrease">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- XP recovery fee $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47241" toLevel="1" name="Sensation">
+		<!-- Restores 100% of HP/CP to nearby clan members. -->
 		<icon>icon.s_sensation</icon>
 		<hitTime>4000</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -732,6 +737,7 @@
 		</effects>
 	</skill>
 	<skill id="47242" toLevel="1" name="Balanced Body">
+		<!-- Equalizes HP of nearby party members. Restores 10% of Max HP. -->
 		<icon>icon.skill14414</icon>
 		<affectRange>1000</affectRange>
 		<effectPoint>398</effectPoint>
@@ -753,6 +759,7 @@
 		</effects>
 	</skill>
 	<skill id="47243" toLevel="1" name="Advanced Cleanse">
+		<!-- Removes debuffs and anomalies. For $s1, Debuff/ Anomaly Resistance $s2 -->
 		<icon>icon.s_erase</icon>
 		<abnormalTime>5</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
@@ -787,26 +794,26 @@
 		</effects>
 	</skill>
 	<skill id="47244" toLevel="1" name="Exclusion">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Speed buffs are disabled. Gap-closing skills cannot be used. -->
 		<icon>icon.expel</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47245" toLevel="1" name="Holy Buster">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When using the Divine Beam skill: With a certain chance, makes an <font color="FFBB00">additional attack</font>. The skill's power is increased if the target is inflicted with Hold. (Trigger cooldown: 10 sec.) The <font color="FFBB00">additional attack</font> deals heavy damage to demons and undead. -->
 		<icon>icon.skill11763</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47246" toLevel="1" name="Holy Buster">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill11763</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47247" toLevel="1" name="Treatment">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- For the target and 10 nearby allies Removes Paralysis/ Shock/ Sleep/ Fear/ Imprison/ Knockback. Recovers 15% of Max HP. The effect is applied to immobilized allies first. The amount of recovered HP for the rest decreases. -->
 		<icon>icon.s_refine</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47248" toLevel="1" name="Eva's Nocturne">
+		<!-- Removes debuffs and anomalies from nearby party members. For $s1, Debuff/ Anomaly Resistance $s2 -->
 		<icon>icon.s_nocturn_of_eva</icon>
 		<abnormalTime>5</abnormalTime>
 		<abnormalLevel>1</abnormalLevel>
@@ -841,27 +848,29 @@
 		</effects>
 	</skill>
 	<skill id="47249" toLevel="1" name="Eva's Power">
+		<!-- Enhances the following skills by increasing the successful attack chance. - Sleep - Dryad Root -->
 		<icon>icon.skill11187</icon>
 		<magicLevel>78</magicLevel>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
 	</skill>
 	<skill id="47250" toLevel="60" name="Improved Sleep">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Sleep skill> The effect lasts for $s1 Inflicts Sleep on the target. -->
 		<icon>icon.skill4046_a</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47251" toLevel="27" name="Improved Wind Shackle">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Suppression skill> Slows the enemy down. The effect lasts for $s1 Atk. Spd. -$s2 Casting Spd. -$s2 -->
 		<icon>icon.skill4038_a</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47252" toLevel="45" name="Improved Dryad Root">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Hold Skill> The effect lasts for $s1 Holds the enemy. -->
 		<icon>icon.skill4047_a</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47253" toLevel="3" name="Duress">
+		<!-- <Hold skill> For the target and nearby enemies: Holds for$s1 P. Atk. $s2 M. Atk. $s2 -->
 		<icon>icon.s_imprison</icon>
 		<castRange>600</castRange>
 		<abnormalLevel>1</abnormalLevel>
@@ -928,6 +937,7 @@
 		</effects>
 	</skill>
 	<skill id="47254" toLevel="3" name="Duress">
+		<!-- The body is bound and unable to move. -->
 		<icon>icon.s_imprison</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -957,6 +967,7 @@
 		</effects>
 	</skill>
 	<skill id="47255" toLevel="1" name="Nemesis">
+		<!-- For the target and nearby enemies: Received Healing $s2 for $s1 -->
 		<icon>icon.s_nemesis</icon>
 		<castRange>600</castRange>
 		<abnormalLevel>1</abnormalLevel>
@@ -992,6 +1003,7 @@
 		</effects>
 	</skill>
 	<skill id="47256" toLevel="1" name="Dark Disruption">
+		<!-- Removes the following buffs and blocks them for 10 sec.: - Special class transformation -->
 		<icon>icon.banish</icon>
 		<castRange>600</castRange>
 		<abnormalLevel>1</abnormalLevel>
@@ -1027,6 +1039,7 @@
 		</effects>
 	</skill>
 	<skill id="47257" toLevel="1" name="Shillien's Power">
+		<!-- M. Atk. $s1 <Shillien's Power - Burst> When using magic skills (attack/ anomaly/ debuff): With a certain chance for $s2: M. Atk. $s3 Casting Spd. $s4 (Trigger cooldown: 60 sec.) -->
 		<icon>icon.skill19167</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1055,6 +1068,7 @@
 		</effects>
 	</skill>
 	<skill id="47258" toLevel="1" name="Shillien's Power - Burst">
+		<!-- M. Atk. $s1 Casting Spd. $s2 -->
 		<icon>icon.skill19167</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -1078,6 +1092,7 @@
 		</effects>
 	</skill>
 	<skill id="47259" toLevel="1" name="Unleashing">
+		<!-- <Skill with fixed cooldown> For $s1, your mental power awakens. M. Atk. $s2 Casting Spd. $s3 M. Skill Critical Rate $s4 M. Skill MP Consumption $s5 Healing Power $s6 -->
 		<icon>icon.s_awaken</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -1126,7 +1141,7 @@
 			<effect name="TriggerSkillByKill">
 				<!-- HP Drain -->
 				<chance>100</chance>
-				<skillId>47261</skillId> <!-- Divine Recovery - After Kill Monsters -->
+				<skillId>47261</skillId> <!-- Divine Recovery -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -1136,7 +1151,7 @@
 			<effect name="TriggerSkillByKill">
 				<!-- HP Drain -->
 				<chance>100</chance>
-				<skillId>47262</skillId> <!-- Divine Recovery - After Kill Characters -->
+				<skillId>47262</skillId> <!-- Divine Recovery -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -1146,6 +1161,7 @@
 		</effects>
 	</skill>
 	<skill id="47261" toLevel="3" name="Divine Recovery">
+		<!-- Consumes the target's soul and recovers MP. (Trigger cooldown: 10 sec.) Recovers $s1 MP after killing monsters. Recovers $s2 MP after killing characters. -->
 		<icon>icon.s_saint_recovery</icon>
 		<castRange>600</castRange>
 		<effectRange>1100</effectRange>
@@ -1185,6 +1201,7 @@
 		</effects>
 	</skill>
 	<skill id="47263" toLevel="1" name="Sacred Power">
+		<!-- M. Def. $s2 The effect is determined by M. Def. <M. Def. is less than 1500> - M. Atk. $s1 <M. Def.: 1500 - 3999> - M. Atk. $s3 <M. Def.: 4000 - 7999> - M. Atk. $s4 <M. Def.: 8000 and higher> - M. Atk. $s5 -->
 		<icon>icon.s_sacred_power</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1195,7 +1212,7 @@
 				<mode>DIFF</mode>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>47278</skillId> <!-- Sacred Power Lv. 1 -->
+				<skillId>47278</skillId> <!-- Chain Strike (Shock) -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -1206,6 +1223,7 @@
 		</effects>
 	</skill>
 	<skill id="47264" toLevel="4" name="Sacred Power Lv. 1">
+		<!-- The effect is determined by M. Def. <M. Def. is less than 1500> - M. Atk. $s1 -->
 		<icon>icon.s_sacred_power</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1258,6 +1276,7 @@
 		</effects>
 	</skill>
 	<skill id="47265" toLevel="1" name="Improved Resilience">
+		<!-- Infection Resistance $s1 Shock Resistance $s2 Knockback Resistance $s3 -->
 		<icon>icon.skill11765</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1271,6 +1290,7 @@
 		</effects>
 	</skill>
 	<skill id="47266" toLevel="3" name="Favorable Cover">
+		<!-- Swiftly switches the defense stance. For $s1 Max HP $s2 P. Def. $s2 Dagger Resistance $s3 -->
 		<icon>icon.skill11785</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -1322,6 +1342,7 @@
 		</effects>
 	</skill>
 	<skill id="47267" toLevel="15" name="Priest's Armor Mastery">
+		<!-- <Robe effect> P. Def. $s1 M. Def. $s2 <Light armor effect> P. Def. $s3 Atk. Spd. $s5 Casting Spd. $s4 MP Recovery Rate $s6 -->
 		<icon>icon.m_class_robe</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1456,6 +1477,7 @@
 		</effects>
 	</skill>
 	<skill id="47268" toLevel="15" name="Priest's Attack Mastery">
+		<!-- P. Atk. $s1 M. Atk. $s2 When using a bow or a spear, Casting Spd. -30%. -->
 		<icon>icon.s_priest_attack_mastery</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1528,6 +1550,7 @@
 		</effects>
 	</skill>
 	<skill id="47269" toLevel="9" name="Mana Effect Boost">
+		<!-- Max MP $s1 MP Recovery Rate $s2 -->
 		<icon>icon.skill1013</icon>
 		<abnormalTime>1200</abnormalTime>
 		<abnormalType>MAX_MP_UP</abnormalType>
@@ -1607,6 +1630,7 @@
 		</effects>
 	</skill>
 	<skill id="47270" toLevel="11" name="Anti Magic">
+		<!-- M. Def. $s1 M. Damage Resistance $s2 -->
 		<icon>icon.skill0146</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1659,6 +1683,7 @@
 		</effects>
 	</skill>
 	<skill id="47271" toLevel="7" name="Priest's Recovery Mastery">
+		<!-- HP Recovery Rate $s1 MP Recovery Rate $s2 -->
 		<icon>icon.skill11788</icon>
 		<magicLevel>
 			<value level="1">25</value>
@@ -1699,6 +1724,7 @@
 		</effects>
 	</skill>
 	<skill id="47272" toLevel="1" name="Condemnation">
+		<!-- A lightning strike inflicts Paralysis. -->
 		<icon>icon.condemn</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1750,6 +1776,7 @@
 		</effects>
 	</skill>
 	<skill id="47273" toLevel="7" name="Shield Throwing">
+		<!-- <Skill with fixed cast time> Throws the shield at the target. Attacks the target with $s1 power. For 10 sec., P. Skill Critical Rate -5%. P. Skill Critical Damage -5% Ignores Shield Defense. Ignores 20% of the target's defense. Critical. -->
 		<icon>icon.shield_throwing</icon>
 		<castRange>400</castRange>
 		<effectPoint>
@@ -1809,6 +1836,7 @@
 		</effects>
 	</skill>
 	<skill id="47274" toLevel="2" name="Power of Life">
+		<!-- Fills your body with power and energy. Max HP $s1 Max HP $s2 P. Def. $s3 Shield Defense $s4 -->
 		<icon>icon.stamina</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1870,6 +1898,7 @@
 		</effects>
 	</skill>
 	<skill id="47275" toLevel="2" name="Toughness">
+		<!-- Enables a stance that increases your defense. Max HP $s1 P. Def. $s2 P. Def. $s3 Shield Defense $s4 -->
 		<icon>icon.toughness</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1931,6 +1960,7 @@
 		</effects>
 	</skill>
 	<skill id="47276" toLevel="1" name="Chain Strike (Shock)">
+		<!-- Enchants Chain Strike. <Enchant effect> Increases the Chain Strike success rate. With a certain chance, stuns the target for 3 sec. after pulling them. -->
 		<icon>icon.chain_shock</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1954,7 +1984,7 @@
 		</effects>
 	</skill>
 	<skill id="47277" toLevel="3" name="Chain Strike (Shock)">
-		<!-- <Pull Skill> Pulls the enemy. -->
+		<!-- <Pull/ shock skill> Pulls the target and stuns them for 3 sec. with a certain chance. -->
 		<icon>icon.chain_shock</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2008,6 +2038,7 @@
 		</effects>
 	</skill>
 	<skill id="47278" toLevel="3" name="Chain Strike (Shock)">
+		<!-- Cannot move due to shock. -->
 		<icon>icon.chain_shock</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2035,6 +2066,7 @@
 		</effects>
 	</skill>
 	<skill id="47279" toLevel="8" name="Knight's Assault">
+		<!-- Swings your weapon at the target. Attacks with $s1 power. Ignores Shield Defense. Ignores 10% of the target's defense. Critical. -->
 		<icon>icon.knight_assault</icon>
 		<castRange>40</castRange>
 		<effectPoint>
@@ -2103,6 +2135,7 @@
 		</effects>
 	</skill>
 	<skill id="47280" toLevel="2" name="Knight's Power">
+		<!-- P. Def. $s1 The effect is affected by your P. Def. <P. Def. lower than 5000> - P. Atk. $s2 <P. Def. 5000-6999> - P. Atk. $s3 <P. Def. 7000-8999> - P. Atk. $s4 <P. Def. 9000-10999> - P. Atk. $s5 <P. Def. 11000-14499> - P. Atk. $s6 <P. Def. 14500 - 16999> -P. Atk. $s7 <P. Def. 17000 - 19499> -P. Atk. $s8 <P. Def. 19500 - 21999> - P. Atk. $s9 <P. Def. 22000 - 24999> - P. Atk. $s10 <P. Def. 25000+> - P. Atk. $s11 -->
 		<icon>icon.strength_of_knight</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2187,6 +2220,7 @@
 		</effects>
 	</skill>
 	<skill id="47281" toLevel="2" name="Masterpiece Shield">
+		<!-- Makes you use your shield more effectively. Shield Defense ignoring effects are $s1 less effective. -->
 		<icon>icon.skill0475</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2199,6 +2233,7 @@
 		</passiveConditions>
 	</skill>
 	<skill id="47282" toLevel="10" name="Shield Stun">
+		<!-- <Shock skill> Attacks the enemy with the shield. Power $s1. Stuns for $s2 -->
 		<icon>icon.skill0092</icon>
 		<basicProperty>PHYSICAL</basicProperty>
 		<castRange>40</castRange>
@@ -2283,6 +2318,7 @@
 		</effects>
 	</skill>
 	<skill id="47283" toLevel="10" name="Shield Stun">
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2317,6 +2353,7 @@
 		</effects>
 	</skill>
 	<skill id="47284" toLevel="11" name="Slowdown">
+		<!-- Duration: $s1 P. Skill Cooldown +$s2 M. Skill Cooldown +$s2 -->
 		<icon>icon.skill11767</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2374,6 +2411,7 @@
 		</effects>
 	</skill>
 	<skill id="47285" toLevel="10" name="Bloody Weapon">
+		<!-- Sharpens your weapon for $s1 With a certain chance, uses Bloody Strike after an attack. (Cooldown: 10 sec.) Cannot be used with Freezing Weapon. <Bloody Strike> Attacks the enemy with $s2 power. For $s3, deals additional damage. -->
 		<icon>icon.skill0223</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalType>BLEEDING</abnormalType>
@@ -2496,7 +2534,7 @@
 				</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>47287</skillId> <!-- Bloody Strike - Drain HP -->
+				<skillId>47287</skillId> <!-- Bloody Strike -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -2513,6 +2551,7 @@
 		</effects>
 	</skill>
 	<skill id="47287" toLevel="10" name="Bloody Strike">
+		<!-- Constantly drains HP. -->
 		<icon>icon.skill0223</icon>
 		<abnormalLevel>
 			<value level="1">3</value>
@@ -2572,6 +2611,7 @@
 		</effects>
 	</skill>
 	<skill id="47288" toLevel="9" name="Freezing Weapon">
+		<!-- Imbues your weapon with ice power for $s1 With a certain chance, uses Freezing Strike after a physical attack. (Cooldown: 10 sec.) Cannot be used with Bloody Weapon. <Freezing Strike> Attacks the enemy with $s2 power. For $s3, Speed -$s4. -->
 		<icon>icon.skill0105</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2679,7 +2719,7 @@
 				</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>47290</skillId> <!-- Freezing Strike - Decease Speed -->
+				<skillId>47290</skillId> <!-- Freezing Strike -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -2695,6 +2735,7 @@
 		</effects>
 	</skill>
 	<skill id="47290" toLevel="9" name="Freezing Strike">
+		<!-- Speed $s1 -->
 		<icon>icon.skill0105</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -2730,6 +2771,7 @@
 		</effects>
 	</skill>
 	<skill id="47291" toLevel="5" name="Slaughter">
+		<!-- P. Atk. $s1 -->
 		<icon>icon.skill0103</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -2758,6 +2800,7 @@
 		</effects>
 	</skill>
 	<skill id="47292" toLevel="4" name="Life's Return">
+		<!-- For 20 min., increases the Elves' unique vitality. When hit, recovers $s1 of Max HP. (Cooldown: $s2) -->
 		<icon>icon.life_return</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2797,7 +2840,7 @@
 				<minDamage>1</minDamage>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>47293</skillId> <!-- Replenishing Life -->
+				<skillId>47293</skillId> <!-- Life's Return -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -2812,7 +2855,7 @@
 				<minDamage>1</minDamage>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>47293</skillId> <!-- Replenishing Life -->
+				<skillId>47293</skillId> <!-- Life's Return -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -2850,6 +2893,7 @@
 		</effects>
 	</skill>
 	<skill id="47294" toLevel="4" name="Life Steal">
+		<!-- For 20 min., increases the Dark Elves' unique ability to steal others' health. Recovers $s1 of Max HP after an attack. (Cooldown: $s2) -->
 		<icon>icon.life_return</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2942,6 +2986,7 @@
 		</effects>
 	</skill>
 	<skill id="47296" toLevel="9" name="Knight's Magic Resistance">
+		<!-- M. Def. $s1 M. Damage Resistance +$s2 -->
 		<icon>icon.skill0147</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -2988,6 +3033,7 @@
 		</effects>
 	</skill>
 	<skill id="47297" toLevel="12" name="Knight's Armor Mastery">
+		<!-- When using heavy armor: P. Def. $s1 Received P. Critical Damage $s2 With a certain chance, triggers Power Stance when hit. (Cooldown: 10 sec.) <Power Stance> Increases P. Atk. Increases Atk. Spd. -->
 		<icon>icon.knight_armor_mastery</icon>
 		<magicLevel>
 			<value level="1">40</value>
@@ -3114,6 +3160,7 @@
 		</effects>
 	</skill>
 	<skill id="47298" toLevel="12" name="Knight's Weapon Mastery">
+		<!-- When using a sword or a blunt weapon: P. Atk. $s1 -->
 		<icon>icon.knight_weapon_mastery</icon>
 		<magicLevel>
 			<value level="1">40</value>

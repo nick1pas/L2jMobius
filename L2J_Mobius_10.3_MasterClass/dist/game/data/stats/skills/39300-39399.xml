@@ -177,7 +177,7 @@
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="39345" toLevel="1" name="Chronicle Token">
-		<!-- When in inventory, P./ M. Atk., P./ M. Def., Atk. Spd./ Casting Spd., Critical Rate for standard attacks, M. Skill Critical Rate, Max HP/ MP/ CP +$s1, Vitality Bonus +$s2. -->
+		<!-- When in inventory, P. Atk., M. Atk., P. Def., M. Def., Atk. Spd./ Casting Spd., Critical Rate for basic attacks, M. Skill Critical Rate, Max HP/ MP/ CP +$s1, Vitality bonus +$s2. -->
 		<icon>icon.etc_scroll_of_memory_i00</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -290,7 +290,7 @@
 		</effects>
 	</skill>
 	<skill id="39348" toLevel="1" name="Master Fisherman's Blessing (1-hour)">
-		<!-- Increases Acquired XP/ SP on successful fishing by $s2 for $s1 Effect remains after death and cannot be forcibly removed. -->
+		<!-- For $s1, acquired XP/ SP while fishing +$s2. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.fishing_zone_ticket</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -298,11 +298,11 @@
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="39349" toLevel="2" name="Scroll: Enchant Freya's Staff">
-		<!-- An enchant scroll for Freya Staff. Failure to enchant destroys the weapon. -->
+		<!-- A scroll for enchanting Freya's Staff. In case of failure, the weapon is destroyed. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39350" toLevel="3" name="Freya's Ice Rose">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P. Atk./ M. Atk./ P. Def./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>icon.bm_freya_ice_rose</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>2</abnormalLevel>
@@ -473,7 +473,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="39355" toLevel="1" name="Freya's Ice Rose - Event">
-		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, damage +$s7, P./ M. Skill Power +$s8, acquired XP/ SP +$s9, received damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
+		<!-- For $s1, Max HP/ MP/ CP +$s2, P./ M. Atk. and P./ M. Def. +$s3, Atk. Spd./ Casting Spd. +$s4, Speed +$s5, Attribute Attack/ Resistance +$s6, Damage +$s7, P./ M. Skill Power +$s8, Acquired XP/ SP +$s9, Received Damage -$s10, Skill MP Consumption -$s11. The effect remains after death. -->
 		<icon>icon.bm_freya_ice_rose</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>2</abnormalLevel>
@@ -667,7 +667,7 @@
 		</effects>
 	</skill>
 	<skill id="39357" toLevel="2" name="+9 Fallen Angel's Ring Pack">
-		<!-- Double-click to obtain Fallen Angel's Ring +9. -->
+		<!-- Double-click to obtain +9 Fallen Angel's Ring. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -737,7 +737,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39368" toLevel="1" name="Lucky Growth Rune">
-		<!-- When stored in the inventory, Hunting XP/ SP +$s1, Vitality +$s1. -->
+		<!-- When in inventory, acquired XP/ SP +$s1, Vitality bonus +$s1. -->
 		<icon>icon.skill19226</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -751,7 +751,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39370" toLevel="2" name="Gale Scroll">
-		<!-- For 10 min., Acquired XP/ SP +$s1. The effect remains after death. Cooldown: 9 min. -->
+		<!-- For 10 min., acquired XP/ SP while hunting +$s1. The effect remains after death. Cooldown: 9 min. -->
 		<icon>icon.scrl_of_storm</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -783,17 +783,17 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="39372" toLevel="1" name="Growth Rune">
-		<!-- When stored in the inventory, Hunting XP/SP +$s1. -->
+		<!-- When in inventory, acquired XP/ SP +$s1. -->
 		<icon>br_cashtex.item.br_cash_rune_of_feather_i00</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="39373" toLevel="1" name="Special Growth Rune">
-		<!-- When stored in the inventory, Acquired XP/ SP +$s1, Acquired XP/ SP +$s1 in Vitality state (excluding boss monsters). -->
+		<!-- When in inventory, acquired XP/ SP while hunting +$s1, Vitality bonus +$s1. The effect doesn't work on boss monsters. -->
 		<icon>icon.bm_sayha_rune</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="39374" toLevel="1" name="Transformation Skill">
-		<!-- Transforms you into a Snow Man, Scarecrow Jack, Tin Golem, Tow, Lure Tow, Heavy Tow, Warm Tow, White Dog, Pink Dog, or Golden Dog for $s1 <Alt +left click> to delete the buff. -->
+		<!-- For $s1, transforms into one of the following funny creatures: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue, White Dog, Pink Dog, Golden Dog. To remove the effect, use Alt + left mouse click. -->
 		<icon>icon.skill11540</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -823,7 +823,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39379" toLevel="1" name="Energy of Dimensions">
-		<!-- Blessing given by the Dimensional Wizard to commemorate the victory in the Dimensional Space. Acquired XP/ SP +15% for 1 h. -->
+		<!-- Dimensional Wizard's blessing. For 1 h., acquired XP/ SP while hunting +15%. -->
 		<icon>icon.tersi_specter_seed</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -900,7 +900,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39390" toLevel="2" name="+8 Angel's Necklace Pack">
-		<!-- Use it to obtain 1 +8 enchanted Angel's Necklace. -->
+		<!-- Double-click to obtain +8 Angel's Necklace. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -930,7 +930,7 @@
 		</effects>
 	</skill>
 	<skill id="39391" toLevel="2" name="+8 Angel's Earring Pack">
-		<!-- Double-click to obtain Angel's Earring +8. -->
+		<!-- Double-click to obtain +8 Angel's Earring. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -1133,7 +1133,7 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39399" toLevel="1" name="Soccer Ball Herb">
-		<!-- Contains the passion of the Soccer Ball Fairy who loves soccer. For $s1, P./ M. Atk., P./ M. Def., Atk. Spd., Casting Spd. +$s2 and transforms the appearance to Soccer Ball Afro Hair - White. -->
+		<!-- For $s1, P. Atk./ M. Atk./ P. Def./ M. Def./ Atk. Spd./ Casting Spd. +$s2. Transforms your head appearance into Afro Hairstyle - White Ball. -->
 		<icon>icon.ev_soccer_herb</icon>
 		<operateType>A1</operateType>
 	</skill>

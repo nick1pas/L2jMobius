@@ -160,7 +160,7 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="17048" toLevel="1" name="Premium Buff">
-		<!-- Premium Buff for paid users. Acquired XP/ SP +200%. -->
+		<!-- Premium buff given as a reward for completing quests. Acquired XP/ SP while hunting +200%. -->
 		<icon>icon.etc_blessed_kalie_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -259,7 +259,7 @@
 		</effects>
 	</skill>
 	<skill id="17052" toLevel="2" name="Elmore's Support Box">
-		<!-- Double-click to obtain either: 1 of the 4 Giant's Codices (Oblivion, Discipline, Mastery, Standard), or an R-grade Enchant Scroll for a weapon or armor. -->
+		<!-- Double-click to obtain one of the following items: 1 of the 4 Giant's Codices (Oblivion, Discipline, Mastery, Standard), Scroll: Enchant R-grade Weapon/ Armor. -->
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="17053" toLevel="1" name="Elmore's Mysterious Box">
@@ -279,14 +279,14 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="17057" toLevel="1" name="Faint Energy of Dimensions">
-		<!-- Blessing given by the dimensional wizard to commemorate the victory in the dimensional space. For 1 h., Atk. Spd. and Casting Spd. +10%, Speed +10, and HP/ MP/ CP +10%. -->
+		<!-- A blessing given by the Dimensional Wizard for the victory in the dimensional space. For 1 h., Atk. Spd./ Casting Spd. +10%, Speed +10, Max HP/ MP/ CP +10%. -->
 		<icon>icon.tersi_specter_seed</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>3600000</reuseDelay>
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="17058" toLevel="1" name="Dimensional Blessing (Event)">
-		<!-- Blessing given by the Dimensional Wizard. Acquired XP +100% for 4 h. -->
+		<!-- A blessing from the Dimensional Wizard. For 4 h., acquired XP +100%. -->
 		<icon>icon.skill14216</icon>
 		<operateType>A2</operateType>
 		<castRange>1200</castRange>
@@ -321,28 +321,28 @@
 		<blockedInOlympiad>true</blockedInOlympiad>
 	</skill>
 	<skill id="17063" toLevel="1" name="Talisman of Escape: Oren">
-		<!-- Return to the Town of Oren. -->
+		<!-- Teleports to Oren. -->
 		<operateType>A1</operateType>
 		<hitTime>20000</hitTime>
 		<reuseDelay>14400000</reuseDelay>
 		<blockedInOlympiad>true</blockedInOlympiad>
 	</skill>
 	<skill id="17064" toLevel="1" name="Talisman of Escape: Aden">
-		<!-- Return to the Town of Aden. -->
+		<!-- Teleports to Aden. -->
 		<operateType>A1</operateType>
 		<hitTime>20000</hitTime>
 		<reuseDelay>14400000</reuseDelay>
 		<blockedInOlympiad>true</blockedInOlympiad>
 	</skill>
 	<skill id="17065" toLevel="1" name="Talisman of Escape: Goddard">
-		<!-- Return to the Town of Goddard. -->
+		<!-- Teleports to Goddard. -->
 		<operateType>A1</operateType>
 		<hitTime>20000</hitTime>
 		<reuseDelay>14400000</reuseDelay>
 		<blockedInOlympiad>true</blockedInOlympiad>
 	</skill>
 	<skill id="17066" toLevel="1" name="Talisman of Escape: Rune">
-		<!-- Return to the Town of Rune. -->
+		<!-- Teleports to Rune. -->
 		<operateType>A1</operateType>
 		<hitTime>20000</hitTime>
 		<reuseDelay>14400000</reuseDelay>
@@ -470,7 +470,7 @@
 		</effects>
 	</skill>
 	<skill id="17082" toLevel="1" name="Prevailing Sonata - Mentor">
-		<!-- With your mentor's help, Max HP +$s1, P. Atk. +$s2, M. Atk. +$s3, Casting Interruption Rate -$s5. The effect is active only when your mentor is online and for 5 min. after they have gone offline. -->
+		<!-- With your mentor's help, Max HP +$s1, P. Atk. +$s2, M. Atk. +$s3, Casting Interruption Rate -$s4. With a $s5 chance, applies Vampiric Rage effect. The effect is active only when your mentor is online and for 5 min. after they have logged out. -->
 		<icon>icon.skill11529</icon>
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -527,7 +527,7 @@
 		</effects>
 	</skill>
 	<skill id="17083" toLevel="1" name="Daring Sonata - Mentor">
-		<!-- With your mentor's help, your Atk. Spd. +$s1, Casting Spd. +$s2, Damage Reflection +$s3, Skill Cooldown -$s4. Buff is triggered only when your mentor is online. Buff persists for 5 min. after your mentor has gone offline. -->
+		<!-- With your mentor's help, Atk. Spd. +$s1, Casting Spd. +$s2, Damage Reflection +$s3, Skill Cooldown -$s4. The effect is active only when your mentor is online and for 5 min. after they have logged out. -->
 		<icon>icon.skill11530</icon>
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>
@@ -590,7 +590,7 @@
 		</effects>
 	</skill>
 	<skill id="17084" toLevel="1" name="Refreshing Sonata - Mentor">
-		<!-- With your mentor's help, your HP Recovery Rate +$s1, MP Recovery Rate +$s2, P./ M. Evasion +$s3, Skill MP Consumption -$s4. Buff is triggered only when your mentor is online. Buff persists for 5 min. after your mentor has gone offline. -->
+		<!-- With your mentor's help, HP Recovery Rate +$s1, MP Recovery Rate +$s2, P./ M. Evasion +$s3, Skill MP Consumption -$s4. The effect is active only when your mentor is online and for 5 min. after they have logged out. -->
 		<icon>icon.skill11532</icon>
 		<operateType>A2</operateType>
 		<targetType>SELF</targetType>

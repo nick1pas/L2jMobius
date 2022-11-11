@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="48000" toLevel="6" name="Force - Rush Impact">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Stuns making unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -18,42 +18,42 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48003" toLevel="1" name="Baium's Prophecy">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s2 M. Def. $s2 Max HP $s3 Max MP $s3 acquired XP/ SP $s4 PvE damage $s5 Sayha's Grace Consumption $s6 Received P. Skill Critical Rate $s7 Received P. Skill Critical Damage $s7 Skill Power $s8 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48004" toLevel="1" name="Behemoth' Prophecy">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s2 M. Def. $s2 Max HP $s3 Max MP $s3 Acquired XP/ SP $s4 PvE damage $s5 Sayha's Grace Consumption $s6 Received P. Skill Critical Rate $s7 Received P. Skill Critical Damage $s7 All Critical Damage $s8 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48005" toLevel="1" name="Glakias' Prophecy">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s2 M. Def. $s2 Max HP $s3 Max MP $s3 acquired XP/ SP $s4 PvE damage $s5 Sayha's Grace Consumption $s6 Received P. Skill Critical Rate $s7 Received P. Skill Critical Damage $s7 All weapon P. Atk. $s8 All weapon M. Atk. $s8 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48006" toLevel="25" name="Basic Critical Damage Increase">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Basic Critical Damage $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48007" toLevel="25" name="P. Skill Critical Damage Increase">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Skill Critical Damage $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48008" toLevel="25" name="M. Skill Critical Damage Increase">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- M. Skill Critical Damage $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48009" toLevel="25" name="All Critical Damage Increase">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- All Critical Damage $s1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48010" toLevel="20" name="Received Basic Critical Damage Decrease">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Received basic Critical Damage $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -149,7 +149,7 @@
 		<hitTime>500</hitTime>
 	</skill>
 	<skill id="48022" toLevel="2" name="Raid Reward - Clarity">
-		<!-- For 60 min., MP Consumption -20% for physical skills, -10% for magical skills, -20% for song/ dance skills. -->
+		<!-- For 60 min., P. Skill MP Consumption -20%, M. Skill MP Consumption -10%, Song/ Dance MP Consumption -20%. -->
 		<icon>icon.skill1397</icon>
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -165,7 +165,7 @@
 		<hitTime>500</hitTime>
 	</skill>
 	<skill id="48024" toLevel="2" name="Raid Reward - Wind Walk">
-		<!-- Speed +33 for 60 min. -->
+		<!-- For 60 min., Speed +33. -->
 		<icon>icon.skill1204</icon>
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -189,7 +189,7 @@
 		<hitTime>500</hitTime>
 	</skill>
 	<skill id="48027" toLevel="2" name="Raid Reward - Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.skill1086</icon>
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -245,7 +245,7 @@
 		<hitTime>500</hitTime>
 	</skill>
 	<skill id="48034" toLevel="2" name="Raid Reward - HP Recovery">
-		<!-- For 60 min., it recovers HP. -->
+		<!-- For 60 min., recovers HP. -->
 		<icon>icon.skill0211</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -322,22 +322,22 @@
 		<mpConsume>58</mpConsume>
 	</skill>
 	<skill id="48044" toLevel="1" name="Fire Attribute Monster">
-		<!-- Water Attacks are dealing additional damage. -->
+		<!-- Water Attacks deal additional damage. -->
 		<icon>icon.elemental_fire</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="48045" toLevel="1" name="Water Attribute Monster">
-		<!-- Wind Attacks are dealing additional damage. -->
+		<!-- Wind Attacks deal additional damage. -->
 		<icon>icon.elemental_water</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="48046" toLevel="1" name="Wind Attribute Monster">
-		<!-- Earth Attacks are dealing additional damage. -->
+		<!-- Earth Attacks deal additional damage. -->
 		<icon>icon.elemental_wind</icon>
 		<operateType>P</operateType>
 	</skill>
 	<skill id="48047" toLevel="1" name="Earth Attribute Monster">
-		<!-- Fire Attacks are dealing additional damage. -->
+		<!-- Fire Attacks deal additional damage. -->
 		<icon>icon.elemental_earth</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -367,11 +367,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48053" toLevel="1" name="PA Battle Buff">
-		<!-- Max CP +1000 for 20 min. -->
+		<!-- Max CP +1000 for 60 min. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48054" toLevel="1" name="Burning">
+		<!-- For $s1, acquired XP/ SP +$s2, when attacking a special monster. -->
 	<icon>icon.skill3238</icon>
 		<operateType>A2</operateType>
 		<abnormalLevel>1</abnormalLevel>
@@ -390,7 +391,7 @@
 		</effects>
 	</skill>
 	<skill id="48055" toLevel="5" name="Yogi's Energy">
-		<!-- Even Yogi himself does not understand the nature of this energy. But for sure it is connected to Yogi s Weapon. -->
+		<!-- Even Yogi himself does not understand the nature of this energy. But for sure it is connected to Yogi's Weapon. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -400,7 +401,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48057" toLevel="1" name="Ultimate Death Knight Experience">
-		<!-- <Ultimate Death Knight Transformation> You can experience Death Knight s destiny being cursed by the Fire Dragon Valakas, but having a great power. -->
+		<!-- <Ultimate Death Knight Transformation> You can experience Death Knight's destiny being cursed by the Fire Dragon Valakas, but having a great power. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
 		<abnormalType>CHANGEBODY</abnormalType>
@@ -429,12 +430,10 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48060" toLevel="1" name="Burning Fist">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48061" toLevel="1" name="Double Shot">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -481,7 +480,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48071" toLevel="1" name="Master's Protection">
-		<!-- For $s1, P./ M. Atk. and P./ M. Def. +250. -->
+		<!-- For $s1, P. Atk./ M. Atk./ P. Def./ M. Def. +250. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -511,22 +510,19 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48078" toLevel="1" name="Clan Stronghold Effect">
-		<!-- Buff for the members of the clan that secured the Cruma Tower Clan Stronghold Device. For $s1 Acquired XP $s2 Acquired SP $s2 -->
+		<!-- A buff for the members of the clan that captured the Clan Stronghold Device in Cruma Tower. Duration: $s1 Acquired XP $s2 Acquired SP $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48079" toLevel="1" name="Triple Slash">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48080" toLevel="1" name="Karim's Range Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48081" toLevel="1" name="Beast's Range Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -536,7 +532,6 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48083" toLevel="1" name="Antharas' Resistance">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -578,7 +573,6 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="48092" toLevel="10" name="Damage of Limit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

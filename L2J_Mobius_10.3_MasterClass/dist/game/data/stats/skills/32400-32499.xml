@@ -42,7 +42,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32404" toLevel="1" name="Berserker">
-		<!-- Body is at the extreme physical limit. Increases Debuff Resistance, Speed, P. Atk., P. Accuracy, P. Def., Atk. Spd., and Critical Damage for standard attacks. Killing enemies restores HP. -->
+		<!-- Makes you almost invincible. Increases Debuff Resistance, Speed, P. Atk., P. Accuracy, P. Def., Atk. Spd. and Critical Damage for basic attacks. Killing enemies recovers HP. -->
 		<icon>icon.skill10274</icon>
 		<operateType>A1</operateType>
 		<hitTime>2000</hitTime>
@@ -58,7 +58,7 @@
 		<reuseDelay>300000</reuseDelay>
 	</skill>
 	<skill id="32406" toLevel="1" name="Limit Barrier">
-		<!-- A barrier that can withstand 200 strikes. If the barrier is not struck 200 times within $s1, the raid boss' HP becomes fully restored. -->
+		<!-- The barrier protects from 200 hits. If you don't deal 200 hits for $s1, the boss' HP will be fully restored. -->
 		<icon>icon.skill11621</icon>
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
@@ -132,7 +132,7 @@
 		</effects>
 	</skill>
 	<skill id="32412" toLevel="1" name="Drum Melody - Olympiad">
-		<!-- Standard buff for all Olympiad participants. For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- A standard buff for all Olympiad participants. For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.olympiad_buff</icon>
 		<abnormalType>BUFF_SPECIAL_CRITICAL</abnormalType>
 		<operateType>A2</operateType>
@@ -282,7 +282,7 @@
 		</effects>
 	</skill>
 	<skill id="32415" toLevel="1" name="Olympiad's Harmony">
-		<!-- A common buff for all Olympiad participants. For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Critical Rate/ M. Skill Critical Rate +$s4, Critical Damage for standard attacks +$s5, M. Skill Critical Damage +$s6, Atk. Spd./ Casting Spd. +$s7, Attribute Attack +$s8, P. Def. +$s9, M. Def. +$s10, Shield Defense/ Shield Defense Rate +$s11, Skill Cooldown -$s12, Skill MP Consumption -$s13, received Critical Rate from standard attacks/ M. skills -$s14. -->
+		<!-- A common buff for all Olympiad participants. For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Critical Rate/ M. Skill Critical Rate +$s4, Critical Damage for basic attacks +$s5, M. Skill Critical Damage +$s6, Atk. Spd./ Casting Spd. +$s7, Attribute Attack +$s8, P. Def. +$s9, M. Def. +$s10, Shield Defense/ Shield Defense Rate +$s11, Skill Cooldown -$s12, Skill MP Consumption -$s13, received Critical Rate from basic attacks/ M. skills -$s14. -->
 		<icon>icon.olympiad_buff</icon>
 		<abnormalType>BUFF_SPECIAL_CLASS</abnormalType>
 		<operateType>A2</operateType>
@@ -409,7 +409,7 @@
 		<reuseDelay>2000</reuseDelay>
 	</skill>
 	<skill id="32419" toLevel="1" name="Drum Melody - Olympiad">
-		<!-- Standard buff for all Olympiad participants. For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- A standard buff for all Olympiad participants. For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.olympiad_buff</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -433,7 +433,7 @@
 		<reuseDelay>2000</reuseDelay>
 	</skill>
 	<skill id="32422" toLevel="1" name="Olympiad's Harmony">
-		<!-- A common buff for all Olympiad participants. For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Critical Rate/ M. Skill Critical Rate +$s4, Critical Damage for standard attacks +$s5, M. Skill Critical Damage +$s6, Atk. Spd./ Casting Spd. +$s7, Attribute Attack +$s8, P. Def. +$s9, M. Def. +$s10, Shield Defense/ Shield Defense Rate +$s11, Skill Cooldown -$s12, Skill MP Consumption -$s13, received Critical Rate from standard attacks/ M. skills -$s14. -->
+		<!-- A common buff for all Olympiad participants. For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Critical Rate/ M. Skill Critical Rate +$s4, Critical Damage for basic attacks +$s5, M. Skill Critical Damage +$s6, Atk. Spd./ Casting Spd. +$s7, Attribute Attack +$s8, P. Def. +$s9, M. Def. +$s10, Shield Defense/ Shield Defense Rate +$s11, Skill Cooldown -$s12, Skill MP Consumption -$s13, received Critical Rate from basic attacks/ M. skills -$s14. -->
 		<icon>icon.olympiad_buff</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -448,7 +448,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32424" toLevel="1" name="Dark Spike">
-		<!-- Single Target Normal Magic Attack -->
+		<!-- A basic magic attack on a single target. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>900</castRange>
@@ -466,7 +466,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32426" toLevel="1" name="Blood Spike">
-		<!-- Single Target Normal Magic Attack -->
+		<!-- A basic magic attack on a single target. -->
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>900</castRange>
@@ -484,7 +484,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32428" toLevel="1" name="Dark Fatal Shot">
-		<!-- Single Target Powerful Physical Attack (Archer Type) -->
+		<!-- A physical attack on a single target (ranged). -->
 		<operateType>A1</operateType>
 		<castRange>1000</castRange>
 		<hitTime>2000</hitTime>
@@ -500,7 +500,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32430" toLevel="1" name="Blood Fatal Shot">
-		<!-- Single Target Powerful Physical Attack (Archer Type) -->
+		<!-- A physical attack on a single target (ranged). -->
 		<operateType>A1</operateType>
 		<castRange>1000</castRange>
 		<hitTime>2000</hitTime>
@@ -781,7 +781,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32462" toLevel="1" name="Void Crying">
-		<!-- Deals magic damage to the enemy and inflicts silence to prevent them from using skills for $s1 Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Deals magic damage to the enemy and inflicts silence to prevent them from using skills for $s1. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill1376</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -1671,7 +1671,7 @@
 		</effects>
 	</skill>
 	<skill id="32497" toLevel="2" name="Scale Fatal Slasher">
-		<!-- Powerful Physical Attack within Range -->
+		<!-- A ranged physical attack. -->
 		<operateType>A1</operateType>
 		<castRange>250</castRange>
 		<hitTime>1500</hitTime>
@@ -1680,7 +1680,7 @@
 		<effectPoint>-100</effectPoint>
 	</skill>
 	<skill id="32498" toLevel="2" name="Scale Floor">
-		<!-- Attacking abilities have been crippled by the scattering scales. Decreases Atk. Spd./ Casting Spd. by $s1, Speed by $s2. -->
+		<!-- Atk. Spd./ Casting Spd. -$s1, Speed -$s2. -->
 		<icon>icon.skill32498</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->

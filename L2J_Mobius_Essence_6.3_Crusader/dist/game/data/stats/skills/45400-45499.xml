@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="45400" toLevel="3" name="Wild Beat">
-		<!-- <Paralyzing Skill> Elven mesmerizing music. The effect lasts for $s1 The enemy is unable to move. Forces the target to move to you. -->
+		<!-- <Paralyzing skill> Elven mesmerizing music. The effect lasts for $s1 The enemy is unable to move. Forces the affected target to move to you. -->
 		<icon>icon.madness_beat</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -377,7 +377,7 @@
 		</effects>
 	</skill>
 	<skill id="45409" toLevel="1" name="Life Force Harmony">
-		<!-- Max HP $s1 Depending on current amount of HP, the following effects are applied. <HP 0-33%> P. Skill Power $s2 <HP 34-66%> P. Skill MP Consumption $s3 P. Skill Cooldown $s3 <67-100%> Received damage $s4 -->
+		<!-- Max HP $s1 Depending on current amount of HP, the following effects are applied. <HP 0-33%> P. Skill Power $s2 <HP 34-66%> P. Skill MP Consumption $s3 P. Skill Cooldown $s3 <67-100%> Received damage $s4 M. Def. $s5 -->
 		<icon>icon.orc_vitality0</icon>
 		<abnormalTime>-1</abnormalTime>
 		<magicLevel>80</magicLevel>
@@ -389,16 +389,16 @@
 				<mode>DIFF</mode>
 			</effect>
 			<effect name="TriggerSkillByHpPercent">
-				<skillId>45410</skillId>
+				<skillId>45410</skillId> <!-- Life Force Harmony -->
 				<percentTo>33</percentTo>
 			</effect>
 			<effect name="TriggerSkillByHpPercent">
-				<skillId>45411</skillId>
+				<skillId>45411</skillId> <!-- Life Force Harmony -->
 				<percentFrom>34</percentFrom>
 				<percentTo>66</percentTo>
 			</effect>
 			<effect name="TriggerSkillByHpPercent">
-				<skillId>45412</skillId>
+				<skillId>45412</skillId> <!-- Life Force Harmony -->
 				<percentFrom>67</percentFrom>
 			</effect>
 		</effects>
@@ -442,7 +442,7 @@
 		</effects>
 	</skill>
 	<skill id="45412" toLevel="1" name="Life Force Harmony">
-		<!-- Received damage $s1 -->
+		<!-- Received damage $s1 M. Def. $s2 -->
 		<icon>icon.orc_vitality3</icon>
 		<abnormalTime>-1</abnormalTime>
 		<abnormalType>LIFE_FORCE_HARMONY</abnormalType>
@@ -482,7 +482,7 @@
 		</effects>
 	</skill>
 	<skill id="45413" toLevel="1" name="Titan Champion">
-		<!-- P. Atk. $s1 P. Critical Rate $s2 P. Critical Damage $s3 P. Skill Critical Rate $s4 P. Skill Critical Damage $s5 Max HP $s5 Speed $s6 -->
+		<!-- P. Atk. $s1 P. Critical Rate $s2 P. Critical Damage $s3 P. Skill Critical Rate $s4 P. Skill Critical Damage $s5 Knockback Atk. Rate $s1 Max HP $s5 Speed $s6 -->
 		<icon>icon.champion_of_titan</icon>
 		<effectPoint>100</effectPoint>
 		<abnormalLevel>3</abnormalLevel>
@@ -527,7 +527,7 @@
 		</effects>
 	</skill>
 	<skill id="45414" toLevel="1" name="Titanic Weapon">
-		<!-- P. Atk. $s1 When the Demolition Impact skill is used: A chance to deal an extra attack. When using a two-handed sword/ blunt weapon: Attack range increased. P. Atk. $s2 Atk. Spd. $s3 P. Accuracy $s4 -->
+		<!-- P. Atk. $s1 Max HP $s5 Dagger Resistance $s6 When the Demolition Impact skill is used: A certain chance to deal <font color="FFBB00">additional attacks</font>. (Trigger cooldown: 10 sec.) When using a two-handed sword/ blunt weapon: Attack range increased. P. Atk. $s2 Atk. Spd. $s3 P. Accuracy $s4 -->
 		<icon>icon.gigantic_weapon</icon>
 		<effectPoint>100</effectPoint>
 		<abnormalLevel>7</abnormalLevel>
@@ -582,7 +582,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45416" toLevel="6" name="Titanic Sweep">
-		<!-- Attacks the enemy with $s1 power. Ignores Shield Defense. Critical. -->
+		<!-- Attacks nearby enemies with $s1 power. Ignores $s2 of their defense. Critical. -->
 		<icon>icon.gigantic_swing</icon>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>
@@ -751,7 +751,7 @@
 		</effects>
 	</skill>
 	<skill id="45421" toLevel="1" name="Rabbit Nature">
-		<!-- Atk. Spd. $s1 Speed $s2 -->
+		<!-- Atk. Spd. $s1 Speed $s2 P. Skill Cooldown $s3 Debuff Resistance $s4 Anomaly Resistance $s5 -->
 		<icon>icon.totem_spirit_rabbit</icon>
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<abnormalLevel>1</abnormalLevel>
@@ -779,7 +779,7 @@
 		</effects>
 	</skill>
 	<skill id="45422" toLevel="1" name="Ogre Nature">
-		<!-- Reflects $s1 of the received damage. -->
+		<!-- Protects from enemy's attack once. -->
 		<icon>icon.totem_spirit_ogre</icon>
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<abnormalLevel>1</abnormalLevel>
@@ -932,7 +932,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="45425" toLevel="4" name="Armor Break">
-		<!-- <Suppression Skill> There is a certain chance to remove $s2 piece of enemy's armor. Speed $s1 Pet armor cannot be removed. -->
+		<!-- <Suppression Skill> Target's Speed $s1 <Special effects> There is a certain chance to remove 1 piece of enemy's armor. Debuff/ Anomaly Resistance doesn't affects the effect. Pet armor cannot be removed. -->
 		<icon>icon.force_breaker</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -976,7 +976,6 @@
 		</effects>
 	</skill>
 	<skill id="45435" toLevel="1" name="Totem of the Fallen">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -991,7 +990,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45439" toLevel="1" name="Cacophony of War">
-		<!-- <Fear Skill> Inflicts Fear on nearby enemies for 3 sec. and brands them with a mark. If the marked target is attacked within a certain period of time, it is dead. Note! Your Speed -30. If there are no targets for killing for a certain period of time, your HP and CP will drop to 1. -->
+		<!-- <Fear Skill> Inflicts Fear on nearby enemies for 3 sec. and, with a certain chance, brands them with a mark. If the marked target takes 3000 or more dagame within 10 sec., their recovery effects are limited for a while, and their HP/ CP drops to 1. The mark is red and shines above the target's head. -->
 		<icon>icon.war_roar</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -1023,13 +1022,13 @@
 			<effect name="BlockControl" />
 			<effect name="Fear" />
 			<effect name="CallSkill">
-				<skillId>45440</skillId> <!-- Stigma of Death -->
+				<skillId>45440</skillId> <!-- Cacophony of War - Mark -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="45440" toLevel="1" name="Cacophony of War - Mark">
-		<!-- When the character using the Cacophony of War skill is attacked, HP and CP drop to 1. -->
+		<!-- If a caster using the Cacophony of War skill takes 3000 or more damage, their recovery effects are limited for a while, and HP and CP drop to 1. -->
 		<icon>icon.war_roar</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -1057,12 +1056,11 @@
 		</effects>
 	</skill>
 	<skill id="45441" toLevel="1" name="Cacophony of War">
-		<!-- If the marked target is attacked within a certain period of time, it is dead. Note! Your Speed -30. If there are no targets for killing for a certain period of time, your HP and CP will drop to 1. -->
+		<!-- If the marked enemy takes 3000 or more damage within a certain period of time, their recovery effects are limited for a while, and HP/ CP drop to 1. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="45442" toLevel="1" name="Cacophony of War">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -1181,7 +1179,7 @@
 		</effects>
 	</skill>
 	<skill id="45449" toLevel="1" name="Debuff Master">
-		<!-- The effect lasts for $s1 Enhances the following skills: Seal of Despair Seal of Silence Infection Seal -->
+		<!-- For $s1, for the following skills Enhances debuffs. Increases a trigger chance. Decreases Skill Cooldown. <Seal of Despair> <Seal of Silence> <Infection Seal> -->
 		<icon>icon.debuff_master</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -1437,7 +1435,7 @@
 		</effects>
 	</skill>
 	<skill id="45453" toLevel="1" name="Flame Burst">
-		<!-- <Infection skill> Deals magic damage with $s1 power.For $s2, drains enemies' HP/ MP. The amount of drained HP depends on the character's M. Atk. -->
+		<!-- <Infection Skill> Deals damage to the target and nearby enemies with $s1 power. For $s2, drains enemies' HP/ MP. The amount of drained HP depends on the character's M. Atk. The effect is enhanced if the skill is used against one target (only once). -->
 		<icon>icon.flame_blast</icon>
 		<affectLimit>6-12</affectLimit>
 		<affectRange>200</affectRange>
@@ -1504,7 +1502,7 @@
 		</effects>
 	</skill>
 	<skill id="45455" toLevel="1" name="Team Building">
-		<!-- The target is unable to do anything for $s1 In $s2, the target is teleported to the selected place together with their party members. For $s3, creates a shield protecting the teleported party members. Note! The caster cannot move while casting. Cannot be used during sieges. -->
+		<!-- The target is unable to do anything for $s1 The target is teleported to the selected place together with their party members. For $s2, creates a shield protecting the teleported party members. Note! Cannot be used during sieges. -->
 		<icon>icon.party_unite</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1</abnormalTime>
@@ -1599,7 +1597,7 @@
 		</effects>
 	</skill>
 	<skill id="45458" toLevel="1" name="Blood Bond">
-		<!-- <Drain skill> Attacks enemies with magic. Power $s1. Inflicts the Curse Blood debuff. Makes an additional attack if Curse Blood is applied $s2. Absorbs $s3 of the damage as HP. -->
+		<!-- <Drain skill> Attacks enemies with magic. Power $s1. Inflicts the Blood Curse debuff. Makes an additional attack if Blood Curse is applied $s2. Absorbs $s3 of the damage as HP. -->
 		<icon>icon.blood_link</icon>
 		<castRange>700</castRange>
 		<affectLimit>9-10</affectLimit>
@@ -1624,13 +1622,13 @@
 		</effects>
 		<pveEffects>
 			<effect name="CallSkill">
-				<skillId>45459</skillId> <!-- Curse Blood -->
+				<skillId>45459</skillId> <!-- Blood Curse -->
 				<skillLevel>3</skillLevel>
 			</effect>
 		</pveEffects>
 	</skill>
 	<skill id="45459" toLevel="3" name="Blood Curse">
-		<!-- An effect from the Blood Chain skill. If applied $s1, the target gets additional damage. -->
+		<!-- An effect from the Blood Bond skill. If applied $s1, the target gets additional damage. -->
 		<icon>icon.blood_link1</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1693,7 +1691,7 @@
 		</effects>
 	</skill>
 	<skill id="45461" toLevel="1" name="Cold Flames">
-		<!-- <Infection skill> Deals magic damage with $s1 power. For $s2, drains enemies' HP/ MP. The amount of drained HP depends on the character's M. Atk. -->
+		<!-- <Infection Skill> Deals damage to the target with $s1 power. For $s2, drains the enemy's HP/ MP. The amount of drained HP depends on the character's M. Atk. The effect is enhanced if the skill is used against one target (only once). -->
 		<icon>icon.cold_flame</icon>
 		<castRange>700</castRange>
 		<effectRange>1100</effectRange>
@@ -1851,7 +1849,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="45475" toLevel="1" name="Expand Head Accessory Slots">
-		<!-- Gives an additional hair accessory slot. -->
+		<!-- Opens the right head accessory slot. -->
 		<icon>icon.lv_benefit_hair</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -2002,7 +2000,6 @@
 		</effects>
 	</skill>
 	<skill id="45479" toLevel="8" name="Focus Force">
-		<!-- Channels Momentum. Can be charged up to Lv. $s1. -->
 		<icon>icon.skill0050</icon>
 		<effectPoint>150</effectPoint>
 		<hitTime>900</hitTime>
@@ -2057,7 +2054,7 @@
 		</effects>
 	</skill>
 	<skill id="45480" toLevel="9" name="Lightning Strike">
-		<!-- <Paralyzing Skill> A powerful lightning strike. Attacks the target with $s1 power. Paralyzes for $s2 Critical. -->
+		<!-- A lightning strike inflicts Paralysis. -->
 		<icon>icon.skill0279</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2093,7 +2090,7 @@
 		</effects>
 	</skill>
 	<skill id="45481" toLevel="5" name="Mass Lightning Strike">
-		<!-- <Paralyzing skill> A powerful lightning strike. Attacks the target and nearby enemies with $s1 power. Paralyzes for $s2 Critical. -->
+		<!-- A lightning strike inflicts Paralysis. -->
 		<icon>icon.skll10094</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2129,7 +2126,7 @@
 		</effects>
 	</skill>
 	<skill id="45482" toLevel="4" name="Full Knockdown">
-		<!-- <Knockback skill> Attacks the target with $s1 power, knocking them down for $s2 Ignores Shield Defense. Critical. -->
+		<!-- Knocked down by a powerful blow. -->
 		<icon>icon.skill1896</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2169,7 +2166,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="45484" toLevel="45" name="Power Break">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 Ignores Shield Defense. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0260</icon>
 		<castRange>40</castRange>
 		<abnormalLevel>1</abnormalLevel>
@@ -2241,7 +2238,7 @@
 		</effects>
 	</skill>
 	<skill id="45485" toLevel="45" name="Iron Fist">
-		<!-- <Shock skill> Attacks the enemy with a powerful blow. Power $s1. Stuns for $s2 Ignores Shield Defense. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0281</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2312,7 +2309,7 @@
 		</effects>
 	</skill>
 	<skill id="45486" toLevel="60" name="Shield Stun">
-		<!-- <Shock skill> Attacks the enemy with the shield. Power $s1. Stuns for $s2 -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2397,7 +2394,7 @@
 		</effects>
 	</skill>
 	<skill id="45487" toLevel="10" name="Shield Bash">
-		<!-- <Shock skill> Attacks the enemy with the shield. Power $s1. Stuns for $s2 -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0352</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2452,7 +2449,7 @@
 		</effects>
 	</skill>
 	<skill id="45488" toLevel="9" name="Shield Charge">
-		<!-- <Shock skill> Attacks the enemy with the shield. Power $s1. Stuns the enemies affected by the skill for $s2 -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill1898</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2488,7 +2485,7 @@
 		</effects>
 	</skill>
 	<skill id="45489" toLevel="3" name="Shocking Burst">
-		<!-- P. Def. $s1 M. Def. $s2. -->
+		<!-- P. Def. $s1 M. Def. $s2 -->
 		<icon>icon.skill1564</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2570,7 +2567,7 @@
 		</effects>
 	</skill>
 	<skill id="45491" toLevel="13" name="Quick Spear">
-		<!-- <Shock skill> Attacks the target and nearby enemies with $s1 power. Stuns for $s2 Ignores Shield Defense. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill1606</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2611,7 +2608,7 @@
 		</effects>
 	</skill>
 	<skill id="45492" toLevel="12" name="Body Crush">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 With a certain chance, removes up to $s3 buff(s) from the target. Ignores Shield Defense. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill1613</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -2640,7 +2637,7 @@
 		</effects>
 	</skill>
 	<skill id="45493" toLevel="11" name="Armor Crush">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 P./ M. Def. -$s3 Ignores Shield Defense. Critical. -->
+		<!-- P. Def. $s1 M. Def. $s2 -->
 		<icon>icon.skill0362</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2682,7 +2679,7 @@
 		</effects>
 	</skill>
 	<skill id="45494" toLevel="11" name="Armor Crush">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 P./ M. Def. -$s3 Ignores Shield Defense. Critical. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0362</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2719,7 +2716,7 @@
 		</effects>
 	</skill>
 	<skill id="45495" toLevel="48" name="Stun Shot">
-		<!-- <Shock skill> A stunning shot that deals damage to the target with $s1 power. Stuns for $s2 -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0101</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2792,7 +2789,7 @@
 		</effects>
 	</skill>
 	<skill id="45496" toLevel="45" name="Sonic Blaster">
-		<!-- <Shock skill> Attacks the enemy with $s1 power. Stuns for $s2 Increases power upon consuming Momentum. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0006</icon>
 		<castRange>600</castRange>
 		<abnormalLevel>1</abnormalLevel>
@@ -2862,7 +2859,7 @@
 		</effects>
 	</skill>
 	<skill id="45497" toLevel="55" name="Thunder Storm">
-		<!-- <Shock skill> Attacks nearby enemies with $s1 power. Stuns for $s2 Ignores Shield Defense. Critical. -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0048</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -2951,7 +2948,7 @@
 		</effects>
 	</skill>
 	<skill id="45498" toLevel="55" name="Amazing Thunder Storm">
-		<!-- <Shock skill> Attacks nearby enemies with $s1 power. Stuns for $s2 Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. -->
+		<!-- Cannot move due to shock. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
 		<abnormalType>STUN</abnormalType>

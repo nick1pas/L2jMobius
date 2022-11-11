@@ -94,7 +94,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="40">
-						<item id="20590" count="1" /> <!-- Package: Summon of Love Bracelet (24-hour) - Event -->
+						<item id="20590" count="1" /> <!-- Package: Love Bracelet (24-hour) - Event -->
 					</item>
 					<item chance="60">
 						<item id="9207" count="1" /> <!-- Quick HP Replenishing Potion - Event -->
@@ -286,7 +286,7 @@
 						<item id="20714" count="1" /> <!-- Red Devil Mask (Event) - Skooldie's Blessing: Protection of Darkness / 2-hour -->
 					</item>
 					<item chance="20">
-						<item id="20715" count="1" /> <!-- Mummy Mask (Event) - Skooldie's Blessing: Protection of Darkness / 2-hour -->
+						<item id="20715" count="1" /> <!-- Mummy Mask - Event - Skooldie's Blessing: Protection of Darkness / 2-hour -->
 					</item>
 					<item chance="20">
 						<item id="20716" count="1" /> <!-- Alien Mask (Event) - Skooldie's Blessing: Protection of Darkness / 2-hour -->
@@ -322,7 +322,7 @@
 						<item id="20719" count="1" /> <!-- Shiny Shriek Mask - Event - Blessing of Halloween / 4-hour -->
 					</item>
 					<item chance="20">
-						<item id="20720" count="1" /> <!-- Shiny Red Devil Mask (Event) - Blessing of Halloween / 4-hour -->
+						<item id="20720" count="1" /> <!-- Shiny Red Devil Mask - Event - Blessing of Halloween / 4-hour -->
 					</item>
 					<item chance="20">
 						<item id="20721" count="1" /> <!-- Shiny Mummy Mask - Event - Blessing of Halloween / 4-hour -->
@@ -861,7 +861,7 @@
 		</conditions>
 		<effects>
 			<effect name="SummonNpc">
-				<npcId>127</npcId> <!-- Kotatz -->
+				<npcId>127</npcId> <!-- Kotatsu -->
 				<npcCount>1</npcCount>
 				<despawnDelay>7200</despawnDelay>
 			</effect>
@@ -1529,7 +1529,7 @@
 		</effects>
 	</skill>
 	<skill id="22153" toLevel="1" name="Love for All Seasons Wild Magic">
-		<!-- For 1 h., increases by 2 the occurrence rate of damage that is caused by magic damage. -->
+		<!-- For 1 h., M. Critical Rate +2. -->
 		<icon>BranchSys.icon.br_taiwan_newyear_food_a_i00</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1712,7 +1712,7 @@
 		</effects>
 	</skill>
 	<skill id="22159" toLevel="1" name="Vesper's Mighty Power">
-		<!-- For 10 min., increases P. Atk. by 15%, M. Atk. by 20%, and Speed by 10. -->
+		<!-- For 10 min., P. Atk. +15%, M. Atk. +20%, Speed +10. -->
 		<icon>BranchSys2.icon.br_royal_crown_of_vesper_i00</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>
@@ -1784,7 +1784,7 @@
 		</effects>
 	</skill>
 	<skill id="22161" toLevel="1" name="Invincible Vesper">
-		<!-- For 10 min., increases Atk. Spd. by 20%, Casting Spd. by 20%, and Speed by 20. -->
+		<!-- For 10 min., Atk. Spd. +20%, Casting Spd. +20%, Speed +20. -->
 		<icon>BranchSys2.icon.br_noblesse_oblige_of_vesper_i00</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>
@@ -2545,7 +2545,7 @@
 		</effects>
 	</skill>
 	<skill id="22183" toLevel="1" name="Transformation Scroll: Dragon Master Lee">
-		<!-- Transforms into Dragon Master Lee. -->
+		<!-- Transformation into Dragon Master Lee. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
@@ -2571,7 +2571,7 @@
 		</effects>
 	</skill>
 	<skill id="22184" toLevel="1" name="Transformation Scroll: Dragon Master Karin">
-		<!-- Transforms into Dragon Master Karin. -->
+		<!-- Transformation into Dragon Master Karin. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
@@ -2718,7 +2718,7 @@
 		</conditions>
 	</skill>
 	<skill id="22192" toLevel="1" name="Transformation Scroll: Doom Wraith">
-		<!-- Transforms into a Doom Wraith. -->
+		<!-- Transformed into Doom Wraith. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -2741,7 +2741,7 @@
 		</conditions>
 	</skill>
 	<skill id="22193" toLevel="1" name="Transformation Scroll: Grail Apostle">
-		<!-- Transforms into a Grail Apostle. -->
+		<!-- Transformed into Grail Apostle. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -2764,7 +2764,7 @@
 		</conditions>
 	</skill>
 	<skill id="22194" toLevel="1" name="Transformation Scroll: Unicorn">
-		<!-- Transforms into a Unicorn. -->
+		<!-- Transformed into Unicorn. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -2787,7 +2787,7 @@
 		</conditions>
 	</skill>
 	<skill id="22195" toLevel="1" name="Transformation Scroll: Lilim Knight">
-		<!-- Transforms into a Lilim Knight. -->
+		<!-- Transformed into Lilim Knight. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -2810,7 +2810,7 @@
 		</conditions>
 	</skill>
 	<skill id="22196" toLevel="1" name="Transformation Scroll: Golem Guardian">
-		<!-- Transforms into a Golem Guardian. -->
+		<!-- Transformed into Golem Guardian. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -2833,7 +2833,7 @@
 		</conditions>
 	</skill>
 	<skill id="22197" toLevel="1" name="Transformation Scroll: Inferno Drake">
-		<!-- Transforms into an Inferno Drake. -->
+		<!-- Transformed into Inferno Drake. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -2879,7 +2879,7 @@
 		</conditions>
 	</skill>
 	<skill id="22199" toLevel="1" name="Transformation Scroll: Heretic">
-		<!-- Transforms into a Heretic. -->
+		<!-- Transformed into Heretic. -->
 		<icon>icon.skilltransform1</icon>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>

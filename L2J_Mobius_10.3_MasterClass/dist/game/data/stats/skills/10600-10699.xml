@@ -78,7 +78,7 @@
 		</effects>
 	</skill>
 	<skill id="10608" toLevel="5" name="Superior Haste">
-		<!-- P. Skill Cooldown -$s1, Infection Atk. Rate +$s2. Also doubles the duration of Shadow Dash. -->
+		<!-- P. Skill Cooldown -$s1, Infection Atk. Rate +$s2. Doubles the duration of Shadow Dash. -->
 		<icon>icon.skill10608</icon>
 		<magicLevel>
 			<value level="1">85</value>
@@ -128,7 +128,7 @@
 	</skill>
 	
 	<skill id="10609" toLevel="2" name="Chance of Wind">
-		<!-- For $s1, P. Skill Power +$s2, Vital Point Attack Rate +$s3, Critical Damage/ Rate for standard attacks from the flanks +$s4, Critical Damage/ Rate for standard attacks after backstab +$s5, Critical Damage for standard attacks at the front -$s6. Requires a dagger or dual daggers. -->
+		<!-- For $s1, P. Skill Power +$s2, Vital Point Attack Rate +$s3, Critical Rate/ Damage for basic attacks from the flanks +$s4, Critical Rate/ Damage for basic attacks from behind +$s5, Critical Damage for basic attacks at the front -$s6. Requires a dagger or dual daggers. -->
 		<icon>icon.skill10878</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
@@ -208,7 +208,7 @@
 		</effects>
 	</skill>
 	<skill id="10610" toLevel="1" name="Critical Expansions">
-		<!-- Increases the maximum value of P. Critical Rate. Additionally, Critical Damage for standard attacks +$s1. Requires a dagger or dual daggers. -->
+		<!-- Increases the maximum value of P. Critical Rate. Additionally, Critical Damage for basic attacks +$s1. Requires a dagger or dual daggers. -->
 		<icon>icon.skill0819</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -317,7 +317,7 @@
 		</effects>
 	</skill>
 	<skill id="10655" toLevel="5" name="Brutal Stab Expert">
-		<!-- P. Atk. +$s1, Critical Damage for standard attacks +$s2. -->
+		<!-- P. Atk. +$s1, Critical Damage for basic attacks +$s2. -->
 		<icon>icon.skill10655</icon>
 		<magicLevel>
 			<value level="1">85</value>
@@ -351,7 +351,7 @@
 		</effects>
 	</skill>
 	<skill id="10656" toLevel="2" name="Shadow Hunter">
-		<!-- For $s1, P. Skill Power +$s2, Vital Point Attack Rate +$s3, Critical Damage/ Rate for standard attacks from the flanks +$s4, Critical Damage/ Rate for standard attacks after backstab +$s5, Critical Damage for standard attacks +$s6, Critical Damage for standard attacks at the front -$s7. Requires a dagger or dual daggers. -->
+		<!-- For $s1, P. Skill Power +$s2, Vital Point Attack Rate +$s3, Critical Rate/ Damage for basic attacks from the flanks +$s4, Critical Rate for basic attacks from behind +$s5, Critical Damage for basic attacks from behind +$s6, Critical Damage for basic attacks at the front -$s7. Requires a dagger or dual daggers. -->
 		<icon>icon.skill10656</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>

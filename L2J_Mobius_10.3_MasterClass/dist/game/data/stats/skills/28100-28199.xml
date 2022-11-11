@@ -40,7 +40,7 @@
 		</effects>
 	</skill>
 	<skill id="28101" toLevel="12" name="Scorpion's Mass Exile">
-		<!-- Banishes enemies near target into another dimension. They become immobile and invincible against debuffs, skills, and standard attacks, and lose $s1 HP/ second. -->
+		<!-- Banishes enemies near the target into another dimension. The exiled enemies cannot move, attack and use skills, they also become immune to debuffs. The enemies' HP -$s1 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_oct_i00</icon>
 		<operateType>A2</operateType>
 		<trait>DEPORT</trait>
@@ -113,7 +113,7 @@
 		</effects>
 	</skill>
 	<skill id="28102" toLevel="12" name="Mass Binding Flood">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 Every sec. HP -$s2. -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 HP -$s2 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_jan_i00</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -179,7 +179,7 @@
 		</effects>
 	</skill>
 	<skill id="28103" toLevel="12" name="Slippery Scale">
-		<!-- For $s1, blocks $s2 debuff attack(s). -->
+		<!-- For $s1, blocks debuffs (up to $s2). -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_feb_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>200</hitTime>
@@ -663,7 +663,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13591</npcId> <!-- Greater Agathion Virgo Charm -->
+				<npcId>13591</npcId> <!-- Greater Agathion Charm: Virgo -->
 			</effect>
 		</effects>
 	</skill>
@@ -678,7 +678,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13592</npcId> <!-- Greater Agathion Capricorn Charm -->
+				<npcId>13592</npcId> <!-- Greater Agathion Charm: Capricorn -->
 			</effect>
 		</effects>
 	</skill>
@@ -693,7 +693,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13593</npcId> <!-- Greater Agathion Libra Charm -->
+				<npcId>13593</npcId> <!-- Greater Agathion Charm: Libra -->
 			</effect>
 		</effects>
 	</skill>
@@ -708,7 +708,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13594</npcId> <!-- Greater Agathion Aries Charm -->
+				<npcId>13594</npcId> <!-- Greater Agathion Charm: Aries -->
 			</effect>
 		</effects>
 	</skill>
@@ -723,7 +723,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13595</npcId> <!-- Greater Agathion Taurus Charm -->
+				<npcId>13595</npcId> <!-- Greater Agathion Charm: Taurus -->
 			</effect>
 		</effects>
 	</skill>
@@ -738,7 +738,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13596</npcId> <!-- Greater Agathion Leo Charm -->
+				<npcId>13596</npcId> <!-- Greater Agathion Charm: Leo -->
 			</effect>
 		</effects>
 	</skill>
@@ -753,7 +753,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13597</npcId> <!-- Greater Agathion Gemini Charm -->
+				<npcId>13597</npcId> <!-- Greater Agathion Charm: Gemini -->
 			</effect>
 		</effects>
 	</skill>
@@ -768,7 +768,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13598</npcId> <!-- Greater Agathion Scorpio Charm -->
+				<npcId>13598</npcId> <!-- Greater Agathion Charm: Scorpio -->
 			</effect>
 		</effects>
 	</skill>
@@ -783,7 +783,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13599</npcId> <!-- Greater Agathion Aquarius Charm -->
+				<npcId>13599</npcId> <!-- Greater Agathion Charm: Aquarius -->
 			</effect>
 		</effects>
 	</skill>
@@ -798,7 +798,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13600</npcId> <!-- Greater Agathion Pisces Charm -->
+				<npcId>13600</npcId> <!-- Greater Agathion Charm: Pisces -->
 			</effect>
 		</effects>
 	</skill>
@@ -813,7 +813,7 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13601</npcId> <!-- Greater Agathion Sagittarius Charm -->
+				<npcId>13601</npcId> <!-- Greater Agathion Charm: Sagittarius -->
 			</effect>
 		</effects>
 	</skill>
@@ -828,12 +828,12 @@
 		<targetScope>SINGLE</targetScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>13602</npcId> <!-- Greater Agathion Cancer Charm -->
+				<npcId>13602</npcId> <!-- Greater Agathion Charm: Cancer -->
 			</effect>
 		</effects>
 	</skill>
 	<skill id="28142" toLevel="10" name="Sayha's Talisman">
-		<!-- P. Def. +$s1, M. Def. +$s2, Acquired XP/ SP +$s3. -->
+		<!-- P. Def. +$s1, M. Def. +$s2, acquired XP/ SP +$s3. -->
 		<icon>icon.bm_sayhas_talisman</icon>
 		<operateType>P</operateType>
 		<targetType>SELF</targetType>
@@ -1002,7 +1002,7 @@
 		</effects>
 	</skill>
 	<skill id="28144" toLevel="4" name="Sayha's Grace">
-		<!-- For $s1, Received Damage -$s2. Cannot be stacked with active skills of other talismans. <The character is targeted automatically> -->
+		<!-- For $s1, received damage -$s2. The effect doesn't stack with active skills of other talismans. <You are targeted automatically> -->
 		<icon>
 			<value level="1">icon.sayhas_talisman_g_Lv1</value>
 			<value level="2">icon.sayhas_talisman_g_Lv2</value>
@@ -1070,7 +1070,7 @@
 		</effects>
 	</skill>
 	<skill id="28145" toLevel="4" name="Sayha's Encouragement">
-		<!-- For $s1, PvE Damage +$s2. Cannot be stacked with active skills of other talismans. <The character is targeted automatically> -->
+		<!-- For $s1, PvE damage +$s2. The effect doesn't stack with active skills of other talismans. <You are targeted automatically> -->
 		<icon>
 			<value level="1">icon.sayhas_talisman_pve_Lv1</value>
 			<value level="2">icon.sayhas_talisman_pve_Lv2</value>
@@ -1134,7 +1134,7 @@
 		</effects>
 	</skill>
 	<skill id="28146" toLevel="4" name="Sayha's Anger">
-		<!-- For $s1, PvP Damage +$s2. Cannot be stacked with active skills of other talismans. <The character is targeted automatically> -->
+		<!-- For $s1, PvP damage +$s2. The effect doesn't stack with active skills of other talismans. <You are targeted automatically> -->
 		<icon>
 			<value level="1">icon.sayhas_talisman_pvp_Lv1</value>
 			<value level="2">icon.sayhas_talisman_pvp_Lv2</value>
@@ -1193,7 +1193,7 @@
 		</effects>
 	</skill>
 	<skill id="28147" toLevel="3" name="Sayha's Support">
-		<!-- Recovers HP by $s1, MP by $s2, and CP by $s3. -->
+		<!-- Momentarily recovers $s1 HP, $s2 MP, $s3 CP. -->
 		<icon>icon.bm_sayhas_talisman</icon>
 		<operateType>A1</operateType>
 		<isMagic>2</isMagic>
@@ -1253,7 +1253,7 @@
 		<effectPoint>100</effectPoint>
 	</skill>
 	<skill id="28151" toLevel="4" name="Halloween Blessing">
-		<!-- Rico's Halloween buff. Acquired XP/ SP +$s1, P./ M. Atk. +$s2, Received Damage -$s3. You can receive a Halloween gift once the buff expires. -->
+		<!-- Rico's Halloween buff. Acquired XP/ SP while hunting +$s1, P./ M. Atk. +$s2, received damage -$s3. There is a chance to obtain Halloween Gift once the buff expires. -->
 		<icon>icon.event_halloween_pumpkin_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1303,7 +1303,7 @@
 						<item id="23833" count="1" /> <!-- Talisman of Abundance - War -->
 					</item>
 					<item chance="7.45">
-						<item id="23835" count="1" /> <!-- Talisman of Abundance - Morale -->
+						<item id="23835" count="1" /> <!-- Talisman of Abundance - Esprit -->
 					</item>
 					<item chance="7.45">
 						<item id="23834" count="1" /> <!-- Talisman of Abundance - Tactics -->
@@ -1324,7 +1324,7 @@
 						<item id="26341" count="1" /> <!-- High-grade Talisman of Abundance Lv. 4 -->
 					</item>
 					<item chance="7.45">
-						<item id="23839" count="1" /> <!-- Talisman of Conquerer - Abundance -->
+						<item id="23839" count="1" /> <!-- Talisman of Conqueror - Abundance -->
 					</item>
 					<item chance="7.45">
 						<item id="23837" count="1" /> <!-- Talisman of Hunter - Abundance -->
@@ -1333,7 +1333,7 @@
 						<item id="23840" count="1" /> <!-- Talisman of Outlaw - Abundance -->
 					</item>
 					<item chance="7.45">
-						<item id="23838" count="1" /> <!-- Talisman of Slaughterer - Abundance -->
+						<item id="23838" count="1" /> <!-- Talisman of Soultaker - Abundance -->
 					</item>
 				</items>
 			</effect>
@@ -1370,7 +1370,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="28161" toLevel="1" name="Match Girls' Gratitude">
-		<!-- For $s1, XP/ SP +$s2, Vitality Status Acquired XP/ SP +$s3, P./ M. Atk. And P./ M. Def. +$s4. -->
+		<!-- For $s1, acquired XP/ SP +$s2, Vitality bonus +$s3, P. Atk./ M. Atk./ P. Def./ M. Def. +$s4. -->
 		<icon>icon.etc_candle_white_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1396,21 +1396,21 @@
 		<castRange>1200</castRange>
 	</skill>
 	<skill id="28164" toLevel="1" name="Freya's Charisma Potion">
-		<!-- Changes the appearance to that of a cat doll, and CHA +$s2 for $s1 Cannot be stacked with Einhasad's CHA Potion or Maphr's Luck Potion. Cooldown is 5 min. Effect remains after death. Cannot be used in the Olympiad. -->
+		<!-- Changes the appearance to that of a cat doll for $s1 CHA +$s2. The effect does not stack with those of Einhasad's Charisma Potion or Maphr's Luck Potion. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.bm_freya_charisma_potion1</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>300000</reuseDelay>
 	</skill>
 	<skill id="28165" toLevel="1" name="Freya's Charisma Potion">
-		<!-- Changes the appearance to that of a panda doll, and CHA +$s2 for $s1 Cannot be stacked with Einhasad's CHA Potion or Maphr's Luck Potion. Cooldown is 5 min. Effect remains after death. Cannot be used in the Olympiad. -->
+		<!-- Changes the appearance to that of a panda doll for $s1 CHA +$s2. The effect does not stack with those of Einhasad's Charisma Potion or Maphr's Luck Potion. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
 		<icon>icon.bm_freya_charisma_potion1</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>300000</reuseDelay>
 	</skill>
 	<skill id="28166" toLevel="1" name="Freya's Shopping Bag">
-		<!-- Double-click Freya's Heart-pounding Shopping Bag to obtain 1 Freya's Wind Scroll and 2 Freya's Recovery Potion. There is also a chance to additionally obtain one a Freya, Sirra, or Snowman Winter Card. -->
+		<!-- Double-click to obtain Freya's Frozen Scroll. There is also a chance to additionally obtain one of the following items: Freya's/ Sirra's/ Snowman's Winter Card. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -1456,40 +1456,40 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="8.33333333">
-						<item id="24153" count="1" /> <!-- Mid-grade Agathion Gemini Box -->
+						<item id="24153" count="1" /> <!-- High-grade Agathion Virgo Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24156" count="1" /> <!-- Mid-grade Agathion Libra Box -->
+						<item id="24156" count="1" /> <!-- High-grade Agathion Capricorn Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24159" count="1" /> <!-- Mid-grade Agathion Aquarius Box -->
+						<item id="24159" count="1" /> <!-- High-grade Agathion Libra Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24162" count="1" /> <!-- Mid-grade Agathion Virgo Box -->
+						<item id="24162" count="1" /> <!-- High-grade Agathion Aries Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24165" count="1" /> <!-- Mid-grade Agathion Capricorn Box -->
+						<item id="24165" count="1" /> <!-- High-grade Agathion Taurus Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24168" count="1" /> <!-- Mid-grade Agathion Leo Box -->
+						<item id="24168" count="1" /> <!-- High-grade Agathion Leo Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24171" count="1" /> <!-- Mid-grade Agathion Aries Box -->
+						<item id="24171" count="1" /> <!-- High-grade Agathion Gemini Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24174" count="1" /> <!-- Mid-grade Agathion Cancer Box -->
+						<item id="24174" count="1" /> <!-- High-grade Agathion Scorpio Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24177" count="1" /> <!-- Mid-grade Agathion Pisces Box -->
+						<item id="24177" count="1" /> <!-- High-grade Agathion Aquarius Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24180" count="1" /> <!-- Mid-grade Agathion Scorpio Box -->
+						<item id="24180" count="1" /> <!-- High-grade Agathion Pisces Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24183" count="1" /> <!-- Mid-grade Agathion Sagittarius Box -->
+						<item id="24183" count="1" /> <!-- High-grade Agathion Sagittarius Box -->
 					</item>
 					<item chance="8.33333333">
-						<item id="24186" count="1" /> <!-- Mid-grade Agathion Taurus Box -->
+						<item id="24186" count="1" /> <!-- High-grade Agathion Cancer Box -->
 					</item>
 				</items>
 			</effect>
@@ -1643,7 +1643,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="28185" toLevel="1" name="Master's Fishing Potion">
-		<!-- For $s1, Acquired XP/ SP +$s2 when fishing succeeds. Effect remains after death and cannot be forcefully deleted. -->
+		<!-- For $s1, acquired XP/ SP while fishing +$s2. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>BranchIcon.etc_sign_agathion_feed_blue_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1654,7 +1654,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="28187" toLevel="1" name="Shining Fishing Box">
-		<!-- Double click to obtain a random item. -->
+		<!-- Double-click to obtain a random item. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -1678,7 +1678,7 @@
 		<effectPoint>379</effectPoint>
 	</skill>
 	<skill id="28191" toLevel="1" name="Ultimate Fortune Jewelry Box">
-		<!-- Double click to obtain one of Lucky Jewel Boxes. -->
+		<!-- Double-click to obtain one of Jewel Lucky Chests. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -1709,7 +1709,7 @@
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="28196" toLevel="3" name="Honey Vitality Beer">
-		<!-- CON/ MEN/ LUC/ CHA $s2 for $s1 If additional Honey Vitality Beer is used while the Buff is still in effect, the buff will stack up to Lv. 3. Can be used wth Fish Stew. -->
+		<!-- For $s1, CON/ MEN/ LUC/ CHA $s2. Using additional Honey Vitality Beer items while the buff is active enables up to Lv. 3 stacked effects. -->
 		<icon>
 			<value level="1">icon.bm_royal_honey_beer_lv1</value>
 			<value level="2">icon.bm_royal_honey_beer_lv2</value>

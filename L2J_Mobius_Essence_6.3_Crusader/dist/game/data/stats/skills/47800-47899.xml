@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="47801" toLevel="8" name="Piercing">
+		<!-- <<font color="FF8000">Spear skill</font>> Attacks the target with a spear. Deals physical damage with $s1 power. Ignores Shield Defense. Critical. -->
 		<icon>icon.s_impale</icon>
 		<castRange>120</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -67,6 +68,7 @@
 		</effects>
 	</skill>
 	<skill id="47802" toLevel="8" name="Amazing Piercing">
+		<!-- <<font color="FF8000">Spear skill</font>> Attacks the target with a spear. Deals physical damage with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_arc_impale</icon>
 		<castRange>150</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -134,6 +136,7 @@
 		</effects>
 	</skill>
 	<skill id="47803" toLevel="10" name="Threatening Swing">
+		<!-- <<font color="FF8000">Spear skill</font>> Attacks several of nearby enemies with $s1 power. Ignores Shield Defense. Critical. -->
 		<icon>icon.s_brandish</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
@@ -210,6 +213,7 @@
 		</effects>
 	</skill>
 	<skill id="47804" toLevel="10" name="Threatening Swing">
+		<!-- <<font color="FF8000">Spear skill</font>> Attacks several of nearby enemies with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_brandish_wave</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
@@ -287,6 +291,7 @@
 		</effects>
 	</skill>
 	<skill id="47805" toLevel="10" name="Wild Scratch">
+		<!-- <<font color="FF8000">Beast skill</font>> The beast attacks the target with its claws. Deals physical damage with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_wild_scratch</icon>
 		<castRange>150</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -354,10 +359,12 @@
 		</effects>
 	</skill>
 	<skill id="47806" toLevel="10" name="Shadow Scratch">
+		<!-- <<font color="FF8000">Beast skill</font>> The beast attacks the target with its claws. Deals physical damage with $s1 power. With a 30% chance, deals <font color="FFBB00">an additional blow</font>. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_shadow_scratch</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47807" toLevel="6" name="Wild Charge">
+		<!-- <<font color="FF8000">Beast skill</font>> The embodied beast's soul attacks the target. Attacks the target twice with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_wild_charge</icon>
 		<castRange>400</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -420,6 +427,7 @@
 		</effects>
 	</skill>
 	<skill id="47808" toLevel="6" name="Spectral Charge">
+		<!-- <<font color="FF8000">Beast skill</font>> The embodied beast's soul makes a powerful attack on the target. Attacks the target thrice with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_phantom_charge</icon>
 		<castRange>400</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
@@ -447,20 +455,22 @@
 		</effects>
 	</skill>
 	<skill id="47809" toLevel="1" name="Shadow Scratch">
+		<!-- The beast's claw attack. -->
 		<icon>icon.s_shadow_scratch</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47811" toLevel="1" name="Giant's Stomp">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Knockback skill</font>> Hits the ground knocking nearby enemies back and down for $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47812" toLevel="1" name="Giant's Stomp">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Knocked down by a powerful blow. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47813" toLevel="2" name="Wild Growl">
+		<!-- <<font color="FF8000">Suppression skill</font>> Suppresses nearby enemies for 3 sec. Speed -70% -->
 		<icon>icon.s_wild_roar</icon>
 		<castRange>40</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -501,6 +511,7 @@
 		</effects>
 	</skill>
 	<skill id="47814" toLevel="1" name="Wild Growl - Hold">
+		<!-- Unable to move. -->
 		<icon>icon.skill10792</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -523,6 +534,7 @@
 		</effects>
 	</skill>
 	<skill id="47815" toLevel="2" name="Wild Growl - Suppression">
+		<!-- Speed -70% -->
 		<icon>icon.skill10514</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>150</affectRange>
@@ -562,11 +574,12 @@
 		</endEffects>
 	</skill>
 	<skill id="47821" toLevel="1" name="Wild Assault">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Dash skill</font>> Dashes to the specified point. Activate the skill, choose your destination within the skill area and double-click it to move there. Upon arriving, the skill deals an AoE attack. Deals 15% of damage depending on P. Atk. To cancel the skill, press ESC. The skill is cancelled automatically, if the destination is not chosen in 5 sec. <<font color="FF8000">Blazing Beast effect</font>> While the buff is active, the skill can be used without cooldown. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47822" toLevel="3" name="Wild Rush">
+		<!-- <<font color="FF8000">Rush skill</font>> Charges at the target. The skill can be used if the distance to the target is no more than $s1. <<font color="FF8000">Blazing Beast effect</font>> While the buff is active, the skill can be used without cooldown. -->
 		<icon>icon.s_wild_rush</icon>
 		<castRange>
 			<value level="1">300</value>
@@ -613,11 +626,12 @@
 		</conditions>
 	</skill>
 	<skill id="47823" toLevel="1" name="Wild Assault: Burning">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Dash skill</font>> Dashes to the specified point. Activate the skill, choose your destination within the skill area and double-click it to move there. Upon arriving, the skill deals an AoE attack. Deals 15% of damage depending on P. Atk. To cancel the skill, press ESC. The skill is cancelled automatically, if the destination is not chosen in 5 sec. <<font color="FF8000">Blazing Beast effect</font>> No restrictions on cooldown. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47824" toLevel="3" name="Wild Rush: Burning">
+		<!-- <<font color="FF8000">Rush skill</font>> Charges at the target. The skill can be used if the distance to the target is no more than $s1. <<font color="FF8000">Blazing Beast effect</font>> While the buff is active, the skill can be used without cooldown. -->
 		<icon>icon.s_wild_rush</icon>
 		<castRange>
 			<value level="1">300</value>
@@ -663,6 +677,7 @@
 		</conditions>
 	</skill>
 	<skill id="47831" toLevel="3" name="Blazing Fury">
+		<!-- Fills your body with fury of flames. P. Atk. $s1 P. Def. $s2 Max HP $s3 P. Skill Power $s4 When learning the Wild Evolution skill: The skill is enhanced to Blazing Fury: Evolution. -->
 		<icon>icon.skill1434</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -741,7 +756,7 @@
 		</effects>
 	</skill>
 	<skill id="47832" toLevel="3" name="Blazing Fury: Evolution">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Fills your body with fury of flames. P. Atk. $s1 P. Def. $s2 Max HP $s3 P. Skill Power $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -770,6 +785,7 @@
 		</effects>
 	</skill>
 	<skill id="47834" toLevel="2" name="Final Secret">
+		<!-- Duration: $s1 P. Skill Power $s2 Basic PvP Damage $s3 Bow Resistance $s4 M. Damage Resistance $s4 -->
 		<icon>icon.skill10951</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -815,6 +831,7 @@
 		</effects>
 	</skill>
 	<skill id="47855" toLevel="1" name="Blazing Beast">
+		<!-- <<font color="FF8000">BP skill</font>> Available when you have <font color="FF8000">500+</font> BP. Consumes <font color="FF8000">100</font> BP. Imbues the beast with Fire God Pa'agrio's power. Received PvP damage -10% The beast deals repeated blows to nearby enemies. Summons <font color="FF0000">Flame of Pa'agrio</font>. <<font color="FF8000">No cooldown for the following skills:</font>> - Wild Rush - Wild Assault <font color="FF8000">Note!</font> Upon activating the skill, your BP cannot decrease for 3 sec. BP is decreased when hit. The skill effect is cancelled when BP reaches 0. -->
 		<icon>icon.s_burning_beast</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -853,21 +870,21 @@
 		</effects>
 	</skill>
 	<skill id="47856" toLevel="1" name="Pa'agrio's Grace">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Due to Pa'agrio's power, your BP doesn't decrease even when hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47857" toLevel="1" name="Pa'agrio's Power Veil">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When the Pa'agrio's Grace effect expires, activates Pa'agrio's Power Veil. BP -100 when hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47858" toLevel="1" name="BP Decrease">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47861" toLevel="15" name="Wild Weapon Mastery">
+		<!-- When using a spear: P. Atk. $s1 -->
 		<icon>icon.s_wild_weapon_mastery</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -935,6 +952,7 @@
 		</effects>
 	</skill>
 	<skill id="47862" toLevel="15" name="Wild Armor Mastery">
+		<!-- When using heavy armor: P. Def. $s1 -->
 		<icon>icon.s_wild_armor_mastery</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -1002,6 +1020,7 @@
 		</effects>
 	</skill>
 	<skill id="47863" toLevel="3" name="Wild Instinct">
+		<!-- Unleashes beast instincts. Knockback Resistance $s1 Imprisonment Resistance $s2 Max HP $s3 Speed $s4 Max BP depends on your CON. -->
 		<icon>icon.s_wild_instinct</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1038,6 +1057,7 @@
 		</effects>
 	</skill>
 	<skill id="47864" toLevel="1" name="Darkness Unleashing">
+		<!-- The beast unleashes the power of darkness. P. Atk. +15% <<font color="FF8000">Skill enhancement</font>> Wild Scratch ? Shadow Scratch With a 30% chance, deals <font color="FFBB00">an additional blow</font>. Wild Charge ? Spectral Charge Increases the number of attacks. -->
 		<icon>icon.s_awaken_darkness</icon>
 		<magicLevel>76</magicLevel>
 		<operateType>P</operateType>
@@ -1050,6 +1070,7 @@
 		</effects>
 	</skill>
 	<skill id="47865" toLevel="1" name="Wild Evolution">
+		<!-- Pa'agrio's blessing makes the beast unleash its true powers. Max BP $s1 Max HP $s2 P. Atk. $s3 P. Critical Damage $s4 P. Skill Critical Damage $s5 Speed $s6 <<font color="FF8000">Skill enhancement</font>> Blazing Fury ? Blazing Fury: Evolution Increases basic stats. -->
 		<icon>icon.s_wild_evolution</icon>
 		<magicLevel>76</magicLevel>
 		<operateType>P</operateType>
@@ -1078,6 +1099,7 @@
 		</effects>
 	</skill>
 	<skill id="47866" toLevel="1" name="Spear Focus Attack">
+		<!-- Increases stats when using a spear. When using a spear, P. Atk. $s1 When using a spear, Atk. Spd. $s2 When using a spear, attack range $s3 <Low HP/ MP absorption, when using a spear> -->
 		<icon>icon.skill30932</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -1122,6 +1144,7 @@
 		</effects>
 	</skill>
 	<skill id="47867" toLevel="1" name="Wild Health">
+		<!-- Provides some of Glorious Steed's power. Max HP $s1 -->
 		<icon>icon.skill0967</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1133,6 +1156,7 @@
 		</effects>
 	</skill>
 	<skill id="47868" toLevel="1" name="Wild Movement">
+		<!-- Provides some of Shining Lady's agility. Speed $s1 -->
 		<icon>icon.winghound_vehicle</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1162,51 +1186,48 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="47881" toLevel="1" name="Beast Point Absorption">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47882" toLevel="1" name="Beast Point Absorption Rate">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47883" toLevel="1" name="Beast Point Cancel">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47885" toLevel="1" name="Max BP Test_diff">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Max BP Test_diff -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47886" toLevel="1" name="Max BP Test_per">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Max BP Test_per -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47887" toLevel="1" name="BP Recovery Rate Test_diff">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- BP Recovery Rate Test_diff -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47888" toLevel="1" name="BP Recovery Rate Test_per">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- BP Recovery Rate Test_per -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47889" toLevel="3" name="BP Test - Absorption: 0 - 1000">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- BP Test - Absorption: 0 - 1000 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47890" toLevel="1" name="Beast Point Absorption: -1 Point">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47891" toLevel="8" name="Transcendent Piercing">
+		<!-- <<font color="FF8000">Spear skill</font>> Attacks the target with a spear. Deals physical damage with $s1 power. Ignores Shield Defense. Critical. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.s_impale</icon>
 		<castRange>120</castRange>
 		<affectLimit>5-12</affectLimit>
@@ -1276,11 +1297,12 @@
 		</effects>
 	</skill>
 	<skill id="47892" toLevel="8" name="Transcendent Amazing Piercing">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Spear skill</font>> Attacks the target with a spear. Deals physical damage with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can be used only in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47893" toLevel="10" name="Transcendent Spectral Scratch">
+		<!-- <<font color="FF8000">Beast skill</font>> The beast attacks the target with its enhanced claws. Deals physical damage with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.s_wild_scratch</icon>
 		<castRange>150</castRange>
 		<affectLimit>5-12</affectLimit>

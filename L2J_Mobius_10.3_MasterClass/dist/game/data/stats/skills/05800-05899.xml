@@ -714,7 +714,7 @@
 		</effects>
 	</skill>
 	<skill id="5833" toLevel="1" name="Shield">
-		<!-- Increases defense power temporarily. Effect 3. -->
+		<!-- Temporarily increases P. Def. Power 3. -->
 		<icon>icon.skill1040</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -743,7 +743,7 @@
 		</effects>
 	</skill>
 	<skill id="5834" toLevel="1" name="Magic Barrier">
-		<!-- Momentarily increases M. Def. Effect 3. -->
+		<!-- Temporarily increases M. Def. Power 3. -->
 		<icon>icon.skill1036</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -911,7 +911,7 @@
 		</effects>
 	</skill>
 	<skill id="5841" toLevel="1" name="Multi Defense">
-		<!-- P./ M. Def. are increased. -->
+		<!-- Increases P./ M. Def. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>INSTINCT</abnormalType>
@@ -964,7 +964,7 @@
 		</effects>
 	</skill>
 	<skill id="5843" toLevel="1" name="Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -1316,7 +1316,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5856" toLevel="1" name="Transformation: Clay Statue">
-		<!-- Transforms into a Makeshift Bat. -->
+		<!-- Transforms into Clay Statue. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1344,7 +1344,7 @@
 		</effects>
 	</skill>
 	<skill id="5857" toLevel="1" name="Transformation: Beautiful Clay Statue">
-		<!-- Transforms into a Lady Tow. -->
+		<!-- Transforms into Beautiful Clay Statue. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1372,7 +1372,7 @@
 		</effects>
 	</skill>
 	<skill id="5858" toLevel="1" name="Transformation: Solid Clay Statue">
-		<!-- Transforms into an Angry Tow. -->
+		<!-- Transforms into Solid Clay Statue. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1400,7 +1400,7 @@
 		</effects>
 	</skill>
 	<skill id="5859" toLevel="1" name="Transformation: Old Clay Statue">
-		<!-- Transforms into a Sleepy Tow. -->
+		<!-- Transforms into Old Clay Statue. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1543,7 +1543,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5865" toLevel="1" name="Valakas: Berserk">
-		<!-- Valakas is in a berserk state with increased P. Atk. -->
+		<!-- Valakas is enraged, his attacks are more powerful. -->
 		<icon>icon.skill1062</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>60</abnormalTime>
@@ -1564,7 +1564,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5866" toLevel="10" name="Soul Worm">
-		<!-- Received mental damage decreases MP and MP Recovery. The character is poisoned and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The mental blow decreases your MP and MP Recovery. You are poisoned and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1612,7 +1612,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5867" toLevel="10" name="Soul Worm">
-		<!-- Received mental damage decreases MP and MP Recovery. The character is poisoned and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The mental blow decreases your MP and MP Recovery. You are poisoned and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1663,7 +1663,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5868" toLevel="10" name="Soul Worm">
-		<!-- Received mental damage decreases MP and MP Recovery. The character is poisoned and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The mental blow decreases your MP and MP Recovery. You are poisoned and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1714,7 +1714,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5869" toLevel="10" name="Soul Worm">
-		<!-- Received mental damage decreases MP and MP Recovery. The character is poisoned and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The mental blow decreases your MP and MP Recovery. You are poisoned and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1763,7 +1763,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5870" toLevel="10" name="Flash Worm">
-		<!-- Received physical damage decreases Max HP and HP Recovery. The character is bleeding and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The physical blow decreases your Max HP and HP Recovery. You are bleeding and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1810,7 +1810,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5871" toLevel="10" name="Flash Worm">
-		<!-- Received physical damage decreases Max HP and HP Recovery. The character is bleeding and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The physical blow decreases your Max HP and HP Recovery. You are bleeding and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -1860,7 +1860,7 @@
 		<affectObject>NOT_FRIEND</affectObject>
 	</skill>
 	<skill id="5872" toLevel="10" name="Flash Worm">
-		<!-- Received physical damage decreases Max HP and HP Recovery. The character is bleeding and gradually loses HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- The physical blow decreases your Max HP and HP Recovery. You are bleeding and continuously lose HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill0096</icon>
 		<abnormalLevel>
 			<value level="1">8</value>
@@ -2095,7 +2095,7 @@
 		</effects>
 	</skill>
 	<skill id="5880" toLevel="2" name="Vicious Mutilation">
-		<!-- Speed is decreased. -->
+		<!-- Decreases Speed. -->
 		<icon>icon.skill1160</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2319,7 +2319,7 @@
 		</effects>
 	</skill>
 	<skill id="5887" toLevel="1" name="Howl from Beyond">
-		<!-- Greatly decreases P./ M. Atk., Atk. Spd., P. Accuracy, and Critical Rate/ Damage for standard attacks. -->
+		<!-- Greatly decreases P. Atk., M. Atk., Atk. Spd., P. Accuracy, Critical Rate for basic attacks and Critical Damage for basic attacks. -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2506,7 +2506,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5894" toLevel="1" name="Mark of Despair">
-		<!-- The target gets Mark of Despair that significantly decreases P./ M. Def., HP and P. Evasion. HP Recovery is limited, but P./ M. Atk., Atk. Spd., P. Accuracy, Critical Rate/ Damage for standard attacks are increased. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target gets Mark of Despair that greatly decreases P. Def., M. Def., HP and P. Evasion. HP Recovery is limited, but P. Atk., M. Atk., Atk. Spd., P. Accuracy, Critical Damage for basic attacks and Critical Rate for basic attacks are increased. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
@@ -2575,7 +2575,7 @@
 		</effects>
 	</skill>
 	<skill id="5895" toLevel="1" name="Mark of Cowardice">
-		<!-- The target gets Mark of Cowardice that significantly decreases HP, P./ M. Def. and P. Evasion. HP Recovery, attack actions and skills are limited. Speed is increased. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- The target gets Mark of Cowardice. Greatly decreases Max HP, P./ M. Def., P. Evasion. HP Recovery Rate is limited, as well as attack and skill usage. Increases Speed. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill1337</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>

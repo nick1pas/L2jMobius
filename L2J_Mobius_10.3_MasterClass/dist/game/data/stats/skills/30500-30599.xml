@@ -292,7 +292,7 @@
 		</effects>
 	</skill>
 	<skill id="30502" toLevel="28" name="Chin Strike">
-		<!-- Jawbone Blow. Knocks the target down for $s1. Requires a fist weapon. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- A blow to the jaw. Knocks the target down for $s1 Requires a fist weapon. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill30502</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -1118,7 +1118,7 @@
 		</effects>
 	</skill>
 	<skill id="30512" toLevel="5" name="Distortion">
-		<!-- For $s1, distorts space to make attacks from any side as efficient as from behind. P. Atk. +$s2, Critical Damage for standard attacks +$s3, and P. Skill Power +$s4. Requires a fist weapon. -->
+		<!-- For $s1, distorts space to make attacks from any side as efficient as from behind. P. Atk. +$s2, Critical Damage for basic attacks +$s3, P. Skill Power +$s4. Requires a fist weapon. -->
 		<icon>icon.skill30512</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1292,7 +1292,7 @@
 		</effects>
 	</skill>
 	<skill id="30516" toLevel="1" name="Gravity Barrier">
-		<!-- Cancels all debuffs and becomes invincible against all debuffs and damage. -->
+		<!-- Removes debuffs and makes you invincible to debuffs and damage. -->
 		<icon>icon.skill30516</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>
@@ -1529,7 +1529,7 @@
 		</effects>
 	</skill>
 	<skill id="30520" toLevel="5" name="Steel Mind">
-		<!-- For $s1, P. Atk. +$s2, Critical Damage for standard attacks +$s3, P. Skill Critical Damage +$s4, Speed +$s5, Obstruction/ Danger Zone/ Confusion Resistance +$s6. Inflicts additional damage $s7 times stronger than a standard attack, but HP cannot decrease lower than $s8. Recovers $s9 HP when the effect expires. Requires a fist weapon. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Damage for basic attacks +$s3, P. Skill Critical Damage +$s4, Speed +$s5, Confusion/ Danger Zone/ Obstruction Resistance +$s6. Inflicts additional damage $s7 times stronger than a basic attack, but HP cannot decrease lower than $s8. Recovers $s9 HP when the effect expires. Requires a fist weapon. -->
 		<icon>icon.skill30520</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1626,7 +1626,7 @@
 		</endEffects>
 	</skill>
 	<skill id="30521" toLevel="1" name="Reliable Hit">
-		<!-- Increases standard attack damage x 5. -->
+		<!-- Increases basic attack damage by 5 times. -->
 		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
 		<targetType>ENEMY</targetType>
@@ -1714,7 +1714,7 @@
 		</effects>
 	</skill>
 	<skill id="30524" toLevel="1" name="Reliable Hit">
-		<!-- Increases standard attack damage x 5. -->
+		<!-- Fixed damage. -->
 		<operateType>A1</operateType>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -1736,7 +1736,7 @@
 		</effects>
 	</skill>
 	<skill id="30526" toLevel="1" name="Heavy Punch">
-		<!-- There is a chance to deal damage equal to 30% of the target's HP after a standard attack. Requires a fist weapon. -->
+		<!-- With a certain chance, deals damage equal to 30% of the target's HP after a basic attack. A direct hit. Requires a fist weapon. -->
 		<icon>icon.skill30526</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -1842,7 +1842,7 @@
 		</effects>
 	</skill>
 	<skill id="30531" toLevel="1" name="Servitor's Rage">
-		<!-- For $s1, Received Critical Damage from standard attacks +$s2. -->
+		<!-- For $s1, received Critical Damage from basic attacks +$s2. -->
 		<icon>icon.skill11351</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -1868,7 +1868,7 @@
 		</effects>
 	</skill>
 	<skill id="30532" toLevel="3" name="Inside Position">
-		<!-- Critical Rate for standard attacks +$s1, P. Skill Critical Rate +$s2, P. Atk. +$s3. -->
+		<!-- Critical Rate for basic attacks +$s1, P. Skill Critical Rate +$s2, P. Atk. +$s3. -->
 		<icon>icon.skill30510</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2369,7 +2369,7 @@
 		</effects>
 	</skill>
 	<skill id="30543" toLevel="13" name="Eminent Attribute Resistance">
-		<!-- Attribute Attack Bonus +$s1, Fire/ Water/ Wind/ Earth/ Holy Resistance +$s2. -->
+		<!-- Attribute Attack +$s1, Fire/ Water/ Wind/ Earth/ Holy Resistance +$s2. -->
 		<icon>icon.skill11006</icon>
 		<magicLevel>
 			<value level="1">76</value>

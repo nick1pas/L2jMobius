@@ -2053,7 +2053,7 @@
 		</effects>
 	</skill>
 	<skill id="6622" toLevel="1" name="Stun">
-		<!-- For 20 sec. immobilizes and stuns the target, target s Received P. Critical Rate +50%. -->
+		<!-- For 20 sec. immobilizes and stuns the target, target's Received P. Critical Rate +50%. -->
 		<icon>icon.skill0100</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
@@ -2097,7 +2097,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6624" toLevel="1" name="Stun">
-		<!-- For 9 sec. immobilizes and stuns the target, target s Received P. Critical Rate +50%. -->
+		<!-- For 9 sec. immobilizes and stuns the target, target's Received P. Critical Rate +50%. -->
 		<icon>icon.skill0100</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -2405,7 +2405,7 @@
 		</effects>
 	</skill>
 	<skill id="6638" toLevel="1" name="Mysterious Aura">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<icon>icon.skill2513</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>
@@ -2547,7 +2547,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="6645" toLevel="1" name="Cooker Invincibility On">
-		<!-- Invincibility to regular hits and skills, as well as debuffs. -->
+		<!-- Invincible to basic attacks, skills and debuffs. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
 		<abnormalType>PD_UP_SPECIAL</abnormalType>
@@ -2864,7 +2864,7 @@
 		</effects>
 	</skill>
 	<skill id="6669" toLevel="1" name="Feral Blessed Body">
-		<!-- Increases Max HP by 35% for 5 min. -->
+		<!-- For 5 min., Max HP +35%. -->
 		<icon>icon.skill1045</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>315</abnormalTime>
@@ -3143,7 +3143,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="6681" toLevel="1" name="Maguen Wind Walk">
-		<!-- Speed +40 for 20 min. -->
+		<!-- For 20 min., Speed +40. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -3171,7 +3171,7 @@
 		</effects>
 	</skill>
 	<skill id="6682" toLevel="1" name="Elite Maguen Wind Walk">
-		<!-- Speed +45 for 20 min. -->
+		<!-- For 20 min., Speed +45. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -3538,7 +3538,7 @@
 				<power>45257</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>6698</skillId> <!-- Freeze -->
+				<skillId>6698</skillId> <!-- Ice Crystal -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>

@@ -469,19 +469,19 @@
 						<item id="26611" count="1" /> <!-- Raccoon Ears - WIT +M. Atk. -->
 					</item>
 					<item chance="1.53">
-						<item id="26612" count="1" /> <!-- Raccoon Ears - STR +Accuracy -->
+						<item id="26612" count="1" /> <!-- Raccoon Ears - STR + P. Accuracy -->
 					</item>
 					<item chance="1.53">
-						<item id="26613" count="1" /> <!-- Raccoon Ears - DEX +Accuracy -->
+						<item id="26613" count="1" /> <!-- Raccoon Ears - DEX + P. Accuracy -->
 					</item>
 					<item chance="1.53">
-						<item id="26614" count="1" /> <!-- Raccoon Ears - CON +Accuracy -->
+						<item id="26614" count="1" /> <!-- Raccoon Ears - CON + P. Accuracy -->
 					</item>
 					<item chance="1.53">
-						<item id="26615" count="1" /> <!-- Raccoon Ears - MEN +Accuracy -->
+						<item id="26615" count="1" /> <!-- Raccoon Ears - MEN + P. Accuracy -->
 					</item>
 					<item chance="1.53">
-						<item id="26616" count="1" /> <!-- Raccoon Ears - INT +Accuracy -->
+						<item id="26616" count="1" /> <!-- Raccoon Ears - INT + P. Accuracy -->
 					</item>
 					<item chance="1.53">
 						<item id="26617" count="1" /> <!-- Raccoon Ears - WIT +Accuracy -->
@@ -2773,7 +2773,7 @@
 		</effects>
 	</skill>
 	<skill id="27550" toLevel="10" name="Vital Stone">
-		<!-- Vitality bonus +$s1. -->
+		<!-- Vitality bonus +$s1 -->
 		<icon>
 			<value level="1">icon.etc_bm_jewel_vital</value>
 			<value level="2">icon.etc_bm_jewel_vital</value>
@@ -2846,50 +2846,50 @@
 						<item id="26494" count="1" /> <!-- Kit: La Vie En Rose's Brooch Lv. 2 -->
 					</item>
 					<item chance="8.1">
-						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Box -->
+						<item id="38939" count="1" /> <!-- La Vie En Rose's Aquamarine Pack -->
 					</item>
 					<item chance="2.72">
-						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Box -->
+						<item id="26508" count="1" /> <!-- La Vie En Rose's Amethyst Pack -->
 					</item>
 					<item chance="7.85">
-						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Box -->
+						<item id="38937" count="1" /> <!-- La Vie En Rose's Diamond Pack -->
 					</item>
 					<item chance="8.07">
-						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Box -->
+						<item id="26492" count="1" /> <!-- La Vie En Rose's Garnet Pack - Not Available -->
 					</item>
 					<item chance="8.37">
-						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Box -->
+						<item id="38940" count="1" /> <!-- La Vie En Rose's Pearl Pack -->
 					</item>
 					<item chance="7.74">
-						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Box -->
+						<item id="38938" count="1" /> <!-- La Vie En Rose's Emerald Pack -->
 					</item>
 					<item chance="7.99">
-						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Box -->
+						<item id="27483" count="1" /> <!-- La Vie En Rose's Vital Stone Pack - Not Available -->
 					</item>
 					<item chance="8.04">
-						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Box -->
+						<item id="26507" count="1" /> <!-- La Vie En Rose's Cat's Eye Pack -->
 					</item>
 					<item chance="8.01">
-						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Box -->
+						<item id="38936" count="1" /> <!-- La Vie En Rose's Obsidian Pack -->
 					</item>
 					<item chance="8.13">
-						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Box -->
+						<item id="38935" count="1" /> <!-- La Vie En Rose's Opal Pack -->
 					</item>
 					<item chance="8.23">
-						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Box -->
+						<item id="38932" count="1" /> <!-- La Vie En Rose's Ruby Pack -->
 					</item>
 					<item chance="8.08">
-						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Box -->
+						<item id="38933" count="1" /> <!-- La Vie En Rose's Sapphire Pack -->
 					</item>
 					<item chance="7.51">
-						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Box -->
+						<item id="27479" count="1" /> <!-- La Vie En Rose's Tanzanite Pack - Not Available -->
 					</item>
 				</items>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="27556" toLevel="1" name="Maphr's Wind Scroll">
-		<!-- Vitality consumption +200% and Acquired XP/ SP +200% while hunting. Remains after death. Duration is 30 sec. Cooldown is 1 min. -->
+		<!-- For 30 sec. while hunting, Vitality Consumption +200%, acquired XP/ SP +200%. The effect remains after death. Cooldown: 1 min. -->
 		<icon>icon.freya_scroll</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -3127,7 +3127,7 @@
 						<item id="23834" count="1" /> <!-- Talisman of Abundance - Tactics -->
 					</item>
 					<item chance="15.0">
-						<item id="23835" count="1" /> <!-- Talisman of Abundance - Morale -->
+						<item id="23835" count="1" /> <!-- Talisman of Abundance - Esprit -->
 					</item>
 					<item chance="15.0">
 						<item id="23836" count="1" /> <!-- Talisman of Abundance - Physique -->
@@ -3139,7 +3139,7 @@
 						<item id="23834" count="1" /> <!-- Talisman of Abundance - Tactics -->
 					</item>
 					<item chance="6.8">
-						<item id="23835" count="1" /> <!-- Talisman of Abundance - Morale -->
+						<item id="23835" count="1" /> <!-- Talisman of Abundance - Esprit -->
 					</item>
 					<item chance="6.8">
 						<item id="23836" count="1" /> <!-- Talisman of Abundance - Physique -->
@@ -3192,19 +3192,19 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="30.0">
-						<item id="45929" count="1" /> <!-- Weapon Augmenting Stone -->
+						<item id="45929" count="1" /> <!-- Augmenting Stone: Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="45930" count="1" /> <!-- Mid-grade Weapon Augmenting Stone -->
+						<item id="45930" count="1" /> <!-- Mid-grade Augmenting Stone: Weapon -->
 					</item>
 					<item chance="3.0">
-						<item id="45931" count="1" /> <!-- High-grade Weapon Augmenting Stone -->
+						<item id="45931" count="1" /> <!-- High-grade Augmenting Stone: Weapon -->
 					</item>
 					<item chance="2.0">
-						<item id="45932" count="1" /> <!-- Top-grade Weapon Augmenting Stone -->
+						<item id="45932" count="1" /> <!-- Top-grade Augmenting Stone: Weapon -->
 					</item>
 					<item chance="30.0">
-						<item id="45933" count="1" /> <!-- Accessory Spirit Stone -->
+						<item id="45933" count="1" /> <!-- Spirit Stone: Accessory -->
 					</item>
 					<item chance="10.0">
 						<item id="45934" count="1" /> <!-- Intermediate Accessory Spirit Stone -->
@@ -3216,7 +3216,7 @@
 						<item id="45936" count="1" /> <!-- Top-grade Accessory Spirit Stone -->
 					</item>
 					<item chance="10.0">
-						<item id="45937" count="1" /> <!-- Hair Accessory Spirit Stone -->
+						<item id="45937" count="1" /> <!-- Spirit Stone: Head Accessory -->
 					</item>
 				</items>
 			</effect>
@@ -3691,22 +3691,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="15.0">
-						<item id="46077" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="46077" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="35.0">
-						<item id="46078" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="46078" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="37566" count="1" /> <!-- Blessed Lucky Enchant Stone: R-grade Weapon -->
+						<item id="37566" count="1" /> <!-- Blessed Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="20.0">
-						<item id="37567" count="1" /> <!-- Blessed Lucky Enchant Stone: R-grade Armor -->
+						<item id="37567" count="1" /> <!-- Blessed Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="12.0">
-						<item id="39462" count="1" /> <!-- Giant's Lucky Enchant Stone: R-grade Armor -->
+						<item id="39462" count="1" /> <!-- Giant's Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="8.0">
-						<item id="39463" count="1" /> <!-- Giant's Lucky Enchant Stone: R-grade Weapon -->
+						<item id="39463" count="1" /> <!-- Giant's Stone: Enchant R-grade Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -3732,40 +3732,40 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="8.0">
-						<item id="23646" count="1" /> <!-- High-grade Lucky Enchant Stone: R-grade Weapon -->
+						<item id="23646" count="1" /> <!-- High-grade Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="12.0">
-						<item id="23647" count="1" /> <!-- High-grade Lucky Enchant Stone: R-grade Armor -->
+						<item id="23647" count="1" /> <!-- High-grade Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="10.0">
-						<item id="46077" count="1" /> <!-- Lucky Enchant Stone: R-grade Weapon -->
+						<item id="46077" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="20.0">
-						<item id="46078" count="1" /> <!-- Lucky Enchant Stone: R-grade Armor -->
+						<item id="46078" count="1" /> <!-- Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="2.0">
-						<item id="37566" count="1" /> <!-- Blessed Lucky Enchant Stone: R-grade Weapon -->
+						<item id="37566" count="1" /> <!-- Blessed Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="8.0">
-						<item id="37567" count="1" /> <!-- Blessed Lucky Enchant Stone: R-grade Armor -->
+						<item id="37567" count="1" /> <!-- Blessed Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="2.0">
-						<item id="38757" count="1" /> <!-- Blessed High-grade Lucky Enchant Stone: R-grade Weapon -->
+						<item id="38757" count="1" /> <!-- Blessed High-grade Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="3.0">
-						<item id="38758" count="1" /> <!-- Blessed High-grade Lucky Enchant Stone: R-grade Armor -->
+						<item id="38758" count="1" /> <!-- Blessed High-grade Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="12.0">
-						<item id="39462" count="1" /> <!-- Giant's Lucky Enchant Stone: R-grade Armor -->
+						<item id="39462" count="1" /> <!-- Giant's Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="8.0">
-						<item id="39463" count="1" /> <!-- Giant's Lucky Enchant Stone: R-grade Weapon -->
+						<item id="39463" count="1" /> <!-- Giant's Stone: Enchant R-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="39464" count="1" /> <!-- Windy Lucky Enchant Stone: R-grade Armor -->
+						<item id="39464" count="1" /> <!-- Windy Stone: Enchant R-grade Armor -->
 					</item>
 					<item chance="5.0">
-						<item id="39465" count="1" /> <!-- Windy Lucky Enchant Stone: R-grade Weapon -->
+						<item id="39465" count="1" /> <!-- Windy Stone: Enchant R-grade Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -3800,16 +3800,16 @@
 						<item id="27495" count="1" /> <!-- Talisman of Abundance Pack - Underground -->
 					</item>
 					<item chance="10.0">
-						<item id="27496" count="1" /> <!-- Weapon Augmenting Stone Pack - Underground -->
+						<item id="27496" count="1" /> <!-- Augmenting Stone Pack: Weapon - Not Available -->
 					</item>
 					<item chance="4.0">
-						<item id="27497" count="1" /> <!-- Hair Accessory Pack - Underground -->
+						<item id="27497" count="1" /> <!-- Head Accessory Pack - Underground -->
 					</item>
 					<item chance="4.0">
 						<item id="27498" count="1" /> <!-- Pendant Pack - Underground -->
 					</item>
 					<item chance="18.0">
-						<item id="27499" count="1" /> <!-- Ingredient Box - Underground -->
+						<item id="27499" count="1" /> <!-- Ingredient Pack - Underground -->
 					</item>
 					<item chance="38.0">
 						<item id="27500" count="1" /> <!-- Attribute Stone Pack - Underground -->
@@ -3865,7 +3865,7 @@
 						<item id="27503" count="1" /> <!-- Greater Enchant Scroll Pack - Underground -->
 					</item>
 					<item chance="10.0">
-						<item id="27505" count="1" /> <!-- Greater Lucky Enchant Stone Pack - Underground -->
+						<item id="27505" count="1" /> <!-- Greater Enchant Stone Pack - Underground -->
 					</item>
 				</items>
 			</effect>
@@ -3918,7 +3918,7 @@
 						<item id="23834" count="1" /> <!-- Talisman of Abundance - Tactics -->
 					</item>
 					<item chance="25.0">
-						<item id="23835" count="1" /> <!-- Talisman of Abundance - Morale -->
+						<item id="23835" count="1" /> <!-- Talisman of Abundance - Esprit -->
 					</item>
 					<item chance="25.0">
 						<item id="23836" count="1" /> <!-- Talisman of Abundance - Physique -->
@@ -3956,16 +3956,16 @@
 						<item id="27495" count="1" /> <!-- Talisman of Abundance Pack - Underground -->
 					</item>
 					<item chance="10.0">
-						<item id="27496" count="1" /> <!-- Weapon Augmenting Stone Pack - Underground -->
+						<item id="27496" count="1" /> <!-- Augmenting Stone Pack: Weapon - Not Available -->
 					</item>
 					<item chance="4.0">
-						<item id="27497" count="1" /> <!-- Hair Accessory Pack - Underground -->
+						<item id="27497" count="1" /> <!-- Head Accessory Pack - Underground -->
 					</item>
 					<item chance="4.0">
 						<item id="27498" count="1" /> <!-- Pendant Pack - Underground -->
 					</item>
 					<item chance="18.0">
-						<item id="27499" count="1" /> <!-- Ingredient Box - Underground -->
+						<item id="27499" count="1" /> <!-- Ingredient Pack - Underground -->
 					</item>
 					<item chance="38.0">
 						<item id="27500" count="1" /> <!-- Attribute Stone Pack - Underground -->
@@ -4021,7 +4021,7 @@
 						<item id="27503" count="1" /> <!-- Greater Enchant Scroll Pack - Underground -->
 					</item>
 					<item chance="10.0">
-						<item id="27505" count="1" /> <!-- Greater Lucky Enchant Stone Pack - Underground -->
+						<item id="27505" count="1" /> <!-- Greater Enchant Stone Pack - Underground -->
 					</item>
 				</items>
 			</effect>
@@ -4222,7 +4222,7 @@
 						<item id="19448" count="1" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
 					</item>
 					<item chance="2.325581395348837">
-						<item id="45929" count="1" /> <!-- Weapon Augmenting Stone -->
+						<item id="45929" count="1" /> <!-- Augmenting Stone: Weapon -->
 					</item>
 					<item chance="2.325581395348837">
 						<item id="9552" count="1" /> <!-- Fire Crystal -->
@@ -4275,7 +4275,7 @@
 						<item id="23834" count="1" /> <!-- Talisman of Abundance - Tactics -->
 					</item>
 					<item chance="25">
-						<item id="23835" count="1" /> <!-- Talisman of Abundance - Morale -->
+						<item id="23835" count="1" /> <!-- Talisman of Abundance - Esprit -->
 					</item>
 					<item chance="25">
 						<item id="23836" count="1" /> <!-- Talisman of Abundance - Physique -->
@@ -4347,7 +4347,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="27596" toLevel="1" name="Riding Wolf">
-		<!-- Can mount the Riding Wolf. -->
+		<!-- Allows to mount Wolf. -->
 		<icon>icon.skill0083</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>

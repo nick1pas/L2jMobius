@@ -58,7 +58,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="0.002525">
-						<item id="22202" count="1" /> <!-- Weapon Pack (S80-grade) - Event -->
+						<item id="22202" count="1" /> <!-- High-grade Weapon Pack (S80-grade) - Event -->
 					</item>
 					<item chance="0.04161">
 						<item id="22221" count="1" /> <!-- Destruction Scroll: Enchant S-grade Weapon - Event -->
@@ -157,16 +157,16 @@
 						<item id="9627" count="1" /> <!-- Lesser Giant's Codex - Mastery -->
 					</item>
 					<item chance="0.833333">
-						<item id="17276" count="1" /> <!-- Scroll: 50,000 SP -->
+						<item id="17276" count="1" /> <!-- Scroll: 5 SP -->
 					</item>
 					<item chance="4.182543">
-						<item id="17185" count="1" /> <!-- Scroll: 10,000 SP -->
+						<item id="17185" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="6.506178">
 						<item id="14052" count="5" /> <!-- Vesper Noble Enhancement Stone -->
 					</item>
 					<item chance="5.809087">
-						<item id="17184" count="1" /> <!-- Scroll: 5000 SP -->
+						<item id="17184" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="6.738541">
 						<item id="6622" count="1" /> <!-- Lesser Giant's Codex -->
@@ -244,13 +244,13 @@
 						<item id="6658" count="1" /> <!-- Baium's Ring -->
 					</item>
 					<item chance="0.001778">
-						<item id="22339" count="1" /> <!-- Weapon Pack (S80-grade) - Event -->
+						<item id="22339" count="1" /> <!-- Top-grade Weapon Pack (S80-grade) - Event -->
 					</item>
 					<item chance="0.005333">
 						<item id="22340" count="1" /> <!-- Elegia Armor Pack - Event -->
 					</item>
 					<item chance="0.004444">
-						<item id="22202" count="1" /> <!-- Weapon Pack (S80-grade) - Event -->
+						<item id="22202" count="1" /> <!-- High-grade Weapon Pack (S80-grade) - Event -->
 					</item>
 					<item chance="0.017778">
 						<item id="22203" count="1" /> <!-- Vorpal Armor Pack - Event -->
@@ -423,7 +423,7 @@
 		</effects>
 	</skill>
 	<skill id="22407" toLevel="1" name="PA Vitality">
-		<!-- For 60 min., Vitality is replenished when XP is acquired through hunting. -->
+		<!-- For 60 min., recovers Vitality when acquiring XP while hunting. -->
 		<icon>icon.etc_pccafe_point_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>100</effectPoint>
@@ -598,7 +598,7 @@
 		</effects>
 	</skill>
 	<skill id="22415" toLevel="1" name="Halloween Cookie">
-		<!-- Speed +33 for 60 min. -->
+		<!-- For 60 min., Speed +33. -->
 		<icon>BranchSys3.Icon.ev_halloween_cookie</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1212,10 +1212,10 @@
 						<item id="34002" count="1" /> <!-- Top-grade R-grade Life Stone - Event -->
 					</item>
 					<item chance="7">
-						<item id="15439" count="1" /> <!-- Scroll: 1000 SP -->
+						<item id="15439" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="2">
-						<item id="17184" count="1" /> <!-- Scroll: 5000 SP -->
+						<item id="17184" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="3.56">
 						<item id="35694" count="1" /> <!-- Santa Girl's Cloak - 3-day / Event -->
@@ -1253,13 +1253,13 @@
 						<item id="9916" count="1" /> <!-- Blue Talisman - Berserker -->
 					</item>
 					<item chance="1.1236">
-						<item id="9917" count="1" /> <!-- Red Talisman - Minimum Clarity -->
+						<item id="9917" count="1" /> <!-- Red Talisman - Clarity -->
 					</item>
 					<item chance="1.1236">
 						<item id="9918" count="1" /> <!-- Red Talisman - Maximum Clarity -->
 					</item>
 					<item chance="1.1236">
-						<item id="9919" count="1" /> <!-- Blue Talisman - Damage Reflect -->
+						<item id="9919" count="1" /> <!-- Blue Talisman - Damage Reflection -->
 					</item>
 					<item chance="1.1236">
 						<item id="9920" count="1" /> <!-- Blue Talisman - Invisibility -->
@@ -1268,7 +1268,7 @@
 						<item id="9921" count="1" /> <!-- Blue Talisman - Shield Defense -->
 					</item>
 					<item chance="1.1236">
-						<item id="9922" count="1" /> <!-- Black Talisman - Mending -->
+						<item id="9922" count="1" /> <!-- Black Talisman - Bandage -->
 					</item>
 					<item chance="1.1236">
 						<item id="9923" count="1" /> <!-- Black Talisman - Escape -->
@@ -1289,7 +1289,7 @@
 						<item id="9928" count="1" /> <!-- Red Talisman - MP Recovery Rate -->
 					</item>
 					<item chance="1.1236">
-						<item id="9929" count="1" /> <!-- Blue Talisman - Shield Defense -->
+						<item id="9929" count="1" /> <!-- Blue Talisman - Shield Defense Rate -->
 					</item>
 					<item chance="1.1236">
 						<item id="9930" count="1" /> <!-- Blue Talisman - Evasion -->
@@ -1298,7 +1298,7 @@
 						<item id="9931" count="1" /> <!-- Red Talisman - Meditation -->
 					</item>
 					<item chance="1.1236">
-						<item id="9932" count="1" /> <!-- Blue Talisman - Divine Protection -->
+						<item id="9932" count="1" /> <!-- Blue Talisman - Benefaction -->
 					</item>
 					<item chance="1.1236">
 						<item id="9933" count="1" /> <!-- Yellow Talisman - P. Atk. -->
@@ -1328,28 +1328,28 @@
 						<item id="9941" count="1" /> <!-- Yellow Talisman - Speed -->
 					</item>
 					<item chance="1.1236">
-						<item id="9942" count="1" /> <!-- Yellow Talisman - Critical Reduction -->
+						<item id="9942" count="1" /> <!-- Yellow Talisman - Critical Resistance -->
 					</item>
 					<item chance="1.1236">
 						<item id="9943" count="1" /> <!-- Yellow Talisman - Critical Damage -->
 					</item>
 					<item chance="1.1236">
-						<item id="9944" count="1" /> <!-- Yellow Talisman - Critical Dodging -->
+						<item id="9944" count="1" /> <!-- Yellow Talisman - Critical Evasion -->
 					</item>
 					<item chance="1.1236">
 						<item id="9945" count="1" /> <!-- Yellow Talisman - Evasion -->
 					</item>
 					<item chance="1.1236">
-						<item id="9946" count="1" /> <!-- Yellow Talisman - Healing -->
+						<item id="9946" count="1" /> <!-- Yellow Talisman: Healing -->
 					</item>
 					<item chance="1.1236">
-						<item id="9947" count="1" /> <!-- Yellow Talisman - CP Recovery Rate -->
+						<item id="9947" count="1" /> <!-- Yellow Talisman - CP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="9948" count="1" /> <!-- Yellow Talisman - HP Recovery Rate -->
+						<item id="9948" count="1" /> <!-- Yellow Talisman - HP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="9949" count="1" /> <!-- Yellow Talisman - MP Recovery Rate -->
+						<item id="9949" count="1" /> <!-- Yellow Talisman - MP Recovery -->
 					</item>
 					<item chance="1.1236">
 						<item id="9950" count="1" /> <!-- Grey Talisman - Weight Limit -->
@@ -1358,7 +1358,7 @@
 						<item id="9951" count="1" /> <!-- Grey Talisman - Mid-grade Fishing -->
 					</item>
 					<item chance="1.1236">
-						<item id="9952" count="1" /> <!-- Orange Talisman - Hot Springs CP Potion -->
+						<item id="9952" count="1" /> <!-- Orange Talisman - CP Recovery Potion -->
 					</item>
 					<item chance="1.1236">
 						<item id="9953" count="1" /> <!-- Orange Talisman - Elixir of Life -->
@@ -1403,10 +1403,10 @@
 						<item id="9966" count="1" /> <!-- White Talisman - Obstruction Resistance -->
 					</item>
 					<item chance="1.1236">
-						<item id="10141" count="1" /> <!-- Grey Talisman - Yeti Transform -->
+						<item id="10141" count="1" /> <!-- Grey Talisman - Yeti Transformation -->
 					</item>
 					<item chance="1.1236">
-						<item id="10142" count="1" /> <!-- Grey Talisman - Buffalo Transform -->
+						<item id="10142" count="1" /> <!-- Grey Talisman - Buffalo Transformation -->
 					</item>
 					<item chance="1.1236">
 						<item id="10158" count="1" /> <!-- Grey Talisman - High-grade Fishing -->
@@ -1415,13 +1415,13 @@
 						<item id="10416" count="1" /> <!-- Blue Talisman - Explosion -->
 					</item>
 					<item chance="1.1236">
-						<item id="10417" count="1" /> <!-- Blue Talisman - Magic Explosion -->
+						<item id="10417" count="1" /> <!-- Blue Talisman - Magic Burst -->
 					</item>
 					<item chance="1.1236">
 						<item id="10418" count="1" /> <!-- White Talisman - Storm -->
 					</item>
 					<item chance="1.1236">
-						<item id="10419" count="1" /> <!-- White Talisman - Darkness -->
+						<item id="10419" count="1" /> <!-- White Talisman - Dark -->
 					</item>
 					<item chance="1.1236">
 						<item id="10420" count="1" /> <!-- White Talisman - Water -->
@@ -1430,7 +1430,7 @@
 						<item id="10421" count="1" /> <!-- White Talisman - Fire -->
 					</item>
 					<item chance="1.1236">
-						<item id="10422" count="1" /> <!-- White Talisman - Light -->
+						<item id="10422" count="1" /> <!-- White Talisman - Holy -->
 					</item>
 					<item chance="1.1236">
 						<item id="10423" count="1" /> <!-- Blue Talisman - Self-destruction -->
@@ -1439,7 +1439,7 @@
 						<item id="10424" count="1" /> <!-- Blue Talisman - Greater Healing -->
 					</item>
 					<item chance="1.1236">
-						<item id="10518" count="1" /> <!-- Red Talisman - Life Force -->
+						<item id="10518" count="1" /> <!-- Red Talisman - Vital Force -->
 					</item>
 					<item chance="1.1236">
 						<item id="10519" count="1" /> <!-- White Talisman - Earth -->
@@ -1460,16 +1460,16 @@
 						<item id="10537" count="1" /> <!-- Yellow Talisman - Evasion -->
 					</item>
 					<item chance="1.1236">
-						<item id="10538" count="1" /> <!-- Yellow Talisman - Healing Power -->
+						<item id="10538" count="1" /> <!-- Yellow Talisman: Healing -->
 					</item>
 					<item chance="1.1236">
-						<item id="10539" count="1" /> <!-- Yellow Talisman - CP Recovery Rate -->
+						<item id="10539" count="1" /> <!-- Yellow Talisman - CP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="10540" count="1" /> <!-- Yellow Talisman - HP Recovery Rate -->
+						<item id="10540" count="1" /> <!-- Yellow Talisman - HP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="10541" count="1" /> <!-- Low-grade Yellow Talisman - MP Recovery Rate -->
+						<item id="10541" count="1" /> <!-- Low-grade Yellow Talisman - MP Recovery -->
 					</item>
 					<item chance="1.1236">
 						<item id="10542" count="1" /> <!-- Red Talisman - HP/CP Recovery -->
@@ -1484,7 +1484,7 @@
 						<item id="12816" count="1" /> <!-- Red Talisman - CP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="12817" count="1" /> <!-- Yellow Talisman - Increase Momentum -->
+						<item id="12817" count="1" /> <!-- Yellow Talisman - Momentum -->
 					</item>
 					<item chance="1.1236">
 						<item id="12818" count="1" /> <!-- Yellow Talisman - Damage Transition -->
@@ -1505,7 +1505,7 @@
 						<item id="14812" count="1" /> <!-- Red Talisman - Territory Royal Guard -->
 					</item>
 					<item chance="1.1236">
-						<item id="14813" count="1" /> <!-- Blue Talisman - Lord's Divine Protection -->
+						<item id="14813" count="1" /> <!-- Blue Talisman - Lord's Favor -->
 					</item>
 					<item chance="1.1236">
 						<item id="14814" count="1" /> <!-- White Talisman - Attribute Resistance -->
@@ -1850,7 +1850,7 @@
 		</effects>
 	</skill>
 	<skill id="22480" toLevel="1" name="Leaf of Appreciation">
-		<!-- For 1 h., the effects of Leaf of Appreciation increases Max MP by 20%, MP Recovery Bonus by 20%, HP Recovery Bonus by 20%, the chance of prominent magic damage by 2, Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20% and MP consumption needed for skill use by 5%. -->
+		<!-- For 1 h., Max MP +20%, MP Recovery Rate +20%, HP Recovery Rate +20%, M. Critical Rate +2, Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. -->
 		<icon>icon.etc_leaf_green_i00</icon>
 		<operateType>A2</operateType>
 		<abnormalType>MULTI_BUFF</abnormalType>

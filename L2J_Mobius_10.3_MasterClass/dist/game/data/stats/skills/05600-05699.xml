@@ -240,7 +240,7 @@
 		</effects>
 	</skill>
 	<skill id="5605" toLevel="2" name="Power of Apella">
-		<!-- Power of Apella increases M. Def., but decreases Received P. Critical Rate. -->
+		<!-- The power of Apella, increases M. Def., but decreases received Critical Rate from basic attacks. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>APELLA</abnormalType>
@@ -282,7 +282,7 @@
 		</effects>
 	</skill>
 	<skill id="5607" toLevel="2" name="Power of Apella">
-		<!-- Power of Apella increases P. Evasion, decreases Received Critical Damage from standard attacks. -->
+		<!-- The power of Apella, increases P. Evasion, decreases received Critical Damage from basic attacks. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>APELLA</abnormalType>
@@ -324,7 +324,7 @@
 		</effects>
 	</skill>
 	<skill id="5608" toLevel="2" name="Power of Apella">
-		<!-- Power of Apella. Increased P. Def., increased M. Atk., and decreased Speed. -->
+		<!-- The power of Apella, increased P. Def. and M. Atk., decreased Speed. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
 		<abnormalType>APELLA</abnormalType>
@@ -765,7 +765,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="5627" toLevel="1" name="Adventurer's Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- Increases Speed by 33 for 60 min. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -788,7 +788,7 @@
 		</effects>
 	</skill>
 	<skill id="5628" toLevel="1" name="Adventurer's Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.skill1040</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -811,7 +811,7 @@
 		</effects>
 	</skill>
 	<skill id="5629" toLevel="1" name="Adventurer's Blessed Body">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.skill1045</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -834,7 +834,7 @@
 		</effects>
 	</skill>
 	<skill id="5630" toLevel="1" name="Adventurer's Vampiric Rage">
-		<!-- For 60 min., 9% of the physical damage inflicted on the enemy is recovered as HP with a certain probability. -->
+		<!-- For 60 min., absorbs 9% of the inflicted melee damage as HP with a certain chance. -->
 		<icon>icon.skill1268</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -857,7 +857,7 @@
 		</effects>
 	</skill>
 	<skill id="5631" toLevel="1" name="Adventurer's Regeneration">
-		<!-- HP Recovery Rate +20% for 60 min. -->
+		<!-- For 60 min., HP Recovery Rate +20%. -->
 		<icon>icon.skill1044</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -880,7 +880,7 @@
 		</effects>
 	</skill>
 	<skill id="5632" toLevel="1" name="Adventurer's Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -903,7 +903,7 @@
 		</effects>
 	</skill>
 	<skill id="5633" toLevel="1" name="Adventurer's Blessed Soul">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.skill1048</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -926,7 +926,7 @@
 		</effects>
 	</skill>
 	<skill id="5634" toLevel="1" name="Adventurer's Acumen">
-		<!-- Casting Spd. +30% for 60 min. -->
+		<!-- For 60 min., Casting Spd. +30%. -->
 		<icon>icon.skill1085</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1604,7 +1604,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5652" toLevel="3" name="Nightshade - Death Whisper">
-		<!-- Temporarily increases Critical Damage for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases Critical Damage for basic attacks. Effect $s1 -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1655,7 +1655,7 @@
 		</effects>
 	</skill>
 	<skill id="5653" toLevel="2" name="Nightshade - Focus">
-		<!-- Temporarily increases Critical Rate for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases Critical Rate for basic attacks. Effect $s1 -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -4113,7 +4113,7 @@
 		</effects>
 	</skill>
 	<skill id="5691" toLevel="1" name="PvP Armor - Critical Down">
-		<!-- Decreases received P. Critical Rate and received P. Critical Damage. -->
+		<!-- Decreases received Critical Rate from basic attacks and received P. Critical Damage. -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>

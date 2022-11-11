@@ -320,7 +320,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="22928" toLevel="2" name="Musician's Melody - Heavenly Cocktail">
-		<!-- For 60 min., P. Atk. +19%, P. Def. +15%, M. Atk. +83%, M. Def. +30%. The effect remains after death and cannot be forcibly removed. -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, P. Atk. +$s5, M. Atk. +$s6, P. Def. +$s7, M. Def. +$s8, Critical Rate for basic attacks +$s9, Critical Damage for basic attacks +$s10, M. Skill Critical Rate +$s11, Atk. Spd. +$s12, Casting Spd. +$s13, received Critical Damage from basic attacks -$s14, MP Consumption -$s15, Vampiric Rage effect +$s16. With a certain chance, increases P. Critical Damage when hit. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -369,7 +369,7 @@
 		</effects>
 	</skill>
 	<skill id="22929" toLevel="1" name="Horn Melody - Heavenly Cocktail">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -413,7 +413,7 @@
 		</effects>
 	</skill>
 	<skill id="22930" toLevel="2" name="Drum Melody - Heavenly Cocktail">
-		<!-- For 60 min., Max MP +20%, HP Recovery Rate +20%, M. Critical Rate +2, P. Critical Damage +20%, P. Atk. +10%, P. Def./ Atk. Spd./ M. Atk./ M. Def./ Casting Spd. +20%, and Debuff Resistance +10%. Received P. Critical Damage -30%, Speed -10%. Additionally increases P. Critical Damage if the character has received a certain amount of damage. The effect remains after death and cannot be forcibly removed. -->
+		<!-- For 60 min., Max MP +20%, HP Recovery Rate +20%, M. Critical Rate +2, P. Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, received P. Critical Damage -30%, Speed -10%. Additionally increases P. Critical Damage when receiving a certain amount of damage. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -469,7 +469,7 @@
 		</effects>
 	</skill>
 	<skill id="22931" toLevel="1" name="Drum Melody - Heavenly Cocktail">
-		<!-- For $s1, increases your P. Critical Rate by $s2, P. Critical Damage by $s3, M. Critical Rate by $s4, and decreases Received P. Critical Damage by $s5. Also has a chance to increase Critical Damage when hit. Buff remains even after death and cannot be forcefully deleted. -->
+		<!-- For $s1, P. Critical Rate +$s2, P. Critical Damage +$s3, M. Critical Rate +$s4, received Critical Damage -$s5. With a certain chance, increases P. Critical Damage when hit. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -518,7 +518,7 @@
 		</effects>
 	</skill>
 	<skill id="22932" toLevel="2" name="Lute Melody - Heavenly Cocktail">
-		<!-- For 60 min., Atk. Spd. +35%, Casting Spd. +32%. Has a chance of applying 9% Vampiric Rage effect. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For 60 min., Atk. Spd. +35%, Casting Spd. +32%, Vampiric Rage effect +9%. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -565,7 +565,7 @@
 		</effects>
 	</skill>
 	<skill id="22933" toLevel="1" name="Lute Melody - Heavenly Cocktail">
-		<!-- For 60 min., Atk. Spd. +34%, Casting Spd. +31%. Has a chance of applying 9% Vampiric Rage effect. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For 60 min., Atk. Spd. +34%, Casting Spd. +31%, Vampiric Rage effect +9%. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -605,7 +605,7 @@
 		</effects>
 	</skill>
 	<skill id="22934" toLevel="2" name="Pipe Organ Melody - Heavenly Cocktail">
-		<!-- For 60 min., Max HP/ Max MP/ Max CP +39% and HP Recovery Rate +20%. The effect remains after death and cannot be forcibly removed. -->
+		<!-- For 60 min., Max HP +39%, Max MP +39%, Max CP +39%, HP Recovery Rate +20%. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -663,7 +663,7 @@
 		</effects>
 	</skill>
 	<skill id="22935" toLevel="1" name="Pipe Organ Melody - Heavenly Cocktail">
-		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, and Vampiric Rage +$s5 is applied at a certain chance. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4. With a certain chance, Vampiric Rage effect +$s5. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -711,7 +711,7 @@
 		</effects>
 	</skill>
 	<skill id="22936" toLevel="2" name="Guitar Melody - Heavenly Cocktail">
-		<!-- For 60 min., P. Critical Rate by 34%, P. Critical Damage +35% and M. Critical Rate by +20. P. Skill MP Consumption -20%, M. Skill MP Consumption -10%, and MP Consumption for Iss Enchanter's Skills -20%. The effect remains after death and cannot be forcibly removed. -->
+		<!-- For 60 min., P. Critical Rate +34%, P. Critical Damage +35%, M. Critical Rate +20, P. Skill MP Consumption -20%, M. Skill MP Consumption -10%, MP Consumption for Iss Enchanter's skills -20%. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -781,7 +781,7 @@
 		</effects>
 	</skill>
 	<skill id="22937" toLevel="1" name="Guitar Melody - Heavenly Cocktail">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Speed +$s4, and All Skill MP Consumption -$s5. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Speed +$s4, Skill MP Consumption -$s5. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -841,7 +841,7 @@
 		</effects>
 	</skill>
 	<skill id="22938" toLevel="2" name="Harp Melody - Heavenly Cocktail">
-		<!-- For 60 min., P. Accuracy +6, P. Evasion/ M. Evasion +6, Speed +35. Received Critical Damage -30%. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For 60 min., P. Accuracy +6, P./ M. Evasion +6, Speed +35, received Critical Damage -30%. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<abnormalLevel>6</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -902,7 +902,7 @@
 		</effects>
 	</skill>
 	<skill id="22939" toLevel="1" name="Harp Melody - Heavenly Cocktail">
-		<!-- For 60 min., P. Accuracy +5, P. Evasion/ M. Evasion +5, Speed +34. Received Critical Damage -30%. Effect remains even after death, and cannot be forcefully eliminated. -->
+		<!-- For 60 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage -30%. The effect remains after death, and you cannot remove it by yourself. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -950,7 +950,7 @@
 		</effects>
 	</skill>
 	<skill id="22940" toLevel="1" name="Vitality Recovery Potion">
-		<!-- For 60 min., recovers Vitality upon XP gain. -->
+		<!-- For 60 min., recovers Vitality when acquiring XP. -->
 		<icon>BranchSys2.br_essence_rose_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>3000</hitTime>
@@ -1347,7 +1347,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="22993" toLevel="1" name="Vitality Maintaining Star Candy">
-		<!-- Maintains Vitality for 10 min. -->
+		<!-- Sustains Vitality for 60 min. -->
 		<icon>BranchSys.br_rudolf_food_blue_i00</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
@@ -1355,7 +1355,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="22994" toLevel="1" name="Vitality Maintaining Potion">
-		<!-- For 10 min., Vitality is retained. -->
+		<!-- Sustains Vitality for 60 min. -->
 		<icon>icon.etc_lesser_potion_blue_i00</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>1800000</reuseDelay>

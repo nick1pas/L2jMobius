@@ -69,7 +69,7 @@
 		</effects>
 	</skill>
 	<skill id="7004" toLevel="2" name="Dispel Petrification">
-		<!-- Cancels Petrification debuff. -->
+		<!-- Removes a Petrification debuff. -->
 		<effectPoint>566</effectPoint>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<magicLevel>60</magicLevel>
@@ -1084,7 +1084,7 @@
 		</effects>
 	</skill>
 	<skill id="7061" toLevel="1" name="Master's Blessing - Prophecy of Water">
-		<!-- The GM is always by your side. For $s1, MP Recovery Bonus +20%, M. Atk. +15%, M. Def. +15%, Casting Spd. +10%, Debuff Resistance +10%. Skill MP Consumption -5%. -->
+		<!-- The GM is always by your side. For $s1, MP Recovery Rate +20%, M. Atk. +15%, M. Def. +15%, Casting Spd. +10%, Debuff Resistance +10%, Skill MP Consumption -5%. -->
 		<icon>icon.skill1355</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1162,7 +1162,7 @@
 		</effects>
 	</skill>
 	<skill id="7062" toLevel="1" name="Master's Blessing - Prophecy of Fire">
-		<!-- The GM is always by your side. For $s1, Max HP +15%, HP Recovery Bonus +20%, P. Atk. +50%, P. Def. +15%, Atk. Spd. +10%, Debuff Resistance +10%. Cannot be stacked with Prophecy-type buffs. -->
+		<!-- The GM is always by your side. For $s1, Max HP +15%, HP Recovery Rate +20%, P. Atk. +15%, P. Def. +15%, Atk. Spd. +10%, Debuff Resistance +10%. Does not stack with Prophecy-type buffs. -->
 		<icon>icon.skill1356</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1837,7 +1837,7 @@
 		</effects>
 	</skill>
 	<skill id="7091" toLevel="1" name="Master's Blessing - Improve Critical Attack">
-		<!-- The GM is always by your side. Combines P. Critical Rate increase and P. Critical Damage increase to have more advanced critical increase effect. For $s1, P. Critical Rate +30% and P. Critical Damage +35%. -->
+		<!-- The GM is always by your side. Combines P. Critical Rate increase and P. Critical Damage increase to have more combat efficiency. For $s1, P. Critical Rate +30%, P. Critical Damage +35%. -->
 		<icon>icon.skill1502</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1948,7 +1948,7 @@
 		</effects>
 	</skill>
 	<skill id="7094" toLevel="1" name="Master's Blessing - Sharpen Edge">
-		<!-- The GM is always by your side. Sharpens a bladed weapon to get P. Atk. +5% and P. Critical Rate +20% for $s1. -->
+		<!-- The GM is always by your side. Sharpens a bladed weapon. For $s1, P. Atk. +5%, P. Critical Rate +20%. -->
 		<icon>icon.skill0825</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>

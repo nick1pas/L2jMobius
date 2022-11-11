@@ -2160,7 +2160,7 @@
 		</effects>
 	</skill>
 	<skill id="11125" toLevel="8" name="Superior Spirit Eye">
-		<!-- M. Atk. +$s1, M. Skill Critical Damage +$s2 -->
+		<!-- M. Atk. +$s1, M. Skill Critical Damage +$s2. -->
 		<icon>icon.skill0945</icon>
 		<magicLevel>
 			<value level="1">85</value>
@@ -2496,7 +2496,7 @@
 		</effects>
 	</skill>
 	<skill id="11134" toLevel="1" name="Meteor">
-		<!-- Drops meteors to attack surrounding enemies. Debuffs them to deal additional continuous damage. The higher the level of the debuff, the greater the damage. Consumes $s1 Spirit Ore. The skill cooldown is fixed. -->
+		<!-- Drops meteors to attack surrounding enemies. Debuffs them to deal additional continuous damage. The higher the level of the debuff, the greater the damage. When used, the Repeated Sorcery and Last Sorcery effects are applied decreasing the cooldown by 15 sec. Consumes $s1 Spirit Ore. -->
 		<icon>icon.skill11134</icon>
 		<affectLimit>15-25</affectLimit>
 		<affectRange>200</affectRange>
@@ -2552,7 +2552,7 @@
 		</channelingEffects>
 	</skill>
 	<skill id="11135" toLevel="1" name="Black Pool">
-		<!-- Creates a black swamp in the selected area, dealing continuous damage to enemies. Absorbs $s1 of the inflicted damage as HP. Decreases Speed. The higher the level of the debuff, the greater the damage. Stuns enemies at the maximum level. Consumes $s2 Spirit Ore. The skill cooldown is fixed. -->
+		<!-- Creates a black swamp in the selected area, dealing continuous damage to enemies. Decreases Speed. The higher the level of the debuff, the greater the damage. Stuns enemies at the maximum level. When used, the Repeated Sorcery and Last Sorcery effects are applied decreasing the cooldown by 15 sec. Consumes $s1 Spirit Ore. -->
 		<icon>icon.skill11135</icon>
 		<affectRange>250</affectRange>
 		<channelingTickInterval>1</channelingTickInterval>
@@ -2592,7 +2592,7 @@
 		</channelingEffects>
 	</skill>
 	<skill id="11136" toLevel="1" name="Blizzard">
-		<!-- Creates an ice storm in the selected area, dealing continuous damage. Decreases Speed. The higher the level of the debuff, the greater the damage. Freezes enemies at the maximum level. Consumes $s1 Spirit Ore. The skill cooldown is fixed. -->
+		<!-- Creates an ice storm in the selected area, dealing continuous damage. Decreases Speed. The higher the level of the debuff, the greater the damage. Freezes enemies at the maximum level. When used, the Repeated Sorcery and Last Sorcery effects are applied decreasing the cooldown by 15 sec. Consumes $s1 Spirit Ore. -->
 		<icon>icon.skill11136</icon>
 		<affectRange>250</affectRange>
 		<abnormalLevel>1</abnormalLevel>
@@ -2643,7 +2643,7 @@
 		</channelingEffects>
 	</skill>
 	<skill id="11137" toLevel="1" name="Tornado">
-		<!-- Creates a tornado in the selected area, dealing great damage to enemies. Decreases Speed. The higher the level of the debuff, the greater the damage. Applies Aerial Yoke on enemies at the maximum level. Consumes $s1 Spirit Ore. The skill cooldown is fixed. -->
+		<!-- Creates a tornado in the selected area, dealing great damage to enemies. Decreases Speed. The higher the level of the debuff, the greater the damage. Applies Aerial Yoke on enemies at the maximum level. When used, the Repeated Sorcery and Last Sorcery effects are applied decreasing the cooldown by 15 sec. Consumes $s1 Spirit Ore. -->
 		<icon>icon.skill11137</icon>
 		<affectRange>250</affectRange>
 		<channelingTickInterval>1</channelingTickInterval>
@@ -2692,7 +2692,7 @@
 		</channelingEffects>
 	</skill>
 	<skill id="11138" toLevel="1" name="Spirit Bomb">
-		<!-- Detonates the soul in the selected location to deal great damage to nearby enemies. Increases their Received PvP Damage. The higher the level of the debuff, the greater the effect. The character is invincible while concentrating. Consumes $s1 Spirit Ore. The skill cooldown is fixed. -->
+		<!-- Detonates the soul in the selected location to deal great damage to nearby enemies. Increases their Received PvP Damage. The higher the level of the debuff, the greater the effect. The character gets temporarily the Immortal Soul effect that protects from damage. When used, the Repeated Sorcery and Last Sorcery effects are applied decreasing the cooldown by 15 sec. Consumes $s1 Spirit Ore. -->
 		<icon>icon.skill11138</icon>
 		<affectRange>250</affectRange> <!-- Guessed -->
 		<channelingTickInterval>1</channelingTickInterval>
@@ -3738,7 +3738,7 @@
 		</effects>
 	</skill>
 	<skill id="11184" toLevel="1" name="Superior Arcane Lore">
-		<!-- Fire/ Water/ Wind/ Earth Resistance +20, and M. Def. +5%. INT +2. -->
+		<!-- M. Atk. +5%, Fire/ Water/ Wind/ Earth Resistance +20. Additionally, INT +2. -->
 		<icon>icon.skill11184</icon>
 		<magicLevel>85</magicLevel>
 		<operateType>P</operateType>

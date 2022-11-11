@@ -36,7 +36,7 @@
 		</effects>
 	</skill>
 	<skill id="47002" toLevel="35" name="Dual Blow">
-		<!-- <Changing skill> With a certain chance, recovers 5% of MP after a range attack. Uses spirit powers in combat. Attacks the enemy twice with $s1 power. Critical. -->
+		<!-- <Changing skill> Uses spirit powers in combat. Attacks the enemy twice with $s1 power. Critical. With a certain chance, recovers 5% MP after a ranged attack. (Cooldown: 40 sec.) Triggers after using Stealthy Swiftness to attack from a distance. The MP recovery buff and cooldown time are shared with other skills. -->
 		<icon>icon.double_impact</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -328,7 +328,7 @@
 		</effects>
 	</skill>
 	<skill id="47005" toLevel="35" name="Triple Blow">
-		<!-- <Changing skill> With a certain chance, recovers 5% of MP after a range attack. Uses spirit powers in combat. Attacks the enemy three times with $s1 power. Critical. -->
+		<!-- <Changing skill> Uses spirit powers in combat. Attacks the enemy thrice with $s1 power. Critical. With a certain chance, recovers 5% MP after a ranged attack. (Cooldown: 40 sec.) Triggers after using Stealthy Swiftness to attack from a distance. The MP recovery buff and cooldown time are shared with other skills. -->
 		<icon>icon.triple_impact</icon>
 		<castRange>600</castRange>
 		<coolTime>500</coolTime>
@@ -581,7 +581,7 @@
 		</effects>
 	</skill>
 	<skill id="47008" toLevel="1" name="Stealthy Swiftness">
-		<!-- <Changing skill> With a certain chance, recovers 5% of MP after a range attack. The character attacks so fast that the target cannot see them. Attacks the enemy twice with 6550 power. Ignores 10% of the target's defense. Critical. -->
+		<!-- <Changing skill> Makes such a fast attack that the target doesn't see you. Attacks the enemy twice with 6550 power. Ignores 10% of the target's defense. Critical. With a certain chance, recovers 5% MP after a ranged attack. (Cooldown: 40 sec.) Triggers after using Dual Blow/ Triple Blow to attack from a distance. The MP recovery buff and cooldown time are shared with other skills. -->
 		<icon>icon.silent_blitzsilent_blitz</icon>
 		<castRange>600</castRange>
 		<coolTime>500</coolTime>
@@ -662,7 +662,7 @@
 		</effects>
 	</skill>
 	<skill id="47011" toLevel="10" name="Freezing Wound">
-		<!-- <Suppression/ changing skill> Uses spirit powers to attack. Power $s1. <Freezing Effect> Duration: 3 sec. Atk. Spd. -200 Casting Spd. -200 Speed -50 -->
+		<!-- <Suppression/ changing skill> Uses spirit powers to attack. The attack power is equal to $s1 from your P. Atk. <Freezing Effect> Duration: 3 sec. Atk. Spd. -200 Casting Spd. -200 Speed -50 -->
 		<icon>icon.freezing_wound</icon>
 		<castRange>600</castRange>
 		<effectPoint>
@@ -928,7 +928,7 @@
 				<distance>100</distance>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>47018</skillId> <!-- Freezing Effect -->
+				<skillId>47018</skillId> <!-- Transcendent Freezing Effect -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1488,7 +1488,7 @@
 		</effects>
 	</skill>
 	<skill id="47030" toLevel="3" name="Elemental Wild Magic">
-		<!-- M. Critical Rate $s1 -->
+		<!-- M. Skill Critical Rate $s1 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1764,7 +1764,7 @@
 				<power>6000</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>47057</skillId>
+				<skillId>47057</skillId> <!-- Elemental Mark -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1788,13 +1788,13 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkill">
-				<skillId>47047</skillId>
+				<skillId>47047</skillId> <!-- Elemental Blessing -->
 				<skillLevel>1</skillLevel>
 				<targetType>ENEMY_NOT</targetType>
 				<adjustLevel>true</adjustLevel>
 			</effect>
 			<effect name="TriggerSkill">
-				<skillId>47046</skillId>
+				<skillId>47046</skillId> <!-- Elemental Weakness -->
 				<skillLevel>1</skillLevel>
 				<targetType>ENEMY_ONLY</targetType>
 				<adjustLevel>true</adjustLevel>
@@ -2070,7 +2070,7 @@
 		</effects>
 	</skill>
 	<skill id="47053" toLevel="1" name="Elemental Guard Lv. 2">
-		<!-- Guarding spirits decrease received damage. Resistance to All Weapons +$s1 All Skill Evasion +$s2 -->
+		<!-- Guarding spirits decrease received damage. Resistance to All Weapons +$s1 Skill Evasion +$s2 -->
 		<icon>icon.elemental_guard</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -2138,7 +2138,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="TriggerSkill">
-				<skillId>47055</skillId>
+				<skillId>47055</skillId> <!-- Elemental Remedy -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">1</value>
@@ -2147,7 +2147,7 @@
 				<adjustLevel>true</adjustLevel>
 			</effect>
 			<effect name="TriggerSkill">
-				<skillId>47056</skillId>
+				<skillId>47056</skillId> <!-- Elemental Dust -->
 				<skillLevel>1</skillLevel>
 				<targetType>ENEMY_ONLY</targetType>
 				<adjustLevel>true</adjustLevel>
@@ -2235,7 +2235,6 @@
 		</effects>
 	</skill>
 	<skill id="47058" toLevel="1" name="Dragon Strike">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -2488,7 +2487,7 @@
 		</effects>
 	</skill>
 	<skill id="47082" toLevel="15" name="Light Armor Mastery">
-		<!-- When using light armor P. Def. +$s1 M. Def. +$s2 P. Evasion +$s3 Atk. Spd. +$s4 Speed +$s5 All received Critical Rate -$s6 -->
+		<!-- When using light armor: P. Def. +$s1 M. Def. +$s2 P. Evasion +$s3 Atk. Spd. +$s4 Speed +$s5 All received Critical Rate -$s6 -->
 		<icon>icon.sylph_light_armor</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2705,17 +2704,15 @@
 		</effects>
 	</skill>
 	<skill id="47095" toLevel="35" name="Transcendent Triple Blow">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Changing skill> Uses spirit powers in combat. Attacks the enemy thrice with $s1 power. Critical. With a certain chance, recovers 5% MP after a ranged attack. (Cooldown: 40 sec.) Triggers after using Stealthy Swiftness to attack from a distance. The MP recovery buff and cooldown time are shared with other skills. The skill can be used only in the transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47096" toLevel="35" name="Transcendent Triple Blow">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47097" toLevel="35" name="Transcendent Triple Blow">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

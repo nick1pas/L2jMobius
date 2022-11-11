@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="47901" toLevel="1" name="Summon Cat Emperor">
+		<!-- <Summoning skill> Summons Cat Emperor. <Servitor skills> - Emperor's Blessing: Increases the summoner's M. Atk./ M. Skill Power/ M. Skill Critical Rate/ M. Skill Critical Damage, decreases M. Skill Cooldown. - Outcry: Attacks the target and enemies around them with the emperor's powers. - Master Recharge: Recovers the summoner's MP. - Basic Effect: A chance to inflict Hold on the target for 5 sec. after a basic attack. (Trigger cooldown: 15 sec.) -->
 		<icon>icon.skill0000</icon>
 		<hitTime>4500</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -24,6 +25,7 @@
 		</effects>
 	</skill>
 	<skill id="47902" toLevel="1" name="Emperor's Blessing">
+		<!-- The Cat Emperor's blessing increases your attack power. M. Atk. $s1 M. Skill Power $s2 M. Skill Critical Rate $s3 M. Skill Critical Damage $s3 M. Skill Cooldown $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalVisualEffect>H_Y_BLESSING_OF_EMPEROR_AVE</abnormalVisualEffect>
@@ -83,6 +85,7 @@
 		</effects>
 	</skill>
 	<skill id="47904" toLevel="1" name="Summon Unicorn Guard">
+		<!-- <Summoning skill> Summons Unicorn Guard. <Servitor skills> - Guard's Blessing: Increases the summoner's M. Atk./ M. Skill Power/ M. Skill Critical Rate/ M. Skill Critical Damage, decreases M. Skill Cooldown. - Trample: Attacks nearby enemies with mighty hoofs. - Master Recharge: Recovers the summoner's MP. - Basic Effect: A chance to stun the target for 3 sec. after a basic attack. (Trigger cooldown: 15 sec.) -->
 		<icon>icon.skill0000</icon>
 		<hitTime>4500</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -106,6 +109,7 @@
 		</effects>
 	</skill>
 	<skill id="47905" toLevel="1" name="Guard's Blessing">
+		<!-- The Unicorn Guard's blessing increases your attack power. M. Atk. $s1 M. Skill Power $s2 M. Skill Critical Rate $s3 M. Skill Critical Damage $s3 M. Skill Cooldown $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalVisualEffect>H_B_BLESSING_OF_GUARDIAN_AVE</abnormalVisualEffect>
@@ -165,6 +169,7 @@
 		</effects>
 	</skill>
 	<skill id="47907" toLevel="1" name="Summon Lord Raise">
+		<!-- <Summoning skill> Summons Lord Raise. <Servitor skills> - Emperor's Blessing: Increases the summoner's M. Atk./ M. Skill Power/ M. Skill Critical Rate/ M. Skill Critical Damage, decreases M. Skill Cooldown. - Specter's Dance: Attacks enemies around the target with Lord Raise's blade dance. - Master Recharge: Recovers the summoner's MP. - Basic Effect: A chance to decrease Sleep/ Hold/ Shock/ Paralysis/ Fear/ Silence/ Pull Resistance for 15 sec. after a basic attack. (Trigger cooldown: 15 sec.) -->
 		<icon>icon.skill0000</icon>
 		<hitTime>4500</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -188,6 +193,7 @@
 		</effects>
 	</skill>
 	<skill id="47908" toLevel="1" name="Lord's Blessing">
+		<!-- The Lord Raise's blessing increases your attack power. M. Atk. $s1 M. Skill Power $s2 M. Skill Critical Rate $s3 M. Skill Critical Damage $s3 M. Skill Cooldown $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalVisualEffect>H_P_BLESSING_OF_LORD_AVE</abnormalVisualEffect>
@@ -247,36 +253,34 @@
 		</effects>
 	</skill>
 	<skill id="47910" toLevel="4" name="Summon Cubic of Secrets">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Summons Cubic of Secrets. M. Atk. $s1 When using magic skills (attack/ anomaly/ debuff): Delivers <font color="FFBB00">an additional attack</font>. The summoner's illusions attack the target. (Trigger cooldown: $s2) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47911" toLevel="4" name="Attack of Secrets">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47912" toLevel="4" name="Summon Elemental Cubic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Summons Elemental Cubic. M. Atk. $s1 When using magic skills (attack/ anomaly/ debuff): Delivers <font color="FFBB00">an additional attack</font>. The summoner's illusions attack the target. (Trigger cooldown: $s2) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47913" toLevel="4" name="Attribute Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47914" toLevel="4" name="Summon Phantom Cubic">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Summons Phantom Cubic. M. Atk. $s1 When using magic skills (attack/ anomaly/ debuff): Delivers <font color="FFBB00">an additional attack</font>. The summoner's illusions attack the target. (Trigger cooldown: $s2) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47915" toLevel="4" name="Phantom Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47916" toLevel="2" name="Chains of Pain">
+		<!-- Max HP $s2 Transfers $s1 of the received damage to a servitor. MP Consumption depends on your level. -->
 		<icon>icon.skill0000</icon>
 		<magicLevel>
 			<value level="1">86</value>
@@ -310,6 +314,7 @@
 		</effects>
 	</skill>
 	<skill id="47917" toLevel="5" name="Ray of Light">
+		<!-- Strikes the enemy with rays of light imbued with spirit power. Deals magic damage to the target with $s1 power. -->
 		<icon>icon.skill0000</icon>
 		<castRange>700</castRange>
 		<effectRange>1250</effectRange>
@@ -354,6 +359,7 @@
 		</effects>
 	</skill>
 	<skill id="47918" toLevel="13" name="Summoner's Attack Mastery">
+		<!-- P. Atk. $s1 M. Atk. $s2 Casting Spd. $s3 When using a bow or a spear, Casting Spd. -30%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -456,6 +462,7 @@
 		</effects>
 	</skill>
 	<skill id="47919" toLevel="13" name="Summoner's Armor Mastery">
+		<!-- M. Def. $s2 M. Damage Resistance $s3 When using robes: P. Def. $s1 Max HP $s4 When using light armor: P. Def. $s5 Casting Spd. $s6 Atk. Spd. $s7 MP Recovery Rate $s8 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -601,6 +608,7 @@
 		</effects>
 	</skill>
 	<skill id="47920" toLevel="8" name="Summoner's Recovery Mastery">
+		<!-- HP Recovery Rate $s2 MP Recovery Rate $s1 M. Skill Cooldown $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -658,6 +666,7 @@
 		</effects>
 	</skill>
 	<skill id="47921" toLevel="1" name="Cat Emperor - Hold">
+		<!-- The body is bound and unable to move. -->
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
@@ -678,6 +687,7 @@
 		</effects>
 	</skill>
 	<skill id="47922" toLevel="1" name="Unicorn Guard - Stun">
+		<!-- Cannot move due to shock. -->
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
@@ -778,6 +788,7 @@
 		</effects>
 	</skill>
 	<skill id="47926" toLevel="1" name="Lord Raise - Debuff">
+		<!-- Sleep/ Hold/ Shock/ Paralysis/ Fear/ Silence/ Pull Resistance -25%. -->
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
@@ -803,362 +814,346 @@
 		</effects>
 	</skill>
 	<skill id="47927" toLevel="1" name="Challenger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk.$s1 P. Skill Critical Rate $s1 P. Skill Critical Damage $s1 P. Skill Damage in PvP $s2 Shock Atk. Rate $s3 Max HP $s4 Max HP$s5 Temporarily enhances the following skills: - Blade Wave - Triple Sonic Slash While active, Sword Spirit is always charged. An additional attack is triggered after an attack on a single target. (Trigger cooldown: 2 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47928" toLevel="4" name="Blade Wave">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Swings the blade horizontally and attacks the enemies in front of you with $s1 power. For$s2 P. Def. $s3 Ignores Shield Defense. Ignores $s4 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47929" toLevel="4" name="Blade Wave - Challenger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Swings the blade horizontally and attacks the enemies in front of you with $s1 power. For$s2 P. Def. $s3 Ignores Shield Defense. Ignores $s4 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47930" toLevel="6" name="Slashing Blades">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks enemies at the front with crossed dual swords with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47931" toLevel="6" name="Slashing Blades - Challenger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks enemies at the front with crossed dual swords with $s1 power. Ignores $s2 of the target's defense. Ignores Shield Defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47932" toLevel="7" name="Blade Throw">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Shock skill> Throws a sword to the enemy at a distance. Attacks the enemy with $s1 power. Stuns for $s2. Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47933" toLevel="2" name="Sword Spirit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Allows to use power hidden in the sword. Sword Spirit is charging level by level when basic attacks and attack skills are used. (Charge cooldown: 3 sec.) Once Sword Spirit is charged to Lv. 5, an additional attack is triggered upon a single target hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47934" toLevel="4" name="Sword Spirit Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Sword Spirit charge has reached Lv. 1. Use basic attacks and attack skills to charge Sword Spirit to the next level. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47935" toLevel="1" name="Sword Spirit's Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47937" toLevel="4" name="Sword Spirit Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Sword Spirit charge has reached Lv. 1. Use basic attacks and attack skills to charge Sword Spirit to the next level. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47938" toLevel="1" name="Sword Spirit's Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47939" toLevel="1" name="Sword Spirit's Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47940" toLevel="1" name="Great Sweep">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Shock/ knockback skill> Swings the spear to attack all enemies in front of the character with $s1 power. Knock the enemies back and stuns them for $s2. For 5 sec. Speed buffs are blocked. Gap-closing skills cannot be used. Ignores Shield Defense. Ignores $s3 of the target's defense. Critical. The knockback effect is available only in PvP. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47941" toLevel="3" name="Spear Cage">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Hold skill with fixed cooldown> Throws the spear to the enemies around the target. Attacks them with $s1 power, and hold them for $s2 For $s3 P./ M. Def. $s4. Ignores Shield Defense. Ignores $s5 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47942" toLevel="6" name="Spear Rumble">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks nearby enemies with $s1 power. Removes Speed buffs. For $s2 P. Atk. $s3 P. Skill Critical Damage $s4 Ignores Shield Defense. Ignores $s5 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47943" toLevel="3" name="Unleashed Power">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Enhances physical abilities. Temporarily received damage $s1 Shock Atk. Rate $s2 P. Skill Power $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47944" toLevel="2" name="Anger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Unleashes suppressed anger and attacks nearby enemies. Anger is charging level by level when basic attacks and attack skills are used. (Charge cooldown: 3 sec.) Once Anger is charged to Lv. 5 an attack triggers an additional attack to nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47945" toLevel="5" name="Anger Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Anger charge has reached Lv. 1. Use basic attacks and attack skills to charge Anger to the next level. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47946" toLevel="1" name="Anger Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47947" toLevel="1" name="Presentation effect">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47948" toLevel="5" name="Anger Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Anger charge has reached Lv. 1. Use basic attacks and attack skills to charge Anger to the next level. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47949" toLevel="1" name="Anger Attack">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47950" toLevel="9" name="Provoke">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attracts nearby enemies to the character and decreases their Spear Resistance. The effect lasts for $s1 Spear Resistance $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47951" toLevel="13" name="Dual Sword Mastery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When using dual swords: P. Atk. $s1 Atk. Spd. $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47952" toLevel="13" name="Light Armor Mastery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When using light armor: P. Def. $s1 M. Def. $s3 P. Evasion $s2 MP Recovery Rate $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47953" toLevel="13" name="Heavy Armor Mastery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When using heavy armor: P. Def. $s1 M. Def. $s2 MP Recovery Rate $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47954" toLevel="8" name="Recovery Mastery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- HP Recovery Rate $s1 MP Recovery Rate $s2 Max HP $s3 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47955" toLevel="13" name="Polearm Mastery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When using a spear: P. Atk. $s1 Basic number of targets +10 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47956" toLevel="1" name="Sword Spirit - Challenger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- It's an effect applied by the Challenger skill. Sword Spirit is always charged. An additional attack is triggered when a single target is hit. (Trigger cooldown: 2 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47957" toLevel="2" name="Cancel Sword Spirit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47958" toLevel="2" name="Cancel Anger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47959" toLevel="1" name="Furious Sword Spirit">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Charges Sword Spirit to the full. Cannot be used while the Challenger effect is active. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47960" toLevel="1" name="Great Sweep">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47961" toLevel="7" name="Blade Throw">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47962" toLevel="1" name="Great Sweep">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Cannot move due to shock. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47963" toLevel="3" name="Spear Cage">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Imprisons into Spear Cage making the prisoner unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47964" toLevel="1" name="Anger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47965" toLevel="45" name="Triple Sonic Slash - Challenger">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47966" toLevel="7" name="Indestructible Sound">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Def. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47967" toLevel="3" name="Spear Cage">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Def. $s1 M. Def. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47968" toLevel="1" name="Great Sweep">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Speed buffs are disabled. Gap-closing skills cannot be used. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47969" toLevel="2" name="Sword Spirit Lv. 5">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Sword Spirit charge has reached Lv. 5. An additional attack is triggered upon a single target hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47970" toLevel="1" name="Overwhelming Power">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Free true power of Kamael. P. Atk. $s1 Atk. Spd. $s2 P. Skill Critical Rate $s3 P. Skill Critical Damage $s4 P. Skill Power $s5 Max HP $s6 Applies Overwhelming Force for 10 sec. upon use. <Overwhelming Force> P. Skill Critical Rate $s7 P. Skill Critical Damage $s8 Speed $s9 Received damage $s10 Shock Atk. Rate $s11 When basic attacks and attack skills are used against a single target, delivers an <font color="FFBB00">additional blow</font>. Ultimate skills can be used regardless of your transformation status. Removes disability. Prevents from taking the disability effect when Rush Impact is used. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47971" toLevel="1" name="Overwhelming Force">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Unleashes mighty power. P. Skill Critical Rate $s1 P. Skill Critical Damage $s2 Speed $s3 Received damage $s4 Shock Atk. Rate $s5 <Special effects> When basic attacks and attack skills are used against a single target, delivers an <font color="FFBB00">additional blow</font>. Ultimate skills can be used regardless of your transformation status. Enuma Elish: adds 1 blow/ changes range. Rush Impact: adds 1 blow. Removes disability. Prevents from taking the disability effect when Rush Impact is used. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47972" toLevel="1" name="Force - Enuma Elish">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47973" toLevel="1" name="Force - Enuma Elish">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47974" toLevel="11" name="Effective Disarm">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Unequip skill> Disarms an enemy character. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47975" toLevel="1" name="Powerful Disarm">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Skill upgrade> Disarm ? Effective Disarm <Upgrade effect> Increases hit rate. Decreases cooldown. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47976" toLevel="6" name="Soul Mark">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Swings the sword to attack the target with $s1 power. Casts a mark that blocks the target's magic power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. <Debuff> MP Drain speed $s3 M. Skill Power $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47977" toLevel="1" name="Shock Impact">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Shock Atk. Rate +15% Soul Impulse use triggers the stun effect. (Cooldown: 5 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47978" toLevel="1" name="Rush - Presentation">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47979" toLevel="1" name="Leopold">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Summons an ancient weapon, and attacks the enemy with powerful shot. After two magic attacks with $s1 power attacks trice and deals $s2 damage depending on P. Atk. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47980" toLevel="3" name="Soul Snatch">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Steal skill</font>> Deals magic damage with $s1 power. There is a certain chance to steal up to $s2 buffs from the enemy. Monsters' buffs cannot be stolen. Stacks the Soul Resonance effect with each steal attempt. <Soul Resonance> Increases P./ M. Atk. for 5 min. Lv. 1: P./ M. Atk. +200 Lv. 2: P./ M. Atk. +300 Lv. 3: P./ M. Atk. +400 Lv. 4: P./ M. Atk. +600 Lv. 5: P./ M. Atk. +800 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47981" toLevel="1" name="Fragarach">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A sword of light called Fragarach protects the character. When damage is taken, the sword of light counterattacks and deals damage to the attacking enemy. (Cooldown: 3 sec.) There is a certain chance to paralyze (with lightning) the counterattacked enemy for 3 sec. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47982" toLevel="1" name="Fragarach">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47983" toLevel="1" name="Lightning Tornado">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A lightning tornado rushes to the enemy when Soul Spark is used. <Lightning Tornado> M. Power: 190 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47984" toLevel="1" name="Lightning Tornado">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47985" toLevel="3" name="Death Pain">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- HP Recovery Rate $s1 There is a certain chance that Death Pain Lv. $s2 is triggered after an attack. (Cooldown: 10 sec.) <Death Pain> All received Critical Damage $s3 Ancient Sword Resistance $s4 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47986" toLevel="3" name="Death Pain Lv. 1">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- All received Critical Damage $s1 Ancient Sword Resistance $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47987" toLevel="6" name="Force - Enuma Elish">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Force skill</font>> The sword of justice, Enuma Elish, attacks the target and nearby enemies twice with $s1 power. Critical. Ignores Shield Defense. Ignores $s2 of the their defense. Applies an enhancing effect - Overwhelming Force. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47988" toLevel="1" name="Resonance">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Skill upgrade> Soul Steal ? Soul Snatch <Upgrade effect> Adds magic damage. Increases the number stacks. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47989" toLevel="1" name="Lightning Mastery">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Paralysis Atk. Rate +15% <Skill upgrade> Lightning ? Lightning Squall <Upgrade effect> Deals magic damage. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47990" toLevel="11" name="Lightning Squall">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Paralyzing skill> The effect lasts for $s1 Inflicts Paralysis (lightning). Deals magic damage with $s2 power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47991" toLevel="11" name="Lightning Squall">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Makes unable to move because of the lightning strike. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47992" toLevel="1" name="Leopold">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47993" toLevel="5" name="Soul Resonance">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47994" toLevel="1" name="Lightning Spark">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <Paralyzing skill> The lightning strike instantly prevents the enemy from moving. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47995" toLevel="4" name="Disability">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- When Rush Impact is used uninterrupted Max HP -$s1 Blocks HP Recovery once the target is hit. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47996" toLevel="1" name="Shock Impact">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Stuns making unable to move. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47997" toLevel="3" name="Soul Harmony">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47998" toLevel="20" name="Transcendent Spike Thrust">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. The skill can only be used in transcendent instance zones. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="47999" toLevel="6" name="Force - Rush Impact">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <<font color="FF8000">Rush/ shock/ force skill</font>> Rushes forward to attack enemies at the front with $s1 power. Strikes with the sword to deliver an additional blow with $s4 power. Critical. There is a certain chance to inflict Stun for $s2 Can be used if the distance to the target is more than $s3. Applies an enhancing effect - Overwhelming Force. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

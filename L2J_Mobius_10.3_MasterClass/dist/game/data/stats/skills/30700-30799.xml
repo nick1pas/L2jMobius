@@ -75,7 +75,7 @@
 		</effects>
 	</skill>
 	<skill id="30701" toLevel="2" name="Intermediate Weapon Mastery">
-		<!-- P. Atk. +$s1, additional P. Atk. +$s2, Atk. Spd +$s3, P. Accuracy +$s4 when a sword, blunt, or spear is equipped. Increases the number of possible targets during a spear attack. STR +$s5. Depending on your STR, the Cooldown resets or the duration increases by $s6 times. -->
+		<!-- P. Atk. +$s1 and additionally +$s2, Atk. Spd +$s3, P. Accuracy +$s4. Increases the number of targets hit with a spear. Additionally, STR +$s5. Requires a sword, a blunt weapon or a spear. Depending on your STR, gives a chance to reset skill cooldown or increase the effect's duration by $s6 times. -->
 		<icon>icon.skill10251</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -231,7 +231,7 @@
 		</effects>
 	</skill>
 	<skill id="30704" toLevel="2" name="Intermediate Two-handed Weapon Mastery">
-		<!-- When a two-handed sword or two-handed blunt is equipped, increases P. Atk. by $s1 and additionally by $s2. -->
+		<!-- When using a two-handed sword/ blunt weapon, P. Atk. +$s1 and additionally +$s2. -->
 		<icon>icon.skill11838</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -325,7 +325,7 @@
 		</effects>
 	</skill>
 	<skill id="30707" toLevel="2" name="Intermediate Blunt Weapon Mastery">
-		<!-- P. Atk. +$s1 and Critical Rate for standard attacks +$s2 when blunt weapon is used. -->
+		<!-- When using a blunt weapon, P. Atk. +$s1, Critical Rate for basic attacks +$s2. -->
 		<icon>icon.skill10329</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -357,7 +357,7 @@
 		</effects>
 	</skill>
 	<skill id="30708" toLevel="2" name="Intermediate Heavy Armor Mastery">
-		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, received Critical Damage from standard attacks -$s3. Additionally, STR +$s4. -->
+		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, received Critical Damage from basic attacks -$s3. Additionally, STR +$s4. -->
 		<icon>icon.skill10253</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -466,7 +466,7 @@
 		</effects>
 	</skill>
 	<skill id="30710" toLevel="2" name="Intermediate Force Mastery">
-		<!-- Absorbs Momentum by $s1 after a standard attack and $s2 after a critical attack. Can absorb up to $s3 Momentum levels. $s4 chance of triggering Lightning Force after a standard attack. -->
+		<!-- Increases Momentum up to Lv. $s3 with a $s1 chance after a basic attack and with a $s2 chance after a critical attack. Additionally with a $s4 chance, triggers Lightning Force after a basic attack. -->
 		<icon>icon.skill10255</icon>
 		<!-- Absorbs Momentum by 15% during a standard attack and 30% during a critical attack. Can absorb up to 10 Momentum levels. 40% chance of triggering Lightning Force during a standard attack. -->
 		<operateType>P</operateType>
@@ -572,7 +572,7 @@
 		</effects>
 	</skill>
 	<skill id="30712" toLevel="2" name="Intermediate Heavy Armor Mastery">
-		<!-- STR +$s5. When using heavy armor, Max HP +$s1, P. Def. +$s2, MP Recovery Rate +$s3, received Critical Damage from standard attacks -$s4. Reflects $s6 of the received damage back to the enemy. -->
+		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, MP Recovery Rate +$s3, received Critical Damage from basic attacks -$s4. Additionally, STR +$s5. Reflects $s6 of the received damage back to the enemy. -->
 		<icon>icon.skill10002</icon>
 		<!-- When heavy armor is equipped, Max HP +900, P. Def. +248, MP Recovery Bonus +6.4, and P. Critical Damage Received -25%. Additionally, STR +1, and 8% of damage received is returned to the opponent. -->
 		<operateType>P</operateType>
@@ -667,7 +667,7 @@
 		</effects>
 	</skill>
 	<skill id="30714" toLevel="2" name="Intermediate Dagger Mastery">
-		<!-- When using a dagger, P. Atk. +$s1 and +$s2, Atk. Spd. +$s3, P. Accuracy +$s4, Vital Point Attack Rate +$s5. Additionally, STR +$s6. Depending on STR, P./ M. Skill Cooldown can be reset or its duration can be increased by $s7 times. -->
+		<!-- When using a dagger, P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, P. Accuracy +$s4, Vital Point Attack Rate +$s5. Additionally, STR +$s6. Depending on STR, P./ M. Skill Cooldown can be reset or its duration can be increased by $s7 times. -->
 		<icon>icon.skill10501</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -840,7 +840,7 @@
 		</effects>
 	</skill>
 	<skill id="30717" toLevel="2" name="Intermediate Bow/Crossbow Mastery">
-		<!-- P. Atk. +$s1 and additionally +$s2 when using a bow or a crossbow. Atk. Spd. +$s3, P. Accuracy +$s4. STR +$s5. Depending on your STR, the skill cooldown can be reset or its duration can be increases by $s6 times. -->
+		<!-- When using a bow or a crossbow, P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, P. Accuracy +$s4. Additionally, STR +$s5. Depending on your STR, gives a chance to reset skill cooldown or increase the effect's duration by $s6 times. -->
 		<icon>icon.skill10751</icon>
 		<!-- P. Atk. +7%, additional P. Atk. +240, Atk. Spd. +12%, P. Accuracy +6 when using a bow or crossbow. STR +1. Depending on your STR, the Cooldown resets or the abnormal status duration increases 2 times. -->
 		<operateType>P</operateType>
@@ -973,7 +973,7 @@
 		</effects>
 	</skill>
 	<skill id="30719" toLevel="2" name="Intermediate Weapon Mastery">
-		<!-- M. Atk. +$s1, additional M. Atk. +$s2, Casting Spd. +$s3. Depending on your INT, the Cooldown resets or the duration increases by $s4 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3. Depending on your INT, there is a chance to reset Skill Cooldown or extend skill duration by $s4 times. -->
 		<icon>icon.skill11251</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1051,7 +1051,7 @@
 		</effects>
 	</skill>
 	<skill id="30721" toLevel="2" name="Intermediate Sigil Mastery">
-		<!-- M. Atk. +$s1, MP Recovery Rate +$s2 when using a sigil. -->
+		<!-- When using a sigil, M. Atk. +$s1, MP Recovery Rate +$s2. -->
 		<icon>icon.skill11791</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1080,7 +1080,7 @@
 		</effects>
 	</skill>
 	<skill id="30722" toLevel="2" name="Intermediate Dual Weapon Mastery">
-		<!-- P. Atk. +$s1 and additionally +$s2 when using dual swords or dual blunt weapons. Atk. Spd. +$s3, Critical Damage for standard attacks +$s4. When using all types of weapons, damage to monsters +$s5, has a chance to activate Physical Pose after a standard attack. Depending on your STR, the skill cooldown can be reset, or its duration can be increased by $s6 times. -->
+		<!-- When using dual swords/ blunt weapons, P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, Critical Damage for basic attacks +$s4. When using all types of weapons, damage to monsters +$s5 -->
 		<icon>icon.skill10252</icon>
 		<!-- P. Atk. +20%, additional P. Atk. +132, Atk. Spd. +20%, P. Critical Damage +8% when a dual sword/ dual blunt is equipped. Normal hit damage to monsters +10%. Chance to activate Physical Pose during a standard attack. Depending on STR, your STR can reset cooldown or double skill effect duration. -->
 		<operateType>P</operateType>
@@ -1150,7 +1150,7 @@
 		</effects>
 	</skill>
 	<skill id="30723" toLevel="2" name="Intermediate Sword / Blunt Weapon Mastery">
-		<!-- P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, Critical Damage for standard attacks +$s4, when using a sword or a blunt weapon. Has a chance to activate Physical Pose after a standard attack. -->
+		<!-- When using a sword or a blunt weapon, P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, Critical Damage for basic attacks +$s4. Additionally with a certain chance, triggers Physical Pose after a basic attack. -->
 		<icon>icon.skill10001</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1285,7 +1285,7 @@
 		</effects>
 	</skill>
 	<skill id="30726" toLevel="2" name="Intermediate Heavy Armor Mastery">
-		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, received Critical Damage from standard attacks -$s3. -->
+		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, received Critical Damage from basic attacks -$s3. -->
 		<icon>icon.skill10002</icon>
 		<!-- When heavy armor is equipped, Max HP +600, P. Def. +203, P. Critical Damage Received -25%. -->
 		<operateType>P</operateType>
@@ -1377,7 +1377,7 @@
 		</effects>
 	</skill>
 	<skill id="30729" toLevel="2" name="Intermediate Weapon Mastery">
-		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3, M. Skill Critical Rate +$s4. When using a two-handed staff or a two-handed blunt weapon, P. Atk. +$s5 and additionally +$s6, P. Accuracy +$s7. INT +$s8. Depending on INT, with a certain chance, resets the skill cooldown or increases the skill duration by $s9 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3, M. Skill Critical Rate +$s4. When using a two-handed staff or a two-handed blunt weapon, P. Atk. +$s5 and additionally +$s6, P. Accuracy +$s7. INT +$s8. Depending on your INT, there is a chance to reset Skill Cooldown or extend P./ M. skill duration by $s9 times. -->
 		<icon>icon.skill11251</icon>
 		<!-- Increases M. Atk. by 12%, additional M. Atk. by 140, Casting Spd. by 15%, M. Critical Rate by 4%. P. Atk. by 100%, additional P. Atk. by 112, P. Accuracy by 2 when a two-handed staff or two-handed blunt is equipped. Increases INT by 1. Depending on INT, the skill cooldown resets or duration increases by 2 times. -->
 		<operateType>P</operateType>
@@ -1508,7 +1508,7 @@
 		</effects>
 	</skill>
 	<skill id="30730" toLevel="2" name="Intermediate Robe Mastery">
-		<!-- When using robe, Max HP +$s1, P. Def. +$s2, M. Def. +$s3. Additionally INT +$s4. -->
+		<!-- When using robe, Max HP +$s1, P. Def. +$s2, M. Def. +$s3. Additionally, INT +$s4. -->
 		<icon>icon.skill11252</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1631,7 +1631,7 @@
 		</effects>
 	</skill>
 	<skill id="30733" toLevel="2" name="Intermediate Magic Weapon Mastery">
-		<!-- M. Atk. +$s1, additional M. Atk. +$s2, M. Skill Critical Rate +$s3. INT +$s4. Depending on INT, has a chance to reset Skill Cooldown or extend the duration of the skill effect in $s5 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, M. Skill Critical Rate +$s3, INT +$s4. Depending on your INT, there is a chance to reset skill cooldown or extend skill duration by $s5 times. -->
 		<icon>icon.skill11251</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1671,7 +1671,7 @@
 		</effects>
 	</skill>
 	<skill id="30734" toLevel="2" name="Intermediate Armor Mastery">
-		<!-- When using light armor/ robe, Max HP +$s1, P. Def. +$s2, M. Def. +$s3, HP Recovery Rate +$s4, MP Recovery Rate +$s5. Additionally INT +$s6. -->
+		<!-- When using light armor or robe, Max HP +$s1, P. Def. +$s2, M. Def. +$s3, HP Recovery Rate +$s4, MP Recovery Rate +$s5. Additionally, INT +$s6. -->
 		<icon>icon.skill11787</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -2057,7 +2057,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="30742" toLevel="1" name="Novice Shadow Chase">
-		<!-- Moves behind the enemy canceling their target and stunning them for $s1 Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Moves behind the enemy canceling their target and stunning them for $s1. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill10516</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -2130,7 +2130,7 @@
 		</effects>
 	</skill>
 	<skill id="30744" toLevel="1" name="Novice Critical Wound">
-		<!-- For $s1, target's Received Critical Damage from standard attacks +$s2. Requires a dagger or dual daggers. -->
+		<!-- For $s1, the target's received Critical Damage from basic attacks +$s2. Requires a dagger or dual daggers. -->
 		<icon>icon.skill0531</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -2280,7 +2280,7 @@
 		</effects>
 	</skill>
 	<skill id="30748" toLevel="1" name="Novice Final Elemental Storm">
-		<!-- Deals magical attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
+		<!-- Deals attribute damage to the target and nearby enemies with $s1 power. Over-hit. -->
 		<icon>icon.skill11040</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -2386,7 +2386,7 @@
 		</effects>
 	</skill>
 	<skill id="30751" toLevel="1" name="Novice Attribute Resistance">
-		<!-- For $s1, Attribute Resistance of party members +$s2. -->
+		<!-- For $s1, party members' Attribute Resistance +$s2. -->
 		<icon>icon.skill11565</icon>
 		<operateType>A2</operateType>
 		<hitTime>700</hitTime>
@@ -2473,7 +2473,7 @@
 		</effects>
 	</skill>
 	<skill id="30753" toLevel="1" name="Novice Mental Resistance">
-		<!-- For $s1, party members' resistance to buff-canceling attacks/ debuffs +$s2. -->
+		<!-- For $s1, party members' Buff Cancel/ Debuff Resistance +$s2. -->
 		<icon>icon.skill11824</icon>
 		<operateType>A2</operateType>
 		<hitTime>700</hitTime>
@@ -2949,7 +2949,7 @@
 		</effects>
 	</skill>
 	<skill id="30768" toLevel="15" name="Sonic Storm">
-		<!-- Attacks the target and nearby enemies with $s1 Power added to P. Atk. Requires a sword, blunt weapon, spear, fist weapon, dual blunt weapon, or dual sword. Over-hit. Critical. -->
+		<!-- Attacks nearby enemies with $s1 power. Requires a sword, a blunt weapon, a spear, a fist weapon, dual blunt weapons, or dual swords. Critical. Over-hit. -->
 		<icon>icon.skill0007</icon>
 		<operateType>A1</operateType>
 		<castRange>500</castRange>
@@ -3026,7 +3026,7 @@
 		</effects>
 	</skill>
 	<skill id="30769" toLevel="15" name="Force Storm">
-		<!-- Attacks the target and nearby enemies with $s1 Power added to P. Atk. Requires a sword, blunt weapon, spear, fist weapon, dual blunt weapon, or dual sword. Over-hit. Critical. -->
+		<!-- Attacks nearby enemies with $s1 power. Requires a sword, a blunt weapon, a spear, a fist weapon, dual blunt weapons, or dual swords. Critical. Over-hit. -->
 		<icon>icon.skill0035</icon>
 		<operateType>A1</operateType>
 		<castRange>500</castRange>
@@ -3997,7 +3997,7 @@
 		</selfEffects>
 	</skill>
 	<skill id="30780" toLevel="11" name="Dance of Medusa">
-		<!-- Dance that evokes the mirage of Medusa. Petrifies nearby enemies for $s1 Requires a dual sword. Inflicted status: Petrification. -->
+		<!-- A dance that evokes the mirage of Medusa. Petrifies nearby enemies for $s1 Requires dual swords. Inflicted status: Petrification. -->
 		<icon>icon.skill0367</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -4246,7 +4246,7 @@
 		</effects>
 	</skill>
 	<skill id="30783" toLevel="11" name="Song of Silence">
-		<!-- Prevents enemies from using physical/ magic skills for $s1 Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
+		<!-- Blocks enemies' P./ M. skills for $s1. Inflicted status: Obstruction (Disarm, Hold, Blind, Block, Aggression, Silence, Banishment, Bluff, Stealth). -->
 		<icon>icon.skill0437</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -4455,7 +4455,7 @@
 		</effects>
 	</skill>
 	<skill id="30786" toLevel="10" name="Critical Wound">
-		<!-- For $s1, target's Received Critical Damage from standard attacks +$s2. Requires a dagger or dual daggers. -->
+		<!-- For $s1, the target's received Critical Damage from basic attacks +$s2. Requires a dagger or dual daggers. -->
 		<icon>icon.skill0531</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -4760,7 +4760,7 @@
 		</effects>
 	</skill>
 	<skill id="30789" toLevel="11" name="Summon Reanimated Man">
-		<!-- Summons a Cursed Man. -->
+		<!-- Summons a Reanimated Man. -->
 		<icon>icon.skill1129</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -5056,7 +5056,7 @@
 		</effects>
 	</skill>
 	<skill id="30793" toLevel="5" name="Pa'agrio's Fist">
-		<!-- For $s1, restores and increases clan members' Max CP +$s2. -->
+		<!-- For $s1, increases a clan member's Max CP, their CP +$s2. Cannot be used in the Conquest world. -->
 		<icon>icon.skill1416</icon>
 		<operateType>A2</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -5250,7 +5250,7 @@
 		</effects>
 	</skill>
 	<skill id="30796" toLevel="1" name="Novice Crier's Harmony">
-		<!-- For $s1, the targeted party member's P. Atk. +$s2, M. Atk. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Atk. Spd./ Casting Spd. +$s6, Skill Cooldown -$s7, Skill MP Consumption -$s8. -->
+		<!-- For $s1, the targeted party member's P. Atk. +$s2, M. Atk. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Atk. Spd./ Casting Spd. +$s6, Skill Cooldown -$s7, Skill MP Consumption -$s8. -->
 		<icon>icon.skill19503</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>

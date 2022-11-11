@@ -426,7 +426,7 @@
 		</effects>
 	</skill>
 	<skill id="10104" toLevel="2" name="Paladin's Aura">
-		<!-- For you and your party members, P./ M. Def. +$s1, Debuff Resistance +$s2, Received P./ M. Critical Damage -$s3, P./ M. Skill Cooldown -$s4. Only one Knight's Aura can be active at any time. -->
+		<!-- For you and your party members, P./ M. Def. +$s1, Debuff Resistance +$s2, received P./ M. Critical Damage -$s3, P./ M. Skill Cooldown -$s4. Only one aura can be active at any time. -->
 		<icon>icon.skill10104</icon>
 		<magicCriticalRate>5</magicCriticalRate>
 		<toggleGroupId>4</toggleGroupId>
@@ -507,7 +507,7 @@
 		</effects>
 	</skill>
 	<skill id="10105" toLevel="2" name="Avenger's Aura">
-		<!-- For you and your allies, P./ M. Atk. +$s1, P./ M. Def. +$s2, Damage Reflection +$s3, Received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one Knight's Aura can be active at any time. -->
+		<!-- For you and your party members, P./ M. Atk. +$s1, P./ M. Def. +$s2, Damage Reflection +$s3, received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one aura can be active at any time. -->
 		<icon>icon.skill10105</icon>
 		<magicCriticalRate>5</magicCriticalRate>
 		<toggleGroupId>4</toggleGroupId>
@@ -622,7 +622,7 @@
 				<chance>30</chance>
 				<targetType>SELF</targetType>
 				<minDamage>1</minDamage>
-				<skillId>10071</skillId> <!-- Eva's Presence -->
+				<skillId>10071</skillId> <!-- Eva's Spirit -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="PhysicalDefence">
@@ -710,7 +710,7 @@
 		</effects>
 	</skill>
 	<skill id="10107" toLevel="2" name="Templar's Aura">
-		<!-- For you and your allies, P./ M. Atk. +$s1, P./ M. Def. +$s2, Speed +$s3, Received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one aura can be active at any time. -->
+		<!-- For you and your party members, P./ M. Atk. +$s1, P./ M. Def. +$s2, Speed +$s3, received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one aura can be active at any time. -->
 		<icon>icon.skill10107</icon>
 		<magicCriticalRate>5</magicCriticalRate>
 		<toggleGroupId>4</toggleGroupId>
@@ -805,7 +805,7 @@
 		</effects>
 	</skill>
 	<skill id="10108" toLevel="2" name="Paladin's Aura">
-		<!-- P./ M. Def. +$s1, Debuff Resistance +$s2, Received P./ M. Critical Damage -$s3, P./ M. Skill Cooldown -$s4. Only one Knight's Aura can be active at any time. -->
+		<!-- P./ M. Def. +$s1, Debuff Resistance +$s2, received P./ M. Critical Damage -$s3, P./ M. Skill Cooldown -$s4. Only one aura can be active at any time. -->
 		<icon>icon.skill10104</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>11</abnormalTime>
@@ -881,7 +881,7 @@
 		</effects>
 	</skill>
 	<skill id="10109" toLevel="2" name="Avenger's Aura">
-		<!-- P./ M. Atk. +$s1, P./ M. Def. +$s2, Damage Reflection +$s3, P. Critical Damage/ M. Critical Damage Received -$s4, P./ M. Skill Cooldown -$s5. Only one Knight's Aura can be active at any time. -->
+		<!-- P./ M. Atk. +$s1, P./ M. Def. +$s2, Damage Reflection +$s3, received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one aura can be active at any time. -->
 		<icon>icon.skill10105</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>11</abnormalTime>
@@ -1069,7 +1069,7 @@
 		</effects>
 	</skill>
 	<skill id="10111" toLevel="2" name="Templar's Aura">
-		<!-- P./ M. Atk. +$s1, P./ M. Def. +$s2, Speed +$s3, Received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one Knight's Aura can be active at any time. -->
+		<!-- P./ M. Atk. +$s1, P./ M. Def. +$s2, Speed +$s3, received P./ M. Critical Damage -$s4, P./ M. Skill Cooldown -$s5. Only one aura can be active at any time. -->
 		<icon>icon.skill10107</icon>
 		<abnormalLevel>
 			<value level="1">1</value>

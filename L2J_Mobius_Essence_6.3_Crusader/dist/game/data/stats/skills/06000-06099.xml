@@ -430,7 +430,7 @@
 		</effects>
 	</skill>
 	<skill id="6042" toLevel="1" name="Phoenix Cleanse">
-		<!-- Cancels the target's de-buff. -->
+		<!-- Removes the target's debuffs. -->
 		<icon>icon.skill6042</icon>
 		<castRange>600</castRange>
 		<effectPoint>679</effectPoint>
@@ -753,7 +753,7 @@
 		</effects>
 	</skill>
 	<skill id="6049" toLevel="4" name="Battle Cry">
-		<!-- Utters a battle cry that increases one's own P. Atk., P./ M. Def. -->
+		<!-- A pet makes a battle cry that increases its P. Atk. and P./ M. Def. -->
 		<icon>icon.action117</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1569,7 +1569,7 @@
 		</effects>
 	</skill>
 	<skill id="6093" toLevel="1" name="Panther Hide">
-		<!-- Allows one to stay hidden. Speed -10%. The effect is cancelled if any action other than movement is initiated. -->
+		<!-- Hides you from enemies. Speed -10%. The effect is cancelled if any action other than movement is initiated. -->
 		<icon>icon.skill0922</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>

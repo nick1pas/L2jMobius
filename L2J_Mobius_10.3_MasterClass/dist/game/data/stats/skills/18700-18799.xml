@@ -417,21 +417,21 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="18711" toLevel="1" name="Blessing of Twilight">
-		<!-- For 1 h., Acquired XP/ SP +50%. -->
+		<!-- For 1 h., acquired XP/ SP +50%. -->
 		<icon>BranchSys2.icon.g_giant_gem</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="18712" toLevel="1" name="Blessing of the Dawn">
-		<!-- For 1 h., Acquired XP/ SP +50%. -->
+		<!-- For 1 h., acquired XP/ SP +50%. -->
 		<icon>BranchSys2.icon.g_twilight_gem</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="18713" toLevel="20" name="Red Cat's Eye">
-		<!-- Critical Damage for standard attacks +$s1, P. Skill Critical Damage +$s2. -->
+		<!-- Critical Damage for basic attacks +$s1, P. Skill Critical Damage +$s2. -->
 		<icon>
 			<value level="1">icon.bm_jewel_red_catseye</value>
 			<value level="2">icon.bm_jewel_red_catseye</value>
@@ -531,7 +531,7 @@
 		</effects>
 	</skill>
 	<skill id="18714" toLevel="20" name="Blue Cat's Eye">
-		<!-- M. Skill Critical Damage +$s1. -->
+		<!-- M. Skill Critical Damage +$s1 -->
 		<icon>
 			<value level="1">Icon.bm_jewel_blue_catseye</value>
 			<value level="2">Icon.bm_jewel_blue_catseye</value>
@@ -606,7 +606,7 @@
 		</effects>
 	</skill>
 	<skill id="18715" toLevel="1" name="Greater Ruby">
-		<!-- Soulshot Damage +$s1. -->
+		<!-- Soulshot damage +$s1. -->
 		<icon>icon.bm_jewel_ssdmg_high_lv1_lavianrose</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -673,7 +673,7 @@
 		</effects>
 	</skill>
 	<skill id="18718" toLevel="2" name="Greater Sapphire">
-		<!-- Spiritshot Damage +$s1. -->
+		<!-- Spiritshot damage +$s1. -->
 		<icon>icon.bm_jewel_spsdmg_high_lv1_lavianrose</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -796,7 +796,7 @@
 		</effects>
 	</skill>
 	<skill id="18723" toLevel="6" name="Ultimate Fortune Jewelry Box">
-		<!-- Double-click to obtain Fortune Jewel Box. -->
+		<!-- Double-click to obtain one of Jewel Lucky Chests. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
@@ -1253,7 +1253,7 @@
 						<item id="30298" count="1" /> <!-- Superior Giant's Codex - Mastery -->
 					</item>
 					<item chance="11.11111111111111">
-						<item id="45931" count="1" /> <!-- High-grade Weapon Augmenting Stone -->
+						<item id="45931" count="1" /> <!-- High-grade Augmenting Stone: Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -1284,7 +1284,7 @@
 						<item id="46152" count="1" /> <!-- Superior Giant's Codex - Discipline Chapter 1 -->
 					</item>
 					<item chance="11.11111111111111">
-						<item id="45932" count="1" /> <!-- Top-grade Weapon Augmenting Stone -->
+						<item id="45932" count="1" /> <!-- Top-grade Augmenting Stone: Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -1315,7 +1315,7 @@
 						<item id="30298" count="1" /> <!-- Superior Giant's Codex - Mastery -->
 					</item>
 					<item chance="11.11111111111111">
-						<item id="45932" count="1" /> <!-- Top-grade Weapon Augmenting Stone -->
+						<item id="45932" count="1" /> <!-- Top-grade Augmenting Stone: Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -1346,7 +1346,7 @@
 						<item id="46152" count="1" /> <!-- Superior Giant's Codex - Discipline Chapter 1 -->
 					</item>
 					<item chance="11.11111111111111">
-						<item id="45932" count="1" /> <!-- Top-grade Weapon Augmenting Stone -->
+						<item id="45932" count="1" /> <!-- Top-grade Augmenting Stone: Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -1359,7 +1359,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="18734" toLevel="1" name="Balthus Knights' Disguise">
-		<!-- Your ability to blend in is even better than we hoped. -->
+		<!-- A disguise as a Balthus Knight. -->
 		<icon>icon.armor_t2000_b_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1369,7 +1369,7 @@
 		<effectPoint>780</effectPoint>
 	</skill>
 	<skill id="18735" toLevel="1" name="Balthus Knights' Disguise">
-		<!-- Your ability to blend in is even better than we hoped. -->
+		<!-- A disguise as a Balthus Knight. -->
 		<icon>icon.armor_t2000_b_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1379,7 +1379,7 @@
 		<effectPoint>780</effectPoint>
 	</skill>
 	<skill id="18736" toLevel="1" name="Balthus Knights' Disguise">
-		<!-- Your ability to blend in is even better than we hoped. -->
+		<!-- A disguise as a Balthus Knight. -->
 		<icon>icon.armor_t2000_b_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1389,7 +1389,7 @@
 		<effectPoint>780</effectPoint>
 	</skill>
 	<skill id="18737" toLevel="1" name="Balthus Knights' Disguise">
-		<!-- Your ability to blend in is even better than we hoped. -->
+		<!-- A disguise as a Balthus Knight. -->
 		<icon>icon.armor_t2000_b_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -1911,21 +1911,21 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="18748" toLevel="4" name="Horn Melody - Wealthy Merchant Red">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. -->
 		<icon>icon.skill11517</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>712</effectPoint>
 	</skill>
 	<skill id="18749" toLevel="4" name="Drum Melody - Wealthy Merchant Red">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>712</effectPoint>
 	</skill>
 	<skill id="18750" toLevel="4" name="Pipe Organ Melody - Wealthy Merchant Red">
-		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, Vampiric Rage effect +$s5. -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4. With a certain chance, absorbs $s5 of the inflicted damage as HP. -->
 		<icon>icon.skill11519</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -1939,21 +1939,21 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18752" toLevel="4" name="Harp Melody - Wealthy Merchant Red">
-		<!-- For $s1, P. Accuracy +$s2, P./ M. Evasion +$s3, and Speed +$s4. Received Critical Damage from standard attacks -$s5. -->
+		<!-- For $s1, P. Accuracy +$s2, P./ M. Evasion +$s3, Speed +$s4, received Critical Damage from basic attacks -$s5. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18753" toLevel="4" name="Lute Melody - Wealthy Merchant Red">
-		<!-- For $s1, Atk. Spd. and Casting Spd. +$s2 and $s3, respectively, and applies the Vampiric Rage effect for $s4 at a certain probability. -->
+		<!-- For $s1, Atk.Spd. +$s2, Casting Spd. +$s3. With a certain chance, Vampiric Rage effect +$s4. -->
 		<icon>icon.skill11518</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18754" toLevel="1" name="Prevailing Sonata - Wealthy Merchant Red">
-		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, absorbs $s6 of the inflicted damage as HP. -->
+		<!-- For $s1, Max HP +$s2, P. Atk. +$s3, M. Atk. +$s4, Casting Interruption Rate -$s5. With a certain chance, Vampiric Rage effect +$s6. -->
 		<icon>icon.skill11529</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -1974,14 +1974,14 @@
 		<effectPoint>696</effectPoint>
 	</skill>
 	<skill id="18757" toLevel="1" name="Knight's Harmony - Wealthy Merchant Red">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense Rate +$s6, and Shield Defense +$s7. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense Rate +$s6, Shield Defense +$s7. -->
 		<icon>icon.skill11523</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18758" toLevel="1" name="Warrior's Harmony - Wealthy Merchant Red">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. -->
 		<icon>icon.skill11524</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -1995,14 +1995,14 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18760" toLevel="1" name="Prophecy of Might - Wealthy Merchant Red">
-		<!-- For $s1, the targeted party member s P. Critical Rate, P./ M. Skill Critical Rate, P. Critical Damage and P./ M. Skill Critical Damage +$s2. -->
+		<!-- For $s1, the targeted party member's P. Critical Rate, P./ M. Skill Critical Rate, P. Critical Damage and P./ M. Skill Critical Damage +$s2. -->
 		<icon>icon.skill19204</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>712</effectPoint>
 	</skill>
 	<skill id="18761" toLevel="1" name="Red Libra's Appearance Potion - Kelbim's Light Armor">
-		<!-- Changes the armor appearance to that of Kelbim Light Armor. -->
+		<!-- Changes the armor appearance to that of Kelbim's Light Armor. -->
 		<icon>icon.armor_t2000_b_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -2011,7 +2011,7 @@
 		<effectPoint>780</effectPoint>
 	</skill>
 	<skill id="18762" toLevel="1" name="Red Libra's Appearance Potion - Freya's Robe">
-		<!-- Appearance changed by wearing Freya's Robe. -->
+		<!-- Changes the armor appearance to that of Freya's Robe. -->
 		<icon>icon.armor_t2000_b_i00</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
@@ -2088,21 +2088,21 @@
 		<reuseDelay>300000</reuseDelay>
 	</skill>
 	<skill id="18772" toLevel="5" name="Horn Melody">
-		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, and M. Def. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, M. Atk. +$s3, P. Def. +$s4, M. Def. +$s5. -->
 		<icon>icon.skill11517</icon>
 		<operateType>A1</operateType>
 		<effectPoint>712</effectPoint>
 		<castRange>900</castRange>
 	</skill>
 	<skill id="18773" toLevel="5" name="Drum Melody">
-		<!-- For $s1, Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, Received Critical Damage from standard attacks -$s5. Also has a chance to increase P. Critical Damage when hit. -->
+		<!-- For $s1, Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. With a certain chance, increases P. Critical Damage when hit. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A1</operateType>
 		<effectPoint>712</effectPoint>
 		<castRange>900</castRange>
 	</skill>
 	<skill id="18774" toLevel="5" name="Pipe Organ Melody">
-		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4, Vampiric Rage effect +$s5. -->
+		<!-- For $s1, Max HP +$s2, Max MP +$s3, Max CP +$s4. With a certain chance, absorbs $s5 of the inflicted damage as HP. -->
 		<icon>icon.skill11519</icon>
 		<operateType>A1</operateType>
 		<effectPoint>712</effectPoint>
@@ -2116,21 +2116,21 @@
 		<castRange>900</castRange>
 	</skill>
 	<skill id="18776" toLevel="4" name="Harp Melody">
-		<!-- For $s1, P. Accuracy +$s2, P./ M. Evasion +$s3, and Speed +$s4. Received Critical Damage from standard attacks -$s5. -->
+		<!-- For $s1, P. Accuracy +$s2, P./ M. Evasion +$s3, Speed +$s4, received Critical Damage from basic attacks -$s5. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18777" toLevel="4" name="Lute Melody">
-		<!-- For $s1, Atk.Spd. +$s2, Casting Spd. +$s3. Applies the Vampiric Rage effect for $s4 at a certain probability. -->
+		<!-- For $s1, Atk.Spd. +$s2, Casting Spd. +$s3. With a certain chance, Vampiric Rage effect +$s4. -->
 		<icon>icon.skill11518</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18778" toLevel="2" name="Knight's Harmony">
-		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense Rate +$s6, and Shield Defense +$s7. -->
+		<!-- For $s1, P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense Rate +$s6, Shield Defense +$s7. -->
 		<icon>
 			<value level="1">icon.skill11523</value>
 			<value level="2">icon.skill19500</value>
@@ -2140,7 +2140,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18779" toLevel="2" name="Warrior's Harmony">
-		<!-- For $s1, P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. -->
+		<!-- For $s1, P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. -->
 		<icon>
 			<value level="1">icon.skill11524</value>
 			<value level="2">icon.skill19501</value>
@@ -2167,7 +2167,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18782" toLevel="1" name="Daring Drum">
-		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill19445</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -2195,7 +2195,7 @@
 		<effectPoint>687</effectPoint>
 	</skill>
 	<skill id="18786" toLevel="1" name="Mental Resistance">
-		<!-- For $s1, Resistance to buff-canceling attacks/ debuff attacks +$s2. -->
+		<!-- For $s1, Buff Cancel Resistance/ Debuff Resistance +$s2. -->
 		<icon>icon.skill11824</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -2294,13 +2294,13 @@
 		<effectPoint>1</effectPoint>
 	</skill>
 	<skill id="18796" toLevel="3" name="Angel's Fortune Box">
-		<!-- Double-click to obtain 30 Shining Magic Baits. Also you can obtain either Archangel's Box of Grace or Nevit's Blessing Box. -->
+		<!-- Double-click to obtain 30 Shining Magic Baits. Also yu can obtain either Archangel's Box of Grace or Nevit's Blessing Box. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="18797" toLevel="1" name="Nevit's Gold Hourglass">
-		<!-- Acquired XP/ SP +50% for 30 min. Allows to obtain one Shining Scroll of Growth each time you get 5 billion of XP. -->
+		<!-- Acquired XP/ SP +50% for 30 min. Grants Shining Scroll of Growth each time you get 500,000 XP. -->
 		<icon>icon.bm_nebit_bonus_time_up</icon>
 		<itemConsumeId>47918</itemConsumeId>
 		<operateType>A2</operateType>
@@ -2341,14 +2341,14 @@
 		</effects>
 	</skill>
 	<skill id="18798" toLevel="1" name="Shining Scroll of Growth">
-		<!-- Double-click to obtain 1 billion XP. If character s level is lower than 99, the effectiveness is only 20%. Required level: 85+. -->
+		<!-- Double-click to obtain 1 billion XP. If character's level is lower than 99, the effectiveness is only 20%. Required level: 85+. -->
 		<icon>icon.bm_nebit_exp_book</icon>
 		<operateType>A1</operateType>
 		<isMagic>4</isMagic>
 		<reuseDelay>3000</reuseDelay>
 	</skill>
 	<skill id="18799" toLevel="4" name="First Gift Box">
-		<!-- Double-click for a chance to get a reward. -->
+		<!-- Double-click to obtain a reward with a certain chance. -->
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>

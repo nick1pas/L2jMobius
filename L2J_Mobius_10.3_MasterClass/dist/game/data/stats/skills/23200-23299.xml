@@ -1369,7 +1369,7 @@
 		</conditions>
 	</skill>
 	<skill id="23233" toLevel="1" name="Agathion Handy's Special Skill: Halloween's Blessing">
-		<!-- For 1 h., increases Max HP by 40% and Max MP by 40%. Increases Atk. Spd. by 20% and P. Atk. by 10%. Increases Dark Attack Resistance by 20. Cooldown is 2 h. -->
+		<!-- For 1 h., Max HP/ MP +40%, Atk. Spd. +20%, P. Atk. +10%, Dark Resistance +20. Cooldown: 2 h. -->
 		<icon>icon.skill_agathion_special</icon>
 		<abnormalLevel>26</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1649,7 +1649,7 @@
 		</effects>
 	</skill>
 	<skill id="23242" toLevel="1" name="Master's Blessing - Spike">
-		<!-- No fear, GM is here! Spike is added to blunt weapons. P. Atk. +5%, Stun Atk. Rate +8% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., adds a spike to a blunt weapon. P. Atk. +5%, Stun Atk. Rate +8%. -->
 		<icon>icon.skill0826</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1681,7 +1681,7 @@
 		</effects>
 	</skill>
 	<skill id="23243" toLevel="1" name="Master's Blessing - Bowstring">
-		<!-- The GM is always by your side. Enhances the string of a bow or crossbow to increase P. Atk. by 5% and range by 100 for 1 h. -->
+		<!-- The GM is always by your side. Enhances the string of a bow or crossbow. For 1 h., P. Atk. +5%, attack range +100. -->
 		<icon>icon.skill0827</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1721,7 +1721,7 @@
 		</effects>
 	</skill>
 	<skill id="23244" toLevel="1" name="Master's Blessing - Hard Tanning">
-		<!-- The GM is always by your side. Tans armor to increase P. Def. by 5% and evasion by 2 for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Def. +5%, Evasion +2. -->
 		<icon>icon.skill0829</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1757,7 +1757,7 @@
 		</effects>
 	</skill>
 	<skill id="23245" toLevel="1" name="Master's Blessing - Embroider">
-		<!-- The GM is always by your side. Embroiders a robe to increase P. Def. by 5% and MP recovery bonus by 2 for 1 h. -->
+		<!-- The GM is always by your side. Decorates a robe with embroidery. For 1 h., P. Def. +5%, MP Recovery Rate +2. -->
 		<icon>icon.skill0830</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1793,7 +1793,7 @@
 		</effects>
 	</skill>
 	<skill id="23246" toLevel="1" name="Master's Blessing - Counter Critical">
-		<!-- The GM is always by your side. For 1 h., increases P. Def. against critical by 30%. When an attack above a certain amount of damage is received, the Critical Damage of general melee attack is increased for 8 sec. -->
+		<!-- The GM is always by your side. For 1 h., received Critical Damage -30%. When receiving a certain amount of damage, increases melee Critical Damage for 8 sec. -->
 		<icon>icon.skill1542</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1957,7 +1957,7 @@
 		</conditions>
 	</skill>
 	<skill id="23253" toLevel="1" name="Master's Blessing - Focus">
-		<!-- The GM is always by your side. Increases Critical attack rate by 30% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Critical Rate +30%. -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1983,7 +1983,7 @@
 		</effects>
 	</skill>
 	<skill id="23254" toLevel="1" name="Master's Blessing - Death Whisper">
-		<!-- The GM is always by your side. Increases Critical Damage by 35% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Critical Damage +35%. -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2009,7 +2009,7 @@
 		</effects>
 	</skill>
 	<skill id="23255" toLevel="1" name="Master's Blessing - Haste">
-		<!-- The GM is always by your side. Increases Atk. Spd. by 33% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Atk. Spd. +33%. -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2035,7 +2035,7 @@
 		</effects>
 	</skill>
 	<skill id="23256" toLevel="1" name="Master's Blessing - Guidance">
-		<!-- The GM is always by your side. Increases Accuracy by 4 for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Accuracy +4. -->
 		<icon>icon.skill1240</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2113,7 +2113,7 @@
 		</effects>
 	</skill>
 	<skill id="23259" toLevel="1" name="Master's Blessing - Agility">
-		<!-- The GM is always by your side. Increase Evasion by 4 for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Evasion +4. -->
 		<icon>icon.skill1087</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2190,7 +2190,7 @@
 		</effects>
 	</skill>
 	<skill id="23262" toLevel="1" name="Master's Blessing - Might">
-		<!-- The GM is always by your side. Increases P. Atk. by 15% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Atk. +15%. -->
 		<icon>icon.skill1068</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2294,7 +2294,7 @@
 		</effects>
 	</skill>
 	<skill id="23266" toLevel="1" name="Master's Blessing - Empower">
-		<!-- The GM is always by your side. Increases M. Atk. by 75% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., M. Atk. +75%. -->
 		<icon>icon.skill1059</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2320,7 +2320,7 @@
 		</effects>
 	</skill>
 	<skill id="23267" toLevel="1" name="Master's Blessing - Wind Walk">
-		<!-- The GM is always by your side. Increases Speed by 33 for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., Speed +33. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2400,7 +2400,7 @@
 		</effects>
 	</skill>
 	<skill id="23269" toLevel="1" name="Master's Blessing - Greater Might">
-		<!-- The GM is always by your side. Increases P. Atk. by 10% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Atk. +10%. -->
 		<icon>icon.skill1388</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2426,7 +2426,7 @@
 		</effects>
 	</skill>
 	<skill id="23270" toLevel="1" name="Master's Blessing - Greater Shield">
-		<!-- The GM is always by your side. Increases P. Def. by 15% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Def. +15%. -->
 		<icon>icon.skill1389</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2452,7 +2452,7 @@
 		</effects>
 	</skill>
 	<skill id="23271" toLevel="1" name="Master's Blessing - Wild Magic">
-		<!-- The GM is always by your side. For 1 h., increases by 2 the occurrence rate of damage that is caused by magic damage. -->
+		<!-- The GM is always by your side. For 1 h., M. Critical Rate +2. -->
 		<icon>icon.skill1303</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2515,7 +2515,7 @@
 		</effects>
 	</skill>
 	<skill id="23273" toLevel="1" name="Master's Blessing - Prophecy of Water">
-		<!-- The GM is always by your side. For 1 h., receives help from a great spirit to increase the chance of prominent damage occurring through magic damage by 2, MP recovery bonus by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20% and MP consumption for skill use by 5%. -->
+		<!-- The GM is always by your side. For 1 h., receives help from the Great Spirit: M. Critical Rate +20, MP Recovery Rate +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
 		<icon>icon.skill1355</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2592,7 +2592,7 @@
 		</effects>
 	</skill>
 	<skill id="23274" toLevel="1" name="Master's Blessing - Prophecy of Fire">
-		<!-- The GM is always by your side. For 1 h., receives help from a great spirit to increase Max MP by 20%, HP Recovery Bonus by 20%, the chance of prominent magic damage by 2, Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, and Debuff Resistance by 10%. Decreases Speed by 20%. -->
+		<!-- The GM is always by your side. For 1 h., receives help from the Great Spirit: Max MP +20%, HP Recovery Rate +20%, M. Critical Rate +20, Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%. -->
 		<icon>icon.skill1356</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2736,7 +2736,7 @@
 		</effects>
 	</skill>
 	<skill id="23276" toLevel="1" name="Master's Blessing - Chant of Victory">
-		<!-- The GM is always by your side. Recovers HP by 20%, and for 1 h., receives help from a great spirit to increase Max HP by 20%, the chance of prominent magic damage by 2, Critical Damage by 20%, P. Atk. by 10%, P. Def. by 20%, Atk. Spd. by 20%, M. Atk. by 20%, M. Def. by 20%, Casting Spd. by 20%, Debuff Resistance by 10%, and Accuracy by 4. -->
+		<!-- The GM is always by your side. With the help of the Great Spirit, recovers 20% HP. For 1 h., Max HP +20%, M. Critical Rate +20, Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Accuracy +4. -->
 		<icon>icon.skill1363</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2925,7 +2925,7 @@
 		</effects>
 	</skill>
 	<skill id="23280" toLevel="1" name="Master's Blessing - Improve Critical Attack">
-		<!-- The GM is always by your side. Combines Critical Rate Increase and Critical Damage Increase to have more advanced critical increase effect. For 1 h., increases Critical Rate by 30% and Critical Damage by 35%. -->
+		<!-- The GM is always by your side. Empowers your critical attacks. For 1 h., Critical Rate +30%, Critical Damage +35%. -->
 		<icon>icon.skill1502</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3036,7 +3036,7 @@
 		</effects>
 	</skill>
 	<skill id="23283" toLevel="1" name="Master's Blessing - Sharpen Edge">
-		<!-- The GM is always by your side. Sharpens a bladed weapon to increase P. Atk. by 5% and Critical Rate by 20% for 1 h. -->
+		<!-- The GM is always by your side. Sharpens a bladed weapon. For 1 h., P. Atk. +5%, Critical Rate +20%. -->
 		<icon>icon.skill0825</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3115,7 +3115,7 @@
 		</effects>
 	</skill>
 	<skill id="23285" toLevel="1" name="Master's Blessing - Noblesse Blessing">
-		<!-- The GM is always by your side. Buff/ de-buff doesn't disappear at death but is maintained. But the Noblesse Blessing and the Amulet of Luck disappear. -->
+		<!-- The GM is always by your side. Your buffs and debuffs remain even after death, except for Noblesse Blessing and Lucky Charms' effects. -->
 		<icon>icon.skill1323</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3331,7 +3331,7 @@
 		</effects>
 	</skill>
 	<skill id="23290" toLevel="1" name="Master's Blessing - Spike">
-		<!-- No fear, GM is here! Spike is added to blunt weapons. P. Atk. +5%, Stun Atk. Rate +8% for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., adds a spike to a blunt weapon. P. Atk. +5%, Stun Atk. Rate +8%. -->
 		<icon>icon.skill0826</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3363,7 +3363,7 @@
 		</effects>
 	</skill>
 	<skill id="23291" toLevel="1" name="Master's Blessing - Bowstring">
-		<!-- The GM is always by your side. Enhances the string of a bow or crossbow to increase P. Atk. by 5% and range by 100 for 1 h. -->
+		<!-- The GM is always by your side. Enhances the string of a bow or crossbow. For 1 h., P. Atk. +5%, attack range +100. -->
 		<icon>icon.skill0827</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3403,7 +3403,7 @@
 		</effects>
 	</skill>
 	<skill id="23292" toLevel="1" name="Master's Blessing - Hard Tanning">
-		<!-- The GM is always by your side. Tans light armor to increase P. Def. by 5% and evasion by 2 for 1 h. -->
+		<!-- The GM is always by your side. For 1 h., P. Def. +5%, Evasion +2. -->
 		<icon>icon.skill0829</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3439,7 +3439,7 @@
 		</effects>
 	</skill>
 	<skill id="23293" toLevel="1" name="Master's Blessing - Embroider">
-		<!-- The GM is always by your side. Embroiders a robe to increase P. Def. by 5% and MP recovery bonus by 2 for 1 h. -->
+		<!-- The GM is always by your side. Decorates a robe with embroidery. For 1 h., P. Def. +5%, MP Recovery Rate +2. -->
 		<icon>icon.skill0830</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3475,7 +3475,7 @@
 		</effects>
 	</skill>
 	<skill id="23294" toLevel="1" name="Master's Blessing - Counter Critical">
-		<!-- The GM is always by your side. For 1 h., increases P. Def. against critical by 30%. When an attack above a certain amount of damage is received, the Critical Damage of general melee attack is increased for 8 sec. -->
+		<!-- The GM is always by your side. For 1 h., received Critical Damage -30%. When receiving a certain amount of damage, increases melee Critical Damage for 8 sec. -->
 		<icon>icon.skill1542</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>

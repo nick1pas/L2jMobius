@@ -20,7 +20,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="23602" toLevel="1" name="Increase P. Def.">
-		<!-- For 15 sec., P./ M. Def. x 2. -->
+		<!-- For 15 sec., P./ M. Def. x2. -->
 		<icon>icon.skill1040</icon>
 		<operateType>A2</operateType>
 		<castRange>1000</castRange>
@@ -49,7 +49,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="23605" toLevel="1" name="Katura's Blood Seal">
-		<!-- Engages the target in 1:1 combat. Ignores all standard attacks, skills, and debuffs, except those of the opponent. -->
+		<!-- Engages the target in 1:1 combat. Ignores all basic attacks, skills and debuffs. -->
 		<icon>icon.skll10319</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>
@@ -282,7 +282,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="23632" toLevel="1" name="Agathion's Blessing: Meditation">
-		<!-- For 30 sec., P. Def. -90% and restores MP by 134 per second. Effect removed when hit. Cooldown is 30 min. -->
+		<!-- For 30 sec., P. Def. -90%, recovers 134 MP per sec. The effect is removed when hit. -->
 		<icon>icon.skill1430</icon>
 		<operateType>A2</operateType>
 		<hitTime>2000</hitTime>
@@ -291,7 +291,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="23633" toLevel="1" name="Agathion's Blessing: Decrease Weight">
-		<!-- Weight Limit +9000, Inventory Slots +9. -->
+		<!-- Weight limit +9000, inventory slots +9. -->
 		<icon>icon.skill0332</icon>
 		<operateType>P</operateType>
 	</skill>
@@ -467,7 +467,7 @@
 		</effects>
 	</skill>
 	<skill id="23640" toLevel="1" name="Thirst for Blood">
-		<!-- Inflicts damage on enemy. Recovers 40% of Damage as HP. -->
+		<!-- Absorbs 40% of the inflicted damage as HP. -->
 		<icon>icon.skill1507</icon>
 		<operateType>A1</operateType>
 		<mpConsume>22</mpConsume>
@@ -490,7 +490,7 @@
 		</effects>
 	</skill>
 	<skill id="23641" toLevel="1" name="Embryo Haste">
-		<!-- Increases P. Atk. And Atk. Spd. by 50% for 10 sec. -->
+		<!-- For 10 sec., P. Atk. and Atk. Spd. +50%. -->
 		<icon>icon.skill10102</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>
@@ -593,7 +593,7 @@
 		</effects>
 	</skill>
 	<skill id="23644" toLevel="1" name="Road of Embryo">
-		<!-- For 10 sec., recover 80% of P. Damage inflicted to enemy as HP at a set rate. -->
+		<!-- For 10 sec., absorbs 80% of the inflicted P. damage as HP with a certain chance. -->
 		<icon>icon.skill1507</icon>
 		<operateType>A2</operateType>
 		<mpConsume>18</mpConsume>
@@ -770,7 +770,7 @@
 		</effects>
 	</skill>
 	<skill id="23650" toLevel="1" name="Meteor Hurricane">
-		<!-- Inflicts great magic damage to those within the range of the target. -->
+		<!-- Inflicts severe magical damage on the target in the specified range. -->
 		<icon>icon.skill1339</icon>
 		<operateType>A1</operateType>
 		<mpConsume>10</mpConsume>
@@ -795,7 +795,7 @@
 		</effects>
 	</skill>
 	<skill id="23651" toLevel="1" name="Absolute Crimson">
-		<!-- Inflicts great magic damage with HP Drain to enemies within range. -->
+		<!-- Inflicts HP Drain attack of severe magical damage on the target in the specified range. -->
 		<icon>icon.skill1519</icon>
 		<operateType>A1</operateType>
 		<mpConsume>10</mpConsume>
@@ -1326,7 +1326,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="23673" toLevel="1" name="Isabella Mass Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>
@@ -1350,7 +1350,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="23675" toLevel="1" name="Isabella Mass Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>

@@ -147,7 +147,7 @@
 		</effects>
 	</skill>
 	<skill id="50410" toLevel="1" name="+9 A-grade Weapon Blessing Effect">
-		<!-- All Critical Damage +80 Increases Max All Critical Rate. -->
+		<!-- All Critical Damage +80 Increases Max Critical Rate. -->
 		<icon>icon.bless_effect_enchant</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -248,7 +248,7 @@
 		</effects>
 	</skill>
 	<skill id="50416" toLevel="1" name="+9 Boss' Weapon Blessing Effect">
-		<!-- All Critical Damage +150. Increases Max All Critical Rate. -->
+		<!-- All Critical Damage +150 Increases Max Critical Rate. -->
 		<icon>icon.bless_effect_enchant</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -303,7 +303,7 @@
 		</effects>
 	</skill>
 	<skill id="50419" toLevel="1" name="+2 Death Knight's Flame Sword Blessing Effect">
-		<!-- All Critical Damage +200 Increases Max All Critical Rate. -->
+		<!-- All Critical Damage +200 Increases Max Critical Rate. -->
 		<icon>icon.bless_effect_enchant</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -448,7 +448,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50428" toLevel="1" name="A-grade: Stun Gauntlets">
-		<!-- Gauntlets imbued with stunning power. STR +1 INT +1 Overweight limit +1000 Max HP +200 Atk. Spd. +10% Casting Spd. +18% -->
+		<!-- Gauntlets imbued with mighty power. STR +1 INT +1 Overweight limit +1000 M. Def. +50 Max HP +200 Atk. Spd. +10% Casting Spd. +18% -->
 		<icon>icon.armor_t96_g_i03</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -479,7 +479,7 @@
 		</effects>
 	</skill>
 	<skill id="50429" toLevel="1" name="Stun Gauntlets">
-		<!-- Gauntlets imbued with stunning power. <Swift Fist> Attacks with fists dealing additional damage equal to $s2 of P. Atk. and stuns the enemy for $s3 with a $s1 chance. -->
+		<!-- Gauntlets imbued with mighty energy. Uses the mighty energy to deliver <font color="FFBB00">an additional attack</font> with a $s1 chance. Swift Fist: attacks with strong fist dealing additional damage equal to $s2 of P. Atk. and stuns the enemy for $s3 -->
 		<icon>icon.armor_t96_g_i03</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -506,7 +506,7 @@
 		</effects>
 	</skill>
 	<skill id="50430" toLevel="10" name="+1 Stun Gauntlets">
-		<!-- Gauntlets imbued with stunning power. <Swift Fist> Attacks with fists dealing additional damage equal to $s2 of P. Atk. and stuns the enemy for $s3 with a $s1 chance. -->
+		<!-- Gauntlets imbued with mighty energy. Uses the mighty energy to deliver <font color="FFBB00">an additional attack</font> with a $s1 chance. Swift Fist: attacks with strong fist dealing additional damage equal to $s2 of P. Atk. and stuns the enemy for $s3 -->
 		<icon>icon.armor_t96_g_i03</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -577,7 +577,7 @@
 		</effects>
 	</skill>
 	<skill id="50431" toLevel="11" name="Swift Fist">
-		<!-- A powerful fist attack. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> A powerful fist attack. -->
 		<icon>icon.armor_t96_g_i03</icon>
 		<castRange>900</castRange>
 		<effectPoint>-300</effectPoint>
@@ -627,7 +627,7 @@
 		</effects>
 	</skill>
 	<skill id="50432" toLevel="1" name="A-grade: Sigil of Inevitability">
-		<!-- A sigil imbued with the energy of destruction. Atk. Spd. $s1 Casting Spd. $s2 All Critical Rate $s3 Max MP $s4 <Fatal Power> A $s6 chance of killing the enemy instantly after an attack, Skill Power $s5 for 3 sec. -->
+		<!-- A sigil imbued with the energy of destruction. Atk. Spd. $s1 Casting Spd. $s2 All Critical Rate $s3 Max MP $s4 <Fatal Power> With a $s6 chance after an attack, kills the enemy instantly, Skill Power $s5 for 3 sec. -->
 		<icon>icon.elos_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -674,7 +674,7 @@
 		</effects>
 	</skill>
 	<skill id="50433" toLevel="10" name="+1 Sigil of Inevitability">
-		<!-- A sigil imbued with the energy of destruction. Atk. Spd. $s1 Casting Spd. $s2 All Critical Rate $s3 Max MP $s4 <Fatal Power> A $s6 chance of killing the enemy instantly after an attack, Skill Power $s5 for 3 sec. -->
+		<!-- A sigil imbued with the energy of destruction. Atk. Spd. $s1 Casting Spd. $s2 All Critical Rate $s3 Max MP $s4 <Fatal Power> With a $s6 chance after an attack, kills the enemy instantly, Skill Power $s5 for 3 sec. -->
 		<icon>icon.elos_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1148,7 +1148,7 @@
 				<chance>10</chance>
 				<targetType>SELF</targetType>
 				<minDamage>50</minDamage>
-				<skillId>50439</skillId> <!-- Retribution Defence -->
+				<skillId>50439</skillId> <!-- Retribution Defense -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -1712,14 +1712,7 @@
 		</effects>
 	</skill>
 	<skill id="50444" toLevel="6" name="Queen Ant's Ring">
-		<!-- 
-		Lv. 1 Max MP +9, P.Accuracy +1, M.Accuracy +1, P.Atk. +4%, M.Atk. +4%, Infection Atk. Rate +10%, Infection Resistance +10%
-		Lv. 2 Max MP +15, P.Accuracy +2, M.Accuracy +2, P.Atk. +6%, M.Atk. +6%, Infection Atk. Rate +15%, Infection Resistance +15%
-		Lv. 3 Max MP +21, P.Accuracy +3, M.Accuracy +3, P.Atk. +7%, M.Atk. +7%, P. Def +35, M.Def +35, P. Critical Damage +10%, M. Skill Critical Damage +5%, Infection Atk. Rate +20%, Infection Resistance +20%
-		Lv. 4 Max MP +30, P.Accuracy +4, M.Accuracy +4, P.Atk. +9%, M.Atk. +9%, P. Def +65, M.Def +65, All Critical Damage +10%, Infection Atk. Rate +20%, Infection Resistance +20%
-		Lv. 5 Max MP +40, P.Accuracy +6, M.Accuracy +6, P.Atk. +11%, M.Atk. +11%, P. Def +95, M.Def +95, All Critical Damage +15%, Infection Atk. Rate +20%, Infection Resistance +20%
-		Lv. 6 Max MP +50, P.Accuracy +10, M.Accuracy +10, P.Atk. +15%, M.Atk. +15%, P. Def +125, M.Def +125, All Critical Damage +20%, Potion Atk. Rate +20%, Infection Atk. Rate +20%, Infection Resistance +20%, Applies the Queen Ant Power buff when hit. (Cooldown: 300 sec.)
-		-->
+		<!-- A ring imbued with Queen Ant's power. <Effect> Max MP $s1 P. Accuracy $s2 M. Accuracy $s3 P. Atk. $s4 M. Atk. $s5 Infection Atk. Rate $s6 Infection Resistance $s7 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2034,7 +2027,7 @@
 		</effects>
 	</skill>
 	<skill id="50446" toLevel="6" name="Baium's Ring">
-		<!-- A ring imbued with power of Baium. <Effect> Max MP $s1 P. Accuracy $s2 M. Accuracy $s3 Atk. Spd. $s4 Casting Spd. $s5 Skill Power $s6 Infection Atk. Rate $s7 Shock Atk. Rate $s8 Infection Resistance $s9 Shock Resistance $s10 -->
+		<!-- A ring imbued with Baium's power. <Effect> Max MP $s1 P. Accuracy $s2 M. Accuracy $s3 Atk. Spd. $s4 Casting Spd. $s5 Skill Power $s6 Infection Atk. Rate $s7 Shock Atk. Rate $s8 Infection Resistance $s9 Shock Resistance $s10 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2357,7 +2350,7 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
-				<skillId>50454</skillId> <!-- Orfen Power - Hold -->
+				<skillId>50454</skillId> <!-- Orfen Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack" fromLevel="6" toLevel="6">
@@ -2366,13 +2359,13 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
-				<skillId>50454</skillId> <!-- Orfen Power - Sleep -->
+				<skillId>50454</skillId> <!-- Orfen Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50448" toLevel="6" name="Zaken's Earring">
-		<!-- An earring imbued with Zaken's power. <Effect> Max MP $s1 MP Consumption $s2 Received Healing $s3 HP Recovery Rate $s4 Infection Atk. Rate $s5 Shock Atk. Rate $s6 Silence Atk. Rate $s7 Fear Atk. Rate $s8 Infection Resistance $s9 Shock Resistance $s10 Silence Resistance $s11 Fear Resistance $s12 -->
+		<!-- An earring imbued with Zaken's power. <Effect> Max MP $s1 Received Healing $s3 Skill MP Consumption $s2 HP Recovery Rate $s4 Infection Atk. Rate $s5 Shock Atk. Rate $s6 Silence Atk. Rate $s7 Fear Atk. Rate $s8 Infection Resistance $s9 Shock Resistance $s10 Silence Resistance $s11 Fear Resistance $s12 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2568,7 +2561,7 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
-				<skillId>50455</skillId> <!-- Zaken Power - Silence -->
+				<skillId>50455</skillId> <!-- Zaken Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack" fromLevel="6" toLevel="6">
@@ -2577,7 +2570,7 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
-				<skillId>50455</skillId> <!-- Zaken Power - Silence -->
+				<skillId>50455</skillId> <!-- Zaken Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -2782,7 +2775,7 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
-				<skillId>50456</skillId> <!-- Antharas Power - Stun -->
+				<skillId>50456</skillId> <!-- Antharas Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack" fromLevel="6" toLevel="6">
@@ -2791,13 +2784,13 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
-				<skillId>50456</skillId> <!-- Antharas Power - Stun -->
+				<skillId>50456</skillId> <!-- Antharas Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50450" toLevel="6" name="Frintezza's Necklace">
-		<!-- A necklace imbued with Frintezza's power. <Effect> Max. MP $s1 Skill Power $s2 Skill Cooldown $s3 All Critical Rate $s4 All Critical Damage $s5 Sleep Resistance $s6 Sleep Atk. Rate $s7 -->
+		<!-- A necklace imbued with Frintezza's power. <Effect> Max. MP $s1 Skill Power $s2 Skill Cooldown $s3 All Critical Rate $s4 All Critical Damage $s5 Sleep Atk. Rate $s6 Sleep Resistance $s7 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2937,7 +2930,7 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
-				<skillId>50457</skillId> <!-- Frintezza Power - Fear -->
+				<skillId>50457</skillId> <!-- Frintezza Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack" fromLevel="6" toLevel="6">
@@ -2946,12 +2939,13 @@
 				<chance>3</chance>
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
-				<skillId>50457</skillId> <!-- Frintezza Power - Fear -->
+				<skillId>50457</skillId> <!-- Frintezza Power -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50451" toLevel="1" name="Queen Ant Power">
+		<!-- For $s1, grants immunity to debuffs that decrease P./ M. Atk. -->
 		<icon>icon.accessory_ring_of_queen_ant_i05</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -3023,7 +3017,7 @@
 		</effects>
 	</skill>
 	<skill id="50453" toLevel="1" name="Baium Power">
-		<!-- Damage +10%. for $s1. -->
+		<!-- For $s1: Damage +10% -->
 		<icon>icon.accessory_ring_of_baium_i05</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -3067,6 +3061,7 @@
 		</effects>
 	</skill>
 	<skill id="50454" toLevel="1" name="Orfen Power">
+		<!-- Inflicts Hold on the enemy. -->
 		<icon>icon.accessory_earring_of_orfen_i05</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
@@ -4182,7 +4177,7 @@
 		</effects>
 	</skill>
 	<skill id="50468" toLevel="11" name="Hellbound Ring">
-		<!-- <Effect> Paralysis Resistance +$s1 -->
+		<!-- <Effect> Paralysis Resistance $s1 -->
 		<icon>icon.accessary_ring_of_anguish_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -4485,7 +4480,7 @@
 		</effects>
 	</skill>
 	<skill id="50476" toLevel="1" name="Breastplate of Protection">
-		<!-- Shield Defense $s3 <Counter Paralysis> When damage is taken, there is a $s1 chance to paralyze the enemy for $s2 -->
+		<!-- Shield Defense $s3 <Counter Paralysis> With a $s1 chance, paralyzes the enemy for $s2, when hit. -->
 		<icon>icon.armor_t901_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -4504,7 +4499,7 @@
 		</effects>
 	</skill>
 	<skill id="50477" toLevel="10" name="+1 Breastplate of Protection">
-		<!-- Shield Defense $s3 <Counter Paralysis> When damage is taken, there is a $s1 chance to paralyze the enemy for $s2 -->
+		<!-- Shield Defense $s3 <Counter Paralysis> With a $s1 chance, paralyzes the enemy for $s2, when hit. -->
 		<icon>icon.armor_t901_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -4772,7 +4767,7 @@
 		</effects>
 	</skill>
 	<skill id="50484" toLevel="1" name="Leather Armor of Protection">
-		<!-- P. Evasion $s3 M. Evasion $s3 All Skill Evasion $s4 <Counter Paralysis> When damage is taken, there is a $s1 chance to paralyze the enemy for $s2 -->
+		<!-- P. Evasion $s3 M. Evasion $s3 Skill Evasion $s4 <Counter Paralysis> With a $s1 chance, paralyzes the enemy for $s2, when hit. -->
 		<icon>icon.armor_t902_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -4803,7 +4798,7 @@
 		</effects>
 	</skill>
 	<skill id="50485" toLevel="10" name="+1 Leather Armor of Protection">
-		<!-- P. Evasion $s3 M. Evasion $s3 All Skill Evasion $s4 <Counter Paralysis> When damage is taken, there is a $s1 chance to paralyze the enemy for $s2 -->
+		<!-- P. Evasion $s3 M. Evasion $s3 Skill Evasion $s4 <Counter Paralysis> With a $s1 chance, paralyzes the enemy for $s2, when hit. -->
 		<icon>icon.armor_t902_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -4922,7 +4917,7 @@
 		</effects>
 	</skill>
 	<skill id="50487" toLevel="1" name="Leather Leggings of Protection">
-		<!-- <Critical Damage Defense> When damage is taken, with a $s1 chance for $s2 All received Critical Rate $s3 All received Critical Damage $s3 (Cooldown: 10 sec.) -->
+		<!-- <Critical Damage Defense> With a $s1 chance for $s2, when hit: All received Critical Rate $s3 All received Critical Damage $s3 (Cooldown: 10 sec.) -->
 		<icon>icon.armor_t902_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -4937,7 +4932,7 @@
 		</effects>
 	</skill>
 	<skill id="50488" toLevel="10" name="+1 Leather Leggings of Protection">
-		<!-- <Critical Damage Defense> When damage is taken, with a $s1 chance for $s2 All received Critical Rate $s3 All received Critical Damage $s3 (Cooldown: 10 sec.) -->
+		<!-- <Critical Damage Defense> With a $s1 chance for $s2, when hit: All received Critical Rate $s3 All received Critical Damage $s3 (Cooldown: 10 sec.) -->
 		<icon>icon.armor_t902_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -5106,7 +5101,7 @@
 		</effects>
 	</skill>
 	<skill id="50491" toLevel="1" name="Tunic of Protection">
-		<!-- Max MP $s3 <Counter Paralysis> When damage is taken, there is a $s1 chance to paralyze the enemy for $s2 -->
+		<!-- Max MP $s3 <Counter Paralysis> With a $s1 chance, paralyzes the enemy for $s2, when hit. -->
 		<icon>icon.armor_t903_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -5125,7 +5120,7 @@
 		</effects>
 	</skill>
 	<skill id="50492" toLevel="10" name="+1 Tunic of Protection">
-		<!-- Max MP $s3 <Counter Paralysis> When damage is taken, there is a $s1 chance to paralyze the enemy for $s2 -->
+		<!-- Max MP $s3 <Counter Paralysis> With a $s1 chance, paralyzes the enemy for $s2, when hit. -->
 		<icon>icon.armor_t903_u_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -5199,7 +5194,7 @@
 		</effects>
 	</skill>
 	<skill id="50494" toLevel="1" name="Stockings of Protection">
-		<!-- <Arcane Shield Defense> When hit, for $s1 Received damage $s2 The rest of the damage is blocked by consuming MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Shield. (Activated only if Max HP < 60%) (Cooldown: 60 sec.) -->
+		<!-- <Defense Shield> When hit, creates a barrier for $s1 that absorbs $s2 damage with a $s3 chance. (Cooldown: $s4) -->
 		<icon>icon.armor_t903_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -5211,7 +5206,7 @@
 				<hpPercent>60</hpPercent>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50496</skillId> <!-- Arcane Shield Defense -->
+				<skillId>50496</skillId> <!-- Defense Shield -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -5222,13 +5217,13 @@
 				<hpPercent>60</hpPercent>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50496</skillId> <!-- Arcane Shield Defense -->
+				<skillId>50496</skillId> <!-- Defense Shield -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50495" toLevel="10" name="+1 Stockings of Protection">
-		<!-- <Arcane Shield Defense> When hit, for $s1 Received damage $s2 The rest of the damage is blocked by consuming MP. The effect is cancelled when MP is 0. Cannot be used with Arcane Shield. (Activated only if Max HP < 60%) (Cooldown: 60 sec.) -->
+		<!-- <Defense Shield> When hit, creates a barrier for $s1 that absorbs $s2 damage with a $s3 chance. (Cooldown: $s4) -->
 		<icon>icon.armor_t903_l_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -5240,7 +5235,7 @@
 				<hpPercent>60</hpPercent>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50496</skillId> <!-- Arcane Shield Defense -->
+				<skillId>50496</skillId> <!-- Defense Shield -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -5262,7 +5257,7 @@
 				<hpPercent>60</hpPercent>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50496</skillId> <!-- Arcane Shield Defense -->
+				<skillId>50496</skillId> <!-- Defense Shield -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -5279,7 +5274,7 @@
 		</effects>
 	</skill>
 	<skill id="50496" toLevel="11" name="Defense Shield">
-		<!-- Received damage $s1 Blocks the rest of the damage by consuming MP. The effect is cancelled when MP drops to 0. Cannot be used with Arcane Shield. -->
+		<!-- Absorbs $s1 of the damage. -->
 		<icon>icon.skill10021_3</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -5359,7 +5354,7 @@
 		</effects>
 	</skill>
 	<skill id="50499" toLevel="1" name="Anakim's Divine Pistols">
-		<!-- A weapon empowered by Anakim's soul. Enables Anakim's power. <When triggered> Anakim's Holy Blast -->
+		<!-- A weapon imbued with Anakim's soul. Uses Anakim's power to deliver <font color="FFBB00">an additional attack</font>. Anakim's Holy Blast: a spirit attack according to M. Atk. -->
 		<icon>icon.skill1516</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -5370,7 +5365,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50501</skillId>
+				<skillId>50501</skillId> <!-- Anakim's Holy Blast -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -5380,7 +5375,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50501</skillId>
+				<skillId>50501</skillId> <!-- Anakim's Holy Blast -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>

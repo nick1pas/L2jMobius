@@ -26,7 +26,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="59705" toLevel="1" name="Ride Silver Strider">
-		<!-- Allows to ride Silver Strider. -->
+		<!-- Allows to mount Silver Dragon. -->
 		<icon>icon.skill0000</icon>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
@@ -55,7 +55,7 @@
 		</effects>
 	</skill>
 	<skill id="59706" toLevel="1" name="Ride Black Strider">
-		<!-- Allows to ride Black Strider. -->
+		<!-- Allows to mount Black Dragon. -->
 		<icon>icon.skill0000</icon>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
@@ -84,7 +84,7 @@
 		</effects>
 	</skill>
 	<skill id="59707" toLevel="1" name="Ride Iron Strider">
-		<!-- Allows to ride Iron Strider. -->
+		<!-- Allows to mount Iron Dragon. -->
 		<icon>icon.skill0000</icon>
 		<abnormalTime>3600</abnormalTime>
 		<abnormalType>TRANSFORM</abnormalType>
@@ -187,12 +187,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="59712" toLevel="1" name="Spellbook: Ninja">
-		<!-- Required to get ninja appearance. -->
+		<!-- Required for learning the Ninja transformation. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="59713" toLevel="1" name="Spellbook: Cowboy">
-		<!-- Required to get cowboy appearance. -->
+		<!-- Required for learning the Cowboy transformation. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -585,7 +585,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="59731" toLevel="1" name="XP Bonus Rune">
-		<!-- Acquired XP/ SP +150%. -->
+		<!-- Acquired XP/ SP while hunting +150%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -624,22 +624,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="16.7">
-						<item id="93717" count="1" /> <!-- +3 Talisman/ Belt Coupon -->
+						<item id="93717" count="1" /> <!-- +3 Talisman/ Belt Coupon (Time-limited) - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="93718" count="1" /> <!-- +4 Talisman/ Belt Coupon -->
+						<item id="93718" count="1" /> <!-- +4 Talisman/ Belt Coupon (Time-limited) - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="93719" count="1" /> <!-- +5 Talisman/ Belt Coupon -->
+						<item id="93719" count="1" /> <!-- +5 Talisman/ Belt Coupon (Time-limited) - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="93720" count="1" /> <!-- +6 Talisman/ Belt Coupon -->
+						<item id="93720" count="1" /> <!-- +6 Talisman/ Belt Coupon (Time-limited) - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="93721" count="1" /> <!-- +7 Talisman/ Belt Coupon -->
+						<item id="93721" count="1" /> <!-- +7 Talisman/ Belt Coupon (Time-limited) - Sealed -->
 					</item>
 					<item chance="16.66">
-						<item id="93722" count="1" /> <!-- +8 Talisman/ Belt Coupon -->
+						<item id="93722" count="1" /> <!-- +8 Talisman/ Belt Coupon (Time-limited) - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -655,12 +655,12 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="59735" toLevel="1" name="Adventurer's Ring">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 Max HP $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="59736" toLevel="1" name="XP Bonus Rune">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Acquired XP/ SP while hunting +50%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

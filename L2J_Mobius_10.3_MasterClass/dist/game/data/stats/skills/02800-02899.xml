@@ -849,14 +849,14 @@
 				<isWithin>true</isWithin>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>1468</skillId> <!-- Star Fall -->
+				<skillId>1468</skillId> <!-- Starfall -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>1468</skillId> <!-- Star Fall -->
+				<skillId>1468</skillId> <!-- Starfall -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -912,7 +912,7 @@
 				<affectType>CASTER</affectType>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>1506</skillId> <!-- Blessing of Eva -->
+				<skillId>1506</skillId> <!-- Eva's Blessing -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
@@ -924,7 +924,7 @@
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>1506</skillId> <!-- Blessing of Eva -->
+				<skillId>1506</skillId> <!-- Eva's Blessing -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1115,7 +1115,7 @@
 						<item id="10252" count="1" /> <!-- Dynasty Staff -->
 					</item>
 					<item chance="8.3333">
-						<item id="10004" count="1" /> <!-- Dynasty Dual Sword -->
+						<item id="10004" count="1" /> <!-- Dynasty Dual Swords -->
 					</item>
 					<item chance="8.3333">
 						<item id="10253" count="1" /> <!-- Dynasty Crusher -->
@@ -1445,14 +1445,14 @@
 				<minLevel>75</minLevel>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>932</skillId> <!-- Star Stone Gathering -->
+				<skillId>932</skillId> <!-- Collecting Star Stones -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>932</skillId> <!-- Star Stone Gathering -->
+				<skillId>932</skillId> <!-- Collecting Star Stones -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -1969,7 +1969,7 @@
 		</effects>
 	</skill>
 	<skill id="2856" toLevel="1" name="Christmas Buff Kit">
-		<!-- For 1 h., a buff from the Great Spirit is active. Max MP +20%, MP Recovery Rate +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for standard attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
+		<!-- For 1 h., Max MP +20%, MP Recovery Rate +20%, HP Recovery Rate +20%, M. Skill Critical Rate +2, Critical Damage for basic attacks +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2057,7 +2057,7 @@
 		</effects>
 	</skill>
 	<skill id="2857" toLevel="1" name="Holiday Event - Enchant Scroll (Wizard)">
-		<!-- For 1 h., a buff from the Great Spirit is active. M. Critical Rate +2, MP Recovery Rate +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
+		<!-- For 1 h., receives help from the Great Spirit: M. Critical Rate +2, MP Recovery Rate +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, Speed -20%, Skill MP Consumption -5%. -->
 		<icon>icon.etc_scroll_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2158,15 +2158,15 @@
 					</item>
 					<item chance="17.665">
 						<item id="14611" count="1" /> <!-- Rudolph's Nose -->
-						<item id="14614" count="1" /> <!-- Santa's Buff Gift Set -->
+						<item id="14614" count="1" /> <!-- Christmas Buff Kit -->
 					</item>
 					<item chance="23.665">
-						<item id="5561" count="1" /> <!-- Special Holiday Tree -->
+						<item id="5561" count="1" /> <!-- Special Christmas Tree -->
 						<item id="14619" count="1" /> <!-- Santa's Weapon Coupon -->
 					</item>
 					<item chance="23.665">
-						<item id="5561" count="1" /> <!-- Special Holiday Tree -->
-						<item id="14614" count="1" /> <!-- Santa's Buff Gift Set -->
+						<item id="5561" count="1" /> <!-- Special Christmas Tree -->
+						<item id="14614" count="1" /> <!-- Christmas Buff Kit -->
 					</item>
 					<item chance="8.665">
 						<item id="14617" count="1" /> <!-- Agathion Rudolph -->
@@ -2174,7 +2174,7 @@
 					</item>
 					<item chance="8.665">
 						<item id="14617" count="1" /> <!-- Agathion Rudolph -->
-						<item id="14614" count="1" /> <!-- Santa's Buff Gift Set -->
+						<item id="14614" count="1" /> <!-- Christmas Buff Kit -->
 					</item>
 					<item chance="0.01">
 						<item id="14620" count="1" /> <!-- Santa's Weapon Coupon -->
@@ -2391,7 +2391,7 @@
 		</effects>
 	</skill>
 	<skill id="2863" toLevel="1" name="Superior HP Replenishing Potion">
-		<!-- Greatly increases HP recovery bonus. Effect 4. -->
+		<!-- Greatly increases HP Recovery Rate. Effect 4. -->
 		<icon>icon.etc_reagent_white_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
@@ -2471,22 +2471,22 @@
 						<item id="14718" count="1" /> <!-- Superior S-grade Elixir Gift Box -->
 					</item>
 					<item chance="3.9">
-						<item id="14709" count="1" /> <!-- Lucky Enchant Stone: B-grade Armor -->
+						<item id="14709" count="1" /> <!-- Stone: Enchant B-grade Armor -->
 					</item>
 					<item chance="1.95">
-						<item id="14710" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="14710" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.15">
-						<item id="14711" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="14711" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.65">
-						<item id="14704" count="1" /> <!-- Lucky Enchant Stone: B-grade Weapon -->
+						<item id="14704" count="1" /> <!-- Stone: Enchant B-grade Weapon -->
 					</item>
 					<item chance="0.325">
-						<item id="14705" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="14705" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.025">
-						<item id="14706" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="14706" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.6">
 						<item id="14678" count="1" /> <!-- B-grade Neolithic Crystal -->
@@ -2498,7 +2498,7 @@
 						<item id="14680" count="1" /> <!-- S-grade Neolithic Crystal -->
 					</item>
 					<item chance="0.01">
-						<item id="14681" count="1" /> <!-- Neolithic Crystal (S80-grade) -->
+						<item id="14681" count="1" /> <!-- S80-grade Neolithic Crystal -->
 					</item>
 				</items>
 			</effect>
@@ -2545,22 +2545,22 @@
 						<item id="14718" count="1" /> <!-- Superior S-grade Elixir Gift Box -->
 					</item>
 					<item chance="3.9">
-						<item id="14709" count="1" /> <!-- Lucky Enchant Stone: B-grade Armor -->
+						<item id="14709" count="1" /> <!-- Stone: Enchant B-grade Armor -->
 					</item>
 					<item chance="1.95">
-						<item id="14710" count="1" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+						<item id="14710" count="1" /> <!-- Stone: Enchant A-grade Armor -->
 					</item>
 					<item chance="0.15">
-						<item id="14711" count="1" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+						<item id="14711" count="1" /> <!-- Stone: Enchant S-grade Armor -->
 					</item>
 					<item chance="0.65">
-						<item id="14704" count="1" /> <!-- Lucky Enchant Stone: B-grade Weapon -->
+						<item id="14704" count="1" /> <!-- Stone: Enchant B-grade Weapon -->
 					</item>
 					<item chance="0.325">
-						<item id="14705" count="1" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+						<item id="14705" count="1" /> <!-- Stone: Enchant A-grade Weapon -->
 					</item>
 					<item chance="0.025">
-						<item id="14706" count="1" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+						<item id="14706" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
 					</item>
 					<item chance="0.6">
 						<item id="14678" count="1" /> <!-- B-grade Neolithic Crystal -->
@@ -2572,14 +2572,14 @@
 						<item id="14680" count="1" /> <!-- S-grade Neolithic Crystal -->
 					</item>
 					<item chance="0.01">
-						<item id="14681" count="1" /> <!-- Neolithic Crystal (S80-grade) -->
+						<item id="14681" count="1" /> <!-- S80-grade Neolithic Crystal -->
 					</item>
 				</items>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="2867" toLevel="1" name="Cupid's Cure">
-		<!-- Sends mutated animals a Heart with love. -->
+		<!-- Sends a heart filled with love to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<effectPoint>-1000</effectPoint>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -2611,7 +2611,7 @@
 		</conditions>
 	</skill>
 	<skill id="2868" toLevel="1" name="Cupid's Enhanced Cure">
-		<!-- Sends mutated animals a powerful Heart filled with love. -->
+		<!-- Sends hearts to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<effectPoint>-1000</effectPoint>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -2752,7 +2752,7 @@
 		</effects>
 	</skill>
 	<skill id="2874" toLevel="1" name="Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- Increases Speed by 33 for 60 min. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2773,7 +2773,7 @@
 		</effects>
 	</skill>
 	<skill id="2875" toLevel="1" name="Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -2794,7 +2794,7 @@
 		</effects>
 	</skill>
 	<skill id="2876" toLevel="1" name="Vampiric Rage">
-		<!-- For 60 min., 9% of the physical damage inflicted on the enemy is recovered as HP with a certain probability. -->
+		<!-- For 60 min., absorbs 9% of the inflicted melee damage as HP with a certain chance. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3036,7 +3036,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="2885" toLevel="1" name="Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3057,7 +3057,7 @@
 		</effects>
 	</skill>
 	<skill id="2886" toLevel="1" name="Focus">
-		<!-- For 60 min., Critical Rate for standard attacks +30%. -->
+		<!-- For 60 min., Critical Rate for basic attacks +30%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3078,7 +3078,7 @@
 		</effects>
 	</skill>
 	<skill id="2887" toLevel="1" name="Death Whisper">
-		<!-- For 60 min., Critical Damage for standard attacks +35%. -->
+		<!-- For 60 min., Critical Damage for basic attacks +35%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3120,7 +3120,7 @@
 		</effects>
 	</skill>
 	<skill id="2889" toLevel="1" name="Clarity">
-		<!-- For 60 min., decreases MP consumption by 20% for physical skills, by 10% for magic skills, and by 20% for song/ dance skills. -->
+		<!-- For 60 min., P. Skill MP Consumption -20%, M. Skill MP Consumption -10%, Song/ Dance MP Consumption -20%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3173,7 +3173,7 @@
 		</effects>
 	</skill>
 	<skill id="2891" toLevel="6" name="Concentration">
-		<!-- Casting Interruption Rate -42 for 20 min. -->
+		<!-- For 20 min., Casting Interruption Rate -42%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -3277,15 +3277,15 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="10">
-						<item id="14769" count="5" /> <!-- Valentine's Day Candy -->
+						<item id="14769" count="5" /> <!-- White Day's Candy -->
 						<item id="14772" count="1" /> <!-- Coronet -->
 					</item>
 					<item chance="40">
-						<item id="14769" count="5" /> <!-- Valentine's Day Candy -->
+						<item id="14769" count="5" /> <!-- White Day's Candy -->
 						<item id="14773" count="1" /> <!-- Formal Wear - 14-day -->
 					</item>
 					<item chance="50">
-						<item id="14769" count="5" /> <!-- Valentine's Day Candy -->
+						<item id="14769" count="5" /> <!-- White Day's Candy -->
 						<item id="14776" count="1" /> <!-- Agathion Chuchu - 14-day -->
 					</item>
 				</items>
@@ -3312,11 +3312,11 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="50">
-						<item id="14769" count="1" /> <!-- Valentine's Day Candy -->
+						<item id="14769" count="1" /> <!-- White Day's Candy -->
 						<item id="14771" count="1" /> <!-- Kat the Cat Hat - 14-day -->
 					</item>
 					<item chance="50">
-						<item id="14769" count="1" /> <!-- Valentine's Day Candy -->
+						<item id="14769" count="1" /> <!-- White Day's Candy -->
 						<item id="14775" count="1" /> <!-- Agathion Love - 14-day -->
 					</item>
 				</items>
@@ -3324,7 +3324,7 @@
 		</effects>
 	</skill>
 	<skill id="2897" toLevel="1" name="Baguette's Herb">
-		<!-- For 10 min., increases HP recovery bonus by 20% and Max HP by 10%. Also, the outward appearance of your hair and weapon are changed by the hallucinatory effects of the crocodile tears sprinkled by Pierre Baguette. However, the capabilities of your weapon stay the same. -->
+		<!-- For 10 min., HP Recovery Rate +20%, Max HP +10%. Enables the Fake Tears Effect. -->
 		<icon>icon.etc_herb_of_baguette</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>
@@ -3353,7 +3353,7 @@
 		</effects>
 	</skill>
 	<skill id="2898" toLevel="1" name="Cream Puff Herb">
-		<!-- For 10 min., increases Max HP/ Max HP/ Casting Spd./ P. Def./ M. Def. and Debuff Resistance by 10%. Increases Atk. Spd. by 15% and Moving Spd. by 10. Weapon and hair appearances change through the effect of the "Fake Tears" that were scattered by "Pierre Baguette." But, weapons don't change their abilities. -->
+		<!-- For 10 min., Max HP/ Max MP/ Casting Spd./ P. Def./ M. Def./ Debuff Resistance +10%, Atk. Spd. +15%, Speed +10. Enables the Fake Tears Effect. -->
 		<icon>icon.etc_herb_of_cream</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>
@@ -3402,7 +3402,7 @@
 		</effects>
 	</skill>
 	<skill id="2899" toLevel="1" name="Cheesecake Herb">
-		<!-- For 10 min., increases MP Recovery Bonus by 20% and Max MP by 10%. Also, the outward appearance of your hair and weapon is changed by the hallucinatory effects of the crocodile tears sprinkled by Pierre Baguette. However, the capabilities of your weapon stay the same. -->
+		<!-- For 10 min., MP Recovery Rate +20%, Max MP +10%. Enables the Fake Tears Effect. -->
 		<icon>icon.etc_herb_of_cheesecake</icon>
 		<abnormalInstant>true</abnormalInstant>
 		<abnormalLevel>1</abnormalLevel>

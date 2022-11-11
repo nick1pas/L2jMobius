@@ -204,7 +204,7 @@
 		</effects>
 	</skill>
 	<skill id="18221" toLevel="1" name="Invincibility">
-		<!-- Invincible state. -->
+		<!-- Makes you invincible. -->
 		<icon>icon.skill1418</icon>
 		<operateType>A2</operateType>
 	</skill>
@@ -284,7 +284,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="18240" toLevel="1" name="Flash Grenade">
-		<!-- Throws a flare that will identify traps and targets who are hiding. -->
+		<!-- Fires a flash grenade that shows hidden opponents around you and deals them damage. -->
 		<operateType>A1</operateType>
 		<hitTime>1200</hitTime>
 		<coolTime>300</coolTime>
@@ -551,13 +551,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="10">
-						<item id="30275" count="1" /> <!-- Scroll: 1,000,000 SP -->
+						<item id="30275" count="1" /> <!-- Scroll: 100 SP -->
 					</item>
 					<item chance="30">
-						<item id="17185" count="1" /> <!-- Scroll: 10,000 SP -->
+						<item id="17185" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="60">
-						<item id="17277" count="1" /> <!-- Scroll: 100,000 SP -->
+						<item id="17277" count="1" /> <!-- Scroll: 10 SP -->
 					</item>
 				</items>
 			</effect>
@@ -640,7 +640,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="18265" toLevel="5" name="Pippi's Love">
-		<!-- Buff filled with Pippi's love. Acquired XP/ SP +$s2 for $s1. Once the effect wears off, receive Pippi's Fortune Pocket - Lv. $s3. Note! The item can't be obtained if your character is dead or has no free slots in the inventory. Deleted after main/ dual class changing. -->
+		<!-- Buff filled with Pippi's love. Acquired XP/ SP +$s2 for $s1. Once the effect wears off, receive Pippi's Fortune Pocket - Lv. $s3. Note!. The item can't be obtained if your character is dead or has no free slots in the inventory. Deleted after main/ dual class changing. -->
 		<icon>icon.love_mark</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -684,27 +684,27 @@
 		</effects>
 	</skill>
 	<skill id="18270" toLevel="1" name="Apocalypse Shaper - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Shaper Focus. -->
+		<!-- Double-click to obtain Apocalypse Shaper - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18271" toLevel="1" name="Apocalypse Cutter - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Cutter Focus. -->
+		<!-- Double-click to obtain Apocalypse Cutter - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18272" toLevel="1" name="Apocalypse Slasher - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Slasher Focus. -->
+		<!-- Double-click to obtain Apocalypse Slasher - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18273" toLevel="1" name="Apocalypse Avenger - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Avenger Focus. -->
+		<!-- Double-click to obtain Apocalypse Avenger - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18274" toLevel="1" name="Apocalypse Fighter - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Fighter Focus. -->
+		<!-- Double-click to obtain Apocalypse Fighter - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
@@ -714,7 +714,7 @@
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18276" toLevel="1" name="Apocalypse Thrower - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Thrower Focus. -->
+		<!-- Double-click to obtain Apocalypse Thrower - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
@@ -724,17 +724,17 @@
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18278" toLevel="1" name="Apocalypse Buster - Acumen">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Buster Acumen. -->
+		<!-- Double-click to obtain Apocalypse Buster - Acumen enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18279" toLevel="1" name="Apocalypse Caster - Acumen">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Caster Acumen. -->
+		<!-- Double-click to obtain Apocalypse Caster - Acumen enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18280" toLevel="1" name="Apocalypse Retributer - Acumen">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Retributer Acumen. -->
+		<!-- Double-click to obtain Apocalypse Retributer - Acumen enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>
@@ -744,7 +744,7 @@
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="18282" toLevel="1" name="Apocalypse Dual Daggers - Focus">
-		<!-- Creates a +4/ 6/ 9/ 11 enchanted Apocalypse Dual Dagger Focus. -->
+		<!-- Double-click to obtain Apocalypse Dual Daggers - Focus enchanted to +4/ +6/ +9/ +11. -->
 		<operateType>A1</operateType>
 		<hitTime>1500</hitTime>
 	</skill>

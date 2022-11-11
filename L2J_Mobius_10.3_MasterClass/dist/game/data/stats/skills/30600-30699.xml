@@ -18,7 +18,7 @@
 		<reuseDelay>10000</reuseDelay>
 	</skill>
 	<skill id="30602" toLevel="1" name="Eviscerator Force">
-		<!-- P. Skill Critical Rate +$s1. -->
+		<!-- P. Skill Critical Rate +$s1 -->
 		<icon>icon.icon_lender</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -60,7 +60,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="30605" toLevel="1" name="Sayha's Seer Force">
-		<!-- M. Skill Critical Rate +$s1. -->
+		<!-- M. Skill Critical Rate +$s1 -->
 		<icon>icon.icon_Er_wizard</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -102,7 +102,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="30608" toLevel="5" name="Fury of Eviscerator">
-		<!-- P. Atk. +$s1. -->
+		<!-- P. Atk. +$s1 -->
 		<icon>icon.skill30509</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -135,7 +135,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="30610" toLevel="1" name="Sharpen Edge of Storm">
-		<!-- Brandishes a spear in a wide circle to expand the strike range in all directions for $s1 Requires a spear. Unequipping the spear also cancels the Sharpen Edge of Storm effect. -->
+		<!-- Brandishes a spear in a wide circle to expand the strike range in all directions for $s1. Requires a spear. Unequipping the spear also cancels the Sharpen Edge of Storm effect. -->
 		<icon>icon.skill30610</icon>
 		<operateType>A2</operateType>
 		<hitTime>2000</hitTime>
@@ -188,7 +188,7 @@
 		</effects>
 	</skill>
 	<skill id="30611" toLevel="1" name="Edge of Storm">
-		<!-- Brandishes a spear in a wide circle to expand the strike range in all directions for $s1 Requires a spear. Unequipping the spear also cancels the Edge of Storm effect. -->
+		<!-- Brandishes a spear in a wide circle to expand the strike range in all directions for $s1. Requires a spear. Unequipping the spear also cancels the Edge of Storm effect. -->
 		<icon>icon.skill30610</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>
@@ -252,7 +252,7 @@
 		</effects>
 	</skill>
 	<skill id="30613" toLevel="1" name="Newbie's Rising Smash">
-		<!-- Attacks nearby targets with $s1 power. Received Healing -$s3 for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. -->
+		<!-- Attacks nearby enemies with $s1 power. Received Healing -$s3 for $s2 Requires a sword or a blunt weapon. Critical. Over-hit. -->
 		<icon>icon.skill10013</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -418,7 +418,7 @@
 		</effects>
 	</skill>
 	<skill id="30617" toLevel="1" name="Novice Heart Breaker">
-		<!-- Stabs the target's heart with $s1 Power added to P. Atk. to inflict a powerful vital spot attack. Speed +$s2, P. Evasion +$s3, Critical Damage for standard attacks from flanks and after backstab +$s4. Half-kill, Over-hit, and Critical are possible. Requires a dagger or dual dagger. -->
+		<!-- Attacks the target's vital point with $s1 power. Speed +$s2, P. Evasion +$s3, Critical Damage for basic attacks from the flanks and from behind +$s4. Half-kill. Over-hit. Critical. Requires a dagger or dual daggers. -->
 		<icon>icon.skill10509</icon>
 		<operateType>A3</operateType>
 		<castRange>40</castRange>
@@ -473,7 +473,7 @@
 		</effects>
 	</skill>
 	<skill id="30618" toLevel="1" name="Novice Blood Stab">
-		<!-- Strikes the enemy from the back with $s1 power. Inflicts Bleed dealing $s2 damage per sec. Requires a dagger or dual daggers. Half-kill. Critical. Over-hit. Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Strikes the enemy from the back with $s1 power. Inflicts Bleed dealing $s2 damage per sec. If the attack is successful, deals damage ignoring enemy's CP. Requires a dagger or dual daggers. Half-kill. Critical. Over-hit. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill10508</icon>
 		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
@@ -838,7 +838,7 @@
 		</effects>
 	</skill>
 	<skill id="30629" toLevel="1" name="Heavy Armor Mastery">
-		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, received Critical Damage from standard attacks -$s3. Additionally, STR +$s4. -->
+		<!-- When using heavy armor, Max HP +$s1, P. Def. +$s2, received Critical Damage from basic attacks -$s3. Additionally, STR +$s4. -->
 		<icon>icon.skill10253</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1060,7 +1060,7 @@
 		</effects>
 	</skill>
 	<skill id="30634" toLevel="1" name="Dagger Mastery">
-		<!-- When using a dagger, P. Atk. +$s1 and +$s2, Atk. Spd. +$s3, P. Accuracy +$s4, Vital Point Attack Rate +$s5. Additionally, STR +$s6. Depending on STR, P./ M. Skill Cooldown can be reset or its duration can be increased by $s7 times. -->
+		<!-- When using a dagger, P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, P. Accuracy +$s4, Vital Point Attack Rate +$s5. Additionally, STR +$s6. Depending on STR, P./ M. Skill Cooldown can be reset or its duration can be increased by $s7 times. -->
 		<icon>icon.skill10501</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1157,7 +1157,7 @@
 		</effects>
 	</skill>
 	<skill id="30636" toLevel="1" name="Bow/Crossbow Mastery">
-		<!-- P. Atk. +$s1 and additionally +$s2 when using a bow or a crossbow. Atk. Spd. +$s3, P. Accuracy +$s4. STR +$s5. Depending on your STR, the skill cooldown can be reset or its duration can be increased by $s6 times. -->
+		<!-- When using a bow or a crossbow, P. Atk. +$s1 and additionally +$s2, Atk. Spd. +$s3, P. Accuracy +$s4. Additionally, STR +$s5. Depending on your STR, gives a chance to reset skill cooldown or increase the effect's duration by $s6 times. -->
 		<icon>icon.skill10751</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1208,7 +1208,7 @@
 		</effects>
 	</skill>
 	<skill id="30637" toLevel="1" name="Weapon Mastery">
-		<!-- M. Atk. +$s1, additional M. Atk. +$s2, Casting Spd. +$s3. Depending on your INT, the Cooldown resets or the duration increases by $s4 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, Casting Spd. +$s3. Depending on your INT, there is a chance to reset Skill Cooldown or extend skill duration by $s4 times. -->
 		<icon>icon.skill11251</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1231,7 +1231,7 @@
 		</effects>
 	</skill>
 	<skill id="30638" toLevel="1" name="Magic Weapon Mastery">
-		<!-- M. Atk. +$s1, additional M. Atk. +$s2, M. Skill Critical Rate +$s3. INT +$s4. Depending on INT, has a chance to reset Skill Cooldown or extend the duration of the skill effect in $s5 times. -->
+		<!-- M. Atk. +$s1 and additionally +$s2, M. Skill Critical Rate +$s3, INT +$s4. Depending on your INT, there is a chance to reset skill cooldown or extend skill duration by $s5 times. -->
 		<icon>icon.skill11251</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -1386,7 +1386,7 @@
 		</effects>
 	</skill>
 	<skill id="30642" toLevel="1" name="Novice Feral Ogre Cry">
-		<!-- Shouts loudly to invoke the power of the Ogre. For $s1, P. Atk. and P./ M. Def. +$s2, Critical Damage for standard attacks and Max HP +$s3. -->
+		<!-- Uses the ogre's power. For $s1, P. Atk. and P./ M. Def. +$s2, Critical Damage for basic attacks and Max HP +$s3. -->
 		<icon>icon.skill10292</icon>
 		<operateType>A2</operateType>
 		<hitTime>2000</hitTime>
@@ -1476,7 +1476,7 @@
 		</pvpEffects>
 	</skill>
 	<skill id="30644" toLevel="1" name="Novice Angel of Death">
-		<!-- For $s1, Vital Point Attack Rate +$s2, P. Skill Power +$s3, P. Accuracy +$s4, P. Evasion +$s5. Blocks $s6debuff attack(s). Requires a dagger or dual daggers. -->
+		<!-- For $s1, Vital Point Attack Rate +$s2, P. Skill Power +$s3, P. Accuracy +$s4, P. Evasion +$s5. Blocks debuffs (up to $s6). Requires a dagger or dual daggers. -->
 		<icon>icon.skill10531</icon>
 		<operateType>A2</operateType>
 		<hitTime>3000</hitTime>
@@ -1735,7 +1735,7 @@
 		</effects>
 	</skill>
 	<skill id="30650" toLevel="1" name="Novice Drum Melody">
-		<!-- For $s1, party members' Critical Rate for standard attacks +$s2, Critical Damage for standard attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from standard attacks -$s5. Has a chance of increasing P. Critical Damage when hit. -->
+		<!-- For $s1, party members' Critical Rate for basic attacks +$s2, Critical Damage for basic attacks +$s3, M. Skill Critical Rate +$s4, received Critical Damage from basic attacks -$s5. Has a chance of increasing P. Critical Damage when hit. -->
 		<icon>icon.skill11522</icon>
 		<operateType>A2</operateType>
 		<hitTime>700</hitTime>
@@ -1887,7 +1887,7 @@
 		</effects>
 	</skill>
 	<skill id="30653" toLevel="1" name="Novice Knight's Harmony">
-		<!-- For $s1, the targeted party member's P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for standard attacks +$s5, Shield Defense Rate +$s6, Shield Defense +$s7. -->
+		<!-- For $s1, the targeted party member's P. Def. +$s2, M. Def. +$s3, P./ M. Critical Rate +$s4, Critical Damage for basic attacks +$s5, Shield Defense Rate +$s6, Shield Defense +$s7. -->
 		<icon>icon.skill11523</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -1951,7 +1951,7 @@
 		</effects>
 	</skill>
 	<skill id="30654" toLevel="1" name="Novice Warrior's Harmony">
-		<!-- For $s1, the targeted party member's P. Atk. +$s2, Critical Rate for standard attacks +$s3, Critical Damage for standard attacks +$s4, Atk. Spd. +$s5. -->
+		<!-- For $s1, the targeted party member's P. Atk. +$s2, Critical Rate for basic attacks +$s3, Critical Damage for basic attacks +$s4, Atk. Spd. +$s5. -->
 		<icon>icon.skill11524</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -2117,7 +2117,7 @@
 		</effects>
 	</skill>
 	<skill id="30657" toLevel="1" name="Novice Blessing of the Giants">
-		<!-- For $s1, servitor's Max MP +$s2, HP Recovery Rate +$s3, M. Skill Critical Rate +$s4, Critical Damage for standard attacks +$s5, P. Atk. +$s6, P. Def. +$s7, Atk. Spd. +$s8, M. Atk. +$s9, M. Def. +$s10, Casting Spd. +$s11, and Debuff Resistance +$s12. Received Critical Damage from standard attacks -$s13, Speed -$s14. -->
+		<!-- For $s1, a servitor's Max MP +$s2, HP Recovery Rate +$s3, M. Skill Critical Rate +$s4, Critical Damage for basic attacks +$s5, P. Atk. +$s6, P. Def. +$s7, Atk. Spd. +$s8, M. Atk. +$s9, M. Def. +$s10, Casting Spd. +$s11, Debuff Resistance +$s12, received Critical Damage from basic attacks -$s13, Speed -$s14. -->
 		<icon>icon.skill11297</icon>
 		<operateType>A2</operateType>
 		<castRange>800</castRange>
@@ -2322,7 +2322,7 @@
 		</effects>
 	</skill>
 	<skill id="30662" toLevel="1" name="Novice Summon Phoenix Cubic">
-		<!-- Summons the Phoenix Cubic, which recovers your HP by $s2 every $s1, releases debuffs, and increase debuff resistance by $s3. It also prevents death in critical condition once for $s4 -->
+		<!-- Summons a Phoenix Cubic that recovers $s2 HP per $s1 and removes debuffs, Debuff Resistance +$s3. For $s4, prevents you from dying for 1 time. -->
 		<icon>icon.skill19565</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -3527,7 +3527,7 @@
 		</effects>
 	</skill>
 	<skill id="30691" toLevel="1" name="Novice Frenzy">
-		<!-- For $s1, P. Atk. +$s2, Atk. Spd. +$s3, Critical Rate for standard attacks +$s4, Critical Damage for standard attacks +$s5, Speed +$s6. Additionally, P. Accuracy +$s7, P. Atk. +$s8 when using a two-handed sword/ blunt weapon, or a spear. Available when HP<$s9. -->
+		<!-- For $s1, P. Atk. +$s2, Atk. Spd. +$s3, Critical Rate for basic attacks +$s4, Critical Damage for basic attacks +$s5, Speed +$s6. Additionally, P. Accuracy +$s7, P. Atk. +$s8 when using a two-handed sword/ blunt weapon or a spear. Available when HP<$s9. -->
 		<icon>icon.skill0176</icon>
 		<operateType>A2</operateType>
 		<hitTime>1500</hitTime>
@@ -3683,7 +3683,7 @@
 		</effects>
 	</skill>
 	<skill id="30694" toLevel="1" name="Novice Daring Drum">
-		<!-- For $s1, all party members' Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, party members' Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill19445</icon>
 		<operateType>A2</operateType>
 		<hitTime>700</hitTime>

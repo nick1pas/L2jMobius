@@ -23,7 +23,7 @@
 		<isMagic>22</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39414</skillId>
+				<skillId>39414</skillId> <!-- Prevailing Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -79,7 +79,7 @@
 		<isMagic>22</isMagic>
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39415</skillId>
+				<skillId>39415</skillId> <!-- Daring Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -141,7 +141,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39416</skillId>
+				<skillId>39416</skillId> <!-- Refreshing Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -490,7 +490,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39414</skillId>
+				<skillId>39414</skillId> <!-- Prevailing Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -524,7 +524,7 @@
 		</effects>
 	</skill>
 	<skill id="11608" toLevel="1" name="Daring Song">
-		<!-- For $s1, all party members' Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, party members' Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill11608</icon>
 		<affectRange>1000</affectRange>
 		<abnormalLevel>2</abnormalLevel>
@@ -546,7 +546,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39415</skillId>
+				<skillId>39415</skillId> <!-- Daring Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -608,7 +608,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39416</skillId>
+				<skillId>39416</skillId> <!-- Refreshing Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -670,7 +670,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39414</skillId>
+				<skillId>39414</skillId> <!-- Prevailing Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -704,7 +704,7 @@
 		</effects>
 	</skill>
 	<skill id="11611" toLevel="1" name="Daring Dance">
-		<!-- For $s1, all party members' Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, and Skill Cooldown -$s5. -->
+		<!-- For $s1, party members' Atk. Spd. +$s2, Casting Spd. +$s3, Damage Reflection +$s4, Skill Cooldown -$s5. -->
 		<icon>icon.skill11611</icon>
 		<affectRange>1000</affectRange>
 		<abnormalLevel>2</abnormalLevel>
@@ -726,7 +726,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39415</skillId>
+				<skillId>39415</skillId> <!-- Daring Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -788,7 +788,7 @@
 		<isMagic>3</isMagic> <!-- Dance Skill -->
 		<conditions>
 			<condition name="OpNotAffectedBySkill">
-				<skillId>39416</skillId>
+				<skillId>39416</skillId> <!-- Refreshing Drum - Emperor's Special Cocktail -->
 			</condition>
 		</conditions>
 		<effects>
@@ -872,7 +872,7 @@
 		</effects>
 	</skill>
 	<skill id="11614" toLevel="4" name="Battle Rhapsody Dance">
-		<!-- For $s1, P. Atk., M. Atk., Atk. Spd. and Casting Spd. +$s2. -->
+		<!-- For $s1, P. Atk./ M. Atk./ Atk. Spd./ Casting Spd. +$s2. -->
 		<icon>icon.skill11614</icon>
 		<abnormalTime>
 			<value fromLevel="1" toLevel="4">30</value>
@@ -1029,7 +1029,7 @@
 		</effects>
 	</skill>
 	<skill id="11617" toLevel="1" name="Command for Battle">
-		<!-- For $s1, selected clan member's PvP Damage +$s2, Attribute Attack +$s3, MP Recovery Bonus +$s4. Consumes $s5 Spirit Ore. -->
+		<!-- For $s1, PvP damage +$s2, Attribute Attack +$s3, MP Recovery Rate +$s4 for the targeted clan member and surrounding clan members. Consumes $s5 Spirit Ore. -->
 		<icon>icon.skill11617</icon>
 		<abnormalTime>
 			<value fromLevel="1" toLevel="1">1800</value>
@@ -1074,7 +1074,7 @@
 		</effects>
 	</skill>
 	<skill id="11618" toLevel="1" name="Command for Defense">
-		<!-- For $s1, selected clan member's Received PvP Damage -$s2, Speed +$s3, HP Recovery Bonus +$s4. Consumes $s5 Spirit Ore. -->
+		<!-- For $s1, received PvP damage -$s2, Speed +$s3, HP Recovery Rate +$s4 for the targeted clan member and surrounding clan members. Consumes $s5 Spirit Ore. -->
 		<icon>icon.skill11618</icon>
 		<abnormalTime>
 			<value fromLevel="1" toLevel="1">1800</value>
@@ -1120,7 +1120,7 @@
 		</effects>
 	</skill>
 	<skill id="11619" toLevel="1" name="Soul Ditty">
-		<!-- Entire party's P. Atk. +$s1, P. Critical Damage +$s2, Atk. Spd. +$s3, M. Atk. +$s4, Casting Spd. +$s5, P. Def. +$s6, M. Def. +$s7, and P. Skill Power +$s8. -->
+		<!-- Party members' P. Atk. +$s1, P. Critical Damage +$s2, Atk. Spd. +$s3, M. Atk. +$s4, Casting Spd. +$s5, P. Def. +$s6, M. Def. +$s7, P. Skill Power +$s8. -->
 		<icon>icon.skill11529</icon>
 		<abnormalTime>1800</abnormalTime> <!-- Custom -->
 		<affectRange>1000</affectRange>

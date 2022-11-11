@@ -22,7 +22,7 @@
 		</effects>
 	</skill>
 	<skill id="50201" toLevel="10" name="Onyx">
-		<!-- Spiritshot Damage +$s1 -->
+		<!-- Spiritshot damage +$s1 -->
 		<icon>icon.etc_bm_jewel_onyx_i00</icon>
 		<operateType>A2</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -180,7 +180,7 @@
 		</effects>
 	</skill>
 	<skill id="50206" toLevel="10" name="Spinel">
-		<!-- P. Def. +$s1 M. Def. +$s2 CON +$s3 With a certain chance, recovers $s4 MP when using skills. -->
+		<!-- P. Def. +$s1 M. Def. +$s2 CON +$s3 With a certain chance, recovers $s4 MP when using skills. (Cooldown: 3 sec.) -->
 		<icon>icon.etc_bm_jewel_garnet_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -371,7 +371,7 @@
 		</effects>
 	</skill>
 	<skill id="50208" toLevel="10" name="Moonstone">
-		<!-- When Sayha's Grace is used, acquired XP +$s1 When Sayha's Grace is used, acquired SP +$s1 -->
+		<!-- With Sayha's Grace, acquired XP +$s1 With Sayha's Grace, acquired SP +$s1 -->
 		<icon>icon.etc_bm_jewel_moonstone_i00</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2096,7 +2096,7 @@
 		</effects>
 	</skill>
 	<skill id="50268" toLevel="1" name="Baium's Thunder Breaker">
-		<!-- Imbued with Baium's Soul. <When triggered> Baium's Thunder Bolt. -->
+		<!-- A weapon imbued with the power of Baium's soul. Makes an <font color="FFBB00">additional strike</font> with Baium's might. Baium's Thunder Bolt: makes a lightning attack according to M. Atk. -->
 		<icon>icon.skill1469</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2107,7 +2107,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50269</skillId>
+				<skillId>50269</skillId> <!-- Baium's Thunder Bolt -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -2117,13 +2117,13 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50269</skillId>
+				<skillId>50269</skillId> <!-- Baium's Thunder Bolt -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50269" toLevel="22" name="Baium's Thunder Bolt">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1469</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2162,7 +2162,7 @@
 		</effects>
 	</skill>
 	<skill id="50270" toLevel="10" name="+1 Baium's Thunder Breaker">
-		<!-- Imbued with Baium's Soul. <When triggered> Baium's Thunder Bolt. -->
+		<!-- A weapon imbued with the power of Baium's soul. Makes an <font color="FFBB00">additional strike</font> with Baium's might. Baium's Thunder Bolt: makes a lightning attack according to M. Atk. -->
 		<icon>icon.skill1469</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2184,7 +2184,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50269</skillId>
+				<skillId>50269</skillId> <!-- Baium's Thunder Bolt -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2216,7 +2216,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50269</skillId>
+				<skillId>50269</skillId> <!-- Baium's Thunder Bolt -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2244,7 +2244,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50271</skillId>
+				<skillId>50271</skillId> <!-- Baium's Enhanced Thunder Bolt -->
 				<skillLevel>
 					<value level="5">5</value>
 					<value level="6">6</value>
@@ -2268,7 +2268,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50271</skillId>
+				<skillId>50271</skillId> <!-- Baium's Enhanced Thunder Bolt -->
 				<skillLevel>
 					<value level="5">5</value>
 					<value level="6">6</value>
@@ -2305,7 +2305,7 @@
 		</effects>
 	</skill>
 	<skill id="50271" toLevel="20" name="Baium's Enhanced Thunder Bolt">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1469</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2335,7 +2335,7 @@
 		</effects>
 	</skill>
 	<skill id="50273" toLevel="1" name="Queen Ant's Stone Breaker">
-		<!-- Imbued with Queen Ant's Soul. <When triggered> Queen Ant's Rain of Stones. -->
+		<!-- A weapon imbued with the power of Queen Ant's soul. Makes an <font color="FFBB00">additional strike</font> with Queen Ant's might. Queen Ant's Rain of Stones: makes a stone attack according to M. Atk. -->
 		<icon>icon.skill4282_new</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2346,7 +2346,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50269</skillId>
+				<skillId>50269</skillId> <!-- Baium's Thunder Bolt -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -2356,13 +2356,13 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50269</skillId>
+				<skillId>50269</skillId> <!-- Baium's Thunder Bolt -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50274" toLevel="22" name="Queen Ant's Rain of Stones">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill4282_new</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2401,7 +2401,7 @@
 		</effects>
 	</skill>
 	<skill id="50275" toLevel="10" name="+1 Queen Ant's Stone Breaker">
-		<!-- Imbued with Queen Ant's Soul. <When triggered> Queen Ant's Rain of Stones. -->
+		<!-- A weapon imbued with the power of Queen Ant's soul. Makes an <font color="FFBB00">additional strike</font> with Queen Ant's might. Queen Ant's Rain of Stones: makes a stone attack according to M. Atk. -->
 		<icon>icon.skill4282_new</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2423,7 +2423,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50274</skillId>
+				<skillId>50274</skillId> <!-- Queen Ant's Rain of Stones -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2455,7 +2455,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50274</skillId>
+				<skillId>50274</skillId> <!-- Queen Ant's Rain of Stones -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2483,7 +2483,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50276</skillId>
+				<skillId>50276</skillId> <!-- Queen Ant's Enhanced Rain of Stones -->
 				<skillLevel>
 					<value level="5">5</value>
 					<value level="6">6</value>
@@ -2507,7 +2507,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50276</skillId>
+				<skillId>50276</skillId> <!-- Queen Ant's Enhanced Rain of Stones -->
 				<skillLevel>
 					<value level="5">5</value>
 					<value level="6">6</value>
@@ -2544,7 +2544,7 @@
 		</effects>
 	</skill>
 	<skill id="50276" toLevel="20" name="Queen Ant's Enhanced Rain of Stones">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill4282_new</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2581,7 +2581,7 @@
 		</effects>
 	</skill>
 	<skill id="50278" toLevel="1" name="Zaken's Blood Sword">
-		<!-- Imbued with Zaken's Soul. <When triggered> Zaken's Blood Prison. -->
+		<!-- A weapon imbued with the power of Zaken's soul. Makes an <font color="FFBB00">additional strike</font> with Zaken's might. Zaken's Blood Prison: makes a blood attack according to M. Atk. -->
 		<icon>icon.skill32100</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2592,7 +2592,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50279</skillId>
+				<skillId>50279</skillId> <!-- Zaken's Blood Prison -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -2602,13 +2602,13 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50279</skillId>
+				<skillId>50279</skillId> <!-- Zaken's Blood Prison -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50279" toLevel="22" name="Zaken's Blood Prison">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill32100</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2647,7 +2647,7 @@
 		</effects>
 	</skill>
 	<skill id="50280" toLevel="10" name="+1 Zaken's Blood Sword">
-		<!-- Imbued with Zaken's Soul. <When triggered> Zaken's Blood Prison. -->
+		<!-- A weapon imbued with the power of Zaken's soul. Makes an <font color="FFBB00">additional strike</font> with Zaken's might. Zaken's Blood Prison: makes a blood attack according to M. Atk. -->
 		<icon>icon.skill32100</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2669,7 +2669,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50279</skillId>
+				<skillId>50279</skillId> <!-- Zaken's Blood Prison -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2701,7 +2701,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50279</skillId>
+				<skillId>50279</skillId> <!-- Zaken's Blood Prison -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2733,7 +2733,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50281</skillId>
+				<skillId>50281</skillId> <!-- Zaken's Enhanced Blood Prison -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -2765,7 +2765,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50281</skillId>
+				<skillId>50281</skillId> <!-- Zaken's Enhanced Blood Prison -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -2806,7 +2806,7 @@
 		</effects>
 	</skill>
 	<skill id="50281" toLevel="20" name="Zaken's Enhanced Blood Prison">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill32100</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2843,7 +2843,7 @@
 		</effects>
 	</skill>
 	<skill id="50283" toLevel="1" name="Orfen's Venom Sword">
-		<!-- Imbued with Orfen's Soul. <When triggered> Orfen's Poison Storm. -->
+		<!-- A weapon imbued with the power of Orfen's soul. Makes an <font color="FFBB00">additional strike</font> with Orfen's might. Orfen's Poison Storm: makes a poison attack according to M. Atk. -->
 		<icon>icon.skill6435</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2854,7 +2854,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50284</skillId>
+				<skillId>50284</skillId> <!-- Orfen's Poison Storm -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -2864,13 +2864,13 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50284</skillId>
+				<skillId>50284</skillId> <!-- Orfen's Poison Storm -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50284" toLevel="22" name="Orfen's Poison Storm">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill6435</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -2909,7 +2909,7 @@
 		</effects>
 	</skill>
 	<skill id="50285" toLevel="10" name="+1 Orfen's Venom Sword">
-		<!-- Imbued with Orfen's Soul. <When triggered> Orfen's Poison Storm. -->
+		<!-- A weapon imbued with the power of Orfen's soul. Makes an <font color="FFBB00">additional strike</font> with Orfen's might. Orfen's Poison Storm: makes a poison attack according to M. Atk. -->
 		<icon>icon.skill6435</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -2931,7 +2931,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50284</skillId>
+				<skillId>50284</skillId> <!-- Orfen's Poison Storm -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2963,7 +2963,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50284</skillId>
+				<skillId>50284</skillId> <!-- Orfen's Poison Storm -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -2995,7 +2995,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50286</skillId>
+				<skillId>50286</skillId> <!-- Orfen's Enhanced Poison Storm -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -3027,7 +3027,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50286</skillId>
+				<skillId>50286</skillId> <!-- Orfen's Enhanced Poison Storm -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -3068,7 +3068,7 @@
 		</effects>
 	</skill>
 	<skill id="50286" toLevel="20" name="Orfen's Enhanced Poison Storm">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill6435</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -3105,7 +3105,7 @@
 		</effects>
 	</skill>
 	<skill id="50288" toLevel="1" name="Core's Plasmic Bow">
-		<!-- Imbued with Core's Soul. <When triggered> Core's Plasmic Shock. -->
+		<!-- A weapon imbued with the power of Core's soul. Makes an <font color="FFBB00">additional strike</font> with Core's might. Core's Plasmic Shock: makes a shock attack according to M. Atk. -->
 		<icon>icon.skill32633</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3116,7 +3116,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50289</skillId>
+				<skillId>50289</skillId> <!-- Core's Plasmic Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 			<effect name="TriggerSkillByAttack">
@@ -3126,13 +3126,13 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50289</skillId>
+				<skillId>50289</skillId> <!-- Core's Plasmic Shock -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="50289" toLevel="22" name="Core's Plasmic Shock">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill32633</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -3171,7 +3171,7 @@
 		</effects>
 	</skill>
 	<skill id="50290" toLevel="10" name="+1 Core's Plasmic Bow">
-		<!-- Imbued with Core's Soul. <When triggered> Core's Plasmic Shock. -->
+		<!-- A weapon imbued with the power of Core's soul. Makes an <font color="FFBB00">additional strike</font> with Core's might. Core's Plasmic Shock: makes a shock attack according to M. Atk. -->
 		<icon>icon.skill32633</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3193,7 +3193,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50289</skillId>
+				<skillId>50289</skillId> <!-- Core's Plasmic Shock -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -3225,7 +3225,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50289</skillId>
+				<skillId>50289</skillId> <!-- Core's Plasmic Shock -->
 				<skillLevel>
 					<value level="1">2</value>
 					<value level="2">3</value>
@@ -3257,7 +3257,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>false</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50291</skillId>
+				<skillId>50291</skillId> <!-- Core's Enhanced Plasmic Shock -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -3289,7 +3289,7 @@
 				<targetType>ENEMY</targetType>
 				<isCritical>true</isCritical>
 				<allowWeapons>ALL</allowWeapons>
-				<skillId>50291</skillId>
+				<skillId>50291</skillId> <!-- Core's Enhanced Plasmic Shock -->
 				<skillLevel>
 					<value level="1">0</value>
 					<value level="2">0</value>
@@ -3330,7 +3330,7 @@
 		</effects>
 	</skill>
 	<skill id="50291" toLevel="20" name="Core's Enhanced Plasmic Shock">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
+		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill32633</icon>
 		<operateType>A1</operateType>
 		<isMagic>1</isMagic>
@@ -3367,7 +3367,7 @@
 		</effects>
 	</skill>
 	<skill id="50293" toLevel="11" name="Talisman of Speed">
-		<!-- A talisman imbued with the energy of speed. P. Def. $s1 M. Def. $s1 <Energy of Speed> There are a $s2 chance after a basic attack and $s3 chance after skill using: For 5 sec. Atk. Spd. $s4 Casting Spd. $s4 (Cooldown: 10 sec.) -->
+		<!-- A talisman imbued with the energy of speed. P. Def. $s1 M. Def. $s1 <Energy of Speed> With a $s2 chance after a basic attack and a $s3 chance after a skill: Duration: 5 sec. Atk. Spd. $s4 Casting Spd. $s4 (Cooldown: 10 sec.) -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -3438,7 +3438,7 @@
 				<targetType>SELF</targetType>
 				<isCritical>true</isCritical>
 				<allowSkillAttack>true</allowSkillAttack>
-				<skillId>50294</skillId> <!-- Elmoreden Spirit Hit -->
+				<skillId>50294</skillId> <!-- Energy of Speed -->
 				<castSkillId>50294</castSkillId>
 				<skillLevel>
 					<value level="1">1</value>
@@ -3462,7 +3462,7 @@
 				<targetType>SELF</targetType>
 				<isCritical>false</isCritical>
 				<allowSkillAttack>true</allowSkillAttack>
-				<skillId>50294</skillId> <!-- Elmoreden Spirit Hit -->
+				<skillId>50294</skillId> <!-- Energy of Speed -->
 				<castSkillId>50294</castSkillId>
 				<skillLevel>
 					<value level="1">1</value>
@@ -3486,7 +3486,7 @@
 				<targetType>SELF</targetType>
 				<isCritical>true</isCritical>
 				<allowNormalAttack>true</allowNormalAttack>
-				<skillId>50294</skillId> <!-- Elmoreden Spirit Hit -->
+				<skillId>50294</skillId> <!-- Energy of Speed -->
 				<castSkillId>50294</castSkillId>
 				<skillLevel>
 					<value level="1">1</value>
@@ -3510,7 +3510,7 @@
 				<targetType>SELF</targetType>
 				<isCritical>false</isCritical>
 				<allowNormalAttack>true</allowNormalAttack>
-				<skillId>50294</skillId> <!-- Elmoreden Spirit Hit -->
+				<skillId>50294</skillId> <!-- Energy of Speed -->
 				<castSkillId>50294</castSkillId>
 				<skillLevel>
 					<value level="1">1</value>
@@ -3532,7 +3532,7 @@
 		</effects>
 	</skill>
 	<skill id="50294" toLevel="11" name="Energy of Speed">
-		<!-- The energy of speed runs through the character's body. Atk. Spd. $s1 Casting Spd. $s1 -->
+		<!-- The energy of speed runs through your body. Atk. Spd. $s1 Casting Spd. $s1 -->
 		<icon>icon.skill0000</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3614,7 +3614,7 @@
 		</effects>
 	</skill>
 	<skill id="50295" toLevel="1" name="Baium's Thunder Breaker">
-		<!-- A dagger containing Baium's Soul. Allows to use Baium's power. <Level Bonus Effect> P./ M. Atk. are increased depending on level. <Lv. 60-69> P. Atk. +3-5 M. Atk. +2-3 <Lv. 70-79> P. Atk. +8 M. Atk. +5 <Lv. 80-89> P. Atk. +13-50 M. Atk. +8-51 <Lv. 90+> P. Atk. +56 and higher M. Atk. +34 and higher -->
+		<!-- A dagger containing Baium's soul. Allows to use Baium's power. <Level bonus effect> P./ M. Atk. are increased depending on your level. <Lv. 60-69> P. Atk. +3 ~ +5 M. Atk. +2 ~ +3 <Lv. 70-79> P. Atk. +8 M. Atk. +5 <Lv. 80-89> P. Atk. +13 ~ +50 M. Atk. +8 ~ +51 <Lv. 90+> P. Atk. +56 and higher M. Atk. +34 and higher -->
 		<icon>icon.weapon_terakan_i00</icon>
 		<operateType>P</operateType>
 		<effects>

@@ -147,7 +147,7 @@
 		</effects>
 	</skill>
 	<skill id="3203" toLevel="1" name="Item Skill: Mysterious Ability">
-		<!-- Active skill: Temporarily increases your head's size. -->
+		<!-- Active skill: Increases your head's size. -->
 		<icon>icon.skill3123</icon>
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -211,7 +211,7 @@
 		</effects>
 	</skill>
 	<skill id="3205" toLevel="2" name="Item Skill: Party Return">
-		<!-- Teleports party members to the nearest village. Cannot be used in special places such as the GM Consultation Service. -->
+		<!-- Active skill: Teleports party members to the nearest village. Cannot be used in special places such as the GM Consultation Service. -->
 		<icon>icon.skill3123</icon>
 		<affectRange>1000</affectRange>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -982,7 +982,7 @@
 		</effects>
 	</skill>
 	<skill id="3223" toLevel="10" name="Item Skill: Focus">
-		<!-- When triggered: Temporarily increases Critical Rate for standard attacks when hit. -->
+		<!-- When triggered: Temporarily increases Critical Rate for basic attacks when hit. -->
 		<icon>icon.skill3080</icon>
 		<magicLevel>
 			<value level="1">46</value>
@@ -1970,7 +1970,7 @@
 		</effects>
 	</skill>
 	<skill id="3249" toLevel="10" name="Item Skill: Focus">
-		<!-- Item skill: Increases Critical Rate for standard attacks. -->
+		<!-- Item skill: When equipped, increases Critical Rate for basic attacks. -->
 		<icon>icon.skill3238</icon>
 		<magicLevel>
 			<value level="1">46</value>
@@ -2260,7 +2260,7 @@
 		</effects>
 	</skill>
 	<skill id="3260" toLevel="1" name="Forgiveness">
-		<!-- Sends mutated animals a Heart with love. -->
+		<!-- Sends a heart filled with love to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<castRange>500</castRange>
 		<coolTime>800</coolTime>
@@ -2356,7 +2356,7 @@
 		</effects>
 	</skill>
 	<skill id="3263" toLevel="1" name="Blessed Resurrection">
-		<!-- Blessed Resurrection is available. -->
+		<!-- Enables the Blessed Resurrection skill. -->
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<castRange>400</castRange>
 		<effectPoint>1</effectPoint>
@@ -2381,7 +2381,7 @@
 		</effects>
 	</skill>
 	<skill id="3264" toLevel="1" name="Blessed Escape">
-		<!-- Allows the use of Blessed Escape. -->
+		<!-- Enables the Blessed Escape skill. -->
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<hitTime>200</hitTime>
 		<isMagic>2</isMagic> <!-- Static Skill -->
@@ -2404,7 +2404,7 @@
 		</effects>
 	</skill>
 	<skill id="3265" toLevel="1" name="Mysterious Ability">
-		<!-- Makes your head larger. -->
+		<!-- Increases your head's size. -->
 		<abnormalLevel>0</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
 		<abnormalType>BIG_HEAD</abnormalType>
@@ -2479,7 +2479,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>16027</npcId> <!-- Rainbow Agathion -->
+				<npcId>16027</npcId> <!-- Agathion Rainbow -->
 			</effect>
 		</effects>
 	</skill>
@@ -2496,7 +2496,7 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="SummonAgathion">
-				<npcId>16026</npcId> <!-- Beastly Agathion -->
+				<npcId>16026</npcId> <!-- Agathion Wild Beast Reserve -->
 			</effect>
 		</effects>
 	</skill>

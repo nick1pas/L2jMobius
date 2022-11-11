@@ -554,7 +554,7 @@
 		</effects>
 	</skill>
 	<skill id="4029" toLevel="3" name="Shield">
-		<!-- For $s1 P. Def. +$s2. -->
+		<!-- For $s1, P. Def. +$s2. -->
 		<icon>icon.skill1040</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1602,7 +1602,7 @@
 		</effects>
 	</skill>
 	<skill id="4050" toLevel="16" name="Cubic Drain">
-		<!-- Has a chance to absorb enemy's HP. Power $s1. -->
+		<!-- With a certain chance, absorbs the target's HP. Power $s1. -->
 		<effectPoint>
 			<value level="1">-408</value>
 			<value level="2">-467</value>
@@ -2459,7 +2459,7 @@
 		</effects>
 	</skill>
 	<skill id="4071" toLevel="5" name="Bow Resistance">
-		<!-- Increases resistance to bow attacks. -->
+		<!-- Increases Bow Resistance. -->
 		<icon>
 			<value level="1">icon.skill4071</value>
 			<value level="2">icon.skill4071</value>
@@ -2656,7 +2656,7 @@
 		</effects>
 	</skill>
 	<skill id="4074" toLevel="2" name="Haste">
-		<!-- Atk. Spd. +$s1. -->
+		<!-- Atk. Spd. +$s1 -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2930,7 +2930,7 @@
 		</effects>
 	</skill>
 	<skill id="4079" toLevel="1" name="Siege Hammer">
-		<!-- Powerfully attacks castle gates, castle walls, etc. -->
+		<!-- Makes a powerful attack on castle gates and walls. -->
 		<castRange>600</castRange>
 		<effectPoint>-100</effectPoint>
 		<effectRange>1100</effectRange>
@@ -3455,7 +3455,7 @@
 		</effects>
 	</skill>
 	<skill id="4095" toLevel="1" name="Damage Shield">
-		<!-- Reflects a portion of the received damage. -->
+		<!-- Reflects a part of received damage. -->
 		<icon>icon.skill4095</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>

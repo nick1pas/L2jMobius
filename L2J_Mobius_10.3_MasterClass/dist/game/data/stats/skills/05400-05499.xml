@@ -227,7 +227,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5417" toLevel="1" name="Invincibility">
-		<!-- Invincible against general attack and skill, buff/ de-buff. -->
+		<!-- Makes you invincible to basic attacks, skills, buffs and debuffs. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -257,7 +257,7 @@
 		</effects>
 	</skill>
 	<skill id="5418" toLevel="1" name="Invincibility">
-		<!-- Invincible against general attack and skill, buff/ de-buff. -->
+		<!-- Makes you invincible to basic attacks, skills, buffs and debuffs. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -300,7 +300,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5420" toLevel="1" name="Invincibility">
-		<!-- Invincible against general attack and skill, buff/ de-buff. -->
+		<!-- Makes you invincible to basic attacks, skills, buffs and debuffs. -->
 		<magicLevel>85</magicLevel>
 		<operateType>T</operateType>
 		<magicCriticalRate>-5</magicCriticalRate>
@@ -778,7 +778,7 @@
 		</endEffects>
 	</skill>
 	<skill id="5436" toLevel="1" name="Increase Recovery Rate">
-		<!-- HP and MP recovery bonus are increased. -->
+		<!-- Increases the target's HP/ MP Recovery. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
 		<abnormalType>ALL_REGEN_UP</abnormalType>
@@ -1356,7 +1356,7 @@
 		</effects>
 	</skill>
 	<skill id="5452" toLevel="3" name="Spite">
-		<!-- Received Critical Damage from standard attacks is dereased. -->
+		<!-- Decreases received Critical Damage from basic attacks. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>T_CRT_DMG_UP</abnormalType>
@@ -1520,7 +1520,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5460" toLevel="1" name="Fear">
-		<!-- The target is feared and flees. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- The target runs away in fear. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill1092</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -1896,7 +1896,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5485" toLevel="1" name="Endurance Defense Up">
-		<!-- Increases M. Def. Effect 1. -->
+		<!-- Increases P. Def. Effect 1. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>MD_UP</abnormalType>
@@ -1937,7 +1937,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5488" toLevel="1" name="Counter Critical Damage Up">
-		<!-- Increases Critical Damage for standard attacks. Effect 1. -->
+		<!-- Increases Critical Damage for basic attacks. Effect 1. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>CRITICAL_DMG_UP</abnormalType>
@@ -1954,7 +1954,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="5489" toLevel="1" name="Counter Critical Rate Up">
-		<!-- Increases Critical Rate for standard attacks. Effect 1. -->
+		<!-- Increases Critical Rate for basic attacks. Effect 1. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>
 		<abnormalType>CRITICAL_PROB_UP</abnormalType>

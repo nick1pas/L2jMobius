@@ -107,7 +107,7 @@
 		</effects>
 	</skill>
 	<skill id="45106" toLevel="3" name="Wild Magic">
-		<!-- M. Critical Rate $s1 -->
+		<!-- M. Skill Critical Rate $s1 -->
 		<icon>icon.skill1303</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1305,7 +1305,7 @@
 		</effects>
 	</skill>
 	<skill id="45132" toLevel="3" name="Maphr's Wild Magic">
-		<!-- M. Critical Rate $s1 -->
+		<!-- M. Skill Critical Rate $s1 -->
 		<icon>icon.skill11151</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1556,7 +1556,7 @@
 		</effects>
 	</skill>
 	<skill id="45137" toLevel="3" name="Chant of Wild Magic">
-		<!-- M. Critical Rate $s1 -->
+		<!-- M. Skill Critical Rate $s1 -->
 		<icon>icon.skill1413</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2002,7 +2002,7 @@
 		</effects>
 	</skill>
 	<skill id="45148" toLevel="3" name="Soul Wild Magic">
-		<!-- M. Critical Rate $s1 -->
+		<!-- M. Skill Critical Rate $s1 -->
 		<icon>icon.skill1479</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2243,7 +2243,6 @@
 		</effects>
 	</skill>
 	<skill id="45153" toLevel="3" name="Shadow Veil">
-		<!-- Doubles the damage inflicted. -->
 		<icon>icon.skill19187</icon>
 		<castRange>900</castRange>
 		<effectRange>1200</effectRange>
@@ -2265,7 +2264,7 @@
 		</effects>
 	</skill>
 	<skill id="45154" toLevel="5" name="Death Mark Lv. 1">
-		<!-- Brands the target with Death Mark. Received P. Critical Damage +$s1 Received M. Skill Critical Damage +$s1 -->
+		<!-- Received P. Critical Damage $s1 Received M. Skill Critical Damage $s1 -->
 		<icon>icon.skill1435</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2322,7 +2321,7 @@
 		</effects>
 	</skill>
 	<skill id="45155" toLevel="8" name="Soul Impulse">
-		<!-- Inflicts a powerful sword attack. Power $s1. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
+		<!-- Concentrates power of soul and attacks with a powerful sword attack. Power $s1. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0497</icon>
 		<operateType>A1</operateType>
 		<castRange>40</castRange>
@@ -2450,7 +2449,7 @@
 		</effects>
 	</skill>
 	<skill id="45157" toLevel="6" name="Enuma Elish">
-		<!-- Attacks enemies at the front with $s1 power. Ignores Shield Defense. -->
+		<!-- Attacks enemies at the front with sword Enuma Elish's energy. Power $s1. Ignores Shield Defense. Critical. -->
 		<icon>icon.skill0526</icon>
 		<affectLimit>5-12</affectLimit>
 		<affectRange>400</affectRange>
@@ -2514,7 +2513,7 @@
 		</effects>
 	</skill>
 	<skill id="45158" toLevel="6" name="Ultimate Enuma Elish">
-		<!-- <Ultimate skill> Attacks the enemies at the front with $s1 power using the sword. Critical. Ignores Shield Defense. Ignores $s2 of the target's defense. -->
+		<!-- <Ultimate skill> The sword of justice, Enuma Elish, attacks the target and nearby enemies with $s1 power. Critical. Ignores Shield Defense. Ignores $s2 of the their defense. -->
 		<icon>icon.skill10265</icon>
 		<operateType>A1</operateType>
 		<castRange>300</castRange>
@@ -2539,7 +2538,7 @@
 		</mpConsume>
 	</skill>
 	<skill id="45159" toLevel="3" name="Rush Impact">
-		<!-- <Shock skill> Rushes forward to attack enemies at the front with $s1 power. Stuns them for $s2 Can be used if the distance to the target is more than $s3. -->
+		<!-- <<font color="FF8000">Rush/ shock skill</font>> Rushes forward to attack enemies at the front with $s1 power. Stuns for $s2 with a certain chance. Can be used if the distance to the target is more than $s3. Note! When used uninterrupted for 3 sec., inflicts the disability effect. When Rush Impact while the disability is active, the character's HP is decreased. Attack's HP Drain is unavailable. -->
 		<icon>icon.skill0793</icon>
 		<castRange>
 			<value level="1">500</value>
@@ -2599,7 +2598,7 @@
 				</power>
 			</effect>
 			<effect name="CallSkill">
-				<skillId>5600</skillId> <!-- Rush Impact - Block Move -->
+				<skillId>5600</skillId> <!-- Rush Impact -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -2767,7 +2766,7 @@
 		</effects>
 	</skill>
 	<skill id="45162" toLevel="8" name="Ultimate Soul Piercing">
-		<!-- <Ultimate skill> Attacks the enemy three times with $s1 power. There is a certain chance to deliver an extra attack. The effect lasts for 10 sec. Target's M. Def. -10% A chance to knock back monsters after an attack Critical. Ignores Shield Defense. Ignores $s2 of the target's defense. -->
+		<!-- <Ultimate skill> Attacks the enemy trice with $s1 power. An additional attack is triggered with a certain chance. For 10 sec. M. Def. -10% Additionally, if the target is a monster, the attacks inflicts Knockback. (Cooldown: 8 sec.) Ignores Shield Defense. Ignores $s2 of the target's defense. Critical -->
 		<icon>icon.skill0504</icon>
 		<operateType>A1</operateType>
 		<castRange>120</castRange>
@@ -2888,7 +2887,6 @@
 		</mpConsume>
 	</skill>
 	<skill id="45165" toLevel="10" name="Soul Strike">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1528</icon>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>700</castRange>
@@ -2935,7 +2933,6 @@
 		</effects>
 	</skill>
 	<skill id="45166" toLevel="10" name="Soul Strike">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1528</icon>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>700</castRange>
@@ -2982,7 +2979,6 @@
 		</effects>
 	</skill>
 	<skill id="45167" toLevel="10" name="Soul Strike">
-		<!-- Inflicts magic damage on the enemy with $s1 power. -->
 		<icon>icon.skill1528</icon>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>700</castRange>
@@ -3249,7 +3245,7 @@
 		</conditions>
 	</skill>
 	<skill id="45172" toLevel="10" name="Sharp Aiming">
-		<!-- The effect lasts for $s1 P. Skill Power +$s5 After an attack, casts on the enemy a debuff decreasing Bow Resistance. When using a bow P. Accuracy +$s2 P. Atk. +$s3 Atk. Spd. +$s4 -->
+		<!-- The effect lasts for $s1 P. Skill Power +$s5 With a certain chance, casts on the enemy a debuff decreasing Bow Resistance after an attack. (Cooldown: 10 sec.) When using a bow P. Accuracy +$s2 P. Atk. +$s3 Atk. Spd. +$s4 -->
 		<icon>icon.skill10763</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3740,7 +3736,7 @@
 		</effects>
 	</skill>
 	<skill id="45178" toLevel="2" name="Light Master">
-		<!-- Grants the ability to gather the power of light. After collecting 100 Light Souls the character get Light Veil. <Light Veil Lv. 1> P. Atk. +130 Atk. Spd. +30 Casting Spd. +40 Speed +10 P. Def. +5% M. Def. +5% With a certain chance, absorbs part of the inflicted damage as MP. -->
+		<!-- Grants the ability to gather the power of light. After collecting 100 Light Souls the character get Light Veil. <Light Veil Lv. 1> P. Atk. +130 Atk. Spd. +30 Casting Spd. +40 Speed +10 P. Def. +5% M. Def. +5% With a certain chance, recovers MP after an attack. -->
 		<icon>icon.skill_jinkama_white1</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -3783,7 +3779,7 @@
 		</effects>
 	</skill>
 	<skill id="45179" toLevel="2" name="Shadow Master">
-		<!-- Allows to absorb the power of darkness. Collect 100 Shadow Souls to use Shadow Veil. <Shadow Veil Lv. 1> P. Atk. +280 Atk. Spd. +80 Casting Spd. +120 Speed +15. Has a certain chance to deliver a powerful blow. -->
+		<!-- Allows to absorb the power of darkness. Collect 100 Shadow Souls to use Shadow Veil. <Shadow Veil Lv. 1> P. Atk. +280 Atk. Spd. +80 Casting Spd. +120 Speed +15. With a certain chance, delivers extra blows after an attack. (Cooldown: 10 sec.) -->
 		<icon>icon.skill_jinkama_black1</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -3826,7 +3822,7 @@
 		</effects>
 	</skill>
 	<skill id="45180" toLevel="4" name="Light Soul Absorption">
-		<!-- Activates after an attack. -->
+		<!-- Triggers after an attack. -->
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<magicLevel>20</magicLevel>
 		<operateType>A1</operateType>
@@ -3846,7 +3842,7 @@
 		</effects>
 	</skill>
 	<skill id="45181" toLevel="4" name="Shadow Soul Absorption">
-		<!-- Activates after an attack. -->
+		<!-- Triggers after an attack. -->
 		<isTriggeredSkill>true</isTriggeredSkill>
 		<magicLevel>20</magicLevel>
 		<operateType>A1</operateType>
@@ -3877,7 +3873,7 @@
 		<effectPoint>-200</effectPoint>
 	</skill>
 	<skill id="45183" toLevel="1" name="Soul Chase">
-		<!-- Charges to the target. If the distance between the target and the character is more than $s1. -->
+		<!-- <<font color="FF8000">Rush skill</font>> Charges to the target. If the distance between the target and the character is more than $s1. -->
 		<icon>icon.skill0479</icon>
 		<castRange>400</castRange>
 		<effectRange>600</effectRange>
@@ -3920,7 +3916,7 @@
 		</effects>
 	</skill>
 	<skill id="45185" toLevel="1" name="Fatal Slasher">
-		<!-- When attacking, has a chance to deal an additional blow to the target. -->
+		<!-- There is a certain chance to deliver <font color="FFBB00">an additional attack</font> after an attack. (Trigger cooldown: 10 sec.) -->
 		<icon>icon.skill19435</icon>
 		<magicLevel>40</magicLevel>
 		<operateType>P</operateType>
@@ -3947,7 +3943,6 @@
 		</effects>
 	</skill>
 	<skill id="45186" toLevel="1" name="Fatal Slasher">
-		<!-- 1.5 times increase of the attack damage. -->
 		<icon>icon.skill19435</icon>
 		<operateType>A1</operateType>
 		<castRange>700</castRange>
@@ -4021,7 +4016,7 @@
 		</effects>
 	</skill>
 	<skill id="45188" toLevel="1" name="Evolution Defense">
-		<!-- P. Def. +$s1 M. Def. +$s2 <Stats depends on the character level> Required level: 76. Stats are changed depending on level. P. Def. +$s3 M. Def. +$s4 -->
+		<!-- P. Def. +$s1 M. Def. +$s2 <Stats increase with level> Required level: 76. Stats change depending on level. P. Def. +$s3 M. Def. +$s4 -->
 		<icon>icon.skill19131</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -4039,7 +4034,7 @@
 		</effects>
 	</skill>
 	<skill id="45189" toLevel="1" name="Evolution Power">
-		<!-- P. Atk. +$s1 M. Atk. +$s2 <Stats depends on the character level> Required level: 80. Stats are changed depending on level. P. Atk. +$s3 M. Atk. +$s4 -->
+		<!-- P. Atk. +$s1 M. Atk. +$s2 <Stats increase with level> Required level: 80. Stats change depending on level. P. Atk. +$s3 M. Atk. +$s4 -->
 		<icon>icon.skill19132</icon>
 		<operateType>P</operateType>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -4057,7 +4052,7 @@
 		</effects>
 	</skill>
 	<skill id="45190" toLevel="3" name="Detection">
-		<!-- Allows to find invisible enemies nearby. The target can't become invisible for 2 sec. -->
+		<!-- <<font color="FF8000">Common de-stealthing skill</font>> Removes the Hide effect from nearby enemies and prevents from using it again for 2 sec. De-stealthing range: $s1. -->
 		<icon>icon.skill19203</icon>
 		<coolTime>300</coolTime>
 		<affectRange>
@@ -4291,7 +4286,7 @@
 		</effects>
 	</skill>
 	<skill id="45197" toLevel="1" name="Grand Master's Transcendent Blessing">
-		<!-- Grand Master's power has allowed you to push the limits of your class. -->
+		<!-- Grand Master's power has pushed you beyond the limits of your class. HP Recovery Potions' Effect $s1 With a certain chance, absorbs $s2 of the inflicted damage as MP. -->
 		<icon>icon.skill19428</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -4308,7 +4303,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="45198" toLevel="1" name="Grand Master's Transcendent Blessing">
-		<!-- Grand Master's power has allowed you to push the limits of your class. Attention! You can't consume Light Souls and Shadow Souls. -->
+		<!-- Grand Master's power has pushed you beyond the limits of your class. HP Recovery Potions' Effect $s1 With a certain chance, absorbs $s2 of the inflicted damage as MP. Note! You can't consume Light Souls and Shadow Souls. -->
 		<icon>icon.skill_kamael_shadowside</icon>
 		<operateType>A1</operateType>
 		<abnormalLevel>1</abnormalLevel>

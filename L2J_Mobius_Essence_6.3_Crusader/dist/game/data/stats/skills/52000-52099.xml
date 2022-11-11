@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="52001" toLevel="1" name="Flag Display">
-		<!-- In order to get recognition, display the combat flag on the fortress' flagpole. -->
+		<!-- Display a combat flag on the fortress' flagpole to win the battle. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52002" toLevel="1" name="Flag Power - Warrior">
-		<!-- Flag Power for warriors. Decreases nearby enemies Speed. -->
+		<!-- Flag Power for warriors. Decreases nearby enemies' Speed. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52003" toLevel="1" name="Flag Power - Knight">
-		<!-- Flag Power for knights. Increases P./ M. Def. and Debuff Resistance. -->
+		<!-- Flag Power for knights. Increases P. Def./ M. Def./ Debuff Resistance. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -26,62 +26,62 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52006" toLevel="1" name="Flag Power - Mage">
-		<!-- Flag power for mages. Inflicts Sleep on nearby enemies. -->
+		<!-- Flag Power for mages. Inflicts Sleep on nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52007" toLevel="1" name="Flag Power - Summoner">
-		<!-- Flag power for summoners. Inflicts Stun on nearby enemies. -->
+		<!-- Flag Power for summoners. Inflicts Stun on nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52008" toLevel="1" name="Flag Power - Healer">
-		<!-- Flag power for healers. Inflicts Sleep on nearby enemies. -->
+		<!-- Flag Power for healers. Inflicts Sleep on nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52009" toLevel="1" name="Flag Power - Enchanter">
-		<!-- Flag power for enchanters. Inflicts Hold on nearby enemies. -->
+		<!-- Flag Power for enchanters. Inflicts Hold on nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52010" toLevel="1" name="Flag Power - Bard">
-		<!-- Flag power for bards. Inflicts Stun on nearby enemies. -->
+		<!-- Flag Power for bards. Inflicts Stun on nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52011" toLevel="1" name="Flag Power - Shaman">
-		<!-- Flag power for shamans. Inflicts Fear on nearby enemies. -->
+		<!-- Flag Power for shamans. Inflicts Fear on nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52012" toLevel="1" name="Flag Power - Fast Run">
-		<!-- Flag Power temporarily increases Speed. -->
+		<!-- Flag Power that temporarily increases Speed. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52013" toLevel="1" name="Flag Carrier">
-		<!-- Speed of the flag bearer is decreased. -->
+		<!-- Speed is decreased while carrying a flag. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52014" toLevel="1" name="Get Combat Flag">
-		<!-- You have got the power of Combat Flag. -->
+		<!-- You have the Combat Flag Power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52015" toLevel="1" name="Drop Combat Flag">
-		<!-- You have lost the power of Combat Flag. -->
+		<!-- You have lost the Combat Flag Power. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52016" toLevel="1" name="Orc Fortress Owner">
-		<!-- A special ability given to the clan members who own the Orc Fortress. Acquired XP/ SP +$s1, gained adena +$s2. -->
+		<!-- A special buff for members of the clan that owns the Orc Fortress. Acquired XP/ SP +$s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52017" toLevel="1" name="Remote Flag Display">
-		<!-- In order to get recognition, display the combat flag on the fortress' flagpole. There's a chance to fail. -->
+		<!-- Display a combat flag on the fortress' flagpole to win the battle. There's a chance of failure. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -125,7 +125,6 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52020" toLevel="1" name="PvP Ranking Effect">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -135,7 +134,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52022" toLevel="1" name="Sylph Blessing">
-		<!-- Atk. Spd. $s1 Casting Spd. $s1 Speed $s2 Soulshot Damage $s3 Spiritshot Damage $s3 Acquired XP/ SP $s4 -->
+		<!-- Atk. Spd. $s1 Casting Spd. $s1 Speed $s2 Soulshot damage $s3 Spiritshot damage $s3 Acquired XP/ SP $s4 -->
 		<icon>icon.ev_sylph_bless</icon>
 		<isMagic>4</isMagic>
 		<effectPoint>1</effectPoint>
@@ -167,77 +166,76 @@
 		</effects>
 	</skill>
 	<skill id="52023" toLevel="1" name="Giran Castle Owner">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A special buff for members of the clan that owns the Giran Castle. Acquired XP/ SP +$s1 Acquired adena +$s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52024" toLevel="1" name="Goddard Castle Owner">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- A special buff for members of the clan that owns the Goddard Castle. Acquired XP/ SP +$s1 Acquired adena +$s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52025" toLevel="20" name="Siege Point Increase">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52026" toLevel="10" name="Clan Members">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Atk. $s1 M. Atk. $s1 Acquired XP/ SP $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52027" toLevel="1" name="Heroes' Power">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P./ M. Def. $s1 Max HP/ MP/ CP $s2 When hit, the enemy's Skill Power $s3 For $s4, grants siege points every $s5 The longer you live, the more points you will get. The effect is removed after death or logout. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52028" toLevel="1" name="New Adventure">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- P. Def. $s1 M. Def. $s1 Max HP $s1 Max MP $s1 HP Recovery Rate $s2 MP Recovery Rate $s2 HP Recovery Potions' Effect $s2 Speed $s3 Acquired XP/ SP $s4 XP recovery fee $s5 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52029" toLevel="1" name="First to Maximum">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Hail to bardugunN1! A buff for the first character to reach Lv. 92. P. Atk. $s1 M. Atk. $s1 P. Def. $s1 M. Def. $s1 Atk. Spd. $s1 Casting Spd. $s1 Max HP $s1 Max MP $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52030" toLevel="1" name="Flag Power - Death Knight">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Flag Power for Death Knights. Decreases nearby enemies' Speed. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52031" toLevel="1" name="Flag Power - Hunter">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Flag Power for hunters. Paralyzes nearby enemies. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52032" toLevel="1" name="Special Growth Support">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Magic Lamp charging rate $s1 STR/ INT/ DEX/ WIT/ CON/ MEN +1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52033" toLevel="1" name="Einhasad's Harmony - Boss">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Raid boss respawn time x2 Share Location fee $s1 My Teleport's Share Location fee $s1 Teleport fee $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52034" toLevel="1" name="Einhasad's Harmony - Gold">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Common monster drop rate $s1 Acquired adena $s2 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52035" toLevel="1" name="Einhasad's Harmony - Quick Growth">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- Acquired XP/ SP $s1 -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52036" toLevel="1" name="Truce">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <PvP: common field> Common ? purple/ chaotic (attacks allowed) Purple ? purple/ chaotic (attacks allowed) Chaotic ? purple/ chaotic (attacks allowed) <PvP: battlefield> No restrictions on attacks. <Chaotic Reputation Recovery> Unable to recover reputation through PvE. Reputation can be recovered after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="52037" toLevel="1" name="War">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
+		<!-- <PvP: common field> No restrictions on attacks. <PvP: battlefield> No restrictions on attacks. <Chaotic Reputation Recovery> Reputation can be recovered through PvE. Reputation can be recovered after death. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>

@@ -25,7 +25,7 @@
 		</effects>
 	</skill>
 	<skill id="16102" toLevel="1" name="Dark Storm">
-		<!-- Powerful magical attack on target and nearby enemies. -->
+		<!-- Deals a lot of magic damage to the target and nearby enemies. -->
 		<icon>icon.skill1167</icon>
 		<operateType>A1</operateType>
 		<castRange>900</castRange>
@@ -35,7 +35,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16103" toLevel="6" name="Death Lift">
-		<!-- Deals damage and cancels target. -->
+		<!-- Deals increased damage to the enemy cancelling their target. -->
 		<operateType>A1</operateType>
 		<mpConsume>
 			<value level="1">50</value>
@@ -230,7 +230,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16119" toLevel="1" name="Flare Chain">
-		<!-- Deals fire damage to the target and nearby enemies. -->
+		<!-- Deals fire damage to the target and enemies around them. -->
 		<operateType>A1</operateType>
 		<mpConsume>90</mpConsume>
 		<castRange>450</castRange>
@@ -241,7 +241,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16121" toLevel="5" name="Sleeping Cloud">
-		<!-- Inflicts sleep on nearby enemies for $s1 -->
+		<!-- Inflicts Sleep on nearby enemies for $s1 -->
 		<icon>icon.skill1072</icon>
 		<operateType>A2</operateType>
 		<mpConsume>
@@ -321,7 +321,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16128" toLevel="1" name="Flame Bog">
-		<!-- Burns the target and nearby enemies, draining their HP for 5 sec. -->
+		<!-- Burns the target and enemies around them, draining their HP for 5 sec. -->
 		<icon>icon.skill4279_new</icon>
 		<operateType>A2</operateType>
 		<mpConsume>81</mpConsume>
@@ -334,7 +334,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16129" toLevel="5" name="Desert Thirst">
-		<!-- Kefensis has an effect on your terrible thirst, heightening your senses. P. Atk. +$s1, M. Atk. +$s2. Atk. Spd./ Casting Spd. -$s3. -->
+		<!-- You feel thirsty because of Kefensis' influence. P. Atk. +$s1, M. Atk. +$s2, Atk. Spd./ Casting Spd. -$s3. -->
 		<icon>
 			<value level="1">icon.desert_thirst_Lv1</value>
 			<value level="2">icon.desert_thirst_Lv2</value>
@@ -352,7 +352,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16130" toLevel="1" name="Oasis Energy">
-		<!-- The Oasis has quenched your thirst, suddenly wearing you out. Atk./ Casting Spd. -25%, and Speed -50. -->
+		<!-- The Oasis has quenched your thirst. Atk. Spd./ Casting Spd. -25%, Speed -50. -->
 		<icon>icon.oasis_feel</icon>
 		<abnormalTime>15</abnormalTime>
 		<operateType>A2</operateType>
@@ -381,7 +381,7 @@
 		</effects>
 	</skill>
 	<skill id="16131" toLevel="1" name="Thirst Quench">
-		<!-- Your thirst has been quenched. P./ M. Atk. and Atk./ Casting Spd. +50%. -->
+		<!-- Your thirst has been quenched. P. Atk./ M. Atk./ Atk. Spd./ Casting Spd. +50%. -->
 		<icon>icon.release_thirst</icon>
 		<operateType>A2</operateType>
 		<mpConsume>10</mpConsume>
@@ -546,7 +546,7 @@
 		<reuseDelay>3000</reuseDelay>
 	</skill>
 	<skill id="16148" toLevel="5" name="Fear">
-		<!-- Frightened into fleeing. -->
+		<!-- The target runs away in fear. -->
 		<icon>icon.skill1092</icon>
 		<operateType>A2</operateType>
 		<mpConsume>
@@ -795,7 +795,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="16168" toLevel="1" name="Half-kill">
-		<!-- Cute target's HP in half. -->
+		<!-- Inflicts a powerful attack that cuts the target's HP in half. -->
 		<operateType>A1</operateType>
 		<mpConsume>10</mpConsume>
 		<castRange>40</castRange>
@@ -821,12 +821,12 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16173" toLevel="1" name="Invincibility">
-		<!-- Invincible. -->
+		<!-- Makes you invincible. -->
 		<icon>icon.skill1418</icon>
 		<operateType>A2</operateType>
 	</skill>
 	<skill id="16174" toLevel="1" name="Herb of Growth">
-		<!-- Hellbound's mysterious powers give you 10 min. of Acquired SP/ XP +50% through hunting. Entire party. -->
+		<!-- Thanks to Hellbound's mysterious energy, all party members' acquired XP/ SP while hunting +50% for 10 min. -->
 		<icon>BranchSys2.icon.g_giant_gem</icon>
 		<operateType>A1</operateType>
 		<hitTime>100</hitTime>
@@ -835,7 +835,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="16175" toLevel="1" name="Major Herb of Growth">
-		<!-- Hellbound's mysterious powers give you 10 min. of Acquired SP/ XP +100% through hunting. Entire party. -->
+		<!-- Thanks to Hellbound's mysterious energy, all party members' acquired XP/ SP while hunting +100% for 10 min. -->
 		<icon>BranchSys2.icon.g_dawn_gem</icon>
 		<operateType>P</operateType>
 		<hitTime>100</hitTime>
@@ -844,7 +844,7 @@
 		<isMagic>4</isMagic>
 	</skill>
 	<skill id="16176" toLevel="1" name="Superior Herb of Growth">
-		<!-- Hellbound's mysterious powers give you 2 min. of Acquired SP/ XP +300% through hunting. Entire party. -->
+		<!-- Thanks to Hellbound's mysterious energy, all party members' acquired XP/ SP while hunting +300% for 2 min. -->
 		<icon>icon.etc_str_symbol_i01</icon>
 		<operateType>P</operateType>
 		<hitTime>100</hitTime>
@@ -901,7 +901,7 @@
 		<isDebuff>true</isDebuff>
 	</skill>
 	<skill id="16185" toLevel="1" name="Sword Storm">
-		<!-- Sword attack of nearby enemies. -->
+		<!-- A sword attack on nearby enemies. -->
 		<operateType>A1</operateType>
 		<mpConsume>1</mpConsume>
 		<castRange>300</castRange>
@@ -925,7 +925,7 @@
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="16188" toLevel="1" name="Darkness">
-		<!-- Deals magic damage to the target and nearby enemies. -->
+		<!-- Deals magic damage to the target and enemies around them. -->
 		<operateType>A1</operateType>
 		<mpConsume>1</mpConsume>
 		<castRange>300</castRange>
@@ -969,7 +969,7 @@
 		<isMagic>1</isMagic>
 	</skill>
 	<skill id="16193" toLevel="1" name="Lurking Lunacy">
-		<!-- Inflicts Fear on the target and nearby enemies for 2 sec. -->
+		<!-- Inflicts Fear on the target and enemies around them for 2 sec. -->
 		<operateType>A2</operateType>
 		<mpConsume>1</mpConsume>
 		<castRange>300</castRange>

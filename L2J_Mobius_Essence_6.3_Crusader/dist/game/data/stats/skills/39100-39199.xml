@@ -123,7 +123,7 @@
 		<coolTime>500</coolTime>
 	</skill>
 	<skill id="39113" toLevel="1" name="Golden Mermaid's Tears">
-		<!-- For 1 h., Acquired XP/ SP +50%. Cooldown: 30 min. The effect remains after death. -->
+		<!-- For 1 h., acquired XP/ SP while hunting +50%. Cooldown: 30 min. The effect remains after death. -->
 		<icon>icon.general_fuel_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -211,7 +211,7 @@
 		<reuseDelay>60000</reuseDelay>
 	</skill>
 	<skill id="39121" toLevel="1" name="Teleport: Gludin Harbor">
-		<!-- Teleports to Gludin Harbor. -->
+		<!-- Teleports to the Gludin Harbor. -->
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
 		<reuseDelay>60000</reuseDelay>
@@ -274,7 +274,7 @@
 						<item id="71" count="1" /> <!-- Flamberge -->
 					</item>
 					<item chance="8.3">
-						<item id="281" count="1" /> <!-- Crystallized Ice Bow -->
+						<item id="281" count="1" /> <!-- Frozen Bow -->
 					</item>
 					<item chance="8.3">
 						<item id="193" count="1" /> <!-- Stick of Faith -->
@@ -327,7 +327,7 @@
 						<item id="175" count="1" /> <!-- Art of Battle Axe -->
 					</item>
 					<item chance="4.0">
-						<item id="267" count="1" /> <!-- Arthro Nail -->
+						<item id="267" count="1" /> <!-- Arthro Claw -->
 					</item>
 					<item chance="4.0">
 						<item id="268" count="1" /> <!-- Bellion Cestus -->
@@ -587,13 +587,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="6.6">
-						<item id="900" count="1" /> <!-- Ring of Grace - Not Available - Not available -->
+						<item id="900" count="1" /> <!-- Ring of Grace - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
-						<item id="869" count="1" /> <!-- Earring of Grace - Not Available - Not available -->
+						<item id="869" count="1" /> <!-- Earring of Grace - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
-						<item id="931" count="1" /> <!-- Necklace of Grace - Not Available - Not available -->
+						<item id="931" count="1" /> <!-- Necklace of Grace - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
 						<item id="887" count="1" /> <!-- Adamantite Ring -->
@@ -605,13 +605,13 @@
 						<item id="918" count="1" /> <!-- Adamantite Necklace -->
 					</item>
 					<item chance="6.6">
-						<item id="891" count="1" /> <!-- Sage's Ring - Not Available - Not available -->
+						<item id="891" count="1" /> <!-- Sage's Ring - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
-						<item id="860" count="1" /> <!-- Sage's Earring - Not Available - Not available -->
+						<item id="860" count="1" /> <!-- Sage's Earring - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
-						<item id="922" count="1" /> <!-- Sage's Necklace - Not Available - Not available -->
+						<item id="922" count="1" /> <!-- Sage's Necklace - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
 						<item id="895" count="1" /> <!-- Black Ore Ring -->
@@ -623,13 +623,13 @@
 						<item id="926" count="1" /> <!-- Black Ore Necklace -->
 					</item>
 					<item chance="6.6">
-						<item id="905" count="1" /> <!-- Ring of Blessing - Not Available - Not available -->
+						<item id="905" count="1" /> <!-- Ring of Blessing - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
-						<item id="874" count="1" /> <!-- Earring of Blessing - Not Available - Not available -->
+						<item id="874" count="1" /> <!-- Earring of Blessing - Not Available - Not Available -->
 					</item>
 					<item chance="6.6">
-						<item id="936" count="1" /> <!-- Necklace of Blessing - Not Available - Not available -->
+						<item id="936" count="1" /> <!-- Necklace of Blessing - Not Available - Not Available -->
 					</item>
 				</items>
 			</effect>
@@ -717,13 +717,13 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="33.34">
-						<item id="49521" count="1" /> <!-- Refined Romantic Chapeau -->
+						<item id="49521" count="1" /> <!-- Refined Romantic Chapeau <STR+1 INT+1> -->
 					</item>
 					<item chance="33.33">
-						<item id="49687" count="1" /> <!-- Refined Silver Chapeau -->
+						<item id="49687" count="1" /> <!-- Chic Silver Chapeau <Str+1 Int+1> -->
 					</item>
 					<item chance="33.33">
-						<item id="49688" count="1" /> <!-- Refined Silver Chapeau Box -->
+						<item id="49688" count="1" /> <!-- Refined Silver Chapeau Box - 30-day -->
 					</item>
 				</items>
 			</effect>
@@ -776,13 +776,13 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39140" toLevel="1" name="Magic Potion of Leaping Lv. 1">
-		<!-- Allows to receive 1,200,000 XP/ 40,000 SP. Available for characters from Lv. 20 or higher. -->
+		<!-- XP +1,200,000, SP +40,000. Required level: 20+. -->
 		<icon>icon.etc_holy_potion_i00</icon>
 		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
 	</skill>
 	<skill id="39141" toLevel="1" name="Magic Potion of Leaping Lv. 2">
-		<!-- Allows to receive 7,800,000 XP/ 240,000 SP. Available for characters from Lv. 30 or higher. -->
+		<!-- XP +7,800,000, SP +240,000. Required level: 30+. -->
 		<icon>icon.etc_wind_potion_i00</icon>
 		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
@@ -963,7 +963,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100.0">
-						<item id="49737" count="1" /> <!-- Blessed Talisman of Border -->
+						<item id="49737" count="1" /> <!-- Blessed Talisman of Border - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -996,13 +996,13 @@
 						<item id="49683" count="1" /> <!-- Talisman of Baium -->
 					</item>
 					<item chance="0.01">
-						<item id="49682" count="1" /> <!-- Baium s Soul -->
+						<item id="49682" count="1" /> <!-- Baium's Soul -->
 					</item>
 					<item chance="70.0">
-						<item id="49676" count="1" /> <!-- Talisman of Insolence Lv. 1 -->
+						<item id="49676" count="1" /> <!-- Talisman of Insolence Lv. 1 - Sealed -->
 					</item>
 					<item chance="20.0">
-						<item id="49677" count="1" /> <!-- Talisman of Insolence Lv. 2 -->
+						<item id="49677" count="1" /> <!-- Talisman of Insolence Lv. 2 - Sealed -->
 					</item>
 					<item chance="5.0">
 						<item id="49685" count="1" /> <!-- Powerless Energy of Insolence -->
@@ -1011,7 +1011,7 @@
 						<item id="49684" count="1" /> <!-- Talisman Crystal -->
 					</item>
 					<item chance="1.9899">
-						<item id="49543" count="1" /> <!-- Elemental Stone -->
+						<item id="49543" count="1" /> <!-- Elemental Stone (Time-limited) - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -1374,10 +1374,10 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="90">
-						<item id="49767" count="1" />
+						<item id="49767" count="1" /> <!-- Broken Celestial Shard -->
 					</item>
 					<item chance="10">
-						<item id="49759" count="1" />
+						<item id="49759" count="1" /> <!-- Celestial Shard - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -1407,22 +1407,22 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="40.0">
-						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="947" count="1" /> <!-- Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="40.0">
-						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="951" count="1" /> <!-- Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="10.0">
-						<item id="33807" count="1" /> <!-- Improved Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="33807" count="1" /> <!-- Improved Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="8.0">
-						<item id="33808" count="1" /> <!-- Improved Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="33808" count="1" /> <!-- Improved Scroll: Enchant B-grade Weapon -->
 					</item>
 					<item chance="1.0">
-						<item id="49484" count="1" /> <!-- Stable Scroll: Enchant C-grade Weapon (Exchangeable) -->
+						<item id="49484" count="1" /> <!-- Stable Scroll: Enchant C-grade Weapon -->
 					</item>
 					<item chance="1.0">
-						<item id="49486" count="1" /> <!-- Stable Scroll: Enchant B-grade Weapon (Exchangeable) -->
+						<item id="49486" count="1" /> <!-- Stable Scroll: Enchant B-grade Weapon -->
 					</item>
 				</items>
 			</effect>
@@ -1488,7 +1488,7 @@
 		<reuseDelay>1000</reuseDelay>
 	</skill>
 	<skill id="39162" toLevel="1" name="Special Pirate Fruit - Attack">
-		<!-- For 20 min., P./ M. Atk. +7%, P./ M. Def. +10%, Max HP/ MP/ CP +15%, HP/ MP Recovery Bonus +20%, PvP Damage +5%. With a certain chance, absorbs 3% of the inflicted damage as HP. Cooldown: 1 min. The effect remains after death. -->
+		<!-- For 20 min., P./ M. Atk. +7%, P./ M. Def. +10%, Max HP/ MP/ CP +15%, HP/ MP Recovery Rate +20%, PvP damage +5%. With a certain chance, absorbs 3% of the inflicted damage as HP. Cooldown: 1 min. The effect remains after death. -->
 		<icon>icon.etc_codran_i09</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1565,7 +1565,7 @@
 		</effects>
 	</skill>
 	<skill id="39163" toLevel="1" name="Special Pirate Fruit - Defense">
-		<!-- For 20 min., P./ M. Atk. +7%, P./ M. Def. +10%, Max HP/ MP/ CP +15%, HP/ MP Recovery Bonus +20%, PvP Damage +5%. With a certain chance, absorbs 3% of the inflicted damage as HP. Cooldown: 1 min. The effect remains after death. -->
+		<!-- For 20 min., P./ M. Atk. +7%, P./ M. Def. +10%, Max HP/ MP/ CP +15%, HP/ MP Recovery Rate +20%, PvP damage +5%. With a certain chance, absorbs 3% of the inflicted damage as HP. Cooldown: 1 min. The effect remains after death. -->
 		<icon>icon.etc_codran_i09</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -1746,7 +1746,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="100.0">
-						<item id="49784" count="3" /> <!-- Balthus Knights' Mark -->
+						<item id="49784" count="3" /> <!-- Balthus Knights' Mark (Time-limited) - Sealed -->
 					</item>
 				</items>
 			</effect>
@@ -1834,7 +1834,7 @@
 						<item id="288" count="1" /> <!-- Carnage Bow -->
 					</item>
 					<item chance="4.54">
-						<item id="269" count="1" /> <!-- Blood Tornado -->
+						<item id="269" count="1" /> <!-- Bloody Tornado -->
 					</item>
 					<item chance="4.54">
 						<item id="7902" count="1" /> <!-- Doom Crusher -->
@@ -2023,7 +2023,7 @@
 						<item id="175" count="1" minEnchant="8" maxEnchant="8" /> <!-- Art of Battle Axe -->
 					</item>
 					<item chance="4.0">
-						<item id="267" count="1" minEnchant="8" maxEnchant="8" /> <!-- Arthro Nail -->
+						<item id="267" count="1" minEnchant="8" maxEnchant="8" /> <!-- Arthro Claw -->
 					</item>
 					<item chance="4.0">
 						<item id="268" count="1" minEnchant="8" maxEnchant="8" /> <!-- Bellion Cestus -->
@@ -2134,7 +2134,7 @@
 						<item id="71" count="1" minEnchant="16" maxEnchant="16" /> <!-- Flamberge -->
 					</item>
 					<item chance="8.3">
-						<item id="281" count="1" minEnchant="16" maxEnchant="16" /> <!-- Crystallized Ice Bow -->
+						<item id="281" count="1" minEnchant="16" maxEnchant="16" /> <!-- Frozen Bow -->
 					</item>
 					<item chance="8.3">
 						<item id="193" count="1" minEnchant="16" maxEnchant="16" /> <!-- Stick of Faith -->
@@ -2410,7 +2410,7 @@
 		</effects>
 	</skill>
 	<skill id="39194" toLevel="1" name="Sayha's Storm Lv. 1">
-		<!-- For 20 min., Sayha's Grace Consumption +100%, acquired XP/ SP +100%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
+		<!-- For 20 min. while hunting, Sayha's Grace Consumption +100%, acquired XP/ SP +100%. Cooldown: 1 min. The effect remains after death. You can cancel the effect by yourself. -->
 		<icon>icon.skill11137</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>600000</reuseDelay>

@@ -219,7 +219,7 @@
 		<reuseDelay>600000</reuseDelay>
 	</skill>
 	<skill id="18013" toLevel="1" name="Love Potion: P. Critical Rate">
-		<!-- Feel the power of love! For 30 sec., Attribute Resistance +30, and Critical Rate for standard attacks +50. -->
+		<!-- Feel the power of love! For 30 sec., Attribute Resistance +30, Critical Rate for basic attacks +50. -->
 		<icon>icon.love_potion_ad_ctr</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>600000</reuseDelay>
@@ -237,7 +237,7 @@
 		<reuseDelay>600000</reuseDelay>
 	</skill>
 	<skill id="18016" toLevel="1" name="Wondrous Love">
-		<!-- Feel the power of love! For 30 sec., Atk. Spd. +1500, Casting Spd. +1999, Speed +300, Critical Rate for standard attacks +50, M. Skill Critical Rate +50, Debuff Resistance +50. -->
+		<!-- Feel the power of love! For 30 sec., Atk. Spd. +1500, Casting Spd. +1999, Speed +300, Critical Rate for basic attacks +50, M. Skill Critical Rate +50, Debuff Resistance +50. -->
 		<icon>icon.love_potion_blessed</icon>
 		<operateType>A2</operateType>
 		<reuseDelay>600000</reuseDelay>
@@ -782,7 +782,7 @@
 		</effects>
 	</skill>
 	<skill id="18050" toLevel="1" name="Luck Potion">
-		<!-- For 15 sec., LUC +5. -->
+		<!-- When used, LUC +5 for 15 sec. -->
 		<icon>icon.etc_instant_lucky_potion_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>15</abnormalTime>

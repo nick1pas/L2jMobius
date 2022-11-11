@@ -579,7 +579,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="2628" toLevel="1" name="Structure Scarab">
-		<!-- Allows user to retain buffs and debuffs following death and resurrection. Noblesse Blessing and Amulet of Luck disappear, however. Consumes 1 Structure Scarab. -->
+		<!-- Recovers some HP after death. Your buffs and debuffs remain after death, except for Noblesse Blessing and Lucky Charms' effects. Consumes 1 Structure Scarab. -->
 		<icon>icon.etc_beetle_i00</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
@@ -667,7 +667,7 @@
 		</effects>
 	</skill>
 	<skill id="2632" toLevel="1" name="Transformation Scroll: Child">
-		<!-- Transforms into a young child. -->
+		<!-- Transforms into a child. -->
 		<icon>icon.skilltransform3</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1800</abnormalTime>
@@ -752,7 +752,7 @@
 		</effects>
 	</skill>
 	<skill id="2635" toLevel="1" name="Blessing of Fire">
-		<!-- Blessing of fire. Fire attribute is bestowed on physical attacks. -->
+		<!-- Imbues physical attacks with the Fire attribute. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
 		<abnormalType>HOLY_ATTACK</abnormalType>
@@ -774,7 +774,7 @@
 		</effects>
 	</skill>
 	<skill id="2636" toLevel="1" name="Blessing of Earth">
-		<!-- Blessing of earth. Earth attribute is bestowed on physical attacks. -->
+		<!-- Imbues physical attacks with the Earth attribute. -->
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>600</abnormalTime>
 		<abnormalType>HOLY_ATTACK</abnormalType>

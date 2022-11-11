@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="7100" toLevel="1" name="Clan-exclusive Pet Stun">
-		<!-- Stuns the target for 3 sec. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
+		<!-- Stuns for 3 sec. Inflicted status: Confusion (Fear, Aerial Yoke, Faint, Charm, Stun, Paralysis, Knockback, Knockdown). -->
 		<icon>icon.skill5168</icon>
 		<operateType>A2</operateType>
 		<mpConsume>5</mpConsume>
@@ -116,7 +116,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="7105" toLevel="1" name="Draco Incubation">
-		<!-- Incubation Possible -->
+		<!-- Draco Incubation -->
 		<operateType>A1</operateType>
 		<castRange>100</castRange>
 		<effectPoint>-1</effectPoint>
@@ -734,14 +734,14 @@
 				<socialClass>-1</socialClass>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>15094</skillId> <!-- Clan Flag -->
+				<skillId>15094</skillId> <!-- Clan's Flag -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>15094</skillId> <!-- Clan Flag -->
+				<skillId>15094</skillId> <!-- Clan's Flag -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
@@ -839,14 +839,14 @@
 				<minLevel>99</minLevel>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>8907</skillId> <!-- Riding the Pegasus -->
+				<skillId>8907</skillId> <!-- Mount Pegasus -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
 		</conditions>
 		<effects>
 			<effect name="SetSkill">
-				<skillId>8907</skillId> <!-- Riding the Pegasus -->
+				<skillId>8907</skillId> <!-- Mount Pegasus -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>

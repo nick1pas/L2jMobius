@@ -228,7 +228,7 @@
 		</effects>
 	</skill>
 	<skill id="1506" toLevel="1" name="Eva's Blessing">
-		<!-- The character takes the Eva's gift. Recovers all HP/ CP/ MP There is a certain chance to remove debuffs and anomaly states. -->
+		<!-- The character takes the Eva's gift. Recovers 100% of HP/ CP/ MP There is a certain chance to remove debuffs and anomalies. -->
 		<icon>icon.skill1506</icon>
 		<castRange>400</castRange>
 		<effectPoint>668</effectPoint>
@@ -635,7 +635,7 @@
 		</effects>
 	</skill>
 	<skill id="1515" toLevel="5" name="Lightning Barrier">
-		<!-- Summons a lightning defensive barrier for 30 sec. Paralyzes the attacking opponent for 3 sec. -->
+		<!-- Creates a veil of lightning. While the veil is active, there is a chance to paralyze (with lightning) an attacking enemy for 3 sec. when hit. (Cooldown: 10 sec.) -->
 		<icon>icon.skill1515</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -665,13 +665,13 @@
 				<chance>20</chance>
 				<targetType>TARGET</targetType>
 				<minDamage>1</minDamage>
-				<skillId>5592</skillId> <!-- Lightning Barrier -->
+				<skillId>5592</skillId> <!-- Lightning Spark -->
 				<skillLevel>1</skillLevel>
 			</effect>
 		</effects>
 	</skill>
 	<skill id="1516" toLevel="10" name="Soul Strike">
-		<!-- There is a certain chance to inflict an extra attack when using a rapier. -->
+		<!-- Gathers souls' power and delivers <font color="FFBB00">an additional attack</font>. With a $s1 chance, delivers <font color="FFBB00">an additional attack</font> with Momentum after a basic attack. (Cooldown: 10 sec.) With a $s2 chance, delivers <font color="FFBB00">an additional attack</font> with Momentum after a physical skill use. (Cooldown: 5 sec.) With a $s3 chance, <font color="FFBB00">delivers an additional attack</font> with lightning after a magic skill. (Trigger cooldown: 5 sec.) Requires a rapier. -->
 		<icon>icon.skill1516</icon>
 		<magicLevel>
 			<value level="1">20</value>
@@ -2291,7 +2291,7 @@
 		</effects>
 	</skill>
 	<skill id="1533" toLevel="2" name="Enlightenment">
-		<!-- <Skill with fixed cooldown> For $s1, you enjoy enlightenment. M. Atk. +$s2 Casting Spd. +$s4 M. Skill Critical Rate +$s5 M. Skill MP Consumption -$s6 Received Healing +$s3 -->
+		<!-- <Skill with fixed cooldown> For $s1, you enjoy enlightenment. M. Atk. +$s2 Casting Spd. $s4 M. Skill Critical Rate +$s5 M. Skill MP Consumption -$s6 Received Healing +$s3 Speed $s7 -->
 		<icon>icon.skill1532</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>20</abnormalTime>
@@ -2813,7 +2813,7 @@
 		</effects>
 	</skill>
 	<skill id="1540" toLevel="1" name="Turn to Stone">
-		<!-- Petrifies oneself for 5 sec. protecting from damage. -->
+		<!-- Petrifies oneself for 8 sec. to avoid incurring damage. -->
 		<icon>icon.skill1540</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>5</abnormalTime>
@@ -2892,7 +2892,7 @@
 		</effects>
 	</skill>
 	<skill id="1542" toLevel="2" name="Perfect Abilities">
-		<!-- The effect lasts for $s1 P. Def. -$s5 Received P. Critical Damage -$s2 When damage is taken: There is a certain chance P. Critical Damage +$s4 for $s3 -->
+		<!-- P. Def. $s1 When hit, for $s2 with a certain chance: P. Skill Critical Damage $s3 P. Skill Critical Rate $s4 (Cooldown: 15 sec.) -->
 		<icon>icon.skill1542</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
@@ -2945,7 +2945,7 @@
 		</effects>
 	</skill>
 	<skill id="1543" toLevel="1" name="Great Fury">
-		<!-- With a certain chance grants the Great Fury effect when attacking that increases Atk. Spd. and P. Critical Damage. -->
+		<!-- With a certain chance, applies a buff that increases Atk. Spd./ P. Critical Damage. (Cooldown: 15 sec.) -->
 		<icon>icon.skill1543</icon>
 		<magicLevel>80</magicLevel>
 		<magicCriticalRate>5</magicCriticalRate>
@@ -3090,7 +3090,7 @@
 		</effects>
 	</skill>
 	<skill id="1547" toLevel="5" name="Spirit Sharing">
-		<!-- The effect lasts for $s1 P. Atk. +$s2 M. Atk. +$s3 Atk. Spd. +$s4 Casting Spd. +$s4 P. Critical Rate +$s5 M. Skill Critical Rate +$s5 -->
+		<!-- Duration: $s1 P. Atk. +$s2 M. Atk. +$s3 Atk. Spd. +$s4 Casting Spd. +$s4 P. Critical Rate +$s5 M. Skill Critical Rate +$s5 -->
 		<icon>icon.skill1497</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -3281,7 +3281,7 @@
 		</effects>
 	</skill>
 	<skill id="1550" toLevel="2" name="Mass Cure">
-		<!-- Removes Infection/ Suppression from party members. -->
+		<!-- Removes Infection/ Suppression debuffs from party members. -->
 		<icon>icon.skill1550</icon>
 		<affectRange>1000</affectRange>
 		<effectPoint>1000</effectPoint>
@@ -3312,7 +3312,7 @@
 		</effects>
 	</skill>
 	<skill id="1551" toLevel="1" name="Mass Purify">
-		<!-- Removes Paralysis/ Shock/ Sleep/ Fear/ Imprisonment from party members. -->
+		<!-- Removes Paralysis/ Shock/ Sleep/ Fear/ Imprisonment debuffs from party members. -->
 		<icon>icon.skill1551</icon>
 		<affectRange>1000</affectRange>
 		<effectPoint>1000</effectPoint>
@@ -3368,7 +3368,7 @@
 		</effects>
 	</skill>
 	<skill id="1553" toLevel="2" name="Chain Heal">
-		<!-- Heals the target and the 10 most injured allies around the target by up to 30% of their Max HP. The recovery amount decreases starting from the most injured person. -->
+		<!-- For the target and 10 nearby allies Restores 30% of Max HP to the most damaged ally. Restored HP of the rest decreases. -->
 		<icon>icon.skill1553</icon>
 		<affectLimit>9-0</affectLimit>
 		<affectRange>300</affectRange>
@@ -3485,7 +3485,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="1556" toLevel="5" name="Arcane Shield">
-		<!-- <Skill with fixed cooldown> The effect lasts for $s1 Received Damage -$s2 Blocks the rest of the damage by consuming MP. The effect is cancelled when MP drops to 0. -->
+		<!-- <Skill with fixed cooldown> Blocks $s1 of damage. For the remainder of inflicted damage MP is consumed instead of HP. The effect is cancelled when MP reaches 0. -->
 		<icon>icon.skill1556</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>30</abnormalTime>
@@ -3534,7 +3534,7 @@
 		</effects>
 	</skill>
 	<skill id="1557" toLevel="5" name="Servitor Share">
-		<!-- Transfers the summoner's abilities to the servitor. P. Atk. $s1 M. Atk. $s1 P. Def. $s1 M. Def. $s1 Atk. Spd. $s2 Casting Spd. $s2 Max HP $s3 Max MP$s3 -->
+		<!-- Transfers a certain percentage of the summoner's stats to the servitor. P./ M. Atk.: $s1 P./ M. Def.: $s1 Atk. Spd./ Casting Spd.: $s2 Max HP/ MP: $s3 -->
 		<icon>icon.skill1557</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>

@@ -8,7 +8,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="4301" toLevel="1" name="Race">
-		<!-- Bugs -->
+		<!-- Insects -->
 		<icon>icon.skill4301</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -85,7 +85,7 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 	</skill>
 	<skill id="4312" toLevel="1" name="Defense Type">
-		<!-- Monster equipped with heavy armor. -->
+		<!-- A monster equipped with heavy armor. -->
 		<icon>icon.skill4312</icon>
 		<magicLevel>1</magicLevel>
 		<operateType>P</operateType>
@@ -394,7 +394,7 @@
 		</effects>
 	</skill>
 	<skill id="4320" toLevel="12" name="Poison">
-		<!-- Inflicts Poison on the target and decreases HP. Effect $s1 Inflicted status: Infection (Bleed, Poison). -->
+		<!-- Inflicts Poison on the target and decreases HP. Effect $s1. Inflicted status: Infection (Bleed, Poison). -->
 		<icon>icon.skill4035</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -501,7 +501,7 @@
 		</effects>
 	</skill>
 	<skill id="4322" toLevel="1" name="Adventurer's Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- Increases Speed by 33 for 60 min. -->
 		<icon>icon.skill1204</icon>
 		<abnormalLevel>3</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -524,7 +524,7 @@
 		</effects>
 	</skill>
 	<skill id="4323" toLevel="1" name="Adventurer's Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.skill1040</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -547,7 +547,7 @@
 		</effects>
 	</skill>
 	<skill id="4324" toLevel="1" name="Adventurer's Blessed Body">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.skill1045</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -570,7 +570,7 @@
 		</effects>
 	</skill>
 	<skill id="4325" toLevel="1" name="Adventurer's Vampiric Rage">
-		<!-- For 60 min., 9% of the physical damage inflicted on the enemy is recovered as HP with a certain probability. -->
+		<!-- For 60 min., absorbs 9% of the inflicted melee damage as HP with a certain chance. -->
 		<icon>icon.skill1268</icon>
 		<abnormalLevel>5</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -593,7 +593,7 @@
 		</effects>
 	</skill>
 	<skill id="4326" toLevel="1" name="Adventurer's Regeneration">
-		<!-- HP Recovery Rate +20% for 60 min. -->
+		<!-- For 60 min., HP Recovery Rate +20%. -->
 		<icon>icon.skill1044</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -616,7 +616,7 @@
 		</effects>
 	</skill>
 	<skill id="4327" toLevel="1" name="Adventurer's Haste">
-		<!-- Increases Atk. Spd. by 15% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +15%. -->
 		<icon>icon.skill1086</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -639,7 +639,7 @@
 		</effects>
 	</skill>
 	<skill id="4328" toLevel="1" name="Adventurer's Blessed Soul">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.skill1048</icon>
 		<abnormalLevel>7</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -662,7 +662,7 @@
 		</effects>
 	</skill>
 	<skill id="4329" toLevel="1" name="Adventurer's Acumen">
-		<!-- Casting Spd. +30% for 60 min. -->
+		<!-- For 60 min., Casting Spd. +30%. -->
 		<icon>icon.skill1085</icon>
 		<abnormalLevel>4</abnormalLevel>
 		<abnormalTime>3600</abnormalTime>
@@ -1389,7 +1389,7 @@
 		</effects>
 	</skill>
 	<skill id="4353" toLevel="6" name="Blessed Shield">
-		<!-- Momentarily increases shield defense rate. Effect $s1. -->
+		<!-- Temporarily increases Shield Defense Rate. Effect $s1 -->
 		<icon>icon.skill1243</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1434,7 +1434,7 @@
 		</effects>
 	</skill>
 	<skill id="4354" toLevel="4" name="Vampiric Rage">
-		<!-- Partially restores HP using damage inflicted upon the enemy with a certain probability. Effect $s1. -->
+		<!-- With a certain chance, absorbs some of the inflicted damage as HP. Effect $s1 -->
 		<icon>icon.skill1268</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1614,7 +1614,7 @@
 		</effects>
 	</skill>
 	<skill id="4359" toLevel="3" name="Focus">
-		<!-- Temporarily increases Critical Rate for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases Critical Rate for basic attacks. Effect $s1 -->
 		<icon>icon.skill1077</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -1650,7 +1650,7 @@
 		</effects>
 	</skill>
 	<skill id="4360" toLevel="3" name="Death Whisper">
-		<!-- Temporarily increases Critical Damage for standard attacks. Effect $s1 -->
+		<!-- Temporarily increases Critical Damage for basic attacks. Effect $s1 -->
 		<icon>icon.skill1242</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
@@ -2184,7 +2184,7 @@
 		</effects>
 	</skill>
 	<skill id="4378" toLevel="12" name="Damage Shield">
-		<!-- Temporarily returns some of the received damage back to the enemy. -->
+		<!-- Temporarily reflects the received damage back to the enemy. -->
 		<icon>icon.action105</icon>
 		<abnormalLevel>2</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
@@ -2772,7 +2772,7 @@
 		</effects>
 	</skill>
 	<skill id="4398" toLevel="6" name="Blessed Shield">
-		<!-- Momentarily increases the probability of shield defense. Effect $s1. -->
+		<!-- Temporarily increases Shield Defense Rate. Effect $s1 -->
 		<icon>icon.skill1243</icon>
 		<abnormalLevel>
 			<value level="1">2</value>
@@ -2809,7 +2809,7 @@
 		</effects>
 	</skill>
 	<skill id="4399" toLevel="4" name="Vampiric Rage">
-		<!-- Momentarily restores HP using damage inflicted upon the enemy with a certain probability. Effect $s1. -->
+		<!-- With a certain chance, absorbs some of the inflicted damage as HP. Effect $s1 -->
 		<icon>icon.skill1268</icon>
 		<abnormalLevel>
 			<value level="1">2</value>

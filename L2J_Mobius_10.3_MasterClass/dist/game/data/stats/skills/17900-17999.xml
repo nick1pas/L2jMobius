@@ -219,7 +219,7 @@
 		</effects>
 	</skill>
 	<skill id="17914" toLevel="1" name="Low-grade Love Potion">
-		<!-- A strange sensation envelopes you. For 15sec., P./ M./ Atk. and Atk./ Casting Spd. increase. A strange power transforms your weapon. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. -->
 		<icon>icon.love_potion</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<operateType>A2</operateType>
@@ -266,7 +266,7 @@
 		</effects>
 	</skill>
 	<skill id="17915" toLevel="1" name="Love Potion">
-		<!-- A strange sensation envelopes you. For 15sec., P./ M./ Atk. and Atk./ Casting Spd. increase. A strange power transforms your weapon. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. -->
 		<icon>icon.love_potion</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<operateType>A2</operateType>
@@ -313,7 +313,7 @@
 		</effects>
 	</skill>
 	<skill id="17916" toLevel="1" name="Mid-grade Love Potion">
-		<!-- A strange sensation envelopes you. For 15sec., P./ M./ Atk. and Atk./ Casting Spd. increase. A strange power transforms your weapon. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. -->
 		<icon>icon.love_potion</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<operateType>A2</operateType>
@@ -360,7 +360,7 @@
 		</effects>
 	</skill>
 	<skill id="17917" toLevel="1" name="High-grade Love Potion">
-		<!-- A strange sensation envelopes you. For 15sec., P./ M./ Atk. and Atk./ Casting Spd. increase. A strange power transforms your weapon. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. -->
 		<icon>icon.love_potion</icon>
 		<blockedInOlympiad>true</blockedInOlympiad>
 		<operateType>A2</operateType>
@@ -506,7 +506,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="17926" toLevel="2" name="Giant's Stone: Enchant R-grade Armor">
-		<!-- Allows to create Giant's Lucky Enchant Stone: R-grade Armor. Advanced Alchemy. -->
+		<!-- Required for creating Giant's Stone: Enchant R-grade Armor. Advanced Alchemy. -->
 		<icon>
 			<value level="1">icon.giant_ench_armor_stone_r_i01</value>
 			<value level="2">icon.giant_ench_wp_stone_r_i01</value>
@@ -514,7 +514,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="17927" toLevel="2" name="Windy Stone: Enchant R-grade Armor">
-		<!-- Allows to create Windy Lucky Enchant Stone: R-grade Armor. Master Alchemy. -->
+		<!-- Required for creating Windy Stone: Enchant R-grade Armor. Master Alchemy. -->
 		<icon>
 			<value level="1">icon.giant_ench_armor_stone_r_i02</value>
 			<value level="2">icon.giant_ench_wp_stone_r_i02</value>
@@ -667,7 +667,7 @@
 		<operateType>P</operateType>
 	</skill>
 	<skill id="17940" toLevel="1" name="Life Stone: Giant's Power">
-		<!-- Can convert to Life Stone: Giant's Power. Master Alchemy. -->
+		<!-- Creates Life Stone: Giant's Power. Master Alchemy. -->
 		<icon>icon.etc_small_bubble_i00</icon>
 		<operateType>P</operateType>
 		<reuseDelay>604800000</reuseDelay>
@@ -796,7 +796,7 @@
 		</effects>
 	</skill>
 	<skill id="17947" toLevel="1" name="Scroll of Escape: Rune">
-		<!-- Teleports you to the Town of Rune. -->
+		<!-- Teleports to Rune. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -823,7 +823,7 @@
 		</effects>
 	</skill>
 	<skill id="17948" toLevel="1" name="Scroll of Escape: Aden">
-		<!-- Teleports you to the Town of Aden. -->
+		<!-- Teleports to Aden. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -850,7 +850,7 @@
 		</effects>
 	</skill>
 	<skill id="17949" toLevel="1" name="Scroll of Escape: Oren">
-		<!-- Teleports you to the Town of Oren. -->
+		<!-- Teleports to Oren. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -902,7 +902,7 @@
 		</effects>
 	</skill>
 	<skill id="17951" toLevel="1" name="Scroll of Escape: Aden">
-		<!-- Teleports you to the Town of Aden. -->
+		<!-- Teleports to Aden. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -956,7 +956,7 @@
 		</effects>
 	</skill>
 	<skill id="17953" toLevel="1" name="Scroll of Escape: Aden">
-		<!-- Teleports you to the Town of Aden. -->
+		<!-- Teleports to Aden. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -1008,7 +1008,7 @@
 		</effects>
 	</skill>
 	<skill id="17955" toLevel="1" name="Scroll of Escape: Rune">
-		<!-- Teleports you to the Town of Rune. -->
+		<!-- Teleports to Rune. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -1062,7 +1062,7 @@
 		</effects>
 	</skill>
 	<skill id="17957" toLevel="1" name="Scroll of Escape: Rune">
-		<!-- Teleports you to the Town of Rune. -->
+		<!-- Teleports to Rune. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -1114,7 +1114,7 @@
 		</effects>
 	</skill>
 	<skill id="17959" toLevel="1" name="Scroll of Escape: Goddard">
-		<!-- Teleports you to the Town of Goddard. -->
+		<!-- Teleports to Goddard. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -1160,7 +1160,7 @@
 		</effects>
 	</skill>
 	<skill id="17961" toLevel="1" name="Scroll of Escape: Giran">
-		<!-- Teleports you to the Town of Giran. -->
+		<!-- Teleports to Giran. -->
 		<operateType>A1</operateType>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="23500" toLevel="1" name="(Harp Melody)">
-		<!-- For 30 min., party members' P. Accuracy +7, P./ M. Evasion +7, and Speed +36. Received Critical Damage -30%. -->
+		<!-- For 30 min., a party member's P. Accuracy +6, P./ M. Evasion +6, Speed +35, received Critical Damage -30%. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<mpConsume>151</mpConsume>
@@ -50,7 +50,7 @@
 		</effects>
 	</skill>
 	<skill id="23501" toLevel="1" name="(Harp Melody)">
-		<!-- For 30 min., party members' P. Accuracy +7, P. and M. Evasion +7, Speed +36 and received Critical Damage -30%. -->
+		<!-- For 30 min., a party member's P. Accuracy +7, P./ M. Evasion +7, Speed +36, received Critical Damage -30%. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<mpConsume>170</mpConsume>
@@ -99,7 +99,7 @@
 		</effects>
 	</skill>
 	<skill id="23502" toLevel="1" name="(Lute Melody)">
-		<!-- For 30 min., party members' Atk. Spd. +35%, Casting Spd. +32%, and has a chance of applying 9% Vampiric Rage. -->
+		<!-- For 30 min., a party member's Atk. Spd. +35%, Casting Spd. +32%. With a certain chance, Vampiric Rage effect +9%. -->
 		<icon>icon.skill11518</icon>
 		<operateType>A2</operateType>
 		<mpConsume>151</mpConsume>
@@ -139,7 +139,7 @@
 		</effects>
 	</skill>
 	<skill id="23503" toLevel="1" name="(Lute Melody)">
-		<!-- For 30 min., party members' Atk. Spd. +36% and Casting Spd. +33%. Also has a chance of triggering a 9% Vampiric Rage effect during a standard attack. -->
+		<!-- For 30 min., a party member's Atk. Spd. +36%, Casting Spd. +33%. With a certain chance, Vampiric Rage effect +9%. -->
 		<icon>icon.skill11518</icon>
 		<operateType>A2</operateType>
 		<mpConsume>170</mpConsume>
@@ -795,7 +795,7 @@
 		</effects>
 	</skill>
 	<skill id="23517" toLevel="1" name="Summon Tree of Life - NPC">
-		<!-- For 15 sec., restores all party members' HP by 666 a sec. -->
+		<!-- For 15 sec., recovers 666 HP per sec. to all party members. -->
 		<icon>icon.skill1229</icon>
 		<operateType>A2</operateType>
 		<effectPoint>204</effectPoint>
@@ -1475,7 +1475,7 @@
 		</effects>
 	</skill>
 	<skill id="23540" toLevel="1" name="Elixir of Blessing: Harp Melody">
-		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, and Speed +34. Received Critical Damage -30%. -->
+		<!-- For 30 min., P. Accuracy +5, P./ M. Evasion +5, Speed +34, received Critical Damage -30%. -->
 		<icon>icon.skill11521</icon>
 		<operateType>A2</operateType>
 		<effectPoint>687</effectPoint>
@@ -2073,7 +2073,7 @@
 		</effects>
 	</skill>
 	<skill id="23567" toLevel="1" name="Cancel Transformation">
-		<!-- Cancels transformation. -->
+		<!-- Cancel Transformation -->
 		<icon>icon.skilltransform2</icon>
 		<operateType>A1</operateType>
 		<effectPoint>1000</effectPoint>
@@ -2092,7 +2092,7 @@
 		</targetConditions>
 	</skill>
 	<skill id="23568" toLevel="1" name="Monster Dueling">
-		<!-- Monsters are fighting. Note! Logging out will abort the duel, so your character will not get a reward. -->
+		<!-- Monsters are fighting. Note!. Logging out will abort the duel, so your character will not get a reward. -->
 		<icon>BranchSys3.icon1.g_ev_sponsor_token</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -2112,7 +2112,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="23569" toLevel="1" name="Uthanka's Soul">
-		<!-- For 1 h., P. Atk. +5%, M. Atk. +20%, P. Def. +5%, M. Def. +5%, Speed +5%, Casting Spd. +5%, Max HP/ MP +5%. Acquired XP/ SP +30%. -->
+		<!-- For 1 h., P. Atk. +5%, M. Atk. +20%, P. Def. +5%, M. Def. +5%, Speed +5%, Casting Spd. +5%, Max HP/ MP +5%, acquired XP/ SP +30%. -->
 		<icon>BranchSys3.icon1.s_g_ev_uthanka_buff</icon>
 		<operateType>A2</operateType>
 		<castRange>900</castRange>
@@ -2319,7 +2319,7 @@
 		<reuseDelay>1000</reuseDelay>
 	</skill>
 	<skill id="23595" toLevel="1" name="Charge">
-		<!-- Charges to attack a target. -->
+		<!-- Launches an attack on a target. -->
 		<operateType>A1</operateType>
 		<mpConsume>10</mpConsume>
 		<castRange>600</castRange>
@@ -2327,13 +2327,13 @@
 		<hitTime>1000</hitTime>
 	</skill>
 	<skill id="23596" toLevel="1" name="Hide">
-		<!-- Hidden. -->
+		<!-- Hide status. -->
 		<operateType>A1</operateType>
 		<effectPoint>2</effectPoint>
 		<hitTime>1500</hitTime>
 	</skill>
 	<skill id="23597" toLevel="1" name="Cancel Hide">
-		<!-- Cancels hide. -->
+		<!-- Cancels the Hide state. -->
 		<operateType>A1</operateType>
 		<effectPoint>1</effectPoint>
 	</skill>

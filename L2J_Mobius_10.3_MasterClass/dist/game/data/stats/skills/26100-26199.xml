@@ -132,7 +132,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="26114" toLevel="1" name="Daily PA Support">
-		<!-- For 1 h., STR/ DEX/ CON/ INT/ WIT/ MEN +3, Attribute Attack Bonus +30, and Attribute Resistance +30. -->
+		<!-- For 1 h., STR/ DEX/ CON/ INT/ WIT/ MEN +3, P. Atk. +30, 6 Attribute Resistance +30. -->
 		<icon>icon.skill_sing</icon>
 		<operateType>A2</operateType>
 		<isMagic>4</isMagic>
@@ -322,7 +322,7 @@
 		</effects>
 	</skill>
 	<skill id="26118" toLevel="12" name="Healing Light">
-		<!-- Recovers party members' HP/ MP/ CP and has a chance of dispelling their debuffs. -->
+		<!-- Recovers party members' HP/ MP/ CP. With a certain chance, also removes their debuffs. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_april_aug_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>3000</hitTime>
@@ -370,7 +370,7 @@
 		</effects>
 	</skill>
 	<skill id="26119" toLevel="12" name="Skipping Kid">
-		<!-- Teleports 600 grids forward. -->
+		<!-- Momentarily moves you forward for $s1. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_dec_i00</icon>
 		<operateType>A1</operateType>
 		<hitTime>100</hitTime>
@@ -548,7 +548,7 @@
 		</effects>
 	</skill>
 	<skill id="26123" toLevel="12" name="Nemean Lion's Defense">
-		<!-- Invincible for $s1 -->
+		<!-- Grants invincibility for $s1 -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_april_july_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>500</hitTime>
@@ -635,7 +635,7 @@
 		</effects>
 	</skill>
 	<skill id="26125" toLevel="12" name="Scorpion's Mass Exile">
-		<!-- Banishes enemies near the target into another dimension. The exiled enemies become incapacitated and invincible against attacks, skills, and debuffs. The enemies' HP -$s1 per sec. -->
+		<!-- Banishes enemies near the target into another dimension. The exiled enemies cannot move, attack and use skills, they also become immune to debuffs. The enemies' HP -$s1 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_oct_i00</icon>
 		<operateType>A2</operateType>
 		<trait>DEPORT</trait>
@@ -694,7 +694,7 @@
 		</effects>
 	</skill>
 	<skill id="26126" toLevel="12" name="Mass Binding Flood">
-		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 Every sec. HP -$s2. -->
+		<!-- Lifts the target and nearby enemies in the air immobilizing them for $s1 HP -$s2 per sec. -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_jan_i00</icon>
 		<operateType>A1</operateType>
 		<castRange>1100</castRange>
@@ -771,7 +771,7 @@
 		</effects>
 	</skill>
 	<skill id="26127" toLevel="12" name="Slippery Scale">
-		<!-- For $s1, blocks $s2 debuff attack(s). -->
+		<!-- For $s1, blocks debuffs (up to $s2). -->
 		<icon>BranchIcon.Icon.accessary_sign_agathion_feb_i00</icon>
 		<operateType>A2</operateType>
 		<hitTime>200</hitTime>
@@ -875,7 +875,7 @@
 		</effects>
 	</skill>
 	<skill id="26130" toLevel="1" name="Dark Assassin's Move">
-		<!-- Goes into Hide state for 10 sec. -->
+		<!-- Makes you invisible for 10 sec. -->
 		<icon>BranchIcon.Icon.dark_assassin</icon>
 		<operateType>A2</operateType>
 		<hitTime>1000</hitTime>

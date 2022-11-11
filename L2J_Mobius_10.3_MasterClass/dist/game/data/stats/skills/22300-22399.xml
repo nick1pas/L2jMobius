@@ -183,7 +183,7 @@
 		</conditions>
 	</skill>
 	<skill id="22310" toLevel="1" name="Cupid's Cure">
-		<!-- Sends mutated animals a heart filled with love. -->
+		<!-- Sends a heart filled with love to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<operateType>A1</operateType>
 		<mpConsume>1</mpConsume>
@@ -213,7 +213,7 @@
 		</conditions>
 	</skill>
 	<skill id="22311" toLevel="1" name="Cupid's Enhanced Cure">
-		<!-- Sends mutated animals a powerful Heart filled with love. -->
+		<!-- Sends hearts to mutated animals. -->
 		<icon>icon.skill3260</icon>
 		<operateType>A1</operateType>
 		<mpConsume>1</mpConsume>
@@ -580,7 +580,7 @@
 		</effects>
 	</skill>
 	<skill id="22320" toLevel="1" name="Berserker Spirit">
-		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and Evasion by 4, increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 min. -->
+		<!-- For 60 min., P. Def. -8%, M. Def. -16%, Evasion -4, P. Atk. +8%, M. Atk. +16%, Atk. Spd. +8%, Casting Spd. +8%, Speed +8. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -628,7 +628,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22323" toLevel="1" name="Clarity">
-		<!-- Decreases MP Consumption by 20% for physical skills, by 10% for magical skills, and by 20% for song/ dance skills for 60 min. -->
+		<!-- For 60 min., P. Skill MP Consumption -20%, M. Skill MP Consumption -10%, Song/ Dance MP Consumption -20%. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -660,7 +660,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22325" toLevel="1" name="Blessed Body">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -676,7 +676,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22326" toLevel="1" name="Empower">
-		<!-- Increases M. Atk. by 75% for 60 min. -->
+		<!-- For 60 min., M. Atk. +75%. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -692,7 +692,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22327" toLevel="1" name="Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- Increases Speed by 33 for 60 min. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -708,7 +708,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22328" toLevel="1" name="Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.etc_fruit_cocktail_i01</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -724,7 +724,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22329" toLevel="1" name="Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- Increases Speed by 33 for 60 min. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -740,7 +740,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22330" toLevel="1" name="Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -756,7 +756,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22331" toLevel="1" name="Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -788,7 +788,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22333" toLevel="1" name="Vampiric Rage">
-		<!-- Absorbs 9% of the physical damage inflicted on the enemy as HP with a certain probability for 60 min. -->
+		<!-- For 60 min., absorbs 9% of the inflicted melee damage as HP with a certain chance. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -820,7 +820,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22335" toLevel="1" name="Might">
-		<!-- Increases P. Atk. by 15% for 60 min. -->
+		<!-- For 60 min., P. Atk. +15%. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -836,7 +836,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22336" toLevel="1" name="Blessed Body">
-		<!-- Max HP +35% for 60 min. -->
+		<!-- For 60 min., Max HP +35%. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -884,7 +884,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22339" toLevel="1" name="Berserker Spirit">
-		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and Evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 min. -->
+		<!-- For 60 min., P. Def. -8%, M. Def. -16%, Evasion -4, P. Atk. +8%, M. Atk. +16%, Atk. Spd. +8%, Casting Spd. +8%, Speed +8. -->
 		<icon>icon.etc_fruit_cocktail_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -917,7 +917,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22341" toLevel="1" name="Wind Walk">
-		<!-- Temporarily increases Speed. Effect 2. -->
+		<!-- Increases Speed by 33 for 60 min. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -934,7 +934,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22342" toLevel="1" name="Haste">
-		<!-- Atk. Spd. +33% for 60 min. -->
+		<!-- For 60 min., Atk. Spd. +33%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -951,7 +951,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22343" toLevel="1" name="Vampiric Rage">
-		<!-- For 60 min., with a certain chance, absorbs 9% of the inflicted melee damage as HP. -->
+		<!-- For 60 min., absorbs 9% of the inflicted melee damage as HP with a certain chance. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -968,7 +968,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22344" toLevel="1" name="Berserker Spirit">
-		<!-- Decreases P. Def. by 8%, M. Def. by 16%, and Evasion by 4, and increases P. Atk. by 8%, M. Atk. by 16%, Atk. Spd. by 8%, Casting Spd. by 8%, and Speed by 8 for 60 min. -->
+		<!-- For 60 min., P. Def. -8%, M. Def. -16%, Evasion -4, P. Atk. +8%, M. Atk. +16%, Atk. Spd. +8%, Casting Spd. +8%, Speed +8. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -985,7 +985,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22345" toLevel="1" name="Empower">
-		<!-- Increases M. Atk. by 75% for 60 min. -->
+		<!-- For 60 min., M. Atk. +75%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1019,7 +1019,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22347" toLevel="1" name="Shield">
-		<!-- P. Def. +15% for 60 min. -->
+		<!-- For 60 min., P. Def. +15%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1087,7 +1087,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22351" toLevel="1" name="Clarity">
-		<!-- Decreases MP Consumption by 20% for physical skills, by 10% for magical skills, and by 20% for song/ dance skills for 60 min. -->
+		<!-- For 60 min., P. Skill MP Consumption -20%, M. Skill MP Consumption -10%, Song/ Dance MP Consumption -20%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1121,7 +1121,7 @@
 		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="22353" toLevel="6" name="Concentration">
-		<!-- Casting Interruption Rate -42 for 20 min. -->
+		<!-- For 20 min., Casting Interruption Rate -42%. -->
 		<icon>icon.etc_fresh_milk_i00</icon>
 		<operateType>A2</operateType>
 		<effectPoint>1</effectPoint>
@@ -1151,7 +1151,7 @@
 			<effect name="RestorationRandom">
 				<items>
 					<item chance="0.002525">
-						<item id="22202" count="1" /> <!-- Weapon Pack (S80-grade) - Event -->
+						<item id="22202" count="1" /> <!-- High-grade Weapon Pack (S80-grade) - Event -->
 					</item>
 					<item chance="0.04161">
 						<item id="22221" count="1" /> <!-- Destruction Scroll: Enchant S-grade Weapon - Event -->
@@ -1250,16 +1250,16 @@
 						<item id="9627" count="1" /> <!-- Lesser Giant's Codex - Mastery -->
 					</item>
 					<item chance="0.833333">
-						<item id="17276" count="1" /> <!-- Scroll: 50,000 SP -->
+						<item id="17276" count="1" /> <!-- Scroll: 5 SP -->
 					</item>
 					<item chance="4.182543">
-						<item id="17185" count="1" /> <!-- Scroll: 10,000 SP -->
+						<item id="17185" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="6.506178">
 						<item id="14052" count="5" /> <!-- Vesper Noble Enhancement Stone -->
 					</item>
 					<item chance="5.809087">
-						<item id="17184" count="1" /> <!-- Scroll: 5000 SP -->
+						<item id="17184" count="1" /> <!-- Scroll: 1 SP -->
 					</item>
 					<item chance="6.738541">
 						<item id="6622" count="1" /> <!-- Lesser Giant's Codex -->
@@ -1658,7 +1658,7 @@
 				<isWithin>true</isWithin>
 			</condition>
 			<condition name="OpSkill">
-				<skillId>1468</skillId> <!-- Star Fall -->
+				<skillId>1468</skillId> <!-- Starfall -->
 				<skillLevel>1</skillLevel>
 				<hasLearned>false</hasLearned>
 			</condition>
@@ -1715,10 +1715,10 @@
 						<item id="14774" count="1" /> <!-- Wild Rose Pig Candy - 14-day -->
 					</item>
 					<item chance="20">
-						<item id="22238" count="1" /> <!-- Scroll: Hair Accessory (Warrior) -->
+						<item id="22238" count="1" /> <!-- Scroll: Head Accessory (Warrior) - Not Available -->
 					</item>
 					<item chance="20">
-						<item id="22239" count="1" /> <!-- Scroll: Hair Accessory (Wizard) -->
+						<item id="22239" count="1" /> <!-- Scroll: Head Accessory (Wizard) - Not Available -->
 					</item>
 				</items>
 			</effect>
@@ -2152,13 +2152,13 @@
 						<item id="9916" count="1" /> <!-- Blue Talisman - Berserker -->
 					</item>
 					<item chance="1.1236">
-						<item id="9917" count="1" /> <!-- Red Talisman - Minimum Clarity -->
+						<item id="9917" count="1" /> <!-- Red Talisman - Clarity -->
 					</item>
 					<item chance="1.1236">
 						<item id="9918" count="1" /> <!-- Red Talisman - Maximum Clarity -->
 					</item>
 					<item chance="1.1236">
-						<item id="9919" count="1" /> <!-- Blue Talisman - Damage Reflect -->
+						<item id="9919" count="1" /> <!-- Blue Talisman - Damage Reflection -->
 					</item>
 					<item chance="1.1236">
 						<item id="9920" count="1" /> <!-- Blue Talisman - Invisibility -->
@@ -2167,7 +2167,7 @@
 						<item id="9921" count="1" /> <!-- Blue Talisman - Shield Defense -->
 					</item>
 					<item chance="1.1236">
-						<item id="9922" count="1" /> <!-- Black Talisman - Mending -->
+						<item id="9922" count="1" /> <!-- Black Talisman - Bandage -->
 					</item>
 					<item chance="1.1236">
 						<item id="9923" count="1" /> <!-- Black Talisman - Escape -->
@@ -2188,7 +2188,7 @@
 						<item id="9928" count="1" /> <!-- Red Talisman - MP Recovery Rate -->
 					</item>
 					<item chance="1.1236">
-						<item id="9929" count="1" /> <!-- Blue Talisman - Shield Defense -->
+						<item id="9929" count="1" /> <!-- Blue Talisman - Shield Defense Rate -->
 					</item>
 					<item chance="1.1236">
 						<item id="9930" count="1" /> <!-- Blue Talisman - Evasion -->
@@ -2197,7 +2197,7 @@
 						<item id="9931" count="1" /> <!-- Red Talisman - Meditation -->
 					</item>
 					<item chance="1.1236">
-						<item id="9932" count="1" /> <!-- Blue Talisman - Divine Protection -->
+						<item id="9932" count="1" /> <!-- Blue Talisman - Benefaction -->
 					</item>
 					<item chance="1.1236">
 						<item id="9933" count="1" /> <!-- Yellow Talisman - P. Atk. -->
@@ -2227,28 +2227,28 @@
 						<item id="9941" count="1" /> <!-- Yellow Talisman - Speed -->
 					</item>
 					<item chance="1.1236">
-						<item id="9942" count="1" /> <!-- Yellow Talisman - Critical Reduction -->
+						<item id="9942" count="1" /> <!-- Yellow Talisman - Critical Resistance -->
 					</item>
 					<item chance="1.1236">
 						<item id="9943" count="1" /> <!-- Yellow Talisman - Critical Damage -->
 					</item>
 					<item chance="1.1236">
-						<item id="9944" count="1" /> <!-- Yellow Talisman - Critical Dodging -->
+						<item id="9944" count="1" /> <!-- Yellow Talisman - Critical Evasion -->
 					</item>
 					<item chance="1.1236">
 						<item id="9945" count="1" /> <!-- Yellow Talisman - Evasion -->
 					</item>
 					<item chance="1.1236">
-						<item id="9946" count="1" /> <!-- Yellow Talisman - Healing -->
+						<item id="9946" count="1" /> <!-- Yellow Talisman: Healing -->
 					</item>
 					<item chance="1.1236">
-						<item id="9947" count="1" /> <!-- Yellow Talisman - CP Recovery Rate -->
+						<item id="9947" count="1" /> <!-- Yellow Talisman - CP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="9948" count="1" /> <!-- Yellow Talisman - HP Recovery Rate -->
+						<item id="9948" count="1" /> <!-- Yellow Talisman - HP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="9949" count="1" /> <!-- Yellow Talisman - MP Recovery Rate -->
+						<item id="9949" count="1" /> <!-- Yellow Talisman - MP Recovery -->
 					</item>
 					<item chance="1.1236">
 						<item id="9950" count="1" /> <!-- Grey Talisman - Weight Limit -->
@@ -2257,7 +2257,7 @@
 						<item id="9951" count="1" /> <!-- Grey Talisman - Mid-grade Fishing -->
 					</item>
 					<item chance="1.1236">
-						<item id="9952" count="1" /> <!-- Orange Talisman - Hot Springs CP Potion -->
+						<item id="9952" count="1" /> <!-- Orange Talisman - CP Recovery Potion -->
 					</item>
 					<item chance="1.1236">
 						<item id="9953" count="1" /> <!-- Orange Talisman - Elixir of Life -->
@@ -2302,10 +2302,10 @@
 						<item id="9966" count="1" /> <!-- White Talisman - Obstruction Resistance -->
 					</item>
 					<item chance="1.1236">
-						<item id="10141" count="1" /> <!-- Grey Talisman - Yeti Transform -->
+						<item id="10141" count="1" /> <!-- Grey Talisman - Yeti Transformation -->
 					</item>
 					<item chance="1.1236">
-						<item id="10142" count="1" /> <!-- Grey Talisman - Buffalo Transform -->
+						<item id="10142" count="1" /> <!-- Grey Talisman - Buffalo Transformation -->
 					</item>
 					<item chance="1.1236">
 						<item id="10158" count="1" /> <!-- Grey Talisman - High-grade Fishing -->
@@ -2314,13 +2314,13 @@
 						<item id="10416" count="1" /> <!-- Blue Talisman - Explosion -->
 					</item>
 					<item chance="1.1236">
-						<item id="10417" count="1" /> <!-- Blue Talisman - Magic Explosion -->
+						<item id="10417" count="1" /> <!-- Blue Talisman - Magic Burst -->
 					</item>
 					<item chance="1.1236">
 						<item id="10418" count="1" /> <!-- White Talisman - Storm -->
 					</item>
 					<item chance="1.1236">
-						<item id="10419" count="1" /> <!-- White Talisman - Darkness -->
+						<item id="10419" count="1" /> <!-- White Talisman - Dark -->
 					</item>
 					<item chance="1.1236">
 						<item id="10420" count="1" /> <!-- White Talisman - Water -->
@@ -2329,7 +2329,7 @@
 						<item id="10421" count="1" /> <!-- White Talisman - Fire -->
 					</item>
 					<item chance="1.1236">
-						<item id="10422" count="1" /> <!-- White Talisman - Light -->
+						<item id="10422" count="1" /> <!-- White Talisman - Holy -->
 					</item>
 					<item chance="1.1236">
 						<item id="10423" count="1" /> <!-- Blue Talisman - Self-destruction -->
@@ -2338,7 +2338,7 @@
 						<item id="10424" count="1" /> <!-- Blue Talisman - Greater Healing -->
 					</item>
 					<item chance="1.1236">
-						<item id="10518" count="1" /> <!-- Red Talisman - Life Force -->
+						<item id="10518" count="1" /> <!-- Red Talisman - Vital Force -->
 					</item>
 					<item chance="1.1236">
 						<item id="10519" count="1" /> <!-- White Talisman - Earth -->
@@ -2359,16 +2359,16 @@
 						<item id="10537" count="1" /> <!-- Yellow Talisman - Evasion -->
 					</item>
 					<item chance="1.1236">
-						<item id="10538" count="1" /> <!-- Yellow Talisman - Healing Power -->
+						<item id="10538" count="1" /> <!-- Yellow Talisman: Healing -->
 					</item>
 					<item chance="1.1236">
-						<item id="10539" count="1" /> <!-- Yellow Talisman - CP Recovery Rate -->
+						<item id="10539" count="1" /> <!-- Yellow Talisman - CP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="10540" count="1" /> <!-- Yellow Talisman - HP Recovery Rate -->
+						<item id="10540" count="1" /> <!-- Yellow Talisman - HP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="10541" count="1" /> <!-- Low-grade Yellow Talisman - MP Recovery Rate -->
+						<item id="10541" count="1" /> <!-- Low-grade Yellow Talisman - MP Recovery -->
 					</item>
 					<item chance="1.1236">
 						<item id="10542" count="1" /> <!-- Red Talisman - HP/CP Recovery -->
@@ -2383,7 +2383,7 @@
 						<item id="12816" count="1" /> <!-- Red Talisman - CP Recovery -->
 					</item>
 					<item chance="1.1236">
-						<item id="12817" count="1" /> <!-- Yellow Talisman - Increase Momentum -->
+						<item id="12817" count="1" /> <!-- Yellow Talisman - Momentum -->
 					</item>
 					<item chance="1.1236">
 						<item id="12818" count="1" /> <!-- Yellow Talisman - Damage Transition -->
@@ -2404,7 +2404,7 @@
 						<item id="14812" count="1" /> <!-- Red Talisman - Territory Royal Guard -->
 					</item>
 					<item chance="1.1236">
-						<item id="14813" count="1" /> <!-- Blue Talisman - Lord's Divine Protection -->
+						<item id="14813" count="1" /> <!-- Blue Talisman - Lord's Favor -->
 					</item>
 					<item chance="1.1236">
 						<item id="14814" count="1" /> <!-- White Talisman - Attribute Resistance -->
@@ -2617,7 +2617,7 @@
 						<item id="21235" count="3" /> <!-- Fresh Milk -->
 					</item>
 					<item chance="0.45">
-						<item id="13276" count="1" /> <!-- Package: Minion Coupon (1 pc.) -->
+						<item id="13276" count="1" /> <!-- Package: Pet Necklace Coupon (1 pc.) -->
 					</item>
 					<item chance="0.5">
 						<item id="14248" count="1" /> <!-- Package: Superior Minion Coupon (1 pc.) -->

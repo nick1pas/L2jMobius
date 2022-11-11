@@ -11,7 +11,6 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33917" toLevel="1" name="Ant Hole">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -40,22 +39,22 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33923" toLevel="1" name="Shriek">
-		<!-- Attacks an enemy in the front. -->
+		<!-- Attacks an enemy at the front. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33924" toLevel="1" name="Solo Fighter Monster">
-		<!-- Monster's P./ M. Atk. and P./ M. Def. increase. -->
+		<!-- Increases the monster's P. Atk., M. Atk., P. Def. and M. Def. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33925" toLevel="1" name="Solo Mage Monster">
-		<!-- Monster's P./ M. Atk. and P./ M. Def. increase. -->
+		<!-- Increases the monster's P. Atk., M. Atk., P. Def. and M. Def. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33926" toLevel="1" name="Solo Archer Monster">
-		<!-- Monster's P./ M. Atk. and P./ M. Def. increase. -->
+		<!-- Increases the monster's P. Atk., M. Atk., P. Def. and M. Def. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -65,7 +64,7 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="33928" toLevel="3" name="Dizzy Lv. 1">
-		<!-- The body feels pleasant coolness, the head starts spinning. For $s1, damage +$s2, received damage -$s2. Note! 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
+		<!-- The body feels pleasant coolness, the head starts spinning. For $s1, damage +$s2, received damage -$s2. Note!. 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
 		<icon>icon.skill0000</icon>
 		<abnormalTime>
 			<value level="1">3600</value>
@@ -131,7 +130,7 @@
 		</effects>
 	</skill>
 	<skill id="33929" toLevel="2" name="Dizzy Lv. 1">
-		<!-- The body feels pleasant coolness, the head starts spinning. For $s1, damage +$s2, received damage -$s2. Note! 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
+		<!-- The body feels pleasant coolness, the head starts spinning. For $s1, damage +$s2, received damage -$s2. Note!. 1. The effect remains after death. Cannot be used in the Olympiad/ Ceremony of Chaos. 2. The item or effect of the next level cannot be obtained if the characters is dead or too far away. 3. The item cannot be obtained if the inventory is full. 4. The effect can be removed with Alt+Mouse Left Click. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
 	</skill>
@@ -170,7 +169,7 @@
 		</effects>
 	</skill>
 	<skill id="33932" toLevel="3" name="Nymph's Basic Ability">
-		<!-- Damage +1% when attacking skills are used. -->
+		<!-- Damage +1% when attack skills are used. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -197,7 +196,7 @@
 			<effect name="TriggerSkillByDamage">
 				<chance>5</chance>
 				<minDamage>100</minDamage>
-				<skillId>34013</skillId> <!-- Oculus's Blessing -->
+				<skillId>34013</skillId> <!-- Oculus' Blessing -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -212,7 +211,7 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="TriggerSkillBySkill">
-				<skillId>34014</skillId>
+				<skillId>34014</skillId> <!-- Fofo's Blessing -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -494,7 +493,7 @@
 		</effects>
 	</skill>
 	<skill id="33945" toLevel="3" name="Cow Lv. 3 - Bond Lv. 1">
-		<!-- Attribute Attack/ Resistance +15. -->
+		<!-- Attribute Attack/ Resistance +15 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -570,7 +569,7 @@
 		</effects>
 	</skill>
 	<skill id="33947" toLevel="3" name="Nymph Lv. 3 - Bond Lv. 1">
-		<!-- Attribute Attack/ Resistance +15. -->
+		<!-- Attribute Attack/ Resistance +15 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -632,7 +631,7 @@
 		</effects>
 	</skill>
 	<skill id="33948" toLevel="3" name="Oculus Lv. 3 - Bond Lv. 1">
-		<!-- Attribute Attack/ Resistance +15. -->
+		<!-- Attribute Attack/ Resistance +15 -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -740,7 +739,7 @@
 		</effects>
 	</skill>
 	<skill id="33951" toLevel="3" name="Chorong Lv. 4 - Bond Lv. 1">
-		<!-- Adena drop rate +1% if you have Vitality. -->
+		<!-- Adena drop rate +1%. if you have Vitality. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -804,7 +803,7 @@
 		</effects>
 	</skill>
 	<skill id="33954" toLevel="3" name="Fofo Lv. 4 - Bond Lv. 1">
-		<!-- Probability to enchant armor +1%. -->
+		<!-- Base probability to enchant armor +1% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -848,7 +847,7 @@
 		</effects>
 	</skill>
 	<skill id="33957" toLevel="3" name="Nymph Lv. 5 - Bond Lv. 1">
-		<!-- Power of standard attacks and P./ M. skills +3%. -->
+		<!-- Power of basic attacks and P./ M. skills +3%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -894,7 +893,7 @@
 		</effects>
 	</skill>
 	<skill id="33959" toLevel="3" name="Fofo Lv. 5 - Bond Lv. 1">
-		<!-- Probability to enchant weapon +1%. -->
+		<!-- Base probability to enchant weapons +1% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1424,7 +1423,7 @@
 		</effects>
 	</skill>
 	<skill id="33976" toLevel="3" name="Earth Chorong Lv. 4 - Bond Lv. 1">
-		<!-- Adena drop rate +2% if you have Vitality. -->
+		<!-- Adena drop rate +2%. if you have Vitality. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<passiveConditions>
@@ -1488,7 +1487,7 @@
 		</effects>
 	</skill>
 	<skill id="33979" toLevel="3" name="Earth Fofo Lv. 4 - Bond Lv. 1">
-		<!-- Probability to enchant armor +2%. -->
+		<!-- Base probability to enchant armor +2% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1532,7 +1531,7 @@
 		</effects>
 	</skill>
 	<skill id="33982" toLevel="3" name="Earth Nymph Lv. 5 - Bond Lv. 1">
-		<!-- Power of standard attacks and P./ M. skills +4%. -->
+		<!-- Power of basic attacks and P./ M. skills +4%. -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
@@ -1578,7 +1577,7 @@
 		</effects>
 	</skill>
 	<skill id="33984" toLevel="3" name="Earth Fofo Lv. 5 - Bond Lv. 1">
-		<!-- Probability to enchant weapon +2%. -->
+		<!-- Base probability to enchant weapons +2% -->
 		<icon>icon.skill0000</icon>
 		<operateType>P</operateType>
 		<effects>
