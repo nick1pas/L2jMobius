@@ -144,7 +144,7 @@
 		</skills>
 	</item>
 	<item id="37708" name="Coco's Transformation Chocolate" type="EtcItem">
-		<!-- Item containing the magic of Coco. the messenger of love. For 60 min., you can transform into one of the following: Snow Man. Scarecrow Jack. Tin Golem. Makeshift Bat. Lady Tow. Angry Tow. Sleepy Tow. Cannot be stored in a warehouse. -->
+		<!-- Filled with magic of Coco Brownie, the messenger of love. For 60 min., transforms into one of the following: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. To restore the default appearance, click Alt+left mouse click. Can be stored in the private warehouse. -->
 		<set name="icon" val="icon.etc_whiteday_choco" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -160,7 +160,7 @@
 		</skills>
 	</item>
 	<item id="37709" name="Coco's Transformation Candy" type="EtcItem">
-		<!-- Item containing the magic of Coco. the messenger of love. For 60 min., you can transform into one of the following: Snow Man. Scarecrow Jack. Tin Golem. Makeshift Bat. Lady Tow. Angry Tow. Sleepy Tow. Cannot be stored in a warehouse. -->
+		<!-- Filled with magic of Coco Brownie, the messenger of love. For 60 min., transforms into one of the following: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. To restore the default appearance, click Alt+left mouse click. Can be stored in the private warehouse. -->
 		<set name="icon" val="icon.etc_whiteday_candy" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -176,7 +176,7 @@
 		</skills>
 	</item>
 	<item id="37710" name="Coco's Transformation Cookie" type="EtcItem">
-		<!-- Item containing the magic of Coco. the messenger of love. For 60 min., you can transform into one of the following: Snow Man. Scarecrow Jack. Tin Golem. Makeshift Bat. Lady Tow. Angry Tow. Sleepy Tow. Cannot be stored in a warehouse. -->
+		<!-- Filled with magic of Coco Brownie, the messenger of love. For 60 min., transforms into one of the following: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. To restore the default appearance, click Alt+left mouse click. Can be stored in the private warehouse. -->
 		<set name="icon" val="icon.etc_whiteday_cookie" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -240,7 +240,7 @@
 		</skills>
 	</item>
 	<item id="37714" name="Talisman of Lilith" type="Armor">
-		<!-- M. Def. +552, MP Recovery Rate +3, Dark Resistance +10, Damage Reflection Resistance +6%. The effect does not stack with that of Talisman of Anakim/ Seven Signs. Effects of two talismans do not stack, the higher-level talisman takes precedence. <Enhancing>. Take it along with Talisman of Anakim and Seven Signs' Energy to Seed Talisman Manager to obtain Talisman of Seven Signs. -->
+		<!-- M. Def. +552, MP Recovery Rate +3, Dark Resistance +10, Damage Reflection Resistance +6%. The effect does not stack with that of Talisman of Anakim/ Seven Signs. Effects of two talismans do not stack, the higher-level talisman takes precedence. <Enhancing> Take it along with Talisman of Anakim and Seven Signs' Energy to Seed Talisman Manager to obtain Talisman of Seven Signs. -->
 		<set name="icon" val="icon.lilith_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -255,7 +255,7 @@
 		</skills>
 	</item>
 	<item id="37715" name="Talisman of Anakim" type="Armor">
-		<!-- P Def. +971, HP Recovery Rate +6, Dark/ Holy Resistance +10, Damage Reflection Resistance +6%. The effect does not stack with that of Talisman of Lilith/ Seven Signs. Effects of two talismans do not stack, the higher-level talisman takes precedence. <Enhancing>. Take it along with Talisman of Lilith and Seven Signs' Energy to Seed Talisman Manager to obtain Talisman of Seven Signs. -->
+		<!-- P Def. +971, HP Recovery Rate +6, Dark/ Holy Resistance +10, Damage Reflection Resistance +6%. The effect does not stack with that of Talisman of Lilith/ Seven Signs. Effects of two talismans do not stack, the higher-level talisman takes precedence. <Enhancing> Take it along with Talisman of Lilith and Seven Signs' Energy to Seed Talisman Manager to obtain Talisman of Seven Signs. -->
 		<set name="icon" val="icon.anakim_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -270,13 +270,13 @@
 		</skills>
 	</item>
 	<item id="37716" name="Seven Signs' Energy" type="EtcItem">
-		<!-- Take Talisman of Lilith and Talisman of Anakim to Seed Talisman Manager to obtain Talisman of Seven Signs. -->
+		<!-- Take it along with Talisman of Lilith and Talisman of Anakim to the Seed Talisman Manager to obtain Talisman of Seven Signs. -->
 		<set name="icon" val="icon.sevensign_energy_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="37717" name="Talisman of Seven Signs" type="Armor">
-		<!-- M. Def. +736, P. Def. +1126, MP Recovery Rate +4, HP Recovery Rate +8, Attribute Resistance +10, Damage Reflection Resistance +14%. When equipped with Talisman of Longing/ Insanity, Attribute Attack +50, Resistance to All Weapons +3%. Effects of two talismans do not stack, the higher-level talisman takes precedence. <Enhancing>. Can be compounded with Talisman of Seven Signs to obtain Epic Talisman. -->
+		<!-- When equipped, M. Def. +736, P. Def. +1126, MP Recovery Rate +4, HP Recovery Rate +8, Attribute Resistance +10, Damage Reflection Resistance +14%. When equipped with Talisman of Longing, Talisman of Insanity or Heavenly Talisman, Attribute Attack +50, Resistance to All Weapons +3%. Effects of two talismans do not stack, the higher-level talisman takes precedence. <Enhancing> Can be compounded with Talisman of Seven Signs to obtain Epic Talisman. -->
 		<set name="icon" val="icon.sevensign_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -323,7 +323,7 @@
 		</stats>
 	</item>
 	<item id="37719" name="Pa'agrio's Special Pack" type="EtcItem">
-		<!-- Double-click to obtain Pa'agrio's Shirt or, with a very low chance, Shiny Elemental Shirt. Note!. Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
+		<!-- Double-click to obtain Pa'agrio's Shirt or, with a very low chance, Shiny Elemental Shirt. Note! Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
 		<set name="icon" val="icon.shirt_special_box_i02" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -338,7 +338,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37720" name="Maphr's Special Pack" type="EtcItem">
-		<!-- Double-click to obtain Maphr's Shirt or, with a very low chance, Shiny Elemental Shirt. Note!. Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
+		<!-- Double-click to obtain Maphr's Shirt or, with a very low chance, Shiny Elemental Shirt. Note! Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
 		<set name="icon" val="icon.shirt_special_box_i01" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -353,7 +353,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37721" name="Sayha's Special Pack" type="EtcItem">
-		<!-- Double-click to obtain Sayha's Shirt or, with a very low chance, Shiny Elemental Shirt. Note!. Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
+		<!-- Double-click to obtain Sayha's Shirt or, with a very low chance, Shiny Elemental Shirt. Note! Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
 		<set name="icon" val="icon.shirt_special_box_i03" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -368,7 +368,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37722" name="Eva's Special Pack" type="EtcItem">
-		<!-- Double-click to obtain Eva's Shirt or, with a very low chance, Shiny Elemental Shirt. Note!. Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
+		<!-- Double-click to obtain Eva's Shirt or, with a very low chance, Shiny Elemental Shirt. Note! Once the pack is opened, the shirt is bound to the character and cannot be traded. -->
 		<set name="icon" val="icon.shirt_special_box_i00" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -383,7 +383,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37723" name="Shiny Elemental Shirt Exchange Stone" type="EtcItem">
-		<!-- A stone needed to exchange a shirt enchanted to +8 for the same shirt enchanted to +10. Note!. The shirt cannot be traded, dropped or sold after exchanging. -->
+		<!-- A stone needed to exchange a shirt enchanted to +8 for the same shirt enchanted to +10. Note! The shirt cannot be traded, dropped or sold after exchanging. -->
 		<set name="icon" val="icon.shirt_stone" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -398,7 +398,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="37725" name="NC Dinos Uniform" type="Armor">
-		<!-- NC Dinos Uniform. When equipped, armor is removed and cannot be used. Hair accessories, weapons, and magic armor are not removed. -->
+		<!-- NC Dinos Uniform. When equipped, armor is removed and cannot be used. Head accessories, weapons and accessories are not removed. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -450,7 +450,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37729" name="Dandy's Scroll: Faith" type="EtcItem">
-		<!-- For 60 min., P. Atk. +5%, Atk. Spd. +5%, P. Critical Rate +30, M. Atk. +10%, Casting Spd. +5%, M. Skill Critical Rate +20, MP consumption -3%, and cooldown -3%. Dandy's Cheer and Dandy's Passion buffs are not applied at the same time. -->
+		<!-- For 60 min., P. Atk. +5%, Atk. Spd. +5%, P. Critical Rate +30, M. Atk. +10%, Casting Spd. +5%, M. Skill Critical Rate +20, MP Consumption -3%, Skill Cooldown -3%. Does not stack with the Dandy's Cheer and Dandy's Passion buffs. -->
 		<set name="icon" val="BranchSys.icon.br_xmas_scroll_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -504,7 +504,7 @@
 		</skills>
 	</item>
 	<item id="37732" name="Blessed Antharas' Earring" additionalName="7-day" type="Armor">
-		<!-- MP +59. P./ M. Def. +15%. CON/ MEN +3. Earth/ Holy Resistance +30. Infection Atk. Rate/ Resistance +50%, Confusion Atk. Rate/ Resistance +40%. Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage +4%. Active skill: removes the Stun effect and grants immune to Confusion for 5 sec. The effect doesn't stack if two identical earrings are equipped. -->
+		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Holy/ Earth Resistance +30, Infection Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Shock debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.accessory_earring_of_antaras_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -523,7 +523,7 @@
 		</stats>
 	</item>
 	<item id="37733" name="Blessed Valakas' Necklace" additionalName="7-day" type="Armor">
-		<!-- MP +79. HP +625. P. Atk. +10%. M. Atk. +20%. M. Skill Critical Rate +20. STR/INT +3. Fire Resistance +30, Dark Resistance +20. Stupor Atk. Rate/ Resistance +50%. P. Skill Power +5%. Skill Cooldown -10%, Damage Reflection +5%. Active skill: removes the Hold effect and grants immune to Obstruction for 5 sec. Cannot be used in the Olympiad. -->
+		<!-- MP +79, Max HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Atk. Rate and Resistance +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.accessory_necklace_of_valakas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -542,7 +542,7 @@
 		</stats>
 	</item>
 	<item id="37734" name="Tauti's Ring" additionalName="7-day" type="Armor">
-		<!-- Fire/ Dark Resistance +25, MP +38, Critical Damage for standard attacks +15%, P. Skill Power +5%, PvP damage +5%, Confusion/ Obstruction Resistance +10, Damage Reflection Resistance +5, Blood Siphon Resistance +5, received PvP damage -5%. When using a blunt weapon, P. Critical Rate +54. Effects of two identical rings do not stack (excluding M. Def. and Attribute Resistance). Cannot be used in the Olympiad. -->
+		<!-- Fire/ Dark Resistance +25, MP +38, Critical Damage for basic attacks +15%, P. Skill Power +5%, PvP damage +5%, Confusion/ Obstruction Resistance +10, Damage Reflection Resistance +5, Blood Siphon Resistance +5, received PvP damage -5%. When using a blunt weapon, P. Critical Rate +54. Effects of two identical rings do not stack (excluding M. Def. and Attribute Resistance). Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.accessary_tauti_ring" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -563,7 +563,7 @@
 		</stats>
 	</item>
 	<item id="37735" name="Earth Wyrm's Heart Ring" additionalName="7-day" type="Armor">
-		<!-- MP +38, P./ M. Debuff Resistance +15, MP Recovery Rate +3, Critical Damage for standard attacks +20%, P. Accuracy +5, Infection Atk. Rate and Resistance +50%, Danger Zone/ Confusion Resistance +20%, Atk. Spd./ Casting Spd. +6%, Wind/ Water Resistance +30. Effects of two identical rings do not stack. Cannot be used in the Olympiad. <Active skills>. Heartbeat Accelerate: For 5 min., party members' Atk. Spd./ Casting Spd. +5%, Vampiric Rage effect +2% (cooldown: 2 h.). Blue Blood: Removes Infection debuffs (cooldown: 2 h.). -->
+		<!-- MP +38, P./ M. Debuff Resistance +15, MP Recovery Rate +3, Critical Damage for basic attacks +20%, P. Accuracy +5, Infection Atk. Rate and Resistance +50%, Danger Zone/ Confusion Resistance +20%, Atk. Spd./ Casting Spd. +6%, Wind/ Water Resistance +30. Effects of two identical rings do not stack. Cannot be used in the Olympiad. <Active skills> Heartbeat Accelerate: For 5 min., party members' Atk. Spd./ Casting Spd. +5%, Vampiric Rage effect +2% (cooldown: 2 h.). Blue Blood: Removes Infection debuffs (cooldown: 2 h.). -->
 		<set name="icon" val="icon.ring_earthworm_heart" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -583,7 +583,7 @@
 		</stats>
 	</item>
 	<item id="37736" name="Blessed Zaken's Earring" additionalName="7-day" type="Armor">
-		<!-- MP +37, Infection Resistance/ Atk. Rate +30%, Received Healing +15%, Confusion Resistance/ Atk. Rate +30%, Dark Resistance +15. Grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Zaken's Earring, only the effect of the Blessed item is applied. Cannot be used in the Olympiad. -->
+		<!-- MP +37, Infection Atk. Rate and Resistance +30%, Received Healing +15%, Confusion Atk. Rate and Resistance +30%, Dark Resistance +15. Grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Zaken's Earring, only the effect of the Blessed item is applied. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -602,7 +602,7 @@
 		</stats>
 	</item>
 	<item id="37737" name="Ruler's Authority" additionalName="7-day" type="Armor">
-		<!-- An item given to the winner of the Ceremony of Chaos held in the Mysterious Mansion. Max HP/ MP/ CP +1000, Weight Limit +25,600, Damage +8%, Received Damage -9%, Damage Reflection Resistance +5%, Inventory Slots +36, Attribute Resistance +15. Cannot be used in the Olympiad. -->
+		<!-- An item awarded to the winner of the Ceremony of Chaos held in the Mysterious Mansion. When equipped, Max HP/ MP/ CP +1000, weight limit +25,600, damage +8%, received damage -9%, Damage Reflection Resistance +5%, inventory slots +36, Attribute Resistance +15. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.belt_rulers_authority" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1186,7 +1186,7 @@
 		</skills>
 	</item>
 	<item id="37793" name="Potion of Protection: Obstruction" additionalName="New Player" type="EtcItem">
-		<!-- Obstruction Resistance +5%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- Obstruction Resistance +5%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i06" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />

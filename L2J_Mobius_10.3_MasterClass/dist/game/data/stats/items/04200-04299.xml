@@ -11,7 +11,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="4201" name="Spellbook: Shock Resistance" type="EtcItem">
-		<!-- A spellbook for learning the Stun Resistance skill. Used by Elven Elders. Required level: 40. -->
+		<!-- A spellbook for learning the Shock Resistance skill. Used by Elven Elders. Required level: 40. -->
 		<set name="icon" val="icon.etc_spell_books_white_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -460,7 +460,7 @@
 		<set name="is_destroyable" val="false" />
 	</item>
 	<item id="4233" name="Knuckle Duster" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_knuckle_dust_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -722,7 +722,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="4249" name="Ol Mahum Captain's Head" type="EtcItem">
-		<!-- Severed head of an Ol Mahum Captain. Collect 30 of them and take them to Turek Chief Burai. -->
+		<!-- A severed head of an Ol Mahum Captain. Collect 30 of them and take them to Turek Chief Burai. -->
 		<set name="icon" val="icon.etc_skull_red_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
@@ -1106,7 +1106,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="4281" name="Powder to Summon Dead Souls" type="EtcItem">
-		<!-- The magic powder bought from Magister Xenovia. Throw it along with the victims' bones into a the Psychic Medium's Urn. -->
+		<!-- Magic powder bought from Magister Xenovia. Throw it along with the victims' bones into the Psychic Medium's Urn. -->
 		<set name="icon" val="icon.etc_powder_black_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="BONE" />

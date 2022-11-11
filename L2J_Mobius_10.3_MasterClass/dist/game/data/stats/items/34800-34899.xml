@@ -33,7 +33,7 @@
 		</skills>
 	</item>
 	<item id="34811" name="Soulshot Pack" additionalName="Event" type="EtcItem">
-		<!-- Pack containing soulshot. -->
+		<!-- Soulshot Pack -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -48,7 +48,7 @@
 		</skills>
 	</item>
 	<item id="34812" name="Blessed Spiritshot Pack" additionalName="Event" type="EtcItem">
-		<!-- Pack containing blessed spiritshot. -->
+		<!-- Double-click to obtain Blessed Spiritshots. -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -78,7 +78,7 @@
 		</skills>
 	</item>
 	<item id="34814" name="Crystal Pack" additionalName="Event" type="EtcItem">
-		<!-- Pack containing attribute crystal. -->
+		<!-- Attribute Crystal Pack -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -93,7 +93,7 @@
 		</skills>
 	</item>
 	<item id="34815" name="Scroll: Enchant S-grade Armor Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain S-grade Scroll: Enchant Armor. -->
+		<!-- S-grade Armor Enchant Scroll Box -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -108,7 +108,7 @@
 		</skills>
 	</item>
 	<item id="34816" name="Scroll: Enchant R-grade Armor Box" additionalName="Event" type="EtcItem">
-		<!-- Pack containing R-grade Scroll: Enchant Armor. -->
+		<!-- R-grade Armor Enchant Scroll Box -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -123,7 +123,7 @@
 		</skills>
 	</item>
 	<item id="34817" name="Scroll: Enchant S-grade Weapon Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain S-grade Scroll: Enchant Weapon. -->
+		<!-- S-grade Weapon Enchant Scroll Box -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -138,7 +138,7 @@
 		</skills>
 	</item>
 	<item id="34818" name="Scroll: Enchant R-grade Weapon Box" additionalName="Event" type="EtcItem">
-		<!-- Pack containing R-grade Scroll: Enchant Weapon. -->
+		<!-- R-grade Weapon Enchant Scroll Box -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -387,7 +387,7 @@
 		</stats>
 	</item>
 	<item id="34833" name="Afro Hair" type="Armor">
-		<!-- Hair accessory that looks like Afro hair. -->
+		<!-- Double-click to obtain Head Accessory - Afro Hairstyle. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -401,7 +401,7 @@
 		<set name="material" val="WOOD" />
 	</item>
 	<item id="34834" name="Afro Hair" additionalName="7-day" type="Armor">
-		<!-- Hair accessory that looks like Afro hair. (7-day) -->
+		<!-- Double-click to obtain Head Accessory - Afro Hairstyle (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="10" />
@@ -414,7 +414,7 @@
 		<set name="material" val="WOOD" />
 	</item>
 	<item id="34835" name="Package: Afro Hair" type="EtcItem">
-		<!-- When opened, can acquire 1 Afro Hair Accessory. -->
+		<!-- Double-click to obtain Afro Hairstyle. -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -427,11 +427,11 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="34833" min="1" max="1" chance="100" /> <!-- Afro Hair -->
+			<item id="34833" min="1" max="1" chance="100" /> <!-- Afro Hairstyle -->
 		</capsuled_items>
 	</item>
 	<item id="34836" name="Package: Afro Hair (7-day)" type="EtcItem">
-		<!-- Open to acquire 1 Afro Hair Accessory (7-day). -->
+		<!-- Double-click to obtain Afro Hairstyle (7-day). -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -444,7 +444,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="34834" min="1" max="1" chance="100" /> <!-- Afro Hair - 7-day -->
+			<item id="34834" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="34837" name="R-grade Magic Rope" type="EtcItem">
@@ -580,7 +580,7 @@
 			<item id="33792" min="5000" max="5000" chance="5" /> <!-- Blessed A-grade Spiritshot - Event -->
 			<item id="33793" min="5000" max="5000" chance="4" /> <!-- Blessed S-grade Spiritshot - Event -->
 			<item id="33794" min="5000" max="5000" chance="2" /> <!-- Blessed R-grade Spiritshot - Event -->
-			<item id="33819" min="1" max="1" chance="7" /> <!-- Life Stone: Hair Accessory - Event -->
+			<item id="33819" min="1" max="1" chance="7" /> <!-- Life Stone: Head Accessory - Event -->
 			<item id="33862" min="5" max="5" chance="32" /> <!-- Elixir of Blessing - Event -->
 			<item id="33863" min="1" max="1" chance="1" /> <!-- Fire Stone (+60) - Event -->
 			<item id="33864" min="1" max="1" chance="1" /> <!-- Water Stone (+60) - Event -->
@@ -620,7 +620,7 @@
 		</skills>
 	</item>
 	<item id="34848" name="Circlet of Earthquake (60-day)" type="Armor">
-		<!-- Circlet that has the power of Severe Earthquake. Increases earth defense by 60. Uses 2 hair accessory slots. -->
+		<!-- A circlet imbued with the Earthquake power. Time-limited item. Increases P. Def. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_earthquake_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -704,7 +704,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="34742" min="1" max="1" chance="5" /> <!-- XP Scroll: 500M -->
+			<item id="34742" min="1" max="1" chance="5" /> <!-- XP Scroll: 50K -->
 			<item id="6406" min="1" max="1" chance="100" /> <!-- Firecracker -->
 		</capsuled_items>
 	</item>
@@ -1183,7 +1183,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="34885" name="Package: Circlet of Earthquake (60-day)" type="EtcItem">
-		<!-- Double-click on it to acquire the Circlet of Earthquake (60-day). -->
+		<!-- Double-click to obtain Circlet of Earthquake. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
@@ -1309,7 +1309,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="34895" name="Spellbook: Clan Flag" type="EtcItem">
-		<!-- A spellbook for learning the Clan Flag Skill. The skill can be used by clan members in the rank of Count or higher, and consumes 100 Clan Reputation points. -->
+		<!-- A spellbook for learning the Clan's Flag Skill. Consumes 100 clan reputation points. Available only to clan members in the rank of Count or higher. Can be learnt only while in the main class. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1324,7 +1324,7 @@
 		</skills>
 	</item>
 	<item id="34896" name="Rabbit Ears" additionalName="Campaign" type="Armor">
-		<!-- When equipped, STR +3, DEX +1, CON +1, P. Evasion +1, and M. Evasion +1. -->
+		<!-- STR +3, DEX +1, CON +1, P. Evasion +1, M. Evasion +1. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1358,7 +1358,7 @@
 		</skills>
 	</item>
 	<item id="34898" name="Proof of Survival" type="EtcItem">
-		<!-- Someone who possesses the Proof of Survival can be suddenly challenged by the rare monster who belongs to Scaldisect of Hellfire. Always be prepared for the attack. -->
+		<!-- Someone who possesses the Proof of Survival can be suddenly challenged by the rare monster - Scaldisect of Hellfire. Always be prepared for the attack. -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />

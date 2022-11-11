@@ -15,7 +15,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28602" name="Cloak Augmenting Stone Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Cloak Augmenting Stone - Elmoreden/ Aden/ Elmore/ Ferios. -->
+		<!-- Double-click to obtain one of the following items: Augmenting Stone: Cloak - Elmoreden/ Aden/ Elmore/ Ferios. -->
 		<set name="icon" val="BranchIcon.icon.etc_g_bm_godspirit_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -23,7 +23,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28603" name="Dragon's Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the valuable items:. Seven Signs' Energy, Baium's Soul Ring, Bottle of Antharas / Valakas / Baium's Soul, Package: +7 Pa'agrio's/ Sayha's/ Eva's/ Maphr's Shirt, Windy Lucky Enchant Stone: R-grade Weapon/ Armor, Giant's Scroll: Enchant R-grade Weapon/ Armor, Package: Blessed Lucky Enchant Stone: R-grade Weapon/ Armor, Blessed Scroll: Enchant R-grade Weapon/ Armor, Package: Scroll: Enchant R-grade Weapon/ Armor, Destruction Scroll: Enchant Elemental Shirt, Giant's Energy Pack (20 pcs.), Energy of Destruction Pack (20 pcs.), Mysterious Wind Scroll Pack, Rune Stone, Energy of Wind, R-grade Gemstone (15 pcs.), Dragon s Golden Key, Dragon's Attribute Potion. -->
+		<!-- Double-click to obtain one of the valuable items: Seven Signs' Energy, Baium's Soul Ring, Bottle of Antharas'/ Valakas'/ Baium's Soul, Package: +7 Pa'agrio's/ Sayha's/ Eva's/ Maphr's Shirt, Windy Stone: Enchant R-grade Weapon/ Armor, Giant's Scroll: Enchant R-grade Weapon/ Armor, Package: Blessed Stone: Enchant R-grade Weapon/ Armor, Blessed Scroll: Enchant R-grade Weapon/ Armor, Package: Scroll: Enchant R-grade Weapon/ Armor, Destruction Scroll: Enchant Elemental Shirt, Giant's Energy Pack (20 pcs.), Energy of Destruction Pack (20 pcs.), Mysterious Wind Scroll Pack, Rune Stone, Energy of Wind, R-grade Gemstone (15 pcs.), Dragon's Golden Key, Dragon's Attribute Potion. -->
 		<set name="icon" val="icon.bm_dragon_present" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -31,7 +31,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28604" name="Shining Dragon's Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the valuable items:. a Dragon's Weapon Fragment, Dragon Claw, Dark/ Bloody Helios Enhancement Stone, Dark/ Bloody Eternal Enhancement Stone, Lindvior's Earring, Blessed Valakas' Necklace, Blessed Antharas' Earring, Ring of Creation, Package: +7 Magical/ Physical Reflect Shirt, Package: +7 Shiny Elemental Shirt, Freya's Lucky Enchant Stone: R-grade Weapon/ Armor, Freya's Lucky Enchant Stone: R-grade Weapon/ Armor, Package: Blessed Lucky Enchant Stone: R-grade Weapon, Giant's Scroll: Enchant R-grade Weapon, Blessed Scroll: Enchant R-grade Weapon, Package: High-grade Maphr's Rune 100% (30-day), Package: XP Rune 100% (30-day), Package: Eva's Rune (30-day), Zodiac Agathion Box, Destruction Scroll: Enchant Elemental Shirt, Superior Giant's Codex - Mastery Chapter 1, Superior Giant's Codex - Mastery (2 pcs.), Giant's Energy Pack (100 pcs.), Energy of Destruction Pack (100 pcs.), Top-grade Spirit Stone, Emperor's Vitality Tonic (Medium), Durandil Wire (5 pcs.), Dragon's Attribute Potion (XP) (3 pcs.). -->
+		<!-- Double-click to obtain one of the valuable items: Dragon's Weapon Fragment, Dragon Claw, Dark/ Bloody Helios Enhancement Stone, Dark/ Bloody Eternal Enhancement Stone, Lindvior's Earring, Blessed Valakas' Necklace, Blessed Antharas' Earring, Ring of Creation, Package: +7 Magical/ Physical Reflect Shirt, Package: +7 Shiny Elemental Shirt, Freya's Stone: Enchant R-grade Weapon/ Armor, Windy Stone: Enchant R-grade Weapon/ Armor, Package: Blessed Stone: Enchant R-grade Weapon, Giant's Scroll: Enchant R-grade Weapon, Blessed Scroll: Enchant R-grade Weapon, Package: High-grade Maphr's Rune 100% (30-day), Package: XP Rune 100% (30-day), Package: Eva's Rune (30-day), Zodiac Agathion Box, Destruction Scroll: Enchant Elemental Shirt, Superior Giant's Codex - Mastery Chapter 1, Superior Giant's Codex - Mastery (2 pcs.), Giant's Energy Pack (100 pcs.), Energy of Destruction Pack (100 pcs.), Top-grade Spirit Stone, Emperor's Vitality Tonic (Medium), Durandil Wire (5 pcs.), Dragon's Attribute Potion (XP) (3 pcs.). -->
 		<set name="icon" val="icon.bm_dragon_shinning_present" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -65,7 +65,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="28590" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Aden Cloak - Legendary -->
+			<item id="28590" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Legendary Aden Cloak -->
 		</capsuled_items>
 	</item>
 	<item id="28607" name="+10 Legendary Elmore Cloak Box" type="EtcItem">
@@ -145,7 +145,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28613" name="Evolved Agathion Virgo" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -166,7 +166,7 @@
 		</skills>
 	</item>
 	<item id="28614" name="Evolved Agathion Virgo" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -187,7 +187,7 @@
 		</skills>
 	</item>
 	<item id="28615" name="Evolved Agathion Virgo" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -208,7 +208,7 @@
 		</skills>
 	</item>
 	<item id="28616" name="Evolved Agathion Virgo" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -229,7 +229,7 @@
 		</skills>
 	</item>
 	<item id="28617" name="Evolved Agathion Virgo" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -250,7 +250,7 @@
 		</skills>
 	</item>
 	<item id="28618" name="Evolved Agathion Capricorn" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -271,7 +271,7 @@
 		</skills>
 	</item>
 	<item id="28619" name="Evolved Agathion Capricorn" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -292,7 +292,7 @@
 		</skills>
 	</item>
 	<item id="28620" name="Evolved Agathion Capricorn" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -313,7 +313,7 @@
 		</skills>
 	</item>
 	<item id="28621" name="Evolved Agathion Capricorn" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -334,7 +334,7 @@
 		</skills>
 	</item>
 	<item id="28622" name="Evolved Agathion Capricorn" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -355,7 +355,7 @@
 		</skills>
 	</item>
 	<item id="28623" name="Evolved Agathion Libra" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -376,7 +376,7 @@
 		</skills>
 	</item>
 	<item id="28624" name="Evolved Agathion Libra" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -397,7 +397,7 @@
 		</skills>
 	</item>
 	<item id="28625" name="Evolved Agathion Libra" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -418,7 +418,7 @@
 		</skills>
 	</item>
 	<item id="28626" name="Evolved Agathion Libra" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -439,7 +439,7 @@
 		</skills>
 	</item>
 	<item id="28627" name="Evolved Agathion Libra" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -460,7 +460,7 @@
 		</skills>
 	</item>
 	<item id="28628" name="Evolved Agathion Aries" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -481,7 +481,7 @@
 		</skills>
 	</item>
 	<item id="28629" name="Evolved Agathion Aries" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -502,7 +502,7 @@
 		</skills>
 	</item>
 	<item id="28630" name="Evolved Agathion Aries" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -523,7 +523,7 @@
 		</skills>
 	</item>
 	<item id="28631" name="Evolved Agathion Aries" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -544,7 +544,7 @@
 		</skills>
 	</item>
 	<item id="28632" name="Evolved Agathion Aries" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -565,7 +565,7 @@
 		</skills>
 	</item>
 	<item id="28633" name="Evolved Agathion Taurus" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -586,7 +586,7 @@
 		</skills>
 	</item>
 	<item id="28634" name="Evolved Agathion Taurus" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -607,7 +607,7 @@
 		</skills>
 	</item>
 	<item id="28635" name="Evolved Agathion Taurus" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -628,7 +628,7 @@
 		</skills>
 	</item>
 	<item id="28636" name="Evolved Agathion Taurus" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -649,7 +649,7 @@
 		</skills>
 	</item>
 	<item id="28637" name="Evolved Agathion Taurus" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -670,7 +670,7 @@
 		</skills>
 	</item>
 	<item id="28638" name="Evolved Agathion Leo" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -691,7 +691,7 @@
 		</skills>
 	</item>
 	<item id="28639" name="Evolved Agathion Leo" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -712,7 +712,7 @@
 		</skills>
 	</item>
 	<item id="28640" name="Evolved Agathion Leo" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -733,7 +733,7 @@
 		</skills>
 	</item>
 	<item id="28641" name="Evolved Agathion Leo" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -754,7 +754,7 @@
 		</skills>
 	</item>
 	<item id="28642" name="Evolved Agathion Leo" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 2 additional slots. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 2 additional slots. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -775,7 +775,7 @@
 		</skills>
 	</item>
 	<item id="28643" name="Evolved Agathion Gemini" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Bountiful Resurrection Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Bountiful Resurrection Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_gem_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -796,7 +796,7 @@
 		</skills>
 	</item>
 	<item id="28644" name="Evolved Agathion Gemini" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Bountiful Resurrection Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Bountiful Resurrection Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_gem_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -817,7 +817,7 @@
 		</skills>
 	</item>
 	<item id="28645" name="Evolved Agathion Gemini" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Bountiful Resurrection Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Bountiful Resurrection Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_gem_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -838,7 +838,7 @@
 		</skills>
 	</item>
 	<item id="28646" name="Evolved Agathion Gemini" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Bountiful Resurrection Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Bountiful Resurrection Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_gem_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -859,7 +859,7 @@
 		</skills>
 	</item>
 	<item id="28647" name="Evolved Agathion Gemini" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Bountiful Resurrection Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Gemini. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Bountiful Resurrection Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_gem_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -880,7 +880,7 @@
 		</skills>
 	</item>
 	<item id="28648" name="Evolved Agathion Scorpio" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scorpion's Mass Exile Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scorpion's Mass Exile Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -901,7 +901,7 @@
 		</skills>
 	</item>
 	<item id="28649" name="Evolved Agathion Scorpio" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scorpion's Mass Exile Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scorpion's Mass Exile Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -922,7 +922,7 @@
 		</skills>
 	</item>
 	<item id="28650" name="Evolved Agathion Scorpio" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scorpion's Mass Exile Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scorpion's Mass Exile Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -943,7 +943,7 @@
 		</skills>
 	</item>
 	<item id="28651" name="Evolved Agathion Scorpio" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scorpion's Mass Exile Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scorpion's Mass Exile Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -964,7 +964,7 @@
 		</skills>
 	</item>
 	<item id="28652" name="Evolved Agathion Scorpio" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Scorpion's Mass Exile Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Scorpio. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Scorpion's Mass Exile Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -985,7 +985,7 @@
 		</skills>
 	</item>
 	<item id="28653" name="Evolved Agathion Aquarius" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Mass Binding Flood Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Mass Binding Flood Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1006,7 +1006,7 @@
 		</skills>
 	</item>
 	<item id="28654" name="Evolved Agathion Aquarius" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Mass Binding Flood Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Mass Binding Flood Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1027,7 +1027,7 @@
 		</skills>
 	</item>
 	<item id="28655" name="Evolved Agathion Aquarius" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Mass Binding Flood Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Mass Binding Flood Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1048,7 +1048,7 @@
 		</skills>
 	</item>
 	<item id="28656" name="Evolved Agathion Aquarius" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Mass Binding Flood Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Mass Binding Flood Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1069,7 +1069,7 @@
 		</skills>
 	</item>
 	<item id="28657" name="Evolved Agathion Aquarius" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Mass Binding Flood Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aquarius. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Mass Binding Flood Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1090,7 +1090,7 @@
 		</skills>
 	</item>
 	<item id="28658" name="Evolved Agathion Pisces" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Slippery Scale Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Slippery Scale Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_pis_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1111,7 +1111,7 @@
 		</skills>
 	</item>
 	<item id="28659" name="Evolved Agathion Pisces" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Slippery Scale Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Slippery Scale Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_pis_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1132,7 +1132,7 @@
 		</skills>
 	</item>
 	<item id="28660" name="Evolved Agathion Pisces" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Slippery Scale Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Slippery Scale Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_pis_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1153,7 +1153,7 @@
 		</skills>
 	</item>
 	<item id="28661" name="Evolved Agathion Pisces" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Slippery Scale Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Slippery Scale Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_pis_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1174,7 +1174,7 @@
 		</skills>
 	</item>
 	<item id="28662" name="Evolved Agathion Pisces" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Slippery Scale Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Pisces. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Slippery Scale Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_pis_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1195,7 +1195,7 @@
 		</skills>
 	</item>
 	<item id="28663" name="Evolved Agathion Sagittarius" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Archer's Call Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Archer's Call Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1216,7 +1216,7 @@
 		</skills>
 	</item>
 	<item id="28664" name="Evolved Agathion Sagittarius" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Archer's Call Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Archer's Call Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1237,7 +1237,7 @@
 		</skills>
 	</item>
 	<item id="28665" name="Evolved Agathion Sagittarius" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Archer's Call Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Archer's Call Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1258,7 +1258,7 @@
 		</skills>
 	</item>
 	<item id="28666" name="Evolved Agathion Sagittarius" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Archer's Call Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Archer's Call Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1279,7 +1279,7 @@
 		</skills>
 	</item>
 	<item id="28667" name="Evolved Agathion Sagittarius" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Archer's Call Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Sagittarius. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Archer's Call Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1300,7 +1300,7 @@
 		</skills>
 	</item>
 	<item id="28668" name="Evolved Agathion Cancer" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Exoskeletal Shield Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Exoskeletal Shield Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_can_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1321,7 +1321,7 @@
 		</skills>
 	</item>
 	<item id="28669" name="Evolved Agathion Cancer" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Exoskeletal Shield Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Exoskeletal Shield Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_can_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1342,7 +1342,7 @@
 		</skills>
 	</item>
 	<item id="28670" name="Evolved Agathion Cancer" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Exoskeletal Shield Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Exoskeletal Shield Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_can_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1363,7 +1363,7 @@
 		</skills>
 	</item>
 	<item id="28671" name="Evolved Agathion Cancer" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Exoskeletal Shield Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Exoskeletal Shield Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_can_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1384,7 +1384,7 @@
 		</skills>
 	</item>
 	<item id="28672" name="Evolved Agathion Cancer" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Exoskeletal Shield Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Cancer. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Exoskeletal Shield Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_can_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1405,7 +1405,7 @@
 		</skills>
 	</item>
 	<item id="28673" name="Evolved Agathion Virgo" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1427,7 +1427,7 @@
 		</skills>
 	</item>
 	<item id="28674" name="Evolved Agathion Virgo" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1449,7 +1449,7 @@
 		</skills>
 	</item>
 	<item id="28675" name="Evolved Agathion Virgo" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1471,7 +1471,7 @@
 		</skills>
 	</item>
 	<item id="28676" name="Evolved Agathion Virgo" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1493,7 +1493,7 @@
 		</skills>
 	</item>
 	<item id="28677" name="Evolved Agathion Virgo" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Healing Light Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Virgo. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Healing Light Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1515,7 +1515,7 @@
 		</skills>
 	</item>
 	<item id="28678" name="Evolved Agathion Capricorn" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1537,7 +1537,7 @@
 		</skills>
 	</item>
 	<item id="28679" name="Evolved Agathion Capricorn" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1559,7 +1559,7 @@
 		</skills>
 	</item>
 	<item id="28680" name="Evolved Agathion Capricorn" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1581,7 +1581,7 @@
 		</skills>
 	</item>
 	<item id="28681" name="Evolved Agathion Capricorn" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1603,7 +1603,7 @@
 		</skills>
 	</item>
 	<item id="28682" name="Evolved Agathion Capricorn" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Skipping Kid Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Capricorn. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Skipping Kid Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1625,7 +1625,7 @@
 		</skills>
 	</item>
 	<item id="28683" name="Evolved Agathion Libra" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1647,7 +1647,7 @@
 		</skills>
 	</item>
 	<item id="28684" name="Evolved Agathion Libra" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1669,7 +1669,7 @@
 		</skills>
 	</item>
 	<item id="28685" name="Evolved Agathion Libra" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1691,7 +1691,7 @@
 		</skills>
 	</item>
 	<item id="28686" name="Evolved Agathion Libra" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1713,7 +1713,7 @@
 		</skills>
 	</item>
 	<item id="28687" name="Evolved Agathion Libra" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Scale of Life Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Libra. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Scale of Life Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1735,7 +1735,7 @@
 		</skills>
 	</item>
 	<item id="28688" name="Evolved Agathion Aries" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1757,7 +1757,7 @@
 		</skills>
 	</item>
 	<item id="28689" name="Evolved Agathion Aries" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1779,7 +1779,7 @@
 		</skills>
 	</item>
 	<item id="28690" name="Evolved Agathion Aries" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1801,7 +1801,7 @@
 		</skills>
 	</item>
 	<item id="28691" name="Evolved Agathion Aries" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1823,7 +1823,7 @@
 		</skills>
 	</item>
 	<item id="28692" name="Evolved Agathion Aries" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Rocky Camouflage Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Aries. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Rocky Camouflage Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_aries_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1845,7 +1845,7 @@
 		</skills>
 	</item>
 	<item id="28693" name="Evolved Agathion Taurus" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1867,7 +1867,7 @@
 		</skills>
 	</item>
 	<item id="28694" name="Evolved Agathion Taurus" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1889,7 +1889,7 @@
 		</skills>
 	</item>
 	<item id="28695" name="Evolved Agathion Taurus" additionalName="Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +20, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1911,7 +1911,7 @@
 		</skills>
 	</item>
 	<item id="28696" name="Evolved Agathion Taurus" additionalName="Lv. 4" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 1 side slot. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 1 side slot. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +30, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1933,7 +1933,7 @@
 		</skills>
 	</item>
 	<item id="28697" name="Evolved Agathion Taurus" additionalName="Lv. 5" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion s main slot and 2 side slots. <Active skill>. Battle Rhapsody Lv. 12. <Passive effects>. 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Taurus. When equipped, unlocks an agathion's main slot and 2 side slots. <Active skill> Battle Rhapsody Lv. 12 <Passive effects> 1. Attribute Attack +50, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1955,7 +1955,7 @@
 		</skills>
 	</item>
 	<item id="28698" name="Evolved Agathion Leo" additionalName="Lv. 1" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1977,7 +1977,7 @@
 		</skills>
 	</item>
 	<item id="28699" name="Evolved Agathion Leo" additionalName="Lv. 2" type="Armor">
-		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill>. Nemean Lion's Defense Lv. 12. <Passive effects>. 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet for summoning Evolved Agathion Leo. When equipped, unlocks the agathion's main slot and 1 additional slot. <Active skill> Nemean Lion's Defense Lv. 12 <Passive effects> 1. Attribute Attack +10, Attribute Resistance +40. 2. STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />

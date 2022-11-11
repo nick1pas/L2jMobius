@@ -383,7 +383,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97037" name="Spellbook: Faery Shield" type="EtcItem">
-		<!-- A book that is required to learn Faery Shield skill. <Classes> Archmage Mystic Muse Storm Screamer <Skill effect> Creates a magic shield to protect the caster. While active, absorbs a part of received damage. For the remainder of received damage MP is consumed instead of HP. The effect is cancelled when MP reaches 0. -->
+		<!-- A spellbook for learning the Faery Shield skill. <Classes> Archmage Mystic Muse Storm Screamer Soul Hound <Skill effect> Creates a magic shield to protect the caster. While active, absorbs a part of received damage. For the remainder of received damage MP is consumed instead of HP. The effect is cancelled when MP reaches 0. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -391,7 +391,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97038" name="Spellbook: Soul Guardian" type="EtcItem">
-		<!-- A book that is required to learn Soul Guardian skill. <Classes> Soultaker <Skill effect> Instantly increases servitor's defensive skills. -->
+		<!-- A spellbook for learning the Soul Guardian skill. <Class> Soultaker <Skill effect> Instantly empowers a servitor's defensive abilities. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -399,7 +399,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97039" name="Spellbook: Spiral" type="EtcItem">
-		<!-- A book that is required to learn Spiral skill. <Classes> Fire Spiral - Archmage Dark Spiral - Soultaker Ice Spiral - Mystic Muse Wind Spiral - Storm Screamer <Skill effect> Attacks enemies in the front. Decreases enemy stats, the effect depends on the class. -->
+		<!-- A spellbook for learning the Spiral skill. <Classes> Fire Spiral - Archmage Dark Spiral - Soultaker Ice Spiral - Mystic Muse Wind Spiral - Storm Screamer <Skill effect> Attacks enemies at the front. Decreases enemies' stats, the effect depends on the class. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -423,7 +423,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97042" name="Spellbook: Faery Shield" additionalName="Sealed" type="EtcItem">
-		<!-- A book that is required to learn Faery Shield skill. <Classes> Archmage Mystic Muse Storm Screamer <Skill effect> Creates a magic shield to protect the caster. While active, absorbs a part of received damage. For the remainder of received damage MP is consumed instead of HP. The effect is cancelled when MP reaches 0. -->
+		<!-- A spellbook for learning the Faery Shield skill. <Classes> Archmage Mystic Muse Storm Screamer Soul Hound <Skill effect> Creates a magic shield to protect the caster. While active, absorbs a part of received damage. For the remainder of received damage MP is consumed instead of HP. The effect is cancelled when MP reaches 0. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -433,7 +433,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97043" name="Spellbook: Soul Guardian" additionalName="Sealed" type="EtcItem">
-		<!-- A book that is required to learn Soul Guardian skill. <Classes> Soultaker <Skill effect> Instantly increases servitor's defensive skills. -->
+		<!-- A spellbook for learning the Soul Guardian skill. <Class> Soultaker <Skill effect> Instantly empowers a servitor's defensive abilities. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -443,7 +443,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97044" name="Spellbook: Spiral" additionalName="Sealed" type="EtcItem">
-		<!-- A book that is required to learn Spiral skill. <Classes> Fire Spiral - Archmage Dark Spiral - Soultaker Ice Spiral - Mystic Muse Wind Spiral - Storm Screamer <Skill effect> Attacks enemies in the front. Decreases enemy stats, the effect depends on the class. -->
+		<!-- A spellbook for learning the Spiral skill. <Classes> Fire Spiral - Archmage Dark Spiral - Soultaker Ice Spiral - Mystic Muse Wind Spiral - Storm Screamer <Skill effect> Attacks enemies at the front. Decreases enemies' stats, the effect depends on the class. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -785,7 +785,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97071" name="Spellbook Coupon - 2 Stars (Time-limited)" type="EtcItem">
-		<!-- Can be exchanged for Spellbook - 2 Stars. <How to use> Game Assistant - Event. -->
+		<!-- Can be exchanged for Spellbook - 2 Stars. <How to use> Game Assistant - Event -->
 		<set name="icon" val="icon.ev_sb_2_trade_ticket" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -801,7 +801,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97074" name="Beleth' Ring" additionalName="Sealed" type="Armor">
-		<!-- Max enchant value: +5. (Requires Scroll: Enchant Rare Accessories.) Boosts the item's parameters after enchanting. Effects of two identical rings do not stack. Safe enchanting to +1 <font color=ff6666>Transformation is unavailable</font> -->
+		<!-- Max enchant value: +6. (Requires Scroll: Enchant Rare Accessories.) Boosts the item's parameters after enchanting. Effects of two identical rings do not stack. Safe enchanting to +1 <font color=ff6666>Transformation is unavailable</font> -->
 		<set name="icon" val="icon.accessary_dynasty_ring_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -968,7 +968,7 @@
 		</stats>
 	</item>
 	<item id="97089" name="Demon King's Dual Swords" additionalName="In development" type="Weapon">
-		<!-- As with two-handed swords/blunts and fist weapons, dual swords have a greater increase in P. Atk. when enchanted than one-handed swords. -->
+		<!-- When enchanting dual swords, two-handed swords/ blunts and fists, the P. Atk. bonus is higher than that of one-handed weapons. -->
 		<set name="icon" val="icon.frozen_weapon_dual_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />

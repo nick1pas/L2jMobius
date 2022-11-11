@@ -31,7 +31,7 @@
 		</stats>
 	</item>
 	<item id="80402" name="Bloody Eternal Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Received PvE Damage -8%, PvE Damage +1%. Light Armor, can be enhanced by Blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, also decreases Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. Light armor, can be enhanced by a blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, also decreases received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t802_u_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -110,7 +110,7 @@
 		</stats>
 	</item>
 	<item id="80407" name="Bloody Eternal Tunic" additionalName="Robe" type="Armor">
-		<!-- Received PvE Damage -8%. PvE Damage +1%. Robe, can be enhanced by Blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases Received P. Critical Damage and Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. Robe, can be enhanced by a blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_u_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="MAGIC" />
@@ -146,7 +146,7 @@
 		</stats>
 	</item>
 	<item id="80409" name="Bloody Eternal Gloves" additionalName="Robe" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Robe, can be enhanced by Blacksmith in any town. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Robe, can be enhanced by the Blacksmith in any town. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_g_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -161,7 +161,7 @@
 		</stats>
 	</item>
 	<item id="80410" name="Bloody Eternal Shoes" additionalName="Robe" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Robe, can be enhanced by Blacksmith in any town. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Robe, can be enhanced by the Blacksmith in any town. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_b_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -186,7 +186,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80412" name="Gale Scroll" type="EtcItem">
-		<!-- A scroll to level up as fast as the wind. For 10 min., acquired XP/ SP +200%. The effect remains after death. Cooldown: 9 min. Required level: 1-107. The effect does not stack with Freya's Frozen Scroll and Freya's Scroll of Storm. -->
+		<!-- A scroll to level up as fast as the wind. For 10 min., acquired XP/ SP while hunting +200%. The effect remains after death. Cooldown: 9 min. Required level: 1-107. The effect does not stack with those of Freya's Frozen Scroll or Freya's Scroll of Storm. -->
 		<set name="icon" val="icon.scrl_of_storm" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -476,7 +476,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="80435" name="Emperor's Special Cocktail - Attack" additionalName="4-hour" type="EtcItem">
-		<!-- For 4 h., grants Lv. 5 Horn Melody/ Guitar Melody/ Pipe Organ Melody/ Drum Melody buffs, Lv. 2 Warrior's Harmony, War Drum/ Marching Drum/ Soothing Drum effects, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. Emperor's Special Cocktail extends the duration of the last used item. -->
+		<!-- For 4 h., applies the following effects: Musician's Melody Lv. 5, Warrior's Harmony Lv. 2, Drum Concert, United Resistance. Note! Emperor's Special Cocktail extends the duration of the last used item. -->
 		<set name="icon" val="icon.bm_special_cocktail_of_king_p" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -485,7 +485,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80436" name="Emperor's Special Cocktail - Magic" additionalName="4-hour" type="EtcItem">
-		<!-- For 4 h., grants Lv. 5 Horn Melody/ Guitar Melody/ Pipe Organ Melody/ Drum Melody buffs, Lv. 2 Wizard's Harmony, War Drum/ Marching Drum/ Soothing Drum effects, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. Emperor's Special Cocktail extends the duration of the last used item. -->
+		<!-- For 4 h., applies the following effects: Musician's Melody Lv. 5, Wizard's Harmony Lv. 2, Drum Concert, United Resistance. Note! Emperor's Special Cocktail extends the duration of the last used item. -->
 		<set name="icon" val="icon.bm_special_cocktail_of_king_m" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -494,7 +494,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80437" name="Emperor's Special Cocktail - Defense" additionalName="4-hour" type="EtcItem">
-		<!-- For 4 h., grants Lv. 5 Horn Melody/ Guitar Melody/ Pipe Organ Melody/ Drum Melody buffs, Lv. 2 Knight's Harmony, War Drum/ Marching Drum/ Soothing Drum effects, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. Emperor's Special Cocktail extends the duration of the last used item. -->
+		<!-- For 4 h., applies the following effects: Musician's Melody Lv. 5, Knight's Harmony Lv. 2, Drum Concert, United Resistance. Note! Emperor's Special Cocktail extends the duration of the last used item. -->
 		<set name="icon" val="icon.bm_special_cocktail_of_king_d" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -503,7 +503,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80438" name="Emperor's Special Cocktail - Attack" additionalName="8-hour" type="EtcItem">
-		<!-- For 8 h., grants Lv. 5 Horn Melody/ Guitar Melody/ Pipe Organ Melody/ Drum Melody buffs, Lv. 2 Warrior's Harmony, War Drum/ Marching Drum/ Soothing Drum effects, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. Emperor's Special Cocktail extends the duration of the last used item. -->
+		<!-- For 8 h., applies the following effects: Musician's Melody Lv. 5, Warrior's Harmony Lv. 2, Drum Concert, United Resistance. Note! Emperor's Special Cocktail extends the duration of the last used item. -->
 		<set name="icon" val="icon.bm_special_cocktail_of_king_p" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -512,7 +512,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80439" name="Emperor's Special Cocktail - Magic" additionalName="8-hour" type="EtcItem">
-		<!-- For 8 h., grants Lv. 5 Horn Melody/ Guitar Melody/ Pipe Organ Melody/ Drum Melody buffs, Lv. 2 Wizard's Harmony, War Drum/ Marching Drum/ Soothing Drum effects, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. Emperor's Special Cocktail extends the duration of the last used item. -->
+		<!-- For 8 h., applies the following effects: Musician's Melody Lv. 5, Wizard's Harmony Lv. 2, Drum Concert, United Resistance. Note! Emperor's Special Cocktail extends the duration of the last used item. -->
 		<set name="icon" val="icon.bm_special_cocktail_of_king_m" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -521,7 +521,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80440" name="Emperor's Special Cocktail - Defense" additionalName="8-hour" type="EtcItem">
-		<!-- For 8 h., grants Lv. 5 Horn Melody/ Guitar Melody/ Pipe Organ Melody/ Drum Melody buffs, Lv. 2 Knight's Harmony, War Drum/ Marching Drum/ Soothing Drum effects, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. Emperor's Special Cocktail extends the duration of the last used item. -->
+		<!-- For 8 h., applies the following effects: Musician's Melody Lv. 5, Knight's Harmony Lv. 2, Drum Concert, United Resistance. Note! Emperor's Special Cocktail extends the duration of the last used item. -->
 		<set name="icon" val="icon.bm_special_cocktail_of_king_d" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -530,7 +530,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80441" name="Freya's Ice Rose" additionalName="4-hour" type="EtcItem">
-		<!-- For 4 h., Max HP/ MP/ CP +30%, P./ M. Atk. and P./ M. Def. +30%, Atk. Spd./ Casting Spd. +10%, Speed +20, Attribute Atk. Rate/ Resistance +100, Damage +10%, P./ M. Skill Power +10%, Acquired XP/ SP +30%, and Received damage -10% and Skill MP Consumption -15%. The effect remains after death. Cooldown: 5 min. Cannot be stacked with Art of Seduction and Pa agrio s Blessing. Cannot be used in Olympiad. -->
+		<!-- For 4 h., Max HP/ MP/ CP +30%, P./ M. Atk. and P./ M. Def. +30%, Atk. Spd./ Casting Spd. +10%, Speed +20, Attribute Atk. Rate/ Resistance +100, Damage +10%, P./ M. Skill Power +10%, Acquired XP/ SP +30%, and Received damage -10% and Skill MP Consumption -15%. The effect remains after death. Cooldown: 5 min. Cannot be stacked with Art of Seduction and Pa'agrio's Blessing. Cannot be used in Olympiad. -->
 		<set name="icon" val="icon.bm_freya_ice_rose" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -548,7 +548,7 @@
 		</skills>
 	</item>
 	<item id="80442" name="Freya's Ice Rose" additionalName="8-hour" type="EtcItem">
-		<!-- For 8 h., Max HP/ MP/ CP +30%, P./ M. Atk. and P./ M. Def. +30%, Atk. Spd./ Casting Spd. +10%, Speed +20, Attribute Atk. Rate/ Resistance +100, Damage +10%, P./ M. Skill Power +10%, Acquired XP/ SP +30%, and Received damage -10% and Skill MP Consumption -15%. The effect remains after death. Cooldown: 5 min. Cannot be stacked with Art of Seduction and Pa agrio s Blessing. Cannot be used in Olympiad. -->
+		<!-- For 8 h., Max HP/ MP/ CP +30%, P./ M. Atk. and P./ M. Def. +30%, Atk. Spd./ Casting Spd. +10%, Speed +20, Attribute Atk. Rate/ Resistance +100, Damage +10%, P./ M. Skill Power +10%, Acquired XP/ SP +30%, and Received damage -10% and Skill MP Consumption -15%. The effect remains after death. Cooldown: 5 min. Cannot be stacked with Art of Seduction and Pa'agrio's Blessing. Cannot be used in Olympiad. -->
 		<set name="icon" val="icon.bm_freya_ice_rose" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -579,11 +579,11 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="46447" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 4 -->
-			<item id="46462" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 4 -->
-			<item id="46477" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 4 -->
-			<item id="46492" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 4 -->
-			<item id="46507" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 4 -->
+			<item id="46447" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46462" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46477" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46492" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46507" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="80444" name="Soul Crystal Box Lv. 5" type="EtcItem">
@@ -600,15 +600,15 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="46448" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 5 -->
-			<item id="46463" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 5 -->
-			<item id="46478" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 5 -->
-			<item id="46493" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 5 -->
-			<item id="46508" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 5 -->
+			<item id="46448" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+			<item id="46463" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+			<item id="46478" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+			<item id="46493" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+			<item id="46508" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="80445" name="Bait" additionalName="R108" type="EtcItem">
-		<!-- Fishing time: 105 sec. Standby time: 15 sec. Fishing bait available from level 108. Fishing with this bait has a low chance of yielding a Reddish Box. -->
+		<!-- Fishing time: 105 sec Standby time: 15 sec Fishing bait available from level 108. Fishing with this bait has a low chance of yielding a Reddish Box. -->
 		<set name="icon" val="icon.etc_huge_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -625,7 +625,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80447" name="Maestro's Article Box" type="EtcItem">
-		<!-- Use it to obtain one of the special items. -->
+		<!-- Double-click to obtain special items. -->
 		<set name="icon" val="icon.bm_silver_lure_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -633,7 +633,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80448" name="Master's Luxury Box" type="EtcItem">
-		<!-- Use it to obtain the Freya's Ice Rose and one of the special items. -->
+		<!-- Double-click to obtain Freya's Ice Rose. There is a chance to obtain additional items. -->
 		<set name="icon" val="icon.bm_gold_lure_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -641,7 +641,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80449" name="Royal Black Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +20% for R-grade armor when using an Enchant Scroll. Only for +3 to +11 enchanted items. If enchantment fails. the enchant value of the item will increase randomly by 1 to 2. If enchantment fails. the item will not be crystallized but its enchant value will decrease by 1. -->
+		<!-- Enchant success rate +20% for R-grade armor when using a common enchant scroll. In case of success, the enchant value will increase by 1 or 2. In case of failure, the item is not crystallized, but its enchant value drops by 1. Success rate for +1: 70% Success rate for +2: 30% -->
 		<set name="icon" val="icon.bm_royal_black_ticket_all" />
 		<set name="material" val="PAPER" />
 		<set name="immediate_effect" val="true" />
@@ -745,11 +745,11 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="46446" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 3 -->
-			<item id="46461" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 3 -->
-			<item id="46476" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 3 -->
-			<item id="46491" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 3 -->
-			<item id="46506" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 3 -->
+			<item id="46446" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+			<item id="46461" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+			<item id="46476" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+			<item id="46491" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+			<item id="46506" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="80458" name="Soul Crystal Box Lv. 4" additionalName="Event" type="EtcItem">
@@ -765,15 +765,15 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="46447" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 4 -->
-			<item id="46462" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 4 -->
-			<item id="46477" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 4 -->
-			<item id="46492" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 4 -->
-			<item id="46507" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 4 -->
+			<item id="46447" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46462" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46477" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46492" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+			<item id="46507" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="80459" name="+7 Agathion Charm Box" type="EtcItem">
-		<!-- Double-click to obtain +7 Enchanted Agathion Charm. -->
+		<!-- Double-click to obtain a random agathion charm enchanted to +7. -->
 		<set name="icon" val="icon.event_mahum_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -784,22 +784,22 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48048" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Virgo Charm -->
-			<item id="48049" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Capricorn Charm -->
-			<item id="48050" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Libra Charm -->
-			<item id="48051" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Aries Charm -->
-			<item id="48052" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Taurus Charm -->
-			<item id="48053" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Leo Charm -->
-			<item id="48054" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Gemini Charm -->
-			<item id="48055" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Scorpio Charm -->
-			<item id="48056" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Aquarius Charm -->
-			<item id="48057" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Pisces Charm -->
-			<item id="48058" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Sagittarius Charm -->
-			<item id="48059" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Cancer Charm -->
+			<item id="48048" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Virgo -->
+			<item id="48049" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Capricorn -->
+			<item id="48050" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Libra -->
+			<item id="48051" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Aries -->
+			<item id="48052" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Taurus -->
+			<item id="48053" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Leo -->
+			<item id="48054" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Gemini -->
+			<item id="48055" min="1" max="1" chance="8.3" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Scorpio -->
+			<item id="48056" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Aquarius -->
+			<item id="48057" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Pisces -->
+			<item id="48058" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Sagittarius -->
+			<item id="48059" min="1" max="1" chance="8.4" minEnchant="7" maxEnchant="7" /> <!-- Agathion Charm: Cancer -->
 		</capsuled_items>
 	</item>
 	<item id="80460" name="+8 Agathion Charm Box" type="EtcItem">
-		<!-- Double-click to obtain +8 Enchanted Agathion Charm. -->
+		<!-- Double-click to obtain a random agathion charm enchanted to +8. -->
 		<set name="icon" val="icon.event_mahum_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -810,22 +810,22 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48048" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Virgo Charm -->
-			<item id="48049" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Capricorn Charm -->
-			<item id="48050" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Libra Charm -->
-			<item id="48051" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Aries Charm -->
-			<item id="48052" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Taurus Charm -->
-			<item id="48053" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Leo Charm -->
-			<item id="48054" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Gemini Charm -->
-			<item id="48055" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Scorpio Charm -->
-			<item id="48056" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Aquarius Charm -->
-			<item id="48057" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Pisces Charm -->
-			<item id="48058" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Sagittarius Charm -->
-			<item id="48059" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Cancer Charm -->
+			<item id="48048" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Virgo -->
+			<item id="48049" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Capricorn -->
+			<item id="48050" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Libra -->
+			<item id="48051" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Aries -->
+			<item id="48052" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Taurus -->
+			<item id="48053" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Leo -->
+			<item id="48054" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Gemini -->
+			<item id="48055" min="1" max="1" chance="8.3" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Scorpio -->
+			<item id="48056" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Aquarius -->
+			<item id="48057" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Pisces -->
+			<item id="48058" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Sagittarius -->
+			<item id="48059" min="1" max="1" chance="8.4" minEnchant="8" maxEnchant="8" /> <!-- Agathion Charm: Cancer -->
 		</capsuled_items>
 	</item>
 	<item id="80461" name="+9 Agathion Charm Box" type="EtcItem">
-		<!-- Double-click to obtain +9 Enchanted Agathion Charm. -->
+		<!-- Double-click to obtain a random agathion charm enchanted to +9. -->
 		<set name="icon" val="icon.event_mahum_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -836,22 +836,22 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48048" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Virgo Charm -->
-			<item id="48049" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Capricorn Charm -->
-			<item id="48050" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Libra Charm -->
-			<item id="48051" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Aries Charm -->
-			<item id="48052" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Taurus Charm -->
-			<item id="48053" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Leo Charm -->
-			<item id="48054" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Gemini Charm -->
-			<item id="48055" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Scorpio Charm -->
-			<item id="48056" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Aquarius Charm -->
-			<item id="48057" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Pisces Charm -->
-			<item id="48058" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Sagittarius Charm -->
-			<item id="48059" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Cancer Charm -->
+			<item id="48048" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Virgo -->
+			<item id="48049" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Capricorn -->
+			<item id="48050" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Libra -->
+			<item id="48051" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Aries -->
+			<item id="48052" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Taurus -->
+			<item id="48053" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Leo -->
+			<item id="48054" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Gemini -->
+			<item id="48055" min="1" max="1" chance="8.3" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Scorpio -->
+			<item id="48056" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Aquarius -->
+			<item id="48057" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Pisces -->
+			<item id="48058" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Sagittarius -->
+			<item id="48059" min="1" max="1" chance="8.4" minEnchant="9" maxEnchant="9" /> <!-- Agathion Charm: Cancer -->
 		</capsuled_items>
 	</item>
 	<item id="80462" name="+10 Agathion Charm Box" type="EtcItem">
-		<!-- Double-click to obtain +10 Enchanted Agathion Charm. -->
+		<!-- Double-click to obtain a random agathion charm enchanted to +10. -->
 		<set name="icon" val="icon.event_mahum_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -862,18 +862,18 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48048" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Virgo Charm -->
-			<item id="48049" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Capricorn Charm -->
-			<item id="48050" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Libra Charm -->
-			<item id="48051" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Aries Charm -->
-			<item id="48052" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Taurus Charm -->
-			<item id="48053" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Leo Charm -->
-			<item id="48054" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Gemini Charm -->
-			<item id="48055" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Scorpio Charm -->
-			<item id="48056" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Aquarius Charm -->
-			<item id="48057" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Pisces Charm -->
-			<item id="48058" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Sagittarius Charm -->
-			<item id="48059" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Cancer Charm -->
+			<item id="48048" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Virgo -->
+			<item id="48049" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Capricorn -->
+			<item id="48050" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Libra -->
+			<item id="48051" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Aries -->
+			<item id="48052" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Taurus -->
+			<item id="48053" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Leo -->
+			<item id="48054" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Gemini -->
+			<item id="48055" min="1" max="1" chance="8.3" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Scorpio -->
+			<item id="48056" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Aquarius -->
+			<item id="48057" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Pisces -->
+			<item id="48058" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Sagittarius -->
+			<item id="48059" min="1" max="1" chance="8.4" minEnchant="10" maxEnchant="10" /> <!-- Agathion Charm: Cancer -->
 		</capsuled_items>
 	</item>
 	<item id="80463" name="Expertise Rune - ALL (30-day) Box" additionalName="Event" type="EtcItem">
@@ -906,7 +906,7 @@
 			<item id="48958" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Atk. - Attack -->
 			<item id="48959" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Atk. Spd. - Attack -->
 			<item id="48960" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Casting Spd. - Attack -->
-			<item id="80647" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Standard Attack Critical Damage - Attack -->
+			<item id="80647" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Critical Damage for Basic Attacks - Attack -->
 			<item id="80648" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Skill Critical Damage - Attack -->
 			<item id="80649" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Skill Critical Damage - Attack -->
 		</capsuled_items>
@@ -925,13 +925,13 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48961" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Def. - Protection -->
-			<item id="48962" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Def. - Protection -->
-			<item id="48963" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Max HP - Protection -->
-			<item id="48964" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Max MP - Protection -->
-			<item id="80650" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Bow Resistance - Protection -->
-			<item id="80651" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Dagger Resistance - Protection -->
-			<item id="80652" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Sword Resistance - Protection -->
+			<item id="48961" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Def. - Defense -->
+			<item id="48962" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Def. - Defense -->
+			<item id="48963" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Max HP - Defense -->
+			<item id="48964" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Max MP - Defense -->
+			<item id="80650" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Bow Resistance - Defense -->
+			<item id="80651" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Dagger Resistance - Defense -->
+			<item id="80652" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Sword Resistance - Defense -->
 		</capsuled_items>
 	</item>
 	<item id="80466" name="+8 Support Artifact Pack" additionalName="Event" type="EtcItem">
@@ -948,7 +948,7 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48965" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - XP - Support -->
+			<item id="48965" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Acquired XP - Support -->
 			<item id="48966" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Vampiric Rage - Support -->
 			<item id="48967" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Speed - Support -->
 			<item id="48968" min="1" max="1" chance="14.285714" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Received Healing - Support -->
@@ -974,7 +974,7 @@
 			<item id="48970" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Atk. - Balance -->
 			<item id="48971" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Accuracy - Balance -->
 			<item id="48972" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Accuracy - Balance -->
-			<item id="48973" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Standard Attack Critical Rate - Balance -->
+			<item id="48973" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Critical Rate for Basic Attacks - Balance -->
 			<item id="48974" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Skill Critical Rate - Balance -->
 			<item id="48975" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Critical Rate - Balance -->
 			<item id="48976" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Recovery Potions' Effect - Balance -->
@@ -982,7 +982,7 @@
 			<item id="48985" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Fixed Damage Resistance - Balance -->
 			<item id="80656" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Def. - Balance -->
 			<item id="80657" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Def. - Balance -->
-			<item id="80658" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Standard Attack Critical Damage - Balance -->
+			<item id="80658" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Critical Damage for Basic Attacks - Balance -->
 			<item id="80659" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Skill Critical Damage - Balance -->
 			<item id="80660" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - M. Skill Critical Damage - Balance -->
 			<item id="80661" min="1" max="1" chance="3.84615" minEnchant="8" maxEnchant="8" /> <!-- Artifact - Atk. Spd. - Balance -->
@@ -1000,7 +1000,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80469" name="Mammon's Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain a random item. -->
+		<!-- Double-click to obtain a useful item. -->
 		<set name="icon" val="icon.bm_2018_special_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -1016,7 +1016,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80471" name="Master's Lucky Jewelry Box Lv. 3" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Ruby, Sapphire, Topaz, Opal, Diamond, Emerald, Tanzanite, Red Cat's Eye, Blue Cat's Eye, Obsidian, Jewelry Box Lv. 3. -->
+		<!-- Double-click to obtain one of the following items: Ruby, Sapphire, Topaz, Opal, Diamond, Emerald, Tanzanite, Red Cat's Eye, Blue Cat's Eye, Obsidian, Jewel Box Lv. 3. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -1024,7 +1024,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80472" name="Greater Topaz Lv. 1" additionalName="Event" type="Armor">
-		<!-- Interrupts the target's skill casting. In PvP ignores enemy's CP and deals fixed 13,275 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- Interrupts the target's skill casting. In PvP ignores the enemy's CP and deals fixed 13,275 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1057,7 +1057,7 @@
 		</skills>
 	</item>
 	<item id="80474" name="Greater Sapphire Lv. 1" additionalName="Event" type="Armor">
-		<!-- Spiritshot and Blessed Spiritshot's damage +20% and M. Atk. +13%. The effect doesn't stack if two identical jewels are equipped, the higher-level jewel takes precedence. -->
+		<!-- Spiritshot/ Blessed Spiritshot damage +20% and M. Atk. +13%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1106,7 +1106,7 @@
 		</skills>
 	</item>
 	<item id="80477" name="Greater Emerald Lv. 1" additionalName="Event" type="Armor">
-		<!-- When equipped, all stats +3, Skill Mastery Rate +30%. The effect doesn't stack if two identical gems are equipped, the higher-level gem takes precedence. -->
+		<!-- When equipped, all stats +3, Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1138,7 +1138,7 @@
 		</skills>
 	</item>
 	<item id="80479" name="Greater Diamond Lv. 1" additionalName="Event" type="Armor">
-		<!-- P. Def. +1986, Received Critical Damage from standard attacks -5%, P. Def. +10%. The effect doesn't stack if two identical gems are equipped, the higher-level gem takes precedence. -->
+		<!-- P. Def. +1986, received Critical Damage from basic attacks -5%, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1186,7 +1186,7 @@
 		</skills>
 	</item>
 	<item id="80482" name="Greater Garnet Lv. 1" additionalName="Event" type="Armor">
-		<!-- Debuff Resistance +30%. Damage Reflection Resistance +15%. Removes Stun/ Silence of Confusion/ Obstruction debuff types when receiving PvP damage. Removes debuffs from you and grants immunity to debuffs for 7 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- When equipped, Debuff Resistance +30%. Removes Stun/ Silence of Confusion/ Obstruction debuff types in PvP. Removes debuffs from you and grants immunity to debuffs for 7 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1219,7 +1219,7 @@
 		</skills>
 	</item>
 	<item id="80484" name="Greater Red Cat's Eye Lv. 1" additionalName="Event" type="Armor">
-		<!-- Critical Damage for standard attacks +12%, P. Skill Critical Damage +12%, P. Skill Power +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- Critical Damage for basic attacks +12%, P. Skill Critical Damage +12%, P. Skill Power +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1408,7 +1408,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80497" name="Five-colored Sweets" additionalName="Event" type="EtcItem">
-		<!-- A sweet rice cake received from Festival Fairy. For 2 h., acquired XP/ SP +30%, acquired XP/ SP in Vitality state +30%, P. Atk./ P. Def./ M. Atk./ M. Def. +15%. Cooldown is 5 min. -->
+		<!-- A sweet rice cake prepared for the harvest festival. For 2 h., acquired XP/ SP +30%, Vitality bonus +30%, P. Atk./ P. Def./ M. Atk./ M. Def. +15%. Cooldown: 5 min. -->
 		<set name="icon" val="icon.ev_ricecake_potion" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -1418,7 +1418,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80498" name="Golden Orc Potion" additionalName="Event" type="EtcItem">
-		<!-- When used, increases Acquired XP/ SP by 30%, Acquired XP/ SP in Vitality state by 30%, and P. Atk./ P. Def./ M. Atk./ M. Def. by 15% for 30 min. -->
+		<!-- For 30 min., acquired XP/ SP +30%, SP/ Vitality bonus +30%, P. Atk./ P. Def./ M. Atk./ M. Def. +15%. -->
 		<set name="icon" val="icon.etc_potion_gold_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />

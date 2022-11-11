@@ -46,7 +46,7 @@
 		<set name="commissionItemType" val="SCROLL_OTHER" />
 	</item>
 	<item id="10305" name="Transformation Sealbook: Oel Mahum" type="EtcItem">
-		<!-- Documents the method for transforming into an Ol Mahum. -->
+		<!-- Documents the method for transforming into an Oel Mahum. -->
 		<set name="icon" val="BranchSys2.icon.etc_sb_transform_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -217,7 +217,7 @@
 		</skills>
 	</item>
 	<item id="10314" name="Beleth' Ring" type="Armor">
-		<!-- A ring made by Tully at the command of Beleth, imbued with Beleth' magic powers. MP +21, M. Def. +12%, Max HP +105, Confusion Resistance/ Atk. Rate +10, MP Recovery Rate +0.23, Dark Resistance +30. Effects of two identical rings do not stack. -->
+		<!-- A ring made by Tully at the command of Beleth, imbued with Beleth' magic power. MP +21, M. Def. +12%, Max HP +105, Confusion Atk. Rate and Resistance +10, MP Recovery Rate +0.23, Dark Resistance +30. Effects of two identical rings do not stack. Can be crystallized to obtain Selenite. -->
 		<set name="icon" val="icon.accessary_dynasty_ring_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -238,7 +238,7 @@
 		</stats>
 	</item>
 	<item id="10315" name="Shadow Item: Purple Viking Circlet" type="Armor">
-		<!-- Uses 2 hair accessory slots. Lasts for 500 min. -->
+		<!-- Equipped in 2 head accessory slots. Shadow item. Duration: 500 min. -->
 		<set name="icon" val="icon.accessory_viking_circlet_violet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -340,7 +340,7 @@
 		</skills>
 	</item>
 	<item id="10321" name="Shadow Item: Golden Viking Circlet" type="Armor">
-		<!-- Uses 2 hair accessory slots. Lasts for 500 min. -->
+		<!-- Equipped in 2 head accessory slots. Shadow item. Duration: 500 min. -->
 		<set name="icon" val="icon.accessory_viking_circlet_gold_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -454,7 +454,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10328" name="Stolen Cargo" type="EtcItem">
-		<!-- Cargo stolen from Warehouse Keeper Sonin of Florin Village. Return it to Sonin. -->
+		<!-- A cargo stolen from Warehouse Keeper Sonin from Floran Village. Return it to Sonin. -->
 		<set name="icon" val="icon.etc_wine_barrel_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -490,7 +490,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10331" name="Sonin's Credentials" type="EtcItem">
-		<!-- Give it to Priest Shegfield of Dion Village along with Pano's and Alex's Credentials. -->
+		<!-- Take it to Priest Shegfield in Dion along with Pano's and Alex' Recommendations. -->
 		<set name="icon" val="icon.etc_piece_of_paper_black_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -502,7 +502,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10332" name="Pano's Credentials" type="EtcItem">
-		<!-- Give it to Priest Shegfield of Dion Village along with Sonin's and Alex's Credentials. -->
+		<!-- Take it to Priest Shegfield in Dion along with Sonin's and Alex' Recommendations. -->
 		<set name="icon" val="icon.etc_piece_of_paper_gray_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -514,7 +514,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10333" name="Alex's Recommendation" type="EtcItem">
-		<!-- Give it to Priest Shegfield of Dion Village along with Pano's and Sonin's Credentials. -->
+		<!-- Take it to Priest Shegfield in Dion along with Pano's and Sonin's Recommendations. -->
 		<set name="icon" val="icon.etc_piece_of_paper_white_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -670,7 +670,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10346" name="Document Chest" type="EtcItem">
-		<!-- Document Chest held by the Tasaba Lizardmen. Bring it to Warehouse Keeper Mia to inspect the contents. -->
+		<!-- A box with documents of the Tasaba Lizardmen. Take it to Warehouse Keeper Mia to inspect its contents. -->
 		<set name="icon" val="icon.etc_squares_wood_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -718,7 +718,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10350" name="Predecessor's Report" type="EtcItem">
-		<!-- Investigate report of the intelligence agency that records the death of Shadow Fox. Bring it to Warehouse Chief Natools. -->
+		<!-- An intelligence report that records the death of the Shadow Fox. Take it to Warehouse Chief Natools. -->
 		<set name="icon" val="icon.etc_letter_red_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -826,7 +826,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="10359" name="Metallograph" type="EtcItem">
-		<!-- Metal device obtained in Cruma Tower. It appears to be a recording device from the time of Giants. -->
+		<!-- Metallograph obtained in Cruma Tower. Appears to be a recording device of the giants. -->
 		<set name="icon" val="icon.etc_ancient_tablet_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1092,7 +1092,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="10380" name="Recipe: Icarus Hall (60%)" type="EtcItem">
-		<!-- For Dwarves only. A recipe for Icarus Hall. Requires Create Item Lv. 9. The success rate is 60%. -->
+		<!-- For Dwarves only. A recipe for Icarus Rod. Requires Create Item Lv. 9. The success rate is 60%. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -1148,7 +1148,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="10384" name="Recipe: Icarus Crossbow (60%)" type="EtcItem">
-		<!-- For Dwarves only. A recipe for Icarus Shooter. Requires Create Item Lv. 9. The success rate is 60%. -->
+		<!-- For Dwarves only. A recipe for Icarus Crossbow. Requires Create Item Lv. 9. The success rate is 60%. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -1252,7 +1252,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="10392" name="Recipe: Icarus Hall (100%)" type="EtcItem">
-		<!-- For Dwarves only. A recipe for Icarus Hall. Requires Create Item Lv. 9. The success rate is 100%. -->
+		<!-- For Dwarves only. A recipe for Icarus Rod. Requires Create Item Lv. 9. The success rate is 100%. -->
 		<set name="icon" val="icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -1317,7 +1317,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="10397" name="Icarus Sawsword Piece" type="EtcItem">
-		<!-- Key material for Dwarves to make Icarus Sawsword. It can be sold to public stores. -->
+		<!-- Key material for Dwarves to make Icarus Sawsword. Can be sold in any shop. -->
 		<set name="icon" val="icon.etc_sword_body_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -1328,7 +1328,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="10398" name="Icarus Disperser Piece" type="EtcItem">
-		<!-- Key material for Dwarves to make Icarus Disperser. It can be sold to public stores. -->
+		<!-- Key material for Dwarves to make Icarus Disperser. Can be sold in any shop. -->
 		<set name="icon" val="icon.etc_sword_body_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -1339,7 +1339,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="10399" name="Icarus Spirit Piece" type="EtcItem">
-		<!-- Key material for Dwarves to make Icarus Spirit. It can be sold to public stores. -->
+		<!-- Key material for Dwarves to make Icarus Spirit. Can be sold in any shop. -->
 		<set name="icon" val="icon.etc_sword_body_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />

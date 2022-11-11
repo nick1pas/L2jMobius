@@ -379,7 +379,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="8327" name="Steel Sword Blade" type="EtcItem">
-		<!-- Vital material used by Dwarves to make Steel Swords. Available at any shop. -->
+		<!-- Key material for Dwarves to make Steel Sword. Can be sold in any shop. -->
 		<set name="icon" val="icon.etc_sword_body_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -478,7 +478,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8336" name="Blade of the Wizard's Tear" type="EtcItem">
-		<!-- Vital material used by Dwarves to make a Wizard's Tear. Available at any shop. -->
+		<!-- Key material for Dwarves to make Wizard's Tear. Can be sold in any shop. -->
 		<set name="icon" val="icon.etc_sword_body_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -656,7 +656,7 @@
 		</stats>
 	</item>
 	<item id="8351" name="Corroded Black Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_gludio_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -667,7 +667,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8352" name="Corroded Red Colored Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_dion_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -678,7 +678,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8353" name="Corroded Green Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_giran_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -689,7 +689,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8354" name="Corroded Yellow Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_oren_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -700,7 +700,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8355" name="Corroded Blue Colored Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_aden_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -711,7 +711,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8356" name="Corroded White Colored Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_innadrile_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -722,7 +722,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8357" name="Corroded Orange Colored Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_godad_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -733,7 +733,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8358" name="Corroded Purple Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_rune_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -744,7 +744,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8359" name="Corroded Jade Colored Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_schuttgart_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -755,7 +755,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8360" name="Adventurer's Box: C-grade Accessory" type="EtcItem">
-		<!-- Open the box to obtain C-grade accessories at a certain rate. -->
+		<!-- Double-click to obtain a C-grade accessory with a certain chance. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
@@ -765,7 +765,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8361" name="Adventurer's Box: B-grade Accessory" type="EtcItem">
-		<!-- Open the box to obtain B-grade accessories at a certain rate. -->
+		<!-- Double-click to obtain a B-grade accessory with a certain chance. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
@@ -775,7 +775,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8362" name="Adventurer's Box: Hair Accessory" type="EtcItem">
-		<!-- Open the box to obtain Raider Dragon accessories at a certain rate. -->
+		<!-- Double-click to obtain Raider Dragon's head accessory with a certain chance. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />
@@ -785,7 +785,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8363" name="Adventurer's Box: Cradle of Creation" type="EtcItem">
-		<!-- Open the box to obtain the Cradle of Creation with a certain probability. -->
+		<!-- Double-click to obtain Cradle of Creation with a certain chance. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="STEEL" />

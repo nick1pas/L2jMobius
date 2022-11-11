@@ -81,7 +81,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="48709" name="Chronicle Token" type="EtcItem">
-		<!-- A rune for the anniversary of Lineage II. When in inventory, P./ M. Atk., P./ M. Def., Atk. Spd./ Casting Spd., P./ M. Critical Rate, Max HP/ MP/ CP +5%, Vitality bonus +14%. Cannot be used in the Olympiad. -->
+		<!-- A rune for the game anniversary. When in inventory, P. Atk., M. Atk., P. Def., M. Def., Atk. Spd./ Casting Spd., P. Critical Rate, M. Critical Rate, Max HP/ MP/ CP +5%, Vitality bonus +14%. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_scroll_of_memory_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -567,7 +567,7 @@
 		</skills>
 	</item>
 	<item id="48756" name="+6 Shiny Elemental Shirt" additionalName="30-day" type="Armor">
-		<!-- Shining magic T-shirt imbued with Einhasad's energy. <Item skill>. M. Def. +14. Speed +7. Max HP/ MP +531, Skill MP Consumption -3%, Damage Reflection Resistance +5. Water/ Fire/ Wind/ Earth/ Holy/ Dark Resistance +18. STR/ DEX/ INT/ WIT +3, CON/ MEN +2. <Active skill>. Einhasad's Wrath -->
+		<!-- A shining magic T-shirt imbued with Einhasad's energy. <Item skill> M. Def. +14 Speed +7 Max HP +531, Max MP +531, Skill MP Consumption -3%, Damage Reflection Resistance +5, Fire/ Wind/ Earth/ Holy/ Dark/ Water Resistance +18, STR +3, DEX +3, CON +2, INT +3, WIT +3, MEN +2 <Active skill> Einhasad's Wrath -->
 		<set name="icon" val="icon.ainhasard_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -686,7 +686,7 @@
 		</stats>
 	</item>
 	<item id="48767" name="Greater Topaz Lv. 2" type="Armor">
-		<!-- Interrupts the target's skill casting. In PvP ignores enemy's CP and deals fixed 14,868 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Interrupts the target's skill casting. In PvP ignores the enemy's CP and deals fixed 14,868 damage. Grants a low chance of killing the enemy instantly. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -700,7 +700,7 @@
 		</skills>
 	</item>
 	<item id="48768" name="Greater Topaz Lv. 3" type="Armor">
-		<!-- Interrupts the target's skill casting. In PvP ignores enemy's CP and deals fixed 16,461 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Interrupts the target's skill casting. In PvP ignores the enemy's CP and deals fixed 16,461 damage. Grants a low chance of killing the enemy instantly. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -714,7 +714,7 @@
 		</skills>
 	</item>
 	<item id="48769" name="Greater Topaz Lv. 4" type="Armor">
-		<!-- Interrupts the target's skill casting. In PvP ignores enemy's CP and deals fixed 18,054 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Interrupts the target's skill casting. In PvP ignores the enemy's CP and deals fixed 18,054 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -728,7 +728,7 @@
 		</skills>
 	</item>
 	<item id="48770" name="Greater Topaz Lv. 5" type="Armor">
-		<!-- Interrupts the target's skill casting. In PvP ignores enemy's CP and deals fixed 19,647 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- Interrupts the target's skill casting. In PvP ignores the enemy's CP and deals fixed 19,647 damage. With a low chance, inflicts a lethal strike on the enemy. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_absdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -742,7 +742,7 @@
 		</skills>
 	</item>
 	<item id="48771" name="Greater Ruby Lv. 2" type="Armor">
-		<!-- Soulshot and Beast Soulshot damage +20%, P. Atk. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Soulshot/ Beast Soulshot damage +20%, P. Atk. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -755,7 +755,7 @@
 		</skills>
 	</item>
 	<item id="48772" name="Greater Ruby Lv. 3" type="Armor">
-		<!-- Soulshot and Beast Soulshot damage +20%, P. Atk. +11%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Soulshot/ Beast Soulshot damage +20%, P. Atk. +11%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -768,7 +768,7 @@
 		</skills>
 	</item>
 	<item id="48773" name="Greater Ruby Lv. 4" type="Armor">
-		<!-- Soulshot and Beast Soulshot damage +20%, P. Atk. +13%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Soulshot/ Beast Soulshot damage +20%, P. Atk. +13%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -781,7 +781,7 @@
 		</skills>
 	</item>
 	<item id="48774" name="Greater Ruby Lv. 5" type="Armor">
-		<!-- Soulshot and Beast Soulshot damage +20%, P. Atk. +15%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- Soulshot/ Beast Soulshot damage +20%, P. Atk. +15%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_ssdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -794,7 +794,7 @@
 		</skills>
 	</item>
 	<item id="48775" name="Greater Sapphire Lv. 2" type="Armor">
-		<!-- Spiritshot and Blessed Spiritshot damage +20%, M. Atk. +14%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Spiritshot/ Blessed Spiritshot damage +20%, M. Atk. +14%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -807,7 +807,7 @@
 		</skills>
 	</item>
 	<item id="48776" name="Greater Sapphire Lv. 3" type="Armor">
-		<!-- Spiritshot and Blessed Spiritshot damage +20%, M. Atk. +15%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Spiritshot/ Blessed Spiritshot damage +20%, M. Atk. +15%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -820,7 +820,7 @@
 		</skills>
 	</item>
 	<item id="48777" name="Greater Sapphire Lv. 4" type="Armor">
-		<!-- Spiritshot and Blessed Spiritshot damage +20%, M. Atk. +17%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Spiritshot/ Blessed Spiritshot damage +20%, M. Atk. +17%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -833,7 +833,7 @@
 		</skills>
 	</item>
 	<item id="48778" name="Greater Sapphire Lv. 5" type="Armor">
-		<!-- Spiritshot and Blessed Spiritshot damage +20%, M. Atk. +19%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- Spiritshot/ Blessed Spiritshot damage +20%, M. Atk. +19%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_spsdmg_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -846,7 +846,7 @@
 		</skills>
 	</item>
 	<item id="48779" name="Greater Obsidian Lv. 2" type="Armor">
-		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +1%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +1%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_pvpdef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -859,7 +859,7 @@
 		</skills>
 	</item>
 	<item id="48780" name="Greater Obsidian Lv. 3" type="Armor">
-		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +2%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +2%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_pvpdef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -872,7 +872,7 @@
 		</skills>
 	</item>
 	<item id="48781" name="Greater Obsidian Lv. 4" type="Armor">
-		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_pvpdef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -885,7 +885,7 @@
 		</skills>
 	</item>
 	<item id="48782" name="Greater Obsidian Lv. 5" type="Armor">
-		<!-- Received PvP damage -15%. Cancels the enemy's target, when hit. P./ M. Def. +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- Received PvP damage -15%. Cancels the enemy's target when hit. P./ M. Def. +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_pvpdef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -898,7 +898,7 @@
 		</skills>
 	</item>
 	<item id="48783" name="Greater Opal Lv. 2" type="Armor">
-		<!-- Attribute Attack +120, Attribute Resistance +80. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Attribute Attack +120, Attribute Resistance +80. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_atkeleup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -911,7 +911,7 @@
 		</skills>
 	</item>
 	<item id="48784" name="Greater Opal Lv. 3" type="Armor">
-		<!-- Attribute Attack +120, Attribute Resistance +90. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Attribute Attack +120, Attribute Resistance +90. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_atkeleup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -924,7 +924,7 @@
 		</skills>
 	</item>
 	<item id="48785" name="Greater Opal Lv. 4" type="Armor">
-		<!-- Attribute Attack +120, Attribute Resistance +100. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Attribute Attack +120, Attribute Resistance +100. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_atkeleup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -937,7 +937,7 @@
 		</skills>
 	</item>
 	<item id="48786" name="Greater Opal Lv. 5" type="Armor">
-		<!-- Attribute Attack +120, Attribute Resistance +120. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- Attribute Attack +120, Attribute Resistance +120. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_atkeleup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -950,7 +950,7 @@
 		</skills>
 	</item>
 	<item id="48787" name="Greater Emerald Lv. 2" type="Armor">
-		<!-- STR +3, DEX +3, CON +4, INT +3, WIT +3, MEN +4, CHA +3, LUC +3. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- STR +3, DEX +3, CON +4, INT +3, WIT +3, MEN +4, CHA +3, LUC +3. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -963,7 +963,7 @@
 		</skills>
 	</item>
 	<item id="48788" name="Greater Emerald Lv. 3" type="Armor">
-		<!-- STR +3, DEX +4, CON +4, INT +3, WIT +4, MEN +4, CHA +3, LUC +3. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- STR +3, DEX +4, CON +4, INT +3, WIT +4, MEN +4, CHA +3, LUC +3. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -976,7 +976,7 @@
 		</skills>
 	</item>
 	<item id="48789" name="Greater Emerald Lv. 4" type="Armor">
-		<!-- STR +4, DEX +4, CON +4, INT +4, WIT +4, MEN +4, CHA +3, LUC +3. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- STR +4, DEX +4, CON +4, INT +4, WIT +4, MEN +4, CHA +3, LUC +3. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -989,7 +989,7 @@
 		</skills>
 	</item>
 	<item id="48790" name="Greater Emerald Lv. 5" type="Armor">
-		<!-- STR +4, DEX +4, CON +4, INT +4, WIT +4, MEN +4, CHA +4, LUC +4. Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- STR +4, DEX +4, CON +4, INT +4, WIT +4, MEN +4, CHA +4, LUC +4, Skill Mastery Rate +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_allstat_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1002,7 +1002,7 @@
 		</skills>
 	</item>
 	<item id="48791" name="Greater Aquamarine Lv. 2" type="Armor">
-		<!-- With a 15% chance, recovers 136 MP after skill use. Skill Cooldown -5%, Max HP/ MP +1%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- With a 15% chance, recovers 136 MP after using skills. Skill Cooldown -5%, Max HP/ MP +1%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1015,7 +1015,7 @@
 		</skills>
 	</item>
 	<item id="48792" name="Greater Aquamarine Lv. 3" type="Armor">
-		<!-- With a 15% chance, recovers 136 MP after skill use. Skill Cooldown -5%, Max HP/ MP +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- With a 15% chance, recovers 136 MP after using skills. Skill Cooldown -5%, Max HP/ MP +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1028,7 +1028,7 @@
 		</skills>
 	</item>
 	<item id="48793" name="Greater Aquamarine Lv. 4" type="Armor">
-		<!-- With a 15% chance, recovers 136 MP after skill use. Skill Cooldown -5%, Max HP/ MP +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- With a 15% chance, recovers 136 MP after using skills. Skill Cooldown -5%, Max HP/ MP +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1041,7 +1041,7 @@
 		</skills>
 	</item>
 	<item id="48794" name="Greater Aquamarine Lv. 5" type="Armor">
-		<!-- With a 15% chance, recovers 136 MP after skill use. Skill Cooldown -5%, Max HP/ MP +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- With a 15% chance, recovers 136 MP after using skills. Skill Cooldown -5%, Max HP/ MP +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_castmpup_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1054,7 +1054,7 @@
 		</skills>
 	</item>
 	<item id="48795" name="Greater Diamond Lv. 2" type="Armor">
-		<!-- P. Def. +2128, received P. Critical Damage -6%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- P. Def. +2128, received Critical Damage from basic attacks -6%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1067,7 +1067,7 @@
 		</skills>
 	</item>
 	<item id="48796" name="Greater Diamond Lv. 3" type="Armor">
-		<!-- P. Def. +2317, received P. Critical Damage -7%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- P. Def. +2317, received Critical Damage from basic attacks -7%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1080,7 +1080,7 @@
 		</skills>
 	</item>
 	<item id="48797" name="Greater Diamond Lv. 4" type="Armor">
-		<!-- P. Def. +2558, received P. Critical Damage -8%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- P. Def. +2558, received Critical Damage from basic attacks -8%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1093,7 +1093,7 @@
 		</skills>
 	</item>
 	<item id="48798" name="Greater Diamond Lv. 5" type="Armor">
-		<!-- P. Def. +2837, received P. Critical Damage -10%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enhancing>. Compounding two jewels of the same level, you can get superior jewel. -->
+		<!-- P. Def. +2837, received Critical Damage from basic attacks -10%. Additionally, P. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Upgrading> A superior jewel can be obtained through compounding of two jewels of the same level. -->
 		<set name="icon" val="icon.bm_jewel_phydef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1106,7 +1106,7 @@
 		</skills>
 	</item>
 	<item id="48799" name="Greater Pearl Lv. 2" type="Armor">
-		<!-- M. Def. +1375, Received M. Critical Damage -6%. Additionally, M. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- M. Def. +1375, received M. Skill Critical Damage -6%. Additionally, M. Def. +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_magdef_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />

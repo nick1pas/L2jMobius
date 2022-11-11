@@ -286,7 +286,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="23319" name="Harp's Sealed Rune of Power (3-day)" type="EtcItem">
-		<!-- If stored in the inventory, STR +7 and has a 5% chance of Confusion for all enemies within 200 grids for 3 sec. -->
+		<!-- When in inventory, STR +7. With a 5% chance, confuses all enemies within 200 m for 3 sec. after a basic attack. -->
 		<set name="icon" val="BranchSys3.icon1.g_rune_of_half_power" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -376,7 +376,7 @@
 		</skills>
 	</item>
 	<item id="23325" name="Harp's Sealed Rune of Power" type="EtcItem">
-		<!-- If stored in the inventory, STR +7 and has a 5% chance of Confusion for all enemies within 200 grids for 3 sec. -->
+		<!-- When in inventory, STR +7. With a 5% chance, confuses all enemies within 200 m for 3 sec. after a basic attack. -->
 		<set name="icon" val="BranchSys3.icon1.g_rune_of_half_power" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -476,7 +476,7 @@
 		</skills>
 	</item>
 	<item id="23332" name="Nevit's Hourglass (1-hour)" type="EtcItem">
-		<!-- Increases acquired XP by 50% for a certain amount of time. All levels. -->
+		<!-- When used, acquired XP +50% for a certain amount of time. For all levels. -->
 		<set name="icon" val="icon.etc_dragons_blood_i03" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
@@ -496,7 +496,7 @@
 		</skills>
 	</item>
 	<item id="23333" name="Nevit's Hourglass (2-hour)" type="EtcItem">
-		<!-- Increases acquired XP by 50% for a certain amount of time. All levels. -->
+		<!-- When used, acquired XP +50% for a certain amount of time. For all levels. -->
 		<set name="icon" val="icon.etc_dragons_blood_i03" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
@@ -516,7 +516,7 @@
 		</skills>
 	</item>
 	<item id="23334" name="Package: R-grade Soulshots" type="EtcItem">
-		<!-- You can obtain 5,000 R-grade soulshots. -->
+		<!-- Double-click to obtain 5000 R-grade Soulshots. -->
 		<set name="icon" val="icon.br_cash_pack_of_soulshot_r_i00" />
 		<set name="weight" val="500" />
 		<set name="is_sellable" val="false" />
@@ -644,7 +644,7 @@
 		</skills>
 	</item>
 	<item id="23342" name="Ancient Crystal: Enchant R-grade Weapon" type="EtcItem">
-		<!-- Enchant success rate +10%. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). The enchanting is safe. Cannot be used for weapons enchanted to +15 or higher. -->
+		<!-- Enchant success rate +10% to base success rate. In case of failure enchant value remains the same. For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with weapons enchanted to +16 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_ancient_cry_of_ench_wp_s_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -660,7 +660,7 @@
 		</skills>
 	</item>
 	<item id="23343" name="Sacred Crystal: Enchant R-grade Weapon" type="EtcItem">
-		<!-- Enchant success rate: 100%. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used for common weapons enchanted to +12 or higher and for magical weapons enchanted to +7 or higher. -->
+		<!-- Enchant success rate: 100%. For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with common weapons enchanted to +12 or higher and with magic weapons enchanted to +7 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_holy_cry_of_ench_wp_s_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -676,7 +676,7 @@
 		</skills>
 	</item>
 	<item id="23344" name="Ancient Crystal: Enchant R-grade Armor" type="EtcItem">
-		<!-- Enchant success rate +10%. If enchanting is failed, the enchant value remains the same. When R-grade armor or accessories are enchanted, P. Def. +2. When enchanted to +4 or higher, P. Def. is greatly increased. Can be safely enchanted up to +3. When enchanted to +4 or higher, HP is gradually increased with each enchant value. Cannot be used on armor above +16. -->
+		<!-- Enchant success rate +10% to base success rate. In case of failure, the enchant value is not reset. For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +16 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_ancient_cry_of_ench_am_s_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -692,7 +692,7 @@
 		</skills>
 	</item>
 	<item id="23345" name="Sacred Crystal: Enchant R-grade Armor" type="EtcItem">
-		<!-- Enchant success rate: 100%. For R-grade armor and accessories. P. Def. +2. When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +7 or higher. -->
+		<!-- Enchant success rate: 100%. For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +7 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_holy_cry_of_ench_am_s_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1024,7 +1024,7 @@
 		</skills>
 	</item>
 	<item id="23366" name="R-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of R-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of R-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_r" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1040,7 +1040,7 @@
 		</skills>
 	</item>
 	<item id="23367" name="S-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the appearance of modified S-grade armor. No hair accessories. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of S-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_s" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1056,7 +1056,7 @@
 		</skills>
 	</item>
 	<item id="23368" name="A-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of A-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of A-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_a" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1072,7 +1072,7 @@
 		</skills>
 	</item>
 	<item id="23369" name="Appearance Stone: Hair Accessory" type="EtcItem">
-		<!-- Item that can change a hair accessory's appearance. Works for item with the same number of slots. You need an appearance item, which is destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. Consumes 125,000 adena for a 1-slot hair accessory and 200,000 adena for a 2-slot hair accessory. -->
+		<!-- Double-click to change a head accessory's appearance. Can be used with items equipped in the same number of slots. An appearance item is destroyed after its appearance is extracted. An appearance-modified item's effects do not change. The fee is 125,000 adena for a 1-slot head accessory and 200,000 adena for a 2-slot head accessory. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2_stone" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1088,7 +1088,7 @@
 		</skills>
 	</item>
 	<item id="23370" name="Blessed Appearance Stone: Hair Accessory" type="EtcItem">
-		<!-- Item that can change a hair accessory's appearance. Works for item with the same number of slots. You need an appearance item, which remains intact after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. -->
+		<!-- Double-click to change a head accessory's appearance. Can be used with items equipped in the same number of slots. An appearance item is required, it is not destroyed after the appearance extraction. An appearance-modified item's effects do not change. -->
 		<set name="icon" val="BranchSys3.Icon.g_bless_shape_shifting_hair2_stone" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1104,7 +1104,7 @@
 		</skills>
 	</item>
 	<item id="23371" name="Hair Accessory Restoration Stone" type="EtcItem">
-		<!-- Restores the appearance of a modified hair accessory. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of a modified head accessory. -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_r" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1120,7 +1120,7 @@
 		</skills>
 	</item>
 	<item id="23372" name="Package: Appearance/ Restoration Stone: R-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain R-grade Weapon Appearance Stone and a R-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: R-grade Weapon and 1 Restoration Stone: R-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1131,12 +1131,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="STEEL" />
 		<capsuled_items>
-			<item id="22402" min="1" max="1" chance="100" /> <!-- R-grade Weapon Appearance Stone -->
+			<item id="22402" min="1" max="1" chance="100" /> <!-- Appearance Stone: R-grade Weapon -->
 			<item id="22414" min="1" max="1" chance="100" /> <!-- R-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="23373" name="Package: Appearance/ Restoration Stone: S-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 S-grade Weapon Appearance Stone and 1 S-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: S-grade Weapon and 1 Restoration Stone: S-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1147,12 +1147,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="STEEL" />
 		<capsuled_items>
-			<item id="22403" min="1" max="1" chance="100" /> <!-- S-grade Weapon Appearance Stone -->
+			<item id="22403" min="1" max="1" chance="100" /> <!-- Appearance Stone: S-grade Weapon -->
 			<item id="22415" min="1" max="1" chance="100" /> <!-- S-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="23374" name="Package: Appearance/ Restoration Stone: R-grade Armor" type="EtcItem">
-		<!-- Double-click to obtain a R-grade Armor Appearance Stone and a R-grade Armor Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: R-grade Armor and 1 Restoration Stone: R-grade Armor. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1163,12 +1163,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="STEEL" />
 		<capsuled_items>
-			<item id="22682" min="1" max="1" chance="100" /> <!-- R-grade Armor Appearance Stone -->
-			<item id="22694" min="1" max="1" chance="100" /> <!-- R-grade Armor Restoration Stone -->
+			<item id="22682" min="1" max="1" chance="100" /> <!-- Appearance Stone: R-grade Armor -->
+			<item id="22694" min="1" max="1" chance="100" /> <!-- Restoration Stone: R-grade Armor -->
 		</capsuled_items>
 	</item>
 	<item id="23375" name="Package: Appearance/ Restoration Stone: S-grade Armor" type="EtcItem">
-		<!-- Double-click to obtain 1 S-grade Armor Appearance Stone and 1 S-grade Armor Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: S-grade Armor and 1 Restoration Stone: S-grade Armor. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1179,12 +1179,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="STEEL" />
 		<capsuled_items>
-			<item id="22683" min="1" max="1" chance="100" /> <!-- S-grade Armor Appearance Stone -->
-			<item id="22695" min="1" max="1" chance="100" /> <!-- S-grade Armor Restoration Stone -->
+			<item id="22683" min="1" max="1" chance="100" /> <!-- Appearance Stone: S-grade Armor -->
+			<item id="22695" min="1" max="1" chance="100" /> <!-- Restoration Stone: S-grade Armor -->
 		</capsuled_items>
 	</item>
 	<item id="23376" name="Package: Appearance/ Restoration Stone: Hair Accessory" type="EtcItem">
-		<!-- Double-click to obtain 1 Hair Accessory Appearance Stone and 2 S-grade Hair Accessory Restoration Stones. -->
+		<!-- Double-click to obtain 1 Appearance Stone: Head Accessory and 2 Restoration Stones: S-grade Head Accessory. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1195,8 +1195,8 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="STEEL" />
 		<capsuled_items>
-			<item id="22708" min="1" max="1" chance="100" /> <!-- Hair Accessory Appearance Stone -->
-			<item id="22882" min="1" max="1" chance="100" /> <!-- Hair Accessory Restoration Stone -->
+			<item id="22708" min="1" max="1" chance="100" /> <!-- Appearance Stone: Head Accessory -->
+			<item id="22882" min="1" max="1" chance="100" /> <!-- Restoration Stone: Head Accessory -->
 		</capsuled_items>
 	</item>
 	<item id="23377" name="Heavenly Treasure Chest" type="EtcItem">

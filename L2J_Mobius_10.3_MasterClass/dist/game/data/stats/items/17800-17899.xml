@@ -256,7 +256,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="17823" name="Life Stone: Hair Accessory" additionalName="Warrior" type="EtcItem">
-		<!-- Life Stone that can augment a hair accessory. Can attach a fighter-type option. -->
+		<!-- Life Stone for augmenting head accessories. Adds a Warrior property. -->
 		<set name="icon" val="icon.etc_mineral_general_i00" />
 		<set name="weight" val="2" />
 		<set name="commissionItemType" val="LIFE_STONE" />
@@ -265,7 +265,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17824" name="Life Stone: Hair Accessory" additionalName="Wizard" type="EtcItem">
-		<!-- Life Stone that can augment a hair accessory. Can attach a mystic-type option. -->
+		<!-- Life Stone for augmenting head accessories. Adds a Wizard property. -->
 		<set name="icon" val="icon.etc_mineral_general_i00" />
 		<set name="weight" val="2" />
 		<set name="commissionItemType" val="LIFE_STONE" />
@@ -700,7 +700,7 @@
 		</stats>
 	</item>
 	<item id="17842" name="Bound Requiem Dual Sword" type="Weapon">
-		<!-- 2 regular Soul Crystals and 1 special Soul Crystal can be inserted. When enchanted to +4, increases Critical Rate for standard attacks and P. Atk. Use Unbind Scroll to change it into a Standard item. -->
+		<!-- 2 common soul crystals and 1 special soul crystal can be inserted. When enchanted to +4, increases Critical Rate for basic attacks and P. Atk. Use Unbind Scroll to change it into a Standard item. -->
 		<set name="icon" val="icon.weapon_r_dualsword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -733,7 +733,7 @@
 		</stats>
 	</item>
 	<item id="17843" name="Bound Requiem Dual Dagger" type="Weapon">
-		<!-- 2 regular Soul Crystals and 1 special Soul Crystal can be inserted. When enchanted to +4, increases Critical Damage for standard attacks and P. Atk. Use Unbind Scroll to change it into a Standard item. -->
+		<!-- 2 common soul crystals and 1 special soul crystal can be inserted. When enchanted to +4, increases Critical Damage for basic attacks and P. Atk. Use Unbind Scroll to change it into a Standard item. -->
 		<set name="icon" val="icon.weapon_r_dualdagger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -945,7 +945,7 @@
 		</stats>
 	</item>
 	<item id="17852" name="Bound Immortal Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Light armor, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. -->
+		<!-- Light armor, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t502_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1053,7 +1053,7 @@
 		</stats>
 	</item>
 	<item id="17857" name="Bound Immortal Tunic" additionalName="Robe" type="Armor">
-		<!-- Robe, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Robe, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t503_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -1840,7 +1840,7 @@
 		</stats>
 	</item>
 	<item id="17886" name="Bound Twilight Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Light armor, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. -->
+		<!-- Light armor, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t602_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1948,7 +1948,7 @@
 		</stats>
 	</item>
 	<item id="17891" name="Bound Twilight Tunic" additionalName="Robe" type="Armor">
-		<!-- Robe, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Robe, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t603_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />

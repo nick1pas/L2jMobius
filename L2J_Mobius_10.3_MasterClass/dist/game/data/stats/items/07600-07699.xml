@@ -85,7 +85,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="7607" name="Coolant of the Repaired Wilma #3" type="EtcItem">
-		<!-- A cooling system of the Repaired Wilma #3 machine. -->
+		<!-- A cooling system of the repaired Wilma-3. -->
 		<set name="icon" val="icon.etc_mechanic_box_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -109,7 +109,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="7609" name="Corroded Mark of Fishing" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_ticket_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -917,7 +917,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7680" name="Raccoon Ears" type="Armor">
-		<!-- Hair accessory in the shape of raccoon ears -->
+		<!-- A head accessory shaped like raccoon ears. -->
 		<set name="icon" val="icon.accessory_racoon_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -943,7 +943,7 @@
 		<set name="commissionItemType" val="HAIR_ACCESSORY" />
 	</item>
 	<item id="7682" name="Maiden's Hairpin" type="Armor">
-		<!-- A hair accessory. Female only. -->
+		<!-- A head accessory. Female only. -->
 		<set name="icon" val="icon.accessory_maidens_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -959,7 +959,7 @@
 		</cond>
 	</item>
 	<item id="7683" name="Rabbit Ears" type="Armor">
-		<!-- Hair accessory in the shape of Rabbit Ears. -->
+		<!-- A head accessory shaped like rabbit ears. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1041,7 +1041,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="7690" name="Recipe: Outlaw's Eyepatch (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Outlaw s Eyepatch. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Outlaw's Eyepatch. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -1055,7 +1055,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="7691" name="Recipe: Maiden's Hairpin (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Maiden's Hairpin. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Maiden's Hairpin. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -1097,7 +1097,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="7694" name="Noblesse Tiara" type="Armor">
-		<!-- Hair accessory exclusively used by the Noblesse. -->
+		<!-- A head accessory exclusively for the Noblesse. -->
 		<set name="icon" val="icon.accessory_noblesse_tiara_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1113,7 +1113,7 @@
 		<set name="equip_condition" val="{{ec_nobless;1}}" />
 	</item>
 	<item id="7695" name="Forget-me-not Hairpin" type="Armor">
-		<!-- Hairpin with a forget-me-not flower pattern. Hair accessory exclusively for female characters. Used as ingredient for quest: One Who Faces the Limit. -->
+		<!-- A hairpin decorated with a forget-me-not flower. Female only. -->
 		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1129,7 +1129,7 @@
 		</cond>
 	</item>
 	<item id="7696" name="Daisy Hairpin" type="Armor">
-		<!-- Hairpin with a daisy pattern. Hair accessory exclusively for female characters. Used as ingredient for quest: One Who Faces the Limit. -->
+		<!-- A hairpin decorated with a daisy flower. Female only. -->
 		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1167,7 +1167,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7699" name="Recipe: Forget-me-not Hairpin (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Forget-me-not Hairpin. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Forget-me-not Hairpin. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />

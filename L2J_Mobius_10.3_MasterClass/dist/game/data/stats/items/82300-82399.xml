@@ -66,6 +66,7 @@
 		</skills>
 	</item>
 	<item id="82306" name="Gran Kain's Scroll: Enchant Talisman" type="EtcItem">
+		<!-- To enchant Heavenly Talisman and Epic Talisman. Through Gran Kain's power, in case of failure, the item is not crystallized, and its enchant value remains the same. -->
 		<set name="icon" val="icon.bm_shilen_scrl_of_talisman" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
@@ -344,6 +345,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82338" name="Dragon Light Cloak" type="Armor">
+		<!-- A cloak imbued with dragon power. When damage is taken, for 10 sec. P./ M. Def. +15%. (Fixed cooldown is 30 sec.) <font color=ff6666><Equipment effect></font> All stats +5 Received damage -15% Max HP and Max HP limit +20,000 Vitality bonus +10% Damage Reflection +10% Fixed Damage Resistance +10%. <Enchanting> Use Gran Kain's Scroll: Enchant Cloak. -->
 		<set name="icon" val="icon.nobless_cloak_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -362,13 +364,13 @@
 			<stat type="mDef">160</stat>
 		</stats>
 		<skills>
-			<skill id="36364" level="1" />
+			<skill id="36364" level="1" /> <!-- Cloak of Light Dragon: Basic Effect -->
 			<skill id="36365" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Dragon Light Cloak Enchant Effect -->
 			<skill id="36365" level="2" type="ON_ENCHANT" type_value="2" /> <!-- Dragon Light Cloak Enchant Effect -->
 			<skill id="36365" level="3" type="ON_ENCHANT" type_value="3" /> <!-- Dragon Light Cloak Enchant Effect -->
 			<skill id="36365" level="4" type="ON_ENCHANT" type_value="4" /> <!-- Dragon Light Cloak Enchant Effect -->
 			<skill id="36365" level="5" type="ON_ENCHANT" type_value="5" /> <!-- Dragon Light Cloak Enchant Effect -->
-			<skill id="36367" level="1" type="ON_EQUIP" />
+			<skill id="36367" level="1" type="ON_EQUIP" /> <!-- Cloak of Light Dragon -->
 		</skills>
 	</item>
 	<item id="82339" name="Einhasad's Red Pack" additionalName="Lv. 1" type="EtcItem">
@@ -404,6 +406,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82343" name="Artifact Book Augmenting Stone" type="EtcItem">
+		<!-- A mineral that has been petrified by some kind of physical or magical damage and dimensional anomalies. Key material for augmenting Improved and Unique Artifact Book. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.bm_renewal_mineral_artifact_book" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -413,6 +416,7 @@
 		<set name="weight" val="2" />
 	</item>
 	<item id="82344" name="Tales of Dimensions" type="EtcItem">
+		<!-- An item for charging Tales of Hero. Can be obtained through crafting or during monster hunting in the Conquest World and the Tower of Insolence. Double-click to use. -->
 		<set name="icon" val="icon.ev_hero_book_mineral" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
@@ -422,6 +426,7 @@
 		<set name="handler" val="HeroBook" />
 	</item>
 	<item id="82345" name="Tales of Aden" type="EtcItem">
+		<!-- An item for charging Tales of Hero. Double-click to use. -->
 		<set name="icon" val="icon.hero_book_mineral" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
@@ -431,6 +436,7 @@
 		<set name="handler" val="HeroBook" />
 	</item>
 	<item id="82346" name="Tales of Einhasad" type="EtcItem">
+		<!-- An item for charging Tales of Hero. Double-click to use. -->
 		<set name="icon" val="icon.bm_hero_book_mineral" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />
@@ -528,7 +534,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82356" name="Enhanced Rune Stone" type="EtcItem">
-		<!-- A stone that contains Einhasad's wisdom. Consumed when learning class skills. -->
+		<!-- A stone that contains Einhasad's wisdom. Required for learning some skills for each class. -->
 		<set name="icon" val="icon.skill_acquire_book_a2" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -746,6 +752,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82378" name="Shining Tales of Einhasad" type="EtcItem">
+		<!-- An item for charging Tales of Hero. Double-click to use. -->
 		<set name="icon" val="icon.bm_hero_book_mineral" />
 		<set name="material" val="PAPER" />
 		<set name="is_stackable" val="true" />

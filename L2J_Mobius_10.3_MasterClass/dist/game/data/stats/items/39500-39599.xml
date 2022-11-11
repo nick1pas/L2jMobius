@@ -220,7 +220,7 @@
 		</skills>
 	</item>
 	<item id="39517" name="Scroll of Escape: Secret Room" type="EtcItem">
-		<!-- Teleports you to Cerenas, who can let you knot Eva's Secret Room. -->
+		<!-- Teleports to Cerenas who can lead you to Eva's Secret Room. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i04" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
@@ -288,7 +288,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="39522" name="Weapon Pack" type="EtcItem">
-		<!-- Something Evna the weapon merchant has asked you to deliver to Sivanthe the forest patrol. -->
+		<!-- A pack that the weapon merchant Seira has asked you to deliver to Sivanthe. -->
 		<set name="icon" val="icon.etc_box_of_adventure_1_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -300,7 +300,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="39523" name="Armor Pack" type="EtcItem">
-		<!-- Something Denya the armor merchant has asked you to deliver to Sivanthe the forest patrol. -->
+		<!-- A pack that the armor merchant Denya has asked you to deliver to Sivanthe. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -312,7 +312,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="39524" name="Grocery Supply Box" type="EtcItem">
-		<!-- Something Pelu the grocer has asked you to deliver to Sivanthe the forest patrol. -->
+		<!-- A box that the grocer Pelu has asked you to deliver to Sivanthe. -->
 		<set name="icon" val="icon.etc_box_of_adventure_4_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -324,7 +324,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="39525" name="Accessory Supply Box" type="EtcItem">
-		<!-- Something Ceri the accessory merchant has asked you to deliver to Sivanthe the forest patrol. -->
+		<!-- A box the accessory merchant Ceri has asked you to deliver to Sivanthe. -->
 		<set name="icon" val="icon.etc_box_of_adventure_5_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -597,7 +597,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="39548" name="Empty Regeant Flask" type="EtcItem">
-		<!-- Empty Flask for Restoration Reagent. -->
+		<!-- An empty flask for the Recovery Elixir. -->
 		<set name="icon" val="icon.empty_bottle" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -702,7 +702,7 @@
 		</skills>
 	</item>
 	<item id="39556" name="Minstrel's Scroll of Escape: Rune" type="EtcItem">
-		<!-- A scroll given as a gift. Takes you to Town of Rune. -->
+		<!-- A scroll of escape from Minstrel Marmie. Teleports to Rune. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -759,7 +759,7 @@
 			<item id="39382" min="1" max="1" chance="15" /> <!-- Windy CHA Dye Lv. 2 - CHA +2 -->
 			<item id="39388" min="1" max="1" chance="5" /> <!-- Windy LUC Dye Lv. 3 - LUC +3 -->
 			<item id="39383" min="1" max="1" chance="5" /> <!-- Windy CHA Dye Lv. 3 - CHA +3 -->
-			<item id="39592" min="1" max="1" chance="50" /> <!-- Tempest Stone -->
+			<item id="39592" min="1" max="1" chance="50" /> <!-- Heavy Air Stone -->
 		</capsuled_items>
 	</item>
 	<item id="39561" name="Mid-grade Windy Dye Pack" type="EtcItem">
@@ -775,7 +775,7 @@
 		<capsuled_items>
 			<item id="39389" min="1" max="1" chance="50" /> <!-- Windy LUC Dye Lv. 4 - LUC +4 -->
 			<item id="39384" min="1" max="1" chance="50" /> <!-- Windy CHA Dye Lv. 4 - CHA +4 -->
-			<item id="39592" min="1" max="1" chance="30" /> <!-- Tempest Stone -->
+			<item id="39592" min="1" max="1" chance="30" /> <!-- Heavy Air Stone -->
 		</capsuled_items>
 	</item>
 	<item id="39562" name="High-grade Windy Dye Pack" type="EtcItem">
@@ -792,7 +792,7 @@
 		<capsuled_items>
 			<item id="39390" min="1" max="1" chance="50" /> <!-- Windy LUC Dye Lv. 5 - LUC +5 -->
 			<item id="39385" min="1" max="1" chance="50" /> <!-- Windy CHA Dye Lv. 5 - CHA +5 -->
-			<item id="39592" min="1" max="1" chance="10" /> <!-- Tempest Stone -->
+			<item id="39592" min="1" max="1" chance="10" /> <!-- Heavy Air Stone -->
 		</capsuled_items>
 	</item>
 	<item id="39563" name="Talisman of Wind Pack" type="EtcItem">
@@ -934,7 +934,7 @@
 		</skills>
 	</item>
 	<item id="39572" name="Talisman of Insanity" type="Armor">
-		<!-- Max HP/ MP/ CP +800, P./ M. Accuracy +2, P./ M. Evasion +2, Vampiric Rage effect +5%, Atk. Spd./ Casting Spd. +60, P. Critical Rate +30, M. Critical Rate +10, P. Atk. +638, M. Atk. +742, Skill Power +5%, Damage Reflection Resistance +30%, P. Def. +563, M. Def. +368, STR/ INT/ CON/ MEN/ DEX/ WIT/ CHA/ LUC +2, Fixed Damage Resistance +10%, Skill MP Consumption -3%, Skill Cooldown -3%. <Enhancing>. Can be compounded with Talisman of Insanity to obtain Heavenly Talisman. -->
+		<!-- Max HP/ MP/ CP +800, P./ M. Accuracy +2, P./ M. Evasion +2, Vampiric Rage effect +5%, Atk. Spd./ Casting Spd. +60, P. Critical Rate +30, M. Critical Rate +10, P. Atk. +638, M. Atk. +742, P./ M. Skill Power +5%, Damage Reflection Resistance +30%, P. Def. +563, M. Def. +368, STR/ INT/ CON/ MEN/ DEX/ WIT/ CHA/ LUC +2, Fixed Damage Resistance +10%, Skill MP Consumption -3%, Skill Cooldown -3%. <Enhancing> Can be compounded with Talisman of Insanity to obtain Heavenly Talisman. -->
 		<set name="icon" val="icon.accessory_punishment_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1050,7 +1050,7 @@
 		</skills>
 	</item>
 	<item id="39579" name="Scroll of Escape: Fields of Massacre" type="EtcItem">
-		<!-- Teleports you to Fields of Massacre. -->
+		<!-- Teleports you to the Fields of Massacre. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -1135,7 +1135,7 @@
 		</skills>
 	</item>
 	<item id="39584" name="Scroll of Escape: Goddard" type="EtcItem">
-		<!-- Teleports you to Town of Goddard. -->
+		<!-- Teleports to Goddard. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="material" val="PAPER" />
 		<set name="handler" val="ItemSkills" />
@@ -1169,7 +1169,7 @@
 		</skills>
 	</item>
 	<item id="39586" name="Scroll of Escape: Giran" type="EtcItem">
-		<!-- Teleports you to Town of Giran. -->
+		<!-- Teleports to Giran. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="material" val="PAPER" />
 		<set name="handler" val="ItemSkills" />
@@ -1243,7 +1243,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="39592" name="Tempest Stone" type="EtcItem">
-		<!-- A precious material gained by dissecting the world's elements. An alchemical material of the highest quality. Double-click to obtain one of the the following items: Low-/ Mid-/ High-grade Windy Dye Pack, Talisman of Wind Pack. -->
+		<!-- A precious material gained by dissecting the world's elements. An alchemical material of the highest quality. Double-click to obtain one of the following items: Low-/ Mid-/ High-grade Windy Dye Pack, Talisman of Wind Pack. -->
 		<set name="icon" val="icon.trace_of_wind2" />
 		<set name="is_stackable" val="true" />
 		<set name="etcitem_type" val="MATERIAL" />

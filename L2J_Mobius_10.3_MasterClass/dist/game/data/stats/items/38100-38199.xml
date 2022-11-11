@@ -12,7 +12,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38101" name="Leona's Scroll: 1,000,000 SP" type="EtcItem">
-		<!-- Double-click to obtain 1,000,000 SP. -->
+		<!-- SP +100. -->
 		<set name="icon" val="icon.etc_sp_scroll1_i00" />
 		<set name="weight" val="30" />
 		<set name="is_sellable" val="false" />
@@ -27,7 +27,7 @@
 		</skills>
 	</item>
 	<item id="38102" name="Leona's Scroll: 5,000,000 SP" type="EtcItem">
-		<!-- Double-click to obtain 5,000,000 SP. -->
+		<!-- SP +500. -->
 		<set name="icon" val="icon.etc_sp_scroll2_i00" />
 		<set name="weight" val="30" />
 		<set name="is_sellable" val="false" />
@@ -43,7 +43,7 @@
 		</skills>
 	</item>
 	<item id="38103" name="Leona's Scroll: 10,000,000 SP" type="EtcItem">
-		<!-- Double-click to obtain 10,000,000 SP. -->
+		<!-- SP +1000. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="weight" val="30" />
 		<set name="is_sellable" val="false" />
@@ -536,7 +536,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38161" name="Agathion Virgo Lv. 5" type="Armor">
-		<!-- Summons Agathion Virgo. <Active Skill>. 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine (Cooldown: 30 min.). <Item Skill>. 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/ Holy Atk. Rate +50 and Resistance +30. -->
+		<!-- Summons Agathion Virgo. <Active Skill> 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine (Cooldown: 30 min.) <Item Skill> 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN/ CHA/ LUC +1. 2. Attribute Enchant: Fire/ Water/ Earth/ Wind/ Dark/ Holy Atk. Rate +50 and Resistance +30. -->
 		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_aug_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -559,7 +559,7 @@
 		</skills>
 	</item>
 	<item id="38162" name="Agathion Virgo Lv. 4" type="Armor">
-		<!-- Summons Agathion Virgo. <Active Skill>. 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine (Cooldown: 30 min.). <Item Skill>. 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. 2. Enchanted Attribute Attack: Fire/ Water/ Earth/ Wind/ Dark/ Holy Atk. Rate +30. -->
+		<!-- Summons Agathion Virgo. <Active Skill> 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine (Cooldown: 30 min.) <Item Skill> 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. 2. Enchanted Attribute Attack: Fire/ Water/ Earth/ Wind/ Dark/ Holy Atk. Rate +30. -->
 		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_aug_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -582,7 +582,7 @@
 		</skills>
 	</item>
 	<item id="38163" name="Agathion Virgo Lv. 3" type="Armor">
-		<!-- A bracelet for summoning Agathion Virgo. <Active skill>. 1. Agathion Teleport: Teleports to Aden/ Rune/ Giran/ Heine. Cooldown: 30 min. <Item skills>. 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. 2. Attribute Resistance: Fire/ Water/ Earth/ Wind/ Dark/ Holy Resistance +30. -->
+		<!-- A bracelet for summoning Agathion Virgo. <Active skill> 1. Agathion Teleport: Teleports to Aden/ Rune/ Giran/ Heine. Cooldown: 30 min. <Item skills> 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. 2. Attribute Resistance: Fire/ Water/ Earth/ Wind/ Dark/ Holy Resistance +30. -->
 		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_aug_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -605,7 +605,7 @@
 		</skills>
 	</item>
 	<item id="38164" name="Agathion Virgo Lv. 2" type="Armor">
-		<!-- Summons Agathion Virgo. <Active Skill>. 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine. (Cooldown: 30min.). <Item Skill>. 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- Summons Agathion Virgo. <Active Skill> 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine. (Cooldown: 30min.) <Item Skill> 1. Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_aug_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -627,7 +627,7 @@
 		</skills>
 	</item>
 	<item id="38165" name="Agathion Virgo Lv. 1" type="Armor">
-		<!-- Summons Agathion Virgo. <Active Skill>. 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine. (Cooldown is 30min.) -->
+		<!-- Summons Agathion Virgo. <Active Skill> 1. Agathion Teleport: Teleports you to the Town of Aden/ Town of Rune/ Town of Giran/ Heine. (Cooldown is 30min.) -->
 		<set name="icon" val="BranchIcon.accessary_lbracelet_sign_agathion_aug_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -711,7 +711,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="38174" name="Samurai Long Sword Appearance Stone" type="EtcItem">
-		<!-- Changes the appearance of a one-handed sword to that of a Samurai Long Sword. -->
+		<!-- Changes the appearance of a one-handed sword to that of Samurai Long Sword. -->
 		<set name="icon" val="icon.shape_shifting_sword_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -721,7 +721,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38175" name="Apprentice's Spellbook Appearance Stone" type="EtcItem">
-		<!-- Changes the appearance of a magic sword to that of an Apprentice's Spellbook. -->
+		<!-- Changes the appearance of a magic sword to that of Apprentice' Spellbook. -->
 		<set name="icon" val="Icon.special_look_change_book" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -753,7 +753,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38178" name="Appearance Stone: Butcher Blades" additionalName="30-day" type="EtcItem">
-		<!-- Changes the appearance of dual daggers to that of Doll s Butcher Blades. 30-day. -->
+		<!-- Changes the appearance of dual daggers to that of Doll's Butcher Blades. 30-day. -->
 		<set name="icon" val="icon.shape_shifting_dualdagger_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -797,7 +797,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38182" name="Appearance Stone: Mardil's Wind" additionalName="30-day" type="EtcItem">
-		<!-- Changes the appearance of a magic sword to that of Mardil's Wind. 30-day. -->
+		<!-- Changes the appearance of a magic sword to that of Mardil's Wind. Available for 30 d. -->
 		<set name="icon" val="Icon.shape_shifting_magic_blunt_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -828,7 +828,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38185" name="Appearance Stone: Tiat's Tiatenon" type="EtcItem">
-		<!-- Turns the appearance of a one-handed blunt weapon into that of a Tiat's Tiatenon. -->
+		<!-- Changes the appearance of a one-handed blunt weapon to that of Tiat's Tiatenon. -->
 		<set name="icon" val="icon.shape_shifting_blunt_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -838,7 +838,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38186" name="Appearance Stone: Aenkinel's Astaroth" type="EtcItem">
-		<!-- Turns the appearance of a dual sword into that of a Aenkinel's Astaroth. -->
+		<!-- Changes the appearance of dual swords to that of Aenkinel's Astaroth. -->
 		<set name="icon" val="icon.shape_shifting_dual_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -868,7 +868,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38189" name="Blue Mackerel Appearance Stone: One-handed Sword" additionalName="30-day" type="EtcItem">
-		<!-- Changes the appearance of a one-handed sword to that of a Blue Mackerel for 30 days. -->
+		<!-- Changes the appearance of a one-handed sword to that of Blue Mackerel for 30 d. -->
 		<set name="icon" val="icon.shape_shifting_sword_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -879,7 +879,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38190" name="Trumpetfish Appearance Stone: Dagger" additionalName="30-day" type="EtcItem">
-		<!-- Turns the appearance of a one-handed dagger into that of a Trumpetfish. 30-day. -->
+		<!-- Changes the appearance of a dagger to that of Trimpetfish for 30 d. -->
 		<set name="icon" val="icon.shape_shifting_dagger_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -890,7 +890,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38191" name="Shark Appearance Stone: Two-handed Sword" additionalName="30-day" type="EtcItem">
-		<!-- Changes the appearance of a two-handed sword to that of a Shark for 30 days. -->
+		<!-- Changes the appearance of a two-handed sword to that of Shark for 30 d. -->
 		<set name="icon" val="icon.shape_shifting_twohand_sword_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -978,7 +978,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38199" name="Blue Mackerel Appearance Stone: Dual Sword" additionalName="30-day" type="EtcItem">
-		<!-- Turns the appearance of a dual sword into that of a Blue Mackerel. 30-day. -->
+		<!-- Changes the appearance of dual swords to that of Blue Mackerel for 30 d. -->
 		<set name="icon" val="icon.shape_shifting_dual_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />

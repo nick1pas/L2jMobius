@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="35000" name="Not used_Tauti Weapon" type="Weapon">
-		<!-- Weapon augmented from Tauti's Fragment. When equipped, can use Tauti's Wrath skill. When equipped, Atk. Spd. +15%, Critical Rate for standard attacks +150, Max HP +25%, and P. Atk. +415. Deals additional PvP damage. Enchantment, attribute, and augmentation are not allowed. Crystallization, 1 Soul Crystal can be used. -->
+		<!-- A weapon augmented from Tauti's Fragment. Enables the Tauti's Rage skill. Atk. Spd. +15%, Critical Rate for basic attacks +150, Max HP +25%, P. Atk. +415. Deals additional PvP damage. The item's appearance cannot be modified. Cannot be augmented or assigned an attribute. Can be crystallized. 1 special Soul Crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_tauti_two_hand_pole_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -31,7 +31,7 @@
 		</stats>
 	</item>
 	<item id="35001" name="Tauti's Dual Axe" type="Weapon">
-		<!-- A weapon made from Tauti's Fragments. PvP Damage +15%, Max HP +25%, P. Atk. +10%, Atk. Spd. +15%, Critical Rate for standard attacks +150. Additionally, enables the Tauti's Wrath skill. The item's appearance cannot be modified. Cannot be enchanted, augmented, crystallized, assigned an attribute. 1 special Soul Crystal can be inserted. <Enhancing>. Take the weapon along with Frenzied Tauti's Fragment and Tauti's Crystal to Ishuma in the Gludio Wharf to upgrade it to Frenzied Tauti's weapon. -->
+		<!-- A weapon made from Tauti's Fragments. PvP damage +15%, Max HP +25%, P. Atk. +10%, Atk. Spd. +15%, Critical Rate for basic attacks +150. Additionally, enables the Tauti's Rage skill. The item's appearance cannot be modified. Cannot be enchanted, augmented, crystallized, assigned an attribute. 1 special Soul Crystal can be inserted. <Enhancing> Take the weapon along with Frenzied Tauti's Fragment and Tauti's Crystal to Ishuma in the Gludio Wharf to upgrade it to Frenzied Tauti's weapon. -->
 		<set name="icon" val="icon.weapon_tauti_dual_axe_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -200,7 +200,7 @@
 		</stats>
 	</item>
 	<item id="35009" name="Dark Eternal Leather Armor" additionalName="Not used" type="Armor">
-		<!-- Received PvP damage -8%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. PvP Damage +1%. -->
+		<!-- Received PvP damage -8%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. PvP damage +1%. -->
 		<set name="icon" val="icon.armor_t812_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -321,7 +321,7 @@
 		</stats>
 	</item>
 	<item id="35014" name="Dark Eternal Tunic" additionalName="Reinforced robe" type="Armor">
-		<!-- Received PvP damage -8%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, decreases Received P. Critical Damage and Received P. Critical Rate. PvP Damage +1%. Can be augmented. -->
+		<!-- Received PvP damage -8%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. PvP damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t813_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -420,7 +420,7 @@
 		</stats>
 	</item>
 	<item id="35018" name="Dark Eternal Helmet" additionalName="Not used" type="Armor">
-		<!-- Received PvP Damage -3%. PvP Damage +1%. -->
+		<!-- Received PvP damage -3%, PvP damage +1%. -->
 		<set name="icon" val="icon.armor_helmet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -467,7 +467,7 @@
 		</stats>
 	</item>
 	<item id="35020" name="Dark Eternal Gaiters" additionalName="Not used" type="Armor">
-		<!-- Received PvP Damage -5%. PvP Damage +1%. -->
+		<!-- Received PvP damage -5%, PvP damage +1%. -->
 		<set name="icon" val="icon.armor_t811_l_i00" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -559,7 +559,7 @@
 		</stats>
 	</item>
 	<item id="35024" name="Dark Eternal Leather Armor" additionalName="Reinforced light armor" type="Armor">
-		<!-- Received PvP damage -8%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. PvP Damage +1%. Can be augmented. -->
+		<!-- Received PvP damage -8%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. PvP damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t812_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -680,7 +680,7 @@
 		</stats>
 	</item>
 	<item id="35029" name="Dark Eternal Tunic" additionalName="Not used" type="Armor">
-		<!-- Received PvP damage -8%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, decreases Received P. Critical Damage and Received P. Critical Rate. PvP Damage +1%. -->
+		<!-- Received PvP damage -8%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, decreases received Critical Damage from basic attacks and received Critical Rate from basic attacks. PvP damage +1%. -->
 		<set name="icon" val="icon.armor_t813_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -779,7 +779,7 @@
 		</stats>
 	</item>
 	<item id="35033" name="Bloody Eternal Helmet" additionalName="Reinforced heavy armor" type="Armor">
-		<!-- Received PvE Damage -3%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -3%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_helmet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -828,7 +828,7 @@
 		</stats>
 	</item>
 	<item id="35035" name="Bloody Eternal Gaiters" additionalName="Reinforced heavy armor" type="Armor">
-		<!-- Received PvE Damage -5%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -5%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t801_l_i00" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -853,7 +853,7 @@
 		</stats>
 	</item>
 	<item id="35036" name="Bloody Eternal Gauntlets" additionalName="Reinforced heavy armor" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t801_g_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -877,7 +877,7 @@
 		</stats>
 	</item>
 	<item id="35037" name="Bloody Eternal Boots" additionalName="Reinforced heavy armor" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t801_b_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -924,7 +924,7 @@
 		</stats>
 	</item>
 	<item id="35039" name="Bloody Eternal Leather Armor" additionalName="Not used" type="Armor">
-		<!-- Received PvE Damage -8%. PvE Damage +1%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, decreases Received P. Critical Rate. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, decreases received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t802_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1027,7 +1027,7 @@
 		</stats>
 	</item>
 	<item id="35043" name="Bloody Eternal Circlet" additionalName="Reinforced robe" type="Armor">
-		<!-- Received PvE Damage -3%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -3%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -1050,7 +1050,7 @@
 		</stats>
 	</item>
 	<item id="35044" name="Bloody Eternal Tunic" additionalName="Reinforced robe" type="Armor">
-		<!-- Received PvE Damage -8%. PvE Damage +1%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, decreases Received P. Critical Damage and Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -1078,7 +1078,7 @@
 		</stats>
 	</item>
 	<item id="35045" name="Bloody Eternal Stockings" additionalName="Reinforced robe" type="Armor">
-		<!-- Received PvE Damage -5%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -5%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_l_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -1105,7 +1105,7 @@
 		</stats>
 	</item>
 	<item id="35046" name="Bloody Eternal Gloves" additionalName="Reinforced robe" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_g_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -1129,7 +1129,7 @@
 		</stats>
 	</item>
 	<item id="35047" name="Bloody Eternal Shoes" additionalName="Reinforced robe" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_b_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -1275,7 +1275,7 @@
 		</stats>
 	</item>
 	<item id="35053" name="Bloody Eternal Leather Helmet" additionalName="Reinforced light armor" type="Armor">
-		<!-- Received PvE Damage -3%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -3%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_leather_helmet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -1298,7 +1298,7 @@
 		</stats>
 	</item>
 	<item id="35054" name="Bloody Eternal Leather Armor" additionalName="Reinforced light armor" type="Armor">
-		<!-- Received PvE Damage -8%. PvE Damage +1%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, decreases Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, decreases received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t802_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1326,7 +1326,7 @@
 		</stats>
 	</item>
 	<item id="35055" name="Bloody Eternal Leather Leggings" additionalName="Reinforced light armor" type="Armor">
-		<!-- Received PvE Damage -5%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -5%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t802_l_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1353,7 +1353,7 @@
 		</stats>
 	</item>
 	<item id="35056" name="Bloody Eternal Leather Gloves" additionalName="Reinforced light armor" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t802_g_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -1377,7 +1377,7 @@
 		</stats>
 	</item>
 	<item id="35057" name="Bloody Eternal Leather Boots" additionalName="Reinforced light armor" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Can be augmented. -->
 		<set name="icon" val="icon.armor_t802_b_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -1424,7 +1424,7 @@
 		</stats>
 	</item>
 	<item id="35059" name="Bloody Eternal Tunic" additionalName="Not used" type="Armor">
-		<!-- Received PvE Damage -8%. PvE Damage +1%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t803_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -1666,7 +1666,7 @@
 		</stats>
 	</item>
 	<item id="35070" name="Dark Eternal Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Received PvP damage -8%, PvP Damage +1%. Light Armor, can be enhanced by Blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, also decreases Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvP damage -8%, PvP damage +1%. Light armor, can be enhanced by a blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, also decreases received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t812_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1787,7 +1787,7 @@
 		</stats>
 	</item>
 	<item id="35075" name="Dark Eternal Tunic" additionalName="Robe" type="Armor">
-		<!-- Received PvP damage -8%. PvP Damage +1%. Robe, can be enhanced by Blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases Received P. Critical Damage and Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvP damage -8%, PvP damage +1%. Robe, can be enhanced by a blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t813_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -2031,7 +2031,7 @@
 		</stats>
 	</item>
 	<item id="35086" name="Bloody Eternal Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Received PvE Damage -8%, PvE Damage +1%. Light Armor, can be enhanced by Blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, also decreases Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. Light armor, can be enhanced by a blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, also decreases received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t802_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -2157,7 +2157,7 @@
 		</stats>
 	</item>
 	<item id="35091" name="Bloody Eternal Tunic" additionalName="Robe" type="Armor">
-		<!-- Received PvE Damage -8%. PvE Damage +1%. Robe, can be enhanced by Blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases Received P. Critical Damage and Received P. Critical Rate. Can be augmented. -->
+		<!-- Received PvE damage -8%, PvE damage +1%. Robe, can be enhanced by a blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -2212,7 +2212,7 @@
 		</stats>
 	</item>
 	<item id="35093" name="Bloody Eternal Gloves" additionalName="Robe" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Robe, can be enhanced by Blacksmith in any town. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Robe, can be enhanced by the Blacksmith in any town. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_g_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -2236,7 +2236,7 @@
 		</stats>
 	</item>
 	<item id="35094" name="Bloody Eternal Shoes" additionalName="Robe" type="Armor">
-		<!-- Received PvE Damage -2%. PvE Damage +1%. Robe, can be enhanced by Blacksmith in any town. Can be augmented. -->
+		<!-- Received PvE damage -2%, PvE damage +1%. Robe, can be enhanced by the Blacksmith in any town. Can be augmented. -->
 		<set name="icon" val="icon.armor_t803_b_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />

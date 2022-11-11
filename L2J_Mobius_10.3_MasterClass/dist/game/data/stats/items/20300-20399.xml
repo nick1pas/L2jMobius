@@ -412,7 +412,7 @@
 		</skills>
 	</item>
 	<item id="20321" name="Goggles" type="Armor">
-		<!-- A stylish goggle accessory with a fine silver decoration. Uses 1 hair accessory slot. -->
+		<!-- Stylish goggles with silver decorations. -->
 		<set name="icon" val="BranchSys.icon.br_goggles_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -610,7 +610,7 @@
 		</skills>
 	</item>
 	<item id="20333" name="Beast Spiritshot" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a pet/ servitor, temporarily increasing its M. Atk. Used from the master's inventory. -->
+		<!-- Increases pets'/ servitors' magic power. Very light. The required number of Spiritshots is shown in a pet's/ servitor's info window. (Used from the master's inventory.) -->
 		<set name="icon" val="BranchSys.icon.br_beast_spirit_shot_i00" />
 		<set name="default_action" val="SUMMON_SPIRITSHOT" />
 		<set name="immediate_effect" val="true" />
@@ -629,7 +629,7 @@
 		</skills>
 	</item>
 	<item id="20334" name="Blessed Beast Spiritshot" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a pet/ servitor, temporarily increasing its M. Atk. significantly. Used from the master's inventory. -->
+		<!-- Increases pets'/ servitors' magic power. Very light. The required number of Spiritshots is shown in a pet's/ servitor's info window. (Used from the master's inventory.) -->
 		<set name="icon" val="BranchSys.icon.br_blessed_beast_spirit_shot_i00" />
 		<set name="default_action" val="SUMMON_SPIRITSHOT" />
 		<set name="immediate_effect" val="true" />
@@ -648,7 +648,7 @@
 		</skills>
 	</item>
 	<item id="20335" name="XP Rune 30%" additionalName="5-hour" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +30%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +30%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -666,7 +666,7 @@
 		</skills>
 	</item>
 	<item id="20336" name="XP Rune 50%" additionalName="5-hour" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +50%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +50%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -684,7 +684,7 @@
 		</skills>
 	</item>
 	<item id="20337" name="XP Rune 30%" additionalName="10-hour" type="EtcItem">
-		<!-- Ancient characters which bestow a mysterious ability if stored in the inventory. Acquired XP +30%. The remaining time decreases even when not playing. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +30%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -702,7 +702,7 @@
 		</skills>
 	</item>
 	<item id="20338" name="XP Rune 50%" additionalName="10-hour" type="EtcItem">
-		<!-- Ancient characters which bestow a mysterious ability if stored in the inventory. Acquired XP +50%. The remaining time decreases even when not playing. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +50%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -720,7 +720,7 @@
 		</skills>
 	</item>
 	<item id="20339" name="XP Rune 30%" additionalName="7-day" type="EtcItem">
-		<!-- Ancient characters which bestow a mysterious ability if stored in the inventory. Acquired XP +30%. The remaining time decreases even when not playing. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +30%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -738,7 +738,7 @@
 		</skills>
 	</item>
 	<item id="20340" name="XP Rune 50%" additionalName="7-day" type="EtcItem">
-		<!-- Ancient characters which bestow a mysterious ability if stored in the inventory. Acquired XP +50%. The remaining time decreases even when not playing. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +50%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -864,7 +864,7 @@
 		</skills>
 	</item>
 	<item id="20347" name="Rune of Crystal Lv. 3" additionalName="5-hour" type="EtcItem">
-		<!-- Ancient charm that bestows a mysterious ability if stored in the inventory. Decreases the armor grade penalty allowing to wear it 3 levels earlier. The remaining time is spent even if the character is offline. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, decreases the armor grade penalty allowing to wear it 3 levels earlier. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_rp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -882,7 +882,7 @@
 		</skills>
 	</item>
 	<item id="20348" name="Rune of Crystal Lv. 5" additionalName="5-hour" type="EtcItem">
-		<!-- Ancient charm that bestows a mysterious ability if stored in the inventory. Decreases the armor grade penalty allowing to wear it 5 levels earlier. The remaining time is spent even if the character is offline. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, decreases the armor grade penalty allowing to wear it 5 levels earlier. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_rp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -900,7 +900,7 @@
 		</skills>
 	</item>
 	<item id="20349" name="Rune of Crystal Lv. 3" additionalName="10-hour" type="EtcItem">
-		<!-- Ancient charm that bestows a mysterious ability if stored in the inventory. Decreases the armor grade penalty allowing to wear it 3 levels earlier. The remaining time is spent even if the character is offline. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, decreases the armor grade penalty allowing to wear it 3 levels earlier. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_rp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -918,7 +918,7 @@
 		</skills>
 	</item>
 	<item id="20350" name="Rune of Crystal Lv. 5" additionalName="10-hour" type="EtcItem">
-		<!-- Ancient charm that bestows a mysterious ability if stored in the inventory. Decreases the armor grade penalty allowing to wear it 5 levels earlier. The remaining time is spent even if the character is offline. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, decreases the armor grade penalty allowing to wear it 5 levels earlier. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_rp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -936,7 +936,7 @@
 		</skills>
 	</item>
 	<item id="20351" name="Rune of Crystal Lv. 3" additionalName="7-day" type="EtcItem">
-		<!-- Ancient charm that bestows a mysterious ability if stored in the inventory. Decreases the armor grade penalty allowing to wear it 3 levels earlier. The remaining time is spent even if the character is offline. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, decreases the armor grade penalty allowing to wear it 3 levels earlier. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_rp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -954,7 +954,7 @@
 		</skills>
 	</item>
 	<item id="20352" name="Rune of Crystal Lv. 5" additionalName="7-day" type="EtcItem">
-		<!-- Ancient charm that bestows a mysterious ability if stored in the inventory. Decreases the armor grade penalty allowing to wear it 5 levels earlier. The remaining time is spent even if the character is offline. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, decreases the armor grade penalty allowing to wear it 5 levels earlier. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_rp_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -1951,7 +1951,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20399" name="Laborer Hat" additionalName="Blessed Body / 7-day" type="Armor">
-		<!-- Hat that was worn by Reipung. -->
+		<!-- A hat worn by Lei Feng. -->
 		<set name="icon" val="BranchSys.icon.br_people_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />

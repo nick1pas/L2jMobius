@@ -196,7 +196,7 @@
 		</skills>
 	</item>
 	<item id="14712" name="Cow Hair Accessory" type="Armor">
-		<!-- Hair accessory in the shape of a cow head. -->
+		<!-- A funny head accessory shaped like a cow. -->
 		<set name="icon" val="icon.Accessory2_cow_of_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -369,7 +369,7 @@
 		</skills>
 	</item>
 	<item id="14723" name="Event - Cupid's Major Fatigue Relief Potion" type="EtcItem">
-		<!-- Decreases fatigue when used on a cow. It Has a better effect than Cupid's Fatigue Relief Potion. -->
+		<!-- Recovers the Cow's energy. More effective than Cupid's Cure - Event. -->
 		<set name="icon" val="icon.etc_nutrients_of_cupid_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ELIXIR" />
@@ -585,7 +585,7 @@
 		</skills>
 	</item>
 	<item id="14740" name="Package: Save the Cow - Event" type="EtcItem">
-		<!-- Available only once every 12 h. per account. Double-click to obtain a summoning scroll and a Cupid's potion for the event. -->
+		<!-- Available once in 12 h. for 1 account. Double-click to obtain a summoning scroll and Cupid's Cure for the event. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -597,8 +597,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14722" min="60" max="60" chance="100" /> <!-- Event - Cupid's Fatigue Relief Potion -->
-			<item id="14723" min="15" max="15" chance="100" /> <!-- Event - Cupid's Major Fatigue Relief Potion -->
+			<item id="14722" min="60" max="60" chance="100" /> <!-- Event - Cupid's Cure -->
+			<item id="14723" min="15" max="15" chance="100" /> <!-- Event - Cupid's Enhanced Cure -->
 			<item id="14724" min="1" max="1" chance="100" /> <!-- Scroll: Summon Milk Cow - Event -->
 			<item id="14725" min="1" max="1" chance="100" /> <!-- Scroll: Summon Milk Cow Captain - Event -->
 		</capsuled_items>
@@ -675,7 +675,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="14746" name="Event - Refined Chick Hat" type="Armor">
-		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A funny hat shaped like a chicken. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -689,7 +689,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="14747" name="Event - Refined Black Feather Mask" type="Armor">
-		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. -->
+		<!-- A refined mask made from black feathers. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -703,7 +703,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="14748" name="Event - Refined Carnival Circlet" type="Armor">
-		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. -->
+		<!-- A refined carnival circlet. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -729,7 +729,7 @@
 		<set name="price" val="2000000" />
 	</item>
 	<item id="14750" name="Bamboo Hat" type="Armor">
-		<!-- Bamboo Hat. Uses 2 Hair Accessory slots. -->
+		<!-- A hat made of bulrush. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -754,7 +754,7 @@
 		<set name="price" val="2000000" />
 	</item>
 	<item id="14752" name="Event - Refined Medieval Party Mask" type="Armor">
-		<!-- Refined Medieval Party Mask. Uses 2 hair accessory slots. -->
+		<!-- A refined medieval mask. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -768,7 +768,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="14753" name="Shadow Item: Refined Chick Hat" additionalName="Escape" type="Armor">
-		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Can use the skill Blessed Escape after equipping. -->
+		<!-- A funny hat shaped like a chicken. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -786,7 +786,7 @@
 		</skills>
 	</item>
 	<item id="14754" name="Shadow Item: Refined Chick Hat" additionalName="Big Head" type="Armor">
-		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. -->
+		<!-- A funny hat shaped like a chicken. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -804,7 +804,7 @@
 		</skills>
 	</item>
 	<item id="14755" name="Shadow Item: Refined Chick Hat" additionalName="Firecracker" type="Armor">
-		<!-- Refined chick shaped hat. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. -->
+		<!-- A funny hat shaped like a chicken. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_chicken_cap2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -822,7 +822,7 @@
 		</skills>
 	</item>
 	<item id="14756" name="Shadow Item: Refined Black Feather Mask" additionalName="Escape" type="Armor">
-		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the skill Blessed Escape after equipping. -->
+		<!-- A refined Black Mask. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -840,7 +840,7 @@
 		</skills>
 	</item>
 	<item id="14757" name="Shadow Item: Refined Black Feather Mask" additionalName="Big Head" type="Armor">
-		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. -->
+		<!-- A refined Black Mask. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -858,7 +858,7 @@
 		</skills>
 	</item>
 	<item id="14758" name="Shadow Item: Refined Black Feather Mask" additionalName="Firecracker" type="Armor">
-		<!-- Refined Black Feather Mask. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. -->
+		<!-- A refined Black Mask. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_black_feather_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -876,7 +876,7 @@
 		</skills>
 	</item>
 	<item id="14759" name="Shadow Item: Refined Carnival Circlet" additionalName="Escape" type="Armor">
-		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the skill Blessed Escape after equipping. -->
+		<!-- Refined Carnival Circlet. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -894,7 +894,7 @@
 		</skills>
 	</item>
 	<item id="14760" name="Shadow Item: Refined Carnival Circlet" additionalName="Big Head" type="Armor">
-		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. -->
+		<!-- Refined Carnival Circlet. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -912,7 +912,7 @@
 		</skills>
 	</item>
 	<item id="14761" name="Shadow Item: Refined Carnival Circlet" additionalName="Firecracker" type="Armor">
-		<!-- Refined Carnival Circlet. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. -->
+		<!-- Refined Carnival Circlet. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_carnival_circlet2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -930,7 +930,7 @@
 		</skills>
 	</item>
 	<item id="14762" name="Shadow Item: Refined Medieval Party Mask" additionalName="Escape" type="Armor">
-		<!-- Refined Medieval Party Mask. Uses 2 hair accessory slots. Can use the skill Blessed Escape after equipping. -->
+		<!-- A refined Party Mask. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -948,7 +948,7 @@
 		</skills>
 	</item>
 	<item id="14763" name="Shadow Item: Refined Medieval Party Mask" additionalName="Big Head" type="Armor">
-		<!-- Refined Medieval Party Mask. Uses 2 hair accessory slots. Can use the head enlarging skill after equipping. -->
+		<!-- A refined Party Mask. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -966,7 +966,7 @@
 		</skills>
 	</item>
 	<item id="14764" name="Shadow Item: Refined Medieval Party Mask" additionalName="Firecracker" type="Armor">
-		<!-- Refined Medieval Party Mask. Uses 2 hair accessory slots. Can use the fireworks skill after equipping. -->
+		<!-- A refined Party Mask. Equipped in 2 head accessory slots. Item with a magic effect. -->
 		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1015,7 +1015,7 @@
 		</skills>
 	</item>
 	<item id="14767" name="White Day's Candy Basket" type="EtcItem">
-		<!-- Candy basket to show how you feel on Valentine's Day. Contains 1 Valentine's Day Candy. Can receive a bonus limited item (Kat the Cat Hat, Agathion Love) occasionally. -->
+		<!-- A basket filled with sweets. Double-click to obtain 1 White Day's Candy. There is also a chance to get some time-limited items (Kat the Cat Hat, Agathion Love). -->
 		<set name="icon" val="icon.etc_candy_basket_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1046,7 +1046,7 @@
 		</capsuled_items>
 	</item>
 	<item id="14769" name="White Day's Candy" type="EtcItem">
-		<!-- Valentine's Day Candy filled with love. Replenishes some Vitality upon use. Cooldown is 60 min. Vitality item with limited usage. -->
+		<!-- White Day's Candy filled with love. When used, recovers some Vitality. Cooldown: 60 min. Time-limited Vitality item. -->
 		<set name="icon" val="icon.etc_whiteday_candy_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -1079,7 +1079,7 @@
 		</skills>
 	</item>
 	<item id="14771" name="Kat the Cat Hat" additionalName="14-day" type="Armor">
-		<!-- Uses 2 hair accessory slots. 14-day. Cannot be restored once deleted. -->
+		<!-- Equipped in 2 head accessory slots. Available for 14 d. Cannot be restored once deleted. -->
 		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1091,7 +1091,7 @@
 		<set name="time" val="20160" />
 	</item>
 	<item id="14772" name="Coronet" type="Armor">
-		<!-- A hair accessory worn by a bride at her wedding ceremony. Female only. Uses 2 hair accessory slots. Cannot be restored once deleted. -->
+		<!-- A bride's head accessory. Female only. Equipped in 2 head accessory slots. Cannot be restored once deleted. -->
 		<set name="icon" val="icon.accessory_flower_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1106,7 +1106,7 @@
 		</cond>
 	</item>
 	<item id="14773" name="Formal Wear" additionalName="14-day" type="Armor">
-		<!-- Tuxedo for men, and a wedding dress for women. Equipping this disables armor. Hair accessories, weapons, and robes remain equipped. 14-day. Cannot be restored once deleted. -->
+		<!-- A tuxedo for men, and a wedding dress for women. Equipping this disables armor. Headgear, weapons and accessories remain equipped. Available for 14 d. Cannot be restored once deleted. -->
 		<set name="icon" val="icon.armor_t2000_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="MAGIC" />
@@ -1149,7 +1149,7 @@
 		</stats>
 	</item>
 	<item id="14775" name="Agathion Love" additionalName="14-day" type="Armor">
-		<!-- Can summon a Love Agathion when equipped. 14-day. Cannot be restored once deleted. -->
+		<!-- Summons Agathion Love. Available for 14 d. Cannot be restored once deleted. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1166,7 +1166,7 @@
 		</skills>
 	</item>
 	<item id="14776" name="Agathion Chuchu" additionalName="14-day" type="Armor">
-		<!-- Summons Agathion Chuchu. Duration: 14 d. Cannot be restored once deleted. -->
+		<!-- Summons Agathion Chuchu. Available for 14 d. Cannot be restored once deleted. -->
 		<set name="icon" val="icon.high_agathion_bracelet_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1218,7 +1218,7 @@
 		</skills>
 	</item>
 	<item id="14780" name="Baguette's Bread Sword" type="Weapon">
-		<!-- Sword made of bread. Contains Baguette's joy. -->
+		<!-- A sword made of bread. -->
 		<set name="icon" val="icon.weapon_samurai_longsword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1237,7 +1237,7 @@
 		</stats>
 	</item>
 	<item id="14781" name="Baguette's Dagger" type="Weapon">
-		<!-- Dagger made of bread. Contains Baguette's tears. -->
+		<!-- A dagger made of bread. -->
 		<set name="icon" val="icon.weapon_dagger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -1256,7 +1256,7 @@
 		</stats>
 	</item>
 	<item id="14782" name="Baguette Two-handed Sword" type="Weapon">
-		<!-- A two-handed sword made of bread. Contains the passion of Baguette. -->
+		<!-- A two-handed sword made of bread. -->
 		<set name="icon" val="icon.weapon_two_handed_sword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1294,7 +1294,7 @@
 		</stats>
 	</item>
 	<item id="14784" name="Baguette's Two-handed Hammer" type="Weapon">
-		<!-- Hammer made of bread. Can feel Baguette's melancholy. -->
+		<!-- A two-handed hammer made of bread. -->
 		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -1333,7 +1333,7 @@
 		</stats>
 	</item>
 	<item id="14786" name="Baguette's Bow" type="Weapon">
-		<!-- Bow made of bread. Can feel Baguette's vigorous energy. -->
+		<!-- A bow made of bread. -->
 		<set name="icon" val="icon.weapon_short_bow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -1354,7 +1354,7 @@
 		</stats>
 	</item>
 	<item id="14787" name="Baguette's Fist" type="Weapon">
-		<!-- Fist weapon made of bread. Can feel Baguette's persevering disposition. -->
+		<!-- A fist weapon made of bread. -->
 		<set name="icon" val="icon.weapon_foxs_nail_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -1374,7 +1374,7 @@
 		</stats>
 	</item>
 	<item id="14788" name="Baguette's Magic Sword" type="Weapon">
-		<!-- Magic sword made of bread. Contains Baguette's madness. -->
+		<!-- A magic sword made of bread. -->
 		<set name="icon" val="icon.weapon_samurai_longsword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1394,7 +1394,7 @@
 		</stats>
 	</item>
 	<item id="14789" name="Baguette's Staff" type="Weapon">
-		<!-- Staff made of bread. Contains Baguette's wisdom. -->
+		<!-- A staff made of bread. -->
 		<set name="icon" val="icon.weapon_apprentices_wand_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1415,7 +1415,7 @@
 		</stats>
 	</item>
 	<item id="14790" name="Baguette's Two-handed Staff" type="Weapon">
-		<!-- Two-handed staff made of bread. Contains Baguette's tears. -->
+		<!-- A two-handed staff made of bread. -->
 		<set name="icon" val="icon.weapon_willow_staff_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1438,7 +1438,7 @@
 		</stats>
 	</item>
 	<item id="14791" name="Baguette's Shield" type="Armor">
-		<!-- Shield made of bread. Can feel Baguette's sorrow. -->
+		<!-- A shield made of bread. -->
 		<set name="icon" val="icon.shield_leather_shield_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lhand" />
@@ -1481,7 +1481,7 @@
 		</stats>
 	</item>
 	<item id="14793" name="Baguette's Ancient Sword" type="Weapon">
-		<!-- Ancient Sword made of bread. Can feel Baguette's regret. -->
+		<!-- An ancient sword made of bread. -->
 		<set name="icon" val="icon.weapon_tulwar_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="ANCIENTSWORD" />
@@ -1529,7 +1529,7 @@
 		</stats>
 	</item>
 	<item id="14795" name="Baguette's Dual Swords" type="Weapon">
-		<!-- A dual sword made of bread. Contains the great power of Baguette. -->
+		<!-- Dual swords made of bread. -->
 		<set name="icon" val="icon.weapon_dual_sword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />
@@ -1566,7 +1566,7 @@
 		</stats>
 	</item>
 	<item id="14797" name="Baguette's Dual Daggers" type="Weapon">
-		<!-- Two-handed dagger made of bread. Can feel Baguette's sharpness. -->
+		<!-- Dual daggers made of bread. -->
 		<set name="icon" val="icon.dual_dagger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALDAGGER" />

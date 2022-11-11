@@ -9,7 +9,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29501" name="Freya's Appearance" type="Armor">
-		<!-- Freya's appearance. -->
+		<!-- Freya's Outfit -->
 		<set name="icon" val="BranchIcon.Icon.g_bm_costume_freya" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -53,7 +53,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29505" name="Freya's Fortune Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Ultimate Jewelry Box Lv. 4/ Lv. 5, Lindvior's Earring, Blessed Valakas' Necklace, Blessed Antharas' Earring, Mystic Soul Crystal, Sealed Talisman of Insanity/ Longing, Red Starlight Jar, Ancient Zodiac Agathion Charm Book of Growth, Mystic Soul Crystal Fragment, Life Stone: Giant's Power, Royal R99-grade White Save Ticket, Package: Lesser Giant's Lucky Enchant Stone: R-grade Weapon/ Armor, R99-grade Scroll of Blessing, Freya's Rune (30-day) Box, Apparition Stone (All-purpose), Life Stone: Giant's Power, Giant's Energy 100-unit Pack, Superior Giant's Codex - Mastery (2 pcs.)/ Mastery Chapter 1, Source of the Emperor, Package: Eva's Rune (3-day) - Event, Pa'agrio's Blessing Might (5 pcs.), Freya's Art of Seduction Barrier (5 pcs.). -->
+		<!-- Double-click to obtain one of the following items: Ultimate Jewelry Box Lv. 4/ Lv. 5, Lindvior's Earring, Blessed Valakas' Necklace, Blessed Antharas' Earring, Mystic Soul Crystal, Sealed Talisman of Insanity/ Longing, Red Starlight Jar, Ancient Zodiac Agathion Charm Book of Growth, Mystic Soul Crystal Fragment, Life Stone: Giant's Power, Royal R99-grade White Save Ticket, Package: Lesser Giant's Stone: Enchant R-grade Weapon/ Armor, R99-grade Scroll of Blessing, Freya's Rune (30-day) Box, Apparition Stone (All-purpose), Life Stone: Giant's Power, Giant's Energy 100-unit Pack, Superior Giant's Codex - Mastery (2 pcs.)/ Mastery Chapter 1, Source of the Emperor, Package: Eva's Rune (3-day) - Event, Pa'agrio's Blessing Might (5 pcs.), Freya's Art of Seduction Barrier (5 pcs.). -->
 		<set name="icon" val="icon.bm_freya_gift_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -109,7 +109,7 @@
 		<set name="time" val="10080" />
 	</item>
 	<item id="29511" name="Rookie Box" type="EtcItem">
-		<!-- Pack containing items for new heroes. Double-click to obtain Nevit's Rune (Dragon's Ascension) - 7 days, Freya's Art of Seduction - EXP (10 pcs.), Dandy's Home Run Ball (3 pcs.), Hero's Mark (250 pcs.), Hero's Support Cube, New User Sprout (30-day). -->
+		<!-- Double-click to obtain Nevit's Rune (Dragon's Ascension) - 7-day, Freya's Art of Seduction - XP (10 pcs.), Dandy's Home Run Ball (3 pcs.), Hero's Mark (250 pcs.), Hero's Support Cube, New User Sprout (30-day). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -143,7 +143,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29514" name="Festival Ticket" type="EtcItem">
-		<!-- Ticket to participate in the Festival. -->
+		<!-- Required for participating in the Festival. -->
 		<set name="icon" val="BranchSys2.Icon.br_weddin_ticket_i00" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
@@ -157,7 +157,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29516" name="Golden Mermaid Bait (85)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 85. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 85. -->
 		<set name="icon" val="icon.bm_silver_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -169,7 +169,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29517" name="Golden Mermaid Bait (95)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 95. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 95. -->
 		<set name="icon" val="icon.bm_silver_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -181,7 +181,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29518" name="Golden Mermaid Bait (99)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 99. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 99. -->
 		<set name="icon" val="icon.bm_silver_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -193,7 +193,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29519" name="Golden Mermaid Bait (105)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 105. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 105. -->
 		<set name="icon" val="icon.bm_silver_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -205,7 +205,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29520" name="Special Golden Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Sayha's Talisman Pack Lv. 8, Radiant Circlet Upgrade Stone, Radiant Rind Upgrade Stone, +7 T-shirt Pack (Shiny Elemental/ Physical Reflect/ Magical Reflect), Red Starlight Jar, Dark/ Bloody Weapon Enhancement Stone, Royal R99-grade Purple/ Red/ White Save Ticket, High-grade/ Mid-grade/ Low-grade Zodiac Agathion Box, Destruction Scroll: Enchant Elemental Shirt, Stable/ Ancient Zodiac Agathion Charm Book of Growth, Soul Crystal Box Lv. 5-7, Dark/ Bloody Armor Enhancement Stone, Royal R95-grade Purple/ Red/ White Save Ticket, Ultimate Fortune Jewelry Box, Elcyum, Tempest Stone, Shining Nevit's Gold Hourglass, Blessed Scroll: Enchant R-grade Weapon, Gale Scroll, Giant's Scroll: Enchant R-grade Weapon, Energy of Destruction Pack (20 pcs.), Elcyum Crystal, R-grade Gemstone (7 pcs.). -->
+		<!-- Double-click to obtain one of the following items: Sayha's Talisman Pack Lv. 8, Radiant Circlet Upgrade Stone, Radiant Rind Upgrade Stone, +7 T-shirt Pack (Shiny Elemental/ Physical Reflect/ Magical Reflect), Red Starlight Jar, Dark/ Bloody Weapon Enhancement Stone, Royal R99-grade Purple/ Red/ White Save Ticket, High-grade/ Mid-grade/ Low-grade Zodiac Agathion Box, Destruction Scroll: Enchant Elemental Shirt, Stable/ Ancient Zodiac Agathion Charm Book of Growth, Soul Crystal Box Lv. 5-7, Dark/ Bloody Armor Enhancement Stone, Royal R95-grade Purple/ Red/ White Save Ticket, Ultimate Fortune Jewelry Box, Elcyum, Heavy Air Stone, Shining Nevit's Gold Hourglass, Blessed Scroll: Enchant R-grade Weapon, Gale Scroll, Giant's Scroll: Enchant R-grade Weapon, Energy of Destruction Pack (20 pcs.), Elcyum Crystal, R-grade Gemstone (7 pcs.). -->
 		<set name="icon" val="icon.bm_pirate_treasure_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -213,7 +213,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29521" name="Golden Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain 3 Heine Fishing Coins and for a chance to obtain a Special Golden Treasure Chest. -->
+		<!-- Double-click to obtain 3 Heine Fishing Coins. There is also a chance to obtain Special Golden Treasure Chest. -->
 		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -247,11 +247,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<capsuled_items>
-			<item id="29522" min="1" max="1" chance="100" /> <!-- High-grade Maphr's Rune 100% - 30-day -->
+			<item id="29522" min="1" max="1" chance="100" /> <!-- Maphr's Rune 300% - 1-hour -->
 		</capsuled_items>
 	</item>
 	<item id="29524" name="+3 Dragon Earring Box" type="EtcItem">
-		<!-- Double-click to obtain Dragon Earring enchanted to +3. -->
+		<!-- Double-click to obtain Dragon's Earring enchanted to +3. -->
 		<set name="icon" val="icon.etc_ev_kalie_treasure_box" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -293,7 +293,7 @@
 		</capsuled_items>
 	</item>
 	<item id="29527" name="Golden Mermaid Bait (102)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 102. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Golden Treasure Chests. Can be used only above level 102. -->
 		<set name="icon" val="icon.bm_silver_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -321,7 +321,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29530" name="Lucky Growth Scroll" additionalName="Event" type="EtcItem">
-		<!-- For 30 min., Acquired XP/ SP +30%, Vitality Bonus +30%, P./ M. Atk. and P./ M. Def. +30%. -->
+		<!-- When used for 30 min., acquired XP/ SP +30%, Vitality bonus +30%, P. Atk./ M. Atk./ P. Def./ M. Def. +30%. -->
 		<set name="icon" val="icon.etc_charm_of_luck_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -379,7 +379,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29536" name="Blazing Sun Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Ring of the Truth-Seeker, Ruler's Ring of Authority, +10 Fallen Angel's Ring Box, +5 Dragon Rind Leather Shirt Box, Sayha's Talisman Pack Lv. 8, Talisman of Seven Signs, Radiant Circlet Upgrade Stone, Sayha's Talisman Pack Lv. 7, Radiant Rind Upgrade Stone, +8 Shiny Elemental Shirt Pack, +8 Physical Reflect Shirt Pack, +8 Magical Reflect Shirt Pack, Noble Circlet Upgrade Stone, Noble Leather Upgrade Stone, Sayha's Energy/ Blessing, Destruction Scroll: Enchant Elemental Shirt, Venir's Talisman Lv. 11, Giant's Energy 100-unit Pack, Giant's Energy 20-unit Pack, Angel's Necklace/ Earring, Superior Giant's Codex - Mastery Chapter 1, Blessed Scroll: Enchant Elemental Shirt x3, Circlet Spirit Stone, Shirt Pack, Forgotten Spellbook Chapter 1, Rune Stone x2, Superior Giant's Codex - Chapter 1, Superior Giant's Codex - Mastery, Sayha's Talisman Pack, Energy of Destruction 20-unit Pack, Freya's Dark/ Bloody Rune Pack (2-hour), Elcyum Crystal. -->
+		<!-- Double-click to obtain one of the following items: Ring of Truth-seeker, Ruler's Ring of Authority, +10 Fallen Angel's Ring Box, +5 Dragon Rind Leather Shirt Box, Sayha's Talisman Pack Lv. 8, Talisman of Seven Signs, Radiant Circlet Upgrade Stone, Sayha's Talisman Pack Lv. 7, Radiant Rind Upgrade Stone, +8 Shiny Elemental Shirt Pack, +8 Physical Reflect Shirt Pack, +8 Magical Reflect Shirt Pack, Noble Circlet Upgrade Stone, Noble Leather Upgrade Stone, Sayha's Energy/ Blessing, Destruction Scroll: Enchant Elemental Shirt, Venir's Talisman Lv. 11, Giant's Energy 100-unit Pack, Giant's Energy 20-unit Pack, Angel's Necklace/ Earring, Superior Giant's Codex - Mastery Chapter 1, Blessed Scroll: Enchant Elemental Shirt x3, Circlet Spirit Stone, Shirt Pack, Forgotten Spellbook Chapter 1, Rune Stone x2, Superior Giant's Codex - Chapter 1, Superior Giant's Codex - Mastery, Sayha's Talisman Pack, Energy of Destruction 20-unit Pack, Freya's Dark/ Bloody Rune Pack (2-hour), Elcyum Crystal. -->
 		<set name="icon" val="icon.bm_pirate_battle_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -419,14 +419,14 @@
 		</stats>
 	</item>
 	<item id="29539" name="Dragon Power Crystal" type="EtcItem">
-		<!-- A stone imbued with arcane power of Dragons. Required for crafting Dragon Augmenting Stone. -->
+		<!-- A rare crystal imbued with dark energy. Required for creating Dark Augmenting Stone. -->
 		<set name="icon" val="icon.bm_piece_of_ensoul_stone" />
 		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29540" name="Mammon's Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain a random item. -->
+		<!-- Double-click to obtain a useful item. -->
 		<set name="icon" val="icon.bm_2018_special_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -474,7 +474,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29546" name="Enhanced La Vie En Rose's Brooch" type="Armor">
-		<!-- Unlocks 6 jewel slots. Inventory Slots +12. <Enchanting>. Use Blessed Scroll: Enchant Brooch. <Enhancing>. Take La Vie En Rose's Brooch enchanted to +5 to Head Blacksmith in any town to get Superior La Vie En Rose's Brooch. Can be augmented. -->
+		<!-- Unlocks 6 jewel slots. Inventory slots +12. <Enchanting> Use Blessed Scroll: Enchant Brooch. <Upgrading> Take La Vie En Rose's Brooch enchanted to +5 to Head Blacksmith in any town to get Superior La Vie En Rose's Brooch. Can be augmented. -->
 		<set name="icon" val="icon.bm_brooch_6slot_lavianrose_4" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -497,7 +497,7 @@
 		</stats>
 	</item>
 	<item id="29547" name="Superior La Vie En Rose's Brooch" type="Armor">
-		<!-- Unlocks 6 jewel slots. Inventory Slots +12. <Enchanting>. Use Blessed Scroll: Enchant Brooch. Can be augmented. -->
+		<!-- Unlocks 6 jewel slots. Inventory slots +12. <Enchanting> Use Blessed Scroll: Enchant Brooch. Can be augmented. -->
 		<set name="icon" val="icon.bm_brooch_6slot_lavianrose_5" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -525,7 +525,7 @@
 		</stats>
 	</item>
 	<item id="29548" name="Blessed Scroll: Enchant Brooch" type="EtcItem">
-		<!-- A scroll for enchanting Enhanced La Vie En Rose's Brooch and Superior La Vie En Rose's Brooch. In case of failure, enchant value of La Vie En Rose's Brooch is reset, but its type is unchanged. -->
+		<!-- A scroll for enchanting Enhanced La Vie En Rose's Brooch and Superior La Vie En Rose's Brooch. In case of failure, the enchant value of La Vie En Rose's Brooch is reset, but its type remains the same. -->
 		<set name="icon" val="icon.bm_blessed_scrl_of_ench_brooch" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
@@ -603,7 +603,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29556" name="Requiem Guardian Fortune Box" type="EtcItem">
-		<!-- Double-click to obtain Requiem Shooter with a 60% chance. In case of failure you will get nothing. -->
+		<!-- Double-click to obtain Requiem Guardian with a 60% chance. In case of failure you will get nothing. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -882,7 +882,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29587" name="Apocalypse Guardian Fortune Box" type="EtcItem">
-		<!-- Double-click to obtain Apocalypse Shooter with a 60% chance. In case of failure you will get nothing. -->
+		<!-- Double-click to obtain Apocalypse Guardian with a 60% chance. In case of failure you will get nothing. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />

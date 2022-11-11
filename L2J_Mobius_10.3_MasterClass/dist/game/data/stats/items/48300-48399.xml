@@ -26,7 +26,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="48303" name="Resolute Raid Point Rune (2-hour) Box" type="EtcItem">
-		<!-- Raid Point Rune box that can be obtained with Clan Point Tokens. Double-click to obtain a Resolute Raid Point Rune (2-hour) that increases Raid Points gained by 100%. -->
+		<!-- A special chest that can be obtained with Clan Point Tokens. Double-click to obtain Challenge Rune (2-hour) that increases Raid Points obtained by 100%. -->
 		<set name="icon" val="BranchSys.icon.br_fortuna_cube_s_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -36,7 +36,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48304" min="1" max="1" chance="100" /> <!-- Resolute Raid Point Rune -->
+			<item id="48304" min="1" max="1" chance="100" /> <!-- Challenge Rune - Raid Points - 2-hour -->
 		</capsuled_items>
 	</item>
 	<item id="48304" name="Resolute Raid Point Rune" additionalName="2-hour" type="EtcItem">
@@ -53,7 +53,7 @@
 		</skills>
 	</item>
 	<item id="48305" name="Blessed Antharas' Earring - Shield" additionalName="30-day" type="Armor">
-		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Earth/ Holy Resistance +30, Infection Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Stun debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect>. P. Def. +4% -->
+		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Holy/ Earth Resistance +30, Infection Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Shock debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> P. Def. +4% -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -75,7 +75,7 @@
 		</stats>
 	</item>
 	<item id="48306" name="Blessed Antharas' Earring - Earth" additionalName="30-day" type="Armor">
-		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Earth/ Holy Resistance +30, Infection Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Stun debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect>. M. Def. +4% -->
+		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Holy/ Earth Resistance +30, Infection Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Shock debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> M. Def. +4% -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -97,7 +97,7 @@
 		</stats>
 	</item>
 	<item id="48307" name="Blessed Antharas' Earring - Pure" additionalName="30-day" type="Armor">
-		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Earth/ Holy Resistance +30, Infection Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Stun debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect>. 6 Attribute Resistance +25 -->
+		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Holy/ Earth Resistance +30, Infection Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Shock debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> 6 Attribute Resistance +25 -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -119,7 +119,7 @@
 		</stats>
 	</item>
 	<item id="48308" name="Blessed Valakas' Necklace - Body" additionalName="30-day" type="Armor">
-		<!-- MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Resistance/ Atk. Rate +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. <Special effect>. Max HP +5% -->
+		<!-- MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Atk. Rate and Resistance +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. <Special effect> Max HP +5% -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -141,7 +141,7 @@
 		</stats>
 	</item>
 	<item id="48309" name="Blessed Valakas' Necklace - Mind" additionalName="30-day" type="Armor">
-		<!-- MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Resistance/ Atk. Rate +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. Cannot be used in the Olympiad. <Special effect>. Skill Cooldown -3% -->
+		<!-- MP +79, Max HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Atk. Rate and Resistance +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. <Special effect> Skill Cooldown -3% -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -163,7 +163,7 @@
 		</stats>
 	</item>
 	<item id="48310" name="Blessed Valakas' Necklace - Barrier" additionalName="30-day" type="Armor">
-		<!-- MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Resistance/ Atk. Rate +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. Cannot be used in the Olympiad. <Special effect>. Fixed Damage Resistance +5% -->
+		<!-- MP +79, Max HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Atk. Rate and Resistance +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. Cannot be used in the Olympiad. <Special effect> Fixed Damage Resistance +5% -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -185,7 +185,7 @@
 		</stats>
 	</item>
 	<item id="48311" name="Lindvior's Earring - Shield" additionalName="30-day" type="Armor">
-		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect>. P. Def. +4% -->
+		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> P. Def. +4% -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -207,7 +207,7 @@
 		</stats>
 	</item>
 	<item id="48312" name="Lindvior's Earring - Earth" additionalName="30-day" type="Armor">
-		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect>. M. Def. +4% -->
+		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> M. Def. +4% -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -229,7 +229,7 @@
 		</stats>
 	</item>
 	<item id="48313" name="Lindvior's Earring - Pure" additionalName="30-day" type="Armor">
-		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect>. 6 Attribute Resistance +25 -->
+		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> 6 Attribute Resistance +25 -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -282,7 +282,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="48318" name="Dark Bloody Enhancement Stone Box" type="EtcItem">
-		<!-- Use to obtain a Dark Weapon, Bloody Weapon, Dark Armor, or Bloody Armor Enhancement Stone. -->
+		<!-- Double-click to obtain one of the following items: Dark Weapon/ Bloody Weapon/ Dark Armor/ Bloody Armor Enhancement Stone. -->
 		<set name="icon" val="icon.bm_pvp_pve_upgrade_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -349,12 +349,12 @@
 		<set name="is_event_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48066" min="4" max="4" chance="100" /> <!-- cubes -->
-			<item id="48323" min="1" max="1" chance="100" /> <!-- Divine Zodiac Agathion Book of Growth -->
+			<item id="48066" min="4" max="4" chance="100" /> <!-- Zodiac Agathion Cube -->
+			<item id="48323" min="1" max="1" chance="100" /> <!-- Divine Book of Growth: Zodiac Agathion -->
 		</capsuled_items>
 	</item>
 	<item id="48325" name="Special Agathion Master's Box" type="EtcItem">
-		<!-- Use to obtain 4 Zodiac Agathion Cubes and a Divine Zodiac Agathion Book of Growth. -->
+		<!-- Double-click to obtain 4 Zodiac Agathion Cubes and Divine Book of Growth: Zodiac Agathion. -->
 		<set name="icon" val="icon.bm_gold_relic_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -367,8 +367,8 @@
 		<set name="is_event_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48066" min="4" max="4" chance="100" /> <!-- cubes -->
-			<item id="48323" min="1" max="1" chance="100" /> <!-- Divine Zodiac Agathion Book of Growth -->
+			<item id="48066" min="4" max="4" chance="100" /> <!-- Zodiac Agathion Cube -->
+			<item id="48323" min="1" max="1" chance="100" /> <!-- Divine Book of Growth: Zodiac Agathion -->
 		</capsuled_items>
 	</item>
 	<item id="48326" name="Burnstein's Aufgabe Shield" type="Weapon">
@@ -465,7 +465,7 @@
 		</stats>
 	</item>
 	<item id="48332" name="Rael Tribe Wrist Shield" type="Weapon">
-		<!-- Material item for crafting Rael Tribe Wrist Shield appearance. -->
+		<!-- Changes the shield appearance to that of Rael's Square Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield7" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -480,7 +480,7 @@
 		</stats>
 	</item>
 	<item id="48333" name="Kunda's Battle Shield" type="Weapon">
-		<!-- Material item for crafting Kunda's Battle Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Kunda's Battle Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield8" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -495,7 +495,7 @@
 		</stats>
 	</item>
 	<item id="48334" name="Freya's Ice Flower Shield" type="Weapon">
-		<!-- Material item for crafting Freya's Ice Flower Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Freya's Ice Flower Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield9" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -510,7 +510,7 @@
 		</stats>
 	</item>
 	<item id="48335" name="Deathmask Shield" type="Weapon">
-		<!-- Material item for crafting Deathmask Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Deathmask Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield10" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -525,7 +525,7 @@
 		</stats>
 	</item>
 	<item id="48336" name="Berserker's Crusader Shield" type="Weapon">
-		<!-- Material item for crafting Berserker's Crusader Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Berserker's Crusader Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield11" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -540,7 +540,7 @@
 		</stats>
 	</item>
 	<item id="48337" name="Makkum's Cartwheel" type="Weapon">
-		<!-- Material item for crafting Makkum's Cartwheel appearance. -->
+		<!-- Changes a shield's appearance to that of Makkum's Cartwheel. -->
 		<set name="icon" val="icon.shapeshift_npc_shield12" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -556,7 +556,7 @@
 		</stats>
 	</item>
 	<item id="48338" name="Fallen Angel Shulter" type="Weapon">
-		<!-- Material item for crafting Fallen Angel Shulter appearance. -->
+		<!-- Changes shoulder guards' appearance to that of Fallen Angel Shulter. -->
 		<set name="icon" val="icon.shapeshift_npc_shield13" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -572,7 +572,7 @@
 		</stats>
 	</item>
 	<item id="48339" name="Silver Scarab" type="Weapon">
-		<!-- Material item for crafting Silver Scarab appearance. -->
+		<!-- Changes a shield's appearance to that of Silver Scarab. -->
 		<set name="icon" val="icon.shapeshift_npc_shield14" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -588,7 +588,7 @@
 		</stats>
 	</item>
 	<item id="48340" name="Vampire Fang Shield" type="Weapon">
-		<!-- Material item for crafting Vampire Fang appearance. -->
+		<!-- Changes a shield's appearance to that of Makkum's Cartwheel. -->
 		<set name="icon" val="icon.shapeshift_npc_shield15" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -603,7 +603,7 @@
 		</stats>
 	</item>
 	<item id="48341" name="Ice Shard Shield" type="Weapon">
-		<!-- Material item for crafting Ice Shard Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Ice Shard Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield16" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -618,7 +618,7 @@
 		</stats>
 	</item>
 	<item id="48342" name="Angelus Shield" type="Weapon">
-		<!-- Material item for crafting Angelus Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Angelus Shield. -->
 		<set name="icon" val="icon.shapeshift_npc_shield17" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -683,7 +683,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48348" name="Tanta Tribe Skull Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Tanta Tribe Skull Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Tanta Skull Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -693,7 +693,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48349" name="Rael Tribe Wrist Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Rael Tribe Wrist Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Rael's Square Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -703,7 +703,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48350" name="Kunda's Battle Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Kunda's Battle Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Kunda's Battle Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -713,7 +713,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48351" name="Freya's Ice Flower Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Freya's Ice Flower Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Freya's Ice Flower Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -723,7 +723,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48352" name="Deathmask Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Deathmask Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Deathmask Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -733,7 +733,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48353" name="Berserker's Crusader Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Berserker's Crusader Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Berserker's Crusader Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -743,7 +743,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48354" name="Makkum's Cartwheel Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Makkum's Cartwheel appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Makkum's Cartwheel for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -753,7 +753,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48355" name="Fallen Angel Shulter Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Fallen Angel Shulter appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes shoulder guards' appearance to that of Fallen Angel Shulter for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -763,7 +763,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48356" name="Silver Scarab Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Silver Scarab appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Silver Scarab for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -773,7 +773,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48357" name="Vampire Fang Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Vampire Fang Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Vampire Fang Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -793,7 +793,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48359" name="Angelus Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Angelus Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Angelus Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -1081,7 +1081,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="48387" name="Ancient Zodiac Agathion's Book of Growth" additionalName="Event" type="EtcItem">
-		<!-- Increases M. Def. Starting from +4, enables primary skills. The enchanting is safe up to +3, the maximum enchant value is +10. Starting from +1, the agathion's secondary skills are enhanced with each enchant value. The enchanting is random from +1 to +3. Cannot be used with agathions enchanted for more than +7. -->
+		<!-- Required for upgrading Zodiac agathions. Increases the agathion's M. Def. When the agathion is enchanted to +4 and higher, enables its primary skills. The enchanting is safe up to +3, the maximum enchant value is +10. Starting from +1, the agathion's secondary skills are enhanced with each enchant value. The enchanting is random from +1 to +3. Cannot be used with agathions enchanted to +7 or higher. Enchant success rate for +1: 65%. Enchant success rate for +2: 30%. Enchant success rate for +3: 5%. -->
 		<set name="icon" val="icon.star_giantscrl_of_ench_ag" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1155,7 +1155,7 @@
 		</stats>
 	</item>
 	<item id="48396" name="Burnstein's Pflicht Shield Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Burnstein's Pflicht Shield appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Burnstein's Pflicht Shield for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />

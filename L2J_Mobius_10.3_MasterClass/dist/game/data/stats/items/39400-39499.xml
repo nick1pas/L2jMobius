@@ -512,7 +512,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39462" name="Giant's Stone: Enchant R-grade Armor" type="EtcItem">
-		<!-- Success rate +15% for R-grade armor when using the Giant's Scroll: Enchant Armor. Only for items enchanted between +3 and +9. For one-piece armor, enchantment must be between +4 and +9. -->
+		<!-- Success rate +15% for R-grade armor when using the Giant's Scroll: Enchant Armor. Only for items enchanted between +3 and +9. -->
 		<set name="icon" val="icon.giant_ench_armor_stone_r_i01" />
 		<set name="weight" val="120" />
 		<set name="is_stackable" val="true" />
@@ -552,7 +552,7 @@
 		</skills>
 	</item>
 	<item id="39465" name="Windy Stone: Enchant R-grade Weapon" type="EtcItem">
-		<!-- Enchant success rate +20% for R-grade weapons when using the Giant's Scroll: Enchant Weapon. Only for items enchanted between +3 and +9. If enchanting fails, the item will not be crystallized but the enchant value will be reset to 0. -->
+		<!-- Enchant success rate +20% when using Giant's Enchant Scroll: R-grade Weapon. Only for items enchanted from +3 to +9. In case of failure, the item is not crystallized, but its enchant value is reset to 0. -->
 		<set name="icon" val="icon.giant_ench_wp_stone_r_i02" />
 		<set name="weight" val="120" />
 		<set name="etcitem_type" val="BLESSED_GIANT_ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -755,7 +755,7 @@
 		</skills>
 	</item>
 	<item id="39476" name="Low-grade Love Potion" type="EtcItem">
-		<!-- For 15 sec., P./ M. Atk. and Atk./ Casting Spd. are increased. A strange power changes the appearance of your weapon. Cannot be used in the Olympiad. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.love_potion" />
 		<set name="weight" val="2" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -774,7 +774,7 @@
 		</skills>
 	</item>
 	<item id="39477" name="Love Potion" type="EtcItem">
-		<!-- For 15 sec., P./ M. Atk. and Atk./ Casting Spd. are increased. A strange power changes the appearance of your weapon. Cannot be used in the Olympiad. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.love_potion" />
 		<set name="weight" val="2" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -793,7 +793,7 @@
 		</skills>
 	</item>
 	<item id="39478" name="Mid-grade Love Potion" type="EtcItem">
-		<!-- For 15 sec., P./ M. Atk. and Atk./ Casting Spd. are increased. A strange power changes the appearance of your weapon. Cannot be used in the Olympiad. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.love_potion" />
 		<set name="weight" val="2" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -812,7 +812,7 @@
 		</skills>
 	</item>
 	<item id="39479" name="High-grade Love Potion" type="EtcItem">
-		<!-- For 15 sec., P./ M. Atk. and Atk./ Casting Spd. are increased. A strange power changes the appearance of your weapon. Cannot be used in the Olympiad. Cannot be stacked with Battle Rhapsody Dance. -->
+		<!-- For 15 sec., P./ M. Atk. and Atk. Spd./ Casting Spd. are increased. A strange power changes the appearance of your weapon. The effect does not stack with Battle Rhapsody. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.love_potion" />
 		<set name="weight" val="2" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -1057,7 +1057,7 @@
 		</skills>
 	</item>
 	<item id="39496" name="Scroll of Escape: Harnak Underground Ruins" type="EtcItem">
-		<!-- Teleports you to Hadel, who can let you into Harnak's Underground Ruins. -->
+		<!-- Teleports you to Hadel near the entrance to Harnak's Underground Ruins. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />

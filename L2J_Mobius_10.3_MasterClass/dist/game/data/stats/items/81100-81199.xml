@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="81100" name="Legendary Dye Lv. 6 (M. Atk.)" additionalName="INT +5, WIT +5, CHA +5" type="EtcItem">
-		<!-- INT +5, WIT +5, CHA +5. Take it to the Dye Merchant in town to get a symbol that boosts your abilities: Received Damage -1%, M. Atk. +1%. Effects of two identical symbols do not stack. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- INT +5, WIT +5, CHA +5. Collect 1 unit and take it to Dye Merchant to get a tattoo that boosts your stats (received damage -1%, M. Atk. +1%). Effects of two identical tattoos do not stack. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="BranchSys3.icon1.g_premium_dye_attribute_fire" />
 		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
@@ -176,7 +176,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81125" name="Festival Fairy's Style Cancelling Oil" additionalName="Event" type="EtcItem">
-		<!-- Potion that removes effect of Festival Fairy's Potion of Appearance. -->
+		<!-- Removes the effect of Festival Fairy's Potion of Appearance. -->
 		<set name="icon" val="icon.etc_whiteday_herb" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -192,7 +192,7 @@
 		</skills>
 	</item>
 	<item id="81126" name="Mysterious Pack Lv. 1" type="EtcItem">
-		<!-- Double-click to obtain a rare item. -->
+		<!-- Double-click to obtain 1 rare item. -->
 		<set name="icon" val="icon.etc_pi_box_belief_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -264,7 +264,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81134" name="Crystal of Dyes" type="EtcItem">
-		<!-- New dyes can be bought through Dye Merchant in any town or obtained through compounding. -->
+		<!-- New dyes can be bought through Dye Merchant in any town. They can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_dye_stone" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
@@ -272,7 +272,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81135" name="Dragon Weapon Augmenting Stone" type="EtcItem">
-		<!-- A mineral that has been petrified by dragon's physical or magical damage and dimensional anomalies. Key material for Dragon Weapon augmentation. Double-click on the item or speak to a blacksmith to augment what you need. -->
+		<!-- A rare mineral, imbued the power of darkness. Key material for augmenting Dragon's, Bloodstained Zariche or Akamanah weapons. Double-click on the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="icon.renewal_mineral_dark" />
 		<set name="commissionItemType" val="LIFE_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -327,7 +327,7 @@
 		</skills>
 	</item>
 	<item id="81140" name="Freya's Scroll of Storm" additionalName="Event" type="EtcItem">
-		<!-- For 10 min., Vitality Consumption +150%, acquired XP/ SP +150%. The effect remains after death. Cooldown: 9 min. Can be used only when 1 or more Vitality bars is full. Cannot be used in the Olympiad. The effect does not stack with those of Freya's Frozen Scroll, Maphr's Wind Scroll, Dandy's Scroll: Challenge, Emperor's Growth Scroll, Scroll: Midsummer Passion, Vital Wind, Wind of Bard. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +150%, acquired XP/ SP +150%. The effect remains after death. Cooldown: 9 min. Available if 1 or more Vitality bar is full. Cannot be used in the Olympiad. Does not stack with the Freya's Scroll of Blessing and Maphr's Scroll of Storm effects. -->
 		<set name="icon" val="icon.bm_freya_storm_scroll" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -405,7 +405,7 @@
 		</skills>
 	</item>
 	<item id="81146" name="Santiago's Bait" type="EtcItem">
-		<!-- Fishing time: 105 sec. Standby time: 15 sec. Required level: 99+. Fishing with this bait you have a low chance to obtain Santiago s Star Energy Pack. -->
+		<!-- Fishing time: 105 sec. Standby time: 15 sec. Required level: 99+. Fishing with this bait you have a low chance to obtain Santiago's Star Energy Pack. -->
 		<set name="icon" val="icon.etc_huge_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="LURE" />
@@ -434,7 +434,7 @@
 		</capsuled_items>
 	</item>
 	<item id="81148" name="Kastia's Pack" additionalName="Lv. 2" type="EtcItem">
-		<!-- Double-click to obtain two of each: Freya's Ice Rose, Glowing Dragon's Attribute Potion, Honey Dark Beer. -->
+		<!-- Double-click to obtain 2 of each of the following items: Freya's Ice Rose, Glowing Dragon's Attribute Potion, Honey Dark Beer. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -452,7 +452,7 @@
 		</capsuled_items>
 	</item>
 	<item id="81149" name="Kastia's Pack" additionalName="Lv. 3" type="EtcItem">
-		<!-- Double-click to obtain 4 of each: Freya's Ice Rose, Glowing Dragon's Attribute Potion, Honey Dark Beer. -->
+		<!-- Double-click to obtain 4 of each of the following items: Freya's Ice Rose, Glowing Dragon's Attribute Potion, Honey Dark Beer. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -499,7 +499,7 @@
 			<item id="80964" min="1" max="1" chance="3.33" /> <!-- Energy of Protection -->
 			<item id="48860" min="1" max="1" chance="3.33" /> <!-- Fallen Angel's Ring Pack -->
 			<item id="36731" min="1" max="1" chance="3.33" /> <!-- Giant's Energy Spirit Stone -->
-			<item id="45931" min="1" max="1" chance="3.33" /> <!-- High-grade Weapon Augmenting Stone -->
+			<item id="45931" min="1" max="1" chance="3.33" /> <!-- High-grade Augmenting Stone: Weapon -->
 			<item id="17527" min="1" max="1" chance="3.33" /> <!-- Scroll: Enchant R-grade Armor -->
 			<item id="17526" min="1" max="1" chance="3.33" /> <!-- Scroll: Enchant R-grade Weapon -->
 			<item id="47494" min="1" max="1" chance="3.33" /> <!-- Selenite -->
@@ -507,7 +507,7 @@
 			<item id="46150" min="1" max="1" chance="3.33" /> <!-- Superior Giant's Codex - Chapter 1 -->
 			<item id="30298" min="1" max="1" chance="3.33" /> <!-- Superior Giant's Codex - Mastery -->
 			<item id="46151" min="1" max="1" chance="3.33" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
-			<item id="45932" min="1" max="1" chance="3.33" /> <!-- Top-grade Weapon Augmenting Stone -->
+			<item id="45932" min="1" max="1" chance="3.33" /> <!-- Top-grade Augmenting Stone: Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="81152" name="Fafurion's Treasure Chest" type="EtcItem">
@@ -520,7 +520,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81153" name="Navari's Mask" type="Armor">
-		<!-- When enchanted, increases Attribute Attack, Attribute Resistance, Max HP/ MP/ CP, P./ M. Def., P./ M. Atk., P./ M. Skill Power, P. Critical Damage and P./ M. Skill Critical Damage. <Enchanting>. Use Scroll: Enchant Mask. -->
+		<!-- When enchanted, increases Attribute Attack, Attribute Resistance, Max HP/ MP/ CP, P./ M. Def., P./ M. Atk., P./ M. Skill Power, P. Critical Damage and P./ M. Skill Critical Damage. <Enchanting> Use Scroll: Enchant Expert's Mask. Can be augmented. -->
 		<set name="icon" val="icon.serenia_mask" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -543,7 +543,7 @@
 		</skills>
 	</item>
 	<item id="81154" name="Angel's Ring" type="Armor">
-		<!-- When enchanted, increases Obstruction Atk. Rate/ Resistance, Attribute Resistance, P. Critical Damage, P./ M. Skill Critical Damage, and P./ M. Skill Power. Effects of two identical rings do not stack. The item can be changed. <Enchanting>. Use Scroll: Enchant Angel Accessory. Can be augmented. -->
+		<!-- When enchanted, increases CHA/ LUC, Obstruction Atk. Rate and Resistance, Attribute Resistance, Critical Damage for basic attacks, P./ M. Skill Critical Damage, and P./ M. Skill Power. Effects of two identical rings do not stack. The item can be changed. <Enchanting> Use Scroll: Enchant Angel's Accessory. <Upgrading> Upgrade is available after enchanting to +6 -->
 		<set name="icon" val="icon.new_ring_of_hero" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -601,7 +601,7 @@
 		</capsuled_items>
 	</item>
 	<item id="81157" name="Exalted Cutter" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_sword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -632,7 +632,7 @@
 		</stats>
 	</item>
 	<item id="81158" name="Exalted Slasher" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -663,7 +663,7 @@
 		</stats>
 	</item>
 	<item id="81159" name="Exalted Avenger" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_axe_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -694,7 +694,7 @@
 		</stats>
 	</item>
 	<item id="81160" name="Exalted Fighter" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_fist_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -726,7 +726,7 @@
 		</stats>
 	</item>
 	<item id="81161" name="Exalted Stormer" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_pole_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -759,7 +759,7 @@
 		</stats>
 	</item>
 	<item id="81162" name="Exalted Thrower" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +10%, Critical Rate for standard attacks +50. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +10%, Critical Rate for basic attacks +50. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_bow_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -791,7 +791,7 @@
 		</stats>
 	</item>
 	<item id="81163" name="Exalted Guardian" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +10%, Critical Rate for standard attacks +50. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +10%, Critical Rate for basic attacks +50. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_shooter_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="TWOHANDCROSSBOW" />
@@ -823,7 +823,7 @@
 		</stats>
 	</item>
 	<item id="81164" name="Exalted Buster" type="Weapon">
-		<!-- A weapon for those who have taken their path of honor not so long ago. PvE damage +10%, Max HP +15%, Casting Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be enchanted, crystallized, given another appearance, augmented, assigned an attribute, or imbued with a soul crystal. Can be exchanged for another Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_magic_sword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -854,7 +854,7 @@
 		</stats>
 	</item>
 	<item id="81165" name="Exalted Caster" type="Weapon">
-		<!-- A weapon for those who have taken their path of honor not so long ago. PvE damage +10%, Max HP +15%, Casting Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be enchanted, crystallized, given another appearance, augmented, assigned an attribute, or imbued with a soul crystal. Can be exchanged for another Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_mace_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -887,7 +887,7 @@
 		</stats>
 	</item>
 	<item id="81166" name="Exalted Retributer" type="Weapon">
-		<!-- A weapon for those who have taken their path of honor not so long ago. PvE damage +10%, Max HP +15%, Atk. Spd./ Casting Spd. +15%, P. Critical Damage/ M. Skill Critical Damage +10%. Cannot be enchanted, crystallized, given another appearance, augmented, assigned an attribute, or imbued with a soul crystal. Can be exchanged for another Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd./ Casting Spd. +15%, P. Critical Damage/ M. Skill Critical Damage +10%. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_staff_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -920,7 +920,7 @@
 		</stats>
 	</item>
 	<item id="81167" name="Exalted Dual Swords" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_dualsword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />
@@ -951,7 +951,7 @@
 		</stats>
 	</item>
 	<item id="81168" name="Exalted Dual Daggers" type="Weapon">
-		<!-- Weapon for those who have taken their path of honor not long ago. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +10%, Critical Rate for standard attacks +50. Cannot be enchanted, crystallized, appearance modified, soul crystal enhanced, augmented, or imbued with attributes. Can be exchanged for other Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who have just become the Exalted. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +10%, Critical Rate for basic attacks +50. Cannot be enchanted, crystallized, augmented or imbued with attributes. The item's appearance cannot be modified -->
 		<set name="icon" val="icon.bm_the_dualdagger_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -983,7 +983,7 @@
 		</stats>
 	</item>
 	<item id="81169" name="Enhanced Exalted Cutter" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_sword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1016,7 +1016,7 @@
 		</stats>
 	</item>
 	<item id="81170" name="Enhanced Exalted Slasher" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1049,7 +1049,7 @@
 		</stats>
 	</item>
 	<item id="81171" name="Enhanced Exalted Avenger" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_axe_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1082,7 +1082,7 @@
 		</stats>
 	</item>
 	<item id="81172" name="Enhanced Exalted Fighter" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_fist_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -1116,7 +1116,7 @@
 		</stats>
 	</item>
 	<item id="81173" name="Enhanced Exalted Stormer" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_pole_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -1151,7 +1151,7 @@
 		</stats>
 	</item>
 	<item id="81174" name="Enhanced Exalted Thrower" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +10%, Critical Rate for standard attacks +50. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +10%, Critical Rate for basic attacks +50. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_bow_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -1185,7 +1185,7 @@
 		</stats>
 	</item>
 	<item id="81175" name="Enhanced Exalted Guardian" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +10%, Critical Rate for standard attacks +50. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +10%, Critical Rate for basic attacks +50. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_shooter_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="TWOHANDCROSSBOW" />
@@ -1219,7 +1219,7 @@
 		</stats>
 	</item>
 	<item id="81176" name="Enhanced Exalted Buster" type="Weapon">
-		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Casting Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be enchanted, crystallized, given another appearance, or assigned an attribute. Can be augmented with Exalted Spirit Stone. A special Soul Crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Casting Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_magic_sword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1252,7 +1252,7 @@
 		</stats>
 	</item>
 	<item id="81177" name="Enhanced Exalted Caster" type="Weapon">
-		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Casting Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be enchanted, crystallized, given another appearance, or assigned an attribute. Can be augmented with Exalted Spirit Stone. A special Soul Crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Casting Spd. +15%, M. Skill Critical Damage +10%, M. Critical Rate +50. Cannot be crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_mace_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1287,7 +1287,7 @@
 		</stats>
 	</item>
 	<item id="81178" name="Enhanced Exalted Retributer" type="Weapon">
-		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd./ Casting Spd. +15%, P. Critical Damage/ M. Skill Critical Damage +10%. Cannot be enchanted, crystallized, given another appearance, or assigned an attribute. Can be augmented with Exalted Spirit Stone. A special Soul Crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd./ Casting Spd. +15%, P. Critical Damage/ M. Skill Critical Damage +10%. Cannot be crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_staff_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1322,7 +1322,7 @@
 		</stats>
 	</item>
 	<item id="81179" name="Enhanced Exalted Dual Swords" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +5%, Critical Rate for standard attacks +100. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +5%, Critical Rate for basic attacks +100. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_dualsword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />
@@ -1355,7 +1355,7 @@
 		</stats>
 	</item>
 	<item id="81180" name="Enhanced Exalted Dual Daggers" type="Weapon">
-		<!-- Weapon for those who are going to overcome their limits. PvE Damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for standard attacks +10%, Critical Rate for standard attacks +50. Cannot be enchanted, crystallized, appearance modified, or imbued with attributes. Can be augmented with Exalted Spirit Stone, also Special Soul Crystal can be used. Can be exchanged for other enhanced Exalted weapon through Lionel Hunter in Heine. -->
+		<!-- A weapon for those who are going to overcome their limits. PvE damage +10%, Max HP +15%, Atk. Spd. +15%, Critical Damage for basic attacks +10%, Critical Rate for basic attacks +50. Cannot be enchanted, crystallized, imbued with attributes. Its appearance cannot be modified. Can be augmented with Exalted Spirit Stone. A special soul crystal can be inserted. Can be exchanged for another enhanced Exalted weapon through Lionel Hunter in Heine. <Enchanting> Use Blessed Scroll: Enchant Exalted Weapon. -->
 		<set name="icon" val="icon.bm_the_dualdagger_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALDAGGER" />
@@ -1389,7 +1389,7 @@
 		</stats>
 	</item>
 	<item id="81181" name="Exalted Helmet" additionalName="Heavy armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_armor_helmet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -1405,7 +1405,7 @@
 		</stats>
 	</item>
 	<item id="81182" name="Exalted Breastplate" additionalName="Heavy armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_heavy_upbody" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -1423,7 +1423,7 @@
 		</stats>
 	</item>
 	<item id="81183" name="Exalted Gaiters" additionalName="Heavy armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_heavy_downbody" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -1441,7 +1441,7 @@
 		</stats>
 	</item>
 	<item id="81184" name="Exalted Gauntlets" additionalName="Heavy armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_heavy_gloves" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -1458,7 +1458,7 @@
 		</stats>
 	</item>
 	<item id="81185" name="Exalted Boots" additionalName="Heavy armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_heavy_shoes" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -1475,7 +1475,7 @@
 		</stats>
 	</item>
 	<item id="81186" name="Exalted Shield" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted or crystallized. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_heavy_shield" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -1494,7 +1494,7 @@
 		</stats>
 	</item>
 	<item id="81187" name="Exalted Leather Helmet" additionalName="Light armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_armor_leather_helmet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -1510,7 +1510,7 @@
 		</stats>
 	</item>
 	<item id="81188" name="Exalted Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_light_upbody" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1529,7 +1529,7 @@
 		</stats>
 	</item>
 	<item id="81189" name="Exalted Leather Leggings" additionalName="Light armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_light_downbody" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1548,7 +1548,7 @@
 		</stats>
 	</item>
 	<item id="81190" name="Exalted Leather Gloves" additionalName="Light armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_light_gloves" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -1565,7 +1565,7 @@
 		</stats>
 	</item>
 	<item id="81191" name="Exalted Leather Boots" additionalName="Light armor" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_light_shoes" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -1582,7 +1582,7 @@
 		</stats>
 	</item>
 	<item id="81192" name="Exalted Circlet" additionalName="Robe" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_armor_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="head" />
@@ -1598,7 +1598,7 @@
 		</stats>
 	</item>
 	<item id="81193" name="Exalted Tunic" additionalName="Robe" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_robe_upbody" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="MAGIC" />
@@ -1618,7 +1618,7 @@
 		</stats>
 	</item>
 	<item id="81194" name="Exalted Stockings" additionalName="Robe" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_robe_downbody" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="MAGIC" />
@@ -1638,7 +1638,7 @@
 		</stats>
 	</item>
 	<item id="81195" name="Exalted Gloves" additionalName="Robe" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_robe_gloves" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="gloves" />
@@ -1655,7 +1655,7 @@
 		</stats>
 	</item>
 	<item id="81196" name="Exalted Shoes" additionalName="Robe" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified, or assigned with attributes. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted, crystallized or imbued with attributes. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_robe_shoes" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -1672,7 +1672,7 @@
 		</stats>
 	</item>
 	<item id="81197" name="Exalted Sigil" type="Armor">
-		<!-- Armor for those who have taken their path of honor not long ago. Cannot be enchanted, crystallized, appearance modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
+		<!-- Armor for those who have just become the Exalted. Cannot be enchanted or crystallized. The item's appearance cannot be modified. Can be exchanged for other Exalted armor through Lionel Hunter in Heine. -->
 		<set name="icon" val="icon.bm_polyne_R99_1_robe_sigil" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="SIGIL" />

@@ -433,7 +433,7 @@
 		</skills>
 	</item>
 	<item id="22124" name="Wrapped Daisy Hairpin" type="EtcItem">
-		<!-- If used, a daisy hairpin is acquired. Females only. -->
+		<!-- Double-click to obtain Daisy Hairpin. Female only. -->
 		<set name="icon" val="br_cashtex.item.br_cash_wrapped_accessary_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -528,7 +528,7 @@
 		</skills>
 	</item>
 	<item id="22129" name="Wrapped Red Mask of Victory" type="EtcItem">
-		<!-- If used, a Red Mask of Victory is acquired. -->
+		<!-- Double-click to obtain Mask of Spirits. -->
 		<set name="icon" val="br_cashtex.item.br_cash_wrapped_accessary_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -993,7 +993,7 @@
 		</skills>
 	</item>
 	<item id="22154" name="Shadow Item: Wolf Hat" additionalName="Blessed Escape" type="Armor">
-		<!-- Monster wolf shaped hat. Blessed Escape skill can be used. Use 2 hair accessory slots. -->
+		<!-- A hat shaped like a wolf's head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_wolf_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1012,7 +1012,7 @@
 		</skills>
 	</item>
 	<item id="22155" name="Shadow Item: Wolf Hat" additionalName="Blessed Resurrection" type="Armor">
-		<!-- Monster wolf shaped hat. Blessed Resurrection skill can be used. Use 2 hair accessory slots. -->
+		<!-- A hat shaped like a wolf's head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_wolf_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1031,7 +1031,7 @@
 		</skills>
 	</item>
 	<item id="22156" name="Daisy Hairpin" type="Armor">
-		<!-- Daisy shaped hairpin. Female only. -->
+		<!-- A hairpin decorated with a daisy flower. Female only. -->
 		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1048,7 +1048,7 @@
 		</cond>
 	</item>
 	<item id="22157" name="Forget-me-not Hairpin" type="Armor">
-		<!-- Forget-me-not shaped hairpin. Female only. -->
+		<!-- A hairpin decorated with a forget-me-not flower. Female only. -->
 		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1107,7 +1107,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22161" name="Red Mask of Victory" type="Armor">
-		<!-- Hair accessory for World Cup Events -->
+		<!-- A head accessory for the World Cup event. -->
 		<set name="icon" val="icon.accessory_worldcup_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1121,7 +1121,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22162" name="Red Horn of Victory" type="Armor">
-		<!-- Hair accessory for World Cup Events -->
+		<!-- A head accessory for the World Cup event. -->
 		<set name="icon" val="icon.accessory_hair_cornu_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1135,7 +1135,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22163" name="Party Mask" type="Armor">
-		<!-- Fashion item which creates a unique taste. -->
+		<!-- A stylish item that emphasizes your individuality. -->
 		<set name="icon" val="icon.etc_party_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1149,7 +1149,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22164" name="Red Party Mask" type="Armor">
-		<!-- Fashion item which creates a unique taste. -->
+		<!-- A stylish item that emphasizes your individuality. -->
 		<set name="icon" val="icon.etc_party_mask_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1162,7 +1162,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22165" name="Cat Ears" type="Armor">
-		<!-- Cat ear shaped hair accessory. -->
+		<!-- A head accessory shaped like cat ears. -->
 		<set name="icon" val="icon.accessory_cat_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1176,7 +1176,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22166" name="Lady's Hairpin" type="Armor">
-		<!-- Hair accessory exclusive to female. -->
+		<!-- Female only. -->
 		<set name="icon" val="icon.accessory_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1193,7 +1193,7 @@
 		</cond>
 	</item>
 	<item id="22167" name="Raccoon Ears" type="Armor">
-		<!-- Raccoon ear shaped hair accessory. -->
+		<!-- A head accessory shaped like raccoon ears. -->
 		<set name="icon" val="icon.accessory_racoon_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1207,7 +1207,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22168" name="Rabbit Ears" type="Armor">
-		<!-- Bunny Girls Rabbit Ears shaped hair accessory. -->
+		<!-- A head accessory shaped like rabbit ears. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1221,7 +1221,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22169" name="Little Angel Wings" type="Armor">
-		<!-- Wings shaped hair accessory. -->
+		<!-- A head accessory shaped like a little white wing. -->
 		<set name="icon" val="icon.accessory_hair_ring_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1235,7 +1235,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22170" name="Fairy Antennae" type="Armor">
-		<!-- Stars attached cute tentacle hair accessory. -->
+		<!-- A lovely head accessory shaped like antennae with starlets. -->
 		<set name="icon" val="icon.accessory_hair_feeler_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1249,7 +1249,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22171" name="Chapeau" type="Armor">
-		<!-- Handsome hat with an attached feather. Uses 2 hair accessory slots. -->
+		<!-- An elegant hat decorated with feathers. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_archer_hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1263,7 +1263,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22172" name="Artisan's Goggles" type="Armor">
-		<!-- Large goggles that protect the eyes. Uses 2 hair accessory slots. -->
+		<!-- Large goggles for eye protection. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_dwarf_goggle_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1277,7 +1277,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22173" name="Reinforced Baium's Ring" type="Armor">
-		<!-- MP +21, Infection Atk. Rate and Resistance +40%, Obstruction Atk. Rate and Resistance +30%. Increases P. Accuracy, Critical Damage, Atk. Spd. and Casting Spd. Effects of two identical rings do not stack. -->
+		<!-- MP +21, Poison Resistance +40%, Poison Atk. Rate +40%, Accuracy +2, Critical Damage for basic attacks +15%, Hold Resistance +30%, Hold Atk. Rate +30%, Atk. Spd. +4%, Casting Spd. +4%. Effects of two identical rings do not stack. -->
 		<set name="icon" val="icon.accessory_ring_of_baium_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -1323,7 +1323,7 @@
 		</stats>
 	</item>
 	<item id="22175" name="Reinforced Blessed Zaken's Earring" type="Armor">
-		<!-- MP +37, Infection Resistance/ Atk. Rate +30%, Confusion Resistance/ Atk. Rate +30%, Received Healing +15%, Dark Resistance +15. Grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Zaken's Earring, only the effect of the Blessed item is applied. -->
+		<!-- MP +37, Infection Atk. Rate and Resistance +30%, Confusion Atk. Rate and Resistance +30%, Received Healing +15%, Dark Resistance +15. Grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Zaken's Earring, only the effect of the Blessed item is applied. -->
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1405,7 +1405,7 @@
 		</skills>
 	</item>
 	<item id="22180" name="Package: Bad Bunny Rehab - Event" type="EtcItem">
-		<!-- Available only once every 12 h. per account. Double-click to obtain Scroll: Summon Bad Bunny and a Cupid's potion for the event. -->
+		<!-- Available once in 12 h. for 1 account. Double-click to obtain Scroll: Summon Bad Bunny and Cupid's Cure for the event. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="weight" val="1" />
@@ -1418,8 +1418,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="22181" min="60" max="60" chance="100" /> <!-- Event - Cupid's Fatigue Relief Potion -->
-			<item id="22182" min="15" max="15" chance="100" /> <!-- Event - Cupid's Major Fatigue Relief Potion -->
+			<item id="22181" min="60" max="60" chance="100" /> <!-- Cupid's Cure - Event -->
+			<item id="22182" min="15" max="15" chance="100" /> <!-- Cupid's Enhanced Cure - Event -->
 			<item id="22176" min="1" max="1" chance="100" /> <!-- Scroll: Summon Bad Bunny - Event -->
 			<item id="22178" min="1" max="1" chance="100" /> <!-- Scroll: Summon Bad Bunny Captain - Event -->
 		</capsuled_items>
@@ -1455,7 +1455,7 @@
 		</skills>
 	</item>
 	<item id="22183" name="Graduation Cap" type="Armor">
-		<!-- Graduation Cap. Uses 2 hair accessory slots. -->
+		<!-- Graduation Cap. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_graduation_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1469,7 +1469,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22184" name="First Mate Hat" type="Armor">
-		<!-- First Mate Hat. Uses 2 hair accessory slots. -->
+		<!-- An elite cap with golden decorations. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.Accessary_middle_ages_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1506,7 +1506,7 @@
 		<set name="is_destroyable" val="false" />
 	</item>
 	<item id="22187" name="Birthday Present Pack" type="EtcItem">
-		<!-- Birthday present received from Alegria on the character's birthday. When used, you can obtain (3) Birthday Vitality Potion(s), a birthday cake, and a Birthday Hat. -->
+		<!-- A birthday gift from Alegria. Double-click to obtain 3 Birthday Vitality Potions, Birthday Cake and Birthday Hat. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1543,7 +1543,7 @@
 		</skills>
 	</item>
 	<item id="22189" name="Child's Hat - Boy" type="Armor">
-		<!-- Taiwanese child exclusive hat (boy). Uses 2 hair accessory slots. -->
+		<!-- A Taiwanese hat for boys. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys2.icon.br_hat_for_boy_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1558,7 +1558,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="22190" name="Child's Hat - Girl" type="Armor">
-		<!-- Taiwanese child exclusive hat (girl). Uses 2 hair accessory slots. -->
+		<!-- A Taiwanese hat for girls. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys2.icon.br_hat_for_girl_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1573,7 +1573,7 @@
 		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="22191" name="Rocking Horse Bracelet" additionalName="7-day" type="Armor">
-		<!-- Allows to mount a Rocking Horse. 7-day. -->
+		<!-- Allows to mount Rocking Horse. Available for 7 d. -->
 		<set name="icon" val="branchsys2.icon.g_wooen_house" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1592,7 +1592,7 @@
 		</skills>
 	</item>
 	<item id="22192" name="Rocking Horse Bracelet" additionalName="30-day" type="Armor">
-		<!-- Allows to mount a Rocking Horse. 30-day. -->
+		<!-- Allows to mount Rocking Horse. Available for 30 d. -->
 		<set name="icon" val="branchsys2.icon.g_wooen_house" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1611,7 +1611,7 @@
 		</skills>
 	</item>
 	<item id="22193" name="Rocking Horse Bracelet" type="Armor">
-		<!-- Allows to mount a Rocking Horse. -->
+		<!-- Allows to mount Rocking Horse. -->
 		<set name="icon" val="branchsys2.icon.g_wooen_house" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />

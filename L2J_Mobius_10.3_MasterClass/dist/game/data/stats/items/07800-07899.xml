@@ -106,7 +106,7 @@
 		</skills>
 	</item>
 	<item id="7807" name="Corroded Green Bait (Novice)" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_bait_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="LURE" />
@@ -118,7 +118,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7808" name="Corroded Purple Bait (Novice)" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_bait_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="LURE" />
@@ -130,7 +130,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7809" name="Corroded Yellow Bait (Novice)" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_bait_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="etcitem_type" val="LURE" />
@@ -419,7 +419,7 @@
 		</stats>
 	</item>
 	<item id="7819" name="Apprentice Adventurer's Cestus" type="Weapon">
-		<!-- Apprentice Adventurer's Cestus. This item cannot be crystallized or enchanted. If one's PK count is 1 or more, it cannot be used. -->
+		<!-- Apprentice Adventurer's Cestus. Cannot be crystallized or enchanted. Cannot be used if one's PK count is 1 or more. -->
 		<set name="icon" val="icon.weapon_vipers_canine_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -689,7 +689,7 @@
 		</stats>
 	</item>
 	<item id="7828" name="Traveler's Jamadhr" type="Weapon">
-		<!-- Traveler's Jamadh. This item cannot be crystallized or enchanted. If one's PK count is 1 or more, it cannot be used. -->
+		<!-- Traveler's Jamadhr. Cannot be crystallized or enchanted. Cannot be used if one's PK count is 1 or more. -->
 		<set name="icon" val="icon.weapon_baghnakh_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -867,7 +867,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="7836" name="Santa Hat" type="Armor">
-		<!-- Santa Hat, which is made to celebrate the holy day. Uses 2 hair accessory slots. -->
+		<!-- A festive Santa Hat. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_santas_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -919,7 +919,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="7840" name="Rabbit Ears (Event)" type="Armor">
-		<!-- Rabbit-ear shaped hair accessory. This item -->
+		<!-- A head accessory shaped like rabbit ears. Event item. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -933,7 +933,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="7841" name="Raccoon Ears (Event)" type="Armor">
-		<!-- Raccoon-ear shaped hair accessory. -->
+		<!-- A head accessory shaped like raccoon ears. Event item. -->
 		<set name="icon" val="icon.accessory_racoon_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -947,7 +947,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="7842" name="Cat Ears (Event)" type="Armor">
-		<!-- Cat-ear shaped hair accessory. -->
+		<!-- A head accessory shaped like cat ears. Event item. -->
 		<set name="icon" val="icon.accessory_cat_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -961,7 +961,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="7843" name="Pirate's Eyepatch - Event" type="Armor">
-		<!-- Eyepatch accessory. -->
+		<!-- An eyepatch. Event item. -->
 		<set name="icon" val="icon.accessory_eye_bandage_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -989,7 +989,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="7845" name="Outlaw's Eyepatch - Event" type="Armor">
-		<!-- Purple eyepatch accessory. -->
+		<!-- A purple head accessory. Event item. -->
 		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1003,7 +1003,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="7846" name="Maiden's Hairpin (Event)" type="Armor">
-		<!-- Pink hairpin for Female only. -->
+		<!-- A head accessory. Female only. Event item. -->
 		<set name="icon" val="icon.accessory_maidens_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1020,7 +1020,7 @@
 		</cond>
 	</item>
 	<item id="7847" name="Lady's Hairpin (Event)" type="Armor">
-		<!-- Hair accessory for Female only. -->
+		<!-- A head accessory. Female only. Event item. -->
 		<set name="icon" val="icon.accessory_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1037,7 +1037,7 @@
 		</cond>
 	</item>
 	<item id="7848" name="Forget-me-not Hairpin (Event)" type="Armor">
-		<!-- Forget-me-not-shaped hair accessory. Female only. -->
+		<!-- A hairpin decorated with a forget-me-not flower. Female only. Event item. -->
 		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1054,7 +1054,7 @@
 		</cond>
 	</item>
 	<item id="7849" name="Daisy Hairpin (Event)" type="Armor">
-		<!-- Daisy-shaped hair accessory. Female only. -->
+		<!-- A hairpin decorated with a daisy flower. Female only. Event item. -->
 		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1793,7 +1793,7 @@
 		</stats>
 	</item>
 	<item id="7882" name="Pa'agrian Sword" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_sword_of_paagrio_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1821,7 +1821,7 @@
 		</stats>
 	</item>
 	<item id="7883" name="Guardian's Sword" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_guardians_sword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1849,7 +1849,7 @@
 		</stats>
 	</item>
 	<item id="7884" name="Infernal Master" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_inferno_master_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1931,7 +1931,7 @@
 		</stats>
 	</item>
 	<item id="7887" name="Mysterious Sword" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_mystery_sword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1959,7 +1959,7 @@
 		</stats>
 	</item>
 	<item id="7888" name="Ecliptic Sword" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_sword_of_eclipse_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1987,7 +1987,7 @@
 		</stats>
 	</item>
 	<item id="7889" name="Wizard's Tear" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_tears_of_wizard_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -2043,7 +2043,7 @@
 		</stats>
 	</item>
 	<item id="7891" name="Ecliptic Axe" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_eclipse_axe_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2072,7 +2072,7 @@
 		</stats>
 	</item>
 	<item id="7892" name="Spell Breaker" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_spell_breaker_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2101,7 +2101,7 @@
 		</stats>
 	</item>
 	<item id="7893" name="Kaim Vanul's Bones" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_bone_of_kaim_vanul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2130,7 +2130,7 @@
 		</stats>
 	</item>
 	<item id="7894" name="Spiritual Eye" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_eye_of_soul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2159,7 +2159,7 @@
 		</stats>
 	</item>
 	<item id="7895" name="Flaming Dragon Skull" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_dragon_flame_head_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2215,7 +2215,7 @@
 		</stats>
 	</item>
 	<item id="7897" name="Dwarven Hammer" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_dwarven_hammer_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2243,7 +2243,7 @@
 		</stats>
 	</item>
 	<item id="7898" name="Karik Horn" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_horn_of_karik_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2271,7 +2271,7 @@
 		</stats>
 	</item>
 	<item id="7899" name="Destroyer Hammer" type="Weapon">
-		<!-- 1 regular Soul Crystal and 1 special Soul Crystal can be inserted. -->
+		<!-- 1 common soul crystal and 1 special soul crystal can be inserted. -->
 		<set name="icon" val="icon.weapon_hammer_of_destroyer_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />

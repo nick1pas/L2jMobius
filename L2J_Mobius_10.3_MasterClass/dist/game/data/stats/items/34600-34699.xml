@@ -82,7 +82,7 @@
 		</skills>
 	</item>
 	<item id="34605" name="Mysterious C-grade Soulshot" additionalName="Event" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing power of attack. Used with a C-grade weapon. -->
+		<!-- Increases a weapon's physical power. Used with C-grade weapons. -->
 		<set name="icon" val="icon.etc_spirit_bullet_green_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -112,7 +112,7 @@
 		</skills>
 	</item>
 	<item id="34607" name="Mysterious A-grade Soulshot" additionalName="Event" type="EtcItem">
-		<!-- Increases a weapon's attack power. Used with A-grade weapons. -->
+		<!-- Increases a weapon's physical power. Used with A-grade weapons. -->
 		<set name="icon" val="icon.etc_spirit_bullet_silver_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="A" />
@@ -127,7 +127,7 @@
 		</skills>
 	</item>
 	<item id="34608" name="Mysterious S-grade Soulshot" additionalName="Event" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing power of attack. Used with an S-grade weapon. -->
+		<!-- Increases a weapon's physical power. Used with S-grade weapons. -->
 		<set name="icon" val="icon.etc_spirit_bullet_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="S" />
@@ -158,7 +158,7 @@
 		</skills>
 	</item>
 	<item id="34610" name="Mysterious Blessed No-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its magic significantly. Used with No-grade weapons. -->
+		<!-- Increases weapons' magic power. Used with No-grade weapons. -->
 		<set name="icon" val="icon.etc_spell_shot_white_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="SPIRITSHOT" />
@@ -172,7 +172,7 @@
 		</skills>
 	</item>
 	<item id="34611" name="Mysterious Blessed D-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its magic significantly. Used with D-grade weapons. -->
+		<!-- Increases weapons' magic power. Used with D-grade weapons. -->
 		<set name="icon" val="icon.etc_spell_shot_blue_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="D" />
@@ -187,7 +187,7 @@
 		</skills>
 	</item>
 	<item id="34612" name="Mysterious Blessed C-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its magic significantly. Used with C-grade weapons. -->
+		<!-- Increases weapons' magic power. Used with C-grade weapons. -->
 		<set name="icon" val="icon.etc_spell_shot_green_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -202,7 +202,7 @@
 		</skills>
 	</item>
 	<item id="34613" name="Mysterious Blessed B-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- Increases a weapon's magic power. Used with B-grade weapons. -->
+		<!-- Increases weapons' magic power. Used with B-grade weapons. -->
 		<set name="icon" val="icon.etc_spell_shot_red_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="B" />
@@ -217,7 +217,7 @@
 		</skills>
 	</item>
 	<item id="34614" name="Mysterious Blessed A-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- Increases a weapon's magic power. Used with A-grade weapons. -->
+		<!-- Increases weapons' magic power. Used with A-grade weapons. -->
 		<set name="icon" val="icon.etc_spell_shot_silver_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="A" />
@@ -232,7 +232,7 @@
 		</skills>
 	</item>
 	<item id="34615" name="Mysterious Blessed S-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- Increases a weapon's magical power. Used with S-grade weapons. -->
+		<!-- Increases weapons' magic power. Used with S-grade weapons. -->
 		<set name="icon" val="icon.etc_spell_shot_gold_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="S" />
@@ -247,7 +247,7 @@
 		</skills>
 	</item>
 	<item id="34616" name="Mysterious Blessed R-grade Spiritshot" additionalName="Event" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its M. Atk. significantly. Can be used with an R-grade weapon. -->
+		<!-- Increases weapons' magic power. Used with R-grade weapons. -->
 		<set name="icon" val="icon.blessed_spiritshot_r_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
 		<set name="immediate_effect" val="true" />
@@ -278,7 +278,7 @@
 		</skills>
 	</item>
 	<item id="34618" name="PA - Enhanced Cocktail" additionalName="PA exclusive" type="EtcItem">
-		<!-- Cocktail that contains the flavors of many rare fruits. When consumed, you will feel the effects of Horn Melody, Pipe Organ Melody, Guitar Melody, and Drum Melody. -->
+		<!-- Cocktail from rare fruits. When consumed, you will feel the effect of Musician's Melody and Sonata Performance for 30 min. -->
 		<set name="icon" val="icon.etc_fruit_cocktail_i02" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -318,7 +318,7 @@
 		</skills>
 	</item>
 	<item id="34620" name="Heavenly Cocktail" type="EtcItem">
-		<!-- For 60 min., you receive the following Lv. 1 effects: Horn Melody, Pipe Organ Melody, Guitar Melody, and Drum Melody. Cooldown is 60 min. -->
+		<!-- For 60 min., you receive the effects of Musician's Melody Lv. 1. Cooldown is 60 min. -->
 		<set name="icon" val="icon.etc_fruit_cocktail_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -446,7 +446,7 @@
 		</stats>
 	</item>
 	<item id="34627" name="Scroll: Enchant Elemental Shirt" type="EtcItem">
-		<!-- For Pa'agrio's Shirt, Sayha's Shirt, Eva's Shirt, Maphr's Shirt, Shiny Elemental Shirt, and Physical/ Magical Reflect Shirt. P./ M. Def. +1. When enchanted to +4 and higher, P. Def. +3, basic stats (CON, MEN, STR, INT, DEX, and WIT) are increasing with each enchant value. The enchanting is safe up to +3. The maximum enchant value is +10. Depending on the shirt type and its enchant value, additional bonuses are added. -->
+		<!-- An enchant scroll for Sayha's/ Eva's/ Maphr's/ Pa'agrio's Shirt, Shiny Elemental Shirt and Physical/ Magical Reflect Shirt. P./ M. Def. +1. When enchanted to +4 and higher, P. Def. +3, basic stats (CON, MEN, STR, INT, DEX, and WIT) are increasing with each enchant value. The enchanting is safe up to +3. The maximum enchant value is +10. Depending on the shirt type and its enchant value, additional bonuses are applied. -->
 		<set name="icon" val="icon.g_scrl_of_ench_wolf_shirt" />
 		<set name="weight" val="10" />
 		<set name="is_dropable" val="false" />
@@ -556,7 +556,7 @@
 		<set name="material" val="WOOD" />
 	</item>
 	<item id="34635" name="Pirate's Eyepatch - STR Pendant" type="EtcItem">
-		<!-- Can increase STR by equipping the Pirate's Eyepatch. -->
+		<!-- Can be combined with Pirate's Eyepatch to get Pirate's Eyepatch - STR. -->
 		<set name="icon" val="icon.accessory_eye_bandage_i00" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="immediate_effect" val="true" />
@@ -564,7 +564,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="34636" name="Pirate's Eyepatch - DEX Pendant" type="EtcItem">
-		<!-- Can increase DEX by equipping the Pirate's Eyepatch. -->
+		<!-- Can be combined with Pirate's Eyepatch to get Pirate's Eyepatch - DEX. -->
 		<set name="icon" val="icon.accessory_eye_bandage_i00" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="immediate_effect" val="true" />
@@ -572,7 +572,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="34637" name="Outlaw's Eyepatch - CON Pendant" type="EtcItem">
-		<!-- Can increase CON by equipping the Outlaw's Eyepatch. -->
+		<!-- Can be combined with Outlaw's Eyepatch to get Outlaw's Eyepatch - CON. -->
 		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="immediate_effect" val="true" />
@@ -580,7 +580,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="34638" name="Outlaw's Eyepatch - MEN Pendant" type="EtcItem">
-		<!-- Can increase MEN by equipping the Outlaw's Eyepatch. -->
+		<!-- Can be combined with Outlaw's Eyepatch to get Outlaw's Eyepatch - MEN. -->
 		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="immediate_effect" val="true" />
@@ -588,7 +588,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="34639" name="Eyepatch - INT Pendant" type="EtcItem">
-		<!-- Can increase INT by equipping the Eyepatch. -->
+		<!-- Can be combined with Eyepatch to get Eyepatch - INT. -->
 		<set name="icon" val="icon.Accessary_one_eye_i00" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="immediate_effect" val="true" />
@@ -596,7 +596,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="34640" name="Eyepatch - WIT Pendant" type="EtcItem">
-		<!-- Can increase WIT by equipping the Eyepatch. -->
+		<!-- Can be combined with Eyepatch to get Eyepatch - WIT. -->
 		<set name="icon" val="icon.Accessary_one_eye_i00" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
 		<set name="immediate_effect" val="true" />
@@ -1262,7 +1262,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="34691" name="Hair Accessory Pack" type="EtcItem">
-		<!-- Chest containing Hair Accessory. -->
+		<!-- Double-click to obtain a head accessory. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -1277,7 +1277,7 @@
 		</skills>
 	</item>
 	<item id="34692" name="Pendant Pack" type="EtcItem">
-		<!-- Chest containing Hair Accessory Pendant. -->
+		<!-- Double-click to obtain a pendant for head accessories. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -1292,7 +1292,7 @@
 		</skills>
 	</item>
 	<item id="34693" name="Attribute Stone Fragment Box" type="EtcItem">
-		<!-- Box containing attribute stone. -->
+		<!-- Attribute Stone Fragment Box -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -1307,7 +1307,7 @@
 		</skills>
 	</item>
 	<item id="34694" name="Hero's Enchant Stone Pack" type="EtcItem">
-		<!-- Box containing Lucky Enchant Stone. -->
+		<!-- Double-click to obtain Enchant Stone. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -1337,7 +1337,7 @@
 		</skills>
 	</item>
 	<item id="34696" name="Hero's Blessed Enchant Scroll Pack" type="EtcItem">
-		<!-- Box containing Blessed Enchant Scroll. -->
+		<!-- Double-click to obtain a Blessed Enchant Scroll. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />

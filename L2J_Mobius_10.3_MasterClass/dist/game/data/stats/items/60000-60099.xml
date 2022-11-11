@@ -151,7 +151,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60015" name="Spellbook: Create Mysterious Soulshots" type="EtcItem">
-		<!-- A spellbook for learning the Create Mysterious R-grade Soulshots skill. -->
+		<!-- A spellbook for learning the Create Mysterious R-grade Soulshots skill. Note! The skill is deleted when changing class with Stone of Destiny. -->
 		<set name="icon" val="BranchIcon.Icon.g_book_summonsoulshot_r" />
 		<set name="is_depositable" val="true" />
 		<set name="is_tradable" val="true" />
@@ -165,7 +165,7 @@
 		</skills>
 	</item>
 	<item id="60016" name="Spellbook: Create Mysterious Spiritshots" type="EtcItem">
-		<!-- A spellbook for learning the Create Mysterious R-grade Spiritshots skill. -->
+		<!-- A spellbook for learning the Create Mysterious R-grade Spiritshots skill. Note! The skill is deleted when changing class with Stone of Destiny. -->
 		<set name="icon" val="BranchIcon.Icon.g_book_summonspiritshot_r" />
 		<set name="is_depositable" val="true" />
 		<set name="is_tradable" val="true" />
@@ -187,7 +187,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60018" name="Night Goblin's Jewel Box" type="EtcItem">
-		<!-- Double-click to obtain Glittering Freya's Scroll of Storm and Glittering Freya's Ice Rose. Additionally, you can get 1 useful item. -->
+		<!-- Double-click to obtain Freya's Glittering Scroll of Storm and Freya's Glittering Ice Rose. Additionally, you can get 1 useful item. -->
 		<set name="icon" val="icon.etc_treasure_box_i11" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -403,7 +403,7 @@
 		</skills>
 	</item>
 	<item id="60035" name="Watermelon Hat" additionalName="14-day" type="Armor">
-		<!-- Hat that looks like a watermelon. It feels cool just by looking at it. Uses 2 hair accessory slots. -->
+		<!-- A hat that looks like a watermelon. Just looking at it is refreshing. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_watermelon_cap_a_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -531,7 +531,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60047" name="Gran Kain's Necklace Lv. 1" additionalName="Event" type="Armor">
-		<!-- MP +107, Dark Resistance +50, STR +3, INT +3, CON +3, Skill Cooldown -10%, Damage Reflection +5%, P. Atk. +15%, M. Atk. +10%, Skill Power +15%, Max HP +3%, Max MP +5%, Confusion Resistance +25%, Obstruction Resistance +25%, Stupor Resistance +15%. Cannot be enchanted. -->
+		<!-- MP +107 STR +3, INT +3, CON +3 P. Atk. +15%, M. Atk. +10% Skill Cooldown -10% P./ M. Skill Power +15% Damage Reflection +5% Max HP +3%, Max MP +5% <Debuff resistance> Confusion/ Obstruction +25% Stupor +15% Cannot be enchanted or upgraded. -->
 		<set name="icon" val="BranchIcon.Icon.necklace_of_grankein_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -582,7 +582,7 @@
 		</stats>
 	</item>
 	<item id="60050" name="Einhasad's Necklace Lv. 1" additionalName="Event" type="Armor">
-		<!-- MP +107, Holy Resistance +50, STR +3, INT +3, CON +3, Skill Cooldown -10%, Damage Reflection +5%, P. Atk. +10%, M. Atk. +15%, Skill Power +15%, Max HP +5%, Max MP +3%, Confusion Resistance +25%, Obstruction Resistance +25%, Stupor Resistance +25%. Cannot be enchanted. -->
+		<!-- MP +107 STR +3, INT +3, CON +3 P. Atk. +10%, M. Atk. +15% Skill Cooldown -10% P./ M. Skill Power +15% Damage Reflection +5% Max HP +5%, Max MP +3% <Debuff resistance> Confusion/ Obstruction +25% Stupor +15% Cannot be enchanted or upgraded. -->
 		<set name="icon" val="BranchIcon.Icon.necklace_of_einhasad_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -633,7 +633,7 @@
 		</stats>
 	</item>
 	<item id="60053" name="Pa'agrio's Earring Lv. 1" additionalName="Event" type="Armor">
-		<!-- MP +80, Fire Resistance +70, DEX +3, WIT +3, MEN +3, Vampiric Rage effect +5%, MP Consumption -5%, P. Def. +15%, M. Def. +10%, P./ M. Debuff Reflection Rate +13%, M. Damage Reflection Rate +13%, P. Skill Evasion +5%, P. Skill Power +2%, Speed +2, Received Healing +10%, Healing Power +80, Obstruction/ Stupor Resistance +10%, Confusion/ Vital Point Attack Resistance +30%, Petrification/ Infection Resistance +40%. Cannot be enchanted. -->
+		<!-- MP +80 DEX +3, WIT +3, MEN +3 P. Def. +15%, M. Def. +10% P. Skill Power +2% Healing Power +80 P./ M. Debuff Reflection Rate +13% M. Damage Reflection Rate +13% P. Skill Evasion +5% Vampiric Rage +5% MP Consumption -5% Received Healing +10% Speed +2 <Debuff resistance> Obstruction/ Stupor +10% Confusion/ Danger Zone +30% Petrification/ Infection +40% Cannot be enchanted or upgraded. -->
 		<set name="icon" val="BranchIcon.Icon.earring_of_paagrio_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -684,7 +684,7 @@
 		</stats>
 	</item>
 	<item id="60056" name="Eva's Earring Lv. 1" additionalName="Event" type="Armor">
-		<!-- MP +160, Water Resistance +70, DEX +3, WIT +3, MEN +3, Vampiric Rage effect +5%, MP Consumption -5%, P. Def. +10%, M. Def. +15%, P./ M. Debuff Reflection Rate +13%, M. Damage Reflection Rate +13%, P. Skill Evasion +5%, P. Skill Power +2%, Speed +2, Received Healing +5%, Healing Power +160, Obstruction/ Stupor Resistance +10%, Confusion/ Vital Point Attack Resistance +30%, Petrification/ Infection Resistance +40%. Cannot be enchanted. -->
+		<!-- MP +160 DEX +3, WIT +3, MEN +3 P. Def. +10%, M. Def. +15% P. Skill Power +2% Healing Power +160 P./ M. Debuff Reflection Rate +13% M. Damage Reflection Rate +13% P. Skill Evasion +5% Vampiric Rage +5% MP Consumption -5% Received Healing +5% Speed +2 <Debuff resistance> Obstruction/ Stupor +10% Confusion/ Danger Zone +30% Petrification/ Infection +40% Cannot be enchanted or upgraded. -->
 		<set name="icon" val="BranchIcon.Icon.earring_of_eva_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -735,7 +735,7 @@
 		</stats>
 	</item>
 	<item id="60059" name="Sayha's Ring Lv. 1" additionalName="Event" type="Armor">
-		<!-- MP +53, CHA +3, LUC +3, P. Critical Damage/ M. Skill Critical Damage +20%, Atk. Spd. +6%, Casting Spd. +6%, Damage Reflection Resistance +30%, Fixed Damage Resistance +5%, P./ M. Skill Power +5%, Speed +2, Physical/ Mental Resistance +10, P. Accuracy +2, HP Recovery +10%, Confusion Resistance +20%, Obstruction Resistance +12%, Petrification Resistance +10%, Infection Resistance +40%, Vital Point Attack Resistance +10%. Cannot be enchanted. -->
+		<!-- MP +53 CHA +3, LUC +3 P. Critical Damage/ M. Skill Critical Damage +20% Atk. Spd. +6%, Casting Spd. +6% P./ M. Skill Power +5% Damage Reflection Resistance +30% Fixed Damage Resistance +5% Physical/ Mental Attack Resistance +10 Speed +2 HP Recovery +10% Accuracy +2 <Debuff resistance> Confusion +20%, Obstruction +12%, Petrification +10% Infection +40%, Danger Zone Resistance +10% Cannot be enchanted or upgraded. -->
 		<set name="icon" val="BranchIcon.Icon.ring_of_sayhas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -752,7 +752,7 @@
 		</stats>
 	</item>
 	<item id="60060" name="Sayha's Ring Lv. 2" additionalName="Event" type="Armor">
-		<!-- MP +57, CHA +3, LUC +3, P. Critical Damage/ M. Skill Critical Damage +20%, Atk. Spd. +6%, Casting Spd. +6%, Damage Reflection Resistance +33%, Fixed Damage Resistance +6%, P./ M. Skill Power +9%, Speed +2, Physical/ Mental Resistance +11, P. Accuracy +3, HP Recovery +15%, Confusion Resistance +22%, Obstruction Resistance +14%, Petrification Resistance +11%, Infection Resistance +42%, Vital Point Attack Resistance +12%. Blocks P./ M. skills with a 1% chance for basic attacks and 2% for skill casting. Additionally, upon activation of toggle skills, Speed +7, P. Atk. in PvP +4%, P./ M. Atk. +12%, Critical Rate for basic attacks -55, P./ M. Def. -18%; nearby enemies' Speed -10%, Atk. Spd./ Casting Spd. -10%. Cannot be enchanted or upgraded. -->
+		<!-- MP +57, CHA +3, LUC +3, P. Critical Damage/ M. Skill Critical Damage +20%, Atk. Spd. +6%, Casting Spd. +6%, Damage Reflection Resistance +33%, Fixed Damage Resistance +6%, P./ M. Skill Power +9%, Speed +2, Physical/ Mental Resistance +11, P. Accuracy +3, HP Recovery +15%, Confusion Resistance +22%, Obstruction Resistance +14%, Petrification Resistance +11%, Infection Resistance +42%, Vital Point Attack Resistance +12%. Blocks P./ M. skills with a 1% chance for basic attacks and 2% for skill casting. Additionally, upon activation of toggle skills, Speed +7, P. Atk. in PvP +4%, P./ M. Atk. +12%, Critical Rate for basic attacks -55, P./ M. Def. -18% -->
 		<set name="icon" val="BranchIcon.Icon.ring_of_sayhas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -769,7 +769,7 @@
 		</stats>
 	</item>
 	<item id="60061" name="Sayha's Ring Lv. 3" additionalName="Event" type="Armor">
-		<!-- MP +60, CHA +4, LUC +4, P. Critical Damage/ M. Skill Critical Damage +21%, Atk. Spd. +7%, Casting Spd. +7%, Damage Reflection Resistance +35%, Fixed Damage Resistance +7%, P./ M. Skill Power +12%, Speed +3, Physical/ Mental Resistance +12, P. Accuracy +4, HP Recovery +18%, Confusion Resistance +24%, Obstruction Resistance +16%, Petrification Resistance +12%, Infection Resistance +44%, Vital Point Attack Resistance +14%. Blocks P./ M. skills with a 2% chance for basic attacks and 3% for skill casting. Additionally, upon activation of toggle skills, Speed +10, P. Atk. in PvP +6%, P./ M. Atk. +15%, Critical Rate for basic attacks -50, P./ M. Def. -16%; nearby enemies' Speed -15%, Atk. Spd./ Casting Spd. -15%. Cannot be enchanted or upgraded. -->
+		<!-- MP +60, CHA +4, LUC +4, P. Critical Damage/ M. Skill Critical Damage +21%, Atk. Spd. +7%, Casting Spd. +7%, Damage Reflection Resistance +35%, Fixed Damage Resistance +7%, P./ M. Skill Power +12%, Speed +3, Physical/ Mental Resistance +12, P. Accuracy +4, HP Recovery +18%, Confusion Resistance +24%, Obstruction Resistance +16%, Petrification Resistance +12%, Infection Resistance +44%, Vital Point Attack Resistance +14%. Blocks P./ M. skills with a 2% chance for basic attacks and 3% for skill casting. Additionally, upon activation of toggle skills, Speed +10, P. Atk. in PvP +6%, P./ M. Atk. +15%, Critical Rate for basic attacks -50, P./ M. Def. -16% -->
 		<set name="icon" val="BranchIcon.Icon.ring_of_sayhas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -786,7 +786,7 @@
 		</stats>
 	</item>
 	<item id="60062" name="Maphr's Ring Lv. 1" additionalName="Event" type="Armor">
-		<!-- MP +53, CHA +3, LUC +3, P. Critical Damage/ M. Skill Critical Damage +20%, Atk. Spd. +6%, Casting Spd. +6%, Damage Reflection Resistance +30%, Fixed Damage Resistance +5%, P./ M. Skill Power +5%, Speed +2, Physical/ Mental Resistance +10, M. Accuracy +2, MP Recovery +10%, Confusion Resistance +20%, Obstruction Resistance +12%, Petrification Resistance +10%, Infection Resistance +40%, Vital Point Attack Resistance +10%. Cannot be enchanted. -->
+		<!-- MP +53 CHA +3, LUC +3 P. Critical Damage/ M. Skill Critical Damage +20% Atk. Spd. +6%, Casting Spd. +6% P./ M. Skill Power +5% Damage Reflection Resistance +30% Fixed Damage Resistance +5% Physical/ Mental Attack Resistance +10 Speed +2 M. Accuracy +2 MP Recovery +10% <Debuff resistance> Confusion +20%, Obstruction +12%, Petrification +10% Infection +40%, Danger Zone Resistance +10% Cannot be enchanted or upgraded. -->
 		<set name="icon" val="BranchIcon.Icon.ring_of_maphr_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -803,7 +803,7 @@
 		</stats>
 	</item>
 	<item id="60063" name="Maphr's Ring Lv. 2" additionalName="Event" type="Armor">
-		<!-- MP +57, CHA +3, LUC +3, P. Critical Damage/ M. Skill Critical Damage +20%, Atk. Spd. +6%, Casting Spd. +6%, Damage Reflection Resistance +33%, Fixed Damage Resistance +6%, P./ M. Skill Power +9%, Speed +2, Physical/ Mental Resistance +11, M. Accuracy +3, MP Recovery +15%, Confusion Resistance +22%, Obstruction Resistance +14%, Petrification Resistance +11%, Infection Resistance +42%, Vital Point Attack Resistance +12%. Binds the target with a chance of 1% for basic attacks and 2% for skill casting. Additionally, upon activation of toggle skills, P. Def. in PvP +4%, P./ M. Critical Damage -6%, Fixed Damage Resistance +22%, Shield Defense +930, Shield Defense Rate +22%, Speed -28%; party members' P. Def. in PvP +3%, Fixed Damage Resistance +17%, Received Healing +12%. Cannot be enchanted or upgraded. -->
+		<!-- MP +57, CHA +3, LUC +3, P. Critical Damage/ M. Skill Critical Damage +20%, Atk. Spd. +6%, Casting Spd. +6%, Damage Reflection Resistance +33%, Fixed Damage Resistance +6%, P./ M. Skill Power +9%, Speed +2, Physical/ Mental Resistance +11, M. Accuracy +3, MP Recovery +15%, Confusion Resistance +22%, Obstruction Resistance +14%, Petrification Resistance +11%, Infection Resistance +42%, Vital Point Attack Resistance +12%. Binds the target with a chance of 1% for basic attacks and 2% for skill casting. Additionally, upon activation of toggle skills, P. Def. in PvP +4%, P./ M. Critical Damage -6%, Fixed Damage Resistance +22%, Shield Defense +930, Shield Defense Rate +22%, Speed -28% -->
 		<set name="icon" val="BranchIcon.Icon.ring_of_maphr_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -820,7 +820,7 @@
 		</stats>
 	</item>
 	<item id="60064" name="Maphr's Ring Lv. 3" additionalName="Event" type="Armor">
-		<!-- MP +60, CHA +4, LUC +4, P. Critical Damage/ M. Skill Critical Damage +21%, Atk. Spd. +7%, Casting Spd. +7%, Damage Reflection Resistance +35%, Fixed Damage Resistance +7%, P./ M. Skill Power +12%, Speed +3, Physical/ Mental Resistance +12, M. Accuracy +4, MP Recovery +18%, Confusion Resistance +24%, Obstruction Resistance +16%, Petrification Resistance +12%, Infection Resistance +44%, Vital Point Attack Resistance +14%. Binds the target with a chance of 2% for basic attacks and 3% for skill casting. Additionally, upon activation of toggle skills, P. Def. in PvP +5%, P./ M. Critical Damage -12%, Fixed Damage Resistance +24%, Shield Defense +1000, Shield Defense Rate +24%, Speed -26%; party members' P. Def. in PvP +4%, Fixed Damage Resistance +19%, Received Healing +14%. Cannot be enchanted or upgraded. -->
+		<!-- MP +60, CHA +4, LUC +4, P. Critical Damage/ M. Skill Critical Damage +21%, Atk. Spd. +7%, Casting Spd. +7%, Damage Reflection Resistance +35%, Fixed Damage Resistance +7%, P./ M. Skill Power +12%, Speed +3, Physical/ Mental Resistance +12, M. Accuracy +4, MP Recovery +18%, Confusion Resistance +24%, Obstruction Resistance +16%, Petrification Resistance +12%, Infection Resistance +44%, Vital Point Attack Resistance +14%. Binds the target with a chance of 2% for basic attacks and 3% for skill casting. Additionally, upon activation of toggle skills, P. Def. in PvP +5%, P./ M. Critical Damage -12%, Fixed Damage Resistance +24%, Shield Defense +1000, Shield Defense Rate +24%, Speed -26% -->
 		<set name="icon" val="BranchIcon.Icon.ring_of_maphr_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -938,7 +938,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60076" name="Charming Mermaid's Pack" type="EtcItem">
-		<!-- Double-click to obtain Glittering Freya's Ice Rose, 2 Glittering Freya's Scrolls of Storm and a random item from the list. -->
+		<!-- Double-click to obtain Freya's Glittering Ice Rose, 2 Freya's Glittering Scrolls of Storm and a random item from the list. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -947,7 +947,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="60077" name="Clan Rewards" type="EtcItem">
-		<!-- Double-click to obtain one of the following rewards: Ice Rose (8 pcs.), Glowing Dragon's Attribute Potion (8 pcs.), Honey Dark Beer (8 pcs.), Emperor's Special Cocktail (4 pcs.), Shining Nevit's Gold Hourglass (8 pcs.). -->
+		<!-- Double-click to obtain one of the following rewards: Freya's Ice Rose (8 pcs.), Glowing Dragon's Attribute Potion (8 pcs.), Honey Dark Beer (8 pcs.), Emperor's Special Cocktail (4 pcs.), Shining Nevit's Gold Hourglass (8 pcs.). -->
 		<set name="icon" val="icon.etc_readybox_gold" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1022,7 +1022,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="60085" name="Ancient War Relic" type="EtcItem">
-		<!-- Double-click to obtain a Labirinth pack. -->
+		<!-- Double-click to obtain a treasure chest. -->
 		<set name="icon" val="icon.etc_treasure_box_i10" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1075,7 +1075,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="60091" name="Abundance Mark" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- A mark that symbolizes abundance. Required for creating High-grade Talisman of Abundance. -->
 		<set name="icon" val="BranchSys2.icon.g_dawn_gem" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1119,7 +1119,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="60096" name="Heir's Radiance Lv. 8" additionalName="PvE/PvP" type="Armor">
-		<!-- Attribute Attack +60 Attribute Resistance +60 Debuff Resistance +15% Max HP +7000 Received damage from area attacks/ skill critical attacks -15% P./ M. Skill Power +5% All Critical Damage +5% STR +5, DEX +5, CON +5, INT +5, WIT +5, MEN +5, CHA +5, LUC +5 PvP/ PvE damage +10% Dragon Claw's received damage -15% Enables the Heir's Radiance - PvP/ PvE Lv. 1 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +15% Warrior's Circlet: P. Atk. +15% Wizard's Circlet: M. Atk. +15% Cannot be enchanced. -->
+		<!-- Attribute Attack +60 Attribute Resistance +60 Debuff Resistance +15% Max HP +7000 Received AoE damage/ skill critical damage -15% P./ M. Skill Power +5% All Critical Damage +5% STR +5, DEX +5, CON +5, INT +5, WIT +5, MEN +5, CHA +5, LUC +5 PvP/ PvE damage +10% Received damage from Dragon weapons -15% Enables the Heir's Radiance - PvP/ PvE Lv. 1 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +15% Warrior's Circlet: P. Atk. +15% Wizard's Circlet: M. Atk. +15% Cannot be enchanted. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_ring_of_light" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1135,7 +1135,7 @@
 		</skills>
 	</item>
 	<item id="60097" name="Heir's Radiance Lv. 9" additionalName="PvE/PvP" type="Armor">
-		<!-- Attribute Attack +70 Attribute Resistance +70 Debuff Resistance +20% Max HP +9000 Received damage from area attacks/ skill critical attacks -17% P./ M. Skill Power +10% All Critical Damage +10% STR +6, DEX +6, CON +6, INT +6, WIT +6, MEN +6, CHA +6, LUC +6 PvP/ PvE damage +12% Dragon Claw's received damage -17% Enables the Heir's Radiance - PvP/ PvE Lv. 2 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +20% Warrior's Circlet: P. Atk. +20% Wizard's Circlet: M. Atk. +20% Cannot be enchanced. -->
+		<!-- Attribute Attack +70 Attribute Resistance +70 Debuff Resistance +20% Max HP +9000 Received AoE damage/ skill critical damage -17% P./ M. Skill Power +10% All Critical Damage +10% STR +6, DEX +6, CON +6, INT +6, WIT +6, MEN +6, CHA +6, LUC +6 PvP/ PvE damage +12% Received damage from Dragon weapons -17% Enables the Heir's Radiance - PvP/ PvE Lv. 2 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +20% Warrior's Circlet: P. Atk. +20% Wizard's Circlet: M. Atk. +20% Cannot be enchanted. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_ring_of_light" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1151,7 +1151,7 @@
 		</skills>
 	</item>
 	<item id="60098" name="Heir's Radiance Lv. 10" additionalName="PvE/PvP" type="Armor">
-		<!-- Attribute Attack +80 Attribute Resistance +80 Debuff Resistance +25% Max HP +10000 Received damage from area attacks/ skill critical attacks -20% P./ M. Skill Power +20% All Critical Damage +20% STR +7, DEX +7, CON +7, INT +7, WIT +7, MEN +7, CHA +7, LUC +7 PvP/ PvE damage +15% Dragon Claw's received damage -20% Enables the Heir's Radiance - PvP/ PvE Lv. 3 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +25% Warrior's Circlet: P. Atk. +25% Wizard's Circlet: M. Atk. +25% Cannot be enchanced. -->
+		<!-- Attribute Attack +80 Attribute Resistance +80 Debuff Resistance +25% Max HP +10000 Received AoE damage/ skill critical damage -20% P./ M. Skill Power +20% All Critical Damage +20% STR +7, DEX +7, CON +7, INT +7, WIT +7, MEN +7, CHA +7, LUC +7 PvP/ PvE damage +15% Received damage from Dragon weapons -20% Enables the Heir's Radiance - PvP/ PvE Lv. 3 skill. <When equipped with Knight's/ Wizard's/ Warrior's Circlet> Knight's Circlet: P./ M. Def. +25% Warrior's Circlet: P. Atk. +25% Wizard's Circlet: M. Atk. +25% Cannot be enchanted. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_ring_of_light" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1176,7 +1176,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48957" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Atk. (Attack) -->
+			<item id="48957" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Artifact - P. Atk. - Attack -->
 		</capsuled_items>
 	</item>
 </list>

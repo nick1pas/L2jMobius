@@ -106,7 +106,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21206" name="Queen Ant's Ring" additionalName="30-day" type="Armor">
-		<!-- Temporary item. MP +21, Infection Resistance/ Atk. Rate +30%, Obstruction Resistance/ Atk. Rate +20%. Increases P. Accuracy, Critical Damage. Effects of two identical rings do not stack. -->
+		<!-- Time-limited item. MP +21, Infection Atk. Rate and Resistance +30%, Obstruction Atk. Rate and Resistance +20%. Increases P. Accuracy, Critical Damage. Effects of two identical rings do not stack. -->
 		<set name="icon" val="icon.bm_ring_of_queen_ant" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -130,7 +130,7 @@
 		</stats>
 	</item>
 	<item id="21207" name="Baium's Ring" additionalName="30-day" type="Armor">
-		<!-- Temporary item. MP +21, Infection Atk. Rate and Resistance +40%, Obstruction Atk. Rate and Resistance +30%. Increases P. Accuracy, Critical Damage, Atk. Spd., and Casting Spd. Effects of two identical rings do not stack. -->
+		<!-- Time-limited item. MP +21, Poison Resistance +40%, Poison Atk. Rate +40%, Accuracy +2, Critical Damage for basic attacks +15%, Hold Resistance +30%, Hold Atk. Rate +30%, Atk. Spd. +4%, Casting Spd. +4%. Effects of two identical rings do not stack. -->
 		<set name="icon" val="icon.bm_ring_of_baium" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -154,7 +154,7 @@
 		</stats>
 	</item>
 	<item id="21208" name="Zaken's Earring" additionalName="30-day" type="Armor">
-		<!-- Temporary item. MP +31, Infection Resistance/ Atk. Rate +30%, Confusion Resistance/ Atk. Rate +20%. Increases Received Healing, grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. -->
+		<!-- Time-limited item. MP +31, Infection Atk. Rate and Resistance +30%, Confusion Atk. Rate and Resistance +20%. Increases Received Healing, grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. -->
 		<set name="icon" val="icon.bm_earring_of_zaken" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -327,7 +327,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21218" name="Queen Ant's Ring" additionalName="180-day" type="Armor">
-		<!-- Temporary item. MP +21, Infection Resistance/ Atk. Rate +30%, Obstruction Resistance/ Atk. Rate +20%. Increases P. Accuracy, Critical Damage. Effects of two identical rings do not stack. -->
+		<!-- Time-limited item. MP +21, Infection Atk. Rate and Resistance +30%, Obstruction Atk. Rate and Resistance +20%. Increases P. Accuracy, Critical Damage. Effects of two identical rings do not stack. -->
 		<set name="icon" val="icon.accessory_ring_of_queen_ant_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -351,7 +351,7 @@
 		</stats>
 	</item>
 	<item id="21219" name="Baium's Ring" additionalName="180-day" type="Armor">
-		<!-- Temporary item. MP +21, Infection Atk. Rate and Resistance +40%, Obstruction Atk. Rate and Resistance +30%. Increases P. Accuracy, Critical Damage, Atk. Spd., and Casting Spd. Effects of two identical rings do not stack. -->
+		<!-- Time-limited item. MP +21, Poison Resistance +40%, Poison Atk. Rate +40%, Accuracy +2, Critical Damage for basic attacks +15%, Hold Resistance +30%, Hold Atk. Rate +30%, Atk. Spd. +4%, Casting Spd. +4%. Effects of two identical rings do not stack. -->
 		<set name="icon" val="icon.accessory_ring_of_baium_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -375,7 +375,7 @@
 		</stats>
 	</item>
 	<item id="21220" name="Zaken's Earring" additionalName="180-day" type="Armor">
-		<!-- Temporary item. MP +31, Infection Resistance/ Atk. Rate +30%, Confusion Resistance/ Atk. Rate +20%. Increases Received Healing, grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. -->
+		<!-- Time-limited item. MP +31, Infection Atk. Rate and Resistance +30%, Confusion Atk. Rate and Resistance +20%. Increases Received Healing, grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. -->
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -399,7 +399,7 @@
 		</stats>
 	</item>
 	<item id="21221" name="Valakas' Necklace" additionalName="180-day" type="Armor">
-		<!-- Temporary item. MP +50, Stupor Resistance/ Atk. Rate +40%, HP +445, decreases Skill Cooldown, increases P. Atk./ M. Atk. Wild Magic Effect and Damage Reflection Effect. Increases Fire Resistance. -->
+		<!-- Time-limited item. MP +50, Stupor Atk. Rate and Resistance +40%, HP +445, decreases Skill Cooldown, increases P. Atk. and M. Atk. Applies the Wild Magic and Damage Reflection effects, increases Fire Resistance. -->
 		<set name="icon" val="icon.accessory_necklace_of_valakas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -423,7 +423,7 @@
 		</stats>
 	</item>
 	<item id="21222" name="Antharas' Earring" additionalName="180-day" type="Armor">
-		<!-- Temporary item. MP +37, Infection Resistance/ Atk. Rate +40%, Confusion Resistance/ Atk. Rate +30%. Increases Received Healing and Earth Resistance, grants Vampiric Rage effect, decreases MP Consumption. Effects of two identical earrings do not stack. -->
+		<!-- Time-limited item. MP +37, Infection Atk. Rate and Resistance +40%, Confusion Atk. Rate and Resistance +30%. Increases Received Healing and Earth Resistance, grants Vampiric Rage effect, decreases MP Consumption. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.accessory_earring_of_antaras_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -447,7 +447,7 @@
 		</stats>
 	</item>
 	<item id="21223" name="Package: Transformation Scroll: Anakim" type="EtcItem">
-		<!-- Double-click to obtain 5 Anakim Transformation Scrolls. -->
+		<!-- Double-click to obtain 5 Transformation Scrolls: Anakim. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -945,7 +945,7 @@
 		</skills>
 	</item>
 	<item id="21248" name="Vitality Replenishing Potion" additionalName="Event" type="EtcItem">
-		<!-- Replenishes some vitality upon use. Cooldown is 60 min. No weekly usage limit. -->
+		<!-- Recharges a certain amount of Vitality when used. No limitations on use. -->
 		<set name="icon" val="icon.etc_potion_of_energy_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -1369,7 +1369,7 @@
 		</skills>
 	</item>
 	<item id="21273" name="Package: Pet Necklace Coupon" type="EtcItem">
-		<!-- Double-click to obtain 3 Minion coupons. -->
+		<!-- Double-click to obtain 3 Pet Necklace Coupons. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1381,11 +1381,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13273" min="3" max="3" chance="100" /> <!-- Minion Coupon (5-hour) -->
+			<item id="13273" min="3" max="3" chance="100" /> <!-- Pet Necklace Coupon (5-hour) -->
 		</capsuled_items>
 	</item>
 	<item id="21274" name="Package: Pet Necklace Coupon" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain 3 Minion coupons. -->
+		<!-- Double-click to obtain 3 Pet Necklace Coupons. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1397,11 +1397,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13383" min="3" max="3" chance="100" /> <!-- Minion Coupon (5-hour) - Event -->
+			<item id="13383" min="3" max="3" chance="100" /> <!-- Pet Necklace Coupon (5-hour) - Event -->
 		</capsuled_items>
 	</item>
 	<item id="21275" name="Pet Necklace Coupon" type="EtcItem">
-		<!-- A coupon that can be exchanged for Minion Necklace (5-hour) through the Game Assistant. -->
+		<!-- A coupon that can be exchanged for Pet Necklace (5-hour) through the Game Assistant. -->
 		<set name="icon" val="icon.etc_ticket_red_i00" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -1416,7 +1416,7 @@
 		<set name="handler" val="ItemSkills" />
 	</item>
 	<item id="21276" name="Pet Necklace Coupon" additionalName="Event" type="EtcItem">
-		<!-- A coupon that can be exchanged for Minion Necklace (5-hour) through the Game Assistant. -->
+		<!-- A coupon that can be exchanged for Pet Necklace (5-hour) through the Game Assistant. -->
 		<set name="icon" val="icon.etc_ticket_red_i00" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="10" />
@@ -1447,7 +1447,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21278" name="Package: Superior Minion Coupon" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain 2 Superior Minion coupons. -->
+		<!-- Double-click to obtain 2 Superior Minion Coupons. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1459,7 +1459,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14074" min="2" max="2" chance="100" /> <!-- Superior Minion Coupon (Event) - 5-hour -->
+			<item id="14074" min="2" max="2" chance="100" /> <!-- Superior Minion Coupon - Event - 5-hour -->
 		</capsuled_items>
 	</item>
 	<item id="21279" name="Superior Minion Coupon" type="EtcItem">
@@ -1521,7 +1521,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13300" min="1" max="1" chance="100" /> <!-- Feather of Blessing (Event) -->
+			<item id="13300" min="1" max="1" chance="100" /> <!-- Feather of Blessing - Event -->
 		</capsuled_items>
 	</item>
 	<item id="21283" name="Package: My Teleport Book" type="EtcItem">
@@ -1553,7 +1553,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13301" min="1" max="1" chance="100" /> <!-- My Teleport Book Lv. 1 (Event) -->
+			<item id="13301" min="1" max="1" chance="100" /> <!-- My Teleport Book Lv. 1 - Event -->
 		</capsuled_items>
 	</item>
 	<item id="21285" name="Package: My Teleport Scroll" type="EtcItem">
@@ -1685,7 +1685,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21293" name="Package: Stone: Enchant A-grade Weapon" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: A-grade Weapon. -->
+		<!-- Double-click to obtain 1 Stone: Enchant A-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1697,11 +1697,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14705" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+			<item id="14705" min="1" max="1" chance="100" /> <!-- Stone: Enchant A-grade Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="21294" name="Package: Stone: Enchant A-grade Weapon" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: A-grade Weapon. -->
+		<!-- Double-click to obtain 1 Stone: Enchant A-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1713,11 +1713,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14705" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: A-grade Weapon -->
+			<item id="14705" min="1" max="1" chance="100" /> <!-- Stone: Enchant A-grade Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="21295" name="Package: Stone: Enchant S-grade Weapon" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: S-grade Weapon. -->
+		<!-- Double-click to obtain 1 Stone: Enchant S-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1729,11 +1729,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14706" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+			<item id="14706" min="1" max="1" chance="100" /> <!-- Stone: Enchant S-grade Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="21296" name="Package: Stone: Enchant S-grade Weapon" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: S-grade Weapon. -->
+		<!-- Double-click to obtain 1 Stone: Enchant S-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1745,11 +1745,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14706" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: S-grade Weapon -->
+			<item id="14706" min="1" max="1" chance="100" /> <!-- Stone: Enchant S-grade Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="21297" name="Package: Stone: Enchant A-grade Armor" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: A-grade Armor. -->
+		<!-- Double-click to obtain 1 Stone: Enchant A-grade Armor. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1761,11 +1761,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14710" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+			<item id="14710" min="1" max="1" chance="100" /> <!-- Stone: Enchant A-grade Armor -->
 		</capsuled_items>
 	</item>
 	<item id="21298" name="Package: Stone: Enchant A-grade Armor" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: A-grade Armor. -->
+		<!-- Double-click to obtain 1 Stone: Enchant A-grade Armor. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1777,11 +1777,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14710" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: A-grade Armor -->
+			<item id="14710" min="1" max="1" chance="100" /> <!-- Stone: Enchant A-grade Armor -->
 		</capsuled_items>
 	</item>
 	<item id="21299" name="Package: Stone: Enchant S-grade Armor" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: S-grade Armor. -->
+		<!-- Double-click to obtain 1 Stone: Enchant S-grade Armor. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1793,7 +1793,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14711" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+			<item id="14711" min="1" max="1" chance="100" /> <!-- Stone: Enchant S-grade Armor -->
 		</capsuled_items>
 	</item>
 </list>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="23200" name="Package: Appearance Stone: Tribal Warrior Costume" type="EtcItem">
-		<!-- Double-click to obtain Tribal Warrior Top/ Pants/ Gloves/ Shoes/ Hair Accessory Appearance Stone. -->
+		<!-- Double-click to obtain Appearance Stone: Tribal Warrior Top/ Pants/ Gloves/ Shoes/ Head Accessory. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -13,11 +13,11 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="23194" min="1" max="1" chance="100" /> <!-- Tribal Warrior Top Appearance Stone -->
-			<item id="23195" min="1" max="1" chance="100" /> <!-- Tribal Warrior Pants Appearance Stone -->
-			<item id="23196" min="1" max="1" chance="100" /> <!-- Tribal Warrior Gloves Appearance Stone -->
-			<item id="23197" min="1" max="1" chance="100" /> <!-- Tribal Warrior Shoes Appearance Stone -->
-			<item id="23198" min="1" max="1" chance="100" /> <!-- Tribal Warrior Hair Accessory Appearance Stone -->
+			<item id="23194" min="1" max="1" chance="100" /> <!-- Appearance Stone: Tribal Warrior Top -->
+			<item id="23195" min="1" max="1" chance="100" /> <!-- Appearance Stone: Tribal Warrior Pants -->
+			<item id="23196" min="1" max="1" chance="100" /> <!-- Appearance Stone: Tribal Warrior Gloves -->
+			<item id="23197" min="1" max="1" chance="100" /> <!-- Appearance Stone: Tribal Warrior Shoes -->
+			<item id="23198" min="1" max="1" chance="100" /> <!-- Appearance Stone: Tribal Warrior Head Accessory -->
 		</capsuled_items>
 	</item>
 	<item id="23201" name="Dark Accessory Pack" additionalName="Event" type="EtcItem">
@@ -87,7 +87,7 @@
 		</skills>
 	</item>
 	<item id="23205" name="Shiny Red Devil Mask" type="Armor">
-		<!-- INT +1, MEN +1 and WIT +1. 3-day. -->
+		<!-- Shiny Red Devil Mask. INT +1, MEN +1, WIT +1. Available for 3 d. -->
 		<set name="icon" val="icon.ev_shiny_doccabi_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -121,7 +121,7 @@
 		</skills>
 	</item>
 	<item id="23207" name="Playful Hair Accessory Pack" type="EtcItem">
-		<!-- Gives a hair accessory perfect for a fun summer festival. -->
+		<!-- Double-click to obtain a playful head accessory. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
@@ -354,7 +354,7 @@
 		</skills>
 	</item>
 	<item id="23220" name="Appearance Stone: Aenkinel's Astaroth" type="EtcItem">
-		<!-- Changes the appearance of a dual sword into that of Aenkinel's Aenkinel's Astaroth. -->
+		<!-- Changes the appearance of dual swords to that of Aenkinel's Astaroth. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_dual" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -408,7 +408,7 @@
 		</skills>
 	</item>
 	<item id="23223" name="Monster Weapon Appearance Stone Pack A" type="EtcItem">
-		<!-- Double-click to obtain Appearance Stone for either Drake Maul, Spezion's Claw, Steregos' Dagger, Darion's Hellblade, Tiat's Tiat's Tiatenon, or Yehan Klanikus' Yehan Klanikus' Tirbing. -->
+		<!-- Double-click to obtain one of the following items: Drake Maul, Spezion's Claw, Steregos' Dagger, Darion's Hellblade, Tiat's Tiatenon, Yehan Klanikus' Tirbing. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
@@ -423,7 +423,7 @@
 		</skills>
 	</item>
 	<item id="23224" name="Monster Weapon Appearance Stone Pack B" type="EtcItem">
-		<!-- Double-click to obtain Appearance Stone for either Freya's Staff, Maliss Stormer, Ron's Dual Blunt Weapon, Doll Blader's Butcher Blades, Aenkinel's Aenkinel's Astaroth or Mardil's Wind. -->
+		<!-- Double-click to obtain one of the following items: Freya's Staff, Maliss Stormer, Ron's Dual Blunt Weapons, Butcher Blades, Aenkinel's Astaroth, Mardil's Wind. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
@@ -454,7 +454,7 @@
 		</skills>
 	</item>
 	<item id="23226" name="Seductive Swimsuit" type="Armor">
-		<!-- Seductive swimsuit with exquisite prints. Note!. Displayed incorrectly on Ertheia. -->
+		<!-- Seductive swimsuit with exquisite prints. Note! Displayed incorrectly on Ertheia. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_swimsuit_event_03" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="is_tradable" val="false" />
@@ -539,7 +539,7 @@
 		</skills>
 	</item>
 	<item id="23231" name="Aria's Warrior Helmet" type="Armor">
-		<!-- Helmet for brave warriors on server Aria. Uses 2 hair accessory slots. -->
+		<!-- A helmet for brave warriors on the Aria server. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys2.icon.br_close_helmet_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -893,7 +893,7 @@
 		<set name="material" val="CRYSTAL" />
 	</item>
 	<item id="23253" name="XP Rune 50%" additionalName="30-day" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +50%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +50%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -908,7 +908,7 @@
 		</skills>
 	</item>
 	<item id="23254" name="XP Rune 100%" additionalName="1-hour" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +100%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +100%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -923,7 +923,7 @@
 		</skills>
 	</item>
 	<item id="23255" name="XP Rune 100%" additionalName="7-day" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +100%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +100%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -938,7 +938,7 @@
 		</skills>
 	</item>
 	<item id="23256" name="XP Rune 100%" additionalName="30-day" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +100%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +100%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -953,7 +953,7 @@
 		</skills>
 	</item>
 	<item id="23257" name="XP Rune 200%" additionalName="1-hour" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +200%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +200%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -968,7 +968,7 @@
 		</skills>
 	</item>
 	<item id="23258" name="XP Rune 200%" additionalName="7-day" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +200%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +200%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -983,7 +983,7 @@
 		</skills>
 	</item>
 	<item id="23259" name="XP Rune 200%" additionalName="30-day" type="EtcItem">
-		<!-- An ancient charm endowed with mysterious symbols. When in inventory, Acquired XP +200%. The remaining time decreases even when logged out. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired XP +200%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_exp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1013,7 +1013,7 @@
 		</skills>
 	</item>
 	<item id="23261" name="SP Rune 100%" additionalName="1-hour" type="EtcItem">
-		<!-- Ancient charm endowed with mysterious symbols. When in inventory, Acquired SP +100%. The remaining time decreases even when not playing. -->
+		<!-- An ancient rune imbued with mystical powers. When in inventory, acquired SP +100%. The remaining time is spent even if you are offline. -->
 		<set name="icon" val="br_cashtex.item.br_cash_rune_of_sp_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />

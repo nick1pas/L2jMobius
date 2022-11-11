@@ -15,21 +15,21 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="94502" name="Spellbook: Ogre Spirit Totem" type="EtcItem">
-		<!-- A spellbook for learning the Ogre Spirit Totem Lv. 2 skill. <Classes> Grand Khavatari <Skill effect> Increases Max HP and decreases received damage. When used, reflects damage for a while. -->
+		<!-- A spellbook for learning the Ogre Spirit Totem Lv. 2 skill. <Class> Grand Khavatari <Skill effect> Increases Max HP and decreases received damage. When used, protects from damage once. -->
 		<set name="icon" val="icon.etc_spell_books_hfighter_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="94503" name="Spellbook: Rabbit Spirit Totem" type="EtcItem">
-		<!-- A spellbook for learning the Rabbit Spirit Totem Lv. 2 skill. <Classes> Grand Khavatari <Skill effect> Increases Speed and Atk. Spd. When used, significantly increases Speed and Atk. Spd. for a while. -->
+		<!-- A spellbook for learning the Rabbit Spirit Totem Lv. 2 skill. <Classes> Grand Khavatari <Skill effect> Increases Speed and Atk. Spd. When used, significantly increases Speed and Atk. Spd. for a while. Increases Debuff Resistance and Anomaly Resistance. -->
 		<set name="icon" val="icon.etc_spell_books_hfighter_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="94504" name="Spellbook: Puma Spirit Totem" type="EtcItem">
-		<!-- A spellbook for learning the Puma Spirit Totem Lv. 2 skill. <Classes> Grand Khavatari <Skill effect> Increases P. Skill Power. When used, significantly increases P. Skill Critical Rate and P. Skill Critical Damage for a while. -->
+		<!-- A spellbook for learning the Puma Spirit Totem Lv. 2 skill. <Class> Grand Khavatari <Skill effect> Increases P. Skill Power. When used, significantly increases P. Skill Critical Rate and P. Skill Critical Damage for a while. -->
 		<set name="icon" val="icon.etc_spell_books_hfighter_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -64,7 +64,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="94509" name="Frintezza Doll Lv. 1" additionalName="Sealed" type="EtcItem">
-		<!-- <Frintezza Doll's Sorcery Lv. 1> STR/ INT +1 Skill Power +1% Atk. Spd. +20 Casting Spd. +20 Speed +1 Boosts parameters when in inventory. Can be upgraded through compounding. -->
+		<!-- <Frintezza Doll's Sorcery Lv. 1> STR/ INT +1 Skill Power +1% Atk. Spd. +20 Casting Spd. +20 Speed +1 Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -93,7 +93,7 @@
 			<item id="91641" min="100" max="100" chance="100" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91712" min="20" max="20" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
 			<item id="91983" min="2" max="2" chance="100" /> <!-- Primeval Isle's Time Stone - Sealed -->
-			<item id="92400" min="2" max="2" chance="100" /> <!-- Forgotten Primeval Garden's Time Stone - Sealed -->
+			<item id="92400" min="2" max="2" chance="100" /> <!-- Forgotten Garden's Time Stone - Sealed -->
 			<item id="94269" min="30" max="30" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="30" max="30" chance="100" /> <!-- Scroll: Boost Defense - Sealed -->
 		</capsuled_items>
@@ -114,7 +114,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94512" name="Frintezza Doll" additionalName="7-day" type="EtcItem">
-		<!-- <Frintezza Doll's Sorcery Lv. 2> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Skill Power +2% Atk. Spd. +50 Casting Spd. +50 Speed +2 Boosts parameters when in inventory. -->
+		<!-- <Frintezza Doll's Sorcery Lv. 2> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Skill Power +2% Atk. Spd. +50 Casting Spd. +50 Speed +2 Boosts stats when in inventory. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -129,7 +129,7 @@
 		</skills>
 	</item>
 	<item id="94513" name="Package: Frintezza Doll Lv. 1" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -144,7 +144,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94514" name="Package: Frintezza Doll Lv. 2" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -159,7 +159,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94515" name="Package: Frintezza Doll Lv. 3" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -193,7 +193,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="94518" name="Amber Lv. 5" additionalName="Sealed" type="Armor">
-		<!-- <Active skill> Interrupts a skill used by the target. <PvP effect> Ignores CP and deals 2000 fixed damage. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- <Active skill> Interrupts the target's skill casting. <PvP effect> Ignores CP and deals 2000 fixed damage. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.etc_bm_jewel_amber_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -241,7 +241,7 @@
 		</skills>
 	</item>
 	<item id="94521" name="Onyx Lv. 5" additionalName="Sealed" type="Armor">
-		<!-- <Properties> Soulshot/ Spiritshot damage +12%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- <Properties> Soulshot/ Spiritshot damage +12% Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.etc_bm_jewel_onyx_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -257,7 +257,7 @@
 		</skills>
 	</item>
 	<item id="94522" name="Spinel Lv. 5" additionalName="Sealed" type="Armor">
-		<!-- <Properties> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Received P. Critical Damage -7% Received M. Skill Critical Damage -7% P. Def. +150 M. Def. +100 With a certain chance, MP +40 when using skills. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- <Properties> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Received P. Critical Damage -7% Received M. Skill Critical Damage -7% P. Def. +150 M. Def. +100 With a certain chance, recovers 40 MP when using skills (cooldown: 3 sec.). Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.etc_bm_jewel_garnet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -289,7 +289,7 @@
 		</skills>
 	</item>
 	<item id="94524" name="Moonstone Lv. 5" additionalName="Sealed" type="Armor">
-		<!-- <Properties> While Sayha's Grace is active, Acquired XP/ SP +11% Sayha's Grace Consumption -20% Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- <Properties> While Sayha's Grace is active, acquired XP/ SP +11%. Sayha's Grace Consumption -20% Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.etc_bm_jewel_moonstone_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -317,11 +317,11 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="92034" min="10" max="10" chance="100" /> <!-- Reinforced Jewelry Box -->
-			<item id="94526" min="2" max="2" chance="100" /> <!-- Gemstone Powder (Time-limited) - Sealed -->
+			<item id="94526" min="2" max="2" chance="100" /> <!-- Jewel Powder (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94526" name="Gemstone Powder (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged for various items through the Game Assistant. <Items to exchange> - Package: Amber Lv. 4 (20 pcs.) - Package: Opal Lv. 4 (30 pcs.) - Package: Coral Lv. 4 (40 pcs.) - Package: Onyx Lv. 4 (50 pcs.) - Package: Spinel Lv. 4 (50 pcs.) - Package: Zircon Lv. 4 (40 pcs.) - Package: Moonstone Lv. 4 (20 pcs.) - Package: Random Jewel Lv. 1-6 (1 pc.) -->
+		<!-- Can be exchanged for various items through the Game Assistant. <Items to exchange> - Package: Amber Lv. 4 (9 pcs.) - Package: Opal Lv. 4 (17 pcs.) - Package: Coral Lv. 4 (28 pcs.) - Package: Onyx Lv. 4 (35 pcs.) - Package: Spinel Lv. 4 (35 pcs.) - Package: Zircon Lv. 4 (28 pcs.) - Package: Moonstone Lv. 4 (9 pcs.) -->
 		<set name="icon" val="icon.etc_powder_red_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -852,7 +852,7 @@
 		<set name="material" val="FISH" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94208" min="1" max="1" chance="100" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="100" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94558" name="Iron Gate's Mysterious Box (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -948,9 +948,9 @@
 			<item id="91641" min="2" max="2" chance="1.5625" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91690" min="20" max="20" chance="1.5625" /> <!-- Special HP Recovery Potion - Sealed -->
 			<item id="91712" min="1" max="1" chance="1.5625" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
-			<item id="92314" min="5" max="5" chance="1.5625" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="2" max="2" chance="1.5625" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="1" max="1" chance="1.5625" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="5" max="5" chance="1.5625" /> <!-- Giran Seal -->
+			<item id="92314" min="2" max="2" chance="1.5625" /> <!-- Giran Seal -->
+			<item id="92314" min="1" max="1" chance="1.5625" /> <!-- Giran Seal -->
 			<item id="92401" min="1" max="1" chance="1.5625" /> <!-- Spellbook: White Guardian -->
 			<item id="92990" min="1" max="1" chance="1.5625" /> <!-- Boss' Weapon Pack - Sealed -->
 			<item id="93103" min="1" max="1" chance="1.5625" /> <!-- Spellbook: Divine Beam -->
@@ -966,7 +966,7 @@
 			<item id="94159" min="1" max="1" chance="1.5625" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
 			<item id="94162" min="1" max="1" chance="1.5625" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
 			<item id="94168" min="1" max="1" chance="1.5625" /> <!-- Enchant Kit: Circlet of Hero - Sealed -->
-			<item id="94208" min="1" max="1" chance="1.5625" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="1.5625" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94258" min="1" max="1" chance="1.5625" /> <!-- Package: Einhasad's Pendant Lv. 1 - Sealed -->
 			<item id="94269" min="2" max="2" chance="1.5625" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="2" max="2" chance="1.5625" /> <!-- Scroll: Boost Defense - Sealed -->
@@ -997,7 +997,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94564" name="+9 Talisman of Aden Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_sheep_agathion_30d_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1008,7 +1008,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="94565" name="+10 Talisman of Aden Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_sheep_agathion_30d_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1069,7 +1069,7 @@
 			<item id="94380" min="3" max="3" chance="16.6615" /> <!-- Scroll: Boost Attack (Time-limited) - Sealed -->
 			<item id="94381" min="3" max="3" chance="16.6615" /> <!-- Scroll: Boost Defense (Time-limited) - Sealed -->
 			<item id="94614" min="1" max="1" chance="16.6615" /> <!-- Pirate's Earring (Time-limited) - Sealed -->
-			<item id="94615" min="1" max="1" chance="16.6615" /> <!-- Forgotten Primeval Garden's Time Stone (Time-limited) - Sealed -->
+			<item id="94615" min="1" max="1" chance="16.6615" /> <!-- Forgotten Garden's Time Stone (Time-limited) - Sealed -->
 			<item id="94620" min="1" max="1" chance="16.6615" /> <!-- Primeval Isle's Time Stone (Time-limited) - Sealed -->
 			<item id="90763" min="1" max="1" chance="0.01" /> <!-- Zaken's Earring -->
 			<item id="93448" min="1" max="1" chance="0.01" /> <!-- A-grade Weapon Coupon - Sealed -->
@@ -1093,7 +1093,7 @@
 			<item id="91641" min="200" max="200" chance="100" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91690" min="200" max="200" chance="100" /> <!-- Special HP Recovery Potion - Sealed -->
 			<item id="91712" min="30" max="30" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
-			<item id="92400" min="1" max="1" chance="100" /> <!-- Forgotten Primeval Garden's Time Stone - Sealed -->
+			<item id="92400" min="1" max="1" chance="100" /> <!-- Forgotten Garden's Time Stone - Sealed -->
 			<item id="94269" min="30" max="30" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="30" max="30" chance="100" /> <!-- Scroll: Boost Defense - Sealed -->
 		</capsuled_items>
@@ -1121,7 +1121,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="94573" name="Package: +5 Sirra's Blade" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_sirr_blade_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1136,7 +1136,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94574" name="Package: +5 Sword of Ipos" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_sword_of_ipos_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1151,7 +1151,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94575" name="Package: +5 Barakiel's Axe" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1166,7 +1166,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94576" name="Package: +5 Behemoth' Tuning Fork" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1181,7 +1181,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94577" name="Package: +5 Naga's Storm" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_naga_storm_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1196,7 +1196,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94578" name="Package: +5 Tiphon's Spear" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_tiphon_spear_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1211,7 +1211,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94579" name="Package: +5 Shyeed's Bow" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_shyid_bow_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1226,7 +1226,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94580" name="Package: +5 Sobekk's Hurricane" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_sobekk_hurricane_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1241,7 +1241,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94581" name="Package: +5 Themis' Tongue" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_tongue_of_themis_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1256,7 +1256,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94582" name="Package: +5 Cabrio's Hand" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_hand_of_cabrio_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1272,7 +1272,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94583" name="Package: +5 Daimon Crystal" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_crystal_of_deamon_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1287,7 +1287,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94584" name="Package: +5 Tallum Blade*Damascus Sword" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_dual_sword_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1302,7 +1302,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94585" name="Package: +5 Éclair Bijou" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_greed_stinger_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1313,11 +1313,11 @@
 		<set name="material" val="FISH" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="92970" min="1" max="1" chance="100" maxEnchant="5" minEnchant="5" /> <!-- clair Bijou - Sealed -->
+			<item id="92970" min="1" max="1" chance="100" maxEnchant="5" minEnchant="5" /> <!-- ?clair Bijou - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94586" name="Package: +5 Durendal" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_death_bringer_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1332,7 +1332,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94587" name="Package: +5 Armor of Nightmare" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t80_ul_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1347,7 +1347,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94588" name="Package: +5 Helm of Nightmare (Heavy)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_leather_helmet_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1362,7 +1362,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94589" name="Package: +5 Gauntlets of Nightmare (Heavy)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t80_g_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1377,7 +1377,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94590" name="Package: +5 Boots of Nightmare (Heavy)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t80_b_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1392,7 +1392,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94591" name="Package: +5 Majestic Plate Armor" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t83_ul_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1407,7 +1407,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94592" name="Package: +5 Majestic Circlet (Heavy)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_leather_helmet_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1422,7 +1422,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94593" name="Package: +5 Majestic Gauntlets (Heavy)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t83_g_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1437,7 +1437,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94594" name="Package: +5 Majestic Boots (Heavy)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t83_b_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1452,7 +1452,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94595" name="Package: +5 Leather Armor of Nightmare" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t81_ul_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1467,7 +1467,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94596" name="Package: +5 Helm of Nightmare (Light)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_leather_helmet_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1482,7 +1482,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94597" name="Package: +5 Gauntlets of Nightmare (Light)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t81_g_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1497,7 +1497,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94598" name="Package: +5 Boots of Nightmare (Light)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t81_b_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1512,7 +1512,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94599" name="Package: +5 Majestic Leather Armor" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t84_ul_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />

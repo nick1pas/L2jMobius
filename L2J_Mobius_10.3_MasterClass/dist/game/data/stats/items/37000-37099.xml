@@ -177,7 +177,7 @@
 		</skills>
 	</item>
 	<item id="37011" name="9th Anniversary Buff Scroll (P. Atk.)" type="EtcItem">
-		<!-- For 30 min., provides the effects of Horn Melody, Pipe Organ Melody, Guitar Melody, Drum Melody, and Warrior's Harmony Lv. 1. -->
+		<!-- For 30 min., provides the effects of Musician's Melody and Warrior's Harmony Lv. 1. -->
 		<set name="icon" val="icon.etc_scroll_of_transformation_traikan_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -187,7 +187,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="37012" name="9th Anniversary Buff Scroll (M. Atk.)" type="EtcItem">
-		<!-- For 30 min., provides the effects of Horn Melody, Pipe Organ Melody, Guitar Melody, Drum Melody, and Wizard's Harmony Lv. 1. -->
+		<!-- For 30 min., provides the effects of Musician's Melody and Wizard's Harmony Lv. 1. -->
 		<set name="icon" val="icon.etc_scroll_of_transformation_traikan_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -197,7 +197,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="37013" name="9th Anniversary Buff Scroll (P. Def.)" type="EtcItem">
-		<!-- For 30 min., provides the effects of Horn Melody, Pipe Organ Melody, Guitar Melody, Drum Melody, and Knight's Harmony Lv. 1. -->
+		<!-- For 30 min., provides the effects of Musician's Melody and Knight's Harmony Lv. 1. -->
 		<set name="icon" val="icon.etc_scroll_of_transformation_traikan_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -422,21 +422,21 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="35466" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Boots (60%) -->
-			<item id="35463" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Breastplate (60%) -->
-			<item id="35473" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Circlet (60%) -->
-			<item id="35464" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Gaiters (60%) -->
-			<item id="35465" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Gauntlets (60%) -->
-			<item id="35476" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Gloves (60%) -->
+			<item id="35466" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Boots (60%) -->
+			<item id="35463" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Breastplate (60%) -->
+			<item id="35473" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Circlet (60%) -->
+			<item id="35464" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Gaiters (60%) -->
+			<item id="35465" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Gauntlets (60%) -->
+			<item id="35476" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Gloves (60%) -->
 			<item id="35462" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Helmet (60%) -->
-			<item id="35469" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Leather Armor (60%) -->
-			<item id="35472" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Leather Boots (60%) -->
-			<item id="35471" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Leather Gloves (60%) -->
+			<item id="35469" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Leather Armor (60%) -->
+			<item id="35472" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Leather Boots (60%) -->
+			<item id="35471" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Leather Gloves (60%) -->
 			<item id="35468" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Leather Helmet (60%) -->
-			<item id="35470" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Leather Leggings (60%) -->
-			<item id="35477" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Shoes (60%) -->
-			<item id="35475" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Stockings (60%) -->
-			<item id="35474" min="1" max="1" chance="6" /> <!-- Recipe: Eternal Tunic (60%) -->
+			<item id="35470" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Leather Leggings (60%) -->
+			<item id="35477" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Shoes (60%) -->
+			<item id="35475" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Stockings (60%) -->
+			<item id="35474" min="1" max="1" chance="6" /> <!-- Recipe: 'Eternal Tunic (60%) -->
 		</capsuled_items>
 	</item>
 	<item id="37025" name="Scroll of Escape: Alligator Island" type="EtcItem">
@@ -513,7 +513,7 @@
 		</skills>
 	</item>
 	<item id="37030" name="Scroll of Escape: Swamp of Screams" type="EtcItem">
-		<!-- Teleports you to the Swamp of Screams. -->
+		<!-- Teleports to the Swamp of Screams. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="30" />
@@ -591,7 +591,7 @@
 		</skills>
 	</item>
 	<item id="37035" name="Scroll of Escape: Ketra Orc Outpost" type="EtcItem">
-		<!-- Teleports you to Ketra Orc Outpost. -->
+		<!-- Teleports to Ketra Orc Outpost. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />

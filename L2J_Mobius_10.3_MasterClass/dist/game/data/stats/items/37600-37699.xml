@@ -43,7 +43,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="37606" name="Promise Cube Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain a Promise Cube (100-day). -->
+		<!-- Double-click to obtain Promise Cube (100-day). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -54,7 +54,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="37607" name="Treasure Chest" additionalName="Western Winds" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Hair Accessory Pack, Pendant Pack, Enchant Scroll Pack, Attribute Stone Pack, Ingredient Box. -->
+		<!-- Double-click to obtain one of the following items: Head Accessory Pack, Pendant Box, Enchant Scroll Box, Attribute Stone Box, Ingredient Box. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -67,15 +67,15 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="37608" min="1" max="1" chance="10" /> <!-- Hair Accessory Pack - Western Winds -->
+			<item id="37608" min="1" max="1" chance="10" /> <!-- Head Accessory Pack - Western Winds -->
 			<item id="37609" min="1" max="1" chance="5" /> <!-- Pendant Pack - Western Winds -->
-			<item id="37612" min="1" max="1" chance="57" /> <!-- Ingredient Box - Western Winds -->
+			<item id="37612" min="1" max="1" chance="57" /> <!-- Ingredient Pack - Western Winds -->
 			<item id="37611" min="1" max="1" chance="23" /> <!-- Attribute Stone Pack - Western Winds -->
 			<item id="37610" min="1" max="1" chance="5" /> <!-- Enchant Scroll Pack - Western Winds -->
 		</capsuled_items>
 	</item>
 	<item id="37608" name="Hair Accessory Pack" additionalName="Western Winds" type="EtcItem">
-		<!-- Double-click to obtain a hair accessory on which you can add a pendant. -->
+		<!-- Double-click to obtain a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -209,7 +209,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37613" name="Hero's Treasure Chest" additionalName="Western Winds" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Hero's Lucky Enchant Stone Pack, Hero's Giant Enchant Scroll Pack, Hero's Blessed Enchant Scroll Pack, Hero's Unbind Scroll Pack, Hero's Attribute Crystal Pack, PK Pack, Reputation Pack, Mysterious Shot Box, Kaliel's Energy Box, Soul Bottle Pack, Spirit Stone Pack. -->
+		<!-- Double-click to obtain one of the following items: Hero's Enchant Stone Pack, Hero's Giant Enchant Scroll Pack, Hero's Blessed Enchant Scroll Pack, Hero's Unbind Scroll Pack, Hero's Attribute Crystal Pack, PK Pack, Reputation Pack, Mysterious Shot Box, Kaliel's Energy Box, Soul Bottle Pack, Spirit Stone Pack. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -225,18 +225,18 @@
 			<item id="37623" min="1" max="1" chance="4.05" /> <!-- Soul Bottle Pack - Western Winds -->
 			<item id="37619" min="1" max="1" chance="6" /> <!-- PK Pack - Western Winds -->
 			<item id="37616" min="1" max="1" chance="4" /> <!-- Hero's Blessed Enchant Scroll Pack - Western Winds -->
-			<item id="37614" min="1" max="1" chance="6" /> <!-- Hero's Lucky Enchant Stone Pack - Western Winds -->
+			<item id="37614" min="1" max="1" chance="6" /> <!-- Hero's Enchant Stone Pack - Western Winds -->
 			<item id="37618" min="1" max="1" chance="12" /> <!-- Hero's Attribute Crystal Pack - Western Winds -->
 			<item id="37615" min="1" max="1" chance="4" /> <!-- Hero's Giant Enchant Scroll Pack - Western Winds -->
 			<item id="37617" min="1" max="1" chance="7" /> <!-- Hero's Unbind Scroll Pack - Western Winds -->
 			<item id="37620" min="1" max="1" chance="8" /> <!-- Reputation Pack - Western Winds -->
 			<item id="37624" min="1" max="1" chance="20" /> <!-- Top-grade Life Stone Pack - Western Winds -->
-			<item id="37622" min="1" max="1" chance="5" /> <!-- Kaliel's Energy Box - Western Winds -->
-			<item id="37621" min="1" max="1" chance="23.95" /> <!-- Mysterious Shot Pack - Western Winds -->
+			<item id="37622" min="1" max="1" chance="5" /> <!-- Kaliel's Energy Pack - Western Winds -->
+			<item id="37621" min="1" max="1" chance="23.95" /> <!-- Mysterious Shot Box - Western Winds -->
 		</capsuled_items>
 	</item>
 	<item id="37614" name="Hero's Enchant Stone Pack" additionalName="Western Winds" type="EtcItem">
-		<!-- Double-click to obtain a Lucky Enchant Stone (S or R-grade). -->
+		<!-- Double-click to obtain an S-/ R-grade Enchant Stone. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -248,10 +248,10 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="33861" min="1" max="1" chance="20" /> <!-- Lucky Enchant Stone: R-grade Armor - Event -->
-			<item id="33860" min="1" max="1" chance="46" /> <!-- Lucky Enchant Stone: S-grade Armor - Event -->
-			<item id="33855" min="1" max="1" chance="10" /> <!-- Lucky Enchant Stone: R-grade Weapon - Event -->
-			<item id="33854" min="1" max="1" chance="24" /> <!-- Lucky Enchant Stone: S-grade Weapon - Event -->
+			<item id="33861" min="1" max="1" chance="20" /> <!-- Stone: Enchant R-grade Armor - Event -->
+			<item id="33860" min="1" max="1" chance="46" /> <!-- Stone: Enchant S-grade Armor - Event -->
+			<item id="33855" min="1" max="1" chance="10" /> <!-- Stone: Enchant R-grade Weapon - Event -->
+			<item id="33854" min="1" max="1" chance="24" /> <!-- Stone: Enchant S-grade Weapon - Event -->
 		</capsuled_items>
 	</item>
 	<item id="37615" name="Hero's Giant Enchant Scroll Pack" additionalName="Western Winds" type="EtcItem">
@@ -356,10 +356,10 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="35753" min="1" max="1" chance="15" /> <!-- High-grade Scroll: PK -->
-			<item id="35754" min="1" max="1" chance="10" /> <!-- Top-grade Scroll: PK -->
-			<item id="35741" min="1" max="1" chance="50" /> <!-- Low-grade Scroll: PK -->
-			<item id="35752" min="1" max="1" chance="25" /> <!-- Mid-grade Scroll: PK -->
+			<item id="35753" min="1" max="1" chance="15" /> <!-- Scroll: PK (High-grade) -->
+			<item id="35754" min="1" max="1" chance="10" /> <!-- Scroll: PK (Top-grade) -->
+			<item id="35741" min="1" max="1" chance="50" /> <!-- Scroll: PK (Low-grade) -->
+			<item id="35752" min="1" max="1" chance="25" /> <!-- Scroll: PK (Mid-grade) -->
 		</capsuled_items>
 	</item>
 	<item id="37620" name="Reputation Pack" additionalName="Western Winds" type="EtcItem">
@@ -376,9 +376,9 @@
 		<set name="material" val="PAPER" />
 		<capsuled_items>
 			<item id="35756" min="1" max="1" chance="15" /> <!-- High-grade Scroll: Reputation -->
-			<item id="35757" min="1" max="1" chance="10" /> <!-- Top-grade Scroll: Reputation -->
-			<item id="35742" min="1" max="1" chance="50" /> <!-- Low-grade Scroll: Reputation -->
-			<item id="35755" min="1" max="1" chance="25" /> <!-- Mid-grade Scroll: Reputation -->
+			<item id="35757" min="1" max="1" chance="10" /> <!-- Scroll: Reputation (Top-grade) -->
+			<item id="35742" min="1" max="1" chance="50" /> <!-- Scroll: Reputation (Low-grade) -->
+			<item id="35755" min="1" max="1" chance="25" /> <!-- Scroll: Reputation (Mid-grade) -->
 		</capsuled_items>
 	</item>
 	<item id="37621" name="Mysterious Shot Pack" additionalName="Western Winds" type="EtcItem">
@@ -434,7 +434,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37624" name="Top-grade Life Stone Pack" additionalName="Western Winds" type="EtcItem">
-		<!-- Double-click to obtain either a Spirit Stone, or a Life Stone Instilled with Giants' Power. -->
+		<!-- Double-click to obtain Spirit Stone or Life Stone: Giant's Power. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -459,7 +459,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="37626" name="Package: Mysterious Blessed R-grade Spiritshots" type="EtcItem">
-		<!-- Spiritshots increase M. Atk. Double-click to obtain 10,000 Mysterious Blessed Spiritshots. Can be used with R-grade weapons. -->
+		<!-- Spiritshots ncrease weapons' magic power. Double-click to obtain 10,000 Mysterious Blessed Spiritshots. Used with R-grade weapons. -->
 		<set name="icon" val="icon.br_cash_pack_of_spiritshot_r_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -478,7 +478,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37627" name="Package: Mysterious R-grade Soulshots" type="EtcItem">
-		<!-- Spiritshots increase M. Atk. Double-click to obtain 20,000 Mysterious Blessed Spiritshots. Can be used with R-grade weapons. -->
+		<!-- Soulshots increase weapons' physical power. Double-click to obtain 20,000 Mysterious Soulshots. Used with R-grade weapons. -->
 		<set name="icon" val="icon.br_cash_pack_of_soulshot_r_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -497,7 +497,7 @@
 		</capsuled_items>
 	</item>
 	<item id="37628" name="Cupid's Bow" type="Weapon">
-		<!-- Throws a love-filled heart. Allows to use the Heart Shot active skill. Note!. Using the bow to attack a monster, you can be attacked by other players. -->
+		<!-- Throws a love-filled heart. Allows to use the Heart Shot active skill. Note! Using the bow to attack a monster, you can be attacked by other players. -->
 		<set name="icon" val="icon.bm_krono_bow" />
 		<set name="weapon_type" val="BOW" />
 		<set name="damage_range" val="0;0;10;0" />
@@ -1445,7 +1445,7 @@
 		</stats>
 	</item>
 	<item id="37661" name="Refined Romantic Chapeau: Blue" type="Armor">
-		<!-- Refined blue romantic chapeau. Uses 2 hair accessory slots. -->
+		<!-- Refined Romantic Chapeau: Blue. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.bm_romantic_chaperon_blue" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1457,7 +1457,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="37662" name="Refined Romantic Chapeau: Gold" type="Armor">
-		<!-- Refined gold romantic chapeau. Uses 2 hair accessory slots. -->
+		<!-- Refined Romantic Chapeau: Gold. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.bm_romantic_chaperon_gold" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1469,7 +1469,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="37663" name="Refined Romantic Chapeau: Green" type="Armor">
-		<!-- Refined green romantic chapeau. Uses 2 hair accessory slots. -->
+		<!-- Refined Romantic Chapeau: Green. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.bm_romantic_chaperon_green" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1481,7 +1481,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="37664" name="Refined Romantic Chapeau: Red" type="Armor">
-		<!-- Refined red romantic chapeau. Uses 2 hair accessory slots. -->
+		<!-- Refined Romantic Chapeau: Red. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.bm_romantic_chaperon_red" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1493,7 +1493,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="37665" name="Refined Romantic Chapeau: Yellow" type="Armor">
-		<!-- Refined yellow romantic chapeau. Uses 2 hair accessory slots. -->
+		<!-- Refined yellow romantic chapeau. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.bm_romantic_chaperon_yellow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1515,7 +1515,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="37667" name="Blessed Antharas' Earring" additionalName="30-day" type="Armor">
-		<!-- MP +59. P./ M. Def. +15%. CON/ MEN +3. Earth/ Holy Resistance +30. Infection Atk. Rate/ Resistance +50%, Confusion Atk. Rate/ Resistance +40%. Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage +4%. Active skill: removes the Stun effect and grants immune to Confusion for 5 sec. The effect doesn't stack if two identical earrings are equipped. -->
+		<!-- MP +59, P./ M. Def. +15%, CON/ MEN +3, Holy/ Earth Resistance +30, Infection Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Received Healing +10%, Skill MP Consumption -5%, Vampiric Rage effect +4%. Active skill: Removes Shock debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1535,7 +1535,7 @@
 		</stats>
 	</item>
 	<item id="37668" name="Blessed Valakas' Necklace" additionalName="30-day" type="Armor">
-		<!-- MP +79. HP +625. P. Atk. +10%. M. Atk. +20%. M. Skill Critical Rate +20. STR/INT +3. Fire Resistance +30, Dark Resistance +20. Stupor Atk. Rate/ Resistance +50%. P. Skill Power +5%. Skill Cooldown -10%, Damage Reflection +5%. Active skill: removes the Hold effect and grants immune to Obstruction for 5 sec. Cannot be used in the Olympiad. -->
+		<!-- MP +79, Max HP +625, P. Atk. +10%, M. Atk. +20%, M. Skill Critical Rate +20, STR/ INT +3, Fire Resistance +30, Dark Resistance +20, Stupor Atk. Rate and Resistance +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection +5%. Active skill: Removes Hold debuffs and grants immunity to Obstruction for 5 sec. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -1555,7 +1555,7 @@
 		</stats>
 	</item>
 	<item id="37669" name="Tauti's Ring" additionalName="30-day" type="Armor">
-		<!-- Fire/ Dark Resistance +25, MP +38, Critical Damage for standard attacks +15%, P. Skill Power +5%, PvP damage +5%, Confusion/ Obstruction Resistance +10, Damage Reflection Resistance +5, Blood Siphon Resistance +5, received PvP damage -5%. When using a blunt weapon, Critical Rate for standard attacks +54. Effects of two identical rings do not stack (excluding M. Def. and Attribute Resistance). -->
+		<!-- Fire/ Dark Resistance +25, MP +38, Critical Damage for basic attacks +15%, P. Skill Power +5%, PvP damage +5%, Confusion/ Obstruction Resistance +10, Damage Reflection Resistance +5, Blood Siphon Resistance +5, received PvP damage -5%. When using a blunt weapon, Critical Rate for basic attacks +54. Effects of two identical rings do not stack (excluding M. Def. and Attribute Resistance). -->
 		<set name="icon" val="icon.bm_tauti_ring" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -1574,7 +1574,7 @@
 		</stats>
 	</item>
 	<item id="37670" name="Earth Wyrm's Heart Ring" additionalName="30-day" type="Armor">
-		<!-- MP +38, P./ M. Debuff Resistance +15, MP Recovery Rate +3, Critical Damage for standard attacks +20% and P. Accuracy +5. Infection Atk. Rate/ Resistance +50%, Confusion/ Danger Zone Resistance +20%, Atk. Spd./ Casting Spd. +6% and Wind/ Water Resistance +30. The effect doesn't stack if two identical rings are equipped. <Active Skills> Heartbeat Accelerate: all party members' Atk. Spd./ Casting Spd. +5%, Vampiric Rage +2% for +5 min. (Cooldown: 2 h.) Pure Blood: removes Infection (Cooldown: 2 h.). -->
+		<!-- MP +38, P./ M. Debuff Resistance +15, MP Recovery Rate +3, Critical Damage for basic attacks +20%, P. Accuracy +5, Infection Atk. Rate and Resistance +50%, Confusion/ Danger Zone Resistance +20%, Atk. Spd./ Casting Spd. +6%, Wind/ Water Resistance +30. Effects of two identical rings do not stack. <Active skills> Heartbeat Accelerate: For 5 min., party members' Atk. Spd./ Casting Spd. +5%, Vampiric Rage effect +2% (cooldown: 2 h.). Pure Blood: Removes Infection debuffs (cooldown: 2 h.). -->
 		<set name="icon" val="icon.bm_ring_earthworm_heart" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -1598,7 +1598,7 @@
 		</stats>
 	</item>
 	<item id="37671" name="Heavenly Recovery Potion" type="EtcItem">
-		<!-- When used, recovers 2500 HP, also recovers CP. There is no cooldown. Cannot be used in the Olympiad. -->
+		<!-- When used, recovers 2500 HP. If HP is full, recovers CP. No cooldown. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_recall_potion2" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1666,7 +1666,7 @@
 		</skills>
 	</item>
 	<item id="37676" name="Coin of Knowledge" type="EtcItem">
-		<!-- You are full of knowledge!. You can purchase useful items through the Adventurers' Guide. -->
+		<!-- You are full of knowledge! You can purchase useful items through the Adventurers' Guide. -->
 		<set name="icon" val="icon.int_coin_gm_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1675,7 +1675,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="37677" name="GM's Buff Scroll" additionalName="P. Def." type="EtcItem">
-		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Guardian's Harmony, and 3 types of sonatas, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
+		<!-- When used, you can receive the effects of Musician's Melody and Sonata Performance Lv. 4, including Knight's Harmony, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
 		<set name="icon" val="icon.buff_scroll_gm_i00" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -1687,7 +1687,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="37678" name="GM's Buff Scroll" additionalName="P. Atk." type="EtcItem">
-		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Berserker's Harmony, and 3 types of sonatas, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
+		<!-- When used, you can receive the effects of Musician's Melody and Sonata Performance Lv. 4, including Berserker's Harmony, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
 		<set name="icon" val="icon.buff_scroll_gm_i00" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -1699,7 +1699,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="37679" name="GM's Buff Scroll" additionalName="M. Atk." type="EtcItem">
-		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Magician's Harmony, and 3 types of sonatas, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
+		<!-- When used, you can receive the effects of Musician's Melody and Sonata Performance Lv. 4, including Wizard's Harmony, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
 		<set name="icon" val="icon.buff_scroll_gm_i00" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -1711,7 +1711,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="37680" name="Transformation Scroll: Makeshift Bat" type="EtcItem">
-		<!-- Can change into the appearance of a Makeshift Bat for 30 min. Please note that a Makeshift Bat is extremely cute. -->
+		<!-- Transforms into Clay Statue for 30 min. Keep in mind that it's quite cute. -->
 		<set name="icon" val="icon.etc_scroll_white_i00" />
 		<set name="weight" val="120" />
 		<set name="is_sellable" val="false" />
@@ -1786,7 +1786,7 @@
 		</stats>
 	</item>
 	<item id="37685" name="Transformation Scroll: Lady Tow" type="EtcItem">
-		<!-- Can change into the appearance of a Lady Tow for 30 min. Please note that a Tow is extremely cute. -->
+		<!-- Transforms into Beautiful Clay Statue for 30 min. Keep in mind that it's quite cute. -->
 		<set name="icon" val="icon.etc_scroll_white_i00" />
 		<set name="weight" val="120" />
 		<set name="is_sellable" val="false" />
@@ -1796,7 +1796,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="37686" name="Transformation Scroll: Angry Tow" type="EtcItem">
-		<!-- Can change into the appearance of a Angry Tow for 30 min. Please note that a Tow is extremely cute. -->
+		<!-- Transforms into Solid Clay Statue for 30 min. Keep in mind that it's quite cute. -->
 		<set name="icon" val="icon.etc_scroll_white_i00" />
 		<set name="weight" val="120" />
 		<set name="is_sellable" val="false" />
@@ -1806,7 +1806,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="37687" name="Transformation Scroll: Sleepy Tow" type="EtcItem">
-		<!-- Can change into the appearance of a Sleepy Tow for 30 min. Please note that a Tow is extremely cute. -->
+		<!-- Transforms into Old Clay Statue for 30 min. Keep in mind that it's quite cute. -->
 		<set name="icon" val="icon.etc_scroll_white_i00" />
 		<set name="weight" val="120" />
 		<set name="is_sellable" val="false" />

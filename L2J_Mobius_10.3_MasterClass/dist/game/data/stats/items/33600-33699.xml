@@ -202,7 +202,7 @@
 		</skills>
 	</item>
 	<item id="33612" name="Unidentified Dynasty Blade" additionalName="Event" type="EtcItem">
-		<!-- Dynasty blade in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: two-handed weapon/ sword) -->
+		<!-- Unidentified Dynasty Blade. Double-click to identify. The acquired item can be Standard or Bound. (Type: two-handed sword) -->
 		<set name="icon" val="icon.weapon_dynasty_twohand_sword_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="S" />
@@ -306,7 +306,7 @@
 		</skills>
 	</item>
 	<item id="33620" name="Unidentified Dynasty Bagh-Nakh" additionalName="Event" type="EtcItem">
-		<!-- Dynasty Bagh-Nakh in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: two-handed weapon/ fist weapon) -->
+		<!-- Unidentified Dynasty Bagh-Nakh. Double-click to identify. The acquired item can be Standard or Bound. (Type: fist weapon) -->
 		<set name="icon" val="icon.weapon_dynasty_jamadhr_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="S" />
@@ -319,7 +319,7 @@
 		</skills>
 	</item>
 	<item id="33621" name="Unidentified Dynasty Dual Swords" additionalName="Event" type="EtcItem">
-		<!-- Dynasty Dual Sword in an unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. -->
+		<!-- Unidentified Dynasty Dual Swords. Double-click to identify. The acquired item can be Standard or Bound. -->
 		<set name="icon" val="icon.weapon_dual_sword_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="S" />
@@ -566,7 +566,7 @@
 		</skills>
 	</item>
 	<item id="33640" name="Blessed Scroll of Escape" type="EtcItem">
-		<!-- Mysterious scroll that relocates user to the nearest village. -->
+		<!-- Teleports to the nearest village. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i01" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -614,7 +614,7 @@
 		</skills>
 	</item>
 	<item id="33643" name="Scroll: Minion" type="EtcItem">
-		<!-- Scroll that can summon a Minion for 2 h. -->
+		<!-- Summons a minion for 2 h. -->
 		<set name="icon" val="icon.etc_piece_of_paper_white_i00" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -629,7 +629,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="33644" name="Scroll: Superior Minion" type="EtcItem">
-		<!-- Scroll that can summon a Superior Minion for 2 h. -->
+		<!-- Summons a superior minion for 2 h. -->
 		<set name="icon" val="icon.etc_piece_of_paper_white_i00" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -644,7 +644,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="33645" name="Package: Scroll: Minion (3 pcs.)" type="EtcItem">
-		<!-- Scroll that can summon a Minion for 2 h. Contains 3 sheets. -->
+		<!-- Double-click to obtain 3 scrolls that summon a minion for 2 h. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -661,7 +661,7 @@
 		</capsuled_items>
 	</item>
 	<item id="33646" name="Package: Scroll: Superior Minion (3 pcs.)" type="EtcItem">
-		<!-- Scroll that can summon a Superior Minion for 2 h. Contains 3 sheets. -->
+		<!-- Double-click to obtain 3 scrolls that summon a superior minion for 2 h. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -692,14 +692,14 @@
 		<set name="material" val="FISH" />
 		<capsuled_items>
 			<item id="33504" min="1" max="1" chance="100" /> <!-- Package: Hero's Blessed Buff Scroll (5 pcs.) -->
-			<item id="13275" min="1" max="1" chance="100" /> <!-- Package: Minion Coupon (3 pcs.) -->
+			<item id="13275" min="1" max="1" chance="100" /> <!-- Package: Pet Necklace Coupon (3 pcs.) -->
 			<item id="33506" min="1" max="1" chance="100" /> <!-- Package: Scroll: Noblesse Blessing (5 pcs.) -->
 			<item id="33508" min="1" max="1" chance="100" /> <!-- Package: Scroll: Mount Kukuru (30 pcs.) -->
 			<item id="13106" min="1" max="1" chance="100" /> <!-- Package: Feather of Blessing (3 pcs.) -->
 		</capsuled_items>
 	</item>
 	<item id="33648" name="Gift Box of Destiny" type="EtcItem">
-		<!-- Double-click to obtain 250 Returning Hero's Marks, Package: Returning Hero's Vitality Replenishing Juice (5 pcs.), Package: Superior Minion Coupon (2 pcs.). -->
+		<!-- Double-click to obtain Returning Hero's Mark (250 pcs.), Package: Returning Hero's Vitality Replenishing Juice (5 pcs.), Package: Superior Minion Coupon (2 pcs.). -->
 		<set name="icon" val="icon.present_of_destination_event" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -776,7 +776,7 @@
 		</skills>
 	</item>
 	<item id="33652" name="Unidentified Samurai Long Sword" additionalName="Event" type="EtcItem">
-		<!-- Samurai Long Sword in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-handed weapon/ sword) -->
+		<!-- Unidentified Samurai Long Sword. Double-click to identify. The acquired item can be Standard or Bound. (Type: one-handed sword) -->
 		<set name="icon" val="icon.weapon_samurai_longsword_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -802,7 +802,7 @@
 		</skills>
 	</item>
 	<item id="33654" name="Unidentified Admiral's Estoc" additionalName="Event" type="EtcItem">
-		<!-- Kamael-exclusive Weapon: Samurai Long Sword Conversion, Admiral's Estoc in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-handed weapon: rapier) -->
+		<!-- Kamael-exclusive weapon: Samurai Long Sword conversion, Unidentified Admiral's Estoc. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-handed weapon type: rapier) -->
 		<set name="icon" val="icon.weapon_blink_slasher_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -854,7 +854,7 @@
 		</skills>
 	</item>
 	<item id="33658" name="Unidentified Sharpshooter" additionalName="Event" type="EtcItem">
-		<!-- Kamael-exclusive Weapon: Eminence Bow Conversion, Sharpshooter in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: two-handed weapon/ crossbow) -->
+		<!-- Kamael-exclusive weapon: Unidentified Sharpshooter, Eminence Bow conversion. Double-click to identify. The acquired item can be Standard or Bound. (Type: crossbow) -->
 		<set name="icon" val="icon.weapon_taslam_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -971,7 +971,7 @@
 		</skills>
 	</item>
 	<item id="33667" name="Unidentified Full Plate Armor" additionalName="Event" type="EtcItem">
-		<!-- Full Plate Armor in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-piece/ heavy armor) -->
+		<!-- Unidentified Full Plate Armor. Double-click to identify. The acquired item can be Standard or Bound. (Type: one-piece heavy armor) -->
 		<set name="icon" val="icon.armor_t62_ul_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -997,7 +997,7 @@
 		</skills>
 	</item>
 	<item id="33669" name="Unidentified Full Plate Boots" additionalName="Event" type="EtcItem">
-		<!-- Full Plate Boots in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: boots) -->
+		<!-- Full Plate Boots in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: Boots) -->
 		<set name="icon" val="icon.armor_t62_b_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="C" />
@@ -1114,7 +1114,7 @@
 		</skills>
 	</item>
 	<item id="33678" name="Unidentified Wizard's Tear" additionalName="Event" type="EtcItem">
-		<!-- Wizard's Tear in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-handed weapon/ sword) -->
+		<!-- Unidentified Wizard's Tear. Double-click to identify. The acquired item can be Standard or Bound. (Type: one-handed sword) -->
 		<set name="icon" val="icon.weapon_tears_of_wizard_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="B" />
@@ -1127,7 +1127,7 @@
 		</skills>
 	</item>
 	<item id="33679" name="Unidentified Damascus Sword" additionalName="Event" type="EtcItem">
-		<!-- Damascus Sword in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-handed weapon/ sword) -->
+		<!-- Unidentified Damascus Sword. Double-click to identify. The acquired item can be Standard or Bound. (Type: one-handed sword) -->
 		<set name="icon" val="icon.weapon_sword_of_damascus_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="B" />
@@ -1309,7 +1309,7 @@
 		</skills>
 	</item>
 	<item id="33693" name="Unidentified Doom Plate Armor" additionalName="Event" type="EtcItem">
-		<!-- Doom Plate Armor in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one piece/ heavy armor) -->
+		<!-- Doom Plate Armor in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: one-piece/ heavy armor) -->
 		<set name="icon" val="icon.armor_t71_ul_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="B" />
@@ -1335,7 +1335,7 @@
 		</skills>
 	</item>
 	<item id="33695" name="Unidentified Doom Boots" additionalName="Event" type="EtcItem">
-		<!-- Doom Boots in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: boots) -->
+		<!-- Doom Boots in an Unidentified state. Double-click the item to identify it. The acquired item can be Standard or Bound. (Type: Boots) -->
 		<set name="icon" val="icon.armor_t71_b_i02" />
 		<set name="is_sellable" val="false" />
 		<set name="crystal_type" val="B" />

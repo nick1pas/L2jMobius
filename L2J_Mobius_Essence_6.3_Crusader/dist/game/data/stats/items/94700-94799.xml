@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="94700" name="Test - Butterfly Hairpin" additionalName="Test" type="Armor">
-		<!-- Test hair accessory. -->
+		<!-- Test head accessory. -->
 		<set name="icon" val="icon.Accessary_butterfly_hearpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -11,7 +11,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94701" name="Test - Pirate's Eyepatch" additionalName="Test" type="Armor">
-		<!-- Test hair accessory. -->
+		<!-- Test head accessory. -->
 		<set name="icon" val="icon.accessory_eye_bandage_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -21,7 +21,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94702" name="Test - Outlaw's Eyepatch" additionalName="Test" type="Armor">
-		<!-- Test hair accessory. -->
+		<!-- Test head accessory. -->
 		<set name="icon" val="icon.accessory_outlaw_eyepatch_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -31,7 +31,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94703" name="Test - Eyepatch" additionalName="Test" type="Armor">
-		<!-- Test hair accessory. -->
+		<!-- Test head accessory. -->
 		<set name="icon" val="icon.Accessary_one_eye_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -41,7 +41,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94704" name="Test - Party Mask" additionalName="Test" type="Armor">
-		<!-- Test hair accessory. -->
+		<!-- Test head accessory. -->
 		<set name="icon" val="icon.etc_party_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -51,7 +51,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94705" name="Test - Monocle" additionalName="Test" type="Armor">
-		<!-- Test hair accessory. -->
+		<!-- Test head accessory. -->
 		<set name="icon" val="icon.accessory_glasses_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -363,7 +363,7 @@
 		</stats>
 	</item>
 	<item id="94726" name="Talisman of Hellbound Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -379,7 +379,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94727" name="Boss Doll Box Lv. 2" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -398,7 +398,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94728" name="Top-grade A-grade Weapon Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -422,12 +422,12 @@
 			<item id="8687" min="1" max="1" chance="7.14" /> <!-- Cabrio's Hand -->
 			<item id="8688" min="1" max="1" chance="7.14" /> <!-- Daimon Crystal -->
 			<item id="91887" min="1" max="1" chance="7.14" /> <!-- Durendal -->
-			<item id="14339" min="1" max="1" chance="7.14" /> <!-- clair Bijou - Not Available - Not Available -->
+			<item id="14339" min="1" max="1" chance="7.14" /> <!-- ?clair Bijou - Not Available - Not Available -->
 			<item id="8938" min="1" max="1" chance="7.14" /> <!-- Tallum Blade*Damascus Sword -->
 		</capsuled_items>
 	</item>
 	<item id="94729" name="Master's Book Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.sayha2017_box_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -506,7 +506,7 @@
 			<item id="91034" min="1" max="1" chance="2.12" /> <!-- Earth Spirit Evolution Stone -->
 			<item id="94729" min="1" max="1" chance="2.12" /> <!-- Master's Book Chest -->
 			<item id="94730" min="1" max="1" chance="2.12" /> <!-- Dynastic Essence (Time-limited) -->
-			<item id="94208" min="1" max="1" chance="2.12" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="2.12" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.12" /> <!-- Elixir Powder - Sealed -->
 			<item id="90934" min="1" max="1" chance="2.12" /> <!-- Brooch Lv. 3 -->
 			<item id="9591" min="1" max="1" chance="2.12" /> <!-- Talisman Bracelet Lv. 3 -->
@@ -554,7 +554,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="94735" name="Starter Kit" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_starter_package_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -576,7 +576,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94736" name="Settling Kit: Jewel" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_starter_package_jewell_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -592,7 +592,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94737" name="Settling Kit: Agathion" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_starter_package_agathion_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -608,7 +608,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94738" name="Settling Kit: Upgrading" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_starter_package_boosting_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -624,7 +624,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94739" name="+7 Damascus Sword" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_sword_of_damascus_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -638,7 +638,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94740" name="+7 Wizard's Tear" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_tears_of_wizard_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -652,7 +652,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94741" name="+7 Guardian's Sword" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_guardians_sword_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -666,7 +666,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94742" name="+7 Bellion Cestus" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_bellion_cestus_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -680,7 +680,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94743" name="+7 Bow of Peril" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_hazard_bow_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -694,7 +694,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94744" name="+7 Lance" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_lancia_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -708,7 +708,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94745" name="+7 Staff of Evil Spirits" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_staff_of_evil_sprit_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -722,7 +722,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94746" name="+7 Deadman's Glory" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_deadmans_glory_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -736,7 +736,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94747" name="+7 Art of Battle Axe" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_art_of_battle_axe_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -750,7 +750,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94748" name="+7 Samurai Long Sword*Samurai Long Sword" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_dual_sword_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -764,7 +764,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94749" name="+7 Demon's Dagger" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_demons_sword_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -778,7 +778,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94750" name="+7 Colichemarde" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_colichemarde_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -792,7 +792,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94751" name="+7 Dismantler" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_dismantler_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -806,7 +806,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94752" name="+7 Star Buster" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_star_buster_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -847,7 +847,7 @@
 			<item id="94380" min="5" max="5" chance="30.0" /> <!-- Scroll: Boost Attack (Time-limited) - Sealed -->
 			<item id="94381" min="5" max="5" chance="30.0" /> <!-- Scroll: Boost Defense (Time-limited) - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.0" /> <!-- Elixir Powder - Sealed -->
-			<item id="94615" min="1" max="1" chance="3.9845" /> <!-- Forgotten Primeval Garden's Time Stone (Time-limited) - Sealed -->
+			<item id="94615" min="1" max="1" chance="3.9845" /> <!-- Forgotten Garden's Time Stone (Time-limited) - Sealed -->
 			<item id="94620" min="1" max="1" chance="3.9845" /> <!-- Primeval Isle's Time Stone (Time-limited) - Sealed -->
 			<item id="93448" min="1" max="1" chance="0.01" /> <!-- A-grade Weapon Coupon - Sealed -->
 			<item id="93449" min="1" max="1" chance="0.01" /> <!-- A-grade Armor Coupon - Sealed -->
@@ -856,7 +856,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94755" name="Half Mask of Glory" additionalName="Sealed" type="Armor">
-		<!-- A commemorative reward for reaching Lv. 90. An accessory that hides half of your face. <Effect> All Critical Damage +100 <font color=eeaa22>Available after unlocking the right hair accessory slot.</font> <font color=ff6666><Cannot be enchanted and augmented.> -->
+		<!-- A commemorative reward for reaching Lv. 90. <font color=eeaa22>Available after unlocking the right head accessory slot.</font> <font color=ff6666><Cannot be enchanted and augmented.> -->
 		<set name="icon" val="icon.accessory_half_face_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -868,7 +868,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94756" name="Onyx Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_onyx_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -884,7 +884,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94757" name="Spinel Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_garnet_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -900,7 +900,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94758" name="Coral Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_coral_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -916,7 +916,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94759" name="Zircon Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_bloodstone_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -932,7 +932,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94760" name="Opal Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_opal_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -948,7 +948,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94761" name="Amber Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_amber_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -964,7 +964,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94762" name="Moonstone Kit Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_moonstone_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1038,7 +1038,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94764" name="Stylish Color Title" additionalName="Sealed" type="EtcItem">
-		<!-- A commemorative reward for reaching Lv. 90. Allows to change your title color. Use the '/ resetname' command to return to the default color. The title disappears after joining the clan of Lv. 3 or lower. Characters of Lv. 90+ can choose the <font color="00DCFF">sky-blue</font> color. -->
+		<!-- A commemorative reward for reaching Lv. 90. Lets you change your title color. Characters of Lv. 90+ can choose the <font color="00DCFF">sky-blue</font> color. <font color=ff6666>Note!</font> /resetname Returns to the default color, a special item is required. The title disappears if you join a clan of Lv. 3 or lower. -->
 		<set name="icon" val="icon.lv_benefit_nick" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1051,7 +1051,7 @@
 		<set name="handler" val="NicknameColor" />
 	</item>
 	<item id="94765" name="Lv. 90 Achievement Reward Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1062,7 +1062,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94042" min="1" max="1" chance="100" /> <!-- Emerald Weapon Appearance Stone - Sealed -->
+			<item id="94042" min="1" max="1" chance="100" /> <!-- Appearance Stone: Emerald Weapon - Sealed -->
 			<item id="94046" min="1" max="1" chance="100" /> <!-- Spellbook: Glorious Warrior's Ability Lv. 1 - Sealed -->
 			<item id="94755" min="1" max="1" chance="100" /> <!-- Half Mask of Glory - Sealed -->
 			<item id="94764" min="2" max="2" chance="100" /> <!-- Stylish Color Title - Sealed -->
@@ -1117,9 +1117,9 @@
 			<item id="91641" min="3" max="3" chance="1.525" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91690" min="30" max="30" chance="1.515" /> <!-- Special HP Recovery Potion - Sealed -->
 			<item id="91712" min="2" max="2" chance="1.515" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
-			<item id="92314" min="50" max="50" chance="1.515" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="20" max="20" chance="1.515" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="10" max="10" chance="1.515" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="50" max="50" chance="1.515" /> <!-- Giran Seal -->
+			<item id="92314" min="20" max="20" chance="1.515" /> <!-- Giran Seal -->
+			<item id="92314" min="10" max="10" chance="1.515" /> <!-- Giran Seal -->
 			<item id="92920" min="1" max="1" chance="1.515" /> <!-- Lilith' Soul Crystal Lv. 11 - Rare -->
 			<item id="92925" min="1" max="1" chance="1.515" /> <!-- Anakim's Soul Crystal Lv. 11 - Rare -->
 			<item id="93103" min="1" max="1" chance="1.515" /> <!-- Spellbook: Divine Beam -->
@@ -1131,7 +1131,7 @@
 			<item id="94156" min="1" max="1" chance="1.515" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
 			<item id="94159" min="1" max="1" chance="1.515" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
 			<item id="94162" min="1" max="1" chance="1.515" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
-			<item id="94208" min="1" max="1" chance="1.515" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="1.515" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94269" min="2" max="2" chance="1.515" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="2" max="2" chance="1.515" /> <!-- Scroll: Boost Defense - Sealed -->
 			<item id="94324" min="1" max="1" chance="1.515" /> <!-- Spellbook: Song of Earth -->
@@ -1184,7 +1184,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94770" name="+7 Agathion Ignis Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.agathion_fire_1" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1194,11 +1194,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93128" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- +7 Agathion Ignis -->
+			<item id="93128" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- Agathion Ignis - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94771" name="+7 Agathion Nebula Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.agathion_water_1" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1208,11 +1208,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93129" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- 7 Agathion Nebula -->
+			<item id="93129" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- Agathion Nebula - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94772" name="+7 Agathion Procella Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.agathion_wind_1" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1222,11 +1222,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93130" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- +7 Agathion Procella -->
+			<item id="93130" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- Agathion Procella - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94773" name="+7 Agathion Petram Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.agathion_earth_1" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1236,11 +1236,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93131" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" />
+			<item id="93131" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- Agathion Petram - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94774" name="+7 Agathion Joy Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.pleasure_agathion_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1250,11 +1250,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93132" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- +7 Agathion Joy -->
+			<item id="93132" min="1" max="1" chance="100" maxEnchant="7" minEnchant="7" /> <!-- Agathion Joy - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94775" name="+4 Circlet of Hero Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.accessory_barka_karm_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1333,7 +1333,7 @@
 			<item id="94380" min="5" max="5" chance="30.0" /> <!-- Scroll: Boost Attack (Time-limited) - Sealed -->
 			<item id="94381" min="5" max="5" chance="30.0" /> <!-- Scroll: Boost Defense (Time-limited) - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.0" /> <!-- Elixir Powder - Sealed -->
-			<item id="94615" min="1" max="1" chance="3.9845" /> <!-- Forgotten Primeval Garden's Time Stone (Time-limited) - Sealed -->
+			<item id="94615" min="1" max="1" chance="3.9845" /> <!-- Forgotten Garden's Time Stone (Time-limited) - Sealed -->
 			<item id="94620" min="1" max="1" chance="3.9845" /> <!-- Primeval Isle's Time Stone (Time-limited) - Sealed -->
 			<item id="93448" min="1" max="1" chance="0.01" /> <!-- A-grade Weapon Coupon - Sealed -->
 			<item id="93449" min="1" max="1" chance="0.01" /> <!-- A-grade Armor Coupon - Sealed -->
@@ -1342,7 +1342,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94780" name="Growth Rune Fragment" additionalName="Sealed" type="EtcItem">
-		<!-- Required upgrading Growth Rune through compounding. Note! In case of failure the Growth Rune level is decreased depending on its level. -->
+		<!-- Required for upgrading Growth Rune through compounding. Note! In case of failure the Growth Rune level is decreased depending on its level. -->
 		<set name="icon" val="icon.star_agathion_cube_peice" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1352,7 +1352,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="94781" name="Growth Rune Lv. 1" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +1% Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +1% Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1366,7 +1366,7 @@
 		</skills>
 	</item>
 	<item id="94782" name="Growth Rune Lv. 2" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +2% Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +2% Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 1. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1380,7 +1380,7 @@
 		</skills>
 	</item>
 	<item id="94783" name="Growth Rune Lv. 3" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +3% Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +3% Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 1. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1394,7 +1394,7 @@
 		</skills>
 	</item>
 	<item id="94784" name="Growth Rune Lv. 4" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +4% Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +4% Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 1. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1408,7 +1408,7 @@
 		</skills>
 	</item>
 	<item id="94785" name="Growth Rune Lv. 5" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +5% P. Def. +10 M. Def. +10 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +5% P. Def. +10 M. Def. +10 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 1. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1422,7 +1422,7 @@
 		</skills>
 	</item>
 	<item id="94786" name="Growth Rune Lv. 6" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +6% P. Def. +20 M. Def. +20 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +6% P. Def. +20 M. Def. +20 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 6. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i01" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1436,7 +1436,7 @@
 		</skills>
 	</item>
 	<item id="94787" name="Growth Rune Lv. 7" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +7% P. Def. +30 M. Def. +30 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +7% P. Def. +30 M. Def. +30 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 6. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i01" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1451,7 +1451,7 @@
 		</skills>
 	</item>
 	<item id="94788" name="Growth Rune Lv. 8" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +8% P. Def. +50 M. Def. +50 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +8% P. Def. +50 M. Def. +50 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 6. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i01" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1466,7 +1466,7 @@
 		</skills>
 	</item>
 	<item id="94789" name="Growth Rune Lv. 9" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +9% P. Def. +70 M. Def. +70 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +9% P. Def. +70 M. Def. +70 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 6. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i01" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1481,7 +1481,7 @@
 		</skills>
 	</item>
 	<item id="94790" name="Growth Rune Lv. 10" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +10% P. Atk. +100 M. Atk. +100 P. Def. +100 M. Def. +100 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +10% P. Atk. +100 M. Atk. +100 P. Def. +100 M. Def. +100 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 6. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i01" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1496,7 +1496,7 @@
 		</skills>
 	</item>
 	<item id="94791" name="Growth Rune Lv. 11" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +11% P. Atk. +120 M. Atk. +120 P. Def. +120 M. Def. +120 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +11% P. Atk. +120 M. Atk. +120 P. Def. +120 M. Def. +120 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 11. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i02" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1511,7 +1511,7 @@
 		</skills>
 	</item>
 	<item id="94792" name="Growth Rune Lv. 12" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +12% P. Atk. +150 M. Atk. +150 P. Def. +150 M. Def. +150 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +12% P. Atk. +150 M. Atk. +150 P. Def. +150 M. Def. +150 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 11. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i02" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1526,7 +1526,7 @@
 		</skills>
 	</item>
 	<item id="94793" name="Growth Rune Lv. 13" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +13% P. Atk. +180 M. Atk. +180 P. Def. +180 M. Def. +180 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +13% P. Atk. +180 M. Atk. +180 P. Def. +180 M. Def. +180 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 11. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i02" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1541,7 +1541,7 @@
 		</skills>
 	</item>
 	<item id="94794" name="Growth Rune Lv. 14" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +14% P. Atk. +210 M. Atk. +210 P. Def. +210 M. Def. +210 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +14% P. Atk. +210 M. Atk. +210 P. Def. +210 M. Def. +210 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 11. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i02" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1556,7 +1556,7 @@
 		</skills>
 	</item>
 	<item id="94795" name="Growth Rune Lv. 15" additionalName="Sealed" type="EtcItem">
-		<!-- <Properties> Acquired XP/ SP +15% P. Atk. +300 M. Atk. +300 P. Def. +300 M. Def. +300 Boosts parameters when in inventory. Can be upgraded through compounding with Growth Rune Fragment. -->
+		<!-- <Properties> Acquired XP/ SP +15% P. Atk. +240 M. Atk. +240 P. Def. +240 M. Def. +240 Boosts stats when in inventory. Can be upgraded through compounding with Growth Rune Fragment. <font color=ff6666>Note!</font> In case of failure you get Growth Rune Lv. 11. Effects of runes of the same level do not stack. -->
 		<set name="icon" val="icon.pc_new_cafe_rune_i02" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1571,7 +1571,7 @@
 		</skills>
 	</item>
 	<item id="94796" name="Kit: Wolf" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_summon_wolf_r_02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1584,13 +1584,13 @@
 		<capsuled_items>
 			<item id="6645" min="50000" max="50000" chance="100" /> <!-- Beast Soulshot - Sealed -->
 			<item id="6646" min="20000" max="20000" chance="100" /> <!-- Beast Spiritshot - Sealed -->
-			<item id="94097" min="1" max="1" chance="100" /> <!-- Sealed Wolf Necklace - Sealed -->
+			<item id="94097" min="1" max="1" chance="100" /> <!-- Sealed Wolf's Necklace - Sealed -->
 			<item id="94636" min="100" max="100" chance="100" /> <!-- Pet's XP Growth Scroll - Sealed -->
 			<item id="94657" min="1" max="1" chance="100" /> <!-- Package: Pet Food 2000 pcs. - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94797" name="Kit: Buffalo" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.buffalo_necklace_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1603,13 +1603,13 @@
 		<capsuled_items>
 			<item id="6645" min="50000" max="50000" chance="100" /> <!-- Beast Soulshot - Sealed -->
 			<item id="6646" min="20000" max="20000" chance="100" /> <!-- Beast Spiritshot - Sealed -->
-			<item id="94098" min="1" max="1" chance="100" /> <!-- Sealed Buffalo Necklace - Sealed -->
+			<item id="94098" min="1" max="1" chance="100" /> <!-- Sealed Buffalo's Necklace - Sealed -->
 			<item id="94636" min="100" max="100" chance="100" /> <!-- Pet's XP Growth Scroll - Sealed -->
 			<item id="94657" min="1" max="1" chance="100" /> <!-- Package: Pet Food 2000 pcs. - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94798" name="Kit: Tiger" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_tooth_gragon" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1622,13 +1622,13 @@
 		<capsuled_items>
 			<item id="6645" min="50000" max="50000" chance="100" /> <!-- Beast Soulshot - Sealed -->
 			<item id="6646" min="20000" max="20000" chance="100" /> <!-- Beast Spiritshot - Sealed -->
-			<item id="94099" min="1" max="1" chance="100" /> <!-- Sealed Tiger Necklace - Sealed -->
+			<item id="94099" min="1" max="1" chance="100" /> <!-- Sealed Tiger's Necklace - Sealed -->
 			<item id="94636" min="100" max="100" chance="100" /> <!-- Pet's XP Growth Scroll - Sealed -->
 			<item id="94657" min="1" max="1" chance="100" /> <!-- Package: Pet Food 2000 pcs. - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94799" name="Kit: Kookaburra" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.kukaburo_necklace_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1641,7 +1641,7 @@
 		<capsuled_items>
 			<item id="6645" min="50000" max="50000" chance="100" /> <!-- Beast Soulshot - Sealed -->
 			<item id="6646" min="20000" max="20000" chance="100" /> <!-- Beast Spiritshot - Sealed -->
-			<item id="94100" min="1" max="1" chance="100" /> <!-- Sealed Kookaburra Necklace - Sealed -->
+			<item id="94100" min="1" max="1" chance="100" /> <!-- Sealed Kookaburra's Necklace - Sealed -->
 			<item id="94636" min="100" max="100" chance="100" /> <!-- Pet's XP Growth Scroll - Sealed -->
 			<item id="94657" min="1" max="1" chance="100" /> <!-- Package: Pet Food 2000 pcs. - Sealed -->
 		</capsuled_items>

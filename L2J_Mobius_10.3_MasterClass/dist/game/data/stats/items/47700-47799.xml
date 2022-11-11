@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="47700" name="Greater Blue Cat's Eye Lv. 1" type="Armor">
-		<!-- M. Skill Critical Damage +12%, M. Skill Power +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- M. Skill Critical Damage +12%, M. Skill Power +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_blue_catseye_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -14,7 +14,7 @@
 		</skills>
 	</item>
 	<item id="47701" name="La Vie En Rose's Red Cat's Eye Box" type="EtcItem">
-		<!-- Double-click to obtain a Red Cat's Eye Lv. 1. -->
+		<!-- Double-click to obtain Red Cat's Eye Lv. 1. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -28,7 +28,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47702" name="La Vie En Rose's Blue Cat's Eye Box" type="EtcItem">
-		<!-- Double-click to obtain a Blue Cat's Eye Lv. 1. -->
+		<!-- Double-click to obtain Blue Cat's Eye Lv. 1. -->
 		<set name="icon" val="icon.bm_jewelbox_blue_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -42,7 +42,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47703" name="Red Cat's Eye Lv. 3 Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain a Red Cat's Eye Lv. 3. -->
+		<!-- Double-click to obtain Red Cat's Eye Lv. 3. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -56,7 +56,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47704" name="Red Cat's Eye Lv. 4 Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain a Red Cat's Eye Lv. 4. -->
+		<!-- Double-click to obtain Red Cat's Eye Lv. 4. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -70,7 +70,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47705" name="Blue Cat's Eye Lv. 3 Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain a Blue Cat's Eye Lv. 3. -->
+		<!-- Double-click to obtain Blue Cat's Eye Lv. 3. -->
 		<set name="icon" val="icon.bm_jewelbox_blue_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -84,7 +84,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47706" name="Blue Cat's Eye Lv. 4 Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain a Blue Cat's Eye Lv. 4. -->
+		<!-- Double-click to obtain Blue Cat's Eye Lv. 4. -->
 		<set name="icon" val="icon.bm_jewelbox_blue_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -98,7 +98,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47707" name="Ultimate Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain 1 of the La Vie En Rose's Jewelry Boxes. -->
+		<!-- Double-click to obtain a La Vie En Rose's Jewel Pack. -->
 		<set name="icon" val="icon.bm_sayha_blessed_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="is_sellable" val="false" />
@@ -110,7 +110,7 @@
 		<capsuled_items>
 			<item id="47703" min="1" max="1" chance="3.57142" /> <!-- Red Cat's Eye Lv. 3 Jewelry Box -->
 			<item id="47704" min="1" max="1" chance="3.57142" /> <!-- Red Cat's Eye Lv. 4 Jewelry Box -->
-			<item id="47705" min="1" max="1" chance="3.57142" /> <!-- Blue Cat's Eye Lv. 3 Jewelry Box -->
+			<item id="47705" min="1" max="1" chance="3.57142" /> <!-- Blue Cat's Eye Jewelry Box Lv. 3 -->
 			<item id="47706" min="1" max="1" chance="3.57142" /> <!-- Blue Cat's Eye Lv. 4 Jewelry Box -->
 			<item id="47626" min="1" max="1" chance="3.57142" /> <!-- Ruby Jewelry Box Lv. 3 -->
 			<item id="47627" min="1" max="1" chance="3.57142" /> <!-- Sapphire Jewelry Box Lv. 3 -->
@@ -505,7 +505,7 @@
 		</skills>
 	</item>
 	<item id="47735" name="Freya's Art of Seduction - EXP" additionalName="Event" type="EtcItem">
-		<!-- Dimensional Item. For 30 min., Max HP/ MP/ CP +30%, P. Atk. +10%, M. Atk. +20%, P./ M. Def. +30%, Speed +20, Skill MP Consumption -15%. Additionally, Acquired XP/ SP +30%, Vitality Bonus +12. Buff remains in place after death. Cooldown is 5 min. Cannot be stacked with Art of Seduction. Cannot be used in Olympiad. -->
+		<!-- For 30 min., Max HP/ MP/ CP +30%, P. Atk. +10%, M. Atk. +20%, P./ M. Def. +30%, Speed +20, Skill MP Consumption -15%. Additionally, Acquired XP/ SP +30%, Vitality Bonus +12. Buff remains in place after death. Cooldown is 5 min. Cannot be stacked with Art of Seduction. Cannot be used in Olympiad. -->
 		<set name="icon" val="icon.bm_freya_rose_red_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -565,7 +565,7 @@
 		</skills>
 	</item>
 	<item id="47738" name="Test Fishing Rod" type="Weapon">
-		<!-- Fishing Time Reduction: 60s. A fast fishing rod for test purposes. Fishing Shot: 1 -->
+		<!-- Fishing Time Reduction: 60s A fast fishing rod for test purposes. Fishing Shot: 1 -->
 		<set name="icon" val="icon.fishing_rod05" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="FISHINGROD" />
@@ -791,12 +791,12 @@
 		<set name="is_event_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="17430" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Helmet (Heavy armor) -->
-			<item id="17431" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Breastplate (Heavy armor) -->
-			<item id="17432" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Gaiters (Heavy armor) -->
-			<item id="17433" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Gauntlets (Heavy armor) -->
-			<item id="17434" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Boots (Heavy armor) -->
-			<item id="17435" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Shield -->
+			<item id="17430" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Helmet - Heavy armor -->
+			<item id="17431" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Breastplate - Heavy armor -->
+			<item id="17432" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Gaiters - Heavy armor -->
+			<item id="17433" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Gauntlets - Heavy armor -->
+			<item id="17434" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Boots - Heavy armor -->
+			<item id="17435" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Shield -->
 		</capsuled_items>
 	</item>
 	<item id="47752" name="Capsule: +8 Eternal Light Armor" additionalName="Event" type="EtcItem">
@@ -813,11 +813,11 @@
 		<set name="is_event_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="17436" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Leather Helmet (Light armor) -->
-			<item id="17437" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Leather Armor (Light armor) -->
-			<item id="17438" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Leather Leggings (Light armor) -->
-			<item id="17439" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Leather Gloves (Light armor) -->
-			<item id="17440" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Leather Boots (Light armor) -->
+			<item id="17436" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Leather Helmet - Light armor -->
+			<item id="17437" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Leather Armor - Light armor -->
+			<item id="17438" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Leather Leggings - Light armor -->
+			<item id="17439" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Leather Gloves - Light armor -->
+			<item id="17440" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Leather Boots - Light armor -->
 		</capsuled_items>
 	</item>
 	<item id="47753" name="Capsule: +8 Eternal Robe" additionalName="Event" type="EtcItem">
@@ -834,12 +834,12 @@
 		<set name="is_event_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="17441" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Helmet (Robe) -->
-			<item id="17442" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Tunic (Robe) -->
-			<item id="17443" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Stockings (Robe) -->
-			<item id="17444" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Gloves (Robe) -->
-			<item id="17445" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Shoes (Robe) -->
-			<item id="17446" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- +8 Eternal Sigil -->
+			<item id="17441" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Circlet - Robe -->
+			<item id="17442" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Tunic - Robe -->
+			<item id="17443" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Stockings - Robe -->
+			<item id="17444" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Gloves - Robe -->
+			<item id="17445" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Shoes - Robe -->
+			<item id="17446" min="1" max="1" chance="100" minEnchant="8" maxEnchant="8" /> <!-- Eternal Sigil -->
 		</capsuled_items>
 	</item>
 	<item id="47754" name="Dragon's Treasure Chest" type="EtcItem">
@@ -859,7 +859,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47756" name="Dragon's Attribute Potion" type="EtcItem">
-		<!-- When used, Attribute Attack +30, and Attribute Resistance +30 for 30 min. The effect remains after death. Cooldown is 5 min. Cannot be used in the Olympiad. -->
+		<!-- When used, Attribute Attack +30, Attribute Resistance +30 for 30 min. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.bm_dragon_posion" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -868,7 +868,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47757" name="Dragon's Attribute Potion" additionalName="EXP" type="EtcItem">
-		<!-- When used, Attribute Attack +50, and Attribute Resistance +50, as well as Acquired XP/ SP +10% for 30 min. The effect remains after death. Cooldown is 5 min. Cannot be used in the Olympiad. -->
+		<!-- When used, Attribute Attack +50, Attribute Resistance +50, acquired XP/ SP +10% for 30 min. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.bm_dragon_posion_brave" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -918,7 +918,7 @@
 		</skills>
 	</item>
 	<item id="47762" name="Lindvior's Earring" additionalName="7-day" type="Armor">
-		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs, and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
+		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1203,7 +1203,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="47788" name="PA Event Appearance Potion - Kelbim's Light Armor" type="EtcItem">
-		<!-- Changes the appearance into that of Kelbim (Light Armor) for 24 h. -->
+		<!-- A potion made in the Red Libra Guild. Changes the armor appearance to that of Kelbim Light Armor for 24 h. -->
 		<set name="icon" val="icon.dragon_dye_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1213,7 +1213,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="47789" name="PA Event Appearance Potion - Freya's Robe" type="EtcItem">
-		<!-- Changes the appearance into that of Freya (Light Armor) for 24 h. -->
+		<!-- A potion made in the Red Libra Guild. Changes the armor appearance to that of Freya Robe for 24 h. -->
 		<set name="icon" val="icon.dragon_dye_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1237,7 +1237,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47792" name="PA Event Appearance Potion: Formal Wear" type="EtcItem">
-		<!-- Appearance changed by wearing the Formal Wear for 24 h. -->
+		<!-- A potion made in the Red Libra Guild. Changes the armor appearance to that of Formal Wear for 24 h. -->
 		<set name="icon" val="icon.dragon_dye_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1247,7 +1247,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="47793" name="PA Event Appearance Potion - Vampiric Outfit" type="EtcItem">
-		<!-- Appearance changed by wearing the Vampiric Outfit for 24 h. -->
+		<!-- A potion made in the Red Libra Guild. Changes the armor appearance to that of Vampiric Style for 24 h. -->
 		<set name="icon" val="icon.dragon_dye_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1264,7 +1264,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47795" name="PA Event Appearance Potion - Magician Garment" type="EtcItem">
-		<!-- Changes the armor appearance to Magician Garment for 24 h. -->
+		<!-- A potion made in the Red Libra Guild. Changes the armor appearance to that of Magician Garment for 24 h. -->
 		<set name="icon" val="icon.dragon_dye_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />

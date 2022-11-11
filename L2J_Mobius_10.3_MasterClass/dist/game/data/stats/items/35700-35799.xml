@@ -200,7 +200,7 @@
 		</capsuled_items>
 	</item>
 	<item id="35712" name="Refined Romantic Chapeau containing the GM's Sincerity" additionalName="Warrior" type="Armor">
-		<!-- Refined Romantic Chapeau containing the GM's sincerity. It uses 2 hair accessory slots. P. Atk. +5% when equipped. -->
+		<!-- Refined Romantic Chapeau filled with GM's sincerity. Equipped in 2 head accessory slots. When equipped, P. Atk. +5%. -->
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -219,7 +219,7 @@
 		</skills>
 	</item>
 	<item id="35713" name="Refined Romantic Chapeau containing the GM's Sincerity" additionalName="Wizard" type="Armor">
-		<!-- Refined Romantic Chapeau containing the GM's sincerity. It uses 2 hair accessory slots. M. Atk. +10% when equipped. -->
+		<!-- Refined Romantic Chapeau filled with GM's sincerity. Equipped in 2 head accessory slots. When equipped, M. Atk. +10%. -->
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -238,7 +238,7 @@
 		</skills>
 	</item>
 	<item id="35714" name="Refined Romantic Chapeau containing the GM's Sincerity" additionalName="Healer" type="Armor">
-		<!-- Refined Romantic Chapeau containing the GM's sincerity. It uses 2 hair accessory slots. WIT +3 when equipped. -->
+		<!-- Refined Romantic Chapeau filled with GM's sincerity. Equipped in 2 head accessory slots. When equipped, WIT +3. -->
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -257,7 +257,7 @@
 		</skills>
 	</item>
 	<item id="35715" name="Refined Romantic Chapeau containing the GM's Blessing" additionalName="Warrior" type="Armor">
-		<!-- Refined Romantic Chapeau containing the GM's blessing. It uses 2 hair accessory slots. P. Atk. +5% and Critical Rate for standard attacks +50 when equipped. -->
+		<!-- Refined Romantic Chapeau filled with GM's blessing. Equipped in 2 head accessory slots. When equipped, P. Atk. +5%, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -276,7 +276,7 @@
 		</skills>
 	</item>
 	<item id="35716" name="Refined Romantic Chapeau containing the GM's Blessing" additionalName="Wizard" type="Armor">
-		<!-- Refined Romantic Chapeau containing the GM's blessing. It uses 2 hair accessory slots. M. Atk. +10% and INT +3 when equipped. -->
+		<!-- Refined Romantic Chapeau filled with GM's blessing. Equipped in 2 head accessory slots. When equipped, M. Atk. +10%, INT +3. -->
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -295,7 +295,7 @@
 		</skills>
 	</item>
 	<item id="35717" name="Refined Romantic Chapeau containing the GM's Blessing" additionalName="Healer" type="Armor">
-		<!-- Refined Romantic Chapeau containing the GM's blessing. It uses 2 hair accessory slots. WIT +3 and MEN +3 when equipped. -->
+		<!-- Refined Romantic Chapeau filled with GM's blessing. Equipped in 2 head accessory slots. When equipped, WIT +3, MEN +3. -->
 		<set name="icon" val="icon.accessory_archer_hat2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -406,7 +406,7 @@
 			<item id="18175" min="1" max="1" chance="100" /> <!-- Unidentified Specter Fighter -->
 			<item id="18176" min="1" max="1" chance="100" /> <!-- Unidentified Specter Stormer -->
 			<item id="18177" min="1" max="1" chance="100" /> <!-- Unidentified Specter Thrower -->
-			<item id="18178" min="1" max="1" chance="100" /> <!-- Unidentified Specter Shooter -->
+			<item id="18178" min="1" max="1" chance="100" /> <!-- Unidentified Specter Guardian -->
 			<item id="18179" min="1" max="1" chance="100" /> <!-- Unidentified Specter Buster -->
 			<item id="18180" min="1" max="1" chance="100" /> <!-- Unidentified Specter Caster -->
 			<item id="18181" min="1" max="1" chance="100" /> <!-- Unidentified Specter Retributer -->
@@ -532,7 +532,7 @@
 			<item id="57" min="300000000" max="300000000" chance="100" /> <!-- Adena -->
 			<item id="30277" min="2" max="2" chance="100" /> <!-- Greater Package: R-grade Soulshots -->
 			<item id="30281" min="1" max="1" chance="100" /> <!-- Greater Package: Blessed R-grade Spiritshots -->
-			<item id="30275" min="40" max="40" chance="100" /> <!-- Scroll: 1,000,000 SP -->
+			<item id="30275" min="40" max="40" chance="100" /> <!-- Scroll: 100 SP -->
 		</capsuled_items>
 	</item>
 	<item id="35729" name="Fire Stone (+60)" additionalName="Event" type="EtcItem">
@@ -728,7 +728,7 @@
 		</skills>
 	</item>
 	<item id="35741" name="Low-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 1. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 1. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -748,7 +748,7 @@
 		</skills>
 	</item>
 	<item id="35742" name="Low-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to increase reputation points by 1000. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to increase reputation points by 1000. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -873,7 +873,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="35750" name="Draco's Blessing (30-min.)" additionalName="Event" type="EtcItem">
-		<!-- For 30 min., increases acquired XP/ SP +200%. Required level: 85-90. -->
+		<!-- For 30 min., acquired XP/ SP while hunting +200%. Required level: 85-90. -->
 		<set name="icon" val="icon.etc_ev_draco_exp_up" />
 		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
@@ -902,7 +902,7 @@
 		</skills>
 	</item>
 	<item id="35752" name="Mid-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 3. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 3. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -922,7 +922,7 @@
 		</skills>
 	</item>
 	<item id="35753" name="High-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 5. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 5. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -942,7 +942,7 @@
 		</skills>
 	</item>
 	<item id="35754" name="Top-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 10. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 10. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -962,7 +962,7 @@
 		</skills>
 	</item>
 	<item id="35755" name="Mid-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to increase reputation points by 5000. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to increase reputation points by 5000. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -978,7 +978,7 @@
 		</skills>
 	</item>
 	<item id="35756" name="High-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to increase reputation points by 30,000. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to increase reputation points by 30,000. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -994,7 +994,7 @@
 		</skills>
 	</item>
 	<item id="35757" name="Top-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to reset reputation points to 0. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to reset reputation points to 0. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -1010,7 +1010,7 @@
 		</skills>
 	</item>
 	<item id="35758" name="Draco's Blessing (1-hour)" additionalName="Event" type="EtcItem">
-		<!-- For 1 h., increases acquired XP/ SP +200%. Required level: 85-90. -->
+		<!-- For 1 h., acquired XP/ SP while hunting +200%. Required level: 85-90. -->
 		<set name="icon" val="icon.etc_ev_draco_exp_up" />
 		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
@@ -1025,7 +1025,7 @@
 		</skills>
 	</item>
 	<item id="35759" name="Draco's Blessing (1-hour)" additionalName="Event" type="EtcItem">
-		<!-- For 1 h., acquired XP/ SP +100%. Required level: 1-95. -->
+		<!-- For 1 h., acquired XP/ SP while hunting +100%. Required level: 1-95. -->
 		<set name="icon" val="icon.etc_ev_draco_exp_up" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -1040,7 +1040,7 @@
 		</skills>
 	</item>
 	<item id="35760" name="Draco's Blessing (3-hour)" additionalName="Event" type="EtcItem">
-		<!-- For 3 h., increases acquired XP/ SP +200%. Required level: 85-90. -->
+		<!-- For 3 h., acquired XP/ SP while hunting +200%. Required level: 85-90. -->
 		<set name="icon" val="icon.etc_ev_draco_exp_up" />
 		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
@@ -1115,7 +1115,7 @@
 		</skills>
 	</item>
 	<item id="35765" name="Rabbit Ears" additionalName="Critical Rate" type="Armor">
-		<!-- When equipped, Critical Rate for standard attacks +50. -->
+		<!-- When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1130,7 +1130,7 @@
 		</skills>
 	</item>
 	<item id="35766" name="Rabbit Ears" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1295,7 +1295,7 @@
 		</skills>
 	</item>
 	<item id="35777" name="Raccoon Ears" additionalName="Critical Rate" type="Armor">
-		<!-- When equipped, Critical Rate for standard attacks +50. -->
+		<!-- When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.accessory_racoon_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1310,7 +1310,7 @@
 		</skills>
 	</item>
 	<item id="35778" name="Raccoon Ears" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_racoon_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1475,7 +1475,7 @@
 		</skills>
 	</item>
 	<item id="35789" name="Cat Ears" additionalName="Critical Rate" type="Armor">
-		<!-- When equipped, Critical Rate for standard attacks +50. -->
+		<!-- When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.accessory_cat_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1490,7 +1490,7 @@
 		</skills>
 	</item>
 	<item id="35790" name="Cat Ears" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_cat_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />

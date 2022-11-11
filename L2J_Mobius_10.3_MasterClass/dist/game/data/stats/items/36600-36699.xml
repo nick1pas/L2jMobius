@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="36600" name="Scroll: Restore A-grade Equipment" type="EtcItem">
-		<!-- Restores the original appearance of A-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of A-grade equipment (weapons/ armor). -->
 		<set name="icon" val="icon.change_restore_i04" />
 		<set name="price" val="500000" />
 		<set name="etcitem_type" val="RESTORE_SHAPE_SHIFTING_ALLITEM" />
@@ -16,7 +16,7 @@
 		</skills>
 	</item>
 	<item id="36601" name="Scroll: Restore B-grade Equipment" type="EtcItem">
-		<!-- Restores the original appearance of B-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of B-grade equipment (weapons/ armor). -->
 		<set name="icon" val="icon.change_restore_i03" />
 		<set name="price" val="100000" />
 		<set name="etcitem_type" val="RESTORE_SHAPE_SHIFTING_ALLITEM" />
@@ -31,7 +31,7 @@
 		</skills>
 	</item>
 	<item id="36602" name="Scroll: Restore C-grade Equipment" type="EtcItem">
-		<!-- Restores the original appearance of C-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of C-grade equipment (weapons/ armor). -->
 		<set name="icon" val="icon.change_restore_i02" />
 		<set name="price" val="50000" />
 		<set name="etcitem_type" val="RESTORE_SHAPE_SHIFTING_ALLITEM" />
@@ -46,7 +46,7 @@
 		</skills>
 	</item>
 	<item id="36603" name="Scroll: Restore D-grade Equipment" type="EtcItem">
-		<!-- Restores the original appearance of D-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of D-grade equipment (weapons/ armor). -->
 		<set name="icon" val="icon.change_restore_i01" />
 		<set name="price" val="10000" />
 		<set name="etcitem_type" val="RESTORE_SHAPE_SHIFTING_ALLITEM" />
@@ -61,7 +61,7 @@
 		</skills>
 	</item>
 	<item id="36604" name="Appearance Stone: Hair Accessory" type="EtcItem">
-		<!-- Item that can change a hair accessory's appearance. Works for item with the same number of slots. You need an appearance item, which is destroyed after its appearance is extracted. An appearance-modified item has no change in characteristics. Double-click to use. Consumes 125,000 adena for a 1-slot hair accessory and 200,000 adena for a 2-slot hair accessory. Note!. When changed to the appearance of a female-only hair accessory, it cannot be equipped by a male character. -->
+		<!-- Required for changing a head accessory's appearance. Works for items that use the same number of head accessory slots. You need an appearance item, which is destroyed after its appearance is extracted. No change in stats. Double-click to use. The fee for 1-slot head accessories is 125,000 adena, for 2-slot head accessories - 200,000 adena. Note! If you extract an appearance of a female-only accessory, you won't be able to equip it on male characters. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2_stone" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -72,7 +72,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36605" name="Blessed Appearance Stone: Hair Accessory" type="EtcItem">
-		<!-- Required for changing a hair accessory's appearance. Works for items that use the same number of hair accessory slots. You need an appearance item, which remains intact after its appearance is extracted. No change in stats. Double-click to use. Note!. When changed to the appearance of a female-only hair accessory, it cannot be equipped by a male character. -->
+		<!-- Required for changing a head accessory's appearance. Works for items that use the same number of head accessory slots. You need an appearance item, which remains intact after its appearance is extracted. No change in stats. Double-click to use. Note! If you extract an appearance of a female-only accessory, you won't be able to equip it on male characters. -->
 		<set name="icon" val="BranchSys3.Icon.g_bless_shape_shifting_hair2_stone" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
@@ -416,7 +416,7 @@
 		</skills>
 	</item>
 	<item id="36624" name="Blessed Scroll: Modify R-grade Armor" additionalName="7-day" type="EtcItem">
-		<!-- Changes the appearance of an R-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won t be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes the appearance of an R-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won't be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
 		<set name="icon" val="icon.pr_armor_change_i06" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -435,7 +435,7 @@
 		</skills>
 	</item>
 	<item id="36625" name="Blessed Scroll: Modify S-grade Armor" additionalName="7-day" type="EtcItem">
-		<!-- Changes the appearance of an S-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won t be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back its original appearance. -->
+		<!-- Changes the appearance of an S-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won't be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back its original appearance. -->
 		<set name="icon" val="icon.pr_armor_change_i05" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -454,7 +454,7 @@
 		</skills>
 	</item>
 	<item id="36626" name="Blessed Scroll: Modify A-grade Armor" additionalName="7-day" type="EtcItem">
-		<!-- Changes the appearance of an A-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won t be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes the appearance of an A-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won't be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
 		<set name="icon" val="icon.pr_armor_change_i04" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -473,7 +473,7 @@
 		</skills>
 	</item>
 	<item id="36627" name="Blessed Scroll: Modify B-grade Armor" additionalName="7-day" type="EtcItem">
-		<!-- Changes the appearance of an B-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won t be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes the appearance of an B-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won't be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
 		<set name="icon" val="icon.pr_armor_change_i03" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -492,7 +492,7 @@
 		</skills>
 	</item>
 	<item id="36628" name="Blessed Scroll: Modify C-grade Armor" additionalName="7-day" type="EtcItem">
-		<!-- Changes the appearance of an C-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won t be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes the appearance of an C-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won't be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
 		<set name="icon" val="icon.pr_armor_change_i02" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -511,7 +511,7 @@
 		</skills>
 	</item>
 	<item id="36629" name="Blessed Scroll: Modify D-grade Armor" additionalName="7-day" type="EtcItem">
-		<!-- Changes the appearance of an D-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won t be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back its original appearance. -->
+		<!-- Changes the appearance of an D-grade armor to that of different armor of the same grade or a lower grade. You need an appearance item. It won't be destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. An appearance-modified item cannot be exchanged until it gets back its original appearance. -->
 		<set name="icon" val="icon.pr_armor_change_i01" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="false" />
@@ -530,7 +530,7 @@
 		</skills>
 	</item>
 	<item id="36630" name="Appearance Stone: Hair Accessory" additionalName="15-day" type="EtcItem">
-		<!-- Item that can change a hair accessory's appearance. Works for item with the same number of slots. You need an appearance item, which is destroyed after its appearance is extracted. An appearance-modified item has no change in characteristics. Double-click to use. Consumes 125,000 adena for a 1-slot hair accessory and 200,000 adena for a 2-slot hair accessory. Note!. When changed to the appearance of a female-only hair accessory, it cannot be equipped by a male character. -->
+		<!-- Required for changing a head accessory's appearance. Works for items that use the same number of head accessory slots. You need an appearance item, which is destroyed after its appearance is extracted. No change in stats. Double-click to use. The fee for 1-slot head accessories is 125,000 adena, for 2-slot head accessories - 200,000 adena. Note! If you extract an appearance of a female-only accessory, you won't be able to equip it on male characters. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2_stone" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -544,7 +544,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36631" name="Blessed Appearance Stone: Hair Accessory" additionalName="7-day" type="EtcItem">
-		<!-- Required for changing a hair accessory's appearance. Works for items that use the same number of hair accessory slots. You need an appearance item, which remains intact after its appearance is extracted. No change in stats. Double-click to use. Note!. When changed to the appearance of a female-only hair accessory, it cannot be equipped by a male character. -->
+		<!-- Required for changing a head accessory's appearance. Works for items that use the same number of head accessory slots. You need an appearance item, which remains intact after its appearance is extracted. No change in stats. Double-click to use. Note! If you extract an appearance of a female-only accessory, you won't be able to equip it on male characters. -->
 		<set name="icon" val="BranchSys3.Icon.g_bless_shape_shifting_hair2_stone" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
@@ -559,7 +559,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36632" name="Emerald Weapon - One-handed Sword" type="Weapon">
-		<!-- Emerald weapon. One-handed sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: one-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -582,7 +582,7 @@
 		</stats>
 	</item>
 	<item id="36633" name="Emerald Weapon: Dagger" type="Weapon">
-		<!-- Emerald Weapon. Dagger style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: dagger. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -606,7 +606,7 @@
 		</stats>
 	</item>
 	<item id="36634" name="Emerald Weapon - Two-handed Sword" type="Weapon">
-		<!-- Emerald weapon. Two-handed sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: two-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_twohand_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -629,7 +629,7 @@
 		</stats>
 	</item>
 	<item id="36635" name="Emerald Weapon: Fist Weapon" type="Weapon">
-		<!-- Emerald Weapon. Fist weapon style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: fist weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dualfist" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -653,7 +653,7 @@
 		</stats>
 	</item>
 	<item id="36636" name="Emerald Weapon: Spear" type="Weapon">
-		<!-- Emerald Weapon. Spear style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: spear. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_pole" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -680,7 +680,7 @@
 		</stats>
 	</item>
 	<item id="36637" name="Emerald Weapon: Bow" type="Weapon">
-		<!-- Emerald Weapon. Bow style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: bow. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_bow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -706,7 +706,7 @@
 		</stats>
 	</item>
 	<item id="36638" name="Emerald Weapon: Crossbow" type="Weapon">
-		<!-- Emerald Weapon. Crossbow style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: crossbow. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_twohand_crossbow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -731,7 +731,7 @@
 		</stats>
 	</item>
 	<item id="36639" name="Emerald Weapon: One-handed Blunt Weapon" type="Weapon">
-		<!-- Emerald Weapon. One-handed blunt style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: one-handed blunt weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -754,7 +754,7 @@
 		</stats>
 	</item>
 	<item id="36640" name="Emerald Weapon: Two-handed Blunt Weapon" type="Weapon">
-		<!-- Emerald Weapon. Two-handed blunt style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: two-handed blunt weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -777,7 +777,7 @@
 		</stats>
 	</item>
 	<item id="36641" name="Emerald Weapon - One-handed Staff" type="Weapon">
-		<!-- Emerald weapon. One-handed staff type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: one-handed staff. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_magic_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -801,7 +801,7 @@
 		</stats>
 	</item>
 	<item id="36642" name="Emerald Weapon - Two-handed Staff" type="Weapon">
-		<!-- Emerald weapon. Two-handed staff type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: two-handed staff. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_magic_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -825,7 +825,7 @@
 		</stats>
 	</item>
 	<item id="36643" name="Emerald Weapon - Dual Sword" type="Weapon">
-		<!-- Emerald weapon. Dual Sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: dual swords. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dual" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -848,7 +848,7 @@
 		</stats>
 	</item>
 	<item id="36644" name="Emerald Weapon - Dual Dagger" type="Weapon">
-		<!-- Emerald weapon. Dagger dual sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: dual daggers. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dualdagger" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -874,7 +874,7 @@
 		</stats>
 	</item>
 	<item id="36645" name="Emerald Weapon: Dual Blunt Weapon" type="Weapon">
-		<!-- Emerald Weapon. Dual blunt weapon type. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: dual blunt weapons. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dualblunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -897,7 +897,7 @@
 		</stats>
 	</item>
 	<item id="36646" name="Emerald Weapon: Shield" type="Weapon">
-		<!-- Emerald Weapon. Shield style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An emerald shield. Type: shield. An item for changing a shield's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_shield" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lhand" />
@@ -912,7 +912,7 @@
 		</stats>
 	</item>
 	<item id="36647" name="Emerald Weapon: Sigil" type="Armor">
-		<!-- Emerald Weapon. Sigil style. Initial Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: sigil. An item for changing a sigil's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_sigil" />
 		<set name="armor_type" val="SIGIL" />
 		<set name="default_action" val="EQUIP" />
@@ -1211,7 +1211,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="36668" name="Intact Stakato Shell" type="EtcItem">
-		<!-- Stakato Shell from the Swamp of Screams. Take it to Mercenary Kahman at the Swamp of Screams to receive a reward. -->
+		<!-- A Stakato shell from the Swamp of Screams. Take it to Mercenary Kahman in the Swamp of Screams to get a reward. -->
 		<set name="icon" val="icon.etc_parasite_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -1221,7 +1221,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="36669" name="Intact Stakato Talon" type="EtcItem">
-		<!-- Stakato Claw from the Swamp of Screams. Take it to Mercenary Captain Pierce at the Swamp of Screams to receive a reward. -->
+		<!-- A Stakato talon from the Swamp of Screams. Take it to Mercenary Kahman in the Swamp of Screams to get a reward. -->
 		<set name="icon" val="icon.etc_claw_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -1474,7 +1474,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="36693" name="Sel Mahum Signet" type="EtcItem">
-		<!-- Sel Mahum ID Tag obtained after killing monsters at the Sel Mahum Training Grounds. Take it to Investigator Roa at the Sel Mahum Training Grounds to receive a reward. -->
+		<!-- Obtained for killing monsters in the Sel Mahum Training Grounds. Take it to Investigator Rua at the Sel Mahum Training Grounds to receive a reward. -->
 		<set name="icon" val="icon.etc_parasite_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />

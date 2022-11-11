@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="22700" name="R-grade Equipment Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of R-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of R-grade equipment (weapons/ armor). -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_r" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -19,7 +19,7 @@
 		</skills>
 	</item>
 	<item id="22701" name="S-grade Equipment Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of S-grade equipment (only weapons and armor, no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of S-grade equipment (weapons/ armor). -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_s" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -37,7 +37,7 @@
 		</skills>
 	</item>
 	<item id="22702" name="A-grade Equipment Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of A-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of A-grade equipment (weapons/ armor). -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_a" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -55,7 +55,7 @@
 		</skills>
 	</item>
 	<item id="22703" name="B-grade Equipment Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of B-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of B-grade equipment (weapons/ armor). -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_b" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -73,7 +73,7 @@
 		</skills>
 	</item>
 	<item id="22704" name="C-grade Equipment Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of C-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of C-grade equipment (weapons/ armor). -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_c" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -91,7 +91,7 @@
 		</skills>
 	</item>
 	<item id="22705" name="D-grade Equipment Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of D-grade equipment (weapons/ armor) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of D-grade equipment (weapons/ armor). -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_d" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -109,7 +109,7 @@
 		</skills>
 	</item>
 	<item id="22706" name="(Test) Appearance Stone: Formal Wear" type="EtcItem">
-		<!-- For test use. Changes whole outfit to formal wear. -->
+		<!-- For test use. Changes the armor appearance to that of Formal Wear. -->
 		<set name="icon" val="BranchSys3.icon.g_bless_wp_processing_stone_d" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -145,7 +145,7 @@
 		</skills>
 	</item>
 	<item id="22708" name="Appearance Stone: Hair Accessory" type="EtcItem">
-		<!-- Item that can change a hair accessory's appearance. Works for item with the same number of slots. You need an appearance item, which is destroyed after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. Consumes 125,000 adena for a 1-slot hair accessory and 200,000 adena for a 2-slot hair accessory. -->
+		<!-- Double-click to change a head accessory's appearance. Can be used with items equipped in the same number of slots. An appearance item is destroyed after its appearance is extracted. An appearance-modified item's effects do not change. The fee is 125,000 adena for a 1-slot head accessory and 200,000 adena for a 2-slot head accessory. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2_stone" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
@@ -163,7 +163,7 @@
 		</skills>
 	</item>
 	<item id="22709" name="Blessed Appearance Stone: Hair Accessory" type="EtcItem">
-		<!-- Item that can change a hair accessory's appearance. Works for item with the same number of slots. You need an appearance item, which remains intact after its appearance is extracted. An appearance-modified item has no change in abilities. Double-click to use. -->
+		<!-- Double-click to change a head accessory's appearance. Can be used with items equipped in the same number of slots. An appearance item is required, it is not destroyed after the appearance extraction. An appearance-modified item's effects do not change. -->
 		<set name="icon" val="BranchSys3.Icon.g_bless_shape_shifting_hair2_stone" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -202,7 +202,7 @@
 		</skills>
 	</item>
 	<item id="22711" name="Japanese Sword" type="Weapon">
-		<!-- Japanese weapon. One-handed sword type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: one-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -229,7 +229,7 @@
 		</stats>
 	</item>
 	<item id="22712" name="Japanese Dagger" type="Weapon">
-		<!-- Japanese weapon. Dagger form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: dagger. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_dagger" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -257,7 +257,7 @@
 		</stats>
 	</item>
 	<item id="22713" name="Japanese Long Sword" type="Weapon">
-		<!-- Japanese weapon. Two-handed sword type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: two-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_twohand_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -284,7 +284,7 @@
 		</stats>
 	</item>
 	<item id="22714" name="Japanese Fist Weapon" type="Weapon">
-		<!-- Japanese weapon. Fist weapon form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: fist weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_dualfist" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -312,7 +312,7 @@
 		</stats>
 	</item>
 	<item id="22715" name="Japanese Great Spear" type="Weapon">
-		<!-- Japanese weapon. Spear form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: spear. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_pole" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -343,7 +343,7 @@
 		</stats>
 	</item>
 	<item id="22716" name="Japanese Bow" type="Weapon">
-		<!-- Japanese weapon. Bow form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: bow. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_bow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -373,7 +373,7 @@
 		</stats>
 	</item>
 	<item id="22717" name="Japanese Crossbow" type="Weapon">
-		<!-- Japanese weapon. Crossbow form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: crossbow. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_twohand_crossbow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -402,7 +402,7 @@
 		</stats>
 	</item>
 	<item id="22718" name="Japanese One-handed Blunt Weapon" type="Weapon">
-		<!-- Japanese weapon. One-handed blunt weapon type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: one-handed blunt weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -430,7 +430,7 @@
 		</stats>
 	</item>
 	<item id="22719" name="Japanese Giant Blunt Weapon" type="Weapon">
-		<!-- Japanese weapon. Two-handed blunt weapon type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: two-handed blunt weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -459,7 +459,7 @@
 		</stats>
 	</item>
 	<item id="22720" name="Japanese One-handed Staff" type="Weapon">
-		<!-- Japanese weapon. One-handed staff type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: one-handed staff. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_magic_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -487,7 +487,7 @@
 		</stats>
 	</item>
 	<item id="22721" name="Japanese Giant Staff" type="Weapon">
-		<!-- Japanese weapon. Two-handed staff type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: two-handed staff. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_magic_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -516,7 +516,7 @@
 		</stats>
 	</item>
 	<item id="22722" name="Japanese Dual Swords" type="Weapon">
-		<!-- Japanese weapon. Dual Sword type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: dual swords. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_dual" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -543,7 +543,7 @@
 		</stats>
 	</item>
 	<item id="22723" name="Japanese Dual Daggers" type="Weapon">
-		<!-- Japanese weapon. Dual dagger type. Base appearance of Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: dual daggers. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_dualdagger" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -571,7 +571,7 @@
 		</stats>
 	</item>
 	<item id="22724" name="Japanese Dual Blunt Weapons" type="Weapon">
-		<!-- Japanese weapon. Dual blunt form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese weapon. Type: dual blunt weapons. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_dualblunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -600,7 +600,7 @@
 		</stats>
 	</item>
 	<item id="22725" name="Japanese Shield" type="Armor">
-		<!-- Japanese weapon. Shield form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese shield. Type: shield. An item for changing a shield's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_shield" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lhand" />
@@ -622,7 +622,7 @@
 		</stats>
 	</item>
 	<item id="22726" name="Japanese Sigil" type="Armor">
-		<!-- Japanese weapon. Sigil form. Basic Japanese Weapon Appearance Stone. -->
+		<!-- A Japanese sigil. Type: sigil. An item for changing a sigil's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_japan_sigil" />
 		<set name="armor_type" val="SIGIL" />
 		<set name="default_action" val="EQUIP" />
@@ -1624,7 +1624,7 @@
 		</stats>
 	</item>
 	<item id="22780" name="Drake Maul {PvP} - HP Drain" type="Weapon">
-		<!-- <Special Option>. Two-handed blunt with special powers used by the Drake Lord. With a certain chance, absorbs 4% of melee damage inflicted upon the enemy as HP. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
+		<!-- <Special Option> Two-handed blunt with special powers used by the Drake Lord. With a certain chance, absorbs 4% of melee damage inflicted upon the enemy as HP. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_drake_maul_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1659,7 +1659,7 @@
 		</stats>
 	</item>
 	<item id="22781" name="Drake Maul {PvP} - HP Regeneration" type="Weapon">
-		<!-- <Special Option>. Two-handed blunt weapon with special powers used by the Drake Lord. Increases HP Recovery Rate. Inflicts additional PvP Damage and has a chance to increase inflicted damage. No Soul Crystal option. -->
+		<!-- <Special Option> Two-handed blunt weapon with special powers used by the Drake Lord. Increases HP Recovery Rate. Inflicts additional PvP Damage and has a chance to increase inflicted damage. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_drake_maul_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1694,7 +1694,7 @@
 		</stats>
 	</item>
 	<item id="22782" name="Drake Maul {PvP} - Health" type="Weapon">
-		<!-- <Special Option>. Two-handed blunt weapon with special powers used by the Drake Lord. Max HP +25%. Inflicts additional PvP Damage and has a chance to increase inflicted damage. No Soul Crystal option. -->
+		<!-- <Special Option> Two-handed blunt weapon with special powers used by the Drake Lord. Max HP +25%. Inflicts additional PvP Damage and has a chance to increase inflicted damage. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_drake_maul_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1899,7 +1899,7 @@
 		</stats>
 	</item>
 	<item id="22788" name="Drake Maul - Evil Spirit {PvP} - HP Drain" type="Weapon">
-		<!-- Masterwork Item with chance of HP absorption during an attack. <Special Option>. Two-handed blunt with special powers used by the Drake Lord. With a certain chance, absorbs 4% of melee physical damage inflicted upon the enemy as HP. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
+		<!-- Masterwork Item with chance of HP absorption during an attack <Special Option> Two-handed blunt with special powers used by the Drake Lord. With a certain chance, absorbs 4% of melee physical damage inflicted upon the enemy as HP. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_drake_maul_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1935,7 +1935,7 @@
 		</stats>
 	</item>
 	<item id="22789" name="Drake Maul - Evil Spirit {PvP} - HP Regeneration" type="Weapon">
-		<!-- Masterwork Item with chance of HP absorption during an attack. <Special Option>. Two-handed blunt with special powers used by the Drake Lord. Increases HP Recovery Rate. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
+		<!-- Masterwork Item with chance of HP absorption during an attack <Special Option> Two-handed blunt with special powers used by the Drake Lord. Increases HP Recovery Rate. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_drake_maul_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1971,7 +1971,7 @@
 		</stats>
 	</item>
 	<item id="22790" name="Drake Maul - Evil Spirit {PvP} - Health" type="Weapon">
-		<!-- Masterwork Item with chance of HP absorption during an attack. <Special Option>. Two-handed blunt with special powers used by the Drake Lord. Max HP +25%. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
+		<!-- Masterwork Item with chance of HP absorption during an attack <Special Option> Two-handed blunt with special powers used by the Drake Lord. Max HP +25%. Increases damage inflicted during PvP. Has a chance of inflicting additional damage when attacking. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_drake_maul_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -2178,7 +2178,7 @@
 		</stats>
 	</item>
 	<item id="22796" name="Freya's Staff {PvP} - Magic Hold" type="Weapon">
-		<!-- <Special Option>. A two-handed staff used by Freya. Bestows a special power on the wielder. Has a 20% chance to trigger Dryad Root after magic use. Inflicts additional PvP Damage. Has a chance to increase Casting Spd. after an attack reflection. No Soul Crystal option. -->
+		<!-- <Special Option> A two-handed staff used by Freya. Bestows a special power on the wielder. Has a 20% chance to trigger Dryad Root after magic use. Inflicts additional PvP Damage. Has a chance to increase Casting Spd. after an attack reflection. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_glacierin_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -2214,7 +2214,7 @@
 		</stats>
 	</item>
 	<item id="22797" name="Freya's Staff {PvP} - Empower" type="Weapon">
-		<!-- <Special Option>. A two-handed staff used by Freya. Bestows a special power on the wielder. M. Atk. +177. Inflicts additional PvP Damage. Has a chance to increase Casting Spd. after an attack reflection. No Soul Crystal option. -->
+		<!-- <Special Option> A two-handed staff used by Freya. Bestows a special power on the wielder. M. Atk. +177. Inflicts additional PvP Damage. Has a chance to increase Casting Spd. after an attack reflection. No Soul Crystal option. -->
 		<set name="icon" val="BranchSys3.Icon.g_glacierin_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -2250,7 +2250,7 @@
 		</stats>
 	</item>
 	<item id="22798" name="Freya's Staff {PvP} - MP Regeneration" type="Weapon">
-		<!-- <Special Features>. A two-handed staff used by Freya. Bestows a special power on the wielder. Increases MP Recovery Rate. Inflicts additional PvP Damage. Has a chance to increase Casting Spd. after an attack reflection. Soul Crystal cannot be used. -->
+		<!-- <Special Features> A two-handed staff used by Freya. Bestows a special power on the wielder. Increases MP Recovery Rate. Inflicts additional PvP Damage. Has a chance to increase Casting Spd. after an attack reflection. Soul Crystal cannot be used. -->
 		<set name="icon" val="BranchSys3.Icon.g_glacierin_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="80800" name="Ruler's Authority" additionalName="Event" type="Armor">
-		<!-- Max HP/ MP/ CP +1000, weight limit +25,600, damage +8%, received damage -9%, Damage Reflection Resistance +5%, inventory slots +36, Attribute Resistance +15. Cannot be used in the Olympiad. -->
+		<!-- When equipped, Max HP/ MP/ CP +1000, weight limit +25,600, damage +8%, received damage -9%, Damage Reflection Resistance +5%, inventory slots +36, Attribute Resistance +15. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.belt_rulers_authority" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -179,7 +179,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="80816" name="GM's Buff Scroll" type="EtcItem">
-		<!-- When used, can receive the effects of 4 types of level 4 melodies, including Fantasia Harmony, and 3 types of sonatas, for 60 minutes. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 minutes. -->
+		<!-- When used, you can receive the effects of Musician's Melody and Sonata Performance Lv. 4, including Fantasia Harmony, for 60 min. Cannot be used in the Olympiad or Ceremony of Chaos. Cooldown is 2 min. -->
 		<set name="icon" val="icon.buff_scroll_gm_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -190,7 +190,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80817" name="Emperor's Special Cocktail" type="EtcItem">
-		<!-- For 60 min., grants Horn Melody, Guitar Melody, Pipe Organ Melody, Drum Melody Lv. 5, Fantasia Harmony Lv. 2, War Drum, Marching Drum, Soothing Drum, Fantasia Melody, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. The effect can be cancelled by pressing Alt + Mouse Left Click. -->
+		<!-- For 60 min., applies the following effects: Musician's Melody Lv. 5, Fantasia Harmony Lv. 2, Drum Concert, Fantasia Melody, United Resistance. Note! The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. To remove the effect, press Alt + Mouse Left Click. -->
 		<set name="icon" val="icon.cocktail_heaven_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -211,7 +211,7 @@
 		</skills>
 	</item>
 	<item id="80818" name="Emperor's Special Cocktail" additionalName="4-hour" type="EtcItem">
-		<!-- For 4 h., grants Horn Melody, Guitar Melody, Pipe Organ Melody, Drum Melody Lv. 5, Fantasia Harmony Lv. 2, War Drum, Marching Drum, Soothing Drum, Fantasia Melody, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. The effect can be cancelled by pressing Alt + Mouse Left Click. -->
+		<!-- For 4 h., applies the following effects: Musician's Melody Lv. 5, Fantasia Harmony Lv. 2, Drum Concert, Fantasia Melody, United Resistance. Note! The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. To remove the effect, press Alt + Mouse Left Click. -->
 		<set name="icon" val="icon.cocktail_heaven_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -232,7 +232,7 @@
 		</skills>
 	</item>
 	<item id="80819" name="Emperor's Special Cocktail" additionalName="8-hour" type="EtcItem">
-		<!-- For 8 h., grants Horn Melody, Guitar Melody, Pipe Organ Melody, Drum Melody Lv. 5, Fantasia Harmony Lv. 2, War Drum, Marching Drum, Soothing Drum, Fantasia Melody, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. The effect can be cancelled by pressing Alt + Mouse Left Click. -->
+		<!-- For 8 h., applies the following effects: Musician's Melody Lv. 5, Fantasia Harmony Lv. 2, Drum Concert, Fantasia Melody, United Resistance. Note! The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. To remove the effect, press Alt + Mouse Left Click. -->
 		<set name="icon" val="icon.cocktail_heaven_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -253,7 +253,7 @@
 		</skills>
 	</item>
 	<item id="80820" name="PA Emperor's Special Cocktail" type="EtcItem">
-		<!-- For PA. For 60 min., grants Horn Melody, Guitar Melody, Pipe Organ Melody, Drum Melody Lv. 5, Fantasia Harmony Lv. 2, War Drum, Marching Drum, Soothing Drum, Fantasia Melody, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. The effect can be cancelled by pressing Alt + Mouse Left Click. -->
+		<!-- For PA For 60 min., applies the following effects: Musician's Melody Lv. 5, Fantasia Harmony Lv. 2, Drum Concert, Fantasia Melody, United Resistance. Note! The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. To remove the effect, press Alt + Mouse Left Click. -->
 		<set name="icon" val="icon.cocktail_heaven_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -276,7 +276,7 @@
 		</skills>
 	</item>
 	<item id="80821" name="Ceremony of Chaos" type="EtcItem">
-		<!-- Item that can be used only at the Ceremony of Chaos Arena. For 7 minutes, provides the effects of Horn Melody, Guitar Melody, Pipe Organ Melody, Lute Melody, Harp Melody, Drum Melody, and Fantasia Harmony Lv. 1. -->
+		<!-- Item that can be used only at the Ceremony of Chaos Arena. For 7 min., provides the effects of Musician's Melody and Fantasia Harmony Lv. 1. -->
 		<set name="icon" val="icon.etc_super_potion_i03" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -355,7 +355,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="80828" name="Sylvain's Certificate" type="EtcItem">
-		<!-- The certificate received for completing High Priest Sylvain's mission. Take this to Lionel Hunter in Heine and get a new Exalted Power. -->
+		<!-- A certificate for completing High Priest Sylvain's mission. Take all your certificates to Lionel Hunter in Heine to get new abilities. -->
 		<set name="icon" val="icon.etc_roll_of_paper_white_i00" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
@@ -366,7 +366,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80829" name="Seresin's Certificate" type="EtcItem">
-		<!-- The certificate received for completing Cardinal Seresin's mission. Take this to Lionel Hunter in Heine and get a new Exalted Power. -->
+		<!-- A certificate for completing Cardinal Seresin's mission. Take all your certificates to Lionel Hunter in Heine to get new abilities. -->
 		<set name="icon" val="icon.etc_roll_of_paper_red_i00" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
@@ -393,7 +393,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80832" name="Emperor's Special Cocktail" additionalName="Event" type="EtcItem">
-		<!-- For 60 min., grants Horn Melody, Guitar Melody, Pipe Organ Melody, Drum Melody Lv. 5, Fantasia Harmony Lv. 2, War Drum, Marching Drum, Soothing Drum, Fantasia Melody, Attribute Resistance, Debuff Resistance, and Mental Attack Resistance. Note!. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. The effect can be cancelled by pressing Alt + Mouse Left Click. -->
+		<!-- For 60 min., applies the following effects: Musician's Melody Lv. 5, Fantasia Harmony Lv. 2, Drum Concert, Fantasia Melody, United Resistance. Note! The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. To remove the effect, press Alt + Mouse Left Click. -->
 		<set name="icon" val="icon.cocktail_heaven_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -442,7 +442,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80835" name="Kaliel's Bracelet" type="Armor">
-		<!-- Unlocks 5 talisman slots. <Enchanting>. Use Blessed Scroll: Enchant Bracelet. <Enhancing>. Take the bracelet enchanted to +5 and Crystal of Dawn to a Head Blacksmith in any village to get Kaliel's Greater Bracelet. -->
+		<!-- Unlocks 5 talisman slots. <Enchanting> Use Blessed Scroll: Enchant Bracelet. <Enhancing> Take the bracelet enchanted to +5 and Crystal of Dawn to a Head Blacksmith in any village to get Kaliel's Greater Bracelet. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
 		<set name="is_sellable" val="false" />
@@ -464,7 +464,7 @@
 		</skills>
 	</item>
 	<item id="80836" name="Kaliel's Greater Bracelet" type="Armor">
-		<!-- Unlocks 6 talisman slots. <Enchanting>. Use Blessed Scroll: Enchant Bracelet. <Enhancing>. Take the bracelet enchanted to +5 and Crystal of Dawn to a Head Blacksmith in any village to get Superior Kaliel's Bracelet. -->
+		<!-- Unlocks 6 talisman slots. <Enchanting> Use Blessed Scroll: Enchant Bracelet. <Enhancing> Take the bracelet enchanted to +5 and Crystal of Dawn to a Head Blacksmith in any village to get Superior Kaliel's Bracelet. Can be augmented. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
 		<set name="is_sellable" val="false" />
@@ -483,7 +483,7 @@
 		</skills>
 	</item>
 	<item id="80837" name="Superior Kaliel's Bracelet" type="Armor">
-		<!-- Unlocks 6 talisman slots. <Enchanting>. Use Blessed Scroll: Enchant Bracelet. -->
+		<!-- Unlocks 6 talisman slots. <Enchanting> Use Blessed Scroll: Enchant Bracelet. If echanted to +7 or higher, use Gran Kain's Scroll: Enchant Superior Kaliel's Bracelet. Can be augmented. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
 		<set name="is_sellable" val="false" />
@@ -524,7 +524,7 @@
 		</skills>
 	</item>
 	<item id="80839" name="Crystal of Dawn" type="EtcItem">
-		<!-- A crystal infused with spirits that shines faintly. The crystal's special power can be used to upgrade an accessory. -->
+		<!-- A crystal infused with spirit energy. Can be used for upgrading accessories. -->
 		<set name="icon" val="icon.accessary_upgrade_crystal" />
 		<set name="material" val="LIQUID" />
 		<set name="is_stackable" val="true" />
@@ -594,7 +594,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="80846" name="Lucy's Opened Letter" type="EtcItem">
-		<!-- Letter from Lucy to Rok. It was opened, but it is still legible, so you can probably give it to Rok... -->
+		<!-- Letter from Lucy to Rok It was opened, but it is still legible, so you can probably give it to Rok... -->
 		<set name="icon" val="icon.etc_letter_envelope_i00" />
 		<set name="default_action" val="SHOW_HTML" />
 		<set name="immediate_effect" val="true" />
@@ -660,7 +660,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80851" name="+10 Agathion Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain +10 Enchanted Agathion Charm. -->
+		<!-- Double-click to obtain a random agathion charm enchanted to +10. -->
 		<set name="icon" val="icon.event_orc_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -671,7 +671,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80852" name="PA Shining Nevit's Gold Hourglass" type="EtcItem">
-		<!-- For PA. Increases acquired XP/ SP +100% during hunting for 30 min. Cannot stack with the Fall of the Dragon or Dandy's Home Run Ball. Cooldown: 5 min. -->
+		<!-- For PA For 30 min., acquired XP/ SP +100%. Does not stack with Fall of the Dragon or Dandy's Home Run Ball. Cooldown: 5 min. -->
 		<set name="icon" val="icon.bm_dragon_breath" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -761,7 +761,7 @@
 		</skills>
 	</item>
 	<item id="80859" name="Bloodthirsty Akamanah Shaper" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_shaper_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -786,7 +786,7 @@
 		</stats>
 	</item>
 	<item id="80860" name="Bloodthirsty Akamanah Cutter" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_cutter_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -810,7 +810,7 @@
 		</stats>
 	</item>
 	<item id="80861" name="Bloodthirsty Akamanah Slasher" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_slasher_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -834,7 +834,7 @@
 		</stats>
 	</item>
 	<item id="80862" name="Bloodthirsty Akamanah Avenger" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_onehand_blunt_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -858,7 +858,7 @@
 		</stats>
 	</item>
 	<item id="80863" name="Bloodthirsty Akamanah Fighter" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_fist_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -883,7 +883,7 @@
 		</stats>
 	</item>
 	<item id="80864" name="Bloodthirsty Akamanah Stormer" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_spear_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -911,7 +911,7 @@
 		</stats>
 	</item>
 	<item id="80865" name="Bloodthirsty Akamanah Thrower" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_bow_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -936,7 +936,7 @@
 		</stats>
 	</item>
 	<item id="80866" name="Bloodthirsty Akamanah Guardian" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_crossbow_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -961,7 +961,7 @@
 		</stats>
 	</item>
 	<item id="80867" name="Bloodthirsty Akamanah Buster" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_onehane_magic_sword_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -985,7 +985,7 @@
 		</stats>
 	</item>
 	<item id="80868" name="Bloodthirsty Akamanah Caster" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_onehand_magic_blunt_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1011,7 +1011,7 @@
 		</stats>
 	</item>
 	<item id="80869" name="Bloodthirsty Akamanah Retributer" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_twohand_magic_blunt_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1037,7 +1037,7 @@
 		</stats>
 	</item>
 	<item id="80870" name="Bloodthirsty Akamanah Dual Swords" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_dual_sword_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1061,7 +1061,7 @@
 		</stats>
 	</item>
 	<item id="80871" name="Bloodthirsty Akamanah Dual Daggers" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_dual_dagger_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1086,7 +1086,7 @@
 		</stats>
 	</item>
 	<item id="80872" name="Bloodthirsty Akamanah Dual Blunt Weapon" type="Weapon">
-		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
+		<!-- A weapon created from Blood Sword Akamanah. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Akamanah's Blood to Kaysia in Oren to get a Bloodstained Akamanah weapon. -->
 		<set name="icon" val="icon.aka_manaf_dual_blunt_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1111,7 +1111,7 @@
 		</stats>
 	</item>
 	<item id="80873" name="Bloodstained Zariche Shaper" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_shaper_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1144,7 +1144,7 @@
 		</stats>
 	</item>
 	<item id="80874" name="Bloodstained Zariche Cutter" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_cutter_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1176,7 +1176,7 @@
 		</stats>
 	</item>
 	<item id="80875" name="Bloodstained Zariche Slasher" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_slasher_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1208,7 +1208,7 @@
 		</stats>
 	</item>
 	<item id="80876" name="Bloodstained Zariche Avenger" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_onehand_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1240,7 +1240,7 @@
 		</stats>
 	</item>
 	<item id="80877" name="Bloodstained Zariche Fighter" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_fist_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1273,7 +1273,7 @@
 		</stats>
 	</item>
 	<item id="80878" name="Bloodstained Zariche Stormer" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_spear_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1307,7 +1307,7 @@
 		</stats>
 	</item>
 	<item id="80879" name="Bloodstained Zariche Thrower" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_bow_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1340,7 +1340,7 @@
 		</stats>
 	</item>
 	<item id="80880" name="Bloodstained Zariche Guardian" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_crossbow_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1373,7 +1373,7 @@
 		</stats>
 	</item>
 	<item id="80881" name="Bloodstained Zariche Buster" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_onehane_magic_sword_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1405,7 +1405,7 @@
 		</stats>
 	</item>
 	<item id="80882" name="Bloodstained Zariche Caster" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_onehand_magic_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1438,7 +1438,7 @@
 		</stats>
 	</item>
 	<item id="80883" name="Bloodstained Zariche Retributer" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_twohand_magic_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1472,7 +1472,7 @@
 		</stats>
 	</item>
 	<item id="80884" name="Bloodstained Zariche Dual Swords" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_dual_sword_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1504,7 +1504,7 @@
 		</stats>
 	</item>
 	<item id="80885" name="Bloodstained Zariche Dual Daggers" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_dual_dagger_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1537,7 +1537,7 @@
 		</stats>
 	</item>
 	<item id="80886" name="Bloodstained Zariche Dual Blunt Weapon" type="Weapon">
-		<!-- A Zariche weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- A Zariche weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.zariche_dual_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1570,7 +1570,7 @@
 		</stats>
 	</item>
 	<item id="80887" name="Bloodstained Akamanah Shaper" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_shaper_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1603,7 +1603,7 @@
 		</stats>
 	</item>
 	<item id="80888" name="Bloodstained Akamanah Cutter" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_cutter_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1635,7 +1635,7 @@
 		</stats>
 	</item>
 	<item id="80889" name="Bloodstained Akamanah Slasher" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_slasher_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1667,7 +1667,7 @@
 		</stats>
 	</item>
 	<item id="80890" name="Bloodstained Akamanah Avenger" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_onehand_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1699,7 +1699,7 @@
 		</stats>
 	</item>
 	<item id="80891" name="Bloodstained Akamanah Fighter" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_fist_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1732,7 +1732,7 @@
 		</stats>
 	</item>
 	<item id="80892" name="Bloodstained Akamanah Stormer" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_spear_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1766,7 +1766,7 @@
 		</stats>
 	</item>
 	<item id="80893" name="Bloodstained Akamanah Thrower" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_bow_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1799,7 +1799,7 @@
 		</stats>
 	</item>
 	<item id="80894" name="Bloodstained Akamanah Guardian" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_crossbow_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1832,7 +1832,7 @@
 		</stats>
 	</item>
 	<item id="80895" name="Bloodstained Akamanah Buster" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_onehane_magic_sword_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1864,7 +1864,7 @@
 		</stats>
 	</item>
 	<item id="80896" name="Bloodstained Akamanah Caster" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_onehand_magic_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1897,7 +1897,7 @@
 		</stats>
 	</item>
 	<item id="80897" name="Bloodstained Akamanah Retributer" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, M. Skill Critical Rate +30%, M. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_twohand_magic_blunt_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1931,7 +1931,7 @@
 		</stats>
 	</item>
 	<item id="80898" name="Bloodstained Akamanah Dual Swords" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_dual_sword_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1963,7 +1963,7 @@
 		</stats>
 	</item>
 	<item id="80899" name="Bloodstained Akamanah Dual Daggers" type="Weapon">
-		<!-- An Akamanah weapon stained with the madness of blood. PvP Damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can increase up to 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, or enchanted. You can insert 1 special Soul Crystal. -->
+		<!-- An Akamanah weapon stained with the madness of blood. PvP damage +30%, Max HP/ MP/ CP +30%, Atk. Spd. +30%, P. Critical Rate +100, P. Skill Critical Rate +30%, P. Skill Critical Damage +30%. Enables the Soul's Insanity, Soul's Confinement, and Soul's Release skills. Max HP can be more than 150,000. Cannot be enchanted, crystallized or imbued with an attribute. The item's appearance cannot be changed. 1 special soul crystal can be inserted. Can be augmented. -->
 		<set name="icon" val="icon.aka_manaf_dual_dagger_2" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />

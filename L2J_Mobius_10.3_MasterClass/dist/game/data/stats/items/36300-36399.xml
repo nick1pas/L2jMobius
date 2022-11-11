@@ -91,7 +91,7 @@
 		</skills>
 	</item>
 	<item id="36312" name="Battleground Scroll: Buffs" type="EtcItem">
-		<!-- For 30 min., provides the effects of the Horn Melody, Pipe Organ Melody, Guitar Melody, and Drum Melody (Lv. 1). Battleground only. -->
+		<!-- For 30 min., provides the effects of Musician's Melody Lv. 1. Battleground only. -->
 		<set name="icon" val="icon.etc_roll_of_paper_blue_i00" />
 		<set name="weight" val="5" />
 		<set name="is_oly_restricted" val="true" />
@@ -420,7 +420,7 @@
 		</skills>
 	</item>
 	<item id="36335" name="Caffeine Energy Drink" additionalName="Event" type="EtcItem">
-		<!-- Caffeine drink that increases dexterity and inspires. DEX +10. Note!. This energy drink should be used with care as it can raise pulse rate and blood pressure. For the safety of athletes, it is prohibited in the Olympiad. It is so potent that the body does not remember the effect of the previous drink. Deleted when the festival is over. -->
+		<!-- Caffeine drink that increases dexterity and inspires. DEX +10. Note! This energy drink should be used with care as it can raise pulse rate and blood pressure. For the safety of athletes, it is prohibited in the Olympiad. It is so potent that the body does not remember the effect of the previous drink. Deleted when the festival is over. -->
 		<set name="icon" val="icon.etc_oblivion_green_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
@@ -478,7 +478,7 @@
 		</skills>
 	</item>
 	<item id="36339" name="Medal of Glory" additionalName="Event" type="EtcItem">
-		<!-- Medal used in the festival hosted by Amadeo Cadmus, the king of Aden. It is rarer and more precious than the Medal of Victory and the Medal of Friendship. Event Manager Cocoring can exchange it for a Golden Chest for you. -->
+		<!-- A medal used in the festival hosted by Amadeo Cadmus, the king of Aden. It is rarer and more precious than Medal of Victory or Medal of Friendship. Can be exchanged for Golden Chest through Event Manager Cocoring. -->
 		<set name="icon" val="icon.etc_london_olympic_gold" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="MATERIAL" />
@@ -486,7 +486,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="36340" name="Medal of Victory" additionalName="Event" type="EtcItem">
-		<!-- Medal used in the festival hosted by Amadeo Cadmus, the king of Aden. There are the Medal of Glory, the Medal of Victory and the Medal of Friendship. Event Manager Cocoring can exchange it for a Golden Chest for you. -->
+		<!-- A medal used in the festival hosted by Amadeo Cadmus, the king of Aden. Medal of Glory/ Medal of Victory/ Medal of Friendship can be exchanged for Golden Chest through Event Manager Cocoring. -->
 		<set name="icon" val="icon.etc_london_olympic_silver" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="MATERIAL" />
@@ -494,7 +494,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="36341" name="Medal of Friendship" additionalName="Event" type="EtcItem">
-		<!-- Medal used in the festival hosted by Amadeo Cadmus, the king of Aden. There are the Medal of Glory, the Medal of Victory and the Medal of Friendship. Event Manager Cocoring can exchange it for a Golden Chest for you. -->
+		<!-- A medal used in the festival hosted by Amadeo Cadmus, the king of Aden. Medal of Glory/ Medal of Victory/ Medal of Friendship can be exchanged for Golden Chest through Event Manager Cocoring. -->
 		<set name="icon" val="icon.etc_london_olympic_bronze" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="MATERIAL" />
@@ -519,7 +519,7 @@
 		</skills>
 	</item>
 	<item id="36343" name="Male Swimsuit No. 1" additionalName="Event" type="Armor">
-		<!-- Equipping this disables armor. Hair accessories, weapons, and magic armor remain equipped. Male only. -->
+		<!-- A souvenir for the Watermelon event 2017. Equipped in the armor slot. Equipping it disables armor. Head accessories, weapons and accessories remain equipped. Male only. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -529,7 +529,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="36344" name="Male Swimsuit No. 2" additionalName="Event" type="Armor">
-		<!-- Equipping this disables armor. Hair accessories, weapons, and magic armor remain equipped. Male only. -->
+		<!-- A souvenir for the Watermelon event 2017. Equipped in the armor slot. Equipping it disables armor. Head accessories, weapons and accessories remain equipped. Male only. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -539,7 +539,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="36345" name="Female Swimsuit No. 1" additionalName="Event" type="Armor">
-		<!-- Equipping this disables armor. Hair accessories, weapons, and magic armor remain equipped. Female only. -->
+		<!-- A souvenir for the Watermelon event 2017. Equipped in the armor slot. Equipping it disables armor. Head accessories, weapons and accessories remain equipped. Female only. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -549,7 +549,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="36346" name="Female Swimsuit No. 2" additionalName="Event" type="Armor">
-		<!-- Equipping this disables armor. Hair accessories, weapons, and magic armor remain equipped. Female only. -->
+		<!-- A souvenir for the Watermelon event 2017. Equipped in the armor slot. Equipping it disables armor. Head accessories, weapons and accessories remain equipped. Female only. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -559,7 +559,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="36347" name="Scroll: Energy of Glory" additionalName="Event" type="EtcItem">
-		<!-- Acquired XP/ SP +30% for 30 min. -->
+		<!-- When used, acquired XP/ SP +30% for 30 min. -->
 		<set name="icon" val="icon.etc_london_olympic_scroll_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -571,7 +571,7 @@
 		</skills>
 	</item>
 	<item id="36348" name="Red Horns" additionalName="Event" type="Armor">
-		<!-- Hair accessory that can be used with a pendant. -->
+		<!-- A head accessory for the Aden Golden Medal event. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -628,7 +628,7 @@
 		</stats>
 	</item>
 	<item id="36352" name="Red Horns" additionalName="STR (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. STR +3 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, STR +3. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -640,7 +640,7 @@
 		</skills>
 	</item>
 	<item id="36353" name="Red Horns" additionalName="DEX (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. DEX +3 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, DEX +3. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -652,7 +652,7 @@
 		</skills>
 	</item>
 	<item id="36354" name="Red Horns" additionalName="CON (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. CON +3 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, CON +3. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -664,7 +664,7 @@
 		</skills>
 	</item>
 	<item id="36355" name="Red Horns" additionalName="MEN (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. MEN +3 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, MEN +3. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -676,7 +676,7 @@
 		</skills>
 	</item>
 	<item id="36356" name="Red Horns" additionalName="INT (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. INT +3 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, INT +3. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -688,7 +688,7 @@
 		</skills>
 	</item>
 	<item id="36357" name="Red Horns" additionalName="WIT (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. WIT +3 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, WIT +3. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -700,7 +700,7 @@
 		</skills>
 	</item>
 	<item id="36358" name="Red Horns" additionalName="Critical Rate (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. Critical Rate for standard attacks +50 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -712,7 +712,7 @@
 		</skills>
 	</item>
 	<item id="36359" name="Red Horns" additionalName="Critical Damage (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -724,7 +724,7 @@
 		</skills>
 	</item>
 	<item id="36360" name="Red Horns" additionalName="P. Def. (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. P. Def. +5%. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, P. Def. +5%. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -736,7 +736,7 @@
 		</skills>
 	</item>
 	<item id="36361" name="Red Horns" additionalName="M. Def. (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. M. Def. +5% when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, M. Def. +5%. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="10" />
@@ -749,7 +749,7 @@
 		</skills>
 	</item>
 	<item id="36362" name="Red Horns" additionalName="Evasion (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. Evasion +5 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, Evasion +5. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -761,7 +761,7 @@
 		</skills>
 	</item>
 	<item id="36363" name="Red Horns" additionalName="P. Atk. (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. P. Atk. +5 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, P. Atk. +5%. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -773,7 +773,7 @@
 		</skills>
 	</item>
 	<item id="36364" name="Red Horns" additionalName="M. Atk. (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. M. Atk. +10 when equipped. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, M. Atk. +10%. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -785,7 +785,7 @@
 		</skills>
 	</item>
 	<item id="36365" name="Red Horns" additionalName="Accuracy (Event)" type="Armor">
-		<!-- Hair accessory for the Aden Golden Medal Event. P. Accuracy +5. -->
+		<!-- A head accessory for the Aden Golden Medal event. When equipped, P. Accuracy +5. -->
 		<set name="icon" val="icon.london_olympic_hair" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -797,14 +797,14 @@
 		</skills>
 	</item>
 	<item id="36366" name="Golden Pack" additionalName="Event" type="EtcItem">
-		<!-- You can get a Golden Chest (Reward) prepared by Amadeo Cadmus, the king of Aden. -->
+		<!-- Double-click to obtain Golden Chest (Reward) prepared by Amadeo Cadmus, the king of Aden. -->
 		<set name="icon" val="icon.etc_treasure_box_i03" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="36367" name="Luminous Golden Chest" additionalName="Event" type="EtcItem">
-		<!-- Luminous Golden Chest with bright energy. Special reward prepared by Amadeo Cadmus, the king of Aden. Double-click to get the reward. -->
+		<!-- Luminous Golden Chest that emanates pure energy. A special reward prepared by Amadeo Cadmus, the king of Aden. Double-click to open. -->
 		<set name="icon" val="icon.etc_treasure_box_i08" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -827,7 +827,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36370" name="Hair Accessory Pack" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing hair accessory. -->
+		<!-- Double-click to obtain a head accessory. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -835,7 +835,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36371" name="Pendant Pack" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing pendant that enchants a hair accessory. -->
+		<!-- Double-click to obtain a pendant for enhancing head accessories. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -843,7 +843,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36372" name="Double-click to obtain S-grade enchant scroll." additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Double-click to obtain S-grade enchant scroll. -->
+		<!-- Double-click to obtain S-grade enchant scrolls. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -851,7 +851,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36373" name="R-grade Enchant Scroll Pack" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing R-grade enchant scroll. -->
+		<!-- Double-click to obtain R-grade enchant scrolls. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -859,7 +859,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36374" name="Attribute Stone Fragment Box" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing attribute stone. -->
+		<!-- Attribute Stone Fragment Box -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -875,7 +875,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36376" name="Hero's Enchant Stone Pack" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing Lucky Echant Stone. -->
+		<!-- Double-click to obtain Enchant Stone. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -891,7 +891,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36378" name="Hero's Giant Enchant Scroll Pack" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing Giant's Enchant Scroll. -->
+		<!-- Double-click to obtain Giant's Enchant Scroll. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -931,7 +931,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36383" name="Reputation Pack" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing Scroll: Reputation. -->
+		<!-- Double-click to obtain Scroll: Reputation. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -947,7 +947,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36385" name="Kaliel's Energy Box" additionalName="Aden Reconstruction" type="EtcItem">
-		<!-- Box containing Kaliel's Energy. -->
+		<!-- Double-click to obtain Kaliel's Energy. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -955,7 +955,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="36386" name="Giant's Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). The enchanting is random from +1 to +3. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). The enchanting is random from +1 to +3. Cannot be used with weapons enchanted to +30 or higher. Enchant success rate for +1: 57%. Enchant success rate for +2: 29%. Enchant success rate for +3: 14%. -->
 		<set name="icon" val="icon.giant_scrl_of_ench_wp_r" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -972,7 +972,7 @@
 		</skills>
 	</item>
 	<item id="36387" name="Giant's Scroll: Enchant S-grade Weapon" type="EtcItem">
-		<!-- For S-grade weapons. P. Atk. +5 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +6 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +10 for bows. M. Atk. +4 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. The enchanting is random from +1 to +3. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For A-grade weapons P. Atk. +5 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +6 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +10 for bows M. Atk. +4 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. The enchanting is random from +1 to +3. Cannot be used on weapons enchanted to +30 and higher. Enchant success rate for +1: 57%. Enchant success rate for +2: 29%. Enchant success rate for +3: 14%. -->
 		<set name="icon" val="icon.giant_scrl_of_ench_wp_s" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -989,7 +989,7 @@
 		</skills>
 	</item>
 	<item id="36388" name="Giant's Scroll: Enchant A-grade Weapon" type="EtcItem">
-		<!-- For A-grade weapons. P. Atk. +4 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +5 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +8 for bows. M. Atk. +3 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. The enchanting is random from +1 to +3. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For A-grade weapons P. Atk. +4 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +5 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +8 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. The enchanting is random from +1 to +3. Cannot be used on weapons enchanted to +30 and higher. Enchant success rate for +1: 57%. Enchant success rate for +2: 29%. Enchant success rate for +3: 14%. -->
 		<set name="icon" val="icon.giant_scrl_of_ench_wp_a" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -1006,7 +1006,7 @@
 		</skills>
 	</item>
 	<item id="36389" name="Giant's Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- When enchanted, P. Def. +2 for R-grade armor and accessories. When enchanted to +4 or higher, P. Def. is greatly increased. Can be safely enchanted to +3. When enchanted to +4 or higher, HP is increased according to the enchant value. Armor and accessories are randomly enchanted between +1 and +3. -->
+		<!-- For R-grade armor and accessories P. Def. +2 Starting from +4, P. Def. is greatly increased, Max HP is increased with each enchant value. The enchanting is safe up to +3. The enchanting is random from +1 to +3. Enchant success rate for +1: 57%. Enchant success rate for +2: 29%. Enchant success rate for +3: 14%. -->
 		<set name="icon" val="icon.giant_scrl_of_ench_am_r" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -1023,7 +1023,7 @@
 		</skills>
 	</item>
 	<item id="36390" name="Giant's Scroll: Enchant S-grade Armor" type="EtcItem">
-		<!-- For S-grade armor and accessories. P. Def. +1. Starting from +4, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. The enchanting is randor from +1 to +3. Cannot be used for equipment enchanted to +30 or higher. -->
+		<!-- For S-grade armor and accessories P. Def. +1 Starting from +4, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. The enchanting is random from +1 to +3. Cannot be used with weapons enchanted to +30 or higher. Enchant success rate for +1: 57%. Enchant success rate for +2: 29%. Enchant success rate for +3: 14%. -->
 		<set name="icon" val="icon.giant_scrl_of_ench_am_s" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -1040,7 +1040,7 @@
 		</skills>
 	</item>
 	<item id="36391" name="Giant's Scroll: Enchant A-grade Armor" type="EtcItem">
-		<!-- When enchanted, P. Def. +1 for R-grade armor and accessories. When enchanted to +4 or higher, P. Def. +3. Can be safely enchanted up to +3 (for ordinary armor) and up to +4 (for one-piece armor). When enchanted to +4 or higher, HP is gradually increased with each enchant value. Armor and accessories are randomly enchanted between +1 and +3. Cannot be used on armor or accessories above +30. -->
+		<!-- For A-grade armor and accessories P. Def. +1 Starting from +4, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. The enchanting is random from +1 to +3. Cannot be used with weapons enchanted to +30 or higher. Enchant success rate for +1: 57%. Enchant success rate for +2: 29%. Enchant success rate for +3: 14%. -->
 		<set name="icon" val="icon.giant_scrl_of_ench_am_a" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -1097,7 +1097,7 @@
 		</skills>
 	</item>
 	<item id="36395" name="Golden Chest (Reward)" type="EtcItem">
-		<!-- You can get a gift that Amadeo Cadmus, the king of Aden, prepared for your return. You can sometimes get a Luminous Golden Chest. -->
+		<!-- Double-click to obtain a gift from Amadeo Cadmus, the king of Aden. There is a chance to get Luminous Golden Chest. -->
 		<set name="icon" val="icon.etc_treasure_box_i03" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />

@@ -11,7 +11,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="45901" name="Kokko's Shiny Egg" type="EtcItem">
-		<!-- Kokko's shiny egg imbued with Maph's gratitude. Double-click to find out what is inside. Note!. An item obtained from the egg cannot be shared on account. -->
+		<!-- Kokko's shiny egg imbued with Maph's gratitude. Double-click to find out what is inside. Note! An item obtained from the egg cannot be shared on account. -->
 		<set name="icon" val="icon.egg_twinkle" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -21,7 +21,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="45902" name="Kokko's Golden Egg" type="EtcItem">
-		<!-- Kokko's golden egg imbued with Maph's gratitude. Double-click to find out what is inside. Note!. An item obtained from the egg cannot be shared on account. -->
+		<!-- Kokko's golden egg imbued with Maph's gratitude. Double-click to find out what is inside. Note! An item obtained from the egg cannot be shared on account. -->
 		<set name="icon" val="icon.egg_gold" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -41,7 +41,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45904" name="Pippi's Shirt" type="Armor">
-		<!-- Speed +7, STR +1, INT +1 when equipped. -->
+		<!-- Speed +7, STR +1, INT +1. -->
 		<set name="icon" val="icon.r1_shirt_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -58,7 +58,7 @@
 		</stats>
 	</item>
 	<item id="45905" name="Kokko's Shirt" type="Armor">
-		<!-- Speed +7, STR/ INT/ CON/ MEN +1 when equipped. -->
+		<!-- Speed +7, STR +1, INT +1, CON +1, MEN +1. -->
 		<set name="icon" val="icon.r1_shirt_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -75,7 +75,7 @@
 		</stats>
 	</item>
 	<item id="45906" name="Pippi's Belt" type="Armor">
-		<!-- Weight Limit +12,800, Inventory Slots +12. -->
+		<!-- Weight limit +12,800, inventory slots +12. -->
 		<set name="icon" val="icon.belt_i03" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -93,7 +93,7 @@
 		</stats>
 	</item>
 	<item id="45907" name="Kokko's Belt" type="Armor">
-		<!-- Weight Limit +12,800, Inventory Slots +18. -->
+		<!-- Weight limit +12,800, inventory slots +18. -->
 		<set name="icon" val="icon.belt_i03" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -111,7 +111,7 @@
 		</stats>
 	</item>
 	<item id="45908" name="Apocalypse Shaper Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Shaper Focus. -->
+		<!-- Double-click to obtain Apocalypse Shaper - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -119,7 +119,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45909" name="Apocalypse Cutter Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Cutter Focus. -->
+		<!-- Double-click to obtain Apocalypse Cutter - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -127,7 +127,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45910" name="Apocalypse Slasher Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Slasher Focus. -->
+		<!-- Double-click to obtain Apocalypse Slasher - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -135,7 +135,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45911" name="Apocalypse Avenger Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Avenger Focus. -->
+		<!-- Double-click to obtain Apocalypse Avenger - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -143,7 +143,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45912" name="Apocalypse Fighter Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Fighter Focus. -->
+		<!-- Double-click to obtain Apocalypse Fighter - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -151,7 +151,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45913" name="Apocalypse Stormer Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Stormer Damage Up. -->
+		<!-- Double-click to obtain Apocalypse Stormer - Damage Up enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -159,7 +159,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45914" name="Apocalypse Thrower Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Thrower Focus. -->
+		<!-- Double-click to obtain Apocalypse Thrower - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -167,7 +167,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45915" name="Apocalypse Guardian Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Shooter Focus. -->
+		<!-- Double-click to obtain Apocalypse Guardian - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -175,7 +175,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45916" name="Apocalypse Buster Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Buster Acumen. -->
+		<!-- Double-click to obtain Apocalypse Buster - Acumen enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -183,7 +183,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45917" name="Apocalypse Caster Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Caster Acumen. -->
+		<!-- Double-click to obtain Apocalypse Caster - Acumen enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -199,7 +199,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45919" name="Apocalypse Dual Swords Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Dual Sword Damage Up. -->
+		<!-- Double-click to obtain Apocalypse Dual Swords - Damage Up enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -207,7 +207,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45920" name="Apocalypse Dual Daggers Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Dual Dagger Focus. -->
+		<!-- Double-click to obtain Apocalypse Dual Daggers - Focus enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -215,7 +215,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45921" name="Apocalypse Dual Blunt Weapon Pack" type="EtcItem">
-		<!-- Double-click to get a +3/ 4/ 6/ 9/ 11 enchanted Apocalypse Dual Blunt Weapon Damage Up. -->
+		<!-- Double-click to obtain Apocalypse Dual Blunt Weapons - Damage Up enchanted to +3/ +4/ +6/ +9/ +11. -->
 		<set name="icon" val="icon.ev_charge_box" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -223,7 +223,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45922" name="Spellbook: Dignity of the Exalted" additionalName="Lv. 1" type="EtcItem">
-		<!-- Required for learning Dignity of the Exalted Lv. 1. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning Dignity of the Exalted Lv. 1. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i02" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -243,7 +243,7 @@
 		</skills>
 	</item>
 	<item id="45923" name="Spellbook: Dignity of the Exalted" additionalName="Lv. 2" type="EtcItem">
-		<!-- Required for learning Dignity of the Exalted Lv. 2. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning Dignity of the Exalted Lv. 2. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i02" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -263,7 +263,7 @@
 		</skills>
 	</item>
 	<item id="45924" name="Spellbook: Dignity of the Exalted" additionalName="Lv. 3" type="EtcItem">
-		<!-- Required for learning Dignity of the Exalted Lv. 3. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning Dignity of the Exalted Lv. 3. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i02" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -283,7 +283,7 @@
 		</skills>
 	</item>
 	<item id="45925" name="Spellbook: Belief of the Exalted" type="EtcItem">
-		<!-- A spellbook for learning the Belief of the Exalted skill. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning the Belief of the Exalted skill. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -303,7 +303,7 @@
 		</skills>
 	</item>
 	<item id="45926" name="Spellbook: Blessing of the Exalted" type="EtcItem">
-		<!-- A spellbook for learning the Belief of the Exalted skill. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning the Belief of the Exalted skill. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -323,7 +323,7 @@
 		</skills>
 	</item>
 	<item id="45927" name="Spellbook: Summon Battle Potion" type="EtcItem">
-		<!-- A spellbook for learning the Summon Battle Potion skill. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning the Summon Battle Potion skill. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i01" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -343,7 +343,7 @@
 		</skills>
 	</item>
 	<item id="45928" name="Spellbook: Favor of the Exalted" additionalName="Lv. 1" type="EtcItem">
-		<!-- Required for learning Favor of the Exalted Lv. 2. Used by main classes only. Required level: 100. -->
+		<!-- Required for learning Favor of the Exalted Lv. 1. Only for the main class. -->
 		<set name="icon" val="icon.giant_book_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -449,7 +449,7 @@
 		<set name="weight" val="2" />
 	</item>
 	<item id="45937" name="Hair Accessory Spirit Stone" type="EtcItem">
-		<!-- Spirit Stone for hair accessories. -->
+		<!-- No longer used. Can be sold in a store for adena. -->
 		<set name="icon" val="icon.renewal_mineral_hairacc" />
 		<set name="commissionItemType" val="LIFE_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -578,7 +578,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45950" name="Capsule: Tallum Blade*Damascus Sword - Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Tallum Blade*Damascus of Fortune. -->
+		<!-- Double-click to obtain Tallum Blade*Damascus Sword enchanted to +4. -->
 		<set name="icon" val="icon.weapon_dual_sword_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -642,7 +642,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45958" name="Capsule: Barakiel's Axe of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Barakiel's Axe of Fortune. -->
+		<!-- Double-click to obtain Barakiel's Axe enchanted to +4. -->
 		<set name="icon" val="icon.weapon_barakiel_axe_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -682,7 +682,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45963" name="Capsule: Guardian's Sword of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Guardian's Sword of Fortune. -->
+		<!-- Double-click to obtain Guardian's Sword enchanted to +4. -->
 		<set name="icon" val="icon.weapon_guardians_sword_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -690,7 +690,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45964" name="Capsule: Berserker Blade of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Berserker Blade of Fortune. -->
+		<!-- Double-click to obtain Berserker Blade enchanted to +4. -->
 		<set name="icon" val="icon.weapon_berserker_blade_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -778,7 +778,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45975" name="Capsule: Bow of Peril of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Bow of Peril of Fortune. -->
+		<!-- Double-click to obtain Bow of Peril enchanted to +4. -->
 		<set name="icon" val="icon.weapon_hazard_bow_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -810,7 +810,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45979" name="Capsule: Wizard's Tear of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Wizard's Tear of Fortune. -->
+		<!-- Double-click to obtain Wizard's Tear enchanted to +4. -->
 		<set name="icon" val="icon.weapon_tears_of_wizard_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -818,7 +818,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45980" name="Capsule: Homunkulus' Sword of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Homunkulus' Sword of Fortune. -->
+		<!-- Double-click to obtain Homunkulus' Sword enchanted to +4. -->
 		<set name="icon" val="icon.weapon_homunkuluss_sword_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -842,7 +842,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45983" name="Capsule: Dismantler of Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Dismantler of Fortune. -->
+		<!-- Double-click to obtain Dismantler enchanted to +4. -->
 		<set name="icon" val="icon.weapon_dismantler_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -866,7 +866,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45986" name="Capsule: Éclair Bijou - Fortune" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Éclair Bijou of Fortune. -->
+		<!-- Double-click to get a +4 enchanted ?clair Bijou of Fortune. -->
 		<set name="icon" val="icon.weapon_greed_stinger_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -930,7 +930,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45994" name="Capsule: Apocalypse Shaper - Focus" additionalName="Event" type="EtcItem">
-		<!-- Double-click to create Apocalypse Shaper - Focus +6 (30-day). -->
+		<!-- Double-click to obtain Apocalypse Shaper - Focus (30-day) enchanted to +6. -->
 		<set name="icon" val="icon.weapon_phasian_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -938,7 +938,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45995" name="Capsule: Apocalypse Cutter - Focus" additionalName="Event" type="EtcItem">
-		<!-- Double-click to create Apocalypse Cutter - Focus +6 (30-day). -->
+		<!-- Double-click to obtain Apocalypse Cutter - Focus (30-day) enchanted to +6. -->
 		<set name="icon" val="icon.weapon_pasis_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -946,7 +946,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45996" name="Capsule: Apocalypse Slasher - Focus" additionalName="Event" type="EtcItem">
-		<!-- Double-click to create Apocalypse Slasher - Focus +6 (30-day). -->
+		<!-- Double-click to obtain Apocalypse Slasher - Focus (30-day) enchanted to +6. -->
 		<set name="icon" val="icon.weapon_volver_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -954,7 +954,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45997" name="Capsule: Apocalypse Dual Swords - Damage Up" additionalName="Event" type="EtcItem">
-		<!-- Double-click to create Apocalypse Dual Sword - Damage Up +6 (30-day). -->
+		<!-- Double-click to obtain Apocalypse Dual Swords - Damage Up (30-day) enchanted to +6. -->
 		<set name="icon" val="icon.weapon_r_dualsword_i21" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -962,7 +962,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45998" name="Capsule: Apocalypse Dual Daggers - Focus" additionalName="Event" type="EtcItem">
-		<!-- Double-click to create Apocalypse Dual Dagger - Focus +6 (30-day). -->
+		<!-- Double-click to obtain Apocalypse Dual Daggers - Focus (30-day) enchanted to +6. -->
 		<set name="icon" val="icon.weapon_r_dualdagger_i21" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -970,7 +970,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="45999" name="Capsule: Apocalypse Dual Blunt Weapons - Damage Up" additionalName="Event" type="EtcItem">
-		<!-- Double-click to create Apocalypse Dual Blunt Weapon - Damage Up +6 (30-day). -->
+		<!-- Double-click to obtain Apocalypse Dual Blunt Weapons - Damage Up (30-day) enchanted to +6. -->
 		<set name="icon" val="icon.weapon_r_dualblunt_i21" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />

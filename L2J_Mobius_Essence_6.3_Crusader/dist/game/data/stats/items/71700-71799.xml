@@ -205,7 +205,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="71715" name="Reinforced Compound Bow Chest" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_composition_bow_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -216,11 +216,11 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="32249" min="1" max="1" chance="100" /> <!-- Infinite Wooden Quiver -->
-			<item id="91680" min="1" max="1" minEnchant="16" maxEnchant="16" chance="100" /> <!-- +16 Reinforced Compound Bow -->
+			<item id="91680" min="1" max="1" minEnchant="16" maxEnchant="16" chance="100" /> <!-- Reinforced Compound Bow - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="71716" name="+7 Eminence Bow" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_eminence_bow_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -570,7 +570,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="71754" name="Good Luck Chest" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -582,13 +582,13 @@
 		<set name="extractableCountMin" val="2" />
 		<set name="extractableCountMax" val="2" />
 		<capsuled_items>
-			<item id="91641" min="1" max="1" chance="80.0" /> <!-- Sayha's Blessing -->
-			<item id="49674" min="1" max="1" chance="1.0" /> <!-- XP Growth Scroll -->
-			<item id="90907" min="1" max="1" chance="1.0" /> <!-- Soulshot Ticket -->
-			<item id="91641" min="1" max="1" chance="1.0" /> <!-- Sayha's Blessing -->
-			<item id="91712" min="1" max="1" chance="1.0" /> <!-- Sayha's Storm Lv. 3 -->
-			<item id="91780" min="1" max="1" chance="1.0" /> <!-- Battle Scroll -->
-			<item id="91781" min="1" max="1" chance="1.0" /> <!-- Sayha's Buff Scroll -->
+			<item id="91641" min="1" max="1" chance="80.0" /> <!-- Sayha's Blessing - Sealed -->
+			<item id="49674" min="1" max="1" chance="1.0" /> <!-- XP Growth Scroll - Sealed -->
+			<item id="90907" min="1" max="1" chance="1.0" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="91641" min="1" max="1" chance="1.0" /> <!-- Sayha's Blessing - Sealed -->
+			<item id="91712" min="1" max="1" chance="1.0" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<item id="91780" min="1" max="1" chance="1.0" /> <!-- Old Battle Scroll - Sealed -->
+			<item id="91781" min="1" max="1" chance="1.0" /> <!-- Old Sayha's Buff Scroll - Sealed -->
 			<item id="947" min="1" max="1" chance="0.77" /> <!-- Scroll: Enchant B-grade Weapon -->
 			<item id="948" min="1" max="1" chance="0.77" /> <!-- Scroll: Enchant B-grade Armor -->
 			<item id="951" min="1" max="1" chance="100" /> <!-- Scroll: Enchant C-grade Weapon -->
@@ -596,7 +596,7 @@
 			<item id="49665" min="1" max="1" chance="0.77" /> <!-- B-grade Armor Pack -->
 			<item id="49667" min="1" max="1" chance="0.77" /> <!-- C-grade Weapon Pack -->
 			<item id="49790" min="1" max="1" chance="0.77" /> <!-- +16 C-grade Weapon Pack -->
-			<item id="90859" min="1" max="1" chance="0.77" /> <!-- Eva's Hair Accessory Pack -->
+			<item id="90859" min="1" max="1" chance="0.77" /> <!-- Eva's Head Accessory Box -->
 			<item id="90934" min="1" max="1" chance="0.77" /> <!-- Brooch Lv. 3 -->
 			<item id="91031" min="1" max="1" chance="0.77" /> <!-- Water Spirit Evolution Stone -->
 			<item id="91032" min="1" max="1" chance="0.77" /> <!-- Fire Spirit Evolution Stone -->
@@ -605,7 +605,7 @@
 			<item id="91159" min="1" max="1" chance="0.77" /> <!-- Agathion Exchange Coupon -->
 			<item id="91216" min="1" max="1" chance="0.77" /> <!-- +16 B-grade Weapon Pack -->
 			<item id="91227" min="1" max="1" chance="0.77" /> <!-- Sayha's Cloak Coupon -->
-			<item id="91767" min="1" max="1" chance="0.91" /> <!-- Enchant Kit: Talisman of Aden -->
+			<item id="91767" min="1" max="1" chance="0.91" /> <!-- Enchant Kit: Talisman of Aden - Sealed -->
 			<item id="92034" min="1" max="1" chance="0.77" /> <!-- Reinforced Jewelry Box -->
 		</capsuled_items>
 	</item>
@@ -1027,7 +1027,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="71775" name="Golden Ticket (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- A reward for completing the Golden Quest during the Golden Week event. Can be exchanged for various items by the Game Assistant. -->
+		<!-- A reward for completing the Golden Quest during the Golden Week event. Can be exchanged for various items through the Game Assistant. -->
 		<set name="icon" val="icon.bm_royal_gold_ticket_all" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
@@ -1036,7 +1036,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="71776" name="Kamael's Gift" type="EtcItem">
-		<!-- Double-click to obtain one of the various items. -->
+		<!-- Double-click to obtain a random item. -->
 		<set name="icon" val="icon.npoint_valakas_30day_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />

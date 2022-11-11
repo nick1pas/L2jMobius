@@ -16,7 +16,7 @@
 		</skills>
 	</item>
 	<item id="72015" name="Special Kit: Adena" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i09" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -47,16 +47,16 @@
 		<set name="extractableCountMin" val="2" />
 		<set name="extractableCountMax" val="2" />
 		<capsuled_items>‬
-			<item id="92314" min="1" max="1" chance="50.0" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="1" max="1" chance="50.0" /> <!-- Giran Seal -->
 			<item id="91641" min="3" max="3" chance="3.586" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91690" min="5" max="5" chance="3.57" /> <!-- Special HP Recovery Potion - Sealed -->
 			<item id="91712" min="5" max="5" chance="3.57" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
-			<item id="91780" min="5" max="5" chance="3.57" /> <!-- Battle Scroll - Sealed -->
-			<item id="93486" min="5" max="5" chance="3.57" /> <!-- Combat Scroll - Sealed -->
-			<item id="92314" min="10" max="10" chance="3.57" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="5" max="5" chance="3.57" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="2" max="2" chance="3.57" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="1" max="1" chance="3.57" /> <!-- Giran Seal - Sealed -->
+			<item id="91780" min="5" max="5" chance="3.57" /> <!-- Old Battle Scroll - Sealed -->
+			<item id="93486" min="5" max="5" chance="3.57" /> <!-- Old Combat Scroll - Sealed -->
+			<item id="92314" min="10" max="10" chance="3.57" /> <!-- Giran Seal -->
+			<item id="92314" min="5" max="5" chance="3.57" /> <!-- Giran Seal -->
+			<item id="92314" min="2" max="2" chance="3.57" /> <!-- Giran Seal -->
+			<item id="92314" min="1" max="1" chance="3.57" /> <!-- Giran Seal -->
 			<item id="90934" min="1" max="1" chance="3.0" /> <!-- Brooch Lv. 3 -->
 			<item id="9591" min="1" max="1" chance="3.0" /> <!-- Talisman Bracelet Lv. 3 -->
 			<item id="90890" min="1" max="1" chance="3.0" /> <!-- Agathion Bracelet Lv. 3 -->
@@ -114,7 +114,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72021" name="Package: Shield of Nightmare" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.shield_shield_of_nightmare_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -129,7 +129,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72022" name="Package: Shield of Nightmare" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.shield_shield_of_nightmare_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -221,7 +221,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="72040" name="Festival Gift Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="BranchSys.br_gold_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -263,9 +263,9 @@
 			<item id="94162" min="1" max="1" chance="0.844" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
 			<item id="94192" min="2" max="2" chance="5.0" /> <!-- New Year Horoscope - Medium Luck (Time-limited) - Sealed -->
 			<item id="94193" min="1" max="1" chance="5.0" /> <!-- New Year Horoscope - Great Luck (Time-limited) - Sealed -->
-			<item id="94208" min="1" max="1" chance="5.0" /> <!-- Scroll of Blessing - Sealed -->
-			<item id="94210" min="1" max="1" chance="5.0" /> <!-- Life Stone Lv. 2 - Weapon - Sealed -->
-			<item id="94212" min="1" max="1" chance="5.0" /> <!-- Life Stone Lv. 2 - Armor - Sealed -->
+			<item id="94208" min="1" max="1" chance="5.0" /> <!-- Scroll of Blessing: Weapon - Sealed -->
+			<item id="94210" min="1" max="1" chance="5.0" /> <!-- Augmenting Stone: Weapon - Sealed -->
+			<item id="94212" min="1" max="1" chance="5.0" /> <!-- Augmenting Stone: Armor - Sealed -->
 			<item id="94324" min="1" max="1" chance="0.844" /> <!-- Spellbook: Song of Earth -->
 			<item id="94325" min="1" max="1" chance="0.844" /> <!-- Spellbook: Song of Hunter -->
 			<item id="94326" min="1" max="1" chance="0.844" /> <!-- Spellbook: Dance of Warrior -->
@@ -283,7 +283,7 @@
 			<item id="94478" min="1" max="1" chance="0.844" /> <!-- Pet Book: Steel Skin -->
 			<item id="94513" min="1" max="1" chance="0.844" /> <!-- Package: Frintezza Doll Lv. 1 - Sealed -->
 			<item id="94559" min="2" max="2" chance="0.844" /> <!-- Sayha's Blessing Scroll (Time-limited) - Sealed -->
-			<item id="94615" min="1" max="1" chance="0.844" /> <!-- Forgotten Primeval Garden's Time Stone (Time-limited) - Sealed -->
+			<item id="94615" min="1" max="1" chance="0.844" /> <!-- Forgotten Garden's Time Stone (Time-limited) - Sealed -->
 			<item id="94620" min="1" max="1" chance="0.844" /> <!-- Primeval Isle's Time Stone (Time-limited) - Sealed -->
 			<item id="94642" min="1" max="1" chance="0.844" /> <!-- Pet Earring -->
 			<item id="94643" min="1" max="1" chance="0.844" /> <!-- Pet Ring -->
@@ -314,7 +314,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="72042" name="Special Festival Spellbook Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.sayha2017_box_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -331,7 +331,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72043" name="Sparkling Accessory Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="BranchSys3.icon.g_cash_fortuna_box_r" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -374,7 +374,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72073" name="Pack of Seals" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_main_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -385,7 +385,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="72074" name="Halloween Kit" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_halloween_king_pumpkini00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -404,7 +404,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72075" name="Special Box of Seals" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_ensoulbox_PvE" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -417,35 +417,35 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="92314" min="1" max="1" chance="20.0" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="3" max="3" chance="15.0" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="10" max="10" chance="10.0" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="30" max="30" chance="5.0" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="1" max="1" chance="20.0" /> <!-- Giran Seal -->
+			<item id="92314" min="3" max="3" chance="15.0" /> <!-- Giran Seal -->
+			<item id="92314" min="10" max="10" chance="10.0" /> <!-- Giran Seal -->
+			<item id="92314" min="30" max="30" chance="5.0" /> <!-- Giran Seal -->
 			<item id="94269" min="1" max="1" chance="10.0" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="1" max="1" chance="10.0" /> <!-- Scroll: Boost Defense - Sealed -->
 			<item id="91712" min="1" max="1" chance="5.0" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
 			<item id="91690" min="1" max="1" chance="10.0" /> <!-- Special HP Recovery Potion - Sealed -->
 			<item id="90694" min="1" max="1" chance="5.0" /> <!-- Sealed Soul Crystal Lv. 1 -->
-			<item id="92314" min="100" max="100" chance="1.0" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="100" max="100" chance="1.0" /> <!-- Giran Seal -->
 			<item id="49683" min="1" max="1" chance="0.8083" /> <!-- Talisman of Baium -->
 			<item id="91641" min="1" max="1" chance="0.8091" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91864" min="1" max="1" chance="0.8083" /> <!-- Dragon Belt Pack - Sealed -->
 			<item id="93103" min="1" max="1" chance="0.8083" /> <!-- Spellbook: Divine Beam -->
 			<item id="93330" min="1" max="1" chance="0.8083" /> <!-- Enchant Kit: Talisman of Authority - Sealed -->
 			<item id="93387" min="1" max="1" chance="0.8083" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
-			<item id="94208" min="1" max="1" chance="0.8083" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="0.8083" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94324" min="1" max="1" chance="0.8083" /> <!-- Spellbook: Song of Earth -->
 			<item id="94325" min="1" max="1" chance="0.8083" /> <!-- Spellbook: Song of Hunter -->
 			<item id="94326" min="1" max="1" chance="0.8083" /> <!-- Spellbook: Dance of Warrior -->
 			<item id="94327" min="1" max="1" chance="0.8083" /> <!-- Spellbook: Dance of Fire -->
-			<item id="92314" min="200" max="200" chance="0.01" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="200" max="200" chance="0.01" /> <!-- Giran Seal -->
 			<item id="6660" min="1" max="1" chance="0.001" /> <!-- Queen Ant's Ring -->
 			<item id="6661" min="1" max="1" chance="0.001" /> <!-- Orfen's Earring -->
 			<item id="6662" min="1" max="1" chance="0.001" /> <!-- Ring of Core -->
 			<item id="49580" min="1" max="1" chance="0.001" /> <!-- Baium's Ring -->
 			<item id="90763" min="1" max="1" chance="0.001" /> <!-- Zaken's Earring -->
 			<item id="91550" min="1" max="1" chance="0.001" /> <!-- Frintezza's Necklace -->
-			<item id="92314" min="500" max="500" chance="0.001" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="500" max="500" chance="0.001" /> <!-- Giran Seal -->
 			<item id="91163" min="1" max="1" chance="0.0001" /> <!-- Anakim's Soul Crystal Lv. 1 - Rare -->
 			<item id="91173" min="1" max="1" chance="0.0001" /> <!-- Lilith' Soul Crystal Lv. 1 - Rare -->
 			<item id="94083" min="1" max="1" chance="0.0001" /> <!-- Helmet of Mana -->
@@ -458,7 +458,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72078" name="Anniversary Gift Box (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ev_draco_gift_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -470,7 +470,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="91983" min="1" max="1" chance="100" /> <!-- Primeval Isle's Time Stone - Sealed -->
-			<item id="92400" min="1" max="1" chance="100" /> <!-- Forgotten Primeval Garden's Time Stone - Sealed -->
+			<item id="92400" min="1" max="1" chance="100" /> <!-- Forgotten Garden's Time Stone - Sealed -->
 			<item id="93421" min="1" max="1" chance="100" /> <!-- Valakas' Necklace - Sealed -->
 			<item id="93997" min="1" max="1" chance="100" /> <!-- Spellbook: Air Bike - Sealed -->
 			<item id="93998" min="1" max="1" chance="100" /> <!-- Anniversary Cake (Time-limited) - Sealed -->
@@ -479,7 +479,7 @@
 		</capsuled_items>
 	</item>
 	<item id="72080" name="Pearly Joy Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="BranchSys.icon.br_ghost_magicalbox_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -498,13 +498,13 @@
 			<item id="93270" min="1" max="1" chance="9.09" /> <!-- Cursed Scroll: Enchant A-grade Weapon - Sealed -->
 			<item id="93271" min="1" max="1" chance="9.09" /> <!-- Cursed Scroll: Enchant A-grade Armor - Sealed -->
 			<item id="93274" min="10" max="10" chance="9.09" /> <!-- Sayha's Cookie - Sealed -->
-			<item id="94208" min="1" max="1" chance="9.09" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="9.09" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94269" min="3" max="3" chance="9.09" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="2" max="2" chance="9.09" /> <!-- Scroll: Boost Defense - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="72084" name="Devoted Hero's Circlet" additionalName="1-day" type="Armor">
-		<!-- <Properties> Max HP +600 Max MP +600 Max CP +600 P. Def. +6% M. Def. +6% Received damage -6% <Fatal Critical Strike> With a 10% chance, after an attack, P./ M. Skill Critical Damage +15% for 8 sec. <font color=eeaa22>Occupies the left hair accessory slot.</font> -->
+		<!-- <Properties> Max HP +600 Max MP +600 Max CP +600 P. Def. +6% M. Def. +6% Received damage -6% <Fatal Critical Strike> With a 10% chance after an attack, P./ M. Skill Critical Damage +15% for 8 sec. <font color=eeaa22>Equipped in the left head accessory slot.</font> -->
 		<set name="icon" val="icon.accessory_barka_karm_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -717,7 +717,7 @@
 		</stats>
 	</item>
 	<item id="72097" name="Devoted Hero's Shield" additionalName="1-day" type="Armor">
-		<!-- <Properties> Max HP +200 Shield Defense +200 All received Critical Rate -8% <Protective Barrier> For 5 sec. when hit, applies the following buff: P. Def. +20% M. Def. +20% Shield Defense Rate +20% (Probability rate: 2%) (Cooldown: 60 sec.) <Retribution Defense> For 3 sec. when hit, reflects 5% of the received damage. (Cooldown: 60 sec.) -->
+		<!-- <Properties> Max HP +200 Shield Defense +200 All received Critical Rate -8% <Protective Barrier> For 5 sec. when hit, applies the following buff: P. Def. +20% M. Def. +20% Shield Defense Rate +20% (Probability: 2%) (Cooldown: 60 sec.) <Retribution Defense> For 3 sec. when hit, reflects 5% of the received damage. (Cooldown: 60 sec.) -->
 		<set name="icon" val="icon.shield_of_revenge" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="FIST" />
@@ -735,7 +735,7 @@
 		</stats>
 	</item>
 	<item id="72098" name="Devoted Hero's Sigil" additionalName="1-day" type="Armor">
-		<!-- <Properties> Max MP +150 Atk. Spd. +45 Casting Spd. +45 All Critical Rate +4% <Fatal Power> For 3 sec. after an attack, Skill Power +3% (Probability rate: 2%) <Fatal Impulse> For 3 sec. after an attack, All Critical Damage +50 (Probability rate: 1%) -->
+		<!-- <Properties> Max MP +150 Atk. Spd. +45 Casting Spd. +45 All Critical Rate +4% <Fatal Power> For 3 sec. after an attack, Skill Power +3% (Probability: 2%) <Fatal Impulse> For 3 sec. after an attack, All Critical Damage +50 (Probability: 1%) -->
 		<set name="icon" val="icon.elos_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="SIGIL" />

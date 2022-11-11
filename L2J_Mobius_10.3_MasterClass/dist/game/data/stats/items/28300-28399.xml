@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="28300" name="Transcendent Eternal Tunic" additionalName="Not used" type="Armor">
-		<!-- Received damage -8%, P. Atk. +1.5%, M. Atk. +3%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Received damage -8%, P. Atk. +1.5%, M. Atk. +3%. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, also decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. -->
 		<set name="icon" val="BranchIcon.icon.armor_t803_u_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="MAGIC" />
@@ -714,7 +714,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="28358" name="La Vie En Rose's Brooch Lv. 3" type="Armor">
-		<!-- When equipped, activates 6 Jewel Slots. Inventory Slots +12. <Enhancing>. Can be enhanced to La Vie En Rose's Brooch Lv. 4 through Shadai in Heine. -->
+		<!-- Unlocks 6 jewel slots. Inventory slots +12. <Upgrading> Can be upgraded to La Vie En Rose's Brooch Lv. 4 through Shadai in Heine. -->
 		<set name="icon" val="BranchIcon.icon.etc_g_bm_brooch_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -797,7 +797,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="28365" name="Ultimate Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain a La Vie En Rose's Jewelry Box. -->
+		<!-- Double-click to obtain a La Vie En Rose's Jewel Pack. -->
 		<set name="icon" val="icon.bm_sayha_blessed_box" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -819,7 +819,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="26478" min="1" max="1" chance="100" /> <!-- Vital Stone Lv. 3 - Not available -->
+			<item id="26478" min="1" max="1" chance="100" /> <!-- Vital Stone Lv. 3 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="28367" name="Tanzanite Jewelry Box Lv. 3" type="EtcItem">
@@ -831,7 +831,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="26488" min="1" max="1" chance="100" /> <!-- Tanzanite Lv. 3 - Not available -->
+			<item id="26488" min="1" max="1" chance="100" /> <!-- Tanzanite Lv. 3 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="28368" name="Vital Stone Jewelry Box Lv. 4" type="EtcItem">
@@ -843,7 +843,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="26479" min="1" max="1" chance="100" /> <!-- Vital Stone Lv. 4 - Not available -->
+			<item id="26479" min="1" max="1" chance="100" /> <!-- Vital Stone Lv. 4 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="28369" name="Tanzanite Jewelry Box Lv. 4" type="EtcItem">
@@ -855,7 +855,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="26489" min="1" max="1" chance="100" /> <!-- Tanzanite Lv. 4 - Not available -->
+			<item id="26489" min="1" max="1" chance="100" /> <!-- Tanzanite Lv. 4 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="28370" name="Garnet Jewelry Box Lv. 3" type="EtcItem">
@@ -867,7 +867,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="26483" min="1" max="1" chance="100" /> <!-- Garnet Lv. 3 - Not available -->
+			<item id="26483" min="1" max="1" chance="100" /> <!-- Garnet Lv. 3 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="28371" name="Garnet Jewelry Box Lv. 4" type="EtcItem">
@@ -879,7 +879,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="26484" min="1" max="1" chance="100" /> <!-- Garnet Lv. 4 - Not available -->
+			<item id="26484" min="1" max="1" chance="100" /> <!-- Garnet Lv. 4 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="28372" name="Vital Stone Jewelry Box Lv. 3" type="EtcItem">
@@ -919,7 +919,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="28376" name="Greater Cat's Eye Lv. 1" type="Armor">
-		<!-- Damage Reflection Resistance +50%. With a 10% chance, reflects debuffs back to the enemy. Enables the Invincibility skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Damage Reflection Resistance +50%. With a 10% chance, reflects debuffs back to the enemy. Enables the Invincibility skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -933,7 +933,7 @@
 		</skills>
 	</item>
 	<item id="28377" name="Greater Amethyst Lv. 1" type="Armor">
-		<!-- PvP Damage +15%, received P. Critical Rate -25%. Enables the Remove Invincibility/ Immunity skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- PvP Damage +15%, received P. Critical Rate -25%. Enables the Remove Invincibility/ Immunity skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="BranchIcon.Icon.g_bm_jewel_amethyst_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -947,7 +947,7 @@
 		</skills>
 	</item>
 	<item id="28378" name="Greater Vital Stone Lv. 1" additionalName="Not Available" type="Armor">
-		<!-- Vitality bonus +50%, Vitality Consumption -15%, acquired XP +10%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Vitality bonus +50%, Vitality Consumption -15%, acquired XP +10%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_vital_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -961,7 +961,7 @@
 		</skills>
 	</item>
 	<item id="28379" name="Greater Garnet Lv. 1" additionalName="Not Available" type="Armor">
-		<!-- Debuff Resistance +30%. Removes Confusion/ Obstruction debuffs when receiving PvP damage. Removes debuffs from you and grants immunity to debuffs for 7 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Debuff Resistance +30%. Removes Confusion/ Obstruction debuffs when receiving PvP damage. Removes debuffs from you and grants immunity to debuffs for 7 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_garnet_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -975,7 +975,7 @@
 		</skills>
 	</item>
 	<item id="28380" name="Greater Tanzanite Lv. 1" additionalName="Not Available" type="Armor">
-		<!-- Creates a protective barrier that absorbs 50,000 damage for 15 sec, and instantly restores 15% HP. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting>. Compounding with Jewel Energy. -->
+		<!-- Creates a protective barrier that absorbs 50,000 damage for 15 sec, and instantly restores 15% HP. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. Equip various greater jewels to get additional effects. <Enchanting> Compounding with Jewel Energy. -->
 		<set name="icon" val="icon.bm_jewel_tanzanite_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -988,7 +988,7 @@
 		</skills>
 	</item>
 	<item id="28381" name="Abundance Box" additionalName="Infinite" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Talisman of Abundance, Lindvior's Earring, Earth Wyrm Heart Ring, Seven Signs' Energy, Talisman of Lilith, Talisman of Anakim, Talisman of Insanity, Talisman of Longing, Antharas' Earring, Bottle of Antharas' Soul, Valakas' Necklace, Bottle of Valakas' Soul, Baium's Ring, Baium's Soul Ring, Octavis' Ring, Octavis' Earring, Octavis' Necklace, Istina's Necklace, Istina's Ring, Queen Ant's Ring, Superior Giant's Codex Chapter 1, Superior Giant's Codex - Mastery Chapter 1, Superior Giant's Codex - Discipline Chapter 1, Lv. 5 Legendary Dye Pack, Elcyum Regular/ Crystal, Giant's Energy, Orfen's Earring, Tempest Stone, Gemstone, Fortune Pocket - Lv. 5, Blessed Zaken, Venir's Talisman Lv. 8/ 10/ 14. -->
+		<!-- Double-click to obtain one of the following items: Talisman of Abundance, Lindvior's Earring, Earth Wyrm Heart Ring, Seven Signs' Energy, Talisman of Lilith, Talisman of Anakim, Talisman of Insanity, Talisman of Longing, Antharas' Earring, Bottle of Antharas' Soul, Valakas' Necklace, Bottle of Valakas' Soul, Baium's Ring, Baium's Soul Ring, Octavis' Ring, Octavis' Earring, Octavis' Necklace, Istina's Necklace, Istina's Ring, Queen Ant's Ring, Superior Giant's Codex Chapter 1, Superior Giant's Codex - Mastery Chapter 1, Superior Giant's Codex - Discipline Chapter 1, Lv. 5 Legendary Dye Pack, Elcyum Regular/ Crystal, Giant's Energy, Orfen's Earring, Heavy Air Stone, Gemstone, Fortune Pocket - Lv. 5, Blessed Zaken, Venir's Talisman Lv. 8/ 10/ 14. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i03" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -997,7 +997,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="28382" name="Ultimate Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain a La Vie En Rose's Jewelry Box. -->
+		<!-- Double-click to obtain a La Vie En Rose's Jewel Pack. -->
 		<set name="icon" val="icon.bm_sayha_blessed_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1024,7 +1024,7 @@
 		</skills>
 	</item>
 	<item id="28384" name="Chef Monkey's Belt" type="Armor">
-		<!-- A belt from Chef Monkey. When equipped, Max HP/ MP/ CP +300, Weight +12800, Damage +7%, Received Damage -5%, Inventory Slots +18, Attribute Resistance +5. -->
+		<!-- A belt from Chef Monkey. Max HP/ MP/ CP +300, weight limit +12,800, damage +7%, received damage -5%, inventory slots +18, Attribute Resistance +5. -->
 		<set name="icon" val="BranchIcon.icon.g_monkey_belt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1060,7 +1060,7 @@
 		</capsuled_items>
 	</item>
 	<item id="28386" name="Race Change Ticket" type="EtcItem">
-		<!-- In order to change your character's race, follow the instructions:. 1. Transfer this item to the chosen character. 2. Send an email with the title 'Race change' to https://eu.4gamesupport.com/. Note!. The race change is not available for Ertheia, Kamael, Tyrr Maestro, and Iss Dominator. -->
+		<!-- In order to change your character's race, follow the instructions: 1. Transfer this item to the chosen character. 2. Send an email with the title 'Race change' to https://eu.4gamesupport.com/ Note! The race change is not available for Ertheia, Kamael, Tyrr Maestro, and Iss Dominator. -->
 		<set name="icon" val="icon.etc_exchange_ticket_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1146,7 +1146,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="28393" name="Heine Exclusive Bait Coupon" type="EtcItem">
-		<!-- Can be exchanged for Heine Exclusive Bait of your choice through a Fishing Guild member in any town. -->
+		<!-- Can be exchanged for Heine Exclusive Bait of your choice through the Fishing Guildsmen in any town. -->
 		<set name="icon" val="icon.etc_bm_lure_ticket" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -1176,7 +1176,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="28393" min="300" max="300" chance="100" /> <!-- Heine Exclusive Bait Coupon -->
+			<item id="28393" min="300" max="300" chance="100" /> <!-- Heine's Special Bait Coupon -->
 			<item id="38154" min="300" max="300" chance="100" /> <!-- Fishing Shot -->
 		</capsuled_items>
 	</item>
@@ -1190,13 +1190,13 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="28393" min="3000" max="3000" chance="100" /> <!-- Heine Exclusive Bait Coupon -->
+			<item id="28393" min="3000" max="3000" chance="100" /> <!-- Heine's Special Bait Coupon -->
 			<item id="38154" min="3000" max="3000" chance="100" /> <!-- Fishing Shot -->
 			<item id="45493" min="1" max="1" chance="100" /> <!-- Fishing Rod Pack (30-day) -->
 		</capsuled_items>
 	</item>
 	<item id="28397" name="2016 World Olympiad Hero XXX's Accessory" type="Armor">
-		<!-- A special hair accessory crafted for the winner of the 2016 World Olympiad. STR/ INT/ DEX/ WIT/ CON/ MEN +5. -->
+		<!-- A special head accessory crafted for the winner of the 2016 Olympiad. STR +5, INT +5, DEX +5, WIT +5, CON +5, MEN +5. -->
 		<set name="icon" val="icon.accessory_ornithomimus_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />

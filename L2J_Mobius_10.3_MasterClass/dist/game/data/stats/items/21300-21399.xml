@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="21300" name="Package: Stone: Enchant S-grade Armor" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Lucky Enchant Stone: S-grade Armor. -->
+		<!-- Double-click to obtain 1 Stone: Enchant S-grade Armor. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -13,7 +13,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="14711" min="1" max="1" chance="100" /> <!-- Lucky Enchant Stone: S-grade Armor -->
+			<item id="14711" min="1" max="1" chance="100" /> <!-- Stone: Enchant S-grade Armor -->
 		</capsuled_items>
 	</item>
 	<item id="21301" name="Package: Crystal of Fortune Treasure Sack" type="EtcItem">
@@ -181,7 +181,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21311" name="Bead of Fortune Treasure Sack" type="EtcItem">
-		<!-- When you open the treasure sack, you can obtain 1 Neolithic Crystal (B-S84), Vitality Replenishing Potion, or Superior Minion coupon (5-hour). -->
+		<!-- Double-click to obtain one of the following items: Neolithic Crystal (from B- to S84-grade), Vitality Replenishing Potion, Superior Minion Coupon. -->
 		<set name="icon" val="BranchSys.icon.br_lucky_bag_i00" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -199,7 +199,7 @@
 		</skills>
 	</item>
 	<item id="21312" name="Bead of Fortune Treasure Sack" additionalName="Event" type="EtcItem">
-		<!-- When you open the treasure sack, you can obtain 1 Neolithic Crystal (B-S84), Vitality Replenishing Potion, or Superior Minion coupon (5-hour). -->
+		<!-- Double-click to obtain one of the following items: Neolithic Crystal (from B- to S84-grade), Vitality Replenishing Potion, Superior Minion Coupon. -->
 		<set name="icon" val="BranchSys.icon.br_lucky_bag_i00" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -249,7 +249,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21315" name="Rider Pouch" type="EtcItem">
-		<!-- Double-click to obtain a time-limited (7-day or 30-day) or permanent mount bracelet for Darkmane Pacer, Steam Beetle, Gold Maned Lion, or Jet Bike. -->
+		<!-- Double-click to obtain a time-limited (7-day or 30-day) or permanent mount bracelet for Darkmane Pacer, Steam Beetle, Gold-maned Lion, or Jet Bike. -->
 		<set name="icon" val="BranchSys.icon.br_lucky_bag_i00" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -267,7 +267,7 @@
 		</skills>
 	</item>
 	<item id="21316" name="Rider Pouch" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain a time-limited (7-day or 30-day) or permanent mount bracelet for Darkmane Pacer, Steam Beetle, Gold Maned Lion, or Jet Bike. -->
+		<!-- Double-click to obtain a time-limited (7-day or 30-day) or permanent mount bracelet for Darkmane Pacer, Steam Beetle, Gold-maned Lion, or Jet Bike. -->
 		<set name="icon" val="BranchSys.icon.br_lucky_bag_i00" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -1419,7 +1419,7 @@
 		</capsuled_items>
 	</item>
 	<item id="21379" name="Darkmane Pacer Bracelet" additionalName="7-day" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer. 7-day. -->
+		<!-- Allows to mount Darkmane Pacer. Available for 7 d. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1439,7 +1439,7 @@
 		</skills>
 	</item>
 	<item id="21380" name="Darkmane Pacer Bracelet" additionalName="7-day / Event" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer. 7-day. -->
+		<!-- Allows to mount Darkmane Pacer. Available for 7 d. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1459,7 +1459,7 @@
 		</skills>
 	</item>
 	<item id="21381" name="Darkmane Pacer Bracelet" additionalName="30-day" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer. 30-day. -->
+		<!-- Allows to mount Darkmane Pacer. Available for 30 d. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1479,7 +1479,7 @@
 		</skills>
 	</item>
 	<item id="21382" name="Darkmane Pacer Bracelet" additionalName="30-day / Event" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer. 30-day. -->
+		<!-- Allows to mount Darkmane Pacer. Available for 30 d. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1499,7 +1499,7 @@
 		</skills>
 	</item>
 	<item id="21383" name="Darkmane Pacer Bracelet" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer. -->
+		<!-- Allows to mount Darkmane Pacer. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1516,7 +1516,7 @@
 		</skills>
 	</item>
 	<item id="21384" name="Darkmane Pacer Bracelet" additionalName="Event" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer. -->
+		<!-- Allows to mount Darkmane Pacer. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1741,7 +1741,7 @@
 		</skills>
 	</item>
 	<item id="21397" name="Package: Gold Maned Lion Bracelet (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Gold Maned Lion Bracelet (7-day). -->
+		<!-- Double-click to obtain Gold-maned Lion Bracelet (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1753,11 +1753,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="21403" min="1" max="1" chance="100" /> <!-- Gold Maned Lion Bracelet - 7-day -->
+			<item id="21403" min="1" max="1" chance="100" /> <!-- Gold-maned Lion Bracelet - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="21398" name="Package: Gold Maned Lion Bracelet (7-day)" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Gold Maned Lion Bracelet (7-day). -->
+		<!-- Double-click to obtain Gold-maned Lion Bracelet (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1769,11 +1769,11 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="21404" min="1" max="1" chance="100" /> <!-- Gold Maned Lion Bracelet - 7-day / Event -->
+			<item id="21404" min="1" max="1" chance="100" /> <!-- Gold-maned Lion Bracelet - 7-day / Event -->
 		</capsuled_items>
 	</item>
 	<item id="21399" name="Package: Gold Maned Lion Bracelet (30-day)" type="EtcItem">
-		<!-- Double-click to obtain Gold Maned Lion Bracelet (30-day). -->
+		<!-- Double-click to obtain Gold-maned Lion Bracelet (30-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1785,7 +1785,7 @@
 		<set name="default_action" val="PEEL" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="21405" min="1" max="1" chance="100" /> <!-- Gold Maned Lion Bracelet - 30-day -->
+			<item id="21405" min="1" max="1" chance="100" /> <!-- Gold-maned Lion Bracelet - 30-day -->
 		</capsuled_items>
 	</item>
 </list>

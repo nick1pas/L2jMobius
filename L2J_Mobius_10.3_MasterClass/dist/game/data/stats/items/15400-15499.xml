@@ -47,7 +47,7 @@
 		<set name="is_oly_restricted" val="true" />
 	</item>
 	<item id="15403" name="PA - Berserker Blade" additionalName="PA" type="Weapon">
-		<!-- Berserker Blade with limited ability enhancement. <Special Option>. Critical +73. Expiratory. Cannot be crystallized or granted functions besides enchantment. This item cannot be enhanced except with PA Enchant Scrolls. -->
+		<!-- Berserker Blade, upgrade options are limited. <Special properties> Critical Rate +73. Time-limited. Cannot be crystallized. Can only be enchanted. -->
 		<set name="icon" val="icon.weapon_berserker_blade_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -446,7 +446,7 @@
 		</skills>
 	</item>
 	<item id="15425" name="Hero's Treasure Chest" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Package: Equipment Set (30-day), Minion Coupon and Hero's Escape Point. -->
+		<!-- Double-click to obtain Package: Equipment Set (30-day), Pet Necklace Coupon and Hero's Escape Point. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -457,7 +457,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="15211" min="1" max="1" chance="100" /> <!-- Package: Equipment Set (30-day) - 30-day -->
-			<item id="13273" min="1" max="1" chance="100" /> <!-- Minion Coupon (5-hour) -->
+			<item id="13273" min="1" max="1" chance="100" /> <!-- Pet Necklace Coupon (5-hour) -->
 			<item id="15426" min="1" max="1" chance="100" /> <!-- Hero's Escape Point - Event -->
 		</capsuled_items>
 	</item>
@@ -494,7 +494,7 @@
 		</skills>
 	</item>
 	<item id="15428" name="Anniversary Party Earring (Event)" additionalName="30-day" type="Armor">
-		<!-- Available for 30 d. Max MP +31, Stun Atk. Rate/ Resistance +20%, Mental Atk. Rate/ Resistance +20%. Activates Vampiric Rage effect. Effects of two identical earrings do not stack. -->
+		<!-- MP +31, Mental/ Shock Resistance +20%, Mental/ Shock Atk. Rate +20%. Enables Vampiric Rage effect. Effects of two identical earrings do not stack. Available for 30 d. -->
 		<set name="icon" val="icon.event_six_party_earing_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -537,7 +537,7 @@
 		</skills>
 	</item>
 	<item id="15430" name="Event - Revita-Pop" additionalName="Event" type="EtcItem">
-		<!-- Sweet Revita-Pop. You can give it to Skooldie to exchange for the Halloween Toy Box. -->
+		<!-- A sweet Halloween candy. Can be exchanged for Halloween Toy Box through Skuld. -->
 		<set name="icon" val="icon.ev_hallowinday_candy_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -546,7 +546,7 @@
 		<set name="is_oly_restricted" val="true" />
 	</item>
 	<item id="15431" name="Scroll: Summon Uldie - Event" type="EtcItem">
-		<!-- When used, summons the oldest girl Uldie among the Three Siblings, and can play Jack's game. You cannot summon Uldie if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! -->
+		<!-- Summons Urd to play Jack's game. You cannot summon Urd if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game if you are currently transformed! -->
 		<set name="icon" val="icon.ev_scroll_of_wooldie_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -561,7 +561,7 @@
 		</skills>
 	</item>
 	<item id="15432" name="Scroll: Summon Belldandy - Event" type="EtcItem">
-		<!-- When used, summons the middle child Belldandy among the Three Siblings, and can play Jack's game. You cannot summon Belldandy if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! -->
+		<!-- Summons Verdandi to play Jack's game. You cannot summon Verdandi if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game if you are transformed! -->
 		<set name="icon" val="icon.ev_scroll_of_berdandi_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -576,7 +576,7 @@
 		</skills>
 	</item>
 	<item id="15433" name="Scroll: Summon Skooldie - Event" type="EtcItem">
-		<!-- When used, summons the youngest child Skooldie among the Three Siblings, and can play Jack's game. You cannot summon Skooldie if a pet is summoned or if the Halloween mask isn't equipped. You cannot play Jack's game is you are currently transformed or your stance is in a switched state! -->
+		<!-- Summons Skuld to train the Jack's Game. You cannot summon Skuld if you have a pet summoned or if Halloween Mask isn't equipped. You cannot play Jack's Game while transformed! -->
 		<set name="icon" val="icon.ev_scroll_of_scooldie_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -671,7 +671,7 @@
 		</skills>
 	</item>
 	<item id="15438" name="Vitality Maintaining Potion (10-min.)" type="EtcItem">
-		<!-- Maintains the Vitality amount for 10 min. Cooldown: 30 min. -->
+		<!-- Maintains Vitality for 10 min. Cooldown: 30 min. -->
 		<set name="icon" val="icon.etc_lesser_potion_blue_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -688,7 +688,7 @@
 		</skills>
 	</item>
 	<item id="15439" name="Scroll: 1000 SP" type="EtcItem">
-		<!-- Scroll that replenishes 1,000 SP. -->
+		<!-- SP +1. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1039,7 +1039,7 @@
 		</capsuled_items>
 	</item>
 	<item id="15459" name="Package: Halloween Nectar Pumpkin" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Halloween Nectar Pumpkin. -->
+		<!-- Double-click to obtain Halloween Honey Pumpkin. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1051,7 +1051,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="15461" min="1" max="1" chance="100" /> <!-- Halloween Nectar Pumpkin - Event -->
+			<item id="15461" min="1" max="1" chance="100" /> <!-- Halloween Honey Pumpkin - Event -->
 		</capsuled_items>
 	</item>
 	<item id="15460" name="Package: Halloween King Pumpkin" additionalName="Event" type="EtcItem">
@@ -1071,7 +1071,7 @@
 		</capsuled_items>
 	</item>
 	<item id="15461" name="Halloween Nectar Pumpkin" additionalName="Event" type="EtcItem">
-		<!-- Halloween Nectar Pumpkin. With a certain chance, can obtain a Vitality replenishing drink or a feather of blessing and 1 small Halloween pumpkin. -->
+		<!-- Halloween Honey Pumpkin. Double-click to obtain Vitality Replenishing Potion, Feather of Blessing and Small Halloween Pumpkin. -->
 		<set name="icon" val="icon.event_halloween_pumpkin_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1084,7 +1084,7 @@
 		</skills>
 	</item>
 	<item id="15462" name="Halloween King Pumpkin" additionalName="Event" type="EtcItem">
-		<!-- Halloween King Pumpkin. Contains 6 Halloween nectar pumpkins and a Golden Jack O'Lantern Mask (7 day). -->
+		<!-- Large Halloween Pumpkin. Double-click to obtain Halloween Honey Pumpkin (6 pcs.) and Golden Jack O'Lantern Mask (7-day). -->
 		<set name="icon" val="icon.event_halloween_king_pumpkini00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1094,8 +1094,8 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="15461" min="6" max="6" chance="100" /> <!-- Halloween Nectar Pumpkin - Event -->
-			<item id="15464" min="1" max="1" chance="100" /> <!-- Golden Jack O'Lantern Mask - 7-day -->
+			<item id="15461" min="6" max="6" chance="100" /> <!-- Halloween Honey Pumpkin - Event -->
+			<item id="15464" min="1" max="1" chance="100" /> <!-- Golden Pumpkin Head - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="15463" name="Small Halloween Pumpkin" additionalName="Event" type="EtcItem">
@@ -1131,7 +1131,7 @@
 		</skills>
 	</item>
 	<item id="15465" name="Package: Halloween Nectar Pumpkin - Event" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Halloween Nectar Pumpkin. -->
+		<!-- Double-click to obtain Halloween Honey Pumpkin. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1143,7 +1143,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="15461" min="1" max="1" chance="100" /> <!-- Halloween Nectar Pumpkin - Event -->
+			<item id="15461" min="1" max="1" chance="100" /> <!-- Halloween Honey Pumpkin - Event -->
 		</capsuled_items>
 	</item>
 	<item id="15466" name="Package: Halloween King Pumpkin - Event" additionalName="Event" type="EtcItem">
@@ -1163,7 +1163,7 @@
 		</capsuled_items>
 	</item>
 	<item id="15467" name="Halloween Nectar Pumpkin - Event" additionalName="Event" type="EtcItem">
-		<!-- Halloween Nectar Pumpkin. With a certain chance, can obtain a Vitality replenishing drink or a feather of blessing and 1 small Halloween pumpkin. -->
+		<!-- Halloween Honey Pumpkin. Double-click to obtain Vitality Replenishing Potion, Feather of Blessing and Small Halloween Pumpkin. -->
 		<set name="icon" val="icon.event_halloween_pumpkin_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1175,7 +1175,7 @@
 		</skills>
 	</item>
 	<item id="15468" name="Halloween King Pumpkin - Event" additionalName="Event" type="EtcItem">
-		<!-- Halloween King Pumpkin. Contains 6 Halloween nectar pumpkins and a Golden Jack O'Lantern Mask (7 day). -->
+		<!-- Large Halloween Pumpkin. Double-click to obtain Halloween Honey Pumpkin (6 pcs.) and Golden Jack O'Lantern Mask (7-day). -->
 		<set name="icon" val="icon.event_halloween_king_pumpkini00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1185,8 +1185,8 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="15461" min="6" max="6" chance="100" /> <!-- Halloween Nectar Pumpkin - Event -->
-			<item id="15464" min="1" max="1" chance="100" /> <!-- Golden Jack O'Lantern Mask - 7-day -->
+			<item id="15461" min="6" max="6" chance="100" /> <!-- Halloween Honey Pumpkin - Event -->
+			<item id="15464" min="1" max="1" chance="100" /> <!-- Golden Pumpkin Head - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="15469" name="Frozen Core" type="EtcItem">
@@ -1396,7 +1396,7 @@
 		</skills>
 	</item>
 	<item id="15484" name="Archangel Circlet" type="Armor">
-		<!-- High-level Angel Circlet. Uses 2 hair accessory slots. Blessed Escape skill can be used. -->
+		<!-- An archangel's circlet. Equipped in 2 head accessory slots. Enables Blessed Escape. -->
 		<set name="icon" val="icon.accessory_highangel_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1451,7 +1451,7 @@
 		</skills>
 	</item>
 	<item id="15488" name="Maguen Pet Collar" type="EtcItem">
-		<!-- Necklace that summons a Maguen. The summoned Maguen can eat wolf-type feed, and Takes a part of the XP gained by the Pet master. -->
+		<!-- Required for summoning Maguen - a pet that eats Wolf Food and takes a part of XP from its owner. -->
 		<set name="icon" val="icon.etc_marguene_pet_collar_i00" />
 		<set name="default_action" val="SKILL_MAINTAIN" />
 		<set name="etcitem_type" val="PET_COLLAR" />
@@ -1470,7 +1470,7 @@
 		</skills>
 	</item>
 	<item id="15489" name="Elite Maguen Pet Collar" type="EtcItem">
-		<!-- Necklace that summons an Elite Maguen. The summoned Maguen can eat wolf-type feed, and Takes a part of the XP gained by the Pet master. -->
+		<!-- Required for summoning Elite Maguen - a pet that eats Wolf Food and takes a part of XP from its owner. -->
 		<set name="icon" val="icon.etc_elite_marguene_pet_collar_i00" />
 		<set name="default_action" val="SKILL_MAINTAIN" />
 		<set name="etcitem_type" val="PET_COLLAR" />
@@ -1500,7 +1500,7 @@
 		<set name="is_oly_restricted" val="true" />
 	</item>
 	<item id="15491" name="Elite Maguen Collection Box" type="EtcItem">
-		<!-- Its contents are a mystery. The only way to find out what is inside is to open it. -->
+		<!-- Its contents are a mystery.'The only way to find out what is inside is to open it. -->
 		<set name="icon" val="icon.etc_elite_marguene_collection_box_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="CRYSTAL" />
@@ -1511,7 +1511,7 @@
 		<set name="is_oly_restricted" val="true" />
 	</item>
 	<item id="15492" name="Sel Mahum Salmon Porridge" type="EtcItem">
-		<!-- Sel Mahum salmon porridge. Smells better than expected but not by much. -->
+		<!-- Sel Mahum's favorite salmon porridge. Looks very tasty and smells even better. -->
 		<set name="icon" val="icon.etc_salmon_soup_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />

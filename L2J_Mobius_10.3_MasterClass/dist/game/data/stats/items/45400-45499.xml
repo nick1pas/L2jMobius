@@ -189,7 +189,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45419" name="R-grade Red Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +10% for R-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. When enchanting succeeds, enchant value is increased randomly by 1-3. When enchanting fails, the item does not crystallize, but the existing enchant value is decreased by 3. -->
+		<!-- Enchant success rate +10% for R-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 3 instead of crystallizing. Enchant success rate for +1: 70%. Enchant success rate for +2: 20%. Enchant success rate for +3: 10%. -->
 		<set name="icon" val="icon.red_save_r" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -197,7 +197,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45420" name="R95-grade Red Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +10% for R95-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 3 instead of crystallizing. -->
+		<!-- Enchant success rate +10% for R95-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 3 instead of crystallizing. Enchant success rate for +1: 70%. Enchant success rate for +2: 20%. Enchant success rate for +3: 10%. -->
 		<set name="icon" val="icon.red_save_r95" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -205,7 +205,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45421" name="R99-grade Red Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +10% for R99-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 3 instead of crystallizing. -->
+		<!-- Enchant success rate +10% for R99-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 3 instead of crystallizing. Enchant success rate for +1: 70%. Enchant success rate for +2: 20%. Enchant success rate for +3: 10%. -->
 		<set name="icon" val="icon.red_save_r99" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -237,7 +237,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45425" name="Royal R-grade Red Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +10% for R-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. When enchanting succeeds, enchant value is increased randomly by 1-3. When enchanting fails, the item does not crystallize, but the existing enchant value is decreased by 1. -->
+		<!-- Enchant success rate +10% for R-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 1 instead of crystallizing. Enchant success rate for +1: 70%. Enchant success rate for +2: 20%. Enchant success rate for +3: 10%. -->
 		<set name="icon" val="icon.royal_red_save_r" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -245,7 +245,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45426" name="Royal R95-grade Red Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +10% for R95-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 1 instead of crystallizing. -->
+		<!-- Enchant success rate +10% for R95-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 1 instead of crystallizing. Enchant success rate for +1: 70%. Enchant success rate for +2: 20%. Enchant success rate for +3: 10%. -->
 		<set name="icon" val="icon.royal_red_save_r95" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -253,7 +253,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45427" name="Royal R99-grade Red Save Ticket" type="EtcItem">
-		<!-- Enchant success rate +10% for R99-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +3 enchant value. A failed enchant drops the enchant value by 1 instead of crystallizing. -->
+		<!-- Enchant success rate +10% for R99-grade weapons with a normal enchant scroll. Only for items enchanted between +7 and +11. Randomly adds between +1 and +1 enchant value. A failed enchant drops the enchant value by 1 instead of crystallizing. Enchant success rate for +1: 70%. Enchant success rate for +2: 20%. Enchant success rate for +3: 10%. -->
 		<set name="icon" val="icon.royal_red_save_r99" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="ENCHT_ATTR_INC_PROP_ENCHT_WP" />
@@ -321,7 +321,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45433" name="NC Dinos Hat Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory to that of an NC Dinos Cap (30-day). Works for items that use the same number of hair accessory slots. You need an appearance item, which remains intact after its appearance is extracted. An appearance-modified item has no change in characteristics. Double-click to use. Note!. When changed to the appearance of a female-only hair accessory, it cannot be equipped by a male character. -->
+		<!-- Changes a head accessory's appearance to that of NC Dinos Hat (30-day). Works for items that use the same number of head accessory slots. You need an appearance item, which remains intact after its appearance is extracted. No change in stats. Double-click to use. Note! If you extract an appearance of a female-only accessory, you won't be able to equip it on male characters. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair1" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -369,11 +369,11 @@
 		<set name="time" val="43200" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="45433" min="1" max="1" chance="100" /> <!-- NC Dinos Uniform Appearance Stone (30-day) -->
+			<item id="45433" min="1" max="1" chance="100" /> <!-- Appearance Stone: NC Dinos Cap - 30-day -->
 		</capsuled_items>
 	</item>
 	<item id="45437" name="Baium's Ring" additionalName="30-day" type="Armor">
-		<!-- MP +21, Poison Resistance +40%, Poison Atk. Rate +40%, Hold Resistance +30%, Hold Atk. Rate +30%, increases P. Accuracy, Critical Damage for standard attacks, Atk. Spd. and Casting Spd. Equipping two gives the effect of one. 30-day. -->
+		<!-- MP +21, Poison Resistance +40%, Poison Atk. Rate +40%, Accuracy +2, Critical Damage for basic attacks +15%, Hold Resistance +30%, Hold Atk. Rate +30%, Atk. Spd. +4%, Casting Spd. +4%. Effects of two identical rings do not stack. Available for 30 d. -->
 		<set name="icon" val="icon.bm_ring_of_baium" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -406,7 +406,7 @@
 		<set name="time" val="43200" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="45437" min="1" max="1" chance="100" /> <!-- Baium's Ring (30-day) -->
+			<item id="45437" min="1" max="1" chance="100" /> <!-- Baium's Ring - 30-day -->
 		</capsuled_items>
 	</item>
 	<item id="45439" name="High-grade Stone: Enchant R-grade Weapon" additionalName="Event" type="EtcItem">
@@ -421,7 +421,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45440" name="Agathion Bae Kisung" additionalName="1-day" type="Armor">
-		<!-- A bracelet that can summon Agathion Bae Kisung. 1-day. Cannot be used in Olympiad. <Active Skill>. 1. Bae Kisung Agathion Teleport: Assigns a skill to teleport to Town of Aden/ Town of Rune/ Talking Island Village. (Cooldown: 30 min). <Item Skill>. +1. Kisung's Mysterious Power: P./ M. Skill MP Consumption -3%. 2. Kisung's Great Power: Atk. Spd. and Casting Spd. +50. 3. Kisung's Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
+		<!-- A bracelet that can summon Agathion Bae Kisung. 1-day. Cannot be used in Olympiad. <Active Skill> 1. Bae Kisung Agathion Teleport: Assigns a skill to teleport to Town of Aden/ Town of Rune/ Talking Island Village. (Cooldown: 30 min) <Item Skill> +1. Kisung's Mysterious Power: P./ M. Skill MP Consumption -3%. 2. Kisung's Great Power: Atk. Spd. and Casting Spd. +50. 3. Kisung's Balanced Power: STR/ INT/ CON/ DEX/ WIT/ MEN +1. -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -468,7 +468,7 @@
 		</skills>
 	</item>
 	<item id="45444" name="Scroll of Escape: Blazing Swamp" type="EtcItem">
-		<!-- Teleports you to the Blazing Swamp. -->
+		<!-- Teleports to the Blazing Swamp. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
@@ -579,7 +579,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45455" name="Appearance Stone: Zorro Hat" additionalName="90-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Zorro Hat (90-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Vigilante Hat for 90 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -588,7 +588,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45456" name="Appearance Stone: Top Hat" additionalName="90-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Top Hat (90-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Top Hat for 90 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -597,7 +597,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45457" name="Appearance Stone: Napoleon Hat" additionalName="90-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Napoleon Hat (90-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Napoleon Hat for 90 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -606,7 +606,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45458" name="Appearance Stone: Ruthless Tribe Mask" additionalName="90-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Ruthless Tribe Mask (90-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Ruthless Tribe Mask for 90 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -615,7 +615,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45459" name="Appearance Stone: Zorro Hat" additionalName="1-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Zorro Hat (1-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Vigilante Hat for 1 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -624,7 +624,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45460" name="Appearance Stone: Top Hat" additionalName="1-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Top Hat (1-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Top Hat for 1 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -633,7 +633,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45461" name="Appearance Stone: Napoleon Hat" additionalName="1-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Napoleon Hat (1-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Napoleon Hat for 1 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -642,7 +642,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45462" name="Appearance Stone: Ruthless Tribe Mask" additionalName="1-day" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Ruthless Tribe Mask (1-day). Works for item with the same number of slots. No change in stats. Double-click to use. -->
+		<!-- Changes the appearance of a head accessory to that of Ruthless Tribe Mask for 1 d. Works for items that use the same number of head accessory slots. No change in stats. Double-click to use. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -651,7 +651,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="45463" name="Extra Pass: Nightmare Kamaloka" type="EtcItem">
-		<!-- Double-click to reset cooldown to Nightmare Kamaloka. Can only be used when on a cooldown to the instance zone. Can only be used once during the set time period outside of the instance zone. -->
+		<!-- Double-click to reset cooldown to Nightmare Kamaloka. Can only be used when the instance zone is on cooldown. Can only be used once during the set time period outside of the instance zone. -->
 		<set name="icon" val="icon.etc_ticket_red_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -676,7 +676,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="45465" name="Ruthless Tribe Mask" type="Armor">
-		<!-- Mask worn by a ruthless tribe. Uses 1 hair accessory slot. -->
+		<!-- A mask worn by raiders. Equipped in 1 head accessory slot. -->
 		<set name="icon" val="icon.crazy_driving_mask" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />

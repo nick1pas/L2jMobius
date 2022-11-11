@@ -164,7 +164,7 @@
 		</capsuled_items>
 	</item>
 	<item id="22610" name="Luxury Cocktail" type="EtcItem">
-		<!-- Cocktail that contains the flavors of many rare fruits. When consumed, you will feel the effects of Horn Melody Lv. 1, Pipe Organ Melody Lv. 1, Guitar Melody Lv. 1 for 30 min. -->
+		<!-- Cocktail that contains the flavors of many rare fruits. When consumed, you will feel the effects of Musician's Melody Lv. 1, Harp Melody Lv. 1, Lute Melody Lv. 1 for 30 min. -->
 		<set name="icon" val="icon.etc_fruit_cocktail_i00" />
 		<set name="weight" val="5" />
 		<set name="is_tradable" val="false" />
@@ -287,8 +287,8 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="14966" min="2" max="2" chance="100" /> <!-- Majestic Earring of Fortune - 30-day -->
-			<item id="14967" min="1" max="1" chance="100" /> <!-- Majestic Necklace of Fortune - 30-day -->
+			<item id="14966" min="2" max="2" chance="100" /> <!-- Majestic Earring - Fortune - 30-day -->
+			<item id="14967" min="1" max="1" chance="100" /> <!-- Majestic Necklace - Fortune - 30-day -->
 			<item id="14968" min="2" max="2" chance="100" /> <!-- Majestic Ring of Fortune - 30-day -->
 		</capsuled_items>
 	</item>
@@ -305,9 +305,9 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="14970" min="1" max="1" chance="100" /> <!-- Black Ore Necklace of Fortune - 30-day -->
-			<item id="14969" min="2" max="2" chance="100" /> <!-- Black Ore Earring of Fortune - 30-day -->
-			<item id="14971" min="2" max="2" chance="100" /> <!-- Black Ore Ring of Fortune - 30-day -->
+			<item id="14970" min="1" max="1" chance="100" /> <!-- Black Ore Necklace - Fortune - 30-day -->
+			<item id="14969" min="2" max="2" chance="100" /> <!-- Black Ore Earring - Fortune - 30-day -->
+			<item id="14971" min="2" max="2" chance="100" /> <!-- Black Ore Ring - Fortune - 30-day -->
 		</capsuled_items>
 	</item>
 	<item id="22618" name="C-grade Jewelry Set of Fortune" type="EtcItem">
@@ -323,9 +323,9 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="14973" min="1" max="1" chance="100" /> <!-- Sealed Necklace of Fortune - 30-day -->
-			<item id="14972" min="2" max="2" chance="100" /> <!-- Sealed Earring of Fortune - 30-day -->
-			<item id="14974" min="2" max="2" chance="100" /> <!-- Sealed Ring of Fortune - 30-day -->
+			<item id="14973" min="1" max="1" chance="100" /> <!-- Necklace of Seal - Fortune - 30-day -->
+			<item id="14972" min="2" max="2" chance="100" /> <!-- Earring of Seal - Fortune - 30-day -->
+			<item id="14974" min="2" max="2" chance="100" /> <!-- Ring of Seal - Fortune - 30-day -->
 		</capsuled_items>
 	</item>
 	<item id="22619" name="Package: Dynasty Accessories - Fortune (S-grade)" type="EtcItem">
@@ -362,7 +362,7 @@
 		</skills>
 	</item>
 	<item id="22621" name="Vitality Recovery Potion" additionalName="1-hour" type="EtcItem">
-		<!-- Premium user exclusive item. When the Vitality recovery potion is used, for 60 min., Vitality is restored as XP is acquired. -->
+		<!-- Premium user exclusive item When the Vitality recovery potion is used, for 60 min., Vitality is restored as XP is acquired. -->
 		<set name="icon" val="BranchSys2.br_essence_rose_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -379,7 +379,7 @@
 		</skills>
 	</item>
 	<item id="22622" name="Blessed Scroll of Escape" additionalName="1-day" type="EtcItem">
-		<!-- Premium user exclusive item. Magic scroll that teleports you to the nearest village. Weight is 0. -->
+		<!-- Premium user exclusive item Magic scroll that teleports you to the nearest village. Weight is 0. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i01" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -397,7 +397,7 @@
 		</skills>
 	</item>
 	<item id="22623" name="Blessed Scroll of Resurrection" additionalName="1-day" type="EtcItem">
-		<!-- Premium user exclusive item. Magic scroll that resurrects a dead player and completely restores XP. -->
+		<!-- Premium user exclusive item Magic scroll that resurrects a dead player and completely restores XP. -->
 		<set name="icon" val="icon.etc_scroll_of_resurrection_i01" />
 		<set name="weight" val="10" />
 		<set name="is_depositable" val="false" />
@@ -416,7 +416,7 @@
 		</skills>
 	</item>
 	<item id="22624" name="Elixir of Life" additionalName="1-day" type="EtcItem">
-		<!-- Premium user exclusive item. Restores HP. Can only be used at level 85 or above upon themselves. Cooldown is 2 min. -->
+		<!-- Premium user exclusive item Restores HP. Can only be used at level 85 or above upon themselves. Cooldown is 2 min. -->
 		<set name="icon" val="icon.etc_super_potion_i02" />
 		<set name="weight" val="5" />
 		<set name="is_depositable" val="false" />
@@ -439,7 +439,7 @@
 		</skills>
 	</item>
 	<item id="22625" name="Elixir of Mind" additionalName="1-day" type="EtcItem">
-		<!-- Premium user exclusive item. Restores MP. Can only be used at level 85 or above upon themselves. Cooldown is 2 min. -->
+		<!-- Premium user exclusive item Restores MP. Can only be used at level 85 or above upon themselves. Cooldown is 2 min. -->
 		<set name="icon" val="icon.etc_super_potion_i00" />
 		<set name="weight" val="5" />
 		<set name="is_depositable" val="false" />
@@ -462,7 +462,7 @@
 		</skills>
 	</item>
 	<item id="22626" name="Elixir of CP" additionalName="1-day" type="EtcItem">
-		<!-- Premium user exclusive item. Restores CP. Can only be used at level 85 or above upon themselves. Cooldown is 2 min. -->
+		<!-- Premium user exclusive item Restores CP. Can only be used at level 85 or above upon themselves. Cooldown is 2 min. -->
 		<set name="icon" val="icon.etc_super_potion_i01" />
 		<set name="weight" val="5" />
 		<set name="is_depositable" val="false" />
@@ -485,7 +485,7 @@
 		</skills>
 	</item>
 	<item id="22627" name="Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- For PA only. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For PA only For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.scroll_of_enchant_weapon_i06" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
@@ -503,7 +503,7 @@
 		</skills>
 	</item>
 	<item id="22628" name="Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- PA only. For R-grade armor and accessories. P. Def. +2. When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +30 or higher. -->
+		<!-- PA only For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.scroll_of_enchant_armor_i06" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
@@ -521,7 +521,7 @@
 		</skills>
 	</item>
 	<item id="22629" name="High-grade R-grade Life Stone" additionalName="Not Available" type="EtcItem">
-		<!-- Premium user exclusive item. High-level mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are level 85 or above. -->
+		<!-- Premium user exclusive item High-level mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are level 85 or above. -->
 		<set name="icon" val="icon.r_mineral_rare_i00" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -533,7 +533,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="22630" name="Top-grade R-grade Life Stone" additionalName="Not Available" type="EtcItem">
-		<!-- Premium user exclusive item. Top-grade mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are level 85 or above. -->
+		<!-- Premium user exclusive item Top-grade mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are level 85 or above. -->
 		<set name="icon" val="icon.r_mineral_unique_i00" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -545,7 +545,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="22631" name="High-grade R95-grade Life Stone" additionalName="Not Available" type="EtcItem">
-		<!-- Premium user exclusive item. High-level mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 95. -->
+		<!-- Premium user exclusive item High-level mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 95. -->
 		<set name="icon" val="icon.r95_mineral_rare_i00" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -557,7 +557,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="22632" name="Top-grade R95-grade Life Stone" additionalName="Not Available" type="EtcItem">
-		<!-- Premium user exclusive item. Top-grade mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 95. -->
+		<!-- Premium user exclusive item Top-grade mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 95. -->
 		<set name="icon" val="icon.r95_mineral_unique_i00" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -569,7 +569,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="22633" name="High-grade R99-grade Life Stone" additionalName="Not Available" type="EtcItem">
-		<!-- Premium user exclusive item. High-level mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 99. -->
+		<!-- Premium user exclusive item High-level mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 99. -->
 		<set name="icon" val="icon.r99_mineral_rare_i00" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -581,7 +581,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="22634" name="Top-grade R99-grade Life Stone" additionalName="Not Available" type="EtcItem">
-		<!-- Premium user exclusive item. Top-grade mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 99. -->
+		<!-- Premium user exclusive item Top-grade mineral that has been petrified inside a creature through physical or magical damage. Can be used by characters who are above level 99. -->
 		<set name="icon" val="icon.r99_mineral_unique_i00" />
 		<set name="weight" val="2" />
 		<set name="is_tradable" val="false" />
@@ -593,7 +593,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="22635" name="Fire Stone" type="EtcItem">
-		<!-- Premium user exclusive item. Fire Atk. +5 when bestowed on a weapon. Water Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of Elemental enhancement can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Fire Atk. +5 when bestowed on a weapon. Water Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of Elemental enhancement can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_fire_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR" />
@@ -610,7 +610,7 @@
 		</skills>
 	</item>
 	<item id="22636" name="Water Stone" type="EtcItem">
-		<!-- Premium user exclusive item. Water Atk. +5 when bestowed on a weapon. Fire Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Water Atk. +5 when bestowed on a weapon. Fire Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_water_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR" />
@@ -627,7 +627,7 @@
 		</skills>
 	</item>
 	<item id="22637" name="Earth Stone" type="EtcItem">
-		<!-- Premium user exclusive item. Earth Atk. +5 when bestowed on a weapon. Wind Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Earth Atk. +5 when bestowed on a weapon. Wind Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_earth_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR" />
@@ -644,7 +644,7 @@
 		</skills>
 	</item>
 	<item id="22638" name="Wind Stone" type="EtcItem">
-		<!-- Premium user exclusive item. Wind Atk. +5 when bestowed on a weapon. Earth Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Wind Atk. +5 when bestowed on a weapon. Earth Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_wind_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR" />
@@ -661,7 +661,7 @@
 		</skills>
 	</item>
 	<item id="22639" name="Dark Stone" type="EtcItem">
-		<!-- Premium user exclusive item. Dark Atk. +5 when bestowed on a weapon. Holy Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Dark Atk. +5 when bestowed on a weapon. Holy Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_unholy_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR" />
@@ -678,7 +678,7 @@
 		</skills>
 	</item>
 	<item id="22640" name="Holy Stone" type="EtcItem">
-		<!-- Premium user exclusive item. Holy Atk. +5 when bestowed on a weapon. Dark Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributest can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Holy Atk. +5 when bestowed on a weapon. Dark Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. Additional attributes cannot be bestowed. Additionally, a maximum of three types of attributest can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_holy_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR" />
@@ -695,7 +695,7 @@
 		</skills>
 	</item>
 	<item id="22641" name="Fire Crystal" type="EtcItem">
-		<!-- Premium user exclusive item. Fire Atk. +5 when bestowed on a weapon.Water Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Fire Atk. +5 when bestowed on a weapon.Water Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_fire_crystal_i00" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
@@ -713,7 +713,7 @@
 		</skills>
 	</item>
 	<item id="22642" name="Water Crystal" type="EtcItem">
-		<!-- Premium user exclusive item. Water Atk. +5 when bestowed on a weapon. Fire Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Water Atk. +5 when bestowed on a weapon. Fire Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_water_crystal_i00" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
@@ -731,7 +731,7 @@
 		</skills>
 	</item>
 	<item id="22643" name="Earth Crystal" type="EtcItem">
-		<!-- Premium user exclusive item. Earth Atk. +5 when bestowed on a weapon. Wind Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Earth Atk. +5 when bestowed on a weapon. Wind Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_earth_crystal_i00" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
@@ -749,7 +749,7 @@
 		</skills>
 	</item>
 	<item id="22644" name="Wind Crystal" type="EtcItem">
-		<!-- Premium user exclusive item. Wind Atk. +5 when bestowed on a weapon. Earth Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Wind Atk. +5 when bestowed on a weapon. Earth Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_wind_crystal_i00" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
@@ -767,7 +767,7 @@
 		</skills>
 	</item>
 	<item id="22645" name="Dark Crystal" type="EtcItem">
-		<!-- Premium user exclusive item. Dark Atk. +5 when bestowed on a weapon. Holy Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Dark Atk. +5 when bestowed on a weapon. Holy Resistance +6 when bestowed on armor. Elemental attributes can be bestowed from levels 1-6. The crystal's power disappears when additional attributes are bestowed. Additionally, a maximum of three types of attributes can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_unholy_crystal_i00" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
@@ -785,7 +785,7 @@
 		</skills>
 	</item>
 	<item id="22646" name="Holy Crystal" type="EtcItem">
-		<!-- Premium user exclusive item. Holy attack increases by 5 when bestowed on a weapon. Holy attack and dark defense increases by 6 when bestowed on armor. Elemental attributes can be bestowed from levels 1- 6. The crystal's power disappears when additional Elemental attributes are bestowed. Additionally, a maximum of three types of Elemental enhancement can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
+		<!-- Premium user exclusive item Holy attack increases by 5 when bestowed on a weapon. Holy attack and dark defense increases by 6 when bestowed on armor. Elemental attributes can be bestowed from levels 1- 6. The crystal's power disappears when additional Elemental attributes are bestowed. Additionally, a maximum of three types of Elemental enhancement can be bestowed on armor, and opposite attributes cannot be bestowed together. -->
 		<set name="icon" val="icon.etc_holy_crystal_i00" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
@@ -803,7 +803,7 @@
 		</skills>
 	</item>
 	<item id="22647" name="Blessed Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- For PA only. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For PA only For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.blessed_scroll_of_enchant_weapon_i06" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
@@ -821,7 +821,7 @@
 		</skills>
 	</item>
 	<item id="22648" name="Blessed Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- PA only. For R-grade armor and accessories. P. Def. +2. When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +30 or higher. -->
+		<!-- PA only For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.blessed_scroll_of_enchant_armor_i06" />
 		<set name="weight" val="10" />
 		<set name="is_tradable" val="false" />
@@ -855,7 +855,7 @@
 		</skills>
 	</item>
 	<item id="22650" name="Emerald Weapon: One-handed Sword" type="Weapon">
-		<!-- Emerald weapon. One-handed sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: one-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -882,7 +882,7 @@
 		</stats>
 	</item>
 	<item id="22651" name="Emerald Weapon: Dagger" type="Weapon">
-		<!-- Emerald Weapon. Dagger form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: dagger. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -910,7 +910,7 @@
 		</stats>
 	</item>
 	<item id="22652" name="Emerald Weapon: Two-handed Sword" type="Weapon">
-		<!-- Emerald weapon. Two-handed sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: two-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_twohand_sword" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -937,7 +937,7 @@
 		</stats>
 	</item>
 	<item id="22653" name="Emerald Weapon: Fist Weapon" type="Weapon">
-		<!-- Emerald Weapon. Fist weapon form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: fist weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dualfist" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -965,7 +965,7 @@
 		</stats>
 	</item>
 	<item id="22654" name="Emerald Weapon: Spear" type="Weapon">
-		<!-- Emerald Weapon. Spear form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: spear. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_pole" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -996,7 +996,7 @@
 		</stats>
 	</item>
 	<item id="22655" name="Emerald Weapon: Bow" type="Weapon">
-		<!-- Emerald Weapon. Bow form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: bow. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_bow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1026,7 +1026,7 @@
 		</stats>
 	</item>
 	<item id="22656" name="Emerald Weapon: Crossbow" type="Weapon">
-		<!-- Emerald Weapon. Crossbow form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: crossbow. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_twohand_crossbow" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1055,7 +1055,7 @@
 		</stats>
 	</item>
 	<item id="22657" name="Emerald Weapon: One-handed Blunt Weapon" type="Weapon">
-		<!-- Emerald weapon. One-handed blunt weapon type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: one-handed blunt weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1083,7 +1083,7 @@
 		</stats>
 	</item>
 	<item id="22658" name="Emerald Weapon: Two-handed Blunt Weapon" type="Weapon">
-		<!-- Emerald weapon. Two-handed blunt weapon type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: two-handed blunt weapon. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1112,7 +1112,7 @@
 		</stats>
 	</item>
 	<item id="22659" name="Emerald Weapon: One-handed Staff" type="Weapon">
-		<!-- Emerald weapon. One-handed staff type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: one-handed staff. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_magic_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1140,7 +1140,7 @@
 		</stats>
 	</item>
 	<item id="22660" name="Emerald Weapon: Two-handed Staff" type="Weapon">
-		<!-- Emerald weapon. Two-handed staff type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An emerald weapon. Type: two-handed staff. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_magic_twohand_blunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1169,7 +1169,7 @@
 		</stats>
 	</item>
 	<item id="22661" name="Emerald Weapon: Dual Swords" type="Weapon">
-		<!-- Emerald weapon. Dual Sword type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: dual swords. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dual" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1196,7 +1196,7 @@
 		</stats>
 	</item>
 	<item id="22662" name="Emerald Weapon: Dual Dagger" type="Weapon">
-		<!-- Emerald weapon. Dual dagger type. Base appearance of Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: dual daggers. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dualdagger" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1224,7 +1224,7 @@
 		</stats>
 	</item>
 	<item id="22663" name="Emerald Weapon: Dual Blunt Weapons" type="Weapon">
-		<!-- Emerald Weapon. Dual blunt form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: dual blunt weapons. An item for changing a weapon's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_dualblunt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1253,7 +1253,7 @@
 		</stats>
 	</item>
 	<item id="22664" name="Emerald Weapon: Shield" type="Armor">
-		<!-- Emerald Weapon. Shield form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An emerald shield. Type: shield. An item for changing a shield's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_shield" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lhand" />
@@ -1275,7 +1275,7 @@
 		</stats>
 	</item>
 	<item id="22665" name="Emerald Weapon: Sigil" type="Armor">
-		<!-- Emerald Weapon. Sigil form. Basic Emerald Weapon Appearance Stone. -->
+		<!-- An Emerald weapon. Type: sigil. An item for changing a sigil's appearance. -->
 		<set name="icon" val="BranchSys3.Icon.g_beam_sigil" />
 		<set name="armor_type" val="SIGIL" />
 		<set name="default_action" val="EQUIP" />
@@ -1547,7 +1547,7 @@
 		</skills>
 	</item>
 	<item id="22680" name="Emerald Weapon Appearance Stone: Shield" type="EtcItem">
-		<!-- Changes the appearance of a shield to that of an Emerald weapon. -->
+		<!-- Changes the appearance of a shield to that of an Emerald shield. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_shield" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1565,7 +1565,7 @@
 		</skills>
 	</item>
 	<item id="22681" name="Emerald Weapon Appearance Stone: Sigil" type="EtcItem">
-		<!-- Changes the appearance of a sigil to that of an Emerald weapon. -->
+		<!-- Changes the appearance of a sigil to that of an Emerald sigil. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_sigil" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1799,7 +1799,7 @@
 		</skills>
 	</item>
 	<item id="22694" name="R-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of R-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of R-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_r" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1817,7 +1817,7 @@
 		</skills>
 	</item>
 	<item id="22695" name="S-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the appearance of modified S-grade armor. No hair accessories. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of S-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_s" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1835,7 +1835,7 @@
 		</skills>
 	</item>
 	<item id="22696" name="A-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of A-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of A-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_a" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1853,7 +1853,7 @@
 		</skills>
 	</item>
 	<item id="22697" name="B-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of R-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of R-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_b" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1871,7 +1871,7 @@
 		</skills>
 	</item>
 	<item id="22698" name="C-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of C-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of C-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_c" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1889,7 +1889,7 @@
 		</skills>
 	</item>
 	<item id="22699" name="D-grade Armor Restoration Stone" type="EtcItem">
-		<!-- Restores the original appearance of D-grade armor (no hair accessories) whose appearances have been modified. Double-click to use. -->
+		<!-- Double-click to restore the default appearance of D-grade armor. -->
 		<set name="icon" val="BranchSys3.icon.g_wp_processing_stone_d" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />

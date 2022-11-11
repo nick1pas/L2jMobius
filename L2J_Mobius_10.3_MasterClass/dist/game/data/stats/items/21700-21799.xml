@@ -167,7 +167,7 @@
 		</skills>
 	</item>
 	<item id="21710" name="Vitality Replenishing Potion" additionalName="Event" type="EtcItem">
-		<!-- Replenishes Vitality upon use. Cooldown is 60 min. Vitality item with limited usage. -->
+		<!-- Recharges a certain amount of Vitality when used. Cooldown: 60 min. Limited on use. -->
 		<set name="icon" val="icon.etc_hot_spring_mineral_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -214,7 +214,7 @@
 		</skills>
 	</item>
 	<item id="21712" name="Blessed Zaken's Earring" type="Armor">
-		<!-- MP +37, Infection Resistance/ Atk. Rate +30%, Confusion Resistance/ Atk. Rate +30%, Received Healing +15%, Dark Resistance +15. Grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. -->
+		<!-- MP +37, Infection Atk. Rate and Resistance +30%, Confusion Atk. Rate and Resistance +30%, Received Healing +15%, Dark Resistance +15. Grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Zaken's Earring, only the effect of the Blessed item is applied. -->
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -511,7 +511,7 @@
 		</skills>
 	</item>
 	<item id="21727" name="Agathion Zinyanzi (3-day)" additionalName="3-day" type="Armor">
-		<!-- A bracelet for summoning Agathion Zinyanzi (3-day). Its special skill instantly recovers HP/ MP/ CP and grants invincibility for 5 sec. (Can be used only when HP is lower than 30%.). Cooldown: 12 h. -->
+		<!-- A bracelet for summoning Agathion Zinyanzi (3-day). Its special skill instantly recovers HP/ MP/ CP and grants invincibility for 5 sec. (Can be used only when HP is lower than 30%.) Cooldown: 12 h. -->
 		<set name="icon" val="BranchSys2.Icon.br_aga_jinjiayan_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -532,7 +532,7 @@
 		</skills>
 	</item>
 	<item id="21728" name="Agathion Zinyanzi (7-day)" additionalName="7-day" type="Armor">
-		<!-- A bracelet for summoning Agathion Zinyanzi (7-day). Its special skill instantly recovers HP/ MP/ CP and grants invincibility for 5 sec. (Can be used only when HP is lower than 30%.). Cooldown: 12 h. -->
+		<!-- A bracelet for summoning Agathion Zinyanzi (7-day). Its special skill instantly recovers HP/ MP/ CP and grants invincibility for 5 sec. (Can be used only when HP is lower than 30%.) Cooldown: 12 h. -->
 		<set name="icon" val="BranchSys2.Icon.br_aga_jinjiayan_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -572,7 +572,7 @@
 		</skills>
 	</item>
 	<item id="21730" name="Letter Collector's Gift" additionalName="Event" type="EtcItem">
-		<!-- Letter Collector's Gift. Upon use, for 2 h., Atk. Spd. +15%, Casting Spd. +15%, Speed +20, and changes the appearance of the equipped weapon and armor to look like items of memory. Cooldown: 60 min. -->
+		<!-- Letter Collector's Gift Upon use, for 2 h., Atk. Spd. +15%, Casting Spd. +15%, Speed +20, and changes the appearance of the equipped weapon and armor to look like items of memory. Cooldown: 60 min. -->
 		<set name="icon" val="icon.shield_bread_i01" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="5" />
@@ -1669,7 +1669,7 @@
 		</stats>
 	</item>
 	<item id="21792" name="Package: Major Arcana Robe Set - Fortune (S-grade)" additionalName="90-day" type="EtcItem">
-		<!-- The Major Arcana Robe of Friendship set is provided when used. It becomes destroyed after 90 days if it is not used. -->
+		<!-- Double-click to obtain Major Arcana Robe Set - Fortune. It will disappear in 90 d. if not opened. -->
 		<set name="icon" val="icon.etc_equip_item_box_i02" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
@@ -1798,7 +1798,7 @@
 		</stats>
 	</item>
 	<item id="21799" name="Package: Dynasty Breastplate Set - Fortune (S-grade)" additionalName="90-day" type="EtcItem">
-		<!-- When used, you acquire a Dynasty Breastplate Armor of Fortune Set. Expires after 90 days if not used. -->
+		<!-- Double-click to obtain Dynasty Heavy Armor Set - Fortune. It will disappear in 90 d. if not opened. -->
 		<set name="icon" val="icon.etc_equip_item_box_i02" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />

@@ -11,7 +11,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91601" name="Dimensional Talisman Lv. 10" type="Armor">
-		<!-- P./ M. Def. +100, P./ M. Evasion. +5, Max HP/ MP/ CP +2000, Speed +10, Atk. Spd. +50, Casting Spd. +100, acquired XP/ SP +30%. Enables Dimensional Border Power Lv. 9 (increases attack power with a certain chance). Enables Dimensional Guard Lv. 10 (temporarily increases Vital Point Attack Resistance and decreases received P. Critical Damage/ received M. Skill Critical Damage). Enables Dimensional Barrier (for 15 sec. defends from 10 attacks). The effect doesn't stack with that of Talisman of Border, the Dimensional Talisman effect takes precedence. -->
+		<!-- P./ M. Def. +100, P./ M. Evasion. +5, Max HP/ MP/ CP +2000, Speed +10, Atk. Spd. +50, Casting Spd. +100, acquired XP/ SP +30%. Enables Dimensional Border Power Lv. 9 (increases attack power with a certain chance). Enables Dimensional Guard Lv. 10 (temporarily increases Vital Point Attack Resistance and decreases received P. Critical Damage/ received M. Skill Critical Damage, increases M. Damage Resistance). Enables Dimensional Warp (for 15 sec. defends from 10 attacks). The effect doesn't stack with that of Talisman of Border, the Dimensional Talisman effect takes precedence. -->
 		<set name="icon" val="icon.bm_dimension_tallisman" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -21,7 +21,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91602" name="Sealed Doll of Border - Frintezza" additionalName="30-day" type="EtcItem">
-		<!-- Double-click to obtain Doll of Border - Frintezza (30-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -31,11 +31,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="91603" min="1" max="1" chance="100" /> <!-- Doll of Border - Frintezza (30-day) -->
+			<item id="91603" min="1" max="1" chance="100" /> <!-- Doll of Border - Frintezza - 30-day -->
 		</capsuled_items>
 	</item>
 	<item id="91603" name="Doll of Border - Frintezza" additionalName="30-day" type="EtcItem">
-		<!-- <Frintezza Doll's Sorcery Lv. 1>. STR/ INT +1. DEX/ WIT +1. CON/ MEN +1. Stun Atk. Rate +10%. Paralysis Atk. Rate +10%. For 30 days. Boosts parameters when in inventory. -->
+		<!-- <Frintezza Doll's Sorcery Lv. 1> STR/ INT +1 Skill Power +1% Atk. Spd. +20 Casting Spd. +20 Speed +1 Available for 30 d. Boosts parameters when in inventory. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
@@ -50,7 +50,7 @@
 		</skills>
 	</item>
 	<item id="91604" name="Frintezza Doll Lv. 2" type="EtcItem">
-		<!-- <Frintezza Doll's Sorcery Lv. 2>. STR/ INT +1. DEX/ WIT +1. CON/ MEN +1. Skill Power +2%. Atk. Spd. +50. Casting Spd. +50. Speed +2. Boosts parameters when in inventory. Can be upgraded through compounding. -->
+		<!-- <Frintezza Doll's Sorcery Lv. 2> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Skill Power +2% Atk. Spd. +50 Casting Spd. +50 Speed +2 Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
@@ -63,7 +63,7 @@
 		</skills>
 	</item>
 	<item id="91605" name="Frintezza Doll Lv. 3" type="EtcItem">
-		<!-- <Frintezza Doll's Sorcery Lv. 3>. STR/ INT +2. DEX/ WIT +2. CON/ MEN +2. Skill Power +5%. Atk. Spd. +100. Casting Spd. +100. Speed +5. Boosts parameters when in inventory. -->
+		<!-- <Frintezza Doll's Sorcery Lv. 3> STR/ INT +2 DEX/ WIT +2 CON/ MEN +2 Skill Power +5% Atk. Spd. +100 Casting Spd. +100 Speed +5 Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_doll_frintessa_30d" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
@@ -76,7 +76,7 @@
 		</skills>
 	</item>
 	<item id="91606" name="High-grade Agathion Virgo (Fire Dragon)" type="Armor">
-		<!-- Agathion Virgo that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases M. Def. and Silence/ Fear Atk. Rate. When enchanted to +6 and higher, activates the dragon power. Can be exchanged to High Quality Agathion Virgo (Earth Dragon) by Pona. -->
+		<!-- Agathion Virgo that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases M. Def. and Silence/ Fear Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Virgo (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -87,7 +87,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="91607" name="High-grade Agathion Capricorn (Fire Dragon)" type="Armor">
-		<!-- Agathion Capricorn that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases M. Skill Critical Rate. Decreases M. Skill/ Song/ Dance Cooldown. When enchanted to +6 and higher, activates the dragon power. Can be exchanged to High Quality Agathion Capricorn (Earth Dragon) by Pona. -->
+		<!-- Agathion Capricorn that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases M. Skill Critical Rate. Decreases M. Skill/ Song/ Dance Cooldown. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Capricorn (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -102,7 +102,7 @@
 		</skills>
 	</item>
 	<item id="91608" name="High-grade Agathion Libra (Fire Dragon)" type="Armor">
-		<!-- Agathion Libra that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases Casting Spd. Decreases MP Consumption for M. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Libra (Earth Dragon) by Pona. -->
+		<!-- Agathion Libra that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases Casting Spd. Decreases M. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Libra (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -117,7 +117,7 @@
 		</skills>
 	</item>
 	<item id="91609" name="High-grade Agathion Taurus (Fire Dragon)" type="Armor">
-		<!-- Agathion Taurus that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases P. Def. and Stun Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Taurus (Earth Dragon) by Pona. -->
+		<!-- Agathion Taurus that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases P. Def. and Shock Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Taurus (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -132,7 +132,7 @@
 		</skills>
 	</item>
 	<item id="91610" name="High-grade Agathion Leo (Fire Dragon)" type="Armor">
-		<!-- Agathion Leo that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases P. Atk. and Paralysis Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Leo (Earth Dragon) by Pona. -->
+		<!-- Agathion Leo that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases P. Atk. and Paralysis Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Leo (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -147,7 +147,7 @@
 		</skills>
 	</item>
 	<item id="91611" name="High-grade Agathion Scorpio (Fire Dragon)" type="Armor">
-		<!-- Agathion Scorpio that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases P. Critical Rate. Decreases P. Skill/ Song/ Dance Cooldown. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Scorpio (Earth Dragon) by Pona. -->
+		<!-- Agathion Scorpio that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases P. Critical Rate. Decreases P. Skill/ Song/ Dance Cooldown. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Scorpio (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -162,7 +162,7 @@
 		</skills>
 	</item>
 	<item id="91612" name="High-grade Agathion Aquarius (Fire Dragon)" type="Armor">
-		<!-- Agathion Aquarius that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases M. Atk. and Hold/ Sleep Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Aquarius (Earth Dragon) by Pona. -->
+		<!-- Agathion Aquarius that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases M. Atk. and Hold/ Sleep Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Aquarius (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -177,7 +177,7 @@
 		</skills>
 	</item>
 	<item id="91613" name="High-grade Agathion Sagittarius (Fire Dragon)" type="Armor">
-		<!-- Agathion Sagittarius that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases Atk. Spd. Decreases P. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Sagittarius (Earth Dragon) by Pona. -->
+		<!-- Agathion Sagittarius that contains the Fire Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases Atk. Spd. Decreases P. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Sagittarius (Earth Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -192,7 +192,7 @@
 		</skills>
 	</item>
 	<item id="91614" name="High-grade Agathion Virgo (Earth Dragon)" type="Armor">
-		<!-- Agathion Virgo that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases M. Def. and Silence/ Fear Atk. Rate. When enchanted to +6 and higher, activates the dragon power. Can be exchanged to High Quality Agathion Virgo (Fire Dragon) by Pona. -->
+		<!-- Agathion Virgo that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases M. Def. and Silence/ Fear Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Virgo (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_virgo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -207,7 +207,7 @@
 		</skills>
 	</item>
 	<item id="91615" name="High-grade Agathion Capricorn (Earth Dragon)" type="Armor">
-		<!-- Agathion Capricorn that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases M. Skill Critical Rate. Decreases M. Skill/ Song/ Dance Cooldown. When enchanted to +6 and higher, activates the dragon power. Can be exchanged to High Quality Agathion Capricorn (Fire Dragon) by Pona. -->
+		<!-- Agathion Capricorn that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases M. Skill Critical Rate. Decreases M. Skill/ Song/ Dance Cooldown. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Capricorn (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_capr_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -222,7 +222,7 @@
 		</skills>
 	</item>
 	<item id="91616" name="High-grade Agathion Libra (Earth Dragon)" type="Armor">
-		<!-- Agathion Libra that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases Casting Spd. Decreases MP Consumption for M. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Libra (Fire Dragon) by Pona. -->
+		<!-- Agathion Libra that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases Casting Spd. Decreases M. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Libra (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_lib_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -237,7 +237,7 @@
 		</skills>
 	</item>
 	<item id="91617" name="High-grade Agathion Taurus (Earth Dragon)" type="Armor">
-		<!-- Agathion Taurus that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases P. Def. and Stun Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Taurus (Fire Dragon) by Pona. -->
+		<!-- Agathion Taurus that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases P. Def. and Shock Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Taurus (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_tau_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -252,7 +252,7 @@
 		</skills>
 	</item>
 	<item id="91618" name="High-grade Agathion Leo (Earth Dragon)" type="Armor">
-		<!-- Agathion Leo that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases P. Atk. and Paralysis Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Leo (Fire Dragon) by Pona. -->
+		<!-- Agathion Leo that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases P. Atk. and Paralysis Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Leo (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_leo_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -267,7 +267,7 @@
 		</skills>
 	</item>
 	<item id="91619" name="High-grade Agathion Scorpio (Earth Dragon)" type="Armor">
-		<!-- Agathion Scorpio that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases P. Critical Rate. Decreases P. Skill/ Song/ Dance Cooldown. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Scorpio (Fire Dragon) by Pona. -->
+		<!-- Agathion Scorpio that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases P. Critical Rate. Decreases P. Skill/ Song/ Dance Cooldown. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Scorpio (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_sco_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -282,7 +282,7 @@
 		</skills>
 	</item>
 	<item id="91620" name="High-grade Agathion Aquarius (Earth Dragon)" type="Armor">
-		<!-- Agathion Aquarius that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases M. Atk. and Hold/ Sleep Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Aquarius (Fire Dragon) by Pona. -->
+		<!-- Agathion Aquarius that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases M. Atk. and Hold/ Sleep Atk. Rate. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Aquarius (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_aqu_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -297,7 +297,7 @@
 		</skills>
 	</item>
 	<item id="91621" name="High-grade Agathion Sagittarius (Earth Dragon)" type="Armor">
-		<!-- Agathion Sagittarius that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases Atk. Spd. Decreases P. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High Quality Agathion Sagittarius (Fire Dragon) by Pona. -->
+		<!-- Agathion Sagittarius that contains the Earth Dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases Atk. Spd. Decreases P. Skill/ Song/ Dance MP Consumption. Starting from +6, activates the dragon power. Can be exchanged to High-grade Agathion Sagittarius (Fire Dragon) by Pona. -->
 		<set name="icon" val="icon.agathion_sag_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -312,7 +312,7 @@
 		</skills>
 	</item>
 	<item id="91622" name="High-grade Agathion Gemini" type="Armor">
-		<!-- Agathion Gemini that contains the dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills>. Increases the Sayha's Grace effect and Max HP/ MP. Starting from +6, increases Max CP. -->
+		<!-- Agathion Gemini that contains the dragon's spirit. Equipping it in the main slot summons the agathion. Enables its secondary skills. <Secondary skills> Increases the Sayha's Grace effect and Max HP/ MP. Starting from +6, increases Max CP. -->
 		<set name="icon" val="icon.agathion_gem_star_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -327,7 +327,7 @@
 		</skills>
 	</item>
 	<item id="91623" name="Stable Scroll: Enchant High-grade Agathion" type="EtcItem">
-		<!-- Only for High Quality Zodiac agathions. Increases M. Def. The maximum enchant value is +10. Starting from +1, the agathion's secondary skills are enhanced with each enchant value. In case of failure the item is not destroyed, and its enchant value remains the same. -->
+		<!-- Only for High-grade Zodiac agathions. Increases M. Def. The maximum enchant value is +10. Starting from +1, the agathion's secondary skills are enhanced with each enchant value. In case of failure the item is not destroyed, and its enchant value remains the same. <font color=ff6666>Cannot be used for mass enchanting.</font> -->
 		<set name="icon" val="icon.guard_giantscrl_of_ench_ag" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -341,7 +341,7 @@
 		</skills>
 	</item>
 	<item id="91624" name="Agathion Gift Box" type="EtcItem">
-		<!-- Double-click to obtain various S-grade items, special items and materials, materials for Agathion enchantment. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_gold_relic_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -354,7 +354,7 @@
 		</skills>
 	</item>
 	<item id="91625" name="S-grade Weapon Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -363,7 +363,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91626" name="S-grade Armor Pack" type="EtcItem">
-		<!-- Double-click to obtain one of various items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -372,7 +372,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91627" name="+10 A-grade Armor Pack" type="EtcItem">
-		<!-- Double-click to obtain an A-grade armor enchanted to +10. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -385,7 +385,7 @@
 		</skills>
 	</item>
 	<item id="91628" name="+10 B-grade Armor Pack" type="EtcItem">
-		<!-- Double-click to obtain a +10 B-grade armor. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -394,7 +394,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91629" name="+10 A-grade Accessory Pack" type="EtcItem">
-		<!-- Double-click to obtain A-grade accessory enchanted to +10. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i02" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -403,7 +403,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91630" name="+10 B-grade Accessory Pack" type="EtcItem">
-		<!-- Double-click to obtain a +10 B-grade accessory. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i05" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -436,7 +436,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91634" name="Agathion's Soulstone" type="EtcItem">
-		<!-- Required for upgrading Agathion Gemini to High Quality Agathion. Take it to Pona in Giran. -->
+		<!-- Required for upgrading Agathion Gemini to High-grade Agathion. Take it to Pona in Giran. -->
 		<set name="icon" val="icon.r99_soul_stone_i05" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
@@ -444,7 +444,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91635" name="Master Fisherman's Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i08" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -462,7 +462,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91637" name="Anniversary Talisman" additionalName="Sealed" type="Armor">
-		<!-- Acquired XP/ SP (hunting) +15%. Allows use of the transformation skill. -->
+		<!-- Acquired XP/ SP while hunting +15%. Enables the transformation skill. -->
 		<set name="icon" val="icon.ev_L2_soul_ore" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -482,7 +482,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="91639" name="Rare Accessory Pack Lv. 3" additionalName="30-day" type="EtcItem">
-		<!-- Double-click to obtain Queen Ant's Ring Lv. 3 (30-day), Orfen's Earring Lv. 3 (30-day), Ring of Core Lv. 3 (30-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -494,7 +494,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="91640" name="Refined Romantic Chapeau: Gold" additionalName="Sealed" type="Armor">
-		<!-- Uses 2 hair accessory slots. <Active skills>. 1. Refined Romantic Gold Chapeau Teleport: Teleports to the nearest town. Cooldown: 20 min. 2. Mysterious Aura: Makes your head bigger for 10 min. Cooldown: 20 min. -->
+		<!-- Refined Romantic Chapeau: Gold <Active skills> 1. Refined Romantic Gold Chapeau Teleport: Teleports to the nearest town. Cooldown: 20 min. 2. Mysterious Aura: Makes your head bigger for 10 min. Cooldown: 20 min. <font color=eeaa22>Equipped in the left head accessory slot.</font> -->
 		<set name="icon" val="icon.bm_romantic_chaperon_gold" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -506,7 +506,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="91641" name="Sayha's Blessing" additionalName="Sealed" type="EtcItem">
-		<!-- Sayha's Grace points +35,000, Magic Lamp points +100,000, craft points +6500. -->
+		<!-- Sayha's Grace points +35,000. -->
 		<set name="icon" val="icon.etc_wind_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -522,7 +522,7 @@
 		</skills>
 	</item>
 	<item id="91642" name="Anniversary Gift Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Manuscript Chest, Dragon Dye Box, Spirit Transformation Scroll - Singer, Transformation Scroll: White Assassin, Rice Cake of Fighting Spirit. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -536,7 +536,7 @@
 		</skills>
 	</item>
 	<item id="91643" name="Chronicle Chest" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.new_user_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -551,7 +551,7 @@
 		</skills>
 	</item>
 	<item id="91644" name="Chronicle Cube Gift" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i11" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -591,7 +591,7 @@
 		</skills>
 	</item>
 	<item id="91647" name="Scroll of Escape: Troubled Forest" additionalName="Sealed" type="EtcItem">
-		<!-- Teleports to Herbiel in Elven Village. -->
+		<!-- Can be used to teleport to Herbiel in the Elven Village. -->
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
 		<set name="price" val="35000" />
@@ -630,7 +630,7 @@
 		</skills>
 	</item>
 	<item id="91649" name="Scroll of Escape: Plundered Graves" additionalName="Sealed" type="EtcItem">
-		<!-- Teleports to Uska in the Orc Village. -->
+		<!-- Can be used to teleport to Uska in the Orc Village. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -712,7 +712,7 @@
 		<set name="is_questitem" val="true" />
 	</item>
 	<item id="91654" name="Adventurer's Mark Lv. 1" additionalName="Sealed" type="EtcItem">
-		<!-- Received after completing the Adventurer's Journey mission. When in inventory, HP Recovery Rate +5%, MP Recovery Rate +10%. The effect doesn't stack if several identical marks are stored in inventory, the higher-level mark takes precedence. Double-click to see the list of hunting zones for each character level. -->
+		<!-- A reward for completing the Adventurer's Journey mission. <Effect> HP Recovery +5% MP Recovery +10% Double-click to see the list of hunting zones by level. Note! Effects of several identical marks in the inventory do not stack, the higher-level mark takes precedence. -->
 		<set name="icon" val="icon.etc_crest_blue_i00" />
 		<set name="default_action" val="SHOW_HTML" />
 		<set name="immediate_effect" val="true" />
@@ -732,7 +732,7 @@
 		</skills>
 	</item>
 	<item id="91655" name="Adventurer's Mark Lv. 2" additionalName="Sealed" type="EtcItem">
-		<!-- Received after completing the Adventurer's Journey mission. When in inventory, HP Recovery Rate +10%, MP Recovery Rate +15%. The effect doesn't stack if several identical marks are stored in inventory, the higher-level mark takes precedence. Double-click to see the list of hunting zones for each character level. -->
+		<!-- A reward for completing the Adventurer's Journey mission. <Effect> HP Recovery +10% MP Recovery +15% Double-click to see the list of hunting zones by level. Note! Effects of several identical marks in the inventory do not stack, the higher-level mark takes precedence. -->
 		<set name="icon" val="icon.etc_crest_blue_i00" />
 		<set name="default_action" val="SHOW_HTML" />
 		<set name="immediate_effect" val="true" />
@@ -752,7 +752,7 @@
 		</skills>
 	</item>
 	<item id="91656" name="Adventurer's Mark Lv. 3" additionalName="Sealed" type="EtcItem">
-		<!-- Received after completing the Adventurer's Journey mission. When in inventory, HP Recovery Rate +15%, MP Recovery Rate +20%. The effect doesn't stack if several identical marks are stored in inventory, the higher-level mark takes precedence. Double-click to see the list of hunting zones for each character level. -->
+		<!-- A reward for completing the Adventurer's Journey mission. <Effect> HP Recovery +15% MP Recovery +20% Double-click to see the list of hunting zones by level. Note! Effects of several identical marks in the inventory do not stack, the higher-level mark takes precedence. -->
 		<set name="icon" val="icon.etc_crest_blue_i00" />
 		<set name="default_action" val="SHOW_HTML" />
 		<set name="immediate_effect" val="true" />
@@ -772,7 +772,7 @@
 		</skills>
 	</item>
 	<item id="91657" name="Adventurer's Mark Lv. 4" additionalName="Sealed" type="EtcItem">
-		<!-- Received after completing the Adventurer's Journey mission. When in inventory, HP Recovery Rate +20%, MP Recovery Rate +25%. Double-click to see the list of hunting zones for each character level. -->
+		<!-- A reward for completing the Adventurer's Journey mission. <Effect> HP Recovery +20% MP Recovery +25% Double-click to see the list of hunting zones by level. Note! Effects of several identical marks in the inventory do not stack, the higher-level mark takes precedence. -->
 		<set name="icon" val="icon.etc_crest_blue_i00" />
 		<set name="default_action" val="SHOW_HTML" />
 		<set name="immediate_effect" val="true" />
@@ -792,7 +792,7 @@
 		</skills>
 	</item>
 	<item id="91658" name="Chicken Box" additionalName="Sealed" type="EtcItem">
-		<!-- Only for the Essence server. Double-click to obtain Shining Scroll of Mood Melody or Yummy Chicken. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.ev_chicken_box_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -816,7 +816,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91660" name="Shining Scroll of Mood Melody (1-hour)" type="EtcItem">
-		<!-- For 1 h., grants the following effects: Might, Shield, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Focus, Death Whisper, Guidance, Clarity, Wild Magic, Concentration. The effect remains after death. Note!. 1. Cannot be used together with Scroll of Mood Melody. 2. The effect of the last applied item will be active. -->
+		<!-- For 1 h., activates the following buffs: Might, Shield, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Focus, Death Whisper, Guidance, Clarity, Wild Magic, Concentration. The effect remains after death. Note! 1. Cannot be used along with Scroll of Mood Melody. 2. The effect is renewed upon re-use. <font color=eeaa22>Can be exchanged for Aden Coins through the Game Assistant.</font> -->
 		<set name="icon" val="icon.bm_magmeld" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -827,7 +827,7 @@
 		<set name="time" val="60" />
 	</item>
 	<item id="91661" name="Shining Scroll of Mood Melody (4-hour)" type="EtcItem">
-		<!-- For 4 h., grants the following effects: Might, Shield, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Focus, Death Whisper, Guidance, Clarity, Wild Magic, Concentration. The effect remains after death. Note!. 1. Cannot be used together with Scroll of Mood Melody. 2. The effect of the last applied item will be active. -->
+		<!-- For 4 h., activates the following buffs: Might, Shield, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Focus, Death Whisper, Guidance, Clarity, Wild Magic, Concentration. The effect remains after death. Note! 1. Cannot be used along with Scroll of Mood Melody. 2. The effect is renewed upon re-use. <font color=eeaa22>Can be exchanged for Aden Coins through the Game Assistant.</font> -->
 		<set name="icon" val="icon.bm_magmeld" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -838,7 +838,7 @@
 		<set name="time" val="240" />
 	</item>
 	<item id="91662" name="Shining Scroll of Mood Melody (8-hour)" type="EtcItem">
-		<!-- For 8 h., grants the following effects: Might, Shield, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Focus, Death Whisper, Guidance, Clarity, Wild Magic, Concentration. The effect remains after death. Note!. 1. Cannot be used together with Scroll of Mood Melody. 2. The effect of the last applied item will be active. -->
+		<!-- For 8 h., activates the following buffs: Might, Shield, Haste, Empower, Acumen, Wind Walk, Vampiric Rage, Berserker Spirit, Focus, Death Whisper, Guidance, Clarity, Wild Magic, Concentration. The effect remains after death. Note! 1. Cannot be used along with Scroll of Mood Melody. 2. The effect is renewed upon re-use. <font color=eeaa22>Can be exchanged for Aden Coins through the Game Assistant.</font> -->
 		<set name="icon" val="icon.bm_magmeld" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -860,7 +860,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91664" name="Scroll: 10,000 SP" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to recover 10,000 SP. -->
+		<!-- SP +10,000. -->
 		<set name="icon" val="icon.etc_sp_scroll2_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -874,7 +874,7 @@
 		</skills>
 	</item>
 	<item id="91665" name="Scroll: 100,000 SP" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to recover 100,000 SP. -->
+		<!-- SP +100,000. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -888,7 +888,7 @@
 		</skills>
 	</item>
 	<item id="91666" name="Sayha's Storm Lv. 1" additionalName="Sealed" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. Sayha's Grace Consumption +100%. Acquired XP +100%. Acquired SP +100%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=eeaa22>(Requires 35,000+ Sayha's Grace points.)</font> -->
+		<!-- Applies a buff when used. <Buff effect> Sayha's Grace Consumption +100% Acquired XP +100% Acquired SP +100% Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=eeaa22>(Requires 35,000+ Sayha's Grace points.)</font> -->
 		<set name="icon" val="icon.bm_sayha_storm" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -903,7 +903,7 @@
 		</skills>
 	</item>
 	<item id="91667" name="+7 White Sayha's Cloak" additionalName="30-day" type="Armor">
-		<!-- Available for 30 d. Max HP/ MP +15%, Acquired XP/ SP +20%, P. Def. +8%, P. Critical Damage/ M. Skill Critical Damage +5%. -->
+		<!-- Available for 30 d. Max HP/ MP +15%, acquired XP/ SP +20%, P. Def. +8%, P. Critical Damage/ M. Skill Critical Damage +5%. -->
 		<set name="icon" val="icon.sayha2017_back_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -915,7 +915,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="91668" name="Red Lantern - 1st Place (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- <Reward for achieving the 1st place in the Magic Lamp event>. XP +100,000,000, SP +2,700,000. Can be exchanged by the Game Assistant for the Lit Red Lantern (transferable to other characters on the account). -->
+		<!-- When used, XP +100,000,000, SP +2,700,000. Note! The item will be deleted after the scheduled maintenance. -->
 		<set name="icon" val="icon.r99_soul_stone_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -929,7 +929,7 @@
 		</skills>
 	</item>
 	<item id="91669" name="Purple Lantern - 2nd Place (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- <Reward for achieving the 2nd place in the Magic Lamp event>. XP +30,000,000, SP +810,000. Can be exchanged by the Game Assistant for the Lit Purple Lantern (transferable to other characters on the account). -->
+		<!-- When used, XP +30,000,000, SP +810,000. Note! The item will be deleted after the scheduled maintenance. -->
 		<set name="icon" val="icon.r99_soul_stone_i05" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -943,7 +943,7 @@
 		</skills>
 	</item>
 	<item id="91670" name="Blue Lantern - 3rd Place (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- <Reward for achieving the 3rd place in the Magic Lamp event>. XP +10,000,000, SP +270,000. Can be exchanged by the Game Assistant for the Lit Blue Lantern (transferable to other characters on the account). -->
+		<!-- When used, XP +10,000,000, SP +270,000. Note! The item will be deleted after the scheduled maintenance. -->
 		<set name="icon" val="icon.r99_soul_stone_i02" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -957,7 +957,7 @@
 		</skills>
 	</item>
 	<item id="91671" name="Green Lantern - 4th Place (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- <Reward for achieving the 4th place in the Magic Lamp event>. XP +5,000,000, SP +135,000. Can be exchanged by the Game Assistant for the Lit Green Lantern (transferable to other characters on the account). -->
+		<!-- When used, XP +5,000,000, SP +135,000. Note! The item will be deleted after the scheduled maintenance. -->
 		<set name="icon" val="icon.r99_soul_stone_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -971,7 +971,7 @@
 		</skills>
 	</item>
 	<item id="91672" name="Adena Fortune Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain random amount of adena. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_nebit_present" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -987,7 +987,7 @@
 		</skills>
 	</item>
 	<item id="91673" name="Reinforced Spear" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs.></font> -->
 		<set name="icon" val="icon.weapon_long_spear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -1011,7 +1011,7 @@
 		</stats>
 	</item>
 	<item id="91674" name="Reinforced Falchion" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_falchion_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1034,7 +1034,7 @@
 		</stats>
 	</item>
 	<item id="91675" name="Reinforced Iron Hammer" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_iron_hammer_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1060,7 +1060,7 @@
 		</stats>
 	</item>
 	<item id="91676" name="Reinforced Voodoo Doll" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_voodoo_doll_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1083,7 +1083,7 @@
 		</stats>
 	</item>
 	<item id="91677" name="Reinforced Flanged Mace" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_buzdygan_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1109,7 +1109,7 @@
 		</stats>
 	</item>
 	<item id="91678" name="Reinforced Sword Breaker" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_sword_breaker_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -1133,7 +1133,7 @@
 		</stats>
 	</item>
 	<item id="91679" name="Reinforced Viper Fang" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_vipers_canine_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -1157,7 +1157,7 @@
 		</stats>
 	</item>
 	<item id="91680" name="Reinforced Compound Bow" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted/ augmented, Soul Crystals cannot be inserted. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_composition_bow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -1246,7 +1246,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="91689" name="Blessed Scroll of Escape" additionalName="Sealed" type="EtcItem">
-		<!-- Teleports to the nearest village. Its casting time is very short. -->
+		<!-- Can be used to teleport to the nearest village. Its casting time is very short. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1296,7 +1296,7 @@
 		</skills>
 	</item>
 	<item id="91692" name="Blessing of Plenty - 100%" additionalName="3-day" type="EtcItem">
-		<!-- Available for 3 days. L-Coin drop rate +100%. -->
+		<!-- Available for 3 d. L-Coin drop rate +100%. -->
 		<set name="icon" val="icon.aden_bless_rune_i01" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -1312,7 +1312,7 @@
 		</skills>
 	</item>
 	<item id="91693" name="Blessing of Plenty - 100%" additionalName="1-day" type="EtcItem">
-		<!-- Available for 1 day. L-Coin drop rate +100%, Acquired XP/ SP +10%, Sayha's Grace Consumption -20%. -->
+		<!-- Available for 1 d. While hunting, L-Coin drop rate +100%, acquired XP/ SP +10%, Sayha's Grace Consumption -20%. -->
 		<set name="icon" val="icon.aden_bless_rune_i02" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -1328,7 +1328,7 @@
 		</skills>
 	</item>
 	<item id="91694" name="Blessing of Plenty - 100%" additionalName="30-day" type="EtcItem">
-		<!-- Available for 30 days. L-Coin drop rate +100%, Acquired XP/ SP +10%, Sayha's Grace Consumption -20%. -->
+		<!-- Available for 30 d. While hunting, L-Coin drop rate +100%, acquired XP/ SP +10%, Sayha's Grace Consumption -20%. -->
 		<set name="icon" val="icon.aden_bless_rune_i02" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="immediate_effect" val="true" />
@@ -1352,7 +1352,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91696" name="Growth Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain a rare item including various enchant scrolls and materials, +16 B-grade Weapon Pack, Queen Ant's Ring, Orfen's Earring, Ring of Core, Baium's Ring. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_gold_lure_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="immediate_effect" val="true" />
@@ -1365,7 +1365,7 @@
 		</skills>
 	</item>
 	<item id="91697" name="Package: +7 Samurai Long Sword" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_samurai_old_longsword_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1375,11 +1375,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="135" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Samurai Long Sword -->
+			<item id="135" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- Samurai Long Sword -->
 		</capsuled_items>
 	</item>
 	<item id="91698" name="Package: +7 Demon's Staff" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_demons_staff_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1389,11 +1389,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="206" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Demon's Staff -->
+			<item id="206" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- Demon's Staff -->
 		</capsuled_items>
 	</item>
 	<item id="91699" name="Package: +7 Mace of Underworld" type="EtcItem">
-		<!-- Double-click to obtain Mace of Underworld enchanted to +7. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.weapon_mace_of_underworld_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1403,7 +1403,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="202" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Mace of Underworld -->
+			<item id="202" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- Mace of Underworld -->
 		</capsuled_items>
 	</item>
 </list>

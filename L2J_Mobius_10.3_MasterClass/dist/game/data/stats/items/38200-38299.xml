@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="38200" name="Blue Mackerel Appearance Stone: One-handed Sword" type="EtcItem">
-		<!-- Changes the appearance of a one-handed sword to that of a Blue Mackerel. -->
+		<!-- Changes the appearance of a one-handed sword to that of Blue Mackerel. -->
 		<set name="icon" val="icon.shape_shifting_sword_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -31,7 +31,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38203" name="Squid Appearance Stone: Spear" type="EtcItem">
-		<!-- Turns the appearance of a spear into that of a Squid. -->
+		<!-- Changes the appearance of a spear to that of a Squid. -->
 		<set name="icon" val="icon.shape_shifting_pole_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -52,7 +52,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38205" name="Lobster Appearance Stone: Fist Weapon" type="EtcItem">
-		<!-- Turns the appearance of a fist weapon into that of a Lobster. -->
+		<!-- Changes the appearance of a fist weapon to that of a Lobster. -->
 		<set name="icon" val="icon.shape_shifting_dualfist_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -62,7 +62,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38206" name="Giant Crab Appearance Stone: Bow" type="EtcItem">
-		<!-- Turns the appearance of a bow into that of a Giant Crab. -->
+		<!-- Changes the appearance of a bow to that of a Giant Crab. -->
 		<set name="icon" val="icon.shape_shifting_bow_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -102,7 +102,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38210" name="Blue Mackerel Appearance Stone: Dual Sword" type="EtcItem">
-		<!-- Turns the appearance of a dual sword into that of a Blue Mackerel. -->
+		<!-- Changes the appearance of dual swords to that of Blue Mackerel. -->
 		<set name="icon" val="icon.shape_shifting_dual_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="immediate_effect" val="true" />
@@ -112,7 +112,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="38211" name="Blue Mackerel: One-handed Sword" type="Weapon">
-		<!-- Blue Mackerel-shaped weapon. One-handed sword type. Base appearance of Blue Mackerel Weapon Appearance Stone. -->
+		<!-- Blue Mackerel-shaped weapon. Type: one-handed sword. An item for changing a weapon's appearance. -->
 		<set name="icon" val="icon.wp_fishing1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -325,7 +325,7 @@
 		</stats>
 	</item>
 	<item id="38220" name="Turtle: Shield" type="Weapon">
-		<!-- Turtle-shaped shield. -->
+		<!-- A turtle-shaped shield. Type: shield. An item for changing a shield's appearance. -->
 		<set name="icon" val="icon.wp_fishing10" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lhand" />
@@ -340,7 +340,7 @@
 		</stats>
 	</item>
 	<item id="38221" name="Blue Mackerel: Dual Sword" type="Weapon">
-		<!-- Blue Mackerel-shaped weapon. Dual Sword. -->
+		<!-- Blue Mackerel-shaped weapon. Type: dual swords. An item for changing a weapon's appearance. -->
 		<set name="icon" val="icon.wp_fishing11" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -584,7 +584,7 @@
 		</skills>
 	</item>
 	<item id="38235" name="Lady's Hairpin" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. Female only. -->
+		<!-- Female only. When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -787,7 +787,7 @@
 		</skills>
 	</item>
 	<item id="38248" name="Party Mask" additionalName="Critical Rate" type="Armor">
-		<!-- When equipped, Critical Rate for standard attacks +50. -->
+		<!-- When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.etc_party_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -801,7 +801,7 @@
 		</skills>
 	</item>
 	<item id="38249" name="Party Mask" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.etc_party_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -983,7 +983,7 @@
 		</skills>
 	</item>
 	<item id="38262" name="Monocle" additionalName="Critical Rate" type="Armor">
-		<!-- When equipped, Critical Rate for standard attacks +50. -->
+		<!-- When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.accessory_glasses_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -997,7 +997,7 @@
 		</skills>
 	</item>
 	<item id="38263" name="Monocle" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_glasses_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1214,7 +1214,7 @@
 		</skills>
 	</item>
 	<item id="38277" name="Maiden's Hairpin" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. Female only. -->
+		<!-- Female only. When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_maidens_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1452,7 +1452,7 @@
 		</skills>
 	</item>
 	<item id="38291" name="Forget-me-not Hairpin" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. Female only. -->
+		<!-- Female only. When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />

@@ -107,7 +107,7 @@
 		</stats>
 	</item>
 	<item id="82109" name="5 Billion Adena Box" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain 5 billion adena. -->
+		<!-- Double-click to obtain 3 billion adena. -->
 		<set name="icon" val="icon.event_orc_coinbox" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -149,7 +149,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="82113" name="Conquest Rankings' 3rd Place Rune" additionalName="30-day" type="EtcItem">
-		<!-- When in inventory, P. Atk., M. Atk., P. Def., M. Def. +1%, acquired XP/ SP +3%. -->
+		<!-- When in inventory, P. Atk./ M. Atk./ P. Def./ M. Def. +1%, acquired XP/ SP +3%. -->
 		<set name="icon" val="icon.dethrone_tier_1_rune" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -203,7 +203,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82118" name="Death Knight's Flame Sword" type="Weapon">
-		<!-- Changes a one-handed sword's appearance to that of Eigis. -->
+		<!-- Test Appearance -->
 		<set name="icon" val="icon.fire_sword_aden" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -501,7 +501,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48497" min="2" max="2" chance="100" /> <!-- Glowing Dragon's Attribute Potion (XP) -->
+			<item id="48497" min="2" max="2" chance="100" /> <!-- Glowing Dragon's Attribute Potion - XP -->
 		</capsuled_items>
 	</item>
 	<item id="82144" name="Freya's Ice Rose 2-unit Pack" type="EtcItem">
@@ -520,7 +520,7 @@
 		</capsuled_items>
 	</item>
 	<item id="82145" name="Mysterious Aid Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Storm Isle's Time Stone/ Abandoned Coal Mines' Time Stone, Emperor's Special Cocktail (24 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Shining Nevit's Gold Hourglass, Honey Dark Beer, Newbie's Fortune Scroll (48 pcs.), Freya's Scroll of Storm (144 pcs.). -->
+		<!-- Double-click to obtain Storm Isle's Time Stone, Abandoned Coal Mines' Time Stone, Emperor's Special Cocktail (24 pcs.), Freya's Ice Rose (48 pcs.), Glowing Dragon's Attribute Potion (XP) (48 pcs.), Shining Nevit's Gold Hourglass (48 pcs.), Honey Dark Beer (48 pcs.), Newbie's Fortune Scroll (48 pcs.), Freya's Scroll of Storm (144 pcs.). -->
 		<set name="icon" val="icon.new_user_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -530,7 +530,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82146" name="Mysterious Aid Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Emperor's Special Cocktail (72 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Shining Nevit's Gold Hourglass, Honey Dark Beer (114 pcs.), Freya's Scroll of Storm (432 pcs.). -->
+		<!-- Double-click to obtain Emperor's Special Cocktail (72 pcs.), Freya's Ice Rose (144 pcs.), Glowing Dragon's Attribute Potion (XP) (144 pcs.), Shining Nevit's Gold Hourglass (144 pcs.), Honey Dark Beer (144 pcs.), Freya's Scroll of Storm (432 pcs.). -->
 		<set name="icon" val="icon.new_user_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -597,7 +597,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82153" name="Common Dice Coupon" additionalName="Event" type="EtcItem">
-		<!-- Required for obtaining Common Dice for the Aden Adventure game. -->
+		<!-- Required for obtaining Common Dice for the 'Aden Adventure' game. -->
 		<set name="icon" val="icon.etc_lottery_card_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -616,7 +616,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82155" name="Adventurer's Fortune Scroll" additionalName="Event" type="EtcItem">
-		<!-- A scroll that charges adventurers with luck. For 30 min., Attribute Attack/ Resistance +70, P. Atk./ M. Atk./ P. Def./ M. Def. +7%, acquired XP/ SP +5%, Vitality bonus +10%. The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. -->
+		<!-- For 30 min., Attribute Attack/ Resistance +100, Critical Rate for basic attacks, P./ M. Skill Critical Rate, Critical Damage for basic skills and P./ M. Skill Critical Damage +5%, CHA +3, Speed +6, acquired XP/ SP +10%, Vitality bonus +10%. The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<set name="icon" val="icon.etc_charm_of_luck_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -661,19 +661,19 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48957" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - P. Atk. Attack -->
-			<item id="48958" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - M. Atk. Attack -->
-			<item id="48959" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - Atk. Spd. Attack -->
-			<item id="48960" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - Casting Spd. Attack -->
-			<item id="80647" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - Critical Damage for Basic Attacks Attack -->
-			<item id="80649" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - M. Skill Critical Damage Attack -->
-			<item id="81430" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - Attribute Attack Attack -->
-			<item id="81431" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - P. Skill Power Attack -->
-			<item id="81432" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- +1 Artifact - M. Skill Power Attack -->
+			<item id="48957" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - P. Atk. - Attack -->
+			<item id="48958" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - M. Atk. - Attack -->
+			<item id="48959" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - Atk. Spd. - Attack -->
+			<item id="48960" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - Casting Spd. - Attack -->
+			<item id="80647" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - Critical Damage for Basic Attacks - Attack -->
+			<item id="80649" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - M. Skill Critical Damage - Attack -->
+			<item id="81430" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - Attribute Attack - Attack -->
+			<item id="81431" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - P. Skill Power - Attack -->
+			<item id="81432" min="1" max="1" minEnchant="1" maxEnchant="1" chance="11.11" /> <!-- Artifact - M. Skill Power - Attack -->
 		</capsuled_items>
 	</item>
 	<item id="82159" name="+3 Attack Artifact Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain an attack artifact enchanted to +1. -->
+		<!-- Double-click to obtain an attack artifact enchanted to +3. -->
 		<set name="icon" val="icon.bm_artifact_b_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -686,19 +686,19 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48957" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - P. Atk. Attack -->
-			<item id="48958" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - M. Atk. Attack -->
-			<item id="48959" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - Atk. Spd. Attack -->
-			<item id="48960" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - Casting Spd. Attack -->
-			<item id="80647" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - Critical Damage for Basic Attacks Attack -->
-			<item id="80649" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - M. Skill Critical Damage Attack -->
-			<item id="81430" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - Attribute Attack Attack -->
-			<item id="81431" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - P. Skill Power Attack -->
-			<item id="81432" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- +3 Artifact - M. Skill Power Attack -->
+			<item id="48957" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - P. Atk. - Attack -->
+			<item id="48958" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - M. Atk. - Attack -->
+			<item id="48959" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - Atk. Spd. - Attack -->
+			<item id="48960" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - Casting Spd. - Attack -->
+			<item id="80647" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - Critical Damage for Basic Attacks - Attack -->
+			<item id="80649" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - M. Skill Critical Damage - Attack -->
+			<item id="81430" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - Attribute Attack - Attack -->
+			<item id="81431" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - P. Skill Power - Attack -->
+			<item id="81432" min="1" max="1" minEnchant="3" maxEnchant="3" chance="11.11" /> <!-- Artifact - M. Skill Power - Attack -->
 		</capsuled_items>
 	</item>
 	<item id="82160" name="+1 Defense Artifact Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain an attack artifact enchanted to +1. -->
+		<!-- Double-click to obtain a defense artifact enchanted to +1. -->
 		<set name="icon" val="icon.bm_artifact_c_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -711,20 +711,20 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48961" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - P. Def. Defense -->
-			<item id="48962" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - M. Def. Defense -->
-			<item id="48963" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Max HP Defense -->
-			<item id="48964" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Max MP Defense -->
-			<item id="80650" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Bow Resistance Defense -->
-			<item id="80651" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Dagger Resistance Defense -->
-			<item id="80652" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Sword Resistance Defense -->
-			<item id="81433" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Attribute Resistance Defense -->
-			<item id="81434" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Received Damage When Immobilized Defense -->
-			<item id="81435" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Received P. Critical Damage Defense -->
+			<item id="48961" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - P. Def. - Defense -->
+			<item id="48962" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - M. Def. - Defense -->
+			<item id="48963" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Max HP - Defense -->
+			<item id="48964" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Max MP - Defense -->
+			<item id="80650" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Bow Resistance - Defense -->
+			<item id="80651" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Dagger Resistance - Defense -->
+			<item id="80652" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Sword Resistance - Defense -->
+			<item id="81433" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Attribute Resistance - Defense -->
+			<item id="81434" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Received Damage When Immobilized - Defense -->
+			<item id="81435" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Received P. Critical Damage - Defense -->
 		</capsuled_items>
 	</item>
 	<item id="82161" name="+3 Defense Artifact Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain an attack artifact enchanted to +3. -->
+		<!-- Double-click to obtain a defense artifact enchanted to +3. -->
 		<set name="icon" val="icon.bm_artifact_c_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -737,20 +737,20 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48961" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - P. Def. Defense -->
-			<item id="48962" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - M. Def. Defense -->
-			<item id="48963" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Max HP Defense -->
-			<item id="48964" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Max MP Defense -->
-			<item id="80650" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Bow Resistance Defense -->
-			<item id="80651" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Dagger Resistance Defense -->
-			<item id="80652" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Sword Resistance Defense -->
-			<item id="81433" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Attribute Resistance Defense -->
-			<item id="81434" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Received Damage When Immobilized Defense -->
-			<item id="81435" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Received P. Critical Damage Defense -->
+			<item id="48961" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - P. Def. - Defense -->
+			<item id="48962" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - M. Def. - Defense -->
+			<item id="48963" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Max HP - Defense -->
+			<item id="48964" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Max MP - Defense -->
+			<item id="80650" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Bow Resistance - Defense -->
+			<item id="80651" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Dagger Resistance - Defense -->
+			<item id="80652" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Sword Resistance - Defense -->
+			<item id="81433" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Attribute Resistance - Defense -->
+			<item id="81434" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Received Damage When Immobilized - Defense -->
+			<item id="81435" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Received P. Critical Damage - Defense -->
 		</capsuled_items>
 	</item>
 	<item id="82162" name="+1 Support Artifact Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain an attack artifact enchanted to +1. -->
+		<!-- Double-click to obtain a support artifact enchanted to +1. -->
 		<set name="icon" val="icon.bm_artifact_d_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -763,20 +763,20 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48965" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Acquired XP Support -->
-			<item id="48966" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Vampiric Rage Support -->
-			<item id="48967" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Speed Support -->
-			<item id="48968" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Received Healing Support -->
-			<item id="80653" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Vitality Bonus Support -->
-			<item id="80654" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Vitality Consumption Support -->
-			<item id="80655" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Skill MP Consumption Support -->
-			<item id="81436" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Recovery Potions' Effect Support -->
-			<item id="81437" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Fixed Damage Resistance Support -->
-			<item id="81438" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- +1 Artifact - Damage Reflection Resistance Support -->
+			<item id="48965" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Acquired XP - Support -->
+			<item id="48966" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Vampiric Rage - Support -->
+			<item id="48967" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Speed - Support -->
+			<item id="48968" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Received Healing - Support -->
+			<item id="80653" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Vitality Bonus - Support -->
+			<item id="80654" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Vitality Consumption - Support -->
+			<item id="80655" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Skill MP Consumption - Support -->
+			<item id="81436" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Recovery Potions' Effect - Support -->
+			<item id="81437" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Fixed Damage Resistance - Support -->
+			<item id="81438" min="1" max="1" minEnchant="1" maxEnchant="1" chance="10" /> <!-- Artifact - Damage Reflection Resistance - Support -->
 		</capsuled_items>
 	</item>
 	<item id="82163" name="+3 Support Artifact Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain an attack artifact enchanted to +3. -->
+		<!-- Double-click to obtain a support artifact enchanted to +3. -->
 		<set name="icon" val="icon.bm_artifact_d_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -789,16 +789,16 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48965" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Acquired XP Support -->
-			<item id="48966" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Vampiric Rage Support -->
-			<item id="48967" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Speed Support -->
-			<item id="48968" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Received Healing Support -->
-			<item id="80653" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Vitality Bonus Support -->
-			<item id="80654" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Vitality Consumption Support -->
-			<item id="80655" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Skill MP Consumption Support -->
-			<item id="81436" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Recovery Potions' Effect Support -->
-			<item id="81437" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Fixed Damage Resistance Support -->
-			<item id="81438" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- +3 Artifact - Damage Reflection Resistance Support -->
+			<item id="48965" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Acquired XP - Support -->
+			<item id="48966" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Vampiric Rage - Support -->
+			<item id="48967" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Speed - Support -->
+			<item id="48968" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Received Healing - Support -->
+			<item id="80653" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Vitality Bonus - Support -->
+			<item id="80654" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Vitality Consumption - Support -->
+			<item id="80655" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Skill MP Consumption - Support -->
+			<item id="81436" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Recovery Potions' Effect - Support -->
+			<item id="81437" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Fixed Damage Resistance - Support -->
+			<item id="81438" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Artifact - Damage Reflection Resistance - Support -->
 		</capsuled_items>
 	</item>
 	<item id="82164" name="Collection Item Box - All as One" additionalName="Event" type="EtcItem">
@@ -834,7 +834,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82168" name="Sayha's Blessing Potion" type="EtcItem">
-		<!-- For 30 min., Attribute Attack/ Resistance +200, acquired XP/ SP +100%. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
+		<!-- For 30 min., Attribute Attack/ Resistance +70, acquired XP/ SP +30%. Cooldown: 5 min. The effect remains after death. Cannot be used in the Olympiad. -->
 		<set name="icon" val="BranchSys3.icon1.g_ev_invite_red_potion" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -904,7 +904,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="82174" name="Collection Item Box - Conqueror of Tower of Insolence's Middle Floors" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain 4 types of Orbs of Anger (48 pcs.), 5 types of Orbs of Anger (24 pcs.), 6 types of Orbs of Anger (16 pcs.), High Priest's Holy Water (500 pcs.). -->
+		<!-- Double-click to obtain Orb of Anger - 4th Floor (48 pcs.), Orb of Anger - 5th Floor (24 pcs.), Orb of Anger - 6th Floor (16 pcs.), High Priest's Holy Water (500 pcs.). -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -913,14 +913,14 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="82015" min="48" max="48" chance="100" /> <!-- Orb of Anger (4th Floor) -->
-			<item id="82016" min="24" max="24" chance="100" /> <!-- Orb of Anger (5th Floor) -->
-			<item id="82017" min="16" max="16" chance="100" /> <!-- Orb of Anger (6th Floor) -->
+			<item id="82015" min="48" max="48" chance="100" /> <!-- Orb of Anger - 4th Floor -->
+			<item id="82016" min="24" max="24" chance="100" /> <!-- Orb of Anger - 5th Floor -->
+			<item id="82017" min="16" max="16" chance="100" /> <!-- Orb of Anger - 6th Floor -->
 			<item id="81835" min="500" max="500" chance="100" /> <!-- High Priest's Holy Water -->
 		</capsuled_items>
 	</item>
 	<item id="82175" name="Collection Item Box - Conqueror of Tower of Insolence's Lower Floors" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain 1 type of Orbs of Anger (48 pcs.), 2 types of Orbs of Anger (24 pcs.), 3 types of Orbs of Anger (16 pcs.), High Priest's Holy Water (500 pcs.). -->
+		<!-- Double-click to obtain Orb of Anger - 1st Floor (48 pcs.), Orb of Anger - 2nd Floor (24 pcs.), Orb of Anger - 3rd Floor (16 pcs.), High Priest's Holy Water (500 pcs.). -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -929,9 +929,9 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="82012" min="48" max="48" chance="100" /> <!-- Orb of Anger (1st Floor) -->
-			<item id="82013" min="24" max="24" chance="100" /> <!-- Orb of Anger (2nd Floor) -->
-			<item id="82014" min="16" max="16" chance="100" /> <!-- Orb of Anger (3rd Floor) -->
+			<item id="82012" min="48" max="48" chance="100" /> <!-- Orb of Anger - 1st Floor -->
+			<item id="82013" min="24" max="24" chance="100" /> <!-- Orb of Anger - 2nd Floor -->
+			<item id="82014" min="16" max="16" chance="100" /> <!-- Orb of Anger - 3rd Floor -->
 			<item id="81835" min="500" max="500" chance="100" /> <!-- High Priest's Holy Water -->
 		</capsuled_items>
 	</item>
@@ -946,7 +946,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82177" name="Luminous Soul Fragment" type="EtcItem">
-		<!-- Evidence of the destruction of the Luminous Soul, about which Entropy was talking. Take it to the Conquest Guide Entropy to the Town of Conquest. -->
+		<!-- Evidence of the destruction ot the Luminous Soul, about which Entropy was talking. Take it to the Conquest Guide Entropy to the Town of Conquest. -->
 		<set name="icon" val="icon.etc_broken_crystal_white_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -998,7 +998,7 @@
 		</capsuled_items>
 	</item>
 	<item id="82180" name="Festival Fairy's Refreshing Watermelon" additionalName="Event" type="EtcItem">
-		<!-- A watermelon made by the Festival Fairy in commemoration of the summer's coming. For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +7%, Power of basic attacks and P./ M. skills +7%, acquired XP/ SP +10%, All received Critical Damage -7%.The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. --> <!-- -1	default_action=[action_skill_reduce]	use_order=99	name_class=-1	color=1	Tooltip_Texture=[None]	Tooltip_BG_Texture=[None]	Tooltip_BG_Texture_Compare=[None]	Tooltip_BG_Deco_Texture=[None]	is_trade=1	is_drop=1	is_destruct=1	is_private_store=1	keep_type=7	is_npctrade=0	is_commission_store=0	enchant_bless=0	DBdelete=0	create_items_list={}	sort_order=0	item_option2=0	item_name_end -->
+		<!-- P. Atk./ M. Atk./ P. Def./ M. Def. +15%, Attribute Attack/ Resistance +100, acquired XP/ SP +5%. The effect remains after death, after switching to a dual class or entering instance zones. Removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<set name="icon" val="Icon.ev_buff_bread" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1019,7 +1019,6 @@
 	</item>
 	<item id="82182" name="Lulu's Silver Pack" additionalName="Lv. 2" type="EtcItem">
 		<!-- A box from the Aden Castle imbued with the power of the Angel of Luck. Double-click to obtain 1 useful item (excluding Lulu's Golden Pack). -->
-		<!-- _trade=1	is_drop=1	is_destruct=1	is_private_store=1	keep_type=7	is_npctrade=0	is_commission_store=0	enchant_bless=0	DBdelete=0	create_items_list={}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.bm_silver_lure_box" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1048,7 +1047,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="82185" name="Kaliel's Blessing Pack" type="EtcItem">
-		<!-- Double-click to obtain various items (excluding Kaliel's Bracelet Augmenting Stone). -->
+		<!-- Double-click to obtain various items (excluding Augmenting Stone: Kaliel's Bracelet). -->
 		<set name="icon" val="icon.bm_freya_2016_gift_box" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1093,7 +1092,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="82189" name="Blessed Exalted Heavy Armor Set Box" additionalName="Heavy armor" type="EtcItem">
-		<!-- Contains Exalted heavy armor set. Double-click to obtain Blessed Exalted Heavy Armor Set and 5 types of Blessed Exalted Accessories, Blessed Exalted Circlet, Blessed Exalted Seed Bracelet, Exalted Weapon Augmenting Stone, Exalted Soul Crystal, Exalted Talisman of Longing, Exalted Sayha's Talisman. Can be transferred within the account before being opened. Note! Supply Pack cannot be obtained. -->
+		<!-- Contains Exalted heavy armor set. Double-click to obtain Blessed Exalted Heavy Armor Set and 5 types of Blessed Exalted Accessories, Blessed Exalted Circlet, Blessed Exalted Seed Bracelet, Augmenting Stone: Exalted Weapon, Exalted Soul Crystal, Exalted Talisman of Longing, Exalted Sayha's Talisman. Can be transferred within the account before being opened. Note! Supply Pack cannot be obtained. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1104,7 +1103,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="82190" name="Blessed Exalted Light Armor Set Box" additionalName="Light armor" type="EtcItem">
-		<!-- Contains Exalted light armor set. Double-click to obtain Blessed Exalted Light Armor Set and 5 types of Blessed Exalted Accessories, Blessed Exalted Circlet, Blessed Exalted Seed Bracelet, Exalted Weapon Augmenting Stone, Exalted Soul Crystal, Exalted Talisman of Longing, Exalted Sayha's Talisman. Can be transferred within the account before being opened. Note! Supply Pack cannot be obtained. -->
+		<!-- Contains Exalted light armor set. Double-click to obtain Blessed Exalted Light Armor Set and 5 types of Blessed Exalted Accessories, Blessed Exalted Circlet, Blessed Exalted Seed Bracelet, Augmenting Stone: Exalted Weapon, Exalted Soul Crystal, Exalted Talisman of Longing, Exalted Sayha's Talisman. Can be transferred within the account before being opened. Note! Supply Pack cannot be obtained. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1114,7 +1113,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82191" name="Blessed Exalted Robe Set Box" additionalName="Robe" type="EtcItem">
-		<!-- Contains Exalted robe set. Double-click to obtain Blessed Exalted Robe Set and 5 types of Blessed Exalted Accessories, Blessed Exalted Circlet, Blessed Exalted Seed Bracelet, Exalted Weapon Augmenting Stone, Exalted Soul Crystal, Exalted Talisman of Longing, Exalted Sayha's Talisman. Can be transferred within the account before being opened. Note! Supply Pack cannot be obtained. -->
+		<!-- Contains Exalted robe set. Double-click to obtain Blessed Exalted Robe Set and 5 types of Blessed Exalted Accessories, Blessed Exalted Circlet, Blessed Exalted Seed Bracelet, Augmenting Stone: Exalted Weapon, Exalted Soul Crystal, Exalted Talisman of Longing, Exalted Sayha's Talisman. Can be transferred within the account before being opened. Note! Supply Pack cannot be obtained. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1135,7 +1134,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="82193" name="Artifact - Damage" additionalName="Balance" type="Armor">
-		<!-- An artifact that increases Damage. Can be equipped in a balance artifact slot. Damage +11% Cannot be upgraded. -->
+		<!-- An artifact that increases damage. Can be equipped in a balance artifact slot. Damage +11% Cannot be upgraded. -->
 		<set name="icon" val="icon.artifact_a_upgrade_1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
@@ -1155,7 +1154,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="82195" name="Harvest Festival's Gift Pouch" additionalName="Event" type="EtcItem">
-		<!-- Full Moon put a special gift inside this pouch to celebrate Harvest Festival. You can obtain 1 item. -->
+		<!-- A gift for the anniversary of Lineage 2. Double-click to obtain Master Yogi's Staff or +16 Master Yogi's Staff Pack, Scroll: Enchant Master Yogi's Weapon (20 pcs.) and up to 9 anniversary items. -->
 		<set name="icon" val="icon.christmas_card_box2" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1169,8 +1168,8 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<!-- Chance 85% -->
-			<item id="81367" min="1" max="1" chance="42.5" /> <!-- Songpyeon Event -->
-			<item id="48225" min="1" max="1" chance="42.5" /> <!-- Multicolored Songpyeon Event -->
+			<item id="81367" min="1" max="1" chance="42.5" /> <!-- Vitality Recovering Honey Rice Cakes - Event -->
+			<item id="48225" min="1" max="1" chance="42.5" /> <!-- Harvest Festival's Five-colored Sweets - Event -->
 			<!-- Chance 10% -->
 			<item id="30297" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex -->
 			<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
@@ -1213,13 +1212,13 @@
 			<item id="47428" min="12" max="12" chance="4.95" /> <!-- Freya's Scroll of Storm -->
 			<item id="47820" min="1" max="1" chance="4.95" /> <!-- Sayha's Talisman Pack Lv. 9 -->
 			<item id="47821" min="1" max="1" chance="4.95" /> <!-- Sayha's Talisman Pack Lv. 10 -->
-			<item id="48497" min="4" max="4" chance="4.95" /> <!-- Glowing Dragon's Attribute Potion XP -->
+			<item id="48497" min="4" max="4" chance="4.95" /> <!-- Glowing Dragon's Attribute Potion - XP -->
 			<item id="48642" min="4" max="4" chance="4.95" /> <!-- Shining Nevit's Gold Hourglass -->
 			<item id="48666" min="1" max="1" chance="0.5" /> <!-- Low-grade Dragon Weapon Pack -->
 			<item id="48667" min="1" max="1" chance="0.25" /> <!-- Mid-grade Dragon Weapon Pack -->
 			<item id="48830" min="4" max="4" chance="4.95" /> <!-- Freya's Ice Rose -->
-			<item id="48907" min="1" max="1" chance="4.95" /> <!-- Shillien's Soul Crystal Lv. 9 Weapon -->
-			<item id="48908" min="1" max="1" chance="4.95" /> <!-- Shillien's Soul Crystal Lv. 10 Weapon -->
+			<item id="48907" min="1" max="1" chance="4.95" /> <!-- Shillien's Soul Crystal Lv. 9 - Weapon -->
+			<item id="48908" min="1" max="1" chance="4.95" /> <!-- Shillien's Soul Crystal Lv. 10 - Weapon -->
 			<item id="80663" min="1" max="1" chance="0.25" /> <!-- High-grade Dragon Weapon Pack -->
 			<item id="80842" min="4" max="4" chance="4.95" /> <!-- Honey Dark Beer -->
 			<item id="80958" min="1" max="1" chance="4.95" /> <!-- Sealed Heavenly Talisman -->

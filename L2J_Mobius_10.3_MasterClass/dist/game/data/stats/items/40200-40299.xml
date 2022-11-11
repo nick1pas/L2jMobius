@@ -114,13 +114,13 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="40208" name="Throwaway Item 1" additionalName="Not used" type="EtcItem">
-		<!-- Unidentified Helios weapon. Double-click to see whether you got a normal or blessed weapon. -->
+		<!-- An unidentified Helios weapon. Double-click to obtain either a standard or a blessed weapon. -->
 		<set name="icon" val="icon.weapon_aspeda_i00" />
 		<set name="crystal_type" val="R" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="40209" name="Throwaway Item 1" additionalName="Not used" type="EtcItem">
-		<!-- Unidentified Eternal armor. Double-click to see whether you got normal or blessed armor. -->
+		<!-- Unidentified Eternal armor. Double-click to obtain either a standard or a blessed armor. -->
 		<set name="icon" val="icon.weapon_aspeda_i00" />
 		<set name="crystal_type" val="R" />
 		<set name="material" val="FISH" />
@@ -227,7 +227,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="40219" name="Appearance Stone: Cat Fighter (Ertheia Only)" additionalName="90-day" type="EtcItem">
-		<!-- Changes the appearance of a fist weapon into that of a Cat Fighter for 90 days. Note!. Modified items can be equipped by Ertheia only. Choose new appearance carefully. -->
+		<!-- Changes the appearance of a fist weapon into that of a Cat Fighter for 90 days. Note! Modified items can be equipped by Ertheia only. Choose new appearance carefully. -->
 		<set name="icon" val="icon.shape_shifting_dualfist_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -244,7 +244,7 @@
 		</skills>
 	</item>
 	<item id="40220" name="Appearance Stone: Cat Staff (Ertheia Only)" additionalName="90-day" type="EtcItem">
-		<!-- Changes the appearance of a two-handed staff to that of a Cat Staff for 90 days. Note!. Modified items can be equipped by Ertheia only. Choose new appearance carefully. -->
+		<!-- Changes the appearance of a two-handed staff to that of a Cat Staff for 90 days. Note! Modified items can be equipped by Ertheia only. Choose new appearance carefully. -->
 		<set name="icon" val="icon.shape_shifting_magic_twohand_blunt_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -285,7 +285,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40224" name="Minstrel's Scroll of Escape: Aden" type="EtcItem">
-		<!-- Scroll given as a gift. Teleoprts you to the Town of Aden. -->
+		<!-- A scroll given as a gift. Takes you to Town of Aden. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i03" />
 		<set name="weight" val="30" />
 		<set name="is_tradable" val="false" />
@@ -316,7 +316,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40227" name="Freya's Frozen Scroll" type="EtcItem">
-		<!-- For 10 min., Vitality Consumption +100%, acquired XP/ SP +100%. The effect remains after death. Cooldown: 9 min. Can be used only when 1 or more Vitality bar is full. Cannot be used in the Olympiad. The effect does not stack with those of Freya's Scroll of Storm, Maphr's Wind Scroll, Dandy's Scroll: Challenge, Emperor's Growth Scroll, Scroll: Midsummer Passion, Vital Wind, Wind of Bard. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +100%, acquired XP/ SP +100%. The effect remains after death. Cooldown: 9 min. Available if 1 or more Vitality bar is full. Cannot be used in the Olympiad. Does not stack with the Freya's Scroll of Blessing, Freya's Scroll of Storm and Maphr's Scroll of Storm effects. -->
 		<set name="icon" val="icon.freya_scroll" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -332,7 +332,7 @@
 		</skills>
 	</item>
 	<item id="40228" name="Freya's Wish Box" type="EtcItem">
-		<!-- Double-click to obtain a very rare item at a random rate. -->
+		<!-- Double-click to obtain a rare and valuable item. -->
 		<set name="icon" val="icon.freya_box_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -341,7 +341,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40229" name="Sirra's Wish Box" type="EtcItem">
-		<!-- Double-click for a chance to obtain one of the following items: Lucky Enchant Stone, High-grade Lucky Enchant Stone, Blessed Lucky Enchant Stone, Elemental Shirt Pack, Dark/ Bloody Eternal Enhancement Stone, Blessed High-grade Lucky Enchant Stone, Freya's Lucky Enchant Stone, or a Dark/ Bloody Helios Enhancement Stone. -->
+		<!-- Double-click to obtain various Enchant Stones and Dark/ Bloody Helios Enhancement Stone. -->
 		<set name="icon" val="icon.freya_box_i02" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -359,7 +359,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40231" name="Freya's Frozen Scroll" additionalName="Event" type="EtcItem">
-		<!-- For 10 min., Vitality Consumption +100%, acquired XP/ SP +100%. The effect remains after death. Cooldown: 9 min. Can be used only when 1 or more Vitality bar is full. Cannot be used in the Olympiad. The effect does not stack with those of Freya's Scroll of Storm, Maphr's Wind Scroll, Dandy's Scroll: Challenge, Emperor's Growth Scroll, Scroll: Midsummer Passion, Vital Wind, Wind of Bard. -->
+		<!-- For 10 min. while hunting, Vitality Consumption +100%, acquired XP/ SP +100%. The effect remains after death. Cooldown: 9 min. Available if 1 or more Vitality bar is full. Cannot be used in the Olympiad. Does not stack with the Freya's Scroll of Blessing, Freya's Scroll of Storm and Maphr's Scroll of Storm effects. -->
 		<set name="icon" val="icon.freya_scroll" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -404,7 +404,7 @@
 		</skills>
 	</item>
 	<item id="40234" name="Giant's Energy 3-unit Pack" type="EtcItem">
-		<!-- Double-click to obtain 3 Giant's Energy. -->
+		<!-- Double-click to obtain Giant's Energy (3 pcs.). -->
 		<set name="icon" val="icon.etc_exchange_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -434,7 +434,7 @@
 		</capsuled_items>
 	</item>
 	<item id="40236" name="Giant's Energy 100-unit Pack" type="EtcItem">
-		<!-- Double-click to obtain 100 Giant's Energy. -->
+		<!-- Double-click to obtain Giant's Energy (100 pcs.). -->
 		<set name="icon" val="icon.etc_exchange_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -449,7 +449,7 @@
 		</capsuled_items>
 	</item>
 	<item id="40237" name="Agathion Freya" additionalName="30-day" type="Armor">
-		<!-- Summons Agathion Freya. Available for 30 d. Cannot be used in the Olympiad. <Active skill>. 1. Freya's Teleport: Aden/ Rune/ Talking Island Village. Cooldown: 30 min. <Item skills>. 2. Freya's Mind: Confusion Resistance +10%, Water Resistance +10. 2. Freya's Strength: STR/ INT/ CON/ DEX/ WIT/ MEN +1. 3. Freya's Magic: P./ M. Skill MP Consumption -3%. -->
+		<!-- Summons Agathion Freya. Available for 30 d. Cannot be used in the Olympiad. <Active skill> 1. Freya's Teleport: Aden/ Rune/ Talking Island Village. Cooldown: 30 min. <Item skills> 2. Freya's Mind: Confusion Resistance +10%, Water Resistance +10. 2. Freya's Strength: STR/ INT/ CON/ DEX/ WIT/ MEN +1. 3. Freya's Magic: P./ M. Skill MP Consumption -3%. -->
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -492,7 +492,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="40240" name="Dark Assassin Suit" type="Armor">
-		<!-- Dark Assassin Suit. Equipping this disables armor. Hair accessories, weapons, and magic armor remain equipped. -->
+		<!-- Dark Assassin Suit. Equipped instead of armor. Head accessories, weapons, and accessories remain equipped. -->
 		<set name="icon" val="icon.dark_assassin" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="alldress" />
@@ -504,7 +504,7 @@
 		</stats>
 	</item>
 	<item id="40241" name="Freya's Frozen Lamp" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain a Freya's Frozen Scroll. Cannot be used in the Olympiad. -->
+		<!-- Double-click to obtain Freya's Frozen Scroll - Event. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.freya_lamp" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -514,7 +514,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="40242" name="Agathion Freya Pack" type="EtcItem">
-		<!-- Double-click to obtain Agathion Freya Charm (30-day). Cannot be used in the Olympiad. -->
+		<!-- Double-click to obtain Agathion Charm: Freya (30-day). Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_pi_box_wish_pack" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -763,7 +763,7 @@
 		</stats>
 	</item>
 	<item id="40253" name="Potion of Protection: Confusion" type="EtcItem">
-		<!-- When used, Confusion Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Confusion Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i01" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -778,7 +778,7 @@
 		</skills>
 	</item>
 	<item id="40254" name="Potion of Protection: Obstruction" type="EtcItem">
-		<!-- When used, Obstruction Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Obstruction Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i06" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -793,7 +793,7 @@
 		</skills>
 	</item>
 	<item id="40255" name="Potion of Protection: Infection" type="EtcItem">
-		<!-- When used, Infection Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Infection Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i00" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -808,7 +808,7 @@
 		</skills>
 	</item>
 	<item id="40256" name="Potion of Protection: Confusion" type="EtcItem">
-		<!-- When used, Confusion Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Confusion Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i07" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -823,7 +823,7 @@
 		</skills>
 	</item>
 	<item id="40257" name="Potion of Protection: Confusion" type="EtcItem">
-		<!-- When used, Confusion Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Confusion Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i04" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
@@ -839,7 +839,7 @@
 		</skills>
 	</item>
 	<item id="40258" name="Potion of Protection: Stupor" type="EtcItem">
-		<!-- When used, Stupor Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Stupor Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i05" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -854,7 +854,7 @@
 		</skills>
 	</item>
 	<item id="40259" name="Potion of Protection: Infection" type="EtcItem">
-		<!-- When used, Infection Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Infection Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i02" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -869,7 +869,7 @@
 		</skills>
 	</item>
 	<item id="40260" name="Potion of Protection: Confusion" type="EtcItem">
-		<!-- When used, Confusion Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Confusion Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i10" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -884,7 +884,7 @@
 		</skills>
 	</item>
 	<item id="40261" name="Potion of Protection: Confusion" type="EtcItem">
-		<!-- When used, Confusion Resistance +5%, Received PvP Damage -3%. Cannot be used in the Olympiad. Does not stack when used with other Potions of Protection. -->
+		<!-- When used, Confusion Resistance +5%, received PvP damage -3%. Cannot be used in the Olympiad. The effect does not stack with other Potions of Protection. -->
 		<set name="icon" val="icon.etc_fruit_juice_glass_bottle_i11" />
 		<set name="weight" val="10" />
 		<set name="etcitem_type" val="POTION" />
@@ -1086,7 +1086,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40273" name="Ertheia's Boost Scroll" type="EtcItem">
-		<!-- For +30 min., P./ M. Atk. +30%, Critical Damage for standard attacks +15%, P. Skill Critical Damage +15%, M. Skill Critical Damage +15%, Speed +20. MP Consumption -15%. -->
+		<!-- For 30 min., P./ M. Atk. +30%, Critical Damage for basic attacks +15%, P. Skill Critical Damage +15%, M. Skill Critical Damage +15%, Speed +20, MP Consumption -15%. -->
 		<set name="icon" val="icon.etc_scroll_of_transformation_traikan_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1096,7 +1096,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40274" name="Buff Helmet" type="Armor">
-		<!-- Uses 2 hair accessory slots. -->
+		<!-- Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1105,7 +1105,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40275" name="Buff Helmet" additionalName="STR" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. STR +3. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, STR +3. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1114,7 +1114,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40276" name="Buff Helmet" additionalName="DEX" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. DEX +3. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, DEX +3. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1123,7 +1123,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40277" name="Buff Helmet" additionalName="CON" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. CON +3. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, CON +3. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1132,7 +1132,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40278" name="Buff Helmet" additionalName="MEN" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. MEN +3. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, MEN +3. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1141,7 +1141,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40279" name="Buff Helmet" additionalName="INT" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. INT +3. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, INT +3. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1150,7 +1150,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40280" name="Buff Helmet" additionalName="WIT" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. WIT +3. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, WIT +3. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1159,7 +1159,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40281" name="Buff Helmet" additionalName="Critical Rate" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. When equipped, Critical Rate for standard attacks +50. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1168,7 +1168,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40282" name="Buff Helmet" additionalName="Critical Damage" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1177,7 +1177,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40283" name="Buff Helmet" additionalName="P. Def." type="Armor">
-		<!-- Uses 2 Hair Accessory slots. P. Def. +5%. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, P. Def. +5%. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1186,7 +1186,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40284" name="Buff Helmet" additionalName="M. Def." type="Armor">
-		<!-- Uses 2 Hair Accessory slots. M. Def. +5%. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, M. Def. +5%. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1195,7 +1195,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40285" name="Buff Helmet" additionalName="Evasion" type="Armor">
-		<!-- Uses 2 Hair Accessory slots. Evasion +5. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, Evasion +5. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1204,7 +1204,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40286" name="Buff Helmet" additionalName="P. Atk." type="Armor">
-		<!-- Uses 2 Hair Accessory slots. P. Atk. +5%. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, P. Atk. +5%. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1213,7 +1213,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40287" name="Buff Helmet" additionalName="M. Atk." type="Armor">
-		<!-- Uses 2 Hair Accessory slots. M. Atk. +10%. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, M. Atk. +10%. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1222,7 +1222,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="40288" name="Buff Helmet" additionalName="Accuracy" type="Armor">
-		<!-- Uses 2 hair accessory slots. P. Accuracy +5. -->
+		<!-- Equipped in 2 head accessory slots. When equipped, P. Accuracy +5. -->
 		<set name="icon" val="icon.buff_helmet" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1252,7 +1252,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="40291" name="Steel Demon's Staff - Magic Chaos" type="Weapon">
-		<!-- <Special Option>. Has a 7% chance of inflicting Curse Chaos on target when using a magical skill on them. Cannot augment or bestow a Soul Crystal option. -->
+		<!-- <Special Option> Has a 7% chance of inflicting Curse Chaos on target when using a magical skill on them. Cannot augment or bestow a Soul Crystal option. -->
 		<set name="icon" val="icon.weapon_demons_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1277,7 +1277,7 @@
 		</stats>
 	</item>
 	<item id="40292" name="Steel Spirit's Staff - Mental Shield" type="Weapon">
-		<!-- <Special Option>. Has a 50% chance of inflicting Mental Shield on target when using a magical skill on them. Cannot augment or bestow a Soul Crystal option. -->
+		<!-- <Special Option> Has a 50% chance of inflicting Mental Shield on target when using a magical skill on them. Cannot augment or bestow a Soul Crystal option. -->
 		<set name="icon" val="icon.weapon_sprites_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1302,7 +1302,7 @@
 		</stats>
 	</item>
 	<item id="40293" name="Steel Dasparion's Staff - Acumen" type="Weapon">
-		<!-- <Special Option>. Casting Spd. +15%. PvP damage increased. Cannot augment or bestow a Soul Crystal option. -->
+		<!-- <Special Option> Casting Spd. +15%. PvP damage increased. Cannot augment or bestow a Soul Crystal option. -->
 		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1327,7 +1327,7 @@
 		</stats>
 	</item>
 	<item id="40294" name="Steel Imperial Staff - Empower" type="Weapon">
-		<!-- <Special Option>. M. Atk. +60. PvP damage increased. Cannot augment or bestow a Soul Crystal option. -->
+		<!-- <Special Option> M. Atk. +60. PvP damage increased. Cannot augment or bestow a Soul Crystal option. -->
 		<set name="icon" val="icon.weapon_imperial_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1352,7 +1352,7 @@
 		</stats>
 	</item>
 	<item id="40295" name="Steel Dynasty Staff - Acumen" type="Weapon">
-		<!-- <Special Option>. Casting Spd. +15%. PvP damage increased. Cannot augment or bestow a Soul Crystal option. -->
+		<!-- <Special Option> Casting Spd. +15%. PvP damage increased. Cannot augment or bestow a Soul Crystal option. -->
 		<set name="icon" val="icon.weapon_dynasty_twohand_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1377,7 +1377,7 @@
 		</stats>
 	</item>
 	<item id="40296" name="Monster Weapon Appearance Stone: Turikki's Blunt Weapon" type="EtcItem">
-		<!-- Changes the appearance of a one-handed blunt weapon into that of a Turikki's Blunt Weapon. An appearance-modified item has no change in abilities. Double-click to use. -->
+		<!-- Changes the appearance of a one-handed blunt weapon to that of Turikki's Blunt Weapon. Doesn't affect the item's stats. Double-click to use. -->
 		<set name="icon" val="icon.shape_shifting_blunt_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
@@ -1385,7 +1385,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="40297" name="Monster Weapon Appearance Stone: Tayga Archer's Bow" type="EtcItem">
-		<!-- Changes the appearance of a bow into that of a Tayga Archer's Bow. An appearance-modified item has no change in abilities. Double-click to use. -->
+		<!-- Changes the appearance of a bow to that of Tayga Archer's Bow. Doesn't affect the item's stats. Double-click to use. -->
 		<set name="icon" val="icon.shape_shifting_bow_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />

@@ -604,7 +604,7 @@
 		</stats>
 	</item>
 	<item id="29330" name="Fragment of Lindvior Guardian of Seven Deadly Sins" additionalName="1-hour" type="Weapon">
-		<!-- Take this fragment along with Dragon Claw Coupon to Snake to exchange for High-grade Lindvior Shooter of Seven Deadly Sins (1-hour). Cannot be used in the Olympiad or the Ceremony of Chaos. Cannot be enchanted, crystallized, modified, augmented, or assigned an attribute. -->
+		<!-- Take this fragment along with Dragon Claw Coupon to Snake to exchange for High-grade Lindvior Guardian of Seven Deadly Sins (1-hour). Cannot be used in the Olympiad or the Ceremony of Chaos. Cannot be enchanted, crystallized, modified, augmented, or assigned an attribute. -->
 		<set name="icon" val="icon.weapon_lind_crossbow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="crystal_type" val="R" />
@@ -1262,7 +1262,7 @@
 		<set name="time" val="10080" />
 	</item>
 	<item id="29360" name="+5 Agathion Hawk Lv. 3 (7-day) Pack" type="EtcItem">
-		<!-- Double-click to obtain +5 Agathion Hawk Charm Lv. 3 (7-day). -->
+		<!-- Double-click to obtain +5 Agathion Charm: Hawk Lv. 3 (7-day). -->
 		<set name="icon" val="icon.sayha2017_box_i02" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -1297,7 +1297,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29363" name="Hero's Cheering Cube" type="EtcItem">
-		<!-- Hero's cheering cube. Obtain Freya's Art of Seduction - EXP x2. When used 10 times, obtain Dandy's Home Run Ball x5, when used 20 times, obtain Vitality Maintaining Potion (30-min.) x10, and when used 30 times, obtain Elk Bracelet (7-day). -->
+		<!-- Double-click to obtain Freya's Art of Seduction - XP (2 pcs.). When used 10 times, you will get Dandy's Home Run Ball (5 pcs.), for 20 times - Vitality Maintaining Potion (30-min.) (10 pcs.), and for 30 times - Elk Bracelet (7-day). -->
 		<set name="icon" val="icon.bm_balthus_cube" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1306,7 +1306,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29364" name="Hero's Support Box" type="EtcItem">
-		<!-- Double-click to obtain Nevit's Rune (Dragon's Ascension) - 7 days, Freya's Art of Seduction - EXP (10 pcs.), Dandy's Home Run Ball (3 pcs.), Hero's Mark (250 pcs.), Hero's High-grade Support Box. For characters of level. 85 or higher. -->
+		<!-- Double-click to obtain Nevit's Rune (Dragon's Ascension) - 7-day, Freya's Art of Seduction - XP (10 pcs.), Dandy's Home Run Ball (3 pcs.), Hero's Mark (250 pcs.), Hero's High-grade Support Box. Required level: 85+. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1342,7 +1342,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29367" name="New User Sprout" additionalName="30-day" type="Armor">
-		<!-- Special hair accessory for heroes who just started their adventures in the world of Aden. -->
+		<!-- A special head accessory for Aden's new players. -->
 		<set name="icon" val="icon.s_newbie_user_display" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -1437,7 +1437,7 @@
 		</capsuled_items>
 	</item>
 	<item id="29374" name="Eternal Armor Pack (Heavy)" type="EtcItem">
-		<!-- Double-click to acquire one Heavy Eternal armor set. -->
+		<!-- Double-click to obtain Eternal heavy armor set. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="material" val="FISH" />
@@ -1490,7 +1490,7 @@
 		</capsuled_items>
 	</item>
 	<item id="29377" name="Peeves' Red Potion" type="EtcItem">
-		<!-- For 30 min., Acquired XP/ SP +30%, Vitality Bonus +30%, P./ M. Atk. and P./ M. Def. +15%. -->
+		<!-- For 30 min., acquired XP/ SP +30%, Vitality bonus +30%, P. Atk./ M. Atk./ P. Def./ M. Def. +15%. -->
 		<set name="icon" val="BranchIcon.etc_sign_agathion_feed_red_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1498,7 +1498,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29378" name="Peeves' Yellow Potion" type="EtcItem">
-		<!-- Recharges a certain amount of Vitality when used. No weekly usage limit. -->
+		<!-- Recharges a certain amount of Vitality when used. No limitations on use. -->
 		<set name="icon" val="BranchIcon.etc_sign_agathion_feed_yellow_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -1506,7 +1506,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29379" name="Peeves' Purple Potion" type="EtcItem">
-		<!-- For 30 min., acquired XP/ SP +50%, Vitality and SP Bonus +50%, and P./ M. Atk., P./ M. Def., P. Critical Damage/ Skill Power +15%. Cannot stack with Peeves' Red Potion. -->
+		<!-- For 30 min., acquired XP/ SP +50%, Vitality bonus +50%, P. Atk./ P. Def./ M. Atk./ M. Def., Critical Damage for basic attacks, P./ M. Skill Power +15%. The effect does not stack with that of Peeves' Red Potion. -->
 		<set name="icon" val="BranchIcon.etc_sign_agathion_feed_purple_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1554,7 +1554,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29384" name="Jewel Box Lv. 4" type="EtcItem">
-		<!-- Double-click to obtain a La Vie En Rose's Jewelry of Lv. 4. -->
+		<!-- Double-click to obtain one of Lv. 4 La Vie En Rose's jewels. -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -1562,7 +1562,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29385" name="Jewel Box Lv. 5" type="EtcItem">
-		<!-- Double-click to obtain a La Vie En Rose's Jewelry of Lv. 5. -->
+		<!-- Double-click to obtain one of Lv. 5 La Vie En Rose's jewels. -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="material" val="LEATHER" />
@@ -1733,7 +1733,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29398" name="Ancient Relic Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Sayha's Talisman Pack Lv. 7-8, Noble Knight's/ Wizard's/ Warrior's Circlet, Kaliel's Energy Longing, Ultimate Jewelry Box Lv. 3-4, Noble Circlet Upgrade Stone, Dimensional Bracelet Pack Lv. 6 (CHA +5/ Basic), Freya's Bloody/ Dark Rune (30-day) Pack, Starlight Jar, Low-grade Zodiac Agathion Box, Dark/ Bloody Eternal Enhancement Stone, Lv. 5 Legendary CHA Dye Pack, Lv. 5 Legendary Dye Pack, Top-grade Spirit Stone, Giant's Scroll: Enchant R-grade Weapon, Dimensional Bracelet Enhancement Stone Pack, Superior Giant's Codex - Chapter 1, Pa'agrio's Blessing XP/ Might, Freya's Art of Seduction XP/ Barrier, Energy of Destruction 20-unit Pack, Giant's Energy 3-unit Pack, Giant's Scroll: Enchant R-grade Armor, Freya's CHA Potion, Package: Scroll: Enchant R-grade Armor (2 pcs.)/ Weapon (1 pcs.), Package: Blessed Lucky Enchant Stone: R-grade Armor (2 pcs.)/ Weapon (1 pcs.), Bottle Fragment of Antharas' (4 pcs.)/ Valakas' Soul (5 pcs.), R-grade Gemstone (10 pcs.). -->
+		<!-- Double-click to obtain one of the following items: Sayha's Talisman Pack Lv. 7-8, Noble Knight's/ Wizard's/ Warrior's Circlet, Kaliel's Energy of Longing, Ultimate Jewelry Box Lv. 3-4, Noble Circlet Upgrade Stone, Dimensional Bracelet Pack Lv. 6 (CHA +5/ Basic), Freya's Bloody/ Dark Rune (30-day) Pack, Starlight Jar, Low-grade Zodiac Agathion Box, Dark/ Bloody Eternal Enhancement Stone, Lv. 5 Legendary CHA Dye Pack, Lv. 5 Legendary Dye Pack, Top-grade Spirit Stone, Giant's Scroll: Enchant R-grade Weapon, Dimensional Bracelet Enhancement Stone Pack, Superior Giant's Codex - Chapter 1, Pa'agrio's Blessing XP/ Might, Freya's Art of Seduction XP/ Barrier, Energy of Destruction 20-unit Pack, Giant's Energy 3-unit Pack, Giant's Scroll: Enchant R-grade Armor, Freya's CHA Potion, Package: Scroll: Enchant R-grade Armor (2 pcs.)/ Weapon (1 pcs.), Package: Blessed Stone: Enchant R-grade Armor (2 pcs.)/ Weapon (1 pcs.), Bottle Fragment of Antharas' (4 pcs.)/ Valakas' Soul (5 pcs.), R-grade Gemstone (10 pcs.). -->
 		<set name="icon" val="icon.bm_dragon_present_3" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -1741,7 +1741,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29399" name="Shining Ancient Relic Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Ultimate Jewelry Box Lv. 4/ Lv. 5, Lindvior's Earring, Blessed Valakas' Necklace, Blessed Antharas' Earring, Mystic Soul Crystal, Sealed Talisman of Insanity/ Longing, Red Starlight Jar, Ancient Zodiac Agathion Charm Book of Growth, Mystic Soul Crystal Fragment, Life Stone: Giant's Power, Royal R99-grade White Save Ticket, Package: Lesser Giant's Lucky Enchant Stone: R-grade Weapon/ Armor, R99-grade Scroll of Blessing, Freya's Rune (30-day) Box, Apparition Stone (All-purpose), Life Stone: Giant's Power, Giant's Energy 100-unit Pack, Superior Giant's Codex - Mastery (2 pcs.)/ Mastery Chapter 1, Source of the Emperor, Package: Eva's Rune (3-day) - Event, Pa'agrio's Blessing Might (5 pcs.), Freya's Art of Seduction Barrier (5 pcs.). -->
+		<!-- Double-click to obtain one of the following items: Ultimate Jewelry Box Lv. 4/ Lv. 5, Lindvior's Earring, Blessed Valakas' Necklace, Blessed Antharas' Earring, Mystic Soul Crystal, Sealed Talisman of Insanity/ Longing, Red Starlight Jar, Ancient Zodiac Agathion Charm Book of Growth, Mystic Soul Crystal Fragment, Life Stone: Giant's Power, Royal R99-grade White Save Ticket, Package: Lesser Giant's Stone: Enchant R-grade Weapon/ Armor, R99-grade Scroll of Blessing, Freya's Rune (30-day) Box, Apparition Stone (All-purpose), Life Stone: Giant's Power, Giant's Energy 100-unit Pack, Superior Giant's Codex - Mastery (2 pcs.)/ Mastery Chapter 1, Source of the Emperor, Package: Eva's Rune (3-day) - Event, Pa'agrio's Blessing Might (5 pcs.), Freya's Art of Seduction Barrier (5 pcs.). -->
 		<set name="icon" val="icon.bm_dragon_present_4" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />

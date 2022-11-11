@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="96300" name="Spellbook: Dragon Slayer" type="EtcItem">
-		<!-- Required for learning the Dragon Slayer transformation. <Classes> All <Skill effect> Transforms into Dragon Slayer. Increases Max HP, Max MP, P. Atk./ M. Atk./ P. Def./ M. Def., Atk. Spd., Casting Spd. -->
+		<!-- Required for learning the Dragon Slayer Transformation. <Classes> All classes <Skill effect> Transforms into Dragon Slayer. Increases Max HP, Max MP, P. Atk./ M. Atk./ P. Def./ M. Def., Atk. Spd., Casting Spd. -->
 		<set name="icon" val="icon.si_phanteon_book" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -11,7 +11,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96301" name="Package: +5 Breastplate of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t901_u_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -21,7 +21,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96302" name="Package: +5 Gaiters of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t901_l_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -31,7 +31,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96303" name="Package: +5 Leather Armor of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t902_u_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -41,7 +41,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96304" name="Package: +5 Leather Leggings of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t902_l_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -51,7 +51,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96305" name="Package: +5 Tunic of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t903_u_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -61,7 +61,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96306" name="Package: +5 Stockings of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t903_l_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -71,7 +71,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96307" name="Package: +5 Leather Armor of Lightning" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t101_u_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -81,7 +81,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96308" name="Package: +5 Leather Leggings of Lightning" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t102_l_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -91,7 +91,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96309" name="Package: +5 Ice Crystal Breastplate" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t94_u_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -101,7 +101,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96310" name="Package: +5 Ice Crystal Gaiters" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t94_l_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -111,7 +111,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96311" name="Package: +5 Flaming Tunic" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t96_u_i03" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -121,7 +121,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96312" name="Package: +5 Flaming Stockings" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t96_l_i03" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -131,7 +131,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96313" name="Package: +5 Helmet of Mana" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_leather_helmet_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -141,7 +141,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96314" name="Package: +5 Boots of Evasion" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t100_b_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -151,7 +151,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96315" name="Package: +5 Stun Gauntlets" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t96_g_i03" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -161,7 +161,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96316" name="Package: +5 Sigil of Inevitability" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.elos_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -171,7 +171,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96317" name="Package: +5 Shield of Vengeance" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.shield_of_revenge" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -181,7 +181,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96318" name="Package: +5 Helmet of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_leather_helmet_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -191,7 +191,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96319" name="Package: +5 Gauntlets of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t901_g_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -201,7 +201,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96320" name="Package: +5 Boots of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.armor_t901_b_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -211,7 +211,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96321" name="Package: +5 Sigil of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.sigil_of_protection" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -221,7 +221,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96322" name="Package: +5 Shield of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.shield_of_protection" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -231,7 +231,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96323" name="Package: Scroll: Boost Attack (1000 pcs.)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.scrl_of_ladies_silver_knife_01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -241,11 +241,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94269" min="1000" max="1000" chance="100" /> <!-- Package: XP Growth Scroll -->
+			<item id="94269" min="1000" max="1000" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96324" name="Package: Scroll: Boost Defense (1000 pcs.)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.scrl_of_ench_bracelet_lucien_01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -255,11 +255,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94271" min="1000" max="1000" chance="100" /> <!-- Package: XP Growth Scroll -->
+			<item id="94271" min="1000" max="1000" chance="100" /> <!-- Scroll: Boost Defense - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96325" name="Package: XP Growth Scroll (1000 pcs.)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_recall_exp_scroll" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -269,11 +269,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="49674" min="1000" max="1000" chance="100" /> <!-- Package: XP Growth Scroll -->
+			<item id="49674" min="1000" max="1000" chance="100" /> <!-- XP Growth Scroll - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96326" name="Package: Soulshot Ticket (5000 pcs.)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_exchange_ticket_i03" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -283,11 +283,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90907" min="5000" max="5000" chance="100" /> <!-- Soulshot Ticket -->
+			<item id="90907" min="5000" max="5000" chance="100" /> <!-- Soulshot Ticket - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96327" name="Package: Special HP Recovery Potion (1000 pcs.)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="BranchSys.icon.br_vitality_potion_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -297,7 +297,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="91690" min="1000" max="1000" chance="100" /> <!-- Special HP Recovery Potion -->
+			<item id="91690" min="1000" max="1000" chance="100" /> <!-- Special HP Recovery Potion - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96328" name="Support Box: +4 Talisman of Eva (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -455,7 +455,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="96189" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 5 (Time-limited) Sealed -->
+			<item id="96189" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 5 (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96342" name="Support Box: +5 Agathion Ignis (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -526,7 +526,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="96195" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 5 (Time-limited) Sealed -->
+			<item id="96195" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 5 (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96348" name="Support Box: Venir's Talisman Lv. 12 (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -579,7 +579,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96353" name="Package: Sayha's Storm (1000 pcs.)" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_sayha_storm" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -589,7 +589,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="91713" min="1000" max="1000" chance="100" /> <!-- Sayha's Storm 3 lvl -->
+			<item id="91713" min="1000" max="1000" chance="100" /> <!-- Sayha's Storm Lv. 3 -->
 		</capsuled_items>
 	</item>
 	<item id="96354" name="Scroll: Enchant Aden Cloak" type="EtcItem">

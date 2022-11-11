@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="94800" name="Kit: Dragon" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.strider_necklace_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -20,7 +20,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94801" name="Kit: Hawk" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.thunder_bird_necklace_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -33,13 +33,13 @@
 		<capsuled_items>
 			<item id="6645" min="50000" max="50000" chance="100" /> <!-- Beast Soulshot - Sealed -->
 			<item id="6646" min="20000" max="20000" chance="100" /> <!-- Beast Spiritshot - Sealed -->
-			<item id="94102" min="1" max="1" chance="100" /> <!-- Sealed Hawk Necklace - Sealed -->
+			<item id="94102" min="1" max="1" chance="100" /> <!-- Sealed Hawk's Necklace - Sealed -->
 			<item id="94636" min="100" max="100" chance="100" /> <!-- Pet's XP Growth Scroll - Sealed -->
 			<item id="94657" min="1" max="1" chance="100" /> <!-- Package: Pet Food 2000 pcs. - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94802" name="Zaken Doll" additionalName="7-day" type="EtcItem">
-		<!-- <Zaken Doll's Sorcery Lv. 2> Skill Critical Rate +40 HP Recovery +50 Skill Critical Damage +200 Vampiric Rage +2% (with a certain chance) Available for 7 d. Boosts parameters when in inventory. -->
+		<!-- <Zaken Doll's Sorcery Lv. 2> Skill Critical Rate +40 HP Recovery +50 Skill Critical Damage +200 Vampiric Rage +2% (with a certain chance) Available for 7 d. Boosts stats when in inventory. -->
 		<set name="icon" val="icon.bm_zaken_doll_30d" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -54,7 +54,7 @@
 		</skills>
 	</item>
 	<item id="94803" name="Core Doll" additionalName="7-day" type="EtcItem">
-		<!-- <Core Doll's Sorcery Lv. 2> Received Skill Critical Damage -10% Received Skill Critical Rate -5% Shock Resistance +20% Sleep Resistance +20% Knockback Resistance +10% Available for 7 d. Boosts parameters when in inventory. -->
+		<!-- <Core Doll's Sorcery Lv. 2> Received Skill Critical Damage -10% Received Skill Critical Rate -5% Shock Resistance +20% Sleep Resistance +20% Knockback Resistance +10% Available for 7 d. Boosts stats when in inventory. -->
 		<set name="icon" val="icon.bm_core_doll_30d" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -97,7 +97,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94806" name="Spellbook: Flying Dagger" type="EtcItem">
-		<!-- A spellbook for learning the Flying Dagger skill. <Classes> Adventurer Wind Rider Ghost Hunter <Skill effect> Throws a dagger at the target and infects them, decreasing their Atk. Spd./ Casting Spd./ Speed. -->
+		<!-- A spellbook for learning the Flying Dagger skill. <Classes> Adventurer Wind Rider Ghost Hunter <Skill effect> Throws a dagger at the target decreasing their Atk. Spd./ Casting Spd./ Speed. -->
 		<set name="icon" val="icon.etc_magic_book_red_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -164,7 +164,7 @@
 			<item id="94380" min="5" max="5" chance="30.0" /> <!-- Scroll: Boost Attack (Time-limited) - Sealed -->
 			<item id="94381" min="5" max="5" chance="30.0" /> <!-- Scroll: Boost Defense (Time-limited) - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.0" /> <!-- Elixir Powder - Sealed -->
-			<item id="94615" min="1" max="1" chance="3.9845" /> <!-- Forgotten Primeval Garden's Time Stone (Time-limited) - Sealed -->
+			<item id="94615" min="1" max="1" chance="3.9845" /> <!-- Forgotten Garden's Time Stone (Time-limited) - Sealed -->
 			<item id="94620" min="1" max="1" chance="3.9845" /> <!-- Primeval Isle's Time Stone (Time-limited) - Sealed -->
 			<item id="93448" min="1" max="1" chance="0.01" /> <!-- A-grade Weapon Coupon - Sealed -->
 			<item id="93449" min="1" max="1" chance="0.01" /> <!-- A-grade Armor Coupon - Sealed -->
@@ -191,7 +191,7 @@
 		<set name="price" val="5000000" />
 	</item>
 	<item id="94814" name="Aden Random Transformation Scroll (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- When used, activates one of the following transformations. <Available transformations> - Dragon Berserker - High Priest - Shark - Teddy Bear - Panda - Cat Duration: 20 min. Cooldown: 10 sec. -->
+		<!-- When used, activates one of the following transformations. <Available transformations> - Dragon Berserker - High Priest - Hanbok - Bear - Duration: 60 min. - Cooldown: 10 sec. - The effect remains after death. -->
 		<set name="icon" val="icon.random_transform_00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -285,9 +285,9 @@
 			<item id="91641" min="5" max="5" chance="1.748" /> <!-- Sayha's Blessing - Sealed -->
 			<item id="91690" min="30" max="30" chance="1.694" /> <!-- Special HP Recovery Potion - Sealed -->
 			<item id="91712" min="2" max="2" chance="1.694" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
-			<item id="92314" min="20" max="20" chance="1.694" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="5" max="5" chance="1.694" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="1" max="1" chance="1.694" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="20" max="20" chance="1.694" /> <!-- Giran Seal -->
+			<item id="92314" min="5" max="5" chance="1.694" /> <!-- Giran Seal -->
+			<item id="92314" min="1" max="1" chance="1.694" /> <!-- Giran Seal -->
 			<item id="93103" min="1" max="1" chance="1.694" /> <!-- Spellbook: Divine Beam -->
 			<item id="93268" min="1" max="1" chance="1.694" /> <!-- Improved Scroll: Enchant A-grade Weapon - Sealed -->
 			<item id="93269" min="1" max="1" chance="1.694" /> <!-- Improved Scroll: Enchant A-grade Armor - Sealed -->
@@ -297,16 +297,16 @@
 			<item id="94156" min="1" max="1" chance="1.694" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
 			<item id="94159" min="1" max="1" chance="1.694" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
 			<item id="94162" min="1" max="1" chance="1.694" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
-			<item id="94186" min="1" max="1" chance="1.694" /> <!-- Life Stone Lv. 2 - Weapon -->
-			<item id="94188" min="1" max="1" chance="1.694" /> <!-- Life Stone Lv. 2 - Armor -->
-			<item id="94208" min="1" max="1" chance="1.694" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94186" min="1" max="1" chance="1.694" /> <!-- Augmenting Stone: Weapon -->
+			<item id="94188" min="1" max="1" chance="1.694" /> <!-- Augmenting Stone: Armor -->
+			<item id="94208" min="1" max="1" chance="1.694" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94269" min="2" max="2" chance="1.694" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="2" max="2" chance="1.694" /> <!-- Scroll: Boost Defense - Sealed -->
-			<item id="94303" min="1" max="1" chance="1.694" /> <!-- Life Stone - Circlet -->
+			<item id="94303" min="1" max="1" chance="1.694" /> <!-- Augmenting Stone: Circlet -->
 			<item id="94328" min="1" max="1" chance="1.694" /> <!-- Elixir Powder - Sealed -->
 			<item id="94383" min="1" max="1" chance="1.694" /> <!-- Scroll: Enchant Rare Accessories -->
 			<item id="94385" min="1" max="1" chance="1.694" /> <!-- Improved Scroll: Enchant Rare Accessories -->
-			<item id="94423" min="1" max="1" chance="1.694" /> <!-- Life Stone - Accessories -->
+			<item id="94423" min="1" max="1" chance="1.694" /> <!-- Augmenting Stone: Accessory -->
 			<item id="94498" min="1" max="1" chance="1.694" /> <!-- Spellbook: Titan Champion -->
 			<item id="94508" min="1" max="1" chance="1.694" /> <!-- Spellbook: Cacophony of War -->
 			<item id="94513" min="1" max="1" chance="1.694" /> <!-- Package: Frintezza Doll Lv. 1 - Sealed -->
@@ -353,9 +353,9 @@
 			<item id="91173" min="1" max="1" chance="2.127" /> <!-- Lilith' Soul Crystal Lv. 1 - Rare -->
 			<item id="91178" min="1" max="1" chance="2.127" /> <!-- Lilith' Soul Crystal Lv. 6 - Rare -->
 			<item id="91550" min="1" max="1" chance="2.127" /> <!-- Frintezza's Necklace -->
-			<item id="92314" min="20" max="20" chance="2.127" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="10" max="10" chance="2.127" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="5" max="5" chance="2.158" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="20" max="20" chance="2.127" /> <!-- Giran Seal -->
+			<item id="92314" min="10" max="10" chance="2.127" /> <!-- Giran Seal -->
+			<item id="92314" min="5" max="5" chance="2.158" /> <!-- Giran Seal -->
 			<item id="93103" min="1" max="1" chance="2.127" /> <!-- Spellbook: Divine Beam -->
 			<item id="93268" min="1" max="1" chance="2.127" /> <!-- Improved Scroll: Enchant A-grade Weapon - Sealed -->
 			<item id="93269" min="1" max="1" chance="2.127" /> <!-- Improved Scroll: Enchant A-grade Armor - Sealed -->
@@ -365,7 +365,7 @@
 			<item id="94156" min="1" max="1" chance="2.127" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
 			<item id="94159" min="1" max="1" chance="2.127" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
 			<item id="94162" min="1" max="1" chance="2.127" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
-			<item id="94208" min="1" max="1" chance="2.127" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="2.127" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.127" /> <!-- Elixir Powder - Sealed -->
 			<item id="94383" min="1" max="1" chance="2.127" /> <!-- Scroll: Enchant Rare Accessories -->
 			<item id="94385" min="1" max="1" chance="2.127" /> <!-- Improved Scroll: Enchant Rare Accessories -->
@@ -422,7 +422,7 @@
 			<item id="94156" min="1" max="1" chance="2.380" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
 			<item id="94159" min="1" max="1" chance="2.380" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
 			<item id="94162" min="1" max="1" chance="2.380" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
-			<item id="94208" min="1" max="1" chance="2.380" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94208" min="1" max="1" chance="2.380" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.42" /> <!-- Elixir Powder - Sealed -->
 			<item id="94383" min="1" max="1" chance="2.380" /> <!-- Scroll: Enchant Rare Accessories -->
 			<item id="94385" min="1" max="1" chance="2.380" /> <!-- Improved Scroll: Enchant Rare Accessories -->
@@ -466,7 +466,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94822" name="Package: +7 Cloak of Protection" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_2018_sayha_cloak_back_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -480,7 +480,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94823" name="Boss' Weapon Pack" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.zariche_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -549,7 +549,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94826" name="Olympiad Treasure Chest" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i11" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -592,7 +592,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="92314" min="60" max="60" chance="100" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="60" max="60" chance="100" /> <!-- Giran Seal -->
 			<item id="94219" min="1" max="1" chance="100" /> <!-- Boss' Accessory Fragment (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
@@ -637,7 +637,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94832" name="Special Spellbook Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.sayha2017_box_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -683,9 +683,9 @@
 			<item id="91173" min="1" max="1" chance="1.818" /> <!-- Lilith' Soul Crystal Lv. 1 - Rare -->
 			<item id="91550" min="1" max="1" chance="1.818" /> <!-- Frintezza's Necklace -->
 			<item id="91641" min="5" max="5" chance="1.818" /> <!-- Sayha's Blessing - Sealed -->
-			<item id="92314" min="50" max="50" chance="1.818" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="20" max="20" chance="1.818" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="10" max="10" chance="1.828" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="50" max="50" chance="1.818" /> <!-- Giran Seal -->
+			<item id="92314" min="20" max="20" chance="1.818" /> <!-- Giran Seal -->
+			<item id="92314" min="10" max="10" chance="1.828" /> <!-- Giran Seal -->
 			<item id="92920" min="1" max="1" chance="1.818" /> <!-- Lilith' Soul Crystal Lv. 11 - Rare -->
 			<item id="92925" min="1" max="1" chance="1.818" /> <!-- Anakim's Soul Crystal Lv. 11 - Rare -->
 			<item id="93268" min="1" max="1" chance="1.818" /> <!-- Improved Scroll: Enchant A-grade Weapon - Sealed -->
@@ -696,13 +696,13 @@
 			<item id="94156" min="1" max="1" chance="1.818" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
 			<item id="94159" min="1" max="1" chance="1.818" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
 			<item id="94162" min="1" max="1" chance="1.818" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
-			<item id="94186" min="1" max="1" chance="1.818" /> <!-- Life Stone Lv. 2 - Weapon -->
-			<item id="94188" min="1" max="1" chance="1.818" /> <!-- Life Stone Lv. 2 - Armor -->
-			<item id="94208" min="1" max="1" chance="1.818" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94186" min="1" max="1" chance="1.818" /> <!-- Augmenting Stone: Weapon -->
+			<item id="94188" min="1" max="1" chance="1.818" /> <!-- Augmenting Stone: Armor -->
+			<item id="94208" min="1" max="1" chance="1.818" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94328" min="1" max="1" chance="1.818" /> <!-- Elixir Powder - Sealed -->
 			<item id="94383" min="1" max="1" chance="1.818" /> <!-- Scroll: Enchant Rare Accessories -->
 			<item id="94385" min="1" max="1" chance="1.818" /> <!-- Improved Scroll: Enchant Rare Accessories -->
-			<item id="94423" min="1" max="1" chance="1.818" /> <!-- Life Stone - Accessories -->
+			<item id="94423" min="1" max="1" chance="1.818" /> <!-- Augmenting Stone: Accessory -->
 			<item id="94498" min="1" max="1" chance="1.818" /> <!-- Spellbook: Titan Champion -->
 			<item id="94508" min="1" max="1" chance="1.818" /> <!-- Spellbook: Cacophony of War -->
 			<item id="94513" min="1" max="1" chance="1.818" /> <!-- Package: Frintezza Doll Lv. 1 - Sealed -->
@@ -727,7 +727,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94834" name="Golden Wheel's Coin (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged for various items through the Game Assistant. <Items for exchange> Golden Wheel's Scroll (5 pcs.) Golden Wheel's Transformation Scroll (10 pcs.) Kit: Golden Wheel's Protection (7 pcs.) Kit: Golden Wheel's Random Craft (15 pcs.) Golden Wheel's Shining Kit (25 pcs.) -->
+		<!-- Given for killing monsters. <How to use> Special Craft - Golden Wheel's Coupon -->
 		<set name="icon" val="icon.ev_golden_wheel_token" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -736,7 +736,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="94835" name="Flower Sweets (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect> P. Atk. +100 M. Atk. +100 P. Def. +200 M. Def. +200 Max HP +300 Max MP +300 Acquired XP/ SP +10% Duration: 60 min. Cooldown: 1 min. The effect remains after death. -->
+		<!-- Applies a buff when used. <Buff effect> P. Atk. +100 M. Atk. +100 P. Def. +200 M. Def. +200 - Duration: 20 min. - Cooldown: 1 min. - The effect remains after death. -->
 		<set name="icon" val="icon.flower_songpyeon" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -757,7 +757,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="93848" min="2" max="2" chance="100" /> <!-- Sayha's Cookie (Time-limited) - Sealed -->
-			<item id="94835" min="1" max="1" chance="100" /> <!-- Flower Sweets (Time-limited) - Sealed -->
+			<item id="94835" min="1" max="1" chance="100" /> <!-- Buff Candies (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94837" name="Kit: Golden Wheel's Random Craft (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -772,12 +772,12 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93701" min="1" max="1" chance="100" /> <!-- Charging Stone of Random Craft - 1 Charge (Time-limited) - Sealed -->
-			<item id="94835" min="1" max="1" chance="100" /> <!-- Flower Sweets (Time-limited) - Sealed -->
+			<item id="93701" min="1" max="1" chance="100" /> <!-- Charging Stone of Regular Craft - 1 Charge (Time-limited) - Sealed -->
+			<item id="94835" min="1" max="1" chance="100" /> <!-- Buff Candies (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94838" name="Random Transformation Scroll (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- When used, activates one of the following transformations. <Available transformations> - Dragon Berserker - Hanbok - White Day - Cat Duration: 20 min. Cooldown: 10 sec. The effect remains after death. -->
+		<!-- When used, activates one of the following transformations. <Available transformations> - Dragon Berserker - Wild Wolf - Holiday Attire - Cat Duration: 60 min. Cooldown: 10 sec. The effect remains after death. -->
 		<set name="icon" val="icon.random_transform_00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -803,9 +803,9 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93701" min="2" max="2" chance="100" /> <!-- Charging Stone of Random Craft - 1 Charge (Time-limited) - Sealed -->
+			<item id="93701" min="2" max="2" chance="100" /> <!-- Charging Stone of Regular Craft - 1 Charge (Time-limited) - Sealed -->
 			<item id="93848" min="4" max="4" chance="100" /> <!-- Sayha's Cookie (Time-limited) - Sealed -->
-			<item id="94835" min="1" max="1" chance="100" /> <!-- Flower Sweets (Time-limited) - Sealed -->
+			<item id="94835" min="1" max="1" chance="100" /> <!-- Buff Candies (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94840" name="Breastplate of Protection" type="Armor">
@@ -1195,7 +1195,7 @@
 		</skills>
 	</item>
 	<item id="94852" name="TJ Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Can be used for recovering items destroyed after a failed enchant attempt (they will be recovered as <font color=EEAA22>sealed</font> items) or for exchanging for <font color=EEAA22>Stable Enchant Scrolls</font>. <font color=bbaa88><Items to recover></font> - Weapons/ armor of B-grade and higher - Boss' accessories - Agathion Spirits and Agathion Joy - Talisman of Aden/ Speed/ Eva/ Authority - Circlet of Hero - Cloak of Protection - Blessed/ common Dragon Belt <font color=bbaa88><Items to buy></font> - Double-click to see the list of available items.</font> -->
+		<!-- Can be used for recovering items destroyed after a failed enchant attempt (they will be recovered as <font color=EEAA22>sealed</font> items) or for exchanging for <font color=EEAA22>Prestigious Doll Box Lv. 1</font> or <font color=EEAA22>Dye Powder (Sealed)</font>. <font color=bbaa88><Items to recover></font> Blessed/ common Dragon Belt Circlet of Hero Agathion Spirit Talisman of Aden/ Speed/ Eva/ Authority Blessed Talisman of Eva/ Speed Cloak of Protection <font color=bbaa88><Items to buy></font> Doll Pack Lv. 1: 3 Coupons Dye Powder (Sealed) 10 pcs.: 1 Coupon -->
 		<set name="icon" val="icon.ev_prestige_ticket" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
@@ -1293,25 +1293,25 @@
 			<item id="91550" min="1" max="1" chance="2.040" /> <!-- Frintezza's Necklace -->
 			<item id="49845" min="3" max="3" chance="2.040" /> <!-- Sayha's Blessing -->
 			<item id="91712" min="2" max="2" chance="2.040" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
-			<item id="92314" min="10" max="10" chance="2.040" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="5" max="5" chance="2.040" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="2" max="2" chance="2.040" /> <!-- Giran Seal - Sealed -->
-			<item id="92314" min="1" max="1" chance="2.040" /> <!-- Giran Seal - Sealed -->
+			<item id="92314" min="10" max="10" chance="2.040" /> <!-- Giran Seal -->
+			<item id="92314" min="5" max="5" chance="2.040" /> <!-- Giran Seal -->
+			<item id="92314" min="2" max="2" chance="2.040" /> <!-- Giran Seal -->
+			<item id="92314" min="1" max="1" chance="2.040" /> <!-- Giran Seal -->
 			<item id="93268" min="1" max="1" chance="2.040" /> <!-- Improved Scroll: Enchant A-grade Weapon - Sealed -->
 			<item id="93269" min="1" max="1" chance="2.040" /> <!-- Improved Scroll: Enchant A-grade Armor - Sealed -->
 			<item id="93270" min="1" max="1" chance="2.040" /> <!-- Cursed Scroll: Enchant A-grade Weapon - Sealed -->
 			<item id="93271" min="1" max="1" chance="2.040" /> <!-- Cursed Scroll: Enchant A-grade Armor - Sealed -->
 			<item id="93304" min="1" max="1" chance="2.040" /> <!-- Package: Einhasad's Pendant Lv. 1 - Sealed -->
 			<item id="94168" min="1" max="1" chance="2.040" /> <!-- Enchant Kit: Circlet of Hero - Sealed -->
-			<item id="94186" min="1" max="1" chance="2.040" /> <!-- Life Stone Lv. 2 - Weapon -->
-			<item id="94188" min="1" max="1" chance="2.040" /> <!-- Life Stone Lv. 2 - Armor -->
-			<item id="94208" min="1" max="1" chance="2.040" /> <!-- Scroll of Blessing - Sealed -->
+			<item id="94186" min="1" max="1" chance="2.040" /> <!-- Augmenting Stone: Weapon -->
+			<item id="94188" min="1" max="1" chance="2.040" /> <!-- Augmenting Stone: Armor -->
+			<item id="94208" min="1" max="1" chance="2.040" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="94269" min="2" max="2" chance="2.040" /> <!-- Scroll: Boost Attack - Sealed -->
 			<item id="94271" min="2" max="2" chance="2.040" /> <!-- Scroll: Boost Defense - Sealed -->
 			<item id="94328" min="1" max="1" chance="2.040" /> <!-- Elixir Powder - Sealed -->
 			<item id="94383" min="1" max="1" chance="2.040" /> <!-- Scroll: Enchant Rare Accessories -->
 			<item id="94385" min="1" max="1" chance="2.040" /> <!-- Improved Scroll: Enchant Rare Accessories -->
-			<item id="94423" min="1" max="1" chance="2.040" /> <!-- Life Stone - Accessories -->
+			<item id="94423" min="1" max="1" chance="2.040" /> <!-- Augmenting Stone: Accessory -->
 			<item id="94729" min="1" max="1" chance="2.040" /> <!-- Master's Book Chest -->
 			<item id="95660" min="1" max="1" chance="2.040" /> <!-- Boss' Weapon Pack - Sealed -->
 			<item id="95743" min="1" max="1" chance="2.040" /> <!-- Top-grade A-grade Weapon Pack -->
@@ -1356,7 +1356,7 @@
 		</stats>
 	</item>
 	<item id="94861" name="Spellbook: Tranquillity" type="EtcItem">
-		<!-- A spellbook for learning the Tranquillity skill. <Class> Cardinal <Skill effect> Increases party members' max HP. Continuously recovers HP for a short period of time. -->
+		<!-- A spellbook for learning the Tranquility skill. <Class> Cardinal <Skill effect> Increases party members' max HP. Continuously recovers HP for a short period of time. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1365,7 +1365,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="94862" name="Spellbook: Exclusion" type="EtcItem">
-		<!-- A spellbook for learning the Exclusion skill. <Class> Eva's Saint <Skill effect> Knocks nearby enemies back. Greatly decreases Atk. Spd./ Casting Spd./ Speed. Prevents enemies from using Speed buffs and Rush skills. -->
+		<!-- A spellbook for learning the Exclusion skill. <Class> Eva's Saint <Skill effect> Knocks the target and nearby enemies back. Greatly decreases Atk. Spd./ Casting Spd./ Speed. - Prevents enemies from using Speed buffs and Rush skills. - Increases P./ M. Skill Cooldown. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1374,7 +1374,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="94863" name="Spellbook: Dark Disruption" type="EtcItem">
-		<!-- A spellbook for learning the Dark Disruption skill. <Class> Shillien Saint <Skill effect> Greatly decreases Recovery Potions' Effect of the target and nearby enemies. Prevents enemies from using class transformation skills. -->
+		<!-- A spellbook for learning the Dark Disruption skill. <Class> Shillien Saint <Skill effect> Greatly decreases Recovery Potions' Effect of the target and nearby enemies. Prevents enemies from using class transformation skills. - Prevents enemies from using other unique buffs. -->
 		<set name="icon" val="icon.etc_magic_book_white_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -1491,7 +1491,7 @@
 			<item id="94671" min="1" max="1" chance="3.57" /> <!-- Spellbook: Flame Burst -->
 			<item id="94673" min="1" max="1" chance="3.57" /> <!-- Spellbook: Team Building -->
 			<item id="94674" min="1" max="1" chance="3.57" /> <!-- Spellbook: Blood Bond -->
-			<item id="94861" min="1" max="1" chance="3.57" /> <!-- Spellbook: Tranquillity -->
+			<item id="94861" min="1" max="1" chance="3.57" /> <!-- Spellbook: Tranquility -->
 			<item id="94862" min="1" max="1" chance="3.57" /> <!-- Spellbook: Exclusion -->
 			<item id="94863" min="1" max="1" chance="3.57" /> <!-- Spellbook: Dark Disruption -->
 		</capsuled_items>
@@ -1555,7 +1555,7 @@
 			<item id="8688" min="1" max="1" chance="7.139" /> <!-- Daimon Crystal -->
 			<item id="8938" min="1" max="1" chance="7.139" /> <!-- Tallum Blade*Damascus Sword -->
 			<item id="91887" min="1" max="1" chance="7.139" /> <!-- Durendal -->
-			<item id="91902" min="1" max="1" chance="7.139" /> <!-- clair Bijou -->
+			<item id="91902" min="1" max="1" chance="7.139" /> <!-- ?clair Bijou -->
 			<item id="92404" min="1" max="1" chance="0.01" /> <!-- Zaken's Blood Sword -->
 			<item id="92405" min="1" max="1" chance="0.01" /> <!-- Core's Plasmic Bow -->
 			<item id="92407" min="1" max="1" chance="0.01" /> <!-- Orfen's Venom Sword -->
@@ -1587,7 +1587,7 @@
 		</capsuled_items>
 	</item>
 	<item id="94871" name="Golden Wheel's Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged in the Golden Wheel Guild's secret shop. Applies a buff when used as a scroll. <Effect> P. Atk. +100 M. Atk. +100 P. Def. +200 M. Def. +200 Max HP +300 Max MP +300 Acquired XP/ SP +10% Duration: 60 min. Cooldown: 1 min. The effect remains after death. Can be transformed to Craft points. -->
+		<!-- Can be exchanged in the Secret Shop. Applies a buff when used. <Secret Shop Ticket> P. Atk. +50 M. Atk. +50 P. Def. +100 M. Def. +100 XP recovery fee -10% - Duration: 60 min. - Cooldown: 1 min. - The effect remains after death. -->
 		<set name="icon" val="icon.bm_masterpiece_silver_ticket" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -1624,9 +1624,9 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="94621" min="1" max="1" minEnchant="5" maxEnchant="5" chance="80" /> <!-- Blessed Dragon Belt +5 -->
-			<item id="94621" min="1" max="1" minEnchant="6" maxEnchant="6" chance="10" /> <!-- Blessed Dragon Belt +6 -->
-			<item id="94621" min="1" max="1" minEnchant="7" maxEnchant="7" chance="10" /> <!-- Blessed Dragon Belt +7 -->
+			<item id="94621" min="1" max="1" minEnchant="5" maxEnchant="5" chance="80" /> <!-- Blessed Dragon Belt - Sealed -->
+			<item id="94621" min="1" max="1" minEnchant="6" maxEnchant="6" chance="10" /> <!-- Blessed Dragon Belt - Sealed -->
+			<item id="94621" min="1" max="1" minEnchant="7" maxEnchant="7" chance="10" /> <!-- Blessed Dragon Belt - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="94874" name="Balthus Knights' Greater Jewelry Box (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -1736,7 +1736,7 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93298" min="1" max="1" chance="70" /> <!-- Einhasad s Pendant Lv. 3 - Sealed -->
+			<item id="93298" min="1" max="1" chance="70" /> <!-- Einhasad's Pendant Lv. 3 - Sealed -->
 			<item id="93299" min="1" max="1" chance="29" /> <!-- Einhasad's Pendant Lv. 4 - Sealed -->
 			<item id="93330" min="1" max="1" chance="1" /> <!-- Enchant Kit: Talisman of Authority - Sealed -->
 		</capsuled_items>
@@ -1748,7 +1748,7 @@
 		<set name="price" val="1580" />
 	</item>
 	<item id="94879" name="Grace Potion" additionalName="Sealed" type="EtcItem">
-		<!-- Sayha's Grace points +10,000, Magic Lamp points +50,000, craft points +3250. Note! The item will be deleted after the scheduled maintenance. -->
+		<!-- Sayha's Grace points +10,000. Note! The item will be deleted after the scheduled maintenance. -->
 		<set name="icon" val="icon.bless_of_sayha_potion" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -1761,6 +1761,7 @@
 		</skills>
 	</item>
 	<item id="94880" name="Wooden Pistols" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_none" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1780,6 +1781,7 @@
 		</stats>
 	</item>
 	<item id="94881" name="Brass Pistols" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_d" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1801,6 +1803,7 @@
 		</stats>
 	</item>
 	<item id="94882" name="Flint Pistols" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_b_low" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1843,6 +1846,7 @@
 		</stats>
 	</item>
 	<item id="94884" name="Volcano" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_b_high" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1864,6 +1868,7 @@
 		</stats>
 	</item>
 	<item id="94885" name="Scofield" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_a_low" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1885,6 +1890,7 @@
 		</stats>
 	</item>
 	<item id="94886" name="Zephyrus" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_a_high" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1927,6 +1933,7 @@
 		</stats>
 	</item>
 	<item id="94888" name="Anakim's Divine Pistols" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_boss_anakim" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1947,6 +1954,7 @@
 		</stats>
 	</item>
 	<item id="94889" name="Monster's Firearms (Low-grade)" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.weapon_chakram_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1968,6 +1976,7 @@
 		</stats>
 	</item>
 	<item id="94890" name="Monster's Firearms (High-grade)" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.weapon_bellion_cestus_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -2076,6 +2085,7 @@
 		</skills>
 	</item>
 	<item id="94897" name="Aden's Pistols" additionalName="Sealed" type="Weapon">
+		<!-- <font color=bbaa88><Sylph-exclusive Weapon.></font> -->
 		<set name="icon" val="icon.shooter_d" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="48400" name="Items Seal Scroll" type="EtcItem">
-		<!-- Scroll used for sealing an item. The sealed item cannot be used for any enchantment related systems and is restricted from functions such as exchange/ drop/ destroy/ clan warehouse. The item can be unsealed by using a Release Seal Scroll. -->
+		<!-- A scroll for sealing items. The sealed item cannot be augmented, exchanged, dropped, destroyed, or stored in the clan warehouse. Use Item Unseal Scroll to remove the seal. -->
 		<set name="icon" val="icon.scrl_item_lock" />
 		<set name="material" val="PAPER" />
 		<set name="price" val="1000" />
@@ -46,7 +46,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="48405" name="Blackish Scarab" type="Weapon">
-		<!-- Material item for crafting Blackish Scarab Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Blackish Scarab. -->
 		<set name="icon" val="icon.shapeshift_npc_shield19" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -62,7 +62,7 @@
 		</stats>
 	</item>
 	<item id="48406" name="Scarlet Scarab" type="Weapon">
-		<!-- Material item for crafting Scarlet Scarab Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Scarlet Scarab. -->
 		<set name="icon" val="icon.shapeshift_npc_shield20" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -78,7 +78,7 @@
 		</stats>
 	</item>
 	<item id="48407" name="Gold Scarab" type="Weapon">
-		<!-- Material item for crafting Gold Scarab Shield appearance. -->
+		<!-- Changes a shield's appearance to that of Gold Scarab. -->
 		<set name="icon" val="icon.shapeshift_npc_shield21" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -94,7 +94,7 @@
 		</stats>
 	</item>
 	<item id="48408" name="Blackish Scarab Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Blackish Scarab appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Blackish Scarab for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -104,7 +104,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48409" name="Scarlet Scarab Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Scarlet Scarab appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Scarlet Scarab for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -114,7 +114,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48410" name="Gold Scarab Appearance Stone" additionalName="30-day" type="EtcItem">
-		<!-- Appearance Stone that gives a shield Gold Scarab appearance for 30 days. An appearance-modified item cannot be exchanged until it gets back to its original appearance. -->
+		<!-- Changes a shield's appearance to that of Gold Scarab for 30 d. An appearance-modified item cannot be exchanged until it gets back to its default appearance. -->
 		<set name="icon" val="Icon.shape_shifting_shield_i00" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
 		<set name="is_stackable" val="true" />
@@ -124,7 +124,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="48411" name="Item Unseal Scroll (15-min) Box" additionalName="15-min." type="EtcItem">
-		<!-- Double-click to obtain 10 Release Seal Scrolls (15-min). -->
+		<!-- Double-click to obtain 10 Scrolls: Release Item Seal (15-min.). -->
 		<set name="icon" val="BranchSys3.g_ev_invite_fantasy_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -212,7 +212,7 @@
 		</stats>
 	</item>
 	<item id="48417" name="Ruler's Authority - Genesis" additionalName="Lv. 2" type="Armor">
-		<!-- Max HP/ MP/ CP +1000, weight limit +25,600, damage +10%, received damage -10%, Damage Reflection Resistance +10%, Fixed Damage Resistance +10%, inventory slots +36, Attribute Resistance +20. -->
+		<!-- The energy of the sun, the moon, stars, light and darkness. When equipped, Max HP/ MP/ CP +1000, weight limit +25,600, damage +10%, received damage -10%, Damage Reflection Resistance +10%, Fixed Damage Resistance +10%, inventory slots +36, Attribute Resistance +20. -->
 		<set name="icon" val="icon.grankain_powerbelt2" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -237,7 +237,7 @@
 		</stats>
 	</item>
 	<item id="48418" name="Authority Ornament" type="EtcItem">
-		<!-- Ruler's Authority enhancement material. Talk to Ilia in the Town of Aden to enhance your Ruler's Authority. -->
+		<!-- Take it to Ilia in Aden to enhance your Ruler's Authority. -->
 		<set name="icon" val="icon.grankain_powerbelt_deco" />
 		<set name="material" val="LEATHER" />
 		<set name="is_stackable" val="true" />
@@ -736,7 +736,7 @@
 		</skills>
 	</item>
 	<item id="48451" name="Fortress Talisman - Max HP" additionalName="15-day" type="Armor">
-		<!-- Max HP +10%. -->
+		<!-- Max HP +10% -->
 		<set name="icon" val="icon.r85_talisman_ca_up_passive" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -800,21 +800,21 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="material" val="LEATHER" />
 		<capsuled_items>
-			<item id="48455" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman- Vitality Box -->
-			<item id="48456" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - P. Skill Power Pack -->
-			<item id="48457" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - M. Skill Power Pack -->
-			<item id="48458" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - P. Atk. Pack -->
-			<item id="48459" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - M. Atk. Pack -->
-			<item id="48460" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - P. Def. Pack -->
-			<item id="48461" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - M. Def. Pack -->
-			<item id="48462" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - Atk. Spd. Pack -->
-			<item id="48463" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - Casting Spd. Pack -->
-			<item id="48464" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - P. Accuracy Pack -->
-			<item id="48465" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - M. Accuracy Pack -->
-			<item id="48466" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - Shield Defense Pack -->
-			<item id="48467" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - Max HP Pack -->
-			<item id="48468" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - Max MP Pack -->
-			<item id="48469" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman - Speed Pack -->
+			<item id="48455" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Vitality -->
+			<item id="48456" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - P. Skill Power -->
+			<item id="48457" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - M. Skill Power -->
+			<item id="48458" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - P. Atk. -->
+			<item id="48459" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - M. Atk. -->
+			<item id="48460" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - P. Def. -->
+			<item id="48461" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - M. Def. -->
+			<item id="48462" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Atk. Spd. -->
+			<item id="48463" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Casting Spd. -->
+			<item id="48464" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - P. Accuracy -->
+			<item id="48465" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - M. Accuracy -->
+			<item id="48466" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Shield Defense -->
+			<item id="48467" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Max HP -->
+			<item id="48468" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Max MP -->
+			<item id="48469" min="1" max="1" chance="6.6" /> <!-- Fortress Talisman Pack - Speed -->
 		</capsuled_items>
 	</item>
 	<item id="48455" name="Fortress Talisman- Vitality Box" type="EtcItem">
@@ -1092,7 +1092,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="48478" name="Knights' Basic Supplies" additionalName="Event" type="EtcItem">
-		<!-- Use to obtain 3 Vitality Replenishing Star Candies and 1 PA Points Coupon (720 Points). Also, there is a chance to obtain 1 of PA - Art of Seduction, Freya's Art of Seduction, Freya's Art of Seduction - Barrier or Freya's Art of Seduction - XP. -->
+		<!-- Double-click to obtain 3 Vitality Replenishing Star Candies and 1 PA Points Coupon (720 Points). Also, there is a chance to obtain one of the following items: PA - Enhanced Rosy Seduction, Freya's Art of Seduction, Freya's Art of Seduction - Barrier, Freya's Art of Seduction - XP. -->
 		<set name="icon" val="icon.etc_bm_lure_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="FISH" />
@@ -1113,7 +1113,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="48480" name="Package: +8 Shiny Elemental Shirt" type="EtcItem">
-		<!-- Double-click to obtain a +8 Shiny Elemental Shirt. -->
+		<!-- Double-click to get a +8 Shiny Elemental Shirt. -->
 		<set name="icon" val="icon.ainhasard_shirt_box_1" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1152,7 +1152,7 @@
 		</capsuled_items>
 	</item>
 	<item id="48483" name="PA +7 Shiny Elemental Shirt" additionalName="2-hour" type="Armor">
-		<!-- PA. Magical t-shirt infused with Einhasad's energy. <Item skill>. M. Def. +15. Speed +7. Max HP/ MP +536, Skill MP Consumption -3%, Damage Reflection Resistance +5, Vampiric Rage effect +5%. Water/ Fire/ Wind/ Earth/ Holy/ Dark Resistance +24. STR/ DEX/ CON/ INT/ WIT/ MEN +3. <Active skills>. Einhasad's Wrath/ Einhasad's Protection. Cannot be enchanted. -->
+		<!-- PA only A shining magic T-shirt imbued with Einhasad's energy. <Item skill> M. Def. +15 Speed +7 Max HP +536, Max MP +536, Skill MP Consumption -3%, Damage Reflection Resistance +5, Fire/ Wind/ Earth/ Holy/ Dark/ Water Resistance +24, STR +3, DEX +3, CON +3, INT +3, WIT +3, MEN +3 <Active skills> Einhasad's Wrath/ Einhasad's Protection Cannot be enchanted. -->
 		<set name="icon" val="icon.ainhasard_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -1168,7 +1168,7 @@
 		</stats>
 	</item>
 	<item id="48484" name="+7 Physical Reflect Shirt - PA" additionalName="2-hour" type="Armor">
-		<!-- PA. A magical t-shirt specialized for physical defense. <Item Skill>. M. Def. +15. Speed +7. Max HP/ MP +536. Water/ Fire/ Wind/ Earth/ Holy/ Dark Resistance +24. STR/ DEX/ CON/ INT/ WIT/ MEN +3. P. Def. +8%. Received Critical Damage from standard attacks -12%. Has a 7% chance to reflect physical skill debuffs. Cannot be enchanted. -->
+		<!-- PA. A magical t-shirt specialized for physical defense. <Item Skill> M. Def. +15. Speed +7. Max HP/ MP +536. Water/ Fire/ Wind/ Earth/ Holy/ Dark Resistance +24. STR/ DEX/ CON/ INT/ WIT/ MEN +3. P. Def. +8%. Received Critical Damage from standard attacks -12%. Has a 7% chance to reflect physical skill debuffs. Cannot be enchanted. -->
 		<set name="icon" val="icon.reflect_attack_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -1184,7 +1184,7 @@
 		</stats>
 	</item>
 	<item id="48485" name="+7 Magical Reflect Shirt - PA" additionalName="2-hour" type="Armor">
-		<!-- PA. A magical t-shirt for M. Def. <Item Skill>. M. Def. +15. Speed +7. Max HP/ MP +536. Water/ Fire/ Wind/ Earth/ Holy/ Dark Resistance +24. STR/ DEX/ CON/ INT/ WIT/ MEN +3. M. Def. +8%. Received M. Skill Critical Damage -12%. Has a 7% chance to reflect magical skill debuffs. Cannot be enchanted. -->
+		<!-- PA. A magical t-shirt for M. Def. <Item Skill> M. Def. +15. Speed +7. Max HP/ MP +536. Water/ Fire/ Wind/ Earth/ Holy/ Dark Resistance +24. STR/ DEX/ CON/ INT/ WIT/ MEN +3. M. Def. +8%. Received M. Skill Critical Damage -12%. Has a 7% chance to reflect magical skill debuffs. Cannot be enchanted. -->
 		<set name="icon" val="icon.reflect_magic_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="chest" />
@@ -1200,7 +1200,7 @@
 		</stats>
 	</item>
 	<item id="48486" name="Sayha Talisman Lv. 6" additionalName="Event" type="Armor">
-		<!-- P. Def. +1126. M. Def. +736, and Acquired XP/ SP +10%. When equipped with Venir s Talisman Lv. 10 or higher, Skill Power +3% Skill Cooldown -3%. <Active Skills>. Sayha's Grace Lv. 1. Sayha's Encouragement Lv. 1. When identical Talismans are equipped, only the effect of the highest level Talisman is active. -->
+		<!-- When equipped, grants Sayha's power: P. Def. +1126, M. Def. +736, acquired XP/ SP +10%. If equipped with Venir's Talisman Lv. 12+ or Soul Talisman Lv. 1+: Skill Power +3%, Skill Cooldown -3%. Active skills: Sayha's Grace Lv. 1 Sayha's Encouragement Lv. 1 Effects of two identical talismans do not stack, the higher-level talisman takes precedence. -->
 		<set name="icon" val="icon.bm_sayhas_talisman" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1257,7 +1257,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="48491" name="Dragon Skin Shirt" type="Armor">
-		<!-- Valuable Dragon Skin Shirt. <Enchanting>. Use Blessed Scroll: Enchant Dragon Shirt. <Enhancing>. Take the shirt enchanted to +5 and Noble Leather Upgrade Stone to Head Blacksmith in any town to get Dragon Leather Shirt. -->
+		<!-- Dragon Skin Shirt. <Enchanting> Use Blessed Scroll: Enchant Dragon Shirt. <Enhancing> Take the shirt enchanted to +5 and a Crystal of Dawn to the Head Blacksmith in any town to get a Dragon Leather Shirt. -->
 		<set name="icon" val="icon.bm_dragon_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -1281,7 +1281,7 @@
 		</stats>
 	</item>
 	<item id="48492" name="Dragon Leather Shirt" type="Armor">
-		<!-- Valuable Dragon Leather Shirt. <Enchanting>. Use Blessed Scroll: Enchant Dragon Shirt. <Enhancing>. Take the shirt enchanted to +5 and Radiant Rind Upgrade Stone to Head Blacksmith in any town to get Dragon Rind Leather Shirt. -->
+		<!-- Dragon Leather Shirt. <Enchanting> Use Blessed Scroll: Enchant Dragon Shirt. <Enhancing> Take the shirt enchanted to +5 and a Crystal of Dawn to the Head Blacksmith in any town to get a Dragon Rind Leather Shirt. -->
 		<set name="icon" val="icon.bm_dragon_leather_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -1305,7 +1305,7 @@
 		</stats>
 	</item>
 	<item id="48493" name="Dragon Rind Leather Shirt" type="Armor">
-		<!-- Valuable Dragon Rind Leather Shirt. <Enchanting>. Use Blessed Scroll: Enchant Dragon Shirt. -->
+		<!-- Valuable Dragon Rind Leather Shirt. <Enchanting> Use Blessed Scroll: Enchant Dragon Shirt. Can be enchanted. -->
 		<set name="icon" val="icon.bm_dragon_rind_leather_shirt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -1326,7 +1326,7 @@
 		</stats>
 	</item>
 	<item id="48494" name="Mysterious Dragon Slayer" type="Weapon">
-		<!-- Contains the power of an ancient dragon, which can be drawn by enchanting. Enchant it to a high level and take it to Luna to obtain a special reward. -->
+		<!-- Imbued with power of ancient dragons. Enchant it to a high value and take it to Luna to get a special reward. -->
 		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -1348,7 +1348,7 @@
 		</stats>
 	</item>
 	<item id="48495" name="Noble Leather Upgrade Stone" type="EtcItem">
-		<!-- Material needed to upgrade a Dragon Skin Shirt to a Dragon Leather Shirt. Talk to Head Blacksmith in any town to upgrade a +5 Dragon Skin Shirt to a Dragon Leather Shirt. -->
+		<!-- This item can no longer be used. Talk to a Game Assistant in any town to exchange it for Crystals of Dawn. -->
 		<set name="icon" val="icon.bm_dragon_shirt_upgrade_1" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
@@ -1356,7 +1356,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="48496" name="Radiant Rind Upgrade Stone" type="EtcItem">
-		<!-- Material needed to upgrade a Dragon Leather Shirt to a Dragon Rind Leather Shirt. Talk to Head Blacksmith in any town to upgrade a +5 Dragon Leather Shirt to a Dragon Rind Leather Shirt. -->
+		<!-- This item can no longer be used. Talk to a Game Assistant in any town to exchange it for Crystals of Dawn. -->
 		<set name="icon" val="icon.bm_dragon_shirt_upgrade_2" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="material" val="LIQUID" />
@@ -1399,7 +1399,7 @@
 		</skills>
 	</item>
 	<item id="48499" name="Dragon's Relic" type="EtcItem">
-		<!-- Use it to obtain 2 Dragon Attribute Tonic (XP). There is a chance to obtain a Dragon's Relic Chest or Shining Dragon's Relic Chest. -->
+		<!-- Double-click to obtain 2 Dragon's Attribute Potions (XP). There is a certain chance to obtain Dragon's Relic Chest or Shining Dragon's Relic Chest. Scroll: Enchant Mysterious Weapon will be deleted after the event. -->
 		<set name="icon" val="icon.bm_dragon_present_poket" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />

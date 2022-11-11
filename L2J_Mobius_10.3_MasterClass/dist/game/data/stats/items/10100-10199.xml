@@ -115,7 +115,7 @@
 		</skills>
 	</item>
 	<item id="10111" name="Forgotten Scroll: Star Fall" type="EtcItem">
-		<!-- A scroll for learning the Star Fall skill. Used by Mystic Muses and Storm Screamers. Required level: 81. -->
+		<!-- A spellbook for learning the Starfall skill. Used by Mystic Muses and Storm Screamers. Required level: 81. -->
 		<set name="icon" val="BranchSys2.Icon.br_spell_books_magic_i01" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="120" />
@@ -218,7 +218,7 @@
 		</stats>
 	</item>
 	<item id="10119" name="Dynasty Sigil" type="Armor">
-		<!-- Increases Magic Resistance and Dark Resistance. -->
+		<!-- Increases M. Def. and Dark Resistance. -->
 		<set name="icon" val="icon.dynasty_sigil_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="SIGIL" />
@@ -428,7 +428,7 @@
 		</stats>
 	</item>
 	<item id="10129" name="Scroll of Escape: Fortress" type="EtcItem">
-		<!-- Magical scroll that transports you to your Fortress. If you don't have a Fortress, it will relocate you to the nearest village. -->
+		<!-- A magic scroll for teleporting to a fortress. If your clan doesn't own a fortress, you will be relocated to the nearest village. -->
 		<set name="icon" val="icon.etc_scroll_of_return_castle_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -447,7 +447,7 @@
 		</skills>
 	</item>
 	<item id="10130" name="Blessed Scroll of Escape: Fortress" type="EtcItem">
-		<!-- Magical scroll that transports you to your Fortress quickly. -->
+		<!-- A magic scroll for teleporting to a fortress very quickly. -->
 		<set name="icon" val="icon.etc_scroll_of_return_castle_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -587,7 +587,7 @@
 		</skills>
 	</item>
 	<item id="10139" name="Agathion Bracelet" type="Armor">
-		<!-- A bracelet for summoning Agathion - Rainbow Clan Hall. Shadow item. Duration: 700 min. -->
+		<!-- A bracelet for summoning Agathion Rainbow. Shadow item. Duration: 700 min. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1176,7 +1176,7 @@
 		</stats>
 	</item>
 	<item id="10169" name="Enchanter Circlet (Kamael only)" type="Armor">
-		<!-- Circlet that can be worn by the Kamael Race only, exclusively for the Enchanter class after completion of 2nd or 3rd class transfer. Cannot be worn in a subclass condition. Uses 2 hair accessory slots. -->
+		<!-- Kamael only. A head accessory that can be worn by the Enchanter classes after the 2nd or 3rd class change. Cannot be equipped by the subclass. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessary_weapon_master_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1273,7 +1273,7 @@
 		</skills>
 	</item>
 	<item id="10175" name="Goblin Circlet (Event)" type="Armor">
-		<!-- Gold colored, Goblin shaped hair accessory. -->
+		<!-- A golden circlet in the shape of a goblin. -->
 		<set name="icon" val="icon.accessory_taiwan_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1287,7 +1287,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="10176" name="White Half Mask" type="Armor">
-		<!-- Mysterious costume accessory that covers half of the wearer's face. -->
+		<!-- An accessory that covers a half of its wearer's face. -->
 		<set name="icon" val="icon.accessory_half_face_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />

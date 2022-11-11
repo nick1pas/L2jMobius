@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="29200" name="Dormant User Sprout" additionalName="14-day" type="Armor">
-		<!-- Special hair accessory for heroes who've returned to the world of Aden. -->
+		<!-- A special head accessory for adventurers who've returned to the world of Aden. -->
 		<set name="icon" val="icon.s_dormant_user_display" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="MAGIC" />
@@ -18,7 +18,7 @@
 		</stats>
 	</item>
 	<item id="29201" name="New User Sprout Box" additionalName="14-day" type="EtcItem">
-		<!-- Gift Box containing 1 New User Sprout (14-day). -->
+		<!-- Double-click to obtain New User Sprout (14-day). -->
 		<set name="icon" val="icon.npoint_antaras_30day_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -73,7 +73,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29207" name="Teddy Bear Appearance Stone" type="EtcItem">
-		<!-- Changes your appearance to a teddy bear. Can be used on upper or full-body armor. Changes appearance of all armor to a teddy bear. Armors can be changed back to its original form using a Scroll: Restore Equipment. -->
+		<!-- Changes the armor appearance to that of Teddy Bear. Used with upper or one-piece armor. The original appearance can be restored with Scroll: Restore Equipment. -->
 		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -89,7 +89,7 @@
 		</skills>
 	</item>
 	<item id="29208" name="Plush Cat Appearance Stone" type="EtcItem">
-		<!-- Changes the appearance of the entire armor to that of Plush Cat Outfit. Used with upper or full-body armor. The original appearance can be restored with Scroll: Restore Equipment. -->
+		<!-- Changes the armor appearance to that of Plush Cat Outfit. Used with upper or one-piece armor. The original appearance can be restored with Scroll: Restore Equipment. -->
 		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -105,7 +105,7 @@
 		</skills>
 	</item>
 	<item id="29209" name="Toy Panda Appearance Stone" type="EtcItem">
-		<!-- Changes your appearance to a toy panda. Can be used on upper or full-body armor. Changes appearance of all armor to a toy panda. Armors can be changed back to its original form using a Scroll: Restore Equipment. -->
+		<!-- Changes the armor appearance to that of Toy Panda. Used with upper or one-piece armor. The original appearance can be restored with Scroll: Restore Equipment. -->
 		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -139,7 +139,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29212" name="Adventurer's Circlet" type="Armor">
-		<!-- Luxurious golden hair accessory for adventurers. It takes 2 hair accessory slots. When equipped, P. Atk. +3% and M. Atk. +5%. -->
+		<!-- Equipped in 2 head accessory slots. P. Atk. +3%, M. Atk. +5%. -->
 		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -423,7 +423,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29233" name="Agathion Matryoshka Charm" additionalName="7-day" type="Armor">
-		<!-- Summons Agathion Matryoshka. Active skills:. 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
+		<!-- Summons Agathion Matryoshka. Active skills: 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -436,7 +436,7 @@
 		<set name="time" val="10080" />
 	</item>
 	<item id="29234" name="Agathion Matryoshka Charm" additionalName="30-day" type="Armor">
-		<!-- Summons Agathion Matryoshka. Active skills:. 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
+		<!-- Summons Agathion Matryoshka. Active skills: 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -449,7 +449,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="29235" name="Package: Agathion Minion Eye Charm (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Agathion Minion Eye Charm (7-day). -->
+		<!-- Double-click to obtain Agathion Charm: Minion Eye (7-day). -->
 		<set name="icon" val="icon.etc_pi_box_joy_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -460,7 +460,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29236" name="Package: Agathion Minion Eye Charm (30-day)" type="EtcItem">
-		<!-- Double-click to obtain Agathion Minion Eye Charm (30-day). -->
+		<!-- Double-click to obtain Agathion Charm: Minion Eye (30-day). -->
 		<set name="icon" val="icon.etc_pi_box_joy_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -471,7 +471,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29237" name="Package: Agathion Matryoshka Charm (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Agathion Matryoshka Charm (7-day). -->
+		<!-- Double-click to obtain Agathion Charm: Matryoshka (7-day). -->
 		<set name="icon" val="icon.etc_pi_box_joy_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -482,7 +482,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29238" name="Package: Agathion Matryoshka Charm (30-day)" type="EtcItem">
-		<!-- Double-click to obtain Agathion Matryoshka Charm (30-day). -->
+		<!-- Double-click to obtain Agathion Charm: Matryoshka (30-day). -->
 		<set name="icon" val="icon.etc_pi_box_joy_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -493,7 +493,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29239" name="Stable Book of Growth: Starlight Agathion Charm" type="EtcItem">
-		<!-- Book of Growth for Starlight Agathion Charm. Maintains the enchant value when enchantment fails. Cannot be used with a charm enchanted to +7 and higher. -->
+		<!-- Required for upgrading Starlight Agathion Charms. In case of failure, the enchant value remains the same. Cannot be used with a charm enchanted to +7 and higher. -->
 		<set name="icon" val="icon.star_giantscrl_of_ench_ag" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
@@ -657,7 +657,7 @@
 		</capsuled_items>
 	</item>
 	<item id="29248" name="Reconstruction Society's Enchantment Pack" type="EtcItem">
-		<!-- Double-click to obtain Blessed Scroll: Enchant Circlet. Has a chance to obtain one of the following items: Circlet Augmenting Stone, Noble Circlet Upgrade Stone, Radiant Circlet Upgrade Stone. -->
+		<!-- Double-click to obtain Blessed Scroll: Enchant Circlet. There is also a certain chance to obtain either Augmenting Stone: Circlet and 12 Crystals of Dawn, or 38 Crystals of Dawn. -->
 		<set name="icon" val="icon.bm_aden_renewal_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -665,7 +665,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29249" name="Ball Trapping Gnosian Agathion Charm" type="Armor">
-		<!-- Summons Agathion Ball Trapping Gnosian. It wears a red uniform. -->
+		<!-- Summons Agathion Ball-trapping Gnosian that wears a red uniform. -->
 		<set name="icon" val="BranchSys2.icon.br_aga_kball_male_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -678,7 +678,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29250" name="Ball Trapping Orodriel Agathion Charm" type="Armor">
-		<!-- Summons Agathion Ball Trapping Orodriel. It wears a red uniform. -->
+		<!-- Summons Agathion Ball-trapping Orodriel that wears a red uniform. -->
 		<set name="icon" val="BranchSys2.icon.br_aga_kball_female_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -691,7 +691,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29251" name="Penalty Kick Agathion Charm" type="Armor">
-		<!-- Charm that summons a Gnosian and Orodriel who are practicing penalty kicks. All are wearing red uniforms. -->
+		<!-- Summons Gnosian or Orodriel who is practising penalty kicks. The agathions wear a red uniform. -->
 		<set name="icon" val="BranchSys2.icon.br_aga_kball_kick_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -864,7 +864,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="29276" name="Agathion Meliodas Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Meliodas. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Meliodas can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Meliodas. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Meliodas can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_meliodas_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -876,7 +876,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29277" name="Agathion Elizabeth Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Elizabeth. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Elizabeth can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Elizabeth. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Elizabeth can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_elizabeth_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -888,7 +888,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29278" name="Agathion Hawk Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Hawk. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Hawk can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Hawk. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Hawk can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_hawk_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -900,7 +900,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29279" name="Agathion Ban Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Ban. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Ban can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Ban. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Ban can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_ban_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -912,7 +912,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29280" name="Agathion Diane Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Diane. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Diane can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Diane. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Diane can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_diane_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -924,7 +924,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29281" name="Agathion King Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion King. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion King can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion King. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion King can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_king_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -936,7 +936,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29282" name="Agathion Merlin Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Merlin. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Merlin can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Merlin. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Merlin can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_merlin_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -948,7 +948,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29283" name="Agathion Gowther Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Gowther. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Gowther can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Gowther. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Gowther can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_gowther_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -960,7 +960,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29284" name="Escanor Agathion Charm" additionalName="Lv. 1" type="Armor">
-		<!-- Contains the power of Agathion Escanor. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Escanor can be further upgraded to Lv. 2. -->
+		<!-- Contains the power of Agathion Escanor. Equipping it in the main slot summons the agathion and enables its primary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Escanor can be further upgraded to Lv. 2. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_escanor_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -972,7 +972,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29285" name="Agathion Meliodas Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Meliodas. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Meliodas can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Meliodas. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Meliodas can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_meliodas_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -984,7 +984,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29286" name="Agathion Elizabeth Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Elizabeth. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Elizabeth can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Elizabeth. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Elizabeth can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_elizabeth_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -996,7 +996,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29287" name="Agathion Hawk Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Hawk. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Hawk can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Hawk. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Hawk can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_hawk_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -1008,7 +1008,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29288" name="Agathion Ban Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Ban. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Ban can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Ban. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Ban can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_ban_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -1020,7 +1020,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29289" name="Agathion Diane Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Diane. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Diane can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Diane. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Diane can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_diane_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -1032,7 +1032,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29290" name="Agathion King Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion King. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion King can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion King. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion King can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_king_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -1044,7 +1044,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29291" name="Agathion Merlin Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Merlin. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Merlin can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Merlin. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Merlin can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_merlin_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -1056,7 +1056,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29292" name="Agathion Gowther Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Gowther. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Gowther can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Gowther. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Gowther can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_gowther_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />
@@ -1068,7 +1068,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="29293" name="Escanor Agathion Charm" additionalName="Lv. 2" type="Armor">
-		<!-- Contains the power of Agathion Escanor. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading>. +7 Agathion Escanor can be further upgraded to Lv. 3. -->
+		<!-- Contains the power of Agathion Escanor. Equipping the charm in the main slot summons the agathion and enables both primary and secondary skills. Equipping in an additional slot enables only secondary skills. Can be enchanted up to +7 with Seven Deadly Sins Agathion's Book of Growth. <Upgrading> +7 Agathion Escanor can be further upgraded to Lv. 3. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_escanor_agathion_charm_lv1_jp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="agathion" />

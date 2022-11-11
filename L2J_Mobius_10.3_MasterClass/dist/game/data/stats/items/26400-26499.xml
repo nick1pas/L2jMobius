@@ -8,7 +8,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="26401" name="Sealed Shadow Guardian" type="EtcItem">
-		<!-- Double-click to get a Shadow Shooter. Cannot be exchanged or dropped once open. -->
+		<!-- Double-click to obtain Shadow Guardian. The acquired item cannot be exchanged or dropped. -->
 		<set name="icon" val="icon.weapon_shadow_crossbow" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -178,7 +178,7 @@
 		</skills>
 	</item>
 	<item id="26418" name="Recipe: High-grade Talisman of Abundance Lv. 1" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 1. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 1. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -190,7 +190,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26419" name="Recipe: High-grade Talisman of Abundance Lv. 2" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 2. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 2. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -202,7 +202,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26420" name="Recipe: High-grade Talisman of Abundance Lv. 3" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 3. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 3. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -214,7 +214,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26421" name="Recipe: High-grade Talisman of Abundance Lv. 4" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 4. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 4. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -226,7 +226,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26422" name="Wondrous Casket" additionalName="Journey's Prelude" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Recipe: High-grade Talisman of Abundance Lv. 1-4, Talisman of Hunter/ Slaughterer/ Conqueror/ Outlaw, Valakas' Necklace, Istina's Necklace, Octavis' Necklace, Antharas' Earring, Istina's Earring, Octavis' Earring, Baium's Ring, Queen Ant's Ring, Istina's Ring, Octavis' Ring, Talisman - Lilith/ Anakim, Orfen's Earring, Elcyum Crystal (5 pcs.), Elcyum (2 pcs.), Giant's Energy (10 pcs.), Tempest Stone, Lv. 5 Legendary Dye Pack, Fortune Pocket Lv. 5, R-grade Gemstone (30 pcs.). -->
+		<!-- Double-click to obtain one of the following items: Recipe: High-grade Talisman of Abundance Lv. 1-4, Talisman of Hunter/ Slaughterer/ Conqueror/ Outlaw, Valakas' Necklace, Istina's Necklace, Octavis' Necklace, Antharas' Earring, Istina's Earring, Octavis' Earring, Baium's Ring, Queen Ant's Ring, Istina's Ring, Octavis' Ring, Talisman - Lilith/ Anakim, Orfen's Earring, Elcyum Crystal (5 pcs.), Elcyum (2 pcs.), Giant's Energy (10 pcs.), Heavy Air Stone, Lv. 5 Legendary Dye Pack, Fortune Pocket Lv. 5, R-grade Gemstone (30 pcs.). -->
 		<set name="icon" val="icon.event_big_july_seven_park_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -234,7 +234,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="26423" name="Vintage Casket" additionalName="Journey's Prelude" type="EtcItem">
-		<!-- Double-click to obtain one of the following items at a certain rate: Seven Signs' Energy, Freya's Lucky Enchant Stone: R-grade Armor/ Weapon, Windy Lucky Enchant Stone: R-grade Armor/ Weapon, Package: Blessed Giant's Lucky Enchant Stone: R-grade Armor/ Weapon, Giant's Scroll: Enchant R-grade Weapon, Package: Blessed Lucky Enchant Stone: R-grade Armor/ Weapon, Blessed High-grade Lucky Enchant Stone: R-grade Armor/ Weapon, Package: Lesser Giant's Lucky Enchant Stone: R-grade Armor/ Weapon, Bottle of Antharas/ Valakas/ Queen Ant/ Orfen/ Baium's Soul, Blessed Scroll: Enchant R-grade Armor/ Weapon, High-grade Lucky Enchant Stone: R-grade Weapon/ Armor, Giant's Scroll: Enchant R-grade Armor, Package: Scroll: Enchant R-grade Weapon, Package: Scroll: Enchant R-grade Armor (3 pcs.), Wondrous Casket. -->
+		<!-- Double-click to obtain one of the following items: Seven Signs' Energy, Freya's Stone: Enchant R-grade Armor/ Weapon, Windy Stone: Enchant R-grade Armor/ Weapon, Package: Blessed Giant's Stone: Enchant R-grade Armor/ Weapon, Giant's Scroll: Enchant R-grade Weapon, Package: Blessed Stone: Enchant R-grade Armor/ Weapon, Blessed High-grade Stone: Enchant R-grade Armor/ Weapon, Package: Lesser Giant's Stone: Enchant R-grade Armor/ Weapon, Bottle of Antharas/ Valakas/ Queen Ant/ Orfen/ Baium's Soul, Blessed Scroll: Enchant R-grade Armor/ Weapon, High-grade Stone: Enchant R-grade Weapon/ Armor, Giant's Scroll: Enchant R-grade Armor, Package: Scroll: Enchant R-grade Weapon, Package: Scroll: Enchant R-grade Armor (3 pcs.), Wondrous Casket. -->
 		<set name="icon" val="icon.event_big_july_seven_park_i00" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
@@ -388,7 +388,7 @@
 		</skills>
 	</item>
 	<item id="26439" name="Shadow Slasher Pack" type="EtcItem">
-		<!-- Double-click to obtain Shadow Slasher enchanted to +1~9. -->
+		<!-- Double-click to obtain Shadow Slasher enchanted from +1 to +9. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -401,7 +401,7 @@
 		</skills>
 	</item>
 	<item id="26440" name="Shadow Fighter Pack" type="EtcItem">
-		<!-- Double-click to obtain Shadow Fighter enchanted to +1~9. -->
+		<!-- Double-click to obtain Shadow Fighter enchanted from +1 to +9. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -414,7 +414,7 @@
 		</skills>
 	</item>
 	<item id="26441" name="Shadow Stormer Box" type="EtcItem">
-		<!-- Double-click to obtain Shadow Stormer enchanted to +1~9. -->
+		<!-- Double-click to obtain Shadow Stormer enchanted from +1 to +9. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -440,7 +440,7 @@
 		</skills>
 	</item>
 	<item id="26443" name="Shadow Guardian Pack" type="EtcItem">
-		<!-- Double-click to get a +1 ~ +9 Shadow Shooter. -->
+		<!-- Double-click to obtain Shadow Guardian enchanted from +1 to +9. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -492,7 +492,7 @@
 		</skills>
 	</item>
 	<item id="26447" name="Talisman of Abundance" additionalName="War" type="Armor">
-		<!-- P. Atk. +154, M. Atk. +181, P./ M. Evasion +4. Note!. Effects of two identical talismans do not stack. -->
+		<!-- P. Atk. +154, M. Atk. +181, P./ M. Evasion +4. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -506,7 +506,7 @@
 		</skills>
 	</item>
 	<item id="26448" name="Talisman of Abundance" additionalName="Tactics" type="Armor">
-		<!-- Attribute Resistance +10, Debuff Resistance +10%. Note!. Effects of two identical talismans do not stack. -->
+		<!-- 6 Attribute Resistance +10, Debuff Resistance +10%. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -520,7 +520,7 @@
 		</skills>
 	</item>
 	<item id="26449" name="Talisman of Abundance" additionalName="Esprit" type="Armor">
-		<!-- P./ M. Critical Rate +8%, received Critical Damage -10%, received Skill PvP Damage -10%. Note!. Effects of two identical talismans do not stack. -->
+		<!-- P./ M. Critical Rate +8%, received Critical Damage -10%, received skill damage in PvP -10%. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -534,7 +534,7 @@
 		</skills>
 	</item>
 	<item id="26450" name="Talisman of Abundance" additionalName="Body" type="Armor">
-		<!-- Max HP/ MP/ CP +325, HP/ MP/ CP Recovery Rate +5. Note!. Effects of two identical talismans do not stack. -->
+		<!-- Max HP/ MP/ CP +325, HP/ MP/ CP Recovery Rate +5. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_giant_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -548,7 +548,7 @@
 		</skills>
 	</item>
 	<item id="26451" name="Talisman of Hunter" additionalName="Hunter" type="Armor">
-		<!-- P. Atk. +231, M. Atk. 271, P./ M. Evasion +7, Attribute Resistance +15, Debuff Resistance +13%, P./ M. Critical Rate +13%. Received Critical Damage -15%, Received Skill PvP Damage -15%. Additionally, received PvP Damage is increased. Note!. Effects of two identical talismans do not stack. -->
+		<!-- P. Atk. +231, M. Atk. +271, P./ M. Evasion +7, 6 Attribute Resistance +15, Debuff Resistance +13%, P./ M. Critical Rate +13%, received Critical Damage -15%, received skill damage in PvP -15%. Additionally, decreases received PvP damage. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -564,7 +564,7 @@
 		</skills>
 	</item>
 	<item id="26452" name="Talisman of Slaughterer" additionalName="Slaughterer" type="Armor">
-		<!-- P. Atk. +231, M. Atk. +271 P./ M. Evasion +7, Attribute Resistance +15, Debuff Resistance +13%, Max HP/ MP/ CP +490, and HP/ MP/ CP Recovery Rate +7. Note!. Effects of two identical talismans do not stack. -->
+		<!-- P. Atk. +231, M. Atk. +271, P./ M. Evasion +7, 6 Attribute Resistance +15, Debuff Resistance +13%, Max HP/ MP/ CP +490, HP/ MP/ CP Recovery Rate +7. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -580,7 +580,7 @@
 		</skills>
 	</item>
 	<item id="26453" name="Talisman of Conquerer" additionalName="Conquerer" type="Armor">
-		<!-- P. Atk. +231, M. Atk. +271, P./ M. Evasion +7, P./ M. Critical Rate +13%, Max HP/ MP/ CP +490, and HP/ MP/ CP Recovery Rate +7. Received Critical Damage -15%, Received Skill PvP Damage -15%. Note!. Effects of two identical talismans do not stack. -->
+		<!-- P. Atk. +231, M. Atk. +271, P./ M. Evasion +7, P./ M. Critical Rate +13%, Max HP/ MP/ CP +490, HP/ MP/ CP Recovery Rate +7, received Critical Damage -15%, received skill damage in PvP -15%. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -596,7 +596,7 @@
 		</skills>
 	</item>
 	<item id="26454" name="Talisman of Outlaw" additionalName="Outlaw" type="Armor">
-		<!-- Attribute Resistance +15, Debuff Resistance +13%, P./ M. Critical Rate +13%, Max HP/ MP/ CP +490, and HP/ MP/ CP Recovery Rate +7. Received P. Critical Damage -15%, Received Skill PvP Damage -15%. Note!. Effects of two identical talismans do not stack. -->
+		<!-- 6 Attribute Resistance +15, Debuff Resistance +13%, P./ M. Critical Rate +13%, Max HP/ MP/ CP +490, HP/ MP/ CP Recovery Rate +7, received Critical Damage -15%, received skill damage in PvP -15%. Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchSys2.icon.g_twilight_gem" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -612,7 +612,7 @@
 		</skills>
 	</item>
 	<item id="26455" name="High-grade Talisman of Abundance Lv. 1" type="Armor">
-		<!-- Max HP/ MP/ CP +510, P. Def. +971, M. Def. +552, P./ M. Evasion +7, Attribute Resistance +15, Debuff Resistance +15%, received Critical Damage from standard attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +15%, M. Atk. +15%, Skill Power +15%, Skill Critical Rate +15%. Duration: 1 min. Cooldown: 10 min.). Note!. Effects of two identical talismans do not stack. -->
+		<!-- Max HP/ MP/ CP +510, P. Def. +971, M. Def. +552, P./ M. Evasion +7, Attribute Resistance +15, Debuff Resistance +15%, received Critical Damage from basic attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +15%, M. Atk. +15%, Skill Power +15%, Skill Critical Rate +15%. Duration: 1 min. Cooldown: 10 min.). Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchIcon.Icon.g_therich_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -625,7 +625,7 @@
 		</skills>
 	</item>
 	<item id="26456" name="High-grade Talisman of Abundance Lv. 2" type="Armor">
-		<!-- Max HP/ MP/ CP +531, P. Def. +1051, M. Def. +609, P./ M. Evasion +8, Attribute Resistance +17, Debuff Resistance +15%, received Critical Damage from standard attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +16%, M. Atk. +16%, Skill Power +16%, Skill Critical Rate +16%. Duration: 1 min. Cooldown: 10 min.). Note!. Effects of two identical talismans do not stack. -->
+		<!-- Max HP/ MP/ CP +531, P. Def. +1051, M. Def. +609, P./ M. Evasion +8, Attribute Resistance +17, Debuff Resistance +15%, received Critical Damage from basic attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +16%, M. Atk. +16%, Skill Power +16%, Skill Critical Rate +16%. Duration: 1 min. Cooldown: 10 min.). Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchIcon.Icon.g_therich_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -638,7 +638,7 @@
 		</skills>
 	</item>
 	<item id="26457" name="High-grade Talisman of Abundance Lv. 3" type="Armor">
-		<!-- Max HP/ MP/ CP +563, P. Def. +1184, M. Def. +706, P./ M. Evasion +9, Attribute Resistance +20, Debuff Resistance +15%, received Critical Damage from standard attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +17%, M. Atk. +17%, Skill Power +17%, Skill Critical Rate +17%. Duration: 1 min. Cooldown: 10 min.). Note!. Effects of two identical talismans do not stack. -->
+		<!-- Max HP/ MP/ CP +563, P. Def. +1184, M. Def. +706, P./ M. Evasion +9, Attribute Resistance +20, Debuff Resistance +15%, received Critical Damage from basic attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +17%, M. Atk. +17%, Skill Power +17%, Skill Critical Rate +17%. Duration: 1 min. Cooldown: 10 min.). Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchIcon.Icon.g_therich_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -651,7 +651,7 @@
 		</skills>
 	</item>
 	<item id="26458" name="High-grade Talisman of Abundance Lv. 4" type="Armor">
-		<!-- Max HP/ MP/ CP +591, P. Def. +1307, M. Def. +799, P./ M. Evasion +10, Attribute Resistance +25, Debuff Resistance +15%, received Critical Damage from standard attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +20%, M. Atk. +20%, Skill Power +20%, Skill Critical Rate +20%. Duration: 1 min. Cooldown: 10 min.). Note!. Effects of two identical talismans do not stack. -->
+		<!-- Max HP/ MP/ CP +591, P. Def. +1307, M. Def. +799, P./ M. Evasion +10, Attribute Resistance +25, Debuff Resistance +15%, received Critical Damage from basic attacks -15%, received PvP damage -15%. Enables the Power of Abundance skill (P. Atk. +20%, M. Atk. +20%, Skill Power +20%, Skill Critical Rate +20%. Duration: 1 min. Cooldown: 10 min.). Note! Effects of two identical talismans do not stack. -->
 		<set name="icon" val="BranchIcon.Icon.g_therich_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -664,7 +664,6 @@
 		</skills>
 	</item>
 	<item id="26459" name="Recipe: High-grade Talisman of Abundance Lv. 1" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 1. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -676,7 +675,6 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26460" name="Recipe: High-grade Talisman of Abundance Lv. 2" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 2. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -688,7 +686,6 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26461" name="Recipe: High-grade Talisman of Abundance Lv. 3" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 3. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -700,7 +697,6 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26462" name="Recipe: High-grade Talisman of Abundance Lv. 4" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 4. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -712,7 +708,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26463" name="Recipe: High-grade Talisman of Abundance Lv. 1" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 1. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 1. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -724,7 +720,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26464" name="Recipe: High-grade Talisman of Abundance Lv. 2" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 2. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 2. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -736,7 +732,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26465" name="Recipe: High-grade Talisman of Abundance Lv. 3" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 3. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 3. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -748,7 +744,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26466" name="Recipe: High-grade Talisman of Abundance Lv. 4" type="EtcItem">
-		<!-- For the 4th classes only. A recipe for High-grade Talisman of Abundance Lv. 4. Requires Create Common Item Lv. 10. The success rate is 25%. Use offerings to increase the success rate to 100%. -->
+		<!-- A recipe for creating High-grade Talisman of Abundance Lv. 4. -->
 		<set name="icon" val="BranchIcon.Icon.etc_recipe_black_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -760,14 +756,14 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="26467" name="Abundance Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Talisman of Abundance, Seven Signs' Energy, Antharas' Earring, Talisman of Lilith, Talisman of Anakim, Baium's Soul Ring, Valakas' Necklace, Bottle of Antharas' Soul, Bottle of Valakas' Soul, Baium's Ring, Octavis' Ring, Bottle of Queen Ant's Soul, Istina's Earring, Queen Ant's Ring, Istina's Necklace, Bottle of Orfen's Soul, Octavis' Earring, Istina's Earring, Octavis' Necklace, Immortal Scroll Chapter 1, Superior Giant's Codex - Mastery Chapter 1, Superior Giant's Codex Chapter 1, Lv. 5 Legendary Dye Pack, Elcyum (2 pcs.), Superior Giant's Codex - Discipline Chapter 1, Giant's Energy (10 pcs.), Orfen's Earring, Elcyum Crystal (8 pcs.), Tempest Stone, R-grade Gemstone (30 pcs.), Fortune Pocket Lv. 5 (2 pcs.). -->
+		<!-- Double-click to obtain one of the following items: Talisman of Abundance, Seven Signs' Energy, Antharas' Earring, Talisman of Lilith, Talisman of Anakim, Baium's Soul Ring, Valakas' Necklace, Bottle of Antharas' Soul, Bottle of Valakas' Soul, Baium's Ring, Octavis' Ring, Bottle of Queen Ant's Soul, Istina's Earring, Queen Ant's Ring, Istina's Necklace, Bottle of Orfen's Soul, Octavis' Earring, Istina's Earring, Octavis' Necklace, Immortal Scroll Chapter 1, Superior Giant's Codex - Mastery Chapter 1, Superior Giant's Codex Chapter 1, Lv. 5 Legendary Dye Pack, Elcyum (2 pcs.), Superior Giant's Codex - Discipline Chapter 1, Giant's Energy (10 pcs.), Orfen's Earring, Elcyum Crystal (8 pcs.), Heavy Air Stone, R-grade Gemstone (30 pcs.), Fortune Pocket Lv. 5 (2 pcs.). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i03" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="26468" name="Lindvior's Earring" additionalName="3-day" type="Armor">
-		<!-- Temporary item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs, and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
+		<!-- Time-limited item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -788,7 +784,7 @@
 		</stats>
 	</item>
 	<item id="26469" name="Lindvior's Earring" additionalName="7-day" type="Armor">
-		<!-- Temporary item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs, and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
+		<!-- Time-limited item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -809,7 +805,7 @@
 		</stats>
 	</item>
 	<item id="26470" name="Lindvior's Earring" additionalName="15-day" type="Armor">
-		<!-- Temporary item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrify Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%. Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs, and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
+		<!-- Time-limited item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -830,7 +826,7 @@
 		</stats>
 	</item>
 	<item id="26471" name="Lindvior's Earring" additionalName="30-day" type="Armor">
-		<!-- Temporary item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrify Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%. Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs, and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
+		<!-- Time-limited item. MP +59, P./ M. Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. -->
 		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -872,7 +868,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="26474" name="La Vie En Rose's Brooch Lv. 2" type="Armor">
-		<!-- When equipped, activates 5 Jewel Slots. Inventory Slots +12. <Enhancing>. Can be enhanced to La Vie En Rose's Brooch Lv. 3 through Shadai in Heine. -->
+		<!-- Unlocks 5 jewel slots. Inventory slots +12. <Upgrading> Can be upgraded to La Vie En Rose's Brooch Lv. 3 through Shadai in Heine. -->
 		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -897,7 +893,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="26476" name="Vital Stone Lv. 1" additionalName="Not Available" type="Armor">
-		<!-- Vitality bonus +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Vitality bonus +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -911,7 +907,7 @@
 		</skills>
 	</item>
 	<item id="26477" name="Vital Stone Lv. 2" additionalName="Not Available" type="Armor">
-		<!-- Vitality bonus +6%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Vitality bonus +6%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -925,7 +921,7 @@
 		</skills>
 	</item>
 	<item id="26478" name="Vital Stone Lv. 3" additionalName="Not Available" type="Armor">
-		<!-- Vitality bonus +12%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Vitality bonus +12%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -940,7 +936,7 @@
 		</skills>
 	</item>
 	<item id="26479" name="Vital Stone Lv. 4" additionalName="Not Available" type="Armor">
-		<!-- Vitality bonus +20%, Vitality Consumption -7%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Vitality bonus +20%, Vitality Consumption -7%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -955,7 +951,7 @@
 		</skills>
 	</item>
 	<item id="26480" name="Vital Stone Lv. 5" additionalName="Not Available" type="Armor">
-		<!-- Vitality bonus +30%, Vitality Consumption -15%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Vitality bonus +30%, Vitality Consumption -15%. Enables the Vital Wind skill. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Upgrading> A greater jewel can be obtained through compounding of two of these jewels. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -969,7 +965,7 @@
 		</skills>
 	</item>
 	<item id="26481" name="Garnet Lv. 1" additionalName="Not Available" type="Armor">
-		<!-- Debuff Resistance +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Debuff Resistance +3%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_garnet" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -983,7 +979,7 @@
 		</skills>
 	</item>
 	<item id="26482" name="Garnet Lv. 2" additionalName="Not Available" type="Armor">
-		<!-- Debuff Resistance +6%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Debuff Resistance +6%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_garnet" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -997,7 +993,7 @@
 		</skills>
 	</item>
 	<item id="26483" name="Garnet Lv. 3" additionalName="Not Available" type="Armor">
-		<!-- Debuff Resistance +12%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Debuff Resistance +12%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_garnet" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1011,7 +1007,7 @@
 		</skills>
 	</item>
 	<item id="26484" name="Garnet Lv. 4" additionalName="Not Available" type="Armor">
-		<!-- Debuff Resistance +20%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Debuff Resistance +20%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_garnet" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1025,7 +1021,7 @@
 		</skills>
 	</item>
 	<item id="26485" name="Garnet Lv. 5" additionalName="Not Available" type="Armor">
-		<!-- Debuff Resistance +30%. Removes debuffs from you. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Debuff Resistance +30%. Removes debuffs from you. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Upgrading> A greater jewel can be obtained through compounding of two of these jewels. -->
 		<set name="icon" val="icon.etc_bm_jewel_garnet" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1039,7 +1035,7 @@
 		</skills>
 	</item>
 	<item id="26486" name="Tanzanite Lv. 1" additionalName="Not Available" type="Armor">
-		<!-- Creates a protective barrier that absorbs 5,000 damage for 5 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Creates a protective barrier that absorbs 5000 damage for 5 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1053,7 +1049,7 @@
 		</skills>
 	</item>
 	<item id="26487" name="Tanzanite Lv. 2" additionalName="Not Available" type="Armor">
-		<!-- Creates a protective barrier that absorbs 10,000 damage for 5 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Creates a protective barrier that absorbs 10,000 damage for 5 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1067,7 +1063,7 @@
 		</skills>
 	</item>
 	<item id="26488" name="Tanzanite Lv. 3" additionalName="Not Available" type="Armor">
-		<!-- Creates a protective barrier that absorbs 15,000 damage for 10 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Creates a protective barrier that absorbs 15,000 damage for 10 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1081,7 +1077,7 @@
 		</skills>
 	</item>
 	<item id="26489" name="Tanzanite Lv. 4" additionalName="Not Available" type="Armor">
-		<!-- Creates a protective barrier that absorbs 30,000 damage for 10 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. Compounding of two jewels of the same level. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Creates a protective barrier that absorbs 30,000 damage for 10 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> Compounding of two jewels of the same level. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1095,7 +1091,7 @@
 		</skills>
 	</item>
 	<item id="26490" name="Tanzanite Lv. 5" additionalName="Not Available" type="Armor">
-		<!-- Creates a protective barrier that absorbs 50,000 damage for 15 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Creates a protective barrier that absorbs 50,000 damage for 15 sec. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Upgrading> A greater jewel can be obtained through compounding of two of these jewels. -->
 		<set name="icon" val="icon.etc_bm_jewel_tanzanite" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1118,7 +1114,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="26476" min="1" max="1" chance="100" /> <!-- Vital Stone Lv. 1 - Not available -->
+			<item id="26476" min="1" max="1" chance="100" /> <!-- Vital Stone Lv. 1 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="26492" name="La Vie En Rose's Garnet Box" type="EtcItem">
@@ -1146,7 +1142,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="26486" min="1" max="1" chance="100" /> <!-- Tanzanite Lv. 1 - Not available -->
+			<item id="26486" min="1" max="1" chance="100" /> <!-- Tanzanite Lv. 1 - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="26494" name="Kit: La Vie En Rose's Brooch Lv. 2" type="EtcItem">
@@ -1164,7 +1160,7 @@
 		</capsuled_items>
 	</item>
 	<item id="26495" name="Shadai's Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain La Vie En Rose's Jewelry Box. Low chance to obtain Radiant Gemstone Fragment or La Vie En Rose's Brooch Lv. 2. -->
+		<!-- Double-click to obtain one of La Vie En Rose's Jewel Packs. There is also a low chance to obtain La Vie En Rose's Brooch Lv. 2. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -1178,7 +1174,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="26497" name="Cat's Eye Lv. 1" type="Armor">
-		<!-- Damage Reflection Resistance +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. 1. Compounding of two jewels of the same level. 2. Compounding with Jewel Energy. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Damage Reflection Resistance +10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> 1. Compounding of two jewels of the same level. 2. Compounding with Jewel Energy. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1192,7 +1188,7 @@
 		</skills>
 	</item>
 	<item id="26498" name="Cat's Eye Lv. 2" type="Armor">
-		<!-- Damage Reflection Resistance +20%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. 1. Compounding of two jewels of the same level. 2. Compounding with Jewel Energy. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Damage Reflection Resistance +20%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> 1. Compounding of two jewels of the same level. 2. Compounding with Jewel Energy. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />
@@ -1206,7 +1202,7 @@
 		</skills>
 	</item>
 	<item id="26499" name="Cat's Eye Lv. 3" type="Armor">
-		<!-- Damage Reflection Resistance +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting>. 1. Compounding of two jewels of the same level. 2. Compounding with Jewel Energy. <Enhancing>. Greater Jewel can be obtained through compounding of two jewels of Lv. 5. -->
+		<!-- Damage Reflection Resistance +30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. <Enchanting> 1. Compounding of two jewels of the same level. 2. Compounding with Jewel Energy. <Upgrading> A greater jewel can be obtained through compounding of two jewels of Lv. 5. -->
 		<set name="icon" val="BranchIcon.Icon.etc_bm_jewel_catseye_i00" />
 		<set name="bodypart" val="brooch_jewel" />
 		<set name="default_action" val="EQUIP" />

@@ -23,7 +23,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="80602" name="Anniversary Mini Cake" type="EtcItem">
-		<!-- When used, increases Acquired XP/ SP by 30%, Acquired XP/ SP in Vitality state by 30%, and P. Atk./ P. Def./ M. Atk./ M. Def. by 15% for 30 min. -->
+		<!-- For 30 min., acquired XP/ SP +30%, SP/ Vitality bonus +30%, P. Atk./ P. Def./ M. Atk./ M. Def. +15%. -->
 		<set name="icon" val="icon.ev_15th_cake" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -295,11 +295,11 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="46444" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 1 -->
-			<item id="46459" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 1 -->
-			<item id="46474" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 1 -->
-			<item id="46489" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 1 -->
-			<item id="46504" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 1 -->
+			<item id="46444" min="1" max="1" chance="20" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+			<item id="46459" min="1" max="1" chance="20" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+			<item id="46474" min="1" max="1" chance="20" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+			<item id="46489" min="1" max="1" chance="20" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+			<item id="46504" min="1" max="1" chance="20" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
 		</capsuled_items>
 	</item>
 	<item id="80628" name="Master Fishing Rod Lv. 5" additionalName="7-day" type="Weapon">
@@ -336,7 +336,7 @@
 		</capsuled_items>
 	</item>
 	<item id="80630" name="Shunaiman's Secret Box" type="EtcItem">
-		<!-- Double-click to obtain one of the special items. -->
+		<!-- Double-click to obtain special items. -->
 		<set name="icon" val="icon.bm_circlet_upgrade_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -381,7 +381,7 @@
 			<item id="80817" min="2" max="2" chance="3.52" /> <!-- Emperor's Special Cocktail -->
 			<item id="48830" min="4" max="4" chance="3.52" /> <!-- Freya's Ice Rose -->
 			<item id="80842" min="4" max="4" chance="3.52" /> <!-- Honey Dark Beer -->
-			<item id="48497" min="4" max="4" chance="3.52" /> <!-- Glowing Dragon's Attribute Potion - EXP -->
+			<item id="48497" min="4" max="4" chance="3.52" /> <!-- Glowing Dragon's Attribute Potion - XP -->
 			<item id="36514" min="750" max="750" chance="3.22" /> <!-- Elcyum Crystal -->
 			<item id="27673" min="1" max="1" chance="3.32" /> <!-- Freya's Scroll of Storm -->
 			<item id="47937" min="500" max="500" chance="3.12" /> <!-- Lineage 2 Soulstone -->
@@ -398,34 +398,34 @@
 			<item id="48860" min="1" max="1" chance="2.32" /> <!-- Fallen Angel's Ring Pack -->
 			<item id="80000" min="300" max="300" chance="2.32" /> <!-- Artifact Fragment -->
 			<item id="36414" min="20" max="20" chance="2.22" /> <!-- Dragon Claw -->
-			<item id="29539" min="1" max="1" chance="2.22" /> <!-- Dragon Power Crystal -->
+			<item id="29539" min="1" max="1" chance="2.22" /> <!-- Crystal of Dark -->
 			<item id="48990" min="1" max="1" chance="2.22" /> <!-- +7 Guard Agathion Charm Box - Event -->
-			<item id="29152" min="1" max="1" chance="2.02" /> <!-- High Quality Starlight Agathion Pack -->
+			<item id="29152" min="1" max="1" chance="2.02" /> <!-- High-grade Starlight Agathion Pack -->
 			<item id="29769" min="1" max="1" chance="2.02" /> <!-- Freya's Vitality Maintaining Rune Pack - 30-day -->
 			<item id="48942" min="1" max="1" chance="2.02" /> <!-- +8 Angel's Earring Pack -->
 			<item id="48941" min="1" max="1" chance="2.02" /> <!-- +8 Angel's Necklace Pack -->
 			<item id="81156" min="1" max="1" chance="2.02" /> <!-- +8 Angel's Ring Pack -->
-			<item id="29524" min="1" max="1" chance="2.02" /> <!-- +3 Dragon Earring Box -->
-			<item id="29525" min="1" max="1" chance="2.02" /> <!-- +3 Dragon Ring Box -->
-			<item id="29526" min="1" max="1" chance="2.02" /> <!-- +3 Dragon Necklace Box -->
+			<item id="29524" min="1" max="1" chance="2.02" /> <!-- +3 Dragon's Earring Pack -->
+			<item id="29525" min="1" max="1" chance="2.02" /> <!-- +3 Dragon's Ring Pack -->
+			<item id="29526" min="1" max="1" chance="2.02" /> <!-- +3 Dragon's Necklace Pack -->
 			<item id="80839" min="1" max="1" chance="1.94" /> <!-- Crystal of Dawn -->
 			<item id="33478" min="1" max="1" chance="1.62" /> <!-- Destruction Scroll: Enchant R-grade Weapon -->
-			<item id="48912" min="1" max="1" chance="1.62" /> <!-- Gran Kain's Scroll: Enchant R-grade Weapon -->
-			<item id="80502" min="1" max="1" chance="1.62" /> <!-- Gran Kain's Scroll: Enchant R-grade Armor -->
+			<item id="48912" min="1" max="1" chance="1.62" /> <!-- Gran Kain's Shining Scroll: Enchant R-grade Weapon -->
+			<item id="80502" min="1" max="1" chance="1.62" /> <!-- Gran Kain's Shining Scroll: Enchant R-grade Armor -->
 			<item id="48840" min="1" max="1" chance="1.32" /> <!-- Ultimate Luxurious Jewelry Box Lv. 1 -->
 			<item id="39573" min="1" max="1" chance="1.32" /> <!-- Sealed Talisman of Insanity -->
 			<item id="37717" min="1" max="1" chance="1.32" /> <!-- Talisman of Seven Signs -->
 			<item id="39649" min="1" max="1" chance="1.32" /> <!-- Venir's Talisman Lv. 16 -->
-			<item id="29069" min="1" max="1" chance="1.32" /> <!-- Sayha's Talisman Pack Lv. 8 -->
+			<item id="29069" min="1" max="1" chance="1.32" /> <!-- Sayha's Talisman Pack Lv. 8 - Not Available -->
 			<item id="26341" min="1" max="1" chance="1.32" /> <!-- High-grade Talisman of Abundance Lv. 4 -->
 			<item id="47216" min="1" max="1" chance="1.32" /> <!-- Ruler's Ring of Authority -->
-			<item id="47218" min="1" max="1" chance="1.32" /> <!-- Ring of the Truth-Seeker -->
+			<item id="47218" min="1" max="1" chance="1.32" /> <!-- Ring of Truth-seeker -->
 			<item id="80903" min="1" max="1" chance="1.1" /> <!-- Zariche's Sealed Box -->
 			<item id="80904" min="1" max="1" chance="1.1" /> <!-- Akamanah's Sealed Box -->
 		</capsuled_items>
 	</item>
 	<item id="80635" name="Freya's Summoning Stick" type="EtcItem">
-		<!-- Double-click to summon Ice Knight. Klacias. Icy Breath or Freya. Can be used by Lv. 105 or higher. and characters below Lv. 105 cannot gain any XP. -->
+		<!-- Double-click to summon Frozen Labyrinth' Knight, Klacias, Icy Breath or Freya. Required level: 105+. -->
 		<set name="icon" val="icon.bm_freya_summon_stick" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -433,14 +433,14 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80636" name="Artifact Crystal" type="EtcItem">
-		<!-- Artifact crafting material. Take them to Alexandria at the Town of Giran Luxury Shop to craft artifacts. -->
+		<!-- Required for crafting artifacts through Artifact Merchant Alexandria in Giran. -->
 		<set name="icon" val="icon.bm_artifact_stone" />
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="80637" name="Talisman of Protection Lv. 1" type="Armor">
-		<!-- P. Def. +220, M. Def. +146, Attribute Resistance +10. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +220, M. Def. +146, Attribute Resistance +10. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -453,7 +453,7 @@
 		</skills>
 	</item>
 	<item id="80638" name="Talisman of Protection Lv. 2" type="Armor">
-		<!-- P. Def. +440, M. Def. +286, Attribute Resistance +20. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped: P. Def. +440, M. Def. +286, Attribute Resistance +20 Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -466,7 +466,7 @@
 		</skills>
 	</item>
 	<item id="80639" name="Talisman of Protection Lv. 3" type="Armor">
-		<!-- P. Def. +890, M. Def. +578, Attribute Resistance +30. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +890, M. Def. +578, Attribute Resistance +30. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -479,7 +479,7 @@
 		</skills>
 	</item>
 	<item id="80640" name="Talisman of Protection Lv. 4" type="Armor">
-		<!-- P. Def. +1340, M. Def. +872, Attribute Resistance +40. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +1340, M. Def. +872, Attribute Resistance +40. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -492,7 +492,7 @@
 		</skills>
 	</item>
 	<item id="80641" name="Talisman of Protection Lv. 5" type="Armor">
-		<!-- P. Def. +1790, M. Def. +1164, Attribute Resistance +70. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +1790, M. Def. +1164, Attribute Resistance +70. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -505,7 +505,7 @@
 		</skills>
 	</item>
 	<item id="80642" name="Talisman of Protection Lv. 6" type="Armor">
-		<!-- P. Def. +2240, M. Def. +1456, Attribute Resistance +80. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +2240, M. Def. +1456, Attribute Resistance +80. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -518,7 +518,7 @@
 		</skills>
 	</item>
 	<item id="80643" name="Talisman of Protection Lv. 7" type="Armor">
-		<!-- P. Def. +2690, M. Def. +1748, Attribute Resistance +90. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +2690, M. Def. +1748, Attribute Resistance +90. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -531,7 +531,7 @@
 		</skills>
 	</item>
 	<item id="80644" name="Talisman of Protection Lv. 8" type="Armor">
-		<!-- P. Def. +3140, M. Def. +2042, Attribute Resistance +100. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +3140, M. Def. +2042, Attribute Resistance +100. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -544,7 +544,7 @@
 		</skills>
 	</item>
 	<item id="80645" name="Talisman of Protection Lv. 9" type="Armor">
-		<!-- P. Def. +3590, M. Def. +2334, Attribute Resistance +120. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting>. Use Energy of Protection. -->
+		<!-- Applies the following effects, when equipped. P. Def. +3590, M. Def. +2334, Attribute Resistance +120. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Use Energy of Protection. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -557,7 +557,7 @@
 		</skills>
 	</item>
 	<item id="80646" name="Talisman of Protection Lv. 10" type="Armor">
-		<!-- P. Def. +4040, M. Def. +2626, Attribute Resistance +150. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. -->
+		<!-- Applies the following effects, when equipped. P. Def. +4040, M. Def. +2626, Attribute Resistance +150. Effects of two identical talismans do not stack, the higher-level talisman takes precedence. <Enchanting> Talisman of Protection Lv. 10 can be enchanted to Enhanced Talisman of Protection Lv. 1. -->
 		<set name="icon" val="icon.bm_defend_talisman" />
 		<set name="bodypart" val="deco1" />
 		<set name="default_action" val="EQUIP" />
@@ -570,7 +570,7 @@
 		</skills>
 	</item>
 	<item id="80647" name="Artifact - Critical Damage for Basic Attacks" additionalName="Attack" type="Armor">
-		<!-- An artifact that increases Critical Damage for standard attacks. Can be equipped in an attack artifact slot. When enchanted, increases Critical Damage for standard attacks. Only an attack artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Critical Damage for basic attacks. Can be equipped in an attack artifact slot. When enchanted, increases Critical Damage for basic attacks. Can be enhanced only with attack artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -579,7 +579,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80648" name="Artifact - P. Skill Critical Damage" additionalName="Attack" type="Armor">
-		<!-- An artifact that increases P. Skill Critical Damage. Can be equipped in an attack artifact slot. When enchanted, increases P. Skill Critical Damage bonus. Only an attack artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases P. Skill Critical Damage. Can be equipped in an attack artifact slot. When enchanted, increases P. Skill Critical Damage. Can be enhanced only with attack artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -588,7 +588,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80649" name="Artifact - M. Skill Critical Damage" additionalName="Attack" type="Armor">
-		<!-- An artifact that increases M. Skill Critical Damage. Can be equipped in an attack artifact slot. When enchanted, increases M. Skill Critical Damage bonus. Only an attack artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases M. Skill Critical Damage. Can be equipped in an attack artifact slot. When enchanted, increases M. Skill Critical Damage. Can be enhanced only with attack artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -597,7 +597,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80650" name="Artifact - Bow Resistance" additionalName="Protection" type="Armor">
-		<!-- An artifact that increases Bow/ Crossbow Resistance. Can be equipped in a defense artifact slot. When enchanted, increases Bow/ Crossbow Resistance bonus. Only a defense artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Bow/ Crossbow Resistance. Can be equipped in a defense artifact slot. When enchanted, increases Bow/ Crossbow Resistance. Can be enhanced only with defense artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -606,7 +606,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80651" name="Artifact - Dagger Resistance" additionalName="Protection" type="Armor">
-		<!-- An artifact that increases Dagger/ Dual Daggers Resistance. Can be equipped in a defense artifact slot. When enchanted, increases Dagger/ Dual Daggers Resistance bonus. Only a defense artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Dagger/ Dual Daggers Resistance. Can be equipped in a defense artifact slot. When enchanted, increases Dagger/ Dual Daggers Resistance. Can be enhanced only with defense artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -615,7 +615,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80652" name="Artifact - Sword Resistance" additionalName="Protection" type="Armor">
-		<!-- An artifact that increases One-handed/ Two-handed/ Dual/ Magic Sword Resistance. Can be equipped in a defense artifact slot. When enchanted, increases One-handed/ Two-handed/ Dual/ Magic Sword Resistance bonus. Only a defense artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases One-handed/ Two-handed/ Magic Sword/ Dual Swords Resistance. Can be equipped in a defense artifact slot. When enchanted, increases One-handed/ Two-handed/ Magic Sword/ Dual Swords Resistance. Can be enhanced only with defense artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -624,7 +624,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80653" name="Artifact - Vitality Bonus" additionalName="Support" type="Armor">
-		<!-- An artifact that increases Vitality bonus. Can be equipped in a support artifact slot. When enchanted, increases Vitality bonus. Only a support artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Vitality bonus. Can be equipped in a support artifact slot. When enchanted, increases Vitality bonus. Can be enhanced only with support artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -633,7 +633,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80654" name="Artifact - Vitality Consumption" additionalName="Support" type="Armor">
-		<!-- An artifact that decreases Vitality Consumption. Can be equipped in a support artifact slot. When enchanted, increases Vitality Consumption bonus. Only a support artifact can be used as a material for upgrade. -->
+		<!-- An artifact that decreases Vitality Consumption. Can be equipped in a support artifact slot. When enchanted, decreases Vitality Consumption. Can be enhanced only with support artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -642,7 +642,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80655" name="Artifact - Skill MP Consumption" additionalName="Support" type="Armor">
-		<!-- An artifact that decreases Skill MP Consumption. Can be equipped in a support artifact slot. When enchanted, increases Skill MP Consumption bonus. Only a support artifact can be used as a material for upgrade. -->
+		<!-- An artifact that decreases Skill MP Consumption. Can be equipped in a support artifact slot. When enchanted, increases Skill MP Consumption. Can be enhanced only with support artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -651,7 +651,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80656" name="Artifact - P. Def." additionalName="Balance" type="Armor">
-		<!-- An artifact that increases P. Def. Can be equipped in a balance artifact slot. When enchanted, increases P. Def. bonus. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases P. Def. Can be equipped in a balance artifact slot. When enchanted, increases P. Def. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -660,7 +660,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80657" name="Artifact - M. Def." additionalName="Balance" type="Armor">
-		<!-- An artifact that increases M. Def. Can be equipped in a balance artifact slot. When enchanted, increases M. Def. bonus. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases M. Def. Can be equipped in a balance artifact slot. When enchanted, increases M. Def. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -669,7 +669,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80658" name="Artifact - Critical Damage for Basic Attacks" additionalName="Balance" type="Armor">
-		<!-- An artifact that increases Critical Damage for standard attacks. Can be equipped in a balance artifact slot. When enchanted, increases Critical Damage for standard attacks. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Critical Damage for basic attacks. Can be equipped in a balance artifact slot. When enchanted, increases Critical Damage for basic attacks. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -678,7 +678,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80659" name="Artifact - P. Skill Critical Damage" additionalName="Balance" type="Armor">
-		<!-- An artifact that increases P. Skill Critical Damage. Can be equipped in a balance artifact slot. When enchanted, increases P. Skill Critical Damage bonus. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases P. Skill Critical Damage. Can be equipped in a balance artifact slot. When enchanted, increases P. Skill Critical Damage. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -687,7 +687,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80660" name="Artifact - M. Skill Critical Damage" additionalName="Balance" type="Armor">
-		<!-- An artifact that increases M. Skill Critical Damage. Can be equipped in a balance artifact slot. When enchanted, increases M. Skill Critical Damage bonus. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases M. Skill Critical Damage. Can be equipped in a balance artifact slot. When enchanted, increases M. Skill Critical Damage. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -696,7 +696,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80661" name="Artifact - Atk. Spd." additionalName="Balance" type="Armor">
-		<!-- An artifact that increases Atk. Spd. Can be equipped in a balance artifact slot. When enchanted, increases Atk. Spd. bonus. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Atk. Spd. Can be equipped in a balance artifact slot. When enchanted, increases Atk. Spd. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -705,7 +705,7 @@
 		<set name="material" val="SILVER" />
 	</item>
 	<item id="80662" name="Artifact - Casting Spd." additionalName="Balance" type="Armor">
-		<!-- An artifact that increases Casting Spd. Can be equipped in a balance artifact slot. When enchanted, increases Casting Spd. bonus. Only a balance artifact can be used as a material for upgrade. -->
+		<!-- An artifact that increases Casting Spd. Can be equipped in a balance artifact slot. When enchanted, increases Casting Spd. Can be enhanced only with balance artifacts. -->
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="artifact" />
 		<set name="is_sellable" val="false" />
@@ -747,7 +747,7 @@
 			<item id="36484" min="1" max="1" chance="3.2258" /> <!-- Lindvior Slasher - High-grade -->
 			<item id="36485" min="1" max="1" chance="3.2258" /> <!-- Lindvior Caster - High-grade -->
 			<item id="36486" min="1" max="1" chance="3.2258" /> <!-- Lindvior Cutter - High-grade -->
-			<item id="36487" min="1" max="1" chance="3.2258" /> <!-- Lindvior Shooter - High-grade -->
+			<item id="36487" min="1" max="1" chance="3.2258" /> <!-- Lindvior Guardian - High-grade -->
 			<item id="36488" min="1" max="1" chance="3.2258" /> <!-- Lindvior Dual Daggers - High-grade -->
 			<item id="80078" min="1" max="1" chance="3.2258" /> <!-- Fafurion Avenger - High-grade -->
 			<item id="80079" min="1" max="1" chance="3.2258" /> <!-- Fafurion Fighter - High-grade -->
@@ -1271,7 +1271,7 @@
 		</stats>
 	</item>
 	<item id="80698" name="Bloodthirsty Zariche Shaper" type="Weapon">
-		<!-- A weapon created from Demonic Sword Zariche. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Zariche's Blood to Kaysia in Oren to get a Bloodstained Zariche weapon. -->
+		<!-- A weapon created from Demonic Sword Zariche. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Zariche's Blood to Kaysia in Oren to get a Bloodstained Zariche weapon. -->
 		<set name="icon" val="icon.zariche_shaper_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />
@@ -1296,7 +1296,7 @@
 		</stats>
 	</item>
 	<item id="80699" name="Bloodthirsty Zariche Cutter" type="Weapon">
-		<!-- A weapon created from Demonic Sword Zariche. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing>. Take the weapon and Zariche's Blood to Kaysia in Oren to get a Bloodstained Zariche weapon. -->
+		<!-- A weapon created from Demonic Sword Zariche. Max HP can be more than 150,000. Its appearance cannot be changed. Cannot be assigned an attribute, crystallized, augmented, enchanted, or enhanced with a soul crystal. <Enhancing> Take the weapon and Zariche's Blood to Kaysia in Oren to get a Bloodstained Zariche weapon. -->
 		<set name="icon" val="icon.zariche_cutter_1" />
 		<set name="is_cursed_weapon" val="true" />
 		<set name="default_action" val="EQUIP" />

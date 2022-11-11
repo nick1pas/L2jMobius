@@ -357,7 +357,7 @@
 		</stats>
 	</item>
 	<item id="6611" name="Infinity Blade" type="Weapon">
-		<!-- Divine hero's weapon. After a critical attack, casts a P. Def.-decreasing debuff on the target. Also increases Max HP/ MP/ CP and Shield Defense. Has a chance to reflect debuffs back to the enemy. Increases PvP damage. -->
+		<!-- Divine hero's weapon. After a critical attack, casts a P. Def.-decreasing debuff on the target. Increases Max HP/ MP/ CP and Shield Defense. With a certain chance, reflects debuffs back to the enemy. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_the_sword_of_hero_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -395,7 +395,7 @@
 		</stats>
 	</item>
 	<item id="6612" name="Infinity Cleaver" type="Weapon">
-		<!-- Divine hero's weapon. Increases Critical Damage/ Rate for standard attacks, Max HP/ CP. Increases PvP damage. Has a chance to reflect debuffs back to the enemy. -->
+		<!-- Divine hero's weapon. Increases Critical Rate/ Damage for basic attacks, Max HP, Max CP. Deals additional PvP damage. With a certain chance, reflects debuffs back to the enemy. -->
 		<set name="icon" val="icon.weapon_the_two_handed_sword_of_hero_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -511,7 +511,7 @@
 		</stats>
 	</item>
 	<item id="6615" name="Infinity Crusher" type="Weapon">
-		<!-- Divine hero's weapon. Increases Max HP/ CP and Atk. Spd. Stuns the target after a critical attack. Has a chance to reflect debuffs back to the enemy. Increases PvP damage. -->
+		<!-- Divine hero's weapon. Increases Max HP/ CP and Atk. Spd. Stuns the target after a critical attack. With a certain chance, reflects debuffs back to the enemy. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_the_hammer_of_hero_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -629,7 +629,7 @@
 		</stats>
 	</item>
 	<item id="6618" name="Infinity Fang" type="Weapon">
-		<!-- Divine hero's weapon. Increasing Max HP/ MP/ CP and Evasion. Stuns the target after a critical attack and has a chance to reflect debuffs back to the enemy. Increases PvP damage. -->
+		<!-- Divine hero's weapon. Increases Max HP/ MP/ CP and Evasion. Stuns the target after a critical attack. With a certain chance, reflects debuffs back to the enemy. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_the_fist_of_hero_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -709,7 +709,7 @@
 		</stats>
 	</item>
 	<item id="6620" name="Infinity Wing" type="Weapon">
-		<!-- Divine hero's weapon. After a critical attack, inflicts Silence on the target, has a chance to reflect debuffs back to the enemy and increases Max HP/ MP/ CP and P. Critical Rate. Increases PvP damage. -->
+		<!-- Divine hero's weapon. After a critical attack, inflicts Silence on the target. With a certain chance, reflects debuffs back to the enemy. Iincreases Max HP/ MP/ CP and P. Critical Rate. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_the_dualsword_of_hero_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />
@@ -747,7 +747,7 @@
 		</stats>
 	</item>
 	<item id="6621" name="Infinity Spear" type="Weapon">
-		<!-- Divine hero's weapon. After a critical attack, dispells buffs on the target, has a chance to reflect debuffs and increases Max HP/ CP, Atk. Spd. and P. Accuracy. Inflicts additional PvP Damage. -->
+		<!-- Divine hero's weapon. After a critical attack, removes buffs from the target. With a certain chance, reflects debuffs back to the enemy. Increases Max HP/ CP, Atk. Spd. and P. Accuracy. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_the_pole_of_hero_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -1043,7 +1043,7 @@
 		</skills>
 	</item>
 	<item id="6646" name="Beast Spiritshot" type="EtcItem">
-		<!-- The light of a spirit is bestowed upon a pet/ servitor and temporarily increases the power of M. Atk. The number of spiritshots consumed can be viewed in the Pet/ Servitor Information window. (Used in the master's inventory.) -->
+		<!-- Increases pets'/ servitors' magic power. The required number of Spiritshots is shown in a pet's/ servitor's info window. (Used from the master's inventory.) -->
 		<set name="icon" val="icon.etc_beast_spirit_shot_i00" />
 		<set name="default_action" val="SUMMON_SPIRITSHOT" />
 		<set name="immediate_effect" val="true" />
@@ -1060,7 +1060,7 @@
 		</skills>
 	</item>
 	<item id="6647" name="Blessed Beast Spiritshot" type="EtcItem">
-		<!-- The light of a higher-level spirit is bestowed upon a pet/ servitor and temporarily increases the power of M. Atk. The number of blessed spiritshots consumed can be viewed in the Pet/ Servitor Information window. (Used in the master's inventory.) -->
+		<!-- Increases pets'/ servitors' magic power. The required number of Spiritshots is shown in a pet's/ servitor's info window. (Used from the master's inventory.) -->
 		<set name="icon" val="icon.etc_blessed_beast_spirit_shot_i00" />
 		<set name="default_action" val="SUMMON_SPIRITSHOT" />
 		<set name="immediate_effect" val="true" />
@@ -1167,7 +1167,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6654" name="Amulet: Flames of Valakas" type="EtcItem">
-		<!-- Removes the abnormal state resulting from the fiery breath attack of Valakas. -->
+		<!-- Removes the anomaly state resulting from the fiery breath attack of Valakas. -->
 		<set name="icon" val="icon.etc_aidcharm_cancel_valbreath_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1197,7 +1197,7 @@
 		</skills>
 	</item>
 	<item id="6656" name="Antharas' Earring" type="Armor">
-		<!-- MP +37, Infection Atk. Rate and Resistance +30%, Earth Resistance +15, Vampiric Rage effect +4%, MP consumption -5%. Effects of two identical earrings do not stack. <Enchanting>. Use Scroll: Enchant S-grade Armor. <Enhancing>. Take the item and Bottle of Antharas' Soul to Denign in Giran to get Blessed Antharas' Earring. -->
+		<!-- MP +37, Infection Atk. Rate and Resistance +30%, Earth Resistance +15, Vampiric Rage effect +4%, MP consumption -5%. Effects of two identical earrings do not stack. <Enchanting> Use Scroll: Enchant S-grade Armor. <Enhancing> Take the item and Bottle of Antharas' Soul to Denign in Giran to get Blessed Antharas' Earring. -->
 		<set name="icon" val="icon.accessory_earring_of_antaras_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1218,7 +1218,7 @@
 		</stats>
 	</item>
 	<item id="6657" name="Valakas' Necklace" type="Armor">
-		<!-- MP +50, Stupor Resistance and Atk. Rate +40%, HP +445, Fire Resistance +15, P. Atk. +4%, M. Atk. +8%, M. Critical Rate +2, Damage Reflection +5, Skill Cooldown -10%. <Enchanting>. Use Scroll: Enchant S-grade Armor. <Enhancing>. Take a Bottle of Valakas' Soul to Denign in Giran to obtain Blessed Valakas' Necklace. -->
+		<!-- MP +50, Stupor Resistance and Atk. Rate +40%, HP +445, Fire Resistance +15, P. Atk. +4%, M. Atk. +8%, M. Critical Rate +2, Damage Reflection +5, Skill Cooldown -10%. <Enchanting> Use Scroll: Enchant S-grade Armor. <Enhancing> Take a Bottle of Valakas' Soul to Denign in Giran to obtain Blessed Valakas' Necklace. -->
 		<set name="icon" val="icon.accessory_necklace_of_valakas_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="neck" />
@@ -1239,7 +1239,7 @@
 		</stats>
 	</item>
 	<item id="6658" name="Baium's Ring" type="Armor">
-		<!-- MP +21, Infection Atk. Rate and Resistance +40%, Obstruction Atk. Rate and Resistance +30%. Increases P. Accuracy, Critical Damage for standard attacks, Atk. Spd. and Casting Spd. Effects of two identical rings do not stack. -->
+		<!-- MP +21, Poison Resistance +40%, Poison Atk. Rate +40%, Accuracy +2, Critical Damage for basic attacks +15%, Hold Resistance +30%, Hold Atk. Rate +30%, Atk. Spd. +4%, Casting Spd. +4%. Effects of two identical rings do not stack. Can be crystallized to obtain Selenite. -->
 		<set name="icon" val="icon.accessory_ring_of_baium_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -1260,7 +1260,7 @@
 		</stats>
 	</item>
 	<item id="6659" name="Zaken's Earring" type="Armor">
-		<!-- MP+31, Bleed Resistance/ Atk. Rate +30%, Confusion Resistance/ Atk. Rate +20%. Increases Received Healing, grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. -->
+		<!-- MP +31, Bleed Atk. Rate and Resistance +30%, Confusion Atk. Rate and Resistance +20%. Increases Received Healing, grants Vampiric Rage effect. Effects of two identical earrings do not stack. When equipped with Blessed Zaken's Earring, only the effect of the latter is applied. Can be crystallized to obtain Selenite. -->
 		<set name="icon" val="icon.accessory_earring_of_zaken_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1281,7 +1281,7 @@
 		</stats>
 	</item>
 	<item id="6660" name="Queen Ant's Ring" type="Armor">
-		<!-- MP +21, Infection Atk. Rate and Resistance +30%, Obstruction Atk. Rate and Resistance +20%. Increases P. Accuracy and Critical Damage for standard attacks. Effects of two identical rings do not stack. -->
+		<!-- MP +21, Infection Atk. Rate and Resistance +30%, Obstruction Atk. Rate and Resistance +20%. Increases P. Accuracy and Critical Damage for basic attacks. Effects of two identical rings do not stack. Can be crystallized to obtain Selenite. -->
 		<set name="icon" val="icon.accessory_ring_of_queen_ant_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -1302,7 +1302,7 @@
 		</stats>
 	</item>
 	<item id="6661" name="Orfen's Earring" type="Armor">
-		<!-- MP +31, Infection Atk. Rate and Resistance +20%. Increases Received Healing. Effects of two identical earrings do not stack. -->
+		<!-- MP +31, Infection Atk. Rate and Resistance +20%. Increases Received Healing. Effects of two identical earrings do not stack. Can be crystallized to obtain Selenite. -->
 		<set name="icon" val="icon.accessory_earring_of_orfen_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1323,7 +1323,7 @@
 		</stats>
 	</item>
 	<item id="6662" name="Ring of Core" type="Armor">
-		<!-- MP +21, Infection Atk. Rate and Resistance +20%. Increases P. Accuracy. Effects of two identical rings do not stack. -->
+		<!-- MP +21, Infection Atk. Rate and Resistance +20%. Increases P. Accuracy. Effects of two identical rings do not stack. Can be crystallized to obtain Selenite. -->
 		<set name="icon" val="icon.accessory_ring_of_core_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />

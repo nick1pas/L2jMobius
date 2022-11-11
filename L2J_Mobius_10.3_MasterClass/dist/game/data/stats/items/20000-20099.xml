@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="20000" name="Spicy Kimchi" type="EtcItem">
-		<!-- Event Item. Temporarily increases Recovery Rate. Effect 1. -->
+		<!-- Event Item Temporarily increases Recovery Rate. Effect 1. -->
 		<set name="icon" val="BranchSys.icon.etc_kimchi_power_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="ex_immediate_effect" val="true" />
@@ -14,7 +14,7 @@
 		</skills>
 	</item>
 	<item id="20001" name="Spicy Kimchi" type="EtcItem">
-		<!-- Event Item. Temporarily increases Recovery Rate and power. Effect 2. -->
+		<!-- Event Item Temporarily increases Recovery Rate and power. Effect 2. -->
 		<set name="icon" val="BranchSys.icon.etc_kimchi_power_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="ex_immediate_effect" val="true" />
@@ -27,7 +27,7 @@
 		</skills>
 	</item>
 	<item id="20002" name="Spicy Kimchi" type="EtcItem">
-		<!-- Event Item. Temporarily increases Recovery Rate, power and power Speed. Effect 3. -->
+		<!-- Event Item Temporarily increases Recovery Rate, power and power Speed. Effect 3. -->
 		<set name="icon" val="BranchSys.icon.etc_kimchi_power_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="ex_immediate_effect" val="true" />
@@ -40,7 +40,7 @@
 		</skills>
 	</item>
 	<item id="20003" name="Sweet-and-Sour White Kimchi" type="EtcItem">
-		<!-- Event Item. Magically multiplies the effect of Spicy Kimchi by 5. -->
+		<!-- Event Item Magically multiplies the effect of Spicy Kimchi by 5. -->
 		<set name="icon" val="BranchSys.icon.etc_kimchi_time_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="ex_immediate_effect" val="true" />
@@ -53,7 +53,7 @@
 		</skills>
 	</item>
 	<item id="20004" name="Vitality Ginseng" type="EtcItem">
-		<!-- Event item. Vitality is replenished with XP gain. Vitality item with limited usage. -->
+		<!-- Event item Vitality is replenished with XP gain. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.etc_ginseng_recovery_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="ex_immediate_effect" val="true" />
@@ -66,7 +66,7 @@
 		</skills>
 	</item>
 	<item id="20005" name="Vitality Red Ginseng" type="EtcItem">
-		<!-- Event item. Magic Red Ginseng that replenishes some Vitality. Vitality item with limited usage. -->
+		<!-- Event item Magic Red Ginseng that replenishes some Vitality. Vitality item with limited usage. -->
 		<set name="immediate_effect" val="true" />
 		<set name="ex_immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -298,7 +298,7 @@
 		</skills>
 	</item>
 	<item id="20017" name="Afro Hair" type="Armor">
-		<!-- Afro style hair. Uses 2 hair accessory slots. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -313,7 +313,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="20018" name="Afro Hair" additionalName="Big Head / Firecracker" type="Armor">
-		<!-- Afro style hair. Uses 2 hair accessory slots. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -332,7 +332,7 @@
 		</skills>
 	</item>
 	<item id="20019" name="Afro Hair" additionalName="Wind Walk" type="Armor">
-		<!-- Afro style hair. Uses 2 hair accessory slots. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -350,7 +350,7 @@
 		</skills>
 	</item>
 	<item id="20020" name="Uniform Hat" type="Armor">
-		<!-- A very fancy hat. Occupies 2 Hair Accessory slots. -->
+		<!-- A very stylish head accessory. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Uniform_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -365,7 +365,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="20021" name="Assassin's Bamboo Hat" type="Armor">
-		<!-- Wide-brimmed hat fashioned out of bamboo. Uses 2 hair accessory slots. -->
+		<!-- A hat made of bulrush. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -380,7 +380,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="20022" name="Ruthless Tribe Mask" type="Armor">
-		<!-- A mask which formerly belonged to Looters. -->
+		<!-- A mask worn by raiders. -->
 		<set name="icon" val="BranchSys.icon.br_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -395,7 +395,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="20023" name="Ribbon Hairband" type="Armor">
-		<!-- A ribbon-like hair accessory, intended for female characters only. -->
+		<!-- A bow head accessory. Female only. -->
 		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -431,7 +431,7 @@
 		</cond>
 	</item>
 	<item id="20025" name="My Teleport Scroll" type="EtcItem">
-		<!-- This consumable item allows you to magically transport yourself to a specific location. -->
+		<!-- Can be used to teleport to a previously saved location. -->
 		<set name="icon" val="icon.bookmark_scroll_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -508,7 +508,7 @@
 		</skills>
 	</item>
 	<item id="20030" name="Darkmane Pacer Bracelet" additionalName="30-day" type="Armor">
-		<!-- Can mount a Darkmane Pacer when equipped. 30-day. -->
+		<!-- Allows to mount Darkmane Pacer. Available for 30 d. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -526,7 +526,7 @@
 		</skills>
 	</item>
 	<item id="20031" name="Kat the Cat Hat" type="Armor">
-		<!-- Uses 2 hair accessory slots. -->
+		<!-- Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -541,7 +541,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="20032" name="Skull Hat" type="Armor">
-		<!-- A hat that looks like a skull. Uses 2 hair accessory slots. -->
+		<!-- A hat that looks like a skull. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_skeleton_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -783,7 +783,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20046" name="Package: Afro Hair" type="EtcItem">
-		<!-- Contains an Afro Hair wig. -->
+		<!-- Double-click to obtain Afro Hairstyle. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -795,11 +795,11 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_freightable" val="true" />
 		<capsuled_items>
-			<item id="20017" min="1" max="1" chance="100" /> <!-- Afro Hair -->
+			<item id="20017" min="1" max="1" chance="100" /> <!-- Afro Hairstyle -->
 		</capsuled_items>
 	</item>
 	<item id="20047" name="Package: Afro Hair" additionalName="Big Head / Firecracker" type="EtcItem">
-		<!-- Contains an Afro Hair wig. -->
+		<!-- Double-click to obtain Afro Hairstyle. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -811,11 +811,11 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_freightable" val="true" />
 		<capsuled_items>
-			<item id="20018" min="1" max="1" chance="100" /> <!-- Afro Hair - Big Head / Firework -->
+			<item id="20018" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Big Head / Firecracker -->
 		</capsuled_items>
 	</item>
 	<item id="20048" name="Package: Afro Hair" additionalName="Wind Walk" type="EtcItem">
-		<!-- Contains an Afro Hair wig. -->
+		<!-- Double-click to obtain Afro Hairstyle. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -827,7 +827,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="is_freightable" val="true" />
 		<capsuled_items>
-			<item id="20019" min="1" max="1" chance="100" /> <!-- Afro Hair - Wind Walk -->
+			<item id="20019" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Wind Walk -->
 		</capsuled_items>
 	</item>
 	<item id="20049" name="Package: Uniform Hat" type="EtcItem">
@@ -863,7 +863,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20051" name="Package: Ruthless Tribe Mask" type="EtcItem">
-		<!-- Contains a Ruthless Tribe Mask. -->
+		<!-- Double-click to obtain Ruthless Tribe Mask. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1078,7 +1078,7 @@
 		</skills>
 	</item>
 	<item id="20064" name="Agathion Bamboo Panda" type="Armor">
-		<!-- Bracelet that summons a Bamboo Panda. -->
+		<!-- A bracelet for summoning Daddy Panda. -->
 		<set name="icon" val="BranchSys.icon.br_kunfu_panda_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1135,7 +1135,7 @@
 		</skills>
 	</item>
 	<item id="20067" name="Agathion Bamboo Panda" additionalName="Resurrection / 15-day" type="Armor">
-		<!-- Bracelet that summons a Bamboo Panda. -->
+		<!-- A bracelet for summoning Daddy Panda. -->
 		<set name="icon" val="BranchSys.icon.br_kunfu_panda_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1193,7 +1193,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20070" name="Package: Agathion Bamboo Panda" type="EtcItem">
-		<!-- Double-click to obtain Agathion Bamboo Panda. -->
+		<!-- Double-click to obtain Agathion Daddy Panda. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1207,11 +1207,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20064" min="1" max="1" chance="100" /> <!-- Agathion Bamboo Panda -->
+			<item id="20064" min="1" max="1" chance="100" /> <!-- Agathion Daddy Panda -->
 		</capsuled_items>
 	</item>
 	<item id="20071" name="Package: Agathion Sexy Panda" type="EtcItem">
-		<!-- Double-click to obtain Agathion Sexy Panda. -->
+		<!-- Double-click to obtain Agathion Mommy Panda. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1225,7 +1225,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20065" min="1" max="1" chance="100" /> <!-- Agathion Sexy Panda -->
+			<item id="20065" min="1" max="1" chance="100" /> <!-- Agathion Mommy Panda -->
 		</capsuled_items>
 	</item>
 	<item id="20072" name="Package: Agathion Baby Panda (15-day)" additionalName="Big Head" type="EtcItem">
@@ -1247,7 +1247,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20073" name="Package: Agathion Bamboo Panda (15-day)" additionalName="Resurrection" type="EtcItem">
-		<!-- Double-click to obtain Agathion Bamboo Panda (15-day). -->
+		<!-- Double-click to obtain Agathion Daddy Panda (15-day). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1261,11 +1261,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20067" min="1" max="1" chance="100" /> <!-- Agathion Bamboo Panda - Resurrection / 15-day -->
+			<item id="20067" min="1" max="1" chance="100" /> <!-- Agathion Daddy Panda - Resurrection / 15-day -->
 		</capsuled_items>
 	</item>
 	<item id="20074" name="Package: Agathion Sexy Panda (15-day)" additionalName="Escape" type="EtcItem">
-		<!-- Double-click to obtain Agathion Sexy Panda (15-day). -->
+		<!-- Double-click to obtain Agathion Mommy Panda (15-day). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1279,7 +1279,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20068" min="1" max="1" chance="100" /> <!-- Agathion Sexy Panda - Escape / 15-day -->
+			<item id="20068" min="1" max="1" chance="100" /> <!-- Agathion Mommy Panda - Escape / 15-day -->
 		</capsuled_items>
 	</item>
 	<item id="20075" name="Santa's Gift - Joy" additionalName="4-hour" type="EtcItem">
@@ -1369,7 +1369,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20081" min="1" max="1" chance="100" /> <!-- Good Luck Bag -->
+			<item id="20081" min="1" max="1" chance="100" /> <!-- Lucky Pouch -->
 		</capsuled_items>
 	</item>
 	<item id="20080" name="Package: Lucky Four-leaf Clover" type="EtcItem">
@@ -1391,7 +1391,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20081" name="Good Luck Bag" type="EtcItem">
-		<!-- Lucky Bag filled with good luck. If you use it, you can acquire a hair accessory that has the Vitality recovery capability. -->
+		<!-- A pouch filled with luck. Double-click to obtain a head accessory that sustains Vitality. -->
 		<set name="icon" val="BranchSys.icon.br_lucky_bag_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1410,7 +1410,7 @@
 		</skills>
 	</item>
 	<item id="20082" name="Lucky Four-leaf Clover" type="EtcItem">
-		<!-- A Lucky Four-leaf Clover. Gives a random Vitality-imbued hair accessory. -->
+		<!-- A four-leaf clover that brings good luck. Double-click to obtain a head accessory that recovers Vitality. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -1430,7 +1430,7 @@
 		</skills>
 	</item>
 	<item id="20083" name="Afro Hair" additionalName="Vitality / 3-hour" type="Armor">
-		<!-- Afro style hair. Vitality skill cooldown is 12 h. Uses 2 hair accessory slots. Vitality item with limited usage. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. Cooldown: 12 h. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1448,7 +1448,7 @@
 		</skills>
 	</item>
 	<item id="20084" name="Afro Hair" additionalName="Vitality / 3-day" type="Armor">
-		<!-- Afro style hair. Vitality skill cooldown is 12 h. Uses 2 hair accessory slots. Vitality item with limited usage. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. Cooldown: 12 h. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1466,7 +1466,7 @@
 		</skills>
 	</item>
 	<item id="20085" name="Afro Hair" additionalName="Vitality / 30-day" type="Armor">
-		<!-- Afro style hair. Vitality skill cooldown is 12 h. Uses 2 hair accessory slots. Vitality item with limited usage. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. Cooldown: 12 h. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1484,7 +1484,7 @@
 		</skills>
 	</item>
 	<item id="20086" name="Horn-rimmed Glasses" additionalName="Vitality / 3-hour" type="Armor">
-		<!-- Magic horn-rimmed glasses with mysterious power. Vitality cooldown 12 h. Vitality item with limited usage. -->
+		<!-- Magic horn-rimmed glasses with mysterious power. When equipped, enables the Sustain Vitality skill (duration: 20 min., cooldown: 12 h.). Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Eye_Glasses_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1502,7 +1502,7 @@
 		</skills>
 	</item>
 	<item id="20087" name="Horn-rimmed Glasses" additionalName="Vitality / 3-day" type="Armor">
-		<!-- Magic horn-rimmed glasses with mysterious power. Vitality cooldown 12 h. Vitality item with limited usage. -->
+		<!-- Magic horn-rimmed glasses with mysterious power. When equipped, enables the Sustain Vitality skill (duration: 20 min., cooldown: 12 h.). Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Eye_Glasses_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1520,7 +1520,7 @@
 		</skills>
 	</item>
 	<item id="20088" name="Horn-rimmed Glasses" additionalName="Vitality / 30-day" type="Armor">
-		<!-- Magic horn-rimmed glasses with mysterious power. Vitality cooldown 12 h. Vitality item with limited usage. -->
+		<!-- Magic horn-rimmed glasses with mysterious power. When equipped, enables the Sustain Vitality skill (duration: 20 min., cooldown: 12 h.). Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Eye_Glasses_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -1538,7 +1538,7 @@
 		</skills>
 	</item>
 	<item id="20089" name="Assassin's Bamboo Hat" additionalName="Vitality / 3-hour" type="Armor">
-		<!-- Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Active skill: Maintain Vitality. Skill cooldown is 12 h. Vitality item with limited usage. -->
+		<!-- A hat made of bulrush. Equipped in 2 head accessory slots. Skill cooldown: 12 h. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1556,7 +1556,7 @@
 		</skills>
 	</item>
 	<item id="20090" name="Assassin's Bamboo Hat" additionalName="Vitality / 3-day" type="Armor">
-		<!-- Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Active skill: Maintain Vitality. Skill cooldown is 12 h. Vitality item with limited usage. -->
+		<!-- A hat made of bulrush. Equipped in 2 head accessory slots. Skill cooldown: 12 h. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1574,7 +1574,7 @@
 		</skills>
 	</item>
 	<item id="20091" name="Assassin's Bamboo Hat" additionalName="Vitality / 30-day" type="Armor">
-		<!-- Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. ?ooldown: 12 h. Vitality item with limited usage. -->
+		<!-- A hat made of bulrush. Equipped in 2 head accessory slots. Skill cooldown: 12 h. Vitality item with limited usage. -->
 		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />

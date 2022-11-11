@@ -13,9 +13,9 @@
 		<set name="time" val="129600" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="16858" min="1" max="1" chance="100" /> <!-- Black Ore Necklace of Fortune - 90-day -->
-			<item id="16857" min="2" max="2" chance="100" /> <!-- Black Ore Earring of Fortune - 90-day -->
-			<item id="16859" min="2" max="2" chance="100" /> <!-- Black Ore Ring of Fortune - 90-day -->
+			<item id="16858" min="1" max="1" chance="100" /> <!-- Black Ore Necklace - Fortune - 90-day -->
+			<item id="16857" min="2" max="2" chance="100" /> <!-- Black Ore Earring - Fortune - 90-day -->
+			<item id="16859" min="2" max="2" chance="100" /> <!-- Black Ore Ring - Fortune - 90-day -->
 		</capsuled_items>
 	</item>
 	<item id="17001" name="C-grade Jewelry Set of Fortune" additionalName="90-day" type="EtcItem">
@@ -31,9 +31,9 @@
 		<set name="time" val="129600" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="16861" min="1" max="1" chance="100" /> <!-- Sealed Necklace of Fortune - 90-day -->
-			<item id="16860" min="2" max="2" chance="100" /> <!-- Sealed Earring of Fortune - 90-day -->
-			<item id="16862" min="2" max="2" chance="100" /> <!-- Sealed Ring of Fortune - 90-day -->
+			<item id="16861" min="1" max="1" chance="100" /> <!-- Necklace of Seal - Fortune - 90-day -->
+			<item id="16860" min="2" max="2" chance="100" /> <!-- Earring of Seal - Fortune - 90-day -->
+			<item id="16862" min="2" max="2" chance="100" /> <!-- Ring of Seal - Fortune - 90-day -->
 		</capsuled_items>
 	</item>
 	<item id="17002" name="D-grade Jewelry Set of Fortune" additionalName="90-day" type="EtcItem">
@@ -51,7 +51,7 @@
 		<capsuled_items>
 			<item id="16864" min="1" max="1" chance="100" /> <!-- Elven Necklace of Fortune - 90-day -->
 			<item id="16863" min="2" max="2" chance="100" /> <!-- Elven Earring of Fortune - 90-day -->
-			<item id="16865" min="2" max="2" chance="100" /> <!-- Elven Ring of Fortune - 90-day -->
+			<item id="16865" min="2" max="2" chance="100" /> <!-- Elven Ring - Fortune - 90-day -->
 		</capsuled_items>
 	</item>
 	<item id="17003" name="Santa's Gift" additionalName="Event" type="EtcItem">
@@ -358,7 +358,7 @@
 		</skills>
 	</item>
 	<item id="17019" name="Package: Mount Bracelet (3 pcs.)" type="EtcItem">
-		<!-- Double-click to obtain Gold Maned Lion Bracelet (7-day), Darkmane Pacer Bracelet (7-day), and Steam Beetle Bracelet (7-day). -->
+		<!-- Double-click to obtain Gold-maned Lion Bracelet (7-day), Darkmane Pacer Bracelet (7-day) and Steam Beetle Bracelet (7-day). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -373,7 +373,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="13121" min="1" max="1" chance="100" /> <!-- Package: Darkmane Pacer (7-day) -->
-			<item id="14231" min="1" max="1" chance="100" /> <!-- Package: Gold Maned Lion Bracelet (7-day) -->
+			<item id="14231" min="1" max="1" chance="100" /> <!-- Package: Gold-maned Lion Bracelet (7-day) -->
 			<item id="14232" min="1" max="1" chance="100" /> <!-- Package: Steam Beetle Bracelet (7-day) -->
 		</capsuled_items>
 	</item>
@@ -396,7 +396,7 @@
 		</capsuled_items>
 	</item>
 	<item id="17021" name="Package: Game Assistant's XP-30 - Event" type="EtcItem">
-		<!-- Double-click to obtain Package: Superior Minion Coupon (2 pcs.), Feather of Blessing (3 pcs.), and Extra Pass: Kamaloka (3 pcs.). -->
+		<!-- Double-click to obtain Package: Superior Minion Coupon (2 pcs.), Feather of Blessing (3 pcs.) and Extra Pass: Kamaloka (3 pcs.). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -507,7 +507,7 @@
 		</capsuled_items>
 	</item>
 	<item id="17027" name="Package: Straw Hat - Event" type="EtcItem">
-		<!-- Double-click to obtain Straw Hat. -->
+		<!-- Double-click to obtain Straw Hat - Event. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -576,7 +576,7 @@
 		</skills>
 	</item>
 	<item id="17031" name="Package: White Freya" type="EtcItem">
-		<!-- Double-click to obtain Vitality Replenishing Potion (3 pcs.),. Fire/ Water/ Wind/ Earth/ Holy/ Dark Crystals,. Circlet of Ice. -->
+		<!-- Double-click to obtain Vitality Replenishing Potion (3 pcs.), Fire/ Water/ Wind/ Earth/ Holy/ Dark Crystals, Circlet of Ice. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -590,7 +590,7 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="17033" min="1" max="1" chance="100" /> <!-- Circlet of Ice (Event) - 30-day -->
+			<item id="17033" min="1" max="1" chance="100" /> <!-- Circlet of Ice - Event - 30-day -->
 			<item id="9552" min="1" max="1" chance="100" /> <!-- Fire Crystal -->
 			<item id="9553" min="1" max="1" chance="100" /> <!-- Water Crystal -->
 			<item id="9554" min="1" max="1" chance="100" /> <!-- Earth Crystal -->
@@ -619,7 +619,7 @@
 		</capsuled_items>
 	</item>
 	<item id="17033" name="Circlet of Ice (Event)" additionalName="30-day" type="Armor">
-		<!-- Circlet that has the power of Freeze. Water Resistance +30. Uses 2 hair accessory slots. 30-day. -->
+		<!-- A circlet imbued with the Ice power. Increases Water Resistance. Equipped in 2 head accessory slots. Available for 30 d. -->
 		<set name="icon" val="icon.accessory_ice_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1168,7 +1168,7 @@
 		</skills>
 	</item>
 	<item id="17066" name="Package: Save the White Tiger - Event" type="EtcItem">
-		<!-- Available only once every 12 h. per account. Double-click to obtain Scroll: Summon Baby White Tiger and a Cupid's potion for the event. -->
+		<!-- An event package that is available once in 12 h. for 1 account. Double-click to obtain the following event items: Scroll: Summon Baby White Tiger, Cupid's Cure. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1181,8 +1181,8 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="17067" min="60" max="60" chance="100" /> <!-- Event - Cupid's Fatigue Relief Potion -->
-			<item id="17068" min="15" max="15" chance="100" /> <!-- Event - Cupid's Major Fatigue Relief Potion -->
+			<item id="17067" min="60" max="60" chance="100" /> <!-- Event - Cupid's Cure -->
+			<item id="17068" min="15" max="15" chance="100" /> <!-- Event - Cupid's Enhanced Cure -->
 			<item id="17062" min="1" max="1" chance="100" /> <!-- Scroll: Summon Baby White Tiger - Event -->
 			<item id="17064" min="1" max="1" chance="100" /> <!-- Scroll: Summon Baby White Tiger Captain - Event -->
 		</capsuled_items>
@@ -1206,7 +1206,7 @@
 		</skills>
 	</item>
 	<item id="17068" name="Event - Cupid's Major Fatigue Relief Potion" type="EtcItem">
-		<!-- Decreases fatigue when used on a White Tiger. It Has a better effect than Cupid's Fatigue Relief Potion. -->
+		<!-- Recovers the White Tiger's energy. More effective than Cupid's Cure. -->
 		<set name="icon" val="icon.etc_nutrients_of_cupid_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ELIXIR" />
@@ -1224,7 +1224,7 @@
 		</skills>
 	</item>
 	<item id="17069" name="Vesper Weapon Pack" type="EtcItem">
-		<!-- Pack containing Vesper weapon. Which one could it be? -->
+		<!-- Double-click to obtain a Vesper weapon. Which one could it be...? -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1238,7 +1238,7 @@
 		</skills>
 	</item>
 	<item id="17070" name="Icarus Weapon Pack" type="EtcItem">
-		<!-- Pack containing Icarus weapon. Which one could it be? -->
+		<!-- Double-click to obtain an Icarus weapon. Which one could it be...? -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1252,7 +1252,7 @@
 		</skills>
 	</item>
 	<item id="17071" name="Dynasty Weapon Pack" type="EtcItem">
-		<!-- Pack containing Dynasty weapon. Which one could it be? -->
+		<!-- Double-click to obtain a Dynasty weapon. Which one could it be...? -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1350,7 +1350,7 @@
 		</skills>
 	</item>
 	<item id="17078" name="Facelifting Potion Pack" type="EtcItem">
-		<!-- Box containing Facelifting Potion. Sometimes, Sometimes contains Fresh Milk. -->
+		<!-- Double-click to obtain a Facelifting Potion. There is a chance to also obtain Fresh Milk. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1364,7 +1364,7 @@
 		</skills>
 	</item>
 	<item id="17079" name="Dye Potion Pack" type="EtcItem">
-		<!-- Double-click to obtain Dye Potion. Sometimes Fresh Milk can be obtained. -->
+		<!-- Double-click to obtain a Dye Potion. There is also a chance to obtain Fresh Milk. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1378,7 +1378,7 @@
 		</skills>
 	</item>
 	<item id="17080" name="Hairstyle Change Potion Pack" type="EtcItem">
-		<!-- Box containing Hair Style Change Potion. Sometimes, Sometimes contains Fresh Milk. -->
+		<!-- Double-click to obtain a Hairstyle Change Potion. There is a chance to also obtain Fresh Milk. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="FISH" />
@@ -1492,7 +1492,7 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="9201" min="1" max="1" chance="100" /> <!-- Shadow Item: Wizard Hat - Firework -->
+			<item id="9201" min="1" max="1" chance="100" /> <!-- Shadow Item: Wizard Hat - Firecracker -->
 		</capsuled_items>
 	</item>
 	<item id="17087" name="Seed: Twin Coba" type="EtcItem">
@@ -1586,7 +1586,7 @@
 		</skills>
 	</item>
 	<item id="17093" name="Vitality Maintaining Potion (10-min.) - Event" type="EtcItem">
-		<!-- Maintains the Vitality amount for 10 min. Cooldown: 30 min. -->
+		<!-- Maintains Vitality for 10 min. Cooldown: 30 min. -->
 		<set name="icon" val="icon.etc_lesser_potion_blue_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />

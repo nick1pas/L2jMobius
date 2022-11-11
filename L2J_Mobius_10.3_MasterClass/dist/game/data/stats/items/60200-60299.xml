@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="60200" name="Freya's Fortune Wand 2022" type="EtcItem">
-		<!-- Double-click to obtain 3 Glittering Freya's Scrolls of Storm and Glittering Freya's Ice Rose. Additionally, you can get one of the following items: Supply Pack/ Enchant Pack/ Treasure Chest. -->
+		<!-- Double-click to obtain 3 Freya's Glittering Scrolls of Storm and Freya's Glittering Ice Rose. Additionally, you can get one of the following items: Supply Pack/ Enchant Pack/ Treasure Chest. -->
 		<set name="icon" val="icon.bm_freya_wand" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -12,7 +12,7 @@
 		<set name="extractableCountMax" val="3" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="29677" min="1" max="1" chance="100" /> <!-- Glittering Freya's Ice Rose -->
+			<item id="29677" min="1" max="1" chance="100" /> <!-- Freya's Glittering Ice Rose -->
 			<item id="29676" min="3" max="3" chance="100" /> <!-- Glittering Freya's Scroll of Storm -->
 			<item id="60201" min="1" max="1" chance="34" /> <!-- Freya's Supply Pack 2022 -->
 			<item id="60202" min="1" max="1" chance="33" /> <!-- Rare Treasure Chest 2022 -->
@@ -40,7 +40,7 @@
 			<item id="80817" min="1" max="1" chance="11" /> <!-- Emperor's Special Cocktail -->
 			<item id="81134" min="2" max="2" chance="11" /> <!-- Crystal of Dyes -->
 			<item id="81747" min="1" max="1" chance="11" /> <!-- Royal Honey Dark Beer -->
-			<item id="81759" min="1" max="1" chance="11" /> <!-- Glowing Royal Dragon's Attribute Potion XP -->
+			<item id="81759" min="1" max="1" chance="11" /> <!-- Glowing Royal Dragon's Attribute Potion - XP -->
 			<item id="81892" min="1" max="1" chance="11" /> <!-- Shining Royal Nevit's Gold Hourglass -->
 		</capsuled_items>
 	</item>
@@ -58,7 +58,7 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="28484" min="2" max="2" chance="6" /> <!-- Brooch Augmenting Stone -->
+			<item id="28484" min="2" max="2" chance="6" /> <!-- Augmenting Stone: Brooch -->
 			<item id="28766" min="1" max="1" chance="6" /> <!-- Stable Scroll: Enchant Legendary Cloak -->
 			<item id="29163" min="1" max="1" chance="6" /> <!-- Stable Scroll: Enchant Cloak -->
 			<item id="29469" min="1" max="1" chance="6" /> <!-- Enhanced Jewel Energy -->
@@ -66,14 +66,14 @@
 			<item id="36414" min="1" max="1" chance="6" /> <!-- Dragon Claw -->
 			<item id="36515" min="1" max="1" chance="6" /> <!-- Elcyum -->
 			<item id="47866" min="2" max="2" chance="6" /> <!-- Star Sign -->
-			<item id="48215" min="1" max="1" chance="6" /> <!-- Circlet Augmenting Stone -->
+			<item id="48215" min="1" max="1" chance="6" /> <!-- Augmenting Stone: Circlet -->
 			<item id="48831" min="1" max="1" chance="6" /> <!-- Jewel Energy -->
-			<item id="80130" min="1" max="1" chance="5" /> <!-- Superior Weapon Augmenting Stone -->
+			<item id="80130" min="1" max="1" chance="5" /> <!-- Superior Augmenting Stone: Weapon -->
 			<item id="80839" min="1" max="1" chance="5" /> <!-- Crystal of Dawn -->
 			<item id="80932" min="1" max="1" chance="5" /> <!-- Greater Zodiac Agathion's Book of Growth -->
-			<item id="81135" min="1" max="1" chance="5" /> <!-- Dragon Weapon Augmenting Stone -->
+			<item id="81135" min="1" max="1" chance="5" /> <!-- Dark Augmenting Stone -->
 			<item id="81453" min="1" max="1" chance="5" /> <!-- Enhanced Rune Stone -->
-			<item id="81931" min="1" max="1" chance="5" /> <!-- Dragon Leather Shirt Augmenting Stone -->
+			<item id="81931" min="1" max="1" chance="5" /> <!-- Augmenting Stone: Dragon Leather Shirt -->
 			<item id="82032" min="1" max="1" chance="5" /> <!-- Shiny Jewel Energy -->
 			<item id="82049" min="1" max="1" chance="5" /> <!-- Shining Sayha's Energy -->
 		</capsuled_items>
@@ -98,15 +98,15 @@
 			<item id="48942" min="1" max="1" chance="6" /> <!-- +8 Angel's Earring Pack -->
 			<item id="48995" min="1" max="1" chance="6" /> <!-- +5 Dragon Rind Leather Shirt Box -->
 			<item id="81156" min="1" max="1" chance="6" /> <!-- +8 Angel's Ring Pack -->
-			<item id="81444" min="1" max="1" chance="6" /> <!-- Greater Agathion Fire Dragon Charm -->
+			<item id="81444" min="1" max="1" chance="6" /> <!-- Grater Agathion Charm: Fire Dragon -->
 			<item id="81448" min="5" max="5" chance="6" /> <!-- Angel's Necklace Pack -->
 			<item id="81449" min="3" max="3" chance="6" /> <!-- Angel's Earring Pack -->
 			<item id="81450" min="3" max="3" chance="6" /> <!-- Angel's Ring Pack -->
-			<item id="81696" min="1" max="1" chance="5" /> <!-- Unique Artifact Book Lv. 3 -->
+			<item id="81696" min="1" max="1" chance="5" /> <!-- Unique Artifact Book - Lv. 3 -->
 			<item id="19463" min="1" max="1" chance="5" /> <!-- Blessed Antharas' Earring -->
 			<item id="19464" min="1" max="1" chance="5" /> <!-- Blessed Valakas' Necklace -->
 			<item id="36946" min="1" max="1" chance="5" /> <!-- Lindvior's Earring -->
-			<item id="48417" min="1" max="1" chance="5" /> <!-- Ruler's Authority - Genesis Lv. 2 -->
+			<item id="48417" min="1" max="1" chance="5" /> <!-- Ruler's Authority - Genesis - Lv. 2 -->
 			<item id="80333" min="1" max="1" chance="5" /> <!-- Dragon's Necklace -->
 			<item id="80334" min="1" max="1" chance="5" /> <!-- Dragon's Earring -->
 			<item id="80335" min="1" max="1" chance="5" /> <!-- Dragon's Ring -->
@@ -164,7 +164,7 @@
 		</skills>
 	</item>
 	<item id="60208" name="Anakim Server's Support Pack" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain Emperor's Special Cocktail (12 pcs.), Freya's Ice Rose (24 pcs.), Glowing Dragon's Attribute Potion (XP) (24 pcs.), Honey Dark Beer (24 pcs.). -->
+		<!-- Double-click to obtain Emperor's Special Cocktail (12 pcs.), Freya's Ice Rose (24 pcs.), Glowing Dragon's Attribute Potion (XP) (24 pcs.), Honey Dark Beer (24 pcs.), Soulshot/ Spiritshot Ticket. -->
 		<set name="icon" val="icon.etc_treasure_box_i01" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -175,10 +175,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48755" min="24" max="24" chance="100" /> <!-- Glowing Dragon's Attribute Potion (XP) Event -->
-			<item id="80612" min="24" max="24" chance="100" /> <!-- Freya's Ice Rose Event -->
-			<item id="80832" min="12" max="12" chance="100" /> <!-- Emperor's Special Cocktail Event -->
-			<item id="81460" min="24" max="24" chance="100" /> <!-- Honey Dark Beer Event -->
+			<item id="48755" min="24" max="24" chance="100" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="80612" min="24" max="24" chance="100" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80832" min="12" max="12" chance="100" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81460" min="24" max="24" chance="100" /> <!-- Honey Dark Beer - Event -->
 		</capsuled_items>
 	</item>
 	<item id="60209" name="Dragon's Treasure Chest" type="EtcItem">
@@ -194,14 +194,14 @@
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="60210" min="1" max="1" chance="100" /> <!-- Dragon Coin Sack -->
-			<item id="28484" min="1" max="1" chance="2.5" /> <!-- Brooch Augmenting Stone -->
+			<item id="28484" min="1" max="1" chance="2.5" /> <!-- Augmenting Stone: Brooch -->
 			<item id="29379" min="1" max="1" chance="2.5" /> <!-- Peeves' Purple Potion -->
-			<item id="29524" min="1" max="1" chance="2.5" /> <!-- +3 Dragon Earring Box -->
-			<item id="29525" min="1" max="1" chance="2.5" /> <!-- +3 Dragon Ring Box -->
-			<item id="29526" min="1" max="1" chance="2.5" /> <!-- +3 Dragon Necklace Box -->
-			<item id="29539" min="1" max="1" chance="2.5" /> <!-- Dragon Power Crystal -->
+			<item id="29524" min="1" max="1" chance="2.5" /> <!-- +3 Dragon's Earring Pack -->
+			<item id="29525" min="1" max="1" chance="2.5" /> <!-- +3 Dragon's Ring Pack -->
+			<item id="29526" min="1" max="1" chance="2.5" /> <!-- +3 Dragon's Necklace Pack -->
+			<item id="29539" min="1" max="1" chance="2.5" /> <!-- Crystal of Dark -->
 			<item id="29676" min="2" max="2" chance="2.5" /> <!-- Glittering Freya's Scroll of Storm -->
-			<item id="29677" min="2" max="2" chance="2.5" /> <!-- Glittering Freya's Ice Rose -->
+			<item id="29677" min="2" max="2" chance="2.5" /> <!-- Freya's Glittering Ice Rose -->
 			<item id="29792" min="200" max="200" chance="2.5" /> <!-- Dragon Coin -->
 			<item id="29792" min="50" max="50" chance="2.5" /> <!-- Dragon Coin -->
 			<item id="29792" min="25" max="25" chance="2.5" /> <!-- Dragon Coin -->
@@ -212,7 +212,7 @@
 			<item id="36414" min="1" max="1" chance="2.5" /> <!-- Dragon Claw -->
 			<item id="36515" min="1" max="1" chance="2.5" /> <!-- Elcyum -->
 			<item id="47494" min="3" max="3" chance="2.5" /> <!-- Selenite -->
-			<item id="48215" min="1" max="1" chance="2.5" /> <!-- Circlet Augmenting Stone -->
+			<item id="48215" min="1" max="1" chance="2.5" /> <!-- Augmenting Stone: Circlet -->
 			<item id="48418" min="1" max="1" chance="2.5" /> <!-- Authority Ornament -->
 			<item id="48422" min="1" max="1" chance="2.5" /> <!-- Talisman of Wind Pack -->
 			<item id="48667" min="1" max="1" chance="2.5" /> <!-- Mid-grade Dragon Weapon Pack -->
@@ -225,8 +225,8 @@
 			<item id="80931" min="3" max="3" chance="2.5" /> <!-- Greater Zodiac Agathion Cube -->
 			<item id="80964" min="1" max="1" chance="2.5" /> <!-- Energy of Protection -->
 			<item id="81134" min="1" max="1" chance="2.5" /> <!-- Crystal of Dyes -->
-			<item id="81135" min="1" max="1" chance="2.5" /> <!-- Dragon Weapon Augmenting Stone -->
-			<item id="81729" min="1" max="1" chance="2.5" /> <!-- Accessory Augmenting Stone -->
+			<item id="81135" min="1" max="1" chance="2.5" /> <!-- Dark Augmenting Stone -->
+			<item id="81729" min="1" max="1" chance="2.5" /> <!-- Augmenting Stone: Accessory -->
 			<item id="81747" min="2" max="2" chance="2.5" /> <!-- Royal Honey Dark Beer -->
 			<item id="81892" min="1" max="1" chance="2.5" /> <!-- Shining Royal Nevit's Gold Hourglass -->
 			<item id="82032" min="1" max="1" chance="2.5" /> <!-- Shiny Jewel Energy -->
@@ -272,35 +272,35 @@
 		<set name="extractableCountMax" val="2" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="60212" min="1" max="1" chance="100" /> <!-- Improved Scroll: Enchant Mysterious Weapon -->
+			<item id="60212" min="1" max="1" chance="100" /> <!-- Improved Scroll: Enchant Mysterious Weapon - Event -->
 			<item id="48502" min="1" max="1" chance="2.5" /> <!-- Scroll: Enchant Mysterious Weapon -->
 			<item id="80663" min="1" max="1" chance="2.5" /> <!-- High-grade Dragon Weapon Pack -->
-			<item id="48908" min="1" max="1" chance="2.5" /> <!-- Shillien's Soul Crystal Lv.10 (Weapon) -->
+			<item id="48908" min="1" max="1" chance="2.5" /> <!-- Shillien's Soul Crystal Lv. 10 - Weapon -->
 			<item id="80958" min="1" max="1" chance="2.5" /> <!-- Sealed Heavenly Talisman -->
 			<item id="29916" min="1" max="1" chance="2.5" /> <!-- +20 Supreme Krishna Weapon Pack -->
-			<item id="47821" min="1" max="1" chance="2.5" /> <!-- Libra Cube Lv.8 -->
-			<item id="48840" min="1" max="1" chance="2.5" /> <!-- Ultimate Luxurious Jewelry Box Lv.1 -->
+			<item id="47821" min="1" max="1" chance="2.5" /> <!-- Sayha's Talisman Pack Lv. 10 -->
+			<item id="48840" min="1" max="1" chance="2.5" /> <!-- Ultimate Luxurious Jewelry Box Lv. 1 -->
 			<item id="36414" min="1" max="1" chance="2.5" /> <!-- Dragon Claw -->
 			<item id="80334" min="1" max="1" chance="2.5" /> <!-- Dragon's Earring -->
 			<item id="80335" min="1" max="1" chance="2.5" /> <!-- Dragon's Ring -->
 			<item id="80333" min="1" max="1" chance="2.5" /> <!-- Dragon's Necklace -->
 			<item id="80501" min="1" max="1" chance="2.5" /> <!-- Royal Gold Save Ticket -->
-			<item id="39651" min="1" max="1" chance="2.5" /> <!-- Venir's Talisman Lv.18 -->
+			<item id="39651" min="1" max="1" chance="2.5" /> <!-- Venir's Talisman Lv. 18 -->
 			<item id="48878" min="1" max="1" chance="2.5" /> <!-- Forgotten Spellbook - Chapter 3 -->
 			<item id="48877" min="1" max="1" chance="2.5" /> <!-- Forgotten Spellbook - Chapter 2 -->
 			<item id="17623" min="1" max="1" chance="2.5" /> <!-- Earth Wyrm's Heart Ring -->
 			<item id="80839" min="1" max="1" chance="2.5" /> <!-- Crystal of Dawn -->
-			<item id="48912" min="1" max="1" chance="2.5" /> <!-- Shining Gran Kain's Scroll: Enchant R-grade Weapon -->
+			<item id="48912" min="1" max="1" chance="2.5" /> <!-- Gran Kain's Shining Scroll: Enchant R-grade Weapon -->
 			<item id="39573" min="1" max="1" chance="2.5" /> <!-- Sealed Talisman of Insanity -->
 			<item id="48667" min="1" max="1" chance="2.5" /> <!-- Mid-grade Dragon Weapon Pack -->
-			<item id="81135" min="1" max="1" chance="2.5" /> <!-- Dragon Weapon Augmenting Stone -->
+			<item id="81135" min="1" max="1" chance="2.5" /> <!-- Dark Augmenting Stone -->
 			<item id="28454" min="1" max="1" chance="2.5" /> <!-- Sayha's Blessing -->
-			<item id="80502" min="1" max="1" chance="2.5" /> <!-- Shining Gran Kain's Scroll: Enchant R-grade Armor -->
+			<item id="80502" min="1" max="1" chance="2.5" /> <!-- Gran Kain's Shining Scroll: Enchant R-grade Armor -->
 			<item id="81453" min="1" max="1" chance="2.5" /> <!-- Enhanced Rune Stone -->
 			<item id="81706" min="1" max="1" chance="2.5" /> <!-- Scroll: Enchant Superior Seed Bracelet -->
 			<item id="80449" min="1" max="1" chance="2.5" /> <!-- Royal Black Save Ticket -->
 			<item id="80636" min="1" max="1" chance="2.5" /> <!-- Artifact Crystal -->
-			<item id="81729" min="1" max="1" chance="2.5" /> <!-- Accessory Augmenting Stone -->
+			<item id="81729" min="1" max="1" chance="2.5" /> <!-- Augmenting Stone: Accessory -->
 			<item id="80964" min="1" max="1" chance="2.5" /> <!-- Energy of Protection -->
 			<item id="47494" min="1" max="1" chance="2.5" /> <!-- Selenite -->
 			<item id="48831" min="1" max="1" chance="2.5" /> <!-- Jewel Energy -->
@@ -309,9 +309,9 @@
 			<item id="80000" min="1" max="1" chance="2.5" /> <!-- Artifact Fragment -->
 			<item id="28453" min="1" max="1" chance="2.5" /> <!-- Sayha's Energy -->
 			<item id="81747" min="1" max="1" chance="2.5" /> <!-- Royal Honey Dark Beer -->
-			<item id="81759" min="1" max="1" chance="2.5" /> <!-- Glowing Royal Dragon's Attribute Potion (XP) -->
+			<item id="81759" min="1" max="1" chance="2.5" /> <!-- Glowing Royal Dragon's Attribute Potion - XP -->
 			<item id="80817" min="2" max="2" chance="2.5" /> <!-- Emperor's Special Cocktail -->
-			<item id="80920" min="3" max="3" chance="2.5" /> <!-- Emperor's Vitality Tonic (Event) -->
+			<item id="80920" min="3" max="3" chance="2.5" /> <!-- Emperor's Vitality Tonic - Event -->
 			<item id="29676" min="2" max="2" chance="2.5" /> <!-- Glittering Freya's Scroll of Storm -->
 		</capsuled_items>
 	</item>
@@ -363,7 +363,6 @@
 	</item>
 	<item id="60216" name="Love Box" type="EtcItem">
 		<!-- Double-click to obtain one of various items. -->
-		<!-- create_items_list={{2;{{81444;1;0;0;0;0;0};{80663;1;0;0;0;0;0};{29525;1;0;0;0;0;0};{29877;1;0;0;0;0;0};{29524;1;0;0;0;0;0};{29879;1;0;0;0;0;0};{48908;1;0;0;0;0;0};{80958;1;0;0;0;0;0};{80959;1;0;0;0;0;0};{48667;1;0;0;0;0;0};{48577;1;0;0;0;0;0};{29526;1;0;0;0;0;0};{19464;1;0;0;0;0;0};{48862;1;0;0;0;0;0};{29962;1;0;0;0;0;0};{29961;1;0;0;0;0;0};{47821;1;0;0;0;0;0};{29913;1;0;0;0;0;0};{29547;1;0;0;0;0;0};{36414;1;0;0;0;0;0};{29753;1;0;0;0;0;0};{29757;1;0;0;0;0;0};{29878;1;0;0;0;0;0};{48995;1;0;0;0;0;0};{80931;1;0;0;0;0;0};{80837;1;0;0;0;0;0};{17623;1;0;0;0;0;0};{48912;1;0;0;0;0;0};{35570;1;0;0;0;0;0};{29385;1;0;0;0;0;0};{80501;1;0;0;0;0;0};{48418;1;0;0;0;0;0};{37717;1;0;0;0;0;0};{48323;1;0;0;0;0;0};{39573;1;0;0;0;0;0};{80502;1;0;0;0;0;0};{81135;1;0;0;0;0;0};{48910;1;0;0;0;0;0};{35649;1;0;0;0;0;0};{29823;1;0;0;0;0;0};{81752;1;0;0;0;0;0};{48215;1;0;0;0;0;0};{80449;1;0;0;0;0;0};{81453;1;0;0;0;0;0};{29170;1;0;0;0;0;0};{80839;1;0;0;0;0;0};{48831;1;0;0;0;0;0};{80130;1;0;0;0;0;0};{45932;1;0;0;0;0;0};{81729;1;0;0;0;0;0};{80636;1;0;0;0;0;0};{48876;1;0;0;0;0;0};{36515;1;0;0;0;0;0};{81134;1;0;0;0;0;0};{81694;1;0;0;0;0;0};{80838;1;0;0;0;0;0};{39720;1;0;0;0;0;0};{29379;1;0;0;0;0;0};{29676;1;0;0;0;0;0};{81747;1;0;0;0;0;0};{48642;1;0;0;0;0;0};{82172;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="BranchSys.icon.br_valentine_agathion_pack_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -373,7 +372,6 @@
 	</item>
 	<item id="60217" name="LOVE STRONGBOX" type="EtcItem">
 		<!-- Double-click to obtain one of various items. -->
-		<!-- create_items_list={{2;{{81444;1;0;0;0;0;0};{80663;1;0;0;0;0;0};{29525;1;0;0;0;0;0};{29877;1;0;0;0;0;0};{29524;1;0;0;0;0;0};{29879;1;0;0;0;0;0};{48908;1;0;0;0;0;0};{80958;1;0;0;0;0;0};{80959;1;0;0;0;0;0};{48667;1;0;0;0;0;0};{48577;1;0;0;0;0;0};{29526;1;0;0;0;0;0};{19464;1;0;0;0;0;0};{48862;1;0;0;0;0;0};{29962;1;0;0;0;0;0};{29961;1;0;0;0;0;0};{47821;1;0;0;0;0;0};{29913;1;0;0;0;0;0};{29547;1;0;0;0;0;0};{36414;1;0;0;0;0;0};{29753;1;0;0;0;0;0};{29757;1;0;0;0;0;0};{29878;1;0;0;0;0;0};{48995;1;0;0;0;0;0};{80931;1;0;0;0;0;0};{80837;1;0;0;0;0;0};{17623;1;0;0;0;0;0};{48912;1;0;0;0;0;0};{35570;1;0;0;0;0;0};{29385;1;0;0;0;0;0};{80501;1;0;0;0;0;0};{48418;1;0;0;0;0;0};{37717;1;0;0;0;0;0};{48323;1;0;0;0;0;0};{39573;1;0;0;0;0;0};{80502;1;0;0;0;0;0};{81135;1;0;0;0;0;0};{48910;1;0;0;0;0;0};{35649;1;0;0;0;0;0};{29823;1;0;0;0;0;0};{81752;1;0;0;0;0;0};{48215;1;0;0;0;0;0};{80449;1;0;0;0;0;0};{81453;1;0;0;0;0;0};{29170;1;0;0;0;0;0};{80839;1;0;0;0;0;0};{48831;1;0;0;0;0;0};{80130;1;0;0;0;0;0};{45932;1;0;0;0;0;0};{81729;1;0;0;0;0;0};{80636;1;0;0;0;0;0};{48876;1;0;0;0;0;0};{36515;1;0;0;0;0;0};{81134;1;0;0;0;0;0};{81694;1;0;0;0;0;0};{80838;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="BranchSys.icon.br_valentine_agathion_pack_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -504,7 +502,7 @@
 		</skills>
 	</item>
 	<item id="60228" name="Attendance Gift Box" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain a random item. -->
+		<!-- Double-click to obtain a useful item. -->
 		<set name="icon" val="icon.event_hero_treasure_box_gold" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -908,7 +906,6 @@
 	</item>
 	<item id="60265" name="Scalding Cold Chest" type="EtcItem">
 		<!-- Double-click to obtain one of various items and Freya's Ice Crystal Pouch. -->
-		<!-- create_items_list={{0;{{60267;1;0;0;0;0;0}}};{2;{{80663;1;0;0;0;0;0};{48667;1;0;0;0;0;0};{29877;1;0;0;0;0;0};{81445;1;0;0;0;0;0};{81938;1;0;0;0;0;0};{80931;1;0;0;0;0;0};{80335;1;0;0;0;0;0};{28766;1;0;0;0;0;0};{80334;1;0;0;0;0;0};{82049;1;0;0;0;0;0};{82032;1;0;0;0;0;0};{80333;1;0;0;0;0;0};{29163;1;0;0;0;0;0};{80501;1;0;0;0;0;0};{48323;1;0;0;0;0;0};{36414;1;0;0;0;0;0};{81135;1;0;0;0;0;0};{80932;1;0;0;0;0;0};{48418;1;0;0;0;0;0};{81931;1;0;0;0;0;0};{80839;1;0;0;0;0;0};{80636;1;0;0;0;0;0};{47866;2;0;0;0;0;0};{36515;1;0;0;0;0;0};{48876;1;0;0;0;0;0};{60266;200;0;0;0;0;0};{48831;1;0;0;0;0;0};{47817;2;0;0;0;0;0};{48910;1;0;0;0;0;0};{80964;1;0;0;0;0;0};{48860;1;0;0;0;0;0};{47494;3;0;0;0;0;0};{81449;2;0;0;0;0;0};{81450;1;0;0;0;0;0};{81448;2;0;0;0;0;0};{81134;1;0;0;0;0;0};{60266;50;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.freya_box_i02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -945,12 +942,12 @@
 			<item id="80932" min="1" max="1" chance="2.8" /> <!-- Greater Zodiac Agathion's Book of Growth -->
 			<item id="80964" min="1" max="1" chance="2.8" /> <!-- Energy of Protection -->
 			<item id="81134" min="1" max="1" chance="2.8" /> <!-- Crystal of Dyes -->
-			<item id="81135" min="1" max="1" chance="2.8" /> <!-- Dragon Weapon Augmenting Stone -->
+			<item id="81135" min="1" max="1" chance="2.8" /> <!-- Dark Augmenting Stone -->
 			<item id="81445" min="1" max="1" chance="2.8" /> <!-- Divine Book of Growth: Agathion Dragon -->
 			<item id="81448" min="2" max="2" chance="2.8" /> <!-- Angel's Necklace Pack -->
 			<item id="81449" min="2" max="2" chance="2.8" /> <!-- Angel's Earring Pack -->
 			<item id="81450" min="1" max="1" chance="2.8" /> <!-- Angel's Ring Pack -->
-			<item id="81931" min="1" max="1" chance="2.8" /> <!-- Dragon Leather Shirt Augmenting Stone -->
+			<item id="81931" min="1" max="1" chance="2.8" /> <!-- Augmenting Stone: Dragon Leather Shirt -->
 			<item id="81938" min="1" max="1" chance="2.8" /> <!-- Greater Zodiac Agathion's Sacred Book of Growth -->
 			<item id="82032" min="1" max="1" chance="2.8" /> <!-- Shiny Jewel Energy -->
 			<item id="82049" min="1" max="1" chance="2.8" /> <!-- Shining Sayha's Energy -->
@@ -1110,8 +1107,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60279" name="La Vie En Rose's Treasure Box Lv. 1" type="EtcItem">
-		<!-- Double-click to obtain a random item. -->
-		<!-- create_items_list={{2;{{60280;1;0;0;0;0;0};{80389;1;0;0;0;0;0};{29402;1;0;0;0;0;0};{47420;1;0;0;0;0;0};{80636;1;0;0;0;0;0};{48831;1;0;0;0;0;0};{48910;2;0;0;0;0;0};{81134;3;0;0;0;0;0};{81361;3;0;0;0;0;0};{28470;1;0;0;0;0;0};{47494;1;0;0;0;0;0};{29677;1;0;0;0;0;0};{81747;1;0;0;0;0;0};{81759;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
+		<!-- Double-click to obtain a useful item. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1120,8 +1116,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60280" name="La Vie En Rose's Treasure Box Lv. 2" type="EtcItem">
-		<!-- Double-click to obtain a random item. -->
-		<!-- create_items_list={{2;{{60281;1;0;0;0;0;0};{29546;1;0;0;0;0;0};{29403;1;0;0;0;0;0};{36414;1;0;0;0;0;0};{29402;1;0;0;0;0;0};{29539;1;0;0;0;0;0};{48831;4;0;0;0;0;0};{36515;3;0;0;0;0;0};{29469;2;0;0;0;0;0};{29379;1;0;0;0;0;0};{28484;2;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
+		<!-- Double-click to obtain a useful item. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1130,8 +1125,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="60281" name="La Vie En Rose's Treasure Box Lv. 3" type="EtcItem">
-		<!-- Double-click to obtain a random item. -->
-		<!-- create_items_list={{2;{{80663;1;0;0;0;0;0};{48667;1;0;0;0;0;0};{29877;1;0;0;0;0;0};{82169;1;0;0;0;0;0};{29547;1;0;0;0;0;0};{82032;1;0;0;0;0;0};{29878;1;0;0;0;0;0};{81908;1;0;0;0;0;0};{48878;1;0;0;0;0;0};{48877;1;0;0;0;0;0};{48831;4;0;0;0;0;0};{48876;2;0;0;0;0;0};{80839;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
+		<!-- Double-click to obtain a useful item. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1141,7 +1135,6 @@
 	</item>
 	<item id="60282" name="New Server's Supply Pack" type="EtcItem">
 		<!-- Double-click to obtain various items. -->
-		<!-- create_items_list={{0;{{47917;1;0;0;0;0;0};{47921;1;0;0;0;0;0};{47922;1;0;0;0;0;0};{47923;1;0;0;0;0;0};{48644;1;0;0;0;0;0};{48645;1;0;0;0;0;0};{48646;1;0;0;0;0;0};{48647;1;0;0;0;0;0};{48648;1;0;0;0;0;0};{80800;1;0;0;0;0;0};{48683;1;0;0;0;0;0};{48684;1;0;0;0;0;0};{48685;1;0;0;0;0;0};{48309;1;0;0;0;0;0};{48305;1;0;0;0;0;0};{48313;1;0;0;0;0;0};{48848;200;0;0;0;0;0};{48857;200;0;0;0;0;0};{81011;200;0;0;0;0;0};{81012;100;0;0;0;0;0};{33780;400000;0;0;0;0;0};{33794;400000;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.sayha2017_box_i01" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1163,7 +1156,7 @@
 		<set name="is_dropable" val="false" />
 	</item>
 	<item id="60284" name="Magic Antharas Doll" additionalName="30-day" type="EtcItem">
-		<!-- When in inventory, applies the following effects: Vitality bonus +16% Acquired XP/ SP +11% PvE damage +10% Vitality sustention for characters of Lv. 1-109 Vitality sustention in the Conquest world for all characters -->
+		<!-- When in inventory, applies the following effects: Vitality bonus +16% Acquired XP/ SP +11% PvE damage +10% Vitality sustention for characters of Lv. 1-110 Vitality sustention in the Conquest world for all characters -->
 		<set name="icon" val="icon.bm_antaras_doll_30d_01" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -1175,7 +1168,6 @@
 	</item>
 	<item id="60285" name="Eva's Fortune Box" additionalName="Lv. 1" type="EtcItem">
 		<!-- A box imbued with the power of the Goddess of Water Eva. Double-click to obtain 1 useful item or Eva's Silver Pack. -->
-		<!-- create_items_list={{2;{{35564;1;0;0;0;0;0};{48418;1;0;0;0;0;0};{39573;1;0;0;0;0;0};{37717;1;0;0;0;0;0};{35569;1;0;0;0;0;0};{35567;1;0;0;0;0;0};{81450;1;0;0;0;0;0};{81449;1;0;0;0;0;0};{81448;1;0;0;0;0;0};{48211;1;0;0;0;0;0};{48498;1;0;0;0;0;0};{80838;1;0;0;0;0;0};{47983;1;0;0;0;0;0};{48215;1;0;0;0;0;0};{81729;1;0;0;0;0;0};{37560;1;0;0;0;0;0};{80817;1;0;0;0;0;0};{48497;1;0;0;0;0;0};{48830;1;0;0;0;0;0};{80842;1;0;0;0;0;0};{60286;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.sayha2017_box_i02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1185,7 +1177,6 @@
 	</item>
 	<item id="60286" name="Eva's Silver Pack" additionalName="Lv. 2" type="EtcItem">
 		<!-- A box imbued with the power of the Goddess of Water Eva. Double-click to obtain 1 useful item or Eva's Golden Pack. -->
-		<!-- create_items_list={{2;{{47820;1;0;0;0;0;0};{48907;1;0;0;0;0;0};{80501;1;0;0;0;0;0};{80449;1;0;0;0;0;0};{80764;1;0;0;0;0;0};{80765;1;0;0;0;0;0};{81155;1;0;0;0;0;0};{48677;1;0;0;0;0;0};{48678;1;0;0;0;0;0};{48679;1;0;0;0;0;0};{48323;1;0;0;0;0;0};{48047;1;0;0;0;0;0};{80932;1;0;0;0;0;0};{48876;1;0;0;0;0;0};{80636;1;0;0;0;0;0};{48831;1;0;0;0;0;0};{47817;1;0;0;0;0;0};{80130;1;0;0;0;0;0};{36731;1;0;0;0;0;0};{47494;1;0;0;0;0;0};{47866;1;0;0;0;0;0};{81134;1;0;0;0;0;0};{39738;1;0;0;0;0;0};{48910;1;0;0;0;0;0};{48860;1;0;0;0;0;0};{80964;1;0;0;0;0;0};{81729;1;0;0;0;0;0};{60287;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.bm_silver_lure_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1195,7 +1186,6 @@
 	</item>
 	<item id="60287" name="Eva's Golden Pack" additionalName="Lv. 3" type="EtcItem">
 		<!-- A shining Eva's golden pack. Double-click to obtain 1 rare item. -->
-		<!-- create_items_list={{2;{{81444;1;0;0;0;0;0};{80663;1;0;0;0;0;0};{29877;1;0;0;0;0;0};{36946;1;0;0;0;0;0};{19464;1;0;0;0;0;0};{19463;1;0;0;0;0;0};{35566;1;0;0;0;0;0};{35568;1;0;0;0;0;0};{47216;1;0;0;0;0;0};{47218;1;0;0;0;0;0};{47821;1;0;0;0;0;0};{48908;1;0;0;0;0;0};{80333;1;0;0;0;0;0};{80334;1;0;0;0;0;0};{80335;1;0;0;0;0;0};{39651;1;0;0;0;0;0};{48941;1;0;0;0;0;0};{48942;1;0;0;0;0;0};{81156;1;0;0;0;0;0};{37717;1;0;0;0;0;0};{39573;1;0;0;0;0;0};{29753;1;0;0;0;0;0};{29757;1;0;0;0;0;0};{81706;1;0;0;0;0;0};{80501;1;0;0;0;0;0};{80449;1;0;0;0;0;0};{48912;1;0;0;0;0;0};{80502;1;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.bm_gold_lure_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1205,7 +1195,6 @@
 	</item>
 	<item id="60288" name="Archaeologist's Box" type="EtcItem">
 		<!-- Double-click to obtain a rare item. -->
-		<!-- create_items_list={{0;{{29529;1;0;0;0;0;0}}};{2;{{80663;1;0;0;0;0;0};{48667;1;0;0;0;0;0};{48862;1;0;0;0;0;0};{80958;1;0;0;0;0;0};{80959;1;0;0;0;0;0};{48861;1;0;0;0;0;0};{81696;1;0;0;0;0;0};{80931;1;0;0;0;0;0};{81156;1;0;0;0;0;0};{80335;1;0;0;0;0;0};{28766;1;0;0;0;0;0};{80334;1;0;0;0;0;0};{82049;1;0;0;0;0;0};{80333;1;0;0;0;0;0};{48942;1;0;0;0;0;0};{29163;1;0;0;0;0;0};{48941;1;0;0;0;0;0};{37717;1;0;0;0;0;0};{39573;1;0;0;0;0;0};{80501;1;0;0;0;0;0};{36414;1;0;0;0;0;0};{81135;1;0;0;0;0;0};{48418;1;0;0;0;0;0};{48677;1;0;0;0;0;0};{80449;1;0;0;0;0;0};{80839;1;0;0;0;0;0};{80636;1;0;0;0;0;0};{47866;2;0;0;0;0;0};{36515;1;0;0;0;0;0};{48876;1;0;0;0;0;0};{29204;200;0;0;0;0;0};{48678;1;0;0;0;0;0};{48679;1;0;0;0;0;0};{47817;2;0;0;0;0;0};{48910;1;0;0;0;0;0};{80964;1;0;0;0;0;0};{80130;1;0;0;0;0;0};{80000;2;0;0;0;0;0};{82215;1;0;0;0;0;0};{48860;2;0;0;0;0;0};{81134;1;0;0;0;0;0};{29204;50;0;0;0;0;0}}}}	sort_order=0	item_option2=0	item_name_end -->
 		<set name="icon" val="icon.bm_strongbox" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />

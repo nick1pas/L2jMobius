@@ -218,20 +218,20 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="96182" min="1" max="1" chance="100" /> <!-- Brooch Lv. 5 (Time-limited) Sealed -->
-			<item id="96183" min="1" max="1" chance="100" /> <!-- Opal Lv. 4 (Time-limited) Sealed -->
-			<item id="96184" min="1" max="1" chance="100" /> <!-- Coral Lv. 4 (Time-limited) Sealed -->
-			<item id="96185" min="1" max="1" chance="100" /> <!-- Onyx Lv. 4 (Time-limited) Sealed -->
-			<item id="96186" min="1" max="1" chance="100" /> <!-- Spinel Lv. 4 (Time-limited) Sealed -->
-			<item id="96187" min="1" max="1" chance="100" /> <!-- Zircon Lv. 4 (Time-limited) Sealed -->
-			<item id="96188" min="1" max="1" chance="100" /> <!-- Moonstone Lv. 4 (Time-limited) Sealed -->
-			<item id="96189" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 5 (Time-limited) Sealed -->
-			<item id="96190" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Ignis (Time-limited) Sealed -->
-			<item id="96191" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Nebula (Time-limited) Sealed -->
-			<item id="96192" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Procella (Time-limited) Sealed -->
-			<item id="96193" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Petram (Time-limited) Sealed -->
-			<item id="96194" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Joy (Time-limited) Sealed -->
-			<item id="96195" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 5 (Time-limited) Sealed -->
+			<item id="96182" min="1" max="1" chance="100" /> <!-- Brooch Lv. 5 (Time-limited) - Sealed -->
+			<item id="96183" min="1" max="1" chance="100" /> <!-- Opal Lv. 4 (Time-limited) - Sealed -->
+			<item id="96184" min="1" max="1" chance="100" /> <!-- Coral Lv. 4 (Time-limited) - Sealed -->
+			<item id="96185" min="1" max="1" chance="100" /> <!-- Onyx Lv. 4 (Time-limited) - Sealed -->
+			<item id="96186" min="1" max="1" chance="100" /> <!-- Spinel Lv. 4 (Time-limited) - Sealed -->
+			<item id="96187" min="1" max="1" chance="100" /> <!-- Zircon Lv. 4 (Time-limited) - Sealed -->
+			<item id="96188" min="1" max="1" chance="100" /> <!-- Moonstone Lv. 4 (Time-limited) - Sealed -->
+			<item id="96189" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 5 (Time-limited) - Sealed -->
+			<item id="96190" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Ignis (Time-limited) - Sealed -->
+			<item id="96191" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Nebula (Time-limited) - Sealed -->
+			<item id="96192" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Procella (Time-limited) - Sealed -->
+			<item id="96193" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Petram (Time-limited) - Sealed -->
+			<item id="96194" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Joy (Time-limited) - Sealed -->
+			<item id="96195" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 5 (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96121" name="Growth Mark (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -246,7 +246,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="96122" name="Growth Scroll (Time-limited)" additionalName="Sealed" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Sayha's Grace Consumption -20% Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>Note!</font> Cannot be used if you have effects that decrease Sayha's Grace Consumption applied. -->
+		<!-- Applies a buff when used. <Buff effect> STR/ INT +1 DEX/ WIT +1 CON/ MEN +1 Sayha's Grace Consumption -20% Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>Note!</font> Cannot be used while Sayla's Grace is active. -->
 		<set name="icon" val="icon.ev_2020_mask_enchant_scroll" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -279,7 +279,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="96125" name="Sirra's Blade (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_sirr_blade_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -304,7 +304,7 @@
 		</stats>
 	</item>
 	<item id="96126" name="Themis' Tongue (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_tongue_of_themis_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -330,7 +330,7 @@
 		</stats>
 	</item>
 	<item id="96127" name="Naga's Storm (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_naga_storm_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -355,7 +355,7 @@
 		</stats>
 	</item>
 	<item id="96128" name="Éclair Bijou (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. <font color=ff6666><Unavailable to Orcs/ Sylphs/ Dwarves.></font> -->
 		<set name="icon" val="icon.weapon_greed_stinger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="RAPIER" />
@@ -380,7 +380,7 @@
 		</stats>
 	</item>
 	<item id="96129" name="Sword of Ipos (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_sword_of_ipos_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -405,7 +405,7 @@
 		</stats>
 	</item>
 	<item id="96130" name="Durendal (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. <font color=ff6666><Unavailable to Humans/ Elves/ Dark Elves/ Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_death_bringer_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="ANCIENTSWORD" />
@@ -430,7 +430,7 @@
 		</stats>
 	</item>
 	<item id="96131" name="Tallum Blade*Damascus Sword (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_dual_sword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />
@@ -455,7 +455,7 @@
 		</stats>
 	</item>
 	<item id="96132" name="Barakiel's Axe (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_barakiel_axe_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -480,7 +480,7 @@
 		</stats>
 	</item>
 	<item id="96133" name="Cabrio's Hand (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_hand_of_cabrio_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -506,7 +506,7 @@
 		</stats>
 	</item>
 	<item id="96134" name="Behemoth' Tuning Fork (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_tuning_fork_of_behemoth_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -531,7 +531,7 @@
 		</stats>
 	</item>
 	<item id="96135" name="Daimon Crystal (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_crystal_of_deamon_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -557,7 +557,7 @@
 		</stats>
 	</item>
 	<item id="96136" name="Shyeed's Bow (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_shyid_bow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -583,7 +583,7 @@
 		</stats>
 	</item>
 	<item id="96137" name="Sobekk's Hurricane (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.weapon_sobekk_hurricane_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="FIST" />
@@ -608,7 +608,7 @@
 		</stats>
 	</item>
 	<item id="96138" name="Tiphon's Spear (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. <font color=ff6666><Unavailable to Sylphs.></font> -->
 		<set name="icon" val="icon.weapon_tiphon_spear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -636,7 +636,7 @@
 		</stats>
 	</item>
 	<item id="96139" name="Zephyrus (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- Cannot be enchanted, modified. No Soul Crystal can be inserted. Cannot be equipped on a pet. -->
+		<!-- Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet. <font color=eeaa22><Permanent item craft></font> A sealed item can be created in the Weapons tab of the Special Craft window. -->
 		<set name="icon" val="icon.shooter_a_high" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="PISTOLS" />
@@ -1017,7 +1017,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="96172" name="Talisman of Eva (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- A talisman that contains the energy of Eva. <font color=eeaa22><Creating a permanent item></font> Can be created in the Accessories tab of the Special Craft window. <font color=ff6666>Note!</font> Effects of two identical talismans do not stack. -->
+		<!-- A talisman that contains the energy of Eva. <font color=ff6666>Note!</font> Effects of two identical talismans do not stack. Cannot be upgraded. -->
 		<set name="icon" val="icon.bm_eva_talisman" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1030,7 +1030,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="96173" name="Dragon Belt (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- A belt imbued with dragon power. <font color=eeaa22><Creating a permanent item></font> Can be created in the Accessories tab of the Special Craft window. -->
+		<!-- A belt imbued with dragon power. <font color=eeaa22><Permanent item craft></font> Can be created in the Accessories tab of the Special Craft window. -->
 		<set name="icon" val="icon.r2_belt_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1046,7 +1046,7 @@
 		</stats>
 	</item>
 	<item id="96174" name="Cloak of Protection (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- <font color=eeaa22><Creating a permanent item></font> Can be created in the Accessories tab of the Special Craft window. -->
+		<!-- <font color=eeaa22><Permanent item craft></font> Can be created in the Accessories tab of the Special Craft window. -->
 		<set name="icon" val="icon.bm_2018_sayha_cloak_back_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -1059,7 +1059,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="96175" name="Talisman of Authority (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- A talisman that contains the energy of a ruler. <font color=eeaa22><Creating a permanent item></font> Can be created in the Accessories tab of the Special Craft window. <font color=ff6666>Note!</font> Effects of two identical talismans do not stack. -->
+		<!-- A talisman that contains the energy of authority. <font color=ff6666>Note!</font> Effects of two identical talismans do not stack. Cannot be upgraded. -->
 		<set name="icon" val="icon.sayhas_talisman_new" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1071,7 +1071,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="96176" name="Einhasad's Pendant Lv. 2 (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- <Einhasad's Pendant> M. Def. +20 Acquired XP/ SP +20% Received damage -10% Atk. Spd. +3% Casting Spd. +3% <font color=eeaa22><Creating a permanent item></font> Can be created in the Accessories tab of the Special Craft window. -->
+		<!-- <Einhasad's Pendant> M. Def. +20 Acquired XP/ SP +20% Received damage -10% Atk. Spd. +3% Casting Spd. +3% <font color=eeaa22><Permanent item craft></font> Go to the Accessories tab of the Special Craft window. -->
 		<set name="icon" val="BranchIcon.Icon.bm_pendant_pve_white" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="underwear" />
@@ -1086,7 +1086,7 @@
 		</stats>
 	</item>
 	<item id="96177" name="Circlet of Hero (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- Enhanced Circlet of Hero. <font color=eeaa22>Uses the left hair accessory slot.</font> <font color=eeaa22><Creating a permanent item></font> Can be created in the Accessories tab of the Special Craft window. -->
+		<!-- An enhanced Circlet of Hero. <font color=eeaa22>Equipped in the left head accessory slot.</font> <font color=ff6666>Note!</font> Cannot be enchanted or augmented. -->
 		<set name="icon" val="icon.accessory_barka_karm_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />

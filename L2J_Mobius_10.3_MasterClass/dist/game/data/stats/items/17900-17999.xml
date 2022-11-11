@@ -590,7 +590,7 @@
 		</stats>
 	</item>
 	<item id="17920" name="Bound Seraph Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Light armor, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. -->
+		<!-- Light armor, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t402_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -698,7 +698,7 @@
 		</stats>
 	</item>
 	<item id="17925" name="Bound Seraph Tunic" additionalName="Robe" type="Armor">
-		<!-- Robe, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Robe, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t403_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -1488,7 +1488,7 @@
 		</stats>
 	</item>
 	<item id="17954" name="Bound Eternal Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Light armor, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. -->
+		<!-- Light armor, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t702_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -1596,7 +1596,7 @@
 		</stats>
 	</item>
 	<item id="17959" name="Bound Eternal Tunic" additionalName="Robe" type="Armor">
-		<!-- Robe, can be enhanced by a Blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Robe, can be enhanced by a blacksmith in any town. Use Unbind Scroll to change it into a Standard item. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases received Critical Damage from standard attacks and received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t703_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />
@@ -1825,7 +1825,7 @@
 		</stats>
 	</item>
 	<item id="17969" name="Blessed Requiem Slasher" type="Weapon">
-		<!-- 2 regular Soul Crystals and 1 special Soul Crystal can be inserted. When enchanted to +4, increases P. Atk. -->
+		<!-- 2 common Soul Crystals and 1 special Soul Crystal can be inserted. When enchanted to +4, increases P. Atk. -->
 		<set name="icon" val="icon.weapon_polion_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1957,7 +1957,7 @@
 		</stats>
 	</item>
 	<item id="17973" name="Blessed Requiem Thrower" type="Weapon">
-		<!-- 2 regular Soul Crystals and 1 special Soul Crystal can be inserted. When enchanted to +4, increases P. Skill Power. -->
+		<!-- 2 common soul crystals and 1 special soul crystal can be inserted. When enchanted to +4, increases P. Skill Power. -->
 		<set name="icon" val="icon.weapon_grabathus_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1991,7 +1991,7 @@
 		</stats>
 	</item>
 	<item id="17974" name="Blessed Requiem Guardian" type="Weapon">
-		<!-- 2 regular Soul Crystals and 1 special Soul Crystal can be inserted. When enchanted to +4, increases Atk. Spd. -->
+		<!-- 2 common soul crystals and 1 special soul crystal can be inserted. When enchanted to +4, increases Atk. Spd. -->
 		<set name="icon" val="icon.weapon_shyayaka_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -2369,7 +2369,7 @@
 		</stats>
 	</item>
 	<item id="17988" name="Blessed Immortal Leather Armor" additionalName="Light armor" type="Armor">
-		<!-- Light armor, can be enhanced by a blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases Received P. Critical Rate. -->
+		<!-- Light armor, can be enhanced by a blacksmith in any town. When enchanted to +4, increases P. Evasion, Speed and P. Debuff Resistance, and decreases received Critical Rate from standard attacks. -->
 		<set name="icon" val="icon.armor_t502_u_i00" />
 		<set name="armor_type" val="LIGHT" />
 		<set name="default_action" val="EQUIP" />
@@ -2477,7 +2477,7 @@
 		</stats>
 	</item>
 	<item id="17993" name="Blessed Immortal Tunic" additionalName="Robe" type="Armor">
-		<!-- Robe, can be enhanced by a blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases Received P. Critical Damage and Received P. Critical Rate. -->
+		<!-- Robe, can be enhanced by a blacksmith in any town. When enchanted to +4, increases M. Evasion and M. Debuff Resistance, and decreases received Critical Damage from basic attacks and received Critical Rate from basic attacks. -->
 		<set name="icon" val="icon.armor_t503_u_i00" />
 		<set name="armor_type" val="MAGIC" />
 		<set name="default_action" val="EQUIP" />

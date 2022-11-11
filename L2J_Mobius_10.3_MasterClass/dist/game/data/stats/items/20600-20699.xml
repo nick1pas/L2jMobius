@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="20600" name="Twilight Staff" additionalName="Dance of Shadow / 7-day" type="Weapon">
-		<!-- A staff that summons souls. Special skill's cooldown: 1 h. -->
+		<!-- A staff that summons souls. The special skill's cooldown: 1 h. -->
 		<set name="icon" val="BranchSys.icon.br_invokespirit_stick_a_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -28,7 +28,7 @@
 		</stats>
 	</item>
 	<item id="20601" name="Anniversary Hat" additionalName="Soul of Phoenix / 7-day" type="Armor">
-		<!-- Hat that comforts souls. Uses 2 hair accessory slots. Cooldown is 24 h.. -->
+		<!-- Anniversary Hat. Equipped in 2 head accessory slots. Cooldown: 24 h. -->
 		<set name="icon" val="BranchSys.icon.br_comfortspirit_hat_a_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -460,7 +460,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20626" name="Anniversary Hat" additionalName="Resurrection / 7-day" type="Armor">
-		<!-- Uses 2 hair accessory slots. Cooldown is 12 h. -->
+		<!-- Anniversary Hat. Equipped in 2 head accessory slots. Cooldown: 12 h. -->
 		<set name="icon" val="BranchSys.icon.br_comfortspirit_hat_a_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -492,11 +492,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20628" min="1" max="1" chance="100" /> <!-- Summon of Love Bracelet - 7-day -->
+			<item id="20628" min="1" max="1" chance="100" /> <!-- Love Bracelet - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20628" name="Summon of Love Bracelet" additionalName="7-day" type="Armor">
-		<!-- Bracelet that can summon a friend. The summon is possible when the summoner and the one being summoned are all party members who are equipped with the Summon of Love Bracelet. -->
+		<!-- A bracelet that allows you to summon your friend to you. Both characters should be in the same party and have Love Bracelet equipped. -->
 		<set name="icon" val="BranchSys.icon.br_ring_of_friendship_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -514,7 +514,7 @@
 		</skills>
 	</item>
 	<item id="20629" name="Love Box - Event" type="EtcItem">
-		<!-- Can receive a Love Summon bracelet with a certain chance. -->
+		<!-- Double-click to obtain Love Bracelet with a certain chance. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
@@ -578,7 +578,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20633" name="Watermelon Hat" additionalName="Cool Watermelon / 7-day" type="Armor">
-		<!-- Hat that looks like a watermelon. It feels cool just by looking at it. Uses 2 hair accessory slots. -->
+		<!-- A hat that looks like a watermelon. Just looking at it is refreshing. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_watermelon_cap_a_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -596,7 +596,7 @@
 		</skills>
 	</item>
 	<item id="20634" name="Watermelon Hat" type="Armor">
-		<!-- Hat that looks like a watermelon. It feels cool just by looking at it. Uses 2 hair accessory slots. -->
+		<!-- A hat that looks like a watermelon. Just looking at it is refreshing. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_watermelon_cap_a_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -697,7 +697,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20415" min="1" max="1" chance="100" /> <!-- Afro Hair - Big Head / Firework / 7-day -->
+			<item id="20415" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Big Head / Firework / 7-day -->
 			<item id="21091" min="1" max="1" chance="100" /> <!-- Package: XP Rune 50% (7-day) -->
 			<item id="21092" min="1" max="1" chance="100" /> <!-- Package: SP Rune 50% (7-day) -->
 		</capsuled_items>
@@ -1157,7 +1157,7 @@
 		</skills>
 	</item>
 	<item id="20662" name="Agathion Uthanka" type="Armor">
-		<!-- Bracelet that summons Agathion Uthanka. -->
+		<!-- A bracelet for summoning Agathion Uthanka. -->
 		<set name="icon" val="BranchSys.icon.br_aga_uthanka_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1177,7 +1177,7 @@
 		</skills>
 	</item>
 	<item id="20663" name="Agathion Uthanka" additionalName="Brave Warrior's Soul Power / 7-day" type="Armor">
-		<!-- Bracelet that summons Agathion Uthanka. -->
+		<!-- A bracelet for summoning Agathion Uthanka. -->
 		<set name="icon" val="BranchSys.icon.br_aga_uthanka_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -1237,7 +1237,7 @@
 		</skills>
 	</item>
 	<item id="20666" name="Valkyrie Hat" type="Armor">
-		<!-- A hat endowed with Valkyrie power. Occupies 2 Hair Accessory slots. -->
+		<!-- A hat endowed with the Valkyrie's power. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1254,7 +1254,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20667" name="Valkyrie Hat" additionalName="Great Adventurer's Soul Power / 7-day" type="Armor">
-		<!-- The hat with Valkyrie's power in it. Uses 2 hair accessory slots. -->
+		<!-- A hat endowed with the Valkyrie's power. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_valkyrie_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1272,7 +1272,7 @@
 		</skills>
 	</item>
 	<item id="20668" name="Tiger Hat" type="Armor">
-		<!-- Tiger-shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a tiger head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_tiger_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1289,7 +1289,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20669" name="Tiger Hat" additionalName="Brave Warrior's Soul Power / 7-day" type="Armor">
-		<!-- Tiger-shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a tiger head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_tiger_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1307,7 +1307,7 @@
 		</skills>
 	</item>
 	<item id="20670" name="Maid Hairband" type="Armor">
-		<!-- Cute hairband. Uses 2 hair accessory slots. -->
+		<!-- A cute head accessory. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_maid_hairband_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1324,7 +1324,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20671" name="Maid Hairband" additionalName="Great Wizard's Soul Power / 7-day" type="Armor">
-		<!-- A cute hairband. Uses 2 hair accessory slots. -->
+		<!-- A cute head accessory. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_maid_hairband_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1342,7 +1342,7 @@
 		</skills>
 	</item>
 	<item id="20672" name="Baby Panda Hat" type="Armor">
-		<!-- Baby-panda shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a baby panda head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_babypanda_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1359,7 +1359,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20673" name="Baby Panda Hat" additionalName="Blessed Escape / 7-day" type="Armor">
-		<!-- Baby-panda shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a baby panda head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_babypanda_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1377,7 +1377,7 @@
 		</skills>
 	</item>
 	<item id="20674" name="Bamboo Panda Hat" type="Armor">
-		<!-- Bamboo-panda shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a panda head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_kungfupanda_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1394,7 +1394,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20675" name="Bamboo Panda Hat" additionalName="Great Adventurer's Soul Power / 7-day" type="Armor">
-		<!-- Bamboo-panda shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a panda head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_kungfupanda_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1412,7 +1412,7 @@
 		</skills>
 	</item>
 	<item id="20676" name="Sexy Panda Hat" type="Armor">
-		<!-- Bamboo-panda shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a panda head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_sexypanda_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1429,7 +1429,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20677" name="Sexy Panda Hat" additionalName="Blessed Resurrection / 7-day" type="Armor">
-		<!-- Bamboo-panda shaped hat. Uses 2 hair accessory slots. -->
+		<!-- A head accessory that looks like a panda head. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_sexypanda_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1447,7 +1447,7 @@
 		</skills>
 	</item>
 	<item id="20678" name="Gatekeeper Hat" type="Armor">
-		<!-- A hat worn by Gatekeepers. Occupies 2 hair accessory slots. -->
+		<!-- A hat worn by Gatekeepers. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_gatekeeper_of_hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1464,7 +1464,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20679" name="Gatekeeper Hat" additionalName="Appetite for Destruction / 7-day" type="Armor">
-		<!-- Hat worn by Gatekeepers. Uses 2 hair accessory slots. -->
+		<!-- A hat worn by Gatekeepers. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_gatekeeper_of_hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />

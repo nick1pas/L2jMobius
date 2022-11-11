@@ -17,7 +17,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47902" name="Nevit's Blessing Chest" type="EtcItem">
-		<!-- Double-click the box to obtain one of the very rare items at random. -->
+		<!-- Double-click to obtain a rare and valuable item. -->
 		<set name="icon" val="icon.bm_nebit_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -57,7 +57,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47907" name="Shining Magic Bait (105)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Use to catch Ugly, Swift Fish, with a chance to obtain a Coin of light. Can be used only above level 105. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Use to catch Ugly, Swift Fish, with a chance to obtain a Coin of light. Can be used only above level 105. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -89,7 +89,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47911" name="Angel's Gift Bundle Lv. 3" type="EtcItem">
-		<!-- Double-click to obtain 1 Master Fishing Rod Lv. 5 (30-day), 1 Faint Scroll: Enchant Elemental Shirt, 1 Greater Vital Stone (30-day), and 1 Red/ Blue Cat's Eye (30-day). -->
+		<!-- Double-click to obtain 1 Master Fishing Rod Lv. 5 (30-day), 1 Faint Scroll: Enchant Elemental Shirt, 1 Greater Vital Stone (30-day), and 1 Greater Red/ Blue Cat's Eye (30-day). -->
 		<set name="icon" val="icon.bm_nebit_present" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -98,7 +98,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47912" name="Angel's Gift Bundle Lv. 4" type="EtcItem">
-		<!-- Double-click to obtain 1 Master Fishing Rod Lv. 5 (30-day), Faint Scroll: Enchant Elemental Shirt (3 pcs.), 1 Greater Vital Stone (30-day), 1 Red/ Blue Cat's Eye (30-day), Greater Tanzanite (30-day), and 1 Nevit's Cloak of Light (30-day). -->
+		<!-- Double-click to obtain 1 Master Fishing Rod Lv. 5 (30-day), Faint Scroll: Enchant Elemental Shirt (3 pcs.), 1 Greater Vital Stone (30-day), 1 Greater Red/ Blue Cat's Eye (30-day), Greater Tanzanite (30-day), and 1 Nevit's Cloak of Light (30-day). -->
 		<set name="icon" val="icon.bm_nebit_present" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -137,7 +137,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="47916" name="Nevit's Cloak of Light Box" additionalName="30-day" type="EtcItem">
-		<!-- Double-click to obtain a Nevit's Cloak of Light (30-day). -->
+		<!-- Double-click to obtain Nevit's Cloak of Light (30-day). -->
 		<set name="icon" val="icon.bm_sayha_present" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="default_action" val="PEEL" />
@@ -151,7 +151,7 @@
 		</capsuled_items>
 	</item>
 	<item id="47917" name="Nevit's Cloak of Light" additionalName="30-day" type="Armor">
-		<!-- Received damage -10%, all stats +3. -->
+		<!-- Received damage -10%, all stats +3, Vitality bonus +5%. -->
 		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -175,7 +175,7 @@
 		</stats>
 	</item>
 	<item id="47918" name="Nevit's Gold Hourglass" type="EtcItem">
-		<!-- When used, increases EXP/ SP acquired from hunting by 50% for 30 min. and obtains 1 Shining Sroll of Growth each time you obtain 5 billion EXP. Cannot be used with Fall of the Dragon, Dandy's Home Run Ball, and Agathion - EXP Bottle. Cooldown 5 min. -->
+		<!-- For 30 min., acquired XP/ SP +50%. Grants Shining Scroll of Growth each time you get 500,000 XP. The effect does not stack with Fall of the Dragon, Dandy's Home Run Ball, and Agathion - XP Bottle. Cooldown: 5 min. -->
 		<set name="icon" val="icon.bm_nebit_bonus_time_up" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -183,7 +183,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47919" name="Shining Scroll of Growth" type="EtcItem">
-		<!-- Double-click to obtain 1 billion XP. If character s level is lower than 99, the effectiveness is only 20%. Required level: 85+. -->
+		<!-- Double-click to obtain 100,000 XP. If character's level is lower than 99, the effectiveness is only 20%. Required level: 85+. -->
 		<set name="icon" val="icon.bm_nebit_exp_book" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -204,7 +204,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="47921" name="Greater Red Cat's Eye Lv. 1" additionalName="30-day" type="Armor">
-		<!-- Critical Damage for standard attacks +12%, P. Skill Critical Damage +12%, P. Skill Power +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- Critical Damage for basic attacks +12%, P. Skill Critical Damage +12%, P. Skill Power +5%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.bm_jewel_red_catseye_high_lv1_lavianrose" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -344,7 +344,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47932" name="Orc Soulstone" type="EtcItem">
-		<!-- Double-click to find out more about the "Rise of the Exiled People, the Ashen Shadow Revolutionaries" which is unknown by adventurers in Aden. -->
+		<!-- Double-click to find out more about the rise of the exiled people and the Ashen Shadow Camp. -->
 		<set name="icon" val="icon.ev_orc_soul_ore" />
 		<set name="default_action" val="SHOW_HTML" />
 		<set name="immediate_effect" val="true" />
@@ -551,7 +551,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47953" name="Challenger's Shaper" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_dagger_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -580,7 +580,7 @@
 		</stats>
 	</item>
 	<item id="47954" name="Challenger's Dicing Death" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_sword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -609,7 +609,7 @@
 		</stats>
 	</item>
 	<item id="47955" name="Challenger's Slasher" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -638,7 +638,7 @@
 		</stats>
 	</item>
 	<item id="47956" name="Challenger's Avenger" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_axe_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -668,7 +668,7 @@
 		</stats>
 	</item>
 	<item id="47957" name="Challenger's Fighter" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_fist_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -698,7 +698,7 @@
 		</stats>
 	</item>
 	<item id="47958" name="Challenger's Stormer" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_pole_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -729,7 +729,7 @@
 		</stats>
 	</item>
 	<item id="47959" name="Challenger's Thrower" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_bow_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -759,7 +759,7 @@
 		</stats>
 	</item>
 	<item id="47960" name="Challenger's Guardian" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_shooter_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -789,7 +789,7 @@
 		</stats>
 	</item>
 	<item id="47961" name="Challenger's Buster" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, assigned an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, assigned an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_magic_sword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -819,7 +819,7 @@
 		</stats>
 	</item>
 	<item id="47962" name="Challenger's Caster" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, assigned an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, assigned an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_mace_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -850,7 +850,7 @@
 		</stats>
 	</item>
 	<item id="47963" name="Challenger's Retributer" type="Weapon">
-		<!-- <Special properties>. Atk. Spd./ Casting Spd. +15%. Critical Damage for standard attacks +10%, M. Skill Critical Damage +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd./ Casting Spd. +15%. Critical Damage for standard attacks +10%, M. Skill Critical Damage +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_staff_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -881,7 +881,7 @@
 		</stats>
 	</item>
 	<item id="47964" name="Challenger's Dual Sword" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_dualsword_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -910,7 +910,7 @@
 		</stats>
 	</item>
 	<item id="47965" name="Challenger's Dual Daggers" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_dualdagger_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -940,7 +940,7 @@
 		</stats>
 	</item>
 	<item id="47966" name="Challenger's Dual Blunt Weapon" type="Weapon">
-		<!-- <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing>. Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
+		<!-- <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. <Enhancing> Take the weapon and Challenger's Enhanced Weapon Coupon to the Game Assistant to get a Challenger's Enhanced weapon. -->
 		<set name="icon" val="icon.bm_the_dualblunt_of_hero_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -970,7 +970,7 @@
 		</stats>
 	</item>
 	<item id="47967" name="Challenger's Enhanced Shaper" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_dagger_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1000,7 +1000,7 @@
 		</stats>
 	</item>
 	<item id="47968" name="Enhanced Challenger's Dicing Death" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_sword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1030,7 +1030,7 @@
 		</stats>
 	</item>
 	<item id="47969" name="Challenger's Enhanced Slasher" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_two_handed_sword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1060,7 +1060,7 @@
 		</stats>
 	</item>
 	<item id="47970" name="Challenger's Enhanced Avenger" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_axe_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1091,7 +1091,7 @@
 		</stats>
 	</item>
 	<item id="47971" name="Challenger's Enhanced Fighter" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_fist_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1122,7 +1122,7 @@
 		</stats>
 	</item>
 	<item id="47972" name="Challenger's Enhanced Stormer" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_pole_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1154,7 +1154,7 @@
 		</stats>
 	</item>
 	<item id="47973" name="Challenger's Enhanced Thrower" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_bow_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1185,7 +1185,7 @@
 		</stats>
 	</item>
 	<item id="47974" name="Enhanced Challenger's Guardian" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_shooter_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1216,7 +1216,7 @@
 		</stats>
 	</item>
 	<item id="47975" name="Challenger's Enhanced Buster" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or assigned an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or assigned an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_magic_sword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1247,7 +1247,7 @@
 		</stats>
 	</item>
 	<item id="47976" name="Challenger's Enhanced Caster" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or assigned an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. M. Skill Critical Rate +50, M. Skill Critical Damage +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or assigned an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_mace_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1279,7 +1279,7 @@
 		</stats>
 	</item>
 	<item id="47977" name="Challenger's Enhanced Retributer" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd./ Casting Spd. +15%. Critical Damage for standard attacks +10%, M. Skill Critical Damage +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd./ Casting Spd. +15%. Critical Damage for standard attacks +10%, M. Skill Critical Damage +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_staff_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1311,7 +1311,7 @@
 		</stats>
 	</item>
 	<item id="47978" name="Challenger's Enhanced Dual Sword" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_dualsword_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1341,7 +1341,7 @@
 		</stats>
 	</item>
 	<item id="47979" name="Challenger's Enhanced Dual Daggers" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +50, Critical Damage for standard attacks +10%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_dualdagger_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1372,7 +1372,7 @@
 		</stats>
 	</item>
 	<item id="47980" name="Challenger's Enhanced Dual Blunt Weapons" type="Weapon">
-		<!-- PvE damage +10%. <Special properties>. Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
+		<!-- PvE damage +10%. <Special properties> Atk. Spd. +15%. Critical Rate for standard attacks +100, Critical Damage for standard attacks +5%. Max HP +15%. The item's appearance cannot be modified. Cannot be enchanted, crystallized, augmented, or imbued with an attribute. Soul Crystals cannot be inserted. -->
 		<set name="icon" val="icon.bm_the_dualblunt_of_hero_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1431,7 +1431,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="47984" name="La Vie En Rose's Brooch Lv. 3" type="Armor">
-		<!-- When equipped, activates 6 Jewel Slots. Inventory Slots +12. <Enhancing>. Can be enhanced to La Vie En Rose's Brooch Lv. 4 through Shadai in Heine. -->
+		<!-- Unlocks 6 jewel slots. Inventory slots +12. <Upgrading> Can be upgraded to La Vie En Rose's Brooch Lv. 4 through Shadai in Heine. -->
 		<set name="icon" val="icon.bm_brooch_6slot_lavianrose_3" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -1449,7 +1449,7 @@
 		</stats>
 	</item>
 	<item id="47985" name="La Vie En Rose's Brooch Lv. 4" type="Armor">
-		<!-- When equipped, activates 6 Jewel Slots. Inventory Slots +12. CHA +1. Can be augmented. <Enhancing>. Can be enhanced to La Vie En Rose's Brooch Lv. 5 through Shadai in Heine. -->
+		<!-- Unlocks 6 jewel slots. Inventory slots +12, CHA +1. Can be augmented. <Upgrading> Can be upgraded to La Vie En Rose's Brooch Lv. 5 through Shadai in Heine. -->
 		<set name="icon" val="icon.bm_brooch_6slot_lavianrose_3" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -1510,7 +1510,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="47990" name="La Vie En Rose's Brooch Lv. 5" type="Armor">
-		<!-- Unlocks 6 jewel slots. Inventory Slots +12. All base stats +1. <Enhancing>. Take Crystal of Dawn to Head Blacksmith in any town to get Enhanced La Vie En Rose's Brooch. Can be augmented. -->
+		<!-- Unlocks 6 jewel slots. Inventory slots +12, all basic stats +1. <Upgrading> Take Crystal of Dawn to Head Blacksmith in any town to get Enhanced La Vie En Rose's Brooch. Can be augmented. -->
 		<set name="icon" val="icon.bm_brooch_6slot_lavianrose_3" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />

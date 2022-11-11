@@ -15,7 +15,7 @@
 		</stats>
 	</item>
 	<item id="91101" name="Golden Fishing Supply Items" type="EtcItem">
-		<!-- Double-click to obtain 60 Shining Golden Baits and, with a certain chance, Silver/ Golden Big Fish Chest or Einhasad's Protection. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_freya_snowman_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -24,7 +24,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="91102" name="Golden Big Fish Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: an A-grade item and material, Sealed Soul Crystal, Advanced Armor Enchant Stone. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_gold_lure_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -33,7 +33,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="91103" name="Silver Big Fish Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: a rare accessory, Sayha's Golden Light Blessing. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_silver_lure_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -42,7 +42,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="91104" name="Improved Stone: Enchant A-grade Armor" type="EtcItem">
-		<!-- The enchant success rate +20% for A-grade armor with an advanced scroll. Only for items enchanted between +3 and +9 (between +4 and +9 for one-piece armor). -->
+		<!-- Enchant success rate +20% for A-grade armor when using an improved scroll. Only for items enchanted from +3 to +9 (from +4 to +9 for one-piece armor). -->
 		<set name="icon" val="icon.giant_ench_armor_stone_r_i02" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -50,7 +50,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91105" name="Improved Stone: Enchant B-grade Armor" type="EtcItem">
-		<!-- The enchant success rate +20% for B-grade armor with an advanced scroll. Only for items enchanted between +3 and +9 (between +4 and +9 for one-piece armor). -->
+		<!-- Enchant success rate +20% for B-grade armor when using an improved scroll. Only for items enchanted from +3 to +9 (from +4 to +9 for one-piece armor). -->
 		<set name="icon" val="icon.giant_ench_armor_stone_r_i02" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -89,7 +89,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91109" name="Blue Dynasty Scroll" type="EtcItem">
-		<!-- Changes the outfit appearance to that of Blue Dynasty. <Transformation effect>. Max HP +20%. Max MP +20%. Acquired XP +20%. Acquired SP +20%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>(When Sayha's Grace is active, acquired XP/ SP are increased.)</font>. <font color=eeaa22>(The effect is cancelled when transforming into Kat the Cat/ cat/ panda, or changing the armor appearance to that of a teddy bear.)</font> -->
+		<!-- Changes the outfit appearance to that of Blue Dynasty. <Transformation effect> Max HP +20% Max MP +20% Acquired XP +20% Acquired SP +20%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>(When Sayha's Grace is active, acquired XP/ SP are increased.)</font> <font color=eeaa22>(The effect is cancelled when transforming into Kat the Cat/ cat/ panda, or changing the armor appearance to that of a teddy bear.)</font> -->
 		<set name="icon" val="icon.scroll_of_verification_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -103,7 +103,7 @@
 		</skills>
 	</item>
 	<item id="91110" name="Kat the Cat Scroll" type="EtcItem">
-		<!-- Changes the appearance to that of Kat the Cat. <Transformation effect>. Max HP +20%. Max MP +20%. Acquired XP +20%. Acquired SP +20%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>(When Sayha's Grace is active, acquired XP/ SP are increased.)</font>. <font color=eeaa22>(The effect is cancelled when transforming into a teddy bear/ cat/ panda, or changing the armor appearance to that of Blue Dynasty.)</font> -->
+		<!-- Changes the appearance to that of Kat the Cat. <Transformation effect> Max HP +20% Max MP +20% Acquired XP +20% Acquired SP +20%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>(When Sayha's Grace is active, acquired XP/ SP are increased.)</font> <font color=eeaa22>(The effect is cancelled when transforming into a teddy bear/ cat/ panda, or changing the armor appearance to that of Blue Dynasty.)</font> -->
 		<set name="icon" val="icon.scroll_of_verification_i03" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -175,7 +175,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91116" name="Nebula's Old Necklace Lv. 4" type="Armor">
-		<!-- MP +42, Water Resistance +80, Acquired Attribute XP +15%. Cannot be enchanted. -->
+		<!-- MP +42, Water Resistance +80, acquired Attribute XP +15%. Cannot be enchanted. -->
 		<set name="icon" val="icon.elemental_necklace_water_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -195,7 +195,7 @@
 		</stats>
 	</item>
 	<item id="91117" name="Nebula's Necklace" type="Armor">
-		<!-- MP +50, Water Resistance +100, Acquired Attribute XP +30%. Activates additional abilities after enchanting. -->
+		<!-- MP +50, Water Resistance +100, acquired Attribute XP +30%. Gives additional bonuses after enchanting. -->
 		<set name="icon" val="icon.elemental_necklace_water_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -215,7 +215,7 @@
 		</stats>
 	</item>
 	<item id="91118" name="Ignis' Old Necklace Lv. 4" type="Armor">
-		<!-- MP +42, Fire Resistance +80, Acquired Attribute XP +15%. Cannot be enchanted. -->
+		<!-- MP +42, Fire Resistance +80, acquired Attribute XP +15%. Cannot be enchanted. -->
 		<set name="icon" val="icon.elemental_necklace_fire_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -235,7 +235,7 @@
 		</stats>
 	</item>
 	<item id="91119" name="Ignis' Necklace" type="Armor">
-		<!-- MP +50, Fire Resistance +100, Acquired Attribute XP +30%. Activates additional abilities after enchanting. -->
+		<!-- MP +50, Fire Resistance +100, acquired Attribute XP +30%. Gives additional bonuses after enchanting. -->
 		<set name="icon" val="icon.elemental_necklace_fire_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -255,7 +255,7 @@
 		</stats>
 	</item>
 	<item id="91120" name="Procella's Old Necklace Lv. 4" type="Armor">
-		<!-- MP +42, Wind Resistance +80, Acquired Attribute XP +15%. Cannot be enchanted. -->
+		<!-- MP +42, Wind Resistance +80, acquired Attribute XP +15%. Cannot be enchanted. -->
 		<set name="icon" val="icon.elemental_necklace_wind_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -276,7 +276,7 @@
 		</stats>
 	</item>
 	<item id="91121" name="Procella's Necklace" type="Armor">
-		<!-- MP +50, Wind Resistance +100, Acquired Attribute XP +30%. Activates additional abilities after enchanting. -->
+		<!-- MP +50, Wind Resistance +100, acquired Attribute XP +30%. Gives additional bonuses after enchanting. -->
 		<set name="icon" val="icon.elemental_necklace_wind_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -296,7 +296,7 @@
 		</stats>
 	</item>
 	<item id="91122" name="Petram's Old Necklace Lv. 4" type="Armor">
-		<!-- MP +42, Earth Resistance +80, Acquired Attribute XP +15%. Cannot be enchanted. -->
+		<!-- MP +42, Earth Resistance +80, acquired Attribute XP +15%. Cannot be enchanted. -->
 		<set name="icon" val="icon.elemental_necklace_earth_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -316,7 +316,7 @@
 		</stats>
 	</item>
 	<item id="91123" name="Petram's Necklace" type="Armor">
-		<!-- MP +50, Earth Resistance +100, Acquired Attribute XP +30%. Activates additional abilities after enchanting. -->
+		<!-- MP +50, Earth Resistance +100, acquired Attribute XP +30%. Gives additional bonuses after enchanting. -->
 		<set name="icon" val="icon.elemental_necklace_earth_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="false" />
@@ -336,7 +336,7 @@
 		</stats>
 	</item>
 	<item id="91124" name="Radiant Spirit's Varnish" type="EtcItem">
-		<!-- Enhances characteristics of Spirit's accessories. Can be used on a item enchanted up to +9. If an enchantment is failed, the item doesn't disappear and keep the previous level of enchantment. Depending on the item type, activates special options from level +1 and higher. -->
+		<!-- Enhances characteristics of Spirit's accessories. Can be used on a item enchanted up to +9. If an enchantment is failed, the item doesn't disappear and keep the previous level of enchantment. Depending on the item type, activates special properties from +1 and higher. <font color=ff6666>Cannot be used for mass enchanting.</font> -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_sellable" val="false" />
@@ -487,7 +487,7 @@
 		</skills>
 	</item>
 	<item id="91136" name="Dandy's Golden Ball" additionalName="Sealed" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. Acquired XP +100%. Acquired SP +100%. Sayha's Grace +140,000. Magic Lamp points +50,000. Craft points +3250. Duration: 60 min. <font color=eeaa22>Changes the armor appearance to that of NC Dinos Uniform.</font>. <font color=ff6666>The effect remains after death.</font> -->
+		<!-- Applies a buff when used. <Buff effect> Acquired XP +100% Acquired SP +100% Sayha's Grace +140,000 Duration: 60 min. <font color=eeaa22>Changes the armor appearance to that of NC Dinos Uniform.</font> <font color=ff6666>The effect remains after death.</font> -->
 		<set name="icon" val="BranchIcon.icon.g_ev_goldenball" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_tradable" val="false" />
@@ -498,7 +498,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91137" name="Windstorm Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain various items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_circlet_upgrade_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -508,7 +508,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="91138" name="Antharas' Earring Lv. 2" type="Armor">
-		<!-- MP +34, Bleed Resistance and Atk. Rate +20%, Stun Resistance and Atk. Rate +10%, Fear/ Silence Resistance and Atk. Rate +10%, Damage Reflection Resistance +7%, Received Healing +10%, Skill MP Consumption -4%, Vampiric Rage effect +2%. Effects of two identical earrings do not stack. Cannot be enchanted. -->
+		<!-- MP +34, Bleed Atk. Rate and Resistance +20%, Stun Atk. Rate and Resistance +10%, Silence/ Fear Atk. Rate and Resistance +10%, Damage Reflection Resistance +7%, Received Healing +10%, Skill MP Consumption -4%, Vampiric Rage effect +2%. Effects of two identical earrings do not stack. Cannot be enchanted. -->
 		<set name="icon" val="icon.accessory_earring_of_antaras_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -524,7 +524,7 @@
 		</stats>
 	</item>
 	<item id="91139" name="Antharas' Earring Lv. 3" type="Armor">
-		<!-- MP +40, CON +1, MEN +1, Bleed Resistance and Atk. Rate +30%, Stun Resistance and Atk. Rate +20%, Fear/ Silence Resistance and Atk. Rate +20%, Damage Reflection Resistance +15%, Received Healing +15%, Skill MP Consumption -6%, Vampiric Rage effect +6%. Effects of two identical earrings do not stack. Cannot be enchanted. Take 2 of these earrings to Blacksmith Baggins in Giran to exchange them for Essence of Antharas. -->
+		<!-- MP +40, CON +1, MEN +1, Bleed Atk. Rate and Resistance +30%, Stun Atk. Rate and Resistance +20%, Fear/ Silence Atk. Rate and Resistance +20%, Damage Reflection Resistance +15%, Received Healing +15%, Skill MP Consumption -6%, Vampiric Rage effect +6%. Effects of two identical earrings do not stack. Cannot be enchanted. Take 2 of these earrings to Blacksmith Baggins in Giran to exchange them for Essence of Antharas. -->
 		<set name="icon" val="icon.accessory_earring_of_antaras_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -540,7 +540,7 @@
 		</stats>
 	</item>
 	<item id="91140" name="Venir's Talisman Lv. 19" additionalName="Sealed" type="Armor">
-		<!-- CON/ MEN/ DEX/ WIT/ STR/ INT +4, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
+		<!-- When equipped, CON/ MEN/ DEX/ WIT/ STR/ INT +4, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.benir_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -551,7 +551,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91141" name="Venir's Talisman Lv. 20" additionalName="Sealed" type="Armor">
-		<!-- CON/ MEN +4, DEX/ WIT/ STR/ INT +3, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
+		<!-- When equipped, CON/ MEN +4, DEX/ WIT/ STR/ INT +3, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.benir_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -562,7 +562,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91142" name="Venir's Talisman Lv. 21" additionalName="Sealed" type="Armor">
-		<!-- CON/ MEN/ DEX +4, WIT/ STR/ INT +3, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
+		<!-- When equipped, CON/ MEN/ DEX +4, WIT/ STR/ INT +3, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.benir_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -573,7 +573,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91143" name="Venir's Talisman Lv. 22" additionalName="Sealed" type="Armor">
-		<!-- CON/ MEN/ DEX/ WIT +4, STR/ INT +3, P./ M. Skill Cooldown -7%. With a certain chance absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level value drops to 18. Effects of two identical talismans do not stack. -->
+		<!-- When equipped, CON/ MEN/ DEX/ WIT +4, STR/ INT +3, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.benir_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -584,7 +584,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91144" name="Venir's Talisman Lv. 23" additionalName="Sealed" type="Armor">
-		<!-- CON/ MEN/ DEX/ WIT/ STR +4, INT +3, P./ M. Skill Cooldown -7%. With a certain chance absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level value drops to 18. Effects of two identical talismans do not stack. -->
+		<!-- When equipped, CON/ MEN/ DEX/ WIT/ STR +4, INT +3, P./ M. Skill Cooldown -7%. With a certain chance, absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded to higher level with Venir's Talisman Fragment. In case of failure the talisman level drops to 18. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.benir_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -595,7 +595,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91145" name="Venir's Talisman Lv. 24" additionalName="Sealed" type="Armor">
-		<!-- CON/ MEN/ DEX/ WIT/ STR/ INT +4, P./ M. Skill Cooldown -7%. With a certain chance absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded if combined with the identical talisman. Effects of two identical talismans do not stack. -->
+		<!-- When equipped, CON/ MEN/ DEX/ WIT/ STR/ INT +4, P./ M. Skill Cooldown -7%. With a certain chance absorbs 8% of the inflicted damage as HP and 4% as MP. Can be upgraded if combined with the identical talisman. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.benir_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -634,7 +634,7 @@
 		</stats>
 	</item>
 	<item id="91148" name="Jewel Box Lv. 5" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_special_jewelbox_lv5" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -647,7 +647,7 @@
 		</skills>
 	</item>
 	<item id="91149" name="+5 Agathion Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the +5 enchanted agathions: Virgo, Capricorn, Libra, Taurus, Leo, Gemini, Scorpio, Aquarius, or Sagittarius. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.star_agathion_cube" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -656,7 +656,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91150" name="+10 Agathion Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.star_agathion_cube" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -669,21 +669,21 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="48048" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48049" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48050" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
+			<item id="48048" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Virgo -->
+			<item id="48049" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Capricorn -->
+			<item id="48050" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Libra -->
 			<item id="48051" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48052" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48053" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48054" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48055" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48056" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
+			<item id="48052" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Taurus -->
+			<item id="48053" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Leo -->
+			<item id="48054" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Gemini -->
+			<item id="48055" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Scorpio -->
+			<item id="48056" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Aquarius -->
 			<item id="48057" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
-			<item id="48058" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" />
+			<item id="48058" min="1" max="1" minEnchant="10" maxEnchant="10" chance="9.090909090909091" /> <!-- Agathion Sagittarius -->
 		</capsuled_items>
 	</item>
 	<item id="91151" name="Attribute Necklace Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Ignis'/ Nebula's/ Procella's/ Petram's Necklace. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i11" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -696,14 +696,14 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="91123" min="1" max="1" chance="25" />
-			<item id="91119" min="1" max="1" chance="25" />
-			<item id="91117" min="1" max="1" chance="25" />
-			<item id="91121" min="1" max="1" chance="25" />
+			<item id="91123" min="1" max="1" chance="25" /> <!-- Petram's Necklace -->
+			<item id="91119" min="1" max="1" chance="25" /> <!-- Ignis' Necklace -->
+			<item id="91117" min="1" max="1" chance="25" /> <!-- Nebula's Necklace -->
+			<item id="91121" min="1" max="1" chance="25" /> <!-- Procella's Necklace -->
 		</capsuled_items>
 	</item>
 	<item id="91152" name="Blessed Pendant Box" type="EtcItem">
-		<!-- Double-click to obtain Blessed Fire Dragon Pendant or Blessed Earth Dragon Pendant. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i09" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -716,12 +716,12 @@
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90969" min="1" max="1" chance="50" />
-			<item id="90970" min="1" max="1" chance="50" />
+			<item id="90969" min="1" max="1" chance="50" /> <!-- Blessed Fire Dragon Pendant -->
+			<item id="90970" min="1" max="1" chance="50" /> <!-- Blessed Earth Dragon Pendant -->
 		</capsuled_items>
 	</item>
 	<item id="91153" name="+15 Top-grade A-grade Weapon Pack" type="EtcItem">
-		<!-- Double-click to obtain a weapon enchanted to +15: Sirra's Blade, Sword of Ipos, Barakiel's Axe, Behemoth' Tuning Fork, Naga's Storm, Tiphon's Spear, Shyeed's Bow, Sobekk's Hurricane, Themis' Tongue, Cabrio's Hand, Daimon Crystal, Tallum Blade*Damascus. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_ensoulbox_PvP" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -778,7 +778,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="91157" name="Maphr Potion" additionalName="Sealed" type="EtcItem">
-		<!-- Increases the enchant success rate for 10 min. Note!. Cannot be used to enchant pendants, agathions, hair accessories, rare accessories, attribute necklaces. -->
+		<!-- Increases the enchant success rate for 10 sec. Note! Cannot be used for enchanting pendants, agathions, head accessories, rare accessories, attribute necklaces. -->
 		<set name="icon" val="icon.etc_instant_lucky_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_tradable" val="false" />
@@ -788,7 +788,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="91158" name="Maphr Potion" type="EtcItem">
-		<!-- Increases the enchant success rate for 10 min. Note!. Cannot be used to enchant pendants, agathions, hair accessories, rare accessories, attribute necklaces. -->
+		<!-- Increases the enchant success rate for 10 sec. Note! Cannot be used for enchanting pendants, agathions, head accessories, rare accessories, attribute necklaces. -->
 		<set name="icon" val="icon.etc_instant_lucky_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_dropable" val="false" />
@@ -804,7 +804,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="91160" name="Agathion Enchant Scroll Pack" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Agathion Enchant Scroll, Quality Agathion Enchant Scroll. Stable Scroll: Enchant Agathion, Agathion's Soul, Blessed Agathion's Soul. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.npoint_antaras_30day_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -813,7 +813,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="91161" name="Agathion Bracelet Lv. 5" type="Armor">
-		<!-- Unlocks 5 agathion slots, STR/ INT/ CON/ MEN/ DEX/ WIT +1. Cannot be dropped. Fear/ Stun/ Sleep/ Paralysis/ Silence Resistance +8%. -->
+		<!-- Agathion slots +5 Paralysis Resistance +8% Shock Resistance +8% Sleep Resistance +8% Silence Resistance +8% Fear Resistance +8% STR +1 INT +1 DEX +1 WIT +1 CON +1 MEN +1 Can be compounded with two other Agathion Bracelets of the same level. -->
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -851,7 +851,7 @@
 		</stats>
 	</item>
 	<item id="91163" name="Anakim's Soul Crystal Lv. 1" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +1. - M. Atk. +1% -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +1 - M. Atk. +1% -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -860,7 +860,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91164" name="Anakim's Soul Crystal Lv. 2" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +2. - M. Atk. +1% -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +2 - M. Atk. +1% -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -869,7 +869,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91165" name="Anakim's Soul Crystal Lv. 3" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +3. - M. Atk. +2% -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +3 - M. Atk. +2% -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -878,7 +878,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91166" name="Anakim's Soul Crystal Lv. 4" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +4. - M. Atk. +2% -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +4 - M. Atk. +2% -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -887,7 +887,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91167" name="Anakim's Soul Crystal Lv. 5" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +5. - M. Atk. +3% -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +5 - M. Atk. +3% -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -896,7 +896,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91168" name="Anakim's Soul Crystal Lv. 6" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +6. - M. Atk. +6%. - Recovers 75 MP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +6 - M. Atk. +6% - Recovers 75 MP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -905,7 +905,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91169" name="Anakim's Soul Crystal Lv. 7" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +7. - M. Atk. +6%. - Recovers 150 MP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +7 - M. Atk. +6% - Recovers 150 MP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -914,7 +914,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91170" name="Anakim's Soul Crystal Lv. 8" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +8. - M. Atk. +7%. - Recovers 225 MP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +8 - M. Atk. +7% - Recovers 225 MP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -923,7 +923,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91171" name="Anakim's Soul Crystal Lv. 9" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +9. - M. Atk. +7%. - Recovers 300 MP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +9 - M. Atk. +7% - Recovers 300 MP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -932,7 +932,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91172" name="Anakim's Soul Crystal Lv. 10" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - MP Recovery Rate +10. - M. Atk. +8%. - Recovers 400 MP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Anakim's power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - MP Recovery Rate +10 - M. Atk. +8% - Recovers 400 MP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_water_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -941,7 +941,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91173" name="Lilith' Soul Crystal Lv. 1" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +1. - P. Atk. +1% -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +1 - P. Atk. +1% -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -950,7 +950,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91174" name="Lilith' Soul Crystal Lv. 2" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +2. - P. Atk. +1% -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +2 - P. Atk. +1% -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -959,7 +959,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91175" name="Lilith' Soul Crystal Lv. 3" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +3. - P. Atk. +2% -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +3 - P. Atk. +2% -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -968,7 +968,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91176" name="Lilith' Soul Crystal Lv. 4" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +4. - P. Atk. +2% -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +4 - P. Atk. +2% -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -977,7 +977,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91177" name="Lilith' Soul Crystal Lv. 5" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +5. - P. Atk. +3% -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +5 - P. Atk. +3% -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -986,7 +986,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91178" name="Lilith' Soul Crystal Lv. 6" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +6. - P. Atk. +6%. - Recovers 100 HP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +6 - P. Atk. +6% - Recovers 100 HP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -995,7 +995,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91179" name="Lilith' Soul Crystal Lv. 7" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +7. - P. Atk. +6%. - Recovers 200 HP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +7 - P. Atk. +6% - Recovers 200 HP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -1004,7 +1004,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91180" name="Lilith' Soul Crystal Lv. 8" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +8. - P. Atk. +7%. - Recovers 300 HP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +8 - P. Atk. +7% - Recovers 300 HP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -1013,7 +1013,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91181" name="Lilith' Soul Crystal Lv. 9" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +9. - P. Atk. +7%. - Recovers 400 HP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +9 - P. Atk. +7% - Recovers 400 HP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -1022,7 +1022,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91182" name="Lilith' Soul Crystal Lv. 10" additionalName="Rare" type="EtcItem">
-		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul Crystal properties>. - HP Recovery Rate +10. - P. Atk. +8%. - Recovers 500 HP after standard attacks and using attacking skills. -->
+		<!-- A crystal containing Lilith' power. Can be enhanced through compounding. Can be inserted into a weapon by any proficient blacksmith. <Soul crystal properties> - HP Recovery Rate +10 - P. Atk. +8% - Recovers 500 HP after basic attacks and attack skills. -->
 		<set name="icon" val="icon.etc_fire_rune_i00" />
 		<set name="etcitem_type" val="ENSOUL_STONE" />
 		<set name="immediate_effect" val="true" />
@@ -1031,7 +1031,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="91183" name="Wind Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain Wind's Blessing Chest and Sayha's Storm Lv. 1. If you are lucky, you can also get Wind Silver/ Golden Chest or Transformation Scroll: Panda/ Cat. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.sayha2017_box_i01" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -1061,7 +1061,7 @@
 		</skills>
 	</item>
 	<item id="91185" name="Mid-grade Spirit's Blessing" additionalName="Sealed" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. When hunting elemental monsters, Attribute XP Bonus +30%. Duration: 20 min. -->
+		<!-- Applies a buff when used. <Buff effect> When hunting attribute monsters, acquired attribute XP +30%. Duration: 20 min. -->
 		<set name="icon" val="icon.elemental_bless_scrl_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="handler" val="ItemSkills" />
@@ -1077,7 +1077,7 @@
 		</skills>
 	</item>
 	<item id="91186" name="High-grade Spirit's Blessing" additionalName="Sealed" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. When hunting elemental monsters, Attribute XP Bonus +50%. Duration: 20 min. -->
+		<!-- Applies a buff when used. <Buff effect> When hunting attribute monsters, acquired attribute XP +50%. Duration: 20 min. -->
 		<set name="icon" val="icon.elemental_bless_scrl_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="handler" val="ItemSkills" />
@@ -1107,7 +1107,7 @@
 		</skills>
 	</item>
 	<item id="91188" name="Blessed Scroll: Enchant Spirit Accessory" type="EtcItem">
-		<!-- For spirit accessories. When enchant value is higher than +1, additional special effects are applied depending on the accessory type. If the enchanting fails, the item is not crystallized but its enchant value is reset to 0. -->
+		<!-- For spirit accessories. When enchant value is higher than +1, additional special effects are applied depending on the accessory type. In case of failure the item is not crystallized but its enchant value is reset to 0. <font color=ff6666>Cannot be used for mass enchanting.</font> -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_dropable" val="false" />
@@ -1121,7 +1121,7 @@
 		</skills>
 	</item>
 	<item id="91189" name="Fire Attack Potion" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. Fire Attack +50. Duration: 20 min. -->
+		<!-- Applies a buff when used. <Buff effect> Fire Attack +50 Duration: 20 min. -->
 		<set name="icon" val="icon.etc_fire_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="5" />
@@ -1137,7 +1137,7 @@
 		</skills>
 	</item>
 	<item id="91190" name="Water Attack Potion" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. Water Attack +50. Duration: 20 min. -->
+		<!-- Applies a buff when used. <Buff effect> Water Attack +50 Duration: 20 min. -->
 		<set name="icon" val="icon.etc_water_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="5" />
@@ -1153,7 +1153,7 @@
 		</skills>
 	</item>
 	<item id="91191" name="Wind Attack Potion" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. Wind Attack +50. Duration: 20 min. -->
+		<!-- Applies a buff when used. <Buff effect> Wind Attack +50 Duration: 20 min. -->
 		<set name="icon" val="icon.etc_wind_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="5" />
@@ -1169,7 +1169,7 @@
 		</skills>
 	</item>
 	<item id="91192" name="Earth Attack Potion" type="EtcItem">
-		<!-- Applies a buff when used. <Buff effect>. Earth Attack +50. Duration: 20 min. -->
+		<!-- Applies a buff when used. <Buff effect> Earth Attack +50 Duration: 20 min. -->
 		<set name="icon" val="icon.etc_earth_potion_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="5" />
@@ -1208,7 +1208,7 @@
 		<set name="bodypart" val="deco1" />
 	</item>
 	<item id="91195" name="Talisman Bracelet Lv. 4" additionalName="30-day" type="Armor">
-		<!-- Available for 30 d. Unlocks 4 talisman slots. <Special effects>. HP/ MP Recovery Rate +7%, P. Accuracy +1, M. Accuracy +1, Weight Limit +7000. -->
+		<!-- Available for 30 d. Unlocks 4 talisman slots. <Special effects> HP/ MP Recovery Rate +7%, P. Accuracy +1, M. Accuracy +1, weight limit +7000. -->
 		<set name="icon" val="icon.dimension_bracelet_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rbracelet" />
@@ -1238,7 +1238,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="91197" name="Scroll of Escape: Forge of the Gods" additionalName="Sealed" type="EtcItem">
-		<!-- A magical scroll that relocates you to the Forge of the Gods. Note!. Another way to get to the Forge of the Gods is by speaking with Gatekeeper Tatiana in Goddard. -->
+		<!-- A magical scroll that relocates you to the Forge of the Gods. Note! Another way to get to the Forge of the Gods is by speaking with Gatekeeper Tatiana in Goddard. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="30" />
@@ -1249,7 +1249,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91198" name="Scroll of Escape: Garden of Eva" additionalName="Sealed" type="EtcItem">
-		<!-- A magical scroll that relocates you to the Garden of Eva. Note!. Another way to get to the Garden of Eva is by speaking with Gatekeeper Clarissa in Giran. -->
+		<!-- A magical scroll that relocates you to the Garden of Eva. Note! Another way to get to the Garden of Eva is by speaking with Gatekeeper Clarissa in Giran. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="30" />
@@ -1260,7 +1260,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="91199" name="Scroll of Escape: Land of Winds" additionalName="Sealed" type="EtcItem">
-		<!-- A magical scroll that relocates you to the Land of Winds. Note!. Another way to get to the Land of Winds is by speaking with Gatekeeper Clarissa in Giran. -->
+		<!-- A magical scroll that relocates you to the Land of Winds. Note! Another way to get to the Land of Winds is by speaking with Gatekeeper Clarissa in Giran. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="weight" val="30" />

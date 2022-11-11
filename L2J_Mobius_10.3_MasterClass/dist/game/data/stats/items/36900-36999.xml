@@ -466,7 +466,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="36946" name="Lindvior's Earring" type="Armor">
-		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs, and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. The item can be changed. <Enchanting>. Use Scroll: Enchant R-grade Armor. -->
+		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. The item can be changed. <Enchanting> Use Scroll: Enchant R-grade Armor. -->
 		<set name="icon" val="icon.accessory_earring_of_lind_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -510,7 +510,7 @@
 		</stats>
 	</item>
 	<item id="36949" name="Chaos Essence" additionalName="30-day" type="EtcItem">
-		<!-- Mysterious essence with the power of chaos. Take it to Hardin at the Reliquary of the Giants to change your specialized awakened class. Cannot be used by Ertheia. Can be used only by the main class. -->
+		<!-- Mysterious essence filled with the power of Chaos. Take it to Hardin at the Tomb of Souls to change your Awakened class. Cannot be used by Ertheia and Death Knights. Only for the main class. -->
 		<set name="icon" val="icon.etc_water_of_silen_i00" />
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
@@ -581,7 +581,7 @@
 			<item id="1835" min="5000" max="5000" chance="100" /> <!-- No-grade Soulshot -->
 			<item id="20326" min="1" max="1" chance="100" /> <!-- Package: Beast Soulshots -->
 			<item id="20328" min="1" max="1" chance="100" /> <!-- Package: Blessed Beast Spiritshots -->
-			<item id="34602" min="10" max="10" chance="100" /> <!-- PA - Quick HP Replenishing Potion - PA exclusive -->
+			<item id="34602" min="10" max="10" chance="100" /> <!-- PA - Quick HP Replenishing Potion - PA -->
 		</capsuled_items>
 	</item>
 	<item id="36954" name="No-grade" type="EtcItem">
@@ -921,7 +921,7 @@
 		</skills>
 	</item>
 	<item id="36978" name="Scroll: Enchant Hair Accessory" type="EtcItem">
-		<!-- Increases M. Def. of hair accessories by 2. It is greatly increased starting at +4. Can be safely enchanted to +3. -->
+		<!-- M. Def. +2. Starting from +4, M. Def. bonus is greatly increased. The enchanting is safe up to +3. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i05" />
 		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />

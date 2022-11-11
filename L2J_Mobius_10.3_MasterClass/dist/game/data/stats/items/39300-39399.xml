@@ -195,7 +195,7 @@
 		<set name="bodypart" val="lhand" />
 	</item>
 	<item id="39323" name="Designer Eternal Armor Pack" type="EtcItem">
-		<!-- Double-click to acquire one of the following: Eternal Armor Crafting Pack, Eternal Armor Pack, or Eternal Armor Pack with an item enchanted to 5, 6, or 8. -->
+		<!-- Double-click to obtain one of the following items: Crafting Pack: Eternal Armor, Eternal Armor Pack, +5/ +6/ +8 Eternal Armor Pack. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -206,7 +206,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="39324" min="1" max="1" chance="20" /> <!-- Eternal Armor Crafting Pack -->
+			<item id="39324" min="1" max="1" chance="20" /> <!-- Crafting Pack: Eternal Armor -->
 			<item id="39325" min="1" max="1" chance="20" /> <!-- Eternal Armor Pack -->
 			<item id="39326" min="1" max="1" chance="20" /> <!-- +5 Eternal Armor Pack -->
 			<item id="39327" min="1" max="1" chance="20" /> <!-- +6 Eternal Armor Pack -->
@@ -279,7 +279,7 @@
 		</skills>
 	</item>
 	<item id="39329" name="Designer Seraph Armor Pack" type="EtcItem">
-		<!-- Double-click to acquire one of the following: Seraph Armor Crafting Pack, Seraph Armor Pack, or Seraph Armor Pack with an item enchanted to 5, 6, or 8. -->
+		<!-- Double-click to obtain one of the following items: Crafting Pack: Seraph Armor, Seraph Armor Pack, +5/ +6/ +8 Seraph Armor Pack. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -290,7 +290,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="39330" min="1" max="1" chance="20" /> <!-- Seraph Armor Crafting Pack -->
+			<item id="39330" min="1" max="1" chance="20" /> <!-- Crafting Pack: Seraph Armor -->
 			<item id="39331" min="1" max="1" chance="20" /> <!-- Seraph Armor Pack -->
 			<item id="39332" min="1" max="1" chance="20" /> <!-- +5 Seraph Armor Pack -->
 			<item id="39333" min="1" max="1" chance="20" /> <!-- +6 Seraph Armor Pack -->
@@ -363,7 +363,7 @@
 		</skills>
 	</item>
 	<item id="39335" name="Designer Twilight Armor Pack" type="EtcItem">
-		<!-- Double-click to acquire one of the following: Twilight Armor Crafting Pack, Twilight Armor Pack, or Twilight Armor Pack with an item enchanted to 5, 6, or 8. -->
+		<!-- Double-click to obtain one of the following items: Crafting Pack: Twilight Armor, Twilight Armor Pack, +5/ +6/ +8 Twilight Armor Pack. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -374,7 +374,7 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="39336" min="1" max="1" chance="40" /> <!-- Twilight Armor Crafting Pack -->
+			<item id="39336" min="1" max="1" chance="40" /> <!-- Crafting Pack: Twilight Armor -->
 			<item id="39337" min="1" max="1" chance="30" /> <!-- Twilight Armor Pack -->
 			<item id="39338" min="1" max="1" chance="15" /> <!-- +5 Twilight Armor Pack -->
 			<item id="39339" min="1" max="1" chance="10" /> <!-- +6 Twilight Armor Pack -->
@@ -468,7 +468,7 @@
 		</skills>
 	</item>
 	<item id="39343" name="Designer Helios Weapon Pack" type="EtcItem">
-		<!-- Double-click to acquire one of the following: Helios Weapon Pack, Helios Weapon Crafting Pack, or Helios Weapon Pack with an item enchanted to 4, 5, 6, 7, or 8. -->
+		<!-- Double-click to obtain one of the following items: Crafting Pack: Helios Weapon, Helios Weapon Pack, +4/ +5/ +6/ +7/ +8 Helios Weapon Pack. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -494,7 +494,7 @@
 		</skills>
 	</item>
 	<item id="39345" name="Helios Weapon Pack" type="EtcItem">
-		<!-- Double-click to acquire one Helios weapon. -->
+		<!-- Double-click to obtain a Helios weapon. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -572,7 +572,7 @@
 		</skills>
 	</item>
 	<item id="39351" name="Designer Specter Weapon Pack" type="EtcItem">
-		<!-- Double-click to acquire one of the following: Specter Weapon Pack, Specter Weapon Crafting Pack, or Specter Weapon Pack with an item enchanted to 4, 5, 6, 7, or 8. -->
+		<!-- Double-click to obtain one of the following items: Crafting Pack: Specter Weapon, Specter Weapon Pack, +4/ +5/ +6/ +7/ +8 Specter Weapon Pack. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -598,7 +598,7 @@
 		</skills>
 	</item>
 	<item id="39353" name="Specter Weapon Pack" type="EtcItem">
-		<!-- Double-click to acquire one Specter weapon. -->
+		<!-- Double-click to obtain a Specter weapon. -->
 		<set name="icon" val="icon.etc_box_of_adventure_3_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -676,7 +676,7 @@
 		</skills>
 	</item>
 	<item id="39359" name="Designer Apocalypse Weapon Pack" type="EtcItem">
-		<!-- Double-click to acquire one of the following: Apocalypse Weapon Pack, Apocalypse Weapon Crafting Pack, or Apocalypse Weapon Pack with an item enchanted to 4, 5, 6, 7, or 8. -->
+		<!-- Double-click to obtain one of the following items: Crafting Pack: Apocalypse Weapon, Apocalypse Weapon Pack, +4/ +5/ +6/ +7/ +8 Apocalypse Weapon Pack. -->
 		<set name="icon" val="icon.etc_jewel_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -841,7 +841,7 @@
 		</skills>
 	</item>
 	<item id="39373" name="Scroll: 1,000,000 SP" type="EtcItem">
-		<!-- Scroll that replenishes 1,000,000 SP. -->
+		<!-- SP +100. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="weight" val="30" />
 		<set name="is_stackable" val="true" />
@@ -854,7 +854,7 @@
 		</skills>
 	</item>
 	<item id="39374" name="Scroll: 5,000,000 SP" additionalName="Event" type="EtcItem">
-		<!-- Scroll with 5,000,000 SP. -->
+		<!-- SP +500. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="weight" val="30" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -867,7 +867,7 @@
 		</skills>
 	</item>
 	<item id="39375" name="Scroll: 10,000,000 SP" additionalName="Event" type="EtcItem">
-		<!-- Scroll with 10,000,000 SP. -->
+		<!-- SP +1000. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="weight" val="30" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -916,7 +916,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="39380" name="NC Dinos Uniform" type="Armor">
-		<!-- Appears in an NC Dinos Uniform when equipped. -->
+		<!-- Changes the armor appearance to that of NC Dinos Uniform. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="default_action" val="EQUIP" />
@@ -925,7 +925,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="39381" name="Windy CHA Dye Lv. 1" additionalName="CHA +1" type="EtcItem">
-		<!-- CHA +1. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CHA +1. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_wind_dye_cha" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -934,7 +934,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39382" name="Windy CHA Dye Lv. 2" additionalName="CHA +2" type="EtcItem">
-		<!-- CHA +2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CHA +2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_wind_dye_cha" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -943,7 +943,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39383" name="Windy CHA Dye Lv. 3" additionalName="CHA +3" type="EtcItem">
-		<!-- CHA +3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CHA +3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_wind_dye_cha" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -952,7 +952,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39384" name="Windy CHA Dye Lv. 4" additionalName="CHA +4" type="EtcItem">
-		<!-- CHA +4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CHA +4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv4_wind_dye_cha" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -961,7 +961,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39385" name="Windy CHA Dye Lv. 5" additionalName="CHA +5" type="EtcItem">
-		<!-- CHA +5. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CHA +5. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv5_wind_dye_cha" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -970,7 +970,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39386" name="Windy LUC Dye Lv. 1" additionalName="LUC +1" type="EtcItem">
-		<!-- LUC +1. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- LUC +1. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_wind_dye_luc" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -979,7 +979,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39387" name="Windy LUC Dye Lv. 2" additionalName="LUC +2" type="EtcItem">
-		<!-- LUC +2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- LUC +2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_wind_dye_luc" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -988,7 +988,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39388" name="Windy LUC Dye Lv. 3" additionalName="LUC +3" type="EtcItem">
-		<!-- LUC +3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- LUC +3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_wind_dye_luc" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -997,7 +997,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39389" name="Windy LUC Dye Lv. 4" additionalName="LUC +4" type="EtcItem">
-		<!-- LUC +4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- LUC +4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv4_wind_dye_luc" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />
@@ -1006,7 +1006,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="39390" name="Windy LUC Dye Lv. 5" additionalName="LUC +5" type="EtcItem">
-		<!-- LUC +5. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- LUC +5. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv5_wind_dye_luc" />
 		<set name="weight" val="150" />
 		<set name="is_stackable" val="true" />

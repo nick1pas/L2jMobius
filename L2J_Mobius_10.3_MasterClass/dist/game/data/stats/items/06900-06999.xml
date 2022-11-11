@@ -89,7 +89,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6906" name="Pirate's Eyepatch String" type="EtcItem">
-		<!-- Main component necessary to make a Pirate's Eyepatch. May also be sold at ordinary shops. -->
+		<!-- Key component for making Pirate's Eyepatch. Can be sold in any shop. -->
 		<set name="icon" val="icon.etc_braided_hemp_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -111,7 +111,7 @@
 		<set name="commissionItemType" val="MAJOR_CRAFTING_INGREDIENTS" />
 	</item>
 	<item id="6908" name="Corroded Fish Oil" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_oil_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -121,7 +121,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6909" name="Corroded Greater Fish Oil" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_oil_i01" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -131,7 +131,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6910" name="Corroded Premium Fish Oil" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_oil_i02" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -141,7 +141,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6911" name="Corroded Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_scale_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -151,7 +151,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6912" name="Corroded Shiny Fish Scale" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_scale_i01" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -161,7 +161,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6913" name="Corroded Fish Gem" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_gem_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -171,7 +171,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6914" name="Corroded Shiny Fish Gem" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fish_gem_i01" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -181,7 +181,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6915" name="Corroded Thin Fish Bone" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fang_gray_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -191,7 +191,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="6916" name="Corroded Thick Fish Bone" type="EtcItem">
-		<!-- No longer used. Can be sold in any shop. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_fang_ivory_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -246,7 +246,7 @@
 		</stats>
 	</item>
 	<item id="6920" name="Recipe: Corroded Greater Fish Oil (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Corroded Greater Fish Oil. Requires Create Common Item Lv. 2. -->
+		<!-- For all races. A recipe for Corroded Greater Fish Oil. Requires Create Common Item Lv. 2. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -259,7 +259,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6921" name="Recipe: Corroded Premium Fish Oil (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Corroded Premium Fish Oil. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Corroded Premium Fish Oil. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -273,7 +273,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6922" name="Recipe: Party Mask (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Party Mask. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Party Mask. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -287,7 +287,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6923" name="Recipe: Lady's Hairpin (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Lady's Hairpin. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Lady's Hairpin. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -301,7 +301,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6924" name="Recipe: Pirate's Eyepatch (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Pirate's Eyepatch. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Pirate's Eyepatch. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -315,7 +315,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6925" name="Recipe: Monocle (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Monocle. Requires Create Item Common Lv. 4. Has a chance of crafting a hair accessory with pendant options. -->
+		<!-- For all races. A recipe for Monocle. Requires Create Item Common Lv. 4. With a certain chance, creates a head accessory enhanced with a pendant. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -329,7 +329,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6926" name="Recipe: HP Replenishing Potion (100%)" type="EtcItem">
-		<!-- For all races. Recipe for HP Replenishing Potion. Requires Create Common Item Lv. 1. -->
+		<!-- For all races. A recipe for HP Replenishing Potion. Requires Create Common Item Lv. 1. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -371,7 +371,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6929" name="Recipe: Antidote (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Antidote. Requires Create Common Item Lv. 1. -->
+		<!-- For all races. A recipe for Antidote. Requires Create Common Item Lv. 1. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -385,7 +385,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6930" name="Recipe: Greater Antidote (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Greater Antidote. Requires Create Common Item Lv. 2. -->
+		<!-- For all races. A recipe for Greater Antidote. Requires Create Common Item Lv. 2. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -427,7 +427,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6933" name="Recipe: Wind Walk Potion (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Wind Walk Potion. Requires Create Common Item Lv. 1. -->
+		<!-- For all races. A recipe for Wind Walk Potion. Requires Create Common Item Lv. 1. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -525,7 +525,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6940" name="Recipe: Facelifting Potion A (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Facelifting Potion - A. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Facelifting Potion A. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -539,7 +539,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6941" name="Recipe: Facelifting Potion B (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Facelifting Potion - B. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Facelifting Potion B. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -553,7 +553,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6942" name="Recipe: Facelifting Potion C (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Facelifting Potion - C. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Facelifting Potion C. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -623,7 +623,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6947" name="Recipe: Hair Style Change Potion A (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - A. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion A. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -637,7 +637,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6948" name="Recipe: Hair Style Change Potion B (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - B. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion B. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -651,7 +651,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6949" name="Recipe: Hair Style Change Potion C (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - C. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion C. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -665,7 +665,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6950" name="Recipe: Hair Style Change Potion D (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - D. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion D. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -679,7 +679,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6951" name="Recipe: Hair Style Change Potion E (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - E. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion E. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -693,7 +693,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6952" name="Recipe: Hair Style Change Potion F (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - F. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion F. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -707,7 +707,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="6953" name="Recipe: Hair Style Change Potion G (100%)" type="EtcItem">
-		<!-- For all races. Recipe for Hair Style Change Potion - G. Requires Create Common Item Lv. 3. -->
+		<!-- For all races. A recipe for Hairstyle Change Potion G. Requires Create Common Item Lv. 3. -->
 		<set name="icon" val="icon.etc_recipe_green_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />

@@ -247,7 +247,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="96925" name="Dream Orb" additionalName="Sealed" type="EtcItem">
-		<!-- Can be obtained for completing quests in the Dream Dungeon. <How to use> Special Craft - Dream Dungeon -->
+		<!-- Can be obtained for completing missions in the Dream Dungeon. <How to use> Special Craft - Dream Dungeon -->
 		<set name="icon" val="icon.aka_manaf_blood" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -617,14 +617,14 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="96950" name="Talisman Challenge Points" type="EtcItem">
-		<!-- <font color=EEAA22>In case of failure while enchanting to +6, you can get the following items:</font> Talisman of Aden <font color=EEAA22>In case of failure while enchanting to +5, you can get the following items:</font> Talisman of Authority Talisman of Eva Talisman of Speed -->
+		<!-- <font color=EEAA22>In case of failure while enchanting to +6, you can get the following items:</font> Talisman of Aden <font color=EEAA22>In case of failure while enchanting to +5, you can get the following items:</font> Talisman of Authority Talisman of Eva Talisman of Speed Blessed Talisman of Eva Blessed Talisman of Speed -->
 		<set name="icon" val="icon.ench_challnege_point_tallisman_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
 	</item>
 	<item id="96951" name="Special Equipment Challenge Points" type="EtcItem">
-		<!-- <font color=EEAA22>In case of failure while enchanting to +7, you can get the following items:</font> Cloak of Protection <font color=EEAA22>In case of failure while enchanting to +5, you can get the following items:</font> Circlet of Hero Ignore Decrease Mask Dragon Belt <font color=EEAA22>In case of failure while enchanting to +4, you can get the following items:</font> Blessed Dragon Belt -->
+		<!-- <font color=EEAA22>In case of failure while enchanting to +7, you can get the following items:</font> Cloak of Protection <font color=EEAA22>In case of failure while enchanting to +5, you can get the following items:</font> Circlet of Hero Piercing Mask Dragon Belt <font color=EEAA22>In case of failure while enchanting to +4, you can get the following items:</font> Blessed Dragon Belt -->
 		<set name="icon" val="icon.ench_challnege_point_bm_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
@@ -705,7 +705,7 @@
 		<set name="weight" val="100" />
 	</item>
 	<item id="96960" name="Brooch Lv. 6" type="Armor">
-		<!-- Jewel slots +6 Inventory slots +18 P. Def. +300 M. Def. +300 -->
+		<!-- Jewel slots +6 Inventory slots +18 P. Def. +300 M. Def. +300 Can be compounded with two other Brooches of the same level. -->
 		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i05" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -723,7 +723,7 @@
 		</skills>
 	</item>
 	<item id="96961" name="Brooch Lv. 7" type="Armor">
-		<!-- Jewel slots +6 Inventory slots +20 P. Def. +500 M. Def. +500 Max HP +500 Max MP +500 Can be compounded with two other Brooches of the same level. -->
+		<!-- Jewel slots +6 Inventory slots +20 P. Def. +400 M. Def. +400 Max HP +250 Max MP +250 Can be compounded with two other Brooches of the same level. -->
 		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i06" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -741,7 +741,7 @@
 		</skills>
 	</item>
 	<item id="96962" name="Brooch Lv. 8" type="Armor">
-		<!-- Jewel slots +6 Inventory slots +25 P. Def. +700 M. Def. +700 Max HP +1000 Max MP +1000 -->
+		<!-- Jewel slots +6 Inventory slots +25 P. Def. +500 M. Def. +500 Max HP +500 Max MP +500 Can be compounded with two other Brooches of the same level. -->
 		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i07" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -759,7 +759,7 @@
 		</skills>
 	</item>
 	<item id="96963" name="Talisman Bracelet Lv. 7" type="Armor">
-		<!-- Talisman slots +6 P. Atk. +500 M. Atk. +500 Skill Power +1% Can be compounded with two other Talisman Bracelets of the same level. -->
+		<!-- Talisman slots +6 P. Atk. +400 M. Atk. +400 Skill Power +1% Can be compounded with two other Talisman Bracelets of the same level. -->
 		<set name="icon" val="icon.dimension_bracelet_i06" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rbracelet" />
@@ -775,7 +775,7 @@
 		</skills>
 	</item>
 	<item id="96964" name="Talisman Bracelet Lv. 8" type="Armor">
-		<!-- Talisman slots +6 P. Atk. +700 M. Atk. +700 Skill Power +2% -->
+		<!-- Talisman slots +6 P. Atk. +500 M. Atk. +500 Skill Power +2% Can be compounded with two other Talisman Bracelets of the same level. -->
 		<set name="icon" val="icon.dimension_bracelet_i07" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rbracelet" />
@@ -791,7 +791,7 @@
 		</skills>
 	</item>
 	<item id="96965" name="Agathion Bracelet Lv. 6" type="Armor">
-		<!-- Agathion slots +5 Paralysis Resistance +10% Shock Resistance +10% Sleep Resistance +10% Silence Resistance +10% Fear Resistance +10% STR +1 INT +1 DEX +2 WIT +2 CON +2 MEN +2 -->
+		<!-- Agathion slots +5 Paralysis Resistance +10% Shock Resistance +10% Sleep Resistance +10% Silence Resistance +10% Fear Resistance +10% STR +1 INT +1 DEX +2 WIT +2 CON +2 MEN +2 Can be compounded with two other Agathion Bracelets of the same level. -->
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -806,7 +806,7 @@
 		</skills>
 	</item>
 	<item id="96966" name="Agathion Bracelet Lv. 7" type="Armor">
-		<!-- Agathion slots +5 Paralysis Resistance +12% Shock Resistance +12% Sleep Resistance +12% Silence Resistance +12% Fear Resistance +12% Hold Resistance +5% Imprisonment Resistance +5% Pull Resistance +5% Knockback Resistance +5% Suppression Resistance +5% STR +2 INT +2 DEX +2 WIT +2 CON +3 MEN +3 Can be compounded with two other Agathion Bracelets of the same level. -->
+		<!-- Agathion slots +5 Paralysis Resistance +12% Shock Resistance +12% Sleep Resistance +12% Silence Resistance +12% Fear Resistance +12% Hold Resistance +5% Imprisonment Resistance +5% Pull Resistance +5% Knockback Resistance +5% Suppression Resistance +5% STR +2 INT +2 DEX +2 WIT +2 CON +2 MEN +2 Can be compounded with two other Agathion Bracelets of the same level. -->
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -821,7 +821,7 @@
 		</skills>
 	</item>
 	<item id="96967" name="Agathion Bracelet Lv. 8" type="Armor">
-		<!-- Agathion slots +5 Paralysis Resistance +15% Shock Resistance +15% Sleep Resistance +15% Silence Resistance +15% Fear Resistance +15% Hold Resistance +10% Imprisonment Resistance +10% Pull Resistance +10% Knockback Resistance +10% Suppression Resistance +10% STR +3 INT +3 DEX +3 WIT +3 CON +3 MEN +3 -->
+		<!-- Agathion slots +5 Paralysis Resistance +15% Shock Resistance +15% Sleep Resistance +15% Silence Resistance +15% Fear Resistance +15% Hold Resistance +10% Imprisonment Resistance +10% Pull Resistance +10% Knockback Resistance +10% Suppression Resistance +10% STR +2 INT +2 DEX +3 WIT +3 CON +3 MEN +3 Can be compounded with two other Agathion Bracelets of the same level. -->
 		<set name="icon" val="icon.pi_high_agathion_bracelet_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -846,12 +846,12 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="93448" min="3" max="3" chance="100" /> <!-- A-grade Weapon Coupon - Sealed x3 -->
-			<item id="93449" min="5" max="5" chance="100" /> <!-- A-grade Armor Coupon - Sealed x5 -->
-			<item id="96972" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 1+ - Sealed x1 -->
-			<item id="96969" min="1" max="1" chance="100" /> <!-- Equipment Pack: Talisman - Lv. 40+ - Sealed x1 -->
-			<item id="96970" min="1" max="1" chance="100" /> <!-- Jewel Box - Lv. 50+ - Sealed x1 -->
-			<item id="96971" min="1" max="1" chance="100" /> <!-- Agathion Pack - Lv. 60+ - Sealed x1 -->
+			<item id="93448" min="3" max="3" chance="100" /> <!-- A-grade Weapon Coupon - Sealed -->
+			<item id="93449" min="5" max="5" chance="100" /> <!-- A-grade Armor Coupon - Sealed -->
+			<item id="96972" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 1+ - Sealed -->
+			<item id="96969" min="1" max="1" chance="100" /> <!-- Equipment Pack: Talisman - Lv. 40+ - Sealed -->
+			<item id="96970" min="1" max="1" chance="100" /> <!-- Jewel Box - Lv. 50+ - Sealed -->
+			<item id="96971" min="1" max="1" chance="100" /> <!-- Agathion Pack - Lv. 60+ - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96969" name="Equipment Pack: Talisman - Lv. 40+" additionalName="Sealed" type="EtcItem">
@@ -868,11 +868,11 @@
 			<player level="40" />
 		</cond>
 		<capsuled_items>
-			<item id="9589" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 1 x1 -->
-			<item id="91745" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Talisman of Aden - Sealed x1 -->
-			<item id="92018" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Talisman of Eva - Sealed x1 -->
-			<item id="92403" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Talisman of Speed - Sealed x1 -->
-			<item id="91061" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Talisman of Authority - Sealed x1 -->
+			<item id="9589" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 1 -->
+			<item id="91745" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- Talisman of Aden - Sealed -->
+			<item id="92018" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- Talisman of Eva - Sealed -->
+			<item id="92403" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- Talisman of Speed - Sealed -->
+			<item id="91061" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- Talisman of Authority - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96970" name="Jewel Box - Lv. 50+" additionalName="Sealed" type="EtcItem">
@@ -889,11 +889,11 @@
 			<player level="50" />
 		</cond>
 		<capsuled_items>
-			<item id="90311" min="1" max="1" chance="100" /> <!-- Brooch Lv. 1 x1 -->
-			<item id="92068" min="1" max="1" chance="100" /> <!-- Onyx Lv. 3 - Sealed x1 -->
-			<item id="92088" min="1" max="1" chance="100" /> <!-- Zircon Lv. 3 - Sealed x1 -->
-			<item id="92078" min="1" max="1" chance="100" /> <!-- Spinel Lv. 3 - Sealed x1 -->
-			<item id="92098" min="1" max="1" chance="100" /> <!-- Moonstone Lv. 3 - Sealed x1 -->
+			<item id="90311" min="1" max="1" chance="100" /> <!-- Brooch Lv. 1 -->
+			<item id="92068" min="1" max="1" chance="100" /> <!-- Onyx Lv. 3 - Sealed -->
+			<item id="92088" min="1" max="1" chance="100" /> <!-- Zircon Lv. 3 - Sealed -->
+			<item id="92078" min="1" max="1" chance="100" /> <!-- Spinel Lv. 3 - Sealed -->
+			<item id="92098" min="1" max="1" chance="100" /> <!-- Moonstone Lv. 3 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96971" name="Agathion Pack - Lv. 60+" additionalName="Sealed" type="EtcItem">
@@ -910,11 +910,11 @@
 			<player level="60" />
 		</cond>
 		<capsuled_items>
-			<item id="90888" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 1 x1 -->
-			<item id="93128" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Ignis - Sealed x1 -->
-			<item id="93131" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Petram - Sealed x1 -->
-			<item id="93129" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Nebula - Sealed x1 -->
-			<item id="93130" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Agathion Procella - Sealed x1 -->
+			<item id="90888" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 1 -->
+			<item id="93128" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Ignis - Sealed -->
+			<item id="93131" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Petram - Sealed -->
+			<item id="93129" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Nebula - Sealed -->
+			<item id="93130" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Agathion Procella - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96972" name="Growth Support Box - Lv. 1+" additionalName="Sealed" type="EtcItem">
@@ -928,10 +928,10 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="3031" min="2000" max="2000" chance="100" /> <!-- Spirit Ore - Sealed x2000 -->
-			<item id="90907" min="100" max="100" chance="100" /> <!-- Soulshot Ticket - Sealed x100 -->
-			<item id="94269" min="10" max="10" chance="100" /> <!-- Scroll: Boost Attack - Sealed x10 -->
-			<item id="96973" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 50+ -->
+			<item id="3031" min="2000" max="2000" chance="100" /> <!-- Spirit Ore - Sealed -->
+			<item id="90907" min="100" max="100" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="94269" min="10" max="10" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="96973" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 50+ - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96973" name="Growth Support Box - Lv. 50+" additionalName="Sealed" type="EtcItem">
@@ -948,12 +948,12 @@
 			<player level="50" />
 		</cond>
 		<capsuled_items>
-			<item id="3031" min="2000" max="2000" chance="100" /> <!-- Spirit Ore - Sealed x2000 -->
-			<item id="90907" min="100" max="100" chance="100" /> <!-- Soulshot Ticket - Sealed x100 -->
-			<item id="94269" min="20" max="20" chance="100" /> <!-- Scroll: Boost Attack - Sealed x20 -->
-			<item id="91712" min="20" max="20" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed x20 -->
-			<item id="93068" min="1" max="1" chance="100" /> <!-- Red Lantern - 1st Place - Sealed x1 -->
-			<item id="96974" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 60+ -->
+			<item id="3031" min="2000" max="2000" chance="100" /> <!-- Spirit Ore - Sealed -->
+			<item id="90907" min="100" max="100" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="94269" min="20" max="20" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="91712" min="20" max="20" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<item id="93068" min="1" max="1" chance="100" /> <!-- Red Lantern - 1st Place - Sealed -->
+			<item id="96974" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 60+ - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96974" name="Growth Support Box - Lv. 60+" additionalName="Sealed" type="EtcItem">
@@ -970,12 +970,12 @@
 			<player level="60" />
 		</cond>
 		<capsuled_items>
-			<item id="3031" min="5000" max="5000" chance="100" /> <!-- Spirit Ore - Sealed x5000 -->
-			<item id="90907" min="200" max="200" chance="100" /> <!-- Soulshot Ticket - Sealed x200 -->
-			<item id="94269" min="50" max="50" chance="100" /> <!-- Scroll: Boost Attack - Sealed x50 -->
-			<item id="91712" min="50" max="50" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed x50 -->
-			<item id="93068" min="10" max="10" chance="100" /> <!-- Red Lantern - 1st Place - Sealed x10 -->
-			<item id="96975" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 70+ -->
+			<item id="3031" min="5000" max="5000" chance="100" /> <!-- Spirit Ore - Sealed -->
+			<item id="90907" min="200" max="200" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="94269" min="50" max="50" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="91712" min="50" max="50" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<item id="93068" min="10" max="10" chance="100" /> <!-- Red Lantern - 1st Place - Sealed -->
+			<item id="96975" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 70+ - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96975" name="Growth Support Box - Lv. 70+" additionalName="Sealed" type="EtcItem">
@@ -992,12 +992,12 @@
 			<player level="70" />
 		</cond>
 		<capsuled_items>
-			<item id="3031" min="10000" max="10000" chance="100" /> <!-- Spirit Ore - Sealed x10000 -->
-			<item id="90907" min="500" max="500" chance="100" /> <!-- Soulshot Ticket - Sealed x500 -->
-			<item id="94269" min="50" max="50" chance="100" /> <!-- Scroll: Boost Attack - Sealed x50 -->
-			<item id="91712" min="50" max="50" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed x50 -->
-			<item id="93068" min="40" max="40" chance="100" /> <!-- Red Lantern - 1st Place - Sealed x40 -->
-			<item id="96976" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 76+ -->
+			<item id="3031" min="10000" max="10000" chance="100" /> <!-- Spirit Ore - Sealed -->
+			<item id="90907" min="500" max="500" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="94269" min="50" max="50" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="91712" min="50" max="50" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<item id="93068" min="40" max="40" chance="100" /> <!-- Red Lantern - 1st Place - Sealed -->
+			<item id="96976" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 76+ - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96976" name="Growth Support Box - Lv. 76+" additionalName="Sealed" type="EtcItem">
@@ -1014,12 +1014,12 @@
 			<player level="76" />
 		</cond>
 		<capsuled_items>
-			<item id="3031" min="10000" max="10000" chance="100" /> <!-- Spirit Ore - Sealed x10000 -->
-			<item id="90907" min="1000" max="1000" chance="100" /> <!-- Soulshot Ticket - Sealed x1000 -->
-			<item id="94269" min="100" max="100" chance="100" /> <!-- Scroll: Boost Attack - Sealed x100 -->
-			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed x100 -->
-			<item id="93068" min="80" max="80" chance="100" /> <!-- Red Lantern - 1st Place - Sealed x80 -->
-			<item id="96977" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 80+ -->
+			<item id="3031" min="10000" max="10000" chance="100" /> <!-- Spirit Ore - Sealed -->
+			<item id="90907" min="1000" max="1000" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="94269" min="100" max="100" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<item id="93068" min="80" max="80" chance="100" /> <!-- Red Lantern - 1st Place - Sealed -->
+			<item id="96977" min="1" max="1" chance="100" /> <!-- Growth Support Box - Lv. 80+ - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96977" name="Growth Support Box - Lv. 80+" additionalName="Sealed" type="EtcItem">
@@ -1036,11 +1036,11 @@
 			<player level="40" />
 		</cond>
 		<capsuled_items>
-			<item id="3031" min="10000" max="10000" chance="100" /> <!-- Spirit Ore - Sealed x10000 -->
-			<item id="90907" min="1000" max="1000" chance="100" /> <!-- Soulshot Ticket - Sealed x1000 -->
-			<item id="94269" min="200" max="200" chance="100" /> <!-- Scroll: Boost Attack - Sealed x200 -->
-			<item id="91712" min="200" max="200" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed x200 -->
-			<item id="93068" min="150" max="150" chance="100" /> <!-- Red Lantern - 1st Place - Sealed x150 -->
+			<item id="3031" min="10000" max="10000" chance="100" /> <!-- Spirit Ore - Sealed -->
+			<item id="90907" min="1000" max="1000" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="94269" min="200" max="200" chance="100" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="91712" min="200" max="200" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
+			<item id="93068" min="150" max="150" chance="100" /> <!-- Red Lantern - 1st Place - Sealed -->
 		</capsuled_items>
 		
 	</item>
@@ -1096,8 +1096,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="92314" min="1" max="1" chance="100" /> <!-- Giran Seal Sealed -->
-			<item id="94777" min="1" max="1" chance="100" /> <!-- Berserker's Scroll Sealed -->
+			<item id="92314" min="1" max="1" chance="100" /> <!-- Giran Seal -->
+			<item id="94777" min="1" max="1" chance="100" /> <!-- Berserker's Scroll - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="96983" name="Package: Agathion Bracelet Lv. 3" additionalName="Sealed" type="EtcItem">

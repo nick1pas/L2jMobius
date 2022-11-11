@@ -9,7 +9,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="90901" name="Agathion Bracelet Lv. 1" additionalName="15-day" type="Armor">
-		<!-- Available for 15 days. Unlocks 2 agathion slots. -->
+		<!-- Activates 2 Agathion slots. -->
 		<set name="icon" val="icon.agathion_magmeld_teleport" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -59,7 +59,7 @@
 		</skills>
 	</item>
 	<item id="90904" name="Agathion Aries Pack" additionalName="60 days" type="EtcItem">
-		<!-- Double-click to obtain Agathion Bracelet Lv. 3 (60-day) and Agathion Aries (60-day). Note!. The obtained items cannot be exchanged, dropped, or sold. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_sheep_agathion_30d_box" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -69,7 +69,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="90905" name="Package: Agathion Singer and Dancer" additionalName="30-day" type="EtcItem">
-		<!-- Double-click to obtain Agathion Singer & Dancer (30-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -81,11 +81,11 @@
 		<set name="material" val="FISH" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90885" min="1" max="1" chance="100" /> <!-- Agathion Singer & Dancer 30-day -->
+			<item id="90885" min="1" max="1" chance="100" /> <!-- Agathion Singer & Dancer - 30-day -->
 		</capsuled_items>
 	</item>
 	<item id="90906" name="Package: Agathion Singer and Dancer" additionalName="90-day" type="EtcItem">
-		<!-- Double-click to obtain Agathion Singer & Dancer (90-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -97,7 +97,7 @@
 		<set name="material" val="FISH" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90886" min="1" max="1" chance="100" /> <!-- Agathion Singer & Dancer 90-day -->
+			<item id="90886" min="1" max="1" chance="100" /> <!-- Agathion Singer & Dancer - 90-day -->
 		</capsuled_items>
 	</item>
 	<item id="90907" name="Soulshot Ticket" additionalName="Sealed" type="EtcItem">
@@ -110,7 +110,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="90908" name="Agathion Rudolph Pack" additionalName="2-hour" type="EtcItem">
-		<!-- Double-click to obtain Agathion Rudolph (2-hour). Note!. The obtained item cannot be exchanged, dropped, or sold. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -121,7 +121,7 @@
 		<set name="material" val="PAPER" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90909" min="1" max="1" chance="100" /> <!-- Agathion Rudolph - 2 hours -->
+			<item id="90909" min="1" max="1" chance="100" /> <!-- Agathion Rudolph - 2-hour -->
 		</capsuled_items>
 	</item>
 	<item id="90909" name="Agathion Rudolph" additionalName="2-hour" type="Armor">
@@ -152,7 +152,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="90911" name="Battle Box Lv. 1" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -166,7 +166,7 @@
 		</skills>
 	</item>
 	<item id="90912" name="Battle Box Lv. 2" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -180,7 +180,7 @@
 		</skills>
 	</item>
 	<item id="90913" name="Battle Box Lv. 3" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -194,7 +194,7 @@
 		</skills>
 	</item>
 	<item id="90914" name="Battle Box Lv. 4" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -208,7 +208,7 @@
 		</skills>
 	</item>
 	<item id="90915" name="Valor Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i05" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -220,10 +220,10 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="729" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant A-grade Weapon (Exchangeable) -->
-			<item id="730" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant A-grade Armor (Exchangeable) -->
-			<item id="947" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant B-grade Weapon (Exchangeable) -->
-			<item id="948" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant B-grade Armor (Exchangeable) -->
+			<item id="729" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant A-grade Weapon -->
+			<item id="730" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant A-grade Armor -->
+			<item id="947" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant B-grade Weapon -->
+			<item id="948" min="1" max="1" chance="16.66" /> <!-- Scroll: Enchant B-grade Armor -->
 			<item id="2133" min="3" max="3" chance="16.7" /> <!-- A-grade Gemstone -->
 			<item id="49756" min="1" max="1" chance="16.66" /> <!-- Cloth Piece -->
 		</capsuled_items>
@@ -294,7 +294,7 @@
 		<set name="time" val="10080" />
 	</item>
 	<item id="90921" name="Vital Stone Lv. 5" additionalName="7-day" type="Armor">
-		<!-- Available for 7 days. When Sayha's Grace is active, Acquired XP/ SP +15%, Sayha's Grace Consumption -30%. The effect doesn't stack if two identical jewels are equipped, the higher-level jewel takes precedence. -->
+		<!-- Available for 7 d. When equipped, while Sayha's Grace is active, acquired XP/ SP while hunting +15%, Sayha's Grace Consumption -30%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -307,7 +307,7 @@
 		<set name="weight" val="5" />
 	</item>
 	<item id="90922" name="Shining Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_main_i01" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -458,7 +458,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="90934" name="Brooch Lv. 3" type="Armor">
-		<!-- Activates 4 jewel slots. Inventory Slots +12. Can be compounded with another Brooch of the same level. -->
+		<!-- Jewel slots +4 Inventory slots +12 Can be compounded with two other Brooches of the same level. -->
 		<set name="icon" val="icon.etc_bm_brooch_lavianrose_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch" />
@@ -475,7 +475,7 @@
 		</skills>
 	</item>
 	<item id="90935" name="Jewel Box Lv. 4" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_special_jewelbox_lv4" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -488,7 +488,7 @@
 		</skills>
 	</item>
 	<item id="90936" name="Aquamarine Chest" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_aquamarine_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -498,11 +498,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90924" min="1" max="1" chance="100" />
+			<item id="90924" min="1" max="1" chance="100" /> <!-- Aquamarine Lv. 1 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90937" name="Aquamarine Jewelry Box Lv. 3" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_aquamarine_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -512,11 +512,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90926" min="1" max="1" chance="100" />
+			<item id="90926" min="1" max="1" chance="100" /> <!-- Aquamarine Lv. 3 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90938" name="Aquamarine Jewelry Box Lv. 4" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_aquamarine_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -526,11 +526,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90927" min="1" max="1" chance="100" />
+			<item id="90927" min="1" max="1" chance="100" /> <!-- Aquamarine Lv. 4 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90939" name="Aquamarine Jewelry Box Lv. 5" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_aquamarine_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -540,11 +540,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90928" min="1" max="1" chance="100" />
+			<item id="90928" min="1" max="1" chance="100" /> <!-- Aquamarine Lv. 5 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90940" name="Cat's Eye Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -554,11 +554,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90929" min="1" max="1" chance="100" />
+			<item id="90929" min="1" max="1" chance="100" /> <!-- Cat's Eye Lv. 1 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90941" name="Cat's Eye Jewelry Box Lv. 3" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -568,11 +568,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90931" min="1" max="1" chance="100" />
+			<item id="90931" min="1" max="1" chance="100" /> <!-- Cat's Eye Lv. 3 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90942" name="Cat's Eye Jewelry Box Lv. 4" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -582,11 +582,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90932" min="1" max="1" chance="100" />
+			<item id="90932" min="1" max="1" chance="100" /> <!-- Cat's Eye Lv. 4 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90943" name="Cat's Eye Jewelry Box Lv. 5" type="EtcItem">
-		<!-- Double-click to obtain Cat's Eye Lv. 5. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_jewelbox_red_catseye_lavianrose" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -596,11 +596,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90933" min="1" max="1" chance="100" />
+			<item id="90933" min="1" max="1" chance="100" /> <!-- Cat's Eye Lv. 5 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="90944" name="Shining Brooch Fragment" type="EtcItem">
-		<!-- Two fragments along with a Brooch can be exchanged by the Game Assistant for a higher-level Brooch. <Required Items>. Brooch Lv. 3: Brooch Lv. 2, Shining Brooch Fragments (2 pcs.). Brooch Lv. 4: Brooch Lv. 3, Shining Brooch Fragments (3 pcs.). -->
+		<!-- Two fragments along with a Brooch can be exchanged for a higher-level Brooch by the Game Assistant. <Required items> Brooch Lv. 3: Brooch Lv. 2, Shining Brooch Fragments (2 pcs.) Brooch Lv. 4: Brooch Lv. 3, Shining Brooch Fragments (3 pcs.) -->
 		<set name="icon" val="icon.etc_bm_brooch_lavianrose_piece" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -635,7 +635,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="90948" name="Lucky Charm" additionalName="30-day" type="EtcItem">
-		<!-- Available for 30 days. When in inventory, chance of dropping items after death -20%, chance of XP Penalty -20%. Cannot be used by chaotic characters. -->
+		<!-- Available for 30 d. When in inventory, Death XP Penalty -20%. Cannot be used by chaotic characters. -->
 		<set name="icon" val="icon.bm_freya_rune" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="is_tradable" val="false" />
@@ -653,7 +653,7 @@
 		</skills>
 	</item>
 	<item id="90949" name="Transformation Scroll: White Knight" additionalName="Sealed" type="EtcItem">
-		<!-- Transforms into White Knight. <Transformation effect>. P. Atk. in PvE +5%. P. Def. in PvE +5%. Max HP +10%. Max MP +10%. Stun Resistance +5%. Paralysis Resistance +5%. Silence Resistance +5%. Fear Resistance +5%. Duration: 20 min. The effect remains after death. -->
+		<!-- Transforms into White Knight, when used. <Transformation effect> Max HP +10% Max MP +10% PvE damage +5% Received PvE damage -5% Shock Resistance +5% Paralysis Resistance +5% Silence Resistance +5% Fear Resistance +5% Duration: 20 min. The effect remains after death. -->
 		<set name="icon" val="icon.etc_charm_of_courage_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -668,7 +668,7 @@
 		</skills>
 	</item>
 	<item id="90950" name="Baium's Ring Lv. 3" additionalName="30-day" type="Armor">
-		<!-- <Properties>. P. Skill Power +10%. M. Skill Power +10%. Atk. Spd. +5%. Casting Spd. +4%. P. Accuracy +4. M. Accuracy +4. P. Critical Damage +15%. M. Skill Critical Damage +10%. Max MP +27. Stun Resistance/ Atk. Rate +20%. Bleed Resistance/ Atk. Rate +15%. Available for 30 d. Effects of two identical rings do not stack. Cannot be enchanted. -->
+		<!-- <Properties> P. Skill Power +10% M. Skill Power +10% Atk. Spd. +5% Casting Spd. +4% P. Accuracy +4 M. Accuracy +4 P. Critical Damage +15% M. Skill Critical Damage +10% Max MP +27 Shock Atk. Rate and Resistance +20% Infection Atk. Rate and Resistance +15% Available for 30 d. Effects of two identical rings do not stack. Cannot be enchanted. -->
 		<set name="icon" val="icon.accessory_ring_of_baium_i03" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -687,7 +687,7 @@
 		</stats>
 	</item>
 	<item id="90951" name="Angler's Fishing Box" type="EtcItem">
-		<!-- Double-click to obtain 30 Shining Golden Baits. If you are lucky, you will get Angler's Golden Box or Angler's Silver Box. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_readybox_bronze" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_dropable" val="false" />
@@ -700,7 +700,7 @@
 		</skills>
 	</item>
 	<item id="90952" name="Angler's Golden Box" type="EtcItem">
-		<!-- Double-click to obtain a rare item. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_readybox_gold" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -713,7 +713,7 @@
 		</skills>
 	</item>
 	<item id="90953" name="Angler's Silver Box" type="EtcItem">
-		<!-- Double-click to obtain 1 random item: a rare accessory, an enchantment scroll, an item box (grade A/ B), a fishing enchantment scroll, Angler's Blessing, etc. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_readybox_silver" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -736,7 +736,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="90955" name="Master Fisherman's Blessing (4-hour)" type="EtcItem">
-		<!-- For 4 h. Acquired XP/ SP (fishing) +100%. The effect remains after death. -->
+		<!-- For 4 h., acquired XP/ SP while fishing +100%. The effect remains after death. -->
 		<set name="icon" val="icon.fishing_zone_ticket" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_dropable" val="false" />
@@ -746,7 +746,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="90956" name="Master Fisherman's Blessing (8-hour)" type="EtcItem">
-		<!-- For 8 h. Acquired XP/ SP (fishing) +100%. The effect remains after death. -->
+		<!-- For 8 h., acquired XP/ SP while fishing +100%. The effect remains after death. -->
 		<set name="icon" val="icon.fishing_zone_ticket" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_dropable" val="false" />
@@ -756,7 +756,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="90957" name="Blue Mackerel: Dual Swords (Event)" type="Weapon">
-		<!-- Open the chest to receive a Blue Mackerel: Dual Sword. This is great reward! -->
+		<!-- Double-click to obtain Blue Mackerel - Dual Swords. It is a great reward! -->
 		<set name="icon" val="icon.wp_fishing11" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUAL" />
@@ -805,7 +805,7 @@
 		</skills>
 	</item>
 	<item id="90960" name="Transformation Scroll: Teddy Bear" type="EtcItem">
-		<!-- Changes the appearance to that of a teddy bear. <Transformation effect>. Max HP +20%. Max MP +20%. Acquired XP +20%. Acquired SP +20%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>(When Sayha's Grace is active, acquired XP/ SP are increased.)</font>. <font color=eeaa22>(The effect is cancelled when transforming into Kat the Cat/ cat/ panda, or changing the armor appearance to that of Blue Dynasty.)</font> -->
+		<!-- Changes the appearance to that of a teddy bear. <Transformation effect> Max HP +20% Max MP +20% Acquired XP +20% Acquired SP +20%. Duration: 20 min. Cooldown: 1 min. The effect remains after death. <font color=ff6666>(When Sayha's Grace is active, acquired XP/ SP are increased.)</font> <font color=eeaa22>(The effect is cancelled when transforming into Kat the Cat/ cat/ panda, or changing the armor appearance to that of Blue Dynasty.)</font> -->
 		<set name="icon" val="icon.gomdori_chest_change" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -819,7 +819,7 @@
 		</skills>
 	</item>
 	<item id="90961" name="+15 A-grade Weapon Pack" type="EtcItem">
-		<!-- Double-click to obtain an A-grade weapon enchanted to +15. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
@@ -831,7 +831,7 @@
 		</skills>
 	</item>
 	<item id="90962" name="Chronicle Pencil" additionalName="Sealed" type="Weapon">
-		<!-- A pencil for the 1000th day after Lineage 2 Classic version start. -->
+		<!-- A pencil for the 1000th day after Lineage 2 Legacy launch. -->
 		<set name="icon" val="BranchSys2.icon.g_pencil_of_servermaster" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -857,7 +857,7 @@
 		</stats>
 	</item>
 	<item id="90963" name="Stable Scroll: Enchant Agathion" type="EtcItem">
-		<!-- Only for Zodiac agathions. Increases M. Def. The enchanting is safe up to +3, the maximum enchant value is +10. Starting from +1, the agathion's secondary skills are enhanced with each enchant value. In case of failure the item is not destroyed, and its enchant value remains the same. -->
+		<!-- Only for Zodiac agathions. Increases M. Def. The enchanting is safe up to +3, the maximum enchant value is +10. Starting from +1, the agathion's secondary skills are enhanced with each enchant value. In case of failure the item is not destroyed, and its enchant value remains the same. <font color=ff6666>Cannot be used for mass enchanting.</font> -->
 		<set name="icon" val="icon.star_scrl_of_ench_ag" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_stackable" val="true" />
@@ -869,7 +869,7 @@
 		</skills>
 	</item>
 	<item id="90964" name="Sealed Doll of Border Box" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_oriental_park_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -882,7 +882,7 @@
 		</skills>
 	</item>
 	<item id="90965" name="Raid Lucky Charm" additionalName="7-day" type="EtcItem">
-		<!-- Available for 7 days. When in inventory, chance of dropping items after death -50%, chance of XP Penalty -50%. Cannot be used by chaotic characters. -->
+		<!-- Available for 7 d. When in inventory, Death XP Penalty -50%. Cannot be used by chaotic characters. -->
 		<set name="icon" val="icon.etc_cross_of_einhasad_i00" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="is_tradable" val="false" />
@@ -900,7 +900,7 @@
 		</skills>
 	</item>
 	<item id="90966" name="Raid Lucky Charm Box" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -913,7 +913,7 @@
 		</skills>
 	</item>
 	<item id="90967" name="Test_Count Items - Not Available" additionalName="Not Available" type="EtcItem">
-		<!-- Number of items to use. -->
+		<!-- The item is not available. Number of items to use. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="immediate_effect" val="true" />
 		<set name="is_tradable" val="false" />
@@ -923,7 +923,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="90968" name="GM Repi Gift Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain one of the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.event_six_party_box_i00" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -952,7 +952,7 @@
 		</stats>
 	</item>
 	<item id="90970" name="Blessed Earth Dragon Pendant" type="Armor">
-		<!-- M. Def. +24, Max HP/ CP +600, Max MP +300, Speed +7, Received Damage -20%, Damage Reflection Resistance +10%. Allows use of the Earth Dragon's Breath and Earth Dragon's Defense skills. -->
+		<!-- M. Def. +24, Max HP/ CP +600, Max MP +300, Speed +7, received damage -20%, Damage Reflection Resistance +10%. Enables the Earth Dragon's Breath and Earth Dragon's Defense skills. -->
 		<set name="icon" val="icon.bm_pendant_pvp" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -966,7 +966,7 @@
 		</stats>
 	</item>
 	<item id="90971" name="High-grade Shining Pendant Polish Box" type="EtcItem">
-		<!-- Double-click to obtain Matte Pendant Polish, Shining Pendant Polish Box, or Glittering Pendant Polish. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_dropable" val="false" />
@@ -979,7 +979,7 @@
 		</skills>
 	</item>
 	<item id="90972" name="+8 A-grade Weapon Pack" type="EtcItem">
-		<!-- Double-click to obtain an A-grade Weapon enchanted to +8, except high-level weapons. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_treasure_box_i04" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
@@ -1004,7 +1004,7 @@
 		<set name="bodypart" val="back" />
 	</item>
 	<item id="90974" name="Sealed Doll of Border - Baium" additionalName="7-day" type="EtcItem">
-		<!-- Double-click to obtain Doll of Border - Baium (7-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_baium_doll_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1015,11 +1015,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="90977" min="1" max="1" chance="100" /> <!-- Doll of Border - Baium (7-day) -->
+			<item id="90977" min="1" max="1" chance="100" /> <!-- Doll of Border - Baium - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="90975" name="Sealed Doll of Border - Queen Ant" additionalName="7-day" type="EtcItem">
-		<!-- Double-click to obtain Doll of Border - Queen Ant (7-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_queen_ant_doll_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1031,11 +1031,11 @@
 		<set name="material" val="FISH" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="90978" min="1" max="1" chance="100" /> <!-- Doll of Border - Queen Ant (7-day) -->
+			<item id="90978" min="1" max="1" chance="100" /> <!-- Doll of Border - Queen Ant - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="90976" name="Sealed Doll of Border - Orfen" additionalName="7-day" type="EtcItem">
-		<!-- Double-click to obtain Doll of Border - Orfen (7-day). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_orfen_doll_30d" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1047,11 +1047,11 @@
 		<set name="material" val="FISH" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="90979" min="1" max="1" chance="100" /> <!-- Doll of Border - Orfen (7-day) -->
+			<item id="90979" min="1" max="1" chance="100" /> <!-- Doll of Border - Orfen - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="90977" name="Doll of Border - Baium" additionalName="7-day" type="EtcItem">
-		<!-- <Baium Doll's Sorcery>. Skill Cooldown -3%. P. Def. +12%. M. Def. +12%. Silence Resistance +40%. Fear Resistance +40%. Paralysis Resistance +20%. Knockdown Resistance +20%. Pull Resistance +20%. Available for 7 d. Boosts parameters when in inventory. -->
+		<!-- <Baium Doll's Sorcery Lv. 2> Skill Cooldown -3% P. Def. +12% M. Def. +12% Silence Resistance +40% Fear Resistance +40% Paralysis Resistance +20% Shock Resistance +20% Pull Resistance +20% Available for 7 d. Boosts parameters when in inventory. -->
 		<set name="icon" val="icon.bm_baium_doll_30d" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1067,7 +1067,7 @@
 		</skills>
 	</item>
 	<item id="90978" name="Doll of Border - Queen Ant" additionalName="7-day" type="EtcItem">
-		<!-- <Queen Ant Doll's Sorcery>. P. Atk. +8%. P. Critical Damage +8%. P. Skill Critical Damage +8%. Max HP +12%. Available for 7 days. Boosts parameters when in inventory. -->
+		<!-- <Queen Ant Doll's Sorcery> P. Atk. +8% P. Critical Damage +8% P. Skill Critical Damage +8% Max HP +12% Available for 7 d. Boosts stats when in inventory. -->
 		<set name="icon" val="icon.bm_queen_ant_doll_30d" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1083,7 +1083,7 @@
 		</skills>
 	</item>
 	<item id="90979" name="Doll of Border - Orfen" additionalName="7-day" type="EtcItem">
-		<!-- <Orfen Doll's Sorcery>. M. Atk. +8%. M. Skill Critical Damage +8%. Max MP +12%. For 7 days. Boosts parameters when in inventory. -->
+		<!-- <Orfen Doll's Sorcery> M. Atk. +8% M. Skill Critical Damage +8% Max MP +12% Available for 7 d. Boosts stats when in inventory. -->
 		<set name="icon" val="icon.bm_orfen_doll_30d" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1152,7 +1152,7 @@
 		<set name="bodypart" val="brooch_jewel" />
 	</item>
 	<item id="90984" name="Vital Stone Lv. 4" additionalName="30-day" type="Armor">
-		<!-- Available for 30 days. While Sayha's Grace is active, Acquired XP/ SP +8%, Sayha's Grace Consumption -10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
+		<!-- Available for 30 d. When equipped, while Sayha's Grace is active, acquired XP/ SP while hunting +8%, Sayha's Grace Consumption -10%. Effects of two identical jewels do not stack, the higher-level jewel takes precedence. -->
 		<set name="icon" val="icon.etc_bm_jewel_vital" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="brooch_jewel" />
@@ -1165,7 +1165,7 @@
 		<set name="time" val="43200" />
 	</item>
 	<item id="90985" name="Earth Dragon Belt" additionalName="30-day" type="Armor">
-		<!-- Available for 30 days. Inventory Slots +6, Weight Limit +7000, CON +1, MEN +1, HP Recovery Bonus +2.31, MP Recovery Bonus +1.54, CP Recovery Bonus +3.07, Max HP/ MP/ CP +15%, HP Recovery Potions' Effect +100, Received Damage -6%. -->
+		<!-- Available for 30 d. When equipped, inventory slots +6, weight limit +7000, CON +1, MEN +1, HP Recovery Rate +2.31, MP Recovery Rate +1.54, CP Recovery Rate +3.07, Max HP/ MP/ CP +15%, HP Recovery Potions' Effect +100, received damage -6%. -->
 		<set name="icon" val="icon.bm_antaras_belt" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -1221,7 +1221,7 @@
 		</stats>
 	</item>
 	<item id="90989" name="Savior's Earring Box" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain Savior's Earring +3 (big chance) or Shining Savior's Earring (small chance). -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_pirate_battle_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />
@@ -1236,7 +1236,7 @@
 		</skills>
 	</item>
 	<item id="90990" name="Scroll: Enchant Savior's Earring" additionalName="Sealed" type="EtcItem">
-		<!-- Required for enchanting Savior's Earring. Increases M. Def. The enchanting is safe up to +3, the maximum enchant value is +7. In case of failure, the enchant value remains the same. -->
+		<!-- Required for enchanting Savior's Earring. Increases M. Def. The enchanting is safe up to +3, the maximum enchant value is +7. In case of failure, the enchant value remains the same. <font color=ff6666>Cannot be used for mass enchanting.</font> -->
 		<set name="icon" val="icon.etc_penalty_recovery_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_tradable" val="false" />
@@ -1252,7 +1252,7 @@
 		</skills>
 	</item>
 	<item id="90991" name="Burglar's Hat" additionalName="30-day" type="Armor">
-		<!-- A leather hat. Available for 30 days. Allows use of the Burglar's Blessing and Burglar's Luck skills. Occupies 2 hair accessory slots. -->
+		<!-- Available for 30 d. A leather hat. Enables the Burglar's Blessing and Burglar's Luck skills. <font color=eeaa22>Equipped in the left head accessory slot.</font> -->
 		<set name="icon" val="icon.Accessary_middle_ages_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -1265,7 +1265,7 @@
 		<set name="bodypart" val="hairall" />
 	</item>
 	<item id="90992" name="Antharas' Earring" type="Armor">
-		<!-- Max enchant value: +5. (Requires Scroll: Enchant Rare Accessories.). Boosts the item's parameters after enchanting. Effects of two identical earrings do not stack. Safe enchanting to +1 -->
+		<!-- Max enchant value: +6. (Requires Scroll: Enchant Rare Accessories.) Boosts the item's parameters after enchanting. Effects of two identical earrings do not stack. Safe enchanting to +1 -->
 		<set name="icon" val="icon.accessory_earring_of_antaras_i02" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -1321,7 +1321,7 @@
 		</skills>
 	</item>
 	<item id="90996" name="Balthus Knights' Matte Varnish - Not Available" additionalName="Not Available" type="EtcItem">
-		<!-- Enhances characteristics of damaged rare accessories. Can be used on a item enchanted up to +6. If an enchantment is failed, the item doesn't disappear and keep the previous level of enchantment. Depending on the item type, activates special options from level +4 and higher. -->
+		<!-- The item is not available. Enhances characteristics of damaged rare accessories. Can be used on a item enchanted up to +6. If an enchantment is failed, the item doesn't disappear and keep the previous level of enchantment. Depending on the item type, activates special options from level +4 and higher. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="is_sellable" val="false" />
@@ -1359,7 +1359,7 @@
 		</skills>
 	</item>
 	<item id="90999" name="Rash's Supplies - Antharas" additionalName="Sealed" type="EtcItem">
-		<!-- Double-click to obtain the following items. -->
+		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.bm_special_pendant_abradant_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_tradable" val="false" />

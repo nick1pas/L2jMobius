@@ -540,7 +540,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5549" name="Corroded Metallic Thread" type="EtcItem">
-		<!-- Not in use anymore. Can be sold to any trader. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_skein_gray_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -551,7 +551,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5550" name="Corroded Reinforced Metal Plate" type="EtcItem">
-		<!-- Not in use anymore. Can be sold to any trader. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_squares_wood_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -562,7 +562,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5551" name="Corroded Reorin's Mold" type="EtcItem">
-		<!-- Not in use anymore. Can be sold to any trader. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_blacksmiths_frame_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -573,7 +573,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5552" name="Corroded Warsmith' Mold" type="EtcItem">
-		<!-- Not in use anymore. Can be sold to any trader. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_blacksmiths_frame_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -584,7 +584,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5553" name="Corroded Arcsmith' Anvil" type="EtcItem">
-		<!-- Not in use anymore. Can be sold to any trader. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_blacksmiths_frame_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -595,7 +595,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="5554" name="Corroded Warsmith' Holder" type="EtcItem">
-		<!-- Not in use anymore. Can be sold to any trader. -->
+		<!-- Not used anymore. Can be sold to any shop. -->
 		<set name="icon" val="icon.etc_blacksmiths_frame_i00" />
 		<set name="etcitem_type" val="MATERIAL" />
 		<set name="immediate_effect" val="true" />
@@ -1095,7 +1095,7 @@
 		</skills>
 	</item>
 	<item id="5592" name="Greater CP Potion" type="EtcItem">
-		<!-- Restores 200 CP. -->
+		<!-- Recovers 200 CP. -->
 		<set name="icon" val="icon.etc_cp_potion_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -1114,7 +1114,7 @@
 		</skills>
 	</item>
 	<item id="5593" name="Low-grade SP Scroll" type="EtcItem">
-		<!-- Recharges SP by 5. -->
+		<!-- Recovers 1 SP. Required level: 76+. -->
 		<set name="icon" val="icon.etc_sp_scroll1_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1130,7 +1130,7 @@
 		</skills>
 	</item>
 	<item id="5594" name="Mid-grade SP Scroll" type="EtcItem">
-		<!-- Recharges SP by 50. -->
+		<!-- Recovers 1 SP. Required level: 76+. -->
 		<set name="icon" val="icon.etc_sp_scroll2_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1146,7 +1146,7 @@
 		</skills>
 	</item>
 	<item id="5595" name="High-grade SP Scroll" type="EtcItem">
-		<!-- Recharges SP by 1000. -->
+		<!-- Recovers 1 SP. Required level: 76+. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1162,7 +1162,7 @@
 		</skills>
 	</item>
 	<item id="5596" name="Dasparion's Staff" additionalName="Mana Up" type="Weapon">
-		<!-- <Soul Crystal properties>. Max MP +30%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Max MP +30%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1194,7 +1194,7 @@
 		</stats>
 	</item>
 	<item id="5597" name="Dasparion's Staff" additionalName="Conversion" type="Weapon">
-		<!-- <Soul Crystal property>. Max MP +60%, Max HP -40%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Max MP +60%, Max HP -40%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1226,7 +1226,7 @@
 		</stats>
 	</item>
 	<item id="5598" name="Dasparion's Staff" additionalName="Acumen" type="Weapon">
-		<!-- <Soul Crystal property>. Casting Spd. +15%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Casting Spd. +15%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -1258,7 +1258,7 @@
 		</stats>
 	</item>
 	<item id="5599" name="Meteor Shower" additionalName="Focus" type="Weapon">
-		<!-- <Soul Crystal properties>. Critical Rate for standard attacks +61. Increases PvP damage. -->
+		<!-- <Soul crystal property> Critical Rate for basic attacks +61. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_meteor_shower_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />

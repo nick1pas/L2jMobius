@@ -208,7 +208,7 @@
 		</skills>
 	</item>
 	<item id="32725" name="Chic Silver Chapeau" additionalName="3-day" type="Armor">
-		<!-- Chic Silver Chapeau. 3-day. STR/ INT +1. Uses 2 hair accessory slots. -->
+		<!-- Chic Silver Chapeau. STR +1, INT +1. Available for 3 d. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys2.icon2.pi_silverchaperon" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="10" />
@@ -223,7 +223,7 @@
 		</skills>
 	</item>
 	<item id="32726" name="Demon Circlet" additionalName="3-day" type="Armor">
-		<!-- Hair accessory with weak energy. 3-day. CON/ MEN +1. Uses 2 hair accessory slots. -->
+		<!-- Demon Circlet. CON +1, MEN +1. Available for 3 d. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.Accessary_demon_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="10" />
@@ -239,7 +239,7 @@
 		</skills>
 	</item>
 	<item id="32727" name="Treasure Chest" type="EtcItem">
-		<!-- Double-click to obtain one of the following items: Hair Accessory Pack, Pendant Pack, R-grade Enchant Scroll Pack, Elixir Pack. -->
+		<!-- Double-click to obtain one of the following items: Head Accessory Pack, Pendant Box, R-grade Enchant Scroll Box, Elixir Box. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -253,7 +253,7 @@
 		</skills>
 	</item>
 	<item id="32728" name="Hair Accessory Pack" type="EtcItem">
-		<!-- Chest containing Hair Accessory. -->
+		<!-- Double-click to obtain a head accessory. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="default_action" val="CAPSULE" />
@@ -266,7 +266,7 @@
 		</skills>
 	</item>
 	<item id="32729" name="Pendant Pack" type="EtcItem">
-		<!-- Chest containing pendant that can strengthen hair accessories. -->
+		<!-- Double-click to obtain a pendant for enhancing head accessories. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="default_action" val="CAPSULE" />
@@ -279,7 +279,7 @@
 		</skills>
 	</item>
 	<item id="32730" name="S-grade Enchant Scroll Pack" type="EtcItem">
-		<!-- Box containing S-grade enchant scroll. -->
+		<!-- Double-click to obtain S-grade enchant scrolls. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="default_action" val="CAPSULE" />
@@ -292,7 +292,7 @@
 		</skills>
 	</item>
 	<item id="32731" name="R-grade Enchant Scroll Box" type="EtcItem">
-		<!-- Box containing R-grade enchant scroll. -->
+		<!-- Double-click to obtain R-grade enchant scrolls. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="default_action" val="CAPSULE" />
@@ -305,7 +305,7 @@
 		</skills>
 	</item>
 	<item id="32732" name="D-grade Enchant Scroll Box" type="EtcItem">
-		<!-- Box containing D-grade enchant scroll. -->
+		<!-- Double-click to obtain D-grade enchant scrolls. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="weight" val="10" />
 		<set name="default_action" val="CAPSULE" />
@@ -531,7 +531,7 @@
 		</skills>
 	</item>
 	<item id="32748" name="Romantic Chapeau" additionalName="Critical Rate" type="Armor">
-		<!-- When equipped, Critical Rate for standard attacks +50. -->
+		<!-- When equipped, Critical Rate for basic attacks +50. -->
 		<set name="icon" val="icon.accessory_romantic_chaperon_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -547,7 +547,7 @@
 		</skills>
 	</item>
 	<item id="32749" name="Romantic Chapeau" additionalName="Critical Damage" type="Armor">
-		<!-- When equipped, Critical Damage for standard attacks +90, M. Skill Critical Damage +68. -->
+		<!-- When equipped, Critical Damage for basic attacks +90, M. Skill Critical Damage +68. -->
 		<set name="icon" val="icon.accessory_romantic_chaperon_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -563,7 +563,7 @@
 		</skills>
 	</item>
 	<item id="32750" name="Angel Circlet" additionalName="P. Def." type="Armor">
-		<!-- P. Def. +5%, when equipped. -->
+		<!-- When equipped, P. Def. +5%. -->
 		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="10" />
@@ -579,7 +579,7 @@
 		</skills>
 	</item>
 	<item id="32751" name="Angel Circlet" additionalName="M. Def." type="Armor">
-		<!-- M. Def. +5%, when equipped. -->
+		<!-- When equipped, M. Def. +5%. -->
 		<set name="icon" val="icon.Accessary_angel_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -611,7 +611,7 @@
 		</skills>
 	</item>
 	<item id="32753" name="Demon Circlet" additionalName="P. Atk." type="Armor">
-		<!-- P. Atk. +5%, when equipped. -->
+		<!-- When equipped, P. Atk. +5%. -->
 		<set name="icon" val="icon.Accessary_demon_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="10" />
@@ -627,7 +627,7 @@
 		</skills>
 	</item>
 	<item id="32754" name="Demon Circlet" additionalName="M. Atk." type="Armor">
-		<!-- M. Atk. +10%, when equipped. -->
+		<!-- When equipped, M. Atk. +10%. -->
 		<set name="icon" val="icon.Accessary_demon_circlet_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1078,7 +1078,7 @@
 		</skills>
 	</item>
 	<item id="32782" name="Weapon Pouch - D" type="EtcItem">
-		<!-- Pouch containing D-grade weapon. -->
+		<!-- Double-click to obtain a D-grade weapon. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1092,7 +1092,7 @@
 		</skills>
 	</item>
 	<item id="32783" name="Weapon Pouch - C" type="EtcItem">
-		<!-- Pouch containing C-grade weapon. -->
+		<!-- Double-click to obtain a C-grade weapon. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1106,7 +1106,7 @@
 		</skills>
 	</item>
 	<item id="32784" name="Weapon Pouch - B" type="EtcItem">
-		<!-- Pouch containing B-grade weapon. -->
+		<!-- Double-click to obtain a B-grade weapon. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1120,7 +1120,7 @@
 		</skills>
 	</item>
 	<item id="32785" name="Weapon Pouch - A" type="EtcItem">
-		<!-- Contains an A-grade weapon. -->
+		<!-- Double-click to obtain an A-grade weapon. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1190,7 +1190,7 @@
 		</skills>
 	</item>
 	<item id="32790" name="Armor Pouch - D" type="EtcItem">
-		<!-- Pouch containing D-grade armor Fragment. -->
+		<!-- Double-click to obtain D-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1204,7 +1204,7 @@
 		</skills>
 	</item>
 	<item id="32791" name="Armor Pouch - C" type="EtcItem">
-		<!-- Pouch containing C-grade armor Fragment. -->
+		<!-- Double-click to obtain C-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1218,7 +1218,7 @@
 		</skills>
 	</item>
 	<item id="32792" name="Armor Pouch - B" type="EtcItem">
-		<!-- Pouch containing B-grade armor Fragment. -->
+		<!-- Double-click to obtain B-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1232,7 +1232,7 @@
 		</skills>
 	</item>
 	<item id="32793" name="Armor Pouch - A" type="EtcItem">
-		<!-- Contains an A-grade armor piece. -->
+		<!-- Double-click to obtain A-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1260,7 +1260,7 @@
 		</skills>
 	</item>
 	<item id="32795" name="Armor Pouch - R" type="EtcItem">
-		<!-- Pouch containing R-grade armor Fragment. -->
+		<!-- Double-click to obtain R-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1274,7 +1274,7 @@
 		</skills>
 	</item>
 	<item id="32796" name="Armor Pouch - R95" type="EtcItem">
-		<!-- Pouch containing R95-grade armor Fragment. -->
+		<!-- Double-click to obtain R95-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -1288,7 +1288,7 @@
 		</skills>
 	</item>
 	<item id="32797" name="Armor Pouch - R99" type="EtcItem">
-		<!-- Pouch containing R99-grade armor Fragment. -->
+		<!-- Double-click to obtain R99-grade armor. -->
 		<set name="icon" val="icon.etc_pouch_gold_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="commissionItemType" val="OTHER_ITEM" />

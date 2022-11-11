@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="26326" name="Lineage II Baseball Uniform" type="Armor">
-		<!-- Lineage II baseball uniform. When equipped, armor is removed and cannot be used. Hair accessories, weapons, and magic armor are not removed. -->
+		<!-- Lineage 2 baseball uniform. When equipped, changes the appearance of your armor, but not that of headgear, head accessories and weapons. -->
 		<set name="icon" val="icon.london_olympic_bikini" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -12,7 +12,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="26327" name="Lineage II Baseball Cap" type="Armor">
-		<!-- Lineage II baseball cap. -->
+		<!-- Lineage 2 baseball cap. <font color=eeaa22>Equipped in the left head accessory slot.</font> -->
 		<set name="icon" val="icon.accessory_mining_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -22,7 +22,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="26354" name="Jewel - Not Available" additionalName="Not Available" type="EtcItem">
-		<!-- Used for purchase in Game Store. -->
+		<!-- The item is not available. Used for purchase in Game Store. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="material" val="LEATHER" />
 		<set name="is_tradable" val="false" />

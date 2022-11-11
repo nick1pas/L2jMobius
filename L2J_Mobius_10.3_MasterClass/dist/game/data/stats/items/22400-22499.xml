@@ -406,7 +406,7 @@
 		<set name="material" val="CLOTH" />
 	</item>
 	<item id="22425" name="Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- Enchant success rate +10%. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- Enchant success rate +10% to base success rate. For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_scrl_of_ench_wp_s_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -423,7 +423,7 @@
 		</skills>
 	</item>
 	<item id="22426" name="Ancient Crystal: Enchant R-grade Weapon" type="EtcItem">
-		<!-- Enchant success rate +10%. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). The enchanting is safe. Cannot be used for weapons enchanted to +15 or higher. -->
+		<!-- Enchant success rate +10% to base success rate. In case of failure enchant value remains the same. For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with weapons enchanted to +16 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_ancient_cry_of_ench_wp_s_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -440,7 +440,7 @@
 		</skills>
 	</item>
 	<item id="22427" name="Sacred Crystal: Enchant R-grade Weapon" type="EtcItem">
-		<!-- Enchant success rate: 100%. For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used for common weapons enchanted to +12 or higher and for magical weapons enchanted to +7 or higher. -->
+		<!-- Enchant success rate: 100%. For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with common weapons enchanted to +12 or higher and with magic weapons enchanted to +7 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_holy_cry_of_ench_wp_s_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_WP" />
@@ -459,7 +459,7 @@
 		</skills>
 	</item>
 	<item id="22428" name="Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- Enchant success rate +10%. For R-grade armor and accessories. P. Def. +2. When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +30 or higher. -->
+		<!-- Enchant success rate +10% to base success rate. For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_scrl_of_ench_am_s_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -476,7 +476,7 @@
 		</skills>
 	</item>
 	<item id="22429" name="Ancient Crystal: Enchant R-grade Armor" type="EtcItem">
-		<!-- Enchant success rate +10%. If enchanting is failed, the enchant value remains the same. When R-grade armor or accessories are enchanted, P. Def. +2. When enchanted to +4 or higher, P. Def. is greatly increased. Can be safely enchanted up to +3. When enchanted to +4 or higher, HP is gradually increased with each enchant value. Cannot be used on armor above +16. -->
+		<!-- Enchant success rate +10% to base success rate. In case of failure, the enchant value is not reset. For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +16 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_ancient_cry_of_ench_am_s_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -493,7 +493,7 @@
 		</skills>
 	</item>
 	<item id="22430" name="Sacred Crystal: Enchant R-grade Armor" type="EtcItem">
-		<!-- Enchant success rate: 100%. For R-grade armor and accessories. P. Def. +2. When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +7 or higher. -->
+		<!-- Enchant success rate: 100%. For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +7 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_holy_cry_of_ench_am_s_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="ENCHT_ATTR_ANCIENT_CRYSTAL_ENCHANT_AM" />
@@ -562,7 +562,7 @@
 		</skills>
 	</item>
 	<item id="22434" name="Blessed R-grade Spiritshot" type="EtcItem">
-		<!-- The power of a higher-level spirit is bestowed upon a weapon, temporarily increasing its M. Atk. significantly. Can be used with an R-grade weapon. -->
+		<!-- Increases weapons' magic power. Used with R-grade weapons. -->
 		<set name="icon" val="icon.blessed_spiritshot_r_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
 		<set name="immediate_effect" val="true" />
@@ -974,7 +974,7 @@
 		</capsuled_items>
 	</item>
 	<item id="22458" name="Package: Appearance/ Restoration Stone: R-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 R-grade Weapon Appearance Stone and 1 R-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: R-grade Weapon and 1 Restoration Stone: R-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -987,12 +987,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22402" min="1" max="1" chance="100" /> <!-- R-grade Weapon Appearance Stone -->
+			<item id="22402" min="1" max="1" chance="100" /> <!-- Appearance Stone: R-grade Weapon -->
 			<item id="22414" min="1" max="1" chance="100" /> <!-- R-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22459" name="Package: Appearance/ Restoration Stone: S-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 S-grade Weapon Appearance Stone and 1 S-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: S-grade Weapon and 1 Restoration Stone: S-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1005,12 +1005,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22403" min="1" max="1" chance="100" /> <!-- S-grade Weapon Appearance Stone -->
+			<item id="22403" min="1" max="1" chance="100" /> <!-- Appearance Stone: S-grade Weapon -->
 			<item id="22415" min="1" max="1" chance="100" /> <!-- S-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22460" name="Package: Appearance/ Restoration Stone: A-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 A-grade Weapon Appearance Stone and 1 A-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: A-grade Weapon and 1 Restoration Stone: A-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1023,12 +1023,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22404" min="1" max="1" chance="100" /> <!-- A-grade Weapon Appearance Stone -->
+			<item id="22404" min="1" max="1" chance="100" /> <!-- Appearance Stone: A-grade Weapon -->
 			<item id="22416" min="1" max="1" chance="100" /> <!-- A-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22461" name="Package: Appearance/ Restoration Stone: B-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 B-grade Weapon Appearance Stone and 1 B-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: B-grade Weapon and 1 Restoration Stone: B-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1041,12 +1041,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22405" min="1" max="1" chance="100" /> <!-- B-grade Weapon Appearance Stone -->
+			<item id="22405" min="1" max="1" chance="100" /> <!-- Appearance Stone: B-grade Weapon -->
 			<item id="22417" min="1" max="1" chance="100" /> <!-- B-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22462" name="Package: Appearance/ Restoration Stone: C-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 C-grade Weapon Appearance Stone and 1 C-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: C-grade Weapon and 1 Restoration Stone: C-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1059,12 +1059,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22406" min="1" max="1" chance="100" /> <!-- C-grade Weapon Appearance Stone -->
+			<item id="22406" min="1" max="1" chance="100" /> <!-- Appearance Stone: C-grade Weapon -->
 			<item id="22418" min="1" max="1" chance="100" /> <!-- C-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22463" name="Package: Appearance/ Restoration Stone: D-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 D-grade Weapon Appearance Stone and 1 D-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Appearance Stone: D-grade Weapon and 1 Restoration Stone: D-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1077,12 +1077,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22407" min="1" max="1" chance="100" /> <!-- D-grade Weapon Appearance Stone -->
+			<item id="22407" min="1" max="1" chance="100" /> <!-- Appearance Stone: D-grade Weapon -->
 			<item id="22419" min="1" max="1" chance="100" /> <!-- D-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22464" name="Package: Blessed Appearance/ Restoration Stone: R-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 Blessed R-grade Weapon Appearance Stone and 1 R-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Blessed Appearance Stone: R-grade Weapon and 1 Restoration Stone: R-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1095,12 +1095,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22408" min="1" max="1" chance="100" /> <!-- Blessed R-grade Weapon Appearance Stone -->
+			<item id="22408" min="1" max="1" chance="100" /> <!-- Blessed Appearance Stone: R-grade Weapon -->
 			<item id="22414" min="1" max="1" chance="100" /> <!-- R-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22465" name="Package: Blessed Appearance/ Restoration Stone: S-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 Blessed S-grade Weapon Appearance Stone and 1 S-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Blessed Appearance Stone: S-grade Weapon and 1 Restoration Stone: S-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1113,12 +1113,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22409" min="1" max="1" chance="100" /> <!-- Blessed S-grade Weapon Appearance Stone -->
+			<item id="22409" min="1" max="1" chance="100" /> <!-- Blessed Appearance Stone: S-grade Weapon -->
 			<item id="22415" min="1" max="1" chance="100" /> <!-- S-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22466" name="Package: Blessed Appearance/ Restoration Stone: A-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 Blessed A-grade Weapon Appearance Stone and 1 A-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Blessed Appearance Stone: A-grade Weapon and 1 Restoration Stone: A-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1131,12 +1131,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22410" min="1" max="1" chance="100" /> <!-- Blessed A-grade Weapon Appearance Stone -->
+			<item id="22410" min="1" max="1" chance="100" /> <!-- Blessed Appearance Stone: A-grade Weapon -->
 			<item id="22416" min="1" max="1" chance="100" /> <!-- A-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22467" name="Package: Blessed Appearance/ Restoration Stone: B-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 Blessed B-grade Weapon Appearance Stone and 1 B-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Blessed Appearance Stone: B-grade Weapon and 1 Restoration Stone: B-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1149,12 +1149,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22411" min="1" max="1" chance="100" /> <!-- Blessed B-grade Weapon Appearance Stone -->
+			<item id="22411" min="1" max="1" chance="100" /> <!-- Blessed Appearance Stone: B-grade Weapon -->
 			<item id="22417" min="1" max="1" chance="100" /> <!-- B-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22468" name="Package: Blessed Appearance/ Restoration Stone: C-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 Blessed C-grade Weapon Appearance Stone and 1 C-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Blessed Appearance Stone: C-grade Weapon and 1 Restoration Stone: C-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1167,12 +1167,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22412" min="1" max="1" chance="100" /> <!-- Blessed C-grade Weapon Appearance Stone -->
+			<item id="22412" min="1" max="1" chance="100" /> <!-- Blessed Appearance Stone: C-grade Weapon -->
 			<item id="22418" min="1" max="1" chance="100" /> <!-- C-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>
 	<item id="22469" name="Package: Blessed Appearance/ Restoration Stone: D-grade Weapon (1 pc.)" type="EtcItem">
-		<!-- Double-click to obtain 1 Blessed D-grade Weapon Appearance Stone and 1 D-grade Weapon Restoration Stone. -->
+		<!-- Double-click to obtain 1 Blessed Appearance Stone: D-grade Weapon and 1 Restoration Stone: D-grade Weapon. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="weight" val="100" />
 		<set name="is_tradable" val="false" />
@@ -1185,7 +1185,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="22413" min="1" max="1" chance="100" /> <!-- Blessed D-grade Weapon Appearance Stone -->
+			<item id="22413" min="1" max="1" chance="100" /> <!-- Blessed Appearance Stone: D-grade Weapon -->
 			<item id="22419" min="1" max="1" chance="100" /> <!-- D-grade Weapon Restoration Stone -->
 		</capsuled_items>
 	</item>

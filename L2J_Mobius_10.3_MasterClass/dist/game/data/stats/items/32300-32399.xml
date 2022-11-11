@@ -189,7 +189,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="32316" name="Elixir of Blessing" type="EtcItem">
-		<!-- For 30 min., it receives the following level 1 effects: Horn Melody, Pipe Organ Melody, Guitar Melody, and Drum Melody. Can be used at level 85 or above. Cooldown is 2 min. -->
+		<!-- For 30 minutes, provides the effects of Musician's Melody Lv. 2. Can be used only by characters above level 85. Cooldown is 2 min. -->
 		<set name="icon" val="icon.etc_super_potion_i03" />
 		<set name="weight" val="5" />
 		<set name="is_stackable" val="true" />
@@ -898,7 +898,7 @@
 		</stats>
 	</item>
 	<item id="32351" name="Fantasy Fleuret" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive Weapon: Bastard Sword Conversion. When enchanted to +4 or higher, has a chance to increase P./ M. Atk., Received Healing, and decrease Skill MP consumption for you and your party members after a critical attack. -->
+		<!-- Kamael-exclusive Weapon: Bastard Sword Conversion When enchanted to +4 or higher, has a chance to increase P./ M. Atk., Received Healing, and decrease Skill MP consumption for you and your party members after a critical attack. -->
 		<set name="icon" val="icon.weapon_rapier_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1475,7 +1475,7 @@
 		</stats>
 	</item>
 	<item id="32381" name="Fantasy Soulfire Dirk" additionalName="Not used" type="Weapon">
-		<!-- Bestows one of the following functions: Magic Hold, Magic Silence or Mana Up. -->
+		<!-- Bestows one of the following special properties: Magic Hold, Silence, Mana Up. -->
 		<set name="icon" val="icon.weapon_dagger_of_magicflame_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1604,7 +1604,7 @@
 		</stats>
 	</item>
 	<item id="32386" name="Fantasy Chevalier Rapier" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive Weapon: Shamshir. Bestows one of the following functions: Guidance, Back Blow or Risk Evasion. When enchanted to +4 or higher, it has a chance to increase P./ M. Atk., Received Healing, and decrease Skill MP consumption for you and your party members after a critical attack. -->
+		<!-- Kamael-exclusive weapon: Shamshir Bestows one of the following abilities: Guidance, Backstab or Rsk. Evasion. When enchanted to +4 or higher, has a chance of increasing P./ M. Atk., Received Healing, and decreasing Skill MP Consumption for you and your party members after a critical attack. -->
 		<set name="icon" val="icon.weapon_soldat_estoc_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1633,7 +1633,7 @@
 		</stats>
 	</item>
 	<item id="32387" name="Fantasy Blinzlasher" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive Weapon: Caliburs. Bestows one of the following functions: Guidance, Focus or Critical Damage. When enchanted to +4 or higher, it has a chance to increase P./ M. Atk., Received Healing, and decrease Skill MP consumption for you and your party members after a critical attack. -->
+		<!-- Kamael-exclusive Weapon: Caliburs Bestows one of the following functions: Guidance, Focus or Critical Damage. When enchanted to +4 or higher, it has a chance to increase P./ M. Atk., Received Healing, and decrease Skill MP consumption for you and your party members after a critical attack. -->
 		<set name="icon" val="icon.weapon_blink_slasher_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1687,7 +1687,7 @@
 		</stats>
 	</item>
 	<item id="32389" name="Fantasy Schlager" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive weapon: Flamberge conversion. Bestows one of the following functions: Critical Damage, Focus or Decrease Weight. -->
+		<!-- Kamael-exclusive weapon: Flamberge conversion Bestows one of the following functions: Critical Damage, Focus or Decrease Weight. -->
 		<set name="icon" val="icon.weapon_schlaeger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1713,7 +1713,7 @@
 		</stats>
 	</item>
 	<item id="32390" name="Fantasy Immortal Edge" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive Weapon: Pa'agrian Sword. Bestows one of the following functions: Focus, Health or Critical Drain. -->
+		<!-- Kamael-exclusive weapon: Pa'agrio Sword Bestows one of the following functions: Focus, Health or Critical Drain. -->
 		<set name="icon" val="icon.weapon_invincible_blade_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1739,7 +1739,7 @@
 		</stats>
 	</item>
 	<item id="32391" name="Fantasy Elemental Bow" additionalName="Not used" type="Weapon">
-		<!-- Bestows one of the following functions: Guidance, Miser or Quick Recovery. -->
+		<!-- Bestows one of the following special properties: Guidance, Miser, Quick Recovery. -->
 		<set name="icon" val="icon.weapon_elemental_bow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1767,7 +1767,7 @@
 		</stats>
 	</item>
 	<item id="32392" name="Fantasy Akat Longbow" additionalName="Not used" type="Weapon">
-		<!-- Bestows one of the following functions: Guidance, Evasion or Miser. -->
+		<!-- Bestows one of the following special properties: Guidance, Evasion, Miser. -->
 		<set name="icon" val="icon.weapon_akat_long_bow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1795,7 +1795,7 @@
 		</stats>
 	</item>
 	<item id="32393" name="Fantasy Ballista" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive Weapon: Elemental Bow. Bestows one of the following functions: Guidance, Miser or Quick Recovery. -->
+		<!-- Kamael-exclusive Weapon: Elemental Bow Bestows one of the following functions: Guidance, Miser or Quick Recovery. -->
 		<set name="icon" val="icon.weapon_arbalest_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1822,7 +1822,7 @@
 		</stats>
 	</item>
 	<item id="32394" name="Fantasy Tathlum" additionalName="Not used" type="Weapon">
-		<!-- Kamael-exclusive Weapon: Akat Longbow. Bestows one of the following functions: Guidance, Evasion or Miser. -->
+		<!-- Kamael-exclusive Weapon: Akat Longbow Bestows one of the following functions: Guidance, Evasion or Miser. -->
 		<set name="icon" val="icon.weapon_taslam_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1849,7 +1849,7 @@
 		</stats>
 	</item>
 	<item id="32395" name="Fantasy Stick of Eternity" additionalName="Not used" type="Weapon">
-		<!-- Bestows one of the following effects: Empower, Rsk. Evasion, or Blessed Body. -->
+		<!-- Bestows one of the following special properties: Empower, Rsk. Evasion, Magic Blessed Body. -->
 		<set name="icon" val="icon.weapon_stick_of_eternity_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1876,7 +1876,7 @@
 		</stats>
 	</item>
 	<item id="32396" name="Fantasy Dwarven War Hammer" additionalName="Not used" type="Weapon">
-		<!-- Bestows one of the following functions: Anger, Health or Haste. -->
+		<!-- Bestows one of the following special properties: Anger, Health, Haste. -->
 		<set name="icon" val="icon.weapon_dwarven_warhammer_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rhand" />
@@ -1928,7 +1928,7 @@
 		</stats>
 	</item>
 	<item id="32398" name="Fantasy Cursed Staff" additionalName="Not used" type="Weapon">
-		<!-- Bestows one of the following functions: Magic Hold, Magic Poison, or Magic Weakness. -->
+		<!-- Bestows one of the following special properties: Magic Hold, Poison, Magic Weakness. -->
 		<set name="icon" val="icon.weapon_cursed_staff_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -1955,7 +1955,7 @@
 		</stats>
 	</item>
 	<item id="32399" name="Fantasy Inferno Staff" additionalName="Not used" type="Weapon">
-		<!-- Applies one of the following properties: Silence, Acumen or Paralysis. -->
+		<!-- Applies one of the following special properties: Silence, Acumen, Paralysis. -->
 		<set name="icon" val="icon.weapon_inferno_staff_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />

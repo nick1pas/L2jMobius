@@ -301,7 +301,7 @@
 		</skills>
 	</item>
 	<item id="17623" name="Earth Wyrm's Heart Ring" type="Armor">
-		<!-- MP +38, P./ M. Debuff Resistance +15, MP Recovery Rate +3, Critical Damage for standard attacks +20%, P. Accuracy +5, Infection Atk. Rate and Resistance +50%, Danger Zone/ Confusion Resistance +20%, Atk. Spd./ Casting Spd. +6%, Wind/ Water Resistance +30. Effects of two identical rings do not stack. Cannot be used in the Olympiad. <Active skills>. Heartbeat Accelerate: For 5 min., party members' Atk. Spd./ Casting Spd. +5%, Vampiric Rage effect +2% (cooldown: 2 h.). Blue Blood: Removes Infection debuffs (cooldown: 2 h.). -->
+		<!-- MP +38, P./ M. Debuff Resistance +15, MP Recovery Rate +3, Critical Damage for basic attacks +20%, P. Accuracy +5, Infection Atk. Rate and Resistance +50%, Danger Zone/ Confusion Resistance +20%, Atk. Spd./ Casting Spd. +6%, Wind/ Water Resistance +30. Effects of two identical rings do not stack. Can be crystallized to obtain Selenite. <Active skills> Heartbeat Accelerate: For 5 min., party members' Atk. Spd./ Casting Spd. +5%, Vampiric Rage effect +2% (cooldown: 2 h.). Blue Blood: Removes Infection debuffs (cooldown: 2 h.). -->
 		<set name="icon" val="icon.ring_earthworm_heart" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -334,7 +334,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="17625" name="Giant's STR Dye Lv. 1" additionalName="STR +3, DEX -2" type="EtcItem">
-		<!-- STR +3, DEX -2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- STR +3, DEX -2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_1_dye_str" />
 		<set name="weight" val="150" />
 		<set name="price" val="122075" />
@@ -345,7 +345,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17626" name="Giant's DEX Dye Lv. 1" additionalName="DEX +3, CON -2" type="EtcItem">
-		<!-- DEX +3, CON -2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- DEX +3, CON -2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_1_dye_dex" />
 		<set name="weight" val="150" />
 		<set name="price" val="122075" />
@@ -356,7 +356,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17627" name="Giant's CON Dye Lv. 1" additionalName="CON +3, STR -2" type="EtcItem">
-		<!-- CON +3, STR -2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CON +3, STR -2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_1_dye_con" />
 		<set name="weight" val="150" />
 		<set name="price" val="122075" />
@@ -367,7 +367,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17628" name="Giant's INT Dye Lv. 1" additionalName="INT +3, WIT -2" type="EtcItem">
-		<!-- INT +3, WIT -2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- INT +3, WIT -2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_1_dye_int" />
 		<set name="weight" val="150" />
 		<set name="price" val="122075" />
@@ -378,7 +378,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17629" name="Giant's WIT Dye Lv. 1" additionalName="WIT +3, MEN -2" type="EtcItem">
-		<!-- WIT +3, MEN -2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- WIT +3, MEN -2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_1_dye_wit" />
 		<set name="weight" val="150" />
 		<set name="price" val="122075" />
@@ -389,7 +389,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17630" name="Giant's MEN Dye Lv. 1" additionalName="MEN +3, INT -2" type="EtcItem">
-		<!-- MEN +3, INT -2. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- MEN +3, INT -2. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv1_1_dye_men" />
 		<set name="weight" val="150" />
 		<set name="price" val="122075" />
@@ -532,7 +532,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17643" name="Giant's STR Dye Lv. 2" additionalName="STR +4, DEX -3" type="EtcItem">
-		<!-- STR +4, DEX -3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- STR +4, DEX -3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_1_dye_str" />
 		<set name="weight" val="150" />
 		<set name="price" val="274425" />
@@ -543,7 +543,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17644" name="Giant's DEX Dye Lv. 2" additionalName="DEX +4, CON -3" type="EtcItem">
-		<!-- DEX +4, CON -3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- DEX +4, CON -3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_1_dye_dex" />
 		<set name="weight" val="150" />
 		<set name="price" val="274425" />
@@ -554,7 +554,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17645" name="Giant's CON Dye Lv. 2" additionalName="CON +4, STR -3" type="EtcItem">
-		<!-- CON +4, STR -3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CON +4, STR -3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_1_dye_con" />
 		<set name="weight" val="150" />
 		<set name="price" val="274425" />
@@ -565,7 +565,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17646" name="Giant's INT Dye Lv. 2" additionalName="INT +4, WIT -3" type="EtcItem">
-		<!-- INT +4, WIT -3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- INT +4, WIT -3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_1_dye_int" />
 		<set name="weight" val="150" />
 		<set name="price" val="274425" />
@@ -576,7 +576,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17647" name="Giant's WIT Dye Lv. 2" additionalName="WIT +4, MEN -3" type="EtcItem">
-		<!-- WIT +4, MEN -3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- WIT +4, MEN -3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_1_dye_wit" />
 		<set name="weight" val="150" />
 		<set name="price" val="274425" />
@@ -587,7 +587,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17648" name="Giant's MEN Dye Lv. 2" additionalName="MEN +4, INT -3" type="EtcItem">
-		<!-- MEN +4, INT -3. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- MEN +4, INT -3. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_1_dye_men" />
 		<set name="weight" val="150" />
 		<set name="price" val="274425" />
@@ -642,7 +642,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17653" name="Ancient WIT Dye Lv. 2" additionalName="WIT +4, MEN -3, Wind Resistance +10" type="EtcItem">
-		<!-- WIT +4, MEN -3, Wind Resistance +10. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- WIT +4, MEN -3, Wind Resistance +10. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv2_2_dye_wit" />
 		<set name="weight" val="150" />
 		<set name="price" val="374025" />
@@ -730,7 +730,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17661" name="Giant's STR Dye Lv. 3" additionalName="STR +5, DEX -4" type="EtcItem">
-		<!-- STR +5, DEX -4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- STR +5, DEX -4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_1_dye_str" />
 		<set name="weight" val="150" />
 		<set name="price" val="629500" />
@@ -741,7 +741,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17662" name="Giant's DEX Dye Lv. 3" additionalName="DEX +5, CON -4" type="EtcItem">
-		<!-- DEX +5, CON -4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- DEX +5, CON -4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_1_dye_dex" />
 		<set name="weight" val="150" />
 		<set name="price" val="629500" />
@@ -752,7 +752,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17663" name="Giant's CON Dye Lv. 3" additionalName="CON +5, STR -4" type="EtcItem">
-		<!-- CON +5, STR -4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CON +5, STR -4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_1_dye_con" />
 		<set name="weight" val="150" />
 		<set name="price" val="629500" />
@@ -763,7 +763,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17664" name="Giant's INT Dye Lv. 3" additionalName="INT +5, WIT -4" type="EtcItem">
-		<!-- INT +5, WIT -4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- INT +5, WIT -4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_1_dye_int" />
 		<set name="weight" val="150" />
 		<set name="price" val="629500" />
@@ -774,7 +774,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17665" name="Giant's WIT Dye Lv. 3" additionalName="WIT +5, MEN -4" type="EtcItem">
-		<!-- WIT +5, MEN -4. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- WIT +5, MEN -4. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv3_1_dye_wit" />
 		<set name="weight" val="150" />
 		<set name="price" val="629500" />
@@ -1126,7 +1126,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17697" name="Giant's STR Dye Lv. 5" additionalName="STR +5" type="EtcItem">
-		<!-- STR +5. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- STR +5. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv5_1_dye_str" />
 		<set name="weight" val="150" />
 		<set name="price" val="8971075" />
@@ -1137,7 +1137,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17698" name="Giant's DEX Dye Lv. 5" additionalName="DEX +5" type="EtcItem">
-		<!-- DEX +5. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- DEX +5. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv5_1_dye_dex" />
 		<set name="weight" val="150" />
 		<set name="price" val="8971075" />
@@ -1148,7 +1148,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="17699" name="Giant's CON Dye Lv. 5" additionalName="CON +5" type="EtcItem">
-		<!-- CON +5. Collect 10 units and take them to the Dye Merchant in town to get a symbol that boosts your abilities. Requirements: all classes after the Awakening and the 3rd Liberation. -->
+		<!-- CON +5. Collect 10 units and take them to Dye Merchant to get a tattoo that boosts your stats. Requirements: all classes after the Awakening and the 3rd Liberation. -->
 		<set name="icon" val="icon.lv5_1_dye_con" />
 		<set name="weight" val="150" />
 		<set name="price" val="8971075" />

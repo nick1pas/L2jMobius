@@ -13,7 +13,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="46201" name="Halloween Weapon Appearance Stone" additionalName="7-day" type="EtcItem">
-		<!-- Changes the weapon appearance to that of Halloween weapon. Can be used on shields and sigils. Note!. The appearance is reset when the Change Weapon skill is used. -->
+		<!-- Changes the weapon appearance to that of Halloween weapon. Can be used on shields and sigils. Note! The appearance is reset when the Change Weapon skill is used. -->
 		<set name="icon" val="icon.shape_shifting_sword_i00" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -553,7 +553,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="46238" name="Capsule: +8 Helios Buster" additionalName="Not used" type="EtcItem">
-		<!-- Double-click to get a +8 enchanted Helios Stormer. -->
+		<!-- Double-click to get a +8 enchanted Helios Dual Blunt Weapon. -->
 		<set name="icon" val="icon.weapon_crabel_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -562,7 +562,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="46239" name="Capsule: +8 Helios Caster" additionalName="Not used" type="EtcItem">
-		<!-- Double-click to get a +8 enchanted Helios Thrower. -->
+		<!-- Double-click to get a +8 enchanted Helios Avenger. -->
 		<set name="icon" val="icon.weapon_castron_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -571,7 +571,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="46240" name="Capsule: +8 Helios Retributer" additionalName="Not used" type="EtcItem">
-		<!-- Double-click to get a +8 enchanted Helios Shooter. -->
+		<!-- Double-click to obtain Helios Retributer enchanted to +8. -->
 		<set name="icon" val="icon.weapon_stilla_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -580,7 +580,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="46241" name="Capsule: +4 Eternal Heavy Armor" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Eternal Heavy Armor set. -->
+		<!-- Double-click to obtain Eternal heavy armor set enchanted to +4. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -590,7 +590,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="46242" name="Capsule: +4 Eternal Light Armor" additionalName="Event" type="EtcItem">
-		<!-- Double-click to get a +4 enchanted Eternal Light Armor set. -->
+		<!-- Double-click to obtain Eternal light armor set enchanted to +4. -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -706,7 +706,7 @@
 		<set name="material" val="FISH" />
 	</item>
 	<item id="46252" name="Venezia Rune" type="EtcItem">
-		<!-- When stored in the inventory, acquired XP/ SP +22%. Only for characters below level 99. -->
+		<!-- When in inventory, acquired XP/ SP +22%. Required level: 1-99. -->
 		<set name="icon" val="icon.skill19226" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -789,7 +789,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="46260" name="Dark Knight Suit" type="Armor">
-		<!-- Dark Knight suit. -->
+		<!-- Dark Knight Suit -->
 		<set name="icon" val="icon.dark_kninght" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="alldress" />
@@ -800,7 +800,7 @@
 		</stats>
 	</item>
 	<item id="46261" name="Ninja Outfit" type="Armor">
-		<!-- Ninja outfit. -->
+		<!-- Ninja Outfit -->
 		<set name="icon" val="BranchSys3.icon1.g_co_ninja_u" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="alldress" />
@@ -811,7 +811,7 @@
 		</stats>
 	</item>
 	<item id="46262" name="Metal Suit" type="Armor">
-		<!-- Metal suit. -->
+		<!-- Metal Suit -->
 		<set name="icon" val="BranchSys3.icon1.g_co_sf_u" />
 		<set name="armor_type" val="HEAVY" />
 		<set name="bodypart" val="alldress" />
@@ -850,7 +850,7 @@
 		</skills>
 	</item>
 	<item id="46265" name="Freya's Wish-filled Gift" type="EtcItem">
-		<!-- Double-click to obtain 1 random rare item. -->
+		<!-- Double-click to obtain a rare and valuable item. -->
 		<set name="icon" val="icon.freya_box_i01" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -948,11 +948,11 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="24365" min="1" max="1" chance="100" /> <!-- Dark Assassin Suit -->
-			<item id="46270" min="1" max="1" chance="100" /> <!-- Dark Knight Suit -->
-			<item id="46271" min="1" max="1" chance="100" /> <!-- Ninja Outfit -->
-			<item id="46272" min="1" max="1" chance="100" /> <!-- Metal Suit -->
-			<item id="46189" min="1" max="1" chance="100" /> <!-- Vampiric Style -->
+			<item id="24365" min="1" max="1" chance="100" /> <!-- Appearance Stone: Dark Assassin Suit -->
+			<item id="46270" min="1" max="1" chance="100" /> <!-- Appearance Stone: Dark Knight Suit -->
+			<item id="46271" min="1" max="1" chance="100" /> <!-- Appearance Stone: Ninja Outfit -->
+			<item id="46272" min="1" max="1" chance="100" /> <!-- Appearance Stone: Metal Suit -->
+			<item id="46189" min="1" max="1" chance="100" /> <!-- Appearance Stone: Vampiric Style -->
 		</capsuled_items>
 	</item>
 	<item id="46274" name="Wind Vitality Tonic" type="EtcItem">
@@ -965,7 +965,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="46275" name="Package: Vampiric Style Appearance Stone" type="EtcItem">
-		<!-- Double-click to obtain a Vampiric Style Appearance Stone and a Vampiric Hair Accessory Appearance Stone. -->
+		<!-- Double-click to obtain Appearance Stone: Vampiric Style and Appearance Stone: Vampire Head Accessory. -->
 		<set name="icon" val="icon.ev_10th_present2" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -974,12 +974,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="46189" min="1" max="1" chance="100" /> <!-- Vampiric Style Appearance Stone -->
-			<item id="23892" min="1" max="1" chance="100" /> <!-- Vampiric Hair Accessory Appearance Stone -->
+			<item id="46189" min="1" max="1" chance="100" /> <!-- Appearance Stone: Vampiric Style -->
+			<item id="23892" min="1" max="1" chance="100" /> <!-- Appearance Stone: Vampire Head Accessory -->
 		</capsuled_items>
 	</item>
 	<item id="46276" name="Package: Appearance Stone: Ninja Outfit" type="EtcItem">
-		<!-- Double-click to obtain a Ninja Outfit Appearance Stone and a Ninja Hair Accessory Appearance Stone. -->
+		<!-- Double-click to obtain Appearance Stone: Ninja Outfit and Appearance Stone: Ninja Head Accessory. -->
 		<set name="icon" val="icon.ev_10th_present2" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -988,12 +988,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="46271" min="1" max="1" chance="100" /> <!-- Ninja Outfit Appearance Stone -->
-			<item id="46279" min="1" max="1" chance="100" /> <!-- Ninja Hair Accessory Appearance Stone -->
+			<item id="46271" min="1" max="1" chance="100" /> <!-- Appearance Stone: Ninja Outfit -->
+			<item id="46279" min="1" max="1" chance="100" /> <!-- Appearance Stone: Ninja Head Accessory -->
 		</capsuled_items>
 	</item>
 	<item id="46277" name="Package: Metal Suit Appearance Stone" type="EtcItem">
-		<!-- Double-click to obtain a Metal Suit Appearance Stone and a Metal Suit Hair Accessory Appearance Stone. -->
+		<!-- Double-click to obtain Appearance Stone: Metal Suit and Appearance Stone: Metal Suit Head Accessory. -->
 		<set name="icon" val="icon.ev_10th_present2" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -1002,12 +1002,12 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="46272" min="1" max="1" chance="100" /> <!-- Metal Suit Appearance Stone -->
-			<item id="46280" min="1" max="1" chance="100" /> <!-- Metal Suit Hair Accessory Appearance Stone -->
+			<item id="46272" min="1" max="1" chance="100" /> <!-- Appearance Stone: Metal Suit -->
+			<item id="46280" min="1" max="1" chance="100" /> <!-- Appearance Stone: Metal Suit Head Accessory -->
 		</capsuled_items>
 	</item>
 	<item id="46278" name="Vampiric Hair Accessory Appearance Stone" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Vamparic style. Can be used only on hair accessories that take up 2 slots. -->
+		<!-- Changes the appearance of a head accessory into that of Vampire Head Accessory. Can only be used on head accessories equipped in 2 slots. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_HAIRACC_FIXED" />
@@ -1016,7 +1016,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="46279" name="Appearance Stone: Ninja Hair Accessory" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Ninja style. Can be used only on hair accessories that take up 2 slots. -->
+		<!-- Changes the appearance of a head accessory into that of Ninja Head Accessory. Can only be used on head accessories equipped in 2 slots. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1030,7 +1030,7 @@
 		</skills>
 	</item>
 	<item id="46280" name="Appearance Stone: Metal Suit Hair Accessory" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of a Metal Suit. Can be used only on hair accessories that take up 2 slots. -->
+		<!-- Changes the appearance of a head accessory into that of Metal Suit. Can only be used on head accessories equipped in 2 slots. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1155,7 +1155,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="46291" name="Christmas Talisman" additionalName="All Stats +2" type="Armor">
-		<!-- Event item. All Stats +2 when equipped. The effects of identical talismans do not stack. -->
+		<!-- Event item. All stats +2. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1170,7 +1170,7 @@
 		</skills>
 	</item>
 	<item id="46292" name="Christmas Talisman" additionalName="All Stats +1" type="Armor">
-		<!-- Event item. All Stats +1 when equipped. The effects of identical talismans do not stack. -->
+		<!-- Event item. All stats +1. Effects of two identical talismans do not stack. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1185,7 +1185,7 @@
 		</skills>
 	</item>
 	<item id="46293" name="Christmas Talisman - P. Skill Critical Damage" additionalName="1-hour" type="Armor">
-		<!-- Event item. P. Skill Critical Damage +7%. Effects of two identical talismans do not stack. Available for 1 h. -->
+		<!-- P. Skill Critical Damage +7%. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1203,7 +1203,7 @@
 		</skills>
 	</item>
 	<item id="46294" name="Christmas Talisman - M. Skill Critical Damage" additionalName="1-hour" type="Armor">
-		<!-- Event item. M. Skill Critical Damage +7%. Effects of two identical talismans do not stack. Available for 1 h. -->
+		<!-- M. Skill Critical Damage +7%. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1221,7 +1221,7 @@
 		</skills>
 	</item>
 	<item id="46295" name="Christmas Talisman - Ultimate Defense" additionalName="1-hour" type="Armor">
-		<!-- Event item. For 15 sec., P. Def. +5000, M. Def. +5000. Cooldown: 10 min. Effects of two identical talismans do not stack. Duration: 1 h. -->
+		<!-- For 15 sec., P. Def. +5000, M. Def. +5000. Cooldown: 10 min. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1239,7 +1239,7 @@
 		</skills>
 	</item>
 	<item id="46296" name="Christmas Talisman - Debuff Resistance" additionalName="1-hour" type="Armor">
-		<!-- Event item. For 15 sec., blocks up to 5 debuffs. Cooldown: 10 min. Effects of two identical talismans do not stack. Duration: 1 h. -->
+		<!-- For 15 sec., blocks up to 5 debuffs. Cooldown: 10 min. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1257,7 +1257,7 @@
 		</skills>
 	</item>
 	<item id="46297" name="Christmas Talisman - P. Atk." additionalName="1-hour" type="Armor">
-		<!-- Event item. P. Atk. +5%. Effects of two identical talismans do not stack. Available for 1 h. -->
+		<!-- P. Atk. +5%. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1275,7 +1275,7 @@
 		</skills>
 	</item>
 	<item id="46298" name="Christmas Talisman - M. Atk." additionalName="1-hour" type="Armor">
-		<!-- Event item. M. Atk. +5%. Effects of two identical talismans do not stack. -->
+		<!-- M. Atk. +5%. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1293,7 +1293,7 @@
 		</skills>
 	</item>
 	<item id="46299" name="Christmas Talisman - P. Def" additionalName="1-hour" type="Armor">
-		<!-- Event item. P. Def. +7%. Effects of two identical talismans do not stack. Available for 1 h. -->
+		<!-- P. Def. +7%. Effects of two identical talismans do not stack. Duration: 1 h. -->
 		<set name="icon" val="icon.etc_xmas_talisman_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />

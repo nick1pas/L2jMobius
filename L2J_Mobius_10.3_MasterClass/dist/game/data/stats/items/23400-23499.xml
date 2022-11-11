@@ -181,7 +181,7 @@
 		</skills>
 	</item>
 	<item id="23410" name="Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.scroll_of_enchant_weapon_i06" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -200,7 +200,7 @@
 		</skills>
 	</item>
 	<item id="23411" name="Scroll: Enchant S-grade Weapon" type="EtcItem">
-		<!-- For S-grade weapons. P. Atk. +5 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +6 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +10 for bows. M. Atk. +4 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For S-grade weapons P. Atk. +5 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +6 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +10 for bows M. Atk. +4 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i05" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -219,7 +219,7 @@
 		</skills>
 	</item>
 	<item id="23412" name="Scroll: Enchant A-grade Weapon" type="EtcItem">
-		<!-- For A-grade weapons. P. Atk. +4 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +5 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +8 for bows. M. Atk. +3 for all weapons. When enchanted to +4 or higher, P./ M. Atk. bonus is doubled. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For A-grade weapons P. Atk. +4 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +5 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +8 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i04" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -238,7 +238,7 @@
 		</skills>
 	</item>
 	<item id="23413" name="Scroll: Enchant B-grade Weapon" type="EtcItem">
-		<!-- For B-grade weapons. P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +6 for bows. M. Atk. +3 for all weapons. When enchanted to +4 or higher, P./ M. Atk. bonus is doubled. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For B-grade weapons P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +6 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i03" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -257,7 +257,7 @@
 		</skills>
 	</item>
 	<item id="23414" name="Scroll: Enchant C-grade Weapon" type="EtcItem">
-		<!-- For C-grade weapons. P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +6 for bows. M. Atk. +3 for all weapons. When enchanted to +4 or higher, P./ M. Atk. bonus is doubled. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For C-grade weapons P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +6 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_weapon_i02" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -295,7 +295,7 @@
 		</skills>
 	</item>
 	<item id="23416" name="Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- For R-grade armor and accessories. P. Def. +2. When enchanted to +4, P. Def. is greatly increased and HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +30 or higher. -->
+		<!-- For R-grade armor and accessories P. Def. +2 When enchanted to +4, P. Def. is greatly increased and HP is increased with each enchant value. The enchanting is safe up to +3. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.scroll_of_enchant_armor_i06" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -314,7 +314,7 @@
 		</skills>
 	</item>
 	<item id="23417" name="Scroll: Enchant S-grade Armor" type="EtcItem">
-		<!-- For S-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For S-grade armor and accessories P. Def. +1 Starting from +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. Cannot be used for weapons enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i05" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -333,7 +333,7 @@
 		</skills>
 	</item>
 	<item id="23418" name="Scroll: Enchant A-grade Armor" type="EtcItem">
-		<!-- For A-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3. Can be safely enchanted up to +3 (for ordinary armor) and up to +4 (for one-piece armor). HP is gradually increased with each enchant value starting from +4. Cannot be used on armor or accessories above +30. -->
+		<!-- For A-grade armor and accessories P. Def. +1 Starting from +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i04" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -352,7 +352,7 @@
 		</skills>
 	</item>
 	<item id="23419" name="Scroll: Enchant B-grade Armor" type="EtcItem">
-		<!-- For B-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3. Can be safely enchanted up to +3 (for ordinary armor) and up to +4 (for one-piece armor). HP is gradually increased with each enchant value starting from +4. Cannot be used on armor or accessories above +30. -->
+		<!-- For B-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i03" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -371,7 +371,7 @@
 		</skills>
 	</item>
 	<item id="23420" name="Scroll: Enchant C-grade Armor" type="EtcItem">
-		<!-- For C-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3. Can be safely enchanted up to +3 (for ordinary armor) and up to +4 (for one-piece armor). HP is gradually increased with each enchant value starting from +4. Cannot be used on armor or accessories above +30. -->
+		<!-- For C-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i02" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -390,7 +390,7 @@
 		</skills>
 	</item>
 	<item id="23421" name="Scroll: Enchant D-grade Armor" type="EtcItem">
-		<!-- For D-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3. Can be safely enchanted up to +3 (for ordinary armor) and up to +4 (for one-piece armor). HP is gradually increased with each enchant value starting from +4. Cannot be used on armor or accessories above +30. -->
+		<!-- For D-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_scroll_of_enchant_armor_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -409,7 +409,7 @@
 		</skills>
 	</item>
 	<item id="23422" name="Blessed Scroll: Enchant R-grade Weapon" type="EtcItem">
-		<!-- For R-grade weapons. P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +12 for bows. M. Atk. +5 for all weapons. Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For R-grade weapons P. Atk. +6 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +7 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists, crossbows P. Atk. +12 for bows M. Atk. +5 for all weapons Starting from +4, P./ M. Atk. bonus is greatly increased (more so in case of blessed weapons). In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.blessed_scroll_of_enchant_weapon_i06" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -427,7 +427,7 @@
 		</skills>
 	</item>
 	<item id="23423" name="Blessed Scroll: Enchant S-grade Weapon" type="EtcItem">
-		<!-- For S-grade weapons. P. Atk. +5 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +6 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +10 for bows. M. Atk. +4 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For S-grade weapons P. Atk. +5 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +6 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +10 for bows M. Atk. +4 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_s_i05" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -445,7 +445,7 @@
 		</skills>
 	</item>
 	<item id="23424" name="Blessed Scroll: Enchant A-grade Weapon" type="EtcItem">
-		<!-- For A-grade weapons. P. Atk. +4 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +5 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +8 for bows. M. Atk. +3 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For A-grade weapons P. Atk. +4 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +5 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +8 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used on weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_a_i04" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -463,7 +463,7 @@
 		</skills>
 	</item>
 	<item id="23425" name="Blessed Scroll: Enchant B-grade Weapon" type="EtcItem">
-		<!-- For B-grade weapons. P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +6 for bows. M. Atk. +3 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For B-grade weapons P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +6 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_b_i03" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -481,7 +481,7 @@
 		</skills>
 	</item>
 	<item id="23426" name="Blessed Scroll: Enchant C-grade Weapon" type="EtcItem">
-		<!-- For C-grade weapons. P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears. P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists. P. Atk. +6 for bows. M. Atk. +3 for all weapons. Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For C-grade weapons P. Atk. +3 for one-handed swords/ blunts/ staffs, daggers, spears P. Atk. +4 for two-handed swords/ blunts/ staffs, dual daggers, dual swords, fists P. Atk. +6 for bows M. Atk. +3 for all weapons Starting from +4, P./ M. Atk. bonus is doubled. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_c_i02" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -499,7 +499,7 @@
 		</skills>
 	</item>
 	<item id="23427" name="Blessed Scroll: Enchant D-grade Weapon" type="EtcItem">
-		<!-- P. Atk. +2 for one-handed swords/ blunts/ staffs, daggers, spears, two-handed swords/ blunts/ staffs, dual daggers, dual swords, and fist weapons. P. Atk. +4 for bows. M. Atk. +2 for all weapons. When enchanted to +4 and higher, P./ M. Atk. doubles. In case of failure the item does not disappear, but its enchant value resets to 0.. Cannot be used on weapons enchanted to +30 and higher. -->
+		<!-- P. Atk. +2 for one-handed swords/ blunts/ staffs, daggers, spears, two-handed swords/ blunts/ staffs, dual daggers, dual swords, and fist weapons. P. Atk. +4 for bows. M. Atk. +2 for all weapons. When enchanted to +4 and higher, P./ M. Atk. doubles. In case of failure the item does not disappear, but its enchant value resets to 0. Cannot be used on weapons enchanted to +30 and higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_wp_d_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -517,7 +517,7 @@
 		</skills>
 	</item>
 	<item id="23428" name="Blessed Scroll: Enchant R-grade Armor" type="EtcItem">
-		<!-- When enchanted, P. Def. +2 for R-grade armor and accessories. The effect is greatly increased when enchanted to +4 or higher. Can be enhanced safely to +3. When enhanced to +4 or higher, HP also increases according to the enchantment value. Failure to enchant does not crystallize the item but resets its enchantment level to 0. Cannot be used on armor or accessories enchanted to +30 or higher. -->
+		<!-- For R-grade armor and accessories P. Def. +2 Starting from +4, P. Def. is greatly increased, HP is increased with each enchant value. The enchanting is safe up to +3. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.blessed_scroll_of_enchant_armor_i06" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -535,7 +535,7 @@
 		</skills>
 	</item>
 	<item id="23429" name="Blessed Scroll: Enchant S-grade Armor" type="EtcItem">
-		<!-- For S-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For S-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_s_i05" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -553,7 +553,7 @@
 		</skills>
 	</item>
 	<item id="23430" name="Blessed Scroll: Enchant A-grade Armor" type="EtcItem">
-		<!-- For A-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For A-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_a_i04" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -571,7 +571,7 @@
 		</skills>
 	</item>
 	<item id="23431" name="Blessed Scroll: Enchant B-grade Armor" type="EtcItem">
-		<!-- For B-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For B-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_b_i03" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -589,7 +589,7 @@
 		</skills>
 	</item>
 	<item id="23432" name="Blessed Scroll: Enchant C-grade Armor" type="EtcItem">
-		<!-- For C-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For C-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_c_i02" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -607,7 +607,7 @@
 		</skills>
 	</item>
 	<item id="23433" name="Blessed Scroll: Enchant D-grade Armor" type="EtcItem">
-		<!-- For D-grade armor and accessories. P. Def. +1. When enchanted to +4 or higher, P. Def. +3, Max HP is increased with each enchant value. The enchanting is safe up to +3 for common armor and +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used for weapons enchanted to +30 or higher. -->
+		<!-- For D-grade armor and accessories P. Def. +1 When enchanted to +4, P. Def. +3, HP is increased with each enchant value. The enchanting is safe up to +3 for ordinary armor and up to +4 for one-piece armor. In case of failure the item is not crystallized, but its enchant value is reset to 0. Cannot be used with equipment enchanted to +20 or higher. -->
 		<set name="icon" val="icon.etc_blessed_scrl_of_ench_am_d_i01" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -640,7 +640,7 @@
 		</capsuled_items>
 	</item>
 	<item id="23435" name="Package: Agathion Blue Opera (7-day)" additionalName="Sword of Recovery" type="EtcItem">
-		<!-- Double-click to obtain Agathion Blue Opera (7-day - Sword of Recovery). -->
+		<!-- Double-click to obtain Agathion Blue Opera (Sword of Recovery/ 7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -651,7 +651,7 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="PAPER" />
 		<capsuled_items>
-			<item id="20776" min="1" max="1" chance="100" /> <!-- Agathion Blue Opera - Sword of Recovery / 7-day -->
+			<item id="20776" min="1" max="1" chance="100" /> <!-- Agathion Beijing Opera - Sword of Recovery / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="23436" name="Package: Agathion Teddy Boy (7-day)" additionalName="Vitality" type="EtcItem">
@@ -743,7 +743,7 @@
 		</capsuled_items>
 	</item>
 	<item id="23442" name="Kokoshnik" type="Armor">
-		<!-- A hair accessory for Lineage II anniversary. Looks like a traditional Russian kokoshnik. Uses 2 hair accessory slots. Female only. -->
+		<!-- A head accessory for Lineage II anniversary. Looks like a traditional Russian kokoshnik. Equipped in 2 head accessory slots. Female only. -->
 		<set name="icon" val="BranchSys3.icon1.g_hair_kokoshnik_f" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -758,7 +758,7 @@
 		<set name="material" val="WOOD" />
 	</item>
 	<item id="23443" name="Russian Navy Cap" type="Armor">
-		<!-- A hair accessory for Lineage II anniversary. Looks like a Russian navy cap. Uses 2 hair accessory slots. Male only. -->
+		<!-- A head accessory for Lineage II anniversary. Looks like a Russian navy cap. Equipped in 2 head accessory slots. Male only. -->
 		<set name="icon" val="BranchSys3.icon1.g_hair_peakless_cap_m" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -799,7 +799,7 @@
 		</stats>
 	</item>
 	<item id="23445" name="Kokoshnik" type="Armor">
-		<!-- A hair accessory for Lineage II anniversary. Looks like a traditional Russian kokoshnik. Uses 2 hair accessory slots. Female only. -->
+		<!-- A head accessory for Lineage II anniversary. Looks like a traditional Russian kokoshnik. Equipped in 2 head accessory slots. Female only. -->
 		<set name="icon" val="BranchSys3.icon1.g_hair_kokoshnik_f" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -812,7 +812,7 @@
 		<set name="material" val="WOOD" />
 	</item>
 	<item id="23446" name="Russian Navy Cap" type="Armor">
-		<!-- A hair accessory for Lineage II anniversary. Looks like a Russian navy cap. Uses 2 hair accessory slots. Male only. -->
+		<!-- A head accessory for Lineage II anniversary. Looks like a Russian navy cap. Equipped in 2 head accessory slots. Male only. -->
 		<set name="icon" val="BranchSys3.icon1.g_hair_peakless_cap_m" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -849,7 +849,7 @@
 		</stats>
 	</item>
 	<item id="23448" name="Metal Suit Top" type="Armor">
-		<!-- Metal Suit Top. Part of a costume. -->
+		<!-- Metal Suit Top. A part of the costume. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_sf_u" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -862,7 +862,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23449" name="Metal Suit Pants" type="Armor">
-		<!-- Metal Suit Pants. Part of a costume. -->
+		<!-- Metal Suit Pants. A part of the costume. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_sf_l" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -875,7 +875,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23450" name="Metal Suit Gloves" type="Armor">
-		<!-- Metal Suit Gloves. Part of a costume. -->
+		<!-- Metal Suit Gloves. A part of the costume. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_sf_g" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -901,7 +901,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23452" name="Metal Suit Hair Accessory" type="Armor">
-		<!-- Metal Suit Hair Accessory. Hat form. Part of a costume. -->
+		<!-- Metal Suit Head Accessory. A part of the costume. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_sf_hair" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -914,7 +914,7 @@
 		<set name="material" val="CLOTH" />
 	</item>
 	<item id="23453" name="Military Top" type="Armor">
-		<!-- Military Top. Part of a costume. Note!. Displayed incorrectly on Ertheia. -->
+		<!-- A soldier's upper clothes. A part of the costume. Note! Displayed incorrectly on Ertheia. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_military_u" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -927,7 +927,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23454" name="Military Pants" type="Armor">
-		<!-- Military Pants. Part of a costume. Note!. Displayed incorrectly on Ertheia. -->
+		<!-- A soldier's lower clothes. A part of the costume. Note! Displayed incorrectly on Ertheia. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_military_l" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -940,7 +940,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23455" name="Military Gloves" type="Armor">
-		<!-- Military Gloves. Part of a costume. Note!. Displayed incorrectly on Ertheia. -->
+		<!-- A soldier's gloves. A part of the costume. Note! Displayed incorrectly on Ertheia. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_military_g" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -953,7 +953,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23456" name="Military Shoes" type="Armor">
-		<!-- Military Shoes. Part of a costume. Note!. Displayed incorrectly on Ertheia. -->
+		<!-- Military Shoes. Part of a costume. Note! Displayed incorrectly on Ertheia. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_military_b" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -966,7 +966,7 @@
 		<set name="material" val="LEATHER" />
 	</item>
 	<item id="23457" name="Military Hair Accessory" type="Armor">
-		<!-- Military Hair Accessory. Hat form. Part of a costume. Sailor hat for women, and navy cap for men. Note!. Displayed incorrectly on Ertheia. -->
+		<!-- A soldier's head accessory. A hat. A part of the costume. Note! Displayed incorrectly on Ertheia. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_military_hair_m" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -979,7 +979,7 @@
 		<set name="material" val="CLOTH" />
 	</item>
 	<item id="23458" name="Maid Costume" type="Armor">
-		<!-- Maid Costume. Used as part of the costume, intended for female characters. -->
+		<!-- A cute maid's dress. A part of the costume. Female only. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_cutie_maid" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -992,7 +992,7 @@
 		<set name="material" val="CLOTH" />
 	</item>
 	<item id="23459" name="Maid Hair Accessory" type="Armor">
-		<!-- Maid Hair Accessory. Used as part of the costume, intended for female characters. -->
+		<!-- A cute maid's head accessory. A part of the costume. Female only. -->
 		<set name="icon" val="BranchSys3.icon1.g_co_cutie_maid_hair" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
@@ -1131,7 +1131,7 @@
 		</skills>
 	</item>
 	<item id="23470" name="Fantasy Homemade Cookie" additionalName="Event" type="EtcItem">
-		<!-- A homemade cookie made to celebrate the Great Fantasy Isle Festival. For 60 min., with the help of a powerful soul: Max MP +20%, HP Recovery Bonus +20%, M. Critical Rate +20, Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%, and increases P. Def. when hit by a critical attack. Speed -15%. Additionally increases Critical Damage for party members equipped with melee/ ranged weapons when they receive more than a certain amount of damage. -->
+		<!-- A homemade cookie made to celebrate the great Fantasy Isle Festival. For 60 min., receives help from the Great Spirit: recovers 20% MP, HP Recovery Rate +20%, M. Critical Rate +20, Critical Damage +20%, P. Atk. +10%, P. Def. +20%, Atk. Spd. +20%, M. Atk. +20%, M. Def. +20%, Casting Spd. +20%, Debuff Resistance +10%. Additionally, increases P. Def. when hit by a critical attack. Speed -15%. Increases Critical Damage for party members equipped with melee/ ranged weapons when they receive a certain amount of damage. -->
 		<set name="icon" val="BranchSys3.Icon.ev_halloween_cookie" />
 		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
@@ -1146,7 +1146,7 @@
 		</skills>
 	</item>
 	<item id="23471" name="Fantasy Special Cookie" additionalName="Event" type="EtcItem">
-		<!-- Special cookie made for the Fantasy Isle Festival. For 60 min., Acquired XP/ SP +100%. Required level: 1-95. -->
+		<!-- A special cookie made for the Fantasy Isle Festival. When used, acquired XP/ SP while hunting +100% for 1 h. Required level: 1-95. -->
 		<set name="icon" val="BranchSys3.Icon.ev_halloween_cookie" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="POTION" />
@@ -1198,7 +1198,7 @@
 		</skills>
 	</item>
 	<item id="23474" name="Low-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 1. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 1. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1220,7 +1220,7 @@
 		</skills>
 	</item>
 	<item id="23475" name="Mid-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 3. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 3. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1242,7 +1242,7 @@
 		</skills>
 	</item>
 	<item id="23476" name="High-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 5. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 5. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1264,7 +1264,7 @@
 		</skills>
 	</item>
 	<item id="23477" name="Top-grade Scroll: PK" type="EtcItem">
-		<!-- Double-click to decrease the PK count by 10. Can be used only in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to decrease the PK count by 10. Can only be used in Floran Village. Can be used if the PK count is 1 or higher. Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_pk_count_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1286,7 +1286,7 @@
 		</skills>
 	</item>
 	<item id="23478" name="Low-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to increase reputation points by 1000. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to increase reputation points by 1000. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1304,7 +1304,7 @@
 		</skills>
 	</item>
 	<item id="23479" name="Mid-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to increase reputation points by 5000. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to increase reputation points by 5000. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1322,7 +1322,7 @@
 		</skills>
 	</item>
 	<item id="23480" name="High-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to increase reputation points by 30,000. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to increase reputation points by 30,000. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1340,7 +1340,7 @@
 		</skills>
 	</item>
 	<item id="23481" name="Top-grade Scroll: Reputation" type="EtcItem">
-		<!-- Double-click to reset reputation points to 0. Can be used only in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
+		<!-- Double-click to reset reputation points to 0. Can only be used in Floran Village. Can be used when in the Chaotic state (the reputation is below 0). Not available when wielding Demonic Sword Zariche or Blood Sword Akamanah. -->
 		<set name="icon" val="icon.etc_ev_draco_karma_down" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1358,7 +1358,7 @@
 		</skills>
 	</item>
 	<item id="23482" name="Top Hat" type="Armor">
-		<!-- A hat that belonged to a mysterious magician. Uses 2 hair accessory slots. -->
+		<!-- A hat of a mysterious magician. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_magicial_cap_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1387,7 +1387,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="23484" name="Wizard Hat" type="Armor">
-		<!-- A wide-brimmed wizard hat. Takes 2 hair accessory slots. -->
+		<!-- A wide-brimmed wizard hat. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_magic_cap_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1402,7 +1402,7 @@
 		<set name="material" val="WOOD" />
 	</item>
 	<item id="23485" name="Santa Outfit" type="Armor">
-		<!-- Santa outfit to celebrate the holiday season. -->
+		<!-- Santa Claus' outfit for Christmas holidays. -->
 		<set name="icon" val="Branchsys3.icon1.armor_ev_santas_clothes" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1415,7 +1415,7 @@
 		<set name="material" val="CLOTH" />
 	</item>
 	<item id="23486" name="Appearance Stone: Santa Outfit" additionalName="14-day" type="EtcItem">
-		<!-- Appearance stone that modifies into a Santa outfit. Tops and one-pieces only. It changes everything, making the appearance of all armor into that of a Santa outfit. Appearance is restored through the use of a Restoration Stone. -->
+		<!-- Changes the appearance of your entire armor to that of Santa Outfit. The armor's default appearance can be restored with Restoration Stone. -->
 		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
@@ -1433,7 +1433,7 @@
 		</skills>
 	</item>
 	<item id="23487" name="Appearance Stone: Santa Outfit" type="EtcItem">
-		<!-- Appearance stone that modifies into a Santa outfit. Tops and one-pieces only. It changes everything, making the appearance of all armor into that of a Santa outfit. Appearance is restored through the use of a Restoration Stone. -->
+		<!-- Changes the appearance of your entire armor to that of Santa Outfit. The armor's default appearance can be restored with Restoration Stone. -->
 		<set name="icon" val="BranchSys3.icon1.g_scrl_change_chest" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />
@@ -1451,7 +1451,7 @@
 		</skills>
 	</item>
 	<item id="23488" name="Package: Appearance Stone: Santa Outfit (14-day)" type="EtcItem">
-		<!-- Double-click to obtain Santa Outfit Appearance Stone (14-day). -->
+		<!-- Double-click to obtain 1 Appearance Stone: Santa Outfit (14-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1468,7 +1468,7 @@
 		</capsuled_items>
 	</item>
 	<item id="23489" name="Package: Appearance Stone: Santa Outfit" type="EtcItem">
-		<!-- Double-click to obtain Santa Outfit Appearance Stone. -->
+		<!-- Double-click to obtain Appearance Stone: Santa Outfit. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1504,7 +1504,7 @@
 		</skills>
 	</item>
 	<item id="23491" name="Vitality Maintaining Potion (10-min.) - Event" type="EtcItem">
-		<!-- Maintains the Vitality amount for 10 min. Cooldown: 30 min. -->
+		<!-- Maintains Vitality for 10 min. Cooldown: 30 min. -->
 		<set name="icon" val="icon.etc_lesser_potion_blue_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1606,7 +1606,7 @@
 		</skills>
 	</item>
 	<item id="23497" name="Appearance Stone: Metal Suit Hair Accessory" type="EtcItem">
-		<!-- Changes the appearance of a hair accessory into that of Metal Suit Hair Accessory. Can be used only on hair accessories that use 2 slots. -->
+		<!-- Changes the appearance of a head accessory into that of Metal Suit Head Accessory. Can only be used on head accessories equipped in 2 slots. -->
 		<set name="icon" val="BranchSys3.Icon.g_shape_shifting_hair2" />
 		<set name="immediate_effect" val="true" />
 		<set name="handler" val="Appearance" />

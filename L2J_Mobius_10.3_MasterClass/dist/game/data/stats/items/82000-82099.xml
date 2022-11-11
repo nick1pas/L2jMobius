@@ -724,7 +724,7 @@
 		</stats>
 	</item>
 	<item id="82065" name="Lindvior's Earring - Shield" additionalName="Event" type="Armor">
-		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Wind/ Dark Resistance +30, Petrifaction Resistance/ Atk. Rate +50%, Confusion Resistance/ Atk. Rate +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> P. Def. +4% -->
+		<!-- MP +59, P. Critical Damage/ M. Skill Critical Damage +10%, Speed +5, DEX/ WIT +3, Dark/ Wind Resistance +30, Petrification Atk. Rate and Resistance +50%, Confusion Atk. Rate and Resistance +40%, Danger Zone Resistance +40%, P./ M. Debuff Reflection Rate +10%, M. Damage Reflection Rate +10%. Active skill: Removes Knockback/ Knockdown debuffs and grants immunity to Confusion for 5 sec. Effects of two identical earrings do not stack. <Special effect> P. Def. +4% -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
@@ -759,7 +759,7 @@
 		</stats>
 	</item>
 	<item id="82067" name="Ruler's Ring of Authority - STR" additionalName="Event" type="Armor">
-		<!-- MP +46, P. Atk. +5%, Critical Damage for basic attacks +20%, LUC/ CHA +2, Confusion Atk. Rate and Resistance +30%, damage to Giants +5%. Applies Confusion for 3 sec. when using attacking skills. Effects of two identical rings do not stack. <Special effect> STR +2 -->
+		<!-- MP +46, P. Atk. +5%, Critical Damage for basic attacks +20%, LUC/ CHA +2, Confusion Atk. Rate and Resistance +30%, damage to Giants +5%. Applies Confusion for 3 sec. when using attack skills. Effects of two identical rings do not stack. <Special effect> STR +2 -->
 		<set name="icon" val="icon.accessory_ring_of_helios_enchant_red" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -777,7 +777,7 @@
 		</stats>
 	</item>
 	<item id="82068" name="Death Knight's Ring" type="Armor">
-		<!-- When enchanted, increases Obstruction Atk. Rate/ Resistance, Attribute Resistance, P. Critical Damage, P./ M. Skill Critical Damage, and P./ M. Skill Power. Effects of two identical rings do not stack. The item can be changed. <Enchanting>. Use Scroll: Enchant Angel Accessory. Can be augmented. -->
+		<!-- When equipped, applies the same effect as +7 Fallen Angel's Ring. Confusion Atk. Rate and Resistance +25%, Vitality bonus +16%, acquired XP/ SP +11%, P. Critical Damage and P./ M. Skill Critical Damage +16%. When equipped simultaneously with Fallen Angel's Ring, the effect of only one ring is active. -->
 		<set name="icon" val="icon.accessary_ring_of_anguish_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rfinger;lfinger" />
@@ -830,20 +830,20 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="80090" min="1" max="1" chance="7.14" /> <!-- Shaper -->
-			<item id="80091" min="1" max="1" chance="7.14" /> <!-- Cutter -->
-			<item id="80092" min="1" max="1" chance="7.14" /> <!-- Slasher -->
-			<item id="80093" min="1" max="1" chance="7.14" /> <!-- Avenger -->
-			<item id="80094" min="1" max="1" chance="7.14" /> <!-- Fighter -->
-			<item id="80095" min="1" max="1" chance="7.14" /> <!-- Stormer -->
-			<item id="80096" min="1" max="1" chance="7.14" /> <!-- Thrower -->
-			<item id="80097" min="1" max="1" chance="7.14" /> <!-- Guardian -->
-			<item id="80098" min="1" max="1" chance="7.14" /> <!-- Buster -->
-			<item id="80099" min="1" max="1" chance="7.14" /> <!-- Caster -->
-			<item id="80100" min="1" max="1" chance="7.14" /> <!-- Retributer -->
-			<item id="80101" min="1" max="1" chance="7.14" /> <!-- Dual Swords -->
-			<item id="80102" min="1" max="1" chance="7.14" /> <!-- Dual Daggers -->
-			<item id="80103" min="1" max="1" chance="7.14" /> <!-- Blunt Weapon -->
+			<item id="80090" min="1" max="1" chance="7.14" /> <!-- Krishna Shaper -->
+			<item id="80091" min="1" max="1" chance="7.14" /> <!-- Krishna Cutter -->
+			<item id="80092" min="1" max="1" chance="7.14" /> <!-- Krishna Slasher -->
+			<item id="80093" min="1" max="1" chance="7.14" /> <!-- Krishna Avenger -->
+			<item id="80094" min="1" max="1" chance="7.14" /> <!-- Krishna Fighter -->
+			<item id="80095" min="1" max="1" chance="7.14" /> <!-- Krishna Stormer -->
+			<item id="80096" min="1" max="1" chance="7.14" /> <!-- Krishna Thrower -->
+			<item id="80097" min="1" max="1" chance="7.14" /> <!-- Krishna Guardian -->
+			<item id="80098" min="1" max="1" chance="7.14" /> <!-- Krishna Buster -->
+			<item id="80099" min="1" max="1" chance="7.14" /> <!-- Krishna Caster -->
+			<item id="80100" min="1" max="1" chance="7.14" /> <!-- Krishna Retributer -->
+			<item id="80101" min="1" max="1" chance="7.14" /> <!-- Krishna Dual Swords -->
+			<item id="80102" min="1" max="1" chance="7.14" /> <!-- Krishna Dual Daggers -->
+			<item id="80103" min="1" max="1" chance="7.14" /> <!-- Krishna Dual Blunt Weapons -->
 		</capsuled_items>
 	</item>
 	<item id="82072" name="Leviathan Armor Pack" additionalName="Event" type="EtcItem">
@@ -863,27 +863,27 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="80120" min="1" max="1" chance="5.88" /> <!-- Sigil -->
-			<item id="80119" min="1" max="1" chance="5.88" /> <!-- Robe Boots -->
-			<item id="80118" min="1" max="1" chance="5.88" /> <!-- Robe Gloves -->
-			<item id="80117" min="1" max="1" chance="5.88" /> <!-- Robe Gaiters -->
-			<item id="80116" min="1" max="1" chance="5.88" /> <!-- Robe Breastplate -->
-			<item id="80115" min="1" max="1" chance="5.88" /> <!-- Robe Helmet -->
-			<item id="80114" min="1" max="1" chance="5.88" /> <!-- Light Boots -->
-			<item id="80113" min="1" max="1" chance="5.88" /> <!-- Light Gloves -->
-			<item id="80112" min="1" max="1" chance="5.88" /> <!-- Light Gaiters -->
-			<item id="80111" min="1" max="1" chance="5.88" /> <!-- Light Breastplate -->
-			<item id="80110" min="1" max="1" chance="5.88" /> <!-- Light Helmet -->
-			<item id="80109" min="1" max="1" chance="5.88" /> <!-- Shield -->
-			<item id="80108" min="1" max="1" chance="5.88" /> <!-- Heavy Boots -->
-			<item id="80107" min="1" max="1" chance="5.88" /> <!-- Heavy Gauntlets (Gloves) -->
-			<item id="80106" min="1" max="1" chance="5.88" /> <!-- Heavy Gaiters -->
-			<item id="80105" min="1" max="1" chance="5.88" /> <!-- Heavy Breastplate -->
-			<item id="80104" min="1" max="1" chance="5.88" /> <!-- Heavy Helmet -->
+			<item id="80120" min="1" max="1" chance="5.88" /> <!-- Leviathan Sigil -->
+			<item id="80119" min="1" max="1" chance="5.88" /> <!-- Leviathan Shoes - Robe -->
+			<item id="80118" min="1" max="1" chance="5.88" /> <!-- Leviathan Gloves - Robe -->
+			<item id="80117" min="1" max="1" chance="5.88" /> <!-- Leviathan Stockings - Robe -->
+			<item id="80116" min="1" max="1" chance="5.88" /> <!-- Leviathan Tunic - Robe -->
+			<item id="80115" min="1" max="1" chance="5.88" /> <!-- Leviathan Circlet - Robe -->
+			<item id="80114" min="1" max="1" chance="5.88" /> <!-- Leviathan Leather Boots - Light armor -->
+			<item id="80113" min="1" max="1" chance="5.88" /> <!-- Leviathan Leather Gloves - Light armor -->
+			<item id="80112" min="1" max="1" chance="5.88" /> <!-- Leviathan Leather Leggings - Light armor -->
+			<item id="80111" min="1" max="1" chance="5.88" /> <!-- Leviathan Leather Armor - Light armor -->
+			<item id="80110" min="1" max="1" chance="5.88" /> <!-- Leviathan Leather Helmet - Light armor -->
+			<item id="80109" min="1" max="1" chance="5.88" /> <!-- Leviathan Shield -->
+			<item id="80108" min="1" max="1" chance="5.88" /> <!-- Leviathan Boots - Heavy armor -->
+			<item id="80107" min="1" max="1" chance="5.88" /> <!-- Leviathan Gauntlets - Heavy armor -->
+			<item id="80106" min="1" max="1" chance="5.88" /> <!-- Leviathan Gaiters - Heavy armor -->
+			<item id="80105" min="1" max="1" chance="5.88" /> <!-- Leviathan Breastplate - Heavy armor -->
+			<item id="80104" min="1" max="1" chance="5.88" /> <!-- Leviathan Helmet - Heavy armor -->
 		</capsuled_items>
 	</item>
 	<item id="82073" name="Iron Gate's Key" additionalName="Event" type="EtcItem">
-		<!-- Required for accessing the Iron Gate Guild's secret store. -->
+		<!-- Required for participating in the Secret Shop's prize draw. -->
 		<set name="icon" val="BranchSys3.icon1.g_luckygame_card_trade_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -893,7 +893,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="82074" name="Blessed Scroll: Enchant Exalted Weapon" type="EtcItem">
-		<!-- For enchanting Blessed Exalted weapons. Enchant success rate: 100%. Cannot be used with weapons enchanted to +12 or higher. -->
+		<!-- For enchanting Enhanced Exalted weapons. Enchant success rate: 100%. Cannot be used with weapons enchanted to +12 or higher. -->
 		<set name="icon" val="BranchSys.icon.br_holy_cry_of_ench_wp_s_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -1000,7 +1000,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="82085" name="Soul Talisman" additionalName="Lv. 1" type="Armor">
-		<!-- When equipped, MEN/ WIT/ CON +4, INT/ DEX/ STR/ LUC/ CHA +3. -->
+		<!-- When equipped, MEN/ WIT/ CON +4, INT/ DEX/ STR/ LUC/ CHA +3. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1011,7 +1011,7 @@
 		</skills>
 	</item>
 	<item id="82086" name="Soul Talisman" additionalName="Lv. 2" type="Armor">
-		<!-- When equipped, MEN/ WIT/ CON/ DEX +4, INT/ STR/ LUC/ CHA +3. -->
+		<!-- When equipped, MEN/ WIT/ CON/ DEX +4, INT/ STR/ LUC/ CHA +3. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1022,7 +1022,7 @@
 		</skills>
 	</item>
 	<item id="82087" name="Soul Talisman" additionalName="Lv. 3" type="Armor">
-		<!-- When equipped, MEN/ WIT/ CON/ DEX/ INT/ STR +4, LUC/ CHA +3. -->
+		<!-- When equipped, MEN/ WIT/ CON/ DEX/ INT/ STR +4, LUC/ CHA +3. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1033,7 +1033,7 @@
 		</skills>
 	</item>
 	<item id="82088" name="Soul Talisman" additionalName="Lv. 4" type="Armor">
-		<!-- When equipped, MEN/ WIT/ CON/ INT/ DEX/ STR/ LUC/ CHA +4. -->
+		<!-- When equipped, MEN/ WIT/ CON/ INT/ DEX/ STR/ LUC/ CHA +4. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv1" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1044,7 +1044,7 @@
 		</skills>
 	</item>
 	<item id="82089" name="Soul Talisman" additionalName="Lv. 5" type="Armor">
-		<!-- When equipped, all stats +4, P./ M. Atk. +1%. -->
+		<!-- When equipped, all stats +4, P./ M. Atk. +1%. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv5" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1055,7 +1055,7 @@
 		</skills>
 	</item>
 	<item id="82090" name="Soul Talisman" additionalName="Lv. 6" type="Armor">
-		<!-- When equipped, all stats +4, P./ M. Atk. +2%. -->
+		<!-- When equipped, all stats +4, P./ M. Atk. +2%. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv5" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1066,7 +1066,7 @@
 		</skills>
 	</item>
 	<item id="82091" name="Soul Talisman" additionalName="Lv. 7" type="Armor">
-		<!-- When equipped, all stats +4, P./ M. Atk. +3%. -->
+		<!-- When equipped, all stats +4, P./ M. Atk. +3%. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv5" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1077,7 +1077,7 @@
 		</skills>
 	</item>
 	<item id="82092" name="Soul Talisman" additionalName="Lv. 8" type="Armor">
-		<!-- When equipped, all stats +4, P./ M. Atk. +3%, Critical Damage for basic attacks +1%, P./ M. Skill Critical Damage +1%. -->
+		<!-- When equipped, all stats +4, P./ M. Atk. +3%, Critical Damage for basic attacks +1%, P./ M. Skill Critical Damage +1%. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv5" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />
@@ -1088,7 +1088,7 @@
 		</skills>
 	</item>
 	<item id="82093" name="Soul Talisman" additionalName="Lv. 9" type="Armor">
-		<!-- When equipped, all stats +4, P./ M. Atk. +3%, Critical Damage for basic attacks +2%, P./ M. Skill Critical Damage +2%. -->
+		<!-- When equipped, all stats +4, P./ M. Atk. +3%, Critical Damage for basic attacks +2%, P./ M. Skill Critical Damage +2%. <Enchanting> Compounding with Soul Shard. -->
 		<set name="icon" val="icon.dethrone_soul_talisman_lv9" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="deco1" />

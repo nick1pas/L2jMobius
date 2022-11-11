@@ -1,6 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="97100" name="Squire's Spear" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs></font> -->
 		<set name="icon" val="icon.weapon_short_spear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -94,7 +95,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97109" name="Spellbook: Darkness Unleashing" type="EtcItem">
-		<!-- A spellbook for learning the Darkness Unleashing skill. <Class> Vanguard Rider <Skill effect> Released dark power covers the beast to enhance it. Wild Scratch → Shadow Scratch: increases power and makes an additional attack. Wild Charge → Spectral Charge: increases the number of attacks. -->
+		<!-- A spellbook for learning the Darkness Unleashing skill. <Class> Vanguard Rider <Skill effect> Released dark power covers the beast to enhance it. Wild Scratch ? Shadow Scratch: increases power and makes an additional attack. Wild Charge ? Spectral Charge: increases the number of attacks. -->
 		<set name="icon" val="icon.etc_magic_book_red_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -168,7 +169,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97117" name="Spellbook: Darkness Unleashing" additionalName="Sealed" type="EtcItem">
-		<!-- A spellbook for learning the Darkness Unleashing skill. <Class> Vanguard Rider <Skill effect> Released dark power covers the beast to enhance it. Wild Scratch → Shadow Scratch: increases power and makes an additional attack. Wild Charge → Spectral Charge: increases the number of attacks. -->
+		<!-- A spellbook for learning the Darkness Unleashing skill. <Class> Vanguard Rider <Skill effect> Released dark power covers the beast to enhance it. Wild Scratch ? Shadow Scratch: increases power and makes an additional attack. Wild Charge ? Spectral Charge: increases the number of attacks. -->
 		<set name="icon" val="icon.etc_magic_book_red_i00" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -398,7 +399,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97140" name="Anniversary Squeaking Shoes (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- A souvenir in honor of the anniversary. A collection item that cannot be equipped. <font color=ff6666>Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
+		<!-- A souvenir in honor of the anniversary. A collection item, can be equipped. <font color=ff6666>Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
 		<set name="icon" val="icon.armor_t02_b_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="feet" />
@@ -410,7 +411,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97141" name="Anniversary Cupid's Bow (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- A souvenir in honor of the anniversary. A collection item that cannot be equipped. <font color=ff6666>Sylphs/ Vanguard Riders cannot equip it. Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
+		<!-- A souvenir in honor of the anniversary. A collection item, can be equipped. <font color=ff6666>Sylphs/ Vanguard Riders cannot equip it. Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
 		<set name="icon" val="icon.weapon_krono_bow_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -432,7 +433,7 @@
 		</stats>
 	</item>
 	<item id="97142" name="Anniversary Formal Wear (Time-limited)" additionalName="Sealed" type="Armor">
-		<!-- A souvenir in honor of the anniversary. A collection item that cannot be equipped. <font color=ff6666>Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
+		<!-- A souvenir in honor of the anniversary. A collection item, can be equipped. <font color=ff6666>Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
 		<set name="icon" val="icon.armor_t2000_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -445,7 +446,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97143" name="Anniversary Death Knight's Flame Sword (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- A souvenir in honor of the anniversary. A collection item that cannot be equipped. <font color=ff6666>Sylphs/ Vanguard Riders cannot equip it. Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
+		<!-- A souvenir in honor of the anniversary. A collection item, can be equipped. <font color=ff6666>Sylphs/ Vanguard Riders cannot equip it. Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
 		<set name="icon" val="icon.fire_sword_aden" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -468,7 +469,7 @@
 		</stats>
 	</item>
 	<item id="97144" name="Anniversary Vanguard Rider's Spear (Time-limited)" additionalName="Sealed" type="Weapon">
-		<!-- A souvenir in honor of the anniversary. A collection item that cannot be equipped. <font color=ff6666>Sylphs cannot equip it. Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
+		<!-- A souvenir in honor of the anniversary. A collection item, can be equipped. <font color=ff6666>Not available to Sylphs. Cannot be enchanted or augmented. No soul crystal can be inserted. Cannot be equipped on a pet.</font> -->
 		<set name="icon" val="icon.weapon_r110_spear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -521,7 +522,7 @@
 		</stats>
 	</item>
 	<item id="97147" name="Dye Powder" additionalName="Sealed" type="EtcItem">
-		<!-- Material used to enhance hidden power. <font color=EEAA22>It may make your hidden power stronger.</font> <font color=ff6666>Dyes cannot be enhanced.</font> -->
+		<!-- A material for upgrading the hidden power. <font color=EEAA22>Hidden power upgrade is available.</font> <font color=ff6666>Cannot be used for upgrading patterns/ dyes.</font> -->
 		<set name="icon" val="icon.dye_charge_meal" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -850,7 +851,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97172" name="Spellbook Coupon (Sealed) - 3 Stars (Time-limited)" type="EtcItem">
-		<!-- Can be exchanged for Spellbook - 3 Stars. <How to use> Game Assistant - Event. -->
+		<!-- Can be exchanged for Spellbook - 3 Stars. <How to use> Game Assistant - Event -->
 		<set name="icon" val="icon.ev_sb_3_trade_ticket" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -878,7 +879,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97175" name="Spellbook Coupon - 1 Star" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged for Spellbook (Sealed) - 1 Star. <How to use> Game Assistant - Event. -->
+		<!-- Can be exchanged for Spellbook (Sealed) - 1 Star. <How to use> Game Assistant - Items -->
 		<set name="icon" val="icon.ev_sb_1_trade_ticket" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -888,7 +889,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97176" name="Spellbook Coupon - 2 Stars" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged for Spellbook (Sealed) - 2 Stars. <How to use> Game Assistant - Event. -->
+		<!-- Can be exchanged for Spellbook (Sealed) - 2 Stars. <How to use> Game Assistant - Items -->
 		<set name="icon" val="icon.ev_sb_2_trade_ticket" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -898,7 +899,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97177" name="Spellbook Coupon - 3 Stars" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged for Spellbook (Sealed) - 3 Stars. <How to use> Game Assistant - Event. -->
+		<!-- Can be exchanged for Spellbook (Sealed) - 3 Stars. <How to use> Game Assistant - Items -->
 		<set name="icon" val="icon.ev_sb_3_trade_ticket" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
@@ -908,7 +909,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="97178" name="Spellbook Coupon - 4 Stars" additionalName="Sealed" type="EtcItem">
-		<!-- Can be exchanged for Spellbook (Sealed) - 4 Stars. <How to use> Game Assistant - Event. -->
+		<!-- Can be exchanged for Spellbook (Sealed) - 4 Stars. <How to use> Game Assistant - Items -->
 		<set name="icon" val="icon.ev_sb_4_trade_ticket" />
 		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />

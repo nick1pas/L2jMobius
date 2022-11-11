@@ -64,7 +64,7 @@
 		<set name="material" val="FISH" />
 		<capsuled_items>
 			<item id="34082" min="10" max="10" chance="100" /> <!-- Heavenly Cocktail -->
-			<item id="35999" min="10" max="10" chance="100" /> <!-- Heavenly P. Atk. Cookie -->
+			<item id="35999" min="10" max="10" chance="100" /> <!-- Heavenly Attack Cookie -->
 		</capsuled_items>
 	</item>
 	<item id="36004" name="Heavenly P. Def. Special Box" type="EtcItem">
@@ -116,7 +116,7 @@
 		</capsuled_items>
 	</item>
 	<item id="36007" name="High-grade Enchant Stone Special Box" type="EtcItem">
-		<!-- Double-click to obtain a High-grade Lucky Enchant Stone: R-grade Weapon and High-grade Lucky Enchant Stone: R-grade Armor. Cannot be used in Olympiad. -->
+		<!-- Double-click to obtain High-grade Stone: Enchant R-grade Weapon and High-grade Stone: Enchant R-grade Armor. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_pi_box_wish_pack" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -127,8 +127,8 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="36008" min="1" max="1" chance="100" /> <!-- High-grade Lucky Enchant Stone: R-grade Weapon -->
-			<item id="36009" min="1" max="1" chance="100" /> <!-- High-grade Lucky Enchant Stone: R-grade Armor -->
+			<item id="36008" min="1" max="1" chance="100" /> <!-- High-grade Stone: Enchant R-grade Weapon -->
+			<item id="36009" min="1" max="1" chance="100" /> <!-- High-grade Stone: Enchant R-grade Armor -->
 		</capsuled_items>
 	</item>
 	<item id="36008" name="High-grade Stone: Enchant R-grade Weapon" type="EtcItem">
@@ -250,7 +250,7 @@
 		<set name="material" val="FISH" />
 		<capsuled_items>
 			<item id="34082" min="10" max="10" chance="100" /> <!-- Heavenly Cocktail -->
-			<item id="36010" min="10" max="10" chance="100" /> <!-- Heavenly P. Atk. Cookie - Event -->
+			<item id="36010" min="10" max="10" chance="100" /> <!-- Heavenly Attack Cookie - Event -->
 		</capsuled_items>
 	</item>
 	<item id="36015" name="Heavenly P. Def. Special Box" additionalName="Event" type="EtcItem">
@@ -302,7 +302,7 @@
 		</capsuled_items>
 	</item>
 	<item id="36018" name="High-grade Enchant Stone Special Box" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain a High-grade Lucky Enchant Stone: R-grade Weapon and High-grade Lucky Enchant Stone: R-grade Armor. -->
+		<!-- Double-click to obtain High-grade Stone: Enchant R-grade Weapon and High-grade Stone: Enchant R-grade Armor. -->
 		<set name="icon" val="icon.etc_pi_box_wish_pack" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -313,8 +313,8 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="36019" min="1" max="1" chance="100" /> <!-- High-grade Lucky Enchant Stone: R-grade Weapon - Event -->
-			<item id="36020" min="1" max="1" chance="100" /> <!-- High-grade Lucky Enchant Stone: R-grade Armor - Event -->
+			<item id="36019" min="1" max="1" chance="100" /> <!-- High-grade Stone: Enchant R-grade Weapon - Event -->
+			<item id="36020" min="1" max="1" chance="100" /> <!-- High-grade Stone: Enchant R-grade Armor - Event -->
 		</capsuled_items>
 	</item>
 	<item id="36019" name="High-grade Stone: Enchant R-grade Weapon" additionalName="Event" type="EtcItem">
@@ -650,7 +650,7 @@
 		</stats>
 	</item>
 	<item id="36037" name="Mysterious Incantation" type="EtcItem">
-		<!-- Item that can be used only in the Ceremony of Chaos Arena. Drags the selected target to your location. -->
+		<!-- Can only be used in the Ceremony of Chaos. Pulls the target to you. -->
 		<set name="icon" val="icon.etc_grankain_chain" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -670,7 +670,7 @@
 		</skills>
 	</item>
 	<item id="36038" name="Mysterious Defense" type="EtcItem">
-		<!-- Item that can be used only in the Ceremony of Chaos Arena. Makes you invincible for 5 sec. -->
+		<!-- Can only be used in the Ceremony of Chaos. Makes you invincible for 5 sec. -->
 		<set name="icon" val="icon.etc_grankain_protect" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1341,7 +1341,7 @@
 		</skills>
 	</item>
 	<item id="36070" name="Fiercest Flame" type="EtcItem">
-		<!-- The Fiercest Flame received from the Blacksmith of Flame Vulcan at the Forge of the Gods. Can be used in front of the Pa'agrio Temple in Orc Village. -->
+		<!-- The Fiercest Flame from the Blacksmith of Flame Vulcan at the Forge of Gods. Can be used in front of the Pa'agrio Temple in the Orc Village. -->
 		<set name="icon" val="icon.etc_torch_on_i09" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1515,7 +1515,7 @@
 		</skills>
 	</item>
 	<item id="36082" name="Scroll of Escape: Isle of Souls Harbor" type="EtcItem">
-		<!-- Magic scroll that takes you to Isle of Souls Harbor. Cannot be sold in a store. -->
+		<!-- A magic scroll for teleporting to the Isle of Souls' Harbor. Cannot be sold in a store. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i00" />
 		<set name="weight" val="30" />
 		<set name="is_sellable" val="false" />
@@ -1531,7 +1531,7 @@
 		</skills>
 	</item>
 	<item id="36083" name="Agathion Innocent Heejin" type="Armor">
-		<!-- Bracelet for summoning Agathion Innocent Heejin (30-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (?ooldown: 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (?ooldown: 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (?ooldown: 20 h.) -->
+		<!-- A bracelet for summoning Agathion Innocent Heejin (30-day). <Active skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown: 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown: 30 min.) 3. Agathion's Gift Gives a random Vitality replenishing/ sustaining/ recovering items. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1557,7 +1557,7 @@
 		</skills>
 	</item>
 	<item id="36084" name="Star Agathion Dandy Hyuk" type="Armor">
-		<!-- Bracelet for summoning Agathion Dandy Hyuk (30-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (Cooldown is 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
+		<!-- Bracelet for summoning Agathion Dandy Hyuk (30-day) <Active Skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown is 30 min.) 3. Agathion's Gift You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1583,7 +1583,7 @@
 		</skills>
 	</item>
 	<item id="36085" name="Star Agathion Powerful Sooro" type="Armor">
-		<!-- Bracelet for summoning Agathion Powerful Sooro (30-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (Cooldown is 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
+		<!-- Bracelet for summoning Agathion Powerful Sooro (30-day) <Active Skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown is 30 min.) 3. Agathion's Gift You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1609,7 +1609,7 @@
 		</skills>
 	</item>
 	<item id="36086" name="Star Agathion Chic Jaebum" type="Armor">
-		<!-- Bracelet for summoning Agathion Chic Jaebum (30-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (Cooldown is 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
+		<!-- Bracelet for summoning Agathion Chic Jaebum (30-day) <Active Skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown is 30 min.) 3. Agathion's Gift You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1635,7 +1635,7 @@
 		</skills>
 	</item>
 	<item id="36087" name="Star Agathion Cute Shinyoung" type="Armor">
-		<!-- Bracelet for summoning Agathion Cute Shinyoung (30-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (Cooldown is 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
+		<!-- Bracelet for summoning Agathion Cute Shinyoung (30-day) <Active Skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown is 30 min.) 3. Agathion's Gift You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1768,7 +1768,7 @@
 		</skills>
 	</item>
 	<item id="36094" name="Vitality Replenishing Star Candy" type="EtcItem">
-		<!-- Replenishes a certain amount of vitality. -->
+		<!-- Recharges a certain amount of Vitality when used. No limitations on use. -->
 		<set name="icon" val="BranchSys.br_rudolf_food_red_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -1821,7 +1821,7 @@
 		</skills>
 	</item>
 	<item id="36097" name="Agathion Innocent Heejin" type="Armor">
-		<!-- Bracelet for summoning Agathion Innocent Heejin (7-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (?ooldown: 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (?ooldown: 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (?ooldown: 20 h.) -->
+		<!-- A bracelet for summoning Agathion Innocent Heejin (7-day). <Active skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown: 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown: 30 min.) 3. Agathion's Gift Gives a random Vitality replenishing/ sustaining/ recovering items. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1847,7 +1847,7 @@
 		</skills>
 	</item>
 	<item id="36098" name="Star Agathion Dandy Hyuk" type="Armor">
-		<!-- Bracelet for summoning Agathion Dandy Hyuk (7-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (Cooldown is 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
+		<!-- Bracelet for summoning Agathion Dandy Hyuk (7-day) <Active Skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown is 30 min.) 3. Agathion's Gift You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -1873,7 +1873,7 @@
 		</skills>
 	</item>
 	<item id="36099" name="Star Agathion Powerful Sooro" type="Armor">
-		<!-- Bracelet for summoning Agathion Powerful Sooro (7-day). <Active Skills>. 1. Agathion's Blessing. Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.). 2. Agathion's Teleportation. Lets you teleport to various places. (Cooldown is 30 min.). 3. Agathion's Gift. You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
+		<!-- Bracelet for summoning Agathion Powerful Sooro (7-day) <Active Skills> 1. Agathion's Blessing Acquired XP/ SP +30% for 60 min. (Cooldown is 5 min.) 2. Agathion's Teleportation Lets you teleport to various places. (Cooldown is 30 min.) 3. Agathion's Gift You can get one of Vitality Replenishing/ Maintaining/ Recovering items at random. (Cooldown: 20 h.) -->
 		<set name="icon" val="icon.bracelet_agathion_bm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />

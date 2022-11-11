@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="20400" name="Laborer Hat" additionalName="Blessed Soul / 7-day" type="Armor">
-		<!-- Hat that was worn by Reipung. -->
+		<!-- A hat worn by Lei Feng. -->
 		<set name="icon" val="BranchSys.icon.br_people_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -19,7 +19,7 @@
 		</skills>
 	</item>
 	<item id="20401" name="Laborer Hat" type="Armor">
-		<!-- Hat that was worn by Reipung. -->
+		<!-- A hat worn by Lei Feng. -->
 		<set name="icon" val="BranchSys.icon.br_people_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -35,7 +35,7 @@
 		<set name="isAppearanceable" val="true" />
 	</item>
 	<item id="20402" name="Package: Laborer Hat (7-day)" additionalName="Blessed Body" type="EtcItem">
-		<!-- Double-click to obtain Laborer Hat (7-day). -->
+		<!-- Double-click to obtain Lei Feng's Hat (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -49,11 +49,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20399" min="1" max="1" chance="100" /> <!-- Laborer Hat - Blessed Body / 7-day -->
+			<item id="20399" min="1" max="1" chance="100" /> <!-- Lei Feng's Hat - Blessed Body / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20403" name="Package: Laborer Hat (7-day)" additionalName="Blessed Soul" type="EtcItem">
-		<!-- Double-click to obtain Laborer Hat (7-day). -->
+		<!-- Double-click to obtain Lei Feng's Hat (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -67,11 +67,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20400" min="1" max="1" chance="100" /> <!-- Laborer Hat - Blessed Soul / 7-day -->
+			<item id="20400" min="1" max="1" chance="100" /> <!-- Lei Feng's Hat - Blessed Soul / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20404" name="Package: Laborer Hat" type="EtcItem">
-		<!-- Double-click to obtain Laborer Hat. -->
+		<!-- Double-click to obtain Lei Feng's Hat. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -85,7 +85,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20401" min="1" max="1" chance="100" /> <!-- Laborer Hat -->
+			<item id="20401" min="1" max="1" chance="100" /> <!-- Lei Feng's Hat -->
 		</capsuled_items>
 	</item>
 	<item id="20405" name="Agathion Majo" additionalName="Big Head / 7-day" type="Armor">
@@ -235,7 +235,7 @@
 		</skills>
 	</item>
 	<item id="20412" name="Agathion Bamboo Panda" additionalName="Resurrection / 7-day" type="Armor">
-		<!-- Bracelet that summons a Bamboo Panda. -->
+		<!-- A bracelet for summoning Daddy Panda. -->
 		<set name="icon" val="BranchSys.icon.br_kunfu_panda_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -293,7 +293,7 @@
 		</skills>
 	</item>
 	<item id="20415" name="Afro Hair" additionalName="Big Head / Firework / 7-day" type="Armor">
-		<!-- Afro style hair. Uses 2 hair accessory slots. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -312,7 +312,7 @@
 		</skills>
 	</item>
 	<item id="20416" name="Afro Hair" additionalName="Wind Walk / 7-day" type="Armor">
-		<!-- Afro style hair. Uses 2 hair accessory slots. -->
+		<!-- An afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -330,7 +330,7 @@
 		</skills>
 	</item>
 	<item id="20417" name="Uniform Hat" additionalName="Blessed Resurrection / 7-day" type="Armor">
-		<!-- A cool uniform hat. Uses 2 hair accessory slots. 7-day. -->
+		<!-- A very stylish head accessory. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Uniform_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -348,7 +348,7 @@
 		</skills>
 	</item>
 	<item id="20418" name="Assassin's Bamboo Hat" additionalName="Wind Walk / 7-day" type="Armor">
-		<!-- Wide brimmed hat made of bamboo. Uses 2 hair accessory slots. Cooldown is 18m. -->
+		<!-- A hat made of bulrush. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Bamboo_Hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -366,7 +366,7 @@
 		</skills>
 	</item>
 	<item id="20419" name="Ruthless Tribe Mask" additionalName="Agility / 7-day" type="Armor">
-		<!-- Mask worn by the reckless tribe. -->
+		<!-- A mask worn by raiders. -->
 		<set name="icon" val="BranchSys.icon.br_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -384,7 +384,7 @@
 		</skills>
 	</item>
 	<item id="20420" name="Ribbon Hairband" additionalName="Reflect Damage / 7-day" type="Armor">
-		<!-- Large ribbon hair accessory. Females only. -->
+		<!-- A bow head accessory. Female only. -->
 		<set name="icon" val="BranchSys.icon.br_Ribbon_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -426,7 +426,7 @@
 		</skills>
 	</item>
 	<item id="20422" name="Kat the Cat Hat" additionalName="Greater Heal / 7-day" type="Armor">
-		<!-- Uses 2 hair accessory slots. -->
+		<!-- Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_cat_the_cat_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -444,7 +444,7 @@
 		</skills>
 	</item>
 	<item id="20423" name="Skull Hat" additionalName="Death Whisper / 7-day" type="Armor">
-		<!-- A hat that looks like a skull. Uses 2 hair accessory slots. -->
+		<!-- A hat that looks like a skull. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_skeleton_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -462,7 +462,7 @@
 		</skills>
 	</item>
 	<item id="20424" name="Gold Afro" additionalName="Agility / 7-day" type="Armor">
-		<!-- Afro style hair in gold. Uses 2 hair accessory slots. -->
+		<!-- A golden afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -480,7 +480,7 @@
 		</skills>
 	</item>
 	<item id="20425" name="Pink Afro" additionalName="Wild Magic / 7-day" type="Armor">
-		<!-- Afro style hair in pink. Uses 2 hair accessory slots. -->
+		<!-- A pink afro wig. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="BranchSys.icon.br_Afro_hair_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -498,7 +498,7 @@
 		</skills>
 	</item>
 	<item id="20426" name="Goggles" additionalName="Wind Walk / 7-day" type="Armor">
-		<!-- Stylish goggle accessory with a fine silver decoration. -->
+		<!-- Stylish goggles with silver decorations. -->
 		<set name="icon" val="BranchSys.icon.br_goggles_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -591,7 +591,7 @@
 		</skills>
 	</item>
 	<item id="20431" name="Daisy Hairpin" additionalName="Dark Resistance / 7-day" type="Armor">
-		<!-- Daisy shaped hairpin. Females only. -->
+		<!-- A hairpin decorated with a daisy flower. Female only. -->
 		<set name="icon" val="icon.accessory_daisy_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -612,7 +612,7 @@
 		</skills>
 	</item>
 	<item id="20432" name="Forget-me-not Hairpin" additionalName="Wind Walk / 7-day" type="Armor">
-		<!-- Forget-me-not shaped hairpin. Females only. -->
+		<!-- A hairpin decorated with a forget-me-not flower. Female only. -->
 		<set name="icon" val="icon.accessory_forget_me_not_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -687,7 +687,7 @@
 		</skills>
 	</item>
 	<item id="20436" name="Red Mask of Victory" additionalName="Mana Regeneration / 7-day" type="Armor">
-		<!-- Hair accessory for World Cup Events. -->
+		<!-- A head accessory for the World Cup event. -->
 		<set name="icon" val="icon.accessory_worldcup_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -705,7 +705,7 @@
 		</skills>
 	</item>
 	<item id="20437" name="Red Horn of Victory" additionalName="Reflect Damage / 7-day" type="Armor">
-		<!-- Hair accessory for World Cup Events. -->
+		<!-- A head accessory for the World Cup event. -->
 		<set name="icon" val="icon.accessory_hair_cornu_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -723,7 +723,7 @@
 		</skills>
 	</item>
 	<item id="20438" name="Party Mask" additionalName="Greater Heal / 7-day" type="Armor">
-		<!-- Fashion item which creates an unique taste. -->
+		<!-- A stylish item that emphasizes your individuality. -->
 		<set name="icon" val="icon.etc_party_mask_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -741,7 +741,7 @@
 		</skills>
 	</item>
 	<item id="20439" name="Red Party Mask" additionalName="Dark Resistance / 7-day" type="Armor">
-		<!-- Fashion item which creates an unique taste. -->
+		<!-- A stylish item that emphasizes your individuality. -->
 		<set name="icon" val="icon.etc_party_mask_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair" />
@@ -758,7 +758,7 @@
 		</skills>
 	</item>
 	<item id="20440" name="Cat Ears" additionalName="Wind Walk / 7-day" type="Armor">
-		<!-- Cat ear shaped hair accessory. -->
+		<!-- A head accessory shaped like cat ears. -->
 		<set name="icon" val="icon.accessory_cat_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -776,7 +776,7 @@
 		</skills>
 	</item>
 	<item id="20441" name="Lady's Hairpin" additionalName="Death Whisper / 7-day" type="Armor">
-		<!-- Hair accessory exclusive to female. -->
+		<!-- Female only. -->
 		<set name="icon" val="icon.accessory_hairpin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -797,7 +797,7 @@
 		</skills>
 	</item>
 	<item id="20442" name="Raccoon Ears" additionalName="Agility / 7-day" type="Armor">
-		<!-- Raccoon ear shaped hair accessory. -->
+		<!-- A head accessory shaped like raccoon ears. -->
 		<set name="icon" val="icon.accessory_racoon_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -815,7 +815,7 @@
 		</skills>
 	</item>
 	<item id="20443" name="Rabbit Ears" additionalName="Wild Magic / 7-day" type="Armor">
-		<!-- Bunny Girls Rabbit Ears shaped hair accessory. -->
+		<!-- A head accessory shaped like rabbit ears. -->
 		<set name="icon" val="icon.accessory_rabbit_ear_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -833,7 +833,7 @@
 		</skills>
 	</item>
 	<item id="20444" name="Little Angel Wings" additionalName="Mana Regeneration / 7-day" type="Armor">
-		<!-- Wings shaped hair accessory. -->
+		<!-- A head accessory shaped like a little white wing. -->
 		<set name="icon" val="icon.accessory_hair_ring_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -851,7 +851,7 @@
 		</skills>
 	</item>
 	<item id="20445" name="Fairy Antennae" additionalName="Reflect Damage / 7-day" type="Armor">
-		<!-- Stars attached cute tentacle hair accessory. -->
+		<!-- A lovely head accessory shaped like antennae with starlets. -->
 		<set name="icon" val="icon.accessory_hair_feeler_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -869,7 +869,7 @@
 		</skills>
 	</item>
 	<item id="20446" name="Chapeau" additionalName="Greater Heal / 7-day" type="Armor">
-		<!-- Feather attached nice poke bonnet. Uses 2 accessory slots. -->
+		<!-- A plumed hat with wide flaps. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_archer_hat_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -887,7 +887,7 @@
 		</skills>
 	</item>
 	<item id="20447" name="Artisan's Goggles" additionalName="Vitality / 7-day" type="Armor">
-		<!-- Large goggles which protect eyes. Uses 2 accessory slots. -->
+		<!-- Large goggles for eye protection. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_dwarf_goggle_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1069,7 +1069,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20457" name="Package: Agathion Bamboo Panda (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Agathion Bamboo Panda (7-day). -->
+		<!-- Double-click to obtain Agathion Daddy Panda (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1083,11 +1083,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20412" min="1" max="1" chance="100" /> <!-- Agathion Bamboo Panda - Resurrection / 7-day -->
+			<item id="20412" min="1" max="1" chance="100" /> <!-- Agathion Daddy Panda - Resurrection / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20458" name="Package: Agathion Sexy Panda (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Agathion Sexy Panda (7-day). -->
+		<!-- Double-click to obtain Agathion Mommy Panda (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1101,7 +1101,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20413" min="1" max="1" chance="100" /> <!-- Agathion Sexy Panda - Escape / 7-day -->
+			<item id="20413" min="1" max="1" chance="100" /> <!-- Agathion Mommy Panda - Escape / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20459" name="Package: Horn-rimmed Glasses (7-day)" type="EtcItem">
@@ -1123,7 +1123,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20460" name="Package: Afro Hair (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Afro Hair (7-day). -->
+		<!-- Double-click to obtain Afro Hairstyle (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1137,11 +1137,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20415" min="1" max="1" chance="100" /> <!-- Afro Hair - Big Head / Firework / 7-day -->
+			<item id="20415" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Big Head / Firework / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20461" name="Package: Afro Hair (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Afro Hair (7-day). -->
+		<!-- Double-click to obtain Afro Hairstyle (7-day). -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1155,7 +1155,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20416" min="1" max="1" chance="100" /> <!-- Afro Hair - Wind Walk / 7-day -->
+			<item id="20416" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Wind Walk / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20462" name="Package: Uniform Hat (7-day)" type="EtcItem">
@@ -1285,7 +1285,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20469" name="Package: Gold Afro (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Gold Afro. -->
+		<!-- Double-click to obtain Golden Afro Hairstyle. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1299,11 +1299,11 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20424" min="1" max="1" chance="100" /> <!-- Gold Afro - Agility / 7-day -->
+			<item id="20424" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Golden - Agility / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20470" name="Package: Pink Afro (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Pink Afro. -->
+		<!-- Double-click to obtain Pink Afro Hairstyle. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1317,7 +1317,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20425" min="1" max="1" chance="100" /> <!-- Pink Afro - Wild Magic / 7-day -->
+			<item id="20425" min="1" max="1" chance="100" /> <!-- Afro Hairstyle - Pink - Wild Magic / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20471" name="Package: Goggles (7-day)" type="EtcItem">
@@ -1501,7 +1501,7 @@
 		</capsuled_items>
 	</item>
 	<item id="20481" name="Package: Red Mask of Victory (7-day)" type="EtcItem">
-		<!-- Double-click to obtain Red Mask of Victory (7-day). -->
+		<!-- Double-click to obtain Mask of Spirits. -->
 		<set name="icon" val="BranchSys.icon.br_four_leaf_clover_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1515,7 +1515,7 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="20436" min="1" max="1" chance="100" /> <!-- Red Mask of Victory - Mana Regeneration / 7-day -->
+			<item id="20436" min="1" max="1" chance="100" /> <!-- Mask of Spirits - Mana Regeneration / 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="20482" name="Package: Red Horn of Victory (7-day)" type="EtcItem">

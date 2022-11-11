@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="13300" name="Feather of Blessing (Event)" type="EtcItem">
-		<!-- You can resurrect right away at the spot where you get killed if you have the Feather of Blessing. -->
+		<!-- Allows you to resurrect immediately after death at the same spot. -->
 		<set name="icon" val="icon.blessed_feather_i00" />
 		<set name="material" val="LIQUID" />
 		<set name="is_tradable" val="false" />
@@ -134,7 +134,7 @@
 		<set name="handler" val="NicknameColor" />
 	</item>
 	<item id="13308" name="Darkmane Pacer Bracelet (Event)" additionalName="7-day" type="Armor">
-		<!-- Allows to mount a Darkmane Pacer when equipped. 7-day. -->
+		<!-- Allows to mount Darkmane Pacer. Available for 7 d. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lbracelet" />
@@ -248,7 +248,7 @@
 		<set name="is_destroyable" val="false" />
 	</item>
 	<item id="13315" name="Skull Hat (Event)" additionalName="30-day" type="Armor">
-		<!-- Hair accessory that looks like a skull. 30-day. -->
+		<!-- A head accessory that looks like a skull. Available for 30 d. -->
 		<set name="icon" val="icon.accessory_skeleton_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -772,7 +772,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13301" min="1" max="1" chance="100" /> <!-- My Teleport Book Lv. 1 (Event) -->
+			<item id="13301" min="1" max="1" chance="100" /> <!-- My Teleport Book Lv. 1 - Event -->
 		</capsuled_items>
 	</item>
 	<item id="13342" name="Package: My Teleport Scroll (30 pcs.) - Event" type="EtcItem">
@@ -806,7 +806,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13300" min="3" max="3" chance="100" /> <!-- Feather of Blessing (Event) -->
+			<item id="13300" min="3" max="3" chance="100" /> <!-- Feather of Blessing - Event -->
 		</capsuled_items>
 	</item>
 	<item id="13344" name="Package: Agathion Love (30-day) - Event" type="EtcItem">
@@ -1066,7 +1066,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13308" min="1" max="1" chance="100" /> <!-- Darkmane Pacer Bracelet (Event) - 7-day -->
+			<item id="13308" min="1" max="1" chance="100" /> <!-- Darkmane Pacer Bracelet - Event - 7-day -->
 		</capsuled_items>
 	</item>
 	<item id="13359" name="Package: Color Title (3 pcs.) - Event" type="EtcItem">
@@ -1236,7 +1236,7 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13300" min="1" max="1" chance="100" /> <!-- Feather of Blessing (Event) -->
+			<item id="13300" min="1" max="1" chance="100" /> <!-- Feather of Blessing - Event -->
 		</capsuled_items>
 	</item>
 	<item id="13369" name="Package: Agathion Love (7-day) - Event" type="EtcItem">
@@ -1481,7 +1481,7 @@
 		</skills>
 	</item>
 	<item id="13383" name="Pet Necklace Coupon (5-hour) - Event" type="EtcItem">
-		<!-- A coupon that can be exchanged for Minion Necklace (5-hour) through the Game Assistant. -->
+		<!-- A coupon that can be exchanged for Pet Necklace (5-hour) through the Game Assistant. -->
 		<set name="icon" val="icon.etc_ticket_red_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
@@ -1493,7 +1493,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="13384" name="Package: Pet Necklace Coupon (3 pcs.) - Event" type="EtcItem">
-		<!-- Game Assistant's pack. Double-click to obtain a coupon that can be exchanged for Minion Necklace (5-hour) through the Game Assistant. -->
+		<!-- Game Assistant's pack. Double-click to obtain a coupon that can be exchanged for Pet Necklace (5-hour) through the Game Assistant. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1506,11 +1506,11 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13383" min="3" max="3" chance="100" /> <!-- Minion Coupon (5-hour) - Event -->
+			<item id="13383" min="3" max="3" chance="100" /> <!-- Pet Necklace Coupon (5-hour) - Event -->
 		</capsuled_items>
 	</item>
 	<item id="13385" name="Package: Pet Necklace Coupon (1 pc.) - Event" type="EtcItem">
-		<!-- Game Assistant's pack. Double-click to obtain a coupon that can be exchanged for Minion Necklace (5-hour). -->
+		<!-- Game Assistant's pack. Double-click to obtain a coupon that can be exchanged for Pet Necklace (5-hour). -->
 		<set name="icon" val="icon.etc_pi_gift_box_i02" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1523,11 +1523,11 @@
 		<set name="is_premium" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="13383" min="1" max="1" chance="100" /> <!-- Minion Coupon (5-hour) - Event -->
+			<item id="13383" min="1" max="1" chance="100" /> <!-- Pet Necklace Coupon (5-hour) - Event -->
 		</capsuled_items>
 	</item>
 	<item id="13386" name="Blue Crystal of Fantasy" type="EtcItem">
-		<!-- SP +500 when used. Can be used at Lv. 76 or above. -->
+		<!-- Recovers 1 SP. Required level: 76+. -->
 		<set name="icon" val="icon.etc_sp_crystal_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1545,7 +1545,7 @@
 		</skills>
 	</item>
 	<item id="13387" name="Fantasy Green Crystal" type="EtcItem">
-		<!-- SP +1000 when used. Can be used at Lv. 76 or above. -->
+		<!-- Recovers 1 SP. Required level: 76+. -->
 		<set name="icon" val="icon.etc_sp_crystal_i02" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1563,7 +1563,7 @@
 		</skills>
 	</item>
 	<item id="13388" name="Fantasy Red Crystal" type="EtcItem">
-		<!-- SP +2000 when used. Can be used at Lv. 76 or above. -->
+		<!-- Recovers 1 SP. Required level: 76+. -->
 		<set name="icon" val="icon.etc_sp_crystal_i01" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="etcitem_type" val="SCROLL" />
@@ -1661,7 +1661,7 @@
 		</stats>
 	</item>
 	<item id="13393" name="Shadow Item: Monkey Hat" type="Armor">
-		<!-- Cute Monkey Hat. Uses 2 hair accessory slots. -->
+		<!-- A cute monkey hat. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.monkey_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />
@@ -1674,7 +1674,7 @@
 		<set name="duration" val="100" />
 	</item>
 	<item id="13394" name="Shadow Item: Pig Hat" type="Armor">
-		<!-- Cute Pig Hat. Uses 2 hair accessory slots. -->
+		<!-- A cute piggy hat. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.event_pig_cap_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hairall" />

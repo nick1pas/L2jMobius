@@ -317,7 +317,7 @@
 		</capsuled_items>
 	</item>
 	<item id="26224" name="Steel Demon's Staff (60-day)" type="Weapon">
-		<!-- Cannot enchant, augment, or enchant with a soul crystal. 60-day. -->
+		<!-- Upgrade options (enchanting, augmenting, soul crystal inserting) are limited. Available for 60 d. -->
 		<set name="icon" val="icon.weapon_demons_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -342,7 +342,7 @@
 		</stats>
 	</item>
 	<item id="26225" name="Steel Spirit's Staff (60-day)" type="Weapon">
-		<!-- Cannot enchant, augment, or enchant with a soul crystal. 60-day. -->
+		<!-- Upgrade options (enchanting, augmenting, soul crystal inserting) are limited. Available for 60 d. -->
 		<set name="icon" val="icon.weapon_sprites_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -367,7 +367,7 @@
 		</stats>
 	</item>
 	<item id="26226" name="Steel Dasparion's Staff (60-day)" type="Weapon">
-		<!-- Cannot enchant, augment, or enchant with a soul crystal. 60-day. -->
+		<!-- Upgrade options (enchanting, augmenting, soul crystal inserting) are limited. Available for 60 d. -->
 		<set name="icon" val="icon.weapon_dasparions_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -392,7 +392,7 @@
 		</stats>
 	</item>
 	<item id="26227" name="Steel Imperial Staff (60-day)" type="Weapon">
-		<!-- Cannot enchant, augment, or enchant with a soul crystal. 60-day. -->
+		<!-- Upgrade options (enchanting, augmenting, soul crystal inserting) are limited. Available for 60 d. -->
 		<set name="icon" val="icon.weapon_imperial_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -417,7 +417,7 @@
 		</stats>
 	</item>
 	<item id="26228" name="Steel Dynasty Staff (60-day)" type="Weapon">
-		<!-- Cannot enchant, augment, or enchant with a soul crystal. 60-day. -->
+		<!-- Upgrade options (enchanting, augmenting, soul crystal inserting) are limited. Available for 60 d. -->
 		<set name="icon" val="icon.weapon_dynasty_twohand_staff_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="lrhand" />
@@ -514,8 +514,8 @@
 			<item id="37153" min="1" max="1" chance="100" /> <!-- Steel Avadon Robe (60-day) -->
 			<item id="37229" min="2" max="2" chance="100" /> <!-- Steel Adamantite Ring (60-day) -->
 			<item id="37228" min="1" max="1" chance="100" /> <!-- Steel Adamantite Necklace (60-day) -->
-			<item id="37155" min="1" max="1" chance="100" /> <!-- Steel Avadon Gloves - Robe (60-day) -->
-			<item id="37156" min="1" max="1" chance="100" /> <!-- Steel Avadon Boots - Robe (60-day) -->
+			<item id="37155" min="1" max="1" chance="100" /> <!-- Steel Avadon Gloves (Robe) (60-day) -->
+			<item id="37156" min="1" max="1" chance="100" /> <!-- Steel Avadon Boots (Robe) (60-day) -->
 			<item id="37257" min="1" max="1" chance="100" /> <!-- Steel Wizard's Tear (60-day) -->
 			<item id="26233" min="1" max="1" chance="100" /> <!-- Fated A-grade Support Box: Ertheia Wizard -->
 		</capsuled_items>
@@ -541,7 +541,7 @@
 			<item id="37228" min="1" max="1" chance="100" /> <!-- Steel Adamantite Necklace (60-day) -->
 			<item id="37159" min="1" max="1" chance="100" /> <!-- Steel Doom Gloves (Light) (60-day) -->
 			<item id="37160" min="1" max="1" chance="100" /> <!-- Steel Doom Boots (Light) (60-day) -->
-			<item id="37265" min="1" max="1" chance="100" /> <!-- Steel Arthro Nail (60-day) -->
+			<item id="37265" min="1" max="1" chance="100" /> <!-- Steel Arthro Claw (60-day) -->
 			<item id="37158" min="1" max="1" chance="100" /> <!-- Steel Doom Leather Armor (60-day) -->
 			<item id="37148" min="1" max="1" chance="100" /> <!-- Steel Doom Helmet (60-day) -->
 			<item id="26234" min="1" max="1" chance="100" /> <!-- Fated A-grade Support Box: Ertheia Fighter -->
@@ -597,7 +597,7 @@
 			<item id="37172" min="1" max="1" chance="100" /> <!-- Steel Dark Crystal Leggings (60-day) -->
 			<item id="37174" min="1" max="1" chance="100" /> <!-- Steel Dark Crystal Boots (Light) (60-day) -->
 			<item id="37171" min="1" max="1" chance="100" /> <!-- Steel Dark Crystal Leather Armor (60-day) -->
-			<item id="37277" min="1" max="1" chance="100" /> <!-- Steel Blood Tornado (60-day) -->
+			<item id="37277" min="1" max="1" chance="100" /> <!-- Steel Bloody Tornado (60-day) -->
 			<item id="37167" min="1" max="1" chance="100" /> <!-- Steel Dark Crystal Helmet (60-day) -->
 			<item id="26236" min="1" max="1" chance="100" /> <!-- Fated S-grade Support Box: Ertheia Fighter Lv. 1 -->
 		</capsuled_items>
@@ -833,7 +833,7 @@
 		<set name="material" val="LIQUID" />
 	</item>
 	<item id="26246" name="Hero's Support Box" type="EtcItem">
-		<!-- Double-click to obtain Nevit's Rune (Dragon's Ascension) (7-day), Freya's Art of Seduction - EXP (10 pcs.), Dandy's Home Run Ball (3 pcs.), Hero's Mark (250 pcs.), Hero's High-grade Support Box. For characters of level 85 or higher. -->
+		<!-- Double-click to obtain Nevit's Rune (Dragon's Ascension) (7-day), Freya's Art of Seduction - XP (10 pcs.), Dandy's Home Run Ball (3 pcs.), Hero's Mark (250 pcs.), Hero's High-grade Support Box. Required level: 85+. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -868,9 +868,9 @@
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="23798" min="1" max="1" chance="100" /> <!-- Blessed Lucky Enchant Stone: R-grade Armor -->
-			<item id="23792" min="1" max="1" chance="100" /> <!-- Blessed Lucky Enchant Stone: R-grade Weapon -->
-			<item id="26248" min="1" max="1" chance="100" /> <!-- Hero's Support Cube -->
+			<item id="23798" min="1" max="1" chance="100" /> <!-- Blessed Stone: Enchant R-grade Armor -->
+			<item id="23792" min="1" max="1" chance="100" /> <!-- Blessed Stone: Enchant R-grade Weapon -->
+			<item id="26248" min="1" max="1" chance="100" /> <!-- Returning Hero's Support Cube -->
 			<item id="33512" min="1" max="1" chance="100" /> <!-- Returning Hero's Vitality Replenishing Juice -->
 			<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
 			<item id="17526" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Weapon -->
@@ -937,7 +937,7 @@
 		</stats>
 	</item>
 	<item id="26251" name="Lilith Arrival's Mask" type="Armor">
-		<!-- Mask for players who came from the Lilith server. Uses 2 hair accessory slots. -->
+		<!-- A commemorate mask for those who came from the Lilith server. Equipped in 2 head accessory slots. -->
 		<set name="icon" val="icon.accessory_middle_age_party_mask2_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_tradable" val="false" />
@@ -959,7 +959,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="26253" name="Halloween Weapon Appearance Stone" type="EtcItem">
-		<!-- Changes the appearance of a weapon to that of a Halloween weapon. Can be used on shields and sigils. The Halloween Skill is applied when the appearance is changed. Note!. The appearance is reset when the Change Weapon skill is used. -->
+		<!-- Changes the appearance of a weapon to that of a Halloween weapon. Can be used on shields and sigils. The Halloween Skill is applied when the appearance is changed. Note! The appearance is reset when the Change Weapon skill is used. -->
 		<set name="icon" val="BranchSys3.icon1.g_auto_shape_shift_stone" />
 		<set name="is_sellable" val="false" />
 		<set name="etcitem_type" val="SHAPE_SHIFTING_WP_FIXED" />
@@ -968,7 +968,7 @@
 		<set name="material" val="PAPER" />
 	</item>
 	<item id="26254" name="Halloween Outfit" type="Armor">
-		<!-- Halloween outfit. -->
+		<!-- Halloween Outfit -->
 		<set name="icon" val="icon.ev_wp_halloween" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
@@ -979,7 +979,7 @@
 		<set name="bodypart" val="alldress" />
 	</item>
 	<item id="26255" name="Halloween Outfit" type="Armor">
-		<!-- When equipped, armor is unequipped and cannot be used. Hair accessories, weapons, and accessories remain equipped. -->
+		<!-- Halloween weapon. -->
 		<set name="icon" val="icon.ev_wp_halloween" />
 		<set name="default_action" val="EQUIP" />
 		<set name="is_sellable" val="false" />
@@ -1380,7 +1380,7 @@
 		<set name="material" val="STEEL" />
 	</item>
 	<item id="26274" name="Halloween Weapon Appearance Stone" type="EtcItem">
-		<!-- Changes the weapon appearance to that of Halloween weapon. Can be used on shields and sigils. Note!. The appearance is reset when the Change Weapon skill is used. -->
+		<!-- Changes the weapon appearance to that of Halloween weapon. Can be used on shields and sigils. Note! The appearance is reset when the Change Weapon skill is used. -->
 		<set name="icon" val="BranchSys3.icon1.g_auto_shape_shift_stone" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -1782,7 +1782,7 @@
 		<set name="bodypart" val="lbracelet" />
 	</item>
 	<item id="26293" name="Agathion Matryoshka" additionalName="7-day" type="Armor">
-		<!-- Summons Agathion Matryoshka. Active skills:. 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
+		<!-- Summons Agathion Matryoshka. Active skills: 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1806,7 +1806,7 @@
 		<set name="bodypart" val="lbracelet" />
 	</item>
 	<item id="26295" name="Agathion Matryoshka" additionalName="30-day" type="Armor">
-		<!-- Summons Agathion Matryoshka. Active skills:. 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
+		<!-- Summons Agathion Matryoshka. Active skills: 1. Matryoshka Teleport: Teleports to Talking Island Village/ Aden/ Ancient City Arcan/ Keucereus Alliance Base. 2. Matryoshka's Gift: Gives a special gift every 12 h. 3. Matryoshka's Blessing: Acquired XP/ SP +30% for 60 min. -->
 		<set name="icon" val="icon.etc_rbracelet_aga_agit_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weight" val="150" />
@@ -1818,7 +1818,7 @@
 		<set name="bodypart" val="lbracelet" />
 	</item>
 	<item id="26296" name="La Vie En Rose's Jewelry Box" type="EtcItem">
-		<!-- Double-click to acquire 1 of La Vie En Rose's jewels. Cannot be used in the auction house. -->
+		<!-- Double-click to obtain a La Vie En Rose's Jewel Pack. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1832,7 +1832,7 @@
 		</skills>
 	</item>
 	<item id="26297" name="La Vie En Rose's Jewelry Kit (10 pcs.)" type="EtcItem">
-		<!-- Double-click to acquire 10 La Vie En Rose's Jewelry Boxes. Cannot be used in the auction house. -->
+		<!-- Double-click to obtain 10 La Vie En Rose's Jewelry Boxes. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_main_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1846,7 +1846,7 @@
 		</capsuled_items>
 	</item>
 	<item id="26298" name="Kit: Enhanced La Vie En Rose's Brooch" type="EtcItem">
-		<!-- Double-click to acquire 30 La Vie En Rose's Jewelry Boxes and 1 Enhanced La Vie En Rose's Brooch Pack. -->
+		<!-- Double-click to obtain 30 La Vie En Rose's Jewelry Boxes and Enhanced Brooch Pack. -->
 		<set name="icon" val="icon.etc_pi_box_wish_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -1860,7 +1860,7 @@
 		</capsuled_items>
 	</item>
 	<item id="26299" name="Kit: La Vie En Rose's Brooch Lv. 1" type="EtcItem">
-		<!-- Double-click to acquire 30 La Vie En Rose's Jewelry Boxes and one Lv. 1 La Vie En Rose's Brooch Pack. -->
+		<!-- Double-click to obtain 30 La Vie En Rose's Jewelry Boxes and La Vie En Rose's Brooch Pack Lv. 1. -->
 		<set name="icon" val="icon.etc_pi_box_love_pack" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />

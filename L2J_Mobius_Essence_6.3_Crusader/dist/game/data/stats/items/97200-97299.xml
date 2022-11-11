@@ -332,7 +332,7 @@
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="97230" name="Scroll of Escape: Guardian Tanai" additionalName="Sealed" type="EtcItem">
-		<!-- Teleports to Captain Bathis in Giran Castle. -->
+		<!-- A magic scroll that can teleport you to Guardian Tanai in the Orc Village. -->
 		<set name="icon" val="icon.etc_scroll_of_return_i04" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -438,7 +438,7 @@
 		</stats>
 	</item>
 	<item id="97236" name="Spear of Xilenos" type="Weapon">
-		<!-- <Pet equipment effect> Increases P./ M. Atk. <Acquisition> Goddard Territory Purge -->
+		<!-- <Pet equipment effect> Increases P./ M. Atk. <Acquisition> Goddard Territory Purge <font color=ff6666><Unavailable to Sylphs></font> -->
 		<set name="icon" val="icon.weapon_transgredi_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -464,7 +464,7 @@
 		</stats>
 	</item>
 	<item id="97237" name="Spear of Xilenos" additionalName="Sealed" type="Weapon">
-		<!-- <Pet equipment effect> Increases P./ M. Atk. <Acquisition> Goddard Territory Purge -->
+		<!-- <Pet equipment effect> Increases P./ M. Atk. <Acquisition> Goddard Territory Purge <font color=ff6666><Unavailable to Sylphs></font> -->
 		<set name="icon" val="icon.weapon_transgredi_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -745,7 +745,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97259" name="Ignore Decrease Mask" additionalName="Sealed" type="Armor">
-		<!-- Can be enchanted up to +10 with enchant scrolls. Activates special effects depending on the enchant value. The enchanting isn't safe even to +1. <font color=eeaa22>Equipped in the right hair accessory slot.</font> -->
+		<!-- Can be enchanted up to +10 with enchant scrolls. Activates special effects depending on the enchant value. The enchanting isn't safe even to +1. <font color=eeaa22>Equipped in the right head accessory slot.</font> -->
 		<set name="icon" val="icon.accessory_black_half_face_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="hair2" />
@@ -829,7 +829,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97265" name="Scroll: Enchant Ignore Decrease Mask" additionalName="Sealed" type="EtcItem">
-		<!-- Required for enchanting Ignore Decrease Mask. The maximum enchant value is +10. -->
+		<!-- Required for enchanting Piercing Mask. The maximum enchant value is +10. -->
 		<set name="icon" val="icon.episode_scrl_of_ench_hair" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
@@ -856,8 +856,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97259" min="1" max="1" chance="100" /> <!-- Ignore Decrease Mask Sealed -->
-			<item id="97265" min="10" max="10" chance="100" /> <!-- Scroll: Enchant Ignore Decrease Mask Sealed -->
+			<item id="97259" min="1" max="1" chance="100" /> <!-- Piercing Mask - Sealed -->
+			<item id="97265" min="10" max="10" chance="100" /> <!-- Scroll: Enchant Piercing Mask - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97267" name="Entry Token to Xilenos' Secret Hall" additionalName="Sealed" type="EtcItem">

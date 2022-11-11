@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
 	<item id="8800" name="Naga's Storm" additionalName="Focus" type="Weapon">
-		<!-- <Soul Crystal Enhancement>. P. Critical Rate +67. Inflicts additional damage in PvP. -->
+		<!-- <Soul crystal property> P. Critical Rate +67. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_naga_storm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -32,7 +32,7 @@
 		</stats>
 	</item>
 	<item id="8801" name="Naga's Storm" additionalName="Critical Damage" type="Weapon">
-		<!-- <Soul Crystal properties>. P. Atk. +200 after a critical attack. Increases PvP damage. -->
+		<!-- <Soul crystal property> P. Atk. +200 after a critical attack. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_naga_storm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -63,7 +63,7 @@
 		</stats>
 	</item>
 	<item id="8802" name="Naga's Storm" additionalName="Backstab" type="Weapon">
-		<!-- <Soul Crystal properties>. Critical Rate for standard attacks +37 after a backstab. Increases PvP damage. -->
+		<!-- <Soul crystal property> Critical Rate for basic attacks +37 after a backstab. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_naga_storm_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -94,7 +94,7 @@
 		</stats>
 	</item>
 	<item id="8803" name="Tiphon's Spear" additionalName="Critical Stun" type="Weapon">
-		<!-- <Soul Crystal properties>. A 25% chance of stunning the target after a critical attack. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a 25% chance, stuns the target after a critical attack. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -126,7 +126,7 @@
 		</stats>
 	</item>
 	<item id="8804" name="Tiphon's Spear" additionalName="Long Blow" type="Weapon">
-		<!-- <Soul Crystal property>. Increases attack range and PvP damage. -->
+		<!-- <Soul crystal property> Increases attack range. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -157,7 +157,7 @@
 		</stats>
 	</item>
 	<item id="8805" name="Tiphon's Spear" additionalName="Wild Blow" type="Weapon">
-		<!-- <Soul Crystal properties>. Widens the angle of attack. Increases PvP damage. -->
+		<!-- <Soul crystal property> Widens attack angle. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_tiphon_spear_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -188,7 +188,7 @@
 		</stats>
 	</item>
 	<item id="8806" name="Shyeed's Bow" additionalName="Cheap Shot" type="Weapon">
-		<!-- <Soul Crystal property>. A 30% chance of decreasing MP Consumption to 1 after a standard attack. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a 30% chance, decreases MP Consumption by 1 after a basic attack. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_shyid_bow_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -223,7 +223,7 @@
 		</stats>
 	</item>
 	<item id="8807" name="Shyeed's Bow" additionalName="Focus" type="Weapon">
-		<!-- <Soul Crystal Enhancement>. P. Critical Rate +61. Inflicts additional damage in PvP. -->
+		<!-- <Soul crystal property> P. Critical Rate +61. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_shyid_bow_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -257,7 +257,7 @@
 		</stats>
 	</item>
 	<item id="8808" name="Shyeed's Bow" additionalName="Quick Recovery" type="Weapon">
-		<!-- <Soul Crystal Enhancement>. Skill Cooldown is about -17%. Inflicts additional damage in PvP. -->
+		<!-- <Soul crystal property> Skill Cooldown -17%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_shyid_bow_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -291,7 +291,7 @@
 		</stats>
 	</item>
 	<item id="8809" name="Sobekk's Hurricane" additionalName="Haste" type="Weapon">
-		<!-- <Soul Crystal property>. Atk. Spd. +11% when HP is lower than 60%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Atk. Spd. +11% when HP is lower than 60%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -322,7 +322,7 @@
 		</stats>
 	</item>
 	<item id="8810" name="Sobekk's Hurricane" additionalName="Haste" type="Weapon">
-		<!-- <Soul Crystal properties>. Atk. Spd. +6%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Atk. Spd. +6%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -353,7 +353,7 @@
 		</stats>
 	</item>
 	<item id="8811" name="Sobekk's Hurricane" additionalName="Critical Drain" type="Weapon">
-		<!-- <Soul Crystal property>. A chance to absorb 14 HP from the target after a critical attack. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a certain chance, absorbs 14 HP from the target after a critical attack. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_sobekk_hurricane_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -385,7 +385,7 @@
 		</stats>
 	</item>
 	<item id="8812" name="Themis' Tongue" additionalName="Mana Up" type="Weapon">
-		<!-- <Soul Crystal property>. Max MP +30%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Max MP +30%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_tongue_of_themis_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -416,7 +416,7 @@
 		</stats>
 	</item>
 	<item id="8813" name="Themis' Tongue" additionalName="Mental Shield" type="Weapon">
-		<!-- <Soul Crystal property>. A 50% chance of casting Mental Shield on the target after using a buff. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a 50% chance, applies Mental Shield on the target after using a buff. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_tongue_of_themis_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -448,7 +448,7 @@
 		</stats>
 	</item>
 	<item id="8814" name="Themis' Tongue" additionalName="Magic Focus" type="Weapon">
-		<!-- <Soul Crystal property>. A 20% chance of casting Focus on the target after using a buff. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a 20% chance, applies Focus on the target after using a buff. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_tongue_of_themis_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -480,7 +480,7 @@
 		</stats>
 	</item>
 	<item id="8815" name="Cabrio's Hand" additionalName="Conversion" type="Weapon">
-		<!-- <Soul Crystal property>. Max MP +60%, Max HP -40%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Max MP +60%, Max HP -40%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_hand_of_cabrio_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -512,7 +512,7 @@
 		</stats>
 	</item>
 	<item id="8816" name="Cabrio's Hand" additionalName="Mana Up" type="Weapon">
-		<!-- <Soul Crystal property>. Max MP +30%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Max MP +30%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_hand_of_cabrio_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -544,7 +544,7 @@
 		</stats>
 	</item>
 	<item id="8817" name="Cabrio's Hand" additionalName="Silence" type="Weapon">
-		<!-- <Soul Crystal property>. A 10% chance of inflicting Silence on the target after using a debuff. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a 10% chance, inflicts Silence on the target after using a debuff. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_hand_of_cabrio_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -577,7 +577,7 @@
 		</stats>
 	</item>
 	<item id="8818" name="Daimon Crystal" additionalName="Mana Up" type="Weapon">
-		<!-- <Soul Crystal property>. Max MP +30%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Max MP +30%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_crystal_of_deamon_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -609,7 +609,7 @@
 		</stats>
 	</item>
 	<item id="8819" name="Daimon Crystal" additionalName="Acumen" type="Weapon">
-		<!-- <Soul Crystal property>. Casting Spd. +15%. Increases PvP damage. -->
+		<!-- <Soul crystal property> Casting Spd. +15%. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_crystal_of_deamon_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -641,7 +641,7 @@
 		</stats>
 	</item>
 	<item id="8820" name="Daimon Crystal" additionalName="Mental Shield" type="Weapon">
-		<!-- <Soul Crystal property>. A 50% chance of casting Mental Shield on the target after using a buff. Increases PvP damage. -->
+		<!-- <Soul crystal property> With a 50% chance, applies Mental Shield on the target after using a buff. Deals additional PvP damage. -->
 		<set name="icon" val="icon.weapon_crystal_of_deamon_i01" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -781,7 +781,7 @@
 		</stats>
 	</item>
 	<item id="8825" name="Shadow Item: Kukuri" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Kukuri. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Kukuri. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_kukuri_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -836,7 +836,7 @@
 		</stats>
 	</item>
 	<item id="8827" name="Shadow Item: Triple-edged Jamadhr" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Triple-Edged Jamadh. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Triple-edged Jamadhr. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_triple_edged_jamadhr_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -863,7 +863,7 @@
 		</stats>
 	</item>
 	<item id="8828" name="Shadow Item: Gastraphetes" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Gastraphetes. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Gastraphetes. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_gastraphetes_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BOW" />
@@ -922,7 +922,7 @@
 		</stats>
 	</item>
 	<item id="8830" name="Shadow Item: Katana" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Katana. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Katana. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_katana_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -948,7 +948,7 @@
 		</stats>
 	</item>
 	<item id="8831" name="Shadow Item: Bec de Corbin" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Bec de Corbin. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Bec de Corbin. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_bech_de_corbin_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="POLE" />
@@ -1006,7 +1006,7 @@
 		</stats>
 	</item>
 	<item id="8833" name="Shadow Item: Stiletto" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Stiletto. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Stiletto. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_stiletto_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -1090,7 +1090,7 @@
 		</stats>
 	</item>
 	<item id="8836" name="Shadow Item: Dwarven War Hammer" type="Weapon">
-		<!-- This Shadow Item contains the mirrored power of a Dwarven War Hammer. It cannot be crystallized or granted functions besides enchantment. -->
+		<!-- This shadow item contains the reflected power of Dwarven War Hammer. Cannot be crystallized or upgraded. -->
 		<set name="icon" val="icon.time_weapon_dwarven_warhammer_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -2058,7 +2058,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8877" name="Spellbook: Soul of the Phoenix" type="EtcItem">
-		<!-- A spellbook for learning the Soul of the Phoenix skill. Used by Phoenix Knights. -->
+		<!-- A spellbook for learning the Soul of Phoenix skill. Used by Phoenix Knights. -->
 		<set name="icon" val="icon.etc_spell_books_element_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2208,7 +2208,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8892" name="Ancient Tactical Manual: Symbol of Defense" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of Defense. Can be used by a Phoenix Knight, Hell Knight, Eva's Templar, and Shillien Templar. -->
+		<!-- An ancient spellbook for learning the Sigil of Protection skill. Used by Phoenix Knights, Hell Knights, Eva's Templars and Shillien Templars. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2218,7 +2218,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8893" name="Ancient Tactical Manual: Symbol of Noise" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of Noise. Can be used by a Sword Muse and Spectral Dancer. -->
+		<!-- An ancient spellbook for learning the Symbol of Noise skill. Used by Sword Muses and Spectral Dancers. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2228,7 +2228,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8894" name="Ancient Tactical Manual: Symbol of Resistance" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of Resistance. Can be used by a Titan and Fortune Seeker. -->
+		<!-- An ancient spellbook for learning the Symbol of Resistance skill. Used by Titans and Fortune Seekers. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2238,7 +2238,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8895" name="Ancient Tactical Manual: Symbol of Honor" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of Honor. Can be used by a Dreadnought and Maestro. -->
+		<!-- An ancient spellbook for learning the Symbol of Honor skill. Used by Dreadnoughts and Maestros. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2248,7 +2248,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8896" name="Ancient Tactical Manual: Symbol of Energy" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of Energy. Can be used by a Duelist and Grand Khavatari. -->
+		<!-- An ancient spellbook for learning the Symbol of Energy skill. Used by Duelists and Grand Khavatari. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2258,7 +2258,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8897" name="Ancient Tactical Manual: Symbol of the Sniper" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of the Sniper. Can be used by a Sagittarius, Ghost Sentinel, and Moonlight Sentinel. -->
+		<!-- An ancient spellbook for learning the Symbol of Sniper skill. Used by Sagittariuses, Ghost Sentinels and Moonlight Sentinels. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
@@ -2268,7 +2268,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="8898" name="Ancient Tactical Manual: Symbol of the Assassin" type="EtcItem">
-		<!-- Ancient Tactical Manual needed to master the Symbol of Assassin. Can be used by an Adventurer and a Windrider. -->
+		<!-- An ancient spellbook for learning the Symbol of Assassin skill. Used by Adventurers, Wind Riders and Ghost Hunters. -->
 		<set name="icon" val="icon.etc_spell_books_assistance_i00" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />

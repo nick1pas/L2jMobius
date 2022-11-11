@@ -54,7 +54,7 @@
 		</skills>
 	</item>
 	<item id="28504" name="Frintezza's Transformation Chocolate" type="EtcItem">
-		<!-- Contains Frintezza's limitless power. For 60 min., randomly transform into Snow Kung/ Scarecrow Jack/ Tin Golem/ Makeshift Bat/ Lady Tow/ Heavy Tow/ Sleepy Tow. -->
+		<!-- Filled with Frintezza's limitless power. For 1 h., transforms into one of the following funny creatures: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. -->
 		<set name="icon" val="icon.etc_whiteday_choco" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -66,7 +66,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="28505" name="Frintezza's Transformation Candy" type="EtcItem">
-		<!-- Contains Frintezza's limitless power. For 60 min., randomly transform in to Snow Kung/ Scarecrow Jack/ Tin Golem/ Makeshift Bat/ Lady Tow/ Heavy Tow/ Sleepy Tow. -->
+		<!-- Filled with Frintezza's limitless power. For 1 h., transforms into one of the following funny creatures: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. -->
 		<set name="icon" val="icon.etc_whiteday_candy" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -78,7 +78,7 @@
 		<set name="is_sellable" val="false" />
 	</item>
 	<item id="28506" name="Frintezza's Transformation Cookie" type="EtcItem">
-		<!-- Contains Frintezza's limitless power. For 60 min., randomly transform in to Snow Kung/ Scarecrow Jack/ Tin Golem/ Makeshift Bat/ Lady Tow/ Heavy Tow/ Sleepy Tow. -->
+		<!-- Filled with Frintezza's limitless power. For 1 h., transforms into one of the following funny creatures: Snow Man, Scarecrow Jack, Tin Golem, Clay Statue, Beautiful Clay Statue, Solid Clay Statue, Old Clay Statue. -->
 		<set name="icon" val="icon.etc_whiteday_cookie" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
@@ -252,7 +252,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28521" name="Mysterious Guardian Pack (7-day)" additionalName="Event" type="EtcItem">
-		<!-- Double-click to obtain a Mysterious Shooter (7-day). -->
+		<!-- Double-click to obtain Mysterious Guardian (7-day). -->
 		<set name="icon" val="icon.etc_equip_item_box_i00" />
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
@@ -448,7 +448,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28539" name="Brooch Augmenting Stone" type="EtcItem">
-		<!-- Increases stats of La Vie En Rose's Brooch Lv. 4. Double-click on the item or speak to a blacksmith to augment what you need. La Vie En Rose's Brooch Lv. 3 and this stone can be exchanged for La Vie En Rose's Brooch Lv. 4 through Shadai. -->
+		<!-- Increases stats of La Vie En Rose's Brooch Lv. 4. Double-click the item or speak to a blacksmith to augment what you need. -->
 		<set name="icon" val="Icon.bm_lavianrose_mineral_brooch" />
 		<set name="material" val="WOOD" />
 		<set name="is_sellable" val="false" />
@@ -462,7 +462,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28541" name="Shining Magic Bait (85)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -471,7 +471,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28542" name="Shining Magic Bait (95)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -480,7 +480,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28543" name="Shining Magic Bait (99)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -489,7 +489,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28544" name="Shining Magic Bait (102)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -498,7 +498,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28545" name="Shining Magic Bait (105)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -514,7 +514,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28547" name="Embryo Reward Box" type="EtcItem">
-		<!-- Embryo reward box. Double-click to obtain a random item. -->
+		<!-- Double-click to obtain a random item. -->
 		<set name="icon" val="icon.bm_nebit_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -531,7 +531,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28549" name="Shining Magic Bait (85)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -540,7 +540,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28550" name="Shining Magic Bait (95)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -549,7 +549,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28551" name="Shining Magic Bait (99)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -558,7 +558,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28552" name="Shining Magic Bait (102)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -567,7 +567,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28553" name="Shining Magic Bait (105)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -583,7 +583,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28555" name="Embryo Reward Box" type="EtcItem">
-		<!-- Embryo reward box. Double-click to obtain a random item. -->
+		<!-- Double-click to obtain a random item. -->
 		<set name="icon" val="icon.bm_nebit_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
@@ -653,7 +653,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28563" name="Ultimate Fortune Jewelry Box" type="EtcItem">
-		<!-- Double-click to obtain 1 of the Fortune Jewelry Boxes. -->
+		<!-- Double-click to obtain one of Jewel Lucky Chests. -->
 		<set name="icon" val="icon.bm_sayha_blessed_box" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="LEATHER" />
@@ -821,7 +821,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28577" name="Shining Magic Bait (85)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 85. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -830,7 +830,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28578" name="Shining Magic Bait (95)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 95. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -839,7 +839,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28579" name="Shining Magic Bait (99)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 99. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -848,7 +848,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28580" name="Shining Magic Bait (102)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 102. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -857,7 +857,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28581" name="Shining Magic Bait (105)" type="EtcItem">
-		<!-- Fishing Time: 45s. Fishing Waiting Time: 15s. Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
+		<!-- Fishing Time: 45s Fishing Waiting Time: 15s Fishing Bait. Used to acquire Smuggled Embryo Chests. Can be used only above level 105. -->
 		<set name="icon" val="icon.bm_gold_lure" />
 		<set name="default_action" val="EQUIP" />
 		<set name="immediate_effect" val="true" />
@@ -890,7 +890,7 @@
 		<set name="is_stackable" val="true" />
 	</item>
 	<item id="28585" name="Elmoreden Cloak" type="Armor">
-		<!-- A cloak with the crest of the ancient Elmoreden Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. -->
+		<!-- A cloak with the crest of the ancient Elmoreden Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_elmoreden_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -925,7 +925,7 @@
 		</stats>
 	</item>
 	<item id="28586" name="Aden Cloak" type="Armor">
-		<!-- A cloak with the crest of the ancient Aden Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. -->
+		<!-- A cloak with the crest of the ancient Aden Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_aden_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -960,7 +960,7 @@
 		</stats>
 	</item>
 	<item id="28587" name="Elmore Cloak" type="Armor">
-		<!-- A cloak with the crest of the ancient Elmore Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. -->
+		<!-- A cloak with the crest of the ancient Elmore Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_elmore_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -995,7 +995,7 @@
 		</stats>
 	</item>
 	<item id="28588" name="Ferios Cloak" type="Armor">
-		<!-- A cloak with the crest of the ancient Ferios Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. -->
+		<!-- A cloak with the crest of the ancient Ferios Kingdom. Can be enchanted up to +10 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_perios_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -1030,7 +1030,7 @@
 		</stats>
 	</item>
 	<item id="28589" name="Legendary Elmoreden Cloak" type="Armor">
-		<!-- The legendary cloak with the crest of the ancient Elmoreden Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Cloak Augmenting Stone - Elmoreden can be used to bestow new additional effects. -->
+		<!-- The legendary cloak with the crest of the ancient Elmoreden Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Augmenting Stone: Cloak - Elmoreden can be used to bestow new additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_elmoreden_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -1073,7 +1073,7 @@
 		</stats>
 	</item>
 	<item id="28590" name="Aden Cloak - Legendary" type="Armor">
-		<!-- The legendary cloak with the crest of the ancient Aden Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Cloak Augmenting Stone - Elmoreden can be used to bestow new additional effects. -->
+		<!-- The legendary cloak with the crest of the ancient Aden Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Augmenting Stone: Cloak - Elmoreden can be used to bestow new additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_aden_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -1116,7 +1116,7 @@
 		</stats>
 	</item>
 	<item id="28591" name="Legendary Elmore Cloak" type="Armor">
-		<!-- The legendary cloak with the crest of the ancient Elmore Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Cloak Augmenting Stone - Elmoreden can be used to bestow new additional effects. -->
+		<!-- The legendary cloak with the crest of the ancient Elmore Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Augmenting Stone: Cloak - Elmoreden can be used to bestow new additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_elmore_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -1159,7 +1159,7 @@
 		</stats>
 	</item>
 	<item id="28592" name="Legendary Ferios Cloak" type="Armor">
-		<!-- The legendary cloak with the crest of the ancient Ferios Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Cloak Augmenting Stone - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Cloak Augmenting Stone - Elmoreden can be used to bestow new additional effects. -->
+		<!-- The legendary cloak with the crest of the ancient Ferios Kingdom. Can be enchanted up to +20 with Scroll: Enchant Cloak, effects are applied according to the enchant level. When enchanted to +10, Augmenting Stone: Cloak - Ancient Kingdom can be used to bestow additional effects. When enchanted to +15, Augmenting Stone: Cloak - Elmoreden can be used to bestow new additional effects. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_perios_cloak_normal" />
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="back" />
@@ -1202,7 +1202,7 @@
 		</stats>
 	</item>
 	<item id="28593" name="Scroll: Enchant Cloak" type="EtcItem">
-		<!-- Enchant scroll for the Ancient Kingdom's Cloak. Can be enchanted up to +10. Enchant value goes up by 1 when it succeeds, and if it fails, the item remains and the level goes down by 1. -->
+		<!-- A scroll for enchanting ancient kingdoms' cloaks up to +10. The enchant value goes up by 1 when it succeeds. In case of failure, the enchant value is decreased by 1. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_cloak_enchant_scroll_normal" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
@@ -1216,7 +1216,7 @@
 		</skills>
 	</item>
 	<item id="28594" name="Scroll: Enchant Cloak - Legendary" type="EtcItem">
-		<!-- Enchant scroll for the Ancient Kingdom's Cloak. Can be used when the enchant value is at least +10, up to +20. Enchant value goes up by 1 when it succeeds, and if it fails, the item remains and the level goes down by 1. -->
+		<!-- A scroll for enchanting Legendary ancient kingdoms' cloaks from +10 to +20. The enchant value goes up by 1 when it succeeds. In case of failure, the enchant value is decreased by 1. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_cloak_enchant_scroll_legend" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
@@ -1230,7 +1230,7 @@
 		</skills>
 	</item>
 	<item id="28595" name="Scroll: Enchant Ancient Cloak" type="EtcItem">
-		<!-- Enchant scroll for Ancient Kingdom's Cloak. Can be used only with items enchanted from +8 to +20. Enchant success rate is +10%. In case of success, the item's enchant value increases by 1. In case of failure, the item is not crystallized, and its enchant value decreases by 1. -->
+		<!-- A special scroll for enchanting ancient kingdoms' cloaks from +8 to +20. Enchant success rate +10%. The enchant value goes up by +1 when it succeeds. In case of failure, the enchant value is decreased by 1. -->
 		<set name="icon" val="BranchIcon.icon.g_bm_cloak_enchant_scroll_legend" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />

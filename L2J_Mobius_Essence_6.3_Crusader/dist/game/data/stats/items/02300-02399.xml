@@ -29,7 +29,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="2302" name="Recipe: Silver Axe" type="EtcItem">
-		<!-- For Dwarves only. A recipe for War Pick. Requires Create Item Lv. 4. The success rate is 100%. -->
+		<!-- For Dwarves only. A recipe for Silver Axe. Requires Create Item Lv. 4. The success rate is 100%. -->
 		<set name="icon" val="icon.etc_recipe_yellow_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -169,7 +169,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="2312" name="Recipe: Crystallized Ice Bow (100%)" type="EtcItem">
-		<!-- For Dwarves only. A recipe for Crystallized Ice Bow. Requires Create Item Lv. 4. The success rate is 100%. -->
+		<!-- For Dwarves only. A recipe for Frozen Bow. Requires Create Item Lv. 4. The success rate is 100%. -->
 		<set name="icon" val="icon.etc_recipe_yellow_i00" />
 		<set name="default_action" val="RECIPE" />
 		<set name="etcitem_type" val="RECIPE" />
@@ -813,6 +813,7 @@
 		<set name="handler" val="Recipes" />
 	</item>
 	<item id="2368" name="Training Gloves" additionalName="Sealed" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_training_gloves_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -839,6 +840,7 @@
 		</stats>
 	</item>
 	<item id="2369" name="Squire's Sword" additionalName="Sealed" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_long_sword_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="SWORD" />
@@ -864,6 +866,7 @@
 		</stats>
 	</item>
 	<item id="2370" name="Guild Member's Club" additionalName="Sealed" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_club_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -890,6 +893,7 @@
 		</stats>
 	</item>
 	<item id="2371" name="Fist of Butcher" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_iron_glove_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DUALFIST" />
@@ -914,6 +918,7 @@
 		</stats>
 	</item>
 	<item id="2372" name="Dagger of Adept" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_doomed_dagger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -938,6 +943,7 @@
 		</stats>
 	</item>
 	<item id="2373" name="Eldritch Staff" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_apprentices_staff_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="BLUNT" />
@@ -963,6 +969,7 @@
 		</stats>
 	</item>
 	<item id="2374" name="Red Sunset Dagger" type="Weapon">
+		<!-- <font color=ff6666><Unavailable to Sylphs/ Vanguard Riders.></font> -->
 		<set name="icon" val="icon.weapon_doomed_dagger_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="weapon_type" val="DAGGER" />
@@ -1096,7 +1103,7 @@
 		</stats>
 	</item>
 	<item id="2382" name="Tallum Plate Armor" type="Armor">
-		<!-- <Properties>. CON +2. Overweight limit +2500. M. Def. +25. Max HP +200. Fear/ Silence Resistance +50% -->
+		<!-- <Properties> CON +2 Overweight limit +2500 M. Def. +25 Max HP +200 Fear/ Silence Resistance +50% -->
 		<set name="icon" val="icon.armor_t77_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -1119,7 +1126,7 @@
 		</skills>
 	</item>
 	<item id="2383" name="Majestic Plate Armor" type="Armor">
-		<!-- <Properties>. CON +2. Overweight limit +2500. M. Def. +25. Max HP +200. Stun Resistance +50% -->
+		<!-- <Properties> CON +2 Overweight limit +2500 M. Def. +25 Max HP +200 Shock Resistance +50% -->
 		<set name="icon" val="icon.armor_t83_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="HEAVY" />
@@ -1160,7 +1167,7 @@
 		</stats>
 	</item>
 	<item id="2385" name="Dark Crystal Leather Armor" type="Armor">
-		<!-- <Properties>. DEX +1. Overweight limit +1500. M. Def. +15. Paralysis Resistance +50% -->
+		<!-- <Properties> DEX +1 Overweight limit +1500 M. Def. +15 Paralysis Resistance +50% -->
 		<set name="icon" val="icon.armor_t75_u_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1234,7 +1241,7 @@
 		</stats>
 	</item>
 	<item id="2389" name="Dark Crystal Leggings" type="Armor">
-		<!-- <Properties>. DEX +1. Overweight limit +1000. M. Def. +10. Max HP +150. Max MP +80 -->
+		<!-- <Properties> DEX +1 Overweight limit +1000 M. Def. +10 Max HP +150 Max MP +80 -->
 		<set name="icon" val="icon.armor_t75_l_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1314,7 +1321,7 @@
 		</stats>
 	</item>
 	<item id="2393" name="Tallum Leather Armor" type="Armor">
-		<!-- <Properties>. MEN +2. Overweight limit +2500. M. Def. +25. Max HP +150. Max MP +80. Fear/ Silence Resistance +50% -->
+		<!-- <Properties> MEN +2 Overweight limit +2500 M. Def. +25 Max HP +150 Max MP +80 Fear/ Silence Resistance +50% -->
 		<set name="icon" val="icon.armor_t78_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1337,7 +1344,7 @@
 		</skills>
 	</item>
 	<item id="2394" name="Leather Armor of Nightmare" type="Armor">
-		<!-- <Properties>. DEX +2. Overweight limit +2500. M. Def. +25. Max HP +150. Max MP +80. Sleep Resistance +70%. Hold Resistance +70% -->
+		<!-- <Properties> DEX +2 Overweight limit +2500 M. Def. +25 Max HP +150 Max MP +80 Sleep Resistance +70% Hold Resistance +70% -->
 		<set name="icon" val="icon.armor_t81_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
@@ -1360,7 +1367,7 @@
 		</skills>
 	</item>
 	<item id="2395" name="Majestic Leather Armor" type="Armor">
-		<!-- <Properties>. DEX +2. Overweight limit +2500. M. Def. +25. Max HP +150. Max MP +80. Stun Resistance +50% -->
+		<!-- <Properties> DEX +2 Overweight limit +2500 M. Def. +25 Max HP +150 Max MP +80 Shock Resistance +50% -->
 		<set name="icon" val="icon.armor_t84_ul_i00" />
 		<set name="default_action" val="EQUIP" />
 		<set name="armor_type" val="LIGHT" />
