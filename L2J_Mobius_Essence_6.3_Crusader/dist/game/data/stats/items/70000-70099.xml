@@ -156,7 +156,7 @@
 			<skill id="55205" level="1" /> <!-- Sealed Rune - Lv. 13 -->
 		</skills>
 	</item>
-	<item id="70013" name="Sealed Rune Lv. 14 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70013" name="Sealed Rune Lv. 14" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -164,7 +164,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70014" name="Sealed Rune Lv. 15 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70014" name="Sealed Rune Lv. 15" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -172,7 +172,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70015" name="Sealed Rune Lv. 16 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70015" name="Sealed Rune Lv. 16" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -180,7 +180,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70016" name="Sealed Rune Lv. 17 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70016" name="Sealed Rune Lv. 17" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -188,7 +188,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70017" name="Sealed Rune Lv. 18 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70017" name="Sealed Rune Lv. 18" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -196,7 +196,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70018" name="Sealed Rune Lv. 19 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70018" name="Sealed Rune Lv. 19" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -204,7 +204,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70019" name="Sealed Rune Lv. 20 - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70019" name="Sealed Rune Lv. 20" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -212,7 +212,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70020" name="Clan's Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70020" name="Clan's Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="PEEL" />
@@ -225,11 +225,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="70024" min="1" max="1" chance="100.0" /> <!-- Daily Coin - Not Available - Not Available -->
-			<item id="70025" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available - Not Available -->
+			<item id="70024" min="1" max="1" chance="100.0" /> <!-- Daily Coin - Not Available -->
+			<item id="70025" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available -->
 		</capsuled_items>
 	</item>
-	<item id="70021" name="Clan's Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70021" name="Clan's Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- The item is not available. A reward for being a clan member. Double-click to obtain a Clan Mark and Clan's Mid-grade Special Supplies. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="PEEL" />
@@ -242,11 +242,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="70024" min="2" max="4" chance="100.0" /> <!-- Daily Coin - Not Available - Not Available -->
-			<item id="70026" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available - Not Available -->
+			<item id="70024" min="2" max="4" chance="100.0" /> <!-- Daily Coin - Not Available -->
+			<item id="70026" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available -->
 		</capsuled_items>
 	</item>
-	<item id="70022" name="Clan's Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70022" name="Clan's Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- The item is not available. A reward for being a clan member. Double-click to obtain a Clan Mark and Clan's High-grade Special Supplies. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="PEEL" />
@@ -259,11 +259,11 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="70024" min="4" max="6" chance="100.0" /> <!-- Daily Coin - Not Available - Not Available -->
-			<item id="70027" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available - Not Available -->
+			<item id="70024" min="4" max="6" chance="100.0" /> <!-- Daily Coin - Not Available -->
+			<item id="70027" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available -->
 		</capsuled_items>
 	</item>
-	<item id="70023" name="Clan's Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70023" name="Clan's Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- The item is not available. A reward for being a clan member. Double-click to obtain a Clan Mark and Clan's Special Supplies (Highest-grade). -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="PEEL" />
@@ -276,8 +276,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="70024" min="6" max="8" chance="100.0" /> <!-- Daily Coin - Not Available - Not Available -->
-			<item id="70028" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available - Not Available -->
+			<item id="70024" min="6" max="8" chance="100.0" /> <!-- Daily Coin - Not Available -->
+			<item id="70028" min="1" max="1" chance="100.0" /> <!-- Clan's Special Supplies - Not Available -->
 		</capsuled_items>
 	</item>
 	<item id="70024" name="Daily Coin" additionalName="Not Available" type="EtcItem">
@@ -289,7 +289,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70025" name="Clan's Special Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70025" name="Clan's Special Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -304,7 +304,7 @@
 			<skill id="55172" level="1" /> <!-- Clan's Special Supplies -->
 		</skills>
 	</item>
-	<item id="70026" name="Clan's Special Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70026" name="Clan's Special Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -319,7 +319,7 @@
 			<skill id="55173" level="1" /> <!-- Clan's Special Supplies -->
 		</skills>
 	</item>
-	<item id="70027" name="Clan's Special Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70027" name="Clan's Special Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -334,7 +334,7 @@
 			<skill id="55174" level="1" /> <!-- Clan's Special Supplies -->
 		</skills>
 	</item>
-	<item id="70028" name="Clan's Special Supplies - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70028" name="Clan's Special Supplies" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
@@ -1318,7 +1318,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="70094" name="XP Rune 100% - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="70094" name="XP Rune 100%" additionalName="Not Available" type="EtcItem">
 		<!-- The item is not available. Available for 2 h. When in inventory, acquired XP/ SP while hunting +100%. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
@@ -1335,7 +1335,7 @@
 			<skill id="55234" level="1" /> <!-- XP Rune I (Lv. 1-85) -->
 		</skills>
 	</item>
-	<item id="70095" name="Wooden Helmet - Not Available" additionalName="Not Available" type="Armor">
+	<item id="70095" name="Wooden Helmet" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. Available for 7 days. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="EQUIP" />
@@ -1350,7 +1350,7 @@
 			<stat type="pDef">19</stat>
 		</stats>
 	</item>
-	<item id="70096" name="Wooden Breastplate - Not Available" additionalName="Not Available" type="Armor">
+	<item id="70096" name="Wooden Breastplate" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. Available for 7 days. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="EQUIP" />
@@ -1366,7 +1366,7 @@
 			<stat type="pDef">47</stat>
 		</stats>
 	</item>
-	<item id="70097" name="Wooden Gaiters - Not Available" additionalName="Not Available" type="Armor">
+	<item id="70097" name="Wooden Gaiters" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. Available for 7 days. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="EQUIP" />
@@ -1382,7 +1382,7 @@
 			<stat type="pDef">29</stat>
 		</stats>
 	</item>
-	<item id="70098" name="Leather Helmet - Not Available" additionalName="Not Available" type="Armor">
+	<item id="70098" name="Leather Helmet" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. Available for 7 days. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="EQUIP" />
@@ -1397,7 +1397,7 @@
 			<stat type="pDef">23</stat>
 		</stats>
 	</item>
-	<item id="70099" name="Tunic of Devotion - Not Available" additionalName="Not Available" type="Armor">
+	<item id="70099" name="Tunic of Devotion" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. Available for 7 days. -->
 		<set name="icon" val="icon.etc_ertheia2" />
 		<set name="default_action" val="EQUIP" />

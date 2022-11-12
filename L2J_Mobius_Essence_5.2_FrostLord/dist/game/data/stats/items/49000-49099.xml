@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/items.xsd">
-	<item id="49000" name="Agathion Singer and Dancer - Not Available" additionalName="Not Available" type="Armor">
+	<item id="49000" name="Agathion Singer and Dancer" additionalName="Not Available" type="Armor">
 		<!-- Summons Agathion Singer & Dancer. Available for 30 d. <Active skills>. 1. Dance of Fury: Atk. Spd. +5% for 20 min. 2. Dance of Concentration: Casting Spd. +5% for 20 min. 3. Song of Wind: Speed +20 for 5 min. Cooldown: 10 min. Note!. Dance of Fury, Dance of Concentration, and Song of Wind do not stack. -->
 		<set name="icon" val="BranchSys2.icon.br_aga_singer_dancer_i00" />
 		<set name="default_action" val="EQUIP" />
@@ -36,7 +36,7 @@
 			<item id="49000" min="1" max="1" chance="100" /> <!-- Agathion Singer & Dancer - Not available -->
 		</capsuled_items>
 	</item>
-	<item id="49002" name="Agathion Singer and Dancer - Not Available" additionalName="Not Available" type="Armor">
+	<item id="49002" name="Agathion Singer and Dancer" additionalName="Not Available" type="Armor">
 		<!-- Summons Agathion Singer & Dancer. Available for 7 d. <Active skills>. 1. Dance of Fury: Atk. Spd. +5% for 20 min. 2. Dance of Concentration: Casting Spd. +5% for 20 min. 3. Song of Wind: Speed +20 for 5 min. Cooldown: 10 min. Note!. Dance of Fury, Dance of Concentration, and Song of Wind do not stack. -->
 		<set name="icon" val="BranchSys2.icon.br_aga_singer_dancer_i00" />
 		<set name="default_action" val="EQUIP" />
@@ -110,7 +110,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 	</item>
-	<item id="49008" name="No-grade Soulshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49008" name="No-grade Soulshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's physical power. Used with No-grade weapons. Take it to the Game Assistant to exchange for a new Soulshot. -->
 		<set name="icon" val="icon.etc_soulshot_none_for_rookie_i00" />
 		<set name="default_action" val="SOULSHOT" />
@@ -119,7 +119,7 @@
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49009" name="No-grade Spiritshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49009" name="No-grade Spiritshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's magic power. Used with No-grade weapons. Take it to the Game Assistant to exchange for a new Spiritshot. -->
 		<set name="icon" val="icon.etc_spiritshot_none_for_rookie_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
@@ -128,7 +128,7 @@
 		<set name="weight" val="1" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49010" name="D-grade Soulshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49010" name="D-grade Soulshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's physical power. Used with D-grade weapons. Take it to the Game Assistant to exchange for a new Soulshot. -->
 		<set name="icon" val="icon.etc_spirit_bullet_blue_i00" />
 		<set name="default_action" val="SOULSHOT" />
@@ -138,7 +138,7 @@
 		<set name="weight" val="2" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49011" name="D-grade Spiritshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49011" name="D-grade Spiritshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's magic power. Used with D-grade weapons. Take it to the Game Assistant to exchange for a new Spiritshot. -->
 		<set name="icon" val="icon.etc_spell_shot_blue_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
@@ -430,7 +430,7 @@
 			<item id="49032" min="1" max="1" chance="100" /> <!-- Eva's Mark -->
 		</capsuled_items>
 	</item>
-	<item id="49034" name="Ol Mahum Adena Bank - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49034" name="Ol Mahum Adena Bank" additionalName="Not Available" type="EtcItem">
 		<!-- Shake and pour. Sometimes you get items, and sometimes you get money! Once a day only. -->
 		<set name="icon" val="icon.event_mahum_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -439,7 +439,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 	</item>
-	<item id="49035" name="Turek Orc Adena Bank - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49035" name="Turek Orc Adena Bank" additionalName="Not Available" type="EtcItem">
 		<!-- Shake and pour. Sometimes you get items, and sometimes you get money! Once a day only. -->
 		<set name="icon" val="icon.event_orc_coinbox" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -798,7 +798,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49055" name="Thunder Charge - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49055" name="Thunder Charge" additionalName="Not Available" type="EtcItem">
 		<!-- When Spirit Thunder Rifle is charged with a Soulshot/ Spiritshot/ Blessed Spiritshot, 3 Magic Bombs are produced. Can be created once per day using a Thunder Charge. Can be received again after 6:30 PM. -->
 		<set name="icon" val="icon.block_boom" />
 		<set name="material" val="LEATHER" />
@@ -807,7 +807,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49056" name="Lucky Package: No-grade Soulshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49056" name="Lucky Package: No-grade Soulshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 100-10,000 Mysterious No-grade Soulshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i00" />
 		<set name="default_action" val="CAPSULE" />
@@ -819,7 +819,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49057" name="Lucky Package: D-grade Soulshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49057" name="Lucky Package: D-grade Soulshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 100-10,000 Mysterious D-grade Soulshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i01" />
 		<set name="default_action" val="CAPSULE" />
@@ -831,7 +831,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49058" name="Lucky Package: C-grade Soulshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49058" name="Lucky Package: C-grade Soulshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 50-5000 Mysterious C-grade Soulshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i07" />
 		<set name="default_action" val="CAPSULE" />
@@ -843,7 +843,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49059" name="Lucky Package: No-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49059" name="Lucky Package: No-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 50-1000 Mysterious No-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i00" />
 		<set name="default_action" val="CAPSULE" />
@@ -855,7 +855,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49060" name="Lucky Package: D-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49060" name="Lucky Package: D-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 80-3000 Mysterious D-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i01" />
 		<set name="default_action" val="CAPSULE" />
@@ -867,7 +867,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49061" name="Lucky Package: C-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49061" name="Lucky Package: C-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 30-1000 Mysterious C-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i07" />
 		<set name="default_action" val="CAPSULE" />
@@ -879,7 +879,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49062" name="Mysterious No-grade Spiritshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49062" name="Mysterious No-grade Spiritshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's magic power. Used with No-grade weapons. Take it to the Game Assistant to exchange for a new Spiritshot. -->
 		<set name="icon" val="icon.etc_spell_shot_white_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
@@ -894,7 +894,7 @@
 			<skill id="39029" level="1" /> <!-- Player Commendation - Spiritshot (No-grade) -->
 		</skills>
 	</item>
-	<item id="49063" name="Mysterious D-grade Spiritshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49063" name="Mysterious D-grade Spiritshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's magic power. Used with D-grade weapons. Take it to the Game Assistant to exchange for a new Spiritshot. -->
 		<set name="icon" val="icon.etc_spell_shot_blue_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
@@ -910,7 +910,7 @@
 			<skill id="39030" level="1" /> <!-- Player Commendation - Spiritshot (D-grade) -->
 		</skills>
 	</item>
-	<item id="49064" name="Mysterious C-grade Spiritshot - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49064" name="Mysterious C-grade Spiritshot" additionalName="Not Available" type="EtcItem">
 		<!-- Increases a weapon's magic power. Used with C-grade weapons. Take it to the Game Assistant to exchange for a new Spiritshot. -->
 		<set name="icon" val="icon.etc_spell_shot_green_i00" />
 		<set name="default_action" val="SPIRITSHOT" />
@@ -926,7 +926,7 @@
 			<skill id="39031" level="1" /> <!-- Player Commendation - Spiritshot (C-grade) -->
 		</skills>
 	</item>
-	<item id="49065" name="Lucky Package: Blessed No-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49065" name="Lucky Package: Blessed No-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 100-10,000 Mysterious Blessed No-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i00" />
 		<set name="default_action" val="CAPSULE" />
@@ -938,7 +938,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49066" name="Lucky Package: Blessed D-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49066" name="Lucky Package: Blessed D-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 100-10,000 Mysterious Blessed D-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i01" />
 		<set name="default_action" val="CAPSULE" />
@@ -950,7 +950,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49067" name="Lucky Package: Blessed C-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49067" name="Lucky Package: Blessed C-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 50-5000 Mysterious Blessed C-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_treasure_box_i07" />
 		<set name="default_action" val="CAPSULE" />
@@ -962,7 +962,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49068" name="Stone of Speed - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49068" name="Stone of Speed" additionalName="Not Available" type="EtcItem">
 		<!-- For 20 min., Acquired XP/ SP +10%, Speed +20. Cooldown: 10 min. Note!. Stone of Speed will have no effect, if used when the Quick Step or a speed-increasing potion effect is active. -->
 		<set name="icon" val="icon.stone_8_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
@@ -972,7 +972,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49069" name="Spirit Thunder Chest: No-grade Soulshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49069" name="Spirit Thunder Chest: No-grade Soulshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 600 Soulshots or Lucky Package: No-grade Soulshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
@@ -983,7 +983,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49070" name="Spirit Thunder Chest: D-grade Soulshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49070" name="Spirit Thunder Chest: D-grade Soulshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 1350 Soulshots or Lucky Package: D-grade Soulshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
@@ -994,7 +994,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49071" name="Spirit Thunder Chest: C-grade Soulshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49071" name="Spirit Thunder Chest: C-grade Soulshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 900 Soulshots or Lucky Package: C-grade Soulshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i01" />
 		<set name="default_action" val="PEEL" />
@@ -1005,7 +1005,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49072" name="Spirit Thunder Chest: No-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49072" name="Spirit Thunder Chest: No-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 270 Spiritshots or Lucky Package: No-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
@@ -1016,7 +1016,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49073" name="Spirit Thunder Chest: D-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49073" name="Spirit Thunder Chest: D-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 750 Spiritshots or Lucky Package: D-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
@@ -1027,7 +1027,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49074" name="Spirit Thunder Chest: C-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49074" name="Spirit Thunder Chest: C-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 390 Spiritshots or Lucky Package: C-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i01" />
 		<set name="default_action" val="PEEL" />
@@ -1038,7 +1038,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49075" name="Spirit Thunder Chest: Blessed No-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49075" name="Spirit Thunder Chest: Blessed No-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 120 Blessed No-grade Spiritshots or Lucky Package: Blessed No-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
 		<set name="default_action" val="PEEL" />
@@ -1049,7 +1049,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49076" name="Spirit Thunder Chest: Blessed D-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49076" name="Spirit Thunder Chest: Blessed D-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 300 Blessed Spiritshots or Lucky Package: Blessed D-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i00" />
 		<set name="default_action" val="PEEL" />
@@ -1060,7 +1060,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 	</item>
-	<item id="49077" name="Spirit Thunder Chest: Blessed C-grade Spiritshots - Not Available" additionalName="Not Available" type="EtcItem">
+	<item id="49077" name="Spirit Thunder Chest: Blessed C-grade Spiritshots" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain 150 Blessed Spiritshots or Lucky Package: Blessed C-grade Spiritshots. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i01" />
 		<set name="default_action" val="PEEL" />
