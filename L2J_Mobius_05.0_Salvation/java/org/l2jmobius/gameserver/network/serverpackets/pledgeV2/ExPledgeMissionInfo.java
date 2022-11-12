@@ -55,15 +55,19 @@ public class ExPledgeMissionInfo extends ServerPacket
 			// TODO: Figure out this.
 			if (reward.isLevelUpMission())
 			{
-				progress = 1;
 				if (status == 2)
 				{
 					status = reward.getRequiredCompletions() > _player.getLevel() ? 1 : 3;
+				}
+				else if ((status == 3) && (progress == 3))
+				{
+					status = 0;
 				}
 				else
 				{
 					status = reward.isRecentlyCompleted(_player) ? 0 : 3;
 				}
+				progress = 1;
 			}
 			else if (status == 1)
 			{

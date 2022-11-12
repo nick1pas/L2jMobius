@@ -83,6 +83,8 @@ import org.l2jmobius.gameserver.network.serverpackets.PledgeSkillListAdd;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
+import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionInfo;
+import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeShowInfoUpdate;
 import org.l2jmobius.gameserver.util.EnumIntBitmask;
 import org.l2jmobius.gameserver.util.Util;
@@ -395,6 +397,8 @@ public class Clan implements IIdentifiable, INamable
 		player.setPledgeClass(PLEDGE_CLASS_COMMON);
 		player.sendPacket(new PledgeShowMemberListUpdate(player));
 		player.sendPacket(new PledgeSkillList(this));
+		player.sendPacket(new ExPledgeMissionRewardCount(player));
+		player.sendPacket(new ExPledgeMissionInfo(player));
 		addSkillEffects(player);
 		
 		// Notify to scripts

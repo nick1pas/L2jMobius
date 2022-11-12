@@ -25,6 +25,8 @@ import org.l2jmobius.gameserver.model.events.Containers;
 import org.l2jmobius.gameserver.model.events.EventType;
 import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerLevelChanged;
 import org.l2jmobius.gameserver.model.events.listeners.ConsumerEventListener;
+import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionInfo;
+import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
 
 /**
  * @author Sdw
@@ -94,6 +96,11 @@ public class LevelDailyMissionHandler extends AbstractDailyMissionHandler
 	private void onPlayerLevelChanged(OnPlayerLevelChanged event)
 	{
 		final Player player = event.getPlayer();
+		if (player.getClan() == null)
+		{
+			return;
+		}
+		
 		if ((player.getLevel() >= _level) && (player.isDualClassActive() == _dualclass))
 		{
 			final DailyMissionPlayerEntry entry = getPlayerEntry(player.getObjectId(), true);
@@ -102,6 +109,8 @@ public class LevelDailyMissionHandler extends AbstractDailyMissionHandler
 				entry.setStatus(DailyMissionStatus.AVAILABLE);
 				storePlayerEntry(entry);
 			}
+			player.sendPacket(new ExPledgeMissionRewardCount(player));
+			player.sendPacket(new ExPledgeMissionInfo(player));
 		}
 	}
 }
