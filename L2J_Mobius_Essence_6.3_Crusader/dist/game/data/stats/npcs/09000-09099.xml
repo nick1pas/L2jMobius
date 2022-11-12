@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="9049" level="85" type="Folk" name="Transformed: Part-time Seller Cat">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
@@ -24,7 +24,7 @@
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
+			<vitals hp="8446" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="1949.95411856464" magical="662.751329129412" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
@@ -58,7 +58,7 @@
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="8446.44475689713" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="8446" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="1949.95411856464" magical="1331.56588332443" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="405.66735" magical="296.84976" />
 			<speed>
@@ -92,7 +92,7 @@
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
+			<vitals hp="8446" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="1949.95411856464" magical="662.751329129412" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="341.375" magical="249.80341" />
 			<speed>
@@ -143,7 +143,7 @@
 			<defence physical="98.70919" magical="72.2311" />
 			<speed>
 				<walk ground="60" />
-				<run ground="160" />
+				<run ground="130" />
 			</speed>
 			<hitTime>280</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -193,7 +193,7 @@
 			<defence physical="89.73059" magical="65.66095" />
 			<speed>
 				<walk ground="50" />
-				<run ground="150" />
+				<run ground="80" />
 			</speed>
 			<hitTime>340</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -241,7 +241,7 @@
 			<defence physical="78.68469" magical="57.57804" />
 			<speed>
 				<walk ground="50" />
-				<run ground="150" />
+				<run ground="110" />
 			</speed>
 			<hitTime>460</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -344,7 +344,7 @@
 			<defence physical="195.66302" magical="143.17771" />
 			<speed>
 				<walk ground="60" />
-				<run ground="180" />
+				<run ground="174" />
 			</speed>
 			<hitTime>300</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -386,16 +386,16 @@
 			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="361.78814" magical="264.74086" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="50" />
+				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
 		<status attackable="false" undying="true" noSleepMode="true" targetable="false" showName="false" />
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="8" />
+			<height normal="19" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
@@ -419,16 +419,16 @@
 			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="361.78814" magical="264.74086" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="50" />
+				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
 		<status attackable="false" undying="true" noSleepMode="true" targetable="false" showName="false" />
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="8" />
+			<height normal="19" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
@@ -452,16 +452,16 @@
 			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="361.78814" magical="264.74086" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="50" />
+				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
 		<status attackable="false" undying="true" noSleepMode="true" targetable="false" showName="false" />
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="8" />
+			<height normal="19" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
@@ -485,16 +485,16 @@
 			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="361.78814" magical="264.74086" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="50" />
+				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
 		<status attackable="false" undying="true" noSleepMode="true" targetable="false" showName="false" />
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="8" />
+			<height normal="19" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
@@ -518,16 +518,16 @@
 			<attack physical="1188.87259499001" magical="811.84586495282" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="361.78814" magical="264.74086" />
 			<speed>
-				<walk ground="1" />
-				<run ground="1" />
+				<walk ground="50" />
+				<run ground="100" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
 		<status attackable="false" undying="true" noSleepMode="true" targetable="false" showName="false" />
 		<collision>
-			<radius normal="0.1" />
-			<height normal="0.1" />
+			<radius normal="8" />
+			<height normal="19" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
@@ -800,156 +800,156 @@
 			<height normal="17.7" />
 		</collision>
 	</npc>
-	<npc id="9026" level="80" type="Folk" name="Transformed: Part-time Seller Cat">
+	<npc id="9026" level="80" type="Folk" name="Reanimated Man">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>ETC</race>
 		<sex>FEMALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="2355" mpRegen="3.6" />
-			<speed>
-				<walk ground="50" />
-				<run ground="160" />
-			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
-		</stats>
-		<status attackable="false" />
-		<collision>
-			<radius normal="13" />
-			<height normal="12" />
-		</collision>
-	</npc>
-	<npc id="9027" level="80" type="Folk" name="Transformed: Part-time Seller Cat">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
-		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="2355" mpRegen="3.6" />
-			<speed>
-				<walk ground="50" />
-				<run ground="160" />
-			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
-		</stats>
-		<status attackable="false" />
-		<collision>
-			<radius normal="13" />
-			<height normal="12" />
-		</collision>
-	</npc>
-	<npc id="9028" level="80" type="Folk" name="Transformed: Part-time Seller Cat">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
-		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="2355" mpRegen="3.6" />
-			<speed>
-				<walk ground="50" />
-				<run ground="160" />
-			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
-		</stats>
-		<status attackable="false" />
-		<collision>
-			<radius normal="13" />
-			<height normal="12" />
-		</collision>
-	</npc>
-	<npc id="9029" level="80" type="Folk" name="Transformed: Part-time Seller Cat">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
-		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="2355" mpRegen="3.6" />
-			<speed>
-				<walk ground="50" />
-				<run ground="160" />
-			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
-		</stats>
-		<status attackable="false" />
-		<collision>
-			<radius normal="13" />
-			<height normal="12" />
-		</collision>
-	</npc>
-	<npc id="9030" level="80" type="Folk" name="Transformed: Part-time Seller Cat">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
-		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="2355" mpRegen="3.6" />
-			<speed>
-				<walk ground="50" />
-				<run ground="160" />
-			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
-		</stats>
-		<status attackable="false" />
-		<collision>
-			<radius normal="13" />
-			<height normal="12" />
-		</collision>
-	</npc>
-	<npc id="9031" level="80" type="Folk" name="Big Wedding Cake">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
-		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="1345" mpRegen="3.6" />
-			<speed>
-				<walk ground="30" />
-				<run ground="120" />
-			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
-		</stats>
-		<status attackable="false" />
-		<collision>
-			<radius normal="12" />
-			<height normal="25" />
-		</collision>
-	</npc>
-	<npc id="9032" level="80" type="Folk" name="Agathion Bugbear">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
-		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="889" mpRegen="3.6" />
+			<vitals hp="1229" hpRegen="10.5" mp="637" mpRegen="3.6" />
 			<speed>
 				<walk ground="60" />
-				<run ground="180" />
+				<run ground="140" />
 			</speed>
 			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
 			<defence physical="405.85106382979" magical="297.0297029703" />
 		</stats>
 		<status attackable="false" />
 		<collision>
-			<radius normal="5" />
-			<height normal="3.75" />
+			<radius normal="11" />
+			<height normal="24.6" />
 		</collision>
 	</npc>
-	<npc id="9033" level="80" type="Folk" name="Agathion Dryad">
+	<npc id="9027" level="80" type="Folk" name="Reanimated Man">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>ETC</race>
 		<sex>FEMALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="8446" hpRegen="10.5" mp="889" mpRegen="3.6" />
+			<vitals hp="1621" hpRegen="10.5" mp="861" mpRegen="3.6" />
 			<speed>
 				<walk ground="60" />
-				<run ground="180" />
+				<run ground="140" />
 			</speed>
 			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
 			<defence physical="405.85106382979" magical="297.0297029703" />
 		</stats>
 		<status attackable="false" />
 		<collision>
-			<radius normal="5" />
-			<height normal="3.75" />
+			<radius normal="11" />
+			<height normal="24.6" />
+		</collision>
+	</npc>
+	<npc id="9028" level="80" type="Folk" name="Reanimated Man">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2037" hpRegen="10.5" mp="1097" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="24.6" />
+		</collision>
+	</npc>
+	<npc id="9029" level="80" type="Folk" name="Reanimated Man">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2244" hpRegen="10.5" mp="1219" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="24.6" />
+		</collision>
+	</npc>
+	<npc id="9030" level="80" type="Folk" name="Reanimated Man">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2444" hpRegen="10.5" mp="1345" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="24.6" />
+		</collision>
+	</npc>
+	<npc id="9031" level="80" type="Folk" name="Reanimated Man">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2632" hpRegen="10.5" mp="1475" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="24.6" />
+		</collision>
+	</npc>
+	<npc id="9032" level="80" type="Folk" name="Reanimated Man">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2719" hpRegen="10.5" mp="1540" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="24.6" />
+		</collision>
+	</npc>
+	<npc id="9033" level="80" type="Folk" name="Reanimated Man">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
+			<vitals hp="2802" hpRegen="10.5" mp="1607" mpRegen="3.6" />
+			<speed>
+				<walk ground="60" />
+				<run ground="140" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="11" />
+			<height normal="24.6" />
 		</collision>
 	</npc>
 	<npc id="9034" level="80" type="Folk" name="Happy Cat" title="Tournament Helper">

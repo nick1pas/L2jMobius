@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="22100" level="85" type="RaidBoss" name="Lord Ishka" title="Apostle of the Valley" element="EARTH">
 		<race>UNDEAD</race>
@@ -426,7 +426,7 @@
 			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="223.6362" magical="163.64727" />
 			<speed>
-				<walk ground="45" />
+				<walk ground="36" />
 				<run ground="174" />
 			</speed>
 			<hitTime>580</hitTime>
@@ -476,7 +476,7 @@
 			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="223.6362" magical="163.64727" />
 			<speed>
-				<walk ground="46" />
+				<walk ground="15" />
 				<run ground="174" />
 			</speed>
 			<hitTime>740</hitTime>
@@ -528,7 +528,7 @@
 			<attack physical="388.11142" magical="265.02979" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="223.6362" magical="163.64727" />
 			<speed>
-				<walk ground="60" />
+				<walk ground="80" />
 				<run ground="174" />
 			</speed>
 			<hitTime>560</hitTime>
@@ -579,7 +579,7 @@
 			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="271.89033" magical="198.95754" />
 			<speed>
-				<walk ground="36" />
+				<walk ground="27" />
 				<run ground="175" />
 			</speed>
 			<hitTime>540</hitTime>
@@ -617,7 +617,7 @@
 			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="271.89033" magical="198.95754" />
 			<speed>
-				<walk ground="100" />
+				<walk ground="36" />
 				<run ground="175" />
 			</speed>
 			<hitTime>450</hitTime>
@@ -664,7 +664,7 @@
 			<attack physical="582.81759" magical="397.98887" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="271.89033" magical="198.95754" />
 			<speed>
-				<walk ground="60" />
+				<walk ground="29" />
 				<run ground="174" />
 			</speed>
 			<hitTime>500</hitTime>
@@ -740,7 +740,7 @@
 			<height normal="36" />
 		</collision>
 	</npc>
-	<npc id="22117" level="75" type="Monster" name="Deprive">
+	<npc id="22117" level="75" type="Monster" name="Demonic Eye">
 		<parameters>
 			<param name="MoveAroundSocial" value="40" />
 			<param name="MoveAroundSocial1" value="40" />
@@ -3255,7 +3255,7 @@
 			<skill id="4415" level="3" /> <!-- One-handed Sword -->
 		</skillList>
 	</npc>
-	<npc id="22182" level="80" type="Monster" name="Guard of the Plain" element="WATER">
+	<npc id="22182" level="80" type="Monster" name="Guard of the Plains" element="WATER">
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<acquire exp="5408" sp="3430" attributeExp="1040" />
@@ -3562,7 +3562,7 @@
 			<defence physical="295.91597" magical="216.53847" />
 			<speed>
 				<walk ground="70" />
-				<run ground="174" />
+				<run ground="110" />
 			</speed>
 			<hitTime>410</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3612,7 +3612,7 @@
 			<defence physical="295.91597" magical="216.53847" />
 			<speed>
 				<walk ground="18" />
-				<run ground="174" />
+				<run ground="150" />
 			</speed>
 			<hitTime>780</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3662,7 +3662,7 @@
 			<defence physical="295.91597" magical="216.53847" />
 			<speed>
 				<walk ground="18" />
-				<run ground="174" />
+				<run ground="150" />
 			</speed>
 			<hitTime>780</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3711,8 +3711,8 @@
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.91597" magical="216.53847" />
 			<speed>
-				<walk ground="18" />
-				<run ground="174" />
+				<walk ground="60" />
+				<run ground="160" />
 			</speed>
 			<hitTime>780</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3763,7 +3763,7 @@
 			<defence physical="295.91597" magical="216.53847" />
 			<speed>
 				<walk ground="18" />
-				<run ground="174" />
+				<run ground="150" />
 			</speed>
 			<hitTime>910</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3812,8 +3812,8 @@
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
-				<walk ground="18" />
-				<run ground="174" />
+				<walk ground="50" />
+				<run ground="120" />
 			</speed>
 			<hitTime>780</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3865,7 +3865,7 @@
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
 				<walk ground="15" />
-				<run ground="174" />
+				<run ground="150" />
 			</speed>
 			<hitTime>740</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3917,7 +3917,7 @@
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
 				<walk ground="18" />
-				<run ground="174" />
+				<run ground="150" />
 			</speed>
 			<hitTime>780</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -3967,8 +3967,8 @@
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
-				<walk ground="60" />
-				<run ground="174" />
+				<walk ground="50" />
+				<run ground="120" />
 			</speed>
 			<hitTime>600</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -4019,8 +4019,8 @@
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
-				<walk ground="70" />
-				<run ground="174" />
+				<walk ground="50" />
+				<run ground="120" />
 			</speed>
 			<hitTime>410</hitTime>
 			<abnormalResist physical="10" magical="10" />
@@ -4072,7 +4072,7 @@
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
 				<walk ground="18" />
-				<run ground="174" />
+				<run ground="150" />
 			</speed>
 			<hitTime>910</hitTime>
 			<abnormalResist physical="10" magical="10" />

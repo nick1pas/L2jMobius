@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="22400" level="83" type="Monster" name="Ancient Thrower" element="EARTH">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
@@ -477,7 +477,7 @@
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="22413" level="77" type="Monster" name="Demonic Reaper">
+	<npc id="22413" level="77" type="Monster" name="Demon Reaper">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -527,7 +527,7 @@
 			<skill id="48539" level="1" /> <!-- Will to Fight -->
 		</skillList>
 	</npc>
-	<npc id="22415" level="77" type="Monster" name="Demonic Knight">
+	<npc id="22415" level="77" type="Monster" name="Demon Knight">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -985,7 +985,7 @@
 			<skill id="4416" level="5" /> <!-- Plants -->
 		</skillList>
 	</npc>
-	<npc id="22431" level="85" type="Monster" name="Morgos' Hot Springs Hunter" element="FIRE">
+	<npc id="22431" level="85" type="Monster" name="Morgos' Hot Springs Hunter" title="Hot Springs Searcher" element="FIRE">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -1280,7 +1280,7 @@
 			</drop>
 		</dropLists>
 	</npc>
-	<npc id="22440" level="87" type="Monster" name="Gorde Soldier " element="EARTH">
+	<npc id="22440" level="87" type="Monster" name="Gorde Soldier" element="EARTH">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
@@ -1413,7 +1413,7 @@
 			<skill id="4416" level="3" /> <!-- Beasts -->
 		</skillList>
 	</npc>
-	<npc id="22445" level="87" type="Monster" name="Morgos' Canyon Hunter" element="FIRE">
+	<npc id="22445" level="87" type="Monster" name="Morgos' Canyon Hunter" title="Valley Searcher" element="FIRE">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
@@ -3092,32 +3092,33 @@
 			<skill id="48044" level="1" /> <!-- Fire Attribute Monster -->
 		</skillList>
 	</npc>
-	<npc id="22495" level="90" type="Monster" name="Ifrit" title="Valakas' Follower" element="FIRE">
+	<npc id="22495" level="90" type="Monster" name="Black Bone Scout" element="FIRE">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="1215000" sp="121500" />
+		<equipment rhand="97293" /> <!-- For monsters_Antharas' Lair_Devil Spearshooter - Not Available -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="71477.8481" hpRegen="10.2" mp="11928" mpRegen="3.6" />
 			<attack physical="3611" magical="2465" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2383" magical="1045" />
 			<speed>
-				<walk ground="39" />
+				<walk ground="60" />
 				<run ground="170" />
 			</speed>
 			<hitTime>600</hitTime>
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="28" />
-			<height normal="48.5" />
+			<radius normal="15" />
+			<height normal="46" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="48044" level="1" /> <!-- Fire Attribute Monster -->
 		</skillList>
 	</npc>
-	<npc id="22496" level="90" type="Monster" name="Ifrin" title="Valakas' Follower" element="FIRE">
+	<npc id="22496" level="90" type="Monster" name="Black Bone Warrior" element="FIRE">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
@@ -3134,15 +3135,15 @@
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="14" />
-			<height normal="28" />
+			<radius normal="18" />
+			<height normal="55.8" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="48044" level="1" /> <!-- Fire Attribute Monster -->
 		</skillList>
 	</npc>
-	<npc id="22497" level="90" type="Monster" name="Iff" title="Valakas' Follower" element="FIRE">
+	<npc id="22497" level="90" type="Monster" name="Black Bone Wizard" element="FIRE">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
@@ -3152,22 +3153,22 @@
 			<attack physical="3611" magical="2465" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2383" magical="1045" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="60" />
 				<run ground="170" />
 			</speed>
 			<hitTime>600</hitTime>
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="21" />
-			<height normal="40" />
+			<radius normal="13" />
+			<height normal="39" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="48044" level="1" /> <!-- Fire Attribute Monster -->
 		</skillList>
 	</npc>
-	<npc id="22498" level="90" type="Monster" name="Tarask Dragon" title="Fire Dragon" element="FIRE">
+	<npc id="22498" level="90" type="Monster" name="Black Bone Knight" element="FIRE">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
@@ -3177,19 +3178,38 @@
 			<attack physical="3611" magical="2465" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2383" magical="1045" />
 			<speed>
-				<walk ground="50" />
+				<walk ground="60" />
 				<run ground="170" />
 			</speed>
 			<hitTime>600</hitTime>
 		</stats>
 		<status attackable="true" />
 		<collision>
-			<radius normal="29" />
-			<height normal="42" />
+			<radius normal="23.4" />
+			<height normal="62" />
 		</collision>
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="48044" level="1" /> <!-- Fire Attribute Monster -->
 		</skillList>
+	</npc>
+	<npc id="22499" level="85" type="Folk" name="Cave Death" title="Behemoth' Follower">
+		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+		<race>ETC</race>
+		<sex>FEMALE</sex>
+		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
+			<vitals hp="35738" hpRegen="10.5" mp="11928" mpRegen="3.6" />
+			<speed>
+				<walk ground="46" />
+				<run ground="170" />
+			</speed>
+			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
+			<defence physical="405.85106382979" magical="297.0297029703" />
+		</stats>
+		<status attackable="false" />
+		<collision>
+			<radius normal="25.344" />
+			<height normal="49.176" />
+		</collision>
 	</npc>
 </list>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="25200" level="71" type="Monster" name="Sheshark's Family" title="Minion">
 		<parameters>
@@ -2806,7 +2806,7 @@
 		<ai type="BALANCED" />
 		<collision>
 			<radius normal="35" />
-			<height normal="46.377" />
+			<height normal="46.3765" />
 		</collision>
 		<dropLists>
 			<drop>
@@ -3066,7 +3066,7 @@
 			<height normal="28.5" />
 		</collision>
 	</npc>
-	<npc id="25266" level="75" type="RaidBoss" name="Bloody Empress Decarbia" title="Raid Boss">
+	<npc id="25266" level="75" type="RaidBoss" name="Bloody Empress Decarabia" title="Raid Boss">
 		<parameters>
 			<minions name="Privates">
 				<npc id="25267" count="4" respawnTime="360" weightPoint="1" />
@@ -3116,7 +3116,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="25267" level="74" type="Monster" name="Decarbia's Royal Guard" title="Minion">
+	<npc id="25267" level="74" type="Monster" name="Decarabia's Royal Guard" title="Minion">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="5286" /> <!-- Berserker Blade -->
@@ -3153,7 +3153,7 @@
 			<height normal="31" grown="36" />
 		</collision>
 	</npc>
-	<npc id="25268" level="74" type="Monster" name="Decarbia's Escort" title="Minion">
+	<npc id="25268" level="74" type="Monster" name="Decarabia's Praetorian" title="Minion">
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4170" level="7" />
 		</parameters>
@@ -3423,7 +3423,7 @@
 		<ai type="BALANCED" />
 		<collision>
 			<radius normal="35" />
-			<height normal="46.377" />
+			<height normal="46.3765" />
 		</collision>
 	</npc>
 	<npc id="25274" level="49" type="Monster" name="Carnabarun" title="Minion">
@@ -4198,7 +4198,7 @@
 			<height normal="0" />
 		</collision>
 	</npc>
-	<npc id="25291" level="75" type="Monster" name="Daimon's Family" title="Raid Fighter">
+	<npc id="25291" level="75" type="Monster" name="Daimon's Family" title="Raid Minion">
 		<parameters>
 			<skill name="DDMagic_a" id="4194" level="8" />
 			<skill name="Debuff_a" id="4205" level="8" />
@@ -4238,7 +4238,7 @@
 			<height normal="30" />
 		</collision>
 	</npc>
-	<npc id="25292" level="75" type="Monster" name="Daimon's Family" title="Raid Fighter">
+	<npc id="25292" level="75" type="Monster" name="Daimon's Family" title="Raid Minion">
 		<parameters>
 			<skill name="HealMagic_a" id="4209" level="8" />
 			<skill name="SelfRangeBuff_a" id="4212" level="8" />
@@ -4329,7 +4329,7 @@
 			<height normal="54" />
 		</collision>
 	</npc>
-	<npc id="25294" level="75" type="Monster" name="Hestia's Fighter" title="Raid Fighter">
+	<npc id="25294" level="75" type="Monster" name="Hestia's Fighter" title="Raid Minion">
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4740" level="8" />
 		</parameters>
@@ -4367,7 +4367,7 @@
 			<height normal="27.5" />
 		</collision>
 	</npc>
-	<npc id="25295" level="75" type="Monster" name="Hestia's Follower" title="Raid Fighter">
+	<npc id="25295" level="75" type="Monster" name="Hestia's Follower" title="Raid Minion">
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
@@ -4447,7 +4447,7 @@
 			<height normal="32" />
 		</collision>
 	</npc>
-	<npc id="25297" level="73" type="Monster" name="Icicle Giant" title="Raid Fighter">
+	<npc id="25297" level="73" type="Monster" name="Icicle Giant" title="Raid Minion">
 		<parameters>
 			<skill name="DDMagic_a" id="4196" level="7" />
 			<skill name="Debuff_a" id="4201" level="7" />
@@ -4490,7 +4490,7 @@
 			<height normal="31" />
 		</collision>
 	</npc>
-	<npc id="25298" level="73" type="Monster" name="Icicle Giant" title="Raid Fighter">
+	<npc id="25298" level="73" type="Monster" name="Icicle Giant" title="Raid Minion">
 		<parameters>
 			<skill name="PhysicalSpecial_a" id="4169" level="7" />
 		</parameters>
