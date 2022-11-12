@@ -103,7 +103,7 @@ public class EnchantDailyMissionHandler extends AbstractDailyMissionHandler
 			return;
 		}
 		if ((((_requiredMissionCompleteId != 0) && checkRequiredMission(player)) || (_requiredMissionCompleteId == 0)) //
-			&& _itemIds.contains(event.getItem().getId()) && (player.getInventory().getItemByObjectId(event.getItem().getObjectId()).getEnchantLevel() >= _targetValue))
+			&& _itemIds.contains(event.getItem().getId()) && (event.getItem().getEnchantLevel() >= _targetValue))
 		{
 			processPlayerProgress(player);
 		}
