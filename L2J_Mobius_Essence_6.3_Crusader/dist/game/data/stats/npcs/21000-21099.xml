@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="21000" level="54" type="Monster" name="Soul of Ruins" element="FIRE">
 		<!-- L2wiki: https://l2wiki.com/classic/Soul_of_Ruins -->
@@ -2500,7 +2500,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<acquire exp="27890" sp="837" />
-		<equipment rhand="3937" /> <!-- Monster Only (Lesser Giant) - Not Available - Not Available -->
+		<equipment rhand="3937" /> <!-- Monster Only (Lesser Giant) - Not Available -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1447.45325347694" hpRegen="5.5" mp="720" mpRegen="2.1" />
 			<attack physical="290.44588" magical="198.33688" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4441,15 +4441,15 @@
 					<item id="92915" min="1" max="1" chance="13.9257" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
 					<item id="92916" min="1" max="1" chance="6.9629" /> <!-- Material: Animal Spirit - Sealed -->
 					<item id="92917" min="1" max="1" chance="2.321" /> <!-- Material: Metal Ingot - Sealed -->
-					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing -->
+					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing: Weapon -->
 					<item id="92995" min="1" max="1" chance="69.6286" /> <!-- Drained Thons - Sealed -->
-					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Drained Asofe - Sealed -->
+					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Weakened Asofe - Sealed -->
 				</group>
 			</drop>
 			<spoil>
 				<item id="92999" min="1" max="1" chance="30.4482" /> <!-- Old High-grade Resources - Sealed -->
 				<item id="92995" min="1" max="1" chance="15.2241" /> <!-- Drained Thons - Sealed -->
-				<item id="92994" min="1" max="1" chance="1.5224" /> <!-- Drained Asofe - Sealed -->
+				<item id="92994" min="1" max="1" chance="1.5224" /> <!-- Weakened Asofe - Sealed -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -4531,15 +4531,15 @@
 					<item id="92915" min="1" max="1" chance="13.9257" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
 					<item id="92916" min="1" max="1" chance="6.9629" /> <!-- Material: Animal Spirit - Sealed -->
 					<item id="92917" min="1" max="1" chance="2.321" /> <!-- Material: Metal Ingot - Sealed -->
-					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing -->
+					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing: Weapon -->
 					<item id="92995" min="1" max="1" chance="69.6286" /> <!-- Drained Thons - Sealed -->
-					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Drained Asofe - Sealed -->
+					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Weakened Asofe - Sealed -->
 				</group>
 			</drop>
 			<spoil>
 				<item id="92999" min="1" max="1" chance="27.1808" /> <!-- Old High-grade Resources - Sealed -->
 				<item id="92995" min="1" max="1" chance="13.5904" /> <!-- Drained Thons - Sealed -->
-				<item id="92994" min="1" max="1" chance="1.359" /> <!-- Drained Asofe - Sealed -->
+				<item id="92994" min="1" max="1" chance="1.359" /> <!-- Weakened Asofe - Sealed -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -4694,15 +4694,15 @@
 					<item id="92915" min="1" max="1" chance="13.9257" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
 					<item id="92916" min="1" max="1" chance="6.9629" /> <!-- Material: Animal Spirit - Sealed -->
 					<item id="92917" min="1" max="1" chance="2.321" /> <!-- Material: Metal Ingot - Sealed -->
-					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing -->
+					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing: Weapon -->
 					<item id="92995" min="1" max="1" chance="69.6286" /> <!-- Drained Thons - Sealed -->
-					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Drained Asofe - Sealed -->
+					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Weakened Asofe - Sealed -->
 				</group>
 			</drop>
 			<spoil>
 				<item id="92999" min="1" max="1" chance="30.4482" /> <!-- Old High-grade Resources - Sealed -->
 				<item id="92995" min="1" max="1" chance="15.2241" /> <!-- Drained Thons - Sealed -->
-				<item id="92994" min="1" max="1" chance="1.5224" /> <!-- Drained Asofe - Sealed -->
+				<item id="92994" min="1" max="1" chance="1.5224" /> <!-- Weakened Asofe - Sealed -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -4843,15 +4843,15 @@
 					<item id="92915" min="1" max="1" chance="13.9257" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
 					<item id="92916" min="1" max="1" chance="6.9629" /> <!-- Material: Animal Spirit - Sealed -->
 					<item id="92917" min="1" max="1" chance="2.321" /> <!-- Material: Metal Ingot - Sealed -->
-					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing -->
+					<item id="94184" min="1" max="1" chance="0.1989" /> <!-- Scroll of Blessing: Weapon -->
 					<item id="92995" min="1" max="1" chance="69.6286" /> <!-- Drained Thons - Sealed -->
-					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Drained Asofe - Sealed -->
+					<item id="92994" min="1" max="1" chance="6.9629" /> <!-- Weakened Asofe - Sealed -->
 				</group>
 			</drop>
 			<spoil>
 				<item id="92999" min="1" max="1" chance="28.6834" /> <!-- Old High-grade Resources - Sealed -->
 				<item id="92995" min="1" max="1" chance="14.3417" /> <!-- Drained Thons - Sealed -->
-				<item id="92994" min="1" max="1" chance="1.4342" /> <!-- Drained Asofe - Sealed -->
+				<item id="92994" min="1" max="1" chance="1.4342" /> <!-- Weakened Asofe - Sealed -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -5297,7 +5297,7 @@
 					<item id="92908" min="1" max="1" chance="74.7229" /> <!-- Material: Lump of Wood - Sealed -->
 					<item id="92909" min="1" max="1" chance="14.9446" /> <!-- Material: Pack of Knickknacks - Sealed -->
 					<item id="92910" min="1" max="1" chance="7.4723" /> <!-- Material: Rags - Sealed -->
-					<item id="2179" min="1" max="1" chance="2.8602" /> <!-- Recipe: Quality Leather Gloves -->
+					<item id="2179" min="1" max="1" chance="2.8602" /> <!-- Recipe: Quality Leather Gloves (100%) -->
 				</group>
 			</drop>
 			<spoil>

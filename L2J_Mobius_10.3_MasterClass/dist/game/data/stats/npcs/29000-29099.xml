@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="29001" level="40" type="GrandBoss" name="Queen Ant">
 		<parameters>
@@ -1007,7 +1007,7 @@
 				<group chance="100">
 					<item id="35567" min="1" max="1" chance="10" /> <!-- Dark Armor Enhancement Stone -->
 					<item id="35569" min="1" max="1" chance="10" /> <!-- Bloody Armor Enhancement Stone -->
-					<item id="45932" min="3" max="3" chance="80" /> <!-- Top-grade Weapon Augmenting Stone -->
+					<item id="45932" min="3" max="3" chance="80" /> <!-- Top-grade Augmenting Stone: Weapon -->
 				</group>
 				<group chance="100">
 					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
@@ -1519,13 +1519,13 @@
 					<item id="37781" min="1" max="1" chance="50" /> <!-- Scroll of Blessing: R99-grade Armor -->
 				</group>
 				<group chance="0.4">
-					<item id="36427" min="1" max="1" chance="14.28" /> <!-- Valakas Shaper - Fragment -->
-					<item id="36428" min="1" max="1" chance="14.32" /> <!-- Valakas Cutter - Fragment -->
-					<item id="36429" min="1" max="1" chance="14.28" /> <!-- Valakas Slasher - Fragment -->
-					<item id="36430" min="1" max="1" chance="14.28" /> <!-- Valakas Thrower - Fragment -->
-					<item id="36431" min="1" max="1" chance="14.28" /> <!-- Valakas Buster - Fragment -->
-					<item id="36432" min="1" max="1" chance="14.28" /> <!-- Valakas Caster - Fragment -->
-					<item id="36433" min="1" max="1" chance="14.28" /> <!-- Valakas Retributer - Fragment -->
+					<item id="36427" min="1" max="1" chance="14.28" /> <!-- Valakas Shaper - Low-grade -->
+					<item id="36428" min="1" max="1" chance="14.32" /> <!-- Valakas Cutter - Low-grade -->
+					<item id="36429" min="1" max="1" chance="14.28" /> <!-- Valakas Slasher - Low-grade -->
+					<item id="36430" min="1" max="1" chance="14.28" /> <!-- Valakas Thrower - Low-grade -->
+					<item id="36431" min="1" max="1" chance="14.28" /> <!-- Valakas Buster - Low-grade -->
+					<item id="36432" min="1" max="1" chance="14.28" /> <!-- Valakas Caster - Low-grade -->
+					<item id="36433" min="1" max="1" chance="14.28" /> <!-- Valakas Retributer - Low-grade -->
 				</group>
 				<group chance="100">
 					<item id="36414" min="1" max="1" chance="100" /> <!-- Dragon Claw -->
@@ -2983,7 +2983,7 @@
 		<dropLists>
 			<drop>
 				<group chance="20">
-					<item id="8180" min="1" max="1" chance="100" /> <!-- Circlet of Ice Fairy Sirra -->
+					<item id="8180" min="1" max="1" chance="100" /> <!-- Ice Fairy Sirra's Circlet -->
 				</group>
 				<group chance="100">
 					<item id="57" min="20000" max="40000" chance="100" /> <!-- Adena -->
@@ -3768,10 +3768,10 @@
 					<item id="57" min="9000000" max="13000000" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="100">
-					<item id="45929" min="2" max="4" chance="45" /> <!-- Weapon Augmenting Stone -->
-					<item id="45929" min="2" max="4" chance="40" /> <!-- Weapon Augmenting Stone -->
-					<item id="45929" min="1" max="2" chance="10" /> <!-- Weapon Augmenting Stone -->
-					<item id="45929" min="1" max="2" chance="5" /> <!-- Weapon Augmenting Stone -->
+					<item id="45929" min="2" max="4" chance="45" /> <!-- Augmenting Stone: Weapon -->
+					<item id="45929" min="2" max="4" chance="40" /> <!-- Augmenting Stone: Weapon -->
+					<item id="45929" min="1" max="2" chance="10" /> <!-- Augmenting Stone: Weapon -->
+					<item id="45929" min="1" max="2" chance="5" /> <!-- Augmenting Stone: Weapon -->
 				</group>
 				<group chance="100">
 					<item id="6656" min="1" max="1" chance="100" /> <!-- Antharas' Earring -->
@@ -3979,10 +3979,10 @@
 					<item id="57" min="9000000" max="13000000" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="100">
-					<item id="45929" min="2" max="4" chance="45" /> <!-- Weapon Augmenting Stone -->
-					<item id="45929" min="2" max="4" chance="40" /> <!-- Weapon Augmenting Stone -->
-					<item id="45929" min="1" max="2" chance="10" /> <!-- Weapon Augmenting Stone -->
-					<item id="45929" min="1" max="2" chance="5" /> <!-- Weapon Augmenting Stone -->
+					<item id="45929" min="2" max="4" chance="45" /> <!-- Augmenting Stone: Weapon -->
+					<item id="45929" min="2" max="4" chance="40" /> <!-- Augmenting Stone: Weapon -->
+					<item id="45929" min="1" max="2" chance="10" /> <!-- Augmenting Stone: Weapon -->
+					<item id="45929" min="1" max="2" chance="5" /> <!-- Augmenting Stone: Weapon -->
 				</group>
 				<group chance="100">
 					<item id="959" min="8" max="12" chance="100" /> <!-- Scroll: Enchant S-grade Weapon -->
@@ -4135,16 +4135,16 @@
 					<item id="37781" min="1" max="1" chance="50" /> <!-- Scroll of Blessing: R99-grade Armor -->
 				</group>
 				<group chance="0.4">
-					<item id="36417" min="1" max="1" chance="10" /> <!-- Antharas Shaper - Fragment -->
-					<item id="36418" min="1" max="1" chance="10" /> <!-- Antharas Slasher - Fragment -->
-					<item id="36419" min="1" max="1" chance="10" /> <!-- Antharas Thrower - Fragment -->
-					<item id="36420" min="1" max="1" chance="10" /> <!-- Antharas Buster - Fragment -->
-					<item id="36421" min="1" max="1" chance="10" /> <!-- Antharas Cutter - Fragment -->
-					<item id="36422" min="1" max="1" chance="10" /> <!-- Antharas Stormer - Fragment -->
-					<item id="36423" min="1" max="1" chance="10" /> <!-- Antharas Fighter - Fragment -->
-					<item id="36424" min="1" max="1" chance="10" /> <!-- Antharas Avenger - Fragment -->
-					<item id="36425" min="1" max="1" chance="10" /> <!-- Antharas Dual Blunt Weapon - Fragment -->
-					<item id="36426" min="1" max="1" chance="10" /> <!-- Antharas Dual Swords - Fragment -->
+					<item id="36417" min="1" max="1" chance="10" /> <!-- Antharas Shaper - Low-grade -->
+					<item id="36418" min="1" max="1" chance="10" /> <!-- Antharas Slasher - Low-grade -->
+					<item id="36419" min="1" max="1" chance="10" /> <!-- Antharas Thrower - Low-grade -->
+					<item id="36420" min="1" max="1" chance="10" /> <!-- Antharas Buster - Low-grade -->
+					<item id="36421" min="1" max="1" chance="10" /> <!-- Antharas Cutter - Low-grade -->
+					<item id="36422" min="1" max="1" chance="10" /> <!-- Antharas Stormer - Low-grade -->
+					<item id="36423" min="1" max="1" chance="10" /> <!-- Antharas Fighter - Low-grade -->
+					<item id="36424" min="1" max="1" chance="10" /> <!-- Antharas Avenger - Low-grade -->
+					<item id="36425" min="1" max="1" chance="10" /> <!-- Antharas Dual Blunt Weapon - Low-grade -->
+					<item id="36426" min="1" max="1" chance="10" /> <!-- Antharas Dual Swords - Low-grade -->
 				</group>
 				<group chance="100">
 					<item id="36414" min="1" max="1" chance="100" /> <!-- Dragon Claw -->

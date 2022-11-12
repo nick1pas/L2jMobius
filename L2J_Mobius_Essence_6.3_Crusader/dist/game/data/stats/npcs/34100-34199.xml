@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="34100" level="99" type="Folk" name="Ophilia" title="Herald of Victory">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
@@ -212,7 +212,7 @@
 	<npc id="34106" level="75" type="Teleporter" name="Gariachin">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="5131" /> <!-- Monster Only (Parhit Staff) - Not Available - Not Available -->
+		<equipment rhand="5131" /> <!-- Monster Only (Parhit Staff) - Not Available -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2823" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
@@ -3127,17 +3127,17 @@
 			<drop>
 				<item id="57" min="5086" max="9143" chance="70" /> <!-- Adena -->
 				<item id="94718" min="1" max="1" chance="0.059856" /> <!-- Hellbound Ring -->
-				<item id="92995" min="1" max="1" chance="19.32876" /> <!-- Thons -->
-				<item id="92915" min="1" max="1" chance="5.85772" /> <!-- Material: Bag of Low-grade Stuff -->
-				<item id="92916" min="1" max="1" chance="2.96422" /> <!-- Material: Animal Spirit -->
-				<item id="92994" min="1" max="1" chance="2.96422" /> <!-- Asofe -->
+				<item id="92995" min="1" max="1" chance="19.32876" /> <!-- Drained Thons - Sealed -->
+				<item id="92915" min="1" max="1" chance="5.85772" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
+				<item id="92916" min="1" max="1" chance="2.96422" /> <!-- Material: Animal Spirit - Sealed -->
+				<item id="92994" min="1" max="1" chance="2.96422" /> <!-- Weakened Asofe - Sealed -->
 				<item id="94719" min="1" max="1" chance="0.059425" /> <!-- Scroll: Enchant Hellbound Ring -->
 				<item id="94716" min="1" max="1" chance="0.029856" /> <!-- Talisman of Hellbound Fragment -->
 			</drop>
 			<spoil>
-				<item id="92994" min="1" max="1" chance="6.2914" /> <!-- Asofe -->
-				<item id="92995" min="1" max="1" chance="54.23748" /> <!-- Thons -->
-				<item id="92999" min="1" max="1" chance="84.57082" /> <!-- High-grade Resources -->
+				<item id="92994" min="1" max="1" chance="6.2914" /> <!-- Weakened Asofe - Sealed -->
+				<item id="92995" min="1" max="1" chance="54.23748" /> <!-- Drained Thons - Sealed -->
+				<item id="92999" min="1" max="1" chance="84.57082" /> <!-- Old High-grade Resources - Sealed -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -3163,17 +3163,17 @@
 			<drop>
 				<item id="57" min="5086" max="9143" chance="70" /> <!-- Adena -->
 				<item id="94718" min="1" max="1" chance="0.059856" /> <!-- Hellbound Ring -->
-				<item id="92995" min="1" max="1" chance="19.32876" /> <!-- Thons -->
-				<item id="92915" min="1" max="1" chance="5.85772" /> <!-- Material: Bag of Low-grade Stuff -->
-				<item id="92916" min="1" max="1" chance="2.96422" /> <!-- Material: Animal Spirit -->
-				<item id="92994" min="1" max="1" chance="2.96422" /> <!-- Asofe -->
+				<item id="92995" min="1" max="1" chance="19.32876" /> <!-- Drained Thons - Sealed -->
+				<item id="92915" min="1" max="1" chance="5.85772" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
+				<item id="92916" min="1" max="1" chance="2.96422" /> <!-- Material: Animal Spirit - Sealed -->
+				<item id="92994" min="1" max="1" chance="2.96422" /> <!-- Weakened Asofe - Sealed -->
 				<item id="94719" min="1" max="1" chance="0.059425" /> <!-- Scroll: Enchant Hellbound Ring -->
 				<item id="94716" min="1" max="1" chance="0.029856" /> <!-- Talisman of Hellbound Fragment -->
 			</drop>
 			<spoil>
-				<item id="92994" min="1" max="1" chance="6.2914" /> <!-- Asofe -->
-				<item id="92995" min="1" max="1" chance="54.23748" /> <!-- Thons -->
-				<item id="92999" min="1" max="1" chance="84.57082" /> <!-- High-grade Resources -->
+				<item id="92994" min="1" max="1" chance="6.2914" /> <!-- Weakened Asofe - Sealed -->
+				<item id="92995" min="1" max="1" chance="54.23748" /> <!-- Drained Thons - Sealed -->
+				<item id="92999" min="1" max="1" chance="84.57082" /> <!-- Old High-grade Resources - Sealed -->
 			</spoil>
 		</dropLists>
 	</npc>

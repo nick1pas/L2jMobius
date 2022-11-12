@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="29100" level="80" type="Monster" name="Archangel">
 		<race>DIVINE</race>
@@ -224,7 +224,7 @@
 					<item id="8688" min="1" max="1" chance="7.15" /> <!-- Daimon Crystal -->
 					<item id="8938" min="1" max="1" chance="7.15" /> <!-- Tallum Blade*Damascus Sword -->
 					<item id="91887" min="1" max="1" chance="7.15" /> <!-- Durendal -->
-					<item id="91902" min="1" max="1" chance="7.15" /> <!-- Éclair Bijou -->
+					<item id="91902" min="1" max="1" chance="7.15" /> <!-- ?clair Bijou -->
 				</group>
 				<group chance="55">
 					<item id="5287" min="1" max="1" chance="3.45" /> <!-- Sealed Dark Crystal Breastplate -->
@@ -258,8 +258,8 @@
 					<item id="5329" min="1" max="1" chance="3.44" /> <!-- Sealed Majestic Robe -->
 				</group>
 				<group chance="50">
-					<item id="94186" min="1" max="1" chance="16" /> <!-- Life Stone Lv. 2 - Weapon -->
-					<item id="94188" min="1" max="1" chance="84" /> <!-- Life Stone Lv. 2 - Armor -->
+					<item id="94186" min="1" max="1" chance="16" /> <!-- Augmenting Stone: Weapon -->
+					<item id="94188" min="1" max="1" chance="84" /> <!-- Augmenting Stone: Armor -->
 				</group>
 				<group chance="5">
 					<item id="49995" min="1" max="1" chance="8.33" /> <!-- Faded Best STR Dye <STR +4 CON -2> - Lv. 0 -->
@@ -1454,7 +1454,7 @@
 				<item id="94508" min="1" max="1" chance="0.32" /> <!-- Spellbook: Cacophony of War -->
 				<item id="94668" min="1" max="1" chance="0.32" /> <!-- Spellbook: Pa'agrio's Touch -->
 				<item id="94673" min="1" max="1" chance="0.32" /> <!-- Spellbook: Team Building -->
-				<item id="94861" min="1" max="1" chance="0.32" /> <!-- Spellbook: Tranquillity -->
+				<item id="94861" min="1" max="1" chance="0.32" /> <!-- Spellbook: Tranquility -->
 				<item id="94862" min="1" max="1" chance="0.32" /> <!-- Spellbook: Exclusion -->
 				<item id="94863" min="1" max="1" chance="0.32" /> <!-- Spellbook: Dark Disruption -->
 				<item id="95346" min="1" max="1" chance="0.32" /> <!-- Spellbook: Meteor -->
@@ -1512,7 +1512,7 @@
 				<item id="94508" min="1" max="1" chance="0.48" /> <!-- Spellbook: Cacophony of War -->
 				<item id="94668" min="1" max="1" chance="0.48" /> <!-- Spellbook: Pa'agrio's Touch -->
 				<item id="94673" min="1" max="1" chance="0.48" /> <!-- Spellbook: Team Building -->
-				<item id="94861" min="1" max="1" chance="0.48" /> <!-- Spellbook: Tranquillity -->
+				<item id="94861" min="1" max="1" chance="0.48" /> <!-- Spellbook: Tranquility -->
 				<item id="94862" min="1" max="1" chance="0.48" /> <!-- Spellbook: Exclusion -->
 				<item id="94863" min="1" max="1" chance="0.48" /> <!-- Spellbook: Dark Disruption -->
 				<item id="95346" min="1" max="1" chance="0.48" /> <!-- Spellbook: Meteor -->
@@ -1570,7 +1570,7 @@
 				<item id="94508" min="1" max="1" chance="1" /> <!-- Spellbook: Cacophony of War -->
 				<item id="94668" min="1" max="1" chance="1" /> <!-- Spellbook: Pa'agrio's Touch -->
 				<item id="94673" min="1" max="1" chance="1" /> <!-- Spellbook: Team Building -->
-				<item id="94861" min="1" max="1" chance="1" /> <!-- Spellbook: Tranquillity -->
+				<item id="94861" min="1" max="1" chance="1" /> <!-- Spellbook: Tranquility -->
 				<item id="94862" min="1" max="1" chance="1" /> <!-- Spellbook: Exclusion -->
 				<item id="94863" min="1" max="1" chance="1" /> <!-- Spellbook: Dark Disruption -->
 				<item id="95346" min="1" max="1" chance="1" /> <!-- Spellbook: Meteor -->
@@ -1674,7 +1674,7 @@
 				<item id="94668" min="1" max="1" chance="0.32" /> <!-- Spellbook: Pa'agrio's Touch -->
 				<item id="94673" min="1" max="1" chance="0.32" /> <!-- Spellbook: Team Building -->
 				<item id="94726" min="1" max="1" chance="50" /> <!-- Talisman of Hellbound Pack -->
-				<item id="94861" min="1" max="1" chance="0.32" /> <!-- Spellbook: Tranquillity -->
+				<item id="94861" min="1" max="1" chance="0.32" /> <!-- Spellbook: Tranquility -->
 				<item id="94862" min="1" max="1" chance="0.32" /> <!-- Spellbook: Exclusion -->
 				<item id="94863" min="1" max="1" chance="0.32" /> <!-- Spellbook: Dark Disruption -->
 				<item id="95346" min="1" max="1" chance="0.32" /> <!-- Spellbook: Meteor -->
@@ -2047,8 +2047,8 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<item id="91944" min="1" max="1" chance="0.0548" /> <!-- Book of Light -->
-				<item id="91945" min="1" max="1" chance="0.0548" /> <!-- Book of Shadows -->
+				<item id="91944" min="1" max="1" chance="0.0548" /> <!-- Spellbook: Light Master Lv. 2 -->
+				<item id="91945" min="1" max="1" chance="0.0548" /> <!-- Spellbook: Shadow Master Lv. 2 -->
 				<item id="92401" min="1" max="1" chance="0.0772" /> <!-- Spellbook: White Guardian -->
 				<item id="93103" min="1" max="1" chance="0.0093" /> <!-- Spellbook: Divine Beam -->
 				<item id="93387" min="1" max="1" chance="0.0097" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
@@ -2115,8 +2115,8 @@
 		<dropLists>
 			<drop>
 				<item id="91258" min="1" max="1" chance="5" /> <!-- Orfen Doll Lv. 2 -->
-				<item id="91944" min="1" max="1" chance="0.0548" /> <!-- Book of Light -->
-				<item id="91945" min="1" max="1" chance="0.0548" /> <!-- Book of Shadows -->
+				<item id="91944" min="1" max="1" chance="0.0548" /> <!-- Spellbook: Light Master Lv. 2 -->
+				<item id="91945" min="1" max="1" chance="0.0548" /> <!-- Spellbook: Shadow Master Lv. 2 -->
 				<item id="92401" min="1" max="1" chance="0.0772" /> <!-- Spellbook: White Guardian -->
 				<item id="93103" min="1" max="1" chance="0.0093" /> <!-- Spellbook: Divine Beam -->
 				<item id="93387" min="1" max="1" chance="0.0097" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
@@ -2182,8 +2182,8 @@
 		<dropLists>
 			<drop>
 				<item id="91257" min="1" max="1" chance="5" /> <!-- Queen Ant Doll Lv. 2 -->
-				<item id="91944" min="1" max="1" chance="0.0548" /> <!-- Book of Light -->
-				<item id="91945" min="1" max="1" chance="0.0548" /> <!-- Book of Shadows -->
+				<item id="91944" min="1" max="1" chance="0.0548" /> <!-- Spellbook: Light Master Lv. 2 -->
+				<item id="91945" min="1" max="1" chance="0.0548" /> <!-- Spellbook: Shadow Master Lv. 2 -->
 				<item id="92401" min="1" max="1" chance="0.0772" /> <!-- Spellbook: White Guardian -->
 				<item id="93103" min="1" max="1" chance="0.0093" /> <!-- Spellbook: Divine Beam -->
 				<item id="93387" min="1" max="1" chance="0.0097" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
@@ -2488,12 +2488,12 @@
 		<exCrtEffect>false</exCrtEffect>
 		<dropLists>
 			<drop>
-				<item id="95781" min="1" max="1" chance="50.2" /> <!-- Ice core -->
-				<item id="95782" min="10" max="20" chance="10.0075" /> <!-- Ice lord weapon crystal -->
+				<item id="95781" min="1" max="1" chance="50.2" /> <!-- Black Frozen Core -->
+				<item id="95782" min="10" max="20" chance="10.0075" /> <!-- Frost Lord's Weapon Crystal - Sealed -->
 				<item id="57" min="70000" max="400000" chance="70" /> <!-- Adena -->
-				<item id="95743" min="1" max="1" chance="7.748" /> <!-- Top Grade A Weapon pack -->
-				<item id="93387" min="1" max="1" chance="0.75" /> <!-- Ultimate Death Knight Transformation -->
-				<item id="95503" min="1" max="1" chance="0.3" /> <!-- Divine Beam -->
+				<item id="95743" min="1" max="1" chance="7.748" /> <!-- Top-grade A-grade Weapon Pack -->
+				<item id="93387" min="1" max="1" chance="0.75" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
+				<item id="95503" min="1" max="1" chance="0.3" /> <!-- Spellbook: Divine Beam - Sealed -->
 				<item id="94498" min="1" max="1" chance="0.3" /> <!-- Spellbook: Titan Champion -->
 				<item id="94508" min="1" max="1" chance="0.3" /> <!-- Spellbook: Cacophony of War -->
 				<item id="94668" min="1" max="1" chance="0.3" /> <!-- Spellbook: Pa'agrio's Touch -->
@@ -2505,19 +2505,19 @@
 				<item id="95354" min="1" max="1" chance="0.03" /> <!-- Spellbook: Dragon Strike -->
 				<item id="95861" min="1" max="1" chance="0.03" /> <!-- Spellbook: Mechanical Hero -->
 				<item id="93733" min="1" max="1" chance="0.01" /> <!-- Flaming Tunic -->
-				<item id="93734" min="1" max="1" chance="0.01" /> <!-- Flaming stock -->
-				<item id="93139" min="1" max="1" chance="0.01" /> <!-- ice crystal breastplate -->
-				<item id="93142" min="1" max="1" chance="0.01" /> <!-- ice crystal gaiters -->
-				<item id="93315" min="1" max="1" chance="0.01" /> <!-- leather armor lightning -->
-				<item id="93316" min="1" max="1" chance="0.01" /> <!-- leather leggings lightning -->
-				<item id="95725" min="1" max="1" chance="0.01" /> <!-- frost lord sword -->
-				<item id="95725" min="1" max="1" chance="0.01" /> <!-- frost lord sword -->
-				<item id="95727" min="1" max="1" chance="0.01" /> <!-- frost lord axe -->
-				<item id="95729" min="1" max="1" chance="0.01" /> <!-- frost lord spear -->
-				<item id="95731" min="1" max="1" chance="0.01" /> <!-- frost lord Blade First -->
-				<item id="95733" min="1" max="1" chance="0.01" /> <!-- frost lord Blade staff -->
-				<item id="95735" min="1" max="1" chance="0.01" /> <!-- frost lord Blade Rapier -->
-				<item id="95737" min="1" max="1" chance="0.01" /> <!-- frost lord Blade Dualswords -->
+				<item id="93734" min="1" max="1" chance="0.01" /> <!-- Flaming Stockings -->
+				<item id="93139" min="1" max="1" chance="0.01" /> <!-- Ice Crystal Breastplate -->
+				<item id="93142" min="1" max="1" chance="0.01" /> <!-- Ice Crystal Gaiters - Sealed -->
+				<item id="93315" min="1" max="1" chance="0.01" /> <!-- Leather Armor of Lightning -->
+				<item id="93316" min="1" max="1" chance="0.01" /> <!-- Leather Leggings of Lightning -->
+				<item id="95725" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Sword -->
+				<item id="95725" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Sword -->
+				<item id="95727" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Axe -->
+				<item id="95729" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Spear -->
+				<item id="95731" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Blade Fists -->
+				<item id="95733" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Staff -->
+				<item id="95735" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Rapier -->
+				<item id="95737" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Dual Swords -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2597,18 +2597,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<item id="95781" min="1" max="1" chance="50.2" /> <!-- Ice core -->
-				<item id="95782" min="10" max="20" chance="10.0075" /> <!-- Ice lord weapon crystal -->
+				<item id="95781" min="1" max="1" chance="50.2" /> <!-- Black Frozen Core -->
+				<item id="95782" min="10" max="20" chance="10.0075" /> <!-- Frost Lord's Weapon Crystal - Sealed -->
 				<item id="57" min="70000" max="400000" chance="70" /> <!-- Adena -->
-				<item id="96006" min="1" max="1" chance="1.748" /> <!-- +5 Top Grade A Weapon pack -->
-				<item id="96031" min="1" max="1" chance="1.748" /> <!-- Package: +5 Leather Armor of Lightning -->
-				<item id="96032" min="1" max="1" chance="1.748" /> <!-- Package: +5 Leather Leggings of Lightning -->
-				<item id="96033" min="1" max="1" chance="1.748" /> <!-- Package: +5 Ice Crystal Breastplate -->
-				<item id="96034" min="1" max="1" chance="1.748" /> <!-- Package: +5 Ice Crystal Gaiters -->
-				<item id="96035" min="1" max="1" chance="1.748" /> <!-- Package: +5 Flaming Tunic -->
-				<item id="96036" min="1" max="1" chance="1.748" /> <!-- Package: +5 Flaming Stockings -->
-				<item id="93387" min="1" max="1" chance="0.75" /> <!-- Ultimate Death Knight Transformation -->
-				<item id="95503" min="1" max="1" chance="0.6" /> <!-- Divine Beam -->
+				<item id="96006" min="1" max="1" chance="1.748" /> <!-- +5 Top-grade A-grade Weapon Pack - Sealed -->
+				<item id="96031" min="1" max="1" chance="1.748" /> <!-- Package: +5 Leather Armor of Lightning - Sealed -->
+				<item id="96032" min="1" max="1" chance="1.748" /> <!-- Package: +5 Leather Leggings of Lightning - Sealed -->
+				<item id="96033" min="1" max="1" chance="1.748" /> <!-- Package: +5 Ice Crystal Breastplate - Sealed -->
+				<item id="96034" min="1" max="1" chance="1.748" /> <!-- Package: +5 Ice Crystal Gaiters - Sealed -->
+				<item id="96035" min="1" max="1" chance="1.748" /> <!-- Package: +5 Flaming Tunic - Sealed -->
+				<item id="96036" min="1" max="1" chance="1.748" /> <!-- Package: +5 Flaming Stockings - Sealed -->
+				<item id="93387" min="1" max="1" chance="0.75" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
+				<item id="95503" min="1" max="1" chance="0.6" /> <!-- Spellbook: Divine Beam - Sealed -->
 				<item id="94498" min="1" max="1" chance="0.6" /> <!-- Spellbook: Titan Champion -->
 				<item id="94508" min="1" max="1" chance="0.6" /> <!-- Spellbook: Cacophony of War -->
 				<item id="94668" min="1" max="1" chance="0.6" /> <!-- Spellbook: Pa'agrio's Touch -->
@@ -2624,7 +2624,7 @@
 				<item id="95730" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Bow -->
 				<item id="95732" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Magic Blunt Weapon -->
 				<item id="95734" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Ancient Sword -->
-				<item id="95736" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Gun -->
+				<item id="95736" min="1" max="1" chance="0.01" /> <!-- Frost Lord's Pistols -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2654,9 +2654,9 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Ice core -->
-				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Ice lord weapon crystal -->
-				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin soul crystal -->
+				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Black Frozen Core -->
+				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Frost Lord's Weapon Crystal - Sealed -->
+				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin's Soul Crystal Lv. 2 - Rare -->
 				<item id="57" min="1200" max="5200" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
@@ -2687,9 +2687,9 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Ice core -->
-				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Ice lord weapon crystal -->
-				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin soul crystal -->
+				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Black Frozen Core -->
+				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Frost Lord's Weapon Crystal - Sealed -->
+				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin's Soul Crystal Lv. 2 - Rare -->
 				<item id="57" min="1200" max="5200" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
@@ -2721,9 +2721,9 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Ice core -->
-				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Ice lord weapon crystal -->
-				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin soul crystal -->
+				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Black Frozen Core -->
+				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Frost Lord's Weapon Crystal - Sealed -->
+				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin's Soul Crystal Lv. 2 - Rare -->
 				<item id="57" min="1200" max="5200" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
@@ -2755,9 +2755,9 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Ice core -->
-				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Ice lord weapon crystal -->
-				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin soul crystal -->
+				<item id="95781" min="1" max="1" chance="0.002" /> <!-- Black Frozen Core -->
+				<item id="95782" min="10" max="20" chance="0.195" /> <!-- Frost Lord's Weapon Crystal - Sealed -->
+				<item id="95804" min="1" max="1" chance="0.1075" /> <!-- Hardin's Soul Crystal Lv. 2 - Rare -->
 				<item id="57" min="1200" max="5200" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>

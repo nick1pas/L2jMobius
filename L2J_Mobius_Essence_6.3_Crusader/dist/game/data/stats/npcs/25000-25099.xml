@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="25001" level="23" type="RaidBoss" name="Greyclaw Kutus" title="Raid Boss">
 		<parameters>
@@ -613,8 +613,8 @@
 				<item id="730" min="1" max="1" chance="14.4" /> <!-- Scroll: Enchant A-grade Armor -->
 				<item id="91033" min="1" max="1" chance="1" /> <!-- Wind Spirit Evolution Stone -->
 				<item id="93002" min="2" max="4" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.8" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="3.2" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.8" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="3.2" /> <!-- Augmenting Stone: Armor -->
 				<item id="94328" min="1" max="1" chance="0.07" /> <!-- Elixir Powder - Sealed -->
 			</drop>
 		</dropLists>
@@ -1225,7 +1225,7 @@
 					<item id="93003" min="4" max="8" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				</group>
 				<group chance="75">
-					<item id="90045" min="1" max="1" chance="100" /> <!-- Magical Tablet -->
+					<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				</group>
 			</drop>
 		</dropLists>
@@ -2019,15 +2019,15 @@
 			<drop>
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="90045" min="1" max="1" chance="75" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
 				<item id="91031" min="1" max="1" chance="0.25" /> <!-- Water Spirit Evolution Stone -->
 				<item id="91032" min="1" max="1" chance="0.25" /> <!-- Fire Spirit Evolution Stone -->
 				<item id="91033" min="1" max="1" chance="0.25" /> <!-- Wind Spirit Evolution Stone -->
 				<item id="91034" min="1" max="1" chance="0.25" /> <!-- Earth Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 			</drop>
 		</dropLists>
@@ -2167,7 +2167,7 @@
 					<item id="93002" min="1" max="2" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				</group>
 				<group chance="85">
-					<item id="90045" min="1" max="1" chance="100" /> <!-- Magical Tablet -->
+					<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				</group>
 				<group chance="1">
 					<item id="91031" min="1" max="1" chance="100" /> <!-- Water Spirit Evolution Stone -->
@@ -2310,7 +2310,7 @@
 					<item id="93002" min="1" max="2" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				</group>
 				<group chance="85">
-					<item id="90045" min="1" max="1" chance="100" /> <!-- Magical Tablet -->
+					<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				</group>
 				<group chance="1">
 					<item id="91034" min="1" max="1" chance="100" /> <!-- Earth Spirit Evolution Stone -->
@@ -2373,12 +2373,12 @@
 			<drop>
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="90045" min="1" max="1" chance="75" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
 				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 			</drop>
 		</dropLists>
@@ -2508,8 +2508,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Crystal of Light -->
-				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Crystal of Shadows -->
+				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Light Souls Lv. 2 -->
+				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Shadow Souls Lv. 2 -->
 				<item id="94096" min="1" max="1" chance="4" /> <!-- Regular Pet Training Guide -->
 				<item id="94138" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Pain of Sagittarius -->
 				<item id="94139" min="1" max="1" chance="0.0274" /> <!-- Spellbook: Esprit -->
@@ -2677,12 +2677,12 @@
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
-				<item id="90045" min="1" max="1" chance="100" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="2.5" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 				<item id="96623" min="1" max="1" chance="1.6" /> <!-- Dye Powder -->
 			</drop>
@@ -3397,7 +3397,7 @@
 			<drop>
 				<item id="729" min="1" max="1" chance="100" /> <!-- Scroll: Enchant A-grade Weapon -->
 				<item id="730" min="1" max="3" chance="100" /> <!-- Scroll: Enchant A-grade Armor -->
-				<item id="90045" min="5" max="9" chance="100" /> <!-- Magical Tablet -->
+				<item id="90045" min="5" max="9" chance="100" /> <!-- Magic Tablet -->
 				<item id="90704" min="1" max="1" chance="1" /> <!-- Sealed Soul Crystal Lv. 11 -->
 				<item id="7883" min="1" max="1" chance="8.5" /> <!-- Guardian's Sword -->
 				<item id="7889" min="1" max="1" chance="8" /> <!-- Wizard's Tear -->
@@ -4303,8 +4303,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Crystal of Light -->
-				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Crystal of Shadows -->
+				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Light Souls Lv. 2 -->
+				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Shadow Souls Lv. 2 -->
 				<item id="94096" min="1" max="1" chance="4" /> <!-- Regular Pet Training Guide -->
 				<item id="94138" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Pain of Sagittarius -->
 				<item id="94139" min="1" max="1" chance="0.0274" /> <!-- Spellbook: Esprit -->
@@ -4469,12 +4469,12 @@
 			<drop>
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="90045" min="1" max="1" chance="75" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
 				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 			</drop>
 		</dropLists>
@@ -4663,15 +4663,15 @@
 			<drop>
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="90045" min="1" max="1" chance="75" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
 				<item id="91031" min="1" max="1" chance="0.25" /> <!-- Water Spirit Evolution Stone -->
 				<item id="91032" min="1" max="1" chance="0.25" /> <!-- Fire Spirit Evolution Stone -->
 				<item id="91033" min="1" max="1" chance="0.25" /> <!-- Wind Spirit Evolution Stone -->
 				<item id="91034" min="1" max="1" chance="0.25" /> <!-- Earth Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 			</drop>
 		</dropLists>

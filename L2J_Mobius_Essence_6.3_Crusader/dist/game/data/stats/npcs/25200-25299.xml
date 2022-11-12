@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="25200" level="71" type="Monster" name="Sheshark's Family" title="Minion">
 		<parameters>
@@ -758,7 +758,7 @@
 					<item id="93003" min="4" max="8" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				</group>
 				<group chance="75">
-					<item id="90045" min="1" max="1" chance="100" /> <!-- Magical Tablet -->
+					<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				</group>
 			</drop>
 		</dropLists>
@@ -885,8 +885,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Crystal of Light -->
-				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Crystal of Shadows -->
+				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Light Souls Lv. 2 -->
+				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Shadow Souls Lv. 2 -->
 				<item id="94096" min="1" max="1" chance="4" /> <!-- Regular Pet Training Guide -->
 				<item id="94138" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Pain of Sagittarius -->
 				<item id="94139" min="1" max="1" chance="0.0274" /> <!-- Spellbook: Esprit -->
@@ -1389,7 +1389,7 @@
 				<item id="948" min="1" max="1" chance="4.8" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="951" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant C-grade Weapon -->
 				<item id="952" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant C-grade Armor -->
-				<item id="90045" min="1" max="1" chance="30" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="30" /> <!-- Magic Tablet -->
 				<item id="91034" min="1" max="1" chance="1" /> <!-- Earth Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
@@ -1570,8 +1570,8 @@
 				<item id="730" min="1" max="1" chance="14.4" /> <!-- Scroll: Enchant A-grade Armor -->
 				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="2" max="4" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.8" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="3.2" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.8" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="3.2" /> <!-- Augmenting Stone: Armor -->
 				<item id="94328" min="1" max="1" chance="0.07" /> <!-- Elixir Powder - Sealed -->
 			</drop>
 		</dropLists>
@@ -2393,7 +2393,7 @@
 			<drop>
 				<item id="94117" min="1" max="1" chance="3" /> <!-- Advanced Pet Training Guide -->
 				<item id="94319" min="1" max="1" chance="0.1676" /> <!-- Spellbook: Sword Symphony -->
-				<item id="94320" min="1" max="1" chance="0.1813" /> <!-- Spellbook: Intoxicating Dance -->
+				<item id="94320" min="1" max="1" chance="0.1813" /> <!-- Spellbook: Dance of Blood -->
 				<item id="94499" min="1" max="1" chance="0.1685" /> <!-- Spellbook: Titanic Weapon -->
 				<item id="94502" min="1" max="1" chance="0.1646" /> <!-- Spellbook: Ogre Spirit Totem -->
 				<item id="94503" min="1" max="1" chance="0.1646" /> <!-- Spellbook: Rabbit Spirit Totem -->
@@ -2567,15 +2567,15 @@
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
-				<item id="90045" min="1" max="1" chance="100" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
 				<item id="91031" min="1" max="1" chance="0.25" /> <!-- Water Spirit Evolution Stone -->
 				<item id="91032" min="1" max="1" chance="0.25" /> <!-- Fire Spirit Evolution Stone -->
 				<item id="91033" min="1" max="1" chance="0.25" /> <!-- Wind Spirit Evolution Stone -->
 				<item id="91034" min="1" max="1" chance="0.25" /> <!-- Earth Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
-				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="2.5" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 				<item id="96623" min="1" max="1" chance="1.6" /> <!-- Dye Powder -->
 			</drop>
@@ -2633,7 +2633,7 @@
 				<item id="948" min="1" max="1" chance="4.8" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="951" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant C-grade Weapon -->
 				<item id="952" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant C-grade Armor -->
-				<item id="90045" min="1" max="1" chance="30" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="30" /> <!-- Magic Tablet -->
 				<item id="91033" min="1" max="1" chance="1" /> <!-- Wind Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
@@ -2975,7 +2975,7 @@
 				<item id="234" min="1" max="1" chance="1.92" /> <!-- Demon's Dagger -->
 				<item id="243" min="1" max="1" chance="1.92" /> <!-- Twilight Knife -->
 				<item id="264" min="1" max="1" chance="1.88" /> <!-- Pata -->
-				<item id="267" min="1" max="1" chance="1.88" /> <!-- Arthro Nail -->
+				<item id="267" min="1" max="1" chance="1.88" /> <!-- Arthro Claw -->
 				<item id="268" min="1" max="1" chance="1.88" /> <!-- Bellion Cestus -->
 				<item id="284" min="1" max="1" chance="1.88" /> <!-- Dark Elven Longbow -->
 				<item id="287" min="1" max="1" chance="1.88" /> <!-- Bow of Peril -->

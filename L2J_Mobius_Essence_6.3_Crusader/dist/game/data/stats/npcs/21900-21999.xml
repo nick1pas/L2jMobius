@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="21900" level="79" type="Monster" name="Ancient Holy Ground's Deadman">
 		<race>DEMONIC</race>
@@ -647,8 +647,8 @@
 					<item id="57" min="171" max="399" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.0022">
-					<item id="267" min="1" max="1" chance="4.5455" /> <!-- Arthro Nail -->
-					<item id="92796" min="1" max="1" chance="95.4545" /> <!-- Arthro Nail Blade -->
+					<item id="267" min="1" max="1" chance="4.5455" /> <!-- Arthro Claw -->
+					<item id="92796" min="1" max="1" chance="95.4545" /> <!-- Arthro Claw Blade -->
 				</group>
 				<group chance="3.2993">
 					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
@@ -668,8 +668,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="4970" min="1" max="1" chance="0.0004" /> <!-- Recipe: Arthro Nail (60%) -->
-				<item id="4189" min="1" max="1" chance="0.0002" /> <!-- Recipe: Arthro Nail (100%) -->
+				<item id="4970" min="1" max="1" chance="0.0004" /> <!-- Recipe: Arthro Claw (60%) -->
+				<item id="4189" min="1" max="1" chance="0.0002" /> <!-- Recipe: Arthro Claw (100%) -->
 				<item id="92996" min="1" max="1" chance="8.1154" /> <!-- Ancient Resources - Sealed -->
 				<item id="92997" min="1" max="1" chance="1.6231" /> <!-- Old Unknown Resources - Sealed -->
 				<item id="92998" min="1" max="1" chance="0.8115" /> <!-- Old Shining Resources - Sealed -->
@@ -923,7 +923,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<equipment rhand="5800" lhand="5799" /> <!-- Nephilim Lord - Not Available - Not Available / Nephilim Lord -->
+		<equipment rhand="5800" lhand="5799" /> <!-- Nephilim Lord - Not Available / Nephilim Lord -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="74933.22" hpRegen="8.5" mp="1679.733" mpRegen="3" />
 			<attack physical="1088.192" magical="743.0941" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1052,7 +1052,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<equipment rhand="5800" lhand="5799" /> <!-- Nephilim Lord - Not Available - Not Available / Nephilim Lord -->
+		<equipment rhand="5800" lhand="5799" /> <!-- Nephilim Lord - Not Available / Nephilim Lord -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="78055.4399744213" hpRegen="8.5" mp="1768.14" mpRegen="3" />
 			<attack physical="1157.65111798445" magical="790.525655306599" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2444,7 +2444,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<equipment rhand="15302" /> <!-- Transparent Bow (NPC) - Not Available - Not Available -->
+		<equipment rhand="15302" /> <!-- Transparent Bow (NPC) - Not Available -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="4041.03422549214" hpRegen="8.5" mp="2227.484" mpRegen="3" />
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -2601,7 +2601,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="8444672" sp="4110208" attributeExp="1144" />
-		<equipment rhand="1472" /> <!-- Dreadbane - Not Available - Not Available -->
+		<equipment rhand="1472" /> <!-- Dreadbane - Not Available -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="626323.848229216" hpRegen="397.10523483767" mp="3349.6" mpRegen="6" />
 			<attack physical="20497.752" magical="6859.47975" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2636,9 +2636,9 @@
 		<dropLists>
 			<drop>
 				<item id="91967" min="1" max="3" chance="90" /> <!-- Scroll: Enchant Dragon Valley's Earring -->
-				<item id="94184" min="1" max="1" chance="8" /> <!-- Scroll of Blessing -->
-				<item id="94186" min="1" max="1" chance="1.6" /> <!-- Life Stone Lv. 2 - Weapon -->
-				<item id="94188" min="1" max="1" chance="8.4" /> <!-- Life Stone Lv. 2 - Armor -->
+				<item id="94184" min="1" max="1" chance="8" /> <!-- Scroll of Blessing: Weapon -->
+				<item id="94186" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Weapon -->
+				<item id="94188" min="1" max="1" chance="8.4" /> <!-- Augmenting Stone: Armor -->
 				<item id="94422" min="1" max="1" chance="2" /> <!-- Elixir Powder Pouch -->
 				<item id="91953" min="1" max="1" chance="10" /> <!-- Dragon Valley's Earring -->
 				<item id="5287" min="1" max="1" chance="0.759" /> <!-- Sealed Dark Crystal Breastplate -->
@@ -4171,7 +4171,7 @@
 					<item id="57" min="865" max="2023" chance="100" /> <!-- Adena -->
 				</group>
 				<group chance="0.0681">
-					<item id="90045" min="1" max="1" chance="99.0099" /> <!-- Magical Tablet -->
+					<item id="90045" min="1" max="1" chance="99.0099" /> <!-- Magic Tablet -->
 					<item id="93903" min="1" max="1" chance="0.9901" /> <!-- Antharas' Lair's Time Stone -->
 				</group>
 				<group chance="11.1162">
@@ -4200,7 +4200,7 @@
 			</drop>
 			<spoil>
 				<item id="2133" min="1" max="1" chance="0.1066" /> <!-- A-grade Gemstone -->
-				<item id="90045" min="1" max="1" chance="0.0427" /> <!-- Magical Tablet -->
+				<item id="90045" min="1" max="1" chance="0.0427" /> <!-- Magic Tablet -->
 				<item id="92996" min="1" max="1" chance="63.9876" /> <!-- Ancient Resources - Sealed -->
 				<item id="92997" min="1" max="1" chance="12.7975" /> <!-- Old Unknown Resources - Sealed -->
 				<item id="92998" min="1" max="1" chance="6.3988" /> <!-- Old Shining Resources - Sealed -->
