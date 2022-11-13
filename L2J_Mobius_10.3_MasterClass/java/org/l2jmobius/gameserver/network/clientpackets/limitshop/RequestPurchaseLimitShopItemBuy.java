@@ -16,9 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.limitshop;
 
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.List;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
@@ -45,10 +46,10 @@ import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRBuyProduct;
  */
 public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 {
+	private int _shopIndex;
 	private int _productId;
 	private int _amount;
 	private LimitShopProductHolder _product;
-	private int _shopIndex;
 	
 	@Override
 	public void read(ReadablePacket packet)
@@ -96,24 +97,28 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 		if ((_amount < 1) || (_amount > 10000))
 		{
 			player.sendPacket(new ExBRBuyProduct(ExBrProductReplyType.INVENTORY_OVERFLOW));
+			player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, 0, Collections.emptyList()));
 			return;
 		}
 		
 		if (!player.isInventoryUnder80(false))
 		{
 			player.sendPacket(new ExBRBuyProduct(ExBrProductReplyType.INVENTORY_OVERFLOW));
+			player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, 0, Collections.emptyList()));
 			return;
 		}
 		
 		if ((player.getLevel() < _product.getMinLevel()) || (player.getLevel() > _product.getMaxLevel()))
 		{
 			player.sendPacket(SystemMessageId.YOUR_LEVEL_CANNOT_PURCHASE_THIS_ITEM);
+			player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, 0, Collections.emptyList()));
 			return;
 		}
 		
 		if (player.hasItemRequest() || player.hasRequest(PrimeShopRequest.class))
 		{
 			player.sendPacket(new ExBRBuyProduct(ExBrProductReplyType.INVALID_USER_STATE));
+			player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, 0, Collections.emptyList()));
 			return;
 		}
 		
@@ -127,6 +132,7 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 			{
 				player.sendMessage("You have reached your daily limit."); // TODO: Retail system message?
 				player.removeRequest(PrimeShopRequest.class);
+				player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, 0, Collections.emptyList()));
 				return;
 			}
 		}
@@ -136,11 +142,13 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 			{
 				player.sendMessage("You cannot buy any more of this item."); // TODO: Retail system message?
 				player.removeRequest(PrimeShopRequest.class);
+				player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, 0, Collections.emptyList()));
 				return;
 			}
 		}
 		
 		// Check existing items.
+		final int remainingInfo = Math.max(0, Math.max(_product.getAccountBuyLimit(), _product.getAccountDailyLimit()));
 		for (int i = 0; i < _product.getIngredientIds().length; i++)
 		{
 			if (_product.getIngredientIds()[i] == 0)
@@ -153,6 +161,7 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 				{
 					player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 					player.removeRequest(PrimeShopRequest.class);
+					player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, remainingInfo, Collections.emptyList()));
 					return;
 				}
 			}
@@ -162,6 +171,7 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 				{
 					player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 					player.removeRequest(PrimeShopRequest.class);
+					player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, remainingInfo, Collections.emptyList()));
 					return;
 				}
 			}
@@ -171,6 +181,7 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 				{
 					player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 					player.removeRequest(PrimeShopRequest.class);
+					player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, remainingInfo, Collections.emptyList()));
 					return;
 				}
 			}
@@ -178,6 +189,7 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 			{
 				player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 				player.removeRequest(PrimeShopRequest.class);
+				player.sendPacket(new ExPurchaseLimitShopItemResult(false, _shopIndex, _productId, remainingInfo, Collections.emptyList()));
 				return;
 			}
 		}
@@ -227,43 +239,42 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 		}
 		
 		// Reward.
-		final List<LimitShopRandomCraftReward> rewards = new ArrayList<>();
+		final Map<Integer, LimitShopRandomCraftReward> rewards = new HashMap<>();
 		if (_product.getProductionId2() > 0)
 		{
 			for (int i = 0; i < _amount; i++)
 			{
 				if (Rnd.get(100) < _product.getChance())
 				{
-					rewards.add(new LimitShopRandomCraftReward(_product.getProductionId(), (int) _product.getCount(), 0));
+					rewards.computeIfAbsent(0, k -> new LimitShopRandomCraftReward(_product.getProductionId(), 0, 0)).getCount().addAndGet((int) _product.getCount());
 					player.addItem("LCoinShop", _product.getProductionId(), _product.getCount(), player, true);
 				}
 				else if ((Rnd.get(100) < _product.getChance2()) || (_product.getProductionId3() == 0))
 				{
-					rewards.add(new LimitShopRandomCraftReward(_product.getProductionId2(), (int) _product.getCount2(), 1));
+					rewards.computeIfAbsent(1, k -> new LimitShopRandomCraftReward(_product.getProductionId2(), 0, 1)).getCount().addAndGet((int) _product.getCount2());
 					player.addItem("LCoinShop", _product.getProductionId2(), _product.getCount2(), player, true);
 				}
 				else if ((Rnd.get(100) < _product.getChance3()) || (_product.getProductionId4() == 0))
 				{
-					rewards.add(new LimitShopRandomCraftReward(_product.getProductionId3(), (int) _product.getCount3(), 2));
+					rewards.computeIfAbsent(2, k -> new LimitShopRandomCraftReward(_product.getProductionId3(), 0, 2)).getCount().addAndGet((int) _product.getCount3());
 					player.addItem("LCoinShop", _product.getProductionId3(), _product.getCount3(), player, true);
 				}
 				else if ((Rnd.get(100) < _product.getChance4()) || (_product.getProductionId5() == 0))
 				{
-					rewards.add(new LimitShopRandomCraftReward(_product.getProductionId4(), (int) _product.getCount4(), 3));
+					rewards.computeIfAbsent(3, k -> new LimitShopRandomCraftReward(_product.getProductionId4(), 0, 3)).getCount().addAndGet((int) _product.getCount4());
 					player.addItem("LCoinShop", _product.getProductionId4(), _product.getCount4(), player, true);
 				}
 				else if (_product.getProductionId5() > 0)
 				{
-					rewards.add(new LimitShopRandomCraftReward(_product.getProductionId5(), (int) _product.getCount5(), 4));
+					rewards.computeIfAbsent(4, k -> new LimitShopRandomCraftReward(_product.getProductionId5(), 0, 4)).getCount().addAndGet((int) _product.getCount5());
 					player.addItem("LCoinShop", _product.getProductionId5(), _product.getCount5(), player, true);
 				}
 			}
 		}
 		else if (Rnd.get(100) < _product.getChance())
 		{
-			final int amount = (int) (_product.getCount() * _amount);
-			rewards.add(new LimitShopRandomCraftReward(_product.getProductionId(), amount, 0));
-			player.addItem("LCoinShop", _product.getProductionId(), amount, player, true);
+			rewards.put(0, new LimitShopRandomCraftReward(_product.getProductionId(), (int) (_product.getCount() * _amount), 0));
+			player.addItem("LCoinShop", _product.getProductionId(), _product.getCount() * _amount, player, true);
 		}
 		
 		// Update account variables.
@@ -276,7 +287,7 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 			player.getAccountVariables().set(AccountVariables.LCOIN_SHOP_PRODUCT_COUNT + _product.getProductionId(), player.getAccountVariables().getInt(AccountVariables.LCOIN_SHOP_PRODUCT_COUNT + _product.getProductionId(), 0) + _amount);
 		}
 		
-		player.sendPacket(new ExPurchaseLimitShopItemResult(true, _shopIndex, _productId, rewards));
+		player.sendPacket(new ExPurchaseLimitShopItemResult(true, _shopIndex, _productId, Math.max(remainingInfo - _amount, 0), rewards.values()));
 		player.sendItemList();
 		
 		// Remove request.

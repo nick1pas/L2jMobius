@@ -16,11 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.limitshop;
 
-import java.util.List;
+import java.util.Collection;
 
-import org.l2jmobius.gameserver.data.xml.LimitShopCraftData;
-import org.l2jmobius.gameserver.data.xml.LimitShopData;
-import org.l2jmobius.gameserver.model.holders.LimitShopProductHolder;
 import org.l2jmobius.gameserver.model.holders.LimitShopRandomCraftReward;
 import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
@@ -32,66 +29,32 @@ public class ExPurchaseLimitShopItemResult extends ServerPacket
 {
 	private final int _category, _productId;
 	private final boolean _isSuccess;
-	private final List<LimitShopRandomCraftReward> _rewards;
-	private final LimitShopProductHolder _product;
+	private final int _remainingInfo;
+	private final Collection<LimitShopRandomCraftReward> _rewards;
 	
-	public ExPurchaseLimitShopItemResult(boolean isSuccess, int category, int productId, List<LimitShopRandomCraftReward> rewards)
+	public ExPurchaseLimitShopItemResult(boolean isSuccess, int category, int productId, int remainingInfo, Collection<LimitShopRandomCraftReward> rewards)
 	{
 		_isSuccess = isSuccess;
 		_category = category;
 		_productId = productId;
+		_remainingInfo = remainingInfo;
 		_rewards = rewards;
-		switch (_category)
-		{
-			case 3: // Normal Lcoin Shop
-			{
-				_product = LimitShopData.getInstance().getProduct(_productId);
-				break;
-			}
-			case 4: // Lcoin Special Craft
-			{
-				_product = LimitShopCraftData.getInstance().getProduct(_productId);
-				break;
-			}
-			default:
-			{
-				_product = null;
-			}
-		}
 	}
 	
 	@Override
 	public void write()
 	{
 		ServerPackets.EX_PURCHASE_LIMIT_SHOP_ITEM_BUY.writeId(this);
-		if ((_product == null) || !_isSuccess)
+		writeByte(_isSuccess ? 0 : 1);
+		writeByte(_category);
+		writeInt(_productId);
+		writeInt(_rewards.size());
+		for (LimitShopRandomCraftReward entry : _rewards)
 		{
-			writeByte(1);
-			writeByte(_category);
-			writeInt(_productId);
-			writeInt(1);
-			writeByte(1);
-			writeInt(0);
-			writeLong(0);
+			writeByte(entry.getRewardIndex());
+			writeInt(entry.getItemId());
+			writeInt(entry.getCount().get());
 		}
-		else
-		{
-			writeByte(0); // success
-			writeByte(_category);
-			writeInt(_productId);
-			writeInt(_rewards.size());
-			int counter = 0;
-			for (LimitShopRandomCraftReward entry : _rewards)
-			{
-				if (counter == _rewards.size())
-				{
-					break;
-				}
-				writeByte(entry.getRewardIndex());
-				writeInt(0);
-				writeInt(entry.getCount());
-				counter++;
-			}
-		}
+		writeInt(_remainingInfo);
 	}
 }

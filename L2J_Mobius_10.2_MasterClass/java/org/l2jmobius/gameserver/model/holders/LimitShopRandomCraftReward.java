@@ -16,19 +16,21 @@
  */
 package org.l2jmobius.gameserver.model.holders;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * @author Gustavo Fonseca
  */
 public class LimitShopRandomCraftReward
 {
 	private final int _itemId;
-	private final int _count;
+	private final AtomicInteger _count;
 	private final int _rewardIndex;
 	
 	public LimitShopRandomCraftReward(int itemId, int count, int rewardIndex)
 	{
 		_itemId = itemId;
-		_count = count;
+		_count = new AtomicInteger(count);
 		_rewardIndex = rewardIndex;
 	}
 	
@@ -37,7 +39,7 @@ public class LimitShopRandomCraftReward
 		return _itemId;
 	}
 	
-	public int getCount()
+	public AtomicInteger getCount()
 	{
 		return _count;
 	}
