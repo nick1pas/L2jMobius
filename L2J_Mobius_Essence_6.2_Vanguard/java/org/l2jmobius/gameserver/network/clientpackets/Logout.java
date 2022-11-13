@@ -26,7 +26,6 @@ import org.l2jmobius.gameserver.model.instancezone.Instance;
 import org.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import org.l2jmobius.gameserver.network.Disconnection;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
 import org.l2jmobius.gameserver.util.OfflineTradeUtil;
 
@@ -47,11 +46,12 @@ public class Logout implements ClientPacket
 			return;
 		}
 		
-		if (!player.canLogout())
-		{
-			player.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
+		// Protocol 338: You can exit game any time.
+		// if (!player.canLogout())
+		// {
+		// player.sendPacket(ActionFailed.STATIC_PACKET);
+		// return;
+		// }
 		
 		// Unregister from olympiad.
 		if (OlympiadManager.getInstance().isRegistered(player))
