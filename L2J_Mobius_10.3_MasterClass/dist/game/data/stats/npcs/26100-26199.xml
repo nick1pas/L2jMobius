@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="26100" level="110" type="Monster" name="Sirra's Knight">
 		<race>HUMANOID</race>
@@ -86,7 +86,7 @@
 			</minions>
 		</parameters>
 		<race>DRAGON</race>
-		<acquire exp="1032063934000" sp="928857468" />
+		<acquire exp="130083060" sp="117075" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="9452441" hpRegen="12.4" mp="47100" mpRegen="30" />
 			<attack physical="1219090" magical="54786" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -798,7 +798,7 @@
 	<npc id="26111" level="99" type="RaidBoss" name="Kechi" title="Armed">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="15510435336" sp="31020949" />
+		<acquire exp="1551044" sp="3102" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="2996558" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -932,7 +932,7 @@
 	<npc id="26112" level="99" type="RaidBoss" name="Kechi" title="Wealthy">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="12408348268" sp="24816720" />
+		<acquire exp="1240835" sp="2482" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="1225864" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1033,7 +1033,7 @@
 	<npc id="26113" level="99" type="RaidBoss" name="Kechi" title="Wise">
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="18612522403" sp="37225080" />
+		<acquire exp="1861252" sp="3723" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="1634486" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1167,7 +1167,7 @@
 	<npc id="26114" level="99" type="RaidBoss" name="Michaela" title="Armed">
 		<!-- Source: www.l2wiki.com -->
 		<race>UNDEAD</race>
-		<acquire exp="15510435336" sp="31020949" />
+		<acquire exp="1551044" sp="3102" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="2996558" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1300,7 +1300,7 @@
 		<!-- Source: www.l2wiki.com -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="12408348268" sp="24816720" />
+		<acquire exp="1240835" sp="2482" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="1225864" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1400,7 +1400,7 @@
 		<!-- Source: www.l2wiki.com -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="18612522403" sp="37225080" />
+		<acquire exp="1861252" sp="3723" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="1634486" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1532,7 +1532,6 @@
 	<npc id="26120" level="99" type="RaidBoss" name="Michaela" title="Armed">
 		<!-- Source: www.l2wiki.com -->
 		<race>UNDEAD</race>
-		<acquire exp="10340290224" sp="20680600" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="48" wit="71" con="111" men="149">
 			<vitals hp="2996558" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1584,7 +1583,6 @@
 	<npc id="26121" level="99" type="RaidBoss" name="Michaela" title="Wealthy">
 		<!-- Source: www.l2wiki.com -->
 		<race>UNDEAD</race>
-		<acquire exp="10340290224" sp="20680600" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="48" wit="71" con="111" men="149">
 			<vitals hp="1225864" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1636,7 +1634,6 @@
 	<npc id="26122" level="99" type="RaidBoss" name="Michaela" title="Wise">
 		<!-- Source: www.l2wiki.com -->
 		<race>UNDEAD</race>
-		<acquire exp="10340290224" sp="20680600" />
 		<mpReward value="53" type="DIFF" ticks="10" affects="PARTY" />
 		<stats str="164" int="188" dex="48" wit="71" con="111" men="149">
 			<vitals hp="1634486" hpRegen="8.5" mp="22800" mpRegen="30" />
@@ -1687,7 +1684,7 @@
 	</npc>
 	<npc id="26123" level="99" type="Monster" name="Golden Pig" title="Dimensional Vagabond">
 		<race>ANIMAL</race>
-		<acquire exp="1121587236" sp="1794539" />
+		<acquire exp="112159" sp="179" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="6696028" hpRegen="8.5" mp="47100" mpRegen="30" />
 			<attack physical="1" magical="1" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1758,7 +1755,7 @@
 	<npc id="26124" level="104" type="GrandBoss" name="Kelbim" title="Fallen Guardian of Atelia">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="364810170816" sp="875542222" raidPoints="300" />
+		<acquire exp="36481017" sp="87554" raidPoints="300" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="13945521" hpRegen="7621.07091654263" mp="50920" mpRegen="30" />
 			<attack physical="1207441" magical="183861" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2173,7 +2170,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
-		<acquire exp="57494325658" sp="137986037" raidPoints="30" />
+		<acquire exp="5749433" sp="13799" raidPoints="30" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="18319532" hpRegen="16685" mp="50920" mpRegen="30" />
 			<attack physical="1207441" magical="183861" random="10" critical="4" accuracy="5" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2384,7 +2381,6 @@
 		<!-- Source: www.l2wiki.com -->
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
-		<acquire exp="381103201" sp="381202" />
 		<equipment rhand="17391" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="512263" hpRegen="11.4" mp="25074" mpRegen="30" />
@@ -2432,7 +2428,7 @@
 	<npc id="26135" level="103" type="Monster" name="Geork" title="Embryo Master Artisan">
 		<!-- Source: www.l2wiki.com -->
 		<race>HUMANOID</race>
-		<acquire exp="35530389720" sp="71060780" />
+		<acquire exp="3553039" sp="7106" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="571227.573692908" hpRegen="3196.73550601444" mp="50148" mpRegen="30" />
 			<attack physical="652770" magical="153218" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2476,7 +2472,7 @@
 	<npc id="26136" level="104" type="Monster" name="Burnstein" title="Embryo Commander">
 		<!-- Source: www.l2wiki.com -->
 		<race>HUMANOID</race>
-		<acquire exp="88825974283" sp="177652043" />
+		<acquire exp="8882597" sp="17765" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="1394552.05403298" hpRegen="2540.35697218088" mp="50920" mpRegen="30" />
 			<attack physical="783324" magical="183861" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2624,7 +2620,7 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<acquire exp="38714665652" sp="77429378" raidPoints="30" />
+		<acquire exp="3871467" sp="7743" raidPoints="30" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="14238366" hpRegen="7654" mp="49380" mpRegen="30" />
 			<attack physical="838501" magical="127682" random="10" critical="4" accuracy="5" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3041,7 +3037,7 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>FEMALE</sex>
-		<acquire exp="576969277248" sp="1153938598" raidPoints="300" />
+		<acquire exp="57696928" sp="115394" raidPoints="300" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="27188512" hpRegen="11.4" mp="50920" mpRegen="30" />
 			<attack physical="1207441" magical="183861" random="10" critical="4" accuracy="5" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3445,7 +3441,7 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<acquire exp="224175791506" sp="448351617" raidPoints="100" />
+		<acquire exp="22417579" sp="44835" raidPoints="100" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="23964834" hpRegen="11.4" mp="49380" mpRegen="30" />
 			<attack physical="838501" magical="127682" random="10" critical="4" accuracy="5" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3757,7 +3753,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="79902417298" sp="127843868" raidPoints="100" />
+		<acquire exp="7990242" sp="12784" raidPoints="100" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="62991228" hpRegen="8.5" mp="45600" mpRegen="30" />
 			<attack physical="42937" magical="7579" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4016,7 +4012,7 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<acquire exp="28884659444" sp="38416598" raidPoints="100" />
+		<acquire exp="2888466" sp="3842" raidPoints="100" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="46664602" hpRegen="8.5" mp="41920" mpRegen="30" />
 			<attack physical="169080" magical="6016" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4344,7 +4340,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="941348280" sp="1882696" />
+		<acquire exp="94135" sp="188" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="4100000" hpRegen="1" mp="24308" mpRegen="30" />
 			<attack physical="50000" magical="6936" random="10" critical="4" accuracy="10" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4749,7 +4745,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="17417" lhand="17435" />
-		<acquire exp="31685534107" sp="63371077" raidPoints="21" />
+		<acquire exp="3168553" sp="6337" raidPoints="21" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="6546867" hpRegen="16088" mp="49380" mpRegen="30" />
 			<attack physical="582292" magical="88668" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />

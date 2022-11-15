@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="35400" level="70" type="Merchant" name="Horner" title="Clan Hall Manager">
 		<parameters>
@@ -394,7 +394,7 @@
 	<npc id="35408" level="76" type="Monster" name="Dietrich">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="577" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2758.05923328" hpRegen="8.5" mp="1540.8" mpRegen="3" />
 			<attack physical="824.422073095" magical="562.9734023" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -441,7 +441,7 @@
 	<npc id="35409" level="76" type="Monster" name="Mikhail">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="577" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2758.05923328" hpRegen="8.5" mp="1540.8" mpRegen="3" />
 			<attack physical="824.422073095" magical="562.9734023" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -488,7 +488,7 @@
 	<npc id="35410" level="78" type="Monster" name="Gustav">
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="608" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="4137000" hpRegen="8.5" mp="1607.4" mpRegen="3" />
 			<attack physical="1334.07646169389" magical="151.247042312474" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -543,7 +543,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="531" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2586.66898" hpRegen="8.5" mp="1442.4" mpRegen="3" />
 			<attack physical="752.73928" magical="514.02335" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -596,7 +596,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="546" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2632.19636" hpRegen="8.5" mp="1475" mpRegen="3" />
 			<attack physical="773.81598" magical="528.41601" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -650,7 +650,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="286" /> <!-- Eminence Bow -->
-		<acquire exp="561" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676.65854" hpRegen="8.5" mp="1507.8" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -705,7 +705,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="301" /> <!-- Scorpion -->
-		<acquire exp="577" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2758.05923328" hpRegen="8.5" mp="1540.8" mpRegen="3" />
 			<attack physical="824.422073095" magical="562.9734023" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
@@ -758,7 +758,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="71" /> <!-- Flamberge -->
-		<acquire exp="592" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2856.7687256316" hpRegen="8.5" mp="1574" mpRegen="3" />
 			<attack physical="856.44055895414" magical="584.837886935576" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -813,7 +813,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="1472" /> <!-- Dreadbane -->
-		<acquire exp="608" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2974.35686398316" hpRegen="8.5" mp="1607.4" mpRegen="3" />
 			<attack physical="890.50085998804" magical="608.096657928153" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1071,7 +1071,7 @@
 	<npc id="35422" level="75" type="Folk" name="Victor's Flag">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1114,7 +1114,7 @@
 	<npc id="35423" level="75" type="Folk" name="Red Flag">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1158,7 +1158,7 @@
 	<npc id="35424" level="75" type="Folk" name="Yellow Flag">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1202,7 +1202,7 @@
 	<npc id="35425" level="75" type="Folk" name="Green Flag">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1246,7 +1246,7 @@
 	<npc id="35426" level="75" type="Folk" name="Blue Flag">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1290,7 +1290,7 @@
 	<npc id="35427" level="75" type="Folk" name="Purple Flag">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1334,7 +1334,7 @@
 	<npc id="35428" level="73" type="Defender" name="Oel Mahum Berserker">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="6394" sp="1" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="70386.6449027313" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
 			<attack physical="293.998763258434" magical="625.529276102317" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1373,7 +1373,7 @@
 	<npc id="35429" level="73" type="Defender" name="Oel Mahum Scout">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="6394" sp="1" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="31673.9902062291" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
 			<attack physical="293.998763258434" magical="625.529276102317" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1412,7 +1412,7 @@
 	<npc id="35430" level="73" type="Defender" name="Oel Mahum Prefect">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="6394" sp="1" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="35193.3224513656" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
 			<attack physical="293.998763258434" magical="625.529276102317" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1450,7 +1450,7 @@
 	<npc id="35431" level="73" type="Defender" name="Oel Mahum Cleric">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="6394" sp="1" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="35193.3224513656" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
 			<attack physical="293.998763258434" magical="625.529276102317" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1488,7 +1488,7 @@
 	<npc id="35432" level="73" type="Defender" name="Oel Mahum Thief">
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="6394" sp="1" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="28154.6579610925" hpRegen="8.5" mp="2143.56666666667" mpRegen="3" />
 			<attack physical="293.998763258434" magical="625.529276102317" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1534,7 +1534,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1578,7 +1578,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1622,7 +1622,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1666,7 +1666,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1754,7 +1754,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="561" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2676" hpRegen="8.5" mp="1507" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
 	<npc id="31842" level="70" type="Folk" name="Teleportation Cubic">
 		<parameters>
@@ -7,7 +7,6 @@
 		</parameters>
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -50,7 +49,7 @@
 		</parameters>
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="490" sp="1" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -94,7 +93,7 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<acquire exp="11761" sp="2" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="49042.6571486547" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="23610.1029394933" magical="5767.28134561036" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -186,7 +185,7 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- Trident -->
-		<acquire exp="11761" sp="2" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="49042.6571486547" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="23610.1029394933" magical="5767.28134561036" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
@@ -231,7 +230,6 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- Trident -->
-		<acquire exp="7680" sp="226" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="49042.6571486547" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="23610.1029394933" magical="5767.28134561036" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
@@ -278,7 +276,7 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<acquire exp="11761" sp="2" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="49042.6571486547" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="23610.1029394933" magical="5767.28134561036" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -324,7 +322,7 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<acquire exp="11761" sp="2" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="49042.6571486547" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="23610.1029394933" magical="5767.28134561036" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -461,7 +459,7 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<acquire exp="3000" sp="226" />
+		<acquire exp="1" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="1421" hpRegen="5.5" mp="747" mpRegen="2.1" />
 			<attack physical="305.54906" magical="208.6504" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -547,7 +545,7 @@
 	<npc id="31854" level="70" type="Folk" name="Event Manager">
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -585,7 +583,7 @@
 	<npc id="31855" level="70" type="Folk" name="Event Manager">
 		<race>ELF</race>
 		<sex>FEMALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -623,7 +621,7 @@
 	<npc id="31856" level="70" type="Folk" name="Event Manager">
 		<race>DARK_ELF</race>
 		<sex>FEMALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -661,7 +659,7 @@
 	<npc id="31857" level="70" type="Folk" name="Event Manager">
 		<race>DWARF</race>
 		<sex>FEMALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -699,7 +697,7 @@
 	<npc id="31858" level="70" type="Folk" name="Event Manager">
 		<race>ORC</race>
 		<sex>FEMALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -741,7 +739,7 @@
 		</parameters>
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="490" sp="1" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -784,7 +782,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -822,7 +820,7 @@
 	<npc id="31861" level="56" type="Teleporter" name="Gatekeeper">
 		<race>HUMAN</race>
 		<sex>FEMALE</sex>
-		<acquire exp="313" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="1724" hpRegen="6.5" mp="918" mpRegen="2.4" />
 			<attack physical="405.96455" magical="277.22116" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -865,7 +863,7 @@
 	<npc id="31862" level="70" type="Folk" name="Angelic Vortex">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -908,7 +906,7 @@
 		</parameters>
 		<race>DWARF</race>
 		<sex>MALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -950,7 +948,7 @@
 		</parameters>
 		<race>DWARF</race>
 		<sex>MALE</sex>
-		<acquire exp="490" sp="10" />
+		<acquire exp="1" sp="0" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="2444" hpRegen="7.5" mp="1345" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
