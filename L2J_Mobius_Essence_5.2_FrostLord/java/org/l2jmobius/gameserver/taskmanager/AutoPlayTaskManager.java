@@ -169,7 +169,7 @@ public class AutoPlayTaskManager
 				// Find target.
 				Creature creature = null;
 				double closestDistance = Double.MAX_VALUE;
-				TARGET: for (Creature nearby : World.getInstance().getVisibleObjectsInRange(player, Creature.class, player.getAutoPlaySettings().isShortRange() ? 600 : 1400))
+				TARGET: for (Creature nearby : World.getInstance().getVisibleObjectsInRange(player, Creature.class, player.getAutoPlaySettings().isShortRange() && (targetMode != 2 /* Characters */) && (targetMode != 4 /* Counterattack */) ? 600 : 1400))
 				{
 					// Skip unavailable creatures.
 					if ((nearby == null) || nearby.isAlikeDead())
