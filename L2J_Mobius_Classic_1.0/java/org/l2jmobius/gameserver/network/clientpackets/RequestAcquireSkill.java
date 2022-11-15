@@ -102,7 +102,7 @@ public class RequestAcquireSkill implements ClientPacket
 			return;
 		}
 		
-		if ((_level < 1) || (_level > 100) || (_id < 1) || (_id > 64000))
+		if ((_level < 1) || (_level > 100) || (_id < 1))
 		{
 			Util.handleIllegalPlayerAction(player, "Wrong Packet Data in Aquired Skill", Config.DEFAULT_PUNISH);
 			PacketLogger.warning("Recived Wrong Packet Data in Aquired Skill - id: " + _id + " level: " + _level + " for " + player);
