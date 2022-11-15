@@ -2582,28 +2582,38 @@
 	<skill id="445" toLevel="1" name="Mirage">
 		<!-- For 2 min., provides a chance to cancel the target of an attacking enemy. -->
 		<icon>icon.skill0445</icon>
-		<abnormalLevel>1</abnormalLevel>
-		<abnormalTime>120</abnormalTime>
-		<abnormalType>MIRAGE</abnormalType>
-		<effectPoint>673</effectPoint>
-		<hitTime>2000</hitTime>
 		<magicLevel>79</magicLevel>
-		<mpConsume>47</mpConsume>
 		<operateType>A2</operateType>
+		<mpConsume>47</mpConsume>
+		<hitTime>2000</hitTime>
 		<reuseDelay>300000</reuseDelay>
+		<abnormalTime>120</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>MIRAGE</abnormalType>
+		<effectPoint>0</effectPoint>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>MIRAGE</type>
+				<level>1</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
 		<effects>
-			<effect name="TriggerSkillByDamage">
-				<!-- Mirage -->
-				<attackerType>Playable</attackerType>
-				<chance>80</chance>
-				<targetType>ENEMY</targetType>
-				<minDamage>1</minDamage>
-				<skillId>5144</skillId> <!-- Mirage -->
-				<skillLevel>1</skillLevel>
+			<effect name="FatalBlowRate">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>-10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>-10</amount>
+				<mode>PER</mode>
 			</effect>
 		</effects>
 	</skill>

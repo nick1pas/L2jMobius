@@ -611,7 +611,23 @@
 																	</xs:sequence>
 																</xs:complexType>
 															</xs:element>
-															<xs:element name="ticks" type="xs:unsignedByte" />
+															<xs:element name="ticks">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:unsignedByte">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="optional" />
+																						<xs:attribute name="fromLevel" type="xs:unsignedByte" use="optional" />
+																						<xs:attribute name="toLevel" type="xs:unsignedByte" use="optional" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
 															<xs:element name="percentage">
 																<xs:complexType mixed="true">
 																	<xs:sequence minOccurs="0">

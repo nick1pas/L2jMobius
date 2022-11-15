@@ -1247,6 +1247,7 @@
 	<skill id="1897" toLevel="5" name="Shilen's Cursed Field">
 		<!-- For $s1, Melee Weapon Resistance of the target and nearby enemies -$s2. -->
 		<icon>icon.skill1897</icon>
+		<affectLimit>9-10</affectLimit>
 		<abnormalLevel>
 			<value level="1">1</value>
 			<value level="2">2</value>
@@ -1257,7 +1258,7 @@
 		<abnormalTime>30</abnormalTime>
 		<abnormalType>STIGMA_OF_SILEN</abnormalType>
 		<abnormalVisualEffect>STIGMA_OF_SILEN</abnormalVisualEffect>
-		<activateRate>-1</activateRate>
+		<activateRate>80</activateRate>
 		<basicProperty>MAGIC</basicProperty>
 		<castRange>
 			<value level="1">600</value>
@@ -1273,7 +1274,14 @@
 			<value level="4">-635</value>
 			<value level="5">-639</value>
 		</effectPoint>
-		<effectRange>200</effectRange>
+		<effectRange>
+			<value level="1">1100</value>
+			<value level="2">1200</value>
+			<value level="3">1300</value>
+			<value level="4">1400</value>
+			<value level="5">1400</value>
+		</effectRange>
+		<affectRange>200</affectRange>
 		<hitTime>1500</hitTime>
 		<isDebuff>true</isDebuff>
 		<lvlBonusRate>20</lvlBonusRate>
@@ -1284,30 +1292,27 @@
 			<value level="4">70</value>
 			<value level="5">78</value>
 		</magicLevel>
+		<mpInitialConsume>
+			<value level="1">12</value>
+			<value level="2">15</value>
+			<value level="3">18</value>
+			<value level="4">21</value>
+			<value level="5">24</value>
+		</mpInitialConsume>
 		<mpConsume>
-			<value level="1">54</value>
-			<value level="2">72</value>
-			<value level="3">87</value>
-			<value level="4">99</value>
-			<value level="5">126</value>
+			<value level="1">42</value>
+			<value level="2">57</value>
+			<value level="3">69</value>
+			<value level="4">78</value>
+			<value level="5">102</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>3000</reuseDelay>
 		<basicProperty>NONE</basicProperty>
 		<magicCriticalRate>5</magicCriticalRate>
-		<targetType>ENEMY</targetType>
+		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>RANGE</affectScope>
 		<effects>
-			<effect name="MagicalDefence">
-				<amount>
-					<value level="1">-10</value>
-					<value level="2">-12</value>
-					<value level="3">-14</value>
-					<value level="4">-16</value>
-					<value level="5">-17</value>
-				</amount>
-				<mode>PER</mode>
-			</effect>
 			<effect name="DefenceTrait">
 				<SWORD>
 					<value level="1">-16</value>

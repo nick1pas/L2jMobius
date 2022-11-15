@@ -530,7 +530,11 @@ public enum AbnormalType
 	HERB_ACCURANCY(-1),
 	WARRIOR_BANE(-1),
 	MAGE_BANE(-1),
-	DRAGON_FRUIT(-1);
+	DRAGON_FRUIT(-1),
+	PROVOKE(-1),
+	DISROBE(604),
+	DRAGON_EVASION(605),
+	TRANSFORM_DRAGONSKILL(606);
 	
 	private int _clientId;
 	

@@ -240,6 +240,7 @@ public enum AbnormalType
 	WARRIOR_BANE(-1),
 	MAGE_BANE(-1),
 	DRAGON_FRUIT(-1),
+	PROVOKE(-1),
 	AB_HAWK_EYE(0),
 	ALL_ATTACK_DOWN(1),
 	ALL_ATTACK_UP(2),
@@ -535,7 +536,10 @@ public enum AbnormalType
 	BUFF_QUEEN_OF_CAT2(600),
 	BUFF_UNICORN_SERAPHIM2(601),
 	PA_UP2(602),
-	PD_UP2(603);
+	PD_UP2(603),
+	DISROBE(604),
+	DRAGON_EVASION(605),
+	TRANSFORM_DRAGONSKILL(606);
 	
 	private int _clientId;
 	
