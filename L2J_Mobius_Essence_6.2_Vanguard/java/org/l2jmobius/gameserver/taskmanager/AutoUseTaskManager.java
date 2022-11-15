@@ -37,6 +37,9 @@ import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.actor.instance.Guard;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.item.OnItemUse;
 import org.l2jmobius.gameserver.model.holders.AttachSkillHolder;
 import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
 import org.l2jmobius.gameserver.model.item.EtcItem;
@@ -135,9 +138,18 @@ public class AutoUseTaskManager
 						{
 							final EtcItem etcItem = item.getEtcItem();
 							final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
-							if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
+							if ((handler != null) && handler.useItem(player, item, false))
 							{
-								player.addTimeStampItem(item, reuseDelay);
+								if (reuseDelay > 0)
+								{
+									player.addTimeStampItem(item, reuseDelay);
+								}
+								
+								// Notify events.
+								if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_USE, item.getTemplate()))
+								{
+									EventDispatcher.getInstance().notifyEventAsync(new OnItemUse(player, item), item.getTemplate());
+								}
 							}
 						}
 					}
@@ -159,9 +171,18 @@ public class AutoUseTaskManager
 						{
 							final EtcItem etcItem = item.getEtcItem();
 							final IItemHandler handler = ItemHandler.getInstance().getHandler(etcItem);
-							if ((handler != null) && handler.useItem(player, item, false) && (reuseDelay > 0))
+							if ((handler != null) && handler.useItem(player, item, false))
 							{
-								player.addTimeStampItem(item, reuseDelay);
+								if (reuseDelay > 0)
+								{
+									player.addTimeStampItem(item, reuseDelay);
+								}
+								
+								// Notify events.
+								if (EventDispatcher.getInstance().hasListener(EventType.ON_ITEM_USE, item.getTemplate()))
+								{
+									EventDispatcher.getInstance().notifyEventAsync(new OnItemUse(player, item), item.getTemplate());
+								}
 							}
 						}
 					}
