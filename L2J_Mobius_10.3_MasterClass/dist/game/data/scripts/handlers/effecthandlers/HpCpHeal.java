@@ -34,7 +34,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
  * HpCpHeal effect implementation.
- * @author Sdw
+ * @author Sdw, Mobius
  */
 public class HpCpHeal extends AbstractEffect
 {
@@ -122,9 +122,14 @@ public class HpCpHeal extends AbstractEffect
 		
 		// Additional potion HP.
 		double additionalHp = 0;
+		
+		// Additional potion CP.
+		double additionalCp = 0;
+		
 		if ((item != null) && (item.isPotion() || item.isElixir()))
 		{
 			additionalHp = effected.getStat().getValue(Stat.ADDITIONAL_POTION_HP, 0);
+			additionalCp = effected.getStat().getValue(Stat.ADDITIONAL_POTION_CP, 0);
 		}
 		
 		// Prevents overheal and negative amount
@@ -137,10 +142,7 @@ public class HpCpHeal extends AbstractEffect
 				additionalHp = Math.max(effected.getMaxRecoverableHp() - newHp, 0);
 			}
 			effected.setCurrentHp(newHp + additionalHp, false);
-		}
-		
-		if (effected.isPlayer())
-		{
+			
 			if (effector.isPlayer() && (effector != effected))
 			{
 				final SystemMessage sm = new SystemMessage(SystemMessageId.S2_HP_HAS_BEEN_RESTORED_BY_C1);
@@ -154,28 +156,37 @@ public class HpCpHeal extends AbstractEffect
 				sm.addInt((int) (healAmount + additionalHp));
 				effected.sendPacket(sm);
 			}
-			
+		}
+		
+		// CP recovery.
+		if (effected.isPlayer())
+		{
 			amount = Math.max(Math.min(amount - healAmount, effected.getMaxRecoverableCp() - effected.getCurrentCp()), 0);
 			if (amount != 0)
 			{
 				final double newCp = amount + effected.getCurrentCp();
-				effected.setCurrentCp(newCp, false);
-			}
-			
-			if (effector.isPlayer() && (effector != effected))
-			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.S2_CP_HAS_BEEN_RESTORED_BY_C1);
-				sm.addString(effector.getName());
-				sm.addInt((int) amount);
-				effected.sendPacket(sm);
-			}
-			else
-			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_RECOVER_S1_CP);
-				sm.addInt((int) amount);
-				effected.sendPacket(sm);
+				if ((newCp + additionalCp) > effected.getMaxRecoverableCp())
+				{
+					additionalCp = Math.max(effected.getMaxRecoverableCp() - newCp, 0);
+				}
+				effected.setCurrentCp(newCp + additionalCp, false);
+				
+				if (effector != effected)
+				{
+					final SystemMessage sm = new SystemMessage(SystemMessageId.S2_CP_HAS_BEEN_RESTORED_BY_C1);
+					sm.addString(effector.getName());
+					sm.addInt((int) (amount + additionalCp));
+					effected.sendPacket(sm);
+				}
+				else
+				{
+					final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_RECOVER_S1_CP);
+					sm.addInt((int) (amount + additionalCp));
+					effected.sendPacket(sm);
+				}
 			}
 		}
+		
 		effected.broadcastStatusUpdate(effector);
 	}
 }
