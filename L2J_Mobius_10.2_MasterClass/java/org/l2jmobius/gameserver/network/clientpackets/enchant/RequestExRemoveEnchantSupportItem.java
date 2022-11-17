@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant;
 
-import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.item.instance.Item;
@@ -30,11 +29,6 @@ import org.l2jmobius.gameserver.network.serverpackets.enchant.single.ChangedEnch
  */
 public class RequestExRemoveEnchantSupportItem implements ClientPacket
 {
-	@Override
-	public void read(ReadablePacket packet)
-	{
-	}
-	
 	@Override
 	public void run(GameClient client)
 	{

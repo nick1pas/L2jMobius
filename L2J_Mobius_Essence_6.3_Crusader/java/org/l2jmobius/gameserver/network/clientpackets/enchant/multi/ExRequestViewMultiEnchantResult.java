@@ -21,6 +21,7 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ShortCutInit;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.multi.ExResultMultiEnchantItemList;
 
 /**
@@ -50,5 +51,9 @@ public class ExRequestViewMultiEnchantResult implements ClientPacket
 		
 		final EnchantItemRequest request = player.getRequest(EnchantItemRequest.class);
 		player.sendPacket(new ExResultMultiEnchantItemList(player, request.getMultiSuccessEnchantList(), request.getMultiFailureEnchantList(), true));
+		
+		player.sendItemList();
+		player.sendPacket(new ShortCutInit(player));
+		player.broadcastUserInfo();
 	}
 }

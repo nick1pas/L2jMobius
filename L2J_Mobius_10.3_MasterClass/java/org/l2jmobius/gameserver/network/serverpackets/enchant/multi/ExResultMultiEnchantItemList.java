@@ -92,11 +92,10 @@ public class ExResultMultiEnchantItemList extends ServerPacket
 			writeInt(_successEnchant.size());
 			if (_successEnchant.size() != 0)
 			{
-				for (int i : _successEnchant.keySet())
+				for (int[] success : _successEnchant.values())
 				{
-					int[] intArray = _successEnchant.get(i);
-					writeInt(intArray[0]);
-					writeInt(intArray[1]);
+					writeInt(success[0]);
+					writeInt(success[1]);
 				}
 			}
 		}
@@ -109,9 +108,9 @@ public class ExResultMultiEnchantItemList extends ServerPacket
 		writeInt(_failureEnchant.size());
 		if (_failureEnchant.size() != 0)
 		{
-			for (int i : _failureEnchant.keySet())
+			for (int failure : _failureEnchant.values())
 			{
-				writeInt(_failureEnchant.get(i));
+				writeInt(failure);
 				writeInt(0);
 			}
 		}
@@ -125,11 +124,10 @@ public class ExResultMultiEnchantItemList extends ServerPacket
 		{
 			writeInt(request.getMultiFailItemsCount());
 			_failureReward = request.getMultiEnchantFailItems();
-			for (int i : _failureReward.keySet())
+			for (ItemHolder failure : _failureReward.values())
 			{
-				ItemHolder itemHolder = _failureReward.get(i);
-				writeInt(itemHolder.getId());
-				writeInt((int) itemHolder.getCount());
+				writeInt(failure.getId());
+				writeInt((int) failure.getCount());
 			}
 			if (_isResult)
 			{

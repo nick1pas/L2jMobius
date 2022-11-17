@@ -16,11 +16,27 @@
  */
 package org.l2jmobius.gameserver.network.clientpackets.enchant.single;
 
+import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ShortCutInit;
 
 /**
- * @author Index
+ * @author Mobius
  */
 public class ExRequestViewEnchantResult implements ClientPacket
 {
+	@Override
+	public void run(GameClient client)
+	{
+		final Player player = client.getPlayer();
+		if (player == null)
+		{
+			return;
+		}
+		
+		player.sendItemList();
+		player.sendPacket(new ShortCutInit(player));
+		player.broadcastUserInfo();
+	}
 }

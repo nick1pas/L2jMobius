@@ -345,9 +345,9 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 			}
 		}
 		
-		for (int i : _failureReward.keySet())
+		for (ItemHolder failure : _failureReward.values())
 		{
-			request.addMultiEnchantFailItems(_failureReward.get(i));
+			request.addMultiEnchantFailItems(failure);
 		}
 		request.setProcessing(false);
 		

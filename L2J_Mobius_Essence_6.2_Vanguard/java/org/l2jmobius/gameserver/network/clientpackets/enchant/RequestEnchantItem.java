@@ -456,8 +456,7 @@ public class RequestEnchantItem implements ClientPacket
 					break;
 				}
 			}
-			player.sendItemList();
-			player.broadcastUserInfo();
+			
 			request.setProcessing(false);
 		}
 	}

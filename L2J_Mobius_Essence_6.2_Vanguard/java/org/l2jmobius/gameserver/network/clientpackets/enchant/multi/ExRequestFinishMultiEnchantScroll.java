@@ -35,9 +35,11 @@ public class ExRequestFinishMultiEnchantScroll implements ClientPacket
 			return;
 		}
 		
-		if (player.getRequest(EnchantItemRequest.class) != null)
+		if (player.getRequest(EnchantItemRequest.class) == null)
 		{
-			player.removeRequest(EnchantItemRequest.class);
+			return;
 		}
+		
+		player.removeRequest(EnchantItemRequest.class);
 	}
 }
