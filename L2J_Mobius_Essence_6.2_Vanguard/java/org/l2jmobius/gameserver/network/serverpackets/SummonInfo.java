@@ -283,7 +283,7 @@ public class SummonInfo extends AbstractMaskPacket<NpcInfoType>
 		}
 		if (containsMask(NpcInfoType.FLYING))
 		{
-			writeByte(_summon.isFlying());
+			writeInt(_summon.isFlying());
 		}
 		if (containsMask(NpcInfoType.CLONE))
 		{

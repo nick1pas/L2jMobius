@@ -355,7 +355,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
 		}
 		if (containsMask(NpcInfoType.FLYING))
 		{
-			writeByte(_npc.isFlying());
+			writeInt(_npc.isFlying());
 		}
 		if (containsMask(NpcInfoType.CLONE))
 		{
