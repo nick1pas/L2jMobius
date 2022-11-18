@@ -42,7 +42,7 @@ public class ExRequestItemAutoPeel implements ClientPacket
 	public void read(ReadablePacket packet)
 	{
 		_itemObjectId = packet.readInt();
-		_totalPeelCount = packet.readInt();
+		_totalPeelCount = packet.readLong();
 		_remainingPeelCount = packet.readLong();
 	}
 	
