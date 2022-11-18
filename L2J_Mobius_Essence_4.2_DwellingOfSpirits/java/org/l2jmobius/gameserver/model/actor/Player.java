@@ -8286,28 +8286,31 @@ public class Player extends Playable
 			final Player attackerPlayer = attacker.getActingPlayer();
 			final Clan clan = getClan();
 			final Clan attackerClan = attackerPlayer.getClan();
-			if (clan != null)
+			if ((clan != null) && (attackerClan != null))
 			{
-				final Siege siege = SiegeManager.getInstance().getSiege(getX(), getY(), getZ());
-				if (siege != null)
+				if (clan != attackerClan)
 				{
-					// Check if a siege is in progress and if attacker and the Player aren't in the Defender clan.
-					if (siege.checkIsDefender(attackerClan) && siege.checkIsDefender(clan))
+					final Siege siege = SiegeManager.getInstance().getSiege(getX(), getY(), getZ());
+					if (siege != null)
 					{
-						return false;
-					}
-					
-					// Check if a siege is in progress and if attacker and the Player aren't in the Attacker clan.
-					if (siege.checkIsAttacker(attackerClan) && siege.checkIsAttacker(clan))
-					{
-						// If first mid victory is achieved, attackers can attack attackers.
-						final Castle castle = CastleManager.getInstance().getCastleById(_siegeSide);
-						return (castle != null) && castle.isFirstMidVictory();
+						// Check if a siege is in progress and if attacker and the Player aren't in the Defender clan.
+						if (siege.checkIsDefender(attackerClan) && siege.checkIsDefender(clan))
+						{
+							return false;
+						}
+						
+						// Check if a siege is in progress and if attacker and the Player aren't in the Attacker clan.
+						if (siege.checkIsAttacker(attackerClan) && siege.checkIsAttacker(clan))
+						{
+							// If first mid victory is achieved, attackers can attack attackers.
+							final Castle castle = CastleManager.getInstance().getCastleById(_siegeSide);
+							return (castle != null) && castle.isFirstMidVictory();
+						}
 					}
 				}
 				
 				// Check if clan is at war
-				if ((attackerClan != null) && (getWantsPeace() == 0) && (attackerPlayer.getWantsPeace() == 0) && !isAcademyMember())
+				if ((getWantsPeace() == 0) && (attackerPlayer.getWantsPeace() == 0) && !isAcademyMember())
 				{
 					final ClanWar war = attackerClan.getWarWith(getClanId());
 					if ((war != null) && ((war.getState() == ClanWarState.MUTUAL) || (((war.getState() == ClanWarState.BLOOD_DECLARATION) || (war.getState() == ClanWarState.DECLARATION)) && (war.getAttackerClanId() == attackerClan.getId()))))
@@ -8348,13 +8351,10 @@ public class Player extends Playable
 			}
 		}
 		
-		if (attacker instanceof Defender)
+		if ((attacker instanceof Defender) && (_clan != null))
 		{
-			if (_clan != null)
-			{
-				final Siege siege = SiegeManager.getInstance().getSiege(this);
-				return ((siege != null) && siege.checkIsAttacker(_clan));
-			}
+			final Siege siege = SiegeManager.getInstance().getSiege(this);
+			return (siege != null) && siege.checkIsAttacker(_clan);
 		}
 		
 		if (attacker instanceof Guard)
