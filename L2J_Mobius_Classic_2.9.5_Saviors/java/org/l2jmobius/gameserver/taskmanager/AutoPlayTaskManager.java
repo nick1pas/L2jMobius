@@ -27,11 +27,12 @@ import org.l2jmobius.gameserver.geoengine.GeoEngine;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.WorldObject;
+import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.Summon;
-import org.l2jmobius.gameserver.model.actor.instance.Monster;
 import org.l2jmobius.gameserver.model.item.Weapon;
 import org.l2jmobius.gameserver.model.item.instance.Item;
+import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.serverpackets.autoplay.ExAutoPlayDoMacro;
 import org.l2jmobius.gameserver.util.Util;
 
@@ -73,16 +74,19 @@ public class AutoPlayTaskManager
 					continue PLAY;
 				}
 				
+				// Next target mode.
+				final int targetMode = player.getAutoPlaySettings().getNextTargetMode();
+				
 				// Skip thinking.
 				final WorldObject target = player.getTarget();
-				if ((target != null) && target.isMonster())
+				if ((target != null) && target.isCreature())
 				{
-					final Monster monster = (Monster) target;
-					if (monster.isAlikeDead())
+					final Creature creature = (Creature) target;
+					if (creature.isAlikeDead() || !isTargetModeValid(targetMode, player, creature))
 					{
 						player.setTarget(null);
 					}
-					else if ((monster.getTarget() == player) || (monster.getTarget() == null))
+					else if ((creature.getTarget() == player) || (creature.getTarget() == null))
 					{
 						// We take granted that mage classes do not auto hit.
 						if (isMageCaster(player))
@@ -95,18 +99,21 @@ public class AutoPlayTaskManager
 						{
 							if (player.getAI().getIntention() != CtrlIntention.AI_INTENTION_ATTACK)
 							{
-								player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, monster);
+								if (creature.isAutoAttackable(player))
+								{
+									player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, creature);
+								}
 							}
-							else if (monster.hasAI() && !monster.getAI().isAutoAttacking())
+							else if (creature.hasAI() && !creature.getAI().isAutoAttacking())
 							{
 								final Weapon weapon = player.getActiveWeaponItem();
 								if (weapon != null)
 								{
 									final boolean ranged = weapon.getItemType().isRanged();
-									final double angle = Util.calculateHeadingFrom(player, monster);
+									final double angle = Util.calculateHeadingFrom(player, creature);
 									final double radian = Math.toRadians(angle);
 									final double course = Math.toRadians(180);
-									final double distance = (ranged ? player.getCollisionRadius() : player.getCollisionRadius() + monster.getCollisionRadius()) * 2;
+									final double distance = (ranged ? player.getCollisionRadius() : player.getCollisionRadius() + creature.getCollisionRadius()) * 2;
 									final int x1 = (int) (Math.cos(Math.PI + radian + course) * distance);
 									final int y1 = (int) (Math.sin(Math.PI + radian + course) * distance);
 									final Location location;
@@ -116,7 +123,7 @@ public class AutoPlayTaskManager
 									}
 									else
 									{
-										location = new Location(monster.getX() + x1, monster.getY() + y1, player.getZ());
+										location = new Location(creature.getX() + x1, creature.getY() + y1, player.getZ());
 									}
 									player.getAI().setIntention(CtrlIntention.AI_INTENTION_MOVE_TO, location);
 								}
@@ -159,38 +166,41 @@ public class AutoPlayTaskManager
 				}
 				
 				// Find target.
-				Monster monster = null;
+				Creature creature = null;
 				double closestDistance = Double.MAX_VALUE;
-				TARGET: for (Monster nearby : World.getInstance().getVisibleObjectsInRange(player, Monster.class, player.getAutoPlaySettings().isShortRange() ? 600 : 1400))
+				TARGET: for (Creature nearby : World.getInstance().getVisibleObjectsInRange(player, Creature.class, player.getAutoPlaySettings().isShortRange() && (targetMode != 2 /* Characters */) ? 600 : 1400))
 				{
-					// Skip unavailable monsters.
+					// Skip unavailable creatures.
 					if ((nearby == null) || nearby.isAlikeDead())
 					{
 						continue TARGET;
 					}
-					// Check monster target.
-					if (player.getAutoPlaySettings().isRespectfulHunting() && (nearby.getTarget() != null) && (nearby.getTarget() != player) && !player.getServitors().containsKey(nearby.getTarget().getObjectId()))
+					// Check creature target.
+					if (player.getAutoPlaySettings().isRespectfulHunting() && !nearby.isPlayable() && (nearby.getTarget() != null) && (nearby.getTarget() != player) && !player.getServitors().containsKey(nearby.getTarget().getObjectId()))
 					{
 						continue TARGET;
 					}
-					// Check if monster is reachable.
-					if (nearby.isAutoAttackable(player) //
-						&& GeoEngine.getInstance().canSeeTarget(player, nearby)//
-						&& GeoEngine.getInstance().canMoveToTarget(player.getX(), player.getY(), player.getZ(), nearby.getX(), nearby.getY(), nearby.getZ(), player.getInstanceWorld()))
+					// Check next target mode.
+					if (!isTargetModeValid(targetMode, player, nearby))
 					{
-						final double monsterDistance = player.calculateDistance2D(nearby);
-						if (monsterDistance < closestDistance)
+						continue TARGET;
+					}
+					// Check if creature is reachable.
+					if (GeoEngine.getInstance().canSeeTarget(player, nearby) && GeoEngine.getInstance().canMoveToTarget(player.getX(), player.getY(), player.getZ(), nearby.getX(), nearby.getY(), nearby.getZ(), player.getInstanceWorld()))
+					{
+						final double creatureDistance = player.calculateDistance2D(nearby);
+						if (creatureDistance < closestDistance)
 						{
-							monster = nearby;
-							closestDistance = monsterDistance;
+							creature = nearby;
+							closestDistance = creatureDistance;
 						}
 					}
 				}
 				
 				// New target was assigned.
-				if (monster != null)
+				if (creature != null)
 				{
-					player.setTarget(monster);
+					player.setTarget(creature);
 					
 					// We take granted that mage classes do not auto hit.
 					if (isMageCaster(player))
@@ -206,6 +216,29 @@ public class AutoPlayTaskManager
 		private boolean isMageCaster(Player player)
 		{
 			return player.isMageClass() && (player.getRace() != Race.ORC);
+		}
+		
+		private boolean isTargetModeValid(int mode, Player player, Creature creature)
+		{
+			switch (mode)
+			{
+				case 1: // Monster
+				{
+					return creature.isMonster();
+				}
+				case 2: // Characters
+				{
+					return creature.isPlayable() && creature.isAutoAttackable(player);
+				}
+				case 3: // NPC
+				{
+					return creature.isNpc() && !creature.isMonster() && !creature.isInsideZone(ZoneId.PEACE);
+				}
+				default: // Any Target
+				{
+					return (creature.isNpc() && !creature.isInsideZone(ZoneId.PEACE)) || (creature.isPlayable() && creature.isAutoAttackable(player));
+				}
+			}
 		}
 	}
 	

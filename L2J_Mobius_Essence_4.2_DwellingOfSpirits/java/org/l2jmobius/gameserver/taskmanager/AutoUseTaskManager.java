@@ -357,7 +357,13 @@ public class AutoUseTaskManager
 						}
 						
 						// Check bad skill target.
-						if ((target == null) || !target.isAttackable() || ((Creature) target).isDead())
+						if ((target == null) || ((Creature) target).isDead())
+						{
+							break SKILLS;
+						}
+						
+						// Peace zone and auto attackable checks.
+						if (target.isInsideZone(ZoneId.PEACE) || !target.isAutoAttackable(player))
 						{
 							break SKILLS;
 						}
@@ -365,7 +371,11 @@ public class AutoUseTaskManager
 						// Do not attack guards.
 						if (target instanceof Guard)
 						{
-							break SKILLS;
+							final int targetMode = player.getAutoPlaySettings().getNextTargetMode();
+							if ((targetMode != 3 /* NPC */) && (targetMode != 0 /* Any Target */))
+							{
+								break SKILLS;
+							}
 						}
 						
 						if (!canUseMagic(player, target, skill) || (pet != null ? pet : player).useMagic(skill, null, true, false))
