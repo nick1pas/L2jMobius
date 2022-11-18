@@ -52,7 +52,7 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 	
 	private int _targetObjectId = 0;
 	private int _count = 0;
-	private final Set<Integer> _ingridients = new HashSet<>();
+	private final Set<Integer> _ingredients = new HashSet<>();
 	
 	@Override
 	public void read(ReadablePacket packet)
@@ -61,14 +61,14 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 		_count = packet.readInt();
 		for (int i = 0; i < _count; i++)
 		{
-			_ingridients.add(packet.readInt());
+			_ingredients.add(packet.readInt());
 		}
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
-		if (!_ingridients.contains(_targetObjectId))
+		if (_ingredients.contains(_targetObjectId))
 		{
 			return;
 		}
@@ -79,7 +79,7 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 			return;
 		}
 		
-		if (player.hasBlockActions() || player.isInStoreMode() || player.isProcessingRequest() || player.isFishing() || player.isInTraingCamp() || (_count != _ingridients.size()))
+		if (player.hasBlockActions() || player.isInStoreMode() || player.isProcessingRequest() || player.isFishing() || player.isInTraingCamp() || (_count != _ingredients.size()))
 		{
 			player.sendPacket(ExTryEnchantArtifactResult.ERROR_PACKET);
 			return;
@@ -111,7 +111,7 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 			needCount = 2;
 		}
 		
-		if ((needCount == 0) || (needCount != _ingridients.size()))
+		if ((needCount == 0) || (needCount != _ingredients.size()))
 		{
 			player.sendPacket(ExTryEnchantArtifactResult.ERROR_PACKET);
 			return;
@@ -144,7 +144,7 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 			return;
 		}
 		
-		for (int objectId : _ingridients)
+		for (int objectId : _ingredients)
 		{
 			final Item ingridient = player.getInventory().getItemByObjectId(objectId);
 			if ((ingridient == null) || (ingridient.getEnchantLevel() < minIngridientEnchant) || (ingridient.getTemplate().getArtifactSlot() != artifactSlot))
