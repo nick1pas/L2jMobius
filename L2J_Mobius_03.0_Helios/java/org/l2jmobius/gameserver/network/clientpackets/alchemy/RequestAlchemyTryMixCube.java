@@ -72,6 +72,7 @@ public class RequestAlchemyTryMixCube implements ClientPacket
 			else // Player used packet injection tool.
 			{
 				_items = null;
+				return;
 			}
 		}
 	}
