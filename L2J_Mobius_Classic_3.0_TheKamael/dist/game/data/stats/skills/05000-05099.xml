@@ -3047,14 +3047,16 @@
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="FatalBlow">
-				<power>6335</power>
+				<power>666</power>
 				<chanceBoost>150</chanceBoost>
 			</effect>
+		</effects>
+		<selfEffects>
 			<effect name="Speed">
 				<amount>40</amount>
 				<mode>DIFF</mode>
 			</effect>
-		</effects>
+		</selfEffects>
 	</skill>
 	<skill id="5085" toLevel="1" name="Anesthesia">
 		<!-- Momentarily stunned and immobilized. -->
