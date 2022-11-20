@@ -4098,6 +4098,19 @@
 				</optionCategory>
 			</optionGroup>
 		</variation>
+		<!-- Augmentation Practice Spirit Stone (46) -->
+		<variation mineralId="36718">
+			<optionGroup order="0">
+				<optionCategory chance="100">
+					<option id="3659" chance="100" /> <!-- P. Def. + 7.73. / M. Atk. + 3.78. -->
+				</optionCategory>
+			</optionGroup>
+			<optionGroup order="1">
+				<optionCategory chance="100">
+					<option id="7288" chance="100" /> <!-- HP Recovery + 0.23. -->
+				</optionCategory>
+			</optionGroup>
+		</variation>
 		<!-- Adenian Underwear Augmenting Stone -->
 		<variation mineralId="23385">
 			<optionGroup order="0"> <!-- Property 1 -->
@@ -7918,16 +7931,17 @@
 			<item id="81696" /> <!-- Superior Artifact Book -->
 		</itemGroup>
 		<itemGroup id="59">
-			<item id="23380" /> <!-- Adenian Military Underwear -->
-			<item id="23381" /> <!-- Adenian Premium Underwear -->
-			<item id="23382" /> <!-- Adenian Seductive Underwear -->
-			<item id="23383" /> <!-- Adenian Cyber Underwear -->
-			<item id="23384" /> <!-- Adenian Cute Underwear -->
+			<item id="36717" /> <!-- Augmentation Practice Stormbringer -->
 		</itemGroup>
 		<itemGroup id="60">
 			<item id="23724" /> <!-- Adenian Tattoo: Wings -->
 			<item id="23725" /> <!-- Adenian Tattoo: Tribal -->
 			<item id="23426" /> <!-- Adenian Tattoo: Evil -->
+			<item id="23380" /> <!-- Adenian Military Underwear -->
+			<item id="23381" /> <!-- Adenian Premium Underwear -->
+			<item id="23382" /> <!-- Adenian Seductive Underwear -->
+			<item id="23383" /> <!-- Adenian Cyber Underwear -->
+			<item id="23384" /> <!-- Adenian Cute Underwear -->
 		</itemGroup>
 		<itemGroup id="61">
 			<item id="28487" /> <!-- La Vie En Rose's Brooch Lv. 4 -->
@@ -8098,11 +8112,9 @@
 		<fee itemGroup="27" itemId="19440" itemCount="7" adenaFee="12650000" cancelFee="12650000"> <!-- R-grade Gemstone -->
 			<mineral id="82343" /> <!-- Artifact Book Augmenting Stone -->
 		</fee>
-		<!-- Adenian Underwear Augmenting Stone -->
-		<fee itemGroup="59" itemId="2133" itemCount="26" adenaFee="1200000" cancelFee="2400000"> <!-- A-grade Gemstone -->
-			<mineral id="23385" /> <!-- Adenian Underwear Augmenting Stone -->
-			<mineral id="23802" /> <!-- Adenian Augmenting Stone -->
-			<mineral id="23803" /> <!-- Major Adenian Augmenting Stone -->
+		<!-- Augmentation Practice Spirit Stone (46) -->
+		<fee itemGroup="59" itemId="36719" itemCount="20" adenaFee="100" cancelFee="100"> <!-- Augmentation Practice R-grade Gemstone -->
+			<mineral id="36718" /> <!-- Augmentation Practice Spirit Stone (46) -->
 		</fee>
 		<!-- Adenian Underwear Augmenting Stone -->
 		<fee itemGroup="60" itemId="2133" itemCount="26" adenaFee="1200000" cancelFee="2400000"> <!-- A-grade Gemstone -->
