@@ -22,9 +22,8 @@ import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * @author Bonux (bonuxq@gmail.com), NasSeKa
- * @date 29.09.2019
- **/
+ * @author Bonux, NasSeKa
+ */
 public class ExPledgeMissionRewardCount extends ServerPacket
 {
 	private final int _doneMissionsCount;

@@ -31,9 +31,8 @@ import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 /**
- * @author Bonux (bonuxq@gmail.com)
- * @date 09.09.2019
- **/
+ * @author Bonux
+ */
 public class RequestExTryEnchantArtifact implements ClientPacket
 {
 	private static final int[] ENCHANT_CHANCES =
@@ -124,21 +123,21 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 			return;
 		}
 		
-		int minIngridientEnchant = -1;
-		if (enchantLevel <= 2)
+		int ingredientEnchant = -1;
+		if (enchantLevel <= 3)
 		{
-			minIngridientEnchant = 0;
+			ingredientEnchant = 0;
 		}
 		else if (enchantLevel <= 6)
 		{
-			minIngridientEnchant = 2;
+			ingredientEnchant = 1;
 		}
 		else if (enchantLevel <= 9)
 		{
-			minIngridientEnchant = 3;
+			ingredientEnchant = 3;
 		}
 		
-		if (minIngridientEnchant == -1)
+		if (ingredientEnchant == -1)
 		{
 			player.sendPacket(ExTryEnchantArtifactResult.ERROR_PACKET);
 			return;
@@ -146,13 +145,13 @@ public class RequestExTryEnchantArtifact implements ClientPacket
 		
 		for (int objectId : _ingredients)
 		{
-			final Item ingridient = player.getInventory().getItemByObjectId(objectId);
-			if ((ingridient == null) || (ingridient.getEnchantLevel() < minIngridientEnchant) || (ingridient.getTemplate().getArtifactSlot() != artifactSlot))
+			final Item ingredient = player.getInventory().getItemByObjectId(objectId);
+			if ((ingredient == null) || (ingredient.getEnchantLevel() < ingredientEnchant) || (ingredient.getTemplate().getArtifactSlot() != artifactSlot))
 			{
 				player.sendPacket(ExTryEnchantArtifactResult.ERROR_PACKET);
 				return;
 			}
-			player.destroyItem("Artifact", ingridient, 1, player, true);
+			player.destroyItem("Artifact", ingredient, 1, player, true);
 		}
 		
 		if (Rnd.get(100) < chance)

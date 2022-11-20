@@ -19,9 +19,8 @@ package org.l2jmobius.gameserver.network.serverpackets;
 import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
- * @author Bonux (bonuxq@gmail.com)
- * @date 09.09.2019
- **/
+ * @author Bonux
+ */
 public class ExTryEnchantArtifactResult extends ServerPacket
 {
 	public static final int SUCCESS = 0;
