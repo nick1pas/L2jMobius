@@ -58,6 +58,11 @@ public class DefenceAttribute extends AbstractEffect
 		{
 			switch (attribute)
 			{
+				case FIRE:
+				{
+					effected.getStat().mergeAdd(Stat.FIRE_RES, _amount);
+					break;
+				}
 				case WATER:
 				{
 					effected.getStat().mergeAdd(Stat.WATER_RES, _amount);
