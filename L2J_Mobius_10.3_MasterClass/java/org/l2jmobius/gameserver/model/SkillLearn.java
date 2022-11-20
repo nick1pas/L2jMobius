@@ -40,7 +40,7 @@ public class SkillLearn
 	private final int _getLevel;
 	private final int _getDualClassLevel;
 	private final boolean _autoGet;
-	private long _levelUpSp;
+	private final long _levelUpSp;
 	private final List<List<ItemHolder>> _requiredItems = new ArrayList<>(1);
 	private final Set<Race> _races = EnumSet.noneOf(Race.class);
 	private final Set<SkillHolder> _preReqSkills = new HashSet<>(1);
@@ -68,15 +68,6 @@ public class SkillLearn
 		_getDualClassLevel = set.getInt("getDualClassLevel", 0);
 		_autoGet = set.getBoolean("autoGet", false);
 		_levelUpSp = set.getLong("levelUpSp", 0);
-		// TODO: Tempfix until XMLs are updated.
-		if (_levelUpSp > 0)
-		{
-			_levelUpSp /= 10000;
-			if (_levelUpSp == 0)
-			{
-				_levelUpSp = 1;
-			}
-		}
 		_residenceSkill = set.getBoolean("residenceSkill", false);
 		_learnedByNpc = set.getBoolean("learnedByNpc", false);
 		_learnedByFS = set.getBoolean("learnedByFS", false);
