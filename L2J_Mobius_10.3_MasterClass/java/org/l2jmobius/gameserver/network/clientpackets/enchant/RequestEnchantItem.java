@@ -451,6 +451,9 @@ public class RequestEnchantItem implements ClientPacket
 				}
 			}
 			
+			player.sendItemList();
+			player.broadcastUserInfo();
+			
 			request.setProcessing(false);
 		}
 	}

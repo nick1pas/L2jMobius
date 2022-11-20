@@ -52,8 +52,6 @@ public class ExRequestViewMultiEnchantResult implements ClientPacket
 		final EnchantItemRequest request = player.getRequest(EnchantItemRequest.class);
 		player.sendPacket(new ExResultMultiEnchantItemList(player, request.getMultiSuccessEnchantList(), request.getMultiFailureEnchantList(), true));
 		
-		player.sendItemList();
 		player.sendPacket(new ShortCutInit(player));
-		player.broadcastUserInfo();
 	}
 }

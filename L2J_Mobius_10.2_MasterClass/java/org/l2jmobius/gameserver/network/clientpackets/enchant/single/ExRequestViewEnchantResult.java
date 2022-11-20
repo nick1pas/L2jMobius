@@ -35,8 +35,6 @@ public class ExRequestViewEnchantResult implements ClientPacket
 			return;
 		}
 		
-		player.sendItemList();
 		player.sendPacket(new ShortCutInit(player));
-		player.broadcastUserInfo();
 	}
 }
