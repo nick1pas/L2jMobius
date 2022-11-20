@@ -1037,7 +1037,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 				sm = new SystemMessage(SystemMessageId.THERE_IS_NO_VICTOR_THE_MATCH_ENDS_IN_A_TIE);
 				stadium.broadcastPacket(sm);
 			}
-			else if ((_player1Wins == 2) || (_playerTwo.getPlayer() == null) || !_playerTwo.getPlayer().isOnline() || ((playerTwoHp == 0) && (playerOneHp != 0)) || ((_damageP1 > _damageP2) && (playerTwoHp != 0) && (playerOneHp != 0)))
+			else if ((_player1Wins == 2) || (_playerTwo.getPlayer() == null) || !_playerTwo.getPlayer().isOnline())
 			{
 				sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_YOU_WIN_THE_MATCH);
 				sm.addString(_playerOne.getName());
@@ -1067,7 +1067,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 					EventDispatcher.getInstance().notifyEventAsync(new OnOlympiadMatchResult(_playerOne, _playerTwo, getType()), Olympiad.getInstance());
 				}
 			}
-			else if ((_player2Wins == 2) || (_playerOne.getPlayer() == null) || !_playerOne.getPlayer().isOnline() || ((playerOneHp == 0) && (playerTwoHp != 0)) || ((_damageP2 > _damageP1) && (playerOneHp != 0) && (playerTwoHp != 0)))
+			else if ((_player2Wins == 2) || (_playerOne.getPlayer() == null) || !_playerOne.getPlayer().isOnline())
 			{
 				sm = new SystemMessage(SystemMessageId.CONGRATULATIONS_C1_YOU_WIN_THE_MATCH);
 				sm.addString(_playerTwo.getName());
