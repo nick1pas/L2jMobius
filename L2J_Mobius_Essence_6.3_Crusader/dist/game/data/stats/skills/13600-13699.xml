@@ -131,7 +131,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="13660" toLevel="4" name="Brooch Lv. 5">
+	<skill id="13660" toLevel="6" name="Brooch Lv. 5">
 		<!-- Jewel slots $s1 Inventory slots $s2 P. Def. $s3 M. Def. $s4 -->
 		<icon>icon.etc_bm_brooch_lavianrose_i06</icon>
 		<operateType>P</operateType>
@@ -143,8 +143,10 @@
 				<amount>
 					<value level="1">200</value>
 					<value level="2">300</value>
-					<value level="3">500</value>
-					<value level="4">700</value>
+					<value level="3">400</value>
+					<value level="4">500</value>
+					<value level="5">700</value>
+					<value level="6">900</value>
 				</amount>
 				<mode>DIFF</mode>
 			</effect>
@@ -152,24 +154,30 @@
 				<amount>
 					<value level="1">200</value>
 					<value level="2">300</value>
-					<value level="3">500</value>
-					<value level="4">700</value>
+					<value level="3">400</value>
+					<value level="4">500</value>
+					<value level="5">700</value>
+					<value level="6">900</value>
 				</amount>
 				<mode>DIFF</mode>
 			</effect>
 			<effect name="MaxHp">
 				<amount>
 					<value fromLevel="1" toLevel="2">0</value>
-					<value level="3">500</value>
-					<value level="4">1000</value>
+					<value level="3">250</value>
+					<value level="4">500</value>
+					<value level="5">750</value>
+					<value level="6">1000</value>
 				</amount>
 				<mode>DIFF</mode>
 			</effect>
 			<effect name="MaxMp">
 				<amount>
 					<value fromLevel="1" toLevel="2">0</value>
-					<value level="3">500</value>
-					<value level="4">1000</value>
+					<value level="3">250</value>
+					<value level="4">500</value>
+					<value level="5">750</value>
+					<value level="6">1000</value>
 				</amount>
 				<mode>DIFF</mode>
 			</effect>
