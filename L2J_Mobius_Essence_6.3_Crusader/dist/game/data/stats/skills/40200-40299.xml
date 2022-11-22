@@ -936,7 +936,18 @@
 	</skill>
 	<skill id="40261" toLevel="1" name="Scroll: 1,000,000,000 SP">
 		<icon>icon.skill0000</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>94829</itemConsumeId>
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
+		<reuseDelay>500</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveSp">
+				<sp>1000000000</sp>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="40262" toLevel="1" name="Buff Candies">
 		<!-- P. Atk. $s1 M. Atk. $s1 P. Def. $s2 M. Def. $s2 -->

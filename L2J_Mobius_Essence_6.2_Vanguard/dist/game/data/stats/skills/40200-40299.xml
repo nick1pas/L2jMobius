@@ -819,7 +819,18 @@
 	</skill>
 	<skill id="40257" toLevel="1" name="Scroll of Escape: Ivory Tower">
 		<icon>icon.skill0000</icon>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>94829</itemConsumeId>
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
+		<reuseDelay>500</reuseDelay>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="GiveSp">
+				<sp>1000000000</sp>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="40258" toLevel="1" name="Berserker's Scroll (Exchangeable)">
 		<!-- STR $s1 INT $s1 Atk. Spd. $s2 Casting Spd. $s2 Speed $s3 P. Skill Power $s4 M. Skill Power $s4 -->

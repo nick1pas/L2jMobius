@@ -209,7 +209,7 @@ public class AdditionalServicesAdvisor extends AbstractNpcAI
 						player.setClassId(classId);
 						player.setBaseClass(player.getActiveClass());
 						
-						giveItems(player, SP_SCROLL, 20);
+						giveItems(player, SP_SCROLL, 50);
 						if (player.isInCategory(CategoryType.FOURTH_CLASS_GROUP))
 						{
 							player.getVariables().set("3rdClassMountRewarded", true);

@@ -609,12 +609,19 @@
 	<item id="94829" name="Scroll: 1,000,000,000 SP" additionalName="Sealed" type="EtcItem">
 		<!-- SP +1,000,000,000. -->
 		<set name="icon" val="icon.etc_sp_scroll3_i00" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="40261" level="1" /> <!-- SP +1,000,000,000 -->
+		</skills>
 	</item>
 	<item id="94830" name="Ultimate Behemoth Transformation Costume" additionalName="Sealed" type="Armor">
 		<!-- NPC only costume -->

@@ -47,7 +47,7 @@ public class AdditionalServicesAdvisor extends AbstractNpcAI
 	private static final int HERMIN = 34153;
 	// Items
 	private static final int CLASS_CHANGE_COUPON = 94828;
-	private static final int SP_SCROLL = 94829;
+	private static final int SP_SCROLL = 91665;
 	private static final int SPELLBOOK_HUMAN = 90038; // Spellbook: Mount Golden Lion
 	private static final int SPELLBOOK_ELF = 90039; // Spellbook: Mount Pegasus
 	private static final int SPELLBOOK_DELF = 90040; // Spellbook: Mount Saber Tooth Cougar
@@ -208,7 +208,7 @@ public class AdditionalServicesAdvisor extends AbstractNpcAI
 						player.setClassId(classId);
 						player.setBaseClass(player.getActiveClass());
 						
-						giveItems(player, SP_SCROLL, 20);
+						giveItems(player, SP_SCROLL, 1000);
 						if (player.isInCategory(CategoryType.FOURTH_CLASS_GROUP))
 						{
 							player.getVariables().set("3rdClassMountRewarded", true);
