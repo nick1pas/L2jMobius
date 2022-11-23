@@ -83,7 +83,7 @@ public class RequestNewEnchantPushTwo implements ClientPacket
 		}
 		
 		// Lets prevent using same item twice. Also stackable item check.
-		if ((itemOne.getObjectId() == itemTwo.getObjectId()) && (player.getInventory().getInventoryItemCount(itemOne.getTemplate().getId(), -1) < 2))
+		if ((itemOne.getObjectId() == itemTwo.getObjectId()) && (!itemOne.isStackable() || (player.getInventory().getInventoryItemCount(itemOne.getTemplate().getId(), -1) < 2)))
 		{
 			player.sendPacket(ExEnchantTwoFail.STATIC_PACKET);
 			return;

@@ -26,6 +26,10 @@ public class ExEnchantOneOK extends ServerPacket
 {
 	public static final ExEnchantOneOK STATIC_PACKET = new ExEnchantOneOK();
 	
+	private ExEnchantOneOK()
+	{
+	}
+	
 	@Override
 	public void write()
 	{

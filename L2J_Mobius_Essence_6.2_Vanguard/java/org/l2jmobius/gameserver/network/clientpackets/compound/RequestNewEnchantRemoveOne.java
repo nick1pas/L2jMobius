@@ -76,7 +76,12 @@ public class RequestNewEnchantRemoveOne implements ClientPacket
 			player.sendPacket(ExEnchantOneRemoveFail.STATIC_PACKET);
 			return;
 		}
+		
 		request.setItemOne(0);
+		if (request.getItemTwo() == null)
+		{
+			player.removeRequest(request.getClass());
+		}
 		
 		player.sendPacket(ExEnchantOneRemoveOK.STATIC_PACKET);
 	}
