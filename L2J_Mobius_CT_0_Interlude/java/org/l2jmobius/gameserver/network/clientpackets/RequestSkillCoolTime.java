@@ -26,9 +26,11 @@ public class RequestSkillCoolTime implements ClientPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getPlayer();
-		if (player != null)
+		if (player == null)
 		{
-			player.sendPacket(new SkillCoolTime(player));
+			return;
 		}
+		
+		player.sendPacket(new SkillCoolTime(player));
 	}
 }
