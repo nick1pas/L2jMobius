@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.model;
 
-
 /**
  * Simple class containing all necessary information to maintain<br>
  * valid time stamps and reuse for skills and items reuse upon re-login.<br>

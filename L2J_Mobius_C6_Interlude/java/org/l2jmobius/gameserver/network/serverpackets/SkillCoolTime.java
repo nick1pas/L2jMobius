@@ -16,7 +16,8 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 import org.l2jmobius.gameserver.model.Timestamp;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -28,17 +29,22 @@ import org.l2jmobius.gameserver.network.ServerPackets;
  */
 public class SkillCoolTime extends ServerPacket
 {
-	public Collection<Timestamp> _reuseTimestamps;
+	private final List<Timestamp> _reuseTimestamps = new LinkedList<>();
 	
 	public SkillCoolTime(Player player)
 	{
-		_reuseTimestamps = player.getReuseTimeStamps();
+		for (Timestamp ts : player.getReuseTimeStamps())
+		{
+			if (ts.hasNotPassed())
+			{
+				_reuseTimestamps.add(ts);
+			}
+		}
 	}
 	
 	@Override
 	public void write()
 	{
-		final long currentTime = System.currentTimeMillis();
 		ServerPackets.SKILL_COOL_TIME.writeId(this);
 		writeInt(_reuseTimestamps.size());
 		for (Timestamp ts : _reuseTimestamps)
@@ -46,7 +52,7 @@ public class SkillCoolTime extends ServerPacket
 			writeInt(ts.getSkillId());
 			writeInt(ts.getSkillLevel());
 			writeInt((int) ts.getReuse() / 1000);
-			writeInt((int) Math.max(ts.getStamp() - currentTime, 0) / 1000);
+			writeInt((int) ts.getRemaining() / 1000);
 		}
 	}
 }
