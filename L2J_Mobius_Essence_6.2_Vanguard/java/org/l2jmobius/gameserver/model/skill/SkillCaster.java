@@ -269,7 +269,7 @@ public class SkillCaster implements Runnable
 				caster.sendPacket(SystemMessageId.A_SKILL_IS_READY_TO_BE_USED_AGAIN);
 			}
 			
-			if (reuseDelay > 30000)
+			if (reuseDelay > 3000)
 			{
 				caster.addTimeStamp(_skill, reuseDelay);
 			}
