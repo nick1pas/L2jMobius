@@ -288,6 +288,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="deco1" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="113" addName="1">
 			<player level="60" />
 		</cond>
@@ -468,7 +469,6 @@
 		<set name="weight" val="1300" />
 		<set name="soulshots" val="1" />
 		<set name="spiritshots" val="1" />
-		<set name="enchant_enabled" val="true" />
 		<set name="bodypart" val="rhand" />
 		<stats>
 			<stat type="pAtk">1</stat>

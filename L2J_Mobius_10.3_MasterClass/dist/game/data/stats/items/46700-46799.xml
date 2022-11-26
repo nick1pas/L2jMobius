@@ -254,7 +254,6 @@
 		<set name="crystal_type" val="R" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="enchant_enabled" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -356,6 +355,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="46717" name="Mysterious Talisman - STR" additionalName="30-day" type="Armor">
 		<!-- When equipped, STR +5. Effects of two identical talismans do not stack. -->
@@ -772,6 +772,7 @@
 		<set name="soulshots" val="2" />
 		<set name="spiritshots" val="2" />
 		<set name="damage_range" val="0;0;66;120" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
 		</skills>
@@ -797,6 +798,7 @@
 		<set name="soulshots" val="2" />
 		<set name="spiritshots" val="2" />
 		<set name="damage_range" val="0;0;66;120" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
 		</skills>
