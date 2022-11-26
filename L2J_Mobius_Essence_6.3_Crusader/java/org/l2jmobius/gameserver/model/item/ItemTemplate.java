@@ -255,11 +255,6 @@ public abstract class ItemTemplate extends ListenersContainer implements IIdenti
 			{
 				LOGGER.warning("Found sellable [Sealed] item " + _itemId);
 			}
-			
-			if (!_enchantable && (_crystalType != CrystalType.NONE) && (_crystalType != CrystalType.EVENT) && (isArmor() || isWeapon()))
-			{
-				LOGGER.warning("Found not enchantable [Sealed] item " + _itemId);
-			}
 		}
 	}
 	
