@@ -754,9 +754,17 @@
 		<set name="is_sellable" val="false" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
+			<item id="13300" min="1" max="1" chance="100" /> <!-- Feather of Blessing - Event -->
+			<item id="13301" min="1" max="1" chance="100" /> <!-- My Teleport Book Lv. 1 - Event -->
+			<item id="13302" min="5" max="5" chance="100" /> <!-- My Teleport Scroll - Event -->
+			<item id="33518" min="5" max="5" chance="100" /> <!-- Blessed Scroll of Resurrection -->
+			<item id="33640" min="5" max="5" chance="100" /> <!-- Blessed Scroll of Escape -->
+			<item id="48848" min="24" max="24" chance="100" /> <!-- Freya's Ice Rose - Event -->
 			<item id="81345" min="1" max="1" chance="100" /> <!-- Expert's Mask -->
-			<item id="81346" min="2" max="2" chance="100" /> <!-- Scroll: Enchant Expert's Mask -->
+			<item id="33780" min="100000" max="100000" chance="100" /> <!-- R-grade Soulshot - Event -->
+			<item id="33794" min="100000" max="100000" chance="100" /> <!-- Blessed R-grade Spiritshot - Event -->
 			<item id="81349" min="1" max="1" chance="100" /> <!-- Belt of Seeker Captain -->
+			<item id="81350" min="1" max="1" chance="100" /> <!-- Atlas' Earring -->
 		</capsuled_items>
 	</item>
 	<item id="81349" name="Belt of Seeker Captain" type="Armor">
