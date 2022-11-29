@@ -394,12 +394,18 @@
 	<item id="82134" name="Abandoned Coal Mines' Time Stone" additionalName="Event" type="EtcItem">
 		<!-- Adds 60 min. to the hunting time in the Abandoned Coal Mines. Required level: 99-105. -->
 		<set name="icon" val="icon.timezone_refill_lost_mine_60" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
-		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_tradable" val="false" />
-		<set name="is_dropable" val="false" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_depositable" val="true" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="39749" level="1" /> <!-- Abandoned Coal Mines' Time Stone -->
+		</skills>
 	</item>
 	<item id="82135" name="Exalted Growth Support Box" additionalName="Event" type="EtcItem">
 		<!-- Double-click to obtain Nevit's Cloak of Light (30-day), Storm Isle's Time Stone/ Abandoned Coal Mines' Time Stone (9 pcs.), Emperor's Special Cocktail (72 pcs.), Freya's Ice Rose, Glowing Dragon's Attribute Potion (XP), Shining Nevit's Gold Hourglass, Honey Dark Beer, Newbie's Fortune Scroll (114 pcs.), Freya's Scroll of Storm (432 pcs.). -->

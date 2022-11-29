@@ -227,7 +227,7 @@
 		</conditions>
 		<effects>
 			<effect name="AddHuntingTime">
-				<zoneId>14</zoneId>
+				<zoneId>15</zoneId>
 				<time>3600000</time>
 			</effect>
 		</effects>
@@ -481,9 +481,26 @@
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="39749" toLevel="1" name="Abandoned Coal Mines' Time Stone - Event">
-		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
-		<icon>icon.skill0000</icon>
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>82134</itemConsumeId> <!-- Abandoned Coal Mines' Time Stone Event -->
+		<conditions>
+			<condition name="CheckLevel">
+				<minLevel>99</minLevel>
+				<maxLevel>105</maxLevel>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="AddHuntingTime">
+				<zoneId>11</zoneId>
+				<time>3600000</time>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39750" toLevel="1" name="Aden's Blessing">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
