@@ -345,136 +345,1625 @@
 		<!-- Attribute Attack/ Resistance and CHA are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_meliodas_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>CHA</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28248" toLevel="9" name="Seven Deadly Sins - Elizabeth">
 		<!-- Attribute Attack/ Resistance and Recovery Potions' Effect are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_elizabeth_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="AdditionalPotionCp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">200</value>
+					<value level="9">500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AdditionalPotionHp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">200</value>
+					<value level="9">500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="AdditionalPotionMp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">200</value>
+					<value level="9">500</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28249" toLevel="9" name="Seven Deadly Sins - Hawk">
 		<!-- Attribute Attack/ Resistance and LUC are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_hawk_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>LUC</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28250" toLevel="9" name="Seven Deadly Sins - Ban">
 		<!-- Attribute Attack/ Resistance and DEX are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_ban_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>DEX</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28251" toLevel="9" name="Seven Deadly Sins - Diane">
 		<!-- Attribute Attack/ Resistance and STR are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_diane_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>STR</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28252" toLevel="9" name="Seven Deadly Sins - King">
 		<!-- Attribute Attack/ Resistance and WIT are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_king_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>WIT</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28253" toLevel="9" name="Seven Deadly Sins - Merlin">
 		<!-- Attribute Attack/ Resistance and INT are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_merlin_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>INT</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28254" toLevel="9" name="Seven Deadly Sins - Gowther">
 		<!-- Attribute Attack/ Resistance and MEN are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_gowther_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>MEN</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28255" toLevel="9" name="Seven Deadly Sins - Escanor">
 		<!-- Attribute Attack/ Resistance and CON are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_escanor_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">10</value>
+					<value level="5">10</value>
+					<value level="6">20</value>
+					<value level="7">30</value>
+					<value level="8">30</value>
+					<value level="9">70</value>
+				</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+					<value level="4">10</value>
+					<value level="5">20</value>
+					<value level="6">25</value>
+					<value level="7">30</value>
+					<value level="8">40</value>
+					<value level="9">50</value>
+				</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">0</value>
+					<value level="6">0</value>
+					<value level="7">0</value>
+					<value level="8">1</value>
+					<value level="9">3</value>
+				</amount>
+				<stat>CON</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28256" toLevel="9" name="Sin of Wrath">
 		<!-- PvE Damage to regular monsters is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_meliodas_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28257" toLevel="9" name="Divine Family Power">
 		<!-- Received PvE Damage is decreased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_elizabeth_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PveMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+					<value level="9">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28258" toLevel="8" name="Boar Hat Pub Pig Mark">
 		<!-- Acquired XP/ SP are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_hawk_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">15</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">15</value>
+				</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28259" toLevel="8" name="Sin of Greed">
 		<!-- P. Skill Critical Rate is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_ban_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28260" toLevel="8" name="Sin of Envy">
 		<!-- P. Atk. is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_diane_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28261" toLevel="8" name="Sin of Sloth">
 		<!-- Skill MP Consumption is decreased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_king_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-1</value>
+					<value level="3">-2</value>
+					<value level="4">-3</value>
+					<value level="5">-4</value>
+					<value level="6">-5</value>
+					<value level="7">-6</value>
+					<value level="8">-7</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>0</magicType>
+			</effect>
+			<effect name="MagicMpCost">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-1</value>
+					<value level="3">-2</value>
+					<value level="4">-3</value>
+					<value level="5">-4</value>
+					<value level="6">-5</value>
+					<value level="7">-6</value>
+					<value level="8">-7</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28262" toLevel="8" name="Sin of Gluttony">
 		<!-- M. Def. is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_merlin_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28263" toLevel="8" name="Sin of Lust">
 		<!-- Debuff Resistance is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_gowther_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="ResistAbnormalByCategory">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+				</amount>
+				<slot>DEBUFF</slot>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28264" toLevel="8" name="Sin of Pride">
 		<!-- P. Def. is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_escanor_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28265" toLevel="8" name="Demon Sword Lostvayne Power">
 		<!-- PvP Damage is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_meliodas_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28266" toLevel="8" name="Tranquility Magic Power">
 		<!-- Received PvP Damage is decreased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_elizabeth_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PvpPhysicalAttackDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDefenceBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">6</value>
+					<value level="7">8</value>
+					<value level="8">15</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28267" toLevel="8" name="Leftover Cleaning Knights' Power">
 		<!-- Acquired XP/ SP while hunting are increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_hawk_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="ExpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">7</value>
+					<value level="8">10</value>
+				</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">7</value>
+					<value level="8">10</value>
+				</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28268" toLevel="8" name="Holy Staff Courechouse Power">
 		<!-- Skill Cooldown is decreased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_ban_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="Reuse">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-1</value>
+					<value level="3">-2</value>
+					<value level="4">-3</value>
+					<value level="5">-4</value>
+					<value level="6">-5</value>
+					<value level="7">-6</value>
+					<value level="8">-7</value>
+				</amount>
+				<mode>PER</mode>
+				<magicType>1</magicType>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28269" toLevel="8" name="War Hammer Gideon Power">
 		<!-- P. Critical Damage is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_diane_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28270" toLevel="8" name="Spirit Spear Chastiefol Power">
 		<!-- M. Atk. is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_king_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">3</value>
+					<value level="4">5</value>
+					<value level="5">7</value>
+					<value level="6">10</value>
+					<value level="7">13</value>
+					<value level="8">17</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28271" toLevel="8" name="Morning Star Aldan Power">
 		<!-- M. Critical Damage is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_merlin_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28272" toLevel="8" name="Twin Bow Herritt Power">
 		<!-- Damage to immobilized targets is increased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_gowther_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="ImmobileDamageBonus">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+					<value level="5">4</value>
+					<value level="6">5</value>
+					<value level="7">6</value>
+					<value level="8">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="ImmobileDamageResist">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-1</value>
+					<value level="3">-2</value>
+					<value level="4">-3</value>
+					<value level="5">-4</value>
+					<value level="6">-5</value>
+					<value level="7">-6</value>
+					<value level="8">-7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28273" toLevel="8" name="Divine Axe Rhitta Power">
 		<!-- Received P. Critical Damage is decreased, when the agathion grows. -->
 		<icon>BranchIcon.icon.g_bm_escanor_agathion_charm_lv1_jp</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="DefencePhysicalSkillCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-1</value>
+					<value level="3">-2</value>
+					<value level="4">-3</value>
+					<value level="5">-4</value>
+					<value level="6">-6</value>
+					<value level="7">-8</value>
+					<value level="8">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">-1</value>
+					<value level="3">-2</value>
+					<value level="4">-3</value>
+					<value level="5">-4</value>
+					<value level="6">-6</value>
+					<value level="7">-8</value>
+					<value level="8">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28274" toLevel="1" name="Seven Deadly Sins Agathion's Book of Growth">
 		<operateType>A1</operateType>
