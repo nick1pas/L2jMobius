@@ -96,6 +96,8 @@ public class Antharas extends AbstractInstance
 	// Zone
 	private static final NoRestartZone ZONE = ZoneManager.getInstance().getZoneById(70050, NoRestartZone.class); // Antharas Nest zone
 	// @formatter:on
+	// Reward
+	private static final int REWARD_BOX = 82243;
 	// Misc
 	private static final int TEMPLATE_ID = 304;
 	
@@ -403,18 +405,25 @@ public class Antharas extends AbstractInstance
 	}
 	
 	@Override
-	public String onKill(Npc npc, Player player, boolean isSummon)
+	public String onKill(Npc npc, Player killer, boolean isSummon)
 	{
-		final Instance world = player.getInstanceWorld();
+		final Instance world = killer.getInstanceWorld();
 		final Npc antharas = world.getParameters().getObject("antharas", Npc.class);
-		if (ZONE.isCharacterInZone(player) && (npc.getId() == ANTHARAS))
+		if (ZONE.isCharacterInZone(killer) && (npc.getId() == ANTHARAS))
 		{
 			notifyEvent("DESPAWN_MINIONS", null, null);
 			ZONE.broadcastPacket(new SpecialCamera(antharas, 1200, 20, -10, 0, 10000, 13000, 0, 0, 0, 0, 0));
 			ZONE.broadcastPacket(new PlaySound("BS01_D"));
+			
+			// After defeating Antharas all players in the zone receive Antharas' Reward Pack.
+			for (Player player : world.getPlayers())
+			{
+				giveItems(player, REWARD_BOX, 1);
+			}
+			
 			world.finishInstance();
 		}
-		return super.onKill(npc, player, isSummon);
+		return super.onKill(npc, killer, isSummon);
 	}
 	
 	@Override
