@@ -49,7 +49,7 @@ public class PlayerRandomCraft
 	private static final Logger LOGGER = Logger.getLogger(PlayerRandomCraft.class.getName());
 	
 	public static final int MAX_FULL_CRAFT_POINTS = 99;
-	public static final int MAX_CRAFT_POINTS = 1000000;
+	public static final int MAX_CRAFT_POINTS = 5000000;
 	
 	private final Player _player;
 	private final List<RandomCraftRewardItemHolder> _rewardList = new ArrayList<>(5);
