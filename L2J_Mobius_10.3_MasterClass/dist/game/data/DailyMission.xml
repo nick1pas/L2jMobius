@@ -1380,6 +1380,7 @@
 	<reward id="4112" name="Hunting in the Corroded Fields" requiredCompletion="900" isOneTime="false">
 		<!-- Kill 900 monsters in the Corroded Fields. -->
 		<handler name="monster">
+		<param name="ids">24598,24599,24600,24603,24604,24605</param>
 			<param name="minLevel">100</param>
 			<param name="maxLevel">255</param>
 		</handler>
