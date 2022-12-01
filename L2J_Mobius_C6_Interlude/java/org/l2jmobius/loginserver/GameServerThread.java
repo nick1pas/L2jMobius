@@ -29,6 +29,7 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.commons.crypt.NewCrypt;
 import org.l2jmobius.commons.network.WritablePacket;
+import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.loginserver.GameServerTable.GameServerInfo;
 import org.l2jmobius.loginserver.network.GameServerPacketHandler;
 import org.l2jmobius.loginserver.network.GameServerPacketHandler.GameServerState;
@@ -199,6 +200,7 @@ public class GameServerThread extends Thread
 	{
 		_connection = con;
 		_connectionIp = con.getInetAddress().getHostAddress();
+		
 		try
 		{
 			_in = _connection.getInputStream();
@@ -208,6 +210,7 @@ public class GameServerThread extends Thread
 		{
 			LOGGER.warning(getClass().getSimpleName() + ": " + e.getMessage());
 		}
+		
 		final ScrambledKeyPair pair = LoginController.getInstance().getScrambledRSAKeyPair();
 		_privateKey = (RSAPrivateKey) pair.getPrivateKey();
 		_publicKey = (RSAPublicKey) pair.getPublicKey();
@@ -237,18 +240,20 @@ public class GameServerThread extends Thread
 			
 			// encrypt
 			size = data.length - 2; // data size without header
-			NewCrypt.appendChecksum(data, 2, size);
-			_blowfish.crypt(data, 2, size);
 			
 			synchronized (_out)
 			{
+				NewCrypt.appendChecksum(data, 2, size);
+				_blowfish.crypt(data, 2, size);
+				
 				_out.write(data);
 				_out.flush();
 			}
 		}
 		catch (IOException e)
 		{
-			LOGGER.severe("IOException while sending packet " + packet.getClass().getSimpleName());
+			LOGGER.severe("GameServerThread: IOException while sending packet " + packet.getClass().getSimpleName());
+			LOGGER.severe(CommonUtil.getStackTrace(e));
 		}
 	}
 	

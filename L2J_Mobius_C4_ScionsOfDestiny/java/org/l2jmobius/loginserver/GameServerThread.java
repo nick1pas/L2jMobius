@@ -32,6 +32,7 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.crypt.NewCrypt;
+import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.loginserver.network.AbstractServerPacket;
 import org.l2jmobius.loginserver.network.gameserverpackets.BlowFishKey;
 import org.l2jmobius.loginserver.network.gameserverpackets.ChangeAccessLevel;
@@ -392,37 +393,34 @@ public class GameServerThread extends Thread
 		start();
 	}
 	
-	/**
-	 * @param sl
-	 * @throws IOException
-	 */
-	private void sendPacket(AbstractServerPacket sl) throws IOException
+	private void sendPacket(AbstractServerPacket packet)
 	{
-		byte[] data = sl.getContent();
-		NewCrypt.appendChecksum(data);
-		_blowfish.crypt(data, 0, data.length);
-		
-		final int len = data.length + 2;
-		synchronized (_out)
+		try
 		{
-			_out.write(len & 0xff);
-			_out.write((len >> 8) & 0xff);
-			_out.write(data);
-			_out.flush();
+			final byte[] data = packet.getContent();
+			
+			synchronized (_out)
+			{
+				NewCrypt.appendChecksum(data);
+				_blowfish.crypt(data, 0, data.length);
+				
+				final int len = data.length + 2;
+				_out.write(len & 0xff);
+				_out.write((len >> 8) & 0xff);
+				_out.write(data);
+				_out.flush();
+			}
+		}
+		catch (IOException e)
+		{
+			LOGGER.severe("GameServerThread: IOException while sending packet " + packet.getClass().getSimpleName());
+			LOGGER.severe(CommonUtil.getStackTrace(e));
 		}
 	}
 	
 	public void kickPlayer(String account)
 	{
-		final KickPlayer kp = new KickPlayer(account);
-		try
-		{
-			sendPacket(kp);
-		}
-		catch (IOException e)
-		{
-			e.printStackTrace();
-		}
+		sendPacket(new KickPlayer(account));
 	}
 	
 	/**

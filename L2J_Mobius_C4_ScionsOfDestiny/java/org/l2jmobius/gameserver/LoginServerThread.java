@@ -40,6 +40,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.crypt.NewCrypt;
 import org.l2jmobius.commons.network.WritablePacket;
+import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -361,21 +362,12 @@ public class LoginServerThread extends Thread
 	 */
 	public void addWaitingClientAndSendRequest(String accountName, GameClient client, SessionKey key)
 	{
-		final WaitingClient wc = new WaitingClient(accountName, client, key);
 		synchronized (_waitingClients)
 		{
-			_waitingClients.add(wc);
+			_waitingClients.add(new WaitingClient(accountName, client, key));
 		}
 		
-		final PlayerAuthRequest par = new PlayerAuthRequest(accountName, key);
-		try
-		{
-			sendPacket(par);
-		}
-		catch (IOException e)
-		{
-			LOGGER.warning(getClass().getSimpleName() + ": Error while sending player auth request.");
-		}
+		sendPacket(new PlayerAuthRequest(accountName, key));
 	}
 	
 	/**
@@ -412,19 +404,9 @@ public class LoginServerThread extends Thread
 		{
 			return;
 		}
-		final PlayerLogout pl = new PlayerLogout(account);
-		try
-		{
-			sendPacket(pl);
-		}
-		catch (IOException e)
-		{
-			LOGGER.warning(getClass().getSimpleName() + ": Error while sending logout packet to login.");
-		}
-		finally
-		{
-			_accountsInGameServer.remove(account);
-		}
+		
+		_accountsInGameServer.remove(account);
+		sendPacket(new PlayerLogout(account));
 	}
 	
 	public boolean addGameServerLogin(String account, GameClient client)
@@ -449,14 +431,7 @@ public class LoginServerThread extends Thread
 	
 	public void sendAccessLevel(String account, int level)
 	{
-		final ChangeAccessLevel cal = new ChangeAccessLevel(account, level);
-		try
-		{
-			sendPacket(cal);
-		}
-		catch (IOException e)
-		{
-		}
+		sendPacket(new ChangeAccessLevel(account, level));
 	}
 	
 	private String hexToString(byte[] hex)
@@ -498,39 +473,47 @@ public class LoginServerThread extends Thread
 	/**
 	 * Send packet.
 	 * @param packet the sendable packet
-	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
-	private void sendPacket(WritablePacket packet) throws IOException
+	private void sendPacket(WritablePacket packet)
 	{
 		if (_blowfish == null)
 		{
 			return;
 		}
 		
-		packet.write(); // write initial data
-		packet.writeInt(0); // reserved for checksum
-		int size = packet.getLength() - 2; // size without header
-		final int padding = size % 8; // padding of 8 bytes
-		if (padding != 0)
+		try
 		{
-			for (int i = padding; i < 8; i++)
+			packet.write(); // write initial data
+			packet.writeInt(0); // reserved for checksum
+			int size = packet.getLength() - 2; // size without header
+			final int padding = size % 8; // padding of 8 bytes
+			if (padding != 0)
 			{
-				packet.writeByte(0);
+				for (int i = padding; i < 8; i++)
+				{
+					packet.writeByte(0);
+				}
+			}
+			
+			// size header + encrypted[data + checksum (int) + padding]
+			final byte[] data = packet.getSendableBytes();
+			
+			// encrypt
+			size = data.length - 2; // data size without header
+			
+			synchronized (_out)
+			{
+				NewCrypt.appendChecksum(data, 2, size);
+				_blowfish.crypt(data, 2, size);
+				
+				_out.write(data);
+				_out.flush();
 			}
 		}
-		
-		// size header + encrypted[data + checksum (int) + padding]
-		final byte[] data = packet.getSendableBytes();
-		
-		// encrypt
-		size = data.length - 2; // data size without header
-		NewCrypt.appendChecksum(data, 2, size);
-		_blowfish.crypt(data, 2, size);
-		
-		synchronized (_out)
+		catch (Exception e)
 		{
-			_out.write(data);
-			_out.flush();
+			LOGGER.severe("LoginServerThread: IOException while sending packet " + packet.getClass().getSimpleName());
+			LOGGER.severe(CommonUtil.getStackTrace(e));
 		}
 	}
 	
@@ -560,16 +543,9 @@ public class LoginServerThread extends Thread
 	 */
 	public void sendServerStatus(int id, int value)
 	{
-		final ServerStatus ss = new ServerStatus();
-		ss.addAttribute(id, value);
-		try
-		{
-			sendPacket(ss);
-		}
-		catch (IOException e)
-		{
-			// Ignore.
-		}
+		final ServerStatus serverStatus = new ServerStatus();
+		serverStatus.addAttribute(id, value);
+		sendPacket(serverStatus);
 	}
 	
 	/**
