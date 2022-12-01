@@ -72,6 +72,11 @@ public class TriggerSkillByDualRange extends AbstractEffect
 			return;
 		}
 		
-		effector.getActingPlayer().useMagic(triggerSkill, null, false, triggerSkill.getCastRange() > 600);
+		if (effected.isPlayable() && !effected.isAutoAttackable(effector))
+		{
+			effector.getActingPlayer().updatePvPStatus();
+		}
+		
+		effector.getActingPlayer().useMagic(triggerSkill, null, true, triggerSkill.getCastRange() > 600);
 	}
 }
