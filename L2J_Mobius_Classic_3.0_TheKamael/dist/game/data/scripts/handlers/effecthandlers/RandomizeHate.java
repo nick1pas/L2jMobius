@@ -84,7 +84,7 @@ public class RandomizeHate extends AbstractEffect
 		
 		// Choosing randomly a new target
 		final Creature target = targetList.get(Rnd.get(targetList.size()));
-		final int hate = effectedMob.getHating(effector);
+		final long hate = effectedMob.getHating(effector);
 		effectedMob.stopHating(effector);
 		effectedMob.addDamageHate(target, 0, hate);
 	}

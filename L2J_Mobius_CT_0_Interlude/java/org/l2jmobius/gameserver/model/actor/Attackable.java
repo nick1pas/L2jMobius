@@ -670,7 +670,7 @@ public class Attackable extends Npc
 			return null;
 		}
 		
-		int damage = 0;
+		long damage = 0;
 		Creature damageDealer = null;
 		for (AggroInfo info : _aggroList.values())
 		{
@@ -730,7 +730,7 @@ public class Attackable extends Npc
 	 * @param damage The number of damages given by the attacker Creature
 	 * @param aggroValue The hate (=damage) given by the attacker Creature
 	 */
-	public void addDamageHate(Creature attacker, int damage, int aggroValue)
+	public void addDamageHate(Creature attacker, long damage, long aggroValue)
 	{
 		if ((attacker == null) || (attacker == this))
 		{
@@ -750,7 +750,7 @@ public class Attackable extends Npc
 		// Traps does not cause aggro
 		// making this hack because not possible to determine if damage made by trap
 		// so just check for triggered trap here
-		int aggro = aggroValue;
+		long aggro = aggroValue;
 		final Player targetPlayer = attacker.getActingPlayer();
 		if ((targetPlayer == null) || (targetPlayer.getTrap() == null) || !targetPlayer.getTrap().isTriggered())
 		{
@@ -786,7 +786,7 @@ public class Attackable extends Npc
 		}
 	}
 	
-	public void reduceHate(Creature target, int amount)
+	public void reduceHate(Creature target, long amount)
 	{
 		if (getAI() instanceof SiegeGuardAI)
 		{
@@ -872,7 +872,7 @@ public class Attackable extends Npc
 		}
 		
 		Creature mostHated = null;
-		int maxHate = 0;
+		long maxHate = 0;
 		
 		// While Interacting over This Map Removing Object is Not Allowed
 		// Go through the aggroList of the Attackable
@@ -905,7 +905,7 @@ public class Attackable extends Npc
 		
 		Creature mostHated = null;
 		Creature secondMostHated = null;
-		int maxHate = 0;
+		long maxHate = 0;
 		final List<Creature> result = new ArrayList<>();
 		
 		// While iterating over this map removing objects is not allowed
@@ -963,7 +963,7 @@ public class Attackable extends Npc
 	 * @param target The Creature whose hate level must be returned
 	 * @return the hate level of the Attackable against this Creature contained in _aggroList.
 	 */
-	public int getHating(Creature target)
+	public long getHating(Creature target)
 	{
 		if (_aggroList.isEmpty() || (target == null))
 		{
@@ -998,6 +998,7 @@ public class Attackable extends Npc
 			ai.stopHate();
 			return 0;
 		}
+		
 		return ai.getHate();
 	}
 	

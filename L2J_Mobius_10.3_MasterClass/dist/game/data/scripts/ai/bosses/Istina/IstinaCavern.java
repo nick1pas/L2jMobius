@@ -398,7 +398,7 @@ public class IstinaCavern extends AbstractInstance
 				}
 				else if (skillId == ISTINA_ERUPTION_SKILL.getSkillId())
 				{
-					((Attackable) npc).getAggroList().values().stream().sorted(Comparator.comparingInt(AggroInfo::getHate)).map(AggroInfo::getAttacker).limit(5).forEach(character ->
+					((Attackable) npc).getAggroList().values().stream().sorted(Comparator.comparingLong(AggroInfo::getHate)).map(AggroInfo::getAttacker).limit(5).forEach(character ->
 					{
 						final Npc eruption = addSpawn(INVISIBLE_NPC, Util.getRandomPosition(character, 150, 150), false, 0, false, instance.getId());
 						eruption.getVariables().set("ERUPTION_TARGET", character);
