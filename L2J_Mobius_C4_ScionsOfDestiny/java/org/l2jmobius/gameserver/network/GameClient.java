@@ -22,6 +22,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.ReentrantLock;
@@ -68,6 +70,7 @@ public class GameClient extends NetClient
 		(byte) 0x87 // The last 4 bytes are fixed.
 	};
 	
+	private final Queue<ServerPacket> _pendingPackets = new ConcurrentLinkedQueue<>();
 	private final FloodProtectors _floodProtectors = new FloodProtectors(this);
 	private final ReentrantLock _playerLock = new ReentrantLock();
 	private ConnectionState _connectionState = ConnectionState.CONNECTED;
@@ -183,23 +186,28 @@ public class GameClient extends NetClient
 			return;
 		}
 		
-		try
+		_pendingPackets.add(packet);
+		synchronized (_pendingPackets)
 		{
-			if ((getChannel() != null) && getChannel().isConnected())
+			try
 			{
-				final ByteBuffer byteBuffer = packet.getSendableByteBuffer(_encryption);
-				if (byteBuffer != null)
+				if ((getChannel() != null) && getChannel().isConnected())
 				{
-					// Send the packet data.
-					getChannel().write(byteBuffer);
-					
-					// Run packet implementation.
-					packet.run(_player);
+					final ServerPacket nextPacket = _pendingPackets.poll();
+					final ByteBuffer byteBuffer = nextPacket.getSendableByteBuffer(_encryption);
+					if (byteBuffer != null)
+					{
+						// Send the packet data.
+						getChannel().write(byteBuffer);
+						
+						// Run packet implementation.
+						nextPacket.run(_player);
+					}
 				}
 			}
-		}
-		catch (Exception ignored)
-		{
+			catch (Exception ignored)
+			{
+			}
 		}
 	}
 	

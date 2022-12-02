@@ -22,6 +22,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.Future;
 import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.locks.ReentrantLock;
@@ -56,6 +58,7 @@ public class GameClient extends NetClient
 	protected static final Logger LOGGER = Logger.getLogger(GameClient.class.getName());
 	protected static final Logger LOGGER_ACCOUNTING = Logger.getLogger("accounting");
 	
+	private final Queue<ServerPacket> _pendingPackets = new ConcurrentLinkedQueue<>();
 	private final FloodProtectors _floodProtectors = new FloodProtectors(this);
 	private final ReentrantLock _playerLock = new ReentrantLock();
 	private ConnectionState _connectionState = ConnectionState.CONNECTED;
@@ -175,6 +178,22 @@ public class GameClient extends NetClient
 			return;
 		}
 		
+		if (Config.PACKET_ENCRYPTION)
+		{
+			_pendingPackets.add(packet);
+			synchronized (_pendingPackets)
+			{
+				writePacket(_pendingPackets.poll());
+			}
+		}
+		else
+		{
+			writePacket(packet);
+		}
+	}
+	
+	private void writePacket(ServerPacket packet)
+	{
 		try
 		{
 			if ((getChannel() != null) && getChannel().isConnected())
