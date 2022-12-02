@@ -184,7 +184,7 @@ public class NpcInfo extends AbstractMaskPacket<NpcInfoType>
 		if (npc.getClanId() > 0)
 		{
 			final Clan clan = ClanTable.getInstance().getClan(npc.getClanId());
-			if ((clan != null) && !npc.isMonster() && npc.isInsideZone(ZoneId.PEACE))
+			if ((clan != null) && ((npc.getTemplate().getId() == 34156 /* Clan Stronghold Device */) || (!npc.isMonster() && npc.isInsideZone(ZoneId.PEACE))))
 			{
 				_clanId = clan.getId();
 				_clanCrest = clan.getCrestId();

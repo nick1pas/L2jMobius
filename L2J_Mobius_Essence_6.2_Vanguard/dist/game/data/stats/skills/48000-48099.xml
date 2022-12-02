@@ -467,8 +467,28 @@
 	</skill>
 	<skill id="48078" toLevel="1" name="Clan Stronghold Effect">
 		<!-- Buff for the members of the clan that secured the Cruma Tower Clan Stronghold Device. For $s1 Acquired XP $s2 Acquired SP $s2 -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>300</abnormalTime>
+		<abnormalType>HERB_EXP</abnormalType>
+		<castRange>900</castRange>
+		<effectRange>900</effectRange>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
+		<magicLevel>99</magicLevel>
+		<mpConsume>0</mpConsume>
+		<mpInitialConsume>0</mpInitialConsume>
+		<operateType>A2</operateType>
+		<basicProperty>NONE</basicProperty>
+		<targetType>TARGET</targetType>
+		<affectScope>SINGLE</affectScope>
+		<isTriggeredSkill>true</isTriggeredSkill>
+		<effects>
+			<effect name="ExpModify">
+				<amount>50</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>50</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="48079" toLevel="1" name="Triple Slash">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
