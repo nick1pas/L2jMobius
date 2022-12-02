@@ -149,7 +149,7 @@ public class TrainingZone extends AbstractInstance
 	private static final Location WAITING_AREA = new Location(-49550, 17189, -3016);
 	private static final Location INSOLENCE_TOWER = new Location(-52849, 5272, -240);
 	private static final String TRAINING_AREA_TELEPORT = "TRAINING_AREA_TELEPORT";
-	private static final int TEMPLATE_ID = 224;
+	private static final int TEMPLATE_ID = 228;
 	
 	public TrainingZone()
 	{

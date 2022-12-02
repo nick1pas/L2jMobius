@@ -111,7 +111,7 @@ public class ExTimedHuntingZoneEnter implements ClientPacket
 		final int instanceId = holder.getInstanceId();
 		if ((instanceId > 0) && holder.isSoloInstance())
 		{
-			if (instanceId == 224) // Cooldown for Training Zone instance.
+			if (instanceId == 228) // Cooldown for Training Zone instance.
 			{
 				if (InstanceManager.getInstance().getInstanceTime(player, instanceId) > currentTime)
 				{
