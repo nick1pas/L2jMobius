@@ -224,7 +224,7 @@ public class AutoPlayTaskManager
 			{
 				case 1: // Monster
 				{
-					return creature.isMonster();
+					return creature.isMonster() && creature.isAutoAttackable(player);
 				}
 				case 2: // Characters
 				{
