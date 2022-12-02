@@ -207,6 +207,8 @@ public class Config
 	public static boolean MP_VAMPIRIC_ATTACK_WORKS_WITH_MELEE;
 	public static boolean CALCULATE_MAGIC_SUCCESS_BY_SKILL_MAGIC_LEVEL;
 	public static int BLOW_RATE_CHANCE_LIMIT;
+	public static int ITEM_EQUIP_ACTIVE_SKILL_REUSE;
+	public static int ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE;
 	public static boolean LIFE_CRYSTAL_NEEDED;
 	public static boolean DIVINE_SP_BOOK_NEEDED;
 	public static boolean ALT_GAME_SUBCLASS_WITHOUT_QUESTS;
@@ -1769,6 +1771,8 @@ public class Config
 			MP_VAMPIRIC_ATTACK_WORKS_WITH_MELEE = characterConfig.getBoolean("MpVampiricAttackWorkWithMelee", false);
 			CALCULATE_MAGIC_SUCCESS_BY_SKILL_MAGIC_LEVEL = characterConfig.getBoolean("CalculateMagicSuccessBySkillMagicLevel", true);
 			BLOW_RATE_CHANCE_LIMIT = characterConfig.getInt("BlowRateChanceLimit", 80);
+			ITEM_EQUIP_ACTIVE_SKILL_REUSE = characterConfig.getInt("ItemEquipActiveSkillReuse", 300000);
+			ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE = characterConfig.getInt("ArmorSetEquipActiveSkillReuse", 60000);
 			LIFE_CRYSTAL_NEEDED = characterConfig.getBoolean("LifeCrystalNeeded", true);
 			DIVINE_SP_BOOK_NEEDED = characterConfig.getBoolean("DivineInspirationSpBookNeeded", true);
 			ALT_GAME_SUBCLASS_WITHOUT_QUESTS = characterConfig.getBoolean("AltSubClassWithoutQuests", false);

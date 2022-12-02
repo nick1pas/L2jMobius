@@ -621,6 +621,13 @@ public abstract class Inventory extends ItemContainer
 						{
 							addedSkills.put(skill.getId(), skill);
 						}
+						
+						// Active, non offensive, skills start with reuse on equip.
+						if (skill.isActive() && !skill.isBad() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && playable.getActingPlayer().hasEnteredWorld())
+						{
+							playable.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
+							updateTimestamp = true;
+						}
 					}
 				}
 				
@@ -704,14 +711,24 @@ public abstract class Inventory extends ItemContainer
 							addedSkills.put(skill.getId(), skill);
 						}
 						
-						if (skill.isActive() && !playable.hasSkillReuse(skill.getReuseHashCode()))
+						if (skill.isActive())
 						{
-							final int equipDelay = item.getEquipReuseDelay();
-							if (equipDelay > 0)
+							if (!playable.hasSkillReuse(skill.getReuseHashCode()))
 							{
-								playable.addTimeStamp(skill, equipDelay);
-								playable.disableSkill(skill, equipDelay);
+								final int equipDelay = item.getEquipReuseDelay();
+								if (equipDelay > 0)
+								{
+									playable.addTimeStamp(skill, equipDelay);
+									playable.disableSkill(skill, equipDelay);
+								}
 							}
+							
+							// Active, non offensive, skills start with reuse on equip.
+							if (!skill.isBad() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && playable.getActingPlayer().hasEnteredWorld())
+							{
+								playable.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
+							}
+							
 							updateTimestamp = true;
 						}
 					}
@@ -770,6 +787,13 @@ public abstract class Inventory extends ItemContainer
 						else
 						{
 							addedSkills.put(skill.getId(), skill);
+						}
+						
+						// Active, non offensive, skills start with reuse on equip.
+						if (skill.isActive() && !skill.isBad() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && playable.getActingPlayer().hasEnteredWorld())
+						{
+							playable.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
+							updateTimestamp = true;
 						}
 					}
 				}
@@ -918,9 +942,9 @@ public abstract class Inventory extends ItemContainer
 						}
 						
 						playable.addSkill(itemSkill);
-						if (itemSkill.isActive() && (item != null))
+						if (itemSkill.isActive())
 						{
-							if (!playable.hasSkillReuse(itemSkill.getReuseHashCode()))
+							if ((item != null) && !playable.hasSkillReuse(itemSkill.getReuseHashCode()))
 							{
 								final int equipDelay = item.getEquipReuseDelay();
 								if (equipDelay > 0)
@@ -929,8 +953,16 @@ public abstract class Inventory extends ItemContainer
 									playable.disableSkill(itemSkill, equipDelay);
 								}
 							}
+							
+							// Active, non offensive, skills start with reuse on equip.
+							if (!itemSkill.isBad() && (Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE > 0) && playable.getActingPlayer().hasEnteredWorld())
+							{
+								playable.addTimeStamp(itemSkill, Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE);
+							}
+							
 							updateTimeStamp = true;
 						}
+						
 						update = true;
 					}
 				}
