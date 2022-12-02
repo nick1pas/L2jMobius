@@ -125,14 +125,14 @@ public class CharacterCreate implements ClientPacket
 			return;
 		}
 		
-		if ((_face > 2) || (_face < 0))
+		if ((_face > 4) || (_face < 0))
 		{
 			PacketLogger.warning("Character Creation Failure: Character face " + _face + " is invalid. Possible client hack. " + client);
 			client.sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
 			return;
 		}
 		
-		if ((_hairStyle < 0) || ((_sex == 0) && (_hairStyle > 4)) || ((_sex != 0) && (_hairStyle > 6)))
+		if ((_hairStyle < 0) || ((_sex == 0) && (_hairStyle > 8)) || ((_sex != 0) && (_hairStyle > 11)))
 		{
 			PacketLogger.warning("Character Creation Failure: Character hair style " + _hairStyle + " is invalid. Possible client hack. " + client);
 			client.sendPacket(new CharCreateFail(CharCreateFail.REASON_CREATION_FAILED));
