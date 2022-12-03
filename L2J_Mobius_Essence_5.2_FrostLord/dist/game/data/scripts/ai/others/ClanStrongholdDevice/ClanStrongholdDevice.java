@@ -127,7 +127,8 @@ public class ClanStrongholdDevice extends AbstractNpcAI
 		{
 			return super.onFirstTalk(npc, player);
 		}
-		return npc.getId() + (CURRENT_CLAN_ID.getOrDefault(npc.getScriptValue(), 0) == 0 ? "" : "C") + ".htm";
+		
+		return npc.getId() + (CURRENT_CLAN_ID.containsKey(npc.getScriptValue()) ? "C" : "") + ".htm";
 	}
 	
 	@Override
@@ -167,7 +168,7 @@ public class ClanStrongholdDevice extends AbstractNpcAI
 	@Override
 	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon)
 	{
-		if (CURRENT_CLAN_ID.containsKey(npc.getScriptValue()) && (LAST_ATTACK.getOrDefault(npc.getObjectId(), 0L) < (System.currentTimeMillis() - 5000L)))
+		if (CURRENT_CLAN_ID.containsKey(npc.getScriptValue()) && (LAST_ATTACK.getOrDefault(npc.getObjectId(), 0L) < (System.currentTimeMillis() - 5000)))
 		{
 			npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, NpcStringId.AT_TACK_SIG_NAL_DE_TEC_TED_S1).addStringParameter(attacker.getName()));
 			LAST_ATTACK.put(npc.getObjectId(), System.currentTimeMillis());
@@ -187,7 +188,7 @@ public class ClanStrongholdDevice extends AbstractNpcAI
 			return super.onKill(npc, killer, isSummon);
 		}
 		
-		if (CURRENT_CLAN_ID.getOrDefault(killer.getClanId(), 0) == 0)
+		if (!CURRENT_CLAN_ID.containsKey(killer.getClanId()))
 		{
 			return super.onKill(npc, killer, isSummon);
 		}
