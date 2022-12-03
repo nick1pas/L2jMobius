@@ -128,7 +128,7 @@ public class ClanStrongholdDevice extends AbstractNpcAI
 			return super.onFirstTalk(npc, player);
 		}
 		
-		return npc.getId() + (CURRENT_CLAN_ID.containsKey(npc.getScriptValue()) ? "C" : "") + ".htm";
+		return npc.getId() + (CURRENT_CLAN_ID.containsKey(npc.getScriptValue()) ? "-01" : "") + ".htm";
 	}
 	
 	@Override
