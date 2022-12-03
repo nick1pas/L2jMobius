@@ -16,8 +16,8 @@
  */
 package ai.others.ClanStrongholdDevice;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.model.Location;
@@ -58,9 +58,9 @@ public class ClanStrongholdDevice extends AbstractNpcAI
 	// Skill
 	private static final SkillHolder CLAN_STRONGHOLD_EFFECT = new SkillHolder(48078, 1);
 	// Misc
-	private static final Map<Integer, Integer> CURRENT_CLAN_ID = new HashMap<>(); // Clan id key - NPC object id value (can be taken from npc.getScriptValue)
-	private static final Map<Integer, Long> LAST_ATTACK = new HashMap<>(); // NPC object id key - Time value
-	private static final Map<Integer, Location> DEVICE_LOCATION = new HashMap<>();
+	private static final Map<Integer, Integer> CURRENT_CLAN_ID = new ConcurrentHashMap<>(); // Clan id key - NPC object id value (can be taken from npc.getScriptValue)
+	private static final Map<Integer, Long> LAST_ATTACK = new ConcurrentHashMap<>(); // NPC object id key - Time value
+	private static final Map<Integer, Location> DEVICE_LOCATION = new ConcurrentHashMap<>();
 	
 	private ClanStrongholdDevice()
 	{
