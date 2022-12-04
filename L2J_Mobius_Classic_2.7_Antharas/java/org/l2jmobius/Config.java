@@ -463,6 +463,8 @@ public class Config
 	public static boolean LOG_AUTO_ANNOUNCEMENTS;
 	public static boolean LOG_ITEMS;
 	public static boolean LOG_ITEMS_SMALL_LOG;
+	public static boolean LOG_ITEMS_IDS_ONLY;
+	public static Set<Integer> LOG_ITEMS_IDS_LIST;
 	public static boolean LOG_ITEM_ENCHANTS;
 	public static boolean LOG_SKILL_ENCHANTS;
 	public static boolean GMAUDIT;
@@ -1944,6 +1946,13 @@ public class Config
 			LOG_AUTO_ANNOUNCEMENTS = generalConfig.getBoolean("LogAutoAnnouncements", false);
 			LOG_ITEMS = generalConfig.getBoolean("LogItems", false);
 			LOG_ITEMS_SMALL_LOG = generalConfig.getBoolean("LogItemsSmallLog", false);
+			LOG_ITEMS_IDS_ONLY = generalConfig.getBoolean("LogItemsIdsOnly", false);
+			final String[] splitItemIds = generalConfig.getString("LogItemsIdsList", "0").split(",");
+			LOG_ITEMS_IDS_LIST = new HashSet<>(splitItemIds.length);
+			for (String id : splitItemIds)
+			{
+				LOG_ITEMS_IDS_LIST.add(Integer.parseInt(id));
+			}
 			LOG_ITEM_ENCHANTS = generalConfig.getBoolean("LogItemEnchants", false);
 			LOG_SKILL_ENCHANTS = generalConfig.getBoolean("LogSkillEnchants", false);
 			GMAUDIT = generalConfig.getBoolean("GMAudit", false);
@@ -2243,7 +2252,7 @@ public class Config
 					final String[] itemSplit = item.split(",");
 					if (itemSplit.length != 2)
 					{
-						LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> RateDropItemsById \"", item, "\""));
+						LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> DropAmountMultiplierByItemId \"", item, "\""));
 					}
 					else
 					{
@@ -2255,7 +2264,7 @@ public class Config
 						{
 							if (!item.isEmpty())
 							{
-								LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> RateDropItemsById \"", item, "\""));
+								LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> DropAmountMultiplierByItemId \"", item, "\""));
 							}
 						}
 					}
@@ -2270,7 +2279,7 @@ public class Config
 					final String[] itemSplit = item.split(",");
 					if (itemSplit.length != 2)
 					{
-						LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> RateDropItemsById \"", item, "\""));
+						LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> DropChanceMultiplierByItemId \"", item, "\""));
 					}
 					else
 					{
@@ -2282,7 +2291,7 @@ public class Config
 						{
 							if (!item.isEmpty())
 							{
-								LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> RateDropItemsById \"", item, "\""));
+								LOGGER.warning(StringUtil.concat("Config.load(): invalid config property -> DropChanceMultiplierByItemId \"", item, "\""));
 							}
 						}
 					}
@@ -3423,7 +3432,7 @@ public class Config
 			DISABLE_REWARDS_IN_INSTANCES = pvpRewardItemConfig.getBoolean("DisableRewardsInInstances", true);
 			DISABLE_REWARDS_IN_PVP_ZONES = pvpRewardItemConfig.getBoolean("DisableRewardsInPvpZones", true);
 			
-			// Load PvpRewardItem config file (if exists)
+			// Load PvpTitle config file (if exists)
 			final PropertiesParser pvpTitleColorConfig = new PropertiesParser(CUSTOM_PVP_TITLE_CONFIG_FILE);
 			PVP_COLOR_SYSTEM_ENABLED = pvpTitleColorConfig.getBoolean("EnablePvPColorSystem", false);
 			PVP_AMOUNT1 = pvpTitleColorConfig.getInt("PvpAmount1", 500);
