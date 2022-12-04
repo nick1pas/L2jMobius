@@ -342,10 +342,16 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
+		<set name="reuse_delay" val="3600000" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="40460" level="1" /> <!-- MP Recovery Elixir -->
+		</skills>
 	</item>
 	<item id="98034" name="Tower of Insolence's Time Stone" additionalName="Sealed" type="EtcItem">
 		<!-- Prolongs your session zone's raid for 60 min. <Hunting zone> Tower of Insolence - World Hunting Zone -->
