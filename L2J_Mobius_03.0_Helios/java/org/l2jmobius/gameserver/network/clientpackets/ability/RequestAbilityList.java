@@ -48,5 +48,6 @@ public class RequestAbilityList implements ClientPacket
 		}
 		
 		player.sendPacket(new ExAcquireAPSkillList(player));
+		player.sendSkillList();
 	}
 }
