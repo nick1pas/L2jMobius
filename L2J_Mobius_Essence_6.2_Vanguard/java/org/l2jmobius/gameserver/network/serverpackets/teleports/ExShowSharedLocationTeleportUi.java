@@ -16,6 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.teleports;
 
+import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.model.holders.SharedTeleportHolder;
 import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
@@ -43,5 +44,6 @@ public class ExShowSharedLocationTeleportUi extends ServerPacket
 		writeInt(_teleport.getLocation().getX());
 		writeInt(_teleport.getLocation().getY());
 		writeInt(_teleport.getLocation().getZ());
+		writeLong(Config.TELEPORT_SHARE_LOCATION_COST);
 	}
 }
