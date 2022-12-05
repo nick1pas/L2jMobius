@@ -134,7 +134,7 @@ public class SystemMessage extends ServerPacket
 		{
 			throw new NullPointerException();
 		}
-		_smId = SystemMessageId.getSystemMessageId(SystemMessageId.S1_2.getId());
+		_smId = SystemMessageId.getSystemMessageId(SystemMessageId.S1_3.getId());
 		_params = new SMParam[1];
 		addString(text);
 	}

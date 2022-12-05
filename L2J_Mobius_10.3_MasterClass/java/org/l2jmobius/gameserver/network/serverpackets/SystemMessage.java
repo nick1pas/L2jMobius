@@ -26,8 +26,8 @@ import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.PacketLogger;
+import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.SystemMessageId.SMLocalisation;
 
@@ -133,7 +133,7 @@ public class SystemMessage extends ServerPacket
 		{
 			throw new NullPointerException();
 		}
-		_smId = SystemMessageId.getSystemMessageId(SystemMessageId.S1_2.getId());
+		_smId = SystemMessageId.getSystemMessageId(SystemMessageId.S1_3.getId());
 		_params = new SMParam[1];
 		addString(text);
 	}
