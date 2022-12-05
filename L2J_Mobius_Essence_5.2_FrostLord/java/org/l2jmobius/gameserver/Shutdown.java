@@ -457,7 +457,7 @@ public class Shutdown extends Thread
 		LOGGER.info("Clan System: Data saved(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
 		
 		RevengeHistoryManager.getInstance().storeMe();
-		LOGGER.info("Saved Revenge History(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
+		LOGGER.info("Revenge History Manager: Data saved(" + tc.getEstimatedTimeAndRestartCounter() + "ms).");
 		
 		// Save Cursed Weapons data before closing.
 		CursedWeaponsManager.getInstance().saveData();
