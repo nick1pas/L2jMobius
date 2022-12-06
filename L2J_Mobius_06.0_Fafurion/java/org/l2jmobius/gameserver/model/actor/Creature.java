@@ -503,6 +503,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		// Resend UserInfo to player.
 		if (isPlayer())
 		{
+			getStat().recalculateStats(true);
 			sendPacket(new UserInfo((Player) this));
 		}
 	}
