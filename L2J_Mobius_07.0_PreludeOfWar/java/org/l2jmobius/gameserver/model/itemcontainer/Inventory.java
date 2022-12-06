@@ -597,7 +597,7 @@ public abstract class Inventory extends ItemContainer
 						}
 						
 						// Active, non offensive, skills start with reuse on equip.
-						if (skill.isActive() && !skill.isBad() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
+						if (skill.isActive() && !skill.isBad() && !skill.isTransformation() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 						{
 							player.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
 							updateTimestamp = true;
@@ -653,7 +653,7 @@ public abstract class Inventory extends ItemContainer
 							}
 							
 							// Active, non offensive, skills start with reuse on equip.
-							if (!skill.isBad() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
+							if (!skill.isBad() && !skill.isTransformation() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 							{
 								player.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
 							}
@@ -716,7 +716,7 @@ public abstract class Inventory extends ItemContainer
 					}
 					
 					// Active, non offensive, skills start with reuse on equip.
-					if (skill.isActive() && !skill.isBad() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
+					if (skill.isActive() && !skill.isBad() && !skill.isTransformation() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 					{
 						player.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
 						updateTimestamp = true;
@@ -838,7 +838,7 @@ public abstract class Inventory extends ItemContainer
 							}
 							
 							// Active, non offensive, skills start with reuse on equip.
-							if (!itemSkill.isBad() && (Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
+							if (!itemSkill.isBad() && !itemSkill.isTransformation() && (Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 							{
 								player.addTimeStamp(itemSkill, Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE);
 							}
