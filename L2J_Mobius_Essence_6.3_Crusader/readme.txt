@@ -3,10 +3,10 @@ L2J-Mobius Crusader
 JDK: https://www.mediafire.com/file/kb2nfx54wojys4f/bellsoft-jdk17.0.2%252B9-windows-amd64.msi
 XAMPP: https://www.mediafire.com/file/hkehxpyjn81ybsw/xampp-windows-x64-8.0.11-2-VS16-installer.exe
 Eclipse: https://www.mediafire.com/file/j208qw3s7zwx7c7/eclipse-java-2021-12-R-win32-x86_64.zip
-Geodata: https://www.mediafire.com/file/qb3nipqnl2pbxul/L2J_Mobius_Essence_6.3_Crusader_Geodata.zip
+Geodata: https://www.mediafire.com/file/lffe5hivlsmqpyo/L2J_Mobius_Essence_6.3_Crusader_Geodata.zip
 
-Client (password L2jMobius): https://drive.google.com/u/0/uc?id=19c8jtkqB1kzF4AZoQ4DSWID6XTHnCe_2&export=download
-System: https://mega.nz/file/N4FQjD6K#fMs0AbXuqAbD1Lb97KDdMKlY9_7d7WztQzdGYEnZ3e4
+Client (password L2jMobius): https://drive.google.com/u/0/uc?id=1TA8ACC8wHU6fv2BxzeaUJigs-WviQqt5&export=download
+System: https://mega.nz/file/Q4F3VYSI#HjKXG0ROYFDBI90-CzRWg2jbAnpSi6QNnekUwxqSu_k
 
 All provided download links are for personal use. Redistribution of these links is bannable.
 
