@@ -2440,43 +2440,52 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="437" toLevel="3" name="Song of Silence">
+	<skill id="437" toLevel="4" name="Song of Silence">
 		<!-- <Silence Skill> Inflicts Silence on enemies. For $s1, blocks nearby enemies' P./ M. skills. -->
 		<icon>icon.skill0437</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
 			<value level="2">2</value>
 			<value level="3">3</value>
+			<value level="4">4</value>
 		</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
 		<abnormalType>SILENCE_ALL</abnormalType>
 		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
 		<activateRate>60</activateRate>
-		<affectLimit>10-10</affectLimit>
-		<affectRange>150</affectRange>
+		<affectLimit>5-12</affectLimit>
+		<affectRange>250</affectRange>
+		<effectRange>400</effectRange>
 		<basicProperty>MAGIC</basicProperty>
 		<coolTime>500</coolTime>
 		<effectPoint>
-			<value level="1">-507</value>
-			<value level="2">-510</value>
-			<value level="3">-515</value>
+			<value level="1">-666</value>
+			<value level="2">-674</value>
+			<value level="3">-680</value>
+			<value level="4">-686</value>
 		</effectPoint>
-		<hitTime>2500</hitTime>
+		<hitTime>
+			<value level="1">2500</value>
+			<value level="2">2400</value>
+			<value level="3">2300</value>
+			<value level="4">2200</value>
+		</hitTime>
 		<isDebuff>true</isDebuff>
-		<lvlBonusRate>20</lvlBonusRate>
+		<lvlBonusRate>30</lvlBonusRate>
 		<magicLevel>
 			<value level="1">79</value>
 			<value level="2">81</value>
 			<value level="3">83</value>
+			<value level="4">85</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">50</value>
-			<value level="2">75</value>
-			<value level="3">90</value>
+			<value level="2">65</value>
+			<value level="3">80</value>
+			<value level="4">95</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<trait>SILENCE</trait>
 		<targetType>SELF</targetType>
 		<affectScope>POINT_BLANK</affectScope>
@@ -3886,9 +3895,9 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="477" toLevel="10" name="Soul Smash">
+	<skill id="477" toLevel="15" name="Soul Smash">
 		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
-		<icon>icon.skill0477</icon>
+		<icon>icon.skill0496</icon>
 		<castRange>40</castRange>
 		<coolTime>500</coolTime>
 		<effectPoint>
@@ -3902,6 +3911,11 @@
 			<value level="8">-420</value>
 			<value level="9">-445</value>
 			<value level="10">-470</value>
+			<value level="11">-475</value>
+			<value level="12">-480</value>
+			<value level="13">-485</value>
+			<value level="14">-490</value>
+			<value level="15">-495</value>
 		</effectPoint>
 		<effectRange>400</effectRange>
 		<hitTime>1300</hitTime>
@@ -3916,6 +3930,11 @@
 			<value level="8">80</value>
 			<value level="9">85</value>
 			<value level="10">90</value>
+			<value level="11">91</value>
+			<value level="12">92</value>
+			<value level="13">93</value>
+			<value level="14">94</value>
+			<value level="15">95</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">18</value>
@@ -3928,11 +3947,16 @@
 			<value level="8">63</value>
 			<value level="9">66</value>
 			<value level="10">70</value>
+			<value level="11">72</value>
+			<value level="12">74</value>
+			<value level="13">76</value>
+			<value level="14">78</value>
+			<value level="15">80</value>
 		</mpConsume>
 		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>0</isMagic>
 		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
@@ -3956,10 +3980,20 @@
 					<value level="8">4715</value>
 					<value level="9">5035</value>
 					<value level="10">5356</value>
+					<value level="11">5516</value>
+					<value level="12">5681</value>
+					<value level="13">5851</value>
+					<value level="14">6026</value>
+					<value level="15">6206</value>
 				</power>
 				<ignoreShieldDefence>true</ignoreShieldDefence>
 				<pDefMod>0.9</pDefMod>
-				<criticalChance>10</criticalChance>
+				<criticalChance>15</criticalChance>
+				<abnormalType>STUN</abnormalType>
+				<powerModifier>1.3</powerModifier>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>STUN,-10</dispel>
 			</effect>
 		</effects>
 	</skill>
@@ -4278,25 +4312,30 @@
 			</condition>
 		</conditions>
 	</skill>
-	<skill id="485" toLevel="5" name="Disarm">
+	<skill id="485" toLevel="11" name="Disarm">
 		<!-- <Unequip skill> Disarms an enemy character. -->
 		<icon>icon.skill0485</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>3</abnormalTime>
 		<abnormalType>DISARM</abnormalType>
-		<abnormalVisualEffect>DOT_BLEEDING</abnormalVisualEffect>
 		<activateRate>70</activateRate>
-		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<castRange>150</castRange>
 		<coolTime>500</coolTime>
 		<effectPoint>
-			<value level="1">-460</value>
-			<value level="2">-470</value>
-			<value level="3">-480</value>
-			<value level="4">-490</value>
-			<value level="5">-500</value>
+			<value level="1">-760</value>
+			<value level="2">-780</value>
+			<value level="3">-800</value>
+			<value level="4">-820</value>
+			<value level="5">-840</value>
+			<value level="6">-860</value>
+			<value level="7">-870</value>
+			<value level="8">-880</value>
+			<value level="9">-890</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
 		</effectPoint>
-		<effectRange>200</effectRange>
+		<effectRange>400</effectRange>
 		<hitTime>1000</hitTime>
 		<isDebuff>true</isDebuff>
 		<lvlBonusRate>20</lvlBonusRate>
@@ -4306,17 +4345,16 @@
 			<value level="3">80</value>
 			<value level="4">82</value>
 			<value level="5">84</value>
+			<value level="6">86</value>
+			<value level="7">87</value>
+			<value level="8">88</value>
+			<value level="9">89</value>
+			<value level="10">90</value>
+			<value level="11">91</value>
 		</magicLevel>
-		<mpConsume>
-			<value level="1">100</value>
-			<value level="2">110</value>
-			<value level="3">120</value>
-			<value level="4">130</value>
-			<value level="5">140</value>
-		</mpConsume>
+		<mpConsume>50</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>60000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<trait>DISARM</trait>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>

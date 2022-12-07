@@ -67,11 +67,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="47802" toLevel="8" name="Amazing Piercing">
+	<skill id="47802" toLevel="12" name="Amazing Piercing">
 		<!-- <<font color="FF8000">Spear skill</font>> Attacks the target with a spear. Deals physical damage with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_arc_impale</icon>
 		<castRange>150</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>0</isMagic>
 		<effectPoint>
 			<value level="1">-760</value>
 			<value level="2">-790</value>
@@ -81,8 +82,12 @@
 			<value level="6">-870</value>
 			<value level="7">-880</value>
 			<value level="8">-900</value>
+			<value level="9">-920</value>
+			<value level="10">-930</value>
+			<value level="11">-940</value>
+			<value level="12">-950</value>
 		</effectPoint>
-		<effectRange>1100</effectRange>
+		<effectRange>400</effectRange>
 		<hitTime>1200</hitTime>
 		<coolTime>500</coolTime>
 		<magicLevel>
@@ -94,6 +99,10 @@
 			<value level="6">87</value>
 			<value level="7">88</value>
 			<value level="8">90</value>
+			<value level="9">92</value>
+			<value level="10">93</value>
+			<value level="11">94</value>
+			<value level="12">95</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">60</value>
@@ -104,10 +113,13 @@
 			<value level="6">68</value>
 			<value level="7">69</value>
 			<value level="8">70</value>
+			<value level="9">74</value>
+			<value level="10">76</value>
+			<value level="11">78</value>
+			<value level="12">80</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
@@ -128,6 +140,10 @@
 					<value level="6">8703</value>
 					<value level="7">8834</value>
 					<value level="8">9099</value>
+					<value level="9">9652</value>
+					<value level="10">9941</value>
+					<value level="11">10239</value>
+					<value level="12">10546</value>
 				</power>
 				<ignoreShieldDefence>true</ignoreShieldDefence>
 				<criticalChance>15</criticalChance>
@@ -290,11 +306,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="47805" toLevel="10" name="Wild Scratch">
+	<skill id="47805" toLevel="15" name="Wild Scratch">
 		<!-- <<font color="FF8000">Beast skill</font>> The beast attacks the target with its claws. Deals physical damage with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.s_wild_scratch</icon>
 		<castRange>150</castRange>
 		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>0</isMagic>
 		<effectPoint>
 			<value level="1">-400</value>
 			<value level="2">-500</value>
@@ -306,8 +323,13 @@
 			<value level="8">-860</value>
 			<value level="9">-880</value>
 			<value level="10">-900</value>
+			<value level="11">-910</value>
+			<value level="12">-920</value>
+			<value level="13">-930</value>
+			<value level="14">-940</value>
+			<value level="15">-950</value>
 		</effectPoint>
-		<effectRange>1100</effectRange>
+		<effectRange>400</effectRange>
 		<hitTime>1200</hitTime>
 		<coolTime>500</coolTime>
 		<magicLevel>
@@ -321,6 +343,11 @@
 			<value level="8">86</value>
 			<value level="9">88</value>
 			<value level="10">90</value>
+			<value level="11">91</value>
+			<value level="12">92</value>
+			<value level="13">93</value>
+			<value level="14">94</value>
+			<value level="15">95</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">33</value>
@@ -333,10 +360,14 @@
 			<value level="8">67</value>
 			<value level="9">69</value>
 			<value level="10">70</value>
+			<value level="11">72</value>
+			<value level="12">74</value>
+			<value level="13">76</value>
+			<value level="14">78</value>
+			<value level="15">80</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<reuseDelay>10000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
@@ -352,9 +383,15 @@
 					<value level="8">9199</value>
 					<value level="9">9488</value>
 					<value level="10">9773</value>
+					<value level="11">10066</value>
+					<value level="12">10367</value>
+					<value level="13">10678</value>
+					<value level="14">10998</value>
+					<value level="15">11327</value>
 				</power>
-				<pDefMod>0.90</pDefMod>
+				<pDefMod>0.9</pDefMod>
 				<criticalChance>15</criticalChance>
+				<ignoreShieldDefence>true</ignoreShieldDefence>
 			</effect>
 		</effects>
 	</skill>

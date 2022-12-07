@@ -1709,12 +1709,13 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="130" toLevel="2" name="Thrill Fight">
+	<skill id="130" toLevel="3" name="Thrill Fight">
 		<!-- The effect lasts for $s1 Atk. Spd. $s2 Speed $s3 -->
 		<icon>icon.skill0130</icon>
 		<abnormalLevel>
 			<value level="1">1</value>
 			<value level="2">2</value>
+			<value level="3">3</value>
 		</abnormalLevel>
 		<abnormalTime>1200</abnormalTime>
 		<abnormalType>THRILL_FIGHT</abnormalType>
@@ -1723,15 +1724,15 @@
 		<magicLevel>
 			<value level="1">46</value>
 			<value level="2">55</value>
+			<value level="3">76</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">21</value>
 			<value level="2">25</value>
+			<value level="3">40</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>5000</reuseDelay>
-		<basicProperty>NONE</basicProperty>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
@@ -1739,6 +1740,7 @@
 				<amount>
 					<value level="1">-15</value>
 					<value level="2">-10</value>
+					<value level="3">0</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -1746,6 +1748,7 @@
 				<amount>
 					<value level="1">5</value>
 					<value level="2">10</value>
+					<value level="3">10</value>
 				</amount>
 				<mode>PER</mode>
 			</effect>
@@ -2879,26 +2882,28 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="181" toLevel="2" name="Revival">
+	<skill id="181" toLevel="3" name="Revival">
 		<!-- Recovers 100% of HP to the character. Can be used only if HP is $s1 or lower. -->
-		<icon>icon.skill0181</icon>
+		<icon>icon.skill30511</icon>
 		<effectPoint>
 			<value level="1">562</value>
 			<value level="2">565</value>
+			<value level="3">565</value>
 		</effectPoint>
 		<hitTime>1500</hitTime>
 		<hitCancelTime>0.5</hitCancelTime>
 		<magicLevel>
 			<value level="1">55</value>
 			<value level="2">79</value>
+			<value level="3">85</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">25</value>
 			<value level="2">65</value>
+			<value level="3">90</value>
 		</mpConsume>
 		<operateType>A1</operateType>
 		<reuseDelay>900000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
@@ -2906,6 +2911,7 @@
 				<amount>
 					<value level="1">10</value>
 					<value level="2">20</value>
+					<value level="3">30</value>
 				</amount>
 				<percentType>LESS</percentType>
 				<affectType>CASTER</affectType>

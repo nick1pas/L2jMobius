@@ -1285,12 +1285,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1624" toLevel="4" name="Indestructible Sound">
+	<skill id="1624" toLevel="7" name="Indestructible Sound">
 		<!-- <Imprisonment skill> Attacks the enemy with $s1 power. For $s2 inflicts Imprisonment. Once the Imprisonment effect disappears, P. Def. $s3 for $s2 Critical. -->
 		<icon>icon.skill1624</icon>
 		<castRange>600</castRange>
-		<chargeConsume>5</chargeConsume>
 		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>0</isMagic>
 		<coolTime>500</coolTime>
 		<hitTime>2500</hitTime>
 		<effectPoint>
@@ -1298,23 +1298,31 @@
 			<value level="2">-420</value>
 			<value level="3">-430</value>
 			<value level="4">-440</value>
+			<value level="5">-450</value>
+			<value level="6">-460</value>
+			<value level="7">-470</value>
 		</effectPoint>
-		<effectRange>900</effectRange>
+		<effectRange>1200</effectRange>
 		<magicLevel>
 			<value level="1">78</value>
 			<value level="2">80</value>
 			<value level="3">82</value>
 			<value level="4">84</value>
+			<value level="5">86</value>
+			<value level="6">88</value>
+			<value level="7">90</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">61</value>
 			<value level="2">63</value>
 			<value level="3">64</value>
 			<value level="4">66</value>
+			<value level="5">67</value>
+			<value level="6">68</value>
+			<value level="7">69</value>
 		</mpConsume>
 		<operateType>A1</operateType>
-		<reuseDelay>120000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
+		<reuseDelay>60000</reuseDelay>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
@@ -1323,19 +1331,19 @@
 					<item>DUAL</item>
 				</weaponType>
 			</condition>
-			<condition name="EnergySaved">
-				<amount>5</amount>
-			</condition>
 		</conditions>
 		<effects>
-			<effect name="EnergyAttack">
+			<effect name="PhysicalAttack">
 				<power>
 					<value level="1">1091</value>
 					<value level="2">1183</value>
 					<value level="3">1278</value>
 					<value level="4">1376</value>
+					<value level="5">1477</value>
+					<value level="6">1581</value>
+					<value level="7">1688</value>
 				</power>
-				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
 			</effect>
 			<effect name="CallSkill">
 				<skillId>45500</skillId> <!-- Indestructible Sound -->
@@ -1344,6 +1352,9 @@
 					<value level="2">2</value>
 					<value level="3">3</value>
 					<value level="4">4</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
 				</skillLevel>
 			</effect>
 		</effects>

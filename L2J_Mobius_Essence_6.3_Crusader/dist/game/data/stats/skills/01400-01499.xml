@@ -2562,7 +2562,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1446" toLevel="5" name="Shadow Bind">
+	<skill id="1446" toLevel="11" name="Shadow Bind">
 		<!-- <Hold Skill> The effect lasts for $s1 Holds the enemy. -->
 		<icon>icon.skill1446</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -2571,15 +2571,21 @@
 		<abnormalVisualEffect>ROOT</abnormalVisualEffect>
 		<activateRate>80</activateRate>
 		<basicProperty>MAGIC</basicProperty>
-		<castRange>600</castRange>
+		<castRange>700</castRange>
 		<effectPoint>
-			<value level="1">-460</value>
-			<value level="2">-470</value>
-			<value level="3">-480</value>
-			<value level="4">-490</value>
-			<value level="5">-500</value>
+			<value level="1">-760</value>
+			<value level="2">-780</value>
+			<value level="3">-800</value>
+			<value level="4">-820</value>
+			<value level="5">-840</value>
+			<value level="6">-860</value>
+			<value level="7">-870</value>
+			<value level="8">-880</value>
+			<value level="9">-890</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
 		</effectPoint>
-		<effectRange>900</effectRange>
+		<effectRange>1200</effectRange>
 		<hitTime>1500</hitTime>
 		<isDebuff>true</isDebuff>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -2590,6 +2596,12 @@
 			<value level="3">80</value>
 			<value level="4">82</value>
 			<value level="5">84</value>
+			<value level="6">86</value>
+			<value level="7">87</value>
+			<value level="8">88</value>
+			<value level="9">89</value>
+			<value level="10">90</value>
+			<value level="11">91</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">30</value>
@@ -2597,10 +2609,15 @@
 			<value level="3">40</value>
 			<value level="4">45</value>
 			<value level="5">50</value>
+			<value level="6">55</value>
+			<value level="7">60</value>
+			<value level="8">65</value>
+			<value level="9">70</value>
+			<value level="10">75</value>
+			<value level="11">85</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>10000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<trait>ANOMALY</trait>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>
@@ -2611,7 +2628,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="1447" toLevel="5" name="Voice Bind">
+	<skill id="1447" toLevel="11" name="Voice Bind">
 		<!-- <Silence Skill> The effect lasts for $s1 Blocks enemy's magical/ physical skill usage. -->
 		<icon>icon.skill1447</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -2620,15 +2637,21 @@
 		<abnormalVisualEffect>SILENCE</abnormalVisualEffect>
 		<activateRate>80</activateRate>
 		<basicProperty>MAGIC</basicProperty>
-		<castRange>600</castRange>
+		<castRange>700</castRange>
 		<effectPoint>
-			<value level="1">-460</value>
-			<value level="2">-470</value>
-			<value level="3">-480</value>
-			<value level="4">-490</value>
-			<value level="5">-500</value>
+			<value level="1">-760</value>
+			<value level="2">-780</value>
+			<value level="3">-800</value>
+			<value level="4">-820</value>
+			<value level="5">-840</value>
+			<value level="6">-860</value>
+			<value level="7">-870</value>
+			<value level="8">-880</value>
+			<value level="9">-890</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
 		</effectPoint>
-		<effectRange>900</effectRange>
+		<effectRange>1200</effectRange>
 		<hitTime>1500</hitTime>
 		<isDebuff>true</isDebuff>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
@@ -2639,6 +2662,12 @@
 			<value level="3">80</value>
 			<value level="4">82</value>
 			<value level="5">84</value>
+			<value level="6">86</value>
+			<value level="7">87</value>
+			<value level="8">88</value>
+			<value level="9">89</value>
+			<value level="10">90</value>
+			<value level="11">91</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">30</value>
@@ -2646,15 +2675,21 @@
 			<value level="3">40</value>
 			<value level="4">45</value>
 			<value level="5">50</value>
+			<value level="6">55</value>
+			<value level="7">60</value>
+			<value level="8">65</value>
+			<value level="9">70</value>
+			<value level="10">75</value>
+			<value level="11">85</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>20000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<trait>SILENCE</trait>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
 			<effect name="Mute" />
+			<effect name="PhysicalMute" />
 		</effects>
 	</skill>
 	<skill id="1448" toLevel="1" name="Blink">

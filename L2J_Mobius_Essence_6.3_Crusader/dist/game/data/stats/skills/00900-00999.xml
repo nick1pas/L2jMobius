@@ -1242,9 +1242,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="921" toLevel="15" name="Spike Thrust">
+	<skill id="921" toLevel="20" name="Spike Thrust">
 		<!-- Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0921</icon>
+		<castRange>80</castRange>
+		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>0</isMagic>
 		<effectPoint>
 			<value level="1">-400</value>
 			<value level="2">-405</value>
@@ -1261,9 +1264,16 @@
 			<value level="13">-460</value>
 			<value level="14">-465</value>
 			<value level="15">-470</value>
+			<value level="16">-476</value>
+			<value level="17">-480</value>
+			<value level="18">-485</value>
+			<value level="19">-490</value>
+			<value level="20">-495</value>
 		</effectPoint>
+		<coolTime>500</coolTime>
 		<effectRange>400</effectRange>
-		<hitTime>1500</hitTime>
+		<hitTime>1000</hitTime>
+		<hitCancelTime>0.5</hitCancelTime>
 		<magicLevel>
 			<value level="1">76</value>
 			<value level="2">77</value>
@@ -1280,6 +1290,11 @@
 			<value level="13">88</value>
 			<value level="14">89</value>
 			<value level="15">90</value>
+			<value level="16">91</value>
+			<value level="17">92</value>
+			<value level="18">93</value>
+			<value level="19">94</value>
+			<value level="20">95</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">60</value>
@@ -1297,11 +1312,14 @@
 			<value level="13">69</value>
 			<value level="14">69</value>
 			<value level="15">70</value>
+			<value level="16">72</value>
+			<value level="17">74</value>
+			<value level="18">76</value>
+			<value level="19">78</value>
+			<value level="20">80</value>
 		</mpConsume>
-		<nextAction>ATTACK</nextAction>
 		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
@@ -1329,11 +1347,15 @@
 					<value level="13">5749</value>
 					<value level="14">5821</value>
 					<value level="15">5891</value>
+					<value level="16">6067</value>
+					<value level="17">6249</value>
+					<value level="18">6436</value>
+					<value level="19">6629</value>
+					<value level="20">6827</value>
 				</power>
 				<pDefMod>0.9</pDefMod>
 				<ignoreShieldDefence>true</ignoreShieldDefence>
-				<criticalChance>30</criticalChance>
-				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
 			</effect>
 		</effects>
 	</skill>

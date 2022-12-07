@@ -1223,6 +1223,7 @@
 																	</xs:sequence>
 																</xs:complexType>
 															</xs:element>
+															<xs:element name="powerModifier" type="xs:decimal" />
 															<xs:element name="npcCount" type="xs:unsignedByte" />
 															<xs:element name="magicTypes" type="xs:string" />
 															<xs:element name="exp">
@@ -2037,6 +2038,7 @@
 														<xs:element minOccurs="0" name="mode" type="xs:string" />
 														<xs:element minOccurs="0" name="skillId" type="xs:unsignedShort" />
 														<xs:element minOccurs="0" name="skillLevel" type="xs:unsignedByte" />
+														<xs:element minOccurs="0" name="skillLevelScaleTo" type="xs:unsignedByte" />
 														<xs:element minOccurs="0" name="distance" type="xs:unsignedByte" />
 														<xs:element minOccurs="0" name="speed" type="xs:unsignedShort" />
 														<xs:element minOccurs="0" name="knockDown" type="xs:boolean" />

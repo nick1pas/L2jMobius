@@ -2948,11 +2948,12 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="777" toLevel="15" name="Demolition Impact">
+	<skill id="777" toLevel="20" name="Demolition Impact">
 		<!-- Unleashes a destructive shockwave. Attacks the target with $s1 power. Ignores Shield Defense. Ignores $s2 of the target's defense. Critical. -->
 		<icon>icon.skill0777</icon>
+		<basicProperty>PHYSICAL</basicProperty>
+		<isMagic>0</isMagic>
 		<castRange>40</castRange>
-		<affectRange>500</affectRange>
 		<hitTime>1000</hitTime>
 		<coolTime>500</coolTime>
 		<effectPoint>
@@ -2971,8 +2972,13 @@
 			<value level="13">-460</value>
 			<value level="14">-465</value>
 			<value level="15">-470</value>
+			<value level="16">-475</value>
+			<value level="17">-480</value>
+			<value level="18">-485</value>
+			<value level="19">-490</value>
+			<value level="20">-495</value>
 		</effectPoint>
-		<effectRange>200</effectRange>
+		<effectRange>400</effectRange>
 		<magicLevel>
 			<value level="1">76</value>
 			<value level="2">77</value>
@@ -2989,6 +2995,11 @@
 			<value level="13">88</value>
 			<value level="14">89</value>
 			<value level="15">90</value>
+			<value level="16">91</value>
+			<value level="17">92</value>
+			<value level="18">93</value>
+			<value level="19">94</value>
+			<value level="20">95</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">60</value>
@@ -3006,13 +3017,16 @@
 			<value level="13">69</value>
 			<value level="14">69</value>
 			<value level="15">70</value>
+			<value level="16">72</value>
+			<value level="17">74</value>
+			<value level="18">76</value>
+			<value level="19">78</value>
+			<value level="20">80</value>
 		</mpConsume>
-		<operateType>A2</operateType>
+		<operateType>A1</operateType>
 		<reuseDelay>1000</reuseDelay>
-		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
-		<nextAction>ATTACK</nextAction>
 		<conditions>
 			<condition name="EquipWeapon">
 				<weaponType>
@@ -3039,10 +3053,14 @@
 					<value level="13">5749</value>
 					<value level="14">5821</value>
 					<value level="15">5891</value>
+					<value level="16">6067</value>
+					<value level="17">6249</value>
+					<value level="18">6436</value>
+					<value level="19">6629</value>
+					<value level="20">6827</value>
 				</power>
 				<ignoreShieldDefence>true</ignoreShieldDefence>
 				<pDefMod>0.9</pDefMod>
-				<overHit>true</overHit>
 				<criticalChance>15</criticalChance>
 			</effect>
 		</effects>
@@ -3489,7 +3507,7 @@
 			</effect>
 		</effects>
 	</skill>
-	<skill id="791" toLevel="5" name="Lightning">
+	<skill id="791" toLevel="11" name="Lightning">
 		<!-- <Paralyzing skill> The effect lasts for $s1 Inflicts Paralysis (lightning). -->
 		<icon>icon.skill0791</icon>
 		<abnormalLevel>1</abnormalLevel>
@@ -3497,17 +3515,24 @@
 		<abnormalType>PARALYZE</abnormalType>
 		<abnormalVisualEffect>PARALYZE</abnormalVisualEffect>
 		<activateRate>50</activateRate>
-		<castRange>600</castRange>
+		<castRange>700</castRange>
+		<effectRange>1200</effectRange>
 		<basicProperty>MAGIC</basicProperty>
-		<coolTime>720</coolTime>
+		<coolTime>500</coolTime>
 		<effectPoint>
-			<value level="1">-460</value>
-			<value level="2">-470</value>
-			<value level="3">-480</value>
-			<value level="4">-490</value>
-			<value level="5">-500</value>
+			<value level="1">-760</value>
+			<value level="2">-780</value>
+			<value level="3">-800</value>
+			<value level="4">-820</value>
+			<value level="5">-840</value>
+			<value level="6">-860</value>
+			<value level="7">-870</value>
+			<value level="8">-880</value>
+			<value level="9">-890</value>
+			<value level="10">-900</value>
+			<value level="11">-910</value>
 		</effectPoint>
-		<hitTime>1080</hitTime>
+		<hitTime>1000</hitTime>
 		<isDebuff>true</isDebuff>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<lvlBonusRate>20</lvlBonusRate>
@@ -3517,6 +3542,12 @@
 			<value level="3">80</value>
 			<value level="4">82</value>
 			<value level="5">84</value>
+			<value level="6">86</value>
+			<value level="7">87</value>
+			<value level="8">88</value>
+			<value level="9">89</value>
+			<value level="10">90</value>
+			<value level="11">91</value>
 		</magicLevel>
 		<mpConsume>
 			<value level="1">30</value>
@@ -3524,11 +3555,15 @@
 			<value level="3">40</value>
 			<value level="4">45</value>
 			<value level="5">50</value>
+			<value level="6">55</value>
+			<value level="7">60</value>
+			<value level="8">65</value>
+			<value level="9">70</value>
+			<value level="10">75</value>
+			<value level="11">85</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<reuseDelay>20000</reuseDelay>
-		<soulMaxConsumeCount>5</soulMaxConsumeCount>
-		<magicCriticalRate>5</magicCriticalRate>
 		<trait>ANOMALY</trait>
 		<targetType>ENEMY_ONLY</targetType>
 		<affectScope>SINGLE</affectScope>
