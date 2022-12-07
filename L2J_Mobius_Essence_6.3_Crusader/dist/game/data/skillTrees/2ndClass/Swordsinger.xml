@@ -54,7 +54,30 @@
 			<item id="94319,95524" count="1" /> <!-- Spellbook: Sword Symphony -->
 		</skill>
 		<skill skillName="Slowdown" skillId="47284" skillLevel="2" getLevel="40" levelUpSp="120000" />
-		
+		<skill skillName="Additional Strain" skillId="87133" skillLevel="1" getLevel="40" levelUpSp="120000">
+			<removeSkill id="47284" onlyReplaceByLearn="true" /> <!-- Slowdown -->
+		</skill>
+		<skill skillName="Bard's Weapon Mastery" skillId="87130" skillLevel="1" getLevel="40" levelUpSp="120000">
+			<removeSkill id="77" onlyReplaceByLearn="true" /> <!-- Ability to Attack -->
+			<removeSkill id="100" onlyReplaceByLearn="true" /> <!-- Shock Mastery -->
+			<removeSkill id="141" onlyReplaceByLearn="true" /> <!-- Weapon Mastery -->
+			<removeSkill id="153" onlyReplaceByLearn="true" /> <!-- Shield Mastery -->
+			<removeSkill id="196" onlyReplaceByLearn="true" /> <!-- Dignity -->
+			<removeSkill id="217" onlyReplaceByLearn="true" /> <!-- Sword / Blunt Weapon Mastery -->
+		</skill>
+		<skill skillName="Bard's Armor Mastery" skillId="87131" skillLevel="1" getLevel="40" levelUpSp="120000">
+			<removeSkill id="91" onlyReplaceByLearn="true" /> <!-- Ability to Protect -->
+			<removeSkill id="112" onlyReplaceByLearn="true" /> <!-- Deflect Arrow -->
+			<removeSkill id="142" onlyReplaceByLearn="true" /> <!-- Armor Mastery -->
+			<removeSkill id="147" onlyReplaceByLearn="true" /> <!-- Magic Resistance -->
+			<removeSkill id="197" onlyReplaceByLearn="true" /> <!-- Honor -->
+			<removeSkill id="232" onlyReplaceByLearn="true" /> <!-- Heavy Armor Mastery -->
+		</skill>
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="1" getLevel="40" levelUpSp="120000">
+			<removeSkill id="70" onlyReplaceByLearn="true" /> <!-- Emergency Rescue -->
+			<removeSkill id="191" onlyReplaceByLearn="true" /> <!-- Focus Mind -->
+		</skill>
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="11" getLevel="41" levelUpSp="140000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="18" getLevel="41" levelUpSp="140000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="12" getLevel="41" levelUpSp="140000" />
@@ -72,7 +95,8 @@
 		<skill skillName="Focus Mind" skillId="191" skillLevel="2" getLevel="43" levelUpSp="140000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="14" getLevel="43" levelUpSp="140000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="21" getLevel="43" levelUpSp="140000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="2" getLevel="43" levelUpSp="140000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="14" getLevel="44" levelUpSp="200000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="21" getLevel="44" levelUpSp="200000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="15" getLevel="44" levelUpSp="200000" />
@@ -96,7 +120,8 @@
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="24" getLevel="47" levelUpSp="280000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="18" getLevel="47" levelUpSp="280000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="25" getLevel="47" levelUpSp="280000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="3" getLevel="47" levelUpSp="280000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="18" getLevel="48" levelUpSp="280000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="25" getLevel="48" levelUpSp="280000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="19" getLevel="48" levelUpSp="280000" />
@@ -126,7 +151,9 @@
 			<item id="57" count="3000000" /> <!-- Adena -->
 		</skill>
 		<skill skillName="Guard Crush" skillId="45187" skillLevel="2" getLevel="50" levelUpSp="410000" />
-		
+		<skill skillName="Bard's Weapon Mastery" skillId="87130" skillLevel="2" getLevel="50" levelUpSp="410000" />
+		<skill skillName="Bard's Armor Mastery" skillId="87131" skillLevel="2" getLevel="50" levelUpSp="410000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="21" getLevel="51" levelUpSp="410000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="28" getLevel="51" levelUpSp="410000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="22" getLevel="51" levelUpSp="410000" />
@@ -146,7 +173,8 @@
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="30" getLevel="53" levelUpSp="570000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="24" getLevel="53" levelUpSp="570000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="31" getLevel="53" levelUpSp="570000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="4" getLevel="53" levelUpSp="570000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="24" getLevel="54" levelUpSp="570000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="31" getLevel="54" levelUpSp="570000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="25" getLevel="54" levelUpSp="570000" />
@@ -172,7 +200,8 @@
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="34" getLevel="57" levelUpSp="780000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="28" getLevel="57" levelUpSp="780000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="35" getLevel="57" levelUpSp="780000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="5" getLevel="57" levelUpSp="780000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="28" getLevel="58" levelUpSp="780000" />
 		<skill skillName="Majesty" skillId="82" skillLevel="3" getLevel="58" levelUpSp="780000" />
 		<skill skillName="Entangle" skillId="102" skillLevel="8" getLevel="58" levelUpSp="780000" />
@@ -198,7 +227,10 @@
 		<skill skillName="Dark Assassin Transformation" skillId="1801" skillLevel="1" getLevel="60" autoGet="true" />
 		<skill skillName="Guard Crush" skillId="45187" skillLevel="3" getLevel="60" levelUpSp="1100000" />
 		<skill skillName="Slowdown" skillId="47284" skillLevel="3" getLevel="60" levelUpSp="1100000" />
-		
+		<skill skillName="Bard's Armor Mastery" skillId="87131" skillLevel="3" getLevel="60" levelUpSp="1100000" />
+		<skill skillName="Bard's Weapon Mastery" skillId="87130" skillLevel="3" getLevel="60" levelUpSp="1100000" />
+		<skill skillName="Additional Strain" skillId="87133" skillLevel="2" getLevel="60" levelUpSp="1100000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="31" getLevel="61" levelUpSp="1100000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="38" getLevel="61" levelUpSp="1100000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="32" getLevel="61" levelUpSp="1100000" />
@@ -219,7 +251,8 @@
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="40" getLevel="63" levelUpSp="1400000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="34" getLevel="63" levelUpSp="1400000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="41" getLevel="63" levelUpSp="1400000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="6" getLevel="63" levelUpSp="1400000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="34" getLevel="64" levelUpSp="1800000" />
 		<skill skillName="Symphony" skillId="98" skillLevel="3" getLevel="64" levelUpSp="1800000" />
 		<skill skillName="Entangle" skillId="102" skillLevel="11" getLevel="64" levelUpSp="1800000" />
@@ -235,7 +268,9 @@
 		<skill skillName="Honor" skillId="197" skillLevel="2" getLevel="65" levelUpSp="1800000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="36" getLevel="65" levelUpSp="1800000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="43" getLevel="65" levelUpSp="1800000" />
-		
+		<skill skillName="Bard's Weapon Mastery" skillId="87130" skillLevel="4" getLevel="65" levelUpSp="1800000" />
+		<skill skillName="Bard's Armor Mastery" skillId="87131" skillLevel="4" getLevel="65" levelUpSp="1800000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="36" getLevel="66" levelUpSp="2000000" />
 		<skill skillName="Entangle" skillId="102" skillLevel="12" getLevel="66" levelUpSp="2000000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="43" getLevel="66" levelUpSp="2000000" />
@@ -247,7 +282,8 @@
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="44" getLevel="67" levelUpSp="2000000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="38" getLevel="67" levelUpSp="2000000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="45" getLevel="67" levelUpSp="2000000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="7" getLevel="67" levelUpSp="2000000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="38" getLevel="68" levelUpSp="2700000" />
 		<skill skillName="Symphony" skillId="98" skillLevel="4" getLevel="68" levelUpSp="2700000" />
 		<skill skillName="Entangle" skillId="102" skillLevel="13" getLevel="68" levelUpSp="2700000" />
@@ -270,7 +306,9 @@
 		<skill skillName="Shackle" skillId="402" skillLevel="8" getLevel="70" levelUpSp="3400000" />
 		<skill skillName="White Assassin Transformation" skillId="1802" skillLevel="1" getLevel="70" autoGet="true" />
 		<skill skillName="Guard Crush" skillId="45187" skillLevel="4" getLevel="70" levelUpSp="3400000" />
-		
+		<skill skillName="Bard's Weapon Mastery" skillId="87130" skillLevel="5" getLevel="70" levelUpSp="3400000" />
+		<skill skillName="Bard's Armor Mastery" skillId="87131" skillLevel="5" getLevel="70" levelUpSp="3400000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="41" getLevel="71" levelUpSp="3400000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="48" getLevel="71" levelUpSp="3400000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="42" getLevel="71" levelUpSp="3400000" />
@@ -290,7 +328,8 @@
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="50" getLevel="73" levelUpSp="3800000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="217" skillLevel="44" getLevel="73" levelUpSp="3800000" />
 		<skill skillName="Heavy Armor Mastery" skillId="232" skillLevel="51" getLevel="73" levelUpSp="3800000" />
-		
+		<skill skillName="Bard's Recovery Mastery" skillId="87132" skillLevel="8" getLevel="73" levelUpSp="3800000" />
+
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="44" getLevel="74" levelUpSp="3800000" />
 		<skill skillName="Entangle" skillId="102" skillLevel="16" getLevel="74" levelUpSp="3800000" />
 		<skill skillName="Magic Resistance" skillId="147" skillLevel="51" getLevel="74" levelUpSp="3800000" />

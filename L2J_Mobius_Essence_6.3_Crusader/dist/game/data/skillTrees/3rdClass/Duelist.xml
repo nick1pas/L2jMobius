@@ -2,7 +2,6 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skillTrees.xsd">
 	<skillTree type="classSkillTree" classId="88" parentClassId="2">
 		<skill skillName="Rising Attack" skillId="1" skillLevel="41" getLevel="76" levelUpSp="4800000" />
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="36" getLevel="76" levelUpSp="4800000" />
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="38" getLevel="76" levelUpSp="4800000" />
 		<skill skillName="Sonic Storm" skillId="7" skillLevel="29" getLevel="76" levelUpSp="4800000" />
 		<skill skillName="Sonic Buster" skillId="9" skillLevel="35" getLevel="76" levelUpSp="4800000" />
@@ -78,9 +77,25 @@
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="1" getLevel="76" levelUpSp="0">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
-		
+		<skill skillName="Blade Wave" skillId="47928" skillLevel="1" getLevel="76" levelUpSp="4800000">
+			<item id="97319,97329" count="1" /> <!-- Spellbook: Blade Wave -->
+		</skill>
+		<skill skillName="Slashing Blades" skillId="47930" skillLevel="1" getLevel="76" levelUpSp="4800000">
+			<item id="97320,97330" count="1" /> <!-- Spellbook: Slashing Blades -->
+		</skill>
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="1" getLevel="76" levelUpSp="4800000">
+			<removeSkill id="6" onlyReplaceByLearn="true" /> <!-- Sonic Blaster -->
+			<item id="97321,97331" count="1" /> <!-- Spellbook: Blade Throw -->
+		</skill>
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="5" getLevel="76" levelUpSp="4800000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="5" getLevel="76" levelUpSp="4800000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="5" getLevel="76" levelUpSp="4800000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="5" getLevel="76" levelUpSp="4800000" />
+		<skill skillName="Challenger" skillId="47927" skillLevel="1" getLevel="76" levelUpSp="4800000">
+			<item id="97318,97328" count="1" /> <!-- Spellbook: Challenger -->
+		</skill>
+
 		<skill skillName="Rising Attack" skillId="1" skillLevel="42" getLevel="77" levelUpSp="4800000" />
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="37" getLevel="77" levelUpSp="4800000" />
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="39" getLevel="77" levelUpSp="4800000" />
 		<skill skillName="Sonic Storm" skillId="7" skillLevel="30" getLevel="77" levelUpSp="4800000" />
 		<skill skillName="Sonic Buster" skillId="9" skillLevel="36" getLevel="77" levelUpSp="4800000" />
@@ -96,7 +111,6 @@
 		</skill>
 		
 		<skill skillName="Rising Attack" skillId="1" skillLevel="43" getLevel="78" levelUpSp="11300000" />
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="38" getLevel="78" levelUpSp="11300000" />
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="40" getLevel="78" levelUpSp="11300000" />
 		<skill skillName="Sonic Storm" skillId="7" skillLevel="31" getLevel="78" levelUpSp="11300000" />
 		<skill skillName="Sonic Buster" skillId="9" skillLevel="37" getLevel="78" levelUpSp="11300000" />
@@ -115,9 +129,11 @@
 		<skill skillName="Indestructible Sound" skillId="1624" skillLevel="1" getLevel="78" levelUpSp="11300000">
 			<item id="90068" count="1" /> <!-- Scroll: Indestructible Sound -->
 		</skill>
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="6" getLevel="78" levelUpSp="11300000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="6" getLevel="78" levelUpSp="11300000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="6" getLevel="78" levelUpSp="11300000" />
 		
 		<skill skillName="Rising Attack" skillId="1" skillLevel="44" getLevel="79" levelUpSp="11300000" />
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="39" getLevel="79" levelUpSp="11300000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="49" getLevel="79" levelUpSp="11300000" />
 		<skill skillName="Fatal Strike" skillId="190" skillLevel="44" getLevel="79" levelUpSp="11300000" />
 		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="29" getLevel="79" levelUpSp="11300000" />
@@ -125,7 +141,6 @@
 		<skill skillName="Sonic Mastery" skillId="992" skillLevel="8" getLevel="79" levelUpSp="11300000" />
 		
 		<skill skillName="Rising Attack" skillId="1" skillLevel="45" getLevel="80" levelUpSp="11300000" />
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="40" getLevel="80" levelUpSp="11300000" />
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="41" getLevel="80" levelUpSp="11300000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="50" getLevel="80" levelUpSp="11300000" />
 		<skill skillName="War Cry" skillId="78" skillLevel="3" getLevel="80" levelUpSp="11300000" />
@@ -139,8 +154,8 @@
 		<skill skillName="Master of Combat" skillId="430" skillLevel="2" getLevel="80" levelUpSp="11300000">
 			<item id="57" count="500000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Maximum Sonic Focus" skillId="919" skillLevel="1" getLevel="80" levelUpSp="11300000">
-			<item id="90069" count="1" /> <!-- Scroll: Maximum Sonic Focus -->
+		<skill skillName="Furious Sword Spirit" skillId="919" skillLevel="1" getLevel="80" levelUpSp="11300000">
+			<item id="90069" count="1" /> <!-- Scroll: Furious Sword Spirit -->
 		</skill>
 		<skill skillName="Dual Weapon Defense" skillId="1605" skillLevel="4" getLevel="80" levelUpSp="11300000">
 			<item id="57" count="5000000" /> <!-- Adena -->
@@ -155,8 +170,14 @@
 		<skill skillName="White Guardian Transformation" skillId="54102" skillLevel="1" getLevel="80">
 			<item id="92401,95502" count="1" /> <!-- Spellbook - White Guardian -->
 		</skill>
-		
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="41" getLevel="81" levelUpSp="160000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="7" getLevel="80" levelUpSp="11300000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="7" getLevel="80" levelUpSp="11300000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="7" getLevel="80" levelUpSp="11300000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="6" getLevel="80" levelUpSp="11300000" />
+		<skill skillName="Sword Spirit" skillId="47933" skillLevel="2" getLevel="80" levelUpSp="11300000">
+			<item id="97322,97332" count="1" /> <!-- Spellbook: Sword Spirit Lv.2 -->
+		</skill>
+
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="42" getLevel="81" levelUpSp="160000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="51" getLevel="81" levelUpSp="160000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="42" getLevel="81" levelUpSp="160000000" />
@@ -170,7 +191,6 @@
 		<skill skillName="Rising Attack" skillId="1" skillLevel="46" getLevel="82" levelUpSp="170000000">
 			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="42" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="43" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="52" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="43" getLevel="82" levelUpSp="170000000" />
@@ -188,8 +208,11 @@
 		<skill skillName="Dragon Slayer Appearance" skillId="54231" skillLevel="1" getLevel="82" levelUpSp="0">
 			<item id="96300,96780" count="1" /> <!-- Spellbook: Dragon Slayer -->
 		</skill>
-		
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="43" getLevel="83" levelUpSp="240000000" />
+		<skill skillName="Slashing Blades" skillId="47930" skillLevel="2" getLevel="82" levelUpSp="170000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="8" getLevel="82" levelUpSp="170000000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="8" getLevel="82" levelUpSp="170000000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="8" getLevel="82" levelUpSp="170000000" />
+
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="44" getLevel="83" levelUpSp="240000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="53" getLevel="83" levelUpSp="240000000" />
 		<skill skillName="War Cry" skillId="78" skillLevel="4" getLevel="83" levelUpSp="240000000" />
@@ -203,7 +226,6 @@
 		<skill skillName="Rising Attack" skillId="1" skillLevel="47" getLevel="84" levelUpSp="240000000">
 			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="44" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Sonic Blaster" skillId="6" skillLevel="45" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="54" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="45" getLevel="84" levelUpSp="240000000" />
@@ -214,8 +236,11 @@
 		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="34" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Sonic Rage" skillId="345" skillLevel="5" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Indestructible Sound" skillId="1624" skillLevel="4" getLevel="84" levelUpSp="240000000" />
+		<skill skillName="Slashing Blades" skillId="47930" skillLevel="3" getLevel="84" levelUpSp="240000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="9" getLevel="84" levelUpSp="240000000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="9" getLevel="84" levelUpSp="240000000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="9" getLevel="84" levelUpSp="240000000" />
 
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="45" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="55" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="War Cry" skillId="78" skillLevel="5" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="46" getLevel="85" levelUpSp="840000000" />
@@ -230,14 +255,27 @@
 		<skill skillName="Detection" skillId="45190" skillLevel="2" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="2" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="3" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="4" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Blade Wave" skillId="47928" skillLevel="2" getLevel="85" levelUpSp="840000000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="7" getLevel="85" levelUpSp="840000000" />
 		
 		<skill skillName="Rising Attack" skillId="1" skillLevel="48" getLevel="86" levelUpSp="840000000">
 			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="46" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="56" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="47" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Fatal Strike" skillId="190" skillLevel="51" getLevel="86" levelUpSp="840000000" />
@@ -248,8 +286,15 @@
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="17" getLevel="86" levelUpSp="840000000">
 			<item id="57" count="7500000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Indestructible Sound" skillId="1624" skillLevel="5" getLevel="86" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Slashing Blades" skillId="47930" skillLevel="4" getLevel="86" levelUpSp="840000000" />
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="2" getLevel="86" levelUpSp="840000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="10" getLevel="86" levelUpSp="840000000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="10" getLevel="86" levelUpSp="840000000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="10" getLevel="86" levelUpSp="840000000" />
 
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="47" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="57" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="48" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Fatal Strike" skillId="190" skillLevel="52" getLevel="87" levelUpSp="840000000" />
@@ -257,11 +302,11 @@
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="61" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="257" skillLevel="56" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="37" getLevel="87" levelUpSp="840000000" />
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="3" getLevel="87" levelUpSp="840000000" />
 
 		<skill skillName="Rising Attack" skillId="1" skillLevel="49" getLevel="88" levelUpSp="840000000">
 			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="48" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="58" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="49" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Fatal Strike" skillId="190" skillLevel="53" getLevel="88" levelUpSp="840000000" />
@@ -272,11 +317,19 @@
 		<skill skillName="Master of Combat" skillId="430" skillLevel="3" getLevel="88" levelUpSp="840000000">
 			<item id="97104,97112" count="1" /> <!-- Spellbook: Master of Combat -->
 		</skill>
+		<skill skillName="Indestructible Sound" skillId="1624" skillLevel="6" getLevel="88" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Detection" skillId="45190" skillLevel="3" getLevel="88" levelUpSp="840000000">
 			<item id="57" count="30000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Blade Wave" skillId="47928" skillLevel="3" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Slashing Blades" skillId="47930" skillLevel="5" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="4" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="11" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="11" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="11" getLevel="88" levelUpSp="840000000" />
 		
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="49" getLevel="89" levelUpSp="840000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="59" getLevel="89" levelUpSp="840000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="50" getLevel="89" levelUpSp="840000000" />
 		<skill skillName="Fatal Strike" skillId="190" skillLevel="54" getLevel="89" levelUpSp="840000000" />
@@ -284,11 +337,14 @@
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="63" getLevel="89" levelUpSp="840000000" />
 		<skill skillName="Sword / Blunt Weapon Mastery" skillId="257" skillLevel="58" getLevel="89" levelUpSp="840000000" />
 		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="39" getLevel="89" levelUpSp="840000000" />
-		
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="5" getLevel="89" levelUpSp="840000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="12" getLevel="89" levelUpSp="840000000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="12" getLevel="89" levelUpSp="840000000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="12" getLevel="89" levelUpSp="840000000" />
+
 		<skill skillName="Rising Attack" skillId="1" skillLevel="50" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Double Sonic Slash" skillId="5" skillLevel="50" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="60" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Dual Sword Mastery" skillId="144" skillLevel="51" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Fatal Strike" skillId="190" skillLevel="55" getLevel="90" levelUpSp="840000000" />
@@ -299,8 +355,31 @@
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="18" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Indestructible Sound" skillId="1624" skillLevel="7" getLevel="90" levelUpSp="840000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Slashing Blades" skillId="47930" skillLevel="6" getLevel="90" levelUpSp="840000000" />
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="6" getLevel="90" levelUpSp="840000000" />
+		<skill skillName="Dual Sword Mastery" skillId="47951" skillLevel="13" getLevel="90" levelUpSp="840000000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="13" getLevel="90" levelUpSp="840000000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="13" getLevel="90" levelUpSp="840000000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="8" getLevel="90" levelUpSp="840000000" />
+
+		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="41" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Blade Wave" skillId="47928" skillLevel="4" getLevel="91" levelUpSp="840000000" />
+		<skill skillName="Blade Throw" skillId="47932" skillLevel="7" getLevel="91" levelUpSp="840000000" />
+
+		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="42" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Triple Sonic Slash" skillId="261" skillLevel="43" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
 		</skill>
 	</skillTree>
 </list>

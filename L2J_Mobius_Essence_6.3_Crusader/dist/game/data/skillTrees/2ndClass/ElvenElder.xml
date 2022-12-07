@@ -4,7 +4,10 @@
 		<skill skillName="Mana Boost" skillId="213" skillLevel="3" getLevel="40" levelUpSp="83000" />
 		<skill skillName="Fast Spell Casting" skillId="228" skillLevel="2" getLevel="40" levelUpSp="83000" />
 		<skill skillName="Resurrection" skillId="1016" skillLevel="3" getLevel="40" levelUpSp="83000" />
-		<skill skillName="Might of Heaven" skillId="1028" skillLevel="1" getLevel="40" levelUpSp="83000" />
+		<skill skillName="Might of Heaven" skillId="1028" skillLevel="1" getLevel="40" levelUpSp="83000">
+			<removeSkill id="1147" onlyReplaceByLearn="true" /> <!-- Fireball -->
+			<removeSkill id="1177" onlyReplaceByLearn="true" /> <!-- Wind Strike -->
+		</skill>
 		<skill skillName="Might of Heaven" skillId="1028" skillLevel="2" getLevel="40" levelUpSp="83000" />
 		<skill skillName="Mental Shield" skillId="1035" skillLevel="2" getLevel="40" levelUpSp="83000" />
 		<skill skillName="Shield" skillId="1040" skillLevel="3" getLevel="40" levelUpSp="80000" />

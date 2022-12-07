@@ -218,6 +218,7 @@
 		<skill skillName="Prophecy of Pa'agrio" skillId="1414" skillLevel="2" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Mana Gain" skillId="1460" skillLevel="7" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Life Rescue" skillId="1610" skillLevel="27" getLevel="82" levelUpSp="170000000" />
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="2" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Anti Magic" skillId="47270" skillLevel="7" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Dragon Slayer Appearance" skillId="54231" skillLevel="1" getLevel="82" levelUpSp="0">
 			<item id="96300,96780" count="1" /> <!-- Spellbook: Dragon Slayer -->
@@ -260,6 +261,7 @@
 		<skill skillName="Mana Gain" skillId="1460" skillLevel="9" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Life Rescue" skillId="1610" skillLevel="29" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Seal of Infection" skillId="45468" skillLevel="1" getLevel="84" levelUpSp="240000000">
+			<removeSkill id="1367" onlyReplaceByLearn="true" /> <!-- Seal of Disease -->
 			<item id="94672,95556" count="1" /> <!-- Spellbook: Seal of Infection -->
 		</skill>
 		<skill skillName="Anti Magic" skillId="47270" skillLevel="8" getLevel="84" levelUpSp="240000000" />
@@ -273,9 +275,13 @@
 		<skill skillName="Detection" skillId="45190" skillLevel="2" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="3" getLevel="85" levelUpSp="840000000" />
 
 		<skill skillName="Weapon Mastery" skillId="250" skillLevel="52" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Robe Mastery" skillId="251" skillLevel="55" getLevel="86" levelUpSp="840000000" />
@@ -299,6 +305,7 @@
 		<skill skillName="Detection" skillId="45190" skillLevel="3" getLevel="88" levelUpSp="840000000">
 			<item id="57" count="30000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="4" getLevel="88" levelUpSp="840000000" />
 		
 		<skill skillName="Weapon Mastery" skillId="250" skillLevel="55" getLevel="89" levelUpSp="840000000" />
 		<skill skillName="Robe Mastery" skillId="251" skillLevel="58" getLevel="89" levelUpSp="840000000" />
@@ -314,6 +321,28 @@
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="5" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Anti Magic" skillId="47270" skillLevel="11" getLevel="90" levelUpSp="840000000" />
+
+		<skill skillName="Steal Essence" skillId="1245" skillLevel="26" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="6" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Steal Essence" skillId="1245" skillLevel="27" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="7" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Steal Essence" skillId="1245" skillLevel="28" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Flame Burst" skillId="45453" skillLevel="8" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
 	</skillTree>
 </list>

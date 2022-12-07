@@ -199,6 +199,12 @@
 		<skill skillName="Light Armor Mastery" skillId="233" skillLevel="56" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Lethal Shot" skillId="343" skillLevel="10" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Rapid Fire" skillId="413" skillLevel="10" getLevel="85" levelUpSp="840000000" />
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="2" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
@@ -282,8 +288,19 @@
 		<skill skillName="Archer's Armor Mastery" skillId="47415" skillLevel="13" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Stun Shot" skillId="47422" skillLevel="11" getLevel="90" levelUpSp="840000000" />
 
+		<skill skillName="Lethal Shot" skillId="343" skillLevel="16" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="True Aim" skillId="47396" skillLevel="3" getLevel="91" levelUpSp="840000000" />
 		<skill skillName="Stun Shot" skillId="47422" skillLevel="12" getLevel="91" levelUpSp="840000000" />
 		<skill skillName="Alacrity" skillId="47412" skillLevel="3" getLevel="91" levelUpSp="840000000" />
+
+		<skill skillName="Lethal Shot" skillId="343" skillLevel="17" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Lethal Shot" skillId="343" skillLevel="18" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
 	</skillTree>
 </list>

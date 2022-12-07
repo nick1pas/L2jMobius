@@ -81,7 +81,7 @@
 			<item id="96275,96276" count="1" /> <!-- Spellbook: Knight's Power -->
 		</skill>
 		<skill skillName="Slowdown" skillId="47284" skillLevel="4" getLevel="76" levelUpSp="5800000" />
-		<skill skillName="Replenishing Life" skillId="47292" skillLevel="2" getLevel="76" levelUpSp="5800000" />
+		<skill skillName="Life's Return" skillId="47292" skillLevel="2" getLevel="76" levelUpSp="5800000" />
 		<skill skillName="Knight's Magic Resistance" skillId="47296" skillLevel="3" getLevel="76" levelUpSp="5800000" />
 		<skill skillName="Knight Armor Mastery" skillId="47297" skillLevel="5" getLevel="76" levelUpSp="5800000" />
 		<skill skillName="Knight Weapon Mastery" skillId="47298" skillLevel="5" getLevel="76" levelUpSp="5800000" />
@@ -123,6 +123,9 @@
 		<skill skillName="Shackle" skillId="402" skillLevel="13" getLevel="78" levelUpSp="13600000" />
 		<skill skillName="Mass Shackling" skillId="404" skillLevel="8" getLevel="78" levelUpSp="13600000" />
 		<skill skillName="Shield Charge" skillId="1898" skillLevel="3" getLevel="78" levelUpSp="13600000" />
+		<skill skillName="Master of Aggression" skillId="45203" skillLevel="1" getLevel="78" levelUpSp="12700000">
+			<item id="97745,97746" count="1" /> <!-- Spellbook: Master of Aggression -->
+		</skill>
 		<skill skillName="Power of Life" skillId="47274" skillLevel="1" getLevel="78" levelUpSp="13600000">
 			<item id="96283,96284" count="1" /> <!-- Spellbook: Power of Life -->
 		</skill>
@@ -260,7 +263,7 @@
 		<skill skillName="Eva's Defense" skillId="1623" skillLevel="4" getLevel="83" levelUpSp="240000000" />
 		<skill skillName="Shield Charge" skillId="1898" skillLevel="8" getLevel="83" levelUpSp="240000000" />
 		<skill skillName="Shield Throwing" skillId="47273" skillLevel="4" getLevel="83" levelUpSp="240000000" />
-		<skill skillName="Replenishing Life" skillId="47292" skillLevel="3" getLevel="83" levelUpSp="240000000" />
+		<skill skillName="Life's Return" skillId="47292" skillLevel="3" getLevel="83" levelUpSp="240000000" />
 		
 		<skill skillName="Aggression Aura" skillId="18" skillLevel="45" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Aggression" skillId="28" skillLevel="57" getLevel="84" levelUpSp="240000000" />
@@ -306,12 +309,26 @@
 		<skill skillName="Detection" skillId="45190" skillLevel="2" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="2" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="3" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="4" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="5" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
 		<skill skillName="Shield Throwing" skillId="47273" skillLevel="5" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Eva's Care" skillId="47318" skillLevel="1" getLevel="85" levelUpSp="840000000">
-			<removeSkill id="45371" onlyReplaceByLearn="true" /> <!-- Eva's Help -->
 			<item id="96609,96610" count="1" /> <!-- Spellbook: Eva's Care -->
 		</skill>
 		
@@ -328,6 +345,7 @@
 		<skill skillName="Mass Shackling" skillId="404" skillLevel="16" getLevel="86" levelUpSp="840000000">
 			<item id="57" count="500000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Chain Strike" skillId="10015" skillLevel="4" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Power of Life" skillId="47274" skillLevel="2" getLevel="86" levelUpSp="840000000">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
@@ -364,9 +382,10 @@
 		<skill skillName="Mass Shackling" skillId="404" skillLevel="18" getLevel="88" levelUpSp="840000000">
 			<item id="57" count="500000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Chain Strike" skillId="10015" skillLevel="5" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Knight Assault" skillId="47279" skillLevel="7" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Slowdown" skillId="47284" skillLevel="10" getLevel="88" levelUpSp="840000000" />
-		<skill skillName="Replenishing Life" skillId="47292" skillLevel="4" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Life's Return" skillId="47292" skillLevel="4" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Knight's Magic Resistance" skillId="47296" skillLevel="8" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Knight Armor Mastery" skillId="47297" skillLevel="11" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Knight Weapon Mastery" skillId="47298" skillLevel="11" getLevel="88" levelUpSp="840000000" />
@@ -402,6 +421,7 @@
 		<skill skillName="Mass Shackling" skillId="404" skillLevel="20" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="500000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Chain Strike" skillId="10015" skillLevel="6" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
 		</skill>
@@ -410,5 +430,23 @@
 		<skill skillName="Knight's Magic Resistance" skillId="47296" skillLevel="9" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Knight Armor Mastery" skillId="47297" skillLevel="12" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Knight Weapon Mastery" skillId="47298" skillLevel="12" getLevel="90" levelUpSp="840000000" />
+
+		<skill skillName="Power of Life" skillId="47274" skillLevel="3" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="100000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Knight Assault" skillId="47279" skillLevel="9" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Knight's Protection" skillId="53010" skillLevel="8" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Knight Assault" skillId="47279" skillLevel="10" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Knight Assault" skillId="47279" skillLevel="11" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
 	</skillTree>
 </list>

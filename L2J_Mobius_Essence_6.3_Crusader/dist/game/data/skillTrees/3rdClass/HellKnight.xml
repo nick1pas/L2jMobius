@@ -116,6 +116,9 @@
 			<item id="90048" count="1" /> <!-- Scroll: Touch of Death -->
 		</skill>
 		<skill skillName="Shield Strike" skillId="984" skillLevel="18" getLevel="78" levelUpSp="12600000" />
+		<skill skillName="Master of Aggression" skillId="45226" skillLevel="1" getLevel="78" levelUpSp="12700000">
+			<item id="97745,97746" count="1" /> <!-- Spellbook: Master of Aggression -->
+		</skill>
 		<skill skillName="Dark Strike" skillId="45257" skillLevel="28" getLevel="78" levelUpSp="12600000" />
 		<skill skillName="Toughness" skillId="47275" skillLevel="1" getLevel="78" levelUpSp="12600000">
 			<item id="96285,96286" count="1" /> <!-- Spellbook: Toughness -->
@@ -179,6 +182,7 @@
 		<skill skillName="Shield Mastery" skillId="153" skillLevel="6" getLevel="81" levelUpSp="160000000" />
 		<skill skillName="Final Fortress" skillId="291" skillLevel="17" getLevel="81" levelUpSp="160000000" />
 		<skill skillName="Shield Strike" skillId="984" skillLevel="21" getLevel="81" levelUpSp="160000000" />
+		<skill skillName="Shield Throwing" skillId="47273" skillLevel="3" getLevel="81" levelUpSp="160000000" />
 		<skill skillName="Mass Chain Strike" skillId="53003" skillLevel="2" getLevel="81" levelUpSp="160000000" />
 		
 		<skill skillName="Aggression Aura" skillId="18" skillLevel="43" getLevel="82" levelUpSp="170000000" />
@@ -244,6 +248,21 @@
 		<skill skillName="Detection" skillId="45190" skillLevel="2" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="2" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="3" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="4" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="5" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
@@ -256,6 +275,7 @@
 		<skill skillName="Focus Mind" skillId="191" skillLevel="8" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Final Fortress" skillId="291" skillLevel="22" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Shield Strike" skillId="984" skillLevel="26" getLevel="86" levelUpSp="840000000" />
+		<skill skillName="Chain Strike" skillId="10015" skillLevel="4" getLevel="86" levelUpSp="840000000" />
 		<skill skillName="Toughness" skillId="47275" skillLevel="2" getLevel="86" levelUpSp="840000000">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
@@ -274,6 +294,7 @@
 		<skill skillName="Final Fortress" skillId="291" skillLevel="24" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Fortitude" skillId="335" skillLevel="5" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Shield Strike" skillId="984" skillLevel="28" getLevel="88" levelUpSp="840000000" />
+		<skill skillName="Chain Strike" skillId="10015" skillLevel="5" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Knight Assault" skillId="47279" skillLevel="7" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Shield Stun" skillId="47282" skillLevel="9" getLevel="88" levelUpSp="840000000" />
 		<skill skillName="Knight's Magic Resistance" skillId="47296" skillLevel="8" getLevel="88" levelUpSp="840000000" />
@@ -293,6 +314,7 @@
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="60" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Final Fortress" skillId="291" skillLevel="26" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Shield Strike" skillId="984" skillLevel="30" getLevel="90" levelUpSp="840000000" />
+		<skill skillName="Chain Strike" skillId="10015" skillLevel="6" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
 		</skill>
@@ -301,5 +323,23 @@
 		<skill skillName="Knight's Magic Resistance" skillId="47296" skillLevel="9" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Knight Armor Mastery" skillId="47297" skillLevel="12" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Knight Weapon Mastery" skillId="47298" skillLevel="12" getLevel="90" levelUpSp="840000000" />
+
+		<skill skillName="Toughness" skillId="47275" skillLevel="3" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="100000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Knight Assault" skillId="47279" skillLevel="9" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Knight's Protection" skillId="53010" skillLevel="8" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Knight Assault" skillId="47279" skillLevel="10" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Knight Assault" skillId="47279" skillLevel="11" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
 	</skillTree>
 </list>

@@ -25,6 +25,7 @@
 			<item id="8621,96094" count="1" /> <!-- Buff Expansion Book Lv. 4 -->
 		</skill>
 		<skill skillName="Increase Power" skillId="1432" skillLevel="3" getLevel="76" levelUpSp="8000000" />
+		<skill skillName="Soul Guard" skillId="1514" skillLevel="2" getLevel="76" levelUpSp="8000000" />
 		<skill skillName="Soul Focus" skillId="45139" skillLevel="4" getLevel="76" levelUpSp="8000000">
 			<item id="94363,95535" count="1" /> <!-- Master's Book: Focus -->
 		</skill>
@@ -85,14 +86,29 @@
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="1" getLevel="76" levelUpSp="0">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Overwhelming Power" skillId="47970" skillLevel="1" getLevel="76" levelUpSp="8000000">
+			<item id="97453,97454" count="1" /> <!-- Spellbook: Overwhelming Power -->
+		</skill>
+		<skill skillName="Powerful Disarm" skillId="47975" skillLevel="1" getLevel="76" levelUpSp="8000000">
+			<item id="97457,97458" count="1" /> <!-- Spellbook: Powerful Disarm -->
+		</skill>
+		<skill skillName="Soul Mark" skillId="47976" skillLevel="1" getLevel="76" levelUpSp="8000000">
+			<item id="97455,97456" count="1" /> <!-- Spellbook: Soul Mark -->
+		</skill>
+		<skill skillName="Shock Impact" skillId="47977" skillLevel="1" getLevel="76" levelUpSp="8000000">
+			<item id="97461,97462" count="1" /> <!-- Spellbook: Shock Impact -->
+		</skill>
 		<skill skillName="Mount Griffin" skillId="62002" skillLevel="1" getLevel="76" levelUpSp="8000000" />
-		
+
 		<skill skillName="Disarm" skillId="485" skillLevel="2" getLevel="78" levelUpSp="12000000" />
 		<skill skillName="Magic Break" skillId="501" skillLevel="2" getLevel="78" levelUpSp="12000000" />
 		<skill skillName="Critical Sense" skillId="626" skillLevel="4" getLevel="78" levelUpSp="12000000" />
 		<skill skillName="Increase Power" skillId="1432" skillLevel="4" getLevel="78" levelUpSp="12000000" />
 		<skill skillName="Death Mark" skillId="1435" skillLevel="4" getLevel="78" levelUpSp="12000000">
 			<item id="57" count="1000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Soul Guard" skillId="1514" skillLevel="3" getLevel="78" levelUpSp="12000000">
+			<item id="97459,97460" count="1" /> <!-- Spellbook: Soul Guard Lv.3 -->
 		</skill>
 
 		<skill skillName="Heavy Armor Mastery" skillId="399" skillLevel="8" getLevel="80" levelUpSp="18000000">
@@ -113,7 +129,6 @@
 		<skill skillName="Disarm" skillId="485" skillLevel="3" getLevel="80" levelUpSp="18000000" />
 		<skill skillName="Magic Break" skillId="501" skillLevel="3" getLevel="80" levelUpSp="18000000" />
 		<skill skillName="Increase Power" skillId="1432" skillLevel="5" getLevel="80" levelUpSp="18000000" />
-		<skill skillName="Soul Barrier" skillId="1514" skillLevel="2" getLevel="80" levelUpSp="18000000" />
 		<skill skillName="Soul Impulse" skillId="45155" skillLevel="6" getLevel="80" levelUpSp="18000000">
 			<item id="57" count="1000000" /> <!-- Adena -->
 		</skill>
@@ -130,6 +145,9 @@
 
 		<skill skillName="Disarm" skillId="485" skillLevel="4" getLevel="82" levelUpSp="170000000" />
 		<skill skillName="Magic Break" skillId="501" skillLevel="4" getLevel="82" levelUpSp="170000000" />
+		<skill skillName="Soul Mark" skillId="47976" skillLevel="2" getLevel="82" levelUpSp="170000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Dragon Slayer Appearance" skillId="54231" skillLevel="1" getLevel="82" levelUpSp="0">
 			<item id="96300,96780" count="1" /> <!-- Spellbook: Dragon Slayer -->
 		</skill>
@@ -165,20 +183,54 @@
 		<skill skillName="Enuma Elish" skillId="45157" skillLevel="5" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Rush Impact" skillId="45159" skillLevel="4" getLevel="85" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Detection" skillId="45190" skillLevel="2" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Soul Mark" skillId="47976" skillLevel="3" getLevel="85" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Death Pain" skillId="47985" skillLevel="1" getLevel="85" levelUpSp="840000000">
+			<removeSkill id="1435" onlyReplaceByLearn="true" /> <!-- Death Mark -->
+			<item id="97463,97464" count="1" /> <!-- Spellbook: Death Pain -->
+		</skill>
+
+		<skill skillName="Disarm" skillId="485" skillLevel="6" getLevel="86" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Disarm" skillId="485" skillLevel="7" getLevel="87" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
 		</skill>
 
 		<skill skillName="Master of Combat" skillId="430" skillLevel="3" getLevel="88" levelUpSp="840000000">
 			<item id="97104,97112" count="1" /> <!-- Spellbook: Master of Combat -->
 		</skill>
+		<skill skillName="Disarm" skillId="485" skillLevel="8" getLevel="88" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Detection" skillId="45190" skillLevel="3" getLevel="88" levelUpSp="840000000">
 			<item id="57" count="30000000" /> <!-- Adena -->
 		</skill>
-		
+		<skill skillName="Soul Mark" skillId="47976" skillLevel="4" getLevel="88" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Death Pain" skillId="47985" skillLevel="2" getLevel="88" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Disarm" skillId="485" skillLevel="9" getLevel="89" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+
 		<skill skillName="Heavy Armor Mastery" skillId="399" skillLevel="10" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
@@ -191,14 +243,53 @@
 		<skill skillName="Soul Smash" skillId="477" skillLevel="10" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Disarm" skillId="485" skillLevel="10" getLevel="90" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Soul Impulse" skillId="45155" skillLevel="8" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
 		<skill skillName="Enuma Elish" skillId="45157" skillLevel="6" getLevel="90" levelUpSp="840000000">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Rush Impact" skillId="45159" skillLevel="5" getLevel="90" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Soul Mark" skillId="47976" skillLevel="5" getLevel="90" levelUpSp="840000000">
+			<item id="57" count="5000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Soul Smash" skillId="477" skillLevel="11" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Disarm" skillId="485" skillLevel="11" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Rush Impact" skillId="45159" skillLevel="6" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Soul Mark" skillId="47976" skillLevel="6" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Death Pain" skillId="47985" skillLevel="3" getLevel="91" levelUpSp="840000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Soul Smash" skillId="477" skillLevel="12" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Soul Impulse" skillId="45155" skillLevel="9" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Soul Smash" skillId="477" skillLevel="13" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Soul Impulse" skillId="45155" skillLevel="10" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
 		</skill>
 	</skillTree>
 </list>

@@ -67,7 +67,6 @@
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="1" getLevel="76" levelUpSp="0">
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Bloody Weapon" skillId="47285" skillLevel="7" getLevel="76" levelUpSp="6300000" />
 		<skill skillName="Freezing Weapon" skillId="47288" skillLevel="6" getLevel="76" levelUpSp="6300000" />
 		<skill skillName="Detect Darkness" skillId="53005" skillLevel="1" getLevel="76" levelUpSp="6300000">
 			<item id="91482" count="1" /> <!-- Scroll: Detect Darkness -->
@@ -145,7 +144,6 @@
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="2" getLevel="80" levelUpSp="0">
 			<item id="57" count="40000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Bloody Weapon" skillId="47285" skillLevel="8" getLevel="80" levelUpSp="14700000" />
 		<skill skillName="Freezing Weapon" skillId="47288" skillLevel="7" getLevel="80" levelUpSp="14700000" />
 		<skill skillName="Acrobatic Body" skillId="47333" skillLevel="8" getLevel="80" levelUpSp="14700000" />
 		<skill skillName="White Guardian Transformation" skillId="54102" skillLevel="1" getLevel="80">
@@ -237,11 +235,16 @@
 		<skill skillName="Dead Eye" skillId="414" skillLevel="10" getLevel="85" levelUpSp="840000000">
 			<item id="57" count="1000000" /> <!-- Adena -->
 		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="2" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Drain HP" skillId="45250" skillLevel="35" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Bloody Weapon" skillId="47285" skillLevel="9" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Acrobatic Body" skillId="47333" skillLevel="9" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="True Aim" skillId="47396" skillLevel="1" getLevel="85" levelUpSp="840000000">
 			<removeSkill id="522" onlyReplaceByLearn="true" /> <!-- Real Target -->
@@ -281,7 +284,6 @@
 			<item id="57" count="1000000" /> <!-- Adena -->
 		</skill>
 		<skill skillName="Bow Mastery" skillId="208" skillLevel="63" getLevel="87" levelUpSp="840000000" />
-		<skill skillName="Bloody Weapon" skillId="223" skillLevel="62" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Light Armor Mastery" skillId="233" skillLevel="58" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Lethal Shot" skillId="343" skillLevel="12" getLevel="87" levelUpSp="840000000" />
 		<skill skillName="Drain HP" skillId="45250" skillLevel="37" getLevel="87" levelUpSp="840000000" />
@@ -340,15 +342,25 @@
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
 		</skill>
-		<skill skillName="Bloody Weapon" skillId="47285" skillLevel="10" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Freezing Weapon" skillId="47288" skillLevel="9" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Acrobatic Body" skillId="47333" skillLevel="10" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Archer's Weapon Mastery" skillId="47414" skillLevel="13" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Archer's Armor Mastery" skillId="47415" skillLevel="13" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Stun Shot" skillId="47422" skillLevel="11" getLevel="90" levelUpSp="840000000" />
 
+		<skill skillName="Lethal Shot" skillId="343" skillLevel="16" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
 		<skill skillName="True Aim" skillId="47396" skillLevel="3" getLevel="91" levelUpSp="840000000" />
 		<skill skillName="Stun Shot" skillId="47422" skillLevel="12" getLevel="91" levelUpSp="840000000" />
 		<skill skillName="Eagle Eye" skillId="47413" skillLevel="3" getLevel="91" levelUpSp="840000000" />
+
+		<skill skillName="Lethal Shot" skillId="343" skillLevel="17" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Lethal Shot" skillId="343" skillLevel="18" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
 	</skillTree>
 </list>

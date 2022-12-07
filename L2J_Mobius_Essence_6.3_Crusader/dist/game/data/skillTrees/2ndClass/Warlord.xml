@@ -59,7 +59,31 @@
 		<skill skillName="Potion Mastery" skillId="45184" skillLevel="1" getLevel="40">
 			<item id="57" count="1000000" /> <!-- Adena -->
 		</skill>
-		
+		<skill skillName="Anger" skillId="47944" skillLevel="1" getLevel="40" levelUpSp="82000" />
+		<skill skillName="Provoke" skillId="47950" skillLevel="1" getLevel="40" levelUpSp="82000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="1" getLevel="40" levelUpSp="82000">
+			<removeSkill id="91" onlyReplaceByLearn="true" /> <!-- Ability to Protect -->
+			<removeSkill id="142" onlyReplaceByLearn="true" /> <!-- Armor Mastery -->
+			<removeSkill id="227" onlyReplaceByLearn="true" /> <!-- Light Armor Mastery -->
+		</skill>
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="1" getLevel="40" levelUpSp="82000">
+			<removeSkill id="91" onlyReplaceByLearn="true" /> <!-- Ability to Protect -->
+			<removeSkill id="142" onlyReplaceByLearn="true" /> <!-- Armor Mastery -->
+			<removeSkill id="231" onlyReplaceByLearn="true" /> <!-- Heavy Armor Mastery -->
+		</skill>
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="1" getLevel="40" levelUpSp="82000">
+			<removeSkill id="70" onlyReplaceByLearn="true" /> <!-- Emergency Rescue -->
+			<removeSkill id="148" onlyReplaceByLearn="true" /> <!-- Vital Force -->
+			<removeSkill id="211" onlyReplaceByLearn="true" /> <!-- Boost HP -->
+			<removeSkill id="212" onlyReplaceByLearn="true" /> <!-- Fast HP Recovery -->
+		</skill>
+		<skill skillName="Polearm Mastery" skillId="47955" skillLevel="1" getLevel="40" levelUpSp="82000">
+			<removeSkill id="77" onlyReplaceByLearn="true" /> <!-- Ability to Attack -->
+			<removeSkill id="141" onlyReplaceByLearn="true" /> <!-- Weapon Mastery -->
+			<removeSkill id="216" onlyReplaceByLearn="true" /> <!-- Polearm Mastery -->
+			<removeSkill id="257" onlyReplaceByLearn="true" /> <!-- Sword / Blunt Weapon Mastery -->
+		</skill>
+
 		<skill skillName="Vortex" skillId="36" skillLevel="6" getLevel="41" levelUpSp="96000" />
 		<skill skillName="Thunder Storm" skillId="48" skillLevel="6" getLevel="41" levelUpSp="96000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="11" getLevel="41" levelUpSp="96000" />
@@ -90,7 +114,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="19" getLevel="43" levelUpSp="96000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="19" getLevel="43" levelUpSp="96000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="6" getLevel="43" levelUpSp="96000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="1" getLevel="43" levelUpSp="96000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="1" getLevel="43" levelUpSp="96000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="7" getLevel="43" levelUpSp="96000" />
 		
@@ -180,7 +203,11 @@
 		<skill skillName="Potion Mastery" skillId="45184" skillLevel="2" getLevel="50">
 			<item id="57" count="3000000" /> <!-- Adena -->
 		</skill>
-		
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="2" getLevel="50" levelUpSp="290000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="2" getLevel="50" levelUpSp="290000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="2" getLevel="50" levelUpSp="290000" />
+		<skill skillName="Polearm Mastery" skillId="47955" skillLevel="2" getLevel="50" levelUpSp="290000" />
+
 		<skill skillName="Vortex" skillId="36" skillLevel="16" getLevel="51" levelUpSp="290000" />
 		<skill skillName="Thunder Storm" skillId="48" skillLevel="15" getLevel="51" levelUpSp="290000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="21" getLevel="51" levelUpSp="290000" />
@@ -240,7 +267,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="31" getLevel="55" levelUpSp="400000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="31" getLevel="55" levelUpSp="400000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="18" getLevel="55" levelUpSp="400000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="2" getLevel="55" levelUpSp="400000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="5" getLevel="55" levelUpSp="400000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="11" getLevel="55" levelUpSp="400000" />
 		<skill skillName="Fell Swoop" skillId="421" skillLevel="2" getLevel="55" levelUpSp="400000" />
@@ -300,7 +326,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="36" getLevel="60" levelUpSp="800000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="36" getLevel="60" levelUpSp="800000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="23" getLevel="60" levelUpSp="800000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="3" getLevel="60" levelUpSp="800000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="7" getLevel="60" levelUpSp="800000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="13" getLevel="60" levelUpSp="800000" />
 		<skill skillName="Rush" skillId="994" skillLevel="2" getLevel="60" levelUpSp="800000" />
@@ -308,7 +333,12 @@
 		<skill skillName="Potion Mastery" skillId="45184" skillLevel="3" getLevel="60">
 			<item id="57" count="6000000" /> <!-- Adena -->
 		</skill>
-		
+		<skill skillName="Provoke" skillId="47950" skillLevel="2" getLevel="60" levelUpSp="800000" />
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="3" getLevel="60" levelUpSp="800000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="3" getLevel="60" levelUpSp="800000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="3" getLevel="60" levelUpSp="800000" />
+		<skill skillName="Polearm Mastery" skillId="47955" skillLevel="3" getLevel="60" levelUpSp="800000" />
+
 		<skill skillName="Vortex" skillId="36" skillLevel="26" getLevel="61" levelUpSp="800000" />
 		<skill skillName="Thunder Storm" skillId="48" skillLevel="26" getLevel="61" levelUpSp="800000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="31" getLevel="61" levelUpSp="800000" />
@@ -356,7 +386,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="40" getLevel="64" levelUpSp="1200000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="40" getLevel="64" levelUpSp="1200000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="27" getLevel="64" levelUpSp="1200000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="4" getLevel="64" levelUpSp="1200000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="9" getLevel="64" levelUpSp="1200000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="15" getLevel="64" levelUpSp="1200000" />
 		<skill skillName="Focus Attack" skillId="317" skillLevel="4" getLevel="64" levelUpSp="1200000" />
@@ -404,7 +433,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="44" getLevel="68" levelUpSp="1900000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="44" getLevel="68" levelUpSp="1900000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="31" getLevel="68" levelUpSp="1900000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="5" getLevel="68" levelUpSp="1900000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="11" getLevel="68" levelUpSp="1900000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="17" getLevel="68" levelUpSp="1900000" />
 		
@@ -433,7 +461,11 @@
 		<skill skillName="Focus Attack" skillId="317" skillLevel="5" getLevel="70" levelUpSp="2400000" />
 		<skill skillName="Quick Spear" skillId="1606" skillLevel="8" getLevel="70" levelUpSp="2400000" />
 		<skill skillName="White Assassin Transformation" skillId="1802" skillLevel="1" getLevel="70" autoGet="true" />
-		
+		<skill skillName="Light Armor Mastery" skillId="47952" skillLevel="4" getLevel="70" levelUpSp="2400000" />
+		<skill skillName="Heavy Armor Mastery" skillId="47953" skillLevel="4" getLevel="70" levelUpSp="2400000" />
+		<skill skillName="Recovery Mastery" skillId="47954" skillLevel="4" getLevel="70" levelUpSp="2400000" />
+		<skill skillName="Polearm Mastery" skillId="47955" skillLevel="4" getLevel="70" levelUpSp="2400000" />
+
 		<skill skillName="Vortex" skillId="36" skillLevel="36" getLevel="71" levelUpSp="2400000" />
 		<skill skillName="Thunder Storm" skillId="48" skillLevel="36" getLevel="71" levelUpSp="2400000" />
 		<skill skillName="Emergency Rescue" skillId="70" skillLevel="41" getLevel="71" levelUpSp="2400000" />
@@ -452,7 +484,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="48" getLevel="72" levelUpSp="2700000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="48" getLevel="72" levelUpSp="2700000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="35" getLevel="72" levelUpSp="2700000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="6" getLevel="72" levelUpSp="2700000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="13" getLevel="72" levelUpSp="2700000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="19" getLevel="72" levelUpSp="2700000" />
 		
@@ -476,7 +507,6 @@
 		<skill skillName="Light Armor Mastery" skillId="227" skillLevel="50" getLevel="74" levelUpSp="2700000" />
 		<skill skillName="Heavy Armor Mastery" skillId="231" skillLevel="50" getLevel="74" levelUpSp="2700000" />
 		<skill skillName="Power Break" skillId="260" skillLevel="37" getLevel="74" levelUpSp="2700000" />
-		<skill skillName="Provoke" skillId="286" skillLevel="7" getLevel="74" levelUpSp="2700000" />
 		<skill skillName="Final Frenzy" skillId="290" skillLevel="14" getLevel="74" levelUpSp="2700000" />
 		<skill skillName="Vicious Stance" skillId="312" skillLevel="20" getLevel="74" levelUpSp="2700000" />
 		<skill skillName="Quick Spear" skillId="1606" skillLevel="9" getLevel="74" levelUpSp="2700000" />

@@ -76,6 +76,7 @@
 			<item id="57" count="1000000" /> <!-- Adena -->
 		</skill>
 		<skill skillName="Divine Beam" skillId="45241" skillLevel="1" getLevel="76" levelUpSp="5700000">
+			<removeSkill id="1031" onlyReplaceByLearn="true" /> <!-- Divine Strike -->
 			<item id="93103,95503" count="1" /> <!-- Spellbook: Divine Beam -->
 		</skill>
 		<skill skillName="Expanded Potential of Dyes" skillId="45269" skillLevel="1" getLevel="76" levelUpSp="0">
@@ -127,6 +128,7 @@
 		</skill>
 		<skill skillName="Divine Beam" skillId="45241" skillLevel="3" getLevel="78" levelUpSp="12500000" />
 		<skill skillName="Advanced Cleanse" skillId="47243" skillLevel="1" getLevel="78" levelUpSp="12500000">
+			<removeSkill id="1409" onlyReplaceByLearn="true" /> <!-- Cleanse -->
 			<item id="96039,96053" count="1" /> <!-- Scroll: Advanced Cleanse -->
 		</skill>
 		<skill skillName="Holy Buster" skillId="47245" skillLevel="1" getLevel="78" levelUpSp="12500000">
@@ -269,6 +271,9 @@
 			<item id="57" count="10000000" /> <!-- Adena -->
 		</skill>
 		<skill skillName="Divine Beam" skillId="45241" skillLevel="10" getLevel="85" levelUpSp="840000000" />
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
 		</skill>
@@ -336,5 +341,17 @@
 		<skill skillName="Priest's Armor Mastery" skillId="47267" skillLevel="15" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Priest's Attack Mastery" skillId="47268" skillLevel="15" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Anti Magic" skillId="47270" skillLevel="11" getLevel="90" levelUpSp="840000000" />
+
+		<skill skillName="Divine Beam" skillId="45241" skillLevel="16" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Divine Beam" skillId="45241" skillLevel="17" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Divine Beam" skillId="45241" skillLevel="18" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
 	</skillTree>
 </list>

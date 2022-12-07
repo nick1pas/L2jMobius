@@ -86,9 +86,11 @@
 		</skill>
 
 		<skill skillName="Amazing Piercing" skillId="47802" skillLevel="1" getLevel="76" levelUpSp="5900000">
+			<removeSkill id="47801" onlyReplaceByLearn="true" /> <!-- Piercing -->
 			<item id="97103" count="1" /> <!-- Secret Book - Amazing Piercing -->
 		</skill>
 		<skill skillName="Threatening Swing" skillId="47804" skillLevel="1" getLevel="76" levelUpSp="5900000">
+			<removeSkill id="47803" onlyReplaceByLearn="true" /> <!-- Threatening Swing -->
 			<item id="97107" count="1" /> <!-- Spellbook - Threatening Swing -->
 		</skill>
 
@@ -142,12 +144,21 @@
 		<skill skillName="Wild Weapon Mastery" skillId="47861" skillLevel="11" getLevel="84" levelUpSp="240000000" />
 		<skill skillName="Threatening Swing" skillId="47804" skillLevel="6" getLevel="84" levelUpSp="840000000" />
 
-		<skill skillName="Blazing Fury" skillId="47831" skillLevel="3" getLevel="85" levelUpSp="840000000" />
+		<skill skillName="Extended Life" skillId="45271" skillLevel="1" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Extended Life" skillId="45271" skillLevel="2" getLevel="85" levelUpSp="0">
+			<item id="97802,97803" count="1" /> <!-- Spellbook: Extended Life -->
+		</skill>
+		<skill skillName="Amazing Piercing" skillId="47802" skillLevel="4" getLevel="85" levelUpSp="840000000" />
 		<skill skillName="Wild Scratch" skillId="47805" skillLevel="2" getLevel="85" levelUpSp="840000000">
 			<item id="97105" count="1" /> <!-- Spellbook - Final Secret Lv2 -->
 		</skill>
 		<skill skillName="Wild Charge" skillId="47807" skillLevel="4" getLevel="85" levelUpSp="840000000" />
-		<skill skillName="Amazing Piercing" skillId="47802" skillLevel="4" getLevel="85" levelUpSp="840000000" />
+		<skill skillName="Blazing Fury" skillId="47831" skillLevel="3" getLevel="85" levelUpSp="840000000" />
+		<skill skillName="Final Secret" skillId="47834" skillLevel="2" getLevel="85" levelUpSp="840000000">
+			<item id="97105,97113" count="1" /> <!-- Spellbook: Spellbook: Final Secret Lv.2 -->
+		</skill>
 
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="3" getLevel="85" levelUpSp="0">
 			<item id="57" count="100000000" /> <!-- Adena -->
@@ -193,6 +204,24 @@
 		<skill skillName="Threatening Swing" skillId="47804" skillLevel="10" getLevel="90" levelUpSp="840000000" />
 		<skill skillName="Blessed by Sayha" skillId="45408" skillLevel="4" getLevel="90" levelUpSp="0">
 			<item id="57" count="200000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Wild Scratch" skillId="47805" skillLevel="11" getLevel="91" levelUpSp="1500000000">
+			<item id="57" count="10000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Amazing Piercing" skillId="47802" skillLevel="9" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Wild Scratch" skillId="47805" skillLevel="12" getLevel="92" levelUpSp="1700000000">
+			<item id="57" count="15000000" /> <!-- Adena -->
+		</skill>
+
+		<skill skillName="Amazing Piercing" skillId="47802" skillLevel="10" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
+		</skill>
+		<skill skillName="Wild Scratch" skillId="47805" skillLevel="13" getLevel="93" levelUpSp="2000000000">
+			<item id="57" count="20000000" /> <!-- Adena -->
 		</skill>
 	</skillTree>
 </list>
