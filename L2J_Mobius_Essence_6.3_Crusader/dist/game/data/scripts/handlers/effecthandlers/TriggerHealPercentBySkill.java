@@ -112,7 +112,7 @@ public class TriggerHealPercentBySkill extends AbstractEffect
 			}
 			
 			SystemMessage sm;
-			sm = new SystemMessage(SystemMessageId.S1_HP_HAS_BEEN_RESTORED);
+			sm = new SystemMessage(SystemMessageId.YOU_VE_RECOVERED_S1_HP);
 			sm.addInt((int) amount);
 			player.sendPacket(sm);
 		}

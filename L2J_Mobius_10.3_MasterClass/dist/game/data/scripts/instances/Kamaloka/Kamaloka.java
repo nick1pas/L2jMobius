@@ -417,7 +417,7 @@ public class Kamaloka extends AbstractInstance
 		// player must be in party
 		if (party == null)
 		{
-			player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
+			player.sendPacket(SystemMessageId.YOU_ARE_NOT_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
 			return false;
 		}
 		// ...and be party leader

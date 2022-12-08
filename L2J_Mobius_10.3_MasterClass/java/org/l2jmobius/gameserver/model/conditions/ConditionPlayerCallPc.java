@@ -47,7 +47,7 @@ public class ConditionPlayerCallPc extends Condition
 		}
 		else if (player.isInOlympiadMode())
 		{
-			player.sendPacket(SystemMessageId.YOU_MAY_NOT_SUMMON_FROM_YOUR_CURRENT_LOCATION);
+			player.sendPacket(SystemMessageId.CANNOT_BE_SUMMONED_IN_THIS_LOCATION);
 			canCallPlayer = false;
 		}
 		else if (player.inObserverMode())

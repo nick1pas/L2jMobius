@@ -167,7 +167,7 @@ public class RequestRecipeItemMakeSelf implements ClientPacket
 		{
 			if (craftingCritical)
 			{
-				player.sendPacket(SystemMessageId.CRAFTING_CRITICAL);
+				player.sendPacket(SystemMessageId.CRITICAL_CRAFT);
 			}
 		}
 		else // Failed craft.

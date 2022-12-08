@@ -52,7 +52,7 @@ public class ConditionTargetMyPartyExceptMe extends Condition
 		}
 		else if (!player.isInParty() || !player.getParty().equals(effected.getParty()))
 		{
-			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
+			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_THE_FUNCTION_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
 			sm.addSkillName(skill);
 			player.sendPacket(sm);
 			isPartyMember = false;

@@ -63,7 +63,7 @@ public class Arushinai extends AbstractNpcAI
 				Party party = player.getParty();
 				if (party == null)
 				{
-					player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
+					player.sendPacket(SystemMessageId.YOU_ARE_NOT_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
 					player.teleToLocation(114264, 13352, -5104);
 					return null;
 				}

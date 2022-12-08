@@ -68,7 +68,7 @@ public class Action implements ClientPacket
 		
 		if (player.inObserverMode())
 		{
-			player.sendPacket(SystemMessageId.OBSERVERS_CANNOT_PARTICIPATE);
+			player.sendPacket(SystemMessageId.YOU_CANNOT_USE_THIS_FUNCTION_IN_THE_OBSERVER_MODE);
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}

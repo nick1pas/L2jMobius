@@ -120,7 +120,7 @@ public class DlgAnswer implements ClientPacket
 		{
 			player.reviveAnswer(_answer);
 		}
-		else if (_messageId == SystemMessageId.C1_WISHES_TO_SUMMON_YOU_FROM_S2_DO_YOU_ACCEPT.getId())
+		else if (_messageId == SystemMessageId.C1_WANTS_TO_SUMMON_YOU_TO_S2_ACCEPT.getId())
 		{
 			final SummonRequestHolder holder = player.removeScript(SummonRequestHolder.class);
 			if ((_answer == 1) && (holder != null) && (holder.getSummoner().getObjectId() == _requesterId))

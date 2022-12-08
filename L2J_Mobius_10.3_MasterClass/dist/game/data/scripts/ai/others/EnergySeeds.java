@@ -180,12 +180,12 @@ public class EnergySeeds extends AbstractNpcAI
 				
 				if (getRandom(100) < 33)
 				{
-					caster.sendPacket(SystemMessageId.YOUR_COLLECTION_HAS_SUCCEEDED);
+					caster.sendPacket(SystemMessageId.YOU_HAVE_GATHERED_SOME_ORE);
 					caster.addItem("EnergySeed", itemId, getRandom(RATE + 1, 2 * RATE), null, true);
 				}
 				else
 				{
-					caster.sendPacket(SystemMessageId.YOUR_COLLECTION_HAS_SUCCEEDED);
+					caster.sendPacket(SystemMessageId.YOU_HAVE_GATHERED_SOME_ORE);
 					caster.addItem("EnergySeed", itemId, getRandom(1, RATE), null, true);
 				}
 				seedCollectEvent(caster, npc, spawn._seedId);

@@ -295,14 +295,14 @@ public class RequestEnchantItem implements ClientPacket
 						{
 							if (item.getEnchantLevel() > 0)
 							{
-								final SystemMessage sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+								final SystemMessage sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 								sm.addInt(item.getEnchantLevel());
 								sm.addItemName(item);
 								player.sendPacket(sm);
 							}
 							else
 							{
-								final SystemMessage sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+								final SystemMessage sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 								sm.addItemName(item);
 								player.sendPacket(sm);
 							}

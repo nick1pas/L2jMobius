@@ -92,7 +92,7 @@ public class RequestBlock implements ClientPacket
 				if (targetAL > 0)
 				{
 					// Cannot block a GM character.
-					player.sendPacket(SystemMessageId.YOU_MAY_NOT_IMPOSE_A_BLOCK_ON_A_GM);
+					player.sendPacket(SystemMessageId.YOU_CANNOT_BAN_A_GM);
 					return;
 				}
 				

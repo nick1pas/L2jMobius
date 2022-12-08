@@ -215,7 +215,7 @@ public class MultiSellChoose implements ClientPacket
 					// Check if clan exists for clan reputation products.
 					if ((clan == null) && (SpecialItemType.CLAN_REPUTATION.getClientId() == product.getId()))
 					{
-						player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_AND_CANNOT_PERFORM_THIS_ACTION);
+						player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_2);
 						return;
 					}
 					continue;
@@ -264,7 +264,7 @@ public class MultiSellChoose implements ClientPacket
 			// Check for enchanted item if its present in the inventory.
 			if ((itemEnchantment != null) && (inventory.getItemByObjectId(itemEnchantment.getObjectId()) == null))
 			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_NEED_A_N_S1);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.REQUIRED_S1);
 				sm.addItemName(itemEnchantment.getItem().getId());
 				player.sendPacket(sm);
 				return;
@@ -304,7 +304,7 @@ public class MultiSellChoose implements ClientPacket
 					
 					if (found < ingredient.getCount())
 					{
-						final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_NEED_A_N_S1);
+						final SystemMessage sm = new SystemMessage(SystemMessageId.REQUIRED_S1);
 						sm.addString("+" + ingredient.getEnchantmentLevel() + " " + ItemTable.getInstance().getTemplate(ingredient.getId()).getName());
 						player.sendPacket(sm);
 						return;
@@ -392,7 +392,7 @@ public class MultiSellChoose implements ClientPacket
 					}
 					else
 					{
-						final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_NEED_A_N_S1);
+						final SystemMessage sm = new SystemMessage(SystemMessageId.REQUIRED_S1);
 						sm.addItemName(ingredient.getId());
 						player.sendPacket(sm);
 						return;
@@ -413,7 +413,7 @@ public class MultiSellChoose implements ClientPacket
 					}
 					else
 					{
-						final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_NEED_A_N_S1);
+						final SystemMessage sm = new SystemMessage(SystemMessageId.REQUIRED_S1);
 						sm.addItemName(ingredient.getId());
 						player.sendPacket(sm);
 						return;
@@ -638,7 +638,7 @@ public class MultiSellChoose implements ClientPacket
 				{
 					if (clan == null)
 					{
-						player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_AND_CANNOT_PERFORM_THIS_ACTION);
+						player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_2);
 						return false;
 					}
 					else if (!player.isClanLeader())

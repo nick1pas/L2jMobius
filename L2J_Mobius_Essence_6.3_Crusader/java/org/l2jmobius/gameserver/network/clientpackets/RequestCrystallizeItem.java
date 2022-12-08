@@ -212,13 +212,13 @@ public class RequestCrystallizeItem implements ClientPacket
 			
 			if (itemToRemove.getEnchantLevel() > 0)
 			{
-				sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 				sm.addInt(itemToRemove.getEnchantLevel());
 				sm.addItemName(itemToRemove);
 			}
 			else
 			{
-				sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 				sm.addItemName(itemToRemove);
 			}
 			player.sendPacket(sm);

@@ -1624,13 +1624,13 @@ public class Pet extends Summon
 		{
 			if (item.getEnchantLevel() > 0)
 			{
-				sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 				sm.addInt(item.getEnchantLevel());
 				sm.addItemName(item);
 			}
 			else
 			{
-				sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 				sm.addItemName(item);
 			}
 			sendPacket(sm);
@@ -1653,13 +1653,13 @@ public class Pet extends Summon
 			{
 				if (item.getEnchantLevel() > 0)
 				{
-					sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1_S2);
+					sm = new SystemMessage(SystemMessageId.S1_S2_EQUIPPED);
 					sm.addInt(item.getEnchantLevel());
 					sm.addItemName(item);
 				}
 				else
 				{
-					sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1);
+					sm = new SystemMessage(SystemMessageId.S1_EQUIPPED);
 					sm.addItemName(item);
 				}
 				sendPacket(sm);

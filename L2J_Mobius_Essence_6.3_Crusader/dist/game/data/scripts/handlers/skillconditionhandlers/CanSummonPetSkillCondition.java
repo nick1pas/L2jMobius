@@ -59,12 +59,12 @@ public class CanSummonPetSkillCondition implements ISkillCondition
 		}
 		else if ((player.getActiveTradeList() != null) || player.hasItemRequest() || (player.getPrivateStoreType() != PrivateStoreType.NONE))
 		{
-			player.sendPacket(SystemMessageId.YOU_CANNOT_SUMMON_DURING_A_TRADE_OR_WHILE_USING_A_PRIVATE_STORE);
+			player.sendPacket(SystemMessageId.CANNOT_BE_SUMMONED_WHILE_TRADING);
 			canSummon = false;
 		}
 		else if (AttackStanceTaskManager.getInstance().hasAttackStanceTask(player))
 		{
-			player.sendPacket(SystemMessageId.YOU_CANNOT_SUMMON_DURING_COMBAT);
+			player.sendPacket(SystemMessageId.CANNOT_BE_SUMMONED_WHILE_IN_COMBAT);
 			canSummon = false;
 		}
 		else if (player.isInAirShip())

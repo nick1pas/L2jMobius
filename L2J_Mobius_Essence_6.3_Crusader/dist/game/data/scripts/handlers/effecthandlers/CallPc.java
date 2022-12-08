@@ -85,7 +85,7 @@ public class CallPc extends AbstractEffect
 				}
 				target.addScript(new SummonRequestHolder(player));
 				
-				final ConfirmDlg confirm = new ConfirmDlg(SystemMessageId.C1_WISHES_TO_SUMMON_YOU_FROM_S2_DO_YOU_ACCEPT.getId());
+				final ConfirmDlg confirm = new ConfirmDlg(SystemMessageId.C1_WANTS_TO_SUMMON_YOU_TO_S2_ACCEPT.getId());
 				confirm.getSystemMessage().addString(player.getName());
 				confirm.getSystemMessage().addZoneName(player.getX(), player.getY(), player.getZ());
 				confirm.addTime(30000);
@@ -157,7 +157,7 @@ public class CallPc extends AbstractEffect
 		
 		if (target.inObserverMode() || OlympiadManager.getInstance().isRegisteredInComp(target))
 		{
-			final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING_OR_TELEPORTING_2);
+			final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHERE_SUMMONING_OR_TELEPORTING_IS_BLOCKED_2);
 			sm.addString(target.getName());
 			effector.sendPacket(sm);
 			return false;
@@ -165,7 +165,7 @@ public class CallPc extends AbstractEffect
 		
 		if (target.isInsideZone(ZoneId.NO_SUMMON_FRIEND) || target.isInsideZone(ZoneId.JAIL))
 		{
-			final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING_OR_TELEPORTING);
+			final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHERE_SUMMONING_OR_TELEPORTING_IS_BLOCKED);
 			sm.addString(target.getName());
 			effector.sendPacket(sm);
 			return false;
@@ -174,7 +174,7 @@ public class CallPc extends AbstractEffect
 		final Instance instance = effector.getInstanceWorld();
 		if ((instance != null) && !instance.isPlayerSummonAllowed())
 		{
-			effector.sendPacket(SystemMessageId.YOU_MAY_NOT_SUMMON_FROM_YOUR_CURRENT_LOCATION);
+			effector.sendPacket(SystemMessageId.CANNOT_BE_SUMMONED_IN_THIS_LOCATION);
 			return false;
 		}
 		

@@ -215,7 +215,7 @@ public class TradeRequest implements ClientPacket
 		
 		if (BlockList.isBlocked(partner, player))
 		{
-			sm = new SystemMessage(SystemMessageId.C1_HAS_PLACED_YOU_ON_HIS_HER_IGNORE_LIST);
+			sm = new SystemMessage(SystemMessageId.C1_HAS_PLACED_YOU_ON_THEIR_IGNORE_LIST);
 			sm.addString(partner.getName());
 			player.sendPacket(sm);
 			return;

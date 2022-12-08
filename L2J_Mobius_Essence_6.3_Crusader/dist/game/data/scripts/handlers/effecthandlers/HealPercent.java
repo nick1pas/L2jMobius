@@ -93,7 +93,7 @@ public class HealPercent extends AbstractEffect
 			}
 			else
 			{
-				sm = new SystemMessage(SystemMessageId.S1_HP_HAS_BEEN_RESTORED);
+				sm = new SystemMessage(SystemMessageId.YOU_VE_RECOVERED_S1_HP);
 			}
 			sm.addInt((int) amount);
 			effected.sendPacket(sm);

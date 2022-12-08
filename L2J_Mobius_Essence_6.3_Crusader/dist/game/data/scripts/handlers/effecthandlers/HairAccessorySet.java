@@ -51,6 +51,6 @@ public class HairAccessorySet extends AbstractEffect
 		final Player player = effected.getActingPlayer();
 		player.setHairAccessoryEnabled(!player.isHairAccessoryEnabled());
 		player.broadcastUserInfo(UserInfoType.APPAREANCE);
-		player.sendPacket(player.isHairAccessoryEnabled() ? SystemMessageId.HAIR_ACCESSORIES_WILL_BE_DISPLAYED_FROM_NOW_ON : SystemMessageId.HAIR_ACCESSORIES_WILL_NO_LONGER_BE_DISPLAYED);
+		player.sendPacket(player.isHairAccessoryEnabled() ? SystemMessageId.HEAD_ACCESSORIES_ARE_VISIBLE_FROM_NOW_ON : SystemMessageId.HEAD_ACCESSORIES_ARE_NO_LONGER_SHOWN);
 	}
 }

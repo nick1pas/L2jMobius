@@ -120,11 +120,11 @@ public class ClanWar
 			}
 			
 			// System Message notification to clan members
-			SystemMessage sm = new SystemMessage(SystemMessageId.BECAUSE_C1_WAS_KILLED_BY_A_CLAN_MEMBER_OF_S2_CLAN_REPUTATION_DECREASED_BY_1);
+			SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_KILLED_BY_A_MEMBER_OF_THE_S2_CLAN_CLAN_REPUTATION_POINTS_1);
 			sm.addPcName(victim);
 			sm.addString(killerClan.getName());
 			victimClan.broadcastToOnlineMembers(sm);
-			sm = new SystemMessage(SystemMessageId.BECAUSE_CLAN_MEMBER_OF_S1_WAS_KILLED_BY_C2_CLAN_REPUTATION_INCREASED_BY_1);
+			sm = new SystemMessage(SystemMessageId.A_MEMBER_OF_THE_S1_CLAN_IS_KILLED_BY_C2_CLAN_REPUTATION_POINTS_1);
 			sm.addString(victimClan.getName());
 			sm.addPcName(killer);
 			killerClan.broadcastToOnlineMembers(sm);

@@ -320,7 +320,7 @@ public class HuntPass
 				_sayhasSustentionTask.cancel(true);
 				_sayhasSustentionTask = null;
 			}
-			_user.sendPacket(new SystemMessage(SystemMessageId.SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_IS_ACTIVATED_AVAILABLE_SAYHA_S_GRACE_SUSTENTION_TIME_IS_RUNNING));
+			_user.sendPacket(new SystemMessage(SystemMessageId.THE_MAXIMUM_NUMBER_OF_WORLD_TRADE_ITEMS_FOR_REGISTRATION_IS_10));
 			_sayhasSustentionTask = ThreadPool.schedule(this::onSayhaEndTime, Math.max(0, getAvailableSayhaTime() - getUsedSayhaTime()) * 1000L);
 		}
 		else
@@ -331,7 +331,7 @@ public class HuntPass
 				_toggleStartTime = 0;
 				_sayhasSustentionTask.cancel(true);
 				_sayhasSustentionTask = null;
-				_user.sendPacket(new SystemMessage(SystemMessageId.SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_HAS_BEEN_DEACTIVATED_THE_SUSTENTION_TIME_YOU_HAVE_DOES_NOT_DECREASE));
+				_user.sendPacket(new SystemMessage(SystemMessageId.THE_MAXIMUM_NUMBER_OF_WORLD_TRADE_ITEMS_FOR_REGISTRATION_IS_10));
 			}
 		}
 	}

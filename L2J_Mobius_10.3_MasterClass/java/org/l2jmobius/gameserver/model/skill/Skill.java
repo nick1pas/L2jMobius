@@ -1053,7 +1053,7 @@ public class Skill implements IIdentifiable
 		
 		if (creature.isPlayer() && creature.getActingPlayer().isMounted() && isBad() && !MountEnabledSkillList.contains(_id))
 		{
-			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
+			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_THE_FUNCTION_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
 			sm.addSkillName(_id);
 			creature.sendPacket(sm);
 			return false;
@@ -1063,7 +1063,7 @@ public class Skill implements IIdentifiable
 		{
 			if (sendMessage && !((creature == object) && isBad())) // Self targeted bad skills should not send a message.
 			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.S1_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.S1_THE_FUNCTION_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
 				sm.addSkillName(_id);
 				creature.sendPacket(sm);
 			}

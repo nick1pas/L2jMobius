@@ -404,7 +404,7 @@ public class SystemMessage extends ServerPacket
 				{
 					params[i] = _params[i].getValue();
 				}
-				writeShort(SystemMessageId.S1_2.getId());
+				writeShort(SystemMessageId.S1_3.getId());
 				writeByte(1);
 				writeByte(TYPE_TEXT);
 				writeString(sml.getLocalisation(params));

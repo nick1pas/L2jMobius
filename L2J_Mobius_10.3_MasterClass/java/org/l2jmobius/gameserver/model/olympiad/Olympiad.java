@@ -577,7 +577,7 @@ public class Olympiad extends ListenersContainer
 					player.sendPacket(new ExOlympiadInfo(0));
 				}
 				
-				Broadcast.toAllOnlinePlayers(new SystemMessage(SystemMessageId.BATTLES_IN_THE_OLYMPIAD_GAMES_ARE_NOW_OVER));
+				Broadcast.toAllOnlinePlayers(new SystemMessage(SystemMessageId.THE_OLYMPIAD_IS_OVER));
 				LOGGER.info("Olympiad System: Olympiad games have ended.");
 				
 				while (OlympiadGameManager.getInstance().isBattleStarted()) // cleared in game manager

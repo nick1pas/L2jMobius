@@ -60,7 +60,7 @@ public class AnswerCoupleAction implements ClientPacket
 		
 		if (_answer == 0) // cancel
 		{
-			target.sendPacket(SystemMessageId.THE_COUPLE_ACTION_WAS_DENIED);
+			target.sendPacket(SystemMessageId.THE_COUPLE_ACTION_REQUEST_HAS_BEEN_DENIED);
 		}
 		else if (_answer == 1) // approve
 		{

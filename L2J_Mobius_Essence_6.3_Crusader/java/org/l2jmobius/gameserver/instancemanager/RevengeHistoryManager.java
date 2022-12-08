@@ -292,7 +292,7 @@ public class RevengeHistoryManager
 		}
 		if (player.isInCombat() || player.isDisabled())
 		{
-			player.sendPacket(SystemMessageId.YOU_CANNOT_TELEPORT_WHILE_IN_COMBAT_MODE);
+			player.sendPacket(SystemMessageId.YOU_CANNOT_TELEPORT_WHILE_IN_COMBAT);
 			return false;
 		}
 		

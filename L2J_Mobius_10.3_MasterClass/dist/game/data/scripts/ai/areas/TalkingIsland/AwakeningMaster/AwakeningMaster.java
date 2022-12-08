@@ -289,7 +289,7 @@ public class AwakeningMaster extends AbstractNpcAI
 		{
 			player.setBaseClass(player.getActiveClass());
 		}
-		player.sendPacket(SystemMessageId.CONGRATULATIONS_YOU_VE_COMPLETED_A_CLASS_TRANSFER);
+		player.sendPacket(SystemMessageId.CONGRATULATIONS_YOU_VE_COMPLETED_THE_CLASS_CHANGE);
 		player.broadcastUserInfo(UserInfoType.BASIC_INFO, UserInfoType.MAX_HPCPMP);
 		player.broadcastInfo();
 		

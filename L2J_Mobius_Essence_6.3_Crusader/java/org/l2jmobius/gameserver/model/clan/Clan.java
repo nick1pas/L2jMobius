@@ -2418,7 +2418,7 @@ public class Clan implements IIdentifiable, INamable
 		}
 		if (_level < 5)
 		{
-			player.sendPacket(SystemMessageId.TO_CREATE_AN_ALLIANCE_YOUR_CLAN_MUST_BE_LEVEL_5_OR_HIGHER);
+			player.sendPacket(SystemMessageId.TO_CREATE_AN_ALLIANCE_YOUR_CLAN_MUST_BE_LV_5_OR_HIGHER);
 			return;
 		}
 		if ((_allyPenaltyExpiryTime > System.currentTimeMillis()) && (_allyPenaltyType == PENALTY_TYPE_DISSOLVE_ALLY))
@@ -2462,7 +2462,7 @@ public class Clan implements IIdentifiable, INamable
 	{
 		if (_allyId == 0)
 		{
-			player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_ALLIED_WITH_ANY_CLANS);
+			player.sendPacket(SystemMessageId.YOU_ARE_NOT_IN_AN_ALLIANCE);
 			return;
 		}
 		if (!player.isClanLeader() || (_clanId != _allyId))

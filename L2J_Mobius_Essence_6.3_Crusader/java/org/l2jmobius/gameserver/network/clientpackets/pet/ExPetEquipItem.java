@@ -88,7 +88,7 @@ public class ExPetEquipItem implements ClientPacket
 		// Char cannot use item when dead
 		if (player.isDead() || pet.isDead() || !player.getInventory().canManipulateWithItemId(item.getId()))
 		{
-			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_CANNOT_BE_USED_DUE_TO_UNSUITABLE_TERMS);
+			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_THE_FUNCTION_CANNOT_BE_USED_AS_CERTAIN_REQUIREMENTS_ARE_NOT_MET);
 			sm.addItemName(item);
 			player.sendPacket(sm);
 			return;

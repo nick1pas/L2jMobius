@@ -96,7 +96,7 @@ public class RequestAllyInfo implements ClientPacket
 		}
 		else
 		{
-			player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_ALLIED_WITH_ANY_CLANS);
+			player.sendPacket(SystemMessageId.YOU_ARE_NOT_IN_AN_ALLIANCE);
 		}
 	}
 }

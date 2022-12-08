@@ -76,7 +76,7 @@ public class CombatFlag
 		// Equip with the weapon
 		_item = item;
 		_player.getInventory().equipItem(_item);
-		final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1);
+		final SystemMessage sm = new SystemMessage(SystemMessageId.S1_EQUIPPED);
 		sm.addItemName(_item);
 		_player.sendPacket(sm);
 		

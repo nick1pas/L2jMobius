@@ -2274,13 +2274,13 @@ public class Player extends Playable
 		{
 			if (item.getEnchantLevel() > 0)
 			{
-				sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 				sm.addInt(item.getEnchantLevel());
 				sm.addItemName(item);
 			}
 			else
 			{
-				sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 				sm.addItemName(item);
 			}
 			sendPacket(sm);
@@ -2303,13 +2303,13 @@ public class Player extends Playable
 			{
 				if (item.getEnchantLevel() > 0)
 				{
-					sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1_S2);
+					sm = new SystemMessage(SystemMessageId.S1_S2_EQUIPPED);
 					sm.addInt(item.getEnchantLevel());
 					sm.addItemName(item);
 				}
 				else
 				{
-					sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1);
+					sm = new SystemMessage(SystemMessageId.S1_EQUIPPED);
 					sm.addItemName(item);
 				}
 				sendPacket(sm);
@@ -2535,7 +2535,7 @@ public class Player extends Playable
 			}
 			else
 			{
-				sendPacket(SystemMessageId.CONGRATULATIONS_YOU_VE_COMPLETED_A_CLASS_TRANSFER);
+				sendPacket(SystemMessageId.CONGRATULATIONS_YOU_VE_COMPLETED_THE_CLASS_CHANGE);
 			}
 			
 			// Remove class permitted hennas.
@@ -6122,13 +6122,13 @@ public class Player extends Playable
 			final Item unequippedItem = unequipped.get(0);
 			if (unequippedItem.getEnchantLevel() > 0)
 			{
-				sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 				sm.addInt(unequippedItem.getEnchantLevel());
 				sm.addItemName(unequippedItem);
 			}
 			else
 			{
-				sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 				sm.addItemName(unequippedItem);
 			}
 			sendPacket(sm);
@@ -6163,13 +6163,13 @@ public class Player extends Playable
 				final Item unequippedItem = unequipped.get(0);
 				if (unequippedItem.getEnchantLevel() > 0)
 				{
-					sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+					sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 					sm.addInt(unequippedItem.getEnchantLevel());
 					sm.addItemName(unequippedItem);
 				}
 				else
 				{
-					sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+					sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 					sm.addItemName(unequippedItem);
 				}
 				sendPacket(sm);
@@ -8726,7 +8726,7 @@ public class Player extends Playable
 		
 		if (_observerMode)
 		{
-			sendPacket(SystemMessageId.OBSERVERS_CANNOT_PARTICIPATE);
+			sendPacket(SystemMessageId.YOU_CANNOT_USE_THIS_FUNCTION_IN_THE_OBSERVER_MODE);
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return false;
 		}
@@ -12190,13 +12190,13 @@ public class Player extends Playable
 				
 				if (equippedItem.getEnchantLevel() > 0)
 				{
-					sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+					sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 					sm.addInt(equippedItem.getEnchantLevel());
 					sm.addItemName(equippedItem);
 				}
 				else
 				{
-					sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+					sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 					sm.addItemName(equippedItem);
 				}
 				sendPacket(sm);

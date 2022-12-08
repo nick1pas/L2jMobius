@@ -211,7 +211,7 @@ public class RequestRecipeShopMakeItem implements ClientPacket
 		{
 			if (craftingCritical)
 			{
-				player.sendPacket(SystemMessageId.CRAFTING_CRITICAL);
+				player.sendPacket(SystemMessageId.CRITICAL_CRAFT);
 			}
 			if (craftedItem.getCount() > 1)
 			{

@@ -458,7 +458,7 @@ public class ItemAuction
 					return false;
 				}
 				
-				player.sendPacket(SystemMessageId.YOU_CURRENTLY_HAVE_THE_HIGHEST_BID_BUT_THE_RESERVE_HAS_NOT_BEEN_MET);
+				player.sendPacket(SystemMessageId.YOU_CURRENTLY_HAVE_THE_HIGHEST_BID);
 				return true;
 			}
 			

@@ -77,7 +77,7 @@ public class ExRequestTeleport implements ClientPacket
 		// Teleport in combat configuration.
 		if (!Config.TELEPORT_WHILE_PLAYER_IN_COMBAT && (player.isInCombat() || player.isCastingNow()))
 		{
-			player.sendPacket(SystemMessageId.YOU_CANNOT_TELEPORT_WHILE_IN_COMBAT_MODE);
+			player.sendPacket(SystemMessageId.YOU_CANNOT_TELEPORT_WHILE_IN_COMBAT);
 			return;
 		}
 		

@@ -52,7 +52,7 @@ public class RequestOustPledgeMember implements ClientPacket
 		}
 		if (player.getClan() == null)
 		{
-			player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_AND_CANNOT_PERFORM_THIS_ACTION);
+			player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_2);
 			return;
 		}
 		if (!player.hasClanPrivilege(ClanPrivilege.CL_DISMISS))

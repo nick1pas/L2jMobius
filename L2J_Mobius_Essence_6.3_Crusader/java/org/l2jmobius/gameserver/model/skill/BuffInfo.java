@@ -311,7 +311,7 @@ public class BuffInfo
 		// When effects are initialized, the successfully landed.
 		if (!_hideStartMessage && _effected.isPlayer() && !_skill.isHidingMessages() && !_skill.isAura())
 		{
-			final SystemMessage sm = new SystemMessage(_skill.isToggle() ? SystemMessageId.YOU_VE_USED_S1 : SystemMessageId.S1_S_EFFECT_CAN_BE_FELT);
+			final SystemMessage sm = new SystemMessage(_skill.isToggle() ? SystemMessageId.YOU_VE_USED_S1 : SystemMessageId.YOU_FEEL_THE_S1_EFFECT);
 			sm.addSkillName(_skill);
 			_effected.sendPacket(sm);
 		}

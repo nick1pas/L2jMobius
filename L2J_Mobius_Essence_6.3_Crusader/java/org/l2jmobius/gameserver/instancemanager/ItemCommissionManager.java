@@ -338,7 +338,7 @@ public class ItemCommissionManager
 		
 		if (!player.isInventoryUnder80(false) || (player.getWeightPenalty() >= 3))
 		{
-			player.sendPacket(SystemMessageId.IF_THE_WEIGHT_IS_80_OR_MORE_AND_THE_INVENTORY_NUMBER_IS_90_OR_MORE_PURCHASE_CANCELLATION_IS_NOT_POSSIBLE);
+			player.sendPacket(SystemMessageId.TO_BUY_CANCEL_YOU_NEED_20_OF_FREE_WEIGHT_AND_10_OF_FREE_SLOTS_IN_YOUR_INVENTORY);
 			player.sendPacket(SystemMessageId.FAILED_TO_CANCEL_THE_SALE);
 			player.sendPacket(ExResponseCommissionDelete.FAILED);
 			return;
@@ -389,7 +389,7 @@ public class ItemCommissionManager
 		
 		if (!player.isInventoryUnder80(false) || (player.getWeightPenalty() >= 3))
 		{
-			player.sendPacket(SystemMessageId.IF_THE_WEIGHT_IS_80_OR_MORE_AND_THE_INVENTORY_NUMBER_IS_90_OR_MORE_PURCHASE_CANCELLATION_IS_NOT_POSSIBLE);
+			player.sendPacket(SystemMessageId.TO_BUY_CANCEL_YOU_NEED_20_OF_FREE_WEIGHT_AND_10_OF_FREE_SLOTS_IN_YOUR_INVENTORY);
 			player.sendPacket(ExResponseCommissionBuyItem.FAILED);
 			return;
 		}

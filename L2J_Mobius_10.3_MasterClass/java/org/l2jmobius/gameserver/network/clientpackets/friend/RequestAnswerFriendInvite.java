@@ -84,13 +84,13 @@ public class RequestAnswerFriendInvite implements ClientPacket
 				requestor.sendPacket(msg);
 				
 				// Player added to your friend list
-				msg = new SystemMessage(SystemMessageId.S1_HAS_BEEN_ADDED_TO_YOUR_FRIENDS_LIST);
+				msg = new SystemMessage(SystemMessageId.S1_HAS_BEEN_ADDED_TO_YOUR_FRIEND_LIST);
 				msg.addString(player.getName());
 				requestor.sendPacket(msg);
 				requestor.getFriendList().add(player.getObjectId());
 				
 				// has joined as friend.
-				msg = new SystemMessage(SystemMessageId.S1_HAS_BEEN_ADDED_TO_YOUR_FRIENDS_LIST_2);
+				msg = new SystemMessage(SystemMessageId.S1_HAS_BEEN_ADDED_TO_YOUR_FRIEND_LIST_2);
 				msg.addString(requestor.getName());
 				player.sendPacket(msg);
 				player.getFriendList().add(requestor.getObjectId());

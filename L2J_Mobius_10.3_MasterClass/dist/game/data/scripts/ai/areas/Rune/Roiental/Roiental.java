@@ -61,7 +61,7 @@ public class Roiental extends AbstractNpcAI
 			}
 			else if (player.getClan() == null)
 			{
-				player.sendPacket(SystemMessageId.YOU_DO_NOT_BELONG_TO_ANY_CLAN);
+				player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_3);
 			}
 			else if ((player.getClan().getLevel() < CLAN_MIN_LVL_GB))
 			{
@@ -88,7 +88,7 @@ public class Roiental extends AbstractNpcAI
 			}
 			else if (player.getClan() == null)
 			{
-				player.sendPacket(SystemMessageId.YOU_DO_NOT_BELONG_TO_ANY_CLAN);
+				player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_3);
 			}
 			else if ((player.getClan().getLevel() < CLAN_MIN_LVL_MR))
 			{
@@ -115,7 +115,7 @@ public class Roiental extends AbstractNpcAI
 			}
 			else if (player.getClan() == null)
 			{
-				player.sendPacket(SystemMessageId.YOU_DO_NOT_BELONG_TO_ANY_CLAN);
+				player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_3);
 			}
 			else if ((player.getClan().getLevel() < CLAN_MIN_LVL_TA))
 			{

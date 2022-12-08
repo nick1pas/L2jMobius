@@ -58,7 +58,7 @@ public class SummonItems extends ItemSkillsTemplate
 		
 		if (player.isAttackingNow())
 		{
-			player.sendPacket(SystemMessageId.YOU_CANNOT_SUMMON_DURING_COMBAT);
+			player.sendPacket(SystemMessageId.CANNOT_BE_SUMMONED_WHILE_IN_COMBAT);
 			return false;
 		}
 		

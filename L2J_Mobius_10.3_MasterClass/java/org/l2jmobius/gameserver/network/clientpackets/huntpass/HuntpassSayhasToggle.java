@@ -53,7 +53,7 @@ public class HuntpassSayhasToggle implements ClientPacket
 		int timeUsed = huntPass.getUsedSayhaTime();
 		if (player.getVitalityPoints() < 35000)
 		{
-			player.sendPacket(SystemMessageId.UNABLE_TO_ACTIVATE_YOU_CAN_USE_SAYHA_S_GRACE_SUSTENTION_EFFECT_OF_THE_SEASON_PASS_ONLY_IF_YOU_HAVE_AT_LEAST_35_000_SAYHA_S_GRACE_POINTS);
+			player.sendPacket(SystemMessageId.THE_MAXIMUM_NUMBER_OF_WORLD_TRADE_ITEMS_FOR_REGISTRATION_IS_10);
 			return;
 		}
 		

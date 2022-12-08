@@ -65,26 +65,26 @@ public class AdminPetition implements IAdminCommandHandler
 		{
 			if (PetitionManager.getInstance().isPlayerInConsultation(activeChar))
 			{
-				activeChar.sendPacket(SystemMessageId.YOU_MAY_ONLY_SUBMIT_ONE_PETITION_ACTIVE_AT_A_TIME);
+				activeChar.sendPacket(SystemMessageId.YOUR_GLOBAL_SUPPORT_REQUEST_WAS_RECEIVED);
 				return true;
 			}
 			
 			if (PetitionManager.getInstance().isPetitionInProcess(petitionId))
 			{
-				activeChar.sendPacket(SystemMessageId.YOUR_PETITION_IS_BEING_PROCESSED);
+				activeChar.sendPacket(SystemMessageId.YOUR_GLOBAL_SUPPORT_REQUEST_IS_BEING_PROCESSED);
 				return true;
 			}
 			
 			if (!PetitionManager.getInstance().acceptPetition(activeChar, petitionId))
 			{
-				activeChar.sendPacket(SystemMessageId.NOT_UNDER_PETITION_CONSULTATION);
+				activeChar.sendPacket(SystemMessageId.NO_GLOBAL_SUPPORT_CONSULTATIONS_ARE_UNDER_WAY);
 			}
 		}
 		else if (command.startsWith("admin_reject_petition"))
 		{
 			if (!PetitionManager.getInstance().rejectPetition(activeChar, petitionId))
 			{
-				activeChar.sendPacket(SystemMessageId.FAILED_TO_CANCEL_PETITION_PLEASE_TRY_AGAIN_LATER);
+				activeChar.sendPacket(SystemMessageId.FAILED_TO_CANCEL_YOUR_GLOBAL_SUPPORT_REQUEST_PLEASE_TRY_AGAIN_LATER);
 			}
 			PetitionManager.getInstance().sendPendingPetitionList(activeChar);
 		}
@@ -92,7 +92,7 @@ public class AdminPetition implements IAdminCommandHandler
 		{
 			if (PetitionManager.getInstance().isPetitionInProcess())
 			{
-				activeChar.sendPacket(SystemMessageId.YOUR_PETITION_IS_BEING_PROCESSED);
+				activeChar.sendPacket(SystemMessageId.YOUR_GLOBAL_SUPPORT_REQUEST_IS_BEING_PROCESSED);
 				return false;
 			}
 			PetitionManager.getInstance().clearPendingPetitions();

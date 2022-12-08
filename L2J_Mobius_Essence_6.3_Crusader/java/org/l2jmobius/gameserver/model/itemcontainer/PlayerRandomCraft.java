@@ -321,7 +321,7 @@ public class PlayerRandomCraft
 			_craftPoints = MAX_CRAFT_POINTS;
 		}
 		
-		final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_ACQUIRED_S1_CRAFT_SCALE_POINTS);
+		final SystemMessage sm = new SystemMessage(SystemMessageId.CRAFT_POINTS_S1);
 		sm.addLong(value);
 		_player.sendPacket(sm);
 		_player.sendPacket(new ExCraftInfo(_player));

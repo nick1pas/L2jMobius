@@ -482,7 +482,7 @@ public class RecipeManager
 				grabItems -= count;
 				if (_target == _player)
 				{
-					final SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1_S2); // you equipped ...
+					final SystemMessage sm = new SystemMessage(SystemMessageId.S1_S2_EQUIPPED); // you equipped ...
 					sm.addLong(count);
 					sm.addItemName(item.getItemId());
 					_player.sendPacket(sm);

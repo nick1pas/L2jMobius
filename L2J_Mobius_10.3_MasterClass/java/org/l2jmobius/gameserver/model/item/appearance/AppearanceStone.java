@@ -344,7 +344,7 @@ public class AppearanceStone
 					{
 						if ((targetItem.getTemplate().getBodyPart() != ItemTemplate.SLOT_HAIR) && (targetItem.getTemplate().getBodyPart() != ItemTemplate.SLOT_HAIR2) && (targetItem.getTemplate().getBodyPart() != ItemTemplate.SLOT_HAIRALL))
 						{
-							player.sendPacket(SystemMessageId.HAIR_ACCESSORIES_ONLY);
+							player.sendPacket(SystemMessageId.HEAD_ACCESSORIES_ONLY);
 							return false;
 						}
 						break;
@@ -387,12 +387,12 @@ public class AppearanceStone
 			{
 				if (_weaponType != WeaponType.CROSSBOW)
 				{
-					player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_USED_AS_AN_APPEARANCE_WEAPON);
+					player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_EXTRACTED);
 					return false;
 				}
 				else if ((targetItem.getItemType() != WeaponType.CROSSBOW) && (targetItem.getItemType() != WeaponType.TWOHANDCROSSBOW))
 				{
-					player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_USED_AS_AN_APPEARANCE_WEAPON);
+					player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_EXTRACTED);
 					return false;
 				}
 			}

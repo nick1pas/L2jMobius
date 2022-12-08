@@ -65,7 +65,7 @@ public class OpSweeperSkillCondition implements ISkillCondition
 							}
 							else
 							{
-								sweeper.sendPacket(SystemMessageId.SWEEPER_FAILED_TARGET_NOT_SPOILED);
+								sweeper.sendPacket(SystemMessageId.THE_SWEEPER_HAS_FAILED_AS_THE_TARGET_IS_NOT_SPOILED);
 							}
 						}
 					}

@@ -54,7 +54,7 @@ public class RequestJoinAlly implements ClientPacket
 		final Clan clan = player.getClan();
 		if (clan == null)
 		{
-			player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_AND_CANNOT_PERFORM_THIS_ACTION);
+			player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_2);
 			return;
 		}
 		

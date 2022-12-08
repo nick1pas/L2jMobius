@@ -138,7 +138,7 @@ public class MoveToLocationAirShip implements ClientPacket
 				{
 					if (fuelConsumption > ship.getFuel())
 					{
-						player.sendPacket(SystemMessageId.YOUR_AIRSHIP_CANNOT_TELEPORT_BECAUSE_DUE_TO_LOW_FUEL);
+						player.sendPacket(SystemMessageId.NOT_ENOUGH_FUEL_FOR_TELEPORTATION);
 						return;
 					}
 					ship.setFuel(ship.getFuel() - fuelConsumption);

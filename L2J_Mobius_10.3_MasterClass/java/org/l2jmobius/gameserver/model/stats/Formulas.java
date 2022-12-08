@@ -621,7 +621,7 @@ public class Formulas
 			{
 				case SHIELD_DEFENSE_SUCCEED:
 				{
-					enemy.sendPacket(SystemMessageId.YOUR_SHIELD_DEFENSE_HAS_SUCCEEDED);
+					enemy.sendPacket(SystemMessageId.YOU_VE_BLOCKED_THE_ATTACK);
 					break;
 				}
 				case SHIELD_DEFENSE_PERFECT_BLOCK:

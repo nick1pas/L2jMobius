@@ -149,7 +149,7 @@ public class RequestAlchemyTryMixCube implements ClientPacket
 			final long price = itemInstance.getReferencePrice();
 			if (itemInstance.getReferencePrice() == 0)
 			{
-				player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_COMBINED);
+				player.sendPacket(SystemMessageId.THIS_ITEM_CANNOT_BE_USED_IN_COMPOUNDING);
 				player.sendPacket(new ExTryMixCube(TryMixCubeType.FAIL_ITEM_WRONG));
 				return;
 			}

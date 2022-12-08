@@ -111,13 +111,13 @@ public class ConvertItem extends AbstractEffect
 			final SystemMessage sm;
 			if (unequippedItem.getEnchantLevel() > 0)
 			{
-				sm = new SystemMessage(SystemMessageId.ITEM_S1_S2_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_S2_UNEQUIPPED);
 				sm.addInt(unequippedItem.getEnchantLevel());
 				sm.addItemName(unequippedItem);
 			}
 			else
 			{
-				sm = new SystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+				sm = new SystemMessage(SystemMessageId.S1_UNEQUIPPED);
 				sm.addItemName(unequippedItem);
 			}
 			player.sendPacket(sm);
@@ -150,13 +150,13 @@ public class ConvertItem extends AbstractEffect
 		final SystemMessage msg;
 		if (newItem.getEnchantLevel() > 0)
 		{
-			msg = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1_S2);
+			msg = new SystemMessage(SystemMessageId.S1_S2_EQUIPPED);
 			msg.addInt(newItem.getEnchantLevel());
 			msg.addItemName(newItem);
 		}
 		else
 		{
-			msg = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1);
+			msg = new SystemMessage(SystemMessageId.S1_EQUIPPED);
 			msg.addItemName(newItem);
 		}
 		player.sendPacket(msg);

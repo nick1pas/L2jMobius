@@ -54,7 +54,7 @@ public class RequestPetitionCancel implements ClientPacket
 			}
 			else
 			{
-				player.sendPacket(SystemMessageId.YOUR_PETITION_IS_BEING_PROCESSED);
+				player.sendPacket(SystemMessageId.YOUR_GLOBAL_SUPPORT_REQUEST_IS_BEING_PROCESSED);
 			}
 		}
 		else if (PetitionManager.getInstance().isPlayerPetitionPending(player))
@@ -62,7 +62,7 @@ public class RequestPetitionCancel implements ClientPacket
 			if (PetitionManager.getInstance().cancelActivePetition(player))
 			{
 				final int numRemaining = Config.MAX_PETITIONS_PER_PLAYER - PetitionManager.getInstance().getPlayerTotalPetitionCount(player);
-				final SystemMessage sm = new SystemMessage(SystemMessageId.THE_PETITION_WAS_CANCELED_YOU_MAY_SUBMIT_S1_MORE_PETITION_S_TODAY);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_GLOBAL_SUPPORT_REQUEST_HAS_BEEN_REVOKED_NUMBER_OR_REQUESTS_YOU_CAN_SEND_S1);
 				sm.addString(String.valueOf(numRemaining));
 				player.sendPacket(sm);
 				
@@ -72,12 +72,12 @@ public class RequestPetitionCancel implements ClientPacket
 			}
 			else
 			{
-				player.sendPacket(SystemMessageId.FAILED_TO_CANCEL_PETITION_PLEASE_TRY_AGAIN_LATER);
+				player.sendPacket(SystemMessageId.FAILED_TO_CANCEL_YOUR_GLOBAL_SUPPORT_REQUEST_PLEASE_TRY_AGAIN_LATER);
 			}
 		}
 		else
 		{
-			player.sendPacket(SystemMessageId.YOU_HAVE_NOT_SUBMITTED_A_PETITION);
+			player.sendPacket(SystemMessageId.GLOBAL_SUPPORT_DOES_NOT_ACCEPT_REQUESTS_AT_THE_MOMENT);
 		}
 	}
 }

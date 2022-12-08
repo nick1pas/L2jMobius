@@ -69,7 +69,7 @@ public class DimensionalVortex extends AbstractNpcAI
 				}
 				if (!player.isInParty())
 				{
-					player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
+					player.sendPacket(SystemMessageId.YOU_ARE_NOT_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
 					return null;
 				}
 				final Party party = player.getParty();

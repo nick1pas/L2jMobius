@@ -1221,7 +1221,7 @@ public class VillageMaster extends Folk
 		}
 		if (leaderName.length() > 16)
 		{
-			player.sendPacket(SystemMessageId.ENTER_THE_CHARACTER_S_NAME_BETWEEN_1_AND_16_CHARACTERS);
+			player.sendPacket(SystemMessageId.ENTER_THE_CHARACTER_S_NAME_UP_TO_16_CHARACTERS);
 			return;
 		}
 		if (player.getName().equals(leaderName))

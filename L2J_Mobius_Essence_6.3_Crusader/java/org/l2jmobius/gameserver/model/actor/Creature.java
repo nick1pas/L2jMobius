@@ -1056,7 +1056,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 			{
 				if (getActingPlayer().inObserverMode())
 				{
-					sendPacket(SystemMessageId.OBSERVERS_CANNOT_PARTICIPATE);
+					sendPacket(SystemMessageId.YOU_CANNOT_USE_THIS_FUNCTION_IN_THE_OBSERVER_MODE);
 					sendPacket(ActionFailed.STATIC_PACKET);
 					return;
 				}

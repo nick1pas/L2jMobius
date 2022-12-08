@@ -107,7 +107,7 @@ public class SocialAction implements IPlayerActionHandler
 	{
 		if (player != null)
 		{
-			player.sendPacket(SystemMessageId.THE_COUPLE_ACTION_WAS_DENIED);
+			player.sendPacket(SystemMessageId.THE_COUPLE_ACTION_REQUEST_HAS_BEEN_DENIED);
 			player.onTransactionResponse();
 		}
 	}

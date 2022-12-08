@@ -98,7 +98,7 @@ public class NightmareKamaloka extends AbstractInstance
 				
 				if (player.isInCommandChannel())
 				{
-					player.sendPacket(SystemMessageId.YOU_CANNOT_ENTER_BECAUSE_YOU_DO_NOT_MEET_THE_REQUIREMENTS);
+					player.sendPacket(SystemMessageId.YOU_CANNOT_ENTER_AS_YOU_DON_T_MEET_THE_REQUIREMENTS);
 					return null;
 				}
 				
@@ -135,7 +135,7 @@ public class NightmareKamaloka extends AbstractInstance
 			}
 			else
 			{
-				player.sendPacket(SystemMessageId.YOU_ARE_NOT_CURRENTLY_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
+				player.sendPacket(SystemMessageId.YOU_ARE_NOT_IN_A_PARTY_SO_YOU_CANNOT_ENTER);
 			}
 		}
 		else if ("SPAWN_BOSSES".equals(event))

@@ -395,7 +395,7 @@ public class CursedWeapon implements INamable
 		// Equip with the weapon
 		_item = item;
 		_player.getInventory().equipItem(_item);
-		SystemMessage sm = new SystemMessage(SystemMessageId.YOU_HAVE_EQUIPPED_S1);
+		SystemMessage sm = new SystemMessage(SystemMessageId.S1_EQUIPPED);
 		sm.addItemName(_item);
 		_player.sendPacket(sm);
 		

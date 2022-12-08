@@ -63,7 +63,7 @@ public class RequestHuntPassReward implements ClientPacket
 		final long slots = itemTemplate.isStackable() ? 1 : reward.getCount();
 		if (!player.getInventory().validateWeight(weight) || !player.getInventory().validateCapacity(slots))
 		{
-			player.sendPacket(SystemMessageId.YOUR_INVENTORY_S_WEIGHT_LIMIT_HAS_BEEN_EXCEEDED_SO_YOU_CAN_T_RECEIVE_THE_REWARD_PLEASE_FREE_UP_SOME_SPACE_AND_TRY_AGAIN);
+			player.sendPacket(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_2);
 			return;
 		}
 		
@@ -93,7 +93,7 @@ public class RequestHuntPassReward implements ClientPacket
 		{
 			final int count = (int) reward.getCount();
 			huntpass.addSayhaTime(count);
-			final SystemMessage msg = new SystemMessage(SystemMessageId.YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS);
+			final SystemMessage msg = new SystemMessage(SystemMessageId.YOU_ARE_NOT_A_CLAN_MEMBER_2);
 			msg.addInt(count);
 			player.sendPacket(msg);
 		}

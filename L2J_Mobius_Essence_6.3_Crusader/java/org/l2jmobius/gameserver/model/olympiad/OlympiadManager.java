@@ -102,7 +102,7 @@ public class OlympiadManager
 		{
 			if (showMessage)
 			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_ALREADY_REGISTERED_ON_THE_WAITING_LIST_FOR_THE_ALL_CLASS_BATTLE);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_ALREADY_REGISTERED_FOR_ALL_CLASS_BATTLES);
 				sm.addPcName(noble);
 				player.sendPacket(sm);
 			}
@@ -163,7 +163,7 @@ public class OlympiadManager
 					}
 					case NON_CLASSED:
 					{
-						final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_ALREADY_REGISTERED_ON_THE_WAITING_LIST_FOR_THE_ALL_CLASS_BATTLE);
+						final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_ALREADY_REGISTERED_FOR_ALL_CLASS_BATTLES);
 						sm.addPcName(noble);
 						player.sendPacket(sm);
 						break;

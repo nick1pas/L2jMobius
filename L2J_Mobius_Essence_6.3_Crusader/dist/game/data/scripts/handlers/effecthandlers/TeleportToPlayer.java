@@ -94,7 +94,7 @@ public class TeleportToPlayer extends AbstractEffect
 			
 			if (target.inObserverMode() || OlympiadManager.getInstance().isRegisteredInComp(target))
 			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING_OR_TELEPORTING_2);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHERE_SUMMONING_OR_TELEPORTING_IS_BLOCKED_2);
 				sm.addString(target.getName());
 				effector.sendPacket(sm);
 				return;
@@ -102,7 +102,7 @@ public class TeleportToPlayer extends AbstractEffect
 			
 			if (target.isInsideZone(ZoneId.NO_SUMMON_FRIEND) || target.isInsideZone(ZoneId.JAIL))
 			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING_OR_TELEPORTING);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHERE_SUMMONING_OR_TELEPORTING_IS_BLOCKED);
 				sm.addString(target.getName());
 				effector.sendPacket(sm);
 				return;
@@ -111,7 +111,7 @@ public class TeleportToPlayer extends AbstractEffect
 			final Instance instance = target.getInstanceWorld();
 			if (((instance != null) && !instance.isPlayerSummonAllowed()) || target.isInsideZone(ZoneId.TIMED_HUNTING))
 			{
-				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING_OR_TELEPORTING);
+				final SystemMessage sm = new SystemMessage(SystemMessageId.C1_IS_IN_AN_AREA_WHERE_SUMMONING_OR_TELEPORTING_IS_BLOCKED);
 				sm.addString(target.getName());
 				effector.sendPacket(sm);
 				return;
