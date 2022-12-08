@@ -183,7 +183,7 @@ public class Q00255_Tutorial extends Quest
 				{
 					qs.startQuest();
 					qs.setMemoState(1);
-					showOnScreenMsg(player, NpcStringId.SPEAK_WITH_THE_NEWBIE_HELPER, ExShowScreenMessage.TOP_CENTER, 5000);
+					showOnScreenMsg(player, NpcStringId.TALK_TO_NEWBIE_HELPER, ExShowScreenMessage.TOP_CENTER, 5000);
 					playTutorialVoice(player, STARTING_VOICE_HTML.get(player.getClassId().getId()).getSound());
 					showTutorialHtml(player, STARTING_VOICE_HTML.get(player.getClassId().getId()).getHtml());
 				}
@@ -363,7 +363,7 @@ public class Q00255_Tutorial extends Quest
 				{
 					if (qs.isMemoState(1))
 					{
-						showOnScreenMsg(event.getPlayer(), NpcStringId.SPEAK_WITH_THE_NEWBIE_HELPER, ExShowScreenMessage.TOP_CENTER, 5000);
+						showOnScreenMsg(event.getPlayer(), NpcStringId.TALK_TO_NEWBIE_HELPER, ExShowScreenMessage.TOP_CENTER, 5000);
 						final int classId = event.getPlayer().getClassId().getId();
 						addRadar(event.getPlayer(), HELPER_LOCATION.get(classId).getX(), HELPER_LOCATION.get(classId).getY(), HELPER_LOCATION.get(classId).getZ());
 						showTutorialHtml(event.getPlayer(), "tutorial_04.html");

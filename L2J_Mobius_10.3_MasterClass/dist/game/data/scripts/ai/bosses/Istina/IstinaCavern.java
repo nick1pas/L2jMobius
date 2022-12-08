@@ -248,7 +248,7 @@ public class IstinaCavern extends AbstractInstance
 						npc.setTargetable(true);
 						npc.setInvul(false);
 						npcVars.set("COUNTING_ENABLED", true);
-						showOnScreenMsg(instance, NpcStringId.START_CHARGING_MANA_BALLISTA, ExShowScreenMessage.MIDDLE_CENTER, 4000);
+						showOnScreenMsg(instance, NpcStringId.THE_MAGICAL_BALLISTA_IS_CHARGING, ExShowScreenMessage.MIDDLE_CENTER, 4000);
 					}
 					else
 					{

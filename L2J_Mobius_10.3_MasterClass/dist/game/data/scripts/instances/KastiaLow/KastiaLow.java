@@ -124,7 +124,7 @@ public class KastiaLow extends AbstractInstance
 					{
 						if (world.getAliveNpcCount() == 0)
 						{
-							showOnScreenMsg(world, NpcStringId.STAGE_4, ExShowScreenMessage.TOP_CENTER, 10000, true);
+							showOnScreenMsg(world, NpcStringId.LV_4_2, ExShowScreenMessage.TOP_CENTER, 10000, true);
 							world.setStatus(4);
 							world.spawnGroup("wave_4");
 						}
@@ -135,7 +135,7 @@ public class KastiaLow extends AbstractInstance
 					{
 						if (world.getAliveNpcCount() == 0)
 						{
-							showOnScreenMsg(world, NpcStringId.STAGE_5, ExShowScreenMessage.TOP_CENTER, 10000, true);
+							showOnScreenMsg(world, NpcStringId.LV_5_2, ExShowScreenMessage.TOP_CENTER, 10000, true);
 							world.setStatus(5);
 							world.spawnGroup("wave_5");
 						}
@@ -146,7 +146,7 @@ public class KastiaLow extends AbstractInstance
 					{
 						if (world.getAliveNpcCount() == 0)
 						{
-							showOnScreenMsg(world, NpcStringId.STAGE_6, ExShowScreenMessage.TOP_CENTER, 10000, true);
+							showOnScreenMsg(world, NpcStringId.LV_6_2, ExShowScreenMessage.TOP_CENTER, 10000, true);
 							world.setStatus(6);
 							world.spawnGroup("wave_6");
 						}
@@ -157,7 +157,7 @@ public class KastiaLow extends AbstractInstance
 					{
 						if (world.getAliveNpcCount() == 0)
 						{
-							showOnScreenMsg(world, NpcStringId.STAGE_7, ExShowScreenMessage.TOP_CENTER, 10000, true);
+							showOnScreenMsg(world, NpcStringId.LV_7_2, ExShowScreenMessage.TOP_CENTER, 10000, true);
 							world.setStatus(7);
 							world.spawnGroup("wave_7");
 						}

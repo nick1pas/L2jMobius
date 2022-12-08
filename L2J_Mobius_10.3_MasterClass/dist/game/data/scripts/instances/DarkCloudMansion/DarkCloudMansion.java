@@ -84,11 +84,11 @@ public class DarkCloudMansion extends AbstractInstance
 		NpcStringId.PICK_ME,
 		NpcStringId.TRUST_ME,
 		NpcStringId.NOT_THAT_DUDE_I_M_THE_REAL_ONE,
-		NpcStringId.DON_T_BE_FOOLED_DON_T_BE_FOOLED_I_M_THE_REAL_ONE
+		NpcStringId.DON_T_BE_FOOLED_I_M_THE_REAL_ONE
 	};
 	private static final NpcStringId[] DECAY_CHAT =
 	{
-		NpcStringId.I_M_THE_REAL_ONE_PHEW,
+		NpcStringId.I_M_THE_REAL_ONE_2,
 		NpcStringId.CAN_T_YOU_EVEN_FIND_OUT,
 		NpcStringId.FIND_ME
 	};

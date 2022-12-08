@@ -301,7 +301,7 @@ public class MonsterArena extends AbstractInstance
 			
 			// Make machine talk.
 			final Npc machine = world.getNpc(MACHINE);
-			machine.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.HA_NOT_BAD);
+			machine.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.HMM_NOT_BAD_2);
 			
 			// Save progress to global variables.
 			GlobalVariablesManager.getInstance().increaseInt(GlobalVariablesManager.MONSTER_ARENA_VARIABLE + machine.getScriptValue(), 1);

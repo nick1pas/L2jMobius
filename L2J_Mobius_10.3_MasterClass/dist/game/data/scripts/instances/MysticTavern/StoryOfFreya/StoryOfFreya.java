@@ -162,7 +162,7 @@ public class StoryOfFreya extends AbstractInstance
 					if (getRandom(10) < 5)
 					{
 						world.spawnGroup("knight");
-						world.broadcastPacket(new ExShowScreenMessage(NpcStringId.ICE_KNIGHTS_GOT_IN_DEFEAT_THE_ICE_KNIGHTS, ExShowScreenMessage.TOP_CENTER, 20000, true));
+						world.broadcastPacket(new ExShowScreenMessage(NpcStringId.FROZEN_LABYRINTH_KNIGHTS_HAVE_ATTACKED_US_DEFEAT_THEM, ExShowScreenMessage.TOP_CENTER, 20000, true));
 					}
 					else
 					{

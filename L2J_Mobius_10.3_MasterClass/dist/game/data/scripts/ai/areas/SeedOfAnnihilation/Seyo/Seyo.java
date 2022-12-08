@@ -124,7 +124,7 @@ public class Seyo extends AbstractNpcAI
 					{
 						final int itemCount = getRandom(10, 16);
 						giveItems(player, STONE_FRAGMENT, itemCount);
-						npc.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.S1_PULLED_ONE_WITH_S2_DIGITS_LUCKY_NOT_BAD, player.getName(), String.valueOf(itemCount));
+						npc.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.S1_HAS_PULLED_ONE_WITH_S2_DIGITS_LUCKY, player.getName(), String.valueOf(itemCount));
 					}
 					startQuestTimer("TRICKERY_TIMER", 5000, npc, null);
 				}

@@ -61,7 +61,7 @@ public class Q10302_FoilPlansOfTheLizardmen extends Quest
 		addKillId(MONSTERS);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		registerQuestItems(SOE_HIGH_PRIEST_OVEN.getId());
-		setQuestNameNpcStringId(NpcStringId.ERADICATE_MONSTERS_IN_THE_PLAINS_OF_THE_LIZARDMEN);
+		setQuestNameNpcStringId(NpcStringId.KILL_MONSTERS_IN_THE_PLAINS_OF_THE_LIZARDMEN);
 	}
 	
 	@Override
@@ -178,7 +178,7 @@ public class Q10302_FoilPlansOfTheLizardmen extends Quest
 		if ((qs != null) && qs.isCond(1))
 		{
 			final Set<NpcLogListHolder> holder = new HashSet<>();
-			holder.add(new NpcLogListHolder(NpcStringId.ERADICATE_MONSTERS_IN_THE_PLAINS_OF_THE_LIZARDMEN.getId(), true, qs.getInt(KILL_COUNT_VAR)));
+			holder.add(new NpcLogListHolder(NpcStringId.KILL_MONSTERS_IN_THE_PLAINS_OF_THE_LIZARDMEN.getId(), true, qs.getInt(KILL_COUNT_VAR)));
 			return holder;
 		}
 		return super.getNpcLogList(player);

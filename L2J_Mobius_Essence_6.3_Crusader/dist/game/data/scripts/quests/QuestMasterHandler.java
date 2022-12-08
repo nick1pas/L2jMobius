@@ -36,7 +36,6 @@ import quests.Q10299_GetIncrediblePower.Q10299_GetIncrediblePower;
 import quests.Q10300_ExploringTheCrumaTower.Q10300_ExploringTheCrumaTower;
 import quests.Q10301_NotSoSilentValley.Q10301_NotSoSilentValley;
 import quests.Q10302_FoilPlansOfTheLizardmen.Q10302_FoilPlansOfTheLizardmen;
-import quests.Q10303_SymbolOfHubris.Q10303_SymbolOfHubris;
 import quests.Q10304_ChangesintheDragonValley.Q10304_ChangesintheDragonValley;
 import quests.Q10305_DragonsSuspiciousMovements.Q10305_DragonsSuspiciousMovements;
 import quests.Q10306_StopSelMahumsTroops.Q10306_StopSelMahumsTroops;
@@ -101,7 +100,6 @@ public class QuestMasterHandler
 		Q10300_ExploringTheCrumaTower.class,
 		Q10301_NotSoSilentValley.class,
 		Q10302_FoilPlansOfTheLizardmen.class,
-		Q10303_SymbolOfHubris.class,
 		Q10304_ChangesintheDragonValley.class,
 		Q10305_DragonsSuspiciousMovements.class,
 		Q10306_StopSelMahumsTroops.class,

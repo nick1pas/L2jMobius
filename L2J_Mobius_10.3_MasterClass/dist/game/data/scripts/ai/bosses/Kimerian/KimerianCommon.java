@@ -65,7 +65,7 @@ public class KimerianCommon extends AbstractInstance
 		NpcStringId.THEY_ARE_ROOKIE_REBELLIONS,
 		NpcStringId.RESISTANCE_UNDERLINGS,
 		NpcStringId.TREASON_IS_PUNISHABLE_BY_DEATH,
-		NpcStringId.WHO_DO_YOU_THINK_YOU_ARE_TO_TRY_MY_AUTHORITY,
+		NpcStringId.DO_YOU_REALLY_WANT_TO_TEST_MY_ABILITIES,
 	};
 	private static final int TEMPLATE_ID = 161;
 	

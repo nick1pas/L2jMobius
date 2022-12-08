@@ -256,13 +256,13 @@ public class SystemMessageId
 	@ClientString(id = 70, message = "Do you wish to disperse the clan, $s1?")
 	public static SystemMessageId DO_YOU_WISH_TO_DISPERSE_THE_CLAN_S1;
 	
-	@ClientString(id = 71, message = "How much $s1(s) do you wish to discard? ")
+	@ClientString(id = 71, message = "How much $s1(s) do you wish to discard?")
 	public static SystemMessageId HOW_MUCH_S1_S_DO_YOU_WISH_TO_DISCARD;
 	
-	@ClientString(id = 72, message = "How many pieces of $s1 do you want to move? ")
+	@ClientString(id = 72, message = "How many pieces of $s1 do you want to move?")
 	public static SystemMessageId HOW_MANY_PIECES_OF_S1_DO_YOU_WANT_TO_MOVE;
 	
-	@ClientString(id = 73, message = "How much $s1(s) do you wish to destroy? ")
+	@ClientString(id = 73, message = "How much $s1(s) do you wish to destroy?")
 	public static SystemMessageId HOW_MUCH_S1_S_DO_YOU_WISH_TO_DESTROY;
 	
 	@ClientString(id = 74, message = "Do you wish to destroy your $s1?")
@@ -418,10 +418,10 @@ public class SystemMessageId
 	@ClientString(id = 124, message = "$c1 has cancelled the trade.")
 	public static SystemMessageId C1_HAS_CANCELLED_THE_TRADE;
 	
-	@ClientString(id = 125, message = "Do you wish to exit the game? ")
+	@ClientString(id = 125, message = "Do you wish to exit the game?")
 	public static SystemMessageId DO_YOU_WISH_TO_EXIT_THE_GAME;
 	
-	@ClientString(id = 126, message = "Do you wish to exit to the character select screen? ")
+	@ClientString(id = 126, message = "Do you wish to exit to the character select screen?")
 	public static SystemMessageId DO_YOU_WISH_TO_EXIT_TO_THE_CHARACTER_SELECT_SCREEN;
 	
 	@ClientString(id = 127, message = "You have been disconnected from the server. Please login again.")
@@ -664,7 +664,7 @@ public class SystemMessageId
 	@ClientString(id = 206, message = "Please enter the name of the clan you wish to declare war on.")
 	public static SystemMessageId PLEASE_ENTER_THE_NAME_OF_THE_CLAN_YOU_WISH_TO_DECLARE_WAR_ON;
 	
-	@ClientString(id = 207, message = "$s2 of the clan $s1 requests a declaration of war. Do you accept? ")
+	@ClientString(id = 207, message = "$s2 of the clan $s1 requests a declaration of war. Do you accept?")
 	public static SystemMessageId S2_OF_THE_CLAN_S1_REQUESTS_A_DECLARATION_OF_WAR_DO_YOU_ACCEPT;
 	
 	@ClientString(id = 208, message = "Please include file type when entering file path.")
@@ -808,13 +808,13 @@ public class SystemMessageId
 	@ClientString(id = 254, message = "A clan leader cannot personally surrender.")
 	public static SystemMessageId A_CLAN_LEADER_CANNOT_PERSONALLY_SURRENDER;
 	
-	@ClientString(id = 255, message = "The $s1 Clan has requested to end war. Do you agree? ")
+	@ClientString(id = 255, message = "The $s1 Clan has requested to end war. Do you agree?")
 	public static SystemMessageId THE_S1_CLAN_HAS_REQUESTED_TO_END_WAR_DO_YOU_AGREE;
 	
 	@ClientString(id = 256, message = "Enter a title name.")
 	public static SystemMessageId ENTER_A_TITLE_NAME;
 	
-	@ClientString(id = 257, message = "Do you offer the $s1 clan a proposal to end the war? ")
+	@ClientString(id = 257, message = "Do you offer the $s1 clan a proposal to end the war?")
 	public static SystemMessageId DO_YOU_OFFER_THE_S1_CLAN_A_PROPOSAL_TO_END_THE_WAR;
 	
 	@ClientString(id = 258, message = "You are not involved in a clan war.")
@@ -1039,7 +1039,7 @@ public class SystemMessageId
 	@ClientString(id = 331, message = "You have acquired $s1 SP.")
 	public static SystemMessageId YOU_HAVE_ACQUIRED_S1_SP;
 	
-	@ClientString(id = 332, message = "Do you want to be resurrected? ")
+	@ClientString(id = 332, message = "Do you want to be resurrected?")
 	public static SystemMessageId DO_YOU_WANT_TO_BE_RESURRECTED;
 	
 	@ClientString(id = 333, message = "You've received $s1 damage from Core's barrier.")
@@ -1162,10 +1162,10 @@ public class SystemMessageId
 	@ClientString(id = 372, message = "Failed to obtain +$s1 $s2.")
 	public static SystemMessageId FAILED_TO_OBTAIN_S1_S2;
 	
-	@ClientString(id = 373, message = "You are trying to destroy +$s1 $s2. Do you wish to continue? ")
+	@ClientString(id = 373, message = "You are trying to destroy +$s1 $s2. Do you wish to continue?")
 	public static SystemMessageId YOU_ARE_TRYING_TO_DESTROY_S1_S2_DO_YOU_WISH_TO_CONTINUE;
 	
-	@ClientString(id = 374, message = "You are attempting to crystallize +$s1 $s2. Do you wish to continue? ")
+	@ClientString(id = 374, message = "You are attempting to crystallize +$s1 $s2. Do you wish to continue?")
 	public static SystemMessageId YOU_ARE_ATTEMPTING_TO_CRYSTALLIZE_S1_S2_DO_YOU_WISH_TO_CONTINUE;
 	
 	@ClientString(id = 375, message = "The character died and dropped +$s1 $s2.")
@@ -1240,10 +1240,10 @@ public class SystemMessageId
 	@ClientString(id = 398, message = "There is no time left on this account.")
 	public static SystemMessageId THERE_IS_NO_TIME_LEFT_ON_THIS_ACCOUNT;
 	
-	@ClientString(id = 399, message = "System error. ")
+	@ClientString(id = 399, message = "System error.")
 	public static SystemMessageId SYSTEM_ERROR;
 	
-	@ClientString(id = 400, message = "You are attempting to drop $s1. Do you wish to continue? ")
+	@ClientString(id = 400, message = "You are attempting to drop $s1. Do you wish to continue?")
 	public static SystemMessageId YOU_ARE_ATTEMPTING_TO_DROP_S1_DO_YOU_WISH_TO_CONTINUE;
 	
 	@ClientString(id = 401, message = "Too many active quests.")
@@ -1291,7 +1291,7 @@ public class SystemMessageId
 	@ClientString(id = 415, message = "Siege is underway")
 	public static SystemMessageId SIEGE_IS_UNDERWAY;
 	
-	@ClientString(id = 416, message = "You cannot exchange with other characters at this time. ")
+	@ClientString(id = 416, message = "You cannot exchange with other characters at this time.")
 	public static SystemMessageId YOU_CANNOT_EXCHANGE_WITH_OTHER_CHARACTERS_AT_THIS_TIME;
 	
 	@ClientString(id = 417, message = "$s1: unequipped.")
@@ -1405,7 +1405,7 @@ public class SystemMessageId
 	@ClientString(id = 453, message = "Incorrect account information.")
 	public static SystemMessageId INCORRECT_ACCOUNT_INFORMATION;
 	
-	@ClientString(id = 454, message = "For more details, please contact our customer service center at https://eu.4gamesupport.com. ")
+	@ClientString(id = 454, message = "For more details, please contact our customer service center at https://eu.4gamesupport.com.")
 	public static SystemMessageId FOR_MORE_DETAILS_PLEASE_CONTACT_OUR_CUSTOMER_SERVICE_CENTER_AT_HTTPS_EU_4GAMESUPPORT_COM;
 	
 	@ClientString(id = 455, message = "Account is already in use.")
@@ -1612,7 +1612,7 @@ public class SystemMessageId
 	@ClientString(id = 522, message = "Failed to dismiss the clan from the alliance.")
 	public static SystemMessageId FAILED_TO_DISMISS_THE_CLAN_FROM_THE_ALLIANCE;
 	
-	@ClientString(id = 523, message = "The alliance is disbanded. ")
+	@ClientString(id = 523, message = "The alliance is disbanded.")
 	public static SystemMessageId THE_ALLIANCE_IS_DISBANDED;
 	
 	@ClientString(id = 524, message = "Failed to disband the alliance.")
@@ -1714,7 +1714,7 @@ public class SystemMessageId
 	@ClientString(id = 556, message = "You cannot move in this state.")
 	public static SystemMessageId YOU_CANNOT_MOVE_IN_THIS_STATE;
 	
-	@ClientString(id = 557, message = "As your pet is currently out, its summoning item cannot be destroyed. ")
+	@ClientString(id = 557, message = "As your pet is currently out, its summoning item cannot be destroyed.")
 	public static SystemMessageId AS_YOUR_PET_IS_CURRENTLY_OUT_ITS_SUMMONING_ITEM_CANNOT_BE_DESTROYED;
 	
 	@ClientString(id = 558, message = "As your pet is currently summoned, you cannot discard the summoning item.")
@@ -1927,7 +1927,7 @@ public class SystemMessageId
 	@ClientString(id = 627, message = "The clan battle has been refused, as you didn't respond to $s1's war proclamation.")
 	public static SystemMessageId THE_CLAN_BATTLE_HAS_BEEN_REFUSED_AS_YOU_DIDN_T_RESPOND_TO_S1_S_WAR_PROCLAMATION;
 	
-	@ClientString(id = 628, message = "You have already been at war with the $s1 clan: 5 days must pass before you can declare war again. ")
+	@ClientString(id = 628, message = "You have already been at war with the $s1 clan: 5 days must pass before you can declare war again.")
 	public static SystemMessageId YOU_HAVE_ALREADY_BEEN_AT_WAR_WITH_THE_S1_CLAN_5_DAYS_MUST_PASS_BEFORE_YOU_CAN_DECLARE_WAR_AGAIN;
 	
 	@ClientString(id = 629, message = "Your opponent has already reached the warring clan limit.")
@@ -1951,10 +1951,10 @@ public class SystemMessageId
 	@ClientString(id = 635, message = "The time limit for the clan war has exceeded. The war with the clan '$s1' is over.")
 	public static SystemMessageId THE_TIME_LIMIT_FOR_THE_CLAN_WAR_HAS_EXCEEDED_THE_WAR_WITH_THE_CLAN_S1_IS_OVER;
 	
-	@ClientString(id = 636, message = "You are not involved in a clan war. ")
+	@ClientString(id = 636, message = "You are not involved in a clan war.")
 	public static SystemMessageId YOU_ARE_NOT_INVOLVED_IN_A_CLAN_WAR_2;
 	
-	@ClientString(id = 637, message = "A clan ally has registered itself to the opponent. ")
+	@ClientString(id = 637, message = "A clan ally has registered itself to the opponent.")
 	public static SystemMessageId A_CLAN_ALLY_HAS_REGISTERED_ITSELF_TO_THE_OPPONENT;
 	
 	@ClientString(id = 638, message = "You have already requested a Castle Siege.")
@@ -2044,10 +2044,10 @@ public class SystemMessageId
 	@ClientString(id = 666, message = "A request for ceasefire has been received from $s1 alliance. Do you agree?")
 	public static SystemMessageId A_REQUEST_FOR_CEASEFIRE_HAS_BEEN_RECEIVED_FROM_S1_ALLIANCE_DO_YOU_AGREE;
 	
-	@ClientString(id = 667, message = "You are registering on the attacking side of the $s1 siege. Do you want to continue? ")
+	@ClientString(id = 667, message = "You are registering on the attacking side of the $s1 siege. Do you want to continue?")
 	public static SystemMessageId YOU_ARE_REGISTERING_ON_THE_ATTACKING_SIDE_OF_THE_S1_SIEGE_DO_YOU_WANT_TO_CONTINUE;
 	
-	@ClientString(id = 668, message = "You are registering on the defending side of the $s1 siege. Do you want to continue? ")
+	@ClientString(id = 668, message = "You are registering on the defending side of the $s1 siege. Do you want to continue?")
 	public static SystemMessageId YOU_ARE_REGISTERING_ON_THE_DEFENDING_SIDE_OF_THE_S1_SIEGE_DO_YOU_WANT_TO_CONTINUE;
 	
 	@ClientString(id = 669, message = "You are canceling your application to participate in the $s1 castle siege. Do you want to continue?")
@@ -2104,13 +2104,13 @@ public class SystemMessageId
 	@ClientString(id = 686, message = "You've received $s1 damage from magic.")
 	public static SystemMessageId YOU_VE_RECEIVED_S1_DAMAGE_FROM_MAGIC;
 	
-	@ClientString(id = 687, message = "You cannot move while frozen. Please wait. ")
+	@ClientString(id = 687, message = "You cannot move while frozen. Please wait.")
 	public static SystemMessageId YOU_CANNOT_MOVE_WHILE_FROZEN_PLEASE_WAIT;
 	
 	@ClientString(id = 688, message = "Castle-owning clans are automatically registered on the defending side.")
 	public static SystemMessageId CASTLE_OWNING_CLANS_ARE_AUTOMATICALLY_REGISTERED_ON_THE_DEFENDING_SIDE;
 	
-	@ClientString(id = 689, message = "A clan that owns a castle cannot participate in another siege. ")
+	@ClientString(id = 689, message = "A clan that owns a castle cannot participate in another siege.")
 	public static SystemMessageId A_CLAN_THAT_OWNS_A_CASTLE_CANNOT_PARTICIPATE_IN_ANOTHER_SIEGE;
 	
 	@ClientString(id = 690, message = "You cannot register as an attacker because you are in an alliance with the castle-owning clan.")
@@ -2194,7 +2194,7 @@ public class SystemMessageId
 	@ClientString(id = 716, message = "If a base camp does not exist, resurrection is not possible.")
 	public static SystemMessageId IF_A_BASE_CAMP_DOES_NOT_EXIST_RESURRECTION_IS_NOT_POSSIBLE;
 	
-	@ClientString(id = 717, message = "The guardian tower has been destroyed and resurrection is not possible. ")
+	@ClientString(id = 717, message = "The guardian tower has been destroyed and resurrection is not possible.")
 	public static SystemMessageId THE_GUARDIAN_TOWER_HAS_BEEN_DESTROYED_AND_RESURRECTION_IS_NOT_POSSIBLE;
 	
 	@ClientString(id = 718, message = "The castle gates cannot be opened and closed during a siege.")
@@ -2665,7 +2665,7 @@ public class SystemMessageId
 	@ClientString(id = 873, message = "That character does not exist.")
 	public static SystemMessageId THAT_CHARACTER_DOES_NOT_EXIST;
 	
-	@ClientString(id = 874, message = "The capacity of the warehouse has been exceeded. ")
+	@ClientString(id = 874, message = "The capacity of the warehouse has been exceeded.")
 	public static SystemMessageId THE_CAPACITY_OF_THE_WAREHOUSE_HAS_BEEN_EXCEEDED;
 	
 	@ClientString(id = 875, message = "The transport of the cargo has been canceled.")
@@ -3472,7 +3472,7 @@ public class SystemMessageId
 	@ClientString(id = 1142, message = "Since $s1 already exists nearby, you cannot summon it again.")
 	public static SystemMessageId SINCE_S1_ALREADY_EXISTS_NEARBY_YOU_CANNOT_SUMMON_IT_AGAIN;
 	
-	@ClientString(id = 1143, message = "Since you do not have enough items to maintain the servitor's stay, the servitor has disappeared. ")
+	@ClientString(id = 1143, message = "Since you do not have enough items to maintain the servitor's stay, the servitor has disappeared.")
 	public static SystemMessageId SINCE_YOU_DO_NOT_HAVE_ENOUGH_ITEMS_TO_MAINTAIN_THE_SERVITOR_S_STAY_THE_SERVITOR_HAS_DISAPPEARED;
 	
 	@ClientString(id = 1144, message = "You don't have anybody to chat with in the game.")
@@ -3487,7 +3487,7 @@ public class SystemMessageId
 	@ClientString(id = 1147, message = "$s3 $s2(s) have been created for $c1 at the price of $s4 Adena.")
 	public static SystemMessageId S3_S2_S_HAVE_BEEN_CREATED_FOR_C1_AT_THE_PRICE_OF_S4_ADENA;
 	
-	@ClientString(id = 1148, message = "$c1 created $s3 $s2(s) at the price of $s4 Adena. ")
+	@ClientString(id = 1148, message = "$c1 created $s3 $s2(s) at the price of $s4 Adena.")
 	public static SystemMessageId C1_CREATED_S3_S2_S_AT_THE_PRICE_OF_S4_ADENA;
 	
 	@ClientString(id = 1149, message = "You failed to create $s2 for $c1 at the price of $s3 Adena.")
@@ -3514,7 +3514,7 @@ public class SystemMessageId
 	@ClientString(id = 1156, message = "Item +$s2 $s3 has been purchased from $c1 for $s4 adena.")
 	public static SystemMessageId ITEM_S2_S3_HAS_BEEN_PURCHASED_FROM_C1_FOR_S4_ADENA;
 	
-	@ClientString(id = 1157, message = "The preview state only lasts for 10 seconds. If you wish to continue, click OK. ")
+	@ClientString(id = 1157, message = "The preview state only lasts for 10 seconds. If you wish to continue, click OK.")
 	public static SystemMessageId THE_PREVIEW_STATE_ONLY_LASTS_FOR_10_SECONDS_IF_YOU_WISH_TO_CONTINUE_CLICK_OK;
 	
 	@ClientString(id = 1158, message = "You cannot dismount from this elevation.")
@@ -3598,7 +3598,7 @@ public class SystemMessageId
 	@ClientString(id = 1184, message = "This is a period when server statistics are calculated.")
 	public static SystemMessageId THIS_IS_A_PERIOD_WHEN_SERVER_STATISTICS_ARE_CALCULATED;
 	
-	@ClientString(id = 1185, message = " days left until deletion.")
+	@ClientString(id = 1185, message = "days left until deletion.")
 	public static SystemMessageId DAYS_LEFT_UNTIL_DELETION;
 	
 	@ClientString(id = 1186, message = "To create a new account, please visit the Support Center on the 4Game website (https://eu.4gamesupport.com/).")
@@ -3607,7 +3607,7 @@ public class SystemMessageId
 	@ClientString(id = 1187, message = "If you've forgotten your account information or password, please visit the Support Center on the 4Game website (https://eu.4gamesupport.com/).")
 	public static SystemMessageId IF_YOU_VE_FORGOTTEN_YOUR_ACCOUNT_INFORMATION_OR_PASSWORD_PLEASE_VISIT_THE_SUPPORT_CENTER_ON_THE_4GAME_WEBSITE_HTTPS_EU_4GAMESUPPORT_COM;
 	
-	@ClientString(id = 1188, message = "Your selected target can no longer receive a recommendation. ")
+	@ClientString(id = 1188, message = "Your selected target can no longer receive a recommendation.")
 	public static SystemMessageId YOUR_SELECTED_TARGET_CAN_NO_LONGER_RECEIVE_A_RECOMMENDATION;
 	
 	@ClientString(id = 1189, message = "The temporary alliance of the Castle Attacker team is in effect. It will be dissolved when the Castle Lord is replaced.")
@@ -3667,7 +3667,7 @@ public class SystemMessageId
 	@ClientString(id = 1207, message = "Please make an entry in the field.")
 	public static SystemMessageId PLEASE_MAKE_AN_ENTRY_IN_THE_FIELD;
 	
-	@ClientString(id = 1208, message = "$c1 died and dropped $s2 x$s3. ")
+	@ClientString(id = 1208, message = "$c1 died and dropped $s2 x$s3.")
 	public static SystemMessageId C1_DIED_AND_DROPPED_S2_X_S3;
 	
 	@ClientString(id = 1209, message = "Congratulations. Your raid was successful.")
@@ -3733,16 +3733,16 @@ public class SystemMessageId
 	@ClientString(id = 1229, message = "No more messages may be sent at this time. Each account is allowed 10 messages per day.")
 	public static SystemMessageId NO_MORE_MESSAGES_MAY_BE_SENT_AT_THIS_TIME_EACH_ACCOUNT_IS_ALLOWED_10_MESSAGES_PER_DAY;
 	
-	@ClientString(id = 1230, message = "You are limited to five recipients at a time. ")
+	@ClientString(id = 1230, message = "You are limited to five recipients at a time.")
 	public static SystemMessageId YOU_ARE_LIMITED_TO_FIVE_RECIPIENTS_AT_A_TIME;
 	
 	@ClientString(id = 1231, message = "You've sent mail.")
 	public static SystemMessageId YOU_VE_SENT_MAIL;
 	
-	@ClientString(id = 1232, message = "The message was not sent. ")
+	@ClientString(id = 1232, message = "The message was not sent.")
 	public static SystemMessageId THE_MESSAGE_WAS_NOT_SENT;
 	
-	@ClientString(id = 1233, message = "You've got mail. ")
+	@ClientString(id = 1233, message = "You've got mail.")
 	public static SystemMessageId YOU_VE_GOT_MAIL;
 	
 	@ClientString(id = 1234, message = "The mail has been stored in your temporary mailbox.")
@@ -3751,7 +3751,7 @@ public class SystemMessageId
 	@ClientString(id = 1235, message = "Do you wish to delete all your friends?")
 	public static SystemMessageId DO_YOU_WISH_TO_DELETE_ALL_YOUR_FRIENDS;
 	
-	@ClientString(id = 1236, message = "Please enter security card number. ")
+	@ClientString(id = 1236, message = "Please enter security card number.")
 	public static SystemMessageId PLEASE_ENTER_SECURITY_CARD_NUMBER;
 	
 	@ClientString(id = 1237, message = "Please enter the card number for number $s1.")
@@ -3769,7 +3769,7 @@ public class SystemMessageId
 	@ClientString(id = 1241, message = "Seven Signs: The Lords of Dawn have won.")
 	public static SystemMessageId SEVEN_SIGNS_THE_LORDS_OF_DAWN_HAVE_WON;
 	
-	@ClientString(id = 1242, message = "Users who have not verified their age may not log in between the hours of 10:00 p.m. and 6:00 a.m. ")
+	@ClientString(id = 1242, message = "Users who have not verified their age may not log in between the hours of 10:00 p.m. and 6:00 a.m.")
 	public static SystemMessageId USERS_WHO_HAVE_NOT_VERIFIED_THEIR_AGE_MAY_NOT_LOG_IN_BETWEEN_THE_HOURS_OF_10_00_P_M_AND_6_00_A_M;
 	
 	@ClientString(id = 1243, message = "The security card number is invalid.")
@@ -3787,7 +3787,7 @@ public class SystemMessageId
 	@ClientString(id = 1247, message = "The corpse is too old. The skill cannot be used.")
 	public static SystemMessageId THE_CORPSE_IS_TOO_OLD_THE_SKILL_CANNOT_BE_USED;
 	
-	@ClientString(id = 1248, message = "You are out of feed. Mount status canceled. ")
+	@ClientString(id = 1248, message = "You are out of feed. Mount status canceled.")
 	public static SystemMessageId YOU_ARE_OUT_OF_FEED_MOUNT_STATUS_CANCELED;
 	
 	@ClientString(id = 1249, message = "You may only ride a wyvern while you're riding a strider.")
@@ -3796,7 +3796,7 @@ public class SystemMessageId
 	@ClientString(id = 1250, message = "Do you really want to surrender? If you surrender during an alliance war, your XP will drop the same as if you were to die once.")
 	public static SystemMessageId DO_YOU_REALLY_WANT_TO_SURRENDER_IF_YOU_SURRENDER_DURING_AN_ALLIANCE_WAR_YOUR_XP_WILL_DROP_THE_SAME_AS_IF_YOU_WERE_TO_DIE_ONCE;
 	
-	@ClientString(id = 1251, message = "Are you sure you want to disband the alliance? If you do that, you will not be able to create an alliance with another clan for 1 day. ")
+	@ClientString(id = 1251, message = "Are you sure you want to disband the alliance? If you do that, you will not be able to create an alliance with another clan for 1 day.")
 	public static SystemMessageId ARE_YOU_SURE_YOU_WANT_TO_DISBAND_THE_ALLIANCE_IF_YOU_DO_THAT_YOU_WILL_NOT_BE_ABLE_TO_CREATE_AN_ALLIANCE_WITH_ANOTHER_CLAN_FOR_1_DAY;
 	
 	@ClientString(id = 1252, message = "Are you sure you want to surrender? XP penalty will be the same as death.")
@@ -3826,7 +3826,7 @@ public class SystemMessageId
 	@ClientString(id = 1260, message = "Seven Signs: Preparations have begun for the next quest event.")
 	public static SystemMessageId SEVEN_SIGNS_PREPARATIONS_HAVE_BEGUN_FOR_THE_NEXT_QUEST_EVENT;
 	
-	@ClientString(id = 1261, message = "Seven Signs: The quest event period has begun. Speak with a Priest of Dawn or Priestess of Dusk if you wish to participate in the event. ")
+	@ClientString(id = 1261, message = "Seven Signs: The quest event period has begun. Speak with a Priest of Dawn or Priestess of Dusk if you wish to participate in the event.")
 	public static SystemMessageId SEVEN_SIGNS_THE_QUEST_EVENT_PERIOD_HAS_BEGUN_SPEAK_WITH_A_PRIEST_OF_DAWN_OR_PRIESTESS_OF_DUSK_IF_YOU_WISH_TO_PARTICIPATE_IN_THE_EVENT;
 	
 	@ClientString(id = 1262, message = "Seven Signs: Quest event has ended. Results are being tallied.")
@@ -3838,7 +3838,7 @@ public class SystemMessageId
 	@ClientString(id = 1264, message = "This soul crystal cannot currently absorb souls. Absorption has failed.")
 	public static SystemMessageId THIS_SOUL_CRYSTAL_CANNOT_CURRENTLY_ABSORB_SOULS_ABSORPTION_HAS_FAILED;
 	
-	@ClientString(id = 1265, message = "You can't absorb souls without a soul stone. ")
+	@ClientString(id = 1265, message = "You can't absorb souls without a soul stone.")
 	public static SystemMessageId YOU_CAN_T_ABSORB_SOULS_WITHOUT_A_SOUL_STONE;
 	
 	@ClientString(id = 1266, message = "The exchange has ended.")
@@ -4009,7 +4009,7 @@ public class SystemMessageId
 	@ClientString(id = 1321, message = "Enter the name of the group you wish to add.")
 	public static SystemMessageId ENTER_THE_NAME_OF_THE_GROUP_YOU_WISH_TO_ADD;
 	
-	@ClientString(id = 1322, message = "Select the group and enter the new name. ")
+	@ClientString(id = 1322, message = "Select the group and enter the new name.")
 	public static SystemMessageId SELECT_THE_GROUP_AND_ENTER_THE_NEW_NAME;
 	
 	@ClientString(id = 1323, message = "Select the group you wish to delete and click the OK button.")
@@ -4057,7 +4057,7 @@ public class SystemMessageId
 	@ClientString(id = 1337, message = "This will terminate the replay. Do you wish to continue?")
 	public static SystemMessageId THIS_WILL_TERMINATE_THE_REPLAY_DO_YOU_WISH_TO_CONTINUE;
 	
-	@ClientString(id = 1338, message = "You have exceeded the maximum amount that may be transferred at one time. ")
+	@ClientString(id = 1338, message = "You have exceeded the maximum amount that may be transferred at one time.")
 	public static SystemMessageId YOU_HAVE_EXCEEDED_THE_MAXIMUM_AMOUNT_THAT_MAY_BE_TRANSFERRED_AT_ONE_TIME;
 	
 	@ClientString(id = 1339, message = "Once a macro is assigned to a shortcut, it cannot be run as part of a new macro.")
@@ -4081,7 +4081,7 @@ public class SystemMessageId
 	@ClientString(id = 1345, message = "Click on the OK button after you have selected a contact name.")
 	public static SystemMessageId CLICK_ON_THE_OK_BUTTON_AFTER_YOU_HAVE_SELECTED_A_CONTACT_NAME;
 	
-	@ClientString(id = 1346, message = "You are currently entering a chat message. ")
+	@ClientString(id = 1346, message = "You are currently entering a chat message.")
 	public static SystemMessageId YOU_ARE_CURRENTLY_ENTERING_A_CHAT_MESSAGE;
 	
 	@ClientString(id = 1347, message = "The Lineage II messenger could not carry out the task you requested.")
@@ -4093,7 +4093,7 @@ public class SystemMessageId
 	@ClientString(id = 1349, message = "$s1 has left the chat room.")
 	public static SystemMessageId S1_HAS_LEFT_THE_CHAT_ROOM;
 	
-	@ClientString(id = 1350, message = "Your status will be changed to indicate that you are 'off-line.' All chat windows currently open will be closed. ")
+	@ClientString(id = 1350, message = "Your status will be changed to indicate that you are 'off-line.' All chat windows currently open will be closed.")
 	public static SystemMessageId YOUR_STATUS_WILL_BE_CHANGED_TO_INDICATE_THAT_YOU_ARE_OFF_LINE_ALL_CHAT_WINDOWS_CURRENTLY_OPEN_WILL_BE_CLOSED;
 	
 	@ClientString(id = 1351, message = "Click the Delete button after selecting the contact you wish to remove.")
@@ -4105,7 +4105,7 @@ public class SystemMessageId
 	@ClientString(id = 1353, message = "You can set the option to show your status as always being off-line to all of your contacts.")
 	public static SystemMessageId YOU_CAN_SET_THE_OPTION_TO_SHOW_YOUR_STATUS_AS_ALWAYS_BEING_OFF_LINE_TO_ALL_OF_YOUR_CONTACTS;
 	
-	@ClientString(id = 1354, message = "You are not allowed to chat with a contact while a chatting block is imposed. ")
+	@ClientString(id = 1354, message = "You are not allowed to chat with a contact while a chatting block is imposed.")
 	public static SystemMessageId YOU_ARE_NOT_ALLOWED_TO_CHAT_WITH_A_CONTACT_WHILE_A_CHATTING_BLOCK_IS_IMPOSED;
 	
 	@ClientString(id = 1355, message = "That contact is currently blocked from chatting.")
@@ -4138,19 +4138,19 @@ public class SystemMessageId
 	@ClientString(id = 1364, message = "The request for an alliance war has been rejected.")
 	public static SystemMessageId THE_REQUEST_FOR_AN_ALLIANCE_WAR_HAS_BEEN_REJECTED;
 	
-	@ClientString(id = 1365, message = "$s2 of $s1 clan has surrendered as an individual. ")
+	@ClientString(id = 1365, message = "$s2 of $s1 clan has surrendered as an individual.")
 	public static SystemMessageId S2_OF_S1_CLAN_HAS_SURRENDERED_AS_AN_INDIVIDUAL;
 	
 	@ClientString(id = 1366, message = "In order to delete a group, you must not have any contacts listed under that group. Please transfer your contact(s) to another group before continuing with deletion.")
 	public static SystemMessageId IN_ORDER_TO_DELETE_A_GROUP_YOU_MUST_NOT_HAVE_ANY_CONTACTS_LISTED_UNDER_THAT_GROUP_PLEASE_TRANSFER_YOUR_CONTACT_S_TO_ANOTHER_GROUP_BEFORE_CONTINUING_WITH_DELETION;
 	
-	@ClientString(id = 1367, message = "Only members of the group are allowed to add records. ")
+	@ClientString(id = 1367, message = "Only members of the group are allowed to add records.")
 	public static SystemMessageId ONLY_MEMBERS_OF_THE_GROUP_ARE_ALLOWED_TO_ADD_RECORDS;
 	
 	@ClientString(id = 1368, message = "You can not try those items on at the same time.")
 	public static SystemMessageId YOU_CAN_NOT_TRY_THOSE_ITEMS_ON_AT_THE_SAME_TIME;
 	
-	@ClientString(id = 1369, message = "You've exceeded the maximum. ")
+	@ClientString(id = 1369, message = "You've exceeded the maximum.")
 	public static SystemMessageId YOU_VE_EXCEEDED_THE_MAXIMUM;
 	
 	@ClientString(id = 1370, message = "Your message to $c1 did not reach its recipient. You cannot send mail to the GM staff.")
@@ -4189,7 +4189,7 @@ public class SystemMessageId
 	@ClientString(id = 1381, message = "The party leader has obtained $s2 $s1(s).")
 	public static SystemMessageId THE_PARTY_LEADER_HAS_OBTAINED_S2_S1_S;
 	
-	@ClientString(id = 1382, message = "To fulfill the quest, you must bring the chosen weapon. Are you sure you want to choose this weapon? ")
+	@ClientString(id = 1382, message = "To fulfill the quest, you must bring the chosen weapon. Are you sure you want to choose this weapon?")
 	public static SystemMessageId TO_FULFILL_THE_QUEST_YOU_MUST_BRING_THE_CHOSEN_WEAPON_ARE_YOU_SURE_YOU_WANT_TO_CHOOSE_THIS_WEAPON;
 	
 	@ClientString(id = 1383, message = "Are you sure you want to exchange?")
@@ -4222,7 +4222,7 @@ public class SystemMessageId
 	@ClientString(id = 1392, message = "$c1 has left the party room.")
 	public static SystemMessageId C1_HAS_LEFT_THE_PARTY_ROOM;
 	
-	@ClientString(id = 1393, message = "You have been ousted from the party room. ")
+	@ClientString(id = 1393, message = "You have been ousted from the party room.")
 	public static SystemMessageId YOU_HAVE_BEEN_OUSTED_FROM_THE_PARTY_ROOM;
 	
 	@ClientString(id = 1394, message = "$c1 has been kicked from the party room.")
@@ -4468,7 +4468,7 @@ public class SystemMessageId
 	@ClientString(id = 1474, message = "$s1 is not available.")
 	public static SystemMessageId S1_IS_NOT_AVAILABLE;
 	
-	@ClientString(id = 1475, message = "$s1 in your pet's possession has been dropped. ")
+	@ClientString(id = 1475, message = "$s1 in your pet's possession has been dropped.")
 	public static SystemMessageId S1_IN_YOUR_PET_S_POSSESSION_HAS_BEEN_DROPPED;
 	
 	@ClientString(id = 1476, message = "Your pet has dropped +$s1$s2.")
@@ -4519,7 +4519,7 @@ public class SystemMessageId
 	@ClientString(id = 1491, message = "Failed in trading $s2 of $s1 crops.")
 	public static SystemMessageId FAILED_IN_TRADING_S2_OF_S1_CROPS;
 	
-	@ClientString(id = 1492, message = "You will be taken to the Olympic Stadium in $s1 sec. ")
+	@ClientString(id = 1492, message = "You will be taken to the Olympic Stadium in $s1 sec.")
 	public static SystemMessageId YOU_WILL_BE_TAKEN_TO_THE_OLYMPIC_STADIUM_IN_S1_SEC;
 	
 	@ClientString(id = 1493, message = "Your opponent made haste with their tail between their legs; the match has been cancelled.")
@@ -4708,7 +4708,7 @@ public class SystemMessageId
 	@ClientString(id = 1554, message = "The cargo has arrived in Goddard.")
 	public static SystemMessageId THE_CARGO_HAS_ARRIVED_IN_GODDARD;
 	
-	@ClientString(id = 1555, message = "Do you want to cancel character deletion? ")
+	@ClientString(id = 1555, message = "Do you want to cancel character deletion?")
 	public static SystemMessageId DO_YOU_WANT_TO_CANCEL_CHARACTER_DELETION;
 	
 	@ClientString(id = 1556, message = "Your clan notice has been saved.")
@@ -4735,7 +4735,7 @@ public class SystemMessageId
 	@ClientString(id = 1563, message = "$s1 clan doesn't meet level requirements or has too little number of members. You cannot declar a war on it.")
 	public static SystemMessageId S1_CLAN_DOESN_T_MEET_LEVEL_REQUIREMENTS_OR_HAS_TOO_LITTLE_NUMBER_OF_MEMBERS_YOU_CANNOT_DECLAR_A_WAR_ON_IT;
 	
-	@ClientString(id = 1564, message = "A clan war can only be declared if the clan is Lv. 5 or higher, and the number of clan members is 15 or greater. ")
+	@ClientString(id = 1564, message = "A clan war can only be declared if the clan is Lv. 5 or higher, and the number of clan members is 15 or greater.")
 	public static SystemMessageId A_CLAN_WAR_CAN_ONLY_BE_DECLARED_IF_THE_CLAN_IS_LV_5_OR_HIGHER_AND_THE_NUMBER_OF_CLAN_MEMBERS_IS_15_OR_GREATER;
 	
 	@ClientString(id = 1565, message = "A clan war cannot be declared against a clan that does not exist!")
@@ -4843,10 +4843,10 @@ public class SystemMessageId
 	@ClientString(id = 1599, message = "You cannot 'observe' while you are in combat!")
 	public static SystemMessageId YOU_CANNOT_OBSERVE_WHILE_YOU_ARE_IN_COMBAT;
 	
-	@ClientString(id = 1600, message = "Tomorrow's items will ALL be set to 0. Do you wish to continue? ")
+	@ClientString(id = 1600, message = "Tomorrow's items will ALL be set to 0. Do you wish to continue?")
 	public static SystemMessageId TOMORROW_S_ITEMS_WILL_ALL_BE_SET_TO_0_DO_YOU_WISH_TO_CONTINUE;
 	
-	@ClientString(id = 1601, message = "Tomorrow's items will all be set to the same value as today's items. Do you wish to continue? ")
+	@ClientString(id = 1601, message = "Tomorrow's items will all be set to the same value as today's items. Do you wish to continue?")
 	public static SystemMessageId TOMORROW_S_ITEMS_WILL_ALL_BE_SET_TO_THE_SAME_VALUE_AS_TODAY_S_ITEMS_DO_YOU_WISH_TO_CONTINUE;
 	
 	@ClientString(id = 1602, message = "Only a party leader can access the Command Channel.")
@@ -4894,7 +4894,7 @@ public class SystemMessageId
 	@ClientString(id = 1616, message = "The Command Channel has been activated.")
 	public static SystemMessageId THE_COMMAND_CHANNEL_HAS_BEEN_ACTIVATED;
 	
-	@ClientString(id = 1617, message = "Command Chat cannot be used because you are not an alliance leader or party leader. ")
+	@ClientString(id = 1617, message = "Command Chat cannot be used because you are not an alliance leader or party leader.")
 	public static SystemMessageId COMMAND_CHAT_CANNOT_BE_USED_BECAUSE_YOU_ARE_NOT_AN_ALLIANCE_LEADER_OR_PARTY_LEADER;
 	
 	@ClientString(id = 1618, message = "The ferry from Rune Harbor for Gludin Harbor is delayed.")
@@ -5260,7 +5260,7 @@ public class SystemMessageId
 	@ClientString(id = 1738, message = "Your clan has already established a Clan Academy.")
 	public static SystemMessageId YOUR_CLAN_HAS_ALREADY_ESTABLISHED_A_CLAN_ACADEMY;
 	
-	@ClientString(id = 1739, message = "Would you like to create a Clan Academy? ")
+	@ClientString(id = 1739, message = "Would you like to create a Clan Academy?")
 	public static SystemMessageId WOULD_YOU_LIKE_TO_CREATE_A_CLAN_ACADEMY;
 	
 	@ClientString(id = 1740, message = "Please enter the name of the Clan Academy.")
@@ -5284,7 +5284,7 @@ public class SystemMessageId
 	@ClientString(id = 1746, message = "You have already joined a Clan Academy.")
 	public static SystemMessageId YOU_HAVE_ALREADY_JOINED_A_CLAN_ACADEMY;
 	
-	@ClientString(id = 1747, message = "$s1 has sent you an invitation to join the Clan Academy belonging to the $s2 clan. Do you accept? ")
+	@ClientString(id = 1747, message = "$s1 has sent you an invitation to join the Clan Academy belonging to the $s2 clan. Do you accept?")
 	public static SystemMessageId S1_HAS_SENT_YOU_AN_INVITATION_TO_JOIN_THE_CLAN_ACADEMY_BELONGING_TO_THE_S2_CLAN_DO_YOU_ACCEPT;
 	
 	@ClientString(id = 1748, message = "Clan Academy member $s1 has successfully Awakened, obtaining $s2 Clan Reputation.")
@@ -5335,7 +5335,7 @@ public class SystemMessageId
 	@ClientString(id = 1763, message = "$s2, $c1's mentee, is dismissed.")
 	public static SystemMessageId S2_C1_S_MENTEE_IS_DISMISSED;
 	
-	@ClientString(id = 1764, message = "This item can only be worn by a member of the Clan Academy. ")
+	@ClientString(id = 1764, message = "This item can only be worn by a member of the Clan Academy.")
 	public static SystemMessageId THIS_ITEM_CAN_ONLY_BE_WORN_BY_A_MEMBER_OF_THE_CLAN_ACADEMY;
 	
 	@ClientString(id = 1765, message = "As a graduate of the Clan Academy, you can no longer wear this item.")
@@ -5653,7 +5653,7 @@ public class SystemMessageId
 	@ClientString(id = 1869, message = "$c1 has granted the Command Channel's master party the privilege of item looting.")
 	public static SystemMessageId C1_HAS_GRANTED_THE_COMMAND_CHANNEL_S_MASTER_PARTY_THE_PRIVILEGE_OF_ITEM_LOOTING;
 	
-	@ClientString(id = 1870, message = "A Command Channel with looting rights already exists. ")
+	@ClientString(id = 1870, message = "A Command Channel with looting rights already exists.")
 	public static SystemMessageId A_COMMAND_CHANNEL_WITH_LOOTING_RIGHTS_ALREADY_EXISTS;
 	
 	@ClientString(id = 1871, message = "Do you want to dismiss $c1 from the clan?")
@@ -5803,7 +5803,7 @@ public class SystemMessageId
 	@ClientString(id = 1919, message = "The Olympiad registration period has ended.")
 	public static SystemMessageId THE_OLYMPIAD_REGISTRATION_PERIOD_HAS_ENDED;
 	
-	@ClientString(id = 1920, message = "Your account is currently dormant because you have not logged into the game for some time. You may reactivate your account by visiting the 4game website. ")
+	@ClientString(id = 1920, message = "Your account is currently dormant because you have not logged into the game for some time. You may reactivate your account by visiting the 4game website.")
 	public static SystemMessageId YOUR_ACCOUNT_IS_CURRENTLY_DORMANT_BECAUSE_YOU_HAVE_NOT_LOGGED_INTO_THE_GAME_FOR_SOME_TIME_YOU_MAY_REACTIVATE_YOUR_ACCOUNT_BY_VISITING_THE_4GAME_WEBSITE;
 	
 	@ClientString(id = 1921, message = "$s2 h. $s3 min. have passed after killing $s1. Current Kill Points: $s4, additionally you can obtain $s5 adena. KP will be reset, when the Cursed Weapon is dropped or destroyed. Killing clan members does not grant KP.")
@@ -6559,10 +6559,10 @@ public class SystemMessageId
 	@ClientString(id = 2171, message = "This item cannot be crystallized.")
 	public static SystemMessageId THIS_ITEM_CANNOT_BE_CRYSTALLIZED;
 	
-	@ClientString(id = 2172, message = " +$s1 $s2's auction has ended.")
+	@ClientString(id = 2172, message = "+$s1 $s2's auction has ended.")
 	public static SystemMessageId S1_S2_S_AUCTION_HAS_ENDED;
 	
-	@ClientString(id = 2173, message = " $s1's auction has ended.")
+	@ClientString(id = 2173, message = "$s1's auction has ended.")
 	public static SystemMessageId S1_S_AUCTION_HAS_ENDED;
 	
 	@ClientString(id = 2174, message = "$c1 is polymorphed and therefore cannot duel.")
@@ -6613,7 +6613,7 @@ public class SystemMessageId
 	@ClientString(id = 2189, message = "Current location: $s1 / $s2 / $s3 (near Kamael Village)")
 	public static SystemMessageId CURRENT_LOCATION_S1_S2_S3_NEAR_KAMAEL_VILLAGE;
 	
-	@ClientString(id = 2190, message = "Current location: $s1 / $s2 / $s3 (near the Refugee Camp) ")
+	@ClientString(id = 2190, message = "Current location: $s1 / $s2 / $s3 (near the Refugee Camp)")
 	public static SystemMessageId CURRENT_LOCATION_S1_S2_S3_NEAR_THE_REFUGEE_CAMP;
 	
 	@ClientString(id = 2191, message = "To apply selected options, the game needs to be reloaded. If you don't apply now, it will be applied when you start the game next time. Will you apply now?")
@@ -7033,7 +7033,7 @@ public class SystemMessageId
 	@ClientString(id = 2329, message = "Vitality Level $s1 $s2")
 	public static SystemMessageId VITALITY_LEVEL_S1_S2;
 	
-	@ClientString(id = 2330, message = " : XP/SP boosted by $s1%%.")
+	@ClientString(id = 2330, message = ": XP/SP boosted by $s1%%.")
 	public static SystemMessageId XP_SP_BOOSTED_BY_S1;
 	
 	@ClientString(id = 2331, message = "<Rare> $s1")
@@ -7297,7 +7297,7 @@ public class SystemMessageId
 	@ClientString(id = 2417, message = "Do you really want to cancel your Aerial Cleft registration?")
 	public static SystemMessageId DO_YOU_REALLY_WANT_TO_CANCEL_YOUR_AERIAL_CLEFT_REGISTRATION;
 	
-	@ClientString(id = 2418, message = "The Aerial Cleft registration is cancelled. ")
+	@ClientString(id = 2418, message = "The Aerial Cleft registration is cancelled.")
 	public static SystemMessageId THE_AERIAL_CLEFT_REGISTRATION_IS_CANCELLED;
 	
 	@ClientString(id = 2419, message = "The Aerial Cleft has been activated. Flight transformation will be possible in approximately 40 seconds.")
@@ -7519,7 +7519,7 @@ public class SystemMessageId
 	@ClientString(id = 2491, message = "Not enough fuel for teleportation.")
 	public static SystemMessageId NOT_ENOUGH_FUEL_FOR_TELEPORTATION;
 	
-	@ClientString(id = 2492, message = "The airship is summoned. It will depart in $s1 min. ")
+	@ClientString(id = 2492, message = "The airship is summoned. It will depart in $s1 min.")
 	public static SystemMessageId THE_AIRSHIP_IS_SUMMONED_IT_WILL_DEPART_IN_S1_MIN;
 	
 	@ClientString(id = 2493, message = "Enter chat mode is automatically enabled when you are in a flying transformation state.")
@@ -7750,7 +7750,7 @@ public class SystemMessageId
 	@ClientString(id = 2569, message = "Not used")
 	public static SystemMessageId NOT_USED;
 	
-	@ClientString(id = 2570, message = "Opens/closes the world map. ")
+	@ClientString(id = 2570, message = "Opens/closes the world map.")
 	public static SystemMessageId OPENS_CLOSES_THE_WORLD_MAP;
 	
 	@ClientString(id = 2571, message = "Opens/closes the Settings window.")
@@ -7981,7 +7981,7 @@ public class SystemMessageId
 	@ClientString(id = 2748, message = "You have been reported as an illegal program user and cannot report other users.")
 	public static SystemMessageId YOU_HAVE_BEEN_REPORTED_AS_AN_ILLEGAL_PROGRAM_USER_AND_CANNOT_REPORT_OTHER_USERS;
 	
-	@ClientString(id = 2749, message = "You have reached your crystallization limit and cannot crystallize any more. ")
+	@ClientString(id = 2749, message = "You have reached your crystallization limit and cannot crystallize any more.")
 	public static SystemMessageId YOU_HAVE_REACHED_YOUR_CRYSTALLIZATION_LIMIT_AND_CANNOT_CRYSTALLIZE_ANY_MORE;
 	
 	@ClientString(id = 2750, message = "The $s1 banner has been lost! $c2 is carrying it now.")
@@ -8182,76 +8182,76 @@ public class SystemMessageId
 	@ClientString(id = 2815, message = "No translation required")
 	public static SystemMessageId NO_TRANSLATION_REQUIRED_20;
 	
-	@ClientString(id = 2816, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 1 slot. ")
+	@ClientString(id = 2816, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 1 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_1_SLOT;
 	
-	@ClientString(id = 2817, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 2 slot. ")
+	@ClientString(id = 2817, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 2 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_2_SLOT;
 	
-	@ClientString(id = 2818, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 3 slot. ")
+	@ClientString(id = 2818, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 3 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_3_SLOT;
 	
-	@ClientString(id = 2819, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 4 slot. ")
+	@ClientString(id = 2819, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 4 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_4_SLOT;
 	
-	@ClientString(id = 2820, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 5 slot. ")
+	@ClientString(id = 2820, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 5 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_5_SLOT;
 	
-	@ClientString(id = 2821, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 6 slot. ")
+	@ClientString(id = 2821, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 6 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_6_SLOT;
 	
-	@ClientString(id = 2822, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 7 slot. ")
+	@ClientString(id = 2822, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 7 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_7_SLOT;
 	
-	@ClientString(id = 2823, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 8 slot. ")
+	@ClientString(id = 2823, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 8 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_8_SLOT;
 	
-	@ClientString(id = 2824, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 9 slot. ")
+	@ClientString(id = 2824, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 9 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_9_SLOT;
 	
-	@ClientString(id = 2825, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 10 slot. ")
+	@ClientString(id = 2825, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 10 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_10_SLOT;
 	
-	@ClientString(id = 2826, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 11 slot. ")
+	@ClientString(id = 2826, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 11 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_11_SLOT;
 	
-	@ClientString(id = 2827, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 12 slot. ")
+	@ClientString(id = 2827, message = "Designate a shortcut key for the Flying Transformed Object Exclusive use shortcut window's No 12 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_FLYING_TRANSFORMED_OBJECT_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_12_SLOT;
 	
-	@ClientString(id = 2828, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 1 slot. ")
+	@ClientString(id = 2828, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 1 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_1_SLOT;
 	
-	@ClientString(id = 2829, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 2 slot. ")
+	@ClientString(id = 2829, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 2 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_2_SLOT;
 	
-	@ClientString(id = 2830, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 3 slot. ")
+	@ClientString(id = 2830, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 3 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_3_SLOT;
 	
-	@ClientString(id = 2831, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 4 slot. ")
+	@ClientString(id = 2831, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 4 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_4_SLOT;
 	
-	@ClientString(id = 2832, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 5 slot. ")
+	@ClientString(id = 2832, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 5 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_5_SLOT;
 	
-	@ClientString(id = 2833, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 6 slot. ")
+	@ClientString(id = 2833, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 6 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_6_SLOT;
 	
-	@ClientString(id = 2834, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 7 slot. ")
+	@ClientString(id = 2834, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 7 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_7_SLOT;
 	
-	@ClientString(id = 2835, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 8 slot. ")
+	@ClientString(id = 2835, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 8 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_8_SLOT;
 	
-	@ClientString(id = 2836, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 9 slot. ")
+	@ClientString(id = 2836, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 9 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_9_SLOT;
 	
-	@ClientString(id = 2837, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 10 slot. ")
+	@ClientString(id = 2837, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 10 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_10_SLOT;
 	
-	@ClientString(id = 2838, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 11 slot. ")
+	@ClientString(id = 2838, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 11 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_11_SLOT;
 	
-	@ClientString(id = 2839, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 12 slot. ")
+	@ClientString(id = 2839, message = "Designate a shortcut key for the Mountable Exclusive use shortcut window's No 12 slot.")
 	public static SystemMessageId DESIGNATE_A_SHORTCUT_KEY_FOR_THE_MOUNTABLE_EXCLUSIVE_USE_SHORTCUT_WINDOW_S_NO_12_SLOT;
 	
 	@ClientString(id = 2840, message = "Execute the designated shortcut's action/skill/macro.")
@@ -8368,7 +8368,7 @@ public class SystemMessageId
 	@ClientString(id = 2908, message = "You've got through a monster swarm, so the airship's speed is returned to normal.")
 	public static SystemMessageId YOU_VE_GOT_THROUGH_A_MONSTER_SWARM_SO_THE_AIRSHIP_S_SPEED_IS_RETURNED_TO_NORMAL;
 	
-	@ClientString(id = 2909, message = "A servitor cannot be summoned while on an airship. ")
+	@ClientString(id = 2909, message = "A servitor cannot be summoned while on an airship.")
 	public static SystemMessageId A_SERVITOR_CANNOT_BE_SUMMONED_WHILE_ON_AN_AIRSHIP;
 	
 	@ClientString(id = 2910, message = "You have entered an incorrect command.")
@@ -9220,7 +9220,7 @@ public class SystemMessageId
 	@ClientString(id = 3199, message = "How would you like to live an eternity inside my ice?")
 	public static SystemMessageId HOW_WOULD_YOU_LIKE_TO_LIVE_AN_ETERNITY_INSIDE_MY_ICE;
 	
-	@ClientString(id = 3200, message = "Oh, great power of destruction. Come forth and obey me! ")
+	@ClientString(id = 3200, message = "Oh, great power of destruction. Come forth and obey me!")
 	public static SystemMessageId OH_GREAT_POWER_OF_DESTRUCTION_COME_FORTH_AND_OBEY_ME;
 	
 	@ClientString(id = 3201, message = "The deep cold and its unwavering eternity. Cover this world with your frigid silence.")
@@ -10114,7 +10114,7 @@ public class SystemMessageId
 	@ClientString(id = 3497, message = "You cannot request to auction several clan halls at once, or request to auction clan halls during castle sieges or clan hall wars.")
 	public static SystemMessageId YOU_CANNOT_REQUEST_TO_AUCTION_SEVERAL_CLAN_HALLS_AT_ONCE_OR_REQUEST_TO_AUCTION_CLAN_HALLS_DURING_CASTLE_SIEGES_OR_CLAN_HALL_WARS;
 	
-	@ClientString(id = 3498, message = "Your level is not enough for making a tattoo. ")
+	@ClientString(id = 3498, message = "Your level is not enough for making a tattoo.")
 	public static SystemMessageId YOUR_LEVEL_IS_NOT_ENOUGH_FOR_MAKING_A_TATTOO;
 	
 	@ClientString(id = 3499, message = "Not enough adena for making a tattoo.")
@@ -10123,7 +10123,7 @@ public class SystemMessageId
 	@ClientString(id = 3500, message = "Not enough dyes for making a tattoo.")
 	public static SystemMessageId NOT_ENOUGH_DYES_FOR_MAKING_A_TATTOO;
 	
-	@ClientString(id = 3501, message = "Your class is not eligible for making a tattoo. ")
+	@ClientString(id = 3501, message = "Your class is not eligible for making a tattoo.")
 	public static SystemMessageId YOUR_CLASS_IS_NOT_ELIGIBLE_FOR_MAKING_A_TATTOO;
 	
 	@ClientString(id = 3502, message = "<$s1> item does not exist in the Sale List.")
@@ -10618,13 +10618,13 @@ public class SystemMessageId
 	@ClientString(id = 3665, message = "If you execute 24hz in the full screen mode, it switches to window mode.")
 	public static SystemMessageId IF_YOU_EXECUTE_24HZ_IN_THE_FULL_SCREEN_MODE_IT_SWITCHES_TO_WINDOW_MODE;
 	
-	@ClientString(id = 3666, message = "<$s1>'s <$s2> attribute is changing to <$s3> attribute. Do you really want to change? ")
+	@ClientString(id = 3666, message = "<$s1>'s <$s2> attribute is changing to <$s3> attribute. Do you really want to change?")
 	public static SystemMessageId S1_S_S2_ATTRIBUTE_IS_CHANGING_TO_S3_ATTRIBUTE_DO_YOU_REALLY_WANT_TO_CHANGE;
 	
-	@ClientString(id = 3667, message = "Please choose the attribute that you want to change first. ")
+	@ClientString(id = 3667, message = "Please choose the attribute that you want to change first.")
 	public static SystemMessageId PLEASE_CHOOSE_THE_ATTRIBUTE_THAT_YOU_WANT_TO_CHANGE_FIRST;
 	
-	@ClientString(id = 3668, message = "<$s1>'s <$s2> attribute has successfully changed to <$s3> attribute. ")
+	@ClientString(id = 3668, message = "<$s1>'s <$s2> attribute has successfully changed to <$s3> attribute.")
 	public static SystemMessageId S1_S_S2_ATTRIBUTE_HAS_SUCCESSFULLY_CHANGED_TO_S3_ATTRIBUTE;
 	
 	@ClientString(id = 3669, message = "The item for changing an attribute does not exist.")
@@ -11047,7 +11047,7 @@ public class SystemMessageId
 	@ClientString(id = 3808, message = "Someday, I will find you and give you new power.")
 	public static SystemMessageId SOMEDAY_I_WILL_FIND_YOU_AND_GIVE_YOU_NEW_POWER;
 	
-	@ClientString(id = 3809, message = " - the request is submitted.")
+	@ClientString(id = 3809, message = "- the request is submitted.")
 	public static SystemMessageId THE_REQUEST_IS_SUBMITTED;
 	
 	@ClientString(id = 3810, message = "The clan hall war begins!")
@@ -11134,7 +11134,7 @@ public class SystemMessageId
 	@ClientString(id = 3837, message = "A clan quest is starting.")
 	public static SystemMessageId A_CLAN_QUEST_IS_STARTING;
 	
-	@ClientString(id = 3838, message = "What is a <font color='#FFDF4C'>clan request</font>? It's a clan activity designed to help a clan become a more solid, powerful organization. With badges of each dwarf guild you've obtained through request activities, you can increase clan level and purchase various rewards.<br><br>Also, clans of level 5 or higher can obtain Clan Reputation after successfully finishing a clan request.<br><br>(You can increase clan level through the Grand Master in any village.) ")
+	@ClientString(id = 3838, message = "What is a <font color='#FFDF4C'>clan request</font>? It's a clan activity designed to help a clan become a more solid, powerful organization. With badges of each dwarf guild you've obtained through request activities, you can increase clan level and purchase various rewards.<br><br>Also, clans of level 5 or higher can obtain Clan Reputation after successfully finishing a clan request.<br><br>(You can increase clan level through the Grand Master in any village.)")
 	public static SystemMessageId WHAT_IS_A_FONT_COLOR_FFDF4C_CLAN_REQUEST_FONT_IT_S_A_CLAN_ACTIVITY_DESIGNED_TO_HELP_A_CLAN_BECOME_A_MORE_SOLID_POWERFUL_ORGANIZATION_WITH_BADGES_OF_EACH_DWARF_GUILD_YOU_VE_OBTAINED_THROUGH_REQUEST_ACTIVITIES_YOU_CAN_INCREASE_CLAN_LEVEL_AND_PURCHASE_VARIOUS_REWARDS_BR_BR_ALSO_CLANS_OF_LEVEL_5_OR_HIGHER_CAN_OBTAIN_CLAN_REPUTATION_AFTER_SUCCESSFULLY_FINISHING_A_CLAN_REQUEST_BR_BR_YOU_CAN_INCREASE_CLAN_LEVEL_THROUGH_THE_GRAND_MASTER_IN_ANY_VILLAGE;
 	
 	@ClientString(id = 3839, message = "Go to the clan request area.")
@@ -11344,46 +11344,46 @@ public class SystemMessageId
 	@ClientString(id = 3907, message = "$s1 can no longer be a mentee.")
 	public static SystemMessageId S1_CAN_NO_LONGER_BE_A_MENTEE;
 	
-	@ClientString(id = 4001, message = "You can change your hairstyle. ")
+	@ClientString(id = 4001, message = "You can change your hairstyle.")
 	public static SystemMessageId YOU_CAN_CHANGE_YOUR_HAIRSTYLE;
 	
-	@ClientString(id = 4002, message = "You can change your character's face. ")
+	@ClientString(id = 4002, message = "You can change your character's face.")
 	public static SystemMessageId YOU_CAN_CHANGE_YOUR_CHARACTER_S_FACE;
 	
 	@ClientString(id = 4003, message = "The style selected will be reset.")
 	public static SystemMessageId THE_STYLE_SELECTED_WILL_BE_RESET;
 	
-	@ClientString(id = 4004, message = "The style change was successful. ")
+	@ClientString(id = 4004, message = "The style change was successful.")
 	public static SystemMessageId THE_STYLE_CHANGE_WAS_SUCCESSFUL;
 	
-	@ClientString(id = 4005, message = "The style change was not successful. ")
+	@ClientString(id = 4005, message = "The style change was not successful.")
 	public static SystemMessageId THE_STYLE_CHANGE_WAS_NOT_SUCCESSFUL;
 	
-	@ClientString(id = 4006, message = "The style selected does not exist. ")
+	@ClientString(id = 4006, message = "The style selected does not exist.")
 	public static SystemMessageId THE_STYLE_SELECTED_DOES_NOT_EXIST;
 	
-	@ClientString(id = 4007, message = "The style change was not successful. ")
+	@ClientString(id = 4007, message = "The style change was not successful.")
 	public static SystemMessageId THE_STYLE_CHANGE_WAS_NOT_SUCCESSFUL_2;
 	
-	@ClientString(id = 4008, message = "Change to selected style. ")
+	@ClientString(id = 4008, message = "Change to selected style.")
 	public static SystemMessageId CHANGE_TO_SELECTED_STYLE;
 	
-	@ClientString(id = 4009, message = "Failed to purchase due to insufficient Adena. ")
+	@ClientString(id = 4009, message = "Failed to purchase due to insufficient Adena.")
 	public static SystemMessageId FAILED_TO_PURCHASE_DUE_TO_INSUFFICIENT_ADENA;
 	
-	@ClientString(id = 4010, message = "Item to be traded does not exist. ")
+	@ClientString(id = 4010, message = "Item to be traded does not exist.")
 	public static SystemMessageId ITEM_TO_BE_TRADED_DOES_NOT_EXIST;
 	
-	@ClientString(id = 4011, message = "This item has been sold out. ")
+	@ClientString(id = 4011, message = "This item has been sold out.")
 	public static SystemMessageId THIS_ITEM_HAS_BEEN_SOLD_OUT;
 	
-	@ClientString(id = 4012, message = "Please try again after completing your current task. ")
+	@ClientString(id = 4012, message = "Please try again after completing your current task.")
 	public static SystemMessageId PLEASE_TRY_AGAIN_AFTER_COMPLETING_YOUR_CURRENT_TASK;
 	
-	@ClientString(id = 4013, message = "Before using the Beauty Shop ")
+	@ClientString(id = 4013, message = "Before using the Beauty Shop")
 	public static SystemMessageId BEFORE_USING_THE_BEAUTY_SHOP;
 	
-	@ClientString(id = 4014, message = "Current appearance ")
+	@ClientString(id = 4014, message = "Current appearance")
 	public static SystemMessageId CURRENT_APPEARANCE;
 	
 	@ClientString(id = 4015, message = "Restoring the appearance to before using the Beauty Shop")
@@ -11395,10 +11395,10 @@ public class SystemMessageId
 	@ClientString(id = 4017, message = "Restoration to previous appearance complete.")
 	public static SystemMessageId RESTORATION_TO_PREVIOUS_APPEARANCE_COMPLETE;
 	
-	@ClientString(id = 4018, message = "Failed to restore appearance to previous style. ")
+	@ClientString(id = 4018, message = "Failed to restore appearance to previous style.")
 	public static SystemMessageId FAILED_TO_RESTORE_APPEARANCE_TO_PREVIOUS_STYLE;
 	
-	@ClientString(id = 4019, message = "Leaving Beauty Shop. ")
+	@ClientString(id = 4019, message = "Leaving Beauty Shop.")
 	public static SystemMessageId LEAVING_BEAUTY_SHOP;
 	
 	@ClientString(id = 4020, message = "<BROWN01>This hairstyle will make your equipped</BROWN01> <RED02>head accessory</RED02><BROWN01> invisible.<br>Proceed with purchase?</BROWN01>")
@@ -11434,34 +11434,34 @@ public class SystemMessageId
 	@ClientString(id = 4030, message = "The target cannot be resurrected with the Clan Resurrection effect.")
 	public static SystemMessageId THE_TARGET_CANNOT_BE_RESURRECTED_WITH_THE_CLAN_RESURRECTION_EFFECT;
 	
-	@ClientString(id = 4031, message = "Only the clan leader or someone with rank management authority may register the clan. ")
+	@ClientString(id = 4031, message = "Only the clan leader or someone with rank management authority may register the clan.")
 	public static SystemMessageId ONLY_THE_CLAN_LEADER_OR_SOMEONE_WITH_RANK_MANAGEMENT_AUTHORITY_MAY_REGISTER_THE_CLAN;
 	
-	@ClientString(id = 4032, message = "You may register the clan in $s1 min. due to the deletion of the previous entry. ")
+	@ClientString(id = 4032, message = "You may register the clan in $s1 min. due to the deletion of the previous entry.")
 	public static SystemMessageId YOU_MAY_REGISTER_THE_CLAN_IN_S1_MIN_DUE_TO_THE_DELETION_OF_THE_PREVIOUS_ENTRY;
 	
-	@ClientString(id = 4033, message = "You are viewing the list of clanless characters who have applied to join. ")
+	@ClientString(id = 4033, message = "You are viewing the list of clanless characters who have applied to join.")
 	public static SystemMessageId YOU_ARE_VIEWING_THE_LIST_OF_CLANLESS_CHARACTERS_WHO_HAVE_APPLIED_TO_JOIN;
 	
 	@ClientString(id = 4034, message = "You can edit the clan information, but deleting Clan Info results in a 5-min. penalty.")
 	public static SystemMessageId YOU_CAN_EDIT_THE_CLAN_INFORMATION_BUT_DELETING_CLAN_INFO_RESULTS_IN_A_5_MIN_PENALTY;
 	
-	@ClientString(id = 4035, message = "Only the clan leader or someone with rank management authority may change clan information. ")
+	@ClientString(id = 4035, message = "Only the clan leader or someone with rank management authority may change clan information.")
 	public static SystemMessageId ONLY_THE_CLAN_LEADER_OR_SOMEONE_WITH_RANK_MANAGEMENT_AUTHORITY_MAY_CHANGE_CLAN_INFORMATION;
 	
-	@ClientString(id = 4036, message = "Cancelling entry applications results in a 5-min. penalty. ")
+	@ClientString(id = 4036, message = "Cancelling entry applications results in a 5-min. penalty.")
 	public static SystemMessageId CANCELLING_ENTRY_APPLICATIONS_RESULTS_IN_A_5_MIN_PENALTY;
 	
 	@ClientString(id = 4037, message = "Entered into list. Entries are in order of Clan Reputation, recalculated every day at 6:30 am. You can edit the text, but if you delete the text, you cannot enter clan information for 5 min. Entered text will be automatically deleted after 30 d.")
 	public static SystemMessageId ENTERED_INTO_LIST_ENTRIES_ARE_IN_ORDER_OF_CLAN_REPUTATION_RECALCULATED_EVERY_DAY_AT_6_30_AM_YOU_CAN_EDIT_THE_TEXT_BUT_IF_YOU_DELETE_THE_TEXT_YOU_CANNOT_ENTER_CLAN_INFORMATION_FOR_5_MIN_ENTERED_TEXT_WILL_BE_AUTOMATICALLY_DELETED_AFTER_30_D;
 	
-	@ClientString(id = 4038, message = "You may apply for entry in $s1 min. after cancelling your application. ")
+	@ClientString(id = 4038, message = "You may apply for entry in $s1 min. after cancelling your application.")
 	public static SystemMessageId YOU_MAY_APPLY_FOR_ENTRY_IN_S1_MIN_AFTER_CANCELLING_YOUR_APPLICATION;
 	
-	@ClientString(id = 4039, message = "Entry application complete. Use 'My Application' to check or cancel your application. Application is automatically cancelled after 30 d.; if you cancel application, you cannot apply again for 5 min. ")
+	@ClientString(id = 4039, message = "Entry application complete. Use 'My Application' to check or cancel your application. Application is automatically cancelled after 30 d.; if you cancel application, you cannot apply again for 5 min.")
 	public static SystemMessageId ENTRY_APPLICATION_COMPLETE_USE_MY_APPLICATION_TO_CHECK_OR_CANCEL_YOUR_APPLICATION_APPLICATION_IS_AUTOMATICALLY_CANCELLED_AFTER_30_D_IF_YOU_CANCEL_APPLICATION_YOU_CANNOT_APPLY_AGAIN_FOR_5_MIN;
 	
-	@ClientString(id = 4040, message = "Entry application cancelled. You may apply to a new clan after 5 min. ")
+	@ClientString(id = 4040, message = "Entry application cancelled. You may apply to a new clan after 5 min.")
 	public static SystemMessageId ENTRY_APPLICATION_CANCELLED_YOU_MAY_APPLY_TO_A_NEW_CLAN_AFTER_5_MIN;
 	
 	@ClientString(id = 4041, message = "The clan you selected is no longer taking applications as it has too many applicants.")
@@ -11470,7 +11470,7 @@ public class SystemMessageId
 	@ClientString(id = 4042, message = "$s1 has rejected clan entry application.")
 	public static SystemMessageId S1_HAS_REJECTED_CLAN_ENTRY_APPLICATION;
 	
-	@ClientString(id = 4043, message = "You have joined the waiting list. If you do not join any clan in 30 d., your character will be removed from the list. If Exit Waiting List is used, you will not be able to join the waiting list for 5 min. ")
+	@ClientString(id = 4043, message = "You have joined the waiting list. If you do not join any clan in 30 d., your character will be removed from the list. If Exit Waiting List is used, you will not be able to join the waiting list for 5 min.")
 	public static SystemMessageId YOU_HAVE_JOINED_THE_WAITING_LIST_IF_YOU_DO_NOT_JOIN_ANY_CLAN_IN_30_D_YOUR_CHARACTER_WILL_BE_REMOVED_FROM_THE_LIST_IF_EXIT_WAITING_LIST_IS_USED_YOU_WILL_NOT_BE_ABLE_TO_JOIN_THE_WAITING_LIST_FOR_5_MIN;
 	
 	@ClientString(id = 4044, message = "You may join the waiting list after $s1 min. due to deleting from the waiting list.")
@@ -11503,22 +11503,22 @@ public class SystemMessageId
 	@ClientString(id = 4053, message = "Free players can create up to 2 characters. Please delete a character if you wish to make a create a new one.")
 	public static SystemMessageId FREE_PLAYERS_CAN_CREATE_UP_TO_2_CHARACTERS_PLEASE_DELETE_A_CHARACTER_IF_YOU_WISH_TO_MAKE_A_CREATE_A_NEW_ONE;
 	
-	@ClientString(id = 4054, message = "You can send mail $s1 time for the rest of today. ")
+	@ClientString(id = 4054, message = "You can send mail $s1 time for the rest of today.")
 	public static SystemMessageId YOU_CAN_SEND_MAIL_S1_TIME_FOR_THE_REST_OF_TODAY;
 	
-	@ClientString(id = 4055, message = "You have used up the mail allowance for the day. The mail allowance resets every day at 6:30am. ")
+	@ClientString(id = 4055, message = "You have used up the mail allowance for the day. The mail allowance resets every day at 6:30am.")
 	public static SystemMessageId YOU_HAVE_USED_UP_THE_MAIL_ALLOWANCE_FOR_THE_DAY_THE_MAIL_ALLOWANCE_RESETS_EVERY_DAY_AT_6_30AM;
 	
-	@ClientString(id = 4056, message = "Free players cannot attach items or Adena onto mail. ")
+	@ClientString(id = 4056, message = "Free players cannot attach items or Adena onto mail.")
 	public static SystemMessageId FREE_PLAYERS_CANNOT_ATTACH_ITEMS_OR_ADENA_ONTO_MAIL;
 	
-	@ClientString(id = 4057, message = "Free players cannot create a clan. ")
+	@ClientString(id = 4057, message = "Free players cannot create a clan.")
 	public static SystemMessageId FREE_PLAYERS_CANNOT_CREATE_A_CLAN;
 	
 	@ClientString(id = 4058, message = "You cannot declare war if your clan leader is a free player.")
 	public static SystemMessageId YOU_CANNOT_DECLARE_WAR_IF_YOUR_CLAN_LEADER_IS_A_FREE_PLAYER;
 	
-	@ClientString(id = 4059, message = "You cannot use the clan warehouse if your clan leader is a free player. ")
+	@ClientString(id = 4059, message = "You cannot use the clan warehouse if your clan leader is a free player.")
 	public static SystemMessageId YOU_CANNOT_USE_THE_CLAN_WAREHOUSE_IF_YOUR_CLAN_LEADER_IS_A_FREE_PLAYER;
 	
 	@ClientString(id = 4060, message = "You cannot participate in a clan hall war if your clan leader is a free player.")
@@ -11578,22 +11578,22 @@ public class SystemMessageId
 	@ClientString(id = 4078, message = "Congratulations! $s1 has reached Lv. 85. Further mysteries of Aden will be revealed to you in $s2 second(s).")
 	public static SystemMessageId CONGRATULATIONS_S1_HAS_REACHED_LV_85_FURTHER_MYSTERIES_OF_ADEN_WILL_BE_REVEALED_TO_YOU_IN_S2_SECOND_S;
 	
-	@ClientString(id = 4079, message = "You cannot play a disabled character. Please select an enabled character. ")
+	@ClientString(id = 4079, message = "You cannot play a disabled character. Please select an enabled character.")
 	public static SystemMessageId YOU_CANNOT_PLAY_A_DISABLED_CHARACTER_PLEASE_SELECT_AN_ENABLED_CHARACTER;
 	
-	@ClientString(id = 4080, message = "We hope you enjoyed your free trial of Lineage II. With a play pass, you can go beyond Lv. 85 to explore an even more exciting and expansive world in Aden. ")
+	@ClientString(id = 4080, message = "We hope you enjoyed your free trial of Lineage II. With a play pass, you can go beyond Lv. 85 to explore an even more exciting and expansive world in Aden.")
 	public static SystemMessageId WE_HOPE_YOU_ENJOYED_YOUR_FREE_TRIAL_OF_LINEAGE_II_WITH_A_PLAY_PASS_YOU_CAN_GO_BEYOND_LV_85_TO_EXPLORE_AN_EVEN_MORE_EXCITING_AND_EXPANSIVE_WORLD_IN_ADEN;
 	
 	@ClientString(id = 4081, message = "You've exceeded the maximum amount of the game clients launched simultaneously.")
 	public static SystemMessageId YOU_VE_EXCEEDED_THE_MAXIMUM_AMOUNT_OF_THE_GAME_CLIENTS_LAUNCHED_SIMULTANEOUSLY;
 	
-	@ClientString(id = 4082, message = "<font color='#FFDF4C'>Path to Awakening</font><br>If you are a new player, you can earn free rewards as you level up by visiting the following website: http://truly-free.lineage2.com/path. Log in with your Lineage II account and claim the rewards when you reach each milestone. Don't miss out! ")
+	@ClientString(id = 4082, message = "<font color='#FFDF4C'>Path to Awakening</font><br>If you are a new player, you can earn free rewards as you level up by visiting the following website: http://truly-free.lineage2.com/path. Log in with your Lineage II account and claim the rewards when you reach each milestone. Don't miss out!")
 	public static SystemMessageId FONT_COLOR_FFDF4C_PATH_TO_AWAKENING_FONT_BR_IF_YOU_ARE_A_NEW_PLAYER_YOU_CAN_EARN_FREE_REWARDS_AS_YOU_LEVEL_UP_BY_VISITING_THE_FOLLOWING_WEBSITE_HTTP_TRULY_FREE_LINEAGE2_COM_PATH_LOG_IN_WITH_YOUR_LINEAGE_II_ACCOUNT_AND_CLAIM_THE_REWARDS_WHEN_YOU_REACH_EACH_MILESTONE_DON_T_MISS_OUT;
 	
-	@ClientString(id = 4083, message = "Welcome to Lineage II!<br>Please select a character you can use for free, or purchase a Lineage II play pass. ")
+	@ClientString(id = 4083, message = "Welcome to Lineage II!<br>Please select a character you can use for free, or purchase a Lineage II play pass.")
 	public static SystemMessageId WELCOME_TO_LINEAGE_II_BR_PLEASE_SELECT_A_CHARACTER_YOU_CAN_USE_FOR_FREE_OR_PURCHASE_A_LINEAGE_II_PLAY_PASS;
 	
-	@ClientString(id = 4084, message = "You cannot use the selected character.<br>Please select a character you can use for free, or purchase a Lineage II play pass. ")
+	@ClientString(id = 4084, message = "You cannot use the selected character.<br>Please select a character you can use for free, or purchase a Lineage II play pass.")
 	public static SystemMessageId YOU_CANNOT_USE_THE_SELECTED_CHARACTER_BR_PLEASE_SELECT_A_CHARACTER_YOU_CAN_USE_FOR_FREE_OR_PURCHASE_A_LINEAGE_II_PLAY_PASS;
 	
 	@ClientString(id = 4085, message = "You cannot use the $s1 skill due to insufficient summon points.")
@@ -11614,13 +11614,13 @@ public class SystemMessageId
 	@ClientString(id = 4090, message = "Returning players will receive free passes as a welcome-back gift. You can see the support goods and pass for Aden warriors in the Free Adventure Service. Click 'Receive' to go to the website for the pass. This will log you out of the game. Do you wish to proceed? (Click Cancel if you have already registered the pass.)")
 	public static SystemMessageId RETURNING_PLAYERS_WILL_RECEIVE_FREE_PASSES_AS_A_WELCOME_BACK_GIFT_YOU_CAN_SEE_THE_SUPPORT_GOODS_AND_PASS_FOR_ADEN_WARRIORS_IN_THE_FREE_ADVENTURE_SERVICE_CLICK_RECEIVE_TO_GO_TO_THE_WEBSITE_FOR_THE_PASS_THIS_WILL_LOG_YOU_OUT_OF_THE_GAME_DO_YOU_WISH_TO_PROCEED_CLICK_CANCEL_IF_YOU_HAVE_ALREADY_REGISTERED_THE_PASS;
 	
-	@ClientString(id = 4091, message = "This quest cannot be deleted. ")
+	@ClientString(id = 4091, message = "This quest cannot be deleted.")
 	public static SystemMessageId THIS_QUEST_CANNOT_BE_DELETED;
 	
-	@ClientString(id = 4092, message = "A free player will have limited access to rights as clan leader. Will you transfer clan leadership? ")
+	@ClientString(id = 4092, message = "A free player will have limited access to rights as clan leader. Will you transfer clan leadership?")
 	public static SystemMessageId A_FREE_PLAYER_WILL_HAVE_LIMITED_ACCESS_TO_RIGHTS_AS_CLAN_LEADER_WILL_YOU_TRANSFER_CLAN_LEADERSHIP;
 	
-	@ClientString(id = 4093, message = "You have limited access to rights as clan leader as you are a free player. ")
+	@ClientString(id = 4093, message = "You have limited access to rights as clan leader as you are a free player.")
 	public static SystemMessageId YOU_HAVE_LIMITED_ACCESS_TO_RIGHTS_AS_CLAN_LEADER_AS_YOU_ARE_A_FREE_PLAYER;
 	
 	@ClientString(id = 4094, message = "Use the system message window.")
@@ -11632,13 +11632,13 @@ public class SystemMessageId
 	@ClientString(id = 4096, message = "$s1, you qualify for dormant player benefits. Log in to the Lineage II homepage within $s2 h. $s3 min. to get your PA.")
 	public static SystemMessageId S1_YOU_QUALIFY_FOR_DORMANT_PLAYER_BENEFITS_LOG_IN_TO_THE_LINEAGE_II_HOMEPAGE_WITHIN_S2_H_S3_MIN_TO_GET_YOUR_PA;
 	
-	@ClientString(id = 4097, message = "Teleport in progress. Please try again later. ")
+	@ClientString(id = 4097, message = "Teleport in progress. Please try again later.")
 	public static SystemMessageId TELEPORT_IN_PROGRESS_PLEASE_TRY_AGAIN_LATER;
 	
-	@ClientString(id = 4098, message = "You cannot summon a pet/servitor when teleporting. Please try again later. ")
+	@ClientString(id = 4098, message = "You cannot summon a pet/servitor when teleporting. Please try again later.")
 	public static SystemMessageId YOU_CANNOT_SUMMON_A_PET_SERVITOR_WHEN_TELEPORTING_PLEASE_TRY_AGAIN_LATER;
 	
-	@ClientString(id = 4099, message = "100,000,000 Adena will be spent on a reset. Proceed? ")
+	@ClientString(id = 4099, message = "100,000,000 Adena will be spent on a reset. Proceed?")
 	public static SystemMessageId ONE_HUNDRED_MILION_ADENA_WILL_BE_SPENT_ON_A_RESET_PROCEED;
 	
 	@ClientString(id = 4100, message = "You may register the clan after $s1 min. due to the deletion of the previous entry.")
@@ -11650,7 +11650,7 @@ public class SystemMessageId
 	@ClientString(id = 4102, message = "You may join the waiting list after $s1 sec. due to deleting from the waiting list.")
 	public static SystemMessageId YOU_MAY_JOIN_THE_WAITING_LIST_AFTER_S1_SEC_DUE_TO_DELETING_FROM_THE_WAITING_LIST;
 	
-	@ClientString(id = 4103, message = "The Prophecy skill cannot be reset due to insufficient Adena. ")
+	@ClientString(id = 4103, message = "The Prophecy skill cannot be reset due to insufficient Adena.")
 	public static SystemMessageId THE_PROPHECY_SKILL_CANNOT_BE_RESET_DUE_TO_INSUFFICIENT_ADENA;
 	
 	@ClientString(id = 4104, message = "Shout chat cannot be used by Non-premium users Lv. $s1 or lower.")
@@ -11665,10 +11665,10 @@ public class SystemMessageId
 	@ClientString(id = 4107, message = "Non-premium users Lv. $s1 or lower can respond to a whisper, but cannot initiate it.")
 	public static SystemMessageId NON_PREMIUM_USERS_LV_S1_OR_LOWER_CAN_RESPOND_TO_A_WHISPER_BUT_CANNOT_INITIATE_IT;
 	
-	@ClientString(id = 4108, message = "Pet summon/ seal or riding in progress. Please try again later. ")
+	@ClientString(id = 4108, message = "Pet summon/ seal or riding in progress. Please try again later.")
 	public static SystemMessageId PET_SUMMON_SEAL_OR_RIDING_IN_PROGRESS_PLEASE_TRY_AGAIN_LATER;
 	
-	@ClientString(id = 4109, message = "Cannot ride while summoning / sealing pet. Please try again later. ")
+	@ClientString(id = 4109, message = "Cannot ride while summoning / sealing pet. Please try again later.")
 	public static SystemMessageId CANNOT_RIDE_WHILE_SUMMONING_SEALING_PET_PLEASE_TRY_AGAIN_LATER;
 	
 	@ClientString(id = 4110, message = "Dormant accounts will receive support through in-game mail containing equipment and supplies.<br>(only for characters that have completed the 2nd Class Transfer)")
@@ -11692,13 +11692,13 @@ public class SystemMessageId
 	@ClientString(id = 4116, message = "Augmentation effects of $s2 imbued by $s1 are removed.")
 	public static SystemMessageId AUGMENTATION_EFFECTS_OF_S2_IMBUED_BY_S1_ARE_REMOVED;
 	
-	@ClientString(id = 4117, message = "$s1$s2 has been restored to its previous appearance, as its temporary modification has expired. ")
+	@ClientString(id = 4117, message = "$s1$s2 has been restored to its previous appearance, as its temporary modification has expired.")
 	public static SystemMessageId S1_S2_HAS_BEEN_RESTORED_TO_ITS_PREVIOUS_APPEARANCE_AS_ITS_TEMPORARY_MODIFICATION_HAS_EXPIRED;
 	
-	@ClientString(id = 4118, message = "You cannot teleport as the Dimensional Space is closed. ")
+	@ClientString(id = 4118, message = "You cannot teleport as the Dimensional Space is closed.")
 	public static SystemMessageId YOU_CANNOT_TELEPORT_AS_THE_DIMENSIONAL_SPACE_IS_CLOSED;
 	
-	@ClientString(id = 4119, message = "You cannot teleport to the Dimensional Space as it is full. ")
+	@ClientString(id = 4119, message = "You cannot teleport to the Dimensional Space as it is full.")
 	public static SystemMessageId YOU_CANNOT_TELEPORT_TO_THE_DIMENSIONAL_SPACE_AS_IT_IS_FULL;
 	
 	@ClientString(id = 4120, message = "You cannot teleport to the Dimensional Space while your pet or servitor is summoned.")
@@ -11710,28 +11710,28 @@ public class SystemMessageId
 	@ClientString(id = 4122, message = "You cannot register/cancel while using the Beauty Shop.")
 	public static SystemMessageId YOU_CANNOT_REGISTER_CANCEL_WHILE_USING_THE_BEAUTY_SHOP;
 	
-	@ClientString(id = 4123, message = "You cannot use the Beauty Shop during the party auto-search. ")
+	@ClientString(id = 4123, message = "You cannot use the Beauty Shop during the party auto-search.")
 	public static SystemMessageId YOU_CANNOT_USE_THE_BEAUTY_SHOP_DURING_THE_PARTY_AUTO_SEARCH;
 	
-	@ClientString(id = 4124, message = "You cannot participate in the Olympiad while using the Beauty Shop. ")
+	@ClientString(id = 4124, message = "You cannot participate in the Olympiad while using the Beauty Shop.")
 	public static SystemMessageId YOU_CANNOT_PARTICIPATE_IN_THE_OLYMPIAD_WHILE_USING_THE_BEAUTY_SHOP;
 	
-	@ClientString(id = 4125, message = "You have been entered on the waiting list again as the replacement player does not fit the requirements. ")
+	@ClientString(id = 4125, message = "You have been entered on the waiting list again as the replacement player does not fit the requirements.")
 	public static SystemMessageId YOU_HAVE_BEEN_ENTERED_ON_THE_WAITING_LIST_AGAIN_AS_THE_REPLACEMENT_PLAYER_DOES_NOT_FIT_THE_REQUIREMENTS;
 	
 	@ClientString(id = 4126, message = "You cannot use the Beauty Shop while registering in the Ceremony of Chaos.")
 	public static SystemMessageId YOU_CANNOT_USE_THE_BEAUTY_SHOP_WHILE_REGISTERING_IN_THE_CEREMONY_OF_CHAOS;
 	
-	@ClientString(id = 4127, message = "You cannot use the Beauty Shop while registering in the Olympiad. ")
+	@ClientString(id = 4127, message = "You cannot use the Beauty Shop while registering in the Olympiad.")
 	public static SystemMessageId YOU_CANNOT_USE_THE_BEAUTY_SHOP_WHILE_REGISTERING_IN_THE_OLYMPIAD;
 	
 	@ClientString(id = 4128, message = "Your wish has been entered successfully into the Wish Tree.")
 	public static SystemMessageId YOUR_WISH_HAS_BEEN_ENTERED_SUCCESSFULLY_INTO_THE_WISH_TREE;
 	
-	@ClientString(id = 4129, message = "Go to the event page to view the wish entered into the Wish Tree? ")
+	@ClientString(id = 4129, message = "Go to the event page to view the wish entered into the Wish Tree?")
 	public static SystemMessageId GO_TO_THE_EVENT_PAGE_TO_VIEW_THE_WISH_ENTERED_INTO_THE_WISH_TREE;
 	
-	@ClientString(id = 4130, message = "Failed to enter wish. Please try again by clicking on the wish link. ")
+	@ClientString(id = 4130, message = "Failed to enter wish. Please try again by clicking on the wish link.")
 	public static SystemMessageId FAILED_TO_ENTER_WISH_PLEASE_TRY_AGAIN_BY_CLICKING_ON_THE_WISH_LINK;
 	
 	@ClientString(id = 4131, message = "Inventory weight/ slot has been filled to 80%% or more. You cannot enter a wish or obtain rewards in this state. Please organize your inventory and try again.")
@@ -11740,7 +11740,7 @@ public class SystemMessageId
 	@ClientString(id = 4132, message = "You have already been rewarded for entering a wish. You can only make 1 wish per character.")
 	public static SystemMessageId YOU_HAVE_ALREADY_BEEN_REWARDED_FOR_ENTERING_A_WISH_YOU_CAN_ONLY_MAKE_1_WISH_PER_CHARACTER;
 	
-	@ClientString(id = 4133, message = "When you log in with a new account, a new account item will be given to the first character to log into each server for 1 week. ")
+	@ClientString(id = 4133, message = "When you log in with a new account, a new account item will be given to the first character to log into each server for 1 week.")
 	public static SystemMessageId WHEN_YOU_LOG_IN_WITH_A_NEW_ACCOUNT_A_NEW_ACCOUNT_ITEM_WILL_BE_GIVEN_TO_THE_FIRST_CHARACTER_TO_LOG_INTO_EACH_SERVER_FOR_1_WEEK;
 	
 	@ClientString(id = 4134, message = "You cannot change your wish once entered. Proceed?")
@@ -11782,10 +11782,10 @@ public class SystemMessageId
 	@ClientString(id = 4146, message = "Register an enchant scroll.")
 	public static SystemMessageId REGISTER_AN_ENCHANT_SCROLL;
 	
-	@ClientString(id = 4147, message = "You cannot delete items while enchanting attributes. ")
+	@ClientString(id = 4147, message = "You cannot delete items while enchanting attributes.")
 	public static SystemMessageId YOU_CANNOT_DELETE_ITEMS_WHILE_ENCHANTING_ATTRIBUTES;
 	
-	@ClientString(id = 4148, message = "You cannot destroy or crystallize items while enchanting attributes. ")
+	@ClientString(id = 4148, message = "You cannot destroy or crystallize items while enchanting attributes.")
 	public static SystemMessageId YOU_CANNOT_DESTROY_OR_CRYSTALLIZE_ITEMS_WHILE_ENCHANTING_ATTRIBUTES;
 	
 	@ClientString(id = 4149, message = "Warning! In case of failure, the item will be destroyed or crystallized. Continue anyway?")
@@ -11797,7 +11797,7 @@ public class SystemMessageId
 	@ClientString(id = 4151, message = "Adena distribution has been cancelled.")
 	public static SystemMessageId ADENA_DISTRIBUTION_HAS_BEEN_CANCELLED;
 	
-	@ClientString(id = 4152, message = "The adena in possession has been decreased. Adena distribution has been cancelled. ")
+	@ClientString(id = 4152, message = "The adena in possession has been decreased. Adena distribution has been cancelled.")
 	public static SystemMessageId THE_ADENA_IN_POSSESSION_HAS_BEEN_DECREASED_ADENA_DISTRIBUTION_HAS_BEEN_CANCELLED;
 	
 	@ClientString(id = 4153, message = "The distribution participants have changed. Adena distribution has been cancelled.")
@@ -11815,7 +11815,7 @@ public class SystemMessageId
 	@ClientString(id = 4157, message = "Not enough adena.")
 	public static SystemMessageId NOT_ENOUGH_ADENA_2;
 	
-	@ClientString(id = 4158, message = "Only Adena distribution can proceed. ")
+	@ClientString(id = 4158, message = "Only Adena distribution can proceed.")
 	public static SystemMessageId ONLY_ADENA_DISTRIBUTION_CAN_PROCEED;
 	
 	@ClientString(id = 4159, message = "Adena was not distributed to $s1.")
@@ -11824,7 +11824,7 @@ public class SystemMessageId
 	@ClientString(id = 4160, message = "You did not receive Adena distribution.")
 	public static SystemMessageId YOU_DID_NOT_RECEIVE_ADENA_DISTRIBUTION;
 	
-	@ClientString(id = 4161, message = "Distribution cannot proceed as there is insufficient Adena for distribution. ")
+	@ClientString(id = 4161, message = "Distribution cannot proceed as there is insufficient Adena for distribution.")
 	public static SystemMessageId DISTRIBUTION_CANNOT_PROCEED_AS_THERE_IS_INSUFFICIENT_ADENA_FOR_DISTRIBUTION;
 	
 	@ClientString(id = 4162, message = "My Apostle Lilith!")
@@ -11938,25 +11938,25 @@ public class SystemMessageId
 	@ClientString(id = 4198, message = "When there is mail with an attached item, the character cannot be deleted.<br>Please organize the mailbox and try again.")
 	public static SystemMessageId WHEN_THERE_IS_MAIL_WITH_AN_ATTACHED_ITEM_THE_CHARACTER_CANNOT_BE_DELETED_BR_PLEASE_ORGANIZE_THE_MAILBOX_AND_TRY_AGAIN;
 	
-	@ClientString(id = 4199, message = "Please equip a head accessory and try again. ")
+	@ClientString(id = 4199, message = "Please equip a head accessory and try again.")
 	public static SystemMessageId PLEASE_EQUIP_A_HEAD_ACCESSORY_AND_TRY_AGAIN;
 	
 	@ClientString(id = 4200, message = "You will move to the website. Do you wish to continue?")
 	public static SystemMessageId YOU_WILL_MOVE_TO_THE_WEBSITE_DO_YOU_WISH_TO_CONTINUE;
 	
-	@ClientString(id = 4201, message = "You are not in a party. ")
+	@ClientString(id = 4201, message = "You are not in a party.")
 	public static SystemMessageId YOU_ARE_NOT_IN_A_PARTY;
 	
-	@ClientString(id = 4202, message = "You are not in a clan. ")
+	@ClientString(id = 4202, message = "You are not in a clan.")
 	public static SystemMessageId YOU_ARE_NOT_IN_A_CLAN;
 	
-	@ClientString(id = 4203, message = "You are not in an alliance. ")
+	@ClientString(id = 4203, message = "You are not in an alliance.")
 	public static SystemMessageId YOU_ARE_NOT_IN_AN_ALLIANCE_2;
 	
 	@ClientString(id = 4204, message = "Only Heroes can enter the Hero channel.")
 	public static SystemMessageId ONLY_HEROES_CAN_ENTER_THE_HERO_CHANNEL;
 	
-	@ClientString(id = 4205, message = "Sayune cannot be used while taking other actions. ")
+	@ClientString(id = 4205, message = "Sayune cannot be used while taking other actions.")
 	public static SystemMessageId SAYUNE_CANNOT_BE_USED_WHILE_TAKING_OTHER_ACTIONS;
 	
 	@ClientString(id = 4206, message = "You gained Ability Points as a bonus!")
@@ -12163,7 +12163,7 @@ public class SystemMessageId
 	@ClientString(id = 4273, message = "No one lays a finger on my sister!")
 	public static SystemMessageId NO_ONE_LAYS_A_FINGER_ON_MY_SISTER;
 	
-	@ClientString(id = 4274, message = "Ni... Ni... Nidrah! Ugh... Urrrgh... ")
+	@ClientString(id = 4274, message = "Ni... Ni... Nidrah! Ugh... Urrrgh...")
 	public static SystemMessageId NI_NI_NIDRAH_UGH_URRRGH;
 	
 	@ClientString(id = 4275, message = "That is my cue. Til next time!")
@@ -12196,7 +12196,7 @@ public class SystemMessageId
 	@ClientString(id = 4284, message = "The High Priest has repeatedly attempted to reach Lord Sayha...")
 	public static SystemMessageId THE_HIGH_PRIEST_HAS_REPEATEDLY_ATTEMPTED_TO_REACH_LORD_SAYHA;
 	
-	@ClientString(id = 4285, message = "But there has been only silence. ")
+	@ClientString(id = 4285, message = "But there has been only silence.")
 	public static SystemMessageId BUT_THERE_HAS_BEEN_ONLY_SILENCE;
 	
 	@ClientString(id = 4286, message = "But we still get by.")
@@ -12208,7 +12208,7 @@ public class SystemMessageId
 	@ClientString(id = 4288, message = "If not for that man Kain, we may have been overrun by the monsters that stormed our town.")
 	public static SystemMessageId IF_NOT_FOR_THAT_MAN_KAIN_WE_MAY_HAVE_BEEN_OVERRUN_BY_THE_MONSTERS_THAT_STORMED_OUR_TOWN;
 	
-	@ClientString(id = 4289, message = "Hopefully Archmage Venir's delegation has met success in the main continent. ")
+	@ClientString(id = 4289, message = "Hopefully Archmage Venir's delegation has met success in the main continent.")
 	public static SystemMessageId HOPEFULLY_ARCHMAGE_VENIR_S_DELEGATION_HAS_MET_SUCCESS_IN_THE_MAIN_CONTINENT;
 	
 	@ClientString(id = 4290, message = "We can only depend on the help of others at this time.")
@@ -12229,7 +12229,7 @@ public class SystemMessageId
 	@ClientString(id = 4295, message = "My children...beware the influence of darkness.")
 	public static SystemMessageId MY_CHILDREN_BEWARE_THE_INFLUENCE_OF_DARKNESS;
 	
-	@ClientString(id = 4296, message = "You cannot use or reset Ability Points while participating in the Olympiad or Ceremony of Chaos. ")
+	@ClientString(id = 4296, message = "You cannot use or reset Ability Points while participating in the Olympiad or Ceremony of Chaos.")
 	public static SystemMessageId YOU_CANNOT_USE_OR_RESET_ABILITY_POINTS_WHILE_PARTICIPATING_IN_THE_OLYMPIAD_OR_CEREMONY_OF_CHAOS;
 	
 	@ClientString(id = 4297, message = "Soulshot/ Spiritshot Damage")
@@ -12271,7 +12271,7 @@ public class SystemMessageId
 	@ClientString(id = 4309, message = "The path to the Exalted!")
 	public static SystemMessageId THE_PATH_TO_THE_EXALTED;
 	
-	@ClientString(id = 4310, message = "The quest you've just completed can be completed $s1 times. Each account can complete this quest $s2 times per week, and it's reset after each maintenance. ")
+	@ClientString(id = 4310, message = "The quest you've just completed can be completed $s1 times. Each account can complete this quest $s2 times per week, and it's reset after each maintenance.")
 	public static SystemMessageId THE_QUEST_YOU_VE_JUST_COMPLETED_CAN_BE_COMPLETED_S1_TIMES_EACH_ACCOUNT_CAN_COMPLETE_THIS_QUEST_S2_TIMES_PER_WEEK_AND_IT_S_RESET_AFTER_EACH_MAINTENANCE;
 	
 	@ClientString(id = 4311, message = "I've been waiting to pierce you with my blade.")
@@ -12649,7 +12649,7 @@ public class SystemMessageId
 	@ClientString(id = 4435, message = "Keucereus Defense - Invasion declared")
 	public static SystemMessageId KEUCEREUS_DEFENSE_INVASION_DECLARED;
 	
-	@ClientString(id = 4436, message = "$s1 Territory ")
+	@ClientString(id = 4436, message = "$s1 Territory")
 	public static SystemMessageId S1_TERRITORY;
 	
 	@ClientString(id = 4437, message = "$s1 appeared - Click it to track down.")
@@ -12802,25 +12802,25 @@ public class SystemMessageId
 	@ClientString(id = 4486, message = "Lineage 2 will always be by your side.")
 	public static SystemMessageId LINEAGE_2_WILL_ALWAYS_BE_BY_YOUR_SIDE;
 	
-	@ClientString(id = 4487, message = "You cannot exchange items during the number card game. ")
+	@ClientString(id = 4487, message = "You cannot exchange items during the number card game.")
 	public static SystemMessageId YOU_CANNOT_EXCHANGE_ITEMS_DURING_THE_NUMBER_CARD_GAME;
 	
-	@ClientString(id = 4488, message = "You cannot send a request to a character who is playing the number card game. ")
+	@ClientString(id = 4488, message = "You cannot send a request to a character who is playing the number card game.")
 	public static SystemMessageId YOU_CANNOT_SEND_A_REQUEST_TO_A_CHARACTER_WHO_IS_PLAYING_THE_NUMBER_CARD_GAME;
 	
 	@ClientString(id = 4489, message = "You cannot use mail during the Number Card Game. You can only check its contents.")
 	public static SystemMessageId YOU_CANNOT_USE_MAIL_DURING_THE_NUMBER_CARD_GAME_YOU_CAN_ONLY_CHECK_ITS_CONTENTS;
 	
-	@ClientString(id = 4490, message = "The number card game has ended because you are too far from the event NPC. ")
+	@ClientString(id = 4490, message = "The number card game has ended because you are too far from the event NPC.")
 	public static SystemMessageId THE_NUMBER_CARD_GAME_HAS_ENDED_BECAUSE_YOU_ARE_TOO_FAR_FROM_THE_EVENT_NPC;
 	
-	@ClientString(id = 4491, message = "You cannot do Couple Actions during the number card game. ")
+	@ClientString(id = 4491, message = "You cannot do Couple Actions during the number card game.")
 	public static SystemMessageId YOU_CANNOT_DO_COUPLE_ACTIONS_DURING_THE_NUMBER_CARD_GAME;
 	
 	@ClientString(id = 4492, message = "$c1 is playing the number card game. You cannot request Couple Actions.")
 	public static SystemMessageId C1_IS_PLAYING_THE_NUMBER_CARD_GAME_YOU_CANNOT_REQUEST_COUPLE_ACTIONS;
 	
-	@ClientString(id = 4493, message = "Guess the number on my card! ")
+	@ClientString(id = 4493, message = "Guess the number on my card!")
 	public static SystemMessageId GUESS_THE_NUMBER_ON_MY_CARD;
 	
 	@ClientString(id = 4494, message = "The number is higher!")
@@ -12829,7 +12829,7 @@ public class SystemMessageId
 	@ClientString(id = 4495, message = "The number is lower!")
 	public static SystemMessageId THE_NUMBER_IS_LOWER;
 	
-	@ClientString(id = 4496, message = "I can't believe it... I lost! ")
+	@ClientString(id = 4496, message = "I can't believe it... I lost!")
 	public static SystemMessageId I_CAN_T_BELIEVE_IT_I_LOST;
 	
 	@ClientString(id = 4497, message = "I won! Haha.")
@@ -13132,7 +13132,7 @@ public class SystemMessageId
 	@ClientString(id = 4596, message = "Hire/position mercenaries")
 	public static SystemMessageId HIRE_POSITION_MERCENARIES;
 	
-	@ClientString(id = 4597, message = "Manor settings and use blacksmith ")
+	@ClientString(id = 4597, message = "Manor settings and use blacksmith")
 	public static SystemMessageId MANOR_SETTINGS_AND_USE_BLACKSMITH;
 	
 	@ClientString(id = 4598, message = "Clan Members ($s1)")
@@ -13183,7 +13183,7 @@ public class SystemMessageId
 	@ClientString(id = 4613, message = "- Physical hardiness and dynamic weapon mastery<br>- Specializes in two-handed swords and spears<br>- Able to suddenly increase P. Atk.")
 	public static SystemMessageId PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_TWO_HANDED_SWORDS_AND_SPEARS_BR_ABLE_TO_SUDDENLY_INCREASE_P_ATK;
 	
-	@ClientString(id = 4614, message = "By the will of the Chaos, the power of Sapyros, the Stormy Leader of the ancient giants, has been combined with the ancient power of fire. This power made the warriors of the Orc race not only strength but formidable defenses as well. ")
+	@ClientString(id = 4614, message = "By the will of the Chaos, the power of Sapyros, the Stormy Leader of the ancient giants, has been combined with the ancient power of fire. This power made the warriors of the Orc race not only strength but formidable defenses as well.")
 	public static SystemMessageId BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_FIRE_THIS_POWER_MADE_THE_WARRIORS_OF_THE_ORC_RACE_NOT_ONLY_STRENGTH_BUT_FORMIDABLE_DEFENSES_AS_WELL;
 	
 	@ClientString(id = 4615, message = "- Physical hardiness and dynamic weapon mastery<br>- Specializes in fist weapons<br>- Specializes in attacks using Momentum")
@@ -13243,7 +13243,7 @@ public class SystemMessageId
 	@ClientString(id = 4633, message = "- Highest P. Atk. among similar classes<br>- Great damage dealt in short time")
 	public static SystemMessageId HIGHEST_P_ATK_AMONG_SIMILAR_CLASSES_BR_GREAT_DAMAGE_DEALT_IN_SHORT_TIME;
 	
-	@ClientString(id = 4634, message = "By the will of the Chaos, the power of Cranigg, the ancient giant hero with the Third Eye, has been combined with the ancient power of darkness. Ghost Sentinels, now endowed with explosive power and concentration, became feared archers throughout the land. ")
+	@ClientString(id = 4634, message = "By the will of the Chaos, the power of Cranigg, the ancient giant hero with the Third Eye, has been combined with the ancient power of darkness. Ghost Sentinels, now endowed with explosive power and concentration, became feared archers throughout the land.")
 	public static SystemMessageId BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_CRANIGG_THE_ANCIENT_GIANT_HERO_WITH_THE_THIRD_EYE_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_GHOST_SENTINELS_NOW_ENDOWED_WITH_EXPLOSIVE_POWER_AND_CONCENTRATION_BECAME_FEARED_ARCHERS_THROUGHOUT_THE_LAND;
 	
 	@ClientString(id = 4635, message = "- Great PvP skills")
@@ -13279,13 +13279,13 @@ public class SystemMessageId
 	@ClientString(id = 4645, message = "- High P. Def. paired with debuffs<br>- Specializes in PvP")
 	public static SystemMessageId HIGH_P_DEF_PAIRED_WITH_DEBUFFS_BR_SPECIALIZES_IN_PVP;
 	
-	@ClientString(id = 4646, message = "By the will of the Chaos, the power of Soltkreig, one of the 7 Sages of the giants, has been stacked with the ancient power of Katenar the giant. This has resulted in powers that rival even those of the giants. ")
+	@ClientString(id = 4646, message = "By the will of the Chaos, the power of Soltkreig, one of the 7 Sages of the giants, has been stacked with the ancient power of Katenar the giant. This has resulted in powers that rival even those of the giants.")
 	public static SystemMessageId BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SOLTKREIG_ONE_OF_THE_7_SAGES_OF_THE_GIANTS_HAS_BEEN_STACKED_WITH_THE_ANCIENT_POWER_OF_KATENAR_THE_GIANT_THIS_HAS_RESULTED_IN_POWERS_THAT_RIVAL_EVEN_THOSE_OF_THE_GIANTS;
 	
 	@ClientString(id = 4647, message = "- Party buffs - specializes in buffing party members<br>- Shortened skill cooldown<br>- Use AoE Mutation debuff to aid party")
 	public static SystemMessageId PARTY_BUFFS_SPECIALIZES_IN_BUFFING_PARTY_MEMBERS_BR_SHORTENED_SKILL_COOLDOWN_BR_USE_AOE_MUTATION_DEBUFF_TO_AID_PARTY;
 	
-	@ClientString(id = 4648, message = "By the will of the Chaos, the power of Leister, the giant that commanded the war between the giants and the gods, has been combined with the ancient power of light. As a result, Hierophants can now use other magnificent holy skills. ")
+	@ClientString(id = 4648, message = "By the will of the Chaos, the power of Leister, the giant that commanded the war between the giants and the gods, has been combined with the ancient power of light. As a result, Hierophants can now use other magnificent holy skills.")
 	public static SystemMessageId BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_GIANT_THAT_COMMANDED_THE_WAR_BETWEEN_THE_GIANTS_AND_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_AS_A_RESULT_HIEROPHANTS_CAN_NOW_USE_OTHER_MAGNIFICENT_HOLY_SKILLS;
 	
 	@ClientString(id = 4649, message = "- Party buffer based on self-defense<br>- Use AoE Silence to aid party")
@@ -13297,7 +13297,7 @@ public class SystemMessageId
 	@ClientString(id = 4651, message = "- Party buffer based on attack<br>- Use AoE Petrify to aid party")
 	public static SystemMessageId PARTY_BUFFER_BASED_ON_ATTACK_BR_USE_AOE_PETRIFY_TO_AID_PARTY;
 	
-	@ClientString(id = 4652, message = "By the will of the Chaos, the power of Leister, the commander of the Giants' army in the war with the gods, has been combined with the energy of Light. It maximizes the strength of not only the Spectral Dancer but of their entire party. ")
+	@ClientString(id = 4652, message = "By the will of the Chaos, the power of Leister, the commander of the Giants' army in the war with the gods, has been combined with the energy of Light. It maximizes the strength of not only the Spectral Dancer but of their entire party.")
 	public static SystemMessageId BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_COMMANDER_OF_THE_GIANTS_ARMY_IN_THE_WAR_WITH_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ENERGY_OF_LIGHT_IT_MAXIMIZES_THE_STRENGTH_OF_NOT_ONLY_THE_SPECTRAL_DANCER_BUT_OF_THEIR_ENTIRE_PARTY;
 	
 	@ClientString(id = 4653, message = "- Buffer specializing in clan wars and PvP<br>- Restrain standard P. Atk. To aid in clan war<br>- Specializes in clan-level buffs and CP boosts")
@@ -13351,7 +13351,7 @@ public class SystemMessageId
 	@ClientString(id = 4669, message = "Melee damage delay")
 	public static SystemMessageId MELEE_DAMAGE_DELAY;
 	
-	@ClientString(id = 4670, message = " - Specizlizes in Fist Weapons<br> - Attacks from the Side<br> - Fast Atk. Spd.")
+	@ClientString(id = 4670, message = "- Specizlizes in Fist Weapons<br> - Attacks from the Side<br> - Fast Atk. Spd.")
 	public static SystemMessageId SPECIZLIZES_IN_FIST_WEAPONS_BR_ATTACKS_FROM_THE_SIDE_BR_FAST_ATK_SPD;
 	
 	@ClientString(id = 4671, message = "Eviscerators can manipulate gravity to their advantage. Their main strength lies in shifting their own center of gravity to add to their speed and attack speed.")
@@ -13360,10 +13360,10 @@ public class SystemMessageId
 	@ClientString(id = 4672, message = "Magic damage delay")
 	public static SystemMessageId MAGIC_DAMAGE_DELAY;
 	
-	@ClientString(id = 4673, message = " - Specializes in magical two-handed weapons<br> - Close-range Damage Spells<br> - Uses Wind for Defense")
+	@ClientString(id = 4673, message = "- Specializes in magical two-handed weapons<br> - Close-range Damage Spells<br> - Uses Wind for Defense")
 	public static SystemMessageId SPECIALIZES_IN_MAGICAL_TWO_HANDED_WEAPONS_BR_CLOSE_RANGE_DAMAGE_SPELLS_BR_USES_WIND_FOR_DEFENSE;
 	
-	@ClientString(id = 4674, message = "Able to tap into the power of the wind god, Sayha's Seers can diffuse themselves into the wind for teleportation or defense. Their talents account for their extraordinary survivability. ")
+	@ClientString(id = 4674, message = "Able to tap into the power of the wind god, Sayha's Seers can diffuse themselves into the wind for teleportation or defense. Their talents account for their extraordinary survivability.")
 	public static SystemMessageId ABLE_TO_TAP_INTO_THE_POWER_OF_THE_WIND_GOD_SAYHA_S_SEERS_CAN_DIFFUSE_THEMSELVES_INTO_THE_WIND_FOR_TELEPORTATION_OR_DEFENSE_THEIR_TALENTS_ACCOUNT_FOR_THEIR_EXTRAORDINARY_SURVIVABILITY;
 	
 	@ClientString(id = 4675, message = "Clan Bulletin")
@@ -13879,91 +13879,91 @@ public class SystemMessageId
 	@ClientString(id = 4845, message = "Select channel from selected tabs.")
 	public static SystemMessageId SELECT_CHANNEL_FROM_SELECTED_TABS;
 	
-	@ClientString(id = 4846, message = "Set selected channel's message to default. ")
+	@ClientString(id = 4846, message = "Set selected channel's message to default.")
 	public static SystemMessageId SET_SELECTED_CHANNEL_S_MESSAGE_TO_DEFAULT;
 	
-	@ClientString(id = 4847, message = "Show system messages. ")
+	@ClientString(id = 4847, message = "Show system messages.")
 	public static SystemMessageId SHOW_SYSTEM_MESSAGES;
 	
-	@ClientString(id = 4848, message = "Make chat window translucent. ")
+	@ClientString(id = 4848, message = "Make chat window translucent.")
 	public static SystemMessageId MAKE_CHAT_WINDOW_TRANSLUCENT;
 	
-	@ClientString(id = 4849, message = "Alert with sound effects when there is a new message that contains keywords. ")
+	@ClientString(id = 4849, message = "Alert with sound effects when there is a new message that contains keywords.")
 	public static SystemMessageId ALERT_WITH_SOUND_EFFECTS_WHEN_THERE_IS_A_NEW_MESSAGE_THAT_CONTAINS_KEYWORDS;
 	
-	@ClientString(id = 4850, message = "Enter keywords for alerts. ")
+	@ClientString(id = 4850, message = "Enter keywords for alerts.")
 	public static SystemMessageId ENTER_KEYWORDS_FOR_ALERTS;
 	
-	@ClientString(id = 4851, message = "Reset all chat option settings. ")
+	@ClientString(id = 4851, message = "Reset all chat option settings.")
 	public static SystemMessageId RESET_ALL_CHAT_OPTION_SETTINGS;
 	
-	@ClientString(id = 4852, message = "Close current favorite chat window. ")
+	@ClientString(id = 4852, message = "Close current favorite chat window.")
 	public static SystemMessageId CLOSE_CURRENT_FAVORITE_CHAT_WINDOW;
 	
-	@ClientString(id = 4853, message = "View character details such as level, HP, MP, etc. ")
+	@ClientString(id = 4853, message = "View character details such as level, HP, MP, etc.")
 	public static SystemMessageId VIEW_CHARACTER_DETAILS_SUCH_AS_LEVEL_HP_MP_ETC;
 	
-	@ClientString(id = 4854, message = "View inventory. ")
+	@ClientString(id = 4854, message = "View inventory.")
 	public static SystemMessageId VIEW_INVENTORY;
 	
 	@ClientString(id = 4855, message = "Use standard emotes, social emotes, and marks.")
 	public static SystemMessageId USE_STANDARD_EMOTES_SOCIAL_EMOTES_AND_MARKS;
 	
-	@ClientString(id = 4856, message = "Learn new skills or use learned skills. ")
+	@ClientString(id = 4856, message = "Learn new skills or use learned skills.")
 	public static SystemMessageId LEARN_NEW_SKILLS_OR_USE_LEARNED_SKILLS;
 	
-	@ClientString(id = 4857, message = "View quests currently in progress. ")
+	@ClientString(id = 4857, message = "View quests currently in progress.")
 	public static SystemMessageId VIEW_QUESTS_CURRENTLY_IN_PROGRESS;
 	
-	@ClientString(id = 4858, message = "View clan-related information such as clans, clan wars, requests, etc. ")
+	@ClientString(id = 4858, message = "View clan-related information such as clans, clan wars, requests, etc.")
 	public static SystemMessageId VIEW_CLAN_RELATED_INFORMATION_SUCH_AS_CLANS_CLAN_WARS_REQUESTS_ETC;
 	
 	@ClientString(id = 4859, message = "View Lineage II world map.")
 	public static SystemMessageId VIEW_LINEAGE_II_WORLD_MAP;
 	
-	@ClientString(id = 4860, message = "Check various background settings. ")
+	@ClientString(id = 4860, message = "Check various background settings.")
 	public static SystemMessageId CHECK_VARIOUS_BACKGROUND_SETTINGS;
 	
-	@ClientString(id = 4861, message = "Log out and return to the Login screen. ")
+	@ClientString(id = 4861, message = "Log out and return to the Login screen.")
 	public static SystemMessageId LOG_OUT_AND_RETURN_TO_THE_LOGIN_SCREEN;
 	
-	@ClientString(id = 4862, message = "Completely close the game. ")
+	@ClientString(id = 4862, message = "Completely close the game.")
 	public static SystemMessageId COMPLETELY_CLOSE_THE_GAME;
 	
-	@ClientString(id = 4863, message = "Manage friends, block list, and mentoring. ")
+	@ClientString(id = 4863, message = "Manage friends, block list, and mentoring.")
 	public static SystemMessageId MANAGE_FRIENDS_BLOCK_LIST_AND_MENTORING;
 	
-	@ClientString(id = 4864, message = "Look for party members. ")
+	@ClientString(id = 4864, message = "Look for party members.")
 	public static SystemMessageId LOOK_FOR_PARTY_MEMBERS;
 	
-	@ClientString(id = 4865, message = "Use mail and fee billing. ")
+	@ClientString(id = 4865, message = "Use mail and fee billing.")
 	public static SystemMessageId USE_MAIL_AND_FEE_BILLING;
 	
-	@ClientString(id = 4866, message = "Chat with friends through Windows Live Messenger. ")
+	@ClientString(id = 4866, message = "Chat with friends through Windows Live Messenger.")
 	public static SystemMessageId CHAT_WITH_FRIENDS_THROUGH_WINDOWS_LIVE_MESSENGER;
 	
-	@ClientString(id = 4867, message = "Summon shortcut settings. ")
+	@ClientString(id = 4867, message = "Summon shortcut settings.")
 	public static SystemMessageId SUMMON_SHORTCUT_SETTINGS;
 	
-	@ClientString(id = 4868, message = "Edit macros. ")
+	@ClientString(id = 4868, message = "Edit macros.")
 	public static SystemMessageId EDIT_MACROS;
 	
-	@ClientString(id = 4869, message = "View various records within the world. ")
+	@ClientString(id = 4869, message = "View various records within the world.")
 	public static SystemMessageId VIEW_VARIOUS_RECORDS_WITHIN_THE_WORLD;
 	
-	@ClientString(id = 4870, message = "View Instance Zone usage status. ")
+	@ClientString(id = 4870, message = "View Instance Zone usage status.")
 	public static SystemMessageId VIEW_INSTANCE_ZONE_USAGE_STATUS;
 	
-	@ClientString(id = 4871, message = "You can view clan information and request entry into clan. ")
+	@ClientString(id = 4871, message = "You can view clan information and request entry into clan.")
 	public static SystemMessageId YOU_CAN_VIEW_CLAN_INFORMATION_AND_REQUEST_ENTRY_INTO_CLAN;
 	
 	@ClientString(id = 4872, message = "View PA Points.")
 	public static SystemMessageId VIEW_PA_POINTS;
 	
-	@ClientString(id = 4873, message = "View inventory. ")
+	@ClientString(id = 4873, message = "View inventory.")
 	public static SystemMessageId VIEW_INVENTORY_2;
 	
-	@ClientString(id = 4874, message = "Enables moving by clicking simultaneously both mouse buttons. ")
+	@ClientString(id = 4874, message = "Enables moving by clicking simultaneously both mouse buttons.")
 	public static SystemMessageId ENABLES_MOVING_BY_CLICKING_SIMULTANEOUSLY_BOTH_MOUSE_BUTTONS;
 	
 	@ClientString(id = 4875, message = "Shows names of your pets and servitors.")
@@ -13978,10 +13978,10 @@ public class SystemMessageId
 	@ClientString(id = 4878, message = "Global support is available.")
 	public static SystemMessageId GLOBAL_SUPPORT_IS_AVAILABLE;
 	
-	@ClientString(id = 4879, message = "View the guide. ")
+	@ClientString(id = 4879, message = "View the guide.")
 	public static SystemMessageId VIEW_THE_GUIDE;
 	
-	@ClientString(id = 4880, message = "View the forums. ")
+	@ClientString(id = 4880, message = "View the forums.")
 	public static SystemMessageId VIEW_THE_FORUMS;
 	
 	@ClientString(id = 4881, message = "Go to the Lineage II homepage.")
@@ -13990,16 +13990,16 @@ public class SystemMessageId
 	@ClientString(id = 4882, message = "Edit the main menu.")
 	public static SystemMessageId EDIT_THE_MAIN_MENU;
 	
-	@ClientString(id = 4883, message = "Reset the main menu settings. ")
+	@ClientString(id = 4883, message = "Reset the main menu settings.")
 	public static SystemMessageId RESET_THE_MAIN_MENU_SETTINGS;
 	
-	@ClientString(id = 4884, message = "Re-edit the main menu. The edits made until now will not be saved. ")
+	@ClientString(id = 4884, message = "Re-edit the main menu. The edits made until now will not be saved.")
 	public static SystemMessageId RE_EDIT_THE_MAIN_MENU_THE_EDITS_MADE_UNTIL_NOW_WILL_NOT_BE_SAVED;
 	
-	@ClientString(id = 4885, message = "Finish editing and save changes. ")
+	@ClientString(id = 4885, message = "Finish editing and save changes.")
 	public static SystemMessageId FINISH_EDITING_AND_SAVE_CHANGES;
 	
-	@ClientString(id = 4886, message = "Finish editing without saving changes. ")
+	@ClientString(id = 4886, message = "Finish editing without saving changes.")
 	public static SystemMessageId FINISH_EDITING_WITHOUT_SAVING_CHANGES;
 	
 	@ClientString(id = 4887, message = "Shows/hides detailed graphics settings.")
@@ -14449,7 +14449,7 @@ public class SystemMessageId
 	@ClientString(id = 5144, message = "Not enough ingredients for evolution.")
 	public static SystemMessageId NOT_ENOUGH_INGREDIENTS_FOR_EVOLUTION;
 	
-	@ClientString(id = 5145, message = "Spirits can evolve when they reach Lv. 10 and 100%% XP. ")
+	@ClientString(id = 5145, message = "Spirits can evolve when they reach Lv. 10 and 100%% XP.")
 	public static SystemMessageId SPIRITS_CAN_EVOLVE_WHEN_THEY_REACH_LV_10_AND_100_XP;
 	
 	@ClientString(id = 5146, message = "Unable to evolve any further.")
@@ -15301,7 +15301,7 @@ public class SystemMessageId
 	@ClientString(id = 6022, message = "$s1 has received $s3 x$s4 as a reward for $s2 consecutive wins.")
 	public static SystemMessageId S1_HAS_RECEIVED_S3_X_S4_AS_A_REWARD_FOR_S2_CONSECUTIVE_WINS_2;
 	
-	@ClientString(id = 6023, message = "World: $s1 consecutive wins ($s2 ppl.) ")
+	@ClientString(id = 6023, message = "World: $s1 consecutive wins ($s2 ppl.)")
 	public static SystemMessageId WORLD_S1_CONSECUTIVE_WINS_S2_PPL;
 	
 	@ClientString(id = 6024, message = "My Record: $s1 consecutive wins")
@@ -15505,10 +15505,10 @@ public class SystemMessageId
 	@ClientString(id = 6090, message = "If you want to create a new account, please visit <font color='#FFDF4C'>$s1(</font><font color='#6699FF'><a href='asfunction:homePage'>$s2</a></font> and go to <font color='#FFDF4C'>)</font>.")
 	public static SystemMessageId IF_YOU_WANT_TO_CREATE_A_NEW_ACCOUNT_PLEASE_VISIT_FONT_COLOR_FFDF4C_S1_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_S2_A_FONT_AND_GO_TO_FONT_COLOR_FFDF4C_FONT;
 	
-	@ClientString(id = 6091, message = "You cannot select a deactivated character. Activation can occur through the premium account service. ")
+	@ClientString(id = 6091, message = "You cannot select a deactivated character. Activation can occur through the premium account service.")
 	public static SystemMessageId YOU_CANNOT_SELECT_A_DEACTIVATED_CHARACTER_ACTIVATION_CAN_OCCUR_THROUGH_THE_PREMIUM_ACCOUNT_SERVICE;
 	
-	@ClientString(id = 6092, message = "This item cannot be modified or restored. ")
+	@ClientString(id = 6092, message = "This item cannot be modified or restored.")
 	public static SystemMessageId THIS_ITEM_CANNOT_BE_MODIFIED_OR_RESTORED;
 	
 	@ClientString(id = 6093, message = "This item cannot be extracted.")
@@ -15517,7 +15517,7 @@ public class SystemMessageId
 	@ClientString(id = 6094, message = "This item does not meet requirements.")
 	public static SystemMessageId THIS_ITEM_DOES_NOT_MEET_REQUIREMENTS;
 	
-	@ClientString(id = 6095, message = "You cannot delete a deactivated character. Activation can occur through the premium account service. ")
+	@ClientString(id = 6095, message = "You cannot delete a deactivated character. Activation can occur through the premium account service.")
 	public static SystemMessageId YOU_CANNOT_DELETE_A_DEACTIVATED_CHARACTER_ACTIVATION_CAN_OCCUR_THROUGH_THE_PREMIUM_ACCOUNT_SERVICE;
 	
 	@ClientString(id = 6096, message = "Please select an item to change.")
@@ -15616,7 +15616,7 @@ public class SystemMessageId
 	@ClientString(id = 6127, message = "You have gained $s1 XP and $s2 SP for your contribution in the raid.")
 	public static SystemMessageId YOU_HAVE_GAINED_S1_XP_AND_S2_SP_FOR_YOUR_CONTRIBUTION_IN_THE_RAID;
 	
-	@ClientString(id = 6128, message = "You cannot modify an equipped item into the appearance of an unequippable item. Please check race/gender restrictions. You can modify the appearance if you unequip the item. ")
+	@ClientString(id = 6128, message = "You cannot modify an equipped item into the appearance of an unequippable item. Please check race/gender restrictions. You can modify the appearance if you unequip the item.")
 	public static SystemMessageId YOU_CANNOT_MODIFY_AN_EQUIPPED_ITEM_INTO_THE_APPEARANCE_OF_AN_UNEQUIPPABLE_ITEM_PLEASE_CHECK_RACE_GENDER_RESTRICTIONS_YOU_CAN_MODIFY_THE_APPEARANCE_IF_YOU_UNEQUIP_THE_ITEM;
 	
 	@ClientString(id = 6129, message = "Your level cannot purchase this item.")
@@ -15643,13 +15643,13 @@ public class SystemMessageId
 	@ClientString(id = 6136, message = "You have acquired a clan hall of higher value than the Provisional Clan Hall. #The Provisional Clan Hall ownership will automatically be forfeited.")
 	public static SystemMessageId YOU_HAVE_ACQUIRED_A_CLAN_HALL_OF_HIGHER_VALUE_THAN_THE_PROVISIONAL_CLAN_HALL_THE_PROVISIONAL_CLAN_HALL_OWNERSHIP_WILL_AUTOMATICALLY_BE_FORFEITED;
 	
-	@ClientString(id = 6137, message = "You have exceeded the maximum number of purchases for this item. ")
+	@ClientString(id = 6137, message = "You have exceeded the maximum number of purchases for this item.")
 	public static SystemMessageId YOU_HAVE_EXCEEDED_THE_MAXIMUM_NUMBER_OF_PURCHASES_FOR_THIS_ITEM;
 	
 	@ClientString(id = 6138, message = "You have completed training in the Royal Training Camp, and obtained $s1 XP and $s2 SP.")
 	public static SystemMessageId YOU_HAVE_COMPLETED_TRAINING_IN_THE_ROYAL_TRAINING_CAMP_AND_OBTAINED_S1_XP_AND_S2_SP;
 	
-	@ClientString(id = 6139, message = "Not enough tickets. ")
+	@ClientString(id = 6139, message = "Not enough tickets.")
 	public static SystemMessageId NOT_ENOUGH_TICKETS;
 	
 	@ClientString(id = 6140, message = "Your inventory is either full or overweight.")
@@ -15691,7 +15691,7 @@ public class SystemMessageId
 	@ClientString(id = 6152, message = "Failed to use skill.")
 	public static SystemMessageId FAILED_TO_USE_SKILL;
 	
-	@ClientString(id = 6153, message = "$s1 has expired. ")
+	@ClientString(id = 6153, message = "$s1 has expired.")
 	public static SystemMessageId S1_HAS_EXPIRED;
 	
 	@ClientString(id = 6154, message = "You cannot receive rewards for training if you have trained for less than 1 min.")
@@ -15739,7 +15739,7 @@ public class SystemMessageId
 	@ClientString(id = 6168, message = "You cannot enter the training camp with a mount or in a transformed state.")
 	public static SystemMessageId YOU_CANNOT_ENTER_THE_TRAINING_CAMP_WITH_A_MOUNT_OR_IN_A_TRANSFORMED_STATE;
 	
-	@ClientString(id = 6169, message = "You have completed the day's training. ")
+	@ClientString(id = 6169, message = "You have completed the day's training.")
 	public static SystemMessageId YOU_HAVE_COMPLETED_THE_DAY_S_TRAINING;
 	
 	@ClientString(id = 6170, message = "Lv. $s1+")
@@ -15781,7 +15781,7 @@ public class SystemMessageId
 	@ClientString(id = 6182, message = "You've already received the Attendance Check rewards.")
 	public static SystemMessageId YOU_VE_ALREADY_RECEIVED_THE_ATTENDANCE_CHECK_REWARDS;
 	
-	@ClientString(id = 6183, message = "Your VIP rank is too low to receive the reward. ")
+	@ClientString(id = 6183, message = "Your VIP rank is too low to receive the reward.")
 	public static SystemMessageId YOUR_VIP_RANK_IS_TOO_LOW_TO_RECEIVE_THE_REWARD;
 	
 	@ClientString(id = 6184, message = "Items in the Pet Inventory cannot be used as offerings.")
@@ -15985,7 +15985,7 @@ public class SystemMessageId
 	@ClientString(id = 6822, message = "You have failed receive a special reward.")
 	public static SystemMessageId YOU_HAVE_FAILED_RECEIVE_A_SPECIAL_REWARD;
 	
-	@ClientString(id = 6823, message = "The number of items you are trying to purchase is limited for each account. You have purchased the maximum quantity and cannot purchase more. ")
+	@ClientString(id = 6823, message = "The number of items you are trying to purchase is limited for each account. You have purchased the maximum quantity and cannot purchase more.")
 	public static SystemMessageId THE_NUMBER_OF_ITEMS_YOU_ARE_TRYING_TO_PURCHASE_IS_LIMITED_FOR_EACH_ACCOUNT_YOU_HAVE_PURCHASED_THE_MAXIMUM_QUANTITY_AND_CANNOT_PURCHASE_MORE;
 	
 	@ClientString(id = 6824, message = "Display the Ability Mark.")
@@ -16804,10 +16804,10 @@ public class SystemMessageId
 	@ClientString(id = 7244, message = "Over $s1")
 	public static SystemMessageId OVER_S1;
 	
-	@ClientString(id = 7245, message = "Accept $s1's application to join the clan? ")
+	@ClientString(id = 7245, message = "Accept $s1's application to join the clan?")
 	public static SystemMessageId ACCEPT_S1_S_APPLICATION_TO_JOIN_THE_CLAN;
 	
-	@ClientString(id = 7246, message = "Do you want to invite $s1 to your clan? ")
+	@ClientString(id = 7246, message = "Do you want to invite $s1 to your clan?")
 	public static SystemMessageId DO_YOU_WANT_TO_INVITE_S1_TO_YOUR_CLAN;
 	
 	@ClientString(id = 7247, message = "<Clan joining registration>$s1 accepted your application to join.")
@@ -17215,7 +17215,7 @@ public class SystemMessageId
 	@ClientString(id = 7381, message = "Rise up and complete the great sacrifice in the name darkness...")
 	public static SystemMessageId RISE_UP_AND_COMPLETE_THE_GREAT_SACRIFICE_IN_THE_NAME_DARKNESS;
 	
-	@ClientString(id = 7382, message = "No... Just listen to what I have to say... ")
+	@ClientString(id = 7382, message = "No... Just listen to what I have to say...")
 	public static SystemMessageId NO_JUST_LISTEN_TO_WHAT_I_HAVE_TO_SAY;
 	
 	@ClientString(id = 7383, message = "For the eternity of Einhasad!!!")
@@ -17893,7 +17893,7 @@ public class SystemMessageId
 	@ClientString(id = 13116, message = "Are you sure you wish to remove yourself from the Team Match waiting list?")
 	public static SystemMessageId ARE_YOU_SURE_YOU_WISH_TO_REMOVE_YOURSELF_FROM_THE_TEAM_MATCH_WAITING_LIST;
 	
-	@ClientString(id = 13117, message = "You will be moved to the Team Match in $s1 sec. ")
+	@ClientString(id = 13117, message = "You will be moved to the Team Match in $s1 sec.")
 	public static SystemMessageId YOU_WILL_BE_MOVED_TO_THE_TEAM_MATCH_IN_S1_SEC;
 	
 	@ClientString(id = 13118, message = "The $c1 team has won.")
@@ -17926,10 +17926,10 @@ public class SystemMessageId
 	@ClientString(id = 13127, message = "$c1 cannot participate in Team Match while teleporting.")
 	public static SystemMessageId C1_CANNOT_PARTICIPATE_IN_TEAM_MATCH_WHILE_TELEPORTING;
 	
-	@ClientString(id = 13128, message = "You cannot participate in the Team Match while using the Beauty Shop. ")
+	@ClientString(id = 13128, message = "You cannot participate in the Team Match while using the Beauty Shop.")
 	public static SystemMessageId YOU_CANNOT_PARTICIPATE_IN_THE_TEAM_MATCH_WHILE_USING_THE_BEAUTY_SHOP;
 	
-	@ClientString(id = 13129, message = "You cannot use the Beauty Shop while registering in the Team Match. ")
+	@ClientString(id = 13129, message = "You cannot use the Beauty Shop while registering in the Team Match.")
 	public static SystemMessageId YOU_CANNOT_USE_THE_BEAUTY_SHOP_WHILE_REGISTERING_IN_THE_TEAM_MATCH;
 	
 	@ClientString(id = 13130, message = "You cannot chat while participating in Team Match.")
@@ -17971,7 +17971,7 @@ public class SystemMessageId
 	@ClientString(id = 13142, message = "Unused enhancements")
 	public static SystemMessageId UNUSED_ENHANCEMENTS;
 	
-	@ClientString(id = 13143, message = " Vitality bonus: $s1%% ($s2)")
+	@ClientString(id = 13143, message = "Vitality bonus: $s1%% ($s2)")
 	public static SystemMessageId VITALITY_BONUS_S1_S2;
 	
 	@ClientString(id = 13144, message = "· Passive: $s1%% ($s2)")
@@ -18295,7 +18295,7 @@ public class SystemMessageId
 	@ClientString(id = 13250, message = "Failed to destroy.")
 	public static SystemMessageId FAILED_TO_DESTROY;
 	
-	@ClientString(id = 13251, message = "A homunculus can't be destroyed if there are established relations with it. Break the relations and try again. ")
+	@ClientString(id = 13251, message = "A homunculus can't be destroyed if there are established relations with it. Break the relations and try again.")
 	public static SystemMessageId A_HOMUNCULUS_CAN_T_BE_DESTROYED_IF_THERE_ARE_ESTABLISHED_RELATIONS_WITH_IT_BREAK_THE_RELATIONS_AND_TRY_AGAIN;
 	
 	@ClientString(id = 13252, message = "The homunculus is destroyed.")
@@ -18412,7 +18412,7 @@ public class SystemMessageId
 	@ClientString(id = 13290, message = "This clan has already been registered as hostile.")
 	public static SystemMessageId THIS_CLAN_HAS_ALREADY_BEEN_REGISTERED_AS_HOSTILE;
 	
-	@ClientString(id = 13291, message = "$s1 clan was registered as hostile. ")
+	@ClientString(id = 13291, message = "$s1 clan was registered as hostile.")
 	public static SystemMessageId S1_CLAN_WAS_REGISTERED_AS_HOSTILE;
 	
 	@ClientString(id = 13292, message = "Hostility with clan $s1 is canceled.")
@@ -19285,7 +19285,7 @@ public class SystemMessageId
 	@ClientString(id = 13681, message = "Failed to buy. Please refresh and try again.")
 	public static SystemMessageId FAILED_TO_BUY_PLEASE_REFRESH_AND_TRY_AGAIN;
 	
-	@ClientString(id = 13682, message = " ")
+	@ClientString(id = 13682, message = "")
 	public static SystemMessageId EMPTY_12;
 	
 	@ClientString(id = 13683, message = "When adding a crystal, you can choose its effect according to the item type.")

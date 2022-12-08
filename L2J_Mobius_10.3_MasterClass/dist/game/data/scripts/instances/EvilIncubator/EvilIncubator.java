@@ -465,7 +465,7 @@ public class EvilIncubator extends AbstractInstance
 				spawnedNpcs = world.spawnGroup("wave_" + waveId);
 				waveId++;
 				world.setParameter("WORLD_WAVE", waveId);
-				showOnScreenMsg(world, NpcStringId.CREATURES_RESURRECTED_DEFEND_YOURSELF, ExShowScreenMessage.TOP_CENTER, 5000, true);
+				showOnScreenMsg(world, NpcStringId.EVIL_INCUBATOR_GET_READY_TO_FIGHT_EVIL_FORCES, ExShowScreenMessage.TOP_CENTER, 5000, true);
 				break;
 			}
 			case 7:
@@ -487,7 +487,7 @@ public class EvilIncubator extends AbstractInstance
 				spawnedNpcs = world.spawnGroup("wave_" + waveId);
 				waveId++;
 				world.setParameter("WORLD_WAVE", waveId);
-				showOnScreenMsg(world, NpcStringId.CREATURES_RESURRECTED_DEFEND_YOURSELF, ExShowScreenMessage.TOP_CENTER, 5000, true);
+				showOnScreenMsg(world, NpcStringId.EVIL_INCUBATOR_GET_READY_TO_FIGHT_EVIL_FORCES, ExShowScreenMessage.TOP_CENTER, 5000, true);
 				getTimers().addTimer("SPAWN_WAVE", 20000, e -> manageWaveSpawn(world));
 				break;
 			}
@@ -496,7 +496,7 @@ public class EvilIncubator extends AbstractInstance
 				spawnedNpcs = world.spawnGroup("wave_" + waveId);
 				waveId++;
 				world.setParameter("WORLD_WAVE", waveId);
-				showOnScreenMsg(world, NpcStringId.I_DEATH_WOUND_CHAMPION_OF_SHILLIEN_SHALL_END_YOUR_WORLD, ExShowScreenMessage.TOP_CENTER, 5000, true);
+				showOnScreenMsg(world, NpcStringId.I_SHALL_GRANT_YOU_DEATH_IT_S_THE_ONLY_GIFT_FROM_THE_GODDESS_OF_DESTRUCTION, ExShowScreenMessage.TOP_CENTER, 5000, true);
 				getTimers().addTimer("SPAWN_WAVE", 20000, e -> manageWaveSpawn(world));
 				final Npc boss = addSpawn(CLASS_BOSS.get(world.getFirstPlayer().getClassId()).intValue(), BOSS_LOC, false, 0, false, world.getId());
 				world.broadcastPacket(new Earthquake(boss, 50, 10));

@@ -182,7 +182,7 @@ public class Nursery extends AbstractInstance
 				}
 				
 				npcVars.set("GAME_POINTS", npcVars.getInt("GAME_POINTS", 0) + addPoints);
-				showOnScreenMsg(instance, NpcStringId.SOLDIER_TIE_ABSORBED_REPRODUCTIVE_ENERGY_FROM_YOUR_BODY_AND_CONVERTED_S1_PIECES_OF_BIO_ENERGY, ExShowScreenMessage.TOP_CENTER, 3000, String.valueOf(addPoints));
+				showOnScreenMsg(instance, NpcStringId.SOLDIER_TIE_HAS_ABSORBED_REGENERATIVE_ENERGY_FROM_YOUR_BODY_AND_CONVERTED_IT_TO_BIO_ENERGY_X_S1, ExShowScreenMessage.TOP_CENTER, 3000, String.valueOf(addPoints));
 				player.getEffectList().stopSkillEffects(SkillFinishType.REMOVED, ENERGY_SKILL_1.getSkill());
 				player.getEffectList().stopSkillEffects(SkillFinishType.REMOVED, ENERGY_SKILL_2.getSkill());
 				player.getEffectList().stopSkillEffects(SkillFinishType.REMOVED, ENERGY_SKILL_3.getSkill());

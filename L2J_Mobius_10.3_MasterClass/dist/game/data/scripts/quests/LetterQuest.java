@@ -115,7 +115,7 @@ public abstract class LetterQuest extends Quest
 		else
 		{
 			addCondNotRace(Race.ERTHEIA, "");
-			_startMessage = NpcStringId.KEKROPUS_LETTER_HAS_ARRIVED_CLICK_THE_QUESTION_MARK_ICON_TO_READ;
+			_startMessage = NpcStringId.YOU_HAVE_A_LETTER_FROM_KEKROPUS_CLICK_THE_QUESTION_MARK_ICON_TO_READ_IT;
 		}
 	}
 	
@@ -180,7 +180,7 @@ public abstract class LetterQuest extends Quest
 				}
 				else if (AttackStanceTaskManager.getInstance().hasAttackStanceTask(player))
 				{
-					showOnScreenMsg(player, NpcStringId.YOU_CANNOT_TELEPORT_WHILE_IN_COMBAT_MODE, ExShowScreenMessage.TOP_CENTER, 5000);
+					showOnScreenMsg(player, NpcStringId.YOU_CANNOT_TELEPORT_WHILE_IN_COMBAT, ExShowScreenMessage.TOP_CENTER, 5000);
 				}
 				else if (player.isTransformed())
 				{

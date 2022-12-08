@@ -445,7 +445,7 @@ public class KartiasLabyrinth extends AbstractInstance
 				if (npc.isScriptValue(0) && (npc.getCurrentHpPercent() < 10))
 				{
 					npc.setScriptValue(1);
-					showOnScreenMsg(instance, NpcStringId.BURNING_BLOOD_S_EFFECT_IS_FELT, ExShowScreenMessage.TOP_CENTER, 5000, true);
+					showOnScreenMsg(instance, NpcStringId.YOU_FEEL_THE_BURNING_BLOOD_EFFECT, ExShowScreenMessage.TOP_CENTER, 5000, true);
 					MIRROR_SKILL_1.getSkill().applyEffects(attacker, attacker);
 					MIRROR_SKILL_2.getSkill().applyEffects(attacker, attacker);
 					manageProgressInInstance(instance);

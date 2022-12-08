@@ -119,7 +119,7 @@ public class EnergyOfInsolence extends AbstractNpcAI
 			}
 			case POWER_ANGEL_AMON:
 			{
-				npcStringId = spawning ? NpcStringId.I_WONDER_WHO_IT_IS_THAT_IS_LURKING_ABOUT : NpcStringId.WHY_WOULD_YOU_BUILD_A_TOWER_IN_OUR_TERRITORY;
+				npcStringId = spawning ? NpcStringId.I_WONDER_WHO_IT_IS_THAT_IS_LURKING_ABOUT : NpcStringId.HOW_DARE_YOU_INVADE_OUR_LAND_I_WON_T_LET_IT_PASS;
 			}
 		}
 		npc.broadcastSay(ChatType.NPC_SHOUT, npcStringId);

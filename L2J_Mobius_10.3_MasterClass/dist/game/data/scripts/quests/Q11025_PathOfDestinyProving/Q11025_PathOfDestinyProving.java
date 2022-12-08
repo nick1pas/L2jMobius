@@ -231,7 +231,7 @@ public class Q11025_PathOfDestinyProving extends Quest
 						player.getVariables().set(REWARD_CHECK_VAR3, true);
 						if (INSTANT_LEVEL_40 && (player.getLevel() < LEVEL_40))
 						{
-							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_40) +1) - player.getExp(), 0);
+							addExpAndSp(player, (ExperienceData.getInstance().getExpForLevel(LEVEL_40) + 1) - player.getExp(), 0);
 						}
 						else
 						{
@@ -611,7 +611,7 @@ public class Q11025_PathOfDestinyProving extends Quest
 			if (qs.isCond(4))
 			{
 				final Set<NpcLogListHolder> holder = new HashSet<>();
-				holder.add(new NpcLogListHolder(NpcStringId.DEFEAT_SKELETONS_3.getId(), true, qs.getInt(KILL_COUNT_VAR)));
+				holder.add(new NpcLogListHolder(NpcStringId.KILL_SKELETONS_3.getId(), true, qs.getInt(KILL_COUNT_VAR)));
 				return holder;
 			}
 			else if (qs.isCond(11))

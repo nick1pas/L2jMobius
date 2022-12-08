@@ -256,7 +256,7 @@ public class IceQueensCastleBattle extends AbstractInstance
 						frey.setInvul(true);
 						frey.setRandomWalking(false);
 						frey.disableCoreAI(true);
-						manageTimer(world, 60, NpcStringId.TIME_REMAINING_UNTIL_NEXT_BATTLE);
+						manageTimer(world, 60, NpcStringId.TIME_UNTIL_THE_NEXT_BATTLE);
 						world.setStatus(2);
 						world.setParameter("freya", frey);
 						startQuestTimer("STAGE_2_START", 60000, controller, null);
@@ -625,7 +625,7 @@ public class IceQueensCastleBattle extends AbstractInstance
 							{
 								case 0:
 								{
-									npc.broadcastSay(ChatType.SHOUT, NpcStringId.ARCHER_GIVE_YOUR_BREATH_FOR_THE_INTRUDER);
+									npc.broadcastSay(ChatType.SHOUT, NpcStringId.GUARD_KILL_THE_INTRUDERS);
 									break;
 								}
 								case 1:
@@ -1054,7 +1054,7 @@ public class IceQueensCastleBattle extends AbstractInstance
 				case GLAKIAS_HARD:
 				{
 					manageDespawnMinions(world);
-					manageTimer(world, 60, NpcStringId.TIME_REMAINING_UNTIL_NEXT_BATTLE);
+					manageTimer(world, 60, NpcStringId.TIME_UNTIL_THE_NEXT_BATTLE);
 					cancelQuestTimer("STAGE_2_FAILED", controller, null);
 					startQuestTimer("STAGE_3_MOVIE", 60000, controller, null);
 					break;

@@ -130,7 +130,7 @@ public class SinEater extends AbstractNpcAI
 	@Override
 	public void onSummonSpawn(Summon summon)
 	{
-		broadcastSummonSay(summon, getRandomBoolean() ? NpcStringId.HEY_IT_SEEMS_LIKE_YOU_NEED_MY_HELP_DOESN_T_IT : NpcStringId.ALMOST_GOT_IT_OUCH_STOP_DAMN_THESE_BLOODY_MANACLES);
+		broadcastSummonSay(summon, getRandomBoolean() ? NpcStringId.HEY_IT_SEEMS_LIKE_YOU_NEED_MY_HELP_DOESN_T_IT : NpcStringId.ALMOST_GOT_IT_DAMN_THESE_BLOODY_MANACLES);
 		startQuestTimer("TALK", 60000, null, summon.getOwner());
 	}
 	

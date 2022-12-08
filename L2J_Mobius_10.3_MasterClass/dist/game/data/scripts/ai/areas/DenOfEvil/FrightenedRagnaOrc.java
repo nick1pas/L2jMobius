@@ -69,7 +69,7 @@ public class FrightenedRagnaOrc extends AbstractNpcAI
 	@Override
 	public String onKill(Npc npc, Player player, boolean isSummon)
 	{
-		final NpcStringId msg = getRandomBoolean() ? NpcStringId.A_CURSE_UPON_YOU_2 : NpcStringId.I_REALLY_DIDN_T_WANT_TO_FIGHT;
+		final NpcStringId msg = getRandomBoolean() ? NpcStringId.A_CURSE_UPON_YOU_2 : NpcStringId.I_DON_T_WANT_TO_FIGHT_YOU_2;
 		npc.broadcastSay(ChatType.NPC_GENERAL, msg);
 		cancelQuestTimer("say", npc, null);
 		cancelQuestTimer("reward", npc, player);
@@ -88,7 +88,7 @@ public class FrightenedRagnaOrc extends AbstractNpcAI
 					cancelQuestTimer("say", npc, null);
 					return null;
 				}
-				final NpcStringId msg = getRandomBoolean() ? NpcStringId.I_DON_T_WANT_TO_FIGHT : NpcStringId.IS_THIS_REALLY_NECESSARY;
+				final NpcStringId msg = getRandomBoolean() ? NpcStringId.I_DON_T_WANT_TO_FIGHT_YOU : NpcStringId.IS_THIS_REALLY_NECESSARY;
 				npc.broadcastSay(ChatType.NPC_GENERAL, msg);
 				break;
 			}

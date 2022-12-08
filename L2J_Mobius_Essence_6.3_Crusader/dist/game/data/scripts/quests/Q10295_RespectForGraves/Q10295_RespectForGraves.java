@@ -188,7 +188,7 @@ public class Q10295_RespectForGraves extends Quest
 		{
 			final Set<NpcLogListHolder> holder = new HashSet<>();
 			holder.add(new NpcLogListHolder(NpcStringId.KILL_MONSTERS_IN_THE_CEMETERY_2.getId(), true, qs.getInt(KILL_COUNT_VAR)));
-			holder.add(new NpcLogListHolder(NpcStringId.LEVEL_52_ACCOMPLISHED, player.getLevel() > 51 ? 1 : 0));
+			holder.add(new NpcLogListHolder(NpcStringId.REACH_LV_52, player.getLevel() > 51 ? 1 : 0));
 			return holder;
 		}
 		return super.getNpcLogList(player);

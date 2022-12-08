@@ -194,7 +194,7 @@ public class Q10296_LetsPayRespectsToOurFallenBrethren extends Quest
 		{
 			final Set<NpcLogListHolder> holder = new HashSet<>();
 			holder.add(new NpcLogListHolder(NpcStringId.KILL_MONSTERS_IN_THE_FIELDS_OF_MASSACRE_2.getId(), true, qs.getInt(KILL_COUNT_VAR)));
-			holder.add(new NpcLogListHolder(NpcStringId.LEVEL_58_ACCOMPLISHED, player.getLevel() > 57 ? 1 : 0));
+			holder.add(new NpcLogListHolder(NpcStringId.REACH_LV_58, player.getLevel() > 57 ? 1 : 0));
 			return holder;
 		}
 		return super.getNpcLogList(player);

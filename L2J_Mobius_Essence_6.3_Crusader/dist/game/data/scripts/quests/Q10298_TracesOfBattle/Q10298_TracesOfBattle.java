@@ -189,7 +189,7 @@ public class Q10298_TracesOfBattle extends Quest
 		{
 			final Set<NpcLogListHolder> holder = new HashSet<>();
 			holder.add(new NpcLogListHolder(NpcStringId.KILL_MONSTERS_ON_THE_WAR_TORN_PLAINS.getId(), true, qs.getInt(KILL_COUNT_VAR)));
-			holder.add(new NpcLogListHolder(NpcStringId.LEVEL_70_ACCOMPLISHED, player.getLevel() > 69 ? 1 : 0));
+			holder.add(new NpcLogListHolder(NpcStringId.REACH_LV_70, player.getLevel() > 69 ? 1 : 0));
 			return holder;
 		}
 		return super.getNpcLogList(player);

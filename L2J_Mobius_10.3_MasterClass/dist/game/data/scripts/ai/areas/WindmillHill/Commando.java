@@ -42,7 +42,7 @@ public class Commando extends AbstractNpcAI
 	{
 		if (event.equals("NPC_SHOUT"))
 		{
-			npc.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.WE_RE_COLLECTING_SEEKER_OF_ADEN);
+			npc.broadcastSay(ChatType.NPC_GENERAL, NpcStringId.WE_RE_LOOKING_FOR_RANGERS_FROM_ADEN);
 			startQuestTimer("NPC_SHOUT", (10 + getRandom(5)) * 1000, npc, null);
 		}
 		return super.onAdvEvent(event, npc, player);

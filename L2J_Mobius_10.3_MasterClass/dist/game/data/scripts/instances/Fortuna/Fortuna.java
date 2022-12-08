@@ -327,7 +327,7 @@ public class Fortuna extends AbstractInstance
 						{
 							world.setStatus(15);
 							world.spawnGroup("fortuna_15");
-							showOnScreenMsg(world, NpcStringId.ENRAGED_MASTER_KINEN_APPEARS, ExShowScreenMessage.BOTTOM_RIGHT, 6000, true);
+							showOnScreenMsg(world, NpcStringId.ENRAGED_MASTER_KINEN, ExShowScreenMessage.BOTTOM_RIGHT, 6000, true);
 						}
 						startQuestTimer("check_fortuna_status", 5000, npc, null);
 						break;
