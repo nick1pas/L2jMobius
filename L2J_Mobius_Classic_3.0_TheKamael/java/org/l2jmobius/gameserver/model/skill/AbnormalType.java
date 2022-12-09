@@ -241,6 +241,7 @@ public enum AbnormalType
 	MAGE_BANE(-1),
 	DRAGON_FRUIT(-1),
 	PROVOKE(-1),
+	PK_DEBUFF1(-1),
 	AB_HAWK_EYE(0),
 	ALL_ATTACK_DOWN(1),
 	ALL_ATTACK_UP(2),

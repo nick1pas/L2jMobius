@@ -537,8 +537,7 @@
 		</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
 		<abnormalType>LIFE_FORCE_ORC</abnormalType>
-		<affectLimit>50-50</affectLimit>
-		<affectRange>1000</affectRange>
+		<affectRange>1100</affectRange>
 		<hitTime>3500</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<magicLevel>
@@ -572,36 +571,67 @@
 			<value level="28">83</value>
 			<value level="29">84</value>
 		</magicLevel>
+		<mpInitialConsume>
+			<value level="1">6</value>
+			<value level="2">8</value>
+			<value level="3">9</value>
+			<value level="4">10</value>
+			<value level="5">12</value>
+			<value level="6">12</value>
+			<value level="7">13</value>
+			<value level="8">14</value>
+			<value level="9">15</value>
+			<value level="10">16</value>
+			<value level="11">17</value>
+			<value level="12">18</value>
+			<value level="13">18</value>
+			<value level="14">18</value>
+			<value level="15">18</value>
+			<value level="16">19</value>
+			<value level="17">19</value>
+			<value level="18">19</value>
+			<value level="19">19</value>
+			<value level="20">20</value>
+			<value level="21">20</value>
+			<value level="22">20</value>
+			<value level="23">20</value>
+			<value level="24">20</value>
+			<value level="25">21</value>
+			<value level="26">21</value>
+			<value level="27">21</value>
+			<value level="28">21</value>
+			<value level="29">21</value>
+		</mpInitialConsume>
 		<mpConsume>
-			<value level="1">32</value>
-			<value level="2">39</value>
-			<value level="3">45</value>
-			<value level="4">51</value>
-			<value level="5">58</value>
-			<value level="6">62</value>
-			<value level="7">67</value>
-			<value level="8">72</value>
-			<value level="9">75</value>
-			<value level="10">81</value>
-			<value level="11">85</value>
-			<value level="12">88</value>
-			<value level="13">90</value>
-			<value level="14">91</value>
-			<value level="15">92</value>
-			<value level="16">93</value>
-			<value level="17">95</value>
-			<value level="18">96</value>
-			<value level="19">97</value>
-			<value level="20">99</value>
-			<value level="21">100</value>
-			<value level="22">101</value>
-			<value level="23">102</value>
-			<value level="24">103</value>
-			<value level="25">105</value>
-			<value level="26">106</value>
-			<value level="27">107</value>
-			<value level="28">108</value>
-			<value level="29">109</value>
+			<value level="1">26</value>
+			<value level="2">31</value>
+			<value level="3">36</value>
+			<value level="4">41</value>
+			<value level="5">46</value>
+			<value level="6">50</value>
+			<value level="7">54</value>
+			<value level="8">58</value>
+			<value level="9">60</value>
+			<value level="10">65</value>
+			<value level="11">68</value>
+			<value level="12">70</value>
+			<value level="13">72</value>
+			<value level="14">73</value>
+			<value level="15">74</value>
+			<value level="16">74</value>
+			<value level="17">76</value>
+			<value level="18">77</value>
+			<value level="19">78</value>
+			<value level="20">79</value>
+			<value level="21">80</value>
+			<value level="22">81</value>
+			<value level="23">82</value>
+			<value level="24">83</value>
+			<value level="25">84</value>
+			<value level="26">85</value>
+			<value level="27">86</value>
+			<value level="28">87</value>
+			<value level="29">88</value>
 		</mpConsume>
 		<operateType>A2</operateType>
 		<effectPoint>
@@ -1230,19 +1260,18 @@
 			<value level="3">14</value>
 			<value level="4">16</value>
 		</abnormalTime>
-		<abnormalType>ROOT_PHYSICALLY</abnormalType>
-		<abnormalVisualEffect>TORNADO_SLOW</abnormalVisualEffect>
-		<chargeConsume>5</chargeConsume>
-		<activateRate>100</activateRate>
+		<abnormalType>DEPORT</abnormalType>
+		<abnormalVisualEffect>WA_UNBREAKABLE_SONIC_AVE</abnormalVisualEffect>
 		<basicProperty>PHYSICAL</basicProperty>
 		<canBeDispelled>false</canBeDispelled>
 		<castRange>600</castRange>
 		<coolTime>500</coolTime>
 		<effectPoint>-687</effectPoint>
-		<effectRange>900</effectRange>
+		<effectRange>1100</effectRange>
 		<hitTime>2500</hitTime>
 		<isDebuff>true</isDebuff>
 		<isMagic>0</isMagic>
+		<activateRate>60</activateRate>
 		<lvlBonusRate>20</lvlBonusRate>
 		<operateType>A2</operateType>
 		<magicLevel>
@@ -1258,8 +1287,9 @@
 			<value level="4">153</value>
 		</mpConsume>
 		<reuseDelay>120000</reuseDelay>
+		<trait>DEPORT</trait>
 		<magicCriticalRate>5</magicCriticalRate>
-		<targetType>ENEMY_ONLY</targetType>
+		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipWeapon">
@@ -1272,44 +1302,37 @@
 			</condition>
 		</conditions>
 		<effects>
-			<effect name="Mute" />
-			<effect name="PhysicalMute" />
-			<effect name="Root" />
-			<effect name="PveMagicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
+			<effect name="EnergyAttack">
+				<power>
+					<value level="1">1091</value>
+					<value level="2">1183</value>
+					<value level="3">1278</value>
+					<value level="4">1376</value>
+				</power>
+				<chargeConsume>5</chargeConsume>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
 			</effect>
-			<effect name="PvePhysicalAttackDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
+			<effect name="BlockActions" />
+			<effect name="BuffBlock" />
+			<effect name="DebuffBlock" />
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-50</value>
+					<value level="2">-40</value>
+					<value level="3">-30</value>
+					<value level="4">-20</value>
+				</amount>
+				<type>PK</type>
 			</effect>
-			<effect name="PvePhysicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpMagicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpPhysicalAttackDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpPhysicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PveRaidMagicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PveRaidPhysicalAttackDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PveRaidPhysicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
+			<effect name="DamageByAttack">
+				<amount>
+					<value level="1">-50</value>
+					<value level="2">-40</value>
+					<value level="3">-30</value>
+					<value level="4">-20</value>
+				</amount>
+				<type>ENEMY_ALL</type>
 			</effect>
 		</effects>
 	</skill>

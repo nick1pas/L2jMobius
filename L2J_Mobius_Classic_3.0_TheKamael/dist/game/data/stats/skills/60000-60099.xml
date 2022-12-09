@@ -9,9 +9,24 @@
 	<skill id="60002" toLevel="3" name="Einhasad Overseeing">
 		<!-- Dishonorable killings have drawn attention of Einhasad. P./ M. Def. -$s1, Speed -$s2. -->
 		<icon>icon.karma</icon>
-		<magicLevel>10</magicLevel>
-		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
+		<operateType>A2</operateType>
+		<abnormalLevel>
+			<value level="1">1</value>
+			<value level="2">2</value>
+			<value level="3">3</value>
+		</abnormalLevel>
+		<abnormalType>PK_DEBUFF1</abnormalType>
+		<abnormalTime>-1</abnormalTime>
+		<canBeDispelled>false</canBeDispelled>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effectPoint>0</effectPoint>
+		<isDebuff>true</isDebuff>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicCriticalRate>-5</magicCriticalRate>
+		<irreplacableBuff>true</irreplacableBuff>
+		<stayAfterDeath>true</stayAfterDeath>
+		<canBeDispelled>false</canBeDispelled>
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>

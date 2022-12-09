@@ -998,26 +998,26 @@
 		<icon>icon.skill1624</icon>
 		<abnormalLevel>10</abnormalLevel>
 		<abnormalTime>10</abnormalTime>
-		<abnormalType>ROOT_PHYSICALLY</abnormalType>
+		<abnormalType>DEPORT</abnormalType>
 		<abnormalVisualEffect>TORNADO_SLOW</abnormalVisualEffect>
-		<chargeConsume>7</chargeConsume>
-		<activateRate>100</activateRate>
 		<basicProperty>PHYSICAL</basicProperty>
 		<canBeDispelled>false</canBeDispelled>
 		<castRange>600</castRange>
 		<coolTime>500</coolTime>
 		<effectPoint>-687</effectPoint>
-		<effectRange>900</effectRange>
+		<effectRange>1100</effectRange>
 		<hitTime>2500</hitTime>
 		<isDebuff>true</isDebuff>
 		<isMagic>0</isMagic>
+		<activateRate>60</activateRate>
 		<lvlBonusRate>20</lvlBonusRate>
 		<operateType>A2</operateType>
 		<magicLevel>78</magicLevel>
 		<mpConsume>120</mpConsume>
 		<reuseDelay>120000</reuseDelay>
+		<trait>DEPORT</trait>
 		<magicCriticalRate>5</magicCriticalRate>
-		<targetType>ENEMY_ONLY</targetType>
+		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<conditions>
 			<condition name="EquipWeapon">
@@ -1030,44 +1030,22 @@
 			</condition>
 		</conditions>
 		<effects>
-			<effect name="Mute" />
-			<effect name="PhysicalMute" />
-			<effect name="Root" />
-			<effect name="PveMagicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
+			<effect name="EnergyAttack">
+				<power>1091</power>
+				<chargeConsume>7</chargeConsume>
+				<overHit>true</overHit>
+				<criticalChance>15</criticalChance>
 			</effect>
-			<effect name="PvePhysicalAttackDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
+			<effect name="BlockActions" />
+			<effect name="BuffBlock" />
+			<effect name="DebuffBlock" />
+			<effect name="DamageByAttack">
+				<amount>-50</amount>
+				<type>PK</type>
 			</effect>
-			<effect name="PvePhysicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpMagicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpPhysicalAttackDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PvpPhysicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PveRaidMagicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PveRaidPhysicalAttackDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
-			</effect>
-			<effect name="PveRaidPhysicalSkillDefenceBonus">
-				<amount>50</amount>
-				<mode>PER</mode>
+			<effect name="DamageByAttack">
+				<amount>-50</amount>
+				<type>ENEMY_ALL</type>
 			</effect>
 		</effects>
 	</skill>
