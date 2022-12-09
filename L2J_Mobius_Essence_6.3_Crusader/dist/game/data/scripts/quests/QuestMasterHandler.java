@@ -69,9 +69,72 @@ import quests.Q10983_TroubledForest.Q10983_TroubledForest;
 import quests.Q10984_CollectSpiderweb.Q10984_CollectSpiderweb;
 import quests.Q10985_CleaningUpTheGround.Q10985_CleaningUpTheGround;
 import quests.Q10986_SwampMonster.Q10986_SwampMonster;
-import quests.Q10988_Conspiracy.Q10988_Conspiracy;
 import quests.Q10989_DangerousPredators.Q10989_DangerousPredators;
 import quests.Q10990_PoisonExtraction.Q10990_PoisonExtraction;
+import quests.not_done.Q00401_BuryInOblivion;
+import quests.not_done.Q00402_ArmedWithBows;
+import quests.not_done.Q00403_TraceOfDeath;
+import quests.not_done.Q00404_AnythingButSkeletons;
+import quests.not_done.Q00405_GuardingTheFieldsOfMassacre;
+import quests.not_done.Q00406_ExploringTheFieldsOfMassacre;
+import quests.not_done.Q00408_ScoutStrike;
+import quests.not_done.Q00409_PunishVanorSilenos;
+import quests.not_done.Q00410_MainStrike;
+import quests.not_done.Q00411_LeadersAndTheirMinions;
+import quests.not_done.Q00412_VanorSilenosGuards;
+import quests.not_done.Q00413_ExploringThePlainsOfGlory;
+import quests.not_done.Q00415_ThoseCalledHatar;
+import quests.not_done.Q00416_DeathBringers;
+import quests.not_done.Q00417_WeirdCreatures;
+import quests.not_done.Q00418_OrcsAllAround;
+import quests.not_done.Q00419_ThoseLookingForBattle;
+import quests.not_done.Q00420_ExploringTheWarTornPlains;
+import quests.not_done.Q00422_CrumaTowers3rdFloor;
+import quests.not_done.Q00423_CrumaTower2ndFloor;
+import quests.not_done.Q00424_CrumaTowersMagicalCreatures;
+import quests.not_done.Q00425_GiantsGolems;
+import quests.not_done.Q00426_SimilarYetDifferent;
+import quests.not_done.Q00427_CrumaTowersExploration;
+import quests.not_done.Q00429_PoorExcuseForGiants;
+import quests.not_done.Q00430_GiantsCreations;
+import quests.not_done.Q00431_TracesOfAncientCreatures;
+import quests.not_done.Q00432_TracesOfExperiments;
+import quests.not_done.Q00433_NeverForgotten;
+import quests.not_done.Q00434_ExploringTheSilentValley;
+import quests.not_done.Q00436_BewareOfTantaLizardmen;
+import quests.not_done.Q00437_DangerousLizardmen;
+import quests.not_done.Q00438_AttacksFromAllSides;
+import quests.not_done.Q00439_GettingRidOfSummoners;
+import quests.not_done.Q00440_GuardsInDisguise;
+import quests.not_done.Q00441_ExploringThePlainsOfTheLizardmen;
+import quests.not_done.Q00443_BornFromDragonBlood;
+import quests.not_done.Q00444_CurseOfTheDragonValley;
+import quests.not_done.Q00445_WhereDemonsWhisper;
+import quests.not_done.Q00446_NoRightToDie;
+import quests.not_done.Q00447_DragonsTraces;
+import quests.not_done.Q00448_ExploringTheDragonValleyWest;
+import quests.not_done.Q00450_MastersOfTheDragonValley;
+import quests.not_done.Q00451_RiseOfTheDragons;
+import quests.not_done.Q00452_MightyFighters;
+import quests.not_done.Q00453_DragonMages;
+import quests.not_done.Q00454_ValleyDrakes;
+import quests.not_done.Q00455_ExploringTheDragonValleyEast;
+import quests.not_done.Q00457_NecessaryPrecautions;
+import quests.not_done.Q00458_BornToFight;
+import quests.not_done.Q00459_SelMahumHorde;
+import quests.not_done.Q00460_MagicForSmartOnes;
+import quests.not_done.Q00461_InTheBasesBarracks;
+import quests.not_done.Q00462_ExploringTheSelMahumBase;
+import quests.not_done.Q00464_BarracksMainForce;
+import quests.not_done.Q00465_DontComeCloser;
+import quests.not_done.Q00466_TurekOrcsTenacity;
+import quests.not_done.Q00467_ImposingOrcs;
+import quests.not_done.Q00468_TurekOrcLeaders;
+import quests.not_done.Q00469_ExploringTheTurekOrcBarracks;
+import quests.not_done.Q10308_TrainingForTheFuture;
+import quests.not_done.Q10309_DreamlandsMysteries;
+import quests.not_done.Q10310_VictoryInBalokBattleground;
+import quests.not_done.Q10949_PatternsAndHiddenPower;
 
 /**
  * @author NosBit
@@ -84,6 +147,66 @@ public class QuestMasterHandler
 	{
 		Q00127_FishingSpecialistsRequest.class,
 		Q00255_Tutorial.class,
+		Q00401_BuryInOblivion.class, // TODO: Not done.
+		Q00402_ArmedWithBows.class, // TODO: Not done.
+		Q00403_TraceOfDeath.class, // TODO: Not done.
+		Q00404_AnythingButSkeletons.class, // TODO: Not done.
+		Q00405_GuardingTheFieldsOfMassacre.class, // TODO: Not done.
+		Q00406_ExploringTheFieldsOfMassacre.class, // TODO: Not done.
+		Q00408_ScoutStrike.class, // TODO: Not done.
+		Q00409_PunishVanorSilenos.class, // TODO: Not done.
+		Q00410_MainStrike.class, // TODO: Not done.
+		Q00411_LeadersAndTheirMinions.class, // TODO: Not done.
+		Q00412_VanorSilenosGuards.class, // TODO: Not done.
+		Q00413_ExploringThePlainsOfGlory.class, // TODO: Not done.
+		Q00415_ThoseCalledHatar.class, // TODO: Not done.
+		Q00416_DeathBringers.class, // TODO: Not done.
+		Q00417_WeirdCreatures.class, // TODO: Not done.
+		Q00418_OrcsAllAround.class, // TODO: Not done.
+		Q00419_ThoseLookingForBattle.class, // TODO: Not done.
+		Q00420_ExploringTheWarTornPlains.class, // TODO: Not done.
+		Q00422_CrumaTowers3rdFloor.class, // TODO: Not done.
+		Q00423_CrumaTower2ndFloor.class, // TODO: Not done.
+		Q00424_CrumaTowersMagicalCreatures.class, // TODO: Not done.
+		Q00425_GiantsGolems.class, // TODO: Not done.
+		Q00426_SimilarYetDifferent.class, // TODO: Not done.
+		Q00427_CrumaTowersExploration.class, // TODO: Not done.
+		Q00429_PoorExcuseForGiants.class, // TODO: Not done.
+		Q00430_GiantsCreations.class, // TODO: Not done.
+		Q00431_TracesOfAncientCreatures.class, // TODO: Not done.
+		Q00432_TracesOfExperiments.class, // TODO: Not done.
+		Q00433_NeverForgotten.class, // TODO: Not done.
+		Q00434_ExploringTheSilentValley.class, // TODO: Not done.
+		Q00436_BewareOfTantaLizardmen.class, // TODO: Not done.
+		Q00437_DangerousLizardmen.class, // TODO: Not done.
+		Q00438_AttacksFromAllSides.class, // TODO: Not done.
+		Q00439_GettingRidOfSummoners.class, // TODO: Not done.
+		Q00440_GuardsInDisguise.class, // TODO: Not done.
+		Q00441_ExploringThePlainsOfTheLizardmen.class, // TODO: Not done.
+		Q00443_BornFromDragonBlood.class, // TODO: Not done.
+		Q00444_CurseOfTheDragonValley.class, // TODO: Not done.
+		Q00445_WhereDemonsWhisper.class, // TODO: Not done.
+		Q00446_NoRightToDie.class, // TODO: Not done.
+		Q00447_DragonsTraces.class, // TODO: Not done.
+		Q00448_ExploringTheDragonValleyWest.class, // TODO: Not done.
+		Q00450_MastersOfTheDragonValley.class, // TODO: Not done.
+		Q00451_RiseOfTheDragons.class, // TODO: Not done.
+		Q00452_MightyFighters.class, // TODO: Not done.
+		Q00453_DragonMages.class, // TODO: Not done.
+		Q00454_ValleyDrakes.class, // TODO: Not done.
+		Q00455_ExploringTheDragonValleyEast.class, // TODO: Not done.
+		Q00457_NecessaryPrecautions.class, // TODO: Not done.
+		Q00458_BornToFight.class, // TODO: Not done.
+		Q00459_SelMahumHorde.class, // TODO: Not done.
+		Q00460_MagicForSmartOnes.class, // TODO: Not done.
+		Q00461_InTheBasesBarracks.class, // TODO: Not done.
+		Q00462_ExploringTheSelMahumBase.class, // TODO: Not done.
+		Q00464_BarracksMainForce.class, // TODO: Not done.
+		Q00465_DontComeCloser.class, // TODO: Not done.
+		Q00466_TurekOrcsTenacity.class, // TODO: Not done.
+		Q00467_ImposingOrcs.class, // TODO: Not done.
+		Q00468_TurekOrcLeaders.class, // TODO: Not done.
+		Q00469_ExploringTheTurekOrcBarracks.class, // TODO: Not done.
 		Q00502_BrothersBoundInChains.class,
 		Q00662_AGameOfCards.class,
 		Q10673_SagaOfLegend.class,
@@ -104,10 +227,14 @@ public class QuestMasterHandler
 		Q10305_DragonsSuspiciousMovements.class,
 		Q10306_StopSelMahumsTroops.class,
 		Q10307_TurekOrcsSecret.class,
+		Q10308_TrainingForTheFuture.class, // TODO: Not done.
+		Q10309_DreamlandsMysteries.class, // TODO: Not done.
+		Q10310_VictoryInBalokBattleground.class, // TODO: Not done.
 		Q10311_BestMedicine.class,
 		Q10312_GordesLegend.class,
 		Q10313_CunningMorgos.class,
 		Q10314_MorgosRetributionXilenos.class,
+		Q10949_PatternsAndHiddenPower.class, // TODO: Not done.
 		Q10950_FiercestFlame.class,
 		Q10951_NewFlameOfOrcs.class,
 		Q10952_ProtectAtAllCosts.class,
@@ -126,7 +253,6 @@ public class QuestMasterHandler
 		Q10984_CollectSpiderweb.class,
 		Q10985_CleaningUpTheGround.class,
 		Q10986_SwampMonster.class,
-		Q10988_Conspiracy.class,
 		Q10989_DangerousPredators.class,
 		Q10990_PoisonExtraction.class,
 		Q10968_ThePowerOfTheMagicLamp.class,

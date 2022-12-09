@@ -75,6 +75,13 @@ import quests.not_done.Q01900_StormIsleSecretSpot;
 import quests.not_done.Q01901_StormIsleFurtiveDeal;
 import quests.not_done.Q10595_TheDimensionalWarpPart8;
 import quests.not_done.Q10596_TheDimensionalWarpPart9;
+import quests.not_done.Q10904_JourneyToTheConquestWorld;
+import quests.not_done.Q10905_HuntingTime;
+import quests.not_done.Q10906_ChasingTheLight;
+import quests.not_done.Q10907_WhereFlowersBlossom;
+import quests.not_done.Q11028_WindOfDestinyEncounter;
+import quests.not_done.Q11029_WindOfDestinyPromise;
+import quests.not_done.Q11030_WindOfDestinyChoice;
 
 /**
  * @author NosBit
@@ -137,6 +144,13 @@ public class QuestMasterHandler
 		Q10888_SaviorsPathDefeatTheEmbryo.class,
 		Q10889_SaviorsPathFallenEmperorsThrone.class,
 		Q10890_SaviorsPathHallOfEtina.class,
+		Q10904_JourneyToTheConquestWorld.class, // TODO: Not done.
+		Q10905_HuntingTime.class, // TODO: Not done.
+		Q10906_ChasingTheLight.class, // TODO: Not done.
+		Q10907_WhereFlowersBlossom.class, // TODO: Not done.
+		Q11028_WindOfDestinyEncounter.class, // TODO: Not done.
+		Q11029_WindOfDestinyPromise.class, // TODO: Not done.
+		Q11030_WindOfDestinyChoice.class, // TODO: Not done.
 		Q11024_PathOfDestinyBeginning.class,
 		Q11025_PathOfDestinyProving.class,
 		Q11026_PathOfDestinyConviction.class,

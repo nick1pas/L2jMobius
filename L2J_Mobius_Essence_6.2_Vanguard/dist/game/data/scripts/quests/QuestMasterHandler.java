@@ -70,9 +70,11 @@ import quests.Q10983_TroubledForest.Q10983_TroubledForest;
 import quests.Q10984_CollectSpiderweb.Q10984_CollectSpiderweb;
 import quests.Q10985_CleaningUpTheGround.Q10985_CleaningUpTheGround;
 import quests.Q10986_SwampMonster.Q10986_SwampMonster;
-import quests.Q10988_Conspiracy.Q10988_Conspiracy;
 import quests.Q10989_DangerousPredators.Q10989_DangerousPredators;
 import quests.Q10990_PoisonExtraction.Q10990_PoisonExtraction;
+import quests.not_done.Q10308_TrainingForTheFuture;
+import quests.not_done.Q10309_DreamlandsMysteries;
+import quests.not_done.Q10310_VictoryInBalokBattleground;
 
 /**
  * @author NosBit
@@ -106,6 +108,9 @@ public class QuestMasterHandler
 		Q10305_DragonsSuspiciousMovements.class,
 		Q10306_StopSelMahumsTroops.class,
 		Q10307_TurekOrcsSecret.class,
+		Q10308_TrainingForTheFuture.class, // TODO: Not done.
+		Q10309_DreamlandsMysteries.class, // TODO: Not done.
+		Q10310_VictoryInBalokBattleground.class, // TODO: Not done.
 		Q10311_BestMedicine.class,
 		Q10312_GordesLegend.class,
 		Q10313_CunningMorgos.class,
@@ -128,7 +133,6 @@ public class QuestMasterHandler
 		Q10984_CollectSpiderweb.class,
 		Q10985_CleaningUpTheGround.class,
 		Q10986_SwampMonster.class,
-		Q10988_Conspiracy.class,
 		Q10989_DangerousPredators.class,
 		Q10990_PoisonExtraction.class,
 		Q10968_ThePowerOfTheMagicLamp.class,
