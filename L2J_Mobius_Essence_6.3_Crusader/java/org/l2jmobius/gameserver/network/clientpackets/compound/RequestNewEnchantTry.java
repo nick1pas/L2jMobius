@@ -27,7 +27,6 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
-import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantOneFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantSucess;
@@ -104,40 +103,26 @@ public class RequestNewEnchantTry implements ClientPacket
 			return;
 		}
 		
-		if (player.destroyItem("Compound-Item-One", itemOne, 1, null, true) && player.destroyItem("Compound-Item-Two", itemTwo, 1, null, true) && ((combinationItem.getCommission() <= 0) || player.reduceAdena("Compound-Commission", combinationItem.getCommission(), player, true)))
+		// Calculate compound result.
+		final double random = (Rnd.nextDouble() * 100);
+		final boolean success = random <= combinationItem.getChance();
+		final CombinationItemReward rewardItem = combinationItem.getReward(success ? CombinationItemType.ON_SUCCESS : CombinationItemType.ON_FAILURE);
+		
+		// Send success or fail packet.
+		if (success)
 		{
-			final double random = (Rnd.nextDouble() * 100);
-			final boolean success = random <= combinationItem.getChance();
-			final CombinationItemReward rewardItem = combinationItem.getReward(success ? CombinationItemType.ON_SUCCESS : CombinationItemType.ON_FAILURE);
-			final Item item = player.addItem("Compound-Result", rewardItem.getId(), rewardItem.getCount(), null, true);
-			if (success)
-			{
-				player.sendPacket(new ExEnchantSucess(item.getId()));
-			}
-			else
-			{
-				player.sendPacket(new ExEnchantFail(itemOne.getId(), itemTwo.getId()));
-			}
+			player.sendPacket(new ExEnchantSucess(rewardItem.getId()));
+		}
+		else
+		{
+			player.sendPacket(new ExEnchantFail(itemOne.getId(), itemTwo.getId()));
 		}
 		
-		final InventoryUpdate iu = new InventoryUpdate();
-		if (itemOne.isStackable() && (itemOne.getCount() > 0))
+		// Take required items and add result item.
+		if (player.destroyItem("Compound-Item-One", itemOne, 1, null, true) && player.destroyItem("Compound-Item-Two", itemTwo, 1, null, true) && ((combinationItem.getCommission() <= 0) || player.reduceAdena("Compound-Commission", combinationItem.getCommission(), player, true)))
 		{
-			iu.addModifiedItem(itemOne);
+			player.addItem("Compound-Result", rewardItem.getId(), rewardItem.getCount(), null, true);
 		}
-		else
-		{
-			iu.addRemovedItem(itemOne);
-		}
-		if (itemTwo.isStackable() && (itemTwo.getCount() > 0))
-		{
-			iu.addModifiedItem(itemTwo);
-		}
-		else
-		{
-			iu.addRemovedItem(itemTwo);
-		}
-		player.sendInventoryUpdate(iu);
 		
 		player.removeRequest(request.getClass());
 	}
