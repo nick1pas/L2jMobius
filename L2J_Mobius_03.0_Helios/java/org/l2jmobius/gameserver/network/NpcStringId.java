@@ -38173,6 +38173,11 @@ public class NpcStringId
 	
 	public NSLocalisation getLocalisation(String lang)
 	{
+		if (_localisations == null)
+		{
+			return null;
+		}
+		
 		NSLocalisation nsl;
 		for (int i = _localisations.length; i-- > 0;)
 		{
@@ -38182,6 +38187,7 @@ public class NpcStringId
 				return nsl;
 			}
 		}
+		
 		return null;
 	}
 	

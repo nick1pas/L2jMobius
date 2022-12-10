@@ -19073,6 +19073,11 @@ public class SystemMessageId
 	
 	public SMLocalisation getLocalisation(String lang)
 	{
+		if (_localisations == null)
+		{
+			return null;
+		}
+		
 		SMLocalisation sml;
 		for (int i = _localisations.length; i-- > 0;)
 		{
@@ -19082,6 +19087,7 @@ public class SystemMessageId
 				return sml;
 			}
 		}
+		
 		return null;
 	}
 	
