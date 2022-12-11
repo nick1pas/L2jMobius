@@ -200,7 +200,7 @@ public class RequestAcquireAbilityList implements ClientPacket
 		{
 			player.sendSkillList();
 			player.getStat().recalculateStats(false);
-			player.broadcastInfo();
+			player.broadcastUserInfo();
 		}, 100);
 	}
 }

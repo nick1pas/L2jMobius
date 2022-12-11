@@ -438,7 +438,7 @@ public class RequestAcquireSkill implements ClientPacket
 					ThreadPool.schedule(() ->
 					{
 						player.getStat().recalculateStats(false);
-						player.broadcastInfo();
+						player.broadcastUserInfo();
 					}, 100);
 				}
 				
@@ -494,7 +494,7 @@ public class RequestAcquireSkill implements ClientPacket
 					ThreadPool.schedule(() ->
 					{
 						player.getStat().recalculateStats(false);
-						player.broadcastInfo();
+						player.broadcastUserInfo();
 					}, 100);
 				}
 				

@@ -396,7 +396,7 @@ public class RequestAcquireSkill implements ClientPacket
 				 * Util.handleIllegalPlayerAction(player, "Player " + player.getName() + " is requesting skill Id: " + _id + " level " + _level + " while not being level 85 or awaken!", IllegalActionPunishmentType.NONE); return; } int count = 0; for (String varName : REVELATION_VAR_NAMES) { if
 				 * (player.getVariables().getInt(varName, 0) > 0) { count++; } } if (count >= 2) { player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_ITEMS_TO_LEARN_THIS_SKILL); Util.handleIllegalPlayerAction(player, "Player " + player.getName() + " is requesting skill Id: " + _id + " level "
 				 * + _level + " while having already learned 2 skills!", IllegalActionPunishmentType.NONE); return; } if (checkPlayerSkill(player, trainer, s)) { final String varName = count == 0 ? REVELATION_VAR_NAMES[0] : REVELATION_VAR_NAMES[1]; player.getVariables().set(varName, skill.getId());
-				 * giveSkill(player, trainer, skill); ThreadPool.schedule(() -> { player.getStat().recalculateStats(false); player.broadcastInfo(); }, 100); } final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableRevelationSkills(player, SubclassType.BASECLASS); if
+				 * giveSkill(player, trainer, skill); ThreadPool.schedule(() -> { player.getStat().recalculateStats(false); player.broadcastUserInfo(); }, 100); } final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableRevelationSkills(player, SubclassType.BASECLASS); if
 				 * (!skills.isEmpty()) { player.sendPacket(new ExAcquirableSkillListByClass(skills, AcquireSkillType.REVELATION)); } else { player.sendPacket(SystemMessageId.THERE_ARE_NO_OTHER_SKILLS_TO_LEARN); }
 				 */
 				break;
@@ -410,7 +410,7 @@ public class RequestAcquireSkill implements ClientPacket
 				 * IllegalActionPunishmentType.NONE); return; } int count = 0; for (String varName : DUALCLASS_REVELATION_VAR_NAMES) { if (player.getVariables().getInt(varName, 0) > 0) { count++; } } if (count >= 2) {
 				 * player.sendPacket(SystemMessageId.YOU_DO_NOT_HAVE_ENOUGH_ITEMS_TO_LEARN_THIS_SKILL); Util.handleIllegalPlayerAction(player, "Player " + player.getName() + " is requesting skill Id: " + _id + " level " + _level + " while having already learned 2 skills!",
 				 * IllegalActionPunishmentType.NONE); return; } if (checkPlayerSkill(player, trainer, s)) { final String varName = count == 0 ? DUALCLASS_REVELATION_VAR_NAMES[0] : DUALCLASS_REVELATION_VAR_NAMES[1]; player.getVariables().set(varName, skill.getId()); giveSkill(player, trainer, skill);
-				 * ThreadPool.schedule(() -> { player.getStat().recalculateStats(false); player.broadcastInfo(); }, 100); } final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableRevelationSkills(player, SubclassType.DUALCLASS); if (!skills.isEmpty()) { player.sendPacket(new
+				 * ThreadPool.schedule(() -> { player.getStat().recalculateStats(false); player.broadcastUserInfo(); }, 100); } final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableRevelationSkills(player, SubclassType.DUALCLASS); if (!skills.isEmpty()) { player.sendPacket(new
 				 * ExAcquirableSkillListByClass(skills, AcquireSkillType.REVELATION_DUALCLASS)); } else { player.sendPacket(SystemMessageId.THERE_ARE_NO_OTHER_SKILLS_TO_LEARN); }
 				 */
 				break;
