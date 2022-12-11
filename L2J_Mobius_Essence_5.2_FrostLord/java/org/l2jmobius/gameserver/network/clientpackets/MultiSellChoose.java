@@ -158,7 +158,24 @@ public class MultiSellChoose implements ClientPacket
 			return;
 		}
 		
-		final MultisellEntryHolder entry = list.getEntries().get(_entryId - 1); // Entry Id begins from 1. We currently use entry IDs as index pointer.
+		final List<MultisellEntryHolder> entries = list.getEntries();
+		if (entries == null)
+		{
+			PacketLogger.warning("Character: " + player.getName() + " requested null multisell entry. Multisell: " + _listId + " entry: " + _entryId);
+			return;
+		}
+		if (entries.isEmpty())
+		{
+			PacketLogger.warning("Character: " + player.getName() + " requested empty multisell entry. Multisell: " + _listId + " entry: " + _entryId);
+			return;
+		}
+		if ((_entryId - 1) >= entries.size())
+		{
+			PacketLogger.warning("Character: " + player.getName() + " requested out of bounds multisell entry. Multisell: " + _listId + " entry: " + _entryId);
+			return;
+		}
+		
+		final MultisellEntryHolder entry = entries.get(_entryId - 1); // Entry Id begins from 1. We currently use entry IDs as index pointer.
 		if (entry == null)
 		{
 			PacketLogger.warning("Character: " + player.getName() + " requested inexistant prepared multisell entry. Multisell: " + _listId + " entry: " + _entryId);
