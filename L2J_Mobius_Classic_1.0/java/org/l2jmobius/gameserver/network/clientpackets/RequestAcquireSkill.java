@@ -20,6 +20,7 @@ import java.util.List;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.enums.AcquireSkillType;
@@ -433,6 +434,12 @@ public class RequestAcquireSkill implements ClientPacket
 					final String varName = count == 0 ? REVELATION_VAR_NAMES[0] : REVELATION_VAR_NAMES[1];
 					player.getVariables().set(varName, skill.getId());
 					giveSkill(player, trainer, skill);
+					
+					ThreadPool.schedule(() ->
+					{
+						player.getStat().recalculateStats(false);
+						player.broadcastInfo();
+					}, 100);
 				}
 				
 				final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableRevelationSkills(player, SubclassType.BASECLASS);
@@ -483,6 +490,12 @@ public class RequestAcquireSkill implements ClientPacket
 					final String varName = count == 0 ? DUALCLASS_REVELATION_VAR_NAMES[0] : DUALCLASS_REVELATION_VAR_NAMES[1];
 					player.getVariables().set(varName, skill.getId());
 					giveSkill(player, trainer, skill);
+					
+					ThreadPool.schedule(() ->
+					{
+						player.getStat().recalculateStats(false);
+						player.broadcastInfo();
+					}, 100);
 				}
 				
 				final List<SkillLearn> skills = SkillTreeData.getInstance().getAvailableRevelationSkills(player, SubclassType.DUALCLASS);
