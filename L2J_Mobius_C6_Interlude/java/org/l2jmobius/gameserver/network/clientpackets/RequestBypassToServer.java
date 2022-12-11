@@ -18,6 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.communitybbs.CommunityBoard;
 import org.l2jmobius.gameserver.data.xml.AdminData;
@@ -241,7 +242,8 @@ public class RequestBypassToServer implements ClientPacket
 		}
 		catch (Exception e)
 		{
-			PacketLogger.warning("Bad RequestBypassToServer: " + e.getMessage());
+			PacketLogger.warning("Exception processing bypass from " + player + ": " + _command + " " + e.getMessage());
+			PacketLogger.warning(CommonUtil.getStackTrace(e));
 		}
 	}
 }

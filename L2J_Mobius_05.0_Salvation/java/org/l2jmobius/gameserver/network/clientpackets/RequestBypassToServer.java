@@ -20,6 +20,7 @@ import java.util.StringTokenizer;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.data.xml.MultisellData;
 import org.l2jmobius.gameserver.handler.AdminCommandHandler;
@@ -305,6 +306,7 @@ public class RequestBypassToServer implements ClientPacket
 		catch (Exception e)
 		{
 			PacketLogger.warning("Exception processing bypass from " + player + ": " + _command + " " + e.getMessage());
+			PacketLogger.warning(CommonUtil.getStackTrace(e));
 			if (player.isGM())
 			{
 				final StringBuilder sb = new StringBuilder(200);
