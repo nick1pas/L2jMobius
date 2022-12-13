@@ -102,6 +102,13 @@ public class AutoPlayTaskManager
 							{
 								if (creature.isAutoAttackable(player))
 								{
+									// GeoEngine can see target check.
+									if (!GeoEngine.getInstance().canSeeTarget(player, creature))
+									{
+										player.setTarget(null);
+										continue PLAY;
+									}
+									
 									player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, creature);
 								}
 							}
