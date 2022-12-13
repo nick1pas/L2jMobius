@@ -121,7 +121,7 @@ public class ZoneData
 		}
 	}
 	
-	private final void load()
+	private void load()
 	{
 		// Get the world regions
 		WorldRegion[][] worldRegions = World.getInstance().getAllWorldRegions();

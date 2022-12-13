@@ -250,7 +250,7 @@ public class Evolve
 		return true;
 	}
 	
-	static final class EvolveFeedWait implements Runnable
+	private static class EvolveFeedWait implements Runnable
 	{
 		private final Player _player;
 		private final Pet _petSummon;
@@ -282,7 +282,7 @@ public class Evolve
 		}
 	}
 	
-	static final class EvolveFinalizer implements Runnable
+	private static class EvolveFinalizer implements Runnable
 	{
 		private final Player _player;
 		private final Pet _petSummon;

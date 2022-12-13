@@ -374,7 +374,7 @@ public class MultisellData implements IXmlReader
 		}
 	}
 	
-	private final void verify()
+	private void verify()
 	{
 		ListContainer list;
 		final Iterator<ListContainer> iter = _entries.values().iterator();

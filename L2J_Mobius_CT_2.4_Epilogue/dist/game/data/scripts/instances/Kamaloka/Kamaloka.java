@@ -619,7 +619,7 @@ public class Kamaloka extends AbstractInstance
 	 * @param world instanceWorld
 	 */
 	@Override
-	protected final void finishInstance(InstanceWorld world)
+	protected void finishInstance(InstanceWorld world)
 	{
 		if (world instanceof KamaWorld)
 		{
@@ -659,7 +659,7 @@ public class Kamaloka extends AbstractInstance
 	 * Spawn all NPCs in kamaloka
 	 * @param world instanceWorld
 	 */
-	private final void spawnKama(KamaWorld world)
+	private void spawnKama(KamaWorld world)
 	{
 		int[] npcs;
 		int[][] spawns;

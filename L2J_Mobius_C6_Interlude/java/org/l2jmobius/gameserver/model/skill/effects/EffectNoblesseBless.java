@@ -24,7 +24,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author earendil
  */
-final class EffectNoblesseBless extends Effect
+public class EffectNoblesseBless extends Effect
 {
 	public EffectNoblesseBless(Env env, EffectTemplate template)
 	{

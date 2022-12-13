@@ -45189,7 +45189,7 @@ public class NpcStringId
 		return "NS[" + getId() + ":" + getName() + "]";
 	}
 	
-	public static final class NSLocalisation
+	public static class NSLocalisation
 	{
 		private final String _lang;
 		private final Builder _builder;

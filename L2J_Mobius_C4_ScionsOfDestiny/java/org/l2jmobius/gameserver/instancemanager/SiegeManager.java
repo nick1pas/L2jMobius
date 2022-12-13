@@ -181,7 +181,7 @@ public class SiegeManager
 		character.removeSkill(SkillTable.getInstance().getSkill(247, 1));
 	}
 	
-	private final void load()
+	private void load()
 	{
 		LOGGER.info("Initializing SiegeManager");
 		InputStream is = null;

@@ -1537,7 +1537,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		activeChar.sendPacket(adminReply);
 	}
 	
-	private final class IpPack
+	private class IpPack
 	{
 		String ip;
 		int[][] tracert;

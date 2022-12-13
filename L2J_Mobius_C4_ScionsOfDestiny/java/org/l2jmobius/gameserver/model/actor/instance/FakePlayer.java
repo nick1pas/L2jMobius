@@ -54,7 +54,7 @@ public class FakePlayer
 	/**
 	 * Initializes the semi Player stats for this NpcInstance, making it appear as a Player on all clients
 	 */
-	private final void initialize()
+	private void initialize()
 	{
 		_int = new int[25];
 		// karma=1, clanId=2, allyId=3, clanCrest=4, allyCrest=5, race=6, classId=7
@@ -340,7 +340,7 @@ public class FakePlayer
 	/**
 	 * Choose a random weapon for this CustomNpcInstance
 	 */
-	private final void chooseRandomWeapon()
+	private void chooseRandomWeapon()
 	{
 		WeaponType wpnType = WeaponType.BOW;
 		while (true) // Choose correct weapon TYPE
@@ -361,7 +361,7 @@ public class FakePlayer
 	/**
 	 * Choose a random class & race for this CustomNpcInstance
 	 */
-	private final void chooseRandomClass()
+	private void chooseRandomClass()
 	{
 		while (true)
 		{
@@ -378,7 +378,7 @@ public class FakePlayer
 	/**
 	 * Choose random appearance for this CustomNpcInstance
 	 */
-	private final void chooseRandomAppearance()
+	private void chooseRandomAppearance()
 	{
 		// Karma=1, PledgeClass=9
 		// HairStyle=19, HairColor=20, Face=21

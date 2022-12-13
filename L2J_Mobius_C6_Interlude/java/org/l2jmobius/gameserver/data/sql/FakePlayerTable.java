@@ -77,7 +77,7 @@ public class FakePlayerTable
 	/**
 	 * Just load the data from mysql...
 	 */
-	private final void load()
+	private void load()
 	{
 		if ((spawns == null) || (templates == null))
 		{

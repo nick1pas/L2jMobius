@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.model.skill.SkillType;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-final class EffectSilentMove extends Effect
+public class EffectSilentMove extends Effect
 {
 	public EffectSilentMove(Env env, EffectTemplate template)
 	{

@@ -13988,7 +13988,7 @@ public class Player extends Playable
 	 * Add a skill level to the custom skills map.
 	 * @param skill the skill to add
 	 */
-	private final void addCustomSkill(Skill skill)
+	private void addCustomSkill(Skill skill)
 	{
 		if ((skill == null) || (skill.getDisplayId() == skill.getId()))
 		{
@@ -14005,7 +14005,7 @@ public class Player extends Playable
 	 * Remove a skill level from the custom skill map.
 	 * @param skill the skill to remove
 	 */
-	private final void removeCustomSkill(Skill skill)
+	private void removeCustomSkill(Skill skill)
 	{
 		if ((skill != null) && (_customSkills != null) && (skill.getDisplayId() != skill.getId()))
 		{

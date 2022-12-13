@@ -53,7 +53,7 @@ public class ClanHallAuction
 		loadBidder();
 	}
 	
-	private final void loadBidder()
+	private void loadBidder()
 	{
 		try (Connection con = DatabaseFactory.getConnection();
 			PreparedStatement ps = con.prepareStatement(LOAD_CLANHALL_BIDDERS))

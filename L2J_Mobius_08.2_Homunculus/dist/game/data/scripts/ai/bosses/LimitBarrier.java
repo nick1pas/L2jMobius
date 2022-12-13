@@ -42,7 +42,7 @@ import ai.AbstractNpcAI;
  *         OK - All Raid Bosses who use Limit Barrier are listed below:
  */
 @Disabled // Behaviour does not go well with low population servers.
-public final class LimitBarrier extends AbstractNpcAI
+public class LimitBarrier extends AbstractNpcAI
 {
 	// NPCs
 	private static final int[] RAID_BOSSES =

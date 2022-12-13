@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 /**
  * format cd
  */
-public final class RequestHennaRemove implements ClientPacket
+public class RequestHennaRemove implements ClientPacket
 {
 	private int _symbolId;
 	

@@ -48,7 +48,7 @@ public class ExSubjobInfo extends ServerPacket
 		}
 	}
 	
-	private final class SubInfo
+	private class SubInfo
 	{
 		private final int _index;
 		private final int _classId;

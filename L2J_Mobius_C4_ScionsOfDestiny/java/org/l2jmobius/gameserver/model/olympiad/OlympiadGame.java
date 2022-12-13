@@ -130,7 +130,7 @@ class OlympiadGame
 		return _aborted;
 	}
 	
-	protected final void clearPlayers()
+	protected void clearPlayers()
 	{
 		_playerOne = null;
 		_playerTwo = null;

@@ -21,7 +21,7 @@ import org.l2jmobius.gameserver.model.effects.Effect;
 import org.l2jmobius.gameserver.model.effects.EffectType;
 import org.l2jmobius.gameserver.model.skill.Env;
 
-final class EffectParalyze extends Effect
+public class EffectParalyze extends Effect
 {
 	public EffectParalyze(Env env, EffectTemplate template)
 	{

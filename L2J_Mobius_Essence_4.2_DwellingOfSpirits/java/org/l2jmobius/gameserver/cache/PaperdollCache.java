@@ -32,7 +32,7 @@ import org.l2jmobius.gameserver.model.stats.Stat;
 /**
  * @author Sahar
  */
-public final class PaperdollCache
+public class PaperdollCache
 {
 	private final Set<Item> _paperdollItems = ConcurrentHashMap.newKeySet();
 	

@@ -90,7 +90,7 @@ public class JailZone extends ZoneType
 	{
 	}
 	
-	static class BackToJail implements Runnable
+	private static class BackToJail implements Runnable
 	{
 		private final Player _player;
 		

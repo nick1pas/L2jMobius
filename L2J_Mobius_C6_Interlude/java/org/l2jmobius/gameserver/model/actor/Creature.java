@@ -9348,7 +9348,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 	/**
 	 * AI not. Task
 	 */
-	static class notifyAiTaskDelayed implements Runnable
+	private static class notifyAiTaskDelayed implements Runnable
 	{
 		CtrlEvent event;
 		Object object;

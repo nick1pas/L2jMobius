@@ -23,7 +23,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author mkizub
  */
-final class EffectImobileBuff extends Effect
+public class EffectImobileBuff extends Effect
 {
 	public EffectImobileBuff(Env env, EffectTemplate template)
 	{

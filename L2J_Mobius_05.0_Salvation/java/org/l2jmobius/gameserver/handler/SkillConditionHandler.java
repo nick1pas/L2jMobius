@@ -58,7 +58,7 @@ public class SkillConditionHandler
 		}
 	}
 	
-	private static final class SingletonHolder
+	private static class SingletonHolder
 	{
 		protected static final SkillConditionHandler INSTANCE = new SkillConditionHandler();
 	}

@@ -221,7 +221,7 @@ public class ItemAuction
 		updatePlayerBidInternal(bid, delete);
 	}
 	
-	final void updatePlayerBidInternal(ItemAuctionBid bid, boolean delete)
+	private void updatePlayerBidInternal(ItemAuctionBid bid, boolean delete)
 	{
 		final String query = delete ? DELETE_ITEM_AUCTION_BID : INSERT_ITEM_AUCTION_BID;
 		try (Connection con = DatabaseFactory.getConnection();

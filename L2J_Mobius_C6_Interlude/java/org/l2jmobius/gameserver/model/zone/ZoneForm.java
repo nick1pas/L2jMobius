@@ -90,7 +90,7 @@ public abstract class ZoneForm
 		return b > a ? (c >= a) && (c <= b) : (c >= b) && (c <= a);
 	}
 	
-	protected static final void dropDebugItem(int id, int x, int y, int z)
+	protected static void dropDebugItem(int id, int x, int y, int z)
 	{
 		final Item item = new Item(IdManager.getInstance().getNextId(), 57);
 		item.setCount(id);

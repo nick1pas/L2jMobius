@@ -23,7 +23,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author mkizub
  */
-final class EffectStun extends Effect
+public class EffectStun extends Effect
 {
 	public EffectStun(Env env, EffectTemplate template)
 	{

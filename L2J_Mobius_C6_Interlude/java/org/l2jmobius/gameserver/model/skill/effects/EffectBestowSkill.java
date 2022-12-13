@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author kombat
  */
-final class EffectBestowSkill extends Effect
+public class EffectBestowSkill extends Effect
 {
 	public EffectBestowSkill(Env env, EffectTemplate template)
 	{

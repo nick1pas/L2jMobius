@@ -251,7 +251,7 @@ public class RequestItemEnsoul implements ClientPacket
 		item.updateDatabase(true);
 	}
 	
-	static class EnsoulItemOption
+	private static class EnsoulItemOption
 	{
 		private final int _type;
 		private final int _position;

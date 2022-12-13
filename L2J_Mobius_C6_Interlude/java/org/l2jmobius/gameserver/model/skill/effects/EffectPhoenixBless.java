@@ -24,7 +24,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author Faror
  */
-final class EffectPhoenixBless extends Effect
+public class EffectPhoenixBless extends Effect
 {
 	public EffectPhoenixBless(Env env, EffectTemplate template)
 	{

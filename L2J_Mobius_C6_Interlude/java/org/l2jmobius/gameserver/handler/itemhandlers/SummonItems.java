@@ -166,7 +166,7 @@ public class SummonItems implements IItemHandler
 		}
 	}
 	
-	static class PetSummonFeedWait implements Runnable
+	private static class PetSummonFeedWait implements Runnable
 	{
 		private final Player _player;
 		private final Pet _petSummon;
@@ -197,7 +197,7 @@ public class SummonItems implements IItemHandler
 		}
 	}
 	
-	static class PetSummonFinalizer implements Runnable
+	private static class PetSummonFinalizer implements Runnable
 	{
 		private final Player _player;
 		private final Item _item;

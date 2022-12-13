@@ -68,7 +68,7 @@ public class OlympiadGameManager implements Runnable
 		return _battleStarted;
 	}
 	
-	protected final void startBattle()
+	protected void startBattle()
 	{
 		_battleStarted = true;
 	}

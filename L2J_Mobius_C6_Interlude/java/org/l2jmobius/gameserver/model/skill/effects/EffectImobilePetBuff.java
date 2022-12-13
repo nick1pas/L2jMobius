@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author demonia
  */
-final class EffectImobilePetBuff extends Effect
+public class EffectImobilePetBuff extends Effect
 {
 	private Summon _pet;
 	

@@ -29,7 +29,7 @@ public class SkillList extends ServerPacket
 	private final List<Skill> _skills = new ArrayList<>();
 	private int _lastLearnedSkillId = 0;
 	
-	static class Skill
+	private static class Skill
 	{
 		public int id;
 		public int reuseDelayGroup;

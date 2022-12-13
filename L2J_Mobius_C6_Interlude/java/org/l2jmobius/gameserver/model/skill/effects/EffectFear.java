@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author littlecrow Implementation of the Fear Effect
  */
-final class EffectFear extends Effect
+public class EffectFear extends Effect
 {
 	public static final int FEAR_RANGE = 500;
 	

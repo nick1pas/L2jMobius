@@ -25,7 +25,7 @@ import ai.AbstractNpcAI;
  * Soul Summon Stone AI.
  * @author NviX
  */
-public final class BlackbirdCampsite extends AbstractNpcAI
+public class BlackbirdCampsite extends AbstractNpcAI
 {
 	// NPCs
 	private static final int SOUL_SUMMON_STONE = 34434;

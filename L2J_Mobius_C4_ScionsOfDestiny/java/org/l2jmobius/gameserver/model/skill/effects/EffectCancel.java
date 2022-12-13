@@ -26,7 +26,7 @@ import org.l2jmobius.gameserver.model.skill.Stat;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-final class EffectCancel extends Effect
+public class EffectCancel extends Effect
 {
 	public EffectCancel(Env env, EffectTemplate template)
 	{

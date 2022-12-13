@@ -364,7 +364,7 @@ public class Wedding implements IVoicedCommandHandler
 		return true;
 	}
 	
-	static class EscapeFinalizer implements Runnable
+	private static class EscapeFinalizer implements Runnable
 	{
 		private final Player _player;
 		private final int _partnerx;

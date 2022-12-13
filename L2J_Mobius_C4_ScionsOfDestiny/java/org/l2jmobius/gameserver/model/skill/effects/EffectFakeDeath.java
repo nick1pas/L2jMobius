@@ -25,7 +25,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 /**
  * @author mkizub
  */
-final class EffectFakeDeath extends Effect
+public class EffectFakeDeath extends Effect
 {
 	public EffectFakeDeath(Env env, EffectTemplate template)
 	{

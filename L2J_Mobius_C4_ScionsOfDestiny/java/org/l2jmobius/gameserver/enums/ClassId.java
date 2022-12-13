@@ -312,7 +312,7 @@ public enum ClassId
 		return _nextClassIds;
 	}
 	
-	private final void addNextClassId(ClassId cId)
+	private void addNextClassId(ClassId cId)
 	{
 		_nextClassIds.add(cId);
 	}

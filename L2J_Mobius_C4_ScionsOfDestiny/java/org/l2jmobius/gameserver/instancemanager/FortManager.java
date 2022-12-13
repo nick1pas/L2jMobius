@@ -70,7 +70,7 @@ public class FortManager
 		return index;
 	}
 	
-	private final void load()
+	private void load()
 	{
 		try (Connection con = DatabaseFactory.getConnection())
 		{

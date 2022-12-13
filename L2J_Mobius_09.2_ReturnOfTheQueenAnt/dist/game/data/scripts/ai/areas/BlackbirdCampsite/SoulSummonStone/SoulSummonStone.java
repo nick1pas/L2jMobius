@@ -25,7 +25,7 @@ import ai.AbstractNpcAI;
  * Soul Summon Stone AI.
  * @author NviX
  */
-public final class SoulSummonStone extends AbstractNpcAI
+public class SoulSummonStone extends AbstractNpcAI
 {
 	// NPCs
 	private static final int SOUL_SUMMON_STONE = 34434;

@@ -129,7 +129,7 @@ public class AuctionManager
 		load();
 	}
 	
-	private final void load()
+	private void load()
 	{
 		try (Connection con = DatabaseFactory.getConnection())
 		{

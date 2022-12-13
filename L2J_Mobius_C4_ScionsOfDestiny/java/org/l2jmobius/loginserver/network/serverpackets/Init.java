@@ -22,7 +22,7 @@ import org.l2jmobius.loginserver.network.LoginClient;
 /**
  * Format: dd b dddd s d: session id d: protocol revision b: 0x90 bytes : 0x80 bytes for the scrambled RSA public key 0x10 bytes at 0x00 d: unknown d: unknown d: unknown d: unknown s: blowfish key
  */
-public final class Init extends AbstractServerPacket
+public class Init extends AbstractServerPacket
 {
 	public Init(LoginClient client)
 	{

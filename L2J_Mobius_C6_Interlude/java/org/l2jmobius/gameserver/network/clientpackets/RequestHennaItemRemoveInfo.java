@@ -23,7 +23,7 @@ import org.l2jmobius.gameserver.model.item.Henna;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.HennaItemRemoveInfo;
 
-public final class RequestHennaItemRemoveInfo implements ClientPacket
+public class RequestHennaItemRemoveInfo implements ClientPacket
 {
 	private int _symbolId;
 	

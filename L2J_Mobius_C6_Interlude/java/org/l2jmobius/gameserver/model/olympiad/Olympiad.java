@@ -362,7 +362,7 @@ public class Olympiad
 		LOGGER.info("Olympiad System: Loaded " + NOBLES.size() + " Nobles");
 	}
 	
-	protected final void init()
+	protected void init()
 	{
 		if (_period == 1)
 		{

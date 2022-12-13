@@ -190,7 +190,7 @@ public class AugmentationData
 		}
 	}
 	
-	private final void load()
+	private void load()
 	{
 		// Load stats
 		final DocumentBuilderFactory factory2 = DocumentBuilderFactory.newInstance();

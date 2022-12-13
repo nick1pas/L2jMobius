@@ -55,7 +55,7 @@ public class ServerStatus extends WritablePacket
 	public static final int ON = 0x01;
 	public static final int OFF = 0x00;
 	
-	static class Attribute
+	private static class Attribute
 	{
 		public int id;
 		public int value;

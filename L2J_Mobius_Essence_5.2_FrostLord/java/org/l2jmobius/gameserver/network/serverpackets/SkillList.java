@@ -62,7 +62,7 @@ public class SkillList extends ServerPacket
 		_lastLearnedSkillId = lastLearnedSkillId;
 	}
 	
-	static class Skill
+	private static class Skill
 	{
 		public int id;
 		public int reuseDelayGroup;

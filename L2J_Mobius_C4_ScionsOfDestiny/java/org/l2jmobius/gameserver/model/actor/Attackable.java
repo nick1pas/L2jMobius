@@ -143,7 +143,7 @@ public class Attackable extends Npc
 	 * <li>attacker : The attacker Creature concerned by this RewardInfo of this Attackable</li>
 	 * <li>dmg : Total amount of damage done by the attacker to this Attackable (summon + own)</li>
 	 */
-	protected final class RewardInfo
+	protected class RewardInfo
 	{
 		protected Creature _attacker;
 		protected long _dmg = 0;

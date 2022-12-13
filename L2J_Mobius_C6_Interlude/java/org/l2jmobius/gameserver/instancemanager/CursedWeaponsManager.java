@@ -94,7 +94,7 @@ public class CursedWeaponsManager
 		LOGGER.info("Reloaded: " + _cursedWeapons.size() + " cursed weapon(s).");
 	}
 	
-	private final void load()
+	private void load()
 	{
 		LOGGER.info("Initializing CursedWeaponsManager.");
 		try
@@ -170,7 +170,7 @@ public class CursedWeaponsManager
 		}
 	}
 	
-	private final void restore()
+	private void restore()
 	{
 		try (Connection con = DatabaseFactory.getConnection())
 		{
@@ -205,7 +205,7 @@ public class CursedWeaponsManager
 		}
 	}
 	
-	private final void controlPlayers()
+	private void controlPlayers()
 	{
 		try (Connection con = DatabaseFactory.getConnection())
 		{

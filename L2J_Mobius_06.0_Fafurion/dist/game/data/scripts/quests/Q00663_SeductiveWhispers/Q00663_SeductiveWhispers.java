@@ -486,7 +486,7 @@ public class Q00663_SeductiveWhispers extends Quest
 		}
 	}
 	
-	private static final class Card
+	private static class Card
 	{
 		private final int _number;
 		private final Side _side;

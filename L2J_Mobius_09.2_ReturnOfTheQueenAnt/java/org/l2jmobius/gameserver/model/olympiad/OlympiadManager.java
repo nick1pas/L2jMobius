@@ -78,7 +78,7 @@ public class OlympiadManager
 		return _nonClassBasedRegisters.size() >= Config.OLYMPIAD_NONCLASSED;
 	}
 	
-	protected final void clearRegistered()
+	protected void clearRegistered()
 	{
 		_nonClassBasedRegisters.clear();
 		_classBasedRegisters.clear();

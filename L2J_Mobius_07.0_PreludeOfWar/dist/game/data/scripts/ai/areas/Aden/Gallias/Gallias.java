@@ -419,7 +419,7 @@ public class Gallias extends AbstractNpcAI
 		return "DualSkill-" + level;
 	}
 	
-	private final void takeSkills(Player player, String type)
+	private void takeSkills(Player player, String type)
 	{
 		final PlayerVariables vars = player.getVariables();
 		final String list = vars.getString(type, "");
@@ -437,7 +437,7 @@ public class Gallias extends AbstractNpcAI
 		}
 	}
 	
-	private final void giveSkills(Player player, String type)
+	private void giveSkills(Player player, String type)
 	{
 		final String list = player.getVariables().getString(type, "");
 		if (!list.isEmpty())

@@ -110,7 +110,7 @@ public abstract class AbstractInstance extends AbstractNpcAI
 	 * @param npc NPC which allows to enter into instance
 	 * @param templateId template ID of instance where player wants to enter
 	 */
-	protected final void enterInstance(Player player, Npc npc, int templateId)
+	protected void enterInstance(Player player, Npc npc, int templateId)
 	{
 		Instance instance = getPlayerInstance(player);
 		if (instance != null) // Player has already any instance active

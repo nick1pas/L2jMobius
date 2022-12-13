@@ -109,7 +109,7 @@ public class WorldObjectKnownList
 		}
 	}
 	
-	private final void findCloseObjects()
+	private void findCloseObjects()
 	{
 		if (_activeObject == null)
 		{

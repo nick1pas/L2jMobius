@@ -58,7 +58,7 @@ public class ConditionHandler
 		}
 	}
 	
-	private static final class SingletonHolder
+	private static class SingletonHolder
 	{
 		protected static final ConditionHandler INSTANCE = new ConditionHandler();
 	}

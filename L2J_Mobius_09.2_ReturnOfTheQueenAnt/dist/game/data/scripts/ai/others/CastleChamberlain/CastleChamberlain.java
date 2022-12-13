@@ -178,7 +178,7 @@ public class CastleChamberlain extends AbstractNpcAI
 		return "chamberlain-21.html";
 	}
 	
-	private final void funcReplace(Castle castle, NpcHtmlMessage html, int func, String str)
+	private void funcReplace(Castle castle, NpcHtmlMessage html, int func, String str)
 	{
 		final CastleFunction function = castle.getCastleFunction(func);
 		if (function == null)

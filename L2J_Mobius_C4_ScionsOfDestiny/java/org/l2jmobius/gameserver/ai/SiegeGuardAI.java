@@ -565,7 +565,7 @@ public class SiegeGuardAI extends CreatureAI implements Runnable
 		factionNotify();
 	}
 	
-	private final void factionNotify()
+	private void factionNotify()
 	{
 		final Creature actor = getActor();
 		final Creature target = getAttackTarget();

@@ -37,7 +37,7 @@ import org.l2jmobius.gameserver.network.serverpackets.vip.ReceiveVipInfo;
 /**
  * @author Gabriel Costa Souza
  */
-public final class VipManager
+public class VipManager
 {
 	private static final byte VIP_MAX_TIER = (byte) Config.VIP_SYSTEM_MAX_TIER;
 	

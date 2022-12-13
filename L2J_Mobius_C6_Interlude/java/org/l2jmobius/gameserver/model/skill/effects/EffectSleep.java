@@ -23,7 +23,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author mkizub
  */
-final class EffectSleep extends Effect
+public class EffectSleep extends Effect
 {
 	public EffectSleep(Env env, EffectTemplate template)
 	{

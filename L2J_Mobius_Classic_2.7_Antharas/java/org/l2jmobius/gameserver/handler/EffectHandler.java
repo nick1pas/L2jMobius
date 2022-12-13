@@ -58,7 +58,7 @@ public class EffectHandler
 		}
 	}
 	
-	private static final class SingletonHolder
+	private static class SingletonHolder
 	{
 		protected static final EffectHandler INSTANCE = new EffectHandler();
 	}

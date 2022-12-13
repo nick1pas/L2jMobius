@@ -23,7 +23,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author mkizub
  */
-final class EffectRoot extends Effect
+public class EffectRoot extends Effect
 {
 	public EffectRoot(Env env, EffectTemplate template)
 	{

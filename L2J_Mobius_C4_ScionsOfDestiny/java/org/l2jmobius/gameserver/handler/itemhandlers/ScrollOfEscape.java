@@ -194,7 +194,7 @@ public class ScrollOfEscape implements IItemHandler
 		player.setSkillCastEndTime(10 + GameTimeTaskManager.getInstance().getGameTicks() + (hitTime / GameTimeTaskManager.MILLIS_IN_TICK));
 	}
 	
-	static class EscapeFinalizer implements Runnable
+	private static class EscapeFinalizer implements Runnable
 	{
 		private final Player _player;
 		private final int _itemId;

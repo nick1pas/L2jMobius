@@ -64,7 +64,7 @@ public class Formulas
 	
 	private static final int HP_REGENERATE_PERIOD = 3000; // 3 secs
 	
-	static class FuncAddLevel3 extends Func
+	public static class FuncAddLevel3 extends Func
 	{
 		static final FuncAddLevel3[] _instancies = new FuncAddLevel3[Stat.NUM_STATS];
 		
@@ -90,7 +90,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMultLevelMod extends Func
+	public static class FuncMultLevelMod extends Func
 	{
 		static final FuncMultLevelMod[] _instancies = new FuncMultLevelMod[Stat.NUM_STATS];
 		
@@ -116,7 +116,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMultRegenResting extends Func
+	public static class FuncMultRegenResting extends Func
 	{
 		static final FuncMultRegenResting[] _instancies = new FuncMultRegenResting[Stat.NUM_STATS];
 		
@@ -160,7 +160,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncPAtkMod extends Func
+	public static class FuncPAtkMod extends Func
 	{
 		static final FuncPAtkMod _fpa_instance = new FuncPAtkMod();
 		
@@ -191,7 +191,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMAtkMod extends Func
+	public static class FuncMAtkMod extends Func
 	{
 		static final FuncMAtkMod _fma_instance = new FuncMAtkMod();
 		
@@ -214,7 +214,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMDefMod extends Func
+	public static class FuncMDefMod extends Func
 	{
 		static final FuncMDefMod _fmm_instance = new FuncMDefMod();
 		
@@ -259,7 +259,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncPDefMod extends Func
+	public static class FuncPDefMod extends Func
 	{
 		static final FuncPDefMod _fmm_instance = new FuncPDefMod();
 		
@@ -306,7 +306,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncBowAtkRange extends Func
+	public static class FuncBowAtkRange extends Func
 	{
 		private static final FuncBowAtkRange _fbar_instance = new FuncBowAtkRange();
 		
@@ -332,7 +332,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncAtkAccuracy extends Func
+	public static class FuncAtkAccuracy extends Func
 	{
 		static final FuncAtkAccuracy _faa_instance = new FuncAtkAccuracy();
 		
@@ -377,7 +377,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncAtkEvasion extends Func
+	public static class FuncAtkEvasion extends Func
 	{
 		static final FuncAtkEvasion _fae_instance = new FuncAtkEvasion();
 		
@@ -416,7 +416,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncAtkCritical extends Func
+	public static class FuncAtkCritical extends Func
 	{
 		static final FuncAtkCritical _fac_instance = new FuncAtkCritical();
 		
@@ -445,7 +445,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMAtkCritical extends Func
+	public static class FuncMAtkCritical extends Func
 	{
 		static final FuncMAtkCritical _fac_instance = new FuncMAtkCritical();
 		
@@ -474,7 +474,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMoveSpeed extends Func
+	public static class FuncMoveSpeed extends Func
 	{
 		static final FuncMoveSpeed _fms_instance = new FuncMoveSpeed();
 		
@@ -495,7 +495,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncPAtkSpeed extends Func
+	public static class FuncPAtkSpeed extends Func
 	{
 		static final FuncPAtkSpeed _fas_instance = new FuncPAtkSpeed();
 		
@@ -516,7 +516,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMAtkSpeed extends Func
+	public static class FuncMAtkSpeed extends Func
 	{
 		static final FuncMAtkSpeed _fas_instance = new FuncMAtkSpeed();
 		
@@ -537,7 +537,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncHennaSTR extends Func
+	public static class FuncHennaSTR extends Func
 	{
 		static final FuncHennaSTR _fh_instance = new FuncHennaSTR();
 		
@@ -562,7 +562,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncHennaDEX extends Func
+	public static class FuncHennaDEX extends Func
 	{
 		static final FuncHennaDEX _fh_instance = new FuncHennaDEX();
 		
@@ -587,7 +587,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncHennaINT extends Func
+	public static class FuncHennaINT extends Func
 	{
 		static final FuncHennaINT _fh_instance = new FuncHennaINT();
 		
@@ -612,7 +612,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncHennaMEN extends Func
+	public static class FuncHennaMEN extends Func
 	{
 		static final FuncHennaMEN _fh_instance = new FuncHennaMEN();
 		
@@ -637,7 +637,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncHennaCON extends Func
+	public static class FuncHennaCON extends Func
 	{
 		static final FuncHennaCON _fh_instance = new FuncHennaCON();
 		
@@ -662,7 +662,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncHennaWIT extends Func
+	public static class FuncHennaWIT extends Func
 	{
 		static final FuncHennaWIT _fh_instance = new FuncHennaWIT();
 		
@@ -687,7 +687,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMaxHpAdd extends Func
+	public static class FuncMaxHpAdd extends Func
 	{
 		static final FuncMaxHpAdd _fmha_instance = new FuncMaxHpAdd();
 		
@@ -709,7 +709,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMaxHpMul extends Func
+	public static class FuncMaxHpMul extends Func
 	{
 		static final FuncMaxHpMul _fmhm_instance = new FuncMaxHpMul();
 		
@@ -730,7 +730,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMaxCpAdd extends Func
+	public static class FuncMaxCpAdd extends Func
 	{
 		static final FuncMaxCpAdd _fmca_instance = new FuncMaxCpAdd();
 		
@@ -752,7 +752,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMaxCpMul extends Func
+	public static class FuncMaxCpMul extends Func
 	{
 		static final FuncMaxCpMul _fmcm_instance = new FuncMaxCpMul();
 		
@@ -773,7 +773,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMaxMpAdd extends Func
+	public static class FuncMaxMpAdd extends Func
 	{
 		static final FuncMaxMpAdd _fmma_instance = new FuncMaxMpAdd();
 		
@@ -795,7 +795,7 @@ public class Formulas
 		}
 	}
 	
-	static class FuncMaxMpMul extends Func
+	public static class FuncMaxMpMul extends Func
 	{
 		static final FuncMaxMpMul _fmmm_instance = new FuncMaxMpMul();
 		

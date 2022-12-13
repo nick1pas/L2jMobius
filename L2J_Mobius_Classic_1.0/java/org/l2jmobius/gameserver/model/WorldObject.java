@@ -86,7 +86,7 @@ public abstract class WorldObject extends ListenersContainer implements IIdentif
 	 * Sets the instance type.
 	 * @param newInstanceType the instance type to set
 	 */
-	protected final void setInstanceType(InstanceType newInstanceType)
+	protected void setInstanceType(InstanceType newInstanceType)
 	{
 		_instanceType = newInstanceType;
 	}

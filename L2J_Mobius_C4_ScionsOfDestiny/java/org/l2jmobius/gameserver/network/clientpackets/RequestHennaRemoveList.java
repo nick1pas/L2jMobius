@@ -24,7 +24,7 @@ import org.l2jmobius.gameserver.network.serverpackets.HennaRemoveList;
 /**
  * @author Tempy
  */
-public final class RequestHennaRemoveList implements ClientPacket
+public class RequestHennaRemoveList implements ClientPacket
 {
 	@SuppressWarnings("unused")
 	private int _unknown;

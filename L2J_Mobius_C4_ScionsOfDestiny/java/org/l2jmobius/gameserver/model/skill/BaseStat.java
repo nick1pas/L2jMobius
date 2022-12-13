@@ -93,7 +93,7 @@ public enum BaseStat
 		throw new NoSuchElementException("Unknown name '" + internName + "' for enum BaseStats");
 	}
 	
-	protected static final class STR implements IBaseStatFunction
+	protected static class STR implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)
@@ -122,7 +122,7 @@ public enum BaseStat
 		}
 	}
 	
-	protected static final class INT implements IBaseStatFunction
+	protected static class INT implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)
@@ -151,7 +151,7 @@ public enum BaseStat
 		}
 	}
 	
-	protected static final class DEX implements IBaseStatFunction
+	protected static class DEX implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)
@@ -180,7 +180,7 @@ public enum BaseStat
 		}
 	}
 	
-	protected static final class WIT implements IBaseStatFunction
+	protected static class WIT implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)
@@ -209,7 +209,7 @@ public enum BaseStat
 		}
 	}
 	
-	protected static final class CON implements IBaseStatFunction
+	protected static class CON implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)
@@ -238,7 +238,7 @@ public enum BaseStat
 		}
 	}
 	
-	protected static final class MEN implements IBaseStatFunction
+	protected static class MEN implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)
@@ -267,7 +267,7 @@ public enum BaseStat
 		}
 	}
 	
-	protected static final class NULL implements IBaseStatFunction
+	protected static class NULL implements IBaseStatFunction
 	{
 		@Override
 		public double calcBonus(Creature actor)

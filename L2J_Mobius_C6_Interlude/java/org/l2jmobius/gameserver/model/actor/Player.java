@@ -4167,7 +4167,7 @@ public class Player extends Playable
 		}
 	}
 	
-	static class TeleportProtectionFinalizer implements Runnable
+	private static class TeleportProtectionFinalizer implements Runnable
 	{
 		private final Player _player;
 		

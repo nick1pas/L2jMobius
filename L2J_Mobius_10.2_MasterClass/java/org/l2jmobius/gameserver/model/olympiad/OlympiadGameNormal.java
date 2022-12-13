@@ -160,7 +160,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void broadcastPacket(ServerPacket packet)
+	protected void broadcastPacket(ServerPacket packet)
 	{
 		if (_playerOne.updatePlayer())
 		{
@@ -214,7 +214,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void removals()
+	protected void removals()
 	{
 		if (_aborted)
 		{
@@ -246,7 +246,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void cleanEffects()
+	protected void cleanEffects()
 	{
 		if ((_playerOne.getPlayer() != null) && !_playerOne.isDefaulted() && !_playerOne.isDisconnected() && (_playerOne.getPlayer().getOlympiadGameId() == _stadiumId))
 		{
@@ -260,7 +260,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void portPlayersBack()
+	protected void portPlayersBack()
 	{
 		if ((_playerOne.getPlayer() != null) && !_playerOne.isDefaulted() && !_playerOne.isDisconnected())
 		{
@@ -273,7 +273,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void playersStatusBack()
+	protected void playersStatusBack()
 	{
 		if ((_playerOne.getPlayer() != null) && !_playerOne.isDefaulted() && !_playerOne.isDisconnected() && (_playerOne.getPlayer().getOlympiadGameId() == _stadiumId))
 		{
@@ -287,7 +287,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void clearPlayers()
+	protected void clearPlayers()
 	{
 		_playerOne.setPlayer(null);
 		_playerOne = null;
@@ -296,7 +296,7 @@ public abstract class OlympiadGameNormal extends AbstractOlympiadGame
 	}
 	
 	@Override
-	protected final void handleDisconnect(Player player)
+	protected void handleDisconnect(Player player)
 	{
 		if (player.getObjectId() == _playerOne.getObjectId())
 		{

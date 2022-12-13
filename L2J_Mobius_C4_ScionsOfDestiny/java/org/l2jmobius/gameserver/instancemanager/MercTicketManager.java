@@ -672,7 +672,7 @@ public class MercTicketManager
 		load();
 	}
 	
-	private final void load()
+	private void load()
 	{
 		// load merc tickets into the world
 		try (Connection con = DatabaseFactory.getConnection())

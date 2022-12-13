@@ -139,7 +139,7 @@ public class RequestRestartPoint implements ClientPacket
 		portPlayer(player);
 	}
 	
-	protected final void portPlayer(Player player)
+	protected void portPlayer(Player player)
 	{
 		Location loc = null;
 		Instance instance = null;

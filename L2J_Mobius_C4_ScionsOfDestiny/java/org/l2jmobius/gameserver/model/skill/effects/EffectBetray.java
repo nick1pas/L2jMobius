@@ -26,7 +26,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author decad
  */
-final class EffectBetray extends Effect
+public class EffectBetray extends Effect
 {
 	public EffectBetray(Env env, EffectTemplate template)
 	{

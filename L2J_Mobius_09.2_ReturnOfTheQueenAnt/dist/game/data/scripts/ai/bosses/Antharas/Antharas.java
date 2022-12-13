@@ -448,7 +448,7 @@ public class Antharas extends AbstractInstance
 		return super.onSpellFinished(npc, player, skill);
 	}
 	
-	private final void refreshAiParams(Player attacker, int damage)
+	private void refreshAiParams(Player attacker, int damage)
 	{
 		final Instance world = attacker.getInstanceWorld();
 		if (world == null)

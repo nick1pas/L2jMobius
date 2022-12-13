@@ -1213,7 +1213,7 @@ public class Q230_TestOfTheSummoner extends Quest
 		return null;
 	}
 	
-	private final class ProgressDuelMob
+	private class ProgressDuelMob
 	{
 		private final Player _attacker;
 		private final Summon _pet;

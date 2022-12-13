@@ -568,7 +568,7 @@ public class Kamaloka extends AbstractInstance
 	 * Spawn all NPCs in kamaloka
 	 * @param world instanceWorld
 	 */
-	private final void spawnKama(Instance world)
+	private void spawnKama(Instance world)
 	{
 		int[] npcs;
 		int[][] spawns;

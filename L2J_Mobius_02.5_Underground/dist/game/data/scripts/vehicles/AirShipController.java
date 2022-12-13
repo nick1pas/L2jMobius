@@ -42,7 +42,7 @@ import ai.AbstractNpcAI;
 
 public abstract class AirShipController extends AbstractNpcAI
 {
-	private final class DecayTask implements Runnable
+	private class DecayTask implements Runnable
 	{
 		public DecayTask()
 		{
@@ -58,7 +58,7 @@ public abstract class AirShipController extends AbstractNpcAI
 		}
 	}
 	
-	private final class DepartTask implements Runnable
+	private class DepartTask implements Runnable
 	{
 		public DepartTask()
 		{

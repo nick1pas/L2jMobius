@@ -126,7 +126,7 @@ public class SoulCrystals implements IItemHandler
 		ThreadPool.schedule(cf, skill.getHitTime());
 	}
 	
-	static class CrystalFinalizer implements Runnable
+	private static class CrystalFinalizer implements Runnable
 	{
 		private final Player _player;
 		private final Attackable _target;

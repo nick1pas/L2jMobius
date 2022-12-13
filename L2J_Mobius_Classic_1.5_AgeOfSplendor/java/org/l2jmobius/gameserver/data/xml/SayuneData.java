@@ -71,7 +71,7 @@ public class SayuneData implements IXmlReader
 		}
 	}
 	
-	private final void parseEntries(SayuneEntry lastEntry, Node n)
+	private void parseEntries(SayuneEntry lastEntry, Node n)
 	{
 		NamedNodeMap attrs;
 		for (Node d = n.getFirstChild(); d != null; d = d.getNextSibling())

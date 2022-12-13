@@ -155,7 +155,7 @@ public abstract class Inventory extends ItemContainer
 	private int _blockedItemSlotsMask;
 	
 	// Recorder of alterations in inventory
-	private static final class ChangeRecorder implements PaperdollListener
+	private static class ChangeRecorder implements PaperdollListener
 	{
 		private final Inventory _inventory;
 		private final List<Item> _changed = new ArrayList<>(1);
@@ -204,7 +204,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class BowCrossRodListener implements PaperdollListener
+	private static class BowCrossRodListener implements PaperdollListener
 	{
 		private static BowCrossRodListener instance = new BowCrossRodListener();
 		
@@ -274,7 +274,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class StatsListener implements PaperdollListener
+	private static class StatsListener implements PaperdollListener
 	{
 		private static StatsListener instance = new StatsListener();
 		
@@ -296,7 +296,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class ItemSkillsListener implements PaperdollListener
+	private static class ItemSkillsListener implements PaperdollListener
 	{
 		private static ItemSkillsListener instance = new ItemSkillsListener();
 		
@@ -732,7 +732,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class ArmorSetListener implements PaperdollListener
+	private static class ArmorSetListener implements PaperdollListener
 	{
 		private static ArmorSetListener instance = new ArmorSetListener();
 		
@@ -934,7 +934,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class BraceletListener implements PaperdollListener
+	private static class BraceletListener implements PaperdollListener
 	{
 		private static BraceletListener instance = new BraceletListener();
 		
@@ -970,7 +970,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class BroochListener implements PaperdollListener
+	private static class BroochListener implements PaperdollListener
 	{
 		private static BroochListener instance = new BroochListener();
 		
@@ -1006,7 +1006,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	private static final class AgathionBraceletListener implements PaperdollListener
+	private static class AgathionBraceletListener implements PaperdollListener
 	{
 		private static AgathionBraceletListener instance = new AgathionBraceletListener();
 		

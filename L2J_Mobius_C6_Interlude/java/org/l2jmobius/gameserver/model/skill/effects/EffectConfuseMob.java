@@ -31,7 +31,7 @@ import org.l2jmobius.gameserver.model.skill.Env;
 /**
  * @author littlecrow Implementation of the Confusion Effect
  */
-final class EffectConfuseMob extends Effect
+public class EffectConfuseMob extends Effect
 {
 	public EffectConfuseMob(Env env, EffectTemplate template)
 	{

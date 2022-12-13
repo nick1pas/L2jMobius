@@ -26,7 +26,7 @@ import ai.AbstractNpcAI;
  * Valleria AI.
  * @author CostyKiller
  */
-public final class Valleria extends AbstractNpcAI
+public class Valleria extends AbstractNpcAI
 {
 	// NPC
 	private static final int VALLERIA = 34435;

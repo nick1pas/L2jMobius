@@ -247,7 +247,7 @@ public class NpcHtmlMessage extends ServerPacket
 	 * Builds the bypass cache.
 	 * @param player the player
 	 */
-	private final void buildBypassCache(Player player)
+	private void buildBypassCache(Player player)
 	{
 		if (player == null)
 		{
@@ -282,7 +282,7 @@ public class NpcHtmlMessage extends ServerPacket
 	 * Builds the links cache.
 	 * @param player the player
 	 */
-	private final void buildLinksCache(Player player)
+	private void buildLinksCache(Player player)
 	{
 		if (player == null)
 		{

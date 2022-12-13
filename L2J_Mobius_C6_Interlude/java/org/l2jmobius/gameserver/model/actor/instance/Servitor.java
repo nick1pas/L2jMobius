@@ -207,7 +207,7 @@ public class Servitor extends Summon
 		return true;
 	}
 	
-	static class SummonLifetime implements Runnable
+	private static class SummonLifetime implements Runnable
 	{
 		private final Player _player;
 		private final Servitor _summon;

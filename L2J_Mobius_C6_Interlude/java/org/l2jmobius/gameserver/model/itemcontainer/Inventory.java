@@ -86,7 +86,7 @@ public abstract class Inventory extends ItemContainer
 	// used to quickly check for using of items of special type
 	private int _wearedMask;
 	
-	final class FormalWearListener implements PaperdollListener
+	private class FormalWearListener implements PaperdollListener
 	{
 		@Override
 		public void notifyUnequiped(int slot, Item item)
@@ -139,7 +139,7 @@ public abstract class Inventory extends ItemContainer
 	/**
 	 * Recorder of alterations in inventory
 	 */
-	public static final class ChangeRecorder implements PaperdollListener
+	public static class ChangeRecorder implements PaperdollListener
 	{
 		private final Inventory _inventory;
 		private final List<Item> _changed = new ArrayList<>(1);
@@ -188,7 +188,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	final class BowListener implements PaperdollListener
+	private class BowListener implements PaperdollListener
 	{
 		@Override
 		public void notifyUnequiped(int slot, Item item)
@@ -248,7 +248,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	final class StatsListener implements PaperdollListener
+	private class StatsListener implements PaperdollListener
 	{
 		@Override
 		public void notifyUnequiped(int slot, Item item)
@@ -273,7 +273,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	final class ItemPassiveSkillsListener implements PaperdollListener
+	private class ItemPassiveSkillsListener implements PaperdollListener
 	{
 		@Override
 		public void notifyUnequiped(int slot, Item item)
@@ -375,7 +375,7 @@ public abstract class Inventory extends ItemContainer
 		}
 	}
 	
-	final class ArmorSetListener implements PaperdollListener
+	private class ArmorSetListener implements PaperdollListener
 	{
 		@Override
 		public void notifyEquiped(int slot, Item item)

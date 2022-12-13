@@ -166,7 +166,7 @@ public class FortSiegeManager
 		character.removeSkill(SkillTable.getInstance().getSkill(247, 1));
 	}
 	
-	private final void load()
+	private void load()
 	{
 		LOGGER.info("Initializing FortSiegeManager");
 		InputStream is = null;

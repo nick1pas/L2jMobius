@@ -31,7 +31,7 @@ import ai.AbstractNpcAI;
  * @URL https://dev.l2central.info/main/articles/355.html
  * @author CostyKiller, NasSeKa
  */
-public final class GreedyTreasureChests extends AbstractNpcAI
+public class GreedyTreasureChests extends AbstractNpcAI
 {
 	// NPCs
 	private static final int CHEST_LV110 = 8710;

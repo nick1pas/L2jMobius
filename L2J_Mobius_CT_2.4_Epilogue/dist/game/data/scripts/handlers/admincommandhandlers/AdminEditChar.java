@@ -1440,7 +1440,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		activeChar.sendPacket(adminReply);
 	}
 	
-	private final class IpPack
+	private class IpPack
 	{
 		String ip;
 		int[][] tracert;
@@ -1577,7 +1577,7 @@ public class AdminEditChar implements IAdminCommandHandler
 		activeChar.sendPacket(html);
 	}
 	
-	private final class Untransform implements Runnable
+	private class Untransform implements Runnable
 	{
 		private final Player _player;
 		

@@ -107,7 +107,7 @@ public class CastleManager
 		return result;
 	}
 	
-	private final void load()
+	private void load()
 	{
 		LOGGER.info("Initializing CastleManager");
 		try (Connection con = DatabaseFactory.getConnection())

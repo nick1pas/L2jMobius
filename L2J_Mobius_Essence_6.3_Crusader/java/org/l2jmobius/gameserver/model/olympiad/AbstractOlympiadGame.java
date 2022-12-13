@@ -88,7 +88,7 @@ public abstract class AbstractOlympiadGame
 		return !_aborted;
 	}
 	
-	protected final void addPointsToParticipant(Participant par, int points)
+	protected void addPointsToParticipant(Participant par, int points)
 	{
 		par.updateStat(POINTS, points);
 		final SystemMessage sm = new SystemMessage(SystemMessageId.C1_HAS_EARNED_OLYMPIAD_POINTS_X_S2);
@@ -97,7 +97,7 @@ public abstract class AbstractOlympiadGame
 		broadcastPacket(sm);
 	}
 	
-	protected final void removePointsFromParticipant(Participant par, int points)
+	protected void removePointsFromParticipant(Participant par, int points)
 	{
 		par.updateStat(POINTS, -points);
 		final SystemMessage sm = new SystemMessage(SystemMessageId.C1_HAS_LOST_OLYMPIAD_POINTS_X_S2);
