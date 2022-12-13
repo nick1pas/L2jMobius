@@ -21,6 +21,7 @@ import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.SkillHolder;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
+import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
@@ -129,7 +130,7 @@ public class FrostLordCastle extends AbstractInstance
 	}
 	
 	@Override
-	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon)
+	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon, Skill skill)
 	{
 		final Instance world = npc.getInstanceWorld();
 		if (world == null)
@@ -169,7 +170,7 @@ public class FrostLordCastle extends AbstractInstance
 			}
 		}
 		
-		return super.onAttack(npc, attacker, damage, isSummon);
+		return super.onAttack(npc, attacker, damage, isSummon, skill);
 	}
 	
 	@Override

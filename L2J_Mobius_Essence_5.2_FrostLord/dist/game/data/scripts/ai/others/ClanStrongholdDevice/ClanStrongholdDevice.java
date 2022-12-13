@@ -26,6 +26,7 @@ import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.SkillHolder;
+import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.ExChangeNpcState;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
@@ -166,14 +167,14 @@ public class ClanStrongholdDevice extends AbstractNpcAI
 	}
 	
 	@Override
-	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon)
+	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon, Skill skill)
 	{
 		if (CURRENT_CLAN_ID.containsKey(npc.getScriptValue()) && (LAST_ATTACK.getOrDefault(npc.getObjectId(), 0L) < (System.currentTimeMillis() - 5000)))
 		{
 			npc.broadcastPacket(new NpcSay(npc, ChatType.NPC_GENERAL, NpcStringId.AT_TACK_SIG_NAL_DE_TEC_TED_S1).addStringParameter(attacker.getName()));
 			LAST_ATTACK.put(npc.getObjectId(), System.currentTimeMillis());
 		}
-		return super.onAttack(npc, attacker, damage, isSummon);
+		return super.onAttack(npc, attacker, damage, isSummon, skill);
 	}
 	
 	@Override

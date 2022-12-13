@@ -29,6 +29,7 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.SkillHolder;
 import org.l2jmobius.gameserver.model.holders.TimedHuntingZoneHolder;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
+import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
 import org.l2jmobius.gameserver.network.NpcStringId;
@@ -850,7 +851,7 @@ public class TrainingZone extends AbstractInstance
 	}
 	
 	@Override
-	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon)
+	public String onAttack(Npc npc, Player attacker, int damage, boolean isSummon, Skill skill)
 	{
 		final Instance world = npc.getInstanceWorld();
 		if ((world != null) && (world.getRemainingTime() < 600000) && !world.getParameters().getBoolean("spawnedBoss", false))
@@ -858,7 +859,7 @@ public class TrainingZone extends AbstractInstance
 			world.getParameters().set("spawnedBoss", true);
 			startQuestTimer("SpawnBossClockList", 1000, npc, attacker);
 		}
-		return super.onAttack(npc, attacker, damage, isSummon);
+		return super.onAttack(npc, attacker, damage, isSummon, skill);
 	}
 	
 	@Override
