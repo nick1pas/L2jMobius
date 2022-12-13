@@ -211,6 +211,11 @@ public class TimedHunting extends AbstractInstance
 	
 	private void replaceNormalSkills(Player player)
 	{
+		if (player.getInstanceWorld().getTemplateId() == 228) // Training Zone.
+		{
+			return;
+		}
+		
 		// Replace normal skills.
 		for (Entry<Integer, Integer> entry : SKILL_REPLACEMENTS.entrySet())
 		{
