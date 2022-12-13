@@ -31,7 +31,7 @@ import org.l2jmobius.gameserver.network.serverpackets.homunculus.ExShowHomunculu
  */
 public class RequestExEnchantHomunculusSkill implements ClientPacket
 {
-	private static final int SP_COST = 1000000000;
+	private static final int SP_COST = 100000;
 	
 	private int _slot;
 	private int _skillNumber;
