@@ -35,6 +35,7 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
+import org.l2jmobius.gameserver.network.serverpackets.ShortCutInit;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.EnchantResult;
 import org.l2jmobius.gameserver.network.serverpackets.enchant.multi.ExResultMultiEnchantItemList;
@@ -97,8 +98,10 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 		{
 			player.removeRequest(request.getClass());
 			player.sendPacket(new ExResultSetMultiEnchantItemList(player, 1));
-			Logger.getLogger("MultiEnchant - player " + player.getObjectId() + " " + player.getName() + " trying enchant items, when scrolls count less than items;");
+			Logger.getLogger("MultiEnchant - player " + player.getObjectId() + " " + player.getName() + " trying enchant items, when scroll count is less than items!");
+			return;
 		}
+		
 		final EnchantScroll scrollTemplate = EnchantItemData.getInstance().getEnchantScroll(scroll);
 		if (scrollTemplate == null)
 		{
@@ -347,6 +350,7 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 			else
 			{
 				player.sendPacket(new ExResultMultiEnchantItemList(player, true));
+				player.sendPacket(new ShortCutInit(player));
 				return;
 			}
 		}
@@ -368,6 +372,7 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 		}
 		
 		player.sendPacket(new ExResultMultiEnchantItemList(player, _successEnchant, _failureEnchant));
+		player.sendPacket(new ShortCutInit(player));
 	}
 	
 	public int getMultiEnchantingSlotByObjectId(EnchantItemRequest request, int objectId)
@@ -386,5 +391,4 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 		}
 		return slotId;
 	}
-	
 }
