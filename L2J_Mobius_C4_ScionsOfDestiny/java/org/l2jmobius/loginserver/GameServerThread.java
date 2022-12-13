@@ -408,7 +408,14 @@ public class GameServerThread extends Thread
 				_out.write(len & 0xff);
 				_out.write((len >> 8) & 0xff);
 				_out.write(data);
-				_out.flush();
+				try
+				{
+					_out.flush();
+				}
+				catch (IOException e)
+				{
+					// GameServer might have terminated.
+				}
 			}
 		}
 		catch (IOException e)
