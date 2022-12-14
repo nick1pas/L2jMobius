@@ -71,7 +71,7 @@ public class ExBuySellList extends AbstractItemPacket
 		_type = BUY_SELL_LIST_BUY;
 		_listId = list.getListId();
 		_list = list.getProducts();
-		_money = player.getAdena();
+		_money = player.isGM() && (player.getAdena() == 0) && (list.getNpcsAllowed() == null) ? 1000000000 : player.getAdena();
 		_inventorySlots = player.getInventory().getNonQuestSize();
 		_castleTaxRate = castleTaxRate;
 	}
