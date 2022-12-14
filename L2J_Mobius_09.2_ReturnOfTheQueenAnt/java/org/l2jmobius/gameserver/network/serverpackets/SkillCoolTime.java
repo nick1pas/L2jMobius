@@ -50,10 +50,13 @@ public class SkillCoolTime extends ServerPacket
 		writeInt(_reuseTimestamps.size());
 		for (TimeStamp ts : _reuseTimestamps)
 		{
-			writeInt(ts.getSkillId());
+			final long reuse = ts.getReuse();
+			final long remaining = ts.getRemaining();
+			final int sharedReuseGroup = ts.getSharedReuseGroup();
+			writeInt(sharedReuseGroup > 0 ? sharedReuseGroup : ts.getSkillId());
 			writeInt(ts.getSkillLevel());
-			writeInt((int) ts.getReuse() / 1000);
-			writeInt((int) ts.getRemaining() / 1000);
+			writeInt((int) (reuse > 0 ? reuse : remaining) / 1000);
+			writeInt((int) remaining / 1000);
 		}
 	}
 }

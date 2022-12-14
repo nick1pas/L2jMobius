@@ -53,7 +53,7 @@ public class TimeStamp
 		_id3 = skill.getSubLevel();
 		_reuse = reuse;
 		_stamp = systime > 0 ? systime : reuse != 0 ? System.currentTimeMillis() + reuse : 0;
-		_group = -1;
+		_group = skill.getReuseDelayGroup();
 	}
 	
 	/**
