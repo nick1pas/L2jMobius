@@ -52,6 +52,22 @@ public class Die extends ServerPacket
 		if (creature.isPlayer())
 		{
 			_player = creature.getActingPlayer();
+			final Clan clan = _player.getClan();
+			boolean isInCastleDefense = false;
+			boolean isInFortDefense = false;
+			SiegeClan siegeClan = null;
+			final Castle castle = CastleManager.getInstance().getCastle(creature);
+			final Fort fort = FortManager.getInstance().getFort(creature);
+			if ((castle != null) && castle.getSiege().isInProgress())
+			{
+				siegeClan = castle.getSiege().getAttackerClan(clan);
+				isInCastleDefense = (siegeClan == null) && castle.getSiege().checkIsDefender(clan);
+			}
+			else if ((fort != null) && fort.getSiege().isInProgress())
+			{
+				siegeClan = fort.getSiege().getAttackerClan(clan);
+				isInFortDefense = (siegeClan == null) && fort.getSiege().checkIsDefender(clan);
+			}
 			
 			for (BuffInfo effect : creature.getEffectList().getEffects())
 			{
@@ -62,47 +78,26 @@ public class Die extends ServerPacket
 				}
 			}
 			
-			if (!_player.isInTimedHuntingZone())
+			// ClanHall check.
+			if ((clan != null) && (clan.getHideoutId() > 0))
 			{
-				final Clan clan = _player.getClan();
-				boolean isInCastleDefense = false;
-				boolean isInFortDefense = false;
-				SiegeClan siegeClan = null;
-				final Castle castle = CastleManager.getInstance().getCastle(creature);
-				final Fort fort = FortManager.getInstance().getFort(creature);
-				if ((castle != null) && castle.getSiege().isInProgress())
-				{
-					siegeClan = castle.getSiege().getAttackerClan(clan);
-					isInCastleDefense = (siegeClan == null) && castle.getSiege().checkIsDefender(clan);
-				}
-				else if ((fort != null) && fort.getSiege().isInProgress())
-				{
-					siegeClan = fort.getSiege().getAttackerClan(clan);
-					isInFortDefense = (siegeClan == null) && fort.getSiege().checkIsDefender(clan);
-				}
-				
-				// ClanHall check.
-				if ((clan != null) && (clan.getHideoutId() > 0))
-				{
-					_flags += 2;
-				}
-				// Castle check.
-				if (((clan != null) && (clan.getCastleId() > 0)) || isInCastleDefense)
-				{
-					_flags += 4;
-				}
-				// Fortress check.
-				if (((clan != null) && (clan.getFortId() > 0)) || isInFortDefense)
-				{
-					_flags += 8;
-				}
-				// Outpost check.
-				if (((siegeClan != null) && !isInCastleDefense && !isInFortDefense && !siegeClan.getFlag().isEmpty()))
-				{
-					_flags += 16;
-				}
+				_flags += 2;
 			}
-			
+			// Castle check.
+			if (((clan != null) && (clan.getCastleId() > 0)) || isInCastleDefense)
+			{
+				_flags += 4;
+			}
+			// Fortress check.
+			if (((clan != null) && (clan.getFortId() > 0)) || isInFortDefense)
+			{
+				_flags += 8;
+			}
+			// Outpost check.
+			if (((siegeClan != null) && !isInCastleDefense && !isInFortDefense && !siegeClan.getFlag().isEmpty()))
+			{
+				_flags += 16;
+			}
 			// Feather check.
 			if (creature.getAccessLevel().allowFixedRes() || creature.getInventory().haveItemForSelfResurrection())
 			{
