@@ -104,6 +104,7 @@ public class Config
 	private static final String GRACIASEEDS_CONFIG_FILE = "./config/GraciaSeeds.ini";
 	private static final String GRANDBOSS_CONFIG_FILE = "./config/GrandBoss.ini";
 	private static final String HUNT_PASS_CONFIG_FILE = "./config/HuntPass.ini";
+	private static final String ACHIEVEMENT_BOX_CONFIG_FILE = "./config/AchievementBox.ini";
 	private static final String LOGIN_CONFIG_FILE = "./config/LoginServer.ini";
 	private static final String NPC_CONFIG_FILE = "./config/NPC.ini";
 	private static final String PVP_CONFIG_FILE = "./config/PVP.ini";
@@ -955,6 +956,12 @@ public class Config
 	public static int HUNT_PASS_PERIOD;
 	public static int HUNT_PASS_PREMIUM_COST;
 	public static int HUNT_PASS_POINTS_FOR_STEP;
+	
+	// Achivement Box
+	public static boolean ENABLE_ACHIEVEMENT_BOX;
+	public static int ACHIEVEMENT_BOX_POINTS_FOR_REWARD;
+	public static boolean ENABLE_ACHIEVEMENT_PVP;
+	public static int ACHIEVEMENT_BOX_PVP_POINTS_FOR_REWARD;
 	
 	// GrandBoss Settings
 	
@@ -2695,6 +2702,13 @@ public class Config
 			HUNT_PASS_PREMIUM_COST = huntPassConfig.getInt("PremiumCost", 3600);
 			HUNT_PASS_POINTS_FOR_STEP = huntPassConfig.getInt("PointsForstep", 2400);
 			HUNT_PASS_PERIOD = huntPassConfig.getInt("DayOfMonth", 1);
+			
+			// Load ArchivementBox (if exists)
+			final PropertiesParser achievementBoxConfig = new PropertiesParser(ACHIEVEMENT_BOX_CONFIG_FILE);
+			ENABLE_ACHIEVEMENT_BOX = achievementBoxConfig.getBoolean("EnabledAchievementBox", true);
+			ACHIEVEMENT_BOX_POINTS_FOR_REWARD = achievementBoxConfig.getInt("PointsForReward", 1000);
+			ENABLE_ACHIEVEMENT_PVP = achievementBoxConfig.getBoolean("EnabledAchievementPvP", true);
+			ACHIEVEMENT_BOX_PVP_POINTS_FOR_REWARD = achievementBoxConfig.getInt("PointsForPvpReward", 5);
 			
 			// Gracia Seeds
 			final PropertiesParser graciaSeedsConfig = new PropertiesParser(GRACIASEEDS_CONFIG_FILE);

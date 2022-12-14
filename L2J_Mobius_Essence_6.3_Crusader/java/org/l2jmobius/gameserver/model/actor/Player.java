@@ -143,6 +143,7 @@ import org.l2jmobius.gameserver.instancemanager.SellBuffsManager;
 import org.l2jmobius.gameserver.instancemanager.SiegeManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.AccessLevel;
+import org.l2jmobius.gameserver.model.AchievementBox;
 import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
 import org.l2jmobius.gameserver.model.BlockList;
 import org.l2jmobius.gameserver.model.ClientSettings;
@@ -963,6 +964,7 @@ public class Player extends Playable
 	private final Map<Integer, PurgePlayerHolder> _purgePoints = new HashMap<>();
 	
 	private final HuntPass _huntPass;
+	private final AchievementBox _achivemenetBox;
 	
 	private final Map<Integer, PetEvolveHolder> _petEvolves = new HashMap<>();
 	
@@ -1259,6 +1261,7 @@ public class Player extends Playable
 		_appearance = app;
 		
 		_huntPass = Config.ENABLE_HUNT_PASS ? new HuntPass(this) : null;
+		_achivemenetBox = Config.ENABLE_ACHIEVEMENT_BOX ? new AchievementBox(this) : null;
 		
 		// Create an AI
 		getAI();
@@ -1353,6 +1356,11 @@ public class Player extends Playable
 	public HuntPass getHuntPass()
 	{
 		return _huntPass;
+	}
+	
+	public AchievementBox getAchievementBox()
+	{
+		return _achivemenetBox;
 	}
 	
 	/**
@@ -5414,6 +5422,10 @@ public class Player extends Playable
 			setPvpKills(_pvpKills + 1);
 			setTotalKills(getTotalKills() + 1);
 			updatePvpTitleAndColor(true);
+			if (Config.ENABLE_ACHIEVEMENT_PVP)
+			{
+				getAchievementBox().addPvpPoints(1);
+			}
 		}
 		else if ((getReputation() > 0) && (_pkKills == 0))
 		{
@@ -7072,7 +7084,7 @@ public class Player extends Playable
 			player.setOnlineStatus(true, false);
 			
 			PlayerAutoSaveTaskManager.getInstance().add(player);
-			
+			player.getAchievementBox().restore();
 		}
 		catch (Exception e)
 		{
@@ -7395,6 +7407,11 @@ public class Player extends Playable
 		if (_huntPass != null)
 		{
 			_huntPass.store();
+		}
+		
+		if (_achivemenetBox != null)
+		{
+			_achivemenetBox.store();
 		}
 	}
 	

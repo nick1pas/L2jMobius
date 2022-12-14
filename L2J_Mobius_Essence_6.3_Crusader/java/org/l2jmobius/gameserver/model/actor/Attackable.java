@@ -46,6 +46,7 @@ import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
 import org.l2jmobius.gameserver.instancemanager.PcCafePointsManager;
 import org.l2jmobius.gameserver.instancemanager.WalkingManager;
 import org.l2jmobius.gameserver.instancemanager.events.EventDropManager;
+import org.l2jmobius.gameserver.model.AchievementBox;
 import org.l2jmobius.gameserver.model.AggroInfo;
 import org.l2jmobius.gameserver.model.CommandChannel;
 import org.l2jmobius.gameserver.model.DamageDoneInfo;
@@ -612,6 +613,12 @@ public class Attackable extends Npc
 										if (huntPass != null)
 										{
 											attacker.getHuntPass().addPassPoint(exp);
+										}
+										
+										final AchievementBox box = attacker.getAchievementBox();
+										if (box != null)
+										{
+											attacker.getAchievementBox().addPoints(1);
 										}
 									}
 								}

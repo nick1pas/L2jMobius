@@ -141,6 +141,7 @@ import org.l2jmobius.gameserver.instancemanager.SellBuffsManager;
 import org.l2jmobius.gameserver.instancemanager.SiegeManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.AccessLevel;
+import org.l2jmobius.gameserver.model.AchievementBox;
 import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
 import org.l2jmobius.gameserver.model.BlockList;
 import org.l2jmobius.gameserver.model.ClientSettings;
@@ -945,6 +946,8 @@ public class Player extends Playable
 	
 	private final Map<Integer, PurgePlayerHolder> _purgePoints = new HashMap<>();
 	
+	private final AchievementBox _achivemenetBox;
+	
 	private final Map<Integer, PetEvolveHolder> _petEvolves = new HashMap<>();
 	
 	private final List<QuestTimer> _questTimers = new ArrayList<>();
@@ -1237,6 +1240,8 @@ public class Player extends Playable
 		app.setOwner(this);
 		_appearance = app;
 		
+		_achivemenetBox = Config.ENABLE_ACHIEVEMENT_BOX ? new AchievementBox(this) : null;
+		
 		// Create an AI
 		getAI();
 		
@@ -1325,6 +1330,11 @@ public class Player extends Playable
 	public PlayerTemplate getBaseTemplate()
 	{
 		return PlayerTemplateData.getInstance().getTemplate(_baseClass);
+	}
+	
+	public AchievementBox getAchievementBox()
+	{
+		return _achivemenetBox;
 	}
 	
 	/**
@@ -7295,6 +7305,11 @@ public class Player extends Playable
 		if (_randomCraft != null)
 		{
 			_randomCraft.store();
+		}
+		
+		if (_achivemenetBox != null)
+		{
+			_achivemenetBox.store();
 		}
 	}
 	

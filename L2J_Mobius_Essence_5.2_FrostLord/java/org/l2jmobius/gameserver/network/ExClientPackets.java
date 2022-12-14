@@ -155,6 +155,10 @@ import org.l2jmobius.gameserver.network.clientpackets.shuttle.RequestShuttleGetO
 import org.l2jmobius.gameserver.network.clientpackets.shuttle.RequestShuttleGetOn;
 import org.l2jmobius.gameserver.network.clientpackets.stats.ExResetStatusBonus;
 import org.l2jmobius.gameserver.network.clientpackets.stats.ExSetStatusBonus;
+import org.l2jmobius.gameserver.network.clientpackets.steadybox.RequestSteadyBoxLoad;
+import org.l2jmobius.gameserver.network.clientpackets.steadybox.RequestSteadyGetReward;
+import org.l2jmobius.gameserver.network.clientpackets.steadybox.RequestSteadyOpenBox;
+import org.l2jmobius.gameserver.network.clientpackets.steadybox.RequestSteadyOpenSlot;
 import org.l2jmobius.gameserver.network.clientpackets.subjugation.RequestSubjugationGacha;
 import org.l2jmobius.gameserver.network.clientpackets.subjugation.RequestSubjugationGachaUI;
 import org.l2jmobius.gameserver.network.clientpackets.subjugation.RequestSubjugationList;
@@ -648,10 +652,10 @@ public enum ExClientPackets
 	EX_RANKING_FESTIVAL_MY_RECEIVED_BONUS(0x1D1, null, ConnectionState.IN_GAME),
 	EX_RANKING_FESTIVAL_REWARD(0x1D2, null, ConnectionState.IN_GAME),
 	EX_TIMER_CHECK(0x1D3, null, ConnectionState.IN_GAME),
-	EX_STEADY_BOX_LOAD(0x1D4, null, ConnectionState.IN_GAME),
-	EX_STEADY_OPEN_SLOT(0x1D5, null, ConnectionState.IN_GAME),
-	EX_STEADY_OPEN_BOX(0x1D6, null, ConnectionState.IN_GAME),
-	EX_STEADY_GET_REWARD(0x1D7, null, ConnectionState.IN_GAME),
+	EX_STEADY_BOX_LOAD(0x1D4, RequestSteadyBoxLoad::new, ConnectionState.IN_GAME),
+	EX_STEADY_OPEN_SLOT(0x1D5, RequestSteadyOpenSlot::new, ConnectionState.IN_GAME),
+	EX_STEADY_OPEN_BOX(0x1D6, RequestSteadyOpenBox::new, ConnectionState.IN_GAME),
+	EX_STEADY_GET_REWARD(0x1D7, RequestSteadyGetReward::new, ConnectionState.IN_GAME),
 	EX_PET_RANKING_MY_INFO(0x1D8, RequestPetRankingMyInfo::new, ConnectionState.IN_GAME),
 	EX_PET_RANKING_LIST(0x1D9, RequestPetRankingList::new, ConnectionState.IN_GAME),
 	EX_COLLECTION_OPEN_UI(0x1DA, RequestExCollectionOpenUI::new, ConnectionState.IN_GAME),

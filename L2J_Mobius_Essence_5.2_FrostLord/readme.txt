@@ -132,6 +132,8 @@ Sylph: https://eu.4game.com/patchnotes/lineage2essence/281/
 -Collection system
 -Purge system
 -Pledge donation system
+-Hellbound spawns
+-Achievement box
 
 Frost Lord: https://eu.4game.com/patchnotes/lineage2essence/329/
 -Resurrection with payment

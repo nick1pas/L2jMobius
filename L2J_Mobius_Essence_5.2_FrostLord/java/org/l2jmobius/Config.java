@@ -103,6 +103,7 @@ public class Config
 	private static final String GENERAL_CONFIG_FILE = "./config/General.ini";
 	private static final String GRACIASEEDS_CONFIG_FILE = "./config/GraciaSeeds.ini";
 	private static final String GRANDBOSS_CONFIG_FILE = "./config/GrandBoss.ini";
+	private static final String ACHIEVEMENT_BOX_CONFIG_FILE = "./config/AchievementBox.ini";
 	private static final String LOGIN_CONFIG_FILE = "./config/LoginServer.ini";
 	private static final String NPC_CONFIG_FILE = "./config/NPC.ini";
 	private static final String PVP_CONFIG_FILE = "./config/PVP.ini";
@@ -934,6 +935,12 @@ public class Config
 	public static boolean ENABLE_RANDOM_CRAFT;
 	public static int RANDOM_CRAFT_CREATE_FEE;
 	public static boolean DROP_RANDOM_CRAFT_MATERIALS;
+	
+	// Achivement Box
+	public static boolean ENABLE_ACHIEVEMENT_BOX;
+	public static int ACHIEVEMENT_BOX_POINTS_FOR_REWARD;
+	public static boolean ENABLE_ACHIEVEMENT_PVP;
+	public static int ACHIEVEMENT_BOX_PVP_POINTS_FOR_REWARD;
 	
 	// GrandBoss Settings
 	
@@ -2652,6 +2659,13 @@ public class Config
 			QUEEN_ANT_SPAWN_RANDOM = grandBossConfig.getInt("RandomOfQueenAntSpawn", 17);
 			ZAKEN_SPAWN_INTERVAL = grandBossConfig.getInt("IntervalOfZakenSpawn", 168);
 			ZAKEN_SPAWN_RANDOM = grandBossConfig.getInt("RandomOfZakenSpawn", 48);
+			
+			// Load ArchivementBox (if exists)
+			final PropertiesParser achievementBoxConfig = new PropertiesParser(ACHIEVEMENT_BOX_CONFIG_FILE);
+			ENABLE_ACHIEVEMENT_BOX = achievementBoxConfig.getBoolean("EnabledAchievementBox", true);
+			ACHIEVEMENT_BOX_POINTS_FOR_REWARD = achievementBoxConfig.getInt("PointsForReward", 1000);
+			ENABLE_ACHIEVEMENT_PVP = achievementBoxConfig.getBoolean("EnabledAchievementPvP", true);
+			ACHIEVEMENT_BOX_PVP_POINTS_FOR_REWARD = achievementBoxConfig.getInt("PointsForPvpReward", 5);
 			
 			// Gracia Seeds
 			final PropertiesParser graciaSeedsConfig = new PropertiesParser(GRACIASEEDS_CONFIG_FILE);

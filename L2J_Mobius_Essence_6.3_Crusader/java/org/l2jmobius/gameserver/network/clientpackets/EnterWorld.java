@@ -123,6 +123,7 @@ import org.l2jmobius.gameserver.network.serverpackets.magiclamp.ExMagicLampExpIn
 import org.l2jmobius.gameserver.network.serverpackets.pledgedonation.ExPledgeContributionList;
 import org.l2jmobius.gameserver.network.serverpackets.randomcraft.ExCraftInfo;
 import org.l2jmobius.gameserver.network.serverpackets.settings.ExItemAnnounceSetting;
+import org.l2jmobius.gameserver.network.serverpackets.steadybox.ExSteadyBoxUiInit;
 import org.l2jmobius.gameserver.network.serverpackets.subjugation.ExSubjugationSidebar;
 import org.l2jmobius.gameserver.util.BuilderUtil;
 
@@ -686,6 +687,11 @@ public class EnterWorld implements ClientPacket
 		if (Config.ENABLE_HUNT_PASS)
 		{
 			player.sendPacket(new HuntPassSimpleInfo(player));
+		}
+		
+		if (Config.ENABLE_ACHIEVEMENT_BOX)
+		{
+			player.sendPacket(new ExSteadyBoxUiInit(player));
 		}
 		
 		for (int category = 1; category <= 7; category++)

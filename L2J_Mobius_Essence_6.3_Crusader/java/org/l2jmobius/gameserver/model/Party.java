@@ -895,6 +895,12 @@ public class Party extends AbstractPlayerGroup
 					{
 						huntpass.addPassPoint(exp);
 					}
+					
+					final AchievementBox box = member.getAchievementBox();
+					if (box != null)
+					{
+						member.getAchievementBox().addPoints(1);
+					}
 				}
 			}
 			else
