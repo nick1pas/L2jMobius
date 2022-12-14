@@ -242,7 +242,7 @@ public enum ClientPackets
 	public ClientPacket newPacket()
 	{
 		final ClientPacket packet = _packetSupplier.get();
-		if (Config.DEBUG_INCOMING_PACKETS)
+		if (Config.DEBUG_CLIENT_PACKETS)
 		{
 			if (packet != null)
 			{
