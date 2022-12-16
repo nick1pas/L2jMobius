@@ -42,7 +42,6 @@ public class ExResultSetMultiEnchantItemList extends ServerPacket
 		{
 			return;
 		}
-		_player.getRequest(EnchantItemRequest.class);
 		
 		ServerPackets.EX_RES_SET_MULTI_ENCHANT_ITEM_LIST.writeId(this);
 		writeInt(_resultType);
