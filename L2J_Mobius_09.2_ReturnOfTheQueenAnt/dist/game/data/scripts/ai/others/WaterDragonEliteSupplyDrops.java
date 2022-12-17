@@ -21,6 +21,7 @@ import java.sql.PreparedStatement;
 import java.util.Calendar;
 import java.util.logging.Level;
 
+import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Npc;
@@ -117,7 +118,7 @@ public class WaterDragonEliteSupplyDrops extends AbstractNpcAI
 	public String onKill(Npc npc, Player killer, boolean isSummon)
 	{
 		final Player player = getRandomPartyMember(killer);
-		if ((player.getLevel() >= PLAYER_LEVEL) && (getRandom(100) < CHANCE))
+		if ((player.getLevel() >= PLAYER_LEVEL) && (getRandom(100) < CHANCE) && ((player.getParty() == null) || ((player.getParty() != null) && player.isInsideRadius3D(npc, Config.ALT_PARTY_RANGE))))
 		{
 			final int count = player.getVariables().getInt(WATER_DRAGON_ELITE_SUPPLIES_COUNT_VAR, 0);
 			if (count < DROP_DAILY)
