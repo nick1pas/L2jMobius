@@ -212,7 +212,7 @@ public class ThroneOfHeroesTauti extends AbstractInstance
 				if (!killer.isGM())
 				{
 					// Set clan variable
-					killer.getClan().getVariables().set("TOH_DONE", System.currentTimeMillis());
+					killer.getClan().getVariables().set("TOH_TAUTI_DONE", System.currentTimeMillis());
 					killer.getClan().getVariables().storeMe();
 				}
 			}

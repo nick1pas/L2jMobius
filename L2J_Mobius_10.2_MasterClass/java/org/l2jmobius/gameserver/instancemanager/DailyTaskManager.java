@@ -71,6 +71,13 @@ public class DailyTaskManager
 		RESET_ITEMS.add(47387); // Balthus Knights Supply Items
 		RESET_ITEMS.add(60011); // Festival Fairy's Good Luck Bag
 	}
+	public static final Set<String> RESET_CLAN_INSTANCES = new HashSet<>();
+	static
+	{
+		RESET_CLAN_INSTANCES.add("TOH_GOLDBERG_DONE"); // Goldberg Instance
+		RESET_CLAN_INSTANCES.add("TOH_MARYREED_DONE"); // MaryReed Instance
+		RESET_CLAN_INSTANCES.add("TOH_TAUTI_DONE"); // Tauti Instance
+	}
 	
 	protected DailyTaskManager()
 	{
@@ -118,6 +125,7 @@ public class DailyTaskManager
 			resetDailyMissionRewards();
 			resetTimedHuntingZonesWeekly();
 			resetVitalityWeekly();
+			resetThroneOfHeroesWeekly();
 		}
 		else // All days, except Wednesday.
 		{
@@ -133,7 +141,6 @@ public class DailyTaskManager
 		resetHomunculusResetPoints();
 		resetRecommends();
 		resetTimedHuntingZones();
-		resetThroneOfHeroes();
 		resetTrainingCamp();
 		resetWorldChatPoints();
 	}
@@ -478,15 +485,18 @@ public class DailyTaskManager
 		LOGGER.info("Clan contributions has been resetted.");
 	}
 	
-	private void resetThroneOfHeroes()
+	private void resetThroneOfHeroesWeekly()
 	{
 		// Update data for offline players.
 		try (Connection con = DatabaseFactory.getConnection())
 		{
-			try (PreparedStatement ps = con.prepareStatement("DELETE FROM clan_variables WHERE var=?"))
+			for (String clanInstances : RESET_CLAN_INSTANCES)
 			{
-				ps.setString(1, "TOH_DONE");
-				ps.execute();
+				try (PreparedStatement ps = con.prepareStatement("DELETE FROM clan_variables WHERE var=?"))
+				{
+					ps.setString(1, clanInstances);
+					ps.execute();
+				}
 			}
 		}
 		catch (Exception e)
@@ -506,7 +516,9 @@ public class DailyTaskManager
 		}
 		for (Clan clan : clans)
 		{
-			clan.getVariables().remove("TOH_DONE");
+			clan.getVariables().remove("TOH_GOLDBERG_DONE");
+			clan.getVariables().remove("TOH_MARYREED_DONE");
+			clan.getVariables().remove("TOH_TAUTI_DONE");
 			clan.getVariables().storeMe();
 		}
 		

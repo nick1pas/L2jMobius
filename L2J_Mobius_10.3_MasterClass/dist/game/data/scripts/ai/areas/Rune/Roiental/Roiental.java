@@ -67,7 +67,7 @@ public class Roiental extends AbstractNpcAI
 			{
 				htmltext = "Roiental-03a.html";
 			}
-			else if (player.getClan().getVariables().hasVariable("TOH_DONE"))
+			else if (player.getClan().getVariables().hasVariable("TOH_GOLDBERG_DONE"))
 			{
 				htmltext = "Roiental-AlreadyDone.html";
 			}
@@ -94,7 +94,7 @@ public class Roiental extends AbstractNpcAI
 			{
 				htmltext = "Roiental-03b.html";
 			}
-			else if (player.getClan().getVariables().hasVariable("TOH_DONE"))
+			else if (player.getClan().getVariables().hasVariable("TOH_MARYREED_DONE"))
 			{
 				htmltext = "Roiental-AlreadyDone.html";
 			}
@@ -121,7 +121,7 @@ public class Roiental extends AbstractNpcAI
 			{
 				htmltext = "Roiental-03c.html";
 			}
-			else if (player.getClan().getVariables().hasVariable("TOH_DONE"))
+			else if (player.getClan().getVariables().hasVariable("TOH_TAUTI_DONE"))
 			{
 				htmltext = "Roiental-AlreadyDone.html";
 			}

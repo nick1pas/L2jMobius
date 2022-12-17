@@ -244,7 +244,7 @@ public class ThroneOfHeroesMaryReed extends AbstractInstance
 				if (!killer.isGM())
 				{
 					// Set clan variable
-					killer.getClan().getVariables().set("TOH_DONE", System.currentTimeMillis());
+					killer.getClan().getVariables().set("TOH_MARYREED_DONE", System.currentTimeMillis());
 					killer.getClan().getVariables().storeMe();
 				}
 			}

@@ -228,7 +228,7 @@ public class ThroneOfHeroesGoldberg extends AbstractInstance
 				if (!killer.isGM())
 				{
 					// Set clan variable
-					killer.getClan().getVariables().set("TOH_DONE", System.currentTimeMillis());
+					killer.getClan().getVariables().set("TOH_GOLDBERG_DONE", System.currentTimeMillis());
 					killer.getClan().getVariables().storeMe();
 				}
 			}
