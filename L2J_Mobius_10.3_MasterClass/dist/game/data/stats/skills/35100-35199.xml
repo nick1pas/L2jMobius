@@ -2520,7 +2520,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="Untargetable" />
 			<effect name="ResistDispelByCategory">
 				<amount>-100</amount>
 				<slot>ALL</slot>
@@ -2570,7 +2569,6 @@
 					<value level="22">55</value>
 				</power>
 			</effect>
-			<effect name="TargetCancel" />
 			<effect name="Untargetable" />
 			<effect name="DispelByCategory">
 				<slot>DEBUFF</slot>
