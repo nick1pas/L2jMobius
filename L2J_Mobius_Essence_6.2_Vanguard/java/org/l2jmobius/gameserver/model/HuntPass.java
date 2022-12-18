@@ -28,6 +28,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
+import org.l2jmobius.gameserver.data.xml.HuntPassData;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
@@ -39,6 +40,7 @@ import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInf
 public class HuntPass
 {
 	private static final Logger LOGGER = Logger.getLogger(HuntPass.class.getName());
+	
 	private static final String INSERT_SEASONPASS = "REPLACE INTO huntpass (`account_name`, `current_step`, `points`, `reward_step`, `is_paytowin`, `premium_reward_step`, `sayha_points_available`, `sayha_points_used`, `unclaimed_reward`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	private static final String RESTORE_SEASONPASS = "SELECT * FROM huntpass WHERE account_name=?";
 	
@@ -198,12 +200,10 @@ public class HuntPass
 	
 	public void inTimeHuntingZone(int points) // TODO: points is unused.
 	{
-		final boolean Inhuntingzone = _user.isInTimedHuntingZone(_user.getX(), _user.getY());
-		if (Inhuntingzone)
+		if (_user.isInTimedHuntingZone())
 		{
 			_points += 1;
 		}
-		return;
 	}
 	
 	public void setPoints(int points)
@@ -230,12 +230,10 @@ public class HuntPass
 	{
 		if (_isPremium && (_premiumRewardStep <= _rewardStep))
 		{
-			_rewardStep += 0;
+			return;
 		}
-		else
-		{
-			_rewardStep = step;
-		}
+		
+		_rewardStep = Math.min(step, HuntPassData.getInstance().getRewardsCount() - 1);
 	}
 	
 	public boolean isPremium()
@@ -255,7 +253,7 @@ public class HuntPass
 	
 	public void setPremiumRewardStep(int step)
 	{
-		_premiumRewardStep = step;
+		_premiumRewardStep = Math.min(step, HuntPassData.getInstance().getPremiumRewardsCount() - 1);
 	}
 	
 	public boolean rewardAlert()
