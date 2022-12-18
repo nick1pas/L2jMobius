@@ -41,6 +41,7 @@ import org.l2jmobius.gameserver.model.itemcontainer.PlayerInventory;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.ExMultiSellResult;
 import org.l2jmobius.gameserver.network.serverpackets.ExPCCafePointInfo;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
@@ -545,6 +546,7 @@ public class MultiSellChoose implements ClientPacket
 					
 					// Inventory update.
 					iu.addItem(addedItem);
+					player.sendPacket(new ExMultiSellResult(1, 0, (int) (addedItem.getCount())));
 				}
 			}
 			
