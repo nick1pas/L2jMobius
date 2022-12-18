@@ -106,6 +106,11 @@ public class OlympiadDailyMissionHandler extends AbstractDailyMissionHandler
 	
 	private boolean checkRequiredMission(Player player)
 	{
+		if (player == null)
+		{
+			return false;
+		}
+		
 		final DailyMissionPlayerEntry missionEntry = getPlayerEntry(player.getObjectId(), false);
 		return (missionEntry != null) && (_requiredMissionCompleteId != 0) && (missionEntry.getRewardId() == _requiredMissionCompleteId) && (getStatus(player) == DailyMissionStatus.COMPLETED.getClientId());
 	}
