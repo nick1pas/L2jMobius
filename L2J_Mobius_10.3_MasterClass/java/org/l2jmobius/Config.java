@@ -511,6 +511,8 @@ public class Config
 	public static boolean ALLOW_WEAR;
 	public static int WEAR_DELAY;
 	public static int WEAR_PRICE;
+	public static int STORE_REVIEW_LIMIT;
+	public static int STORE_REVIEW_CACHE_TIME;
 	public static int INSTANCE_FINISH_TIME;
 	public static boolean RESTORE_PLAYER_INSTANCE;
 	public static int EJECT_DEAD_PLAYER_TIME;
@@ -2187,6 +2189,8 @@ public class Config
 			ALLOW_WEAR = generalConfig.getBoolean("AllowWear", true);
 			WEAR_DELAY = generalConfig.getInt("WearDelay", 5);
 			WEAR_PRICE = generalConfig.getInt("WearPrice", 10);
+			STORE_REVIEW_LIMIT = generalConfig.getInt("PrivateStoreReviewLimit", 30);
+			STORE_REVIEW_CACHE_TIME = generalConfig.getInt("PrivateStoreReviewCacheTime", 5000);
 			INSTANCE_FINISH_TIME = generalConfig.getInt("DefaultFinishTime", 5);
 			RESTORE_PLAYER_INSTANCE = generalConfig.getBoolean("RestorePlayerInstance", false);
 			EJECT_DEAD_PLAYER_TIME = generalConfig.getInt("EjectDeadPlayerTime", 1);

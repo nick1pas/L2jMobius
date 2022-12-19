@@ -118,6 +118,7 @@ public class DailyTaskManager
 			resetMonsterArenaWeekly();
 			resetTimedHuntingZonesWeekly();
 			resetVitalityWeekly();
+			resetPrivateStoreHistory();
 		}
 		else // All days, except Wednesday.
 		{
@@ -705,6 +706,20 @@ public class DailyTaskManager
 		}
 		
 		LOGGER.info("Daily payment resurrection count for player has been resetted.");
+	}
+	
+	public void resetPrivateStoreHistory()
+	{
+		try
+		{
+			PrivateStoreHistoryManager.getInstance().reset();
+		}
+		catch (Exception e)
+		{
+			LOGGER.log(Level.SEVERE, getClass().getSimpleName() + ": Could not reset private store history! " + e);
+		}
+		
+		LOGGER.info("Private store history has been resetted.");
 	}
 	
 	private void resetDailyHennaPattern()

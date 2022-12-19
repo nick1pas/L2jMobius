@@ -155,6 +155,7 @@ import org.l2jmobius.gameserver.instancemanager.PcCafePointsManager;
 import org.l2jmobius.gameserver.instancemanager.PetitionManager;
 import org.l2jmobius.gameserver.instancemanager.PrecautionaryRestartManager;
 import org.l2jmobius.gameserver.instancemanager.PremiumManager;
+import org.l2jmobius.gameserver.instancemanager.PrivateStoreHistoryManager;
 import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
 import org.l2jmobius.gameserver.instancemanager.PurgeRankingManager;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
@@ -317,6 +318,7 @@ public class GameServer
 		AppearanceItemData.getInstance();
 		ItemCommissionManager.getInstance();
 		WorldExchangeManager.getInstance();
+		PrivateStoreHistoryManager.getInstance().restore();
 		LuckyGameData.getInstance();
 		AttendanceRewardData.getInstance();
 		MagicLampData.getInstance();

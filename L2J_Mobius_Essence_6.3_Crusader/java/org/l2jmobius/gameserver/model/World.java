@@ -86,6 +86,8 @@ public class World
 	private static final Map<Integer, Player> _allGoodPlayers = new ConcurrentHashMap<>();
 	/** Map containing all the Evil players in game. */
 	private static final Map<Integer, Player> _allEvilPlayers = new ConcurrentHashMap<>();
+	/** Map containing all the players in Store Buy or Sell mode. */
+	private static final Map<Integer, Player> _allStoreModeBuySellPlayers = new ConcurrentHashMap<>();
 	/** Map containing all visible objects. */
 	private static final Map<Integer, WorldObject> _allObjects = new ConcurrentHashMap<>();
 	/** Map with the pets instances and their owner ID. */
@@ -95,6 +97,8 @@ public class World
 	private static final AtomicInteger _memberInPartyNumber = new AtomicInteger();
 	
 	private static final WorldRegion[][] _worldRegions = new WorldRegion[REGIONS_X + 1][REGIONS_Y + 1];
+	
+	private static long _nextPrivateStoreUpdate = 0;
 	
 	/** Constructor of World. */
 	protected World()
@@ -277,6 +281,18 @@ public class World
 	public Pet getPet(int ownerId)
 	{
 		return _petsInstance.get(ownerId);
+	}
+	
+	public synchronized Collection<Player> getSellingOrBuyingPlayers()
+	{
+		final long currentTime = System.currentTimeMillis();
+		if (currentTime > _nextPrivateStoreUpdate)
+		{
+			_nextPrivateStoreUpdate = currentTime + Config.STORE_REVIEW_CACHE_TIME;
+			_allStoreModeBuySellPlayers.clear();
+			_allPlayers.values().stream().filter(Player::isInStoreSellOrBuyMode).forEach(player -> _allStoreModeBuySellPlayers.put(player.getObjectId(), player));
+		}
+		return _allStoreModeBuySellPlayers.values();
 	}
 	
 	/**

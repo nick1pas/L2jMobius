@@ -148,6 +148,7 @@ import org.l2jmobius.gameserver.instancemanager.PcCafePointsManager;
 import org.l2jmobius.gameserver.instancemanager.PetitionManager;
 import org.l2jmobius.gameserver.instancemanager.PrecautionaryRestartManager;
 import org.l2jmobius.gameserver.instancemanager.PremiumManager;
+import org.l2jmobius.gameserver.instancemanager.PrivateStoreHistoryManager;
 import org.l2jmobius.gameserver.instancemanager.PunishmentManager;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
 import org.l2jmobius.gameserver.instancemanager.RankManager;
@@ -294,6 +295,7 @@ public class GameServer
 		AlchemyData.getInstance();
 		ItemCommissionManager.getInstance();
 		WorldExchangeManager.getInstance();
+		PrivateStoreHistoryManager.getInstance().restore();
 		LuckyGameData.getInstance();
 		AttendanceRewardData.getInstance();
 		

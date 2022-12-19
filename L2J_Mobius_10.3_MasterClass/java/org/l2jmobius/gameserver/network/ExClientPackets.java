@@ -178,6 +178,8 @@ import org.l2jmobius.gameserver.network.clientpackets.shuttle.CannotMoveAnymoreI
 import org.l2jmobius.gameserver.network.clientpackets.shuttle.MoveToLocationInShuttle;
 import org.l2jmobius.gameserver.network.clientpackets.shuttle.RequestShuttleGetOff;
 import org.l2jmobius.gameserver.network.clientpackets.shuttle.RequestShuttleGetOn;
+import org.l2jmobius.gameserver.network.clientpackets.storereview.ExRequestPrivateStoreSearchList;
+import org.l2jmobius.gameserver.network.clientpackets.storereview.ExRequestPrivateStoreSearchStatistics;
 import org.l2jmobius.gameserver.network.clientpackets.teleports.ExRequestTeleport;
 import org.l2jmobius.gameserver.network.clientpackets.teleports.ExRequestTeleportFavoriteList;
 import org.l2jmobius.gameserver.network.clientpackets.teleports.ExRequestTeleportFavoritesAddDel;
@@ -735,8 +737,8 @@ public enum ExClientPackets
 	EX_WORLDCASTLEWAR_PLEDGE_MERCENARY_MEMBER_JOIN(0x211, null, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_TELEPORT(0x212, null, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_OBSERVER_START(0x213, null, ConnectionState.IN_GAME),
-	EX_PRIVATE_STORE_SEARCH_LIST(0x214, null, ConnectionState.IN_GAME),
-	EX_PRIVATE_STORE_SEARCH_STATISTICS(0x215, null, ConnectionState.IN_GAME),
+	EX_PRIVATE_STORE_SEARCH_LIST(0x214, ExRequestPrivateStoreSearchList::new, ConnectionState.IN_GAME),
+	EX_PRIVATE_STORE_SEARCH_STATISTICS(0x215, ExRequestPrivateStoreSearchStatistics::new, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_HOST_CASTLE_SIEGE_RANKING_INFO(0x216, null, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_CASTLE_SIEGE_RANKING_INFO(0x217, null, ConnectionState.IN_GAME),
 	EX_WORLDCASTLEWAR_SIEGE_MAINBATTLE_HUD_INFO(0x218, null, ConnectionState.IN_GAME),

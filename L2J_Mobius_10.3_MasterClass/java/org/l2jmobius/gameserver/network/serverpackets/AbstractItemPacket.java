@@ -308,4 +308,61 @@ public abstract class AbstractItemPacket extends AbstractMaskPacket<ItemListType
 			writeShort(0);
 		}
 	}
+	
+	protected int calculatePacketSize(ItemInfo item)
+	{
+		final int mask = calculateMask(item);
+		int size = 0;
+		size += 2; // writeShort(mask);
+		size += 4; // writeInt(item.getObjectId()); // ObjectId
+		size += 4; // writeInt(item.getItem().getDisplayId()); // ItemId
+		size += 1; // writeByte(item.getItem().isQuestItem() || (item.getEquipped() == 1) ? 0xFF : item.getLocation()); // T1
+		size += 8; // writeLong(item.getCount()); // Quantity
+		size += 1; // writeByte(item.getItem().getType2()); // Item Type 2 : 00-weapon, 01-shield/armor, 02-ring/earring/necklace, 03-questitem, 04-adena, 05-item
+		size += 1; // writeByte(item.getCustomType1()); // Filler (always 0)
+		size += 2; // writeShort(item.getEquipped()); // Equipped : 00-No, 01-yes
+		size += 8; // writeLong(item.getItem().getBodyPart()); // Slot : 0006-lr.ear, 0008-neck, 0030-lr.finger, 0040-head, 0100-l.hand, 0200-gloves, 0400-chest, 0800-pants, 1000-feet, 4000-r.hand, 8000-r.hand
+		size += 2; // writeShort(item.getEnchantLevel()); // Enchant level (pet level shown in control item)
+		size += 4; // writeInt(item.getMana());
+		size += 1; // writeByte(0); // 270 protocol
+		size += 4; // writeInt(item.getTime());
+		size += 1; // writeByte(item.isAvailable()); // GOD Item enabled = 1 disabled (red) = 0
+		size += 2; // writeShort(0); // 140 - locked
+		
+		if (containsMask(mask, ItemListType.AUGMENT_BONUS))
+		{
+			size += 8;
+		}
+		if (containsMask(mask, ItemListType.ELEMENTAL_ATTRIBUTE))
+		{
+			size += 16;
+		}
+		// 362 - Removed
+		// if (containsMask(mask, ItemListType.ENCHANT_EFFECT))
+		// {
+		// size += (item.getEnchantOptions().length * 4);
+		// }
+		if (containsMask(mask, ItemListType.VISUAL_ID))
+		{
+			size += 4;
+		}
+		if (containsMask(mask, ItemListType.SOUL_CRYSTAL))
+		{
+			size += 1;
+			size += (item.getSoulCrystalOptions().size() * 4);
+			size += 1;
+			size += (item.getSoulCrystalSpecialOptions().size() * 4);
+		}
+		// TODO:
+		// if (containsMask(mask, ItemListType.REUSE_DELAY))
+		// {
+		// size += 4;
+		// }
+		if (containsMask(mask, ItemListType.BLESSED))
+		{
+			size += 1;
+		}
+		
+		return size;
+	}
 }

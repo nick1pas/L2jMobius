@@ -142,14 +142,16 @@ Frost Lord: https://eu.4game.com/patchnotes/lineage2essence/329/
 
 Battle Chronicle: https://eu.4game.com/patchnotes/lineage2essence/353/
 -New henna pattern potential system
+-Private shop review
 
 Vanguard: https://eu.4game.com/patchnotes/lineage2essence/387/
 -Vanguard creation support
 -New enchant system
+-World exchange system
 -Chest and box auto-use
 
 Crusader: https://eu.4game.com/patchnotes/lineage2essence/416/
--Login support
+-New character creation templates
 
 Customs:
 -Newbie Helper NPC location info

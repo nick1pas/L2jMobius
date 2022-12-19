@@ -1408,6 +1408,11 @@ public class Player extends Playable
 		return _privateStoreType != PrivateStoreType.NONE;
 	}
 	
+	public boolean isInStoreSellOrBuyMode()
+	{
+		return (_privateStoreType == PrivateStoreType.BUY) || (_privateStoreType == PrivateStoreType.SELL) || (_privateStoreType == PrivateStoreType.PACKAGE_SELL);
+	}
+	
 	public boolean isCrafting()
 	{
 		return _isCrafting;

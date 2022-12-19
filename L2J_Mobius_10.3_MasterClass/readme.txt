@@ -133,6 +133,9 @@ Master Class Chapter 2: https://eu.4game.com/patchnotes/lineage2/374/
 
 Master Class Chapter 3: https://eu.4game.com/patchnotes/lineage2/417/
 -Tales of Hero system
+-Private shop review
+-World exchange system
+-Chest and box auto-use
 
 Events:
 -Birth of Draco
