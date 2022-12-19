@@ -218,7 +218,7 @@ public class HuntPass
 	
 	public void setCurrentStep(int step)
 	{
-		_currentStep = step;
+		_currentStep = Math.max(0, Math.min(step, HuntPassData.getInstance().getRewardsCount() - 1));
 	}
 	
 	public int getRewardStep()
@@ -233,7 +233,7 @@ public class HuntPass
 			return;
 		}
 		
-		_rewardStep = Math.min(step, HuntPassData.getInstance().getRewardsCount() - 1);
+		_rewardStep = Math.max(0, Math.min(step, HuntPassData.getInstance().getRewardsCount() - 1));
 	}
 	
 	public boolean isPremium()
@@ -253,7 +253,7 @@ public class HuntPass
 	
 	public void setPremiumRewardStep(int step)
 	{
-		_premiumRewardStep = Math.min(step, HuntPassData.getInstance().getPremiumRewardsCount() - 1);
+		_premiumRewardStep = Math.max(0, Math.min(step, HuntPassData.getInstance().getPremiumRewardsCount() - 1));
 	}
 	
 	public boolean rewardAlert()
