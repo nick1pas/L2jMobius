@@ -55,7 +55,6 @@ import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.ai.PlayerAI;
 import org.l2jmobius.gameserver.ai.SummonAI;
 import org.l2jmobius.gameserver.cache.RelationCache;
-import org.l2jmobius.gameserver.cache.WarehouseCacheManager;
 import org.l2jmobius.gameserver.communitybbs.BB.Forum;
 import org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager;
 import org.l2jmobius.gameserver.data.ItemTable;
@@ -591,7 +590,7 @@ public class Player extends Playable
 	
 	private final PlayerInventory _inventory = new PlayerInventory(this);
 	private final PlayerFreight _freight = new PlayerFreight(this);
-	private PlayerWarehouse _warehouse;
+	private final PlayerWarehouse _warehouse = new PlayerWarehouse(this);
 	private PlayerRefund _refund;
 	private PrivateStoreType _privateStoreType = PrivateStoreType.NONE;
 	private TradeList _activeTradeList;
@@ -3004,36 +3003,15 @@ public class Player extends Playable
 	}
 	
 	/**
-	 * @return the PcWarehouse object of the Player.
+	 * @return the PlayerWarehouse object of the Player.
 	 */
 	public PlayerWarehouse getWarehouse()
 	{
-		if (_warehouse == null)
-		{
-			_warehouse = new PlayerWarehouse(this);
-			_warehouse.restore();
-		}
-		if (Config.WAREHOUSE_CACHE)
-		{
-			WarehouseCacheManager.getInstance().addCacheTask(this);
-		}
 		return _warehouse;
 	}
 	
 	/**
-	 * Free memory used by Warehouse
-	 */
-	public void clearWarehouse()
-	{
-		if (_warehouse != null)
-		{
-			_warehouse.deleteMe();
-		}
-		_warehouse = null;
-	}
-	
-	/**
-	 * @return the PcFreight object of the Player.
+	 * @return the PlayerFreight object of the Player.
 	 */
 	public PlayerFreight getFreight()
 	{
@@ -6825,11 +6803,8 @@ public class Player extends Playable
 			
 			// Retrieve from the database all items of this Player and add them to _inventory
 			player.getInventory().restore();
+			player.getWarehouse().restore();
 			player.getFreight().restore();
-			if (!Config.WAREHOUSE_CACHE)
-			{
-				player.getWarehouse();
-			}
 			
 			player.restoreItemReuse();
 			
@@ -11439,15 +11414,11 @@ public class Player extends Playable
 		// Update database with items in its warehouse and remove them from the world
 		try
 		{
-			clearWarehouse();
+			getWarehouse().deleteMe();
 		}
 		catch (Exception e)
 		{
 			LOGGER.log(Level.SEVERE, "deleteMe()", e);
-		}
-		if (Config.WAREHOUSE_CACHE)
-		{
-			WarehouseCacheManager.getInstance().remCacheTask(this);
 		}
 		
 		try

@@ -42,7 +42,6 @@ import org.l2jmobius.gameserver.ai.CtrlEvent;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.ai.PlayerAI;
 import org.l2jmobius.gameserver.cache.HtmCache;
-import org.l2jmobius.gameserver.cache.WarehouseCacheManager;
 import org.l2jmobius.gameserver.communitybbs.BB.Forum;
 import org.l2jmobius.gameserver.communitybbs.Manager.ForumsBBSManager;
 import org.l2jmobius.gameserver.data.HeroSkillTable;
@@ -338,7 +337,7 @@ public class Player extends Playable
 	private long _lastRecomUpdate;
 	private final List<Integer> _recomChars = new ArrayList<>();
 	private final PlayerInventory _inventory = new PlayerInventory(this);
-	private PlayerWarehouse _warehouse;
+	private final PlayerWarehouse _warehouse = new PlayerWarehouse(this);
 	private final PlayerFreight _freight = new PlayerFreight(this);
 	private int _privatestore;
 	private TradeList _activeTradeList;
@@ -910,10 +909,7 @@ public class Player extends Playable
 		// Retrieve from the database all skills of this Player and add them to _skills
 		// Retrieve from the database all items of this Player and add them to _inventory
 		getInventory().restore();
-		if (!Config.WAREHOUSE_CACHE)
-		{
-			getWarehouse();
-		}
+		getWarehouse().restore();
 		getFreight().restore();
 		
 		_instanceLoginTime = System.currentTimeMillis();
@@ -3123,37 +3119,16 @@ public class Player extends Playable
 	}
 	
 	/**
-	 * Return the PcWarehouse object of the Player.
+	 * Return the PlayerWarehouse object of the Player.
 	 * @return the warehouse
 	 */
 	public PlayerWarehouse getWarehouse()
 	{
-		if (_warehouse == null)
-		{
-			_warehouse = new PlayerWarehouse(this);
-			_warehouse.restore();
-		}
-		if (Config.WAREHOUSE_CACHE)
-		{
-			WarehouseCacheManager.getInstance().addCacheTask(this);
-		}
 		return _warehouse;
 	}
 	
 	/**
-	 * Free memory used by Warehouse.
-	 */
-	public void clearWarehouse()
-	{
-		if (_warehouse != null)
-		{
-			_warehouse.deleteMe();
-		}
-		_warehouse = null;
-	}
-	
-	/**
-	 * Return the PcFreight object of the Player.
+	 * Return the PlayerFreight object of the Player.
 	 * @return the freight
 	 */
 	public PlayerFreight getFreight()
@@ -13003,16 +12978,11 @@ public class Player extends Playable
 		// Update database with items in its warehouse and remove them from the world
 		try
 		{
-			clearWarehouse();
+			getWarehouse().deleteMe();
 		}
 		catch (Throwable t)
 		{
 			LOGGER.warning("deleteMe()" + t);
-		}
-		
-		if (Config.WAREHOUSE_CACHE)
-		{
-			WarehouseCacheManager.getInstance().remCacheTask(this);
 		}
 		
 		// Update database with items in its freight and remove them from the world

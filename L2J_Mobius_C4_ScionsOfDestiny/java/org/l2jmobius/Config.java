@@ -155,8 +155,6 @@ public class Config
 	public static boolean ALLOW_DISCARDITEM;
 	public static boolean ALLOW_FREIGHT;
 	public static boolean ALLOW_WAREHOUSE;
-	public static boolean WAREHOUSE_CACHE;
-	public static int WAREHOUSE_CACHE_TIME;
 	public static boolean ALLOW_WEAR;
 	public static int WEAR_DELAY;
 	public static int WEAR_PRICE;
@@ -1453,8 +1451,6 @@ public class Config
 		PRECISE_DROP_CALCULATION = generalConfig.getBoolean("PreciseDropCalculation", true);
 		MULTIPLE_ITEM_DROP = generalConfig.getBoolean("MultipleItemDrop", true);
 		ALLOW_WAREHOUSE = generalConfig.getBoolean("AllowWarehouse", true);
-		WAREHOUSE_CACHE = generalConfig.getBoolean("WarehouseCache", false);
-		WAREHOUSE_CACHE_TIME = generalConfig.getInt("WarehouseCacheTime", 15);
 		ALLOW_FREIGHT = generalConfig.getBoolean("AllowFreight", true);
 		ALLOW_WEAR = generalConfig.getBoolean("AllowWear", false);
 		WEAR_DELAY = generalConfig.getInt("WearDelay", 5);
