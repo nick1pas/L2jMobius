@@ -544,7 +544,7 @@ public class BanditStrongholdSiege extends ClanHallSiege
 				cancel();
 				return;
 			}
-			schedule(remaining);
+			schedule(Math.max(0, remaining));
 		}
 	};
 	
