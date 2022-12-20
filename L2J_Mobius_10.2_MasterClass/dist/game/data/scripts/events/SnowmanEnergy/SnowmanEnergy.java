@@ -22,6 +22,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.logging.Level;
 
+import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.data.xml.SkillData;
@@ -213,7 +214,7 @@ public class SnowmanEnergy extends LongTimeEvent
 		24657, // Grandel
 		24658, // Black Grandel
 	};
-	// Items
+	// Item
 	private static final int CHRISTMAS_GIFT = 81927;
 	// Skill
 	private static final Skill SNOWMAN_ENERGY = SkillData.getInstance().getSkill(34028, 1);
@@ -342,11 +343,10 @@ public class SnowmanEnergy extends LongTimeEvent
 				final List<Player> members = party.getMembers();
 				for (Player member : members)
 				{
-					if (!member.isInsideRadius3D(npc, 2000))
+					if (member.isInsideRadius3D(npc, Config.ALT_PARTY_RANGE))
 					{
-						continue;
+						SkillCaster.triggerCast(member, member, SNOWMAN_ENERGY);
 					}
-					SkillCaster.triggerCast(member, member, SNOWMAN_ENERGY);
 				}
 			}
 			else
