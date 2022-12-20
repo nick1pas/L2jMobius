@@ -1349,14 +1349,126 @@
 															</xs:element>
 															<xs:element name="allowSkillAttack" type="xs:boolean" />
 															<xs:element name="allowNormalAttack" type="xs:boolean" />
-															<xs:element name="PHYSICAL_ATTACK" type="xs:unsignedByte" />
-															<xs:element name="PHYSICAL_DEFENCE" type="xs:unsignedByte" />
-															<xs:element name="MAGIC_ATTACK" type="xs:unsignedByte" />
-															<xs:element name="MAGICAL_DEFENCE" type="xs:unsignedByte" />
-															<xs:element name="MAX_HP" type="xs:unsignedByte" />
-															<xs:element name="MAX_MP" type="xs:unsignedByte" />
-															<xs:element name="PHYSICAL_ATTACK_SPEED" type="xs:unsignedByte" />
-															<xs:element name="MAGIC_ATTACK_SPEED" type="xs:unsignedByte" />
+															<xs:element name="PHYSICAL_ATTACK">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="PHYSICAL_DEFENCE">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="MAGIC_ATTACK">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="MAGICAL_DEFENCE">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="MAX_HP">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="MAX_MP">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="PHYSICAL_ATTACK_SPEED">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
+															<xs:element name="MAGIC_ATTACK_SPEED">
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
+																		<xs:element maxOccurs="unbounded" name="value">
+																			<xs:complexType>
+																				<xs:simpleContent>
+																					<xs:extension base="xs:int">
+																						<xs:attribute name="level" type="xs:unsignedByte" use="required" />
+																					</xs:extension>
+																				</xs:simpleContent>
+																			</xs:complexType>
+																		</xs:element>
+																	</xs:sequence>
+																</xs:complexType>
+															</xs:element>
 															<xs:element name="pDefMod">
 																<xs:complexType mixed="true">
 																	<xs:sequence minOccurs="0">

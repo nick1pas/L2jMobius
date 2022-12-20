@@ -906,23 +906,25 @@
 		<effects>
 			<effect name="PhysicalAttack">
 				<power>
-					<value level="1">6459</value>
-					<value level="2">7443</value>
-					<value level="3">7800</value>
-					<value level="4">8200</value>
-					<value level="5">8560</value>
-					<value level="6">8870</value>
-					<value level="7">9250</value>
-					<value level="8">9560</value>
-					<value level="9">9980</value>
-					<value level="10">10500</value>
-					<value level="11">11000</value>
-					<value level="12">12000</value>
-					<value level="13">12900</value>
-					<value level="14">14000</value>
+					<value level="1">1046</value>
+					<value level="2">1230</value>
+					<value level="3">1425</value>
+					<value level="4">1626</value>
+					<value level="5">1727</value>
+					<value level="6">1827</value>
+					<value level="7">1925</value>
+					<value level="8">2020</value>
+					<value level="9">2067</value>
+					<value level="10">2112</value>
+					<value level="11">6459</value>
+					<value level="12">6593</value>
+					<value level="13">7004</value>
+					<value level="14">7443</value>
 				</power>
 			</effect>
-			<effect name="BlockActions" />
+			<effect name="BlockActions">
+				<allowedSkills>10279;10517;11264;11093;1904;1912;13314;13542;30010;30018;30516;461;35016;35045</allowedSkills>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="4709" toLevel="14" name="Cursed Blow">
@@ -986,20 +988,20 @@
 		<effects>
 			<effect name="FatalBlow">
 				<power>
-					<value level="1">8743</value>
-					<value level="2">9283</value>
-					<value level="3">9800</value>
-					<value level="4">10200</value>
-					<value level="5">10800</value>
-					<value level="6">11500</value>
-					<value level="7">12100</value>
-					<value level="8">12800</value>
-					<value level="9">13400</value>
-					<value level="10">14000</value>
-					<value level="11">14800</value>
-					<value level="12">15500</value>
-					<value level="13">16200</value>
-					<value level="14">16900</value>
+					<value level="1">4181</value>
+					<value level="2">4920</value>
+					<value level="3">5700</value>
+					<value level="4">6503</value>
+					<value level="5">6906</value>
+					<value level="6">7305</value>
+					<value level="7">7698</value>
+					<value level="8">8079</value>
+					<value level="9">8265</value>
+					<value level="10">8447</value>
+					<value level="11">8743</value>
+					<value level="12">8918</value>
+					<value level="13">9101</value>
+					<value level="14">9283</value>
 				</power>
 				<criticalChance>10</criticalChance>
 				<chanceBoost>200</chanceBoost>

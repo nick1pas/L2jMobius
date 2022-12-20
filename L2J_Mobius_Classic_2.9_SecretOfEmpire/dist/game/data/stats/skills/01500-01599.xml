@@ -3479,14 +3479,46 @@
 		</conditions>
 		<effects>
 			<effect name="ServitorShare">
-				<PHYSICAL_ATTACK>30</PHYSICAL_ATTACK>
-				<PHYSICAL_DEFENCE>30</PHYSICAL_DEFENCE>
-				<MAGIC_ATTACK>10</MAGIC_ATTACK>
-				<MAGICAL_DEFENCE>10</MAGICAL_DEFENCE>
-				<MAX_HP>10</MAX_HP>
-				<MAX_MP>10</MAX_MP>
-				<PHYSICAL_ATTACK_SPEED>10</PHYSICAL_ATTACK_SPEED>
-				<MAGIC_ATTACK_SPEED>3</MAGIC_ATTACK_SPEED>
+				<PHYSICAL_ATTACK>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</PHYSICAL_ATTACK>
+				<PHYSICAL_DEFENCE>
+					<value level="1">30</value>
+					<value level="2">40</value>
+					<value level="3">50</value>
+				</PHYSICAL_DEFENCE>
+				<MAGIC_ATTACK>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+				</MAGIC_ATTACK>
+				<MAGICAL_DEFENCE>
+					<value level="1">15</value>
+					<value level="2">20</value>
+					<value level="3">25</value>
+				</MAGICAL_DEFENCE>
+				<MAX_HP>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+				</MAX_HP>
+				<MAX_MP>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+				</MAX_MP>
+				<PHYSICAL_ATTACK_SPEED>
+					<value level="1">10</value>
+					<value level="2">15</value>
+					<value level="3">20</value>
+				</PHYSICAL_ATTACK_SPEED>
+				<MAGIC_ATTACK_SPEED>
+					<value level="1">3</value>
+					<value level="2">5</value>
+					<value level="3">10</value>
+				</MAGIC_ATTACK_SPEED>
 			</effect>
 		</effects>
 	</skill>
