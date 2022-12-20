@@ -246,8 +246,12 @@ public class LongTimeEvent extends Quest
 										final int xPos = Integer.parseInt(d.getAttributes().getNamedItem("x").getNodeValue());
 										final int yPos = Integer.parseInt(d.getAttributes().getNamedItem("y").getNodeValue());
 										final int zPos = Integer.parseInt(d.getAttributes().getNamedItem("z").getNodeValue());
-										final int heading = d.getAttributes().getNamedItem("heading").getNodeValue() != null ? Integer.parseInt(d.getAttributes().getNamedItem("heading").getNodeValue()) : -1;
-										final Duration respawnTime = TimeUtil.parseDuration(d.getAttributes().getNamedItem("respawnTime").getNodeValue() != null ? d.getAttributes().getNamedItem("respawnTime").getNodeValue() : "0sec");
+										final Node headingNode = d.getAttributes().getNamedItem("heading");
+										final String headingValue = headingNode == null ? null : headingNode.getNodeValue();
+										final int heading = headingValue != null ? Integer.parseInt(headingValue) : 0;
+										final Node respawnTimeNode = d.getAttributes().getNamedItem("respawnTime");
+										final String respawnTimeValue = respawnTimeNode == null ? null : respawnTimeNode.getNodeValue();
+										final Duration respawnTime = TimeUtil.parseDuration(respawnTimeValue != null ? respawnTimeValue : "0sec");
 										
 										if (NpcData.getInstance().getTemplate(npcId) == null)
 										{
