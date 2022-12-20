@@ -460,7 +460,21 @@
 	<skill id="34027" toLevel="1" name="Night in Neutral Zone">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>600</abnormalTime>
+		<effectPoint>100</effectPoint>
+		<isMagic>1</isMagic>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="VitalityPointsRate">
+				<amount>-10</amount>
+			</effect>
+			<effect name="VitalityExpRate">
+				<amount>10</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="34028" toLevel="1" name="Snowman Energy">
 		<!-- AUTO GENERATED SKILL TODO: FIX IT -->

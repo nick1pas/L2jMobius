@@ -389,14 +389,61 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="2" />
+		<set name="extractableCountMax" val="2" />
+		<capsuled_items>
+			<item id="81928" min="1" max="1" chance="100" /> <!-- Snowman's Ice Candy -->
+			<item id="3481" min="2" max="5" chance="30" /> <!-- Gold Dragon -->
+			<item id="24146" min="1" max="1" chance="15" /> <!-- Augment box -->
+			<item id="80817" min="1" max="1" chance="12.5" /> <!-- Emperor's Special Cocktail -->
+			<item id="29677" min="1" max="1" chance="12.5" /> <!-- Freya's Glittering Ice Rose -->
+			<item id="81747" min="1" max="1" chance="12.5" /> <!-- Royal Honey Dark Beer -->
+			<item id="81759" min="1" max="1" chance="12.5" /> <!-- Glowing Dragon's Attribute Potion EXP -->
+			<item id="81892" min="1" max="1" chance="12.5" /> <!-- Shining Nevit's Gold Hourglass -->
+			<item id="29676" min="1" max="1" chance="12.5" /> <!-- freya storm scroll -->
+			<item id="48831" min="1" max="1" chance="10" /> <!-- Jewel Energy -->
+			<item id="80416" min="1" max="1" chance="5" /> <!-- Fortune Box of 10 Billion Adena -->
+			<item id="80333" min="1" max="1" chance="5" /> <!-- Dragon Necklace -->
+			<item id="80334" min="1" max="1" chance="5" /> <!-- Dragon Earring -->
+			<item id="80335" min="1" max="1" chance="5" /> <!-- Dragon Ring -->
+			<item id="80636" min="1" max="1" chance="5" /> <!-- Artifact Crystal -->
+			<item id="83000" min="1" max="1" chance="5" /> <!-- Enchant Artifact L2 Inner -->
+			<item id="28453" min="1" max="1" chance="5" /> <!-- Sayha Energy -->
+			<item id="80964" min="1" max="1" chance="5" /> <!-- Energy  of protection -->
+			<item id="48046" min="1" max="1" chance="5" /> <!-- Book of Growth -->
+			<item id="48047" min="1" max="1" chance="3" /> <!-- Ancient Book of Growth -->
+			<item id="29878" min="1" max="1" chance="3" /> <!-- Greater jewel lv. 1 box -->
+			<item id="39573" min="1" max="1" chance="2" /> <!-- Sealed Talisman - Insanity -->
+			<item id="37717" min="1" max="1" chance="2" /> <!-- Talisman of Seven Signs -->
+			<item id="81153" min="1" max="1" chance="2" /> <!-- Navari Mask -->
+			<item id="48066" min="1" max="1" chance="2" /> <!-- Agation cube -->
+			<item id="60206" min="1" max="1" chance="2" /> <!-- Gran Kain Weapon Enchant -->
+			<item id="60207" min="1" max="1" chance="2" /> <!-- Gran Kain Scroll Armor -->
+			<item id="48032" min="1" max="1" chance="0.5" /> <!-- Sayha's Talisman Lv. 8 -->
+			<item id="47820" min="1" max="1" chance="0.2" /> <!-- Sayha's Talisman Lv. 9 -->
+			<item id="48510" min="1" max="1" chance="0.2" /> <!-- Agation cube +7 -->
+			<item id="29164" min="1" max="1" chance="0.05" /> <!-- Legendary Scroll -->
+		</capsuled_items>
 	</item>
 	<item id="81928" name="Snowman's Icy Candy" additionalName="Event" type="EtcItem">
 		<!-- For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +5%. -->
 		<set name="icon" val="BranchSys.icon.br_valentine_cream_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
+		<set name="reuse_delay" val="300000" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="1" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="etcitem_type" val="SCROLL" />
+		<skills>
+			<skill id="39729" level="1" /> <!-- Glittering Freya's Ice Rose -->
+		</skills>
 	</item>
 	<item id="81929" name="New Year Gift Set" additionalName="Event" type="EtcItem">
 		<!-- Double-click to obtain Soulshot/ Spiritshot Ticket, and also Freya's Ice Rose (50 pcs.), Glowing Dragon's Attribute Potion (50 pcs.), Shining Nevit's Gold Hourglass (50 pcs.), Honey Dark Beer (50 pcs.). -->
