@@ -27,6 +27,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
+import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantOneFail;
 import org.l2jmobius.gameserver.network.serverpackets.compound.ExEnchantSucess;
@@ -108,20 +109,41 @@ public class RequestNewEnchantTry implements ClientPacket
 		final boolean success = random <= combinationItem.getChance();
 		final CombinationItemReward rewardItem = combinationItem.getReward(success ? CombinationItemType.ON_SUCCESS : CombinationItemType.ON_FAILURE);
 		
+		// Add item (early).
+		final Item item = player.addItem("Compound-Result", rewardItem.getId(), rewardItem.getCount(), null, true);
+		
 		// Send success or fail packet.
 		if (success)
 		{
-			player.sendPacket(new ExEnchantSucess(rewardItem.getId()));
+			player.sendPacket(new ExEnchantSucess(item.getId()));
 		}
 		else
 		{
-			player.sendPacket(new ExEnchantFail(itemOne.getId(), itemTwo.getId()));
+			player.sendPacket(new ExEnchantFail(item.getId(), itemTwo.getId()));
 		}
 		
-		// Take required items and add result item.
+		// Take required items.
 		if (player.destroyItem("Compound-Item-One", itemOne, 1, null, true) && player.destroyItem("Compound-Item-Two", itemTwo, 1, null, true) && ((combinationItem.getCommission() <= 0) || player.reduceAdena("Compound-Commission", combinationItem.getCommission(), player, true)))
 		{
-			player.addItem("Compound-Result", rewardItem.getId(), rewardItem.getCount(), null, true);
+			final InventoryUpdate iu = new InventoryUpdate();
+			iu.addModifiedItem(item);
+			if (itemOne.isStackable() && (itemOne.getCount() > 0))
+			{
+				iu.addModifiedItem(itemOne);
+			}
+			else
+			{
+				iu.addRemovedItem(itemOne);
+			}
+			if (itemTwo.isStackable() && (itemTwo.getCount() > 0))
+			{
+				iu.addModifiedItem(itemTwo);
+			}
+			else
+			{
+				iu.addRemovedItem(itemTwo);
+			}
+			player.sendInventoryUpdate(iu);
 		}
 		
 		player.removeRequest(request.getClass());
