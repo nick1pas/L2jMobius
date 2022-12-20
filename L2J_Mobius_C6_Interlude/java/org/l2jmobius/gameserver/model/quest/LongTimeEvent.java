@@ -44,9 +44,11 @@ import org.l2jmobius.gameserver.data.sql.NpcTable;
 import org.l2jmobius.gameserver.instancemanager.EventDropManager;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.World;
+import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.announce.EventAnnouncement;
 import org.l2jmobius.gameserver.model.holders.EventDropHolder;
+import org.l2jmobius.gameserver.model.spawn.Spawn;
 import org.l2jmobius.gameserver.script.DateRange;
 import org.l2jmobius.gameserver.util.Broadcast;
 
@@ -66,24 +68,26 @@ public class LongTimeEvent extends Quest
 	protected String _endMsg = "";
 	protected int _enterAnnounceId = -1;
 	
-	// NPCs to spawm and their spawn points
+	// NPCs to spawn and their spawn points
 	protected final List<NpcSpawn> _spawnList = new ArrayList<>();
 	
 	// Drop data for event
 	protected final List<EventDropHolder> _dropList = new ArrayList<>();
 	
-	// Items to destroy when event ends.
+	// Items to destroy when event ends
 	protected final List<Integer> _destroyItemsOnEnd = new ArrayList<>();
 	
 	protected class NpcSpawn
 	{
-		protected final Location loc;
 		protected final int npcId;
+		protected final Location loc;
+		protected final int respawnTime;
 		
-		protected NpcSpawn(int pNpcId, Location spawnLoc)
+		protected NpcSpawn(int spawnNpcId, Location spawnLoc, int spawnRespawnTime)
 		{
+			npcId = spawnNpcId;
 			loc = spawnLoc;
-			npcId = pNpcId;
+			respawnTime = spawnRespawnTime;
 		}
 	}
 	
@@ -225,7 +229,8 @@ public class LongTimeEvent extends Quest
 									final int xPos = Integer.parseInt(d.getAttributes().getNamedItem("x").getNodeValue());
 									final int yPos = Integer.parseInt(d.getAttributes().getNamedItem("y").getNodeValue());
 									final int zPos = Integer.parseInt(d.getAttributes().getNamedItem("z").getNodeValue());
-									final int heading = d.getAttributes().getNamedItem("heading").getNodeValue() != null ? Integer.parseInt(d.getAttributes().getNamedItem("heading").getNodeValue()) : 0;
+									final int heading = d.getAttributes().getNamedItem("heading").getNodeValue() != null ? Integer.parseInt(d.getAttributes().getNamedItem("heading").getNodeValue()) : -1;
+									final int respawnTime = d.getAttributes().getNamedItem("respawnTime").getNodeValue() != null ? Integer.parseInt(d.getAttributes().getNamedItem("respawnTime").getNodeValue()) : 0;
 									
 									if (NpcTable.getInstance().getTemplate(npcId) == null)
 									{
@@ -233,7 +238,7 @@ public class LongTimeEvent extends Quest
 										continue;
 									}
 									
-									_spawnList.add(new NpcSpawn(npcId, new Location(xPos, yPos, zPos, heading)));
+									_spawnList.add(new NpcSpawn(npcId, new Location(xPos, yPos, zPos, heading), respawnTime));
 								}
 								catch (NumberFormatException nfe)
 								{
@@ -321,9 +326,16 @@ public class LongTimeEvent extends Quest
 		
 		// Add spawns.
 		final Long millisToEventEnd = _eventPeriod.getEndDate().getTime() - System.currentTimeMillis();
-		for (NpcSpawn spawn : _spawnList)
+		for (NpcSpawn npcSpawn : _spawnList)
 		{
-			addSpawn(spawn.npcId, spawn.loc.getX(), spawn.loc.getY(), spawn.loc.getZ(), spawn.loc.getHeading(), false, millisToEventEnd.intValue());
+			final Npc npc = addSpawn(npcSpawn.npcId, npcSpawn.loc.getX(), npcSpawn.loc.getY(), npcSpawn.loc.getZ(), npcSpawn.loc.getHeading(), false, millisToEventEnd.intValue());
+			if (npcSpawn.respawnTime > 0)
+			{
+				final Spawn spawn = npc.getSpawn();
+				spawn.setRespawnDelay(npcSpawn.respawnTime / 1000);
+				spawn.startRespawn();
+				ThreadPool.schedule(spawn::stopRespawn, millisToEventEnd - npcSpawn.respawnTime);
+			}
 		}
 		
 		// Event enter announcement.
