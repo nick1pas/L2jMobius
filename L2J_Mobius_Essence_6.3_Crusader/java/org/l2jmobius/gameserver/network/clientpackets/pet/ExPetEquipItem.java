@@ -12,6 +12,7 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
+import org.l2jmobius.gameserver.model.item.type.ArmorType;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
@@ -165,6 +166,13 @@ public class ExPetEquipItem implements ClientPacket
 			
 			// Pets cannot use enchanted weapons.
 			if (item.isWeapon() && item.isEnchanted())
+			{
+				player.sendPacket(SystemMessageId.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM);
+				return;
+			}
+			
+			// Pets cannot use shields or sigils.
+			if (item.isArmor() && ((item.getArmorItem().getItemType() == ArmorType.SHIELD) || (item.getArmorItem().getItemType() == ArmorType.SIGIL)))
 			{
 				player.sendPacket(SystemMessageId.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM);
 				return;
