@@ -340,6 +340,11 @@ public class AutoUseTaskManager
 							{
 								pet = player.getPet();
 								skill = pet.getKnownSkill(skillId.intValue());
+								if (pet.isSkillDisabled(skill))
+								{
+									player.getAutoUseSettings().incrementSkillOrder();
+									break SKILLS;
+								}
 							}
 							if (skill == null)
 							{
