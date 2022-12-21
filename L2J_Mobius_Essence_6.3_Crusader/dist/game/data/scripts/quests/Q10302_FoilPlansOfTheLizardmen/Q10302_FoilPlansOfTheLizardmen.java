@@ -67,13 +67,13 @@ public class Q10302_FoilPlansOfTheLizardmen extends Quest
 	@Override
 	public String onAdvEvent(String event, Npc npc, Player player)
 	{
+		String htmltext = null;
 		final QuestState qs = getQuestState(player, false);
 		if (qs == null)
 		{
-			return null;
+			return htmltext;
 		}
 		
-		String htmltext = null;
 		switch (event)
 		{
 			case "30857.htm":
