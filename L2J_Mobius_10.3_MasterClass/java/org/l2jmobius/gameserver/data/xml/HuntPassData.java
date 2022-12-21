@@ -38,7 +38,7 @@ public class HuntPassData implements IXmlReader
 	private final List<ItemHolder> _rewards = new ArrayList<>();
 	private final List<ItemHolder> _premiumRewards = new ArrayList<>();
 	private int _rewardCount = 0;
-	private final int _premiumRewardCount = 0;
+	private int _premiumRewardCount = 0;
 	
 	protected HuntPassData()
 	{
@@ -53,6 +53,7 @@ public class HuntPassData implements IXmlReader
 			_rewards.clear();
 			parseDatapackFile("data/HuntPass.xml");
 			_rewardCount = _rewards.size();
+			_premiumRewardCount = _premiumRewards.size();
 			LOGGER.info(getClass().getSimpleName() + ": Loaded " + _rewardCount + " HuntPass rewards.");
 		}
 		else
