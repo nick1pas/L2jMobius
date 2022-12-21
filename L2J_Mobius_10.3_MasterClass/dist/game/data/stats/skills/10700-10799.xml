@@ -1575,7 +1575,16 @@
 					<value fromLevel="7" toLevel="15" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 				</criticalChance>
 				<pDefMod>
-					<value fromLevel="1" toLevel="15">0.7</value>
+					<value fromLevel="1" toLevel="2">0.99</value>
+					<value fromLevel="3" toLevel="4">0.98</value>
+					<value fromLevel="5" toLevel="6">0.97</value>
+					<value fromLevel="7" toLevel="8">0.96</value>
+					<value fromLevel="9" toLevel="10">0.95</value>
+					<value level="11">0.94</value>
+					<value level="12">0.93</value>
+					<value level="13">0.92</value>
+					<value level="14">0.91</value>
+					<value level="15">0.90</value>
 					<value fromLevel="7" toLevel="15" fromSubLevel="3001" toSubLevel="3020">{0.69 - 0.006 * (subIndex - 1)}</value>
 				</pDefMod>
 				<overHit>true</overHit>
@@ -1657,21 +1666,21 @@
 		<effects>
 			<effect name="PhysicalAttack">
 				<power>
-					<value level="1">32463</value>
-					<value level="2">34086</value>
-					<value level="3">37332</value>
-					<value level="4">40578</value>
-					<value level="5">43824</value>
-					<value level="6">47070</value>
-					<value level="7">50316</value>
-					<value level="8">53562</value>
-					<value level="9">56259</value>
-					<value level="10">59003</value>
-					<value level="11">61747</value>
-					<value level="12">64656</value>
-					<value level="13">67565</value>
-					<value level="14">74322</value>
-					<value level="15">81754</value>
+					<value level="1">35709</value>
+					<value level="2">37494</value>
+					<value level="3">41065</value>
+					<value level="4">44635</value>
+					<value level="5">48206</value>
+					<value level="6">51777</value>
+					<value level="7">55347</value>
+					<value level="8">58918</value>
+					<value level="9">61884</value>
+					<value level="10">64903</value>
+					<value level="11">67921</value>
+					<value level="12">71121</value>
+					<value level="13">74321</value>
+					<value level="14">81754</value>
+					<value level="15">89929</value>
 					<value fromLevel="7" toLevel="15" fromSubLevel="1001" toSubLevel="1020">{base + (base / 100 * subIndex)}</value>
 				</power>
 				<criticalChance>
@@ -1679,7 +1688,16 @@
 					<value fromLevel="7" toLevel="15" fromSubLevel="2001" toSubLevel="2020">{base + (base / 100 * subIndex)}</value>
 				</criticalChance>
 				<pDefMod>
-					<value fromLevel="1" toLevel="15">0.7</value>
+					<value fromLevel="1" toLevel="2">0.99</value>
+					<value fromLevel="3" toLevel="4">0.98</value>
+					<value fromLevel="5" toLevel="6">0.97</value>
+					<value fromLevel="7" toLevel="8">0.96</value>
+					<value fromLevel="9" toLevel="10">0.95</value>
+					<value level="11">0.94</value>
+					<value level="12">0.93</value>
+					<value level="13">0.92</value>
+					<value level="14">0.91</value>
+					<value level="15">0.90</value>
 					<value fromLevel="7" toLevel="15" fromSubLevel="3001" toSubLevel="3020">{0.69 - 0.006 * (subIndex - 1)}</value>
 				</pDefMod>
 				<overHit>true</overHit>

@@ -2994,7 +2994,7 @@
 			<value level="15">240</value>
 		</mpConsume>
 		<effects>
-			<effect name="EnergyAttack">
+			<effect name="PhysicalAttack">
 				<power>
 					<value level="1">22536</value>
 					<value level="2">23313</value>
@@ -3761,6 +3761,7 @@
 		<castRange>600</castRange>
 		<hitTime>1000</hitTime>
 		<coolTime>500</coolTime>
+		<reuseDelay>1500</reuseDelay>
 		<effectPoint>
 			<value level="1">-692</value>
 			<value level="2">-696</value>
@@ -3837,7 +3838,7 @@
 			</condition>
 		</conditions>
 		<effects>
-			<effect name="EnergyAttack">
+			<effect name="PhysicalAttack">
 				<power>
 					<value level="1">16530</value>
 					<value level="2">16980</value>
@@ -3883,6 +3884,7 @@
 		<castRange>600</castRange>
 		<hitTime>1200</hitTime>
 		<coolTime>300</coolTime>
+		<reuseDelay>1500</reuseDelay>
 		<effectPoint>
 			<value level="1">-692</value>
 			<value level="2">-696</value>
