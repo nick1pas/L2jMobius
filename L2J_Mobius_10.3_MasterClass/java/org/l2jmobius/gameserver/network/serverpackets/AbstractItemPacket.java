@@ -358,10 +358,11 @@ public abstract class AbstractItemPacket extends AbstractMaskPacket<ItemListType
 		// {
 		// size += 4;
 		// }
-		if (containsMask(mask, ItemListType.BLESSED))
-		{
-			size += 1;
-		}
+		// Essence
+		// if (containsMask(mask, ItemListType.BLESSED))
+		// {
+		// size += 1;
+		// }
 		
 		return size;
 	}
