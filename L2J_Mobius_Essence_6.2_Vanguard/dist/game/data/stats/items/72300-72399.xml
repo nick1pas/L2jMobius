@@ -310,6 +310,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95848" min="2" max="2" chance="100" /> <!-- Freya's Random Transformation Scroll (Time-limited) - Sealed -->
+			<item id="93848" min="20" max="20" chance="100" /> <!-- Sayha's Cookie (Time-limited) - Sealed -->
+			<item id="90907" min="30" max="30" chance="100" /> <!-- Soulshot Ticket - Sealed -->
+			<item id="3031" min="500" max="500" chance="100" /> <!-- Spirit Ore - Sealed -->
+		</capsuled_items>
 	</item>
 	<item id="72360" name="Lucky Pouch (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- A Lucky Pouch to celebrate the New Year. Double-click to obtain the following. -->
