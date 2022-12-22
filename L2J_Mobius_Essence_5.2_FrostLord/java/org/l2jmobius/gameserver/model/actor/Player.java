@@ -8658,6 +8658,17 @@ public class Player extends Playable
 		final Location worldPosition = _currentSkillWorldPosition;
 		if ((usedSkill.getTargetType() == TargetType.GROUND) && (worldPosition == null))
 		{
+			if (getCurrentMp() >= usedSkill.getMpConsume())
+			{
+				if (usedSkill.checkCondition(this, target, true))
+				{
+					sendPacket(new MagicSkillUse(this, this, usedSkill.getDisplayId(), usedSkill.getDisplayLevel(), 0, 0, usedSkill.getReuseDelayGroup(), -1, SkillCastingType.NORMAL, true));
+				}
+			}
+			else
+			{
+				sendPacket(SystemMessageId.NOT_ENOUGH_MP);
+			}
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return false;
 		}

@@ -10,17 +10,18 @@
 		<affectRange>250</affectRange>
 		<fanRange>0;0;250;60</fanRange>
 		<effectRange>1100</effectRange>
-		<nextAction>ATTACK</nextAction>
 		<magicLevel>80</magicLevel>
-		<isMagic>6</isMagic>
+		<isMagic>0</isMagic>
 		<mpConsume>500</mpConsume>
 		<hitTime>1000</hitTime>
 		<operateType>A1</operateType>
 		<reuseDelay>60000</reuseDelay>
+		<staticReuse>true</staticReuse>
 		<magicCriticalRate>5</magicCriticalRate>
-		<targetType>ENEMY</targetType>
-		<affectScope>SINGLE</affectScope>
+		<targetType>GROUND</targetType>
+		<affectScope>FAN_PB</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
+		<fanRange>0;0;900;20</fanRange>
 		<conditions>
 			<condition name="EquipWeapon">
 				<weaponType>
@@ -29,6 +30,10 @@
 			</condition>
 		</conditions>
 		<effects>
+			<effect name="PhysicalAttack">
+				<power>8000</power>
+				<pDefMod>0.5</pDefMod>
+			</effect>
 			<effect name="CallSkill">
 				<skillId>47020</skillId> <!-- Goring Charge -->
 				<skillLevel>1</skillLevel>
@@ -1112,19 +1117,28 @@
 		<activateRate>100</activateRate>
 		<magicLevel>80</magicLevel>
 		<isDebuff>true</isDebuff>
-		<trait>SHOCK</trait>
-		<targetType>ENEMY</targetType>
-		<affectScope>SQUARE</affectScope>
+		<targetType>GROUND</targetType>
+		<fanRange>0;0;600;60</fanRange>
+		<affectScope>FAN</affectScope>
 		<affectObject>NOT_FRIEND</affectObject>
+		<conditions>
+			<condition name="EquipWeapon">
+				<weaponType>
+					<item>PISTOLS</item>
+				</weaponType>
+			</condition>
+		</conditions>
 		<effects>
-			<effect name="PhysicalAttack">
-				<power>8000</power>
-				<pDefMod>0.5</pDefMod>
-			</effect>
 			<effect name="KnockBack">
 				<distance>50</distance>
 				<speed>400</speed>
 				<knockDown>true</knockDown>
+			</effect>
+			<effect name="DefenceTrait">
+				<DERANGEMENT>100</DERANGEMENT>
+				<SLEEP>100</SLEEP>
+				<HOLD>100</HOLD>
+				<SHOCK>100</SHOCK>
 			</effect>
 			<effect name="BlockActions">
 				<allowedSkills>10279;10517;10025;10776;11770;1904;11264;11093;13314;1912;7002;18721;18722;28203;30516;35190</allowedSkills>

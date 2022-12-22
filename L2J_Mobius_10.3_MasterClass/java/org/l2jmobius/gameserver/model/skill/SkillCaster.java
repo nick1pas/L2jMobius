@@ -72,6 +72,7 @@ import org.l2jmobius.gameserver.model.stats.Stat;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.ExMagicSkillUseGround;
 import org.l2jmobius.gameserver.network.serverpackets.ExRotation;
 import org.l2jmobius.gameserver.network.serverpackets.FlyToLocation;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
@@ -349,6 +350,16 @@ public class SkillCaster implements Runnable
 		if (!_skill.isNotBroadcastable())
 		{
 			caster.broadcastPacket(new MagicSkillUse(caster, target, _skill.getDisplayId(), _skill.getDisplayLevel(), displayedCastTime, reuseDelay, _skill.getReuseDelayGroup(), actionId, _castingType));
+			if ((_skill.getTargetType() == TargetType.GROUND) && caster.isPlayer())
+			{
+				final Player player = caster.getActingPlayer();
+				final Location worldPosition = player.getCurrentSkillWorldPosition();
+				if (worldPosition != null)
+				{
+					final Location location = new Location(worldPosition.getX(), worldPosition.getY(), worldPosition.getZ(), worldPosition.getHeading());
+					ThreadPool.schedule(() -> player.broadcastPacket(new ExMagicSkillUseGround(player.getObjectId(), _skill.getId(), location)), 100);
+				}
+			}
 		}
 		
 		if (caster.isPlayer() && !instantCast)
@@ -574,6 +585,12 @@ public class SkillCaster implements Runnable
 		
 		// On each repeat recharge shots before cast.
 		caster.rechargeShots(_skill.useSoulShot(), _skill.useSpiritShot(), false);
+		
+		// Reset current skill world position.
+		if (caster.isPlayer())
+		{
+			caster.getActingPlayer().setCurrentSkillWorldPosition(null);
+		}
 		
 		return true;
 	}
