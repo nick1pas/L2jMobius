@@ -91,7 +91,7 @@ public class MagicSkillUse extends ServerPacket
 		writeInt(_creature.getX());
 		writeInt(_creature.getY());
 		writeInt(_creature.getZ());
-		writeShort(_isGroundTargetSkill ? 64 : 0);
+		writeShort(_isGroundTargetSkill ? 0x10000 : 0);
 		writeShort(_groundLocations.size());
 		for (Location location : _groundLocations)
 		{
