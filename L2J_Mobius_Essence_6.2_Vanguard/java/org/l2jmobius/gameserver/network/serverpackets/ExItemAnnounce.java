@@ -27,6 +27,7 @@ public class ExItemAnnounce extends ServerPacket
 {
 	public static final int ENCHANT = 0;
 	public static final int RANDOM_CRAFT = 2;
+	public static final int SPECIAL_CREATION = 3;
 	
 	private final Item _item;
 	private final int _type;

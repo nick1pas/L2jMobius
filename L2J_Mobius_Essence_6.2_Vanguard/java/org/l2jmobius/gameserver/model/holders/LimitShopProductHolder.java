@@ -44,8 +44,9 @@ public class LimitShopProductHolder
 	private final long _count5;
 	private final int _accountDailyLimit;
 	private final int _accountBuyLimit;
+	private final boolean _announce;
 	
-	public LimitShopProductHolder(int id, int category, int minLevel, int maxLevel, int[] ingredientIds, long[] ingredientQuantities, int[] ingredientEnchants, int productionId, long count, float chance, int productionId2, long count2, float chance2, int productionId3, long count3, float chance3, int productionId4, long count4, float chance4, int productionId5, long count5, int accountDailyLimit, int accountBuyLimit)
+	public LimitShopProductHolder(int id, int category, int minLevel, int maxLevel, int[] ingredientIds, long[] ingredientQuantities, int[] ingredientEnchants, int productionId, long count, float chance, int productionId2, long count2, float chance2, int productionId3, long count3, float chance3, int productionId4, long count4, float chance4, int productionId5, long count5, int accountDailyLimit, int accountBuyLimit, boolean announce)
 	{
 		_id = id;
 		_category = category;
@@ -70,6 +71,7 @@ public class LimitShopProductHolder
 		_count5 = count5;
 		_accountDailyLimit = accountDailyLimit;
 		_accountBuyLimit = accountBuyLimit;
+		_announce = announce;
 	}
 	
 	public int getId()
@@ -185,5 +187,10 @@ public class LimitShopProductHolder
 	public int getAccountBuyLimit()
 	{
 		return _accountBuyLimit;
+	}
+	
+	public boolean isAnnounce()
+	{
+		return _announce;
 	}
 }

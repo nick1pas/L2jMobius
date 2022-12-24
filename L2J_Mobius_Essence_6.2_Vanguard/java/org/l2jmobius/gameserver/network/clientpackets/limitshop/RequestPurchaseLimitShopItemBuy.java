@@ -39,8 +39,10 @@ import org.l2jmobius.gameserver.model.variables.AccountVariables;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
+import org.l2jmobius.gameserver.network.serverpackets.ExItemAnnounce;
 import org.l2jmobius.gameserver.network.serverpackets.limitshop.ExPurchaseLimitShopItemResult;
 import org.l2jmobius.gameserver.network.serverpackets.primeshop.ExBRBuyProduct;
+import org.l2jmobius.gameserver.util.Broadcast;
 
 /**
  * @author Mobius
@@ -238,34 +240,58 @@ public class RequestPurchaseLimitShopItemBuy implements ClientPacket
 				if (Rnd.get(100) < _product.getChance())
 				{
 					rewards.computeIfAbsent(0, k -> new LimitShopRandomCraftReward(_product.getProductionId(), 0, 0)).getCount().addAndGet((int) _product.getCount());
-					player.addItem("LCoinShop", _product.getProductionId(), _product.getCount(), player, true);
+					final Item item = player.addItem("LCoinShop", _product.getProductionId(), _product.getCount(), player, true);
+					if (_product.isAnnounce())
+					{
+						Broadcast.toAllOnlinePlayers(new ExItemAnnounce(player, item, ExItemAnnounce.SPECIAL_CREATION));
+					}
 				}
 				else if ((Rnd.get(100) < _product.getChance2()) || (_product.getProductionId3() == 0))
 				{
 					rewards.computeIfAbsent(1, k -> new LimitShopRandomCraftReward(_product.getProductionId2(), 0, 1)).getCount().addAndGet((int) _product.getCount2());
-					player.addItem("LCoinShop", _product.getProductionId2(), _product.getCount2(), player, true);
+					final Item item = player.addItem("LCoinShop", _product.getProductionId2(), _product.getCount2(), player, true);
+					if (_product.isAnnounce())
+					{
+						Broadcast.toAllOnlinePlayers(new ExItemAnnounce(player, item, ExItemAnnounce.SPECIAL_CREATION));
+					}
 				}
 				else if ((Rnd.get(100) < _product.getChance3()) || (_product.getProductionId4() == 0))
 				{
 					rewards.computeIfAbsent(2, k -> new LimitShopRandomCraftReward(_product.getProductionId3(), 0, 2)).getCount().addAndGet((int) _product.getCount3());
-					player.addItem("LCoinShop", _product.getProductionId3(), _product.getCount3(), player, true);
+					final Item item = player.addItem("LCoinShop", _product.getProductionId3(), _product.getCount3(), player, true);
+					if (_product.isAnnounce())
+					{
+						Broadcast.toAllOnlinePlayers(new ExItemAnnounce(player, item, ExItemAnnounce.SPECIAL_CREATION));
+					}
 				}
 				else if ((Rnd.get(100) < _product.getChance4()) || (_product.getProductionId5() == 0))
 				{
 					rewards.computeIfAbsent(3, k -> new LimitShopRandomCraftReward(_product.getProductionId4(), 0, 3)).getCount().addAndGet((int) _product.getCount4());
-					player.addItem("LCoinShop", _product.getProductionId4(), _product.getCount4(), player, true);
+					final Item item = player.addItem("LCoinShop", _product.getProductionId4(), _product.getCount4(), player, true);
+					if (_product.isAnnounce())
+					{
+						Broadcast.toAllOnlinePlayers(new ExItemAnnounce(player, item, ExItemAnnounce.SPECIAL_CREATION));
+					}
 				}
 				else if (_product.getProductionId5() > 0)
 				{
 					rewards.computeIfAbsent(4, k -> new LimitShopRandomCraftReward(_product.getProductionId5(), 0, 4)).getCount().addAndGet((int) _product.getCount5());
-					player.addItem("LCoinShop", _product.getProductionId5(), _product.getCount5(), player, true);
+					final Item item = player.addItem("LCoinShop", _product.getProductionId5(), _product.getCount5(), player, true);
+					if (_product.isAnnounce())
+					{
+						Broadcast.toAllOnlinePlayers(new ExItemAnnounce(player, item, ExItemAnnounce.SPECIAL_CREATION));
+					}
 				}
 			}
 		}
 		else if (Rnd.get(100) < _product.getChance())
 		{
 			rewards.put(0, new LimitShopRandomCraftReward(_product.getProductionId(), (int) (_product.getCount() * _amount), 0));
-			player.addItem("LCoinShop", _product.getProductionId(), _product.getCount() * _amount, player, true);
+			final Item item = player.addItem("LCoinShop", _product.getProductionId(), _product.getCount() * _amount, player, true);
+			if (_product.isAnnounce())
+			{
+				Broadcast.toAllOnlinePlayers(new ExItemAnnounce(player, item, ExItemAnnounce.SPECIAL_CREATION));
+			}
 		}
 		
 		// Update account variables.

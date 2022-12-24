@@ -90,6 +90,7 @@ public class LimitShopCraftData implements IXmlReader
 							final int category = parseInteger(attrs, "category");
 							final int minLevel = parseInteger(attrs, "minLevel", 1);
 							final int maxLevel = parseInteger(attrs, "maxLevel", 999);
+							final boolean announce = parseBoolean(attrs, "announce", false);
 							final int[] ingredientIds = new int[3];
 							ingredientIds[0] = 0;
 							ingredientIds[1] = 0;
@@ -202,7 +203,7 @@ public class LimitShopCraftData implements IXmlReader
 								}
 							}
 							
-							_products.add(new LimitShopProductHolder(id, category, minLevel, maxLevel, ingredientIds, ingredientQuantities, ingredientEnchants, productionId, count, chance, productionId2, count2, chance2, productionId3, count3, chance3, productionId4, count4, chance4, productionId5, count5, accountDailyLimit, accountBuyLimit));
+							_products.add(new LimitShopProductHolder(id, category, minLevel, maxLevel, ingredientIds, ingredientQuantities, ingredientEnchants, productionId, count, chance, productionId2, count2, chance2, productionId3, count3, chance3, productionId4, count4, chance4, productionId5, count5, accountDailyLimit, accountBuyLimit, announce));
 						}
 					}
 				}
