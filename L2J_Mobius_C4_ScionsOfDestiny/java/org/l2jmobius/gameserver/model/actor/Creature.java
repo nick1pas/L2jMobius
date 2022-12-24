@@ -105,7 +105,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ChangeMoveType;
 import org.l2jmobius.gameserver.network.serverpackets.ChangeWaitType;
 import org.l2jmobius.gameserver.network.serverpackets.ExOlympiadSpelledInfo;
 import org.l2jmobius.gameserver.network.serverpackets.MagicEffectIcons;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
+import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceled;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillLaunched;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.MoveToLocation;
@@ -4853,7 +4853,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 	}
 	
 	/**
-	 * Abort the cast of the Creature and send Server->Client MagicSkillCanceld/ActionFailed packet.
+	 * Abort the cast of the Creature and send Server->Client MagicSkillCanceled/ActionFailed packet.
 	 */
 	public void abortCast()
 	{
@@ -4861,7 +4861,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 	}
 	
 	/**
-	 * Abort the cast of the Creature and send Server->Client MagicSkillCanceld/ActionFailed packet.
+	 * Abort the cast of the Creature and send Server->Client MagicSkillCanceled/ActionFailed packet.
 	 * @param force the force
 	 */
 	public void abortCast(boolean force)
@@ -4894,7 +4894,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 				getAI().notifyEvent(CtrlEvent.EVT_FINISH_CASTING); // setting back previous intention
 			}
 			
-			broadcastPacket(new MagicSkillCanceld(getObjectId())); // broadcast packet to stop animations client-side
+			broadcastPacket(new MagicSkillCanceled(getObjectId())); // broadcast packet to stop animations client-side
 			sendPacket(ActionFailed.STATIC_PACKET); // send an "action failed" packet to the caster
 		}
 	}
@@ -6118,7 +6118,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 		// damage can only cancel magical skills
 		if (isCastingNow() && canAbortCast() && (_lastSkillCast != null) && _lastSkillCast.isMagic())
 		{
-			// Abort the cast of the Creature and send Server->Client MagicSkillCanceld/ActionFailed packet.
+			// Abort the cast of the Creature and send Server->Client MagicSkillCanceled/ActionFailed packet.
 			abortCast();
 			
 			if (this instanceof Player)

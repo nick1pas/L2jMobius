@@ -75,7 +75,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.ExMagicSkillUseGround;
 import org.l2jmobius.gameserver.network.serverpackets.ExRotation;
 import org.l2jmobius.gameserver.network.serverpackets.FlyToLocation;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
+import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceled;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillLaunched;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.MoveToPawn;
@@ -797,7 +797,7 @@ public class SkillCaster implements Runnable
 		// If aborted, broadcast casting aborted.
 		if (aborted)
 		{
-			caster.broadcastPacket(new MagicSkillCanceld(caster.getObjectId())); // broadcast packet to stop animations client-side
+			caster.broadcastPacket(new MagicSkillCanceled(caster.getObjectId())); // broadcast packet to stop animations client-side
 			caster.sendPacket(ActionFailed.get(_castingType)); // send an "action failed" packet to the caster
 		}
 		

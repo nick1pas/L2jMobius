@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.network.NpcStringId;
 import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
+import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceled;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
@@ -746,7 +746,7 @@ public class LastImperialTomb extends AbstractInstance
 		else if (npc.getId() == SCARLET2)
 		{
 			final Npc frintezza = world.getParameters().getObject("frintezza", Npc.class);
-			broadcastPacket(world, new MagicSkillCanceld(frintezza.getObjectId()));
+			broadcastPacket(world, new MagicSkillCanceled(frintezza.getObjectId()));
 			startQuestTimer("FINISH_CAMERA_1", 500, npc, killer, false);
 			world.finishInstance();
 		}

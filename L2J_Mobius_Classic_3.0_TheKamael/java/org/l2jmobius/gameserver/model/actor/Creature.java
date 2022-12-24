@@ -4111,7 +4111,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		final SkillCaster skillCaster = getSkillCaster(SkillCaster::isAnyNormalType);
 		if ((skillCaster != null) && skillCaster.getSkill().isMagic())
 		{
-			// Abort the cast of the Creature and send Server->Client MagicSkillCanceld/ActionFailed packet.
+			// Abort the cast of the Creature and send Server->Client MagicSkillCanceled/ActionFailed packet.
 			skillCaster.stopCasting(true);
 			
 			if (isPlayer())

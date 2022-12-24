@@ -16,18 +16,12 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
-import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.interfaces.IPositionable;
 import org.l2jmobius.gameserver.network.ServerPackets;
 
 /**
  * MagicSkillUse server packet implementation.
- * @author UnAfraid, NosBit
+ * @author UnAfraid, NosBit, Mobius
  */
 public class MagicSkillUse extends ServerPacket
 {
@@ -37,24 +31,28 @@ public class MagicSkillUse extends ServerPacket
 	private final int _reuseDelay;
 	private final Creature _creature;
 	private final Creature _target;
-	private final List<Integer> _unknown = Collections.emptyList();
-	private final List<Location> _groundLocations;
+	private final boolean _critical;
 	
-	public MagicSkillUse(Creature creature, Creature target, int skillId, int skillLevel, int hitTime, int reuseDelay)
+	public MagicSkillUse(Creature creature, Creature target, int skillId, int skillLevel, int hitTime, int reuseDelay, boolean critical)
 	{
-		super(55);
+		super(57);
 		_creature = creature;
 		_target = target;
 		_skillId = skillId;
 		_skillLevel = skillLevel;
 		_hitTime = hitTime;
 		_reuseDelay = reuseDelay;
-		_groundLocations = creature.isPlayer() && (creature.getActingPlayer().getCurrentSkillWorldPosition() != null) ? Arrays.asList(creature.getActingPlayer().getCurrentSkillWorldPosition()) : Collections.<Location> emptyList();
+		_critical = critical;
+	}
+	
+	public MagicSkillUse(Creature creature, Creature target, int skillId, int skillLevel, int hitTime, int reuseDelay)
+	{
+		this(creature, target, skillId, skillLevel, hitTime, reuseDelay, false);
 	}
 	
 	public MagicSkillUse(Creature creature, int skillId, int skillLevel, int hitTime, int reuseDelay)
 	{
-		this(creature, creature, skillId, skillLevel, hitTime, reuseDelay);
+		this(creature, creature, skillId, skillLevel, hitTime, reuseDelay, false);
 	}
 	
 	@Override
@@ -70,17 +68,14 @@ public class MagicSkillUse extends ServerPacket
 		writeInt(_creature.getX());
 		writeInt(_creature.getY());
 		writeInt(_creature.getZ());
-		writeShort(_unknown.size()); // TODO: Implement me!
-		for (int unknown : _unknown)
+		if (_critical)
 		{
-			writeShort(unknown);
+			writeInt(1);
+			writeShort(0);
 		}
-		writeShort(_groundLocations.size());
-		for (IPositionable target : _groundLocations)
+		else
 		{
-			writeInt(target.getX());
-			writeInt(target.getY());
-			writeInt(target.getZ());
+			writeInt(0);
 		}
 		writeInt(_target.getX());
 		writeInt(_target.getY());

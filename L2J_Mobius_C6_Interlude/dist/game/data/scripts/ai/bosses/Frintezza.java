@@ -41,7 +41,7 @@ import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
+import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceled;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUse;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
 import org.l2jmobius.gameserver.network.serverpackets.PlaySound;
@@ -1217,7 +1217,7 @@ public class Frintezza extends Quest
 				cancelQuestTimer("songs_effect", npc, null);
 				if (_frintezza != null)
 				{
-					_zone.broadcastPacket(new MagicSkillCanceld(_frintezza.getObjectId()));
+					_zone.broadcastPacket(new MagicSkillCanceled(_frintezza.getObjectId()));
 				}
 				break;
 			}

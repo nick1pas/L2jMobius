@@ -193,7 +193,7 @@ import org.l2jmobius.gameserver.network.serverpackets.HennaInfo;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
 import org.l2jmobius.gameserver.network.serverpackets.LeaveWorld;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
+import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceled;
 import org.l2jmobius.gameserver.network.serverpackets.MyTargetSelected;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 import org.l2jmobius.gameserver.network.serverpackets.NpcInfo;
@@ -7113,7 +7113,7 @@ public class Player extends Playable
 	 * <b><u>Actions</u>:</b><br>
 	 * <li>Set the Intention of the AI to AI_INTENTION_IDLE</li>
 	 * <li>Enable all skills (set _allSkillsDisabled to False)</li>
-	 * <li>Send a Server->Client Packet MagicSkillCanceld to the Player and all Player in the _KnownPlayers of the Creature (broadcast)</li>
+	 * <li>Send a Server->Client Packet MagicSkillCanceled to the Player and all Player in the _KnownPlayers of the Creature (broadcast)</li>
 	 */
 	public void cancelCastMagic()
 	{
@@ -7123,10 +7123,10 @@ public class Player extends Playable
 		// Enable all skills (set _allSkillsDisabled to False)
 		enableAllSkills();
 		
-		// Send a Server->Client Packet MagicSkillCanceld to the Player and all Player in the _KnownPlayers of the Creature (broadcast)
+		// Send a Server->Client Packet MagicSkillCanceled to the Player and all Player in the _KnownPlayers of the Creature (broadcast)
 		
 		// Broadcast the packet to self and known players.
-		Broadcast.toSelfAndKnownPlayersInRadius(this, new MagicSkillCanceld(getObjectId()), 810000/* 900 */);
+		Broadcast.toSelfAndKnownPlayersInRadius(this, new MagicSkillCanceled(getObjectId()), 810000/* 900 */);
 	}
 	
 	/**

@@ -18,11 +18,11 @@ package org.l2jmobius.gameserver.network.serverpackets;
 
 import org.l2jmobius.gameserver.network.ServerPackets;
 
-public class MagicSkillCanceld extends ServerPacket
+public class MagicSkillCanceled extends ServerPacket
 {
 	private final int _objectId;
 	
-	public MagicSkillCanceld(int objectId)
+	public MagicSkillCanceled(int objectId)
 	{
 		_objectId = objectId;
 	}

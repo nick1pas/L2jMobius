@@ -61,7 +61,7 @@ import org.l2jmobius.gameserver.network.serverpackets.DeleteObject;
 import org.l2jmobius.gameserver.network.serverpackets.GetItem;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
-import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceld;
+import org.l2jmobius.gameserver.network.serverpackets.MagicSkillCanceled;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillLaunched;
 import org.l2jmobius.gameserver.network.serverpackets.MagicSkillUser;
 import org.l2jmobius.gameserver.network.serverpackets.MoveToLocation;
@@ -1793,7 +1793,7 @@ public class Player extends Creature
 	{
 		setCurrentState(CreatureState.IDLE);
 		enableAllSkills();
-		final MagicSkillCanceld msc = new MagicSkillCanceld(getObjectId());
+		final MagicSkillCanceled msc = new MagicSkillCanceled(getObjectId());
 		sendPacket(msc);
 		broadcastPacket(msc);
 	}

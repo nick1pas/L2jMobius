@@ -16,10 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
@@ -42,11 +38,11 @@ public class MagicSkillUse extends ServerPacket
 	private final Creature _creature;
 	private final WorldObject _target;
 	private final boolean _isGroundTargetSkill;
-	private final List<Location> _groundLocations;
+	private final Location _groundLocation;
 	
 	public MagicSkillUse(Creature creature, WorldObject target, int skillId, int skillLevel, int hitTime, int reuseDelay, int reuseGroup, int actionId, SkillCastingType castingType, boolean isGroundTargetSkill)
 	{
-		super(84);
+		super(83);
 		_creature = creature;
 		_target = target;
 		_skillId = skillId;
@@ -57,8 +53,7 @@ public class MagicSkillUse extends ServerPacket
 		_actionId = actionId;
 		_castingType = castingType;
 		_isGroundTargetSkill = isGroundTargetSkill;
-		final Location skillWorldPos = creature.isPlayer() ? creature.getActingPlayer().getCurrentSkillWorldPosition() : null;
-		_groundLocations = skillWorldPos != null ? Arrays.asList(skillWorldPos) : Collections.emptyList();
+		_groundLocation = creature.isPlayer() ? creature.getActingPlayer().getCurrentSkillWorldPosition() : null;
 	}
 	
 	public MagicSkillUse(Creature creature, WorldObject target, int skillId, int skillLevel, int hitTime, int reuseDelay, int reuseGroup, int actionId, SkillCastingType castingType)
@@ -91,20 +86,24 @@ public class MagicSkillUse extends ServerPacket
 		writeInt(_creature.getX());
 		writeInt(_creature.getY());
 		writeInt(_creature.getZ());
-		writeShort(_isGroundTargetSkill ? 0x10000 : 0);
-		writeShort(_groundLocations.size());
-		for (Location location : _groundLocations)
+		writeShort(_isGroundTargetSkill ? 65535 : 0);
+		if (_groundLocation == null)
 		{
-			writeInt(location.getX());
-			writeInt(location.getY());
-			writeInt(location.getZ());
+			writeShort(0);
+		}
+		else
+		{
+			writeShort(1);
+			writeInt(_groundLocation.getX());
+			writeInt(_groundLocation.getY());
+			writeInt(_groundLocation.getZ());
 		}
 		writeInt(_target.getX());
 		writeInt(_target.getY());
 		writeInt(_target.getZ());
 		writeInt(_actionId >= 0); // 1 when ID from RequestActionUse is used
 		writeInt(_actionId >= 0 ? _actionId : 0); // ID from RequestActionUse. Used to set cooldown on summon skills.
-		if (_groundLocations.isEmpty())
+		if (_groundLocation == null)
 		{
 			writeInt(-1); // 306
 		}
