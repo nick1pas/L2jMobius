@@ -52,9 +52,13 @@ public class Elixir extends ItemSkills
 			return false;
 		}
 		
-		playable.getActingPlayer().getVariables().set(PlayerVariables.ELIXIRS_AVAILABLE, elixirsAvailable + 1);
-		playable.sendPacket(new SystemMessage(SystemMessageId.THANKS_TO_THE_ELIXIR_CHARACTER_S_STAT_POINTS_S1).addInt(1));
-		playable.getActingPlayer().broadcastUserInfo();
-		return super.useItem(playable, item, forceUse);
+		if (super.useItem(playable, item, forceUse))
+		{
+			playable.getActingPlayer().getVariables().set(PlayerVariables.ELIXIRS_AVAILABLE, elixirsAvailable + 1);
+			playable.sendPacket(new SystemMessage(SystemMessageId.THANKS_TO_THE_ELIXIR_CHARACTER_S_STAT_POINTS_S1).addInt(1));
+			playable.getActingPlayer().broadcastUserInfo();
+			return true;
+		}
+		return false;
 	}
 }
