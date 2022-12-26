@@ -9,6 +9,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97499" min="100" max="100" chance="100" /> <!-- Hero's Relic (Time-limited) -->
+			<item id="96729" min="100" max="100" chance="100" /> <!-- Einhasad's Protection (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97501" name="Spring Crystal (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- It's a crystal imbued with Spring Energy. <How to use> Can be exchanged for various items through the Game Assistant in the Event section. -->
@@ -63,6 +69,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97501" min="1" max="1" chance="70" /> <!-- Spring Crystal (Time-limited) -->
+			<item id="97501" min="2" max="2" chance="20" /> <!-- Spring Crystal (Time-limited) -->
+			<item id="97501" min="3" max="3" chance="10" /> <!-- Spring Crystal (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97506" name="Einhasad's Relic (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -362,6 +375,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="92018" min="1" max="1" chance="65" /> <!-- Talisman of Eva -->
+			<item id="92018" min="1" max="1" minEnchant="2" maxEnchant="2" chance="20" /> <!-- Talisman of Eva -->
+			<item id="92018" min="1" max="1" minEnchant="3" maxEnchant="3" chance="10" /> <!-- Talisman of Eva -->
+			<item id="92018" min="1" max="1" minEnchant="4" maxEnchant="4" chance="5" /> <!-- Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97526" name="Recovery Discount Charm" additionalName="Sealed" type="EtcItem">
 		<!-- When in inventory, increases the number of free XP recoveries. -->
@@ -382,6 +405,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90311" min="1" max="1" chance="100" /> <!-- Brooch Lv. 1 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97528" name="Package: Brooch Lv. 2" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -392,6 +420,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90312" min="1" max="1" chance="100" /> <!-- Brooch Lv. 2 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97529" name="Package: Brooch Lv. 4" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -402,6 +435,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91303" min="1" max="1" chance="100" /> <!-- Brooch Lv. 4 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97530" name="Package: Brooch Lv. 5" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -412,6 +450,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91304" min="1" max="1" chance="100" /> <!-- Brooch Lv. 5 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97531" name="Package: Brooch Lv. 6" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -422,6 +465,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96960" min="1" max="1" chance="100" /> <!-- Brooch Lv. 6 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97532" name="Package: Brooch Lv. 7" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -432,6 +480,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96961" min="1" max="1" chance="100" /> <!-- Brooch Lv. 7 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97533" name="Package: Brooch Lv. 8" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -442,6 +495,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96962" min="1" max="1" chance="100" /> <!-- Brooch Lv. 8 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97534" name="Package: Brooch Lv. 9" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -452,6 +510,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97512" min="1" max="1" chance="100" /> <!-- Brooch Lv. 9 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97535" name="Package: Brooch Lv. 10" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -462,6 +525,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97513" min="1" max="1" chance="100" /> <!-- Brooch Lv. 10 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97536" name="Package: Talisman Bracelet Lv. 1" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -472,6 +540,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="9589" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 1 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97537" name="Package: Talisman Bracelet Lv. 2" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -482,6 +555,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="9590" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 2 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97538" name="Package: Talisman Bracelet Lv. 4" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -492,6 +570,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="49703" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 4 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97539" name="Package: Talisman Bracelet Lv. 5" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -502,6 +585,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92031" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 5 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97540" name="Package: Talisman Bracelet Lv. 6" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -512,6 +600,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92032" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 6 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97541" name="Package: Talisman Bracelet Lv. 7" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -522,6 +615,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96963" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 7 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97542" name="Package: Talisman Bracelet Lv. 8" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -532,6 +630,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96964" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 8 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97543" name="Package: Talisman Bracelet Lv. 9" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -542,6 +645,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97514" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 9 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97544" name="Package: Talisman Bracelet Lv. 10" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -552,6 +660,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97515" min="1" max="1" chance="100" /> <!-- Talisman Bracelet Lv. 10 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97545" name="Package: Agathion Bracelet Lv. 1" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -562,6 +675,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90888" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 1 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97546" name="Package: Agathion Bracelet Lv. 2" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -572,6 +690,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90889" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 2 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97547" name="Package: Agathion Bracelet Lv. 4" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -582,6 +705,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="90891" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 4 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97548" name="Package: Agathion Bracelet Lv. 5" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -592,6 +720,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91161" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 5 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97549" name="Package: Agathion Bracelet Lv. 6" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -602,6 +735,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96965" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 6 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97550" name="Package: Agathion Bracelet Lv. 7" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -612,6 +750,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96966" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 7 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97551" name="Package: Agathion Bracelet Lv. 8" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -622,6 +765,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96967" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 8 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97552" name="Package: Agathion Bracelet Lv. 9" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -632,6 +780,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97516" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 9 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97553" name="Package: Agathion Bracelet Lv. 10" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -642,6 +795,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97517" min="1" max="1" chance="100" /> <!-- Agathion Bracelet Lv. 10 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97554" name="Kit: Eva's Brooch (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -652,6 +810,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96985" min="10" max="10" chance="100" /> <!-- Package: Brooch Lv. 3 -->
+			<item id="97557" min="1" max="1" chance="100" /> <!-- Eva's Crystal (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97555" name="Kit: Talisman of Eva (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -662,6 +826,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96984" min="10" max="10" chance="100" /> <!-- Package: Talisman Bracelet Lv. 3 -->
+			<item id="97557" min="1" max="1" chance="100" /> <!-- Eva's Crystal (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97556" name="Kit: Eva's Agathion (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -672,6 +842,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96983" min="10" max="10" chance="100" /> <!-- Package: Agathion Bracelet Lv. 3 -->
+			<item id="97557" min="1" max="1" chance="100" /> <!-- Eva's Crystal (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97557" name="Eva's Crystal (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Required for creating various items through the Special Craft. -->
@@ -720,6 +896,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="1" maxEnchant="1" chance="100" /> <!-- +1 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97561" name="Package: +2 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -730,6 +911,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="2" maxEnchant="2" chance="100" /> <!-- +2 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97562" name="Package: +3 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -740,6 +926,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97563" name="Package: +4 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -750,6 +941,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="4" maxEnchant="4" chance="100" /> <!-- +4 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97564" name="Package: +5 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -760,6 +956,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97565" name="Package: +6 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -770,6 +971,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97566" name="Package: +7 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -780,6 +986,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97567" name="Package: +8 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -790,6 +1001,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="8" maxEnchant="8" chance="100" /> <!-- +8 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97568" name="Package: +9 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -800,6 +1016,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="9" maxEnchant="9" chance="100" /> <!-- +9 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97569" name="Package: +10 Blessed Talisman of Speed" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -810,6 +1031,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97558" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Blessed Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97570" name="Package: +1 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -820,6 +1046,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="1" maxEnchant="1" chance="100" /> <!-- +1 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97571" name="Package: +2 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -830,6 +1061,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="2" maxEnchant="2" chance="100" /> <!-- +2 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97572" name="Package: +3 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -840,6 +1076,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97573" name="Package: +4 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -850,6 +1091,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="4" maxEnchant="4" chance="100" /> <!-- +4 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97574" name="Package: +5 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -860,6 +1106,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97575" name="Package: +6 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -870,6 +1121,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97576" name="Package: +7 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -880,6 +1136,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97577" name="Package: +8 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -890,6 +1151,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="8" maxEnchant="8" chance="100" /> <!-- +8 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97578" name="Package: +9 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -900,6 +1166,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="9" maxEnchant="9" chance="100" /> <!-- +9 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97579" name="Package: +10 Blessed Talisman of Eva" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -910,6 +1181,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97559" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Blessed Talisman of Eva -->
+		</capsuled_items>
 	</item>
 	<item id="97580" name="+2 ~ +4 Talisman of Speed Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -920,6 +1196,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="92403" min="1" max="1" minEnchant="4" maxEnchant="4" chance="20" /> <!-- +4 Talisman of Speed -->
+			<item id="92403" min="1" max="1" minEnchant="3" maxEnchant="3" chance="30" /> <!-- +3 Talisman of Speed -->
+			<item id="92403" min="1" max="1" minEnchant="2" maxEnchant="2" chance="50" /> <!-- +2 Talisman of Speed -->
+		</capsuled_items>
 	</item>
 	<item id="97581" name="Sayha's Grace" additionalName="Sealed" type="EtcItem">
 		<set name="icon" val="icon.etc_sayha_point_01" />
@@ -962,6 +1247,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97583" min="100" max="100" chance="100" /> <!-- Sayha's Storm Pack (Time-limited) -->
+			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97585" name="Spellbook Chest - 4 Stars (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -972,6 +1263,40 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="93387" min="1" max="1" chance="3" /> <!-- Spellbook: Ultimate Death Knight Transformation -->
+			<item id="94498" min="1" max="1" chance="3" /> <!-- Spellbook: Titan Champion -->
+			<item id="94508" min="1" max="1" chance="3" /> <!-- Spellbook: Cacophony of War -->
+			<item id="94668" min="1" max="1" chance="4" /> <!-- Spellbook: Pa'agrio's Touch -->
+			<item id="94673" min="1" max="1" chance="4" /> <!-- Spellbook: Team Building -->
+			<item id="94861" min="1" max="1" chance="4" /> <!-- Spellbook: Tranquility -->
+			<item id="94862" min="1" max="1" chance="4" /> <!-- Spellbook: Exclusion -->
+			<item id="94863" min="1" max="1" chance="3" /> <!-- Spellbook: Dark Disruption -->
+			<item id="95346" min="1" max="1" chance="3" /> <!-- Spellbook: Meteor -->
+			<item id="95347" min="1" max="1" chance="4" /> <!-- Spellbook: Rolling Dice -->
+			<item id="95354" min="1" max="1" chance="4" /> <!-- Spellbook: Dragon Strike -->
+			<item id="95861" min="1" max="1" chance="4" /> <!-- Spellbook: Mechanical Hero -->
+			<item id="96289" min="1" max="1" chance="3" /> <!-- Spellbook: Phoenix Shield -->
+			<item id="96291" min="1" max="1" chance="3" /> <!-- Spellbook: Hell -->
+			<item id="96293" min="1" max="1" chance="4" /> <!-- Spellbook: Shelter -->
+			<item id="96295" min="1" max="1" chance="3" /> <!-- Spellbook: Condemnation -->
+			<item id="96670" min="1" max="1" chance="4" /> <!-- Spellbook: Critical Assault -->
+			<item id="96671" min="1" max="1" chance="3" /> <!-- Spellbook: Fury Blade -->
+			<item id="96672" min="1" max="1" chance="4" /> <!-- Spellbook: Mortal Piercing -->
+			<item id="96873" min="1" max="1" chance="3" /> <!-- Spellbook: Legendary Archer -->
+			<item id="97111" min="1" max="1" chance="4" /> <!-- Spellbook: Wild Evolution -->
+			<item id="97182" min="1" max="1" chance="3" /> <!-- Spellbook: Cat Emperor -->
+			<item id="97183" min="1" max="1" chance="4" /> <!-- Spellbook: Unicorn Guard -->
+			<item id="97184" min="1" max="1" chance="3" /> <!-- Spellbook: Lord Raise -->
+			<item id="97318" min="1" max="1" chance="4" /> <!-- Spellbook: Challenger -->
+			<item id="97323" min="1" max="1" chance="3" /> <!-- Spellbook: Great Sweep -->
+			<item id="97453" min="1" max="1" chance="3" /> <!-- Spellbook: Overwhelming Power -->
+			<item id="97465" min="1" max="1" chance="3" /> <!-- Spellbook: Leopold -->
+		</capsuled_items>
 	</item>
 	<item id="97586" name="Package: +5 Gloves of Silence" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -982,6 +1307,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93076" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Gloves of Silence (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97587" name="New Cloak - Death Knight 1" additionalName="To Be Crafted" type="Armor">
 		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i01" />
@@ -1065,6 +1395,18 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95693" min="3" max="3" chance="15" /> <!-- Berserker's Scroll (Time-limited) -->
+			<item id="94380" min="15" max="15" chance="15" /> <!-- Scroll: Boost Attack (Time-limited) -->
+			<item id="94381" min="15" max="15" chance="15" /> <!-- Scroll: Boost Defense (Time-limited) -->
+			<item id="91840" min="15" max="15" chance="15" /> <!-- XP Growth Scroll (Time-limited) -->
+			<item id="93848" min="20" max="20" chance="15" /> <!-- Sayha's Cookie (Time-limited) -->
+			<item id="90907" min="40" max="40" chance="25" /> <!-- Soulshot Ticket -->
+		</capsuled_items>
 	</item>
 	<item id="97594" name="Scroll: Enchant Armor/ Weapon Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1075,6 +1417,18 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="93268" min="1" max="1" chance="7" /> <!-- Improved Scroll: Enchant A-grade Weapon -->
+			<item id="93269" min="1" max="1" chance="10" /> <!-- Improved Scroll: Enchant A-grade Armor -->
+			<item id="93976" min="1" max="1" chance="8" /> <!-- Scroll: Enchant A-grade Weapon -->
+			<item id="93977" min="1" max="1" chance="25" /> <!-- Scroll: Enchant A-grade Armor -->
+			<item id="93406" min="1" max="1" chance="20" /> <!-- Scroll: Enchant B-grade Weapon -->
+			<item id="93407" min="1" max="1" chance="35" /> <!-- Scroll: Enchant B-grade Armor -->
+		</capsuled_items>
 	</item>
 	<item id="97595" name="New Cloak 2" additionalName="To Be Crafted" type="Armor">
 		<set name="icon" val="BranchSys2.Icon.7anni_cloack_i01" />
@@ -1126,6 +1480,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96700" min="1" max="1" chance="100" /> <!-- Beryl Lv. 1 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97599" name="Beryl Jewelry Box Lv. 2" additionalName="Sealed" type="EtcItem">
 		<!-- Can be compounded with a Jewelry Box of the same level and a jewel. Double-click to get more information about the contents. -->
@@ -1136,5 +1495,10 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96701" min="1" max="1" chance="100" /> <!-- Beryl Lv. 2 (Sealed) -->
+		</capsuled_items>
 	</item>
 </list>
