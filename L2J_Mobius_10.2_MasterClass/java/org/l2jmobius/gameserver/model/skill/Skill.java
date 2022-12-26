@@ -1107,6 +1107,7 @@ public class Skill implements IIdentifiable
 				LOGGER.log(Level.WARNING, "Exception in Skill.getTarget(): " + e.getMessage(), e);
 			}
 		}
+		
 		creature.sendMessage("Target type of skill " + this + " is not currently handled.");
 		return null;
 	}
@@ -1122,6 +1123,7 @@ public class Skill implements IIdentifiable
 		{
 			return null;
 		}
+		
 		final IAffectScopeHandler handler = AffectScopeHandler.getInstance().getHandler(getAffectScope());
 		if (handler != null)
 		{
@@ -1136,6 +1138,7 @@ public class Skill implements IIdentifiable
 				LOGGER.log(Level.WARNING, "Exception in Skill.getTargetsAffected(): " + e.getMessage(), e);
 			}
 		}
+		
 		creature.sendMessage("Target affect scope of skill " + this + " is not currently handled.");
 		return null;
 	}

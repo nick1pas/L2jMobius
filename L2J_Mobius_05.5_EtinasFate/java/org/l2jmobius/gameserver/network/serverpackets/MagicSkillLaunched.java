@@ -16,7 +16,6 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
@@ -51,9 +50,9 @@ public class MagicSkillLaunched extends ServerPacket
 		_targets = targets;
 	}
 	
-	public MagicSkillLaunched(Creature creature, int skillId, int skillLevel, SkillCastingType castingType, WorldObject... targets)
+	public MagicSkillLaunched(Creature creature, int skillId, int skillLevel, SkillCastingType castingType, WorldObject target)
 	{
-		this(creature, skillId, skillLevel, castingType, (targets == null ? Collections.singletonList(creature) : Arrays.asList(targets)));
+		this(creature, skillId, skillLevel, castingType, Collections.singletonList(target == null ? creature : target));
 	}
 	
 	public MagicSkillLaunched(Creature creature, int skillId, int skillLevel)
