@@ -77,7 +77,7 @@ public class Q00382_KailsMagicCoin extends Quest
 		
 		switch (event)
 		{
-			case "30386-03.htm":
+			case "30687-03.htm":
 			{
 				if (qs.isCreated())
 				{
@@ -86,8 +86,8 @@ public class Q00382_KailsMagicCoin extends Quest
 				}
 				break;
 			}
-			case "30386-05.htm":
-			case "30386-06.htm":
+			case "30687-05.htm":
+			case "30687-06.htm":
 			{
 				if (qs.isStarted())
 				{
