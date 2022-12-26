@@ -80,7 +80,7 @@ public class BlessedSpiritShot implements IItemHandler
 		}
 		
 		// Charge Spirit shot
-		player.chargeShot(ShotType.SPIRITSHOTS);
+		player.chargeShot(ShotType.BLESSED_SPIRITSHOTS);
 		
 		// Send message to client
 		if (!player.getAutoSoulShot().contains(item.getId()))
