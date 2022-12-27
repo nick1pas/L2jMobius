@@ -287,6 +287,7 @@ import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.skill.SkillCaster;
 import org.l2jmobius.gameserver.model.skill.SkillCastingType;
+import org.l2jmobius.gameserver.model.skill.targets.AffectScope;
 import org.l2jmobius.gameserver.model.skill.targets.TargetType;
 import org.l2jmobius.gameserver.model.stats.BaseStat;
 import org.l2jmobius.gameserver.model.stats.Formulas;
@@ -8658,16 +8659,19 @@ public class Player extends Playable
 		final Location worldPosition = _currentSkillWorldPosition;
 		if ((usedSkill.getTargetType() == TargetType.GROUND) && (worldPosition == null))
 		{
-			if (getCurrentMp() >= usedSkill.getMpConsume())
+			if (usedSkill.getAffectScope() == AffectScope.FAN_PB)
 			{
-				if (usedSkill.checkCondition(this, target, true))
+				if (getCurrentMp() >= usedSkill.getMpConsume())
 				{
-					sendPacket(new MagicSkillUse(this, this, usedSkill.getDisplayId(), usedSkill.getDisplayLevel(), 0, 0, usedSkill.getReuseDelayGroup(), -1, SkillCastingType.NORMAL, true));
+					if (usedSkill.checkCondition(this, target, true))
+					{
+						sendPacket(new MagicSkillUse(this, this, usedSkill.getDisplayId(), usedSkill.getDisplayLevel(), 0, 0, usedSkill.getReuseDelayGroup(), -1, SkillCastingType.NORMAL, true));
+					}
 				}
-			}
-			else
-			{
-				sendPacket(SystemMessageId.NOT_ENOUGH_MP);
+				else
+				{
+					sendPacket(SystemMessageId.NOT_ENOUGH_MP);
+				}
 			}
 			sendPacket(ActionFailed.STATIC_PACKET);
 			return false;

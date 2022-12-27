@@ -67,6 +67,7 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.item.type.ActionType;
 import org.l2jmobius.gameserver.model.options.OptionSkillHolder;
 import org.l2jmobius.gameserver.model.options.OptionSkillType;
+import org.l2jmobius.gameserver.model.skill.targets.AffectScope;
 import org.l2jmobius.gameserver.model.skill.targets.TargetType;
 import org.l2jmobius.gameserver.model.stats.Formulas;
 import org.l2jmobius.gameserver.model.stats.Stat;
@@ -346,14 +347,14 @@ public class SkillCaster implements Runnable
 		if (!_skill.isNotBroadcastable())
 		{
 			caster.broadcastPacket(new MagicSkillUse(caster, target, _skill.getDisplayId(), _skill.getDisplayLevel(), displayedCastTime, reuseDelay, _skill.getReuseDelayGroup(), actionId, _castingType));
-			if ((_skill.getTargetType() == TargetType.GROUND) && caster.isPlayer())
+			if (caster.isPlayer() && (_skill.getTargetType() == TargetType.GROUND) && (_skill.getAffectScope() == AffectScope.FAN_PB))
 			{
 				final Player player = caster.getActingPlayer();
 				final Location worldPosition = player.getCurrentSkillWorldPosition();
 				if (worldPosition != null)
 				{
 					final Location location = new Location(worldPosition.getX(), worldPosition.getY(), worldPosition.getZ(), worldPosition.getHeading());
-					ThreadPool.schedule(() -> player.broadcastPacket(new ExMagicSkillUseGround(player.getObjectId(), _skill.getId(), location)), 100);
+					ThreadPool.schedule(() -> player.broadcastPacket(new ExMagicSkillUseGround(player.getObjectId(), _skill.getDisplayId(), location)), 100);
 				}
 			}
 		}
@@ -587,7 +588,7 @@ public class SkillCaster implements Runnable
 		caster.rechargeShots(_skill.useSoulShot(), _skill.useSpiritShot(), false);
 		
 		// Reset current skill world position.
-		if (caster.isPlayer())
+		if (caster.isPlayer() && (_skill.getTargetType() == TargetType.GROUND) && ((_skill.getAffectScope() == AffectScope.FAN_PB) || (_skill.getAffectScope() == AffectScope.FAN)))
 		{
 			caster.getActingPlayer().setCurrentSkillWorldPosition(null);
 		}
