@@ -9,6 +9,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97901" name="Jewelry Box Lv. 6 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -19,6 +20,19 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="92040" min="1" max="1" chance="15" /> <!-- Amber Lv. 6 (Sealed) -->
+			<item id="92050" min="1" max="1" chance="15" /> <!-- Opal Lv. 6 (Sealed) -->
+			<item id="92060" min="1" max="1" chance="15" /> <!-- Coral Lv. 6 (Sealed) -->
+			<item id="92070" min="1" max="1" chance="10" /> <!-- Onyx Lv. 6 (Sealed) -->
+			<item id="92080" min="1" max="1" chance="15" /> <!-- Spinel Lv. 6 (Sealed) -->
+			<item id="92090" min="1" max="1" chance="15" /> <!-- Zircon Lv. 6 (Sealed) -->
+			<item id="92100" min="1" max="1" chance="15" /> <!-- Moonstone Lv. 6 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97902" name="+5 Agathion Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -29,6 +43,17 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="93128" min="1" max="1" minEnchant="5" maxEnchant="5" chance="20" /> <!-- +5 Agathion Ignis (Sealed) -->
+			<item id="93129" min="1" max="1" minEnchant="5" maxEnchant="5" chance="20" /> <!-- +5 Agathion Nebula (Sealed) -->
+			<item id="93130" min="1" max="1" minEnchant="5" maxEnchant="5" chance="20" /> <!-- +5 Agathion Procella (Sealed) -->
+			<item id="93131" min="1" max="1" minEnchant="5" maxEnchant="5" chance="20" /> <!-- +5 Agathion Petram (Sealed) -->
+			<item id="93132" min="1" max="1" minEnchant="5" maxEnchant="5" chance="20" /> <!-- +5 Agathion Joy (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97903" name="+5 Special Equipment Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -39,6 +64,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="91862" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Dragon Belt (Sealed) -->
+			<item id="93301" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Cloak of Protection (Sealed) -->
+			<item id="94166" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Circlet of Hero (Sealed) -->
+			<item id="97259" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Piercing Mask (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97904" name="+6 Special Equipment Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -49,6 +84,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="91862" min="1" max="1" minEnchant="6" maxEnchant="6" chance="25" /> <!-- +6 Dragon Belt (Sealed) -->
+			<item id="93301" min="1" max="1" minEnchant="6" maxEnchant="6" chance="25" /> <!-- +6 Cloak of Protection (Sealed) -->
+			<item id="94166" min="1" max="1" minEnchant="6" maxEnchant="6" chance="25" /> <!-- +6 Circlet of Hero (Sealed) -->
+			<item id="97259" min="1" max="1" minEnchant="6" maxEnchant="6" chance="25" /> <!-- +6 Piercing Mask (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97905" name="Behemoth/ Glakias Doll Pack Lv. 1-2 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -59,6 +104,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="97480" min="1" max="1" chance="10" /> <!-- Behemoth Doll Lv. 2 -->
+			<item id="97485" min="1" max="1" chance="10" /> <!-- Glakias Doll Lv. 2 -->
+			<item id="97479" min="1" max="1" chance="40" /> <!-- Behemoth Doll Lv. 1 (Sealed) -->
+			<item id="97484" min="1" max="1" chance="40" /> <!-- Glakias Doll Lv. 1 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97906" name="+1 ~ +3 Rare Accessory Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -69,6 +124,42 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<!-- Other -->
+			<item id="94384" min="1" max="1" chance="35" /> <!-- Scroll: Enchant Rare Accessories -->
+			<item id="94386" min="1" max="1" chance="15" /> <!-- Improved Scroll: Enchant Rare Accessories -->
+			<!-- +3 Accessory Jewel -->
+			<item id="90992" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Antharas' Earring -->
+			<item id="91550" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Frintezza's Necklace -->
+			<item id="49580" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Baium's Ring -->
+			<item id="96600" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Beleth' Ring -->
+			<item id="6660" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Queen Ant's Ring -->
+			<item id="90763" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Zaken's Earring -->
+			<item id="6661" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Orfen's Earring -->
+			<item id="6662" min="1" max="1" minEnchant="3" maxEnchant="3" chance="0.625" /> <!-- +3 Ring of Core -->
+			<!-- +2 Accessory Jewel -->
+			<item id="90992" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Antharas' Earring -->
+			<item id="91550" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Frintezza's Necklace -->
+			<item id="49580" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Baium's Ring -->
+			<item id="96600" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Beleth' Ring -->
+			<item id="6660" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Queen Ant's Ring -->
+			<item id="90763" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Zaken's Earring -->
+			<item id="6661" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Orfen's Earring -->
+			<item id="6662" min="1" max="1" minEnchant="2" maxEnchant="2" chance="1.875" /> <!-- +2 Ring of Core -->
+			<!-- +1 Accessory Jewel -->
+			<item id="90992" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Antharas' Earring -->
+			<item id="91550" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Frintezza's Necklace -->
+			<item id="49580" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Baium's Ring -->
+			<item id="96600" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Beleth' Ring -->
+			<item id="6660" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Queen Ant's Ring -->
+			<item id="90763" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Zaken's Earring -->
+			<item id="6661" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Orfen's Earring -->
+			<item id="6662" min="1" max="1" minEnchant="1" maxEnchant="1" chance="3.75" /> <!-- +1 Ring of Core -->
+		</capsuled_items>
 	</item>
 	<item id="97907" name="Blessed Augmenting Stone Pack (50 pcs.) (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -79,6 +170,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="97444" min="50" max="50" chance="25" /> <!-- Blessed Augmenting Stone: Weapon (Sealed) -->
+			<item id="97445" min="50" max="50" chance="25" /> <!-- Blessed Augmenting Stone: Armor (Sealed) -->
+			<item id="97447" min="50" max="50" chance="25" /> <!-- Blessed Augmenting Stone: Accessory (Sealed) -->
+			<item id="97790" min="50" max="50" chance="25" /> <!-- Blessed Augmenting Stone: Special Equipment (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97908" name="Dye Pack Lv. 13 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -89,6 +190,18 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="96367" min="1" max="1" chance="20" /> <!-- STR Dye Lv. 13 -->
+			<item id="96387" min="1" max="1" chance="15" /> <!-- CON Dye Lv. 13 -->
+			<item id="96407" min="1" max="1" chance="15" /> <!-- DEX Dye Lv. 13 -->
+			<item id="96427" min="1" max="1" chance="20" /> <!-- INT Dye Lv. 13 -->
+			<item id="96447" min="1" max="1" chance="15" /> <!-- MEN Dye Lv. 13 -->
+			<item id="96467" min="1" max="1" chance="15" /> <!-- WIT Dye Lv. 13 -->
+		</capsuled_items>
 	</item>
 	<item id="97909" name="Package: +6 Frost Lord's Sword (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -99,6 +212,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96751" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97910" name="Package: +6 Frost Lord's Two-handed Sword (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -109,6 +227,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96752" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Two-handed Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97911" name="Package: +6 Frost Lord's Axe (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -119,6 +242,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96753" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Axe (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97912" name="Package: +6 Frost Lord's Dagger (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -129,6 +257,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96754" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Dagger (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97913" name="Package: +6 Frost Lord's Spear (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -139,6 +272,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96755" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Spear (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97914" name="Package: +6 Frost Lord's Bow (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -149,6 +287,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96756" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Bow (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97915" name="Package: +6 Frost Lord's Blade Fists (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -159,6 +302,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96757" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Blade Fists (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97916" name="Package: +6 Frost Lord's Magic Blunt Weapon (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -169,6 +317,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96758" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Magic Blunt Weapon (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97917" name="Package: +6 Frost Lord's Staff (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -179,6 +332,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96759" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Staff (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97918" name="Package: +6 Frost Lord's Ancient Sword (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -189,6 +347,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96760" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Ancient Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97919" name="Package: +6 Frost Lord's Rapier (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -199,6 +362,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96761" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Rapier (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97920" name="Package: +6 Frost Lord's Pistols (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -209,6 +377,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96762" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Pistols (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97921" name="Package: +6 Frost Lord's Dual Swords (Sealed)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -219,6 +392,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96763" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Frost Lord's Dual Swords (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97922" name="Blessed Scroll: Enchant Weapon/Armor Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -229,6 +407,14 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="93268" min="1" max="1" chance="25" /> <!-- Improved Scroll: Enchant A-grade Weapon -->
+			<item id="93269" min="1" max="1" chance="75" /> <!-- Improved Scroll: Enchant A-grade Armor -->
+		</capsuled_items>
 	</item>
 	<item id="97924" name="+7 Frozen Weapon Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for +7 Frost Lord's Weapon through the Game Assistant. -->
@@ -239,6 +425,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97925" name="+6 Armor of Protection Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for +6 Armor of Protection through the Game Assistant. -->
@@ -249,6 +436,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97926" name="Package: +7 Frost Lord's Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -259,6 +447,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95725" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97927" name="Package: +7 Frost Lord's Two-handed Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -269,6 +462,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95726" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Two-handed Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97928" name="Package: +7 Frost Lord's Axe" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -279,6 +477,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95727" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Axe (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97929" name="Package: +7 Frost Lord's Dagger" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -289,6 +492,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95728" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Dagger (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97930" name="Package: +7 Frost Lord's Spear" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -299,6 +507,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95729" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Spear (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97931" name="Package: +7 Frost Lord's Bow" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -309,6 +522,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95730" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Bow (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97932" name="Package: +7 Frost Lord's Blade Fists" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -319,6 +537,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95731" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Blade Fists (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97933" name="Package: +7 Frost Lord's Magic Blunt Weapon" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -329,6 +552,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95732" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Magic Blunt Weapon (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97934" name="Package: +7 Frost Lord's Staff" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -339,6 +567,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95733" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Staff (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97935" name="Package: +7 Frost Lord's Ancient Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -349,6 +582,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95734" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Ancient Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97936" name="Package: +7 Frost Lord's Rapier" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -359,6 +597,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95735" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Rapier (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97937" name="Package: +7 Frost Lord's Pistols" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -369,6 +612,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95736" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Pistols (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97938" name="Package: +7 Frost Lord's Dual Swords" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -379,6 +627,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95737" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Frost Lord's Dual Swords (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97939" name="Kit: Pet Selection (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -389,6 +642,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97899" min="1" max="1" chance="100" /> <!-- Sealed Pet Necklace Coupon (Time-limited) -->
+			<item id="97432" min="100" max="100" chance="100" /> <!-- Scroll: Boost Pet's Attack -->
+			<item id="97433" min="100" max="100" chance="100" /> <!-- Scroll: Boost Pet's Defense -->
+			<item id="94636" min="100" max="100" chance="100" /> <!-- Pet's XP Growth Scroll -->
+			<item id="94635" min="100" max="100" chance="100" /> <!-- Low-grade Pet XP Crystal -->
+		</capsuled_items>
 	</item>
 	<item id="97940" name="Giran Seal Pack - 100 pcs. (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -399,6 +661,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92314" min="100" max="100" chance="100" /> <!-- Giran Seal (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97941" name="Giran Seal Pack - 80 pcs. (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -409,6 +676,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92314" min="80" max="80" chance="100" /> <!-- Giran Seal (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97942" name="+0 ~ +4 Talisman Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -419,6 +691,32 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="92446" min="1" max="1" chance="1" /> <!-- +4 Talisman of Aden Pack -->
+			<item id="93334" min="1" max="1" chance="1" /> <!-- +4 Talisman of Authority Pack -->
+			<item id="92463" min="1" max="1" chance="1" /> <!-- +4 Talisman of Speed Pack -->
+			<item id="92454" min="1" max="1" chance="1" /> <!-- +4 Talisman of Eva Pack -->
+			<item id="92445" min="1" max="1" chance="2" /> <!-- +3 Talisman of Aden Pack -->
+			<item id="93333" min="1" max="1" chance="2" /> <!-- +3 Talisman of Authority Pack -->
+			<item id="92462" min="1" max="1" chance="2" /> <!-- +3 Talisman of Speed Pack -->
+			<item id="92453" min="1" max="1" chance="2" /> <!-- +3 Talisman of Eva Pack -->
+			<item id="92444" min="1" max="1" chance="4" /> <!-- +2 Talisman of Aden Pack -->
+			<item id="97952" min="1" max="1" chance="4" /> <!-- +2 Talisman of Authority Pack -->
+			<item id="92461" min="1" max="1" chance="4" /> <!-- +2 Talisman of Speed Pack -->
+			<item id="92452" min="1" max="1" chance="4" /> <!-- +2 Talisman of Eva Pack -->
+			<item id="92443" min="1" max="1" chance="6" /> <!-- +1 Talisman of Aden Pack -->
+			<item id="97951" min="1" max="1" chance="6" /> <!-- +1 Talisman of Authority Pack -->
+			<item id="92460" min="1" max="1" chance="6" /> <!-- +1 Talisman of Speed Pack -->
+			<item id="92451" min="1" max="1" chance="6" /> <!-- +1 Talisman of Eva Pack -->
+			<item id="91767" min="1" max="1" chance="12" /> <!-- Talisman of Aden Pack -->
+			<item id="93330" min="1" max="1" chance="12" /> <!-- Talisman of Authority Pack -->
+			<item id="93685" min="1" max="1" chance="12" /> <!-- Talisman of Speed Pack -->
+			<item id="92020" min="1" max="1" chance="12" /> <!-- Talisman of Eva Pack -->
+		</capsuled_items>
 	</item>
 	<item id="97943" name="Genie's Lamp" additionalName="Sealed" type="EtcItem">
 		<!-- The lamp is not empty - there is a genie living inside. Double-click to summon him. -->
@@ -523,6 +821,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91061" min="1" max="1" minEnchant="1" maxEnchant="1" chance="100" /> <!-- +1 Talisman of Authority -->
+		</capsuled_items>
 	</item>
 	<item id="97952" name="+2 Talisman of Authority Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -533,6 +836,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91061" min="1" max="1" minEnchant="2" maxEnchant="2" chance="100" /> <!-- +2 Talisman of Authority -->
+		</capsuled_items>
 	</item>
 	<item id="97953" name="+5 Talisman of Authority Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -543,6 +851,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91061" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Talisman of Authority -->
+		</capsuled_items>
 	</item>
 	<item id="97954" name="+6 Talisman of Authority Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -553,6 +866,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91061" min="1" max="1" minEnchant="6" maxEnchant="6" chance="100" /> <!-- +6 Talisman of Authority -->
+		</capsuled_items>
 	</item>
 	<item id="97955" name="+8 Talisman of Authority Pack" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -563,6 +881,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91061" min="1" max="1" minEnchant="8" maxEnchant="8" chance="100" /> <!-- +8 Talisman of Authority -->
+		</capsuled_items>
 	</item>
 	<item id="97956" name="Galaxia's Ancient Sword" type="Weapon">
 		<!-- <font color=ff6666><Unavailable to Humans/ Elves/ Dark Elves/ Sylphs/ Vanguard Riders.></font> -->
@@ -769,6 +1092,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93448" min="3" max="3" chance="100" /> <!-- A-grade Weapon Coupon (Sealed) -->
+			<item id="93449" min="5" max="5" chance="100" /> <!-- A-grade Armor Coupon (Sealed) -->
+			<item id="97965" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 40 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97965" name="Prestigious Kit Lv. 40 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -779,6 +1109,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92445" min="1" max="1" chance="100" /> <!-- +3 Talisman of Aden Pack -->
+			<item id="92453" min="1" max="1" chance="100" /> <!-- +3 Talisman of Eva Pack -->
+			<item id="92462" min="1" max="1" chance="100" /> <!-- +3 Talisman of Speed Pack -->
+			<item id="93333" min="1" max="1" chance="100" /> <!-- +3 Talisman of Authority Pack -->
+			<item id="97966" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 50 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97966" name="Prestigious Kit Lv. 50 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -789,6 +1128,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92068" min="1" max="1" chance="100" /> <!-- Onyx Lv. 3 (Sealed) -->
+			<item id="92088" min="1" max="1" chance="100" /> <!-- Zircon Lv. 3 (Sealed) -->
+			<item id="92078" min="1" max="1" chance="100" /> <!-- Spinel Lv. 3 (Sealeed) -->
+			<item id="92098" min="1" max="1" chance="100" /> <!-- Moonstone Lv. 3 (Sealeed) -->
+			<item id="97967" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 60 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97967" name="Prestigious Kit Lv. 60 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -799,6 +1147,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96625" min="1" max="1" chance="100" /> <!-- Package: +5 Agathion Ignis -->
+			<item id="96626" min="1" max="1" chance="100" /> <!-- Package: +5 Agathion Nebula -->
+			<item id="96627" min="1" max="1" chance="100" /> <!-- Package: +5 Agathion Procella -->
+			<item id="96628" min="1" max="1" chance="100" /> <!-- Package: +5 Agathion Petram -->
+			<item id="97968" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 66 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97968" name="Prestigious Kit Lv. 66 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -809,6 +1166,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="91926" min="1" max="1" chance="100" /> <!-- +3 Dragon Belt Pack (Sealed) -->
+			<item id="97969" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 72 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97969" name="Prestigious Kit Lv. 72 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -819,6 +1182,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95716" min="1" max="1" chance="100" /> <!-- Package: +3 Cloak of Protection (Sealed) -->
+			<item id="97970" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 76 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97970" name="Prestigious Kit Lv. 76 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -829,6 +1198,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94619" min="1" max="1" chance="100" /> <!-- Package: +3 Circlet of Hero (Sealed) -->
+			<item id="97971" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 80 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97971" name="Prestigious Kit Lv. 80 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -839,6 +1214,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93297" min="1" max="1" chance="100" /> <!-- Einhasad’s Pendant Lv. 2 (Sealed) -->
+			<item id="97972" min="1" max="1" chance="100" /> <!-- Prestigious Kit Lv. 85 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97972" name="Prestigious Kit Lv. 85 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -849,6 +1230,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97880" min="1" max="1" chance="100" /> <!-- Prestigious Doll Box Lv. 1 (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97973" name="The Best Graduate's Cope" additionalName="Sealed" type="Armor">
 		<set name="icon" val="BranchSys2.icon.g_graduation_cap_gold" />
@@ -902,6 +1288,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97597" min="3" max="3" chance="100" /> <!-- Jewel Craft Coupon -->
+			<item id="94380" min="5" max="5" chance="100" /> <!-- Scroll: Boost Attack (Time-limited) -->
+			<item id="94381" min="5" max="5" chance="100" /> <!-- Scroll: Boost Defense (Time-limited) -->
+			<item id="93073" min="10" max="10" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) -->
+			<item id="97438" min="3" max="3" chance="100" /> <!-- Einhasad's Protection (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97978" name="Package: Jewel Craft Coupon Supplies (10 pcs.) (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -912,6 +1307,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97597" min="10" max="10" chance="100" /> <!-- Jewel Craft Coupon -->
+			<item id="94380" min="5" max="5" chance="100" /> <!-- Scroll: Boost Attack (Time-limited) -->
+			<item id="94381" min="5" max="5" chance="100" /> <!-- Scroll: Boost Defense (Time-limited) -->
+			<item id="93073" min="10" max="10" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) -->
+			<item id="97438" min="3" max="3" chance="100" /> <!-- Einhasad's Protection (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97979" name="First Package: Black Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -922,6 +1326,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97597" min="10" max="10" chance="100" /> <!-- Jewel Craft Coupon -->
+			<item id="94380" min="5" max="5" chance="100" /> <!-- Scroll: Boost Attack (Time-limited) -->
+			<item id="94381" min="5" max="5" chance="100" /> <!-- Scroll: Boost Defense (Time-limited) -->
+			<item id="93073" min="10" max="10" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) -->
+			<item id="97438" min="3" max="3" chance="100" /> <!-- Einhasad's Protection (Time-limited) -->
+			<item id="98022" min="1" max="1" chance="100" /> <!-- Black Coupon (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97980" name="Last Package: Black Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -932,6 +1346,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97597" min="10" max="10" chance="100" /> <!-- Jewel Craft Coupon -->
+			<item id="94380" min="5" max="5" chance="100" /> <!-- Scroll: Boost Attack (Time-limited) -->
+			<item id="94381" min="5" max="5" chance="100" /> <!-- Scroll: Boost Defense (Time-limited) -->
+			<item id="93073" min="10" max="10" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) -->
+			<item id="97438" min="3" max="3" chance="100" /> <!-- Einhasad's Protection (Time-limited) -->
+			<item id="98022" min="1" max="1" chance="100" /> <!-- Black Coupon (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97981" name="Crystal of Insolence (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- When used, applies the following effect. <Effect> Magic Lamp charging rate +5% P. Atk. +50 M. Atk. +50 Gather Crystals of Insolence to get various items through the special craft. Note! Cannot be used with items that apply the Magic Lamp charging rate effect. -->
@@ -943,6 +1367,12 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<skills>
+			<skill id="40459" level="1" /> <!-- Crystal of Insolence Lv. 1 -->
+		</skills>
 	</item>
 	<item id="97982" name="Adventurer's Dye Powder" additionalName="Sealed" type="EtcItem">
 		<!-- Material to enhance patterns and <font color=EEAA22>Adventurer's Dye Lv. 0</font>. <font color=bbaa88><Upgrading></font> To upgrade patterns, use 'Improve pattern' menu in the upper corner of the main window 'Patterns and Hidden Power'. To enhance dyes, use compounding. -->
@@ -954,6 +1384,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_depositable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97983" name="+5 A-grade Weapon Coupon" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for a +5 A-grade weapon through the Game Assistant. -->
@@ -964,6 +1395,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97984" name="+5 A-grade Armor Coupon" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for a +5 A-grade armor through the Game Assistant. -->
@@ -974,6 +1406,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97985" name="Rare Accessory Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for a rare accessory through the Game Assistant. -->
@@ -984,6 +1417,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97986" name="+5 Frozen Weapon Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for +5 Frost Lord's Weapon through the Game Assistant. -->
@@ -994,6 +1428,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97987" name="+5 Armor of Protection Coupon (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Can be exchanged for +5 Armor of Protection through the Game Assistant. -->
@@ -1004,6 +1439,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97988" name="Package: +5 Frost Lord's Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1014,6 +1450,14 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95725" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Two-handed Sword -->
+		</capsuled_items>
 	</item>
 	<item id="97989" name="Package: +5 Frost Lord's Two-handed Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1024,6 +1468,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95726" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Two-handed Sword -->
+		</capsuled_items>
 	</item>
 	<item id="97990" name="Package: +5 Frost Lord's Axe" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1034,6 +1485,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95727" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Axe -->
+		</capsuled_items>
 	</item>
 	<item id="97991" name="Package: +5 Frost Lord's Dagger" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1044,6 +1502,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95728" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Dagger -->
+		</capsuled_items>
 	</item>
 	<item id="97992" name="Package: +5 Frost Lord's Spear" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1054,6 +1519,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95729" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Spear -->
+		</capsuled_items>
 	</item>
 	<item id="97993" name="Package: +5 Frost Lord's Bow" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1064,6 +1536,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95730" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Bow -->
+		</capsuled_items>
 	</item>
 	<item id="97994" name="Package: +5 Frost Lord's Blade Fists" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1074,6 +1553,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95731" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Blade Fists -->
+		</capsuled_items>
 	</item>
 	<item id="97995" name="Package: +5 Frost Lord's Magic Blunt Weapon" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1084,6 +1570,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95732" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Magic Blunt Weapon -->
+		</capsuled_items>
 	</item>
 	<item id="97996" name="Package: +5 Frost Lord's Staff" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1094,6 +1587,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95733" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Staff -->
+		</capsuled_items>
 	</item>
 	<item id="97997" name="Package: +5 Frost Lord's Ancient Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1104,6 +1604,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95734" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Ancient Sword -->
+		</capsuled_items>
 	</item>
 	<item id="97998" name="Package: +5 Frost Lord's Rapier" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1114,6 +1621,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95735" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Rapier -->
+		</capsuled_items>
 	</item>
 	<item id="97999" name="Package: +5 Frost Lord's Pistols" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -1124,5 +1638,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="95736" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Pistols -->
+		</capsuled_items>
 	</item>
 </list>

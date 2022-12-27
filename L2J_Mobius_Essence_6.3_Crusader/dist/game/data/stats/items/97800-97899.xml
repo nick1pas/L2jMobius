@@ -19,6 +19,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96623" min="100" max="100" chance="100" /> <!-- Dye Powder (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97802" name="Spellbook: Extended Life" type="EtcItem">
 		<!-- A spellbook for learning the Extended Life skill. <Classes> All classes after the 3rd class change <Skill effect> Increases Max HP according to the character's level. -->
@@ -97,6 +102,21 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<!-- +3 Accessory Jewel -->
+			<item id="90992" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Antharas' Earring -->
+			<item id="91550" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Frintezza's Necklace -->
+			<item id="49580" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Baium's Ring -->
+			<item id="96600" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Beleth' Ring -->
+			<item id="6660" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Queen Ant's Ring -->
+			<item id="90763" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Zaken's Earring -->
+			<item id="6661" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Orfen's Earring -->
+			<item id="6662" min="1" max="1" minEnchant="3" maxEnchant="3" chance="12.5" /> <!-- +3 Ring of Core -->
+		</capsuled_items>
 	</item>
 	<item id="97810" name="Package: +7 Zaken's Blood Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -107,6 +127,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92404" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Zaken's Blood Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97811" name="Package: +7 Core's Plasmic Bow" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -117,6 +142,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92405" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Core's Plasmic Bow (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97812" name="Package: +7 Queen Ant's Stone Breaker" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -127,6 +157,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92421" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Queen Ant's Stone Breaker (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97813" name="Package: +7 Orfen's Venom Sword" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -137,6 +172,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92407" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Orfen's Venom Sword (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97814" name="Package: +7 Baium's Thunder Breaker" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -147,6 +187,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="92408" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Baium's Thunder Breaker (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97815" name="Package: +7 Anakim's Divine Pistols" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -157,6 +202,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94888" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Anakim's Divine Pistols (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97816" name="Package: +7 Beleth' Soul Eater" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -167,6 +217,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="96268" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Beleth' Soul Eater (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97817" name="Package: +7 Gorde's Flame Spear" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -177,6 +232,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97301" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Gorde's Flame Spear (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97818" name="Package: +7 Ice Crystal Breastplate" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -187,6 +247,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93139" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Ice Crystal Breastplate (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97819" name="Package: +7 Ice Crystal Gaiters" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -197,6 +262,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93140" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Ice Crystal Gaiters (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97820" name="Package: +7 Leather Armor of Lightning" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -207,6 +277,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93315" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Leather Armor of Lightning (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97821" name="Package: +7 Leather Leggings of Lightning" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -217,6 +292,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93316" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Leather Leggings of Lightning (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97822" name="Package: +7 Flaming Tunic" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -227,6 +307,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93733" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Flaming Tunic (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97823" name="Package: +7 Flaming Stockings" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -237,6 +322,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93734" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Flaming Stockings (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97824" name="Package: +7 Helmet of Mana" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -247,6 +337,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94083" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Helmet of Mana (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97825" name="Package: +7 Stun Gauntlets" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -257,6 +352,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94263" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Stun Gauntlets (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97826" name="Package: +7 Boots of Evasion" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -267,6 +367,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94085" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Boots of Evasion (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97827" name="Package: +7 Gloves of Silence" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -277,6 +382,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93075" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Gloves of Silence (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97828" name="Package: +7 Sigil of Inevitability" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -287,6 +397,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94299" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Sigil of Inevitability (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97829" name="Package: +7 Shield of Vengeance" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -297,6 +412,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="94301" min="1" max="1" minEnchant="7" maxEnchant="7" chance="100" /> <!-- +7 Shield of Vengeance (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97830" name="Tower of Insolence's Time Stone" type="EtcItem">
 		<!-- Prolongs your session zone's raid for 60 min. <Hunting zone> Tower of Insolence - World Hunting Zone -->
@@ -587,6 +707,27 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="2" />
+		<set name="extractableCountMax" val="2" />
+		<capsuled_items>
+			<!-- Guaranteed Item -->
+			<item id="97147" min="1" max="1" chance="99.9" /> <!-- Dye Powder -->
+			<!-- Random Item -->
+			<item id="90992" min="1" max="1" chance="0.02002002002" /> <!-- Antharas' Earring -->
+			<item id="91550" min="1" max="1" chance="0.02002002002" /> <!-- Frintezza's Necklace -->
+			<item id="49580" min="1" max="1" chance="0.02002002002" /> <!-- Baium's Ring -->
+			<item id="96600" min="1" max="1" chance="0.02002002002" /> <!-- Beleth' Ring -->
+			<item id="90763" min="1" max="1" chance="0.07007007007" /> <!-- Zaken's Earring -->
+			<item id="6660" min="1" max="1" chance="0.07007007007" /> <!-- Queen Ant's Ring -->
+			<item id="6661" min="1" max="1" chance="0.07007007007" /> <!-- Orfen's Earring -->
+			<item id="6662" min="1" max="1" chance="0.07007007007" /> <!-- Ring of Core -->
+			<item id="93268" min="1" max="1" chance="0.05005005005 " /> <!-- Improved Scroll: Enchant A-grade Weapon -->
+			<item id="93269" min="1" max="1" chance="0.08008008008 " /> <!-- Improved Scroll: Enchant A-grade Armor -->
+			<item id="94208" min="1" max="1" chance="0.15015015015" /> <!-- Scroll of Blessing: Weapon -->
+			<item id="97339" min="1" max="1" chance="0.35035035035" /> <!-- Scroll of Blessing: Armor -->
+		</capsuled_items>
 	</item>
 	<item id="97862" name="Solasol's Gift (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -597,6 +738,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="93685" min="1" max="1" chance="33" /> <!-- Enchant Kit: Talisman of Speed -->
+			<item id="92020" min="1" max="1" chance="33" /> <!-- Enchant Kit: Talisman of Eva -->
+			<item id="94838" min="1" max="1" chance="34" /> <!-- Transformation Scroll (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97863" name="Solasol's Blessed Augmenting Stone Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -607,6 +757,16 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="97790" min="1" max="1" chance="25" /> <!-- Blessed Augmenting Stone: Special Equipment -->
+			<item id="97444" min="1" max="1" chance="25" /> <!-- Blessed Augmenting Stone: Weapon -->
+			<item id="97445" min="1" max="1" chance="25" /> <!-- Blessed Augmenting Stone: Armor -->
+			<item id="97447" min="1" max="1" chance="25" /> <!-- Blessed Augmenting Stone: Accessory -->
+		</capsuled_items>
 	</item>
 	<item id="97864" name="+5 Solasol's Special Armor Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -617,6 +777,18 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="94264" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Stun Gauntlets (Sealed) -->
+			<item id="93076" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Gloves of Silence (Sealed) -->
+			<item id="94084" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Helmet of Mana (Sealed) -->
+			<item id="94086" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Boots of Evasion (Sealed) -->
+			<item id="94300" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Sigil of Inevitability (Sealed) -->
+			<item id="94302" min="1" max="1" minEnchant="5" maxEnchant="5" chance="25" /> <!-- +5 Shield of Vengeance (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97865" name="Solasol's Spellbook Chest - 2-3 Stars (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -627,6 +799,14 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="97177" min="1" max="1" chance="25" /> <!-- Spellbook Coupon - 3 Stars (Sealed) -->
+			<item id="97176" min="1" max="1" chance="75" /> <!-- Spellbook Coupon - 2 Stars (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97866" name="Solasol's Rare Accessory Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to get more information about the contents. -->
@@ -637,6 +817,30 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="90992" min="1" max="1" chance="1.25" /> <!-- Antharas' Earring -->
+			<item id="95332" min="1" max="1" chance="10" /> <!-- Antharas' Earring (Sealed) -->
+			<item id="91550" min="1" max="1" chance="1.25" /> <!-- Frintezza's Necklace -->
+			<item id="95333" min="1" max="1" chance="10" /> <!-- Frintezza's Necklace (Sealed) -->
+			<item id="49580" min="1" max="1" chance="1.25" /> <!-- Baium's Ring -->
+			<item id="95330" min="1" max="1" chance="10" /> <!-- Baium's Ring (Sealed) -->
+			<item id="96600" min="1" max="1" chance="1.25" /> <!-- Beleth' Ring -->
+			<item id="97074" min="1" max="1" chance="10" /> <!-- Beleth' Ring (Sealed) -->
+			<item id="6660" min="1" max="1" chance="1.25" /> <!-- Queen Ant's Ring -->
+			<item id="95327" min="1" max="1" chance="10" /> <!-- Queen Ant's Ring (Sealed) -->
+			<item id="90763" min="1" max="1" chance="1.25" /> <!-- Zaken's Earring -->
+			<item id="95331" min="1" max="1" chance="10" /> <!-- Zaken's Earring (Sealed) -->
+			<item id="6661" min="1" max="1" chance="1.25" /> <!-- Orfen's Earring -->
+			<item id="95328" min="1" max="1" chance="10" /> <!-- Orfen's Earring (Sealed) -->
+			<item id="6662" min="1" max="1" chance="1.25" /> <!-- Ring of Core -->
+			<item id="95329" min="1" max="1" chance="10" /> <!-- Ring of Core (Sealed) -->
+			<item id="94386" min="1" max="1" chance="3" /> <!-- Improved Scroll: Enchant Rare Accessories -->
+			<item id="94384" min="1" max="1" chance="7" /> <!-- Scroll: Enchant Rare Accessories -->
+		</capsuled_items>
 	</item>
 	<item id="97867" name="1st Win Candy (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Solasol gives it to you once you've guessed Piero's number right. <font color=bbaa88><Upgrading></font> Guessing Piero's number right lets you upgrade the candy to 10th Win Candy. <font color=bbaa88>Note!</font> In case of failure the candy is destroyed. <font color=bbaa88><How to use></font> Special Craft - Solasol's Game <font color=bbaa88><Received items></font> 1st Win Candy: Soulshot Ticket (80 pcs.) 2nd Win Candy: Soulshot Ticket (160 pcs.) 3rd Win Candy: Soulshot Ticket (400 pcs.) 4th Win Candy: Soulshot Ticket (900 pcs.) 5th Win Candy: Soulshot Ticket (2000 pcs.) 6th Win Candy: Dye Powder (3 pcs.) 7th Win Candy: Blessed Augmenting Stone Pack (1 pc.) 8th Win Candy: +5 Special Armor Pack (1 pc.) 9th Win Candy: Spellbook Chest - 2-3 Stars (1 pc.) 10th Win Candy: Rare Accessory Pack (1 pc.) -->
@@ -757,6 +961,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="93073" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) -->
+			<item id="97438" min="100" max="100" chance="100" /> <!-- Einhasad's Protection (Time-limited) -->
+			<item id="97147" min="10" max="10" chance="100" /> <!-- Dye Powder -->
+		</capsuled_items>
 	</item>
 	<item id="97878" name="Adventurer's Dye" additionalName="Lv. 0" type="EtcItem">
 		<!-- Material to make a pattern. Use 'Patterns and Hidden Power' slot to apply the pattern. If you want to enhance it to <font color=EEAA22>Adventurer's Dye Lv. 3</font> and get the hidden power effect, use <font color=EEAA22>Adventurer's Dye Powder</font>. <font color=bbaa88><Upgrading></font> Patterns can be enhanced through 'Pattern Upgrades' menu. <font color=ff6666>Note!</font> Requirements: all classes after the 1st class change. -->
@@ -790,6 +1001,19 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="96601" min="1" max="1" chance="5" /> <!-- Antharas Doll Lv. 1 (Sealed) -->
+			<item id="94153" min="1" max="1" chance="10" /> <!-- Baium Doll Lv. 1 (Sealed) -->
+			<item id="94509" min="1" max="1" chance="15" /> <!-- Frintezza Doll Lv. 1 (Sealed) -->
+			<item id="94645" min="1" max="1" chance="20" /> <!-- Zaken Doll Lv. 1 (Sealed) -->
+			<item id="94648" min="1" max="1" chance="20" /> <!-- Core Doll Lv. 1 (Sealed) -->
+			<item id="94154" min="1" max="1" chance="20" /> <!-- Queen Ant Doll Lv. 1 (Sealed) -->
+			<item id="94155" min="1" max="1" chance="20" /> <!-- Orfen Doll Lv. 1 (Sealed) -->
+		</capsuled_items>
 	</item>
 	<item id="97881" name="Prestigious Rune of Infinite Grace Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- Double-click to obtain the following. -->
@@ -800,6 +1024,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="97882" min="1" max="1" chance="100" /> <!-- Prestigious Rune of Infinite Grace (Time-limited) -->
+		</capsuled_items>
 	</item>
 	<item id="97882" name="Prestigious Rune of Infinite Grace (Time-limited)" additionalName="30-day" type="EtcItem">
 		<!-- When in inventory, applies the following buff: Sayha's Grace Sustain -->
@@ -821,6 +1050,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="97884" name="Rabbit Doll Lv. 1 (Time-limited)" additionalName="Sealed" type="EtcItem">
 		<!-- This doll contains Rabbit's power that can be found across the whole Aden. To enhance the doll, compound it with <font color=EEAA22>Pink Orb</font>. <font color=bbaa88><Constant Craft></font> Special Craft - Rabbit Doll <font color=bbaa88><Received Items></font> Rabbit Doll Lv. 5: Dye Powder Rabbit Doll Lv. 6: Jewelry Box Lv. 2 Rabbit Doll Lv. 7: +0 ~ +4 Talisman Pack Rabbit Doll Lv. 8: Blessed Enchant Scroll Pack Rabbit Doll Lv. 9: Einhasad's Pendant Lv. 1 Rabbit Doll Lv. 10: +5 Agathion Pack Rabbit Doll Lv. 11: +5 Special Equipment Pack Rabbit Doll Lv. 12: Spellbook Coupon - 3 Stars Rabbit Doll Lv. 13: Doll Pack Lv. 1-2 Rabbit Doll Lv. 14: Jewelry Box Lv. 6 Rabbit Doll Lv. 15: +1 ~ +3 Rare Accessory Pack <font color=bbaa88><Weekend Craft></font> Only Rabbit Doll Lv. 11 and higher can be used. -->

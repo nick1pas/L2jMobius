@@ -9,6 +9,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95933" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Gauntlets of Protection -->
+		</capsuled_items>
 	</item>
 	<item id="98001" name="Sayha's Fortune Box" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain <font color=bbaa88>3 items</font>: <font color=bbaa88>Sayha's Storm Lv. 4</font>, <font color=bbaa88>Special Dragon's Miracle Potion Lv. 3 or Special Dragon Fruit Lv. 3</font>, and <font color=bbaa88>Sayha's Treasure Chest or Sayha's Special Treasure Chest</font>. -->
@@ -19,6 +24,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95932" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Helmet of Protection -->
+		</capsuled_items>
 	</item>
 	<item id="98002" name="Sayha's Treasure Chest" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain a random item from the list and another one of various items. -->
@@ -29,6 +39,11 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="95737" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- +5 Frost Lord's Dual Swords -->
+		</capsuled_items>
 	</item>
 	<item id="98003" name="Sayha's Special Treasure Chest" additionalName="Not Available" type="EtcItem">
 		<!-- Double-click to obtain a random item from the list and another one of various items. -->
