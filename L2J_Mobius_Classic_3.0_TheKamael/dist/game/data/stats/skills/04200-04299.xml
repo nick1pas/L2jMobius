@@ -2678,7 +2678,20 @@
 		</effectRange>
 		<attributeType>DARK</attributeType>
 		<attributeValue>20</attributeValue>
-		<hitTime>4000</hitTime>
+		<hitTime>
+			<value level="1">4000</value>
+			<value level="2">2000</value>
+			<value level="3">2000</value>
+			<value level="4">2000</value>
+			<value level="5">2000</value>
+			<value level="6">2000</value>
+			<value level="7">2000</value>
+			<value level="8">2000</value>
+			<value level="9">2000</value>
+			<value level="10">2000</value>
+			<value level="11">2000</value>
+			<value level="12">2000</value>
+		</hitTime>
 		<isMagic>1</isMagic> <!-- Magic Skill -->
 		<magicLevel>
 			<value level="1">10</value>
@@ -2695,21 +2708,48 @@
 			<value level="12">95</value>
 		</magicLevel>
 		<mpConsume>
-			<value level="1">17</value>
-			<value level="2">28</value>
-			<value level="3">38</value>
-			<value level="4">49</value>
-			<value level="5">63</value>
-			<value level="6">78</value>
-			<value level="7">92</value>
-			<value level="8">97</value>
-			<value level="9">102</value>
-			<value level="10">105</value>
-			<value level="11">108</value>
-			<value level="12">109</value>
+			<value level="1">13</value>
+			<value level="2">22</value>
+			<value level="3">30</value>
+			<value level="4">39</value>
+			<value level="5">50</value>
+			<value level="6">62</value>
+			<value level="7">73</value>
+			<value level="8">77</value>
+			<value level="9">81</value>
+			<value level="10">84</value>
+			<value level="11">86</value>
+			<value level="12">87</value>
 		</mpConsume>
+		<mpInitialConsume>
+			<value level="1">4</value>
+			<value level="2">6</value>
+			<value level="3">8</value>
+			<value level="4">10</value>
+			<value level="5">13</value>
+			<value level="6">16</value>
+			<value level="7">19</value>
+			<value level="8">20</value>
+			<value level="9">21</value>
+			<value level="10">21</value>
+			<value level="11">22</value>
+			<value level="12">22</value>
+		</mpInitialConsume>
 		<operateType>A1</operateType>
-		<reuseDelay>8000</reuseDelay>
+		<reuseDelay>
+			<value level="1">8000</value>
+			<value level="2">1000</value>
+			<value level="3">1000</value>
+			<value level="4">1000</value>
+			<value level="5">1000</value>
+			<value level="6">1000</value>
+			<value level="7">1000</value>
+			<value level="8">1000</value>
+			<value level="9">1000</value>
+			<value level="10">1000</value>
+			<value level="11">1000</value>
+			<value level="12">1000</value>
+		</reuseDelay>
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>

@@ -1554,7 +1554,41 @@
 	<skill id="1220" toLevel="33" name="Blaze">
 		<!-- Ignites flames on your body with $s1 Power added to M. Atk., inflicting Fire damage on the enemy. -->
 		<icon>icon.skill1220</icon>
-		<castRange>750</castRange>
+		<castRange>
+			<value level="1">750</value>
+			<value level="2">750</value>
+			<value level="3">750</value>
+			<value level="4">750</value>
+			<value level="5">750</value>
+			<value level="6">750</value>
+			<value level="7">750</value>
+			<value level="8">750</value>
+			<value level="9">900</value>
+			<value level="10">900</value>
+			<value level="11">900</value>
+			<value level="12">900</value>
+			<value level="13">900</value>
+			<value level="14">900</value>
+			<value level="15">900</value>
+			<value level="16">900</value>
+			<value level="17">900</value>
+			<value level="18">900</value>
+			<value level="19">900</value>
+			<value level="20">900</value>
+			<value level="21">900</value>
+			<value level="22">900</value>
+			<value level="23">900</value>
+			<value level="24">900</value>
+			<value level="25">900</value>
+			<value level="26">900</value>
+			<value level="27">900</value>
+			<value level="28">900</value>
+			<value level="29">900</value>
+			<value level="30">900</value>
+			<value level="31">900</value>
+			<value level="32">900</value>
+			<value level="33">900</value>
+		</castRange>
 		<effectPoint>
 			<value level="1">-91</value>
 			<value level="2">-102</value>
@@ -1590,7 +1624,41 @@
 			<value level="32">-321</value>
 			<value level="33">-323</value>
 		</effectPoint>
-		<effectRange>1250</effectRange>
+		<effectRange>
+			<value level="1">1250</value>
+			<value level="2">1250</value>
+			<value level="3">1250</value>
+			<value level="4">1250</value>
+			<value level="5">1250</value>
+			<value level="6">1250</value>
+			<value level="7">1250</value>
+			<value level="8">1250</value>
+			<value level="9">1400</value>
+			<value level="10">1400</value>
+			<value level="11">1400</value>
+			<value level="12">1400</value>
+			<value level="13">1400</value>
+			<value level="14">1400</value>
+			<value level="15">1400</value>
+			<value level="16">1400</value>
+			<value level="17">1400</value>
+			<value level="18">1400</value>
+			<value level="19">1400</value>
+			<value level="20">1400</value>
+			<value level="21">1400</value>
+			<value level="22">1400</value>
+			<value level="23">1400</value>
+			<value level="24">1400</value>
+			<value level="25">1400</value>
+			<value level="26">1400</value>
+			<value level="27">1400</value>
+			<value level="28">1400</value>
+			<value level="29">1400</value>
+			<value level="30">1400</value>
+			<value level="31">1400</value>
+			<value level="32">1400</value>
+			<value level="33">1400</value>
+		</effectRange>
 		<attributeType>FIRE</attributeType>
 		<attributeValue>20</attributeValue>
 		<hitTime>4000</hitTime>
@@ -1639,31 +1707,31 @@
 			<value level="6">21</value>
 			<value level="7">23</value>
 			<value level="8">24</value>
-			<value level="9">30</value> <!-- Guessed -->
-			<value level="10">39</value> <!-- Guessed -->
-			<value level="11">40</value> <!-- Guessed -->
-			<value level="12">42</value> <!-- Guessed -->
-			<value level="13">43</value> <!-- Guessed -->
-			<value level="14">44</value> <!-- Guessed -->
-			<value level="15">46</value> <!-- Guessed -->
-			<value level="16">48</value> <!-- Guessed -->
-			<value level="17">48</value> <!-- Guessed -->
-			<value level="18">50</value> <!-- Guessed -->
-			<value level="19">51</value> <!-- Guessed -->
-			<value level="20">52</value> <!-- Guessed -->
-			<value level="21">54</value> <!-- Guessed -->
-			<value level="22">55</value> <!-- Guessed -->
-			<value level="23">56</value> <!-- Guessed -->
-			<value level="24">58</value> <!-- Guessed -->
-			<value level="25">59</value> <!-- Guessed -->
-			<value level="26">60</value> <!-- Guessed -->
-			<value level="27">66</value> <!-- Guessed -->
-			<value level="28">67</value> <!-- Guessed -->
-			<value level="29">68</value> <!-- Guessed -->
-			<value level="30">70</value> <!-- Guessed -->
-			<value level="31">71</value> <!-- Guessed -->
-			<value level="32">72</value> <!-- Guessed -->
-			<value level="33">74</value> <!-- Guessed -->
+			<value level="9">28</value>
+			<value level="10">29</value>
+			<value level="11">30</value>
+			<value level="12">31</value>
+			<value level="13">32</value>
+			<value level="14">33</value>
+			<value level="15">34</value>
+			<value level="16">35</value>
+			<value level="17">36</value>
+			<value level="18">37</value>
+			<value level="19">38</value>
+			<value level="20">39</value>
+			<value level="21">40</value>
+			<value level="22">41</value>
+			<value level="23">42</value>
+			<value level="24">43</value>
+			<value level="25">44</value>
+			<value level="26">45</value>
+			<value level="27">48</value>
+			<value level="28">49</value>
+			<value level="29">50</value>
+			<value level="30">51</value>
+			<value level="31">52</value>
+			<value level="32">53</value>
+			<value level="33">54</value>
 		</mpConsume>
 		<mpInitialConsume>
 			<value level="1">4</value>
@@ -1674,75 +1742,74 @@
 			<value level="6">6</value>
 			<value level="7">6</value>
 			<value level="8">6</value>
-			<value level="9">6</value> <!-- Guessed -->
-			<value level="10">6</value> <!-- Guessed -->
-			<value level="11">6</value> <!-- Guessed -->
-			<value level="12">6</value> <!-- Guessed -->
-			<value level="13">6</value> <!-- Guessed -->
-			<value level="14">6</value> <!-- Guessed -->
-			<value level="15">6</value> <!-- Guessed -->
-			<value level="16">6</value> <!-- Guessed -->
-			<value level="17">6</value> <!-- Guessed -->
-			<value level="18">6</value> <!-- Guessed -->
-			<value level="19">6</value> <!-- Guessed -->
-			<value level="20">6</value> <!-- Guessed -->
-			<value level="21">6</value> <!-- Guessed -->
-			<value level="22">6</value> <!-- Guessed -->
-			<value level="23">6</value> <!-- Guessed -->
-			<value level="24">6</value> <!-- Guessed -->
-			<value level="25">6</value> <!-- Guessed -->
-			<value level="26">6</value> <!-- Guessed -->
-			<value level="27">6</value> <!-- Guessed -->
-			<value level="28">6</value> <!-- Guessed -->
-			<value level="29">6</value> <!-- Guessed -->
-			<value level="30">6</value> <!-- Guessed -->
-			<value level="31">6</value> <!-- Guessed -->
-			<value level="32">6</value> <!-- Guessed -->
-			<value level="33">6</value> <!-- Guessed -->
+			<value level="9">10</value>
+			<value level="10">10</value>
+			<value level="11">10</value>
+			<value level="12">11</value>
+			<value level="13">11</value>
+			<value level="14">11</value>
+			<value level="15">12</value>
+			<value level="16">12</value>
+			<value level="17">12</value>
+			<value level="18">13</value>
+			<value level="19">13</value>
+			<value level="20">13</value>
+			<value level="21">14</value>
+			<value level="22">14</value>
+			<value level="23">14</value>
+			<value level="24">15</value>
+			<value level="25">15</value>
+			<value level="26">15</value>
+			<value level="27">18</value>
+			<value level="28">18</value>
+			<value level="29">18</value>
+			<value level="30">19</value>
+			<value level="31">19</value>
+			<value level="32">19</value>
+			<value level="33">20</value>
 		</mpInitialConsume>
 		<operateType>A1</operateType>
-		<reuseDelay>1200</reuseDelay>
+		<reuseDelay>1000</reuseDelay>
 		<magicCriticalRate>5</magicCriticalRate>
 		<targetType>ENEMY</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="MagicalAttackRange">
+			<effect name="MagicalAttack">
 				<power>
-					<value level="1">23</value>
-					<value level="2">26</value>
-					<value level="3">29</value>
-					<value level="4">32</value>
-					<value level="5">35</value>
-					<value level="6">38</value>
-					<value level="7">42</value>
-					<value level="8">44</value>
-					<value level="9">47</value>
-					<value level="10">49</value>
-					<value level="11">51</value>
-					<value level="12">53</value>
-					<value level="13">55</value>
-					<value level="14">57</value>
-					<value level="15">59</value>
-					<value level="16">61</value>
-					<value level="17">63</value>
-					<value level="18">65</value>
-					<value level="19">67</value>
-					<value level="20">69</value>
-					<value level="21">71</value>
-					<value level="22">73</value>
-					<value level="23">75</value>
-					<value level="24">77</value>
-					<value level="25">79</value>
-					<value level="26">81</value>
-					<value level="27">83</value>
-					<value level="28">85</value>
-					<value level="29">87</value>
-					<value level="30">89</value>
-					<value level="31">91</value>
-					<value level="32">93</value>
-					<value level="33">95</value>
+					<value level="1">32</value>
+					<value level="2">34</value>
+					<value level="3">40</value>
+					<value level="4">43</value>
+					<value level="5">48</value>
+					<value level="6">51</value>
+					<value level="7">57</value>
+					<value level="8">60</value>
+					<value level="9">68</value>
+					<value level="10">70</value>
+					<value level="11">72</value>
+					<value level="12">74</value>
+					<value level="13">75</value>
+					<value level="14">77</value>
+					<value level="15">79</value>
+					<value level="16">80</value>
+					<value level="17">83</value>
+					<value level="18">86</value>
+					<value level="19">90</value>
+					<value level="20">91</value>
+					<value level="21">93</value>
+					<value level="22">96</value>
+					<value level="23">99</value>
+					<value level="24">102</value>
+					<value level="25">105</value>
+					<value level="26">109</value>
+					<value level="27">113</value>
+					<value level="28">116</value>
+					<value level="29">119</value>
+					<value level="30">121</value>
+					<value level="31">123</value>
+					<value level="32">125</value>
+					<value level="33">126</value>
 				</power>
-				<shieldDefPercent>40</shieldDefPercent>
 			</effect>
 		</effects>
 	</skill>
