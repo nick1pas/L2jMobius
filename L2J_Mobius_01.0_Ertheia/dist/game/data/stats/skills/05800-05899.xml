@@ -1195,6 +1195,9 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>OTHERS</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="FlipBlock" />
+		</effects>
 	</skill>
 	<skill id="5853" toLevel="1" name="Flip Block">
 		<!-- Flips blocks. -->
@@ -1208,6 +1211,9 @@
 		<magicCriticalRate>-5</magicCriticalRate>
 		<targetType>OTHERS</targetType>
 		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="FlipBlock" />
+		</effects>
 	</skill>
 	<skill id="5854" toLevel="1" name="Decrease Speed">
 		<!-- Speed is decreased. -->

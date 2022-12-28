@@ -4167,11 +4167,6 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
-		if (player.getBlockCheckerArena() != -1)
-		{
-			player.sendPacket(ActionFailed.STATIC_PACKET);
-			return;
-		}
 		// Notify AI with AI_INTENTION_ATTACK
 		player.getAI().setIntention(CtrlIntention.AI_INTENTION_ATTACK, this);
 	}

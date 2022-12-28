@@ -658,7 +658,7 @@ public class TvT extends Event
 			player.sendMessage("Your level is too high to participate.");
 			return false;
 		}
-		if (player.isRegisteredOnEvent() || (player.getBlockCheckerArena() > -1))
+		if (player.isRegisteredOnEvent())
 		{
 			player.sendMessage("You are already registered on an event.");
 			return false;

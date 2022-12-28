@@ -613,9 +613,6 @@ public class Config
 	public static boolean CUSTOM_MULTISELL_LOAD;
 	public static boolean CUSTOM_BUYLIST_LOAD;
 	public static int BOOKMARK_CONSUME_ITEM_ID;
-	public static boolean ENABLE_BLOCK_CHECKER_EVENT;
-	public static int MIN_BLOCK_CHECKER_TEAM_MEMBERS;
-	public static boolean HBCE_FAIR_PLAY;
 	public static int PLAYER_MOVEMENT_BLOCK_TIME;
 	public static int ABILITY_MAX_POINTS;
 	public static long ABILITY_POINTS_RESET_ADENA;
@@ -2068,17 +2065,6 @@ public class Config
 			CUSTOM_MULTISELL_LOAD = generalConfig.getBoolean("CustomMultisellLoad", false);
 			CUSTOM_BUYLIST_LOAD = generalConfig.getBoolean("CustomBuyListLoad", false);
 			BOOKMARK_CONSUME_ITEM_ID = generalConfig.getInt("BookmarkConsumeItemId", -1);
-			ENABLE_BLOCK_CHECKER_EVENT = generalConfig.getBoolean("EnableBlockCheckerEvent", false);
-			MIN_BLOCK_CHECKER_TEAM_MEMBERS = generalConfig.getInt("BlockCheckerMinTeamMembers", 2);
-			if (MIN_BLOCK_CHECKER_TEAM_MEMBERS < 1)
-			{
-				MIN_BLOCK_CHECKER_TEAM_MEMBERS = 1;
-			}
-			else if (MIN_BLOCK_CHECKER_TEAM_MEMBERS > 6)
-			{
-				MIN_BLOCK_CHECKER_TEAM_MEMBERS = 6;
-			}
-			HBCE_FAIR_PLAY = generalConfig.getBoolean("HBCEFairPlay", false);
 			BOTREPORT_ENABLE = generalConfig.getBoolean("EnableBotReportButton", false);
 			BOTREPORT_RESETPOINT_HOUR = generalConfig.getString("BotReportPointsResetHour", "00:00").split(":");
 			BOTREPORT_REPORT_DELAY = generalConfig.getInt("BotReportDelay", 30) * 60000;

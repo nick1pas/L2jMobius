@@ -197,7 +197,6 @@ import handlers.itemhandlers.CharmOfCourage;
 import handlers.itemhandlers.Elixir;
 import handlers.itemhandlers.EnchantAttribute;
 import handlers.itemhandlers.EnchantScrolls;
-import handlers.itemhandlers.EventItem;
 import handlers.itemhandlers.ExtractableItems;
 import handlers.itemhandlers.FatedSupportBox;
 import handlers.itemhandlers.FishShots;
@@ -525,7 +524,6 @@ public class MasterHandler
 			Elixir.class,
 			EnchantAttribute.class,
 			EnchantScrolls.class,
-			EventItem.class,
 			ExtractableItems.class,
 			FatedSupportBox.class,
 			FishShots.class,

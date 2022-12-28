@@ -126,7 +126,6 @@ import org.l2jmobius.gameserver.instancemanager.CursedWeaponsManager;
 import org.l2jmobius.gameserver.instancemanager.DuelManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
 import org.l2jmobius.gameserver.instancemanager.FortSiegeManager;
-import org.l2jmobius.gameserver.instancemanager.HandysBlockCheckerManager;
 import org.l2jmobius.gameserver.instancemanager.IdManager;
 import org.l2jmobius.gameserver.instancemanager.ItemsOnGroundManager;
 import org.l2jmobius.gameserver.instancemanager.MapRegionManager;
@@ -141,7 +140,6 @@ import org.l2jmobius.gameserver.instancemanager.SiegeManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.AccessLevel;
 import org.l2jmobius.gameserver.model.AchievementBox;
-import org.l2jmobius.gameserver.model.ArenaParticipantsHolder;
 import org.l2jmobius.gameserver.model.BlockList;
 import org.l2jmobius.gameserver.model.ClientSettings;
 import org.l2jmobius.gameserver.model.CommandChannel;
@@ -802,8 +800,6 @@ public class Player extends Playable
 	private boolean _isOnSoloEvent = false;
 	private boolean _isOnEvent = false;
 	
-	private byte _handysBlockCheckerEventArena = -1;
-	
 	/** new race ticket **/
 	private final int[] _race = new int[2];
 	
@@ -1164,20 +1160,6 @@ public class Player extends Playable
 					}
 				}
 			}
-		}
-		if (_handysBlockCheckerEventArena != -1)
-		{
-			result |= RelationChanged.RELATION_INSIEGE;
-			final ArenaParticipantsHolder holder = HandysBlockCheckerManager.getInstance().getHolder(getBlockCheckerArena());
-			if (holder.getPlayerTeam(this) == 0)
-			{
-				result |= RelationChanged.RELATION_ENEMY;
-			}
-			else
-			{
-				result |= RelationChanged.RELATION_ALLY;
-			}
-			result |= RelationChanged.RELATION_ATTACKER;
 		}
 		return result;
 	}
@@ -11111,18 +11093,6 @@ public class Player extends Playable
 		
 		try
 		{
-			if (Config.ENABLE_BLOCK_CHECKER_EVENT && (_handysBlockCheckerEventArena != -1))
-			{
-				HandysBlockCheckerManager.getInstance().onDisconnect(this);
-			}
-		}
-		catch (Exception e)
-		{
-			LOGGER.log(Level.SEVERE, "deleteMe()", e);
-		}
-		
-		try
-		{
 			_isOnline = false;
 			abortAttack();
 			abortCast();
@@ -13634,16 +13604,6 @@ public class Player extends Playable
 	public boolean isBlockedFromDeathPenalty()
 	{
 		return _isOnEvent || isAffected(EffectFlag.PROTECT_DEATH_PENALTY);
-	}
-	
-	public void setBlockCheckerArena(byte arena)
-	{
-		_handysBlockCheckerEventArena = arena;
-	}
-	
-	public int getBlockCheckerArena()
-	{
-		return _handysBlockCheckerEventArena;
 	}
 	
 	public void setOriginalCpHpMp(double cp, double hp, double mp)

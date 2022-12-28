@@ -42,7 +42,6 @@ public enum InstanceType
 	Attackable(Npc),
 	Guard(Attackable),
 	Monster(Attackable),
-	Block(Attackable),
 	Chest(Monster),
 	ControllableMob(Monster),
 	FeedableBeast(Monster),
