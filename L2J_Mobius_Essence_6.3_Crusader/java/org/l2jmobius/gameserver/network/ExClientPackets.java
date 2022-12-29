@@ -103,6 +103,7 @@ import org.l2jmobius.gameserver.network.clientpackets.equipmentupgrade.RequestUp
 import org.l2jmobius.gameserver.network.clientpackets.equipmentupgradenormal.ExUpgradeSystemNormalRequest;
 import org.l2jmobius.gameserver.network.clientpackets.friend.RequestFriendDetailInfo;
 import org.l2jmobius.gameserver.network.clientpackets.huntingzones.ExTimedHuntingZoneEnter;
+import org.l2jmobius.gameserver.network.clientpackets.huntingzones.ExTimedHuntingZoneLeave;
 import org.l2jmobius.gameserver.network.clientpackets.huntingzones.ExTimedHuntingZoneList;
 import org.l2jmobius.gameserver.network.clientpackets.huntpass.HuntpassSayhasToggle;
 import org.l2jmobius.gameserver.network.clientpackets.huntpass.RequestHuntPassBuyPremium;
@@ -609,7 +610,7 @@ public enum ExClientPackets
 	EX_GACHA_SHOP_GACHA_ITEM(0x17E, null, ConnectionState.IN_GAME),
 	EX_TIME_RESTRICT_FIELD_LIST(0x17F, ExTimedHuntingZoneList::new, ConnectionState.IN_GAME),
 	EX_TIME_RESTRICT_FIELD_USER_ENTER(0x180, ExTimedHuntingZoneEnter::new, ConnectionState.IN_GAME),
-	EX_TIME_RESTRICT_FIELD_USER_LEAVE(0x181, null, ConnectionState.IN_GAME),
+	EX_TIME_RESTRICT_FIELD_USER_LEAVE(0x181, ExTimedHuntingZoneLeave::new, ConnectionState.IN_GAME),
 	EX_RANKING_CHAR_INFO(0x182, RequestRankingCharInfo::new, ConnectionState.IN_GAME),
 	EX_RANKING_CHAR_HISTORY(0x183, null, ConnectionState.IN_GAME),
 	EX_RANKING_CHAR_RANKERS(0x184, RequestRankingCharRankers::new, ConnectionState.IN_GAME),
