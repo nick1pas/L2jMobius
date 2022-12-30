@@ -149,6 +149,7 @@ Vanguard: https://eu.4game.com/patchnotes/lineage2essence/387/
 -New enchant system
 -World exchange system
 -Chest and box auto-use
+-Dream Dungeon
 
 Customs:
 -Newbie Helper NPC location info
