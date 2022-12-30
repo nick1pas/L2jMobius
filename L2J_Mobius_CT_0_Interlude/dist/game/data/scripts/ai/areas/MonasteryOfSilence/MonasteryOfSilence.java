@@ -16,7 +16,8 @@
  */
 package ai.areas.MonasteryOfSilence;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.commons.util.Rnd;
@@ -103,11 +104,11 @@ public class MonasteryOfSilence extends AbstractNpcAI
 	}
 	
 	@Override
-	public String onSkillSee(Npc npc, Player caster, Skill skill, WorldObject[] targets, boolean isSummon)
+	public String onSkillSee(Npc npc, Player caster, Skill skill, List<WorldObject> targets, boolean isSummon)
 	{
 		if (CommonUtil.contains(mobs2, npc.getId()))
 		{
-			if (skill.hasEffectType(EffectType.AGGRESSION) && (targets.length != 0))
+			if (skill.hasEffectType(EffectType.AGGRESSION) && !targets.isEmpty())
 			{
 				for (WorldObject obj : targets)
 				{
@@ -129,7 +130,7 @@ public class MonasteryOfSilence extends AbstractNpcAI
 	{
 		if (CommonUtil.contains(mobs1, npc.getId()))
 		{
-			final ArrayList<Playable> result = new ArrayList<>();
+			final List<Playable> result = new LinkedList<>();
 			for (WorldObject obj : World.getInstance().getVisibleObjects(npc, WorldObject.class))
 			{
 				if ((obj instanceof Player) || (obj instanceof Pet))
@@ -140,12 +141,12 @@ public class MonasteryOfSilence extends AbstractNpcAI
 					}
 				}
 			}
-			if (!result.isEmpty() && (result.size() != 0))
+			
+			if (!result.isEmpty())
 			{
-				final Object[] characters = result.toArray();
-				for (Object obj : characters)
+				for (Playable obj : result)
 				{
-					final Playable target = (Playable) (obj instanceof Player ? obj : ((Summon) obj).getOwner());
+					final Playable target = obj instanceof Player ? obj : ((Summon) obj).getOwner();
 					if ((target.getActiveWeaponInstance() != null) && !npc.isInCombat() && (npc.getTarget() == null))
 					{
 						npc.setTarget(target);

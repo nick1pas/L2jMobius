@@ -21,6 +21,8 @@ import static org.l2jmobius.gameserver.ai.CtrlIntention.AI_INTENTION_ATTACK;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Queue;
@@ -37,7 +39,6 @@ import java.util.logging.Logger;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.threads.ThreadPool;
-import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.commons.util.EmptyQueue;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.ai.AttackableAI;
@@ -1485,7 +1486,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		beginCast(skill, true);
 	}
 	
-	public void doCast(Skill skill, Creature target, WorldObject[] targets)
+	public void doCast(Skill skill, Creature target, List<WorldObject> targets)
 	{
 		if (!checkDoCastConditions(skill))
 		{
@@ -1507,7 +1508,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		beginCast(skill, false, target, targets);
 	}
 	
-	public void doSimultaneousCast(Skill skill, Creature target, WorldObject[] targets)
+	public void doSimultaneousCast(Skill skill, Creature target, List<WorldObject> targets)
 	{
 		if (!checkDoCastConditions(skill))
 		{
@@ -1550,7 +1551,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		// Set the target of the skill in function of Skill Type and Target Type
 		Creature target = null;
 		// Get all possible targets of the skill in a table in function of the skill target type
-		final WorldObject[] targets = skill.getTargetList(this);
+		final List<WorldObject> targets = skill.getTargetList(this);
 		boolean doit = false;
 		
 		// AURA skills should always be using caster as target
@@ -1586,7 +1587,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 			}
 			default:
 			{
-				if (targets.length == 0)
+				if (targets.isEmpty())
 				{
 					if (simultaneously)
 					{
@@ -1612,7 +1613,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 				
 				if (doit)
 				{
-					target = (Creature) targets[0];
+					target = (Creature) targets.get(0);
 				}
 				else
 				{
@@ -1624,7 +1625,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		beginCast(skill, simultaneously, target, targets);
 	}
 	
-	private void beginCast(Skill skill, boolean simultaneously, Creature target, WorldObject[] targets)
+	private void beginCast(Skill skill, boolean simultaneously, Creature target, List<WorldObject> targets)
 	{
 		if (target == null)
 		{
@@ -5228,14 +5229,14 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	public void onMagicLaunchedTimer(MagicUseTask mut)
 	{
 		final Skill skill = mut.getSkill();
-		final WorldObject[] targets = mut.getTargets();
+		final List<WorldObject> targets = mut.getTargets();
 		if ((skill == null) || (targets == null))
 		{
 			abortCast();
 			return;
 		}
 		
-		if (targets.length == 0)
+		if (targets.isEmpty())
 		{
 			switch (skill.getTargetType())
 			{
@@ -5267,12 +5268,12 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 			escapeRange = skill.getAffectRange();
 		}
 		
-		if ((targets.length > 0) && (escapeRange > 0))
+		if (!targets.isEmpty() && (escapeRange > 0))
 		{
 			int skipRange = 0;
 			int skipLOS = 0;
 			int skipPeaceZone = 0;
-			final List<WorldObject> targetList = new ArrayList<>();
+			final List<WorldObject> targetList = new LinkedList<>();
 			for (WorldObject target : targets)
 			{
 				if (target.isCreature())
@@ -5333,7 +5334,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 				abortCast();
 				return;
 			}
-			mut.setTargets(targetList.toArray(new WorldObject[targetList.size()]));
+			mut.setTargets(targetList);
 		}
 		
 		// Ensure that a cast is in progress
@@ -5361,7 +5362,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	public void onMagicHitTimer(MagicUseTask mut)
 	{
 		final Skill skill = mut.getSkill();
-		final WorldObject[] targets = mut.getTargets();
+		final List<WorldObject> targets = mut.getTargets();
 		if ((skill == null) || (targets == null))
 		{
 			abortCast();
@@ -5499,7 +5500,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		setCastingSimultaneouslyNow(false);
 		
 		final Skill skill = mut.getSkill();
-		final WorldObject target = mut.getTargets().length > 0 ? mut.getTargets()[0] : null;
+		final WorldObject target = !mut.getTargets().isEmpty() ? mut.getTargets().get(0) : null;
 		
 		// Attack target after skill use
 		if ((skill.nextActionIsAttack()) && (_target != this) && (target != null) && (_target == target) && _target.isCreature() && target.canBeAttacked())
@@ -5567,7 +5568,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 	 * @param skill The Skill to use
 	 * @param targets The table of WorldObject targets
 	 */
-	public void callSkill(Skill skill, WorldObject[] targets)
+	public void callSkill(Skill skill, List<WorldObject> targets)
 	{
 		try
 		{
@@ -5739,7 +5740,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 					{
 						final Attackable attackable = (Attackable) npcMob;
 						int skillEffectPoint = skill.getEffectPoint();
-						if (player.hasSummon() && (targets.length == 1) && CommonUtil.contains(targets, player.getSummon()))
+						if (player.hasSummon() && (targets.size() == 1) && targets.contains(player.getSummon()))
 						{
 							skillEffectPoint = 0;
 						}
@@ -6321,10 +6322,8 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 					disableSkill(skill, skill.getReuseDelay());
 				}
 				
-				// @formatter:off
-				final WorldObject[] targets = !ignoreTargetType ? skill.getTargetList(this, false, target) : new Creature[]{ target };
-				// @formatter:on
-				if (targets.length == 0)
+				final List<WorldObject> targets = !ignoreTargetType ? skill.getTargetList(this, false, target) : Collections.singletonList(target);
+				if (targets.isEmpty())
 				{
 					return;
 				}

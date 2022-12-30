@@ -16,8 +16,12 @@
  */
 package org.l2jmobius.gameserver.model.item;
 
+import java.util.Collections;
+import java.util.List;
+
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.World;
+import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.conditions.Condition;
@@ -365,7 +369,7 @@ public class Weapon extends ItemTemplate
 			return;
 		}
 		
-		onCritSkill.activateSkill(caster, target);
+		onCritSkill.activateSkill(caster, Collections.singletonList(target));
 	}
 	
 	/**
@@ -423,16 +427,12 @@ public class Weapon extends ItemTemplate
 		
 		// Launch the magic skill and calculate its effects
 		// Get the skill handler corresponding to the skill type
-		onMagicSkill.activateSkill(caster, target);
+		onMagicSkill.activateSkill(caster, Collections.singletonList(target));
 		
 		// notify quests of a skill use
 		if (caster.isPlayer())
 		{
-			final Creature[] targets =
-			{
-				target
-			};
-			
+			final List<WorldObject> targets = Collections.singletonList(target);
 			World.getInstance().forEachVisibleObjectInRange(caster, Npc.class, 1000, npc ->
 			{
 				if (EventDispatcher.getInstance().hasListener(EventType.ON_NPC_SKILL_SEE, npc))

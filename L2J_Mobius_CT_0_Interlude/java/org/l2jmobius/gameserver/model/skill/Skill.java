@@ -18,6 +18,7 @@ package org.l2jmobius.gameserver.model.skill;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.HashSet;
@@ -63,8 +64,6 @@ import org.l2jmobius.gameserver.util.Util;
 public class Skill implements IIdentifiable
 {
 	private static final Logger LOGGER = Logger.getLogger(Skill.class.getName());
-	
-	private static final WorldObject[] EMPTY_TARGET_LIST = new WorldObject[0];
 	
 	/** Skill ID. */
 	private final int _id;
@@ -950,7 +949,7 @@ public class Skill implements IIdentifiable
 		return true;
 	}
 	
-	public WorldObject[] getTargetList(Creature creature, boolean onlyFirst)
+	public List<WorldObject> getTargetList(Creature creature, boolean onlyFirst)
 	{
 		// Init to null the target of the skill
 		Creature target = null;
@@ -987,7 +986,7 @@ public class Skill implements IIdentifiable
 	 * @param target
 	 * @return
 	 */
-	public WorldObject[] getTargetList(Creature creature, boolean onlyFirst, Creature target)
+	public List<WorldObject> getTargetList(Creature creature, boolean onlyFirst, Creature target)
 	{
 		final ITargetTypeHandler handler = TargetHandler.getInstance().getHandler(getTargetType());
 		if (handler != null)
@@ -1001,23 +1000,25 @@ public class Skill implements IIdentifiable
 				LOGGER.log(Level.WARNING, "Exception in Skill.getTargetList(): " + e.getMessage(), e);
 			}
 		}
+		
 		creature.sendMessage("Target type of skill is not currently handled.");
-		return EMPTY_TARGET_LIST;
+		return Collections.emptyList();
 	}
 	
-	public WorldObject[] getTargetList(Creature creature)
+	public List<WorldObject> getTargetList(Creature creature)
 	{
 		return getTargetList(creature, false);
 	}
 	
 	public WorldObject getFirstOfTargetList(Creature creature)
 	{
-		final WorldObject[] targets = getTargetList(creature, true);
-		if (targets.length == 0)
+		final List<WorldObject> targets = getTargetList(creature, true);
+		if (targets.isEmpty())
 		{
 			return null;
 		}
-		return targets[0];
+		
+		return targets.get(0);
 	}
 	
 	/**
@@ -1321,7 +1322,7 @@ public class Skill implements IIdentifiable
 	 * @param caster the caster
 	 * @param targets the targets
 	 */
-	public void activateSkill(Creature caster, WorldObject... targets)
+	public void activateSkill(Creature caster, Collection<WorldObject> targets)
 	{
 		activateSkill(caster, null, targets);
 	}
@@ -1331,7 +1332,7 @@ public class Skill implements IIdentifiable
 	 * @param cubic the cubic
 	 * @param targets the targets
 	 */
-	public void activateSkill(Cubic cubic, WorldObject... targets)
+	public void activateSkill(Cubic cubic, Collection<WorldObject> targets)
 	{
 		activateSkill(cubic.getOwner(), cubic, targets);
 	}
@@ -1342,7 +1343,7 @@ public class Skill implements IIdentifiable
 	 * @param cubic the cubic, can be {@code null}
 	 * @param targets the targets
 	 */
-	private void activateSkill(Creature caster, Cubic cubic, WorldObject... targets)
+	private void activateSkill(Creature caster, Cubic cubic, Collection<WorldObject> targets)
 	{
 		for (WorldObject obj : targets)
 		{
