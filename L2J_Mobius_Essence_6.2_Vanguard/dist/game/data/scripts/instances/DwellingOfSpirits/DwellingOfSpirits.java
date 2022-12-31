@@ -157,7 +157,7 @@ public class DwellingOfSpirits extends AbstractInstance
 					{
 						if (!member.isInsideRadius3D(npc, 1000))
 						{
-							player.sendMessage("Player " + member.getName() + " must go closer to Jay.");
+							player.sendMessage("Player " + member.getName() + " must go closer to Parme.");
 						}
 						enterInstance(member, npc, TEMPLATE_ID);
 					}
@@ -171,13 +171,12 @@ public class DwellingOfSpirits extends AbstractInstance
 				{
 					if (!player.isInsideRadius3D(npc, 1000))
 					{
-						player.sendMessage("You must go closer to Jay.");
+						player.sendMessage("You must go closer to Parme.");
 					}
 					enterInstance(player, npc, TEMPLATE_ID);
 				}
 				break;
 			}
-			
 			case "TELEPORT":
 			{
 				player.teleToLocation(TeleportWhereType.TOWN, null);
