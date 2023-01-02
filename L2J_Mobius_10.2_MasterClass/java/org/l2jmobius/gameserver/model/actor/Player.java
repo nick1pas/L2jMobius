@@ -8769,16 +8769,17 @@ public class Player extends Playable
 		{
 			if (usedSkill.getAffectScope() == AffectScope.FAN_PB)
 			{
-				if (getCurrentMp() >= usedSkill.getMpConsume())
+				if (isInsideZone(ZoneId.PEACE))
 				{
-					if (usedSkill.checkCondition(this, target, true))
-					{
-						sendPacket(new MagicSkillUse(this, this, usedSkill.getDisplayId(), usedSkill.getDisplayLevel(), 0, 0, usedSkill.getReuseDelayGroup(), -1, SkillCastingType.NORMAL, true));
-					}
+					sendPacket(SystemMessageId.YOU_CANNOT_ATTACK_IN_A_PEACEFUL_ZONE);
 				}
-				else
+				else if (getCurrentMp() < usedSkill.getMpConsume())
 				{
 					sendPacket(SystemMessageId.NOT_ENOUGH_MP);
+				}
+				else if (usedSkill.checkCondition(this, target, true))
+				{
+					sendPacket(new MagicSkillUse(this, this, usedSkill.getDisplayId(), usedSkill.getDisplayLevel(), 0, 0, usedSkill.getReuseDelayGroup(), -1, SkillCastingType.NORMAL, true));
 				}
 			}
 			sendPacket(ActionFailed.STATIC_PACKET);
