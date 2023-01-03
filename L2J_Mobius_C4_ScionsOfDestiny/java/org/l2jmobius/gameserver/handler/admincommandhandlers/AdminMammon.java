@@ -17,8 +17,6 @@
 package org.l2jmobius.gameserver.handler.admincommandhandlers;
 
 import java.util.Queue;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 import org.l2jmobius.gameserver.data.sql.NpcTable;
 import org.l2jmobius.gameserver.data.sql.SpawnTable;
@@ -30,6 +28,7 @@ import org.l2jmobius.gameserver.model.spawn.AutoSpawnHandler;
 import org.l2jmobius.gameserver.model.spawn.AutoSpawnHandler.AutoSpawnInstance;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.BuilderUtil;
+import org.l2jmobius.gameserver.util.Util;
 
 /**
  * Admin Command Handler for Mammon NPCs
@@ -152,30 +151,50 @@ public class AdminMammon implements IAdminCommandHandler
 		{
 			try
 			{
-				// admin_list_spawns x[xxxx] x[xx]
+				// Split the command into an array of words.
 				final String[] params = command.split(" ");
-				final Pattern pattern = Pattern.compile("[0-9]*");
-				final Matcher regexp = pattern.matcher(params[1]);
-				if (regexp.matches())
+				final StringBuilder searchParam = new StringBuilder();
+				int pos = -1;
+				
+				// Concatenate all words in the command except the first and last word.
+				for (String param : params)
 				{
-					npcId = Integer.parseInt(params[1]);
+					pos++;
+					if ((pos > 0) && (pos < (params.length - 1)))
+					{
+						searchParam.append(param);
+						searchParam.append(" ");
+					}
+				}
+				
+				final String searchString = searchParam.toString().trim();
+				// If the search string is a number, use it as the NPC ID.
+				if (Util.isDigit(searchString))
+				{
+					npcId = Integer.parseInt(searchString);
 				}
 				else
 				{
-					params[1] = params[1].replace('_', ' ');
-					npcId = NpcTable.getInstance().getTemplateByName(params[1]).getNpcId();
+					// Otherwise, use it as the NPC name and look up the NPC ID.
+					npcId = NpcTable.getInstance().getTemplateByName(searchString).getNpcId();
 				}
 				
+				// If there are more than two words in the command, try to parse the last word as the teleport index.
 				if (params.length > 2)
 				{
-					teleportIndex = Integer.parseInt(params[2]);
+					final String lastParam = params[params.length - 1];
+					if (Util.isDigit(lastParam))
+					{
+						teleportIndex = Integer.parseInt(lastParam);
+					}
 				}
 			}
 			catch (Exception e)
 			{
-				activeChar.sendPacket(SystemMessage.sendString("Command format is //list_spawns <npcId|npc_name> [tele_index]"));
+				BuilderUtil.sendSysMessage(activeChar, "Command format is //list_spawns <npcId|npc_name> [tele_index]");
 			}
 			
+			// Call the findNpcs method with the parsed NPC ID and teleport index.
 			SpawnTable.getInstance().findNpcs(activeChar, npcId, teleportIndex);
 		}
 		
