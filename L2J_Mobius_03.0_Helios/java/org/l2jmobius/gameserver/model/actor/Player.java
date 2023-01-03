@@ -13576,7 +13576,7 @@ public class Player extends Playable
 	 */
 	public int getWorldChatPoints()
 	{
-		return (int) getStat().getValue(Stat.WORLD_CHAT_POINTS, Config.WORLD_CHAT_POINTS_PER_DAY);
+		return (int) ((Config.WORLD_CHAT_POINTS_PER_DAY + getStat().getAdd(Stat.WORLD_CHAT_POINTS, 0)) * getStat().getMul(Stat.WORLD_CHAT_POINTS, 1));
 	}
 	
 	/**
