@@ -164,7 +164,7 @@ public abstract class ItemTemplate extends ListenersContainer implements IIdenti
 	private List<ItemSkillHolder> _skills;
 	
 	private int _useSkillDisTime;
-	private int _reuseDelay;
+	protected int _reuseDelay;
 	private int _sharedReuseGroup;
 	
 	private CommissionItemType _commissionItemType;
