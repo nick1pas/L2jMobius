@@ -391,6 +391,13 @@ public class AdminEnchant implements IAdminCommandHandler
 	
 	private void showMainPage(Player activeChar, int currentPage)
 	{
+		final Player player = activeChar.getTarget() != null ? activeChar.getTarget().getActingPlayer() : activeChar;
+		if (player == null)
+		{
+			activeChar.sendPacket(SystemMessageId.INVALID_TARGET);
+			return;
+		}
+		
 		if (currentPage == 1)
 		{
 			AdminHtml.showAdminHtml(activeChar, "enchant.htm");
@@ -402,8 +409,8 @@ public class AdminEnchant implements IAdminCommandHandler
 			int currentEnch = 0;
 			for (int i = 0; i < 21; i++)
 			{
-				ItemTemplate item = ItemTable.getInstance().getTemplate(activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_ARTIFACT1 + i));
-				findItem = activeChar.getInventory().getPaperdollItem(Inventory.PAPERDOLL_ARTIFACT1 + i);
+				final ItemTemplate item = ItemTable.getInstance().getTemplate(player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_ARTIFACT1 + i));
+				findItem = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_ARTIFACT1 + i);
 				if (findItem != null) // null check for unequipped slots
 				{
 					currentEnch = findItem.getEnchantLevel();
@@ -440,8 +447,8 @@ public class AdminEnchant implements IAdminCommandHandler
 			int currentEnch = 0;
 			for (int i = 0; i < 5; i++)
 			{
-				ItemTemplate item = ItemTable.getInstance().getTemplate(activeChar.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_AGATHION1 + i));
-				findItem = activeChar.getInventory().getPaperdollItem(Inventory.PAPERDOLL_AGATHION1 + i);
+				final ItemTemplate item = ItemTable.getInstance().getTemplate(player.getInventory().getPaperdollItemId(Inventory.PAPERDOLL_AGATHION1 + i));
+				findItem = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_AGATHION1 + i);
 				if (findItem != null) // null check for unequipped slots
 				{
 					currentEnch = findItem.getEnchantLevel();
