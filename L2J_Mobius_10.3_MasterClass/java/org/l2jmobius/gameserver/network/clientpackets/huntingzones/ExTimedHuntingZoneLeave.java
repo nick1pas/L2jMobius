@@ -17,18 +17,11 @@
 package org.l2jmobius.gameserver.network.clientpackets.huntingzones;
 
 import org.l2jmobius.commons.threads.ThreadPool;
-import org.l2jmobius.gameserver.data.xml.TimedHuntingZoneData;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
-import org.l2jmobius.gameserver.instancemanager.InstanceManager;
-import org.l2jmobius.gameserver.instancemanager.MapRegionManager;
-import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.TimedHuntingZoneHolder;
-import org.l2jmobius.gameserver.model.variables.PlayerVariables;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
-import org.l2jmobius.gameserver.model.zone.ZoneType;
-import org.l2jmobius.gameserver.model.zone.type.TimedHuntingZone;
+import org.l2jmobius.gameserver.model.instancezone.Instance;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
@@ -36,7 +29,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.huntingzones.TimedHuntingZoneExit;
 
 /**
- * @author Index
+ * @author Mobius
  */
 public class ExTimedHuntingZoneLeave implements ClientPacket
 {
@@ -55,47 +48,30 @@ public class ExTimedHuntingZoneLeave implements ClientPacket
 			return;
 		}
 		
-		TimedHuntingZoneHolder huntingZone = player.getTimedHuntingZone();
-		final Location exit = huntingZone != null ? huntingZone.getExitLocation() != null ? huntingZone.getExitLocation() : InstanceManager.getInstance().getInstance(huntingZone.getInstanceId()).getExitLocation(player) : MapRegionManager.getInstance().getTeleToLocation(player, TeleportWhereType.TOWN);
-		if (huntingZone != null)
+		final TimedHuntingZoneHolder huntingZone = player.getTimedHuntingZone();
+		if (huntingZone == null)
 		{
-			player.getVariables().set(PlayerVariables.LAST_HUNTING_ZONE_ID, huntingZone.getZoneId());
-			player.teleToLocation(exit, InstanceManager.getInstance().getInstance(0));
-			startScheduleTask(player, huntingZone);
+			return;
+		}
+		
+		final Location exitLocation = huntingZone.getExitLocation();
+		if (exitLocation != null)
+		{
+			player.teleToLocation(exitLocation, null);
 		}
 		else
 		{
-			huntingZone = TimedHuntingZoneData.getInstance().getHuntingZone(player.getVariables().getInt(PlayerVariables.LAST_HUNTING_ZONE_ID, -1));
-			if (huntingZone != null)
+			final Instance world = player.getInstanceWorld();
+			if (world != null)
 			{
-				startScheduleTask(player, huntingZone);
+				world.ejectPlayer(player);
 			}
 			else
 			{
-				player.sendPacket(new TimedHuntingZoneExit(0));
+				player.teleToLocation(TeleportWhereType.TOWN);
 			}
 		}
-	}
-	
-	private void startScheduleTask(Player player, TimedHuntingZoneHolder holder)
-	{
-		ThreadPool.schedule(() -> additionalCheck(player, holder), 2000);
-	}
-	
-	private void additionalCheck(Player player, TimedHuntingZoneHolder timedHuntingZoneHolder)
-	{
-		final ZoneType currentZone = ZoneManager.getInstance().getZone(timedHuntingZoneHolder.getEnterLocation(), TimedHuntingZone.class);
-		if (currentZone != null)
-		{
-			if (currentZone.isCharacterInZone(player))
-			{
-				currentZone.removeCharacter(player);
-			}
-			else if (player.isInsideZone(ZoneId.TIMED_HUNTING))
-			{
-				player.sendPacket(new TimedHuntingZoneExit(timedHuntingZoneHolder.getZoneId()));
-				player.setInsideZone(ZoneId.TIMED_HUNTING, false);
-			}
-		}
+		
+		ThreadPool.schedule(() -> player.sendPacket(new TimedHuntingZoneExit(huntingZone.getZoneId())), 3000);
 	}
 }
