@@ -330,6 +330,16 @@ public class WorldExchangeManager implements IXmlReader
 		
 		final long freeId = getNextId();
 		final Item item = player.getInventory().getItemByObjectId(itemObjectId);
+		final InventoryUpdate iu = new InventoryUpdate();
+		if (item.isStackable() && (player.getInventory().getInventoryItemCount(item.getId(), -1) > amount))
+		{
+			iu.addModifiedItem(item);
+		}
+		else
+		{
+			iu.addRemovedItem(item);
+		}
+		
 		final Item itemInstance = player.getInventory().detachItem("World Exchange Registration", item, amount, ItemLocation.EXCHANGE, player, null);
 		if (itemInstance == null)
 		{
@@ -346,6 +356,7 @@ public class WorldExchangeManager implements IXmlReader
 			return;
 		}
 		
+		player.sendPacket(iu);
 		player.getInventory().reduceAdena("World Exchange Registration", feePrice, player, null);
 		final long endTime = calculateDate(Config.WORLD_EXCHANGE_ITEM_SELL_PERIOD);
 		_itemBids.put(freeId, new WorldExchangeHolder(freeId, itemInstance, new ItemInfo(itemInstance), totalPrice, player.getObjectId(), WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED, category, System.currentTimeMillis(), endTime, true));
