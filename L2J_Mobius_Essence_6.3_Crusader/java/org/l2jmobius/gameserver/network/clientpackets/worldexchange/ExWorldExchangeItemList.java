@@ -33,7 +33,6 @@ import org.l2jmobius.gameserver.network.serverpackets.worldexchange.WorldExchang
 /**
  * @author Index
  */
-
 public class ExWorldExchangeItemList implements ClientPacket
 {
 	private int _category;

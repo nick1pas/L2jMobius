@@ -848,6 +848,16 @@ public class WorldExchangeManager implements IXmlReader
 				Collections.reverse(sortedList);
 				break;
 			}
+			case PRICE_PER_PIECE_ASCE:
+			{
+				sortedList = sortedList.stream().sorted(Comparator.comparingLong(WorldExchangeHolder::getPrice)).collect(Collectors.toList());
+				break;
+			}
+			case PRICE_PER_PIECE_DESC:
+			{
+				sortedList = sortedList.stream().sorted(Comparator.comparingLong(WorldExchangeHolder::getPrice).reversed()).collect(Collectors.toList());
+				break;
+			}
 		}
 		
 		if (sortedList.size() > 399)
@@ -1032,6 +1042,28 @@ public class WorldExchangeManager implements IXmlReader
 		{
 			LOGGER.log(Level.SEVERE, "Error while saving World Exchange item bid " + worldExchangeId + "\n", e);
 		}
+	}
+	
+	/**
+	 * Returns the average price of the specified item.
+	 * @param itemId the ID of the item
+	 * @return the average price, or 0 if there are no items with the specified ID
+	 */
+	public long getAveragePriceOfItem(int itemId)
+	{
+		long totalPrice = 0;
+		long totalItemCount = 0;
+		for (WorldExchangeHolder holder : _itemBids.values())
+		{
+			if (holder.getItemInstance().getTemplate().getId() != itemId)
+			{
+				continue;
+			}
+			
+			totalItemCount++;
+			totalPrice += holder.getPrice();
+		}
+		return totalItemCount == 0 ? 0 : totalPrice / totalItemCount;
 	}
 	
 	public static WorldExchangeManager getInstance()

@@ -191,11 +191,13 @@ import org.l2jmobius.gameserver.network.clientpackets.variation.ExVariationClose
 import org.l2jmobius.gameserver.network.clientpackets.variation.ExVariationOpenUi;
 import org.l2jmobius.gameserver.network.clientpackets.variation.RequestConfirmGemStone;
 import org.l2jmobius.gameserver.network.clientpackets.variation.RequestRefine;
+import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeAveragePrice;
 import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeBuyItem;
 import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeItemList;
 import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeRegisterItem;
 import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeSettleList;
 import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeSettleRecvResult;
+import org.l2jmobius.gameserver.network.clientpackets.worldexchange.ExWorldExchangeTotalList;
 
 /**
  * @author Mobius
@@ -809,8 +811,8 @@ public enum ExClientPackets
 	EX_GOODS_GIFT_LIST_INFO(0x256, null, ConnectionState.IN_GAME),
 	EX_GOODS_GIFT_ACCEPT(0x257, null, ConnectionState.IN_GAME),
 	EX_GOODS_GIFT_REFUSE(0x258, null, ConnectionState.IN_GAME),
-	EX_WORLD_EXCHANGE_AVERAGE_PRICE(0x259, null, ConnectionState.IN_GAME),
-	EX_WORLD_EXCHANGE_TOTAL_LIST(0x25A, null, ConnectionState.IN_GAME),
+	EX_WORLD_EXCHANGE_AVERAGE_PRICE(0x259, ExWorldExchangeAveragePrice::new, ConnectionState.IN_GAME),
+	EX_WORLD_EXCHANGE_TOTAL_LIST(0x25A, ExWorldExchangeTotalList::new, ConnectionState.IN_GAME),
 	EX_PRISON_USER_INFO(0x25B, null, ConnectionState.IN_GAME),
 	EX_PRISON_USER_DONATION(0x25C, null, ConnectionState.IN_GAME),
 	EX_MAX(0x25D, null, ConnectionState.IN_GAME);
