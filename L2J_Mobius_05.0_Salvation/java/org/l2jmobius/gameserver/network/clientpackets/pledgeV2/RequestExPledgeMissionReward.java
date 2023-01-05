@@ -19,9 +19,11 @@ package org.l2jmobius.gameserver.network.clientpackets.pledgeV2;
 import java.util.Collection;
 
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.request.RewardRequest;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionInfo;
@@ -54,6 +56,12 @@ public class RequestExPledgeMissionReward implements ClientPacket
 			return;
 		}
 		
+		if (player.hasRequest(RewardRequest.class))
+		{
+			return;
+		}
+		player.addRequest(new RewardRequest(player));
+		
 		final Collection<DailyMissionDataHolder> reward = DailyMissionData.getInstance().getDailyMissionData(_id);
 		if ((reward != null) && !reward.isEmpty())
 		{
@@ -61,5 +69,7 @@ public class RequestExPledgeMissionReward implements ClientPacket
 			client.sendPacket(new ExPledgeMissionRewardCount(player));
 			client.sendPacket(new ExPledgeMissionInfo(player));
 		}
+		
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
 	}
 }

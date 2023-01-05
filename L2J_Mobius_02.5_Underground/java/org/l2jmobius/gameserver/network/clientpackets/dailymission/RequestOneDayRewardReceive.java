@@ -19,9 +19,11 @@ package org.l2jmobius.gameserver.network.clientpackets.dailymission;
 import java.util.Collection;
 
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.request.RewardRequest;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.dailymission.ExOneDayReceiveRewardList;
@@ -53,6 +55,12 @@ public class RequestOneDayRewardReceive implements ClientPacket
 			return;
 		}
 		
+		if (player.hasRequest(RewardRequest.class))
+		{
+			return;
+		}
+		player.addRequest(new RewardRequest(player));
+		
 		final Collection<DailyMissionDataHolder> rewards = DailyMissionData.getInstance().getDailyMissionData(_id);
 		if ((rewards == null) || rewards.isEmpty())
 		{
@@ -68,5 +76,7 @@ public class RequestOneDayRewardReceive implements ClientPacket
 		}
 		
 		player.sendPacket(new ExOneDayReceiveRewardList(player));
+		
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
 	}
 }
