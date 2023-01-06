@@ -360,7 +360,12 @@
 	<skill id="48539" toLevel="1" name="Will to Fight">
 		<!-- Your will to fight decreases received damage from strong characters. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="GetDamageLimit">
+				<amount>30000</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="48540" toLevel="1" name="Balok's Strike">
 		<!-- Powerful P. Atk. on enemy. -->
