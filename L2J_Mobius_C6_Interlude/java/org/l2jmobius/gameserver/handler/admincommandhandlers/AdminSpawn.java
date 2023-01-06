@@ -134,36 +134,86 @@ public class AdminSpawn implements IAdminCommandHandler
 			}
 		}
 		// Command spawn '//spawn name numberSpawn respawnTime'.
-		// With command '//spawn name' the respawnTime will be 10 seconds.
+		// With command '//spawn name' the respawnTime will be 60 seconds.
 		else if (command.startsWith("admin_spawn") || command.startsWith("admin_spawn_monster"))
 		{
-			final StringTokenizer st = new StringTokenizer(command, " ");
 			try
 			{
+				// Create a StringTokenizer to split the command by spaces.
+				final StringTokenizer st = new StringTokenizer(command, " ");
+				
+				// Get the first token (the command itself).
 				final String cmd = st.nextToken();
-				final String id = st.nextToken();
+				
+				// Get the second token (the NPC ID or name).
+				String npcId = st.nextToken();
+				
+				// If the second token is not a digit, search for the NPC template by name.
+				if (!Util.isDigit(npcId))
+				{
+					// Initialize the variables.
+					final StringBuilder searchParam = new StringBuilder();
+					final String[] params = command.split(" ");
+					NpcTemplate searchTemplate = null;
+					NpcTemplate template = null;
+					int pos = 1;
+					
+					// Iterate through the command parameters, starting from the second one.
+					for (int i = 1; i < params.length; i++)
+					{
+						// Add the current parameter to the search parameter string.
+						searchParam.append(params[i]);
+						searchParam.append(" ");
+						
+						// Try to get the NPC template using the search parameter string.
+						searchTemplate = NpcTable.getInstance().getTemplateByName(searchParam.toString().trim());
+						
+						// If the template is found, update the position and the final template.
+						if (searchTemplate != null)
+						{
+							template = searchTemplate;
+							pos = i;
+						}
+					}
+					
+					// Check if an NPC template was found.
+					if (template != null)
+					{
+						// Skip tokens that contain the name.
+						for (int i = 1; i < pos; i++)
+						{
+							st.nextToken();
+						}
+						
+						// Set the npcId based on template found.
+						npcId = String.valueOf(template.getNpcId());
+					}
+				}
+				
+				// Initialize mobCount to 1.
 				int mobCount = 1;
-				int respawnTime = 10;
+				
+				// If next token exists, set the mobCount value.
 				if (st.hasMoreTokens())
 				{
 					mobCount = Integer.parseInt(st.nextToken());
 				}
+				
+				// Initialize respawnTime to 60.
+				int respawnTime = 60;
+				
+				// If next token exists, set the respawnTime value.
 				if (st.hasMoreTokens())
 				{
 					respawnTime = Integer.parseInt(st.nextToken());
 				}
 				
-				if (cmd.equalsIgnoreCase("admin_spawn_once"))
-				{
-					spawnMonster(activeChar, id, respawnTime, mobCount, false);
-				}
-				else
-				{
-					spawnMonster(activeChar, id, respawnTime, mobCount, true);
-				}
+				// Call the spawnMonster method with the appropriate parameters.
+				spawnMonster(activeChar, npcId, respawnTime, mobCount, !cmd.equalsIgnoreCase("admin_spawn_once"));
 			}
 			catch (Exception e)
-			{ // Case of wrong or missing monster data
+			{
+				// Case of wrong or missing monster data.
 				AdminHelpPage.showHelpPage(activeChar, "spawns.htm");
 			}
 		}
