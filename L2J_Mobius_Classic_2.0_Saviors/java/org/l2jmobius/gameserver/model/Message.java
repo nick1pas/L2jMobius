@@ -258,18 +258,9 @@ public class Message
 				_senderName = CharNameTable.getInstance().getNameById(_senderId);
 				break;
 			}
-			case PRIME_SHOP_GIFT: // Not in client, tbd
-			{
-				break;
-			}
-			case NEWS_INFORMER: // Handled by Sysstring in client
-			case NPC: // Handled by NpcName in client
-			case BIRTHDAY: // Handled by Sysstring in client
-			case COMMISSION_ITEM_SOLD: // Handled by Sysstring in client
-			case COMMISSION_ITEM_RETURNED: // Handled by Sysstring in client
-			case MENTOR_NPC: // Handled in client
 			default:
 			{
+				_senderName = "System";
 				break;
 			}
 		}
