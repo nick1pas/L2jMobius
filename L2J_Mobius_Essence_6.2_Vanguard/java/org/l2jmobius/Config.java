@@ -986,6 +986,11 @@ public class Config
 	public static int ZAKEN_SPAWN_INTERVAL;
 	public static int ZAKEN_SPAWN_RANDOM;
 	
+	// Balok
+	public static int BALOK_HOUR;
+	public static int BALOK_MINUTE;
+	public static int BALOK_POINTS_PER_MONSTER;
+	
 	// Gracia Seeds Settings
 	public static int SOD_TIAT_KILL_COUNT;
 	public static long SOD_STAGE_2_LENGTH;
@@ -2681,6 +2686,10 @@ public class Config
 			QUEEN_ANT_SPAWN_RANDOM = grandBossConfig.getInt("RandomOfQueenAntSpawn", 17);
 			ZAKEN_SPAWN_INTERVAL = grandBossConfig.getInt("IntervalOfZakenSpawn", 168);
 			ZAKEN_SPAWN_RANDOM = grandBossConfig.getInt("RandomOfZakenSpawn", 48);
+			final String[] balokTime = grandBossConfig.getString("BalokTime", "20:30").trim().split(":");
+			BALOK_HOUR = Integer.parseInt(balokTime[0]);
+			BALOK_MINUTE = Integer.parseInt(balokTime[1]);
+			BALOK_POINTS_PER_MONSTER = grandBossConfig.getInt("BalokPointsPerMonster", 10);
 			
 			// Load HuntPass (if exists)
 			final PropertiesParser huntPassConfig = new PropertiesParser(HUNT_PASS_CONFIG_FILE);

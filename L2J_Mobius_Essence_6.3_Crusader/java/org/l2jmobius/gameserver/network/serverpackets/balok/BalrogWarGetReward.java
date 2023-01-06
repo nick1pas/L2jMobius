@@ -14,22 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package org.l2jmobius.gameserver.enums;
+package org.l2jmobius.gameserver.network.serverpackets.balok;
+
+import org.l2jmobius.gameserver.network.ServerPackets;
+import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * @author Sdw
+ * @author Serenitty
  */
-public enum MailType
+public class BalrogWarGetReward extends ServerPacket
 {
-	REGULAR,
-	NEWS_INFORMER,
-	NPC,
-	BIRTHDAY,
-	COMMISSION_ITEM_RETURNED,
-	COMMISSION_ITEM_SOLD,
-	MENTOR_NPC,
-	PRIME_SHOP_GIFT,
-	PURGE_REWARD,
-	BALOK_RANKING_REWARD,
-	PLEDGE_DONATION_CRITICAL_SUCCESS
+	private final boolean _available;
+	
+	public BalrogWarGetReward(boolean available)
+	{
+		_available = available;
+	}
+	
+	@Override
+	public void write()
+	{
+		ServerPackets.EX_BALROGWAR_GET_REWARD.writeId(this);
+		writeByte(_available);
+	}
 }

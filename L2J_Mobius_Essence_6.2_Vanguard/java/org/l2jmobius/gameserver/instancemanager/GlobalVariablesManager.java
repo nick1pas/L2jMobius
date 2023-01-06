@@ -47,6 +47,7 @@ public class GlobalVariablesManager extends AbstractVariables
 	public static final String RANKING_POWER_COOLDOWN = "RANKING_POWER_COOLDOWN";
 	public static final String RANKING_POWER_LOCATION = "RANKING_POWER_LOCATION";
 	public static final String PURGE_REWARD_TIME = "PURGE_REWARD_TIME";
+	public static final String BALOK_REMAIN_TIME = "BALOK_REMAIN_TIME";
 	
 	protected GlobalVariablesManager()
 	{

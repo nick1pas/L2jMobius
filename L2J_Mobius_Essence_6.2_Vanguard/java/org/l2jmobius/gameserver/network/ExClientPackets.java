@@ -40,6 +40,10 @@ import org.l2jmobius.gameserver.network.clientpackets.autopeel.ExRequestReadyIte
 import org.l2jmobius.gameserver.network.clientpackets.autopeel.ExRequestStopItemAutoPeel;
 import org.l2jmobius.gameserver.network.clientpackets.autoplay.ExAutoPlaySetting;
 import org.l2jmobius.gameserver.network.clientpackets.autoplay.ExRequestActivateAutoShortcut;
+import org.l2jmobius.gameserver.network.clientpackets.balok.ExBalrogWarGetReward;
+import org.l2jmobius.gameserver.network.clientpackets.balok.ExBalrogWarShowRanking;
+import org.l2jmobius.gameserver.network.clientpackets.balok.ExBalrogWarShowUI;
+import org.l2jmobius.gameserver.network.clientpackets.balok.ExBalrogWarTeleport;
 import org.l2jmobius.gameserver.network.clientpackets.blessing.RequestBlessOptionCancel;
 import org.l2jmobius.gameserver.network.clientpackets.blessing.RequestBlessOptionEnchant;
 import org.l2jmobius.gameserver.network.clientpackets.blessing.RequestBlessOptionPutItem;
@@ -796,10 +800,10 @@ public enum ExClientPackets
 	EX_WORLDCASTLEWAR_CASTLE_SIEGE_ALL_RANKING_INFO(0x235, null, ConnectionState.IN_GAME),
 	EX_MISSION_LEVEL_REWARD_LIST(0x236, RequestMissionRewardList::new, ConnectionState.IN_GAME),
 	EX_MISSION_LEVEL_RECEIVE_REWARD(0x237, RequestMissionLevelReceiveReward::new, ConnectionState.IN_GAME),
-	EX_BALROGWAR_TELEPORT(0x238, null, ConnectionState.IN_GAME),
-	EX_BALROGWAR_SHOW_UI(0x239, null, ConnectionState.IN_GAME),
-	EX_BALROGWAR_SHOW_RANKING(0x23A, null, ConnectionState.IN_GAME),
-	EX_BALROGWAR_GET_REWARD(0x23B, null, ConnectionState.IN_GAME),
+	EX_BALROGWAR_TELEPORT(0x238, ExBalrogWarTeleport::new, ConnectionState.IN_GAME),
+	EX_BALROGWAR_SHOW_UI(0x239, ExBalrogWarShowUI::new, ConnectionState.IN_GAME),
+	EX_BALROGWAR_SHOW_RANKING(0x23A, ExBalrogWarShowRanking::new, ConnectionState.IN_GAME),
+	EX_BALROGWAR_GET_REWARD(0x23B, ExBalrogWarGetReward::new, ConnectionState.IN_GAME),
 	EX_USER_RESTART_LOCKER_UPDATE(0x23C, null, ConnectionState.IN_GAME),
 	EX_WORLD_EXCHANGE_ITEM_LIST(0x23D, ExWorldExchangeItemList::new, ConnectionState.IN_GAME),
 	EX_WORLD_EXCHANGE_REGI_ITEM(0x23E, ExWorldExchangeRegisterItem::new, ConnectionState.IN_GAME),
