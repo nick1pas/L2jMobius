@@ -707,10 +707,19 @@ public class Attackable extends Npc
 	@Override
 	public void addAttackerToAttackByList(Creature creature)
 	{
-		if ((creature == null) || (creature == this) || getAttackByList().stream().anyMatch(o -> o.get() == creature))
+		if ((creature == null) || (creature == this))
 		{
 			return;
 		}
+		
+		for (WeakReference<Creature> ref : getAttackByList())
+		{
+			if (ref.get() == creature)
+			{
+				return;
+			}
+		}
+		
 		getAttackByList().add(new WeakReference<>(creature));
 	}
 	
@@ -981,7 +990,16 @@ public class Attackable extends Npc
 		result.add(mostHated);
 		
 		final Creature secondMostHatedFinal = secondMostHated;
-		if (getAttackByList().stream().anyMatch(o -> o.get() == secondMostHatedFinal))
+		boolean found = false;
+		for (WeakReference<Creature> ref : getAttackByList())
+		{
+			if (ref.get() == secondMostHatedFinal)
+			{
+				found = true;
+				break;
+			}
+		}
+		if (found)
 		{
 			result.add(secondMostHated);
 		}
@@ -989,6 +1007,7 @@ public class Attackable extends Npc
 		{
 			result.add(null);
 		}
+		
 		return result;
 	}
 	
