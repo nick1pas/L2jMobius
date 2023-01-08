@@ -33,7 +33,6 @@ import java.util.Map.Entry;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -782,7 +781,12 @@ public class CastleManorManager implements IXmlReader, IStorable
 	
 	public Set<Integer> getCropIds()
 	{
-		return _seeds.values().stream().map(Seed::getCropId).collect(Collectors.toSet());
+		final Set<Integer> result = new HashSet<>();
+		for (Seed seed : _seeds.values())
+		{
+			result.add(seed.getCropId());
+		}
+		return result;
 	}
 	
 	public Seed getSeed(int seedId)
