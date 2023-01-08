@@ -34,7 +34,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.w3c.dom.Document;
 
@@ -820,17 +819,17 @@ public class WorldExchangeManager implements IXmlReader
 	 */
 	private List<WorldExchangeHolder> sortList(List<WorldExchangeHolder> unsortedList, WorldExchangeSortType sortType, String lang)
 	{
-		List<WorldExchangeHolder> sortedList = new ArrayList<>(unsortedList);
+		final List<WorldExchangeHolder> sortedList = new ArrayList<>(unsortedList);
 		switch (sortType)
 		{
 			case PRICE_ASCE:
 			{
-				sortedList = sortedList.stream().sorted(Comparator.comparing(WorldExchangeHolder::getPrice)).collect(Collectors.toList());
+				Collections.sort(sortedList, Comparator.comparing(WorldExchangeHolder::getPrice));
 				break;
 			}
 			case PRICE_DESC:
 			{
-				sortedList = sortedList.stream().sorted(Comparator.comparing(WorldExchangeHolder::getPrice)).collect(Collectors.toList());
+				Collections.sort(sortedList, Comparator.comparing(WorldExchangeHolder::getPrice));
 				Collections.reverse(sortedList);
 				break;
 			}
@@ -838,11 +837,11 @@ public class WorldExchangeManager implements IXmlReader
 			{
 				if ((lang == null) || (!lang.equals("en") && _localItemNames.containsKey(lang)))
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId(), o.getItemInstance().isBlessed()))).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId(), o.getItemInstance().isBlessed())));
 				}
 				else
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> ((o.getItemInstance().isBlessed() ? "Blessed " : "") + o.getItemInstance().getItemName()))).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> (o.getItemInstance().isBlessed() ? "Blessed " : "") + o.getItemInstance().getItemName()));
 				}
 				break;
 			}
@@ -850,11 +849,11 @@ public class WorldExchangeManager implements IXmlReader
 			{
 				if ((lang == null) || (!lang.equals("en") && _localItemNames.containsKey(lang)))
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId(), o.getItemInstance().isBlessed()))).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId(), o.getItemInstance().isBlessed())));
 				}
 				else
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> ((o.getItemInstance().isBlessed() ? "Blessed " : "") + o.getItemInstance().getItemName()))).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> (o.getItemInstance().isBlessed() ? "Blessed " : "") + o.getItemInstance().getItemName()));
 				}
 				Collections.reverse(sortedList);
 				break;
@@ -980,7 +979,7 @@ public class WorldExchangeManager implements IXmlReader
 	
 	public void storeMe()
 	{
-		if (!Config.WORLD_EXCHANGE_LAZY_UPDATE)
+		if (!Config.ENABLE_WORLD_EXCHANGE || !Config.WORLD_EXCHANGE_LAZY_UPDATE)
 		{
 			return;
 		}

@@ -34,7 +34,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ScheduledFuture;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.w3c.dom.Document;
 
@@ -814,17 +813,17 @@ public class WorldExchangeManager implements IXmlReader
 	 */
 	private List<WorldExchangeHolder> sortList(List<WorldExchangeHolder> unsortedList, WorldExchangeSortType sortType, String lang)
 	{
-		List<WorldExchangeHolder> sortedList = new ArrayList<>(unsortedList);
+		final List<WorldExchangeHolder> sortedList = new ArrayList<>(unsortedList);
 		switch (sortType)
 		{
 			case PRICE_ASCE:
 			{
-				sortedList = sortedList.stream().sorted(Comparator.comparing(WorldExchangeHolder::getPrice)).collect(Collectors.toList());
+				Collections.sort(sortedList, Comparator.comparing(WorldExchangeHolder::getPrice));
 				break;
 			}
 			case PRICE_DESC:
 			{
-				sortedList = sortedList.stream().sorted(Comparator.comparing(WorldExchangeHolder::getPrice)).collect(Collectors.toList());
+				Collections.sort(sortedList, Comparator.comparing(WorldExchangeHolder::getPrice));
 				Collections.reverse(sortedList);
 				break;
 			}
@@ -832,11 +831,11 @@ public class WorldExchangeManager implements IXmlReader
 			{
 				if ((lang == null) || (!lang.equals("en") && _localItemNames.containsKey(lang)))
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId()))).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId())));
 				}
 				else
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> o.getItemInstance().getItemName())).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> o.getItemInstance().getItemName()));
 				}
 				break;
 			}
@@ -844,23 +843,23 @@ public class WorldExchangeManager implements IXmlReader
 			{
 				if ((lang == null) || (!lang.equals("en") && _localItemNames.containsKey(lang)))
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId()))).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> getItemName(lang, o.getItemInstance().getId())));
 				}
 				else
 				{
-					sortedList = sortedList.stream().sorted(Comparator.comparing(o -> o.getItemInstance().getItemName())).collect(Collectors.toList());
+					Collections.sort(sortedList, Comparator.comparing(o -> o.getItemInstance().getItemName()));
 				}
 				Collections.reverse(sortedList);
 				break;
 			}
 			case PRICE_PER_PIECE_ASCE:
 			{
-				sortedList = sortedList.stream().sorted(Comparator.comparingLong(WorldExchangeHolder::getPrice)).collect(Collectors.toList());
+				Collections.sort(sortedList, Comparator.comparingLong(WorldExchangeHolder::getPrice));
 				break;
 			}
 			case PRICE_PER_PIECE_DESC:
 			{
-				sortedList = sortedList.stream().sorted(Comparator.comparingLong(WorldExchangeHolder::getPrice).reversed()).collect(Collectors.toList());
+				Collections.sort(sortedList, Comparator.comparingLong(WorldExchangeHolder::getPrice).reversed());
 				break;
 			}
 		}
