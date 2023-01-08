@@ -112,7 +112,20 @@ public class CubicTemplate implements ICubicConditionHolder
 	@Override
 	public boolean validateConditions(Cubic cubic, Creature owner, WorldObject target)
 	{
-		return _conditions.isEmpty() || _conditions.stream().allMatch(condition -> condition.test(cubic, owner, target));
+		if (_conditions.isEmpty())
+		{
+			return true;
+		}
+		
+		for (ICubicCondition condition : _conditions)
+		{
+			if (!condition.test(cubic, owner, target))
+			{
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	@Override
