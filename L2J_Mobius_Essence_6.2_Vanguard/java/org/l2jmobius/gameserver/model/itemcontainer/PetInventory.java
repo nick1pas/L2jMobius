@@ -17,7 +17,8 @@
 package org.l2jmobius.gameserver.model.itemcontainer;
 
 import java.util.Collection;
-import java.util.stream.Collectors;
+import java.util.LinkedList;
+import java.util.List;
 
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.enums.ItemLocation;
@@ -59,7 +60,15 @@ public class PetInventory extends Inventory
 	@Override
 	public Collection<Item> getItems()
 	{
-		return super.getItems().stream().filter(Item::isEquipped).collect(Collectors.toList());
+		final List<Item> equippedItems = new LinkedList<>();
+		for (Item item : super.getItems())
+		{
+			if (item.isEquipped())
+			{
+				equippedItems.add(item);
+			}
+		}
+		return equippedItems;
 	}
 	
 	public boolean validateCapacity(Item item)
