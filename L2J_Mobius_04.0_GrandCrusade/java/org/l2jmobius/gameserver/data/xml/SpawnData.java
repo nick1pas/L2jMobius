@@ -27,7 +27,6 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -169,12 +168,34 @@ public class SpawnData implements IXmlReader
 	
 	public List<SpawnGroup> getGroupsByName(String groupName)
 	{
-		return _spawns.stream().filter(template -> (template.getName() != null) && groupName.equalsIgnoreCase(template.getName())).flatMap(template -> template.getGroups().stream()).collect(Collectors.toList());
+		final List<SpawnGroup> result = new ArrayList<>();
+		for (SpawnTemplate template : _spawns)
+		{
+			if ((template.getName() != null) && groupName.equalsIgnoreCase(template.getName()))
+			{
+				result.addAll(template.getGroups());
+			}
+		}
+		return result;
 	}
 	
 	public List<NpcSpawnTemplate> getNpcSpawns(Predicate<NpcSpawnTemplate> condition)
 	{
-		return _spawns.stream().flatMap(template -> template.getGroups().stream()).flatMap(group -> group.getSpawns().stream()).filter(condition).collect(Collectors.toList());
+		final List<NpcSpawnTemplate> result = new ArrayList<>();
+		for (SpawnTemplate template : _spawns)
+		{
+			for (SpawnGroup group : template.getGroups())
+			{
+				for (NpcSpawnTemplate spawn : group.getSpawns())
+				{
+					if (condition.test(spawn))
+					{
+						result.add(spawn);
+					}
+				}
+			}
+		}
+		return result;
 	}
 	
 	public void parseSpawn(Node spawnsNode, File file, Collection<SpawnTemplate> spawns)
