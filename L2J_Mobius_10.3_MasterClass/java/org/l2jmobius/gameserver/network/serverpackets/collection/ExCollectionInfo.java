@@ -16,9 +16,10 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.collection;
 
+import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.gameserver.data.xml.CollectionData;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -27,56 +28,69 @@ import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
 /**
- * @author Berezkin Nikolay
+ * @author Berezkin Nikolay, Mobius
  */
 public class ExCollectionInfo extends ServerPacket
 {
-	final Player _Player;
-	final List<PlayerCollectionData> _categoryList;
-	final Set<Integer> _collections;
-	final List<Integer> _favoriteList;
+	final Player _player;
 	final int _category;
+	final Set<Integer> _collectionIds = new HashSet<>();
+	final List<Integer> _favoriteIds;
 	
 	public ExCollectionInfo(Player player, int category)
 	{
-		_Player = player;
-		_categoryList = player.getCollections().stream().filter(it -> CollectionData.getInstance().getCollection(it.getCollectionId()).getCategory() == category).collect(Collectors.toList());
-		_collections = _categoryList.stream().map(PlayerCollectionData::getCollectionId).collect(Collectors.toSet());
-		_favoriteList = player.getCollectionFavorites();
+		_player = player;
 		_category = category;
+		for (PlayerCollectionData collection : player.getCollections())
+		{
+			if (CollectionData.getInstance().getCollection(collection.getCollectionId()).getCategory() == category)
+			{
+				_collectionIds.add(collection.getCollectionId());
+			}
+		}
+		_favoriteIds = player.getCollectionFavorites();
 	}
 	
 	@Override
 	public void write()
 	{
 		ServerPackets.EX_COLLECTION_INFO.writeId(this);
-		writeInt(_collections.size()); // size
-		for (Integer collection : _collections)
+		writeInt(_collectionIds.size()); // size
+		final List<PlayerCollectionData> currentCollection = new LinkedList<>();
+		for (int id : _collectionIds)
 		{
-			final List<PlayerCollectionData> collectionCurrent = _categoryList.stream().filter(it -> it.getCollectionId() == collection).collect(Collectors.toList());
-			writeInt(collectionCurrent.size());
-			for (PlayerCollectionData current : collectionCurrent)
+			currentCollection.clear();
+			for (PlayerCollectionData collection : _player.getCollections())
 			{
-				writeByte(current.getIndex());
-				writeInt(current.getItemId());
-				writeByte(CollectionData.getInstance().getCollection(collection).getItems().get(current.getIndex()).getEnchantLevel()); // enchant level
-				writeByte(0); // unk flag for item
-				writeByte(0); // unk flag for item
-				writeInt(1); // count
+				if (collection.getCollectionId() == id)
+				{
+					currentCollection.add(collection);
+				}
 			}
-			writeShort(collection);
+			
+			writeInt(currentCollection.size());
+			for (PlayerCollectionData collection : currentCollection)
+			{
+				writeByte(collection.getIndex());
+				writeInt(collection.getItemId());
+				writeByte(CollectionData.getInstance().getCollection(id).getItems().get(collection.getIndex()).getEnchantLevel()); // enchant level
+				writeByte(0); // bless
+				writeByte(0); // bless Condition
+				writeInt(1); // amount
+			}
+			writeShort(id);
 		}
-		writeInt(_favoriteList.size()); // favourite size
-		for (int favoriteCollection : _favoriteList)
+		
+		// favoriteList
+		writeInt(_favoriteIds.size());
+		for (int id : _favoriteIds)
 		{
-			writeShort(favoriteCollection);
+			writeShort(id);
 		}
+		
+		// rewardList
 		writeInt(0);
-		// loop unk
-		// 1 h
-		// d
-		// h
-		// loop end
+		
 		writeByte(_category);
 		writeShort(0);
 	}
