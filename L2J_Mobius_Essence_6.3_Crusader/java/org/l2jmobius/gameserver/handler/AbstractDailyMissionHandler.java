@@ -31,6 +31,7 @@ import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
 import org.l2jmobius.gameserver.model.DailyMissionPlayerEntry;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.events.ListenersContainer;
+import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.holders.MissionLevelPlayerDataHolder;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
@@ -124,20 +125,32 @@ public abstract class AbstractDailyMissionHandler extends ListenersContainer
 	
 	protected void giveRewards(Player player)
 	{
-		_holder.getRewards().stream().filter(i -> i.getId() != MISSION_LEVEL_POINTS).filter(i -> i.getId() != CLAN_EXP).forEach(i -> player.addItem("One Day Reward", i, player, true));
-		if (_holder.getRewards().stream().anyMatch(i -> i.getId() == CLAN_EXP))
+		for (ItemHolder holder : _holder.getRewards())
 		{
-			int points = (int) _holder.getRewards().stream().filter(i -> i.getId() == CLAN_EXP).iterator().next().getCount();
-			player.getClan().addExp(player.getObjectId(), points);
-			player.sendPacket(new SystemMessage(SystemMessageId.YOU_HAVE_OBTAINED_S1_X_S2).addItemName(MISSION_LEVEL_POINTS).addLong(points));
-		}
-		if (_holder.getRewards().stream().anyMatch(i -> i.getId() == MISSION_LEVEL_POINTS))
-		{
-			final MissionLevelPlayerDataHolder info = player.getMissionLevelProgress();
-			final int points = (int) _holder.getRewards().stream().filter(i -> i.getId() == MISSION_LEVEL_POINTS).iterator().next().getCount();
-			info.calculateEXP(points);
-			info.storeInfoInVariable(player);
-			player.sendPacket(new SystemMessage(SystemMessageId.YOU_HAVE_OBTAINED_S1_X_S2).addItemName(MISSION_LEVEL_POINTS).addLong(points));
+			switch (holder.getId())
+			{
+				case CLAN_EXP:
+				{
+					final int expAmount = (int) holder.getCount();
+					player.getClan().addExp(player.getObjectId(), expAmount);
+					player.sendPacket(new SystemMessage(SystemMessageId.YOU_HAVE_OBTAINED_S1_X_S2).addItemName(MISSION_LEVEL_POINTS).addLong(expAmount));
+					break;
+				}
+				case MISSION_LEVEL_POINTS:
+				{
+					final int levelPoints = (int) holder.getCount();
+					final MissionLevelPlayerDataHolder info = player.getMissionLevelProgress();
+					info.calculateEXP(levelPoints);
+					info.storeInfoInVariable(player);
+					player.sendPacket(new SystemMessage(SystemMessageId.YOU_HAVE_OBTAINED_S1_X_S2).addItemName(MISSION_LEVEL_POINTS).addLong(levelPoints));
+					break;
+				}
+				default:
+				{
+					player.addItem("One Day Reward", holder, player, true);
+					break;
+				}
+			}
 		}
 	}
 	
