@@ -23,7 +23,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.enums.MatchingRoomType;
@@ -73,16 +72,16 @@ public class MatchingRoomManager
 		{
 			return Collections.emptyList();
 		}
-		return _waitingList.stream() //
-			.filter(p -> (p != null) //
-				&& (p.getLevel() >= minLevel) //
-				&& (p.getLevel() <= maxLevel)) //
-			.filter(p -> (classIds == null) //
-				|| classIds.contains(p.getClassId())) //
-			.filter(p -> (query == null) //
-				|| query.isEmpty() //
-				|| p.getName().toLowerCase().contains(query)) //
-			.collect(Collectors.toList());
+		
+		final List<Player> players = new ArrayList<>();
+		for (Player player : _waitingList)
+		{
+			if ((player != null) && (player.getLevel() >= minLevel) && (player.getLevel() <= maxLevel) && ((classIds == null) || classIds.contains(player.getClassId())) && ((query == null) || query.isEmpty() || player.getName().toLowerCase().contains(query)))
+			{
+				players.add(player);
+			}
+		}
+		return players;
 	}
 	
 	public int addMatchingRoom(MatchingRoom room)
