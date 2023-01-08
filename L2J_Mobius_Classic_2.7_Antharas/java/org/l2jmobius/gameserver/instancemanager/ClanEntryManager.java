@@ -32,7 +32,6 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
@@ -341,14 +340,17 @@ public class ClanEntryManager
 	public List<PledgeWaitingInfo> getSortedWaitingList(int levelMin, int levelMax, int role, int sortByValue, boolean descending)
 	{
 		final int sortBy = CommonUtil.constrain(sortByValue, 1, PLAYER_COMPARATOR.size() - 1);
-		
-		// TODO: Handle Role
-		//@formatter:off
-		return _waitingList.values().stream()
-		      .filter(p -> ((p.getPlayerLvl() >= levelMin) && (p.getPlayerLvl() <= levelMax)))
-		      .sorted(descending ? PLAYER_COMPARATOR.get(sortBy).reversed() : PLAYER_COMPARATOR.get(sortBy))
-		      .collect(Collectors.toList());
-		//@formatter:on
+		final List<PledgeWaitingInfo> result = new ArrayList<>();
+		for (PledgeWaitingInfo p : _waitingList.values())
+		{
+			// TODO: Handle Role.
+			if ((p.getPlayerLvl() >= levelMin) && (p.getPlayerLvl() <= levelMax))
+			{
+				result.add(p);
+			}
+		}
+		result.sort(descending ? PLAYER_COMPARATOR.get(sortBy).reversed() : PLAYER_COMPARATOR.get(sortBy));
+		return result;
 	}
 	
 	public List<PledgeWaitingInfo> queryWaitingListByName(String name)
@@ -407,19 +409,23 @@ public class ClanEntryManager
 	
 	public List<PledgeRecruitInfo> getUnSortedClanList()
 	{
-		return _clanList.values().stream().collect(Collectors.toList());
+		return new ArrayList<>(_clanList.values());
 	}
 	
 	public List<PledgeRecruitInfo> getSortedClanList(int clanLevel, int karma, int sortByValue, boolean descending)
 	{
 		final int sortBy = CommonUtil.constrain(sortByValue, 1, CLAN_COMPARATOR.size() - 1);
-		
-		//@formatter:off
-		return _clanList.values().stream()
-		      .filter((p -> (((clanLevel < 0) && (karma >= 0) && (karma != p.getKarma())) || ((clanLevel >= 0) && (karma < 0) && (clanLevel != (p.getClan() != null ? p.getClanLevel() : 0))) || ((clanLevel >= 0) && (karma >= 0) && ((clanLevel != (p.getClan() != null ? p.getClanLevel() : 0)) || (karma != p.getKarma()))))))
-		      .sorted(descending ? CLAN_COMPARATOR.get(sortBy).reversed() : CLAN_COMPARATOR.get(sortBy))
-		      .collect(Collectors.toList());
-		//@formatter:on
+		final List<PledgeRecruitInfo> sortedList = new ArrayList<>(_clanList.values());
+		for (int i = 0; i < sortedList.size(); i++)
+		{
+			final PledgeRecruitInfo currentInfo = sortedList.get(i);
+			if (((clanLevel < 0) && (karma >= 0) && (karma != currentInfo.getKarma())) || ((clanLevel >= 0) && (karma < 0) && (clanLevel != (currentInfo.getClan() != null ? currentInfo.getClanLevel() : 0))) || ((clanLevel >= 0) && (karma >= 0) && ((clanLevel != (currentInfo.getClan() != null ? currentInfo.getClanLevel() : 0)) || (karma != currentInfo.getKarma()))))
+			{
+				sortedList.remove(i--);
+			}
+		}
+		Collections.sort(sortedList, descending ? CLAN_COMPARATOR.get(sortBy).reversed() : CLAN_COMPARATOR.get(sortBy));
+		return sortedList;
 	}
 	
 	public long getPlayerLockTime(int playerId)
