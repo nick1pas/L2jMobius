@@ -16,8 +16,9 @@
  */
 package handlers.skillconditionhandlers;
 
-import java.util.ArrayList;
+import java.util.EnumSet;
 import java.util.List;
+import java.util.Set;
 
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.WorldObject;
@@ -32,14 +33,17 @@ import org.l2jmobius.gameserver.model.skill.Skill;
  */
 public class OpTargetWeaponAttackTypeSkillCondition implements ISkillCondition
 {
-	private final List<WeaponType> _weaponTypes = new ArrayList<>();
+	private final Set<WeaponType> _weaponTypes = EnumSet.noneOf(WeaponType.class);
 	
 	public OpTargetWeaponAttackTypeSkillCondition(StatSet params)
 	{
 		final List<String> weaponTypes = params.getList("weaponType", String.class);
 		if (weaponTypes != null)
 		{
-			weaponTypes.stream().map(WeaponType::valueOf).forEach(_weaponTypes::add);
+			for (String type : weaponTypes)
+			{
+				_weaponTypes.add(WeaponType.valueOf(type));
+			}
 		}
 	}
 	
