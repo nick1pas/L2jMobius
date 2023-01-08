@@ -42,6 +42,7 @@ import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
 import org.l2jmobius.gameserver.model.holders.MinionHolder;
 import org.l2jmobius.gameserver.model.instancezone.Instance;
 import org.l2jmobius.gameserver.model.interfaces.IParameterized;
+import org.l2jmobius.gameserver.model.zone.type.BannedSpawnTerritory;
 import org.l2jmobius.gameserver.model.zone.type.SpawnTerritory;
 
 /**
@@ -304,7 +305,22 @@ public class NpcSpawnTemplate implements Cloneable, IParameterized<StatSet>
 			for (int i = 0; i < 100; i++)
 			{
 				final Location loc = territory.getRandomPoint();
-				if (_group.getBannedTerritories().isEmpty() || _group.getBannedTerritories().stream().allMatch(bannedTerritory -> !bannedTerritory.isInsideZone(loc.getX(), loc.getY(), loc.getZ())))
+				if (_group.getBannedTerritories().isEmpty())
+				{
+					loc.setHeading(-1);
+					return loc;
+				}
+				
+				boolean insideBannedTerritory = false;
+				SEARCH: for (BannedSpawnTerritory bannedTerritory : _group.getBannedTerritories())
+				{
+					if (bannedTerritory.isInsideZone(loc.getX(), loc.getY(), loc.getZ()))
+					{
+						insideBannedTerritory = true;
+						break SEARCH;
+					}
+				}
+				if (!insideBannedTerritory)
 				{
 					loc.setHeading(-1);
 					return loc;
@@ -317,7 +333,22 @@ public class NpcSpawnTemplate implements Cloneable, IParameterized<StatSet>
 			for (int i = 0; i < 100; i++)
 			{
 				final Location loc = territory.getRandomPoint();
-				if (_spawnTemplate.getBannedTerritories().isEmpty() || _spawnTemplate.getBannedTerritories().stream().allMatch(bannedTerritory -> !bannedTerritory.isInsideZone(loc.getX(), loc.getY(), loc.getZ())))
+				if (_spawnTemplate.getBannedTerritories().isEmpty())
+				{
+					loc.setHeading(-1);
+					return loc;
+				}
+				
+				boolean insideBannedTerritory = false;
+				SEARCH: for (BannedSpawnTerritory bannedTerritory : _spawnTemplate.getBannedTerritories())
+				{
+					if (bannedTerritory.isInsideZone(loc.getX(), loc.getY(), loc.getZ()))
+					{
+						insideBannedTerritory = true;
+						break SEARCH;
+					}
+				}
+				if (!insideBannedTerritory)
 				{
 					loc.setHeading(-1);
 					return loc;
