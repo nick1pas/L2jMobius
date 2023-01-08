@@ -309,10 +309,13 @@ public class RecipeHolder implements IIdentifiable
 			}
 		}
 		
-		// Take necessary ingredients. If there was problem destroying item, return null to insicate that process didn't go well.
-		if (_materials.stream().anyMatch(i -> !player.destroyItemByItemId("Recipe " + getId(), i.getId(), i.getCount(), manufacturer, sendMessage)))
+		// Take necessary ingredients. If there was problem destroying item, return null to indicate that process didn't go well.
+		for (ItemHolder material : _materials)
 		{
-			return null;
+			if (!player.destroyItemByItemId("Recipe " + getId(), material.getId(), material.getCount(), manufacturer, sendMessage))
+			{
+				return null;
+			}
 		}
 		
 		// Check if success. Luck triggers no matter the success rate - even with 100% craft. Luck chance is taken from your stat and not manufacturer's stat.
