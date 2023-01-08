@@ -66,6 +66,7 @@ public class RequestHuntPassReward implements ClientPacket
 		final int rewardIndex = huntPass.getRewardStep();
 		if (rewardIndex >= HuntPassData.getInstance().getRewardsCount())
 		{
+			player.removeRequest(RewardRequest.class);
 			return;
 		}
 		
@@ -76,6 +77,7 @@ public class RequestHuntPassReward implements ClientPacket
 		if (!player.getInventory().validateWeight(weight) || !player.getInventory().validateCapacity(slots))
 		{
 			player.sendPacket(SystemMessageId.YOUR_INVENTORY_S_WEIGHT_LIMIT_HAS_BEEN_EXCEEDED_SO_YOU_CAN_T_RECEIVE_THE_REWARD_PLEASE_FREE_UP_SOME_SPACE_AND_TRY_AGAIN);
+			player.removeRequest(RewardRequest.class);
 			return;
 		}
 		
