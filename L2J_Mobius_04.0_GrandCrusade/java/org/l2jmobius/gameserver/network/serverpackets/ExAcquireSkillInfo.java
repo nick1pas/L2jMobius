@@ -16,10 +16,9 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.gameserver.model.SkillLearn;
 import org.l2jmobius.gameserver.model.actor.Player;
@@ -38,7 +37,7 @@ public class ExAcquireSkillInfo extends ServerPacket
 	private final long _spCost;
 	private final int _minLevel;
 	private final Set<ItemHolder> _itemReq;
-	private final List<Skill> _skillRem;
+	private final List<Skill> _skillRem = new LinkedList<>();
 	
 	/**
 	 * Special constructor for Alternate Skill Learning system.<br>
@@ -54,7 +53,14 @@ public class ExAcquireSkillInfo extends ServerPacket
 		_spCost = skillLearn.getLevelUpSp();
 		_minLevel = skillLearn.getGetLevel();
 		_itemReq = skillLearn.getRequiredItems();
-		_skillRem = skillLearn.getRemoveSkills().stream().map(player::getKnownSkill).filter(Objects::nonNull).collect(Collectors.toList());
+		for (int id : skillLearn.getRemoveSkills())
+		{
+			final Skill removeSkill = player.getKnownSkill(id);
+			if (removeSkill != null)
+			{
+				_skillRem.add(removeSkill);
+			}
+		}
 	}
 	
 	@Override
