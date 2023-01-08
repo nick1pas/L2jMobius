@@ -28,7 +28,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -107,18 +106,28 @@ public class PrivateStoreHistoryManager
 	
 	public List<ItemHistoryTransaction> getHistory(boolean full)
 	{
+		final List<ItemHistoryTransaction> tempList = new ArrayList<>(_items);
 		if (!full)
 		{
-			final List<ItemHistoryTransaction> list = new ArrayList<>(_items);
-			final Map<Integer, Integer> uniqueItemIds = list.stream().map(transaction -> transaction.getItemId()).collect(Collectors.toSet()).stream().collect(Collectors.toMap(Integer::intValue, e -> 0));
-			list.sort(new SortByDate());
-			final List<ItemHistoryTransaction> finalList = new ArrayList<>();
-			for (ItemHistoryTransaction transaction : list)
+			final Map<Integer, Integer> uniqueItemIds = new HashMap<>();
+			for (ItemHistoryTransaction transaction : tempList)
 			{
-				if (uniqueItemIds.get(transaction.getItemId()) < Config.STORE_REVIEW_LIMIT)
+				final int itemId = transaction.getItemId();
+				if (!uniqueItemIds.containsKey(itemId))
+				{
+					uniqueItemIds.put(itemId, 0);
+				}
+			}
+			tempList.sort(new SortByDate());
+			
+			final List<ItemHistoryTransaction> finalList = new ArrayList<>();
+			for (ItemHistoryTransaction transaction : tempList)
+			{
+				final int itemId = transaction.getItemId();
+				if (uniqueItemIds.get(itemId) < Config.STORE_REVIEW_LIMIT)
 				{
 					finalList.add(transaction);
-					uniqueItemIds.put(transaction.getItemId(), uniqueItemIds.get(transaction.getItemId()) + 1);
+					uniqueItemIds.put(itemId, uniqueItemIds.get(itemId) + 1);
 				}
 			}
 			return finalList;
