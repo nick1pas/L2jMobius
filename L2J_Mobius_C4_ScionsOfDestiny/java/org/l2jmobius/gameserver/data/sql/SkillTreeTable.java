@@ -24,6 +24,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -302,7 +303,7 @@ public class SkillTreeTable
 	 */
 	private List<SkillLearn> getAvailableSkills(Player player, ClassId classId, ISkillsHolder holder)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		final Collection<SkillLearn> skills = _skillTrees.get(classId).values();
 		if (skills.isEmpty())
 		{
@@ -333,8 +334,8 @@ public class SkillTreeTable
 	
 	public List<SkillLearn> getAvailableSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
-		final List<SkillLearn> skills = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
+		final List<SkillLearn> skills = new LinkedList<>();
 		skills.addAll(_fishingSkillTrees);
 		
 		if (player.hasDwarvenCraft() && (_expandDwarfCraftSkillTrees != null))
@@ -378,12 +379,9 @@ public class SkillTreeTable
 			return Collections.emptyList();
 		}
 		
-		final List<EnchantSkillLearn> result = new ArrayList<>();
-		final List<EnchantSkillLearn> skills = new ArrayList<>();
-		skills.addAll(_enchantSkillTrees);
-		
+		final List<EnchantSkillLearn> result = new LinkedList<>();
 		final Collection<Skill> oldSkills = player.getAllSkills();
-		for (EnchantSkillLearn skillLearn : skills)
+		for (EnchantSkillLearn skillLearn : _enchantSkillTrees)
 		{
 			boolean isKnownSkill = false;
 			for (Skill skill : oldSkills)
@@ -408,16 +406,15 @@ public class SkillTreeTable
 	
 	public List<PledgeSkillLearn> getAvailablePledgeSkills(Player player)
 	{
-		final List<PledgeSkillLearn> result = new ArrayList<>();
-		final List<PledgeSkillLearn> skills = _pledgeSkillTrees;
-		if (skills == null)
+		final List<PledgeSkillLearn> result = new LinkedList<>();
+		if (_pledgeSkillTrees == null)
 		{
 			LOGGER.warning("No clan skills defined!");
 			return Collections.emptyList();
 		}
 		
 		final Skill[] oldSkills = player.getClan().getAllSkills().toArray(new Skill[0]);
-		for (PledgeSkillLearn temp : skills)
+		for (PledgeSkillLearn temp : _pledgeSkillTrees)
 		{
 			if (temp.getBaseLevel() <= player.getClan().getLevel())
 			{
@@ -472,7 +469,7 @@ public class SkillTreeTable
 	public int getMinLevelForNewSkill(Player player)
 	{
 		int minLevel = 0;
-		final List<SkillLearn> skills = new ArrayList<>();
+		final List<SkillLearn> skills = new LinkedList<>();
 		skills.addAll(_fishingSkillTrees);
 		
 		if (player.hasDwarvenCraft() && (_expandDwarfCraftSkillTrees != null))

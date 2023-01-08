@@ -24,6 +24,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -567,7 +568,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<Skill> getNobleSkillTree()
 	{
-		final List<Skill> result = new ArrayList<>();
+		final List<Skill> result = new LinkedList<>();
 		for (SkillLearn skill : _nobleSkillTree.values())
 		{
 			result.add(SkillData.getInstance().getSkill(skill.getSkillId(), skill.getSkillLevel()));
@@ -581,7 +582,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<Skill> getNobleSkillAutoGetTree()
 	{
-		final List<Skill> result = new ArrayList<>();
+		final List<Skill> result = new LinkedList<>();
 		for (SkillLearn skill : _nobleSkillTree.values())
 		{
 			if (skill.isAutoGet())
@@ -598,7 +599,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<Skill> getHeroSkillTree()
 	{
-		final List<Skill> result = new ArrayList<>();
+		final List<Skill> result = new LinkedList<>();
 		for (SkillLearn skill : _heroSkillTree.values())
 		{
 			result.add(SkillData.getInstance().getSkill(skill.getSkillId(), skill.getSkillLevel()));
@@ -612,7 +613,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<Skill> getGMSkillTree()
 	{
-		final List<Skill> result = new ArrayList<>();
+		final List<Skill> result = new LinkedList<>();
 		for (SkillLearn skill : _gameMasterSkillTree.values())
 		{
 			result.add(SkillData.getInstance().getSkill(skill.getSkillId(), skill.getSkillLevel()));
@@ -626,7 +627,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<Skill> getGMAuraSkillTree()
 	{
-		final List<Skill> result = new ArrayList<>();
+		final List<Skill> result = new LinkedList<>();
 		for (SkillLearn skill : _gameMasterAuraSkillTree.values())
 		{
 			result.add(SkillData.getInstance().getSkill(skill.getSkillId(), skill.getSkillLevel()));
@@ -847,7 +848,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableAutoGetSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		final Map<Long, SkillLearn> skills = getCompleteClassSkillTree(player.getClassId());
 		if (skills.isEmpty())
 		{
@@ -890,7 +891,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableFishingSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		final Race playerRace = player.getRace();
 		for (SkillLearn skill : _fishingSkillTree.values())
 		{
@@ -927,7 +928,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableRevelationSkills(Player player, SubclassType type)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		final Map<Long, SkillLearn> revelationSkills = _revelationSkillTree.get(type);
 		for (SkillLearn skill : revelationSkills.values())
 		{
@@ -947,7 +948,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableAlchemySkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _alchemySkillTree.values())
 		{
 			if (skill.isLearnedByNpc() && (player.getLevel() >= skill.getGetLevel()))
@@ -976,7 +977,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableCollectSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _collectSkillTree.values())
 		{
 			final Skill oldSkill = player.getSkills().get(skill.getSkillId());
@@ -1002,7 +1003,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableTransferSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		final ClassId classId = player.getClassId();
 		if (!_transferSkillTrees.containsKey(classId))
 		{
@@ -1027,7 +1028,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableTransformSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		final Race race = player.getRace();
 		for (SkillLearn skill : _transformSkillTree.values())
 		{
@@ -1057,7 +1058,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailablePledgeSkills(Clan clan)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _pledgeSkillTree.values())
 		{
 			if (!skill.isResidencialSkill() && (clan.getLevel() >= skill.getGetLevel()))
@@ -1124,7 +1125,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableSubPledgeSkills(Clan clan)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _subPledgeSkillTree.values())
 		{
 			if ((clan.getLevel() >= skill.getGetLevel()) && clan.isLearnableSubSkill(skill.getSkillId(), skill.getSkillLevel()))
@@ -1142,7 +1143,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableSubClassSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _subClassSkillTree.values())
 		{
 			final Skill oldSkill = player.getSkills().get(skill.getSkillId());
@@ -1161,7 +1162,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableDualClassSkills(Player player)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _dualClassSkillTree.values())
 		{
 			final Skill oldSkill = player.getSkills().get(skill.getSkillId());
@@ -1181,7 +1182,7 @@ public class SkillTreeData implements IXmlReader
 	 */
 	public List<SkillLearn> getAvailableResidentialSkills(int residenceId)
 	{
-		final List<SkillLearn> result = new ArrayList<>();
+		final List<SkillLearn> result = new LinkedList<>();
 		for (SkillLearn skill : _pledgeSkillTree.values())
 		{
 			if (skill.isResidencialSkill() && skill.getResidenceIds().contains(residenceId))
@@ -1691,7 +1692,7 @@ public class SkillTreeData implements IXmlReader
 		}
 		
 		// Race specific skills from Fishing and Transformation skill trees.
-		final List<Long> list = new ArrayList<>();
+		final List<Long> list = new LinkedList<>();
 		_skillsByRaceHashCodes = new HashMap<>(Race.values().length);
 		for (Race r : Race.values())
 		{
