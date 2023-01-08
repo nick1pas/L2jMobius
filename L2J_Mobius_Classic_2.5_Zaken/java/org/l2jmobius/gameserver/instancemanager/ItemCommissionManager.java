@@ -25,6 +25,7 @@ import java.sql.Timestamp;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentSkipListMap;
@@ -32,7 +33,6 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.commons.database.DatabaseFactory;
 import org.l2jmobius.commons.threads.ThreadPool;
@@ -141,12 +141,18 @@ public class ItemCommissionManager
 	 */
 	public void showAuctions(Player player, Predicate<ItemTemplate> filter)
 	{
-		//@formatter:off
-		final List<CommissionItem> commissionItems = _commissionItems.values().stream()
-			.filter(c -> filter.test(c.getItemInfo().getItem()))
-			.limit(ITEMS_LIMIT_PER_REQUEST)
-			.collect(Collectors.toList());
-		//@formatter:on
+		final List<CommissionItem> commissionItems = new LinkedList<>();
+		for (CommissionItem item : _commissionItems.values())
+		{
+			if (filter.test(item.getItemInfo().getItem()))
+			{
+				commissionItems.add(item);
+				if (commissionItems.size() >= ITEMS_LIMIT_PER_REQUEST)
+				{
+					break;
+				}
+			}
+		}
 		
 		if (commissionItems.isEmpty())
 		{
@@ -172,12 +178,18 @@ public class ItemCommissionManager
 	 */
 	public void showPlayerAuctions(Player player)
 	{
-		//@formatter:off
-		final List<CommissionItem> commissionItems = _commissionItems.values().stream()
-			.filter(c -> c.getItemInstance().getOwnerId() == player.getObjectId())
-			.limit(MAX_ITEMS_REGISTRED_PER_PLAYER)
-			.collect(Collectors.toList());
-		//@formatter:on
+		final List<CommissionItem> commissionItems = new LinkedList<>();
+		for (CommissionItem c : _commissionItems.values())
+		{
+			if (c.getItemInstance().getOwnerId() == player.getObjectId())
+			{
+				commissionItems.add(c);
+				if (commissionItems.size() == MAX_ITEMS_REGISTRED_PER_PLAYER)
+				{
+					break;
+				}
+			}
+		}
 		
 		if (!commissionItems.isEmpty())
 		{
@@ -227,11 +239,14 @@ public class ItemCommissionManager
 		
 		synchronized (this)
 		{
-			//@formatter:off
-			final long playerRegisteredItems = _commissionItems.values().stream()
-				.filter(c -> c.getItemInstance().getOwnerId() == player.getObjectId())
-				.count();
-			//@formatter:on
+			long playerRegisteredItems = 0;
+			for (CommissionItem item : _commissionItems.values())
+			{
+				if (item.getItemInstance().getOwnerId() == player.getObjectId())
+				{
+					playerRegisteredItems++;
+				}
+			}
 			
 			if (playerRegisteredItems >= MAX_ITEMS_REGISTRED_PER_PLAYER)
 			{
