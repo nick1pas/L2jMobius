@@ -34,6 +34,7 @@ import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.enums.EvolveLevel;
 import org.l2jmobius.gameserver.model.PetData;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.Summon;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.actor.instance.Servitor;
 import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
@@ -201,12 +202,24 @@ public class CharSummonTable
 					
 					if (player.hasServitors())
 					{
-						final Servitor summon = player.getServitors().values().stream().map(s -> ((Servitor) s)).filter(s -> s.getReferenceSkill() == skillId).findAny().orElse(null);
-						if (summon != null)
+						Servitor servitor = null;
+						for (Summon summon : player.getServitors().values())
 						{
-							summon.setCurrentHp(curHp);
-							summon.setCurrentMp(curMp);
-							summon.setLifeTimeRemaining(time);
+							if (summon instanceof Servitor)
+							{
+								final Servitor s = (Servitor) summon;
+								if (s.getReferenceSkill() == skillId)
+								{
+									servitor = s;
+									break;
+								}
+							}
+						}
+						if (servitor != null)
+						{
+							servitor.setCurrentHp(curHp);
+							servitor.setCurrentMp(curMp);
+							servitor.setLifeTimeRemaining(time);
 						}
 					}
 				}
