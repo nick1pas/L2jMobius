@@ -17,10 +17,12 @@
 package org.l2jmobius.gameserver.network.clientpackets.huntpass;
 
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.data.xml.HuntPassData;
 import org.l2jmobius.gameserver.model.HuntPass;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.request.RewardRequest;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -54,11 +56,21 @@ public class RequestHuntPassReward implements ClientPacket
 			return;
 		}
 		
-		final HuntPass huntPass = player.getHuntPass();
-		final int normalReward = huntPass.getRewardStep();
-		final ItemHolder reward = HuntPassData.getInstance().getRewards().get(normalReward);
-		final ItemTemplate itemTemplate = ItemTable.getInstance().getTemplate(reward.getId());
+		if (player.hasRequest(RewardRequest.class))
+		{
+			return;
+		}
+		player.addRequest(new RewardRequest(player));
 		
+		final HuntPass huntPass = player.getHuntPass();
+		final int rewardIndex = huntPass.getRewardStep();
+		if (rewardIndex >= HuntPassData.getInstance().getRewardsCount())
+		{
+			return;
+		}
+		
+		final ItemHolder reward = HuntPassData.getInstance().getRewards().get(rewardIndex);
+		final ItemTemplate itemTemplate = ItemTable.getInstance().getTemplate(reward.getId());
 		final long weight = itemTemplate.getWeight() * reward.getCount();
 		final long slots = itemTemplate.isStackable() ? 1 : reward.getCount();
 		if (!player.getInventory().validateWeight(weight) || !player.getInventory().validateCapacity(slots))
@@ -69,50 +81,59 @@ public class RequestHuntPassReward implements ClientPacket
 		
 		updateSayhaTime(player);
 		premiumReward(player);
-		huntPass.setRewardStep(normalReward + 1);
+		huntPass.setRewardStep(rewardIndex + 1);
 		huntPass.setRewardAlert(false);
 		player.sendPacket(new HuntPassInfo(player, _huntPassType));
 		player.sendPacket(new HuntPassSayhasSupportInfo(player));
 		player.sendPacket(new HuntPassSimpleInfo(player));
+		
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
 	}
 	
 	private void updateSayhaTime(Player player)
 	{
 		final HuntPass huntpass = player.getHuntPass();
-		final int normalreward = huntpass.getRewardStep();
-		final int premiumreward = huntpass.getPremiumRewardStep();
-		final ItemHolder reward = HuntPassData.getInstance().getRewards().get(normalreward);
-		
-		final int sayhaPoints = 0; // TODO: 0?
-		final long count = reward.getCount();
-		final int calc = (int) (sayhaPoints + count);
-		final boolean isPremium = huntpass.isPremium();
-		if (isPremium && (premiumreward < normalreward))
+		final int rewardIndex = huntpass.getRewardStep();
+		if (rewardIndex >= HuntPassData.getInstance().getRewardsCount())
 		{
 			return;
 		}
 		
-		huntpass.addSayhaTime(calc);
-		if (reward.getId() != 72286) // Sayha's Grace Sustention Points
+		if (huntpass.isPremium() && ((huntpass.getPremiumRewardStep() < rewardIndex) || (huntpass.getPremiumRewardStep() >= HuntPassData.getInstance().getPremiumRewardsCount())))
+		{
+			return;
+		}
+		
+		final ItemHolder reward = HuntPassData.getInstance().getRewards().get(rewardIndex);
+		if (reward.getId() == 72286) // Sayha's Grace Sustention Points
+		{
+			final int count = (int) reward.getCount();
+			huntpass.addSayhaTime(count);
+			
+			final SystemMessage msg = new SystemMessage(SystemMessageId.YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS);
+			msg.addInt(count);
+			player.sendPacket(msg);
+		}
+		else
 		{
 			player.addItem("HuntPassReward", reward, player, true);
 		}
-		
-		final SystemMessage msg = new SystemMessage(SystemMessageId.YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS);
-		msg.addInt((int) (count));
-		player.sendPacket(msg);
 	}
 	
 	private void premiumReward(Player player)
 	{
 		final HuntPass huntPass = player.getHuntPass();
-		final int rewardStep = huntPass.getPremiumRewardStep();
-		final ItemHolder premiumReward = HuntPassData.getInstance().getPremiumRewards().get(rewardStep);
-		final boolean isPremium = huntPass.isPremium();
-		if (isPremium)
+		final int rewardIndex = huntPass.getPremiumRewardStep();
+		if (rewardIndex >= HuntPassData.getInstance().getPremiumRewardsCount())
+		{
+			return;
+		}
+		
+		final ItemHolder premiumReward = HuntPassData.getInstance().getPremiumRewards().get(rewardIndex);
+		if (huntPass.isPremium())
 		{
 			player.addItem("SeasonPassReward", premiumReward, player, true);
-			huntPass.setPremiumRewardStep(rewardStep + 1);
+			huntPass.setPremiumRewardStep(rewardIndex + 1);
 		}
 	}
 }
