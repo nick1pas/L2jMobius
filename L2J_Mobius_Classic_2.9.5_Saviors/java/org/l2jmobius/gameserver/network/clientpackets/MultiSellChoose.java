@@ -19,7 +19,6 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.OptionalLong;
 
 import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.CommonUtil;
@@ -207,9 +206,9 @@ public class MultiSellChoose implements ClientPacket
 			|| (itemEnchantment.getAttributeDefence(AttributeType.DARK) != _darkDefence)
 			|| ((itemEnchantment.getAugmentation() == null) && ((_augmentOption1 != 0) || (_augmentOption2 != 0)))
 			|| ((itemEnchantment.getAugmentation() != null) && ((itemEnchantment.getAugmentation().getOption1Id() != _augmentOption1) || (itemEnchantment.getAugmentation().getOption2Id() != _augmentOption2)))
-			|| ((_soulCrystalOptions != null) && itemEnchantment.getSoulCrystalOptions().stream().anyMatch(e -> !CommonUtil.contains(_soulCrystalOptions, e)))
+			|| ((_soulCrystalOptions != null) && !itemEnchantment.soulCrystalOptionsMatch(_soulCrystalOptions))
 			|| ((_soulCrystalOptions == null) && !itemEnchantment.getSoulCrystalOptions().isEmpty())
-			|| ((_soulCrystalSpecialOptions != null) && itemEnchantment.getSoulCrystalSpecialOptions().stream().anyMatch(e -> !CommonUtil.contains(_soulCrystalSpecialOptions, e)))
+			|| ((_soulCrystalSpecialOptions != null) && !itemEnchantment.soulCrystalSpecialOptionsMatch(_soulCrystalSpecialOptions))
 			|| ((_soulCrystalSpecialOptions == null) && !itemEnchantment.getSoulCrystalSpecialOptions().isEmpty())
 			))
 		//@formatter:on
@@ -607,10 +606,17 @@ public class MultiSellChoose implements ClientPacket
 			// Finally, give the tax to the castle.
 			if ((npc != null) && list.isApplyTaxes())
 			{
-				final OptionalLong taxPaid = entry.getIngredients().stream().filter(i -> i.getId() == Inventory.ADENA_ID).mapToLong(i -> Math.round(i.getCount() * list.getIngredientMultiplier() * list.getTaxRate()) * _amount).reduce(Math::multiplyExact);
-				if (taxPaid.isPresent())
+				long taxPaid = 0;
+				for (ItemChanceHolder ingredient : entry.getIngredients())
 				{
-					npc.handleTaxPayment(taxPaid.getAsLong());
+					if (ingredient.getId() == Inventory.ADENA_ID)
+					{
+						taxPaid += Math.round(ingredient.getCount() * list.getIngredientMultiplier() * list.getTaxRate()) * _amount;
+					}
+				}
+				if (taxPaid > 0)
+				{
+					npc.handleTaxPayment(taxPaid);
 				}
 			}
 		}

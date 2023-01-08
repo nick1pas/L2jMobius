@@ -406,9 +406,63 @@ public class ItemInfo
 		return _soulCrystalOptions != null ? _soulCrystalOptions : Collections.emptyList();
 	}
 	
+	public boolean soulCrystalOptionsMatch(EnsoulOption[] soulCrystalOptions)
+	{
+		if ((_soulCrystalOptions == null))
+		{
+			return false;
+		}
+		
+		for (EnsoulOption soulCrystalOption1 : _soulCrystalOptions)
+		{
+			boolean found = false;
+			SEARCH: for (EnsoulOption soulCrystalOption2 : soulCrystalOptions)
+			{
+				if (soulCrystalOption1.equals(soulCrystalOption2))
+				{
+					found = true;
+					break SEARCH;
+				}
+			}
+			if (!found)
+			{
+				return false;
+			}
+		}
+		
+		return true;
+	}
+	
 	public Collection<EnsoulOption> getSoulCrystalSpecialOptions()
 	{
 		return _soulCrystalSpecialOptions != null ? _soulCrystalSpecialOptions : Collections.emptyList();
+	}
+	
+	public boolean soulCrystalSpecialOptionsMatch(EnsoulOption[] soulCrystalSpecialOptions)
+	{
+		if (_soulCrystalSpecialOptions == null)
+		{
+			return false;
+		}
+		
+		for (EnsoulOption soulCrystalSpecialOption1 : _soulCrystalSpecialOptions)
+		{
+			boolean found = false;
+			SEARCH: for (EnsoulOption soulCrystalSpecialOption2 : soulCrystalSpecialOptions)
+			{
+				if (soulCrystalSpecialOption1.equals(soulCrystalSpecialOption2))
+				{
+					found = true;
+					break SEARCH;
+				}
+			}
+			if (!found)
+			{
+				return false;
+			}
+		}
+		
+		return true;
 	}
 	
 	public long getVisualExpiration()
