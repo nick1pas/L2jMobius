@@ -1264,11 +1264,14 @@ public class Item extends WorldObject
 		{
 			if (_itemTemplate.getAttributes() != null)
 			{
-				return _itemTemplate.getAttributes().stream().findFirst().orElse(null);
+				if (!_itemTemplate.getAttributes().isEmpty())
+				{
+					return _itemTemplate.getAttributes().iterator().next();
+				}
 			}
-			else if (_elementals != null)
+			else if ((_elementals != null) && !_elementals.isEmpty())
 			{
-				return _elementals.values().stream().findFirst().orElse(null);
+				return _elementals.values().iterator().next();
 			}
 		}
 		return null;
