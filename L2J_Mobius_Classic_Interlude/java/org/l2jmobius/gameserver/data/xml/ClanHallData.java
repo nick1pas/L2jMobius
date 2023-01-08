@@ -19,12 +19,12 @@ package org.l2jmobius.gameserver.data.xml;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.NamedNodeMap;
@@ -212,7 +212,16 @@ public class ClanHallData implements IXmlReader
 	
 	public List<ClanHall> getFreeAuctionableHall()
 	{
-		return _clanHalls.values().stream().filter(ch -> (ch.getType() == ClanHallType.AUCTIONABLE) && (ch.getOwner() == null)).sorted(Comparator.comparingInt(ClanHall::getResidenceId)).collect(Collectors.toList());
+		final List<ClanHall> freeAuctionableHalls = new ArrayList<>();
+		for (ClanHall ch : _clanHalls.values())
+		{
+			if ((ch.getType() == ClanHallType.AUCTIONABLE) && (ch.getOwner() == null))
+			{
+				freeAuctionableHalls.add(ch);
+			}
+		}
+		Collections.sort(freeAuctionableHalls, Comparator.comparingInt(ClanHall::getResidenceId));
+		return freeAuctionableHalls;
 	}
 	
 	/**
