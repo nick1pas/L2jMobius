@@ -16,9 +16,8 @@
  */
 package handlers.effecthandlers;
 
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.gameserver.ai.CtrlEvent;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
@@ -37,12 +36,17 @@ import org.l2jmobius.gameserver.model.skill.Skill;
  */
 public class BlockActions extends AbstractEffect
 {
-	private final Set<Integer> _allowedSkills;
+	private final Set<Integer> _allowedSkills = new HashSet<>();
 	
 	public BlockActions(StatSet params)
 	{
-		final String[] allowedSkills = params.getString("allowedSkills", "").split(";");
-		_allowedSkills = Arrays.stream(allowedSkills).filter(s -> !s.isEmpty()).map(Integer::parseInt).collect(Collectors.toSet());
+		for (String skill : params.getString("allowedSkills", "").split(";"))
+		{
+			if (!skill.isEmpty())
+			{
+				_allowedSkills.add(Integer.parseInt(skill));
+			}
+		}
 	}
 	
 	@Override
@@ -65,8 +69,13 @@ public class BlockActions extends AbstractEffect
 			return;
 		}
 		
-		_allowedSkills.stream().forEach(effected::addBlockActionsAllowedSkill);
+		for (Integer skillId : _allowedSkills)
+		{
+			effected.addBlockActionsAllowedSkill(skillId);
+		}
+		
 		effected.startParalyze();
+		
 		// Cancel running skill casters.
 		effected.abortAllSkillCasters();
 	}
@@ -74,7 +83,11 @@ public class BlockActions extends AbstractEffect
 	@Override
 	public void onExit(Creature effector, Creature effected, Skill skill)
 	{
-		_allowedSkills.stream().forEach(effected::removeBlockActionsAllowedSkill);
+		for (Integer skillId : _allowedSkills)
+		{
+			effected.removeBlockActionsAllowedSkill(skillId);
+		}
+		
 		if (effected.isPlayable())
 		{
 			if (effected.isSummon())

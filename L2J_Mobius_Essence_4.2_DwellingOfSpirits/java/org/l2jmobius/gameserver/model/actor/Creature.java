@@ -5608,12 +5608,12 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		return _effectList.hasAbnormalType(abnormalType);
 	}
 	
-	public void addBlockActionsAllowedSkill(int skillId)
+	public void addBlockActionsAllowedSkill(Integer skillId)
 	{
 		_blockActionsAllowedSkills.computeIfAbsent(skillId, k -> new AtomicInteger()).incrementAndGet();
 	}
 	
-	public void removeBlockActionsAllowedSkill(int skillId)
+	public void removeBlockActionsAllowedSkill(Integer skillId)
 	{
 		_blockActionsAllowedSkills.computeIfPresent(skillId, (k, v) -> v.decrementAndGet() != 0 ? v : null);
 	}
