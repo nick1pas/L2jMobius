@@ -285,6 +285,16 @@ public class WorldExchangeManager implements IXmlReader
 		}
 	}
 	
+	private long calculateFeeForRegister(Player player, int objectId, long amount, long priceForEach)
+	{
+		final Item itemToRemove = player.getInventory().getItemByObjectId(objectId);
+		if (itemToRemove.getId() == Inventory.ADENA_ID)
+		{
+			return priceForEach * 100L;
+		}
+		return Math.round(priceForEach * (itemToRemove.getId() == Inventory.ADENA_ID ? 1 : amount) * Config.WORLD_EXCHANGE_ADENA_FEE);
+	}
+	
 	/**
 	 * Forwarded from client packet "ExWorldExchangeRegisterItem" for check ops and register item if it can in World Exchange system
 	 * @param player
@@ -306,9 +316,16 @@ public class WorldExchangeManager implements IXmlReader
 			player.sendPacket(WorldExchangeRegisterItem.FAIL);
 			return;
 		}
+		if (player.getInventory().getItemByObjectId(itemObjectId) == null)
+		{
+			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
+			player.sendPacket(WorldExchangeRegisterItem.FAIL);
+			return;
+		}
 		
-		long totalPrice = priceForEach * amount;
-		long feePrice = Math.round(totalPrice * Config.WORLD_EXCHANGE_ADENA_FEE);
+		final Item item = player.getInventory().getItemByObjectId(itemObjectId);
+		long totalPrice = priceForEach * (item.getId() == Inventory.ADENA_ID ? 1 : amount);
+		long feePrice = calculateFeeForRegister(player, itemObjectId, amount, priceForEach);
 		if ((Config.WORLD_EXCHANGE_MAX_ADENA_FEE != -1) && (feePrice > Config.WORLD_EXCHANGE_MAX_ADENA_FEE))
 		{
 			feePrice = Config.WORLD_EXCHANGE_MAX_ADENA_FEE;
@@ -320,15 +337,7 @@ public class WorldExchangeManager implements IXmlReader
 			return;
 		}
 		
-		if (player.getInventory().getItemByObjectId(itemObjectId) == null)
-		{
-			player.sendPacket(new SystemMessage(SystemMessageId.THE_ITEM_IS_NOT_FOUND));
-			player.sendPacket(WorldExchangeRegisterItem.FAIL);
-			return;
-		}
-		
 		final long freeId = getNextId();
-		final Item item = player.getInventory().getItemByObjectId(itemObjectId);
 		final InventoryUpdate iu = new InventoryUpdate();
 		if (item.isStackable() && (player.getInventory().getInventoryItemCount(item.getId(), -1) > amount))
 		{
@@ -541,11 +550,8 @@ public class WorldExchangeManager implements IXmlReader
 		}
 		
 		player.sendPacket(new WorldExchangeSettleRecvResult(worldExchangeItem.getItemInstance().getObjectId(), worldExchangeItem.getItemInstance().getCount(), (byte) 1));
-		long returnPrice = worldExchangeItem.getPrice() - Math.round(worldExchangeItem.getPrice() * Config.WORLD_EXCHANGE_LCOIN_TAX);
-		if ((Config.WORLD_EXCHANGE_MAX_LCOIN_TAX != -1) && (returnPrice > Config.WORLD_EXCHANGE_MAX_LCOIN_TAX))
-		{
-			returnPrice = Config.WORLD_EXCHANGE_MAX_LCOIN_TAX;
-		}
+		final long fee = Math.round(((worldExchangeItem.getPrice() * Config.WORLD_EXCHANGE_LCOIN_TAX) * 100) / 100);
+		final long returnPrice = worldExchangeItem.getPrice() - Math.min(fee, (Config.WORLD_EXCHANGE_MAX_LCOIN_TAX != -1 ? Config.WORLD_EXCHANGE_MAX_LCOIN_TAX : Long.MAX_VALUE)); // floating-point accuracy workaround :D
 		player.getInventory().addItem("World Exchange Took Money", Inventory.LCOIN_ID, (returnPrice), player, null);
 		worldExchangeItem.setStoreType(WorldExchangeItemStatusType.WORLD_EXCHANGE_NONE);
 		Item item = worldExchangeItem.getItemInstance();
