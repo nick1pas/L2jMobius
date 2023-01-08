@@ -23,13 +23,12 @@ import org.l2jmobius.gameserver.handler.IAffectObjectHandler;
 import org.l2jmobius.gameserver.handler.IAffectScopeHandler;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
-import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.skill.targets.AffectScope;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
- * @author Nik
+ * @author Nik, Mobius
  */
 public class SummonExceptMaster implements IAffectScopeHandler
 {
@@ -42,15 +41,33 @@ public class SummonExceptMaster implements IAffectScopeHandler
 		
 		if (target.isPlayable())
 		{
-			final Player player = target.getActingPlayer();
-			//@formatter:off
-			player.getServitorsAndPets().stream()
-			.filter(c -> !c.isDead())
-			.filter(c -> (affectRange <= 0) || Util.checkIfInRange(affectRange, c, target, true))
-			.filter(c -> (affectObject == null) || affectObject.checkAffectedObject(creature, c))
-			.limit(affectLimit > 0 ? affectLimit : Long.MAX_VALUE)
-			.forEach(action);
-			//@formatter:on
+			int count = 0;
+			final int limit = (affectLimit > 0) ? affectLimit : Integer.MAX_VALUE;
+			for (Creature c : target.getActingPlayer().getServitorsAndPets())
+			{
+				if (c.isDead())
+				{
+					continue;
+				}
+				
+				if ((affectRange > 0) && !Util.checkIfInRange(affectRange, c, target, true))
+				{
+					continue;
+				}
+				
+				if ((affectObject != null) && !affectObject.checkAffectedObject(creature, c))
+				{
+					continue;
+				}
+				
+				count++;
+				action.accept(c);
+				
+				if (count >= limit)
+				{
+					break;
+				}
+			}
 		}
 	}
 	
