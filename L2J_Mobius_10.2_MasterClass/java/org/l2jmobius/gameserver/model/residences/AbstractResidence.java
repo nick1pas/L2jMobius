@@ -253,7 +253,15 @@ public abstract class AbstractResidence extends ListenersContainer implements IN
 	 */
 	public boolean hasFunction(ResidenceFunctionType type)
 	{
-		return _functions.values().stream().map(ResidenceFunction::getTemplate).anyMatch(func -> func.getType() == type);
+		for (ResidenceFunction function : _functions.values())
+		{
+			final ResidenceFunctionTemplate template = function.getTemplate();
+			if ((template != null) && (template.getType() == type))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**
@@ -262,11 +270,11 @@ public abstract class AbstractResidence extends ListenersContainer implements IN
 	 */
 	public ResidenceFunction getFunction(ResidenceFunctionType type)
 	{
-		for (ResidenceFunction func : _functions.values())
+		for (ResidenceFunction function : _functions.values())
 		{
-			if (func.getType() == type)
+			if (function.getType() == type)
 			{
-				return func;
+				return function;
 			}
 		}
 		return null;
