@@ -16,7 +16,9 @@
  */
 package handlers.skillconditionhandlers;
 
+import java.util.EnumSet;
 import java.util.List;
+import java.util.Set;
 
 import org.l2jmobius.gameserver.enums.ClassId;
 import org.l2jmobius.gameserver.enums.SkillConditionAffectType;
@@ -27,17 +29,21 @@ import org.l2jmobius.gameserver.model.skill.ISkillCondition;
 import org.l2jmobius.gameserver.model.skill.Skill;
 
 /**
- * @author UnAfraid
+ * @author UnAfraid, Mobius
  */
 public class OpCheckClassListSkillCondition implements ISkillCondition
 {
-	private final List<ClassId> _classIds;
+	private final Set<ClassId> _classIds = EnumSet.noneOf(ClassId.class);
 	private final SkillConditionAffectType _affectType;
 	private final boolean _isWithin;
 	
 	public OpCheckClassListSkillCondition(StatSet params)
 	{
-		_classIds = params.getEnumList("classIds", ClassId.class);
+		final List<ClassId> classIds = params.getEnumList("classIds", ClassId.class);
+		if (classIds != null)
+		{
+			_classIds.addAll(classIds);
+		}
 		_affectType = params.getEnum("affectType", SkillConditionAffectType.class);
 		_isWithin = params.getBoolean("isWithin");
 	}
@@ -49,17 +55,16 @@ public class OpCheckClassListSkillCondition implements ISkillCondition
 		{
 			case CASTER:
 			{
-				return caster.isPlayer() && (_isWithin == _classIds.stream().anyMatch(classId -> classId == caster.getActingPlayer().getClassId()));
+				return caster.isPlayer() && (_classIds.contains(caster.getActingPlayer().getClassId()) == _isWithin);
 			}
 			case TARGET:
 			{
-				if ((target != null) && target.isPlayer())
-				{
-					return _isWithin == _classIds.stream().anyMatch(classId -> classId.getId() == target.getActingPlayer().getClassId().getId());
-				}
-				break;
+				return (target != null) && target.isPlayer() && (_classIds.contains(target.getActingPlayer().getClassId()) == _isWithin);
+			}
+			default:
+			{
+				return false;
 			}
 		}
-		return false;
 	}
 }
