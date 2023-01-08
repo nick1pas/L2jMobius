@@ -16,6 +16,8 @@
  */
 package handlers.targethandlers.affectscope;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -33,7 +35,7 @@ import org.l2jmobius.gameserver.model.skill.targets.AffectScope;
 
 /**
  * Range sorted by lowest to highest hp percent affect scope implementation.
- * @author Nik
+ * @author Nik, Mobius
  */
 public class RangeSortByHp implements IAffectScopeHandler
 {
@@ -82,12 +84,21 @@ public class RangeSortByHp implements IAffectScopeHandler
 		}
 		
 		// Sort from lowest hp to highest hp.
-		//@formatter:off
-		result.stream()
-		.sorted(Comparator.comparingInt(Creature::getCurrentHpPercent))
-		.limit(affectLimit > 0 ? affectLimit : Long.MAX_VALUE)
-		.forEach(action);
-		//@formatter:on
+		final List<Creature> sortedList = new ArrayList<>(result);
+		Collections.sort(sortedList, Comparator.comparingInt(Creature::getCurrentHpPercent));
+		
+		int count = 0;
+		final int limit = (affectLimit > 0) ? affectLimit : Integer.MAX_VALUE;
+		for (Creature c : sortedList)
+		{
+			if (count >= limit)
+			{
+				break;
+			}
+			
+			count++;
+			action.accept(c);
+		}
 	}
 	
 	@Override
