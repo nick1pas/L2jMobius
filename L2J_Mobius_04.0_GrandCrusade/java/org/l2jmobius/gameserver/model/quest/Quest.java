@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -31,7 +32,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -629,14 +629,15 @@ public class Quest extends AbstractScript implements IIdentifiable
 		String res = null;
 		try
 		{
-			//@formatter:off
-			final Set<Quest> startingQuests = npc.getListeners(EventType.ON_NPC_QUEST_START).stream()
-				.map(AbstractEventListener::getOwner)
-				.filter(Quest.class::isInstance)
-				.map(Quest.class::cast)
-				.distinct()
-				.collect(Collectors.toSet());
-			//@formatter:on
+			final Set<Quest> startingQuests = new HashSet<>();
+			for (AbstractEventListener listener : npc.getListeners(EventType.ON_NPC_QUEST_START))
+			{
+				final Object owner = listener.getOwner();
+				if (owner instanceof Quest)
+				{
+					startingQuests.add((Quest) owner);
+				}
+			}
 			
 			final String startConditionHtml = getStartConditionHtml(player, npc);
 			if (startingQuests.contains(this) && (startConditionHtml != null))
