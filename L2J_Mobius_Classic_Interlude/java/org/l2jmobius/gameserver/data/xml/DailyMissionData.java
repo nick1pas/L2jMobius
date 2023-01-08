@@ -20,10 +20,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
 
 import org.w3c.dom.Document;
 
@@ -35,12 +35,14 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 
 /**
- * @author Sdw
+ * @author Sdw, Mobius
  */
 public class DailyMissionData implements IXmlReader
 {
 	private static final Logger LOGGER = Logger.getLogger(DailyMissionData.class.getName());
+	
 	private final Map<Integer, List<DailyMissionDataHolder>> _dailyMissionRewards = new LinkedHashMap<>();
+	private final List<DailyMissionDataHolder> _dailyMissionData = new ArrayList<>();
 	private boolean _isAvailable;
 	
 	protected DailyMissionData()
@@ -53,7 +55,15 @@ public class DailyMissionData implements IXmlReader
 	{
 		_dailyMissionRewards.clear();
 		parseDatapackFile("data/DailyMission.xml");
+		
+		_dailyMissionData.clear();
+		for (List<DailyMissionDataHolder> missionList : _dailyMissionRewards.values())
+		{
+			_dailyMissionData.addAll(missionList);
+		}
+		
 		_isAvailable = !_dailyMissionRewards.isEmpty();
+		
 		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _dailyMissionRewards.size() + " one day rewards.");
 	}
 	
@@ -98,23 +108,20 @@ public class DailyMissionData implements IXmlReader
 	
 	public Collection<DailyMissionDataHolder> getDailyMissionData()
 	{
-		//@formatter:off
-		return _dailyMissionRewards.values()
-			.stream()
-			.flatMap(List::stream)
-			.collect(Collectors.toList());
-		//@formatter:on
+		return _dailyMissionData;
 	}
 	
 	public Collection<DailyMissionDataHolder> getDailyMissionData(Player player)
 	{
-		//@formatter:off
-		return _dailyMissionRewards.values()
-			.stream()
-			.flatMap(List::stream)
-			.filter(o -> o.isDisplayable(player))
-			.collect(Collectors.toList());
-		//@formatter:on
+		final List<DailyMissionDataHolder> missionData = new LinkedList<>();
+		for (DailyMissionDataHolder mission : _dailyMissionData)
+		{
+			if (mission.isDisplayable(player))
+			{
+				missionData.add(mission);
+			}
+		}
+		return missionData;
 	}
 	
 	public Collection<DailyMissionDataHolder> getDailyMissionData(int id)
