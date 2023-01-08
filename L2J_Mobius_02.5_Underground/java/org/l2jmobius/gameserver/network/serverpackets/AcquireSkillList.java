@@ -17,8 +17,8 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
-import java.util.Objects;
-import java.util.stream.Collectors;
+import java.util.LinkedList;
+import java.util.List;
 
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.SkillLearn;
@@ -72,7 +72,16 @@ public class AcquireSkillList extends ServerPacket
 				writeLong(item.getCount());
 			}
 			
-			final Collection<Skill> removeSkills = skill.getRemoveSkills().stream().map(_player::getKnownSkill).filter(Objects::nonNull).collect(Collectors.toList());
+			final List<Skill> removeSkills = new LinkedList<>();
+			for (int id : skill.getRemoveSkills())
+			{
+				final Skill removeSkill = _player.getKnownSkill(id);
+				if (removeSkill != null)
+				{
+					removeSkills.add(removeSkill);
+				}
+			}
+			
 			writeByte(removeSkills.size());
 			for (Skill removed : removeSkills)
 			{

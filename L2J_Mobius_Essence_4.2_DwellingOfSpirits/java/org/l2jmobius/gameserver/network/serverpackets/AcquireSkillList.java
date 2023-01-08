@@ -17,9 +17,8 @@
 package org.l2jmobius.gameserver.network.serverpackets;
 
 import java.util.Collection;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.model.SkillLearn;
@@ -61,7 +60,7 @@ public class AcquireSkillList extends ServerPacket
 		for (SkillLearn skill : _learnable)
 		{
 			writeInt(skill.getSkillId());
-			writeShort(skill.getSkillLevel()); // Main writeD, Essence writeH.
+			writeShort(skill.getSkillLevel()); // Main writeInt, Essence writeShort.
 			writeLong(skill.getLevelUpSp());
 			writeByte(skill.getGetLevel());
 			writeByte(0); // Skill dual class level.
@@ -74,12 +73,21 @@ public class AcquireSkillList extends ServerPacket
 				writeLong(item.get(0).getCount());
 			}
 			
-			final Collection<Skill> removeSkills = skill.getRemoveSkills().stream().map(_player::getKnownSkill).filter(Objects::nonNull).collect(Collectors.toList());
+			final List<Skill> removeSkills = new LinkedList<>();
+			for (int id : skill.getRemoveSkills())
+			{
+				final Skill removeSkill = _player.getKnownSkill(id);
+				if (removeSkill != null)
+				{
+					removeSkills.add(removeSkill);
+				}
+			}
+			
 			writeByte(removeSkills.size());
 			for (Skill removed : removeSkills)
 			{
 				writeInt(removed.getId());
-				writeShort(removed.getLevel()); // Main writeD, Essence writeH.
+				writeShort(removed.getLevel()); // Main writeInt, Essence writeShort.
 			}
 		}
 	}
