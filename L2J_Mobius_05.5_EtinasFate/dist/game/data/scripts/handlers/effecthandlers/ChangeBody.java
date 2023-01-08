@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 
 /**
  * Transformation type effect, which disables attack or use of skills.
- * @author Nik
+ * @author Nik, Mobius
  */
 public class ChangeBody extends AbstractEffect
 {
@@ -53,13 +53,14 @@ public class ChangeBody extends AbstractEffect
 	public void onStart(Creature effector, Creature effected, Skill skill, Item item)
 	{
 		final int chance = Rnd.get(100);
-		//@formatter:off
-		_transformations.stream()
-			.filter(t -> t.calcChance(chance)) // Calculate chance for each transformation.
-			.mapToInt(TemplateChanceHolder::getTemplateId)
-			.findAny()
-			.ifPresent(id -> effected.transform(id, false)); // Transform effected to whatever successful random template without adding skills.
-		//@formatter:on
+		for (TemplateChanceHolder holder : _transformations)
+		{
+			if (holder.calcChance(chance))
+			{
+				effected.transform(holder.getTemplateId(), false);
+				return;
+			}
+		}
 	}
 	
 	@Override
