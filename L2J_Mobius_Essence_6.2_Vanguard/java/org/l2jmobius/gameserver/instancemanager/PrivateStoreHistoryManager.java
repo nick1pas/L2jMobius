@@ -23,7 +23,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Level;
@@ -137,7 +136,7 @@ public class PrivateStoreHistoryManager
 	
 	public List<ItemHistoryTransaction> getTopHighestItem()
 	{
-		final LinkedList<ItemHistoryTransaction> list = new LinkedList<>(_items);
+		final List<ItemHistoryTransaction> list = new ArrayList<>(_items);
 		list.sort(new SortByPrice());
 		return list;
 	}
@@ -157,7 +156,7 @@ public class PrivateStoreHistoryManager
 			}
 		}
 		
-		final List<ItemHistoryTransaction> list = new LinkedList<>();
+		final List<ItemHistoryTransaction> list = new ArrayList<>();
 		map.forEach((itemID, transaction) -> list.add(transaction));
 		list.sort(new SortByQuantity());
 		return list;
