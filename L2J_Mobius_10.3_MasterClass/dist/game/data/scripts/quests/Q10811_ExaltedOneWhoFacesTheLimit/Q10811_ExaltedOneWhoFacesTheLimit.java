@@ -245,12 +245,10 @@ public class Q10811_ExaltedOneWhoFacesTheLimit extends Quest
 		24321, // Temple Patrol Guard
 		24322, // Temple Knight Recruit
 		// Dragon Valley
-		24480, // Dragon Legionnaire
-		24482, // Dragon Officer
-		24481, // Dragon Peltast
-		24483, // Dragon Centurion
-		24484, // Dragon Elite Guard
-		24485, // Behemoth Dragon
+		24617, // Dragon Peltast
+		24618, // Dragon Officer
+		24619, // Behemoth Dragon
+		24620, // Soul Hunter
 		// Valley of Saints
 		24876, // Guide of Splendor
 		24877, // Herald of Splendor

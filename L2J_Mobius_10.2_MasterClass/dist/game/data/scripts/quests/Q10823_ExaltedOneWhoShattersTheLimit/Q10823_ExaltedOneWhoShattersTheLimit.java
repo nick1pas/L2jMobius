@@ -22,6 +22,9 @@ import java.util.Set;
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.events.EventDispatcher;
+import org.l2jmobius.gameserver.model.events.EventType;
+import org.l2jmobius.gameserver.model.events.impl.creature.player.OnPlayerBecomeExalted;
 import org.l2jmobius.gameserver.model.holders.NpcLogListHolder;
 import org.l2jmobius.gameserver.model.quest.Quest;
 import org.l2jmobius.gameserver.model.quest.QuestState;
@@ -253,12 +256,10 @@ public class Q10823_ExaltedOneWhoShattersTheLimit extends Quest
 		24321, // Temple Patrol Guard
 		24322, // Temple Knight Recruit
 		// Dragon Valley
-		24480, // Dragon Legionnaire
-		24482, // Dragon Officer
-		24481, // Dragon Peltast
-		24483, // Dragon Centurion
-		24484, // Dragon Elite Guard
-		24485, // Behemoth Dragon
+		24617, // Dragon Peltast
+		24618, // Dragon Officer
+		24619, // Behemoth Dragon
+		24620, // Soul Hunter
 		// Valley of Saints
 		24876, // Guide of Splendor
 		24877, // Herald of Splendor
@@ -339,6 +340,11 @@ public class Q10823_ExaltedOneWhoShattersTheLimit extends Quest
 					player.broadcastUserInfo();
 					qs.exitQuest(false, true);
 					htmltext = event;
+					// Notify to scripts.
+					if (EventDispatcher.getInstance().hasListener(EventType.ON_PLAYER_BECOME_EXALTED))
+					{
+						EventDispatcher.getInstance().notifyEventAsync(new OnPlayerBecomeExalted(player));
+					}
 				}
 				break;
 			}

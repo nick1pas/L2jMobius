@@ -176,13 +176,11 @@ public class AetherDrops extends AbstractNpcAI
 		24418, // Breka Orc Shaman
 		24419, // Breka Orc Slaughterer
 		24420, // Breka Orc prefect
-		// Dragon Valley Lv.119
-		24480, // Dragon Legionary
-		24481, // Dragon Peltast
-		24482, // Dragon Officer
-		24483, // Dragon Centurion
-		24484, // Dragon Elite Guard
-		24485, // Behemoth Dragon
+		// Dragon Valley Lv.124
+		24617, // Dragon Peltast
+		24618, // Dragon Officer
+		24619, // Behemoth Dragon
+		24620, // Soul Hunter
 		// Swamp of Screams
 		24570, // Dire Stakato Drone
 		24571, // Dire Stakato Berserker
