@@ -33,8 +33,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -65,6 +63,7 @@ import org.l2jmobius.gameserver.model.events.impl.instance.OnInstanceStatusChang
 import org.l2jmobius.gameserver.model.interfaces.IIdentifiable;
 import org.l2jmobius.gameserver.model.interfaces.ILocational;
 import org.l2jmobius.gameserver.model.interfaces.INamable;
+import org.l2jmobius.gameserver.model.spawns.NpcSpawnTemplate;
 import org.l2jmobius.gameserver.model.spawns.SpawnGroup;
 import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
 import org.l2jmobius.gameserver.model.variables.PlayerVariables;
@@ -112,7 +111,10 @@ public class Instance implements IIdentifiable, INamable
 		_spawns = new ArrayList<>(template.getSpawns().size());
 		
 		// Clone and add the spawn templates
-		template.getSpawns().stream().map(SpawnTemplate::clone).forEach(_spawns::add);
+		for (SpawnTemplate spawn : template.getSpawns())
+		{
+			_spawns.add(spawn.clone());
+		}
 		
 		// Register world to instance manager.
 		InstanceManager.getInstance().register(this);
@@ -454,7 +456,17 @@ public class Instance implements IIdentifiable, INamable
 	 */
 	public boolean isSpawnGroupExist(String name)
 	{
-		return _spawns.stream().flatMap(group -> group.getGroups().stream()).anyMatch(group -> name.equalsIgnoreCase(group.getName()));
+		for (SpawnTemplate spawnTemplate : _spawns)
+		{
+			for (SpawnGroup group : spawnTemplate.getGroups())
+			{
+				if (name.equalsIgnoreCase(group.getName()))
+				{
+					return true;
+				}
+			}
+		}
+		return false;
 	}
 	
 	/**
@@ -483,30 +495,10 @@ public class Instance implements IIdentifiable, INamable
 	
 	/**
 	 * @param groupName
-	 * @param filter
+	 * @param filterValue
 	 * @return {@code List} of NPCs that are part of specified group and matches filter specified
 	 */
-	public List<Npc> getNpcsOfGroup(String groupName, Predicate<Npc> filter)
-	{
-		return getStreamOfGroup(groupName, filter).collect(Collectors.toList());
-	}
-	
-	/**
-	 * @param groupName
-	 * @param filter
-	 * @return {@code Npc} instance of an NPC that is part of a group and matches filter specified
-	 */
-	public Npc getNpcOfGroup(String groupName, Predicate<Npc> filter)
-	{
-		return getStreamOfGroup(groupName, filter).findFirst().orElse(null);
-	}
-	
-	/**
-	 * @param groupName
-	 * @param filterValue
-	 * @return {@code Stream<Npc>} of NPCs that is part of a group and matches filter specified
-	 */
-	public Stream<Npc> getStreamOfGroup(String groupName, Predicate<Npc> filterValue)
+	public List<Npc> getNpcsOfGroup(String groupName, Predicate<Npc> filterValue)
 	{
 		Predicate<Npc> filter = filterValue;
 		if (filter == null)
@@ -514,13 +506,56 @@ public class Instance implements IIdentifiable, INamable
 			filter = Objects::nonNull;
 		}
 		
-		//@formatter:off
-		return _spawns.stream()
-			.flatMap(spawnTemplate -> spawnTemplate.getGroupsByName(groupName).stream())
-			.flatMap(group -> group.getSpawns().stream())
-			.flatMap(npcTemplate -> npcTemplate.getSpawnedNpcs().stream())
-			.filter(filter);
-		//@formatter:on
+		final List<Npc> npcs = new LinkedList<>();
+		for (SpawnTemplate spawnTemplate : _spawns)
+		{
+			for (SpawnGroup group : spawnTemplate.getGroupsByName(groupName))
+			{
+				for (NpcSpawnTemplate npcTemplate : group.getSpawns())
+				{
+					for (Npc npc : npcTemplate.getSpawnedNpcs())
+					{
+						if (filter.test(npc))
+						{
+							npcs.add(npc);
+						}
+					}
+				}
+			}
+		}
+		return npcs;
+	}
+	
+	/**
+	 * @param groupName
+	 * @param filterValue
+	 * @return {@code Npc} instance of an NPC that is part of a group and matches filter specified
+	 */
+	public Npc getNpcOfGroup(String groupName, Predicate<Npc> filterValue)
+	{
+		Predicate<Npc> filter = filterValue;
+		if (filter == null)
+		{
+			filter = Objects::nonNull;
+		}
+		
+		for (SpawnTemplate spawnTemplate : _spawns)
+		{
+			for (SpawnGroup group : spawnTemplate.getGroupsByName(groupName))
+			{
+				for (NpcSpawnTemplate npcTemplate : group.getSpawns())
+				{
+					for (Npc npc : npcTemplate.getSpawnedNpcs())
+					{
+						if (filter.test(npc))
+						{
+							return npc;
+						}
+					}
+				}
+			}
+		}
+		return null;
 	}
 	
 	/**
@@ -758,7 +793,13 @@ public class Instance implements IIdentifiable, INamable
 	 */
 	private void removeDoors()
 	{
-		_doors.values().stream().filter(Objects::nonNull).forEach(Door::decayMe);
+		for (Door door : _doors.values())
+		{
+			if (door != null)
+			{
+				door.decayMe();
+			}
+		}
 		_doors.clear();
 	}
 	
