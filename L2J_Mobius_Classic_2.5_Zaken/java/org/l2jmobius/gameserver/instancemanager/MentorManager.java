@@ -117,7 +117,14 @@ public class MentorManager
 	
 	public boolean isMentee(int objectId)
 	{
-		return _menteeData.values().stream().anyMatch(map -> map.containsKey(objectId));
+		for (Map<Integer, Mentee> map : _menteeData.values())
+		{
+			if (map.containsKey(objectId))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	public Map<Integer, Map<Integer, Mentee>> getMentorData()
