@@ -294,7 +294,13 @@ public class World
 		{
 			_nextPrivateStoreUpdate = currentTime + Config.STORE_REVIEW_CACHE_TIME;
 			_allStoreModeBuySellPlayers.clear();
-			_allPlayers.values().stream().filter(Player::isInStoreSellOrBuyMode).forEach(player -> _allStoreModeBuySellPlayers.put(player.getObjectId(), player));
+			for (Player player : _allPlayers.values())
+			{
+				if (player.isInStoreSellOrBuyMode())
+				{
+					_allStoreModeBuySellPlayers.put(player.getObjectId(), player);
+				}
+			}
 		}
 		return _allStoreModeBuySellPlayers.values();
 	}
