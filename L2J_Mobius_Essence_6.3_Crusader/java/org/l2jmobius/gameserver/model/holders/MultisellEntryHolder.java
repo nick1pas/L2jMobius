@@ -18,13 +18,12 @@ package org.l2jmobius.gameserver.model.holders;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 
 /**
- * @author Nik
+ * @author Nik, Mobius
  */
 public class MultisellEntryHolder
 {
@@ -36,7 +35,17 @@ public class MultisellEntryHolder
 	{
 		_ingredients = Collections.unmodifiableList(ingredients);
 		_products = Collections.unmodifiableList(products);
-		_stackable = products.stream().map(i -> ItemTable.getInstance().getTemplate(i.getId())).filter(Objects::nonNull).allMatch(ItemTemplate::isStackable);
+		
+		for (ItemChanceHolder product : products)
+		{
+			final ItemTemplate item = ItemTable.getInstance().getTemplate(product.getId());
+			if ((item == null) || !item.isStackable())
+			{
+				_stackable = false;
+				return;
+			}
+		}
+		_stackable = true;
 	}
 	
 	public List<ItemChanceHolder> getIngredients()
