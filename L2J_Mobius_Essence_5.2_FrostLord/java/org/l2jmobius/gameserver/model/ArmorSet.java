@@ -243,7 +243,14 @@ public class ArmorSet
 	
 	public boolean hasOptionalEquipped(Playable playable, Function<Item, Integer> idProvider)
 	{
-		return playable.getInventory().getPaperdollItems().stream().anyMatch(item -> CommonUtil.contains(_optionalItems, idProvider.apply(item)));
+		for (Item item : playable.getInventory().getPaperdollItems())
+		{
+			if (CommonUtil.contains(_optionalItems, idProvider.apply(item)))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**
