@@ -16,7 +16,8 @@
  */
 package handlers.conditions;
 
-import java.util.List;
+import java.util.EnumSet;
+import java.util.Set;
 
 import org.l2jmobius.gameserver.enums.CategoryType;
 import org.l2jmobius.gameserver.model.StatSet;
@@ -25,20 +26,27 @@ import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.conditions.ICondition;
 
 /**
- * @author Sdw
+ * @author Sdw, Mobius
  */
 public class CategoryTypeCondition implements ICondition
 {
-	private final List<CategoryType> _categoryTypes;
+	private final Set<CategoryType> _categoryTypes = EnumSet.noneOf(CategoryType.class);
 	
 	public CategoryTypeCondition(StatSet params)
 	{
-		_categoryTypes = params.getEnumList("category", CategoryType.class);
+		_categoryTypes.addAll(params.getEnumList("category", CategoryType.class));
 	}
 	
 	@Override
 	public boolean test(Creature creature, WorldObject target)
 	{
-		return _categoryTypes.stream().anyMatch(creature::isInCategory);
+		for (CategoryType type : _categoryTypes)
+		{
+			if (creature.isInCategory(type))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }
