@@ -91,7 +91,15 @@ public class RequestCollectionRegister implements ClientPacket
 		
 		player.getCollections().add(new PlayerCollectionData(_collectionId, item.getId(), _index));
 		
-		if (player.getCollections().stream().filter(it -> it.getCollectionId() == _collectionId).count() == collection.getCompleteCount())
+		int completeCount = 0;
+		for (PlayerCollectionData coll : player.getCollections())
+		{
+			if (coll.getCollectionId() == _collectionId)
+			{
+				completeCount++;
+			}
+		}
+		if (completeCount == collection.getCompleteCount())
 		{
 			player.sendPacket(new ExCollectionComplete(_collectionId));
 			

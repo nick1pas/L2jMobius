@@ -88,7 +88,16 @@ public class RequestCollectionRegister implements ClientPacket
 			return;
 		}
 		
-		PlayerCollectionData currentColl = player.getCollections().stream().filter(it -> it.getCollectionId() == _collectionId).findAny().orElse(null);
+		PlayerCollectionData currentColl = null;
+		for (PlayerCollectionData coll : player.getCollections())
+		{
+			if (coll.getCollectionId() == _collectionId)
+			{
+				currentColl = coll;
+				break;
+			}
+		}
+		
 		if ((currentColl != null) && (currentColl.getIndex() == _index))
 		{
 			player.sendPacket(new ExCollectionRegister(false, _collectionId, _index, new ItemEnchantHolder(item.getId(), count, item.getEnchantLevel())));
@@ -103,7 +112,15 @@ public class RequestCollectionRegister implements ClientPacket
 		
 		player.getCollections().add(new PlayerCollectionData(_collectionId, item.getId(), _index));
 		
-		if (player.getCollections().stream().filter(it -> it.getCollectionId() == _collectionId).count() == collection.getCompleteCount())
+		int completeCount = 0;
+		for (PlayerCollectionData coll : player.getCollections())
+		{
+			if (coll.getCollectionId() == _collectionId)
+			{
+				completeCount++;
+			}
+		}
+		if (completeCount == collection.getCompleteCount())
 		{
 			player.sendPacket(new ExCollectionComplete(_collectionId));
 			
