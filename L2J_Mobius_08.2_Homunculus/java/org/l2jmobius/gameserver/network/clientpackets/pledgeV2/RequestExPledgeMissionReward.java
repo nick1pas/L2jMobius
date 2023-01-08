@@ -65,7 +65,13 @@ public class RequestExPledgeMissionReward implements ClientPacket
 		final Collection<DailyMissionDataHolder> reward = DailyMissionData.getInstance().getDailyMissionData(_id);
 		if ((reward != null) && !reward.isEmpty())
 		{
-			reward.stream().filter(o -> o.isDisplayable(player)).forEach(r -> r.requestReward(player));
+			for (DailyMissionDataHolder holder : reward)
+			{
+				if (holder.isDisplayable(player))
+				{
+					holder.requestReward(player);
+				}
+			}
 			client.sendPacket(new ExPledgeMissionRewardCount(player));
 			client.sendPacket(new ExPledgeMissionInfo(player));
 		}
