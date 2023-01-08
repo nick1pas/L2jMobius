@@ -26,6 +26,7 @@ import org.l2jmobius.gameserver.instancemanager.SiegeManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
 import org.l2jmobius.gameserver.model.SiegeClan;
 import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.residences.AbstractResidence;
@@ -176,7 +177,21 @@ public class RegenHPFinalizer implements IStatFunction
 		}
 		
 		final SiegeClan siegeClan = siege.getAttackerClan(player.getClan().getId());
-		if ((siegeClan == null) || siegeClan.getFlag().isEmpty() || !Util.checkIfInRange(200, player, siegeClan.getFlag().stream().findAny().get(), true))
+		if ((siegeClan == null) || siegeClan.getFlag().isEmpty())
+		{
+			return 0;
+		}
+		
+		boolean inRange = false;
+		for (Npc flag : siegeClan.getFlag())
+		{
+			if (Util.checkIfInRange(200, player, flag, true))
+			{
+				inRange = true;
+				break;
+			}
+		}
+		if (!inRange)
 		{
 			return 0;
 		}
