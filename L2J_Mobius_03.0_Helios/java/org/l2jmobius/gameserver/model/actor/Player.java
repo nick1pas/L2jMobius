@@ -32,7 +32,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
-import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentSkipListMap;
@@ -42,7 +41,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.logging.Level;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.database.DatabaseFactory;
@@ -1465,24 +1463,33 @@ public class Player extends Playable
 	/**
 	 * @return List of {@link QuestState}s of the current player.
 	 */
-	public List<QuestState> getAllQuestStates()
+	public Collection<QuestState> getAllQuestStates()
 	{
-		return new ArrayList<>(_quests.values());
+		return _quests.values();
 	}
 	
 	/**
 	 * @return a table containing all Quest in progress from the table _quests.
 	 */
-	public List<Quest> getAllActiveQuests()
+	public Collection<Quest> getAllActiveQuests()
 	{
-		//@formatter:off
-		return _quests.values().stream()
-			.filter(QuestState::isStarted)
-			.map(QuestState::getQuest)
-			.filter(Objects::nonNull)
-			.filter(q -> q.getId() > 1)
-			.collect(Collectors.toList());
-		//@formatter:on
+		final List<Quest> activeQuests = new LinkedList<>();
+		for (QuestState questState : _quests.values())
+		{
+			if (!questState.isStarted())
+			{
+				continue;
+			}
+			
+			final Quest quest = questState.getQuest();
+			if ((quest == null) || (quest.getId() <= 1))
+			{
+				continue;
+			}
+			
+			activeQuests.add(quest);
+		}
+		return activeQuests;
 	}
 	
 	public void processQuestEvent(String questName, String event)
@@ -5418,7 +5425,12 @@ public class Player extends Playable
 	
 	public Summon getFirstServitor()
 	{
-		return getServitors().values().stream().findFirst().orElse(null);
+		if (getServitors().isEmpty())
+		{
+			return null;
+		}
+		
+		return getServitors().values().iterator().next();
 	}
 	
 	@Override
@@ -11837,7 +11849,17 @@ public class Player extends Playable
 		if (isTransformed() && !_transformSkills.isEmpty())
 		{
 			// Include transformation skills and those skills that are allowed during transformation.
-			currentSkills = currentSkills.stream().filter(Skill::allowOnTransform).collect(Collectors.toList());
+			final List<Skill> filteredSkills = new LinkedList<>();
+			for (Skill skill : currentSkills)
+			{
+				if (!skill.allowOnTransform())
+				{
+					continue;
+				}
+				
+				filteredSkills.add(skill);
+			}
+			currentSkills = filteredSkills;
 			
 			// Revelation skills.
 			if (isDualClassActive())
@@ -11866,18 +11888,22 @@ public class Player extends Playable
 					addSkill(SkillData.getInstance().getSkill(revelationSkill, 1), false);
 				}
 			}
+			
 			// Include transformation skills.
 			currentSkills.addAll(_transformSkills.values());
 		}
 		
-		//@formatter:off
-		return currentSkills.stream()
-							.filter(Objects::nonNull)
-							.filter(s -> !s.isBlockActionUseSkill()) // Skills that are blocked from player use are not shown in skill list.
-							.filter(s -> !SkillTreeData.getInstance().isAlchemySkill(s.getId(), s.getLevel()))
-							.filter(s -> s.isDisplayInList())
-							.collect(Collectors.toList());
-		//@formatter:on
+		final List<Skill> finalSkills = new LinkedList<>();
+		for (Skill skill : currentSkills)
+		{
+			if ((skill == null) || skill.isBlockActionUseSkill() || SkillTreeData.getInstance().isAlchemySkill(skill.getId(), skill.getLevel()) || !skill.isDisplayInList())
+			{
+				continue;
+			}
+			
+			finalSkills.add(skill);
+		}
+		return finalSkills;
 	}
 	
 	protected void startFeed(int npcId)
@@ -13650,7 +13676,12 @@ public class Player extends Playable
 	 */
 	public int getSummonPoints()
 	{
-		return getServitors().values().stream().mapToInt(Summon::getSummonPoints).sum();
+		int totalPoints = 0;
+		for (Summon summon : getServitors().values())
+		{
+			totalPoints += summon.getSummonPoints();
+		}
+		return totalPoints;
 	}
 	
 	/**
@@ -13664,7 +13695,14 @@ public class Player extends Playable
 	
 	public boolean canRequest(AbstractRequest request)
 	{
-		return _requests.values().stream().allMatch(request::canWorkWith);
+		for (AbstractRequest r : _requests.values())
+		{
+			if (!request.canWorkWith(r))
+			{
+				return false;
+			}
+		}
+		return true;
 	}
 	
 	/**
@@ -13696,7 +13734,14 @@ public class Player extends Playable
 	
 	public boolean hasItemRequest()
 	{
-		return _requests.values().stream().anyMatch(AbstractRequest::isItemRequest);
+		for (AbstractRequest request : _requests.values())
+		{
+			if (request.isItemRequest())
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**
@@ -13723,7 +13768,14 @@ public class Player extends Playable
 	 */
 	public boolean isProcessingItem(int objectId)
 	{
-		return _requests.values().stream().anyMatch(req -> req.isUsing(objectId));
+		for (AbstractRequest request : _requests.values())
+		{
+			if (request.isUsing(objectId))
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 	
 	/**

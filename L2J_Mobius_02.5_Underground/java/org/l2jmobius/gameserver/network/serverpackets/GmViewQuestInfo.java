@@ -16,7 +16,7 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets;
 
-import java.util.List;
+import java.util.Collection;
 
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.Quest;
@@ -29,7 +29,7 @@ import org.l2jmobius.gameserver.network.ServerPackets;
 public class GmViewQuestInfo extends ServerPacket
 {
 	private final Player _player;
-	private final List<Quest> _questList;
+	private final Collection<Quest> _questList;
 	
 	public GmViewQuestInfo(Player player)
 	{
