@@ -994,11 +994,25 @@ public class PlayerInventory extends Inventory
 				}
 				case WHITELIST:
 				{
-					return blockedItems.stream().anyMatch(id -> id == itemId);
+					for (int id : blockedItems)
+					{
+						if (id == itemId)
+						{
+							return true;
+						}
+					}
+					return false;
 				}
 				case BLACKLIST:
 				{
-					return blockedItems.stream().noneMatch(id -> id == itemId);
+					for (int id : blockedItems)
+					{
+						if (id == itemId)
+						{
+							return false;
+						}
+					}
+					return true;
 				}
 			}
 		}
