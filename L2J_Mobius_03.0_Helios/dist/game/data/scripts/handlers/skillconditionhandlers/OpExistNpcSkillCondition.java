@@ -27,7 +27,7 @@ import org.l2jmobius.gameserver.model.skill.ISkillCondition;
 import org.l2jmobius.gameserver.model.skill.Skill;
 
 /**
- * @author UnAfraid
+ * @author UnAfraid, Mobius
  */
 public class OpExistNpcSkillCondition implements ISkillCondition
 {
@@ -45,7 +45,13 @@ public class OpExistNpcSkillCondition implements ISkillCondition
 	@Override
 	public boolean canUse(Creature caster, Skill skill, WorldObject target)
 	{
-		final List<Npc> npcs = World.getInstance().getVisibleObjectsInRange(caster, Npc.class, _range);
-		return _isAround == npcs.stream().anyMatch(npc -> _npcIds.contains(npc.getId()));
+		for (Npc npc : World.getInstance().getVisibleObjectsInRange(caster, Npc.class, _range))
+		{
+			if (_npcIds.contains(npc.getId()))
+			{
+				return _isAround;
+			}
+		}
+		return !_isAround;
 	}
 }
