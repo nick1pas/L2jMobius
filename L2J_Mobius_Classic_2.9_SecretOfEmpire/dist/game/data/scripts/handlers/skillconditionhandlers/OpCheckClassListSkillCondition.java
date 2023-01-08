@@ -16,7 +16,7 @@
  */
 package handlers.skillconditionhandlers;
 
-import java.util.EnumSet;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -33,7 +33,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
  */
 public class OpCheckClassListSkillCondition implements ISkillCondition
 {
-	private final Set<ClassId> _classIds = EnumSet.noneOf(ClassId.class);
+	private final Set<ClassId> _classIds = new HashSet<>();
 	private final SkillConditionAffectType _affectType;
 	private final boolean _isWithin;
 	
