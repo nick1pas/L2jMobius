@@ -19,11 +19,12 @@ package handlers.skillconditionhandlers;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.skill.ISkillCondition;
 import org.l2jmobius.gameserver.model.skill.Skill;
 
 /**
- * @author UnAfraid
+ * @author UnAfraid, Mobius
  */
 public class OpHaveSummonedNpcSkillCondition implements ISkillCondition
 {
@@ -37,6 +38,13 @@ public class OpHaveSummonedNpcSkillCondition implements ISkillCondition
 	@Override
 	public boolean canUse(Creature caster, Skill skill, WorldObject target)
 	{
-		return caster.getSummonedNpcs().stream().anyMatch(n -> n.getId() == _npcId);
+		for (Npc npc : caster.getSummonedNpcs())
+		{
+			if (npc.getId() == _npcId)
+			{
+				return true;
+			}
+		}
+		return false;
 	}
 }
