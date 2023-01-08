@@ -172,7 +172,13 @@ public class TimerExecutor<T>
 	 */
 	public void cancelAllTimers()
 	{
-		_timers.values().stream().flatMap(Set::stream).forEach(TimerHolder::cancelTimer);
+		for (Set<TimerHolder<T>> set : _timers.values())
+		{
+			for (TimerHolder<T> timer : set)
+			{
+				timer.cancelTimer();
+			}
+		}
 		_timers.clear();
 	}
 	
@@ -189,7 +195,16 @@ public class TimerExecutor<T>
 		{
 			return false;
 		}
-		return timers.stream().anyMatch(holder -> holder.isEqual(event, npc, player));
+		
+		for (TimerHolder<T> holder : timers)
+		{
+			if (holder.isEqual(event, npc, player))
+			{
+				return true;
+			}
+		}
+		
+		return false;
 	}
 	
 	/**
