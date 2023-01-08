@@ -40,6 +40,6 @@ public class CrystallizationDataHolder
 	
 	public List<ItemChanceHolder> getItems()
 	{
-		return Collections.unmodifiableList(_items);
+		return _items;
 	}
 }

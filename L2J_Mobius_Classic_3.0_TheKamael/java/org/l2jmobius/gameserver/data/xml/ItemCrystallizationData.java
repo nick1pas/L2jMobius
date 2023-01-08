@@ -204,21 +204,32 @@ public class ItemCrystallizationData implements IXmlReader
 	public List<ItemChanceHolder> getCrystallizationRewards(Item item)
 	{
 		final List<ItemChanceHolder> result = new ArrayList<>();
+		final int crystalItemId = item.getTemplate().getCrystalItemId();
 		final CrystallizationDataHolder data = getCrystallizationData(item.getId());
 		if (data != null)
 		{
 			// If there are no crystals on the template, add such.
-			if (data.getItems().stream().noneMatch(i -> i.getId() == item.getTemplate().getCrystalItemId()))
+			boolean found = false;
+			final List<ItemChanceHolder> items = data.getItems();
+			for (ItemChanceHolder holder : items)
 			{
-				result.add(new ItemChanceHolder(item.getTemplate().getCrystalItemId(), 100, item.getCrystalCount()));
+				if (holder.getId() == crystalItemId)
+				{
+					found = true;
+					break;
+				}
+			}
+			if (!found)
+			{
+				result.add(new ItemChanceHolder(crystalItemId, 100, item.getCrystalCount()));
 			}
 			
-			result.addAll(data.getItems());
+			result.addAll(items);
 		}
 		else
 		{
 			// Add basic crystal reward.
-			result.add(new ItemChanceHolder(item.getTemplate().getCrystalItemId(), 100, item.getCrystalCount()));
+			result.add(new ItemChanceHolder(crystalItemId, 100, item.getCrystalCount()));
 		}
 		
 		return result;
