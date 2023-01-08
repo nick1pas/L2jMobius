@@ -18,10 +18,10 @@ package handlers.bypasshandlers;
 
 import java.util.Collection;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
-import java.util.stream.Collectors;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.handler.IBypassHandler;
@@ -92,14 +92,15 @@ public class QuestLink implements IBypassHandler
 		final StringBuilder sbCantStart = new StringBuilder(128);
 		final StringBuilder sbCompleted = new StringBuilder(128);
 		
-		//@formatter:off
-		final Set<Quest> startingQuests = npc.getListeners(EventType.ON_NPC_QUEST_START).stream()
-			.map(AbstractEventListener::getOwner)
-			.filter(Quest.class::isInstance)
-			.map(Quest.class::cast)
-			.distinct()
-			.collect(Collectors.toSet());
-		//@formatter:on
+		final Set<Quest> startingQuests = new HashSet<>();
+		for (AbstractEventListener listener : npc.getListeners(EventType.ON_NPC_QUEST_START))
+		{
+			final Object owner = listener.getOwner();
+			if (owner instanceof Quest)
+			{
+				startingQuests.add((Quest) owner);
+			}
+		}
 		
 		Collection<Quest> questList = quests;
 		if (Config.ORDER_QUEST_LIST_BY_QUESTID)
@@ -307,16 +308,19 @@ public class QuestLink implements IBypassHandler
 	 */
 	private void showQuestWindow(Player player, Npc npc)
 	{
-		//@formatter:off
-		final Set<Quest> quests = npc.getListeners(EventType.ON_NPC_TALK).stream()
-			.map(AbstractEventListener::getOwner)
-			.filter(Quest.class::isInstance)
-			.map(Quest.class::cast)
-			.filter(quest -> (quest.getId() > 0) && (quest.getId() < 20000) && (quest.getId() != 255))
-			.filter(quest -> !Quest.getNoQuestMsg(player).equals(quest.onTalk(npc, player, true)))
-			.distinct()
-			.collect(Collectors.toSet());
-		//@formatter:on
+		final Set<Quest> quests = new HashSet<>();
+		for (AbstractEventListener listener : npc.getListeners(EventType.ON_NPC_TALK))
+		{
+			final Object owner = listener.getOwner();
+			if (owner instanceof Quest)
+			{
+				final Quest quest = (Quest) owner;
+				if ((quest.getId() > 0) && (quest.getId() < 20000) && (quest.getId() != 255) && !Quest.getNoQuestMsg(player).equals(quest.onTalk(npc, player, true)))
+				{
+					quests.add(quest);
+				}
+			}
+		}
 		
 		if (quests.size() > 1)
 		{
@@ -324,7 +328,7 @@ public class QuestLink implements IBypassHandler
 		}
 		else if (quests.size() == 1)
 		{
-			showQuestWindow(player, npc, quests.stream().findFirst().get().getName());
+			showQuestWindow(player, npc, quests.iterator().next().getName());
 		}
 		else
 		{
