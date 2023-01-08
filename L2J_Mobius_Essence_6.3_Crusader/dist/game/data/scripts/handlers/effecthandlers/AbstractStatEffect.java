@@ -32,7 +32,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.stats.Stat;
 
 /**
- * @author Sdw
+ * @author Sdw, Mobius
  */
 public abstract class AbstractStatEffect extends AbstractEffect
 {
@@ -111,20 +111,28 @@ public abstract class AbstractStatEffect extends AbstractEffect
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		if (_conditions.isEmpty() || _conditions.stream().allMatch(cond -> cond.test(effected, effected, skill)))
+		if (!_conditions.isEmpty())
 		{
-			switch (_mode)
+			for (Condition cond : _conditions)
 			{
-				case DIFF:
+				if (!cond.test(effected, effected, skill))
 				{
-					effected.getStat().mergeAdd(_addStat, _amount);
-					break;
+					return;
 				}
-				case PER:
-				{
-					effected.getStat().mergeMul(_mulStat, (_amount / 100) + 1);
-					break;
-				}
+			}
+		}
+		
+		switch (_mode)
+		{
+			case DIFF:
+			{
+				effected.getStat().mergeAdd(_addStat, _amount);
+				break;
+			}
+			case PER:
+			{
+				effected.getStat().mergeMul(_mulStat, (_amount / 100) + 1);
+				break;
 			}
 		}
 	}
