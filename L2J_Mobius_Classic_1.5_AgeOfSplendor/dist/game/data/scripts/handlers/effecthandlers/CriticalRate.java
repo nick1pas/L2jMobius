@@ -18,11 +18,12 @@ package handlers.effecthandlers;
 
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jmobius.gameserver.model.conditions.Condition;
 import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.stats.Stat;
 
 /**
- * @author Sdw
+ * @author Sdw, Mobius
  */
 public class CriticalRate extends AbstractConditionalHpEffect
 {
@@ -34,20 +35,28 @@ public class CriticalRate extends AbstractConditionalHpEffect
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		if (_conditions.isEmpty() || _conditions.stream().allMatch(cond -> cond.test(effected, effected, skill)))
+		if (!_conditions.isEmpty())
 		{
-			switch (_mode)
+			for (Condition cond : _conditions)
 			{
-				case DIFF:
+				if (!cond.test(effected, effected, skill))
 				{
-					effected.getStat().mergeAdd(_addStat, _amount);
-					break;
+					return;
 				}
-				case PER:
-				{
-					effected.getStat().mergeMul(_mulStat, (_amount / 100));
-					break;
-				}
+			}
+		}
+		
+		switch (_mode)
+		{
+			case DIFF:
+			{
+				effected.getStat().mergeAdd(_addStat, _amount);
+				break;
+			}
+			case PER:
+			{
+				effected.getStat().mergeMul(_mulStat, (_amount / 100));
+				break;
 			}
 		}
 	}
