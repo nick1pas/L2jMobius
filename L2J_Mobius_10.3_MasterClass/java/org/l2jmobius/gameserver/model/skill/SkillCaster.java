@@ -1102,10 +1102,23 @@ public class SkillCaster implements Runnable
 		if ((weapon != null) && weapon.useWeaponSkillsOnly() && !caster.canOverrideCond(PlayerCondOverride.SKILL_CONDITIONS))
 		{
 			final List<ItemSkillHolder> weaponSkills = weapon.getSkills(ItemSkillType.NORMAL);
-			if ((weaponSkills != null) && weaponSkills.stream().noneMatch(sh -> sh.getSkillId() == skill.getId()))
+			if (weaponSkills != null)
 			{
-				caster.sendPacket(SystemMessageId.THAT_WEAPON_CANNOT_USE_ANY_OTHER_SKILL_EXCEPT_THE_WEAPON_S_SKILL);
-				return false;
+				boolean hasSkill = false;
+				for (ItemSkillHolder holder : weaponSkills)
+				{
+					if (holder.getSkillId() == skill.getId())
+					{
+						hasSkill = true;
+						break;
+					}
+				}
+				
+				if (!hasSkill)
+				{
+					caster.sendPacket(SystemMessageId.THAT_WEAPON_CANNOT_USE_ANY_OTHER_SKILL_EXCEPT_THE_WEAPON_S_SKILL);
+					return false;
+				}
 			}
 		}
 		
