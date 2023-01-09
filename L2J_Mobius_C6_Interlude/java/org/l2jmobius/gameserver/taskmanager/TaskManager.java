@@ -382,7 +382,7 @@ public class TaskManager
 		}
 		catch (SQLException e)
 		{
-			LOGGER.warning("cannot add the task:  " + e.getMessage());
+			LOGGER.warning("cannot add the task: " + e.getMessage());
 		}
 		return output;
 	}

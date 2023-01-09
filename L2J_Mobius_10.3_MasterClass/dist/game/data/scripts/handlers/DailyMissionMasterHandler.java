@@ -72,6 +72,6 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("quest", QuestDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("siege", SiegeDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("useitem", UseItemDailyMissionHandler::new);
-		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ":  Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
+		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ": Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}
 }

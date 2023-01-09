@@ -56,6 +56,6 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("joinclan", JoinClanDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("purge", PurgeRewardDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("useitem", UseItemDailyMissionHandler::new);
-		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ":  Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
+		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ": Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}
 }

@@ -52,6 +52,6 @@ public class DailyMissionMasterHandler
 		DailyMissionHandler.getInstance().registerHandler("monster", MonsterDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("fishing", FishingDailyMissionHandler::new);
 		DailyMissionHandler.getInstance().registerHandler("joinclan", JoinClanDailyMissionHandler::new);
-		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ":  Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
+		LOGGER.info(DailyMissionMasterHandler.class.getSimpleName() + ": Loaded " + DailyMissionHandler.getInstance().size() + " handlers.");
 	}
 }

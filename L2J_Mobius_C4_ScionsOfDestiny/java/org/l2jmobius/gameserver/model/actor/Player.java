@@ -15081,7 +15081,7 @@ public class Player extends Playable
 		}
 		catch (Exception e)
 		{
-			LOGGER.warning("SetSex:  Could not store data:" + e);
+			LOGGER.warning("SetSex: Could not store data:" + e);
 		}
 	}
 	

@@ -54,7 +54,7 @@ public class AdminReload implements IAdminCommandHandler
 			
 			if (!st.hasMoreTokens())
 			{
-				BuilderUtil.sendSysMessage(activeChar, "Usage:  //reload <type>");
+				BuilderUtil.sendSysMessage(activeChar, "Usage: //reload <type>");
 				return false;
 			}
 			
@@ -126,7 +126,7 @@ public class AdminReload implements IAdminCommandHandler
 			}
 			catch (Exception e)
 			{
-				BuilderUtil.sendSysMessage(activeChar, "Usage:  //reload <type>");
+				BuilderUtil.sendSysMessage(activeChar, "Usage: //reload <type>");
 			}
 		}
 		return true;

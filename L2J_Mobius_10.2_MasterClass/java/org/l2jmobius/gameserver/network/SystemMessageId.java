@@ -19427,7 +19427,7 @@ public class SystemMessageId
 	{
 		if (params < 0)
 		{
-			throw new IllegalArgumentException("Invalid negative param count:  " + params);
+			throw new IllegalArgumentException("Invalid negative param count: " + params);
 		}
 		
 		if (params > 10)

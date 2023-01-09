@@ -115,7 +115,7 @@ public class SkillTreeTable
 		{
 			if (classId != null)
 			{
-				LOGGER.warning("Error while creating skill tree (Class ID " + classId.getId() + "):  " + e);
+				LOGGER.warning("Error while creating skill tree (Class ID " + classId.getId() + "): " + e);
 			}
 		}
 		LOGGER.info("SkillTreeTable: Loaded " + count + " skills.");
