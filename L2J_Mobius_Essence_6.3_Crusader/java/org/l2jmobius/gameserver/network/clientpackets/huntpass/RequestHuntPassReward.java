@@ -34,7 +34,7 @@ import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSayhasSup
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInfo;
 
 /**
- * @author Serenitty
+ * @author Serenitty, Mobius
  */
 public class RequestHuntPassReward implements ClientPacket
 {
@@ -81,50 +81,28 @@ public class RequestHuntPassReward implements ClientPacket
 			return;
 		}
 		
-		normalReward(player);
-		premiumReward(player);
+		// Normal reward.
+		final int premiumRewardIndex = huntPass.getPremiumRewardStep();
+		if (!huntPass.isPremium() || ((premiumRewardIndex >= rewardIndex) && (premiumRewardIndex < HuntPassData.getInstance().getPremiumRewardsCount())))
+		{
+			rewardItem(player, HuntPassData.getInstance().getRewards().get(rewardIndex));
+		}
+		
+		// Premium reward.
+		if (huntPass.isPremium() && (premiumRewardIndex < HuntPassData.getInstance().getPremiumRewardsCount()))
+		{
+			rewardItem(player, HuntPassData.getInstance().getPremiumRewards().get(premiumRewardIndex));
+			huntPass.setPremiumRewardStep(premiumRewardIndex + 1);
+		}
+		
 		huntPass.setRewardStep(rewardIndex + 1);
 		huntPass.setRewardAlert(false);
+		
 		player.sendPacket(new HuntPassInfo(player, _huntPassType));
 		player.sendPacket(new HuntPassSayhasSupportInfo(player));
 		player.sendPacket(new HuntPassSimpleInfo(player));
 		
 		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
-	}
-	
-	private void normalReward(Player player)
-	{
-		final HuntPass huntPass = player.getHuntPass();
-		final int rewardIndex = huntPass.getRewardStep();
-		if (rewardIndex >= HuntPassData.getInstance().getRewardsCount())
-		{
-			return;
-		}
-		
-		if (huntPass.isPremium() && ((huntPass.getPremiumRewardStep() < rewardIndex) || (huntPass.getPremiumRewardStep() >= HuntPassData.getInstance().getPremiumRewardsCount())))
-		{
-			return;
-		}
-		
-		rewardItem(player, HuntPassData.getInstance().getRewards().get(rewardIndex));
-	}
-	
-	private void premiumReward(Player player)
-	{
-		final HuntPass huntPass = player.getHuntPass();
-		final int rewardIndex = huntPass.getPremiumRewardStep();
-		if (rewardIndex >= HuntPassData.getInstance().getPremiumRewardsCount())
-		{
-			return;
-		}
-		
-		if (!huntPass.isPremium())
-		{
-			return;
-		}
-		
-		rewardItem(player, HuntPassData.getInstance().getPremiumRewards().get(rewardIndex));
-		huntPass.setPremiumRewardStep(rewardIndex + 1);
 	}
 	
 	private void rewardItem(Player player, ItemHolder reward)
