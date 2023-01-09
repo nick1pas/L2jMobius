@@ -16,7 +16,9 @@
  */
 package handlers.effecthandlers;
 
-import org.l2jmobius.gameserver.enums.AttributeType;
+import java.util.EnumSet;
+import java.util.Set;
+
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
@@ -24,52 +26,46 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.stats.Stat;
 
 /**
- * @author Sdw
+ * @author Mobius
  */
 public class DefenceAttribute extends AbstractEffect
 {
-	private final AttributeType _attribute;
 	private final double _amount;
+	private final Stat _singleStat;
+	private final Set<Stat> _multipleStats;
 	
 	public DefenceAttribute(StatSet params)
 	{
 		_amount = params.getDouble("amount", 0);
-		_attribute = params.getEnum("attribute", AttributeType.class, AttributeType.FIRE);
+		final String attributes = params.getString("attribute", "FIRE");
+		if (attributes.contains(","))
+		{
+			_singleStat = null;
+			_multipleStats = EnumSet.noneOf(Stat.class);
+			for (String attribute : attributes.split(","))
+			{
+				_multipleStats.add(Stat.valueOf(attribute + "_RES"));
+			}
+		}
+		else
+		{
+			_singleStat = Stat.valueOf(attributes + "_RES");
+			_multipleStats = null;
+		}
 	}
 	
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		Stat stat = Stat.FIRE_RES;
-		
-		switch (_attribute)
+		if (_singleStat != null)
 		{
-			case WATER:
-			{
-				stat = Stat.WATER_RES;
-				break;
-			}
-			case WIND:
-			{
-				stat = Stat.WIND_RES;
-				break;
-			}
-			case EARTH:
-			{
-				stat = Stat.EARTH_RES;
-				break;
-			}
-			case HOLY:
-			{
-				stat = Stat.HOLY_RES;
-				break;
-			}
-			case DARK:
-			{
-				stat = Stat.DARK_RES;
-				break;
-			}
+			effected.getStat().mergeAdd(_singleStat, _amount);
+			return;
 		}
-		effected.getStat().mergeAdd(stat, _amount);
+		
+		for (Stat stat : _multipleStats)
+		{
+			effected.getStat().mergeAdd(stat, _amount);
+		}
 	}
 }

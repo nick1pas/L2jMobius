@@ -16,10 +16,9 @@
  */
 package handlers.effecthandlers;
 
-import java.util.HashSet;
+import java.util.EnumSet;
 import java.util.Set;
 
-import org.l2jmobius.gameserver.enums.AttributeType;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
@@ -27,12 +26,13 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 import org.l2jmobius.gameserver.model.stats.Stat;
 
 /**
- * @author Sdw
+ * @author Mobius
  */
 public class AttackAttribute extends AbstractEffect
 {
-	private final Set<AttributeType> _attributes = new HashSet<>();
 	private final double _amount;
+	private final Stat _singleStat;
+	private final Set<Stat> _multipleStats;
 	
 	public AttackAttribute(StatSet params)
 	{
@@ -40,55 +40,32 @@ public class AttackAttribute extends AbstractEffect
 		final String attributes = params.getString("attribute", "FIRE");
 		if (attributes.contains(","))
 		{
+			_singleStat = null;
+			_multipleStats = EnumSet.noneOf(Stat.class);
 			for (String attribute : attributes.split(","))
 			{
-				_attributes.add(AttributeType.findByName(attribute.trim()));
+				_multipleStats.add(Stat.valueOf(attribute + "_POWER"));
 			}
 		}
 		else
 		{
-			_attributes.add(AttributeType.findByName(attributes));
+			_singleStat = Stat.valueOf(attributes + "_POWER");
+			_multipleStats = null;
 		}
 	}
 	
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		for (AttributeType attribute : _attributes)
+		if (_singleStat != null)
 		{
-			switch (attribute)
-			{
-				case FIRE:
-				{
-					effected.getStat().mergeAdd(Stat.FIRE_POWER, _amount);
-					break;
-				}
-				case WATER:
-				{
-					effected.getStat().mergeAdd(Stat.WATER_POWER, _amount);
-					break;
-				}
-				case WIND:
-				{
-					effected.getStat().mergeAdd(Stat.WIND_POWER, _amount);
-					break;
-				}
-				case EARTH:
-				{
-					effected.getStat().mergeAdd(Stat.EARTH_POWER, _amount);
-					break;
-				}
-				case HOLY:
-				{
-					effected.getStat().mergeAdd(Stat.HOLY_POWER, _amount);
-					break;
-				}
-				case DARK:
-				{
-					effected.getStat().mergeAdd(Stat.DARK_POWER, _amount);
-					break;
-				}
-			}
+			effected.getStat().mergeAdd(_singleStat, _amount);
+			return;
+		}
+		
+		for (Stat stat : _multipleStats)
+		{
+			effected.getStat().mergeAdd(stat, _amount);
 		}
 	}
 }

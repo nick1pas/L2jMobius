@@ -54,6 +54,11 @@ public class AttackAttributeAdd extends AbstractEffect
 		
 		switch (maxAttribute)
 		{
+			case FIRE:
+			{
+				stat = Stat.FIRE_POWER;
+				break;
+			}
 			case WATER:
 			{
 				stat = Stat.WATER_POWER;
