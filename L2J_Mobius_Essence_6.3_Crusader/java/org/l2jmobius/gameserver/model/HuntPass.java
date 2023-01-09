@@ -41,7 +41,7 @@ public class HuntPass
 {
 	private static final Logger LOGGER = Logger.getLogger(HuntPass.class.getName());
 	
-	private static final String INSERT_SEASONPASS = "REPLACE INTO huntpass (`account_name`, `current_step`, `points`, `reward_step`, `is_paytowin`, `premium_reward_step`, `sayha_points_available`, `sayha_points_used`, `unclaimed_reward`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+	private static final String INSERT_SEASONPASS = "REPLACE INTO huntpass (`account_name`, `current_step`, `points`, `reward_step`, `is_premium`, `premium_reward_step`, `sayha_points_available`, `sayha_points_used`, `unclaimed_reward`) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	private static final String RESTORE_SEASONPASS = "SELECT * FROM huntpass WHERE account_name=?";
 	
 	private final Player _user;
@@ -87,7 +87,7 @@ public class HuntPass
 					setPoints(rset.getInt("points"));
 					setCurrentStep(rset.getInt("current_step"));
 					setRewardStep(rset.getInt("reward_step"));
-					setPremium(rset.getBoolean("is_paytowin"));
+					setPremium(rset.getBoolean("is_premium"));
 					setPremiumRewardStep(rset.getInt("premium_reward_step"));
 					setAvailableSayhaTime(rset.getInt("sayha_points_available"));
 					setUsedSayhaTime(rset.getInt("sayha_points_used"));
