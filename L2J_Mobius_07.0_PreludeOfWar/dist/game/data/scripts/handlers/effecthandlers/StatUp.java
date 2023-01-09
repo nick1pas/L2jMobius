@@ -16,70 +16,56 @@
  */
 package handlers.effecthandlers;
 
+import java.util.EnumSet;
+import java.util.Set;
+
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
 import org.l2jmobius.gameserver.model.skill.Skill;
-import org.l2jmobius.gameserver.model.stats.BaseStat;
 import org.l2jmobius.gameserver.model.stats.Stat;
 
 /**
- * @author Sdw
+ * @author Mobius
  */
 public class StatUp extends AbstractEffect
 {
-	private final BaseStat _stat;
 	private final double _amount;
+	private final Stat _singleStat;
+	private final Set<Stat> _multipleStats;
 	
 	public StatUp(StatSet params)
 	{
 		_amount = params.getDouble("amount", 0);
-		_stat = params.getEnum("stat", BaseStat.class, BaseStat.STR);
+		final String stats = params.getString("stat", "STR");
+		if (stats.contains(","))
+		{
+			_singleStat = null;
+			_multipleStats = EnumSet.noneOf(Stat.class);
+			for (String stat : stats.split(","))
+			{
+				_multipleStats.add(Stat.valueOf("STAT_" + stat));
+			}
+		}
+		else
+		{
+			_singleStat = Stat.valueOf("STAT_" + stats);
+			_multipleStats = null;
+		}
 	}
 	
 	@Override
 	public void pump(Creature effected, Skill skill)
 	{
-		Stat stat = Stat.STAT_STR;
-		
-		switch (_stat)
+		if (_singleStat != null)
 		{
-			case INT:
-			{
-				stat = Stat.STAT_INT;
-				break;
-			}
-			case DEX:
-			{
-				stat = Stat.STAT_DEX;
-				break;
-			}
-			case WIT:
-			{
-				stat = Stat.STAT_WIT;
-				break;
-			}
-			case CON:
-			{
-				stat = Stat.STAT_CON;
-				break;
-			}
-			case MEN:
-			{
-				stat = Stat.STAT_MEN;
-				break;
-			}
-			case CHA:
-			{
-				stat = Stat.STAT_CHA;
-				break;
-			}
-			case LUC:
-			{
-				stat = Stat.STAT_LUC;
-				break;
-			}
+			effected.getStat().mergeAdd(_singleStat, _amount);
+			return;
 		}
-		effected.getStat().mergeAdd(stat, _amount);
+		
+		for (Stat stat : _multipleStats)
+		{
+			effected.getStat().mergeAdd(stat, _amount);
+		}
 	}
 }
