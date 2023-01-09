@@ -243,7 +243,49 @@
 	<skill id="29521" toLevel="1" name="Season Pass Bonus">
 		<!-- For $s1, acquired XP/ SP +$s2, P. Atk./ M. Atk./ P. Def./ M. Def. +$s2, Vitality bonus +$s2, all stats $s3, Attribute Attack/ Resistance $s4. The effect is removed when entering the Olympiad or the Ceremony of Chaos. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
+		<abnormalTime>1800</abnormalTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<effects>
+			<effect name="ExpModify">
+				<amount>5</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>5</amount>
+			</effect>
+			<effect name="PhysicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalSkillPower">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="VitalityExpRate">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="StatUp">
+				<amount>1</amount>
+				<stat>STR,CON,DEX,INT,WIT,MEN,CHA,LUC</stat>
+			</effect>
+			<effect name="AttackAttribute">
+				<amount>30</amount>
+				<attribute>FIRE,WATER,WIND,EARTH,HOLY,DARK</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>30</amount>
+				<attribute>FIRE,WATER,WIND,EARTH,HOLY,DARK</attribute>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="29522" toLevel="1" name="$s2's Reward for Rank $s1">
 		<!-- A buff for all characters of $s2's server to celebrate their ranking $s1 in the World Festival Ranking. Acquired XP/ SP +10%. P. Atk. +5%. M. Atk. +5%. P. Def. +5%. M. Def. +5% -->

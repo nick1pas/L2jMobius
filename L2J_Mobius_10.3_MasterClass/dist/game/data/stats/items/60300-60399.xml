@@ -666,6 +666,15 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="300000" />
+		<skills>
+			<skill id="29521" level="1" /> <!-- Season Pass Bonus -->
+		</skills>
 	</item>
 	<item id="60369" name="Coral" type="EtcItem">
 		<!-- Can be obtained for Coral points. Required for crafting various items during the Lucky Game. -->
@@ -744,22 +753,53 @@
 	<item id="60378" name="Final Reward Chest" type="EtcItem">
 		<!-- Double-click to obtain various items. -->
 		<set name="icon" val="icon.present_of_destination_event" />
-		<set name="default_action" val="PEEL" />
-		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48848" min="100" max="100" chance="100" /> <!-- Freya's Ice Rose - Event -->
+			<item id="48857" min="100" max="100" chance="100" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="81011" min="100" max="100" chance="100" /> <!-- Honey Dark Beer - Event -->
+			<item id="81012" min="50" max="50" chance="100" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81013" min="50" max="50" chance="100" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+			<item id="81815" min="50" max="50" chance="100" /> <!-- Homunculus' Hourglass -->
+			<item id="81821" min="1" max="1" chance="100" /> <!-- Cara's Talisman - 10-day -->
+			<item id="82344" min="100" max="100" chance="100" /> <!-- Tales of Dimensions -->
+		</capsuled_items>
 	</item>
 	<item id="60379" name="Season Reward Chest" type="EtcItem">
 		<!-- Double-click to obtain various items. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i03" />
-		<set name="default_action" val="PEEL" />
-		<set name="immediate_effect" val="true" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="material" val="PAPER" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<capsuled_items>
+			<item id="28540" min="1" max="1" chance="7.1" /> <!-- Augmenting Stone: Brooch - Rare -->
+			<item id="48215" min="1" max="1" chance="7.1" /> <!-- Augmenting Stone: Circlet -->
+			<item id="82186" min="1" max="1" chance="7.1" /> <!-- Augmenting Stone: Kaliel's Bracelet -->
+			<item id="81931" min="1" max="1" chance="7.1" /> <!-- Augmenting Stone: Dragon Leather Shirt -->
+			<item id="82343" min="1" max="1" chance="7.1" /> <!-- Augmenting Stone: Artifact Book -->
+			<item id="81728" min="4" max="4" chance="7.7" /> <!-- Augmenting Stone: Armor -->
+			<item id="81729" min="2" max="2" chance="7.1" /> <!-- Augmenting Stone: Accessory -->
+			<item id="48831" min="1" max="1" chance="7.1" /> <!-- Jewel Energy -->
+			<item id="48876" min="1" max="1" chance="7.1" /> <!-- Forgotten Spellbook - Chapter 1 -->
+			<item id="80636" min="1" max="1" chance="7.1" /> <!-- Artifact Crystal -->
+			<item id="81134" min="1" max="1" chance="7.1" /> <!-- Crystal of Dyes -->
+			<item id="82228" min="1" max="1" chance="7.1" /> <!-- +6 Fallen Angel's Earring Pack -->
+			<item id="81918" min="1" max="1" chance="7.1" /> <!-- +6 Fallen Angel's Ring Pack -->
+			<item id="39573" min="1" max="1" chance="7.1" /> <!-- Sealed Talisman of Insanity -->
+		</capsuled_items>
 	</item>
 	<item id="60380" name="Anakim's Blessing Rune" additionalName="30-day" type="EtcItem">
 		<!-- Can only be crafted on servers bound by Anakim's Blessing. When in inventory, PvE damage +10%. -->
@@ -825,12 +865,13 @@
 	<item id="60386" name="Hunter's Coin" type="EtcItem">
 		<!-- Filled with power of thousands of slain monsters. Add to a collection to enable its effect. -->
 		<set name="icon" val="icon.etc_ev_kalie_token" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="120" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="60387" name="Hardin's Treasure Chest" type="EtcItem">
 		<!-- Double-click to obtain various items. -->
