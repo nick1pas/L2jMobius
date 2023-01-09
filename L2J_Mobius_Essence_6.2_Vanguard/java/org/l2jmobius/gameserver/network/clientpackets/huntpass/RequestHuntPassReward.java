@@ -81,7 +81,7 @@ public class RequestHuntPassReward implements ClientPacket
 			return;
 		}
 		
-		updateSayhaTime(player);
+		normalReward(player);
 		premiumReward(player);
 		huntPass.setRewardStep(rewardIndex + 1);
 		huntPass.setRewardAlert(false);
@@ -92,34 +92,21 @@ public class RequestHuntPassReward implements ClientPacket
 		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
 	}
 	
-	private void updateSayhaTime(Player player)
+	private void normalReward(Player player)
 	{
-		final HuntPass huntpass = player.getHuntPass();
-		final int rewardIndex = huntpass.getRewardStep();
+		final HuntPass huntPass = player.getHuntPass();
+		final int rewardIndex = huntPass.getRewardStep();
 		if (rewardIndex >= HuntPassData.getInstance().getRewardsCount())
 		{
 			return;
 		}
 		
-		if (huntpass.isPremium() && ((huntpass.getPremiumRewardStep() < rewardIndex) || (huntpass.getPremiumRewardStep() >= HuntPassData.getInstance().getPremiumRewardsCount())))
+		if (huntPass.isPremium() && ((huntPass.getPremiumRewardStep() < rewardIndex) || (huntPass.getPremiumRewardStep() >= HuntPassData.getInstance().getPremiumRewardsCount())))
 		{
 			return;
 		}
 		
-		final ItemHolder reward = HuntPassData.getInstance().getRewards().get(rewardIndex);
-		if (reward.getId() == 72286) // Sayha's Grace Sustention Points
-		{
-			final int count = (int) reward.getCount();
-			huntpass.addSayhaTime(count);
-			
-			final SystemMessage msg = new SystemMessage(SystemMessageId.YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS);
-			msg.addInt(count);
-			player.sendPacket(msg);
-		}
-		else
-		{
-			player.addItem("HuntPassReward", reward, player, true);
-		}
+		rewardItem(player, HuntPassData.getInstance().getRewards().get(rewardIndex));
 	}
 	
 	private void premiumReward(Player player)
@@ -131,11 +118,29 @@ public class RequestHuntPassReward implements ClientPacket
 			return;
 		}
 		
-		final ItemHolder premiumReward = HuntPassData.getInstance().getPremiumRewards().get(rewardIndex);
-		if (huntPass.isPremium())
+		if (!huntPass.isPremium())
 		{
-			player.addItem("SeasonPassReward", premiumReward, player, true);
-			huntPass.setPremiumRewardStep(rewardIndex + 1);
+			return;
+		}
+		
+		rewardItem(player, HuntPassData.getInstance().getPremiumRewards().get(rewardIndex));
+		huntPass.setPremiumRewardStep(rewardIndex + 1);
+	}
+	
+	private void rewardItem(Player player, ItemHolder reward)
+	{
+		if (reward.getId() == 72286) // Sayha's Grace Sustention Points
+		{
+			final int count = (int) reward.getCount();
+			player.getHuntPass().addSayhaTime(count);
+			
+			final SystemMessage msg = new SystemMessage(SystemMessageId.YOU_RECEIVED_S1_SAYHA_S_GRACE_SUSTENTION_POINTS);
+			msg.addInt(count);
+			player.sendPacket(msg);
+		}
+		else
+		{
+			player.addItem("HuntPassReward", reward, player, true);
 		}
 	}
 }
