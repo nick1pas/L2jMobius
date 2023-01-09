@@ -917,7 +917,8 @@ public class Config
 	// HuntPass
 	public static boolean ENABLE_HUNT_PASS;
 	public static int HUNT_PASS_PERIOD;
-	public static int HUNT_PASS_PREMIUM_COST;
+	public static int HUNT_PASS_PREMIUM_ITEM_ID;
+	public static int HUNT_PASS_PREMIUM_ITEM_COUNT;
 	public static int HUNT_PASS_POINTS_FOR_STEP;
 	
 	// GrandBoss Settings
@@ -2661,8 +2662,9 @@ public class Config
 			// Load HuntPass (if exists)
 			final PropertiesParser huntPassConfig = new PropertiesParser(HUNT_PASS_CONFIG_FILE);
 			ENABLE_HUNT_PASS = huntPassConfig.getBoolean("EnabledHuntPass", true);
-			HUNT_PASS_PREMIUM_COST = huntPassConfig.getInt("PremiumCost", 3600);
-			HUNT_PASS_POINTS_FOR_STEP = huntPassConfig.getInt("PointsForstep", 2400);
+			HUNT_PASS_PREMIUM_ITEM_ID = huntPassConfig.getInt("PremiumItemId", 60309);
+			HUNT_PASS_PREMIUM_ITEM_COUNT = huntPassConfig.getInt("PremiumItemCount", 1);
+			HUNT_PASS_POINTS_FOR_STEP = huntPassConfig.getInt("PointsForStep", 300000);
 			HUNT_PASS_PERIOD = huntPassConfig.getInt("DayOfMonth", 1);
 			
 			// Gracia Seeds
