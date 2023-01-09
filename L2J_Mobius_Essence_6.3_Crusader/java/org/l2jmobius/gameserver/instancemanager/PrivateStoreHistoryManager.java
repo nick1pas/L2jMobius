@@ -105,9 +105,9 @@ public class PrivateStoreHistoryManager
 	
 	public List<ItemHistoryTransaction> getHistory(boolean full)
 	{
-		final List<ItemHistoryTransaction> tempList = new ArrayList<>(_items);
 		if (!full)
 		{
+			final List<ItemHistoryTransaction> tempList = new ArrayList<>(_items);
 			final Map<Integer, Integer> uniqueItemIds = new HashMap<>();
 			for (ItemHistoryTransaction transaction : tempList)
 			{
