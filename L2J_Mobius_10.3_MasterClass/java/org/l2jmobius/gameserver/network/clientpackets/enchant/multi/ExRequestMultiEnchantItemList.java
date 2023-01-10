@@ -24,9 +24,11 @@ import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
+import org.l2jmobius.gameserver.data.xml.ItemCrystallizationData;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
+import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantResultType;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
@@ -305,6 +307,14 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 								ItemHolder itemHolder = new ItemHolder(0, 0);
 								_failureReward.put(_failureReward.size() + 1, itemHolder);
 								_result.put(i, "FAIL");
+							}
+							
+							final ItemChanceHolder destroyReward = ItemCrystallizationData.getInstance().getItemOnDestroy(player, enchantItem);
+							if ((destroyReward != null) && (Rnd.get(100) < destroyReward.getChance()))
+							{
+								_failureReward.put(_failureReward.size() + 1, destroyReward);
+								player.addItem("Enchant", destroyReward.getId(), destroyReward.getCount(), null, true);
+								player.sendPacket(new EnchantResult(EnchantResult.FAIL, destroyReward.getId(), (int) destroyReward.getCount()));
 							}
 							
 							if (Config.LOG_ITEM_ENCHANTS)

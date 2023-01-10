@@ -31,16 +31,19 @@ import org.w3c.dom.Node;
 import org.l2jmobius.commons.util.IXmlReader;
 import org.l2jmobius.gameserver.data.ItemTable;
 import org.l2jmobius.gameserver.enums.CrystallizationType;
+import org.l2jmobius.gameserver.model.StatSet;
+import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.holders.CrystallizationDataHolder;
 import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
 import org.l2jmobius.gameserver.model.item.Armor;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.Weapon;
+import org.l2jmobius.gameserver.model.item.enchant.RewardItemsOnFailure;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.item.type.CrystalType;
 
 /**
- * @author UnAfraid
+ * @author UnAfraid, Index
  */
 public class ItemCrystallizationData implements IXmlReader
 {
@@ -48,6 +51,9 @@ public class ItemCrystallizationData implements IXmlReader
 	
 	private final Map<CrystalType, Map<CrystallizationType, List<ItemChanceHolder>>> _crystallizationTemplates = new EnumMap<>(CrystalType.class);
 	private final Map<Integer, CrystallizationDataHolder> _items = new HashMap<>();
+	
+	private RewardItemsOnFailure _weaponDestroyGroup = new RewardItemsOnFailure();
+	private RewardItemsOnFailure _armorDestroyGroup = new RewardItemsOnFailure();
 	
 	protected ItemCrystallizationData()
 	{
@@ -63,12 +69,32 @@ public class ItemCrystallizationData implements IXmlReader
 			_crystallizationTemplates.put(crystalType, new EnumMap<>(CrystallizationType.class));
 		}
 		_items.clear();
+		
+		_weaponDestroyGroup = new RewardItemsOnFailure();
+		_armorDestroyGroup = new RewardItemsOnFailure();
+		
 		parseDatapackFile("data/CrystallizableItems.xml");
-		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _crystallizationTemplates.size() + " crystallization templates.");
-		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _items.size() + " pre-defined crystallizable items.");
+		
+		if (_crystallizationTemplates.size() > 0)
+		{
+			LOGGER.info(getClass().getSimpleName() + ": Loaded " + _crystallizationTemplates.size() + " crystallization templates.");
+		}
+		if (_items.size() > 0)
+		{
+			LOGGER.info(getClass().getSimpleName() + ": Loaded " + _items.size() + " pre-defined crystallizable items.");
+		}
 		
 		// Generate remaining data.
 		generateCrystallizationData();
+		
+		if (_weaponDestroyGroup.size() > 0)
+		{
+			LOGGER.info(getClass().getSimpleName() + ": Loaded " + _weaponDestroyGroup.size() + " weapon enchant failure rewards.");
+		}
+		if (_armorDestroyGroup.size() > 0)
+		{
+			LOGGER.info(getClass().getSimpleName() + ": Loaded " + _armorDestroyGroup.size() + " armor enchant failure rewards.");
+		}
 	}
 	
 	@Override
@@ -128,6 +154,20 @@ public class ItemCrystallizationData implements IXmlReader
 							}
 						}
 					}
+					else if ("itemsOnEnchantFailure".equals(o.getNodeName()))
+					{
+						for (Node d = o.getFirstChild(); d != null; d = d.getNextSibling())
+						{
+							if ("armor".equalsIgnoreCase(d.getNodeName()))
+							{
+								_armorDestroyGroup = getFormedHolder(d);
+							}
+							else if ("weapon".equalsIgnoreCase(d.getNodeName()))
+							{
+								_weaponDestroyGroup = getFormedHolder(d);
+							}
+						}
+					}
 				}
 			}
 		}
@@ -179,7 +219,11 @@ public class ItemCrystallizationData implements IXmlReader
 			}
 		}
 		
-		LOGGER.info(getClass().getSimpleName() + ": Generated " + (_items.size() - previousCount) + " crystallizable items from templates.");
+		final int generated = _items.size() - previousCount;
+		if (generated > 0)
+		{
+			LOGGER.info(getClass().getSimpleName() + ": Generated " + generated + " crystallizable items from templates.");
+		}
 	}
 	
 	public List<ItemChanceHolder> getCrystallizationTemplate(CrystalType crystalType, CrystallizationType crystallizationType)
@@ -233,6 +277,49 @@ public class ItemCrystallizationData implements IXmlReader
 		}
 		
 		return result;
+	}
+	
+	private RewardItemsOnFailure getFormedHolder(Node node)
+	{
+		final RewardItemsOnFailure holder = new RewardItemsOnFailure();
+		for (Node z = node.getFirstChild(); z != null; z = z.getNextSibling())
+		{
+			if ("item".equals(z.getNodeName()))
+			{
+				final StatSet failItems = new StatSet(parseAttributes(z));
+				final int itemId = failItems.getInt("id");
+				final int enchantLevel = failItems.getInt("enchant");
+				final double chance = failItems.getDouble("chance");
+				for (CrystalType grade : CrystalType.values())
+				{
+					final long count = failItems.getLong("amount" + grade.name(), Integer.MIN_VALUE);
+					if (count == Integer.MIN_VALUE)
+					{
+						continue;
+					}
+					
+					holder.addItemToHolder(itemId, grade, enchantLevel, count, chance);
+				}
+			}
+		}
+		return holder;
+	}
+	
+	public ItemChanceHolder getItemOnDestroy(Player player, Item item)
+	{
+		if ((player == null) || (item == null))
+		{
+			return null;
+		}
+		
+		final RewardItemsOnFailure holder = item.isWeapon() ? _weaponDestroyGroup : _armorDestroyGroup;
+		final CrystalType grade = item.getTemplate().getCrystalTypePlus();
+		if (holder.checkIfRewardUnavailable(grade, item.getEnchantLevel()))
+		{
+			return null;
+		}
+		
+		return holder.getRewardItem(grade, item.getEnchantLevel());
 	}
 	
 	/**

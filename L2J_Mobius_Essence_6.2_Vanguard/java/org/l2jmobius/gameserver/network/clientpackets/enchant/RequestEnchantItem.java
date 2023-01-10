@@ -22,10 +22,12 @@ import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.xml.EnchantItemData;
+import org.l2jmobius.gameserver.data.xml.ItemCrystallizationData;
 import org.l2jmobius.gameserver.enums.ItemSkillType;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
+import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantResultType;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
@@ -454,6 +456,16 @@ public class RequestEnchantItem implements ClientPacket
 						}
 					}
 					break;
+				}
+			}
+			
+			if (resultType == EnchantResultType.FAILURE)
+			{
+				final ItemChanceHolder destroyReward = ItemCrystallizationData.getInstance().getItemOnDestroy(player, item);
+				if ((destroyReward != null) && (Rnd.get(100) < destroyReward.getChance()))
+				{
+					player.addItem("Enchant", destroyReward.getId(), destroyReward.getCount(), null, true);
+					player.sendPacket(new EnchantResult(EnchantResult.FAIL, destroyReward.getId(), (int) destroyReward.getCount()));
 				}
 			}
 			
