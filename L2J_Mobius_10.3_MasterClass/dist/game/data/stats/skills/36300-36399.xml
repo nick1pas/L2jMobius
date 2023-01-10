@@ -2,73 +2,240 @@
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/skills.xsd">
 	<skill id="36300" toLevel="3" name="Superior Seed Bracelet Augmentation: Capricorn">
 		<!-- When equipping Agathion Capricorn, M. Critical Rate +10. -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36301" toLevel="1" name="Superior Seed Bracelet Augmentation: Damage">
 		<!-- Damage +5%, received damage -5% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PveMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvePhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<type>ENEMY_ALL</type>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalAttackDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpMagicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PvpPhysicalSkillDamageBonus">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>PK</type>
+			</effect>
+			<effect name="DamageByAttack">
+				<amount>-5</amount>
+				<type>ENEMY_ALL</type>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36302" toLevel="3" name="Superior Seed Bracelet Augmentation: M. Atk.">
 		<!-- When equipping Agathion Charm: Aquarius, M. Atk. +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36303" toLevel="3" name="Superior Seed Bracelet Augmentation: Casting Spd.">
 		<!-- When equipping Agathion Charm: Pisces, Casting Spd. +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36304" toLevel="3" name="Superior Seed Bracelet Augmentation: P. Skill Critical Damage">
 		<!-- When equipping Agathion Charm: Aries, P. Skill Critical Damage +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillCriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36305" toLevel="3" name="Superior Seed Bracelet Augmentation: P. Def.">
 		<!-- When equipping Agathion Charm: Taurus, P. Def. +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36306" toLevel="3" name="Superior Seed Bracelet Augmentation: M. Def.">
 		<!-- When equipping Agathion Charm: Gemini, M. Def. +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36307" toLevel="3" name="Superior Seed Bracelet Augmentation: P. Skill Critical Rate">
 		<!-- When equipping Agathion Charm: Cancer, P. Skill Critical Rate +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalSkillCriticalRate">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36308" toLevel="3" name="Superior Seed Bracelet Augmentation: P. Atk.">
 		<!-- When equipping Agathion Charm: Leo, P. Atk. +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36309" toLevel="3" name="Superior Seed Bracelet Augmentation: Critical Rate for Basic Attacks">
 		<!-- When equipping Agathion Charm: Virgo, Critical Rate for basic attacks +10 -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36310" toLevel="3" name="Superior Seed Bracelet Augmentation: M. Skill Critical Damage">
 		<!-- When equipping Agathion Charm: Libra, M. Skill Critical Damage +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36311" toLevel="3" name="Superior Seed Bracelet Augmentation: Critical Damage for Basic Attacks">
 		<!-- When equipping Agathion Charm: Scorpio, Critical Damage for basic attacks +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="CriticalDamage">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36312" toLevel="3" name="Superior Seed Bracelet Augmentation: Atk. Spd.">
 		<!-- When equipping Agathion Charm: Sagittarius, Atk. Spd. +1% -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">5</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36313" toLevel="3" name="Superior Seed Bracelet Augmentation: M. Critical Rate">
 		<!-- When equipping Agathion Charm: Capricorn, M. Critical Rate +10 -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_renewal_mineral_lbracelet_charm</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicCriticalRate">
+				<amount>
+					<value level="1">10</value>
+					<value level="2">20</value>
+					<value level="3">50</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="36314" toLevel="1" name="Collection_7_2016">
 		<!-- Power of basic attacks and P./ M. skills +10%, P./ M. Def. +10%, acquired XP/ SP +5% -->
