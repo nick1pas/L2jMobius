@@ -31,6 +31,7 @@ import org.l2jmobius.gameserver.model.ExtractableProduct;
 import org.l2jmobius.gameserver.model.actor.Playable;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.EtcItem;
+import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.item.type.CrystalType;
 import org.l2jmobius.gameserver.network.SystemMessageId;
@@ -111,7 +112,14 @@ public class ExtractableItems implements IItemHandler
 							continue;
 						}
 						
-						if (ItemTable.getInstance().getTemplate(expi.getId()).isStackable() || (createItemAmount == 1))
+						final ItemTemplate template = ItemTable.getInstance().getTemplate(expi.getId());
+						if (template == null)
+						{
+							LOGGER.warning("ExtractableItems: Could not find " + item + " product template with id " + expi.getId() + "!");
+							continue;
+						}
+						
+						if (template.isStackable() || (createItemAmount == 1))
 						{
 							final Item newItem = player.addItem("Extract", expi.getId(), createItemAmount, player, false);
 							if (expi.getMaxEnchant() > 0)
@@ -158,7 +166,14 @@ public class ExtractableItems implements IItemHandler
 						continue;
 					}
 					
-					if (ItemTable.getInstance().getTemplate(expi.getId()).isStackable() || (createItemAmount == 1))
+					final ItemTemplate template = ItemTable.getInstance().getTemplate(expi.getId());
+					if (template == null)
+					{
+						LOGGER.warning("ExtractableItems: Could not find " + item + " product template with id " + expi.getId() + "!");
+						continue;
+					}
+					
+					if (template.isStackable() || (createItemAmount == 1))
 					{
 						final Item newItem = player.addItem("Extract", expi.getId(), createItemAmount, player, false);
 						if (expi.getMaxEnchant() > 0)
