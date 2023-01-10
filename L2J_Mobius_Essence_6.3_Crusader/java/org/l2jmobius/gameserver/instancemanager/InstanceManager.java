@@ -74,7 +74,7 @@ public class InstanceManager implements IXmlReader
 	private int _currentInstanceId = 0;
 	private final Map<Integer, Instance> _instanceWorlds = new ConcurrentHashMap<>();
 	// Player reenter times
-	private final Map<Integer, Map<Integer, Long>> _PlayerTimes = new ConcurrentHashMap<>();
+	private final Map<Integer, Map<Integer, Long>> _playerTimes = new ConcurrentHashMap<>();
 	
 	protected InstanceManager()
 	{
@@ -96,9 +96,9 @@ public class InstanceManager implements IXmlReader
 		parseDatapackDirectory("data/instances", true);
 		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _instanceTemplates.size() + " instance templates.");
 		// Load player's reenter data
-		_PlayerTimes.clear();
+		_playerTimes.clear();
 		restoreInstanceTimes();
-		LOGGER.info(getClass().getSimpleName() + ": Loaded instance reenter times for " + _PlayerTimes.size() + " players.");
+		LOGGER.info(getClass().getSimpleName() + ": Loaded instance reenter times for " + _playerTimes.size() + " players.");
 	}
 	
 	@Override
@@ -549,7 +549,7 @@ public class InstanceManager implements IXmlReader
 	public Map<Integer, Long> getAllInstanceTimes(Player player)
 	{
 		// When player don't have any instance penalty
-		final Map<Integer, Long> instanceTimes = _PlayerTimes.get(player.getObjectId());
+		final Map<Integer, Long> instanceTimes = _playerTimes.get(player.getObjectId());
 		if ((instanceTimes == null) || instanceTimes.isEmpty())
 		{
 			return Collections.emptyMap();
@@ -597,7 +597,7 @@ public class InstanceManager implements IXmlReader
 	 */
 	public void setReenterPenalty(int objectId, int id, long time)
 	{
-		_PlayerTimes.computeIfAbsent(objectId, k -> new ConcurrentHashMap<>()).put(id, time);
+		_playerTimes.computeIfAbsent(objectId, k -> new ConcurrentHashMap<>()).put(id, time);
 	}
 	
 	/**
@@ -610,7 +610,7 @@ public class InstanceManager implements IXmlReader
 	public long getInstanceTime(Player player, int id)
 	{
 		// Check if exists reenter data for player
-		final Map<Integer, Long> playerData = _PlayerTimes.get(player.getObjectId());
+		final Map<Integer, Long> playerData = _playerTimes.get(player.getObjectId());
 		if ((playerData == null) || !playerData.containsKey(id))
 		{
 			return -1;
@@ -639,9 +639,9 @@ public class InstanceManager implements IXmlReader
 			ps.setInt(1, player.getObjectId());
 			ps.setInt(2, id);
 			ps.execute();
-			if (_PlayerTimes.get(player.getObjectId()) != null)
+			if (_playerTimes.get(player.getObjectId()) != null)
 			{
-				_PlayerTimes.get(player.getObjectId()).remove(id);
+				_playerTimes.get(player.getObjectId()).remove(id);
 			}
 		}
 		catch (Exception e)
