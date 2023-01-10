@@ -34,7 +34,7 @@ import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSayhasSup
 import org.l2jmobius.gameserver.network.serverpackets.huntpass.HuntPassSimpleInfo;
 
 /**
- * @author Serenitty, Mobius
+ * @author Serenitty, Mobius, Fakee
  */
 public class RequestHuntPassReward implements ClientPacket
 {
@@ -89,6 +89,7 @@ public class RequestHuntPassReward implements ClientPacket
 		}
 		if (reward == null)
 		{
+			player.removeRequest(RewardRequest.class);
 			return;
 		}
 		
@@ -108,7 +109,6 @@ public class RequestHuntPassReward implements ClientPacket
 			rewardItem(player, HuntPassData.getInstance().getRewards().get(rewardIndex));
 			huntPass.setRewardStep(rewardIndex + 1);
 		}
-		
 		// Premium reward.
 		else if (huntPass.isPremium())
 		{
