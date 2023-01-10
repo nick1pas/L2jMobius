@@ -228,11 +228,6 @@ public class HuntPass
 	
 	public void setRewardStep(int step)
 	{
-		if (_isPremium && (_premiumRewardStep <= _rewardStep))
-		{
-			return;
-		}
-		
 		_rewardStep = Math.max(0, Math.min(step, HuntPassData.getInstance().getRewardsCount()));
 	}
 	
