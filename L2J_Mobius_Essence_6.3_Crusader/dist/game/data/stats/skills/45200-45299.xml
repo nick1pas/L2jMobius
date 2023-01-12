@@ -7974,7 +7974,20 @@
 	</skill>
 	<skill id="45271" toLevel="5" name="Extended Life">
 		<!-- Max HP +$s1 <Stats increase with level> Required level: 85 Stats change depending on level. Max HP +$s2 -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.skill11752</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="StatAddForLevel">
+				<stat>MAX_HP</stat>
+				<level>85,86,87,88,89,90,91,92,93,94,95,96,97,98,99</level>
+				<amount>
+					<value level="1">400,420,440,460,480,500,520,540,560,580,600,620,640,660,680</value>
+					<value level="2">1050,1080,1110,1140,1170,1200,1230,1260,1290,1320,1350,1380,1410,1440,1470</value>
+					<value level="3">1700,1740,1780,1820,1860,1900,1940,1980,2020,2060,2100,2140,2180,2220,2260</value>
+					<value level="4">2400,2460,2520,2580,2640,2700,2760,2820,2880,2940,3000,3060,3120,3180,3240</value>
+					<value level="5">3300,3400,3500,3600,3700,3800,3900,4000,4100,4200,4300,4400,4500,4600,4700</value>
+				</amount>
+			</effect>
+		</effects>
 	</skill>
 </list>
