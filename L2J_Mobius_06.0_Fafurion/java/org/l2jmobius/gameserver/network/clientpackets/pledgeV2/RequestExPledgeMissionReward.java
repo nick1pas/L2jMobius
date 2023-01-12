@@ -76,6 +76,6 @@ public class RequestExPledgeMissionReward implements ClientPacket
 			client.sendPacket(new ExPledgeMissionInfo(player));
 		}
 		
-		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 300);
 	}
 }

@@ -64,6 +64,7 @@ public class RequestOneDayRewardReceive implements ClientPacket
 		final Collection<DailyMissionDataHolder> rewards = DailyMissionData.getInstance().getDailyMissionData(_id);
 		if ((rewards == null) || rewards.isEmpty())
 		{
+			player.removeRequest(RewardRequest.class);
 			return;
 		}
 		
@@ -77,6 +78,6 @@ public class RequestOneDayRewardReceive implements ClientPacket
 		
 		player.sendPacket(new ExOneDayReceiveRewardList(player));
 		
-		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 300);
 	}
 }

@@ -129,7 +129,7 @@ public class RequestHuntPassReward implements ClientPacket
 		player.sendPacket(new HuntPassSayhasSupportInfo(player));
 		player.sendPacket(new HuntPassSimpleInfo(player));
 		
-		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 50);
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 300);
 	}
 	
 	private void rewardItem(Player player, ItemHolder reward)

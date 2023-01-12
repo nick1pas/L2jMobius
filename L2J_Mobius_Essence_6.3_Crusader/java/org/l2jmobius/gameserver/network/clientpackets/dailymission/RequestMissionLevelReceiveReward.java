@@ -17,9 +17,11 @@
 package org.l2jmobius.gameserver.network.clientpackets.dailymission;
 
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.xml.MissionLevel;
 import org.l2jmobius.gameserver.model.MissionLevelHolder;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.request.RewardRequest;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.holders.MissionLevelPlayerDataHolder;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -51,6 +53,12 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 			return;
 		}
 		
+		if (player.hasRequest(RewardRequest.class))
+		{
+			return;
+		}
+		player.addRequest(new RewardRequest(player));
+		
 		final MissionLevelPlayerDataHolder info = player.getMissionLevelProgress();
 		switch (_rewardType)
 		{
@@ -58,6 +66,7 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 			{
 				if (!_holder.getNormalRewards().containsKey(_level) || info.getCollectedNormalRewards().contains(_level) || ((info.getCurrentLevel() != _level) && (info.getCurrentLevel() < _level)))
 				{
+					player.removeRequest(RewardRequest.class);
 					return;
 				}
 				
@@ -71,6 +80,7 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 			{
 				if (!_holder.getKeyRewards().containsKey(_level) || info.getCollectedKeyRewards().contains(_level) || ((info.getCurrentLevel() != _level) && (info.getCurrentLevel() < _level)))
 				{
+					player.removeRequest(RewardRequest.class);
 					return;
 				}
 				
@@ -84,6 +94,7 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 			{
 				if ((_holder.getSpecialReward() == null) || info.getCollectedSpecialReward() || ((info.getCurrentLevel() != _level) && (info.getCurrentLevel() < _level)))
 				{
+					player.removeRequest(RewardRequest.class);
 					return;
 				}
 				
@@ -97,6 +108,7 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 			{
 				if (!_holder.getBonusRewardIsAvailable() || (_holder.getBonusReward() == null) || !info.getCollectedSpecialReward() || info.getCollectedBonusReward() || ((info.getCurrentLevel() != _level) && (info.getCurrentLevel() < _level)))
 				{
+					player.removeRequest(RewardRequest.class);
 					return;
 				}
 				
@@ -118,6 +130,7 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 					}
 					else
 					{
+						player.removeRequest(RewardRequest.class);
 						return;
 					}
 				}
@@ -134,5 +147,7 @@ public class RequestMissionLevelReceiveReward implements ClientPacket
 		}
 		
 		player.sendPacket(new ExMissionLevelRewardList(player));
+		
+		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 300);
 	}
 }
