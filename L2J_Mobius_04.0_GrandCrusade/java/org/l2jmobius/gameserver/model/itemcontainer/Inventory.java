@@ -572,7 +572,8 @@ public abstract class Inventory extends ItemContainer
 						// Active, non offensive, skills start with reuse on equip.
 						if (skill.isActive() && !skill.isBad() && !skill.isTransformation() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 						{
-							player.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
+							final long reuse = player.getSkillRemainingReuseTime(skill.getReuseHashCode());
+							player.addTimeStamp(skill, reuse > 0 ? reuse : skill.getReuseDelay() > 0 ? skill.getReuseDelay() : Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
 							updateTimestamp = true;
 						}
 					}
@@ -628,7 +629,8 @@ public abstract class Inventory extends ItemContainer
 							// Active, non offensive, skills start with reuse on equip.
 							if (!skill.isBad() && !skill.isTransformation() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 							{
-								player.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
+								final long reuse = player.getSkillRemainingReuseTime(skill.getReuseHashCode());
+								player.addTimeStamp(skill, reuse > 0 ? reuse : skill.getReuseDelay() > 0 ? skill.getReuseDelay() : Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
 							}
 							
 							updateTimestamp = true;
@@ -691,7 +693,8 @@ public abstract class Inventory extends ItemContainer
 					// Active, non offensive, skills start with reuse on equip.
 					if (skill.isActive() && !skill.isBad() && !skill.isTransformation() && (Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 					{
-						player.addTimeStamp(skill, Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
+						final long reuse = player.getSkillRemainingReuseTime(skill.getReuseHashCode());
+						player.addTimeStamp(skill, reuse > 0 ? reuse : skill.getReuseDelay() > 0 ? skill.getReuseDelay() : Config.ITEM_EQUIP_ACTIVE_SKILL_REUSE);
 						updateTimestamp = true;
 					}
 				}
@@ -810,7 +813,8 @@ public abstract class Inventory extends ItemContainer
 							// Active, non offensive, skills start with reuse on equip.
 							if (!itemSkill.isBad() && !itemSkill.isTransformation() && (Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE > 0) && player.hasEnteredWorld())
 							{
-								player.addTimeStamp(itemSkill, Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE);
+								final long reuse = player.getSkillRemainingReuseTime(itemSkill.getReuseHashCode());
+								player.addTimeStamp(itemSkill, reuse > 0 ? reuse : itemSkill.getReuseDelay() > 0 ? itemSkill.getReuseDelay() : Config.ARMOR_SET_EQUIP_ACTIVE_SKILL_REUSE);
 							}
 							
 							updateTimeStamp = true;
