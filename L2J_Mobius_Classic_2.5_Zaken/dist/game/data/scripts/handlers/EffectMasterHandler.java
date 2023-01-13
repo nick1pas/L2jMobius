@@ -160,6 +160,7 @@ public class EffectMasterHandler
 		EffectHandler.getInstance().registerHandler("GiveClanReputation", GiveClanReputation::new);
 		EffectHandler.getInstance().registerHandler("GiveExpAndSp", GiveExpAndSp::new);
 		EffectHandler.getInstance().registerHandler("GiveFame", GiveFame::new);
+		EffectHandler.getInstance().registerHandler("GiveItemByExp", GiveItemByExp::new);
 		EffectHandler.getInstance().registerHandler("GiveRecommendation", GiveRecommendation::new);
 		EffectHandler.getInstance().registerHandler("GiveSp", GiveSp::new);
 		EffectHandler.getInstance().registerHandler("GiveXp", GiveXp::new);
