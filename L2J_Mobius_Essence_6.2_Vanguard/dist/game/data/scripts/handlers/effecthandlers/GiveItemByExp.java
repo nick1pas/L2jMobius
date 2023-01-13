@@ -35,7 +35,7 @@ import org.l2jmobius.gameserver.model.skill.Skill;
  */
 public class GiveItemByExp extends AbstractEffect
 {
-	private static final Map<Player, Long> CREATURE_VALUES = new ConcurrentHashMap<>();
+	private static final Map<Player, Long> PLAYER_VALUES = new ConcurrentHashMap<>();
 	
 	private final long _exp;
 	private final int _itemId;
@@ -60,7 +60,7 @@ public class GiveItemByExp extends AbstractEffect
 	{
 		if (effected.isPlayer())
 		{
-			CREATURE_VALUES.remove(effected.getActingPlayer());
+			PLAYER_VALUES.remove(effected.getActingPlayer());
 			effected.removeListenerIf(EventType.ON_PLAYABLE_EXP_CHANGED, listener -> listener.getOwner() == this);
 		}
 	}
@@ -73,15 +73,15 @@ public class GiveItemByExp extends AbstractEffect
 		}
 		
 		final Player player = playable.getActingPlayer();
-		final long sum = CREATURE_VALUES.getOrDefault(player, 0L) + exp;
+		final long sum = PLAYER_VALUES.getOrDefault(player, 0L) + exp;
 		if (sum >= _exp)
 		{
-			CREATURE_VALUES.remove(player);
+			PLAYER_VALUES.remove(player);
 			player.addItem("GiveItemByExp effect", _itemId, 1, player, true);
 		}
 		else
 		{
-			CREATURE_VALUES.put(player, sum);
+			PLAYER_VALUES.put(player, sum);
 		}
 	}
 }
