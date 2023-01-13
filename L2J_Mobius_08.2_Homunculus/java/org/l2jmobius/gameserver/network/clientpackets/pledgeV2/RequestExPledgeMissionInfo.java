@@ -36,7 +36,7 @@ public class RequestExPledgeMissionInfo implements ClientPacket
 			return;
 		}
 		
-		client.sendPacket(new ExPledgeMissionRewardCount(player));
-		client.sendPacket(new ExPledgeMissionInfo(player));
+		player.sendPacket(new ExPledgeMissionInfo(player));
+		player.sendPacket(new ExPledgeMissionRewardCount(player));
 	}
 }

@@ -70,10 +70,10 @@ public class RequestExPledgeMissionReward implements ClientPacket
 				if (holder.isDisplayable(player))
 				{
 					holder.requestReward(player);
+					player.sendPacket(new ExPledgeMissionInfo(player, holder));
 				}
 			}
-			client.sendPacket(new ExPledgeMissionRewardCount(player));
-			client.sendPacket(new ExPledgeMissionInfo(player));
+			player.sendPacket(new ExPledgeMissionRewardCount(player));
 		}
 		
 		ThreadPool.schedule(() -> player.removeRequest(RewardRequest.class), 300);

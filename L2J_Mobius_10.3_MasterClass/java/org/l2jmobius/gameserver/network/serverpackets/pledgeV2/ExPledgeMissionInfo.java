@@ -17,6 +17,7 @@
 package org.l2jmobius.gameserver.network.serverpackets.pledgeV2;
 
 import java.util.Collection;
+import java.util.Collections;
 
 import org.l2jmobius.gameserver.data.xml.DailyMissionData;
 import org.l2jmobius.gameserver.model.DailyMissionDataHolder;
@@ -36,6 +37,12 @@ public class ExPledgeMissionInfo extends ServerPacket
 	{
 		_player = player;
 		_rewards = DailyMissionData.getInstance().getDailyMissionData(player);
+	}
+	
+	public ExPledgeMissionInfo(Player player, DailyMissionDataHolder holder)
+	{
+		_player = player;
+		_rewards = Collections.singletonList(holder);
 	}
 	
 	@Override

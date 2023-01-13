@@ -23,8 +23,7 @@ import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionIn
 import org.l2jmobius.gameserver.network.serverpackets.pledgeV2.ExPledgeMissionRewardCount;
 
 /**
- * @author Bonux (bonuxq@gmail.com)
- * @date 29.09.2019
+ * @author Bonux
  */
 public class RequestExPledgeMissionInfo implements ClientPacket
 {
@@ -37,7 +36,7 @@ public class RequestExPledgeMissionInfo implements ClientPacket
 			return;
 		}
 		
-		client.sendPacket(new ExPledgeMissionRewardCount(player));
-		client.sendPacket(new ExPledgeMissionInfo(player));
+		player.sendPacket(new ExPledgeMissionInfo(player));
+		player.sendPacket(new ExPledgeMissionRewardCount(player));
 	}
 }

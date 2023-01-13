@@ -108,9 +108,10 @@ public class LevelDailyMissionHandler extends AbstractDailyMissionHandler
 			{
 				entry.setStatus(DailyMissionStatus.AVAILABLE);
 				storePlayerEntry(entry);
+				
+				player.sendPacket(new ExPledgeMissionInfo(player, getHolder()));
+				player.sendPacket(new ExPledgeMissionRewardCount(player));
 			}
-			player.sendPacket(new ExPledgeMissionRewardCount(player));
-			player.sendPacket(new ExPledgeMissionInfo(player));
 		}
 	}
 }
