@@ -624,6 +624,7 @@
 																	</xs:sequence>
 																</xs:complexType>
 															</xs:element>
+															<xs:element name="level" type="xs:int" />
 															<xs:element name="ignoreShieldDefence" type="xs:boolean" />
 															<xs:element name="criticalChance">
 																<xs:complexType mixed="true">

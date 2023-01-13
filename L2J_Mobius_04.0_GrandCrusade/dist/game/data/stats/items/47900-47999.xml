@@ -195,9 +195,18 @@
 		<!-- When used, 1 billion EXP obtained, is only 20% effective after Lv 99. Can be used above Lv 85. -->
 		<set name="icon" val="icon.bm_nebit_exp_book" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="material" val="PAPER" />
+		<set name="reuse_delay" val="3000" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<cond msgId="113" addName="1">
+			<player level="85" />
+		</cond>
+		<skills>
+			<skill id="18798" level="1" /> <!-- Shining Scroll of Growth -->
+		</skills>
 	</item>
 	<item id="47920" name="Greater Vital Stone" additionalName="30-day" type="Armor">
 		<!-- Increases bonus EXP by 30% and decreases Vitality consumption by 15% when worn using Vitality. Additionally, acquired XP is increased by 10%. When you wear the same type of gemstone, only the effect of the highest level gem is applied. -->

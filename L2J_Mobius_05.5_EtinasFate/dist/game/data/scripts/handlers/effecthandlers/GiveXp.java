@@ -18,6 +18,7 @@ package handlers.effecthandlers;
 
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
+import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.Skill;
@@ -29,10 +30,14 @@ import org.l2jmobius.gameserver.model.skill.Skill;
 public class GiveXp extends AbstractEffect
 {
 	private final long _xp;
+	private final int _level;
+	private final double _percentage;
 	
 	public GiveXp(StatSet params)
 	{
 		_xp = params.getLong("xp", 0);
+		_level = params.getInt("level", 0);
+		_percentage = params.getDouble("percentage", 0);
 	}
 	
 	@Override
@@ -49,6 +54,17 @@ public class GiveXp extends AbstractEffect
 			return;
 		}
 		
-		effector.getActingPlayer().addExpAndSp(_xp, 0);
+		final Player player = effector.getActingPlayer();
+		final double amount;
+		if (player.getLevel() < _level)
+		{
+			amount = (_xp / 100.0) * _percentage;
+		}
+		else
+		{
+			amount = _xp;
+		}
+		
+		player.addExpAndSp(amount, 0);
 	}
 }
