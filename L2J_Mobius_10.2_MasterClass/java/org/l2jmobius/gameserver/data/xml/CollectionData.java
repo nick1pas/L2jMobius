@@ -19,6 +19,7 @@ package org.l2jmobius.gameserver.data.xml;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,7 @@ public class CollectionData implements IXmlReader
 	private static final Logger LOGGER = Logger.getLogger(CollectionData.class.getName());
 	
 	private static final Map<Integer, CollectionDataHolder> _collections = new HashMap<>();
+	private static final Map<Integer, List<CollectionDataHolder>> _collectionsByTabId = new HashMap<>();
 	
 	protected CollectionData()
 	{
@@ -108,7 +110,9 @@ public class CollectionData implements IXmlReader
 							}
 						}
 						
-						_collections.put(id, new CollectionDataHolder(id, optionId, category, completeCount, items));
+						final CollectionDataHolder template = new CollectionDataHolder(id, optionId, category, completeCount, items);
+						_collections.put(id, template);
+						_collectionsByTabId.computeIfAbsent(template.getCategory(), list -> new ArrayList<>()).add(template);
 					}
 				}
 			}
@@ -118,6 +122,15 @@ public class CollectionData implements IXmlReader
 	public CollectionDataHolder getCollection(int id)
 	{
 		return _collections.get(id);
+	}
+	
+	public List<CollectionDataHolder> getCollectionsByTabId(int tabId)
+	{
+		if (_collectionsByTabId.containsKey(tabId))
+		{
+			return _collectionsByTabId.get(tabId);
+		}
+		return Collections.emptyList();
 	}
 	
 	public Collection<CollectionDataHolder> getCollections()

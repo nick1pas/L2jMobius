@@ -116,6 +116,7 @@ import org.l2jmobius.gameserver.network.serverpackets.SkillList;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.ability.ExAcquireAPSkillList;
 import org.l2jmobius.gameserver.network.serverpackets.attendance.ExVipAttendanceItemList;
+import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionActiveEvent;
 import org.l2jmobius.gameserver.network.serverpackets.collection.ExCollectionInfo;
 import org.l2jmobius.gameserver.network.serverpackets.friend.L2FriendList;
 import org.l2jmobius.gameserver.network.serverpackets.herobook.ExHeroBookInfo;
@@ -698,6 +699,7 @@ public class EnterWorld implements ClientPacket
 		{
 			player.sendPacket(new ExCollectionInfo(player, category));
 		}
+		player.sendPacket(new ExCollectionActiveEvent());
 		
 		player.sendPacket(new ItemDeletionInfo());
 		
