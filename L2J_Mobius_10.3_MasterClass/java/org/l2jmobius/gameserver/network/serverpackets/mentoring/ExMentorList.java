@@ -55,7 +55,7 @@ public class ExMentorList extends ServerPacket
 		else
 		{
 			_mentees = Collections.emptyList();
-			_type = 0x00;
+			_type = 0;
 		}
 	}
 	

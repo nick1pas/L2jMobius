@@ -38,12 +38,12 @@ public class ExMentorList extends ServerPacket
 	{
 		if (player.isMentor())
 		{
-			_type = 0x01;
+			_type = 1;
 			_mentees = MentorManager.getInstance().getMentees(player.getObjectId());
 		}
 		else if (player.isMentee())
 		{
-			_type = 0x02;
+			_type = 2;
 			_mentees = Arrays.asList(MentorManager.getInstance().getMentor(player.getObjectId()));
 		}
 		// else if (player.isInCategory(CategoryType.SIXTH_CLASS_GROUP)) // Not a mentor, Not a mentee, so can be a mentor
@@ -54,7 +54,7 @@ public class ExMentorList extends ServerPacket
 		else
 		{
 			_mentees = Collections.emptyList();
-			_type = 0x00;
+			_type = 0;
 		}
 	}
 	
