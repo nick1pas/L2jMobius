@@ -186,10 +186,20 @@
 	<item id="47918" name="Nevit's Gold Hourglass" type="EtcItem">
 		<!-- When used, increases EXP/ SP acquired from hunting by 50% for 30 minutes and obtains 1 Shining Scroll of Growth each time you obtain 5 billion EXP. Cannot be used with Fall of the Dragon, Dandy's Home Run Ball, and Agathion - EXP Bottle. Cooldown 5 minutes. -->
 		<set name="icon" val="icon.bm_nebit_bonus_time_up" />
-		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="material" val="LIQUID" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="300000" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="18797" level="1" /> <!-- Nevit's Gold Hourglass -->
+		</skills>
 	</item>
 	<item id="47919" name="Shining Scroll of Growth" type="EtcItem">
 		<!-- When used, 1 billion EXP obtained. Only 20% effective before Lv 99. Can be used by characters with Lv. 85 and above. Cannot be used in chaotic state. -->
@@ -233,6 +243,9 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
+		<skills>
+			<skill id="18713" level="6" /> <!-- Superior Red Cat's Eye Lv. 10 -->
+		</skills>
 	</item>
 	<item id="47922" name="Greater Blue Cat's Eye" additionalName="30-day" type="Armor">
 		<!-- Increases Magic Critical Damage by 12%, M. Skill Power by 5%. When you wear the same type of gemstone, only the effect of the highest level gem is applied. -->
@@ -246,6 +259,9 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
+		<skills>
+			<skill id="18714" level="5" /> <!-- Superior Blue Cat's Eye Lv. 10 -->
+		</skills>
 	</item>
 	<item id="47923" name="Greater Tanzanite" additionalName="30-day" type="Armor">
 		<!-- When used, it creates a shield that absorbs 50,000 damage for 15 seconds and recovers 15% of maximum HP immediately after use. When you wear the same type of gemstone, only the effect of the highest level gem is applied. -->
@@ -259,6 +275,10 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
+		<skills>
+			<skill id="18815" level="6" /> <!-- Superior Tanzanite Lv. 10 -->
+			<skill id="18565" level="6" /> <!-- Superior Tanzanite - Barrier -->
+		</skills>
 	</item>
 	<item id="47924" name="Coin of Light" type="EtcItem">
 		<!-- A special coin obtained using Shiny Magic Bait. Can be used with the Dimensional Merchant. -->
@@ -1485,7 +1505,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="is_freightable" val="true" />
+		<capsuled_items>
+			<item id="37718" min="1" max="1" minEnchant="5" maxEnchant="5" chance="100" /> <!-- Shiny Elemental Shirt -->
+		</capsuled_items>
 	</item>
 	<item id="47987" name="Challenger's Weapon Enhancement Ticket" type="EtcItem">
 		<!-- It can be used to enhance a Challenger weapon through a Dimensional Merchant found in every town. -->

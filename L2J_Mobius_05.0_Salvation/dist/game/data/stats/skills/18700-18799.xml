@@ -2104,9 +2104,47 @@
 	<skill id="18797" toLevel="1" name="Nevit's Gold Hourglass">
 		<!-- Increases EXP/ SP acquired from hunting by 50% for 30 minutes and obtains 1 Shining Scroll of Growth each time you obtain 5 billion EXP. -->
 		<icon>icon.bm_nebit_bonus_time_up</icon>
-		<operateType>A1</operateType>
+		<itemConsumeId>47918</itemConsumeId>
+		<operateType>A2</operateType>
+		<abnormalType>VOTE</abnormalType>
+		<basicProperty>NONE</basicProperty>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>1800</abnormalTime>
+		<irreplacableBuff>true</irreplacableBuff>
 		<isMagic>4</isMagic>
-		<reuseDelay>300000</reuseDelay>
+		<staticReuse>true</staticReuse>
+		<abnormalVisualEffect>VP_KEEP</abnormalVisualEffect>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpCheckAbnormal">
+				<type>VOTE</type>
+				<level>1</level>
+				<hasAbnormal>false</hasAbnormal>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="ExpModify">
+				<amount>50</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>50</amount>
+			</effect>
+			<effect name="DispelBySlot">
+				<dispel>
+					<value level="1">BUFF_PCCAFE_EXP1,1;SHINING_HOURGLASS,1</value>
+				</dispel>
+			</effect>
+			<effect name="BlockAbnormalSlot">
+				<slot>BUFF_PCCAFE_EXP1;SHINING_HOURGLASS</slot>
+			</effect>
+			<effect name="GiveItemByExp">
+				<exp>5000000000</exp>
+				<itemId>47919</itemId> <!-- Shining Scroll of Growth -->
+			</effect>
+		</effects>
 	</skill>
 	<skill id="18798" toLevel="1" name="Shining Scroll of Growth">
 		<!-- When used, 1 billion EXP obtained, is only 20% effective after Lv 99. Can be used above Lv 85. -->

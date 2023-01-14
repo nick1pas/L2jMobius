@@ -243,6 +243,7 @@ public enum AbnormalType
 	HEAL_RESISTANCE(-1), // TODO: need find proper name
 	TALISMAN_SPECIAL(-1),
 	EXP_HERB(-1),
+	SHINING_HOURGLASS(-1),
 	AB_HAWK_EYE(0),
 	ALL_ATTACK_DOWN(1),
 	ALL_ATTACK_UP(2),

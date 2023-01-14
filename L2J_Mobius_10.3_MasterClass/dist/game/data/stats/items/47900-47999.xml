@@ -177,10 +177,20 @@
 	<item id="47918" name="Nevit's Gold Hourglass" type="EtcItem">
 		<!-- For 30 min., acquired XP/ SP +50%. Grants Shining Scroll of Growth each time you get 500,000 XP. The effect does not stack with Fall of the Dragon, Dandy's Home Run Ball, and Agathion - XP Bottle. Cooldown: 5 min. -->
 		<set name="icon" val="icon.bm_nebit_bonus_time_up" />
-		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="material" val="LIQUID" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_oly_restricted" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="material" val="PAPER" />
+		<set name="handler" val="ItemSkills" />
+		<set name="reuse_delay" val="300000" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="18797" level="1" /> <!-- Nevit's Gold Hourglass -->
+		</skills>
 	</item>
 	<item id="47919" name="Shining Scroll of Growth" type="EtcItem">
 		<!-- Double-click to obtain 100,000 XP. If character's level is lower than 99, the effectiveness is only 20%. Required level: 85+. -->
