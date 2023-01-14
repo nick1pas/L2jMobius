@@ -65,13 +65,13 @@
 		<set name="extractableCountMax" val="2" />
 		<capsuled_items>
 			<!-- Guaranteed Item -->
-			<item id="97404" min="5" max="5" chance="99.9" /> <!-- Baium's Energy -->
+			<item id="97404" min="5" max="5" chance="99.9" /> <!-- Baium's Energy (Time-limited) - Sealed -->
 			<!-- Random Item -->
-			<item id="96297" min="1" max="1" chance="0.00001001001" /> <!-- Frost Lord's Weapon Pack -->
-			<item id="96650" min="1" max="1" chance="0.00003003003" /> <!-- Armor of Protection Pack -->
+			<item id="96297" min="1" max="1" chance="0.00001001001" /> <!-- Frost Lord's Weapon Pack - Sealed -->
+			<item id="96650" min="1" max="1" chance="0.00003003003" /> <!-- Armor of Protection Pack - Sealed -->
 			<item id="96613" min="1" max="1" chance="0.00005005005" /> <!-- Spellbook: Expanded Potential of Dyes -->
 			<item id="92401" min="1" max="1" chance="0.00012012012" /> <!-- Spellbook: White Guardian -->
-			<item id="97359" min="1" max="1" chance="0.00009009009 " /> <!-- Boss' Weapon Pack -->
+			<item id="97359" min="1" max="1" chance="0.00009009009 " /> <!-- Boss' Weapon Pack - Sealed -->
 			<item id="49683" min="1" max="1" chance="0.0005005005 " /> <!-- Talisman of Baium -->
 			<item id="90992" min="1" max="1" chance="0.0001001001" /> <!-- Antharas' Earring -->
 			<item id="96600" min="1" max="1" chance="0.0001001001" /> <!-- Beleth' Ring -->
@@ -98,18 +98,18 @@
 			<item id="93256" min="1" max="1" chance="0.03003003003" /> <!-- Improved Scroll: Enchant A-grade Armor -->
 			<item id="93257" min="1" max="1" chance="0.02002002002" /> <!-- Cursed Scroll: Enchant A-grade Weapon -->
 			<item id="93258" min="1" max="1" chance="0.04004004004" /> <!-- Cursed Scroll: Enchant A-grade Armor -->
-			<item id="97339" min="1" max="1" chance="0.03003003003" /> <!-- Scroll of Blessing: Armor -->
-			<item id="94208" min="1" max="1" chance="0.01001001001 " /> <!-- Scroll of Blessing: Weapon -->
-			<item id="94328" min="1" max="1" chance="0.04004004004" /> <!-- Elixir Powder -->
+			<item id="97339" min="1" max="1" chance="0.03003003003" /> <!-- Scroll of Blessing: Armor - Sealed -->
+			<item id="94208" min="1" max="1" chance="0.01001001001 " /> <!-- Scroll of Blessing: Weapon - Sealed -->
+			<item id="94328" min="1" max="1" chance="0.04004004004" /> <!-- Elixir Powder - Sealed -->
 			<item id="96623" min="1" max="1" chance="0.04004004004" /> <!-- Dye Powder -->
 			<item id="91076" min="2" max="2" chance="0.05005005005" /> <!-- Venir's Talisman Fragment -->
-			<item id="93330" min="1" max="1" chance="0.05005005005" /> <!-- Enchant Kit: Talisman of Authority -->
-			<item id="93685" min="1" max="1" chance="0.05005005005" /> <!-- Enchant Kit: Talisman of Speed -->
-			<item id="94717" min="2" max="2" chance="0.02002002002" /> <!-- Hellbound Energy -->
-			<item id="97404" min="20" max="20" chance="0.03003003003" /> <!-- Baium's Energy -->
-			<item id="97404" min="10" max="10" chance="0.06006006006 " /> <!-- Baium's Energy -->
-			<item id="97404" min="7" max="7" chance="0.15015015015" /> <!-- Baium's Energy -->
-			<item id="97404" min="3" max="3" chance="0.44664664664" /> <!-- Baium's Energy -->
+			<item id="93330" min="1" max="1" chance="0.05005005005" /> <!-- Enchant Kit: Talisman of Authority - Sealed -->
+			<item id="93685" min="1" max="1" chance="0.05005005005" /> <!-- Enchant Kit: Talisman of Speed - Sealed -->
+			<item id="94717" min="2" max="2" chance="0.02002002002" /> <!-- Hellbound Energy - Sealed -->
+			<item id="97404" min="20" max="20" chance="0.03003003003" /> <!-- Baium's Energy (Time-limited) - Sealed -->
+			<item id="97404" min="10" max="10" chance="0.06006006006 " /> <!-- Baium's Energy (Time-limited) - Sealed -->
+			<item id="97404" min="7" max="7" chance="0.15015015015" /> <!-- Baium's Energy (Time-limited) - Sealed -->
+			<item id="97404" min="3" max="3" chance="0.44664664664" /> <!-- Baium's Energy (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97406" name="Kit: Baium's Energy Pack (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -124,8 +124,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97405" min="100" max="100" chance="100" /> <!-- Baium's Energy Pack -->
-			<item id="96729" min="100" max="100" chance="100" /> <!-- Einhasad's Protection -->
+			<item id="97405" min="100" max="100" chance="100" /> <!-- Baium's Energy Pack (Time-limited) - Sealed -->
+			<item id="96729" min="100" max="100" chance="100" /> <!-- Einhasad's Protection - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97407" name="Einhasad's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -150,8 +150,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97407" min="100" max="100" chance="100" /> <!-- Einhasad's Treasure Chest -->
-			<item id="96729" min="100" max="100" chance="100" /> <!-- Einhasad's Protection -->
+			<item id="97407" min="100" max="100" chance="100" /> <!-- Einhasad's Treasure Chest (Time-limited) - Sealed -->
+			<item id="96729" min="100" max="100" chance="100" /> <!-- Einhasad's Protection - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97409" name="Package: Scroll of Blessing: Armor (Sealed) 10 pcs." additionalName="Sealed" type="EtcItem">
@@ -166,7 +166,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97339" min="10" max="10" chance="100" /> <!-- Scroll of Blessing: Armor -->
+			<item id="97339" min="10" max="10" chance="100" /> <!-- Scroll of Blessing: Armor - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97410" name="Doll Pack Lv. 2" additionalName="Sealed" type="EtcItem">
@@ -204,7 +204,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94119" min="1" max="1" minEnchant="1" maxEnchant="1" chance="100" /> <!-- +1 Talisman of Baium (Sealed) -->
+			<item id="94119" min="1" max="1" minEnchant="1" maxEnchant="1" chance="100" /> <!-- Talisman of Baium - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97412" name="Package: +2 Talisman of Baium (Sealed)" additionalName="Sealed" type="EtcItem">
@@ -219,7 +219,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94119" min="1" max="1" minEnchant="2" maxEnchant="2" chance="100" /> <!-- +2 Talisman of Baium (Sealed) -->
+			<item id="94119" min="1" max="1" minEnchant="2" maxEnchant="2" chance="100" /> <!-- Talisman of Baium - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97413" name="Package: +3 Talisman of Baium (Sealed)" additionalName="Sealed" type="EtcItem">
@@ -234,7 +234,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94119" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- +3 Talisman of Baium (Sealed) -->
+			<item id="94119" min="1" max="1" minEnchant="3" maxEnchant="3" chance="100" /> <!-- Talisman of Baium - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97414" name="+2 ~ +5 Talisman of Speed Pack" additionalName="Sealed" type="EtcItem">
@@ -251,10 +251,10 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="92403" min="1" max="1" minEnchant="5" maxEnchant="5" chance="10" /> <!-- +5 Talisman of Speed (Sealed) -->
-			<item id="92403" min="1" max="1" minEnchant="4" maxEnchant="4" chance="15" /> <!-- +4 Talisman of Speed (Sealed) -->
-			<item id="92403" min="1" max="1" minEnchant="3" maxEnchant="3" chance="25" /> <!-- +3 Talisman of Speed (Sealed) -->
-			<item id="92403" min="1" max="1" minEnchant="2" maxEnchant="2" chance="50" /> <!-- +2 Talisman of Speed (Sealed) -->
+			<item id="92403" min="1" max="1" minEnchant="5" maxEnchant="5" chance="10" /> <!-- Talisman of Speed - Sealed -->
+			<item id="92403" min="1" max="1" minEnchant="4" maxEnchant="4" chance="15" /> <!-- Talisman of Speed - Sealed -->
+			<item id="92403" min="1" max="1" minEnchant="3" maxEnchant="3" chance="25" /> <!-- Talisman of Speed - Sealed -->
+			<item id="92403" min="1" max="1" minEnchant="2" maxEnchant="2" chance="50" /> <!-- Talisman of Speed - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97415" name="Red Lantern (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -355,18 +355,18 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="97359" min="1" max="1" chance="0.1" /> <!-- Boss' Weapon Pack -->
+			<item id="97359" min="1" max="1" chance="0.1" /> <!-- Boss' Weapon Pack - Sealed -->
 			<item id="49683" min="1" max="1" chance="0.4" /> <!-- Talisman of Baium -->
-			<item id="97419" min="1" max="1" chance="0.9" /> <!-- Rare Accessory Pack -->
+			<item id="97419" min="1" max="1" chance="0.9" /> <!-- Rare Accessory Pack - Sealed -->
 			<item id="94385" min="1" max="1" chance="0.6" /> <!-- Improved Scroll: Enchant Rare Accessories -->
 			<item id="94383" min="1" max="1" chance="1" /> <!-- Scroll: Enchant Rare Accessories -->
-			<item id="97284" min="1" max="1" chance="1" /> <!-- Doll Pack Lv. 1 -->
-			<item id="93330" min="1" max="1" chance="2" /> <!-- Enchant Kit: Talisman of Authority -->
-			<item id="94168" min="1" max="1" chance="3" /> <!-- Enchant Kit: Circlet of Hero -->
-			<item id="91864" min="1" max="1" chance="22.75" /> <!-- Dragon Belt Pack -->
-			<item id="92020" min="1" max="1" chance="22.75" /> <!-- Enchant Kit: Talisman of Eva -->
-			<item id="93685" min="1" max="1" chance="22.75" /> <!-- Enchant Kit: Talisman of Speed -->
-			<item id="93303" min="1" max="1" chance="22.75" /> <!-- Package: Cloak of Protection -->
+			<item id="97284" min="1" max="1" chance="1" /> <!-- Doll Pack Lv. 1 - Sealed -->
+			<item id="93330" min="1" max="1" chance="2" /> <!-- Enchant Kit: Talisman of Authority - Sealed -->
+			<item id="94168" min="1" max="1" chance="3" /> <!-- Enchant Kit: Circlet of Hero - Sealed -->
+			<item id="91864" min="1" max="1" chance="22.75" /> <!-- Dragon Belt Pack - Sealed -->
+			<item id="92020" min="1" max="1" chance="22.75" /> <!-- Enchant Kit: Talisman of Eva - Sealed -->
+			<item id="93685" min="1" max="1" chance="22.75" /> <!-- Enchant Kit: Talisman of Speed - Sealed -->
+			<item id="93303" min="1" max="1" chance="22.75" /> <!-- Package: Cloak of Protection - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97421" name="Black Tiger's Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -381,10 +381,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="95693" min="5" max="5" chance="100" /> <!-- Berserker's Scroll (Time-limited) -->
-			<item id="94814" min="5" max="5" chance="100" /> <!-- Aden Transformation Scroll (Time-limited) -->
-			<item id="93073" min="10" max="10" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) -->
-			<item id="93848" min="22" max="22" chance="100" /> <!-- Sayha's Cookie (Time-limited) -->
+			<item id="95693" min="5" max="5" chance="100" /> <!-- Berserker's Scroll (Time-limited) - Sealed -->
+			<item id="94814" min="5" max="5" chance="100" /> <!-- Aden Transformation Scroll (Time-limited) - Sealed -->
+			<item id="93073" min="10" max="10" chance="100" /> <!-- Sayha's Storm Lv. 3 (Time-limited) - Sealed -->
+			<item id="93848" min="22" max="22" chance="100" /> <!-- Sayha's Cookie (Time-limited) - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97422" name="Lucky Gift Pouch (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -399,14 +399,14 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="94142" min="20" max="20" chance="100" /> <!-- Dumpling Soup (Time-limited) -->
-			<item id="93848" min="200" max="200" chance="100" /> <!-- Sayha's Cookie (Time-limited) -->
-			<item id="94380" min="300" max="300" chance="100" /> <!-- Scroll: Boost Attack (Time-limited) -->
-			<item id="94381" min="300" max="300" chance="100" /> <!-- Scroll: Boost Defense (Time-limited) -->
-			<item id="94620" min="7" max="7" chance="100" /> <!-- Primeval Isle's Time Stone (Time-limited) -->
-			<item id="94615" min="7" max="7" chance="100" /> <!-- Forgotten Garden's Time Stone (Time-limited) -->
-			<item id="97424" min="7" max="7" chance="100" /> <!-- Elmoreden Tower's Time Stone (Time-limited) -->
-			<item id="97425" min="7" max="7" chance="100" /> <!-- Extra Pass: Transcendent Instance Zone (Time-limited) -->
+			<item id="94142" min="20" max="20" chance="100" /> <!-- Dumpling Soup (Time-limited) - Sealed -->
+			<item id="93848" min="200" max="200" chance="100" /> <!-- Sayha's Cookie (Time-limited) - Sealed -->
+			<item id="94380" min="300" max="300" chance="100" /> <!-- Scroll: Boost Attack (Time-limited) - Sealed -->
+			<item id="94381" min="300" max="300" chance="100" /> <!-- Scroll: Boost Defense (Time-limited) - Sealed -->
+			<item id="94620" min="7" max="7" chance="100" /> <!-- Primeval Isle's Time Stone (Time-limited) - Sealed -->
+			<item id="94615" min="7" max="7" chance="100" /> <!-- Forgotten Garden's Time Stone (Time-limited) - Sealed -->
+			<item id="97424" min="7" max="7" chance="100" /> <!-- Elmoreden Tower's Time Stone (Time-limited) - Sealed -->
+			<item id="97425" min="7" max="7" chance="100" /> <!-- Extra Pass: Transcendent Instance Zone (Time-limited) - Sealed -->
 			<item id="97423" min="10" max="10" chance="100" /> <!-- Christmas Card (Time-limited) -->
 		</capsuled_items>
 	</item>
@@ -462,8 +462,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97426" min="100" max="100" chance="20" /> <!-- Hero's Trophy Pack (Time-limited) -->
-			<item id="96729" min="100" max="100" chance="20" /> <!-- Einhasad's Protection (Sealed) -->
+			<item id="97426" min="100" max="100" chance="20" /> <!-- Hero's Trophy Pack (Time-limited) - Sealed -->
+			<item id="96729" min="100" max="100" chance="20" /> <!-- Einhasad's Protection - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97428" name="Protection Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -481,39 +481,39 @@
 		<set name="extractableCountMax" val="2" />
 		<capsuled_items>
 			<!-- Guaranteed Item -->
-			<item id="91641" min="5" max="5" chance="99.9" /> <!-- Extra -->
+			<item id="91641" min="5" max="5" chance="99.9" /> <!-- Sayha's Blessing - Sealed -->
 			<!-- Random Item -->
 			<item id="96613" min="1" max="1" chance="0.00001001001" /> <!-- Spellbook: Expanded Potential of Dyes -->
 			<item id="92401" min="1" max="1" chance="0.00003003003" /> <!-- Spellbook: White Guardian -->
-			<item id="97359" min="1" max="1" chance="0.00005005005" /> <!-- Boss' Weapon Pack -->
+			<item id="97359" min="1" max="1" chance="0.00005005005" /> <!-- Boss' Weapon Pack - Sealed -->
 			<item id="90763" min="1" max="1" chance="0.0001001001" /> <!-- Zaken's Earring -->
 			<item id="6660" min="1" max="1" chance="0.0001001001" /> <!-- Queen Ant's Ring -->
 			<item id="6661" min="1" max="1" chance="0.0001001001" /> <!-- Orfen's Earring -->
 			<item id="6662" min="1" max="1" chance="0.0001001001" /> <!-- Ring of Core -->
 			<item id="94383" min="1" max="1" chance="0.0003003003" /> <!-- Scroll: Enchant Rare Accessories -->
-			<item id="93739" min="1" max="1" chance="0.001001001" /> <!-- Package: Giran Seal (1000 pcs.) -->
-			<item id="96357" min="1" max="1" chance="0.003003003" /> <!-- STR Dye Lv. 3 -->
-			<item id="96377" min="1" max="1" chance="0.003003003" /> <!-- CON Dye Lv. 3 -->
-			<item id="96417" min="1" max="1" chance="0.003003003" /> <!-- INT Dye Lv. 3 -->
-			<item id="96397" min="1" max="1" chance="0.003003003" /> <!-- DEX Dye Lv. 3 -->
-			<item id="96437" min="1" max="1" chance="0.003003003" /> <!-- MEN Dye Lv. 3 -->
-			<item id="96457" min="1" max="1" chance="0.003003003" /> <!-- WIT Dye Lv. 3 -->
+			<item id="93739" min="1" max="1" chance="0.001001001" /> <!-- Package: Giran Seal (1000 pcs.) - Sealed -->
+			<item id="96357" min="1" max="1" chance="0.003003003" /> <!-- STR Dye - Lv. 3 -->
+			<item id="96377" min="1" max="1" chance="0.003003003" /> <!-- CON Dye - Lv. 3 -->
+			<item id="96417" min="1" max="1" chance="0.003003003" /> <!-- INT Dye - Lv. 3 -->
+			<item id="96397" min="1" max="1" chance="0.003003003" /> <!-- DEX Dye - Lv. 3 -->
+			<item id="96437" min="1" max="1" chance="0.003003003" /> <!-- MEN Dye - Lv. 3 -->
+			<item id="96457" min="1" max="1" chance="0.003003003" /> <!-- WIT Dye - Lv. 3 -->
 			<item id="93255" min="1" max="1" chance="0.01001001001" /> <!-- Improved Scroll: Enchant A-grade Weapon -->
 			<item id="93256" min="1" max="1" chance="0.03003003003" /> <!-- Improved Scroll: Enchant A-grade Armor -->
 			<item id="93257" min="1" max="1" chance="0.02002002002" /> <!-- Cursed Scroll: Enchant A-grade Weapon -->
 			<item id="93258" min="1" max="1" chance="0.05005005005" /> <!-- Cursed Scroll: Enchant A-grade Armor -->
-			<item id="94328" min="1" max="1" chance="0.02002002002" /> <!-- Elixir Powder -->
+			<item id="94328" min="1" max="1" chance="0.02002002002" /> <!-- Elixir Powder - Sealed -->
 			<item id="95783" min="1" max="1" chance="0.02002002002" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
 			<item id="96901" min="1" max="1" chance="0.05005005005" /> <!-- Aden's Soul Crystal Lv. 1 - Armor -->
 			<item id="92034" min="1" max="1" chance="0.03003003003" /> <!-- Reinforced Jewelry Box -->
-			<item id="49674" min="5" max="5" chance="0.05005005005" /> <!-- XP Growth Scroll -->
-			<item id="94269" min="5" max="5" chance="0.05005005005" /> <!-- Scroll: Boost Attack -->
-			<item id="94271" min="5" max="5" chance="0.05005005005" /> <!-- Scroll: Boost Defense -->
+			<item id="49674" min="5" max="5" chance="0.05005005005" /> <!-- XP Growth Scroll - Sealed -->
+			<item id="94269" min="5" max="5" chance="0.05005005005" /> <!-- Scroll: Boost Attack - Sealed -->
+			<item id="94271" min="5" max="5" chance="0.05005005005" /> <!-- Scroll: Boost Defense - Sealed -->
 			<item id="92314" min="3" max="3" chance="0.05005005005" /> <!-- Giran Seal -->
-			<item id="92314" min="2" max="2" chance="0.15015015015" /> <!-- Giran Sea -->
-			<item id="92314" min="1" max="1" chance="0.2002002002" /> <!-- Giran Sea -->
-			<item id="97429" min="1" max="1" chance="0.0952002002" /> <!-- Silver Protection Treasure Chest -->
-			<item id="97430" min="1" max="1" chance="0.0952002002" /> <!-- Golden Protection Treasure Chest -->
+			<item id="92314" min="2" max="2" chance="0.15015015015" /> <!-- Giran Seal -->
+			<item id="92314" min="1" max="1" chance="0.2002002002" /> <!-- Giran Seal -->
+			<item id="97429" min="1" max="1" chance="0.0952002002" /> <!-- Silver Protection Treasure Chest (Time-limited) -->
+			<item id="97430" min="1" max="1" chance="0.0952002002" /> <!-- Golden Protection Treasure Chest (Time-limited) -->
 		</capsuled_items>
 	</item>
 	<item id="97429" name="Silver Protection Treasure Chest (Time-limited)" type="EtcItem">
@@ -528,27 +528,27 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="96297" min="1" max="1" chance="0.005" /> <!-- Frost Lord's Weapon Pack -->
-			<item id="96650" min="1" max="1" chance="0.01" /> <!-- Armor of Protection Pack -->
+			<item id="96297" min="1" max="1" chance="0.005" /> <!-- Frost Lord's Weapon Pack - Sealed -->
+			<item id="96650" min="1" max="1" chance="0.01" /> <!-- Armor of Protection Pack - Sealed -->
 			<item id="49683" min="1" max="1" chance="0.07" /> <!-- Talisman of Baium -->
 			<item id="90992" min="1" max="1" chance="0.12" /> <!-- Antharas' Earring -->
 			<item id="96600" min="1" max="1" chance="0.15" /> <!-- Beleth' Ring -->
 			<item id="91550" min="1" max="1" chance="0.17" /> <!-- Frintezza's Necklace -->
 			<item id="49580" min="1" max="1" chance="0.2" /> <!-- Baium's Ring -->
 			<item id="94385" min="1" max="1" chance="0.5" /> <!-- Improved Scroll: Enchant Rare Accessories -->
-			<item id="96652" min="1" max="1" chance="0.9" /> <!-- Package: Antharas Doll Lv. 1 -->
-			<item id="94156" min="1" max="1" chance="1" /> <!-- Package: Baium Doll Lv. 1 -->
-			<item id="94513" min="1" max="1" chance="1" /> <!-- Package: Frintezza Doll Lv. 1 -->
-			<item id="94651" min="1" max="1" chance="2" /> <!-- Package: Zaken Doll Lv. 1 -->
-			<item id="94654" min="1" max="1" chance="3" /> <!-- Package: Core Doll Lv. 1 -->
-			<item id="94159" min="1" max="1" chance="3" /> <!-- Package: Queen Ant Doll Lv. 1 -->
-			<item id="94162" min="1" max="1" chance="3" /> <!-- Package: Orfen Doll Lv. 1 -->
-			<item id="97339" min="1" max="1" chance="4" /> <!-- Scroll of Blessing: Armor -->
-			<item id="94208" min="1" max="1" chance="2" /> <!-- Scroll of Blessing: Weapon -->
+			<item id="96652" min="1" max="1" chance="0.9" /> <!-- Package: Antharas Doll Lv. 1 - Sealed -->
+			<item id="94156" min="1" max="1" chance="1" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
+			<item id="94513" min="1" max="1" chance="1" /> <!-- Package: Frintezza Doll Lv. 1 - Sealed -->
+			<item id="94651" min="1" max="1" chance="2" /> <!-- Package: Zaken Doll Lv. 1 - Sealed -->
+			<item id="94654" min="1" max="1" chance="3" /> <!-- Package: Core Doll Lv. 1 - Sealed -->
+			<item id="94159" min="1" max="1" chance="3" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
+			<item id="94162" min="1" max="1" chance="3" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
+			<item id="97339" min="1" max="1" chance="4" /> <!-- Scroll of Blessing: Armor - Sealed -->
+			<item id="94208" min="1" max="1" chance="2" /> <!-- Scroll of Blessing: Weapon - Sealed -->
 			<item id="96623" min="1" max="1" chance="5" /> <!-- Dye Powder -->
-			<item id="95803" min="1" max="1" chance="5" /> <!-- Hardin's Soul Crystal Lv. 1 -->
+			<item id="95803" min="1" max="1" chance="5" /> <!-- Hardin's Soul Crystal Lv. 1 - Rare -->
 			<item id="96708" min="1" max="1" chance="5" /> <!-- Beryl Jewelry Box Lv. 1 -->
-			<item id="97266" min="1" max="1" chance="7" /> <!-- Enchant Kit: Piercing Mask -->
+			<item id="97266" min="1" max="1" chance="7" /> <!-- Enchant Kit: Piercing Mask - Sealed -->
 			<item id="92314" min="10" max="10" chance="10" /> <!-- Giran Seal -->
 			<item id="92314" min="5" max="5" chance="46.875" /> <!-- Giran Seal -->
 		</capsuled_items>
@@ -565,8 +565,8 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="96297" min="1" max="1" chance="0.001" /> <!-- Frost Lord's Weapon Pack -->
-			<item id="96650" min="1" max="1" chance="0.02" /> <!-- Armor of Protection Pack -->
+			<item id="96297" min="1" max="1" chance="0.001" /> <!-- Frost Lord's Weapon Pack - Sealed -->
+			<item id="96650" min="1" max="1" chance="0.02" /> <!-- Armor of Protection Pack - Sealed -->
 			<item id="49683" min="1" max="1" chance="0.05" /> <!-- Talisman of Baium -->
 			<item id="90992" min="1" max="1" chance="0.09" /> <!-- Antharas' Earring -->
 			<item id="96600" min="1" max="1" chance="0.1" /> <!-- Beleth' Ring -->
@@ -578,13 +578,13 @@
 			<item id="6662" min="1" max="1" chance="0.5" /> <!-- Ring of Core -->
 			<item id="94385" min="1" max="1" chance="1" /> <!-- Improved Scroll: Enchant Rare Accessories -->
 			<item id="94383" min="1" max="1" chance="4" /> <!-- Scroll: Enchant Rare Accessories -->
-			<item id="96652" min="1" max="1" chance="3" /> <!-- Package: Antharas Doll Lv. 1 -->
-			<item id="94156" min="1" max="1" chance="8" /> <!-- Package: Baium Doll Lv. 1 -->
-			<item id="94513" min="1" max="1" chance="10" /> <!-- Package: Frintezza Doll Lv. 1 -->
-			<item id="94651" min="1" max="1" chance="15" /> <!-- Package: Zaken Doll Lv. 1 -->
-			<item id="94654" min="1" max="1" chance="18" /> <!-- Package: Core Doll Lv. 1 -->
-			<item id="94159" min="1" max="1" chance="19.5695" /> <!-- Package: Queen Ant Doll Lv. 1 -->
-			<item id="94162" min="1" max="1" chance="19.5695" /> <!-- Package: Orfen Doll Lv. 1 -->
+			<item id="96652" min="1" max="1" chance="3" /> <!-- Package: Antharas Doll Lv. 1 - Sealed -->
+			<item id="94156" min="1" max="1" chance="8" /> <!-- Package: Baium Doll Lv. 1 - Sealed -->
+			<item id="94513" min="1" max="1" chance="10" /> <!-- Package: Frintezza Doll Lv. 1 - Sealed -->
+			<item id="94651" min="1" max="1" chance="15" /> <!-- Package: Zaken Doll Lv. 1 - Sealed -->
+			<item id="94654" min="1" max="1" chance="18" /> <!-- Package: Core Doll Lv. 1 - Sealed -->
+			<item id="94159" min="1" max="1" chance="19.5695" /> <!-- Package: Queen Ant Doll Lv. 1 - Sealed -->
+			<item id="94162" min="1" max="1" chance="19.5695" /> <!-- Package: Orfen Doll Lv. 1 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97431" name="Kit: Protection Treasure Chest (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -599,33 +599,55 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97428" min="100" max="100" chance="100" /> <!-- Protection Treasure Chest (Time-limited) -->
-			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 (Sealed) -->
+			<item id="97428" min="100" max="100" chance="100" /> <!-- Protection Treasure Chest (Time-limited) - Sealed -->
+			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97432" name="Scroll: Boost Pet's Attack" additionalName="Sealed" type="EtcItem">
 		<!-- Applies a buff to the pet when used. <Buff effect> Pet's P. Atk. +200 Pet's M. Atk. +200 Pet's Skill Power +2% Pet's satiety recovery +50% Duration: 20 min. Cooldown: 1 min. The effect disappears when a pet dies or is unsummoned. -->
 		<set name="icon" val="icon.pet_atk_scrl" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
-		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="49452" level="1" /> <!-- Scroll: Boost Pet's Attack -->
+		</skills>
 	</item>
 	<item id="97433" name="Scroll: Boost Pet's Defense" additionalName="Sealed" type="EtcItem">
 		<!-- Applies a buff to the pet when used. <Buff effect> Pet's P. Def. +400 Pet's M. Def. +400 Pet's HP +500 Pet's HP Recovery Potions' Effect +50% Duration: 20 min. Cooldown: 1 min. The effect disappears when a pet dies or is unsummoned. -->
 		<set name="icon" val="icon.pet_def_scrl" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
-		<set name="price" val="30000" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="SCROLL_OTHER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="for_npc" val="true" />
+		<cond addName="1" msgId="113">
+			<player flyMounted="false" />
+		</cond>
+		<skills>
+			<skill id="49453" level="1" /> <!-- Scroll: Boost Pet's Defense -->
+		</skills>
 	</item>
 	<item id="97434" name="Pet's Special HP Recovery Potion" additionalName="Sealed" type="EtcItem">
 		<!-- Momentarily recovers 240 HP of your pet. -->
@@ -667,7 +689,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97302" min="1" max="1" chance="100" /> <!-- Gorde's Flame Spear (Sealed) -->
+			<item id="97302" min="1" max="1" chance="100" /> <!-- Gorde's Flame Spear - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97437" name="Harnak Underground Labyrinth's Time Stone (Time-limited)" additionalName="Sealed" type="EtcItem">
@@ -827,8 +849,8 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97450" min="100" max="100" chance="100" /> <!-- Shining Seal Pack (Time-limited) -->
-			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 (Sealed) -->
+			<item id="97450" min="100" max="100" chance="100" /> <!-- Shining Seal Pack (Time-limited) - Sealed -->
+			<item id="91712" min="100" max="100" chance="100" /> <!-- Sayha's Storm Lv. 3 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97452" name="Heavenly Cloak" additionalName="Sealed" type="Armor">
@@ -1060,14 +1082,14 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="92038" min="1" max="1" chance="15" /> <!-- Amber Lv. 3 (Sealed) -->
-			<item id="92048" min="1" max="1" chance="15" /> <!-- Opal Lv. 3 (Sealed) -->
-			<item id="92058" min="1" max="1" chance="15" /> <!-- Coral Lv. 3 (Sealed) -->
-			<item id="92068" min="1" max="1" chance="10" /> <!-- Onyx Lv. 3 (Sealed) -->
-			<item id="92078" min="1" max="1" chance="10" /> <!-- Spinel Lv. 3 (Sealed) -->
-			<item id="92088" min="1" max="1" chance="10" /> <!-- Zircon Lv. 3 (Sealed) -->
-			<item id="92098" min="1" max="1" chance="15" /> <!-- Moonstone Lv. 3 (Sealed) -->
-			<item id="96702" min="1" max="1" chance="10" /> <!-- Beryl Lv. 3 (Sealed) -->
+			<item id="92038" min="1" max="1" chance="15" /> <!-- Amber Lv. 3 - Sealed -->
+			<item id="92048" min="1" max="1" chance="15" /> <!-- Opal Lv. 3 - Sealed -->
+			<item id="92058" min="1" max="1" chance="15" /> <!-- Coral Lv. 3 - Sealed -->
+			<item id="92068" min="1" max="1" chance="10" /> <!-- Onyx Lv. 3 - Sealed -->
+			<item id="92078" min="1" max="1" chance="10" /> <!-- Spinel Lv. 3 - Sealed -->
+			<item id="92088" min="1" max="1" chance="10" /> <!-- Zircon Lv. 3 - Sealed -->
+			<item id="92098" min="1" max="1" chance="15" /> <!-- Moonstone Lv. 3 - Sealed -->
+			<item id="96702" min="1" max="1" chance="10" /> <!-- Beryl Lv. 3 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97476" name="Battle Box Lv. 4" additionalName="Sealed" type="EtcItem">
@@ -1105,11 +1127,11 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="92403" min="1" max="1" chance="4" /> <!-- Talisman of Speed -->
-			<item id="93080" min="1" max="1" chance="7" /> <!-- Charging Stone of Regular Craft - 1 Charge -->
-			<item id="91983" min="1" max="1" chance="5" /> <!-- Primeval Isle's Time Stone -->
-			<item id="92402" min="1" max="1" chance="4" /> <!-- Scroll: Enchant Talisman of Speed -->
-			<item id="3031" min="50" max="50" chance="25" /> <!-- Spirit Ore -->
+			<item id="92403" min="1" max="1" chance="4" /> <!-- Talisman of Speed - Sealed -->
+			<item id="93080" min="1" max="1" chance="7" /> <!-- Charging Stone of Regular Craft - 1 Charge - Sealed -->
+			<item id="91983" min="1" max="1" chance="5" /> <!-- Primeval Isle's Time Stone - Sealed -->
+			<item id="92402" min="1" max="1" chance="4" /> <!-- Scroll: Enchant Talisman of Speed - Sealed -->
+			<item id="3031" min="50" max="50" chance="25" /> <!-- Spirit Ore - Sealed -->
 			<item id="91912" min="100" max="100" chance="55" /> <!-- HP Potion -->
 		</capsuled_items>
 	</item>
@@ -1128,27 +1150,26 @@
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
 			<item id="49756" min="1" max="1" chance="3" /> <!-- Cloth Piece -->
-			<item id="92403" min="1" max="1" chance="5" /> <!-- Talisman of Speed -->
-			<item id="93080" min="1" max="1" chance="10" /> <!-- Charging Stone of Regular Craft - 1 Charge -->
-			<item id="91983" min="1" max="1" chance="5" /> <!-- Primeval Isle's Time Stone -->
-			<item id="94210" min="1" max="1" chance="3" /> <!-- Augmenting Stone: Weapon -->
-			<item id="94212" min="1" max="1" chance="7" /> <!-- Augmenting Stone: Armor -->
-			<item id="92402" min="3" max="3" chance="5" /> <!-- Scroll: Enchant Talisman of Speed -->
-			<item id="3031" min="50" max="50" chance="20" /> <!-- Spirit Ore -->
+			<item id="92403" min="1" max="1" chance="5" /> <!-- Talisman of Speed - Sealed -->
+			<item id="93080" min="1" max="1" chance="10" /> <!-- Charging Stone of Regular Craft - 1 Charge - Sealed -->
+			<item id="91983" min="1" max="1" chance="5" /> <!-- Primeval Isle's Time Stone - Sealed -->
+			<item id="94210" min="1" max="1" chance="3" /> <!-- Augmenting Stone: Weapon - Sealed -->
+			<item id="94212" min="1" max="1" chance="7" /> <!-- Augmenting Stone: Armor - Sealed -->
+			<item id="92402" min="3" max="3" chance="5" /> <!-- Scroll: Enchant Talisman of Speed - Sealed -->
+			<item id="3031" min="50" max="50" chance="20" /> <!-- Spirit Ore - Sealed -->
 			<item id="91912" min="100" max="100" chance="42" /> <!-- HP Potion -->
 		</capsuled_items>
 	</item>
 	<item id="97479" name="Behemoth Doll Lv. 1" additionalName="Sealed" type="EtcItem">
 		<!-- <Behemoth Doll's Sorcery Lv. 1> Damage Decrease Ignore +100 Skill Critical Damage +3% Hold Resistance +5% Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_behemoth_doll" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50578" level="1" /> <!-- Behemoth Doll Lv. 1 -->
@@ -1157,13 +1178,12 @@
 	<item id="97480" name="Behemoth Doll Lv. 2" type="EtcItem">
 		<!-- <Behemoth Doll's Sorcery Lv. 2> Damage Decrease Ignore +200 Skill Critical Damage +5% Hold Resistance +10% Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_behemoth_doll" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50578" level="2" /> <!-- Behemoth Doll Lv. 2 -->
@@ -1172,13 +1192,12 @@
 	<item id="97481" name="Behemoth Doll Lv. 3" type="EtcItem">
 		<!-- <Behemoth Doll's Sorcery Lv. 3> Damage Decrease Ignore +300 Skill Critical Damage +10% Hold Resistance +20% Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_behemoth_doll" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50578" level="3" /> <!-- Behemoth Doll Lv. 3 -->
@@ -1187,13 +1206,12 @@
 	<item id="97482" name="Behemoth Doll Lv. 4" type="EtcItem">
 		<!-- <Behemoth Doll's Sorcery Lv. 4> Damage Decrease Ignore +400 Skill Critical Damage +15% Hold Resistance +20% Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_behemoth_doll_00" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50578" level="4" /> <!-- Behemoth Doll Lv. 4 -->
@@ -1202,13 +1220,12 @@
 	<item id="97483" name="Behemoth Doll Lv. 5" type="EtcItem">
 		<!-- <Behemoth Doll's Sorcery Lv. 5> Damage Decrease Ignore +500 Skill Critical Damage +20% Hold Resistance +20% Boosts stats when in inventory. -->
 		<set name="icon" val="icon.bm_behemoth_doll_01" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50578" level="5" /> <!-- Behemoth Doll Lv. 5 -->
@@ -1217,14 +1234,13 @@
 	<item id="97484" name="Glakias Doll Lv. 1" additionalName="Sealed" type="EtcItem">
 		<!-- <Glakias Doll's Sorcery Lv. 1> All weapon P. Atk. +5 All weapon M. Atk. +5 Soulshot damage +2% Spiritshot damage +2% Recovers 50 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_glacies_doll" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50579" level="1" /> <!-- Glakias Doll Lv. 1 -->
@@ -1233,13 +1249,12 @@
 	<item id="97485" name="Glakias Doll Lv. 2" type="EtcItem">
 		<!-- <Glakias Doll's Sorcery Lv. 2> All weapon P. Atk. +10 All weapon M. Atk. +10 Soulshot damage +5% Spiritshot damage +5% Recovers 100 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_glacies_doll" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50579" level="2" /> <!-- Glakias Doll Lv. 2 -->
@@ -1248,13 +1263,12 @@
 	<item id="97486" name="Glakias Doll Lv. 3" type="EtcItem">
 		<!-- <Glakias Doll's Sorcery Lv. 3> All weapon P. Atk. +15 All weapon M. Atk. +15 Soulshot damage +8% Spiritshot damage +8% Recovers 150 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_glacies_doll" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50579" level="3" /> <!-- Glakias Doll Lv. 3 -->
@@ -1263,13 +1277,12 @@
 	<item id="97487" name="Glakias Doll Lv. 4" type="EtcItem">
 		<!-- <Glakias Doll's Sorcery Lv. 4> All weapon P. Atk. +20 All weapon M. Atk. +20 Soulshot damage +10% Spiritshot damage +10% Recovers 200 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory. Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_glacies_doll_00" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50579" level="4" /> <!-- Glakias Doll Lv. 4 -->
@@ -1278,13 +1291,12 @@
 	<item id="97488" name="Glakias Doll Lv. 5" type="EtcItem">
 		<!-- <Glakias Doll's Sorcery Lv. 5> All weapon P. Atk. +35 All weapon M. Atk. +35 Soulshot damage +15% Spiritshot damage +15% Recovers 300 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) Boosts stats when in inventory.Can be upgraded through compounding. -->
 		<set name="icon" val="icon.bm_glacies_doll_01" />
-		<set name="default_action" val="NONE" />
 		<set name="immediate_effect" val="true" />
+		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="material" val="PAPER" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="50579" level="5" /> <!-- Glakias Doll Lv. 5 -->
@@ -1302,7 +1314,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97479" min="1" max="1" chance="100" /> <!-- Behemoth Doll Lv. 1 -->
+			<item id="97479" min="1" max="1" chance="100" /> <!-- Behemoth Doll Lv. 1 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97490" name="Package: Behemoth Doll Lv. 2" additionalName="Sealed" type="EtcItem">
@@ -1377,7 +1389,7 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
-			<item id="97484" min="1" max="1" chance="100" /> <!-- Glakias Doll Lv. 1 -->
+			<item id="97484" min="1" max="1" chance="100" /> <!-- Glakias Doll Lv. 1 - Sealed -->
 		</capsuled_items>
 	</item>
 	<item id="97495" name="Package: Glakias Doll Lv. 2" additionalName="Sealed" type="EtcItem">
@@ -1454,50 +1466,25 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
-			<item id="96297" min="1" max="1" chance="0.001" /> <!-- Frost Lord's Weapon Pack -->
-			<item id="96650" min="1" max="1" chance="0.003" /> <!-- Armor of Protection Pack -->
-			<item id="96300" min="1" max="1" chance="0.005" /> <!-- Spellbook: Dragon Slayer -->
-			<item id="96613" min="1" max="1" chance="0.005" /> <!-- Spellbook: Expanded Potential of Dyes -->
-			<item id="92401" min="1" max="1" chance="0.01" /> <!-- Spellbook: White Guardian -->
-			<item id="49683" min="1" max="1" chance="0.03" /> <!-- Talisman of Baium -->
-			<item id="97359" min="1" max="1" chance="0.05" /> <!-- Boss' Weapon Pack -->
-			<item id="90992" min="1" max="1" chance="0.05" /> <!-- Antharas' Earring -->
-			<item id="96600" min="1" max="1" chance="0.05" /> <!-- Beleth' Ring -->
-			<item id="91550" min="1" max="1" chance="0.07" /> <!-- Frintezza's Necklace -->
-			<item id="49580" min="1" max="1" chance="0.1" /> <!-- Baium's Ring -->
-			<item id="90763" min="1" max="1" chance="0.1" /> <!-- Zaken's Earring -->
-			<item id="6660" min="1" max="1" chance="0.1" /> <!-- Queen Ant's Ring -->
-			<item id="6661" min="1" max="1" chance="0.1" /> <!-- Orfen's Earring -->
-			<item id="6662" min="1" max="1" chance="0.1" /> <!-- Ring of Core -->
-			<item id="94385" min="1" max="1" chance="0.3" /> <!-- Improved Scroll: Enchant Rare Accessories -->
-			<item id="94383" min="1" max="1" chance="0.7" /> <!-- Scroll: Enchant Rare Accessories -->
-			<item id="93739" min="1" max="1" chance="0.5" /> <!-- Package: Giran Seal (1000 pcs.) -->
-			<item id="97494" min="1" max="1" chance="0.9" /> <!-- Package: Glakias Doll Lv. 1 -->
-			<item id="97489" min="1" max="1" chance="0.9" /> <!-- Package: Behemoth Doll Lv. 1 -->
-			<item id="94159" min="1" max="1" chance="0.9" /> <!-- Package: Queen Ant Doll Lv. 1 -->
-			<item id="94162" min="1" max="1" chance="0.9" /> <!-- Package: Orfen Doll Lv. 1 -->
-			<item id="96652" min="1" max="1" chance="0.9" /> <!-- Package: Antharas Doll Lv. 1 -->
-			<item id="94156" min="1" max="1" chance="0.9" /> <!-- Package: Baium Doll Lv. 1 -->
-			<item id="94513" min="1" max="1" chance="0.9" /> <!-- Package: Frintezza Doll Lv. 1 -->
-			<item id="94651" min="1" max="1" chance="0.9" /> <!-- Package: Zaken Doll Lv. 1 -->
-			<item id="94654" min="1" max="1" chance="0.9" /> <!-- Package: Core Doll Lv. 1 -->
-			<item id="93255" min="1" max="1" chance="1" /> <!-- Improved Scroll: Enchant A-grade Weapon -->
-			<item id="93256" min="1" max="1" chance="3" /> <!-- Improved Scroll: Enchant A-grade Armor -->
-			<item id="93257" min="1" max="1" chance="2" /> <!-- Cursed Scroll: Enchant A-grade Weapon -->
-			<item id="93258" min="1" max="1" chance="6" /> <!-- Cursed Scroll: Enchant A-grade Armor -->
-			<item id="94328" min="1" max="1" chance="4" /> <!-- Elixir Powder -->
-			<item id="96623" min="1" max="1" chance="4" /> <!-- Dye Powder -->
-			<item id="96901" min="1" max="1" chance="7" /> <!-- Aden's Soul Crystal Lv. 1 - Armor -->
-			<item id="95783" min="1" max="1" chance="4" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
-			<item id="95803" min="1" max="1" chance="2" /> <!-- Hardin's Soul Crystal Lv. 1 -->
-			<item id="91076" min="2" max="2" chance="3" /> <!-- Venir's Talisman Fragment -->
-			<item id="94168" min="1" max="1" chance="5" /> <!-- Enchant Kit: Circlet of Hero -->
-			<item id="94732" min="1" max="1" chance="5" /> <!-- Agathion Spirit Exchange Coupon -->
-			<item id="91690" min="30" max="30" chance="10" /> <!-- Special HP Recovery Potion -->
-			<item id="92314" min="10" max="10" chance="2.4065" /> <!-- Giran Seal -->
-			<item id="92314" min="5" max="5" chance="3.4065" /> <!-- Giran Seal -->
-			<item id="92314" min="3" max="3" chance="7.4065" /> <!-- Giran Seal -->
-			<item id="92314" min="2" max="2" chance="20.4065" /> <!-- Giran Seal -->
+			<item id="96297" min="1" max="1" chance="1.26" /> <!-- Frost Lord's Weapon Pack - Sealed -->
+			<item id="96650" min="1" max="1" chance="5.26" /> <!-- Armor of Protection Pack - Sealed -->
+			<item id="96300" min="1" max="1" chance="5.26" /> <!-- Spellbook: Dragon Slayer -->
+			<item id="96613" min="1" max="1" chance="5.26" /> <!-- Spellbook: Expanded Potential of Dyes -->
+			<item id="92401" min="1" max="1" chance="5.26" /> <!-- Spellbook: White Guardian -->
+			<item id="49683" min="1" max="1" chance="5.26" /> <!-- Talisman of Baium -->
+			<item id="98063" min="1" max="1" chance="1.26" /> <!-- Boss' Weapon Pack - Sealed -->
+			<item id="90992" min="1" max="1" chance="5.26" /> <!-- Antharas' Earring -->
+			<item id="96600" min="1" max="1" chance="5.26" /> <!-- Beleth' Ring -->
+			<item id="91550" min="1" max="1" chance="5.26" /> <!-- Frintezza's Necklace -->
+			<item id="49580" min="1" max="1" chance="5.26" /> <!-- Baium's Ring -->
+			<item id="90763" min="1" max="1" chance="5.26" /> <!-- Zaken's Earring -->
+			<item id="6660" min="1" max="1" chance="5.26" /> <!-- Queen Ant's Ring -->
+			<item id="6661" min="1" max="1" chance="5.26" /> <!-- Orfen's Earring -->
+			<item id="6662" min="1" max="1" chance="5.26" /> <!-- Ring of Core -->
+			<item id="94385" min="1" max="1" chance="5.26" /> <!-- Improved Scroll: Enchant Rare Accessories -->
+			<item id="94383" min="1" max="1" chance="5.26" /> <!-- Scroll: Enchant Rare Accessories -->
+			<item id="93739" min="1" max="1" chance="1.26" /> <!-- Package: Giran Seal (1000 pcs.) - Sealed -->
+			<item id="97494" min="1" max="1" chance="5.26" /> <!-- Package: Glakias Doll Lv. 1 - Sealed -->
 		</capsuled_items>
 	</item>
 </list>

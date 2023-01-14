@@ -3114,29 +3114,79 @@
 	</skill>
 	<skill id="50563" toLevel="1" name="Growth Support Rune">
 		<!-- Soulshot damage $s1 Spiritshot damage $s1 Atk. Spd. $s2 Casting Spd. $s2 Speed $s3 Acquired XP/ SP $s4 Magic Lamp charging rate $s5 -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.bm_freya_bloody_rune</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="ShotsBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>50</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="Speed">
+				<amount>5</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ExpModify">
+				<amount>50</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>50</amount>
+			</effect>
+			<effect name="ModifyMagicLampPoints">
+				<amount>10</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="50564" toLevel="11" name="Head Accessory: Enchant Effect +1">
 		<!-- M. Def. +14 -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="MagicalDefence">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">14</value>
+					<value level="3">16</value>
+					<value level="4">18</value>
+					<value level="5">20</value>
+					<value level="6">22</value>
+					<value level="7">24</value>
+					<value level="8">26</value>
+					<value level="9">28</value>
+					<value level="10">30</value>
+					<value level="10">32</value>
+				</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
 	</skill>
-	<skill id="50565" toLevel="8" name="Agathion Bracelet Lv. 1">
+	<skill id="50565" toLevel="10" name="Agathion Bracelet Lv. 1">
 		<!-- Agathion slots $s1 -->
 		<icon>
 			<value level="1">icon.agathion_magmeld_teleport</value>
 			<value level="2">icon.bracelet_tersi_agathion</value>
 			<value level="3">icon.high_agathion_bracelet_i00</value>
 			<value level="4">icon.high_agathion_bracelet_i01</value>
-			<value fromLevel="5" toLevel="8">icon.pi_high_agathion_bracelet_i00</value>
+			<value level="5">icon.pi_high_agathion_bracelet_i00</value>
+			<value level="6">icon.pi_high_agathion_bracelet_i01</value>
+			<value level="7">icon.pi_high_agathion_bracelet_i02</value>
+			<value level="8">icon.pi_high_agathion_bracelet_i03</value>
+			<value level="9">icon.pi_high_agathion_bracelet_i04</value>
+			<value level="10">icon.pi_high_agathion_bracelet_i05</value>
 		</icon>
 		<operateType>P</operateType>
 		<effects>
 			<effect name="AgathionSlot">
 				<amount>
 					<value fromLevel="1" toLevel="3">4</value>
-					<value fromLevel="4" toLevel="8">5</value>
+					<value fromLevel="4" toLevel="10">5</value>
 				</amount>
 			</effect>
 			<effect name="DefenceTrait">
@@ -3149,6 +3199,8 @@
 					<value level="6">10</value>
 					<value level="7">12</value>
 					<value level="8">15</value>
+					<value level="9">15</value>
+					<value level="10">15</value>
 				</PARALYZE>
 				<SHOCK>
 					<value level="1">0</value>
@@ -3159,6 +3211,8 @@
 					<value level="6">10</value>
 					<value level="7">12</value>
 					<value level="8">15</value>
+					<value level="9">15</value>
+					<value level="10">15</value>
 				</SHOCK>
 				<SLEEP>
 					<value level="1">0</value>
@@ -3169,6 +3223,8 @@
 					<value level="6">10</value>
 					<value level="7">12</value>
 					<value level="8">15</value>
+					<value level="9">15</value>
+					<value level="10">15</value>
 				</SLEEP>
 				<SILENCE>
 					<value level="1">0</value>
@@ -3179,6 +3235,8 @@
 					<value level="6">10</value>
 					<value level="7">12</value>
 					<value level="8">15</value>
+					<value level="9">15</value>
+					<value level="10">15</value>
 				</SILENCE>
 				<FEAR>
 					<value level="1">0</value>
@@ -3189,36 +3247,50 @@
 					<value level="6">10</value>
 					<value level="7">12</value>
 					<value level="8">15</value>
+					<value level="9">15</value>
+					<value level="10">15</value>
 				</FEAR>
 				<HOLD>
 					<value fromLevel="1" toLevel="6">0</value>
 					<value level="7">5</value>
 					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
 				</HOLD>
 				<IMPRISON>
 					<value fromLevel="1" toLevel="6">0</value>
 					<value level="7">5</value>
 					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
 				</IMPRISON>
 				<SLEEP>
 					<value fromLevel="1" toLevel="6">0</value>
 					<value level="7">5</value>
 					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
 				</SLEEP>
 				<PULL>
 					<value fromLevel="1" toLevel="6">0</value>
 					<value level="7">5</value>
 					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
 				</PULL>
 				<KNOCKBACK>
 					<value fromLevel="1" toLevel="6">0</value>
 					<value level="7">5</value>
 					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
 				</KNOCKBACK>
 				<SUPPRESSION>
 					<value fromLevel="1" toLevel="6">0</value>
 					<value level="7">5</value>
 					<value level="8">10</value>
+					<value level="9">10</value>
+					<value level="10">10</value>
 				</SUPPRESSION>
 			</effect>
 			<effect name="StatUp">
@@ -3226,7 +3298,9 @@
 					<value fromLevel="1" toLevel="3">0</value>
 					<value fromLevel="4" toLevel="6">1</value>
 					<value level="7">2</value>
-					<value level="8">3</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
 				</amount>
 				<stat>STR</stat>
 			</effect>
@@ -3235,7 +3309,9 @@
 					<value fromLevel="1" toLevel="3">0</value>
 					<value fromLevel="4" toLevel="6">1</value>
 					<value level="7">2</value>
-					<value level="8">3</value>
+					<value level="8">2</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
 				</amount>
 				<stat>INT</stat>
 			</effect>
@@ -3245,6 +3321,8 @@
 					<value level="5">1</value>
 					<value fromLevel="6" toLevel="7">2</value>
 					<value level="8">3</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
 				</amount>
 				<stat>DEX</stat>
 			</effect>
@@ -3254,6 +3332,8 @@
 					<value level="5">1</value>
 					<value fromLevel="6" toLevel="7">2</value>
 					<value level="8">3</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
 				</amount>
 				<stat>WIT</stat>
 			</effect>
@@ -3261,8 +3341,10 @@
 				<amount>
 					<value fromLevel="1" toLevel="3">0</value>
 					<value fromLevel="4" toLevel="5">1</value>
-					<value level="6">2</value>
-					<value fromLevel="7" toLevel="8">3</value>
+					<value fromLevel="6" toLevel="7">2</value>
+					<value level="8">3</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
 				</amount>
 				<stat>CON</stat>
 			</effect>
@@ -3270,8 +3352,10 @@
 				<amount>
 					<value fromLevel="1" toLevel="3">0</value>
 					<value fromLevel="4" toLevel="5">1</value>
-					<value level="6">2</value>
-					<value fromLevel="7" toLevel="8">3</value>
+					<value fromLevel="6" toLevel="7">2</value>
+					<value level="8">3</value>
+					<value level="9">3</value>
+					<value level="10">4</value>
 				</amount>
 				<stat>MEN</stat>
 			</effect>
@@ -3290,8 +3374,30 @@
 	</skill>
 	<skill id="50567" toLevel="1" name="Orc's Ring">
 		<!-- P. Atk. $s1 M. Atk. $s1 Atk. Spd. $s1 Casting Spd. $s1 Soulshot damage $s2 Spiritshot damage $s2 -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.accessary_cerberuss_ring_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="PAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="ShotsBonus">
+				<amount>10</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="MagicalAttackSpeed">
+				<amount>100</amount>
+				<mode>DIFF</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="50568" toLevel="11" name="Piercing Mask">
 		<!-- Max HP $s1 Max MP $s1 P. Atk. $s2 M. Atk. $s2 -->
@@ -3407,30 +3513,270 @@
 	</skill>
 	<skill id="50569" toLevel="1" name="Gorde's Flame Spear">
 		<!-- A weapon imbued with Gorde's soul power. Makes an additional strike. Gorde's Hellfire: makes a fire attack according to M. Atk. -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.weapon_r110_spear_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<minDamage>1</minDamage>
+				<chance>1</chance>
+				<targetType>ENEMY</targetType>
+				<isCritical>false</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>50571</skillId> <!-- Gorde's Hellfire -->
+				<skillLevel>1</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<minDamage>1</minDamage>
+				<chance>1</chance>
+				<targetType>ENEMY</targetType>
+				<isCritical>true</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>50571</skillId> <!-- Gorde's Hellfire -->
+				<skillLevel>1</skillLevel>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="50570" toLevel="10" name="+1 Gorde's Flame Spear">
 		<!-- A weapon imbued with Gorde's soul power. Makes an additional strike. Gorde's Hellfire: makes a fire attack according to M. Atk. -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.weapon_r110_spear_i00</icon>
+		<operateType>P</operateType>
+		<effects>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<minDamage>1</minDamage>
+				<chance>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">1</value>
+					<value level="4">1</value>
+					<value level="5">2</value>
+					<value level="6">4</value>
+					<value level="7">6</value>
+					<value level="8">8</value>
+					<value level="9">10</value>
+					<value level="10">12</value>
+				</chance>
+				<targetType>ENEMY</targetType>
+				<isCritical>false</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>50571</skillId> <!-- Gorde's Hellfire -->
+				<skillLevel>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+					<value level="5">6</value>
+					<value level="6">7</value>
+					<value level="7">8</value>
+					<value level="8">9</value>
+					<value level="9">10</value>
+					<value level="10">11</value>
+				</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<minDamage>1</minDamage>
+				<chance>
+					<value level="1">1</value>
+					<value level="2">1</value>
+					<value level="3">1</value>
+					<value level="4">1</value>
+					<value level="5">2</value>
+					<value level="6">4</value>
+					<value level="7">6</value>
+					<value level="8">8</value>
+					<value level="9">10</value>
+					<value level="10">12</value>
+				</chance>
+				<targetType>ENEMY</targetType>
+				<isCritical>true</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>50571</skillId> <!-- Gorde's Hellfire -->
+				<skillLevel>
+					<value level="1">2</value>
+					<value level="2">3</value>
+					<value level="3">4</value>
+					<value level="4">5</value>
+					<value level="5">6</value>
+					<value level="6">7</value>
+					<value level="7">8</value>
+					<value level="8">9</value>
+					<value level="9">10</value>
+					<value level="10">11</value>
+				</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<minDamage>1</minDamage>
+				<chance>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">1</value>
+					<value level="6">1</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">2</value>
+					<value level="10">3</value>
+				</chance>
+				<targetType>ENEMY</targetType>
+				<isCritical>false</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>50572</skillId> <!-- Gorde's Enhanced Hellfire -->
+				<skillLevel>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+			</effect>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>Creature</attackerType>
+				<minDamage>1</minDamage>
+				<chance>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">1</value>
+					<value level="6">1</value>
+					<value level="7">1</value>
+					<value level="8">2</value>
+					<value level="9">2</value>
+					<value level="10">3</value>
+				</chance>
+				<targetType>ENEMY</targetType>
+				<isCritical>true</isCritical>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>50572</skillId> <!-- Gorde's Enhanced Hellfire -->
+				<skillLevel>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">5</value>
+					<value level="6">6</value>
+					<value level="7">7</value>
+					<value level="8">8</value>
+					<value level="9">9</value>
+					<value level="10">10</value>
+				</skillLevel>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value fromLevel="1" toLevel="4">0</value>
+					<value level="5">1</value>
+					<value level="6">2</value>
+					<value level="7">3</value>
+					<value level="8">4</value>
+					<value level="9">5</value>
+					<value level="10">6</value>
+				</amount>
+				<stat>DEX</stat>
+			</effect>
+			<effect name="StatUp">
+				<amount>
+					<value fromLevel="1" toLevel="4">0</value>
+					<value level="5">1</value>
+					<value level="6">2</value>
+					<value level="7">3</value>
+					<value level="8">4</value>
+					<value level="9">5</value>
+					<value level="10">6</value>
+				</amount>
+				<stat>CON</stat>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="50571" toLevel="22" name="Gorde's Hellfire">
 		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
-		<icon>icon.skill0000</icon>
+		<icon>icon.weapon_r110_spear_i00</icon>
 		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<castRange>900</castRange>
+		<effectPoint>-300</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<basicProperty>MAGIC</basicProperty>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">103</value>
+					<value level="2">105</value>
+					<value level="3">107</value>
+					<value level="4">109</value>
+					<value level="5">112</value>
+					<value level="6">116</value>
+					<value level="7">120</value>
+					<value level="8">124</value>
+					<value level="9">128</value>
+					<value level="10">132</value>
+					<value level="11">136</value>
+					<value level="12">61</value>
+					<value level="13">63</value>
+					<value level="14">64</value>
+					<value level="15">65</value>
+					<value level="16">67</value>
+					<value level="17">69</value>
+					<value level="18">72</value>
+					<value level="19">74</value>
+					<value level="20">76</value>
+					<value level="21">79</value>
+					<value level="22">81</value>
+				</power>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="50572" toLevel="20" name="Gorde's Enhanced Hellfire">
 		<!-- <<font color="FFBB00">Additional attack</font>> Inflicts magic damage on the enemy with $s1 power. -->
-		<icon>icon.skill0000</icon>
+		<icon>icon.weapon_r110_spear_i00</icon>
 		<operateType>A1</operateType>
+		<isMagic>1</isMagic>
+		<castRange>900</castRange>
+		<effectPoint>-300</effectPoint>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<basicProperty>MAGIC</basicProperty>
+		<effects>
+			<effect name="MagicalAttack">
+				<power>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">0</value>
+					<value level="5">174</value>
+					<value level="6">180</value>
+					<value level="7">186</value>
+					<value level="8">192</value>
+					<value level="9">198</value>
+					<value level="10">204</value>
+					<value level="11">0</value>
+					<value level="12">0</value>
+					<value level="13">0</value>
+					<value level="14">0</value>
+					<value level="15">104</value>
+					<value level="16">108</value>
+					<value level="17">111</value>
+					<value level="18">115</value>
+					<value level="19">118</value>
+					<value level="20">122</value>
+				</power>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="50573" toLevel="10" name="Snowman Doll">
 		<!-- Acquired XP/ SP $s1 Sayha's Grace Consumption $s2 -->
 		<icon>icon.weapon_snowman_stick_i00</icon>
 		<operateType>P</operateType>
-		<magicCriticalRate>5</magicCriticalRate>
-		<magicLevel>1</magicLevel>
 		<effects>
 			<effect name="ExpModify">
 				<amount>
@@ -3522,30 +3868,36 @@
 	</skill>
 	<skill id="50575" toLevel="5" name="Pet Pendant">
 		<!-- A pendant for your pet. P. Def. $s1 M. Def. $s1 P. Atk. s2 M. Atk. $s2 Received damage $s3 Acquired XP $s4 -->
-		<icon>icon.skill0000</icon>
+		<icon>BranchSys.Icon.br_rudolf_necklace_i00</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50576" toLevel="5" name="Einhasad's Pet Pendant">
-		<icon>icon.skill0000</icon>
+		<icon>BranchIcon.Icon.bm_pendant_pve_white</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50577" toLevel="4" name="Dragon Pet Pendant">
-		<icon>icon.skill0000</icon>
+		<icon>icon.bm_pendant_dragon_i00</icon>
 		<operateType>A1</operateType>
 	</skill>
 	<skill id="50578" toLevel="5" name="Behemoth Doll's Sorcery">
 		<!-- A doll imbued with Behemoth' power. <Effect> Damage Decrease Ignore $s1 Skill Critical Damage $s2 Hold Resistance $s3 -->
-		<icon>icon.skill0000</icon>
+		<icon>
+			<value fromLevel="1" toLevel="3">icon.bm_behemoth_doll</value>
+			<value level="4">icon.bm_behemoth_doll_00</value>
+			<value level="5">icon.bm_behemoth_doll_01</value>
+		</icon>
 		<operateType>P</operateType>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
-			<effect name="DefenceTrait">
-				<ROOT_PHYSICALLY>
-					<value level="1">10</value>
-					<value level="2">20</value>
-					<value level="3">30</value>
-					<value level="4">35</value>
-					<value level="5">35</value>
-				</ROOT_PHYSICALLY>
+			<effect name="AbsorbDamage">
+				<amount>
+					<value level="1">100</value>
+					<value level="2">200</value>
+					<value level="3">300</value>
+					<value level="4">400</value>
+					<value level="5">500</value>
+				</amount>
+				<mode>DIFF</mode>
 			</effect>
 			<effect name="MagicCriticalDamage">
 				<amount>
@@ -3567,31 +3919,28 @@
 				</amount>
 				<mode>PER</mode>
 			</effect>
+			<effect name="DefenceTrait">
+				<HOLD>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">20</value>
+					<value level="4">20</value>
+					<value level="5">20</value>
+				</HOLD>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="50579" toLevel="5" name="Glakias Doll's Sorcery">
 		<!-- A doll imbued with Glakias' power. <Effect> All weapon P. Atk $s1 All weapon M. Atk. $s1 Soulshot damage $s2 Spiritshot damage $s2 Recovers $s3 MP after basic attacks and attack skills. (Probability: 30%/ Trigger cooldown: 30 sec.) -->
-		<icon>icon.skill0000</icon>
+		<icon>
+			<value fromLevel="1" toLevel="3">icon.bm_glacies_doll</value>
+			<value level="4">icon.bm_glacies_doll_00</value>
+			<value level="5">icon.bm_glacies_doll_01</value>
+		</icon>
 		<operateType>P</operateType>
+		<stayAfterDeath>true</stayAfterDeath>
 		<effects>
-			<effect name="PhysicalAttackWeaponBonus">
-				<weaponType>
-					<item>SWORD</item>
-					<item>BLUNT</item>
-					<item>DAGGER</item>
-					<item>POLE</item>
-					<item>DUALFIST</item>
-					<item>BOW</item>
-					<item>DUAL</item>
-					<item>FIST</item>
-					<item>RAPIER</item>
-					<item>CROSSBOW</item>
-					<item>ANCIENTSWORD</item>
-					<item>DUALDAGGER</item>
-					<item>TWOHANDCROSSBOW</item>
-					<item>DUALBLUNT</item>
-					<item>PISTOLS</item>
-				</weaponType>
+			<effect name="WeaponBonusPAtk">
 				<amount>
 					<value level="1">5</value>
 					<value level="2">10</value>
@@ -3599,7 +3948,17 @@
 					<value level="4">20</value>
 					<value level="5">35</value>
 				</amount>
-				<mode>PER</mode>
+				<mode>DIFF</mode>
+			</effect>
+			<effect name="WeaponBonusMAtk">
+				<amount>
+					<value level="1">5</value>
+					<value level="2">10</value>
+					<value level="3">15</value>
+					<value level="4">20</value>
+					<value level="5">35</value>
+				</amount>
+				<mode>DIFF</mode>
 			</effect>
 			<effect name="ShotsBonus">
 				<amount>
@@ -3611,12 +3970,12 @@
 				</amount>
 				<mode>PER</mode>
 			</effect>
-			<effect name="TriggerSkillByAttack" fromLevel="1" toLevel="5">
+			<effect name="TriggerSkillByAttack">
 				<attackerType>Creature</attackerType>
 				<minDamage>1</minDamage>
 				<chance>30</chance>
 				<targetType>SELF</targetType>
-				<skillId>50580</skillId>
+				<skillId>50580</skillId> <!-- Glakias Doll's Sorcery - MP Recovery -->
 				<skillLevel>
 					<value level="1">1</value>
 					<value level="2">2</value>
@@ -3625,22 +3984,44 @@
 					<value level="5">5</value>
 				</skillLevel>
 			</effect>
+			<effect name="TriggerSkillByMagicType">
+				<magicTypes>0;1</magicTypes>
+				<skillId>50580</skillId> <!-- Glakias Doll's Sorcery - MP Recovery -->
+				<skillLevel>
+					<value level="1">1</value>
+					<value level="2">2</value>
+					<value level="3">3</value>
+					<value level="4">4</value>
+					<value level="5">5</value>
+				</skillLevel>
+				<chance>30</chance>
+				<targetType>SELF</targetType>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="50580" toLevel="5" name="Glakias Doll's Sorcery - MP Recovery">
 		<!-- Recovers $s1 MP. -->
-		<icon>icon.skill0000</icon>
+		<icon>
+			<value fromLevel="1" toLevel="3">icon.bm_glacies_doll</value>
+			<value level="4">icon.bm_glacies_doll_00</value>
+			<value level="5">icon.bm_glacies_doll_01</value>
+		</icon>
+		<isTriggeredSkill>true</isTriggeredSkill>
 		<operateType>A1</operateType>
-		<reuseDelay>300000</reuseDelay>
+		<reuseDelay>30000</reuseDelay>
+		<magicCriticalRate>-5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="ManaHeal">
-				<power>
+			<effect name="Mp">
+				<amount>
 					<value level="1">50</value>
-					<value level="2">100</value>
-					<value level="3">150</value>
-					<value level="4">200</value>
+					<value level="2">150</value>
+					<value level="3">200</value>
+					<value level="4">250</value>
 					<value level="5">300</value>
-				</power>
+				</amount>
+				<mode>DIFF</mode>
 			</effect>
 		</effects>
 	</skill>
