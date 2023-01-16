@@ -44,7 +44,6 @@ import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.olympiad.Olympiad;
-import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.FloodProtectors;
@@ -456,6 +455,7 @@ public class GameClient extends NetClient
 		}
 		
 		player = Player.load(objectId);
+		OfflineTraderTable.getInstance().removeStoreOffliner(player);
 		return player;
 	}
 	
@@ -489,6 +489,7 @@ public class GameClient extends NetClient
 			{
 				// we are going to manually save the char below thus we can force the cancel
 				
+				boolean offlineshop = false;
 				final Player player = _player;
 				if (player != null) // this should only happen on connection loss
 				{
@@ -510,19 +511,30 @@ public class GameClient extends NetClient
 					
 					player.setClient(null);
 					
-					if ((player.isInStoreMode() && Config.OFFLINE_TRADE_ENABLE) //
-						|| (player.isCrafting() && Config.OFFLINE_CRAFT_ENABLE))
+					// Only save trader offline if not realtime function is enable
+					if (Config.STORE_OFFLINE_TRADE_IN_REALTIME)
 					{
-						if (!Config.OFFLINE_MODE_IN_PEACE_ZONE || (Config.OFFLINE_MODE_IN_PEACE_ZONE && player.isInsideZone(ZoneId.PEACE)))
-						{
-							return;
-						}
+						// Try execute offline trade
+						offlineshop = OfflineTraderTable.getInstance().storeOffliner(player);
 					}
 					
-					// prevent closing again
-					player.deleteMe();
-					player.store(true);
-					player.setClient(null);
+					if (!offlineshop)
+					{
+						// prevent closing again
+						player.deleteMe();
+						player.store(true);
+					}
+					else
+					{
+						// store operation
+						try
+						{
+							player.store();
+						}
+						catch (Exception e2)
+						{
+						}
+					}
 				}
 				
 				setPlayer(null);
@@ -548,6 +560,7 @@ public class GameClient extends NetClient
 			{
 				// we are going to manually save the char bellow thus we can force the cancel
 				
+				boolean offlineshop = false;
 				final Player player = _player;
 				if (player != null) // this should only happen on connection loss
 				{
@@ -567,50 +580,28 @@ public class GameClient extends NetClient
 						player.decreaseBoxes();
 					}
 					
-					if (!player.isKicked() //
-						&& !Olympiad.getInstance().isRegistered(player) //
-						&& !player.isInOlympiadMode() //
-						&& ((player.isInStoreMode() && Config.OFFLINE_TRADE_ENABLE) //
-							|| (player.isCrafting() && Config.OFFLINE_CRAFT_ENABLE)))
+					// Only save trader offline if not realtime function is enable
+					if (Config.STORE_OFFLINE_TRADE_IN_REALTIME)
 					{
-						if (!Config.OFFLINE_MODE_IN_PEACE_ZONE || (Config.OFFLINE_MODE_IN_PEACE_ZONE && player.isInsideZone(ZoneId.PEACE)))
+						// Try execute offline trade
+						offlineshop = OfflineTraderTable.getInstance().storeOffliner(player);
+					}
+					
+					if (!offlineshop)
+					{
+						// notify the world about our disconnect
+						player.deleteMe();
+					}
+					else
+					{
+						// store operation
+						try
 						{
-							player.setOnlineStatus(false);
-							player.leaveParty();
 							player.store();
-							
-							if (Config.OFFLINE_MODE_SET_INVULNERABLE)
-							{
-								player.setInvul(true);
-							}
-							if (Config.OFFLINE_SET_NAME_COLOR)
-							{
-								player._originalNameColorOffline = player.getAppearance().getNameColor();
-								player.getAppearance().setNameColor(Config.OFFLINE_NAME_COLOR);
-								player.broadcastUserInfo();
-							}
-							
-							if (player.getOfflineStartTime() == 0)
-							{
-								player.setOfflineStartTime(System.currentTimeMillis());
-							}
-							
-							OfflineTraderTable.getInstance().storeOffliner(player);
-							World.OFFLINE_TRADE_COUNT++;
-							return;
 						}
-					}
-					
-					// notify the world about our disconnect
-					player.deleteMe();
-					
-					// store operation
-					try
-					{
-						player.store();
-					}
-					catch (Exception e2)
-					{
+						catch (Exception e2)
+						{
+						}
 					}
 				}
 				

@@ -379,7 +379,7 @@ public class Shutdown extends Thread
 		
 		try
 		{
-			if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS)
+			if ((Config.OFFLINE_TRADE_ENABLE || Config.OFFLINE_CRAFT_ENABLE) && Config.RESTORE_OFFLINERS && !Config.STORE_OFFLINE_TRADE_IN_REALTIME)
 			{
 				OfflineTraderTable.getInstance().storeOffliners();
 			}

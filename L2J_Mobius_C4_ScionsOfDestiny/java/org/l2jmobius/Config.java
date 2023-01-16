@@ -568,6 +568,7 @@ public class Config
 	public static int CUSTOM_STARTING_LOC_Z;
 	
 	public static boolean OFFLINE_TRADE_ENABLE;
+	public static boolean STORE_OFFLINE_TRADE_IN_REALTIME;
 	public static boolean OFFLINE_CRAFT_ENABLE;
 	public static boolean OFFLINE_SET_NAME_COLOR;
 	public static int OFFLINE_NAME_COLOR;
@@ -1819,6 +1820,7 @@ public class Config
 	{
 		final PropertiesParser offlineConfig = new PropertiesParser(OFFLINE_CONFIG_FILE);
 		OFFLINE_TRADE_ENABLE = offlineConfig.getBoolean("OfflineTradeEnable", false);
+		STORE_OFFLINE_TRADE_IN_REALTIME = offlineConfig.getBoolean("StoreOfflineTradeInRealtime", true);
 		OFFLINE_CRAFT_ENABLE = offlineConfig.getBoolean("OfflineCraftEnable", false);
 		OFFLINE_SET_NAME_COLOR = offlineConfig.getBoolean("OfflineNameColorEnable", false);
 		OFFLINE_NAME_COLOR = Integer.decode("0x" + offlineConfig.getString("OfflineNameColor", "ff00ff"));

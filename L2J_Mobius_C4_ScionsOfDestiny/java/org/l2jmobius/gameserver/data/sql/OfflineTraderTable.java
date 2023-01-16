@@ -33,6 +33,8 @@ import org.l2jmobius.gameserver.model.TradeList.TradeItem;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.olympiad.Olympiad;
+import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
 
 public class OfflineTraderTable
@@ -287,115 +289,178 @@ public class OfflineTraderTable
 		}
 	}
 	
-	public void storeOffliner(Player trader)
+	public boolean storeOffliner(Player trader)
 	{
-		if ((trader.getPrivateStoreType() == Player.STORE_PRIVATE_NONE) || (!trader.isInOfflineMode()))
+		if (trader.getPrivateStoreType() == Player.STORE_PRIVATE_NONE)
 		{
-			return;
+			return false;
 		}
 		
-		try (Connection con = DatabaseFactory.getConnection();
-			PreparedStatement stm1 = con.prepareStatement(CLEAR_OFFLINE_TABLE_ITEMS_PLAYER);
-			PreparedStatement stm2 = con.prepareStatement(CLEAR_OFFLINE_TABLE_PLAYER);
-			PreparedStatement stm3 = con.prepareStatement(SAVE_ITEMS);
-			PreparedStatement stm4 = con.prepareStatement(SAVE_OFFLINE_STATUS))
+		if (!trader.isKicked() //
+			&& !Olympiad.getInstance().isRegistered(trader) //
+			&& !trader.isInOlympiadMode() //
+			&& ((trader.isInStoreMode() && Config.OFFLINE_TRADE_ENABLE) //
+				|| (trader.isCrafting() && Config.OFFLINE_CRAFT_ENABLE)))
 		{
-			stm1.setInt(1, trader.getObjectId());
-			stm1.execute();
-			stm2.setInt(1, trader.getObjectId());
-			stm2.execute();
-			con.setAutoCommit(false); // avoid halfway done
-			boolean save = true;
-			try
+			if (!Config.OFFLINE_MODE_IN_PEACE_ZONE || (Config.OFFLINE_MODE_IN_PEACE_ZONE && trader.isInsideZone(ZoneId.PEACE)))
 			{
-				String title = null;
-				switch (trader.getPrivateStoreType())
+				try (Connection con = DatabaseFactory.getConnection();
+					PreparedStatement stm1 = con.prepareStatement(CLEAR_OFFLINE_TABLE_ITEMS_PLAYER);
+					PreparedStatement stm2 = con.prepareStatement(CLEAR_OFFLINE_TABLE_PLAYER);
+					PreparedStatement stm3 = con.prepareStatement(SAVE_ITEMS);
+					PreparedStatement stm4 = con.prepareStatement(SAVE_OFFLINE_STATUS))
 				{
-					case Player.STORE_PRIVATE_BUY:
+					trader.setOnlineStatus(false);
+					trader.leaveParty();
+					trader.store();
+					
+					if (Config.OFFLINE_MODE_SET_INVULNERABLE)
 					{
-						if (!Config.OFFLINE_TRADE_ENABLE)
-						{
-							break;
-						}
-						title = trader.getBuyList().getTitle();
-						for (TradeItem i : trader.getBuyList().getItems())
-						{
-							stm3.setInt(1, trader.getObjectId());
-							stm3.setInt(2, i.getItem().getItemId());
-							stm3.setLong(3, i.getCount());
-							stm3.setLong(4, i.getPrice());
-							stm3.setLong(5, i.getEnchant());
-							stm3.executeUpdate();
-							stm3.clearParameters();
-						}
-						break;
+						trader.setInvul(true);
 					}
-					case Player.STORE_PRIVATE_SELL:
-					case Player.STORE_PRIVATE_PACKAGE_SELL:
+					
+					if (Config.OFFLINE_SET_NAME_COLOR)
 					{
-						if (!Config.OFFLINE_TRADE_ENABLE)
-						{
-							break;
-						}
-						title = trader.getSellList().getTitle();
-						trader.getSellList().updateItems();
-						for (TradeItem i : trader.getSellList().getItems())
-						{
-							stm3.setInt(1, trader.getObjectId());
-							stm3.setInt(2, i.getObjectId());
-							stm3.setLong(3, i.getCount());
-							stm3.setLong(4, i.getPrice());
-							stm3.setLong(5, i.getEnchant());
-							stm3.executeUpdate();
-							stm3.clearParameters();
-						}
-						break;
+						trader._originalNameColorOffline = trader.getAppearance().getNameColor();
+						trader.getAppearance().setNameColor(Config.OFFLINE_NAME_COLOR);
+						trader.broadcastUserInfo();
 					}
-					case Player.STORE_PRIVATE_MANUFACTURE:
+					
+					stm1.setInt(1, trader.getObjectId());
+					stm1.execute();
+					stm2.setInt(1, trader.getObjectId());
+					stm2.execute();
+					con.setAutoCommit(false); // avoid halfway done
+					
+					boolean save = true;
+					try
 					{
-						if (!Config.OFFLINE_CRAFT_ENABLE)
+						String title = null;
+						switch (trader.getPrivateStoreType())
 						{
-							break;
+							case Player.STORE_PRIVATE_BUY:
+							{
+								if (!Config.OFFLINE_TRADE_ENABLE || (trader.getBuyList().getItems().size() < 1))
+								{
+									save = false;
+								}
+								title = trader.getBuyList().getTitle();
+								for (TradeItem i : trader.getBuyList().getItems())
+								{
+									stm3.setInt(1, trader.getObjectId());
+									stm3.setInt(2, i.getItem().getItemId());
+									stm3.setLong(3, i.getCount());
+									stm3.setLong(4, i.getPrice());
+									stm3.setLong(5, i.getEnchant());
+									stm3.executeUpdate();
+									stm3.clearParameters();
+								}
+								break;
+							}
+							case Player.STORE_PRIVATE_SELL:
+							case Player.STORE_PRIVATE_PACKAGE_SELL:
+							{
+								if (!Config.OFFLINE_TRADE_ENABLE || (trader.getSellList().getItems().size() < 1))
+								{
+									save = false;
+								}
+								title = trader.getSellList().getTitle();
+								trader.getSellList().updateItems();
+								for (TradeItem i : trader.getSellList().getItems())
+								{
+									stm3.setInt(1, trader.getObjectId());
+									stm3.setInt(2, i.getObjectId());
+									stm3.setLong(3, i.getCount());
+									stm3.setLong(4, i.getPrice());
+									stm3.setLong(5, i.getEnchant());
+									stm3.executeUpdate();
+									stm3.clearParameters();
+								}
+								break;
+							}
+							case Player.STORE_PRIVATE_MANUFACTURE:
+							{
+								if (!Config.OFFLINE_CRAFT_ENABLE || (trader.getCreateList().getList().size() < 1))
+								{
+									save = false;
+								}
+								title = trader.getCreateList().getStoreName();
+								for (ManufactureItem i : trader.getCreateList().getList())
+								{
+									stm3.setInt(1, trader.getObjectId());
+									stm3.setInt(2, i.getRecipeId());
+									stm3.setLong(3, 0);
+									stm3.setLong(4, i.getCost());
+									stm3.setLong(5, 0);
+									stm3.executeUpdate();
+									stm3.clearParameters();
+								}
+								break;
+							}
+							default:
+							{
+								LOGGER.info(getClass().getSimpleName() + ": Error while saving offline trader: " + trader.getObjectId() + ", store type: " + trader.getPrivateStoreType());
+								save = false;
+							}
 						}
-						title = trader.getCreateList().getStoreName();
-						for (ManufactureItem i : trader.getCreateList().getList())
+						
+						if (save)
 						{
-							stm3.setInt(1, trader.getObjectId());
-							stm3.setInt(2, i.getRecipeId());
-							stm3.setLong(3, 0);
-							stm3.setLong(4, i.getCost());
-							stm3.setLong(5, 0);
-							stm3.executeUpdate();
-							stm3.clearParameters();
+							if (trader.getOfflineStartTime() == 0)
+							{
+								trader.setOfflineStartTime(System.currentTimeMillis());
+							}
+							
+							stm4.setInt(1, trader.getObjectId()); // Char Id
+							stm4.setLong(2, trader.getOfflineStartTime());
+							stm4.setInt(3, trader.getPrivateStoreType()); // store type
+							stm4.setString(4, title);
+							stm4.executeUpdate();
+							stm4.clearParameters();
+							con.commit();
+							LOGGER.info("Player: (" + trader.getName() + ") trade offline enable");
+							
+							World.OFFLINE_TRADE_COUNT++;
+							return true;
 						}
-						break;
+						
+						return false;
 					}
-					default:
+					catch (Exception e)
 					{
-						// LOGGER.info(getClass().getSimpleName() + ": Error while saving offline trader: " + pc.getObjectId() + ", store type: "+pc.getPrivateStoreType());
-						save = false;
+						LOGGER.warning(getClass().getSimpleName() + ": Error while saving offline trader: " + trader.getObjectId() + " " + e);
 					}
+				}
+				catch (Exception e)
+				{
+					LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error while saving offline trader: " + trader.getObjectId() + " " + e);
+					return false;
 				}
 				
-				if (save)
-				{
-					stm4.setInt(1, trader.getObjectId()); // Char Id
-					stm4.setLong(2, trader.getOfflineStartTime());
-					stm4.setInt(3, trader.getPrivateStoreType()); // store type
-					stm4.setString(4, title);
-					stm4.executeUpdate();
-					stm4.clearParameters();
-					con.commit();
-				}
+				return false;
+			}
+		}
+		
+		return false;
+	}
+	
+	public void removeStoreOffliner(Player player)
+	{
+		if (Config.STORE_OFFLINE_TRADE_IN_REALTIME)
+		{
+			try (Connection con = DatabaseFactory.getConnection();
+				PreparedStatement stm1 = con.prepareStatement(CLEAR_OFFLINE_TABLE_ITEMS_PLAYER);
+				PreparedStatement stm2 = con.prepareStatement(CLEAR_OFFLINE_TABLE_PLAYER))
+			{
+				stm1.setInt(1, player.getObjectId());
+				stm1.execute();
+				stm2.setInt(1, player.getObjectId());
+				stm2.execute();
 			}
 			catch (Exception e)
 			{
-				LOGGER.warning(getClass().getSimpleName() + ": Error while saving offline trader: " + trader.getObjectId() + " " + e);
+				LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error while cleanning offline trader: " + player.getName() + " " + e);
 			}
-		}
-		catch (Exception e)
-		{
-			LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Error while saving offline trader: " + trader.getObjectId() + " " + e);
 		}
 	}
 	
