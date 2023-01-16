@@ -247,10 +247,6 @@ public class OfflineTraderTable
 									player.getCreateList().setStoreName(rs.getString("title"));
 									break;
 								}
-								default:
-								{
-									LOGGER.info("Offline trader " + player.getName() + " finished to sell his items");
-								}
 							}
 						}
 					}
@@ -418,7 +414,6 @@ public class OfflineTraderTable
 							stm4.executeUpdate();
 							stm4.clearParameters();
 							con.commit();
-							LOGGER.info("Player: (" + trader.getName() + ") trade offline enable");
 							
 							World.OFFLINE_TRADE_COUNT++;
 							return true;
