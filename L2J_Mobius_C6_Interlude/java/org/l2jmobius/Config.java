@@ -101,7 +101,7 @@ public class Config
 	public static final String CLASS_DAMAGE_CONFIG_FILE = "./config/custom/ClassDamage.ini";
 	private static final String CUSTOM_AUTO_POTIONS_CONFIG_FILE = "./config/custom/AutoPotions.ini";
 	private static final String CUSTOM_CUSTOM_MAIL_MANAGER_CONFIG_FILE = "./config/custom/CustomMailManager.ini";
-	private static final String CUSTOM_FACTION_SYSTEM_CONFIG_FILE = "./config/Custom/FactionSystem.ini";
+	private static final String CUSTOM_FACTION_SYSTEM_CONFIG_FILE = "./config/custom/FactionSystem.ini";
 	private static final String MERCHANT_ZERO_SELL_PRICE_CONFIG_FILE = "./config/custom/MerchantZeroSellPrice.ini";
 	private static final String CUSTOM_RANDOM_SPAWNS_CONFIG_FILE = "./config/custom/RandomSpawns.ini";
 	private static final String OFFLINE_CONFIG_FILE = "./config/custom/Offline.ini";
