@@ -17,6 +17,7 @@
 package quests.Q226_TestOfTheHealer;
 
 import org.l2jmobius.gameserver.enums.ClassId;
+import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.Quest;
@@ -415,39 +416,43 @@ public class Q226_TestOfTheHealer extends Quest
 							htmltext = "30661-01.htm";
 							st.setCond(14);
 							st.playSound(QuestState.SOUND_BEFORE_BATTLE);
-							addSpawn(LETO_LIZARDMAN_ASSASSIN, player, true, 0);
-							addSpawn(LETO_LIZARDMAN_ASSASSIN, player, true, 0);
-							addSpawn(LETO_LIZARDMAN_ASSASSIN, player, true, 0);
+							addSpawn(LETO_LIZARDMAN_ASSASSIN, player, true, 300000);
+							addSpawn(LETO_LIZARDMAN_ASSASSIN, player, true, 300000);
+							addSpawn(LETO_LIZARDMAN_ASSASSIN, player, true, 300000);
 						}
 						else if (cond == 14)
 						{
 							htmltext = "30661-01.htm";
+							checkSpawn(LETO_LIZARDMAN_ASSASSIN, 3, player);
 						}
 						else if (cond == 15)
 						{
 							htmltext = "30661-02.htm";
 							st.setCond(16);
 							st.playSound(QuestState.SOUND_BEFORE_BATTLE);
-							addSpawn(LETO_LIZARDMAN_SNIPER, player, true, 0);
-							addSpawn(LETO_LIZARDMAN_SNIPER, player, true, 0);
-							addSpawn(LETO_LIZARDMAN_SNIPER, player, true, 0);
+							addSpawn(LETO_LIZARDMAN_SNIPER, player, true, 300000);
+							addSpawn(LETO_LIZARDMAN_SNIPER, player, true, 300000);
+							addSpawn(LETO_LIZARDMAN_SNIPER, player, true, 300000);
 						}
 						else if (cond == 16)
 						{
 							htmltext = "30661-02.htm";
+							checkSpawn(LETO_LIZARDMAN_SNIPER, 3, player);
 						}
 						else if (cond == 17)
 						{
 							htmltext = "30661-03.htm";
 							st.setCond(18);
 							st.playSound(QuestState.SOUND_BEFORE_BATTLE);
-							addSpawn(LETO_LIZARDMAN_WIZARD, player, true, 0);
-							addSpawn(LETO_LIZARDMAN_WIZARD, player, true, 0);
-							addSpawn(LETO_LIZARDMAN_LORD, player, true, 0);
+							addSpawn(LETO_LIZARDMAN_WIZARD, player, true, 300000);
+							addSpawn(LETO_LIZARDMAN_WIZARD, player, true, 300000);
+							addSpawn(LETO_LIZARDMAN_LORD, player, true, 300000);
 						}
 						else if (cond == 18)
 						{
 							htmltext = "30661-03.htm";
+							checkSpawn(LETO_LIZARDMAN_WIZARD, 2, player);
+							checkSpawn(LETO_LIZARDMAN_LORD, 1, player);
 						}
 						else if (cond == 19)
 						{
@@ -558,5 +563,25 @@ public class Q226_TestOfTheHealer extends Quest
 		}
 		
 		return null;
+	}
+	
+	private void checkSpawn(int npcId, int count, Player player)
+	{
+		int found = 0;
+		while (found < count)
+		{
+			found = 0;
+			for (Creature creature : player.getKnownList().getKnownCharacters())
+			{
+				if (creature.isNpc() && (((Npc) creature).getNpcId() == npcId))
+				{
+					found++;
+				}
+			}
+			if (found < count)
+			{
+				addSpawn(npcId, player, true, 300000);
+			}
+		}
 	}
 }
