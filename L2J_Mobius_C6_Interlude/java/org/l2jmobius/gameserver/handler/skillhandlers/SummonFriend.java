@@ -177,8 +177,7 @@ public class SummonFriend implements ISkillHandler
 							continue;
 						}
 						
-						// Summon friend.
-						if (skill.getId() == 1403)
+						if (skill.getId() == 1403 /* Summon Friend */)
 						{
 							// Send message.
 							final ConfirmDlg confirm = new ConfirmDlg(SystemMessageId.S1_WISHES_TO_SUMMON_YOU_FROM_S2_DO_YOU_ACCEPT.getId());
@@ -187,6 +186,10 @@ public class SummonFriend implements ISkillHandler
 							confirm.addTime(30000, targetPlayer);
 							confirm.addRequesterId(activePlayer.getObjectId());
 							targetPlayer.sendPacket(confirm);
+						}
+						else if (skill.getId() == 1429 /* Gate Chant */)
+						{
+							targetPlayer.teleportAnswer(1, activePlayer.getObjectId());
 						}
 						else
 						{
