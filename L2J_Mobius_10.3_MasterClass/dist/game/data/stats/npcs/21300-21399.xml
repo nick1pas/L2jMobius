@@ -6576,7 +6576,7 @@
 		<sex>MALE</sex>
 		<acquire exp="12" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3077.1572058" hpRegen="8.874" mp="1848.24" mpRegen="3.1314" />
+			<vitals hp="15385.49" hpRegen="8.874" mp="1848.24" mpRegen="3.1314" />
 			<attack physical="1009.3950039" magical="719.599557852" random="10" critical="4" accuracy="10.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="373.969485" magical="261.022284" />
 			<speed>
@@ -6589,7 +6589,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="7" /> <!-- Spirits -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -6616,9 +6616,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="156" max="363" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -6634,7 +6632,7 @@
 		<sex>MALE</sex>
 		<acquire exp="11" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3044.88717" hpRegen="8.823" mp="1812.948" mpRegen="3.111" />
+			<vitals hp="15224.61" hpRegen="8.823" mp="1812.948" mpRegen="3.111" />
 			<attack physical="985.66600746" magical="699.2575207596" random="5" critical="8" accuracy="5" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="367.3536375" magical="253.534464" />
 			<speed>
@@ -6647,7 +6645,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->

@@ -1295,7 +1295,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LIQUID" />
 		<set name="weight" val="10" />
-		<set name="price" val="7500000" />
+		<set name="price" val="1500000" />
 		<set name="reuse_delay" val="500" />
 		<set name="is_stackable" val="true" />
 		<set name="is_sellable" val="false" />
@@ -1528,6 +1528,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
 			<item id="38858" min="1" max="1" chance="14.2857" /> <!-- Ruby Lv. 4 -->
 			<item id="38930" min="1" max="1" chance="14.2857" /> <!-- Sapphire Lv. 4 -->
@@ -1556,6 +1558,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="48203" min="1" max="1" chance="33.33" /> <!-- Noble Warrior's Circlet -->
+			<item id="48206" min="1" max="1" chance="33.33" /> <!-- Noble Wizard's Circlet -->
+			<item id="48209" min="1" max="1" chance="33.33" /> <!-- Noble Knight's Circlet -->
+		</capsuled_items>
 	</item>
 	<item id="80783" name="Freya's Growth Support Box" type="EtcItem">
 		<!-- Double-click to randomly obtain a consumable item. -->

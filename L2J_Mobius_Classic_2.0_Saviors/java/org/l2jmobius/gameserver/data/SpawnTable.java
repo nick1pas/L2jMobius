@@ -190,7 +190,7 @@ public class SpawnTable
 	 */
 	public synchronized void deleteSpawn(Spawn spawn, boolean update)
 	{
-		if (!removeSpawn(spawn))
+		if (!removeSpawn(spawn) && !update)
 		{
 			return;
 		}
@@ -309,7 +309,7 @@ public class SpawnTable
 				spawnFile.delete();
 				tempFile.renameTo(spawnFile);
 				// Delete empty file
-				if (lineCount < 7)
+				if (lineCount < 8)
 				{
 					LOGGER.info(getClass().getSimpleName() + ": Deleted empty file: " + spawnFile.getAbsolutePath().substring(Config.DATAPACK_ROOT.getAbsolutePath().length() + 1).replace('\\', '/'));
 					spawnFile.delete();

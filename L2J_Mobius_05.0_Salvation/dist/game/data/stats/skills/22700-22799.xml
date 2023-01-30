@@ -293,9 +293,25 @@
 		<magicLevel>1</magicLevel>
 		<staticReuse>true</staticReuse>
 		<isMagic>2</isMagic>
+		<itemConsumeId>
+			<value level="1">23338</value>
+			<value level="2">23339</value>
+			<value level="2">23340</value>
+		</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
 		<reuseDelay>3600000</reuseDelay>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value level="1">35000</value>
+				<value level="2">70000</value>
+				<value level="3">140000</value>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="22712" toLevel="1" name="Vitality Recovering Potion">
 		<!-- For 30 min., Vitality is replenished with XP gain through hunting. Effect remains even after death. -->
@@ -316,6 +332,9 @@
 		<isMagic>4</isMagic>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
 	</skill>
 	<skill id="22713" toLevel="1" name="Letter Collector's Gift">
 		<!-- For 2 hr., Atk./ Casting Spd. +15%, and Speed +20. -->

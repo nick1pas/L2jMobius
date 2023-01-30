@@ -744,18 +744,117 @@
 	</skill>
 	<skill id="18393" toLevel="1" name="Dimensional Elcyum Pack">
 		<icon>icon.event_hero_treasure_box_i00</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<operateType>A1</operateType>
-		<reuseDelay>2000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>46074</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="70">
+						<item id="36513" count="1" /> <!-- Elcyum Powder -->
+					</item>
+					<item chance="20">
+						<item id="36514" count="1" /> <!-- Elcyum Crystal -->
+					</item>
+					<item chance="10">
+						<item id="36515" count="1" /> <!-- Elcyum -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="18394" toLevel="1" name="Dimensional Augment Pack">
 		<icon>icon.event_hero_treasure_box_i00</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<operateType>A1</operateType>
-		<reuseDelay>2000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>46075</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="40">
+						<item id="45931" count="1" /> <!-- High-grade Augmenting Stone: Weapon -->
+					</item>
+					<item chance="30">
+						<item id="45932" count="1" /> <!-- Top-grade Augmenting Stone: Weapon -->
+					</item>
+					<item chance="20">
+						<item id="45937" count="1" /> <!-- Spirit Stone: Hair Accessory -->
+					</item>
+					<item chance="10">
+						<item id="36731" count="1" /> <!-- Giant's Energy Spirit Stone -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="18395" toLevel="1" name="Dimensional Enhancement Pack">
 		<icon>icon.event_hero_treasure_box_i00</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<operateType>A1</operateType>
-		<reuseDelay>2000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>46076</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="12.50">
+						<item id="14706" count="1" /> <!-- Stone: Enchant S-grade Weapon -->
+					</item>
+					<item chance="12.50">
+						<item id="14711" count="1" /> <!-- Stone: Enchant S-grade Armor -->
+					</item>
+					<item chance="12.50">
+						<item id="17526" count="1" /> <!-- Scroll: Enchant R-grade Weapon -->
+					</item>
+					<item chance="12.50">
+						<item id="17527" count="1" /> <!-- Scroll: Enchant R-grade Armor -->
+					</item>
+					<item chance="12.50">
+						<item id="19447" count="1" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+					</item>
+					<item chance="12.50">
+						<item id="19948" count="1" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+					</item>
+					<item chance="12.50">
+						<item id="30381" count="1" /> <!-- Stone: Enchant R-grade Weapon -->
+					</item>
+					<item chance="12.50">
+						<item id="30382" count="1" /> <!-- Stone: Enchant R-grade Armor -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="18396" toLevel="1" name="PA Points">
 		<operateType>A1</operateType>

@@ -705,24 +705,24 @@
 		<set name="is_freightable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
+			<item id="81484" min="1" max="1" chance="100" /> <!-- Blessed Exalted Circlet -->
+			<item id="81485" min="1" max="1" chance="100" /> <!-- Exalted Soul Crystal - Weapon -->
+			<item id="81486" min="1" max="1" chance="100" /> <!-- Talisman of Longing - Exalted -->
+			<item id="81487" min="1" max="1" chance="100" /> <!-- Sayha's Talisman - Exalted -->
+			<item id="81488" min="1" max="1" chance="100" /> <!-- Blessed Exalted Seed Bracelet -->
+			<item id="81489" min="1" max="1" chance="100" /> <!-- Augmenting Stone: Exalted Weapon -->
+			<item id="81650" min="1" max="1" chance="100" /> <!-- Blessed Exalted Support Box -->
 			<item id="81478" min="1" max="1" chance="100" /> <!-- Blessed Exalted Circlet - Robe -->
 			<item id="81479" min="1" max="1" chance="100" /> <!-- Blessed Exalted Tunic - Robe -->
 			<item id="81480" min="1" max="1" chance="100" /> <!-- Blessed Exalted Stockings - Robe -->
 			<item id="81481" min="1" max="1" chance="100" /> <!-- Blessed Exalted Gloves - Robe -->
 			<item id="81482" min="1" max="1" chance="100" /> <!-- Blessed Exalted Shoes - Robe -->
-			<item id="81484" min="1" max="1" chance="100" /> <!-- Blessed Exalted Circlet -->
-			<item id="81488" min="1" max="1" chance="100" /> <!-- Blessed Exalted Seed Bracelet -->
-			<item id="81489" min="1" max="1" chance="100" /> <!-- Augmenting Stone: Exalted Weapon -->
-			<item id="81485" min="1" max="1" chance="100" /> <!-- Exalted Soul Crystal - Weapon -->
-			<item id="81486" min="1" max="1" chance="100" /> <!-- Talisman of Longing - Exalted -->
-			<item id="81487" min="1" max="1" chance="100" /> <!-- Sayha's Talisman - Exalted -->
-			<item id="81650" min="1" max="1" chance="100" /> <!-- Blessed Exalted Support Box -->
-			<item id="81472" min="1" max="1" chance="100" /> <!-- Blessed Exalted Shield -->
-			<item id="81492" min="1" max="1" chance="100" /> <!-- Blessed Exalted Earring - Vampiric Rage -->
+			<item id="81483" min="1" max="1" chance="100" /> <!-- Blessed Exalted Sigil -->
+			<item id="81490" min="1" max="1" chance="100" /> <!-- Blessed Exalted Necklace - Cooldown -->
 			<item id="81491" min="1" max="1" chance="100" /> <!-- Blessed Exalted Earring - MP Consumption -->
+			<item id="81492" min="1" max="1" chance="100" /> <!-- Blessed Exalted Earring - Vampiric Rage -->
 			<item id="81493" min="1" max="1" chance="100" /> <!-- Blessed Exalted Ring - Critical Rate -->
 			<item id="81494" min="1" max="1" chance="100" /> <!-- Blessed Exalted Ring - Critical Damage -->
-			<item id="81490" min="1" max="1" chance="100" /> <!-- Blessed Exalted Necklace - Cooldown -->
 		</capsuled_items>
 	</item>
 	<item id="81650" name="Blessed Exalted Support Box" type="EtcItem">
@@ -1189,7 +1189,6 @@
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ItemSkills" />
 		<set name="immediate_effect" val="true" />
-		<set name="reuse_delay" val="36000000" />
 		<skills>
 			<skill id="39682" level="1" /> <!-- Corroded Fields' Time Stone -->
 		</skills>

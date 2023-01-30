@@ -39,6 +39,8 @@ import org.l2jmobius.gameserver.ai.CtrlEvent;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.data.sql.NpcTable;
+import org.l2jmobius.gameserver.data.xml.DoorData;
+import org.l2jmobius.gameserver.data.xml.FenceData;
 import org.l2jmobius.gameserver.data.xml.MapRegionData;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
 import org.l2jmobius.gameserver.geoengine.GeoEngine;
@@ -4961,10 +4963,8 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 		
 		if (isPlayer())
 		{
-			final double distance = Math.hypot(dx, dy);
-			if (_cursorKeyMovement // In case of cursor movement, avoid moving through obstacles.
-				|| (distance > 3000) // Stop movement when player has clicked far away and intersected with an obstacle.
-				|| ((getWorldRegion() != null) && !getWorldRegion().getDoors().isEmpty())) // Check for nearby doors.
+			// In case of cursor movement, avoid moving through obstacles.
+			if (_cursorKeyMovement)
 			{
 				final double angle = Util.convertHeadingToDegree(getHeading());
 				final double radian = Math.toRadians(angle);
@@ -4981,12 +4981,74 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 					return false;
 				}
 			}
-			// Prevent player moving on ledges.
-			if ((dz > 180) && (distance < 300))
+			else // Mouse click movement.
 			{
-				_move.onGeodataPathIndex = -1;
-				stopMove(getActingPlayer().getLastServerPosition());
-				return false;
+				// Stop movement when player has clicked far away and intersected with an obstacle.
+				final double distance = Math.hypot(dx, dy);
+				if (distance > 3000)
+				{
+					final double angle = Util.convertHeadingToDegree(getHeading());
+					final double radian = Math.toRadians(angle);
+					final double course = Math.toRadians(180);
+					final double frontDistance = 10 * (_stat.getMoveSpeed() / 100);
+					final int x1 = (int) (Math.cos(Math.PI + radian + course) * frontDistance);
+					final int y1 = (int) (Math.sin(Math.PI + radian + course) * frontDistance);
+					final int x = xPrev + x1;
+					final int y = yPrev + y1;
+					if (!GeoEngine.getInstance().canMoveToTarget(xPrev, yPrev, zPrev, x, y, zPrev, getInstanceId()))
+					{
+						_move.onGeodataPathIndex = -1;
+						if (hasAI() && getAI().isFollowing())
+						{
+							getAI().stopFollow();
+						}
+						stopMove(getActingPlayer().getLastServerPosition());
+						return false;
+					}
+				}
+				else // Check for nearby doors or fences.
+				{
+					final WorldRegion region = getWorldRegion();
+					if (region != null)
+					{
+						final boolean hasDoors = !region.getDoors().isEmpty();
+						final boolean hasFences = !region.getFences().isEmpty();
+						if (hasDoors || hasFences)
+						{
+							final double angle = Util.convertHeadingToDegree(getHeading());
+							final double radian = Math.toRadians(angle);
+							final double course = Math.toRadians(180);
+							final double frontDistance = 10 * (_stat.getMoveSpeed() / 100);
+							final int x1 = (int) (Math.cos(Math.PI + radian + course) * frontDistance);
+							final int y1 = (int) (Math.sin(Math.PI + radian + course) * frontDistance);
+							final int x = xPrev + x1;
+							final int y = yPrev + y1;
+							if ((hasDoors && DoorData.getInstance().checkIfDoorsBetween(xPrev, yPrev, zPrev, x, y, zPrev, getInstanceId())) //
+								|| (hasFences && FenceData.getInstance().checkIfFenceBetween(xPrev, yPrev, zPrev, x, y, zPrev, getInstanceId())))
+							{
+								_move.onGeodataPathIndex = -1;
+								if (hasAI() && getAI().isFollowing())
+								{
+									getAI().stopFollow();
+								}
+								stopMove(null);
+								return false;
+							}
+						}
+					}
+				}
+				
+				// Prevent player moving on ledges.
+				if ((dz > 180) && (distance < 300))
+				{
+					_move.onGeodataPathIndex = -1;
+					if (hasAI() && getAI().isFollowing())
+					{
+						getAI().stopFollow();
+					}
+					stopMove(null);
+					return false;
+				}
 			}
 		}
 		

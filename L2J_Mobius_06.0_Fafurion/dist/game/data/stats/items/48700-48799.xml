@@ -55,10 +55,18 @@
 	<item id="48706" name="Red Libra Specialty - Vitality Tonic" type="EtcItem">
 		<!-- A specialty traded by the Red Libra Merchants. Restores 1/ 2 of a Vitality Gauge bar. Cooldown is 1 min. Cannot be used in Olympiad. No weekly usage limit. -->
 		<set name="icon" val="icon.bm_freya_potion" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="29455" level="1" /> <!-- Red Libra Specialty - Vitality Tonic -->
+		</skills>
 	</item>
 	<item id="48707" name="Red Libra Specialty - Fishing XP Bonus" additionalName="1-hour" type="EtcItem">
 		<!-- A specialty traded by the Red Libra Merchants. When used, increases Successful Fishing XP by 50% for 1 hour. Applied to all bait. Can be stacked with Angler's Blessing. -->
@@ -552,12 +560,19 @@
 		<!-- When used, increases Attack Attributes by 70, all Attribute Resistance by 70, and Acquired XP/ SP by 30% for 30 min. Buffs persist after death. Cooldown is 5 min. Cannot be used in Olympiad. -->
 		<set name="icon" val="icon.bm_dragon_posion_special" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39347" level="1" /> <!-- Glowing Dragon's Attribute Potion -->
+		</skills>
 	</item>
 	<item id="48756" name="+6 Shiny Elemental Shirt" additionalName="30-day" type="Armor">
 		<!-- A shining magic T-shirt imbued with Einhasad's Energy. <Item Skill>. Increases M. Def. by 14. Increases Speed by 7. Increases Max HP by 531. Increases Max MP by 531. Decreases Skill MP Consumption by 3%. Increases Damage Reflection Resistance by 5. Increases Water/ Fire/ Wind/ Earth/ Holy/ Dark Attack Resistance by 18. Increases STR by 3, DEX by 3, CON by 2, INT by 3, WIT by 3, MEN by 2. <Active Skill>. Einhasad's Wrath -->
@@ -631,27 +646,33 @@
 		<!-- Equip it to use the Talisman - Battle: Cancel Hide skill. This skill cancels hiding buffs of enemies within range and can be used only in Grand Olympiad. 1-day item. -->
 		<set name="icon" val="icon.etc_talisman_i07" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="underwear" />
-		<set name="immediate_effect" val="true" />
-		<set name="material" val="GOLD" />
-		<set name="weight" val="150" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="deco1" />
+		<set name="time" val="1440" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="35212" level="1" /> <!-- Talisman - Battle: Cancel Hide -->
+		</skills>
 	</item>
 	<item id="48764" name="Talisman - Battle: Cancel Hide (3-day)" type="Armor">
 		<!-- Equip it to use the Talisman - Battle: Cancel Hide skill. This skill cancels hiding buffs of enemies within range and can be used only in Grand Olympiad. 3-day item. -->
 		<set name="icon" val="icon.etc_talisman_i07" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="underwear" />
-		<set name="immediate_effect" val="true" />
-		<set name="material" val="GOLD" />
-		<set name="weight" val="150" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="deco1" />
+		<set name="time" val="4320" />
+		<set name="weight" val="150" />
+		<set name="material" val="GOLD" />
+		<skills>
+			<skill id="35212" level="1" /> <!-- Talisman - Battle: Cancel Hide -->
+		</skills>
 	</item>
 	<item id="48765" name="Cat Outfit" type="Armor">
 		<set name="icon" val="icon.sayha2017_cat" />
@@ -682,6 +703,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18814" level="7" /> <!-- Topaz -->
 			<skill id="17701" level="7" />
 		</skills>
 	</item>
@@ -695,6 +717,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18814" level="8" /> <!-- Topaz -->
 			<skill id="17701" level="8" />
 		</skills>
 	</item>
@@ -708,6 +731,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18814" level="9" /> <!-- Topaz -->
 			<skill id="17701" level="9" />
 		</skills>
 	</item>
@@ -721,6 +745,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18814" level="10" /> <!-- Topaz -->
 			<skill id="17701" level="10" />
 		</skills>
 	</item>
@@ -854,6 +879,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18720" level="1" /> <!-- Greater Obsidian -->
 			<skill id="17704" level="7" />
 		</skills>
 	</item>
@@ -867,6 +893,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18720" level="1" /> <!-- Greater Obsidian -->
 			<skill id="17704" level="8" />
 		</skills>
 	</item>
@@ -880,6 +907,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="material" val="FISH" />
 		<skills>
+			<skill id="18720" level="1" /> <!-- Greater Obsidian -->
 			<skill id="17704" level="9" />
 		</skills>
 	</item>

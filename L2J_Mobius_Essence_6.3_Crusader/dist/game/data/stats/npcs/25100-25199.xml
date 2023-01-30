@@ -124,10 +124,16 @@
 			<drop>
 				<item id="951" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant C-grade Weapon -->
 				<item id="952" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant C-grade Armor -->
-				<item id="91035" min="2" max="4" chance="50" /> <!-- Water Spirit Ore -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="1" max="3" chance="80" /> <!-- Sayha's Grace - Sealed -->
+				<item id="91035" min="2" max="4" chance="50" /> <!-- Water Spirit Ore -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25103" level="70" type="RaidBoss" name="Wizard Isirr" title="High Elite">
@@ -183,15 +189,15 @@
 		<dropLists>
 			<drop>
 				<item id="90045" min="4" max="8" chance="100" /> <!-- Magic Tablet -->
-				<item id="79" min="1" max="1" chance="2.8125" /> <!-- Damascus Sword -->
-				<item id="97" min="1" max="1" chance="2.8125" /> <!-- Lance -->
+				<item id="79" min="1" max="1" chance="2.813" /> <!-- Damascus Sword -->
+				<item id="97" min="1" max="1" chance="2.813" /> <!-- Lance -->
 				<item id="110" min="1" max="1" chance="4.88" /> <!-- Doom Shield -->
-				<item id="171" min="1" max="1" chance="2.8125" /> <!-- Deadman's Glory -->
-				<item id="175" min="1" max="1" chance="2.8125" /> <!-- Art of Battle Axe -->
-				<item id="210" min="1" max="1" chance="2.8125" /> <!-- Staff of Evil Spirits -->
-				<item id="234" min="1" max="1" chance="2.8125" /> <!-- Demon's Dagger -->
-				<item id="268" min="1" max="1" chance="2.8125" /> <!-- Bellion Cestus -->
-				<item id="287" min="1" max="1" chance="2.8125" /> <!-- Bow of Peril -->
+				<item id="171" min="1" max="1" chance="2.813" /> <!-- Deadman's Glory -->
+				<item id="175" min="1" max="1" chance="2.813" /> <!-- Art of Battle Axe -->
+				<item id="210" min="1" max="1" chance="2.813" /> <!-- Staff of Evil Spirits -->
+				<item id="234" min="1" max="1" chance="2.813" /> <!-- Demon's Dagger -->
+				<item id="268" min="1" max="1" chance="2.813" /> <!-- Bellion Cestus -->
+				<item id="287" min="1" max="1" chance="2.813" /> <!-- Bow of Peril -->
 				<item id="600" min="1" max="1" chance="5.12" /> <!-- Sealed Avadon Boots -->
 				<item id="601" min="1" max="1" chance="4.88" /> <!-- Sealed Doom Boots -->
 				<item id="673" min="1" max="1" chance="5.12" /> <!-- Avadon Shield -->
@@ -203,7 +209,39 @@
 				<item id="926" min="1" max="1" chance="12.006" /> <!-- Black Ore Necklace -->
 				<item id="2376" min="1" max="1" chance="5.12" /> <!-- Avadon Breastplate -->
 				<item id="2379" min="1" max="1" chance="5.12" /> <!-- Avadon Gaiters -->
+				<item id="2381" min="1" max="1" chance="4.88" /> <!-- Doom Plate Armor -->
+				<item id="2390" min="1" max="1" chance="5.12" /> <!-- Avadon Leather Armor -->
+				<item id="2392" min="1" max="1" chance="4.88" /> <!-- Doom Leather Armor -->
+				<item id="2399" min="1" max="1" chance="4.88" /> <!-- Doom Tunic -->
+				<item id="2404" min="1" max="1" chance="4.88" /> <!-- Doom Stockings -->
+				<item id="2406" min="1" max="1" chance="5.12" /> <!-- Avadon Robe -->
+				<item id="2415" min="1" max="1" chance="5.12" /> <!-- Sealed Avadon Circlet -->
+				<item id="2417" min="1" max="1" chance="4.88" /> <!-- Sealed Doom Helmet -->
+				<item id="2464" min="1" max="1" chance="5.12" /> <!-- Sealed Avadon Gloves -->
+				<item id="2475" min="1" max="1" chance="4.88" /> <!-- Sealed Doom Gloves -->
+				<item id="2626" min="1" max="1" chance="2.813" /> <!-- Samurai Long Sword*Samurai Long Sword -->
+				<item id="7883" min="1" max="1" chance="2.813" /> <!-- Guardian's Sword -->
+				<item id="7889" min="1" max="1" chance="2.813" /> <!-- Wizard's Tear -->
+				<item id="7893" min="1" max="1" chance="2.813" /> <!-- Kaim Vanul's Bones -->
+				<item id="7901" min="1" max="1" chance="2.813" /> <!-- Star Buster -->
+				<item id="91885" min="1" max="1" chance="2.813" /> <!-- Dismantler -->
+				<item id="91900" min="1" max="1" chance="2.813" /> <!-- Colichemarde -->
+				<item id="94884" min="1" max="1" chance="2.813" /> <!-- Volcano -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25104" level="54" type="Monster" name="Isirr's Escort" title="Minion">
@@ -353,6 +391,28 @@
 				<item id="199" min="1" max="1" chance="1.71" /> <!-- Pa'agrio Hammer -->
 				<item id="200" min="1" max="1" chance="1.71" /> <!-- Sage's Staff -->
 				<item id="201" min="1" max="1" chance="1.71" /> <!-- Club of Nature -->
+				<item id="202" min="1" max="1" chance="1.71" /> <!-- Mace of Underworld -->
+				<item id="203" min="1" max="1" chance="1.755" /> <!-- Pa'agrio Axe -->
+				<item id="231" min="1" max="1" chance="1.71" /> <!-- Grace Dagger -->
+				<item id="233" min="1" max="1" chance="1.71" /> <!-- Dark Screamer -->
+				<item id="265" min="1" max="1" chance="1.71" /> <!-- Fisted Blade -->
+				<item id="283" min="1" max="1" chance="1.71" /> <!-- Akat Longbow -->
+				<item id="301" min="1" max="1" chance="1.755" /> <!-- scorpion -->
+				<item id="303" min="1" max="1" chance="1.755" /> <!-- Widow Maker -->
+				<item id="400" min="1" max="1" chance="5.625" /> <!-- Theca Leather Armor -->
+				<item id="420" min="1" max="1" chance="5.625" /> <!-- Theca Leather Gaiters -->
+				<item id="441" min="1" max="1" chance="5.625" /> <!-- Demon's Tunic -->
+				<item id="472" min="1" max="1" chance="5.625" /> <!-- Demon's Stockings -->
+				<item id="517" min="1" max="3" chance="5.625" /> <!-- Compound Helmet -->
+				<item id="608" min="1" max="3" chance="5.625" /> <!-- Mithril Gauntlets -->
+				<item id="1127" min="1" max="3" chance="5.625" /> <!-- Forgotten Boots -->
+				<item id="1149" min="1" max="3" chance="5.625" /> <!-- Shining Circlet -->
+				<item id="2435" min="1" max="3" chance="5.625" /> <!-- Demon's Boots -->
+				<item id="2436" min="1" max="3" chance="5.625" /> <!-- Theca Leather Boots -->
+				<item id="2459" min="1" max="1" chance="5.625" /> <!-- Demon's Gloves -->
+				<item id="2460" min="1" max="1" chance="5.625" /> <!-- Theca Leather Gloves -->
+				<item id="91883" min="1" max="1" chance="1.71" /> <!-- Immortal Edge -->
+				<item id="91897" min="1" max="1" chance="1.71" /> <!-- Blinzlasher -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -501,6 +561,32 @@
 				<item id="270" min="1" max="1" chance="0.126" /> <!-- Dragon Grinder -->
 				<item id="288" min="1" max="1" chance="0.126" /> <!-- Carnage Bow -->
 				<item id="289" min="1" max="1" chance="0.126" /> <!-- Soul Bow -->
+				<item id="305" min="1" max="1" chance="0.126" /> <!-- Tallum Glaive -->
+				<item id="2500" min="1" max="1" chance="0.126" /> <!-- Dark Legion's Edge -->
+				<item id="2504" min="1" max="1" chance="0.123" /> <!-- Meteor Shower -->
+				<item id="5287" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Breastplate -->
+				<item id="5288" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="5289" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5290" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Gloves -->
+				<item id="5291" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Boots -->
+				<item id="5292" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="5293" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Helmet -->
+				<item id="5295" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Gloves -->
+				<item id="5296" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Boots -->
+				<item id="5297" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Leather Armor -->
+				<item id="5298" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Leggings -->
+				<item id="5301" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Leather Armor -->
+				<item id="5304" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Tunic -->
+				<item id="5305" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Stockings -->
+				<item id="5308" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Robe -->
+				<item id="7884" min="1" max="1" chance="0.123" /> <!-- Infernal Master -->
+				<item id="7894" min="1" max="1" chance="0.123" /> <!-- Spiritual Eye -->
+				<item id="7895" min="1" max="1" chance="0.123" /> <!-- Flaming Dragon Skull -->
+				<item id="7899" min="1" max="1" chance="0.123" /> <!-- Destroyer Hammer -->
+				<item id="7902" min="1" max="1" chance="0.123" /> <!-- Doom Crusher -->
+				<item id="91888" min="1" max="1" chance="0.123" /> <!-- Undertaker -->
+				<item id="91903" min="1" max="1" chance="0.123" /> <!-- Lacerator -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -634,11 +720,11 @@
 				<item id="91526" min="1" max="1" chance="5" /> <!-- D-grade Weapon Varnish -->
 				<item id="91533" min="1" max="1" chance="5" /> <!-- D-grade Armor Varnish -->
 				<item id="91540" min="1" max="1" chance="5" /> <!-- D-grade Accessory Varnish -->
-				<item id="127" min="1" max="1" chance="6.1642" /> <!-- Crimson Sword -->
-				<item id="130" min="1" max="1" chance="6.1642" /> <!-- Elven Sword -->
-				<item id="157" min="1" max="1" chance="6.1642" /> <!-- Spiked Club -->
-				<item id="186" min="1" max="1" chance="6.1642" /> <!-- Staff of Magic -->
-				<item id="293" min="1" max="1" chance="6.1642" /> <!-- Battle Hammer -->
+				<item id="127" min="1" max="1" chance="6.164" /> <!-- Crimson Sword -->
+				<item id="130" min="1" max="1" chance="6.164" /> <!-- Elven Sword -->
+				<item id="157" min="1" max="1" chance="6.164" /> <!-- Spiked Club -->
+				<item id="186" min="1" max="1" chance="6.164" /> <!-- Staff of Magic -->
+				<item id="293" min="1" max="1" chance="6.164" /> <!-- Battle Hammer -->
 				<item id="296" min="1" max="1" chance="6.179" /> <!-- Dwarven Pike -->
 			</drop>
 		</dropLists>
@@ -947,26 +1033,45 @@
 				<item id="91528" min="1" max="1" chance="10" /> <!-- C-grade Weapon Varnish -->
 				<item id="91535" min="1" max="1" chance="10" /> <!-- C-grade Armor Varnish -->
 				<item id="91542" min="1" max="1" chance="10" /> <!-- C-grade Accessory Varnish -->
-				<item id="62" min="1" max="3" chance="5.2725" /> <!-- Reinforced Mithril Boots -->
-				<item id="71" min="1" max="1" chance="0.8325" /> <!-- Flamberge -->
-				<item id="72" min="1" max="1" chance="0.8325" /> <!-- Stormbringer -->
-				<item id="89" min="1" max="1" chance="0.8325" /> <!-- Big Hammer -->
-				<item id="96" min="1" max="1" chance="0.8325" /> <!-- Scythe -->
-				<item id="160" min="1" max="1" chance="0.8325" /> <!-- Battle Axe -->
-				<item id="161" min="1" max="1" chance="0.8325" /> <!-- Silver Axe -->
-				<item id="173" min="1" max="1" chance="0.8325" /> <!-- Skull Graver -->
-				<item id="191" min="1" max="1" chance="0.8325" /> <!-- Heavy Doom Hammer -->
-				<item id="192" min="1" max="1" chance="0.8325" /> <!-- Crystal Staff -->
-				<item id="193" min="1" max="1" chance="0.8325" /> <!-- Stick of Faith -->
-				<item id="194" min="1" max="1" chance="0.8325" /> <!-- Heavy Doom Axe -->
-				<item id="226" min="1" max="1" chance="0.8325" /> <!-- Cursed Dagger -->
-				<item id="230" min="1" max="1" chance="0.8325" /> <!-- Wolverine Fang -->
-				<item id="232" min="1" max="1" chance="0.8325" /> <!-- Dark Elven Dagger -->
-				<item id="263" min="1" max="1" chance="0.8325" /> <!-- Chakram -->
-				<item id="281" min="1" max="1" chance="0.8325" /> <!-- Frozen Bow -->
-				<item id="298" min="1" max="1" chance="0.8325" /> <!-- Orcish Glaive -->
-				<item id="302" min="1" max="1" chance="0.8475" /> <!-- Body Slasher -->
-				<item id="354" min="1" max="3" chance="5.2725" /> <!-- Chain Mail Shirt -->
+				<item id="62" min="1" max="3" chance="5.273" /> <!-- Reinforced Mithril Boots -->
+				<item id="71" min="1" max="1" chance="0.833" /> <!-- Flamberge -->
+				<item id="72" min="1" max="1" chance="0.833" /> <!-- Stormbringer -->
+				<item id="89" min="1" max="1" chance="0.833" /> <!-- Big Hammer -->
+				<item id="96" min="1" max="1" chance="0.833" /> <!-- Scythe -->
+				<item id="160" min="1" max="1" chance="0.833" /> <!-- Battle Axe -->
+				<item id="161" min="1" max="1" chance="0.833" /> <!-- Silver Axe -->
+				<item id="173" min="1" max="1" chance="0.833" /> <!-- Skull Graver -->
+				<item id="191" min="1" max="1" chance="0.833" /> <!-- Heavy Doom Hammer -->
+				<item id="192" min="1" max="1" chance="0.833" /> <!-- Crystal Staff -->
+				<item id="193" min="1" max="1" chance="0.833" /> <!-- Stick of Faith -->
+				<item id="194" min="1" max="1" chance="0.833" /> <!-- Heavy Doom Axe -->
+				<item id="226" min="1" max="1" chance="0.833" /> <!-- Cursed Dagger -->
+				<item id="230" min="1" max="1" chance="0.833" /> <!-- Wolverine Fang -->
+				<item id="232" min="1" max="1" chance="0.833" /> <!-- Dark Elven Dagger -->
+				<item id="263" min="1" max="1" chance="0.833" /> <!-- Chakram -->
+				<item id="281" min="1" max="1" chance="0.833" /> <!-- Frozen Bow -->
+				<item id="298" min="1" max="1" chance="0.833" /> <!-- Orcish Glaive -->
+				<item id="302" min="1" max="1" chance="0.848" /> <!-- Body Slasher -->
+				<item id="354" min="1" max="3" chance="5.273" /> <!-- Chain Mail Shirt -->
+				<item id="381" min="1" max="3" chance="5.273" /> <!-- Chain Gaiters -->
+				<item id="397" min="1" max="3" chance="5.273" /> <!-- Reinforced Mithril Shirt -->
+				<item id="439" min="1" max="3" chance="5.273" /> <!-- Karmian Tunic -->
+				<item id="471" min="1" max="3" chance="5.273" /> <!-- Karmian Stockings -->
+				<item id="631" min="1" max="3" chance="5.273" /> <!-- Eldarake -->
+				<item id="852" min="1" max="3" chance="29.997" /> <!-- Moonstone Earring -->
+				<item id="883" min="1" max="3" chance="29.997" /> <!-- Aquastone Ring -->
+				<item id="915" min="1" max="3" chance="30.006" /> <!-- Aquastone Necklace -->
+				<item id="2387" min="1" max="3" chance="5.273" /> <!-- Reinforced Mithril Gaiters -->
+				<item id="2413" min="1" max="3" chance="5.273" /> <!-- Chain Hood -->
+				<item id="2429" min="1" max="3" chance="5.273" /> <!-- Chain Boots -->
+				<item id="2430" min="1" max="3" chance="5.273" /> <!-- Karmian Boots -->
+				<item id="2431" min="1" max="3" chance="5.273" /> <!-- Plated Leather Boots -->
+				<item id="2432" min="1" max="3" chance="5.273" /> <!-- Dwarven Chain Boots -->
+				<item id="2433" min="1" max="3" chance="5.273" /> <!-- Boots of Seal -->
+				<item id="2452" min="1" max="3" chance="5.273" /> <!-- Reinforced Mithril Gloves -->
+				<item id="2453" min="1" max="3" chance="5.273" /> <!-- Chain Gloves -->
+				<item id="2454" min="1" max="3" chance="5.273" /> <!-- Karmian Gloves -->
+				<item id="2495" min="1" max="3" chance="5.368" /> <!-- Chain Shield -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1103,10 +1208,16 @@
 			<drop>
 				<item id="951" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant C-grade Weapon -->
 				<item id="952" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant C-grade Armor -->
-				<item id="91036" min="2" max="4" chance="50" /> <!-- Fire Spirit Ore -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="1" max="3" chance="80" /> <!-- Sayha's Grace - Sealed -->
+				<item id="91036" min="2" max="4" chance="50" /> <!-- Fire Spirit Ore -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25123" level="55" type="Monster" name="Leo's Servant" title="Minion">
@@ -1230,7 +1341,22 @@
 		</collision>
 		<dropLists>
 			<drop>
+				<item id="93388" min="1" max="1" chance="0.158" /> <!-- Spellbook: Death Guard -->
+				<item id="93392" min="1" max="1" chance="0.15" /> <!-- Spellbook: Bone Cage -->
+				<item id="93633" min="1" max="1" chance="0.162" /> <!-- Spellbook: Drain Magic Energy -->
+				<item id="93867" min="1" max="1" chance="0.143" /> <!-- Spellbook: Amazing Thunder Storm Mastery -->
+				<item id="93871" min="1" max="1" chance="0.149" /> <!-- Spellbook: Knight's Help -->
+				<item id="94134" min="1" max="1" chance="0.143" /> <!-- Spellbook: Amazing Spike Thrust Mastery -->
+				<item id="94323" min="1" max="1" chance="0.16" /> <!-- Spellbook: Frantic Pace -->
+				<item id="94497" min="1" max="1" chance="0.15" /> <!-- Spellbook: Life Force Harmony -->
+				<item id="94669" min="1" max="1" chance="0.146" /> <!-- Spellbook: Pa'agrio's Medicine -->
+				<item id="94676" min="1" max="1" chance="0.144" /> <!-- Spellbook: Chant of Healing -->
 				<item id="95772" min="1" max="1" chance="0.5" /> <!-- Master's Book Chest -->
+				<item id="96273" min="1" max="1" chance="0.149" /> <!-- Spellbook: Masterpiece Shield -->
+				<item id="96661" min="1" max="1" chance="0.148" /> <!-- Spellbook: Fast Run Lv. 3 -->
+				<item id="96886" min="1" max="1" chance="0.15" /> <!-- Spellbook: Perfect Mastery -->
+				<item id="97106" min="1" max="1" chance="0.154" /> <!-- Spellbook: Wild Charge -->
+				<item id="97844" min="1" max="1" chance="0.144" /> <!-- Spellbook: Improved Sleep -->
 				<item id="79" min="1" max="1" chance="5" /> <!-- Damascus Sword -->
 				<item id="97" min="1" max="1" chance="5" /> <!-- Lance -->
 				<item id="110" min="1" max="1" chance="6.25" /> <!-- Doom Shield -->
@@ -1251,10 +1377,62 @@
 				<item id="2403" min="1" max="1" chance="6.25" /> <!-- Blue Wolf Stockings -->
 				<item id="2404" min="1" max="1" chance="6.25" /> <!-- Doom Stockings -->
 				<item id="2416" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Helmet -->
+				<item id="2417" min="1" max="1" chance="6.25" /> <!-- Sealed Doom Helmet -->
+				<item id="2439" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Boots -->
+				<item id="2475" min="1" max="1" chance="6.25" /> <!-- Sealed Doom Gloves -->
+				<item id="2487" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Gloves -->
+				<item id="2626" min="1" max="1" chance="5" /> <!-- Samurai Long Sword*Samurai Long Sword -->
+				<item id="7883" min="1" max="1" chance="5" /> <!-- Guardian's Sword -->
+				<item id="7889" min="1" max="1" chance="5" /> <!-- Wizard's Tear -->
+				<item id="7893" min="1" max="1" chance="5" /> <!-- Kaim Vanul's Bones -->
+				<item id="7901" min="1" max="1" chance="5" /> <!-- Star Buster -->
+				<item id="91885" min="1" max="1" chance="5" /> <!-- Dismantler -->
+				<item id="91900" min="1" max="1" chance="5" /> <!-- Colichemarde -->
+				<item id="94884" min="1" max="1" chance="5" /> <!-- Volcano -->
+				<item id="80" min="1" max="1" chance="0.231" /> <!-- Tallum Blade -->
+				<item id="98" min="1" max="1" chance="0.231" /> <!-- Halberd -->
+				<item id="150" min="1" max="1" chance="0.231" /> <!-- Elemental Sword -->
+				<item id="212" min="1" max="1" chance="0.231" /> <!-- Dasparion's Staff -->
+				<item id="235" min="1" max="1" chance="0.231" /> <!-- Bloody Orchid -->
+				<item id="269" min="1" max="1" chance="0.231" /> <!-- Bloody Tornado -->
+				<item id="288" min="1" max="1" chance="0.231" /> <!-- Carnage Bow -->
+				<item id="2504" min="1" max="1" chance="0.231" /> <!-- Meteor Shower -->
+				<item id="5287" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Breastplate -->
+				<item id="5288" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="5289" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5290" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Gloves -->
+				<item id="5291" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Boots -->
+				<item id="5292" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="5293" min="1" max="1" chance="2" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="2" /> <!-- Sealed Tallum Helmet -->
+				<item id="5295" min="1" max="1" chance="2" /> <!-- Sealed Tallum Gloves -->
+				<item id="5296" min="1" max="1" chance="2" /> <!-- Sealed Tallum Boots -->
+				<item id="6323" min="1" max="1" chance="6.666" /> <!-- Sealed Phoenix Necklace -->
+				<item id="6324" min="1" max="1" chance="6.668" /> <!-- Sealed Phoenix Earring -->
+				<item id="6325" min="1" max="1" chance="6.666" /> <!-- Sealed Phoenix Ring -->
+				<item id="7884" min="1" max="1" chance="0.231" /> <!-- Infernal Master -->
+				<item id="7894" min="1" max="1" chance="0.231" /> <!-- Spiritual Eye -->
+				<item id="7899" min="1" max="1" chance="0.231" /> <!-- Destroyer Hammer -->
+				<item id="91889" min="1" max="1" chance="0.228" /> <!-- Divine Pain -->
+				<item id="91903" min="1" max="1" chance="0.231" /> <!-- Lacerator -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
-	<npc id="25126" level="83" type="RaidBoss" name="Longhorn Golkonda" title="High Elite">
+	<npc id="25126" level="90" type="RaidBoss" name="Longhorn Golkonda" title="High Elite">
 		<parameters>
 			<param name="RaidSpawnMusic" value="Rm01_A" />
 			<skill name="SelfBuff_a" id="4173" level="7" />
@@ -1265,7 +1443,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="91" /> <!-- Heavy War Axe -->
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="20212621.4912268" hpRegen="2727.58613705657" mp="3554.8" mpRegen="6" />
+			<vitals hp="43341332.1190043" hpRegen="2727.58613705657" mp="4047.6" mpRegen="6" />
 			<attack physical="22058.83812" magical="11036.23325" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2547.802368" magical="2071.52" />
 			<speed>
@@ -1302,47 +1480,134 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Light Souls Lv. 2 -->
-				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Shadow Souls Lv. 2 -->
-				<item id="94096" min="1" max="1" chance="4" /> <!-- Regular Pet Training Guide -->
-				<item id="94138" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Pain of Sagittarius -->
-				<item id="94139" min="1" max="1" chance="0.0274" /> <!-- Spellbook: Esprit -->
-				<item id="94140" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Dark Sense -->
-				<item id="94141" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Buff Thief -->
-				<item id="94321" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Wild Beat -->
-				<item id="94322" min="1" max="1" chance="0.03" /> <!-- Spellbook: Crazy Waltz -->
-				<item id="94506" min="1" max="1" chance="0.0273" /> <!-- Spellbook: Burning Assault -->
-				<item id="94672" min="1" max="1" chance="0.0277" /> <!-- Spellbook: Seal of Infection -->
-				<item id="94675" min="1" max="1" chance="0.0273" /> <!-- Spellbook: Cold Flames -->
-				<item id="94806" min="1" max="1" chance="0.0279" /> <!-- Spellbook: Flying Dagger -->
-				<item id="95357" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Time Burst Lv. 2 -->
-				<item id="95359" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Elemental Wind Lv. 2 -->
-				<item id="95363" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Elemental Spirit Lv. 3 -->
-				<item id="95654" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Elemental Care Lv. 2 -->
-				<item id="95857" min="1" max="1" chance="0.0275" /> <!-- Spellbook: Golden Stone -->
-				<item id="95858" min="1" max="1" chance="0.0275" /> <!-- Spellbook: Crushing Leap -->
-				<item id="95859" min="1" max="1" chance="0.0275" /> <!-- Spellbook: Adena Stun -->
-				<item id="80" min="1" max="1" chance="3.33" /> <!-- Tallum Blade -->
-				<item id="81" min="1" max="1" chance="0.1428" /> <!-- Dragon Slayer -->
-				<item id="98" min="1" max="1" chance="3.33" /> <!-- Halberd -->
-				<item id="150" min="1" max="1" chance="3.33" /> <!-- Elemental Sword -->
-				<item id="151" min="1" max="1" chance="0.1428" /> <!-- Sword of Miracles -->
-				<item id="164" min="1" max="1" chance="0.1428" /> <!-- Elysian -->
-				<item id="212" min="1" max="1" chance="3.33" /> <!-- Dasparion's Staff -->
-				<item id="213" min="1" max="1" chance="0.1428" /> <!-- Branch of the Mother Tree -->
-				<item id="235" min="1" max="1" chance="3.33" /> <!-- Bloody Orchid -->
-				<item id="236" min="1" max="1" chance="0.1428" /> <!-- Soul Separator -->
-				<item id="269" min="1" max="1" chance="3.335" /> <!-- Bloody Tornado -->
-				<item id="270" min="1" max="1" chance="0.1428" /> <!-- Dragon Grinder -->
-				<item id="288" min="1" max="1" chance="3.335" /> <!-- Carnage Bow -->
-				<item id="289" min="1" max="1" chance="0.1428" /> <!-- Soul Bow -->
-				<item id="305" min="1" max="1" chance="0.1428" /> <!-- Tallum Glaive -->
-				<item id="2500" min="1" max="1" chance="0.1428" /> <!-- Dark Legion's Edge -->
-				<item id="2504" min="1" max="1" chance="3.335" /> <!-- Meteor Shower -->
-				<item id="5233" min="1" max="1" chance="3.335" /> <!-- Keshanberk*Keshanberk -->
-				<item id="5287" min="1" max="1" chance="6.25" /> <!-- Sealed Dark Crystal Breastplate -->
-				<item id="5288" min="1" max="1" chance="6.25" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="729" min="1" max="3" chance="100" /> <!-- Scroll: Enchant A-grade Weapon -->
+				<item id="730" min="4" max="6" chance="100" /> <!-- Scroll: Enchant A-grade Armor -->
+				<item id="91942" min="1" max="1" chance="0.033" /> <!-- Spellbook: Collect Light Souls Lv. 2 -->
+				<item id="91943" min="1" max="1" chance="0.033" /> <!-- Spellbook: Collect Shadow Souls Lv. 2 -->
+				<item id="94138" min="1" max="1" chance="0.032" /> <!-- Spellbook: Pain of Sagittarius -->
+				<item id="94139" min="1" max="1" chance="0.033" /> <!-- Spellbook: Esprit -->
+				<item id="94140" min="1" max="1" chance="0.032" /> <!-- Spellbook: Dark Sense -->
+				<item id="94141" min="1" max="1" chance="0.033" /> <!-- Spellbook: Buff Thief -->
+				<item id="94321" min="1" max="1" chance="0.033" /> <!-- Spellbook: Wild Beat -->
+				<item id="94322" min="1" max="1" chance="0.035" /> <!-- Spellbook: Crazy Waltz -->
+				<item id="94506" min="1" max="1" chance="0.032" /> <!-- Spellbook: Burning Assault -->
+				<item id="94672" min="1" max="1" chance="0.033" /> <!-- Spellbook: Seal of Infection -->
+				<item id="94675" min="1" max="1" chance="0.032" /> <!-- Spellbook: Cold Flames -->
+				<item id="94806" min="1" max="1" chance="0.033" /> <!-- Spellbook: Flying Dagger -->
+				<item id="95357" min="1" max="1" chance="0.034" /> <!-- Spellbook: Time Burst Lv. 2 -->
+				<item id="95359" min="1" max="1" chance="0.034" /> <!-- Spellbook: Elemental Wind Lv. 2 -->
+				<item id="95363" min="1" max="1" chance="0.034" /> <!-- Spellbook: Elemental Spirit Lv. 3 -->
+				<item id="95654" min="1" max="1" chance="0.034" /> <!-- Spellbook: Elemental Care Lv. 2 -->
+				<item id="95857" min="1" max="1" chance="0.032" /> <!-- Spellbook: Golden Stone -->
+				<item id="95858" min="1" max="1" chance="0.032" /> <!-- Spellbook: Crushing Leap -->
+				<item id="95859" min="1" max="1" chance="0.032" /> <!-- Spellbook: Adena Stun -->
+				<item id="95860" min="1" max="1" chance="0.034" /> <!-- Spellbook: Life Gain -->
+				<item id="96039" min="1" max="1" chance="0.033" /> <!-- Spellbook: Advanced Cleanse -->
+				<item id="96042" min="1" max="1" chance="0.032" /> <!-- Spellbook: Eva's Power -->
+				<item id="96045" min="1" max="1" chance="0.032" /> <!-- Spellbook: Shillien's Power -->
+				<item id="96046" min="1" max="1" chance="0.033" /> <!-- Spellbook: Divine Recovery -->
+				<item id="96047" min="1" max="1" chance="0.033" /> <!-- Spellbook: Sacred Power -->
+				<item id="96048" min="1" max="1" chance="0.032" /> <!-- Spellbook: Improved Resilience -->
+				<item id="96049" min="1" max="1" chance="0.034" /> <!-- Spellbook: Holy Buster -->
+				<item id="96050" min="1" max="1" chance="0.033" /> <!-- Spellbook: Unleashing -->
+				<item id="96275" min="1" max="1" chance="0.033" /> <!-- Spellbook: Knight's Power -->
+				<item id="96277" min="1" max="1" chance="0.033" /> <!-- Spellbook: Knight's Assault -->
+				<item id="96279" min="1" max="1" chance="0.033" /> <!-- Spellbook: Chain Strike (Shock) -->
+				<item id="96281" min="1" max="1" chance="0.033" /> <!-- Spellbook: Shield Throwing -->
+				<item id="96662" min="1" max="1" chance="0.033" /> <!-- Spellbook: Fatal Accuracy -->
+				<item id="96663" min="1" max="1" chance="0.033" /> <!-- Spellbook: Shadow Assault -->
+				<item id="96664" min="1" max="1" chance="0.033" /> <!-- Spellbook: Rogue Mastery -->
+				<item id="96876" min="1" max="1" chance="0.033" /> <!-- Spellbook: Thorn Shot -->
+				<item id="96881" min="1" max="1" chance="0.034" /> <!-- Spellbook: Devious Shot -->
+				<item id="96882" min="1" max="1" chance="0.032" /> <!-- Spellbook: Steady Aim -->
+				<item id="96883" min="1" max="1" chance="0.032" /> <!-- Spellbook: Alacrity -->
+				<item id="96884" min="1" max="1" chance="0.032" /> <!-- Spellbook: Eagle Eye -->
+				<item id="96885" min="1" max="1" chance="0.035" /> <!-- Spellbook: Dexterous Body -->
+				<item id="97040" min="1" max="1" chance="0.033" /> <!-- Spellbook: Magic Circle -->
+				<item id="97041" min="1" max="1" chance="0.033" /> <!-- Spellbook: Heavy Sleep -->
+				<item id="97105" min="1" max="1" chance="0.034" /> <!-- Spellbook: Final Secret Lv. 2 -->
+				<item id="97107" min="1" max="1" chance="0.034" /> <!-- Spellbook: Threatening Swing -->
+				<item id="97110" min="1" max="1" chance="0.034" /> <!-- Spellbook: Wild Assault -->
+				<item id="97189" min="1" max="1" chance="0.032" /> <!-- Spellbook: Chains of Pain -->
+				<item id="97190" min="1" max="1" chance="0.032" /> <!-- Spellbook: Servitor Ultimate Defense Lv. 3 -->
+				<item id="97321" min="1" max="1" chance="0.032" /> <!-- Spellbook: Blade Throw -->
+				<item id="97322" min="1" max="1" chance="0.032" /> <!-- Spellbook: Sword Spirit Lv. 2 -->
+				<item id="97326" min="1" max="1" chance="0.032" /> <!-- Spellbook: Unleashed Power -->
+				<item id="97327" min="1" max="1" chance="0.032" /> <!-- Spellbook: Anger Lv. 2 -->
+				<item id="97439" min="1" max="1" chance="3.33" /> <!-- Blessed Augmenting Stone: Weapon -->
+				<item id="97440" min="1" max="1" chance="3.33" /> <!-- Blessed Augmenting Stone: Armor -->
+				<item id="97442" min="1" max="1" chance="3.34" /> <!-- Blessed Augmenting Stone: Accessory -->
+				<item id="97457" min="1" max="1" chance="0.032" /> <!-- Spellbook: Powerful Disarm -->
+				<item id="97461" min="1" max="1" chance="0.032" /> <!-- Spellbook: Shock Impact -->
+				<item id="97469" min="1" max="1" chance="0.032" /> <!-- Spellbook: Fragarach -->
+				<item id="97473" min="1" max="1" chance="0.032" /> <!-- Spellbook: Lightning Mastery -->
+				<item id="97745" min="1" max="1" chance="0.033" /> <!-- Spellbook: Master of Aggression -->
+				<item id="97802" min="1" max="1" chance="0.06" /> <!-- Spellbook: Extended Life -->
+				<item id="97839" min="1" max="1" chance="0.032" /> <!-- Spellbook: Fatal Crush -->
+				<item id="97841" min="1" max="1" chance="0.032" /> <!-- Spellbook: Tower Shield Lv. 2 -->
+				<item id="49756" min="1" max="1" chance="100" /> <!-- Cloth Piece -->
+				<item id="96357" min="1" max="1" chance="0.208" /> <!-- STR Dye - Lv. 3 -->
+				<item id="96377" min="1" max="1" chance="0.208" /> <!-- CON Dye - Lv. 3 -->
+				<item id="96397" min="1" max="1" chance="0.208" /> <!-- DEX Dye - Lv. 3 -->
+				<item id="96417" min="1" max="1" chance="0.208" /> <!-- INT Dye - Lv. 3 -->
+				<item id="96437" min="1" max="1" chance="0.208" /> <!-- MEN Dye - Lv. 3 -->
+				<item id="96457" min="1" max="1" chance="0.208" /> <!-- WIT Dye - Lv. 3 -->
+				<item id="97375" min="1" max="1" chance="0.042" /> <!-- Pet Book: Magic Flare -->
+				<item id="97376" min="1" max="1" chance="0.042" /> <!-- Pet Book: Sharp Senses -->
+				<item id="97377" min="1" max="1" chance="0.042" /> <!-- Pet Book: Sound Body -->
+				<item id="97378" min="1" max="1" chance="0.042" /> <!-- Pet Book: Swift Feather -->
+				<item id="97379" min="1" max="1" chance="0.042" /> <!-- Pet Book: Pulling Defense -->
+				<item id="97380" min="1" max="1" chance="0.042" /> <!-- Pet Book: Perfect Bite -->
+				<item id="97381" min="1" max="1" chance="0.25" /> <!-- Pet Book: Physical Training -->
+				<item id="97382" min="1" max="1" chance="0.083" /> <!-- Pet Book: Master Recharge -->
+				<item id="97383" min="1" max="1" chance="0.083" /> <!-- Pet Book: Master Evasion -->
+				<item id="97384" min="1" max="1" chance="0.083" /> <!-- Pet Book: Master Power -->
+				<item id="97385" min="1" max="1" chance="0.083" /> <!-- Pet Book: Master Chance -->
+				<item id="97386" min="1" max="1" chance="0.083" /> <!-- Pet Book: Master Health -->
+				<item id="97387" min="1" max="1" chance="0.083" /> <!-- Pet Book: Master Speed -->
+				<item id="5311" min="1" max="1" chance="7.69" /> <!-- Sealed Armor of Nightmare -->
+				<item id="5312" min="1" max="1" chance="7.69" /> <!-- Sealed Helm of Nightmare -->
+				<item id="5313" min="1" max="1" chance="7.69" /> <!-- Sealed Gauntlets of Nightmare -->
+				<item id="5314" min="1" max="1" chance="7.69" /> <!-- Sealed Boots of Nightmare -->
+				<item id="5315" min="1" max="1" chance="7.69" /> <!-- Sealed Shield of Nightmare -->
+				<item id="5316" min="1" max="1" chance="7.69" /> <!-- Sealed Majestic Plate Armor -->
+				<item id="5317" min="1" max="1" chance="7.69" /> <!-- Sealed Majestic Circlet -->
+				<item id="5318" min="1" max="1" chance="7.69" /> <!-- Sealed Majestic Gauntlets -->
+				<item id="5319" min="1" max="1" chance="7.7" /> <!-- Sealed Majestic Boots -->
+				<item id="5320" min="1" max="1" chance="7.69" /> <!-- Sealed Leather Armor of Nightmare -->
+				<item id="5323" min="1" max="1" chance="7.7" /> <!-- Sealed Majestic Leather Armor -->
+				<item id="5326" min="1" max="1" chance="7.69" /> <!-- Sealed Robe of Nightmare -->
+				<item id="5329" min="1" max="1" chance="7.7" /> <!-- Sealed Majestic Robe -->
+				<item id="8678" min="1" max="1" chance="0.999" /> <!-- Sirra's Blade -->
+				<item id="8679" min="1" max="1" chance="0.999" /> <!-- Sword of Ipos -->
+				<item id="8680" min="1" max="1" chance="0.999" /> <!-- Barakiel's Axe -->
+				<item id="8681" min="1" max="1" chance="0.999" /> <!-- Behemoth' Tuning Fork -->
+				<item id="8682" min="1" max="1" chance="0.999" /> <!-- Naga's Storm -->
+				<item id="8683" min="1" max="1" chance="1.001" /> <!-- Tiphon's Spear -->
+				<item id="8684" min="1" max="1" chance="1.001" /> <!-- Shyeed's Bow -->
+				<item id="8685" min="1" max="1" chance="1.001" /> <!-- Sobekk's Hurricane -->
+				<item id="8686" min="1" max="1" chance="1.001" /> <!-- Themis' Tongue -->
+				<item id="8687" min="1" max="1" chance="1.001" /> <!-- Cabrio's Hand -->
+				<item id="8688" min="1" max="1" chance="1.001" /> <!-- Daimon Crystal -->
+				<item id="8938" min="1" max="1" chance="1.001" /> <!-- Tallum Blade*Damascus Sword -->
+				<item id="91887" min="1" max="1" chance="1.001" /> <!-- Durendal -->
+				<item id="91902" min="1" max="1" chance="1.001" /> <!-- Éclair Bijou -->
+				<item id="94886" min="1" max="1" chance="1.001" /> <!-- Zephyrus -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25127" level="70" type="RaidBoss" name="Chief Rashkos" title="High Elite">
@@ -1394,14 +1659,14 @@
 		<dropLists>
 			<drop>
 				<item id="90045" min="4" max="8" chance="100" /> <!-- Magic Tablet -->
-				<item id="79" min="1" max="1" chance="2.8125" /> <!-- Damascus Sword -->
-				<item id="97" min="1" max="1" chance="2.8125" /> <!-- Lance -->
-				<item id="171" min="1" max="1" chance="2.8125" /> <!-- Deadman's Glory -->
-				<item id="175" min="1" max="1" chance="2.8125" /> <!-- Art of Battle Axe -->
-				<item id="210" min="1" max="1" chance="2.8125" /> <!-- Staff of Evil Spirits -->
-				<item id="234" min="1" max="1" chance="2.8125" /> <!-- Demon's Dagger -->
-				<item id="268" min="1" max="1" chance="2.8125" /> <!-- Bellion Cestus -->
-				<item id="287" min="1" max="1" chance="2.8125" /> <!-- Bow of Peril -->
+				<item id="79" min="1" max="1" chance="2.813" /> <!-- Damascus Sword -->
+				<item id="97" min="1" max="1" chance="2.813" /> <!-- Lance -->
+				<item id="171" min="1" max="1" chance="2.813" /> <!-- Deadman's Glory -->
+				<item id="175" min="1" max="1" chance="2.813" /> <!-- Art of Battle Axe -->
+				<item id="210" min="1" max="1" chance="2.813" /> <!-- Staff of Evil Spirits -->
+				<item id="234" min="1" max="1" chance="2.813" /> <!-- Demon's Dagger -->
+				<item id="268" min="1" max="1" chance="2.813" /> <!-- Bellion Cestus -->
+				<item id="287" min="1" max="1" chance="2.813" /> <!-- Bow of Peril -->
 				<item id="357" min="1" max="1" chance="4.4" /> <!-- Zubei's Breastplate -->
 				<item id="358" min="1" max="1" chance="4.48" /> <!-- Blue Wolf Breastplate -->
 				<item id="383" min="1" max="1" chance="4.4" /> <!-- Zubei's Gaiters -->
@@ -1414,7 +1679,41 @@
 				<item id="887" min="1" max="1" chance="18" /> <!-- Adamantite Ring -->
 				<item id="895" min="1" max="1" chance="11.997" /> <!-- Black Ore Ring -->
 				<item id="918" min="1" max="1" chance="18" /> <!-- Adamantite Necklace -->
+				<item id="926" min="1" max="1" chance="12.006" /> <!-- Black Ore Necklace -->
+				<item id="2380" min="1" max="1" chance="4.48" /> <!-- Blue Wolf Gaiters -->
+				<item id="2384" min="1" max="1" chance="4.4" /> <!-- Zubei's Leather Shirt -->
+				<item id="2388" min="1" max="1" chance="4.4" /> <!-- Zubei's Leather Gaiters -->
+				<item id="2391" min="1" max="1" chance="4.48" /> <!-- Blue Wolf Leather Armor -->
+				<item id="2397" min="1" max="1" chance="4.48" /> <!-- Zubei's Tunic -->
+				<item id="2398" min="1" max="1" chance="4.48" /> <!-- Blue Wolf Tunic -->
+				<item id="2402" min="1" max="1" chance="4.48" /> <!-- Zubei's Stockings -->
+				<item id="2403" min="1" max="1" chance="4.48" /> <!-- Blue Wolf Stockings -->
+				<item id="2416" min="1" max="1" chance="4.48" /> <!-- Sealed Blue Wolf Helmet -->
+				<item id="2439" min="1" max="1" chance="4.48" /> <!-- Sealed Blue Wolf Boots -->
+				<item id="2487" min="1" max="1" chance="4.48" /> <!-- Sealed Blue Wolf Gloves -->
+				<item id="2626" min="1" max="1" chance="2.813" /> <!-- Samurai Long Sword*Samurai Long Sword -->
+				<item id="7883" min="1" max="1" chance="2.813" /> <!-- Guardian's Sword -->
+				<item id="7889" min="1" max="1" chance="2.813" /> <!-- Wizard's Tear -->
+				<item id="7893" min="1" max="1" chance="2.813" /> <!-- Kaim Vanul's Bones -->
+				<item id="7901" min="1" max="1" chance="2.813" /> <!-- Star Buster -->
+				<item id="91885" min="1" max="1" chance="2.813" /> <!-- Dismantler -->
+				<item id="91900" min="1" max="1" chance="2.813" /> <!-- Colichemarde -->
+				<item id="94884" min="1" max="1" chance="2.813" /> <!-- Volcano -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25128" level="50" type="RaidBoss" name="Grand Priest Gharmash" title="Elite">
@@ -1465,9 +1764,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91036" min="1" max="3" chance="20" /> <!-- Fire Spirit Ore -->
 				<item id="91971" min="1" max="1" chance="70" /> <!-- Star Candy - Sealed -->
 				<item id="93002" min="1" max="1" chance="30" /> <!-- Sayha's Blessing Pouch - Sealed -->
+				<item id="91036" min="1" max="3" chance="20" /> <!-- Fire Spirit Ore -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1598,10 +1897,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91035" min="2" max="4" chance="50" /> <!-- Water Spirit Ore -->
 				<item id="91971" min="1" max="3" chance="50" /> <!-- Star Candy - Sealed -->
 				<item id="93002" min="1" max="1" chance="50" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="1" max="3" chance="90" /> <!-- Sayha's Grace - Sealed -->
+				<item id="91035" min="2" max="4" chance="50" /> <!-- Water Spirit Ore -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2029,6 +2328,32 @@
 				<item id="270" min="1" max="1" chance="0.126" /> <!-- Dragon Grinder -->
 				<item id="288" min="1" max="1" chance="0.126" /> <!-- Carnage Bow -->
 				<item id="289" min="1" max="1" chance="0.126" /> <!-- Soul Bow -->
+				<item id="305" min="1" max="1" chance="0.126" /> <!-- Tallum Glaive -->
+				<item id="2500" min="1" max="1" chance="0.126" /> <!-- Dark Legion's Edge -->
+				<item id="2504" min="1" max="1" chance="0.123" /> <!-- Meteor Shower -->
+				<item id="5287" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Breastplate -->
+				<item id="5288" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="5289" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5290" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Gloves -->
+				<item id="5291" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Boots -->
+				<item id="5292" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="5293" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Helmet -->
+				<item id="5295" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Gloves -->
+				<item id="5296" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Boots -->
+				<item id="5297" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Leather Armor -->
+				<item id="5298" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Leggings -->
+				<item id="5301" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Leather Armor -->
+				<item id="5304" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Tunic -->
+				<item id="5305" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Stockings -->
+				<item id="5308" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Robe -->
+				<item id="7884" min="1" max="1" chance="0.123" /> <!-- Infernal Master -->
+				<item id="7894" min="1" max="1" chance="0.123" /> <!-- Spiritual Eye -->
+				<item id="7895" min="1" max="1" chance="0.123" /> <!-- Flaming Dragon Skull -->
+				<item id="7899" min="1" max="1" chance="0.123" /> <!-- Destroyer Hammer -->
+				<item id="7902" min="1" max="1" chance="0.123" /> <!-- Doom Crusher -->
+				<item id="91888" min="1" max="1" chance="0.123" /> <!-- Undertaker -->
+				<item id="91903" min="1" max="1" chance="0.123" /> <!-- Lacerator -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2105,7 +2430,7 @@
 			<height normal="44" />
 		</collision>
 	</npc>
-	<npc id="25143" level="83" type="RaidBoss" name="Wrath Fire Shuriel" title="High Elite">
+	<npc id="25143" level="90" type="RaidBoss" name="Wrath Fire Shuriel" title="High Elite">
 		<parameters>
 			<minions name="Privates">
 				<npc id="25144" count="2" respawnTime="360" weightPoint="1" />
@@ -2118,7 +2443,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="2500" /> <!-- Dark Legion's Edge -->
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="40425242.9824536" hpRegen="2727.58613705657" mp="3554.8" mpRegen="6" />
+			<vitals hp="43341332.1190043" hpRegen="2727.58613705657" mp="4047.6" mpRegen="6" />
 			<attack physical="55147.0953" magical="27590.583125" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="2547.802368" magical="2071.52" />
 			<speed>
@@ -2153,50 +2478,149 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="91942" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Light Souls Lv. 2 -->
-				<item id="91943" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Collect Shadow Souls Lv. 2 -->
-				<item id="94096" min="1" max="1" chance="4" /> <!-- Regular Pet Training Guide -->
-				<item id="94138" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Pain of Sagittarius -->
-				<item id="94139" min="1" max="1" chance="0.0274" /> <!-- Spellbook: Esprit -->
-				<item id="94140" min="1" max="1" chance="0.0271" /> <!-- Spellbook: Dark Sense -->
-				<item id="94141" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Buff Thief -->
-				<item id="94321" min="1" max="1" chance="0.0278" /> <!-- Spellbook: Wild Beat -->
-				<item id="94322" min="1" max="1" chance="0.03" /> <!-- Spellbook: Crazy Waltz -->
-				<item id="94506" min="1" max="1" chance="0.0273" /> <!-- Spellbook: Burning Assault -->
-				<item id="94672" min="1" max="1" chance="0.0277" /> <!-- Spellbook: Seal of Infection -->
-				<item id="94675" min="1" max="1" chance="0.0273" /> <!-- Spellbook: Cold Flames -->
-				<item id="94806" min="1" max="1" chance="0.0279" /> <!-- Spellbook: Flying Dagger -->
-				<item id="95357" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Time Burst Lv. 2 -->
-				<item id="95359" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Elemental Wind Lv. 2 -->
-				<item id="95363" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Elemental Spirit Lv. 3 -->
-				<item id="95654" min="1" max="1" chance="0.0296" /> <!-- Spellbook: Elemental Care Lv. 2 -->
-				<item id="95857" min="1" max="1" chance="0.0275" /> <!-- Spellbook: Golden Stone -->
-				<item id="95858" min="1" max="1" chance="0.0275" /> <!-- Spellbook: Crushing Leap -->
-				<item id="95859" min="1" max="1" chance="0.0275" /> <!-- Spellbook: Adena Stun -->
-				<item id="80" min="1" max="1" chance="3.33" /> <!-- Tallum Blade -->
-				<item id="81" min="1" max="1" chance="0.1428" /> <!-- Dragon Slayer -->
-				<item id="98" min="1" max="1" chance="3.33" /> <!-- Halberd -->
-				<item id="150" min="1" max="1" chance="3.33" /> <!-- Elemental Sword -->
-				<item id="151" min="1" max="1" chance="0.1428" /> <!-- Sword of Miracles -->
-				<item id="164" min="1" max="1" chance="0.1428" /> <!-- Elysian -->
-				<item id="212" min="1" max="1" chance="3.33" /> <!-- Dasparion's Staff -->
-				<item id="213" min="1" max="1" chance="0.1428" /> <!-- Branch of the Mother Tree -->
-				<item id="235" min="1" max="1" chance="3.33" /> <!-- Bloody Orchid -->
-				<item id="236" min="1" max="1" chance="0.1428" /> <!-- Soul Separator -->
-				<item id="269" min="1" max="1" chance="3.335" /> <!-- Bloody Tornado -->
-				<item id="270" min="1" max="1" chance="0.1428" /> <!-- Dragon Grinder -->
-				<item id="288" min="1" max="1" chance="3.335" /> <!-- Carnage Bow -->
-				<item id="289" min="1" max="1" chance="0.1428" /> <!-- Soul Bow -->
-				<item id="305" min="1" max="1" chance="0.1428" /> <!-- Tallum Glaive -->
-				<item id="2500" min="1" max="1" chance="0.1428" /> <!-- Dark Legion's Edge -->
-				<item id="2504" min="1" max="1" chance="3.335" /> <!-- Meteor Shower -->
-				<item id="5233" min="1" max="1" chance="3.335" /> <!-- Keshanberk*Keshanberk -->
-				<item id="5287" min="1" max="1" chance="6.25" /> <!-- Sealed Dark Crystal Breastplate -->
-				<item id="5288" min="1" max="1" chance="6.25" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="729" min="1" max="3" chance="100" /> <!-- Scroll: Enchant A-grade Weapon -->
+				<item id="730" min="4" max="6" chance="100" /> <!-- Scroll: Enchant A-grade Armor -->
+				<item id="91944" min="1" max="1" chance="0.007" /> <!-- Spellbook: Light Master Lv. 2 -->
+				<item id="91945" min="1" max="1" chance="0.007" /> <!-- Spellbook: Shadow Master Lv. 2 -->
+				<item id="92401" min="1" max="1" chance="0.01" /> <!-- Spellbook: White Guardian -->
+				<item id="93631" min="1" max="1" chance="0.007" /> <!-- Spellbook: Hellfire -->
+				<item id="93869" min="1" max="1" chance="0.006" /> <!-- Spellbook: Elemental Burst -->
+				<item id="93870" min="1" max="1" chance="0.006" /> <!-- Spellbook: Ethereal Strike -->
+				<item id="94137" min="1" max="1" chance="0.007" /> <!-- Spellbook: Devour -->
+				<item id="94319" min="1" max="1" chance="0.026" /> <!-- Spellbook: Sword Symphony -->
+				<item id="94320" min="1" max="1" chance="0.028" /> <!-- Spellbook: Dance of Blood -->
+				<item id="94324" min="1" max="1" chance="0.006" /> <!-- Spellbook: Song of Earth -->
+				<item id="94325" min="1" max="1" chance="0.006" /> <!-- Spellbook: Song of Hunter -->
+				<item id="94326" min="1" max="1" chance="0.007" /> <!-- Spellbook: Dance of Warrior -->
+				<item id="94327" min="1" max="1" chance="0.007" /> <!-- Spellbook: Dance of Fire -->
+				<item id="94499" min="1" max="1" chance="0.026" /> <!-- Spellbook: Titanic Weapon -->
+				<item id="94500" min="1" max="1" chance="0.006" /> <!-- Spellbook: Titanic Sweep -->
+				<item id="94501" min="1" max="1" chance="0.006" /> <!-- Spellbook: Titanic Break -->
+				<item id="94502" min="1" max="1" chance="0.025" /> <!-- Spellbook: Ogre Spirit Totem -->
+				<item id="94503" min="1" max="1" chance="0.025" /> <!-- Spellbook: Rabbit Spirit Totem -->
+				<item id="94504" min="1" max="1" chance="0.025" /> <!-- Spellbook: Puma Spirit Totem -->
+				<item id="94505" min="1" max="1" chance="0.006" /> <!-- Spellbook: Burning Strike -->
+				<item id="94507" min="1" max="1" chance="0.006" /> <!-- Spellbook: Armor Break -->
+				<item id="94670" min="1" max="1" chance="0.006" /> <!-- Spellbook: Debuff Master -->
+				<item id="94671" min="1" max="1" chance="0.025" /> <!-- Spellbook: Flame Burst -->
+				<item id="94674" min="1" max="1" chance="0.006" /> <!-- Spellbook: Blood Bond -->
+				<item id="95348" min="1" max="1" chance="0.006" /> <!-- Spellbook: Song of Wind -->
+				<item id="95349" min="1" max="1" chance="0.007" /> <!-- Spellbook: Dance of Fury -->
+				<item id="95350" min="1" max="1" chance="0.007" /> <!-- Spellbook: Goring Charge -->
+				<item id="95352" min="1" max="1" chance="0.007" /> <!-- Spellbook: Elemental Changing -->
+				<item id="95356" min="1" max="1" chance="0.026" /> <!-- Spellbook: Extra Hit -->
+				<item id="95365" min="1" max="1" chance="0.007" /> <!-- Spellbook: Elemental Spirit Lv. 4 -->
+				<item id="95856" min="1" max="1" chance="0.006" /> <!-- Spellbook: Fortune Time -->
+				<item id="95862" min="1" max="1" chance="0.007" /> <!-- Spellbook: Mechanical Masterpiece -->
+				<item id="95863" min="1" max="1" chance="0.007" /> <!-- Spellbook: Blacksmith's Attack -->
+				<item id="96037" min="1" max="1" chance="0.006" /> <!-- Spellbook: Sensation -->
+				<item id="96038" min="1" max="1" chance="0.025" /> <!-- Spellbook: Balanced Body -->
+				<item id="96040" min="1" max="1" chance="0.006" /> <!-- Spellbook: Treatment -->
+				<item id="96041" min="1" max="1" chance="0.025" /> <!-- Spellbook: Eva's Nocturne -->
+				<item id="96043" min="1" max="1" chance="0.006" /> <!-- Spellbook: Duress -->
+				<item id="96044" min="1" max="1" chance="0.025" /> <!-- Spellbook: Nemesis -->
+				<item id="96283" min="1" max="1" chance="0.006" /> <!-- Spellbook: Power of Life -->
+				<item id="96285" min="1" max="1" chance="0.006" /> <!-- Spellbook: Toughness -->
+				<item id="96287" min="1" max="1" chance="0.026" /> <!-- Spellbook: Ultimate Defense Lv. 3 -->
+				<item id="96605" min="1" max="1" chance="0.025" /> <!-- Spellbook: Shield of Security -->
+				<item id="96607" min="1" max="1" chance="0.025" /> <!-- Spellbook: Lunatic Crusher -->
+				<item id="96609" min="1" max="1" chance="0.025" /> <!-- Spellbook: Eva's Care -->
+				<item id="96611" min="1" max="1" chance="0.025" /> <!-- Spellbook: Shillien's Curse -->
+				<item id="96665" min="1" max="1" chance="0.006" /> <!-- Spellbook: Seclusion -->
+				<item id="96666" min="1" max="1" chance="0.026" /> <!-- Spellbook: Dark Blow -->
+				<item id="96667" min="1" max="1" chance="0.006" /> <!-- Spellbook: Reversed Pull -->
+				<item id="96668" min="1" max="1" chance="0.006" /> <!-- Spellbook: Synchro Freedom -->
+				<item id="96669" min="1" max="1" chance="0.006" /> <!-- Spellbook: Ethereal Blood -->
+				<item id="96874" min="1" max="1" chance="0.006" /> <!-- Spellbook: True Aim -->
+				<item id="96875" min="1" max="1" chance="0.007" /> <!-- Spellbook: Deadly Shooter -->
+				<item id="96877" min="1" max="1" chance="0.027" /> <!-- Spellbook: Chain Arrest -->
+				<item id="96878" min="1" max="1" chance="0.025" /> <!-- Spellbook: Flame Arrow -->
+				<item id="96879" min="1" max="1" chance="0.025" /> <!-- Spellbook: Arrow Shower -->
+				<item id="96880" min="1" max="1" chance="0.025" /> <!-- Spellbook: Piercing Arrow -->
+				<item id="97037" min="1" max="1" chance="0.006" /> <!-- Spellbook: Faery Shield -->
+				<item id="97038" min="1" max="1" chance="0.006" /> <!-- Spellbook: Soul Guardian -->
+				<item id="97039" min="1" max="1" chance="0.026" /> <!-- Spellbook: Spiral -->
+				<item id="97102" min="1" max="1" chance="0.007" /> <!-- Spellbook: Giant's Stomp -->
+				<item id="97104" min="1" max="1" chance="0.033" /> <!-- Spellbook: Master of Combat Lv. 3 -->
+				<item id="97108" min="1" max="1" chance="0.027" /> <!-- Spellbook: Wild Growl Lv. 2 -->
+				<item id="97109" min="1" max="1" chance="0.027" /> <!-- Spellbook: Darkness Unleashing -->
+				<item id="97185" min="1" max="1" chance="0.006" /> <!-- Spellbook: Cubic of Secrets Lv. 2 -->
+				<item id="97186" min="1" max="1" chance="0.006" /> <!-- Spellbook: Elemental Cubic Lv. 2 -->
+				<item id="97187" min="1" max="1" chance="0.006" /> <!-- Spellbook: Phantom Cubic Lv. 2 -->
+				<item id="97188" min="1" max="1" chance="0.025" /> <!-- Spellbook: Ray of Light -->
+				<item id="97319" min="1" max="1" chance="0.006" /> <!-- Spellbook: Blade Wave -->
+				<item id="97320" min="1" max="1" chance="0.025" /> <!-- Spellbook: Slashing Blades -->
+				<item id="97324" min="1" max="1" chance="0.006" /> <!-- Spellbook: Spear Cage -->
+				<item id="97325" min="1" max="1" chance="0.025" /> <!-- Spellbook: Spear Rumble -->
+				<item id="97439" min="1" max="1" chance="3.996" /> <!-- Blessed Augmenting Stone: Weapon -->
+				<item id="97440" min="1" max="1" chance="3.996" /> <!-- Blessed Augmenting Stone: Armor -->
+				<item id="97442" min="1" max="1" chance="4.008" /> <!-- Blessed Augmenting Stone: Accessory -->
+				<item id="97455" min="1" max="1" chance="0.006" /> <!-- Spellbook: Soul Mark -->
+				<item id="97459" min="1" max="1" chance="0.025" /> <!-- Spellbook: Soul Guard Lv. 3 -->
+				<item id="97463" min="1" max="1" chance="0.025" /> <!-- Spellbook: Death Pain -->
+				<item id="97467" min="1" max="1" chance="0.025" /> <!-- Spellbook: Resonance -->
+				<item id="97471" min="1" max="1" chance="0.025" /> <!-- Spellbook: Lightning Tornado -->
+				<item id="97833" min="1" max="1" chance="0.026" /> <!-- Spellbook: Music Mastery -->
+				<item id="97834" min="1" max="1" chance="0.028" /> <!-- Spellbook: Dance Mastery -->
+				<item id="97835" min="1" max="1" chance="0.026" /> <!-- Spellbook: Song of Silence Lv. 4 -->
+				<item id="97836" min="1" max="1" chance="0.028" /> <!-- Spellbook: Dance of Medusa Lv. 4 -->
+				<item id="97838" min="1" max="1" chance="0.006" /> <!-- Spellbook: Unique Seal of Damage -->
+				<item id="97840" min="1" max="1" chance="0.025" /> <!-- Spellbook: Essential Energy -->
+				<item id="97842" min="1" max="1" chance="0.025" /> <!-- Spellbook: Great Attack Lv. 3 -->
+				<item id="97843" min="1" max="1" chance="0.025" /> <!-- Spellbook: Perfect Abilities Lv. 3 -->
+				<item id="49756" min="1" max="1" chance="100" /> <!-- Cloth Piece -->
+				<item id="96357" min="1" max="1" chance="0.208" /> <!-- STR Dye - Lv. 3 -->
+				<item id="96377" min="1" max="1" chance="0.208" /> <!-- CON Dye - Lv. 3 -->
+				<item id="96397" min="1" max="1" chance="0.208" /> <!-- DEX Dye - Lv. 3 -->
+				<item id="96417" min="1" max="1" chance="0.208" /> <!-- INT Dye - Lv. 3 -->
+				<item id="96437" min="1" max="1" chance="0.208" /> <!-- MEN Dye - Lv. 3 -->
+				<item id="96457" min="1" max="1" chance="0.208" /> <!-- WIT Dye - Lv. 3 -->
+				<item id="5311" min="1" max="1" chance="7.69" /> <!-- Sealed Armor of Nightmare -->
+				<item id="5312" min="1" max="1" chance="7.69" /> <!-- Sealed Helm of Nightmare -->
+				<item id="5313" min="1" max="1" chance="7.69" /> <!-- Sealed Gauntlets of Nightmare -->
+				<item id="5314" min="1" max="1" chance="7.69" /> <!-- Sealed Boots of Nightmare -->
+				<item id="5315" min="1" max="1" chance="7.69" /> <!-- Sealed Shield of Nightmare -->
+				<item id="5316" min="1" max="1" chance="7.69" /> <!-- Sealed Majestic Plate Armor -->
+				<item id="5317" min="1" max="1" chance="7.69" /> <!-- Sealed Majestic Circlet -->
+				<item id="5318" min="1" max="1" chance="7.69" /> <!-- Sealed Majestic Gauntlets -->
+				<item id="5319" min="1" max="1" chance="7.7" /> <!-- Sealed Majestic Boots -->
+				<item id="5320" min="1" max="1" chance="7.69" /> <!-- Sealed Leather Armor of Nightmare -->
+				<item id="5323" min="1" max="1" chance="7.7" /> <!-- Sealed Majestic Leather Armor -->
+				<item id="5326" min="1" max="1" chance="7.69" /> <!-- Sealed Robe of Nightmare -->
+				<item id="5329" min="1" max="1" chance="7.7" /> <!-- Sealed Majestic Robe -->
+				<item id="8678" min="1" max="1" chance="0.999" /> <!-- Sirra's Blade -->
+				<item id="8679" min="1" max="1" chance="0.999" /> <!-- Sword of Ipos -->
+				<item id="8680" min="1" max="1" chance="0.999" /> <!-- Barakiel's Axe -->
+				<item id="8681" min="1" max="1" chance="0.999" /> <!-- Behemoth' Tuning Fork -->
+				<item id="8682" min="1" max="1" chance="0.999" /> <!-- Naga's Storm -->
+				<item id="8683" min="1" max="1" chance="1.001" /> <!-- Tiphon's Spear -->
+				<item id="8684" min="1" max="1" chance="1.001" /> <!-- Shyeed's Bow -->
+				<item id="8685" min="1" max="1" chance="1.001" /> <!-- Sobekk's Hurricane -->
+				<item id="8686" min="1" max="1" chance="1.001" /> <!-- Themis' Tongue -->
+				<item id="8687" min="1" max="1" chance="1.001" /> <!-- Cabrio's Hand -->
+				<item id="8688" min="1" max="1" chance="1.001" /> <!-- Daimon Crystal -->
+				<item id="8938" min="1" max="1" chance="1.001" /> <!-- Tallum Blade*Damascus Sword -->
+				<item id="91887" min="1" max="1" chance="1.001" /> <!-- Durendal -->
+				<item id="91902" min="1" max="1" chance="1.001" /> <!-- Éclair Bijou -->
+				<item id="94886" min="1" max="1" chance="1.001" /> <!-- Zephyrus -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
-	<npc id="25144" level="80" type="Monster" name="Shuriel's Oracle" title="Minion">
+	<npc id="25144" level="90" type="Monster" name="Shuriel's Oracle" title="Minion">
 		<parameters>
 			<skill name="HealMagic_a" id="4210" level="7" />
 			<skill name="SelfRangeBuff_a" id="4214" level="7" />
@@ -2205,9 +2629,9 @@
 		<sex>MALE</sex>
 		<equipment rhand="201" /> <!-- Club of Nature -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1101947.04427217" hpRegen="529.473646450226" mp="1674.8" mpRegen="3" />
+			<vitals hp="1217235.08613452" hpRegen="529.473646450226" mp="2023.8" mpRegen="3" />
 			<attack physical="11680.3916467087" magical="7953.02" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="1024.125" magical="499.6" />
+			<defence physical="2383" magical="1045" />
 			<speed>
 				<walk ground="70" />
 				<run ground="170" />
@@ -2237,14 +2661,14 @@
 			<height normal="34" />
 		</collision>
 	</npc>
-	<npc id="25145" level="80" type="Monster" name="Shuriel's Paladin" title="Minion">
+	<npc id="25145" level="90" type="Monster" name="Shuriel's Paladin" title="Minion">
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="73" /> <!-- Tear of Darkness -->
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="1101947.04427217" hpRegen="529.473646450226" mp="1674.8" mpRegen="3" />
+			<vitals hp="1217235.08613452" hpRegen="529.473646450226" mp="2023.8" mpRegen="3" />
 			<attack physical="11680.3916467087" magical="7953.02" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="1024.125" magical="499.6" />
+			<defence physical="2383" magical="1045" />
 			<speed>
 				<walk ground="50" />
 				<run ground="170" />
@@ -2323,13 +2747,19 @@
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
-				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25147" level="20" type="Monster" name="Assassin of Bifrons" title="Minion">
@@ -2458,13 +2888,13 @@
 				<item id="952" min="7" max="11" chance="100" /> <!-- Scroll: Enchant C-grade Armor -->
 				<item id="119" min="1" max="1" chance="9.999" /> <!-- Necklace of Seal -->
 				<item id="135" min="1" max="1" chance="6.825" /> <!-- Samurai Long Sword -->
-				<item id="204" min="1" max="1" chance="6.8175" /> <!-- Deadman's Staff -->
-				<item id="205" min="1" max="1" chance="6.8175" /> <!-- Ghoul's Staff -->
-				<item id="206" min="1" max="1" chance="6.8175" /> <!-- Demon's Staff -->
-				<item id="228" min="1" max="1" chance="6.8175" /> <!-- Crystal Dagger -->
-				<item id="266" min="1" max="1" chance="6.8175" /> <!-- Great Pata -->
-				<item id="286" min="1" max="1" chance="6.8175" /> <!-- Eminence Bow -->
-				<item id="299" min="1" max="1" chance="6.8175" /> <!-- Orcish Poleaxe -->
+				<item id="204" min="1" max="1" chance="6.818" /> <!-- Deadman's Staff -->
+				<item id="205" min="1" max="1" chance="6.818" /> <!-- Ghoul's Staff -->
+				<item id="206" min="1" max="1" chance="6.818" /> <!-- Demon's Staff -->
+				<item id="228" min="1" max="1" chance="6.818" /> <!-- Crystal Dagger -->
+				<item id="266" min="1" max="1" chance="6.818" /> <!-- Great Pata -->
+				<item id="286" min="1" max="1" chance="6.818" /> <!-- Eminence Bow -->
+				<item id="299" min="1" max="1" chance="6.818" /> <!-- Orcish Poleaxe -->
 				<item id="854" min="1" max="1" chance="9.999" /> <!-- Earring of Seal -->
 				<item id="855" min="1" max="1" chance="9.999" /> <!-- Nassen's Earring -->
 				<item id="857" min="1" max="1" chance="9.999" /> <!-- Divine Earring -->
@@ -2473,9 +2903,9 @@
 				<item id="888" min="1" max="1" chance="9.999" /> <!-- Divine Ring -->
 				<item id="917" min="1" max="1" chance="10.008" /> <!-- Necklace of Mermaid -->
 				<item id="919" min="1" max="1" chance="9.999" /> <!-- Divine Necklace -->
-				<item id="2503" min="1" max="1" chance="6.8175" /> <!-- Yaksa Mace -->
-				<item id="91882" min="1" max="1" chance="6.8175" /> <!-- Saber Tooth -->
-				<item id="91896" min="1" max="1" chance="6.8175" /> <!-- Admiral's Estoc -->
+				<item id="2503" min="1" max="1" chance="6.818" /> <!-- Yaksa Mace -->
+				<item id="91882" min="1" max="1" chance="6.818" /> <!-- Saber Tooth -->
+				<item id="91896" min="1" max="1" chance="6.818" /> <!-- Admiral's Estoc -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2608,13 +3038,19 @@
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
-				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25153" level="34" type="Monster" name="Claws of Shadar" title="Minion">
@@ -2740,13 +3176,19 @@
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
 				<item id="90045" min="1" max="1" chance="75" /> <!-- Magic Tablet -->
-				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.4" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="1.6" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="1.25" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25156" level="39" type="Monster" name="Fanatic Wizard" title="Minion">
@@ -2877,7 +3319,22 @@
 		</collision>
 		<dropLists>
 			<drop>
+				<item id="93388" min="1" max="1" chance="0.158" /> <!-- Spellbook: Death Guard -->
+				<item id="93392" min="1" max="1" chance="0.15" /> <!-- Spellbook: Bone Cage -->
+				<item id="93633" min="1" max="1" chance="0.162" /> <!-- Spellbook: Drain Magic Energy -->
+				<item id="93867" min="1" max="1" chance="0.143" /> <!-- Spellbook: Amazing Thunder Storm Mastery -->
+				<item id="93871" min="1" max="1" chance="0.149" /> <!-- Spellbook: Knight's Help -->
+				<item id="94134" min="1" max="1" chance="0.143" /> <!-- Spellbook: Amazing Spike Thrust Mastery -->
+				<item id="94323" min="1" max="1" chance="0.16" /> <!-- Spellbook: Frantic Pace -->
+				<item id="94497" min="1" max="1" chance="0.15" /> <!-- Spellbook: Life Force Harmony -->
+				<item id="94669" min="1" max="1" chance="0.146" /> <!-- Spellbook: Pa'agrio's Medicine -->
+				<item id="94676" min="1" max="1" chance="0.144" /> <!-- Spellbook: Chant of Healing -->
 				<item id="95772" min="1" max="1" chance="0.5" /> <!-- Master's Book Chest -->
+				<item id="96273" min="1" max="1" chance="0.149" /> <!-- Spellbook: Masterpiece Shield -->
+				<item id="96661" min="1" max="1" chance="0.148" /> <!-- Spellbook: Fast Run Lv. 3 -->
+				<item id="96886" min="1" max="1" chance="0.15" /> <!-- Spellbook: Perfect Mastery -->
+				<item id="97106" min="1" max="1" chance="0.154" /> <!-- Spellbook: Wild Charge -->
+				<item id="97844" min="1" max="1" chance="0.144" /> <!-- Spellbook: Improved Sleep -->
 				<item id="79" min="1" max="1" chance="5" /> <!-- Damascus Sword -->
 				<item id="97" min="1" max="1" chance="5" /> <!-- Lance -->
 				<item id="110" min="1" max="1" chance="6.25" /> <!-- Doom Shield -->
@@ -2898,7 +3355,59 @@
 				<item id="2403" min="1" max="1" chance="6.25" /> <!-- Blue Wolf Stockings -->
 				<item id="2404" min="1" max="1" chance="6.25" /> <!-- Doom Stockings -->
 				<item id="2416" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Helmet -->
+				<item id="2417" min="1" max="1" chance="6.25" /> <!-- Sealed Doom Helmet -->
+				<item id="2439" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Boots -->
+				<item id="2475" min="1" max="1" chance="6.25" /> <!-- Sealed Doom Gloves -->
+				<item id="2487" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Gloves -->
+				<item id="2626" min="1" max="1" chance="5" /> <!-- Samurai Long Sword*Samurai Long Sword -->
+				<item id="7883" min="1" max="1" chance="5" /> <!-- Guardian's Sword -->
+				<item id="7889" min="1" max="1" chance="5" /> <!-- Wizard's Tear -->
+				<item id="7893" min="1" max="1" chance="5" /> <!-- Kaim Vanul's Bones -->
+				<item id="7901" min="1" max="1" chance="5" /> <!-- Star Buster -->
+				<item id="91885" min="1" max="1" chance="5" /> <!-- Dismantler -->
+				<item id="91900" min="1" max="1" chance="5" /> <!-- Colichemarde -->
+				<item id="94884" min="1" max="1" chance="5" /> <!-- Volcano -->
+				<item id="80" min="1" max="1" chance="0.231" /> <!-- Tallum Blade -->
+				<item id="98" min="1" max="1" chance="0.231" /> <!-- Halberd -->
+				<item id="150" min="1" max="1" chance="0.231" /> <!-- Elemental Sword -->
+				<item id="212" min="1" max="1" chance="0.231" /> <!-- Dasparion's Staff -->
+				<item id="235" min="1" max="1" chance="0.231" /> <!-- Bloody Orchid -->
+				<item id="269" min="1" max="1" chance="0.231" /> <!-- Bloody Tornado -->
+				<item id="288" min="1" max="1" chance="0.231" /> <!-- Carnage Bow -->
+				<item id="2504" min="1" max="1" chance="0.231" /> <!-- Meteor Shower -->
+				<item id="5287" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Breastplate -->
+				<item id="5288" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="5289" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5290" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Gloves -->
+				<item id="5291" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Boots -->
+				<item id="5292" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="5293" min="1" max="1" chance="2" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="2" /> <!-- Sealed Tallum Helmet -->
+				<item id="5295" min="1" max="1" chance="2" /> <!-- Sealed Tallum Gloves -->
+				<item id="5296" min="1" max="1" chance="2" /> <!-- Sealed Tallum Boots -->
+				<item id="6323" min="1" max="1" chance="6.666" /> <!-- Sealed Phoenix Necklace -->
+				<item id="6324" min="1" max="1" chance="6.668" /> <!-- Sealed Phoenix Earring -->
+				<item id="6325" min="1" max="1" chance="6.666" /> <!-- Sealed Phoenix Ring -->
+				<item id="7884" min="1" max="1" chance="0.231" /> <!-- Infernal Master -->
+				<item id="7894" min="1" max="1" chance="0.231" /> <!-- Spiritual Eye -->
+				<item id="7899" min="1" max="1" chance="0.231" /> <!-- Destroyer Hammer -->
+				<item id="91889" min="1" max="1" chance="0.228" /> <!-- Divine Pain -->
+				<item id="91903" min="1" max="1" chance="0.231" /> <!-- Lacerator -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25159" level="80" type="RaidBoss" name="Paniel the Unicorn" title="Elite">
@@ -2952,16 +3461,22 @@
 				<item id="730" min="1" max="1" chance="4.8" /> <!-- Scroll: Enchant A-grade Armor -->
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
 				<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
-				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="2.5" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
+				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="96623" min="1" max="1" chance="1.6" /> <!-- Dye Powder -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25160" level="53" type="Monster" name="Rapini the Unicorn" title="Minion">
@@ -3109,6 +3624,32 @@
 				<item id="270" min="1" max="1" chance="0.126" /> <!-- Dragon Grinder -->
 				<item id="288" min="1" max="1" chance="0.126" /> <!-- Carnage Bow -->
 				<item id="289" min="1" max="1" chance="0.126" /> <!-- Soul Bow -->
+				<item id="305" min="1" max="1" chance="0.126" /> <!-- Tallum Glaive -->
+				<item id="2500" min="1" max="1" chance="0.126" /> <!-- Dark Legion's Edge -->
+				<item id="2504" min="1" max="1" chance="0.123" /> <!-- Meteor Shower -->
+				<item id="5287" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Breastplate -->
+				<item id="5288" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="5289" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5290" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Gloves -->
+				<item id="5291" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Boots -->
+				<item id="5292" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="5293" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Helmet -->
+				<item id="5295" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Gloves -->
+				<item id="5296" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Boots -->
+				<item id="5297" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Leather Armor -->
+				<item id="5298" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Leggings -->
+				<item id="5301" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Leather Armor -->
+				<item id="5304" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Tunic -->
+				<item id="5305" min="1" max="1" chance="1.25" /> <!-- Sealed Tallum Stockings -->
+				<item id="5308" min="1" max="1" chance="1.25" /> <!-- Sealed Dark Crystal Robe -->
+				<item id="7884" min="1" max="1" chance="0.123" /> <!-- Infernal Master -->
+				<item id="7894" min="1" max="1" chance="0.123" /> <!-- Spiritual Eye -->
+				<item id="7895" min="1" max="1" chance="0.123" /> <!-- Flaming Dragon Skull -->
+				<item id="7899" min="1" max="1" chance="0.123" /> <!-- Destroyer Hammer -->
+				<item id="7902" min="1" max="1" chance="0.123" /> <!-- Doom Crusher -->
+				<item id="91888" min="1" max="1" chance="0.123" /> <!-- Undertaker -->
+				<item id="91903" min="1" max="1" chance="0.123" /> <!-- Lacerator -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3164,22 +3705,28 @@
 				<item id="730" min="1" max="1" chance="4.8" /> <!-- Scroll: Enchant A-grade Armor -->
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
 				<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
-				<item id="91031" min="1" max="1" chance="0.25" /> <!-- Water Spirit Evolution Stone -->
-				<item id="91032" min="1" max="1" chance="0.25" /> <!-- Fire Spirit Evolution Stone -->
-				<item id="91033" min="1" max="1" chance="0.25" /> <!-- Wind Spirit Evolution Stone -->
-				<item id="91034" min="1" max="1" chance="0.25" /> <!-- Earth Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="2.5" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
+				<item id="91031" min="1" max="1" chance="0.25" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.25" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.25" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.25" /> <!-- Earth Spirit Evolution Stone -->
 				<item id="96623" min="1" max="1" chance="1.6" /> <!-- Dye Powder -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
-	<npc id="25166" level="80" type="RaidBoss" name="Ikuntai" title="Elite">
+	<npc id="25166" level="85" type="RaidBoss" name="Ikuntai" title="Elite">
 		<parameters>
 			<minions name="Privates">
 				<npc id="25167" count="2" respawnTime="360" weightPoint="1" />
@@ -3192,7 +3739,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="124" /> <!-- Elemental Sword -->
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="104387.308038203" hpRegen="1" mp="3349.6" mpRegen="6" />
+			<vitals hp="168116.803468606" hpRegen="1" mp="3693.6" mpRegen="6" />
 			<attack physical="4372.85376" magical="1756.026816" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2048.25" magical="999.2" />
 			<speed>
@@ -3229,11 +3776,11 @@
 			<drop>
 				<item id="729" min="1" max="1" chance="3.6" /> <!-- Scroll: Enchant A-grade Weapon -->
 				<item id="730" min="1" max="1" chance="14.4" /> <!-- Scroll: Enchant A-grade Armor -->
-				<item id="91033" min="1" max="1" chance="1" /> <!-- Wind Spirit Evolution Stone -->
 				<item id="93002" min="2" max="4" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.8" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="3.2" /> <!-- Augmenting Stone: Armor -->
 				<item id="94328" min="1" max="1" chance="0.07" /> <!-- Elixir Powder - Sealed -->
+				<item id="91033" min="1" max="1" chance="1" /> <!-- Wind Spirit Evolution Stone -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3439,6 +3986,9 @@
 				<item id="880" min="1" max="3" chance="26.664" /> <!-- Black Pearl Ring -->
 				<item id="912" min="1" max="1" chance="26.672" /> <!-- Necklace of Old Forest -->
 				<item id="2422" min="1" max="3" chance="4.75" /> <!-- Reinforced Leather Boots -->
+				<item id="2423" min="1" max="3" chance="4.75" /> <!-- Boots of Knowledge -->
+				<item id="2446" min="1" max="3" chance="4.75" /> <!-- Reinforced Leather Gloves -->
+				<item id="2447" min="1" max="3" chance="4.75" /> <!-- Gloves of Knowledge -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3563,7 +4113,22 @@
 		</collision>
 		<dropLists>
 			<drop>
+				<item id="93388" min="1" max="1" chance="0.158" /> <!-- Spellbook: Death Guard -->
+				<item id="93392" min="1" max="1" chance="0.15" /> <!-- Spellbook: Bone Cage -->
+				<item id="93633" min="1" max="1" chance="0.162" /> <!-- Spellbook: Drain Magic Energy -->
+				<item id="93867" min="1" max="1" chance="0.143" /> <!-- Spellbook: Amazing Thunder Storm Mastery -->
+				<item id="93871" min="1" max="1" chance="0.149" /> <!-- Spellbook: Knight's Help -->
+				<item id="94134" min="1" max="1" chance="0.143" /> <!-- Spellbook: Amazing Spike Thrust Mastery -->
+				<item id="94323" min="1" max="1" chance="0.16" /> <!-- Spellbook: Frantic Pace -->
+				<item id="94497" min="1" max="1" chance="0.15" /> <!-- Spellbook: Life Force Harmony -->
+				<item id="94669" min="1" max="1" chance="0.146" /> <!-- Spellbook: Pa'agrio's Medicine -->
+				<item id="94676" min="1" max="1" chance="0.144" /> <!-- Spellbook: Chant of Healing -->
 				<item id="95772" min="1" max="1" chance="0.5" /> <!-- Master's Book Chest -->
+				<item id="96273" min="1" max="1" chance="0.149" /> <!-- Spellbook: Masterpiece Shield -->
+				<item id="96661" min="1" max="1" chance="0.148" /> <!-- Spellbook: Fast Run Lv. 3 -->
+				<item id="96886" min="1" max="1" chance="0.15" /> <!-- Spellbook: Perfect Mastery -->
+				<item id="97106" min="1" max="1" chance="0.154" /> <!-- Spellbook: Wild Charge -->
+				<item id="97844" min="1" max="1" chance="0.144" /> <!-- Spellbook: Improved Sleep -->
 				<item id="79" min="1" max="1" chance="5" /> <!-- Damascus Sword -->
 				<item id="97" min="1" max="1" chance="5" /> <!-- Lance -->
 				<item id="110" min="1" max="1" chance="6.25" /> <!-- Doom Shield -->
@@ -3584,7 +4149,59 @@
 				<item id="2403" min="1" max="1" chance="6.25" /> <!-- Blue Wolf Stockings -->
 				<item id="2404" min="1" max="1" chance="6.25" /> <!-- Doom Stockings -->
 				<item id="2416" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Helmet -->
+				<item id="2417" min="1" max="1" chance="6.25" /> <!-- Sealed Doom Helmet -->
+				<item id="2439" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Boots -->
+				<item id="2475" min="1" max="1" chance="6.25" /> <!-- Sealed Doom Gloves -->
+				<item id="2487" min="1" max="1" chance="6.25" /> <!-- Sealed Blue Wolf Gloves -->
+				<item id="2626" min="1" max="1" chance="5" /> <!-- Samurai Long Sword*Samurai Long Sword -->
+				<item id="7883" min="1" max="1" chance="5" /> <!-- Guardian's Sword -->
+				<item id="7889" min="1" max="1" chance="5" /> <!-- Wizard's Tear -->
+				<item id="7893" min="1" max="1" chance="5" /> <!-- Kaim Vanul's Bones -->
+				<item id="7901" min="1" max="1" chance="5" /> <!-- Star Buster -->
+				<item id="91885" min="1" max="1" chance="5" /> <!-- Dismantler -->
+				<item id="91900" min="1" max="1" chance="5" /> <!-- Colichemarde -->
+				<item id="94884" min="1" max="1" chance="5" /> <!-- Volcano -->
+				<item id="80" min="1" max="1" chance="0.231" /> <!-- Tallum Blade -->
+				<item id="98" min="1" max="1" chance="0.231" /> <!-- Halberd -->
+				<item id="150" min="1" max="1" chance="0.231" /> <!-- Elemental Sword -->
+				<item id="212" min="1" max="1" chance="0.231" /> <!-- Dasparion's Staff -->
+				<item id="235" min="1" max="1" chance="0.231" /> <!-- Bloody Orchid -->
+				<item id="269" min="1" max="1" chance="0.231" /> <!-- Bloody Tornado -->
+				<item id="288" min="1" max="1" chance="0.231" /> <!-- Carnage Bow -->
+				<item id="2504" min="1" max="1" chance="0.231" /> <!-- Meteor Shower -->
+				<item id="5287" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Breastplate -->
+				<item id="5288" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Gaiters -->
+				<item id="5289" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5290" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Gloves -->
+				<item id="5291" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Boots -->
+				<item id="5292" min="1" max="1" chance="2" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="5293" min="1" max="1" chance="2" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="2" /> <!-- Sealed Tallum Helmet -->
+				<item id="5295" min="1" max="1" chance="2" /> <!-- Sealed Tallum Gloves -->
+				<item id="5296" min="1" max="1" chance="2" /> <!-- Sealed Tallum Boots -->
+				<item id="6323" min="1" max="1" chance="6.666" /> <!-- Sealed Phoenix Necklace -->
+				<item id="6324" min="1" max="1" chance="6.668" /> <!-- Sealed Phoenix Earring -->
+				<item id="6325" min="1" max="1" chance="6.666" /> <!-- Sealed Phoenix Ring -->
+				<item id="7884" min="1" max="1" chance="0.231" /> <!-- Infernal Master -->
+				<item id="7894" min="1" max="1" chance="0.231" /> <!-- Spiritual Eye -->
+				<item id="7899" min="1" max="1" chance="0.231" /> <!-- Destroyer Hammer -->
+				<item id="91889" min="1" max="1" chance="0.228" /> <!-- Divine Pain -->
+				<item id="91903" min="1" max="1" chance="0.231" /> <!-- Lacerator -->
 			</drop>
+			<fortune>
+				<item id="94135" min="1" max="1" chance="0.067" /> <!-- Master's Book: Might -->
+				<item id="94136" min="1" max="1" chance="0.067" /> <!-- Master's Book: Shield -->
+				<item id="94361" min="1" max="1" chance="0.067" /> <!-- Master's Book: Empower -->
+				<item id="94362" min="1" max="1" chance="0.067" /> <!-- Master's Book: Magic Barrier -->
+				<item id="94363" min="1" max="1" chance="0.067" /> <!-- Master's Book: Focus -->
+				<item id="94364" min="1" max="1" chance="0.067" /> <!-- Master's Book: Death Whisper -->
+				<item id="94365" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wind Walk -->
+				<item id="94366" min="1" max="1" chance="0.067" /> <!-- Master's Book: Berserker Spirit -->
+				<item id="94367" min="1" max="1" chance="0.067" /> <!-- Master's Book: Clarity -->
+				<item id="94368" min="1" max="1" chance="0.067" /> <!-- Master's Book: Wild Magic -->
+				<item id="94369" min="1" max="1" chance="0.067" /> <!-- Master's Book: Haste -->
+				<item id="94370" min="1" max="1" chance="0.067" /> <!-- Master's Book: Acumen -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25174" level="75" type="Monster" name="Karu's Follower" title="Minion">
@@ -3717,16 +4334,22 @@
 				<item id="730" min="1" max="1" chance="4.8" /> <!-- Scroll: Enchant A-grade Armor -->
 				<item id="947" min="1" max="1" chance="2.4" /> <!-- Scroll: Enchant B-grade Weapon -->
 				<item id="948" min="1" max="1" chance="9.6" /> <!-- Scroll: Enchant B-grade Armor -->
-				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
 				<item id="90045" min="1" max="1" chance="100" /> <!-- Magic Tablet -->
-				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="93002" min="1" max="1" chance="100" /> <!-- Sayha's Blessing Pouch - Sealed -->
 				<item id="93003" min="2" max="4" chance="100" /> <!-- Sayha's Grace - Sealed -->
 				<item id="94186" min="1" max="1" chance="0.6" /> <!-- Augmenting Stone: Weapon -->
 				<item id="94188" min="1" max="1" chance="2.4" /> <!-- Augmenting Stone: Armor -->
 				<item id="95783" min="1" max="1" chance="2.5" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="49756" min="1" max="1" chance="1" /> <!-- Cloth Piece -->
+				<item id="91031" min="1" max="1" chance="1" /> <!-- Water Spirit Evolution Stone -->
 				<item id="96623" min="1" max="1" chance="1.6" /> <!-- Dye Powder -->
 			</drop>
+			<fortune>
+				<item id="91031" min="1" max="1" chance="0.5" /> <!-- Water Spirit Evolution Stone -->
+				<item id="91032" min="1" max="1" chance="0.5" /> <!-- Fire Spirit Evolution Stone -->
+				<item id="91033" min="1" max="1" chance="0.5" /> <!-- Wind Spirit Evolution Stone -->
+				<item id="91034" min="1" max="1" chance="0.5" /> <!-- Earth Spirit Evolution Stone -->
+			</fortune>
 		</dropLists>
 	</npc>
 	<npc id="25177" level="54" type="Monster" name="Guardian Knight of Black Lily" title="Minion">

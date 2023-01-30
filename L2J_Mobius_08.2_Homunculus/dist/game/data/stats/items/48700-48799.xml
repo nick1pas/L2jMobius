@@ -55,10 +55,18 @@
 	<item id="48706" name="Red Libra Specialty - Vitality Tonic" type="EtcItem">
 		<!-- Recovers 2 of the 4 Vitality bars. Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.bm_freya_potion" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="29455" level="1" /> <!-- Red Libra Specialty - Vitality Tonic -->
+		</skills>
 	</item>
 	<item id="48707" name="Red Libra Specialty - Fishing XP Bonus" additionalName="1-hour" type="EtcItem">
 		<!-- A specialty traded by the Red Libra Merchants. When used, increases Successful Fishing XP by 50% for 1 hour. Applied to all bait. Can be stacked with Angler's Blessing. -->

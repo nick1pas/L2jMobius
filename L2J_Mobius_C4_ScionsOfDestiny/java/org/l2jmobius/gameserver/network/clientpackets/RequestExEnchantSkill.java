@@ -22,6 +22,7 @@ import org.l2jmobius.commons.util.Rnd;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.data.sql.SkillTreeTable;
 import org.l2jmobius.gameserver.data.xml.ExperienceData;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.model.EnchantSkillLearn;
 import org.l2jmobius.gameserver.model.ShortCut;
 import org.l2jmobius.gameserver.model.Skill;
@@ -35,7 +36,6 @@ import org.l2jmobius.gameserver.network.serverpackets.ShortCutRegister;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
@@ -120,7 +120,7 @@ public class RequestExEnchantSkill implements ClientPacket
 		if ((counts == 0) && !Config.ALT_GAME_SKILL_LEARN)
 		{
 			player.sendMessage("You are trying to learn skill that you can't...");
-			Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalPlayerAction.PUNISH_KICK);
+			Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalActionPunishmentType.KICK);
 			return;
 		}
 		

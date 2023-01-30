@@ -2062,7 +2062,7 @@
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13256.684816413" hpRegen="8.5" mp="1881.8" mpRegen="3" />
+			<vitals hp="3314.451" hpRegen="8.5" mp="1881.8" mpRegen="3" />
 			<attack physical="3631.33830052703" magical="652.921765425807" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="406.383466826966" magical="221.085839209057" />
 			<speed>
@@ -2081,7 +2081,7 @@
 			<skill id="4416" level="7" /> <!-- Spirits -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="8" /> <!-- HP Increase (1/ 4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -2247,7 +2247,7 @@
 			<height normal="190" />
 		</collision>
 	</npc>
-	<npc id="19161" level="112" type="Monster" name="Fire Region">
+	<npc id="19161" level="116" type="Monster" name="Fire Region">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<parameters>
 			<skill name="boss_skill_01" id="14025" level="1" />
@@ -2257,7 +2257,7 @@
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="3124230" magical="284760" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="6109" magical="5253" />
+			<defence physical="502160" magical="247796" />
 			<speed>
 				<walk ground="1" />
 				<run ground="1" />

@@ -21,6 +21,7 @@ import java.util.logging.Logger;
 import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.cache.HtmCache;
 import org.l2jmobius.gameserver.data.ItemTable;
+import org.l2jmobius.gameserver.data.xml.EnchantItemGroupsData;
 import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
@@ -323,15 +324,13 @@ public class AdminEnchant implements IAdminCommandHandler
 				}
 				catch (StringIndexOutOfBoundsException e)
 				{
-					// quality of life change. if no input - set enchant value to 0
-					int fuse = 0;
+					// Quality of life change. If no input - set enchant value to 0.
 					if (Config.DEVELOPER)
 					{
-						LOGGER.warning("Enchant Value set to: " + fuse);
+						LOGGER.warning("Enchant Value set to: " + 0);
 					}
 					BuilderUtil.sendSysMessage(activeChar, "Auto-Set Enchant value to 0.");
-					
-					setEnchant(activeChar, fuse, slot);
+					setEnchant(activeChar, 0, slot);
 				}
 				catch (NumberFormatException e)
 				{
@@ -351,8 +350,7 @@ public class AdminEnchant implements IAdminCommandHandler
 	
 	private void setEnchant(Player activeChar, int ench, int slot)
 	{
-		// get the target
-		
+		// Get the target.
 		final Player player = activeChar.getTarget() != null ? activeChar.getTarget().getActingPlayer() : activeChar;
 		if (player == null)
 		{
@@ -360,10 +358,10 @@ public class AdminEnchant implements IAdminCommandHandler
 			return;
 		}
 		
-		// now we need to find the equipped weapon of the targeted character...
+		// Now we need to find the equipped weapon of the targeted character...
 		Item itemInstance = null;
 		
-		// only attempt to enchant if there is a weapon equipped
+		// Only attempt to enchant if there is a weapon equipped.
 		final Item paperdollInstance = player.getInventory().getPaperdollItem(slot);
 		if ((paperdollInstance != null) && (paperdollInstance.getLocationSlot() == slot))
 		{
@@ -374,18 +372,43 @@ public class AdminEnchant implements IAdminCommandHandler
 		{
 			final int curEnchant = itemInstance.getEnchantLevel();
 			
-			// set enchant value
-			itemInstance.setEnchantLevel(ench);
+			// Set enchant value.
+			int enchant = ench;
+			if (Config.OVER_ENCHANT_PROTECTION && !player.isGM())
+			{
+				if (itemInstance.isWeapon())
+				{
+					if (enchant > EnchantItemGroupsData.getInstance().getMaxWeaponEnchant())
+					{
+						BuilderUtil.sendSysMessage(activeChar, "Maximum enchantment for weapon items is " + EnchantItemGroupsData.getInstance().getMaxWeaponEnchant() + ".");
+						enchant = EnchantItemGroupsData.getInstance().getMaxWeaponEnchant();
+					}
+				}
+				else if (itemInstance.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY)
+				{
+					if (enchant > EnchantItemGroupsData.getInstance().getMaxAccessoryEnchant())
+					{
+						BuilderUtil.sendSysMessage(activeChar, "Maximum enchantment for accessory items is " + EnchantItemGroupsData.getInstance().getMaxAccessoryEnchant() + ".");
+						enchant = EnchantItemGroupsData.getInstance().getMaxAccessoryEnchant();
+					}
+				}
+				else if (enchant > EnchantItemGroupsData.getInstance().getMaxArmorEnchant())
+				{
+					BuilderUtil.sendSysMessage(activeChar, "Maximum enchantment for armor items is " + EnchantItemGroupsData.getInstance().getMaxArmorEnchant() + ".");
+					enchant = EnchantItemGroupsData.getInstance().getMaxArmorEnchant();
+				}
+			}
+			itemInstance.setEnchantLevel(enchant);
 			
-			// send packets
+			// Send packets.
 			final InventoryUpdate iu = new InventoryUpdate();
 			iu.addModifiedItem(itemInstance);
 			player.sendInventoryUpdate(iu);
 			player.broadcastUserInfo();
 			
-			// informations
-			BuilderUtil.sendSysMessage(activeChar, "Changed enchantment of " + player.getName() + "'s " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + ench + ".");
-			player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + ench + ".");
+			// Information.
+			BuilderUtil.sendSysMessage(activeChar, "Changed enchantment of " + player.getName() + "'s " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + enchant + ".");
+			player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + enchant + ".");
 		}
 	}
 	

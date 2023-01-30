@@ -909,6 +909,30 @@
 				<amount>25</amount>
 				<mode>PER</mode>
 			</effect>
+			<effect name="PAtk">
+				<amount>
+					<value fromLevel="1" toLevel="4">0</value>
+					<value level="5">5</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>FIST</item>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
+			<effect name="PhysicalAttackSpeed">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">1</value>
+					<value level="3">2</value>
+					<value level="4">3</value>
+				</amount>
+				<mode>PER</mode>
+				<weaponType>
+					<item>FIST</item>
+					<item>DUALFIST</item>
+				</weaponType>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="223" toLevel="49" name="Sting">

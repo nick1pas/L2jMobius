@@ -461,10 +461,8 @@ public class Config
 	public static boolean DEBUG_SERVER_PACKETS;
 	public static boolean DEBUG_UNKNOWN_PACKETS;
 	public static Set<String> ALT_DEV_EXCLUDED_PACKETS;
-	public static int SCHEDULED_THREAD_POOL_COUNT;
-	public static int THREADS_PER_SCHEDULED_THREAD_POOL;
-	public static int INSTANT_THREAD_POOL_COUNT;
-	public static int THREADS_PER_INSTANT_THREAD_POOL;
+	public static int SCHEDULED_THREAD_POOL_SIZE;
+	public static int INSTANT_THREAD_POOL_SIZE;
 	public static boolean THREADS_FOR_CLIENT_PACKETS;
 	public static boolean THREADS_FOR_LOADING;
 	public static boolean DEADLOCK_DETECTOR;
@@ -582,7 +580,7 @@ public class Config
 	public static int ALT_ITEM_AUCTION_EXPIRED_AFTER;
 	public static long ALT_ITEM_AUCTION_TIME_EXTENDS_ON_BID;
 	public static IllegalActionPunishmentType DEFAULT_PUNISH;
-	public static int DEFAULT_PUNISH_PARAM;
+	public static long DEFAULT_PUNISH_PARAM;
 	public static boolean ONLY_GM_ITEMS_FREE;
 	public static boolean JAIL_IS_PVP;
 	public static boolean JAIL_DISABLE_CHAT;
@@ -854,6 +852,9 @@ public class Config
 	
 	public static int[] ENCHANT_BLACKLIST;
 	public static boolean DISABLE_OVER_ENCHANTING;
+	public static boolean OVER_ENCHANT_PROTECTION;
+	public static IllegalActionPunishmentType OVER_ENCHANT_PUNISHMENT;
+	
 	public static int[] AUGMENTATION_BLACKLIST;
 	public static boolean ALT_ALLOW_AUGMENT_PVP_ITEMS;
 	public static boolean ALT_ALLOW_AUGMENT_TRADE;
@@ -1448,18 +1449,16 @@ public class Config
 			SERVER_LIST_TYPE = getServerTypeId(serverConfig.getString("ServerListType", "Free").split(","));
 			SERVER_LIST_AGE = serverConfig.getInt("ServerListAge", 0);
 			SERVER_LIST_BRACKET = serverConfig.getBoolean("ServerListBrackets", false);
-			SCHEDULED_THREAD_POOL_COUNT = serverConfig.getInt("ScheduledThreadPoolCount", -1);
-			if (SCHEDULED_THREAD_POOL_COUNT == -1)
+			SCHEDULED_THREAD_POOL_SIZE = serverConfig.getInt("ScheduledThreadPoolSize", -1);
+			if (SCHEDULED_THREAD_POOL_SIZE == -1)
 			{
-				SCHEDULED_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
+				SCHEDULED_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 4;
 			}
-			THREADS_PER_SCHEDULED_THREAD_POOL = serverConfig.getInt("ThreadsPerScheduledThreadPool", 4);
-			INSTANT_THREAD_POOL_COUNT = serverConfig.getInt("InstantThreadPoolCount", -1);
-			if (INSTANT_THREAD_POOL_COUNT == -1)
+			INSTANT_THREAD_POOL_SIZE = serverConfig.getInt("InstantThreadPoolSize", -1);
+			if (INSTANT_THREAD_POOL_SIZE == -1)
 			{
-				INSTANT_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
+				INSTANT_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 2;
 			}
-			THREADS_PER_INSTANT_THREAD_POOL = serverConfig.getInt("ThreadsPerInstantThreadPool", 2);
 			THREADS_FOR_CLIENT_PACKETS = serverConfig.getBoolean("ThreadsForClientPackets", true);
 			THREADS_FOR_LOADING = serverConfig.getBoolean("ThreadsForLoading", false);
 			DEADLOCK_DETECTOR = serverConfig.getBoolean("DeadLockDetector", true);
@@ -1836,6 +1835,8 @@ public class Config
 			}
 			Arrays.sort(ENCHANT_BLACKLIST);
 			DISABLE_OVER_ENCHANTING = characterConfig.getBoolean("DisableOverEnchanting", true);
+			OVER_ENCHANT_PROTECTION = characterConfig.getBoolean("OverEnchantProtection", true);
+			OVER_ENCHANT_PUNISHMENT = IllegalActionPunishmentType.findByName(characterConfig.getString("OverEnchantPunishment", "JAIL"));
 			final String[] array = characterConfig.getString("AugmentationBlackList", "6656,6657,6658,6659,6660,6661,6662,8191,10170,10314,13740,13741,13742,13743,13744,13745,13746,13747,13748,14592,14593,14594,14595,14596,14597,14598,14599,14600,14664,14665,14666,14667,14668,14669,14670,14671,14672,14801,14802,14803,14804,14805,14806,14807,14808,14809,15282,15283,15284,15285,15286,15287,15288,15289,15290,15291,15292,15293,15294,15295,15296,15297,15298,15299,16025,16026,21712,22173,22174,22175").split(",");
 			AUGMENTATION_BLACKLIST = new int[array.length];
 			for (int i = 0; i < array.length; i++)
@@ -2110,7 +2111,11 @@ public class Config
 			ALT_ITEM_AUCTION_EXPIRED_AFTER = generalConfig.getInt("AltItemAuctionExpiredAfter", 14);
 			ALT_ITEM_AUCTION_TIME_EXTENDS_ON_BID = generalConfig.getInt("AltItemAuctionTimeExtendsOnBid", 0) * 1000;
 			DEFAULT_PUNISH = IllegalActionPunishmentType.findByName(generalConfig.getString("DefaultPunish", "KICK"));
-			DEFAULT_PUNISH_PARAM = generalConfig.getInt("DefaultPunishParam", 0);
+			DEFAULT_PUNISH_PARAM = generalConfig.getLong("DefaultPunishParam", 0);
+			if (DEFAULT_PUNISH_PARAM == 0)
+			{
+				DEFAULT_PUNISH_PARAM = 3155695200L; // One hundred years in seconds.
+			}
 			ONLY_GM_ITEMS_FREE = generalConfig.getBoolean("OnlyGMItemsFree", true);
 			JAIL_IS_PVP = generalConfig.getBoolean("JailIsPvp", false);
 			JAIL_DISABLE_CHAT = generalConfig.getBoolean("JailDisableChat", true);
@@ -3604,18 +3609,16 @@ public class Config
 			MYSQL_BIN_PATH = loginConfig.getString("MySqlBinLocation", "C:/xampp/mysql/bin/");
 			BACKUP_PATH = loginConfig.getString("BackupPath", "../backup/");
 			BACKUP_DAYS = loginConfig.getInt("BackupDays", 30);
-			SCHEDULED_THREAD_POOL_COUNT = loginConfig.getInt("ScheduledThreadPoolCount", 2);
-			if (SCHEDULED_THREAD_POOL_COUNT == -1)
+			SCHEDULED_THREAD_POOL_SIZE = loginConfig.getInt("ScheduledThreadPoolSize", 2);
+			if (SCHEDULED_THREAD_POOL_SIZE == -1)
 			{
-				SCHEDULED_THREAD_POOL_COUNT = Math.max(2, Runtime.getRuntime().availableProcessors() / 2);
+				SCHEDULED_THREAD_POOL_SIZE = Math.max(2, Runtime.getRuntime().availableProcessors() / 2);
 			}
-			THREADS_PER_SCHEDULED_THREAD_POOL = loginConfig.getInt("ThreadsPerScheduledThreadPool", 2);
-			INSTANT_THREAD_POOL_COUNT = loginConfig.getInt("InstantThreadPoolCount", 2);
-			if (INSTANT_THREAD_POOL_COUNT == -1)
+			INSTANT_THREAD_POOL_SIZE = loginConfig.getInt("InstantThreadPoolSize", 2);
+			if (INSTANT_THREAD_POOL_SIZE == -1)
 			{
-				INSTANT_THREAD_POOL_COUNT = Math.max(2, Runtime.getRuntime().availableProcessors() / 2);
+				INSTANT_THREAD_POOL_SIZE = Math.max(2, Runtime.getRuntime().availableProcessors() / 2);
 			}
-			THREADS_PER_INSTANT_THREAD_POOL = loginConfig.getInt("ThreadsPerInstantThreadPool", 4);
 			THREADS_FOR_CLIENT_PACKETS = loginConfig.getBoolean("ThreadsForClientPackets", true);
 			SHOW_LICENCE = loginConfig.getBoolean("ShowLicence", true);
 			SHOW_PI_AGREEMENT = loginConfig.getBoolean("ShowPIAgreement", false);

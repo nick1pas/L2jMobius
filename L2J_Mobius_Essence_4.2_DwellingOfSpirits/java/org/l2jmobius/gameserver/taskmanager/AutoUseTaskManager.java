@@ -97,6 +97,7 @@ public class AutoUseTaskManager
 				
 				if (Config.ENABLE_AUTO_ITEM && !isInPeaceZone)
 				{
+					final Pet pet = player.getPet();
 					ITEMS: for (Integer itemId : player.getAutoUseSettings().getAutoSupplyItems())
 					{
 						if (player.isTeleporting())
@@ -108,6 +109,12 @@ public class AutoUseTaskManager
 						if (item == null)
 						{
 							player.getAutoUseSettings().getAutoSupplyItems().remove(itemId);
+							continue ITEMS;
+						}
+						
+						// Pet food is managed by Pet FeedTask.
+						if ((pet != null) && pet.getPetData().getFood().contains(itemId))
+						{
 							continue ITEMS;
 						}
 						
@@ -126,6 +133,12 @@ public class AutoUseTaskManager
 								{
 									final Skill skill = itemSkillHolder.getSkill();
 									if (player.isAffectedBySkill(skill.getId()) || player.hasSkillReuse(skill.getReuseHashCode()) || !skill.checkCondition(player, player, false))
+									{
+										continue ITEMS;
+									}
+									
+									// Check item skills that affect pets.
+									if ((pet != null) && !pet.isDead() && (pet.isAffectedBySkill(skill.getId()) || pet.hasSkillReuse(skill.getReuseHashCode()) || !skill.checkCondition(pet, pet, false)))
 									{
 										continue ITEMS;
 									}

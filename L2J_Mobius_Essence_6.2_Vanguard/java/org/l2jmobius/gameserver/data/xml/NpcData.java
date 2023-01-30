@@ -716,6 +716,11 @@ public class NpcData implements IXmlReader
 										template.addSpoil(dropHolder);
 										break;
 									}
+									case FORTUNE:
+									{
+										template.addFortune(dropHolder);
+										break;
+									}
 								}
 							}
 						}

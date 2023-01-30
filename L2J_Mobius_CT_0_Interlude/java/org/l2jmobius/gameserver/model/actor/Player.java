@@ -12103,7 +12103,6 @@ public class Player extends Playable
 		if (isInBoat())
 		{
 			setXYZ(getBoat().getLocation());
-			
 			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 			// player.sendPacket(new ExBrExtraUserInfo(this));
 			player.sendPacket(new GetOnVehicle(getObjectId(), getBoat().getObjectId(), _inVehiclePosition));

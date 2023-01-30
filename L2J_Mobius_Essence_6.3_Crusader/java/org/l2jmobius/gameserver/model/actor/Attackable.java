@@ -1217,6 +1217,39 @@ public class Attackable extends Npc
 				}
 			}
 			deathItems.clear();
+			
+			// Items that can be obtained under the Fortune Time effect.
+			if (isAffectedBySkill(CommonSkill.FORTUNE_SEAKER_MARK.getId()))
+			{
+				final Collection<ItemHolder> fortuneItems = npcTemplate.calculateDrops(DropType.FORTUNE, this, player);
+				if (fortuneItems != null)
+				{
+					for (ItemHolder drop : fortuneItems)
+					{
+						final ItemTemplate item = ItemTable.getInstance().getTemplate(drop.getId());
+						// Check if the autoLoot mode is active.
+						if (Config.AUTO_LOOT_ITEM_IDS.contains(item.getId()) || isFlying() || (!item.hasExImmediateEffect() && ((!_isRaid && Config.AUTO_LOOT) || (_isRaid && Config.AUTO_LOOT_RAIDS))) || (item.hasExImmediateEffect() && Config.AUTO_LOOT_HERBS))
+						{
+							player.doAutoLoot(this, drop); // Give the item(s) to the Player that has killed the Attackable.
+						}
+						else
+						{
+							dropItem(player, drop); // Drop the item on the ground.
+						}
+						
+						// Message.
+						if (_isRaid && !_isRaidMinion)
+						{
+							final SystemMessage sm = new SystemMessage(SystemMessageId.THANKS_TO_C1_S_FORTUNE_TIME_EFFECT_S2_X_S3_DROPPED);
+							sm.addString(getName());
+							sm.addItemName(item);
+							sm.addLong(drop.getCount());
+							broadcastPacket(sm);
+						}
+					}
+					fortuneItems.clear();
+				}
+			}
 		}
 	}
 	

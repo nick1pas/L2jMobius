@@ -5344,6 +5344,23 @@ public class Player extends Playable
 				setPkKills(getPkKills() + 1);
 				setTotalKills(getTotalKills() + 1);
 				
+				// Teleport to Prison.
+				if ((_pkKills >= 10) && (_pkKills < 35))
+				{
+					teleToLocation(new Location(61414, -42632, -2992));
+					getVariables().set(PlayerVariables.PRISON_WAIT_TIME, System.currentTimeMillis() + 18000000);
+				}
+				else if ((_pkKills >= 35) && (_pkKills < 40))
+				{
+					teleToLocation(new Location(59147, -42547, -3000));
+					getVariables().set(PlayerVariables.PRISON_WAIT_TIME, System.currentTimeMillis() + 14400000);
+				}
+				else if (_pkKills >= 40)
+				{
+					teleToLocation(new Location(58969, -44995, -2992));
+					getVariables().set(PlayerVariables.PRISON_WAIT_TIME, System.currentTimeMillis() + 10800000);
+				}
+				
 				// Einhasad debuffs.
 				if (_pkKills > 9)
 				{
@@ -12785,7 +12802,6 @@ public class Player extends Playable
 		if (isInBoat())
 		{
 			setXYZ(getBoat().getLocation());
-			
 			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 			player.sendPacket(new GetOnVehicle(getObjectId(), getBoat().getObjectId(), _inVehiclePosition));
 		}
@@ -12854,6 +12870,12 @@ public class Player extends Playable
 				player.sendPacket(new RecipeShopMsg(this));
 				break;
 			}
+		}
+		
+		// Required for showing mount transformations to players that just entered the game.
+		if (isTransformed())
+		{
+			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 		}
 	}
 	

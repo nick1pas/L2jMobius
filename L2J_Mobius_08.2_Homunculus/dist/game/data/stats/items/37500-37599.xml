@@ -595,6 +595,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19447" min="1" max="1" chance="100" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+			<item id="19448" min="1" max="1" chance="100" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+		</capsuled_items>
 	</item>
 	<item id="37542" name="Summon Scroll: Bae Kisung" additionalName="Test" type="EtcItem">
 		<!-- Scroll for summoning Bae Kisung once. From the summoned Bae Kisung, you can receive power-up buff and additionally Bae Kisung's gift box that has special gifts. -->
@@ -760,6 +765,10 @@
 		<set name="reuse_delay" val="60000" />
 		<set name="handler" val="ItemSkills" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
 		<skills>
 			<skill id="17119" level="1" /> <!-- Emperor's Vitality Tonic -->
 		</skills>
@@ -774,6 +783,10 @@
 		<set name="reuse_delay" val="60000" />
 		<set name="handler" val="ItemSkills" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
 		<skills>
 			<skill id="17120" level="1" /> <!-- Emperor's Vitality Tonic -->
 		</skills>
@@ -788,6 +801,10 @@
 		<set name="reuse_delay" val="60000" />
 		<set name="handler" val="ItemSkills" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
 		<skills>
 			<skill id="17121" level="1" /> <!-- Emperor's Vitality Tonic -->
 		</skills>
@@ -816,12 +833,13 @@
 	<item id="37565" name="Emperor's Rune Pack" type="EtcItem">
 		<!-- Open the box to obtain the Emperor's Rune (8-hour). Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="37565" min="1" max="1" chance="100" /> <!-- Emperor's Rune Pack -->
+			<item id="37564" min="1" max="1" chance="100" /> <!-- Emperor's Rune (8-hour) -->
 		</capsuled_items>
 	</item>
 	<item id="37566" name="Blessed Lucky Enchant Stone: Weapon (R-grade)" type="EtcItem">

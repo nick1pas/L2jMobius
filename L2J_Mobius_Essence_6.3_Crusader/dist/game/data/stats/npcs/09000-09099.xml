@@ -743,18 +743,19 @@
 			<height normal="18" />
 		</collision>
 	</npc>
-	<npc id="9023" level="80" type="Folk" name="Campfire" title="Made with Matchsticks">
+	<npc id="9023" level="1" type="Folk" name="Campfire" title="Made with Matchsticks">
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>ETC</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="10">
-			<vitals hp="4039" hpRegen="10.5" mp="1812" mpRegen="3.6" />
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="7489.87342" hpRegen="2" mp="1812" mpRegen="0.9" />
+			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="44.44444" magical="32.52252" />
 			<speed>
 				<walk ground="1" />
 				<run ground="1" />
 			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
+			<hitTime>600</hitTime>
 		</stats>
 		<status attackable="false" />
 		<collision>

@@ -5,6 +5,7 @@
 		<icon>icon.fortune_time</icon>
 		<abnormalLevel>1</abnormalLevel>
 		<abnormalTime>300</abnormalTime>
+		<abnormalVisualEffect>V_FORTUNE_TIME</abnormalVisualEffect>
 		<castRange>400</castRange>
 		<effectRange>900</effectRange>
 		<hitTime>1000</hitTime>
@@ -29,11 +30,24 @@
 				<amount>20</amount>
 				<mode>PER</mode>
 			</effect>
+			<effect name="TriggerSkillByAttack">
+				<attackerType>RaidBoss</attackerType>
+				<chance>10</chance>
+				<targetType>TARGET</targetType>
+				<allowNormalAttack>true</allowNormalAttack>
+				<allowSkillAttack>true</allowSkillAttack>
+				<allowWeapons>ALL</allowWeapons>
+				<skillId>47202</skillId> <!-- Fortune Seeker's Mark -->
+			</effect>
 		</effects>
 	</skill>
 	<skill id="47202" toLevel="1" name="Fortune Seeker's Mark">
 		<icon>icon.fortune_time</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
+		<abnormalTime>120</abnormalTime>
+		<reuseDelay>10000</reuseDelay>
+		<stayAfterDeath>true</stayAfterDeath>
+		<abnormalVisualEffect>V_FORTUNE_TIME_DEBUFF</abnormalVisualEffect>
 	</skill>
 	<skill id="47203" toLevel="1" name="Fortune Seeker's Mark">
 		<icon>icon.fortune_time</icon>

@@ -40,6 +40,7 @@ import org.l2jmobius.commons.enums.ServerMode;
 import org.l2jmobius.commons.util.ClassMasterSettings;
 import org.l2jmobius.commons.util.PropertiesParser;
 import org.l2jmobius.commons.util.StringUtil;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.model.Location;
 import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.olympiad.OlympiadPeriod;
@@ -182,8 +183,8 @@ public class Config
 	public static boolean SHOW_NPC_CLAN_CREST;
 	public static boolean ATTACKABLES_CAMP_PLAYER_CORPSES;
 	public static int ZONE_TOWN;
-	public static int DEFAULT_PUNISH;
-	public static int DEFAULT_PUNISH_PARAM;
+	public static IllegalActionPunishmentType DEFAULT_PUNISH;
+	public static long DEFAULT_PUNISH_PARAM;
 	
 	public static int CHAR_DATA_STORE_INTERVAL;
 	public static boolean UPDATE_ITEMS_ON_CHAR_STORE;
@@ -785,8 +786,8 @@ public class Config
 	public static int CUSTOM_ENCHANT_VALUE;
 	public static int ALT_OLY_ENCHANT_LIMIT;
 	public static int BREAK_ENCHANT;
-	public static int GM_OVER_ENCHANT;
-	public static int MAX_ITEM_ENCHANT_KICK;
+	public static boolean OVER_ENCHANT_PROTECTION;
+	public static IllegalActionPunishmentType OVER_ENCHANT_PUNISHMENT;
 	
 	public static FloodProtectorConfig FLOOD_PROTECTOR_USE_ITEM;
 	public static FloodProtectorConfig FLOOD_PROTECTOR_ROLL_DICE;
@@ -1057,10 +1058,8 @@ public class Config
 	public static boolean SERVER_LIST_CLOCK;
 	public static int MIN_PROTOCOL_REVISION;
 	public static int MAX_PROTOCOL_REVISION;
-	public static int SCHEDULED_THREAD_POOL_COUNT;
-	public static int THREADS_PER_SCHEDULED_THREAD_POOL;
-	public static int INSTANT_THREAD_POOL_COUNT;
-	public static int THREADS_PER_INSTANT_THREAD_POOL;
+	public static int SCHEDULED_THREAD_POOL_SIZE;
+	public static int INSTANT_THREAD_POOL_SIZE;
 	public static boolean THREADS_FOR_CLIENT_PACKETS;
 	public static boolean DEADLOCK_DETECTOR;
 	public static int DEADLOCK_CHECK_INTERVAL;
@@ -1162,18 +1161,16 @@ public class Config
 		{
 			throw new Error("MinProtocolRevision is bigger than MaxProtocolRevision in server configuration file.");
 		}
-		SCHEDULED_THREAD_POOL_COUNT = serverConfig.getInt("ScheduledThreadPoolCount", -1);
-		if (SCHEDULED_THREAD_POOL_COUNT == -1)
+		SCHEDULED_THREAD_POOL_SIZE = serverConfig.getInt("ScheduledThreadPoolSize", -1);
+		if (SCHEDULED_THREAD_POOL_SIZE == -1)
 		{
-			SCHEDULED_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
+			SCHEDULED_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 4;
 		}
-		THREADS_PER_SCHEDULED_THREAD_POOL = serverConfig.getInt("ThreadsPerScheduledThreadPool", 4);
-		INSTANT_THREAD_POOL_COUNT = serverConfig.getInt("InstantThreadPoolCount", -1);
-		if (INSTANT_THREAD_POOL_COUNT == -1)
+		INSTANT_THREAD_POOL_SIZE = serverConfig.getInt("InstantThreadPoolSize", -1);
+		if (INSTANT_THREAD_POOL_SIZE == -1)
 		{
-			INSTANT_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
+			INSTANT_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 2;
 		}
-		THREADS_PER_INSTANT_THREAD_POOL = serverConfig.getInt("ThreadsPerInstantThreadPool", 2);
 		THREADS_FOR_CLIENT_PACKETS = serverConfig.getBoolean("ThreadsForClientPackets", true);
 		DEADLOCK_DETECTOR = serverConfig.getBoolean("DeadLockDetector", true);
 		DEADLOCK_CHECK_INTERVAL = serverConfig.getInt("DeadLockCheckInterval", 20);
@@ -1508,8 +1505,12 @@ public class Config
 		UPDATE_ITEMS_ON_CHAR_STORE = generalConfig.getBoolean("UpdateItemsOnCharStore", false);
 		AUTODELETE_INVALID_QUEST_DATA = generalConfig.getBoolean("AutoDeleteInvalidQuestData", false);
 		DELETE_DAYS = generalConfig.getInt("DeleteCharAfterDays", 7);
-		DEFAULT_PUNISH = generalConfig.getInt("DefaultPunish", 2);
-		DEFAULT_PUNISH_PARAM = generalConfig.getInt("DefaultPunishParam", 0);
+		DEFAULT_PUNISH = IllegalActionPunishmentType.findByName(generalConfig.getString("DefaultPunish", "KICK"));
+		DEFAULT_PUNISH_PARAM = generalConfig.getLong("DefaultPunishParam", 0);
+		if (DEFAULT_PUNISH_PARAM == 0)
+		{
+			DEFAULT_PUNISH_PARAM = 3155695200L; // One hundred years in seconds.
+		}
 		GRIDS_ALWAYS_ON = generalConfig.getBoolean("GridsAlwaysOn", false);
 		GRID_NEIGHBOR_TURNON_TIME = generalConfig.getInt("GridNeighborTurnOnTime", 30);
 		GRID_NEIGHBOR_TURNOFF_TIME = generalConfig.getInt("GridNeighborTurnOffTime", 300);
@@ -2276,8 +2277,8 @@ public class Config
 		CUSTOM_ENCHANT_VALUE = enchantConfig.getInt("CustomEnchantValue", 1);
 		ALT_OLY_ENCHANT_LIMIT = enchantConfig.getInt("AltOlyMaxEnchant", -1);
 		BREAK_ENCHANT = enchantConfig.getInt("BreakEnchant", 0);
-		MAX_ITEM_ENCHANT_KICK = enchantConfig.getInt("EnchantKick", 0);
-		GM_OVER_ENCHANT = enchantConfig.getInt("GMOverEnchant", 0);
+		OVER_ENCHANT_PROTECTION = enchantConfig.getBoolean("OverEnchantProtection", true);
+		OVER_ENCHANT_PUNISHMENT = IllegalActionPunishmentType.findByName(enchantConfig.getString("OverEnchantPunishment", "JAIL"));
 	}
 	
 	public static void loadFloodConfig()

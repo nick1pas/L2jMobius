@@ -20,10 +20,10 @@ import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.henna.Henna;
 import org.l2jmobius.gameserver.network.GameClient;
-import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
-import org.l2jmobius.gameserver.network.serverpackets.newhenna.NewHennaUnequip;
+import org.l2jmobius.gameserver.network.serverpackets.HennaItemRemoveInfo;
 
 /**
  * @author Index
@@ -42,43 +42,28 @@ public class RequestNewHennaUnequipInfo implements ClientPacket
 	public void run(GameClient client)
 	{
 		final Player player = client.getPlayer();
-		if (player == null)
+		if ((player == null) || (_hennaId == 0))
 		{
 			return;
 		}
 		
 		Henna henna = null;
-		int slotId = 0;
 		for (int slot = 1; slot <= 4; slot++)
 		{
-			if (player.getHenna(slot) == null)
+			final Henna equipedHenna = player.getHenna(slot);
+			if ((equipedHenna != null) && (equipedHenna.getDyeId() == _hennaId))
 			{
-				continue;
-			}
-			if (player.getHenna(slot).getDyeId() == _hennaId)
-			{
-				henna = player.getHenna(slot);
-				slotId = slot;
+				henna = equipedHenna;
 				break;
 			}
 		}
-		if ((henna == null) || !client.getFloodProtectors().canPerformTransaction())
+		if (henna == null)
 		{
+			PacketLogger.warning("Invalid Henna Id: " + _hennaId + " from " + player);
 			player.sendPacket(ActionFailed.STATIC_PACKET);
-			player.sendPacket(new NewHennaUnequip(slotId, 0));
 			return;
 		}
 		
-		if (player.getAdena() >= henna.getCancelFee())
-		{
-			player.removeHenna(slotId);
-			player.sendPacket(new NewHennaUnequip(slotId, 1));
-		}
-		else
-		{
-			player.sendPacket(SystemMessageId.NOT_ENOUGH_ADENA);
-			player.sendPacket(ActionFailed.STATIC_PACKET);
-			player.sendPacket(new NewHennaUnequip(slotId, 0));
-		}
+		player.sendPacket(new HennaItemRemoveInfo(henna, player));
 	}
 }

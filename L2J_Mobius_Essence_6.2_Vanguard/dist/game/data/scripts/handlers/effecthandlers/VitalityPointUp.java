@@ -53,8 +53,12 @@ public class VitalityPointUp extends AbstractEffect
 	public void instant(Creature effector, Creature effected, Skill skill, Item item)
 	{
 		effected.getActingPlayer().updateVitalityPoints(_value, false, false);
+		
 		final UserInfo ui = new UserInfo(effected.getActingPlayer());
 		ui.addComponentType(UserInfoType.VITA_FAME);
 		effected.getActingPlayer().sendPacket(ui);
+		
+		// Send item list to update vitality items with red icons in inventory.
+		effected.getActingPlayer().sendItemList();
 	}
 }

@@ -451,6 +451,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
+		<acquire exp="43" sp="1" />
 		<stats str="79" int="74" dex="42" wit="65" con="75" men="72">
 			<vitals hp="204238.08387108" hpRegen="140.389595300422" mp="1007" mpRegen="2.4" />
 			<attack physical="864.185233843244" magical="414.921798802986" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -488,30 +489,22 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="19.6091">
-					<item id="210" min="1" max="1" chance="7.661" /> <!-- Staff of Evil Spirits -->
-					<item id="7901" min="1" max="1" chance="7.661" /> <!-- Star Buster -->
-					<item id="2403" min="1" max="1" chance="22.2099" /> <!-- Blue Wolf Stockings -->
-					<item id="2475" min="1" max="1" chance="62.4681" /> <!-- Sealed Doom Gloves -->
-				</group>
-				<group chance="29.5377">
-					<item id="947" min="1" max="1" chance="13.7931" /> <!-- Scroll: Enchant B-grade Weapon -->
-					<item id="948" min="1" max="1" chance="86.2069" /> <!-- Scroll: Enchant B-grade Armor -->
-				</group>
-				<group chance="4.75">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
+				<item id="947" min="1" max="1" chance="4.074" /> <!-- Scroll: Enchant B-grade Weapon -->
+				<item id="948" min="1" max="1" chance="25.464" /> <!-- Scroll: Enchant B-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.736" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.62" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.736" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.62" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.093" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.92" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.093" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.92" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.093" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.92" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="210" min="1" max="1" chance="1.502" /> <!-- Staff of Evil Spirits -->
+				<item id="2403" min="1" max="1" chance="4.355" /> <!-- Blue Wolf Stockings -->
+				<item id="2475" min="1" max="1" chance="12.249" /> <!-- Sealed Doom Gloves -->
+				<item id="7901" min="1" max="1" chance="1.502" /> <!-- Star Buster -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -600,37 +593,27 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="17.3766">
-					<item id="8678" min="1" max="1" chance="2.6083" /> <!-- Sirra's Blade -->
-					<item id="8688" min="1" max="1" chance="2.6083" /> <!-- Daimon Crystal -->
-					<item id="5289" min="1" max="1" chance="26.326" /> <!-- Sealed Dark Crystal Helmet -->
-					<item id="5297" min="1" max="1" chance="26.3358" /> <!-- Sealed Dark Crystal Leather Armor -->
-					<item id="5305" min="1" max="1" chance="42.1216" /> <!-- Sealed Tallum Stockings -->
-				</group>
-				<group chance="17.1089">
-					<item id="730" min="1" max="1" chance="100" /> <!-- Scroll: Enchant A-grade Armor -->
-				</group>
-				<group chance="1.742">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="1.471">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="1.238">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
+				<item id="730" min="1" max="1" chance="17.109" /> <!-- Scroll: Enchant A-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.27" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.228" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.192" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.27" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.228" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.192" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.401" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.338" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.285" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.401" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.338" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.285" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.401" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.338" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.285" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="5289" min="1" max="1" chance="4.575" /> <!-- Sealed Dark Crystal Helmet -->
+				<item id="5297" min="1" max="1" chance="4.576" /> <!-- Sealed Dark Crystal Leather Armor -->
+				<item id="5305" min="1" max="1" chance="7.319" /> <!-- Sealed Tallum Stockings -->
+				<item id="8678" min="1" max="1" chance="0.453" /> <!-- Sirra's Blade -->
+				<item id="8688" min="1" max="1" chance="0.453" /> <!-- Daimon Crystal -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -719,30 +702,22 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="1.742">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="1.471">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="1.238">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
+				<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
+				<item id="46444" min="1" max="1" chance="0.27" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.228" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.192" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.27" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.228" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.192" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.401" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.338" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.285" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.401" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.338" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.285" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.401" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.338" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.285" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -827,36 +802,26 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="18.0383">
-					<item id="8685" min="1" max="1" chance="3.725" /> <!-- Sobekk's Hurricane -->
-					<item id="8686" min="1" max="1" chance="3.725" /> <!-- Themis' Tongue -->
-					<item id="5293" min="1" max="1" chance="17.3564" /> <!-- Sealed Tallum Plate Armor -->
-					<item id="5294" min="1" max="1" chance="75.1936" /> <!-- Sealed Tallum Helmet -->
-				</group>
-				<group chance="2.7055">
-					<item id="729" min="1" max="1" chance="100" /> <!-- Scroll: Enchant A-grade Weapon -->
-				</group>
-				<group chance="1.742">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="1.471">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="1.238">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
+				<item id="729" min="1" max="1" chance="2.706" /> <!-- Scroll: Enchant A-grade Weapon -->
+				<item id="46444" min="1" max="1" chance="0.27" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.228" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.192" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.27" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.228" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.192" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.401" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.338" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.285" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.401" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.338" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.285" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.401" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.338" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.285" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="5293" min="1" max="1" chance="3.131" /> <!-- Sealed Tallum Plate Armor -->
+				<item id="5294" min="1" max="1" chance="13.564" /> <!-- Sealed Tallum Helmet -->
+				<item id="8685" min="1" max="1" chance="0.672" /> <!-- Sobekk's Hurricane -->
+				<item id="8686" min="1" max="1" chance="0.672" /> <!-- Themis' Tongue -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -907,30 +872,22 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="1.742">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="1.471">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="1.238">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
+				<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
+				<item id="46444" min="1" max="1" chance="0.27" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.228" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.192" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.27" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.228" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.192" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.401" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.338" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.285" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.401" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.338" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.285" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.401" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.338" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.285" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1020,30 +977,22 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="1.742">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="1.471">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="1.238">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
+				<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
+				<item id="46444" min="1" max="1" chance="0.27" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.228" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.192" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.27" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.228" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.192" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.401" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.338" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.285" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.401" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.338" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.285" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.401" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.338" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.285" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1132,30 +1081,22 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="1.742">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="1.471">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="1.238">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
+				<item id="57" min="2970" max="6920" chance="100" /> <!-- Adena -->
+				<item id="46444" min="1" max="1" chance="0.27" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.228" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.192" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.27" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.228" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.192" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.401" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.338" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.285" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.401" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.338" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.285" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.401" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.338" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.285" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1427,76 +1368,64 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="0.891">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="0.751">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="0.627">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.313">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.132">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.138" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.116" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.097" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.049" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.02" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.138" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.116" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.097" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.049" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.02" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.205" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.173" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.144" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.072" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.03" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.205" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.173" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.144" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.072" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.03" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.205" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.173" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.144" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.072" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.03" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1633,17 +1562,13 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="18.9682">
-					<item id="2503" min="1" max="1" chance="8.0397" /> <!-- Yaksa Mace -->
-					<item id="7891" min="1" max="1" chance="8.0397" /> <!-- Ecliptic Axe -->
-					<item id="7897" min="1" max="1" chance="8.0397" /> <!-- Dwarven Hammer -->
-					<item id="473" min="1" max="1" chance="18.3672" /> <!-- Divine Stockings -->
-					<item id="2497" min="1" max="1" chance="43.7386" /> <!-- Full Plate Shield -->
-					<item id="2438" min="1" max="1" chance="13.7751" /> <!-- Full Plate Boots -->
-				</group>
-				<group chance="0.9659">
-					<item id="6573" min="1" max="1" chance="100" /> <!-- Blessed Scroll: Enchant C-grade Weapon -->
-				</group>
+				<item id="6573" min="1" max="1" chance="0.966" /> <!-- Blessed Scroll: Enchant C-grade Weapon -->
+				<item id="473" min="1" max="1" chance="3.484" /> <!-- Divine Stockings -->
+				<item id="2438" min="1" max="1" chance="2.613" /> <!-- Full Plate Boots -->
+				<item id="2497" min="1" max="1" chance="8.296" /> <!-- Full Plate Shield -->
+				<item id="2503" min="1" max="1" chance="1.525" /> <!-- Yaksa Mace -->
+				<item id="7891" min="1" max="1" chance="1.525" /> <!-- Ecliptic Axe -->
+				<item id="7897" min="1" max="1" chance="1.525" /> <!-- Dwarven Hammer -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2066,12 +1991,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
+				<item id="17527" min="1" max="1" chance="70" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2139,12 +2060,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
+				<item id="17527" min="1" max="1" chance="70" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2199,47 +2116,41 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="50">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
+				<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2309,44 +2220,40 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="2">
-					<item id="17526" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="2" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2417,47 +2324,41 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="1">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="80">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
+				<item id="17527" min="1" max="1" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.403" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="0.583" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.0001" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0001" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0001" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0001" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0001" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0001" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0001" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0001" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0001" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0001" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0001" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0001" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0001" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0001" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.0007" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.0007" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.0007" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.0007" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.0007" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.0007" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.0007" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.0007" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.0007" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.0007" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.0007" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.0007" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.0007" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.0007" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.0007" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.0007" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.0007" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2686,82 +2587,66 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="30">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="5.46">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4.6">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="3.842">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="1.921">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.808">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
+				<item id="17527" min="1" max="1" chance="30" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.846" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.713" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.596" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.298" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.125" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.846" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.713" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.596" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.298" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.125" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.256" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="1.058" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.884" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.442" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.186" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.256" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="1.058" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.884" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.442" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.186" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.256" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="1.058" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.884" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.442" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.186" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2830,47 +2715,41 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="50">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
+				<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3197,43 +3076,31 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="11.5728">
-					<item id="17334" min="1" max="1" chance="3.763" /> <!-- Apocalypse Retributer -->
-					<item id="17347" min="1" max="1" chance="46.237" /> <!-- Twilight Leather Gloves - Light armor -->
-					<item id="17330" min="1" max="1" chance="3.763" /> <!-- Apocalypse Thrower -->
-					<item id="17352" min="1" max="1" chance="46.237" /> <!-- Twilight Gloves - Robe -->
-				</group>
-				<group chance="5.5708">
-					<item id="17526" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="4.807">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4.059">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="3.418">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="1.709">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="5.571" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="46444" min="1" max="1" chance="0.745" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.629" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.53" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.265" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.745" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.629" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.53" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.265" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.106" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.934" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.786" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.393" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.106" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.934" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.786" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.393" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.106" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.934" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.786" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.393" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="17330" min="1" max="1" chance="0.435" /> <!-- Apocalypse Thrower -->
+				<item id="17334" min="1" max="1" chance="0.435" /> <!-- Apocalypse Retributer -->
+				<item id="17347" min="1" max="1" chance="5.351" /> <!-- Twilight Leather Gloves - Light armor -->
+				<item id="17352" min="1" max="1" chance="5.351" /> <!-- Twilight Gloves - Robe -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3251,6 +3118,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<mpReward value="20" type="PER" ticks="10" affects="PARTY" />
+		<acquire exp="109904" sp="26" />
 		<stats str="164" int="188" dex="55" wit="78" con="111" men="149">
 			<vitals hp="957078.658550769" hpRegen="8.5" mp="22800" mpRegen="30" />
 			<attack physical="20459.3727316231" magical="7231.0886261522" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3616,50 +3484,38 @@
 		<ai clanHelpRange="300" aggroRange="300" />
 		<dropLists>
 			<drop>
-				<group chance="18.9591">
-					<item id="17291" min="1" max="1" chance="1.8117" /> <!-- Requiem Cutter -->
-					<item id="17296" min="1" max="1" chance="1.8117" /> <!-- Requiem Thrower -->
-					<item id="17290" min="1" max="1" chance="1.8117" /> <!-- Requiem Shaper -->
-					<item id="17300" min="1" max="1" chance="1.8117" /> <!-- Requiem Retributer -->
-					<item id="17304" min="1" max="1" chance="14.8405" /> <!-- Immortal Helmet - Heavy armor -->
-					<item id="17313" min="1" max="1" chance="11.1304" /> <!-- Immortal Leather Gloves - Light armor -->
-					<item id="17319" min="1" max="1" chance="7.4203" /> <!-- Immortal Shoes - Robe -->
-					<item id="17308" min="1" max="1" chance="22.2608" /> <!-- Immortal Boots - Heavy armor -->
-					<item id="17310" min="1" max="1" chance="14.8405" /> <!-- Immortal Leather Helmet - Light armor -->
-					<item id="17318" min="1" max="1" chance="22.2607" /> <!-- Immortal Gloves - Robe -->
-				</group>
-				<group chance="31.2985">
-					<item id="17526" min="1" max="1" chance="7.2464" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="1" max="1" chance="92.7536" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="4.807">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4.059">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="3.418">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="1.709">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="2.268" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="29.03" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.745" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.629" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.53" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.265" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.745" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.629" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.53" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.265" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.106" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.934" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.786" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.393" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.106" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.934" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.786" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.393" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.106" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.934" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.786" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.393" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="17290" min="1" max="1" chance="0.343" /> <!-- Requiem Shaper -->
+				<item id="17291" min="1" max="1" chance="0.343" /> <!-- Requiem Cutter -->
+				<item id="17296" min="1" max="1" chance="0.343" /> <!-- Requiem Thrower -->
+				<item id="17300" min="1" max="1" chance="0.343" /> <!-- Requiem Retributer -->
+				<item id="17304" min="1" max="1" chance="2.814" /> <!-- Immortal Helmet - Heavy armor -->
+				<item id="17308" min="1" max="1" chance="4.22" /> <!-- Immortal Boots - Heavy armor -->
+				<item id="17310" min="1" max="1" chance="2.814" /> <!-- Immortal Leather Helmet - Light armor -->
+				<item id="17313" min="1" max="1" chance="2.11" /> <!-- Immortal Leather Gloves - Light armor -->
+				<item id="17318" min="1" max="1" chance="4.22" /> <!-- Immortal Gloves - Robe -->
+				<item id="17319" min="1" max="1" chance="1.407" /> <!-- Immortal Shoes - Robe -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3729,92 +3585,68 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="0.508">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.381">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.317">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
-				<group chance="0.19">
-					<item id="46449" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46464" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46479" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46494" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46509" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 6 - Weapon -->
-				</group>
-				<group chance="0.063">
-					<item id="46450" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46465" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46480" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46495" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46510" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 7 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46446" min="1" max="1" chance="0.079" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.059" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.049" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46449" min="1" max="1" chance="0.029" /> <!-- Kain's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46450" min="1" max="1" chance="0.01" /> <!-- Kain's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.079" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.059" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.049" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46464" min="1" max="1" chance="0.029" /> <!-- Mermoden's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46465" min="1" max="1" chance="0.01" /> <!-- Mermoden's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.117" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.088" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.073" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46479" min="1" max="1" chance="0.044" /> <!-- Leona's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46480" min="1" max="1" chance="0.014" /> <!-- Leona's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.117" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.088" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.073" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46494" min="1" max="1" chance="0.044" /> <!-- Pantheon's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46495" min="1" max="1" chance="0.014" /> <!-- Pantheon's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.117" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.088" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.073" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46509" min="1" max="1" chance="0.044" /> <!-- Lionel's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46510" min="1" max="1" chance="0.014" /> <!-- Lionel's Soul Crystal Lv. 7 - Weapon -->
+				<item id="48568" min="1" max="1" chance="20" /> <!-- Guard Agathion Fragment -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3885,92 +3717,68 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="0.508">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.381">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.317">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
-				<group chance="0.19">
-					<item id="46449" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46464" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46479" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46494" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46509" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 6 - Weapon -->
-				</group>
-				<group chance="0.063">
-					<item id="46450" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46465" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46480" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46495" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 7 - Weapon -->
-					<item id="46510" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 7 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46446" min="1" max="1" chance="0.079" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.059" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.049" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46449" min="1" max="1" chance="0.029" /> <!-- Kain's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46450" min="1" max="1" chance="0.01" /> <!-- Kain's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.079" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.059" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.049" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46464" min="1" max="1" chance="0.029" /> <!-- Mermoden's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46465" min="1" max="1" chance="0.01" /> <!-- Mermoden's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.117" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.088" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.073" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46479" min="1" max="1" chance="0.044" /> <!-- Leona's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46480" min="1" max="1" chance="0.014" /> <!-- Leona's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.117" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.088" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.073" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46494" min="1" max="1" chance="0.044" /> <!-- Pantheon's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46495" min="1" max="1" chance="0.014" /> <!-- Pantheon's Soul Crystal Lv. 7 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.117" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.088" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.073" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46509" min="1" max="1" chance="0.044" /> <!-- Lionel's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46510" min="1" max="1" chance="0.014" /> <!-- Lionel's Soul Crystal Lv. 7 - Weapon -->
+				<item id="48568" min="1" max="1" chance="20" /> <!-- Guard Agathion Fragment -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4123,14 +3931,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="0.086">
-					<item id="17387" min="1" max="1" chance="33.3333" /> <!-- Specter Stormer -->
-					<item id="17390" min="1" max="1" chance="33.3333" /> <!-- Specter Buster -->
-					<item id="17391" min="1" max="1" chance="33.3334" /> <!-- Specter Caster -->
-				</group>
-				<group chance="19.9343">
-					<item id="17527" min="1" max="1" chance="100" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
+				<item id="17527" min="1" max="1" chance="19.934" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="17387" min="1" max="1" chance="0.029" /> <!-- Specter Stormer -->
+				<item id="17390" min="1" max="1" chance="0.029" /> <!-- Specter Buster -->
+				<item id="17391" min="1" max="1" chance="0.029" /> <!-- Specter Caster -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4192,79 +3996,65 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="48">
-					<item id="17382" min="1" max="1" chance="0.01" /> <!-- Specter Shaper -->
-					<item id="17383" min="1" max="1" chance="0.01" /> <!-- Specter Cutter -->
-					<item id="17384" min="1" max="1" chance="0.01" /> <!-- Specter Slasher -->
-					<item id="17385" min="1" max="1" chance="0.01" /> <!-- Specter Avenger -->
-					<item id="17386" min="1" max="1" chance="0.01" /> <!-- Specter Fighter -->
-					<item id="17387" min="1" max="1" chance="0.01" /> <!-- Specter Stormer -->
-					<item id="17388" min="1" max="1" chance="0.01" /> <!-- Specter Thrower -->
-					<item id="17389" min="1" max="1" chance="0.01" /> <!-- Specter Guardian -->
-					<item id="17390" min="1" max="1" chance="0.01" /> <!-- Specter Buster -->
-					<item id="17391" min="1" max="1" chance="0.01" /> <!-- Specter Caster -->
-					<item id="17392" min="1" max="1" chance="0.01" /> <!-- Specter Retributer -->
-					<item id="17393" min="1" max="1" chance="0.01" /> <!-- Specter Dual Swords -->
-					<item id="17394" min="1" max="1" chance="0.01" /> <!-- Specter Dual Daggers -->
-					<item id="17395" min="1" max="1" chance="0.01" /> <!-- Specter Dual Blunt Weapons -->
-					<item id="17396" min="1" max="1" chance="0.07" /> <!-- Seraph Helmet - Heavy armor -->
-					<item id="17397" min="1" max="1" chance="0.07" /> <!-- Seraph Breastplate - Heavy armor -->
-					<item id="17398" min="1" max="1" chance="0.07" /> <!-- Seraph Gaiters - Heavy armor -->
-					<item id="17399" min="1" max="1" chance="0.07" /> <!-- Seraph Gauntlets - Heavy armor -->
-					<item id="17400" min="1" max="1" chance="0.07" /> <!-- Seraph Boots - Heavy armor -->
-					<item id="17401" min="1" max="1" chance="0.07" /> <!-- Seraph Shield -->
-					<item id="17402" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Helmet - Light armor -->
-					<item id="17403" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Armor - Light armor -->
-					<item id="17404" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Leggings - Light armor -->
-					<item id="17405" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Gloves - Light armor -->
-					<item id="17406" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Boots - Light armor -->
-					<item id="17407" min="1" max="1" chance="0.07" /> <!-- Seraph Circlet - Robe -->
-					<item id="17408" min="1" max="1" chance="0.07" /> <!-- Seraph Tunic - Robe -->
-					<item id="17409" min="1" max="1" chance="0.07" /> <!-- Seraph Stockings - Robe -->
-					<item id="17410" min="1" max="1" chance="0.07" /> <!-- Seraph Gloves - Robe -->
-					<item id="17411" min="1" max="1" chance="0.07" /> <!-- Seraph Shoes - Robe -->
-					<item id="17412" min="1" max="1" chance="0.07" /> <!-- Seraph Sigil -->
-					<item id="17526" min="1" max="1" chance="58.335" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="1" max="1" chance="40.335" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="0.055">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="0.055">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.0275">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.0275">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
-				<group chance="0.0065">
-					<item id="46449" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46464" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46479" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46494" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 6 - Weapon -->
-					<item id="46509" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 6 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="28.001" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="19.361" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46445" min="1" max="1" chance="0.009" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.009" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.004" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.004" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46449" min="1" max="1" chance="0.001" /> <!-- Kain's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.009" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.009" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.004" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.004" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46464" min="1" max="1" chance="0.001" /> <!-- Mermoden's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.013" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.013" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.006" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.006" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46479" min="1" max="1" chance="0.001" /> <!-- Leona's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.013" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.013" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.006" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.006" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46494" min="1" max="1" chance="0.001" /> <!-- Pantheon's Soul Crystal Lv. 6 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.013" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.013" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.006" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.006" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46509" min="1" max="1" chance="0.001" /> <!-- Lionel's Soul Crystal Lv. 6 - Weapon -->
+				<item id="17382" min="1" max="1" chance="0.005" /> <!-- Specter Shaper -->
+				<item id="17383" min="1" max="1" chance="0.005" /> <!-- Specter Cutter -->
+				<item id="17384" min="1" max="1" chance="0.005" /> <!-- Specter Slasher -->
+				<item id="17385" min="1" max="1" chance="0.005" /> <!-- Specter Avenger -->
+				<item id="17386" min="1" max="1" chance="0.005" /> <!-- Specter Fighter -->
+				<item id="17387" min="1" max="1" chance="0.005" /> <!-- Specter Stormer -->
+				<item id="17388" min="1" max="1" chance="0.005" /> <!-- Specter Thrower -->
+				<item id="17389" min="1" max="1" chance="0.005" /> <!-- Specter Guardian -->
+				<item id="17390" min="1" max="1" chance="0.005" /> <!-- Specter Buster -->
+				<item id="17391" min="1" max="1" chance="0.005" /> <!-- Specter Caster -->
+				<item id="17392" min="1" max="1" chance="0.005" /> <!-- Specter Retributer -->
+				<item id="17393" min="1" max="1" chance="0.005" /> <!-- Specter Dual Swords -->
+				<item id="17394" min="1" max="1" chance="0.005" /> <!-- Specter Dual Daggers -->
+				<item id="17395" min="1" max="1" chance="0.005" /> <!-- Specter Dual Blunt Weapons -->
+				<item id="17396" min="1" max="1" chance="0.034" /> <!-- Seraph Helmet - Heavy armor -->
+				<item id="17397" min="1" max="1" chance="0.034" /> <!-- Seraph Breastplate - Heavy armor -->
+				<item id="17398" min="1" max="1" chance="0.034" /> <!-- Seraph Gaiters - Heavy armor -->
+				<item id="17399" min="1" max="1" chance="0.034" /> <!-- Seraph Gauntlets - Heavy armor -->
+				<item id="17400" min="1" max="1" chance="0.034" /> <!-- Seraph Boots - Heavy armor -->
+				<item id="17401" min="1" max="1" chance="0.034" /> <!-- Seraph Shield -->
+				<item id="17402" min="1" max="1" chance="0.034" /> <!-- Seraph Leather Helmet - Light armor -->
+				<item id="17403" min="1" max="1" chance="0.034" /> <!-- Seraph Leather Armor - Light armor -->
+				<item id="17404" min="1" max="1" chance="0.034" /> <!-- Seraph Leather Leggings - Light armor -->
+				<item id="17405" min="1" max="1" chance="0.034" /> <!-- Seraph Leather Gloves - Light armor -->
+				<item id="17406" min="1" max="1" chance="0.034" /> <!-- Seraph Leather Boots - Light armor -->
+				<item id="17407" min="1" max="1" chance="0.034" /> <!-- Seraph Circlet - Robe -->
+				<item id="17408" min="1" max="1" chance="0.034" /> <!-- Seraph Tunic - Robe -->
+				<item id="17409" min="1" max="1" chance="0.034" /> <!-- Seraph Stockings - Robe -->
+				<item id="17410" min="1" max="1" chance="0.034" /> <!-- Seraph Gloves - Robe -->
+				<item id="17411" min="1" max="1" chance="0.034" /> <!-- Seraph Shoes - Robe -->
+				<item id="17412" min="1" max="1" chance="0.034" /> <!-- Seraph Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4330,76 +4120,62 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="2">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="50">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="0.336">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="0.284">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="0.239">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.119">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="0.807" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="1.167" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="50" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.052" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.044" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.037" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.018" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.052" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.044" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.037" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.018" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.077" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.065" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.055" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.027" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.077" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.065" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.055" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.027" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.077" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.065" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.055" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.027" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="17416" min="1" max="1" chance="0.0002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.001" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.001" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.001" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.001" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.001" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.001" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.001" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.001" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.001" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.001" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.001" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.001" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.001" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4465,76 +4241,62 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="5">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="0.336">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="0.284">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="0.239">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.119">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="2.017" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="2.917" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.052" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.044" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.037" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.018" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.052" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.044" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.037" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.018" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.077" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.065" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.055" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.027" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.077" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.065" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.055" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.027" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.077" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.065" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.055" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.027" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="17416" min="1" max="1" chance="0.0005" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.0005" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.0005" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.0005" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.0005" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.0005" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.0005" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.0005" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.0005" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.0005" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.0005" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.0005" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.0005" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.0005" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.004" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.004" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.004" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.004" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.004" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.004" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.004" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.004" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.004" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.004" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.004" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.004" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.004" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.004" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.004" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.004" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.004" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4600,83 +4362,67 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="12">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
-				</group>
-				<group chance="0.382">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="0.322">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="0.268">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="0.134">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.056">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="50" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="4.84" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="7" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="36586" min="1" max="1" chance="100" /> <!-- Scroll: Modify R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.059" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.05" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.042" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.021" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.009" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.059" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.05" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.042" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.021" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.009" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46474" min="1" max="1" chance="0.088" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="0.074" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.062" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.031" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.013" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46489" min="1" max="1" chance="0.088" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="0.074" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.062" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.031" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.013" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46504" min="1" max="1" chance="0.088" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="0.074" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.062" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.031" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.013" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="17416" min="1" max="1" chance="0.001" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.001" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.001" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.001" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.001" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.001" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.001" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.001" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.001" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.001" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.001" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.001" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.001" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.001" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.008" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.008" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.008" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.008" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.008" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.008" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.008" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.008" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.008" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.008" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.008" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.008" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4801,76 +4547,64 @@
 		<ai clanHelpRange="300" aggroRange="300" />
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17382" min="1" max="1" chance="0.01" /> <!-- Specter Shaper -->
-					<item id="17383" min="1" max="1" chance="0.01" /> <!-- Specter Cutter -->
-					<item id="17384" min="1" max="1" chance="0.01" /> <!-- Specter Slasher -->
-					<item id="17385" min="1" max="1" chance="0.01" /> <!-- Specter Avenger -->
-					<item id="17386" min="1" max="1" chance="0.01" /> <!-- Specter Fighter -->
-					<item id="17387" min="1" max="1" chance="0.01" /> <!-- Specter Stormer -->
-					<item id="17388" min="1" max="1" chance="0.01" /> <!-- Specter Thrower -->
-					<item id="17389" min="1" max="1" chance="0.01" /> <!-- Specter Guardian -->
-					<item id="17390" min="1" max="1" chance="0.01" /> <!-- Specter Buster -->
-					<item id="17391" min="1" max="1" chance="0.01" /> <!-- Specter Caster -->
-					<item id="17392" min="1" max="1" chance="0.01" /> <!-- Specter Retributer -->
-					<item id="17393" min="1" max="1" chance="0.01" /> <!-- Specter Dual Swords -->
-					<item id="17394" min="1" max="1" chance="0.01" /> <!-- Specter Dual Daggers -->
-					<item id="17395" min="1" max="1" chance="0.01" /> <!-- Specter Dual Blunt Weapons -->
-					<item id="17396" min="1" max="1" chance="0.07" /> <!-- Seraph Helmet - Heavy armor -->
-					<item id="17397" min="1" max="1" chance="0.07" /> <!-- Seraph Breastplate - Heavy armor -->
-					<item id="17398" min="1" max="1" chance="0.07" /> <!-- Seraph Gaiters - Heavy armor -->
-					<item id="17399" min="1" max="1" chance="0.07" /> <!-- Seraph Gauntlets - Heavy armor -->
-					<item id="17400" min="1" max="1" chance="0.07" /> <!-- Seraph Boots - Heavy armor -->
-					<item id="17401" min="1" max="1" chance="0.07" /> <!-- Seraph Shield -->
-					<item id="17402" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Helmet - Light armor -->
-					<item id="17403" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Armor - Light armor -->
-					<item id="17404" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Leggings - Light armor -->
-					<item id="17405" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Gloves - Light armor -->
-					<item id="17406" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Boots - Light armor -->
-					<item id="17407" min="1" max="1" chance="0.07" /> <!-- Seraph Circlet - Robe -->
-					<item id="17408" min="1" max="1" chance="0.07" /> <!-- Seraph Tunic - Robe -->
-					<item id="17409" min="1" max="1" chance="0.07" /> <!-- Seraph Stockings - Robe -->
-					<item id="17410" min="1" max="1" chance="0.07" /> <!-- Seraph Gloves - Robe -->
-					<item id="17411" min="1" max="1" chance="0.07" /> <!-- Seraph Shoes - Robe -->
-					<item id="17412" min="1" max="1" chance="0.07" /> <!-- Seraph Sigil -->
-					<item id="17526" min="1" max="1" chance="58.335" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="1" max="1" chance="40.335" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="5.46">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4.6">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="3.842">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="1.921">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.808">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="58.335" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="40.335" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.846" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.713" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.596" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.298" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.125" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.846" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.713" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.596" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.298" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.125" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.256" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="1.058" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.884" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.442" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.186" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.256" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="1.058" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.884" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.442" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.186" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.256" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="1.058" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.884" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.442" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.186" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="17382" min="1" max="1" chance="0.01" /> <!-- Specter Shaper -->
+				<item id="17383" min="1" max="1" chance="0.01" /> <!-- Specter Cutter -->
+				<item id="17384" min="1" max="1" chance="0.01" /> <!-- Specter Slasher -->
+				<item id="17385" min="1" max="1" chance="0.01" /> <!-- Specter Avenger -->
+				<item id="17386" min="1" max="1" chance="0.01" /> <!-- Specter Fighter -->
+				<item id="17387" min="1" max="1" chance="0.01" /> <!-- Specter Stormer -->
+				<item id="17388" min="1" max="1" chance="0.01" /> <!-- Specter Thrower -->
+				<item id="17389" min="1" max="1" chance="0.01" /> <!-- Specter Guardian -->
+				<item id="17390" min="1" max="1" chance="0.01" /> <!-- Specter Buster -->
+				<item id="17391" min="1" max="1" chance="0.01" /> <!-- Specter Caster -->
+				<item id="17392" min="1" max="1" chance="0.01" /> <!-- Specter Retributer -->
+				<item id="17393" min="1" max="1" chance="0.01" /> <!-- Specter Dual Swords -->
+				<item id="17394" min="1" max="1" chance="0.01" /> <!-- Specter Dual Daggers -->
+				<item id="17395" min="1" max="1" chance="0.01" /> <!-- Specter Dual Blunt Weapons -->
+				<item id="17396" min="1" max="1" chance="0.07" /> <!-- Seraph Helmet - Heavy armor -->
+				<item id="17397" min="1" max="1" chance="0.07" /> <!-- Seraph Breastplate - Heavy armor -->
+				<item id="17398" min="1" max="1" chance="0.07" /> <!-- Seraph Gaiters - Heavy armor -->
+				<item id="17399" min="1" max="1" chance="0.07" /> <!-- Seraph Gauntlets - Heavy armor -->
+				<item id="17400" min="1" max="1" chance="0.07" /> <!-- Seraph Boots - Heavy armor -->
+				<item id="17401" min="1" max="1" chance="0.07" /> <!-- Seraph Shield -->
+				<item id="17402" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Helmet - Light armor -->
+				<item id="17403" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Armor - Light armor -->
+				<item id="17404" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Leggings - Light armor -->
+				<item id="17405" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Gloves - Light armor -->
+				<item id="17406" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Boots - Light armor -->
+				<item id="17407" min="1" max="1" chance="0.07" /> <!-- Seraph Circlet - Robe -->
+				<item id="17408" min="1" max="1" chance="0.07" /> <!-- Seraph Tunic - Robe -->
+				<item id="17409" min="1" max="1" chance="0.07" /> <!-- Seraph Stockings - Robe -->
+				<item id="17410" min="1" max="1" chance="0.07" /> <!-- Seraph Gloves - Robe -->
+				<item id="17411" min="1" max="1" chance="0.07" /> <!-- Seraph Shoes - Robe -->
+				<item id="17412" min="1" max="1" chance="0.07" /> <!-- Seraph Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4932,76 +4666,64 @@
 		<ai clanHelpRange="300" aggroRange="300" />
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17382" min="1" max="1" chance="0.01" /> <!-- Specter Shaper -->
-					<item id="17383" min="1" max="1" chance="0.01" /> <!-- Specter Cutter -->
-					<item id="17384" min="1" max="1" chance="0.01" /> <!-- Specter Slasher -->
-					<item id="17385" min="1" max="1" chance="0.01" /> <!-- Specter Avenger -->
-					<item id="17386" min="1" max="1" chance="0.01" /> <!-- Specter Fighter -->
-					<item id="17387" min="1" max="1" chance="0.01" /> <!-- Specter Stormer -->
-					<item id="17388" min="1" max="1" chance="0.01" /> <!-- Specter Thrower -->
-					<item id="17389" min="1" max="1" chance="0.01" /> <!-- Specter Guardian -->
-					<item id="17390" min="1" max="1" chance="0.01" /> <!-- Specter Buster -->
-					<item id="17391" min="1" max="1" chance="0.01" /> <!-- Specter Caster -->
-					<item id="17392" min="1" max="1" chance="0.01" /> <!-- Specter Retributer -->
-					<item id="17393" min="1" max="1" chance="0.01" /> <!-- Specter Dual Swords -->
-					<item id="17394" min="1" max="1" chance="0.01" /> <!-- Specter Dual Daggers -->
-					<item id="17395" min="1" max="1" chance="0.01" /> <!-- Specter Dual Blunt Weapons -->
-					<item id="17396" min="1" max="1" chance="0.07" /> <!-- Seraph Helmet - Heavy armor -->
-					<item id="17397" min="1" max="1" chance="0.07" /> <!-- Seraph Breastplate - Heavy armor -->
-					<item id="17398" min="1" max="1" chance="0.07" /> <!-- Seraph Gaiters - Heavy armor -->
-					<item id="17399" min="1" max="1" chance="0.07" /> <!-- Seraph Gauntlets - Heavy armor -->
-					<item id="17400" min="1" max="1" chance="0.07" /> <!-- Seraph Boots - Heavy armor -->
-					<item id="17401" min="1" max="1" chance="0.07" /> <!-- Seraph Shield -->
-					<item id="17402" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Helmet - Light armor -->
-					<item id="17403" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Armor - Light armor -->
-					<item id="17404" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Leggings - Light armor -->
-					<item id="17405" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Gloves - Light armor -->
-					<item id="17406" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Boots - Light armor -->
-					<item id="17407" min="1" max="1" chance="0.07" /> <!-- Seraph Circlet - Robe -->
-					<item id="17408" min="1" max="1" chance="0.07" /> <!-- Seraph Tunic - Robe -->
-					<item id="17409" min="1" max="1" chance="0.07" /> <!-- Seraph Stockings - Robe -->
-					<item id="17410" min="1" max="1" chance="0.07" /> <!-- Seraph Gloves - Robe -->
-					<item id="17411" min="1" max="1" chance="0.07" /> <!-- Seraph Shoes - Robe -->
-					<item id="17412" min="1" max="1" chance="0.07" /> <!-- Seraph Sigil -->
-					<item id="17526" min="1" max="1" chance="58.335" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="1" max="1" chance="40.335" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="5.46">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4.6">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="3.842">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="1.921">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.808">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="58.335" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="40.335" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.846" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.713" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.596" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.298" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.125" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.846" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.713" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.596" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.298" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.125" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.256" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="1.058" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.884" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.442" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.186" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.256" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="1.058" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.884" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.442" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.186" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.256" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="1.058" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.884" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.442" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.186" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="17382" min="1" max="1" chance="0.01" /> <!-- Specter Shaper -->
+				<item id="17383" min="1" max="1" chance="0.01" /> <!-- Specter Cutter -->
+				<item id="17384" min="1" max="1" chance="0.01" /> <!-- Specter Slasher -->
+				<item id="17385" min="1" max="1" chance="0.01" /> <!-- Specter Avenger -->
+				<item id="17386" min="1" max="1" chance="0.01" /> <!-- Specter Fighter -->
+				<item id="17387" min="1" max="1" chance="0.01" /> <!-- Specter Stormer -->
+				<item id="17388" min="1" max="1" chance="0.01" /> <!-- Specter Thrower -->
+				<item id="17389" min="1" max="1" chance="0.01" /> <!-- Specter Guardian -->
+				<item id="17390" min="1" max="1" chance="0.01" /> <!-- Specter Buster -->
+				<item id="17391" min="1" max="1" chance="0.01" /> <!-- Specter Caster -->
+				<item id="17392" min="1" max="1" chance="0.01" /> <!-- Specter Retributer -->
+				<item id="17393" min="1" max="1" chance="0.01" /> <!-- Specter Dual Swords -->
+				<item id="17394" min="1" max="1" chance="0.01" /> <!-- Specter Dual Daggers -->
+				<item id="17395" min="1" max="1" chance="0.01" /> <!-- Specter Dual Blunt Weapons -->
+				<item id="17396" min="1" max="1" chance="0.07" /> <!-- Seraph Helmet - Heavy armor -->
+				<item id="17397" min="1" max="1" chance="0.07" /> <!-- Seraph Breastplate - Heavy armor -->
+				<item id="17398" min="1" max="1" chance="0.07" /> <!-- Seraph Gaiters - Heavy armor -->
+				<item id="17399" min="1" max="1" chance="0.07" /> <!-- Seraph Gauntlets - Heavy armor -->
+				<item id="17400" min="1" max="1" chance="0.07" /> <!-- Seraph Boots - Heavy armor -->
+				<item id="17401" min="1" max="1" chance="0.07" /> <!-- Seraph Shield -->
+				<item id="17402" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Helmet - Light armor -->
+				<item id="17403" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Armor - Light armor -->
+				<item id="17404" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Leggings - Light armor -->
+				<item id="17405" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Gloves - Light armor -->
+				<item id="17406" min="1" max="1" chance="0.07" /> <!-- Seraph Leather Boots - Light armor -->
+				<item id="17407" min="1" max="1" chance="0.07" /> <!-- Seraph Circlet - Robe -->
+				<item id="17408" min="1" max="1" chance="0.07" /> <!-- Seraph Tunic - Robe -->
+				<item id="17409" min="1" max="1" chance="0.07" /> <!-- Seraph Stockings - Robe -->
+				<item id="17410" min="1" max="1" chance="0.07" /> <!-- Seraph Gloves - Robe -->
+				<item id="17411" min="1" max="1" chance="0.07" /> <!-- Seraph Shoes - Robe -->
+				<item id="17412" min="1" max="1" chance="0.07" /> <!-- Seraph Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -5301,93 +5023,69 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="5">
-					<item id="17382" min="1" max="1" chance="9.09" /> <!-- Specter Shaper -->
-					<item id="17383" min="1" max="1" chance="9.09" /> <!-- Specter Cutter -->
-					<item id="17384" min="1" max="1" chance="9.09" /> <!-- Specter Slasher -->
-					<item id="17385" min="1" max="1" chance="9.09" /> <!-- Specter Avenger -->
-					<item id="17386" min="1" max="1" chance="9.09" /> <!-- Specter Fighter -->
-					<item id="17387" min="1" max="1" chance="9.09" /> <!-- Specter Stormer -->
-					<item id="17388" min="1" max="1" chance="9.09" /> <!-- Specter Thrower -->
-					<item id="17389" min="1" max="1" chance="9.09" /> <!-- Specter Guardian -->
-					<item id="17390" min="1" max="1" chance="9.09" /> <!-- Specter Buster -->
-					<item id="17391" min="1" max="1" chance="9.09" /> <!-- Specter Caster -->
-					<item id="17392" min="1" max="1" chance="9.1" /> <!-- Specter Retributer -->
-				</group>
-				<group chance="30">
-					<item id="17396" min="1" max="1" chance="5.88" /> <!-- Seraph Helmet - Heavy armor -->
-					<item id="17397" min="1" max="1" chance="5.88" /> <!-- Seraph Breastplate - Heavy armor -->
-					<item id="17398" min="1" max="1" chance="5.88" /> <!-- Seraph Gaiters - Heavy armor -->
-					<item id="17399" min="1" max="1" chance="5.88" /> <!-- Seraph Gauntlets - Heavy armor -->
-					<item id="17400" min="1" max="1" chance="5.88" /> <!-- Seraph Boots - Heavy armor -->
-					<item id="17401" min="1" max="1" chance="5.88" /> <!-- Seraph Shield -->
-					<item id="17402" min="1" max="1" chance="5.88" /> <!-- Seraph Leather Helmet - Light armor -->
-					<item id="17403" min="1" max="1" chance="5.88" /> <!-- Seraph Leather Armor - Light armor -->
-					<item id="17404" min="1" max="1" chance="5.88" /> <!-- Seraph Leather Leggings - Light armor -->
-					<item id="17405" min="1" max="1" chance="5.88" /> <!-- Seraph Leather Gloves - Light armor -->
-					<item id="17406" min="1" max="1" chance="5.88" /> <!-- Seraph Leather Boots - Light armor -->
-					<item id="17407" min="1" max="1" chance="5.88" /> <!-- Seraph Circlet - Robe -->
-					<item id="17408" min="1" max="1" chance="5.88" /> <!-- Seraph Tunic - Robe -->
-					<item id="17409" min="1" max="1" chance="5.88" /> <!-- Seraph Stockings - Robe -->
-					<item id="17410" min="1" max="1" chance="5.88" /> <!-- Seraph Gloves - Robe -->
-					<item id="17411" min="1" max="1" chance="5.88" /> <!-- Seraph Shoes - Robe -->
-					<item id="17412" min="1" max="1" chance="5.92" /> <!-- Seraph Sigil -->
-				</group>
-				<group chance="100">
-					<item id="19448" min="1" max="1" chance="80" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="20" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17703" min="1" max="1" chance="16.66" /> <!-- Ancient STR Dye Lv. 5 - STR +5, Fire Resistance +25 -->
-					<item id="17704" min="1" max="1" chance="16.66" /> <!-- Ancient DEX Dye Lv. 5 - DEX +5, Earth Resistance +25 -->
-					<item id="17705" min="1" max="1" chance="16.66" /> <!-- Ancient CON Dye Lv. 5 - CON +5, Dark Resistance +25 -->
-					<item id="17706" min="1" max="1" chance="16.66" /> <!-- Ancient INT Dye Lv. 5 - INT +5, Water Resistance +25 -->
-					<item id="17707" min="1" max="1" chance="16.68" /> <!-- Ancient WIT Dye Lv. 5 - WIT +5, Wind Resistance +25 -->
-					<item id="17708" min="1" max="1" chance="16.68" /> <!-- Ancient MEN Dye Lv. 5 - MEN +5, Holy Resistance +25 -->
-				</group>
-				<group chance="50">
-					<item id="36978" min="1" max="1" chance="50" /> <!-- Scroll: Enchant Head Accessory -->
-					<item id="45937" min="1" max="1" chance="50" /> <!-- Spirit Stone: Head Accessory -->
-				</group>
-				<group chance="30">
-					<item id="37771" min="1" max="1" chance="20" /> <!-- Scroll of Blessing: R95-grade Weapon -->
-					<item id="37780" min="1" max="1" chance="80" /> <!-- Scroll of Blessing: R95-grade Armor -->
-				</group>
-				<group chance="5.46">
-					<item id="46444" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46459" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46474" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46489" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
-					<item id="46504" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
-				</group>
-				<group chance="4.6">
-					<item id="46445" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46460" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46475" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46490" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
-					<item id="46505" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
-				</group>
-				<group chance="3.842">
-					<item id="46446" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46461" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46476" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46491" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
-					<item id="46506" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
-				</group>
-				<group chance="1.921">
-					<item id="46447" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46462" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46477" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46492" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
-					<item id="46507" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
-				</group>
-				<group chance="0.808">
-					<item id="46448" min="1" max="1" chance="15.5" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46463" min="1" max="1" chance="15.5" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46478" min="1" max="1" chance="23" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46493" min="1" max="1" chance="23" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
-					<item id="46508" min="1" max="1" chance="23" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
-				</group>
+				<item id="19447" min="1" max="1" chance="20" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="80" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="46444" min="1" max="1" chance="0.846" /> <!-- Kain's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46445" min="1" max="1" chance="0.713" /> <!-- Kain's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46446" min="1" max="1" chance="0.596" /> <!-- Kain's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46447" min="1" max="1" chance="0.298" /> <!-- Kain's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46448" min="1" max="1" chance="0.125" /> <!-- Kain's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46459" min="1" max="1" chance="0.846" /> <!-- Mermoden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46460" min="1" max="1" chance="0.713" /> <!-- Mermoden's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46461" min="1" max="1" chance="0.596" /> <!-- Mermoden's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46462" min="1" max="1" chance="0.298" /> <!-- Mermoden's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46463" min="1" max="1" chance="0.125" /> <!-- Mermoden's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46474" min="1" max="1" chance="1.256" /> <!-- Leona's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46475" min="1" max="1" chance="1.058" /> <!-- Leona's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46476" min="1" max="1" chance="0.884" /> <!-- Leona's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46477" min="1" max="1" chance="0.442" /> <!-- Leona's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46478" min="1" max="1" chance="0.186" /> <!-- Leona's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46489" min="1" max="1" chance="1.256" /> <!-- Pantheon's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46490" min="1" max="1" chance="1.058" /> <!-- Pantheon's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46491" min="1" max="1" chance="0.884" /> <!-- Pantheon's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46492" min="1" max="1" chance="0.442" /> <!-- Pantheon's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46493" min="1" max="1" chance="0.186" /> <!-- Pantheon's Soul Crystal Lv. 5 - Weapon -->
+				<item id="46504" min="1" max="1" chance="1.256" /> <!-- Lionel's Soul Crystal Lv. 1 - Weapon -->
+				<item id="46505" min="1" max="1" chance="1.058" /> <!-- Lionel's Soul Crystal Lv. 2 - Weapon -->
+				<item id="46506" min="1" max="1" chance="0.884" /> <!-- Lionel's Soul Crystal Lv. 3 - Weapon -->
+				<item id="46507" min="1" max="1" chance="0.442" /> <!-- Lionel's Soul Crystal Lv. 4 - Weapon -->
+				<item id="46508" min="1" max="1" chance="0.186" /> <!-- Lionel's Soul Crystal Lv. 5 - Weapon -->
+				<item id="17703" min="1" max="1" chance="16.66" /> <!-- Ancient STR Dye Lv. 5 - STR +5, Fire Resistance +25 -->
+				<item id="17704" min="1" max="1" chance="16.66" /> <!-- Ancient DEX Dye Lv. 5 - DEX +5, Earth Resistance +25 -->
+				<item id="17705" min="1" max="1" chance="16.66" /> <!-- Ancient CON Dye Lv. 5 - CON +5, Dark Resistance +25 -->
+				<item id="17706" min="1" max="1" chance="16.66" /> <!-- Ancient INT Dye Lv. 5 - INT +5, Water Resistance +25 -->
+				<item id="17707" min="1" max="1" chance="16.68" /> <!-- Ancient WIT Dye Lv. 5 - WIT +5, Wind Resistance +25 -->
+				<item id="17708" min="1" max="1" chance="16.68" /> <!-- Ancient MEN Dye Lv. 5 - MEN +5, Holy Resistance +25 -->
+				<item id="37771" min="1" max="1" chance="6" /> <!-- Scroll of Blessing: R95-grade Weapon -->
+				<item id="37780" min="1" max="1" chance="24" /> <!-- Scroll of Blessing: R95-grade Armor -->
+				<item id="17382" min="1" max="1" chance="0.455" /> <!-- Specter Shaper -->
+				<item id="17383" min="1" max="1" chance="0.455" /> <!-- Specter Cutter -->
+				<item id="17384" min="1" max="1" chance="0.455" /> <!-- Specter Slasher -->
+				<item id="17385" min="1" max="1" chance="0.455" /> <!-- Specter Avenger -->
+				<item id="17386" min="1" max="1" chance="0.455" /> <!-- Specter Fighter -->
+				<item id="17387" min="1" max="1" chance="0.455" /> <!-- Specter Stormer -->
+				<item id="17388" min="1" max="1" chance="0.455" /> <!-- Specter Thrower -->
+				<item id="17389" min="1" max="1" chance="0.455" /> <!-- Specter Guardian -->
+				<item id="17390" min="1" max="1" chance="0.455" /> <!-- Specter Buster -->
+				<item id="17391" min="1" max="1" chance="0.455" /> <!-- Specter Caster -->
+				<item id="17392" min="1" max="1" chance="0.455" /> <!-- Specter Retributer -->
+				<item id="17396" min="1" max="1" chance="1.764" /> <!-- Seraph Helmet - Heavy armor -->
+				<item id="17397" min="1" max="1" chance="1.764" /> <!-- Seraph Breastplate - Heavy armor -->
+				<item id="17398" min="1" max="1" chance="1.764" /> <!-- Seraph Gaiters - Heavy armor -->
+				<item id="17399" min="1" max="1" chance="1.764" /> <!-- Seraph Gauntlets - Heavy armor -->
+				<item id="17400" min="1" max="1" chance="1.764" /> <!-- Seraph Boots - Heavy armor -->
+				<item id="17401" min="1" max="1" chance="1.764" /> <!-- Seraph Shield -->
+				<item id="17402" min="1" max="1" chance="1.764" /> <!-- Seraph Leather Helmet - Light armor -->
+				<item id="17403" min="1" max="1" chance="1.764" /> <!-- Seraph Leather Armor - Light armor -->
+				<item id="17404" min="1" max="1" chance="1.764" /> <!-- Seraph Leather Leggings - Light armor -->
+				<item id="17405" min="1" max="1" chance="1.764" /> <!-- Seraph Leather Gloves - Light armor -->
+				<item id="17406" min="1" max="1" chance="1.764" /> <!-- Seraph Leather Boots - Light armor -->
+				<item id="17407" min="1" max="1" chance="1.764" /> <!-- Seraph Circlet - Robe -->
+				<item id="17408" min="1" max="1" chance="1.764" /> <!-- Seraph Tunic - Robe -->
+				<item id="17409" min="1" max="1" chance="1.764" /> <!-- Seraph Stockings - Robe -->
+				<item id="17410" min="1" max="1" chance="1.764" /> <!-- Seraph Gloves - Robe -->
+				<item id="17411" min="1" max="1" chance="1.764" /> <!-- Seraph Shoes - Robe -->
+				<item id="17412" min="1" max="1" chance="1.776" /> <!-- Seraph Sigil -->
 			</drop>
 		</dropLists>
 	</npc>

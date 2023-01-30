@@ -32,7 +32,7 @@ public enum IllegalActionPunishmentType
 	{
 		for (IllegalActionPunishmentType type : values())
 		{
-			if (type.name().equalsIgnoreCase(name.toLowerCase()))
+			if (type.name().equalsIgnoreCase(name))
 			{
 				return type;
 			}

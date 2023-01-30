@@ -87,6 +87,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="39510" level="1" /> <!-- Lucky Pig Special Vitality Tonic -->
+		</skills>
 	</item>
 	<item id="80807" name="Gran Kain's Cube" type="EtcItem">
 		<!-- Double-click to obtain Gran Kain's Gift Box. Grants Gran Kain's Cube Special Support Items on the 1st and 10th use. Cannot be used in the Olympiad. -->
@@ -430,6 +438,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="39523" level="1" /> <!-- Golden's Pig Medium Vitality Tonic -->
+		</skills>
 	</item>
 	<item id="80834" name="Jackpot Wish Lucky Pouch" type="EtcItem">
 		<!-- A lucky pouch prepared to celebrate the year of the Golden Pig. Double-click to obtain Lindvior's Earring/ Blessed Valakas' Necklace/ Blessed Antharas' Earring or various consumables. -->
@@ -504,6 +520,12 @@
 			<skill id="35526" level="9" type="ON_ENCHANT" type_value="8" /> <!-- Kaliel's Top-grade Bracelet -->
 			<skill id="35526" level="10" type="ON_ENCHANT" type_value="9" /> <!-- Kaliel's Top-grade Bracelet -->
 			<skill id="35526" level="11" type="ON_ENCHANT" type_value="10" /> <!-- Kaliel's Top-grade Bracelet -->
+			<skill id="30818" level="1" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Protection Lv1 -->
+			<skill id="30818" level="2" type="ON_ENCHANT" type_value="6" /> <!-- Kaliel's Protection Lv2 -->
+			<skill id="30818" level="3" type="ON_ENCHANT" type_value="7" /> <!-- Kaliel's Protection Lv3 -->
+			<skill id="30818" level="4" type="ON_ENCHANT" type_value="8" /> <!-- Kaliel's Protection Lv4 -->
+			<skill id="30818" level="5" type="ON_ENCHANT" type_value="9" /> <!-- Kaliel's Protection Lv5 -->
+			<skill id="30818" level="6" type="ON_ENCHANT" type_value="10" /> <!-- Kaliel's Protection Lv6 -->
 		</skills>
 	</item>
 	<item id="80838" name="Blessed Scroll: Enchant Kaliel's Bracelet" type="EtcItem">
@@ -512,6 +534,8 @@
 		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="is_premium" val="true" />
 		<set name="is_oly_restricted" val="true" />
@@ -670,6 +694,10 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39744" level="1" /> <!-- +10 Agathion Pack -->
+		</skills>
 	</item>
 	<item id="80852" name="PA Shining Nevit's Gold Hourglass" type="EtcItem">
 		<!-- For PA For 30 min., acquired XP/ SP +100%. Does not stack with Fall of the Dragon or Dandy's Home Run Ball. Cooldown: 5 min. -->
@@ -681,6 +709,10 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39533" level="1" /> <!-- PA Shining Nevit's Gold Hourglass -->
+		</skills>
 	</item>
 	<item id="80853" name="Undead Blood" type="EtcItem">
 		<!-- Item obtained as proof of having defeated the monsters in Altar of Evil at the request of Grocer Vollodos. Collect these and take them to Herphah in the Town of Aden. -->

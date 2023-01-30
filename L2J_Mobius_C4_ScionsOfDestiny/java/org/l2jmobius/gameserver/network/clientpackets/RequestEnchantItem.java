@@ -19,6 +19,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.util.Rnd;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.enums.ItemLocation;
 import org.l2jmobius.gameserver.enums.Race;
 import org.l2jmobius.gameserver.model.World;
@@ -34,7 +35,6 @@ import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
 public class RequestEnchantItem implements ClientPacket
@@ -199,7 +199,7 @@ public class RequestEnchantItem implements ClientPacket
 		if (item.isWear())
 		{
 			player.setActiveEnchantItem(null);
-			Util.handleIllegalPlayerAction(player, player + " tried to enchant a weared Item", IllegalPlayerAction.PUNISH_KICK);
+			Util.handleIllegalPlayerAction(player, player + " tried to enchant a weared Item", IllegalActionPunishmentType.KICK);
 			return;
 		}
 		

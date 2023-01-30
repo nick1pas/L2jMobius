@@ -165,6 +165,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
+		<acquire exp="5765" sp="6" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="158417" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="198795" magical="23750" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -207,6 +208,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>BEAST</race>
 		<sex>MALE</sex>
+		<acquire exp="5241" sp="5" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="158417" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="198795" magical="23750" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -647,16 +649,14 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="50">
-					<item id="40041" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - STR -->
-					<item id="40046" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - WIT -->
-					<item id="40047" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - LUC -->
-					<item id="40048" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CHA -->
-					<item id="40042" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - DEX -->
-					<item id="40043" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CON -->
-					<item id="40044" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - INT -->
-					<item id="40045" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - MEN -->
-				</group>
+				<item id="40041" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - STR -->
+				<item id="40042" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - DEX -->
+				<item id="40043" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - CON -->
+				<item id="40044" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - INT -->
+				<item id="40045" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - MEN -->
+				<item id="40046" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - WIT -->
+				<item id="40047" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - LUC -->
+				<item id="40048" min="1" max="1" chance="6.25" /> <!-- Dimensional Bracelet Enhancement Stone - CHA -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -696,19 +696,15 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="40063" min="1" max="2" chance="100" /> <!-- Secret Ancient Tome Fragment -->
-				</group>
-				<group chance="100">
-					<item id="40041" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - STR -->
-					<item id="40046" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - WIT -->
-					<item id="40047" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - LUC -->
-					<item id="40048" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CHA -->
-					<item id="40042" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - DEX -->
-					<item id="40043" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CON -->
-					<item id="40044" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - INT -->
-					<item id="40045" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - MEN -->
-				</group>
+				<item id="40041" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - STR -->
+				<item id="40042" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - DEX -->
+				<item id="40043" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CON -->
+				<item id="40044" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - INT -->
+				<item id="40045" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - MEN -->
+				<item id="40046" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - WIT -->
+				<item id="40047" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - LUC -->
+				<item id="40048" min="1" max="1" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CHA -->
+				<item id="40063" min="1" max="2" chance="100" /> <!-- Secret Ancient Tome Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -748,19 +744,15 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="40063" min="2" max="4" chance="100" /> <!-- Secret Ancient Tome Fragment -->
-				</group>
-				<group chance="100">
-					<item id="40041" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - STR -->
-					<item id="40046" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - WIT -->
-					<item id="40047" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - LUC -->
-					<item id="40048" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CHA -->
-					<item id="40042" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - DEX -->
-					<item id="40043" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CON -->
-					<item id="40044" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - INT -->
-					<item id="40045" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - MEN -->
-				</group>
+				<item id="40041" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - STR -->
+				<item id="40042" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - DEX -->
+				<item id="40043" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CON -->
+				<item id="40044" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - INT -->
+				<item id="40045" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - MEN -->
+				<item id="40046" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - WIT -->
+				<item id="40047" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - LUC -->
+				<item id="40048" min="1" max="2" chance="12.5" /> <!-- Dimensional Bracelet Enhancement Stone - CHA -->
+				<item id="40063" min="2" max="4" chance="100" /> <!-- Secret Ancient Tome Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1450,7 +1442,7 @@
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="37639.8" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="18819.65" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="76020.5" magical="10687.5" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4315" magical="1748" />
 			<speed>
@@ -1469,7 +1461,7 @@
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/ 2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="6" /> <!-- Very Weak P. Atk. -->
 			<skill id="4411" level="6" /> <!-- Very Weak M. Atk. -->
@@ -1532,6 +1524,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="117" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1565,6 +1558,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="43" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1598,6 +1592,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="13" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1631,6 +1626,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="269" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1664,6 +1660,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="100" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1697,6 +1694,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="30" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1730,6 +1728,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="807" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1763,6 +1762,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="299" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1796,6 +1796,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="90" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1829,6 +1830,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="234" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1862,6 +1864,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="87" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1895,6 +1898,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire sp="26" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
 			<vitals hp="356012.657439055" hpRegen="8.5" mp="23174" mpRegen="30" />
 			<attack physical="45027.4086463771" magical="7933.39078546243" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />

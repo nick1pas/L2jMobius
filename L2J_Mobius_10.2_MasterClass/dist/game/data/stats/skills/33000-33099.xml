@@ -61,7 +61,9 @@
 		<operateType>P</operateType>
 		<effects>
 			<effect name="TriggerSkillByAttack">
-				<isCritical>true</isCritical>
+				<chance>5</chance>
+				<minDamage>100</minDamage>
+				<skillId>33091</skillId> <!-- Churing's Blessing -->
 				<allowSkillAttack>true</allowSkillAttack>
 				<allowNormalAttack>false</allowNormalAttack>
 				<chance>5</chance>
@@ -2048,15 +2050,15 @@
 	</skill>
 	<skill id="33099" toLevel="1" name="Critical Defense">
 		<!-- Strong immunity to P./ M. Skill Damage. -->
-		<icon>icon.skill0000</icon>
+		<icon>icon.skill0142</icon>
 		<operateType>P</operateType>
 		<effects>
 			<effect name="DefenceMagicCriticalDamage">
-				<amount>50</amount>
+				<amount>-50</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="DefencePhysicalSkillCriticalDamage">
-				<amount>50</amount>
+				<amount>-50</amount>
 				<mode>PER</mode>
 			</effect>
 		</effects>

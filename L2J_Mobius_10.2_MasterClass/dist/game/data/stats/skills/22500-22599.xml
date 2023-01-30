@@ -1480,20 +1480,28 @@
 	<skill id="22597" toLevel="3" name="Scroll: Replenish Vitality">
 		<operateType>A1</operateType>
 		<hitTime>200</hitTime>
-		<reuseDelay>3600000</reuseDelay>
 		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
 		<magicLevel>1</magicLevel>
 		<staticReuse>true</staticReuse>
 		<isMagic>2</isMagic>
-		<isDebuff>false</isDebuff>
+		<itemConsumeId>
+			<value level="1">22883</value>
+			<value level="2">22884</value>
+			<value level="2">22885</value>
+		</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<reuseDelay>3600000</reuseDelay>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-		<hitCancelTime>0</hitCancelTime>
-		<itemConsumeId>22885</itemConsumeId>
-		<itemConsumeCount>1</itemConsumeCount>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
 		<effects>
 			<effect name="VitalityPointUp">
-				<value>140000</value>
+				<value level="1">35000</value>
+				<value level="2">70000</value>
+				<value level="3">140000</value>
 			</effect>
 		</effects>
 	</skill>

@@ -9,6 +9,7 @@
 		<set name="material" val="SILVER" />
 		<set name="weight" val="5" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="29301" name="Gowther Agathion Charm" additionalName="Stage 3" type="Armor">
 		<!-- A charm that activates the power of the Gowther Agathion. Equipping it in the main slot summons the Agathion and activates the Special and Unique abilities. When equipped in a sub slot, only the unique ability is applied. Upgrade to +7 by using Seven Deadly Sins Agathion Book of Growth. -->
@@ -19,6 +20,7 @@
 		<set name="material" val="SILVER" />
 		<set name="weight" val="5" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="29302" name="Escanor Agathion Charm" additionalName="Stage 3" type="Armor">
 		<!-- A charm that activates the power of the Escanor Agathion. Equipping it in the main slot summons the Agathion and activates the Special and Unique abilities. When equipped in a sub slot, only the unique ability is applied. Upgrade to +7 by using Seven Deadly Sins Agathion Book of Growth. -->
@@ -29,6 +31,7 @@
 		<set name="material" val="SILVER" />
 		<set name="weight" val="5" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="29303" name="Seven Deadly Sins Agathion Charm Book of Growth" type="EtcItem">
 		<!-- Book of Growth for the Seven Deadly Sins Agathion Charms. The enchant level remains the same even if enchantment fails. -->
@@ -1493,9 +1496,17 @@
 		<!-- When used, increases Acquired XP/ SP by 30%, Acquired XP/ SP in Vitality state by 30%, and P. Atk./ P. Def./ M. Atk./ M. Def. by 15% for 30 min. -->
 		<set name="icon" val="BranchIcon.etc_sign_agathion_feed_red_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="material" val="PAPER" />
+		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_tradable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="28282" level="1" /> <!-- Deton's Red Potion -->
+		</skills>
 	</item>
 	<item id="29378" name="Deton's Yellow Potion" type="EtcItem">
 		<!-- Recharges a certain amount of Vitality when used. No weekly usage limit. -->
@@ -1509,7 +1520,7 @@
 		<!-- When used, increases Acquired XP/ SP by 50%, Acquired XP/ SP in Vitality state by 50%, and P. Atk./ P. Def./ M. Atk./ M. Def./ Normal Critical Damage/ Skill Power by 15% for 30 min. Cannot stack with Deton's Red Potion. -->
 		<set name="icon" val="BranchIcon.etc_sign_agathion_feed_purple_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
-		<set name="material" val="PAPER" />
+		<set name="material" val="LIQUID" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_tradable" val="true" />

@@ -46,17 +46,17 @@ public class HennaItemRemoveInfo extends ServerPacket
 		writeInt(_henna.isAllowedClass(_player)); // able to remove or not
 		writeLong(_player.getAdena());
 		writeInt(_player.getINT()); // current INT
-		writeShort(_player.getINT() - _player.getHennaValue(BaseStat.INT)); // equip INT
+		writeShort(_player.getINT() - _henna.getBaseStats(BaseStat.INT)); // equip INT
 		writeInt(_player.getSTR()); // current STR
-		writeShort(_player.getSTR() - _player.getHennaValue(BaseStat.STR)); // equip STR
+		writeShort(_player.getSTR() - _henna.getBaseStats(BaseStat.STR)); // equip STR
 		writeInt(_player.getCON()); // current CON
-		writeShort(_player.getCON() - _player.getHennaValue(BaseStat.CON)); // equip CON
+		writeShort(_player.getCON() - _henna.getBaseStats(BaseStat.CON)); // equip CON
 		writeInt(_player.getMEN()); // current MEN
-		writeShort(_player.getMEN() - _player.getHennaValue(BaseStat.MEN)); // equip MEN
+		writeShort(_player.getMEN() - _henna.getBaseStats(BaseStat.MEN)); // equip MEN
 		writeInt(_player.getDEX()); // current DEX
-		writeShort(_player.getDEX() - _player.getHennaValue(BaseStat.DEX)); // equip DEX
+		writeShort(_player.getDEX() - _henna.getBaseStats(BaseStat.DEX)); // equip DEX
 		writeInt(_player.getWIT()); // current WIT
-		writeShort(_player.getWIT() - _player.getHennaValue(BaseStat.WIT)); // equip WIT
+		writeShort(_player.getWIT() - _henna.getBaseStats(BaseStat.WIT)); // equip WIT
 		writeInt(0); // current LUC
 		writeShort(0); // equip LUC
 		writeInt(0); // current CHA

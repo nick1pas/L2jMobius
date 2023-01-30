@@ -83,7 +83,7 @@ public class RequestExTryToPutEnchantTargetItem implements ClientPacket
 			player.sendPacket(SystemMessageId.DOES_NOT_FIT_STRENGTHENING_CONDITIONS_OF_THE_SCROLL);
 			request.setEnchantingItem(0);
 			player.sendPacket(new ExPutEnchantTargetItemResult(0));
-			player.sendPacket(new EnchantResult(2, 0, 0));
+			player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 			player.sendPacket(new ExPutEnchantScrollItemResult(1));
 			if (scrollTemplate == null)
 			{

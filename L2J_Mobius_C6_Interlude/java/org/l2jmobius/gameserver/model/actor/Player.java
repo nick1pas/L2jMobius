@@ -62,7 +62,7 @@ import org.l2jmobius.gameserver.data.xml.RecipeData;
 import org.l2jmobius.gameserver.data.xml.ZoneData;
 import org.l2jmobius.gameserver.enums.ChatType;
 import org.l2jmobius.gameserver.enums.ClassId;
-import org.l2jmobius.gameserver.enums.PunishmentType;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.enums.Race;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
 import org.l2jmobius.gameserver.geoengine.GeoEngine;
@@ -235,7 +235,6 @@ import org.l2jmobius.gameserver.taskmanager.ItemsAutoDestroyTaskManager;
 import org.l2jmobius.gameserver.taskmanager.PlayerAutoSaveTaskManager;
 import org.l2jmobius.gameserver.taskmanager.PvpFlagTaskManager;
 import org.l2jmobius.gameserver.util.Broadcast;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
@@ -491,7 +490,7 @@ public class Player extends Playable
 	private volatile int _fallingDamage = 0;
 	private Future<?> _fallingDamageTask = null;
 	private final Location _lastPartyPosition = new Location(0, 0, 0);
-	private PunishmentType _punishLevel = PunishmentType.NONE;
+	private IllegalActionPunishmentType _punishLevel = IllegalActionPunishmentType.NONE;
 	private long _punishTimer = 0;
 	private ScheduledFuture<?> _punishTask;
 	private final GatesRequest _gatesRequest = new GatesRequest();
@@ -3922,7 +3921,7 @@ public class Player extends Playable
 			// Send a Server->Client ActionFailed to the Player in order to avoid that the client wait another packet
 			sendPacket(ActionFailed.STATIC_PACKET);
 			
-			Util.handleIllegalPlayerAction(this, "Warning!! Character " + getName() + " of account " + getAccountName() + " tried to drop Freight Items", IllegalPlayerAction.PUNISH_KICK);
+			Util.handleIllegalPlayerAction(this, "Warning!! Character " + getName() + " of account " + getAccountName() + " tried to drop Freight Items", IllegalActionPunishmentType.KICK);
 			return;
 		}
 		
@@ -3995,7 +3994,7 @@ public class Player extends Playable
 			// Send a Server->Client ActionFailed to the Player in order to avoid that the client wait another packet
 			sendPacket(ActionFailed.STATIC_PACKET);
 			
-			Util.handleIllegalPlayerAction(this, "Warning!! Character " + getName() + " of account " + getAccountName() + " tried to drop Freight Items", IllegalPlayerAction.PUNISH_KICK);
+			Util.handleIllegalPlayerAction(this, "Warning!! Character " + getName() + " of account " + getAccountName() + " tried to drop Freight Items", IllegalActionPunishmentType.KICK);
 			return null;
 		}
 		
@@ -7603,7 +7602,7 @@ public class Player extends Playable
 				player.setLvlJoinedAcademy(rset.getInt("lvl_joined_academy"));
 				player.setIn7sDungeon(rset.getInt("isin7sdungeon") == 1);
 				player.setPunishLevel(rset.getInt("punish_level"));
-				if (player.getPunishLevel() != PunishmentType.NONE)
+				if (player.getPunishLevel() != IllegalActionPunishmentType.NONE)
 				{
 					player.setPunishTimer(rset.getLong("punish_timer"));
 				}
@@ -8062,7 +8061,7 @@ public class Player extends Playable
 				totalOnlineTime += (System.currentTimeMillis() - _onlineBeginTime) / 1000;
 			}
 			statement.setLong(41, _offlineShopStart > 0 ? _onlineTime : totalOnlineTime);
-			statement.setInt(42, getPunishLevel().value());
+			statement.setInt(42, getPunishLevel().ordinal());
 			statement.setLong(43, getPunishTimer());
 			statement.setInt(44, isNewbie() ? 1 : 0);
 			statement.setInt(45, isNoble() ? 1 : 0);
@@ -15039,7 +15038,7 @@ public class Player extends Playable
 	 * returns punishment level of player.
 	 * @return the punish level
 	 */
-	public PunishmentType getPunishLevel()
+	public IllegalActionPunishmentType getPunishLevel()
 	{
 		return _punishLevel;
 	}
@@ -15050,7 +15049,7 @@ public class Player extends Playable
 	 */
 	public boolean isInJail()
 	{
-		return _punishLevel == PunishmentType.JAIL;
+		return _punishLevel == IllegalActionPunishmentType.JAIL;
 	}
 	
 	/**
@@ -15059,7 +15058,7 @@ public class Player extends Playable
 	 */
 	public boolean isChatBanned()
 	{
-		return _punishLevel == PunishmentType.CHAT;
+		return _punishLevel == IllegalActionPunishmentType.CHAT;
 	}
 	
 	/**
@@ -15072,27 +15071,27 @@ public class Player extends Playable
 		{
 			case 0:
 			{
-				_punishLevel = PunishmentType.NONE;
+				_punishLevel = IllegalActionPunishmentType.NONE;
 				break;
 			}
 			case 1:
 			{
-				_punishLevel = PunishmentType.CHAT;
+				_punishLevel = IllegalActionPunishmentType.CHAT;
 				break;
 			}
 			case 2:
 			{
-				_punishLevel = PunishmentType.JAIL;
+				_punishLevel = IllegalActionPunishmentType.JAIL;
 				break;
 			}
 			case 3:
 			{
-				_punishLevel = PunishmentType.CHAR;
+				_punishLevel = IllegalActionPunishmentType.KICKBAN;
 				break;
 			}
 			case 4:
 			{
-				_punishLevel = PunishmentType.ACC;
+				_punishLevel = IllegalActionPunishmentType.JAIL;
 				break;
 			}
 		}
@@ -15103,7 +15102,7 @@ public class Player extends Playable
 	 * @param state the state
 	 * @param delayInMinutes the delay in minutes
 	 */
-	public void setPunishLevel(PunishmentType state, int delayInMinutes)
+	public void setPunishLevel(IllegalActionPunishmentType state, int delayInMinutes)
 	{
 		final long delayInMilliseconds = delayInMinutes * 60000;
 		setPunishLevel(state, delayInMilliseconds);
@@ -15114,7 +15113,7 @@ public class Player extends Playable
 	 * @param state the state
 	 * @param delayInMilliseconds 0 - Indefinite
 	 */
-	public void setPunishLevel(PunishmentType state, long delayInMilliseconds)
+	public void setPunishLevel(IllegalActionPunishmentType state, long delayInMilliseconds)
 	{
 		switch (state)
 		{
@@ -15155,7 +15154,7 @@ public class Player extends Playable
 			case CHAT: // Chat Ban
 			{
 				// not allow player to escape jail using chat ban
-				if (_punishLevel == PunishmentType.JAIL)
+				if (_punishLevel == IllegalActionPunishmentType.JAIL)
 				{
 					break;
 				}
@@ -15220,13 +15219,12 @@ public class Player extends Playable
 				teleToLocation(MapRegionData.JAIL_LOCATION, false);
 				break;
 			}
-			case CHAR: // Ban Character
+			case KICK: // Kick Character
 			{
-				setAccessLevel(-100);
 				logout();
 				break;
 			}
-			case ACC: // Ban Account
+			case KICKBAN: // Ban Account
 			{
 				setAccountAccesslevel(-100);
 				logout();
@@ -15266,16 +15264,16 @@ public class Player extends Playable
 	 */
 	private void updatePunishState()
 	{
-		if (getPunishLevel() != PunishmentType.NONE)
+		if (getPunishLevel() != IllegalActionPunishmentType.NONE)
 		{
 			// If punish timer exists, restart punishtask.
 			if (_punishTimer > 0)
 			{
 				_punishTask = ThreadPool.schedule(new PunishTask(this), _punishTimer);
-				sendMessage("You are still " + getPunishLevel().string() + " for " + (_punishTimer / 60000) + " minutes.");
+				sendMessage("You are still " + getPunishLevel().name().toLowerCase() + " for " + (_punishTimer / 60000) + " minutes.");
 			}
 			// If player escaped, put him back in jail
-			if ((getPunishLevel() == PunishmentType.JAIL) && !isInsideZone(ZoneId.JAIL))
+			if ((getPunishLevel() == IllegalActionPunishmentType.JAIL) && !isInsideZone(ZoneId.JAIL))
 			{
 				teleToLocation(MapRegionData.JAIL_LOCATION, false);
 			}
@@ -15306,7 +15304,7 @@ public class Player extends Playable
 	
 	private class PunishTask implements Runnable
 	{
-		Player _player;
+		final Player _player;
 		
 		/**
 		 * Instantiates a new punish task.
@@ -15320,7 +15318,7 @@ public class Player extends Playable
 		@Override
 		public void run()
 		{
-			_player.setPunishLevel(PunishmentType.NONE, 0);
+			_player.setPunishLevel(IllegalActionPunishmentType.NONE, 0);
 		}
 	}
 	

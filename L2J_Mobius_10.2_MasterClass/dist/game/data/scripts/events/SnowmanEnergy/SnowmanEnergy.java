@@ -316,46 +316,49 @@ public class SnowmanEnergy extends LongTimeEvent
 	@Override
 	public String onKill(Npc npc, Player player, boolean isSummon)
 	{
-		if (getRandom(100) < 2)
+		if (isEventPeriod())
 		{
-			if (CommonUtil.contains(MONSTERS_SOLO, npc.getId()))
+			if (getRandom(100) < 2)
 			{
-				addSpawn(RED_SNOWMAN, npc, true, 60000);
-			}
-			else if (CommonUtil.contains(MONSTERS_PARTY, npc.getId()))
-			{
-				addSpawn(BLUE_SNOWMAN, npc, true, 60000);
-			}
-		}
-		if (npc.getId() == RED_SNOWMAN)
-		{
-			SkillCaster.triggerCast(player, player, SNOWMAN_ENERGY);
-			if (getRandom(100) < 30)
-			{
-				player.addItem("Christmas gift", CHRISTMAS_GIFT, 1, player, true);
-			}
-		}
-		else if (npc.getId() == BLUE_SNOWMAN)
-		{
-			if (player.getParty() != null)
-			{
-				final Party party = player.getParty();
-				final List<Player> members = party.getMembers();
-				for (Player member : members)
+				if (CommonUtil.contains(MONSTERS_SOLO, npc.getId()))
 				{
-					if (member.isInsideRadius3D(npc, Config.ALT_PARTY_RANGE))
-					{
-						SkillCaster.triggerCast(member, member, SNOWMAN_ENERGY);
-					}
+					addSpawn(RED_SNOWMAN, npc, true, 60000);
+				}
+				else if (CommonUtil.contains(MONSTERS_PARTY, npc.getId()))
+				{
+					addSpawn(BLUE_SNOWMAN, npc, true, 60000);
 				}
 			}
-			else
+			if (npc.getId() == RED_SNOWMAN)
 			{
 				SkillCaster.triggerCast(player, player, SNOWMAN_ENERGY);
+				if (getRandom(100) < 30)
+				{
+					player.addItem("Christmas gift", CHRISTMAS_GIFT, 1, player, true);
+				}
 			}
-			if (getRandom(100) < 30)
+			else if (npc.getId() == BLUE_SNOWMAN)
 			{
-				player.addItem("Christmas gift", CHRISTMAS_GIFT, 1, player, true);
+				if (player.getParty() != null)
+				{
+					final Party party = player.getParty();
+					final List<Player> members = party.getMembers();
+					for (Player member : members)
+					{
+						if (member.isInsideRadius3D(npc, Config.ALT_PARTY_RANGE))
+						{
+							SkillCaster.triggerCast(member, member, SNOWMAN_ENERGY);
+						}
+					}
+				}
+				else
+				{
+					SkillCaster.triggerCast(player, player, SNOWMAN_ENERGY);
+				}
+				if (getRandom(100) < 30)
+				{
+					player.addItem("Christmas gift", CHRISTMAS_GIFT, 1, player, true);
+				}
 			}
 		}
 		return super.onKill(npc, player, isSummon);

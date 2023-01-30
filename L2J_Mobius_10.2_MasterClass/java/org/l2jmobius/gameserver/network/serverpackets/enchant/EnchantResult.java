@@ -16,43 +16,70 @@
  */
 package org.l2jmobius.gameserver.network.serverpackets.enchant;
 
-import org.l2jmobius.gameserver.model.item.instance.Item;
+import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.network.ServerPackets;
 import org.l2jmobius.gameserver.network.serverpackets.ServerPacket;
 
+/**
+ * @author Index
+ */
 public class EnchantResult extends ServerPacket
 {
-	public static final int SUCCESS = 0; /* 11, 12 */
-	public static final int FAIL = 1; /* 6, 9 */
-	public static final int ERROR = 2; /* 10 */
-	public static final int BLESSED_FAIL = 3; /* 7 */
+	public static final int SUCCESS = 0;
+	/**
+	 * if (Type == ITEME_ENCHT_AG || Type == ITEME_BLESS_ENCHT_AG || Type == ITEME_MULTI_ENCHT_AG || Type == ITEME_ANCIENT_CRYSTAL_ENCHANT_AG) The growth failed. The agathion disappeared. else S1_CRYSTALLIZED calculate challenge points
+	 */
+	public static final int FAIL = 1;
+	/**
+	 * remove scrolls
+	 */
+	public static final int ERROR = 2;
+	/**
+	 * Deprecated
+	 */
+	public static final int BLESSED_FAIL = 3;
+	/**
+	 * if (Type == ITEME_ENCHT_AG || Type == ITEME_BLESS_ENCHT_AG || Type == ITEME_MULTI_ENCHT_AG || Type == ITEME_ANCIENT_CRYSTAL_ENCHANT_AG) The growth failed. The agathion disappeared. else CRYSTALLIZED
+	 */
 	public static final int NO_CRYSTAL = 4;
-	public static final int SAFE_FAIL = 5; /* 8 */
+	/**
+	 * Deprecated
+	 */
+	public static final int SAFE_FAIL = 5;
+	/**
+	 * FAILURE - Enchantment failed. You have obtained the listed items.
+	 */
+	public static final int CHALLENGE_ENCHANT_SAFE = 6;
+	/**
+	 * DECREASE *will show item*
+	 */
+	public static final int DECREASE = 7; // -> set enchant to 0 in UI
+	/**
+	 * if(isAutoEnchanting || isAutoEnchantingStop) will reuse scroll if (Type == ITEME_ENCHT_AG || Type == ITEME_BLESS_ENCHT_AG || Type == ITEME_MULTI_ENCHT_AG || Type == ITEME_ANCIENT_CRYSTAL_ENCHANT_AG) IN_CASE_OF_FAILURE_THE_AGATHION_S_GROWTH_LEVEL_WILL_REMAIN_THE_SAME else Enchant failed. The
+	 * enchant skill for the corresponding item will be exactly retained. *will show item*
+	 */
+	public static final int REMAIN = 8; // -> remaining the same with sys string
+	/**
+	 * if(Type == ITEME_ENCHT_AG || Type == ITEME_BLESS_ENCHT_AG || Type == ITEME_MULTI_ENCHT_AG || Type == ITEME_ANCIENT_CRYSTAL_ENCHANT_AG) The growth failed. The agathion disappeared. else Enchantment failed. You have obtained the listed items. *will show item*
+	 */
+	public static final int FAILED_WITH_OPTIONS_NO_AND_NO_POINTS = 9;
+	/**
+	 * if (Type == ITEME_ENCHT_AG || Type == ITEME_BLESS_ENCHT_AG || Type == ITEME_MULTI_ENCHT_AG || Type == ITEME_ANCIENT_CRYSTAL_ENCHANT_AG) The growth failed. The agathion's growth level is reset. else Enchantment failed. You have obtained the listed items. if (isAutoEnchanting ||
+	 * isAutoEnchantingStop && SelectItemInfo.Enchanted == EnchantValue) will reuse scroll in blue auto enchant *will show item*
+	 */
+	public static final int SAFE_FAIL_02 = 10;
 	
 	private final int _result;
-	private final int _crystal;
-	private final int _count;
+	private final ItemHolder _crystal;
+	private final ItemHolder _additional;
 	private final int _enchantLevel;
-	@SuppressWarnings("unused")
-	private final int[] _enchantOptions;
 	
-	public EnchantResult(int result, int crystal, int count, int enchantLevel, int[] options)
+	public EnchantResult(int result, ItemHolder crystal, ItemHolder additionalItem, int enchantLevel)
 	{
 		_result = result;
-		_crystal = crystal;
-		_count = count;
+		_crystal = crystal == null ? new ItemHolder(0, 0) : crystal;
+		_additional = additionalItem == null ? new ItemHolder(0, 0) : additionalItem;
 		_enchantLevel = enchantLevel;
-		_enchantOptions = options;
-	}
-	
-	public EnchantResult(int result, int crystal, int count)
-	{
-		this(result, crystal, count, 0, Item.DEFAULT_ENCHANT_OPTIONS);
-	}
-	
-	public EnchantResult(int result, Item item)
-	{
-		this(result, 0, 0, item.getEnchantLevel(), item.getEnchantOptions());
 	}
 	
 	@Override
@@ -60,11 +87,10 @@ public class EnchantResult extends ServerPacket
 	{
 		ServerPackets.ENCHANT_RESULT.writeId(this);
 		writeInt(_result);
-		writeInt(_crystal);
-		writeLong(_count);
-		writeInt(0); // option
-		writeInt(0); // option
-		writeInt(0); // option
-		writeInt(_enchantLevel); // Confirmed.
+		writeInt(_crystal.getId());
+		writeLong(_crystal.getCount());
+		writeInt(_additional.getId());
+		writeLong(_additional.getCount());
+		writeInt(_enchantLevel);
 	}
 }

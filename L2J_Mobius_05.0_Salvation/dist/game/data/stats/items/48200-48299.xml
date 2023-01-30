@@ -65,6 +65,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="5" />
 		<skills>
 			<skill id="35104" level="1" /> <!-- Warrior's Circlet -->
 			<skill id="35105" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Warrior's Circlet Enchant Effect -->
@@ -84,6 +85,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="5" />
 		<skills>
 			<skill id="35104" level="2" /> <!-- Warrior's Circlet -->
 			<skill id="35106" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Noble Warrior's Circlet Enchant Effect -->
@@ -103,6 +105,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="10" />
 		<skills>
 			<skill id="35104" level="3" /> <!-- Warrior's Circlet -->
 			<skill id="35107" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Radiant Warrior's Circlet Enchant Effect -->
@@ -129,6 +132,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="5" />
 		<skills>
 			<skill id="35108" level="1" /> <!-- Wizard's Circlet -->
 			<skill id="35109" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Wizard's Circlet Enchant Effect -->
@@ -148,6 +152,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="5" />
 		<skills>
 			<skill id="35108" level="2" /> <!-- Wizard's Circlet -->
 			<skill id="35110" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Noble Wizard's Circlet Enchant Effect -->
@@ -167,6 +172,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="10" />
 		<skills>
 			<skill id="35108" level="3" /> <!-- Wizard's Circlet -->
 			<skill id="35111" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Radiant Wizard's Circlet Enchant Effect -->
@@ -193,6 +199,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="5" />
 		<skills>
 			<skill id="35112" level="1" /> <!-- Knight's Circlet -->
 			<skill id="35113" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Knight's Circlet Enchant Effect -->
@@ -212,6 +219,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="5" />
 		<skills>
 			<skill id="35112" level="2" /> <!-- Knight's Circlet -->
 			<skill id="35114" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Noble Knight's Circlet Enchant Effect -->
@@ -231,6 +239,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="enchant_enabled" val="true" />
+		<set name="enchant_limit" val="10" />
 		<skills>
 			<skill id="35112" level="3" /> <!-- Knight's Circlet -->
 			<skill id="35115" level="1" type="ON_ENCHANT" type_value="1" /> <!-- Radiant Knight's Circlet Enchant Effect -->
@@ -393,6 +402,14 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="etcitem_type" val="SCROLL" />
+		<skills>
+			<skill id="39171" level="2" /> <!--Lucky Gift Coupon (3-hour) -->
+		</skills>
 	</item>
 	<item id="48224" name="Lucky Gift Coupon" additionalName="6 Hours" type="EtcItem">
 		<!-- Use it to change into the Hanbok appearance for 6 hours and enter the Lucky Gift Draw. Can be used above level 85. The buff is deleted when you change to dual or subclass. Will be deleted on Wednesday, February 8, 2017, after regular maintenance. -->
@@ -404,14 +421,29 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="etcitem_type" val="SCROLL" />
+		<skills>
+			<skill id="39171" level="3" /> <!--Lucky Gift Coupon (6-hour) -->
+		</skills>
 	</item>
 	<item id="48225" name="Chorong's Lucky Scroll" additionalName="Event" type="EtcItem">
 		<!-- For 30 min. XP/ SP gained +30%, additionally XP/ SP gained when Vitality is active +30%, P. Atk./ P. Def./ M. Atk./ M. Def. +15%. Will be deleted after the event. -->
 		<set name="icon" val="icon.etc_charm_of_luck_i00" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="etcitem_type" val="SCROLL" />
+		<skills>
+			<skill id="39207" level="2" /> <!-- Festival Fairy's Five-colored Sweets -->
+		</skills>
 	</item>
 	<item id="48226" name="Lucky Bait" type="EtcItem">
 		<!-- A very lucky-looking bait. Will be deleted on Wednesday, February 8, 2017, after regular maintenance. -->
@@ -434,6 +466,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="35147" level="1" /> <!-- +8 Zodiac Agathion Charm Box -->
+		</skills>
 	</item>
 	<item id="48228" name="Life Stone Instilled with Giants' Power (x3) Box" type="EtcItem">
 		<!-- Use it to obtain 3 Life Stones Instilled with Giants' Power. -->
@@ -501,6 +538,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">400</stat>
 		</stats>
@@ -520,6 +558,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="rhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pAtk">92</stat>
 			<stat type="mAtk">54</stat>
@@ -539,6 +578,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -561,6 +601,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -583,6 +624,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -605,6 +647,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -627,6 +670,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">40</stat>
 			<stat type="pDef">50</stat>
@@ -643,6 +687,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">45</stat>
 			<stat type="pDef">60</stat>
@@ -659,6 +704,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">50</stat>
 			<stat type="pDef">70</stat>
@@ -675,6 +721,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">60</stat>
 			<stat type="pDef">80</stat>
@@ -691,6 +738,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -713,6 +761,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -735,6 +784,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -757,6 +807,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 		<cond msgId="2453">
 			<player cloakStatus="true" />
 		</cond>
@@ -1136,7 +1187,12 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="bodypart" val="rbracelet" />
+		<set name="commissionItemType" val="BRACELET" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="35151" level="1" /> <!-- Balthus Knight Bracelet -->
+		</skills>
 	</item>
 	<item id="48278" name="Clan Cloak - Economy Specialty" additionalName="Stage 1" type="Armor">
 		<!-- Not open -->
@@ -1149,6 +1205,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="back" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">40</stat>
 			<stat type="pDef">50</stat>
@@ -1165,6 +1222,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="back" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">40</stat>
 			<stat type="pDef">50</stat>
@@ -1181,6 +1239,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="back" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">40</stat>
 			<stat type="pDef">50</stat>
@@ -1197,6 +1256,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="back" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="mDef">40</stat>
 			<stat type="pDef">50</stat>
@@ -1268,6 +1328,7 @@
 		<set name="etcitem_type" val="SCROLL" />
 		<set name="handler" val="ItemSkills" />
 		<set name="commissionItemType" val="SCROLL_OTHER" />
+		<set name="reuse_delay" val="86400000" />
 		<set name="material" val="PAPER" />
 		<skills>
 			<skill id="39175" level="1" /> <!-- Scroll: PK -->
@@ -1484,6 +1545,17 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="6" />
+		<set name="extractableCountMax" val="6" />
+		<capsuled_items>
+			<item id="17435" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Eternal Shield -->
+			<item id="35079" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Helmet (Heavy armor) -->
+			<item id="35080" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Breastplate (Heavy armor) -->
+			<item id="35081" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Gaiters (Heavy armor) -->
+			<item id="35082" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Gauntlets (Heavy armor) -->
+			<item id="35083" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Boots (Heavy armor) -->
+		</capsuled_items>
 	</item>
 	<item id="48296" name="+10 Eternal Armor Light Armor Capsule" type="EtcItem">
 		<!-- Test server support item. Use to obtain a Bloody Eternal Light Armor set, enchanted to +10. -->
@@ -1495,6 +1567,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35085" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Helmet (Light armor) -->
+			<item id="35086" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Armor (Light armor) -->
+			<item id="35087" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Leggings (Light armor) -->
+			<item id="35088" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Gloves (Light armor) -->
+			<item id="35089" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Boots (Light armor) -->
+		</capsuled_items>
 	</item>
 	<item id="48297" name="+10 Eternal Armor Robe Capsule" type="EtcItem">
 		<!-- Test server support item. Use to obtain a Bloody Eternal Robe set, enchanted to +10. -->
@@ -1506,6 +1586,15 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35090" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Helmet (Robe) -->
+			<item id="35091" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Tunic (Robe) -->
+			<item id="35092" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Stockings (Robe) -->
+			<item id="35093" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Gloves (Robe) -->
+			<item id="35094" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Shoes (Robe) -->
+			<item id="17446" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Eternal Sigil -->
+		</capsuled_items>
 	</item>
 	<item id="48298" name="+10 Zodiac Agathion Box" type="EtcItem">
 		<!-- Test server support item. Use to obtain all 12 types of Zodiac Agathion charms, enchanted to +10. -->
@@ -1517,6 +1606,21 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48048" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Virgo Charm -->
+			<item id="48049" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Capricorn Charm -->
+			<item id="48050" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Libra Charm -->
+			<item id="48051" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Aries Charm -->
+			<item id="48052" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Taurus Charm -->
+			<item id="48053" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Leo Charm -->
+			<item id="48054" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Gemini Charm -->
+			<item id="48055" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Scorpio Charm -->
+			<item id="48056" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Aquarius Charm -->
+			<item id="48057" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Pisces Charm -->
+			<item id="48058" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Sagittarius Charm -->
+			<item id="48059" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Cancer Charm -->
+		</capsuled_items>
 	</item>
 	<item id="48299" name="Balthus Graduation Reward Box" type="EtcItem">
 		<!-- Supply Box issued to players who graduated from the Balthus Knights with honors on the test server. Use it to obtain a 15-day Antharas weapon. -->

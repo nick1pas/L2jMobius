@@ -56,6 +56,7 @@
 		<!-- Dimensional Item. MP +59, P./ M. Def. +15%, CON/ MEN+3, Earth/ Holy Attribute Resistance +30, Bleed Atk./ Def. Success Rate +50%, Stun/ Mental Atk./ Def. Success Rate +40%, Heal Received +10%, Skill MP Consumption -5%, Vampiric Rage +4%. Active Skill: Cancels Stun and gives Stun Resistance for 5 secs. Does not stack with identical earrings or earrings with same Craft Effect. <Craft Effect>. P. Def. +4% -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -64,6 +65,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13314" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="13313" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="18657" level="1" /> <!-- Shield -->
+		</skills>
 		<stats>
 			<stat type="mDef">170</stat>
 		</stats>
@@ -72,6 +78,7 @@
 		<!-- Dimensional Item. MP +59, P./ M. Def. +15%, CON/ MEN+3, Earth/ Holy Attribute Resistance +30, Bleed Atk./ Def. Success Rate +50%, Stun/ Mental Atk./ Def. Success Rate +40%, Heal Received +10%, Skill MP Consumption -5%, Vampiric Rage +4%. Active Skill: Cancels Stun and gives Stun Resistance for 5 secs. Does not stack with identical earrings or earrings with same Craft Effect. <Craft Effect>. M. Def. +4% -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -80,6 +87,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13314" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="13313" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="18658" level="1" /> <!-- Earth -->
+		</skills>
 		<stats>
 			<stat type="mDef">170</stat>
 		</stats>
@@ -88,6 +100,7 @@
 		<!-- Dimensional Item. MP +59, P./ M. Def. +15%, CON/ MEN+3, Earth/ Holy Attribute Resistance +30, Bleed Atk./ Def. Success Rate +50%, Stun/ Mental Atk./ Def. Success Rate +40%, Heal Received +10%, Skill MP Consumption -5%, Vampiric Rage +4%. Active Skill: Cancels Stun and gives Stun Resistance for 5 secsCancels Stun and gives Stun Resistance for 5 secs. Does not stack with identical earrings or earrings with same Craft Effect. <Craft Effect>. 6 Attribute Defenses +25 -->
 		<set name="icon" val="icon.bm_earring_of_antaras" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -96,6 +109,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13314" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="13313" level="1" /> <!-- Blessed Antharas' Earring -->
+			<skill id="18659" level="1" /> <!-- Pure -->
+		</skills>
 		<stats>
 			<stat type="mDef">170</stat>
 		</stats>
@@ -104,6 +122,7 @@
 		<!-- Dimensional Item. MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Critical Rate +20, STR/ INT+3, Fire Attribute Resistance +30, Dark Attribute Def. +20, Sleep Atk./ Def. Success Rate +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection 5%. Active Skill: Cancels Hold and gives Hold Resistance for 5 secs. <Craft Effect>. Max HP +5% -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -112,6 +131,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13316" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="13315" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="18654" level="1" /> <!-- Body -->
+		</skills>
 		<stats>
 			<stat type="mDef">226</stat>
 		</stats>
@@ -120,6 +144,7 @@
 		<!-- Dimensional Item. MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Critical Rate +20, STR/ INT+3, Fire Attribute Resistance +30, Dark Attribute Def. +20, Sleep Atk./ Def. Success Rate +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection 5%. Active Skill: Cancels Hold and gives Hold Resistance for 5 secs Cancels Hold and gives Hold Resistance for 5 secs. <Craft Effect>. Skill Cooldown -3% -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -128,6 +153,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13316" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="13315" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="18655" level="1" /> <!-- Mind -->
+		</skills>
 		<stats>
 			<stat type="mDef">226</stat>
 		</stats>
@@ -136,6 +166,7 @@
 		<!-- Dimensional Item. MP +79, HP +625, P. Atk. +10%, M. Atk. +20%, M. Critical Rate +20, STR/ INT+3, Fire Attribute Resistance +30, Dark Attribute Def. +20, Sleep Atk./ Def. Success Rate +50%, P. Skill Power +5%, Skill Cooldown -10%, Damage Reflection 5%. Active Skill: Cancels Hold and gives Hold Resistance for 5 secs. <Craft Effect>. Fixed Damage Resistance +5% -->
 		<set name="icon" val="icon.bm_necklace_of_valakas" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="neck" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -144,6 +175,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13316" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="13315" level="1" /> <!-- Blessed Valakas' Necklace -->
+			<skill id="18656" level="1" /> <!-- Barrier -->
+		</skills>
 		<stats>
 			<stat type="mDef">226</stat>
 		</stats>
@@ -152,6 +188,7 @@
 		<!-- Dimensional Item. MP +59, P./ M. Critical Damage +10%, Movement Speed +5, DEX/ WIT +3, Wind/ Dark Attribute Resistance +30, Petrification Atk./ Def. Success Rate +50%, Knock Back/ Knock Down/ Pull Atk./ Def. Success Rate +40%, Danger Zone Def. Success Rate +40%, Abnormal Status Reflection +10%, Reflect Damage Magic +10%. Active Skill: Cancels Knock Back/ Knock Down and gives Knock Back/ Knock Down Resistance for 5 secs. Does not stack with identical earrings or earrings with same Craft Effect. <Craft Effect>. P. Def. +4% -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -160,6 +197,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13524" level="1" /> <!-- Lindvior's Earring -->
+			<skill id="13542" level="1" /> <!-- Lindvior's Earring -->
+			<skill id="18657" level="1" /> <!-- Shield -->
+		</skills>
 		<stats>
 			<stat type="mDef">170</stat>
 		</stats>
@@ -168,6 +210,7 @@
 		<!-- Dimensional Item. MP +59, P./ M. Critical Damage +10%, Movement Speed +5, DEX/ WIT +3, Wind/ Dark Attribute Resistance +30, Petrification Atk./ Def. Success Rate +50%, Knock Back/ Knock Down/ Pull Atk./ Def. Success Rate +40%, Danger Zone Def. Success Rate +40%, Abnormal Status Reflection +10%, Reflect Damage Magic +10%. Active Skill: Cancels Knock Back/ Knock Down and gives Knock Back/ Knock Down Resistance for 5 secs. Does not stack with identical earrings or earrings with same Craft Effect. <Craft Effect>. M. Def. +4% -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -176,6 +219,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13524" level="1" /> <!-- Lindvior's Earring -->
+			<skill id="13542" level="1" /> <!-- Lindvior's Earring -->
+			<skill id="18658" level="1" /> <!-- Earth -->
+		</skills>
 		<stats>
 			<stat type="mDef">170</stat>
 		</stats>
@@ -184,6 +232,7 @@
 		<!-- Dimensional Item. MP +59, P./ M. Critical Damage +10%, Movement Speed +5, DEX/ WIT +3, Wind/ Dark Attribute Resistance +30, Petrification Atk./ Def. Success Rate +50%, Knock Back/ Knock Down/ Pull Atk./ Def. Success Rate +40%, Danger Zone Def. Success Rate +40%, Abnormal Status Reflection +10%, Reflect Damage Magic +10%. Active Skill: Cancels Knock Back/ Knock Down and gives Knock Back/ Knock Down Resistance for 5 secs. Does not stack with identical earrings or earrings with same Craft Effect. <Craft Effect>. 6 Attribute Resistance +25 -->
 		<set name="icon" val="icon.npoint_earring_of_lind_30day" />
 		<set name="default_action" val="EQUIP" />
+		<set name="bodypart" val="rear;lear" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -192,6 +241,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="time" val="43200" />
 		<set name="crystal_type" val="R" />
+		<skills>
+			<skill id="13524" level="1" /> <!-- Lindvior's Earring -->
+			<skill id="13542" level="1" /> <!-- Lindvior's Earring -->
+			<skill id="18659" level="1" /> <!-- Pure -->
+		</skills>
 		<stats>
 			<stat type="mDef">170</stat>
 		</stats>
@@ -230,10 +284,23 @@
 	<item id="48318" name="Dark Bloody Enhancement Stone Box" type="EtcItem">
 		<!-- Use to obtain a Dark Helios, Bloody Helios, Dark Eternal, or Bloody Eternal Enhancement Stone. -->
 		<set name="icon" val="icon.bm_pvp_pve_upgrade_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_depositable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35566" min="1" max="1" chance="25" /> <!-- Dark Weapon Enhancement Stone -->
+			<item id="35567" min="1" max="1" chance="25" /> <!-- Dark Armor Enhancement Stone -->
+			<item id="35568" min="1" max="1" chance="25" /> <!-- Bloody Weapon Enhancement Stone -->
+			<item id="35569" min="1" max="1" chance="25" /> <!-- Bloody Armor Enhancement Stone -->
+		</capsuled_items>
 	</item>
 	<item id="48319" name="Royal White Save Ticket Treasure Chest" type="EtcItem">
 		<!-- Use to obtain a R, R95, or R99 Royal White Save Ticket. -->
@@ -284,10 +351,22 @@
 	<item id="48324" name="Agathion Masters Box" type="EtcItem">
 		<!-- Use to obtain 4 Zodiac Agathion Cubes. There is also a chance to additionally obtain a Divine Book of Growth: Zodiac Agathion. -->
 		<set name="icon" val="icon.bm_gold_relic_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="2" />
+		<capsuled_items>
+			<item id="48066" min="4" max="4" chance="100" /> <!-- Zodiac Agathion Cube -->
+			<item id="48323" min="1" max="1" chance="5" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+		</capsuled_items>
 	</item>
 	<item id="48325" name="Special Agathion Masters Box" type="EtcItem">
 		<!-- Use to obtain 4 Zodiac Agathion Cubes and a Divine Book of Growth: Zodiac Agathion. -->
@@ -295,8 +374,17 @@
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48066" min="4" max="4" chance="100" /> <!-- Zodiac Agathion Cube -->
+			<item id="48323" min="1" max="1" chance="100" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+		</capsuled_items>
 	</item>
 	<item id="48326" name="Burnstein's Aufgabe Shield" type="Weapon">
 		<!-- Material item for crafting Burnstein's Aufgabe (Fallen) appearance. -->
@@ -309,6 +397,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -324,6 +413,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -339,6 +430,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -354,6 +447,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -369,7 +464,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
-		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -385,7 +480,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
-		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -401,7 +496,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
-		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -417,6 +512,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -432,6 +528,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -447,6 +544,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -462,6 +560,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -477,6 +576,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -492,6 +593,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -507,6 +610,8 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -522,7 +627,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
-		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -538,7 +643,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
-		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -554,7 +659,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
-		<set name="weapon_type" val="FIST" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -562,138 +667,172 @@
 	<item id="48343" name="Burnstein's Aufgabe Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Burnstein's Aufgabe Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48344" name="Kelbim's Geffelen Shulter Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Kelbim's Geffelen Shulter appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48345" name="Superion Core Shard Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Superion Core Shard appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48346" name="Istina Reflect Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Istina's Reflector appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48347" name="Taiga Kite Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Taiga Kite Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48348" name="Tanta Tribe Skull Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Tanta Tribe Skull Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48349" name="Rael Tribe Wrist Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Rael Tribe Wrist Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48350" name="Kunda's Battle Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Kunda's Battle Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48351" name="Freya's Ice Flower Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Freya's Ice Flower Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48352" name="Deathmask Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Deathmask Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48353" name="Berserker's Crusader Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Berserker's Crusader Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48354" name="Makkum's Cartwheel Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Makkum's Cartwheel appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48355" name="Fallen Angel Shulter Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Fallen Angel Shulter appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48356" name="Silver Scarab Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Silver Scarab appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48357" name="Vampire Fang Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Vampire Fang Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48358" name="Ice Shard Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Ice Shard Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48359" name="Angelus Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Angelus Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48360" name="Adventure Guild Support Box" type="EtcItem">
 		<!-- A support box received after completing the Adventure Guild faction missions. Double-click to obtain various items needed for growth. -->
@@ -1043,6 +1182,7 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
 		<set name="bodypart" val="lhand" />
+		<set name="enchant_enabled" val="true" />
 		<stats>
 			<stat type="pDef">25</stat>
 		</stats>
@@ -1050,10 +1190,12 @@
 	<item id="48396" name="Burnstein's Pflicht Shield Appearance Stone" additionalName="30-day" type="EtcItem">
 		<!-- Appearance Stone that gives a shield Burnstein's Pflicht Shield appearance for 30 days. -->
 		<set name="icon" val="icon.shape_shifting_shield_i00" />
+		<set name="etcitem_type" val="SHAPE_SHIFTING_AM_FIXED" />
+		<set name="is_stackable" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="handler" val="Appearance" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
-		<set name="is_stackable" val="true" />
-		<set name="time" val="43200" />
 	</item>
 	<item id="48397" name="Mother Tree Guardians Basic Treasure Chest" additionalName="Shadow of the Mother Tree" type="EtcItem">
 		<!-- A basic supply box received in exchange for helping the Mother Tree Guardians with their mission in Shadow of the Mother Tree. Double click to view the item. -->

@@ -36,7 +36,7 @@ public class RequestExCancelEnchantItem implements ClientPacket
 			return;
 		}
 		
-		player.sendPacket(new EnchantResult(2, 0, 0));
+		player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 		player.removeRequest(EnchantItemRequest.class);
 	}
 }

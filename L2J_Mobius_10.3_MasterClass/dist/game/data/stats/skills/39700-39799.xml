@@ -225,7 +225,7 @@
 		</conditions>
 		<effects>
 			<effect name="AddHuntingTime">
-				<zoneId>14</zoneId>
+				<zoneId>15</zoneId>
 				<time>3600000</time>
 			</effect>
 		</effects>
@@ -324,11 +324,6 @@
 	<skill id="39728" toLevel="1" name="No Doubt">
 		<!-- Clears your mind of any doubts. When in inventory, maintains the Vitality level. -->
 		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
-	</skill>
-	<skill id="39729" toLevel="1" name="Snowman's Icy Candy">
-		<!-- For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +5%. Note!. Cannot be used in the Olympiad or the Ceremony of Chaos. -->
-		<icon>icon.skill0000</icon>
 		<operateType>A2</operateType>
 		<abnormalTime>1800</abnormalTime>
 		<blockedInOlympiad>true</blockedInOlympiad>
@@ -352,6 +347,42 @@
 				<mode>PER</mode>
 			</effect>
 		</effects>
+	</skill>
+	<skill id="39729" toLevel="1" name="Snowman's Icy Candy">
+		<!-- For 30 min., P. Atk./ M. Atk./ P. Def./ M. Def. +5%. Note!. Cannot be used in the Olympiad or the Ceremony of Chaos. -->
+		<icon>BranchSys.icon.br_valentine_cream_i00</icon>
+		<operateType>A2</operateType>
+		<abnormalLevel>2</abnormalLevel>
+		<abnormalTime>1800</abnormalTime>
+		<abnormalType>BR_EVENT_BUF2</abnormalType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<hitTime>1000</hitTime>
+		<coolTime>5000</coolTime>
+		<reuseDelay>300000</reuseDelay>
+		<effectPoint>1</effectPoint>
+		<isMagic>4</isMagic>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<effects>
+			<effect name="PAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MAtk">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="MagicalDefence">
+				<amount>5</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
+
 	</skill>
 	<skill id="39730" toLevel="1" name="Light of Glory - Test">
 		<!-- For characters from the winning server: Dragon/ Zariche/ Tree appearance ave -->
@@ -475,6 +506,64 @@
 		<!-- Double-click to obtain an agathion enchanted to +10. -->
 		<icon>icon.skill0000</icon>
 		<operateType>A1</operateType>
+		<hitTime>500</hitTime>
+		<coolTime>500</coolTime>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>80851</itemConsumeId>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="8.33">
+						<item id="48048" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Virgo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48049" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Capricorn Charm-->
+					</item>
+					<item chance="8.33">
+						<item id="48050" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Libra Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48051" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Aries Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48052" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Taurus Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48053" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Leo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48054" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Gemini Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48055" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Scorpio Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48056" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Aquarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48057" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Pisces Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48058" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Sagittarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48059" count="1" minEnchant="10" maxEnchant="10" /> <!-- +10 Agathion Cancer Charm -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39745" toLevel="1" name="Jewel Box">
 		<!-- Double-click to obtain a superior jewel of Lv. 10. -->

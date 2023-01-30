@@ -1502,8 +1502,8 @@
 															<xs:element name="MAX_HP" type="xs:unsignedByte" />
 															<xs:element name="MAX_MP" type="xs:unsignedByte" />
 															<xs:element name="pAtkSpeedAmount">
-																<xs:complexType>
-																	<xs:sequence>
+																<xs:complexType mixed="true">
+																	<xs:sequence minOccurs="0">
 																		<xs:element maxOccurs="unbounded" name="value">
 																			<xs:complexType>
 																				<xs:simpleContent>
@@ -1751,6 +1751,12 @@
 															<xs:element name="skillLevelScaleTo" type="xs:unsignedByte" />
 															<xs:element name="percentTo" type="xs:unsignedByte" />
 															<xs:element name="percentFrom" type="xs:unsignedByte" />
+															<xs:element name="PhysicalAttackRange" type="xs:unsignedByte" />
+															<xs:element name="PhysicalAttackRangeMode" type="xs:string" />
+															<xs:element name="SkillBonusRange" type="xs:unsignedByte" />
+															<xs:element name="SkillBonusRangeMode" type="xs:string" />
+															<xs:element name="pAtkSpeedMode" type="xs:string" />
+															<xs:element name="pAtkMod" type="xs:decimal" />
 															<xs:element name="closeSkill" type="xs:unsignedShort" />
 															<xs:element name="rangeSkill" type="xs:unsignedShort" />
 															<xs:element name="existingSkillId" type="xs:unsignedShort" />

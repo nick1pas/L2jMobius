@@ -8,6 +8,8 @@
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="2" />
 		<set name="handler" val="ExtractableItems" />
 		<capsuled_items>
 			<item id="48502" min="5" max="5" chance="100" /> <!-- Scroll: Enchant Mysterious Weapon -->
@@ -87,12 +89,21 @@
 	<item id="48504" name="Capsule: +10 Bloody Armor Set" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: +10 Bloody Eternal Heavy/ Light/ Robe set. -->
 		<set name="icon" val="icon.etc_treasure_box_i03" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="48505" min="1" max="1" chance="30.33" /> <!-- Capsule: +10 Bloody Heavy Armor -->
+			<item id="48506" min="1" max="1" chance="30.33" /> <!-- Capsule: +10 Bloody Light Armor -->
+			<item id="48507" min="1" max="1" chance="30.33" /> <!-- Capsule: +10 Bloody Robe -->
+		</capsuled_items>
 	</item>
 	<item id="48505" name="Capsule: +10 Bloody Heavy Armor" type="EtcItem">
 		<!-- Double-click to obtain a Bloody Eternal Heavy Armor set, enchanted to +10. -->
@@ -104,6 +115,17 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="6" />
+		<set name="extractableCountMax" val="6" />
+		<capsuled_items>
+			<item id="17435" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Eternal Shield -->
+			<item id="35079" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Helmet - Heavy armor -->
+			<item id="35080" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Breastplate - Heavy armor -->
+			<item id="35081" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Gaiters - Heavy armor -->
+			<item id="35082" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Gauntlets - Heavy armor -->
+			<item id="35083" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Boots - Heavy armor -->
+		</capsuled_items>
 	</item>
 	<item id="48506" name="Capsule: +10 Bloody Light Armor" type="EtcItem">
 		<!-- Double-click to obtain a Bloody Eternal Light Armor set, enchanted to +10. -->
@@ -115,6 +137,16 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="5" />
+		<set name="extractableCountMax" val="5" />
+		<capsuled_items>
+			<item id="35085" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Leather Helmet - Light armor -->
+			<item id="35086" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Leather Armor - Light armor -->
+			<item id="35087" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Leather Leggings - Light armor -->
+			<item id="35088" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Leather Gloves - Light armor -->
+			<item id="35089" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Leather Boots - Light armor -->
+		</capsuled_items>
 	</item>
 	<item id="48507" name="Capsule: +10 Bloody Robe" type="EtcItem">
 		<!-- Double-click to obtain a Bloody Eternal Robe set, enchanted to +10. -->
@@ -126,6 +158,17 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="6" />
+		<set name="extractableCountMax" val="6" />
+		<capsuled_items>
+			<item id="35090" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Circlet - Robe -->
+			<item id="35091" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Tunic - Robe -->
+			<item id="35092" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Stockings - Robe -->
+			<item id="35093" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Gloves - Robe -->
+			<item id="35094" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Bloody Eternal Shoes - Robe -->
+			<item id="17446" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Eternal Sigil -->
+		</capsuled_items>
 	</item>
 	<item id="48508" name="+5 Zodiac Agathion Box" type="EtcItem">
 		<!-- Double-click to obtain +5 Zodiac Agathion Charm. -->
@@ -137,6 +180,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="35147" level="2" /> <!-- +5 Zodiac Agathion Charm Box -->
+		</skills>
 	</item>
 	<item id="48509" name="+6 Zodiac Agathion Box" type="EtcItem">
 		<!-- Double-click to obtain +6 Zodiac Agathion Charm. -->
@@ -148,6 +196,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="35147" level="3" /> <!-- +6 Zodiac Agathion Charm Box -->
+		</skills>
 	</item>
 	<item id="48510" name="+7 Zodiac Agathion Box" type="EtcItem">
 		<!-- Double-click to obtain +7 Zodiac Agathion Charm. -->
@@ -159,6 +212,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="35147" level="4" /> <!-- +7 Zodiac Agathion Charm Box -->
+		</skills>
 	</item>
 	<item id="48511" name="Royal Red Save Ticket Box" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: Royal R-/ R95-/ R99-grade Red Save Ticket. -->
@@ -1355,6 +1413,10 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39237" level="3" /> <!-- Advanced Supply Box -->
+		</skills>
 	</item>
 	<item id="48582" name="Scroll: Enchant Mask" type="EtcItem">
 		<!-- Can be used to enchant masks. The enchanting is safe up to +3, maximum to +10. -->

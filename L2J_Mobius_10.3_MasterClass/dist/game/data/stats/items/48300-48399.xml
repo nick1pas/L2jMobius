@@ -284,10 +284,23 @@
 	<item id="48318" name="Dark Bloody Enhancement Stone Box" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: Dark Weapon/ Bloody Weapon/ Dark Armor/ Bloody Armor Enhancement Stone. -->
 		<set name="icon" val="icon.bm_pvp_pve_upgrade_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_depositable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35566" min="1" max="1" chance="25" /> <!-- Dark Weapon Enhancement Stone -->
+			<item id="35567" min="1" max="1" chance="25" /> <!-- Dark Armor Enhancement Stone -->
+			<item id="35568" min="1" max="1" chance="25" /> <!-- Bloody Weapon Enhancement Stone -->
+			<item id="35569" min="1" max="1" chance="25" /> <!-- Bloody Armor Enhancement Stone -->
+		</capsuled_items>
 	</item>
 	<item id="48319" name="Royal White Save Ticket Box" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: Royal R-/ R95-/ R99-grade White Save Ticket. -->
@@ -348,9 +361,11 @@
 		<set name="is_oly_restricted" val="true" />
 		<set name="is_event_restricted" val="true" />
 		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="2" />
 		<capsuled_items>
 			<item id="48066" min="4" max="4" chance="100" /> <!-- Zodiac Agathion Cube -->
-			<item id="48323" min="1" max="1" chance="100" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+			<item id="48323" min="1" max="1" chance="5" /> <!-- Divine Book of Growth: Zodiac Agathion -->
 		</capsuled_items>
 	</item>
 	<item id="48325" name="Special Agathion Master's Box" type="EtcItem">

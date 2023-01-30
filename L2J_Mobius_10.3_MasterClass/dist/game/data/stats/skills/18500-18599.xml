@@ -617,7 +617,6 @@
 		<hitTime>100</hitTime>
 		<coolTime>100</coolTime>
 		<reuseDelay>30000</reuseDelay>
-		<staticReuse>true</staticReuse>
 		<targetType>SELF</targetType>
 		<isMagic>2</isMagic>
 		<effects>
@@ -735,13 +734,6 @@
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
 		<effects>
-			<effect name="DispelBySlot">
-				<dispel>
-					<value level="1">SKILL_IGNORE,9</value>
-					<value level="2">ABNORMAL_INVINCIBILITY,9</value>
-					<value level="3">ABNORMAL_INVINCIBILITY,9</value>
-				</dispel>
-			</effect>
 			<effect name="DispelByCategory" fromLevel="1" toLevel="3">
 				<slot>DEBUFF</slot>
 				<rate>100</rate>

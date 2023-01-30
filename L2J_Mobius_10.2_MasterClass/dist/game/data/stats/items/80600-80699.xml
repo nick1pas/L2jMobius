@@ -14,13 +14,16 @@
 		<!-- A talisman for commemorating the 15th Anniversary. When used, increases XP/SP gained from hunting by 15%. Also allows you to transform. -->
 		<set name="icon" val="icon.ev_L2_soul_ore" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="underwear" />
+		<set name="bodypart" val="talisman" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<skills>
+			<skill id="39466" level="1" /> <!-- Anniversary Talisman -->
+		</skills>
 	</item>
 	<item id="80602" name="Anniversary Mini Cake" type="EtcItem">
 		<!-- When used, increases Acquired XP/ SP by 30%, Acquired XP/ SP in Vitality state by 30%, and P. Atk./ P. Def./ M. Atk./ M. Def. by 15% for 30 min. -->

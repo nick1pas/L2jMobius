@@ -1125,10 +1125,48 @@
 	</skill>
 	<skill id="39433" toLevel="2" name="Stage 4 Soul Crystal Box">
 		<!-- Double-click to obtain a reward with a certain chance. -->
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 		<reuseDelay>500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>
+			<value level="1">80443</value> <!-- Stage 4 Soul Crystal Box -->
+			<value level="2">80458</value> <!-- Stage 4 Soul Crystal Box -->
+		</itemConsumeId>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="46447" count="1" /> <!-- Kain's Soul Crystal - Stage 4 -->
+					</item>
+					<item chance="20">
+						<item id="46462" count="1" /> <!-- Mermoden's Soul Crystal - Stage 4 -->
+					</item>
+					<item chance="20">
+						<item id="46477" count="1" /> <!-- Leona's Soul Crystal - Stage 4 -->
+					</item>
+					<item chance="20">
+						<item id="46492" count="1" /> <!-- Pantheon's Soul Crystal - Stage 4 -->
+					</item>
+					<item chance="20">
+						<item id="46507" count="1" /> <!-- Lionel's Soul Crystal - Stage 4 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39434" toLevel="3" name="Maestro's Gift Box">
 		<operateType>A1</operateType>
@@ -1138,12 +1176,53 @@
 	</skill>
 	<skill id="39435" toLevel="1" name="Royal Black Save Card">
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="39436" toLevel="2" name="Stage 3 Soul Crystal Box">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 		<reuseDelay>500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>80457</itemConsumeId> <!-- Soul Crystal Box Lv. 3 -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="46446" count="1" /> <!-- Kain's Soul Crystal - Stage 3 -->
+					</item>
+					<item chance="20">
+						<item id="46461" count="1" /> <!-- Mermoden's Soul Crystal - Stage 3 -->
+					</item>
+					<item chance="20">
+						<item id="46476" count="1" /> <!-- Leona's Soul Crystal - Stage 3 -->
+					</item>
+					<item chance="20">
+						<item id="46491" count="1" /> <!-- Pantheon's Soul Crystal - Stage 3 -->
+					</item>
+					<item chance="20">
+						<item id="46506" count="1" /> <!-- Lionel's Soul Crystal - Stage 3 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39437" toLevel="4" name="+7 Agathion Charm Box">
 		<operateType>A1</operateType>
@@ -1164,12 +1243,81 @@
 		<reuseDelay>500</reuseDelay>
 	</skill>
 	<skill id="39440" toLevel="1" name="Stage 5-7 Soul Crystal Box">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
 		<reuseDelay>500</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="6.66">
+						<item id="46448" count="1" /> <!-- Kain's Soul Crystal - Stage 5 -->
+					</item>
+					<item chance="6.66">
+						<item id="46449" count="1" /> <!-- Kain's Soul Crystal - Stage 6 -->
+					</item>
+					<item chance="6.66">
+						<item id="46450" count="1" /> <!-- Kain's Soul Crystal - Stage 7 -->
+					</item>
+					<item chance="6.66">
+						<item id="46463" count="1" /> <!-- Mermoden's Soul Crystal - Stage 5 -->
+					</item>
+					<item chance="6.66">
+						<item id="46464" count="1" /> <!-- Mermoden's Soul Crystal - Stage 6 -->
+					</item>
+					<item chance="6.66">
+						<item id="46465" count="1" /> <!-- Mermoden's Soul Crystal - Stage 7 -->
+					</item>
+					<item chance="6.66">
+						<item id="46478" count="1" /> <!-- Leona's Soul Crystal - Stage 5 -->
+					</item>
+					<item chance="6.66">
+						<item id="46479" count="1" /> <!-- Leona's Soul Crystal - Stage 6 -->
+					</item>
+					<item chance="6.66">
+						<item id="46480" count="1" /> <!-- Leona's Soul Crystal - Stage 7 -->
+					</item>
+					<item chance="6.66">
+						<item id="46493" count="1" /> <!-- Pantheon's Soul Crystal - Stage 5 -->
+					</item>
+					<item chance="6.66">
+						<item id="46494" count="1" /> <!-- Pantheon's Soul Crystal - Stage 6 -->
+					</item>
+					<item chance="6.66">
+						<item id="46495" count="1" /> <!-- Pantheon's Soul Crystal - Stage 7 -->
+					</item>
+					<item chance="6.66">
+						<item id="46508" count="1" /> <!-- Lionel's Soul Crystal - Stage 5 -->
+					</item>
+					<item chance="6.66">
+						<item id="46509" count="1" /> <!-- Lionel's Soul Crystal - Stage 6 -->
+					</item>
+					<item chance="6.67">
+						<item id="46510" count="1" /> <!-- Lionel's Soul Crystal - Stage 7 -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39446" toLevel="1" name="Royal Gold Save Card">
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
 	</skill>
 </list>

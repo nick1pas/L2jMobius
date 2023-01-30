@@ -389,7 +389,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -405,8 +405,8 @@
 				<item id="57" min="35000000" max="70000000" chance="20" /> <!-- Adena -->
 				<item id="19447" min="1" max="1" chance="4.84" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
 				<item id="19448" min="1" max="1" chance="7" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-				<item id="46537" min="1" max="1" chance="0.7" /> <!-- Mystic Soul Crystal Fragment -->
 				<item id="48568" min="1" max="1" chance="20" /> <!-- Guard Agathion Fragment -->
+				<item id="46537" min="1" max="1" chance="0.7" /> <!-- Mystic Soul Crystal Fragment -->
 				<item id="17416" min="1" max="1" chance="0.001" /> <!-- Helios Shaper -->
 				<item id="17417" min="1" max="1" chance="0.001" /> <!-- Helios Cutter -->
 				<item id="17418" min="1" max="1" chance="0.001" /> <!-- Helios Slasher -->
@@ -427,6 +427,17 @@
 				<item id="17433" min="1" max="1" chance="0.008" /> <!-- Eternal Gauntlets - Heavy armor -->
 				<item id="17434" min="1" max="1" chance="0.008" /> <!-- Eternal Boots - Heavy armor -->
 				<item id="17435" min="1" max="1" chance="0.008" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.008" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.008" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.008" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.008" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.008" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.008" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -858,7 +869,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -915,7 +926,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="53771" hpRegen="11.4" mp="23928" mpRegen="30" />
+			<vitals hp="26885.55" hpRegen="11.4" mp="23928" mpRegen="30" />
 			<attack physical="59091" magical="6084" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2521" magical="1021" />
 			<speed>
@@ -938,7 +949,7 @@
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/ 2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->

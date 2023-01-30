@@ -22,12 +22,12 @@ import java.util.Map.Entry;
 import java.util.concurrent.ScheduledFuture;
 
 import org.l2jmobius.commons.threads.ThreadPool;
+import org.l2jmobius.commons.util.CommonUtil;
 import org.l2jmobius.gameserver.ai.AttackableAI;
 import org.l2jmobius.gameserver.data.xml.SkillData;
 import org.l2jmobius.gameserver.data.xml.TimedHuntingZoneData;
 import org.l2jmobius.gameserver.enums.ShortcutType;
 import org.l2jmobius.gameserver.enums.SkillFinishType;
-import org.l2jmobius.gameserver.enums.TeleportWhereType;
 import org.l2jmobius.gameserver.instancemanager.InstanceManager;
 import org.l2jmobius.gameserver.model.Shortcut;
 import org.l2jmobius.gameserver.model.WorldObject;
@@ -162,8 +162,11 @@ public class TimedHunting extends AbstractInstance
 		}
 		else if (event.startsWith("FINISH"))
 		{
-			player.teleToLocation(TeleportWhereType.TOWN, null);
-			finishInstance(player);
+			final Instance world = player.getInstanceWorld();
+			if ((world != null) && CommonUtil.contains(TEMPLATES, world.getTemplateId()))
+			{
+				world.destroy();
+			}
 		}
 		return null;
 	}

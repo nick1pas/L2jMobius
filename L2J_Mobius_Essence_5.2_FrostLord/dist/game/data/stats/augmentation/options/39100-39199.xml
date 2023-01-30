@@ -1,23 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/optionsData.xsd">
 	<option id="39100" name="Col_70">
-		<passive_skill id="50010" level="5" />
-		<passive_skill id="50011" level="5" />
+		<!-- Suppression Resistance +1% -->
+		<passive_skill id="50010" level="5" /> <!-- Greater Hold Resistance -->
+		<passive_skill id="50011" level="5" /> <!-- Greater Paralysis Resistance -->
 	</option>
 	<option id="39101" name="Col_71">
-		<passive_skill id="48332" level="1" />
+		<!-- Knockback Resistance +1% -->
+		<passive_skill id="48332" level="1" /> <!-- Knockback Attack Resistance -->
 	</option>
 	<option id="39102" name="Col_72">
-		<passive_skill id="50010" level="5" />
-		<passive_skill id="50011" level="5" />
+		<!-- Suppression Resistance +1% -->
+		<passive_skill id="50010" level="5" /> <!-- Greater Hold Resistance -->
+		<passive_skill id="50011" level="5" /> <!-- Greater Paralysis Resistance -->
 	</option>
 	<option id="39103" name="Col_73">
-		<passive_skill id="81828" level="1" />
+		<!-- Private store slots +1 -->
+		<passive_skill id="81828" level="1" /> <!-- Store Slots -->
 	</option>
 	<option id="39104" name="Col_74">
-		<passive_skill id="81829" level="1" />
+		<!-- Private warehouse slots +6 -->
+		<passive_skill id="81829" level="1" /> <!-- Warehouse Slots -->
 	</option>
 	<option id="39105" name="Col_75">
+		<!-- M. Skill Critical Damage +20 -->
 		<effects>
 			<effect name="MagicCriticalDamage">
 				<amount>20</amount>
@@ -26,6 +32,7 @@
 		</effects>
 	</option>
 	<option id="39106" name="Col_76">
+		<!-- P. Skill Critical Damage +20 -->
 		<effects>
 			<effect name="CriticalDamage">
 				<amount>20</amount>
@@ -34,6 +41,7 @@
 		</effects>
 	</option>
 	<option id="39107" name="Col_77">
+		<!-- Soulshot/ Spiritshot damage +1% -->
 		<effects>
 			<effect name="ShotsBonus">
 				<amount>1</amount>
@@ -42,6 +50,7 @@
 		</effects>
 	</option>
 	<option id="39108" name="Col_78">
+		<!-- P. Skill Critical Rate +1% -->
 		<effects>
 			<effect name="CriticalRate">
 				<amount>1</amount>
@@ -50,6 +59,7 @@
 		</effects>
 	</option>
 	<option id="39109" name="Col_79">
+		<!-- Chance of dropping items -1% -->
 		<effects>
 			<effect name="BonusDropRate">
 				<amount>-1</amount>
@@ -58,9 +68,10 @@
 		</effects>
 	</option>
 	<option id="39110" name="Col_80">
-		<!-- TODO: Implement Effect CostRestoringItems to increase or decrease Price of Restoring Dropped Items -->
+		<!-- Cost of restoring dropped items -1% -->
 	</option>
 	<option id="39111" name="Col_81">
+		<!-- Death XP Penalty -1% -->
 		<effects>
 			<effect name="ReduceDropPenalty">
 				<amount>-1</amount>
@@ -69,9 +80,11 @@
 		</effects>
 	</option>
 	<option id="39112" name="Col_82">
-		<passive_skill id="48332" level="2" />
+		<!-- Knockback Resistance +1% -->
+		<passive_skill id="48332" level="2" /> <!-- Knockback Attack Resistance -->
 	</option>
 	<option id="39113" name="Col_83">
+		<!-- P. Atk. +40 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>40</amount>
@@ -80,6 +93,7 @@
 		</effects>
 	</option>
 	<option id="39114" name="Col_84">
+		<!-- M. Atk. +44 -->
 		<effects>
 			<effect name="MAtk">
 				<amount>44</amount>
@@ -88,6 +102,7 @@
 		</effects>
 	</option>
 	<option id="39115" name="Col_85">
+		<!-- Skill Cooldown -1% -->
 		<effects>
 			<effect name="Reuse">
 				<amount>-1</amount>
@@ -97,6 +112,7 @@
 		</effects>
 	</option>
 	<option id="39116" name="Col_86">
+		<!-- Max CP +150 -->
 		<effects>
 			<effect name="MaxCp">
 				<amount>150</amount>
@@ -105,12 +121,15 @@
 		</effects>
 	</option>
 	<option id="39117" name="Col_87">
-		<passive_skill id="16317" level="2" />
+		<!-- Pull Resistance +1% -->
+		<passive_skill id="16317" level="2" /> <!-- Pull Resistance -->
 	</option>
 	<option id="39118" name="Col_88">
-		<passive_skill id="81874" level="1" />
+		<!-- Inventory slots +1 -->
+		<passive_skill id="81874" level="1" /> <!-- Inventory Slots -->
 	</option>
 	<option id="39119" name="Col_89">
+		<!-- P. Atk. +80 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>80</amount>
@@ -119,6 +138,7 @@
 		</effects>
 	</option>
 	<option id="39120" name="Col_90">
+		<!-- M. Atk. +60 -->
 		<effects>
 			<effect name="MAtk">
 				<amount>60</amount>
@@ -127,6 +147,7 @@
 		</effects>
 	</option>
 	<option id="39121" name="Col_91">
+		<!-- Received P. Skill Critical Rate -1% -->
 		<effects>
 			<effect name="DefenceCriticalDamage">
 				<amount>1</amount>
@@ -135,6 +156,7 @@
 		</effects>
 	</option>
 	<option id="39122" name="Col_92">
+		<!-- Received M. Skill Critical Rate -1% -->
 		<effects>
 			<effect name="DefenceMagicCriticalDamage">
 				<amount>1</amount>
@@ -143,6 +165,7 @@
 		</effects>
 	</option>
 	<option id="39123" name="Col_93">
+		<!-- Skill Critical Damage +250 -->
 		<effects>
 			<effect name="PhysicalSkillCriticalDamage">
 				<amount>250</amount>
@@ -151,6 +174,7 @@
 		</effects>
 	</option>
 	<option id="39124" name="Col_94">
+		<!-- Max CP +175 -->
 		<effects>
 			<effect name="MaxCp">
 				<amount>175</amount>
@@ -159,6 +183,7 @@
 		</effects>
 	</option>
 	<option id="39125" name="Col_95">
+		<!-- Speed +1 -->
 		<effects>
 			<effect name="Speed">
 				<amount>1</amount>
@@ -167,6 +192,7 @@
 		</effects>
 	</option>
 	<option id="39126" name="Col_96">
+		<!-- Soulshot/ Spiritshot damage +2% -->
 		<effects>
 			<effect name="ShotsBonus">
 				<amount>2</amount>
@@ -175,6 +201,7 @@
 		</effects>
 	</option>
 	<option id="39127" name="Col_97">
+		<!-- CON/ MEN +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -189,9 +216,11 @@
 		</effects>
 	</option>
 	<option id="39128" name="Col_98">
-		<passive_skill id="81874" level="2" />
+		<!-- Inventory slots +1 -->
+		<passive_skill id="81874" level="2" /> <!-- unknown skill -->
 	</option>
 	<option id="39129" name="Col_99">
+		<!-- Skill MP Consumption -2% -->
 		<effects>
 			<effect name="MagicMpCost">
 				<amount>-2</amount>
@@ -200,6 +229,7 @@
 		</effects>
 	</option>
 	<option id="39130" name="Col_100">
+		<!-- Acquired XP/ SP +2% -->
 		<effects>
 			<effect name="GiveExpAndSp">
 				<amount>2</amount>
@@ -208,6 +238,7 @@
 		</effects>
 	</option>
 	<option id="39131" name="Col_101">
+		<!-- Hellfire Resistance +2% -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>8</amount>
@@ -216,6 +247,7 @@
 		</effects>
 	</option>
 	<option id="39132" name="Col_102">
+		<!-- Skill Power +2% -->
 		<effects>
 			<effect name="MagicalSkillPower">
 				<amount>2</amount>
@@ -228,6 +260,7 @@
 		</effects>
 	</option>
 	<option id="39133" name="Col_103">
+		<!-- Skill Power +1% -->
 		<effects>
 			<effect name="MagicalSkillPower">
 				<amount>2</amount>
@@ -240,6 +273,7 @@
 		</effects>
 	</option>
 	<option id="39134" name="Col_104">
+		<!-- MEN +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -249,6 +283,7 @@
 		</effects>
 	</option>
 	<option id="39135" name="Col_105">
+		<!-- MEN +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -258,6 +293,7 @@
 		</effects>
 	</option>
 	<option id="39136" name="Col_106">
+		<!-- Skill Cooldown -3% -->
 		<effects>
 			<effect name="Reuse">
 				<amount>-3</amount>
@@ -272,6 +308,7 @@
 		</effects>
 	</option>
 	<option id="39137" name="Col_107">
+		<!-- CON +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -281,6 +318,7 @@
 		</effects>
 	</option>
 	<option id="39138" name="Col_108">
+		<!-- CON +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -290,6 +328,7 @@
 		</effects>
 	</option>
 	<option id="39139" name="Col_109">
+		<!-- DEX/ WIT +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -304,6 +343,7 @@
 		</effects>
 	</option>
 	<option id="39140" name="Col_110">
+		<!-- Received damage -3% -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>3</amount>
@@ -316,13 +356,16 @@
 		</effects>
 	</option>
 	<option id="39141" name="Col_111">
-		<passive_skill id="81391" level="1" />
+		<!-- Resistance to All Weapons +2% -->
+		<passive_skill id="81391" level="1" /> <!-- Melee Weapon Resistance -->
 	</option>
 	<option id="39142" name="Col_112">
-		<passive_skill id="50010" level="5" />
-		<passive_skill id="50011" level="5" />
+		<!-- Suppression Resistance +2% -->
+		<passive_skill id="50010" level="5" /> <!-- Greater Hold Resistance -->
+		<passive_skill id="50011" level="5" /> <!-- Greater Paralysis Resistance -->
 	</option>
 	<option id="39143" name="Col_113">
+		<!-- M. Def. +120 -->
 		<effects>
 			<effect name="MagicalDefence">
 				<amount>120</amount>
@@ -331,6 +374,7 @@
 		</effects>
 	</option>
 	<option id="39144" name="Col_114">
+		<!-- P. Def. +100 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>100</amount>
@@ -339,6 +383,7 @@
 		</effects>
 	</option>
 	<option id="39145" name="Col_115">
+		<!-- M. Def. +110 -->
 		<effects>
 			<effect name="MagicalDefence">
 				<amount>110</amount>
@@ -347,6 +392,7 @@
 		</effects>
 	</option>
 	<option id="39146" name="Col_116">
+		<!-- P. Def. +100 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>100</amount>
@@ -355,6 +401,7 @@
 		</effects>
 	</option>
 	<option id="39147" name="Col_117">
+		<!-- Max MP +150 -->
 		<effects>
 			<effect name="MaxMp">
 				<amount>150</amount>
@@ -363,6 +410,7 @@
 		</effects>
 	</option>
 	<option id="39148" name="Col_118">
+		<!-- M. Def. +100 -->
 		<effects>
 			<effect name="MagicalDefence">
 				<amount>100</amount>
@@ -371,6 +419,7 @@
 		</effects>
 	</option>
 	<option id="39149" name="Col_119">
+		<!-- Received M. Skill Critical Rate -1% -->
 		<effects>
 			<effect name="MagicCriticalRate">
 				<amount>-1</amount>
@@ -379,6 +428,7 @@
 		</effects>
 	</option>
 	<option id="39150" name="Col_120">
+		<!-- Skill Critical Damage +100 -->
 		<effects>
 			<effect name="PhysicalSkillCriticalDamage">
 				<amount>100</amount>
@@ -387,6 +437,7 @@
 		</effects>
 	</option>
 	<option id="39151" name="Col_121">
+		<!-- P. Skill Critical Damage +61 -->
 		<effects>
 			<effect name="PvePhysicalSkillDamageBonus">
 				<amount>2</amount>
@@ -399,6 +450,7 @@
 		</effects>
 	</option>
 	<option id="39152" name="Col_122">
+		<!-- M. Skill Critical Damage +61 -->
 		<effects>
 			<effect name="PveMagicalSkillDamageBonus">
 				<amount>2</amount>
@@ -411,6 +463,7 @@
 		</effects>
 	</option>
 	<option id="39153" name="Col_123">
+		<!-- P. Atk. +85 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>85</amount>
@@ -419,6 +472,7 @@
 		</effects>
 	</option>
 	<option id="39154" name="Col_124">
+		<!-- Max HP +185 -->
 		<effects>
 			<effect name="MaxHp">
 				<amount>185</amount>
@@ -427,6 +481,7 @@
 		</effects>
 	</option>
 	<option id="39155" name="Col_125">
+		<!-- M. Atk. +85 -->
 		<effects>
 			<effect name="MAtk">
 				<amount>85</amount>
@@ -435,6 +490,7 @@
 		</effects>
 	</option>
 	<option id="39156" name="Col_126">
+		<!-- M. Skill Critical Rate +2% -->
 		<effects>
 			<effect name="MagicCriticalRate">
 				<amount>2</amount>
@@ -443,6 +499,7 @@
 		</effects>
 	</option>
 	<option id="39157" name="Col_127">
+		<!-- M. Def. +150 -->
 		<effects>
 			<effect name="MagicalDefence">
 				<amount>150</amount>
@@ -451,6 +508,7 @@
 		</effects>
 	</option>
 	<option id="39158" name="Col_128">
+		<!-- P. Def. +120 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>120</amount>
@@ -459,6 +517,7 @@
 		</effects>
 	</option>
 	<option id="39159" name="Col_129">
+		<!-- Received Skill Critical Damage -2% -->
 		<effects>
 			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>2</amount>
@@ -467,6 +526,7 @@
 		</effects>
 	</option>
 	<option id="39160" name="Col_130">
+		<!-- MEN +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -476,6 +536,7 @@
 		</effects>
 	</option>
 	<option id="39161" name="Col_131">
+		<!-- MEN +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -485,6 +546,7 @@
 		</effects>
 	</option>
 	<option id="39162" name="Col_132">
+		<!-- CON +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -494,6 +556,7 @@
 		</effects>
 	</option>
 	<option id="39163" name="Col_133">
+		<!-- STR +1/ INT +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -508,6 +571,7 @@
 		</effects>
 	</option>
 	<option id="39164" name="Col_134">
+		<!-- CON +1 -->
 		<effects>
 			<effect name="StatUp">
 				<amount>1</amount>
@@ -517,6 +581,7 @@
 		</effects>
 	</option>
 	<option id="39165" name="Col_135">
+		<!-- M. Skill Critical Damage +52 -->
 		<effects>
 			<effect name="PhysicalSkillCriticalDamage">
 				<amount>52</amount>
@@ -525,6 +590,7 @@
 		</effects>
 	</option>
 	<option id="39166" name="Col_136">
+		<!-- P. Skill Critical Damage +42 -->
 		<effects>
 			<effect name="PhysicalSkillCriticalDamage">
 				<amount>42</amount>
@@ -533,6 +599,7 @@
 		</effects>
 	</option>
 	<option id="39167" name="Col_137">
+		<!-- P. Def. +80 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>80</amount>
@@ -541,6 +608,7 @@
 		</effects>
 	</option>
 	<option id="39168" name="Col_138">
+		<!-- Received M. Skill Critical Damage -1% -->
 		<effects>
 			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>1</amount>
@@ -549,6 +617,7 @@
 		</effects>
 	</option>
 	<option id="39169" name="Col_139">
+		<!-- Received Skill Critical Damage -1% -->
 		<effects>
 			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>1</amount>
@@ -557,6 +626,7 @@
 		</effects>
 	</option>
 	<option id="39170" name="Col_140">
+		<!-- Received damage -3% -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>80</amount>
@@ -569,6 +639,7 @@
 		</effects>
 	</option>
 	<option id="39171" name="Col_141">
+		<!-- P./ M. Atk. +100 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>100</amount>
@@ -581,6 +652,7 @@
 		</effects>
 	</option>
 	<option id="39172" name="Col_142">
+		<!-- P./ M. Def. +100 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>100</amount>
@@ -593,6 +665,7 @@
 		</effects>
 	</option>
 	<option id="39173" name="Col_143">
+		<!-- Max HP/ MP/ CP +200 -->
 		<effects>
 			<effect name="MaxHp">
 				<amount>200</amount>
@@ -609,6 +682,7 @@
 		</effects>
 	</option>
 	<option id="39174" name="Col_144">
+		<!-- Magic Lamp charging rate +2% -->
 		<effects>
 			<effect name="MagicLampExpRate">
 				<amount>2</amount>
@@ -617,6 +691,7 @@
 		</effects>
 	</option>
 	<option id="39175" name="Col_145">
+		<!-- Acquired XP/ SP +1% -->
 		<effects>
 			<effect name="GiveExpAndSp">
 				<amount>1</amount>
@@ -625,6 +700,7 @@
 		</effects>
 	</option>
 	<option id="39176" name="Col_146">
+		<!-- Acquired XP/ SP +2% -->
 		<effects>
 			<effect name="GiveExpAndSp">
 				<amount>2</amount>
@@ -633,6 +709,7 @@
 		</effects>
 	</option>
 	<option id="39177" name="Col_147">
+		<!-- P./ M. Atk. +51 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>51</amount>
@@ -645,6 +722,7 @@
 		</effects>
 	</option>
 	<option id="39178" name="Col_148">
+		<!-- P./ M. Def. +72 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>72</amount>
@@ -657,6 +735,7 @@
 		</effects>
 	</option>
 	<option id="39179" name="Col_149">
+		<!-- P. Skill Critical Rate +1% -->
 		<effects>
 			<effect name="SkillMasteryRate">
 				<amount>1</amount>
@@ -665,6 +744,7 @@
 		</effects>
 	</option>
 	<option id="39180" name="Col_150">
+		<!-- M. Skill Critical Rate +1% -->
 		<effects>
 			<effect name="MagicCriticalRate">
 				<amount>1</amount>
@@ -673,6 +753,7 @@
 		</effects>
 	</option>
 	<option id="39181" name="Col_151">
+		<!-- P. Skill Critical Damage +49 -->
 		<effects>
 			<effect name="PhysicalSkillCriticalDamage">
 				<amount>49</amount>
@@ -681,6 +762,7 @@
 		</effects>
 	</option>
 	<option id="39182" name="Col_152">
+		<!-- Received P. Skill Critical Rate -1% -->
 		<effects>
 			<effect name="DefenceMagicCriticalRate">
 				<amount>1</amount>
@@ -689,6 +771,7 @@
 		</effects>
 	</option>
 	<option id="39183" name="Col_153">
+		<!-- Max HP +150 -->
 		<effects>
 			<effect name="MaxHp">
 				<amount>150</amount>
@@ -697,6 +780,7 @@
 		</effects>
 	</option>
 	<option id="39184" name="Col_154">
+		<!-- Max MP +150 -->
 		<effects>
 			<effect name="MaxMp">
 				<amount>150</amount>
@@ -705,6 +789,7 @@
 		</effects>
 	</option>
 	<option id="39185" name="Col_155">
+		<!-- Skill MP Consumption -1% -->
 		<effects>
 			<effect name="Reuse">
 				<amount>-1</amount>
@@ -714,6 +799,7 @@
 		</effects>
 	</option>
 	<option id="39186" name="Col_156">
+		<!-- Received P. Skill Critical Damage -2% -->
 		<effects>
 			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>2</amount>
@@ -722,9 +808,11 @@
 		</effects>
 	</option>
 	<option id="39187" name="Col_157">
-		<passive_skill id="48332" level="3" />
+		<!-- Knockback Resistance +2% -->
+		<passive_skill id="48332" level="3" /> <!-- Knockback Attack Resistance -->
 	</option>
 	<option id="39188" name="Col_158">
+		<!-- Received Healing +2% -->
 		<effects>
 			<effect name="HealEffect">
 				<amount>2</amount>
@@ -733,9 +821,11 @@
 		</effects>
 	</option>
 	<option id="39189" name="Col_159">
-		<passive_skill id="16317" level="3" />
+		<!-- Pull Resistance +2% -->
+		<passive_skill id="16317" level="3" /> <!-- Pull Resistance -->
 	</option>
 	<option id="39190" name="Col_160">
+		<!-- P./ M. Atk. +53 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>53</amount>
@@ -748,6 +838,7 @@
 		</effects>
 	</option>
 	<option id="39191" name="Col_161">
+		<!-- P./ M. Atk. +64 -->
 		<effects>
 			<effect name="PAtk">
 				<amount>64</amount>
@@ -760,6 +851,7 @@
 		</effects>
 	</option>
 	<option id="39192" name="Col_162">
+		<!-- P./ M. Def. +95 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>95</amount>
@@ -772,6 +864,7 @@
 		</effects>
 	</option>
 	<option id="39193" name="Col_163">
+		<!-- P./ M. Def. +95 -->
 		<effects>
 			<effect name="PhysicalDefence">
 				<amount>95</amount>
@@ -784,6 +877,7 @@
 		</effects>
 	</option>
 	<option id="39194" name="Col_164">
+		<!-- Received M. Skill Critical Rate -2% -->
 		<effects>
 			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>2</amount>
@@ -792,6 +886,7 @@
 		</effects>
 	</option>
 	<option id="39195" name="Col_165">
+		<!-- Received P. Skill Critical Rate -2% -->
 		<effects>
 			<effect name="DefencePhysicalSkillCriticalDamage">
 				<amount>2</amount>
@@ -800,11 +895,12 @@
 		</effects>
 	</option>
 	<option id="39196" name="Col_166">
+		<!-- Hellfire Resistance +3% -->
 		<effects>
-			<!-- TODO: HellFireResistance -->
 		</effects>
 	</option>
 	<option id="39197" name="xp_sp_give">
+		<!-- Acquired XP/ SP +15% -->
 		<effects>
 			<effect name="GiveExpAndSp">
 				<amount>15</amount>
@@ -813,6 +909,7 @@
 		</effects>
 	</option>
 	<option id="39198" name="p_atk_m">
+		<!-- Atk. Spd./ Casting Spd. +50 -->
 		<effects>
 			<effect name="PhysicalAttackSpeed">
 				<amount>50</amount>
@@ -825,6 +922,7 @@
 		</effects>
 	</option>
 	<option id="39199" name="p_atk_m_rate">
+		<!-- P./ M. Atk. +100, All Critical Rate +10% -->
 		<effects>
 			<effect name="PAtk">
 				<amount>100</amount>

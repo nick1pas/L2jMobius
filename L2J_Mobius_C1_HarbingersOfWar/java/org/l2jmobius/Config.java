@@ -71,10 +71,8 @@ public class Config
 	public static int KARMA_DROP_CHANCE;
 	public static Set<Integer> KARMA_PROTECTED_ITEMS = new HashSet<>();
 	// ThreadPool
-	public static int SCHEDULED_THREAD_POOL_COUNT;
-	public static int THREADS_PER_SCHEDULED_THREAD_POOL;
-	public static int INSTANT_THREAD_POOL_COUNT;
-	public static int THREADS_PER_INSTANT_THREAD_POOL;
+	public static int SCHEDULED_THREAD_POOL_SIZE;
+	public static int INSTANT_THREAD_POOL_SIZE;
 	// Npc
 	public static boolean SHOW_NPC_LEVEL;
 	public static boolean SHOW_NPC_AGGRESSION;
@@ -123,18 +121,16 @@ public class Config
 		
 		// Load threadpool config file (if exists)
 		final PropertiesParser threadpoolConfig = new PropertiesParser(THREADPOOL_CONFIG_FILE);
-		SCHEDULED_THREAD_POOL_COUNT = threadpoolConfig.getInt("ScheduledThreadPoolCount", -1);
-		if (SCHEDULED_THREAD_POOL_COUNT == -1)
+		SCHEDULED_THREAD_POOL_SIZE = threadpoolConfig.getInt("ScheduledThreadPoolSize", -1);
+		if (SCHEDULED_THREAD_POOL_SIZE == -1)
 		{
-			SCHEDULED_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
+			SCHEDULED_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 4;
 		}
-		THREADS_PER_SCHEDULED_THREAD_POOL = threadpoolConfig.getInt("ThreadsPerScheduledThreadPool", 4);
-		INSTANT_THREAD_POOL_COUNT = threadpoolConfig.getInt("InstantThreadPoolCount", -1);
-		if (INSTANT_THREAD_POOL_COUNT == -1)
+		INSTANT_THREAD_POOL_SIZE = threadpoolConfig.getInt("InstantThreadPoolSize", -1);
+		if (INSTANT_THREAD_POOL_SIZE == -1)
 		{
-			INSTANT_THREAD_POOL_COUNT = Runtime.getRuntime().availableProcessors();
+			INSTANT_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 2;
 		}
-		THREADS_PER_INSTANT_THREAD_POOL = threadpoolConfig.getInt("ThreadsPerInstantThreadPool", 2);
 		
 		// Load NPC config file (if exists)
 		final PropertiesParser npcConfig = new PropertiesParser(NPC_CONFIG_FILE);

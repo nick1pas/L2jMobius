@@ -21,6 +21,7 @@ import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.SkillTable;
 import org.l2jmobius.gameserver.data.sql.SkillSpellbookTable;
 import org.l2jmobius.gameserver.data.sql.SkillTreeTable;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.model.PledgeSkillLearn;
 import org.l2jmobius.gameserver.model.ShortCut;
 import org.l2jmobius.gameserver.model.Skill;
@@ -39,7 +40,6 @@ import org.l2jmobius.gameserver.network.serverpackets.PledgeSkillList;
 import org.l2jmobius.gameserver.network.serverpackets.ShortCutRegister;
 import org.l2jmobius.gameserver.network.serverpackets.StatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
 public class RequestAquireSkill implements ClientPacket
@@ -107,7 +107,7 @@ public class RequestAquireSkill implements ClientPacket
 			if ((counts == 0) && !Config.ALT_GAME_SKILL_LEARN)
 			{
 				player.sendMessage("You are trying to learn skill that you can't...");
-				Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalPlayerAction.PUNISH_KICK);
+				Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalActionPunishmentType.KICK);
 				return;
 			}
 			
@@ -167,7 +167,7 @@ public class RequestAquireSkill implements ClientPacket
 			if (counts == 0)
 			{
 				player.sendMessage("You are trying to learn skill that you can't..");
-				Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalPlayerAction.PUNISH_KICK);
+				Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalActionPunishmentType.KICK);
 				return;
 			}
 			
@@ -219,7 +219,7 @@ public class RequestAquireSkill implements ClientPacket
 			if (counts == 0)
 			{
 				player.sendMessage("You are trying to learn skill that you can't..");
-				Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalPlayerAction.PUNISH_KICK);
+				Util.handleIllegalPlayerAction(player, player + " tried to learn skill that he can't!!!", IllegalActionPunishmentType.KICK);
 				return;
 			}
 			

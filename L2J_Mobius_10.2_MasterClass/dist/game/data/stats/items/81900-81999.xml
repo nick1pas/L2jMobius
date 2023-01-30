@@ -332,8 +332,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81923" name="Ultimate Death Knight B" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -346,8 +344,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81924" name="Ultimate Death Knight C" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -360,8 +356,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81925" name="Ultimate Death Knight D" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -374,8 +368,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81926" name="Ultimate Death Knight E" additionalName="Not Available" type="Armor">
 		<!-- The item is not available. -->
@@ -388,10 +380,8 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
-	<item id="81927" name="New Year Gift" additionalName="Event" type="EtcItem">
+	<item id="81927" name="Christmas Gift" additionalName="Event" type="EtcItem">
 		<!-- A gift box for the New Year. Double-click to obtain various items (excluding Snowman's Icy Candy). -->
 		<set name="icon" val="BranchSys.icon.br_xmas_miracle_i00" />
 		<set name="default_action" val="PEEL" />
@@ -403,37 +393,27 @@
 		<set name="extractableCountMin" val="2" />
 		<set name="extractableCountMax" val="2" />
 		<capsuled_items>
-			<item id="81928" min="1" max="1" chance="100" /> <!-- Snowman's Ice Candy -->
-			<item id="3481" min="2" max="5" chance="30" /> <!-- Gold Dragon -->
-			<item id="24146" min="1" max="1" chance="15" /> <!-- Augment box -->
-			<item id="80817" min="1" max="1" chance="12.5" /> <!-- Emperor's Special Cocktail -->
-			<item id="29677" min="1" max="1" chance="12.5" /> <!-- Freya's Glittering Ice Rose -->
-			<item id="81747" min="1" max="1" chance="12.5" /> <!-- Royal Honey Dark Beer -->
-			<item id="81759" min="1" max="1" chance="12.5" /> <!-- Glowing Dragon's Attribute Potion EXP -->
-			<item id="81892" min="1" max="1" chance="12.5" /> <!-- Shining Nevit's Gold Hourglass -->
-			<item id="29676" min="1" max="1" chance="12.5" /> <!-- freya storm scroll -->
-			<item id="48831" min="1" max="1" chance="10" /> <!-- Jewel Energy -->
-			<item id="80416" min="1" max="1" chance="5" /> <!-- Fortune Box of 10 Billion Adena -->
-			<item id="80333" min="1" max="1" chance="5" /> <!-- Dragon Necklace -->
-			<item id="80334" min="1" max="1" chance="5" /> <!-- Dragon Earring -->
-			<item id="80335" min="1" max="1" chance="5" /> <!-- Dragon Ring -->
-			<item id="80636" min="1" max="1" chance="5" /> <!-- Artifact Crystal -->
-			<item id="83000" min="1" max="1" chance="5" /> <!-- Enchant Artifact L2 Inner -->
-			<item id="28453" min="1" max="1" chance="5" /> <!-- Sayha Energy -->
-			<item id="80964" min="1" max="1" chance="5" /> <!-- Energy  of protection -->
-			<item id="48046" min="1" max="1" chance="5" /> <!-- Book of Growth -->
-			<item id="48047" min="1" max="1" chance="3" /> <!-- Ancient Book of Growth -->
-			<item id="29878" min="1" max="1" chance="3" /> <!-- Greater jewel lv. 1 box -->
-			<item id="39573" min="1" max="1" chance="2" /> <!-- Sealed Talisman - Insanity -->
-			<item id="37717" min="1" max="1" chance="2" /> <!-- Talisman of Seven Signs -->
-			<item id="81153" min="1" max="1" chance="2" /> <!-- Navari Mask -->
-			<item id="48066" min="1" max="1" chance="2" /> <!-- Agation cube -->
-			<item id="60206" min="1" max="1" chance="2" /> <!-- Gran Kain Weapon Enchant -->
-			<item id="60207" min="1" max="1" chance="2" /> <!-- Gran Kain Scroll Armor -->
-			<item id="48032" min="1" max="1" chance="0.5" /> <!-- Sayha's Talisman Lv. 8 -->
-			<item id="47820" min="1" max="1" chance="0.2" /> <!-- Sayha's Talisman Lv. 9 -->
-			<item id="48510" min="1" max="1" chance="0.2" /> <!-- Agation cube +7 -->
-			<item id="29164" min="1" max="1" chance="0.05" /> <!-- Legendary Scroll -->
+			<item id="81928" min="1" max="1" chance="100" /> <!-- Snowman's Icy Candy [Event] -->
+			<item id="39573" min="1" max="1" chance="5" /> <!-- Sealed Talisman of Insanity -->
+			<item id="39720" min="1" max="1" chance="5" /> <!-- Freya's Luck Potion -->
+			<item id="47821" min="1" max="1" chance="5" /> <!-- Sayha's Talisman Pack Lv. 10 -->
+			<item id="48860" min="1" max="1" chance="5" /> <!-- Fallen Angel's Ring Pack -->
+			<item id="48862" min="1" max="1" chance="5" /> <!-- +10 Fallen Angel's Ring Pack -->
+			<item id="48908" min="1" max="1" chance="5" /> <!-- Shillien's Soul Crystal Lv. 10 [Weapon] -->
+			<item id="48910" min="1" max="1" chance="5" /> <!-- Shillien's Soul Crystal Box -->
+			<item id="81448" min="1" max="1" chance="5" /> <!-- Angel's Necklace Pack -->
+			<item id="81449" min="1" max="1" chance="5" /> <!-- Angel's Earring Pack -->
+			<item id="81450" min="1" max="1" chance="5" /> <!-- Angel's Ring Pack -->
+			<item id="35567" min="1" max="1" chance="5" /> <!-- Dark Armor Enhancement Stone -->
+			<item id="35569" min="1" max="1" chance="5" /> <!-- Bloody Armor Enhancement Stone -->
+			<item id="37717" min="1" max="1" chance="5" /> <!-- Talisman of Seven Signs -->
+			<item id="48418" min="1" max="1" chance="5" /> <!-- Authority Ornament -->
+			<item id="19463" min="1" max="1" chance="5" /> <!-- Blessed Antharas' Earring -->
+			<item id="19464" min="1" max="1" chance="5" /> <!-- Blessed Valakas' Necklace -->
+			<item id="36946" min="1" max="1" chance="5" /> <!-- Lindvior's Earring -->
+			<item id="80333" min="1" max="1" chance="5" /> <!-- Dragon's Necklace -->
+			<item id="80334" min="1" max="1" chance="5" /> <!-- Dragon's Earring -->
+			<item id="80335" min="1" max="1" chance="5" /> <!-- Dragon's Ring -->
 		</capsuled_items>
 	</item>
 	<item id="81928" name="Snowman's Icy Candy" additionalName="Event" type="EtcItem">
@@ -451,7 +431,7 @@
 		<set name="handler" val="ItemSkills" />
 		<set name="etcitem_type" val="SCROLL" />
 		<skills>
-			<skill id="39729" level="1" /> <!-- Glittering Freya's Ice Rose -->
+			<skill id="39729" level="1" /> <!-- Snowman's Icy Candy -->
 		</skills>
 	</item>
 	<item id="81929" name="New Year Gift Set" additionalName="Event" type="EtcItem">

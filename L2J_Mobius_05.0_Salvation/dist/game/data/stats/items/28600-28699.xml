@@ -21,6 +21,10 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="28024" level="1" /> <!-- Spirit Stone Pack - Legendary -->
+		</skills>
 	</item>
 	<item id="28603" name="Dragon's Treasure Chest" type="EtcItem">
 		<!-- Double-click to obtain a rare item at random:. Seven Signs' Energy, Baium's Soul Ring, Bottle of Antharas'/ Valakas' Soul, +7 Pa'agrio's/ Sayha's/ Eva's/ Maphr's Shirt Pack, Windy Lucky Enchant Stone: Weapon/ Armor (R-grade), Giant's Scroll: Enchant Weapon/ Armor (R-grade), Blessed Lucky Enchant Stone: Weapon/ Armor Pack (R-grade), Blessed Scroll: Enchant Weapon/ Armor (R-grade), Scroll: Enchant Weapon/ Armor Pack (R-grade), Destruction Scroll: Enchant Elemental Shirt, Giant's Energy 20-unit Pack, Energy of Destruction 20-unit Pack, Mysterious Wind Scroll Pack, Rune Stone, Wind Vitality Tonic, Gemstone (R-grade) x15, Dragon's Gold Key, Dragon? Elemental Potion. -->
@@ -102,12 +106,16 @@
 		<!-- Makes you eligible to receive a Member of the Balthus Knight disguise for 2 hours. Can be used only by characters of Level 85 or higher. Buff gets deleted upon Subclass/ Dual Class change. To be deleted after the event ends. -->
 		<set name="icon" val="icon.ev_balthus_token" />
 		<set name="default_action" val="SKILL_REDUCE" />
+		<set name="reuse_delay" val="120000" /> <!-- 1 minute -->
 		<set name="material" val="PAPER" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="27859" level="1" /> <!-- Lucky Gift Coupon (2-hour) -->
+		</skills>
 	</item>
 	<item id="28610" name="Veteran Duo Bracelet Pack" additionalName="Event" type="EtcItem">
 		<!-- Contains 1 Veteran Duo Bracelet. -->

@@ -18,6 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.gameserver.data.xml.DoorData;
+import org.l2jmobius.gameserver.geoengine.GeoEngine;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -98,7 +99,7 @@ public class ValidatePosition implements ClientPacket
 		// Check out of sync.
 		if (player.calculateDistance3D(_x, _y, _z) > player.getStat().getMoveSpeed())
 		{
-			player.setXYZ(_x, _y, _z);
+			player.setXYZ(_x, _y, player.getZ() > _z ? GeoEngine.getInstance().getHeight(_x, _y, player.getZ()) : _z);
 		}
 		
 		player.setClientX(_x);

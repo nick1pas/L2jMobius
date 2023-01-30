@@ -226,14 +226,33 @@
 	<skill id="48037" toLevel="1" name="Lightning Strike">
 		<!-- Strikes the enemy with a lightning bolt that inflicts non-attribute damage with 2927 power. Paralyzes for 3 sec. -->
 		<icon>icon.skill0279</icon>
-		<operateType>A1</operateType>
+		<operateType>A2</operateType>
 		<isDebuff>true</isDebuff>
 		<castRange>400</castRange>
 		<hitTime>1500</hitTime>
 		<coolTime>500</coolTime>
-		<reuseDelay>20000</reuseDelay>
+		<reuseDelay>2000</reuseDelay>
 		<effectPoint>-4140</effectPoint>
 		<mpConsume>64</mpConsume>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalTime>5</abnormalTime>
+		<abnormalType>PARALYZE</abnormalType>
+		<trait>PARALYZE</trait>
+		<targetType>ENEMY</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="PhysicalAttack">
+				<power>69</power>
+			</effect>
+			<effect name="BuffBlock" />
+			<effect name="DebuffBlock" />
+		</effects>
+		<endEffects>
+			<effect name="CallSkill">
+				<skillId>6090</skillId>
+				<skillLevel>1</skillLevel>
+			</effect>
+		</endEffects>
 	</skill>
 	<skill id="48038" toLevel="1" name="Buff of Seeker - Short Distance">
 		<!-- The buff for adventurers who are going to explore the Tower of Insolence. For 5 min., P. Atk. +10%, P. Critical Rate +10, melee weapon efficiency +10. -->

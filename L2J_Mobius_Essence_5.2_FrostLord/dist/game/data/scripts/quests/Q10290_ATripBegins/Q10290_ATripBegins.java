@@ -53,7 +53,6 @@ public class Q10290_ATripBegins extends Quest
 	private static final ItemHolder ADVENTURERS_BRACELET = new ItemHolder(91934, 1);
 	private static final ItemHolder SCROLL_OF_ENCHANT_ADEN_WEAPON = new ItemHolder(93038, 2);
 	// Monsters
-	private static final int ARACHNID_PREDATOR = 20926;
 	private static final int SKELETON_BOWMAN = 20051;
 	private static final int RUIN_SPARTOI = 20054;
 	private static final int RAGING_SPARTOI = 20060;
@@ -71,7 +70,7 @@ public class Q10290_ATripBegins extends Quest
 		super(10290);
 		addStartNpc(CAPTAIN_BATHIS, MATHORN, EVIA);
 		addTalkId(CAPTAIN_BATHIS, MATHORN, EVIA, BELLA);
-		addKillId(ARACHNID_PREDATOR, SKELETON_BOWMAN, RUIN_SPARTOI, RAGING_SPARTOI, RAGING_SPARTOI, TUMRAN_BUGBEAR, TUMRAN_BUGBEAR_WARRIOR);
+		addKillId(SKELETON_BOWMAN, RUIN_SPARTOI, RAGING_SPARTOI, RAGING_SPARTOI, TUMRAN_BUGBEAR, TUMRAN_BUGBEAR_WARRIOR);
 		addCondMinLevel(MIN_LEVEL, "no_lvl.html");
 		addCondMaxLevel(MAX_LEVEL, "no_lvl.html");
 		registerQuestItems(SOE_TO_CAPTAIN_BATHIS.getId(), SOE_TO_RUIN_OF_AGONY.getId());

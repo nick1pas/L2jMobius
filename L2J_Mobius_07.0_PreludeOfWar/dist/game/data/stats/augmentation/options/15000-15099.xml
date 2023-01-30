@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/optionsData.xsd">
 	<option id="15000" name="o_s_52_2r_67">
-		<!-- Effect: During a critical attack, has a chance of inflicting fear on the target. -->
+		<!-- Chance: Instantly inflicts fear on the target after a critical attack. -->
 		<critical_skill id="3118" level="3" chance="5.0" /> <!-- Item Skill: Fear -->
 	</option>
 	<option id="15001" name="o_s_52_2r_68">
-		<!-- Effect: During a critical attack, has a chance of inflicting hold on the target. The target cannot be affected by any additional hold attacks while the effect lasts. -->
+		<!-- Chance: Inflicts hold on the target after a critical attack. The target cannot be affected by any hold attacks while the effect is active. -->
 		<critical_skill id="3114" level="3" chance="5.0" /> <!-- Item Skill: Hold -->
 	</option>
 	<option id="15002" name="o_s_52_2r_69">
-		<!-- Effect: During a critical attack, has a chance of inflicting poison on the target. -->
+		<!-- Chance: Instantly poisons the target after a critical attack. -->
 		<critical_skill id="3119" level="3" chance="5.0" /> <!-- Item Skill: Poison (Critical) -->
 	</option>
 	<option id="15003" name="o_s_52_2r_70">
@@ -29,15 +29,15 @@
 		<passive_skill id="3235" level="3" /> <!-- Item Skill: Bleed -->
 	</option>
 	<option id="15007" name="o_s_52_2r_74">
-		<!-- Effect: When receiving damage, has a chance of restoring CP. -->
+		<!-- Chance: A chance to restore CP after receiving damage. -->
 		<passive_skill id="3213" level="3" /> <!-- Item Skill: Ritual -->
 	</option>
 	<option id="15008" name="o_s_52_2r_75">
-		<!-- Effect: When receiving damage, has a chance of increasing Critical Rate. -->
+		<!-- Chance: A chance to increase Critical Rate after receiving damage. -->
 		<passive_skill id="3223" level="3" /> <!-- Item Skill: Focus -->
 	</option>
 	<option id="15009" name="o_s_52_2r_76">
-		<!-- Effect: Has a chance of decreasing the attacking target's aggression toward oneself. -->
+		<!-- Chance: A chance to decrease the target's aggression after receiving damage. -->
 		<passive_skill id="3225" level="3" /> <!-- Item Skill: Charm -->
 	</option>
 	<option id="15010" name="o_s_52_2r_77">
@@ -45,7 +45,7 @@
 		<passive_skill id="3222" level="3" /> <!-- Item Skill: Guidance -->
 	</option>
 	<option id="15011" name="o_s_52_2r_78">
-		<!-- Effect: Has a chance of inflicting hold on the attacking target. The target cannot be affected by any additional hold attacks while the effect lasts. -->
+		<!-- Chance: Inflicts hold on the target after receiving damage. The target cannot be affected by any hold attacks while the effect is active. -->
 		<passive_skill id="3229" level="3" /> <!-- Item Skill: Hold -->
 	</option>
 	<option id="15012" name="o_s_52_2r_79">
@@ -57,35 +57,35 @@
 		<passive_skill id="3207" level="3" /> <!-- Item Skill: Heal -->
 	</option>
 	<option id="15014" name="o_s_52_2r_81">
-		<!-- Effect: When receiving damage, has a chance of increasing M. Atk. -->
+		<!-- Chance: A chance to increase M. Atk. after receiving damage. -->
 		<passive_skill id="3216" level="3" /> <!-- Item Skill: Empower -->
 	</option>
 	<option id="15015" name="o_s_52_2r_82">
-		<!-- Effect: When receiving damage, has a chance of increasing Critical Rate of attack magics. -->
+		<!-- Chance: A chance to increase M. Critical Rate after receiving damage. -->
 		<passive_skill id="3224" level="3" /> <!-- Item Skill: Wild Magic -->
 	</option>
 	<option id="15016" name="o_s_52_2r_83">
-		<!-- Effect: When receiving damage, has a chance of increasing Max CP. -->
+		<!-- Chance: A chance to increase Max CP after receiving damage. -->
 		<passive_skill id="3214" level="3" /> <!-- Item Skill: Cheer -->
 	</option>
 	<option id="15017" name="o_s_52_2r_84">
-		<!-- Effect: When receiving damage, has a chance of increasing Max HP. -->
+		<!-- Chance: A chance to increase Max HP after receiving damage. -->
 		<passive_skill id="3208" level="3" /> <!-- Item Skill: Blessed Body -->
 	</option>
 	<option id="15018" name="o_s_52_2r_85">
-		<!-- Effect: When receiving damage, has a chance of increasing Max MP. -->
+		<!-- Chance: A chance to increase Max MP after receiving damage. -->
 		<passive_skill id="3211" level="3" /> <!-- Item Skill: Blessed Soul -->
 	</option>
 	<option id="15019" name="o_s_52_2r_86">
-		<!-- Effect: When receiving damage, has a chance of increasing M. Def. -->
+		<!-- Chance: A chance to increase M. Def. after receiving damage. -->
 		<passive_skill id="3219" level="3" /> <!-- Item Skill: Magic Barrier -->
 	</option>
 	<option id="15020" name="o_s_52_2r_87">
-		<!-- Effect: When receiving damage, has a chance of increasing P. Atk. -->
+		<!-- Chance: A chance to increase P. Atk. after receiving damage. -->
 		<passive_skill id="3215" level="3" /> <!-- Item Skill: Might -->
 	</option>
 	<option id="15021" name="o_s_52_2r_88">
-		<!-- Effect: When receiving damage, has a chance of increasing P. Def. -->
+		<!-- Chance: A chance to increase P. Def. after receiving damage. -->
 		<passive_skill id="3218" level="3" /> <!-- Item Skill: Shield -->
 	</option>
 	<option id="15022" name="o_s_52_2r_89">
@@ -94,10 +94,10 @@
 	</option>
 	<option id="15023" name="o_s_52_2r_90">
 		<!-- Effect: Has a chance of decreasing PvP P. Atk. of the attacking target. -->
-		<passive_skill id="3220" level="3" /> <!-- Item Skill: Duel Weakness -->
+		<passive_skill id="3220" level="3" /> <!-- Item Skill: Weakness in Duel -->
 	</option>
 	<option id="15024" name="o_s_52_2r_91">
-		<!-- Effect: When receiving damage, has a chance of increasing PvP P. Ak. -->
+		<!-- Chance: A chance to increase P. Atk. in PvP after receiving PvP damage. -->
 		<passive_skill id="3217" level="3" /> <!-- Item Skill: Duel Might -->
 	</option>
 	<option id="15025" name="o_s_52_2r_92">
@@ -117,11 +117,11 @@
 		<magic_skill id="3105" level="3" chance="2.0" /> <!-- Item Skill: Bleed (Magic Active) -->
 	</option>
 	<option id="15029" name="o_s_52_2r_96">
-		<!-- Effect: During a magic attack, has a chance of inflicting fear on the target and causing him to flee. -->
+		<!-- Chance: Instantly inflicts fear on the target after a magical attack. -->
 		<magic_skill id="3103" level="3" chance="2.0" /> <!-- Item Skill: Fear -->
 	</option>
 	<option id="15030" name="o_s_52_2r_97">
-		<!-- Effect: During a magic attack, has a chance of inflicting hold on the target. The target cannot be affected by any additional hold attacks while the effect lasts. -->
+		<!-- Chance: Inflicts hold on the target after a magical attack. The target cannot be affected by any hold attacks while the effect is active. -->
 		<magic_skill id="3099" level="3" chance="2.0" /> <!-- Item Skill: Hold -->
 	</option>
 	<option id="15031" name="o_s_52_2r_98">
@@ -181,7 +181,7 @@
 		<active_skill id="3141" level="3" /> <!-- Item Skill: Focus -->
 	</option>
 	<option id="15045" name="o_s_52_2u_5">
-		<!-- Active: Has a chance of blocking the target's physical/magic skills -->
+		<!-- Active: Has a chance of blocking the target's physical/ magic skills -->
 		<active_skill id="3198" level="3" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15046" name="o_s_52_2u_6">
@@ -197,7 +197,7 @@
 		<active_skill id="3142" level="3" /> <!-- Item Skill: Wild Magic -->
 	</option>
 	<option id="15049" name="o_s_52_2u_9">
-		<!-- Active: Teleports party members to a town. Cannot be used in special areas such as the GM info center. -->
+		<!-- Active: Teleports party members to the nearest village. Cannot be used in special places such as the GM Consultation Service. -->
 		<active_skill id="3205" level="1" /> <!-- Item Skill: Party Return -->
 	</option>
 	<option id="15050" name="o_s_52_2u_10">
@@ -237,7 +237,7 @@
 		<active_skill id="3148" level="3" /> <!-- Item Skill: Vampiric Rage -->
 	</option>
 	<option id="15059" name="o_s_52_2u_19">
-		<!-- Effect: During a physical attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a physical attack, has a chance of blocking the target's physical/ magic skills -->
 		<attack_skill id="3094" level="3" chance="1.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15060" name="o_s_52_2u_20">
@@ -253,7 +253,7 @@
 		<attack_skill id="3093" level="3" chance="1.0" /> <!-- Item Skill: Silence -->
 	</option>
 	<option id="15063" name="o_s_52_2u_23">
-		<!-- Effect: During a physical attack, has a chance of inflicting sleep on the target. The target cannot be affected by any additional sleep attacks while the effect lasts. -->
+		<!-- Chance: Instantly puts the target to sleep after a physical attack. The target cannot be affected by any sleep attacks while the effect is active. -->
 		<attack_skill id="3087" level="3" chance="1.0" /> <!-- Item Skill: Sleep -->
 	</option>
 	<option id="15064" name="o_s_52_2u_24">
@@ -261,23 +261,23 @@
 		<attack_skill id="3085" level="3" chance="1.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="15065" name="o_s_52_2u_25">
-		<!-- Effect: During a critical attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a critical attack, has a chance of blocking the target's physical/ magic skills -->
 		<critical_skill id="3122" level="3" chance="5.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15066" name="o_s_52_2u_26">
-		<!-- Effect: During a critical attack, has a chance of burning up the target's MP. -->
+		<!-- Chance: Instantly burns up the target's MP after a critical attack. -->
 		<critical_skill id="3110" level="3" chance="5.0" /> <!-- Item Skill: Mana Burn -->
 	</option>
 	<option id="15067" name="o_s_52_2u_27">
-		<!-- Effect: During a critical attack, has a chance of inflicting paralysis on the target. -->
+		<!-- Chance: Instantly paralyzes the target after a critical attack. -->
 		<critical_skill id="3116" level="3" chance="5.0" /> <!-- Item Skill: Paralyze -->
 	</option>
 	<option id="15068" name="o_s_52_2u_28">
-		<!-- Effect: During a critical attack, has a chance of blocking the target's magic skills. -->
+		<!-- Chance: Instantly prevents the target from using M. skills after a critical attack. -->
 		<critical_skill id="3121" level="3" chance="5.0" /> <!-- Item Skill: Silence -->
 	</option>
 	<option id="15069" name="o_s_52_2u_29">
-		<!-- Effect: During a critical attack, has a chance of inflicting sleep on the target. The target cannot be affected by any additional sleep attacks while the effect lasts. -->
+		<!-- Chance: Instantly puts the target to sleep after a critical attack. The target cannot be affected by any sleep attacks while the effect is active. -->
 		<critical_skill id="3115" level="3" chance="5.0" /> <!-- Item Skill: Sleep -->
 	</option>
 	<option id="15070" name="o_s_52_2u_30">
@@ -285,11 +285,11 @@
 		<critical_skill id="3113" level="3" chance="5.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="15071" name="o_s_52_2u_31">
-		<!-- Effect: Has a chance of blocking all of the attacking target's physical/magic skills. -->
+		<!-- Chance: A chance to prevent the target from using P./ M. skills after receiving damage. -->
 		<passive_skill id="3237" level="3" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15072" name="o_s_52_2u_32">
-		<!-- Effect: Has a chance of inflicting fear on the attacking target and causing him to flee. -->
+		<!-- Chance: A chance to inflict fear on the target after receiving damage. -->
 		<passive_skill id="3233" level="3" /> <!-- Item Skill: Fear -->
 	</option>
 	<option id="15073" name="o_s_52_2u_33">
@@ -301,11 +301,11 @@
 		<passive_skill id="3210" level="3" /> <!-- Item Skill: Recharge -->
 	</option>
 	<option id="15075" name="o_s_52_2u_35">
-		<!-- Effect: Has a chance of inflicting paralysis on the attacking target. -->
+		<!-- Chance: A chance to paralyze the target after receiving damage. -->
 		<passive_skill id="3231" level="3" /> <!-- Item Skill: Paralyze -->
 	</option>
 	<option id="15076" name="o_s_52_2u_36">
-		<!-- Effect: Has a chance of blocking magic skills of the attacking target. -->
+		<!-- Chance: A chance to prevent the target from using M. skills after receiving damage. -->
 		<passive_skill id="3236" level="3" /> <!-- Item Skill: Silence -->
 	</option>
 	<option id="15077" name="o_s_52_2u_37">
@@ -317,7 +317,7 @@
 		<passive_skill id="3232" level="3" /> <!-- Item Skill: Medusa -->
 	</option>
 	<option id="15079" name="o_s_52_2u_39">
-		<!-- Effect: During a magic attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a magic attack, has a chance of blocking the target's physical/ magic skills -->
 		<magic_skill id="3107" level="3" chance="2.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15080" name="o_s_52_2u_40">
@@ -333,7 +333,7 @@
 		<magic_skill id="3106" level="3" chance="2.0" /> <!-- Item Skill: Silence -->
 	</option>
 	<option id="15083" name="o_s_52_2u_43">
-		<!-- Effect: During a magic attack, has a chance of inflicting sleep on the target. The target cannot be affected by any additional sleep attacks while the effect lasts. -->
+		<!-- Chance: Instantly puts the target to sleep after a magical attack. The target cannot be affected by any sleep attacks while the effect is active. -->
 		<magic_skill id="3100" level="3" chance="2.0" /> <!-- Item Skill: Sleep -->
 	</option>
 	<option id="15084" name="o_s_52_2u_44">
@@ -341,7 +341,7 @@
 		<magic_skill id="3098" level="3" chance="2.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="15085" name="o_s_52_2u_45">
-		<!-- Passive: Increases Evasion. -->
+		<!-- Item skill: Increases Evasion. -->
 		<passive_skill id="3247" level="3" /> <!-- Item Skill: Agility -->
 	</option>
 	<option id="15086" name="o_s_52_2u_46">
@@ -385,19 +385,19 @@
 		<active_skill id="3203" level="1" /> <!-- Item Skill: Mystery Skill -->
 	</option>
 	<option id="15096" name="o_s_55_2s_2">
-		<!-- Active: Temporarily increases lung capacity. -->
+		<!-- Active: Increases thorax size temporarily. -->
 		<active_skill id="3143" level="4" /> <!-- Item Skill: Eva's Kiss -->
 	</option>
 	<option id="15097" name="o_s_55_2s_3">
-		<!-- Active: Temporarily increases the height from which you can jump without sustaining damage. -->
+		<!-- Active: Increases the height from which you can jump without sustaining damage temporarily. -->
 		<active_skill id="3144" level="4" /> <!-- Item Skill: Acrobatics -->
 	</option>
 	<option id="15098" name="o_s_55_2s_4">
-		<!-- Active: Temporarily increases resistance to damage from falling. -->
+		<!-- Active: Temporarily increases Resistance to damage from falling. -->
 		<active_skill id="3145" level="4" /> <!-- Item Skill: Iron Body -->
 	</option>
 	<option id="15099" name="o_s_55_2s_5">
-		<!-- Active: Ignites a firecracker. -->
+		<!-- Active: Ignites a Firecracker. -->
 		<active_skill id="3156" level="1" /> <!-- Item Skill: Firecracker -->
 	</option>
 </list>

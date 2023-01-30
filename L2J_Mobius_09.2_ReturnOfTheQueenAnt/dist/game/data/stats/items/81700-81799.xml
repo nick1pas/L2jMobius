@@ -589,6 +589,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81743" name="Soul Crystal Box Lv. 6" additionalName="Event" type="EtcItem">
 		<!-- Double-click to obtain Kain's, Mermoden's, Leona's, Pantheon's, or Lionel's Soul Crystal Lv. 6. -->
@@ -597,6 +598,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81744" name="Shining Artifact Pack" type="EtcItem">
 		<!-- Artifact Crystal Pack. Double click to obtain a Artifact Crystal and, with a certain chance, a rare item. -->
@@ -605,6 +607,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81745" name="+1 Shining Artifact Pack" additionalName="Balance" type="EtcItem">
 		<!-- Double-click to obtain a balance artifact enchanted to +1. -->
@@ -777,6 +780,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81754" name="Aden Unity Support Box" additionalName="Lv. 1" type="EtcItem">
 		<!-- A gift box prepared by Anhel to unite Aden warriors. Double-click to receive a large amount of supplies. -->
@@ -787,6 +791,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81755" name="Aden Unity Support Box" additionalName="Lv. 2" type="EtcItem">
 		<!-- A gift box prepared by Anhel to unite Aden warriors. Double-click to receive a large amount of supplies. -->
@@ -797,6 +802,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81756" name="Aden Unity Support Box" additionalName="Lv. 3" type="EtcItem">
 		<!-- A gift box prepared by Anhel to unite Aden warriors. Double-click to receive a Krishna Weapon or Leviathan Armor with a certain chance as well as a large amount of supplies. -->
@@ -807,6 +813,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81757" name="Water Dragon's Scroll Bundle" type="EtcItem">
 		<!-- A bundle of scroll used by the warriors of Water Dragon's Legion that live in the Corroded Fields. Double-click to randomly receive a PA Scroll of Storm. -->
@@ -817,9 +824,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<set name="is_freightable" val="false" />
-		<set name="is_private_storeable" val="true" />
-		<set name="is_clan_depositable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
@@ -1014,6 +1018,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81772" name="Soulshot/ Spiritshot Ticket" additionalName="Event" type="EtcItem">
 		<!-- Can be exchanged by the Larra for Soulshots and Blessed Spiritshots. -->
@@ -1024,6 +1029,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81773" name="Beach Swimsuit" type="Armor">
 		<!-- Swimsuit for the beach. Note! Displayed incorrectly on Ertheia. -->
@@ -1036,8 +1042,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81774" name="Alluring Swimsuit" type="Armor">
 		<!-- Alluring swimsuit with exquisite prints. Note! Displayed incorrectly on Ertheia. -->
@@ -1050,8 +1054,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81775" name="Seductive Swimsuit" type="Armor">
 		<!-- Seductive swimsuit with exquisite prints. Note! Displayed incorrectly on Ertheia. -->
@@ -1064,8 +1066,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81776" name="Appearance Stone: Beach Swimsuit" additionalName="Event" type="EtcItem">
 		<!-- Changes the appearance of the entire armor to that of Beach Swimsuit. Modified armor can be restored to its original appearance with Restoration Stone. -->
@@ -1113,6 +1113,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 	</item>
 	<item id="81780" name="Baby Shark Doo Doo Doo Outfit" type="Armor">
 		<!-- Baby Shark Doo Doo Doo Outfit -->
@@ -1125,8 +1126,6 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
-		<stats>
-		</stats>
 	</item>
 	<item id="81781" name="Appearance Stone: Baby Shark Doo Doo Doo" additionalName="Event" type="EtcItem">
 		<!-- Changes the appearance of the entire armor to that of Baby Shark Doo Doo Doo Outfit. Modified armor can be restored to its original appearance with Restoration Stone. -->

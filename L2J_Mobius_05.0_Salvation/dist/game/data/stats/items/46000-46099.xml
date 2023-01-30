@@ -294,12 +294,17 @@
 		<set name="is_depositable" val="false" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
-		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="weight" val="20" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
 		<set name="handler" val="ItemSkills" />
+		<cond msgId="113" addName="1">
+			<and>
+				<player subclass="false" />
+				<player level="100" />
+			</and>
+		</cond>
 		<skills>
 			<skill id="18266" level="1" /> <!-- Fate of the Exalted -->
 		</skills>
@@ -313,6 +318,9 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<skills>
+			<skill id="18378" level="1" /> <!-- Awakened Hero's Olympiad Gift -->
+		</skills>
 	</item>
 	<item id="46038" name="Indomitable Hero's Olympiad Gift" type="EtcItem">
 		<!-- An Olympiad gift for heroes who have participated in 50 Olympiad matches. -->
@@ -322,6 +330,9 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<skills>
+			<skill id="18379" level="1" /> <!-- Indomitable Hero's Olympiad Gift -->
+		</skills>
 	</item>
 	<item id="46039" name="PA Talisman - STR" additionalName="PA exclusive" type="Armor">
 		<!-- STR +5 when wearing the Talisman. Effect does not stack with identical ones. -->
@@ -335,6 +346,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18380" level="1" /> <!-- Player Commendation - Talisman - STR -->
@@ -352,6 +364,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18381" level="1" /> <!-- Player Commendation - Talisman - INT -->
@@ -369,6 +382,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18382" level="1" /> <!-- Player Commendation - Talisman - DEX -->
@@ -386,6 +400,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18383" level="1" /> <!-- Player Commendation - Talisman - WIT -->
@@ -403,6 +418,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18384" level="1" /> <!-- Player Commendation - Talisman - CON -->
@@ -420,6 +436,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18385" level="1" /> <!-- Player Commendation - Talisman - MEN -->
@@ -437,6 +454,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18386" level="1" /> <!-- Player Commendation - Talisman - Attack Attribute -->
@@ -454,6 +472,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18387" level="1" /> <!-- Player Commendation - Talisman - Fire Resistance -->
@@ -471,6 +490,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18388" level="1" /> <!-- Player Commendation - Talisman - Water Resistance -->
@@ -488,6 +508,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18389" level="1" /> <!-- Player Commendation - Talisman - Wind Resistance -->
@@ -505,6 +526,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18390" level="1" /> <!-- Player Commendation - Talisman - Earth Resistance -->
@@ -522,6 +544,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18391" level="1" /> <!-- Player Commendation - Talisman - Holy Resistance -->
@@ -539,6 +562,7 @@
 		<set name="equip_reuse_delay" val="30" />
 		<set name="immediate_effect" val="true" />
 		<set name="weight" val="150" />
+		<set name="duration" val="60" />
 		<set name="material" val="GOLD" />
 		<skills>
 			<skill id="18392" level="1" /> <!-- Player Commendation - Talisman - Dark Resistance -->
@@ -759,6 +783,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46065" name="Dimensional Gludin Badge" type="EtcItem">
 		<!-- Badge bearing the mark of Gludin Village. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -769,6 +794,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46066" name="Dimensional Giran Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Giran. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -779,6 +805,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46067" name="Dimensional Oren Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Oren. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -789,6 +816,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46068" name="Dimensional Aden Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Aden. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -799,6 +827,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46069" name="Dimensional Gainak Badge" type="EtcItem">
 		<!-- Badge bearing the mark of Gainak. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -809,6 +838,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46070" name="Dimensional Goddard Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Goddard. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -819,6 +849,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46071" name="Dimensional Schuttgart Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Schuttgart. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -829,6 +860,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46072" name="Bloody Helios Enhancement Stone Coupon" type="EtcItem">
 		<!-- A coupon given to one of the warriors who participated in the Dimensional Raid and had top scores. Exchange it for a Bloody Helios Enhancement Stone through Merlot in Hunters' Village. -->
@@ -851,32 +883,47 @@
 	<item id="46074" name="Dimensional Elcyum Pack" type="EtcItem">
 		<!-- Double-click to get 1 of the following: Elcyum Powder, Elcyum Crystal, or Elcyum. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18393" level="1" /> <!-- Dimensional Elcyum Pack -->
+		</skills>
 	</item>
 	<item id="46075" name="Dimensional Augment Pack" type="EtcItem">
 		<!-- Double-click to get 1 of the following: High-grade Spirit Stone, Top-grade Spirit Stone, Spirit Stone: Hair Accessory, Life Stone Instilled with Giants' Power. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18394" level="1" /> <!-- Dimensional Augment Pack -->
+		</skills>
 	</item>
 	<item id="46076" name="Dimensional Enhancement Pack" type="EtcItem">
 		<!-- Double-click to get 1 of the following: Scroll: Enchant Armor (R-grade), Lucky Enchant Stone: Armor (S-grade), Scroll: Enchant Weapon (R-grade), Blessed Scroll: Enchant Armor (R-grade), Lucky Enchant Stone: Armor (R-grade), Lucky Enchant Stone: Weapon (S-grade), Blessed Scroll: Enchant Weapon (R-grade), or Lucky Enchant Stone: Weapon (R-grade). -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18395" level="1" /> <!-- Dimensional Enhancement Pack -->
+		</skills>
 	</item>
 	<item id="46077" name="Lucky Enchant Stone: Weapon (R-grade)" type="EtcItem">
 		<!-- Enchant success rate +10% for weapons (R-grade). Only for items enchanted between +3 and +9. -->

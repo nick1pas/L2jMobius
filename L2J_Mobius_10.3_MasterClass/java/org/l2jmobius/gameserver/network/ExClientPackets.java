@@ -160,6 +160,8 @@ import org.l2jmobius.gameserver.network.clientpackets.primeshop.RequestBRPresent
 import org.l2jmobius.gameserver.network.clientpackets.primeshop.RequestBRProductInfo;
 import org.l2jmobius.gameserver.network.clientpackets.primeshop.RequestBRProductList;
 import org.l2jmobius.gameserver.network.clientpackets.primeshop.RequestBRRecentProductList;
+import org.l2jmobius.gameserver.network.clientpackets.prison.RequestPrisonUserDonation;
+import org.l2jmobius.gameserver.network.clientpackets.prison.RequestPrisonUserInfo;
 import org.l2jmobius.gameserver.network.clientpackets.raidbossinfo.RequestRaidBossSpawnInfo;
 import org.l2jmobius.gameserver.network.clientpackets.raidbossinfo.RequestRaidServerInfo;
 import org.l2jmobius.gameserver.network.clientpackets.ranking.RequestOlympiadHeroAndLegendInfo;
@@ -813,8 +815,8 @@ public enum ExClientPackets
 	EX_GOODS_GIFT_REFUSE(0x258, null, ConnectionState.IN_GAME),
 	EX_WORLD_EXCHANGE_AVERAGE_PRICE(0x259, ExWorldExchangeAveragePrice::new, ConnectionState.IN_GAME),
 	EX_WORLD_EXCHANGE_TOTAL_LIST(0x25A, ExWorldExchangeTotalList::new, ConnectionState.IN_GAME),
-	EX_PRISON_USER_INFO(0x25B, null, ConnectionState.IN_GAME),
-	EX_PRISON_USER_DONATION(0x25C, null, ConnectionState.IN_GAME),
+	EX_PRISON_USER_INFO(0x25B, RequestPrisonUserInfo::new, ConnectionState.IN_GAME),
+	EX_PRISON_USER_DONATION(0x25C, RequestPrisonUserDonation::new, ConnectionState.IN_GAME),
 	EX_MAX(0x25D, null, ConnectionState.IN_GAME);
 	
 	public static final ExClientPackets[] PACKET_ARRAY;

@@ -21,6 +21,7 @@ import org.l2jmobius.commons.network.ReadablePacket;
 import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.data.sql.ClanHallTable;
 import org.l2jmobius.gameserver.data.xml.MapRegionData;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
 import org.l2jmobius.gameserver.instancemanager.CastleManager;
 import org.l2jmobius.gameserver.instancemanager.FortManager;
@@ -35,7 +36,6 @@ import org.l2jmobius.gameserver.model.siege.SiegeClan;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.serverpackets.Revive;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
 /**
@@ -146,7 +146,7 @@ public class RequestRestartPoint implements ClientPacket
 							{
 								// cheater
 								_player.sendMessage("You may not use this respawn point!");
-								Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalPlayerAction.PUNISH_KICK);
+								Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalActionPunishmentType.KICK);
 								return;
 							}
 							loc = MapRegionData.getInstance().getTeleToLocation(_player, TeleportWhereType.CLANHALL);
@@ -177,7 +177,7 @@ public class RequestRestartPoint implements ClientPacket
 						{
 							// cheater
 							_player.sendMessage("You may not use this respawn point!");
-							Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalPlayerAction.PUNISH_KICK);
+							Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalActionPunishmentType.KICK);
 							return;
 						}
 						if (CastleManager.getInstance().getCastleByOwner(_player.getClan()) != null)
@@ -208,7 +208,7 @@ public class RequestRestartPoint implements ClientPacket
 						{
 							// cheater
 							_player.sendMessage("You may not use this respawn point!");
-							Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalPlayerAction.PUNISH_KICK);
+							Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalActionPunishmentType.KICK);
 							return;
 						}
 						loc = MapRegionData.getInstance().getTeleToLocation(_player, TeleportWhereType.SIEGEFLAG);
@@ -220,7 +220,7 @@ public class RequestRestartPoint implements ClientPacket
 						{
 							// cheater
 							_player.sendMessage("You may not use this respawn point!");
-							Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalPlayerAction.PUNISH_KICK);
+							Util.handleIllegalPlayerAction(_player, "Player " + _player.getName() + " used respawn cheat.", IllegalActionPunishmentType.KICK);
 							return;
 						}
 						loc = new Location(_player.getX(), _player.getY(), _player.getZ()); // spawn them where they died

@@ -12954,7 +12954,6 @@ public class Player extends Playable
 		if (isInBoat())
 		{
 			setXYZ(getBoat().getLocation());
-			
 			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 			player.sendPacket(new GetOnVehicle(getObjectId(), getBoat().getObjectId(), _inVehiclePosition));
 		}
@@ -13023,6 +13022,12 @@ public class Player extends Playable
 				player.sendPacket(new RecipeShopMsg(this));
 				break;
 			}
+		}
+		
+		// Required for showing mount transformations to players that just entered the game.
+		if (isTransformed())
+		{
+			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 		}
 	}
 	
@@ -15820,7 +15825,7 @@ public class Player extends Playable
 			final String variable = PlayerVariables.MISSION_LEVEL_PROGRESS + MissionLevel.getInstance().getCurrentSeason();
 			if (getVariables().hasVariable(variable))
 			{
-				_missionLevelProgress = new MissionLevelPlayerDataHolder(variable);
+				_missionLevelProgress = new MissionLevelPlayerDataHolder(getVariables().getString(variable));
 			}
 			else
 			{

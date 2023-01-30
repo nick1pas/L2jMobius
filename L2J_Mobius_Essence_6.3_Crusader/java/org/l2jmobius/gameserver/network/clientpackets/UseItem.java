@@ -26,7 +26,9 @@ import org.l2jmobius.gameserver.ai.CtrlEvent;
 import org.l2jmobius.gameserver.ai.CtrlIntention;
 import org.l2jmobius.gameserver.ai.NextAction;
 import org.l2jmobius.gameserver.data.xml.CategoryData;
+import org.l2jmobius.gameserver.data.xml.EnchantItemGroupsData;
 import org.l2jmobius.gameserver.enums.CategoryType;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.enums.ItemSkillType;
 import org.l2jmobius.gameserver.enums.PrivateStoreType;
 import org.l2jmobius.gameserver.enums.Race;
@@ -55,10 +57,12 @@ import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.ExPutIntensiveResultForVariationMake;
+import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
 import org.l2jmobius.gameserver.network.serverpackets.ExUseSharedGroupItem;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.network.serverpackets.ensoul.ExShowEnsoulWindow;
 import org.l2jmobius.gameserver.network.serverpackets.variation.ExShowVariationMakeWindow;
+import org.l2jmobius.gameserver.util.Util;
 
 public class UseItem implements ClientPacket
 {
@@ -220,6 +224,13 @@ public class UseItem implements ClientPacket
 				return;
 			}
 			
+			// Prevent Death Knight players to equip other weapons.
+			if (item.isWeapon() && (CategoryData.getInstance().isInCategory(CategoryType.DEATH_KNIGHT_ALL_CLASS, player.getClassId().getId())) && ((item.getWeaponItem().getItemType() != WeaponType.SWORD) || (item.getTemplate().getBodyPart() == ItemTemplate.SLOT_LR_HAND)))
+			{
+				player.sendPacket(SystemMessageId.YOU_DO_NOT_MEET_THE_REQUIRED_CONDITION_TO_EQUIP_THAT_ITEM);
+				return;
+			}
+			
 			// Prevent equip shields for Death Knight, Sylph or Vanguard players.
 			if (item.isArmor() && (item.getArmorItem().getItemType() == ArmorType.SHIELD) && (CategoryData.getInstance().isInCategory(CategoryType.DEATH_KNIGHT_ALL_CLASS, player.getClassId().getId()) || CategoryData.getInstance().isInCategory(CategoryType.SYLPH_ALL_CLASS, player.getClassId().getId()) || CategoryData.getInstance().isInCategory(CategoryType.VANGUARD_ALL_CLASS, player.getClassId().getId())))
 			{
@@ -296,9 +307,28 @@ public class UseItem implements ClientPacket
 					return;
 				}
 			}
+			
+			// Over-enchant protection.
+			if (Config.OVER_ENCHANT_PROTECTION && !player.isGM() //
+				&& ((item.isWeapon() && (item.getEnchantLevel() > EnchantItemGroupsData.getInstance().getMaxWeaponEnchant())) //
+					|| ((item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY) && (item.getEnchantLevel() > EnchantItemGroupsData.getInstance().getMaxAccessoryEnchant())) //
+					|| (item.getEnchantLevel() > EnchantItemGroupsData.getInstance().getMaxArmorEnchant())))
+			{
+				player.getInventory().destroyItem("Over-enchant protection", item, player, null);
+				PacketLogger.info("Over-enchanted " + item + " has been removed from " + player);
+				if (Config.OVER_ENCHANT_PUNISHMENT != IllegalActionPunishmentType.NONE)
+				{
+					player.sendMessage("[Server]: You have over-enchanted items!");
+					player.sendMessage("[Server]: Respect our server rules.");
+					player.sendPacket(new ExShowScreenMessage("You have over-enchanted items!", 6000));
+					Util.handleIllegalPlayerAction(player, player.getName() + " has over-enchanted items.", Config.OVER_ENCHANT_PUNISHMENT);
+				}
+				return;
+			}
+			
 			if (player.isCastingNow())
 			{
-				// Create and Bind the next action to the AI
+				// Create and Bind the next action to the AI.
 				player.getAI().setNextAction(new NextAction(CtrlEvent.EVT_FINISH_CASTING, CtrlIntention.AI_INTENTION_CAST, () -> player.useEquippableItem(item, true)));
 			}
 			else // Equip or unEquip.

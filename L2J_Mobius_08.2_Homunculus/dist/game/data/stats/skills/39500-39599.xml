@@ -68,8 +68,26 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="39510" toLevel="1" name="Lucky Pig Special Vitality Tonic">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>80806</itemConsumeId> <!-- Lucky Pig Special Vitality Tonic -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
-		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value>140000</value>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39511" toLevel="1" name="Lucky Pig Honey Buff">
 		<!-- For $s1, acquired XP/ SP +$s2, XP/SP gain in Vitality state by $s3, P. Atk./ M. Atk. by $s4, P. Def./ M. Def. by $s5, Max HP by $s6, Max MP by $s7, Max CP by $s8, and Speed by $s9. -->
@@ -364,8 +382,26 @@
 		<reuseDelay>5000</reuseDelay>
 	</skill>
 	<skill id="39523" toLevel="1" name="Golden Pig's Medium Vitality Tonic">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>80833</itemConsumeId> <!-- Golden Pig's Medium Vitality Tonic -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
-		<reuseDelay>5000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value>70000</value>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39524" toLevel="1" name="Jackpot Wish Lucky Pouch">
 		<operateType>A1</operateType>
@@ -647,7 +683,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>100</minLevel>
-				<maxLevel>120</maxLevel>
+				<maxLevel>130</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -670,7 +706,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>105</minLevel>
-				<maxLevel>120</maxLevel>
+				<maxLevel>130</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -698,7 +734,26 @@
 		<reuseDelay>1000</reuseDelay>
 	</skill>
 	<skill id="39547" toLevel="1" name="Emperor's Vitality Tonic">
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>80920</itemConsumeId> <!-- Emperor's Vitality Tonic(Event) -->
+		<magicLevel>1</magicLevel>
+		<staticReuse>true</staticReuse>
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value>35000</value>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39548" toLevel="1" name="Lindvior's Treasure Chest">
 		<operateType>A1</operateType>
@@ -860,7 +915,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>107</minLevel>
-				<maxLevel>120</maxLevel>
+				<maxLevel>130</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -895,7 +950,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>100</minLevel>
-				<maxLevel>120</maxLevel>
+				<maxLevel>130</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -918,7 +973,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>105</minLevel>
-				<maxLevel>120</maxLevel>
+				<maxLevel>130</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -942,7 +997,7 @@
 		<conditions>
 			<condition name="CheckLevel">
 				<minLevel>107</minLevel>
-				<maxLevel>120</maxLevel>
+				<maxLevel>130</maxLevel>
 			</condition>
 		</conditions>
 		<effects>
@@ -1051,13 +1106,14 @@
 		<hitCancelTime>0</hitCancelTime>
 		<magicLevel>1</magicLevel>
 		<staticReuse>true</staticReuse>
-		<isMagic>2</isMagic>
-		<itemConsumeId>81053</itemConsumeId>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeId>81053</itemConsumeId> <!-- Vitality -->
 		<itemConsumeCount>1</itemConsumeCount>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-		<itemConsumeCount>1</itemConsumeCount>
-		<itemConsumeId>15626</itemConsumeId> <!-- Vitality -->
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
 		<effects>
 			<effect name="VitalityPointUp">
 				<value>17500</value>

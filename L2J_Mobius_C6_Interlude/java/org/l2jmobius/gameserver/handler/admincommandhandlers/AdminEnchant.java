@@ -20,13 +20,12 @@ import org.l2jmobius.Config;
 import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.itemcontainer.Inventory;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.util.BuilderUtil;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
-import org.l2jmobius.gameserver.util.Util;
 
 /**
  * This class handles following admin commands: - enchant_armor
@@ -155,7 +154,7 @@ public class AdminEnchant implements IAdminCommandHandler
 	
 	private void setEnchant(Player activeChar, int ench, int slot)
 	{
-		// get the target
+		// Get the target.
 		WorldObject target = activeChar.getTarget();
 		if (target == null)
 		{
@@ -173,19 +172,17 @@ public class AdminEnchant implements IAdminCommandHandler
 			return;
 		}
 		
-		// now we need to find the equipped weapon of the targeted character...
-		int curEnchant = 0; // display purposes only
+		// Now we need to find the equipped weapon of the targeted character...
 		Item itemInstance = null;
 		
-		// only attempt to enchant if there is a weapon equipped
+		// Only attempt to enchant if there is a weapon equipped.
 		Item paperdollInstance = player.getInventory().getPaperdollItem(slot);
 		if ((paperdollInstance != null) && (paperdollInstance.getEquipSlot() == slot))
 		{
 			itemInstance = paperdollInstance;
 		}
-		else
+		else // For bows and double handed weapons.
 		{
-			// for bows and double handed weapons
 			paperdollInstance = player.getInventory().getPaperdollItem(Inventory.PAPERDOLL_LRHAND);
 			if ((paperdollInstance != null) && (paperdollInstance.getEquipSlot() == Inventory.PAPERDOLL_LRHAND))
 			{
@@ -195,34 +192,47 @@ public class AdminEnchant implements IAdminCommandHandler
 		
 		if (itemInstance != null)
 		{
-			/**
-			 * Protection against Corrupt GMs This protection will ban both GM and Edited char if a GM tries to enchant a NON GM player above the value specified in the file: other.ini (GMOverEnchant = XX)
-			 */
-			curEnchant = itemInstance.getEnchantLevel();
-			if ((Config.GM_OVER_ENCHANT != 0) && (ench >= Config.GM_OVER_ENCHANT) && !player.isGM())
+			final int curEnchant = itemInstance.getEnchantLevel();
+			
+			// Set enchant value.
+			int enchant = ench;
+			if (Config.OVER_ENCHANT_PROTECTION && !player.isGM())
 			{
-				player.sendMessage("A GM tried to overenchant you. You will both be banned.");
-				Util.handleIllegalPlayerAction(player, "The player " + player.getName() + " has been edited. BAN!", IllegalPlayerAction.PUNISH_KICKBAN);
-				BuilderUtil.sendSysMessage(activeChar, "You tried to overenchant somebody. You will both be banned.");
-				Util.handleIllegalPlayerAction(activeChar, "The GM " + activeChar.getName() + " has overenchanted the player " + player.getName() + ". BAN!", IllegalPlayerAction.PUNISH_KICKBAN);
+				if (itemInstance.isWeapon())
+				{
+					if (enchant > Config.ENCHANT_WEAPON_MAX)
+					{
+						BuilderUtil.sendSysMessage(activeChar, "Maximum enchantment for weapon items is " + Config.ENCHANT_WEAPON_MAX + ".");
+						enchant = Config.ENCHANT_WEAPON_MAX;
+					}
+				}
+				else if (itemInstance.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY)
+				{
+					if (enchant > Config.ENCHANT_JEWELRY_MAX)
+					{
+						BuilderUtil.sendSysMessage(activeChar, "Maximum enchantment for accessory items is " + Config.ENCHANT_JEWELRY_MAX + ".");
+						enchant = Config.ENCHANT_JEWELRY_MAX;
+					}
+				}
+				else if (enchant > Config.ENCHANT_ARMOR_MAX)
+				{
+					BuilderUtil.sendSysMessage(activeChar, "Maximum enchantment for armor items is " + Config.ENCHANT_ARMOR_MAX + ".");
+					enchant = Config.ENCHANT_ARMOR_MAX;
+				}
 			}
-			else
-			{
-				// set enchant value
-				player.getInventory().unEquipItemInSlotAndRecord(itemInstance.getEquipSlot());
-				itemInstance.setEnchantLevel(ench);
-				player.getInventory().equipItemAndRecord(itemInstance);
-				
-				// send packets
-				final InventoryUpdate iu = new InventoryUpdate();
-				iu.addModifiedItem(itemInstance);
-				player.sendPacket(iu);
-				player.broadcastUserInfo();
-				
-				// informations
-				BuilderUtil.sendSysMessage(activeChar, "Changed enchantment of " + player.getName() + "'s " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + ench + ".");
-				player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + ench + ".");
-			}
+			player.getInventory().unEquipItemInSlotAndRecord(itemInstance.getEquipSlot());
+			itemInstance.setEnchantLevel(enchant);
+			player.getInventory().equipItemAndRecord(itemInstance);
+			
+			// Send packets.
+			final InventoryUpdate iu = new InventoryUpdate();
+			iu.addModifiedItem(itemInstance);
+			player.sendPacket(iu);
+			player.broadcastUserInfo();
+			
+			// Information.
+			BuilderUtil.sendSysMessage(activeChar, "Changed enchantment of " + player.getName() + "'s " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + enchant + ".");
+			player.sendMessage("Admin has changed the enchantment of your " + itemInstance.getTemplate().getName() + " from " + curEnchant + " to " + enchant + ".");
 		}
 	}
 	

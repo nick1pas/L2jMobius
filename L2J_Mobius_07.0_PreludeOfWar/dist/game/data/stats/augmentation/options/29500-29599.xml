@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/optionsData.xsd">
 	<option id="29500" name="o_s_85_2u_23">
 		<!-- Effect: During a physical attack, momentarily inflicts sleep on the target. The target cannot be afflicted with any additional sleep attacks while the effect lasts. -->
@@ -9,7 +9,7 @@
 		<attack_skill id="3085" level="10" chance="1.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="29502" name="o_s_85_2u_25">
-		<!-- Effect: During a critical attack, momentarily blocks the target's physical/magic skills. -->
+		<!-- Effect: During a critical attack, momentarily blocks the target's physical/ magic skills. -->
 		<critical_skill id="3122" level="10" chance="5.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="29503" name="o_s_85_2u_26">
@@ -33,7 +33,7 @@
 		<critical_skill id="3113" level="10" chance="5.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="29508" name="o_s_85_2u_31">
-		<!-- Effect: Has a chance of blocking all of the physical/magic skills of the target who gave damage. -->
+		<!-- Chance: A chance to prevent the target from using P./ M. skills after receiving damage. -->
 		<passive_skill id="3237" level="10" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="29509" name="o_s_85_2u_32">
@@ -53,7 +53,7 @@
 		<passive_skill id="3231" level="10" /> <!-- Item Skill: Paralyze -->
 	</option>
 	<option id="29513" name="o_s_85_2u_36">
-		<!-- Effect: Has a chance of blocking all the magic skills of the target who gave damage. -->
+		<!-- Chance: A chance to prevent the target from using M. skills after receiving damage. -->
 		<passive_skill id="3236" level="10" /> <!-- Item Skill: Silence -->
 	</option>
 	<option id="29514" name="o_s_85_2u_37">
@@ -65,7 +65,7 @@
 		<passive_skill id="3232" level="10" /> <!-- Item Skill: Medusa -->
 	</option>
 	<option id="29516" name="o_s_85_2u_39">
-		<!-- Effect: During a magic attack, momentarily blocks the target's physical/magic skills. -->
+		<!-- Effect: During a magic attack, momentarily blocks the target's physical/ magic skills. -->
 		<magic_skill id="3107" level="10" chance="2.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="29517" name="o_s_85_2u_40">
@@ -93,7 +93,7 @@
 		<passive_skill id="3258" level="3" /> <!-- Item Skill: Clarity -->
 	</option>
 	<option id="29523" name="o_s_85_2u_46">
-		<!-- Passive: Increases Evasion. -->
+		<!-- Item skill: Increases Evasion. -->
 		<passive_skill id="3247" level="13" /> <!-- Item Skill: Agility -->
 	</option>
 	<option id="29524" name="o_s_85_2u_47">
@@ -121,7 +121,7 @@
 		<passive_skill id="3255" level="6" /> <!-- Item Skill: Skill Clarity -->
 	</option>
 	<option id="29530" name="o_s_85_2u_53">
-		<!-- Passive: Decreases MP consumption for song/dance skills. -->
+		<!-- Passive: Decreases MP consumption for song/ dance skills. -->
 		<passive_skill id="3257" level="3" /> <!-- Item Skill: Music Clarity -->
 	</option>
 	<option id="29531" name="o_s_85_2u_54">
@@ -169,7 +169,7 @@
 		<attack_skill id="3083" level="14" chance="1.0" /> <!-- Item Skill: Slow (Attack Active) -->
 	</option>
 	<option id="29542" name="o_s_95_2s_11">
-		<!-- Effect: During a critical attack, momentarily decreases the target's aggression for oneself. -->
+		<!-- Chance: Temporarily decreases the target's aggression after a critical attack. -->
 		<critical_skill id="3109" level="14" chance="5.0" /> <!-- Item Skill: Aggression Down -->
 	</option>
 	<option id="29543" name="o_s_95_2s_12">
@@ -177,7 +177,7 @@
 		<critical_skill id="3108" level="14" chance="5.0" /> <!-- Item Skill: Aggression Up -->
 	</option>
 	<option id="29544" name="o_s_95_2s_13">
-		<!-- Effect: During a critical attack, momentarily decreases the target's Speed. -->
+		<!-- Chance: Instantly decreases the target's Speed after a critical attack. -->
 		<critical_skill id="3111" level="14" chance="5.0" /> <!-- Item Skill: Slow (Critical) -->
 	</option>
 	<option id="29545" name="o_s_95_2s_14">
@@ -318,7 +318,7 @@
 	</option>
 	<option id="29579" name="o_s_95_2r_31">
 		<!-- Active: Temporarily decreases the opponent's PvP P. Atk. -->
-		<active_skill id="3137" level="10" /> <!-- Item Skill: Duel Weakness -->
+		<active_skill id="3137" level="10" /> <!-- Item Skill: Weakness in Duel -->
 	</option>
 	<option id="29580" name="o_s_95_2r_32">
 		<!-- Active: Temporarily increases PvP P. Atk. -->

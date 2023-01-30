@@ -999,9 +999,8 @@
 		<abnormalTime>45</abnormalTime>
 		<operateType>A2</operateType>
 		<isMagic>2</isMagic>
-		<targetType>MY_PARTY</targetType>
+		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-		<affectObject>FRIEND</affectObject>
 		<hitTime>300</hitTime>
 		<coolTime>300</coolTime>
 		<reuseDelay>
@@ -1073,9 +1072,8 @@
 		</abnormalTime>
 		<operateType>A2</operateType>
 		<isMagic>2</isMagic>
-		<targetType>MY_PARTY</targetType>
+		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-		<affectObject>FRIEND</affectObject>
 		<hitTime>300</hitTime>
 		<coolTime>300</coolTime>
 		<reuseDelay>
@@ -1133,9 +1131,8 @@
 		<abnormalTime>45</abnormalTime>
 		<operateType>A2</operateType>
 		<isMagic>2</isMagic>
-		<targetType>MY_PARTY</targetType>
+		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
-		<affectObject>FRIEND</affectObject>
 		<hitTime>300</hitTime>
 		<coolTime>300</coolTime>
 		<reuseDelay>
@@ -1603,16 +1600,86 @@
 	</skill>
 	<skill id="28180" toLevel="1" name="Stable Cloak Enchantment Scroll">
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="28181" toLevel="1" name="High-grade Spirit Stone Pack - Legendary">
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>29170</itemConsumeId>
 		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
+		<hitCancelTime>0</hitCancelTime>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="29165" count="1" /> <!-- High-Grade Spirit Stone Ancient Kingdom -->
+					</item>
+					<item chance="20">
+						<item id="29166" count="1" /> <!-- High-Grade Spirit Stone Elmoreden -->
+					</item>
+					<item chance="20">
+						<item id="29167" count="1" /> <!-- High-Grade Spirit Stone Aden -->
+					</item>
+					<item chance="20">
+						<item id="29168" count="1" /> <!-- High-Grade Spirit Stone Elmore -->
+					</item>
+					<item chance="20">
+						<item id="29169" count="1" /> <!-- High-Grade Spirit Stone Ferios -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28182" toLevel="1" name="High-grade Spirit Stone Pack - Cloak">
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>29171</itemConsumeId>
 		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
+		<hitCancelTime>0</hitCancelTime>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="29165" count="1" /> <!-- High-Grade Spirit Stone Ancient Kingdom -->
+					</item>
+					<item chance="20">
+						<item id="29166" count="1" /> <!-- High-Grade Spirit Stone Elmoreden -->
+					</item>
+					<item chance="20">
+						<item id="29167" count="1" /> <!-- High-Grade Spirit Stone Aden -->
+					</item>
+					<item chance="20">
+						<item id="29168" count="1" /> <!-- High-Grade Spirit Stone Elmore -->
+					</item>
+					<item chance="20">
+						<item id="29169" count="1" /> <!-- High-Grade Spirit Stone Ferios -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28183" toLevel="1" name="Summon Agathion Mermaid">
 		<!-- Summons an agathion. -->

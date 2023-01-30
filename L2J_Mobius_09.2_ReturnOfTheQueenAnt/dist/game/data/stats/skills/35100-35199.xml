@@ -1182,7 +1182,7 @@
 						<item id="48212" count="1" /> <!-- Noble Circlet Upgrade Stone -->
 					</item>
 					<item chance="33.33">
-						<item id="48212" count="1" /> <!-- Noble Circlet Upgrade Stone -->
+						<item id="48213" count="1" /> <!-- Radiant Circlet Upgrade Stone -->
 					</item>
 					<item chance="33.33">
 						<item id="48215" count="1" /> <!-- Circlet Augmenting Stone -->
@@ -1216,7 +1216,7 @@
 						<item id="48212" count="1" /> <!-- Noble Circlet Upgrade Stone -->
 					</item>
 					<item chance="50">
-						<item id="48212" count="1" /> <!-- Noble Circlet Upgrade Stone -->
+						<item id="48213" count="1" /> <!-- Radiant Circlet Upgrade Stone -->
 					</item>
 				</items>
 			</effect>
@@ -1249,7 +1249,187 @@
 		<operateType>A1</operateType>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
-		<reuseDelay>500</reuseDelay>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>
+			<value level="1">48227</value> <!-- +8 Zodiac Agathion Charm Box -->
+			<value level="2">48508</value> <!-- +5 Zodiac Agathion Box -->
+			<value level="3">48509</value> <!-- +6 Zodiac Agathion Box -->
+			<value level="4">48510</value> <!-- +7 Zodiac Agathion Box -->
+		</itemConsumeId>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom" level="1">
+				<items>
+					<item chance="8.33">
+						<item id="48048" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Virgo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48049" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Capricorn Charm-->
+					</item>
+					<item chance="8.33">
+						<item id="48050" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Libra Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48051" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Aries Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48052" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Taurus Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48053" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Leo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48054" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Gemini Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48055" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Scorpio Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48056" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Aquarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48057" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Pisces Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48058" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Sagittarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48059" count="1" minEnchant="8" maxEnchant="8" /> <!-- +8 Agathion Cancer Charm -->
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="2">
+				<items>
+					<item chance="8.33">
+						<item id="48048" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Virgo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48049" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Capricorn Charm-->
+					</item>
+					<item chance="8.33">
+						<item id="48050" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Libra Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48051" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Aries Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48052" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Taurus Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48053" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Leo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48054" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Gemini Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48055" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Scorpio Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48056" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Aquarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48057" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Pisces Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48058" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Sagittarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48059" count="1" minEnchant="5" maxEnchant="5" /> <!-- +5 Agathion Cancer Charm -->
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="3">
+				<items>
+					<item chance="8.33">
+						<item id="48048" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Virgo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48049" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Capricorn Charm-->
+					</item>
+					<item chance="8.33">
+						<item id="48050" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Libra Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48051" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Aries Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48052" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Taurus Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48053" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Leo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48054" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Gemini Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48055" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Scorpio Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48056" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Aquarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48057" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Pisces Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48058" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Sagittarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48059" count="1" minEnchant="6" maxEnchant="6" /> <!-- +6 Agathion Cancer Charm -->
+					</item>
+				</items>
+			</effect>
+			<effect name="RestorationRandom" level="4">
+				<items>
+					<item chance="8.33">
+						<item id="48048" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Virgo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48049" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Capricorn Charm-->
+					</item>
+					<item chance="8.33">
+						<item id="48050" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Libra Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48051" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Aries Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48052" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Taurus Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48053" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Leo Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48054" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Gemini Charm -->
+					</item>
+					<item chance="8.33">
+						<item id="48055" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Scorpio Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48056" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Aquarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48057" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Pisces Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48058" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Sagittarius Charm -->
+					</item>
+					<item chance="8.34">
+						<item id="48059" count="1" minEnchant="7" maxEnchant="7" /> <!-- +7 Agathion Cancer Charm -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="35148" toLevel="1" name="Herphah's Bracelet">
 		<!-- Unlocks $s1 talisman slot(s). -->

@@ -324,6 +324,24 @@
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
+										<xs:element name="fortune" minOccurs="0">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="item" maxOccurs="unbounded" minOccurs="0">
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="xs:string">
+																	<xs:attribute type="xs:int" name="id" use="optional"/>
+																	<xs:attribute type="xs:long" name="min" use="optional"/>
+																	<xs:attribute type="xs:long" name="max" use="optional"/>
+																	<xs:attribute type="xs:double" name="chance" use="optional"/>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>

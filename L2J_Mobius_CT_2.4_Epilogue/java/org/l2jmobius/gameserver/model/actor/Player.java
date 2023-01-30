@@ -13105,7 +13105,6 @@ public class Player extends Playable
 		if (isInBoat())
 		{
 			setXYZ(getBoat().getLocation());
-			
 			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 			player.sendPacket(new ExBrExtraUserInfo(this));
 			player.sendPacket(new GetOnVehicle(getObjectId(), getBoat().getObjectId(), _inVehiclePosition));
@@ -13113,7 +13112,6 @@ public class Player extends Playable
 		else if (isInAirShip())
 		{
 			setXYZ(getAirShip().getLocation());
-			
 			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 			player.sendPacket(new ExBrExtraUserInfo(this));
 			player.sendPacket(new ExGetOnAirShip(this, getAirShip()));
@@ -13160,10 +13158,11 @@ public class Player extends Playable
 				break;
 			}
 		}
+		
+		// Required for showing mount transformations to players that just entered the game.
 		if (isTransformed())
 		{
-			// Required double send for fix Mounted H5+
-			sendPacket(new CharInfo(player, false));
+			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 		}
 	}
 	

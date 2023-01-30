@@ -466,6 +466,11 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="commissionItemType" val="OTHER_ITEM" />
+		<skills>
+			<skill id="35147" level="1" /> <!-- +8 Zodiac Agathion Charm Box -->
+		</skills>
 	</item>
 	<item id="48228" name="Life Stone Instilled with Giants' Power (x3) Box" type="EtcItem">
 		<!-- Use it to obtain 3 Life Stones Instilled with Giants' Power. -->
@@ -1516,6 +1521,17 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="6" />
+		<set name="extractableCountMax" val="6" />
+		<capsuled_items>
+			<item id="17435" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Eternal Shield -->
+			<item id="35079" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Helmet (Heavy armor) -->
+			<item id="35080" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Breastplate (Heavy armor) -->
+			<item id="35081" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Gaiters (Heavy armor) -->
+			<item id="35082" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Gauntlets (Heavy armor) -->
+			<item id="35083" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Boots (Heavy armor) -->
+		</capsuled_items>
 	</item>
 	<item id="48296" name="Capsule: +10 Eternal Light Armor" type="EtcItem">
 		<!-- Double-click to obtain Bloody Eternal light armor set enchanted to +10. -->
@@ -1527,6 +1543,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35085" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Helmet (Light armor) -->
+			<item id="35086" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Armor (Light armor) -->
+			<item id="35087" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Leggings (Light armor) -->
+			<item id="35088" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Gloves (Light armor) -->
+			<item id="35089" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Leather Boots (Light armor) -->
+		</capsuled_items>
 	</item>
 	<item id="48297" name="Capsule: +10 Eternal Robe" type="EtcItem">
 		<!-- Double-click to obtain Bloody Eternal robe set enchanted to +10. -->
@@ -1538,6 +1562,15 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35090" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Helmet (Robe) -->
+			<item id="35091" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Tunic (Robe) -->
+			<item id="35092" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Stockings (Robe) -->
+			<item id="35093" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Gloves (Robe) -->
+			<item id="35094" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Bloody Eternal Shoes (Robe) -->
+			<item id="17446" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- +10 Eternal Sigil -->
+		</capsuled_items>
 	</item>
 	<item id="48298" name="+10 Zodiac Agathion Box" type="EtcItem">
 		<!-- Double-click to obtain all 12 types of Zodiac Agathion Charms enchanted to +10. -->
@@ -1549,6 +1582,21 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48048" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Virgo Charm -->
+			<item id="48049" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Capricorn Charm -->
+			<item id="48050" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Libra Charm -->
+			<item id="48051" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Aries Charm -->
+			<item id="48052" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Taurus Charm -->
+			<item id="48053" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Leo Charm -->
+			<item id="48054" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Gemini Charm -->
+			<item id="48055" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Scorpio Charm -->
+			<item id="48056" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Aquarius Charm -->
+			<item id="48057" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Pisces Charm -->
+			<item id="48058" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Sagittarius Charm -->
+			<item id="48059" min="1" max="1" minEnchant="10" maxEnchant="10" chance="100" /> <!-- Agathion Cancer Charm -->
+		</capsuled_items>
 	</item>
 	<item id="48299" name="Balthus Graduation Reward Box" type="EtcItem">
 		<!-- Supply Box issued to players who graduated from the Balthus Knights with honors on the test server. Use it to obtain a 15-day Antharas weapon. -->

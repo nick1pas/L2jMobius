@@ -991,6 +991,7 @@
 			<value level="4">icon.sayhas_talisman_g_Lv4</value>
 		</icon>
 		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>SAYHA_BUFF</abnormalType>
 		<abnormalTime>45</abnormalTime>
 		<operateType>A2</operateType>
 		<isMagic>2</isMagic>
@@ -1008,6 +1009,9 @@
 		<castRange>900</castRange>
 		<effectPoint>1</effectPoint>
 		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SAYHA_BUFF,-1;TALISMAN_SPECIAL,-1</dispel>
+			</effect>
 			<effect name="DamageByAttack">
 				<amount>
 					<value level="1">-5</value>
@@ -1026,6 +1030,24 @@
 				</amount>
 				<type>ENEMY_ALL</type>
 			</effect>
+			<effect name="DefenceCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="DefenceMagicCriticalDamage">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">0</value>
+					<value level="3">0</value>
+					<value level="4">-10</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
 		</effects>
 	</skill>
 	<skill id="28145" toLevel="4" name="Sayha's Encouragement">
@@ -1037,6 +1059,7 @@
 			<value level="4">icon.sayhas_talisman_pve_Lv4</value>
 		</icon>
 		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>SAYHA_BUFF</abnormalType>
 		<abnormalTime>
 			<value level="1">180</value>
 			<value level="2">180</value>
@@ -1059,6 +1082,9 @@
 		<castRange>900</castRange>
 		<effectPoint>1</effectPoint>
 		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SAYHA_BUFF,-1;TALISMAN_SPECIAL,-1</dispel>
+			</effect>
 			<effect name="PveMagicalSkillDamageBonus">
 				<amount>
 					<value level="1">5</value>
@@ -1097,6 +1123,7 @@
 			<value level="4">icon.sayhas_talisman_pvp_Lv4</value>
 		</icon>
 		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>SAYHA_BUFF</abnormalType>
 		<abnormalTime>45</abnormalTime>
 		<operateType>A2</operateType>
 		<isMagic>2</isMagic>
@@ -1114,6 +1141,9 @@
 		<castRange>900</castRange>
 		<effectPoint>1</effectPoint>
 		<effects>
+			<effect name="DispelBySlot">
+				<dispel>SAYHA_BUFF,-1;TALISMAN_SPECIAL,-1</dispel>
+			</effect>
 			<effect name="PvpMagicalSkillDamageBonus">
 				<amount>
 					<value level="1">8</value>
@@ -1563,16 +1593,86 @@
 	</skill>
 	<skill id="28180" toLevel="1" name="Stable Cloak Enchantment Scroll">
 		<operateType>A1</operateType>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<magicLevel>1</magicLevel>
+		<isMagic>2</isMagic>
+		<targetType>ITEM</targetType>
+		<affectScope>SINGLE</affectScope>
 	</skill>
 	<skill id="28181" toLevel="1" name="High-grade Spirit Stone Pack - Legendary">
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>29170</itemConsumeId>
 		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
+		<hitCancelTime>0</hitCancelTime>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="29165" count="1" /> <!-- High-Grade Spirit Stone Ancient Kingdom -->
+					</item>
+					<item chance="20">
+						<item id="29166" count="1" /> <!-- High-Grade Spirit Stone Elmoreden -->
+					</item>
+					<item chance="20">
+						<item id="29167" count="1" /> <!-- High-Grade Spirit Stone Aden -->
+					</item>
+					<item chance="20">
+						<item id="29168" count="1" /> <!-- High-Grade Spirit Stone Elmore -->
+					</item>
+					<item chance="20">
+						<item id="29169" count="1" /> <!-- High-Grade Spirit Stone Ferios -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28182" toLevel="1" name="High-grade Spirit Stone Pack - Cloak">
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>29171</itemConsumeId>
 		<operateType>A1</operateType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
 		<hitTime>500</hitTime>
 		<coolTime>500</coolTime>
+		<hitCancelTime>0</hitCancelTime>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>20</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="20">
+						<item id="29165" count="1" /> <!-- High-Grade Spirit Stone Ancient Kingdom -->
+					</item>
+					<item chance="20">
+						<item id="29166" count="1" /> <!-- High-Grade Spirit Stone Elmoreden -->
+					</item>
+					<item chance="20">
+						<item id="29167" count="1" /> <!-- High-Grade Spirit Stone Aden -->
+					</item>
+					<item chance="20">
+						<item id="29168" count="1" /> <!-- High-Grade Spirit Stone Elmore -->
+					</item>
+					<item chance="20">
+						<item id="29169" count="1" /> <!-- High-Grade Spirit Stone Ferios -->
+					</item>
+				</items>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="28183" toLevel="1" name="Summon Agathion - Mermaid">
 		<!-- Summons the Agathion. -->

@@ -1532,7 +1532,7 @@
 		<sex>FEMALE</sex>
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="47056.49" hpRegen="8.5" mp="2280" mpRegen="3" />
+			<vitals hp="564678.1" hpRegen="8.5" mp="2280" mpRegen="3" />
 			<attack physical="6133.84931619787" magical="1082.67036126497" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="505.286762009" magical="290.083779855" />
 			<speed>
@@ -1555,7 +1555,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1573,7 +1573,7 @@
 		<sex>FEMALE</sex>
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="47056.49" hpRegen="8.5" mp="2280" mpRegen="3" />
+			<vitals hp="564678.1" hpRegen="8.5" mp="2280" mpRegen="3" />
 			<attack physical="6133.84931619787" magical="1082.67036126497" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="404.2294096072" magical="261.0754018695" />
 			<speed>
@@ -1596,7 +1596,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1614,7 +1614,7 @@
 		<sex>FEMALE</sex>
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="47056.49" hpRegen="8.5" mp="3420" mpRegen="3" />
+			<vitals hp="564678.1" hpRegen="8.5" mp="3420" mpRegen="3" />
 			<attack physical="6133.84931619787" magical="288.060835725247" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="353.7007334063" magical="348.100535826" />
 			<speed>
@@ -1637,7 +1637,7 @@
 			<skill id="4416" level="14" /> <!-- Humans -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1655,7 +1655,7 @@
 		<sex>MALE</sex>
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="47285.34" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="567423.7" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1678,7 +1678,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -2806,56 +2806,42 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="12">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="0.7">
-					<item id="46537" min="1" max="1" chance="100" /> <!-- Mystic Soul Crystal Fragment -->
-				</group>
-				<group chance="20">
-					<item id="57" min="35000000" max="70000000" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
-				<group chance="20">
-					<item id="48568" min="1" max="1" chance="100" /> <!-- Guard Agathion Fragment -->
-				</group>
+				<item id="57" min="35000000" max="70000000" chance="20" /> <!-- Adena -->
+				<item id="19447" min="1" max="1" chance="4.84" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="7" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="48568" min="1" max="1" chance="20" /> <!-- Guard Agathion Fragment -->
+				<item id="46537" min="1" max="1" chance="0.7" /> <!-- Mystic Soul Crystal Fragment -->
+				<item id="17416" min="1" max="1" chance="0.001" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.001" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.001" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.001" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.001" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.001" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.001" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.001" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.001" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.001" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.001" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.001" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.001" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.001" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.008" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.008" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.008" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.008" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.008" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.008" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.008" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.008" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.008" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.008" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.008" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.008" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.008" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2901,10 +2887,8 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="46587" min="1" max="2" chance="95" /> <!-- Mystic Armor Piece -->
-					<item id="46537" min="1" max="1" chance="5" /> <!-- Mystic Soul Crystal Fragment -->
-				</group>
+				<item id="46537" min="1" max="1" chance="5" /> <!-- Mystic Soul Crystal Fragment -->
+				<item id="46587" min="1" max="2" chance="95" /> <!-- Mystic Armor Piece -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2951,22 +2935,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="2.5">
-					<item id="39738" min="1" max="1" chance="100" /> <!-- Rune Stone -->
-				</group>
-				<group chance="100">
-					<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
-					<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
-					<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
-					<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
-				</group>
-				<group chance="1">
-					<item id="46587" min="1" max="1" chance="100" /> <!-- Mystic Armor Piece -->
-				</group>
+				<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
+				<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
+				<item id="39738" min="1" max="1" chance="2.5" /> <!-- Rune Stone -->
+				<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
+				<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
+				<item id="46587" min="1" max="1" chance="1" /> <!-- Mystic Armor Piece -->
 			</drop>
 		</dropLists>
 	</npc>

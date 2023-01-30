@@ -54,7 +54,6 @@
 	<item id="80903" name="Zariche's Sealed Box" type="EtcItem">
 		<!-- A chest in which the madness of the Demonic Sword Zariche is sealed. Double-click to obtain a Bloodthirsty Zariche weapon or Zariche's Blood. -->
 		<set name="icon" val="icon.zariche_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -84,7 +83,6 @@
 	<item id="80904" name="Akamanah's Sealed Box" type="EtcItem">
 		<!-- A chest in which the madness of the Blood Sword Akamanah is sealed. Double-click to obtain a Bloodthirsty Akamanah weapon or Akamanah's Blood. -->
 		<set name="icon" val="icon.aka_manaf_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -337,6 +335,16 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="reuse_delay" val="60000" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="39547" level="1" /> <!-- Emperor's Vitality Tonic (Event) -->
+		</skills>
 	</item>
 	<item id="80921" name="Lindvior's Treasure Chest" type="EtcItem">
 		<!-- Precious treasure chest obtained after the campaign against Lindvior. Double-click to get one rare item. -->
@@ -472,6 +480,9 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
@@ -489,7 +500,7 @@
 			<item id="80944" min="1" max="1" chance="8.33" /> <!-- Greater Agathion Charm: Aquarius -->
 			<item id="80945" min="1" max="1" chance="8.33" /> <!-- Greater Agathion Charm: Pisces -->
 			<item id="80946" min="1" max="1" chance="8.33" /> <!-- Greater Agathion Charm: Sagittarius -->
-			<item id="80947" min="1" max="1" chance="8.33" /> <!-- Greater Agathion Charm: Cancer -->
+			<item id="80947" min="1" max="1" chance="8.34" /> <!-- Greater Agathion Charm: Cancer -->
 		</capsuled_items>
 	</item>
 	<item id="80932" name="Greater Zodiac Agathion's Book of Growth" type="EtcItem">
@@ -923,7 +934,6 @@
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
 		<set name="is_depositable" val="true" />
-		<set name="is_mailable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ItemSkills" />

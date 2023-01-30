@@ -72,7 +72,6 @@ public class ExPetRankingList extends ServerPacket
 		{
 			writeInt(0);
 		}
-		return;
 	}
 	
 	private void writeFilteredRankingData(RankingCategory category, RankingScope scope)

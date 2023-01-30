@@ -12399,7 +12399,6 @@ public class Player extends Playable
 		if (isInBoat())
 		{
 			setXYZ(getBoat().getLocation());
-			
 			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 			player.sendPacket(new GetOnVehicle(getObjectId(), getBoat().getObjectId(), _inVehiclePosition));
 		}
@@ -12468,6 +12467,12 @@ public class Player extends Playable
 				player.sendPacket(new RecipeShopMsg(this));
 				break;
 			}
+		}
+		
+		// Required for showing mount transformations to players that just entered the game.
+		if (isTransformed())
+		{
+			player.sendPacket(new CharInfo(this, isInvisible() && player.canOverrideCond(PlayerCondOverride.SEE_ALL_PLAYERS)));
 		}
 	}
 	

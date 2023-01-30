@@ -936,12 +936,21 @@
 		<chargeConsume>10</chargeConsume>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="EnergySaved">
+				<amount>10</amount>
+			</condition>
+		</conditions>
 		<effects>
 			<effect name="PAtk">
 				<amount>10</amount>
 				<mode>PER</mode>
 			</effect>
 			<effect name="CriticalDamage">
+				<amount>15</amount>
+				<mode>PER</mode>
+			</effect>
+			<effect name="PhysicalSkillCriticalDamage">
 				<amount>15</amount>
 				<mode>PER</mode>
 			</effect>

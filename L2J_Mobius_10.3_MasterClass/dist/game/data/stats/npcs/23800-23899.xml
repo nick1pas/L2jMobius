@@ -45,21 +45,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="5.5556">
-					<item id="47202" min="1" max="1" chance="100" /> <!-- Material for Giants Deterioration Protection Potion -->
-				</group>
-				<group chance="5.5556">
-					<item id="47203" min="1" max="1" chance="100" /> <!-- Material for Giants Lightning Protection Potion -->
-				</group>
-				<group chance="5.5556">
-					<item id="47204" min="1" max="1" chance="100" /> <!-- Particle Dissolver Component -->
-				</group>
-				<group chance="0.0045">
-					<item id="47219" min="1" max="1" chance="100" /> <!-- Source of the Emperor -->
-				</group>
-				<group chance="10">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="47202" min="1" max="1" chance="5.556" /> <!-- Material for Giants Deterioration Protection Potion -->
+				<item id="47203" min="1" max="1" chance="5.556" /> <!-- Material for Giants Lightning Protection Potion -->
+				<item id="47204" min="1" max="1" chance="5.556" /> <!-- Particle Dissolver Component -->
+				<item id="47219" min="1" max="1" chance="0.005" /> <!-- Source of the Emperor -->
+				<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -496,7 +486,7 @@
 		<acquire exp="114245" sp="103" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="105115" hpRegen="11.6" mp="2469" mpRegen="30" />
+			<vitals hp="147161" hpRegen="11.6" mp="2469" mpRegen="30" />
 			<attack physical="22038" magical="2168" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3450" magical="2366" />
 			<speed>
@@ -510,6 +500,11 @@
 			</attribute>
 			<abnormalResist physical="0" magical="0" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="true">
+			<clanList>
+				<clan>CANTERA</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" passableDoor="true" />
 		<collision>
 			<radius normal="28" />
@@ -531,25 +526,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2496" max="5815" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.4157">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="2496" max="5815" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.417" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.666" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.666" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.666" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="1.7308" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="1.731" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="true">
-			<clanList>
-				<clan>CANTERA</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="23812" level="102" type="Monster" name="Cantera Deathmoz">
 		<parameters>
@@ -561,7 +547,7 @@
 		<acquire exp="114245" sp="103" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="105115" hpRegen="11.6" mp="2469" mpRegen="30" />
+			<vitals hp="147161" hpRegen="11.6" mp="2469" mpRegen="30" />
 			<attack physical="22038" magical="2168" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3450" magical="2366" />
 			<speed>
@@ -575,6 +561,11 @@
 			</attribute>
 			<abnormalResist physical="0" magical="0" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="true">
+			<clanList>
+				<clan>CANTERA</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" passableDoor="true" />
 		<collision>
 			<radius normal="16" />
@@ -596,25 +587,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2496" max="5815" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.4157">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="2496" max="5815" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.417" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.666" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.666" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.666" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="1.7308" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="1.731" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="true">
-			<clanList>
-				<clan>CANTERA</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="23813" level="102" type="Monster" name="Cantera Floxis">
 		<parameters>
@@ -626,7 +608,7 @@
 		<acquire exp="114245" sp="103" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="105115" hpRegen="11.6" mp="2469" mpRegen="30" />
+			<vitals hp="147161" hpRegen="11.6" mp="2469" mpRegen="30" />
 			<attack physical="22038" magical="2168" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3450" magical="2366" />
 			<speed>
@@ -661,18 +643,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2496" max="5815" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.4157">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="2496" max="5815" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.417" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.666" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.666" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.666" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="1.7308" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="1.731" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -686,7 +664,7 @@
 		<acquire exp="114245" sp="103" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="105115" hpRegen="11.6" mp="2469" mpRegen="30" />
+			<vitals hp="147161" hpRegen="11.6" mp="2469" mpRegen="30" />
 			<attack physical="22038" magical="2168" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3450" magical="2366" />
 			<speed>
@@ -721,18 +699,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2496" max="5815" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.4157">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="2496" max="5815" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.417" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.666" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.666" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.666" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="1.7308" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="1.731" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -746,7 +720,7 @@
 		<acquire exp="114245" sp="103" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="105115" hpRegen="11.6" mp="2469" mpRegen="30" />
+			<vitals hp="147161" hpRegen="11.6" mp="2469" mpRegen="30" />
 			<attack physical="22038" magical="2168" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3450" magical="2366" />
 			<speed>
@@ -781,18 +755,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2496" max="5815" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.4157">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="2496" max="5815" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.417" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.666" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.666" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.666" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="1.7308" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="1.731" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -844,15 +814,11 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -904,15 +870,11 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>

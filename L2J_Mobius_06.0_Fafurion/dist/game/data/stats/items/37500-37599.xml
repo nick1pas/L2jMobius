@@ -117,6 +117,8 @@
 		<set name="crystal_count" val="987" />
 		<set name="weight" val="150" />
 		<set name="price" val="46311000" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
 		<set name="commissionItemType" val="RING" />
 		<set name="material" val="GOLD" />
 		<skills>
@@ -136,6 +138,9 @@
 		<set name="weight" val="150" />
 		<set name="price" val="69466000" />
 		<set name="material" val="SILVER" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="EARRING" />
 		<skills>
 			<skill id="13528" level="1" /> <!-- Enhanced Octavis' Earring (Warrior) -->
 		</skills>
@@ -152,6 +157,8 @@
 		<set name="crystal_count" val="1975" />
 		<set name="weight" val="150" />
 		<set name="price" val="92622000" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
 		<set name="commissionItemType" val="NECKLACE" />
 		<set name="material" val="SILVER" />
 		<skills>
@@ -170,6 +177,8 @@
 		<set name="crystal_count" val="987" />
 		<set name="weight" val="150" />
 		<set name="price" val="46311000" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
 		<set name="commissionItemType" val="RING" />
 		<set name="material" val="GOLD" />
 		<skills>
@@ -229,6 +238,9 @@
 		<set name="weight" val="150" />
 		<set name="price" val="46311000" />
 		<set name="material" val="GOLD" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="RING" />
 		<skills>
 			<skill id="13533" level="1" /> <!-- Enhanced Octavis' Ring (Wizard) -->
 		</skills>
@@ -245,6 +257,8 @@
 		<set name="crystal_count" val="1481" />
 		<set name="weight" val="150" />
 		<set name="price" val="69466000" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
 		<set name="commissionItemType" val="EARRING" />
 		<set name="material" val="SILVER" />
 		<skills>
@@ -264,6 +278,9 @@
 		<set name="weight" val="150" />
 		<set name="price" val="92622000" />
 		<set name="material" val="SILVER" />
+		<set name="enchant_enabled" val="true" />
+		<set name="immediate_effect" val="true" />
+		<set name="commissionItemType" val="NECKLACE" />
 		<skills>
 			<skill id="13535" level="1" /> <!-- Enhanced Octavis' Necklace (Wizard) -->
 		</skills>
@@ -479,6 +496,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13543" level="1" /> <!-- NC Messenger's Hat -->
 		</skills>
@@ -577,6 +595,11 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19447" min="1" max="1" chance="100" /> <!-- Blessed Scroll: Enchant Weapon (R-grade) -->
+			<item id="19448" min="1" max="1" chance="100" /> <!-- Blessed Scroll: Enchant Armor (R-grade) -->
+		</capsuled_items>
 	</item>
 	<item id="37542" name="Summon Scroll: Bae Kisung" additionalName="Test" type="EtcItem">
 		<!-- Scroll for summoning Bae Kisung once. From the summoned Bae Kisung, you can receive power-up buff and additionally Bae Kisung's gift box that has special gifts. -->
@@ -742,6 +765,10 @@
 		<set name="reuse_delay" val="60000" />
 		<set name="handler" val="ItemSkills" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
 		<skills>
 			<skill id="17119" level="1" /> <!-- Emperor's Vitality Tonic -->
 		</skills>
@@ -756,6 +783,10 @@
 		<set name="reuse_delay" val="60000" />
 		<set name="handler" val="ItemSkills" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
 		<skills>
 			<skill id="17120" level="1" /> <!-- Emperor's Vitality Tonic -->
 		</skills>
@@ -770,6 +801,10 @@
 		<set name="reuse_delay" val="60000" />
 		<set name="handler" val="ItemSkills" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
 		<skills>
 			<skill id="17121" level="1" /> <!-- Emperor's Vitality Tonic -->
 		</skills>
@@ -798,12 +833,13 @@
 	<item id="37565" name="Emperor's Rune Pack" type="EtcItem">
 		<!-- Open the box to obtain the Emperor's Rune (8-hour). Cannot be used in the Olympiad. -->
 		<set name="icon" val="icon.etc_pi_gift_box_i04" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="FISH" />
 		<capsuled_items>
-			<item id="37565" min="1" max="1" chance="100" /> <!-- Emperor's Rune (8h) -->
+			<item id="37564" min="1" max="1" chance="100" /> <!-- Emperor's Rune (8-hour) -->
 		</capsuled_items>
 	</item>
 	<item id="37566" name="Blessed Lucky Enchant Stone: Weapon (R-grade)" type="EtcItem">

@@ -18,13 +18,13 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.instance.Pet;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
-import org.l2jmobius.gameserver.util.IllegalPlayerAction;
 import org.l2jmobius.gameserver.util.Util;
 
 public class RequestGiveItemToPet implements ClientPacket
@@ -73,7 +73,7 @@ public class RequestGiveItemToPet implements ClientPacket
 		
 		if (player.getActiveEnchantItem() != null)
 		{
-			Util.handleIllegalPlayerAction(player, player + " tried to use enchant exploit and got banned!", IllegalPlayerAction.PUNISH_KICKBAN);
+			Util.handleIllegalPlayerAction(player, player + " tried to use enchant exploit and got banned!", IllegalActionPunishmentType.KICKBAN);
 			return;
 		}
 		

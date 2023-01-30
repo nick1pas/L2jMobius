@@ -126,7 +126,7 @@ public class SpawnTemplate implements Cloneable, ITerritorized, IParameterized<S
 		final List<SpawnGroup> result = new ArrayList<>();
 		for (SpawnGroup group : _groups)
 		{
-			if (String.valueOf(group.getName()).equalsIgnoreCase(name))
+			if ((group.getName() != null) && group.getName().equalsIgnoreCase(name))
 			{
 				result.add(group);
 			}

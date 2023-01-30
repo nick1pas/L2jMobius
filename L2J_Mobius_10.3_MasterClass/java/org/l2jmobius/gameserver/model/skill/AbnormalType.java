@@ -72,6 +72,7 @@ public enum AbnormalType
 	CLAN_BOUNDARY(-1),
 	CLAN_FRIEND(-1),
 	CLAN_PRISON(-1),
+	PRISON(-1),
 	CLASS_CHANGE(-1),
 	CONFUSION(-1),
 	COUNTER_CRITICAL(-1),

@@ -42,6 +42,7 @@ import org.l2jmobius.gameserver.model.interfaces.ILocational;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Siege;
 import org.l2jmobius.gameserver.model.skill.Skill;
+import org.l2jmobius.gameserver.network.serverpackets.castlewar.MercenaryCastleWarCastleSiegeHudInfo;
 
 public class SiegeManager
 {
@@ -304,6 +305,23 @@ public class SiegeManager
 		{
 			LOGGER.log(Level.WARNING, "Exception: loadTrapUpgrade(): " + e.getMessage(), e);
 		}
+	}
+	
+	public void sendSiegeInfo(Player player)
+	{
+		for (Castle castle : CastleManager.getInstance().getCastles())
+		{
+			final int diff = (int) (castle.getSiegeDate().getTimeInMillis() - System.currentTimeMillis());
+			if (((diff > 0) && (diff < 86400000)) || castle.getSiege().isInProgress())
+			{
+				player.sendPacket(new MercenaryCastleWarCastleSiegeHudInfo(castle.getResidenceId()));
+			}
+		}
+	}
+	
+	public void sendSiegeInfo(Player player, int castleId)
+	{
+		player.sendPacket(new MercenaryCastleWarCastleSiegeHudInfo(castleId));
 	}
 	
 	public static SiegeManager getInstance()

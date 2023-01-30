@@ -236,7 +236,7 @@
 		<set name="weight" val="1" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
-		<set name="etcitem_type" val="POTION" />
+		<set name="etcitem_type" val="SCROLL" />
 		<set name="is_stackable" val="true" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ItemSkills" />
@@ -254,7 +254,6 @@
 		<set name="crystal_type" val="R" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
-		<set name="enchant_enabled" val="true" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
@@ -275,6 +274,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="46710" min="1" max="1" chance="100" /> <!-- Lindvior's Earring (30-day) -->
+		</capsuled_items>
 	</item>
 	<item id="46712" name="Blessed Antharas' Earring 30-day pack" type="EtcItem">
 		<!-- Dimensional Item. Gift Box containing one Blessed Antharas' Earring (30-day). -->
@@ -287,6 +290,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37667" min="1" max="1" chance="100" /> <!-- Blessed Antharas' Earring (30-day) -->
+		</capsuled_items>
 	</item>
 	<item id="46713" name="Blessed Valakas' Necklace 30-day pack" type="EtcItem">
 		<!-- Dimensional Item. Gift Box containing one Blessed Valakas' Necklace (30-day). -->
@@ -299,6 +306,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37668" min="1" max="1" chance="100" /> <!-- Blessed Valakas' Necklace (30-day) -->
+		</capsuled_items>
 	</item>
 	<item id="46714" name="Tauti's Ring 30-day pack" type="EtcItem">
 		<!-- Dimensional Item. Gift Box containing one Tauti's Ring (30-day). -->
@@ -311,6 +322,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37669" min="1" max="1" chance="100" /> <!-- Tauti's Ring (30-day) -->
+		</capsuled_items>
 	</item>
 	<item id="46715" name="Earth Wyrm Heart Ring 30-day pack" type="EtcItem">
 		<!-- Dimensional Item. Gift Box containing one Earth Wyrm Heart Ring (30-day). -->
@@ -323,6 +338,10 @@
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37670" min="1" max="1" chance="100" /> <!-- Earth Wyrm Heart Ring (30-day) -->
+		</capsuled_items>
 	</item>
 	<item id="46716" name="Refined Black Romantic Chapeau" type="Armor">
 		<!-- Dimensional Item. Refined Black Romantic Chapeau. Occupies 2 hair accessory slots. -->
@@ -336,12 +355,13 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_freightable" val="true" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="46717" name="Mysterious Talisman - STR" additionalName="30-day" type="Armor">
 		<!-- Dimensional Item. STR +5 when wearing the Talisman. Effect does not stack with identical ones. -->
 		<set name="icon" val="icon.npoint_talisman_stat" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="talisman" />
+		<set name="bodypart" val="deco1" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -357,7 +377,7 @@
 		<!-- Dimensional Item. INT +5 when wearing the Talisman. Effect does not stack with identical ones. -->
 		<set name="icon" val="icon.npoint_talisman_stat" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="talisman" />
+		<set name="bodypart" val="deco1" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -373,7 +393,7 @@
 		<!-- Dimensional Item. DEX +5 when wearing the Talisman. Effect does not stack with identical ones. -->
 		<set name="icon" val="icon.npoint_talisman_stat" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="talisman" />
+		<set name="bodypart" val="deco1" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -389,7 +409,7 @@
 		<!-- Dimensional Item. WIT +5 when wearing the Talisman. Effect does not stack with identical ones. -->
 		<set name="icon" val="icon.npoint_talisman_stat" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="talisman" />
+		<set name="bodypart" val="deco1" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -405,7 +425,7 @@
 		<!-- Dimensional Item. CON +5 when wearing the Talisman. Effect does not stack with identical ones. -->
 		<set name="icon" val="icon.npoint_talisman_stat" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="talisman" />
+		<set name="bodypart" val="deco1" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -421,7 +441,7 @@
 		<!-- Dimensional Item. MEN +5 when wearing the Talisman. Effect does not stack with identical ones. -->
 		<set name="icon" val="icon.npoint_talisman_stat" />
 		<set name="default_action" val="EQUIP" />
-		<set name="bodypart" val="talisman" />
+		<set name="bodypart" val="deco1" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="GOLD" />
 		<set name="weight" val="150" />
@@ -751,8 +771,8 @@
 		<set name="weight" val="300" />
 		<set name="soulshots" val="2" />
 		<set name="spiritshots" val="2" />
-		<set name="enchant_enabled" val="true" />
 		<set name="damage_range" val="0;0;66;120" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
 		</skills>
@@ -777,8 +797,8 @@
 		<set name="weight" val="300" />
 		<set name="soulshots" val="2" />
 		<set name="spiritshots" val="2" />
-		<set name="enchant_enabled" val="true" />
 		<set name="damage_range" val="0;0;66;120" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="3599" level="1" /> <!-- Polearm Multi-attack -->
 		</skills>
@@ -1012,7 +1032,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38855" min="1" max="1" chance="50" /> <!-- Ruby Lv. 1 -->
+			<item id="38856" min="1" max="1" chance="40" /> <!-- Ruby Lv. 2 -->
+			<item id="38857" min="1" max="1" chance="7" /> <!-- Ruby Lv. 3 -->
+			<item id="38858" min="1" max="1" chance="2" /> <!-- Ruby Lv. 4 -->
+			<item id="38859" min="1" max="1" chance="1" /> <!-- Ruby Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46766" name="Sapphire Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Sapphires. -->
@@ -1020,7 +1050,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38927" min="1" max="1" chance="50" /> <!-- Sapphire Lv. 1 -->
+			<item id="38928" min="1" max="1" chance="40" /> <!-- Sapphire Lv. 2 -->
+			<item id="38929" min="1" max="1" chance="7" /> <!-- Sapphire Lv. 3 -->
+			<item id="38930" min="1" max="1" chance="2" /> <!-- Sapphire Lv. 4 -->
+			<item id="38931" min="1" max="1" chance="1" /> <!-- Sapphire Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46767" name="Topaz Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Topazes. -->
@@ -1028,7 +1068,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38850" min="1" max="1" chance="50" /> <!-- Topaz Lv. 1 -->
+			<item id="38851" min="1" max="1" chance="40" /> <!-- Topaz Lv. 2 -->
+			<item id="38852" min="1" max="1" chance="7" /> <!-- Topaz Lv. 3 -->
+			<item id="38853" min="1" max="1" chance="2" /> <!-- Topaz Lv. 4 -->
+			<item id="38854" min="1" max="1" chance="1" /> <!-- Topaz Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46768" name="Opal Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Opals. -->
@@ -1036,7 +1086,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38875" min="1" max="1" chance="50" /> <!-- Opal Lv. 1 -->
+			<item id="38876" min="1" max="1" chance="40" /> <!-- Opal Lv. 2 -->
+			<item id="38877" min="1" max="1" chance="7" /> <!-- Opal Lv. 3 -->
+			<item id="38878" min="1" max="1" chance="2" /> <!-- Opal Lv. 4 -->
+			<item id="38879" min="1" max="1" chance="1" /> <!-- Opal Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46769" name="Obsidian Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Obsidians. -->
@@ -1044,7 +1104,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38870" min="1" max="1" chance="50" /> <!-- Obsidian Lv. 1 -->
+			<item id="38871" min="1" max="1" chance="40" /> <!-- Obsidian Lv. 2 -->
+			<item id="38872" min="1" max="1" chance="7" /> <!-- Obsidian Lv. 3 -->
+			<item id="38873" min="1" max="1" chance="2" /> <!-- Obsidian Lv. 4 -->
+			<item id="38874" min="1" max="1" chance="1" /> <!-- Obsidian Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46770" name="Diamond Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Diamonds. -->
@@ -1052,7 +1122,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38890" min="1" max="1" chance="50" /> <!-- Diamond Lv. 1 -->
+			<item id="38891" min="1" max="1" chance="40" /> <!-- Diamond Lv. 2 -->
+			<item id="38892" min="1" max="1" chance="7" /> <!-- Diamond Lv. 3 -->
+			<item id="38893" min="1" max="1" chance="2" /> <!-- Diamond Lv. 4 -->
+			<item id="38894" min="1" max="1" chance="1" /> <!-- Diamond Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46771" name="Emerald Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Emeralds. -->
@@ -1060,7 +1140,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38880" min="1" max="1" chance="50" /> <!-- Emerald Lv. 1 -->
+			<item id="38881" min="1" max="1" chance="40" /> <!-- Emerald Lv. 2 -->
+			<item id="38882" min="1" max="1" chance="7" /> <!-- Emerald Lv. 3 -->
+			<item id="38883" min="1" max="1" chance="2" /> <!-- Emerald Lv. 4 -->
+			<item id="38884" min="1" max="1" chance="1" /> <!-- Emerald Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46772" name="Aquamarine Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Aquamarines. -->
@@ -1068,7 +1158,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38885" min="1" max="1" chance="50" /> <!-- Aquamarine Lv. 1 -->
+			<item id="38886" min="1" max="1" chance="40" /> <!-- Aquamarine Lv. 2 -->
+			<item id="38887" min="1" max="1" chance="7" /> <!-- Aquamarine Lv. 3 -->
+			<item id="38888" min="1" max="1" chance="2" /> <!-- Aquamarine Lv. 4 -->
+			<item id="38889" min="1" max="1" chance="1" /> <!-- Aquamarine Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46773" name="Pearl Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Pearls. -->
@@ -1076,7 +1176,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="38895" min="1" max="1" chance="50" /> <!-- Pearl Lv. 1 -->
+			<item id="38896" min="1" max="1" chance="40" /> <!-- Pearl Lv. 2 -->
+			<item id="38897" min="1" max="1" chance="7" /> <!-- Pearl Lv. 3 -->
+			<item id="38898" min="1" max="1" chance="2" /> <!-- Pearl Lv. 4 -->
+			<item id="38899" min="1" max="1" chance="1" /> <!-- Pearl Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46774" name="Vital Stone Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Vital Stones. -->
@@ -1084,7 +1194,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="46670" min="1" max="1" chance="50" /> <!-- Vital Stone Lv. 1 -->
+			<item id="46671" min="1" max="1" chance="40" /> <!-- Vital Stone Lv. 2 -->
+			<item id="46672" min="1" max="1" chance="7" /> <!-- Vital Stone Lv. 3 -->
+			<item id="46673" min="1" max="1" chance="2" /> <!-- Vital Stone Lv. 4 -->
+			<item id="46674" min="1" max="1" chance="1" /> <!-- Vital Stone Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46775" name="Garnet Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Garnets. -->
@@ -1092,7 +1212,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="46675" min="1" max="1" chance="50" /> <!-- Garnet Lv. 1 -->
+			<item id="46676" min="1" max="1" chance="40" /> <!-- Garnet Lv. 2 -->
+			<item id="46677" min="1" max="1" chance="7" /> <!-- Garnet Lv. 3 -->
+			<item id="46678" min="1" max="1" chance="2" /> <!-- Garnet Lv. 4 -->
+			<item id="46679" min="1" max="1" chance="1" /> <!-- Garnet Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46776" name="Tanzanite Fortune Box" type="EtcItem">
 		<!-- Double-click to obtain one of Level 1-5 Tanzanites. -->
@@ -1100,7 +1230,17 @@
 		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="material" val="LEATHER" />
+		<capsuled_items>
+			<item id="46680" min="1" max="1" chance="50" /> <!-- Tanzanite Lv. 1 -->
+			<item id="46681" min="1" max="1" chance="40" /> <!-- Tanzanite Lv. 2 -->
+			<item id="46682" min="1" max="1" chance="7" /> <!-- Tanzanite Lv. 3 -->
+			<item id="46683" min="1" max="1" chance="2" /> <!-- Tanzanite Lv. 4 -->
+			<item id="46684" min="1" max="1" chance="1" /> <!-- Tanzanite Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="46777" name="Vitality Replenishing Potion of Quest Pride" additionalName="Event" type="EtcItem">
 		<!-- Replenishes vitality by a certain amount when used. Reuse delay 60 min. No weekly usage limit. -->
@@ -1169,7 +1309,7 @@
 			<item id="33640" min="5" max="5" chance="100" /> <!-- Blessed Scroll of Escape -->
 			<item id="33518" min="5" max="5" chance="100" /> <!-- Blessed Scroll of Resurrection -->
 			<item id="33794" min="25000" max="25000" chance="100" /> <!-- Blessed Spiritshot (R-grade) -->
-			<item id="37928" min="10" max="10" chance="100" /> <!-- PA - Art of Seduction -->
+			<item id="48848" min="10" max="10" chance="100" /> <!-- Freya's Ice Rose - Event -->
 			<item id="33780" min="50000" max="50000" chance="100" /> <!-- Soulshot (R-grade) -->
 		</capsuled_items>
 	</item>

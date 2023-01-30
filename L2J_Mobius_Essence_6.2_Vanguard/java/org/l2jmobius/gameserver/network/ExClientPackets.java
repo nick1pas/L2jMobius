@@ -47,7 +47,11 @@ import org.l2jmobius.gameserver.network.clientpackets.balok.ExBalrogWarTeleport;
 import org.l2jmobius.gameserver.network.clientpackets.blessing.RequestBlessOptionCancel;
 import org.l2jmobius.gameserver.network.clientpackets.blessing.RequestBlessOptionEnchant;
 import org.l2jmobius.gameserver.network.clientpackets.blessing.RequestBlessOptionPutItem;
-import org.l2jmobius.gameserver.network.clientpackets.castlewar.ExMCWCastleInfo;
+import org.l2jmobius.gameserver.network.clientpackets.castlewar.ExCastleWarObserverStart;
+import org.l2jmobius.gameserver.network.clientpackets.castlewar.ExMercenaryCastleWarCastleSiegeAttackerList;
+import org.l2jmobius.gameserver.network.clientpackets.castlewar.ExMercenaryCastleWarCastleSiegeDefenderList;
+import org.l2jmobius.gameserver.network.clientpackets.castlewar.ExMercenaryCastleWarCastleSiegeHudInfo;
+import org.l2jmobius.gameserver.network.clientpackets.castlewar.ExMercenaryCastleWarCastleSiegeInfo;
 import org.l2jmobius.gameserver.network.clientpackets.classchange.ExRequestClassChange;
 import org.l2jmobius.gameserver.network.clientpackets.classchange.ExRequestClassChangeVerifying;
 import org.l2jmobius.gameserver.network.clientpackets.collection.RequestCollectionCloseUI;
@@ -619,10 +623,10 @@ public enum ExClientPackets
 	EX_RANKING_CHAR_SPAWN_BUFFZONE_NPC(0x184, RequestExRankingCharSpawnBuffzoneNpc::new, ConnectionState.IN_GAME),
 	EX_RANKING_CHAR_BUFFZONE_NPC_POSITION(0x185, RequestExRankingCharBuffzoneNpcPosition::new, ConnectionState.IN_GAME),
 	EX_PLEDGE_MERCENARY_RECRUIT_INFO_SET(0x186, null, ConnectionState.IN_GAME),
-	EX_MERCENARY_CASTLEWAR_CASTLE_INFO(0x187, ExMCWCastleInfo::new, ConnectionState.IN_GAME),
-	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_INFO(0x188, null, ConnectionState.IN_GAME),
-	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_ATTACKER_LIST(0x189, null, ConnectionState.IN_GAME),
-	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_DEFENDER_LIST(0x18A, null, ConnectionState.IN_GAME),
+	EX_MERCENARY_CASTLEWAR_CASTLE_INFO(0x187, ExMercenaryCastleWarCastleSiegeInfo::new, ConnectionState.IN_GAME),
+	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_INFO(0x188, ExMercenaryCastleWarCastleSiegeHudInfo::new, ConnectionState.IN_GAME),
+	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_ATTACKER_LIST(0x189, ExMercenaryCastleWarCastleSiegeAttackerList::new, ConnectionState.IN_GAME),
+	EX_MERCENARY_CASTLEWAR_CASTLE_SIEGE_DEFENDER_LIST(0x18A, ExMercenaryCastleWarCastleSiegeDefenderList::new, ConnectionState.IN_GAME),
 	EX_PLEDGE_MERCENARY_MEMBER_LIST(0x18B, null, ConnectionState.IN_GAME),
 	EX_PLEDGE_MERCENARY_MEMBER_JOIN(0x18C, null, ConnectionState.IN_GAME),
 	EX_PVP_BOOK_LIST(0x18D, ExPvpBookList::new, ConnectionState.IN_GAME),
@@ -634,7 +638,7 @@ public enum ExClientPackets
 	EX_OLYMPIAD_MY_RANKING_INFO(0x193, RequestOlympiadMyRankingInfo::new, ConnectionState.IN_GAME),
 	EX_OLYMPIAD_RANKING_INFO(0x194, RequestOlympiadRankingInfo::new, ConnectionState.IN_GAME),
 	EX_OLYMPIAD_HERO_AND_LEGEND_INFO(0x195, RequestOlympiadHeroAndLegendInfo::new, ConnectionState.IN_GAME),
-	EX_CASTLEWAR_OBSERVER_START(0x196, null, ConnectionState.IN_GAME),
+	EX_CASTLEWAR_OBSERVER_START(0x196, ExCastleWarObserverStart::new, ConnectionState.IN_GAME),
 	EX_RAID_TELEPORT_INFO(0x197, RequestRaidTeleportInfo::new, ConnectionState.IN_GAME),
 	EX_TELEPORT_TO_RAID_POSITION(0x198, ExTeleportToRaidPosition::new, ConnectionState.IN_GAME),
 	EX_CRAFT_EXTRACT(0x199, ExRequestRandomCraftExtract::new, ConnectionState.IN_GAME),

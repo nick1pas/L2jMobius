@@ -1058,6 +1058,7 @@
 		<set name="is_event_restricted" val="true" />
 		<set name="etcitem_type" val="SCROLL" />
 		<set name="handler" val="ItemSkills" />
+		<set name="is_freightable" val="true" />
 		<skills>
 			<skill id="39350" level="1" /> <!-- Freya's Ice Rose -->
 		</skills>
@@ -1296,11 +1297,11 @@
 		<set name="price" val="7500000" />
 		<set name="reuse_delay" val="500" />
 		<set name="is_stackable" val="true" />
+		<set name="is_sellable" val="false" />
 		<set name="is_oly_restricted" val="true" />
 		<set name="handler" val="ItemSkills" />
 		<set name="is_event_restricted" val="true" />
 		<set name="commissionItemType" val="POTION" />
-		<set name="is_sellable" val="false" />
 		<cond>
 			<player symbolsealpoints="7800" />
 		</cond>
@@ -1479,6 +1480,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="80777" name="Noble Wizard's Circlet" type="Armor">
 		<!-- A circlet of noble foresight. <Upgrade Requirement> Can be upgraded to a Radiant Circlet of Foresight (Cannot be exchanged/traded) once it is enchanted to +5. Can be augmented. -->
@@ -1491,6 +1493,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="80778" name="Noble Knight's Circlet" type="Armor">
 		<!-- A circlet of noble grace. <Upgrade Requirement> Can be upgraded to a Radiant Circlet of Grace (Cannot be exchanged/traded) once it is enchanted to +5. Can be augmented. -->
@@ -1503,6 +1506,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="80779" name="Bloody Fantastic Enchantment Box" type="EtcItem">
 		<!-- Double-click to randomly obtain an enchantment item. -->
@@ -1522,6 +1526,18 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="38858" min="1" max="1" chance="14.2857" /> <!-- Ruby Lv. 4 -->
+			<item id="38930" min="1" max="1" chance="14.2857" /> <!-- Sapphire Lv. 4 -->
+			<item id="38893" min="1" max="1" chance="14.2857" /> <!-- Diamond Lv. 4 -->
+			<item id="38898" min="1" max="1" chance="14.2857" /> <!-- Pearl Lv. 4 -->
+			<item id="38878" min="1" max="1" chance="14.2857" /> <!-- Opal Lv. 4 -->
+			<item id="38883" min="1" max="1" chance="14.2857" /> <!-- Emerald Lv. 4 -->
+			<item id="47680" min="1" max="1" chance="14.2857" /> <!-- Red Cat's Eye Lv. 4 -->
+		</capsuled_items>
 	</item>
 	<item id="80781" name="Freya's Limited Box" type="EtcItem">
 		<!-- Double-click to obtain a rare item and a Freya's Growth Support Box. -->
@@ -1541,6 +1557,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="48203" min="1" max="1" chance="33.33" /> <!-- Noble Warrior's Circlet -->
+			<item id="48206" min="1" max="1" chance="33.33" /> <!-- Noble Wizard's Circlet -->
+			<item id="48209" min="1" max="1" chance="33.33" /> <!-- Noble Knight's Circlet -->
+		</capsuled_items>
 	</item>
 	<item id="80783" name="Freya's Growth Support Box" type="EtcItem">
 		<!-- Double-click to randomly obtain a consumable item. -->

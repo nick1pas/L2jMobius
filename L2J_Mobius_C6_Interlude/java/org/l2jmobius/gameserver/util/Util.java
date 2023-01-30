@@ -25,10 +25,12 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 import org.l2jmobius.commons.threads.ThreadPool;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.model.WorldObject;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Npc;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.model.actor.tasks.player.IllegalPlayerActionTask;
 
 /**
  * General Utility functions related to game server.
@@ -54,9 +56,9 @@ public class Util
 		':'
 	};
 	
-	public static void handleIllegalPlayerAction(Player actor, String message, int punishment)
+	public static void handleIllegalPlayerAction(Player actor, String message, IllegalActionPunishmentType punishment)
 	{
-		ThreadPool.schedule(new IllegalPlayerAction(actor, message, punishment), 5000);
+		ThreadPool.schedule(new IllegalPlayerActionTask(actor, message, punishment), 5000);
 	}
 	
 	public static String getRelativePath(File base, File file)

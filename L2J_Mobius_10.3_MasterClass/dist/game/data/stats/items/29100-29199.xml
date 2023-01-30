@@ -736,6 +736,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="time" val="43200" />
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29162" name="Light Imbued Treasure Chest" type="EtcItem">
@@ -809,21 +810,16 @@
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
 		<set name="is_depositable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="ExtractableItems" />
-		<set name="extractableCountMin" val="1" />
-		<set name="extractableCountMax" val="1" />
-		<capsuled_items>
-			<item id="29169" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Ferios -->
-			<item id="29168" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Elmore -->
-			<item id="29167" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Aden -->
-			<item id="29166" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Elmoreden -->
-			<item id="29165" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Ancient Kingdom -->
-		</capsuled_items>
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="28181" level="1" /> <!-- High-grade Spirit Stone Pack - Legendary -->
+		</skills>
 	</item>
 	<item id="29171" name="High-grade Cloak Augmenting Stone Pack" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: High-grade Augmenting Stone: Cloak - Ancient Kingdom/ Elmoreden/ Aden/ Elmore/ Ferios. -->
@@ -831,21 +827,16 @@
 		<set name="default_action" val="PEEL" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
 		<set name="is_depositable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="ExtractableItems" />
-		<set name="extractableCountMin" val="1" />
-		<set name="extractableCountMax" val="1" />
-		<capsuled_items>
-			<item id="29169" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Ferios -->
-			<item id="29168" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Elmore -->
-			<item id="29167" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Aden -->
-			<item id="29166" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Elmoreden -->
-			<item id="29165" min="1" max="1" chance="20" /> <!-- High-grade Augmenting Stone: Cloak - Ancient Kingdom -->
-		</capsuled_items>
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="28180" level="1" /> <!-- High-grade Spirit Stone Pack - Cloak -->
+		</skills>
 	</item>
 	<item id="29172" name="Red Star Solvent" type="EtcItem">
 		<!-- Take it to the Game Assistant to obtain Red Starlight Jar. -->
@@ -864,6 +855,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="time" val="10080" />
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29174" name="High-grade Maphr's Rune 300%" additionalName="7-day" type="EtcItem">
@@ -873,6 +865,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="time" val="10080" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 	</item>
 	<item id="29175" name="Package: High-grade Maphr's Rune 300%" additionalName="1-day" type="EtcItem">
@@ -885,6 +878,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="time" val="1440" />
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29176" name="High-grade Maphr's Rune 300%" additionalName="1-day" type="EtcItem">
@@ -894,6 +888,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="time" val="1440" />
 		<set name="etcitem_type" val="ENCHT_ATTR_RUNE" />
 	</item>
 	<item id="29177" name="Package: Prestige Cube" additionalName="1-day" type="EtcItem">
@@ -906,6 +901,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="time" val="1440" />
 	</item>
 	<item id="29178" name="Prestige Cube" additionalName="1-day" type="EtcItem">
 		<!-- PA Cube. Double-click to obtain one of the following items: Dark/ Bloody Eternal Enhancement Stone, Scroll: Enchant S-R-grade Weapon, Blessed Scroll of Resurrection, High-grade Elixir Pack, Destructive Energy, Giant's Energy. Can be used once a day. Cannot be used in the Olympiad. -->

@@ -97,6 +97,7 @@ public class Siege implements Siegable
 	protected boolean _isRegistrationOver = false;
 	protected Calendar _siegeEndDate;
 	protected ScheduledFuture<?> _scheduledStartSiegeTask = null;
+	protected ScheduledFuture<?> _scheduledSiegeInfoTask = null;
 	protected int _firstOwnerClanId = -1;
 	
 	public Siege(Castle castle)
@@ -536,6 +537,10 @@ public class Siege implements Siegable
 			sm.addCastleId(_castle.getResidenceId());
 			Broadcast.toAllOnlinePlayers(sm);
 			Broadcast.toAllOnlinePlayers(new PlaySound("systemmsg_eu.17"));
+			for (Player player : World.getInstance().getPlayers())
+			{
+				SiegeManager.getInstance().sendSiegeInfo(player);
+			}
 			
 			// Notify to scripts.
 			if (EventDispatcher.getInstance().hasListener(EventType.ON_CASTLE_SIEGE_START, getCastle()))
@@ -1057,6 +1062,23 @@ public class Siege implements Siegable
 			_scheduledStartSiegeTask.cancel(false);
 		}
 		_scheduledStartSiegeTask = ThreadPool.schedule(new ScheduleStartSiegeTask(_castle), 1000);
+		startInfoTask();
+	}
+	
+	private void startInfoTask()
+	{
+		if (_scheduledSiegeInfoTask != null)
+		{
+			_scheduledSiegeInfoTask.cancel(false);
+		}
+		
+		_scheduledSiegeInfoTask = ThreadPool.schedule(() ->
+		{
+			for (Player player : World.getInstance().getPlayers())
+			{
+				SiegeManager.getInstance().sendSiegeInfo(player, _castle.getResidenceId());
+			}
+		}, Math.max(0, getSiegeDate().getTimeInMillis() - System.currentTimeMillis() - 3600000));
 	}
 	
 	/**
@@ -1374,6 +1396,7 @@ public class Siege implements Siegable
 			_scheduledStartSiegeTask.cancel(true);
 			_scheduledStartSiegeTask = ThreadPool.schedule(new ScheduleStartSiegeTask(_castle), 1000);
 		}
+		startInfoTask();
 		
 		try (Connection con = DatabaseFactory.getConnection();
 			PreparedStatement statement = con.prepareStatement("UPDATE castle SET siegeDate = ?, regTimeEnd = ?, regTimeOver = ?  WHERE id = ?"))

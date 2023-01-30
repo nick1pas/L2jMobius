@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/optionsData.xsd">
 	<option id="32200" name="helios_opt">
-		<!-- Aerial Yoke Resistance + 5% -->
+		<!-- Confusion Resistance +5% -->
 		<effects>
 			<effect name="DefenceTrait">
 				<AIRBIND>5</AIRBIND>
@@ -9,7 +9,7 @@
 		</effects>
 	</option>
 	<option id="32201" name="helios_opt">
-		<!-- Pull Resistance + 2% -->
+		<!-- Confusion Resistance +2% -->
 		<effects>
 			<effect name="DefenceTrait">
 				<PULL>2</PULL>
@@ -17,7 +17,7 @@
 		</effects>
 	</option>
 	<option id="32202" name="helios_opt">
-		<!-- Pull Resistance + 3% -->
+		<!-- Confusion Resistance +3% -->
 		<effects>
 			<effect name="DefenceTrait">
 				<PULL>3</PULL>
@@ -25,7 +25,7 @@
 		</effects>
 	</option>
 	<option id="32203" name="helios_opt">
-		<!-- Pull Resistance + 5% -->
+		<!-- Confusion Resistance +5% -->
 		<effects>
 			<effect name="DefenceTrait">
 				<PULL>5</PULL>
@@ -33,19 +33,19 @@
 		</effects>
 	</option>
 	<option id="32204" name="helios_opt">
-		<!-- Passive: Petrification Resistance + 2%. -->
-		<passive_skill id="13763" level="10" />
+		<!-- Item skill: Petrification Resistance +2% -->
+		<passive_skill id="13763" level="10" /> <!-- Item Skill: Petrification Resistance -->
 	</option>
 	<option id="32205" name="helios_opt">
-		<!-- Passive: Petrification Resistance + 3%. -->
-		<passive_skill id="13763" level="11" />
+		<!-- Passive: Petrification Resistance +3%. -->
+		<passive_skill id="13763" level="11" /> <!-- Item Skill: Petrification Resistance -->
 	</option>
 	<option id="32206" name="helios_opt">
-		<!-- Passive: Petrification Resistance + 5%. -->
-		<passive_skill id="13763" level="12" />
+		<!-- Passive: Petrification Resistance +5%. -->
+		<passive_skill id="13763" level="12" /> <!-- Item Skill: Petrification Resistance -->
 	</option>
 	<option id="32207" name="helios_opt">
-		<!-- Fire/Water Resistance + 8 -->
+		<!-- Fire/ Water Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -58,7 +58,7 @@
 		</effects>
 	</option>
 	<option id="32208" name="helios_opt">
-		<!-- Fire/Wind Resistance + 8 -->
+		<!-- Fire/ Wind Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -71,7 +71,7 @@
 		</effects>
 	</option>
 	<option id="32209" name="helios_opt">
-		<!-- Fire/Earth Resistance + 8 -->
+		<!-- Fire/ Earth Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -84,7 +84,7 @@
 		</effects>
 	</option>
 	<option id="32210" name="helios_opt">
-		<!-- Fire/Holy Resistance + 8 -->
+		<!-- Fire/ Holy Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -97,7 +97,7 @@
 		</effects>
 	</option>
 	<option id="32211" name="helios_opt">
-		<!-- Fire/Dark Resistance + 8 -->
+		<!-- Fire/ Dark Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -110,7 +110,7 @@
 		</effects>
 	</option>
 	<option id="32212" name="helios_opt">
-		<!-- Water/Wind Resistance + 8 -->
+		<!-- Water/ Wind Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -123,7 +123,7 @@
 		</effects>
 	</option>
 	<option id="32213" name="helios_opt">
-		<!-- Water/Earth Resistance + 8 -->
+		<!-- Water/ Earth Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -136,7 +136,7 @@
 		</effects>
 	</option>
 	<option id="32214" name="helios_opt">
-		<!-- Water/Holy Resistance + 8 -->
+		<!-- Water/ Holy Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -149,7 +149,7 @@
 		</effects>
 	</option>
 	<option id="32215" name="helios_opt">
-		<!-- Water/Dark Resistance + 8 -->
+		<!-- Water/ Dark Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -162,7 +162,7 @@
 		</effects>
 	</option>
 	<option id="32216" name="helios_opt">
-		<!-- Wind/Earth Resistance + 8 -->
+		<!-- Wind/ Earth Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -175,7 +175,7 @@
 		</effects>
 	</option>
 	<option id="32217" name="helios_opt">
-		<!-- Wind/Holy Resistance + 8 -->
+		<!-- Wind/ Holy Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -188,7 +188,7 @@
 		</effects>
 	</option>
 	<option id="32218" name="helios_opt">
-		<!-- Wind/Dark Resistance + 8 -->
+		<!-- Wind/ Dark Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -201,7 +201,7 @@
 		</effects>
 	</option>
 	<option id="32219" name="helios_opt">
-		<!-- Earth/Holy Resistance + 8 -->
+		<!-- Earth/ Holy Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -214,7 +214,7 @@
 		</effects>
 	</option>
 	<option id="32220" name="helios_opt">
-		<!-- Earth/Dark Resistance + 8 -->
+		<!-- Earth/ Dark Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -227,7 +227,7 @@
 		</effects>
 	</option>
 	<option id="32221" name="helios_opt">
-		<!-- Holy/Dark Resistance + 8 -->
+		<!-- Holy/ Dark Resistance +8 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>8</amount>
@@ -240,7 +240,7 @@
 		</effects>
 	</option>
 	<option id="32222" name="helios_opt">
-		<!-- Fire/Water Resistance + 9 -->
+		<!-- Fire/ Water Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -253,7 +253,7 @@
 		</effects>
 	</option>
 	<option id="32223" name="helios_opt">
-		<!-- Fire/Wind Resistance + 9 -->
+		<!-- Fire/ Wind Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -266,7 +266,7 @@
 		</effects>
 	</option>
 	<option id="32224" name="helios_opt">
-		<!-- Fire/Earth Resistance + 9 -->
+		<!-- Fire/ Earth Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -279,7 +279,7 @@
 		</effects>
 	</option>
 	<option id="32225" name="helios_opt">
-		<!-- Fire/Holy Resistance + 9 -->
+		<!-- Fire/ Holy Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -292,7 +292,7 @@
 		</effects>
 	</option>
 	<option id="32226" name="helios_opt">
-		<!-- Fire/Dark Resistance + 9 -->
+		<!-- Fire/ Dark Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -305,7 +305,7 @@
 		</effects>
 	</option>
 	<option id="32227" name="helios_opt">
-		<!-- Water/Wind Resistance + 9 -->
+		<!-- Water/ Wind Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -318,7 +318,7 @@
 		</effects>
 	</option>
 	<option id="32228" name="helios_opt">
-		<!-- Water/Earth Resistance + 9 -->
+		<!-- Water/ Earth Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -331,7 +331,7 @@
 		</effects>
 	</option>
 	<option id="32229" name="helios_opt">
-		<!-- Water/Holy Resistance + 9 -->
+		<!-- Water/ Holy Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -344,7 +344,7 @@
 		</effects>
 	</option>
 	<option id="32230" name="helios_opt">
-		<!-- Water/Dark Resistance + 9 -->
+		<!-- Water/ Dark Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -357,7 +357,7 @@
 		</effects>
 	</option>
 	<option id="32231" name="helios_opt">
-		<!-- Wind/Earth Resistance + 9 -->
+		<!-- Wind/ Earth Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -370,7 +370,7 @@
 		</effects>
 	</option>
 	<option id="32232" name="helios_opt">
-		<!-- Wind/Holy Resistance + 9 -->
+		<!-- Wind/ Holy Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -383,7 +383,7 @@
 		</effects>
 	</option>
 	<option id="32233" name="helios_opt">
-		<!-- Wind/Dark Resistance + 9 -->
+		<!-- Wind/ Dark Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -396,7 +396,7 @@
 		</effects>
 	</option>
 	<option id="32234" name="helios_opt">
-		<!-- Earth/Holy Resistance + 9 -->
+		<!-- Earth/ Holy Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -409,7 +409,7 @@
 		</effects>
 	</option>
 	<option id="32235" name="helios_opt">
-		<!-- Earth/Dark Resistance + 9 -->
+		<!-- Earth/ Dark Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -422,7 +422,7 @@
 		</effects>
 	</option>
 	<option id="32236" name="helios_opt">
-		<!-- Holy/Dark Resistance + 9 -->
+		<!-- Holy/ Dark Resistance +9 -->
 		<effects>
 			<effect name="DefenceAttribute">
 				<amount>9</amount>
@@ -435,255 +435,255 @@
 		</effects>
 	</option>
 	<option id="32237" name="helios_opt">
-		<!-- Passive: Max HP + 3%. -->
-		<passive_skill id="13737" level="1" />
+		<!-- Max HP +3% -->
+		<passive_skill id="13737" level="1" /> <!-- Item Skill: Max XP Increase -->
 	</option>
 	<option id="32238" name="helios_opt">
-		<!-- Passive: Max HP + 4%. -->
-		<passive_skill id="13737" level="2" />
+		<!-- Max HP +4% -->
+		<passive_skill id="13737" level="2" /> <!-- Item Skill: Max XP Increase -->
 	</option>
 	<option id="32239" name="helios_opt">
-		<!-- Passive: Max HP + 5%. -->
-		<passive_skill id="13737" level="3" />
+		<!-- Max HP +5% -->
+		<passive_skill id="13737" level="3" /> <!-- Item Skill: Max XP Increase -->
 	</option>
 	<option id="32240" name="helios_opt">
-		<!-- Passive: Max MP + 3%. -->
-		<passive_skill id="13741" level="1" />
+		<!-- Max MP +3% -->
+		<passive_skill id="13741" level="1" /> <!-- Item Skill: Max MP Increase -->
 	</option>
 	<option id="32241" name="helios_opt">
-		<!-- Passive: Max MP + 4%. -->
-		<passive_skill id="13741" level="2" />
+		<!-- Max MP +4% -->
+		<passive_skill id="13741" level="2" /> <!-- Item Skill: Max MP Increase -->
 	</option>
 	<option id="32242" name="helios_opt">
-		<!-- Passive: Max MP + 5%. -->
-		<passive_skill id="13741" level="3" />
+		<!-- Max MP +5% -->
+		<passive_skill id="13741" level="3" /> <!-- Item Skill: Max MP Increase -->
 	</option>
 	<option id="32243" name="helios_opt">
-		<!-- Passive: Max CP + 3%. -->
-		<passive_skill id="13734" level="1" />
+		<!-- Max CP +3% -->
+		<passive_skill id="13734" level="1" /> <!-- Item Skill: Max CP Increase -->
 	</option>
 	<option id="32244" name="helios_opt">
-		<!-- Passive: Max CP + 4%. -->
-		<passive_skill id="13734" level="2" />
+		<!-- Max CP +4% -->
+		<passive_skill id="13734" level="2" /> <!-- Item Skill: Max CP Increase -->
 	</option>
 	<option id="32245" name="helios_opt">
-		<!-- Passive: Max CP + 5%. -->
-		<passive_skill id="13734" level="3" />
+		<!-- Max CP +5% -->
+		<passive_skill id="13734" level="3" /> <!-- Item Skill: Max CP Increase -->
 	</option>
 	<option id="32246" name="helios_opt">
-		<!-- Passive: P. Atk. + 3%. -->
-		<passive_skill id="13744" level="1" />
+		<!-- P. Atk. +3% -->
+		<passive_skill id="13744" level="1" /> <!-- Item Skill: P. Atk. Increase -->
 	</option>
 	<option id="32247" name="helios_opt">
-		<!-- Passive: P. Atk. + 4%. -->
-		<passive_skill id="13744" level="2" />
+		<!-- P. Atk. +4% -->
+		<passive_skill id="13744" level="2" /> <!-- Item Skill: P. Atk. Increase -->
 	</option>
 	<option id="32248" name="helios_opt">
-		<!-- Passive: P. Atk. + 5%. -->
-		<passive_skill id="13744" level="3" />
+		<!-- P. Atk. +5% -->
+		<passive_skill id="13744" level="3" /> <!-- Item Skill: P. Atk. Increase -->
 	</option>
 	<option id="32249" name="helios_opt">
-		<!-- Passive: P. Def. + 3%. -->
-		<passive_skill id="13745" level="1" />
+		<!-- P. Def. +3% -->
+		<passive_skill id="13745" level="1" /> <!-- Item Skill: P. Def. Increase -->
 	</option>
 	<option id="32250" name="helios_opt">
-		<!-- Passive: P. Def. + 4%. -->
-		<passive_skill id="13745" level="2" />
+		<!-- P. Def. +4% -->
+		<passive_skill id="13745" level="2" /> <!-- Item Skill: P. Def. Increase -->
 	</option>
 	<option id="32251" name="helios_opt">
-		<!-- Passive: P. Def. + 5%. -->
-		<passive_skill id="13745" level="3" />
+		<!-- P. Def. +5% -->
+		<passive_skill id="13745" level="3" /> <!-- Item Skill: P. Def. Increase -->
 	</option>
 	<option id="32252" name="helios_opt">
-		<!-- Passive: Atk. Spd. + 3%. -->
-		<passive_skill id="13733" level="1" />
+		<!-- Atk. Spd. +3% -->
+		<passive_skill id="13733" level="1" /> <!-- Item Skill: Atk. Spd. Increase -->
 	</option>
 	<option id="32253" name="helios_opt">
-		<!-- Passive: Atk. Spd. + 4%. -->
-		<passive_skill id="13733" level="2" />
+		<!-- Atk. Spd. +4% -->
+		<passive_skill id="13733" level="2" /> <!-- Item Skill: Atk. Spd. Increase -->
 	</option>
 	<option id="32254" name="helios_opt">
-		<!-- Passive: Atk. Spd. + 5%. -->
-		<passive_skill id="13733" level="3" />
+		<!-- Atk. Spd. +5% -->
+		<passive_skill id="13733" level="3" /> <!-- Item Skill: Atk. Spd. Increase -->
 	</option>
 	<option id="32255" name="helios_opt">
-		<!-- Passive: Speed + 8. -->
-		<passive_skill id="13751" level="1" />
+		<!-- Speed +8 -->
+		<passive_skill id="13751" level="1" /> <!-- Item Skill: Spd. Increase -->
 	</option>
 	<option id="32256" name="helios_opt">
-		<!-- Passive: Speed + 9. -->
-		<passive_skill id="13751" level="2" />
+		<!-- Speed +9 -->
+		<passive_skill id="13751" level="2" /> <!-- Item Skill: Spd. Increase -->
 	</option>
 	<option id="32257" name="helios_opt">
-		<!-- Passive: Speed + 10. -->
-		<passive_skill id="13751" level="3" />
+		<!-- Speed +10 -->
+		<passive_skill id="13751" level="3" /> <!-- Item Skill: Spd. Increase -->
 	</option>
 	<option id="32258" name="helios_opt">
-		<!-- Passive: M. Atk. + 3%. -->
-		<passive_skill id="13739" level="1" />
+		<!-- M. Atk. +3% -->
+		<passive_skill id="13739" level="1" /> <!-- Item Skill: M. Atk. Increase -->
 	</option>
 	<option id="32259" name="helios_opt">
-		<!-- Passive: M. Atk. + 4%. -->
-		<passive_skill id="13739" level="2" />
+		<!-- M. Atk. +4% -->
+		<passive_skill id="13739" level="2" /> <!-- Item Skill: M. Atk. Increase -->
 	</option>
 	<option id="32260" name="helios_opt">
-		<!-- Passive: M. Atk. + 5%. -->
-		<passive_skill id="13739" level="3" />
+		<!-- M. Atk. +5% -->
+		<passive_skill id="13739" level="3" /> <!-- Item Skill: M. Atk. Increase -->
 	</option>
 	<option id="32261" name="helios_opt">
-		<!-- Passive: M. Def. + 3%. -->
-		<passive_skill id="13740" level="1" />
+		<!-- M. Def. +3% -->
+		<passive_skill id="13740" level="1" /> <!-- Item Skill: M. Def. Increase -->
 	</option>
 	<option id="32262" name="helios_opt">
-		<!-- Passive: M. Def. + 4%. -->
-		<passive_skill id="13740" level="2" />
+		<!-- M. Def. +4% -->
+		<passive_skill id="13740" level="2" /> <!-- Item Skill: M. Def. Increase -->
 	</option>
 	<option id="32263" name="helios_opt">
-		<!-- Passive: M. Def. + 5%. -->
-		<passive_skill id="13740" level="3" />
+		<!-- M. Def. +5% -->
+		<passive_skill id="13740" level="3" /> <!-- Item Skill: M. Def. Increase -->
 	</option>
 	<option id="32264" name="helios_opt">
-		<!-- Passive: Casting Spd. + 3%. -->
-		<passive_skill id="13742" level="1" />
+		<!-- Casting Spd. +3% -->
+		<passive_skill id="13742" level="1" /> <!-- Item Skill: Casting Spd. Increase -->
 	</option>
 	<option id="32265" name="helios_opt">
-		<!-- Passive: Casting Spd. + 4%. -->
-		<passive_skill id="13742" level="2" />
+		<!-- Casting Spd. +4% -->
+		<passive_skill id="13742" level="2" /> <!-- Item Skill: Casting Spd. Increase -->
 	</option>
 	<option id="32266" name="helios_opt">
-		<!-- Passive: Casting Spd. + 5%. -->
-		<passive_skill id="13742" level="3" />
+		<!-- Casting Spd. +5% -->
+		<passive_skill id="13742" level="3" /> <!-- Item Skill: Casting Spd. Increase -->
 	</option>
 	<option id="32267" name="helios_opt">
-		<!-- Passive: Chance of recovering 3% of damage as HP. -->
-		<passive_skill id="13752" level="1" />
+		<!-- Vampiric Rage effect +3% -->
+		<passive_skill id="13752" level="1" /> <!-- Item Skill: Vampiric Rage -->
 	</option>
 	<option id="32268" name="helios_opt">
-		<!-- Passive: Chance of recovering 4% of damage as HP. -->
-		<passive_skill id="13752" level="2" />
+		<!-- Vampiric Rage effect +4% -->
+		<passive_skill id="13752" level="2" /> <!-- Item Skill: Vampiric Rage -->
 	</option>
 	<option id="32269" name="helios_opt">
-		<!-- Passive: Chance of recovering 5% of damage as HP. -->
-		<passive_skill id="13752" level="3" />
+		<!-- Vampiric Rage effect +5% -->
+		<passive_skill id="13752" level="3" /> <!-- Item Skill: Vampiric Rage -->
 	</option>
 	<option id="32270" name="helios_opt">
-		<!-- Passive: MP Consumption of physical skills - 3%. -->
-		<passive_skill id="13743" level="1" />
+		<!-- P. Skill MP Consumption -3% -->
+		<passive_skill id="13743" level="1" /> <!-- Item Skill: MP Consumption Decrease -->
 	</option>
 	<option id="32271" name="helios_opt">
-		<!-- Passive: MP Consumption of physical skills - 4%. -->
-		<passive_skill id="13743" level="2" />
+		<!-- P. Skill MP Consumption -4% -->
+		<passive_skill id="13743" level="2" /> <!-- Item Skill: MP Consumption Decrease -->
 	</option>
 	<option id="32272" name="helios_opt">
-		<!-- Passive: MP Consumption of physical skills - 5%. -->
-		<passive_skill id="13743" level="3" />
+		<!-- P. Skill MP Consumption -5% -->
+		<passive_skill id="13743" level="3" /> <!-- Item Skill: MP Consumption Decrease -->
 	</option>
 	<option id="32273" name="helios_opt">
-		<!-- Passive: MP Consumption of magical skills - 3%. -->
-		<passive_skill id="13738" level="1" />
+		<!-- M. Skill MP Consumption -3% -->
+		<passive_skill id="13738" level="1" /> <!-- Item Skill: MP Consumption Decrease -->
 	</option>
 	<option id="32274" name="helios_opt">
-		<!-- Passive: MP Consumption of magical skills - 4%. -->
-		<passive_skill id="13738" level="2" />
+		<!-- M. Skill MP Consumption -4% -->
+		<passive_skill id="13738" level="2" /> <!-- Item Skill: MP Consumption Decrease -->
 	</option>
 	<option id="32275" name="helios_opt">
-		<!-- Passive: MP Consumption of magical skills - 5%. -->
-		<passive_skill id="13738" level="3" />
+		<!-- M. Skill MP Consumption -5% -->
+		<passive_skill id="13738" level="3" /> <!-- Item Skill: MP Consumption Decrease -->
 	</option>
 	<option id="32276" name="helios_opt">
-		<!-- Passive: Reflect 3% of received damage. -->
-		<passive_skill id="13735" level="1" />
+		<!-- Damage Reflection +3% -->
+		<passive_skill id="13735" level="1" /> <!-- Item Skill: Damage Reflection -->
 	</option>
 	<option id="32277" name="helios_opt">
-		<!-- Passive: Reflect 4% of received damage. -->
-		<passive_skill id="13735" level="2" />
+		<!-- Damage Reflection +4% -->
+		<passive_skill id="13735" level="2" /> <!-- Item Skill: Damage Reflection -->
 	</option>
 	<option id="32278" name="helios_opt">
-		<!-- Passive: Reflect 5% of received damage. -->
-		<passive_skill id="13735" level="3" />
+		<!-- Damage Reflection +5% -->
+		<passive_skill id="13735" level="3" /> <!-- Item Skill: Damage Reflection -->
 	</option>
 	<option id="32279" name="helios_opt">
-		<!-- Active: Attack target with 6074 power added to P. Atk. -->
-		<active_skill id="13707" level="1" />
+		<!-- Active skill: Deals physical damage with 6074 power. -->
+		<active_skill id="13707" level="1" /> <!-- Item Skill: Power Strike -->
 	</option>
 	<option id="32280" name="helios_opt">
-		<!-- Active: Attack target with 6750 power added to P. Atk. -->
-		<active_skill id="13707" level="2" />
+		<!-- Active skill: Deals physical damage with 6750 power. -->
+		<active_skill id="13707" level="2" /> <!-- Item Skill: Power Strike -->
 	</option>
 	<option id="32281" name="helios_opt">
-		<!-- Active: Attack target with 7500 power added to P. Atk. -->
-		<active_skill id="13707" level="3" />
+		<!-- Active skill: Deals physical damage with 7500 power. -->
+		<active_skill id="13707" level="3" /> <!-- Item Skill: Power Strike -->
 	</option>
 	<option id="32282" name="helios_opt">
-		<!-- Active: Attack target with 5466 power added to P. Atk. -->
-		<active_skill id="13705" level="1" />
+		<!-- Active skill: Deals physical damage with 5466 power. -->
+		<active_skill id="13705" level="1" /> <!-- Item Skill: Power Shot -->
 	</option>
 	<option id="32283" name="helios_opt">
-		<!-- Active: Attack target with 6074 power added to P. Atk. -->
-		<active_skill id="13705" level="2" />
+		<!-- Active skill: Deals physical damage with 6074 power. -->
+		<active_skill id="13705" level="2" /> <!-- Item Skill: Power Shot -->
 	</option>
 	<option id="32284" name="helios_opt">
-		<!-- Active: Attack target with 6750 power added to P. Atk. -->
-		<active_skill id="13705" level="3" />
+		<!-- Active skill: Deals physical damage with 6750 power. -->
+		<active_skill id="13705" level="3" /> <!-- Item Skill: Power Shot -->
 	</option>
 	<option id="32285" name="helios_opt">
-		<!-- Active: Attack target and those around with 4250 power added to P. Atk. -->
-		<active_skill id="13704" level="1" />
+		<!-- Active skill: Deals physical damage to the target and nearby enemies with 4250 power. -->
+		<active_skill id="13704" level="1" /> <!-- Item Skill: Power Multishot -->
 	</option>
 	<option id="32286" name="helios_opt">
-		<!-- Active: Attack target and those around with 4724 power added to P. Atk. -->
-		<active_skill id="13704" level="2" />
+		<!-- Active skill: Deals physical damage to the target and nearby enemies with 4724 power. -->
+		<active_skill id="13704" level="2" /> <!-- Item Skill: Power Multishot -->
 	</option>
 	<option id="32287" name="helios_opt">
-		<!-- Active: Attack target and those around with 5250 power added to P. Atk. -->
-		<active_skill id="13704" level="3" />
+		<!-- Active skill: Deals physical damage to the target and nearby enemies with 5250 power. -->
+		<active_skill id="13704" level="3" /> <!-- Item Skill: Power Multishot -->
 	</option>
 	<option id="32288" name="helios_opt">
-		<!-- Active: Attack target and those around with 4250 power added to P. Atk. -->
-		<active_skill id="13706" level="1" />
+		<!-- Active skill: Deals physical damage to the target and nearby enemies with 4250 power. -->
+		<active_skill id="13706" level="1" /> <!-- Item Skill: Power Storm -->
 	</option>
 	<option id="32289" name="helios_opt">
-		<!-- Active: Attack target and those around with 4724 power added to P. Atk. -->
-		<active_skill id="13706" level="2" />
+		<!-- Active skill: Deals physical damage to the target and nearby enemies with 4724 power. -->
+		<active_skill id="13706" level="2" /> <!-- Item Skill: Power Storm -->
 	</option>
 	<option id="32290" name="helios_opt">
-		<!-- Active: Attack target and those around with 5250 power added to P. Atk. -->
-		<active_skill id="13706" level="3" />
+		<!-- Active skill: Deals physical damage to the target and nearby enemies with 5250 power. -->
+		<active_skill id="13706" level="3" /> <!-- Item Skill: Power Storm -->
 	</option>
 	<option id="32291" name="helios_opt">
-		<!-- Active: Attack enemies around with 4250 power added to P. Atk. -->
-		<active_skill id="13703" level="1" />
+		<!-- Active skill: Deals AoE physical damage with 4250 power. -->
+		<active_skill id="13703" level="1" /> <!-- Item Skill: Power Eruption -->
 	</option>
 	<option id="32292" name="helios_opt">
-		<!-- Active: Attack enemies around with 4724 power added to P. Atk. -->
-		<active_skill id="13703" level="2" />
+		<!-- Active skill: Deals AoE physical damage with 4724 power. -->
+		<active_skill id="13703" level="2" /> <!-- Item Skill: Power Eruption -->
 	</option>
 	<option id="32293" name="helios_opt">
-		<!-- Active: Attack enemies around with 5250 power added to P. Atk. -->
-		<active_skill id="13703" level="3" />
+		<!-- Active skill: Deals AoE physical damage with 5250 power. -->
+		<active_skill id="13703" level="3" /> <!-- Item Skill: Power Eruption -->
 	</option>
 	<option id="32294" name="helios_opt">
-		<!-- Active: Attack target with 89 power added to M. Atk. -->
-		<active_skill id="13729" level="1" />
+		<!-- Active skill: Deals magical damage with 89 power. -->
+		<active_skill id="13729" level="1" /> <!-- Item Skill: Wind Flare -->
 	</option>
 	<option id="32295" name="helios_opt">
-		<!-- Active: Attack target with 99 power added to M. Atk. -->
-		<active_skill id="13729" level="2" />
+		<!-- Active skill: Deals magical damage with 99 power. -->
+		<active_skill id="13729" level="2" /> <!-- Item Skill: Wind Flare -->
 	</option>
 	<option id="32296" name="helios_opt">
-		<!-- Active: Attack target with 111 power added to M. Atk. -->
-		<active_skill id="13729" level="3" />
+		<!-- Active skill: Deals magical damage with 111 power. -->
+		<active_skill id="13729" level="3" /> <!-- Item Skill: Wind Flare -->
 	</option>
 	<option id="32297" name="helios_opt">
-		<!-- Active: Attack target with 80 power added to M. Atk. -->
-		<active_skill id="13732" level="1" />
+		<!-- Active skill: Deals magical damage with 80 power. -->
+		<active_skill id="13732" level="1" /> <!-- Item Skill: Wind Strike -->
 	</option>
 	<option id="32298" name="helios_opt">
-		<!-- Active: Attack target with 89 power added to M. Atk. -->
-		<active_skill id="13732" level="2" />
+		<!-- Active skill: Deals magical damage with 89 power. -->
+		<active_skill id="13732" level="2" /> <!-- Item Skill: Wind Strike -->
 	</option>
 	<option id="32299" name="helios_opt">
-		<!-- Active: Attack target with 99 power added to M. Atk. -->
-		<active_skill id="13732" level="3" />
+		<!-- Active skill: Deals magical damage with 99 power. -->
+		<active_skill id="13732" level="3" /> <!-- Item Skill: Wind Strike -->
 	</option>
 </list>

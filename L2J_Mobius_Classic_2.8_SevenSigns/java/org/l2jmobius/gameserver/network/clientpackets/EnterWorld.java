@@ -29,8 +29,10 @@ import org.l2jmobius.gameserver.data.sql.OfflineTraderTable;
 import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.data.xml.BeautyShopData;
 import org.l2jmobius.gameserver.data.xml.ClanHallData;
+import org.l2jmobius.gameserver.data.xml.EnchantItemGroupsData;
 import org.l2jmobius.gameserver.data.xml.SkillTreeData;
 import org.l2jmobius.gameserver.enums.ChatType;
+import org.l2jmobius.gameserver.enums.IllegalActionPunishmentType;
 import org.l2jmobius.gameserver.enums.PlayerCondOverride;
 import org.l2jmobius.gameserver.enums.SubclassInfoType;
 import org.l2jmobius.gameserver.enums.TeleportWhereType;
@@ -111,6 +113,7 @@ import org.l2jmobius.gameserver.network.serverpackets.dailymission.ExConnectedTi
 import org.l2jmobius.gameserver.network.serverpackets.dailymission.ExOneDayReceiveRewardList;
 import org.l2jmobius.gameserver.network.serverpackets.friend.L2FriendList;
 import org.l2jmobius.gameserver.util.BuilderUtil;
+import org.l2jmobius.gameserver.util.Util;
 
 /**
  * Enter World Packet Handler
@@ -552,6 +555,31 @@ public class EnterWorld implements ClientPacket
 		if (!player.canOverrideCond(PlayerCondOverride.ZONE_CONDITIONS) && player.isInsideZone(ZoneId.SIEGE) && (!player.isInSiege() || (player.getSiegeState() < 2)))
 		{
 			player.teleToLocation(TeleportWhereType.TOWN);
+		}
+		
+		// Over-enchant protection.
+		if (Config.OVER_ENCHANT_PROTECTION && !player.isGM())
+		{
+			boolean punish = false;
+			for (Item item : player.getInventory().getItems())
+			{
+				if (item.isEquipable() //
+					&& ((item.isWeapon() && (item.getEnchantLevel() > EnchantItemGroupsData.getInstance().getMaxWeaponEnchant())) //
+						|| ((item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY) && (item.getEnchantLevel() > EnchantItemGroupsData.getInstance().getMaxAccessoryEnchant())) //
+						|| (item.getEnchantLevel() > EnchantItemGroupsData.getInstance().getMaxArmorEnchant())))
+				{
+					player.getInventory().destroyItem("Over-enchant protection", item, player, null);
+					PacketLogger.info("Over-enchanted " + item + " has been removed from " + player);
+					punish = true;
+				}
+			}
+			if (punish && (Config.OVER_ENCHANT_PUNISHMENT != IllegalActionPunishmentType.NONE))
+			{
+				player.sendMessage("[Server]: You have over-enchanted items!");
+				player.sendMessage("[Server]: Respect our server rules.");
+				player.sendPacket(new ExShowScreenMessage("You have over-enchanted items!", 6000));
+				Util.handleIllegalPlayerAction(player, player.getName() + " has over-enchanted items.", Config.OVER_ENCHANT_PUNISHMENT);
+			}
 		}
 		
 		// Remove demonic weapon if character is not cursed weapon equipped.

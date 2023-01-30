@@ -14,7 +14,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="5187" sp="3299" attributeExp="684" />
+		<acquire exp="5187" sp="3298" attributeExp="684" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="3443.016" hpRegen="10.2" mp="2311.2" mpRegen="3.6" />
 			<attack physical="1319.072" magical="675.568" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -30,7 +30,7 @@
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
 			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="2" /> <!-- MP Medium-High -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
 			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
@@ -48,41 +48,6 @@
 			<radius normal="15" />
 			<height normal="30" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="338" max="789" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0043">
-					<item id="92" min="1" max="1" chance="4.5455" /> <!-- Spirit's Staff -->
-					<item id="92791" min="1" max="1" chance="95.4545" /> <!-- Spirit's Staff Head -->
-				</group>
-				<group chance="6.5265">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="4965" min="1" max="1" chance="0.0008" /> <!-- Recipe: Spirit's Staff (60%) -->
-				<item id="4184" min="1" max="1" chance="0.0005" /> <!-- Recipe: Spirit's Staff (100%) -->
-				<item id="92996" min="1" max="1" chance="16.0538" /> <!-- Ancient Resources - Sealed -->
-				<item id="92997" min="1" max="1" chance="3.2108" /> <!-- Old Unknown Resources - Sealed -->
-				<item id="92998" min="1" max="1" chance="1.6054" /> <!-- Old Shining Resources - Sealed -->
-				<item id="92995" min="1" max="1" chance="0.1605" /> <!-- Drained Thons - Sealed -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20801" level="77" type="Monster" name="Pikeman" element="WATER">
 		<parameters>
@@ -101,7 +66,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="302" /> <!-- Body Slasher -->
-		<acquire exp="5265" sp="3425" attributeExp="770" />
+		<acquire exp="5265" sp="3424" attributeExp="770" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="3496.312" hpRegen="10.2" mp="2361" mpRegen="3.6" />
 			<attack physical="1370.304" magical="701.808" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
@@ -117,7 +82,7 @@
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="3" /> <!-- MP Medium-High -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
 			<skill id="4412" level="13" /> <!-- Slightly Strong P. Def. -->
@@ -139,35 +104,6 @@
 			<radius normal="27" />
 			<height normal="34.8" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="339" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="16.3597">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92996" min="1" max="1" chance="24.1447" /> <!-- Ancient Resources - Sealed -->
-				<item id="92997" min="1" max="1" chance="4.8289" /> <!-- Old Unknown Resources - Sealed -->
-				<item id="92998" min="1" max="1" chance="2.4145" /> <!-- Old Shining Resources - Sealed -->
-				<item id="92995" min="1" max="1" chance="0.2414" /> <!-- Drained Thons - Sealed -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20802" level="78" type="Monster" name="Mage" element="WATER">
 		<parameters>
@@ -187,7 +123,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<equipment rhand="192" /> <!-- Crystal Staff -->
-		<acquire exp="5318" sp="4334" attributeExp="858" />
+		<acquire exp="5317" sp="4334" attributeExp="858" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="3547.976" hpRegen="10.2" mp="2411.1" mpRegen="3.6" />
 			<attack physical="1424.8" magical="729.712" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -203,7 +139,7 @@
 		<skillList>
 			<skill id="4416" level="9" /> <!-- Demons -->
 			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="5" /> <!-- MP High -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="13" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
 			<skill id="4412" level="12" /> <!-- Slightly Strong P. Def. -->
@@ -227,35 +163,6 @@
 			<radius normal="20" />
 			<height normal="32.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="794" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="16.4161">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92996" min="1" max="1" chance="24.2279" /> <!-- Ancient Resources - Sealed -->
-				<item id="92997" min="1" max="1" chance="4.8456" /> <!-- Old Unknown Resources - Sealed -->
-				<item id="92998" min="1" max="1" chance="2.4228" /> <!-- Old Shining Resources - Sealed -->
-				<item id="92995" min="1" max="1" chance="0.2423" /> <!-- Drained Thons - Sealed -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20803" level="78" type="Monster" name="Doll Master" element="WATER">
 		<parameters>
@@ -273,7 +180,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="5318" sp="4646" attributeExp="858" />
+		<acquire exp="5317" sp="4645" attributeExp="858" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="3547.976" hpRegen="10.2" mp="2411.1" mpRegen="3.6" />
 			<attack physical="1424.8" magical="729.712" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -289,7 +196,7 @@
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="3" /> <!-- MP Medium-High -->
+			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
 			<skill id="4412" level="14" /> <!-- Strong P. Def. -->
@@ -307,35 +214,6 @@
 			<radius normal="20" />
 			<height normal="42" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="794" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="16.4161">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92996" min="1" max="1" chance="24.2279" /> <!-- Ancient Resources - Sealed -->
-				<item id="92997" min="1" max="1" chance="4.8456" /> <!-- Old Unknown Resources - Sealed -->
-				<item id="92998" min="1" max="1" chance="2.4228" /> <!-- Old Shining Resources - Sealed -->
-				<item id="92995" min="1" max="1" chance="0.2423" /> <!-- Drained Thons - Sealed -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20804" level="41" type="Monster" name="Crokian Lad">
 		<parameters>
@@ -352,7 +230,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="5128" /> <!-- Crokian Blade -->
-		<acquire exp="6566" sp="197" />
+		<acquire exp="1481" sp="197" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1063.54199060681" hpRegen="5.5" mp="504.8" mpRegen="2.1" />
 			<attack physical="187.11878" magical="127.77787" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -389,32 +267,6 @@
 			<radius normal="36" />
 			<height normal="61" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="15" max="36" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0032">
-					<item id="353" min="1" max="1" chance="9.6063" /> <!-- Half Plate Armor -->
-					<item id="92537" min="1" max="1" chance="28.8189" /> <!-- Half Plate Temper -->
-					<item id="380" min="1" max="1" chance="15.3938" /> <!-- Plate Gaiters -->
-					<item id="92538" min="1" max="1" chance="46.181" /> <!-- Plate Gaiter Fragment -->
-				</group>
-				<group chance="0.2687">
-					<item id="92908" min="1" max="1" chance="73.6549" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.731" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3655" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4552" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="1.4731" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92916" min="1" max="1" chance="0.0737" /> <!-- Material: Animal Spirit - Sealed -->
-					<item id="2993" min="1" max="1" chance="0.2338" /> <!-- Recipe: Dwarven Chain Boots (100%) -->
-					<item id="2301" min="1" max="1" chance="0.0128" /> <!-- Recipe: Battle Axe (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2990" min="1" max="1" chance="0.0204" /> <!-- Recipe: Chain Boots (100%) -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20805" level="42" type="Monster" name="Dailaon Lad">
 		<parameters>
@@ -431,7 +283,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="5127" /> <!-- Dailaon Knife -->
-		<acquire exp="6903" sp="208" />
+		<acquire exp="1554" sp="207" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1108.45623972656" hpRegen="5.5" mp="531" mpRegen="2.1" />
 			<attack physical="198.34591" magical="135.44454" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -468,28 +320,6 @@
 			<radius normal="40" />
 			<height normal="58" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="17" max="40" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0006">
-					<item id="280" min="1" max="1" chance="25" /> <!-- Light Bow -->
-					<item id="92629" min="1" max="1" chance="75" /> <!-- Light Bow Shaft -->
-				</group>
-				<group chance="0.3958">
-					<item id="92908" min="1" max="1" chance="73.8371" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.7674" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3837" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4612" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="1.4767" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92916" min="1" max="1" chance="0.0739" /> <!-- Material: Animal Spirit - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2999" min="1" max="1" chance="0.0191" /> <!-- Recipe: Plated Leather Gloves (100%) -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20806" level="43" type="Monster" name="Crokian Lad Warrior">
 		<parameters>
@@ -506,7 +336,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="5128" /> <!-- Crokian Blade -->
-		<acquire exp="7236" sp="218" />
+		<acquire exp="1633" sp="217" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1154.31374327461" hpRegen="5.5" mp="557.4" mpRegen="2.1" />
 			<attack physical="210.04832" magical="143.43577" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -543,32 +373,6 @@
 			<radius normal="36" />
 			<height normal="61" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="17" max="41" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0015">
-					<item id="262" min="1" max="1" chance="4.8116" /> <!-- Scallop Jamadhr -->
-					<item id="92628" min="1" max="1" chance="14.4347" /> <!-- Scallop Jamadhr Edge -->
-					<item id="396" min="1" max="1" chance="20.1884" /> <!-- Salamander Skin Mail -->
-					<item id="92539" min="1" max="1" chance="60.5653" /> <!-- Salamander Skin Mail Texture -->
-				</group>
-				<group chance="0.3418">
-					<item id="92908" min="1" max="1" chance="73.8275" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.7655" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3828" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4609" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="1.4766" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92916" min="1" max="1" chance="0.0738" /> <!-- Material: Animal Spirit - Sealed -->
-					<item id="2302" min="1" max="1" chance="0.0129" /> <!-- Recipe: Silver Axe (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2307" min="1" max="1" chance="0.0006" /> <!-- Recipe: Heavy Doom Axe (100%) -->
-				<item id="92537" min="1" max="1" chance="0.0055" /> <!-- Half Plate Temper -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20807" level="44" type="Monster" name="Farhite Lad">
 		<parameters>
@@ -587,7 +391,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="5131" /> <!-- Monster Only (Parhit Staff) -->
-		<acquire exp="7576" sp="228" />
+		<acquire exp="1713" sp="227" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1201.08570061422" hpRegen="5.5" mp="584" mpRegen="2.1" />
 			<attack physical="222.23112" magical="151.75505" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -626,32 +430,6 @@
 			<radius normal="24" />
 			<height normal="48" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="17" max="41" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0006">
-					<item id="71" min="1" max="1" chance="4.5455" /> <!-- Flamberge -->
-					<item id="92634" min="1" max="1" chance="45.4545" /> <!-- Flamberge Blade -->
-					<item id="72" min="1" max="1" chance="4.5455" /> <!-- Stormbringer -->
-					<item id="92635" min="1" max="1" chance="45.4545" /> <!-- Stormbringer Blade -->
-				</group>
-				<group chance="0.4028">
-					<item id="92908" min="1" max="1" chance="73.8371" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.7674" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3837" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4612" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="1.4767" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92916" min="1" max="1" chance="0.0739" /> <!-- Material: Animal Spirit - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2164" min="1" max="1" chance="0.0074" /> <!-- Recipe: Ring of Protection (100%) -->
-				<item id="2221" min="1" max="1" chance="0.0032" /> <!-- Recipe: Rind Leather Gaiters (100%) -->
-				<item id="2303" min="1" max="1" chance="0.0004" /> <!-- Recipe: Skull Graver (100%) -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20808" level="45" type="Monster" name="Nos Lad">
 		<parameters>
@@ -668,7 +446,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="128" /> <!-- Knight's Sword -->
-		<acquire exp="7890" sp="237" />
+		<acquire exp="1800" sp="237" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1248.74044783714" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
 			<attack physical="234.89829" magical="160.40508" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -708,35 +486,6 @@
 			<radius normal="52" />
 			<height normal="86" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="18" max="42" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0006">
-					<item id="96" min="1" max="1" chance="3.0303" /> <!-- Scythe -->
-					<item id="92637" min="1" max="1" chance="30.303" /> <!-- Scythe Edge -->
-					<item id="298" min="1" max="1" chance="3.0303" /> <!-- Orcish Glaive -->
-					<item id="92650" min="1" max="1" chance="30.303" /> <!-- Orcish Glaive Blade -->
-					<item id="302" min="1" max="1" chance="3.0303" /> <!-- Body Slasher -->
-					<item id="92651" min="1" max="1" chance="30.3031" /> <!-- Body Slasher Blade -->
-				</group>
-				<group chance="0.4562">
-					<item id="92908" min="1" max="1" chance="49.4069" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="9.8814" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="4.9407" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.6469" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.9881" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92916" min="1" max="1" chance="0.0494" /> <!-- Material: Animal Spirit - Sealed -->
-					<!-- <item id="2508" min="1" max="1" chance="32.938" /> Cursed Bone - Not Available -->
-					<item id="2209" min="1" max="1" chance="0.1486" /> <!-- Recipe: Eldarake (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92649" min="1" max="1" chance="0.0016" /> <!-- Frozen Bow Shaft -->
-				<item id="2340" min="1" max="1" chance="0.0003" /> <!-- Recipe: Pa'agrio Hammer (100%) -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20809" level="54" type="Monster" name="Ghost of the Tower" element="WIND">
 		<parameters>
@@ -753,7 +502,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="51088" sp="1533" attributeExp="10" />
+		<acquire exp="2686" sp="1533" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1710.71326882197" hpRegen="6.5" mp="861" mpRegen="2.4" />
 			<attack physical="543.29997312" magical="262.675068" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -814,7 +563,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="2780" sp="809" />
+		<acquire exp="2780" sp="808" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1764.82565992283" hpRegen="6.5" mp="889.8" mpRegen="2.4" />
 			<attack physical="597.736077" magical="279.54525" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -874,7 +623,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="54507" sp="1636" attributeExp="12" />
+		<acquire exp="2879" sp="1635" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1819.28596798157" hpRegen="6.5" mp="918.8" mpRegen="2.4" />
 			<attack physical="655.9082998" magical="296.921755" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -931,7 +680,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="284" /> <!-- rhand: Dark Elven Long Bow -->
-		<acquire exp="56644" sp="1700" attributeExp="13" />
+		<acquire exp="2979" sp="1699" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1874.02972214133" hpRegen="6.5" mp="948" mpRegen="2.4" />
 			<attack physical="717.948306675" magical="314.8043265" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -986,7 +735,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="58343" sp="1751" attributeExp="13" />
+		<acquire exp="3081" sp="1750" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1928.99015211091" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
 			<attack physical="783.9824916" magical="333.192006" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1044,7 +793,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="79" /> <!-- rhand: Sword of Damascus -->
-		<acquire exp="3193" sp="1833" />
+		<acquire exp="3192" sp="1832" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1984.09830322793" hpRegen="6.5" mp="1007" mpRegen="2.4" />
 			<attack physical="854.1311072" magical="352.0830985" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
@@ -1103,7 +852,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="3302" sp="1227" />
+		<acquire exp="3301" sp="1227" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2039.28316159136" hpRegen="6.5" mp="1036.8" mpRegen="2.4" />
 			<attack physical="928.5071787" magical="408.622632" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1161,7 +910,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="946" lhand="945" /> <!-- rhand: Skeleton Dagger lhand: Skeleton Buckler -->
-		<acquire exp="3401" sp="1295" />
+		<acquire exp="3401" sp="1294" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2094.47178903934" hpRegen="7.5" mp="1066.8" mpRegen="2.7" />
 			<attack physical="1107.9370276425" magical="430.5013493" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -1222,7 +971,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<equipment rhand="210" /> <!-- rhand: Staff of Evil Spirits -->
-		<acquire exp="88040" sp="2642" attributeExp="17" />
+		<acquire exp="3502" sp="2641" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2149.58946769827" hpRegen="7.5" mp="1097" mpRegen="2.7" />
 			<attack physical="1217.024755584" magical="452.9230992" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1279,7 +1028,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="78" /> <!-- rhand: Great Sword -->
-		<acquire exp="3608" sp="1406" />
+		<acquire exp="3608" sp="1405" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2204.55985377975" hpRegen="7.5" mp="1127.4" mpRegen="2.7" />
 			<attack physical="1333.6342542765" magical="475.8825819" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1334,7 +1083,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="95257" sp="2858" attributeExp="20" />
+		<acquire exp="3719" sp="2858" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2259.30514025271" hpRegen="7.5" mp="1158" mpRegen="2.7" />
 			<attack physical="1458.010474272" magical="499.3735516" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -1395,7 +1144,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="84" /> <!-- rhand: Tallum Blade -->
-		<acquire exp="50487" sp="1515" attributeExp="22" />
+		<acquire exp="3828" sp="1515" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2313.74622796964" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
 			<attack physical="1590.3838768125" magical="523.38888525" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1457,7 +1206,7 @@
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="3939" /> <!-- rhand: Lady's Fan -->
-		<acquire exp="124849" sp="3746" attributeExp="23" />
+		<acquire exp="3942" sp="3745" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2367.80290477825" hpRegen="7.5" mp="1219.8" mpRegen="2.7" />
 			<attack physical="1730.9682423" magical="547.9204896" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1515,7 +1264,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
-		<acquire exp="50107" sp="1504" attributeExp="22" />
+		<acquire exp="3828" sp="1503" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2313.74622796964" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
 			<attack physical="1590.3838768125" magical="523.38888525" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -1575,7 +1324,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="242" /> <!-- rhand: Soulfire Dirk -->
-		<acquire exp="68983" sp="2070" attributeExp="26" />
+		<acquire exp="4185" sp="2069" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2474.43773844242" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
 			<attack physical="2037.528260196" magical="598.495535" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -1631,7 +1380,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="1472" /> <!-- rhand: Dreadbane -->
-		<acquire exp="71592" sp="2148" attributeExp="28" />
+		<acquire exp="4309" sp="2148" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2526.85161916379" hpRegen="7.5" mp="1314" mpRegen="2.7" />
 			<attack physical="2203.828107624" magical="624.51810135" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1689,7 +1438,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="68942" sp="2069" attributeExp="26" />
+		<acquire exp="4185" sp="2068" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2474.43773844242" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
 			<attack physical="2037.528260196" magical="598.495535" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1751,7 +1500,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="284" /> <!-- rhand: Carnage Bow -->
-		<acquire exp="116979" sp="3510" attributeExp="28" />
+		<acquire exp="4309" sp="3509" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2526.85161916379" hpRegen="7.5" mp="1314" mpRegen="2.7" />
 			<attack physical="2203.828107624" magical="624.51810135" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -1811,7 +1560,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- rhand: Sword of Valhalla -->
-		<acquire exp="74309" sp="2230" attributeExp="30" />
+		<acquire exp="4435" sp="2229" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2578.55294197919" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
 			<attack physical="2378.98286604" magical="651.015134" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1877,7 +1626,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="202" /> <!-- rhand: Mace of Underworld -->
-		<acquire exp="78586" sp="2358" attributeExp="31" />
+		<acquire exp="4562" sp="2358" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2629.45885739491" hpRegen="8.5" mp="1377.8" mpRegen="3" />
 			<attack physical="2563.0897233975" magical="677.97384545" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1940,7 +1689,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="79" /> <!-- rhand: Tear of Darkness -->
-		<acquire exp="171417" sp="5143" attributeExp="36" />
+		<acquire exp="4828" sp="5142" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2728.55377387479" hpRegen="8.5" mp="1442.4" mpRegen="3" />
 			<attack physical="3027.599342075" magical="733.21998035" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2005,6 +1754,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- rhand: Sword of Valhalla -->
+		<acquire exp="5085" sp="2735" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2823.47946968528" hpRegen="8.5" mp="1507.8" mpRegen="3" />
 			<attack physical="3543.109918425" magical="790.13441925" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2068,6 +1818,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- rhand: Sword of Valhalla -->
+		<acquire exp="5187" sp="2882" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2869.17670907346" hpRegen="8.5" mp="1540.8" mpRegen="3" />
 			<attack physical="3820.16621107" magical="819.1749115" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2130,7 +1881,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="292" /> <!-- Pike -->
-		<acquire exp="3264" sp="221" /> <!-- Need confirm retail values -->
+		<acquire exp="1633" sp="65" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1154.31374327461" hpRegen="5.5" mp="557.4" mpRegen="2.1" />
 			<attack physical="210.04832" magical="143.43577" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2185,7 +1936,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="279" /> <!-- Reinforced Longbow -->
-		<acquire exp="3631" sp="248" /> <!-- Need confirm retail value -->
+		<acquire exp="1713" sp="68" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1201.08570061422" hpRegen="5.5" mp="584" mpRegen="2.1" />
 			<attack physical="222.23112" magical="151.75505" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -2236,7 +1987,7 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="5402" sp="360" /> <!-- Need confirm retail values -->
+		<acquire exp="1554" sp="118" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1108.45623972656" hpRegen="5.5" mp="531" mpRegen="2.1" />
 			<attack physical="198.34591" magical="135.44454" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2292,7 +2043,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="2974" sp="206" /> <!-- Need confirm retail values -->
+		<acquire exp="1800" sp="71" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1248.74044783714" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
 			<attack physical="234.89829" magical="160.40508" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2346,7 +2097,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="225" /> <!-- Mithril Dagger -->
-		<acquire exp="6798" sp="466" /> <!-- Need confirm retail values -->
+		<acquire exp="1713" sp="145" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1201.08570061422" hpRegen="5.5" mp="584" mpRegen="2.1" />
 			<attack physical="222.23112" magical="151.75505" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -2399,7 +2150,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="194" /> <!-- Heavy Doom Axe -->
-		<acquire exp="6158" sp="428" /> <!-- Need confirm retail values -->
+		<acquire exp="1800" sp="136" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1248.74044783714" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
 			<attack physical="234.89829" magical="160.40508" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2452,7 +2203,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="5772" sp="402" /> <!-- Need confirm retail values -->
+		<acquire exp="1800" sp="135" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1248.74044783714" hpRegen="5.5" mp="610.8" mpRegen="2.1" />
 			<attack physical="234.89829" magical="160.40508" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -2507,7 +2258,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="3452" sp="245" /> <!-- Need confirm retail values -->
+		<acquire exp="1890" sp="74" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1297.24344275991" hpRegen="5.5" mp="637.8" mpRegen="2.1" />
 			<attack physical="248.0526" magical="169.38777" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2562,7 +2313,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="94263" sp="2827" />
+		<acquire exp="1984" sp="77" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1346.55725878612" hpRegen="5.5" mp="665" mpRegen="2.1" />
 			<attack physical="261.69549" magical="178.7041" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2620,7 +2371,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="3662" sp="268" /> <!-- Need confirm retail values -->
+		<acquire exp="2083" sp="81" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1396.64158795631" hpRegen="5.5" mp="692.4" mpRegen="2.1" />
 			<attack physical="275.82705" magical="188.35412" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -2678,7 +2429,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="3492" sp="258" /> <!-- Need confirm retail values -->
+		<acquire exp="2187" sp="84" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1447.45325347694" hpRegen="5.5" mp="720" mpRegen="2.1" />
 			<attack physical="290.44588" magical="198.33688" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2736,7 +2487,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="225" lhand="945" /> <!-- Mithril Dagger / Skeleton Buckler -->
-		<acquire exp="4413" sp="332" /> <!-- Need confirm retail values -->
+		<acquire exp="2298" sp="87" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1498.94623198693" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
 			<attack physical="305.54906" magical="208.6504" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -2793,7 +2544,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="3935" sp="300" /> <!-- Need confirm retail values -->
+		<acquire exp="2388" sp="91" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1551.07168578515" hpRegen="6.5" mp="775.8" mpRegen="2.4" />
 			<attack physical="321.13207" magical="219.29157" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2852,7 +2603,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="232" /> <!-- Dark Elven Dagger -->
-		<acquire exp="5944" sp="460" /> <!-- Need confirm retail values -->
+		<acquire exp="2485" sp="110" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1603.77800520503" hpRegen="6.5" mp="804" mpRegen="2.4" />
 			<attack physical="337.18867" magical="230.25615" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -2909,7 +2660,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<equipment rhand="5129" lhand="5129" /> <!-- Doll Knife / Doll Knife -->
-		<acquire exp="129198" sp="3875" />
+		<acquire exp="2584" sp="98" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1657.01086128246" hpRegen="6.5" mp="832.4" mpRegen="2.4" />
 			<attack physical="353.71092" magical="241.5387" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -2969,7 +2720,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="90904" sp="2727" />
+		<acquire exp="2686" sp="102" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1710.71326882197" hpRegen="6.5" mp="861" mpRegen="2.4" />
 			<attack physical="370.68904" magical="253.13256" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3024,7 +2775,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire exp="5838" sp="414" /> <!-- Need confirm retail values -->
+		<acquire exp="1890" sp="142" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1297.24344275991" hpRegen="5.5" mp="637.8" mpRegen="2.1" />
 			<attack physical="248.0526" magical="169.38777" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3114,35 +2865,6 @@
 			<radius normal="7.5" />
 			<height normal="25.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="342" max="798" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="16.4963">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92996" min="1" max="1" chance="24.3463" /> <!-- Ancient Resources - Sealed -->
-				<item id="92997" min="1" max="1" chance="4.8693" /> <!-- Old Unknown Resources - Sealed -->
-				<item id="92998" min="1" max="1" chance="2.4346" /> <!-- Old Shining Resources - Sealed -->
-				<item id="92995" min="1" max="1" chance="0.2435" /> <!-- Drained Thons - Sealed -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20850" level="50" type="Monster" name="Golden Stag Lord">
 		<parameters>
@@ -3158,7 +2880,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="3782" sp="284" /> <!-- Need confirm retail values -->
+		<acquire exp="2298" sp="90" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1498.94623198693" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
 			<attack physical="305.54906" magical="208.6504" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3211,7 +2933,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire exp="3409" sp="245" /> <!-- Need confirm retail values -->
+		<acquire exp="1984" sp="80" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1346.55725878612" hpRegen="5.5" mp="665" mpRegen="2.1" />
 			<attack physical="261.69549" magical="178.7041" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3264,7 +2986,7 @@
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="3939" /> <!-- Monster Only (Bensh) -->
-		<acquire exp="38968" sp="1169" />
+		<acquire exp="3301" sp="130" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2039.28316159136" hpRegen="6.5" mp="1036.8" mpRegen="2.4" />
 			<attack physical="481.34551" magical="328.69659" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -3317,7 +3039,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="242" /> <!-- Soulfire Dirk -->
-		<acquire exp="9389" sp="872" /> <!-- Need confirm retail values -->
+		<acquire exp="3828" sp="169" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2313.74622796964" hpRegen="7.5" mp="1188.8" mpRegen="2.7" />
 			<attack physical="582.81759" magical="397.98887" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -3373,7 +3095,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- rhand: Sword of Valhalla -->
-		<acquire exp="9223" sp="868" /> <!-- Need confirm retail values -->
+		<acquire exp="3942" sp="158" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2367.80290477825" hpRegen="7.5" mp="1219.8" mpRegen="2.7" />
 			<attack physical="603.79903" magical="412.31647" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3429,7 +3151,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="288" /> <!-- rhand: Carnage Bow -->
-		<acquire exp="10680" sp="1018" /> <!-- Need confirm retail values -->
+		<acquire exp="4063" sp="213" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2421.39403210377" hpRegen="7.5" mp="1251" mpRegen="2.7" />
 			<attack physical="624.93199" magical="426.74754" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -3485,7 +3207,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="202" /> <!-- rhand: Mace of Underworld -->
-		<acquire exp="7669" sp="740" /> <!-- Need confirm retail values -->
+		<acquire exp="4185" sp="181" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2474.43773844242" hpRegen="7.5" mp="1282.4" mpRegen="2.7" />
 			<attack physical="646.17968" magical="441.25696" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3538,7 +3260,7 @@
 		</parameters>
 		<race>DIVINE</race>
 		<sex>MALE</sex>
-		<acquire exp="9779" sp="970" /> <!-- Need confirm retail values -->
+		<acquire exp="4435" sp="177" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2578.55294197919" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
 			<attack physical="688.86373" magical="470.40463" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3599,7 +3321,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- Sword of Valhalla -->
-		<acquire exp="10923" sp="1110" /> <!-- Need confirm retail values -->
+		<acquire exp="4697" sp="188" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2679.48661343362" hpRegen="8.5" mp="1410" mpRegen="3" />
 			<attack physical="731.52506" magical="499.53679" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3658,6 +3380,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- rhand: Sword of Valhalla -->
+		<acquire exp="5085" sp="5418" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2823.47946968528" hpRegen="8.5" mp="1507.8" mpRegen="3" />
 			<attack physical="3543.109918425" magical="790.13441925" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3718,6 +3441,7 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="148" /> <!-- rhand: Sword of Valhalla -->
+		<acquire exp="5187" sp="5636" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2869.17670907346" hpRegen="8.5" mp="1540.8" mpRegen="3" />
 			<attack physical="3820.16621107" magical="819.1749115" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3779,7 +3503,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="127" /> <!-- Crimson Sword -->
-		<acquire exp="6640" sp="545" /> <!-- Need confirm retail values -->
+		<acquire exp="2879" sp="113" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1819.28596798157" hpRegen="6.5" mp="918.8" mpRegen="2.4" />
 			<attack physical="405.96455" magical="277.22116" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3840,7 +3564,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="78" /> <!-- Great Sword -->
-		<acquire exp="9329" sp="984" /> <!-- Need confirm retail values -->
+		<acquire exp="5085" sp="204" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2823.47946968528" hpRegen="8.5" mp="1507.8" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />

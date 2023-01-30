@@ -404,18 +404,49 @@
 	</skill>
 	<skill id="34382" toLevel="1" name="Adagio (Zone 1)">
 		<!-- If your PK value is above 10 and below 35, you are teleported to Adagio (Zone 1) in the Cursed Village. An unknown power makes you dance all day and night long. To leave the zone you must spend 180 min. there, or you can donate some adena and leave immediately. -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.cursed_prison_1</icon>
+		<operateType>A2</operateType>
+		<isMagic>3</isMagic>
+		<abnormalTime>-1</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>PRISON</abnormalType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<abnormalVisualEffect>DANCING_ANIMATION</abnormalVisualEffect>
+		<isDebuff>true</isDebuff>
+		<irreplacableBuff>true</irreplacableBuff>
+		<effects>
+			<effect name="BlockEscape" />
+		</effects>
 	</skill>
 	<skill id="34383" toLevel="1" name="Andante (Zone 2)">
 		<!-- If your PK value is above 35 and below 40, you are teleported to Andante (Zone 2) in the Cursed Village. To leave the zone you must spend 240 min. there and collect 108 Moonlight Petals. Or you can donate some adena and leave immediately. You can collect the petals from the flowers growing nearby, but prepare to spill some blood for these flowers have sharp thorns. -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.cursed_prison_2</icon>
+		<operateType>A2</operateType>
+		<isMagic>3</isMagic>
+		<abnormalTime>-1</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>PRISON</abnormalType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<isDebuff>true</isDebuff>
+		<irreplacableBuff>true</irreplacableBuff>
+		<effects>
+			<effect name="BlockEscape" />
+		</effects>
 	</skill>
 	<skill id="34384" toLevel="1" name="Allegro (Zone 3)">
 		<!-- If your PK value is above 40, you are teleported to the Allegro (Zone 3) in the Cursed Village. To leave the zone you must spend 300 min. there and collect 54 Pure Crystals. Or you can donate some adena and leave immediately. Pure Crystals can be obtained from Golden Spheres that can be found in the area. To get the Crystal you need to purify the soul in the Sphere using the Moonlight Petal and 1004 adena. -->
-		<icon>icon.skill0000</icon>
-		<operateType>A1</operateType>
+		<icon>icon.cursed_prison_3</icon>
+		<operateType>A2</operateType>
+		<isMagic>3</isMagic>
+		<abnormalTime>-1</abnormalTime>
+		<abnormalLevel>1</abnormalLevel>
+		<abnormalType>PRISON</abnormalType>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<isDebuff>true</isDebuff>
+		<irreplacableBuff>true</irreplacableBuff>
 	</skill>
 	<skill id="34385" toLevel="1" name="Blade of Souls">
 		<!-- Common. -->

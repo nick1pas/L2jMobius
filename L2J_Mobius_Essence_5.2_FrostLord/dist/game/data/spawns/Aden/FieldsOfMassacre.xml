@@ -1,234 +1,761 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/spawns.xsd">
-	<spawn name="FieldsOfMassacre">
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_05" minZ="-2776" maxZ="-2576">
+				<node x="177724" y="5656" />
+				<node x="178808" y="5660" />
+				<node x="179312" y="6968" />
+				<node x="179308" y="8836" />
+				<node x="179056" y="9048" />
+				<node x="177344" y="9044" />
+				<node x="177356" y="6112" />
+			</territory>
+		</territories>
+		<npc id="20670" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Crimson Drake -->
+		<npc id="20671" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Kadios -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_06" minZ="-2776" maxZ="-2576">
+				<node x="180192" y="5712" />
+				<node x="181252" y="5704" />
+				<node x="181676" y="6208" />
+				<node x="181632" y="9020" />
+				<node x="179936" y="9036" />
+				<node x="179692" y="8768" />
+				<node x="179720" y="6960" />
+			</territory>
+		</territories>
+		<npc id="20672" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="2" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_07" minZ="-2768" maxZ="-2468">
+				<node x="177408" y="9460" />
+				<node x="179068" y="9460" />
+				<node x="179316" y="9704" />
+				<node x="179308" y="11776" />
+				<node x="178648" y="12892" />
+				<node x="177748" y="12888" />
+				<node x="177360" y="12432" />
+			</territory>
+		</territories>
+		<npc id="20670" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Crimson Drake -->
+		<npc id="20671" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Kadios -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_08" minZ="-2768" maxZ="-2468">
+				<node x="179716" y="9752" />
+				<node x="179940" y="9444" />
+				<node x="181656" y="9448" />
+				<node x="181664" y="12432" />
+				<node x="181252" y="12896" />
+				<node x="180240" y="12868" />
+				<node x="179736" y="11756" />
+			</territory>
+		</territories>
+		<npc id="20672" count="3" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="3" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_30" minZ="-3784" maxZ="-3184">
+				<node x="187216" y="17084" />
+				<node x="188904" y="15960" />
+				<node x="190400" y="16356" />
+				<node x="191836" y="21036" />
+				<node x="188032" y="19568" />
+			</territory>
+		</territories>
+		<npc id="20672" count="6" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="7" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="7" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="7" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_31" minZ="-3768" maxZ="-3468">
+				<node x="187256" y="22280" />
+				<node x="187724" y="21144" />
+				<node x="191332" y="22760" />
+				<node x="187724" y="24400" />
+			</territory>
+		</territories>
+		<npc id="20672" count="6" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="6" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="6" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_32" minZ="-3660" maxZ="-3260">
+				<node x="183976" y="14016" />
+				<node x="186328" y="14152" />
+				<node x="187664" y="19764" />
+				<node x="185116" y="19164" />
+				<node x="184084" y="17544" />
+			</territory>
+		</territories>
+		<npc id="20670" count="9" respawnTime="3sec" chaseRange="5000" /> <!-- Crimson Drake -->
+		<npc id="20671" count="8" respawnTime="3sec" chaseRange="5000" /> <!-- Kadios -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_33" minZ="-3764" maxZ="-3064">
+				<node x="185652" y="21252" />
+				<node x="186900" y="21204" />
+				<node x="187104" y="25460" />
+				<node x="184224" y="26016" />
+				<node x="184388" y="23060" />
+			</territory>
+		</territories>
+		<npc id="20670" count="8" respawnTime="3sec" chaseRange="5000" /> <!-- Crimson Drake -->
+		<npc id="20671" count="6" respawnTime="3sec" chaseRange="5000" /> <!-- Kadios -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_34" minZ="-3808" maxZ="-3008">
+				<node x="181316" y="27036" />
+				<node x="187656" y="25320" />
+				<node x="188040" y="28996" />
+				<node x="186684" y="30864" />
+				<node x="181824" y="31088" />
+			</territory>
+		</territories>
+		<npc id="20670" count="10" respawnTime="3sec" chaseRange="5000" /> <!-- Crimson Drake -->
+		<npc id="20671" count="10" respawnTime="3sec" chaseRange="5000" /> <!-- Kadios -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_36" minZ="-2848" maxZ="-2448">
+				<node x="182952" y="9880" />
+				<node x="185436" y="9756" />
+				<node x="187700" y="11588" />
+				<node x="186668" y="13256" />
+				<node x="183100" y="13004" />
+			</territory>
+		</territories>
+		<npc id="20670" count="8" respawnTime="3sec" chaseRange="5000" /> <!-- Crimson Drake -->
+		<npc id="20671" count="8" respawnTime="3sec" chaseRange="5000" /> <!-- Kadios -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_37" minZ="-2808" maxZ="-2408">
+				<node x="185944" y="7792" />
+				<node x="187400" y="6096" />
+				<node x="189028" y="8556" />
+				<node x="189152" y="11116" />
+				<node x="186288" y="9964" />
+			</territory>
+		</territories>
+		<npc id="20672" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_38" minZ="-2796" maxZ="-2396">
+				<node x="181572" y="4164" />
+				<node x="184760" y="4872" />
+				<node x="186044" y="6308" />
+				<node x="184864" y="9172" />
+				<node x="182684" y="9200" />
+			</territory>
+		</territories>
+		<npc id="20672" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="5" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_45" minZ="-3704" maxZ="-3304">
+				<node x="189612" y="20392" />
+				<node x="193644" y="22076" />
+				<node x="193212" y="23236" />
+				<node x="189120" y="21516" />
+			</territory>
+		</territories>
+		<npc id="20672" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_46" minZ="-3732" maxZ="-3532">
+				<node x="188004" y="24516" />
+				<node x="191724" y="22848" />
+				<node x="193000" y="23412" />
+				<node x="188156" y="25572" />
+			</territory>
+		</territories>
+		<npc id="20672" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden06_2518_47" minZ="-3720" maxZ="-3520">
+				<node x="190956" y="17436" />
+				<node x="191992" y="16712" />
+				<node x="193592" y="21832" />
+				<node x="192348" y="21248" />
+			</territory>
+		</territories>
+		<npc id="20672" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Trives -->
+		<npc id="20673" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Palibati -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+		<npc id="20674" count="4" respawnTime="3sec" chaseRange="5000" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_01" minZ="-3756" maxZ="-2756">
+				<node x="176140" y="-24540" />
+				<node x="178952" y="-24176" />
+				<node x="180216" y="-22556" />
+				<node x="179172" y="-21132" />
+				<node x="176132" y="-21396" />
+				<node x="175116" y="-22760" />
+			</territory>
+		</territories>
+		<npc id="21009" count="24" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="30" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="30" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="30" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="10" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
 		<group>
-			<npc id="21003" x="178952" y="-9256" z="-3516" heading="15491" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="178952" y="-9256" z="-3516" heading="15491" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="178952" y="-9256" z="-3516" heading="15491" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="178808" y="-9464" z="-3533" heading="43087" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="178808" y="-9464" z="-3533" heading="43087" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="178808" y="-9464" z="-3533" heading="43087" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="179240" y="-9544" z="-3500" heading="63696" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="179240" y="-9544" z="-3500" heading="63696" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21002" x="179240" y="-9544" z="-3500" heading="63696" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21003" x="179784" y="-9176" z="-3455" heading="6235" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="179784" y="-9176" z="-3455" heading="6235" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="179784" y="-9176" z="-3455" heading="6235" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21003" x="179784" y="-9624" z="-3472" heading="48989" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="179784" y="-9624" z="-3472" heading="48989" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="179784" y="-9624" z="-3472" heading="48989" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="179192" y="-10248" z="-3515" heading="42172" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="179192" y="-10248" z="-3515" heading="42172" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="179192" y="-10248" z="-3515" heading="42172" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="179416" y="-10888" z="-3481" heading="52561" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="179416" y="-10888" z="-3481" heading="52561" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="179416" y="-10888" z="-3481" heading="52561" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="180040" y="-10877" z="-3432" heading="62600" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="180040" y="-10877" z="-3432" heading="62600" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="180040" y="-10877" z="-3432" heading="62600" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="180408" y="-10184" z="-3461" heading="12764" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="180408" y="-10184" z="-3461" heading="12764" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="180408" y="-10184" z="-3461" heading="12764" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="180632" y="-9592" z="-3373" heading="12678" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="180632" y="-9592" z="-3373" heading="12678" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="180632" y="-9592" z="-3373" heading="12678" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181400" y="-9528" z="-3330" heading="41269" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="181400" y="-9528" z="-3330" heading="41269" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="181400" y="-9528" z="-3330" heading="41269" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181528" y="-10104" z="-3373" heading="51486" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="181528" y="-10104" z="-3373" heading="51486" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181288" y="-10520" z="-3389" heading="43696" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="181288" y="-10520" z="-3389" heading="43696" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181704" y="-11048" z="-3387" heading="56031" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="181704" y="-11048" z="-3387" heading="56031" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21001" x="181912" y="-10760" z="-3378" heading="9931" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181912" y="-10760" z="-3378" heading="9931" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21003" x="182040" y="-10120" z="-3372" heading="14238" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="182040" y="-10120" z="-3372" heading="14238" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181864" y="-9352" z="-3350" heading="62758" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="181864" y="-9352" z="-3350" heading="62758" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="182392" y="-10392" z="-3343" heading="52189" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="182392" y="-10392" z="-3343" heading="52189" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="182280" y="-11400" z="-3312" heading="47953" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="182280" y="-11400" z="-3312" heading="47953" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="181752" y="-11848" z="-3298" heading="40138" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="181752" y="-11848" z="-3298" heading="40138" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="182136" y="-12648" z="-3147" heading="53770" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="182136" y="-12648" z="-3147" heading="53770" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="182776" y="-12680" z="-3046" heading="64942" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="182776" y="-12680" z="-3046" heading="64942" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183064" y="-12536" z="-3050" heading="4937" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="183064" y="-12536" z="-3050" heading="4937" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183000" y="-13592" z="-2890" heading="48635" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="183000" y="-13592" z="-2890" heading="48635" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183400" y="-13272" z="-2886" heading="7085" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="183400" y="-13272" z="-2886" heading="7085" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183512" y="-12680" z="-2981" heading="14480" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="183512" y="-12680" z="-2981" heading="14480" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183928" y="-12504" z="-3012" heading="3981" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21001" x="183928" y="-12504" z="-3012" heading="3981" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21002" x="183704" y="-12104" z="-3074" heading="21864" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="183704" y="-12104" z="-3074" heading="21864" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21002" x="183304" y="-11752" z="-3178" heading="25288" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="183304" y="-11752" z="-3178" heading="25288" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21002" x="183032" y="-12216" z="-3111" heading="44621" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="183032" y="-12216" z="-3111" heading="44621" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="182968" y="-13240" z="-2954" heading="18238" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21003" x="183032" y="-13960" z="-2825" heading="50097" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="183032" y="-13960" z="-2825" heading="50097" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="183032" y="-13960" z="-2825" heading="50097" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183416" y="-14008" z="-2811" heading="10756" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="183416" y="-14008" z="-2811" heading="10756" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21001" x="183416" y="-14008" z="-2811" heading="10756" respawnTime="60sec" /> <!-- Archer of Destruction -->
-			<npc id="21003" x="183496" y="-13704" z="-2851" heading="13973" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21002" x="183496" y="-13704" z="-2851" heading="13973" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21002" x="183496" y="-13704" z="-2851" heading="13973" respawnTime="60sec" /> <!-- Doom Scout -->
-			<npc id="21003" x="183176" y="-14200" z="-2802" heading="41619" respawnTime="60sec" /> <!-- Graveyard Lich -->
-			<npc id="21006" x="184136" y="-18632" z="-2656" heading="421" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21005" x="184136" y="-18632" z="-2656" heading="421" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184312" y="-19176" z="-2600" heading="52382" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184312" y="-19176" z="-2600" heading="52382" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184312" y="-19176" z="-2600" heading="52382" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21004" x="184328" y="-18824" z="-2613" heading="16027" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21004" x="184904" y="-19432" z="-2439" heading="55667" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21006" x="184904" y="-19432" z="-2439" heading="55667" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21005" x="184984" y="-18904" z="-2475" heading="14973" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21004" x="184984" y="-18904" z="-2475" heading="14973" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21004" x="185240" y="-19080" z="-2403" heading="59383" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="185240" y="-19080" z="-2403" heading="59383" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21005" x="185240" y="-19080" z="-2403" heading="59383" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="185016" y="-19704" z="-2386" heading="41905" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="185016" y="-19704" z="-2386" heading="41905" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="185016" y="-19704" z="-2386" heading="41905" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184408" y="-20232" z="-2543" heading="40959" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184408" y="-20232" z="-2543" heading="40959" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184408" y="-20232" z="-2543" heading="40959" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="183704" y="-20392" z="-2667" heading="35168" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="183704" y="-20392" z="-2667" heading="35168" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="183704" y="-20392" z="-2667" heading="35168" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="182184" y="-20856" z="-2719" heading="35816" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="182184" y="-20856" z="-2719" heading="35816" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="182184" y="-20856" z="-2719" heading="35816" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="182616" y="-21064" z="-2680" heading="60854" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="182616" y="-21064" z="-2680" heading="60854" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="182616" y="-21064" z="-2680" heading="60854" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="183944" y="-20904" z="-2592" heading="10250" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="183944" y="-20904" z="-2592" heading="10250" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="183944" y="-20904" z="-2592" heading="10250" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184920" y="-21016" z="-2429" heading="7427" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184920" y="-21016" z="-2429" heading="7427" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184920" y="-21016" z="-2429" heading="7427" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184904" y="-20456" z="-2394" heading="16794" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184904" y="-20456" z="-2394" heading="16794" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184904" y="-20456" z="-2394" heading="16794" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="185752" y="-20504" z="-2202" heading="4253" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="185752" y="-20504" z="-2202" heading="4253" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="185752" y="-20504" z="-2202" heading="4253" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="185784" y="-20024" z="-2208" heading="15534" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="185784" y="-20024" z="-2208" heading="15534" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="185784" y="-20024" z="-2208" heading="15534" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="185256" y="-20664" z="-2329" heading="38074" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="185256" y="-20664" z="-2329" heading="38074" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="185256" y="-20664" z="-2329" heading="38074" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184120" y="-20792" z="-2577" heading="34103" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184120" y="-20792" z="-2577" heading="34103" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184120" y="-20792" z="-2577" heading="34103" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184152" y="-21448" z="-2506" heading="49627" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184152" y="-21448" z="-2506" heading="49627" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184152" y="-21448" z="-2506" heading="49627" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="184824" y="-21352" z="-2461" heading="1372" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="184824" y="-21352" z="-2461" heading="1372" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="184824" y="-21352" z="-2461" heading="1372" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21006" x="185528" y="-21368" z="-2342" heading="65283" respawnTime="60sec" /> <!-- Doom Servant -->
-			<npc id="21004" x="185528" y="-21368" z="-2342" heading="65283" respawnTime="60sec" /> <!-- Dismal Pole -->
-			<npc id="21005" x="185528" y="-21368" z="-2342" heading="65283" respawnTime="60sec" /> <!-- Graveyard Predator -->
-			<npc id="21010" x="183384" y="-23864" z="-2614" heading="25319" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="183384" y="-23864" z="-2614" heading="25319" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="183384" y="-23864" z="-2614" heading="25319" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="183640" y="-24536" z="-2641" heading="52899" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="183640" y="-24536" z="-2641" heading="52899" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="183640" y="-24536" z="-2641" heading="52899" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="184616" y="-24248" z="-2553" heading="3681" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="184616" y="-24248" z="-2553" heading="3681" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="184616" y="-24248" z="-2553" heading="3681" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="184616" y="-23496" z="-2498" heading="16209" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="184616" y="-23496" z="-2498" heading="16209" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="184616" y="-23496" z="-2498" heading="16209" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="184616" y="-23496" z="-2498" heading="16209" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="183384" y="-23384" z="-2570" heading="8449" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="183384" y="-23384" z="-2570" heading="8449" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="183384" y="-23384" z="-2570" heading="8449" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="183048" y="-23256" z="-2573" heading="29090" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="183048" y="-23256" z="-2573" heading="29090" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="183048" y="-23256" z="-2573" heading="29090" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="182200" y="-23864" z="-2692" heading="39325" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="182200" y="-23864" z="-2692" heading="39325" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="182200" y="-23864" z="-2692" heading="39325" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="182728" y="-23624" z="-2616" heading="4414" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="182728" y="-23624" z="-2616" heading="4414" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="182728" y="-23624" z="-2616" heading="4414" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187960" y="-12568" z="-1751" heading="57537" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187960" y="-12568" z="-1751" heading="57537" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="187960" y="-12568" z="-1751" heading="57537" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="187720" y="-12616" z="-1767" heading="34851" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187720" y="-12616" z="-1767" heading="34851" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="21010" x="188051" y="-11768" z="-1883" heading="10622" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="188152" y="-11608" z="-1887" heading="10622" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="188152" y="-11608" z="-1887" heading="10622" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="188152" y="-11608" z="-1887" heading="10622" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187672" y="-10776" z="-1948" heading="19826" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187672" y="-10776" z="-1948" heading="19826" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187672" y="-10776" z="-1948" heading="19826" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187672" y="-10776" z="-1948" heading="19826" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="186904" y="-11096" z="-1979" heading="36818" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="186904" y="-11096" z="-1979" heading="36818" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="186808" y="-12072" z="-1945" heading="50610" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="186808" y="-12072" z="-1945" heading="50610" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="186808" y="-12072" z="-1945" heading="50610" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="186808" y="-12072" z="-1945" heading="50610" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="186872" y="-12888" z="-1802" heading="49982" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="186872" y="-12888" z="-1802" heading="49982" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="186872" y="-12888" z="-1802" heading="49982" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="186872" y="-12888" z="-1802" heading="49982" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="21010" x="187224" y="-13080" z="-1712" heading="60088" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="21010" x="188040" y="-13720" z="-1405" heading="58136" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="188040" y="-13720" z="-1405" heading="58136" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="188040" y="-13720" z="-1405" heading="58136" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="188040" y="-13720" z="-1405" heading="58136" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187688" y="-15048" z="-1422" heading="42411" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187688" y="-15048" z="-1422" heading="42411" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187688" y="-15048" z="-1422" heading="42411" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187688" y="-15048" z="-1422" heading="42411" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187768" y="-15864" z="-1331" heading="55775" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187768" y="-15864" z="-1331" heading="55775" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187768" y="-15864" z="-1331" heading="55775" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187768" y="-15864" z="-1331" heading="55775" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="188056" y="-16664" z="-1297" heading="52743" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="188056" y="-16664" z="-1297" heading="52743" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187736" y="-16904" z="-1294" heading="39521" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187736" y="-16904" z="-1294" heading="39521" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187944" y="-17576" z="-1295" heading="50515" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187944" y="-17576" z="-1295" heading="50515" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187944" y="-17576" z="-1295" heading="50515" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187944" y="-17576" z="-1295" heading="50515" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21010" x="187112" y="-16328" z="-1331" heading="24616" respawnTime="60sec" /> <!-- Doom Warrior -->
-			<npc id="20674" x="187112" y="-16328" z="-1331" heading="24616" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="20674" x="187112" y="-16328" z="-1331" heading="24616" respawnTime="60sec" /> <!-- Doom Knight -->
-			<npc id="21009" x="186808" y="-15784" z="-1348" heading="21775" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="187574" y="-15065" z="-1429" heading="7611" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188232" y="-15576" z="-1339" heading="56147" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188232" y="-15576" z="-1339" heading="56147" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188984" y="-15352" z="-1326" heading="3057" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188984" y="-15352" z="-1326" heading="3057" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188856" y="-14424" z="-1336" heading="21945" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188856" y="-14424" z="-1336" heading="21945" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188088" y="-13832" z="-1381" heading="23677" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="188088" y="-13832" z="-1381" heading="23677" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="187144" y="-13256" z="-1687" heading="27563" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="187144" y="-13256" z="-1687" heading="27563" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="186872" y="-12168" z="-1942" heading="7625" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="186872" y="-12168" z="-1942" heading="7625" respawnTime="60sec" /> <!-- Doom Trooper -->
-			<npc id="21009" x="185864" y="-12744" z="-1957" heading="41569" respawnTime="60sec" /> <!-- Doom Trooper -->
+			<npc id="21007" x="176569" y="-23722" z="-3496" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
 		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_02" minZ="-3260" maxZ="-2160">
+				<node x="180408" y="-22436" />
+				<node x="183144" y="-22036" />
+				<node x="181252" y="-19936" />
+				<node x="179116" y="-20680" />
+			</territory>
+		</territories>
+		<npc id="21004" count="15" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="12" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="15" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21006" count="12" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="10" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="180874" y="-21098" z="-2792" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+			<npc id="21007" x="182239" y="-21744" z="-2600" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_03" minZ="-3076" maxZ="-2276">
+				<node x="179912" y="-23408" />
+				<node x="182984" y="-25660" />
+				<node x="185464" y="-23036" />
+				<node x="183304" y="-22152" />
+				<node x="180656" y="-22564" />
+			</territory>
+		</territories>
+		<npc id="21009" count="27" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="30" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="30" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="30" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="10" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="183529" y="-23360" z="-2552" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+			<npc id="21007" x="181323" y="-22996" z="-2816" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_04" minZ="-2700" maxZ="-2000">
+				<node x="183016" y="-25796" />
+				<node x="185672" y="-27000" />
+				<node x="186312" y="-26104" />
+				<node x="185488" y="-23136" />
+			</territory>
+		</territories>
+		<npc id="21009" count="19" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="19" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="19" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="19" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="184099" y="-25705" z="-2464" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_05" minZ="-2384" maxZ="-1284">
+				<node x="185752" y="-23052" />
+				<node x="186992" y="-25240" />
+				<node x="189148" y="-23424" />
+				<node x="187032" y="-21480" />
+			</territory>
+		</territories>
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<npc id="21008" count="22" respawnTime="2sec" /> <!-- Doom Archer -->
+		<npc id="21009" count="22" respawnTime="2sec" /> <!-- Doom Trooper -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_06" minZ="-1916" maxZ="-1016">
+				<node x="186972" y="-21176" />
+				<node x="189232" y="-23220" />
+				<node x="189824" y="-20776" />
+				<node x="189224" y="-18800" />
+				<node x="187200" y="-19360" />
+			</territory>
+		</territories>
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<npc id="21008" count="22" respawnTime="2sec" /> <!-- Doom Archer -->
+		<npc id="21009" count="30" respawnTime="2sec" /> <!-- Doom Trooper -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_07" minZ="-2868" maxZ="-1968">
+				<node x="183360" y="-21944" />
+				<node x="185420" y="-22504" />
+				<node x="186232" y="-18980" />
+				<node x="184084" y="-18076" />
+				<node x="182364" y="-20832" />
+			</territory>
+		</territories>
+		<npc id="21004" count="25" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="30" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="15" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="185576" y="-20026" z="-2240" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_08" minZ="-2932" maxZ="-2332">
+				<node x="180908" y="-18880" />
+				<node x="181848" y="-20488" />
+				<node x="184040" y="-17980" />
+				<node x="183428" y="-16904" />
+				<node x="181340" y="-17600" />
+			</territory>
+		</territories>
+		<npc id="21004" count="15" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="12" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="12" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="7" respawnTime="2sec" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="183327" y="-18016" z="-2776" respawnTime="2sec" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_09" minZ="-1488" maxZ="-888">
+				<node x="187212" y="-17564" />
+				<node x="189024" y="-16960" />
+				<node x="190196" y="-14860" />
+				<node x="189636" y="-12848" />
+				<node x="185708" y="-15252" />
+				<node x="185748" y="-16392" />
+			</territory>
+		</territories>
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<npc id="21008" count="30" respawnTime="2sec" /> <!-- Doom Archer -->
+		<npc id="21009" count="37" respawnTime="2sec" /> <!-- Doom Trooper -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_10" minZ="-2160" maxZ="-1560">
+				<node x="186688" y="-13504" />
+				<node x="188636" y="-12524" />
+				<node x="188544" y="-10264" />
+				<node x="187364" y="-9284" />
+				<node x="185960" y="-11000" />
+				<node x="185940" y="-12556" />
+			</territory>
+		</territories>
+		<npc id="21009" count="22" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="19" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="24" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="24" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_11" minZ="-3000" maxZ="-2000">
+				<node x="183796" y="-8752" />
+				<node x="185328" y="-9728" />
+				<node x="186848" y="-8744" />
+				<node x="185596" y="-6740" />
+				<node x="183340" y="-5000" />
+				<node x="183132" y="-5708" />
+			</territory>
+		</territories>
+		<npc id="21009" count="10" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="9" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="10" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="10" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="3" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="185671" y="-8376" z="-2576" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+			<npc id="21007" x="184162" y="-6464" z="-2824" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_12" minZ="-3340" maxZ="-2740">
+				<node x="182948" y="-14360" />
+				<node x="184052" y="-13696" />
+				<node x="184052" y="-12344" />
+				<node x="182964" y="-11240" />
+				<node x="181804" y="-12076" />
+				<node x="182032" y="-13992" />
+			</territory>
+		</territories>
+		<npc id="21001" count="15" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="15" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="15" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="4" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_13" minZ="-3500" maxZ="-3200">
+				<node x="181744" y="-12004" />
+				<node x="182928" y="-11124" />
+				<node x="181892" y="-8792" />
+				<node x="180740" y="-8804" />
+				<node x="180720" y="-10704" />
+			</territory>
+		</territories>
+		<npc id="21001" count="15" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="15" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="15" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_14" minZ="-3648" maxZ="-3048">
+				<node x="177084" y="-11056" />
+				<node x="180512" y="-11292" />
+				<node x="180492" y="-8720" />
+				<node x="179084" y="-8020" />
+				<node x="177848" y="-8664" />
+			</territory>
+		</territories>
+		<npc id="21001" count="15" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="15" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="15" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_15" minZ="-3464" maxZ="-2664">
+				<node x="170704" y="-9476" />
+				<node x="173916" y="-11524" />
+				<node x="176060" y="-9952" />
+				<node x="175700" y="-8136" />
+				<node x="173676" y="-6452" />
+				<node x="171924" y="-7276" />
+			</territory>
+		</territories>
+		<npc id="21004" count="30" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="30" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="22" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="10" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_16" minZ="-3104" maxZ="-2504">
+				<node x="167196" y="-7096" />
+				<node x="170076" y="-7148" />
+				<node x="170052" y="-5484" />
+				<node x="166708" y="-4364" />
+			</territory>
+		</territories>
+		<npc id="21001" count="15" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="15" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="15" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_17" minZ="-3204" maxZ="-2604">
+				<node x="164028" y="-9148" />
+				<node x="167116" y="-7088" />
+				<node x="166608" y="-4216" />
+				<node x="165408" y="-4000" />
+				<node x="164020" y="-5196" />
+			</territory>
+		</territories>
+		<npc id="21001" count="15" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="15" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="15" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_18" minZ="-3124" maxZ="-2524">
+				<node x="166864" y="-10088" />
+				<node x="170448" y="-9524" />
+				<node x="170696" y="-7400" />
+				<node x="167252" y="-7320" />
+				<node x="165200" y="-8848" />
+			</territory>
+		</territories>
+		<npc id="21001" count="15" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="15" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="15" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_19" minZ="-3588" maxZ="-2588">
+				<node x="164224" y="-11732" />
+				<node x="166192" y="-12124" />
+				<node x="167468" y="-11164" />
+				<node x="164248" y="-10012" />
+			</territory>
+		</territories>
+		<npc id="21001" count="7" respawnTime="2sec" /> <!-- Archer of Destruction -->
+		<npc id="21002" count="7" respawnTime="2sec" /> <!-- Doom Scout -->
+		<npc id="21003" count="7" respawnTime="2sec" /> <!-- Graveyard Lich -->
+		<npc id="21007" count="4" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_20" minZ="-3300" maxZ="-2500">
+				<node x="167336" y="-12540" />
+				<node x="173980" y="-13676" />
+				<node x="173980" y="-12100" />
+				<node x="170128" y="-9824" />
+				<node x="167692" y="-10548" />
+			</territory>
+		</territories>
+		<npc id="21004" count="30" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="30" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="22" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="10" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_21" minZ="-3528" maxZ="-2528">
+				<node x="171400" y="-15744" />
+				<node x="174172" y="-17104" />
+				<node x="174528" y="-14016" />
+				<node x="171424" y="-13380" />
+			</territory>
+		</territories>
+		<npc id="21004" count="15" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="15" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="15" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_22" minZ="-1584" maxZ="-984">
+				<node x="187600" y="-19220" />
+				<node x="189240" y="-18760" />
+				<node x="189120" y="-17076" />
+				<node x="187124" y="-17788" />
+			</territory>
+		</territories>
+		<npc id="21007" count="4" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<npc id="21008" count="10" respawnTime="2sec" /> <!-- Doom Archer -->
+		<npc id="21009" count="10" respawnTime="2sec" /> <!-- Doom Trooper -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_23" minZ="-3232" maxZ="-2232">
+				<node x="167948" y="-15808" />
+				<node x="171300" y="-15840" />
+				<node x="171368" y="-13324" />
+				<node x="167292" y="-12560" />
+			</territory>
+		</territories>
+		<npc id="21004" count="15" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="15" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="10" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_24" minZ="-3484" maxZ="-2484">
+				<node x="172512" y="-19420" />
+				<node x="174388" y="-19504" />
+				<node x="174136" y="-17184" />
+				<node x="171224" y="-15860" />
+				<node x="170112" y="-15940" />
+				<node x="170312" y="-18464" />
+			</territory>
+		</territories>
+		<npc id="21004" count="15" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="22" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="22" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_25" minZ="-3772" maxZ="-2772">
+				<node x="171832" y="-20380" />
+				<node x="174764" y="-21996" />
+				<node x="175484" y="-21204" />
+				<node x="174432" y="-20324" />
+				<node x="173076" y="-19956" />
+			</territory>
+		</territories>
+		<npc id="21004" count="15" respawnTime="2sec" /> <!-- Dismal Oak -->
+		<npc id="21005" count="15" respawnTime="2sec" /> <!-- Graveyard Predator -->
+		<npc id="21006" count="7" respawnTime="2sec" /> <!-- Doom Servant -->
+		<npc id="21007" count="7" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_26" minZ="-3744" maxZ="-2744">
+				<node x="171896" y="-24488" />
+				<node x="173676" y="-25624" />
+				<node x="174996" y="-23084" />
+				<node x="172540" y="-21956" />
+			</territory>
+		</territories>
+		<npc id="21009" count="15" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="15" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="15" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="15" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="4" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="173541" y="-24469" z="-3664" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+			<npc id="21007" x="172647" y="-23047" z="-3336" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_27" minZ="-3404" maxZ="-2404">
+				<node x="168780" y="-22064" />
+				<node x="172012" y="-23360" />
+				<node x="172444" y="-21660" />
+				<node x="171332" y="-20760" />
+				<node x="170220" y="-20752" />
+			</territory>
+		</territories>
+		<npc id="21009" count="15" respawnTime="2sec" /> <!-- Doom Trooper -->
+		<npc id="21010" count="15" respawnTime="2sec" /> <!-- Doom Warrior -->
+		<npc id="20674" count="15" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="15" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="21007" count="4" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		<group>
+			<npc id="21007" x="170625" y="-21649" z="-2952" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+			<npc id="21007" x="171300" y="-20928" z="-3152" respawnTime="2sec" chaseRange="2000" /> <!-- Doom Guard -->
+		</group>
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p01" minZ="-3756" maxZ="-2756">
+				<node x="176140" y="-24540" />
+				<node x="178952" y="-24176" />
+				<node x="180216" y="-22556" />
+				<node x="179172" y="-21132" />
+				<node x="176132" y="-21396" />
+				<node x="175116" y="-22760" />
+			</territory>
+		</territories>
+		<npc id="21006" count="25" respawnTime="2sec" /> <!-- Doom Servant -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p03" minZ="-3076" maxZ="-2276">
+				<node x="179912" y="-23408" />
+				<node x="182984" y="-25660" />
+				<node x="185464" y="-23036" />
+				<node x="183304" y="-22152" />
+				<node x="180656" y="-22564" />
+			</territory>
+		</territories>
+		<npc id="21010" count="25" respawnTime="2sec" /> <!-- Doom Warrior -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p04" minZ="-2700" maxZ="-2000">
+				<node x="183016" y="-25796" />
+				<node x="185672" y="-27000" />
+				<node x="186312" y="-26104" />
+				<node x="185488" y="-23136" />
+			</territory>
+		</territories>
+		<npc id="20674" count="25" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="25" respawnTime="2sec" /> <!-- Doom Knight -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p07" minZ="-2868" maxZ="-1968">
+				<node x="183360" y="-21944" />
+				<node x="185420" y="-22504" />
+				<node x="186232" y="-18980" />
+				<node x="184084" y="-18076" />
+				<node x="182364" y="-20832" />
+			</territory>
+		</territories>
+		<npc id="21005" count="25" respawnTime="2sec" /> <!-- Graveyard Predator -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p09" minZ="-1488" maxZ="-888">
+				<node x="187212" y="-17564" />
+				<node x="189024" y="-16960" />
+				<node x="190196" y="-14860" />
+				<node x="189636" y="-12848" />
+				<node x="185708" y="-15252" />
+				<node x="185748" y="-16392" />
+			</territory>
+		</territories>
+		<npc id="21005" count="25" respawnTime="2sec" /> <!-- Graveyard Predator -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p10" minZ="-2160" maxZ="-1560">
+				<node x="186688" y="-13504" />
+				<node x="188636" y="-12524" />
+				<node x="188544" y="-10264" />
+				<node x="187364" y="-9284" />
+				<node x="185960" y="-11000" />
+				<node x="185940" y="-12556" />
+			</territory>
+		</territories>
+		<npc id="21004" count="25" respawnTime="2sec" /> <!-- Dismal Oak -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p11" minZ="-3000" maxZ="-2000">
+				<node x="183796" y="-8752" />
+				<node x="185328" y="-9728" />
+				<node x="186848" y="-8744" />
+				<node x="185596" y="-6740" />
+				<node x="183340" y="-5000" />
+				<node x="183132" y="-5708" />
+			</territory>
+		</territories>
+		<npc id="21009" count="25" respawnTime="2sec" /> <!-- Doom Trooper -->
+	</spawn>
+	<spawn>
+		<territories>
+			<territory name="aden26_2517_p15" minZ="-3464" maxZ="-2664">
+				<node x="170704" y="-9476" />
+				<node x="173916" y="-11524" />
+				<node x="176060" y="-9952" />
+				<node x="175700" y="-8136" />
+				<node x="173676" y="-6452" />
+				<node x="171924" y="-7276" />
+			</territory>
+		</territories>
+		<npc id="20674" count="25" respawnTime="2sec" /> <!-- Doom Knight -->
+		<npc id="20674" count="25" respawnTime="2sec" /> <!-- Doom Knight -->
 	</spawn>
 </list>

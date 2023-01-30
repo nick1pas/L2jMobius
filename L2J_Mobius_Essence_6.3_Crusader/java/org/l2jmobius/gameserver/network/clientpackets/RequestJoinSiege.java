@@ -24,6 +24,8 @@ import org.l2jmobius.gameserver.model.clan.ClanPrivilege;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.castlewar.MercenaryCastleWarCastleSiegeAttackerList;
+import org.l2jmobius.gameserver.network.serverpackets.castlewar.MercenaryCastleWarCastleSiegeDefenderList;
 
 /**
  * @author KenM
@@ -76,17 +78,29 @@ public class RequestJoinSiege implements ClientPacket
 				if (_isAttacker == 1)
 				{
 					castle.getSiege().registerAttacker(player);
+					player.sendPacket(new MercenaryCastleWarCastleSiegeAttackerList(castle.getResidenceId()));
 				}
 				else
 				{
 					castle.getSiege().registerDefender(player);
+					player.sendPacket(new MercenaryCastleWarCastleSiegeDefenderList(castle.getResidenceId()));
 				}
 			}
 			else
 			{
 				castle.getSiege().removeSiegeClan(player);
+				if (_isAttacker == 1)
+				{
+					player.sendPacket(new MercenaryCastleWarCastleSiegeAttackerList(castle.getResidenceId()));
+				}
+				else
+				{
+					player.sendPacket(new MercenaryCastleWarCastleSiegeDefenderList(castle.getResidenceId()));
+				}
 			}
-			castle.getSiege().listRegisterClan(player);
+			
+			// Managed by new packets.
+			// castle.getSiege().listRegisterClan(player);
 		}
 	}
 }

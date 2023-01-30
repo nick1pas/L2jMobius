@@ -286,14 +286,14 @@ public class Pet extends Summon
 				Item food = null;
 				for (int id : foodIds)
 				{
-					food = _inventory.getItemByItemId(id);
-					if (food != null)
+					food = getOwner().getInventory().getItemByItemId(id);
+					if ((food != null) && getOwner().getAutoUseSettings().getAutoSupplyItems().contains(id))
 					{
 						break;
 					}
 				}
 				
-				if ((food != null) && isHungry())
+				if ((food != null) && isHungry() && getOwner().getAutoUseSettings().getAutoSupplyItems().contains(food.getId()) && !pet.isInsideZone(ZoneId.PEACE))
 				{
 					final IItemHandler handler = ItemHandler.getInstance().getHandler(food.getEtcItem());
 					if (handler != null)
@@ -301,8 +301,7 @@ public class Pet extends Summon
 						final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_PET_WAS_HUNGRY_SO_IT_ATE_S1);
 						sm.addItemName(food.getId());
 						sendPacket(sm);
-						handler.useItem(Pet.this, food, false);
-						sendPacket(new PetItemList(getInventory().getItems()));
+						handler.useItem(getOwner(), food, false);
 					}
 				}
 				
@@ -649,7 +648,7 @@ public class Pet extends Summon
 				return;
 			}
 			
-			if (((isInParty() && (getParty().getDistributionType() == PartyDistributionType.FINDERS_KEEPERS)) || !isInParty()) && !_inventory.validateCapacity(target))
+			if (((isInParty() && (getParty().getDistributionType() == PartyDistributionType.FINDERS_KEEPERS)) || !isInParty()) && !getOwner().getInventory().validateCapacity(target))
 			{
 				sendPacket(ActionFailed.STATIC_PACKET);
 				sendPacket(SystemMessageId.YOUR_PET_CANNOT_CARRY_ANY_MORE_ITEMS);
@@ -745,7 +744,7 @@ public class Pet extends Summon
 			}
 			else
 			{
-				final Item item = _inventory.addItem("Pickup", target, getOwner(), this);
+				final Item item = getOwner().getInventory().addItem("Pet Pickup", target, getOwner(), this);
 				if (item != null)
 				{
 					getOwner().sendPacket(new PetItemList(getInventory().getItems()));

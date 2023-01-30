@@ -219,7 +219,7 @@
 		<acquire exp="300328" sp="270" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="373087" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -254,54 +254,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3285" max="7658" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="3.1798">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3285" max="7658" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.14" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.549" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.877" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.877" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.877" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.2782" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.278" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -311,7 +273,7 @@
 		<acquire exp="300328" sp="270" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="373087" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -346,54 +308,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3285" max="7658" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="3.1798">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3285" max="7658" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.14" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.549" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.877" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.877" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.877" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.2782" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.278" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -403,7 +327,7 @@
 		<acquire exp="300328" sp="270" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="373087" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -438,54 +362,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3285" max="7658" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="3.1798">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3285" max="7658" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.14" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.549" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.877" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.877" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.877" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.2782" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.278" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -495,7 +381,7 @@
 		<acquire exp="300328" sp="270" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="373087" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -530,54 +416,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3285" max="7658" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="3.1798">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3285" max="7658" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.14" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.549" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.877" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.877" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.877" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.2782" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.278" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -591,7 +439,7 @@
 		<acquire exp="136421" sp="123" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="266491" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="7543" magical="3505" />
 			<speed>
@@ -627,66 +475,28 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3285" max="7658" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="3.1798">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3285" max="7658" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.14" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.549" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.877" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.877" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.877" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.2782" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.278" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24317" level="120" type="Monster" name="Temple Guard Captain">
+	<npc id="24317" level="124" type="Monster" name="Temple Guard Captain">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="70" />
 				<run ground="180" />
@@ -729,66 +539,28 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24318" level="120" type="Monster" name="Temple Elite Guardian">
+	<npc id="24318" level="124" type="Monster" name="Temple Elite Guardian">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="70" />
 				<run ground="180" />
@@ -831,66 +603,28 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24321" level="120" type="Monster" name="Temple Patrol Guard">
+	<npc id="24321" level="124" type="Monster" name="Temple Patrol Guard">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="65" />
 				<run ground="180" />
@@ -932,66 +666,28 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24322" level="120" type="Monster" name="Temple Knight Recruit">
+	<npc id="24322" level="124" type="Monster" name="Temple Knight Recruit">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="65" />
 				<run ground="180" />
@@ -1033,66 +729,28 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24323" level="120" type="Monster" name="Temple Guard">
+	<npc id="24323" level="124" type="Monster" name="Temple Guard">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="65" />
 				<run ground="180" />
@@ -1134,66 +792,28 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24324" level="120" type="Monster" name="Temple Guardian Warrior">
+	<npc id="24324" level="124" type="Monster" name="Temple Guardian Warrior">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="65" />
 				<run ground="180" />
@@ -1235,58 +855,20 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24325" level="120" type="Monster" name="Temple Wizard">
+	<npc id="24325" level="124" type="Monster" name="Temple Wizard">
 		<parameters>
 			<skill name="Skill01_ID" id="32697" level="1" />
 			<param name="Skill01_Probablity" value="2000" />
@@ -1296,9 +878,9 @@
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="639102" magical="319455" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="60" />
 				<run ground="180" />
@@ -1342,58 +924,20 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24326" level="120" type="Monster" name="Temple Guardian Wizard">
+	<npc id="24326" level="124" type="Monster" name="Temple Guardian Wizard">
 		<parameters>
 			<skill name="Skill01_ID" id="32697" level="1" />
 			<param name="Skill01_Probablity" value="2000" />
@@ -1403,9 +947,9 @@
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
-			<defence physical="639102" magical="319455" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="60" />
 				<run ground="180" />
@@ -1449,58 +993,20 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="24329" level="120" type="Monster" name="Starving Water Dragon">
+	<npc id="24329" level="124" type="Monster" name="Starving Water Dragon">
 		<parameters>
 			<skill name="Skill01_ID" id="32704" level="1" />
 			<param name="Skill01_Probablity" value="2000" />
@@ -1510,9 +1016,9 @@
 		<acquire exp="753730" sp="678" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2614896" hpRegen="13.4" mp="3190" mpRegen="30" />
+			<vitals hp="4006013" hpRegen="13.4" mp="3190" mpRegen="30" />
 			<attack physical="4920660" magical="2186291" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="643278" magical="317349" />
+			<defence physical="753240" magical="364523" />
 			<speed>
 				<walk ground="30" />
 				<run ground="180" />
@@ -1555,54 +1061,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="27255" max="63772" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="5.2819">
-					<item id="81216" min="2" max="6" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="3" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="3" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="2" max="6" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="27255" max="63772" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.45" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="0.911" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.457" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.457" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.457" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="18.9213" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="18.921" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2234,7 +1702,7 @@
 		<acquire exp="193677" sp="174" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="192256" hpRegen="11.4" mp="25848" mpRegen="30" />
+			<vitals hp="269158" hpRegen="11.4" mp="2702" mpRegen="30" />
 			<attack physical="52071" magical="9492" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="600" distance="10" width="0" />
 			<defence physical="6226" magical="3728" />
 			<speed>
@@ -2270,54 +1738,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3070" max="7160" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.9744">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.11">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3070" max="7160" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.11" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.513" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.82" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.82" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.82" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.1311" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.131" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2352,7 +1782,7 @@
 		<acquire exp="193677" sp="174" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="192256" hpRegen="11.4" mp="25848" mpRegen="30" />
+			<vitals hp="269158" hpRegen="11.4" mp="2702" mpRegen="30" />
 			<attack physical="104141" magical="9492" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5554" magical="3728" />
 			<speed>
@@ -2388,54 +1818,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3070" max="7160" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.9744">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.11">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3070" max="7160" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.11" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.513" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.82" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.82" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.82" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.1311" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.131" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2450,7 +1842,7 @@
 		<acquire exp="193677" sp="174" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="961280" hpRegen="11.4" mp="25848" mpRegen="30" />
+			<vitals hp="269158" hpRegen="11.4" mp="2702" mpRegen="30" />
 			<attack physical="104141" magical="9492" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5554" magical="3728" />
 			<speed>
@@ -2464,6 +1856,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALLIGATOR</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="19.2" />
@@ -2487,61 +1884,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3070" max="7160" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.9744">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.11">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3070" max="7160" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.11" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.513" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.82" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.82" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.82" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.1311" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.131" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" aggroRange="300" clanHelpRange="300" isAggressive="true">
-			<clanList>
-				<clan>ALLIGATOR</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24378" level="108" type="Monster" name="Swamp Alligator">
 		<parameters>
@@ -2554,7 +1908,7 @@
 		<acquire exp="193677" sp="174" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="192256" hpRegen="11.4" mp="25848" mpRegen="30" />
+			<vitals hp="269158" hpRegen="11.4" mp="2702" mpRegen="30" />
 			<attack physical="104141" magical="9492" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5554" magical="3728" />
 			<speed>
@@ -2568,6 +1922,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" aggroRange="300" clanHelpRange="300" isAggressive="true">
+			<clanList>
+				<clan>ALLIGATOR</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="21.6" />
@@ -2590,61 +1949,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3070" max="7160" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.9744">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.11">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3070" max="7160" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.11" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.513" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.82" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.82" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.82" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.1311" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.131" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" aggroRange="300" clanHelpRange="300" isAggressive="true">
-			<clanList>
-				<clan>ALLIGATOR</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24379" level="108" type="Monster" name="Swamp Warrior">
 		<parameters>
@@ -2657,7 +1973,7 @@
 		<acquire exp="193677" sp="174" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="192256" hpRegen="11.4" mp="25848" mpRegen="30" />
+			<vitals hp="269158" hpRegen="11.4" mp="2702" mpRegen="30" />
 			<attack physical="52071" magical="9492" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="600" distance="10" width="0" />
 			<defence physical="6226" magical="3728" />
 			<speed>
@@ -2693,54 +2009,16 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="3070" max="7160" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="2.9744">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.11">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="3070" max="7160" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.11" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.015" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="0.513" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="0.82" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="0.82" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="0.82" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.1311" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.131" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2777,9 +2055,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="1" max="1" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="1" max="1" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2816,9 +2092,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="1" max="1" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="1" max="1" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2855,9 +2129,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2" max="5" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="2" max="5" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2894,9 +2166,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="2" max="5" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="2" max="5" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2933,9 +2203,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="13" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="6" max="13" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2973,9 +2241,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="13" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="6" max="13" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3013,9 +2279,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="8" max="18" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="8" max="18" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3053,9 +2317,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="8" max="18" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="8" max="18" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3093,9 +2355,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="8" max="18" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="8" max="18" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3133,9 +2393,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="13" max="30" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="13" max="30" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3173,9 +2431,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="13" max="30" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="13" max="30" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3217,9 +2473,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30" max="71" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30" max="71" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3261,9 +2515,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30" max="71" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30" max="71" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3305,9 +2557,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30" max="71" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30" max="71" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3344,9 +2594,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="17" max="40" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="17" max="40" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3383,9 +2631,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="17" max="40" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="17" max="40" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3422,9 +2668,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="34" max="79" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="34" max="79" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3461,9 +2705,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="34" max="79" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="34" max="79" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3500,9 +2742,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="34" max="79" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="34" max="79" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3539,9 +2779,7 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="44" max="102" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="44" max="102" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>

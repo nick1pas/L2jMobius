@@ -177,7 +177,7 @@ public class Balok extends AbstractNpcAI
 	private void inPreparation10()
 	{
 		Broadcast.toAllOnlinePlayers(new SystemMessage(SystemMessageId.BATTLE_WITH_BALOK_STARTS_IN_10_MIN));
-		NORMAL_BATTLE_MOBS.set(SpawnData.getInstance().getSpawns().stream().filter(t -> t.getName() != null).filter(t -> t.getName().contains("NormalMobsBattle")).findAny().orElse(null));
+		NORMAL_BATTLE_MOBS.set(SpawnData.getInstance().getSpawnByName("BalokBattleground"));
 		ThreadPool.schedule(this::inPreparationSoon, 540000); // 9 minutes
 	}
 	
@@ -553,7 +553,7 @@ public class Balok extends AbstractNpcAI
 		rewardType();
 		GlobalVariablesManager.getInstance().set(GlobalVariablesManager.BALOK_REMAIN_TIME, System.currentTimeMillis() + REWARD_TIME);
 		NORMAL_BATTLE_MOBS.get().getGroups().forEach(SpawnGroup::despawnAll);
-		BOSS_SPAWNED.stream().forEach(Npc::deleteMe);
+		BOSS_SPAWNED.forEach(Npc::deleteMe);
 		BOSS_SPAWNED.clear();
 		Broadcast.toAllOnlinePlayers(new BalrogWarHud(_status, _stage));
 		if (!_balokKilled && (_stage == 4))

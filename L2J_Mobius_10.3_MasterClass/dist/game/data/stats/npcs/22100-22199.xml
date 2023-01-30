@@ -20,7 +20,7 @@
 		<sex>MALE</sex>
 		<acquire exp="6" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="1828.68266" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
+			<vitals hp="14629.65" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
 			<attack physical="442.8992" magical="302.44274" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="237.99429" magical="174.1539" />
 			<speed>
@@ -33,7 +33,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -62,9 +62,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="82" max="191" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="82" max="191" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -84,7 +82,7 @@
 		<sex>MALE</sex>
 		<acquire exp="5" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="1828.68266" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
+			<vitals hp="14629.65" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
 			<attack physical="442.8992" magical="302.44274" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="237.99429" magical="174.1539" />
 			<speed>
@@ -97,7 +95,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -123,9 +121,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="82" max="191" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="82" max="191" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -143,8 +139,9 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire exp="5" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="1828.68266" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
+			<vitals hp="14629.65" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
 			<attack physical="442.8992" magical="302.44274" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="237.99429" magical="174.1539" />
 			<speed>
@@ -165,7 +162,7 @@
 		</ai>
 		<skillList>
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -182,9 +179,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="82" max="191" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="82" max="191" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -204,7 +199,7 @@
 		<sex>MALE</sex>
 		<acquire exp="5" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="1776.58018" hpRegen="6.5" mp="948" mpRegen="2.4" />
+			<vitals hp="14212.62" hpRegen="6.5" mp="948" mpRegen="2.4" />
 			<attack physical="424.23295" magical="289.69611" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="233.18839" magical="170.63714" />
 			<speed>
@@ -217,7 +212,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -245,9 +240,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="79" max="184" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="79" max="184" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -270,7 +263,7 @@
 		<sex>MALE</sex>
 		<acquire exp="5" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="1828.68266" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
+			<vitals hp="14629.65" hpRegen="6.5" mp="977.4" mpRegen="2.4" />
 			<attack physical="442.8992" magical="302.44274" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="237.99429" magical="174.1539" />
 			<speed>
@@ -283,7 +276,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="3" /> <!-- Beasts -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="19" /> <!-- Extremely Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -311,9 +304,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="82" max="191" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="82" max="191" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -330,7 +321,7 @@
 		<equipment rhand="148" /> <!-- Sword of Valhalla -->
 		<acquire exp="7" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2974.35686398316" hpRegen="8.5" mp="1607.4" mpRegen="3" />
+			<vitals hp="11897.16" hpRegen="8.5" mp="1607.4" mpRegen="3" />
 			<attack physical="890.50085998804" magical="608.096657928153" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="332.70061" magical="243.45587" />
 			<speed>
@@ -343,7 +334,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -389,7 +380,7 @@
 		<equipment rhand="97" /> <!-- Lance -->
 		<acquire exp="8" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2975.2369188" hpRegen="8.721" mp="1742.976" mpRegen="3.0804" />
+			<vitals hp="11900.95" hpRegen="8.721" mp="1742.976" mpRegen="3.0804" />
 			<attack physical="938.20801458" magical="656.66638089" random="10" critical="4" accuracy="3" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="354.8183475" magical="259.6406685" />
 			<speed>
@@ -402,7 +393,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -446,7 +437,7 @@
 		<equipment rhand="8212" /> <!-- Monster Only (Solina Brother Mace) -->
 		<acquire exp="6" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="2975.2369188" hpRegen="8.721" mp="1742.976" mpRegen="3.0804" />
+			<vitals hp="11900.95" hpRegen="8.721" mp="1742.976" mpRegen="3.0804" />
 			<attack physical="938.20801458" magical="656.66638089" random="20" critical="1" accuracy="12" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="354.8183475" magical="259.6406685" />
 			<speed>
@@ -459,7 +450,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -505,7 +496,7 @@
 		<equipment rhand="8212" /> <!-- Monster Only (Solina Brother Mace) -->
 		<acquire exp="6" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3010.8929976" hpRegen="8.772" mp="1777.86" mpRegen="3.1008" />
+			<vitals hp="12043.53" hpRegen="8.772" mp="1777.86" mpRegen="3.1008" />
 			<attack physical="961.93701102" magical="677.644106544" random="20" critical="1" accuracy="13" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="361.0859925" magical="264.22705872" />
 			<speed>
@@ -518,7 +509,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="16" /> <!-- Very Strong M. Atk. -->
@@ -559,7 +550,7 @@
 		<equipment rhand="8213" /> <!-- Monster Only (Solina Father Mace) -->
 		<acquire exp="6" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3010.8929976" hpRegen="8.772" mp="1777.86" mpRegen="3.1008" />
+			<vitals hp="12043.53" hpRegen="8.772" mp="1777.86" mpRegen="3.1008" />
 			<attack physical="961.93701102" magical="677.644106544" random="10" critical="4" accuracy="8.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="361.0859925" magical="264.22705872" />
 			<speed>
@@ -572,7 +563,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -619,7 +610,7 @@
 		<equipment rhand="8213" /> <!-- Monster Only (Solina Father Mace) -->
 		<acquire exp="6" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3044.88717" hpRegen="8.823" mp="1812.948" mpRegen="3.111" />
+			<vitals hp="12179.81" hpRegen="8.823" mp="1812.948" mpRegen="3.111" />
 			<attack physical="985.66600746" magical="699.2575207596" random="10" critical="4" accuracy="9.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="367.3536375" magical="268.81344996" />
 			<speed>
@@ -632,7 +623,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="16" /> <!-- Very Strong M. Atk. -->
@@ -728,7 +719,7 @@
 		<equipment rhand="8211" lhand="8210" /> <!-- Monster Only (Monk Warrior Sword) / Monster Only (Monk Warrior Shield) -->
 		<acquire exp="6" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3077.1572058" hpRegen="8.874" mp="1848.24" mpRegen="3.1314" />
+			<vitals hp="12308.52" hpRegen="8.874" mp="1848.24" mpRegen="3.1314" />
 			<attack physical="1009.3950039" magical="719.599557852" random="10" critical="4" accuracy="10.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="373.969485" magical="273.65463924" />
 			<speed>
@@ -741,7 +732,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -785,7 +776,7 @@
 		<equipment rhand="6717" /> <!-- Monster Only (Einhasad Warrior) -->
 		<acquire exp="9" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3107.6436594" hpRegen="8.925" mp="1883.736" mpRegen="3.1518" />
+			<vitals hp="12430.28" hpRegen="8.925" mp="1883.736" mpRegen="3.1518" />
 			<attack physical="1033.1240034" magical="740.577283506" random="10" critical="4" accuracy="11.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="380.23713" magical="278.24103048" />
 			<speed>
@@ -798,7 +789,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="16" /> <!-- Very Strong M. Atk. -->
@@ -849,7 +840,7 @@
 		<equipment rhand="6718" /> <!-- Monster Only (Einhasad Shaman) -->
 		<acquire exp="10" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3107.6436594" hpRegen="8.925" mp="1883.736" mpRegen="3.1518" />
+			<vitals hp="15538.17" hpRegen="8.925" mp="1883.736" mpRegen="3.1518" />
 			<attack physical="1033.1240034" magical="740.577283506" random="20" critical="1" accuracy="16" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="380.23713" magical="278.24103048" />
 			<speed>
@@ -862,7 +853,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
@@ -908,7 +899,7 @@
 		<sex>MALE</sex>
 		<acquire exp="7" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3136.2900942" hpRegen="8.976" mp="1919.436" mpRegen="3.16812" />
+			<vitals hp="15681.39" hpRegen="8.976" mp="1919.436" mpRegen="3.16812" />
 			<attack physical="1055.0276874" magical="760.9193205984" random="20" critical="1" accuracy="17" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="386.504775" magical="282.8274207" />
 			<speed>
@@ -921,7 +912,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -947,14 +938,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="40" max="93" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0405">
-					<item id="45929" min="1" max="1" chance="33.3333" /> <!-- Augmenting Stone: Weapon -->
-					<item id="45929" min="1" max="1" chance="33.3333" /> <!-- Augmenting Stone: Weapon -->
-					<item id="45929" min="1" max="1" chance="33.3334" /> <!-- Augmenting Stone: Weapon -->
-				</group>
+				<item id="57" min="40" max="93" chance="70" /> <!-- Adena -->
+				<item id="45929" min="1" max="1" chance="0.014" /> <!-- Augmenting Stone: Weapon -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1027,7 +1012,7 @@
 		<equipment rhand="8214" /> <!-- Monster Only (Solina Priest Pole) -->
 		<acquire exp="7" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3163.0432152" hpRegen="9.027" mp="1955.34" mpRegen="3.1824" />
+			<vitals hp="12652.37" hpRegen="9.027" mp="1955.34" mpRegen="3.1824" />
 			<attack physical="1076.9313816" magical="781.2613576908" random="20" critical="1" accuracy="18" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="410.87895" magical="300.66338448" />
 			<speed>
@@ -1040,7 +1025,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="16" /> <!-- Very Strong M. Atk. -->
@@ -1088,7 +1073,7 @@
 		<equipment rhand="8221" /> <!-- Monster Only (Grail Apostle Spear) -->
 		<acquire exp="11" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="3163.0432152" hpRegen="9.027" mp="1955.34" mpRegen="3.1824" />
+			<vitals hp="18978.55" hpRegen="9.027" mp="1955.34" mpRegen="3.1824" />
 			<attack physical="1076.9313816" magical="781.2613576908" random="10" critical="4" accuracy="9" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="410.87895" magical="300.66338448" />
 			<speed>
@@ -1101,7 +1086,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="8" /> <!-- Angels -->
-			<skill id="4408" level="14" /> <!-- HP Increase (6x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="16" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1145,7 +1130,7 @@
 		<equipment rhand="8217" /> <!-- Monster Only (Zombie Gate Guard Spear) -->
 		<acquire exp="341" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="126733.8" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -1164,7 +1149,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1204,7 +1189,7 @@
 		<equipment rhand="8217" /> <!-- Monster Only (Zombie Gate Guard Spear) -->
 		<acquire exp="341" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="126733.8" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -1223,7 +1208,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1265,7 +1250,7 @@
 		<equipment rhand="8217" /> <!-- Monster Only (Zombie Gate Guard Spear) -->
 		<acquire exp="6168" sp="6" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="1781245" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -1284,7 +1269,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1328,7 +1313,7 @@
 		<acquire exp="2218" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1347,7 +1332,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1375,9 +1360,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1397,7 +1380,7 @@
 		<acquire exp="2218" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1416,7 +1399,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1443,9 +1426,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1465,7 +1446,7 @@
 		<acquire exp="2235" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1484,7 +1465,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1511,9 +1492,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1544,7 +1523,7 @@
 		<acquire exp="2218" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1563,7 +1542,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1591,9 +1570,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1625,7 +1602,7 @@
 		<acquire exp="2287" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1644,7 +1621,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1673,9 +1650,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1694,7 +1669,7 @@
 		<acquire exp="2218" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1713,7 +1688,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1740,9 +1715,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1762,7 +1735,7 @@
 		<acquire exp="2218" sp="2" />
 		<mpReward value="2" type="PER" ticks="5" affects="SOLO" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15761.780463869" hpRegen="8.5" mp="2317.4" mpRegen="3" />
+			<vitals hp="189141.6" hpRegen="8.5" mp="2317.4" mpRegen="3" />
 			<attack physical="6432.48694948244" magical="1133.34154078035" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="515.39249724918" magical="297.335874351375" />
 			<speed>
@@ -1781,7 +1754,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1807,9 +1780,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="333" max="776" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="333" max="776" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1839,7 +1810,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2428" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -1858,7 +1829,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -1886,16 +1857,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1913,7 +1878,7 @@
 		<sex>MALE</sex>
 		<acquire exp="2438" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -1932,7 +1897,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -1959,16 +1924,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1988,7 +1947,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2428" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2007,7 +1966,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2035,16 +1994,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2063,7 +2016,7 @@
 		<sex>MALE</sex>
 		<acquire exp="2428" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2082,7 +2035,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2109,16 +2062,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2139,7 +2086,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2434" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2158,7 +2105,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2187,16 +2134,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2227,7 +2168,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2467" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2246,7 +2187,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2275,16 +2216,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2303,7 +2238,7 @@
 		<equipment rhand="8215" /> <!-- Monster Only (Zombie Enlisted Man Sword) -->
 		<acquire exp="2438" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2322,7 +2257,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2349,16 +2284,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2378,7 +2307,7 @@
 		<equipment rhand="8215" /> <!-- Monster Only (Zombie Enlisted Man Sword) -->
 		<acquire exp="2428" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2397,7 +2326,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2425,16 +2354,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2453,7 +2376,7 @@
 		<sex>MALE</sex>
 		<acquire exp="2428" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="190100.6" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -2472,7 +2395,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="20" /> <!-- HP Increase (12x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -2498,16 +2421,10 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="10">
-					<item id="8600" min="1" max="1" chance="100" /> <!-- Herb of Life -->
-				</group>
-				<group chance="20">
-					<item id="8603" min="1" max="1" chance="90" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="10" /> <!-- Major Herb of Mana -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8603" min="1" max="1" chance="18" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="2" /> <!-- Major Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2580,9 +2497,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2644,9 +2559,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2708,9 +2621,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2776,9 +2687,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2851,9 +2760,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2915,9 +2822,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2980,9 +2885,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3048,9 +2951,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3128,9 +3029,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3192,9 +3091,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3260,9 +3157,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3326,9 +3221,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3401,9 +3294,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3469,9 +3360,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3534,9 +3423,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3598,9 +3485,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3678,9 +3563,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3743,9 +3626,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3811,9 +3692,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3879,9 +3758,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3912,7 +3789,7 @@
 		<equipment rhand="8215" /> <!-- Monster Only (Zombie Enlisted Man Sword) -->
 		<acquire exp="5047" sp="5" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -3931,7 +3808,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3958,9 +3835,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3979,7 +3854,7 @@
 		<equipment rhand="8215" /> <!-- Monster Only (Zombie Enlisted Man Sword) -->
 		<acquire exp="5047" sp="5" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -3998,7 +3873,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4024,9 +3899,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4049,7 +3922,7 @@
 		<equipment rhand="8208" /> <!-- Monster Only (Heretic Private Staff) -->
 		<acquire exp="2523" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4068,7 +3941,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4094,9 +3967,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4114,7 +3985,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2644" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4133,7 +4004,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4158,9 +4029,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4178,7 +4047,7 @@
 		<sex>MALE</sex>
 		<acquire exp="2886" sp="3" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4197,7 +4066,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4223,9 +4092,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4245,7 +4112,7 @@
 		<equipment rhand="8208" /> <!-- Monster Only (Heretic Private Staff) -->
 		<acquire exp="2523" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4264,7 +4131,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4292,9 +4159,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4314,7 +4179,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2523" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4333,7 +4198,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4359,9 +4224,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4380,7 +4243,7 @@
 		<equipment rhand="8205" /> <!-- Monster Only (Heretic Priest Sigil) -->
 		<acquire exp="2523" sp="2" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="356248.833567932" hpRegen="8.5" mp="23550" mpRegen="30" />
+			<vitals hp="712498.3" hpRegen="8.5" mp="23550" mpRegen="30" />
 			<attack physical="47220.2058789866" magical="8304.88513767892" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4399,7 +4262,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -4424,9 +4287,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="340" max="792" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="340" max="792" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4441,7 +4302,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="8217" /> <!-- Monster Only (Zombie Gate Guard Spear) -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="31683.24" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="10" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4460,7 +4321,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -4501,7 +4362,7 @@
 		<sex>MALE</sex>
 		<acquire exp="605" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="15841.7282909073" hpRegen="8.5" mp="2355" mpRegen="3" />
+			<vitals hp="158416.8" hpRegen="8.5" mp="2355" mpRegen="3" />
 			<attack physical="6745.74369699808" magical="1186.41216252556" random="5" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="525.700347194163" magical="304.76927121016" />
 			<speed>
@@ -4520,7 +4381,7 @@
 			<skill id="4416" level="1" /> <!-- Undead -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5467" level="1" /> <!-- Dark Attribute -->
-			<skill id="4408" level="18" /> <!-- HP Increase (10x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -4545,9 +4406,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="164" max="384" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="164" max="384" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4625,9 +4484,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="164" max="384" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="164" max="384" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4640,6 +4497,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
+		<acquire exp="10" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
 			<attack physical="970.537548504614" magical="662.751329129412" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -4690,9 +4548,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="164" max="384" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="164" max="384" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4717,6 +4573,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
+		<acquire exp="10" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
 			<attack physical="970.537548504614" magical="662.751329129412" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -4769,9 +4626,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="164" max="384" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="164" max="384" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4792,7 +4647,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire exp="100560" sp="24" />
+		<acquire exp="10" sp="1" />
 		<stats str="79" int="34" dex="42" wit="66" con="75" men="12">
 			<vitals hp="3290.11306877694" hpRegen="8.5" mp="1674.8" mpRegen="3" />
 			<attack physical="970.537548504614" magical="662.751329129412" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -4849,9 +4704,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="164" max="384" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="164" max="384" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>

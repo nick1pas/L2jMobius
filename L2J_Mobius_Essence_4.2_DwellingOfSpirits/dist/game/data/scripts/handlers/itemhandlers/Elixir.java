@@ -42,7 +42,7 @@ public class Elixir extends ItemSkills
 			((playable.getLevel() < 93) && (elixirsUsed >= 12)) || //
 			((playable.getLevel() < 94) && (elixirsUsed >= 13)) || //
 			((playable.getLevel() < 95) && (elixirsUsed >= 14)) || //
-			((playable.getLevel() < 96) && (elixirsUsed >= 15)))
+			((playable.getLevel() < 100) && (elixirsUsed >= 15)))
 		{
 			playable.sendPacket(SystemMessageId.THE_ELIXIR_UNAVAILABLE);
 			return false;
@@ -51,7 +51,7 @@ public class Elixir extends ItemSkills
 		if (super.useItem(playable, item, forceUse))
 		{
 			playable.getActingPlayer().getVariables().set(PlayerVariables.ELIXIRS_AVAILABLE, elixirsAvailable + 1);
-			playable.sendPacket(new SystemMessage(SystemMessageId.THANKS_TO_THE_ELIXIR_CHARACTER_S_STAT_POINTS_S1).addInt(1));
+			playable.sendPacket(new SystemMessage(SystemMessageId.THANKS_TO_THE_ELIXIR_CHARACTER_S_STAT_POINTS_S1).addInt(elixirsUsed + 1));
 			playable.getActingPlayer().broadcastUserInfo();
 			return true;
 		}

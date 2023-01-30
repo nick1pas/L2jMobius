@@ -3,7 +3,7 @@
 	<npc id="21396" level="84" type="Monster" name="Carrion Scarab">
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="680551" sp="10208" />
+		<acquire exp="5532" sp="10208" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="43915.74" hpRegen="17" mp="2718" mpRegen="6" />
 			<attack physical="45789.25" magical="23451.1" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -39,42 +39,11 @@
 			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
 			<skill id="4439" level="2" /> <!-- Greater Hold Resistance -->
 		</skillList>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="613" max="1431" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0792">
-					<item id="895" min="1" max="1" chance="2.0971" /> <!-- Black Ore Ring -->
-					<item id="92752" min="1" max="1" chance="44.0395" /> <!-- Black Ore Ring Gemstone -->
-					<item id="864" min="1" max="1" chance="1.3981" /> <!-- Black Ore Earring -->
-					<item id="92751" min="1" max="1" chance="29.3596" /> <!-- Black Ore Earring Piece -->
-					<item id="926" min="1" max="1" chance="1.0503" /> <!-- Black Ore Necklace -->
-					<item id="92753" min="1" max="1" chance="22.0554" /> <!-- Black Ore Necklace Beads -->
-				</group>
-				<group chance="11.828">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="21397" level="84" type="Monster" name="Carrion Scarab">
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="1355598" sp="20333" />
+		<acquire exp="5532" sp="20334" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="43915.74" hpRegen="17" mp="2718" mpRegen="6" />
 			<attack physical="45789.25" magical="23451.1" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -109,7 +78,7 @@
 	<npc id="21398" level="84" type="Monster" name="Soldier Scarab">
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="680551" sp="20416" />
+		<acquire exp="5532" sp="10208" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="43915.74" hpRegen="17" mp="2718" mpRegen="6" />
 			<attack physical="45789.25" magical="23451.1" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -139,42 +108,11 @@
 			<skill id="4437" level="4" /> <!-- Greater Infection Resistance -->
 			<skill id="4274" level="1" /> <!-- Blunt Weapon Vulnerability -->
 		</skillList>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="613" max="1431" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0792">
-					<item id="895" min="1" max="1" chance="2.0971" /> <!-- Black Ore Ring -->
-					<item id="92752" min="1" max="1" chance="44.0395" /> <!-- Black Ore Ring Gemstone -->
-					<item id="864" min="1" max="1" chance="1.3981" /> <!-- Black Ore Earring -->
-					<item id="92751" min="1" max="1" chance="29.3596" /> <!-- Black Ore Earring Piece -->
-					<item id="926" min="1" max="1" chance="1.0503" /> <!-- Black Ore Necklace -->
-					<item id="92753" min="1" max="1" chance="22.0554" /> <!-- Black Ore Necklace Beads -->
-				</group>
-				<group chance="11.828">
-					<item id="92908" min="1" max="1" chance="37.054" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="7.4108" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="3.7054" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.2351" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="0.7411" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.3705" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1235" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0741" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="92919" min="1" max="1" chance="0.0037" /> <!-- Material: Blacksmith's High-grade Power - Sealed -->
-					<item id="92996" min="1" max="1" chance="37.054" /> <!-- Ancient Resources - Sealed -->
-					<item id="92997" min="1" max="1" chance="7.4108" /> <!-- Old Unknown Resources - Sealed -->
-					<item id="92998" min="1" max="1" chance="3.7054" /> <!-- Old Shining Resources - Sealed -->
-					<item id="92999" min="1" max="1" chance="0.7411" /> <!-- Old High-grade Resources - Sealed -->
-					<item id="92995" min="1" max="1" chance="0.3705" /> <!-- Drained Thons - Sealed -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="21399" level="84" type="Monster" name="Soldier Scarab">
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="1355598" sp="40667" />
+		<acquire exp="5532" sp="20334" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="43915.74" hpRegen="17" mp="2718" mpRegen="6" />
 			<attack physical="45789.25" magical="23451.1" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />

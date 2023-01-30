@@ -9,7 +9,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire exp="587" sp="18" />
+		<acquire exp="194" sp="18" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="226.387951055469" hpRegen="2.5" mp="132.64" mpRegen="1.2" />
 			<attack physical="25.04271" magical="17.10092" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -44,25 +44,6 @@
 			<radius normal="11" />
 			<height normal="27" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="4" max="10" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0026">
-					<item id="271" min="1" max="1" chance="100" /> <!-- Hunting Bow -->
-				</group>
-				<group chance="0.742">
-					<item id="92908" min="1" max="1" chance="15.873" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="3.1746" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="1.5873" /> <!-- Material: Rags - Sealed -->
-					<item id="17" min="10" max="30" chance="79.3651" /> <!-- Wooden Arrow -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="1833" min="1" max="1" chance="5.1037" /> <!-- Bandage -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20101" level="14" type="Monster" name="Crasher">
 		<parameters>
@@ -73,7 +54,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="214" sp="21" />
+		<acquire exp="213" sp="21" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="243.022656988362" hpRegen="2.5" mp="140.88" mpRegen="1.2" />
 			<attack physical="27.24646" magical="18.6058" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -112,29 +93,6 @@
 			<radius normal="20" />
 			<height normal="31" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="4" max="11" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0417">
-					<item id="114" min="1" max="1" chance="20" /> <!-- Earring of Strength -->
-					<item id="115" min="1" max="1" chance="20" /> <!-- Earring of Wisdom -->
-					<item id="876" min="1" max="1" chance="30" /> <!-- Ring of Anguish -->
-					<item id="907" min="1" max="1" chance="15" /> <!-- Necklace of Anguish -->
-					<item id="92483" min="1" max="1" chance="15" /> <!-- Necklace of Anguish Chain -->
-				</group>
-				<group chance="0.484">
-					<item id="92908" min="1" max="1" chance="25.2101" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="5.042" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="2.521" /> <!-- Material: Rags - Sealed -->
-					<item id="1831" min="1" max="1" chance="67.2269" /> <!-- Antidote -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="20" min="1" max="1" chance="0.1426" /> <!-- Buckler -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20102" level="14" type="Monster" name="Skeleton Marksman">
 		<parameters>
@@ -145,7 +103,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire exp="632" sp="19" />
+		<acquire exp="213" sp="19" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="243.022656988362" hpRegen="2.5" mp="140.88" mpRegen="1.2" />
 			<attack physical="27.24646" magical="18.6058" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -180,23 +138,6 @@
 			<radius normal="11" />
 			<height normal="27" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="4" max="11" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0027">
-					<item id="271" min="1" max="1" chance="100" /> <!-- Hunting Bow -->
-				</group>
-				<group chance="0.6345">
-					<item id="92908" min="1" max="1" chance="15.3846" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="3.0769" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="1.5385" /> <!-- Material: Rags - Sealed -->
-					<item id="1661" min="1" max="1" chance="3.0769" /> <!-- Thief Key -->
-					<item id="17" min="10" max="30" chance="76.9231" /> <!-- Wooden Arrow -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="20103" level="15" type="Monster" name="Giant Spider">
 		<parameters>
@@ -206,7 +147,7 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="236" sp="20" />
+		<acquire exp="235" sp="20" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="260.500236582205" hpRegen="2.5" mp="149.2" mpRegen="1.2" />
 			<attack physical="29.61691" magical="20.22451" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -244,16 +185,16 @@
 			<drop>
 				<item id="57" min="3" max="4" chance="70" /> <!-- Adena -->
 				<item id="92599" min="1" max="1" chance="0.001" /> <!-- Elven Bow Shaft -->
-				<item id="58" min="1" max="1" chance="0.001" /> <!-- Mithril Breastplate -->
-				<item id="181" min="1" max="1" chance="0.001" /> <!-- Mace of Miracle -->
-				<item id="276" min="1" max="1" chance="0.001" /> <!-- Elven Bow -->
-				<item id="435" min="1" max="1" chance="0.001" /> <!-- Wizard Tunic -->
-				<item id="912" min="1" max="1" chance="0.001" /> <!-- Necklace of Old Forest -->
-				<item id="2447" min="1" max="1" chance="0.001" /> <!-- Gloves of Knowledge -->
-				<item id="91880" min="1" max="1" chance="0.001" /> <!-- Military Talwar -->
+				<item id="58" min="1" max="1" chance="0.0002" /> <!-- Mithril Breastplate -->
+				<item id="181" min="1" max="1" chance="0.00007" /> <!-- Mace of Miracle -->
+				<item id="276" min="1" max="1" chance="0.00007" /> <!-- Elven Bow -->
+				<item id="435" min="1" max="1" chance="0.0004" /> <!-- Wizard Tunic -->
+				<item id="912" min="1" max="1" chance="0.0005" /> <!-- Necklace of Old Forest -->
+				<item id="2447" min="1" max="1" chance="0.0009" /> <!-- Gloves of Knowledge -->
+				<item id="91880" min="1" max="1" chance="0.00007" /> <!-- Military Talwar -->
 			</drop>
 			<spoil>
-				<item id="2262" min="1" max="1" chance="0.0054" /> <!-- Recipe: Elven Bow (100%) -->
+				<item id="2262" min="1" max="1" chance="0.005" /> <!-- Recipe: Elven Bow (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -266,7 +207,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="946" lhand="945" /> <!-- rhand: Skeleton Dagger lhand: Skeleton Buckler -->
-		<acquire exp="681" sp="21" />
+		<acquire exp="235" sp="20" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="260.500236582205" hpRegen="2.5" mp="149.2" mpRegen="1.2" />
 			<attack physical="29.61691" magical="20.22451" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -301,21 +242,6 @@
 			<radius normal="11" grown="13" />
 			<height normal="25" grown="31" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="4" max="11" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0027">
-					<item id="271" min="1" max="1" chance="100" /> <!-- Hunting Bow -->
-				</group>
-				<group chance="0.2123">
-					<item id="92908" min="1" max="1" chance="76.9231" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3846" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6923" /> <!-- Material: Rags - Sealed -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="20105" level="16" type="Monster" name="Dark Horror">
 		<parameters>
@@ -326,7 +252,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="259" sp="22" />
+		<acquire exp="258" sp="21" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="278.843298502084" hpRegen="2.5" mp="157.6" mpRegen="1.2" />
 			<attack physical="32.16396" magical="21.96382" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -361,17 +287,17 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="4" max="4" chance="70" /> <!-- Adena -->
-				<item id="92592" min="1" max="1" chance="0.0016" /> <!-- Saber Blade -->
-				<item id="123" min="1" max="1" chance="0.001" /> <!-- Saber -->
-				<item id="167" min="1" max="1" chance="0.001" /> <!-- Scalpel -->
-				<item id="220" min="1" max="1" chance="0.001" /> <!-- Crafted Dagger -->
-				<item id="432" min="1" max="1" chance="0.001" /> <!-- Cursed Tunic -->
-				<item id="465" min="1" max="1" chance="0.0012" /> <!-- Cursed Stockings -->
-				<item id="605" min="1" max="1" chance="0.0014" /> <!-- Leather Gauntlets -->
-				<item id="879" min="1" max="1" chance="0.0017" /> <!-- Ring of Magic -->
+				<item id="92592" min="1" max="1" chance="0.002" /> <!-- Saber Blade -->
+				<item id="123" min="1" max="1" chance="0.0001" /> <!-- Saber -->
+				<item id="167" min="1" max="1" chance="0.0001" /> <!-- Scalpel -->
+				<item id="220" min="1" max="1" chance="0.0001" /> <!-- Crafted Dagger -->
+				<item id="432" min="1" max="1" chance="0.0008" /> <!-- Cursed Tunic -->
+				<item id="465" min="1" max="1" chance="0.001" /> <!-- Cursed Stockings -->
+				<item id="605" min="1" max="1" chance="0.001" /> <!-- Leather Gauntlets -->
+				<item id="879" min="1" max="1" chance="0.002" /> <!-- Ring of Magic -->
 			</drop>
 			<spoil>
-				<item id="2255" min="1" max="1" chance="0.0088" /> <!-- Recipe: Saber (100%) -->
+				<item id="2255" min="1" max="1" chance="0.009" /> <!-- Recipe: Saber (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -383,7 +309,7 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="259" sp="22" />
+		<acquire exp="258" sp="21" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="278.843298502084" hpRegen="2.5" mp="157.6" mpRegen="1.2" />
 			<attack physical="32.16396" magical="21.96382" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -421,19 +347,19 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="4" max="4" chance="70" /> <!-- Adena -->
-				<item id="92489" min="1" max="1" chance="0.0036" /> <!-- Elven Earring Beads -->
-				<item id="92527" min="1" max="1" chance="0.0065" /> <!-- Iron Boot Design -->
-				<item id="63" min="1" max="1" chance="0.001" /> <!-- Gauntlets -->
-				<item id="69" min="1" max="1" chance="0.001" /> <!-- Bastard Sword -->
-				<item id="183" min="1" max="1" chance="0.001" /> <!-- Mystic Staff -->
-				<item id="185" min="1" max="1" chance="0.001" /> <!-- Staff of Mana -->
-				<item id="469" min="1" max="1" chance="0.001" /> <!-- Stockings of Knowledge -->
-				<item id="553" min="1" max="1" chance="0.001" /> <!-- Iron Boots -->
-				<item id="850" min="1" max="1" chance="0.001" /> <!-- Elven Earring -->
+				<item id="92489" min="1" max="1" chance="0.004" /> <!-- Elven Earring Beads -->
+				<item id="92527" min="1" max="1" chance="0.007" /> <!-- Iron Boot Design -->
+				<item id="63" min="1" max="1" chance="0.0009" /> <!-- Gauntlets -->
+				<item id="69" min="1" max="1" chance="0.00007" /> <!-- Bastard Sword -->
+				<item id="183" min="1" max="1" chance="0.00007" /> <!-- Mystic Staff -->
+				<item id="185" min="1" max="1" chance="0.00007" /> <!-- Staff of Mana -->
+				<item id="469" min="1" max="1" chance="0.0005" /> <!-- Stockings of Knowledge -->
+				<item id="553" min="1" max="1" chance="0.0009" /> <!-- Iron Boots -->
+				<item id="850" min="1" max="1" chance="0.0005" /> <!-- Elven Earring -->
 			</drop>
 			<spoil>
-				<item id="2154" min="1" max="1" chance="0.0193" /> <!-- Recipe: Elven Earring (100%) -->
-				<item id="2185" min="1" max="1" chance="0.0354" /> <!-- Recipe: Iron Boots -->
+				<item id="2154" min="1" max="1" chance="0.019" /> <!-- Recipe: Elven Earring (100%) -->
+				<item id="2185" min="1" max="1" chance="0.035" /> <!-- Recipe: Iron Boots -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -445,7 +371,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="721" sp="22" />
+		<acquire exp="258" sp="22" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="278.843298502084" hpRegen="2.5" mp="157.6" mpRegen="1.2" />
 			<attack physical="32.16396" magical="21.96382" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -480,26 +406,6 @@
 			<radius normal="14" />
 			<height normal="25" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="11" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0011">
-					<item id="217" min="1" max="1" chance="50" /> <!-- Shining Knife -->
-					<item id="218" min="1" max="1" chance="50" /> <!-- Throwing Knife -->
-				</group>
-				<group chance="0.1665">
-					<item id="92908" min="1" max="1" chance="76.7296" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3459" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.673" /> <!-- Material: Rags - Sealed -->
-					<item id="2252" min="1" max="1" chance="0.2515" /> <!-- Recipe: Iron Hammer -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="734" min="1" max="1" chance="0.346" /> <!-- Wind Walk Potion -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20108" level="17" type="Monster" name="Giant Blade Spider">
 		<parameters>
@@ -509,7 +415,7 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="285" sp="23" />
+		<acquire exp="284" sp="23" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="298.073870812572" hpRegen="2.5" mp="166.08" mpRegen="1.2" />
 			<attack physical="34.8979" magical="23.83074" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -547,17 +453,17 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="4" max="4" chance="70" /> <!-- Adena -->
-				<item id="92493" min="1" max="1" chance="0.0085" /> <!-- Mithril Ring Wire -->
-				<item id="59" min="1" max="1" chance="0.001" /> <!-- Mithril Gaiters -->
-				<item id="128" min="1" max="1" chance="0.001" /> <!-- Knight's Sword -->
-				<item id="179" min="1" max="1" chance="0.001" /> <!-- Mace of Prayer -->
-				<item id="277" min="1" max="1" chance="0.001" /> <!-- Dark Elven Bow -->
-				<item id="416" min="1" max="1" chance="0.001" /> <!-- Reinforced Leather Gaiters -->
-				<item id="436" min="1" max="1" chance="0.001" /> <!-- Tunic of Knowledge -->
-				<item id="882" min="1" max="1" chance="0.001" /> <!-- Mithril Ring -->
+				<item id="92493" min="1" max="1" chance="0.009" /> <!-- Mithril Ring Wire -->
+				<item id="59" min="1" max="1" chance="0.0004" /> <!-- Mithril Gaiters -->
+				<item id="128" min="1" max="1" chance="0.00008" /> <!-- Knight's Sword -->
+				<item id="179" min="1" max="1" chance="0.00008" /> <!-- Mace of Prayer -->
+				<item id="277" min="1" max="1" chance="0.00008" /> <!-- Dark Elven Bow -->
+				<item id="416" min="1" max="1" chance="0.0005" /> <!-- Reinforced Leather Gaiters -->
+				<item id="436" min="1" max="1" chance="0.0003" /> <!-- Tunic of Knowledge -->
+				<item id="882" min="1" max="1" chance="0.0006" /> <!-- Mithril Ring -->
 			</drop>
 			<spoil>
-				<item id="2158" min="1" max="1" chance="0.0461" /> <!-- Recipe: Mithril Ring (100%) -->
+				<item id="2158" min="1" max="1" chance="0.046" /> <!-- Recipe: Mithril Ring (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -572,7 +478,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire exp="1484" sp="42" />
+		<acquire exp="284" sp="42" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="298.073870812572" hpRegen="2.5" mp="166.08" mpRegen="1.2" />
 			<attack physical="34.8979" magical="23.83074" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -621,7 +527,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire exp="285" sp="43" />
+		<acquire exp="284" sp="42" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="298.073870812572" hpRegen="2.5" mp="166.08" mpRegen="1.2" />
 			<attack physical="34.8979" magical="23.83074" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -658,28 +564,6 @@
 			<radius normal="12" />
 			<height normal="27" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="12" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0102">
-					<item id="24" min="1" max="1" chance="19.2424" /> <!-- Bone Breastplate -->
-					<item id="31" min="1" max="1" chance="30.7576" /> <!-- Bone Gaiters -->
-					<item id="390" min="1" max="1" chance="19.2424" /> <!-- Cotton Shirt -->
-					<item id="412" min="1" max="1" chance="30.7576" /> <!-- Cotton Pants -->
-				</group>
-				<group chance="0.2293">
-					<item id="92908" min="1" max="1" chance="76.9231" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3846" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6923" /> <!-- Material: Rags - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="734" min="1" max="1" chance="0.1791" /> <!-- Wind Walk Potion -->
-				<item id="92484" min="1" max="1" chance="0.0181" /> <!-- Necklace of Wisdom Chain -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20111" level="17" type="Monster" name="Ratman Lieutenant">
 		<parameters>
@@ -690,7 +574,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="1" /> <!-- rhand: Short Sword -->
-		<acquire exp="1437" sp="40" />
+		<acquire exp="284" sp="28" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="298.073870812572" hpRegen="2.5" mp="166.08" mpRegen="1.2" />
 			<attack physical="34.8979" magical="23.83074" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -735,7 +619,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire exp="1488" sp="43" />
+		<acquire exp="312" sp="30" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="318.213311042722" hpRegen="2.5" mp="174.64" mpRegen="1.2" />
 			<attack physical="37.82932" magical="25.83252" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -781,7 +665,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire exp="313" sp="31" />
+		<acquire exp="312" sp="30" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="318.213311042722" hpRegen="2.5" mp="174.64" mpRegen="1.2" />
 			<attack physical="37.82932" magical="25.83252" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -818,28 +702,6 @@
 			<radius normal="12" />
 			<height normal="27" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="12" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0105">
-					<item id="24" min="1" max="1" chance="19.2424" /> <!-- Bone Breastplate -->
-					<item id="31" min="1" max="1" chance="30.7576" /> <!-- Bone Gaiters -->
-					<item id="390" min="1" max="1" chance="19.2424" /> <!-- Cotton Shirt -->
-					<item id="412" min="1" max="1" chance="30.7576" /> <!-- Cotton Pants -->
-				</group>
-				<group chance="0.1825">
-					<item id="92908" min="1" max="1" chance="74.6157" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.9231" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4616" /> <!-- Material: Rags - Sealed -->
-					<item id="1801" min="1" max="1" chance="2.9996" /> <!-- Recipe: Piece Bone Gaiters -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92512" min="1" max="1" chance="0.0654" /> <!-- Leather Glove Lining -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20114" level="19" type="Monster" name="Salamander Noble">
 		<parameters>
@@ -849,7 +711,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<acquire exp="1581" sp="48" />
+		<acquire exp="344" sp="47" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="339.282213839231" hpRegen="2.5" mp="183.28" mpRegen="1.2" />
 			<attack physical="40.96915" magical="27.97662" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -885,28 +747,6 @@
 			<radius normal="16" />
 			<height normal="6.8" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="13" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0189">
-					<item id="845" min="1" max="1" chance="25.0262" /> <!-- Cat's Eye -->
-					<item id="877" min="1" max="1" chance="37.5816" /> <!-- Ring of Wisdom -->
-					<item id="908" min="1" max="1" chance="18.6961" /> <!-- Necklace of Wisdom -->
-					<item id="92484" min="1" max="1" chance="18.6961" /> <!-- Necklace of Wisdom Chain -->
-				</group>
-				<group chance="0.2433">
-					<item id="92908" min="1" max="1" chance="76.9231" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3846" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6923" /> <!-- Material: Rags - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="735" min="1" max="1" chance="0.0951" /> <!-- Haste Potion -->
-				<item id="92586" min="1" max="1" chance="0.0017" /> <!-- Short Spear Edge -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20115" level="19" type="Monster" name="Undine Noble">
 		<parameters>
@@ -917,7 +757,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire exp="345" sp="48" />
+		<acquire exp="344" sp="47" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="339.282213839231" hpRegen="2.5" mp="183.28" mpRegen="1.2" />
 			<attack physical="40.96915" magical="27.97662" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -954,27 +794,6 @@
 			<radius normal="12" />
 			<height normal="27" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="13" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0249">
-					<item id="38" min="1" max="1" chance="33.3333" /> <!-- Low Boots -->
-					<item id="50" min="1" max="1" chance="33.3333" /> <!-- Leather Gloves -->
-					<item id="92512" min="1" max="1" chance="33.3334" /> <!-- Leather Glove Lining -->
-				</group>
-				<group chance="0.2433">
-					<item id="92908" min="1" max="1" chance="76.9231" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3846" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6923" /> <!-- Material: Rags - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92587" min="1" max="1" chance="0.0017" /> <!-- Sword of Reflection Blade -->
-				<item id="92588" min="1" max="1" chance="0.0017" /> <!-- Forest Bow Shaft -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20116" level="2" type="Monster" name="Fox">
 		<parameters>
@@ -984,7 +803,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="88" sp="2" />
+		<acquire exp="68" sp="2" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="50.7296230931516" hpRegen="2" mp="47.28" mpRegen="0.9" />
 			<attack physical="9.32203" magical="6.36574" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1027,7 +846,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="1084" sp="33" />
+		<acquire exp="400" sp="32" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="361.300316445296" hpRegen="2.5" mp="192" mpRegen="1.2" />
 			<attack physical="44.32863" magical="30.2707" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1065,27 +884,6 @@
 			<radius normal="14" />
 			<height normal="36" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="13" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0013">
-					<item id="176" min="1" max="1" chance="50" /> <!-- Apprentice's Staff -->
-					<item id="2501" min="1" max="1" chance="50" /> <!-- Bone Club -->
-				</group>
-				<group chance="0.1884">
-					<item id="92908" min="1" max="1" chance="75.6613" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.1323" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.5661" /> <!-- Material: Rags - Sealed -->
-					<item id="2173" min="1" max="1" chance="1.6403" /> <!-- Recipe: Durable Leather Shirt -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="734" min="1" max="1" chance="0.1931" /> <!-- Wind Walk Potion -->
-				<item id="92512" min="1" max="1" chance="0.0342" /> <!-- Leather Glove Lining -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20118" level="21" type="Monster" name="Dre Vanul Watchman">
 		<parameters>
@@ -1103,7 +901,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="1162" sp="35" />
+		<acquire exp="428" sp="35" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="384.286402264366" hpRegen="3.5" mp="205.2" mpRegen="1.5" />
 			<attack physical="47.91924" magical="32.72263" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1141,27 +939,6 @@
 			<radius normal="14" />
 			<height normal="36" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="13" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0007">
-					<item id="87" min="1" max="1" chance="25" /> <!-- Iron Hammer -->
-					<item id="92589" min="1" max="1" chance="25" /> <!-- Iron Hammer Head -->
-					<item id="155" min="1" max="1" chance="25" /> <!-- Flanged Mace -->
-					<item id="177" min="1" max="1" chance="25" /> <!-- Mage Staff -->
-				</group>
-				<group chance="0.2508">
-					<item id="92908" min="1" max="1" chance="76.9231" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3846" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6923" /> <!-- Material: Rags - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="846" min="1" max="1" chance="0.0294" /> <!-- Coral Earring -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20119" level="3" type="Monster" name="Elder Fox">
 		<parameters>
@@ -1171,7 +948,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="132" sp="2" />
+		<acquire exp="75" sp="3" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="60.7054178782378" hpRegen="2" mp="54.64" mpRegen="0.9" />
 			<attack physical="10.24492" magical="6.99595" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1210,7 +987,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="82" sp="6" />
+		<acquire exp="82" sp="5" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="71.9513211373933" hpRegen="2" mp="62.08" mpRegen="0.9" />
 			<attack physical="11.24892" magical="7.68155" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1243,26 +1020,26 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="1" max="1" chance="70" /> <!-- Adena -->
-				<item id="92589" min="1" max="1" chance="0.001" /> <!-- Iron Hammer Head -->
-				<item id="92590" min="1" max="1" chance="0.001" /> <!-- Sword Breaker Edge -->
-				<item id="92591" min="1" max="1" chance="0.001" /> <!-- Compound Bow Shaft -->
-				<item id="21" min="1" max="1" chance="0.0459" /> <!-- Shirt -->
-				<item id="22" min="1" max="1" chance="0.0028" /> <!-- Leather Shirt -->
-				<item id="28" min="1" max="1" chance="0.0734" /> <!-- Pants -->
-				<item id="49" min="1" max="1" chance="0.0025" /> <!-- Gloves -->
-				<item id="87" min="1" max="1" chance="0.001" /> <!-- Iron Hammer -->
-				<item id="102" min="1" max="1" chance="0.001" /> <!-- Round Shield -->
-				<item id="176" min="1" max="1" chance="0.001" /> <!-- Apprentice's Staff -->
-				<item id="219" min="1" max="1" chance="0.001" /> <!-- Sword Breaker -->
-				<item id="257" min="1" max="1" chance="0.001" /> <!-- Viper Fang -->
-				<item id="273" min="1" max="1" chance="0.001" /> <!-- Compound Bow -->
-				<item id="426" min="1" max="1" chance="0.0459" /> <!-- Tunic -->
-				<item id="1100" min="1" max="1" chance="0.0028" /> <!-- Cotton Tunic -->
+				<item id="92589" min="1" max="1" chance="0.00007" /> <!-- Iron Hammer Head -->
+				<item id="92590" min="1" max="1" chance="0.00007" /> <!-- Sword Breaker Edge -->
+				<item id="92591" min="1" max="1" chance="0.00007" /> <!-- Compound Bow Shaft -->
+				<item id="21" min="1" max="1" chance="0.046" /> <!-- Shirt -->
+				<item id="22" min="1" max="1" chance="0.003" /> <!-- Leather Shirt -->
+				<item id="28" min="1" max="1" chance="0.073" /> <!-- Pants -->
+				<item id="49" min="1" max="1" chance="0.003" /> <!-- Gloves -->
+				<item id="87" min="1" max="1" chance="0.00003" /> <!-- Iron Hammer -->
+				<item id="102" min="1" max="1" chance="0.0009" /> <!-- Round Shield -->
+				<item id="176" min="1" max="1" chance="0.00005" /> <!-- Apprentice's Staff -->
+				<item id="219" min="1" max="1" chance="0.00003" /> <!-- Sword Breaker -->
+				<item id="257" min="1" max="1" chance="0.00003" /> <!-- Viper Fang -->
+				<item id="273" min="1" max="1" chance="0.00003" /> <!-- Compound Bow -->
+				<item id="426" min="1" max="1" chance="0.046" /> <!-- Tunic -->
+				<item id="1100" min="1" max="1" chance="0.003" /> <!-- Cotton Tunic -->
 			</drop>
 			<spoil>
-				<item id="2252" min="1" max="1" chance="0.0012" /> <!-- Recipe: Iron Hammer -->
-				<item id="2253" min="1" max="1" chance="0.0012" /> <!-- Recipe: Sword Breaker -->
-				<item id="2254" min="1" max="1" chance="0.0012" /> <!-- Recipe: Compound Bow -->
+				<item id="2252" min="1" max="1" chance="0.001" /> <!-- Recipe: Iron Hammer -->
+				<item id="2253" min="1" max="1" chance="0.001" /> <!-- Recipe: Sword Breaker -->
+				<item id="2254" min="1" max="1" chance="0.001" /> <!-- Recipe: Compound Bow -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1308,26 +1085,6 @@
 			<radius normal="18" />
 			<height normal="8.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="1" max="3" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0667">
-					<item id="4" min="1" max="1" chance="50" /> <!-- Club -->
-					<item id="7" min="1" max="1" chance="50" /> <!-- Apprentice's Rod -->
-				</group>
-				<group chance="0.0582">
-					<item id="92908" min="1" max="1" chance="73.3138" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.6628" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3314" /> <!-- Material: Rags - Sealed -->
-					<item id="1787" min="1" max="1" chance="4.692" /> <!-- Recipe: Willow Staff -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="1788" min="1" max="1" chance="0.0444" /> <!-- Recipe: Bow -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20130" level="6" type="Monster" name="Orc">
 		<parameters>
@@ -1338,7 +1095,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="156" /> <!-- Hand Axe -->
-		<acquire exp="101" sp="8" />
+		<acquire exp="100" sp="8" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="98.6725479529507" hpRegen="2" mp="77.2" mpRegen="0.9" />
 			<attack physical="13.52471" magical="9.23562" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1376,26 +1133,26 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="1" max="2" chance="70" /> <!-- Adena -->
-				<item id="92589" min="1" max="1" chance="0.001" /> <!-- Iron Hammer Head -->
-				<item id="92590" min="1" max="1" chance="0.001" /> <!-- Sword Breaker Edge -->
-				<item id="92591" min="1" max="1" chance="0.001" /> <!-- Compound Bow Shaft -->
-				<item id="21" min="1" max="1" chance="0.0847" /> <!-- Shirt -->
-				<item id="22" min="1" max="1" chance="0.0051" /> <!-- Leather Shirt -->
-				<item id="28" min="1" max="1" chance="0.1354" /> <!-- Pants -->
-				<item id="49" min="1" max="1" chance="0.0047" /> <!-- Gloves -->
-				<item id="87" min="1" max="1" chance="0.001" /> <!-- Iron Hammer -->
-				<item id="102" min="1" max="1" chance="0.0018" /> <!-- Round Shield -->
-				<item id="176" min="1" max="1" chance="0.001" /> <!-- Apprentice's Staff -->
-				<item id="219" min="1" max="1" chance="0.001" /> <!-- Sword Breaker -->
-				<item id="257" min="1" max="1" chance="0.001" /> <!-- Viper Fang -->
-				<item id="273" min="1" max="1" chance="0.001" /> <!-- Compound Bow -->
-				<item id="426" min="1" max="1" chance="0.0847" /> <!-- Tunic -->
-				<item id="1100" min="1" max="1" chance="0.0051" /> <!-- Cotton Tunic -->
+				<item id="92589" min="1" max="1" chance="0.0001" /> <!-- Iron Hammer Head -->
+				<item id="92590" min="1" max="1" chance="0.0001" /> <!-- Sword Breaker Edge -->
+				<item id="92591" min="1" max="1" chance="0.0001" /> <!-- Compound Bow Shaft -->
+				<item id="21" min="1" max="1" chance="0.085" /> <!-- Shirt -->
+				<item id="22" min="1" max="1" chance="0.005" /> <!-- Leather Shirt -->
+				<item id="28" min="1" max="1" chance="0.135" /> <!-- Pants -->
+				<item id="49" min="1" max="1" chance="0.005" /> <!-- Gloves -->
+				<item id="87" min="1" max="1" chance="0.00005" /> <!-- Iron Hammer -->
+				<item id="102" min="1" max="1" chance="0.002" /> <!-- Round Shield -->
+				<item id="176" min="1" max="1" chance="0.00009" /> <!-- Apprentice's Staff -->
+				<item id="219" min="1" max="1" chance="0.00005" /> <!-- Sword Breaker -->
+				<item id="257" min="1" max="1" chance="0.00005" /> <!-- Viper Fang -->
+				<item id="273" min="1" max="1" chance="0.00005" /> <!-- Compound Bow -->
+				<item id="426" min="1" max="1" chance="0.085" /> <!-- Tunic -->
+				<item id="1100" min="1" max="1" chance="0.005" /> <!-- Cotton Tunic -->
 			</drop>
 			<spoil>
-				<item id="2252" min="1" max="1" chance="0.0022" /> <!-- Recipe: Iron Hammer -->
-				<item id="2253" min="1" max="1" chance="0.0022" /> <!-- Recipe: Sword Breaker -->
-				<item id="2254" min="1" max="1" chance="0.0022" /> <!-- Recipe: Compound Bow -->
+				<item id="2252" min="1" max="1" chance="0.002" /> <!-- Recipe: Iron Hammer -->
+				<item id="2253" min="1" max="1" chance="0.002" /> <!-- Recipe: Sword Breaker -->
+				<item id="2254" min="1" max="1" chance="0.002" /> <!-- Recipe: Compound Bow -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1408,7 +1165,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="4" /> <!-- rhand: Club -->
-		<acquire exp="111" sp="10" />
+		<acquire exp="110" sp="9" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="114.369768558596" hpRegen="2" mp="84.88" mpRegen="0.9" />
 			<attack physical="14.80956" magical="10.11301" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1445,22 +1202,22 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="2" max="2" chance="70" /> <!-- Adena -->
-				<item id="92584" min="1" max="1" chance="0.0023" /> <!-- Dirk Blade -->
-				<item id="7" min="1" max="1" chance="0.0201" /> <!-- Apprentice's Rod -->
-				<item id="12" min="1" max="1" chance="0.0012" /> <!-- Knife -->
-				<item id="66" min="1" max="1" chance="0.001" /> <!-- Gladius -->
-				<item id="99" min="1" max="1" chance="0.0012" /> <!-- Apprentice's Spellbook -->
-				<item id="122" min="1" max="1" chance="0.001" /> <!-- Handmade Sword -->
-				<item id="152" min="1" max="1" chance="0.0019" /> <!-- Heavy Chisel -->
-				<item id="216" min="1" max="1" chance="0.001" /> <!-- Dirk -->
-				<item id="256" min="1" max="1" chance="0.001" /> <!-- Cestus -->
-				<item id="310" min="1" max="1" chance="0.001" /> <!-- Relic of the Saints -->
-				<item id="754" min="1" max="1" chance="0.001" /> <!-- Red Sunset Staff -->
-				<item id="975" min="1" max="1" chance="0.001" /> <!-- Blood Saber -->
-				<item id="1511" min="1" max="1" chance="0.001" /> <!-- Silversmith Hammer -->
+				<item id="92584" min="1" max="1" chance="0.002" /> <!-- Dirk Blade -->
+				<item id="7" min="1" max="1" chance="0.02" /> <!-- Apprentice's Rod -->
+				<item id="12" min="1" max="1" chance="0.001" /> <!-- Knife -->
+				<item id="66" min="1" max="1" chance="0.0003" /> <!-- Gladius -->
+				<item id="99" min="1" max="1" chance="0.001" /> <!-- Apprentice's Spellbook -->
+				<item id="122" min="1" max="1" chance="0.0003" /> <!-- Handmade Sword -->
+				<item id="152" min="1" max="1" chance="0.002" /> <!-- Heavy Chisel -->
+				<item id="216" min="1" max="1" chance="0.0003" /> <!-- Dirk -->
+				<item id="256" min="1" max="1" chance="0.0001" /> <!-- Cestus -->
+				<item id="310" min="1" max="1" chance="0.0001" /> <!-- Relic of the Saints -->
+				<item id="754" min="1" max="1" chance="0.0006" /> <!-- Red Sunset Staff -->
+				<item id="975" min="1" max="1" chance="0.0005" /> <!-- Blood Saber -->
+				<item id="1511" min="1" max="1" chance="0.0006" /> <!-- Silversmith Hammer -->
 			</drop>
 			<spoil>
-				<item id="1790" min="1" max="1" chance="0.0372" /> <!-- Recipe: Dirk -->
+				<item id="1790" min="1" max="1" chance="0.037" /> <!-- Recipe: Dirk -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1472,7 +1229,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="134" sp="12" />
+		<acquire exp="133" sp="12" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="151.029160627777" hpRegen="2" mp="100.48" mpRegen="0.9" />
 			<attack physical="17.70841" magical="12.09255" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1509,17 +1266,17 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="2" max="3" chance="70" /> <!-- Adena -->
-				<item id="92599" min="1" max="1" chance="0.001" /> <!-- Elven Bow Shaft -->
-				<item id="58" min="1" max="1" chance="0.001" /> <!-- Mithril Breastplate -->
-				<item id="181" min="1" max="1" chance="0.001" /> <!-- Mace of Miracle -->
-				<item id="276" min="1" max="1" chance="0.001" /> <!-- Elven Bow -->
-				<item id="435" min="1" max="1" chance="0.001" /> <!-- Wizard Tunic -->
-				<item id="912" min="1" max="1" chance="0.001" /> <!-- Necklace of Old Forest -->
-				<item id="2447" min="1" max="1" chance="0.001" /> <!-- Gloves of Knowledge -->
-				<item id="91880" min="1" max="1" chance="0.001" /> <!-- Military Talwar -->
+				<item id="92599" min="1" max="1" chance="0.0007" /> <!-- Elven Bow Shaft -->
+				<item id="58" min="1" max="1" chance="0.0002" /> <!-- Mithril Breastplate -->
+				<item id="181" min="1" max="1" chance="0.00005" /> <!-- Mace of Miracle -->
+				<item id="276" min="1" max="1" chance="0.00005" /> <!-- Elven Bow -->
+				<item id="435" min="1" max="1" chance="0.0003" /> <!-- Wizard Tunic -->
+				<item id="912" min="1" max="1" chance="0.0004" /> <!-- Necklace of Old Forest -->
+				<item id="2447" min="1" max="1" chance="0.0006" /> <!-- Gloves of Knowledge -->
+				<item id="91880" min="1" max="1" chance="0.00005" /> <!-- Military Talwar -->
 			</drop>
 			<spoil>
-				<item id="2262" min="1" max="1" chance="0.0039" /> <!-- Recipe: Elven Bow (100%) -->
+				<item id="2262" min="1" max="1" chance="0.004" /> <!-- Recipe: Elven Bow (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1537,7 +1294,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="4" /> <!-- Club -->
-		<acquire exp="1169" sp="36" />
+		<acquire exp="428" sp="19" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="384.286402264366" hpRegen="3.5" mp="205.2" mpRegen="1.5" />
 			<attack physical="47.91924" magical="32.72263" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1589,9 +1346,9 @@
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
 		<equipment rhand="68" />
-		<acquire exp="11935" sp="2908" attributeExp="1056" />
+		<acquire exp="27936" sp="6805" attributeExp="1056" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4041.03422549214" hpRegen="8.5" mp="2227.484" mpRegen="3" />
+			<vitals hp="24246.2" hpRegen="8.5" mp="2227.484" mpRegen="3" />
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
@@ -1604,7 +1361,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="3" /> <!-- Beasts -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="17" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
@@ -1625,19 +1382,18 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="57" min="903" max="997" chance="70" /> <!-- Adena -->
-				<item id="92805" min="1" max="1" chance="0.0057" /> <!-- Bellion Cestus Edge -->
-				<item id="92819" min="1" max="1" chance="0.1147" /> <!-- Sealed Dark Crystal Shield Fragment -->
-				<item id="91745" min="1" max="1" chance="0.0025" /> <!-- Talisman of Aden - Sealed -->
-				<item id="268" min="1" max="1" chance="0.001" /> <!-- Bellion Cestus -->
-				<item id="7883" min="1" max="1" chance="0.001" /> <!-- Guardian's Sword -->
-				<item id="5292" min="1" max="1" chance="0.0021" /> <!-- Sealed Dark Crystal Shield -->
+				<item id="57" min="892" max="987" chance="70" /> <!-- Adena -->
+				<item id="92805" min="1" max="1" chance="0.006" /> <!-- Bellion Cestus Edge -->
+				<item id="92819" min="1" max="1" chance="0.116" /> <!-- Sealed Dark Crystal Shield Fragment -->
+				<item id="268" min="1" max="1" chance="0.0004" /> <!-- Bellion Cestus -->
+				<item id="7883" min="1" max="1" chance="0.0004" /> <!-- Guardian's Sword -->
+				<item id="5292" min="1" max="1" chance="0.003" /> <!-- Sealed Dark Crystal Shield -->
 			</drop>
 			<spoil>
-				<item id="4198" min="1" max="1" chance="0.0047" /> <!-- Recipe: Bellion Cestus (100%) -->
-				<item id="5006" min="1" max="1" chance="0.0078" /> <!-- Recipe: Bellion Cestus (60%) -->
-				<item id="5364" min="1" max="1" chance="0.0272" /> <!-- Recipe: Sealed Dark Crystal Shield (60%) -->
-				<item id="5365" min="1" max="1" chance="0.0163" /> <!-- Recipe: Sealed Dark Crystal Shield (100%) -->
+				<item id="4198" min="1" max="1" chance="0.005" /> <!-- Recipe: Bellion Cestus (100%) -->
+				<item id="5006" min="1" max="1" chance="0.008" /> <!-- Recipe: Bellion Cestus (60%) -->
+				<item id="5364" min="1" max="1" chance="0.028" /> <!-- Recipe: Sealed Dark Crystal Shield (60%) -->
+				<item id="5365" min="1" max="1" chance="0.017" /> <!-- Recipe: Sealed Dark Crystal Shield (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1654,7 +1410,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="3372" sp="102" />
+		<acquire exp="1410" sp="101" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1019.59695680077" hpRegen="4.5" mp="478.8" mpRegen="1.8" />
 			<attack physical="176.36077" magical="120.43155" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1690,37 +1446,6 @@
 			<radius normal="28" />
 			<height normal="11.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="7" max="18" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0058">
-					<item id="62" min="1" max="1" chance="1.7971" /> <!-- Reinforced Mithril Boots -->
-					<item id="92545" min="1" max="1" chance="17.971" /> <!-- Reinforced Mithril Boot Design -->
-					<item id="63" min="1" max="1" chance="8.9148" /> <!-- Gauntlets -->
-					<item id="553" min="1" max="1" chance="8.9148" /> <!-- Iron Boots -->
-					<item id="92527" min="1" max="1" chance="26.7433" /> <!-- Iron Boot Design -->
-					<item id="2422" min="1" max="1" chance="8.9148" /> <!-- Reinforced Leather Boots -->
-					<item id="2423" min="1" max="1" chance="8.9148" /> <!-- Boots of Knowledge -->
-					<item id="2446" min="1" max="1" chance="8.9148" /> <!-- Reinforced Leather Gloves -->
-					<item id="2447" min="1" max="1" chance="8.9146" /> <!-- Gloves of Knowledge -->
-				</group>
-				<group chance="0.1337">
-					<item id="92908" min="1" max="1" chance="73.7721" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.7544" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3772" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4591" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="1.4754" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92916" min="1" max="1" chance="0.0738" /> <!-- Material: Animal Spirit - Sealed -->
-					<item id="2269" min="1" max="1" chance="0.0422" /> <!-- Recipe: Morning Star (100%) -->
-					<item id="92603" min="1" max="1" chance="0.0458" /> <!-- Shillien Knife Edge -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="849" min="1" max="1" chance="0.01" /> <!-- Tiger's Eye -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20136" level="50" type="Monster" name="Death Knight">
 		<parameters>
@@ -1747,7 +1472,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="75" /> <!-- Caliburs -->
-		<acquire exp="26097" sp="782" />
+		<acquire exp="2298" sp="913" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1498.94623198693" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
 			<attack physical="305.54906" magical="208.6504" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1783,7 +1508,7 @@
 			<height normal="31" grown="36" />
 		</collision>
 	</npc>
-	<npc id="20137" level="80" type="Monster" name="Drake" element="EARTH">
+	<npc id="20137" level="79" type="Monster" name="Drake" element="EARTH">
 		<parameters>
 			<param name="MoveAroundSocial" value="60" />
 			<param name="MoveAroundSocial1" value="60" />
@@ -1797,9 +1522,9 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>MALE</sex>
-		<acquire exp="11729" sp="3601" attributeExp="1144" />
+		<acquire exp="26768" sp="8219" attributeExp="1130" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4041.03422549214" hpRegen="8.5" mp="2227.484" mpRegen="3" />
+			<vitals hp="23925.95" hpRegen="8.5" mp="2182.53" mpRegen="3" />
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
@@ -1812,7 +1537,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="10" /> <!-- Dragons -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="17" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="17" /> <!-- Very Strong M. Atk. -->
@@ -1837,8 +1562,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="57" min="901" max="997" chance="70" /> <!-- Adena -->
-				<item id="91745" min="1" max="1" chance="0.0165" /> <!-- Talisman of Aden - Sealed -->
+				<item id="57" min="892" max="985" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1855,7 +1579,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<acquire exp="100000" sp="3001" />
+		<acquire exp="834" sp="3000" />
 		<equipment rhand="129" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="670.637516093159" hpRegen="4.5" mp="343.8" mpRegen="1.8" />
@@ -1900,7 +1624,7 @@
 		</parameters>
 		<race>DIVINE</race>
 		<sex>MALE</sex>
-		<acquire exp="5085" sp="7301" />
+		<acquire exp="5085" sp="7300" />
 		<equipment rhand="148" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="3867.82941296879" hpRegen="7.5" mp="1345.8" mpRegen="2.7" />
@@ -1953,7 +1677,7 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire exp="1431" sp="47" />
+		<acquire exp="525" sp="23" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="459.224016948565" hpRegen="3.5" mp="245.52" mpRegen="1.5" />
 			<attack physical="60.19687" magical="41.10666" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2003,7 +1727,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="3277" sp="235" />
+		<acquire exp="1984" sp="80" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1346.55725878612" hpRegen="5.5" mp="665" mpRegen="2.1" />
 			<attack physical="261.69549" magical="178.7041" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2039,7 +1763,7 @@
 			<height normal="27" />
 		</collision>
 	</npc>
-	<npc id="20142" level="80" type="Monster" name="Blood Queen" element="EARTH">
+	<npc id="20142" level="79" type="Monster" name="Blood Queen" element="EARTH">
 		<parameters>
 			<param name="MoveAroundSocial" value="60" />
 			<param name="MoveAroundSocial1" value="60" />
@@ -2050,9 +1774,9 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
-		<acquire exp="11729" sp="3601" attributeExp="1144" />
+		<acquire exp="26768" sp="8219" attributeExp="1130" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4041.03422549214" hpRegen="8.5" mp="2227.484" mpRegen="3" />
+			<vitals hp="23925.95" hpRegen="8.5" mp="2182.53" mpRegen="3" />
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
@@ -2065,7 +1789,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="9" /> <!-- Demons -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="17" /> <!-- Very Strong P. Atk. -->
 			<skill id="4411" level="17" /> <!-- Very Strong M. Atk. -->
@@ -2092,26 +1816,25 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="57" min="901" max="997" chance="70" /> <!-- Adena -->
-				<item id="92777" min="1" max="1" chance="0.0413" /> <!-- Sealed Blue Wolf Helmet Design -->
-				<item id="92848" min="1" max="1" chance="0.0051" /> <!-- Blood Tornado Edge -->
-				<item id="92859" min="1" max="1" chance="0.0533" /> <!-- Sealed Phoenix Necklace Beads -->
-				<item id="95783" min="1" max="1" chance="0.006" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
-				<item id="91745" min="1" max="1" chance="0.0012" /> <!-- Talisman of Aden - Sealed -->
-				<item id="2416" min="1" max="1" chance="0.0017" /> <!-- Sealed Blue Wolf Helmet -->
-				<item id="7901" min="1" max="1" chance="0.001" /> <!-- Star Buster -->
-				<item id="91900" min="1" max="1" chance="0.001" /> <!-- Colichemarde -->
-				<item id="269" min="1" max="1" chance="0.001" /> <!-- Bloody Tornado -->
-				<item id="6323" min="1" max="1" chance="0.001" /> <!-- Sealed Phoenix Necklace -->
-				<item id="91889" min="1" max="1" chance="0.001" /> <!-- Divine Pain -->
+				<item id="57" min="892" max="985" chance="70" /> <!-- Adena -->
+				<item id="95783" min="1" max="1" chance="0.007" /> <!-- Aden's Soul Crystal Lv. 1 - Weapon -->
+				<item id="92777" min="1" max="1" chance="0.042" /> <!-- Sealed Blue Wolf Helmet Design -->
+				<item id="92848" min="1" max="1" chance="0.005" /> <!-- Blood Tornado Edge -->
+				<item id="92859" min="1" max="1" chance="0.054" /> <!-- Sealed Phoenix Necklace Beads -->
+				<item id="2416" min="1" max="1" chance="0.002" /> <!-- Sealed Blue Wolf Helmet -->
+				<item id="7901" min="1" max="1" chance="0.0002" /> <!-- Star Buster -->
+				<item id="91900" min="1" max="1" chance="0.0002" /> <!-- Colichemarde -->
+				<item id="269" min="1" max="1" chance="0.00008" /> <!-- Bloody Tornado -->
+				<item id="6323" min="1" max="1" chance="0.0009" /> <!-- Sealed Phoenix Necklace -->
+				<item id="91889" min="1" max="1" chance="0.00008" /> <!-- Divine Pain -->
 			</drop>
 			<spoil>
-				<item id="4165" min="1" max="1" chance="0.0336" /> <!-- Recipe: Sealed Blue Wolf Helmet (100%) -->
-				<item id="4990" min="1" max="1" chance="0.0559" /> <!-- Recipe: Sealed Blue Wolf Helmet (60%) -->
-				<item id="5452" min="1" max="1" chance="0.0012" /> <!-- Recipe: Bloody Tornado (60%) -->
-				<item id="5453" min="1" max="1" chance="0.001" /> <!-- Recipe: Bloody Tornado (100%) -->
-				<item id="6329" min="1" max="1" chance="0.0108" /> <!-- Recipe: Sealed Phoenix Necklace (70%) -->
-				<item id="6330" min="1" max="1" chance="0.0076" /> <!-- Recipe: Sealed Phoenix Necklace (100%) -->
+				<item id="4165" min="1" max="1" chance="0.034" /> <!-- Recipe: Sealed Blue Wolf Helmet (100%) -->
+				<item id="4990" min="1" max="1" chance="0.057" /> <!-- Recipe: Sealed Blue Wolf Helmet (60%) -->
+				<item id="5452" min="1" max="1" chance="0.001" /> <!-- Recipe: Bloody Tornado (60%) -->
+				<item id="5453" min="1" max="1" chance="0.0007" /> <!-- Recipe: Bloody Tornado (100%) -->
+				<item id="6329" min="1" max="1" chance="0.011" /> <!-- Recipe: Sealed Phoenix Necklace (70%) -->
+				<item id="6330" min="1" max="1" chance="0.008" /> <!-- Recipe: Sealed Phoenix Necklace (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2123,7 +1846,7 @@
 		</parameters>
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<acquire exp="177" sp="16" />
+		<acquire exp="176" sp="16" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="210.5730168254" hpRegen="2.5" mp="124.48" mpRegen="1.2" />
 			<attack physical="22.99606" magical="15.70333" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2160,19 +1883,19 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="3" max="3" chance="70" /> <!-- Adena -->
-				<item id="92487" min="1" max="1" chance="0.0052" /> <!-- Necklace of Magic Chain -->
-				<item id="92890" min="1" max="1" chance="0.001" /> <!-- Steel Sword Blade -->
-				<item id="46" min="1" max="1" chance="0.001" /> <!-- Bronze Helmet -->
-				<item id="274" min="1" max="1" chance="0.001" /> <!-- Reinforced Bow -->
-				<item id="314" min="1" max="1" chance="0.001" /> <!-- Proof of Revenge -->
-				<item id="433" min="1" max="1" chance="0.001" /> <!-- Elven Tunic -->
-				<item id="468" min="1" max="1" chance="0.001" /> <!-- Wizard Stockings -->
-				<item id="911" min="1" max="1" chance="0.001" /> <!-- Necklace of Magic -->
-				<item id="7880" min="1" max="1" chance="0.001" /> <!-- Steel Sword -->
+				<item id="92487" min="1" max="1" chance="0.005" /> <!-- Necklace  of Magic Chain -->
+				<item id="92890" min="1" max="1" chance="0.0007" /> <!-- Steel Sword Blade -->
+				<item id="46" min="1" max="1" chance="0.0008" /> <!-- Bronze Helmet -->
+				<item id="274" min="1" max="1" chance="0.0001" /> <!-- Reinforced Bow -->
+				<item id="314" min="1" max="1" chance="0.0001" /> <!-- Proof of Revenge -->
+				<item id="433" min="1" max="1" chance="0.0004" /> <!-- Elven Tunic -->
+				<item id="468" min="1" max="1" chance="0.0007" /> <!-- Wizard Stockings -->
+				<item id="911" min="1" max="1" chance="0.0007" /> <!-- Necklace of Magic -->
+				<item id="7880" min="1" max="1" chance="0.0001" /> <!-- Steel Sword -->
 			</drop>
 			<spoil>
-				<item id="2152" min="1" max="1" chance="0.0279" /> <!-- Recipe: Necklace of Magic (100%) -->
-				<item id="8294" min="1" max="1" chance="0.0039" /> <!-- Recipe: Steel Sword (100%) -->
+				<item id="2152" min="1" max="1" chance="0.028" /> <!-- Recipe: Necklace of Magic (100%) -->
+				<item id="8294" min="1" max="1" chance="0.004" /> <!-- Recipe: Steel Sword (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2191,7 +1914,7 @@
 		</parameters>
 		<race>PLANT</race>
 		<sex>MALE</sex>
-		<acquire exp="2573" sp="78" />
+		<acquire exp="1054" sp="77" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="815.124490768837" hpRegen="4.5" mp="402.6" mpRegen="1.8" />
 			<attack physical="129.32896" magical="88.31491" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2227,36 +1950,8 @@
 			<radius normal="35" grown="42" />
 			<height normal="80" grown="96" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="7" max="17" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0014">
-					<item id="58" min="1" max="1" chance="12.1591" /> <!-- Mithril Breastplate -->
-					<item id="59" min="1" max="1" chance="17.5206" /> <!-- Mithril Gaiters -->
-					<item id="349" min="1" max="1" chance="12.1591" /> <!-- Compound Scale Mail -->
-					<item id="350" min="1" max="1" chance="12.1591" /> <!-- Dwarven Scale Mail -->
-					<item id="351" min="1" max="1" chance="10.9611" /> <!-- Breastplate -->
-					<item id="378" min="1" max="1" chance="17.5206" /> <!-- Compound Scale Gaiters -->
-					<item id="379" min="1" max="1" chance="17.5204" /> <!-- Dwarven Scale Gaiters -->
-				</group>
-				<group chance="0.1435">
-					<item id="92908" min="1" max="1" chance="74.0788" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.8158" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4079" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4693" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1482" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2156" min="1" max="1" chance="0.4741" /> <!-- Recipe: Elven Necklace (100%) -->
-					<item id="2208" min="1" max="1" chance="0.6059" /> <!-- Recipe: Ogre Power Gauntlets (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2272" min="1" max="1" chance="0.0017" /> <!-- Recipe: Sword of Revolution (100%) -->
-			</spoil>
-		</dropLists>
 	</npc>
-	<npc id="20145" level="32" type="Monster" name="Harpy">
+	<npc id="20145" level="31" type="Monster" name="Harpy">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
@@ -2270,9 +1965,9 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
-		<acquire exp="885" sp="65" />
+		<acquire exp="1134" sp="61" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="705.138521256333" hpRegen="4.5" mp="358.32" mpRegen="1.8" />
+			<vitals hp="1149.7084" hpRegen="4.5" mp="356.327642361216" mpRegen="1.8" />
 			<attack physical="106.16525" magical="72.49711" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="125.57727" magical="91.89199" />
 			<speed>
@@ -2305,36 +2000,36 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="5" max="5" chance="70" /> <!-- Adena -->
-				<item id="92496" min="1" max="1" chance="0.0018" /> <!-- Aquastone Ring Wire -->
-				<item id="92542" min="1" max="1" chance="0.0013" /> <!-- Chain Helmet Design -->
-				<item id="92545" min="1" max="1" chance="0.0015" /> <!-- Reinforced Mithril Boot Design -->
-				<item id="92546" min="1" max="1" chance="0.001" /> <!-- Chain Mail Shirt Material -->
-				<item id="92635" min="1" max="1" chance="0.001" /> <!-- Stormbringer Blade -->
-				<item id="92641" min="1" max="1" chance="0.001" /> <!-- Heavy Doom Hammer Head -->
-				<item id="92646" min="1" max="1" chance="0.001" /> <!-- Needle Wolverine Edge -->
-				<item id="92726" min="1" max="1" chance="0.0012" /> <!-- Rind Leather Boot Lining -->
-				<item id="62" min="1" max="1" chance="0.001" /> <!-- Reinforced Mithril Boots -->
-				<item id="72" min="1" max="1" chance="0.001" /> <!-- Stormbringer -->
-				<item id="191" min="1" max="1" chance="0.001" /> <!-- Heavy Doom Hammer -->
-				<item id="230" min="1" max="1" chance="0.001" /> <!-- Wolverine Fang -->
-				<item id="354" min="1" max="1" chance="0.001" /> <!-- Chain Mail Shirt -->
-				<item id="497" min="1" max="1" chance="0.001" /> <!-- Chain Helmet -->
-				<item id="883" min="1" max="1" chance="0.001" /> <!-- Aquastone Ring -->
-				<item id="2434" min="1" max="1" chance="0.001" /> <!-- Rind Leather Boots -->
+				<item id="92496" min="1" max="1" chance="0.002" /> <!-- Aquastone Ring Wire -->
+				<item id="92542" min="1" max="1" chance="0.001" /> <!-- Chain Helmet Design -->
+				<item id="92545" min="1" max="1" chance="0.001" /> <!-- Reinforced Mithril Boot Design -->
+				<item id="92546" min="1" max="1" chance="0.0004" /> <!-- Chain Mail Shirt Material -->
+				<item id="92635" min="1" max="1" chance="0.00008" /> <!-- Stormbringer Blade -->
+				<item id="92641" min="1" max="1" chance="0.00008" /> <!-- Heavy Doom Hammer Head -->
+				<item id="92646" min="1" max="1" chance="0.00008" /> <!-- Needle Wolverine Edge -->
+				<item id="92726" min="1" max="1" chance="0.001" /> <!-- Rind Leather Boot Lining -->
+				<item id="62" min="1" max="1" chance="0.0004" /> <!-- Reinforced Mithril Boots -->
+				<item id="72" min="1" max="1" chance="0.00002" /> <!-- Stormbringer -->
+				<item id="191" min="1" max="1" chance="0.00002" /> <!-- Heavy Doom Hammer -->
+				<item id="230" min="1" max="1" chance="0.00002" /> <!-- Wolverine Fang -->
+				<item id="354" min="1" max="1" chance="0.0001" /> <!-- Chain Mail Shirt -->
+				<item id="497" min="1" max="1" chance="0.0004" /> <!-- Chain Helmet -->
+				<item id="883" min="1" max="1" chance="0.0005" /> <!-- Aquastone Ring -->
+				<item id="2434" min="1" max="1" chance="0.0003" /> <!-- Rind Leather Boots -->
 			</drop>
 			<spoil>
-				<item id="2161" min="1" max="1" chance="0.0058" /> <!-- Recipe: Aquastone Ring (100%) -->
-				<item id="2200" min="1" max="1" chance="0.0041" /> <!-- Recipe: Chain Helmet (100%) -->
-				<item id="2203" min="1" max="1" chance="0.0048" /> <!-- Recipe: Reinforced Mithril Boots (100%) -->
-				<item id="2204" min="1" max="1" chance="0.0012" /> <!-- Recipe: Chain Mail Shirt (100%) -->
-				<item id="2298" min="1" max="1" chance="0.001" /> <!-- Recipe: Stormbringer (100%) -->
-				<item id="2304" min="1" max="1" chance="0.001" /> <!-- Recipe: Heavy Doom Hammer (100%) -->
-				<item id="2309" min="1" max="1" chance="0.001" /> <!-- Recipe: Wolverine Fang (100%) -->
-				<item id="3001" min="1" max="1" chance="0.0037" /> <!-- Recipe: Rind Leather Boots (100%) -->
+				<item id="2161" min="1" max="1" chance="0.006" /> <!-- Recipe: Aquastone Ring (100%) -->
+				<item id="2200" min="1" max="1" chance="0.004" /> <!-- Recipe: Chain Helmet (100%) -->
+				<item id="2203" min="1" max="1" chance="0.005" /> <!-- Recipe: Reinforced Mithril Boots (100%) -->
+				<item id="2204" min="1" max="1" chance="0.001" /> <!-- Recipe: Chain Mail Shirt (100%) -->
+				<item id="2298" min="1" max="1" chance="0.0003" /> <!-- Recipe: Stormbringer (100%) -->
+				<item id="2304" min="1" max="1" chance="0.0003" /> <!-- Recipe: Heavy Doom Hammer (100%) -->
+				<item id="2309" min="1" max="1" chance="0.0003" /> <!-- Recipe: Wolverine Fang (100%) -->
+				<item id="3001" min="1" max="1" chance="0.004" /> <!-- Recipe: Rind Leather Boots (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
-	<npc id="20146" level="80" type="Monster" name="Headless Knight" element="EARTH">
+	<npc id="20146" level="79" type="Monster" name="Headless Knight" element="EARTH">
 		<parameters>
 			<param name="MoveAroundSocial" value="110" />
 			<param name="MoveAroundSocial1" value="110" />
@@ -2349,9 +2044,9 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="124" />
-		<acquire exp="11729" sp="3601" attributeExp="1144" />
+		<acquire exp="26768" sp="8219" attributeExp="1130" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4041.03422549214" hpRegen="8.5" mp="2227.484" mpRegen="3" />
+			<vitals hp="23925.95" hpRegen="8.5" mp="2182.53" mpRegen="3" />
 			<attack physical="1844.02134215877" magical="1259.22752534588" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="436.96" magical="319.7483648" />
 			<speed>
@@ -2364,7 +2059,7 @@
 		<status attackable="true" />
 		<skillList>
 			<skill id="4416" level="1" /> <!-- Undead -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="13" /> <!-- Slightly Strong M. Atk. -->
@@ -2391,8 +2086,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="57" min="901" max="997" chance="70" /> <!-- Adena -->
-				<item id="91745" min="1" max="1" chance="0.0165" /> <!-- Talisman of Aden - Sealed -->
+				<item id="57" min="892" max="985" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2410,7 +2104,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="4" /> <!-- Club -->
-		<acquire exp="1136" sp="35" />
+		<acquire exp="428" sp="34" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="384.286402264366" hpRegen="3.5" mp="205.2" mpRegen="1.5" />
 			<attack physical="47.91924" magical="32.72263" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2445,26 +2139,6 @@
 			<radius normal="12" />
 			<height normal="24" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="13" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0061">
-					<item id="27" min="1" max="1" chance="19.1987" /> <!-- Durable Leather Shirt -->
-					<item id="92514" min="1" max="1" chance="19.1987" /> <!-- Durable Leather Shirt Pattern -->
-					<item id="33" min="1" max="1" chance="30.8013" /> <!-- Durable Leather Gaiters -->
-					<item id="92516" min="1" max="1" chance="30.8013" /> <!-- Durable Leather Gaiter Material -->
-				</group>
-				<group chance="0.1511">
-					<item id="92908" min="1" max="1" chance="76.6114" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3223" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6611" /> <!-- Material: Rags - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.2554" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="2256" min="1" max="1" chance="0.1498" /> <!-- Recipe: Assassin Knife (100%) -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="20148" level="40" type="Monster" name="Starving Spirit">
 		<parameters>
@@ -2479,7 +2153,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="15123" sp="453" />
+		<acquire exp="1410" sp="58" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1019.59695680077" hpRegen="4.5" mp="478.8" mpRegen="1.8" />
 			<attack physical="176.36077" magical="120.43155" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2525,7 +2199,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="3029" sp="188" />
+		<acquire exp="1255" sp="62" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="934.704377634099" hpRegen="4.5" mp="447.96" mpRegen="1.8" />
 			<attack physical="156.22273" magical="106.67987" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2580,7 +2254,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="88" /> <!-- Morning Star -->
-		<acquire exp="2278" sp="85" />
+		<acquire exp="885" sp="37" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="705.138521256333" hpRegen="4.5" mp="358.32" mpRegen="1.8" />
 			<attack physical="106.16525" magical="72.49711" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2625,7 +2299,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="4" /> <!-- Club -->
-		<acquire exp="178" sp="3" />
+		<acquire exp="82" sp="4" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="71.9513211373933" hpRegen="2" mp="62.08" mpRegen="0.9" />
 			<attack physical="11.24892" magical="7.68155" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -2669,7 +2343,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="291" /> <!-- Trident -->
-		<acquire exp="846" sp="25" />
+		<acquire exp="344" sp="17" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="339.282213839231" hpRegen="2.5" mp="183.28" mpRegen="1.2" />
 			<attack physical="40.96915" magical="27.97662" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2714,7 +2388,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="161" sp="15" />
+		<acquire exp="160" sp="15" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="195.554343533029" hpRegen="2.5" mp="116.4" mpRegen="1.2" />
 			<attack physical="21.0973" magical="14.40672" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2753,25 +2427,25 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="3" max="3" chance="70" /> <!-- Adena -->
-				<item id="92486" min="1" max="1" chance="0.0031" /> <!-- Necklace of Devotion Chain -->
-				<item id="92601" min="1" max="1" chance="0.001" /> <!-- Two-handed Sword Blade -->
-				<item id="92699" min="1" max="1" chance="0.001" /> <!-- Elven Mithril Stocking Pattern -->
-				<item id="92700" min="1" max="1" chance="0.001" /> <!-- Brigandine Helmet Design -->
-				<item id="92701" min="1" max="1" chance="0.0015" /> <!-- Manticore Skin Boot Lining -->
-				<item id="124" min="1" max="1" chance="0.001" /> <!-- Two-handed Sword -->
-				<item id="186" min="1" max="1" chance="0.001" /> <!-- Staff of Magic -->
-				<item id="293" min="1" max="1" chance="0.001" /> <!-- Battle Hammer -->
-				<item id="910" min="1" max="1" chance="0.0011" /> <!-- Necklace of Devotion -->
-				<item id="2401" min="1" max="1" chance="0.001" /> <!-- Elven Mithril Stockings -->
-				<item id="2411" min="1" max="1" chance="0.001" /> <!-- Brigandine Helmet -->
-				<item id="2424" min="1" max="1" chance="0.001" /> <!-- Manticore Skin Boots -->
+				<item id="92486" min="1" max="1" chance="0.003" /> <!-- Necklace of Devotion Chain -->
+				<item id="92601" min="1" max="1" chance="0.0001" /> <!-- Two-handed Sword Blade -->
+				<item id="92699" min="1" max="1" chance="0.0008" /> <!-- Elven Mithril Stocking Pattern -->
+				<item id="92700" min="1" max="1" chance="0.0010" /> <!-- Brigandine Helmet Design -->
+				<item id="92701" min="1" max="1" chance="0.001" /> <!-- Manticore Skin Boot Lining -->
+				<item id="124" min="1" max="1" chance="0.00004" /> <!-- Two-handed Sword -->
+				<item id="186" min="1" max="1" chance="0.00004" /> <!-- Staff of Magic -->
+				<item id="293" min="1" max="1" chance="0.00004" /> <!-- Battle Hammer -->
+				<item id="910" min="1" max="1" chance="0.001" /> <!-- Necklace of Devotion -->
+				<item id="2401" min="1" max="1" chance="0.0003" /> <!-- Elven Mithril Stockings -->
+				<item id="2411" min="1" max="1" chance="0.0004" /> <!-- Brigandine Helmet -->
+				<item id="2424" min="1" max="1" chance="0.0005" /> <!-- Manticore Skin Boots -->
 			</drop>
 			<spoil>
-				<item id="2151" min="1" max="1" chance="0.0168" /> <!-- Recipe: Necklace of Devotion (100%) -->
-				<item id="2264" min="1" max="1" chance="0.001" /> <!-- Recipe: Two-handed Sword -->
-				<item id="2974" min="1" max="1" chance="0.0043" /> <!-- Recipe: Elven Mithril Stockings (100%) -->
-				<item id="2975" min="1" max="1" chance="0.0054" /> <!-- Recipe: Brigandine Helmet (100%) -->
-				<item id="2976" min="1" max="1" chance="0.0081" /> <!-- Recipe: Manticore Skin Boots (100%) -->
+				<item id="2151" min="1" max="1" chance="0.017" /> <!-- Recipe: Necklace of Devotion (100%) -->
+				<item id="2264" min="1" max="1" chance="0.0006" /> <!-- Recipe: Two-handed Sword -->
+				<item id="2974" min="1" max="1" chance="0.004" /> <!-- Recipe: Elven Mithril Stockings (100%) -->
+				<item id="2975" min="1" max="1" chance="0.005" /> <!-- Recipe: Brigandine Helmet (100%) -->
+				<item id="2976" min="1" max="1" chance="0.008" /> <!-- Recipe: Manticore Skin Boots (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2792,7 +2466,7 @@
 		</parameters>
 		<race>PLANT</race>
 		<sex>FEMALE</sex>
-		<acquire exp="945" sp="28" />
+		<acquire exp="428" sp="34" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="384.286402264366" hpRegen="3.5" mp="205.2" mpRegen="1.5" />
 			<attack physical="47.91924" magical="32.72263" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2828,29 +2502,6 @@
 			<radius normal="14" />
 			<height normal="17.8" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="5" max="13" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0108">
-					<item id="846" min="1" max="1" chance="25.0145" /> <!-- Coral Earring -->
-					<item id="878" min="1" max="1" chance="37.4049" /> <!-- Blue Coral Ring -->
-					<item id="909" min="1" max="1" chance="18.7903" /> <!-- Blue Diamond Necklace -->
-					<item id="92485" min="1" max="1" chance="18.7903" /> <!-- Blue Diamond Necklace Gem -->
-				</group>
-				<group chance="0.1886">
-					<item id="92908" min="1" max="1" chance="76.7263" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.3453" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.6726" /> <!-- Material: Rags - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.2558" /> <!-- Material: Sack Shreds - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2178" min="1" max="1" chance="0.015" /> <!-- Recipe: Dark Stockings (100%) -->
-				<item id="92516" min="1" max="1" chance="0.0102" /> <!-- Durable Leather Gaiter Material -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20155" level="23" type="Monster" name="Mandragora Sapling">
 		<!-- L2wiki: https://l2wiki.com/classic/Mandragora_Sapling -->
@@ -2866,7 +2517,7 @@
 		</parameters>
 		<race>PLANT</race>
 		<sex>FEMALE</sex>
-		<acquire exp="1309" sp="40" />
+		<acquire exp="490" sp="39" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="433.232298200102" hpRegen="3.5" mp="231.96" mpRegen="1.5" />
 			<attack physical="55.84125" magical="38.13234" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2902,29 +2553,6 @@
 			<radius normal="15" />
 			<height normal="26" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="14" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0113">
-					<item id="846" min="1" max="1" chance="25.0145" /> <!-- Coral Earring -->
-					<item id="878" min="1" max="1" chance="37.4049" /> <!-- Blue Coral Ring -->
-					<item id="909" min="1" max="1" chance="18.7903" /> <!-- Blue Diamond Necklace -->
-					<item id="92485" min="1" max="1" chance="18.7903" /> <!-- Blue Diamond Necklace Gem -->
-				</group>
-				<group chance="0.1647">
-					<item id="92908" min="1" max="1" chance="73.1351" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.627" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3135" /> <!-- Material: Rags - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.2438" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="1788" min="1" max="1" chance="4.6806" /> <!-- Recipe: Bow -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92485" min="1" max="1" chance="0.023" /> <!-- Blue Diamond Necklace Gem -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20156" level="25" type="Monster" name="Mandragora Blossom">
 		<parameters>
@@ -2939,7 +2567,7 @@
 		</parameters>
 		<race>PLANT</race>
 		<sex>FEMALE</sex>
-		<acquire exp="1479" sp="45" />
+		<acquire exp="561" sp="44" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="486.247334679017" hpRegen="3.5" mp="259.2" mpRegen="1.5" />
 			<attack physical="64.83203" magical="44.27187" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -2975,28 +2603,6 @@
 			<radius normal="12" />
 			<height normal="25.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="14" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0038">
-					<item id="432" min="1" max="1" chance="38.4464" /> <!-- Cursed Tunic -->
-					<item id="465" min="1" max="1" chance="61.5536" /> <!-- Cursed Stockings -->
-				</group>
-				<group chance="0.2358">
-					<item id="92908" min="1" max="1" chance="52.3726" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="10.4745" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="5.2373" /> <!-- Material: Rags - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.1746" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="1061" min="1" max="1" chance="31.741" /> <!-- High-grade HP Replenishing Potion -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2181" min="1" max="1" chance="0.01" /> <!-- Recipe: White Tunic (100%) -->
-				<item id="92486" min="1" max="1" chance="0.021" /> <!-- Necklace of Devotion Chain -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20157" level="29" type="Monster" name="Marsh Stakato">
 		<parameters>
@@ -3013,7 +2619,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="223" /> <!-- Kukuri -->
-		<acquire exp="1853" sp="56" />
+		<acquire exp="736" sp="56" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="604.883087573501" hpRegen="3.5" mp="315.12" mpRegen="1.5" />
 			<attack physical="86.42002" magical="59.01367" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -3049,38 +2655,8 @@
 			<radius normal="10" />
 			<height normal="20" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="15" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0004">
-					<item id="86" min="1" max="1" chance="7.1429" /> <!-- Tomahawk -->
-					<item id="179" min="1" max="1" chance="7.1429" /> <!-- Mace of Prayer -->
-					<item id="180" min="1" max="1" chance="7.1429" /> <!-- Mace of Judgment -->
-					<item id="92597" min="1" max="1" chance="21.4286" /> <!-- Mace of Judgment Head -->
-					<item id="181" min="1" max="1" chance="7.1429" /> <!-- Mace of Miracle -->
-					<item id="182" min="1" max="1" chance="7.1429" /> <!-- Doom Hammer -->
-					<item id="183" min="1" max="1" chance="7.1429" /> <!-- Mystic Staff -->
-					<item id="184" min="1" max="1" chance="7.1429" /> <!-- Conjuror's Staff -->
-					<item id="92598" min="1" max="1" chance="21.4286" /> <!-- Conjuror's Staff Head -->
-					<item id="185" min="1" max="1" chance="7.1425" /> <!-- Staff of Mana -->
-				</group>
-				<group chance="0.2119">
-					<item id="92908" min="1" max="1" chance="51.5094" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="10.3019" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="5.1509" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="1.717" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.103" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="1061" min="1" max="1" chance="31.2178" /> <!-- High-grade HP Replenishing Potion -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92599" min="1" max="1" chance="0.0025" /> <!-- Elven Bow Shaft -->
-			</spoil>
-		</dropLists>
 	</npc>
-	<npc id="20158" level="34" type="Monster" name="Medusa">
+	<npc id="20158" level="32" type="Monster" name="Medusa">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
@@ -3094,9 +2670,9 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
-		<acquire exp="995" sp="73" />
+		<acquire exp="1219" sp="65" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="777.385831121245" hpRegen="4.5" mp="387.72" mpRegen="1.8" />
+			<vitals hp="1187.4828" hpRegen="4.5" mp="370.580748055665" mpRegen="1.8" />
 			<attack physical="121.20802" magical="82.76936" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="132.9486" magical="97.28601" />
 			<speed>
@@ -3128,32 +2704,32 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="5" max="5" chance="70" /> <!-- Adena -->
-				<item id="92495" min="1" max="1" chance="0.0012" /> <!-- Moonstone Earring Wire -->
-				<item id="92552" min="1" max="1" chance="0.001" /> <!-- Steel Plate Helmet Material -->
-				<item id="92640" min="1" max="1" chance="0.001" /> <!-- Skull Graver Head -->
-				<item id="92644" min="1" max="1" chance="0.001" /> <!-- Heavy Doom Axe Blade -->
-				<item id="92653" min="1" max="1" chance="0.001" /> <!-- Katana Blade -->
-				<item id="92717" min="1" max="1" chance="0.0015" /> <!-- Plated Leather Boot Lining -->
-				<item id="92723" min="1" max="1" chance="0.0014" /> <!-- Chain Shield Fragment -->
-				<item id="92729" min="1" max="1" chance="0.0011" /> <!-- Rind Leather Glove Design -->
-				<item id="74" min="1" max="1" chance="0.001" /> <!-- Katana -->
-				<item id="173" min="1" max="1" chance="0.001" /> <!-- Skull Graver -->
-				<item id="194" min="1" max="1" chance="0.001" /> <!-- Heavy Doom Axe -->
-				<item id="498" min="1" max="1" chance="0.001" /> <!-- Steel Plate Helmet -->
-				<item id="852" min="1" max="1" chance="0.001" /> <!-- Moonstone Earring -->
-				<item id="2431" min="1" max="1" chance="0.001" /> <!-- Plated Leather Boots -->
-				<item id="2458" min="1" max="1" chance="0.001" /> <!-- Rind Leather Gloves -->
-				<item id="2495" min="1" max="1" chance="0.001" /> <!-- Chain Shield -->
+				<item id="92495" min="1" max="1" chance="0.001" /> <!-- Moonstone Earring Wire -->
+				<item id="92552" min="1" max="1" chance="0.0009" /> <!-- Steel Plate Helmet Material -->
+				<item id="92640" min="1" max="1" chance="0.00008" /> <!-- Skull Graver Head -->
+				<item id="92644" min="1" max="1" chance="0.00008" /> <!-- Heavy Doom Axe Blade -->
+				<item id="92653" min="1" max="1" chance="0.00006" /> <!-- Katana Blade -->
+				<item id="92717" min="1" max="1" chance="0.001" /> <!-- Plated Leather Boot Lining -->
+				<item id="92723" min="1" max="1" chance="0.001" /> <!-- Chain Shield Fragment -->
+				<item id="92729" min="1" max="1" chance="0.001" /> <!-- Rind Leather Glove Design -->
+				<item id="74" min="1" max="1" chance="0.00002" /> <!-- Katana -->
+				<item id="173" min="1" max="1" chance="0.00002" /> <!-- Skull Graver -->
+				<item id="194" min="1" max="1" chance="0.00002" /> <!-- Heavy Doom Axe -->
+				<item id="498" min="1" max="1" chance="0.0003" /> <!-- Steel Plate Helmet -->
+				<item id="852" min="1" max="1" chance="0.0004" /> <!-- Moonstone Earring -->
+				<item id="2431" min="1" max="1" chance="0.0004" /> <!-- Plated Leather Boots -->
+				<item id="2458" min="1" max="1" chance="0.0003" /> <!-- Rind Leather Gloves -->
+				<item id="2495" min="1" max="1" chance="0.0004" /> <!-- Chain Shield -->
 			</drop>
 			<spoil>
-				<item id="2160" min="1" max="1" chance="0.0039" /> <!-- Recipe: Moonstone Earring -->
-				<item id="2210" min="1" max="1" chance="0.0029" /> <!-- Recipe: Steel Plate Helmet (100%) -->
-				<item id="2303" min="1" max="1" chance="0.001" /> <!-- Recipe: Skull Graver (100%) -->
-				<item id="2307" min="1" max="1" chance="0.001" /> <!-- Recipe: Heavy Doom Axe (100%) -->
-				<item id="2316" min="1" max="1" chance="0.001" /> <!-- Recipe: Katana (100%) -->
-				<item id="2992" min="1" max="1" chance="0.0048" /> <!-- Recipe: Plated Leather Boots (100%) -->
-				<item id="2998" min="1" max="1" chance="0.0045" /> <!-- Recipe: Chain Shield (100%) -->
-				<item id="3004" min="1" max="1" chance="0.0037" /> <!-- Recipe: Rind Leather Gloves (100%) -->
+				<item id="2160" min="1" max="1" chance="0.004" /> <!-- Recipe: Moonstone Earring -->
+				<item id="2210" min="1" max="1" chance="0.003" /> <!-- Recipe: Steel Plate Helmet (100%) -->
+				<item id="2303" min="1" max="1" chance="0.0003" /> <!-- Recipe: Skull Graver (100%) -->
+				<item id="2307" min="1" max="1" chance="0.0003" /> <!-- Recipe: Heavy Doom Axe (100%) -->
+				<item id="2316" min="1" max="1" chance="0.0002" /> <!-- Recipe: Katana (100%) -->
+				<item id="2992" min="1" max="1" chance="0.005" /> <!-- Recipe: Plated Leather Boots (100%) -->
+				<item id="2998" min="1" max="1" chance="0.005" /> <!-- Recipe: Chain Shield (100%) -->
+				<item id="3004" min="1" max="1" chance="0.004" /> <!-- Recipe: Rind Leather Gloves (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -3171,7 +2747,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="300" /> <!-- Great Axe -->
-		<acquire exp="4072" sp="184" />
+		<acquire exp="1633" sp="67" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1154.31374327461" hpRegen="5.5" mp="557.4" mpRegen="2.1" />
 			<attack physical="210.04832" magical="143.43577" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3220,7 +2796,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="1756" sp="53" />
+		<acquire exp="688" sp="53" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="573.624217856864" hpRegen="3.5" mp="300.96" mpRegen="1.5" />
 			<attack physical="80.54056" magical="54.99876" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3255,27 +2831,6 @@
 			<radius normal="14" />
 			<height normal="22" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="14" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0005">
-					<item id="258" min="1" max="1" chance="100" /> <!-- Bagh-Nakh -->
-				</group>
-				<group chance="0.1714">
-					<item id="92908" min="1" max="1" chance="74.8877" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.9775" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4888" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4963" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1497" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2152" min="1" max="1" chance="0.0184" /> <!-- Recipe: Necklace of Magic (100%) -->
-				<item id="2261" min="1" max="1" chance="0.0016" /> <!-- Recipe: Conjuror's Staff (100%) -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20161" level="53" type="Monster" name="Oel Mahum">
 		<parameters>
@@ -3291,7 +2846,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="127" /> <!-- Crimson Sword -->
-		<acquire exp="5899" sp="177" />
+		<acquire exp="2584" sp="177" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1657.01086128246" hpRegen="6.5" mp="832.4" mpRegen="2.4" />
 			<attack physical="353.71092" magical="241.5387" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3326,31 +2881,6 @@
 			<radius normal="20" grown="24" />
 			<height normal="37" grown="44.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="74" max="174" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0025">
-					<item id="266" min="1" max="1" chance="2.4557" /> <!-- Great Pata -->
-					<item id="92692" min="1" max="1" chance="24.5572" /> <!-- Great Pata Blade -->
-					<item id="2229" min="1" max="1" chance="72.9871" /> <!-- Recipe: Theca Leather Armor (100%) -->
-				</group>
-				<group chance="1.4593">
-					<item id="92908" min="1" max="1" chance="73.3317" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.6663" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3332" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4444" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92912" min="1" max="1" chance="1.4666" /> <!-- Material: Plain Fabric - Sealed -->
-					<item id="92913" min="1" max="1" chance="0.7333" /> <!-- Material: Unknown Metal - Sealed -->
-					<item id="92917" min="1" max="1" chance="0.0245" /> <!-- Material: Metal Ingot - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92571" min="1" max="1" chance="0.0184" /> <!-- Theca Leather Armor Pattern -->
-				<item id="92675" min="1" max="1" chance="0.0035" /> <!-- Inferno Staff Head -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20162" level="41" type="Monster" name="Ogre">
 		<parameters>
@@ -3366,7 +2896,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="98" /> <!-- Halberd -->
-		<acquire exp="3703" sp="162" />
+		<acquire exp="1481" sp="61" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1063.54199060681" hpRegen="5.5" mp="504.8" mpRegen="2.1" />
 			<attack physical="187.11878" magical="127.77787" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3412,7 +2942,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2" /> <!-- rhand: Long Sword -->
-		<acquire exp="1317" sp="42" />
+		<acquire exp="490" sp="22" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="433.232298200102" hpRegen="3.5" mp="231.96" mpRegen="1.5" />
 			<attack physical="55.84125" magical="38.13234" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3461,7 +2991,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="14" /> <!-- rhand: Bow -->
-		<acquire exp="1563" sp="53" />
+		<acquire exp="561" sp="25" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="486.247334679017" hpRegen="3.5" mp="259.2" mpRegen="1.5" />
 			<attack physical="64.83203" magical="44.27187" random="5" critical="8" accuracy="0" attackSpeed="253" type="BOW" range="1100" distance="10" width="0" />
@@ -3512,7 +3042,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="69" /> <!-- rhand: Bastard Sword -->
-		<acquire exp="2264" sp="80" />
+		<acquire exp="736" sp="31" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="604.883087573501" hpRegen="3.5" mp="315.12" mpRegen="1.5" />
 			<attack physical="86.42002" magical="59.01367" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3562,7 +3092,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
-		<acquire exp="2278" sp="85" />
+		<acquire exp="885" sp="37" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="705.138521256333" hpRegen="4.5" mp="358.32" mpRegen="1.8" />
 			<attack physical="106.16525" magical="72.49711" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3612,7 +3142,7 @@
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<equipment rhand="73" /> <!-- rhand: Shamshir -->
-		<acquire exp="3560" sp="154" />
+		<acquire exp="1410" sp="58" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1019.59695680077" hpRegen="4.5" mp="478.8" mpRegen="1.8" />
 			<attack physical="176.36077" magical="120.43155" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3662,7 +3192,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="88" /> <!-- Morning Star -->
-		<acquire exp="1890" sp="57" />
+		<acquire exp="788" sp="57" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="637.219604833719" hpRegen="3.5" mp="329.4" mpRegen="1.5" />
 			<attack physical="92.64226" magical="63.26266" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3697,24 +3227,6 @@
 			<radius normal="14" />
 			<height normal="32.5" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="15" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0048">
-					<item id="46" min="1" max="1" chance="41.1765" /> <!-- Bronze Helmet -->
-					<item id="627" min="1" max="1" chance="58.8235" /> <!-- Aspis -->
-				</group>
-				<group chance="0.1754">
-					<item id="92908" min="1" max="1" chance="75.8103" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="15.1621" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.581" /> <!-- Material: Rags - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.2527" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="2185" min="1" max="1" chance="1.1939" /> <!-- Recipe: Iron Boots -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="20169" level="26" type="Monster" name="Skeleton Royal Guard">
 		<parameters>
@@ -3730,7 +3242,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="946" lhand="945" /> <!-- rhand: Skeleton Dagger lhand: Skeleton Buckler -->
-		<acquire exp="1617" sp="54" />
+		<acquire exp="601" sp="26" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="514.314772839948" hpRegen="3.5" mp="273" mpRegen="1.5" />
 			<attack physical="69.75926" magical="47.63653" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -3776,7 +3288,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="946" lhand="945" /> <!-- Skeleton Dagger / Skeleton Buckler -->
-		<acquire exp="681" sp="19" />
+		<acquire exp="235" sp="13" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="260.500236582205" hpRegen="2.5" mp="149.2" mpRegen="1.2" />
 			<attack physical="29.61691" magical="20.22451" random="5" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
@@ -3827,7 +3339,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="1570" sp="48" />
+		<acquire exp="601" sp="47" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="514.314772839948" hpRegen="3.5" mp="273" mpRegen="1.5" />
 			<attack physical="69.75926" magical="47.63653" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3862,27 +3374,6 @@
 			<radius normal="20" />
 			<height normal="35" grown="42" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="14" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0005">
-					<item id="258" min="1" max="1" chance="100" /> <!-- Bagh-Nakh -->
-				</group>
-				<group chance="0.1399">
-					<item id="92908" min="1" max="1" chance="74.4412" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.8882" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4441" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4814" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1489" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2181" min="1" max="1" chance="0.5962" /> <!-- Recipe: White Tunic (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92594" min="1" max="1" chance="0.0037" /> <!-- Trident Edge -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20172" level="10" type="Monster" name="Sylph">
 		<parameters>
@@ -3893,7 +3384,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire exp="445" sp="10" />
+		<acquire exp="146" sp="9" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="172.242688443633" hpRegen="2" mp="108.4" mpRegen="0.9" />
 			<attack physical="19.33758" magical="13.20506" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -3942,7 +3433,7 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<acquire exp="2398" sp="91" />
+		<acquire exp="938" sp="39" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="740.722181648393" hpRegen="4.5" mp="372.96" mpRegen="1.8" />
 			<attack physical="113.49065" magical="77.49941" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -3988,7 +3479,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="4" /> <!-- rhand: Club -->
-		<acquire exp="2698" sp="107" />
+		<acquire exp="1054" sp="44" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="815.124490768837" hpRegen="4.5" mp="402.6" mpRegen="1.8" />
 			<attack physical="129.32896" magical="88.31491" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -4028,7 +3519,7 @@
 		</parameters>
 		<race>PLANT</race>
 		<sex>MALE</sex>
-		<acquire exp="355" sp="8" />
+		<acquire exp="120" sp="7" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="131.780887914649" hpRegen="2" mp="92.64" mpRegen="0.9" />
 			<attack physical="16.20165" magical="11.06363" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4064,7 +3555,7 @@
 			<height normal="22.5" />
 		</collision>
 	</npc>
-	<npc id="20176" level="35" type="Monster" name="Wyrm">
+	<npc id="20176" level="36" type="Monster" name="Wyrm">
 		<parameters>
 			<param name="MoveAroundSocial" value="60" />
 			<param name="MoveAroundSocial1" value="60" />
@@ -4078,11 +3569,11 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>MALE</sex>
-		<acquire exp="1054" sp="78" />
+		<acquire exp="1477" sp="82" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="815.124490768837" hpRegen="4.5" mp="402.6" mpRegen="1.8" />
-			<attack physical="129.32896" magical="88.31491" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="136.72948" magical="100.0527" />
+			<vitals hp="1352.838" hpRegen="4.5" mp="433.527060284123" mpRegen="1.8" />
+			<attack physical="137.86467" magical="94.1437" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="140.57278" magical="102.86506" />
 			<speed>
 				<walk ground="70" />
 				<run ground="174" />
@@ -4112,33 +3603,33 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="7" max="17" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0057">
-					<item id="62" min="1" max="1" chance="1.5572" /> <!-- Reinforced Mithril Boots -->
-					<item id="92545" min="1" max="1" chance="15.5723" /> <!-- Reinforced Mithril Boot Design -->
-					<item id="63" min="1" max="1" chance="7.7249" /> <!-- Gauntlets -->
-					<item id="553" min="1" max="1" chance="7.7249" /> <!-- Iron Boots -->
-					<item id="92527" min="1" max="1" chance="23.1736" /> <!-- Iron Boot Design -->
-					<item id="2422" min="1" max="1" chance="7.7249" /> <!-- Reinforced Leather Boots -->
-					<item id="2423" min="1" max="1" chance="7.7249" /> <!-- Boots of Knowledge -->
-					<item id="2446" min="1" max="1" chance="7.7249" /> <!-- Reinforced Leather Gloves -->
-					<item id="2447" min="1" max="1" chance="7.7249" /> <!-- Gloves of Knowledge -->
-					<item id="92542" min="1" max="1" chance="13.3475" /> <!-- Chain Helmet Design -->
-				</group>
-				<group chance="0.497">
-					<item id="92908" min="1" max="1" chance="21.3945" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="4.2789" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="2.1394" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="0.7131" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.0428" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2200" min="1" max="1" chance="0.1164" /> <!-- Recipe: Chain Helmet (100%) -->
-					<item id="1341" min="10" max="30" chance="71.3149" /> <!-- Bone Arrow -->
-				</group>
+				<item id="57" min="5" max="6" chance="70" /> <!-- Adena -->
+				<item id="92499" min="1" max="1" chance="0.002" /> <!-- Ring of Protection Gemstone -->
+				<item id="92553" min="1" max="1" chance="0.0005" /> <!-- Plated Leather Armor Fragment -->
+				<item id="92563" min="1" max="1" chance="0.0007" /> <!-- Rind Leather Gaiter Material -->
+				<item id="92638" min="1" max="1" chance="0.00009" /> <!-- Battle Axe Head -->
+				<item id="92645" min="1" max="1" chance="0.00009" /> <!-- Cursed Dagger Blade -->
+				<item id="92655" min="1" max="1" chance="0.00007" /> <!-- Spirit Sword Blade -->
+				<item id="92713" min="1" max="1" chance="0.0009" /> <!-- Reinforced Mithril Gaiter Fragment -->
+				<item id="92721" min="1" max="1" chance="0.002" /> <!-- Chain Glove Design -->
+				<item id="131" min="1" max="1" chance="0.00002" /> <!-- Spirit Sword -->
+				<item id="160" min="1" max="1" chance="0.00003" /> <!-- Battle Axe -->
+				<item id="226" min="1" max="1" chance="0.00003" /> <!-- Cursed Dagger -->
+				<item id="398" min="1" max="1" chance="0.0001" /> <!-- Plated Leather Armor -->
+				<item id="419" min="1" max="1" chance="0.0002" /> <!-- Rind Leather Gaiters -->
+				<item id="884" min="1" max="1" chance="0.0005" /> <!-- Ring of Protection -->
+				<item id="2387" min="1" max="1" chance="0.0003" /> <!-- Reinforced Mithril Gaiters -->
+				<item id="2453" min="1" max="1" chance="0.0005" /> <!-- Chain Gloves -->
 			</drop>
 			<spoil>
-				<item id="2273" min="1" max="1" chance="0.0017" /> <!-- Recipe: Tarbar -->
+				<item id="2164" min="1" max="1" chance="0.005" /> <!-- Recipe: Ring of Protection (100%) -->
+				<item id="2211" min="1" max="1" chance="0.002" /> <!-- Recipe: Plated Leather Armor (100%) -->
+				<item id="2221" min="1" max="1" chance="0.002" /> <!-- Recipe: Rind Leather Gaiters (100%) -->
+				<item id="2301" min="1" max="1" chance="0.0003" /> <!-- Recipe: Battle Axe (100%) -->
+				<item id="2308" min="1" max="1" chance="0.0003" /> <!-- Recipe: Cursed Dagger (100%) -->
+				<item id="2318" min="1" max="1" chance="0.0002" /> <!-- Recipe: Spirit Sword (100%) -->
+				<item id="2988" min="1" max="1" chance="0.003" /> <!-- Recipe: Reinforced Mithril Gaiters (100%) -->
+				<item id="2996" min="1" max="1" chance="0.005" /> <!-- Recipe: Chain Gloves (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -4151,7 +3642,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="267" sp="5" />
+		<acquire exp="100" sp="5" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="98.6725479529507" hpRegen="2" mp="77.2" mpRegen="0.9" />
 			<attack physical="13.52471" magical="9.23562" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4195,7 +3686,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire exp="530" sp="15" />
+		<acquire exp="235" sp="13" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="260.500236582205" hpRegen="2.5" mp="149.2" mpRegen="1.2" />
 			<attack physical="29.61691" magical="20.22451" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4276,28 +3767,6 @@
 			<radius normal="11" />
 			<height normal="27" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="15" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0005">
-					<item id="275" min="1" max="1" chance="20" /> <!-- Longbow -->
-					<item id="276" min="1" max="1" chance="20" /> <!-- Elven Bow -->
-					<item id="92599" min="1" max="1" chance="60" /> <!-- Elven Bow Shaft -->
-				</group>
-				<group chance="0.6072">
-					<item id="92908" min="1" max="1" chance="21.5672" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="4.3134" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="2.1567" /> <!-- Material: Rags - Sealed -->
-					<item id="92914" min="1" max="1" chance="0.0719" /> <!-- Material: Sack Shreds - Sealed -->
-					<item id="1341" min="10" max="30" chance="71.8908" /> <!-- Bone Arrow -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92600" min="1" max="1" chance="0.0025" /> <!-- Dwarven Trident Edge -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20191" level="30" type="Monster" name="Skeleton Raider">
 		<parameters>
@@ -4349,32 +3818,6 @@
 			<radius normal="11" grown="13" />
 			<height normal="25" grown="31" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="15" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.006">
-					<item id="605" min="1" max="1" chance="50" /> <!-- Leather Gauntlets -->
-					<item id="1123" min="1" max="1" chance="50" /> <!-- Blue Buckskin Boots -->
-				</group>
-				<group chance="0.0999">
-					<item id="92908" min="1" max="1" chance="73.9343" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.7869" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.3934" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4645" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1479" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2264" min="1" max="1" chance="0.0612" /> <!-- Recipe: Two-handed Sword -->
-					<item id="2289" min="1" max="1" chance="0.0329" /> <!-- Recipe: Staff of Life (100%) -->
-					<item id="2986" min="1" max="1" chance="0.6048" /> <!-- Recipe: Sage's Worn Gloves (100%) -->
-					<item id="2201" min="1" max="1" chance="0.5741" /> <!-- Recipe: Square Shield (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2264" min="1" max="1" chance="0.0011" /> <!-- Recipe: Two-handed Sword -->
-				<item id="92487" min="1" max="1" chance="0.0143" /> <!-- Necklace of Magic Chain -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20192" level="35" type="Monster" name="Tyrant">
 		<parameters>
@@ -4389,7 +3832,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire exp="1054" sp="109" />
+		<acquire exp="1054" sp="108" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="815.124490768837" hpRegen="4.5" mp="402.6" mpRegen="1.8" />
 			<attack physical="129.32896" magical="88.31491" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4424,33 +3867,6 @@
 			<radius normal="15" />
 			<height normal="29" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="7" max="17" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0003">
-					<item id="223" min="1" max="1" chance="14.2857" /> <!-- Kukuri -->
-					<item id="238" min="1" max="1" chance="14.2857" /> <!-- Dagger of Mana -->
-					<item id="239" min="1" max="1" chance="14.2857" /> <!-- Mystic Knife -->
-					<item id="241" min="1" max="1" chance="14.2857" /> <!-- Shillien Knife -->
-					<item id="92603" min="1" max="1" chance="42.8572" /> <!-- Shillien Knife Edge -->
-				</group>
-				<group chance="0.1244">
-					<item id="92908" min="1" max="1" chance="74.813" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.9626" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4813" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4938" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1496" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2294" min="1" max="1" chance="0.0333" /> <!-- Recipe: Vajra Wand (100%) -->
-					<item id="2288" min="1" max="1" chance="0.0333" /> <!-- Recipe: Ghost Staff (100%) -->
-					<item id="2293" min="1" max="1" chance="0.0331" /> <!-- Recipe: Glaive (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2447" min="1" max="1" chance="0.0119" /> <!-- Gloves of Knowledge -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20193" level="36" type="Monster" name="Elder Tyrant">
 		<parameters>
@@ -4465,7 +3881,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire exp="1118" sp="164" />
+		<acquire exp="1117" sp="163" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="853.930787729907" hpRegen="4.5" mp="417.6" mpRegen="1.8" />
 			<attack physical="137.86467" magical="94.1437" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4500,28 +3916,6 @@
 			<radius normal="15" />
 			<height normal="29" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="7" max="17" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0025">
-					<item id="47" min="1" max="1" chance="39.1138" /> <!-- Helmet -->
-					<item id="628" min="1" max="1" chance="55.9188" /> <!-- Hoplon -->
-					<item id="92631" min="1" max="1" chance="4.9674" /> <!-- Vajra Wand Frame -->
-				</group>
-				<group chance="0.1992">
-					<item id="92908" min="1" max="1" chance="74.8877" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.9775" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4888" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4963" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1497" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="92602" min="1" max="1" chance="0.0019" /> <!-- Spiked Club Head -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20194" level="50" type="Monster" name="Queen Undine">
 		<parameters>
@@ -4537,7 +3931,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire exp="3708" sp="280" />
+		<acquire exp="2298" sp="90" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="1498.94623198693" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
 			<attack physical="305.54906" magical="208.6504" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4589,7 +3983,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<acquire exp="1654" sp="50" />
+		<acquire exp="643" sp="50" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="543.437297370415" hpRegen="3.5" mp="286.92" mpRegen="1.5" />
 			<attack physical="74.99121" magical="51.20928" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4620,36 +4014,12 @@
 			<radius normal="11" />
 			<height normal="35" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="14" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0005">
-					<item id="156" min="1" max="1" chance="33.3333" /> <!-- Hand Axe -->
-					<item id="167" min="1" max="1" chance="33.3333" /> <!-- Scalpel -->
-					<item id="178" min="1" max="1" chance="33.3334" /> <!-- Bone Staff -->
-				</group>
-				<group chance="0.1433">
-					<item id="92908" min="1" max="1" chance="74.106" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.8212" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4106" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4702" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1482" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2152" min="1" max="1" chance="1.0438" /> <!-- Recipe: Necklace of Magic (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="2259" min="1" max="1" chance="0.0016" /> <!-- Recipe: Spinebone Sword (100%) -->
-				<item id="92595" min="1" max="1" chance="0.0019" /> <!-- Temptation of Abyss Piece -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="20198" level="29" type="Monster" name="Neer Crawler Berserker">
 		<!-- L2wiki: https://l2wiki.com/classic/Neer_Crawler_Berserker -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<acquire exp="1853" sp="56" />
+		<acquire exp="736" sp="56" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="604.883087573501" hpRegen="3.5" mp="315.12" mpRegen="1.5" />
 			<attack physical="86.42002" magical="59.01367" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -4685,37 +4055,8 @@
 			<radius normal="14" />
 			<height normal="22" />
 		</collision>
-		<dropLists>
-			<drop>
-				<group chance="70">
-					<item id="57" min="6" max="15" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.0038">
-					<item id="433" min="1" max="1" chance="6.4143" /> <!-- Elven Tunic -->
-					<item id="434" min="1" max="1" chance="6.4143" /> <!-- White Tunic -->
-					<item id="92523" min="1" max="1" chance="19.2428" /> <!-- White Tunic Pattern -->
-					<item id="435" min="1" max="1" chance="6.4143" /> <!-- Wizard Tunic -->
-					<item id="466" min="1" max="1" chance="10.2526" /> <!-- Elven Stockings -->
-					<item id="467" min="1" max="1" chance="10.2526" /> <!-- Dark Stockings -->
-					<item id="92520" min="1" max="1" chance="30.7567" /> <!-- Dark Stocking Fabric -->
-					<item id="468" min="1" max="1" chance="10.2524" /> <!-- Wizard Stockings -->
-				</group>
-				<group chance="0.1463">
-					<item id="92908" min="1" max="1" chance="74.5937" /> <!-- Material: Lump of Wood - Sealed -->
-					<item id="92909" min="1" max="1" chance="14.9187" /> <!-- Material: Pack of Knickknacks - Sealed -->
-					<item id="92910" min="1" max="1" chance="7.4594" /> <!-- Material: Rags - Sealed -->
-					<item id="92911" min="1" max="1" chance="2.4865" /> <!-- Material: Leather Scraps - Sealed -->
-					<item id="92915" min="1" max="1" chance="0.1492" /> <!-- Material: Bag of Low-grade Stuff - Sealed -->
-					<item id="2183" min="1" max="1" chance="0.3925" /> <!-- Recipe: Mithril Banded Mail (100%) -->
-				</group>
-			</drop>
-			<spoil>
-				<item id="1832" min="1" max="1" chance="1.4778" /> <!-- Greater Antidote -->
-				<item id="1832" min="1" max="1" chance="1.4778" /> <!-- Greater Antidote -->
-			</spoil>
-		</dropLists>
 	</npc>
-	<npc id="20199" level="30" type="Monster" name="Amber Basilisk">
+	<npc id="20199" level="34" type="Monster" name="Amber Basilisk">
 		<parameters>
 			<param name="MoveAroundSocial" value="0" />
 			<param name="MoveAroundSocial1" value="0" />
@@ -4729,11 +4070,11 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<acquire exp="788" sp="57" />
+		<acquire exp="1399" sp="72" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="637.219604833719" hpRegen="3.5" mp="329.4" mpRegen="1.5" />
-			<attack physical="92.64226" magical="63.26266" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="118.46427" magical="86.68702" />
+			<vitals hp="1263.0316" hpRegen="3.5" mp="400.820137097007" mpRegen="1.5" />
+			<attack physical="121.20802" magical="82.76936" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="132.9486" magical="97.28601" />
 			<speed>
 				<walk ground="35" />
 				<run ground="131" />
@@ -4768,30 +4109,30 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="5" max="6" chance="70" /> <!-- Adena -->
-				<item id="3031" min="1" max="1" chance="0.0495" /> <!-- Spirit Ore - Sealed -->
-				<item id="92541" min="1" max="1" chance="0.001" /> <!-- Karmian Stocking Design -->
-				<item id="92554" min="1" max="1" chance="0.001" /> <!-- Plated Leather Gaiters Material -->
-				<item id="92558" min="1" max="1" chance="0.001" /> <!-- Great Helmet Material -->
-				<item id="92637" min="1" max="1" chance="0.001" /> <!-- Scythe Edge -->
-				<item id="92642" min="1" max="1" chance="0.001" /> <!-- Crystal Staff Head -->
-				<item id="92660" min="1" max="1" chance="0.001" /> <!-- Elemental Bow Shaft -->
-				<item id="92715" min="1" max="1" chance="0.0016" /> <!-- Chain Boot Fragment -->
-				<item id="96" min="1" max="1" chance="0.001" /> <!-- Scythe -->
-				<item id="192" min="1" max="1" chance="0.001" /> <!-- Crystal Staff -->
-				<item id="282" min="1" max="1" chance="0.001" /> <!-- Elemental Bow -->
-				<item id="418" min="1" max="1" chance="0.001" /> <!-- Plated Leather Gaiters -->
-				<item id="471" min="1" max="1" chance="0.001" /> <!-- Karmian Stockings -->
-				<item id="500" min="1" max="1" chance="0.001" /> <!-- Great Helmet -->
-				<item id="2429" min="1" max="1" chance="0.001" /> <!-- Chain Boots -->
+				<item id="3031" min="1" max="1" chance="0.05" /> <!-- Spirit Ore - Sealed -->
+				<item id="92541" min="1" max="1" chance="0.0008" /> <!-- Karmian Stocking Design -->
+				<item id="92554" min="1" max="1" chance="0.0007" /> <!-- Plated Leather Gaiters Material -->
+				<item id="92558" min="1" max="1" chance="0.0008" /> <!-- Great Helmet Material -->
+				<item id="92637" min="1" max="1" chance="0.00009" /> <!-- Scythe Edge -->
+				<item id="92642" min="1" max="1" chance="0.00009" /> <!-- Crystal Staff Head -->
+				<item id="92660" min="1" max="1" chance="0.00007" /> <!-- Elemental Bow Shaft -->
+				<item id="92715" min="1" max="1" chance="0.002" /> <!-- Chain Boot Fragment -->
+				<item id="96" min="1" max="1" chance="0.00003" /> <!-- Scythe -->
+				<item id="192" min="1" max="1" chance="0.00003" /> <!-- Crystal Staff -->
+				<item id="282" min="1" max="1" chance="0.00002" /> <!-- Elemental Bow -->
+				<item id="418" min="1" max="1" chance="0.0002" /> <!-- Plated Leather Gaiters -->
+				<item id="471" min="1" max="1" chance="0.0003" /> <!-- Karmian Stockings -->
+				<item id="500" min="1" max="1" chance="0.0003" /> <!-- Great Helmet -->
+				<item id="2429" min="1" max="1" chance="0.0005" /> <!-- Chain Boots -->
 			</drop>
 			<spoil>
-				<item id="2199" min="1" max="1" chance="0.0031" /> <!-- Recipe: Karmian Stockings (100%) -->
-				<item id="2212" min="1" max="1" chance="0.0026" /> <!-- Recipe: Plated Leather Gaiters (100%) -->
+				<item id="2199" min="1" max="1" chance="0.003" /> <!-- Recipe: Karmian Stockings (100%) -->
+				<item id="2212" min="1" max="1" chance="0.003" /> <!-- Recipe: Plated Leather Gaiters (100%) -->
 				<item id="2216" min="1" max="1" chance="0.003" /> <!-- Recipe: Great Helmet (100%) -->
-				<item id="2300" min="1" max="1" chance="0.001" /> <!-- Recipe: Scythe (100%) -->
-				<item id="2305" min="1" max="1" chance="0.001" /> <!-- Recipe: Crystal Staff (100%) -->
-				<item id="2323" min="1" max="1" chance="0.001" /> <!-- Recipe: Elemental Bow (100%) -->
-				<item id="2990" min="1" max="1" chance="0.0058" /> <!-- Recipe: Chain Boots (100%) -->
+				<item id="2300" min="1" max="1" chance="0.0003" /> <!-- Recipe: Scythe (100%) -->
+				<item id="2305" min="1" max="1" chance="0.0003" /> <!-- Recipe: Crystal Staff (100%) -->
+				<item id="2323" min="1" max="1" chance="0.0003" /> <!-- Recipe: Elemental Bow (100%) -->
+				<item id="2990" min="1" max="1" chance="0.006" /> <!-- Recipe: Chain Boots (100%) -->
 			</spoil>
 		</dropLists>
 	</npc>

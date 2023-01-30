@@ -499,8 +499,10 @@
 		<set name="default_action" val="EQUIP" />
 		<set name="bodypart" val="rear;lear" />
 		<set name="crystal_type" val="R" />
+		<set name="crystal_count" val="4109" />
 		<set name="weight" val="150" />
 		<set name="material" val="GOLD" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13525" level="1" /> <!-- Blessed Lindvior's Earring -->
 			<skill id="13526" level="1" /> <!-- Blessed Lindvior's Earring -->
@@ -565,13 +567,24 @@
 	<item id="36953" name="Support Box" type="EtcItem">
 		<!-- Box that helps new/ dormant heroes. Double-click to receive an item appropriate for the PC's class/ level. -->
 		<set name="icon" val="icon.etc_elite_marguene_collection_box_i00" />
+		<set name="default_action" val="PEEL" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="FISH" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
-		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_premium" val="true" />
 		<set name="is_freightable" val="true" />
-		<set name="material" val="FISH" />
+		<set name="is_destroyable" val="false" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="3947" min="5000" max="5000" chance="100" /> <!-- Blessed No-grade Spiritshot -->
+			<item id="1835" min="5000" max="5000" chance="100" /> <!-- No-grade Soulshot -->
+			<item id="20326" min="1" max="1" chance="100" /> <!-- Package: Beast Soulshots -->
+			<item id="20328" min="1" max="1" chance="100" /> <!-- Package: Blessed Beast Spiritshots -->
+			<item id="34602" min="10" max="10" chance="100" /> <!-- PA - Quick HP Replenishing Potion - PA exclusive -->
+		</capsuled_items>
 	</item>
 	<item id="36954" name="No-grade" type="EtcItem">
 		<!-- Double-click to receive a box with a no-grade item and a D-grade item. Items are provided according to the PC's level and class. The box whose level does not match the PC's level cannot be used. -->
@@ -940,6 +953,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 		</skills>
@@ -952,6 +966,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9554" level="1" /> <!-- Hair Accessory: STR -->
@@ -965,6 +980,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9555" level="1" /> <!-- Hair Accessory: DEX -->
@@ -978,6 +994,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9556" level="1" /> <!-- Hair Accessory: CON -->
@@ -991,6 +1008,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9557" level="1" /> <!-- Hair Accessory: MEN -->
@@ -1004,6 +1022,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9558" level="1" /> <!-- Hair Accessory: INT -->
@@ -1017,6 +1036,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9559" level="1" /> <!-- Hair Accessory: WIT -->
@@ -1030,6 +1050,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9560" level="1" /> <!-- Hair Accessory: Critical Rate -->
@@ -1043,6 +1064,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9561" level="1" /> <!-- Hair Accessory: Critical Damage -->
@@ -1056,6 +1078,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9562" level="1" /> <!-- Hair Accessory Circlet: P. Def. -->
@@ -1069,6 +1092,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9563" level="1" /> <!-- Hair Accessory: M. Def. -->
@@ -1082,6 +1106,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9564" level="1" /> <!-- Hair Accessory: Evasion -->
@@ -1095,6 +1120,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9565" level="1" /> <!-- Hair Accessory: P. Atk. -->
@@ -1108,6 +1134,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9566" level="1" /> <!-- Hair Accessory: M. Atk. -->
@@ -1121,6 +1148,7 @@
 		<set name="weight" val="10" />
 		<set name="material" val="WOOD" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 		<skills>
 			<skill id="13493" level="1" /> <!-- Chain Fireworks -->
 			<skill id="9567" level="1" /> <!-- Hair Accessory: Accuracy -->

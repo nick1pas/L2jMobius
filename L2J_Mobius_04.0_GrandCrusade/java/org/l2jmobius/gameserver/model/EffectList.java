@@ -1106,7 +1106,7 @@ public class EffectList
 								{
 									shortBuffStatusUpdate(info);
 								}
-								else
+								else if (info.isDisplayedForEffected())
 								{
 									asu.ifPresent(a -> a.addSkill(info));
 									ps.filter(p -> !info.getSkill().isToggle()).ifPresent(p -> p.addSkill(info));
@@ -1221,7 +1221,7 @@ public class EffectList
 		// Recalculate new flags
 		for (BuffInfo info : _actives)
 		{
-			if (info != null)
+			if ((info != null) && info.isDisplayedForEffected())
 			{
 				final Skill skill = info.getSkill();
 				

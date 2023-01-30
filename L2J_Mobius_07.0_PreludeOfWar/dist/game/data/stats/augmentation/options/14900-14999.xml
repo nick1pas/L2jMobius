@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/optionsData.xsd">
 	<option id="14900" name="o_s_49_2u_38">
 		<!-- Effect: Has a chance of petrifying the attacking target. -->
 		<passive_skill id="3232" level="2" /> <!-- Item Skill: Medusa -->
 	</option>
 	<option id="14901" name="o_s_49_2u_39">
-		<!-- Effect: During a magic attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a magic attack, has a chance of blocking the target's physical/ magic skills -->
 		<magic_skill id="3107" level="2" chance="2.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="14902" name="o_s_49_2u_40">
@@ -29,7 +29,7 @@
 		<magic_skill id="3098" level="2" chance="2.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="14907" name="o_s_49_2u_45">
-		<!-- Passive: Increases Evasion. -->
+		<!-- Item skill: Increases Evasion. -->
 		<passive_skill id="3247" level="2" /> <!-- Item Skill: Agility -->
 	</option>
 	<option id="14908" name="o_s_49_2u_46">
@@ -109,15 +109,15 @@
 		<attack_skill id="3083" level="3" chance="1.0" /> <!-- Item Skill: Slow (Attack Active) -->
 	</option>
 	<option id="14927" name="o_s_52_2s_11">
-		<!-- Effect: During a critical attack, has a chance of decreasing the target's aggression toward oneself. -->
+		<!-- Chance: Temporarily decreases the target's aggression after a critical attack. -->
 		<critical_skill id="3109" level="3" chance="5.0" /> <!-- Item Skill: Aggression Down -->
 	</option>
 	<option id="14928" name="o_s_52_2s_12">
-		<!-- Effect: During a critical attack, has a chance of triggers the target's aggression. -->
+		<!-- Chance: Temporarily increases the target's aggression after a critical attack. -->
 		<critical_skill id="3108" level="3" chance="5.0" /> <!-- Item Skill: Aggression Up -->
 	</option>
 	<option id="14929" name="o_s_52_2s_13">
-		<!-- Effect: During a critical attack, has a chance of decreasing the target's Speed. -->
+		<!-- Chance: Instantly decreases the target's Speed after a critical attack. -->
 		<critical_skill id="3111" level="3" chance="5.0" /> <!-- Item Skill: Slow (Critical) -->
 	</option>
 	<option id="14930" name="o_s_52_2s_14">
@@ -181,7 +181,7 @@
 		<active_skill id="3140" level="3" /> <!-- Item Skill: Guidance -->
 	</option>
 	<option id="14945" name="o_s_52_2r_12">
-		<!-- Active: During a magic attack, has a chance of inflicting hold on the target. The target cannot be affected by any additional hold attacks while the effect lasts. -->
+		<!-- Active: Inflicts hold on the target. The target cannot be affected by any hold attacks while the effect is active. -->
 		<active_skill id="3190" level="3" /> <!-- Item Skill: Hold -->
 	</option>
 	<option id="14946" name="o_s_52_2r_13">
@@ -258,7 +258,7 @@
 	</option>
 	<option id="14964" name="o_s_52_2r_31">
 		<!-- Active: Temporarily decreases the opponent's PvP P. Atk. -->
-		<active_skill id="3137" level="3" /> <!-- Item Skill: Duel Weakness -->
+		<active_skill id="3137" level="3" /> <!-- Item Skill: Weakness in Duel -->
 	</option>
 	<option id="14965" name="o_s_52_2r_32">
 		<!-- Active: Temporarily increases PvP P. Atk. -->
@@ -381,7 +381,7 @@
 		<attack_skill id="3090" level="3" chance="1.0" /> <!-- Item Skill: Fear -->
 	</option>
 	<option id="14995" name="o_s_52_2r_62">
-		<!-- Effect: During a physical attack, has a chance of inflicting hold on the target. The target cannot be affected by any additional hold attacks while the effect lasts. -->
+		<!-- Chance: Inflicts hold on the target after a physical attack. The target cannot be affected by any hold attacks while the effect is active. -->
 		<attack_skill id="3086" level="3" chance="1.0" /> <!-- Item Skill: Hold -->
 	</option>
 	<option id="14996" name="o_s_52_2r_63">
@@ -397,7 +397,7 @@
 		<critical_skill id="3112" level="3" chance="5.0" /> <!-- Item Skill: Winter (Critical) -->
 	</option>
 	<option id="14999" name="o_s_52_2r_66">
-		<!-- Effect: During a critical attack, has a chance of inflicting bleed on the target. -->
+		<!-- Chance: Instantly inflicts bleed on the target after a critical attack. -->
 		<critical_skill id="3120" level="3" chance="5.0" /> <!-- Item Skill: Bleed (Critical) -->
 	</option>
 </list>

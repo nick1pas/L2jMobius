@@ -142,7 +142,7 @@ public class RequestRefine extends AbstractRefinePacket
 		// Consume the gemstones.
 		if (feeItem != null)
 		{
-			player.destroyItem("RequestRefine", feeItem, fee.getAdenaFee(), null, false);
+			player.destroyItem("RequestRefine", feeItem, fee.getItemCount(), null, false);
 		}
 		
 		// Consume Adena.

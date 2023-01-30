@@ -5,10 +5,20 @@
 		<set name="icon" val="icon.bm_freya_ice_rose" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="LIQUID" />
+		<set name="immediate_effect" val="true" />
+		<set name="reuse_delay" val="300000" />
 		<set name="weight" val="1" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="etcitem_type" val="SCROLL" />
+		<set name="is_stackable" val="true" />
+		<set name="is_oly_restricted" val="true" />
+		<set name="is_event_restricted" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="29440" level="1" /> <!-- Freya's Ice Rose -->
+		</skills>
 	</item>
 	<item id="60001" name="Lovely Chocolate Box" type="EtcItem">
 		<!-- Double-click to obtain 1-5 Valentine's Bouquets. Additionally, you can get 1 useful item. -->
@@ -35,6 +45,45 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29401" min="1" max="1" chance="2.9411764705882355" /> <!-- Ultimate Jewelry Box Lv. 3 -->
+			<item id="29402" min="1" max="1" chance="2.9411764705882355" /> <!-- Ultimate Jewelry Box Lv. 4 -->
+			<item id="29469" min="1" max="1" chance="2.9411764705882355" /> <!-- Enhanced Jewel Energy -->
+			<item id="29840" min="1" max="1" chance="2.9411764705882355" /> <!-- Crystal Pack -->
+			<item id="38762" min="1" max="1" chance="2.9411764705882355" /> <!-- Destructive Energy 20-unit Pack -->
+			<item id="47428" min="5" max="5" chance="2.9411764705882355" /> <!-- Freya's Scroll of Storm -->
+			<item id="47866" min="1" max="1" chance="2.9411764705882355" /> <!-- Star Sign -->
+			<item id="48032" min="1" max="1" chance="2.9411764705882355" /> <!-- Sayha's Talisman Pack Lv. 8 -->
+			<item id="48497" min="5" max="5" chance="2.9411764705882355" /> <!-- Glowing Dragon's Attribute Potion - XP -->
+			<item id="48667" min="1" max="1" chance="2.9411764705882355" /> <!-- Mid-grade Dragon Weapon Pack -->
+			<item id="48831" min="1" max="1" chance="2.9411764705882355" /> <!-- Jewel Energy -->
+			<item id="48860" min="1" max="1" chance="2.9411764705882355" /> <!-- Fallen Angel's Ring Pack -->
+			<item id="48875" min="1" max="1" chance="2.9411764705882355" /> <!-- Forgotten Spellbook -->
+			<item id="48910" min="1" max="1" chance="2.9411764705882355" /> <!-- Shillien's Soul Crystal Box -->
+			<item id="80000" min="1" max="1" chance="2.9411764705882355" /> <!-- Artifact Fragment -->
+			<item id="80420" min="1" max="1" chance="2.9411764705882355" /> <!-- Attack Artifact Pack -->
+			<item id="80421" min="1" max="1" chance="2.9411764705882355" /> <!-- Defense Artifact Pack -->
+			<item id="80422" min="1" max="1" chance="2.9411764705882355" /> <!-- Support Artifact Pack -->
+			<item id="80423" min="1" max="1" chance="2.9411764705882355" /> <!-- Balance Artifact Pack -->
+			<item id="80636" min="1" max="1" chance="2.9411764705882355" /> <!-- Artifact Crystal -->
+			<item id="80663" min="1" max="1" chance="2.9411764705882355" /> <!-- High-grade Dragon Weapon Pack -->
+			<item id="80958" min="1" max="1" chance="2.9411764705882355" /> <!-- Sealed Heavenly Talisman -->
+			<item id="80964" min="1" max="1" chance="2.9411764705882355" /> <!-- Energy of Protection -->
+			<item id="81134" min="1" max="1" chance="2.9411764705882355" /> <!-- Crystal of Dyes -->
+			<item id="81672" min="1" max="1" chance="2.9411764705882355" /> <!-- Ultimate Luxurious Jewelry Box Lv. 5 -->
+			<item id="29759" min="1" max="1" chance="2.9411764705882355" /> <!-- Heir's Radiance Shard -->
+			<item id="36414" min="1" max="1" chance="2.9411764705882355" /> <!-- Dragon Claw -->
+			<item id="36515" min="1" max="1" chance="2.9411764705882355" /> <!-- Elcyum -->
+			<item id="37717" min="1" max="1" chance="2.9411764705882355" /> <!-- Talisman of Seven Signs -->
+			<item id="80130" min="1" max="1" chance="2.9411764705882355" /> <!-- Superior Augmenting Stone: Weapon -->
+			<item id="80839" min="1" max="1" chance="2.9411764705882355" /> <!-- Crystal of Dawn -->
+			<item id="81453" min="1" max="1" chance="2.9411764705882355" /> <!-- Enhanced Rune Stone -->
+			<item id="19464" min="1" max="1" chance="2.9411764705882355" /> <!-- Blessed Valakas' Necklace -->
+			<item id="36946" min="1" max="1" chance="2.941176470588303" /> <!-- Lindvior's Earring -->
+		</capsuled_items>
 	</item>
 	<item id="60004" name="Boys' Surprise Lucky Pouch" type="EtcItem">
 		<!-- Double-click to obtain a random item. Additionally you can get Christmas Gift Lucky Pouch. -->
@@ -72,6 +121,18 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29385" min="1" max="1" chance="14.285714285714286" /> <!-- Jewel Box Lv. 5 -->
+			<item id="48831" min="1" max="1" chance="14.285714285714286" /> <!-- Jewel Energy -->
+			<item id="80797" min="1" max="1" chance="14.285714285714286" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+			<item id="81134" min="1" max="1" chance="14.285714285714286" /> <!-- Crystal of Dyes -->
+			<item id="36514" min="1" max="1" chance="14.285714285714286" /> <!-- Elcyum Crystal -->
+			<item id="39738" min="1" max="1" chance="14.285714285714286" /> <!-- Rune Stone -->
+			<item id="80641" min="1" max="1" chance="14.285714285714278" /> <!-- Talisman of Protection Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="60008" name="Siege Support Box" type="EtcItem">
 		<!-- Double-click to obtain various supplies. -->
@@ -82,6 +143,13 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48848" min="5" max="5" chance="100" /> <!-- Freya's Ice Rose - Event -->
+			<item id="81011" min="5" max="5" chance="100" /> <!-- Honey Dark Beer - Event -->
+			<item id="22888" min="100000" max="100000" chance="100" /> <!-- Mysterious R-grade Soulshot -->
+			<item id="22889" min="50000" max="50000" chance="100" /> <!-- Mysterious Blessed R-grade Spiritshot -->
+		</capsuled_items>
 	</item>
 	<item id="60009" name="Festival Fairy's Lucky Ticket" type="EtcItem">
 		<!-- Allows to take part in the raffle for 1 h. after using the ticket. Required level: 105+. The effect is removed when switching to a subclass/ dual class. -->
@@ -112,6 +180,41 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29676" min="3" max="3" chance="3.3333333333333335" /> <!-- Glittering Freya's Scroll of Storm -->
+			<item id="39573" min="1" max="1" chance="3.3333333333333335" /> <!-- Sealed Talisman of Insanity -->
+			<item id="47420" min="1" max="1" chance="3.3333333333333335" /> <!-- Energy of Longing -->
+			<item id="47821" min="1" max="1" chance="3.3333333333333335" /> <!-- Sayha's Talisman Pack Lv. 10 -->
+			<item id="48666" min="1" max="1" chance="3.3333333333333335" /> <!-- Low-grade Dragon Weapon Pack -->
+			<item id="48667" min="1" max="1" chance="3.3333333333333335" /> <!-- Mid-grade Dragon Weapon Pack -->
+			<item id="48862" min="1" max="1" chance="3.3333333333333335" /> <!-- +10 Fallen Angel's Ring Pack -->
+			<item id="80663" min="1" max="1" chance="3.3333333333333335" /> <!-- High-grade Dragon Weapon Pack -->
+			<item id="80958" min="1" max="1" chance="3.3333333333333335" /> <!-- Sealed Heavenly Talisman -->
+			<item id="80964" min="3" max="3" chance="3.3333333333333335" /> <!-- Energy of Protection -->
+			<item id="80964" min="2" max="2" chance="3.3333333333333335" /> <!-- Energy of Protection -->
+			<item id="80964" min="1" max="1" chance="3.3333333333333335" /> <!-- Energy of Protection -->
+			<item id="81448" min="2" max="2" chance="3.3333333333333335" /> <!-- Angel's Necklace Pack -->
+			<item id="81449" min="2" max="2" chance="3.3333333333333335" /> <!-- Angel's Earring Pack -->
+			<item id="81450" min="1" max="1" chance="3.3333333333333335" /> <!-- Angel's Ring Pack -->
+			<item id="81759" min="1" max="1" chance="3.3333333333333335" /> <!-- Glowing Royal Dragon's Attribute Potion - XP -->
+			<item id="81770" min="1" max="1" chance="3.3333333333333335" /> <!-- Shining Energy of Protection -->
+			<item id="37717" min="1" max="1" chance="3.3333333333333335" /> <!-- Talisman of Seven Signs -->
+			<item id="39738" min="2" max="2" chance="3.3333333333333335" /> <!-- Rune Stone -->
+			<item id="48418" min="1" max="1" chance="3.3333333333333335" /> <!-- Authority Ornament -->
+			<item id="80638" min="1" max="1" chance="3.3333333333333335" /> <!-- Talisman of Protection Lv. 2 -->
+			<item id="80639" min="1" max="1" chance="3.3333333333333335" /> <!-- Talisman of Protection Lv. 3 -->
+			<item id="80646" min="1" max="1" chance="3.3333333333333335" /> <!-- Talisman of Protection Lv. 10 -->
+			<item id="80959" min="1" max="1" chance="3.3333333333333335" /> <!-- Epic Talisman -->
+			<item id="19463" min="1" max="1" chance="3.3333333333333335" /> <!-- Blessed Antharas' Earring -->
+			<item id="19464" min="1" max="1" chance="3.3333333333333335" /> <!-- Blessed Valakas' Necklace -->
+			<item id="36946" min="1" max="1" chance="3.3333333333333335" /> <!-- Lindvior's Earring -->
+			<item id="80333" min="1" max="1" chance="3.3333333333333335" /> <!-- Dragon's Necklace -->
+			<item id="80334" min="1" max="1" chance="3.3333333333333335" /> <!-- Dragon's Earring -->
+			<item id="80335" min="1" max="1" chance="3.333333333333357" /> <!-- Dragon's Ring -->
+		</capsuled_items>
 	</item>
 	<item id="60011" name="Festival Fairy's Good Luck Bag" additionalName="Event" type="EtcItem">
 		<!-- Double-click to obtain 3 Festival Fairy's Lucky Tickets (1-hour). -->
@@ -138,6 +241,35 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="2" />
+		<set name="extractableCountMax" val="2" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29978" min="1" max="1" chance="100" /> <!-- Barter Coin Chest -->
+			<item id="29379" min="1" max="1" chance="4.3478260869565215" /> <!-- Peeves' Purple Potion -->
+			<item id="29676" min="9" max="9" chance="4.3478260869565215" /> <!-- Glittering Freya's Scroll of Storm -->
+			<item id="29677" min="3" max="3" chance="4.3478260869565215" /> <!-- Freya's Glittering Ice Rose -->
+			<item id="29909" min="1" max="1" chance="4.3478260869565215" /> <!-- Sealed Bloodstained Zariche Weapon Pack -->
+			<item id="37562" min="3" max="3" chance="4.3478260869565215" /> <!-- Emperor's Vitality Tonic (Large) -->
+			<item id="48032" min="1" max="1" chance="4.3478260869565215" /> <!-- Sayha's Talisman Pack Lv. 8 -->
+			<item id="48323" min="1" max="1" chance="4.3478260869565215" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+			<item id="48497" min="6" max="6" chance="4.3478260869565215" /> <!-- Glowing Dragon's Attribute Potion - XP -->
+			<item id="48667" min="1" max="1" chance="4.3478260869565215" /> <!-- Mid-grade Dragon Weapon Pack -->
+			<item id="48908" min="1" max="1" chance="4.3478260869565215" /> <!-- Shillien's Soul Crystal Lv. 10 - Weapon -->
+			<item id="48941" min="1" max="1" chance="4.3478260869565215" /> <!-- +8 Angel's Necklace Pack -->
+			<item id="48942" min="1" max="1" chance="4.3478260869565215" /> <!-- +8 Angel's Earring Pack -->
+			<item id="80000" min="3" max="3" chance="4.3478260869565215" /> <!-- Artifact Fragment -->
+			<item id="80636" min="3" max="3" chance="4.3478260869565215" /> <!-- Artifact Crystal -->
+			<item id="80663" min="1" max="1" chance="4.3478260869565215" /> <!-- High-grade Dragon Weapon Pack -->
+			<item id="80931" min="1" max="1" chance="4.3478260869565215" /> <!-- Greater Zodiac Agathion Cube -->
+			<item id="81134" min="3" max="3" chance="4.3478260869565215" /> <!-- Crystal of Dyes -->
+			<item id="81156" min="1" max="1" chance="4.3478260869565215" /> <!-- +8 Angel's Ring Pack -->
+			<item id="29546" min="1" max="1" chance="4.3478260869565215" /> <!-- Enhanced La Vie En Rose's Brooch -->
+			<item id="36414" min="1" max="1" chance="4.3478260869565215" /> <!-- Dragon Claw -->
+			<item id="36515" min="3" max="3" chance="4.3478260869565215" /> <!-- Elcyum -->
+			<item id="48064" min="1" max="1" chance="4.3478260869565215" /> <!-- Superior Seed Bracelet Lv. 1 -->
+			<item id="81453" min="1" max="1" chance="4.347826086956545" /> <!-- Enhanced Rune Stone -->
+		</capsuled_items>
 	</item>
 	<item id="60013" name="Partner Help Cube" type="EtcItem">
 		<!-- Double-click to obtain Emperor's Special Cocktail (3 pcs.). 10 d. - Ice Rose (50 pcs.) 20 d. - Glowing Dragon's Attribute Potion (50 pcs.) 30 d. - Shining Nevit's Gold Hourglass (20 pcs.) (Can be used only once a day.) -->
@@ -159,6 +291,15 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48755" min="336" max="336" chance="100" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="80612" min="336" max="336" chance="100" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80797" min="336" max="336" chance="100" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+			<item id="80820" min="168" max="168" chance="100" /> <!-- PA Emperor's Special Cocktail -->
+			<item id="81054" min="1008" max="1008" chance="100" /> <!-- Freya's Scroll of Storm - Event -->
+			<item id="81460" min="336" max="336" chance="100" /> <!-- Honey Dark Beer - Event -->
+		</capsuled_items>
 	</item>
 	<item id="60015" name="Spellbook: Create Mysterious Soulshots" type="EtcItem">
 		<!-- A spellbook for learning the Create Mysterious R-grade Soulshots skill. Note! The skill is deleted when changing class with Stone of Destiny. -->
@@ -167,6 +308,7 @@
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
 		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
 		<set name="handler" val="ItemSkills" />
@@ -181,6 +323,7 @@
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
 		<set name="is_sellable" val="false" />
+		<set name="weight" val="20" />
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
 		<set name="handler" val="ItemSkills" />
@@ -196,6 +339,53 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="23342" min="1" max="1" chance="2.380952380952381" /> <!-- Ancient Crystal: Enchant R-grade Weapon -->
+			<item id="23344" min="1" max="1" chance="2.380952380952381" /> <!-- Ancient Crystal: Enchant R-grade Armor -->
+			<item id="29823" min="1" max="1" chance="2.380952380952381" /> <!-- High-grade Stable Scroll: Enchant Cloak - Legendary -->
+			<item id="47821" min="1" max="1" chance="2.380952380952381" /> <!-- Sayha's Talisman Pack Lv. 10 -->
+			<item id="48323" min="1" max="1" chance="2.380952380952381" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+			<item id="48677" min="1" max="1" chance="2.380952380952381" /> <!-- High-grade Skill Power Talisman Pack - Skill Critical Damage -->
+			<item id="48862" min="1" max="1" chance="2.380952380952381" /> <!-- +10 Fallen Angel's Ring Pack -->
+			<item id="48908" min="1" max="1" chance="2.380952380952381" /> <!-- Shillien's Soul Crystal Lv. 10 - Weapon -->
+			<item id="60206" min="1" max="1" chance="2.380952380952381" /> <!-- Gran Kain's Scroll: Enchant R-grade Weapon -->
+			<item id="60207" min="1" max="1" chance="2.380952380952381" /> <!-- Gran Kain's Scroll: Enchant R-grade Armor -->
+			<item id="80449" min="1" max="1" chance="2.380952380952381" /> <!-- Royal Black Save Ticket -->
+			<item id="80501" min="1" max="1" chance="2.380952380952381" /> <!-- Royal Gold Save Ticket -->
+			<item id="80958" min="1" max="1" chance="2.380952380952381" /> <!-- Sealed Heavenly Talisman -->
+			<item id="81752" min="1" max="1" chance="2.380952380952381" /> <!-- Gran Kain's Scroll: Enchant Superior Kaliel's Bracelet -->
+			<item id="48577" min="1" max="1" chance="2.380952380952381" /> <!-- Superior Seed Bracelet Lv. 4 -->
+			<item id="48956" min="1" max="1" chance="2.380952380952381" /> <!-- Artifact Book - Lv. 3 -->
+			<item id="17623" min="1" max="1" chance="2.380952380952381" /> <!-- Earth Wyrm's Heart Ring -->
+			<item id="19464" min="1" max="1" chance="2.380952380952381" /> <!-- Blessed Valakas' Necklace -->
+			<item id="27680" min="1" max="1" chance="2.380952380952381" /> <!-- Gran Kain's Necklace Lv. 3 -->
+			<item id="27686" min="1" max="1" chance="2.380952380952381" /> <!-- Einhasad's Necklace Lv. 3 -->
+			<item id="27692" min="1" max="1" chance="2.380952380952381" /> <!-- Pa'agrio's Earring Lv. 3 -->
+			<item id="27698" min="1" max="1" chance="2.380952380952381" /> <!-- Eva's Earring Lv. 3 -->
+			<item id="27704" min="1" max="1" chance="2.380952380952381" /> <!-- Sayha's Ring Lv. 3 -->
+			<item id="27710" min="1" max="1" chance="2.380952380952381" /> <!-- Maphr's Ring Lv. 3 -->
+			<item id="35570" min="1" max="1" chance="2.380952380952381" /> <!-- Tauti's Ring -->
+			<item id="36254" min="1" max="1" chance="2.380952380952381" /> <!-- Queen Ant's Soul Ring -->
+			<item id="36445" min="1" max="1" chance="2.380952380952381" /> <!-- Antharas Cutter - Standard -->
+			<item id="36447" min="1" max="1" chance="2.380952380952381" /> <!-- Antharas Fighter - Standard -->
+			<item id="36454" min="1" max="1" chance="2.380952380952381" /> <!-- Valakas Thrower - Standard -->
+			<item id="36457" min="1" max="1" chance="2.380952380952381" /> <!-- Valakas Retributer - Standard -->
+			<item id="36460" min="1" max="1" chance="2.380952380952381" /> <!-- Lindvior Slasher - Standard -->
+			<item id="36471" min="1" max="1" chance="2.380952380952381" /> <!-- Antharas Fighter - High-grade -->
+			<item id="36476" min="1" max="1" chance="2.380952380952381" /> <!-- Valakas Cutter - High-grade -->
+			<item id="36483" min="1" max="1" chance="2.380952380952381" /> <!-- Lindvior Thrower - High-grade -->
+			<item id="36485" min="1" max="1" chance="2.380952380952381" /> <!-- Lindvior Caster - High-grade -->
+			<item id="47216" min="1" max="1" chance="2.380952380952381" /> <!-- Ruler's Ring of Authority -->
+			<item id="47218" min="1" max="1" chance="2.380952380952381" /> <!-- Ring of Truth-seeker -->
+			<item id="80073" min="1" max="1" chance="2.380952380952381" /> <!-- Fafurion Fighter - Standard -->
+			<item id="80081" min="1" max="1" chance="2.380952380952381" /> <!-- Fafurion Retributer - High-grade -->
+			<item id="80083" min="1" max="1" chance="2.380952380952381" /> <!-- Fafurion Dual Swords - High-grade -->
+			<item id="80316" min="1" max="1" chance="2.380952380952381" /> <!-- Fafurion Dual Daggers - Standard -->
+			<item id="80317" min="1" max="1" chance="2.3809523809524222" /> <!-- Fafurion Dual Daggers - High-grade -->
+		</capsuled_items>
 	</item>
 	<item id="60018" name="Night Goblin's Jewel Box" type="EtcItem">
 		<!-- Double-click to obtain Freya's Glittering Scroll of Storm and Freya's Glittering Ice Rose. Additionally, you can get 1 useful item. -->
@@ -498,6 +688,67 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="2" />
+		<set name="extractableCountMax" val="2" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="60039" min="1" max="1" chance="100" /> <!-- Shiny Golden Kingdom's Key -->
+			<item id="35649" min="1" max="1" chance="1.8181818181818181" /> <!-- Sealed Talisman of Longing -->
+			<item id="37560" min="2" max="2" chance="1.8181818181818181" /> <!-- Emperor's Vitality Tonic -->
+			<item id="39573" min="1" max="1" chance="1.8181818181818181" /> <!-- Sealed Talisman of Insanity -->
+			<item id="47420" min="1" max="1" chance="1.8181818181818181" /> <!-- Energy of Longing -->
+			<item id="47428" min="2" max="2" chance="1.8181818181818181" /> <!-- Freya's Scroll of Storm -->
+			<item id="47431" min="1" max="1" chance="1.8181818181818181" /> <!-- Freya's Rune Pack (30-day) -->
+			<item id="47866" min="1" max="1" chance="1.8181818181818181" /> <!-- Star Sign -->
+			<item id="47918" min="2" max="2" chance="1.8181818181818181" /> <!-- Nevit's Gold Hourglass -->
+			<item id="48047" min="1" max="1" chance="1.8181818181818181" /> <!-- Ancient Book of Growth: Zodiac Agathion -->
+			<item id="48323" min="1" max="1" chance="1.8181818181818181" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+			<item id="48497" min="2" max="2" chance="1.8181818181818181" /> <!-- Glowing Dragon's Attribute Potion - XP -->
+			<item id="48830" min="2" max="2" chance="1.8181818181818181" /> <!-- Freya's Ice Rose -->
+			<item id="48831" min="1" max="1" chance="1.8181818181818181" /> <!-- Jewel Energy -->
+			<item id="48876" min="1" max="1" chance="1.8181818181818181" /> <!-- Forgotten Spellbook - Chapter 1 -->
+			<item id="60206" min="1" max="1" chance="1.8181818181818181" /> <!-- Gran Kain's Scroll: Enchant R-grade Weapon -->
+			<item id="60207" min="1" max="1" chance="1.8181818181818181" /> <!-- Gran Kain's Scroll: Enchant R-grade Armor -->
+			<item id="80000" min="1" max="1" chance="1.8181818181818181" /> <!-- Artifact Fragment -->
+			<item id="80449" min="1" max="1" chance="1.8181818181818181" /> <!-- Royal Black Save Ticket -->
+			<item id="80501" min="1" max="1" chance="1.8181818181818181" /> <!-- Royal Gold Save Ticket -->
+			<item id="80636" min="1" max="1" chance="1.8181818181818181" /> <!-- Artifact Crystal -->
+			<item id="80838" min="3" max="3" chance="1.8181818181818181" /> <!-- Blessed Scroll: Enchant Kaliel's Bracelet -->
+			<item id="80842" min="2" max="2" chance="1.8181818181818181" /> <!-- Honey Dark Beer -->
+			<item id="80932" min="1" max="1" chance="1.8181818181818181" /> <!-- Greater Zodiac Agathion's Book of Growth -->
+			<item id="80958" min="1" max="1" chance="1.8181818181818181" /> <!-- Sealed Heavenly Talisman -->
+			<item id="81361" min="1" max="1" chance="1.8181818181818181" /> <!-- Blessed Scroll: Enchant Brooch -->
+			<item id="36515" min="1" max="1" chance="1.8181818181818181" /> <!-- Elcyum -->
+			<item id="80130" min="1" max="1" chance="1.8181818181818181" /> <!-- Superior Augmenting Stone: Weapon -->
+			<item id="80901" min="1" max="1" chance="1.8181818181818181" /> <!-- Zariche's Blood -->
+			<item id="80902" min="1" max="1" chance="1.8181818181818181" /> <!-- Akamanah's Blood -->
+			<item id="81453" min="1" max="1" chance="1.8181818181818181" /> <!-- Enhanced Rune Stone -->
+			<item id="17623" min="1" max="1" chance="1.8181818181818181" /> <!-- Earth Wyrm's Heart Ring -->
+			<item id="19464" min="1" max="1" chance="1.8181818181818181" /> <!-- Blessed Valakas' Necklace -->
+			<item id="27678" min="1" max="1" chance="1.8181818181818181" /> <!-- Gran Kain's Necklace Lv. 1 -->
+			<item id="27684" min="1" max="1" chance="1.8181818181818181" /> <!-- Einhasad's Necklace Lv. 1 -->
+			<item id="27690" min="1" max="1" chance="1.8181818181818181" /> <!-- Pa'agrio's Earring Lv. 1 -->
+			<item id="27696" min="1" max="1" chance="1.8181818181818181" /> <!-- Eva's Earring Lv. 1 -->
+			<item id="27702" min="1" max="1" chance="1.8181818181818181" /> <!-- Sayha's Ring Lv. 1 -->
+			<item id="27708" min="1" max="1" chance="1.8181818181818181" /> <!-- Maphr's Ring Lv. 1 -->
+			<item id="35564" min="1" max="1" chance="1.8181818181818181" /> <!-- Ruler's Authority - Lv. 1 -->
+			<item id="35570" min="1" max="1" chance="1.8181818181818181" /> <!-- Tauti's Ring -->
+			<item id="36254" min="1" max="1" chance="1.8181818181818181" /> <!-- Queen Ant's Soul Ring -->
+			<item id="36445" min="1" max="1" chance="1.8181818181818181" /> <!-- Antharas Cutter - Standard -->
+			<item id="36451" min="1" max="1" chance="1.8181818181818181" /> <!-- Valakas Shaper - Standard -->
+			<item id="36453" min="1" max="1" chance="1.8181818181818181" /> <!-- Valakas Slasher - Standard -->
+			<item id="36464" min="1" max="1" chance="1.8181818181818181" /> <!-- Lindvior Dual Daggers - Standard -->
+			<item id="36467" min="1" max="1" chance="1.8181818181818181" /> <!-- Antharas Thrower - High-grade -->
+			<item id="36472" min="1" max="1" chance="1.8181818181818181" /> <!-- Antharas Avenger - High-grade -->
+			<item id="36476" min="1" max="1" chance="1.8181818181818181" /> <!-- Valakas Cutter - High-grade -->
+			<item id="36477" min="1" max="1" chance="1.8181818181818181" /> <!-- Valakas Slasher - High-grade -->
+			<item id="36487" min="1" max="1" chance="1.8181818181818181" /> <!-- Lindvior Guardian - High-grade -->
+			<item id="80072" min="1" max="1" chance="1.8181818181818181" /> <!-- Fafurion Avenger - Standard -->
+			<item id="80075" min="1" max="1" chance="1.8181818181818181" /> <!-- Fafurion Retributer - Standard -->
+			<item id="80076" min="1" max="1" chance="1.8181818181818181" /> <!-- Fafurion Dual Blunt Weapon - Standard -->
+			<item id="80081" min="1" max="1" chance="1.8181818181818181" /> <!-- Fafurion Retributer - High-grade -->
+			<item id="80082" min="1" max="1" chance="1.8181818181818983" /> <!-- Fafurion Dual Blunt Weapon - High-grade -->
+		</capsuled_items>
 	</item>
 	<item id="60043" name="Returning Hero's Welcome Gift" additionalName="THE HERO" type="EtcItem">
 		<!-- A special gift for returning adventurers who still remember the glory of the past. Double-click to obtain the following. -->
@@ -509,6 +760,23 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48849" min="1" max="1" chance="100" /> <!-- Chronicle Token - 30-day -->
+			<item id="81206" min="1" max="1" chance="100" /> <!-- Vitality Maintaining Rune - 7-day -->
+			<item id="47921" min="1" max="1" chance="100" /> <!-- Greater Red Cat's Eye Lv. 1 - 30-day -->
+			<item id="47922" min="1" max="1" chance="100" /> <!-- Greater Blue Cat's Eye Lv. 1 - 30-day -->
+			<item id="48644" min="1" max="1" chance="100" /> <!-- Greater Ruby Lv. 1 - 30-day -->
+			<item id="48645" min="1" max="1" chance="100" /> <!-- Greater Sapphire Lv. 1 - 30-day -->
+			<item id="48646" min="1" max="1" chance="100" /> <!-- Greater Opal Lv. 1 - 30-day -->
+			<item id="48647" min="1" max="1" chance="100" /> <!-- Greater Diamond Lv. 1 - 30-day -->
+			<item id="48648" min="1" max="1" chance="100" /> <!-- Greater Pearl Lv. 1 - 30-day -->
+			<item id="37667" min="1" max="1" chance="100" /> <!-- Blessed Antharas' Earring - 30-day -->
+			<item id="37668" min="1" max="1" chance="100" /> <!-- Blessed Valakas' Necklace - 30-day -->
+			<item id="37669" min="1" max="1" chance="100" /> <!-- Tauti's Ring - 30-day -->
+			<item id="37670" min="1" max="1" chance="100" /> <!-- Earth Wyrm's Heart Ring - 30-day -->
+			<item id="46710" min="1" max="1" chance="100" /> <!-- Lindvior's Earring - 30-day -->
+		</capsuled_items>
 	</item>
 	<item id="60044" name="THE HERO RETURNS Coin" type="EtcItem">
 		<!-- A coin that can be obtained for completing the 'THE HERO RETURNS' event quest. Can be exchanged for various items through the Game Assistant. -->
@@ -971,6 +1239,16 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48848" min="8" max="8" chance="20" /> <!-- Freya's Ice Rose - Event -->
+			<item id="48857" min="8" max="8" chance="20" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="81011" min="8" max="8" chance="20" /> <!-- Honey Dark Beer - Event -->
+			<item id="81012" min="4" max="4" chance="20" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81013" min="8" max="8" chance="20" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+		</capsuled_items>
 	</item>
 	<item id="60078" name="Water Dragon's Scroll Bundle" type="EtcItem">
 		<!-- A bundle of scrolls used by the warriors of Water Dragon's Legion that live in the Corroded Fields. Double-click to obtain Scroll of Storm with a certain chance. -->
@@ -982,6 +1260,10 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="81054" min="18" max="24" chance="80" /> <!-- Freya's Scroll of Storm - Event -->
+		</capsuled_items>
 	</item>
 	<item id="60079" name="17th Anniversary Treasure Chest" type="EtcItem">
 		<!-- Double-click to obtain a useful item. -->
@@ -1017,6 +1299,39 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="19448" min="1" max="1" chance="3.5714285714285716" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+			<item id="24344" min="1" max="1" chance="3.5714285714285716" /> <!-- Package: Lesser Giant's Stone: Enchant R-grade Weapon -->
+			<item id="24346" min="1" max="1" chance="3.5714285714285716" /> <!-- Package: Lesser Giant's Stone: Enchant R-grade Armor -->
+			<item id="24347" min="1" max="1" chance="3.5714285714285716" /> <!-- Package: Scroll: Enchant R-grade Weapon -->
+			<item id="24348" min="1" max="1" chance="3.5714285714285716" /> <!-- Package: Scroll: Enchant R-grade Armor -->
+			<item id="28595" min="1" max="1" chance="3.5714285714285716" /> <!-- Scroll: Enchant Ancient Cloak -->
+			<item id="28766" min="1" max="1" chance="3.5714285714285716" /> <!-- Stable Scroll: Enchant Legendary Cloak -->
+			<item id="29163" min="1" max="1" chance="3.5714285714285716" /> <!-- Stable Scroll: Enchant Cloak -->
+			<item id="29469" min="1" max="1" chance="3.5714285714285716" /> <!-- Enhanced Jewel Energy -->
+			<item id="29677" min="1" max="1" chance="3.5714285714285716" /> <!-- Freya's Glittering Ice Rose -->
+			<item id="29823" min="1" max="1" chance="3.5714285714285716" /> <!-- High-grade Stable Scroll: Enchant Cloak - Legendary -->
+			<item id="39720" min="3" max="3" chance="3.5714285714285716" /> <!-- Freya's Luck Potion -->
+			<item id="40232" min="1" max="1" chance="3.5714285714285716" /> <!-- Freya's Stone: Enchant R-grade Weapon -->
+			<item id="40233" min="1" max="1" chance="3.5714285714285716" /> <!-- Freya's Stone: Enchant R-grade Armor -->
+			<item id="48323" min="1" max="1" chance="3.5714285714285716" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+			<item id="48498" min="1" max="1" chance="3.5714285714285716" /> <!-- Blessed Scroll: Enchant Dragon Shirt -->
+			<item id="48831" min="1" max="1" chance="3.5714285714285716" /> <!-- Jewel Energy -->
+			<item id="60206" min="1" max="1" chance="3.5714285714285716" /> <!-- Gran Kain's Scroll: Enchant R-grade Weapon -->
+			<item id="60207" min="1" max="1" chance="3.5714285714285716" /> <!-- Gran Kain's Scroll: Enchant R-grade Armor -->
+			<item id="80449" min="1" max="1" chance="3.5714285714285716" /> <!-- Royal Black Save Ticket -->
+			<item id="80501" min="1" max="1" chance="3.5714285714285716" /> <!-- Royal Gold Save Ticket -->
+			<item id="80932" min="1" max="1" chance="3.5714285714285716" /> <!-- Greater Zodiac Agathion's Book of Growth -->
+			<item id="81361" min="3" max="3" chance="3.5714285714285716" /> <!-- Blessed Scroll: Enchant Brooch -->
+			<item id="81747" min="1" max="1" chance="3.5714285714285716" /> <!-- Royal Honey Dark Beer -->
+			<item id="81752" min="1" max="1" chance="3.5714285714285716" /> <!-- Gran Kain's Scroll: Enchant Superior Kaliel's Bracelet -->
+			<item id="81820" min="1" max="1" chance="3.5714285714285716" /> <!-- Gran Kain's Scroll: Enchant Circlet -->
+			<item id="81832" min="1" max="1" chance="3.5714285714285716" /> <!-- Gran Kain's Scroll: Enchant Dragon Rind Leather Shirt -->
+			<item id="81908" min="1" max="1" chance="3.571428571428598" /> <!-- Gran Kain's Scroll: Enchant La Vie En Rose's Brooch -->
+		</capsuled_items>
 	</item>
 	<item id="60083" name="Dwarf's Gold Chest" type="EtcItem">
 		<!-- Double-click to obtain Shiny Gold Bar Box and a useful item. -->
@@ -1026,6 +1341,41 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="2" />
+		<set name="extractableCountMax" val="2" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29529" min="1" max="1" chance="100" /> <!-- Shiny Gold Bar Box -->
+			<item id="29204" min="200" max="200" chance="3.4482758620689653" /> <!-- Shiny Gold Bar -->
+			<item id="29204" min="50" max="50" chance="3.4482758620689653" /> <!-- Shiny Gold Bar -->
+			<item id="29204" min="25" max="25" chance="3.4482758620689653" /> <!-- Shiny Gold Bar -->
+			<item id="29401" min="1" max="1" chance="3.4482758620689653" /> <!-- Ultimate Jewelry Box Lv. 3 -->
+			<item id="29469" min="1" max="1" chance="3.4482758620689653" /> <!-- Enhanced Jewel Energy -->
+			<item id="29907" min="1" max="1" chance="3.4482758620689653" /> <!-- Top-grade Dragon Weapon Pack -->
+			<item id="37560" min="10" max="10" chance="3.4482758620689653" /> <!-- Emperor's Vitality Tonic -->
+			<item id="47494" min="3" max="3" chance="3.4482758620689653" /> <!-- Selenite -->
+			<item id="47866" min="2" max="2" chance="3.4482758620689653" /> <!-- Star Sign -->
+			<item id="48497" min="10" max="10" chance="3.4482758620689653" /> <!-- Glowing Dragon's Attribute Potion - XP -->
+			<item id="48830" min="10" max="10" chance="3.4482758620689653" /> <!-- Freya's Ice Rose -->
+			<item id="48831" min="1" max="1" chance="3.4482758620689653" /> <!-- Jewel Energy -->
+			<item id="48876" min="1" max="1" chance="3.4482758620689653" /> <!-- Forgotten Spellbook - Chapter 1 -->
+			<item id="80636" min="1" max="1" chance="3.4482758620689653" /> <!-- Artifact Crystal -->
+			<item id="80663" min="1" max="1" chance="3.4482758620689653" /> <!-- High-grade Dragon Weapon Pack -->
+			<item id="80842" min="10" max="10" chance="3.4482758620689653" /> <!-- Honey Dark Beer -->
+			<item id="80958" min="1" max="1" chance="3.4482758620689653" /> <!-- Sealed Heavenly Talisman -->
+			<item id="80964" min="1" max="1" chance="3.4482758620689653" /> <!-- Energy of Protection -->
+			<item id="81770" min="1" max="1" chance="3.4482758620689653" /> <!-- Shining Energy of Protection -->
+			<item id="29539" min="1" max="1" chance="3.4482758620689653" /> <!-- Crystal of Dark -->
+			<item id="29759" min="2" max="2" chance="3.4482758620689653" /> <!-- Heir's Radiance Shard -->
+			<item id="36414" min="1" max="1" chance="3.4482758620689653" /> <!-- Dragon Claw -->
+			<item id="36515" min="1" max="1" chance="3.4482758620689653" /> <!-- Elcyum -->
+			<item id="48418" min="1" max="1" chance="3.4482758620689653" /> <!-- Authority Ornament -->
+			<item id="80839" min="1" max="1" chance="3.4482758620689653" /> <!-- Crystal of Dawn -->
+			<item id="80959" min="1" max="1" chance="3.4482758620689653" /> <!-- Epic Talisman -->
+			<item id="80333" min="1" max="1" chance="3.4482758620689653" /> <!-- Dragon's Necklace -->
+			<item id="80334" min="1" max="1" chance="3.4482758620689653" /> <!-- Dragon's Earring -->
+			<item id="80335" min="1" max="1" chance="3.4482758620689253" /> <!-- Dragon's Ring -->
+		</capsuled_items>
 	</item>
 	<item id="60084" name="Swift Attack Cookie Pack" type="EtcItem">
 		<!-- Double-click to obtain Swift Attack Cookie (50 pcs.). Note! Received cookies cannot be traded. -->
@@ -1035,6 +1385,10 @@
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="82172" min="50" max="50" chance="100" /> <!-- Swift Attack Cookie -->
+		</capsuled_items>
 	</item>
 	<item id="60085" name="Ancient War Relic" type="EtcItem">
 		<!-- Double-click to obtain a treasure chest. -->
@@ -1043,6 +1397,14 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="60087" min="1" max="1" chance="50.0" /> <!-- Dad's Treasure Chest -->
+			<item id="60088" min="1" max="1" chance="50.0" /> <!-- Aunt's Treasure Chest -->
+		</capsuled_items>
 	</item>
 	<item id="60086" name="Golden Labirinth Pack" type="EtcItem">
 		<!-- Double-click to obtain a random rare item. -->
@@ -1061,6 +1423,26 @@
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="29877" min="1" max="1" chance="6.666666666666667" /> <!-- Greater Jewelry Box Lv. 5 -->
+			<item id="39573" min="1" max="1" chance="6.666666666666667" /> <!-- Sealed Talisman of Insanity -->
+			<item id="80449" min="1" max="1" chance="6.666666666666667" /> <!-- Royal Black Save Ticket -->
+			<item id="80501" min="1" max="1" chance="6.666666666666667" /> <!-- Royal Gold Save Ticket -->
+			<item id="80931" min="1" max="1" chance="6.666666666666667" /> <!-- Greater Zodiac Agathion Cube -->
+			<item id="29547" min="1" max="1" chance="6.666666666666667" /> <!-- Superior La Vie En Rose's Brooch -->
+			<item id="37717" min="1" max="1" chance="6.666666666666667" /> <!-- Talisman of Seven Signs -->
+			<item id="48577" min="1" max="1" chance="6.666666666666667" /> <!-- Superior Seed Bracelet Lv. 4 -->
+			<item id="80837" min="1" max="1" chance="6.666666666666667" /> <!-- Superior Kaliel's Bracelet -->
+			<item id="17623" min="1" max="1" chance="6.666666666666667" /> <!-- Earth Wyrm's Heart Ring -->
+			<item id="19463" min="1" max="1" chance="6.666666666666667" /> <!-- Blessed Antharas' Earring -->
+			<item id="19464" min="1" max="1" chance="6.666666666666667" /> <!-- Blessed Valakas' Necklace -->
+			<item id="35564" min="1" max="1" chance="6.666666666666667" /> <!-- Ruler's Authority - Lv. 1 -->
+			<item id="35570" min="1" max="1" chance="6.666666666666667" /> <!-- Tauti's Ring -->
+			<item id="36946" min="1" max="1" chance="6.666666666666657" /> <!-- Lindvior's Earring -->
+		</capsuled_items>
 	</item>
 	<item id="60088" name="Red Labirinth Pack" type="EtcItem">
 		<!-- Double-click to obtain a random rare item. -->
@@ -1070,6 +1452,26 @@
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="28485" min="2" max="2" chance="6.666666666666667" /> <!-- Augmenting Stone: Brooch - Rare -->
+			<item id="28766" min="1" max="1" chance="6.666666666666667" /> <!-- Stable Scroll: Enchant Legendary Cloak -->
+			<item id="29823" min="1" max="1" chance="6.666666666666667" /> <!-- High-grade Stable Scroll: Enchant Cloak - Legendary -->
+			<item id="48323" min="1" max="1" chance="6.666666666666667" /> <!-- Divine Book of Growth: Zodiac Agathion -->
+			<item id="48831" min="3" max="3" chance="6.666666666666667" /> <!-- Jewel Energy -->
+			<item id="48876" min="3" max="3" chance="6.666666666666667" /> <!-- Forgotten Spellbook - Chapter 1 -->
+			<item id="81706" min="2" max="2" chance="6.666666666666667" /> <!-- Scroll: Enchant Superior Seed Bracelet -->
+			<item id="29165" min="2" max="2" chance="6.666666666666667" /> <!-- High-grade Augmenting Stone: Cloak - Ancient Kingdom -->
+			<item id="29167" min="2" max="2" chance="6.666666666666667" /> <!-- High-grade Augmenting Stone: Cloak - Aden -->
+			<item id="36515" min="1" max="1" chance="6.666666666666667" /> <!-- Elcyum -->
+			<item id="48215" min="2" max="2" chance="6.666666666666667" /> <!-- Augmenting Stone: Circlet -->
+			<item id="80130" min="2" max="2" chance="6.666666666666667" /> <!-- Superior Augmenting Stone: Weapon -->
+			<item id="81135" min="1" max="1" chance="6.666666666666667" /> <!-- Dark Augmenting Stone -->
+			<item id="81729" min="3" max="3" chance="6.666666666666667" /> <!-- Augmenting Stone: Accessory -->
+			<item id="81931" min="1" max="1" chance="6.666666666666657" /> <!-- Augmenting Stone: Dragon Leather Shirt -->
+		</capsuled_items>
 	</item>
 	<item id="60089" name="Blue Labirinth Pack" type="EtcItem">
 		<!-- Double-click to obtain a random item. -->
@@ -1088,6 +1490,44 @@
 		<set name="material" val="LEATHER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="28766" min="1" max="1" chance="3.0303030303030303" /> <!-- Stable Scroll: Enchant Legendary Cloak -->
+			<item id="29163" min="1" max="1" chance="3.0303030303030303" /> <!-- Stable Scroll: Enchant Cloak -->
+			<item id="29469" min="1" max="1" chance="3.0303030303030303" /> <!-- Enhanced Jewel Energy -->
+			<item id="29676" min="1" max="1" chance="3.0303030303030303" /> <!-- Glittering Freya's Scroll of Storm -->
+			<item id="29677" min="1" max="1" chance="3.0303030303030303" /> <!-- Freya's Glittering Ice Rose -->
+			<item id="29823" min="1" max="1" chance="3.0303030303030303" /> <!-- High-grade Stable Scroll: Enchant Cloak - Legendary -->
+			<item id="29877" min="1" max="1" chance="3.0303030303030303" /> <!-- Greater Jewelry Box Lv. 5 -->
+			<item id="29907" min="1" max="1" chance="3.0303030303030303" /> <!-- Top-grade Dragon Weapon Pack -->
+			<item id="37560" min="2" max="2" chance="3.0303030303030303" /> <!-- Emperor's Vitality Tonic -->
+			<item id="47494" min="3" max="3" chance="3.0303030303030303" /> <!-- Selenite -->
+			<item id="47866" min="1" max="1" chance="3.0303030303030303" /> <!-- Star Sign -->
+			<item id="48831" min="1" max="1" chance="3.0303030303030303" /> <!-- Jewel Energy -->
+			<item id="48860" min="1" max="1" chance="3.0303030303030303" /> <!-- Fallen Angel's Ring Pack -->
+			<item id="48876" min="1" max="1" chance="3.0303030303030303" /> <!-- Forgotten Spellbook - Chapter 1 -->
+			<item id="48908" min="1" max="1" chance="3.0303030303030303" /> <!-- Shillien's Soul Crystal Lv. 10 - Weapon -->
+			<item id="48910" min="1" max="1" chance="3.0303030303030303" /> <!-- Shillien's Soul Crystal Box -->
+			<item id="60206" min="1" max="1" chance="3.0303030303030303" /> <!-- Gran Kain's Scroll: Enchant R-grade Weapon -->
+			<item id="60207" min="1" max="1" chance="3.0303030303030303" /> <!-- Gran Kain's Scroll: Enchant R-grade Armor -->
+			<item id="80000" min="1" max="1" chance="3.0303030303030303" /> <!-- Artifact Fragment -->
+			<item id="80449" min="1" max="1" chance="3.0303030303030303" /> <!-- Royal Black Save Ticket -->
+			<item id="80501" min="1" max="1" chance="3.0303030303030303" /> <!-- Royal Gold Save Ticket -->
+			<item id="80663" min="1" max="1" chance="3.0303030303030303" /> <!-- High-grade Dragon Weapon Pack -->
+			<item id="80964" min="2" max="2" chance="3.0303030303030303" /> <!-- Energy of Protection -->
+			<item id="81134" min="1" max="1" chance="3.0303030303030303" /> <!-- Crystal of Dyes -->
+			<item id="81747" min="1" max="1" chance="3.0303030303030303" /> <!-- Royal Honey Dark Beer -->
+			<item id="81759" min="1" max="1" chance="3.0303030303030303" /> <!-- Glowing Royal Dragon's Attribute Potion - XP -->
+			<item id="29164" min="1" max="1" chance="3.0303030303030303" /> <!-- High-grade Legendary Scroll -->
+			<item id="36515" min="1" max="1" chance="3.0303030303030303" /> <!-- Elcyum -->
+			<item id="80957" min="1" max="1" chance="3.0303030303030303" /> <!-- Heavenly Talisman -->
+			<item id="80959" min="1" max="1" chance="3.0303030303030303" /> <!-- Epic Talisman -->
+			<item id="80333" min="1" max="1" chance="3.0303030303030303" /> <!-- Dragon's Necklace -->
+			<item id="80334" min="1" max="1" chance="3.0303030303030303" /> <!-- Dragon's Earring -->
+			<item id="80335" min="1" max="1" chance="3.030303030303017" /> <!-- Dragon's Ring -->
+		</capsuled_items>
 	</item>
 	<item id="60091" name="Abundance Mark" type="EtcItem">
 		<!-- A mark that symbolizes abundance. Required for creating High-grade Talisman of Abundance. -->

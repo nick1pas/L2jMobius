@@ -4,7 +4,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="436754" hpRegen="11.4" mp="24308" mpRegen="30" />
+			<vitals hp="109188.4" hpRegen="11.4" mp="24308" mpRegen="30" />
 			<attack physical="138130.206161137" magical="13863.0410742496" random="10" critical="4" accuracy="5" attackSpeed="633" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5898" magical="2388" />
 			<speed>
@@ -23,7 +23,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="8" /> <!-- HP Increase (1/ 4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -90,7 +90,7 @@
 		<sex>MALE</sex>
 		<acquire exp="94652" sp="189" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="436754" hpRegen="11.4" mp="24308" mpRegen="30" />
+			<vitals hp="1747016" hpRegen="11.4" mp="24308" mpRegen="30" />
 			<attack physical="138130.206161137" magical="13863.0410742496" random="10" critical="4" accuracy="5" attackSpeed="633" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5898" magical="2388" />
 			<speed>
@@ -113,7 +113,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="12" /> <!-- HP Increase (4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -125,22 +125,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="2.5">
-					<item id="39738" min="1" max="1" chance="100" /> <!-- Rune Stone -->
-				</group>
-				<group chance="100">
-					<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
-					<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
-					<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
-					<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
-				</group>
-				<group chance="1">
-					<item id="46587" min="1" max="1" chance="100" /> <!-- Mystic Armor Piece -->
-				</group>
+				<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
+				<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
+				<item id="39738" min="1" max="1" chance="2.5" /> <!-- Rune Stone -->
+				<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
+				<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
+				<item id="46587" min="1" max="1" chance="1" /> <!-- Mystic Armor Piece -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -149,7 +141,7 @@
 		<sex>MALE</sex>
 		<acquire exp="311795" sp="624" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="483938" hpRegen="11.4" mp="23928" mpRegen="30" />
+			<vitals hp="967875.8" hpRegen="11.4" mp="23928" mpRegen="30" />
 			<attack physical="590920" magical="60842" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2521" magical="1021" />
 			<speed>
@@ -172,7 +164,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -185,22 +177,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="2.5">
-					<item id="39738" min="1" max="1" chance="100" /> <!-- Rune Stone -->
-				</group>
-				<group chance="100">
-					<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
-					<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
-					<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
-					<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
-				</group>
-				<group chance="1">
-					<item id="46587" min="1" max="1" chance="100" /> <!-- Mystic Armor Piece -->
-				</group>
+				<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
+				<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
+				<item id="39738" min="1" max="1" chance="2.5" /> <!-- Rune Stone -->
+				<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
+				<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
+				<item id="46587" min="1" max="1" chance="1" /> <!-- Mystic Armor Piece -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -245,22 +229,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="2.5">
-					<item id="39738" min="1" max="1" chance="100" /> <!-- Rune Stone -->
-				</group>
-				<group chance="100">
-					<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
-					<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
-					<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
-					<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
-				</group>
-				<group chance="1">
-					<item id="46587" min="1" max="1" chance="100" /> <!-- Mystic Armor Piece -->
-				</group>
+				<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
+				<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
+				<item id="39738" min="1" max="1" chance="2.5" /> <!-- Rune Stone -->
+				<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
+				<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
+				<item id="46587" min="1" max="1" chance="1" /> <!-- Mystic Armor Piece -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -305,22 +281,14 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="100">
-					<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
-					<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
-				</group>
-				<group chance="2.5">
-					<item id="39738" min="1" max="1" chance="100" /> <!-- Rune Stone -->
-				</group>
-				<group chance="100">
-					<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
-					<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
-					<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
-					<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
-				</group>
-				<group chance="1">
-					<item id="46587" min="1" max="1" chance="100" /> <!-- Mystic Armor Piece -->
-				</group>
+				<item id="17526" min="1" max="2" chance="20" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="2" max="3" chance="80" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="30297" min="1" max="2" chance="85" /> <!-- Superior Giant's Codex -->
+				<item id="30298" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery -->
+				<item id="39738" min="1" max="1" chance="2.5" /> <!-- Rune Stone -->
+				<item id="46150" min="1" max="1" chance="10" /> <!-- Superior Giant's Codex - Chapter 1 -->
+				<item id="46151" min="1" max="1" chance="2.5" /> <!-- Superior Giant's Codex - Mastery Chapter 1 -->
+				<item id="46587" min="1" max="1" chance="1" /> <!-- Mystic Armor Piece -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -442,7 +410,7 @@
 		<sex>MALE</sex>
 		<acquire exp="49962" sp="100" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="215084" hpRegen="11.4" mp="23928" mpRegen="30" />
+			<vitals hp="1290504" hpRegen="11.4" mp="23928" mpRegen="30" />
 			<attack physical="29545.5" magical="6084" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2521" magical="1021" />
 			<speed>
@@ -465,7 +433,7 @@
 			<skill id="4416" level="12" /> <!-- Bugs -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5462" level="1" /> <!-- Fire Attribute -->
-			<skill id="4408" level="14" /> <!-- HP Increase (6x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -602,7 +570,7 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="436754" hpRegen="11.4" mp="24308" mpRegen="30" />
+			<vitals hp="109188.4" hpRegen="11.4" mp="24308" mpRegen="30" />
 			<attack physical="69065.10308" magical="13863.0410742496" random="20" critical="1" accuracy="9" attackSpeed="633" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="5898" magical="2388" />
 			<speed>
@@ -621,7 +589,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="8" /> <!-- HP Increase (1/ 4x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -819,7 +787,7 @@
 		<sex>MALE</sex>
 		<acquire exp="19103" sp="38" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="268854" hpRegen="11.4" mp="23928" mpRegen="30" />
+			<vitals hp="2150832" hpRegen="11.4" mp="23928" mpRegen="30" />
 			<attack physical="590920" magical="60842" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2521" magical="1021" />
 			<speed>
@@ -838,7 +806,7 @@
 			<skill id="4416" level="7" /> <!-- Spirits -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1182,7 +1150,7 @@
 		<sex>MALE</sex>
 		<acquire exp="152826" sp="306" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="629119" hpRegen="11.4" mp="23928" mpRegen="30" />
+			<vitals hp="5032952" hpRegen="11.4" mp="23928" mpRegen="30" />
 			<attack physical="945472" magical="97347" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5042" magical="2042" />
 			<speed>
@@ -1201,7 +1169,7 @@
 			<skill id="4416" level="7" /> <!-- Spirits -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="16" /> <!-- HP Increase (8x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -1268,15 +1236,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4269" max="9953" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.1309">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4269" max="9953" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.713" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.139" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.139" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.139" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1328,15 +1292,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4269" max="9953" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.1309">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4269" max="9953" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.713" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.139" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.139" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.139" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1388,15 +1348,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4269" max="9953" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.1309">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4269" max="9953" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.713" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.139" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.139" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.139" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1448,15 +1404,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4343" max="10150" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2135">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4343" max="10150" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.727" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.162" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.162" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.162" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1508,15 +1460,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4343" max="10150" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2135">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4343" max="10150" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.727" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.162" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.162" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.162" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1568,15 +1516,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4343" max="10150" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2135">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4343" max="10150" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.727" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.162" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.162" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.162" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1626,15 +1570,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1687,15 +1625,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1744,12 +1676,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1799,12 +1727,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1849,12 +1773,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1899,12 +1819,8 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1951,15 +1867,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2005,15 +1915,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2059,15 +1963,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2117,30 +2015,14 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2194,30 +2076,14 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2263,30 +2129,14 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2333,30 +2183,14 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2403,15 +2237,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2464,15 +2292,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.0144">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.014" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2519,15 +2341,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2576,15 +2392,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2636,15 +2446,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4269" max="9953" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.1309">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4269" max="9953" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.713" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.139" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.139" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.139" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2696,15 +2502,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4343" max="10150" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2135">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4343" max="10150" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.727" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.162" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.162" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.162" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2751,15 +2553,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2806,15 +2602,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2865,15 +2655,9 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="347" max="809" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.1944">
-					<item id="47249" min="1" max="1" chance="100" /> <!-- Giants' Stone -->
-				</group>
-				<group chance="0.012">
-					<item id="48065" min="1" max="1" chance="100" /> <!-- Zodiac Cube Fragment -->
-				</group>
+				<item id="57" min="347" max="809" chance="70" /> <!-- Adena -->
+				<item id="47249" min="1" max="1" chance="0.194" /> <!-- Giants' Stone -->
+				<item id="48065" min="1" max="1" chance="0.012" /> <!-- Zodiac Cube Fragment -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2924,9 +2708,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="10">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2976,9 +2758,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="10">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3029,9 +2809,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="10">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3121,8 +2899,9 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<mpReward value="74" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="225" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13568.0020168508" hpRegen="8.5" mp="1952.4" mpRegen="3" />
+			<vitals hp="24015.61" hpRegen="8.5" mp="1952.4" mpRegen="3" />
 			<attack physical="3992.46856160874" magical="715.083260014663" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="422.801358886775" magical="232.278309819016" />
 			<speed>
@@ -3141,7 +2920,7 @@
 			<skill id="4416" level="13" /> <!-- Fairies -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="7" /> <!-- HP Very High -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3173,8 +2952,9 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<mpReward value="111" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="951" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13886.8196074377" hpRegen="8.5" mp="2023.8" mpRegen="3" />
+			<vitals hp="41660.12" hpRegen="8.5" mp="2023.8" mpRegen="3" />
 			<attack physical="4393.39231302655" magical="784.547871934874" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="439.882533785801" magical="244.037399253603" />
 			<speed>
@@ -3193,7 +2973,7 @@
 			<skill id="4416" level="13" /> <!-- Fairies -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -3225,8 +3005,9 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<mpReward value="74" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="225" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13568.0020168508" hpRegen="8.5" mp="1952.4" mpRegen="3" />
+			<vitals hp="24015.61" hpRegen="8.5" mp="1952.4" mpRegen="3" />
 			<attack physical="3992.46856160874" magical="715.083260014663" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="422.801358886775" magical="232.278309819016" />
 			<speed>
@@ -3245,7 +3026,7 @@
 			<skill id="4416" level="13" /> <!-- Fairies -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="7" /> <!-- HP Very High -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3277,8 +3058,9 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<mpReward value="110" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="951" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13886.8196074377" hpRegen="8.5" mp="2023.8" mpRegen="3" />
+			<vitals hp="41660.12" hpRegen="8.5" mp="2023.8" mpRegen="3" />
 			<attack physical="4393.39231302655" magical="784.547871934874" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="439.882533785801" magical="244.037399253603" />
 			<speed>
@@ -3297,7 +3079,7 @@
 			<skill id="4416" level="13" /> <!-- Fairies -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -3315,8 +3097,9 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<mpReward value="74" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="225" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13568.0020168508" hpRegen="8.5" mp="1952.4" mpRegen="3" />
+			<vitals hp="24015.61" hpRegen="8.5" mp="1952.4" mpRegen="3" />
 			<attack physical="3992.46856160874" magical="715.083260014663" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="422.801358886775" magical="232.278309819016" />
 			<speed>
@@ -3335,7 +3118,7 @@
 			<skill id="4416" level="13" /> <!-- Fairies -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="7" /> <!-- HP Very High -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3367,8 +3150,9 @@
 		<race>FAIRY</race>
 		<sex>MALE</sex>
 		<mpReward value="110" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="951" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13886.8196074377" hpRegen="8.5" mp="2023.8" mpRegen="3" />
+			<vitals hp="41660.12" hpRegen="8.5" mp="2023.8" mpRegen="3" />
 			<attack physical="4393.39231302655" magical="784.547871934874" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="439.882533785801" magical="244.037399253603" />
 			<speed>
@@ -3387,7 +3171,7 @@
 			<skill id="4416" level="13" /> <!-- Fairies -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -3405,8 +3189,9 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="74" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="225" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13568.0020168508" hpRegen="8.5" mp="2928.6" mpRegen="3" />
+			<vitals hp="24015.61" hpRegen="8.5" mp="2928.6" mpRegen="3" />
 			<attack physical="3992.46856160874" magical="215.12881231327" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.960951220743" magical="278.733971782819" />
 			<speed>
@@ -3425,7 +3210,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="7" /> <!-- HP Very High -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3460,8 +3245,9 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="106" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="951" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13886.8196074377" hpRegen="8.5" mp="3035.7" mpRegen="3" />
+			<vitals hp="41660.12" hpRegen="8.5" mp="3035.7" mpRegen="3" />
 			<attack physical="4393.39231302655" magical="251.933019343748" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="307.917773650061" magical="292.844879104324" />
 			<speed>
@@ -3480,7 +3266,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -3515,8 +3301,9 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="74" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="225" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13568.0020168508" hpRegen="8.5" mp="2928.6" mpRegen="3" />
+			<vitals hp="24015.61" hpRegen="8.5" mp="2928.6" mpRegen="3" />
 			<attack physical="3992.46856160874" magical="215.12881231327" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.960951220743" magical="278.733971782819" />
 			<speed>
@@ -3535,7 +3322,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="7" /> <!-- HP Very High -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3556,8 +3343,9 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="106" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="951" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13886.8196074377" hpRegen="8.5" mp="3035.7" mpRegen="3" />
+			<vitals hp="41660.12" hpRegen="8.5" mp="3035.7" mpRegen="3" />
 			<attack physical="4393.39231302655" magical="251.933019343748" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="307.917773650061" magical="292.844879104324" />
 			<speed>
@@ -3576,7 +3364,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -3611,8 +3399,9 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="74" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="225" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13568.0020168508" hpRegen="8.5" mp="2928.6" mpRegen="3" />
+			<vitals hp="24015.61" hpRegen="8.5" mp="2928.6" mpRegen="3" />
 			<attack physical="3992.46856160874" magical="215.12881231327" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="295.960951220743" magical="278.733971782819" />
 			<speed>
@@ -3631,7 +3420,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="7" /> <!-- HP Very High -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average Damage Dealer -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
@@ -3666,8 +3455,9 @@
 		<race>HUMANOID</race>
 		<sex>FEMALE</sex>
 		<mpReward value="110" type="DIFF" ticks="10" affects="SOLO" />
+		<acquire exp="951" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="13886.8196074377" hpRegen="8.5" mp="3035.7" mpRegen="3" />
+			<vitals hp="41660.12" hpRegen="8.5" mp="3035.7" mpRegen="3" />
 			<attack physical="4393.39231302655" magical="251.933019343748" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="307.917773650061" magical="292.844879104324" />
 			<speed>
@@ -3686,7 +3476,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="2" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5463" level="1" /> <!-- Water Attribute -->
-			<skill id="4408" level="11" /> <!-- HP Increase (3x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="12" /> <!-- Slightly Strong P. Atk. -->
 			<skill id="4411" level="12" /> <!-- Slightly Strong M. Atk. -->
@@ -3776,15 +3566,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4441" max="10346" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2983">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4441" max="10346" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.742" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.186" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.186" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.186" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3847,15 +3633,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4441" max="10346" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2983">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4441" max="10346" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.742" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.186" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.186" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.186" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3919,15 +3701,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4441" max="10346" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.2983">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4441" max="10346" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.742" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.186" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.186" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.186" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -3991,15 +3769,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4065,15 +3839,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4139,15 +3909,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4210,15 +3976,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4284,15 +4046,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4358,15 +4116,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="4527" max="10556" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="4.3841">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
+				<item id="57" min="4527" max="10556" chance="70" /> <!-- Adena -->
+				<item id="81216" min="1" max="1" chance="0.756" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.209" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.209" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.209" /> <!-- Angel's Feather -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4430,9 +4184,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="50">
-					<item id="47126" min="1" max="1" chance="100" /> <!-- Key Card to the Controller Room -->
-				</group>
+				<item id="47126" min="1" max="1" chance="50" /> <!-- Key Card to the Controller Room -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4533,24 +4285,12 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4597,24 +4337,12 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4660,24 +4388,12 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4724,24 +4440,12 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="353" max="825" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-				<group chance="100">
-					<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="100">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="57" min="353" max="825" chance="70" /> <!-- Adena -->
+				<item id="8602" min="1" max="1" chance="100" /> <!-- Superior Herb of Life -->
+				<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4831,21 +4535,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="5.5556">
-					<item id="47202" min="1" max="1" chance="100" /> <!-- Material for Giants Deterioration Protection Potion -->
-				</group>
-				<group chance="5.5556">
-					<item id="47203" min="1" max="1" chance="100" /> <!-- Material for Giants Lightning Protection Potion -->
-				</group>
-				<group chance="5.5556">
-					<item id="47204" min="1" max="1" chance="100" /> <!-- Particle Dissolver Component -->
-				</group>
-				<group chance="0.0045">
-					<item id="47219" min="1" max="1" chance="100" /> <!-- Source of the Emperor -->
-				</group>
-				<group chance="10">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="47202" min="1" max="1" chance="5.556" /> <!-- Material for Giants Deterioration Protection Potion -->
+				<item id="47203" min="1" max="1" chance="5.556" /> <!-- Material for Giants Lightning Protection Potion -->
+				<item id="47204" min="1" max="1" chance="5.556" /> <!-- Particle Dissolver Component -->
+				<item id="47219" min="1" max="1" chance="0.005" /> <!-- Source of the Emperor -->
+				<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -4892,21 +4586,11 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="5.5556">
-					<item id="47202" min="1" max="1" chance="100" /> <!-- Material for Giants Deterioration Protection Potion -->
-				</group>
-				<group chance="5.5556">
-					<item id="47203" min="1" max="1" chance="100" /> <!-- Material for Giants Lightning Protection Potion -->
-				</group>
-				<group chance="5.5556">
-					<item id="47204" min="1" max="1" chance="100" /> <!-- Particle Dissolver Component -->
-				</group>
-				<group chance="0.0045">
-					<item id="47219" min="1" max="1" chance="100" /> <!-- Source of the Emperor -->
-				</group>
-				<group chance="10">
-					<item id="8605" min="1" max="1" chance="100" /> <!-- Superior Herb of Mana -->
-				</group>
+				<item id="47202" min="1" max="1" chance="5.556" /> <!-- Material for Giants Deterioration Protection Potion -->
+				<item id="47203" min="1" max="1" chance="5.556" /> <!-- Material for Giants Lightning Protection Potion -->
+				<item id="47204" min="1" max="1" chance="5.556" /> <!-- Particle Dissolver Component -->
+				<item id="47219" min="1" max="1" chance="0.005" /> <!-- Source of the Emperor -->
+				<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
 			</drop>
 		</dropLists>
 	</npc>

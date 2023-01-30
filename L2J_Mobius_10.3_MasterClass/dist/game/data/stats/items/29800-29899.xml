@@ -302,7 +302,7 @@
 		<set name="immediate_effect" val="true" />
 		<set name="commissionItemType" val="SCROLL_ENCHANT_ARMOR" />
 		<skills>
-			<skill id="28068" level="1" /> <!-- Scroll: Ancient Cloak - Legendary -->
+			<skill id="28068" level="2" /> <!-- Stable Scroll: Enchant Legendary Cloak -->
 		</skills>
 	</item>
 	<item id="29824" name="Aden's Anniversary Treasure Chest" additionalName="Event" type="EtcItem">
@@ -847,24 +847,49 @@
 	<item id="29877" name="Greater Jewelry Box Lv. 5" type="EtcItem">
 		<!-- Double-click to obtain a Lv. 5 greater jewel. -->
 		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
-		<set name="default_action" val="PEEL" />
-		<set name="immediate_effect" val="true" />
-		<set name="material" val="LEATHER" />
-		<set name="is_sellable" val="false" />
-	</item>
-	<item id="29878" name="Greater Jewelry Box Lv. 1" type="EtcItem">
-		<!-- Double-click to obtain a Lv. 1 greater jewel. -->
-		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
-		<set name="default_action" val="PEEL" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="LEATHER" />
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
-		<set name="is_sellable" val="true" />
-		<set name="is_stackable" val="false" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
+		<set name="is_freightable" val="false" />
+		<set name="handler" val="ExtractableItems" />
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
+		<capsuled_items>
+			<item id="29458" min="1" max="1" chance="6.25" /> <!-- Greater Cat's Eye Lv. 5 -->
+			<item id="29462" min="1" max="1" chance="6.25" /> <!-- Greater Amethyst Lv. 5 -->
+			<item id="48770" min="1" max="1" chance="6.25" /> <!-- Greater Topaz Lv. 5 -->
+			<item id="48774" min="1" max="1" chance="6.25" /> <!-- Greater Ruby Lv. 5 -->
+			<item id="48778" min="1" max="1" chance="6.25" /> <!-- Greater Sapphire Lv. 5 -->
+			<item id="48782" min="1" max="1" chance="6.25" /> <!-- Greater Obsidian Lv. 5 -->
+			<item id="48786" min="1" max="1" chance="6.25" /> <!-- Greater Opal Lv. 5 -->
+			<item id="48790" min="1" max="1" chance="6.25" /> <!-- Greater Emerald Lv. 5 -->
+			<item id="48794" min="1" max="1" chance="6.25" /> <!-- Greater Aquamarine Lv. 5 -->
+			<item id="48798" min="1" max="1" chance="6.25" /> <!-- Greater Diamond Lv. 5 -->
+			<item id="48802" min="1" max="1" chance="6.25" /> <!-- Greater Pearl Lv. 5 -->
+			<item id="48806" min="1" max="1" chance="6.25" /> <!-- Greater Vital Stone Lv. 5 -->
+			<item id="48810" min="1" max="1" chance="6.25" /> <!-- Greater Garnet Lv. 5 -->
+			<item id="48814" min="1" max="1" chance="6.25" /> <!-- Greater Tanzanite Lv. 5 -->
+			<item id="48818" min="1" max="1" chance="6.25" /> <!-- Greater Red Cat's Eye Lv. 5 -->
+			<item id="48822" min="1" max="1" chance="6.25" /> <!-- Greater Blue Cat's Eye Lv. 5 -->
+		</capsuled_items>
+	</item>
+	<item id="29878" name="Greater Jewelry Box Lv. 1" type="EtcItem">
+		<!-- Double-click to obtain a Lv. 1 greater jewel. -->
+		<set name="icon" val="icon.etc_bm_jewelbox_shhadai" />
+		<set name="default_action" val="CAPSULE" />
+		<set name="immediate_effect" val="true" />
+		<set name="material" val="LEATHER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
 		<capsuled_items>
 			<item id="28376" min="1" max="1" chance="6.25" /> <!-- Greater Cat's Eye Lv. 1 -->
 			<item id="28377" min="1" max="1" chance="6.25" /> <!-- Greater Amethyst Lv. 1 -->

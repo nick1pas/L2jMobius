@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="24600" level="114" type="Monster" name="Water Dragon's Elite Wyrm">
+	<npc id="24600" level="115" type="Monster" name="Water Dragon's Elite Wyrm">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="528939" sp="476" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="305156" hpRegen="12.8" mp="2943" mpRegen="30" />
-			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="6109" magical="3905" />
+			<vitals hp="496457" hpRegen="12.8" mp="2983" mpRegen="30" />
+			<attack physical="1066143" magical="97169" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="334773" magical="165198" />
 			<speed>
 				<walk ground="80" />
 				<run ground="210" />
@@ -44,21 +44,6 @@
 			<skill id="4415" level="3" /> <!-- One-handed Sword -->
 			<skill id="16511" level="6" /> <!-- Solo Fighter Monster -->
 		</skillList>
-		<dropLists>
-			<drop>
-				<group chance="100">
-					<item id="39572" min="1" max="1" chance="0.0035" /> <!-- Talisman of Insanity -->
-					<item id="81053" min="1" max="1" chance="0.65" /> <!-- Vitality -->
-					<item id="80636" min="1" max="1" chance="0.085" /> <!-- Artifact Crystal -->
-					<item id="81698" min="1" max="1" chance="0.065" /> <!-- Black Save Ticket -->
-					<item id="81697" min="1" max="1" chance="0.015" /> <!-- Gold Save Ticket -->
-					<item id="48876" min="1" max="1" chance="0.084" /> <!-- Forgotten Spellbook - Chapter 1 -->
-					<item id="1785" min="1" max="1" chance="47" /> <!-- Soulstone -->
-					<item id="3031" min="1" max="1" chance="47" /> <!-- Spirit Ore -->
-					<item id="17371" min="1" max="1" chance="5.0975" /> <!-- R-grade Crystal -->
-				</group>
-			</drop>
-		</dropLists>
 	</npc>
 	<npc id="24601" level="107" type="Monster" name="Water Dragon's Shaman">
 		<race>DRAGON</race>
@@ -138,15 +123,15 @@
 			<skill id="16512" level="6" /> <!-- Solo Mage Monster -->
 		</skillList>
 	</npc>
-	<npc id="24603" level="107" type="Monster" name="Water Dragon's Pikeman">
+	<npc id="24603" level="110" type="Monster" name="Water Dragon's Pikeman">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="345046" sp="311" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="176235" hpRegen="12.1" mp="2663" mpRegen="30" />
-			<attack physical="104141" magical="9492" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="5554" magical="3765" />
+			<vitals hp="314020" hpRegen="12.1" mp="2781" mpRegen="30" />
+			<attack physical="147799" magical="13056" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="88256" magical="33026" />
 			<speed>
 				<walk ground="65" />
 				<run ground="180" />
@@ -178,15 +163,15 @@
 			<skill id="16511" level="6" /> <!-- Solo Fighter Monster -->
 		</skillList>
 	</npc>
-	<npc id="24604" level="107" type="Monster" name="Water Dragon's Swordsman">
+	<npc id="24604" level="110" type="Monster" name="Water Dragon's Swordsman">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="345046" sp="311" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="176235" hpRegen="12.1" mp="2663" mpRegen="30" />
-			<attack physical="104141" magical="9492" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="5554" magical="3765" />
+			<vitals hp="314020" hpRegen="12.1" mp="2781" mpRegen="30" />
+			<attack physical="147799" magical="13056" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="88256" magical="33026" />
 			<speed>
 				<walk ground="65" />
 				<run ground="180" />
@@ -218,15 +203,15 @@
 			<skill id="16511" level="6" /> <!-- Solo Fighter Monster -->
 		</skillList>
 	</npc>
-	<npc id="24605" level="107" type="Monster" name="Weakened Krotania">
+	<npc id="24605" level="110" type="Monster" name="Weakened Krotania">
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<acquire exp="345046" sp="311" />
 		<mpReward value="3" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="176235" hpRegen="12.1" mp="2663" mpRegen="30" />
-			<attack physical="104141" magical="9492" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="5554" magical="3765" />
+			<vitals hp="314020" hpRegen="12.1" mp="2781" mpRegen="30" />
+			<attack physical="147799" magical="13056" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="88256" magical="33026" />
 			<speed>
 				<walk ground="50" />
 				<run ground="120" />
@@ -274,7 +259,7 @@
 		<sex>MALE</sex>
 		<acquire exp="422291" sp="380" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="556031.2138728324" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="556031.2138728324" hpRegen="9.5" mp="3024" mpRegen="3.3" />
 			<attack physical="521192.934242167" magical="1212.14097575999" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4447.31707317073" magical="1705.54616437254" />
 			<attribute>
@@ -313,24 +298,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="4056" max="9473" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="0.6782" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="1.0842" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="1.0842" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="1.0842" /> <!-- Angel's Feather -->
 				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.035" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="0.678" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.084" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.084" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.084" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.8163" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.816" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -351,7 +327,7 @@
 		<sex>MALE</sex>
 		<acquire exp="422291" sp="380" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="556031.2138728324" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="556031.2138728324" hpRegen="9.5" mp="3024" mpRegen="3.3" />
 			<attack physical="521192.934242167" magical="1212.14097575999" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4447.31707317073" magical="1705.54616437254" />
 			<attribute>
@@ -390,24 +366,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="4056" max="9473" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="0.6782" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="1.0842" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="1.0842" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="1.0842" /> <!-- Angel's Feather -->
 				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.035" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="0.678" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.084" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.084" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.084" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.8163" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.816" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -416,7 +383,7 @@
 		<sex>FEMALE</sex>
 		<acquire exp="422291" sp="380" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="556031.2138728324" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="556031.2138728324" hpRegen="9.5" mp="3024" mpRegen="3.3" />
 			<attack physical="521192.934242167" magical="1212.14097575999" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4447.31707317073" magical="1705.54616437254" />
 			<attribute>
@@ -451,24 +418,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="4056" max="9473" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="0.6782" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="1.0842" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="1.0842" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="1.0842" /> <!-- Angel's Feather -->
 				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.035" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="0.678" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.084" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.084" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.084" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.8163" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.816" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -477,7 +435,7 @@
 		<sex>FEMALE</sex>
 		<acquire exp="422291" sp="380" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="556031.2138728324" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="556031.2138728324" hpRegen="9.5" mp="3024" mpRegen="3.3" />
 			<attack physical="521192.934242167" magical="1212.14097575999" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4447.31707317073" magical="1705.54616437254" />
 			<attribute>
@@ -511,25 +469,16 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<item id="57" min="4056" max="9473" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="0.6782" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="1.0842" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="1.0842" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="1.0842" /> <!-- Angel's Feather -->
+				<item id="57" min="4133" max="9651" chance="70" /> <!-- Adena -->
 				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.035" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="0.691" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.105" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.105" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.105" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.8163" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.869" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -555,7 +504,7 @@
 		<sex>MALE</sex>
 		<acquire exp="422291" sp="380" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="556031.2138728324" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="556031.2138728324" hpRegen="9.5" mp="3024" mpRegen="3.3" />
 			<attack physical="521192.934242167" magical="1212.14097575999" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4447.31707317073" magical="1705.54616437254" />
 			<attribute>
@@ -601,25 +550,16 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="57" min="4056" max="9473" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="0.6782" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="1.0842" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="1.0842" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="1.0842" /> <!-- Angel's Feather -->
+				<item id="57" min="4133" max="9651" chance="70" /> <!-- Adena -->
 				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.035" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="0.691" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.105" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.105" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.105" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.8163" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.869" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -641,7 +581,7 @@
 		<sex>MALE</sex>
 		<acquire exp="422291" sp="380" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="556031.2138728324" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="556031.2138728324" hpRegen="9.5" mp="3024" mpRegen="3.3" />
 			<attack physical="521192.934242167" magical="1212.14097575999" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="4447.31707317073" magical="1705.54616437254" />
 			<attribute>
@@ -683,25 +623,16 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<item id="57" min="4056" max="9473" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="0.6782" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="1.0842" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="1.0842" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="1.0842" /> <!-- Angel's Feather -->
+				<item id="57" min="4133" max="9651" chance="70" /> <!-- Adena -->
 				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.035" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="0.691" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="1.105" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="1.105" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="1.105" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="2.8163" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="2.869" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -711,7 +642,7 @@
 		<equipment rhand="13843" /> <!-- Dragon Peltast's Weapon -->
 		<acquire exp="1077833" sp="970" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="2177181" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -738,36 +669,13 @@
 			<skill id="14818" level="1" /> <!-- Instant Kill Resistance -->
 			<skill id="16547" level="10" /> <!-- Danger Zone Resistance -->
 		</skillList>
-		<dropLists>
-			<drop>
-				<item id="57" min="31494" max="73657" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="3" chance="1.6835" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="3" chance="1.6835" /> <!-- Dragon Scale -->
-				<item id="81219" min="2" max="6" chance="1.6835" /> <!-- Angel's Feather -->
-				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
-				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
-			</drop>
-			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="24615" level="124" type="Monster" name="Dragon Officer" title="Earth Dragon's Guardian">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="1077833" sp="970" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="2177181" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -795,36 +703,13 @@
 			<skill id="16547" level="10" /> <!-- Danger Zone Resistance -->
 			<skill id="5599" level="12" /> <!-- Confusion Resistance -->
 		</skillList>
-		<dropLists>
-			<drop>
-				<item id="57" min="31494" max="73657" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="3" chance="1.6835" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="3" chance="1.6835" /> <!-- Dragon Scale -->
-				<item id="81219" min="2" max="6" chance="1.6835" /> <!-- Angel's Feather -->
-				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
-				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
-			</drop>
-			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="24616" level="124" type="Monster" name="Dragon Elite Guard">
 		<race>DRAGON</race>
 		<sex>MALE</sex>
 		<acquire exp="1077833" sp="970" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="2177181" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -851,29 +736,6 @@
 			<skill id="14818" level="1" /> <!-- Instant Kill Resistance -->
 			<skill id="16547" level="10" /> <!-- Danger Zone Resistance -->
 		</skillList>
-		<dropLists>
-			<drop>
-				<item id="57" min="31494" max="73657" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="3" chance="1.6835" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="3" chance="1.6835" /> <!-- Dragon Scale -->
-				<item id="81219" min="2" max="6" chance="1.6835" /> <!-- Angel's Feather -->
-				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
-				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
-			</drop>
-			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
-			</spoil>
-		</dropLists>
 	</npc>
 	<npc id="24617" level="124" type="Monster" name="Dragon Peltast">
 		<race>DRAGON</race>
@@ -881,7 +743,7 @@
 		<equipment rhand="13843" />
 		<acquire exp="1077833" sp="970" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="2177181" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -911,24 +773,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="31494" max="73657" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="3" chance="1.6835" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="3" chance="1.6835" /> <!-- Dragon Scale -->
-				<item id="81219" min="2" max="6" chance="1.6835" /> <!-- Angel's Feather -->
 				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.683" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.683" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.683" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="6.665" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -937,7 +790,7 @@
 		<sex>MALE</sex>
 		<acquire exp="1077833" sp="970" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="2177181" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -968,24 +821,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="31494" max="73657" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="3" chance="1.6835" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="3" chance="1.6835" /> <!-- Dragon Scale -->
-				<item id="81219" min="2" max="6" chance="1.6835" /> <!-- Angel's Feather -->
 				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="2" max="6" chance="1.053" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="3" chance="1.683" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="3" chance="1.683" /> <!-- Dragon Scale -->
+				<item id="81219" min="2" max="6" chance="1.683" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="6.665" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -994,7 +838,7 @@
 		<sex>MALE</sex>
 		<acquire exp="10778338" sp="9701" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="4354362" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="843929.716245079" magical="1700.02433727455" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6438.81278538813" magical="2469.97302469973" />
 			<attribute>
@@ -1025,24 +869,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="32064" max="75026" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.0721" /> <!-- Black Mithril -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="1.072" /> <!-- Black Mithril -->
 				<item id="81217" min="1" max="3" chance="1.714" /> <!-- Oriharukon Ore -->
 				<item id="81218" min="1" max="3" chance="1.714" /> <!-- Dragon Scale -->
 				<item id="81219" min="2" max="6" chance="1.714" /> <!-- Angel's Feather -->
-				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
-				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="6.665" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1051,7 +886,7 @@
 		<sex>MALE</sex>
 		<acquire exp="10778338" sp="9701" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2177179.768786127" hpRegen="9.5" mp="2972.27722772277" mpRegen="3.3" />
+			<vitals hp="4354362" hpRegen="9.5" mp="3190" mpRegen="3.3" />
 			<attack physical="843929.716245079" magical="1700.02433727455" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6438.81278538813" magical="2469.97302469973" />
 			<attribute>
@@ -1082,24 +917,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="32064" max="75026" chance="70" /> <!-- Adena -->
-				<item id="81216" min="2" max="6" chance="1.0721" /> <!-- Black Mithril -->
+				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="2" max="6" chance="1.072" /> <!-- Black Mithril -->
 				<item id="81217" min="1" max="3" chance="1.714" /> <!-- Oriharukon Ore -->
 				<item id="81218" min="1" max="3" chance="1.714" /> <!-- Dragon Scale -->
 				<item id="81219" min="2" max="6" chance="1.714" /> <!-- Angel's Feather -->
-				<item id="81343" min="1" max="1" chance="0.85" /> <!-- Aden's Shining Treasure Chest -->
-				<item id="81836" min="1" max="1" chance="0.3" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="6.6646" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="6.665" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1109,7 +935,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="2076847" magical="1093146" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1152,54 +978,16 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="12264" max="28640" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="11.8845">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="14352" max="33516" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.14" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.4" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.836" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.836" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.836" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="8.5148" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="9.964" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1209,7 +997,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="2076847" magical="1093146" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1252,54 +1040,16 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="12264" max="28640" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="11.8845">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="14352" max="33516" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.14" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.4" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.836" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.836" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.836" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="8.5148" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="9.964" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1309,7 +1059,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="2076847" magical="1093146" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1353,54 +1103,16 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="12264" max="28640" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="11.8845">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="14352" max="33516" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.14" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.4" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.836" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.836" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.836" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="8.5148" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="9.964" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1410,7 +1122,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="2076847" magical="1093146" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1454,54 +1166,16 @@
 		</ai>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="12264" max="28640" chance="100" /> <!-- Adena -->
-				</group>
-				<group chance="11.8845">
-					<item id="81216" min="1" max="1" chance="17.2528" /> <!-- Black Mithril -->
-					<item id="81217" min="1" max="1" chance="27.5824" /> <!-- Oriharukon Ore -->
-					<item id="81218" min="1" max="1" chance="27.5824" /> <!-- Dragon Scale -->
-					<item id="81219" min="1" max="1" chance="27.5824" /> <!-- Angel's Feather -->
-				</group>
-				<group chance="0.14">
-					<item id="81342" min="1" max="1" chance="100" /> <!-- Aden's Treasure Chest -->
-				</group>
-				<group chance="0.00006">
-					<item id="17416" min="1" max="1" chance="0.7" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.7" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.7" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.7" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.7" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.7" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.7" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.7" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.7" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.7" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.7" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.7" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.7" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.7" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="4.53" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="1.97" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="3.32" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="7.8" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="7.8" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="6.14" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="4.53" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="1.97" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="3.32" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="7.8" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="4.53" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="1.97" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="3.32" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="7.8" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="7.8" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="7.8" /> <!-- Eternal Sigil -->
-				</group>
+				<item id="57" min="14352" max="33516" chance="70" /> <!-- Adena -->
+				<item id="81343" min="1" max="1" chance="0.14" /> <!-- Aden's Shining Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.4" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.836" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.836" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.836" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="8.5148" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="9.964" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -1511,7 +1185,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="1384564" magical="728764" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1548,9 +1222,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30000" max="40000" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30000" max="40000" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1560,7 +1232,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="1384564" magical="728764" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1597,9 +1269,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30000" max="40000" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30000" max="40000" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1609,7 +1279,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="1384564" magical="728764" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1646,9 +1316,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30000" max="40000" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30000" max="40000" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1658,7 +1326,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="1384564" magical="728764" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1695,9 +1363,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30000" max="40000" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30000" max="40000" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1707,7 +1373,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="1384564" magical="728764" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1744,9 +1410,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30000" max="40000" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30000" max="40000" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1756,7 +1420,7 @@
 		<acquire exp="383901" sp="346" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="818645" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="1278871" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="1384564" magical="728764" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="428852" magical="214841" />
 			<speed>
@@ -1793,9 +1457,7 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="30000" max="40000" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="30000" max="40000" chance="70" /> <!-- Adena -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1811,7 +1473,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="7543" magical="3505" />
 			<speed>
@@ -1825,6 +1487,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>KETRA_ORC</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="10" />
@@ -1848,16 +1515,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>KETRA_ORC</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24632" level="112" type="Monster" name="Ketra Orc Prophet">
 		<race>HUMANOID</race>
@@ -1871,7 +1540,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="7543" magical="3505" />
 			<speed>
@@ -1885,6 +1554,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>KETRA_ORC</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="10" />
@@ -1908,16 +1582,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="164" max="384" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>KETRA_ORC</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24633" level="112" type="Monster" name="Ketra Orc Warrior">
 		<race>HUMANOID</race>
@@ -1931,7 +1607,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -1945,6 +1621,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>KETRA_ORC</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="12" />
@@ -1968,16 +1649,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>KETRA_ORC</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24634" level="112" type="Monster" name="Ketra Orc Lieutenant">
 		<race>HUMANOID</race>
@@ -1991,7 +1674,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -2005,6 +1688,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>KETRA_ORC</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="11" />
@@ -2028,16 +1716,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>KETRA_ORC</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24635" level="112" type="Monster" name="Ketra Orc Battalion Commander">
 		<race>HUMANOID</race>
@@ -2051,7 +1741,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -2065,6 +1755,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>KETRA_ORC</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="12" />
@@ -2088,16 +1783,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="160" max="373" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>KETRA_ORC</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24636" level="112" type="Monster" name="Varka Silenos Magus">
 		<race>HUMANOID</race>
@@ -2111,7 +1808,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="7543" magical="3505" />
 			<speed>
@@ -2125,6 +1822,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>VARKA_SILENOS</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="9" />
@@ -2148,16 +1850,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>VARKA_SILENOS</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24637" level="112" type="Monster" name="Varka Silenos Shaman">
 		<race>HUMANOID</race>
@@ -2171,7 +1875,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="7543" magical="3505" />
 			<speed>
@@ -2185,6 +1889,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>VARKA_SILENOS</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="14" />
@@ -2208,16 +1917,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>VARKA_SILENOS</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24638" level="112" type="Monster" name="Varka Silenos Footman">
 		<race>HUMANOID</race>
@@ -2231,7 +1942,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -2245,6 +1956,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>VARKA_SILENOS</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="16" />
@@ -2268,16 +1984,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="151" max="353" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>VARKA_SILENOS</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24639" level="112" type="Monster" name="Varka Silenos Sergeant">
 		<race>HUMANOID</race>
@@ -2291,7 +2009,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -2305,6 +2023,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>VARKA_SILENOS</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="18" />
@@ -2328,16 +2051,18 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="156" max="363" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>VARKA_SILENOS</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24640" level="112" type="Monster" name="Varka Silenos Officer">
 		<race>HUMANOID</race>
@@ -2351,7 +2076,7 @@
 		<acquire exp="273026" sp="246" />
 		<mpReward value="5" type="PER" ticks="5" affects="PARTY" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="261623" hpRegen="12.6" mp="2862" mpRegen="30" />
+			<vitals hp="858100" hpRegen="12.6" mp="2862" mpRegen="30" />
 			<attack physical="109348" magical="9966" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="6109" magical="3940" />
 			<speed>
@@ -2365,6 +2090,11 @@
 			</attribute>
 			<abnormalResist physical="10" magical="10" />
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
+			<clanList>
+				<clan>VARKA_SILENOS</clan>
+			</clanList>
+		</ai>
 		<status attackable="true" />
 		<collision>
 			<radius normal="18" />
@@ -2388,23 +2118,25 @@
 		</skillList>
 		<dropLists>
 			<drop>
-				<group chance="70">
-					<item id="57" min="160" max="373" chance="100" /> <!-- Adena -->
-				</group>
+				<item id="57" min="11155" max="26004" chance="70" /> <!-- Adena -->
+				<item id="81342" min="1" max="1" chance="0.1" /> <!-- Aden's Treasure Chest -->
+				<item id="81836" min="1" max="1" chance="0.15" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="1.863" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.978" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.978" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.978" /> <!-- Angel's Feather -->
 			</drop>
+			<spoil>
+				<item id="81344" min="1" max="1" chance="7.736" /> <!-- Augmenting Stone Crystal -->
+			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="300" isAggressive="false">
-			<clanList>
-				<clan>VARKA_SILENOS</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24641" level="108" type="Monster" name="Tel Mahum Wizard">
 		<race>HUMANOID</race>
 		<equipment rhand="38437" /> <!-- Monster Only: Tiger Staff -->
 		<acquire exp="213044" sp="192" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="403736.9942196532" hpRegen="11.5" mp="26106.2706270627" mpRegen="3.9" />
+			<vitals hp="403736.9942196532" hpRegen="11.5" mp="2702" mpRegen="3.9" />
 			<attack physical="355435.279187817" magical="2207.48679091661" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3093.40101522843" magical="1459.44232423909" />
 			<attribute>
@@ -2434,24 +2166,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="7972" max="18596" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="1.3328" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="2.1309" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="2.1309" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="2.1309" /> <!-- Angel's Feather -->
 				<item id="81342" min="1" max="1" chance="0.07" /> <!-- Aden's Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.1" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="1.333" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.131" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.131" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.131" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="5.5349" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="5.535" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2471,7 +2194,7 @@
 		<equipment rhand="38429" />
 		<acquire exp="213044" sp="192" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="403736.9942196532" hpRegen="11.5" mp="26106.2706270627" mpRegen="3.9" />
+			<vitals hp="403736.9942196532" hpRegen="11.5" mp="2702" mpRegen="3.9" />
 			<attack physical="355435.279187817" magical="2207.48679091661" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3093.40101522843" magical="1459.44232423909" />
 			<attribute>
@@ -2502,24 +2225,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="7972" max="18596" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="1.3328" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="2.1309" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="2.1309" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="2.1309" /> <!-- Angel's Feather -->
 				<item id="81342" min="1" max="1" chance="0.07" /> <!-- Aden's Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.1" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="1.333" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.131" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.131" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.131" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="5.5349" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="5.535" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2531,7 +2245,7 @@
 		<equipment rhand="38434" /> <!-- Monster Only: Tiger Polearm -->
 		<acquire exp="213044" sp="192" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="403736.9942196532" hpRegen="11.5" mp="26106.2706270627" mpRegen="3.9" />
+			<vitals hp="403736.9942196532" hpRegen="11.5" mp="2702" mpRegen="3.9" />
 			<attack physical="355435.279187817" magical="2207.48679091661" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3093.40101522843" magical="1459.44232423909" />
 			<attribute>
@@ -2562,24 +2276,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="7972" max="18596" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="1.3328" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="2.1309" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="2.1309" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="2.1309" /> <!-- Angel's Feather -->
 				<item id="81342" min="1" max="1" chance="0.07" /> <!-- Aden's Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.1" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="1.333" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.131" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.131" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.131" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="5.5349" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="5.535" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2587,7 +2292,7 @@
 		<race>HUMANOID</race>
 		<acquire exp="213044" sp="192" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="403736.9942196532" hpRegen="11.5" mp="26106.2706270627" mpRegen="3.9" />
+			<vitals hp="403736.9942196532" hpRegen="11.5" mp="2702" mpRegen="3.9" />
 			<attack physical="355435.279187817" magical="2207.48679091661" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="3093.40101522843" magical="1459.44232423909" />
 			<attribute>
@@ -2619,24 +2324,15 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="7972" max="18596" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="1.3328" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="2.1309" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="2.1309" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="2.1309" /> <!-- Angel's Feather -->
 				<item id="81342" min="1" max="1" chance="0.07" /> <!-- Aden's Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.1" /> <!-- Orb of Bloody Soul -->
-				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
-				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
-				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
-				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
-				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
-				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
-				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
-				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
-				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="81216" min="1" max="1" chance="1.333" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="2.131" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="2.131" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="2.131" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="5.5349" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="5.535" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
 	</npc>
@@ -2788,7 +2484,7 @@
 		<race>PLANT</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="1278869.942196532" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="1278871" hpRegen="100.5" mp="2862" mpRegen="30.6" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="60000" magical="200000" />
 			<attribute>
@@ -2825,7 +2521,7 @@
 		<race>PLANT</race>
 		<sex>FEMALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="1278869.942196532" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="1278871" hpRegen="100.5" mp="2862" mpRegen="30.6" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="60000" magical="200000" />
 			<attribute>
@@ -2874,6 +2570,11 @@
 				<run ground="119" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -2892,29 +2593,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24652" level="120" type="Monster" name="Blue Kookaburra">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -2926,6 +2622,11 @@
 				<run ground="119" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -2944,29 +2645,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24653" level="120" type="Monster" name="White Cougar">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -2978,6 +2674,11 @@
 				<run ground="178" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -2995,29 +2696,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24654" level="120" type="Monster" name="Cougar">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -3029,6 +2725,11 @@
 				<run ground="178" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -3046,29 +2747,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24655" level="120" type="Monster" name="Black Buffalo">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -3080,6 +2776,11 @@
 				<run ground="80" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -3098,29 +2799,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24656" level="120" type="Monster" name="White Buffalo">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -3132,6 +2828,11 @@
 				<run ground="80" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -3150,29 +2851,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24657" level="120" type="Monster" name="Grandel">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -3184,6 +2880,11 @@
 				<run ground="120" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -3201,29 +2902,24 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24658" level="120" type="Monster" name="Black Grandel">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
 		<acquire exp="538517" sp="485" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="617815.429469286" magical="1368.16567732246" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5043.54066985646" magical="1934.40396671246" />
 			<attribute>
@@ -3235,6 +2931,11 @@
 				<run ground="155" />
 			</speed>
 		</stats>
+		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
+			<clanList>
+				<clan>BEAST_FARM</clan>
+			</clanList>
+		</ai>
 		<skillList>
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="5463" level="1" /> <!-- Water Attack -->
@@ -3252,28 +2953,23 @@
 		<dropLists>
 			<drop>
 				<item id="57" min="14890" max="34840" chance="70" /> <!-- Adena -->
-				<item id="81216" min="1" max="1" chance="2.4892" /> <!-- Black Mithril -->
-				<item id="81217" min="1" max="1" chance="3.9796" /> <!-- Oriharukon Ore -->
-				<item id="81218" min="1" max="1" chance="3.9796" /> <!-- Dragon Scale -->
-				<item id="81219" min="1" max="1" chance="3.9796" /> <!-- Angel's Feather -->
-				<item id="81342" min="1" max="1" chance="0.17" /> <!-- Aden's Treasure Chest -->
+				<item id="81343" min="1" max="1" chance="0.17" /> <!-- Aden's Shining Treasure Chest -->
 				<item id="81836" min="1" max="1" chance="0.35" /> <!-- Orb of Bloody Soul -->
+				<item id="81216" min="1" max="1" chance="2.489" /> <!-- Black Mithril -->
+				<item id="81217" min="1" max="1" chance="3.98" /> <!-- Oriharukon Ore -->
+				<item id="81218" min="1" max="1" chance="3.98" /> <!-- Dragon Scale -->
+				<item id="81219" min="1" max="1" chance="3.98" /> <!-- Angel's Feather -->
 			</drop>
 			<spoil>
-				<item id="81344" min="1" max="1" chance="10.3371" /> <!-- Augmenting Stone Crystal -->
+				<item id="81344" min="1" max="1" chance="10.337" /> <!-- Augmenting Stone Crystal -->
 			</spoil>
 		</dropLists>
-		<ai type="FIGHTER" clanHelpRange="450" aggroRange="450" isAggressive="false">
-			<clanList>
-				<clan>BEAST_FARM</clan>
-			</clanList>
-		</ai>
 	</npc>
 	<npc id="24659" level="120" type="Monster" name="Beast Devourer" title="Beast Farm Defender">
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="2012330.057803468" hpRegen="100.5" mp="319000" mpRegen="30.6" />
+			<vitals hp="2012329" hpRegen="100.5" mp="3190" mpRegen="30.6" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="30" critical="4.75" accuracy="4.75" attackSpeed="250" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="60000" magical="200000" />
 			<attribute>
@@ -3307,7 +3003,7 @@
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="8012030.057803468" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<vitals hp="8012026" hpRegen="10.5" mp="3190" mpRegen="3.6" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -3341,7 +3037,7 @@
 		<sex>MALE</sex>
 		<acquire exp="753730" sp="678" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="8012030.057803468" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<vitals hp="8012026" hpRegen="10.5" mp="3190" mpRegen="3.6" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>
@@ -3376,7 +3072,7 @@
 		<equipment rhand="15302" /> <!-- Transparent Bow (NPC) -->
 		<acquire exp="753730" sp="678" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="4006009.826589595" hpRegen="10.5" mp="3190" mpRegen="3.6" />
+			<vitals hp="4006013" hpRegen="10.5" mp="3190" mpRegen="3.6" />
 			<attack physical="733514.268097518" magical="1543.76790583647" random="50" critical="4.75" accuracy="9" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="5757.47663551402" magical="2208.44514357978" />
 			<attribute>

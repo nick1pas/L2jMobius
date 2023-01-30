@@ -75,7 +75,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<acquire exp="6480" sp="1" />
+		<acquire exp="68" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="41.9253083414476" hpRegen="2" mp="40" mpRegen="0.9" />
 			<attack physical="8.47458" magical="5.78704" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -135,7 +135,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>FEMALE</sex>
-		<acquire exp="44" sp="2" />
+		<acquire exp="5085" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2823.47946968528" hpRegen="8.5" mp="1507.8" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -169,7 +169,7 @@
 	<npc id="18004" level="75" type="Monster" name="Tower">
 		<race>ETC</race>
 		<sex>ETC</sex>
-		<acquire sp="1" />
+		<acquire exp="5085" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
 			<vitals hp="2823.47946968528" hpRegen="8.5" mp="1507.8" mpRegen="3" />
 			<attack physical="794.70901" magical="542.68324" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -299,7 +299,7 @@
 		</parameters>
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
-		<acquire exp="9189932" sp="275697" />
+		<acquire exp="4435" sp="275698" />
 		<equipment rhand="5800" lhand="5799" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="2240316.42745449" hpRegen="2500" mp="1345.8" mpRegen="2.7" />
@@ -862,7 +862,7 @@
 			<skill id="4045" level="1" /> <!-- Full Magic Attack Resistance -->
 		</skillList>
 	</npc>
-	<npc id="18020" level="40" type="RaidBoss" name="Queen Ant" title="Dungeon Queen">
+	<npc id="18020" level="73" type="RaidBoss" name="Queen Ant" title="Dungeon Queen">
 		<!-- DEFEAT THE QUEEN EVENT -->
 		<parameters>
 			<minions name="Privates">
@@ -873,8 +873,8 @@
 		<race>BUG</race>
 		<sex>FEMALE</sex>
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="386384" hpRegen="208" mp="300.8" mpRegen="2.1" />
-			<attack physical="105" magical="8" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<vitals hp="2505295.39291686" hpRegen="208" mp="300.8" mpRegen="2.1" />
+			<attack physical="752.73928" magical="514.02335" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1252" magical="229" />
 			<speed>
 				<walk ground="80" />
@@ -935,15 +935,15 @@
 			<skill id="4416" level="12" /> <!-- Bugs -->
 		</skillList>
 	</npc>
-	<npc id="18022" level="35" type="Monster" name="Nurse Ant">
+	<npc id="18022" level="73" type="Monster" name="Nurse Ant">
 		<!-- DEFEAT THE QUEEN EVENT -->
 		<race>BUG</race>
 		<sex>MALE</sex>
 		<acquire sp="1" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4000" hpRegen="108" mp="402.6" mpRegen="1.8" />
-			<attack physical="637" magical="395" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="547" magical="200" />
+			<vitals hp="7800.76" hpRegen="108" mp="402.6" mpRegen="1.8" />
+			<attack physical="752.73928" magical="514.02335" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="547" magical="226.8662" />
 			<speed>
 				<walk ground="40" />
 				<run ground="130" />
@@ -970,7 +970,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="18023" level="37" type="Monster" name="Escort Ant">
+	<npc id="18023" level="73" type="Monster" name="Escort Ant">
 		<!-- DEFEAT THE QUEEN EVENT -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -981,9 +981,9 @@
 		<sex>MALE</sex>
 		<acquire sp="1" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4343" hpRegen="115" mp="432.7" mpRegen="1.8" />
-			<attack physical="178" magical="27" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="578" magical="211" />
+			<vitals hp="7800.76" hpRegen="115" mp="432.7" mpRegen="1.8" />
+			<attack physical="752.73928" magical="514.02335" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="578" magical="226.8662" />
 			<speed>
 				<walk ground="40" />
 				<run ground="230" />
@@ -1015,7 +1015,7 @@
 			<height normal="15" />
 		</collision>
 	</npc>
-	<npc id="18024" level="39" type="Monster" name="Royal Guard Ant">
+	<npc id="18024" level="73" type="Monster" name="Royal Guard Ant">
 		<!-- DEFEAT THE QUEEN EVENT -->
 		<parameters>
 			<param name="MoveAroundSocial" value="120" />
@@ -1024,11 +1024,11 @@
 		</parameters>
 		<race>BUG</race>
 		<sex>MALE</sex>
-		<acquire sp="1" />
+		<acquire exp="4663" />
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="7051" hpRegen="122" mp="463.3" mpRegen="1.8" />
+			<vitals hp="7800.76" hpRegen="122" mp="463.3" mpRegen="1.8" />
 			<attack physical="1190" magical="1074" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
-			<defence physical="610" magical="223" />
+			<defence physical="610" magical="226.8662" />
 			<speed>
 				<walk ground="40" />
 				<run ground="230" />
@@ -1064,6 +1064,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DRAGON</race>
 		<sex>MALE</sex>
+		<acquire exp="1410" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="183874.772280041" hpRegen="85.0969448447131" mp="478.8" mpRegen="1.8" />
 			<attack physical="472.68726669442" magical="74.6516744182408" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1151,6 +1152,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire exp="1633" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="295133.674501199" hpRegen="133.418313858623" mp="557.4" mpRegen="2.1" />
 			<attack physical="1089.9199091275" magical="412.56626918897" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1186,6 +1188,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
+		<acquire exp="2298" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="523103.852" hpRegen="441.65" mp="1708.8" mpRegen="20" />
 			<attack physical="3652" magical="1535" random="10" critical="4" accuracy="0" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
@@ -1316,6 +1319,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DEMONIC</race>
 		<sex>FEMALE</sex>
+		<acquire exp="2780" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="379320.258720905" hpRegen="160.428352228262" mp="889.8" mpRegen="2.4" />
 			<attack physical="1220.8780225827" magical="374.074597271571" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1402,6 +1406,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="201" />
+		<acquire exp="2979" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="405588.390681831" hpRegen="169.817256865542" mp="948" mpRegen="2.4" />
 			<attack physical="1356.00171218861" magical="428.34500246787" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1488,6 +1493,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<equipment rhand="1472" />
+		<acquire exp="3301" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="442200.04994986" hpRegen="182.410955849033" mp="1036.8" mpRegen="2.4" />
 			<attack physical="1570.35490008098" magical="534.047830747273" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1586,6 +1592,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="71" />
+		<acquire exp="3301" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="442200.04994986" hpRegen="182.410955849033" mp="1036.8" mpRegen="2.4" />
 			<attack physical="1570.35490008098" magical="534.047830747273" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1673,6 +1680,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="186" />
+		<acquire exp="3502" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="645830.017167712" hpRegen="263.705714180557" mp="1097" mpRegen="2.7" />
 			<attack physical="3212.37778975842" magical="2154.88561326698" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1761,6 +1769,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<equipment rhand="189" />
+		<acquire exp="4435" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="746772.142484831" hpRegen="294.21090607215" mp="1345.8" mpRegen="2.7" />
 			<attack physical="4309.76223426093" magical="2869.61548504493" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1851,6 +1860,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>GIANT</race>
 		<sex>MALE</sex>
+		<acquire exp="5085" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="2384623.50864054" hpRegen="2530.1828558908" mp="3015.6" mpRegen="6" />
 			<attack physical="15385.5614" magical="6675.005" random="20" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
@@ -1872,6 +1882,7 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
+		<acquire exp="5085" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
 			<vitals hp="18648000" hpRegen="718" mp="18000" mpRegen="99" />
 			<attack physical="10122.54" magical="4400" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
@@ -1952,8 +1963,9 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire exp="5408" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="3404507.342235" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
+			<vitals hp="34045100" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
 			<attack physical="16359.0626928439" magical="7778.19336328959" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2224.33803195482" magical="1083.3563471697" />
 			<speed>
@@ -1972,7 +1984,7 @@
 			<skill id="4494" level="1" /> <!-- Raid Boss -->
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
 			<skill id="14765" level="4" /> <!-- Blood Siphon Resistance -->
-			<skill id="4408" level="18" /> <!-- HP Increase (10x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="4" /> <!-- Extremely Weak P. Atk. -->
 			<skill id="4411" level="4" /> <!-- Extremely Weak M. Atk. -->
@@ -1987,8 +1999,9 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>DRAGON</race>
 		<sex>MALE</sex>
+		<acquire exp="5408" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="3404507.342235" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
+			<vitals hp="34045100" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
 			<attack physical="16359.0626928439" magical="7778.19336328959" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2224.33803195482" magical="1083.3563471697" />
 			<speed>
@@ -2007,7 +2020,7 @@
 			<skill id="4494" level="1" /> <!-- Raid Boss -->
 			<skill id="4416" level="10" /> <!-- Dragons -->
 			<skill id="14765" level="4" /> <!-- Blood Siphon Resistance -->
-			<skill id="4408" level="18" /> <!-- HP Increase (10x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="4" /> <!-- Extremely Weak P. Atk. -->
 			<skill id="4411" level="4" /> <!-- Extremely Weak M. Atk. -->
@@ -2022,8 +2035,9 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>ANIMAL</race>
 		<sex>FEMALE</sex>
+		<acquire exp="5408" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="3404507.342235" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
+			<vitals hp="34045100" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
 			<attack physical="16359.0626928439" magical="7778.19336328959" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2224.33803195482" magical="1083.3563471697" />
 			<speed>
@@ -2042,7 +2056,7 @@
 			<skill id="4494" level="1" /> <!-- Raid Boss -->
 			<skill id="4416" level="4" /> <!-- Animals -->
 			<skill id="14765" level="4" /> <!-- Blood Siphon Resistance -->
-			<skill id="4408" level="18" /> <!-- HP Increase (10x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="4" /> <!-- Extremely Weak P. Atk. -->
 			<skill id="4411" level="4" /> <!-- Extremely Weak M. Atk. -->
@@ -2057,8 +2071,9 @@
 		<!-- AUTO GENERATED NPC TODO: FIX IT -->
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
+		<acquire exp="5408" />
 		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="3404507.342235" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
+			<vitals hp="34045100" hpRegen="1323.68411612557" mp="712533" mpRegen="6" />
 			<attack physical="16359.0626928439" magical="7778.19336328959" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="2224.33803195482" magical="1083.3563471697" />
 			<speed>
@@ -2077,7 +2092,7 @@
 			<skill id="4494" level="1" /> <!-- Raid Boss -->
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
 			<skill id="14765" level="4" /> <!-- Blood Siphon Resistance -->
-			<skill id="4408" level="18" /> <!-- HP Increase (10x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="4" /> <!-- Extremely Weak P. Atk. -->
 			<skill id="4411" level="4" /> <!-- Extremely Weak M. Atk. -->

@@ -783,6 +783,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46065" name="Dimensional Gludin Badge" type="EtcItem">
 		<!-- Badge bearing the mark of Gludin Village. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -793,6 +794,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46066" name="Dimensional Giran Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Giran. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -803,6 +805,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46067" name="Dimensional Oren Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Oren. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -813,6 +816,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46068" name="Dimensional Aden Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Aden. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -823,6 +827,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46069" name="Dimensional Gainak Badge" type="EtcItem">
 		<!-- Badge bearing the mark of Gainak. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -833,6 +838,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46070" name="Dimensional Goddard Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Goddard. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -843,6 +849,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46071" name="Dimensional Schuttgart Badge" type="EtcItem">
 		<!-- Badge bearing the mark of the Town of Schuttgart. You must have the corresponding badge when running the Dimensional Raid in order to receive the reward from that town's raid boss. -->
@@ -853,6 +860,7 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="material" val="CRYSTAL" />
+		<set name="time" val="120" />
 	</item>
 	<item id="46072" name="Bloody Weapon Enhancement Stone Coupon" type="EtcItem">
 		<!-- A coupon given to one of the warriors who participated in the Dimensional Raid and earned top scores. Exchange it for a Bloody Weapon Enhancement Stone through Merlot in Hunter s Village. -->
@@ -875,32 +883,47 @@
 	<item id="46074" name="Dimensional Elcyum Pack" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: Elcyum Powder, Elcyum Crystal, Elcyum. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18393" level="1" /> <!-- Dimensional Elcyum Pack -->
+		</skills>
 	</item>
 	<item id="46075" name="Dimensional Augment Pack" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: High-grade Spirit Stone, Top-grade Spirit Stone, Spirit Stone: Hair Accessory, Life Stone Instilled with Giants' Power. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18394" level="1" /> <!-- Dimensional Augment Pack -->
+		</skills>
 	</item>
 	<item id="46076" name="Dimensional Enhancement Pack" type="EtcItem">
 		<!-- Double-click to obtain one of the following items: Scroll: Enchant R-grade Armor, Lucky Enchant Stone: S-grade Armor, Scroll: Enchant R-grade Weapon, Blessed Scroll: Enchant R-grade Armor, Lucky Enchant Stone: R-grade Armor, Lucky Enchant Stone: S-grade Weapon, Blessed Scroll: Enchant R-grade Weapon, or Lucky Enchant Stone: R-grade Weapon. -->
 		<set name="icon" val="icon.event_hero_treasure_box_i00" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="18395" level="1" /> <!-- Dimensional Enhancement Pack -->
+		</skills>
 	</item>
 	<item id="46077" name="Lucky Enchant Stone: Weapon (R-grade)" type="EtcItem">
 		<!-- Enchant success rate +10% for R-grade weapons. Only for items enchanted between +3 and +9. -->

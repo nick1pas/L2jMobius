@@ -712,6 +712,7 @@
 		<set name="material" val="WOOD" />
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="29160" name="Shaggy Dog Hat" type="Armor">
 		<!-- A shaggy dog hat. Uses 2 hair accessory slots. -->
@@ -723,6 +724,7 @@
 		<set name="weight" val="10" />
 		<set name="is_sellable" val="false" />
 		<set name="bodypart" val="hairall" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="29161" name="Prestige Rune Pack" additionalName="30-day" type="EtcItem">
 		<!-- Double-click to obtain a Prestige Rune (30-day). -->
@@ -734,6 +736,7 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="time" val="43200" />
 		<set name="is_freightable" val="true" />
 	</item>
 	<item id="29162" name="Light Imbued Treasure Chest" type="EtcItem">
@@ -813,16 +816,10 @@
 		<set name="is_depositable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="ExtractableItems" />
-		<set name="extractableCountMin" val="1" />
-		<set name="extractableCountMax" val="1" />
-		<capsuled_items>
-			<item id="29169" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Ferios -->
-			<item id="29168" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Elmore -->
-			<item id="29167" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Aden -->
-			<item id="29166" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Elmoreden -->
-			<item id="29165" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Ancient Kingdom -->
-		</capsuled_items>
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="28181" level="1" /> <!-- High-grade Spirit Stone Pack - Legendary -->
+		</skills>
 	</item>
 	<item id="29171" name="High-grade Spirit Stone Pack - Cloak" type="EtcItem">
 		<!-- Double-click to obtain 1 High-grade Spirit Stone - Ancient Kingdom/ Elmoreden/ Aden/ Elmore/ Ferios randomly. -->
@@ -836,16 +833,10 @@
 		<set name="is_depositable" val="true" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="handler" val="ExtractableItems" />
-		<set name="extractableCountMin" val="1" />
-		<set name="extractableCountMax" val="1" />
-		<capsuled_items>
-			<item id="29169" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Ferios -->
-			<item id="29168" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Elmore -->
-			<item id="29167" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Aden -->
-			<item id="29166" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Elmoreden -->
-			<item id="29165" min="1" max="1" chance="20" /> <!-- High-grade Spirit Stone - Ancient Kingdom -->
-		</capsuled_items>
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="28180" level="1" /> <!-- High-grade Spirit Stone Pack - Cloak -->
+		</skills>
 	</item>
 	<item id="29172" name="Red Star Solvent" type="EtcItem">
 		<!-- A solution needed to melt Starlight Jars. Take it along with a Starlight Jar to the Dimensional Merchant to create a Red Stars Bottle. -->
@@ -959,6 +950,7 @@
 		<set name="is_tradable" val="false" />
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
+		<set name="enchant_enabled" val="true" />
 	</item>
 	<item id="29182" name="Master's Fishing Coin" type="EtcItem">
 		<!-- Currency earned when playing Master Fishing. Take it to Dimensional Merchant to exchange for a Fishing XP Box. -->

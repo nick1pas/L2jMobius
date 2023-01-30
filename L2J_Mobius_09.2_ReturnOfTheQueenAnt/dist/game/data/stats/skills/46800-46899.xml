@@ -199,4 +199,69 @@
 			</effect>
 		</effects>
 	</skill>
+	<skill id="46803" toLevel="1" name="Krishna Weapon Pack Pack">
+		<operateType>A1</operateType>
+		<itemConsumeId>81903</itemConsumeId>
+		<itemConsumeCount>1</itemConsumeCount>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<magicLevel>1</magicLevel>
+		<magicCriticalRate>5</magicCriticalRate>
+		<hitCancelTime>0</hitCancelTime>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<conditions>
+			<condition name="OpEncumbered">
+				<weightPercent>10</weightPercent>
+				<slotsPercent>10</slotsPercent>
+			</condition>
+		</conditions>
+		<effects>
+			<effect name="RestorationRandom">
+				<items>
+					<item chance="7.14285">
+						<item id="80090" count="1" /> <!-- Krishna Shaper -->
+					</item>
+					<item chance="7.14285">
+						<item id="80091" count="1" /> <!-- Krishna Cutter -->
+					</item>
+					<item chance="7.14285">
+						<item id="80092" count="1" /> <!-- Krishna Slasher -->
+					</item>
+					<item chance="7.14285">
+						<item id="80093" count="1" /> <!-- Krishna Avenger -->
+					</item>
+					<item chance="7.14285">
+						<item id="80094" count="1" /> <!-- Krishna Fighter -->
+					</item>
+					<item chance="7.14285">
+						<item id="80095" count="1" /> <!-- Krishna Stormer -->
+					</item>
+					<item chance="7.14285">
+						<item id="80096" count="1" /> <!-- Krishna Thrower -->
+					</item>
+					<item chance="7.14285">
+						<item id="80097" count="1" /> <!-- Krishna Guardian -->
+					</item>
+					<item chance="7.14285">
+						<item id="80098" count="1" /> <!-- Krishna Buster -->
+					</item>
+					<item chance="7.14285">
+						<item id="80099" count="1" /> <!-- Krishna Caster -->
+					</item>
+					<item chance="7.14285">
+						<item id="80100" count="1" /> <!-- Krishna Retributer -->
+					</item>
+					<item chance="7.14285">
+						<item id="80101" count="1" /> <!-- Krishna Dual Swords -->
+					</item>
+					<item chance="7.14285">
+						<item id="80102" count="1" /> <!-- Krishna Dual Daggers -->
+					</item>
+					<item chance="7.14285">
+						<item id="80103" count="1" /> <!-- Krishna Dual Blunt Weapons -->
+					</item>
+				</items>
+			</effect>
+		</effects>
+	</skill>
 </list>

@@ -34,7 +34,7 @@ public class EilhalderVonHellmann extends AbstractNpcAI
 {
 	private static final int EILHALDER_VON_HELLMANN = 25328;
 	private static final Location SPAWN_LOCATION = new Location(59090, -42188, -3003);
-	private static Npc npcInstance;
+	private static Npc _npcInstance;
 	
 	private EilhalderVonHellmann()
 	{
@@ -47,7 +47,7 @@ public class EilhalderVonHellmann extends AbstractNpcAI
 		{
 			if (npc.isInCombat())
 			{
-				startQuestTimer("despawn", 30000, npcInstance, null);
+				startQuestTimer("despawn", 30000, _npcInstance, null);
 			}
 			else
 			{
@@ -61,20 +61,20 @@ public class EilhalderVonHellmann extends AbstractNpcAI
 	@RegisterType(ListenerRegisterType.GLOBAL)
 	public void onDayNightChange(OnDayNightChange event)
 	{
-		if (!event.isNight() && (npcInstance != null) && !npcInstance.isDead())
+		if (!event.isNight() && (_npcInstance != null) && !_npcInstance.isDead())
 		{
-			if (!npcInstance.isInCombat())
+			if (!_npcInstance.isInCombat())
 			{
-				npcInstance.deleteMe();
+				_npcInstance.deleteMe();
 			}
 			else
 			{
-				startQuestTimer("despawn", 30000, npcInstance, null);
+				startQuestTimer("despawn", 30000, _npcInstance, null);
 			}
 		}
-		else if ((npcInstance == null) || npcInstance.isDead())
+		else if ((_npcInstance == null) || _npcInstance.isDead())
 		{
-			npcInstance = addSpawn(EILHALDER_VON_HELLMANN, SPAWN_LOCATION);
+			_npcInstance = addSpawn(EILHALDER_VON_HELLMANN, SPAWN_LOCATION);
 		}
 	}
 	

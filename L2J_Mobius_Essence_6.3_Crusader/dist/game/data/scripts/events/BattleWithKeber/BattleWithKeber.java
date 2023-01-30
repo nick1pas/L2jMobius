@@ -194,12 +194,12 @@ public class BattleWithKeber extends LongTimeEvent
 			addSpawnId(NORMAL_MINIONS);
 			addSpawnId(ELITE_MINIONS);
 			startQuestTimer("KEBER_EVENT_START", getMsTimeForEventStage(1), null, null);
-			SPAWN_TEMPLATE.set(SpawnData.getInstance().getSpawns().stream().filter(t -> t.getName() != null).filter(t -> t.getName().contains("KEBER_MINIONS")).findAny().orElse(null));
+			SPAWN_TEMPLATE.set(SpawnData.getInstance().getSpawnByName("KEBER_MINIONS"));
 			if (SPAWN_TEMPLATE.get() != null)
 			{
-				MINION_MAX_COUNT.set(0, SPAWN_TEMPLATE.get().getGroups().stream().filter(g -> ((g.getName() != null) && g.getName().equalsIgnoreCase("KISHAN"))).findFirst().get().getSpawns().stream().findFirst().get().getCount());
-				MINION_MAX_COUNT.set(1, SPAWN_TEMPLATE.get().getGroups().stream().filter(g -> ((g.getName() != null) && g.getName().equalsIgnoreCase("NOMA"))).findFirst().get().getSpawns().stream().findFirst().get().getCount());
-				MINION_MAX_COUNT.set(2, SPAWN_TEMPLATE.get().getGroups().stream().filter(g -> ((g.getName() != null) && g.getName().equalsIgnoreCase("SPALL"))).findFirst().get().getSpawns().stream().findFirst().get().getCount());
+				MINION_MAX_COUNT.set(0, SpawnData.getInstance().getSpawnGroupByName("KISHAN").getSpawns().stream().findFirst().get().getCount());
+				MINION_MAX_COUNT.set(1, SpawnData.getInstance().getSpawnGroupByName("NOMA").getSpawns().stream().findFirst().get().getCount());
+				MINION_MAX_COUNT.set(2, SpawnData.getInstance().getSpawnGroupByName("SPALL").getSpawns().stream().findFirst().get().getCount());
 			}
 		}
 	}

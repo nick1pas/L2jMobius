@@ -87,6 +87,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="39510" level="1" /> <!-- Lucky Pig Special Vitality Tonic -->
+		</skills>
 	</item>
 	<item id="80807" name="Gran Kain's Cube" type="EtcItem">
 		<!-- Double-click to obtain Gran Kain's Gift Box. Grants Gran Kain's Cube Special Support Items on the 1st and 10th use. Cannot be used in the Olympiad. -->
@@ -458,6 +466,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="39523" level="1" /> <!-- Golden's Pig Medium Vitality Tonic -->
+		</skills>
 	</item>
 	<item id="80834" name="Jackpot Wish Lucky Pouch" type="EtcItem">
 		<!-- A lucky pouch prepared to celebrate the year of the Golden Pig. Double-click to obtain Lindvior's Earring/ Blessed Valakas' Necklace/ Blessed Antharas' Earring or various consumables. -->
@@ -483,12 +499,12 @@
 		<set name="is_dropable" val="false" />
 		<set name="material" val="SILVER" />
 		<skills>
-			<skill id="35524" level="1" /> <!-- Kaliel's Bracelet -->
-			<skill id="35524" level="2" type="ON_ENCHANT" type_value="1" /> <!-- Kaliel's Bracelet -->
-			<skill id="35524" level="3" type="ON_ENCHANT" type_value="2" /> <!-- Kaliel's Bracelet -->
-			<skill id="35524" level="4" type="ON_ENCHANT" type_value="3" /> <!-- Kaliel's Bracelet -->
-			<skill id="35524" level="5" type="ON_ENCHANT" type_value="4" /> <!-- Kaliel's Bracelet -->
-			<skill id="35524" level="6" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Bracelet -->
+			<skill id="35524" level="1" /> <!-- Kaliel's Bracelet Lv1 -->
+			<skill id="35524" level="2" type="ON_ENCHANT" type_value="1" /> <!-- Kaliel's Bracelet Lv2 -->
+			<skill id="35524" level="3" type="ON_ENCHANT" type_value="2" /> <!-- Kaliel's Bracelet Lv3 -->
+			<skill id="35524" level="4" type="ON_ENCHANT" type_value="3" /> <!-- Kaliel's Bracelet Lv4 -->
+			<skill id="35524" level="5" type="ON_ENCHANT" type_value="4" /> <!-- Kaliel's Bracelet Lv5 -->
+			<skill id="35524" level="6" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Bracelet Lv6 -->
 		</skills>
 	</item>
 	<item id="80836" name="Kaliel's Greater Bracelet" type="Armor">
@@ -502,12 +518,12 @@
 		<set name="enchant_limit" val="5" />
 		<set name="material" val="SILVER" />
 		<skills>
-			<skill id="35525" level="1" /> <!-- Kaliel's Greater Bracelet -->
-			<skill id="35525" level="2" type="ON_ENCHANT" type_value="1" /> <!-- Kaliel's Greater Bracelet -->
-			<skill id="35525" level="3" type="ON_ENCHANT" type_value="2" /> <!-- Kaliel's Greater Bracelet -->
-			<skill id="35525" level="4" type="ON_ENCHANT" type_value="3" /> <!-- Kaliel's Greater Bracelet -->
-			<skill id="35525" level="5" type="ON_ENCHANT" type_value="4" /> <!-- Kaliel's Greater Bracelet -->
-			<skill id="35525" level="6" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Greater Bracelet -->
+			<skill id="35525" level="1" /> <!-- Kaliel's Greater Bracelet Lv1 -->
+			<skill id="35525" level="2" type="ON_ENCHANT" type_value="1" /> <!-- Kaliel's Greater Bracelet Lv2 -->
+			<skill id="35525" level="3" type="ON_ENCHANT" type_value="2" /> <!-- Kaliel's Greater Bracelet Lv3 -->
+			<skill id="35525" level="4" type="ON_ENCHANT" type_value="3" /> <!-- Kaliel's Greater Bracelet Lv4 -->
+			<skill id="35525" level="5" type="ON_ENCHANT" type_value="4" /> <!-- Kaliel's Greater Bracelet Lv5 -->
+			<skill id="35525" level="6" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Greater Bracelet Lv6 -->
 		</skills>
 	</item>
 	<item id="80837" name="Superior Kaliel's Bracelet" type="Armor">
@@ -521,17 +537,23 @@
 		<set name="enchant_limit" val="10" />
 		<set name="material" val="SILVER" />
 		<skills>
-			<skill id="35526" level="1" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="2" type="ON_ENCHANT" type_value="1" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="3" type="ON_ENCHANT" type_value="2" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="4" type="ON_ENCHANT" type_value="3" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="5" type="ON_ENCHANT" type_value="4" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="6" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="7" type="ON_ENCHANT" type_value="6" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="8" type="ON_ENCHANT" type_value="7" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="9" type="ON_ENCHANT" type_value="8" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="10" type="ON_ENCHANT" type_value="9" /> <!-- Kaliel's Top-grade Bracelet -->
-			<skill id="35526" level="11" type="ON_ENCHANT" type_value="10" /> <!-- Kaliel's Top-grade Bracelet -->
+			<skill id="35526" level="1" /> <!-- Superior Kaliel's Bracelet Lv1 -->
+			<skill id="35526" level="2" type="ON_ENCHANT" type_value="1" /> <!-- Superior Kaliel's Bracelet Lv2 -->
+			<skill id="35526" level="3" type="ON_ENCHANT" type_value="2" /> <!-- Superior Kaliel's Bracelet Lv3 -->
+			<skill id="35526" level="4" type="ON_ENCHANT" type_value="3" /> <!-- Superior Kaliel's Bracelet Lv4 -->
+			<skill id="35526" level="5" type="ON_ENCHANT" type_value="4" /> <!-- Superior Kaliel's Bracelet Lv5 -->
+			<skill id="35526" level="6" type="ON_ENCHANT" type_value="5" /> <!-- Superior Kaliel's Bracelet Lv6 -->
+			<skill id="35526" level="7" type="ON_ENCHANT" type_value="6" /> <!-- Superior Kaliel's Bracelet Lv7 -->
+			<skill id="35526" level="8" type="ON_ENCHANT" type_value="7" /> <!-- Superior Kaliel's Bracelet Lv8 -->
+			<skill id="35526" level="9" type="ON_ENCHANT" type_value="8" /> <!-- Superior Kaliel's Bracelet Lv9 -->
+			<skill id="35526" level="10" type="ON_ENCHANT" type_value="9" /> <!-- Superior Kaliel's Bracelet Lv10 -->
+			<skill id="35526" level="11" type="ON_ENCHANT" type_value="10" /> <!-- Superior Kaliel's Bracelet Lv11 -->
+			<skill id="30818" level="1" type="ON_ENCHANT" type_value="5" /> <!-- Kaliel's Protection Lv1 -->
+			<skill id="30818" level="2" type="ON_ENCHANT" type_value="6" /> <!-- Kaliel's Protection Lv2 -->
+			<skill id="30818" level="3" type="ON_ENCHANT" type_value="7" /> <!-- Kaliel's Protection Lv3 -->
+			<skill id="30818" level="4" type="ON_ENCHANT" type_value="8" /> <!-- Kaliel's Protection Lv4 -->
+			<skill id="30818" level="5" type="ON_ENCHANT" type_value="9" /> <!-- Kaliel's Protection Lv5 -->
+			<skill id="30818" level="6" type="ON_ENCHANT" type_value="10" /> <!-- Kaliel's Protection Lv6 -->
 		</skills>
 	</item>
 	<item id="80838" name="Blessed Scroll: Enchant Kaliel's Bracelet" type="EtcItem">
@@ -540,6 +562,8 @@
 		<set name="etcitem_type" val="BLESS_ENCHT_AM" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="is_premium" val="true" />
 		<set name="is_oly_restricted" val="true" />
@@ -698,6 +722,10 @@
 		<set name="is_destroyable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39744" level="1" /> <!-- +10 Agathion Pack -->
+		</skills>
 	</item>
 	<item id="80852" name="PA Shining Nevit's Gold Hourglass" type="EtcItem">
 		<!-- For PA. Increases acquired XP/ SP +100% during hunting for 30 min. Cannot stack with the Fall of the Dragon or Dandy's Home Run Ball. Cooldown: 5 min. -->
@@ -709,6 +737,10 @@
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="is_freightable" val="true" />
+		<set name="handler" val="ItemSkills" />
+		<skills>
+			<skill id="39533" level="1" /> <!-- PA Shining Nevit's Gold Hourglass -->
+		</skills>
 	</item>
 	<item id="80853" name="Undead Blood" type="EtcItem">
 		<!-- Item obtained as proof of having defeated the monsters in Altar of Evil at the request of Grocer Vollodos. Collect these and take them to Herphah in the Town of Aden. -->

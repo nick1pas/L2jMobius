@@ -242,7 +242,7 @@ public class BuffInfo
 		{
 			if (value)
 			{
-				if (!_hideStartMessage && !_skill.isAura())
+				if (!_hideStartMessage && !_skill.isAura() && isDisplayedForEffected())
 				{
 					final SystemMessage sm = new SystemMessage(SystemMessageId.S1_S_EFFECT_CAN_BE_FELT);
 					sm.addSkillName(_skill);
@@ -309,7 +309,7 @@ public class BuffInfo
 		}
 		
 		// When effects are initialized, the successfully landed.
-		if (!_hideStartMessage && _effected.isPlayer() && !_skill.isHidingMessages() && !_skill.isAura())
+		if (!_hideStartMessage && _effected.isPlayer() && !_skill.isHidingMessages() && !_skill.isAura() && isDisplayedForEffected())
 		{
 			final SystemMessage sm = new SystemMessage(SystemMessageId.S1_S_EFFECT_CAN_BE_FELT);
 			sm.addSkillName(_skill);
@@ -409,7 +409,7 @@ public class BuffInfo
 		if ((_skill != null) && !(_effected.isSummon() && !((Summon) _effected).getOwner().hasSummon()) && !_skill.isHidingMessages())
 		{
 			SystemMessageId smId = null;
-			if (_finishType == SkillFinishType.SILENT)
+			if ((_finishType == SkillFinishType.SILENT) || !isDisplayedForEffected())
 			{
 				// smId is null.
 			}
@@ -449,5 +449,15 @@ public class BuffInfo
 	public boolean isAbnormalType(AbnormalType type)
 	{
 		return _skill.getAbnormalType() == type;
+	}
+	
+	/**
+	 * Determines if this BuffInfo is displayed for the effected. These checks are needed to display A3 skills properly.<br>
+	 * A3 skills are a type of skills that has different behavior depending on the effector and the effected.
+	 * @return true if this BuffInfo is displayed for the effected, false otherwise.
+	 */
+	public boolean isDisplayedForEffected()
+	{
+		return !_skill.isSelfContinuous() || (_effected == _effector) || !_skill.hasEffects(EffectScope.SELF);
 	}
 }

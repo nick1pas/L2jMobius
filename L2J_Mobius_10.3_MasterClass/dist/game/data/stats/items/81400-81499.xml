@@ -732,6 +732,14 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="80612" min="1" max="1" chance="46" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80832" min="1" max="1" chance="46" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81456" min="1" max="1" chance="8" /> <!-- Special Clan Reward Lv. 2 -->
+		</capsuled_items>
 	</item>
 	<item id="81456" name="Special Clan Reward Lv. 2" type="EtcItem">
 		<!-- Double-click to obtain one of the following rewards at random: Freya's Ice Rose, Emperor's Special Cocktail, Freya's Scroll of Storm (3 pcs.), Honey Dark Beer, Special Clan Reward Lv. 3. -->
@@ -743,6 +751,16 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="80612" min="3" max="3" chance="23.5" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80832" min="1" max="1" chance="23.5" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81140" min="1" max="1" chance="23.5" /> <!-- Freya's Scroll of Storm - Event -->
+			<item id="81460" min="1" max="1" chance="23.5" /> <!-- Honey Dark Beer - Event -->
+			<item id="81457" min="1" max="1" chance="6" /> <!-- Special Clan Reward Lv. 3 -->
+		</capsuled_items>
 	</item>
 	<item id="81457" name="Special Clan Reward Lv. 3" type="EtcItem">
 		<!-- Double-click to obtain one of the following rewards: Freya's Ice Rose (2 pcs.), Emperor's Special Cocktail, Freya's Scroll of Storm (6 pcs.), Honey Dark Beer (2 pcs.), Glowing Dragon's Attribute Potion (2 pcs.), Shining Nevit's Gold Hourglass (2 pcs.), Special Clan Reward Lv. 4. -->
@@ -754,6 +772,18 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48755" min="2" max="2" chance="16" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="80612" min="2" max="2" chance="16" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80797" min="2" max="2" chance="16" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+			<item id="80832" min="1" max="1" chance="16" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81140" min="6" max="6" chance="16" /> <!-- Freya's Scroll of Storm - Event -->
+			<item id="81460" min="2" max="2" chance="16" /> <!-- Honey Dark Beer - Event -->
+			<item id="81458" min="1" max="1" chance="4" /> <!-- Special Clan Reward Lv. 4 -->
+		</capsuled_items>
 	</item>
 	<item id="81458" name="Special Clan Reward Lv. 4" type="EtcItem">
 		<!-- Double-click to obtain one of the following rewards: Freya's Ice Rose (4 pcs.), Emperor's Special Cocktail (2 pcs.), Freya's Scroll of Storm (12 pcs.), Honey Dark Beer (4 pcs.), Glowing Dragon's Attribute Potion (4 pcs.), Shining Nevit's Gold Hourglass (4 pcs.), Special Clan Reward Lv. 5. -->
@@ -765,6 +795,18 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="48755" min="4" max="4" chance="16.3" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="80612" min="4" max="4" chance="16.3" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80797" min="4" max="4" chance="16.3" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+			<item id="80832" min="2" max="2" chance="16.3" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81140" min="12" max="12" chance="16.4" /> <!-- Freya's Scroll of Storm - Event -->
+			<item id="81460" min="4" max="4" chance="16.4" /> <!-- Honey Dark Beer - Event -->
+			<item id="81459" min="1" max="1" chance="2" /> <!-- Special Clan Reward Lv. 5 -->
+		</capsuled_items>
 	</item>
 	<item id="81459" name="Special Clan Reward Lv. 5" type="EtcItem">
 		<!-- Double-click to obtain one of the following rewards: Freya's Ice Rose (8 pcs.), Emperor's Special Cocktail (4 pcs.), Freya's Scroll of Storm (24 pcs.), Honey Dark Beer (8 pcs.), Glowing Dragon's Attribute Potion (8 pcs.), Shining Nevit's Gold Hourglass (8 pcs.), Energy of Longing, Sealed Talisman of Longing, Bloody Weapon Enhancement Stone, Dark Weapon Enhancement Stone. -->
@@ -776,6 +818,21 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="35649" min="1" max="1" chance="10" /> <!-- Sealed Talisman of Longing -->
+			<item id="47420" min="1" max="1" chance="10" /> <!-- Energy of Longing -->
+			<item id="48755" min="8" max="8" chance="10" /> <!-- Glowing Dragon's Attribute Potion (XP) - Event -->
+			<item id="80612" min="8" max="8" chance="10" /> <!-- Freya's Ice Rose - Event -->
+			<item id="80797" min="8" max="8" chance="10" /> <!-- Shining Nevit's Gold Hourglass - Event -->
+			<item id="80832" min="4" max="4" chance="10" /> <!-- Emperor's Special Cocktail - Event -->
+			<item id="81140" min="24" max="24" chance="10" /> <!-- Freya's Scroll of Storm - Event -->
+			<item id="81460" min="8" max="8" chance="10" /> <!-- Honey Dark Beer - Event -->
+			<item id="35566" min="1" max="1" chance="10" /> <!-- Dark Weapon Enhancement Stone -->
+			<item id="35568" min="1" max="1" chance="10" /> <!-- Bloody Weapon Enhancement Stone -->
+		</capsuled_items>
 	</item>
 	<item id="81460" name="Honey Dark Beer" additionalName="Event" type="EtcItem">
 		<!-- For 30 min., all basic stats +3, Vitality bonus +30%. The effect remains after death. Cooldown: 5 min. Cannot be used in the Olympiad. -->
@@ -817,10 +874,12 @@
 		<set name="default_action" val="SKILL_REDUCE" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
+		<set name="is_tradable" val="true" />
+		<set name="is_dropable" val="true" />
+		<set name="is_depositable" val="true" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ItemSkills" />
 		<set name="immediate_effect" val="true" />
-		<set name="reuse_delay" val="36000000" />
 		<skills>
 			<skill id="39657" level="1" /> <!-- Tower of Insolence's Time Stone (Lower Floor) -->
 		</skills>

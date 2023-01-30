@@ -158,7 +158,7 @@ public class ExPetUnequipItem implements ClientPacket
 			
 			if (player.isCastingNow())
 			{
-				// Create and Bind the next action to the AI
+				// Create and Bind the next action to the AI.
 				player.getAI().setNextAction(new NextAction(CtrlEvent.EVT_FINISH_CASTING, CtrlIntention.AI_INTENTION_CAST, () ->
 				{
 					pet.transferItem("UnequipFromPet", item.getObjectId(), 1, player.getInventory(), player, null);

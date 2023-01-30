@@ -210,7 +210,7 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 						{
 							// Safe enchant: Remain old value.
 							player.sendPacket(SystemMessageId.ENCHANT_FAILED_THE_ENCHANT_SKILL_FOR_THE_CORRESPONDING_ITEM_WILL_BE_EXACTLY_RETAINED);
-							player.sendPacket(new EnchantResult(EnchantResult.SAFE_FAIL, enchantItem));
+							player.sendPacket(new EnchantResult(EnchantResult.SAFE_FAIL, new ItemHolder(enchantItem.getId(), 1), null, 0));
 							if (Config.LOG_ITEM_ENCHANTS)
 							{
 								final StringBuilder sb = new StringBuilder();
@@ -320,7 +320,7 @@ public class ExRequestMultiEnchantItemList implements ClientPacket
 							{
 								_failureReward.put(_failureReward.size() + 1, destroyReward);
 								player.addItem("Enchant", destroyReward.getId(), destroyReward.getCount(), null, true);
-								player.sendPacket(new EnchantResult(EnchantResult.FAIL, destroyReward.getId(), (int) destroyReward.getCount()));
+								player.sendPacket(new EnchantResult(EnchantResult.FAIL, destroyReward, null, 0));
 							}
 							
 							if (Config.LOG_ITEM_ENCHANTS)

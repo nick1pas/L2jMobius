@@ -65,14 +65,27 @@
 		<set name="is_freightable" val="true" />
 		<set name="default_action" val="CAPSULE" />
 		<set name="material" val="PAPER" />
+		<set name="extractableCountMin" val="1" />
+		<set name="extractableCountMax" val="1" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="37565" min="1" max="1" chance="33.333333333333336" /> <!-- Emperor's Rune Pack -->
+			<item id="37671" min="150" max="150" chance="33.333333333333336" /> <!-- Heavenly Recovery Potion -->
+			<item id="37906" min="1" max="1" chance="33.33333333333333" /> <!-- Kat the Cat's Box of Roses -->
+		</capsuled_items>
 	</item>
 	<item id="37906" name="Kat the Cat's Box of Roses" type="EtcItem">
 		<!-- Double-click to acquire 1 Enhanced Rose Spirit Coupon (5 hours) and 150 Rose Essences. -->
 		<set name="icon" val="icon.etc_pi_box_love_pack" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="default_action" val="PEEL" />
+		<set name="default_action" val="CAPSULE" />
 		<set name="material" val="FISH" />
+		<set name="handler" val="ExtractableItems" />
+		<capsuled_items>
+			<item id="20904" min="150" max="150" chance="100" /> <!-- Rose Essence -->
+			<item id="20914" min="1" max="1" chance="100" /> <!-- Enhanced Rose Spirit Coupon (5-hour) -->
+		</capsuled_items>
 	</item>
 	<item id="37907" name="Pig Lollipop Appearance Stone: One-handed Sword" type="EtcItem">
 		<!-- Changes the appearance of a one-handed sword to that of Pig Lollipop. -->

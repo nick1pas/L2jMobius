@@ -166,17 +166,31 @@ public class SpawnData implements IXmlReader
 		return result;
 	}
 	
-	public List<SpawnGroup> getGroupsByName(String groupName)
+	public SpawnTemplate getSpawnByName(String name)
 	{
-		final List<SpawnGroup> result = new ArrayList<>();
-		for (SpawnTemplate template : _spawns)
+		for (SpawnTemplate spawn : _spawns)
 		{
-			if ((template.getName() != null) && groupName.equalsIgnoreCase(template.getName()))
+			if ((spawn.getName() != null) && spawn.getName().equalsIgnoreCase(name))
 			{
-				result.addAll(template.getGroups());
+				return spawn;
 			}
 		}
-		return result;
+		return null;
+	}
+	
+	public SpawnGroup getSpawnGroupByName(String name)
+	{
+		for (SpawnTemplate spawnTemplate : _spawns)
+		{
+			for (SpawnGroup group : spawnTemplate.getGroups())
+			{
+				if ((group.getName() != null) && group.getName().equalsIgnoreCase(name))
+				{
+					return group;
+				}
+			}
+		}
+		return null;
 	}
 	
 	public List<NpcSpawnTemplate> getNpcSpawns(Predicate<NpcSpawnTemplate> condition)

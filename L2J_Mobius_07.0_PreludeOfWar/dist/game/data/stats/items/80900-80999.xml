@@ -15,6 +15,7 @@
 		<set name="spiritshots" val="1" />
 		<set name="is_sellable" val="false" />
 		<set name="damage_range" val="0;0;40;120" />
+		<set name="equip_reuse_delay" val="300" />
 		<skills>
 			<skill id="35531" level="1" /> <!-- Blood-stained Akamanah - Warrior -->
 			<skill id="35536" level="1" /> <!-- Soul's Insanity - Akamanah -->
@@ -52,7 +53,6 @@
 	<item id="80903" name="Zariche's Sealed Box" type="EtcItem">
 		<!-- Box of darkness in which the madness of the Demonic Sword Zariche is sealed. Double-click to obtain a Blood-thirsty Zariche weapon or Zariche's Blood. -->
 		<set name="icon" val="icon.zariche_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -82,7 +82,6 @@
 	<item id="80904" name="Akamanah's Sealed Box" type="EtcItem">
 		<!-- Box of darkness in which the madness of the Blood Sword Akamanah is sealed. Double-click to obtain a Blood-thirsty Akamanah weapon or Akamanah's Blood. -->
 		<set name="icon" val="icon.aka_manaf_box" />
-		<set name="default_action" val="SKILL_REDUCE_ON_SKILL_SUCCESS" />
 		<set name="material" val="PAPER" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
@@ -214,7 +213,7 @@
 			<item id="33794" min="30000" max="30000" chance="100" /> <!-- Blessed R-grade Spiritshot -->
 			<item id="33640" min="10" max="10" chance="100" /> <!-- Blessed Scroll of Escape -->
 			<item id="47044" min="1" max="1" chance="100" /> <!-- Commando Belt -->
-			<item id="48848" min="25" max="35" chance="100" /> <!-- Freya's Ice Rose -->
+			<item id="48848" min="35" max="35" chance="100" /> <!-- Freya's Ice Rose -->
 			<item id="33780" min="30000" max="30000" chance="100" /> <!-- Soulshot (R-grade) -->
 		</capsuled_items>
 	</item>
@@ -335,6 +334,16 @@
 		<set name="is_dropable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
+		<set name="is_stackable" val="true" />
+		<set name="reuse_delay" val="60000" />
+		<set name="handler" val="ItemSkills" />
+		<set name="immediate_effect" val="true" />
+		<cond>
+			<player MaximumVitalityPoints="140000" />
+		</cond>
+		<skills>
+			<skill id="39547" level="1" /> <!-- Emperor's Vitality Tonic (Event) -->
+		</skills>
 	</item>
 	<item id="80921" name="Lindvior's Treasure Chest" type="EtcItem">
 		<!-- Precious treasure chest obtained after the campaign against Lindvior. Double-click to get one rare item. -->
@@ -470,6 +479,9 @@
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
 		<set name="weight" val="5" />
+		<set name="is_tradable" val="false" />
+		<set name="is_dropable" val="false" />
+		<set name="is_depositable" val="false" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="ExtractableItems" />
@@ -487,7 +499,7 @@
 			<item id="80944" min="1" max="1" chance="8.33" /> <!-- Greater Zodiac Agathion -->
 			<item id="80945" min="1" max="1" chance="8.33" /> <!-- Greater Zodiac Agathion -->
 			<item id="80946" min="1" max="1" chance="8.33" /> <!-- Greater Zodiac Agathion -->
-			<item id="80947" min="1" max="1" chance="8.33" /> <!-- Greater Zodiac Agathion -->
+			<item id="80947" min="1" max="1" chance="8.34" /> <!-- Greater Zodiac Agathion -->
 		</capsuled_items>
 	</item>
 	<item id="80932" name="Enhanced Zodiac Agathion Book of Growth" type="EtcItem">

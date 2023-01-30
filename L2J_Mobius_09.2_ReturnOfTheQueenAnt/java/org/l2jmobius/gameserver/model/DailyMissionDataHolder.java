@@ -56,7 +56,7 @@ public class DailyMissionDataHolder
 		_params = set.getObject("params", StatSet.class);
 		_dailyReset = set.getBoolean("dailyReset", true);
 		_isOneTime = set.getBoolean("isOneTime", true);
-		_isMainClassOnly = set.getBoolean("isMainClassOnly", true);
+		_isMainClassOnly = set.getBoolean("isMainClassOnly", false);
 		_isDualClassOnly = set.getBoolean("isDualClassOnly", false);
 		_isDisplayedWhenNotAvailable = set.getBoolean("isDisplayedWhenNotAvailable", true);
 		_handler = handler != null ? handler.apply(this) : null;

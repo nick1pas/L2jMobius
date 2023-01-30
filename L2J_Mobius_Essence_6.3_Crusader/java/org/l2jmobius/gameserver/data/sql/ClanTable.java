@@ -162,11 +162,11 @@ public class ClanTable
 			return null;
 		}
 		
-		if (player.getLevel() < 10)
-		{
-			player.sendPacket(SystemMessageId.YOU_DO_NOT_MEET_THE_CRITERIA_IN_ORDER_TO_CREATE_A_CLAN);
-			return null;
-		}
+		// if (player.getLevel() < 10)
+		// {
+		// player.sendPacket(SystemMessageId.YOU_DO_NOT_MEET_THE_CRITERIA_IN_ORDER_TO_CREATE_A_CLAN);
+		// return null;
+		// }
 		if (player.getClanId() != 0)
 		{
 			player.sendPacket(SystemMessageId.FAILED_TO_CREATE_A_CLAN);

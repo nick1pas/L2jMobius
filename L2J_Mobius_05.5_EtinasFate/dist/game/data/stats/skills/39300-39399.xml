@@ -207,6 +207,17 @@
 		<!-- As Agathion grows, Fixed Damage Resistance increases. -->
 		<icon>icon.agathion_tersi_guard_1</icon>
 		<operateType>P</operateType>
+		<effects>
+			<effect name="RealDamageResist">
+				<amount>
+					<value level="1">0</value>
+					<value level="2">2</value>
+					<value level="3">4</value>
+					<value level="4">7</value>
+				</amount>
+				<mode>PER</mode>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39334" toLevel="1" name="Red Libra Entrance Pass - Kartia Labyrinth (Lv. 95 Party)">
 		<operateType>A1</operateType>
@@ -237,8 +248,26 @@
 	</skill>
 	<skill id="39343" toLevel="1" name="Red Libra Specialty - Vitality Tonic">
 		<icon>icon.bm_freya_potion</icon>
+		<isMagic>2</isMagic> <!-- Static Skill -->
+		<itemConsumeCount>1</itemConsumeCount>
+		<itemConsumeId>48706</itemConsumeId> <!-- Orc's Special Medium Vitality Tonic -->
+		<magicLevel>1</magicLevel>
 		<operateType>A1</operateType>
-		<reuseDelay>60000</reuseDelay>
+		<magicCriticalRate>5</magicCriticalRate>
+		<specialLevel>-1</specialLevel>
+		<hitCancelTime>0</hitCancelTime>
+		<staticReuse>true</staticReuse>
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
+		<conditions>
+			<condition name="CanUseVitalityIncreaseItem" />
+		</conditions>
+		<effects>
+			<effect name="VitalityPointUp">
+				<value>70000</value>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39344" toLevel="1" name="Red Libra Specialty - Fishing XP Bonus">
 		<!-- When used, increases Successful Fishing XP by 50% for 1 hr.. Applies to all bait. Can be stacked with Angler's Blessing. Will be deleted during maintenance on Wednesday, November 29th when the Red Libra Merchants leave. -->
@@ -312,11 +341,54 @@
 	<skill id="39347" toLevel="1" name="Shining Dragon Attribute Tonic (XP)">
 		<!-- For 30 min., Atk. Attribute +70, Attribute Resistance +70, and Acquired XP/ SP +30%. Buffs persist after death. Will be during maintenance on January 3rd, 2018. -->
 		<icon>icon.bm_dragon_posion_special</icon>
-		<operateType>A1</operateType>
-		<isMagic>4</isMagic>
+		<operateType>A2</operateType>
+		<isMagic>2</isMagic>
 		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
 		<reuseDelay>300000</reuseDelay>
+		<abnormalType>GLOWING_DRAGON_POTION</abnormalType>
+		<abnormalLevel>1</abnormalLevel>
 		<effectPoint>1</effectPoint>
+		<abnormalTime>1800</abnormalTime>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>70</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="ExpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>30</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39348" toLevel="1" name="Angler's Blessing (1-hr.)">
 		<!-- Increases Acquired XP/ SP on successful fishing by 100% for 1 hr.. Buff persists after death and cannot be forcibly removed. Will be deleted during maintenance on January 3rd, 2018. -->
@@ -627,11 +699,54 @@
 	<skill id="39356" toLevel="1" name="Shining Dragon Attribute Tonic (XP)">
 		<!-- Increases Atk. Attribute by 70, Attribute Resistance by 70, and Acquired XP/ SP by 30% for 30 min. Buffs persist after death. -->
 		<icon>icon.bm_dragon_posion_special</icon>
-		<operateType>A1</operateType>
-		<isMagic>4</isMagic>
+		<operateType>A2</operateType>
+		<isMagic>2</isMagic>
 		<hitTime>1000</hitTime>
+		<coolTime>500</coolTime>
 		<reuseDelay>300000</reuseDelay>
+		<abnormalType>GLOWING_DRAGON_POTION</abnormalType>
+		<abnormalLevel>1</abnormalLevel>
 		<effectPoint>1</effectPoint>
+		<abnormalTime>1800</abnormalTime>
+		<stayAfterDeath>true</stayAfterDeath>
+		<blockedInOlympiad>true</blockedInOlympiad> <!-- Unconfirmed -->
+		<targetType>SELF</targetType>
+		<affectScope>SINGLE</affectScope>
+		<effects>
+			<effect name="AttackAttributeAdd">
+				<amount>70</amount>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>FIRE</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WATER</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>EARTH</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>WIND</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>HOLY</attribute>
+			</effect>
+			<effect name="DefenceAttribute">
+				<amount>70</amount>
+				<attribute>DARK</attribute>
+			</effect>
+			<effect name="ExpModify">
+				<amount>30</amount>
+			</effect>
+			<effect name="SpModify">
+				<amount>30</amount>
+			</effect>
+		</effects>
 	</skill>
 	<skill id="39357" toLevel="2" name="+9 Fallen Angel's Ring Box">
 		<!-- Use to obtain a Fallen Angel's Ring enchanted to +9. -->

@@ -113,6 +113,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 	private List<DropGroupHolder> _dropGroups;
 	private List<DropHolder> _dropListDeath;
 	private List<DropHolder> _dropListSpoil;
+	private List<DropHolder> _dropListFortune;
 	private float _collisionRadiusGrown;
 	private float _collisionHeightGrown;
 	private int _mpRewardValue;
@@ -682,6 +683,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 	{
 		_dropListDeath = null;
 		_dropListSpoil = null;
+		_dropListFortune = null;
 	}
 	
 	public void setDropGroups(List<DropGroupHolder> groups)
@@ -705,6 +707,15 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 			_dropListSpoil = new ArrayList<>(1);
 		}
 		_dropListSpoil.add(dropHolder);
+	}
+	
+	public void addFortune(DropHolder dropHolder)
+	{
+		if (_dropListFortune == null)
+		{
+			_dropListFortune = new ArrayList<>(1);
+		}
+		_dropListFortune.add(dropHolder);
 	}
 	
 	public List<DropGroupHolder> getDropGroups()
@@ -756,7 +767,14 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 				return ungroupedDrops;
 			}
 		}
-		else if ((dropType == DropType.SPOIL) && (_dropListSpoil != null))
+		else if (dropType == DropType.SPOIL)
+		{
+			if (_dropListSpoil != null)
+			{
+				return calculateUngroupedDrops(dropType, victim, killer);
+			}
+		}
+		else if ((dropType == DropType.FORTUNE) && (_dropListFortune != null))
 		{
 			return calculateUngroupedDrops(dropType, victim, killer);
 		}
@@ -935,7 +953,7 @@ public class NpcTemplate extends CreatureTemplate implements IIdentifiable
 	
 	private List<ItemHolder> calculateUngroupedDrops(DropType dropType, Creature victim, Creature killer)
 	{
-		final List<DropHolder> dropList = dropType == DropType.SPOIL ? _dropListSpoil : _dropListDeath;
+		final List<DropHolder> dropList = dropType == DropType.SPOIL ? _dropListSpoil : dropType == DropType.FORTUNE ? _dropListFortune : _dropListDeath;
 		
 		// level difference calculations
 		final int levelDifference = victim.getLevel() - killer.getLevel();

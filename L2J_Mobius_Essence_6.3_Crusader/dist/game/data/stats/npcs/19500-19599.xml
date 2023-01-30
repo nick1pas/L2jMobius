@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../xsd/npcs.xsd">
-	<npc id="19545" level="70" type="Monster" name="Flame of Calm">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+	<npc id="19545" level="70" type="Folk" name="Flame of Calm">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
@@ -39,18 +38,18 @@
 			<height normal="60" />
 		</collision>
 	</npc>
-	<npc id="19596" level="85" type="Folk" name="Fake Kelbim">
-		<!-- AUTO GENERATED NPC TODO: FIX IT -->
+	<npc id="19596" level="90" type="Folk" name="Fake Kelbim">
 		<race>ETC</race>
-		<sex>FEMALE</sex>
-		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="1" hpRegen="10.5" mp="1" mpRegen="3.6" />
+		<sex>MALE</sex>
+		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+			<vitals hp="1.26582" hpRegen="10.2" mp="1" mpRegen="3.6" />
+			<attack physical="3611" magical="2465" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
+			<defence physical="2383" magical="1045" />
 			<speed>
 				<walk ground="60" />
 				<run ground="1" />
 			</speed>
-			<attack physical="1950.2231755595" magical="1331.5869440987" critical="4" attackSpeed="253" range="40" />
-			<defence physical="405.85106382979" magical="297.0297029703" />
+			<hitTime>600</hitTime>
 		</stats>
 		<status attackable="false" />
 		<collision>

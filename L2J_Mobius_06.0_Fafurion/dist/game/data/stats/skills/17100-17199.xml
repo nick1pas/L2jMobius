@@ -128,6 +128,7 @@
 		<staticReuse>true</staticReuse>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
 		<conditions>
 			<condition name="CanUseVitalityIncreaseItem" />
 		</conditions>
@@ -138,6 +139,7 @@
 		</effects>
 	</skill>
 	<skill id="17120" toLevel="1" name="Emperor's Vitality Tonic (Medium)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>37561</itemConsumeId> <!-- Emperor's Vitality Tonic -->
 		<magicLevel>1</magicLevel>
@@ -148,6 +150,7 @@
 		<staticReuse>true</staticReuse>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
 		<conditions>
 			<condition name="CanUseVitalityIncreaseItem" />
 		</conditions>
@@ -158,6 +161,7 @@
 		</effects>
 	</skill>
 	<skill id="17121" toLevel="1" name="Emperor's Special Vitality Tonic (3 bars)">
+		<isMagic>2</isMagic> <!-- Static Skill -->
 		<itemConsumeCount>1</itemConsumeCount>
 		<itemConsumeId>37562</itemConsumeId> <!-- Emperor's Vitality Tonic -->
 		<magicLevel>1</magicLevel>
@@ -168,6 +172,7 @@
 		<staticReuse>true</staticReuse>
 		<targetType>SELF</targetType>
 		<affectScope>SINGLE</affectScope>
+		<blockedInOlympiad>true</blockedInOlympiad>
 		<conditions>
 			<condition name="CanUseVitalityIncreaseItem" />
 		</conditions>

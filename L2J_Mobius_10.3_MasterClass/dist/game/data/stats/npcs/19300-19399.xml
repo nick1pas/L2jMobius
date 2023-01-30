@@ -10,7 +10,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="321920.871586548" hpRegen="8.5" mp="22058" mpRegen="30" />
+			<vitals hp="643842.2" hpRegen="8.5" mp="22058" mpRegen="30" />
 			<attack physical="13006.6570723381" magical="2302.7074232383" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="310.826151178162" magical="176.707787371517" />
 			<speed>
@@ -29,7 +29,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="10" /> <!-- HP Increase (2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="15" /> <!-- Strong M. Atk. -->
@@ -58,7 +58,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="312844.449201519" hpRegen="8.5" mp="21324" mpRegen="30" />
+			<vitals hp="156422" hpRegen="8.5" mp="21324" mpRegen="30" />
 			<attack physical="11819.9958080598" magical="2098.92127856138" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="298.756392904808" magical="168.193015939576" />
 			<speed>
@@ -77,7 +77,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/ 2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -155,7 +155,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="15304" /> <!-- Transparent Crossbow (NPC) -->
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="313367.483038276" hpRegen="8.5" mp="21690" mpRegen="30" />
+			<vitals hp="156683.2" hpRegen="8.5" mp="21690" mpRegen="30" />
 			<attack physical="12394.8688710474" magical="2196.94060802663" random="10" critical="4" accuracy="5" attackSpeed="253" type="BOW" range="800" distance="80" width="120" />
 			<defence physical="304.731520762904" magical="172.397841338065" />
 			<speed>
@@ -174,7 +174,7 @@
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/ 2x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -296,7 +296,7 @@
 		<sex>MALE</sex>
 		<acquire exp="194" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14467.5287374727" hpRegen="8.5" mp="2132.4" mpRegen="3" />
+			<vitals hp="72337.57" hpRegen="8.5" mp="2132.4" mpRegen="3" />
 			<attack physical="5065.71248916851" magical="899.53769081202" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="466.806863913762" magical="262.801587405588" />
 			<speed>
@@ -313,7 +313,7 @@
 		<skillList>
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -323,33 +323,23 @@
 			<skill id="4415" level="3" /> <!-- One-handed Sword -->
 		</skillList>
 		<ai clanHelpRange="300" aggroRange="450" />
-		<dropLists>
-			<drop>
-				<group chance="20">
-					<item id="8600" min="1" max="1" chance="50" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="40" /> <!-- Major Herb of Life -->
-					<item id="8602" min="1" max="1" chance="10" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="33">
-					<item id="8603" min="1" max="1" chance="60" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="30" /> <!-- Major Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-			</drop>
-		</dropLists>
 		<collision>
 			<radius normal="12" />
 			<height normal="26" />
 		</collision>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+			</drop>
+		</dropLists>
 	</npc>
 	<npc id="19307" level="96" type="Monster" name="Yin Spicula Captain">
 		<parameters>
@@ -360,7 +350,7 @@
 		<sex>MALE</sex>
 		<acquire exp="198" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14467.5287374727" hpRegen="8.5" mp="2132.4" mpRegen="3" />
+			<vitals hp="72337.57" hpRegen="8.5" mp="2132.4" mpRegen="3" />
 			<attack physical="5065.71248916851" magical="899.53769081202" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="466.806863913762" magical="262.801587405588" />
 			<speed>
@@ -377,7 +367,7 @@
 		<skillList>
 			<skill id="4416" level="6" /> <!-- Humanoids -->
 			<skill id="14765" level="4" /> <!-- Vampiric Rage Resistance -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -387,33 +377,23 @@
 			<skill id="4415" level="3" /> <!-- One-handed Sword -->
 		</skillList>
 		<ai clanHelpRange="300" aggroRange="450" />
-		<dropLists>
-			<drop>
-				<group chance="20">
-					<item id="8600" min="1" max="1" chance="50" /> <!-- Herb of Life -->
-					<item id="8601" min="1" max="1" chance="40" /> <!-- Major Herb of Life -->
-					<item id="8602" min="1" max="1" chance="10" /> <!-- Superior Herb of Life -->
-				</group>
-				<group chance="33">
-					<item id="8603" min="1" max="1" chance="60" /> <!-- Herb of Mana -->
-					<item id="8604" min="1" max="1" chance="30" /> <!-- Major Herb of Mana -->
-					<item id="8605" min="1" max="1" chance="10" /> <!-- Superior Herb of Mana -->
-				</group>
-				<group chance="0.7">
-					<item id="34849" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Power -->
-				</group>
-				<group chance="0.7">
-					<item id="34850" min="1" max="1" chance="100" /> <!-- Mysterious Herb of Magic -->
-				</group>
-				<group chance="0.1">
-					<item id="13028" min="1" max="1" chance="100" /> <!-- Vitality Recovering Potion - Grizzly -->
-				</group>
-			</drop>
-		</dropLists>
 		<collision>
 			<radius normal="12" />
 			<height normal="26" />
 		</collision>
+		<dropLists>
+			<drop>
+				<item id="8600" min="1" max="1" chance="10" /> <!-- Herb of Life -->
+				<item id="8601" min="1" max="1" chance="8" /> <!-- Major Herb of Life -->
+				<item id="8602" min="1" max="1" chance="2" /> <!-- Superior Herb of Life -->
+				<item id="8603" min="1" max="1" chance="19.8" /> <!-- Herb of Mana -->
+				<item id="8604" min="1" max="1" chance="9.9" /> <!-- Major Herb of Mana -->
+				<item id="8605" min="1" max="1" chance="3.3" /> <!-- Superior Herb of Mana -->
+				<item id="13028" min="1" max="1" chance="0.1" /> <!-- Vitality Recovering Potion - Grizzly -->
+				<item id="34849" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Power -->
+				<item id="34850" min="1" max="1" chance="0.7" /> <!-- Mysterious Herb of Magic -->
+			</drop>
+		</dropLists>
 	</npc>
 	<npc id="19308" level="94" type="Monster" name="Body Part" title="Spicula Clone Generator">
 		<parameters>
@@ -422,7 +402,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -441,7 +421,7 @@
 			<skill id="4416" level="2" /> <!-- Magical Creatures -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -465,7 +445,7 @@
 		<sex>MALE</sex>
 		<acquire exp="211" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -483,7 +463,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -505,7 +485,7 @@
 		<race>FRIEND</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -523,7 +503,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -546,7 +526,7 @@
 		<sex>MALE</sex>
 		<acquire exp="211" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -564,7 +544,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -586,7 +566,7 @@
 		<race>FRIEND</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -604,7 +584,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -627,7 +607,7 @@
 		<sex>MALE</sex>
 		<acquire exp="211" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -645,7 +625,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -667,7 +647,7 @@
 		<race>FRIEND</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14806.6982893791" hpRegen="8.5" mp="2205.8" mpRegen="3" />
+			<vitals hp="74033.52" hpRegen="8.5" mp="2205.8" mpRegen="3" />
 			<attack physical="1" magical="986.874609959272" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="485.665861215878" magical="276.105917767995" />
 			<speed>
@@ -685,7 +665,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -708,7 +688,7 @@
 		<sex>MALE</sex>
 		<acquire exp="199" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14806.6982893791" hpRegen="8.5" mp="2205.8" mpRegen="3" />
+			<vitals hp="74033.52" hpRegen="8.5" mp="2205.8" mpRegen="3" />
 			<attack physical="1" magical="986.874609959272" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="485.665861215878" magical="276.105917767995" />
 			<speed>
@@ -726,7 +706,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -748,7 +728,7 @@
 		<race>FRIEND</race>
 		<sex>MALE</sex>
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -766,7 +746,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -789,7 +769,7 @@
 		<sex>MALE</sex>
 		<acquire exp="211" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="1" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -807,7 +787,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -830,7 +810,7 @@
 		<sex>MALE</sex>
 		<acquire exp="211" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="43643.01873" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="218215" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="5312.08665902033" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -848,7 +828,7 @@
 		<skillList>
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -873,7 +853,7 @@
 		<sex>MALE</sex>
 		<acquire exp="211" sp="1" />
 		<stats str="88" int="79" dex="55" wit="78" con="82" men="78">
-			<vitals hp="14547.6729144727" hpRegen="8.5" mp="2169" mpRegen="3" />
+			<vitals hp="72738.73" hpRegen="8.5" mp="2169" mpRegen="3" />
 			<attack physical="5312.08665902033" magical="941.545974868554" random="10" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="476.143001192038" magical="269.371627090727" />
 			<speed>
@@ -892,7 +872,7 @@
 			<skill id="4416" level="21" /> <!-- Siege Weapons -->
 			<skill id="14765" level="3" /> <!-- Vampiric Rage Resistance -->
 			<skill id="5465" level="1" /> <!-- Earth Attribute -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
+			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
 			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="14" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="14" /> <!-- Strong M. Atk. -->
@@ -1214,45 +1194,41 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="15">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="6.05" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="8.75" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.011" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.011" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.011" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.011" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.011" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.011" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.011" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.011" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.011" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.011" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.011" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.011" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -1846,45 +1822,41 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="15">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="6.05" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="8.75" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.011" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.011" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.011" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.011" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.011" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.011" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.011" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.011" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.011" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.011" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.011" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.011" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>
@@ -2479,45 +2451,41 @@
 		</collision>
 		<dropLists>
 			<drop>
-				<group chance="15">
-					<item id="17416" min="1" max="1" chance="0.01" /> <!-- Helios Shaper -->
-					<item id="17417" min="1" max="1" chance="0.01" /> <!-- Helios Cutter -->
-					<item id="17418" min="1" max="1" chance="0.01" /> <!-- Helios Slasher -->
-					<item id="17419" min="1" max="1" chance="0.01" /> <!-- Helios Avenger -->
-					<item id="17420" min="1" max="1" chance="0.01" /> <!-- Helios Fighter -->
-					<item id="17421" min="1" max="1" chance="0.01" /> <!-- Helios Stormer -->
-					<item id="17422" min="1" max="1" chance="0.01" /> <!-- Helios Thrower -->
-					<item id="17423" min="1" max="1" chance="0.01" /> <!-- Helios Guardian -->
-					<item id="17424" min="1" max="1" chance="0.01" /> <!-- Helios Buster -->
-					<item id="17425" min="1" max="1" chance="0.01" /> <!-- Helios Caster -->
-					<item id="17426" min="1" max="1" chance="0.01" /> <!-- Helios Retributer -->
-					<item id="17427" min="1" max="1" chance="0.01" /> <!-- Helios Dual Swords -->
-					<item id="17428" min="1" max="1" chance="0.01" /> <!-- Helios Dual Daggers -->
-					<item id="17429" min="1" max="1" chance="0.01" /> <!-- Helios Dual Blunt Weapons -->
-					<item id="17430" min="1" max="1" chance="0.07" /> <!-- Eternal Helmet - Heavy armor -->
-					<item id="17431" min="1" max="1" chance="0.07" /> <!-- Eternal Breastplate - Heavy armor -->
-					<item id="17432" min="1" max="1" chance="0.07" /> <!-- Eternal Gaiters - Heavy armor -->
-					<item id="17433" min="1" max="1" chance="0.07" /> <!-- Eternal Gauntlets - Heavy armor -->
-					<item id="17434" min="1" max="1" chance="0.07" /> <!-- Eternal Boots - Heavy armor -->
-					<item id="17435" min="1" max="1" chance="0.07" /> <!-- Eternal Shield -->
-					<item id="17436" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Helmet - Light armor -->
-					<item id="17437" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Armor - Light armor -->
-					<item id="17438" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Leggings - Light armor -->
-					<item id="17439" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Gloves - Light armor -->
-					<item id="17440" min="1" max="1" chance="0.07" /> <!-- Eternal Leather Boots - Light armor -->
-					<item id="17441" min="1" max="1" chance="0.07" /> <!-- Eternal Circlet - Robe -->
-					<item id="17442" min="1" max="1" chance="0.07" /> <!-- Eternal Tunic - Robe -->
-					<item id="17443" min="1" max="1" chance="0.07" /> <!-- Eternal Stockings - Robe -->
-					<item id="17444" min="1" max="1" chance="0.07" /> <!-- Eternal Gloves - Robe -->
-					<item id="17445" min="1" max="1" chance="0.07" /> <!-- Eternal Shoes - Robe -->
-					<item id="17446" min="1" max="1" chance="0.07" /> <!-- Eternal Sigil -->
-					<item id="19448" min="1" max="1" chance="58.335" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
-					<item id="19447" min="1" max="1" chance="40.335" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
-				</group>
-				<group chance="100">
-					<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
-					<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
-				</group>
+				<item id="17526" min="1" max="1" chance="40" /> <!-- Scroll: Enchant R-grade Weapon -->
+				<item id="17527" min="1" max="1" chance="60" /> <!-- Scroll: Enchant R-grade Armor -->
+				<item id="19447" min="1" max="1" chance="6.05" /> <!-- Blessed Scroll: Enchant R-grade Weapon -->
+				<item id="19448" min="1" max="1" chance="8.75" /> <!-- Blessed Scroll: Enchant R-grade Armor -->
+				<item id="17416" min="1" max="1" chance="0.002" /> <!-- Helios Shaper -->
+				<item id="17417" min="1" max="1" chance="0.002" /> <!-- Helios Cutter -->
+				<item id="17418" min="1" max="1" chance="0.002" /> <!-- Helios Slasher -->
+				<item id="17419" min="1" max="1" chance="0.002" /> <!-- Helios Avenger -->
+				<item id="17420" min="1" max="1" chance="0.002" /> <!-- Helios Fighter -->
+				<item id="17421" min="1" max="1" chance="0.002" /> <!-- Helios Stormer -->
+				<item id="17422" min="1" max="1" chance="0.002" /> <!-- Helios Thrower -->
+				<item id="17423" min="1" max="1" chance="0.002" /> <!-- Helios Guardian -->
+				<item id="17424" min="1" max="1" chance="0.002" /> <!-- Helios Buster -->
+				<item id="17425" min="1" max="1" chance="0.002" /> <!-- Helios Caster -->
+				<item id="17426" min="1" max="1" chance="0.002" /> <!-- Helios Retributer -->
+				<item id="17427" min="1" max="1" chance="0.002" /> <!-- Helios Dual Swords -->
+				<item id="17428" min="1" max="1" chance="0.002" /> <!-- Helios Dual Daggers -->
+				<item id="17429" min="1" max="1" chance="0.002" /> <!-- Helios Dual Blunt Weapons -->
+				<item id="17430" min="1" max="1" chance="0.011" /> <!-- Eternal Helmet - Heavy armor -->
+				<item id="17431" min="1" max="1" chance="0.011" /> <!-- Eternal Breastplate - Heavy armor -->
+				<item id="17432" min="1" max="1" chance="0.011" /> <!-- Eternal Gaiters - Heavy armor -->
+				<item id="17433" min="1" max="1" chance="0.011" /> <!-- Eternal Gauntlets - Heavy armor -->
+				<item id="17434" min="1" max="1" chance="0.011" /> <!-- Eternal Boots - Heavy armor -->
+				<item id="17435" min="1" max="1" chance="0.011" /> <!-- Eternal Shield -->
+				<item id="17436" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Helmet - Light armor -->
+				<item id="17437" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Armor - Light armor -->
+				<item id="17438" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Leggings - Light armor -->
+				<item id="17439" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Gloves - Light armor -->
+				<item id="17440" min="1" max="1" chance="0.011" /> <!-- Eternal Leather Boots - Light armor -->
+				<item id="17441" min="1" max="1" chance="0.011" /> <!-- Eternal Circlet - Robe -->
+				<item id="17442" min="1" max="1" chance="0.011" /> <!-- Eternal Tunic - Robe -->
+				<item id="17443" min="1" max="1" chance="0.011" /> <!-- Eternal Stockings - Robe -->
+				<item id="17444" min="1" max="1" chance="0.011" /> <!-- Eternal Gloves - Robe -->
+				<item id="17445" min="1" max="1" chance="0.011" /> <!-- Eternal Shoes - Robe -->
+				<item id="17446" min="1" max="1" chance="0.011" /> <!-- Eternal Sigil -->
 			</drop>
 		</dropLists>
 	</npc>

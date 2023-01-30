@@ -28,6 +28,7 @@ import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.request.EnchantItemRequest;
 import org.l2jmobius.gameserver.model.holders.ItemChanceHolder;
+import org.l2jmobius.gameserver.model.holders.ItemHolder;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantResultType;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
@@ -127,7 +128,7 @@ public class RequestEnchantItem implements ClientPacket
 		{
 			player.sendPacket(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITIONS);
 			player.removeRequest(request.getClass());
-			player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+			player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 			return;
 		}
 		
@@ -136,7 +137,7 @@ public class RequestEnchantItem implements ClientPacket
 		{
 			Util.handleIllegalPlayerAction(player, player + " use autoenchant program ", Config.DEFAULT_PUNISH);
 			player.removeRequest(request.getClass());
-			player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+			player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 			return;
 		}
 		
@@ -146,7 +147,7 @@ public class RequestEnchantItem implements ClientPacket
 			player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 			Util.handleIllegalPlayerAction(player, player + " tried to enchant with a scroll he doesn't have", Config.DEFAULT_PUNISH);
 			player.removeRequest(request.getClass());
-			player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+			player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 			return;
 		}
 		
@@ -156,7 +157,7 @@ public class RequestEnchantItem implements ClientPacket
 			player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 			Util.handleIllegalPlayerAction(player, player + " tried to enchant with a support item he doesn't have", Config.DEFAULT_PUNISH);
 			player.removeRequest(request.getClass());
-			player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+			player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 			return;
 		}
 		
@@ -168,7 +169,7 @@ public class RequestEnchantItem implements ClientPacket
 			{
 				player.sendPacket(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITIONS);
 				player.removeRequest(request.getClass());
-				player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+				player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 				return;
 			}
 			
@@ -179,7 +180,7 @@ public class RequestEnchantItem implements ClientPacket
 				{
 					player.sendPacket(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITIONS);
 					player.removeRequest(request.getClass());
-					player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+					player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 					break;
 				}
 				case SUCCESS:
@@ -198,7 +199,7 @@ public class RequestEnchantItem implements ClientPacket
 						}
 						item.updateDatabase();
 					}
-					player.sendPacket(new EnchantResult(EnchantResult.SUCCESS, item));
+					player.sendPacket(new EnchantResult(EnchantResult.SUCCESS, new ItemHolder(item.getId(), 1), null, item.getEnchantLevel()));
 					if (Config.LOG_ITEM_ENCHANTS)
 					{
 						final StringBuilder sb = new StringBuilder();
@@ -265,7 +266,7 @@ public class RequestEnchantItem implements ClientPacket
 					{
 						// Safe enchant: Remain old value.
 						player.sendPacket(SystemMessageId.ENCHANT_FAILED_THE_ENCHANT_SKILL_FOR_THE_CORRESPONDING_ITEM_WILL_BE_EXACTLY_RETAINED);
-						player.sendPacket(new EnchantResult(EnchantResult.SAFE_FAIL, item));
+						player.sendPacket(new EnchantResult(EnchantResult.SAFE_FAIL, new ItemHolder(item.getId(), 1), null, item.getEnchantLevel()));
 						if (Config.LOG_ITEM_ENCHANTS)
 						{
 							final StringBuilder sb = new StringBuilder();
@@ -330,7 +331,7 @@ public class RequestEnchantItem implements ClientPacket
 								player.sendPacket(SystemMessageId.THE_BLESSED_ENCHANT_FAILED_THE_ENCHANT_VALUE_OF_THE_ITEM_BECAME_0);
 								item.setEnchantLevel(0);
 							}
-							player.sendPacket(new EnchantResult(EnchantResult.SUCCESS, item));
+							player.sendPacket(new EnchantResult(EnchantResult.SUCCESS, new ItemHolder(item.getId(), 1), null, item.getEnchantLevel()));
 							item.updateDatabase();
 							if (Config.LOG_ITEM_ENCHANTS)
 							{
@@ -364,7 +365,7 @@ public class RequestEnchantItem implements ClientPacket
 								// Unable to destroy item, cheater?
 								Util.handleIllegalPlayerAction(player, "Unable to delete item on enchant failure from " + player + ", possible cheater !", Config.DEFAULT_PUNISH);
 								player.removeRequest(request.getClass());
-								player.sendPacket(new EnchantResult(EnchantResult.ERROR, 0, 0));
+								player.sendPacket(new EnchantResult(EnchantResult.ERROR, null, null, 0));
 								if (Config.LOG_ITEM_ENCHANTS)
 								{
 									final StringBuilder sb = new StringBuilder();
@@ -417,11 +418,20 @@ public class RequestEnchantItem implements ClientPacket
 							
 							if ((crystalId == 0) || (count == 0))
 							{
-								player.sendPacket(new EnchantResult(EnchantResult.NO_CRYSTAL, 0, 0));
+								player.sendPacket(new EnchantResult(EnchantResult.NO_CRYSTAL, null, null, 0));
 							}
 							else
 							{
-								player.sendPacket(new EnchantResult(EnchantResult.FAIL, crystalId, count));
+								final ItemChanceHolder destroyReward = ItemCrystallizationData.getInstance().getItemOnDestroy(player, item);
+								if ((destroyReward != null) && (Rnd.get(100) < destroyReward.getChance()))
+								{
+									player.addItem("Enchant", destroyReward, player, true);
+									player.sendPacket(new EnchantResult(EnchantResult.FAIL, new ItemHolder(crystalId, count), destroyReward, 0));
+								}
+								else
+								{
+									player.sendPacket(new EnchantResult(EnchantResult.FAIL, new ItemHolder(crystalId, count), null, 0));
+								}
 							}
 							
 							if (Config.LOG_ITEM_ENCHANTS)
@@ -450,16 +460,6 @@ public class RequestEnchantItem implements ClientPacket
 						}
 					}
 					break;
-				}
-			}
-			
-			if (resultType == EnchantResultType.FAILURE)
-			{
-				final ItemChanceHolder destroyReward = ItemCrystallizationData.getInstance().getItemOnDestroy(player, item);
-				if ((destroyReward != null) && (Rnd.get(100) < destroyReward.getChance()))
-				{
-					player.addItem("Enchant", destroyReward.getId(), destroyReward.getCount(), null, true);
-					player.sendPacket(new EnchantResult(EnchantResult.FAIL, destroyReward.getId(), (int) destroyReward.getCount()));
 				}
 			}
 			

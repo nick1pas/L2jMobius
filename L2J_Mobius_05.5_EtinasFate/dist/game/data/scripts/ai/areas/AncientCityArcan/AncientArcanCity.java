@@ -19,6 +19,7 @@ package ai.areas.AncientCityArcan;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.l2jmobius.gameserver.data.xml.SpawnData;
 import org.l2jmobius.gameserver.enums.Movie;
 import org.l2jmobius.gameserver.instancemanager.QuestManager;
 import org.l2jmobius.gameserver.instancemanager.ZoneManager;
@@ -29,7 +30,6 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.quest.Quest;
 import org.l2jmobius.gameserver.model.quest.QuestState;
 import org.l2jmobius.gameserver.model.spawns.SpawnGroup;
-import org.l2jmobius.gameserver.model.spawns.SpawnTemplate;
 import org.l2jmobius.gameserver.model.zone.ZoneType;
 import org.l2jmobius.gameserver.model.zone.type.ScriptZone;
 import org.l2jmobius.gameserver.network.NpcStringId;
@@ -43,7 +43,7 @@ import quests.Q10301_ShadowOfTerrorBlackishRedFog.Q10301_ShadowOfTerrorBlackishR
 
 /**
  * Ancient Arcan City AI.
- * @author St3eT
+ * @author St3eT, Mobius
  */
 public class AncientArcanCity extends AbstractNpcAI
 {
@@ -56,14 +56,20 @@ public class AncientArcanCity extends AbstractNpcAI
 	private static final ScriptZone BROADCAST_ZONE = ZoneManager.getInstance().getZoneById(23600, ScriptZone.class); // Ancient Arcan City zone
 	private static final ScriptZone TELEPORT_ZONE = ZoneManager.getInstance().getZoneById(12015, ScriptZone.class); // Anghel Waterfall teleport zone
 	// Misc
+	private static final SpawnGroup CEREMONY_SPAWNS = SpawnData.getInstance().getSpawnGroupByName("ArcanCeremony");
+	private static final Set<Npc> CEREMONIAL_CATS = ConcurrentHashMap.newKeySet();
 	private static final int CHANGE_STATE_TIME = 1800000; // 30min
-	private boolean isCeremonyRunning = false;
-	private final Set<SpawnTemplate> _templates = ConcurrentHashMap.newKeySet();
+	private static boolean _isCeremonyRunning = false;
 	
 	private AncientArcanCity()
 	{
-		addEnterZoneId(BROADCAST_ZONE.getId(), TELEPORT_ZONE.getId());
-		startQuestTimer("CHANGE_STATE", CHANGE_STATE_TIME, null, null, true);
+		addEnterZoneId(TELEPORT_ZONE.getId());
+		if (CEREMONY_SPAWNS != null)
+		{
+			addSpawnId(CEREMONIAL_CAT);
+			addEnterZoneId(BROADCAST_ZONE.getId());
+			startQuestTimer("CHANGE_STATE", CHANGE_STATE_TIME, null, null, true);
+		}
 	}
 	
 	@Override
@@ -71,31 +77,35 @@ public class AncientArcanCity extends AbstractNpcAI
 	{
 		if (event.equals("CHANGE_STATE"))
 		{
-			isCeremonyRunning = !isCeremonyRunning;
-			for (Player temp : BROADCAST_ZONE.getPlayersInside())
+			_isCeremonyRunning = !_isCeremonyRunning;
+			for (Player plr : BROADCAST_ZONE.getPlayersInside())
 			{
-				temp.sendPacket(new OnEventTrigger(262001, !isCeremonyRunning));
-				temp.sendPacket(new OnEventTrigger(262003, isCeremonyRunning));
-				if (isCeremonyRunning)
+				plr.sendPacket(new OnEventTrigger(262001, !_isCeremonyRunning));
+				plr.sendPacket(new OnEventTrigger(262003, _isCeremonyRunning));
+				if (_isCeremonyRunning)
 				{
-					showOnScreenMsg(temp, NpcStringId.THE_INCREASED_GRASP_OF_DARK_ENERGY_CAUSES_THE_GROUND_TO_SHAKE, ExShowScreenMessage.TOP_CENTER, 5000, true);
-					temp.sendPacket(new Earthquake(EARTHQUAKE, 10, 5));
+					showOnScreenMsg(plr, NpcStringId.THE_INCREASED_GRASP_OF_DARK_ENERGY_CAUSES_THE_GROUND_TO_SHAKE, ExShowScreenMessage.TOP_CENTER, 5000, true);
+					plr.sendPacket(new Earthquake(EARTHQUAKE, 10, 5));
 				}
 			}
 			
-			if (isCeremonyRunning)
+			if (_isCeremonyRunning)
 			{
-				_templates.stream().forEach(t -> t.spawn(g -> String.valueOf(g.getName()).equalsIgnoreCase("Ceremony"), null));
+				CEREMONY_SPAWNS.spawnAll();
 			}
 			else
 			{
-				_templates.stream().forEach(t -> t.despawn(g -> String.valueOf(g.getName()).equalsIgnoreCase("Ceremony")));
 				cancelQuestTimers("SOCIAL_ACTION");
+				CEREMONY_SPAWNS.despawnAll();
+				CEREMONIAL_CATS.clear();
 			}
 		}
-		else if (event.contains("SOCIAL_ACTION") && (npc != null))
+		else if (event.equals("SOCIAL_ACTION"))
 		{
-			npc.broadcastSocialAction(2);
+			for (Npc cat : CEREMONIAL_CATS)
+			{
+				cat.broadcastSocialAction(2);
+			}
 		}
 		return super.onAdvEvent(event, npc, player);
 	}
@@ -124,8 +134,8 @@ public class AncientArcanCity extends AbstractNpcAI
 			}
 			else
 			{
-				player.sendPacket(new OnEventTrigger(262001, !isCeremonyRunning));
-				player.sendPacket(new OnEventTrigger(262003, isCeremonyRunning));
+				player.sendPacket(new OnEventTrigger(262001, !_isCeremonyRunning));
+				player.sendPacket(new OnEventTrigger(262003, _isCeremonyRunning));
 				if (player.getVariables().getBoolean("ANCIENT_ARCAN_CITY_SCENE", true))
 				{
 					player.getVariables().set("ANCIENT_ARCAN_CITY_SCENE", false);
@@ -137,24 +147,12 @@ public class AncientArcanCity extends AbstractNpcAI
 	}
 	
 	@Override
-	public void onSpawnActivate(SpawnTemplate template)
+	public String onSpawn(Npc npc)
 	{
-		_templates.add(template);
-	}
-	
-	// @Override
-	// public void onSpawnDeactivate(SpawnTemplate template)
-	// {
-	// _templates.remove(template);
-	// }
-	@Override
-	public void onSpawnNpc(SpawnTemplate template, SpawnGroup group, Npc npc)
-	{
-		if (npc.getId() == CEREMONIAL_CAT)
-		{
-			npc.setRandomAnimation(npc.getParameters().getBoolean("disableRandomAnimation", false));
-			startQuestTimer("SOCIAL_ACTION", 4500, npc, null, true);
-		}
+		CEREMONIAL_CATS.add(npc);
+		npc.setRandomAnimation(false);
+		startQuestTimer("SOCIAL_ACTION", 4500, null, null, true);
+		return super.onSpawn(npc);
 	}
 	
 	public static void main(String[] args)

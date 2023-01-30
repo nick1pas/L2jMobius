@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+﻿<?xml version="1.0" encoding="UTF-8"?>
 <list xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../xsd/optionsData.xsd">
 	<option id="15400" name="o_s_58_2u_4">
 		<!-- Active: Temporarily returns a portion of received damage back to an enemy. -->
 		<active_skill id="3204" level="1" /> <!-- Item Skill: Reflect Damage -->
 	</option>
 	<option id="15401" name="o_s_58_2u_5">
-		<!-- Active: Has a chance of blocking the target's physical/magic skills -->
+		<!-- Active: Has a chance of blocking the target's physical/ magic skills -->
 		<active_skill id="3198" level="5" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15402" name="o_s_58_2u_6">
@@ -37,11 +37,11 @@
 		<active_skill id="3161" level="1" /> <!-- Item Skill: Skill Clarity -->
 	</option>
 	<option id="15409" name="o_s_58_2u_13">
-		<!-- Active: Temporarily decreases cooldown for song/dance skills. -->
+		<!-- Active: Temporarily decreases cooldown for song/ dance skills. -->
 		<active_skill id="3201" level="1" /> <!-- Item Skill: Music Refresh -->
 	</option>
 	<option id="15410" name="o_s_58_2u_14">
-		<!-- Active: Temporarily decreases MP Consumption for song/dance skills. -->
+		<!-- Active: Temporarily decreases MP Consumption for song/ dance skills. -->
 		<active_skill id="3163" level="1" /> <!-- Item Skill: Music Clarity -->
 	</option>
 	<option id="15411" name="o_s_58_2u_15">
@@ -61,7 +61,7 @@
 		<active_skill id="3148" level="5" /> <!-- Item Skill: Vampiric Rage -->
 	</option>
 	<option id="15415" name="o_s_58_2u_19">
-		<!-- Effect: During a physical attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a physical attack, has a chance of blocking the target's physical/ magic skills -->
 		<attack_skill id="3094" level="5" chance="1.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15416" name="o_s_58_2u_20">
@@ -85,11 +85,11 @@
 		<attack_skill id="3085" level="5" chance="1.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="15421" name="o_s_58_2u_25">
-		<!-- Effect: During a critical attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a critical attack, has a chance of blocking the target's physical/ magic skills -->
 		<critical_skill id="3122" level="5" chance="5.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15422" name="o_s_58_2u_26">
-		<!-- Effect: During a critical attack, has a chance of burning up the target's MP. -->
+		<!-- Chance: Instantly burns up the target's MP after a critical attack. -->
 		<critical_skill id="3110" level="5" chance="5.0" /> <!-- Item Skill: Mana Burn -->
 	</option>
 	<option id="15423" name="o_s_58_2u_27">
@@ -109,11 +109,11 @@
 		<critical_skill id="3113" level="5" chance="5.0" /> <!-- Item Skill: Stun -->
 	</option>
 	<option id="15427" name="o_s_58_2u_31">
-		<!-- Effect: Has a chance of blocking all of the attacking target's physical/magic skills. -->
+		<!-- Effect: Has a chance of blocking all of the attacking target's physical/ magic skills. -->
 		<passive_skill id="3237" level="5" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15428" name="o_s_58_2u_32">
-		<!-- Effect: Has a chance of inflicting fear on the attacking target and causing him to flee. -->
+		<!-- Chance: A chance to inflict fear on the target after receiving damage. -->
 		<passive_skill id="3233" level="5" /> <!-- Item Skill: Fear -->
 	</option>
 	<option id="15429" name="o_s_58_2u_33">
@@ -125,7 +125,7 @@
 		<passive_skill id="3210" level="5" /> <!-- Item Skill: Recharge -->
 	</option>
 	<option id="15431" name="o_s_58_2u_35">
-		<!-- Effect: Has a chance of inflicting paralysis on the attacking target. -->
+		<!-- Chance: A chance to paralyze the target after receiving damage. -->
 		<passive_skill id="3231" level="5" /> <!-- Item Skill: Paralyze -->
 	</option>
 	<option id="15432" name="o_s_58_2u_36">
@@ -141,7 +141,7 @@
 		<passive_skill id="3232" level="5" /> <!-- Item Skill: Medusa -->
 	</option>
 	<option id="15435" name="o_s_58_2u_39">
-		<!-- Effect: During a magic attack, has a chance of blocking the target's physical/magic skills -->
+		<!-- Effect: During a magic attack, has a chance of blocking the target's physical/ magic skills -->
 		<magic_skill id="3107" level="5" chance="2.0" /> <!-- Item Skill: Doom -->
 	</option>
 	<option id="15436" name="o_s_58_2u_40">
@@ -197,7 +197,7 @@
 		<passive_skill id="3255" level="1" /> <!-- Item Skill: Skill Clarity -->
 	</option>
 	<option id="15449" name="o_s_58_2u_53">
-		<!-- Passive: Decreases MP consumption for song/dance skills. -->
+		<!-- Passive: Decreases MP consumption for song/ dance skills. -->
 		<passive_skill id="3257" level="1" /> <!-- Item Skill: Music Clarity -->
 	</option>
 	<option id="15450" name="o_s_58_2u_54">
@@ -245,7 +245,7 @@
 		<attack_skill id="3083" level="6" chance="1.0" /> <!-- Item Skill: Slow (Attack Active) -->
 	</option>
 	<option id="15461" name="o_s_61_2s_11">
-		<!-- Effect: During a critical attack, has a chance of decreasing the target's aggression toward oneself. -->
+		<!-- Chance: Temporarily decreases the target's aggression after a critical attack. -->
 		<critical_skill id="3109" level="6" chance="5.0" /> <!-- Item Skill: Aggression Down -->
 	</option>
 	<option id="15462" name="o_s_61_2s_12">
@@ -253,7 +253,7 @@
 		<critical_skill id="3108" level="6" chance="5.0" /> <!-- Item Skill: Aggression Up -->
 	</option>
 	<option id="15463" name="o_s_61_2s_13">
-		<!-- Effect: During a critical attack, has a chance of decreasing the target's Speed. -->
+		<!-- Chance: Instantly decreases the target's Speed after a critical attack. -->
 		<critical_skill id="3111" level="6" chance="5.0" /> <!-- Item Skill: Slow (Critical) -->
 	</option>
 	<option id="15464" name="o_s_61_2s_14">
@@ -317,7 +317,7 @@
 		<active_skill id="3140" level="6" /> <!-- Item Skill: Guidance -->
 	</option>
 	<option id="15479" name="o_s_61_2r_12">
-		<!-- Active: During a magic attack, has a chance of inflicting hold on the target. The target cannot be affected by any additional hold attacks while the effect lasts. -->
+		<!-- Active: Inflicts hold on the target. The target cannot be affected by any hold attacks while the effect is active. -->
 		<active_skill id="3190" level="6" /> <!-- Item Skill: Hold -->
 	</option>
 	<option id="15480" name="o_s_61_2r_13">
@@ -394,7 +394,7 @@
 	</option>
 	<option id="15498" name="o_s_61_2r_31">
 		<!-- Active: Temporarily decreases the opponent's PvP P. Atk. -->
-		<active_skill id="3137" level="6" /> <!-- Item Skill: Duel Weakness -->
+		<active_skill id="3137" level="6" /> <!-- Item Skill: Weakness in Duel -->
 	</option>
 	<option id="15499" name="o_s_61_2r_32">
 		<!-- Active: Temporarily increases PvP P. Atk. -->

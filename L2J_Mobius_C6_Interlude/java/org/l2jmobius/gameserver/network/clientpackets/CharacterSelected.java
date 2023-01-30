@@ -18,6 +18,7 @@ package org.l2jmobius.gameserver.network.clientpackets;
 
 import org.l2jmobius.Config;
 import org.l2jmobius.commons.network.ReadablePacket;
+import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.network.ConnectionState;
@@ -101,6 +102,12 @@ public class CharacterSelected implements ClientPacket
 							client.sendPacket(msg);
 							return;
 						}
+					}
+					
+					// Prevent instant disappear of invisible GMs on login.
+					if (cha.isGM() && Config.GM_STARTUP_INVISIBLE && AdminData.getInstance().hasAccess("admin_invisible", cha.getAccessLevel()))
+					{
+						cha.getAppearance().setInvisible();
 					}
 					
 					cha.setClient(client);

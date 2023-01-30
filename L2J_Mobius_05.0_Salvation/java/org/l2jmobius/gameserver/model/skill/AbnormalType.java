@@ -239,6 +239,7 @@ public enum AbnormalType
 	SONG_OF_ARCHERY(-1),
 	DANCE_OF_SAGE(-1),
 	SAYHA_BLESSING(-1),
+	SAYHA_BUFF(-1),
 	SONG_WEAPON(-1), // TODO: need find proper name
 	HEAL_RESISTANCE(-1), // TODO: need find proper name
 	TRIAD(-1),
@@ -553,7 +554,8 @@ public enum AbnormalType
 	MAPHR_AURA(599),
 	SAYHA_AURA(600),
 	EVAS_DEBUFF(601),
-	RIGHT_SIDESTEP(602);
+	RIGHT_SIDESTEP(602),
+	GLOWING_DRAGON_POTION(604);
 	
 	private int _clientId;
 	

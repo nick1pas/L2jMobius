@@ -26,7 +26,7 @@
 			<item id="48211" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Circlet -->
 			<item id="48498" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Dragon Shirt -->
 			<item id="80838" min="1" max="1" chance="5" /> <!-- Blessed Scroll: Enchant Kaliel's Bracelet -->
-			<item id="47983" min="1" max="1" chance="5" /> <!-- Augmenting Stone: Brooch - Not Available -->
+			<item id="28484" min="1" max="1" chance="5" /> <!-- Augmenting Stone: Brooch -->
 			<item id="48215" min="1" max="1" chance="5" /> <!-- Augmenting Stone: Circlet -->
 			<item id="81729" min="1" max="1" chance="5" /> <!-- Augmenting Stone: Accessory -->
 			<item id="37560" min="8" max="8" chance="5" /> <!-- Emperor's Vitality Tonic -->
@@ -525,6 +525,7 @@
 		<set name="is_tradable" val="true" />
 		<set name="is_dropable" val="true" />
 		<set name="is_sellable" val="false" />
+		<set name="is_stackable" val="true" />
 		<set name="handler" val="ItemSkills" />
 		<skills>
 			<skill id="39782" level="1" /> <!-- Tower of Insolence's Time Stone -->
@@ -672,6 +673,7 @@
 		<set name="etcitem_type" val="ENCHT_WP" />
 		<set name="immediate_effect" val="true" />
 		<set name="material" val="PAPER" />
+		<set name="weight" val="10" />
 		<set name="is_stackable" val="true" />
 		<set name="handler" val="EnchantScrolls" />
 		<set name="commissionItemType" val="OTHER_ITEM" />
@@ -708,7 +710,6 @@
 		<set name="extractableCountMin" val="1" />
 		<set name="extractableCountMax" val="1" />
 		<set name="handler" val="ExtractableItems" />
-		<set name="weight" val="20" />
 		<capsuled_items>
 			<item id="35566" min="1" max="1" chance="1.25" /> <!-- Dark Weapon Enhancement Stone -->
 			<item id="35567" min="1" max="1" chance="1.25" /> <!-- Dark Armor Enhancement Stone -->
@@ -1028,7 +1029,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82266" name="Tersi's Soul Crystal Lv. 2" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Tersi's soul. Adds a special effect to armor: increases P. Def. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Tersi's Soul. -->
@@ -1038,7 +1038,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82267" name="Tersi's Soul Crystal Lv. 3" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Tersi's soul. Adds a special effect to armor: increases P. Def. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Tersi's Soul. -->
@@ -1048,7 +1047,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82268" name="Tersi's Soul Crystal Lv. 4" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Tersi's soul. Adds a special effect to armor: increases P. Def. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Tersi's Soul. -->
@@ -1058,7 +1056,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82269" name="Tersi's Soul Crystal Lv. 5" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Tersi's soul. Adds a special effect to armor: increases P. Def. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Tersi's Soul. -->
@@ -1068,7 +1065,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82270" name="Tersi's Soul Crystal Lv. 6" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Tersi's soul. Adds a special effect to armor: increases P. Def and decreases received PvP damage. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Tersi's Soul. -->
@@ -1078,7 +1074,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82271" name="Tersi's Soul Crystal Lv. 7" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Shillien's Soul. Adds a selected special effect to armor: increases P. Atk./ M. Atk./ Critical Damage for basic attacks/ P. Skill Critical Damage/ M. Skill Critical Damage. Additionally, applies the effect increasing P. Def. and decreasing received PvP damage. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Shillien's Soul. -->
@@ -1088,7 +1083,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82272" name="Tersi's Soul Crystal Lv. 8" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Shillien's Soul. Adds a selected special effect to armor: increases P. Atk./ M. Atk./ Critical Damage for basic attacks/ P. Skill Critical Damage/ M. Skill Critical Damage. Additionally, applies the effect increasing P. Def. and decreasing received PvP damage. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Shillien's Soul. -->
@@ -1098,7 +1092,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82273" name="Tersi's Soul Crystal Lv. 9" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Shillien's Soul. Adds a selected special effect to armor: increases P. Atk./ M. Atk./ Critical Damage for basic attacks/ P. Skill Critical Damage/ M. Skill Critical Damage. Additionally, applies the effect increasing P. Def. and decreasing received PvP damage. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. <Upgrading> Compounding with Shillien's Soul. -->
@@ -1108,7 +1101,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82274" name="Tersi's Soul Crystal Lv. 10" additionalName="Armor" type="EtcItem">
 		<!-- A special crystal that contains Shillien's Soul. Adds a selected special effect to armor: increases P. Atk./ M. Atk./ Critical Damage for basic attacks/ P. Skill Critical Damage/ M. Skill Critical Damage. Additionally, applies the effect increasing P. Def. and decreasing received PvP damage. The higher a crystal's level is, the more powerful its effect. <How to use> Talk to the Blacksmith in any town to insert the crystal in your equipment. -->
@@ -1118,7 +1110,6 @@
 		<set name="material" val="STEEL" />
 		<set name="is_sellable" val="false" />
 		<set name="is_stackable" val="true" />
-		<set name="weight" val="20" />
 	</item>
 	<item id="82275" name="Tersi's Soul" type="EtcItem">
 		<!-- A crystal that contains Tersi's soul. Required for upgrading Tersi's Soul Crystal through compounding. In case of failure, the Soul Crystal is destroyed. -->
