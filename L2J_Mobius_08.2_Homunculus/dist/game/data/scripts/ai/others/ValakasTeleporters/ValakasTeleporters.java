@@ -132,20 +132,17 @@ public class ValakasTeleporters extends AbstractNpcAI
 			}
 			case 31384:
 			{
-				DoorData.getInstance().getDoor(24210004).openMe();
-				DoorData.getInstance().getDoor(25140004).openMe(); // new?
+				DoorData.getInstance().getDoor(25140004).openMe();
 				break;
 			}
 			case 31686:
 			{
-				DoorData.getInstance().getDoor(24210005).openMe();
-				DoorData.getInstance().getDoor(25140005).openMe(); // new?
+				DoorData.getInstance().getDoor(25140005).openMe();
 				break;
 			}
 			case 31687:
 			{
-				DoorData.getInstance().getDoor(24210006).openMe();
-				DoorData.getInstance().getDoor(25140006).openMe(); // new?
+				DoorData.getInstance().getDoor(25140006).openMe();
 				break;
 			}
 			case 31540:
