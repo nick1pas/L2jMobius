@@ -16,12 +16,19 @@
  */
 package handlers.effecthandlers;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import org.l2jmobius.commons.threads.ThreadPool;
 import org.l2jmobius.gameserver.enums.UserInfoType;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.effects.AbstractEffect;
+import org.l2jmobius.gameserver.model.effects.EffectType;
+import org.l2jmobius.gameserver.model.holders.ItemSkillHolder;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.Skill;
+import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.UserInfo;
 
 /**
@@ -35,6 +42,12 @@ public class VitalityPointUp extends AbstractEffect
 	public VitalityPointUp(StatSet params)
 	{
 		_value = params.getInt("value", 0);
+	}
+	
+	@Override
+	public EffectType getEffectType()
+	{
+		return EffectType.VITALITY_POINT_UP;
 	}
 	
 	@Override
@@ -59,6 +72,30 @@ public class VitalityPointUp extends AbstractEffect
 		effected.getActingPlayer().sendPacket(ui);
 		
 		// Send item list to update vitality items with red icons in inventory.
-		effected.getActingPlayer().sendItemList();
+		ThreadPool.schedule(() ->
+		{
+			final List<Item> items = new LinkedList<>();
+			ITEMS: for (Item i : effected.getActingPlayer().getInventory().getItems())
+			{
+				if (i.getTemplate().hasSkills())
+				{
+					for (ItemSkillHolder s : i.getTemplate().getAllSkills())
+					{
+						if (s.getSkill().hasEffectType(EffectType.VITALITY_POINT_UP))
+						{
+							items.add(i);
+							continue ITEMS;
+						}
+					}
+				}
+			}
+			
+			if (!items.isEmpty())
+			{
+				final InventoryUpdate iu = new InventoryUpdate();
+				iu.addItems(items);
+				effected.getActingPlayer().sendInventoryUpdate(iu);
+			}
+		}, 1000);
 	}
 }
