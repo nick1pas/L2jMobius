@@ -434,9 +434,6 @@ public class Config
 	public static int CH_FRONT1_FEE;
 	public static int CH_FRONT2_FEE;
 	
-	public static int DEVASTATED_DAY;
-	public static int DEVASTATED_HOUR;
-	public static int DEVASTATED_MINUTES;
 	public static int PARTISAN_DAY;
 	public static int PARTISAN_HOUR;
 	public static int PARTISAN_MINUTES;
@@ -1593,9 +1590,6 @@ public class Config
 	public static void loadElitCHConfig()
 	{
 		final PropertiesParser conquerableConfig = new PropertiesParser(CONQUERABLE_CLANHALL_CONFIG_FILE);
-		DEVASTATED_DAY = conquerableConfig.getInt("DevastatedDay", 1);
-		DEVASTATED_HOUR = conquerableConfig.getInt("DevastatedHour", 18);
-		DEVASTATED_MINUTES = conquerableConfig.getInt("DevastatedMinutes", 0);
 		PARTISAN_DAY = conquerableConfig.getInt("PartisanDay", 5);
 		PARTISAN_HOUR = conquerableConfig.getInt("PartisanHour", 21);
 		PARTISAN_MINUTES = conquerableConfig.getInt("PartisanMinutes", 0);

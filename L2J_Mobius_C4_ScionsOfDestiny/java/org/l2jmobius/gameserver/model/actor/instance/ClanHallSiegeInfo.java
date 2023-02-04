@@ -27,7 +27,6 @@ import org.l2jmobius.gameserver.model.clan.Clan;
 import org.l2jmobius.gameserver.model.clan.ClanMember;
 import org.l2jmobius.gameserver.model.residences.ClanHall;
 import org.l2jmobius.gameserver.model.siege.clanhalls.BanditStrongholdSiege;
-import org.l2jmobius.gameserver.model.siege.clanhalls.WildBeastFarmSiege;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.MyTargetSelected;
 import org.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
@@ -161,51 +160,6 @@ public class ClanHallSiegeInfo extends Npc
 						{
 							str += "Unfortunately, you are late. Five tribal leaders have already filed an application for registration.<br>";
 							str += "Next time be more powerful";
-						}
-					}
-					break;
-				}
-				case 35627:
-				{
-					if (!WildBeastFarmSiege.getInstance().isRegistrationPeriod())
-					{
-						showMessageWindow(player, 3);
-						return;
-					}
-					if ((playerClan == null) || !playerClan.getLeaderName().equalsIgnoreCase(player.getName()) || (playerClan.getLevel() < 4))
-					{
-						showMessageWindow(player, 1);
-						return;
-					}
-					if (WildBeastFarmSiege.getInstance().clanhall.getOwnerClan() == playerClan)
-					{
-						str += "Your clan is already registered for the siege, what more do you want from me?<br>";
-						str += "<a action=\"bypass -h npc_%objectId%_PlayerList\">Add / remove a member of the siege</a><br>";
-					}
-					else if (WildBeastFarmSiege.getInstance().isClanOnSiege(playerClan))
-					{
-						str += "Your clan is already registered for the siege, what more do you want from me?<br>";
-						str += "<a action=\"bypass -h npc_%objectId%_UnRegister\">Unsubscribe</a><br>";
-						str += "<a action=\"bypass -h npc_%objectId%_PlayerList\">Add / remove a member of the siege</a><br>";
-					}
-					else
-					{
-						final int res = WildBeastFarmSiege.getInstance().registerClanOnSiege(player, playerClan);
-						if (res == 0)
-						{
-							str += "Your clan : <font color=\"LEVEL\">" + player.getClan().getName() + "</font>, successfully registered for the siege clan hall.<br>";
-							str += "Now you need to select no more than 18 igokov who will take part in the siege, a member of your clan.<br>";
-							str += "<a action=\"bypass -h npc_%objectId%_PlayerList\">Select members of the siege</a><br>";
-						}
-						else if (res == 1)
-						{
-							str += "You have not passed the test and did not qualify for participation in the siege of Robbers<br>";
-							str += "Come back when you're done.";
-						}
-						else if (res == 2)
-						{
-							str += "Unfortunately, you are late. Five tribal leaders have already filed an application for registration.<br>";
-							str += "Next time be more raztoropny.";
 						}
 					}
 					break;

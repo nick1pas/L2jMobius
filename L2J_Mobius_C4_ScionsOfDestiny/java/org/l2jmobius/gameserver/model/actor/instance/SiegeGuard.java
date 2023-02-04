@@ -26,7 +26,6 @@ import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.actor.knownlist.SiegeGuardKnownList;
 import org.l2jmobius.gameserver.model.actor.templates.NpcTemplate;
-import org.l2jmobius.gameserver.model.siege.clanhalls.DevastatedCastle;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.MyTargetSelected;
 import org.l2jmobius.gameserver.network.serverpackets.SocialAction;
@@ -80,7 +79,7 @@ public class SiegeGuard extends Attackable
 	public boolean isAutoAttackable(Creature attacker)
 	{
 		// Attackable during siege by all except defenders ( Castle or Fort )
-		return (attacker instanceof Player) && (((getCastle() != null) && (getCastle().getCastleId() > 0) && getCastle().getSiege().isInProgress() && !getCastle().getSiege().checkIsDefender(((Player) attacker).getClan())) || DevastatedCastle.getInstance().isInProgress());
+		return (attacker instanceof Player) && ((getCastle() != null) && (getCastle().getCastleId() > 0) && getCastle().getSiege().isInProgress() && !getCastle().getSiege().checkIsDefender(((Player) attacker).getClan()));
 	}
 	
 	@Override

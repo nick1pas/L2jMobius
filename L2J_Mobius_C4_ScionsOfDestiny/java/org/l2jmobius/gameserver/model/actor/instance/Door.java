@@ -46,7 +46,6 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.residences.ClanHall;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.Fort;
-import org.l2jmobius.gameserver.model.siege.clanhalls.DevastatedCastle;
 import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import org.l2jmobius.gameserver.network.serverpackets.ConfirmDlg;
@@ -433,7 +432,7 @@ public class Door extends Creature
 				return false;
 			}
 		}
-		return isCastle || isFort || DevastatedCastle.getInstance().isInProgress();
+		return isCastle || isFort;
 	}
 	
 	/**

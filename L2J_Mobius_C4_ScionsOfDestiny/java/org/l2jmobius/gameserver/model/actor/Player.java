@@ -157,7 +157,6 @@ import org.l2jmobius.gameserver.model.sevensigns.SevenSignsFestival;
 import org.l2jmobius.gameserver.model.siege.Castle;
 import org.l2jmobius.gameserver.model.siege.FortSiege;
 import org.l2jmobius.gameserver.model.siege.Siege;
-import org.l2jmobius.gameserver.model.siege.clanhalls.DevastatedCastle;
 import org.l2jmobius.gameserver.model.skill.BaseStat;
 import org.l2jmobius.gameserver.model.skill.Formulas;
 import org.l2jmobius.gameserver.model.skill.SkillTargetType;
@@ -8978,7 +8977,7 @@ public class Player extends Playable
 			if (getClan() != null)
 			{
 				final Siege siege = SiegeManager.getInstance().getSiege(this);
-				return ((siege != null) && siege.checkIsAttacker(getClan())) || DevastatedCastle.getInstance().isInProgress();
+				return ((siege != null) && siege.checkIsAttacker(getClan()));
 			}
 		}
 		else if (attacker instanceof FortSiegeGuard)

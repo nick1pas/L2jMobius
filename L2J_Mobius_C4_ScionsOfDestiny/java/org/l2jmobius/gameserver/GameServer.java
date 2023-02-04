@@ -113,7 +113,6 @@ import org.l2jmobius.gameserver.model.partymatching.PartyMatchWaitingList;
 import org.l2jmobius.gameserver.model.sevensigns.SevenSigns;
 import org.l2jmobius.gameserver.model.sevensigns.SevenSignsFestival;
 import org.l2jmobius.gameserver.model.siege.clanhalls.BanditStrongholdSiege;
-import org.l2jmobius.gameserver.model.siege.clanhalls.DevastatedCastle;
 import org.l2jmobius.gameserver.model.siege.clanhalls.FortressOfResistance;
 import org.l2jmobius.gameserver.model.spawn.AutoSpawnHandler;
 import org.l2jmobius.gameserver.network.GameClient;
@@ -249,7 +248,6 @@ public class GameServer
 		printSection("Clan Halls");
 		ClanHallTable.getInstance();
 		FortressOfResistance.getInstance();
-		DevastatedCastle.getInstance();
 		BanditStrongholdSiege.getInstance();
 		AuctionManager.getInstance();
 		
