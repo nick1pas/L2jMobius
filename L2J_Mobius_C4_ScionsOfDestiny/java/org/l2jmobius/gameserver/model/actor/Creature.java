@@ -4950,18 +4950,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 		double dx = m._xDestination - m._xAccurate;
 		double dy = m._yDestination - m._yAccurate;
 		double dz = m._zDestination - zPrev; // Z coordinate will follow client values
-		
-		float speed;
-		if (this instanceof Boat)
-		{
-			speed = ((Boat) this).boatSpeed;
-		}
-		else
-		{
-			speed = getStat().getMoveSpeed();
-		}
-		
-		if (isPlayer())
+		if (isPlayer() && !_isFlying)
 		{
 			// In case of cursor movement, avoid moving through obstacles.
 			if (_cursorKeyMovement)
@@ -5037,37 +5026,31 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 						}
 					}
 				}
-				
-				// Prevent player moving on ledges.
-				if ((dz > 180) && (distance < 300))
-				{
-					_move.onGeodataPathIndex = -1;
-					if (hasAI() && getAI().isFollowing())
-					{
-						getAI().stopFollow();
-					}
-					stopMove(null);
-					return false;
-				}
 			}
 		}
 		
-		double distFraction;
-		final double distPassed = (speed * (gameTicks - m._moveTimestamp)) / GameTimeTaskManager.TICKS_PER_SECOND;
-		if ((((dx * dx) + (dy * dy)) < 10000) && ((dz * dz) > 2500)) // close enough, allows error between client and server geodata if it cannot be avoided
+		double delta = (dx * dx) + (dy * dy);
+		final boolean isFloating = _isFlying || (isInsideZone(ZoneId.WATER) && !isInsideZone(ZoneId.CASTLE));
+		if (!isFloating && (delta < 10000) && ((dz * dz) > 2500)) // Close enough, allows error between client and server geodata if it cannot be avoided.
 		{
-			distFraction = distPassed / Math.sqrt((dx * dx) + (dy * dy));
+			delta = Math.sqrt(delta);
 		}
 		else
 		{
-			distFraction = distPassed / Math.sqrt((dx * dx) + (dy * dy) + (dz * dz));
+			delta = Math.sqrt(delta + (dz * dz));
+		}
+		
+		double distFraction = Double.MAX_VALUE;
+		if (delta > 1)
+		{
+			final double distPassed = (_stat.getMoveSpeed() * (gameTicks - m._moveTimestamp)) / GameTimeTaskManager.TICKS_PER_SECOND;
+			distFraction = distPassed / delta;
 		}
 		
 		if (distFraction > 1)
 		{
 			// Set the position of the Creature to the destination
 			super.setXYZ(m._xDestination, m._yDestination, m._zDestination);
-			
 			if (isBoat())
 			{
 				((Boat) this).updatePeopleInTheBoat(m._xDestination, m._yDestination, m._zDestination);
@@ -5306,7 +5289,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 		final int curZ = getZ();
 		
 		// Mobius: Fix for teleporting on top of catacomb entrances.
-		final boolean isInWater = isInsideZone(ZoneId.WATER);
+		final boolean isInWater = isInsideZone(ZoneId.WATER) && !isInsideZone(ZoneId.CASTLE);
 		if (isInWater && (z > curZ))
 		{
 			z = Math.max(z - 500, curZ);

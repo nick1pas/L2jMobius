@@ -3289,25 +3289,12 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 						}
 					}
 				}
-				
-				// Prevent player moving on ledges.
-				if ((dz > 180) && (distance < 300))
-				{
-					_move.onGeodataPathIndex = -1;
-					if (hasAI() && getAI().isFollowing())
-					{
-						getAI().stopFollow();
-					}
-					stopMove(null);
-					return false;
-				}
 			}
 		}
 		
-		final boolean isFloating = _isFlying || isInsideZone(ZoneId.WATER);
 		double delta = (dx * dx) + (dy * dy);
-		if ((delta < 10000) && ((dz * dz) > 2500) // close enough, allows error between client and server geodata if it cannot be avoided
-			&& !isFloating)
+		final boolean isFloating = _isFlying || (isInsideZone(ZoneId.WATER) && !isInsideZone(ZoneId.CASTLE));
+		if (!isFloating && (delta < 10000) && ((dz * dz) > 2500)) // Close enough, allows error between client and server geodata if it cannot be avoided.
 		{
 			delta = Math.sqrt(delta);
 		}
@@ -3334,7 +3321,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 			m._yAccurate += dy * distFraction;
 			
 			// Set the position of the Creature to estimated after parcial move
-			super.setXYZ((int) (m._xAccurate), (int) (m._yAccurate), zPrev + (int) ((dz * distFraction) + 0.5));
+			super.setXYZ((int) m._xAccurate, (int) m._yAccurate, zPrev + (int) ((dz * distFraction) + 0.5));
 		}
 		revalidateZone(false);
 		
@@ -3536,7 +3523,7 @@ public abstract class Creature extends WorldObject implements ISkillsHolder, IDe
 		}
 		
 		// Make water move short and use no geodata checks for swimming chars distance in a click can easily be over 3000.
-		final boolean isInWater = isInsideZone(ZoneId.WATER);
+		final boolean isInWater = isInsideZone(ZoneId.WATER) && !isInsideZone(ZoneId.CASTLE);
 		if (isInWater && (distance > 700))
 		{
 			final double divider = 700 / distance;
