@@ -211,7 +211,7 @@ public class EnterWorld implements ClientPacket
 				if (item.isEquipable() //
 					&& (((item.getTemplate().getType2() == ItemTemplate.TYPE2_WEAPON) && (item.getEnchantLevel() > Config.ENCHANT_WEAPON_MAX)) //
 						|| ((item.getTemplate().getType2() == ItemTemplate.TYPE2_ACCESSORY) && (item.getEnchantLevel() > Config.ENCHANT_JEWELRY_MAX)) //
-						|| (item.getEnchantLevel() > Config.ENCHANT_ARMOR_MAX)))
+						|| ((item.getTemplate().getType2() != ItemTemplate.TYPE2_WEAPON) && (item.getTemplate().getType2() != ItemTemplate.TYPE2_ACCESSORY) && (item.getEnchantLevel() > Config.ENCHANT_ARMOR_MAX))))
 				{
 					player.getInventory().destroyItem("Over-enchant protection", item, player, null);
 					PacketLogger.info("Over-enchanted " + item + " has been removed from " + player);
