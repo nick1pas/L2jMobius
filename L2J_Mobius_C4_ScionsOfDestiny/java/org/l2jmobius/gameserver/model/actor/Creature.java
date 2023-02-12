@@ -5043,7 +5043,15 @@ public abstract class Creature extends WorldObject implements ISkillsHolder
 		double distFraction = Double.MAX_VALUE;
 		if (delta > 1)
 		{
-			final double distPassed = (_stat.getMoveSpeed() * (gameTicks - m._moveTimestamp)) / GameTimeTaskManager.TICKS_PER_SECOND;
+			final double distPassed;
+			if (this instanceof Boat)
+			{
+				distPassed = (((Boat) this).boatSpeed * (gameTicks - m._moveTimestamp)) / GameTimeTaskManager.TICKS_PER_SECOND;
+			}
+			else
+			{
+				distPassed = (_stat.getMoveSpeed() * (gameTicks - m._moveTimestamp)) / GameTimeTaskManager.TICKS_PER_SECOND;
+			}
 			distFraction = distPassed / delta;
 		}
 		
