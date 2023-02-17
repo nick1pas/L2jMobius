@@ -26,16 +26,20 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.pledgeV3.ExPledgeEnemyInfoList;
 import org.l2jmobius.gameserver.taskmanager.AttackStanceTaskManager;
 
+/**
+ * @author Mobius
+ */
 public class RequestExPledgeEnemyDelete implements ClientPacket
 {
-	private String _pledgeName;
+	private int _clanId;
 	
 	@Override
 	public void read(ReadablePacket packet)
 	{
-		_pledgeName = packet.readString();
+		_clanId = packet.readInt();
 	}
 	
 	@Override
@@ -53,22 +57,21 @@ public class RequestExPledgeEnemyDelete implements ClientPacket
 			return;
 		}
 		
-		final Clan clan = ClanTable.getInstance().getClanByName(_pledgeName);
-		if (clan == null)
+		final Clan enemyClan = ClanTable.getInstance().getClan(_clanId);
+		if (enemyClan == null)
 		{
-			player.sendMessage("No such clan.");
+			player.sendPacket(SystemMessageId.THERE_IS_NO_SUCH_CLAN);
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
 		
-		if (!playerClan.isAtWarWith(clan.getId()))
+		if (!playerClan.isAtWarWith(enemyClan.getId()))
 		{
-			player.sendMessage("You aren't at war with this clan.");
+			player.sendPacket(SystemMessageId.ENTER_THE_NAME_OF_THE_CLAN_YOU_WISH_TO_END_THE_WAR_WITH);
 			player.sendPacket(ActionFailed.STATIC_PACKET);
 			return;
 		}
 		
-		// Check if player who does the request has the correct rights to do it
 		if (!player.hasClanPrivilege(ClanPrivilege.CL_PLEDGE_WAR))
 		{
 			player.sendPacket(SystemMessageId.YOU_ARE_NOT_AUTHORIZED_TO_DO_THAT);
@@ -90,15 +93,28 @@ public class RequestExPledgeEnemyDelete implements ClientPacket
 		
 		// Reduce reputation.
 		playerClan.takeReputationScore(500);
-		ClanTable.getInstance().deleteClanWars(playerClan.getId(), clan.getId());
-		for (Player member : playerClan.getOnlineMembers(0))
-		{
-			member.broadcastUserInfo();
-		}
+		ClanTable.getInstance().deleteClanWars(playerClan.getId(), enemyClan.getId());
 		
-		for (Player member : clan.getOnlineMembers(0))
+		broadcastClanInfo(playerClan, enemyClan);
+	}
+	
+	private void broadcastClanInfo(Clan playerClan, Clan enemyClan)
+	{
+		for (ClanMember member : playerClan.getMembers())
 		{
-			member.broadcastUserInfo();
+			if ((member != null) && member.isOnline())
+			{
+				member.getPlayer().sendPacket(new ExPledgeEnemyInfoList(playerClan));
+				member.getPlayer().broadcastUserInfo();
+			}
+		}
+		for (ClanMember member : enemyClan.getMembers())
+		{
+			if ((member != null) && member.isOnline())
+			{
+				member.getPlayer().sendPacket(new ExPledgeEnemyInfoList(enemyClan));
+				member.getPlayer().broadcastUserInfo();
+			}
 		}
 	}
 }
