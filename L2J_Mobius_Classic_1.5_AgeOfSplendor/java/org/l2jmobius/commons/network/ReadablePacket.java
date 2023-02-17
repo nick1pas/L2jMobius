@@ -56,7 +56,7 @@ public class ReadablePacket
 		String result = "";
 		try
 		{
-			result = new String(readBytes(readShort()), StandardCharsets.UTF_16LE);
+			result = new String(readBytes(readShort() * 2), StandardCharsets.UTF_16LE);
 		}
 		catch (Exception ignored)
 		{
