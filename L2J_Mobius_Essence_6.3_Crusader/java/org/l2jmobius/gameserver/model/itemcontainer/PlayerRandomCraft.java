@@ -120,7 +120,7 @@ public class PlayerRandomCraft
 					final RandomCraftRewardItemHolder holder = _rewardList.get(i);
 					ps.setInt(4 + (i * 4), holder == null ? 0 : holder.getItemId());
 					ps.setLong(5 + (i * 4), holder == null ? 0 : holder.getItemCount());
-					ps.setBoolean(6 + (i * 4), holder == null ? false : holder.isLocked());
+					ps.setBoolean(6 + (i * 4), (holder != null) && holder.isLocked());
 					ps.setInt(7 + (i * 4), holder == null ? 20 : holder.getLockLeft());
 				}
 				else
@@ -172,7 +172,7 @@ public class PlayerRandomCraft
 		}
 		_player.addRequest(new RandomCraftRequest(_player));
 		
-		if ((_fullCraftPoints > 0) && _player.reduceAdena("RandomCraft Refresh", 10000, _player, true))
+		if ((_fullCraftPoints > 0) && _player.reduceAdena("RandomCraft Refresh", Config.RANDOM_CRAFT_REFRESH_FEE, _player, true))
 		{
 			_player.sendPacket(new ExCraftInfo(_player));
 			_player.sendPacket(new ExCraftRandomRefresh());

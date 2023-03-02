@@ -919,6 +919,7 @@ public class Config
 	
 	// Random Craft
 	public static boolean ENABLE_RANDOM_CRAFT;
+	public static int RANDOM_CRAFT_REFRESH_FEE;
 	public static int RANDOM_CRAFT_CREATE_FEE;
 	public static boolean DROP_RANDOM_CRAFT_MATERIALS;
 	
@@ -1959,6 +1960,7 @@ public class Config
 			// Load Random Craft config file (if exists)
 			final PropertiesParser randomCraftconfig = new PropertiesParser(RANDOM_CRAFT_FILE);
 			ENABLE_RANDOM_CRAFT = randomCraftconfig.getBoolean("RandomCraftEnabled", true);
+			RANDOM_CRAFT_REFRESH_FEE = randomCraftconfig.getInt("RandomCraftRefreshFee", 10000);
 			RANDOM_CRAFT_CREATE_FEE = randomCraftconfig.getInt("RandomCraftCreateFee", 300000);
 			DROP_RANDOM_CRAFT_MATERIALS = randomCraftconfig.getBoolean("DropRandomCraftMaterials", true);
 			
