@@ -324,11 +324,7 @@ public class AdminCreateItem implements IAdminCommandHandler
 		}
 		else if (name.equalsIgnoreCase("ancientadena"))
 		{
-			id = 5575;
-		}
-		else if (name.equalsIgnoreCase("festivaladena"))
-		{
-			id = 6673;
+			id = 94343;
 		}
 		else if (name.equalsIgnoreCase("blueeva"))
 		{
@@ -345,10 +341,6 @@ public class AdminCreateItem implements IAdminCommandHandler
 		else if (name.equalsIgnoreCase("bloodypaagrio"))
 		{
 			id = 4358;
-		}
-		else if (name.equalsIgnoreCase("fantasyislecoin"))
-		{
-			id = 13067;
 		}
 		else if (name.equalsIgnoreCase("lcoin"))
 		{
