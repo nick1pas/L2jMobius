@@ -1094,6 +1094,7 @@ public class Config
 	public static boolean TCP_NO_DELAY;
 	public static int CONNECTION_TIMEOUT;
 	public static boolean PACKET_ENCRYPTION;
+	public static boolean FAILED_DECRYPTION_LOGGED;
 	public static int REQUEST_ID;
 	public static boolean ACCEPT_ALTERNATE_ID;
 	public static File DATAPACK_ROOT;
@@ -1171,6 +1172,7 @@ public class Config
 		TCP_NO_DELAY = serverConfig.getBoolean("TcpNoDelay", true);
 		CONNECTION_TIMEOUT = serverConfig.getInt("ConnectionTimeout", 800);
 		PACKET_ENCRYPTION = serverConfig.getBoolean("PacketEncryption", false);
+		FAILED_DECRYPTION_LOGGED = serverConfig.getBoolean("FailedDecryptionLogged", true);
 		DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
 		DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/");
 		DATABASE_LOGIN = serverConfig.getString("Login", "root");
