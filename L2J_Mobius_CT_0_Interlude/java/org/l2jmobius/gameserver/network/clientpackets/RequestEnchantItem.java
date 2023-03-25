@@ -53,8 +53,7 @@ public class RequestEnchantItem implements ClientPacket
 	@Override
 	public void run(GameClient client)
 	{
-		// TODO: canEnchantItem
-		if (!client.getFloodProtectors().canPerformTransaction())
+		if (!client.getFloodProtectors().canEnchantItem())
 		{
 			return;
 		}

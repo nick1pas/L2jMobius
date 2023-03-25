@@ -32,6 +32,7 @@ public class FloodProtectors
 	private final FloodProtectorAction _globalChat;
 	private final FloodProtectorAction _subclass;
 	private final FloodProtectorAction _dropItem;
+	private final FloodProtectorAction _enchantItem;
 	private final FloodProtectorAction _serverBypass;
 	private final FloodProtectorAction _multiSell;
 	private final FloodProtectorAction _transaction;
@@ -55,6 +56,7 @@ public class FloodProtectors
 		_globalChat = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_GLOBAL_CHAT);
 		_subclass = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_SUBCLASS);
 		_dropItem = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_DROP_ITEM);
+		_enchantItem = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_ENCHANT_ITEM);
 		_serverBypass = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_SERVER_BYPASS);
 		_multiSell = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_MULTISELL);
 		_transaction = new FloodProtectorAction(client, Config.FLOOD_PROTECTOR_TRANSACTION);
@@ -98,6 +100,11 @@ public class FloodProtectors
 	public boolean canDropItem()
 	{
 		return _dropItem.canPerformAction();
+	}
+	
+	public boolean canEnchantItem()
+	{
+		return _enchantItem.canPerformAction();
 	}
 	
 	public boolean canUseServerBypass()

@@ -683,6 +683,7 @@ public class Config
 	public static FloodProtectorConfig FLOOD_PROTECTOR_GLOBAL_CHAT;
 	public static FloodProtectorConfig FLOOD_PROTECTOR_SUBCLASS;
 	public static FloodProtectorConfig FLOOD_PROTECTOR_DROP_ITEM;
+	public static FloodProtectorConfig FLOOD_PROTECTOR_ENCHANT_ITEM;
 	public static FloodProtectorConfig FLOOD_PROTECTOR_SERVER_BYPASS;
 	public static FloodProtectorConfig FLOOD_PROTECTOR_MULTISELL;
 	public static FloodProtectorConfig FLOOD_PROTECTOR_TRANSACTION;
@@ -1316,6 +1317,7 @@ public class Config
 			FLOOD_PROTECTOR_GLOBAL_CHAT = new FloodProtectorConfig("GlobalChatFloodProtector");
 			FLOOD_PROTECTOR_SUBCLASS = new FloodProtectorConfig("SubclassFloodProtector");
 			FLOOD_PROTECTOR_DROP_ITEM = new FloodProtectorConfig("DropItemFloodProtector");
+			FLOOD_PROTECTOR_ENCHANT_ITEM = new FloodProtectorConfig("EnchantItemFloodProtector");
 			FLOOD_PROTECTOR_SERVER_BYPASS = new FloodProtectorConfig("ServerBypassFloodProtector");
 			FLOOD_PROTECTOR_MULTISELL = new FloodProtectorConfig("MultiSellFloodProtector");
 			FLOOD_PROTECTOR_TRANSACTION = new FloodProtectorConfig("TransactionFloodProtector");
@@ -3147,6 +3149,7 @@ public class Config
 		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_GLOBAL_CHAT, "GlobalChat", 5);
 		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_SUBCLASS, "Subclass", 20);
 		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_DROP_ITEM, "DropItem", 10);
+		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_ENCHANT_ITEM, "EnchantItem", 15);
 		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_SERVER_BYPASS, "ServerBypass", 5);
 		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_MULTISELL, "MultiSell", 1);
 		loadFloodProtectorConfig(properties, FLOOD_PROTECTOR_TRANSACTION, "Transaction", 10);
