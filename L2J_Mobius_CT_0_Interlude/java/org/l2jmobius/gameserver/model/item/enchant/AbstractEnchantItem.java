@@ -115,10 +115,9 @@ public abstract class AbstractEnchantItem
 	
 	/**
 	 * @param itemToEnchant the item to be enchanted
-	 * @param supportItem
 	 * @return {@code true} if this support item can be used with the item to be enchanted, {@code false} otherwise
 	 */
-	public boolean isValid(Item itemToEnchant, EnchantSupportItem supportItem)
+	public boolean isValid(Item itemToEnchant)
 	{
 		if (itemToEnchant == null)
 		{

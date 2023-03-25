@@ -104,6 +104,7 @@ What is done
 -Removed all non existing skill enchants.
 -Fixed skill enchanting.
 -Adjusted MagicSkillUse packet.
+-Fixed item enchanting.
 
 TODO: Important (project unusable due to the following)
 -Adjust all skills according to Interlude description.

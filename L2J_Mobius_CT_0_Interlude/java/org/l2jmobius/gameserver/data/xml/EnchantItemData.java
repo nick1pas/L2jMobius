@@ -29,7 +29,6 @@ import org.w3c.dom.Node;
 import org.l2jmobius.commons.util.IXmlReader;
 import org.l2jmobius.gameserver.model.StatSet;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
-import org.l2jmobius.gameserver.model.item.enchant.EnchantSupportItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 
 /**
@@ -39,7 +38,6 @@ import org.l2jmobius.gameserver.model.item.instance.Item;
 public class EnchantItemData implements IXmlReader
 {
 	private final Map<Integer, EnchantScroll> _scrolls = new HashMap<>();
-	private final Map<Integer, EnchantSupportItem> _supports = new HashMap<>();
 	
 	/**
 	 * Instantiates a new enchant item data.
@@ -53,10 +51,8 @@ public class EnchantItemData implements IXmlReader
 	public synchronized void load()
 	{
 		_scrolls.clear();
-		_supports.clear();
 		parseDatapackFile("data/EnchantItemData.xml");
 		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _scrolls.size() + " enchant scrolls.");
-		LOGGER.info(getClass().getSimpleName() + ": Loaded " + _supports.size() + " support items.");
 	}
 	
 	@Override
@@ -102,30 +98,6 @@ public class EnchantItemData implements IXmlReader
 							LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Wrong enchant scroll item type: " + set.getString("id") + " defined in enchant data!");
 						}
 					}
-					else if ("support".equalsIgnoreCase(d.getNodeName()))
-					{
-						attrs = d.getAttributes();
-						set = new StatSet();
-						for (int i = 0; i < attrs.getLength(); i++)
-						{
-							att = attrs.item(i);
-							set.set(att.getNodeName(), att.getNodeValue());
-						}
-						
-						try
-						{
-							final EnchantSupportItem item = new EnchantSupportItem(set);
-							_supports.put(item.getId(), item);
-						}
-						catch (NullPointerException e)
-						{
-							LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Unexistent enchant support item: " + set.getString("id") + " defined in enchant data!");
-						}
-						catch (IllegalAccessError e)
-						{
-							LOGGER.log(Level.WARNING, getClass().getSimpleName() + ": Wrong enchant support item type: " + set.getString("id") + " defined in enchant data!");
-						}
-					}
 				}
 			}
 		}
@@ -148,20 +120,6 @@ public class EnchantItemData implements IXmlReader
 			return null;
 		}
 		return _scrolls.get(item.getId());
-	}
-	
-	/**
-	 * Gets the support item.
-	 * @param item the support item
-	 * @return enchant template for support item
-	 */
-	public EnchantSupportItem getSupportItem(Item item)
-	{
-		if (item == null)
-		{
-			return null;
-		}
-		return _supports.get(item.getId());
 	}
 	
 	/**

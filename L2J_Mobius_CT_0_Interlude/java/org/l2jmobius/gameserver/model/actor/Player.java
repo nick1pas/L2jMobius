@@ -664,8 +664,6 @@ public class Player extends Playable
 	
 	private boolean _isEnchanting = false;
 	private int _activeEnchantItemId = ID_NONE;
-	private int _activeEnchantSupportItemId = ID_NONE;
-	private int _activeEnchantAttrItemId = ID_NONE;
 	private long _activeEnchantTimestamp = 0;
 	
 	protected boolean _inventoryDisable = false;
@@ -2345,22 +2343,11 @@ public class Player extends Playable
 		return getStat().getExp();
 	}
 	
-	public void setActiveEnchantAttrItemId(int objectId)
-	{
-		_activeEnchantAttrItemId = objectId;
-	}
-	
-	public int getActiveEnchantAttrItemId()
-	{
-		return _activeEnchantAttrItemId;
-	}
-	
 	public void setActiveEnchantItemId(int objectId)
 	{
 		// If we don't have a Enchant Item, we are not enchanting.
 		if (objectId == ID_NONE)
 		{
-			setActiveEnchantSupportItemId(ID_NONE);
 			setActiveEnchantTimestamp(0);
 			setEnchanting(false);
 		}
@@ -2370,16 +2357,6 @@ public class Player extends Playable
 	public int getActiveEnchantItemId()
 	{
 		return _activeEnchantItemId;
-	}
-	
-	public void setActiveEnchantSupportItemId(int objectId)
-	{
-		_activeEnchantSupportItemId = objectId;
-	}
-	
-	public int getActiveEnchantSupportItemId()
-	{
-		return _activeEnchantSupportItemId;
 	}
 	
 	public long getActiveEnchantTimestamp()
@@ -7855,7 +7832,7 @@ public class Player extends Playable
 			return false;
 		}
 		
-		if ((_activeEnchantItemId != ID_NONE) || (_activeEnchantAttrItemId != ID_NONE))
+		if (_activeEnchantItemId != ID_NONE)
 		{
 			return false;
 		}

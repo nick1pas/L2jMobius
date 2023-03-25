@@ -21,14 +21,10 @@ import org.l2jmobius.gameserver.network.ServerPackets;
 public class EnchantResult extends ServerPacket
 {
 	private final int _result;
-	private final int _crystal;
-	private final int _count;
 	
-	public EnchantResult(int result, int crystal, int count)
+	public EnchantResult(int result)
 	{
 		_result = result;
-		_crystal = crystal;
-		_count = count;
 	}
 	
 	@Override
@@ -36,7 +32,5 @@ public class EnchantResult extends ServerPacket
 	{
 		ServerPackets.ENCHANT_RESULT.writeId(this);
 		writeInt(_result);
-		writeInt(_crystal);
-		writeInt(_count);
 	}
 }

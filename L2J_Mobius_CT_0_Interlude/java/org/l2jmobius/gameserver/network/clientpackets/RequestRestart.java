@@ -55,7 +55,7 @@ public class RequestRestart implements ClientPacket
 			return;
 		}
 		
-		if ((player.getActiveEnchantItemId() != Player.ID_NONE) || (player.getActiveEnchantAttrItemId() != Player.ID_NONE))
+		if (player.getActiveEnchantItemId() != Player.ID_NONE)
 		{
 			player.sendPacket(RestartResponse.valueOf(false));
 			player.sendPacket(ActionFailed.STATIC_PACKET);

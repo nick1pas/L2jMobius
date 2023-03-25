@@ -90,31 +90,16 @@ public class EnchantScroll extends AbstractEnchantItem
 	
 	/**
 	 * @param itemToEnchant the item to be enchanted
-	 * @param supportItem the support item used when enchanting (can be null)
 	 * @return {@code true} if this scroll can be used with the specified support item and the item to be enchanted, {@code false} otherwise
 	 */
 	@Override
-	public boolean isValid(Item itemToEnchant, EnchantSupportItem supportItem)
+	public boolean isValid(Item itemToEnchant)
 	{
 		if (!_items.isEmpty() && !_items.containsKey(itemToEnchant.getId()))
 		{
 			return false;
 		}
-		else if ((supportItem != null))
-		{
-			if (_isBlessed)
-			{
-				return false;
-			}
-			else if (!supportItem.isValid(itemToEnchant, supportItem))
-			{
-				return false;
-			}
-			else if (supportItem.isWeapon() != isWeapon())
-			{
-				return false;
-			}
-		}
+		
 		if (_items.isEmpty())
 		{
 			for (EnchantScroll scroll : EnchantItemData.getInstance().getScrolls())
@@ -130,7 +115,8 @@ public class EnchantScroll extends AbstractEnchantItem
 				}
 			}
 		}
-		return super.isValid(itemToEnchant, supportItem);
+		
+		return super.isValid(itemToEnchant);
 	}
 	
 	/**
@@ -160,12 +146,11 @@ public class EnchantScroll extends AbstractEnchantItem
 	/**
 	 * @param player
 	 * @param enchantItem
-	 * @param supportItem
 	 * @return the total chance for success rate of this scroll
 	 */
-	public EnchantResultType calculateSuccess(Player player, Item enchantItem, EnchantSupportItem supportItem)
+	public EnchantResultType calculateSuccess(Player player, Item enchantItem)
 	{
-		if (!isValid(enchantItem, supportItem))
+		if (!isValid(enchantItem))
 		{
 			return EnchantResultType.ERROR;
 		}
@@ -177,8 +162,7 @@ public class EnchantScroll extends AbstractEnchantItem
 		}
 		
 		final double bonusRate = getBonusRate();
-		final double supportBonusRate = (supportItem != null) ? supportItem.getBonusRate() : 0;
-		final double finalChance = Math.min(chance + bonusRate + supportBonusRate, 100);
+		final double finalChance = Math.min(chance + bonusRate, 100);
 		final double random = 100 * Rnd.nextDouble();
 		final boolean success = (random < finalChance);
 		return success ? EnchantResultType.SUCCESS : EnchantResultType.FAILURE;

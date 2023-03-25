@@ -26,7 +26,6 @@ import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantResultType;
 import org.l2jmobius.gameserver.model.item.enchant.EnchantScroll;
-import org.l2jmobius.gameserver.model.item.enchant.EnchantSupportItem;
 import org.l2jmobius.gameserver.model.item.instance.Item;
 import org.l2jmobius.gameserver.model.skill.CommonSkill;
 import org.l2jmobius.gameserver.model.skill.Skill;
@@ -44,18 +43,22 @@ public class RequestEnchantItem implements ClientPacket
 	protected static final Logger LOGGER_ENCHANT = Logger.getLogger("enchant.items");
 	
 	private int _objectId;
-	private int _supportId;
 	
 	@Override
 	public void read(ReadablePacket packet)
 	{
 		_objectId = packet.readInt();
-		_supportId = packet.readInt();
 	}
 	
 	@Override
 	public void run(GameClient client)
 	{
+		// TODO: canEnchantItem
+		if (!client.getFloodProtectors().canPerformTransaction())
+		{
+			return;
+		}
+		
 		final Player player = client.getPlayer();
 		if ((player == null) || (_objectId == 0))
 		{
@@ -77,7 +80,6 @@ public class RequestEnchantItem implements ClientPacket
 		
 		final Item item = player.getInventory().getItemByObjectId(_objectId);
 		Item scroll = player.getInventory().getItemByObjectId(player.getActiveEnchantItemId());
-		Item support = player.getInventory().getItemByObjectId(player.getActiveEnchantSupportItemId());
 		if ((item == null) || (scroll == null))
 		{
 			player.setActiveEnchantItemId(Player.ID_NONE);
@@ -93,33 +95,11 @@ public class RequestEnchantItem implements ClientPacket
 			return;
 		}
 		
-		// template for support item, if exist
-		EnchantSupportItem supportTemplate = null;
-		if (support != null)
-		{
-			if (support.getObjectId() != _supportId)
-			{
-				player.setActiveEnchantItemId(Player.ID_NONE);
-				return;
-			}
-			supportTemplate = EnchantItemData.getInstance().getSupportItem(support);
-		}
-		
 		// first validation check - also over enchant check
-		if (!scrollTemplate.isValid(item, supportTemplate) || (Config.DISABLE_OVER_ENCHANTING && (item.getEnchantLevel() == scrollTemplate.getMaxEnchantLevel())))
+		if (!scrollTemplate.isValid(item) || (Config.DISABLE_OVER_ENCHANTING && (item.getEnchantLevel() == scrollTemplate.getMaxEnchantLevel())))
 		{
 			player.sendPacket(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITIONS);
 			player.setActiveEnchantItemId(Player.ID_NONE);
-			player.sendPacket(new EnchantResult(2, 0, 0));
-			return;
-		}
-		
-		// fast auto-enchant cheat check
-		if ((player.getActiveEnchantTimestamp() == 0) || ((System.currentTimeMillis() - player.getActiveEnchantTimestamp()) < 2000))
-		{
-			Util.handleIllegalPlayerAction(player, player + " use autoenchant program ", Config.DEFAULT_PUNISH);
-			player.setActiveEnchantItemId(Player.ID_NONE);
-			player.sendPacket(new EnchantResult(2, 0, 0));
 			return;
 		}
 		
@@ -130,22 +110,7 @@ public class RequestEnchantItem implements ClientPacket
 			player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
 			Util.handleIllegalPlayerAction(player, player + " tried to enchant with a scroll he doesn't have", Config.DEFAULT_PUNISH);
 			player.setActiveEnchantItemId(Player.ID_NONE);
-			player.sendPacket(new EnchantResult(2, 0, 0));
 			return;
-		}
-		
-		// attempting to destroy support if exist
-		if (support != null)
-		{
-			support = player.getInventory().destroyItem("Enchant", support.getObjectId(), 1, player, item);
-			if (support == null)
-			{
-				player.sendPacket(SystemMessageId.INCORRECT_ITEM_COUNT_2);
-				Util.handleIllegalPlayerAction(player, player + " tried to enchant with a support item he doesn't have", Config.DEFAULT_PUNISH);
-				player.setActiveEnchantItemId(Player.ID_NONE);
-				player.sendPacket(new EnchantResult(2, 0, 0));
-				return;
-			}
 		}
 		
 		final InventoryUpdate iu = new InventoryUpdate();
@@ -156,22 +121,35 @@ public class RequestEnchantItem implements ClientPacket
 			{
 				player.sendPacket(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITIONS);
 				player.setActiveEnchantItemId(Player.ID_NONE);
-				player.sendPacket(new EnchantResult(2, 0, 0));
 				return;
 			}
 			
-			final EnchantResultType resultType = scrollTemplate.calculateSuccess(player, item, supportTemplate);
+			final EnchantResultType resultType = scrollTemplate.calculateSuccess(player, item);
 			switch (resultType)
 			{
 				case ERROR:
 				{
 					player.sendPacket(SystemMessageId.INAPPROPRIATE_ENCHANT_CONDITIONS);
 					player.setActiveEnchantItemId(Player.ID_NONE);
-					player.sendPacket(new EnchantResult(2, 0, 0));
+					player.sendPacket(new EnchantResult(0));
 					break;
 				}
 				case SUCCESS:
 				{
+					if (item.getEnchantLevel() == 0)
+					{
+						final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_S1_HAS_BEEN_SUCCESSFULLY_ENCHANTED);
+						sm.addItemName(item.getId());
+						player.sendPacket(sm);
+					}
+					else
+					{
+						final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_S1_S2_HAS_BEEN_SUCCESSFULLY_ENCHANTED);
+						sm.addInt(item.getEnchantLevel());
+						sm.addItemName(item.getId());
+						player.sendPacket(sm);
+					}
+					
 					Skill enchant4Skill = null;
 					final ItemTemplate it = item.getTemplate();
 					// Increase enchant level only if scroll's base template has chance, some armors can success over +20 but they shouldn't have increased.
@@ -180,28 +158,19 @@ public class RequestEnchantItem implements ClientPacket
 						item.setEnchantLevel(item.getEnchantLevel() + 1);
 						item.updateDatabase();
 					}
-					player.sendPacket(new EnchantResult(0, 0, 0));
+					
+					player.sendPacket(new EnchantResult(item.getEnchantLevel()));
+					
 					if (Config.LOG_ITEM_ENCHANTS)
 					{
 						final StringBuilder sb = new StringBuilder();
 						if (item.getEnchantLevel() > 0)
 						{
-							if (support == null)
-							{
-								LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
-							}
-							else
-							{
-								LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
-							}
-						}
-						else if (support == null)
-						{
-							LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
+							LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 						}
 						else
 						{
-							LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
+							LOGGER_ENCHANT.info(sb.append("Success, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 						}
 					}
 					
@@ -237,32 +206,35 @@ public class RequestEnchantItem implements ClientPacket
 				}
 				case FAILURE:
 				{
+					if (item.getEnchantLevel() > 0)
+					{
+						final SystemMessage sm = new SystemMessage(SystemMessageId.THE_ENCHANTMENT_HAS_FAILED_YOUR_S1_S2_HAS_BEEN_CRYSTALLIZED);
+						sm.addInt(item.getEnchantLevel());
+						sm.addItemName(item.getId());
+						player.sendPacket(sm);
+					}
+					else
+					{
+						final SystemMessage sm = new SystemMessage(SystemMessageId.THE_ENCHANTMENT_HAS_FAILED_YOUR_S1_HAS_BEEN_CRYSTALLIZED);
+						sm.addItemName(item.getId());
+						player.sendPacket(sm);
+					}
+					
 					if (scrollTemplate.isSafe())
 					{
 						// safe enchant - remain old value
 						player.sendPacket(SystemMessageId.ENCHANT_FAILED_THE_ENCHANT_LEVEL_FOR_THE_CORRESPONDING_ITEM_WILL_BE_EXACTLY_RETAINED);
-						player.sendPacket(new EnchantResult(5, 0, 0));
+						player.sendPacket(new EnchantResult(0));
 						if (Config.LOG_ITEM_ENCHANTS)
 						{
 							final StringBuilder sb = new StringBuilder();
 							if (item.getEnchantLevel() > 0)
 							{
-								if (support == null)
-								{
-									LOGGER_ENCHANT.info(sb.append("Safe Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
-								}
-								else
-								{
-									LOGGER_ENCHANT.info(sb.append("Safe Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
-								}
-							}
-							else if (support == null)
-							{
-								LOGGER_ENCHANT.info(sb.append("Safe Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
+								LOGGER_ENCHANT.info(sb.append("Safe Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 							}
 							else
 							{
-								LOGGER_ENCHANT.info(sb.append("Safe Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
+								LOGGER_ENCHANT.info(sb.append("Safe Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 							}
 						}
 					}
@@ -300,28 +272,17 @@ public class RequestEnchantItem implements ClientPacket
 							
 							item.setEnchantLevel(0);
 							item.updateDatabase();
-							player.sendPacket(new EnchantResult(3, 0, 0));
+							player.sendPacket(new EnchantResult(0));
 							if (Config.LOG_ITEM_ENCHANTS)
 							{
 								final StringBuilder sb = new StringBuilder();
 								if (item.getEnchantLevel() > 0)
 								{
-									if (support == null)
-									{
-										LOGGER_ENCHANT.info(sb.append("Blessed Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
-									}
-									else
-									{
-										LOGGER_ENCHANT.info(sb.append("Blessed Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
-									}
-								}
-								else if (support == null)
-								{
-									LOGGER_ENCHANT.info(sb.append("Blessed Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
+									LOGGER_ENCHANT.info(sb.append("Blessed Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 								}
 								else
 								{
-									LOGGER_ENCHANT.info(sb.append("Blessed Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
+									LOGGER_ENCHANT.info(sb.append("Blessed Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 								}
 							}
 						}
@@ -333,28 +294,17 @@ public class RequestEnchantItem implements ClientPacket
 								// unable to destroy item, cheater ?
 								Util.handleIllegalPlayerAction(player, "Unable to delete item on enchant failure from " + player + ", possible cheater !", Config.DEFAULT_PUNISH);
 								player.setActiveEnchantItemId(Player.ID_NONE);
-								player.sendPacket(new EnchantResult(2, 0, 0));
+								player.sendPacket(new EnchantResult(0));
 								if (Config.LOG_ITEM_ENCHANTS)
 								{
 									final StringBuilder sb = new StringBuilder();
 									if (item.getEnchantLevel() > 0)
 									{
-										if (support == null)
-										{
-											LOGGER_ENCHANT.info(sb.append("Unable to destroy, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
-										}
-										else
-										{
-											LOGGER_ENCHANT.info(sb.append("Unable to destroy, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
-										}
-									}
-									else if (support == null)
-									{
-										LOGGER_ENCHANT.info(sb.append("Unable to destroy, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
+										LOGGER_ENCHANT.info(sb.append("Unable to destroy, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 									}
 									else
 									{
-										LOGGER_ENCHANT.info(sb.append("Unable to destroy, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
+										LOGGER_ENCHANT.info(sb.append("Unable to destroy, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 									}
 								}
 								return;
@@ -373,11 +323,11 @@ public class RequestEnchantItem implements ClientPacket
 								sm.addItemName(crystalId);
 								sm.addInt(count);
 								player.sendPacket(sm);
-								player.sendPacket(new EnchantResult(1, crystalId, count));
+								player.sendPacket(new EnchantResult(0));
 							}
 							else
 							{
-								player.sendPacket(new EnchantResult(4, 0, 0));
+								player.sendPacket(new EnchantResult(0));
 							}
 							
 							if (Config.LOG_ITEM_ENCHANTS)
@@ -385,22 +335,11 @@ public class RequestEnchantItem implements ClientPacket
 								final StringBuilder sb = new StringBuilder();
 								if (item.getEnchantLevel() > 0)
 								{
-									if (support == null)
-									{
-										LOGGER_ENCHANT.info(sb.append("Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
-									}
-									else
-									{
-										LOGGER_ENCHANT.info(sb.append("Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
-									}
-								}
-								else if (support == null)
-								{
-									LOGGER_ENCHANT.info(sb.append("Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
+									LOGGER_ENCHANT.info(sb.append("Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", +").append(item.getEnchantLevel()).append(" ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 								}
 								else
 								{
-									LOGGER_ENCHANT.info(sb.append("Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("], ").append(support.getName()).append("(").append(support.getCount()).append(") [").append(support.getObjectId()).append("]").toString());
+									LOGGER_ENCHANT.info(sb.append("Fail, Character:").append(player.getName()).append(" [").append(player.getObjectId()).append("] Account:").append(player.getAccountName()).append(" IP:").append(player.getIPAddress()).append(", ").append(item.getName()).append("(").append(item.getCount()).append(") [").append(item.getObjectId()).append("], ").append(scroll.getName()).append("(").append(scroll.getCount()).append(") [").append(scroll.getObjectId()).append("]").toString());
 								}
 							}
 						}
@@ -428,18 +367,6 @@ public class RequestEnchantItem implements ClientPacket
 			else
 			{
 				iu.addModifiedItem(item);
-			}
-			
-			if (support != null)
-			{
-				if (support.getCount() == 0)
-				{
-					iu.addRemovedItem(support);
-				}
-				else
-				{
-					iu.addModifiedItem(support);
-				}
 			}
 			
 			player.sendPacket(iu);
