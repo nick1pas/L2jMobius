@@ -206,20 +206,6 @@ public class RequestEnchantItem implements ClientPacket
 				}
 				case FAILURE:
 				{
-					if (item.getEnchantLevel() > 0)
-					{
-						final SystemMessage sm = new SystemMessage(SystemMessageId.THE_ENCHANTMENT_HAS_FAILED_YOUR_S1_S2_HAS_BEEN_CRYSTALLIZED);
-						sm.addInt(item.getEnchantLevel());
-						sm.addItemName(item.getId());
-						player.sendPacket(sm);
-					}
-					else
-					{
-						final SystemMessage sm = new SystemMessage(SystemMessageId.THE_ENCHANTMENT_HAS_FAILED_YOUR_S1_HAS_BEEN_CRYSTALLIZED);
-						sm.addItemName(item.getId());
-						player.sendPacket(sm);
-					}
-					
 					if (scrollTemplate.isSafe())
 					{
 						// safe enchant - remain old value
@@ -288,6 +274,20 @@ public class RequestEnchantItem implements ClientPacket
 						}
 						else
 						{
+							if (item.getEnchantLevel() > 0)
+							{
+								final SystemMessage sm = new SystemMessage(SystemMessageId.THE_ENCHANTMENT_HAS_FAILED_YOUR_S1_S2_HAS_BEEN_CRYSTALLIZED);
+								sm.addInt(item.getEnchantLevel());
+								sm.addItemName(item.getId());
+								player.sendPacket(sm);
+							}
+							else
+							{
+								final SystemMessage sm = new SystemMessage(SystemMessageId.THE_ENCHANTMENT_HAS_FAILED_YOUR_S1_HAS_BEEN_CRYSTALLIZED);
+								sm.addItemName(item.getId());
+								player.sendPacket(sm);
+							}
+							
 							// enchant failed, destroy item
 							if (player.getInventory().destroyItem("Enchant", item, player, null) == null)
 							{
