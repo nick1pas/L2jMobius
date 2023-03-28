@@ -218,25 +218,32 @@ public class SpawnData implements IXmlReader
 		SpawnGroup defaultGroup = null;
 		for (Node innerNode = spawnsNode.getFirstChild(); innerNode != null; innerNode = innerNode.getNextSibling())
 		{
-			if ("territories".equalsIgnoreCase(innerNode.getNodeName()))
+			switch (innerNode.getNodeName())
 			{
-				parseTerritories(innerNode, spawnTemplate.getFile(), spawnTemplate);
-			}
-			else if ("group".equalsIgnoreCase(innerNode.getNodeName()))
-			{
-				parseGroup(innerNode, spawnTemplate);
-			}
-			else if ("npc".equalsIgnoreCase(innerNode.getNodeName()))
-			{
-				if (defaultGroup == null)
+				case "territories":
 				{
-					defaultGroup = new SpawnGroup(StatSet.EMPTY_STATSET);
+					parseTerritories(innerNode, spawnTemplate.getFile(), spawnTemplate);
+					break;
 				}
-				parseNpc(innerNode, spawnTemplate, defaultGroup);
-			}
-			else if ("parameters".equalsIgnoreCase(innerNode.getNodeName()))
-			{
-				parseParameters(spawnsNode, spawnTemplate);
+				case "group":
+				{
+					parseGroup(innerNode, spawnTemplate);
+					break;
+				}
+				case "npc":
+				{
+					if (defaultGroup == null)
+					{
+						defaultGroup = new SpawnGroup(StatSet.EMPTY_STATSET);
+					}
+					parseNpc(innerNode, spawnTemplate, defaultGroup);
+					break;
+				}
+				case "parameters":
+				{
+					parseParameters(innerNode, spawnTemplate);
+					break;
+				}
 			}
 		}
 		
