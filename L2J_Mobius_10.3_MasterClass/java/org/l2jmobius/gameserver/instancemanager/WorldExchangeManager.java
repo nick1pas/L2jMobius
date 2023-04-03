@@ -319,7 +319,6 @@ public class WorldExchangeManager implements IXmlReader
 		}
 		
 		final Item item = player.getInventory().getItemByObjectId(itemObjectId);
-		long totalPrice = priceForEach * (item.getId() == Inventory.ADENA_ID ? 1 : amount);
 		long feePrice = calculateFeeForRegister(player, itemObjectId, amount, priceForEach);
 		if ((Config.WORLD_EXCHANGE_MAX_ADENA_FEE != -1) && (feePrice > Config.WORLD_EXCHANGE_MAX_ADENA_FEE))
 		{
@@ -362,7 +361,7 @@ public class WorldExchangeManager implements IXmlReader
 		player.sendPacket(iu);
 		player.getInventory().reduceAdena("World Exchange Registration", feePrice, player, null);
 		final long endTime = calculateDate(Config.WORLD_EXCHANGE_ITEM_SELL_PERIOD);
-		_itemBids.put(freeId, new WorldExchangeHolder(freeId, itemInstance, new ItemInfo(itemInstance), totalPrice, player.getObjectId(), WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED, category, System.currentTimeMillis(), endTime, true));
+		_itemBids.put(freeId, new WorldExchangeHolder(freeId, itemInstance, new ItemInfo(itemInstance), priceForEach, player.getObjectId(), WorldExchangeItemStatusType.WORLD_EXCHANGE_REGISTERED, category, System.currentTimeMillis(), endTime, true));
 		player.sendPacket(new WorldExchangeRegisterItem(itemObjectId, amount, (byte) 1));
 		if (!Config.WORLD_EXCHANGE_LAZY_UPDATE)
 		{
