@@ -158,7 +158,7 @@ public class Q293_TheHiddenVeins extends Quest
 							st.rewardItems(57, reward);
 							// Give newbie reward if player is eligible
 							int newPlayerRewardsReceived = player.getVariables().getInt(PlayerVariables.NEW_PLAYERS_REWARDS_RECEIVED, 0);
-							if (player.isNewbie() && (st.getInt("Reward") == 0) && (newPlayerRewardsReceived < 2))
+							if (player.isNewbie() && (st.getInt("Reward") == 0) && (newPlayerRewardsReceived < 1))
 							{
 								st.giveItems(SOULSHOT_FOR_BEGINNERS, 6000);
 								st.playTutorialVoice("tutorial_voice_026");

@@ -114,7 +114,7 @@ public class Q257_TheGuardIsBusy extends Quest
 					st.rewardItems(57, reward);
 					// Give newbie reward if player is eligible
 					int newPlayerRewardsReceived = player.getVariables().getInt(PlayerVariables.NEW_PLAYERS_REWARDS_RECEIVED, 0);
-					if (player.isNewbie() && (st.getInt("Reward") == 0) && (newPlayerRewardsReceived < 2))
+					if (player.isNewbie() && (st.getInt("Reward") == 0) && (newPlayerRewardsReceived < 1))
 					{
 						st.showQuestionMark(26);
 						st.set("Reward", "1");
