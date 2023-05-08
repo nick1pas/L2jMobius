@@ -154,12 +154,7 @@ public class ScrollOfEscape implements IItemHandler
 		sm3.addItemName(itemId);
 		player.sendPacket(sm3);
 		
-		int escapeSkill = (itemId == 1538) || (itemId == 5858) || (itemId == 5859) || (itemId == 3958) || (itemId == 10130) ? 2036 : 2013;
-		// C4 adjustment.
-		if ((escapeSkill == 2036) || (escapeSkill == 2177) || (escapeSkill == 2178))
-		{
-			escapeSkill = 2013;
-		}
+		final int escapeSkill = (itemId == 1538) || (itemId == 5858) || (itemId == 5859) || (itemId == 3958) || (itemId == 10130) ? 2036 : 2013;
 		if (!player.destroyItem("Consume", item.getObjectId(), 1, null, false))
 		{
 			return;
