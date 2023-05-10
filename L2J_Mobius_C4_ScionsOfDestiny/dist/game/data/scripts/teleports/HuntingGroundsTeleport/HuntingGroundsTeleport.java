@@ -46,8 +46,6 @@ public class HuntingGroundsTeleport extends Quest
 		31693,
 		31694,
 		31695,
-		31997,
-		31998
 	};
 	
 	private static final int[] DAWN_NPCS =
@@ -62,7 +60,6 @@ public class HuntingGroundsTeleport extends Quest
 		31168,
 		31692,
 		31694,
-		31997
 	};
 	
 	public HuntingGroundsTeleport()
@@ -135,11 +132,6 @@ public class HuntingGroundsTeleport extends Quest
 			case 31694:
 			case 31695:
 				htmltext = check ? "low_rune.htm" : "hg_rune.htm";
-				break;
-			
-			case 31997:
-			case 31998:
-				htmltext = check ? "low_schuttgart.htm" : "hg_schuttgart.htm";
 				break;
 		}
 		return htmltext;

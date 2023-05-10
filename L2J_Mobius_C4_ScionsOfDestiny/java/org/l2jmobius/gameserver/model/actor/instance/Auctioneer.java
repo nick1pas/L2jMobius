@@ -682,11 +682,6 @@ public class Auctioneer extends Folk
 				nearestTown = "GODARD";
 				break;
 			}
-			case 16:
-			{
-				nearestTown = "SCHUTTGART";
-				break;
-			}
 			default:
 			{
 				nearestTown = "ADEN";

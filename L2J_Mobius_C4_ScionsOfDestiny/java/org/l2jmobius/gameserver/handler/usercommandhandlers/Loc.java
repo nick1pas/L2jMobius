@@ -115,11 +115,6 @@ public class Loc implements IUserCommandHandler
 				msg = SystemMessageId.CURRENT_LOCATION_S1_S2_S3_NEAR_THE_TOWN_OF_GODDARD;
 				break;
 			}
-			case 16:
-			{
-				msg = SystemMessageId.CURRENT_LOCATION_S1_S2_S3_NEAR_THE_TOWN_OF_SCHUTTGART;
-				break;
-			}
 			case 17:
 			{
 				msg = SystemMessageId.CURRENT_LOCATION_S1_S2_S3_NEAR_THE_FLORAN_VILLAGE;

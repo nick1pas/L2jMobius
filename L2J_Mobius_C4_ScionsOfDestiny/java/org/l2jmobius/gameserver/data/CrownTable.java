@@ -39,7 +39,6 @@ public class CrownTable
 		CROWNS.put(6, 6834); // Innadril
 		CROWNS.put(7, 6836); // Goddard
 		CROWNS.put(8, 8182); // Rune
-		CROWNS.put(9, 8183); // Schuttgart
 	}
 	
 	public static Collection<Integer> getCrownList()

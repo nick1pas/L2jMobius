@@ -377,11 +377,6 @@ public class ScrollOfEscape implements IItemHandler
 							_player.teleToLocation(43799, -47727, -798, true); // Rune Castle Town
 							break;
 						}
-						case 7135:
-						{
-							_player.teleToLocation(87331, -142842, -1317, true); // Schuttgart Castle Town
-							break;
-						}
 						case 7618:
 						{
 							_player.teleToLocation(149864, -81062, -5618, true); // Ketra Orc Village

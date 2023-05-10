@@ -144,7 +144,7 @@ public class Castle
 		}
 		
 		int amount = amountValue;
-		if (_name.equalsIgnoreCase("Schuttgart") || _name.equalsIgnoreCase("Goddard"))
+		if (_name.equalsIgnoreCase("Goddard"))
 		{
 			final Castle rune = CastleManager.getInstance().getCastle("rune");
 			if (rune != null)
@@ -158,7 +158,7 @@ public class Castle
 				amount -= runeTax;
 			}
 		}
-		if (!_name.equalsIgnoreCase("aden") && !_name.equalsIgnoreCase("Rune") && !_name.equalsIgnoreCase("Schuttgart") && !_name.equalsIgnoreCase("Goddard")) // If current castle instance is not Aden, Rune, Goddard or Schuttgart.
+		if (!_name.equalsIgnoreCase("aden") && !_name.equalsIgnoreCase("Rune") && !_name.equalsIgnoreCase("Goddard")) // If current castle instance is not Aden, Rune or Goddard.
 		{
 			final Castle aden = CastleManager.getInstance().getCastle("aden");
 			if (aden != null)

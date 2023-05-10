@@ -223,26 +223,6 @@ public class MercTicketManager
 		20,
 		20,
 		20, // Rune
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20,
-		20, // Schuttgart
 	};
 	private static final int[] MERCS_MAX_PER_CASTLE =
 	{
@@ -254,7 +234,6 @@ public class MercTicketManager
 		400, // Innadril
 		400, // Goddard
 		400, // Rune
-		400, // Schuttgart
 	};
 	
 	private static final int[] ITEM_IDS =
@@ -419,26 +398,6 @@ public class MercTicketManager
 		7995,
 		7996,
 		7997, // Rune
-		7918,
-		7919,
-		7920,
-		7921,
-		7922,
-		7923,
-		7924,
-		7925,
-		7926,
-		7927,
-		7931,
-		7932,
-		7933,
-		7934,
-		7935,
-		7936,
-		7937,
-		7938,
-		7939,
-		7940, // Schuttgart
 	};
 	
 	private static final int[] NPC_IDS =
@@ -603,26 +562,6 @@ public class MercTicketManager
 		35037,
 		35038,
 		35039, // Rune
-		35010,
-		35011,
-		35012,
-		35013,
-		35014,
-		35015,
-		35016,
-		35017,
-		35018,
-		35019,
-		35030,
-		35031,
-		35032,
-		35033,
-		35034,
-		35035,
-		35036,
-		35037,
-		35038,
-		35039, // Schuttgart
 	};
 	
 	public int getTicketCastleId(int itemId)
@@ -658,10 +597,6 @@ public class MercTicketManager
 		if (((itemId >= ITEM_IDS[140]) && (itemId <= ITEM_IDS[149])) || ((itemId >= ITEM_IDS[150]) && (itemId <= ITEM_IDS[159])))
 		{
 			return 8; // Rune
-		}
-		if (((itemId >= ITEM_IDS[160]) && (itemId <= ITEM_IDS[169])) || ((itemId >= ITEM_IDS[170]) && (itemId <= ITEM_IDS[179])))
-		{
-			return 9; // Schuttgart
 		}
 		return -1;
 	}
