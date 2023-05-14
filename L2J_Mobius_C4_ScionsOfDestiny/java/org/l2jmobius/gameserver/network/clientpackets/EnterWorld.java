@@ -69,6 +69,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ClientSetTime;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import org.l2jmobius.gameserver.network.serverpackets.Die;
 import org.l2jmobius.gameserver.network.serverpackets.Earthquake;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ExMailArrived;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
 import org.l2jmobius.gameserver.network.serverpackets.ExStorageMaxCount;
@@ -184,6 +185,8 @@ public class EnterWorld implements ClientPacket
 		{
 			player.restoreEffects();
 		}
+		
+		player.sendPacket(new EtcStatusUpdate(player));
 		
 		for (Effect effect : player.getAllEffects())
 		{
@@ -706,6 +709,7 @@ public class EnterWorld implements ClientPacket
 		player.sendPacket(new ItemList(player, false));
 		player.sendPacket(new ShortCutInit(player));
 		player.broadcastUserInfo();
+		player.sendPacket(new EtcStatusUpdate(player));
 	}
 	
 	private void onEnterAio(Player player)

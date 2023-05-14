@@ -27,6 +27,7 @@ import org.l2jmobius.gameserver.data.xml.AdminData;
 import org.l2jmobius.gameserver.handler.IAdminCommandHandler;
 import org.l2jmobius.gameserver.model.World;
 import org.l2jmobius.gameserver.model.actor.Player;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.util.BuilderUtil;
 
 /**
@@ -183,6 +184,7 @@ public class AdminAio implements IAdminCommandHandler
 				
 				player.rewardAioSkills();
 				player.broadcastUserInfo();
+				player.sendPacket(new EtcStatusUpdate(player));
 				player.sendSkillList();
 				AdminData.broadcastMessageToGMs("GM " + activeChar.getName() + " set Aio stat for player " + playerName + " for " + time + " day(s)");
 				player.sendMessage("You are now an Aio, Congratulations!");
@@ -215,6 +217,7 @@ public class AdminAio implements IAdminCommandHandler
 			player.getAppearance().setNameColor(0xFFFFFF);
 			player.getAppearance().setTitleColor(0xFFFFFF);
 			player.broadcastUserInfo();
+			player.sendPacket(new EtcStatusUpdate(player));
 			player.sendSkillList();
 			AdminData.broadcastMessageToGMs("GM " + activeChar.getName() + " remove Aio stat of player " + playerName);
 			player.sendMessage("Now You are not an Aio..");

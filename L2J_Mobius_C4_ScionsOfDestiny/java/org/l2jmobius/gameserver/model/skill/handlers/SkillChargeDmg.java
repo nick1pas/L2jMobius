@@ -31,6 +31,7 @@ import org.l2jmobius.gameserver.model.skill.Formulas;
 import org.l2jmobius.gameserver.model.skill.SkillTargetType;
 import org.l2jmobius.gameserver.model.skill.effects.EffectCharge;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 public class SkillChargeDmg extends Skill
@@ -84,6 +85,11 @@ public class SkillChargeDmg extends Skill
 		if ((getTargetType() != SkillTargetType.AREA) && (getTargetType() != SkillTargetType.MULTIFACE))
 		{
 			effect.numCharges -= getNumCharges();
+		}
+		
+		if (caster instanceof Player)
+		{
+			caster.sendPacket(new EtcStatusUpdate((Player) caster));
 		}
 		
 		if (effect.numCharges == 0)

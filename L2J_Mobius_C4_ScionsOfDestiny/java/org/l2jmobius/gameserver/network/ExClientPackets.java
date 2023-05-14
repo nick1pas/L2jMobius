@@ -27,6 +27,8 @@ import org.l2jmobius.gameserver.network.clientpackets.ClientPacket;
 import org.l2jmobius.gameserver.network.clientpackets.RequestAskJoinPartyRoom;
 import org.l2jmobius.gameserver.network.clientpackets.RequestAutoSoulShot;
 import org.l2jmobius.gameserver.network.clientpackets.RequestChangePartyLeader;
+import org.l2jmobius.gameserver.network.clientpackets.RequestConfirmCancelItem;
+import org.l2jmobius.gameserver.network.clientpackets.RequestConfirmTargetItem;
 import org.l2jmobius.gameserver.network.clientpackets.RequestDismissPartyRoom;
 import org.l2jmobius.gameserver.network.clientpackets.RequestExAcceptJoinMPCC;
 import org.l2jmobius.gameserver.network.clientpackets.RequestExAskJoinMPCC;
@@ -96,7 +98,9 @@ public enum ExClientPackets
 	REQUEST_PC_CAFE_COUPON_USE(0x20, RequestPCCafeCouponUse::new, ConnectionState.IN_GAME),
 	REQUEST_PLEDGE_REORGANIZE_MEMBER(0x24, RequestPledgeReorganizeMember::new, ConnectionState.IN_GAME),
 	REQUEST_EX_MPCC_SHOW_PARTY_MEMBERS_INFO(0x25, RequestExMPCCShowPartyMembersInfo::new, ConnectionState.IN_GAME),
-	REQUEST_EX_MAGIC_SKILL_USE_GROUND(0x2F, RequestExMagicSkillUseGround::new, ConnectionState.IN_GAME);
+	REQUEST_EX_MAGIC_SKILL_USE_GROUND(0x2F, RequestExMagicSkillUseGround::new, ConnectionState.IN_GAME),
+	REQUEST_CONFIRM_TARGET_ITEM(0x29, RequestConfirmTargetItem::new, ConnectionState.IN_GAME),
+	REQUEST_CONFIRM_CANCEL_ITEM(0x2D, RequestConfirmCancelItem::new, ConnectionState.IN_GAME);
 	
 	public static final ExClientPackets[] PACKET_ARRAY;
 	static

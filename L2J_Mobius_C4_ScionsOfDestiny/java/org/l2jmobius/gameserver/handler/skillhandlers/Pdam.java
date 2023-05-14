@@ -39,6 +39,7 @@ import org.l2jmobius.gameserver.model.skill.Formulas;
 import org.l2jmobius.gameserver.model.skill.SkillType;
 import org.l2jmobius.gameserver.model.skill.effects.EffectCharge;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 public class Pdam implements ISkillHandler
@@ -296,6 +297,7 @@ public class Pdam implements ISkillHandler
 						effectcharge++;
 						effect.addNumCharges(1);
 						
+						creature.sendPacket(new EtcStatusUpdate((Player) creature));
 						final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_FORCE_HAS_INCREASED_TO_S1_LEVEL);
 						sm.addNumber(effectcharge);
 						creature.sendPacket(sm);

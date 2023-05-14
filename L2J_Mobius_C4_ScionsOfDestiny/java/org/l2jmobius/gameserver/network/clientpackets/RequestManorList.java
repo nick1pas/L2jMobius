@@ -46,7 +46,7 @@ public class RequestManorList implements ClientPacket
 		manorsName.add("innadril");
 		manorsName.add("goddard");
 		manorsName.add("rune");
-		manorsName.add("schuttgart");
+		
 		player.sendPacket(new ExSendManorList(manorsName));
 	}
 }

@@ -61,6 +61,7 @@ import org.l2jmobius.gameserver.model.skill.funcs.Func;
 import org.l2jmobius.gameserver.model.skill.funcs.FuncTemplate;
 import org.l2jmobius.gameserver.model.zone.ZoneId;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 import org.l2jmobius.gameserver.util.Util;
 
@@ -2514,6 +2515,7 @@ public abstract class Skill
 							effect.addNumCharges(effectcharge);
 							if (env.target instanceof Player)
 							{
+								env.target.sendPacket(new EtcStatusUpdate((Player) env.target));
 								final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_FORCE_HAS_INCREASED_TO_S1_LEVEL);
 								sm.addNumber(effectcharge);
 								env.target.sendPacket(sm);

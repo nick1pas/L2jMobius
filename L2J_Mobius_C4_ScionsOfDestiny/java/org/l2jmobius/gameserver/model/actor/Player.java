@@ -175,6 +175,7 @@ import org.l2jmobius.gameserver.network.serverpackets.ChangeWaitType;
 import org.l2jmobius.gameserver.network.serverpackets.CharInfo;
 import org.l2jmobius.gameserver.network.serverpackets.ConfirmDlg;
 import org.l2jmobius.gameserver.network.serverpackets.CreatureSay;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ExAutoSoulShot;
 import org.l2jmobius.gameserver.network.serverpackets.ExFishingEnd;
 import org.l2jmobius.gameserver.network.serverpackets.ExFishingStart;
@@ -2012,6 +2013,7 @@ public class Player extends Playable
 			setOverloaded(false);
 			_curWeightPenalty = 0;
 			super.removeSkill(getKnownSkill(4270));
+			sendPacket(new EtcStatusUpdate(this));
 			Broadcast.toKnownPlayers(this, new CharInfo(this, isGM() && getAppearance().isInvisible()));
 		}
 		else
@@ -2056,6 +2058,7 @@ public class Player extends Playable
 						sendSkillList(); // Fix visual bug
 					}
 					
+					sendPacket(new EtcStatusUpdate(this));
 					Broadcast.toKnownPlayers(this, new CharInfo(this, isGM() && getAppearance().isInvisible()));
 				}
 			}
@@ -2157,6 +2160,7 @@ public class Player extends Playable
 				super.removeSkill(getKnownSkill(4267));
 			}
 			
+			sendPacket(new EtcStatusUpdate(this));
 			_masteryPenalty = newMasteryPenalty;
 		}
 	}
@@ -2346,6 +2350,7 @@ public class Player extends Playable
 				super.removeSkill(getKnownSkill(4267));
 			}
 			
+			sendPacket(new EtcStatusUpdate(this));
 			_masteryWeapPenalty = newMasteryPenalty;
 		}
 	}
@@ -5503,6 +5508,8 @@ public class Player extends Playable
 			sendMessage("War Legend state removed.");
 		}
 		
+		// Refresh focus force like L2OFF
+		sendPacket(new EtcStatusUpdate(this));
 		return true;
 	}
 	
@@ -9363,6 +9370,7 @@ public class Player extends Playable
 			}
 			
 			effect.numCharges -= skill.getNumCharges();
+			sendPacket(new EtcStatusUpdate(this));
 			if (effect.numCharges == 0)
 			{
 				effect.exit(false);
@@ -10629,6 +10637,7 @@ public class Player extends Playable
 	public void setInRefusalMode(boolean mode)
 	{
 		_messageRefusal = mode;
+		sendPacket(new EtcStatusUpdate(this));
 	}
 	
 	/**
@@ -11519,6 +11528,7 @@ public class Player extends Playable
 			checkAllowedSkills();
 		}
 		
+		sendPacket(new EtcStatusUpdate(this));
 		// if player has quest 422: Repent Your Sins, remove it
 		final QuestState st = getQuestState("422_RepentYourSins");
 		if (st != null)
@@ -11862,6 +11872,7 @@ public class Player extends Playable
 		super.doRevive();
 		
 		updateEffectIcons();
+		sendPacket(new EtcStatusUpdate(this));
 		_reviveRequested = 0;
 		_revivePower = 0;
 		
@@ -13810,6 +13821,7 @@ public class Player extends Playable
 	public void setCharmOfCourage(boolean value)
 	{
 		_charmOfCourage = value;
+		sendPacket(new EtcStatusUpdate(this));
 	}
 	
 	/**
@@ -13864,6 +13876,7 @@ public class Player extends Playable
 		_deathPenaltyBuffLevel++;
 		
 		addSkill(SkillTable.getInstance().getSkill(5076, getDeathPenaltyBuffLevel()), false);
+		sendPacket(new EtcStatusUpdate(this));
 		final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_DEATH_PENALTY_IS_NOW_LEVEL_S1);
 		sm.addNumber(getDeathPenaltyBuffLevel());
 		sendPacket(sm);
@@ -13892,6 +13905,7 @@ public class Player extends Playable
 		if (getDeathPenaltyBuffLevel() > 0)
 		{
 			addSkill(SkillTable.getInstance().getSkill(5076, getDeathPenaltyBuffLevel()), false);
+			sendPacket(new EtcStatusUpdate(this));
 			final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_DEATH_PENALTY_IS_NOW_LEVEL_S1);
 			sm.addNumber(getDeathPenaltyBuffLevel());
 			sendPacket(sm);
@@ -13899,6 +13913,7 @@ public class Player extends Playable
 		}
 		else
 		{
+			sendPacket(new EtcStatusUpdate(this));
 			sendPacket(SystemMessageId.YOUR_DEATH_PENALTY_HAS_BEEN_LIFTED);
 		}
 	}
@@ -13946,6 +13961,7 @@ public class Player extends Playable
 			sm.addNumber(getDeathPenaltyBuffLevel());
 			sendPacket(sm);
 		}
+		sendPacket(new EtcStatusUpdate(this));
 	}
 	
 	/**
@@ -14755,6 +14771,7 @@ public class Player extends Playable
 					{
 						_punishLevel = state;
 						stopPunishTask(true);
+						sendPacket(new EtcStatusUpdate(this));
 						sendMessage("Your Chat ban has been lifted");
 						break;
 					}
@@ -14789,6 +14806,7 @@ public class Player extends Playable
 				}
 				_punishLevel = state;
 				_punishTimer = 0;
+				sendPacket(new EtcStatusUpdate(this));
 				// Remove the task if any
 				stopPunishTask(false);
 				

@@ -42,6 +42,7 @@ import org.l2jmobius.gameserver.network.GameClient;
 import org.l2jmobius.gameserver.network.PacketLogger;
 import org.l2jmobius.gameserver.network.SystemMessageId;
 import org.l2jmobius.gameserver.network.serverpackets.ActionFailed;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
 import org.l2jmobius.gameserver.network.serverpackets.InventoryUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.ItemList;
@@ -155,12 +156,12 @@ public class UseItem implements ClientPacket
 		 * Alt game - Karma punishment // SOE 736 Scroll of Escape 1538 Blessed Scroll of Escape 1829 Scroll of Escape: Clan Hall 1830 Scroll of Escape: Castle 3958 L2Day - Blessed Scroll of Escape 5858 Blessed Scroll of Escape: Clan Hall 5859 Blessed Scroll of Escape: Castle 6663 Scroll of Escape:
 		 * Orc Village 6664 Scroll of Escape: Silenos Village 7117 Scroll of Escape to Talking Island 7118 Scroll of Escape to Elven Village 7119 Scroll of Escape to Dark Elf Village 7120 Scroll of Escape to Orc Village 7121 Scroll of Escape to Dwarven Village 7122 Scroll of Escape to Gludin Village
 		 * 7123 Scroll of Escape to the Town of Gludio 7124 Scroll of Escape to the Town of Dion 7125 Scroll of Escape to Floran 7126 Scroll of Escape to Giran Castle Town 7127 Scroll of Escape to Hardin's Private Academy 7128 Scroll of Escape to Heine 7129 Scroll of Escape to the Town of Oren 7130
-		 * Scroll of Escape to Ivory Tower 7131 Scroll of Escape to Hunters Village 7132 Scroll of Escape to Aden Castle Town 7133 Scroll of Escape to the Town of Goddard 7134 Scroll of Escape to the Rune Township 7135 Scroll of Escape to the Town of Schuttgart. 7554 Scroll of Escape to Talking
-		 * Island 7555 Scroll of Escape to Elven Village 7556 Scroll of Escape to Dark Elf Village 7557 Scroll of Escape to Orc Village 7558 Scroll of Escape to Dwarven Village 7559 Scroll of Escape to Giran Castle Town 7618 Scroll of Escape - Ketra Orc Village 7619 Scroll of Escape - Varka Silenos
-		 * Village 10129 Scroll of Escape : Fortress 10130 Blessed Scroll of Escape : Fortress
+		 * Scroll of Escape to Ivory Tower 7131 Scroll of Escape to Hunters Village 7132 Scroll of Escape to Aden Castle Town 7133 Scroll of Escape to the Town of Goddard 7134 Scroll of Escape to the Rune Township. 7554 Scroll of Escape to Talking Island 7555 Scroll of Escape to Elven Village 7556
+		 * Scroll of Escape to Dark Elf Village 7557 Scroll of Escape to Orc Village 7558 Scroll of Escape to Dwarven Village 7559 Scroll of Escape to Giran Castle Town 7618 Scroll of Escape - Ketra Orc Village 7619 Scroll of Escape - Varka Silenos Village 10129 Scroll of Escape : Fortress 10130
+		 * Blessed Scroll of Escape : Fortress
 		 */
 		final int itemId = item.getItemId();
-		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_TELEPORT && (player.getKarma() > 0) && ((itemId == 736) || (itemId == 1538) || (itemId == 1829) || (itemId == 1830) || (itemId == 3958) || (itemId == 5858) || (itemId == 5859) || (itemId == 6663) || (itemId == 6664) || ((itemId >= 7117) && (itemId <= 7135)) || ((itemId >= 7554) && (itemId <= 7559)) || (itemId == 7618) || (itemId == 7619) || (itemId == 10129) || (itemId == 10130)))
+		if (!Config.ALT_GAME_KARMA_PLAYER_CAN_TELEPORT && (player.getKarma() > 0) && ((itemId == 736) || (itemId == 1538) || (itemId == 1829) || (itemId == 1830) || (itemId == 3958) || (itemId == 5858) || (itemId == 5859) || (itemId == 6663) || (itemId == 6664) || (itemId >= 7117) || ((itemId >= 7554) && (itemId <= 7559)) || (itemId == 7618) || (itemId == 7619) || (itemId == 10129) || (itemId == 10130)))
 		{
 			return;
 		}
@@ -559,6 +560,7 @@ public class UseItem implements ClientPacket
 			
 			player.abortAttack();
 			
+			player.sendPacket(new EtcStatusUpdate(player));
 			// If an "invisible" item has changed (Jewels, helmet), we dont need to send broadcast packet to all other users.
 			if ((((item.getTemplate().getBodyPart() & ItemTemplate.SLOT_HEAD) <= 0) && ((item.getTemplate().getBodyPart() & ItemTemplate.SLOT_NECK) <= 0) && ((item.getTemplate().getBodyPart() & ItemTemplate.SLOT_L_EAR) <= 0) && ((item.getTemplate().getBodyPart() & ItemTemplate.SLOT_R_EAR) <= 0) && ((item.getTemplate().getBodyPart() & ItemTemplate.SLOT_L_FINGER) <= 0) && ((item.getTemplate().getBodyPart() & ItemTemplate.SLOT_R_FINGER) <= 0)))
 			{

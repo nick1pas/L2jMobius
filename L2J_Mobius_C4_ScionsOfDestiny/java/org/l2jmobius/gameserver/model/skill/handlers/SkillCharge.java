@@ -25,6 +25,7 @@ import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.actor.Player;
 import org.l2jmobius.gameserver.model.skill.effects.EffectCharge;
 import org.l2jmobius.gameserver.network.SystemMessageId;
+import org.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import org.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
 public class SkillCharge extends Skill
@@ -78,6 +79,7 @@ public class SkillCharge extends Skill
 				effect.numCharges++;
 				if (caster instanceof Player)
 				{
+					caster.sendPacket(new EtcStatusUpdate((Player) caster));
 					final SystemMessage sm = new SystemMessage(SystemMessageId.YOUR_FORCE_HAS_INCREASED_TO_S1_LEVEL);
 					sm.addNumber(effect.numCharges);
 					caster.sendPacket(sm);
