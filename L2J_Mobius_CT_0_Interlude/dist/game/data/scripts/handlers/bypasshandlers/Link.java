@@ -51,7 +51,6 @@ public class Link implements IBypassHandler
 		VALID_LINKS.add("common/welcomeback003.htm");
 		VALID_LINKS.add("default/BlessingOfProtection.htm");
 		VALID_LINKS.add("default/SupportMagic.htm");
-		VALID_LINKS.add("default/SupportMagicServitor.htm");
 		VALID_LINKS.add("fisherman/fishing_championship.htm");
 		VALID_LINKS.add("fortress/foreman.htm");
 		VALID_LINKS.add("olympiad/hero_main2.htm");

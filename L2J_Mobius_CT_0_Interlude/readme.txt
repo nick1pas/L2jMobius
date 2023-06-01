@@ -105,6 +105,7 @@ What is done
 -Fixed skill enchanting.
 -Adjusted MagicSkillUse packet.
 -Fixed item enchanting.
+-Updated supportmagic bypass handler. 
 
 TODO: Important (project unusable due to the following)
 -Adjust all skills according to Interlude description.
