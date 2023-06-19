@@ -457,7 +457,6 @@ public class GameServer
 		server.getNetConfig().setPacketFloodDrop(Config.PACKET_FLOOD_DROP);
 		server.getNetConfig().setPacketFloodLogged(Config.PACKET_FLOOD_LOGGED);
 		server.getNetConfig().setTcpNoDelay(Config.TCP_NO_DELAY);
-		server.getNetConfig().setConnectionTimeout(Config.CONNECTION_TIMEOUT);
 		server.getNetConfig().setFailedDecryptionLogged(Config.FAILED_DECRYPTION_LOGGED);
 		server.start();
 		
