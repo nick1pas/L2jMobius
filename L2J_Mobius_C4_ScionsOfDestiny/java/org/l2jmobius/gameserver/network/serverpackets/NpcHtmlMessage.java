@@ -160,16 +160,20 @@ public class NpcHtmlMessage extends ServerPacket
 	}
 	
 	@Override
-	public void run(Player player)
+	public void run()
 	{
-		if (Config.BYPASS_VALIDATION && _validate)
+		final Player player = getPlayer();
+		if (player != null)
 		{
-			buildBypassCache(player);
-			buildLinksCache(player);
-		}
-		if ((_file != null) && player.isGM() && Config.GM_DEBUG_HTML_PATHS)
-		{
-			BuilderUtil.sendHtmlMessage(player, _file.substring(10));
+			if (Config.BYPASS_VALIDATION && _validate)
+			{
+				buildBypassCache(player);
+				buildLinksCache(player);
+			}
+			if ((_file != null) && player.isGM() && Config.GM_DEBUG_HTML_PATHS)
+			{
+				BuilderUtil.sendHtmlMessage(player, _file.substring(10));
+			}
 		}
 	}
 	

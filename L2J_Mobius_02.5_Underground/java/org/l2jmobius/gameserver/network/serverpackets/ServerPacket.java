@@ -112,12 +112,22 @@ public abstract class ServerPacket extends WritablePacket
 		super(initialSize);
 	}
 	
+	private Player _player;
+	
 	/**
-	 * Method that runs after packet is sent.
-	 * @param player
+	 * @return the Player
 	 */
-	public void run(Player player)
+	public Player getPlayer()
 	{
+		return _player;
+	}
+	
+	/**
+	 * @param player the Player to set.
+	 */
+	public void setPlayer(Player player)
+	{
+		_player = player;
 	}
 	
 	protected void writeOptionalInt(int value)

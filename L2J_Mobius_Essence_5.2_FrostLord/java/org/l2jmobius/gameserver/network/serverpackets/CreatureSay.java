@@ -231,8 +231,9 @@ public class CreatureSay extends ServerPacket
 	}
 	
 	@Override
-	public void run(Player player)
+	public void run()
 	{
+		final Player player = getPlayer();
 		if (player != null)
 		{
 			player.broadcastSnoop(_chatType, _senderName, _text);
