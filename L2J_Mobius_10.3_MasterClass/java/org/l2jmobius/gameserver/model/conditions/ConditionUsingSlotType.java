@@ -18,6 +18,7 @@ package org.l2jmobius.gameserver.model.conditions;
 
 import org.l2jmobius.gameserver.model.actor.Creature;
 import org.l2jmobius.gameserver.model.item.ItemTemplate;
+import org.l2jmobius.gameserver.model.item.Weapon;
 import org.l2jmobius.gameserver.model.skill.Skill;
 
 /**
@@ -39,6 +40,13 @@ public class ConditionUsingSlotType extends Condition
 		{
 			return false;
 		}
-		return (effector.getActiveWeaponItem().getBodyPart() & _mask) != 0;
+		
+		final Weapon activeWeapon = effector.getActiveWeaponItem();
+		if (activeWeapon == null)
+		{
+			return false;
+		}
+		
+		return (activeWeapon.getBodyPart() & _mask) != 0;
 	}
 }
