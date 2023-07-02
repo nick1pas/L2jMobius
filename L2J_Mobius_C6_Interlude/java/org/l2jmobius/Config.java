@@ -68,53 +68,52 @@ public class Config
 	// --------------------------------------------------
 	// Files
 	// --------------------------------------------------
-	
-	// standard
-	private static final String FILTER_FILE = "./config/chatfilter.txt";
-	private static final String HEXID_FILE = "./config/hexid.txt";
-	private static final String IPCONFIG_FILE = "./config/ipconfig.xml";
-	// interface
+	public static final String CLASS_DAMAGE_CONFIG_FILE = "./config/custom/ClassDamage.ini";
 	public static final String INTERFACE_CONFIG_FILE = "./config/Interface.ini";
-	// main
+	public static final String NETWORK_CONFIG_FILE = "./config/Network.ini";
+	private static final String OLYMPIAD_CONFIG_FILE = "./config/Olympiad.ini";
+	
+	public static final String FORTSIEGE_CONFIG_FILE = "./config/FortSiege.ini";
+	public static final String SIEGE_CONFIG_FILE = "./config/Siege.ini";
+	
 	private static final String ACCESS_CONFIG_FILE = "./config/Access.ini";
 	private static final String CHARACTER_CONFIG_FILE = "./config/Character.ini";
 	private static final String CLANHALL_CONFIG_FILE = "./config/Clanhall.ini";
 	private static final String CONQUERABLE_CLANHALL_CONFIG_FILE = "./config/ConquerableHallSiege.ini";
 	private static final String CRAFTING_CONFIG_FILE = "./config/Crafting.ini";
 	private static final String ENCHANT_CONFIG_FILE = "./config/Enchant.ini";
-	public static final String FORTSIEGE_CONFIG_FILE = "./config/FortSiege.ini";
 	private static final String GENERAL_CONFIG_FILE = "./config/General.ini";
 	private static final String GEOENGINE_CONFIG_FILE = "./config/GeoEngine.ini";
 	private static final String GRANDBOSS_CONFIG_FILE = "./config/GrandBoss.ini";
-	private static final String OLYMP_CONFIG_FILE = "./config/Olympiad.ini";
-	private static final String PROTECT_FLOOD_CONFIG_FILE = "./config/FloodProtector.ini";
+	private static final String LOGIN_CONFIG_FILE = "./config/LoginServer.ini";
 	private static final String OTHER_CONFIG_FILE = "./config/Other.ini";
+	private static final String PROTECT_FLOOD_CONFIG_FILE = "./config/FloodProtector.ini";
 	private static final String PVP_CONFIG_FILE = "./config/PvP.ini";
 	private static final String RATES_CONFIG_FILE = "./config/Rates.ini";
 	private static final String SERVER_CONFIG_FILE = "./config/Server.ini";
 	private static final String SEVENSIGNS_CONFIG_FILE = "./config/SevenSigns.ini";
-	public static final String SIEGE_CONFIG_FILE = "./config/Siege.ini";
-	// custom
+	
 	private static final String BANK_CONFIG_FILE = "./config/custom/Bank.ini";
 	private static final String BOSS_ANNOUNCEMENTS_CONFIG_FILE = "./config/custom/BossAnnouncements.ini";
 	private static final String CANCEL_SKILL_RESTORE_BUFFS_CONFIG_FILE = "./config/custom/CancelSkillRestoreBuffs.ini";
 	private static final String CHAMPION_CONFIG_FILE = "./config/custom/Champion.ini";
-	public static final String CLASS_DAMAGE_CONFIG_FILE = "./config/custom/ClassDamage.ini";
 	private static final String CUSTOM_AUTO_POTIONS_CONFIG_FILE = "./config/custom/AutoPotions.ini";
 	private static final String CUSTOM_CUSTOM_MAIL_MANAGER_CONFIG_FILE = "./config/custom/CustomMailManager.ini";
 	private static final String CUSTOM_FACTION_SYSTEM_CONFIG_FILE = "./config/custom/FactionSystem.ini";
-	private static final String MERCHANT_ZERO_SELL_PRICE_CONFIG_FILE = "./config/custom/MerchantZeroSellPrice.ini";
 	private static final String CUSTOM_RANDOM_SPAWNS_CONFIG_FILE = "./config/custom/RandomSpawns.ini";
+	private static final String EVENT_REBIRTH_CONFIG_FILE = "./config/custom/Rebirth.ini";
+	private static final String EVENT_WEDDING_CONFIG_FILE = "./config/custom/Wedding.ini";
+	private static final String MERCHANT_ZERO_SELL_PRICE_CONFIG_FILE = "./config/custom/MerchantZeroSellPrice.ini";
 	private static final String OFFLINE_CONFIG_FILE = "./config/custom/Offline.ini";
 	private static final String OTHER_CUSTOM_CONFIG_FILE = "./config/custom/Other.ini";
 	private static final String PC_BANG_POINT_CONFIG_FILE = "./config/custom/PcBang.ini";
 	private static final String PHYSICS_BALANCE_CONFIG_FILE = "./config/custom/PhysicsBalance.ini";
 	private static final String SCHEME_BUFFER_CONFIG_FILE = "./config/custom/SchemeBuffer.ini";
 	private static final String STARTING_LOCATION_CONFIG_FILE = "./config/custom/StartingLocation.ini";
-	private static final String EVENT_REBIRTH_CONFIG_FILE = "./config/custom/Rebirth.ini";
-	private static final String EVENT_WEDDING_CONFIG_FILE = "./config/custom/Wedding.ini";
-	// login
-	private static final String LOGIN_CONFIG_FILE = "./config/LoginServer.ini";
+	
+	private static final String CHAT_FILTER_FILE = "./config/chatfilter.txt";
+	private static final String HEXID_FILE = "./config/hexid.txt";
+	private static final String IPCONFIG_FILE = "./config/ipconfig.xml";
 	
 	// --------------------------------------------------
 	// Variable Definitions
@@ -1085,16 +1084,6 @@ public class Config
 	public static String GAME_SERVER_LOGIN_HOST;
 	public static List<String> GAME_SERVER_SUBNETS;
 	public static List<String> GAME_SERVER_HOSTS;
-	public static int CLIENT_READ_POOL_SIZE;
-	public static int CLIENT_SEND_POOL_SIZE;
-	public static int CLIENT_EXECUTE_POOL_SIZE;
-	public static int PACKET_QUEUE_LIMIT;
-	public static boolean PACKET_FLOOD_DISCONNECT;
-	public static boolean PACKET_FLOOD_DROP;
-	public static boolean PACKET_FLOOD_LOGGED;
-	public static boolean TCP_NO_DELAY;
-	public static boolean PACKET_ENCRYPTION;
-	public static boolean FAILED_DECRYPTION_LOGGED;
 	public static int REQUEST_ID;
 	public static boolean ACCEPT_ALTERNATE_ID;
 	public static File DATAPACK_ROOT;
@@ -1125,6 +1114,17 @@ public class Config
 	public static boolean PRECAUTIONARY_RESTART_CHECKS;
 	public static int PRECAUTIONARY_RESTART_PERCENTAGE;
 	public static int PRECAUTIONARY_RESTART_DELAY;
+	
+	public static int CLIENT_READ_POOL_SIZE;
+	public static int CLIENT_SEND_POOL_SIZE;
+	public static int CLIENT_EXECUTE_POOL_SIZE;
+	public static int PACKET_QUEUE_LIMIT;
+	public static boolean PACKET_FLOOD_DISCONNECT;
+	public static boolean PACKET_FLOOD_DROP;
+	public static boolean PACKET_FLOOD_LOGGED;
+	public static boolean TCP_NO_DELAY;
+	public static boolean PACKET_ENCRYPTION;
+	public static boolean FAILED_DECRYPTION_LOGGED;
 	
 	public static boolean SHOW_LICENCE;
 	public static boolean FLOOD_PROTECTION;
@@ -1163,16 +1163,6 @@ public class Config
 		PORT_GAME = serverConfig.getInt("GameserverPort", 7777);
 		GAME_SERVER_LOGIN_PORT = serverConfig.getInt("LoginPort", 9014);
 		GAME_SERVER_LOGIN_HOST = serverConfig.getString("LoginHost", "127.0.0.1");
-		CLIENT_READ_POOL_SIZE = serverConfig.getInt("ClientReadPoolSize", 100);
-		CLIENT_SEND_POOL_SIZE = serverConfig.getInt("ClientSendPoolSize", 25);
-		CLIENT_EXECUTE_POOL_SIZE = serverConfig.getInt("ClientExecutePoolSize", 50);
-		PACKET_QUEUE_LIMIT = serverConfig.getInt("PacketQueueLimit", 80);
-		PACKET_FLOOD_DISCONNECT = serverConfig.getBoolean("PacketFloodDisconnect", false);
-		PACKET_FLOOD_DROP = serverConfig.getBoolean("PacketFloodDrop", false);
-		PACKET_FLOOD_LOGGED = serverConfig.getBoolean("PacketFloodLogged", true);
-		TCP_NO_DELAY = serverConfig.getBoolean("TcpNoDelay", true);
-		PACKET_ENCRYPTION = serverConfig.getBoolean("PacketEncryption", false);
-		FAILED_DECRYPTION_LOGGED = serverConfig.getBoolean("FailedDecryptionLogged", true);
 		DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
 		DATABASE_URL = serverConfig.getString("URL", "jdbc:mariadb://localhost/");
 		DATABASE_LOGIN = serverConfig.getString("Login", "root");
@@ -1238,6 +1228,21 @@ public class Config
 		PRECAUTIONARY_RESTART_CHECKS = serverConfig.getBoolean("PrecautionaryRestartChecks", true);
 		PRECAUTIONARY_RESTART_PERCENTAGE = serverConfig.getInt("PrecautionaryRestartPercentage", 95);
 		PRECAUTIONARY_RESTART_DELAY = serverConfig.getInt("PrecautionaryRestartDelay", 60) * 1000;
+	}
+	
+	public static void loadNetworkConfig()
+	{
+		final PropertiesParser networkConfig = new PropertiesParser(NETWORK_CONFIG_FILE);
+		CLIENT_READ_POOL_SIZE = networkConfig.getInt("ClientReadPoolSize", 100);
+		CLIENT_SEND_POOL_SIZE = networkConfig.getInt("ClientSendPoolSize", 25);
+		CLIENT_EXECUTE_POOL_SIZE = networkConfig.getInt("ClientExecutePoolSize", 50);
+		PACKET_QUEUE_LIMIT = networkConfig.getInt("PacketQueueLimit", 80);
+		PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", false);
+		PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
+		PACKET_FLOOD_LOGGED = networkConfig.getBoolean("PacketFloodLogged", true);
+		TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
+		PACKET_ENCRYPTION = networkConfig.getBoolean("PacketEncryption", false);
+		FAILED_DECRYPTION_LOGGED = networkConfig.getBoolean("FailedDecryptionLogged", true);
 	}
 	
 	public static void loadRatesConfig()
@@ -2060,7 +2065,7 @@ public class Config
 	
 	public static void loadOlympConfig()
 	{
-		final PropertiesParser olympiadConfig = new PropertiesParser(OLYMP_CONFIG_FILE);
+		final PropertiesParser olympiadConfig = new PropertiesParser(OLYMPIAD_CONFIG_FILE);
 		OLYMPIAD_ENABLED = olympiadConfig.getBoolean("OlympiadEnabled", true);
 		ALT_OLY_START_TIME = olympiadConfig.getInt("AltOlyStartTime", 18);
 		ALT_OLY_MIN = olympiadConfig.getInt("AltOlyMin", 0);
@@ -2822,7 +2827,7 @@ public class Config
 		LineNumberReader lnr = null;
 		try
 		{
-			final File file = new File(FILTER_FILE);
+			final File file = new File(CHAT_FILTER_FILE);
 			if (!file.exists())
 			{
 				return;
@@ -2843,7 +2848,7 @@ public class Config
 		catch (Exception e)
 		{
 			e.printStackTrace();
-			throw new Error("Failed to Load " + FILTER_FILE + " File.");
+			throw new Error("Failed to Load " + CHAT_FILTER_FILE + " File.");
 		}
 		finally
 		{
@@ -2989,6 +2994,7 @@ public class Config
 			
 			// Load network
 			loadServerConfig();
+			loadNetworkConfig();
 			
 			// Head
 			loadRatesConfig();

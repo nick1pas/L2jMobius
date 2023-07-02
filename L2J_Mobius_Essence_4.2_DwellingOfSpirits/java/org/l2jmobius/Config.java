@@ -89,6 +89,7 @@ public class Config
 	// --------------------------------------------------
 	public static final String GEOENGINE_CONFIG_FILE = "./config/GeoEngine.ini";
 	public static final String INTERFACE_CONFIG_FILE = "./config/Interface.ini";
+	public static final String NETWORK_CONFIG_FILE = "./config/Network.ini";
 	public static final String OLYMPIAD_CONFIG_FILE = "./config/Olympiad.ini";
 	public static final String SIEGE_CONFIG_FILE = "./config/Siege.ini";
 	public static final String FORTSIEGE_CONFIG_FILE = "./config/FortSiege.ini";
@@ -796,16 +797,6 @@ public class Config
 	public static int LOGIN_TRY_BEFORE_BAN;
 	public static int LOGIN_BLOCK_AFTER_BAN;
 	public static String GAMESERVER_HOSTNAME;
-	public static int CLIENT_READ_POOL_SIZE;
-	public static int CLIENT_SEND_POOL_SIZE;
-	public static int CLIENT_EXECUTE_POOL_SIZE;
-	public static int PACKET_QUEUE_LIMIT;
-	public static boolean PACKET_FLOOD_DISCONNECT;
-	public static boolean PACKET_FLOOD_DROP;
-	public static boolean PACKET_FLOOD_LOGGED;
-	public static boolean TCP_NO_DELAY;
-	public static boolean PACKET_ENCRYPTION;
-	public static boolean FAILED_DECRYPTION_LOGGED;
 	public static String DATABASE_DRIVER;
 	public static String DATABASE_URL;
 	public static String DATABASE_LOGIN;
@@ -845,6 +836,20 @@ public class Config
 	public static boolean PRECAUTIONARY_RESTART_CHECKS;
 	public static int PRECAUTIONARY_RESTART_PERCENTAGE;
 	public static int PRECAUTIONARY_RESTART_DELAY;
+	
+	// --------------------------------------------------
+	// Network Settings
+	// --------------------------------------------------
+	public static int CLIENT_READ_POOL_SIZE;
+	public static int CLIENT_SEND_POOL_SIZE;
+	public static int CLIENT_EXECUTE_POOL_SIZE;
+	public static int PACKET_QUEUE_LIMIT;
+	public static boolean PACKET_FLOOD_DISCONNECT;
+	public static boolean PACKET_FLOOD_DROP;
+	public static boolean PACKET_FLOOD_LOGGED;
+	public static boolean TCP_NO_DELAY;
+	public static boolean PACKET_ENCRYPTION;
+	public static boolean FAILED_DECRYPTION_LOGGED;
 	
 	// --------------------------------------------------
 	// Vitality Settings
@@ -1363,16 +1368,6 @@ public class Config
 			PORT_GAME = serverConfig.getInt("GameserverPort", 7777);
 			GAME_SERVER_LOGIN_PORT = serverConfig.getInt("LoginPort", 9014);
 			GAME_SERVER_LOGIN_HOST = serverConfig.getString("LoginHost", "127.0.0.1");
-			CLIENT_READ_POOL_SIZE = serverConfig.getInt("ClientReadPoolSize", 100);
-			CLIENT_SEND_POOL_SIZE = serverConfig.getInt("ClientSendPoolSize", 25);
-			CLIENT_EXECUTE_POOL_SIZE = serverConfig.getInt("ClientExecutePoolSize", 50);
-			PACKET_QUEUE_LIMIT = serverConfig.getInt("PacketQueueLimit", 80);
-			PACKET_FLOOD_DISCONNECT = serverConfig.getBoolean("PacketFloodDisconnect", false);
-			PACKET_FLOOD_DROP = serverConfig.getBoolean("PacketFloodDrop", false);
-			PACKET_FLOOD_LOGGED = serverConfig.getBoolean("PacketFloodLogged", true);
-			TCP_NO_DELAY = serverConfig.getBoolean("TcpNoDelay", true);
-			PACKET_ENCRYPTION = serverConfig.getBoolean("PacketEncryption", false);
-			FAILED_DECRYPTION_LOGGED = serverConfig.getBoolean("FailedDecryptionLogged", true);
 			REQUEST_ID = serverConfig.getInt("RequestServerID", 0);
 			ACCEPT_ALTERNATE_ID = serverConfig.getBoolean("AcceptAlternateID", true);
 			DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
@@ -1473,6 +1468,18 @@ public class Config
 			PRECAUTIONARY_RESTART_CHECKS = serverConfig.getBoolean("PrecautionaryRestartChecks", true);
 			PRECAUTIONARY_RESTART_PERCENTAGE = serverConfig.getInt("PrecautionaryRestartPercentage", 95);
 			PRECAUTIONARY_RESTART_DELAY = serverConfig.getInt("PrecautionaryRestartDelay", 60) * 1000;
+			
+			final PropertiesParser networkConfig = new PropertiesParser(NETWORK_CONFIG_FILE);
+			CLIENT_READ_POOL_SIZE = networkConfig.getInt("ClientReadPoolSize", 100);
+			CLIENT_SEND_POOL_SIZE = networkConfig.getInt("ClientSendPoolSize", 25);
+			CLIENT_EXECUTE_POOL_SIZE = networkConfig.getInt("ClientExecutePoolSize", 50);
+			PACKET_QUEUE_LIMIT = networkConfig.getInt("PacketQueueLimit", 80);
+			PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", false);
+			PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
+			PACKET_FLOOD_LOGGED = networkConfig.getBoolean("PacketFloodLogged", true);
+			TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
+			PACKET_ENCRYPTION = networkConfig.getBoolean("PacketEncryption", false);
+			FAILED_DECRYPTION_LOGGED = networkConfig.getBoolean("FailedDecryptionLogged", true);
 			
 			// Hosts and Subnets
 			final IPConfigData ipcd = new IPConfigData();
