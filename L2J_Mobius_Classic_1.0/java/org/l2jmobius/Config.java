@@ -817,9 +817,9 @@ public class Config
 	public static boolean PACKET_FLOOD_DISCONNECT;
 	public static boolean PACKET_FLOOD_DROP;
 	public static boolean PACKET_FLOOD_LOGGED;
-	public static boolean TCP_NO_DELAY;
 	public static boolean PACKET_ENCRYPTION;
 	public static boolean FAILED_DECRYPTION_LOGGED;
+	public static boolean TCP_NO_DELAY;
 	
 	// --------------------------------------------------
 	// Vitality Settings
@@ -1414,9 +1414,9 @@ public class Config
 			PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", false);
 			PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
 			PACKET_FLOOD_LOGGED = networkConfig.getBoolean("PacketFloodLogged", true);
-			TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
 			PACKET_ENCRYPTION = networkConfig.getBoolean("PacketEncryption", false);
 			FAILED_DECRYPTION_LOGGED = networkConfig.getBoolean("FailedDecryptionLogged", true);
+			TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
 			
 			// Hosts and Subnets
 			final IPConfigData ipcd = new IPConfigData();
@@ -3491,6 +3491,17 @@ public class Config
 			MAX_CONNECTION_PER_IP = loginConfig.getInt("MaxConnectionPerIP", 50);
 			ENABLE_CMD_LINE_LOGIN = loginConfig.getBoolean("EnableCmdLineLogin", false);
 			ONLY_CMD_LINE_LOGIN = loginConfig.getBoolean("OnlyCmdLineLogin", false);
+			
+			final PropertiesParser networkConfig = new PropertiesParser(NETWORK_CONFIG_FILE);
+			CLIENT_READ_POOL_SIZE = networkConfig.getInt("ClientReadPoolSize", 100);
+			CLIENT_SEND_POOL_SIZE = networkConfig.getInt("ClientSendPoolSize", 100);
+			CLIENT_EXECUTE_POOL_SIZE = networkConfig.getInt("ClientExecutePoolSize", 100);
+			PACKET_QUEUE_LIMIT = networkConfig.getInt("PacketQueueLimit", 80);
+			PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", true);
+			PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
+			PACKET_FLOOD_LOGGED = networkConfig.getBoolean("PacketFloodLogged", true);
+			FAILED_DECRYPTION_LOGGED = networkConfig.getBoolean("FailedDecryptionLogged", false);
+			TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
 		}
 		else
 		{

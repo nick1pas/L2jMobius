@@ -1121,9 +1121,9 @@ public class Config
 	public static boolean PACKET_FLOOD_DISCONNECT;
 	public static boolean PACKET_FLOOD_DROP;
 	public static boolean PACKET_FLOOD_LOGGED;
-	public static boolean TCP_NO_DELAY;
 	public static boolean PACKET_ENCRYPTION;
 	public static boolean FAILED_DECRYPTION_LOGGED;
+	public static boolean TCP_NO_DELAY;
 	
 	public static boolean SHOW_LICENCE;
 	public static boolean FLOOD_PROTECTION;
@@ -1238,9 +1238,9 @@ public class Config
 		PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", false);
 		PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
 		PACKET_FLOOD_LOGGED = networkConfig.getBoolean("PacketFloodLogged", true);
-		TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
 		PACKET_ENCRYPTION = networkConfig.getBoolean("PacketEncryption", false);
 		FAILED_DECRYPTION_LOGGED = networkConfig.getBoolean("FailedDecryptionLogged", true);
+		TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
 	}
 	
 	public static void loadRatesConfig()
@@ -3048,6 +3048,7 @@ public class Config
 		else if (SERVER_MODE == ServerMode.LOGIN)
 		{
 			loadLoginStartConfig();
+			loadNetworkConfig();
 		}
 		else
 		{
