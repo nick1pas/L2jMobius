@@ -1048,7 +1048,6 @@ public class Config
 	public static int MAX_PROTOCOL_REVISION;
 	public static int SCHEDULED_THREAD_POOL_SIZE;
 	public static int INSTANT_THREAD_POOL_SIZE;
-	public static boolean THREADS_FOR_CLIENT_PACKETS;
 	public static boolean DEADLOCK_DETECTOR;
 	public static int DEADLOCK_CHECK_INTERVAL;
 	public static boolean RESTART_ON_DEADLOCK;
@@ -1161,7 +1160,6 @@ public class Config
 		{
 			INSTANT_THREAD_POOL_SIZE = Runtime.getRuntime().availableProcessors() * 2;
 		}
-		THREADS_FOR_CLIENT_PACKETS = serverConfig.getBoolean("ThreadsForClientPackets", true);
 		DEADLOCK_DETECTOR = serverConfig.getBoolean("DeadLockDetector", true);
 		DEADLOCK_CHECK_INTERVAL = serverConfig.getInt("DeadLockCheckInterval", 20);
 		RESTART_ON_DEADLOCK = serverConfig.getBoolean("RestartOnDeadlock", false);
@@ -1193,8 +1191,8 @@ public class Config
 	{
 		final PropertiesParser networkConfig = new PropertiesParser(NETWORK_CONFIG_FILE);
 		CLIENT_READ_POOL_SIZE = networkConfig.getInt("ClientReadPoolSize", 100);
-		CLIENT_SEND_POOL_SIZE = networkConfig.getInt("ClientSendPoolSize", 50);
-		CLIENT_EXECUTE_POOL_SIZE = networkConfig.getInt("ClientExecutePoolSize", 50);
+		CLIENT_SEND_POOL_SIZE = networkConfig.getInt("ClientSendPoolSize", 100);
+		CLIENT_EXECUTE_POOL_SIZE = networkConfig.getInt("ClientExecutePoolSize", 100);
 		PACKET_QUEUE_LIMIT = networkConfig.getInt("PacketQueueLimit", 80);
 		PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", false);
 		PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
