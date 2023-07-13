@@ -1431,16 +1431,6 @@ public class Config
 			PORT_GAME = serverConfig.getInt("GameserverPort", 7777);
 			GAME_SERVER_LOGIN_PORT = serverConfig.getInt("LoginPort", 9014);
 			GAME_SERVER_LOGIN_HOST = serverConfig.getString("LoginHost", "127.0.0.1");
-			CLIENT_READ_POOL_SIZE = serverConfig.getInt("ClientReadPoolSize", 100);
-			CLIENT_SEND_POOL_SIZE = serverConfig.getInt("ClientSendPoolSize", 25);
-			CLIENT_EXECUTE_POOL_SIZE = serverConfig.getInt("ClientExecutePoolSize", 50);
-			PACKET_QUEUE_LIMIT = serverConfig.getInt("PacketQueueLimit", 80);
-			PACKET_FLOOD_DISCONNECT = serverConfig.getBoolean("PacketFloodDisconnect", false);
-			PACKET_FLOOD_DROP = serverConfig.getBoolean("PacketFloodDrop", false);
-			PACKET_FLOOD_LOGGED = serverConfig.getBoolean("PacketFloodLogged", true);
-			TCP_NO_DELAY = serverConfig.getBoolean("TcpNoDelay", true);
-			PACKET_ENCRYPTION = serverConfig.getBoolean("PacketEncryption", false);
-			FAILED_DECRYPTION_LOGGED = serverConfig.getBoolean("FailedDecryptionLogged", true);
 			REQUEST_ID = serverConfig.getInt("RequestServerID", 0);
 			ACCEPT_ALTERNATE_ID = serverConfig.getBoolean("AcceptAlternateID", true);
 			DATABASE_DRIVER = serverConfig.getString("Driver", "org.mariadb.jdbc.Driver");
