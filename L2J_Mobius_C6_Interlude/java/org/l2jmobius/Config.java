@@ -2920,6 +2920,20 @@ public class Config
 		MAX_CONNECTION_PER_IP = serverSettings.getInt("MaxConnectionPerIP", 50);
 	}
 	
+	public static void loadLoginNetworkConfig()
+	{
+		final PropertiesParser networkConfig = new PropertiesParser(NETWORK_CONFIG_FILE);
+		CLIENT_READ_POOL_SIZE = networkConfig.getInt("ClientReadPoolSize", 100);
+		CLIENT_SEND_POOL_SIZE = networkConfig.getInt("ClientSendPoolSize", 100);
+		CLIENT_EXECUTE_POOL_SIZE = networkConfig.getInt("ClientExecutePoolSize", 100);
+		PACKET_QUEUE_LIMIT = networkConfig.getInt("PacketQueueLimit", 80);
+		PACKET_FLOOD_DISCONNECT = networkConfig.getBoolean("PacketFloodDisconnect", false);
+		PACKET_FLOOD_DROP = networkConfig.getBoolean("PacketFloodDrop", false);
+		PACKET_FLOOD_LOGGED = networkConfig.getBoolean("PacketFloodLogged", true);
+		FAILED_DECRYPTION_LOGGED = networkConfig.getBoolean("FailedDecryptionLogged", true);
+		TCP_NO_DELAY = networkConfig.getBoolean("TcpNoDelay", true);
+	}
+	
 	public static void saveHexid(int serverId, String string)
 	{
 		saveHexid(serverId, string, HEXID_FILE);
@@ -3048,7 +3062,7 @@ public class Config
 		else if (SERVER_MODE == ServerMode.LOGIN)
 		{
 			loadLoginStartConfig();
-			loadNetworkConfig();
+			loadLoginNetworkConfig();
 		}
 		else
 		{
